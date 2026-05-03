@@ -1,0 +1,758 @@
+{
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b768b056c399f34f5c7a9f77cbd67f20f089c6e66ff29ec39673dc69d0e1c033",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "b3958f33-180d-4bf5-b1fb-dc1c6c02857e",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "A hospital completed a seismic inspection of its emergency power system post‑earthquake. The inspector found: (1) Emergency generator running normally at correct voltage/frequency; (2) Fuel tank intact; (3) All cable restraints and anchor bolts tight; (4) ATS in generator mode (transfer confirmed). However, the main fuel intake filter is visibly clogged with silt and sediment. The generator has been running for 2 hours post‑earthquake and providing life safety power. What is the maintenance priority and risk assessment for this condition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fuel filter clogging is a minor cosmetic issue; schedule filter replacement during next annual maintenance cycle; generator can continue operation indefinitely without any risk of failure"
+        },
+        {
+          "id": "b",
+          "text": "Filter clogging reduces fuel flow, causing incomplete combustion and reduced generator output over time. HIGH PRIORITY: (1) Allow generator to continue operating (life safety power is critical); (2) Within 24 hours, with qualified technician present, replace fuel intake filter to restore full fuel delivery capacity; (3) After filter replacement, verify generator can ramp to full rated load without stalling; (4) Investigate source of silt (likely ruptured water mains contaminating underground fuel tank or intake line); (5) If fuel contamination is widespread, drain and flush tank; (6) Document repair and post‑incident inspection findings per PD 1096 Section 5.5"
+        },
+        {
+          "id": "c",
+          "text": "Generator output is reduced by clogged filter; immediately shut down generator and switch back to utility power (if available) to prevent fuel starvation and engine damage, which could lead to critical power loss"
+        },
+        {
+          "id": "d",
+          "text": "Clogged filter indicates sabotage or equipment defect; do not restart generator until full forensic inspection is completed by manufacturer service representative to ensure no further issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Clogged filter is NOT cosmetic; it actively reduces fuel flow and generator output. Delaying replacement risks load dropout if full power is demanded (e.g., hospital ICU surge in patient care post‑earthquake).",
+        "c": "Switching to utility power (if available) is an option, but in most post‑earthquake scenarios, utility power is the failure that triggered generator operation. Switching back would lose life safety power. Only switch if utility restoration is confirmed and stable.",
+        "d": "Clogged filter is a natural consequence of seismic damage (ruptured water lines contaminating fuel), not sabotage. Manufacturer forensics are unnecessary; standard fuel system troubleshooting (filter replacement, tank inspection) is appropriate.",
+        "correct": "Per PD 1096 Section 5.5 (post‑earthquake inspection and remediation), fuel intake filter clogging is a CRITICAL post‑seismic finding because: (1) Ongoing engine operation with clogged filter gradually reduces fuel flow, decreasing generator output (voltage sag, load dropout risk); (2) Sustained operation at reduced output causes engine stress and accelerated wear; (3) Silt source (usually ruptured water mains contaminating underground fuel lines) must be identified and remediated to prevent recurrence. Safe response: (a) Allow generator to continue operating because utility power has failed and life safety systems depend on it (cannot switch back to utility); (b) Schedule filter replacement within 24 hours while generator is running (do not interrupt power); (c) After replacement, load test generator to confirm restored output; (d) Investigate silt source and remediate (tank flush if needed); (e) Document findings in post‑incident report. This balances immediate life‑safety needs (keep power on) with longer‑term equipment protection (repair filter to prevent degradation).",
+        "takeaway": "Clogged fuel intake filter post‑earthquake = HIGH PRIORITY but not grounds for emergency shutdown if generator is providing critical life safety power. Continue operation, schedule filter replacement within 24 hours with technician present, investigate/remediate silt source (ruptured water mains), load test after repair. Document per PD 1096 Section 5.5."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Section 5.5; NSCP 2015 Section 1307.5; LEA‑UTIL‑004‑08.mdx Section 'Emergency Power and Generator Auto‑Start Post‑Earthquake' and 'Post‑Earthquake Building System Inspection Protocol—Phase 2 and Phase 4'",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f33aafdfec15c5194911b4eae3dd23c5995080a1532a0607cf3ae6cba1ec73dc"
+    },
+    {
+      "question_id": "e5179a2a-67ba-4c10-8218-82d980349bfb",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "Per NSCP 2015 Table 208‑1, the importance factor (I_p) for installed mechanical and electrical systems varies based on the system's criticality to life safety and building function. Which of the following systems would be assigned I_p = 1.5 (the highest importance factor)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Standard office HVAC system; general lighting in retail space; standard plumbing fixtures in apartment building, none of which are critical to life safety"
+        },
+        {
+          "id": "b",
+          "text": "Fire pump for sprinkler system; emergency generator for life safety lighting and communication; hospital ICU HVAC system; smoke control system for evacuation routes"
+        },
+        {
+          "id": "c",
+          "text": "Chiller for office tenant cooling; parking lot lighting; non‑critical plumbing (urinal, parking deck hose bibs), which do not impact emergency operations"
+        },
+        {
+          "id": "d",
+          "text": "Backup air handler in a secondary office; non‑emergency elevator car door operator; standard transformer for general office power distribution, none of which are critical"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Standard office HVAC, general lighting, and standard plumbing are comfort/convenience systems; they receive I_p = 1.0 (low importance).",
+        "c": "Chiller for office cooling, parking lot lighting, and non‑critical plumbing are also comfort/convenience systems with I_p = 1.0.",
+        "d": "Secondary/backup systems and non‑emergency power distribution are I_p = 1.0 unless part of a critical life‑safety function.",
+        "correct": "NSCP 2015 Table 208‑1 defines importance factor I_p = 1.0–1.5 for nonstructural components. Systems critical to life safety (fire pump and sprinkler system for post‑earthquake fire suppression; emergency generator for continuous power to life safety loads; hospital ICU HVAC for respiratory support; smoke control system for evacuation path safety) are assigned I_p = 1.5, the highest value. These systems require the most stringent seismic design, highest cable restraint safety factors, and most frequent inspection.",
+        "takeaway": "Importance factor I_p = 1.5 is assigned to systems critical for life safety (fire suppression, emergency power, life support, evacuation). These systems require maximum seismic bracing and rigorous post‑earthquake inspection. Standard comfort systems receive I_p = 1.0."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 208‑1; LEA‑UTIL‑004‑08.mdx Section 'Seismic Design Categories and Importance Factors'",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:43b55fba5a59c1f163f049db38a15ae8d3123e073ae224e326d6e63a4c7fd350"
+    },
+    {
+      "question_id": "488b3c49-4af9-4d33-a76e-af7501a57702",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "Why does NSCP 2015 Section 1307 prohibit relying on FRICTION ALONE to secure mechanical equipment during seismic events, and instead mandate POSITIVE MECHANICAL CONNECTION (bolts, clamps, cable restraints)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Friction is less expensive than mechanical fasteners, so code avoids it to increase construction cost and profits for contractors, which is a common misconception."
+        },
+        {
+          "id": "b",
+          "text": "Friction coefficient is reduced by moisture, oil, and dust; seismic acceleration can exceed static friction force, allowing equipment slip and rupture of connected utilities"
+        },
+        {
+          "id": "c",
+          "text": "Positive mechanical connections are more aesthetic and easier to inspect visually than friction-based systems, which is a secondary consideration."
+        },
+        {
+          "id": "d",
+          "text": "Code requires mechanical connections to be compatible with building expansion joints and flexible ductwork transitions, ensuring overall system integrity."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Code decisions are not profit‑driven; positive mechanical connections cost more upfront but eliminate failure risk, reducing liability and post‑earthquake repair expenses.",
+        "c": "Aesthetics and inspection ease are secondary; friction prohibition is based on failure physics and unpredictable seismic loads.",
+        "d": "Mechanical connections support flexible transitions; the connection type does not depend on expansion joint presence.",
+        "correct": "Seismic forces are dynamic, high‑amplitude, and unpredictable. Friction coefficient (μ) depends on surface condition (clean steel μ ~0.5, dusty μ ~0.2, oily μ ~0.1). If equipment weighs 5,000 kg with μ = 0.5, maximum friction force = 5,000 kg × 0.5 = 2,500 kg. But seismic design force may be 1,200 kg or higher (especially in hospitals). Additionally, vibration and micro‑slip break friction bonds. Positive mechanical connections (bolts rated for tens of thousands of kg tensile, cable restraints rated per safety factor) guarantee load transfer to structure regardless of surface contamination. This is a fundamental safety principle—do not depend on variable friction when lives depend on equipment stability.",
+        "takeaway": "Friction is unreliable in seismic design because surface conditions vary, micro‑slip breaks bonds, and dynamic loads exceed static friction. Positive mechanical connections (bolts, clamps, cable restraints) guarantee structural integrity during earthquakes."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 1307; PD 1096 Section 3.2; LEA‑UTIL‑004‑08.mdx Section 'Seismic Bracing Requirements per NSCP 2015'",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fa6272b2713aa80a29aa703ff1247446883ffec267895ed372270bc0ad24ab6c"
+    },
+    {
+      "question_id": "7f510800-98bb-49e7-a123-9d71257fca12",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "A building has a structural expansion joint with ±50 mm thermal movement capacity. HVAC ductwork, piping, and electrical conduit cross this joint. Why must flexible transitions be installed on BOTH SIDES of the joint rather than only at the joint center?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To balance aesthetic appearance and hide the flexible connector from view within the ceiling plenum space"
+        },
+        {
+          "id": "b",
+          "text": "To distribute movement accommodation across two connection points and prevent concentrated stress at a single joint location"
+        },
+        {
+          "id": "c",
+          "text": "To simplify installation procedures and reduce labor costs during construction by standardizing connector types"
+        },
+        {
+          "id": "d",
+          "text": "To comply with local fire code requirements for ductwork separation at structural expansion joint locations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While aesthetics may be secondary, code requirement is structural; flexible connections must be visible and accessible for inspection per PD 1096, making them intentionally exposed.",
+        "c": "Installation cost is not the primary driver; the symmetrical design is a fundamental structural principle for load distribution and safety.",
+        "d": "Fire code does not mandate dual flexible connectors; the requirement stems from seismic safety and movement accommodation design principles in NSCP Section 208.6.",
+        "correct": "NSCP 2015 Section 208.6 and ASME B31.1 (piping design) require flexible connections on both sides of expansion joints to distribute seismic/thermal movement across two compliant points. This approach: (1) prevents all movement from concentrating at one joint, which would cause excessive stress and rupture; (2) allows each flexible element to accommodate half the total movement (e.g., ±100 mm total → ±50 mm per coupler), staying within component ratings; (3) provides redundancy—if one flexible section fails, the second one continues to function partially.",
+        "takeaway": "Flexible transitions on both sides of structural joints distribute movement, prevent stress concentration, and provide redundancy. Single‑point flexible transitions are inadequate and risk rupture during seismic events."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.6; ASME B31.1; LEA‑UTIL‑004‑08.mdx Section 'Flexible Connections at Building Expansion Joints'",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e03866e33cc8dbf0b2998755fe279e3a281dbe1195ced70731427a0fbb563493"
+    },
+    {
+      "question_id": "aa3e5e12-6f4d-460e-b251-da273a19e59c",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "A 20‑story office building (SDC D, NSCP 2015) has a vertical structural expansion joint running the full height of the building. At the 10th floor, a chill water main, branch air ductwork, and power conduit all cross the joint within a 0.5 m horizontal distance. The building is designed for ±200 mm total seismic/thermal movement at this joint. Specify the complete flexible transition system required for ALL THREE systems (piping, ductwork, conduit) that complies with NSCP 2015 and PD 1096, including movement accommodation, material specifications, and spacing from the joint.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Install one large flexible hose for all three systems combined; single flexible housing reduces cost and maintenance, but may not meet code requirements"
+        },
+        {
+          "id": "b",
+          "text": "Chill water: flexible metallic hose ±100 mm on each side of joint (ASME B16.39, rated ±200 mm total); Ductwork: canvas connector 150 mm long, UL Class 1, entrance and exit to joint; Conduit: rigid termination at joint frame, then soft conduit loop 300–500 mm across joint with clamps 300 mm out on each side. Anchor all systems 1 m away from joint on both sides (NSCP 208.6, PD 1096 Section 3.2)"
+        },
+        {
+          "id": "c",
+          "text": "Use same flexible material for all three systems (unified approach); specify flexible hose rated ±200 mm for piping and ductwork, with one wrap of flexible conduit for electrical conduit, which may not be feasible"
+        },
+        {
+          "id": "d",
+          "text": "Chill water requires rigid piping only (code allows water systems to bypass flexible requirements); ductwork and conduit flex independently, which may not comply with seismic requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Three different fluid/vapor/electrical media cannot share a single flexible housing; piping hose cannot enclose ductwork or electrical conduit. Each system must have independent flexible transitions sized for its specific fluid/pressure/movement requirements.",
+        "c": "Unified flexible material approach ignores difference between pressure‑rated piping hose (ASME B16.39), non‑pressure fabric ductwork connector (UL Class 1), and electrical‑rated conduit (NEC). Different standards apply to each. Mixing materials compromises fire rating and pressure integrity.",
+        "d": "NSCP 2015 Section 208.6 does NOT allow water piping to bypass flexible connection requirements. Rigid piping crossing an expansion joint will rupture during seismic movement; flexible transitions are mandatory for all three systems.",
+        "correct": "NSCP 2015 Section 208.6, ASME B31.1 (piping), ASME B16.39 (flexible couplings), and PD 1096 Section 3.2 require system‑specific design for seismic joints. Piping (ASME B31.1): flexible metallic hose with ball‑and‑socket couplers, rated ±200 mm minimum (conservative design without assuming load sharing). Two couplers (one each side of joint) provide redundancy; each rated ±100 mm working range individually, but system is rated ±200 mm total. Ductwork (NFPA 90A, ASME A17.1): flexible canvas connector, minimum 150 mm length, UL Class 1 fire rating, positioned at joint entrance AND exit (not at joint center). Rigid ductwork bridging the joint will rupture. Conduit (NEC Article 300): rigid conduit must NOT cross the joint; route to termination point, then use empty/soft conduit (LFNC or FMC) with 300–500 mm slack loop on both sides of joint. Support conduit at fixed clamps 300 mm away from joint on each side; no support within 300 mm of joint (stress concentration risk). All three systems: anchor/support 1 m away from joint to prevent movement propagation into adjacent building sections. This integrated approach prevents rupture across different medium types.",
+        "takeaway": "Seismic joints require system‑specific flexible transitions: (1) Piping—flexible metallic hose per ASME B16.39, rated for full movement; (2) Ductwork—canvas connector with UL fire rating on both sides; (3) Conduit—no rigid conduit across joint; use soft conduit with slack loops and support 300 mm out on each side. Anchor all systems 1 m from joint. Integration of three different system types requires independent design per applicable code (ASME, NFPA, NEC) plus NSCP seismic overlay."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.6; ASME B31.1; ASME B16.39; NFPA 90A; NEC Article 300; PD 1096 Section 3.2; LEA‑UTIL‑004‑08.mdx Section 'Seismic Joints in Piping, Ductwork, and Conduit'",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:16343e02893e16d8672e6df72aeb775dc00c8e0197e7efbb0411ffaeaeb6d0fc"
+    },
+    {
+      "question_id": "5c74d1f9-f1fb-48ab-95f2-6be2ee361d52",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "Per NSCP 2015 Section 1307.5 and applicable generator standards, emergency generator auto‑start sequence after earthquake‑caused utility power loss follows a specific timeline. Which of the following sequences is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1) Mains voltage loss detected within 5 seconds → (2) ATS activates 24 VDC start signal → (3) Engine cranks and warms at no load for 30 seconds → (4) Generator voltage/frequency synchronizes within ±5% of utility values → (5) ATS switches load to generator over ≤50 ms → Total: 35–45 seconds to load acceptance"
+        },
+        {
+          "id": "b",
+          "text": "(1) Mains voltage loss detected within 2 seconds → (2) ATS immediately switches load to generator → (3) Generator auto‑starts under load → (4) Engine warms for 30 seconds → Total: 32 seconds (faster protection), ensuring minimal disruption"
+        },
+        {
+          "id": "c",
+          "text": "(1) Generator auto‑starts at detection of any electrical activity → (2) ATS waits 10 seconds for generator to reach full speed → (3) Load transfer occurs → Total: 10 seconds (simplest process), prioritizing speed over synchronization"
+        },
+        {
+          "id": "d",
+          "text": "(1) UPS provides power for 15 minutes → (2) After 15 minutes, if mains not restored, generator auto‑start activates → (3) No need for rapid start sequence if backup power covers immediate needs, allowing for a more relaxed transition"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While 2‑second detection is faster, ATS standards specify 5‑second maximum for initial sensing; starting under load (before no‑load warm‑up) damages engine and can cause load dropout. The 30‑second warm‑up is mandatory.",
+        "c": "Immediate load transfer without warm‑up and synchronization check violates ISO 3006 engine start requirements and creates voltage sag risk. The process is safety‑critical and cannot be shortcut.",
+        "d": "UPS buffer (15 minutes) is part of the resilience strategy, but it does NOT eliminate the need for rapid auto‑start sequence. If UPS capacity is exhausted and generator has not started, critical loads fail. Auto‑start must proceed in parallel with UPS operation.",
+        "correct": "NSCP 2015 Section 1307.5 and IEC 62310‑3 specify the correct sequence: (1) ATS senses utility voltage loss within 5 seconds per IEC standard; (2) ATS sends 24 VDC start signal to generator controller; (3) Engine cranks and runs at no load for 30 seconds to establish oil pressure and stabilize speed per ISO 3006; (4) Generator voltage and frequency must match utility supply within ±5% before load transfer (synchronization check); (5) ATS switches load to generator with ramp time ≤50 ms to prevent voltage sag on critical loads. Total time: ~35–45 seconds. This timing ensures life safety loads (exit lighting, emergency communication, fire alarm) remain powered throughout the transition, with no blackout period. A 15‑minute UPS buffer buys time for generator auto‑start and allows for engine warm‑up without interrupting critical functions.",
+        "takeaway": "Emergency generator auto‑start timeline: Power loss detection (5 sec) → Generator start signal (0 sec) → Engine warm‑up (30 sec) → Synchronization check (<5 sec) → Load transfer (0.05 sec) = Total ~35–45 seconds. UPS provides bridge power during this interval. Both systems work together: UPS covers immediate gap, generator assumes permanent load."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 1307.5; IEC 62310‑3; ISO 3006; LEA‑UTIL‑004‑08.mdx Section 'Emergency Power and Generator Auto‑Start Post‑Earthquake'",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c4be1c71e396939bb49ebaefca9003278e8688a958ebe7073f6b9e9ed6bae800"
+    },
+    {
+      "question_id": "02b11a14-0f2e-41ee-82cf-2d83c09af0e2",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "An inertial (mechanical) seismic gas shutoff valve uses a heavy ball sensor inside the valve body. During a lateral earthquake acceleration of 0.6g, describe the sequence of events that closes the gas flow and the design principle that makes this automatic response possible WITHOUT external power.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ball sensor remains stationary due to inertia; vibration of the valve body causes the ball to shift and mechanically block the valve opening within 1 second"
+        },
+        {
+          "id": "b",
+          "text": "The ball sensor detects pressure change in the gas line and pushes against a spring-loaded diaphragm, closing the valve, assuming the pressure change is significant enough to trigger the mechanism"
+        },
+        {
+          "id": "c",
+          "text": "Lateral ground acceleration tips the heavy ball sensor, overcoming static friction and causing it to roll and block the ball valve seat within 1 second; this requires only the inertial mass difference between ball and valve body"
+        },
+        {
+          "id": "d",
+          "text": "An internal accelerometer sends a wireless signal to a remote solenoid actuator, which energizes to close the valve, assuming the signal is not disrupted by the earthquake"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes the principle incorrectly; it is the inertial mass of the ball itself (not the valve body vibration) that tips the sensor during lateral acceleration.",
+        "b": "Pressure‑change detection would cause false activations during normal pressure surges (pump startup, thermal expansion). Inertial valves activate ONLY during seismic acceleration, not pressure transients.",
+        "d": "Electronic shutoff valves exist (solenoid type) but require 24 VDC backup power and are more expensive (PHP 15,000–25,000); inertial valves are passive mechanical and preferred where power reliability is uncertain.",
+        "correct": "The inertial shutoff principle: during lateral earthquake acceleration >0.5g, the heavy ball sensor (mounted on a pivot) tips due to its own inertia and gravity. The ball's momentum overcomes static friction and causes it to roll, blocking the ball valve seat and stopping gas flow within 1 second. This mechanism requires NO external power, batteries, or electronic components—only mechanical design and the physics of inertial mass. Cost: PHP 8,000–15,000 per valve; high reliability in seismic zones.",
+        "takeaway": "Inertial seismic gas shutoff valves use passive mechanical design (heavy ball + pivot) to activate without external power. Activation threshold: >0.5g lateral acceleration; response time: <1 second."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 1307.5; manufacturer specifications; LEA‑UTIL‑004‑08.mdx Section 'Automatic Gas Shutoff Valves'",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e00af772a2983efd9e66ec264add9ea4bcebef06b0a1a76261b7a673044e18bb"
+    },
+    {
+      "question_id": "a72c9aa8-a967-4b0f-8180-a9b3558261c6",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "A critical facility (hospital, SDC E) in Seismic Zone 4 has implemented comprehensive seismic design for building structure, HVAC, piping, and emergency power. However, during post‑earthquake Phase 1 inspection, you detect a strong rotten egg odor (natural gas odorant) in the building, but no visible gas flame ignition on stovetops. The automatic gas shutoff valve should have activated. Why might the valve have FAILED to close despite seismic motion >0.5g, and what are the diagnostics and safe response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Valves fail often; immediately open all windows for ventilation and continue Phase 2 inspection to assess damage, which is not a recommended safety protocol"
+        },
+        {
+          "id": "b",
+          "text": "The valve may have frozen (ice crystals on internal spring from low temperature, high altitude, or factory defect), or the sensor ball may have become stuck due to mineral scale buildup or corrosion from moisture over years. Possible diagnostics: (1) tap valve body lightly with tool—if you hear a rattle, ball is stuck; (2) examine valve exterior for corrosion/ice; (3) if installed in very cold location, freeze is likely. However, NO attempt to repair in‑building. Safe response: EVACUATE immediately, do NOT operate electrical switches, contact fire department and gas utility; do NOT attempt to verify by ignition. Provide valve location and installation history to utility for post‑incident inspection"
+        },
+        {
+          "id": "c",
+          "text": "The building did not experience sufficient seismic acceleration to trigger the valve (acceleration <0.5g); continue operations normally and schedule valve testing for next maintenance cycle, which could overlook potential hazards"
+        },
+        {
+          "id": "d",
+          "text": "Gas odor is normal during earthquakes and fades after 1–2 hours; delay evacuation until Phase 2 inspection is complete to avoid unnecessary disruption, which is a dangerous assumption"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ventilation helps but does not eliminate the hazard of an active leak and concentrated gas pockets. Professional detection and source isolation are required. Continuing Phase 2 inspection in presence of gas odor risks ignition.",
+        "c": "If the building experienced sufficient earthquake motion to activate seismic switches on elevators (0.15g) or to cause structural damage, acceleration was >0.5g. The valve SHOULD have activated. Failure to activate = malfunction, not absence of seismic motion. Continuing operations risks explosion.",
+        "d": "Natural gas odor does not 'fade' unless the leak stops and ventilation is continuous. During post‑earthquake chaos, ventilation may be blocked by damage. Waiting 1–2 hours while gas accumulates in pockets is extremely hazardous.",
+        "correct": "Seismic gas shutoff valves (especially inertial mechanical types) can fail to activate for several reasons: (1) Sticky sensor ball—mineral deposits, corrosion, or moisture‑induced freezing on the pivot point prevent the ball from tipping even under acceleration. (2) Manufacturing defect—internal spring weakness or ball seat misalignment. (3) Environmental factors—extreme cold (high altitude, unheated spaces) can freeze lubricants and sensor mechanisms. (4) Age/wear—after 8–10 years without testing, internal components can corrode. Safe diagnostics: Light tap test (listen for rattle = ball stuck); visual inspection for corrosion/frost; review installation date and test history. However, NO in‑building diagnosis beyond visual inspection. If valve has failed, natural gas is leaking and concentrating in unknown locations—professional utility detection equipment is required. Safe response: Evacuate per PD 1096 Section 5.1; do not operate electrical switches (spark risk); contact fire department and gas utility; provide valve information (installation date, type, last test date) to utility for post‑incident inspection and replacement. This is a life‑safety decision—erring on the side of caution (evacuation) is correct.",
+        "takeaway": "If automatic gas shutoff valve fails to activate during seismic event (detected by gas odor but no ignition response), assume valve malfunction. DO NOT attempt repair or in‑building troubleshooting. Evacuate immediately, do not operate electrical switches, contact fire department and gas utility. Provide valve installation history to utility. This is a critical life‑safety decision—over‑caution is the correct response."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Section 5.1; NSCP 2015 Section 1307.5; LEA‑UTIL‑004‑08.mdx Section 'Automatic Gas Shutoff Valves' and 'Post‑Earthquake Building System Inspection Protocol—Phase 1'",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:389b43cfa04d36efbd9eec523dd77929d60a072288168c934a8e727df659cf9b"
+    },
+    {
+      "question_id": "c1ed334c-bcb3-4322-b56a-a6add8b96b84",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "A seismic design engineer specifies flexible metallic hose for a 200 mm (8‑inch) water main crossing a structural expansion joint. The building thermal movement is ±50 mm, and seismic movement is ±150 mm. The engineer selects a flexible coupling rated for ±50 mm movement, calculating: Total movement ÷ 2 (two couplings) = ±200 mm ÷ 2 = ±50 mm per coupling. What is the critical flaw in this design reasoning, and what is the correct approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The calculation is correct; two ±50 mm couplings can accommodate ±100 mm total movement, which exceeds the calculated ±50 mm each‑side requirement, ensuring safety"
+        },
+        {
+          "id": "b",
+          "text": "The flaw is using linear addition; seismic movement is not additive across two couplings, so only one ±200 mm coupling is needed, which simplifies the design"
+        },
+        {
+          "id": "c",
+          "text": "The flaw is assuming both couplings move equally; in reality, one coupling will absorb most movement (worst‑case ±200 mm), while the other remains rigid. Each coupling must be rated for the FULL ±200 mm movement independently, not a fractional share"
+        },
+        {
+          "id": "d",
+          "text": "The flaw is not accounting for plastic deformation in the flexible hose material; each coupling loses 10 mm of movement capacity per seismic cycle, which could lead to failure over time"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While two ±50 mm couplings sum to ±100 mm in theory, this assumes perfect load sharing, which does not occur during seismic events. The coupling that moves first (or is less stiff) absorbs more movement and can be over‑stressed.",
+        "b": "Seismic movement IS distributed along the piping, but it is not uniform or predictable; one coupling may see ±80 mm while the other sees ±120 mm. A single large coupling is not a viable solution if piping spans across the joint.",
+        "d": "Plastic deformation is a material science concern for some hose types, but the primary flaw in the original design is the false assumption of equal load sharing between couplings.",
+        "correct": "This is a common design error. Flexible couplings do NOT share movement equally under dynamic seismic loads. In worst‑case scenarios, structural movement can be concentrated at one coupling (e.g., if one side of the joint is more rigid than the other, or if soil settlement is uneven). Additionally, piping attachment points may shift unpredictably during seismic motion. Per ASME B31.1 and NSCP 2015 Section 208.6 best practice: each flexible coupling must be independently rated for the FULL total movement range (±200 mm), not a fractional share. Specifying ±50 mm couplings creates a high‑risk scenario where one coupling could be overloaded and rupture if it absorbs >50 mm of the ±200 mm total movement.",
+        "takeaway": "Do NOT assume equal movement distribution across multiple flexible couplings crossing a seismic joint. Each flexible element must be independently rated for the FULL total movement range (thermal + seismic). This conservative design prevents rupture if movement concentrates at one coupling."
+      },
+      "explanation": null,
+      "code_citation": "ASME B31.1; NSCP 2015 Section 208.6; LEA‑UTIL‑004‑08.mdx Section 'Seismic Joints in Piping, Ductwork, and Conduit'",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:97eb73e90d93257d97b9072c7b8bc90b528dfd24e10daa33d30f9bc8c7cad4a4"
+    },
+    {
+      "question_id": "1c85cd70-7225-435d-ba16-00c211e62b29",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "A hospital's emergency generator (10 kW, SDC E facility, I_p = 1.5) is mounted on spring isolators with 6 Hz natural frequency. The generator has four side cable restraints (one each: front, back, left, right). The lateral seismic design force on the generator is 480 kg. If all four restraints are rated for 600 kg tensile capacity (safety factor ~1.25), what is the fundamental risk with this installation, and how should it be corrected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spring isolators with 6 Hz frequency are too soft; replace with 10 Hz isolators to reduce lateral movement and restraint demand, ensuring stability during seismic events"
+        },
+        {
+          "id": "b",
+          "text": "The safety factor 1.25 is slightly below the NSCP minimum 1.43 (÷0.7), and the design is vulnerable to load amplification during earthquake aftershocks. Upgrade restraints to 700 kg capacity (safety factor 1.46) or distribute load across more restraint points"
+        },
+        {
+          "id": "c",
+          "text": "Cable restraints of 600 kg are excessive; reduce to 400 kg to save cost and weight, since the lateral force is only 480 kg, which is within safe limits"
+        },
+        {
+          "id": "d",
+          "text": "The problem is that restraints should be on all 8 sides of the generator (top, bottom, front, back, left, right, front‑top, back‑top) to provide omni‑directional bracing, ensuring comprehensive support"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Stiffer isolators (10 Hz) would reduce vibration isolation benefits during normal operation; the restraint capacity problem is independent of isolator frequency.",
+        "c": "Downsizing to 400 kg would reduce safety factor to 480 ÷ 400 = 1.2, making it worse; this is a dangerous error.",
+        "d": "Four side restraints (front/back/left/right) is standard per NSCP 1307.5; top/bottom restraints are not required unless vibration analysis shows vertical movement. Omni‑directional bracing is not the issue; the issue is undersized restraint capacity.",
+        "correct": "NSCP 2015 Section 1307.5 mandates a minimum safety factor of 1.43 for seismic restraints (tensile capacity ÷ design force ≥ 1.43, or design force ÷ tensile capacity ≤ 0.7). With 480 kg design force and 600 kg restraint capacity, the safety factor = 600 ÷ 480 = 1.25, which is BELOW the code minimum. Risks: (1) cable degradation from corrosion or fatigue over years reduces capacity; (2) earthquake aftershocks (M 5–6, following a M 7 mainshock) may provide repeated impacts, amplifying effective stress; (3) dynamic load amplification during high‑frequency motion can exceed quasi‑static design force. Correction: upgrade restraints to ≥686 kg capacity (480 ÷ 0.7) or distribute load across 6 restraint points (480 kg ÷ 6 = 80 kg per restraint, easily met by standard cables). For hospital SDC E critical facility, safety margin is justified.",
+        "takeaway": "Always verify that cable restraint tensile capacity ÷ design force ≥ 1.43 (minimum safety factor per NSCP 1307.5). Capacity of 1.25× design force is CODE NONCOMPLIANT. For critical facilities (hospital, shelter), maintain safety factor ≥1.5 to account for aftershocks and material degradation."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 1307.5; PD 1096 Section 3.2; LEA‑UTIL‑004‑08.mdx Section 'Seismic Isolation and Bracing of Heavy Equipment'",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2f5f11f1ff1485a091170ea69995cce9fa84401085d22e21d02a8942f815c29a"
+    },
+    {
+      "question_id": "05cd5a06-3183-4848-9b1f-f8cb6a36f581",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "Per NSCP 2015 Section 208.4.1, what is the Seismic Zone Factor (Z) for Zone 4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.20g (200 mm/s²)"
+        },
+        {
+          "id": "b",
+          "text": "0.30g (300 mm/s²)"
+        },
+        {
+          "id": "c",
+          "text": "0.40g (400 mm/s²)"
+        },
+        {
+          "id": "d",
+          "text": "0.50g (500 mm/s²)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.20g is the zone factor for lower seismic zones (Zone 1–2) with lower seismic risk; insufficient for Zone 4 high-risk Philippines.",
+        "b": "0.30g is between Zone 3 and Zone 4; Zone 4 requires Z = 0.40 per NSCP Table 208-B.",
+        "d": "0.50g exceeds the NSCP 2015 Zone 4 specification; this value would only apply to specialized high‑hazard sites or custom seismic studies beyond standard code requirements.",
+        "correct": "NSCP 2015 Table 208-B establishes Z = 0.40 for Seismic Zone 4, used in the base shear formula V = C × W × I. This zone factor represents the effective peak ground acceleration for design.",
+        "takeaway": "Zone 4 Z = 0.40 is the regulatory baseline for all mechanical, electrical, plumbing, and fire protection design calculations in the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4.1, Table 208‑B; LEA‑UTIL‑004‑08.mdx Section 'Philippine Fault Lines and Seismic Zone Context'",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:adbfb25117eafdc394588af73874df66fb7b9f162220143547d8eb017167cd9b"
+    },
+    {
+      "question_id": "21b3a069-8ad6-402b-9423-608071bdf1e6",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "You are inspecting a water heater (400 liters, 20 mm inlet/outlet) that was installed in a Seismic Zone 4 building 8 years ago. During post‑earthquake Phase 3 inspection, you notice the stainless steel strapping band at the top is showing surface corrosion (rust spots) and the band is noticeably loose—when tapped with a wrench, it vibrates slightly. What is your immediate safety assessment and required action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corrosion is cosmetic and does not affect function; tighten the band bolt and document in inspection log, noting any changes in vibration"
+        },
+        {
+          "id": "b",
+          "text": "The loose band indicates metal fatigue from 8 years of vibration during normal building settling; wait for scheduled replacement during annual maintenance, unless further deterioration is observed"
+        },
+        {
+          "id": "c",
+          "text": "Loose strapping band = potential tank rupture risk during aftershocks or future earthquakes. Tighten immediately; photograph corrosion; inspect tank body for cracks; tag system as Yellow (operational but damage detected, schedule repair within 1 week) per PD 1096 Section 5.4"
+        },
+        {
+          "id": "d",
+          "text": "Corrosion and looseness require immediate tank replacement; evacuate building until new water heater is installed to ensure safety"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Corrosion is NOT cosmetic; it reduces structural capacity. Tightening alone without addressing corrosion leaves the system vulnerable in future seismic events.",
+        "b": "Waiting for scheduled maintenance after post‑earthquake inspection is negligent; aftershock risk is high in the hours/days following the mainshock. The loose band must be addressed immediately.",
+        "d": "Tank replacement is premature if the tank body is sound and band can be retightened; however, if the tank itself shows cracks, replacement is required. First inspect, then decide on replacement vs. repair.",
+        "correct": "Per PD 1096 Section 3.3 and NSCP 2015 Section 1307.5, water heater strapping bands must remain tight and intact to prevent tank rupture during seismic motion. A loose band indicates that vibration has relaxed the bolt tension over time (normal wear). Corrosion (rust) reduces band material cross‑section and tensile strength. Combined, these create a failure mode where the tank can shift laterally during aftershocks, rupturing inlet/outlet connections and releasing 400 kg of scalding water. Immediate action: (1) tighten band bolt to manufacturer specification using appropriate torque wrench; (2) photograph corrosion for documentation; (3) inspect tank body near band attachment points for cracks (stress concentrators); (4) assign Yellow status (operational but damage detected, repair within 1 week) per PD 1096 Section 5.4. The system is safe to operate temporarily but requires repairs before the next major earthquake.",
+        "takeaway": "Loose water heater strapping bands post‑earthquake = immediate tighten required. Corrosion on bands reduces capacity and warrants replacement within 1 week. Assign Yellow status (operational but damaged). Do not defer this repair until scheduled maintenance."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Section 3.3 and Section 5.4; NSCP 2015 Section 1307.5; LEA‑UTIL‑004‑08.mdx Section 'Water Heater Strapping Requirements' and 'Post‑Earthquake Building System Inspection Protocol—Phase 3'",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6047939124b6d1897203f5f688c6208d62636af172cb85c5ea3772ae03a5b4a6"
+    },
+    {
+      "question_id": "3f4dce01-3e79-4f74-9005-118a14543cfe",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "During post-earthquake Phase 2 inspection (5–30 minutes), you check the main sprinkler system pressure gauge and read 12 psi. The normal operating range for a typical office sprinkler system is 20–40 psi. What is the most likely cause of low pressure, and what should be your immediate action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Low pressure is normal after earthquake shock; wait 15 minutes for pressure to stabilize before taking action, as immediate action may not be necessary"
+        },
+        {
+          "id": "b",
+          "text": "The gravity tank (rooftop backup water supply) may not be supplying due to rupture, pump failure, or check valve blockage. Immediately verify gravity tank structural integrity and check fire pump discharge pressure to assess remaining water supply"
+        },
+        {
+          "id": "c",
+          "text": "Low pressure indicates a minor leak in the main supply line; this can be addressed during Phase 3 detailed inspection, as it does not pose an immediate threat"
+        },
+        {
+          "id": "d",
+          "text": "Low pressure means the building elevation is too high for sprinkler system design; the system must be replaced with higher-pressure pumps to ensure adequate coverage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Pressure does not 'stabilize' after earthquake; a drop to 12 psi indicates active system failure (mains rupture or tank/pump issue), not transient shock. Waiting delays response to fire risk.",
+        "c": "Minor leaks occur in Phase 3 inspection; Phase 2 is for life‑safety assessment. A 12 psi drop is not minor—it indicates gravity tank or pump failure.",
+        "d": "Elevation is fixed and would have been addressed during original system design; pressure drop during earthquake is caused by acute failure, not design insufficiency.",
+        "correct": "NSCP 2015 Section 903.3 and PD 1096 Section 5.2 specify sprinkler system redundancy: primary source (municipal main, typically 50–80 psi) and secondary source (gravity tank, 20–40 psi). During earthquake, mains failure is common (ruptured utility lines). If pressure drops to 12 psi during Phase 2, the primary main has likely failed, and the gravity tank supply is underperforming. Immediate assessment: (1) visually inspect rooftop gravity tank for cracks, tilting, or rupture; (2) check fire pump discharge pressure (if powered by backup generator)—if pump is running but discharge is low, intake blockage or pump damage is present. Low pressure in Phase 2 is a critical finding requiring urgent troubleshooting because sprinklers may not activate during post‑earthquake fires.",
+        "takeaway": "Low sprinkler pressure (<15 psi) during Phase 2 post‑earthquake inspection indicates gravity tank or fire pump failure. Immediately verify tank structural integrity and check pump discharge pressure. This is a life‑safety priority because buildings are at high risk of post‑earthquake fire."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 903.3; PD 1096 Section 5.2; LEA‑UTIL‑004‑08.mdx Section 'Post‑Earthquake Building System Inspection Protocol—Phase 2'",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6ba468d1f4fe3958e1aec87461330aa0c2fd51ec94eba7e5e3b3dde5297f8785"
+    },
+    {
+      "question_id": "dc6455d2-06ab-438d-835d-01d050258c3f",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "A hospital emergency generator (3 kW, 500 kg) is mounted in the basement on spring isolators (natural frequency 6 Hz). The seismic design force is 240 kg (calculated F = 0.4 × 0.4g × 500 kg × 1.5). Per NSCP 2015, if the cable restraint is designed with a strength reduction factor φ = 0.75, what is the minimum required tensile capacity (in kg) for the stainless steel wire rope restraint on each side of the generator?",
+      "options": [
+        {
+          "id": "a",
+          "text": "170 kg"
+        },
+        {
+          "id": "b",
+          "text": "240 kg"
+        },
+        {
+          "id": "c",
+          "text": "320 kg"
+        },
+        {
+          "id": "d",
+          "text": "343 kg"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "170 kg is only 71% of the required capacity; this would fail under seismic load and violate NSCP strength requirements.",
+        "b": "240 kg is the basic seismic force WITHOUT the strength reduction factor; code requires the factor to be applied, so 240 kg is insufficient.",
+        "d": "343 kg would correspond to φ ≈ 0.70, which is not the standard factor specified in the code.",
+        "correct": "Tensile capacity = Seismic force ÷ φ = 240 kg ÷ 0.75 = 320 kg. Per NSCP 2015 Section 1307.5 and ASCE 7, the strength reduction factor φ = 0.75 applies to seismic restraints to account for uncertainty and dynamic effects. Using the raw seismic force without φ would underestimate the required capacity.",
+        "takeaway": "Cable restraint minimum tensile capacity = Seismic design force ÷ φ (φ = 0.75 per ASCE 7 for seismic restraints). Always apply the strength reduction factor; using only the raw force is a critical design error."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 1307.5; ASCE 7‑10 Section 13.4; LEA‑UTIL‑004‑08.mdx Section 'Seismic Isolation and Bracing of Heavy Equipment'",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b9a769ccc8dfccfc1cce91cd857ea5c4c3dc4f4e335c8453e2e5eb4fcf9b649f"
+    },
+    {
+      "question_id": "e9538c8d-119a-4361-ac95-53d7a8747bc9",
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "topic_id": "d92bf32a-e82f-4dcf-a697-46dc8f55bdd0",
+      "text": "According to NSCP 2015 Section 1307.5 and AISC 341, what is the typical minimum strength grade for anchor bolts in seismic anchorage of MEP equipment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grade 5.8 (low-strength)"
+        },
+        {
+          "id": "b",
+          "text": "Grade 8.8 (medium-strength)"
+        },
+        {
+          "id": "c",
+          "text": "Grade 10.9 (high-strength)"
+        },
+        {
+          "id": "d",
+          "text": "Grade 12.9 (ultra-high-strength)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Grade 5.8 bolts have lower tensile strength (~400 MPa) and may not meet the ductility requirements for seismic applications; they are acceptable only for non‑seismic utility installations.",
+        "c": "Grade 10.9 and higher are available but not mandated by code; Grade 8.8 is the typical minimum standard, and upgrading beyond it increases cost without proportional safety benefit in most cases.",
+        "d": "Grade 12.9 is ultra‑high‑strength but not typically required for standard MEP anchorage; it may be specified only for special conditions per engineering analysis.",
+        "correct": "NSCP 2015 Section 1307.5 and AISC 341 require anchor bolts for seismic equipment to have sufficient strength and ductility. Grade 8.8 (yield strength ~640 MPa) is commonly specified for MEP anchorage in Zone 4, balancing strength, availability, and ductility requirements.",
+        "takeaway": "Minimum anchor bolt specification for Zone 4 seismic equipment is Grade 8.8. Larger equipment may require larger diameters or higher grades per engineering calculation."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 1307.5; AISC 341; LEA‑UTIL‑004‑08.mdx Section 'Seismic Isolation and Bracing of Heavy Equipment'",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-08-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a75343a34194d96f645fe5d2924807f675116dce2bbe2129606fc34e20ef709a"
+    }
+  ]
+}

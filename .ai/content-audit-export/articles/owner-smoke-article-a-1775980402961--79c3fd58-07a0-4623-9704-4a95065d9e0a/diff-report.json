@@ -1,0 +1,38 @@
+{
+  "article_id": "79c3fd58-07a0-4623-9704-4a95065d9e0a",
+  "slug": "owner-smoke-article-a-1775980402961",
+  "generated_at": "2026-05-03T10:55:22.751Z",
+  "old_hash": "sha256:a441227d68768f7d266f351900c831cf961c189944861daac09804b8696f5df1",
+  "new_hash": "sha256:679de45322a5c4473cbd9d454f9587a3a59c9ed1e226f51e6800e9f912764c3f",
+  "original_hash": "sha256:a441227d68768f7d266f351900c831cf961c189944861daac09804b8696f5df1",
+  "normalized_hash": "sha256:679de45322a5c4473cbd9d454f9587a3a59c9ed1e226f51e6800e9f912764c3f",
+  "candidate_hash": "sha256:679de45322a5c4473cbd9d454f9587a3a59c9ed1e226f51e6800e9f912764c3f",
+  "changed": true,
+  "changed_line_count": 15,
+  "inserted_line_count": 12,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 0,
+  "changed_text_summary": {
+    "changed": 15,
+    "inserted": 12,
+    "deleted": 0,
+    "original_line_count": 3,
+    "candidate_line_count": 15
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [],
+    "changed_count": 0
+  },
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
+}

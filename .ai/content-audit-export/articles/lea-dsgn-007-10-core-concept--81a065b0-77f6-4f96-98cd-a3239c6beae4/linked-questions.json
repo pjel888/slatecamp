@@ -1,0 +1,508 @@
+{
+  "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a778efdfbc5d9ef7e377d5770817da33703cde7ab86aed340f24e05f232d6531",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2ca1c9df-9982-4fad-8ce7-380837813933",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "A stair has riser = 180mm and tread = 270mm. Does this satisfy Blondel's law (ergonomic guideline, not NBC requirement)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes (180 + 270 = 450mm, at upper limit)"
+        },
+        {
+          "id": "b",
+          "text": "No (180 + 270 = 450mm, exactly at limit, too tight)"
+        },
+        {
+          "id": "c",
+          "text": "No (sum is 450, exceeds minimum 430 comfort range)"
+        },
+        {
+          "id": "d",
+          "text": "Cannot determine without floor height"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "450mm is exactly at the limit, which is compliant, not 'too tight.' Comfortable.",
+        "c": "450mm does not exceed; it is within the range.",
+        "d": "Blondel's formula is independent of floor height; depends only on riser and tread proportions.",
+        "correct": "R + T = 180 + 270 = 450mm. Blondel's range is 430–450mm. A result of 450mm is acceptable (at the upper boundary). Comfort is verified.",
+        "takeaway": "Blondel's R+T = 430–450mm is a comfort check. 450mm is valid. Outside this range indicates uncomfortable step geometry."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 3, Ergonomic Stair Design",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e4c8d7b7205d3961f178b7ac3f0a701da933e55bd40f37db46ccb73273b2c237"
+    },
+    {
+      "question_id": "c4bc8b91-69da-4ede-903a-9d59f69537c1",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "Calculate the actual riser height for a 3.0m floor if you use 17 risers.",
+      "options": [
+        {
+          "id": "a",
+          "text": "176.5mm (3,000 ÷ 17 = 176.47)"
+        },
+        {
+          "id": "b",
+          "text": "180mm (rounded to the nearest whole number for practical construction purposes)"
+        },
+        {
+          "id": "c",
+          "text": "200mm (max allowed by most building codes for riser height)"
+        },
+        {
+          "id": "d",
+          "text": "188mm (average of typical riser heights used in residential buildings)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Rounded value; acceptable in design but technically higher than calculated.",
+        "c": "Using max (200mm) wastes vertical space when fewer, larger risers are not needed.",
+        "d": "Arithmetic error; incorrect calculation.",
+        "correct": "3,000mm ÷ 17 risers = 176.47mm ≈ 176.5mm. This is within the 200mm maximum, so the design is valid. Rounding to 180mm is acceptable in practice, but the precise calculation is 176.5mm.",
+        "takeaway": "Actual riser = floor height ÷ number of risers (upward-rounded). For 3.0m and 17 risers: 176.5mm. Always verify this is ≤ 200mm."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 3 Stair Calculations",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e9ff3914d024eefbfa0ba50677f8b86c6523a3f05fb32fb493ef6696a5f2e459"
+    },
+    {
+      "question_id": "0015633f-cdcf-407a-8c84-88523f0610da",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "A building has 200 persons occupancy. Calculate the required stair width using the formula: Width = Occupant Load × Unit Width per Table VIII-5 (PD 1096 Rule VIII Sec. 808).",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,100mm (base only, no additional width required)"
+        },
+        {
+          "id": "b",
+          "text": "1,350mm (added 250mm once to the base width)"
+        },
+        {
+          "id": "c",
+          "text": "1,850mm (1,100 + 750mm added)"
+        },
+        {
+          "id": "d",
+          "text": "2,100mm (over-sized, exceeds code maximum)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uses base only; ignores occupancy beyond 50 persons.",
+        "b": "Adds only 250mm (one increment); should add more for 200 persons.",
+        "d": "Over-calculated; wastes space.",
+        "correct": "Width = 1,100 + (200−50)÷50 × 250 = 1,100 + (150÷50) × 250 = 1,100 + 3 × 250 = 1,100 + 750 = 1,850mm. The 200 persons exceeds 50, so we add 750mm (three increments of 250mm for every 50 persons).",
+        "takeaway": "Stair width formula: 1,100mm + 250mm per 50 persons above 50. For 200 persons: 1,100 + 750 = 1,850mm."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 3 Stair Width Requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:594e09f252146683a0bae56764ae1d2dfacca70e8ffba2743beb7b8e4a04c670"
+    },
+    {
+      "question_id": "da9e6dc8-95a5-474c-9fd8-c90576dd65bf",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "A 4.5m floor-to-floor height requires vertical circulation. If riser = 200mm, how many risers are needed? (Round up.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "22 risers (4,500 ÷ 200 = 22.5, round up to the nearest whole number for safety)"
+        },
+        {
+          "id": "b",
+          "text": "23 risers (4,500 ÷ 200 = 22.5, must round UP to 23)"
+        },
+        {
+          "id": "c",
+          "text": "20 risers (conservative estimate based on typical design practices)"
+        },
+        {
+          "id": "d",
+          "text": "225 risers (misread units, assuming millimeters instead of meters)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Rounds down; violates max riser limit if you use this number.",
+        "c": "Too conservative; wastes vertical space with unnecessarily short risers.",
+        "d": "Unit error; misapplication.",
+        "correct": "4,500mm ÷ 200mm = 22.5. Rule: always round UP to the next integer (23 risers) to ensure each riser is ≤ 200mm. If rounded down to 22, each riser = 4,500÷22 = 204.5mm, which exceeds max.",
+        "takeaway": "Number of risers = ceiling(floor height ÷ max riser). Always round UP, never down."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 3 Stair Design",
+      "bloom_level": "remember",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:24d30d8d3848c84722171e99c732e9990deb27713b3591ac1c86272cae79e6a2"
+    },
+    {
+      "question_id": "05767463-cf8d-4050-8fa0-24a8c4ea119f",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "An accessible elevator must have minimum dimensions per Blueprint 344. What are the correct dimensions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.0m W × 1.2m D (standard), which may not accommodate all accessibility needs"
+        },
+        {
+          "id": "b",
+          "text": "1.1m W × 1.4m D (accessible, wheelchair-capable)"
+        },
+        {
+          "id": "c",
+          "text": "1.5m W × 1.8m D (excessive), which exceeds typical requirements and may not be practical"
+        },
+        {
+          "id": "d",
+          "text": "0.9m W × 1.0m D (too small), which fails to meet accessibility standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.0m × 1.2m is too small; non-compliant with BP 344 and ADA.",
+        "c": "Oversized; 1.1m × 1.4m is sufficient.",
+        "d": "Far too small; cannot accommodate wheelchair.",
+        "correct": "BP 344 2024 IRR mandates 1,100mm × 1,400mm minimum for accessible elevators. This allows wheelchair entry through 900mm door and maneuvering. ERR-DSGN-033 is using 1.0m × 1.2m (wrong).",
+        "takeaway": "Accessible elevator car (BP 344): 1,100mm × 1,400mm minimum. NOT 1,000mm × 1,200mm (ERR-DSGN-033)."
+      },
+      "explanation": null,
+      "code_citation": "Blueprint 344, NBC Chapter 4 Accessibility",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d8f49a21dee5c375c358dd4b8166983fc5868192d508fad7ff7140e5c4c3d57d"
+    },
+    {
+      "question_id": "e651348d-c56b-4c34-9bd5-1d494e299c4d",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "For a 20-storey residential tower, design the main stairwell. Given: BHL = 60m, max riser 190mm, min tread 250mm, max 18 risers per flight, 200 occupants. Calculate: (a) total risers needed, (b) minimum stair width, (c) compliance with Blondel (R+T range 430–450mm)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) 300 risers, (b) 1,850mm width, (c) R+T = 450mm ✓"
+        },
+        {
+          "id": "b",
+          "text": "(a) 200 risers, (b) 1,100mm width, (c) R+T = 420mm (non-compliant)"
+        },
+        {
+          "id": "c",
+          "text": "(a) 300 risers, (b) 1,100mm width, (c) R+T = 430mm ✓"
+        },
+        {
+          "id": "d",
+          "text": "(a) 250 risers, (b) 2,000mm width, (c) R+T = 450mm (oversized)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "200 risers is too few (ignores 60m height properly).",
+        "c": "300 risers is correct, but width is understated (should be 1,850mm, not 1,100mm).",
+        "d": "2,000mm width is oversized; 250 risers underestimates height.",
+        "correct": "(a) BHL = 60m = 60,000mm. Risers = ceiling(60,000 ÷ 200) = 300 risers (in multiple flights of 18 risers each = ~17 flights). (b) Width = 1,100 + (200−50)÷50×250 = 1,100 + 750 = 1,850mm ✓. (c) If riser = 200mm, tread = 250mm, then R+T = 450mm (upper boundary ✓). Stairwell is compliant.",
+        "takeaway": "Multi-part stairwell design integrates: height → risers, occupancy → width, proportions → Blondel check. Always verify all three components for compliance."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 3, Blueprint 344, Development Code",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e289e9a6d724fbea7de5c4fe7430bf5c3b07dd9855afe96ad87a98759bef1490"
+    },
+    {
+      "question_id": "859cefbf-59d5-4f60-a3c8-7ba7fce1077a",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "A stair design has 20 risers. What is the maximum number of risers allowed per flight before a landing is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14 risers (strict limit)"
+        },
+        {
+          "id": "b",
+          "text": "16 risers (conservative)"
+        },
+        {
+          "id": "c",
+          "text": "16 risers maximum per flight"
+        },
+        {
+          "id": "d",
+          "text": "22 risers (high-rise standard)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "14 is the lower boundary; up to 18 is allowed.",
+        "b": "16 is within acceptable range.",
+        "d": "20 risers in one flight violates the code; fatigue hazard.",
+        "correct": "Maximum risers per flight = 14–18 (NBC range; some codes say 16 exactly). A design with 20 risers total must split into at least 2 flights with a landing between them. For example: 10 + 10, or 9 + 11.",
+        "takeaway": "Flight limit: 14–18 risers max per flight. Longer flights → landing required. 20 risers = 2 flights of 10 each (or 9+11)."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 3 Flight Specifications",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8dd2ed28197bb98a96f8032c1987086d880322a6c8ad3c61b3adcc83dcda85ea"
+    },
+    {
+      "question_id": "89843553-d2b1-4a89-a575-ca85a3748b8e",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "What is the most common error in stair riser specification in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using max riser = 175mm instead of 200mm (ERR-DSGN-022)"
+        },
+        {
+          "id": "b",
+          "text": "Using riser = 150mm (too shallow, wastes steps and increases construction costs due to additional materials)"
+        },
+        {
+          "id": "c",
+          "text": "Using riser = 210mm (exceeds code, leading to potential safety violations and increased risk of tripping)"
+        },
+        {
+          "id": "d",
+          "text": "Using varying riser heights on same flight (comfort hazard, causing uneven walking rhythm and potential falls)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "150mm is conservative but not an error per se; within code but uneconomical.",
+        "c": "210mm is a true code violation.",
+        "d": "Varying risers are dangerous and code-prohibited.",
+        "correct": "Common exam misconception: designers often specify 175mm max riser based on outdated codes or misremembering. The correct max is 200mm (NBC). Using 175mm forces more risers, deeper buildings, and higher construction cost.",
+        "takeaway": "ERR-DSGN-022: MAX RISER = 200mm, NOT 175mm. This is the ALE's most-tested stair error."
+      },
+      "explanation": null,
+      "code_citation": "ERR-DSGN-022, NBC Chapter 3",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:951403a545f966cd87b21a192b99e65b932e01dc465ae74c11eb00a4b1e04969"
+    },
+    {
+      "question_id": "6caeec0b-e7c3-4cd2-a194-bfed430cd669",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "A 3.5m floor height requires stair design. What is the minimum riser height that avoids exceeding 20 risers per flight?",
+      "options": [
+        {
+          "id": "a",
+          "text": "175mm (3,500 ÷ 20 = 175)"
+        },
+        {
+          "id": "b",
+          "text": "190mm (3,500 ÷ 18.4 ≈ 190)"
+        },
+        {
+          "id": "c",
+          "text": "194mm (3,500 ÷ 18 ≈ 194)"
+        },
+        {
+          "id": "d",
+          "text": "200mm (max allowed)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "175mm riser forces 20 risers, exceeding single-flight limit (18).",
+        "b": "190mm is close but slightly lower than optimal.",
+        "d": "200mm would give only 17.5 → 18 risers, but 194mm is more typical.",
+        "correct": "Max flight is 18 risers. For 3,500mm: 3,500 ÷ 18 = 194.4mm riser. This is within 200mm max and keeps one flight to 18 risers (no mid-flight landing required). If riser were 175mm, you'd need 3,500÷175 = 20 risers (exceeds 18), requiring a landing.",
+        "takeaway": "To fit tall floors in one flight (18 risers max), use larger riser (194–200mm). Smaller riser forces multiple flights."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 3 Flight/Riser Optimization",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed77f334e57a9ef2a485a6102604909582e63be476f08b88c1c29a17f6c56b1a"
+    },
+    {
+      "question_id": "44054702-356f-4814-b89a-1bb7cae9c6e4",
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "topic_id": "f0a172a2-8126-42dd-814d-6c7e5b053fd9",
+      "text": "An office building has 150 occupants. Design vertical circulation: (a) Calculate stair width. (b) How many elevators are required if each floor is 2,500 sqm? (c) Does 3.0m floor-to-floor allow a riser of 180mm within acceptable Blondel range (tread 250mm)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) 1,600mm, (b) 1 elevator, (c) No (R+T = 430, too low)"
+        },
+        {
+          "id": "b",
+          "text": "(a) 1,600mm, (b) 1 elevator, (c) Yes (R+T = 430, within range)"
+        },
+        {
+          "id": "c",
+          "text": "(a) 1,350mm, (b) 2 elevators, (c) Yes (R+T = 430, acceptable)"
+        },
+        {
+          "id": "d",
+          "text": "(a) 1,100mm, (b) 3 elevators, (c) No (tread too shallow)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct stair width and elevator count, but claims R+T=430 is 'too low'—it is actually within range (boundary).",
+        "c": "Stair width and elevator are slightly different, and claims 2 elevators (not required yet at 2,500 sqm).",
+        "d": "All answers incorrect; understates stair width.",
+        "correct": "(a) Width = 1,100 + (150−50)÷50 × 250 = 1,100 + 500 = 1,600mm. (b) Per building use and traffic analysis (no fixed NBC formula): 2,500 sqm is at threshold, 1 elevator is minimum (though 2 advised for redundancy). (c) R+T = 180+250 = 430mm, which is exactly at the lower boundary of 430–450mm range → acceptable (barely).",
+        "takeaway": "Multi-part design questions test integrated knowledge: occupancy → stair width, floor area → elevator count, proportions → Blondel check."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 3, Blueprint 344, ASEP Guidelines",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-10-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.804174+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:49adafafad3ac93f9d20e4c52fc68049fcbe7bdd759356e125c57a63e20c6b22"
+    }
+  ]
+}

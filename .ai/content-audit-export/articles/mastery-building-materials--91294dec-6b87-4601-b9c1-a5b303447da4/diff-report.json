@@ -1,0 +1,46 @@
+{
+  "article_id": "91294dec-6b87-4601-b9c1-a5b303447da4",
+  "slug": "mastery-building-materials",
+  "generated_at": "2026-05-03T07:50:00.598Z",
+  "old_hash": "sha256:c16514146f9a3ae43cbd380e4cbd27f476ffcc4213f44543afc66d7f35b66f50",
+  "new_hash": "sha256:7ef5a5546c723bb6903634a8d4c17741b0be2d9483730b62969141f2b26e7bde",
+  "original_hash": "sha256:c16514146f9a3ae43cbd380e4cbd27f476ffcc4213f44543afc66d7f35b66f50",
+  "normalized_hash": "sha256:0e383e490c14e1182295369ef8a74b9d784be196a95a5213b3e09bd046814038",
+  "candidate_hash": "sha256:7ef5a5546c723bb6903634a8d4c17741b0be2d9483730b62969141f2b26e7bde",
+  "changed": true,
+  "changed_line_count": 77,
+  "inserted_line_count": 0,
+  "deleted_line_count": 24,
+  "ui_blocks_original_count": 8,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 5,
+  "ui_blocks_count": 8,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
+  "changed_text_summary": {
+    "changed": 77,
+    "inserted": 0,
+    "deleted": 24,
+    "original_line_count": 99,
+    "candidate_line_count": 75
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007",
+      "ui_0008"
+    ],
+    "changed_count": 5
+  },
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate is missing 5 preserved UI block(s)."
+  ],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Unsafe: Candidate is missing 5 preserved UI block(s)."
+}

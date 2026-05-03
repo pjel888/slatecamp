@@ -1,0 +1,684 @@
+{
+  "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9be84bcb0224668b8918a773a4cdbb00fc47cb72b7b8c9db3ea6a54fedd2ccfc",
+  "question_count": 13,
+  "questions": [
+    {
+      "question_id": "d5344501-ae65-48f7-9c00-85b280f4c0da",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Sound isolation in architecture depends on three mechanisms. Which combination is most effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mass, discontinuity (decoupling), and absorption used in combination for comprehensive noise control"
+        },
+        {
+          "id": "b",
+          "text": "Absorption alone, using soft materials throughout the building to minimize sound transmission"
+        },
+        {
+          "id": "c",
+          "text": "Mass alone, relying solely on wall thickness to block sound, which can be effective in certain scenarios"
+        },
+        {
+          "id": "d",
+          "text": "Acoustic caulking without structural changes to isolate spaces, providing a cost-effective solution"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Absorption alone doesn't prevent low-frequency transmission requiring mass",
+        "c": "Mass alone is insufficient without discontinuity and absorption",
+        "d": "Caulking is supplementary; structural solutions are primary",
+        "correct": "Effective isolation combines mass (blocking), discontinuity (breaking transmission paths), and absorption (removing energy) comprehensively",
+        "takeaway": "Effective isolation combines mass (blocking), discontinuity (breaking transmission paths), and absorption (removing energy) comprehensively."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b4c13aaf1c9d4170b2298c0f2b4dc8f728016c4975018a848d2fee0b46e8da81"
+    },
+    {
+      "question_id": "8b7bc959-bd31-4099-a7fa-c72b3cd31e3e",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "In designing a healthcare facility in a tropical climate, which material strategy would most effectively balance infection control requirements with haptic warmth and psychological comfort?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use soft, porous materials (carpet, fabric) throughout for maximum comfort, prioritizing tactile experience over hygiene"
+        },
+        {
+          "id": "b",
+          "text": "Combine wipeable hard surfaces (ceramic, polished concrete) where infection control is critical with warm material accents (natural wood trim, textile elements) in patient areas"
+        },
+        {
+          "id": "c",
+          "text": "Eliminate all functional finishes; use only decorative ornaments for psychological benefit, disregarding practical considerations"
+        },
+        {
+          "id": "d",
+          "text": "Use exclusively polished concrete and ceramic tile throughout, prioritizing cleanability and durability, with no regard for comfort"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Porous materials compromise infection control in healthcare contexts",
+        "c": "Ornament without functional sensory design provides limited benefit",
+        "d": "Exclusively hard finishes reduce stress-reducing haptic benefit",
+        "correct": "Strategic integration balances infection control (hard surfaces where required) with haptic warmth (natural materials where appropriate), serving dual functions",
+        "takeaway": "Strategic integration balances infection control (hard surfaces where required) with haptic warmth (natural materials where appropriate), serving dual functions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e6dd27e08ca43555f1b504d4bf9ed9b6bf5a81fba1419959b4c0a57c7ee821b4"
+    },
+    {
+      "question_id": "2e3fbf2b-d0ee-485f-9693-096ae0a46fa0",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Why might a visually beautiful office with modern architecture, good lighting, and comfortable furniture still produce occupant dissatisfaction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modern architecture inherently produces dissatisfaction due to design style, which is a subjective and oversimplified view"
+        },
+        {
+          "id": "b",
+          "text": "Aesthetic quality alone ensures occupant satisfaction regardless of other factors, which ignores the complexity of human comfort"
+        },
+        {
+          "id": "c",
+          "text": "Occupant satisfaction depends exclusively on furniture comfort, not sensory design, which overlooks other critical environmental factors"
+        },
+        {
+          "id": "d",
+          "text": "Visual appeal is secondary to acoustic, thermal, and material sensory qualities that affect stress and comfort"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architecture style is independent of sensory integration quality",
+        "b": "Aesthetic quality is necessary but insufficient without sensory integration",
+        "c": "Sensory design affects satisfaction across multiple dimensions",
+        "correct": "Comprehensive occupant satisfaction requires integration of all sensory dimensions; visual appeal alone is insufficient without acoustic, tactile, and thermal comfort",
+        "takeaway": "Comprehensive occupant satisfaction requires integration of all sensory dimensions; visual appeal alone is insufficient without acoustic, tactile, and thermal comfort."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b62e076d4cc2e8043a7609a4f3c8d5e7c0227640f977ef08b122c56ad9b0fdad"
+    },
+    {
+      "question_id": "df1c6c95-a997-4349-a87f-d13163a19a8a",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "An open-plan office shows high employee stress despite good lighting. The space has hard reflective finishes and no acoustic treatment. The most direct cause is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insufficient desk space reducing productivity, which can indirectly increase stress levels"
+        },
+        {
+          "id": "b",
+          "text": "Insufficient natural light causing vitamin D deficiency, although lighting is reportedly good"
+        },
+        {
+          "id": "c",
+          "text": "Excessive reverberation from hard finishes creating acoustic stress and speech intelligibility problems"
+        },
+        {
+          "id": "d",
+          "text": "Inadequate furniture comfort affecting ergonomics, potentially leading to physical discomfort"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Desk space doesn't address acoustic stress",
+        "b": "Lighting design is satisfactory; this is an acoustic problem",
+        "d": "Furniture comfort is unrelated to acoustic stress",
+        "correct": "Hard finishes create excessive reverberation and noise transmission, directly causing acoustic stress and communication difficulty",
+        "takeaway": "Hard finishes create excessive reverberation and noise transmission, directly causing acoustic stress and communication difficulty."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:74b68b306a121d3482843de5e88b6e023cd7193bff98f46e437f7b32793520e2"
+    },
+    {
+      "question_id": "c904724d-511f-4c50-aae7-203f7c71a9b7",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Light intensity measured in lux directly affects occupant behavior. Illumination below 300 lux typically:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increases alertness and visual acuity, supporting detailed work"
+        },
+        {
+          "id": "b",
+          "text": "Produces excessive glare and eye strain"
+        },
+        {
+          "id": "c",
+          "text": "Triggers fatigue and poor task performance"
+        },
+        {
+          "id": "d",
+          "text": "Disrupts circadian rhythm without psychological effect"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "High intensity illumination (800+ lux) increases alertness",
+        "b": "Excessive intensity creates glare, not insufficient intensity",
+        "d": "While circadian disruption occurs at wrong times, insufficient intensity directly causes fatigue",
+        "correct": "Below 300 lux, insufficient illumination triggers fatigue and reduces task performance; occupants become drowsy",
+        "takeaway": "Below 300 lux, insufficient illumination triggers fatigue and reduces task performance; occupants become drowsy."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b4a6295a359a4a0daedb83567b2e2efa8ccd9649a2e74d62bf40233e16df1b4a"
+    },
+    {
+      "question_id": "e089059c-3efd-4f59-8886-f7cba5a46ec4",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Color temperature measured in Kelvin degrees affects psychological state. Warm light (2700–3000K) is most appropriate for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Warehouse and industrial operations requiring neutral appearance"
+        },
+        {
+          "id": "b",
+          "text": "Retail environments emphasizing merchandise visibility"
+        },
+        {
+          "id": "c",
+          "text": "Residential and hospitality spaces where intimacy and calm are desired"
+        },
+        {
+          "id": "d",
+          "text": "Detailed technical work requiring maximum alertness and precision"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Neutral light (3500–4100K) supports balanced task performance",
+        "b": "Retailers often use cool to neutral light emphasizing visibility",
+        "d": "Cool light (5000–6500K) supports alertness for technical work",
+        "correct": "Warm light (2700–3000K) appears intimate and calming, appropriate for residential, healthcare, and hospitality contexts",
+        "takeaway": "Warm light (2700–3000K) appears intimate and calming, appropriate for residential, healthcare, and hospitality contexts."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6bdf838e60c49c862b2766236ff8506c01736a56c8944f247da0e389c089839d"
+    },
+    {
+      "question_id": "724d2d81-e3b1-4a3c-8555-c62122faf7c0",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Haptic design engages which sense(s)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vision exclusively, emphasizing visual clarity, which is not related to haptic design"
+        },
+        {
+          "id": "b",
+          "text": "Sound exclusively, creating acoustic environments, which is unrelated to haptic design"
+        },
+        {
+          "id": "c",
+          "text": "Touch and proprioception—the body's spatial awareness through movement and contact"
+        },
+        {
+          "id": "d",
+          "text": "Smell exclusively, emphasizing scent design, which is not part of haptic design"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Haptic is distinct from visual design",
+        "b": "Haptic is distinct from acoustic design",
+        "d": "Haptic is distinct from olfactory design",
+        "correct": "Haptic design addresses tactile sensation (touch) and proprioception (body position sense) through material, temperature, and dimensional design",
+        "takeaway": "Haptic design addresses tactile sensation (touch) and proprioception (body position sense) through material, temperature, and dimensional design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c307a9ddc560bc03a2bd662f53b4eab40d27c3b53fc27a6ea2e041cc636af4b"
+    },
+    {
+      "question_id": "e9a26828-f552-4189-b055-8001cab17783",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "In designing a hospital patient room, what color temperature would most directly support patient relaxation and rest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5500K cool white light maximizing visibility and alertness"
+        },
+        {
+          "id": "b",
+          "text": "Constant illumination at 400 lux without circadian variation"
+        },
+        {
+          "id": "c",
+          "text": "3500K neutral light supporting balanced visibility"
+        },
+        {
+          "id": "d",
+          "text": "2700–3000K warm light supporting psychological calm and rest"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cool light increases alertness, contradicting rest requirements",
+        "b": "Static illumination disrupts circadian rhythm and prevents recovery benefit",
+        "c": "Neutral light is balanced but lacks calming psychological effect",
+        "correct": "Warm light (2700–3000K) combined with variable daylighting supporting circadian alignment reduces patient anxiety and supports recovery",
+        "takeaway": "Warm light (2700–3000K) combined with variable daylighting supporting circadian alignment reduces patient anxiety and supports recovery."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a1e1e2fb843e007d776feb211b05d064eab776b76b9ebc9c8adc891d513b16f3"
+    },
+    {
+      "question_id": "a040ed57-0a80-44ac-b4f3-a5798ea5f572",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "To reduce acoustic stress in a restaurant with tables spaced at 1.2 meters, which strategy would be most effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase table spacing to 2 meters, separating occupants farther, which may not be feasible in all restaurant layouts"
+        },
+        {
+          "id": "b",
+          "text": "Use only hard, reflective finishes for easy cleaning, which can exacerbate noise issues rather than mitigate them"
+        },
+        {
+          "id": "c",
+          "text": "Install background music loud enough to mask conversation noise, potentially leading to increased overall noise levels"
+        },
+        {
+          "id": "d",
+          "text": "Apply soft furnishings, acoustic panels, and absorption materials reducing reverberation and sound transmission"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Greater spacing is costly; sensory design is more cost-effective",
+        "b": "Hard finishes worsen acoustic problems",
+        "c": "Loud masking sound increases noise stress; absorption is superior",
+        "correct": "Absorption materials reduce reverberation and sound transmission, creating acoustic comfort at minimal spacing through sensory design",
+        "takeaway": "Absorption materials reduce reverberation and sound transmission, creating acoustic comfort at minimal spacing through sensory design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:908eac3d18dbe2f750ff894046a85f7fadd5850fa8f6723e7184b856ca2cb793"
+    },
+    {
+      "question_id": "ca00daf2-55c7-4c99-b6d5-4f0faad6a0ac",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Reverberation time is the duration sound persists in space after its source ceases. Optimal reverberation time for offices and classrooms is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.0–1.5 seconds"
+        },
+        {
+          "id": "b",
+          "text": "2.0–3.0 seconds"
+        },
+        {
+          "id": "c",
+          "text": "0.6–0.8 seconds"
+        },
+        {
+          "id": "d",
+          "text": "0.3–0.5 seconds"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.0–1.5 seconds produces excessive reverberation, reducing speech clarity",
+        "b": "2.0–3.0 seconds is appropriate for performance spaces, not offices",
+        "d": "0.3–0.5 seconds is too short; spaces feel acoustically dead",
+        "correct": "0.6–0.8 seconds supports speech intelligibility and occupant comfort in offices and classrooms",
+        "takeaway": "0.6–0.8 seconds supports speech intelligibility and occupant comfort in offices and classrooms."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4c16e4284e903f8f7cb55f7b1138395caa5dc3542266c3d51283415a25503c86"
+    },
+    {
+      "question_id": "dc4494da-1053-4f2c-867a-9f15d6ad7290",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Sensory design in architecture is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The exclusive focus on visual aesthetics and building appearance, disregarding other sensory experiences"
+        },
+        {
+          "id": "b",
+          "text": "The use of decoration and ornamental finishes to enhance interior appearance, prioritizing visual impact over functionality"
+        },
+        {
+          "id": "c",
+          "text": "The practice of adding art installations to buildings for cultural purposes, which may enhance the aesthetic value but not necessarily the sensory experience"
+        },
+        {
+          "id": "d",
+          "text": "The deliberate coordination of light, sound, tactile qualities, and scent to support spatial function and occupant well-being"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sensory design transcends visual focus to engage all senses",
+        "b": "Decoration differs from systemic sensory design integration",
+        "c": "Art installations are distinct from architectural sensory design",
+        "correct": "Sensory design integrates multiple sensory modalities—light, sound, touch, smell—into coherent spatial experiences supporting function and well-being",
+        "takeaway": "Sensory design integrates multiple sensory modalities—light, sound, touch, smell—into coherent spatial experiences supporting function and well-being."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4f51592a971d734d3775f0e3a03b7dbad0afa128f7ee71d2119d9f35f0b49878"
+    },
+    {
+      "question_id": "f3a6398e-50a3-44a4-a75e-3477620c71d7",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Why is circadian-aligned daylighting important for occupant health in modern buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It improves visual clarity and reduces eye strain during work hours, enhancing productivity"
+        },
+        {
+          "id": "b",
+          "text": "It varies in intensity and color temperature throughout the day, supporting circadian rhythm and improving sleep quality, mood, and alertness"
+        },
+        {
+          "id": "c",
+          "text": "It eliminates the need for artificial lighting, reducing maintenance requirements and energy consumption"
+        },
+        {
+          "id": "d",
+          "text": "It reduces electricity costs through daylight harvesting, contributing to sustainability goals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Visual clarity is important but secondary to circadian health effect",
+        "c": "Daylighting cannot entirely eliminate artificial lighting in modern buildings",
+        "d": "Cost savings are practical benefits but not primary health rationale",
+        "correct": "Circadian-aligned lighting supporting biological 24-hour cycles directly improves occupant health, sleep, and mood",
+        "takeaway": "Circadian-aligned lighting supporting biological 24-hour cycles directly improves occupant health, sleep, and mood."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:190f2f46e10dd9165e8934f4b45575e732c6c91ed86b31e2046e814078363538"
+    },
+    {
+      "question_id": "3839e767-649e-443b-b231-a5c85b4209be",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "In designing a pediatric clinic in Manila, what integrated sensory strategy would most reduce child and parent anxiety?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Integrate warm color temperature (2700–3000K), strategic daylighting, soft material textures (wood, fabric), acoustic absorption reducing noise stress, and smooth transitions creating comfort"
+        },
+        {
+          "id": "b",
+          "text": "Maximize bright, cool-temperature lighting (5000K) to ensure visibility and cleanliness perception, which may not always be comforting"
+        },
+        {
+          "id": "c",
+          "text": "Install televisions and digital screens throughout to distract children from clinical environment, though this may not address underlying anxiety"
+        },
+        {
+          "id": "d",
+          "text": "Use exclusively hard, reflective finishes for hygienic cleaning and durability, potentially increasing stress due to noise and harshness"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Cool bright light increases clinical appearance and stress",
+        "c": "Distraction doesn't address underlying sensory stress",
+        "d": "Hard finishes increase acoustic stress and feel hostile",
+        "correct": "Comprehensive sensory design—warm light, daylighting, soft materials, acoustic control, smooth details—directly reduces anxiety in pediatric contexts",
+        "takeaway": "Comprehensive sensory design—warm light, daylighting, soft materials, acoustic control, smooth details—directly reduces anxiety in pediatric contexts."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0dce7e53016957397af94fa2c100f8ba53b46a821110d3e4785625be6807ff85"
+    }
+  ]
+}

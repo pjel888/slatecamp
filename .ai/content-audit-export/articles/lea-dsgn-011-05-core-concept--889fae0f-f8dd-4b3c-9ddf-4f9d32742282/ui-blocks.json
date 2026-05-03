@@ -1,0 +1,63 @@
+{
+  "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
+  "slug": "lea-dsgn-011-05-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.434Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:9815bc4d44ca10ef88ca033ca277ea5287c60783adaa4a896b3abb065b115f77",
+  "normalized_content_hash": "9815bc4d44ca10ef88ca033ca277ea5287c60783adaa4a896b3abb065b115f77",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\n  **Memory aid:** \"Door-Direction-Arc Rule\" \u2014 The arc always shows the path of\n  the door. If a door swings into a required egress corridor and reduces the\n  width, it is a code violation!\n</Tip>",
+      "raw_hash": "sha256:dedf5c969604d9f65a6e6ec8e1cce4098ae408867c4acbe3e24ff6d4e27eb812",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory aid:** \"Door-Direction-Arc Rule\" \u2014 The arc always shows the path of the door. If a door swings into a required egress corridor and reduces the width, it is a code violation!\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:986f0eeb28066f880afe6d3f3a964b6f0e252deaaeb916b4ae184de6a9458397",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n  **Memory aid:** \"Door-Direction-Arc Rule\" \u2014 The arc always shows the path of\n  the door. If a door swings into a required egress corridor and reduces the\n  width, it is a code violation!\n",
+      "children_text": "**Memory aid:** \"Door-Direction-Arc Rule\" \u2014 The arc always shows the path of the door. If a door swings into a required egress corridor and reduces the width, it is a code violation!",
+      "start_offset": 7528,
+      "end_offset": 7729,
+      "line_start": 80,
+      "line_end": 84,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  mistakes={[\n    'Drawing door swings incorrectly; arcs must start at the hinge and represent the actual path of the leaf.',\n    'Failing to distinguish between drawn wall thickness and clear interior cab dimensions for elevators.',\n    'Inconsistent material hatching (e.g., using masonry hatching for a concrete section).',\n    \"Using 'Rule XIV' or 'Rule XI' for elevator requirements (Correct: Rule XVIII Section 1801).\",\n    \"Forgetting the 'UP' arrow on stairs; without it, the direction of travel is ambiguous for the builder.\",\n    'Missing fire-rating notations on critical compartmentation walls.',\n    \"Misinterpreting the 4-storey rule as requiring 'multiple' elevators (Code requires at least one).\",\n  ]}\n/>",
+      "raw_hash": "sha256:5b723cfe04e6d48a77574fa45119b82e150d26ebdc2aac1af6fa81740b943131",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n    'Drawing door swings incorrectly; arcs must start at the hinge and represent the actual path of the leaf.',\\n    'Failing to distinguish between drawn wall thickness and clear interior cab dimensions for elevators.',\\n    'Inconsistent material hatching (e.g., using masonry hatching for a concrete section).',\\n    \\\"Using 'Rule XIV' or 'Rule XI' for elevator requirements (Correct: Rule XVIII Section 1801).\\\",\\n    \\\"Forgetting the 'UP' arrow on stairs; without it, the direction of travel is ambiguous for the builder.\\\",\\n    'Missing fire-rating notations on critical compartmentation walls.',\\n    \\\"Misinterpreting the 4-storey rule as requiring 'multiple' elevators (Code requires at least one).\\\",\\n  ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:7e7a04880b6d7dd203afe49d6a865696f62478910b911b578dfa2cd0ef9c8af7",
+      "props": {
+        "mistakes": "{[\n    'Drawing door swings incorrectly; arcs must start at the hinge and represent the actual path of the leaf.',\n    'Failing to distinguish between drawn wall thickness and clear interior cab dimensions for elevators.',\n    'Inconsistent material hatching (e.g., using masonry hatching for a concrete section).',\n    \"Using 'Rule XIV' or 'Rule XI' for elevator requirements (Correct: Rule XVIII Section 1801).\",\n    \"Forgetting the 'UP' arrow on stairs; without it, the direction of travel is ambiguous for the builder.\",\n    'Missing fire-rating notations on critical compartmentation walls.',\n    \"Misinterpreting the 4-storey rule as requiring 'multiple' elevators (Code requires at least one).\",\n  ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n    'Drawing door swings incorrectly; arcs must start at the hinge and represent the actual path of the leaf.',\n    'Failing to distinguish between drawn wall thickness and clear interior cab dimensions for elevators.',\n    'Inconsistent material hatching (e.g., using masonry hatching for a concrete section).',\n    \"Using 'Rule XIV' or 'Rule XI' for elevator requirements (Correct: Rule XVIII Section 1801).\",\n    \"Forgetting the 'UP' arrow on stairs; without it, the direction of travel is ambiguous for the builder.\",\n    'Missing fire-rating notations on critical compartmentation walls.',\n    \"Misinterpreting the 4-storey rule as requiring 'multiple' elevators (Code requires at least one).\",\n  ]}"
+      },
+      "props_text": "mistakes={[\n    'Drawing door swings incorrectly; arcs must start at the hinge and represent the actual path of the leaf.',\n    'Failing to distinguish between drawn wall thickness and clear interior cab dimensions for elevators.',\n    'Inconsistent material hatching (e.g., using masonry hatching for a concrete section).',\n    \"Using 'Rule XIV' or 'Rule XI' for elevator requirements (Correct: Rule XVIII Section 1801).\",\n    \"Forgetting the 'UP' arrow on stairs; without it, the direction of travel is ambiguous for the builder.\",\n    'Missing fire-rating notations on critical compartmentation walls.',\n    \"Misinterpreting the 4-storey rule as requiring 'multiple' elevators (Code requires at least one).\",\n  ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7751,
+      "end_offset": 8489,
+      "line_start": 88,
+      "line_end": 98,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:2db72c7673f3e070c126cb7d2d34adc565ba451981924f7332a8bf928f90bb92"
+}

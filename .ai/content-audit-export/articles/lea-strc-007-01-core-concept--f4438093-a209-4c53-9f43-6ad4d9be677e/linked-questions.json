@@ -1,0 +1,508 @@
+{
+  "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:f470ad5298961b4711c1d96050d967a82f08ef788c9a0bd8dae449f926b4c8bc",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "3db9548b-71c4-42e7-9e32-9e03769e6c74",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "An interior column (not exposed) has primary reinforcement of 28 mm diameter bars. What is the minimum concrete cover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "28 mm"
+        },
+        {
+          "id": "b",
+          "text": "20 mm"
+        },
+        {
+          "id": "c",
+          "text": "40 mm"
+        },
+        {
+          "id": "d",
+          "text": "50 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Unlike precast, cast-in-place columns use fixed values rather than bar diameters.",
+        "b": "20 mm is for interior slabs and walls.",
+        "d": "50 mm is for weather-exposed large bars.",
+        "correct": "For nonprestressed concrete not exposed to weather, the specified cover for primary reinforcement in beams and columns is a fixed 40 mm (§ 420.6.1.1).",
+        "takeaway": "Interior Beams/Columns = 40 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0daed6e14178e84c835dceae04dfd7c0b36172c2feb8dd79eaf436ef5c9c13d0"
+    },
+    {
+      "question_id": "babf53c7-3371-490f-bd34-c2e41e8bcd8b",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "A cantilever balcony spandrel is exposed to weather. Primary reinforcing bars are 20 mm diameter. What minimum concrete cover applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 mm"
+        },
+        {
+          "id": "b",
+          "text": "50 mm"
+        },
+        {
+          "id": "c",
+          "text": "75 mm"
+        },
+        {
+          "id": "d",
+          "text": "30 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "40 mm applies to weather-exposed bars 16 mm or smaller.",
+        "c": "75 mm is only for concrete cast directly against earth.",
+        "d": "30 mm is below the minimum requirement for weather exposure in cast-in-place concrete.",
+        "correct": "For concrete exposed to earth or weather, 50 mm cover is required for bars 20 mm through 58 mm in diameter (NSCP 2015 § 420.6.1.1).",
+        "takeaway": "Weather exposed: Bars ≥ 20 mm = 50 mm; Bars ≤ 16 mm = 40 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5594df64741e25597adea874084c12d2ed27aae505da2a8f69c3d41cc68d4a2c"
+    },
+    {
+      "question_id": "c61d003e-5701-4571-bcfa-5f0cfbb4afb3",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "A prestressed hollow-core slab is installed indoors in a climate-controlled office building (fully enclosed, not exposed to weather or soil). What is the minimum cover to the prestressing strand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 mm"
+        },
+        {
+          "id": "b",
+          "text": "40 mm"
+        },
+        {
+          "id": "c",
+          "text": "50 mm"
+        },
+        {
+          "id": "d",
+          "text": "75 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "40 mm is required for prestressed beams and columns principal reinforcement, not slabs.",
+        "c": "50 mm is for prestressed members exposed to weather or soil.",
+        "d": "75 mm is for concrete cast directly against earth.",
+        "correct": "Per NSCP 2015 § 420.6.1.3, prestressed concrete slabs, walls, and joists not exposed to weather or in contact with ground require a minimum cover of 20 mm.",
+        "takeaway": "Prestressed unexposed Slabs/Walls = 20 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b79947d0eeed6bd9f5d19c2c44531557583b9171ea7ea6fe2670c675bb576023"
+    },
+    {
+      "question_id": "9d664a25-f37e-4b05-b197-168181ec4a8a",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "A precast wall panel (not exposed) has 32 mm diameter bars. What is the minimum cover per NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 mm"
+        },
+        {
+          "id": "b",
+          "text": "15 mm"
+        },
+        {
+          "id": "c",
+          "text": "20 mm"
+        },
+        {
+          "id": "d",
+          "text": "32 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10 mm is for precast shells.",
+        "c": "20 mm is for cast-in-place slabs/walls.",
+        "d": "Bar diameter is only used as a cover calculation for precast beams/columns.",
+        "correct": "Precast nonprestressed slabs and walls not exposed to weather require 15 mm cover for bars 32 mm or smaller (§ 420.6.1.2).",
+        "takeaway": "Precast unexposed Slabs/Walls (≤32 mm bars) = 15 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aa52d045350f527ac46bc610cda8738a8b97769a836fd032d162360b76372866"
+    },
+    {
+      "question_id": "6199c598-c7ae-4580-aa3c-b0311aa98d9b",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "What is the minimum concrete cover for reinforcement in a spread footing cast directly against earth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 mm"
+        },
+        {
+          "id": "b",
+          "text": "50 mm"
+        },
+        {
+          "id": "c",
+          "text": "75 mm"
+        },
+        {
+          "id": "d",
+          "text": "100 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "40 mm is for interior beams and columns.",
+        "b": "50 mm is for weather-exposed reinforcement of large diameters.",
+        "d": "100 mm exceeds the minimum requirement specified by the code.",
+        "correct": "75 mm is the required minimum cover for all reinforcement in concrete cast against and permanently in contact with earth (NSCP 2015 § 420.6.1.1). This provides maximum protection against corrosion from soil moisture.",
+        "takeaway": "Cast against earth (all members) = 75 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:025212c30d465b235a4c54ac6261b7f7097e5a285261acd7bdecff1932b46124"
+    },
+    {
+      "question_id": "88bc30d2-2a51-47ea-b89b-9f4c0d28beb0",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "An exposed weather-facing wall uses 12 mm diameter bars. Per NSCP, what is the minimum cover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 mm"
+        },
+        {
+          "id": "b",
+          "text": "50 mm"
+        },
+        {
+          "id": "c",
+          "text": "20 mm"
+        },
+        {
+          "id": "d",
+          "text": "30 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "50 mm is for bars 20 mm and larger.",
+        "c": "20 mm is for interior (unexposed) walls.",
+        "d": "30 mm is not an NSCP specified value for this condition.",
+        "correct": "Concrete exposed to earth or weather requires 40 mm cover for bars 16 mm or smaller (§ 420.6.1.1).",
+        "takeaway": "Weather exposure (≤ 16 mm bars) = 40 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e5a573d5a15231d68f1d19e08465b21e39dde61e776b319125794d2fe0749a83"
+    },
+    {
+      "question_id": "9efa4356-724f-4a97-8f13-027e9ca00c0b",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "In a code review, an engineer specifies 35 mm cover for an interior precast beam with 25 mm diameter bars. Is this compliant, and what is the minimum required cover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant; 35 mm is acceptable as it provides sufficient protection against corrosion and fire exposure"
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant; minimum is 25 mm (bar diameter), which is the standard for ensuring structural integrity and durability"
+        },
+        {
+          "id": "c",
+          "text": "Compliant; exceeds absolute minimum of 15 mm, which is typically used for non-structural elements"
+        },
+        {
+          "id": "d",
+          "text": "Compliant; 35 mm exceeds the minimum of 25 mm (bar diameter) but is within the 15–40 mm range per NSCP 2015."
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct but incomplete logic regarding the $d_b$ rule.",
+        "b": "35 mm is compliant because it is *more* than the 25 mm minimum.",
+        "c": "The absolute minimum for a beam is $d_b$ (25 mm), not 15 mm (which is for slabs).",
+        "correct": "Per § 420.6.1.2, interior precast beams use $d_b$ as the minimum (min 15 mm, max 40 mm). For a 25 mm bar, the code minimum is 25 mm. A specification of 35 mm is compliant as it exceeds the minimum and falls within the allowable envelope.",
+        "takeaway": "Precast beams/cols = $d_b$ (min 15, max 40)."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a9b4075d488549e4a5214a78cd1799e83dfc3c339a1538876e1dc3fd2559e7a0"
+    },
+    {
+      "question_id": "5e8d911d-42a4-4df0-8823-f5f078ac99fe",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "Compare the minimum cover for a 20 mm diameter primary bar in an interior beam: cast-in-place vs. precast concrete.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cast-in-place 40 mm; Precast 20 mm, ensuring adequate protection against environmental factors"
+        },
+        {
+          "id": "b",
+          "text": "Cast-in-place 40 mm; Precast db (min 15, max 40 mm) = 20 mm"
+        },
+        {
+          "id": "c",
+          "text": "Both require 40 mm, providing uniformity in structural protection across different construction methods"
+        },
+        {
+          "id": "d",
+          "text": "Cast-in-place 20 mm; Precast 40 mm, which may vary based on specific project requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the values are correct, option (b) correctly identifies the logic for the precast calculation.",
+        "c": "Precast concrete benefits from lower cover requirements due to factory-controlled quality.",
+        "d": "Cast-in-place requires higher cover than precast for interior beams.",
+        "correct": "Interior cast-in-place beams require 40 mm cover (§ 420.6.1.1). Interior precast beams/columns allow cover equal to the nominal bar diameter ($d_b$), but not less than 15 mm and need not exceed 40 mm (§ 420.6.1.2). For a 20 mm bar, $d_b = 20\text{ mm}$.",
+        "takeaway": "Precast interior beams/cols = $d_b$ (15–40 mm range)."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.1 & 420.6.1.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d89235bd488396fae8a5cfe584a63b3d7acfa72adb5882c339f6c6e788401252"
+    },
+    {
+      "question_id": "dddc14fa-914b-4a3e-b645-0167dd1f80d6",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "A prestressed concrete beam is exposed to weather. What is the minimum cover to the prestressing strand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 mm"
+        },
+        {
+          "id": "b",
+          "text": "40 mm"
+        },
+        {
+          "id": "c",
+          "text": "50 mm"
+        },
+        {
+          "id": "d",
+          "text": "75 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "25 mm is for prestressed slabs, walls, or joists exposed to weather.",
+        "c": "50 mm is required for reinforced (nonprestressed) concrete with large bars, but not for prestressed beams.",
+        "d": "75 mm is for concrete cast against earth.",
+        "correct": "Per NSCP 2015 § 420.6.1.3, prestressed members exposed to weather or soil require 40 mm cover for 'other members' (including beams and columns).",
+        "takeaway": "Prestressed exposed: Slabs/Walls = 25 mm; Other members = 40 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dfcdfd9fa3baa8e55a4c572e049dd8efd2bcfbcdff1c60d34ef09cc68d4c0726"
+    },
+    {
+      "question_id": "3cb0b95e-c0cc-4947-add4-d235c7a96573",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "topic_id": "2d56a5d2-6d5b-4175-8212-5e897536a221",
+      "text": "An interior floor slab (not exposed to weather) uses 16 mm diameter bars. What is the minimum cover requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 mm"
+        },
+        {
+          "id": "b",
+          "text": "20 mm"
+        },
+        {
+          "id": "c",
+          "text": "25 mm"
+        },
+        {
+          "id": "d",
+          "text": "40 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "15 mm is the minimum for precast slabs/walls, not cast-in-place.",
+        "c": "25 mm is not a standard minimum for unexposed reinforced concrete slabs.",
+        "d": "40 mm is the requirement for interior beams and columns.",
+        "correct": "20 mm is the minimum cover for non-exposed slabs, walls, and joists with bar diameters of 32 mm or smaller (NSCP 2015 § 420.6.1.1).",
+        "takeaway": "Interior (unexposed) slabs/walls = 20 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 420.6.1.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3dbcb4027a32cd30810ba9db9af1f568c93575f26793369f196314d3c8ee518b"
+    }
+  ]
+}

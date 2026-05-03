@@ -1,0 +1,123 @@
+{
+  "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+  "slug": "lea-matl-002-05-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.906Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:50d138c9c58f6959bcfae9d440abcec76c97fef907962a1d74122018a0575ccc",
+  "normalized_content_hash": "1add1d99bbcf9787b40ace3def54aa04b8ecbf814e73878283a2ee6d5563b5d0",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Temperature\", \"Relative Strength Gain Rate\", \"Practical Effect\"]} rows={[[\"Below 10\u00b0C (50\u00b0F)\", \"Very slow; approaching zero below 5\u00b0C\", \"Curing essentially halts; freeze risk if water present\"], [\"10\u00b0C (50\u00b0F)\", \"Baseline = 1.0\", \"Minimum for specification compliance\"], [\"20\u00b0C (68\u00b0F)\", \"Approximately 1.5x baseline\", \"Normal conditions; typical 7-day curing sufficient\"], [\"30\u00b0C (86\u00b0F)\", \"Approximately 2.0\u20142.5x baseline\", \"Rapid strength gain; early form removal possible at 2\u20143 days\"], [\"Above 40\u00b0C (104\u00b0F)\", \"Risk of reduced long-term strength\", \"Potential for thermal cracking and differential hydration\"]]} />",
+      "raw_hash": "sha256:f93b4a5003b97e3530f8fbe5613449501448c0907dc6bdb449f0e40fe3ed308f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Temperature\\\", \\\"Relative Strength Gain Rate\\\", \\\"Practical Effect\\\"]}\", rows=\"{[[\\\"Below 10\u00b0C (50\u00b0F)\\\", \\\"Very slow; approaching zero below 5\u00b0C\\\", \\\"Curing essentially halts; freeze risk if water present\\\"], [\\\"10\u00b0C (50\u00b0F)\\\", \\\"Baseline = 1.0\\\", \\\"Minimum for specification compliance\\\"], [\\\"20\u00b0C (68\u00b0F)\\\", \\\"Approximately 1.5x baseline\\\", \\\"Normal conditions; typical 7-day curing sufficient\\\"], [\\\"30\u00b0C (86\u00b0F)\\\", \\\"Approximately 2.0\u20142.5x baseline\\\", \\\"Rapid strength gain; early form removal possible at 2\u20143 days\\\"], [\\\"Above 40\u00b0C (104\u00b0F)\\\", \\\"Risk of reduced long-term strength\\\", \\\"Potential for thermal cracking and differential hydration\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c61344eaa495b2ee5cffc44fb778eab5233f04e1e9e3eff78c1bd13344ce7a8d",
+      "props": {
+        "headers": "{[\"Temperature\", \"Relative Strength Gain Rate\", \"Practical Effect\"]}",
+        "rows": "{[[\"Below 10\u00b0C (50\u00b0F)\", \"Very slow; approaching zero below 5\u00b0C\", \"Curing essentially halts; freeze risk if water present\"], [\"10\u00b0C (50\u00b0F)\", \"Baseline = 1.0\", \"Minimum for specification compliance\"], [\"20\u00b0C (68\u00b0F)\", \"Approximately 1.5x baseline\", \"Normal conditions; typical 7-day curing sufficient\"], [\"30\u00b0C (86\u00b0F)\", \"Approximately 2.0\u20142.5x baseline\", \"Rapid strength gain; early form removal possible at 2\u20143 days\"], [\"Above 40\u00b0C (104\u00b0F)\", \"Risk of reduced long-term strength\", \"Potential for thermal cracking and differential hydration\"]]}"
+      },
+      "props_json": {
+        "headers": "{[\"Temperature\", \"Relative Strength Gain Rate\", \"Practical Effect\"]}",
+        "rows": "{[[\"Below 10\u00b0C (50\u00b0F)\", \"Very slow; approaching zero below 5\u00b0C\", \"Curing essentially halts; freeze risk if water present\"], [\"10\u00b0C (50\u00b0F)\", \"Baseline = 1.0\", \"Minimum for specification compliance\"], [\"20\u00b0C (68\u00b0F)\", \"Approximately 1.5x baseline\", \"Normal conditions; typical 7-day curing sufficient\"], [\"30\u00b0C (86\u00b0F)\", \"Approximately 2.0\u20142.5x baseline\", \"Rapid strength gain; early form removal possible at 2\u20143 days\"], [\"Above 40\u00b0C (104\u00b0F)\", \"Risk of reduced long-term strength\", \"Potential for thermal cracking and differential hydration\"]]}"
+      },
+      "props_text": "headers={[\"Temperature\", \"Relative Strength Gain Rate\", \"Practical Effect\"]} rows={[[\"Below 10\u00b0C (50\u00b0F)\", \"Very slow; approaching zero below 5\u00b0C\", \"Curing essentially halts; freeze risk if water present\"], [\"10\u00b0C (50\u00b0F)\", \"Baseline = 1.0\", \"Minimum for specification compliance\"], [\"20\u00b0C (68\u00b0F)\", \"Approximately 1.5x baseline\", \"Normal conditions; typical 7-day curing sufficient\"], [\"30\u00b0C (86\u00b0F)\", \"Approximately 2.0\u20142.5x baseline\", \"Rapid strength gain; early form removal possible at 2\u20143 days\"], [\"Above 40\u00b0C (104\u00b0F)\", \"Risk of reduced long-term strength\", \"Potential for thermal cracking and differential hydration\"]]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4885,
+      "end_offset": 5525,
+      "line_start": 74,
+      "line_end": 74,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>In the tropical Philippines, white-pigmented curing compound (Type 2, ASTM C309) is often the most practical choice. It prevents evaporation, reflects solar heat, requires minimal daily maintenance, and provides adequate strength development when properly applied. Always verify complete coverage; thin or patchy application is ineffective.</Tip>",
+      "raw_hash": "sha256:4c46e7ef12dd68be7ccc5b0aa3580498df3f9241f377cdee36476a5a31a4b7da",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: In the tropical Philippines, white-pigmented curing compound (Type 2, ASTM C309) is often the most practical choice. It prevents evaporation, reflects solar heat, requires minimal daily maintenance, and provides adequate strength development when properly applied. Always verify complete coverage; thin or patchy application is ineffective.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:b8096f35c22b67516826921357fbf7872614f231a1b097da630323c3a32c5424",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "In the tropical Philippines, white-pigmented curing compound (Type 2, ASTM C309) is often the most practical choice. It prevents evaporation, reflects solar heat, requires minimal daily maintenance, and provides adequate strength development when properly applied. Always verify complete coverage; thin or patchy application is ineffective.",
+      "children_text": "In the tropical Philippines, white-pigmented curing compound (Type 2, ASTM C309) is often the most practical choice. It prevents evaporation, reflects solar heat, requires minimal daily maintenance, and provides adequate strength development when properly applied. Always verify complete coverage; thin or patchy application is ineffective.",
+      "start_offset": 10663,
+      "end_offset": 11014,
+      "line_start": 141,
+      "line_end": 141,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard\n  mistake=\"Assuming that high ambient temperature in tropical Philippines automatically speeds up curing sufficiently, so reduced curing time (3\u20144 days) is acceptable\"\n  correction=\"While high temperature does accelerate hydration, ACI 308R specifies minimum 7-day curing for ordinary portland cement at any temperature above 10\u00b0C. Shorter periods risk inadequate strength and permeability control. Use Type III (high-early-strength) cement if early strength is required, but maintain 7-day curing duration for full strength and durability.\"\n  context=\"Contractors sometimes shortcut curing to accelerate form removal and project schedule; this leads to weak concrete and field failures within 5\u201410 years.\" />",
+      "raw_hash": "sha256:92e30b2311baaa70595c6dc28c6475390b2874d0ecfbb05e84e0505d6eb68965",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Assuming that high ambient temperature in tropical Philippines automatically speeds up curing sufficiently, so reduced curing time (3\u20144 days) is acceptable\", correction=\"While high temperature does accelerate hydration, ACI 308R specifies minimum 7-day curing for ordinary portland cement at any temperature above 10\u00b0C. Shorter periods risk inadequate strength and permeability control. Use Type III (high-early-strength) cement if early strength is required, but maintain 7-day curing duration for full strength and durability.\", context=\"Contractors sometimes shortcut curing to accelerate form removal and project schedule; this leads to weak concrete and field failures within 5\u201410 years.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:2442bff995ebde2dc25b24a546059ed940d5d4b4e86272ad0646c65ff0deae27",
+      "props": {
+        "mistake": "Assuming that high ambient temperature in tropical Philippines automatically speeds up curing sufficiently, so reduced curing time (3\u20144 days) is acceptable",
+        "correction": "While high temperature does accelerate hydration, ACI 308R specifies minimum 7-day curing for ordinary portland cement at any temperature above 10\u00b0C. Shorter periods risk inadequate strength and permeability control. Use Type III (high-early-strength) cement if early strength is required, but maintain 7-day curing duration for full strength and durability.",
+        "context": "Contractors sometimes shortcut curing to accelerate form removal and project schedule; this leads to weak concrete and field failures within 5\u201410 years."
+      },
+      "props_json": {
+        "mistake": "Assuming that high ambient temperature in tropical Philippines automatically speeds up curing sufficiently, so reduced curing time (3\u20144 days) is acceptable",
+        "correction": "While high temperature does accelerate hydration, ACI 308R specifies minimum 7-day curing for ordinary portland cement at any temperature above 10\u00b0C. Shorter periods risk inadequate strength and permeability control. Use Type III (high-early-strength) cement if early strength is required, but maintain 7-day curing duration for full strength and durability.",
+        "context": "Contractors sometimes shortcut curing to accelerate form removal and project schedule; this leads to weak concrete and field failures within 5\u201410 years."
+      },
+      "props_text": "mistake=\"Assuming that high ambient temperature in tropical Philippines automatically speeds up curing sufficiently, so reduced curing time (3\u20144 days) is acceptable\"\n  correction=\"While high temperature does accelerate hydration, ACI 308R specifies minimum 7-day curing for ordinary portland cement at any temperature above 10\u00b0C. Shorter periods risk inadequate strength and permeability control. Use Type III (high-early-strength) cement if early strength is required, but maintain 7-day curing duration for full strength and durability.\"\n  context=\"Contractors sometimes shortcut curing to accelerate form removal and project schedule; this leads to weak concrete and field failures within 5\u201410 years.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 11036,
+      "end_offset": 11762,
+      "line_start": 145,
+      "line_end": 148,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  title=\"Common Curing Practice Errors\"\n  items={[\n    \"Applying curing compound but failing to achieve complete surface coverage: A patchy or incomplete film allows water evaporation from uncovered areas. The entire surface must be covered uniformly. Reapply if areas are damaged or missed.\",\n    \"Using clear (Type 1) curing compound instead of white-pigmented (Type 2) in tropical sunny locations: Clear compounds do not reflect solar heat; surface temperature rises excessively (50\u201460\u00b0C), causing thermal stress and potential differential cracking. Type 2 is preferred.\",\n    \"Discontinuing moist curing after 7 days, then exposing the concrete to intense sun: The 7-day minimum is for ordinary strength development; continued ambient curing (without active moistening) is acceptable. However, exposed surfaces still desiccate; if re-exposed to direct sun immediately after curing ends, rapid drying can cause surface cracking.\",\n    \"Assuming membrane curing (compound) is equivleant to water curing: Curing compounds develop 70\u201480% of the strength of moist curing. For critical applications or where maximum strength is required, water curing (ponding or spray) is preferred.\",\n    \"Failing to account for wind and solar radiation effects: High wind increases evaporation significantly (ACI 305.1 nomographs show 2\u20143x evaporation rate increase in windy conditions). Intense sun heating can exceed the comfort level for curing rate predictions. Use shade cloth or schedule placement to minimize these effects.\"\n  ]} />",
+      "raw_hash": "sha256:6509d14739149a8c381b01ddf20e4a091fa2de4b3d26ae224450445e1972ea16",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Common Curing Practice Errors\", items=\"{[\\n    \\\"Applying curing compound but failing to achieve complete surface coverage: A patchy or incomplete film allows water evaporation from uncovered areas. The entire surface must be covered uniformly. Reapply if areas are damaged or missed.\\\",\\n    \\\"Using clear (Type 1) curing compound instead of white-pigmented (Type 2) in tropical sunny locations: Clear compounds do not reflect solar heat; surface temperature rises excessively (50\u201460\u00b0C), causing thermal stress and potential differential cracking. Type 2 is preferred.\\\",\\n    \\\"Discontinuing moist curing after 7 days, then exposing the concrete to intense sun: The 7-day minimum is for ordinary strength development; continued ambient curing (without active moistening) is acceptable. However, exposed surfaces still desiccate; if re-exposed to direct sun immediately after curing ends, rapid drying can cause surface cracking.\\\",\\n    \\\"Assuming membrane curing (compound) is equivleant to water curing: Curing compounds develop 70\u201480% of the strength of moist curing. For critical applications or where maximum strength is required, water curing (ponding or spray) is preferred.\\\",\\n    \\\"Failing to account for wind and solar radiation effects: High wind increases evaporation significantly (ACI 305.1 nomographs show 2\u20143x evaporation rate increase in windy conditions). Intense sun heating can exceed the comfort level for curing rate predictions. Use shade cloth or schedule placement to minimize these effects.\\\"\\n  ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:f1dd92e2d99951381b935ab647a0d0b16c7c7436364c3df080a0c4c686f979f7",
+      "props": {
+        "title": "Common Curing Practice Errors",
+        "items": "{[\n    \"Applying curing compound but failing to achieve complete surface coverage: A patchy or incomplete film allows water evaporation from uncovered areas. The entire surface must be covered uniformly. Reapply if areas are damaged or missed.\",\n    \"Using clear (Type 1) curing compound instead of white-pigmented (Type 2) in tropical sunny locations: Clear compounds do not reflect solar heat; surface temperature rises excessively (50\u201460\u00b0C), causing thermal stress and potential differential cracking. Type 2 is preferred.\",\n    \"Discontinuing moist curing after 7 days, then exposing the concrete to intense sun: The 7-day minimum is for ordinary strength development; continued ambient curing (without active moistening) is acceptable. However, exposed surfaces still desiccate; if re-exposed to direct sun immediately after curing ends, rapid drying can cause surface cracking.\",\n    \"Assuming membrane curing (compound) is equivleant to water curing: Curing compounds develop 70\u201480% of the strength of moist curing. For critical applications or where maximum strength is required, water curing (ponding or spray) is preferred.\",\n    \"Failing to account for wind and solar radiation effects: High wind increases evaporation significantly (ACI 305.1 nomographs show 2\u20143x evaporation rate increase in windy conditions). Intense sun heating can exceed the comfort level for curing rate predictions. Use shade cloth or schedule placement to minimize these effects.\"\n  ]}"
+      },
+      "props_json": {
+        "title": "Common Curing Practice Errors",
+        "items": "{[\n    \"Applying curing compound but failing to achieve complete surface coverage: A patchy or incomplete film allows water evaporation from uncovered areas. The entire surface must be covered uniformly. Reapply if areas are damaged or missed.\",\n    \"Using clear (Type 1) curing compound instead of white-pigmented (Type 2) in tropical sunny locations: Clear compounds do not reflect solar heat; surface temperature rises excessively (50\u201460\u00b0C), causing thermal stress and potential differential cracking. Type 2 is preferred.\",\n    \"Discontinuing moist curing after 7 days, then exposing the concrete to intense sun: The 7-day minimum is for ordinary strength development; continued ambient curing (without active moistening) is acceptable. However, exposed surfaces still desiccate; if re-exposed to direct sun immediately after curing ends, rapid drying can cause surface cracking.\",\n    \"Assuming membrane curing (compound) is equivleant to water curing: Curing compounds develop 70\u201480% of the strength of moist curing. For critical applications or where maximum strength is required, water curing (ponding or spray) is preferred.\",\n    \"Failing to account for wind and solar radiation effects: High wind increases evaporation significantly (ACI 305.1 nomographs show 2\u20143x evaporation rate increase in windy conditions). Intense sun heating can exceed the comfort level for curing rate predictions. Use shade cloth or schedule placement to minimize these effects.\"\n  ]}"
+      },
+      "props_text": "title=\"Common Curing Practice Errors\"\n  items={[\n    \"Applying curing compound but failing to achieve complete surface coverage: A patchy or incomplete film allows water evaporation from uncovered areas. The entire surface must be covered uniformly. Reapply if areas are damaged or missed.\",\n    \"Using clear (Type 1) curing compound instead of white-pigmented (Type 2) in tropical sunny locations: Clear compounds do not reflect solar heat; surface temperature rises excessively (50\u201460\u00b0C), causing thermal stress and potential differential cracking. Type 2 is preferred.\",\n    \"Discontinuing moist curing after 7 days, then exposing the concrete to intense sun: The 7-day minimum is for ordinary strength development; continued ambient curing (without active moistening) is acceptable. However, exposed surfaces still desiccate; if re-exposed to direct sun immediately after curing ends, rapid drying can cause surface cracking.\",\n    \"Assuming membrane curing (compound) is equivleant to water curing: Curing compounds develop 70\u201480% of the strength of moist curing. For critical applications or where maximum strength is required, water curing (ponding or spray) is preferred.\",\n    \"Failing to account for wind and solar radiation effects: High wind increases evaporation significantly (ACI 305.1 nomographs show 2\u20143x evaporation rate increase in windy conditions). Intense sun heating can exceed the comfort level for curing rate predictions. Use shade cloth or schedule placement to minimize these effects.\"\n  ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 11764,
+      "end_offset": 13304,
+      "line_start": 150,
+      "line_end": 158,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:c711722c5c39742a39db7a2a96a83b8bb6fedb35bfb4ca7beff8497668e9f569"
+}

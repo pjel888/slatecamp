@@ -1,0 +1,119 @@
+{
+  "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+  "slug": "lea-matl-009-03-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.710Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:b60b59605d220e9a6847e2d6f337a7adadb121b409405db18fcfd24a99ceb5c7",
+  "normalized_content_hash": "617a3318a31ed1c74e5e9310757218b0f818045b4058f976fd1da581197d47ec",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\nMemory aid for schedules: **Completeness, Consistency, Coordination**. Every schedule must be complete (all columns filled), consistent internally (door marks match drawings), and coordinated with specifications and drawings. A missing door mark or hardware set is a red flag. Always verify schedule accuracy before sending to bidding or construction.\n</Tip>",
+      "raw_hash": "sha256:6813b54f1f60d26f7a6ce3d0a2d55f07f15eb3ee13df1e852f50d8d242f472ff",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid for schedules: **Completeness, Consistency, Coordination**. Every schedule must be complete (all columns filled), consistent internally (door marks match drawings), and coordinated with specifications and drawings. A missing door mark or hardware set is a red flag. Always verify schedule accuracy before sending to bidding or construction.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:b9acedc45494447f94fccf89714cbbdc7d5a64da7effad9c70bca1c34e3932a5",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\nMemory aid for schedules: **Completeness, Consistency, Coordination**. Every schedule must be complete (all columns filled), consistent internally (door marks match drawings), and coordinated with specifications and drawings. A missing door mark or hardware set is a red flag. Always verify schedule accuracy before sending to bidding or construction.\n",
+      "children_text": "Memory aid for schedules: **Completeness, Consistency, Coordination**. Every schedule must be complete (all columns filled), consistent internally (door marks match drawings), and coordinated with specifications and drawings. A missing door mark or hardware set is a red flag. Always verify schedule accuracy before sending to bidding or construction.",
+      "start_offset": 8818,
+      "end_offset": 9182,
+      "line_start": 49,
+      "line_end": 51,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Including a room in the room finish schedule but forgetting to label that room number on the floor plan, or vice versa. Field team cannot find the schedule entry for the room.\" correction=\"Schedules and drawings must be cross-keyed consistently. Every room number on a floor plan must appear in the room finish schedule. Every door mark on a floor plan must appear in the door schedule. Verify this mapping before contract documents are issued.\" />",
+      "raw_hash": "sha256:350fc1393061c24d6f300f0db141d3a45a275cf46c13eaa69ee69e8635ecd30e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Including a room in the room finish schedule but forgetting to label that room number on the floor plan, or vice versa. Field team cannot find the schedule entry for the room.\", correction=\"Schedules and drawings must be cross-keyed consistently. Every room number on a floor plan must appear in the room finish schedule. Every door mark on a floor plan must appear in the door schedule. Verify this mapping before contract documents are issued.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:8c4e86b3c3d0d1bc42cb151754e07e124e5349c0eb3663240f8d3025365dc355",
+      "props": {
+        "mistake": "Including a room in the room finish schedule but forgetting to label that room number on the floor plan, or vice versa. Field team cannot find the schedule entry for the room.",
+        "correction": "Schedules and drawings must be cross-keyed consistently. Every room number on a floor plan must appear in the room finish schedule. Every door mark on a floor plan must appear in the door schedule. Verify this mapping before contract documents are issued."
+      },
+      "props_json": {
+        "mistake": "Including a room in the room finish schedule but forgetting to label that room number on the floor plan, or vice versa. Field team cannot find the schedule entry for the room.",
+        "correction": "Schedules and drawings must be cross-keyed consistently. Every room number on a floor plan must appear in the room finish schedule. Every door mark on a floor plan must appear in the door schedule. Verify this mapping before contract documents are issued."
+      },
+      "props_text": "mistake=\"Including a room in the room finish schedule but forgetting to label that room number on the floor plan, or vice versa. Field team cannot find the schedule entry for the room.\" correction=\"Schedules and drawings must be cross-keyed consistently. Every room number on a floor plan must appear in the room finish schedule. Every door mark on a floor plan must appear in the door schedule. Verify this mapping before contract documents are issued.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9204,
+      "end_offset": 9678,
+      "line_start": 55,
+      "line_end": 55,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Specifying different performance criteria in the schedule versus the specification. Example: window schedule specifies 'U-value 0.22' but Division 08 specification requires 'U-value 0.25 minimum.' This ambiguity creates disputes over which document controls.\" correction=\"The specification typically controls performance and acceptance criteria. The schedule should reference specification sections (e.g., 'See Division 08 for glazing requirements'). Never let schedule and specification criteria conflict. If they differ, the specification (Part 1: General) must clarify which takes precedence.\" />",
+      "raw_hash": "sha256:c6949ed4751e0f5563ebe0077f38fcb185cd7128489a59ba31e81d8e5ae9d116",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Specifying different performance criteria in the schedule versus the specification. Example: window schedule specifies 'U-value 0.22' but Division 08 specification requires 'U-value 0.25 minimum.' This ambiguity creates disputes over which document controls.\", correction=\"The specification typically controls performance and acceptance criteria. The schedule should reference specification sections (e.g., 'See Division 08 for glazing requirements'). Never let schedule and specification criteria conflict. If they differ, the specification (Part 1: General) must clarify which takes precedence.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9dd7b4ade393100b4abbb9075b352041dd0dbc4cc8df2ab9477476c52bc715eb",
+      "props": {
+        "mistake": "Specifying different performance criteria in the schedule versus the specification. Example: window schedule specifies 'U-value 0.22' but Division 08 specification requires 'U-value 0.25 minimum.' This ambiguity creates disputes over which document controls.",
+        "correction": "The specification typically controls performance and acceptance criteria. The schedule should reference specification sections (e.g., 'See Division 08 for glazing requirements'). Never let schedule and specification criteria conflict. If they differ, the specification (Part 1: General) must clarify which takes precedence."
+      },
+      "props_json": {
+        "mistake": "Specifying different performance criteria in the schedule versus the specification. Example: window schedule specifies 'U-value 0.22' but Division 08 specification requires 'U-value 0.25 minimum.' This ambiguity creates disputes over which document controls.",
+        "correction": "The specification typically controls performance and acceptance criteria. The schedule should reference specification sections (e.g., 'See Division 08 for glazing requirements'). Never let schedule and specification criteria conflict. If they differ, the specification (Part 1: General) must clarify which takes precedence."
+      },
+      "props_text": "mistake=\"Specifying different performance criteria in the schedule versus the specification. Example: window schedule specifies 'U-value 0.22' but Division 08 specification requires 'U-value 0.25 minimum.' This ambiguity creates disputes over which document controls.\" correction=\"The specification typically controls performance and acceptance criteria. The schedule should reference specification sections (e.g., 'See Division 08 for glazing requirements'). Never let schedule and specification criteria conflict. If they differ, the specification (Part 1: General) must clarify which takes precedence.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9680,
+      "end_offset": 10305,
+      "line_start": 57,
+      "line_end": 57,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Developing a door schedule without fire rating information when fire-rated doors are required by NSCP (commercial buildings, corridors, exit stairs)\", \"Omitting hardware schedules, forcing the contractor to infer hardware requirements from specification text\", \"Creating a room finish schedule but failing to coordinate it with interior design drawings, leading to color/material mismatches\", \"Specifying 'typical' instead of itemizing each unique door/window (defeats the purpose of the schedule)\", \"Failing to identify accessibility requirements in hardware schedules (door force, lever handle height, latch design per ADA)\", \"Omitting quantity columns, making it unclear how many of each item to fabricate\", \"Not including remarks/notes columns for special conditions (e.g., 'coordinate with structural opening,' 'hold for field verification')\"]} />",
+      "raw_hash": "sha256:24ce2e53c0159e21976ba2c0c9ca853b07ae6f7db303060bf3a24fa1b6d1f58a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Developing a door schedule without fire rating information when fire-rated doors are required by NSCP (commercial buildings, corridors, exit stairs)\\\", \\\"Omitting hardware schedules, forcing the contractor to infer hardware requirements from specification text\\\", \\\"Creating a room finish schedule but failing to coordinate it with interior design drawings, leading to color/material mismatches\\\", \\\"Specifying 'typical' instead of itemizing each unique door/window (defeats the purpose of the schedule)\\\", \\\"Failing to identify accessibility requirements in hardware schedules (door force, lever handle height, latch design per ADA)\\\", \\\"Omitting quantity columns, making it unclear how many of each item to fabricate\\\", \\\"Not including remarks/notes columns for special conditions (e.g., 'coordinate with structural opening,' 'hold for field verification')\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:fcde4f5b4dd88eda0b17645a433ecd374484f5c88734c524ed2bd130e65b626f",
+      "props": {
+        "mistakes": "{[\"Developing a door schedule without fire rating information when fire-rated doors are required by NSCP (commercial buildings, corridors, exit stairs)\", \"Omitting hardware schedules, forcing the contractor to infer hardware requirements from specification text\", \"Creating a room finish schedule but failing to coordinate it with interior design drawings, leading to color/material mismatches\", \"Specifying 'typical' instead of itemizing each unique door/window (defeats the purpose of the schedule)\", \"Failing to identify accessibility requirements in hardware schedules (door force, lever handle height, latch design per ADA)\", \"Omitting quantity columns, making it unclear how many of each item to fabricate\", \"Not including remarks/notes columns for special conditions (e.g., 'coordinate with structural opening,' 'hold for field verification')\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Developing a door schedule without fire rating information when fire-rated doors are required by NSCP (commercial buildings, corridors, exit stairs)\", \"Omitting hardware schedules, forcing the contractor to infer hardware requirements from specification text\", \"Creating a room finish schedule but failing to coordinate it with interior design drawings, leading to color/material mismatches\", \"Specifying 'typical' instead of itemizing each unique door/window (defeats the purpose of the schedule)\", \"Failing to identify accessibility requirements in hardware schedules (door force, lever handle height, latch design per ADA)\", \"Omitting quantity columns, making it unclear how many of each item to fabricate\", \"Not including remarks/notes columns for special conditions (e.g., 'coordinate with structural opening,' 'hold for field verification')\"]}"
+      },
+      "props_text": "mistakes={[\"Developing a door schedule without fire rating information when fire-rated doors are required by NSCP (commercial buildings, corridors, exit stairs)\", \"Omitting hardware schedules, forcing the contractor to infer hardware requirements from specification text\", \"Creating a room finish schedule but failing to coordinate it with interior design drawings, leading to color/material mismatches\", \"Specifying 'typical' instead of itemizing each unique door/window (defeats the purpose of the schedule)\", \"Failing to identify accessibility requirements in hardware schedules (door force, lever handle height, latch design per ADA)\", \"Omitting quantity columns, making it unclear how many of each item to fabricate\", \"Not including remarks/notes columns for special conditions (e.g., 'coordinate with structural opening,' 'hold for field verification')\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 10307,
+      "end_offset": 11188,
+      "line_start": 59,
+      "line_end": 59,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:027452973920a0c4d4f094dc9c681c35a3d1f5995a85d12e7cc7a6a8ccb026c6"
+}

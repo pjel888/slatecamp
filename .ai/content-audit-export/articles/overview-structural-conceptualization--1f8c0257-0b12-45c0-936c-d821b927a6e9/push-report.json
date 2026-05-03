@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:52:19.629Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1f8c0257-0b12-45c0-936c-d821b927a6e9",
+  "slug": "overview-structural-conceptualization",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:5fec557d2e067550f23a0d968ed535e12f7b3e6de6d5f568546f6dc76d66f413",
+  "original_hash": "sha256:5fec557d2e067550f23a0d968ed535e12f7b3e6de6d5f568546f6dc76d66f413",
+  "candidate_hash": "sha256:4deca4963b09b3e2cb7104a0229801bb500dd076787d66666ff14bfeebb430c0",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

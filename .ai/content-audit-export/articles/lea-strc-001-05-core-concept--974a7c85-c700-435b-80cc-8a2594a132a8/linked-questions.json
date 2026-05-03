@@ -1,0 +1,508 @@
+{
+  "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a2a8c6d1982fd1389e4ea16831621b9618423c2652fc63e35a1fb9db5f3b3eae",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "4500e14d-4ec8-4e0c-80bf-be0df0574860",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "Shear force in a structural member is characterized by which type of action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pulling along the longitudinal axis, which is typically associated with tensile forces in structural analysis"
+        },
+        {
+          "id": "b",
+          "text": "Pushing along the longitudinal axis, often related to compressive forces in structural elements"
+        },
+        {
+          "id": "c",
+          "text": "Sliding or cutting action perpendicular to the longitudinal axis"
+        },
+        {
+          "id": "d",
+          "text": "Twisting about the longitudinal axis, which is generally a result of torsional forces"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Shear is a transverse (perpendicular) force that tends to cause one portion of the member to slide past the adjacent portion, as if one section were trying to shear off the other.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Structural Analysis, Shear Concept",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:208c111415675d8231a952c2120e3403b041f2f0962f57051a8b29cfbc4ec186"
+    },
+    {
+      "question_id": "b182164e-af71-46f9-a510-9a414aa30f52",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "Torsion in a structural member is best described as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "An axial pulling force, which acts along the length of the member"
+        },
+        {
+          "id": "b",
+          "text": "A transverse shear force, acting perpendicular to the axis of the member"
+        },
+        {
+          "id": "c",
+          "text": "A twisting moment about the longitudinal axis"
+        },
+        {
+          "id": "d",
+          "text": "A bending moment perpendicular to the member, causing deflection"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Torsion is a twisting moment that acts about the member's longitudinal axis, causing the member to rotate or spiral. It develops from eccentric loading or when forces are applied with a twisting effect.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Torsion and Twisting Behavior",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:582a6e19aea7bb9a18f94386fdc5e9123b67dfc8c3c17f2b7b1686a984d6a467"
+    },
+    {
+      "question_id": "66154d23-fcc2-40b4-bd57-c60aa95e3bc9",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "Which internal force is characterized by a pulling action along the longitudinal axis of a member?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compression"
+        },
+        {
+          "id": "b",
+          "text": "Tension"
+        },
+        {
+          "id": "c",
+          "text": "Shear"
+        },
+        {
+          "id": "d",
+          "text": "Bending"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Tension is a pulling force that acts along the longitudinal axis, causing the member to stretch or elongate. The fibers are being pulled apart.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Structural Analysis, Internal Forces",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b6fe8d392239f6d1907a92f767eaa362cc63c0fcf8f942bed20c02b0c566fbe4"
+    },
+    {
+      "question_id": "16dbced7-8a85-4209-9758-ed0434506371",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "A cantilever beam fixed at one end develops which internal forces at the fixed support?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shear and compression only"
+        },
+        {
+          "id": "b",
+          "text": "Bending moment and shear only"
+        },
+        {
+          "id": "c",
+          "text": "All five internal forces equally"
+        },
+        {
+          "id": "d",
+          "text": "Tension, if the load is large enough"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A cantilever under downward loading develops shear (to resist the transverse force) and a bending moment (to resist rotation at the fixed end). Tension and compression along the axis are minimal unless there is axial loading. Torsion is absent unless the load is eccentric.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Cantilever Load Analysis",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f7e9cf2b5cec107e0991c7557ce9bc54e6f94ed44efe469da948ff3d69142124"
+    },
+    {
+      "question_id": "0963c4a3-78c5-46fe-bd79-095c6f24c7eb",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "In reinforced concrete beam design, longitudinal steel bars are placed near the bottom of a simply supported beam to resist which internal force?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compression in the concrete"
+        },
+        {
+          "id": "b",
+          "text": "Tension from bending"
+        },
+        {
+          "id": "c",
+          "text": "Shear at the beam ends"
+        },
+        {
+          "id": "d",
+          "text": "Torsion in the beam"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In a simply supported beam under downward load, the bottom fibers experience tension (stretching) due to bending. Concrete has low tensile strength, so steel reinforcement is placed at the bottom to resist this tension.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Reinforced Concrete Beam Design, Flexure",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b2da6805d0669d2599cb08301805b9f72e000a46076af89cfe017a22e3b81e9c"
+    },
+    {
+      "question_id": "12762415-a5eb-4c6c-8e08-da815188b1a1",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "A suspension bridge cable is subjected to which primary internal force type?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bending"
+        },
+        {
+          "id": "b",
+          "text": "Tension"
+        },
+        {
+          "id": "c",
+          "text": "Compression"
+        },
+        {
+          "id": "d",
+          "text": "Shear"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A suspension bridge cable is pulled by the suspended load and the tension in the cable increases toward the anchor points. Tension is the defining internal force in cables.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Cable and Tension Member Design",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b17430ed33b5d00d5affdf713293213e877119d73ce7fb48cd45544440efe816"
+    },
+    {
+      "question_id": "91c01223-fa84-4085-92f8-6af37b72a0b1",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "When a beam is loaded perpendicular to its length, it develops internal bending. Bending causes which of the following conditions at the cross-section?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniform compression throughout the cross-section, which is unlikely as bending typically causes differential stress distribution"
+        },
+        {
+          "id": "b",
+          "text": "Compression on one face and tension on the opposite face"
+        },
+        {
+          "id": "c",
+          "text": "Uniform tension throughout the cross-section, which contradicts the typical stress profile in bending scenarios"
+        },
+        {
+          "id": "d",
+          "text": "Shear across the entire cross-section, although shear is usually concentrated near the supports"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Bending creates a moment that curves the member. On one side (top, typically under downward load), fibers are compressed; on the opposite side (bottom), fibers are stretched in tension. The neutral axis separates these zones.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Bending and Moment Analysis",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6e60b8cb3f595f192277747edb1d786c9518093e4e9ee640a42030c4d2991100"
+    },
+    {
+      "question_id": "308c2083-d625-42eb-a210-403ea875752e",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "In a simply supported beam under uniform downward loading, which internal force is typically largest at the supports and decreases toward the center?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bending moment"
+        },
+        {
+          "id": "b",
+          "text": "Shear force"
+        },
+        {
+          "id": "c",
+          "text": "Compression"
+        },
+        {
+          "id": "d",
+          "text": "Torsion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Shear force is maximum at the supports (where the reactions act) and decreases toward the center of the beam, reaching zero at midspan. This is the characteristic shear distribution for a simply supported beam.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Simply Supported Beam Internal Force Distribution",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34e30cbdfc819ad4cd2bc067966b582e225d525ab2b3c55a921d042191377725"
+    },
+    {
+      "question_id": "58c6baad-a86f-4c53-b55a-66aa63275fa4",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "A column supporting the weight of a building experiences which primary internal force?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tension, which occurs when forces act to elongate the column, although this is not typical for columns under normal loading conditions."
+        },
+        {
+          "id": "b",
+          "text": "Compression"
+        },
+        {
+          "id": "c",
+          "text": "Shear, which involves forces acting parallel to the cross-section, but is not the primary force in columns."
+        },
+        {
+          "id": "d",
+          "text": "Torsion, which involves twisting forces, but is generally not a primary concern for vertical load-bearing columns."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A column is pushed downward by the load it supports; this creates compression along the column's length. The fibers are being squeezed.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Column Design, Compression Behavior",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e978baee5210bf3f8e5ad31d0bd8179d57de54277daf701d13d5e2638741328"
+    },
+    {
+      "question_id": "a7300870-da16-46f6-be87-6b8e1872f3f3",
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
+      "text": "An eccentric load is applied to a structural column (not along its centroidal axis). This eccentric load produces which internal forces in the column?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compression and bending, but no shear or torsion"
+        },
+        {
+          "id": "b",
+          "text": "Compression and torsion only"
+        },
+        {
+          "id": "c",
+          "text": "Bending and torsion, but no compression"
+        },
+        {
+          "id": "d",
+          "text": "Compression, bending, and torsion"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "correct": "An eccentric load produces: (1) compression from the load's magnitude, (2) bending from the load's offset from the centroid (creating a bending moment), and (3) torsion if the load's line of action is offset in a twisting direction about the column's axis.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Eccentric Loading and Internal Forces",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3b0b0f806d874258fff0bfc4c867f461a09a51c06cb2a53fd1aec3fb1a23b125"
+    }
+  ]
+}

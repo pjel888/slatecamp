@@ -1,0 +1,85 @@
+## Quantity Surveying and Cost Estimation—The Architect's Role vs. the QS Professional's Role
+
+<JSX>null</JSX>
+
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe quantity surveying and cost estimation in architectural practice.
+- Distinguish the architect's role from the QS professional's role.
+- Explain the levels of cost estimates: order-of-magnitude, budget, definitive.
+- Apply cost estimation concepts to project fee calculations.
+
+
+
+### Cost Estimation Throughout Project Phases
+
+_Conceptual (feasibility) phase_: rough estimates based on unit costs and comparable projects. A 5,000 square-meter school building is budgeted at PHP 500,000–700,000 per square meter depending on finishes and location. This estimate is typically ±30% accuracy—useful for project viability but not construction bidding.
+
+_Schematic design phase_: estimates become more detailed as design scope clarifies. Building massing, systems, and major finishes are defined. Accuracy improves to ±20%. Architects should provide schematic estimates to client for budget approval before design development begins.
+
+_Design development phase_: detailed estimates based on specific material selections, mechanical systems, and specifications. Accuracy should be ±10%. Many architects engage quantity surveyors at this phase for detailed takeoffs and cost analysis.
+
+_Construction documents phase_: final estimates based on complete specifications. Accuracy approaches ±5%. These estimates are used for bid preparation and construction budgeting.
+
+_Post-bid phase_: the contractor's bid becomes the actual cost. The architect's role transitions to construction administration and cost control during construction.
+
+### The Architect's Cost Estimation Responsibilities
+
+Architects are expected to have general knowledge of costs and to provide preliminary estimates at each design phase. The architect should understand: (1) cost per square meter for typical building types; (2) relative cost differences between materials and systems (concrete vs. steel structure, tile vs. terrazzo flooring); (3) cost drivers (site conditions, regulatory requirements, labor availability); and (4) cost-saving opportunities.
+
+The architect should prepare cost estimates from available project information. For schematic estimates, research or previous project databases suffice. For design development and construction documents phases, detailed takeoff—measuring and listing quantities from drawings—is more accurate. Many architects use spreadsheets or specialized software to organize quantities and unit costs.
+
+Cost estimates should be clearly noted with assumptions: "Estimate assumes conventional 4-story reinforced concrete structure, standard brick exterior, gypsum board interior finishes, basic MEP systems, and mid-range fixture selections. Excludes site acquisition, soft costs, and contingency. Basis: local supplier quotes and regional databases." These notes prevent the client from misinterpreting the estimate's scope and accuracy.
+
+### When to Engage a Quantity Surveyor
+
+A quantity surveyor (QS) is a professional who specializes in cost estimation, cost control, and contract management. Engagement of a QS is advisable when: (1) the project is complex (high-rise, mixed-use, specialized systems); (2) the client requires detailed cost breakdown for budgeting or financing; (3) the architect lacks cost expertise in the project type; or (4) the project is subject to government procurement, which may require detailed cost analysis and competitive bidding support.
+
+The QS typically: (1) prepares detailed bills of quantities (BOQ) itemizing all materials, labor, and equipment; (2) analyzes tender bids and provides cost recommendations; (3) monitors construction costs and prepares monthly cost reports; (4) advises on value engineering opportunities; and (5) prepares final cost accounting.
+
+The QS should be engaged early enough to influence design cost decisions. Cost advice given during schematic phase is far more valuable than cost analysis after the design is fixed. Many QSs prepare "elemental cost plans" breaking costs by building element (structure, envelope, interior, MEP, etc.) to help architects understand cost drivers and target cost-reduction areas.
+
+### Service Agreement Clarity: Architect vs. QS Responsibilities
+
+The architect's service agreement should clarify cost estimation scope: "Architect will prepare preliminary cost estimates at schematic and design development phases, updated to reflect design changes. These estimates are planning tools with accuracy of ±20%. Final cost determination requires contractor bids." This sets realistic expectations.
+
+If the architect is responsible for final cost estimates (±5% accuracy), the service agreement should specify detailed takeoff and material database research as included services. If a QS is engaged, the architect's role should be defined: "Architect will provide QS with complete construction documents; QS will prepare detailed BOQ and cost estimates. Architect and QS will coordinate cost recommendations."
+
+Confusion about responsibility creates disputes. If the client expects detailed cost analysis and the architect provides only rough estimates, the client is disappointed. If cost estimates prove inaccurate and the client claims the architect was responsible for accuracy, professional liability may result. Clear contracts prevent disputes.
+
+### Value Engineering and Cost Control
+
+Value engineering is the process of analyzing design elements to reduce cost while maintaining function and quality. A QS or architect might identify that a proposed aluminum curtain wall costs significantly more than a conventional aluminum window system with lower impact on design intent. Or that marble flooring could be replaced with high-grade tile in heavy-traffic areas, saving cost while maintaining appearance.
+
+Value engineering is most effective during design development, before construction documents are finalized. Changes during construction are expensive. The architect and QS should work with the client to identify cost-saving opportunities, analyze trade-offs (initial cost vs. maintenance cost, durability, etc.), and implement changes that meet the client's priorities.
+
+Cost control during construction involves monitoring expenditures against the budget, tracking change orders, and advising on impacts. If a change is requested, the architect and QS should estimate its cost and schedule impact before the client approves. This prevents unexpected cost overruns.
+
+### Cost Databases and Research Tools
+
+Architects can improve cost estimate reliability through access to cost databases and historical data. The Philippine Construction Cost Index (if available), supplier quotes, and previous project costs are valuable references. BIM models can simplify quantity takeoff; the model automatically generates material quantities, which can be multiplied by unit prices to create estimates.
+
+Architects should maintain cost databases for their region and building types. Over time, this data improves estimate accuracy and helps identify cost trends.
+
+### Distinguishing Between Cost Estimate and Construction Budget
+
+A cost estimate is the architect's prediction of likely cost. A construction budget is the client's authorized spending limit, which may differ from the estimate. The architect should clarify this distinction: "The cost estimate is PHP 50 million, based on current design and market conditions. This is the architect's professional projection. The client's construction budget may be higher (contingency for unknowns) or lower (triggering value engineering if needed)."
+
+If the estimate exceeds the budget, the architect and client should discuss options: reduce scope, adjust quality standards, defer phases, or increase budget. This discussion, led by the architect with QS support, helps the client make informed decisions.
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)

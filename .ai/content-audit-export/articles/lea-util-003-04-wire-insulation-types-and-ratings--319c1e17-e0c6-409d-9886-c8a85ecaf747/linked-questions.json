@@ -1,0 +1,758 @@
+{
+  "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:1f329d47bbb0a639f646970dc3d6ca935370567404d85619c37020fa708b88c6",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "d5a41196-7884-4484-a54a-fe563787c459",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "In a Philippine hospital's emergency power system, which cable type is specified for fire-alarm circuits and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NM (Romex) cable for cost savings; suitable for dry locations in hospitals, though not ideal for fire-alarm circuits"
+        },
+        {
+          "id": "b",
+          "text": "AC (Armored) cable for mechanical protection during installation, providing a balance between cost and safety"
+        },
+        {
+          "id": "c",
+          "text": "MI (Mineral-Insulated) cable for highest fire resistance and extreme temperature rating (up to 250°C)"
+        },
+        {
+          "id": "d",
+          "text": "MC (Metal-Clad) cable because the metal armor serves as the equipment ground, offering additional protection"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NM is restricted to dry residential locations; completely unsuitable for hospitals' critical infrastructure.",
+        "b": "AC cable lacks the fire-rating properties needed; mechanical protection ≠ fire resistance.",
+        "d": "While MC provides grounding and some protection, it lacks MI's fire-rated insulation (only 60–90°C, not 250°C).",
+        "correct": "MI cable's mineral insulation (MgO) and copper/steel sheath provide unmatched fire resistance and temperature ratings (250°C dry, 150°C wet). MI cable is suitable for hospital life-safety systems requiring circuit integrity during fire per PEC. PEC recognizes MI as the premium choice for critical circuits.",
+        "takeaway": "Life-safety and fire-rated circuits require MI cable's mineral insulation, not standard copper insulation."
+      },
+      "explanation": null,
+      "code_citation": "Cable Types and Applications section; MI cable description",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9a5a48d96fca44b0d736502ca35fecc9b80e42b9592f8bfcf6b21d62c7954193"
+    },
+    {
+      "question_id": "7b786312-97f6-4f68-95b9-04aa24cf27c7",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "A building in a high-temperature mechanical room (ambient 45°C) needs a 20A branch circuit. THWN wire (75°C rated) is available. What must the electrician do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use 3.5 mm² THWN wire; the 20A circuit breaker provides adequate protection, assuming no additional derating factors apply"
+        },
+        {
+          "id": "b",
+          "text": "Upgrade to 5.5 mm² THWN wire because the 40°C derating factor (82%) reduces usable ampacity to 16.4A at 3.5 mm²"
+        },
+        {
+          "id": "c",
+          "text": "Install an 18A circuit breaker to match the derated ampacity of 3.5 mm² THWN, which is a conservative approach"
+        },
+        {
+          "id": "d",
+          "text": "Use THHN wire instead of THWN, as its 90°C rating is immune to ambient temperature derating, which is a common solution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores ambient temperature derating, a critical safety requirement in hot Philippine installations.",
+        "c": "Incorrectly suggests downrating the circuit breaker instead of upgrading the wire.",
+        "d": "While 90°C wire has less derating, it still applies derating (89% at 45°C); also conflates wire type with thermal immunity.",
+        "correct": "At 45°C ambient, PEC Table 310-16 applies an 82% derating factor to 75°C-rated wire. Standard 3.5 mm² THWN (20A at 30°C) becomes 20A × 0.82 = 16.4A, undersizing the 20A circuit. The next size up (5.5 mm² with 30A at 75°C, derated to 24.6A) is required.",
+        "takeaway": "Ambient temperatures exceeding 30°C require derating calculations; upgrade wire size accordingly to maintain breaker protection."
+      },
+      "explanation": null,
+      "code_citation": "Insulation Temperature Ratings and Derating section; PEC Table 310-16 derating factors",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9096170044aac934be907a5865a74496d96266112040e4b7bbd23d554371baf8"
+    },
+    {
+      "question_id": "cc42d3d8-13a5-4981-b831-89aadd4d92c2",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "Compare copper and aluminum conductors for a 60A feeder in a light commercial building. Which statement is most accurate per PEC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use 25 mm² copper (130A at 90°C) or 35 mm² aluminum (109A at 90°C, after applying 84% factor), which ensures compliance with ampacity requirements"
+        },
+        {
+          "id": "b",
+          "text": "Aluminum is always forbidden in feeders per PEC; use copper exclusively, which is a misconception as aluminum can be used with proper sizing"
+        },
+        {
+          "id": "c",
+          "text": "Copper at 75°C has higher ampacity per unit area; aluminum is 84% of copper capacity, requiring larger sizing but still acceptable"
+        },
+        {
+          "id": "d",
+          "text": "Aluminum offers 30–40% cost savings with identical ampacity; choice depends only on termination design, which oversimplifies the considerations involved"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Provides correct sizing examples but presents aluminum sizing as simple 84% upscaling without discussing practical concerns.",
+        "b": "Overstates the restriction; PEC does allow aluminum in certain feeders/service applications.",
+        "d": "Underestimates aluminum's disadvantages (corrosion, termination complexity) and incorrectly equates cost savings with suitability.",
+        "correct": "PEC allows aluminum in feeders/service, but at 84% of copper ampacity. Copper is standard because it's smaller and has superior corrosion resistance and termination reliability. Aluminum requires oversizing and special termination procedures.",
+        "takeaway": "Aluminum in feeders is legal but requires 84% uprating, special terminations, and oxide-inhibiting compounds; copper is preferred for simplicity."
+      },
+      "explanation": null,
+      "code_citation": "Conductor Materials: Copper vs. Aluminum section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ea2815e7e4466453a60c166deda118c84372a945984c820a349392b28a45ed5"
+    },
+    {
+      "question_id": "5148806e-5412-46bb-8317-2dbeae67ea2d",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "A contractor specifies XHHW wire for the main feeder of an office building. What is the primary advantage of XHHW over THWN for this application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "XHHW is cheaper and lighter, reducing installation labor costs and overall project expenses."
+        },
+        {
+          "id": "b",
+          "text": "XHHW has cross-linked polyethylene insulation offering superior thermal stability and durability for high-load applications"
+        },
+        {
+          "id": "c",
+          "text": "XHHW can be installed without conduit, unlike THWN which requires a raceway, simplifying installation."
+        },
+        {
+          "id": "d",
+          "text": "XHHW can carry 25% more current than THWN at the same wire size due to better heat dissipation, enhancing efficiency."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly suggests cost and weight advantages, when XHHW is actually more expensive than THWN.",
+        "c": "Confuses installation method; both THWN and XHHW are typically installed in conduit.",
+        "d": "While ampacity may differ by size, the advantage isn't a blanket 25% increase; it stems from better thermal properties.",
+        "correct": "XHHW uses cross-linked polyethylene insulation, providing superior durability and thermal stability compared to THWN's thermoplastic coating. This makes XHHW preferred for main feeders and high-load circuits that generate sustained heat.",
+        "takeaway": "XHHW's cross-linked polyethylene provides superior insulation durability, preferred for feeders and heavy-load circuits."
+      },
+      "explanation": null,
+      "code_citation": "Wire Insulation Types section; XHHW description",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c30c73e13efb6460e51bc3e6e9aad77c5af0064d8a5c6900b98823b0d6124d0e"
+    },
+    {
+      "question_id": "d17b7346-0668-4b7c-8b46-2de17f018cbc",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "For a 3.5 mm² copper feeder 40 meters long at 30°C ambient with a 20A load, calculate the voltage drop and determine if it meets PEC feeder limits (R = 5.30 Ω/km at 75°C).",
+      "options": [
+        {
+          "id": "a",
+          "text": "VD = 4.24V (1.9%); acceptable for feeder limit of 2%, ensuring compliance with PEC standards"
+        },
+        {
+          "id": "b",
+          "text": "VD = 4.24V (2.9%); exceeds feeder limit of 2%; upgrade to 5.5 mm² required"
+        },
+        {
+          "id": "c",
+          "text": "VD = 8.48V (3.9%); violates both feeder (2%) and branch (3%) limits, necessitating immediate corrective action"
+        },
+        {
+          "id": "d",
+          "text": "VD = 2.12V (1.0%); acceptable, with safety margin for future load growth, allowing for potential expansion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Calculates 4.24V, which is incorrect; likely halved the actual result or used incorrect formula.",
+        "c": "Calculates 8.48V but incorrectly attributes 2.9% at 220V (should be 3.85%); conceptually correct approach.",
+        "d": "Calculates 2.12V, suggesting only 40 meters was used instead of doubling for round-trip current path, or calculation error.",
+        "correct": "VD = (2 × 5.30 × 40 × 20) / 1000 = 8.48V at 220V = 3.85%. This exceeds the 2% feeder limit. Upgrading to 5.5 mm² (R ≈ 3.28 Ω/km) yields approximately 5.25V (2.4%), still slightly over but closer; 8 mm² would be safer.",
+        "takeaway": "Voltage drop calculations critical for long feeder runs; 3.5 mm² at 40m fails feeder limit; upgrade to 5.5 mm² minimum."
+      },
+      "explanation": null,
+      "code_citation": "Voltage Drop Considerations section; PEC Article 215.2(D)(1) FPN",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a3b358e680a42a3e25fb616e06021ebd0c3044d763329ee4b5a7f885b3be9b5"
+    },
+    {
+      "question_id": "68559d46-5fae-4b86-b2c4-dc8d7225a36f",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "What is the voltage rating for standard TW, THWN, THHN, and XHHW wires per the Philippine Electrical Code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300V for residential; 600V for commercial installations"
+        },
+        {
+          "id": "b",
+          "text": "Up to 600V for all standard wire types mentioned"
+        },
+        {
+          "id": "c",
+          "text": "TW: 300V; THWN: 600V; THHN: 1000V; XHHW: 600V"
+        },
+        {
+          "id": "d",
+          "text": "Voltage rating depends only on wire size and ambient temperature"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly implies different voltage ratings based on application type rather than wire construction.",
+        "c": "Assigns different voltage ratings to different wire types, which is incorrect.",
+        "d": "Suggests voltage rating depends on size and temperature only, ignoring the wire insulation type.",
+        "correct": "All four standard wire types (TW, THWN, THHN, XHHW) are rated up to 600V per PEC Table 310-16, making them suitable for standard single-phase residential and commercial circuits at 220V.",
+        "takeaway": "All standard building wires in PEC are 600V-rated; application depends on insulation type and temperature rating, not voltage."
+      },
+      "explanation": null,
+      "code_citation": "PEC Table 310-16; Wire Insulation Types and Ratings section",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a36f2100c77d1663ec3d884357966fe8bd522b426eaca0467fee8290d1449e7a"
+    },
+    {
+      "question_id": "691c1f9d-7044-43c5-bc11-920f6c55a760",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "A motor feeder in a 48°C Philippine manufacturing facility uses four 10 mm² copper THHN wires in a 25 mm EMT conduit (internal area 452.4 mm²). Verify: (1) ampacity after derating, (2) conduit fill, and (3) compliance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "THHN 10 mm² at 48°C: 75A × 0.82 = 61.5A ✓; Fill: 4 × 73.5 = 294/452.4 = 65% ✗ Exceeds 40% limit"
+        },
+        {
+          "id": "b",
+          "text": "THHN 10 mm² at 48°C: 75A × 0.85 = 63.8A ✓; Fill: 4 × 73.5 = 294/452.4 = 65% ✗ Exceeds 40% limit"
+        },
+        {
+          "id": "c",
+          "text": "THHN 10 mm² at 48°C: 75A × 0.78 = 58.5A ✗; Fill: 4 × 48.0 = 192/452.4 = 42% ✗ Exceeds 40% limit"
+        },
+        {
+          "id": "d",
+          "text": "THHN 10 mm² at 48°C: 75A × 0.82 = 61.5A ✓; Fill: 4 × 54.0 = 216/452.4 = 48% ✗ Exceeds 40% limit"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Uses incorrect derating factor (0.85 instead of 0.82); fundamentally wrong without affecting conduit fill violation.",
+        "c": "Applies far too severe derating (0.78) and uses wrong conductor area estimates.",
+        "d": "Uses simplified conductor areas and incorrect derating; reaches same fill violation conclusion but with wrong calculations.",
+        "correct": "PEC derating at 48°C for 90°C wire = 0.88 (46-50°C range in Table 310.15(B)(2)(a)). 10 mm² THHN has 75A base, derated to 61.5A. Conductor area of 10 mm² ≈ 73.5 mm² each; 4 × 73.5 = 294 mm² ÷ 452.4 = 65% fill. This exceeds 40% limit for 3+ conductors. Installation violates PEC even though ampacity is acceptable.",
+        "takeaway": "Motor feeder in hot location requires both derating for ampacity AND adequate conduit fill; EMT 25 mm is undersized for four 10 mm² wires."
+      },
+      "explanation": null,
+      "code_citation": "Conduit Fill Limitations; Insulation Temperature Ratings and Derating section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fa65561100bf1a1051b38598b2ad36312dbae65d839e787de75580a49a1a5d2d"
+    },
+    {
+      "question_id": "7a82e5b7-3209-45fc-b366-2ba296014821",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "A 220V branch circuit in a Philippine residential kitchen with a 40°C ambient temperature supplies a dishwasher (2000W, non-inductive). What wire size, insulation type, and circuit breaker rating comply with PEC and thermal requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.5 mm² THWN, 20A breaker: 2000W ÷ 220V = 9.1A; safe with headroom, but derating at 40°C (88%) reduces 20A to 17.6A—undersized load protection"
+        },
+        {
+          "id": "b",
+          "text": "5.5 mm² THWN, 20A breaker: 2000W ÷ 220V = 9.1A; at 40°C (88%), derated to 26.4A; meets load and derating requirements safely"
+        },
+        {
+          "id": "c",
+          "text": "3.5 mm² THHN, 15A breaker: 90°C insulation handles 40°C better; 15A breaker clips peak inrush current"
+        },
+        {
+          "id": "d",
+          "text": "5.5 mm² THWN, 25A breaker: higher breaker ensures no nuisance trips during transient surges in tropical climates"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While 17.6A technically exceeds 9.1A load, it violates the principle of maintaining derating headroom and permits no circuit expansion.",
+        "c": "THHN in a kitchen branch circuit is overkill and requires conduit; 15A breaker undersizes the circuit.",
+        "d": "25A breaker exceeds PEC kitchen counter circuit limits and creates safety hazard; no justification for breaker upsizing.",
+        "correct": "Load = 2000W ÷ 220V = 9.1A. Standard 3.5 mm² (20A at 75°C) derated at 40°C = 20A × 0.88 = 17.6A, technically adequate but leaves only margin. Upgrading to 5.5 mm² (30A at 75°C, derated to 26.4A) provides comfortable safety margin while accommodating future load additions. 20A breaker matches standard kitchen circuit protection per PEC.",
+        "takeaway": "In tropical climates, upsize conductors beyond minimum to maintain derating headroom and allow future additions."
+      },
+      "explanation": null,
+      "code_citation": "Insulation Temperature Ratings and Derating; Minimum Wire Sizing for Branch Circuits",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b1a36d1a5e7f36c5d7ee4592c1317969586921295282537b9ffd1eae65750f4b"
+    },
+    {
+      "question_id": "c368a887-2180-412e-9bc5-72fa51708932",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "A wet basement installation in the Philippines must be wired. Which combination of wire type and conduit is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "THWN wire (75°C wet rating) with EMT conduit for cost efficiency, though EMT may not be suitable for wet locations"
+        },
+        {
+          "id": "b",
+          "text": "TW wire (60°C wet rating) with PVC conduit, keeping it simple but potentially inadequate for high moisture environments"
+        },
+        {
+          "id": "c",
+          "text": "THWN wire (75°C wet rating) with PVC conduit, both rated for wet locations and corrosion-resistant"
+        },
+        {
+          "id": "d",
+          "text": "THHN wire with IMC conduit because higher temperature rating prevents water damage, though THHN is not rated for wet locations"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "EMT requires corrosion protection (e.g., PVC coating) for wet locations per PEC.",
+        "b": "TW is lower-rated (60°C); while acceptable, it's unnecessarily conservative for the application.",
+        "d": "THHN is single-conductor and requires separate conduit anyway; temperature rating doesn't prevent water ingress.",
+        "correct": "For wet basements, THWN wire's 75°C wet rating and PVC conduit's corrosion resistance combine to provide safe, durable performance in Philippine tropical humidity. Both are rated for wet locations per PEC.",
+        "takeaway": "Wet locations require combination of wet-rated wire insulation and corrosion-resistant conduit (PVC or IMC)."
+      },
+      "explanation": null,
+      "code_citation": "Wire Insulation Types section; Conduit Types section; conduit selection matrix",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1a50a0fef7d6ecd4b22083038f405ea7c149e30c1b14034356a6b90715ed07d1"
+    },
+    {
+      "question_id": "b542cb36-ab7a-4eab-bf00-926f504798a6",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "An electrician measures a 50-meter feeder run from the service panel to a subpanel. For a 30A 220V circuit, what wire size is needed if using 3.5 mm² copper (R = 5.30 Ω/km at 75°C) causes 6.7V drop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The 3.5 mm² wire is acceptable because 6.7V drop is within the 5% limit at 220V"
+        },
+        {
+          "id": "b",
+          "text": "Upgrade to 8 mm² copper because 6.7V drop (3% at 220V) on a 3.5 mm² wire exceeds the 2% feeder limit"
+        },
+        {
+          "id": "c",
+          "text": "Use the voltage drop formula to calculate: both feeder (2%) and branch (3%) limits must be observed separately"
+        },
+        {
+          "id": "d",
+          "text": "Voltage drop doesn't apply to feeder circuits over 50 meters; use 3.5 mm² with a 25A breaker instead"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses total system voltage drop (5%) with individual feeder limits (2%); PEC requires separate calculation.",
+        "c": "Correctly identifies the problem but suggests using the voltage drop formula without showing application to wire selection.",
+        "d": "Incorrectly suggests voltage drop doesn't apply to long feeders; it is especially critical on extended runs.",
+        "correct": "At 220V, 6.7V drop = 3.05%, exceeding the 2% maximum feeder limit per PEC. A 30A feeder requires larger conductor; 8 mm² (40A at 75°C) would reduce voltage drop proportionally, keeping it within 2%.",
+        "takeaway": "Feeder voltage drop must be ≤2%, branch ≤3%, total ≤5%; long runs often require wire size increase beyond ampacity requirement."
+      },
+      "explanation": null,
+      "code_citation": "Voltage Drop Considerations section; PEC Article 210.19 and 215.2",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2600575a052c985c35e193a4b5d3ba42a42de952f3d4f09e29de56843534a667"
+    },
+    {
+      "question_id": "9c487f03-f464-4dc7-8e50-57de4b3b0927",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "What is the primary difference between THWN and THHN wire insulation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "THWN is rated for wet locations (75°C wet/90°C dry); THHN is rated for dry locations only (90°C dry)"
+        },
+        {
+          "id": "b",
+          "text": "THHN is water-resistant and has a 90°C wet rating; THWN must be protected in conduit and is not suitable for direct burial"
+        },
+        {
+          "id": "c",
+          "text": "THWN cannot be used in wet locations; THHN has superior moisture resistance and is preferred for outdoor applications"
+        },
+        {
+          "id": "d",
+          "text": "THHN and THWN are identical; the difference is only in the nylon coating thickness, which affects flexibility and installation ease"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Confuses the temperature ratings and incorrectly suggests THWN requires conduit like THHN does.",
+        "c": "Reverses the temperature ratings and wet/dry characteristics of both wire types.",
+        "d": "Suggests the wires are identical, which overlooks critical differences in construction and application.",
+        "correct": "THWN is water-resistant and rated 75°C wet/90°C dry, making it suitable for both wet and dry locations. THHN is a single-conductor wire rated 90°C dry locations only, typically used in conduit systems.",
+        "takeaway": "THWN's water-resistant nylon coating allows flexible wet/dry use; THHN's design requires conduit protection."
+      },
+      "explanation": null,
+      "code_citation": "PEC Table 310.15(B)(16); Article on Wire Insulation Types and Ratings",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:66a7fbfffb9fbb45483d1689390d32b46882148736092725d30fd908239ccc00"
+    },
+    {
+      "question_id": "cf16557a-6172-4a30-b563-8dbcedfd8e8d",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "An underground feeder from a pole-mounted transformer to a building is 75 meters long. The load is 100A at 220V. What conduit type and wire specification are minimum per PEC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PVC conduit with 35 mm² copper THWN; adequate insulation and corrosion protection"
+        },
+        {
+          "id": "b",
+          "text": "Rigid steel or PVC conduit with 50 mm² copper THWN, sized for voltage drop and ampacity"
+        },
+        {
+          "id": "c",
+          "text": "IMC conduit with 35 mm² XHHW; overkill for underground but provides mechanical protection"
+        },
+        {
+          "id": "d",
+          "text": "PVC conduit only; wire size depends on voltage drop calculation separately from conduit choice"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While 35 mm² THWN in PVC might meet ampacity, 75m length causes excessive voltage drop; insufficient wire size.",
+        "c": "IMC is for exposed outdoor use, not burial; adds cost without benefit underground.",
+        "d": "Separates conduit and wire sizing concerns; both are determined by environmental conditions and loading.",
+        "correct": "Underground burial requires rigid steel or PVC for structural integrity and corrosion protection. At 75 meters, voltage drop is critical: 100A on 3.5 mm² (just 180A at 75°C) would cause ~31V drop (14%), requiring large upsizing. 50 mm² (at ~150A capacity, derated) keeps VD under 2% feeder limit. PEC mandates buried cable protection.",
+        "takeaway": "Underground feeders require rigid conduit (steel/PVC) and wire sized for both ampacity AND voltage drop; long runs demand significant upsizing."
+      },
+      "explanation": null,
+      "code_citation": "Conduit Types section; Voltage Drop Considerations; PEC Article 300 burial requirements",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0bb5dbdf44c964315cd818e8cfe5be34fcef2d168094ab42884f085a1dc00d41"
+    },
+    {
+      "question_id": "dbf122f1-0cb8-4c34-8727-3d002ffd856b",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "A 16 mm PVC conduit contains six 5.5 mm² (10 AWG) copper wires. The internal cross-sectional area of 16 mm PVC is 201.1 mm². Is this installation within PEC fill limits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; 6 conductors × 38.4 mm² each = 230.4 mm² total (114% fill); acceptable for 6+ conductors, which is incorrect"
+        },
+        {
+          "id": "b",
+          "text": "No; 6 conductors × 38.4 mm² each = 230.4 mm² total (114% fill); exceeds the 40% fill limit for 3+ conductors"
+        },
+        {
+          "id": "c",
+          "text": "Yes; 6 × 10.7 mm² (12 AWG) = 64.2 mm² (32% fill); well within the 40% limit, which is not applicable here"
+        },
+        {
+          "id": "d",
+          "text": "No; 5.5 mm² wire is too large for 16 mm conduit regardless of quantity, which is a misunderstanding of the fill calculation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correctly calculates fill percentage but incorrectly suggests there's a separate rule for 6+ conductors (there isn't; 40% is the limit).",
+        "c": "Confuses wire sizes (uses 12 AWG area instead of 10 AWG); results in incorrect underfilled assessment.",
+        "d": "Suggests a size threshold rule that doesn't exist; the violation is clearly the fill percentage, not size alone.",
+        "correct": "5.5 mm² conductor area ≈ 38.4 mm². Total 6 × 38.4 = 230.4 mm² ÷ 201.1 mm² conduit = 114.6% fill, far exceeding the 40% limit for 3+ conductors. This is a serious overfill violation creating overheating risk and preventing future additions.",
+        "takeaway": "Conduit fill calculations must account for actual conductor cross-sectional areas; 40% limit for 3+ conductors is rigid."
+      },
+      "explanation": null,
+      "code_citation": "Conduit Fill Limitations section; PEC Article 300.17 and Annex C",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7866ab8190f04472e22d0817fff4f76fd7fdcb75f096793227f8bb7ba370855b"
+    },
+    {
+      "question_id": "8d7c25c3-cefc-4336-9649-0010bed6883e",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "A three-phase 220V feeder circuit operates at 50°C ambient temperature and requires 60A. Which wire size (copper) and insulation type best balance ampacity, derating, and cost per PEC Table 310-16?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16 mm² (4 AWG) THWN at 75°C: raw 85A, derated to 74.8A at 50°C; oversized but acceptable"
+        },
+        {
+          "id": "b",
+          "text": "25 mm² (2 AWG) THWN at 75°C: raw 115A, derated to 101.2A at 50°C; meets load with safety margin"
+        },
+        {
+          "id": "c",
+          "text": "25 mm² (2 AWG) XHHW at 90°C: raw 130A, derated to 110.5A at 50°C; highest safety margin"
+        },
+        {
+          "id": "d",
+          "text": "16 mm² (4 AWG) THHN at 90°C: raw 95A, derated to 84.6A at 50°C; balanced for 60A load"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "16 mm² THWN at 75°C derated (82% at 50°C) gives 69.7A, which exceeds 60A but uses lower-rated insulation unnecessarily.",
+        "b": "Oversizes to 25 mm² when smaller wire is sufficient; increases cost without proportional safety benefit.",
+        "c": "While 25 mm² XHHW is safe, it's overspecified for a 60A load; 16 mm² THHN provides adequate margin with better cost/weight.",
+        "correct": "At 50°C ambient, PEC Table 310-16 applies 0.89 derating to 90°C wire. 16 mm² THHN: 95A × 0.89 = 84.6A, safely supporting 60A with adequate margin. Cost-effective while maintaining PEC compliance and proper heat management in high-temperature areas.",
+        "takeaway": "For hot environments, 90°C insulation (THHN, XHHW) reduces wire size compared to 75°C; calculate derating before choosing final size."
+      },
+      "explanation": null,
+      "code_citation": "Insulation Temperature Ratings and Derating section; PEC Table 310-16",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d37abcafb325e53e1e350986e26a455df7d6d02656d75a004e0e85254e7920a"
+    },
+    {
+      "question_id": "f77fe734-6bac-4b34-b19f-844fadf4d40b",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "A three-phase 220V feeder from a commercial building's main service must operate in a high-vibration mechanical equipment room at 44°C ambient. Determine the correct specifications for a 80A load lasting 4+ hours (continuous service).",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 mm² copper THWN per phase (115A rated, 87% derating at 44°C = 100A); acceptable with single-conductor 90°C alternative if cost is priority"
+        },
+        {
+          "id": "b",
+          "text": "35 mm² copper THWN per phase (150A rated, 87% derating = 130.5A); exceeds 80A with comfort margin; overkill for load size"
+        },
+        {
+          "id": "c",
+          "text": "25 mm² copper XHHW or THHN per phase (130A at 90°C, 89% derating at 44°C = 115.7A); meets 80A load with adequate thermal margin in hot, vibration-prone installation"
+        },
+        {
+          "id": "d",
+          "text": "16 mm² copper THHN per phase (95A at 90°C, 89% derating = 84.6A); minimal margin for 80A continuous; suitable only for short-duration duty"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "THWN (75°C) is adequate in ampacity but provides tighter margin in hot location; doesn't leverage 90°C option.",
+        "b": "35 mm² oversizes for 80A; adds unnecessary cost and weight without proportional benefit.",
+        "d": "16 mm² THHN at 84.6A derated barely exceeds 80A; violates safe design practice of 25–30% margin for continuous circuits.",
+        "correct": "80A continuous load at 44°C ambient requires 90°C insulation (derating 89%) for better thermal margin. 25 mm² XHHW/THHN: base 130A derated to 115.7A safely exceeds 80A. Mechanical room vibration favors rigid feeder in EMT/IMC with single-conductor wires. Lower-rated insulation (THWN 75°C) at 44°C derated 87% provides only 100A, leaving minimal margin for continuous loads.",
+        "takeaway": "Continuous high-current loads in hot environments demand 90°C insulation and conservative sizing; margin critical for reliability."
+      },
+      "explanation": null,
+      "code_citation": "Insulation Temperature Ratings and Derating; Wire Sizing by Load and Circuit Protection; Conductor Materials",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de58fe95cb802dad09db8eb0bc61d71a65917aefcbafa99f648671b1405d0907"
+    }
+  ]
+}

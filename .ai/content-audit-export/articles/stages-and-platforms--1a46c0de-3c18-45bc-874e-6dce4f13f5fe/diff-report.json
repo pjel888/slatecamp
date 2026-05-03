@@ -1,0 +1,38 @@
+{
+  "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+  "slug": "stages-and-platforms",
+  "generated_at": "2026-05-03T10:55:47.009Z",
+  "old_hash": "sha256:901f7d14fadc6976181892699d648c5140186c1dce41fb357ab49b146c886692",
+  "new_hash": "sha256:ec5ec59dc76e336c44dd597e9b8cbdcc95f39052c0970dda0d39c55492750027",
+  "original_hash": "sha256:901f7d14fadc6976181892699d648c5140186c1dce41fb357ab49b146c886692",
+  "normalized_hash": "sha256:e9f4662c2fcb759f125b8628e1f77dbf24e89df83a89047ea18b80347405c97d",
+  "candidate_hash": "sha256:ec5ec59dc76e336c44dd597e9b8cbdcc95f39052c0970dda0d39c55492750027",
+  "changed": true,
+  "changed_line_count": 378,
+  "inserted_line_count": 27,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 3,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
+  "changed_text_summary": {
+    "changed": 378,
+    "inserted": 27,
+    "deleted": 0,
+    "original_line_count": 352,
+    "candidate_line_count": 379
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [],
+    "changed_count": 0
+  },
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
+}

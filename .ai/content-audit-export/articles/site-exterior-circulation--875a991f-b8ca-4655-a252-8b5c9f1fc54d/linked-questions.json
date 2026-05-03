@@ -1,0 +1,1021 @@
+{
+  "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6ef5fc3f80435c27ddf822f2fbabab20ea8cfc53f3ecf4c259615d2e424c713b",
+  "question_count": 20,
+  "questions": [
+    {
+      "question_id": "84bba32f-6fc8-4b02-aba3-4d02c8fc02d8",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Site Exterior Circulation\", if a project requires 1096 l, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1096 l is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "1096 l is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "1096 l applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "1096 l is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 1096 l as the requirement. Context: alks and curb ramps.\r - Sidewalks, walkways, and pathways.\r - Interface with PD ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:11.372408+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b21e6f1df3ee1258a01ded8163e3403cdcaf2392984a3020a0e77461c872f7d4"
+    },
+    {
+      "question_id": "c8b79f82-3696-416c-9421-d96229d0f475",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The BP 344 IRR specifies two different minimum sidewalk widths — one from the original IRR and one commonly taught in 2024 exam-review materials. How should an LEA candidate handle both values?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Always use 1500 mm; the 1200 mm figure from the original IRR has been superseded and is no longer tested, according to the latest guidelines"
+        },
+        {
+          "id": "B",
+          "text": "Always use 1200 mm; 2024 reviewer materials are inaccurate and should not be relied upon for exam answers, as they do not reflect the official standards"
+        },
+        {
+          "id": "C",
+          "text": "Know both: 1200 mm is the original BP 344 IRR minimum; 1500 mm is the exam-oriented design minimum in 2024 reviewer materials"
+        },
+        {
+          "id": "D",
+          "text": "Use 1800 mm for all sidewalk widths since that is the dimension where two wheelchairs can pass comfortably, ensuring accessibility compliance"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both values are exam-relevant: 1200 mm is the original IRR minimum; 1500 mm is the 2024 reviewer/exam design minimum.",
+        "explanation": "The original BP 344 IRR specifies 1200 mm as the minimum sidewalk/walkway width. However, 2024 ALE review materials consistently teach 1500 mm as the design minimum for main public sidewalks in high-use environments. The exam may test either value depending on context. Candidates must know: (1) original code minimum = 1200 mm; (2) 2024 reviewer standard = 1500 mm; (3) two-wheelchair passing = 1800 mm. Neither value has been formally superseded — they serve different contexts.",
+        "common_misconceptions": [
+          "Treating 1200 mm as obsolete — it remains in the original IRR text and may still be tested",
+          "Treating 1800 mm as the universal minimum — that dimension applies to passing spaces, not general sidewalk width"
+        ]
+      },
+      "explanation": "Know the full spectrum: original IRR = 1200 mm; 2024 reviewer exam standard = 1500 mm; two-wheelchair passing = 1800 mm.",
+      "code_citation": "BP 344 IRR, original and 2024 reviewer materials",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a3828ae2288400549aa791781dbff17e61f05b0e9006960f6e02ab4c9d5a41bf"
+    },
+    {
+      "question_id": "e5d3a940-c336-43c6-a17f-fd6a9b07c538",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 IRR, what is the minimum width of the level base pad at the bottom of a dropped sidewalk where the crossing or walkway width is less than 1500 mm?",
+      "options": [
+        {
+          "id": "A",
+          "text": "900 mm depth, matching the minimum curb ramp width at drop-off points"
+        },
+        {
+          "id": "B",
+          "text": "1200 mm depth, consistent with the standard accessible pathway minimum width"
+        },
+        {
+          "id": "C",
+          "text": "1500 mm depth, providing the maneuvering area for turning and queuing at street level"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm depth, providing the same turning circle as rest spaces along long walkways"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "When the crossing/walkway is less than 1500 mm wide, the base pad minimum depth is 1500 mm.",
+        "explanation": "BP 344 IRR specifies that where a crossing or walkway is less than 1500 mm wide, the level surface (base pad) at the bottom of the dropped sidewalk must have a minimum depth of 1500 mm, with width equal to the crossing/walkway width. This 1500 mm base pad is the primary maneuvering area at street level, allowing a wheelchair user to turn around or queue before crossing. It is separate from the dropped sidewalk ramp run itself.",
+        "common_misconceptions": [
+          "Selecting 1800 mm, which is the turnabout space dimension along long walkways — not the dropped sidewalk base pad",
+          "Selecting 900 mm, which is the minimum curb ramp width at drop-off bays — not the base pad depth"
+        ]
+      },
+      "explanation": "The 1500 mm base pad at the bottom of dropped sidewalks provides the maneuvering area for wheelchair turning and queuing.",
+      "code_citation": "BP 344 IRR, Dropped Sidewalks section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:20f974e1e48f73c41c35bb45a017c580b5698e3ec3dcc02e4cc7401b11c0838f"
+    },
+    {
+      "question_id": "bb1a66d5-d453-4033-a509-48efabfcd821",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the maximum cross gradient (transverse slope) for accessible sidewalks and walkways under BP 344 IRR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:20 (5%), the same as the preferred longitudinal gradient for accessible routes"
+        },
+        {
+          "id": "B",
+          "text": "1:50 (2%), based on the cross-slope standard for accessible parking and curb cuts"
+        },
+        {
+          "id": "C",
+          "text": "1:12 (8.3%), the maximum slope allowed for accessible ramps at building entrances"
+        },
+        {
+          "id": "D",
+          "text": "1:100 (1%), ensuring drainage toward the road without discomfort to wheelchair users"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Maximum cross gradient for accessible sidewalks/walkways is 1:100 (1%) under BP 344 IRR.",
+        "explanation": "BP 344 IRR specifies a maximum cross gradient of 1:100 (1%) for accessible sidewalks and walkways, sloped toward the road to ensure drainage without creating the lateral tipping sensation that affects wheelchair users on steeper transverse slopes. The longitudinal gradient (along the direction of travel) is separate — ideally not steeper than 1:20 (5%). Cross gradient and longitudinal gradient are distinct specifications.",
+        "common_misconceptions": [
+          "Confusing cross gradient (1:100) with longitudinal gradient (target 1:20) — they are perpendicular measurements",
+          "Applying the 1:50 cross-slope standard from accessible parking/curb cuts to general sidewalk cross gradient"
+        ]
+      },
+      "explanation": "Cross gradient max is 1:100 (1%) for drainage — distinctly different from the longitudinal gradient limit of 1:20 (5%).",
+      "code_citation": "BP 344 IRR, Sidewalks section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cce269cc4ad5421a114d611a6c220931390e25a23b3ecdf8d22a82f8ae6604e2"
+    },
+    {
+      "question_id": "3598ede4-f486-47b7-add1-61caffcc969a",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Along lengthy exterior walkways, BP 344 IRR requires periodic turnabout spaces. What are the minimum size and maximum spacing of these rest/turn areas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1500 × 1500 mm minimum, every 9000 mm along the walkway"
+        },
+        {
+          "id": "B",
+          "text": "1800 × 1800 mm minimum, every 12000 mm along the walkway"
+        },
+        {
+          "id": "C",
+          "text": "1800 × 1800 mm minimum, every 6000 mm along the walkway"
+        },
+        {
+          "id": "D",
+          "text": "2000 × 2000 mm minimum, every 10000 mm along the walkway"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Turnabout spaces: 1800 × 1800 mm minimum, spaced no more than 12000 mm apart.",
+        "explanation": "BP 344 IRR (per 2024 reviewer materials) specifies that rest/turnabout spaces along walkways must be at least 1800 × 1800 mm in clear dimension — enough for a wheelchair to complete a full 180° turn or for two wheelchairs to pass each other. These spaces must be provided at intervals no greater than 12000 mm (12 m) along long or busy walkways, ensuring that wheelchair users are never more than 12 m from a turning area.",
+        "common_misconceptions": [
+          "Selecting 1500 × 1500 mm as the turnabout size — that dimension is for stair/ramp approach clear floor areas, not turnabout spaces",
+          "Selecting 9000 mm spacing — that is the ADA standard, not the Philippine BP 344 standard of 12000 mm"
+        ]
+      },
+      "explanation": "Turnabout spaces: 1800 × 1800 mm minimum; max spacing of 12000 mm between them along long walkways.",
+      "code_citation": "BP 344 IRR, Walkways section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3e956c973ff3bc198869677d937a19c41275a7894793895e744fce929673ab52"
+    },
+    {
+      "question_id": "33f9a32b-22bf-46f1-958f-ea811483362c",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "At the top of a staircase, a warning tactile strip must be installed. According to BP 344 IRR, what are the depth of the tactile strip and its setback distance from the stair nosing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm deep, placed 600 mm back from the stair edge"
+        },
+        {
+          "id": "B",
+          "text": "600 mm deep, placed 300 mm back from the stair edge"
+        },
+        {
+          "id": "C",
+          "text": "600 mm deep, placed 600 mm back from the stair edge"
+        },
+        {
+          "id": "D",
+          "text": "300 mm deep, placed 300 mm back from the stair edge"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Tactile warning strips: 600 mm deep, installed 300 mm back from the hazard (stair edge).",
+        "explanation": "BP 344 IRR specifies that warning tactile blocks (dome pattern) at stairs must have a depth of 600 mm, installed 300 mm before the hazard line — meaning the near edge of the tactile strip is 300 mm from the stair nosing. This is a high-frequency exam trap: 300 is the setback distance, not the depth. The depth is 600 mm. The strip must span the full clear width of the stair so a visually impaired user approaching from any path will encounter it.",
+        "common_misconceptions": [
+          "Swapping the two numbers: 300 mm is the setback, 600 mm is the strip depth — not the reverse",
+          "Assuming the 300 mm setback means the strip starts at the nosing — the near edge is 300 mm from the nosing"
+        ]
+      },
+      "explanation": "Mnemonic: '600 deep, 300 back' — depth is 600 mm, setback from hazard is 300 mm.",
+      "code_citation": "BP 344 IRR, Tactile Surfaces section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:87ee9e777900153b3914bc2c42ec05ba035023cf50ac712a98bbaa8cab24eed9"
+    },
+    {
+      "question_id": "594b5943-8f2b-4e3f-80dc-e91cab87f060",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "PD 1096 Rule VIII governs percentage of site occupancy (PSO) and required courts and yards. How does this interact with the placement of exterior accessible routes on a lot?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accessible routes must be located inside the building footprint only; yard areas are exempt from BP 344 requirements"
+        },
+        {
+          "id": "B",
+          "text": "Accessible routes may pass through required yards and courts but must not reduce courts and yards below their minimum dimensions"
+        },
+        {
+          "id": "C",
+          "text": "Accessible routes automatically override PSO and setback requirements whenever BP 344 compliance requires encroachment"
+        },
+        {
+          "id": "D",
+          "text": "Required yards are exempt from accessible route requirements; the accessible route must fit within the building footprint area only"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible routes may pass through required yards and courts — but must not shrink those yards/courts below PD 1096 minimums.",
+        "explanation": "PD 1096 Rule VIII sets minimum required yards, courts, and PSO. BP 344 requires accessible routes from the RROW to building entrances. The resolution: open (uncovered) accessible routes such as ramps, paths, and curb cuts may be placed in required yards and courts because they are circulation features, not habitable area. However, they must not reduce the usable yard or court dimension below the PD 1096 minimum. Neither code overrides the other; both must be satisfied simultaneously.",
+        "common_misconceptions": [
+          "Believing accessible routes override setback requirements — neither code supersedes the other; both must be met",
+          "Assuming accessible routes must stay within the building footprint — they routinely occupy required yards and open space"
+        ]
+      },
+      "explanation": "Accessible routes can occupy required yards and courts as long as they don't reduce those spaces below PD 1096 minimums.",
+      "code_citation": "BP 344 IRR; PD 1096 Rule VIII",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:231cfb07f9f1246b18351592586b6dafee51dd9ae635946d295beaa8549f15dc"
+    },
+    {
+      "question_id": "80188f77-dcd4-427f-a609-61fe8794324c",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A walkway reaches a dead end. Within what distance from the dead end must a turnabout space be provided, and what must be its minimum clear dimension?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Within 5000 mm of the dead end, minimum 1500 × 1500 mm clear space"
+        },
+        {
+          "id": "B",
+          "text": "Within 3500 mm of the dead end, minimum 1800 × 1800 mm clear space"
+        },
+        {
+          "id": "C",
+          "text": "Within 6000 mm of the dead end, minimum 1800 × 1800 mm clear space"
+        },
+        {
+          "id": "D",
+          "text": "Within 2000 mm of the dead end, minimum 1200 × 1200 mm clear space"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Within 3500 mm of a dead end, an 1800 × 1800 mm turnabout must be provided.",
+        "explanation": "BP 344 IRR (per 2024 reviewer materials) requires a turnabout or turning space at or within approximately 3500 mm of every dead-end corridor or exterior walkway dead end. The turnabout must be at least 1800 × 1800 mm in clear dimension — the full wheelchair turning circle — so a wheelchair user who has traveled into the dead-end can reverse direction without assistance. This is separate from the general spacing rule of one turnabout every 12000 mm along active walkways.",
+        "common_misconceptions": [
+          "Selecting 1500 × 1500 mm as the dead-end turnabout size — that dimension applies to approach clear floor areas at features, not turnabouts",
+          "Confusing the 3500 mm dead-end rule with the 12000 mm general spacing rule"
+        ]
+      },
+      "explanation": "Dead-end rule: 1800 × 1800 mm turnabout within 3500 mm of the dead end.",
+      "code_citation": "BP 344 IRR, Walkways section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b3d2c9acc410c6b29ef3c5691f3b7616ac9650d7686d2d4482631ecd7758454e"
+    },
+    {
+      "question_id": "e7405b7e-69fc-4173-a9e4-d7d186fdc637",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "If gratings are unavoidable along an accessible exterior path, BP 344 IRR specifies requirements for their installation. Which grating specification is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grating bars parallel to direction of travel, maximum 25 mm spacing between bars"
+        },
+        {
+          "id": "B",
+          "text": "Grating bars perpendicular to direction of travel, maximum 13 mm spacing between bars"
+        },
+        {
+          "id": "C",
+          "text": "Grating bars parallel to direction of travel, maximum 13 mm spacing between bars"
+        },
+        {
+          "id": "D",
+          "text": "Grating bars perpendicular to direction of travel, maximum 25 mm spacing between bars"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Gratings: bars perpendicular to direction of travel, max 13 mm clear spacing.",
+        "explanation": "BP 344 IRR specifies that where gratings are unavoidable on accessible paths: bars must be perpendicular to the direction of travel (so wheelchair casters cannot align with and fall into the gaps), and maximum clear spacing between bars must be approximately 13 mm (too narrow for wheelchair casters or cane tips to penetrate). Parallel bars create a risk of caster entrapment; wider spacing allows cane tips or casters to drop into the gap.",
+        "common_misconceptions": [
+          "Selecting parallel bars — bars must be perpendicular to travel direction to prevent caster entrapment",
+          "Selecting 25 mm spacing — 13 mm is the maximum; 25 mm allows wheelchair casters and cane tips to penetrate"
+        ]
+      },
+      "explanation": "Grating bars must be perpendicular to travel (preventing caster entrapment) with max 13 mm clear spacing.",
+      "code_citation": "BP 344 IRR, Sidewalks/Walkways section",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d1f62860b00ea0fc703d52950175c4b536a9e9202e640b630e19ba924e98e727"
+    },
+    {
+      "question_id": "51033569-04fe-44b9-aa48-74a104458a8a",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the minimum width of a curb ramp at a PWD drop-off or loading bay under BP 344 IRR, and how does this differ from the minimum width of a building ramp?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Curb ramp: 1200 mm; building ramp: 900 mm — curb ramps are wider for vehicular proximity"
+        },
+        {
+          "id": "B",
+          "text": "Curb ramp: 900 mm; building ramp: 1200 mm — curb ramps are shorter transitions, building ramps serve full wheelchair passage"
+        },
+        {
+          "id": "C",
+          "text": "Curb ramp: 1200 mm; building ramp: 1200 mm — both have the same minimum width under BP 344"
+        },
+        {
+          "id": "D",
+          "text": "Curb ramp: 600 mm; building ramp: 1000 mm — curb ramps are designed as minimal transitions only"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Curb ramps at drop-offs: 900 mm minimum; building ramps: 1200 mm minimum — different elements, different minimums.",
+        "explanation": "BP 344 IRR specifies that curb ramps at PWD loading/drop-off bays have a minimum width of 900 mm (exclusive of flared sides). Building ramps for accessible routes require a wider minimum of 1200 mm, allowing a wheelchair plus a walking guide to traverse simultaneously. The difference reflects the distinct nature of each element: curb ramps are short, localized grade transitions at the curb line, while building ramps are circulation elements accommodating sustained wheelchair travel.",
+        "common_misconceptions": [
+          "Applying the 1200 mm building ramp width to curb ramps — curb ramps have the lesser 900 mm minimum",
+          "Treating all ramp-type elements as having the same minimum width under BP 344"
+        ]
+      },
+      "explanation": "Critical pair to memorize: curb ramps = 900 mm; building ramps = 1200 mm minimum clear width.",
+      "code_citation": "BP 344 IRR, Curb Ramps; Building Ramps sections",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7a872b15130b639ebf15918ae6797322bf7c7bdb36ae205e99642ffefac8252f"
+    },
+    {
+      "question_id": "2b3592eb-11ba-492f-b80c-0d9e235ccd22",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "On a site where the building entrance is at an accessible grade (no ramp required), a Building Official still flags the lack of a dropped sidewalk at the property line as a BP 344 violation. Which statement best evaluates the Building Official's position?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Building Official is incorrect; dropped sidewalks are only required when the entrance has a ramp, and not when the grade is accessible."
+        },
+        {
+          "id": "B",
+          "text": "The Building Official is correct; dropped sidewalks are required at pedestrian crossings and walkway ends regardless of whether an interior ramp exists"
+        },
+        {
+          "id": "C",
+          "text": "The Building Official is correct only if the curb height exceeds 50 mm; lower curbs are exempt from dropped sidewalk requirements, according to local amendments."
+        },
+        {
+          "id": "D",
+          "text": "The Building Official is incorrect; dropped sidewalks are a local government requirement, not a BP 344 provision, and thus not applicable in this context."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Dropped sidewalks are required at pedestrian crossings and walkway ends — independent of whether the building entrance itself needs a ramp.",
+        "explanation": "BP 344 IRR requires dropped sidewalks at pedestrian crossings and at the ends of walkways of private streets and access roads. This is a site-level requirement that applies regardless of the building's own accessible design. Even if the building entrance is perfectly at grade, a wheelchair user arriving from the public sidewalk must still be able to cross from the RROW-level sidewalk to the property's accessible path without encountering a raised curb. The dropped sidewalk serves the street-to-lot transition, not the lot-to-building transition.",
+        "common_misconceptions": [
+          "Treating the dropped sidewalk requirement as contingent on whether an interior ramp exists — they are independent requirements",
+          "Treating dropped sidewalks as a local government option rather than a BP 344 mandate"
+        ]
+      },
+      "explanation": "Dropped sidewalks at pedestrian crossings are a BP 344 site requirement independent of whether the building needs an interior ramp.",
+      "code_citation": "BP 344 IRR, Dropped Sidewalks section",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.146313+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7f2634c485006ecd5dee390cc071876ef69814772c9e5b910ce574fc4e9d337d"
+    },
+    {
+      "question_id": "99f80a23-c795-4eb1-9a2a-4a7286d7dffe",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Along lengthy exterior walkways, BP 344 IRR requires periodic turnabout spaces. What are the minimum size and maximum spacing of these rest/turn areas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1500 × 1500 mm minimum, every 9000 mm along the walkway"
+        },
+        {
+          "id": "B",
+          "text": "1800 × 1800 mm minimum, every 12000 mm along the walkway"
+        },
+        {
+          "id": "C",
+          "text": "1800 × 1800 mm minimum, every 6000 mm along the walkway"
+        },
+        {
+          "id": "D",
+          "text": "2000 × 2000 mm minimum, every 10000 mm along the walkway"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Turnabout spaces: 1800 × 1800 mm minimum, spaced no more than 12000 mm apart.",
+        "explanation": "BP 344 IRR (per 2024 reviewer materials) specifies that rest/turnabout spaces along walkways must be at least 1800 × 1800 mm in clear dimension — enough for a wheelchair to complete a full 180° turn or for two wheelchairs to pass each other. These spaces must be provided at intervals no greater than 12000 mm (12 m) along long or busy walkways, ensuring that wheelchair users are never more than 12 m from a turning area.",
+        "common_misconceptions": [
+          "Selecting 1500 × 1500 mm as the turnabout size — that dimension is for stair/ramp approach clear floor areas, not turnabout spaces",
+          "Selecting 9000 mm spacing — that is the ADA standard, not the Philippine BP 344 standard of 12000 mm"
+        ]
+      },
+      "explanation": "Turnabout spaces: 1800 × 1800 mm minimum; max spacing of 12000 mm between them along long walkways.",
+      "code_citation": "BP 344 IRR, Walkways section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.791609+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:db995e3c7e7c896bc692775b5033dcb4af46233b9bfde7cf3a6d76ee08dfde48"
+    },
+    {
+      "question_id": "fbd8fe43-65dd-406f-973d-fe0ec4a4acf2",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "At the top of a staircase, a warning tactile strip must be installed. According to BP 344 IRR, what are the depth of the tactile strip and its setback distance from the stair nosing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm deep, placed 600 mm back from the stair edge"
+        },
+        {
+          "id": "B",
+          "text": "600 mm deep, placed 300 mm back from the stair edge"
+        },
+        {
+          "id": "C",
+          "text": "600 mm deep, placed 600 mm back from the stair edge"
+        },
+        {
+          "id": "D",
+          "text": "300 mm deep, placed 300 mm back from the stair edge"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Tactile warning strips: 600 mm deep, installed 300 mm back from the hazard (stair edge).",
+        "explanation": "BP 344 IRR specifies that warning tactile blocks (dome pattern) at stairs must have a depth of 600 mm, installed 300 mm before the hazard line — meaning the near edge of the tactile strip is 300 mm from the stair nosing. This is a high-frequency exam trap: 300 is the setback distance, not the depth. The depth is 600 mm. The strip must span the full clear width of the stair so a visually impaired user approaching from any path will encounter it.",
+        "common_misconceptions": [
+          "Swapping the two numbers: 300 mm is the setback, 600 mm is the strip depth — not the reverse",
+          "Assuming the 300 mm setback means the strip starts at the nosing — the near edge is 300 mm from the nosing"
+        ]
+      },
+      "explanation": "Mnemonic: '600 deep, 300 back' — depth is 600 mm, setback from hazard is 300 mm.",
+      "code_citation": "BP 344 IRR, Tactile Surfaces section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.791609+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:22a58811ed81eef6fcf00263bc026e67b0de0d592b77fabce19659827e43bbf7"
+    },
+    {
+      "question_id": "568ff715-8693-4a24-bb74-34278fc6c67e",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "PD 1096 Rule VIII governs percentage of site occupancy (PSO) and required courts and yards. How does this interact with the placement of exterior accessible routes on a lot?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accessible routes must be located inside the building footprint only; yard areas are exempt from BP 344 requirements"
+        },
+        {
+          "id": "B",
+          "text": "Accessible routes may pass through required yards and courts but must not reduce courts and yards below their minimum dimensions"
+        },
+        {
+          "id": "C",
+          "text": "Accessible routes automatically override PSO and setback requirements whenever BP 344 compliance requires encroachment"
+        },
+        {
+          "id": "D",
+          "text": "Required yards are exempt from accessible route requirements; the accessible route must fit within the building footprint area only"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible routes may pass through required yards and courts — but must not shrink those yards/courts below PD 1096 minimums.",
+        "explanation": "PD 1096 Rule VIII sets minimum required yards, courts, and PSO. BP 344 requires accessible routes from the RROW to building entrances. The resolution: open (uncovered) accessible routes such as ramps, paths, and curb cuts may be placed in required yards and courts because they are circulation features, not habitable area. However, they must not reduce the usable yard or court dimension below the PD 1096 minimum. Neither code overrides the other; both must be satisfied simultaneously.",
+        "common_misconceptions": [
+          "Believing accessible routes override setback requirements — neither code supersedes the other; both must be met",
+          "Assuming accessible routes must stay within the building footprint — they routinely occupy required yards and open space"
+        ]
+      },
+      "explanation": "Accessible routes can occupy required yards and courts as long as they don't reduce those spaces below PD 1096 minimums.",
+      "code_citation": "BP 344 IRR; PD 1096 Rule VIII",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.791609+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:76320fd75fa3869d1dbba87c93b23ea720f159502aa28444cf0a73c03a739fdc"
+    },
+    {
+      "question_id": "5d81dbaf-4172-4cd8-b367-8bdc5e2d0129",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A walkway reaches a dead end. Within what distance from the dead end must a turnabout space be provided, and what must be its minimum clear dimension?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Within 5000 mm of the dead end, minimum 1500 × 1500 mm clear space"
+        },
+        {
+          "id": "B",
+          "text": "Within 3500 mm of the dead end, minimum 1800 × 1800 mm clear space"
+        },
+        {
+          "id": "C",
+          "text": "Within 6000 mm of the dead end, minimum 1800 × 1800 mm clear space"
+        },
+        {
+          "id": "D",
+          "text": "Within 2000 mm of the dead end, minimum 1200 × 1200 mm clear space"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Within 3500 mm of a dead end, an 1800 × 1800 mm turnabout must be provided.",
+        "explanation": "BP 344 IRR (per 2024 reviewer materials) requires a turnabout or turning space at or within approximately 3500 mm of every dead-end corridor or exterior walkway dead end. The turnabout must be at least 1800 × 1800 mm in clear dimension — the full wheelchair turning circle — so a wheelchair user who has traveled into the dead-end can reverse direction without assistance. This is separate from the general spacing rule of one turnabout every 12000 mm along active walkways.",
+        "common_misconceptions": [
+          "Selecting 1500 × 1500 mm as the dead-end turnabout size — that dimension applies to approach clear floor areas at features, not turnabouts",
+          "Confusing the 3500 mm dead-end rule with the 12000 mm general spacing rule"
+        ]
+      },
+      "explanation": "Dead-end rule: 1800 × 1800 mm turnabout within 3500 mm of the dead end.",
+      "code_citation": "BP 344 IRR, Walkways section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.791609+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:780efd10dd2e23605b7a766697daba0af09439b5647e1e14aa9fbe7a58f0a522"
+    },
+    {
+      "question_id": "72c13f6d-eef5-4655-a698-42541f621d18",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "If gratings are unavoidable along an accessible exterior path, BP 344 IRR specifies requirements for their installation. Which grating specification is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grating bars parallel to direction of travel, maximum 25 mm spacing between bars"
+        },
+        {
+          "id": "B",
+          "text": "Grating bars perpendicular to direction of travel, maximum 13 mm spacing between bars"
+        },
+        {
+          "id": "C",
+          "text": "Grating bars parallel to direction of travel, maximum 13 mm spacing between bars"
+        },
+        {
+          "id": "D",
+          "text": "Grating bars perpendicular to direction of travel, maximum 25 mm spacing between bars"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Gratings: bars perpendicular to direction of travel, max 13 mm clear spacing.",
+        "explanation": "BP 344 IRR specifies that where gratings are unavoidable on accessible paths: bars must be perpendicular to the direction of travel (so wheelchair casters cannot align with and fall into the gaps), and maximum clear spacing between bars must be approximately 13 mm (too narrow for wheelchair casters or cane tips to penetrate). Parallel bars create a risk of caster entrapment; wider spacing allows cane tips or casters to drop into the gap.",
+        "common_misconceptions": [
+          "Selecting parallel bars — bars must be perpendicular to travel direction to prevent caster entrapment",
+          "Selecting 25 mm spacing — 13 mm is the maximum; 25 mm allows wheelchair casters and cane tips to penetrate"
+        ]
+      },
+      "explanation": "Grating bars must be perpendicular to travel (preventing caster entrapment) with max 13 mm clear spacing.",
+      "code_citation": "BP 344 IRR, Sidewalks/Walkways section",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.791609+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd4d251c77cdfd2d666170df141020edd2e277c7ab1d02ed45984a78c98a05ca"
+    },
+    {
+      "question_id": "e71d283b-10ca-4d2c-8467-dd7ee6ea65b7",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The BP 344 IRR specifies two different minimum sidewalk widths — one from the original IRR and one commonly taught in 2024 exam-review materials. How should an LEA candidate handle both values?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Always use 1500 mm; the 1200 mm figure from the original IRR has been superseded and is no longer tested, ensuring compliance with current standards"
+        },
+        {
+          "id": "B",
+          "text": "Always use 1200 mm; 2024 reviewer materials are inaccurate and should not be relied upon for exam answers, as they may lead to incorrect conclusions"
+        },
+        {
+          "id": "C",
+          "text": "Know both: 1200 mm is the original BP 344 IRR minimum; 1500 mm is the exam-oriented design minimum in 2024 reviewer materials"
+        },
+        {
+          "id": "D",
+          "text": "Use 1800 mm for all sidewalk widths since that is the dimension where two wheelchairs can pass comfortably, which is ideal for high-traffic areas"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both values are exam-relevant: 1200 mm is the original IRR minimum; 1500 mm is the 2024 reviewer/exam design minimum.",
+        "explanation": "The original BP 344 IRR specifies 1200 mm as the minimum sidewalk/walkway width. However, 2024 ALE review materials consistently teach 1500 mm as the design minimum for main public sidewalks in high-use environments. The exam may test either value depending on context. Candidates must know: (1) original code minimum = 1200 mm; (2) 2024 reviewer standard = 1500 mm; (3) two-wheelchair passing = 1800 mm. Neither value has been formally superseded — they serve different contexts.",
+        "common_misconceptions": [
+          "Treating 1200 mm as obsolete — it remains in the original IRR text and may still be tested",
+          "Treating 1800 mm as the universal minimum — that dimension applies to passing spaces, not general sidewalk width"
+        ]
+      },
+      "explanation": "Know the full spectrum: original IRR = 1200 mm; 2024 reviewer exam standard = 1500 mm; two-wheelchair passing = 1800 mm.",
+      "code_citation": "BP 344 IRR, original and 2024 reviewer materials",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.791609+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:355cfb2a1f99ae7fff40c0ce3cff0ac5bc402ed94fe0e6bbc26d60987c10c549"
+    },
+    {
+      "question_id": "70546d76-192c-4e65-ac3d-c726a0507e9e",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "On a site where the building entrance is at an accessible grade (no ramp required), a Building Official still flags the lack of a dropped sidewalk at the property line as a BP 344 violation. Which statement best evaluates the Building Official's position?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Building Official is incorrect; dropped sidewalks are only required when the entrance has a ramp, according to some interpretations of BP 344"
+        },
+        {
+          "id": "B",
+          "text": "The Building Official is correct; dropped sidewalks are required at pedestrian crossings and walkway ends regardless of whether an interior ramp exists"
+        },
+        {
+          "id": "C",
+          "text": "The Building Official is correct only if the curb height exceeds 50 mm; lower curbs are exempt from dropped sidewalk requirements, which is a common misunderstanding"
+        },
+        {
+          "id": "D",
+          "text": "The Building Official is incorrect; dropped sidewalks are a local government requirement, not a BP 344 provision, unless specified otherwise"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Dropped sidewalks are required at pedestrian crossings and walkway ends — independent of whether the building entrance itself needs a ramp.",
+        "explanation": "BP 344 IRR requires dropped sidewalks at pedestrian crossings and at the ends of walkways of private streets and access roads. This is a site-level requirement that applies regardless of the building's own accessible design. Even if the building entrance is perfectly at grade, a wheelchair user arriving from the public sidewalk must still be able to cross from the RROW-level sidewalk to the property's accessible path without encountering a raised curb. The dropped sidewalk serves the street-to-lot transition, not the lot-to-building transition.",
+        "common_misconceptions": [
+          "Treating the dropped sidewalk requirement as contingent on whether an interior ramp exists — they are independent requirements",
+          "Treating dropped sidewalks as a local government option rather than a BP 344 mandate"
+        ]
+      },
+      "explanation": "Dropped sidewalks at pedestrian crossings are a BP 344 site requirement independent of whether the building needs an interior ramp.",
+      "code_citation": "BP 344 IRR, Dropped Sidewalks section",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.791609+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:91719306f44289958e90fa5d83ffeb612070d2545371359e94df37424a655394"
+    },
+    {
+      "question_id": "2b44eb63-81fb-4466-883d-c4cc28f42875",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the minimum width of a curb ramp at a PWD drop-off or loading bay under BP 344 IRR, and how does this differ from the minimum width of a building ramp?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Curb ramp: 1200 mm; building ramp: 900 mm — curb ramps are wider for vehicular proximity and to accommodate larger turning radii"
+        },
+        {
+          "id": "B",
+          "text": "Curb ramp: 900 mm; building ramp: 1200 mm — curb ramps are shorter transitions, building ramps serve full wheelchair passage"
+        },
+        {
+          "id": "C",
+          "text": "Curb ramp: 1200 mm; building ramp: 1200 mm — both have the same minimum width under BP 344, ensuring uniform accessibility standards"
+        },
+        {
+          "id": "D",
+          "text": "Curb ramp: 600 mm; building ramp: 1000 mm — curb ramps are designed as minimal transitions only, focusing on compact design"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Curb ramps at drop-offs: 900 mm minimum; building ramps: 1200 mm minimum — different elements, different minimums.",
+        "explanation": "BP 344 IRR specifies that curb ramps at PWD loading/drop-off bays have a minimum width of 900 mm (exclusive of flared sides). Building ramps for accessible routes require a wider minimum of 1200 mm, allowing a wheelchair plus a walking guide to traverse simultaneously. The difference reflects the distinct nature of each element: curb ramps are short, localized grade transitions at the curb line, while building ramps are circulation elements accommodating sustained wheelchair travel.",
+        "common_misconceptions": [
+          "Applying the 1200 mm building ramp width to curb ramps — curb ramps have the lesser 900 mm minimum",
+          "Treating all ramp-type elements as having the same minimum width under BP 344"
+        ]
+      },
+      "explanation": "Critical pair to memorize: curb ramps = 900 mm; building ramps = 1200 mm minimum clear width.",
+      "code_citation": "BP 344 IRR, Curb Ramps; Building Ramps sections",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.791609+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b0f4d4e9d082b456b45fbfda31c810bbe1fc1460e5f7d43880685fc9945d84b5"
+    },
+    {
+      "question_id": "277e1888-a6f2-469c-a99d-349aee0252fa",
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the maximum cross gradient (transverse slope) for accessible sidewalks and walkways under BP 344 IRR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:20 (5%), the same as the preferred longitudinal gradient for accessible routes"
+        },
+        {
+          "id": "B",
+          "text": "1:50 (2%), based on the cross-slope standard for accessible parking and curb cuts"
+        },
+        {
+          "id": "C",
+          "text": "1:12 (8.3%), the maximum slope allowed for accessible ramps at building entrances"
+        },
+        {
+          "id": "D",
+          "text": "1:100 (1%), ensuring drainage toward the road without discomfort to wheelchair users"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Maximum cross gradient for accessible sidewalks/walkways is 1:100 (1%) under BP 344 IRR.",
+        "explanation": "BP 344 IRR specifies a maximum cross gradient of 1:100 (1%) for accessible sidewalks and walkways, sloped toward the road to ensure drainage without creating the lateral tipping sensation that affects wheelchair users on steeper transverse slopes. The longitudinal gradient (along the direction of travel) is separate — ideally not steeper than 1:20 (5%). Cross gradient and longitudinal gradient are distinct specifications.",
+        "common_misconceptions": [
+          "Confusing cross gradient (1:100) with longitudinal gradient (target 1:20) — they are perpendicular measurements",
+          "Applying the 1:50 cross-slope standard from accessible parking/curb cuts to general sidewalk cross gradient"
+        ]
+      },
+      "explanation": "Cross gradient max is 1:100 (1%) for drainage — distinctly different from the longitudinal gradient limit of 1:20 (5%).",
+      "code_citation": "BP 344 IRR, Sidewalks section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.791609+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:55f806c6d09a9b3f6694d747e208dd3e13a3f3ac8fcb4f734934c54e7e942092"
+    }
+  ]
+}

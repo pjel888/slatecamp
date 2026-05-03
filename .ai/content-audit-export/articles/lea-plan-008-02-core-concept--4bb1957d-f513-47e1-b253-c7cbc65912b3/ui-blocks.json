@@ -1,0 +1,91 @@
+{
+  "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+  "slug": "lea-plan-008-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.586Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:26ddbf83a7e5f1c912ace63ecbe7644cc7d53f5fa348aff01b3c9113e63ae74c",
+  "normalized_content_hash": "sha256:26ddbf83a7e5f1c912ace63ecbe7644cc7d53f5fa348aff01b3c9113e63ae74c",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Digital Tool / Framework\", \"Primary Function in Planning\", \"Application Example\"]} rows={[[\"GIS (Geographic Information Systems)\", \"Layer mapping of land use, hazards, infrastructure, constraints; constraint analysis\", \"Overlay flood zones, slope hazard maps, utility networks to identify viable development sites\"], [\"Real-time traffic monitoring\", \"Identify congestion patterns; assess transportation network capacity\", \"Detect peak-hour bottlenecks; prioritize transit corridor improvements; evaluate new development's traffic impact\"], [\"Air quality and environmental sensors\", \"Monitor pollution levels; identify environmental hotspots\", \"Data-driven decisions to restrict heavy industry proximity to residential areas; track air quality compliance\"], [\"Utility consumption dashboards\", \"Track water, electricity, waste generation in real time\", \"Identify water-loss zones in distribution networks; redirect development away from undersized utility zones\"], [\"Digital civic engagement platforms\", \"Collect community input on planning priorities; increase transparency\", \"Online CLUP surveys; participatory budgeting for neighborhood improvements; crowdsourced issue reporting\"]]} />",
+      "raw_hash": "sha256:bc4390fd09ecca1a0b819e20da768d8249fc4355cbf1927c07f1c4ae1c65c089",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Digital Tool / Framework\\\", \\\"Primary Function in Planning\\\", \\\"Application Example\\\"]}\", rows=\"{[[\\\"GIS (Geographic Information Systems)\\\", \\\"Layer mapping of land use, hazards, infrastructure, constraints; constraint analysis\\\", \\\"Overlay flood zones, slope hazard maps, utility networks to identify viable development sites\\\"], [\\\"Real-time traffic monitoring\\\", \\\"Identify congestion patterns; assess transportation network capacity\\\", \\\"Detect peak-hour bottlenecks; prioritize transit corridor improvements; evaluate new development's traffic impact\\\"], [\\\"Air quality and environmental sensors\\\", \\\"Monitor pollution levels; identify environmental hotspots\\\", \\\"Data-driven decisions to restrict heavy industry proximity to residential areas; track air quality compliance\\\"], [\\\"Utility consumption dashboards\\\", \\\"Track water, electricity, waste generation in real time\\\", \\\"Identify water-loss zones in distribution networks; redirect development away from undersized utility zones\\\"], [\\\"Digital civic engagement platforms\\\", \\\"Collect community input on planning priorities; increase transparency\\\", \\\"Online CLUP surveys; participatory budgeting for neighborhood improvements; crowdsourced issue reporting\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:65d8f47be035a61e45ba67bb781289893d7487557505d51842161e45d5edf080",
+      "props": {
+        "headers": "{[\"Digital Tool / Framework\", \"Primary Function in Planning\", \"Application Example\"]}",
+        "rows": "{[[\"GIS (Geographic Information Systems)\", \"Layer mapping of land use, hazards, infrastructure, constraints; constraint analysis\", \"Overlay flood zones, slope hazard maps, utility networks to identify viable development sites\"], [\"Real-time traffic monitoring\", \"Identify congestion patterns; assess transportation network capacity\", \"Detect peak-hour bottlenecks; prioritize transit corridor improvements; evaluate new development's traffic impact\"], [\"Air quality and environmental sensors\", \"Monitor pollution levels; identify environmental hotspots\", \"Data-driven decisions to restrict heavy industry proximity to residential areas; track air quality compliance\"], [\"Utility consumption dashboards\", \"Track water, electricity, waste generation in real time\", \"Identify water-loss zones in distribution networks; redirect development away from undersized utility zones\"], [\"Digital civic engagement platforms\", \"Collect community input on planning priorities; increase transparency\", \"Online CLUP surveys; participatory budgeting for neighborhood improvements; crowdsourced issue reporting\"]]}"
+      },
+      "props_json": {
+        "headers": "{[\"Digital Tool / Framework\", \"Primary Function in Planning\", \"Application Example\"]}",
+        "rows": "{[[\"GIS (Geographic Information Systems)\", \"Layer mapping of land use, hazards, infrastructure, constraints; constraint analysis\", \"Overlay flood zones, slope hazard maps, utility networks to identify viable development sites\"], [\"Real-time traffic monitoring\", \"Identify congestion patterns; assess transportation network capacity\", \"Detect peak-hour bottlenecks; prioritize transit corridor improvements; evaluate new development's traffic impact\"], [\"Air quality and environmental sensors\", \"Monitor pollution levels; identify environmental hotspots\", \"Data-driven decisions to restrict heavy industry proximity to residential areas; track air quality compliance\"], [\"Utility consumption dashboards\", \"Track water, electricity, waste generation in real time\", \"Identify water-loss zones in distribution networks; redirect development away from undersized utility zones\"], [\"Digital civic engagement platforms\", \"Collect community input on planning priorities; increase transparency\", \"Online CLUP surveys; participatory budgeting for neighborhood improvements; crowdsourced issue reporting\"]]}"
+      },
+      "props_text": "headers={[\"Digital Tool / Framework\", \"Primary Function in Planning\", \"Application Example\"]} rows={[[\"GIS (Geographic Information Systems)\", \"Layer mapping of land use, hazards, infrastructure, constraints; constraint analysis\", \"Overlay flood zones, slope hazard maps, utility networks to identify viable development sites\"], [\"Real-time traffic monitoring\", \"Identify congestion patterns; assess transportation network capacity\", \"Detect peak-hour bottlenecks; prioritize transit corridor improvements; evaluate new development's traffic impact\"], [\"Air quality and environmental sensors\", \"Monitor pollution levels; identify environmental hotspots\", \"Data-driven decisions to restrict heavy industry proximity to residential areas; track air quality compliance\"], [\"Utility consumption dashboards\", \"Track water, electricity, waste generation in real time\", \"Identify water-loss zones in distribution networks; redirect development away from undersized utility zones\"], [\"Digital civic engagement platforms\", \"Collect community input on planning priorities; increase transparency\", \"Online CLUP surveys; participatory budgeting for neighborhood improvements; crowdsourced issue reporting\"]]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 2092,
+      "end_offset": 3305,
+      "line_start": 23,
+      "line_end": 23,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memory aid: **GIS = Geographic Information Systems = spatial layer analysis**. Think of GIS as the digital equivleant of drawing transparent maps on overlays and stacking them to find patterns. **IoT = Internet of Things = real-time sensors feeding live data**. Smart cities collect constant data; static data is yesterday's planning.</Tip>",
+      "raw_hash": "sha256:25e9650414d3c5c353b09755d3f98cf25962f852acba051ca4f0adebe3ac3490",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: **GIS = Geographic Information Systems = spatial layer analysis**. Think of GIS as the digital equivleant of drawing transparent maps on overlays and stacking them to find patterns. **IoT = Internet of Things = real-time sensors feeding live data**. Smart cities collect constant data; static data is yesterday's planning.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:46d21dc29c803cdcf9028f775e96e1cd910a1a982ce8f508c66865f0cad8793b",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memory aid: **GIS = Geographic Information Systems = spatial layer analysis**. Think of GIS as the digital equivleant of drawing transparent maps on overlays and stacking them to find patterns. **IoT = Internet of Things = real-time sensors feeding live data**. Smart cities collect constant data; static data is yesterday's planning.",
+      "children_text": "Memory aid: **GIS = Geographic Information Systems = spatial layer analysis**. Think of GIS as the digital equivleant of drawing transparent maps on overlays and stacking them to find patterns. **IoT = Internet of Things = real-time sensors feeding live data**. Smart cities collect constant data; static data is yesterday's planning.",
+      "start_offset": 5333,
+      "end_offset": 5678,
+      "line_start": 37,
+      "line_end": 37,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing smart cities with just technology installation. Smart cities are not defined by having lots of sensors; they are defined by using integrated data to make better planning and operational decisions. A city with sensors but no data analysis is not a smart city.\", \"Assuming smart city planning replaces traditional CLUP processes. Digital tools support CLUPs; they do not eliminate the need for comprehensive land use strategy, public participation, and zoning ordinances.\", \"Overstating the autonomy of smart systems. Real-time data and AI models inform planner decisions; humans still decide policy. Smart cities are tools for human-centered planning, not robotic city management.\", \"Treating digital equity as irrelevant. Smart city benefits depend on equitable access to digital engagement platforms and services. Digital-only engagement excludes low-income and elderly populations; effective smart cities use hybrid analog-digital engagement.\"]} />",
+      "raw_hash": "sha256:3637e10b251dd98d0d8647e0831733affdaec445695b2773d5f9b773cc743534",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing smart cities with just technology installation. Smart cities are not defined by having lots of sensors; they are defined by using integrated data to make better planning and operational decisions. A city with sensors but no data analysis is not a smart city.\\\", \\\"Assuming smart city planning replaces traditional CLUP processes. Digital tools support CLUPs; they do not eliminate the need for comprehensive land use strategy, public participation, and zoning ordinances.\\\", \\\"Overstating the autonomy of smart systems. Real-time data and AI models inform planner decisions; humans still decide policy. Smart cities are tools for human-centered planning, not robotic city management.\\\", \\\"Treating digital equity as irrelevant. Smart city benefits depend on equitable access to digital engagement platforms and services. Digital-only engagement excludes low-income and elderly populations; effective smart cities use hybrid analog-digital engagement.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:46c98b4acefb1ec05dcbbcc1987d2294e900a26932f1065f471913ab6ce3a56a",
+      "props": {
+        "mistakes": "{[\"Confusing smart cities with just technology installation. Smart cities are not defined by having lots of sensors; they are defined by using integrated data to make better planning and operational decisions. A city with sensors but no data analysis is not a smart city.\", \"Assuming smart city planning replaces traditional CLUP processes. Digital tools support CLUPs; they do not eliminate the need for comprehensive land use strategy, public participation, and zoning ordinances.\", \"Overstating the autonomy of smart systems. Real-time data and AI models inform planner decisions; humans still decide policy. Smart cities are tools for human-centered planning, not robotic city management.\", \"Treating digital equity as irrelevant. Smart city benefits depend on equitable access to digital engagement platforms and services. Digital-only engagement excludes low-income and elderly populations; effective smart cities use hybrid analog-digital engagement.\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Confusing smart cities with just technology installation. Smart cities are not defined by having lots of sensors; they are defined by using integrated data to make better planning and operational decisions. A city with sensors but no data analysis is not a smart city.\", \"Assuming smart city planning replaces traditional CLUP processes. Digital tools support CLUPs; they do not eliminate the need for comprehensive land use strategy, public participation, and zoning ordinances.\", \"Overstating the autonomy of smart systems. Real-time data and AI models inform planner decisions; humans still decide policy. Smart cities are tools for human-centered planning, not robotic city management.\", \"Treating digital equity as irrelevant. Smart city benefits depend on equitable access to digital engagement platforms and services. Digital-only engagement excludes low-income and elderly populations; effective smart cities use hybrid analog-digital engagement.\"]}"
+      },
+      "props_text": "mistakes={[\"Confusing smart cities with just technology installation. Smart cities are not defined by having lots of sensors; they are defined by using integrated data to make better planning and operational decisions. A city with sensors but no data analysis is not a smart city.\", \"Assuming smart city planning replaces traditional CLUP processes. Digital tools support CLUPs; they do not eliminate the need for comprehensive land use strategy, public participation, and zoning ordinances.\", \"Overstating the autonomy of smart systems. Real-time data and AI models inform planner decisions; humans still decide policy. Smart cities are tools for human-centered planning, not robotic city management.\", \"Treating digital equity as irrelevant. Smart city benefits depend on equitable access to digital engagement platforms and services. Digital-only engagement excludes low-income and elderly populations; effective smart cities use hybrid analog-digital engagement.\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5700,
+      "end_offset": 6689,
+      "line_start": 41,
+      "line_end": 41,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:f8c83512bce9c290cca852e6b14c878ac61d811d580cd98487f69401eb5f6028"
+}

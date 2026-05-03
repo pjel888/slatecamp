@@ -1,0 +1,508 @@
+{
+  "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:bedf967fdcb1dd4f12d2223b3ec98501ed8cb24245b2c8d2cdb5a778c210f5aa",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "ad0718a0-7b26-4c2e-9c37-9c8dbd15380d",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "Who is responsible for maintaining the accelerographs in a tall building after construction is complete?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The local government authority (city or province)"
+        },
+        {
+          "id": "b",
+          "text": "The building owner"
+        },
+        {
+          "id": "c",
+          "text": "The structural engineer who designed the building"
+        },
+        {
+          "id": "d",
+          "text": "PHIVOLCS (Philippine Institute of Volcanology and Seismology)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The guidelines require building owners to upgrade non-conforming ERI and maintain instruments as part of Certificate of Occupancy compliance. Ongoing maintenance responsibility should be verified in the full NSCP Section 105.2 text.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.12",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:807146a47bf622f09b8d05f842fbabd5699493e13ab6aa2625d27d5b6ab8e8f9"
+    },
+    {
+      "question_id": "679e6c09-773d-4e45-8b7e-62b8378d6c08",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "An essential facility is being designed in Zone 2. If a standard building (I = 1.0) in the same zone has a design base shear of 500 kN, what is the design base shear for the essential facility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "500 kN (same)"
+        },
+        {
+          "id": "b",
+          "text": "575 kN"
+        },
+        {
+          "id": "c",
+          "text": "625 kN"
+        },
+        {
+          "id": "d",
+          "text": "750 kN"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The base shear formula is V = Z × I × C × W. For the essential facility, I = 1.25 instead of 1.0. The ratio is 1.25 / 1.0 = 1.25, so V(essential) = 500 × 1.25 = 625 kN.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.1, 5.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27c9abfe8db8bb5cd579a4872f3cc20045bef42237b22bf3acddbbd2518af315"
+    },
+    {
+      "question_id": "1a20a8a7-ee51-468d-8abc-5fa0b82c552c",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "According to the NSCP, accelerographs are required in buildings of ______ stories or more.",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 stories"
+        },
+        {
+          "id": "b",
+          "text": "12 stories"
+        },
+        {
+          "id": "c",
+          "text": "14 stories"
+        },
+        {
+          "id": "d",
+          "text": "16 stories"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The NSCP 2010/2015 requires accelerographs in buildings in Seismic Zone 4 that are over 50 meters in height. The requirement is based on HEIGHT, not story count. Buildings outside the 200-km radius of Type A faults may require only a single accelerograph.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.12",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:48e6039e36cbc1a3273b44922614f9b52f483eb8f13de0e72544fef3693d7616"
+    },
+    {
+      "question_id": "3972bade-646d-4206-8e0a-20f518bf5c52",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "An accelerograph at mid-height of a tall building records peak ground acceleration (PGA) of 0.35 g during an earthquake. What does this measurement tell a structural engineer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The building experienced 35% of gravitational acceleration at the mid-height location, providing data on ground motion intensity and structural response at that elevation."
+        },
+        {
+          "id": "b",
+          "text": "The building failed because 0.35 g exceeds all design thresholds, which is an incorrect assumption without further analysis."
+        },
+        {
+          "id": "c",
+          "text": "The accelerograph is malfunctioning because 0.35 g is too low to cause any damage, which is a misunderstanding of seismic data."
+        },
+        {
+          "id": "d",
+          "text": "The measurement is irrelevant without knowing the building's fundamental period, which is a common misconception."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The accelerograph record of 0.35 g at mid-height indicates the acceleration recorded at that location during the earthquake. This data is compared to design assumptions (Ss, S1, or Z factors) to validate seismic hazard models. The record is used to calibrate future design standards and assess building response. 0.35 g is a realistic and significant measurement that informs engineering judgment.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.12",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:58e0432778763b568143c3530565c8ea8db786530816cd4b8cfd50b6c0278cb9"
+    },
+    {
+      "question_id": "06d2df56-79ef-46a7-be60-e1fec01c79a6",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "Which of the following is NOT classified as an essential facility in the NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A hospital emergency room, which is critical for immediate medical response and disaster management"
+        },
+        {
+          "id": "b",
+          "text": "A fire station, essential for emergency response and public safety"
+        },
+        {
+          "id": "c",
+          "text": "A residential apartment building"
+        },
+        {
+          "id": "d",
+          "text": "A water treatment plant, vital for ensuring public health and sanitation"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Residential apartment buildings are standard occupancy, not essential facilities. Hospitals, fire stations, emergency operations centers, water plants, power distribution, and telecommunications hubs are essential facilities. Essential status is reserved for facilities that must remain operational for post-earthquake response and recovery.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.2",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7714904f422711527f529847bddd0422dffbfc776e4f839e4ce663ee8f59fa32"
+    },
+    {
+      "question_id": "4ff0929c-e38a-47b5-8116-806285e880a9",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "A 14-story office building is being designed in Zone 1 (Z = 0.2) with I = 1.0 and C = 0.10. The effective seismic weight is W = 4000 kN. The building owner is responsible for maintaining accelerographs. What is the design base shear?",
+      "options": [
+        {
+          "id": "a",
+          "text": "V = 80 kN"
+        },
+        {
+          "id": "b",
+          "text": "V = 160 kN"
+        },
+        {
+          "id": "c",
+          "text": "V = 200 kN"
+        },
+        {
+          "id": "d",
+          "text": "V = 320 kN"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "V = Z × I × C × W = 0.2 × 1.0 × 0.10 × 4000 = 80 kN. Accelerograph requirements are based on HEIGHT (50 meters in Seismic Zone 4), not story count. Whether this 14-story building requires accelerographs depends on its actual height and seismic zone location, not the number of stories.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.1, 5.12",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:78e2a6b4778f4ba16ce0c88e150b53b2074e0218381cc5b5d829111333113b29"
+    },
+    {
+      "question_id": "10c2f930-8e32-495a-ba8e-b785d91c06e0",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "A hospital (essential facility) is designed in Zone 2 with the standard importance factor I = 1.0. The design base shear is calculated as 1200 kN. After plan review, the engineer is told the building must comply with I = 1.25. What is the corrected design base shear?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1200 kN (no change; the importance factor is applied after base shear calculation)"
+        },
+        {
+          "id": "b",
+          "text": "1500 kN (1200 × 1.25)"
+        },
+        {
+          "id": "c",
+          "text": "1440 kN (1200 × 1.20)"
+        },
+        {
+          "id": "d",
+          "text": "1320 kN (1200 × 1.10)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The importance factor I is a direct multiplier in the base shear formula V = Z × I × C × W. If the initial calculation used I = 1.0 and produced V = 1200 kN, then using I = 1.25 yields V = 1200 × (1.25 / 1.0) = 1500 kN.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.1, 5.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8c355935b9a678778a0772969fc4fa014c76aefb7ec926b1662b9811827ea20a"
+    },
+    {
+      "question_id": "1f1f9eb6-68e8-453f-b088-007436f66243",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "What is the importance factor (I) for an essential facility such as a hospital in the NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = 1.0 (same as standard buildings)"
+        },
+        {
+          "id": "b",
+          "text": "I = 1.15"
+        },
+        {
+          "id": "c",
+          "text": "I = 1.25"
+        },
+        {
+          "id": "d",
+          "text": "I = 1.50"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Essential facilities (hospitals, fire stations, emergency centers, water treatment plants) are required to have an importance factor I = 1.25 in the design base shear formula. This increases the design forces by 25% to ensure the facility remains operational post-earthquake.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.2",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b891195ecc8d9d4e17851057a87e101c3fa4d5cd300a2e0ac09429de48eda5d9"
+    },
+    {
+      "question_id": "86182076-964b-4b50-98f8-11d571eb7cfe",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "How many accelerographs are required in a 15-story building, and at which locations must they be positioned?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 accelerograph at the roof, primarily for monitoring seismic activity at the highest point"
+        },
+        {
+          "id": "b",
+          "text": "2 accelerographs at the basement and roof, ensuring coverage from the lowest to the highest structural points"
+        },
+        {
+          "id": "c",
+          "text": "3 accelerographs at the basement, mid-height, and roof"
+        },
+        {
+          "id": "d",
+          "text": "4 accelerographs, one per 4 stories, to provide comprehensive seismic monitoring throughout the building"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The NSCP permits multiple configurations: (1) Three accelerographs at basement, mid-height, and roof; OR (2) One accelerograph at basement with two accelerometers at mid-height and roof; OR (3) Three accelerometers with common data logger at the same three locations. Option C represents one acceptable configuration. These three locations capture the vertical distribution of ground motion and structural response.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.12",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3e6ec3754ff07c6cb3502b71813e07b5d2768c3238a3893933df256e21c42886"
+    },
+    {
+      "question_id": "f0ce530a-0882-4eb6-850a-8d6ae9378b58",
+      "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+      "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
+      "text": "During the 2013 Bohol earthquake, accelerographs in nearby buildings recorded peak accelerations of 0.42 g at the base and 0.28 g at the roof. Why is the mid-height accelerograph reading (0.32 g) critical for engineers reviewing the building's performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The mid-height reading proves the building is safe; no further analysis is needed, simplifying the evaluation process"
+        },
+        {
+          "id": "b",
+          "text": "The three records (base, mid-height, roof) together show how ground motion was amplified or reduced at different elevations, validating soil amplification models and structural response assumptions used in design. This data informs future design standards and retrofit decisions."
+        },
+        {
+          "id": "c",
+          "text": "The mid-height reading is irrelevant; only the base acceleration matters for design, focusing solely on foundational stability"
+        },
+        {
+          "id": "d",
+          "text": "The accelerograph readings prove the building code is inadequate and must be abandoned, necessitating a complete overhaul of regulations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Three accelerographs at different elevations (base, mid, roof) provide a vertical profile of ground motion and structural response. The difference between base (0.42 g) and roof (0.28 g) reflects the building's dynamic response and soil amplification effects. Post-earthquake analysis of these records helps validate hazard models, calibrate code factors, and improve future designs. The complete profile is far more valuable than any single reading.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.12 (Guidelines on Earthquake Recording Instrumentation for Buildings). Historical earthquake data from PHIVOLCS may inform engineering judgment but is not a code citation.",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c70904520e9922e225b9f7608bfa754223b0b21e474a7435dc6b4204014301d0"
+    }
+  ]
+}

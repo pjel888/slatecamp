@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:52:34.877Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "0d7083b9-a1bc-428c-b9b9-e8d4afa0c83c",
+  "slug": "overview-theory-of-architecture",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:73d9e268e1899af2c0c1704e136fcd4d0467019a4b34fe1ed3b2be4a8a4b3c46",
+  "original_hash": "sha256:73d9e268e1899af2c0c1704e136fcd4d0467019a4b34fe1ed3b2be4a8a4b3c46",
+  "candidate_hash": "sha256:7fa070a6950c302d3d0e4202d9d6c187ea9424a22d6847b88b380d79e23b4b7b",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

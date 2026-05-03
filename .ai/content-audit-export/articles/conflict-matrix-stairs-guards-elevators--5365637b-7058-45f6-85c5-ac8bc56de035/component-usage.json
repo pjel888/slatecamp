@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+  "slug": "conflict-matrix-stairs-guards-elevators",
+  "title": "Conflict Matrix Stairs Guards Elevators",
+  "component_count": 2,
+  "components": [
+    {
+      "component_name": "LawCallout",
+      "block_ids": [
+        "ui_0001",
+        "ui_0002",
+        "ui_0004",
+        "ui_0005",
+        "ui_0006"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "Note",
+      "block_ids": [
+        "ui_0003"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    }
+  ],
+  "unknown_components": [],
+  "custom_ui_block_count": 6,
+  "normalized_status": "passed",
+  "components_detected": [
+    "LawCallout",
+    "Note"
+  ],
+  "unknown_components_detected": []
+}

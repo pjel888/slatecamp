@@ -1,0 +1,119 @@
+{
+  "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+  "slug": "lea-matl-003-05-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:44.110Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:9c7b0d78fa46e359d68e491bcfbb785c46d5da88051730d648e7f74358076e9e",
+  "normalized_content_hash": "b8e2d2fb6517c7e17e52e03078e04fc6738eb1473e02a0249bca204f6b15d05b",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>SMAW dominates Philippine field work and TESDA certification pathways. When a question specifies welding a structural connection on-site, assume SMAW unless otherwise stated. For shop fabrication or high-volume work, consider GMAW. Prequalified joints from AWS D1.1 eliminate expensive qualification testing\u2014always check if a proposed joint is prequalified before committing to a custom design.</Tip>",
+      "raw_hash": "sha256:905251923b5d16e13c7ea91f529ac8090388bafba5a34c4e5ec6f1151c9c30a1",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: SMAW dominates Philippine field work and TESDA certification pathways. When a question specifies welding a structural connection on-site, assume SMAW unless otherwise stated. For shop fabrication or high-volume work, consider GMAW. Prequalified joints from AWS D1.1 eliminate expensive qualification testing\u2014always check if a proposed joint is prequalified before committing to a custom design.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:65d064eac7b0049a49e17dd3a5295c4406046e3d8fd211a6ba5ddef82db60afc",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "SMAW dominates Philippine field work and TESDA certification pathways. When a question specifies welding a structural connection on-site, assume SMAW unless otherwise stated. For shop fabrication or high-volume work, consider GMAW. Prequalified joints from AWS D1.1 eliminate expensive qualification testing\u2014always check if a proposed joint is prequalified before committing to a custom design.",
+      "children_text": "SMAW dominates Philippine field work and TESDA certification pathways. When a question specifies welding a structural connection on-site, assume SMAW unless otherwise stated. For shop fabrication or high-volume work, consider GMAW. Prequalified joints from AWS D1.1 eliminate expensive qualification testing\u2014always check if a proposed joint is prequalified before committing to a custom design.",
+      "start_offset": 11266,
+      "end_offset": 11671,
+      "line_start": 131,
+      "line_end": 131,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Confusing Weld Symbol Sides\" body=\"A designer draws a fillet weld symbol on the reference line without clarifying whether it applies to the arrow side or other side. The fabricator welds the wrong side, requiring costly rework. Always clarify weld symbol sides, especially in lap joints and corner joints where both sides may require different weld sizes.\" />",
+      "raw_hash": "sha256:c869a0af11e4e1880d099eac33fde30f3f2aaaddae3289e2b24283757221fddb",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Confusing Weld Symbol Sides\", body=\"A designer draws a fillet weld symbol on the reference line without clarifying whether it applies to the arrow side or other side. The fabricator welds the wrong side, requiring costly rework. Always clarify weld symbol sides, especially in lap joints and corner joints where both sides may require different weld sizes.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4e4c9a4a90df6340963419a6e94d645b0283884513305a5c98cb7032a6c04d34",
+      "props": {
+        "title": "Confusing Weld Symbol Sides",
+        "body": "A designer draws a fillet weld symbol on the reference line without clarifying whether it applies to the arrow side or other side. The fabricator welds the wrong side, requiring costly rework. Always clarify weld symbol sides, especially in lap joints and corner joints where both sides may require different weld sizes."
+      },
+      "props_json": {
+        "title": "Confusing Weld Symbol Sides",
+        "body": "A designer draws a fillet weld symbol on the reference line without clarifying whether it applies to the arrow side or other side. The fabricator welds the wrong side, requiring costly rework. Always clarify weld symbol sides, especially in lap joints and corner joints where both sides may require different weld sizes."
+      },
+      "props_text": "title=\"Confusing Weld Symbol Sides\" body=\"A designer draws a fillet weld symbol on the reference line without clarifying whether it applies to the arrow side or other side. The fabricator welds the wrong side, requiring costly rework. Always clarify weld symbol sides, especially in lap joints and corner joints where both sides may require different weld sizes.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 11693,
+      "end_offset": 12076,
+      "line_start": 135,
+      "line_end": 135,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Specifying Non-Prequalified Joints Without Testing\" body=\"An engineer proposes a CJP groove weld configuration that falls outside AWS D1.1 prequalified parameters (e.g., unusual bevel angle or root opening). Without explicit qualification testing, the weld may not meet strength requirements. Always reference prequalified joints unless custom qualification is budgeted and scheduled.\" />",
+      "raw_hash": "sha256:8ad2d09d9fe4a28024fb013ef4c147e2630dcad777645bd1f4b700f04c01810c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Specifying Non-Prequalified Joints Without Testing\", body=\"An engineer proposes a CJP groove weld configuration that falls outside AWS D1.1 prequalified parameters (e.g., unusual bevel angle or root opening). Without explicit qualification testing, the weld may not meet strength requirements. Always reference prequalified joints unless custom qualification is budgeted and scheduled.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:de81f4bd3dbc3bd2a723ea4e13e8d76830f39594efbef7ef43ec10e1aa84b0a8",
+      "props": {
+        "title": "Specifying Non-Prequalified Joints Without Testing",
+        "body": "An engineer proposes a CJP groove weld configuration that falls outside AWS D1.1 prequalified parameters (e.g., unusual bevel angle or root opening). Without explicit qualification testing, the weld may not meet strength requirements. Always reference prequalified joints unless custom qualification is budgeted and scheduled."
+      },
+      "props_json": {
+        "title": "Specifying Non-Prequalified Joints Without Testing",
+        "body": "An engineer proposes a CJP groove weld configuration that falls outside AWS D1.1 prequalified parameters (e.g., unusual bevel angle or root opening). Without explicit qualification testing, the weld may not meet strength requirements. Always reference prequalified joints unless custom qualification is budgeted and scheduled."
+      },
+      "props_text": "title=\"Specifying Non-Prequalified Joints Without Testing\" body=\"An engineer proposes a CJP groove weld configuration that falls outside AWS D1.1 prequalified parameters (e.g., unusual bevel angle or root opening). Without explicit qualification testing, the weld may not meet strength requirements. Always reference prequalified joints unless custom qualification is budgeted and scheduled.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 12078,
+      "end_offset": 12490,
+      "line_start": 137,
+      "line_end": 137,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList items={[\"Assuming all four processes (SMAW, GMAW, GTAW, FCAW) are interchangeable\u2014each has distinct advantages and limitations. SMAW is field-portable; GMAW is fast; GTAW yields best quality; FCAW handles thick material outdoors.\", \"Omitting preheat temperature for thick-section structural steel in cool weather\u2014carbon steel thicker than 25 mm typically requires preheating (per AWS D1.1) to prevent cold cracking. Philippine rainy seasons may necessitate preheat even for moderate thicknesses.\", \"Relying on visual inspection alone for critical connections\u2014specify UT or MT spot checks for high-rise moment-resisting frames, bridges, and suspension systems. Visual inspection misses internal defects like lack of fusion and internal porosity.\", \"Failing to account for Philippine welding certifications\u2014TESDA NC II is the foundational qualification. Fabricators must employ certified welders per NSCP 2015; specifying processes outside TESDA-certified scopes risks non-compliance.\"]} />",
+      "raw_hash": "sha256:daabc8fd374bef6da6fd9c17d0971c67541414ad06b21dc95ad4f43f1b90c5c5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[\\\"Assuming all four processes (SMAW, GMAW, GTAW, FCAW) are interchangeable\u2014each has distinct advantages and limitations. SMAW is field-portable; GMAW is fast; GTAW yields best quality; FCAW handles thick material outdoors.\\\", \\\"Omitting preheat temperature for thick-section structural steel in cool weather\u2014carbon steel thicker than 25 mm typically requires preheating (per AWS D1.1) to prevent cold cracking. Philippine rainy seasons may necessitate preheat even for moderate thicknesses.\\\", \\\"Relying on visual inspection alone for critical connections\u2014specify UT or MT spot checks for high-rise moment-resisting frames, bridges, and suspension systems. Visual inspection misses internal defects like lack of fusion and internal porosity.\\\", \\\"Failing to account for Philippine welding certifications\u2014TESDA NC II is the foundational qualification. Fabricators must employ certified welders per NSCP 2015; specifying processes outside TESDA-certified scopes risks non-compliance.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9ae784912af1e0184c5f6d35d38d39b2817067aaa0f2067477aa07370619ab72",
+      "props": {
+        "items": "{[\"Assuming all four processes (SMAW, GMAW, GTAW, FCAW) are interchangeable\u2014each has distinct advantages and limitations. SMAW is field-portable; GMAW is fast; GTAW yields best quality; FCAW handles thick material outdoors.\", \"Omitting preheat temperature for thick-section structural steel in cool weather\u2014carbon steel thicker than 25 mm typically requires preheating (per AWS D1.1) to prevent cold cracking. Philippine rainy seasons may necessitate preheat even for moderate thicknesses.\", \"Relying on visual inspection alone for critical connections\u2014specify UT or MT spot checks for high-rise moment-resisting frames, bridges, and suspension systems. Visual inspection misses internal defects like lack of fusion and internal porosity.\", \"Failing to account for Philippine welding certifications\u2014TESDA NC II is the foundational qualification. Fabricators must employ certified welders per NSCP 2015; specifying processes outside TESDA-certified scopes risks non-compliance.\"]}"
+      },
+      "props_json": {
+        "items": "{[\"Assuming all four processes (SMAW, GMAW, GTAW, FCAW) are interchangeable\u2014each has distinct advantages and limitations. SMAW is field-portable; GMAW is fast; GTAW yields best quality; FCAW handles thick material outdoors.\", \"Omitting preheat temperature for thick-section structural steel in cool weather\u2014carbon steel thicker than 25 mm typically requires preheating (per AWS D1.1) to prevent cold cracking. Philippine rainy seasons may necessitate preheat even for moderate thicknesses.\", \"Relying on visual inspection alone for critical connections\u2014specify UT or MT spot checks for high-rise moment-resisting frames, bridges, and suspension systems. Visual inspection misses internal defects like lack of fusion and internal porosity.\", \"Failing to account for Philippine welding certifications\u2014TESDA NC II is the foundational qualification. Fabricators must employ certified welders per NSCP 2015; specifying processes outside TESDA-certified scopes risks non-compliance.\"]}"
+      },
+      "props_text": "items={[\"Assuming all four processes (SMAW, GMAW, GTAW, FCAW) are interchangeable\u2014each has distinct advantages and limitations. SMAW is field-portable; GMAW is fast; GTAW yields best quality; FCAW handles thick material outdoors.\", \"Omitting preheat temperature for thick-section structural steel in cool weather\u2014carbon steel thicker than 25 mm typically requires preheating (per AWS D1.1) to prevent cold cracking. Philippine rainy seasons may necessitate preheat even for moderate thicknesses.\", \"Relying on visual inspection alone for critical connections\u2014specify UT or MT spot checks for high-rise moment-resisting frames, bridges, and suspension systems. Visual inspection misses internal defects like lack of fusion and internal porosity.\", \"Failing to account for Philippine welding certifications\u2014TESDA NC II is the foundational qualification. Fabricators must employ certified welders per NSCP 2015; specifying processes outside TESDA-certified scopes risks non-compliance.\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 12492,
+      "end_offset": 13497,
+      "line_start": 139,
+      "line_end": 139,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:4af739548f5eb392206eb8a499f4c60428784ef95e3061021669b984fb14c76b"
+}

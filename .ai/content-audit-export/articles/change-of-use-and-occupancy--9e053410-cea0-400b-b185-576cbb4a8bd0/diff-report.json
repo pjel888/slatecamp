@@ -1,0 +1,43 @@
+{
+  "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+  "slug": "change-of-use-and-occupancy",
+  "generated_at": "2026-05-03T07:53:52.361Z",
+  "old_hash": "sha256:08cdcce4406b78c96d47007b807a451b509bbf0688d94f77ce1f99465c1c213a",
+  "new_hash": "sha256:31ccba47cfc2721a6abdb911b777a4851dd2889312f824f2d8ec71b87d67d5d6",
+  "original_hash": "sha256:08cdcce4406b78c96d47007b807a451b509bbf0688d94f77ce1f99465c1c213a",
+  "normalized_hash": "sha256:ca064b631491b8a9679e2654c35d00ba8a1ae53a16317b55cb1eb4c7b7d0a2db",
+  "candidate_hash": "sha256:31ccba47cfc2721a6abdb911b777a4851dd2889312f824f2d8ec71b87d67d5d6",
+  "changed": true,
+  "changed_line_count": 312,
+  "inserted_line_count": 24,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 8,
+  "ui_blocks_candidate_count": 6,
+  "ui_blocks_changed_count": 2,
+  "ui_blocks_count": 8,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 6,
+  "changed_text_summary": {
+    "changed": 312,
+    "inserted": 24,
+    "deleted": 0,
+    "original_line_count": 288,
+    "candidate_line_count": 312
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002"
+    ],
+    "changed_count": 2
+  },
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate is missing 2 preserved UI block(s)."
+  ],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Unsafe: Candidate is missing 2 preserved UI block(s)."
+}

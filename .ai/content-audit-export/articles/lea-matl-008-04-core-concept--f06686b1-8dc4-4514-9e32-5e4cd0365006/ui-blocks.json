@@ -1,0 +1,147 @@
+{
+  "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+  "slug": "lea-matl-008-04-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:44.179Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:6db352bb1df94d3a705d8d7d32c76e1b6348ca593f04a990f4a718ec83533156",
+  "normalized_content_hash": "07cdb469f3a7027815e7867059c1cd1013cf9aff8bef71f9e0737153f916abbf",
+  "ui_block_count": 5,
+  "total_blocks": 5,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memory aid: \"AAMA Gold Label = \u22640.30 cfm air leakage + \u226594 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"</Tip>",
+      "raw_hash": "sha256:9f822a618ab495f04105ba3eb8a4ea834267566bfe7780c9d8533e23b4de2d67",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: \"AAMA Gold Label = \u22640.30 cfm air leakage + \u226594 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e1ea8146108458108878d48702ceaaddbc5106c6a32c3f53ca0a0f5ce7dedfc5",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memory aid: \"AAMA Gold Label = \u22640.30 cfm air leakage + \u226594 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"",
+      "children_text": "Memory aid: \"AAMA Gold Label = \u22640.30 cfm air leakage + \u226594 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"",
+      "start_offset": 6693,
+      "end_offset": 6915,
+      "line_start": 45,
+      "line_end": 45,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Specifying standard (non-Gold Label) AAMA windows for a typhoon-zone building, assuming AAMA certification is sufficient regardless of grade.\" correction=\"AAMA has multiple grades; Gold Label is the highest. Standard windows have lower structural resistance (less than 94 mph) and higher air leakage (greater than 0.30 cfm), making them unsuitable for typhoon zones.\" />",
+      "raw_hash": "sha256:a55aa3bb10363099d82d11550ace22d968768d43b02c94a9bc08fa6d51e92265",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Specifying standard (non-Gold Label) AAMA windows for a typhoon-zone building, assuming AAMA certification is sufficient regardless of grade.\", correction=\"AAMA has multiple grades; Gold Label is the highest. Standard windows have lower structural resistance (less than 94 mph) and higher air leakage (greater than 0.30 cfm), making them unsuitable for typhoon zones.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:0675ddfa85b4798597b5c55127997d5f360f291812771662bf8bd40c2611d26c",
+      "props": {
+        "mistake": "Specifying standard (non-Gold Label) AAMA windows for a typhoon-zone building, assuming AAMA certification is sufficient regardless of grade.",
+        "correction": "AAMA has multiple grades; Gold Label is the highest. Standard windows have lower structural resistance (less than 94 mph) and higher air leakage (greater than 0.30 cfm), making them unsuitable for typhoon zones."
+      },
+      "props_json": {
+        "mistake": "Specifying standard (non-Gold Label) AAMA windows for a typhoon-zone building, assuming AAMA certification is sufficient regardless of grade.",
+        "correction": "AAMA has multiple grades; Gold Label is the highest. Standard windows have lower structural resistance (less than 94 mph) and higher air leakage (greater than 0.30 cfm), making them unsuitable for typhoon zones."
+      },
+      "props_text": "mistake=\"Specifying standard (non-Gold Label) AAMA windows for a typhoon-zone building, assuming AAMA certification is sufficient regardless of grade.\" correction=\"AAMA has multiple grades; Gold Label is the highest. Standard windows have lower structural resistance (less than 94 mph) and higher air leakage (greater than 0.30 cfm), making them unsuitable for typhoon zones.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6937,
+      "end_offset": 7333,
+      "line_start": 49,
+      "line_end": 49,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.\" correction=\"Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated.\" />",
+      "raw_hash": "sha256:4e0c658c79820dbcc06c156aed6956e560fd66160157a0a613556457e3781fe3",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.\", correction=\"Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:6ab900832bbc65bbfaa0c2d9a32446d41dc9a3b21123168b759d716a01c15153",
+      "props": {
+        "mistake": "Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.",
+        "correction": "Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated."
+      },
+      "props_json": {
+        "mistake": "Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.",
+        "correction": "Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated."
+      },
+      "props_text": "mistake=\"Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.\" correction=\"Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7335,
+      "end_offset": 7705,
+      "line_start": 51,
+      "line_end": 51,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Omitting weatherstripping to reduce cost, assuming standard window frames provide adequate sealing.\" correction=\"Weatherstripping reduces air leakage by 30-50 percent and prevents water infiltration. Omitting it causes high HVAC loads and rain intrusion during monsoons.\" />",
+      "raw_hash": "sha256:65fa0ee28b04a8ade5b3eed0f4c2124b2e25c11c190121cca5088ca74ebbe0d4",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Omitting weatherstripping to reduce cost, assuming standard window frames provide adequate sealing.\", correction=\"Weatherstripping reduces air leakage by 30-50 percent and prevents water infiltration. Omitting it causes high HVAC loads and rain intrusion during monsoons.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:1fb4e11de2b7cf7c7fe9d72188e1056a8c981b460b17974fabe7df708bb18c55",
+      "props": {
+        "mistake": "Omitting weatherstripping to reduce cost, assuming standard window frames provide adequate sealing.",
+        "correction": "Weatherstripping reduces air leakage by 30-50 percent and prevents water infiltration. Omitting it causes high HVAC loads and rain intrusion during monsoons."
+      },
+      "props_json": {
+        "mistake": "Omitting weatherstripping to reduce cost, assuming standard window frames provide adequate sealing.",
+        "correction": "Weatherstripping reduces air leakage by 30-50 percent and prevents water infiltration. Omitting it causes high HVAC loads and rain intrusion during monsoons."
+      },
+      "props_text": "mistake=\"Omitting weatherstripping to reduce cost, assuming standard window frames provide adequate sealing.\" correction=\"Weatherstripping reduces air leakage by 30-50 percent and prevents water infiltration. Omitting it causes high HVAC loads and rain intrusion during monsoons.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7707,
+      "end_offset": 8007,
+      "line_start": 53,
+      "line_end": 53,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Specifying sliding windows in typhoon zones; they do not shed rain as effectively as awning or casement windows\", \"Using standard steel hardware in coastal areas; stainless steel or coated aluminum is required to resist salt spray corrosion\", \"Neglecting to account for local wind speeds; some Philippine regions experience 150+ mph gusts, requiring upgraded specifications\"]} />",
+      "raw_hash": "sha256:587d86c0e5e913ba58da2a8d90af032edbaafda8c55c47e462c67b93eda4d437",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Specifying sliding windows in typhoon zones; they do not shed rain as effectively as awning or casement windows\\\", \\\"Using standard steel hardware in coastal areas; stainless steel or coated aluminum is required to resist salt spray corrosion\\\", \\\"Neglecting to account for local wind speeds; some Philippine regions experience 150+ mph gusts, requiring upgraded specifications\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:673395936c27ea3c2165349f89c5242b41ac13fb0ab15bcdcc0c57b87e061b23",
+      "props": {
+        "mistakes": "{[\"Specifying sliding windows in typhoon zones; they do not shed rain as effectively as awning or casement windows\", \"Using standard steel hardware in coastal areas; stainless steel or coated aluminum is required to resist salt spray corrosion\", \"Neglecting to account for local wind speeds; some Philippine regions experience 150+ mph gusts, requiring upgraded specifications\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Specifying sliding windows in typhoon zones; they do not shed rain as effectively as awning or casement windows\", \"Using standard steel hardware in coastal areas; stainless steel or coated aluminum is required to resist salt spray corrosion\", \"Neglecting to account for local wind speeds; some Philippine regions experience 150+ mph gusts, requiring upgraded specifications\"]}"
+      },
+      "props_text": "mistakes={[\"Specifying sliding windows in typhoon zones; they do not shed rain as effectively as awning or casement windows\", \"Using standard steel hardware in coastal areas; stainless steel or coated aluminum is required to resist salt spray corrosion\", \"Neglecting to account for local wind speeds; some Philippine regions experience 150+ mph gusts, requiring upgraded specifications\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8009,
+      "end_offset": 8417,
+      "line_start": 55,
+      "line_end": 55,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:b55c9cfed87c3ef7ebc0e9721ba7db376e609ec82cf77b0db54f06c399e2325e"
+}

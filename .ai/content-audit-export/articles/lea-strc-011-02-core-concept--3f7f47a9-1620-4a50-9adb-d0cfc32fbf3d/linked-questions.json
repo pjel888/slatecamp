@@ -1,0 +1,508 @@
+{
+  "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:29cc6d6b2453258d2ad6ad3c8033e05016f06cc9b6efb0102f41b03c8d10c3f8",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2ccdc921-cd19-4a4f-99f6-5568c428a3df",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "A shallow foundation is defined by which of the following criteria?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any footing placed less than 5 m below the ground surface, typically used for light structures"
+        },
+        {
+          "id": "b",
+          "text": "A footing with depth-to-width ratio Df/B < 1, placed typically ≤ 3 m below grade, transferring load via direct bearing pressure on soil immediately below the footing."
+        },
+        {
+          "id": "c",
+          "text": "A footing that uses surface preparation and compaction, ensuring stability without deep excavation"
+        },
+        {
+          "id": "d",
+          "text": "Any foundation that does not require pile driving or drilling, suitable for stable soil conditions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Shallow foundations are characterized by Df/B < 1 (depth much less than width) and depths typically ≤ 3 m. Load is transferred by direct bearing pressure on soil at or near the footing base. This is the fundamental distinction from deep foundations.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Foundation Design)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d433b17a42749628dc2ea860f5586c68d5cfc889da4f5fa831990ce6a07c504f"
+    },
+    {
+      "question_id": "158cce46-3a76-4e5c-bb8c-c25dc6a855b3",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "A strip footing (wall footing) runs 50 m along a building facade, carrying a uniform wall load. Compare the settlement behavior of this strip footing to an isolated footing under a single column of equal load intensity (load per meter).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Strip and isolated footings settle identically; geometry has no effect, as both are subject to the same soil conditions and load intensity."
+        },
+        {
+          "id": "b",
+          "text": "An isolated footing settles more because load is concentrated at a point. A strip footing distributes load linearly, reducing settlement concentration and causing more uniform subsidence along the wall. Settlement is calculated as continuous, not point-concentrated."
+        },
+        {
+          "id": "c",
+          "text": "A strip footing settles more because it is longer, which increases the potential for differential settlement along its length."
+        },
+        {
+          "id": "d",
+          "text": "Settlement behavior is independent of footing geometry; it depends only on soil bearing capacity, assuming uniform soil conditions across the site."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "An isolated footing concentrates load in a small area, causing localized stress concentration and differential settlement (higher beneath the footing center, lower at edges). A strip footing distributes load continuously over length, producing more uniform stress distribution and more uniform settlement profile. Strip footing settlement is calculated as a continuous problem; isolated footing settlement requires integration over the footing area. The strip footing is more favorable from a settlement standpoint.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Strip and Isolated Footings); Bowles (1996); Coduto (2001)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e6544a88a590bc64761fd51d67015e9bbd845790d8819f1ea1f25ef6068e913d"
+    },
+    {
+      "question_id": "84d196f4-17c5-45f9-81c2-e06e104d5ecc",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "Explain the difference between a deep foundation and a shallow foundation in terms of load transfer mechanism and when each is employed.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deep foundations are deeper; shallow foundations are shallower. Load transfer is identical, which is a common misconception."
+        },
+        {
+          "id": "b",
+          "text": "Shallow foundations transfer load via direct bearing pressure on soil at/near the footing base (Df ≤ 2 m, Df/B < 1). Deep foundations transfer load via friction along the shaft or bearing at depth (Df > 3 m, often much deeper). Shallow: firm soil exists nearby. Deep: firm soil is distant or absent."
+        },
+        {
+          "id": "c",
+          "text": "Deep foundations are always stronger than shallow; shallow should never be used, which is not accurate as both have specific applications."
+        },
+        {
+          "id": "d",
+          "text": "Shallow foundations transfer load at depth; deep foundations transfer load at the surface, which is incorrect as it reverses the actual mechanisms."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Load transfer mechanism is the fundamental distinction. Shallow foundations push load straight down through direct bearing. Deep foundations hang load via friction or grip a distant firm layer with the tip. Shallow is viable when firm soil is close (< 2–3 m). Deep is mandatory when firm soil is far or absent, which is the typical condition in deep alluvial deposits.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Foundation Classification)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:441e01cd08e2688c30e5181df82adb3bf4469e28797aedd638be6a9fed2988a0"
+    },
+    {
+      "question_id": "9655dccc-c302-4c29-933c-f4162de3a642",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "Compare a mat (raft) foundation to a system of isolated footings for a 16-column building. Which statement best captures the advantage of the mat over isolated footings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isolated footings are always cheaper; mats should be used only for aesthetic reasons, not structural benefits"
+        },
+        {
+          "id": "b",
+          "text": "A mat foundation is a single continuous reinforced concrete slab that distributes load across the entire footprint, reducing differential settlement and allowing design on marginal soils where isolated footings would be uneconomical or unsafe."
+        },
+        {
+          "id": "c",
+          "text": "Isolated footings provide faster construction because they are smaller and require less material"
+        },
+        {
+          "id": "d",
+          "text": "Mats eliminate all settlement; isolated footings always settle significantly, leading to potential structural issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A mat foundation is a unified slab that distributes loads from all columns across a large area, minimizing pressure variations and differential settlement. On marginal soils or heterogeneous sites, mats allow a lower, more uniform pressure that would be unachievable with 16 separate isolated footings. This is the key advantage, especially in soft clay or variable bearing soils.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Mat Foundation)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3defb4b85a3ca1b0e379d53be09c43f19e726f0644183760a187e4b9ea5598ba"
+    },
+    {
+      "question_id": "5b6d1ddf-e0f3-4dd2-87f2-831827049eff",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "A combined footing supports two columns 6 m apart. Explain the purpose of a combined footing and distinguish it from a mat foundation.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A combined footing and mat are the same; naming is arbitrary, with no functional distinction between the two"
+        },
+        {
+          "id": "b",
+          "text": "A combined footing is a single reinforced concrete slab supporting 2–4 aligned columns, used to reduce eccentric loading and control differential settlement between the two columns. A mat is a large slab covering many columns (entire footprint), providing broader load distribution."
+        },
+        {
+          "id": "c",
+          "text": "A combined footing is always cheaper than two isolated footings, offering a cost-effective solution for certain projects"
+        },
+        {
+          "id": "d",
+          "text": "Combined footings are used for lateral bracing; mats are used for bearing, each serving distinct structural purposes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A combined footing ties two (or more) columns together with a single reinforced concrete slab, reducing eccentric loading and ensuring uniform settlement beneath the two columns. A mat is a similar slab but covers many columns (or the entire footprint), distributing load across a much larger area. Combined footings are intermediate solutions; mats are comprehensive load-spreading systems.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Combined and Mat Foundations)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e9fb49590bab9c417562d27ceb755ec290cb31b378f6912888a0de29915c42d"
+    },
+    {
+      "question_id": "fb83458b-d990-4b58-bd7f-4d2b25de3fc5",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "A 3-story low-cost residential building (500 kN total weight) is designed on a site with compressible clay 4 m deep and an excavation area of 200 m². The soil weight of excavated material is estimated at 4000 kN (20 kN/m³ × 200 m² × 1 m avg depth). Determine if a floating foundation is viable for this building and calculate the net stress increase (or decrease) at foundation level.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Floating foundation is not viable; the structure is too heavy (500 kN > typical floating building limits), and additional measures are required to ensure stability."
+        },
+        {
+          "id": "b",
+          "text": "Floating foundation is viable. Net stress = (500 kN − 4000 kN) / 200 m² = −17.5 kN/m². The negative value indicates that the excavation weight exceeds structure weight, creating a net _reduction_ in stress. This is excellent for minimizing settlement."
+        },
+        {
+          "id": "c",
+          "text": "Floating foundation is viable. Net stress = (500 kN + 4000 kN) / 200 m² = 22.5 kN/m². Stress increases, so floating is ineffective, and alternative foundation solutions should be considered."
+        },
+        {
+          "id": "d",
+          "text": "Floating foundation is impossible; stress always increases under buildings, regardless of excavation or soil conditions."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A floating foundation is viable when excavation weight ≥ structure weight. Here, excavation (4000 kN) >> structure (500 kN). Net change in stress = (500 − 4000) / 200 = −17.5 kN/m², meaning stress is actually _reduced_ below the original ground stress. This is ideal for minimal settlement. The building is literally lighter than the soil it removes, so consolidation is minimal or even rebounds slightly occur. This demonstrates the floating foundation principle perfectly.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Floating Foundation Design)",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1995b9ae000286bf0e8291a88197b5589a930fbd8955babb422a6cc77061a187"
+    },
+    {
+      "question_id": "ed656ad5-af59-47d2-b0fd-9279f449f71c",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "A mixed-use development includes a 15-story tower and a 2-story retail podium on the same site with variable soil conditions: soft clay (0–20 m), stiff clay (20–40 m), and sand (40 m+). The tower and podium loads are very different. Propose a foundation strategy that accommodates both structures and justify.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use shallow footings for both; cost is minimized, but differential settlement may occur due to varying loads and soil conditions"
+        },
+        {
+          "id": "b",
+          "text": "Use deep piles for both; this avoids all differentiation, but may be unnecessarily costly for the podium"
+        },
+        {
+          "id": "c",
+          "text": "Tower: deep pile foundation to firm sand at 40 m (or friction piles in stiff clay), bypassing soft clay. Podium: shallow footing on compacted fill or intermediate-depth footing in stiff clay (20–25 m), if bearing capacity is adequate. Separate foundations allow each structure to be designed for its own load and settlement tolerance. Differential settlement between tower and podium is managed by proper design depth selection and settlement analysis."
+        },
+        {
+          "id": "d",
+          "text": "Combine both structures under a unified mat; it is always the best solution, though it may not address differential settlement effectively"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Different structures with different loads and settlement tolerances require different foundation depths and types. The tower's heavy load and strict tolerance mandate piles to firm strata or deep friction piles. The lighter podium can be shallower (footing in stiff clay at 20–25 m depth) if bearing capacity allows. This strategy optimizes cost and performance. Differential settlement between tower and podium is a design consideration (isolation, expansion joints, structural details) but is manageable with proper planning.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Foundation Design Strategies)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:36a90dba666bec0ab29e73bba815f469799dd039b4e339b2909b53918ec002fc"
+    },
+    {
+      "question_id": "955ac82c-c550-4ea5-85d3-c42dd66215d9",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "An engineer is designing a 10-story office building on a site with firm soil at shallow depth (bearing capacity 300 kN/m²). Shallow footing design is feasible from a bearing capacity standpoint, but settlement analysis shows differential settlement of 150 mm between corner columns and center columns. Recommend a revised foundation approach and justify.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proceed with isolated footings; 150 mm settlement is acceptable for all buildings, including those with flexible structural systems"
+        },
+        {
+          "id": "b",
+          "text": "Reduce building height to decrease load; settlement will reduce proportionally, though this may not be feasible for the intended use"
+        },
+        {
+          "id": "c",
+          "text": "Replace isolated footings with a mat foundation. A mat provides stiffness and reduces differential settlement by distributing load uniformly across the footprint. For an office building where differential settlement > 80–100 mm can cause cracking and functional issues, a mat is superior despite higher cost."
+        },
+        {
+          "id": "d",
+          "text": "Increase footing width indefinitely; width has no effect on settlement, but may affect other design parameters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "150 mm differential settlement is excessive for a 10-story office building; it causes cracking, misalignment of doors/windows, structural distress, and functional problems. Although shallow bearing capacity is adequate, settlement control is inadequate. A mat foundation unifies all columns, reduces differential settlement significantly, and is the correct solution. Cost is justified by avoiding cracking, repairs, and functional issues.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Settlement Control); Bowles (1996)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5e5dc724ada1b7411dc7caa654bdda38c67e79229b47733c1f1a11607fddc62f"
+    },
+    {
+      "question_id": "1432eed5-ec63-4001-9adb-79a627965dcd",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "A floating foundation design aims to minimize settlement. Explain the principle of a floating foundation and state the condition required for viability.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Floating foundations float on water; they are used for waterfront structures only, where buoyancy can be utilized to support the structure"
+        },
+        {
+          "id": "b",
+          "text": "A floating foundation is a deep mat or plate placed at sufficient depth that the weight of excavated soil removed equals (or nearly equals) the weight of the superstructure. The net stress increase on the soil is minimal, theoretically reducing settlement to near zero. Viability requires: structure is light, soil is deep and compressible, and Df is sufficient to balance excavation and structure weight."
+        },
+        {
+          "id": "c",
+          "text": "Floating foundations are ordinary mat foundations with no specific design criteria, typically used in standard construction without special considerations"
+        },
+        {
+          "id": "d",
+          "text": "Floating foundations prevent all settlement; they require no settlement calculations, as they are designed to be completely stable under all conditions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A floating foundation is designed such that the weight of excavated soil roughly equals the weight of the structure. This reduces the _net_ pressure increase on the soil beneath the foundation to near zero, minimizing consolidation settlement. Floating foundations work only for light structures (low-rise residential, small buildings) and are practical in compressible clay where excavation weight is substantial. Very tall or heavy structures cannot float effectively.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Floating Foundation Design)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd898289e367ded5904d29c456e172784d61c74b2b4118553440d3d243044465"
+    },
+    {
+      "question_id": "ed74d187-6ab5-435c-815e-9857039ae820",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
+      "text": "A building site has soft clay to 35 m depth with bearing capacity 60 kN/m² at shallow depth. Name the suitable foundation type and explain why shallow footings are not viable.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shallow footing; bearing capacity 60 kN/m² is acceptable for any building, though it may lead to excessive settlement in soft clay"
+        },
+        {
+          "id": "b",
+          "text": "Shallow footing with deep soil improvement (grouting); cost is equivalent to deep piles, but may not provide adequate long-term stability"
+        },
+        {
+          "id": "c",
+          "text": "Deep pile foundation; soft clay offers no firm shallow bearing stratum, and friction piles develop capacity over the 35 m shaft. Bearing capacity 60 kN/m² is too low for economical wide footings, and settlement would be excessive and time-dependent."
+        },
+        {
+          "id": "d",
+          "text": "Floating foundation; the building is floating on the soft clay without settlement, though this is rarely practical for large structures"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "With 35 m of soft clay and bearing capacity only 60 kN/m², shallow footings would require very large areas (footing width B >> footing depth Df) to distribute load, making them uneconomical. Differential settlement would be significant and uncontrolled. Piles or caissons are mandatory. Friction piles develop capacity along the 35 m depth. This is the standard condition in deep alluvial deposits like Metro Manila.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Deep Foundations)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a407206dca9b58de95d8df2a658aa75bb1e2b9bca821aea14bea12ec7c7193c8"
+    }
+  ]
+}

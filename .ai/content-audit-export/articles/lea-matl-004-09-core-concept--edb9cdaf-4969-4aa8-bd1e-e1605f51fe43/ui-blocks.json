@@ -1,0 +1,119 @@
+{
+  "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+  "slug": "lea-matl-004-09-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:44.085Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:31d6737958a04fd43ec12f22de278999efa07e5e1960174b64c8b98ee1ff83aa",
+  "normalized_content_hash": "5eed9542b074e57ee6e1707fb7cfcddca512b281e1ddacebe367ec3daedb919b",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Tower cranes dominate high-rise construction in Philippine cities due to efficiency and vertical reach. For excavation, match excavator bucket size to truck haul capacity (avoid idle time). Concrete pumps are essential above 5 stories; pump reach must be verified to cover all placement areas. Equipment rental costs are significant; plan scheduling carefully to minimize idle time.</Tip>",
+      "raw_hash": "sha256:8d0c0925cf7010b4ebac6787cf73df4c80747d973864a76b0057da943ebabaca",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Tower cranes dominate high-rise construction in Philippine cities due to efficiency and vertical reach. For excavation, match excavator bucket size to truck haul capacity (avoid idle time). Concrete pumps are essential above 5 stories; pump reach must be verified to cover all placement areas. Equipment rental costs are significant; plan scheduling carefully to minimize idle time.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e4f214dc204a59ebf3e5037d56526e2406fd16b587c6000ad289e06aed9757ed",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Tower cranes dominate high-rise construction in Philippine cities due to efficiency and vertical reach. For excavation, match excavator bucket size to truck haul capacity (avoid idle time). Concrete pumps are essential above 5 stories; pump reach must be verified to cover all placement areas. Equipment rental costs are significant; plan scheduling carefully to minimize idle time.",
+      "children_text": "Tower cranes dominate high-rise construction in Philippine cities due to efficiency and vertical reach. For excavation, match excavator bucket size to truck haul capacity (avoid idle time). Concrete pumps are essential above 5 stories; pump reach must be verified to cover all placement areas. Equipment rental costs are significant; plan scheduling carefully to minimize idle time.",
+      "start_offset": 7407,
+      "end_offset": 7800,
+      "line_start": 83,
+      "line_end": 83,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Undersized Excavator Delaying Schedule\" body=\"A project hires a 0.5 m\u00b3 backhoe for excavation requiring 5,000 m\u00b3 removal. At 200 m\u00b3/day output, excavation takes 25 days. A 2.0 m\u00b3 excavator would complete in 6\u20138 days. Cost of upgrade is recovered in schedule savings. Always size equipment to match production requirements, not budget minimization.\" />",
+      "raw_hash": "sha256:8f45cf1b446d7e54670452a10cd3699e617c7f83230ff64d2ac9d5f549976d8e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Undersized Excavator Delaying Schedule\", body=\"A project hires a 0.5 m\u00b3 backhoe for excavation requiring 5,000 m\u00b3 removal. At 200 m\u00b3/day output, excavation takes 25 days. A 2.0 m\u00b3 excavator would complete in 6\u20138 days. Cost of upgrade is recovered in schedule savings. Always size equipment to match production requirements, not budget minimization.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:80ea570b9ca3a229242bd312787bf74c83c1e88b5cdf16ff651241156c614ec7",
+      "props": {
+        "title": "Undersized Excavator Delaying Schedule",
+        "body": "A project hires a 0.5 m\u00b3 backhoe for excavation requiring 5,000 m\u00b3 removal. At 200 m\u00b3/day output, excavation takes 25 days. A 2.0 m\u00b3 excavator would complete in 6\u20138 days. Cost of upgrade is recovered in schedule savings. Always size equipment to match production requirements, not budget minimization."
+      },
+      "props_json": {
+        "title": "Undersized Excavator Delaying Schedule",
+        "body": "A project hires a 0.5 m\u00b3 backhoe for excavation requiring 5,000 m\u00b3 removal. At 200 m\u00b3/day output, excavation takes 25 days. A 2.0 m\u00b3 excavator would complete in 6\u20138 days. Cost of upgrade is recovered in schedule savings. Always size equipment to match production requirements, not budget minimization."
+      },
+      "props_text": "title=\"Undersized Excavator Delaying Schedule\" body=\"A project hires a 0.5 m\u00b3 backhoe for excavation requiring 5,000 m\u00b3 removal. At 200 m\u00b3/day output, excavation takes 25 days. A 2.0 m\u00b3 excavator would complete in 6\u20138 days. Cost of upgrade is recovered in schedule savings. Always size equipment to match production requirements, not budget minimization.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7822,
+      "end_offset": 8197,
+      "line_start": 87,
+      "line_end": 87,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Concrete Pump Reach Inadequate for Building Geometry\" body=\"A 20-story tower has irregular floor plan with cantilevers 40 m from the tower core. The specified concrete pump has 35 m horizontal reach, leaving some areas inaccessible. Concrete must be bucketted or conveyed, slowing placement and increasing labor. Verify pump reach against site geometry before specification.\" />",
+      "raw_hash": "sha256:63f7919ed616bb4e7d28cce19f51077b250098b22da30c166172042f07e846cf",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Concrete Pump Reach Inadequate for Building Geometry\", body=\"A 20-story tower has irregular floor plan with cantilevers 40 m from the tower core. The specified concrete pump has 35 m horizontal reach, leaving some areas inaccessible. Concrete must be bucketted or conveyed, slowing placement and increasing labor. Verify pump reach against site geometry before specification.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:1c29c7fa994bf93d0b78bb69e7d5c61ea9aceb27054c354b7a67384d3aa33f1f",
+      "props": {
+        "title": "Concrete Pump Reach Inadequate for Building Geometry",
+        "body": "A 20-story tower has irregular floor plan with cantilevers 40 m from the tower core. The specified concrete pump has 35 m horizontal reach, leaving some areas inaccessible. Concrete must be bucketted or conveyed, slowing placement and increasing labor. Verify pump reach against site geometry before specification."
+      },
+      "props_json": {
+        "title": "Concrete Pump Reach Inadequate for Building Geometry",
+        "body": "A 20-story tower has irregular floor plan with cantilevers 40 m from the tower core. The specified concrete pump has 35 m horizontal reach, leaving some areas inaccessible. Concrete must be bucketted or conveyed, slowing placement and increasing labor. Verify pump reach against site geometry before specification."
+      },
+      "props_text": "title=\"Concrete Pump Reach Inadequate for Building Geometry\" body=\"A 20-story tower has irregular floor plan with cantilevers 40 m from the tower core. The specified concrete pump has 35 m horizontal reach, leaving some areas inaccessible. Concrete must be bucketted or conveyed, slowing placement and increasing labor. Verify pump reach against site geometry before specification.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8199,
+      "end_offset": 8601,
+      "line_start": 89,
+      "line_end": 89,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList items={[\"Underestimating concrete pump cost as part of project\u2014pump rental (PHP 10,000\u201318,000/day) is justified for buildings above 5\u201310 stories; bucket hoisting is slower and more labor-intensive.\", \"Neglecting soil compaction testing\u2014equipment alone does not guarantee specified density. Standard Proctor testing verifies density achievement; under-compacted soil risks foundation settlement.\", \"Staging equipment in constrained site without traffic management\u2014construction equipment movement through populated areas requires traffic control plans, MMDA permits in Manila, and coordination with local governments.\", \"Equipment noise/dust without environmental controls\u2014Philippine urban areas have strict noise ordinances (especially residential zones). Dust suppression and noise barriers are mandatory per DENR and local ordinances.\", \"Failing to account for tower crane setup/dismantling time\u20141\u20132 weeks for installation/removal; this is critical path for schedule. Budget time and costs before project start.\"]} />",
+      "raw_hash": "sha256:0ca0b0a16ae5868a379beea28901520a4a2d173081b96e4c7eaec63eede0237d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[\\\"Underestimating concrete pump cost as part of project\u2014pump rental (PHP 10,000\u201318,000/day) is justified for buildings above 5\u201310 stories; bucket hoisting is slower and more labor-intensive.\\\", \\\"Neglecting soil compaction testing\u2014equipment alone does not guarantee specified density. Standard Proctor testing verifies density achievement; under-compacted soil risks foundation settlement.\\\", \\\"Staging equipment in constrained site without traffic management\u2014construction equipment movement through populated areas requires traffic control plans, MMDA permits in Manila, and coordination with local governments.\\\", \\\"Equipment noise/dust without environmental controls\u2014Philippine urban areas have strict noise ordinances (especially residential zones). Dust suppression and noise barriers are mandatory per DENR and local ordinances.\\\", \\\"Failing to account for tower crane setup/dismantling time\u20141\u20132 weeks for installation/removal; this is critical path for schedule. Budget time and costs before project start.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:94c852d628ea3341df935fe59e10f751adc21e5e8fdfc976bbf03f149beb2968",
+      "props": {
+        "items": "{[\"Underestimating concrete pump cost as part of project\u2014pump rental (PHP 10,000\u201318,000/day) is justified for buildings above 5\u201310 stories; bucket hoisting is slower and more labor-intensive.\", \"Neglecting soil compaction testing\u2014equipment alone does not guarantee specified density. Standard Proctor testing verifies density achievement; under-compacted soil risks foundation settlement.\", \"Staging equipment in constrained site without traffic management\u2014construction equipment movement through populated areas requires traffic control plans, MMDA permits in Manila, and coordination with local governments.\", \"Equipment noise/dust without environmental controls\u2014Philippine urban areas have strict noise ordinances (especially residential zones). Dust suppression and noise barriers are mandatory per DENR and local ordinances.\", \"Failing to account for tower crane setup/dismantling time\u20141\u20132 weeks for installation/removal; this is critical path for schedule. Budget time and costs before project start.\"]}"
+      },
+      "props_json": {
+        "items": "{[\"Underestimating concrete pump cost as part of project\u2014pump rental (PHP 10,000\u201318,000/day) is justified for buildings above 5\u201310 stories; bucket hoisting is slower and more labor-intensive.\", \"Neglecting soil compaction testing\u2014equipment alone does not guarantee specified density. Standard Proctor testing verifies density achievement; under-compacted soil risks foundation settlement.\", \"Staging equipment in constrained site without traffic management\u2014construction equipment movement through populated areas requires traffic control plans, MMDA permits in Manila, and coordination with local governments.\", \"Equipment noise/dust without environmental controls\u2014Philippine urban areas have strict noise ordinances (especially residential zones). Dust suppression and noise barriers are mandatory per DENR and local ordinances.\", \"Failing to account for tower crane setup/dismantling time\u20141\u20132 weeks for installation/removal; this is critical path for schedule. Budget time and costs before project start.\"]}"
+      },
+      "props_text": "items={[\"Underestimating concrete pump cost as part of project\u2014pump rental (PHP 10,000\u201318,000/day) is justified for buildings above 5\u201310 stories; bucket hoisting is slower and more labor-intensive.\", \"Neglecting soil compaction testing\u2014equipment alone does not guarantee specified density. Standard Proctor testing verifies density achievement; under-compacted soil risks foundation settlement.\", \"Staging equipment in constrained site without traffic management\u2014construction equipment movement through populated areas requires traffic control plans, MMDA permits in Manila, and coordination with local governments.\", \"Equipment noise/dust without environmental controls\u2014Philippine urban areas have strict noise ordinances (especially residential zones). Dust suppression and noise barriers are mandatory per DENR and local ordinances.\", \"Failing to account for tower crane setup/dismantling time\u20141\u20132 weeks for installation/removal; this is critical path for schedule. Budget time and costs before project start.\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8603,
+      "end_offset": 9638,
+      "line_start": 91,
+      "line_end": 91,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:6363aecc6888ecb999128f7822a8ffdf7513e167b045b610280967d0d94be4a7"
+}

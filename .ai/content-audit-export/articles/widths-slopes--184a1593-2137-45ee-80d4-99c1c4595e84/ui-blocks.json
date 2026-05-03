@@ -1,0 +1,67 @@
+{
+  "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
+  "slug": "widths-slopes",
+  "normalized_created_at": "2026-05-01T13:33:43.960Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:45cfa45c75154018dccb6ad917d078c9a1032b4c5573f0232c9ff62cdf0e9cc2",
+  "normalized_content_hash": "sha256:0e89fcd21b7365daaad2128d6897d8fc915c3d2f5ce007b684e2f6aaafaa8430",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 7 - Widths and Slopes\">\n\n\nPer BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) \u2014 no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) \u2014 max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: \u22651800 mm in direction of travel.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:5c844cf69a574d7ecca2f9ff32e1a9db3a5e0aa1f0105a427f6b46d01a7394c2",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"bp344\" title=\"BP 344 2024 IRR \u2014 Widths & Slopes\"\n- Text: Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) \u2014 no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) \u2014 max run 10,500 m\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:0fcfd156215b3f537508e6778c69f5bb856a349533f72ce519de2872f04b2983",
+      "props": {
+        "code": "bp344",
+        "title": "BP 344 2024 IRR \u2014 Widths & Slopes"
+      },
+      "props_json": {
+        "code": "bp344",
+        "title": "BP 344 2024 IRR \u2014 Widths & Slopes",
+        "section": "Section 7 - Widths and Slopes"
+      },
+      "props_text": "code=bp344, title=BP 344 2024 IRR \u2014 Widths & Slopes, section=Section 7 - Widths and Slopes",
+      "children_raw": "\n\nPer BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) \u2014 no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) \u2014 max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: \u22651800 mm in direction of travel.\n\n",
+      "children_text": "Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) \u2014 no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) \u2014 max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: \u22651800 mm in direction of travel.",
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Warn",
+      "raw": "<Warn >\n\n1:12 is the MAXIMUM allowable slope, NOT the standard. The exam will present a question stating 'a ramp with 1:12 slope' and ask if it's compliant. The answer depends on context: 1:12 is acceptable ONLY where space constraints prevent 1:15 or 1:20. If the question doesn't mention space constraints, 1:12 may still be technically compliant as a maximum, but 1:20 is the preferred/ideal.\n\n</Warn>",
+      "raw_hash": "sha256:8d822100876300de414e8850a3e3af76e359bd9f44ad4ed2d34b880f83e62d85",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: 1:12 is the MAXIMUM allowable slope, NOT the standard. The exam will present a question stating 'a ramp with 1:12 slope' and ask if it's compliant. The answer depends on context: 1:12 is acceptable ON\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ef6b1023f3eb1aaa27d7dd905b5a7bea07991eebdf4945d9a3aa661674dcae22",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\n1:12 is the MAXIMUM allowable slope, NOT the standard. The exam will present a question stating 'a ramp with 1:12 slope' and ask if it's compliant. The answer depends on context: 1:12 is acceptable ONLY where space constraints prevent 1:15 or 1:20. If the question doesn't mention space constraints, 1:12 may still be technically compliant as a maximum, but 1:20 is the preferred/ideal.\n\n",
+      "children_text": "1:12 is the MAXIMUM allowable slope, NOT the standard. The exam will present a question stating 'a ramp with 1:12 slope' and ask if it's compliant. The answer depends on context: 1:12 is acceptable ONLY where space constraints prevent 1:15 or 1:20. If the question doesn't mention space constraints, 1:12 may still be technically compliant as a maximum, but 1:20 is the preferred/ideal.",
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip >\n\nHandrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together \u2014 a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.\n\n</ExamTip>",
+      "raw_hash": "sha256:2b08b6b22848d60686369e33a0a04c2b3e0871deadcfa9ea91d1c0bee83b39dd",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. Thes\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:cbfa585bf35ef3d93b102d8baddc0bec75925b393a79d2c6642dd3153b295ecf",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\nHandrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together \u2014 a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.\n\n",
+      "children_text": "Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together \u2014 a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.",
+      "status": "new"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:77a9085a5ae17c09e28d8ddf9d500a6e1b0c35d888927cb579d03e14c9b4bb6f"
+}

@@ -1,0 +1,63 @@
+{
+  "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+  "slug": "lea-dsgn-011-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.814Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:f70e647d6cefe1f5f88ce8dae854162999f5d6b769ac6ff61d7d78c0d98f5b1d",
+  "normalized_content_hash": "f70e647d6cefe1f5f88ce8dae854162999f5d6b769ac6ff61d7d78c0d98f5b1d",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\n**Memory aid:** \"3-2-4 rule\" \u2014 Floor-to-floor=**3.0 m** (NBC standard), finished ceiling height\u2265**2.4 m** (habitable space), stairwell headroom\u2265**2.0 m** (accessibility). Always verify FFLs in sections before calculating buildable floor area or checking code compliance.\n</Tip>",
+      "raw_hash": "sha256:56d7f554d19f606175073e2be6faaec16ed9293c378daee2c6c9fd7061c40d4c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory aid:** \"3-2-4 rule\" \u2014 Floor-to-floor=**3.0 m** (NBC standard), finished ceiling height\u2265**2.4 m** (habitable space), stairwell headroom\u2265**2.0 m** (accessibility). Always verify FFLs in sections before calculating buildable floor area or checking code compliance.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:354c5dce40739fe14b3840d7416f3632833707b62b2787b349033b885951805e",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n**Memory aid:** \"3-2-4 rule\" \u2014 Floor-to-floor=**3.0 m** (NBC standard), finished ceiling height\u2265**2.4 m** (habitable space), stairwell headroom\u2265**2.0 m** (accessibility). Always verify FFLs in sections before calculating buildable floor area or checking code compliance.\n",
+      "children_text": "**Memory aid:** \"3-2-4 rule\" \u2014 Floor-to-floor=**3.0 m** (NBC standard), finished ceiling height\u2265**2.4 m** (habitable space), stairwell headroom\u2265**2.0 m** (accessibility). Always verify FFLs in sections before calculating buildable floor area or checking code compliance.",
+      "start_offset": 4818,
+      "end_offset": 5101,
+      "line_start": 57,
+      "line_end": 59,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"ERR-DSGN-009: Assuming floor-to-floor = 2.7 m or 3.5 m instead of the NBC standard 3.0 m. Always verify against the project standard before accepting a section.\",\"Using dashed lines to show visible edges beyond a section cut (should use solid outlines for clarity).\",\"Misaligning fenestration on elevation with the structural grid shown on the floor plan\u2014always cross-reference the two.\",\"Forgetting to label section cut locations on floor plans with clear arrows and matching labels on the section elevation.\",\"Mixing elevation directions (labeling an east-facing elevation as 'Front' without confirming site orientation first).\",\"Failing to show grade line and reference elevation data\u2014sections are meaningless without vertical datum.\",\"Crowding dimension annotations, making it unclear which height corresponds to which floor-to-floor distance.\"]} />",
+      "raw_hash": "sha256:81ec83c18afb0ead51b674817fed56ed9162f32ac0aba29843d06d644035063b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"ERR-DSGN-009: Assuming floor-to-floor = 2.7 m or 3.5 m instead of the NBC standard 3.0 m. Always verify against the project standard before accepting a section.\\\",\\\"Using dashed lines to show visible edges beyond a section cut (should use solid outlines for clarity).\\\",\\\"Misaligning fenestration on elevation with the structural grid shown on the floor plan\u2014always cross-reference the two.\\\",\\\"Forgetting to label section cut locations on floor plans with clear arrows and matching labels on the section elevation.\\\",\\\"Mixing elevation directions (labeling an east-facing elevation as 'Front' without confirming site orientation first).\\\",\\\"Failing to show grade line and reference elevation data\u2014sections are meaningless without vertical datum.\\\",\\\"Crowding dimension annotations, making it unclear which height corresponds to which floor-to-floor distance.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:531b7e1e8d793abda3afe65d63b414f1c8dada1839bb574f0ca16984f9b83c4c",
+      "props": {
+        "mistakes": "{[\"ERR-DSGN-009: Assuming floor-to-floor = 2.7 m or 3.5 m instead of the NBC standard 3.0 m. Always verify against the project standard before accepting a section.\",\"Using dashed lines to show visible edges beyond a section cut (should use solid outlines for clarity).\",\"Misaligning fenestration on elevation with the structural grid shown on the floor plan\u2014always cross-reference the two.\",\"Forgetting to label section cut locations on floor plans with clear arrows and matching labels on the section elevation.\",\"Mixing elevation directions (labeling an east-facing elevation as 'Front' without confirming site orientation first).\",\"Failing to show grade line and reference elevation data\u2014sections are meaningless without vertical datum.\",\"Crowding dimension annotations, making it unclear which height corresponds to which floor-to-floor distance.\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"ERR-DSGN-009: Assuming floor-to-floor = 2.7 m or 3.5 m instead of the NBC standard 3.0 m. Always verify against the project standard before accepting a section.\",\"Using dashed lines to show visible edges beyond a section cut (should use solid outlines for clarity).\",\"Misaligning fenestration on elevation with the structural grid shown on the floor plan\u2014always cross-reference the two.\",\"Forgetting to label section cut locations on floor plans with clear arrows and matching labels on the section elevation.\",\"Mixing elevation directions (labeling an east-facing elevation as 'Front' without confirming site orientation first).\",\"Failing to show grade line and reference elevation data\u2014sections are meaningless without vertical datum.\",\"Crowding dimension annotations, making it unclear which height corresponds to which floor-to-floor distance.\"]}"
+      },
+      "props_text": "mistakes={[\"ERR-DSGN-009: Assuming floor-to-floor = 2.7 m or 3.5 m instead of the NBC standard 3.0 m. Always verify against the project standard before accepting a section.\",\"Using dashed lines to show visible edges beyond a section cut (should use solid outlines for clarity).\",\"Misaligning fenestration on elevation with the structural grid shown on the floor plan\u2014always cross-reference the two.\",\"Forgetting to label section cut locations on floor plans with clear arrows and matching labels on the section elevation.\",\"Mixing elevation directions (labeling an east-facing elevation as 'Front' without confirming site orientation first).\",\"Failing to show grade line and reference elevation data\u2014sections are meaningless without vertical datum.\",\"Crowding dimension annotations, making it unclear which height corresponds to which floor-to-floor distance.\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5123,
+      "end_offset": 6005,
+      "line_start": 63,
+      "line_end": 63,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:f133eb35ba0a1c0845833dd5015c0de54a7b710b9b56b6781261b36b961922a2"
+}

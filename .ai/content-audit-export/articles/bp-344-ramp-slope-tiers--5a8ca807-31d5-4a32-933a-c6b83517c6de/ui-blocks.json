@@ -1,0 +1,89 @@
+{
+  "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "slug": "bp-344-ramp-slope-tiers",
+  "normalized_created_at": "2026-05-03T07:32:00.000Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:eb07c63ded6f4c1400360e11a2bfc221395f3ec7b5070f7d461484dc25a028a1",
+  "normalized_content_hash": "sha256:aa93313b927960464948609dcec3e8ffe42ec4f458e8d0daa7495845ceb2691b",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 7 - Ramps\">\n\n\nThe 2024 BP 344 IRR (Appendix A, Sec 1.2) defines the complete tiered ramp slope system for accessible ramps in the Philippines. PD 1096 (Rule XII) allows ramps as exits with general width requirements, but BP 344 overlays stricter, PWD-specific dimensions \u2014 slope tiers (1:20/1:15/1:12), minimum clear width (1200mm), landing lengths (1800mm), handrail heights (700/900mm dual), and edge protection (100mm). On any accessible route, the stricter BP 344 standard prevails over the more general PD 1096 rule.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:9f85d06d61b0ffe24b2446e8d37002d0d6c16de69ab2374342bad840a791644b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"bp344\"\n- Text: The 2024 BP 344 IRR (Appendix A, Sec 1.2) defines the complete tiered ramp slope system for accessible ramps in the Philippines. PD 1096 (Rule XII) allows ramps as exits with general width requirements, but BP 344 overlays stricter, PWD-specific dimensions \u2014 slope tiers (1:20/1:15/1:12), minimum clear width (1200mm), landing lengths (1800mm), handrail heights (700/900mm dual), and edge protection (100mm). On any accessible route, the stricter BP 344 standard prevails over the more general PD 1096 rule.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:abc123def4567890abc123def4567890abc123def4567890abc123def4567890",
+      "props": {
+        "code": "bp344"
+      },
+      "props_json": {
+        "code": "bp344",
+        "section": "Section 7 - Ramps"
+      },
+      "props_text": "code=bp344, section=Section 7 - Ramps",
+      "children_raw": "\n\nThe 2024 BP 344 IRR (Appendix A, Sec 1.2) defines the complete tiered ramp slope system for accessible ramps in the Philippines. PD 1096 (Rule XII) allows ramps as exits with general width requirements, but BP 344 overlays stricter, PWD-specific dimensions \u2014 slope tiers (1:20/1:15/1:12), minimum clear width (1200mm), landing lengths (1800mm), handrail heights (700/900mm dual), and edge protection (100mm). On any accessible route, the stricter BP 344 standard prevails over the more general PD 1096 rule.\n\n",
+      "children_text": "The 2024 BP 344 IRR (Appendix A, Sec 1.2) defines the complete tiered ramp slope system for accessible ramps in the Philippines. PD 1096 (Rule XII) allows ramps as exits with general width requirements, but BP 344 overlays stricter, PWD-specific dimensions \u2014 slope tiers (1:20/1:15/1:12), minimum clear width (1200mm), landing lengths (1800mm), handrail heights (700/900mm dual), and edge protection (100mm). On any accessible route, the stricter BP 344 standard prevails over the more general PD 1096 rule.",
+      "start_offset": 620,
+      "end_offset": 1144,
+      "line_start": 21,
+      "line_end": 25,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 7.1 - Slope Ratios\">\n\n\nIf the question asks: \"Maximum length of a SINGLE 1:15 accessible ramp run (2024 IRR)?\" \u2192 10.50 m. If it asks: \"At what INTERVAL must landings be provided for a 1:15 ramp?\" \u2192 Every 10.00 m. These two numbers are distinct \u2014 confusing them is a common exam error. For 1:20 (GOLD), the landing interval is every 15.00 m.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:af6f1eab693b88a981ae06765098969f93167cddbaa6cb74a63e94b54fba8d6a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Text: If the question asks: \"Maximum length of a SINGLE 1:15 accessible ramp run (2024 IRR)?\" \u2192 10.50 m. If it asks: \"At what INTERVAL must landings be provided for a 1:15 ramp?\" \u2192 Every 10.00 m. These two numbers are distinct \u2014 confusing them is a common exam error. For 1:20 (GOLD), the landing interval is every 15.00 m.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:def4567890abc123def4567890abc123def4567890abc123def4567890abc123",
+      "props": {},
+      "props_json": {
+        "code": "bp344",
+        "section": "Section 7.1 - Slope Ratios"
+      },
+      "props_text": "code=bp344, section=Section 7.1 - Slope Ratios",
+      "children_raw": "\n\nIf the question asks: \"Maximum length of a SINGLE 1:15 accessible ramp run (2024 IRR)?\" \u2192 10.50 m. If it asks: \"At what INTERVAL must landings be provided for a 1:15 ramp?\" \u2192 Every 10.00 m. These two numbers are distinct \u2014 confusing them is a common exam error. For 1:20 (GOLD), the landing interval is every 15.00 m.\n\n",
+      "children_text": "If the question asks: \"Maximum length of a SINGLE 1:15 accessible ramp run (2024 IRR)?\" \u2192 10.50 m. If it asks: \"At what INTERVAL must landings be provided for a 1:15 ramp?\" \u2192 Every 10.00 m. These two numbers are distinct \u2014 confusing them is a common exam error. For 1:20 (GOLD), the landing interval is every 15.00 m.",
+      "start_offset": 3110,
+      "end_offset": 3550,
+      "line_start": 67,
+      "line_end": 71,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "Warn",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 7.2 - Landing Dimensions\">\n\n\nTrap \u2014 1:12 is NOT the standard maximum slope for new accessible ramps under the 2024 IRR. The amended Appendix A defines 1:20 and 1:15 as the working slopes. 1:12 belongs only to existing building renovations where 1:15 cannot be achieved. Do not select 1:12 as the maximum for new construction in exam questions.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:06f64b3522db1c74be237cc322aa01dc00a3332f3eeb6f3b7e61c9a3472fa87b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Warn\" status=\"new\"]\nExtracted summary:\n- Text: Trap \u2014 1:12 is NOT the standard maximum slope for new accessible ramps under the 2024 IRR. The amended Appendix A defines 1:20 and 1:15 as the working slopes. 1:12 belongs only to existing building renovations where 1:15 cannot be achieved. Do not select 1:12 as the maximum for new construction in exam questions.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:7890abc123def4567890abc123def4567890abc123def4567890abc123def456",
+      "props": {},
+      "props_json": {
+        "code": "bp344",
+        "section": "Section 7.2 - Landing Dimensions"
+      },
+      "props_text": "code=bp344, section=Section 7.2 - Landing Dimensions",
+      "children_raw": "\n\nTrap \u2014 1:12 is NOT the standard maximum slope for new accessible ramps under the 2024 IRR. The amended Appendix A defines 1:20 and 1:15 as the working slopes. 1:12 belongs only to existing building renovations where 1:15 cannot be achieved. Do not select 1:12 as the maximum for new construction in exam questions.\n\n",
+      "children_text": "Trap \u2014 1:12 is NOT the standard maximum slope for new accessible ramps under the 2024 IRR. The amended Appendix A defines 1:20 and 1:15 as the working slopes. 1:12 belongs only to existing building renovations where 1:15 cannot be achieved. Do not select 1:12 as the maximum for new construction in exam questions.",
+      "start_offset": 3550,
+      "end_offset": 3930,
+      "line_start": 73,
+      "line_end": 77,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "status": "new"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b"
+}

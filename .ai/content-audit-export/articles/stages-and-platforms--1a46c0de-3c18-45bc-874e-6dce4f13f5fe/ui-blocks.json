@@ -1,0 +1,102 @@
+{
+  "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+  "slug": "stages-and-platforms",
+  "normalized_created_at": "2026-05-01T13:33:43.516Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:901f7d14fadc6976181892699d648c5140186c1dce41fb357ab49b146c886692",
+  "normalized_content_hash": "sha256:4c03e9325f8feb129e5bfb59673f5414316eae5ee360fffb8a57d61ba45a83b5",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule VII - Assembly Occupancy\">\n\n\nPer PD 1096, Rule XII, Section 1213.1, the total ventilation area must be \u2265 5% of the stage floor area within the stage walls. 5% of 240 sq.m = 12.00 sq.m. Option A (8 sq.m) is 3.33% \u2014 too low. Option B (10 sq.m) corresponds to 5% of 200 sq.m \u2014 a distractor using a round number close to the actual floor area. Option D (15 sq.m) corresponds to 6.25%, above the minimum but not required. The correct answer is exactly 5% of 240 sq.m = 12.00 sq.m.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:36d402b5aecd12d1f73904fc4a79a80585355a036fdb88183b59915e71f108f4",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\", title=\"too low. Option B (10 sq.m) corresponds to 5% of 200 sq.m \u2014 a distractor using a\"\n- Text: Per PD 1096, Rule XII, Section 1213.1, the total ventilation area must be \u2265 5% of the stage floor area within the stage walls. 5% of 240 sq.m = 12.00 sq.m. Option A (8 sq.m) is 3.33% \u2014 too low. Option B (10 sq.m) corresponds to 5% of 200 sq.m \u2014 a distractor using a round number close to the actual floor area. Option D (15 sq.m) corresponds to 6.25%, above the minimum but not required. The correct answer is exactly 5% of 240 sq.m = 12.00 sq.m.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:99c2f939873ea4ef6e2d46896048f09193ce2a6f4d1b7fd7797e2fc4bb1bb95b",
+      "props": {
+        "code": "nbcp",
+        "title": "too low. Option B (10 sq.m) corresponds to 5% of 200 sq.m \u2014 a distractor using a"
+      },
+      "props_json": {
+        "code": "pd1096",
+        "title": "too low. Option B (10 sq.m) corresponds to 5% of 200 sq.m \u2014 a distractor using a",
+        "section": "Rule VII - Assembly Occupancy"
+      },
+      "props_text": "code=pd1096, title=too low. Option B (10 sq.m) corresponds to 5% of 200 sq.m \u2014 a distractor using a, section=Rule VII - Assembly Occupancy",
+      "children_raw": "\n\nPer PD 1096, Rule XII, Section 1213.1, the total ventilation area must be \u2265 5% of the stage floor area within the stage walls. 5% of 240 sq.m = 12.00 sq.m. Option A (8 sq.m) is 3.33% \u2014 too low. Option B (10 sq.m) corresponds to 5% of 200 sq.m \u2014 a distractor using a round number close to the actual floor area. Option D (15 sq.m) corresponds to 6.25%, above the minimum but not required. The correct answer is exactly 5% of 240 sq.m = 12.00 sq.m.\n\n",
+      "children_text": "Per PD 1096, Rule XII, Section 1213.1, the total ventilation area must be \u2265 5% of the stage floor area within the stage walls. 5% of 240 sq.m = 12.00 sq.m. Option A (8 sq.m) is 3.33% \u2014 too low. Option B (10 sq.m) corresponds to 5% of 200 sq.m \u2014 a distractor using a round number close to the actual floor area. Option D (15 sq.m) corresponds to 6.25%, above the minimum but not required. The correct answer is exactly 5% of 240 sq.m = 12.00 sq.m.",
+      "start_offset": 21376,
+      "end_offset": 21952,
+      "line_start": 296,
+      "line_end": 300,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule VII - Stages and Platforms\">\n\n\nPer PD 1096, Rule XII, Section 1214.2: minimum floor area = 7.00 sq.m for the first machine, plus 3.50 sq.m for each additional machine. For two projectors: 7.00 + (1 \u00d7 3.50) = 10.50 sq.m. Option A (7.00 sq.m) is for one projector only \u2014 the most common trap for candidates who memorize only the base figure. Option B (8.75 sq.m) has no basis in the code. Option D (14.00 sq.m) would be required for three projectors: 7.00 + (2 \u00d7 3.50) = 14.00 sq.m.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:154a114ec9ed78c85e08bce121ee5c05610831d23f03824080028fa3d5863f91",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\", title=\"the most common trap for candidates who memorize only the base figure. Option B\"\n- Text: Per PD 1096, Rule XII, Section 1214.2: minimum floor area = 7.00 sq.m for the first machine, plus 3.50 sq.m for each additional machine. For two projectors: 7.00 + (1 \u00d7 3.50) = 10.50 sq.m. Option A (7.00 sq.m) is for one projector only \u2014 the most common trap for candidates who memorize only the base figure. Option B (8.75 sq.m) has no basis in the code. Option D (14.00 sq.m) would be required for three projectors: 7.00 + (2 \u00d7 3.50) = 14.00 sq.m.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c1c4bfd07770821a4513852fb25d3cb021db415c8e4820d8e046de71ed6e4d04",
+      "props": {
+        "code": "nbcp",
+        "title": "the most common trap for candidates who memorize only the base figure. Option B"
+      },
+      "props_json": {
+        "code": "pd1096",
+        "title": "the most common trap for candidates who memorize only the base figure. Option B",
+        "section": "Rule VII - Stages and Platforms"
+      },
+      "props_text": "code=pd1096, title=the most common trap for candidates who memorize only the base figure. Option B, section=Rule VII - Stages and Platforms",
+      "children_raw": "\n\nPer PD 1096, Rule XII, Section 1214.2: minimum floor area = 7.00 sq.m for the first machine, plus 3.50 sq.m for each additional machine. For two projectors: 7.00 + (1 \u00d7 3.50) = 10.50 sq.m. Option A (7.00 sq.m) is for one projector only \u2014 the most common trap for candidates who memorize only the base figure. Option B (8.75 sq.m) has no basis in the code. Option D (14.00 sq.m) would be required for three projectors: 7.00 + (2 \u00d7 3.50) = 14.00 sq.m.\n\n",
+      "children_text": "Per PD 1096, Rule XII, Section 1214.2: minimum floor area = 7.00 sq.m for the first machine, plus 3.50 sq.m for each additional machine. For two projectors: 7.00 + (1 \u00d7 3.50) = 10.50 sq.m. Option A (7.00 sq.m) is for one projector only \u2014 the most common trap for candidates who memorize only the base figure. Option B (8.75 sq.m) has no basis in the code. Option D (14.00 sq.m) would be required for three projectors: 7.00 + (2 \u00d7 3.50) = 14.00 sq.m.",
+      "start_offset": 22267,
+      "end_offset": 22845,
+      "line_start": 315,
+      "line_end": 319,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule VII - Stage Requirements\">\n\n\nPer PD 1096, Rule XII, Section 1213.4: the proscenium wall must be minimum 2-hour incombustible construction, must extend \u2265 1.20 m above the auditorium roof, and all openings must be protected by 1.5-hour fire assemblies. The main proscenium opening also requires a self-closing fire-resistive curtain. Option A uses 1-hour (too low) and \"flush with roof\" (no extension \u2014 a critical failure point). Option C has the correct fire rating and extension direction but uses 1.50 m (too high) and 1-hour assemblies (too low). Option D uses 3-hour (too high) and incorrectly assigns a 3/4-hour assembly to the main opening (3/4-hour is the door assembly for projection rooms, per Sec. 1214.3).\n\n\n</LawCallout>",
+      "raw_hash": "sha256:8b323c0ca7613be72fa84e2dcf3e7ac8e4733517e5f1d1f882823f27c4555d05",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\", title=\"a critical failure point). Option C has the correct fire rating and extension di\"\n- Text: Per PD 1096, Rule XII, Section 1213.4: the proscenium wall must be minimum 2-hour incombustible construction, must extend \u2265 1.20 m above the auditorium roof, and all openings must be protected by 1.5-hour fire assemblies. The main proscenium opening also requires a self-closing fire-resistive curtain. Option A uses 1-hour (too low) and \"flush with roof\" (no extension \u2014 a critical failure point). Option C has the correct fire rating and extension direction but uses 1.50 m (too high) and 1-hour as\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:70deeda4df95fd0dbd61f33513c88ebdad07809c61b5f2eed75fbf17351d6083",
+      "props": {
+        "code": "nbcp",
+        "title": "a critical failure point). Option C has the correct fire rating and extension di"
+      },
+      "props_json": {
+        "code": "pd1096",
+        "title": "a critical failure point). Option C has the correct fire rating and extension di",
+        "section": "Rule VII - Stage Requirements"
+      },
+      "props_text": "code=pd1096, title=a critical failure point). Option C has the correct fire rating and extension di, section=Rule VII - Stage Requirements",
+      "children_raw": "\n\nPer PD 1096, Rule XII, Section 1213.4: the proscenium wall must be minimum 2-hour incombustible construction, must extend \u2265 1.20 m above the auditorium roof, and all openings must be protected by 1.5-hour fire assemblies. The main proscenium opening also requires a self-closing fire-resistive curtain. Option A uses 1-hour (too low) and \"flush with roof\" (no extension \u2014 a critical failure point). Option C has the correct fire rating and extension direction but uses 1.50 m (too high) and 1-hour assemblies (too low). Option D uses 3-hour (too high) and incorrectly assigns a 3/4-hour assembly to the main opening (3/4-hour is the door assembly for projection rooms, per Sec. 1214.3).\n\n",
+      "children_text": "Per PD 1096, Rule XII, Section 1213.4: the proscenium wall must be minimum 2-hour incombustible construction, must extend \u2265 1.20 m above the auditorium roof, and all openings must be protected by 1.5-hour fire assemblies. The main proscenium opening also requires a self-closing fire-resistive curtain. Option A uses 1-hour (too low) and \"flush with roof\" (no extension \u2014 a critical failure point). Option C has the correct fire rating and extension direction but uses 1.50 m (too high) and 1-hour as",
+      "start_offset": 23613,
+      "end_offset": 24429,
+      "line_start": 334,
+      "line_end": 338,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:aa0498858dc591385e5876bbf8b6f993e091024b0f65697f3a8eac91e0cd7626"
+}

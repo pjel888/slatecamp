@@ -1,0 +1,41 @@
+{
+  "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+  "slug": "lea-dsgn-007-10-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.315Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:692e4e78fe764b6eb4b67b2b41e211e8662818e478cd1ad97beeb4a878da7844",
+  "normalized_content_hash": "692e4e78fe764b6eb4b67b2b41e211e8662818e478cd1ad97beeb4a878da7844",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n mistakes={[\n 'ERR-DSGN-022: Treating a \u201cpreferred\u201d riser (e.g., 175\u2013180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\n \"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\"\n ]}\n/>",
+      "raw_hash": "sha256:1b3252c863016d6c0ba125486b8b38abf74b2f424ea9b9073649e90d55a4ff47",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'ERR-DSGN-022: Treating a \u201cpreferred\u201d riser (e.g., 175\u2013180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\\n \\\"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\\\"\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9196628b40c02d8468d7d843c27a426e0ca2176dc24b0d3d9f397bdf3237eb24",
+      "props": {
+        "mistakes": "{[\n 'ERR-DSGN-022: Treating a \u201cpreferred\u201d riser (e.g., 175\u2013180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\n \"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\"\n ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n 'ERR-DSGN-022: Treating a \u201cpreferred\u201d riser (e.g., 175\u2013180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\n \"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\"\n ]}"
+      },
+      "props_text": "mistakes={[\n 'ERR-DSGN-022: Treating a \u201cpreferred\u201d riser (e.g., 175\u2013180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\n \"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\"\n ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6998,
+      "end_offset": 7611,
+      "line_start": 118,
+      "line_end": 126,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:d250b49017c7cbb2acfa56531df3fdbecb095afbc04a5321a6feda91e389d81d"
+}

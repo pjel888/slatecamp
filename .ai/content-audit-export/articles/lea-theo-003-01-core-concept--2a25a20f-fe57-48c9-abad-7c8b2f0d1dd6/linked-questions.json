@@ -1,0 +1,671 @@
+{
+  "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:5780c53440c38ebf6d328f11bcf117ecb2448241b014e2e8ae7b98ce80d80146",
+  "question_count": 13,
+  "questions": [
+    {
+      "question_id": "699421ad-d936-4ad7-874c-954cbca5b3e0",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Why is seated eye height (~1100–1200mm) particularly important for designers working on retail and restaurant projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It determines the maximum height for signage visibility from standing positions, which is crucial for attracting attention from passersby"
+        },
+        {
+          "id": "b",
+          "text": "It establishes where visual information, shelving, and displays should be positioned for customer comfort and visibility"
+        },
+        {
+          "id": "c",
+          "text": "It defines the minimum width of seating areas and dining spaces, ensuring adequate space for movement and comfort"
+        },
+        {
+          "id": "d",
+          "text": "It sets the standard riser height for any interior stairs, which is important for safety and accessibility compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Standing eye height (1500–1600mm) determines signage height for standing occupants, not seated height",
+        "c": "Seated eye height is a sightline consideration, not a width dimension",
+        "d": "Riser height (150–180mm) is independent of eye height measurements",
+        "correct": "Seated eye height determines optimal placement of menu boards, product displays, counter elements, and visual information for seated diners and customers"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q09",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b800d880485915fbcf64b8df5e0ae856f70de87cead975df9b7bdccae98254f5"
+    },
+    {
+      "question_id": "2980c6ee-d746-44da-bc22-1f3f24276aaa",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Which anthropometric system establishes the standard man at 1.83 meters and includes two measurement series (red and blue) based on Fibonacci proportions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neufert's Architects' Data"
+        },
+        {
+          "id": "b",
+          "text": "Henry Dreyfuss's The Measure of Man"
+        },
+        {
+          "id": "c",
+          "text": "Ernst Freud's Spatial Proportions"
+        },
+        {
+          "id": "d",
+          "text": "Le Corbusier's Modulor"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Neufert's Data is empirical and metric-based, not proportional or Fibonacci-based",
+        "b": "Dreyfuss used archetypal figures Joe and Josephine, not a proportional mathematical system",
+        "c": "Ernst Freud is not an established anthropometric system source cited in architectural canon",
+        "correct": "Le Corbusier's Modulor (1948) establishes the 1.83m standard man with red and blue measurement series based on golden ratio and Fibonacci sequence"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q04",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8eb8311bbeb6ccc2313129bc3c07a417bacbd7bb490b35e1f95fa4c45dfa6ad9"
+    },
+    {
+      "question_id": "b657fd00-c84b-452b-861c-af3ff050f35c",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Comparing Neufert and Dreyfuss systems, which statement accurately describes their primary difference?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neufert is metric; Dreyfuss is imperial, focusing on different measurement systems for design standards"
+        },
+        {
+          "id": "b",
+          "text": "Neufert includes proportional relationships; Dreyfuss ignores proportion entirely, emphasizing functional dimensions"
+        },
+        {
+          "id": "c",
+          "text": "Neufert is theoretical; Dreyfuss is empirical, with Neufert focusing on idealized dimensions and Dreyfuss on real-world data"
+        },
+        {
+          "id": "d",
+          "text": "Neufert is based on European measurements; Dreyfuss on North American averages"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While Dreyfuss originally worked in imperial, both systems are now metric-compatible",
+        "b": "Both systems address proportional relationships, though differently",
+        "c": "This is incorrect because both Neufert and Dreyfuss systems are empirical, not theoretical; the primary difference lies in their geographic/population basis (option d)",
+        "correct": "Neufert developed standards from European measurements; Dreyfuss used North American data with Joe and Josephine archetypal figures representing different populations"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q07",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:759ae25713670045ee77e8e497202dc2401f065e250c1d4b5452ff5cc5331e30"
+    },
+    {
+      "question_id": "53e43e1b-9e7b-43fc-a9ab-76b712460f74",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Which anthropometric system is based primarily on proportional relationships and harmony rather than empirical measurement of actual human populations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le Corbusier's Modulor"
+        },
+        {
+          "id": "b",
+          "text": "Henry Dreyfuss's The Measure of Man"
+        },
+        {
+          "id": "c",
+          "text": "Philippine Building Code anthropometric standards"
+        },
+        {
+          "id": "d",
+          "text": "Neufert's Architects' Data"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Dreyfuss uses actual measurement of human dimensions through archetypal figures",
+        "c": "Building codes are based on empirical measurements adapted from international standards",
+        "d": "Neufert is explicitly empirical, based on measured human activities",
+        "correct": "Le Corbusier's Modulor is a proportional system based on golden ratio and Fibonacci sequence, creating harmonious relationships rather than empirical population measurement"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q10",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0f1a9e6efd3280d3284e6d920ad55db190cd125660267688d30a01c99d1ee88f"
+    },
+    {
+      "question_id": "445366c8-a477-4a91-9126-946f9146e513",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "In designing a kitchen counter for standing food preparation, which height is most appropriate according to Neufert and Dreyfuss standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "700mm"
+        },
+        {
+          "id": "b",
+          "text": "850mm"
+        },
+        {
+          "id": "c",
+          "text": "900mm"
+        },
+        {
+          "id": "d",
+          "text": "1050mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "700mm is too low, would require excessive bending and create strain",
+        "b": "850mm approximates seated eye height, not standing work surface height",
+        "d": "1050mm is above comfortable reach and would require awkward arm positioning",
+        "correct": "900mm is a widely adopted standard counter height for standing work; specific attribution to Neufert and Dreyfuss standards should cite exact source documents"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q03",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2dd25804f0e231a78c1b2fe5e6e5b6eaf068e31f812111acb8d3b40b9924c69b"
+    },
+    {
+      "question_id": "8af854d3-ba35-4dad-bb8d-f96f4b39e75b",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "The standard interior door height in Philippine residential architecture is most commonly:",
+      "options": [
+        {
+          "id": "a",
+          "text": "1800mm"
+        },
+        {
+          "id": "b",
+          "text": "2000mm"
+        },
+        {
+          "id": "c",
+          "text": "2100mm"
+        },
+        {
+          "id": "d",
+          "text": "2200mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1800mm is too low for residential doors and would create accessibility issues",
+        "b": "2000mm is below standard and would violate anthropometric and code requirements",
+        "d": "2200mm exceeds standard and is not used except in specialized high-ceiling contexts",
+        "correct": "2100mm is a commonly adopted standard door height internationally; however, Philippine-specific standards should be verified against PD 1096 (National Building Code) current requirements"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q02",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3ec9b791f4e4b0ab44f1526168ccac8a6d4ad9f72c3472da1b0358ec4ee07e9c"
+    },
+    {
+      "question_id": "25bb6f88-74e6-4bec-885b-2b85a6d5622d",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Why might a door height that exceeds the standard 2100mm create negative design consequences despite providing more headroom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It violates anthropometric standards and creates accessibility problems for shorter users, potentially leading to discomfort and usability issues"
+        },
+        {
+          "id": "b",
+          "text": "It requires special frame construction that is not available in Philippine markets, increasing lead times and costs"
+        },
+        {
+          "id": "c",
+          "text": "It increases construction costs without improving user comfort, leading to inefficient use of resources and budget overruns"
+        },
+        {
+          "id": "d",
+          "text": "It creates a mismatch with the human-scaled expectations developed through cultural conditioning, producing psychological discomfort"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Taller doors don't create accessibility problems; accessibility concerns arise from doors that are too low",
+        "b": "While market availability is practical, it doesn't explain the design or perceptual problem",
+        "c": "While cost is a practical consideration, it doesn't explain the design or perceptual problem",
+        "correct": "Oversized doors create visual and psychological discomfort because humans have learned proportional expectations through exposure to standard dimensions; deviation produces unease"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q13",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9e38d9cacc9d37081a79ea8abd1008a2f3c6ce5d54f4b08bd35a835fb30c3a10"
+    },
+    {
+      "question_id": "31650438-3c8a-42c1-8e4a-ef28676e97b9",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "A residential corridor must accommodate single-file passage with minimal design constraints. What is the minimum required width according to Neufert standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1200mm"
+        },
+        {
+          "id": "b",
+          "text": "1050mm"
+        },
+        {
+          "id": "c",
+          "text": "750mm"
+        },
+        {
+          "id": "d",
+          "text": "900mm"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1200mm is required for two-way traffic circulation, not single-file passage",
+        "b": "1050mm exceeds minimum requirement and increases construction cost unnecessarily",
+        "c": "750mm is too narrow, would create accessibility violations and safety concerns",
+        "correct": "Minimum residential passage width should be verified against PD 1096 (National Building Code) and Neufert standards; 900mm is commonly cited but requires specific code section reference"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q06",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:75524d79cf4d97fef6e7afb9331eb3aea85edd10ff36ea3408e34d59b62e6d28"
+    },
+    {
+      "question_id": "923b6048-e580-4da1-a3c3-fa242f0e4217",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Anthropometrics is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The study of how humans perceive spatial distance and personal space boundaries, which is crucial for ergonomic design"
+        },
+        {
+          "id": "b",
+          "text": "The principles governing comfort and safety in building design, ensuring that spaces are usable and accessible"
+        },
+        {
+          "id": "c",
+          "text": "The proportional system based on the golden ratio and Fibonacci sequence, often used in aesthetic design"
+        },
+        {
+          "id": "d",
+          "text": "The scientific measurement of the human body and its relationship to architectural space"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes proxemics, not anthropometrics",
+        "b": "While anthropometrics supports comfort and safety, this is too broad and doesn't define the discipline",
+        "c": "This describes Le Corbusier's Modulor system, a specific application of anthropometric thinking",
+        "correct": "This is the precise definition of anthropometrics as a discipline that transforms human dimensions into design standards"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q01",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f1840f463f3b5c29d03c09173e0df3037828f5c75f5b3ac8bc354fee70f4f645"
+    },
+    {
+      "question_id": "c16d33c6-254b-4a34-9b20-dbd7bf74af8a",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Using the 2R+T proportional rule for stair design, if a riser is 175mm, what is the ideal tread depth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "280mm"
+        },
+        {
+          "id": "b",
+          "text": "310mm"
+        },
+        {
+          "id": "c",
+          "text": "220mm"
+        },
+        {
+          "id": "d",
+          "text": "250mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "310mm would yield 2(175) + 310 = 660, exceeding the comfortable range",
+        "c": "220mm would yield 2(175) + 220 = 570, below the comfortable 600–640 range",
+        "d": "250mm would yield 2(175) + 250 = 600, minimum of range but not ideal",
+        "correct": "The 2R+T formula (where 2R+T should equal 600–640mm) is a standard anthropometric rule for stair design; however, the specific source (PD 1096, NSCP 2015, or other standard) should be cited"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q08",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b9feff37447f3674fbd2afbb289de3930ab4a074ff44ced0c90599dc7796919"
+    },
+    {
+      "question_id": "fca4a285-590e-4de8-8804-364f0404a54c",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "For a forward reach zone when seated, approximately what distance from the edge of a table should workstations be designed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "550mm, considering ergonomic standards for seated reach"
+        },
+        {
+          "id": "b",
+          "text": "300mm, which is suitable for limited reach tasks"
+        },
+        {
+          "id": "c",
+          "text": "700–800mm, accommodating extended reach requirements"
+        },
+        {
+          "id": "d",
+          "text": "400–450mm"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "550mm exceeds comfortable seated reach",
+        "b": "300mm is too shallow and would force awkward posture",
+        "c": "700–800mm is forward reach when standing, not seated",
+        "correct": "Forward reach when seated should be verified against authoritative anthropometric sources (Dreyfuss's The Measure of Man or Neufert's Architects' Data); commonly cited range is approximately 400–450mm but requires specific source reference"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q11",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ae0e5a420b64044464bf1cc3dd32f221d6bcc443fefb613d9ebe5a0a74caeb3f"
+    },
+    {
+      "question_id": "a1fdfd41-433d-49c0-9cc7-78c48f6cc56e",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "The Modulor's navel height of 1.13 meters creates significance in space design because:",
+      "options": [
+        {
+          "id": "a",
+          "text": "It creates visual balance in room proportions by dividing the body according to golden ratio"
+        },
+        {
+          "id": "b",
+          "text": "It establishes the minimum width requirement for circulation corridors, ensuring accessibility and comfort"
+        },
+        {
+          "id": "c",
+          "text": "It establishes the maximum reach height for human arms in standing position, facilitating ergonomic design"
+        },
+        {
+          "id": "d",
+          "text": "It determines the standard height for kitchen counters and work surfaces, optimizing for average human stature"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Circulation width is determined by single-file or two-way passage, not body proportion",
+        "c": "Maximum reach is approximately 2.26m or 2260mm, not 1.13m",
+        "d": "Counter height is 900mm based on ergonomic standing work, not proportional division",
+        "correct": "Le Corbusier's Modulor divides the 1.83m standard figure according to golden ratio proportions; the specific navel height of 1.13m should be verified against original Modulor documentation, creating proportional balance applicable to room and building proportions"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q12",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d9d1aa725b77b886927d93648dd9974718ab78830d59ca9c88122079aa72a820"
+    },
+    {
+      "question_id": "254d409b-f72e-4b84-84a2-2a46e55fcf7d",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Signage for general public wayfinding should be positioned at approximately which height to optimize legibility for standing occupants?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1200mm, which is below the average eye level and may require users to look down, potentially reducing visibility in crowded areas"
+        },
+        {
+          "id": "b",
+          "text": "2100mm, which is above the average eye level and may cause users to tilt their heads upward, potentially causing discomfort over extended periods"
+        },
+        {
+          "id": "c",
+          "text": "1500–1600mm"
+        },
+        {
+          "id": "d",
+          "text": "1800mm, which is slightly above the average eye level but still within a comfortable viewing range for most standing adults"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1200mm is seated eye height, too low for standing occupants to notice",
+        "b": "2100mm is at door header height and above comfortable visual engagement",
+        "d": "1800mm exceeds typical standing eye height and requires neck extension",
+        "correct": "Standing eye height of 1500–1600mm is the optimal signage height for clear visibility and comfort, matching the natural line of sight"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q05",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:948b24b67b6fe5dc90d173ed8bb54dc94f3f097720f64d0b5b3533d83c55b5f5"
+    }
+  ]
+}

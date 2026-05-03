@@ -1,0 +1,518 @@
+{
+  "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b4e3e54aa330ff2896cd7aec7533d6fcc3be9705066946f2e1954c8f405aca52",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "10e4e2d7-abb5-42a4-a1d0-cdae42fd6dc3",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "A planner is preparing a CLUP that includes both New Urbanism principles and the 15-Minute City concept. What is the relationship between these two frameworks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are contradictory; a city cannot follow both simultaneously due to differing foundational principles and spatial requirements"
+        },
+        {
+          "id": "b",
+          "text": "New Urbanism is older and has been fully replaced by the 15-Minute City concept, which offers a more modern approach to urban planning"
+        },
+        {
+          "id": "c",
+          "text": "15-Minute City is an extension and refinement of New Urbanism; it uses a time-based metric (15 min) rather than distance (400m) to define the walkable neighborhood, and it explicitly includes all daily services"
+        },
+        {
+          "id": "d",
+          "text": "They address different scales: New Urbanism is neighborhood-level; 15-Minute City is citywide, focusing on broader urban connectivity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "They are complementary; a 15-minute neighborhood can be built on New Urbanism principles.",
+        "b": "New Urbanism remains relevant; 15-Minute City builds on it.",
+        "c": "Both frameworks aim for walkable, mixed-use neighborhoods. New Urbanism uses 400m (5-min walk); 15-Minute City uses time (15 min walk/bike) as the metric and explicitly requires that all daily needs (work, school, healthcare, culture, etc.) be accessible. 15-Minute City is a contemporary refinement that emphasizes completeness of services.",
+        "d": "Both can operate at neighborhood and city scales simultaneously.",
+        "correct": "Both frameworks aim for walkable, mixed-use neighborhoods. New Urbanism uses 400m (5-min walk); 15-Minute City uses time (15 min walk/bike) as the metric and explicitly requires that all daily needs (work, school, healthcare, culture, etc.) be accessible. 15-Minute City is a contemporary refinement that emphasizes completeness of services.",
+        "takeaway": "New Urbanism + 15-Minute City = complementary frameworks defining walkable, complete neighborhoods."
+      },
+      "explanation": null,
+      "code_citation": "New Urbanism Charter; Moreno 15-Minute City (2020)",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:daa6b1033cc2a4dc39e25db2d243096c951c4b3c7de99ef5529a1333bfbfd087"
+    },
+    {
+      "question_id": "68daa8e2-ef56-42ab-8f28-5c426f16f293",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "What is the 15-Minute City concept, and who developed it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jan Gehl's theory that cities should have 15 parks distributed evenly, promoting green space accessibility"
+        },
+        {
+          "id": "b",
+          "text": "Carlos Moreno's Paris-based concept that all daily needs should be accessible within 15 minutes of walk or bike"
+        },
+        {
+          "id": "c",
+          "text": "Peter Calthorpe's Transit-Oriented Development requiring 15-minute transit intervals, enhancing urban mobility"
+        },
+        {
+          "id": "d",
+          "text": "A UN mandate that cities must grow by 15% per decade, ensuring sustainable urban expansion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Gehl works on human-scale design and public space, not the 15-minute concept.",
+        "b": "Carlos Moreno developed the 15-Minute City concept in Paris (2020), establishing that urban design should ensure all daily essentials—work, school, shopping, healthcare, culture—are within 15 minutes of walk or bike from home.",
+        "c": "Calthorpe developed TOD; the 15-minute concept is specifically Moreno's.",
+        "d": "This is not a UN mandate but an urban design framework.",
+        "correct": "Carlos Moreno developed the 15-Minute City concept in Paris (2020), establishing that urban design should ensure all daily essentials—work, school, shopping, healthcare, culture—are within 15 minutes of walk or bike from home.",
+        "takeaway": "15-Minute City = Carlos Moreno (2020) = daily needs within 15 min walk/bike."
+      },
+      "explanation": null,
+      "code_citation": "Moreno, C., 15-Minute City Framework (2020)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff416f879da6c9131b754866e62ef67f9570d4982c19be2d77abb035b221ea51"
+    },
+    {
+      "question_id": "2f4082b0-262f-4823-be1b-00de4b6d4a64",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "How does Transit-Oriented Development contribute to achieving the Smart Growth principle of reduced car dependency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By banning private vehicles in urban areas, which is often impractical and unpopular"
+        },
+        {
+          "id": "b",
+          "text": "By concentrating development near transit stations, making transit an attractive alternative to driving"
+        },
+        {
+          "id": "c",
+          "text": "By requiring all residents to use public transit regardless of preference, which can lead to resistance"
+        },
+        {
+          "id": "d",
+          "text": "By increasing highway capacity to reduce traffic congestion, although this can sometimes encourage more driving"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "TOD does not eliminate cars; it provides alternatives that make transit attractive.",
+        "b": "TOD places mixed-use, higher-density development within walking distance of transit, making transit access valuable (employment, shopping, services within walking distance of station). This naturally reduces car dependency through choice, not mandate.",
+        "c": "TOD creates conditions where transit is convenient; individuals choose based on their circumstances.",
+        "d": "Highway expansion increases sprawl; TOD opposes sprawl-inducing infrastructure.",
+        "correct": "TOD places mixed-use, higher-density development within walking distance of transit, making transit access valuable (employment, shopping, services within walking distance of station). This naturally reduces car dependency through choice, not mandate.",
+        "takeaway": "TOD = create conditions where transit is the natural choice through proximity and density, not through restriction."
+      },
+      "explanation": null,
+      "code_citation": "Smart Growth Principles; TOD Framework",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d6a179ad2cb4c6a7fa1c664472d64ec31b13631253124d38588b9d17db6a2a9d"
+    },
+    {
+      "question_id": "4e670bc9-9376-418f-a380-bfffcac5c58a",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "What is the walkable catchment distance for Transit-Oriented Development (TOD)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100–200 meters"
+        },
+        {
+          "id": "b",
+          "text": "300–500 meters"
+        },
+        {
+          "id": "c",
+          "text": "400–800 meters"
+        },
+        {
+          "id": "d",
+          "text": "1,000–1,500 meters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too close; people need not walk this far for daily errands to reach TOD.",
+        "b": "Too narrow; this underestimates people's willingness to walk for transit access.",
+        "c": "TOD catchment is 400–800 meters from a transit station. People will walk farther (up to 800m = ~10 min walk) to access high-quality transit, making TOD's catchment wider than New Urbanism's core neighborhood radius.",
+        "d": "Too far; beyond the practical walking distance for most transit riders.",
+        "correct": "TOD catchment is 400–800 meters from a transit station. People will walk farther (up to 800m = ~10 min walk) to access high-quality transit, making TOD's catchment wider than New Urbanism's core neighborhood radius.",
+        "takeaway": "TOD catchment = 400–800 meters (wider than NU's 400m because transit is a destination worth walking to)."
+      },
+      "explanation": null,
+      "code_citation": "Transit-Oriented Development Standards; Calthorpe, P. (1993)",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f0f3efcd90cbdef1386151f2b8c627f0066ff9aaf2716e3cfbdc56a887625efd"
+    },
+    {
+      "question_id": "bfe5b747-537d-4802-8fc2-03ae247374c3",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "What does SDG 11 (Sustainable Cities and Communities) address, and how does Complete Streets design support SDG 11?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SDG 11 focuses only on environmental protection; Complete Streets is unrelated to SDG 11, as it deals with urban planning"
+        },
+        {
+          "id": "b",
+          "text": "SDG 11 is about housing finance; Complete Streets is about vehicle traffic, which does not directly relate to SDG 11"
+        },
+        {
+          "id": "c",
+          "text": "SDG 11 calls for safe, inclusive, sustainable human settlements; Complete Streets supports this by prioritizing pedestrian safety, accessibility for persons with disabilities, and equitable street design"
+        },
+        {
+          "id": "d",
+          "text": "SDG 11 applies only to developing countries, not to wealthy nations, where different standards are in place"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "SDG 11 is broader than environment; it includes safety, inclusion, and sustainability.",
+        "b": "Housing is one aspect of SDG 11; streets and public space are equally important.",
+        "c": "SDG 11 encompasses safe, inclusive, sustainable, and resilient cities. Complete Streets design directly supports these by creating safe pedestrian environments, accommodating persons with disabilities, reducing traffic fatalities, and promoting equitable access to public space.",
+        "d": "SDGs are universal; SDG 11 applies to all countries.",
+        "correct": "SDG 11 encompasses safe, inclusive, sustainable, and resilient cities. Complete Streets design directly supports these by creating safe pedestrian environments, accommodating persons with disabilities, reducing traffic fatalities, and promoting equitable access to public space.",
+        "takeaway": "SDG 11 + Complete Streets = safe, inclusive, sustainable public space and mobility for all."
+      },
+      "explanation": null,
+      "code_citation": "SDG 11: Sustainable Cities and Communities; Complete Streets Design",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3db78ddbeba6e7c9d36dccbb342b8887fe574239baaa1d2202cd66c0e4b435b7"
+    },
+    {
+      "question_id": "f7c9bf68-d9df-4503-b040-f061d5516345",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "How do New Urbanism and Transit-Oriented Development differ in their walkable radius?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are identical; both use the 400-meter radius for all types of developments without exception"
+        },
+        {
+          "id": "b",
+          "text": "There is no meaningful difference; the terms are interchangeable and can be used in any context without distinction"
+        },
+        {
+          "id": "c",
+          "text": "TOD uses 400m; New Urbanism extends to 800m for mixed-use development, allowing for greater flexibility in urban planning"
+        },
+        {
+          "id": "d",
+          "text": "New Urbanism focuses on 400m walkable neighborhoods; TOD extends to 400–800m because people will walk farther for quality transit"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While both include 400m, TOD extends farther.",
+        "b": "They are distinct concepts with different spatial implications.",
+        "c": "This reverses the actual relationship.",
+        "d": "New Urbanism establishes 400m as the 5-minute walk radius for daily neighborhood services. TOD's catchment is wider (400–800m) because people accept longer walks specifically to access transit, which serves regional needs beyond the neighborhood.",
+        "correct": "New Urbanism establishes 400m as the 5-minute walk radius for daily neighborhood services. TOD's catchment is wider (400–800m) because people accept longer walks specifically to access transit, which serves regional needs beyond the neighborhood.",
+        "takeaway": "NU = 400m core; TOD = 400–800m extended catchment (walk distance varies by destination importance)."
+      },
+      "explanation": null,
+      "code_citation": "New Urbanism vs. TOD Comparison; Urban Design Standards",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4e8bbb2a7039625e070b364930cfcea8741dc834b3cd5ff419edea2dfb7f0542"
+    },
+    {
+      "question_id": "613e852c-8adb-4a1f-bb52-241fc226bd03",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "Why might a Philippine municipality struggle to implement New Urbanism or 15-Minute City principles despite recognizing their benefits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "These frameworks are only applicable in wealthy, developed countries, which limits their relevance in local contexts."
+        },
+        {
+          "id": "b",
+          "text": "Implementation challenges include: existing dispersed urban fabric making infill difficult, informal settlements occupying walkable areas, land cost and availability constraints, need to retrofit existing car-dependent infrastructure, and lack of capital for transit systems that make walkability viable"
+        },
+        {
+          "id": "c",
+          "text": "Philippine culture and climate make walkable neighborhoods impossible, due to high temperatures and humidity."
+        },
+        {
+          "id": "d",
+          "text": "These frameworks conflict with Philippine law, which prioritizes other urban development models."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "New Urbanism and 15-Minute City apply globally; many Philippine developments aspire to these principles.",
+        "b": "Implementation is possible but requires overcoming real constraints: existing sprawled development, informal settlements occupying central areas, financial limitations, and the need to build or upgrade transit to support density. These are solvable through phased CLUPs and targeted investment; they are not insurmountable.",
+        "c": "Philippines has a walking culture; climate-adapted design (shade, rain protection) makes walkable neighborhoods feasible.",
+        "d": "RA 7160 and RA 10587 enable mixed-use zoning and participatory planning; these frameworks align with Philippine law.",
+        "correct": "Implementation is possible but requires overcoming real constraints: existing sprawled development, informal settlements occupying central areas, financial limitations, and the need to build or upgrade transit to support density. These are solvable through phased CLUPs and targeted investment; they are not insurmountable.",
+        "takeaway": "Implementation challenges are real but not insurmountable; phased infill, informal settlement integration, and transit investment can enable walkable neighborhoods."
+      },
+      "explanation": null,
+      "code_citation": "New Urbanism Implementation in Developing Countries; Philippine Urban Planning Challenges",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ab20c42fa3abb39d9439b413029180f97dff68f7dcedac36d768dfa6b3b53267"
+    },
+    {
+      "question_id": "83a13363-13e4-4995-b25e-c535bd91ff56",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "A municipality in the Philippines is designing a new residential street with limited budget. Currently, the street has four car lanes and narrow sidewalks where pedestrians risk being hit by vehicles. According to Complete Streets principles, how should the street be redesigned?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expand to six car lanes to reduce congestion, assuming increased traffic flow will improve safety"
+        },
+        {
+          "id": "b",
+          "text": "Install more traffic signals but keep the existing lane configuration, focusing on traffic management"
+        },
+        {
+          "id": "c",
+          "text": "Build a separate elevated pedestrian bridge to keep pedestrians off the street, minimizing interaction with vehicles"
+        },
+        {
+          "id": "d",
+          "text": "Widen sidewalks, add shade trees, improve pedestrian crossings, and reduce car lanes to prioritize pedestrian safety and comfort as the dominant mode"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "More car lanes increase congestion and danger for pedestrians (induced demand).",
+        "b": "Signal improvements help but do not address the core issue of inadequate pedestrian infrastructure.",
+        "c": "Elevated bridges are expensive and isolate pedestrians; street-level design is preferable.",
+        "d": "In Philippine context, most people walk or use transit; Complete Streets design prioritizes these modes. Wider, safe sidewalks with shade and good crossings serve the majority, reflecting actual use patterns and equity.",
+        "correct": "In Philippine context, most people walk or use transit; Complete Streets design prioritizes these modes. Wider, safe sidewalks with shade and good crossings serve the majority, reflecting actual use patterns and equity.",
+        "takeaway": "Complete Streets in low-car contexts = prioritize pedestrians and transit users who are the majority."
+      },
+      "explanation": null,
+      "code_citation": "Complete Streets in Philippine Context; NACTO Design Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c176d769266d5d457d5d45e57815d1a25f90a98dbb2f5c875460cc31277554b"
+    },
+    {
+      "question_id": "e8ac5bd4-f744-43ba-bcc0-0fac96da038a",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "What is the core principle of Complete Streets design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Balancing all modes of travel (pedestrians, cyclists, transit, vehicles) with priority to vulnerable users and reflecting the dominant mode in that community"
+        },
+        {
+          "id": "b",
+          "text": "Designing exclusively for cyclists and excluding cars, which is not the intent of Complete Streets"
+        },
+        {
+          "id": "c",
+          "text": "Maximizing vehicle throughput and lane capacity, contrary to the inclusive approach of Complete Streets"
+        },
+        {
+          "id": "d",
+          "text": "Reducing street width to save construction costs, which does not align with Complete Streets principles"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Complete Streets accommodate all users—pedestrians, cyclists, transit users, drivers—with design priority reflecting both vulnerability and actual mode use. In car-dependent areas, design serves vehicles; in pedestrian-heavy areas like Philippine cities, pedestrians come first.",
+        "b": "Complete Streets serves all modes, not exclusively bicycles.",
+        "c": "Vehicle maximization is car-centric design that Complete Streets opposes.",
+        "d": "Width reduction may occur but is not the core principle; equity and safety are.",
+        "correct": "Complete Streets accommodate all users—pedestrians, cyclists, transit users, drivers—with design priority reflecting both vulnerability and actual mode use. In car-dependent areas, design serves vehicles; in pedestrian-heavy areas like Philippine cities, pedestrians come first.",
+        "takeaway": "Complete Streets = multi-modal design reflecting community needs, not just cars."
+      },
+      "explanation": null,
+      "code_citation": "Complete Streets: Design Guidelines (NACTO)",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0daf164eb8b92823e1ed8f206543b4cf4990a3906fc3915a8a280f76e765eded"
+    },
+    {
+      "question_id": "a7c0c61d-6c16-4bfd-8d88-6404e65ee197",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "topic_id": "4318b141-d51e-4a25-92c6-ebed8d10f3c9",
+      "text": "What is the New Urbanism 5-minute walk radius, and what urban sclea does it define?",
+      "options": [
+        {
+          "id": "a",
+          "text": "400 meters; defines a walkable neighborhood with mixed uses"
+        },
+        {
+          "id": "b",
+          "text": "800 meters; defines a transit station catchment area, facilitating efficient public transport access"
+        },
+        {
+          "id": "c",
+          "text": "200 meters; defines a single city block, emphasizing compact urban design"
+        },
+        {
+          "id": "d",
+          "text": "600 meters; defines a commercial district, supporting a concentration of retail and business activities"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "New Urbanism establishes that 400 meters is a 5-minute walk at a comfortable pace; this distance defines a human-scale walkable neighborhood where residents can meet most daily needs by foot.",
+        "b": "800 meters is the outer edge of TOD catchment, not NU's core walk radius.",
+        "c": "200 meters is too small; a typical city block in North American cities is ~100m; 400m allows multiple blocks.",
+        "d": "600 meters is beyond the traditional NU walk radius; commercial districts may extend farther.",
+        "correct": "New Urbanism establishes that 400 meters is a 5-minute walk at a comfortable pace; this distance defines a human-scale walkable neighborhood where residents can meet most daily needs by foot.",
+        "takeaway": "New Urbanism 5-minute walk = 400 meters = the radius defining a traditional walkable neighborhood."
+      },
+      "explanation": null,
+      "code_citation": "New Urbanism Principles; Charter of the New Urbanism",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0ce958ae36d101955574db70fc14df659cdfd78d49cc1e285cf78dc024899a5"
+    }
+  ]
+}

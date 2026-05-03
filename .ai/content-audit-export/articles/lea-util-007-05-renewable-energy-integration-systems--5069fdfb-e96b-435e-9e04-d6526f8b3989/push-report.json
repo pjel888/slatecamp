@@ -1,0 +1,25 @@
+{
+  "attempted_at": "2026-05-03T10:56:04.692Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "diff-report.json marks candidate unsafe.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+  "slug": "lea-util-007-05-renewable-energy-integration-systems",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e",
+  "original_hash": "sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e",
+  "candidate_hash": "sha256:6dd60f12dea2b0a6791ef8776162c427c402eb7cec135211ca0530de41e27dd7",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

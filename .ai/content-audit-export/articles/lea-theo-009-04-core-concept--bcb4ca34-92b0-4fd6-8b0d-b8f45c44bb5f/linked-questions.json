@@ -1,0 +1,528 @@
+{
+  "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:f3d6dfc280ab663ae87e0e2709608ff60a292d3c38cb1e9190d9142847114c2b",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "def18a61-47ba-426b-b327-ec2c1358b57d",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "What is the primary purpose of functional zoning in space planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To comply with municipal zoning regulations regarding land-use classifications and density controls"
+        },
+        {
+          "id": "b",
+          "text": "To organize interior building spaces into operational domains based on access control, use type, and activity intensity"
+        },
+        {
+          "id": "c",
+          "text": "To calculate floor area ratio (FAR) and site development density for regulatory compliance"
+        },
+        {
+          "id": "d",
+          "text": "To establish parking requirements and transportation infrastructure needs for the development"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Municipal zoning is external; functional zoning is internal building organization.",
+        "c": "FAR is a density calculation; it's a consequence of zoning strategy but not its primary purpose.",
+        "d": "Parking and transportation are separate planning functions from functional zoning.",
+        "correct": "Functional zoning organizes spaces into public, semi-public, private, and service zones. This is distinct from land-use zoning and determines how users, staff, and goods move through the building and which activities are adjacent or separated.",
+        "takeaway": "This is distinct from land-use zoning and determines how users, staff, and goods move through the building and which activities are adjacent or separated."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f4ba37793fac1fb5c851ca87761ee06db79bb048ce5ce41902a8a4509a78740"
+    },
+    {
+      "question_id": "196c3551-9f2a-4522-81e4-7ee463c3542e",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "A retail building layout places the checkout counter at the rear of the store, adjacent to the stockroom. Customers must walk through the entire retail floor to exit. What zoning and circulation inefficiency does this create?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Customers are forced to see the entire inventory, potentially increasing sales through exposure, but this may also lead to congestion and reduced shopping comfort."
+        },
+        {
+          "id": "b",
+          "text": "The stockroom adjacency creates operational efficiency by minimizing staff walking distance, yet it may compromise customer service speed and accessibility."
+        },
+        {
+          "id": "c",
+          "text": "Customers may become lost or disoriented, reducing confidence and satisfaction; checkout should be near the exit to facilitate rapid departure after purchase"
+        },
+        {
+          "id": "d",
+          "text": "This layout complies with code egress requirements by creating a single circulation pathway, although it may not optimize customer flow or emergency evacuation."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While customers see inventory, this benefit is secondary to circulation efficiency.",
+        "b": "Staff efficiency doesn't justify poor customer circulation; retail layout should prioritize customer flow.",
+        "d": "Code egress requires exits but does not mandate this specific configuration; zoning principles suggest different positioning.",
+        "correct": "Checkout near the exit allows customers to leave immediately after purchase. Rear-located checkout forces customers to navigate the entire store and slows customer throughput. This is a circulation inefficiency and reduces customer satisfaction. Stockroom should be semi-public or service zone, not customer-facing.",
+        "takeaway": "Stockroom should be semi-public or service zone, not customer-facing."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4120caf00b96ef84025fd18a43c48d97b65fcb38a5d56428990f2524e4824992"
+    },
+    {
+      "question_id": "20b08fc9-e37c-46e8-82e5-9b826188e2e7",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "A downtown mixed-use tower includes ground-floor retail, office floors 2–10, and residential floors 11–15. The retail and office tenants have separate entries and elevators (excellent separation). However, the residential elevator bank is located adjacent to the office elevator lobby, and residents must pass through the office lobby to access restrooms or outdoor spaces. Does this zoning and circulation strategy have problems, and what would you recommend?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mixing residential and office circulation is intentional to encourage community building and cross-use interaction, fostering a vibrant mixed-use environment"
+        },
+        {
+          "id": "b",
+          "text": "This is adequate; while not ideal, residents can tolerate passing through office lobbies for access to common amenities, as long as security measures are in place"
+        },
+        {
+          "id": "c",
+          "text": "This creates zoning conflict; residential semi-public spaces (elevators, corridors, amenities) should not require traversing office zone; separate residential lobby, restrooms, and outdoor access should be designed to isolate residential from office circulation"
+        },
+        {
+          "id": "d",
+          "text": "The problem is unsolvable in mixed-use towers; some overlap between office and residential is inevitable and acceptable, given the constraints of urban development"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Planned interaction (shared café, lobby) is different from forced navigation through one zone to reach another.",
+        "b": "While residents might 'tolerate' it, requiring office zone passage violates zoning logic and compromises residential independence.",
+        "d": "Mixed-use does create complexity, but proper zoning design can minimize overlap; this problem is solvable through better space organization.",
+        "correct": "Residential and office zones have different operational patterns, security requirements, and occupancy types. If residents must pass through office lobbies for basic amenities, zoning separation has failed. The program should ensure residential has independent access to elevators, restrooms, and outdoor space without office zone traversal. This requires either separate restrooms/amenities on residential floors or a shared semi-public zone that doesn't require office lobby passage.",
+        "takeaway": "This requires either separate restrooms/amenities on residential floors or a shared semi-public zone that doesn't require office lobby passage."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:71d28ba71854e8572e61622666fd66f98628b2863890b420dfb64397c3dedaec"
+    },
+    {
+      "question_id": "03340d2d-31aa-4d7e-ba97-f9841c3879c3",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "Which of the following best describes a public zone in a building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interior areas accessible to authorized persons only, controlled through reception or badge systems to ensure security"
+        },
+        {
+          "id": "b",
+          "text": "Service and infrastructure spaces designed for maintenance accessibility rather than occupant comfort, often located away from public view"
+        },
+        {
+          "id": "c",
+          "text": "Spaces accessible to all visitors and customers without restriction, typically located at entries near parking and transit"
+        },
+        {
+          "id": "d",
+          "text": "Areas accessible only to building staff and employees, often requiring special access permissions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes semi-public zones with access control.",
+        "b": "This describes service zones.",
+        "d": "This describes private zones or employee-restricted areas.",
+        "correct": "Public zones are accessible to all visitors without restriction. They include lobbies, retail spaces, public restrooms, and are located for visibility and access. They require clear wayfinding and comfortable conditions.",
+        "takeaway": "They require clear wayfinding and comfortable conditions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04ff14718c85b0f1faeef6780b399b6a0ad820e418183e92c6eb0f1c23df6960"
+    },
+    {
+      "question_id": "188c051c-c50d-4244-a498-58551c2a4b8d",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "A hospital program organizes zones vertically: ambulatory care (ground floor), inpatient units (floors 2–5), intensive care and surgery (floors 6–8), and administrative offices (floors 9–10). Does this vertical stacking effectively apply zoning logic, or are there problems with this organization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "This is effective; vertical stacking minimizes horizontal circulation and maintains clear zone separation throughout the building, optimizing operational efficiency"
+        },
+        {
+          "id": "b",
+          "text": "This creates problems; intensive care and surgery (service-intensive, restricted access) should be mid-building to serve multiple patient floors efficiently, not isolated at the top"
+        },
+        {
+          "id": "c",
+          "text": "This is ideal; administrative offices above clinical areas maintain oversight and management control, ensuring streamlined operations"
+        },
+        {
+          "id": "d",
+          "text": "This is inefficient; all medical functions should be on one floor to minimize vertical circulation and equipment movement, reducing logistical complexity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While separation is good, the specific arrangement isn't optimal.",
+        "c": "Administrative oversight doesn't require vertical positioning above clinical areas.",
+        "d": "Single-floor concentration eliminates the benefits of vertical separation.",
+        "correct": "Vertical stacking can work, but ICU and surgery (specialized, equipment-intensive, restricted access) should serve multiple inpatient floors efficiently. Placing them at the top isolates them from patients they serve. Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location.",
+        "takeaway": "Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b3b28bfb31b8ca70a98ddbe04ccd3144a64d3200cb77a93d239d2b6fa3428ea"
+    },
+    {
+      "question_id": "a9b4d635-7bbf-451b-bc39-d044c1c5ee2f",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "What is a buffer space in the context of functional zoning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An undersized vestibule used for code compliance in egress pathways, often leading to congestion during emergency evacuations"
+        },
+        {
+          "id": "b",
+          "text": "A parking area separating the building from the surrounding neighborhood, providing a visual and physical barrier to reduce noise and enhance privacy"
+        },
+        {
+          "id": "c",
+          "text": "A storage area for temporary holding of materials or equipment, ensuring that operational spaces remain uncluttered and efficient"
+        },
+        {
+          "id": "d",
+          "text": "A transition zone (hallway, mechanical room, restroom) between incompatible uses providing separation and acoustic/visual privacy"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Vestibules serve egress; buffer spaces serve zone separation primarily.",
+        "b": "Parking areas are not buffer spaces in zoning terminology.",
+        "c": "Storage areas serve different functions; they're not specifically designed as zone transitions.",
+        "correct": "Buffer spaces provide transition between incompatible zones. For example, a wall of bathrooms or mechanical rooms between a public retail area and semi-public office spaces. They reduce noise transmission, prevent visual intrusion, and manage operational conflicts.",
+        "takeaway": "They reduce noise transmission, prevent visual intrusion, and manage operational conflicts."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c037c7c1c950e1852e40072d335034cb0a5e98bbeec0a2a0d2feb052e0041ab9"
+    },
+    {
+      "question_id": "f2555048-4739-4750-95c4-e1be44f37a22",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "In a hotel, guests enter through the main lobby (public zone), staff utilize separate circulation to reach employee areas (semi-public zone), and loading occurs at the rear service entrance (service zone). This design separates three circulation flows. What is the primary benefit of this separation strategy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It prevents operational conflicts; guest experience is not disrupted by staff movement or delivery trucks"
+        },
+        {
+          "id": "b",
+          "text": "It allows staff to access guest areas whenever necessary without formal security protocols, which could compromise security"
+        },
+        {
+          "id": "c",
+          "text": "It reduces the total floor area required for circulation, which is not typically the case"
+        },
+        {
+          "id": "d",
+          "text": "It eliminates the need for interior signage and wayfinding systems, which is not accurate"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Separation achieves the opposite; it restricts staff access to guest areas, protecting guest privacy.",
+        "c": "Separation may increase circulation area; efficiency is not the primary goal.",
+        "d": "Signage is still necessary; separation doesn't eliminate wayfinding needs.",
+        "correct": "Separated circulation prevents guests from encountering staff activity, seeing service operations, or navigating through loading areas. This maintains guest experience quality and prevents operational conflicts (delivery trucks blocking guest access, staff presence reducing guest privacy).",
+        "takeaway": "This maintains guest experience quality and prevents operational conflicts (delivery trucks blocking guest access, staff presence reducing guest privacy)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:22ba60449cb92eaf4189a0f3d2c5a04b8aa6eb0665d9c7f26b30f11ae61192ff"
+    },
+    {
+      "question_id": "dd37f9ef-1b66-481d-8b06-52b2abfa191c",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "In a mixed-use building with ground-floor retail and residential units above, the program states that mechanical equipment rooms must be separated from residential units to minimize noise transmission. Which zoning strategy and buffer approach best addresses this adjacency problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Distribute mechanical rooms throughout the building adjacent to each use they serve, accepting minor noise impacts as a trade-off for convenience"
+        },
+        {
+          "id": "b",
+          "text": "Locate mechanical rooms in the basement or rooftop; ensure residential units are stacked vertically above retail without mechanical proximity"
+        },
+        {
+          "id": "c",
+          "text": "Place mechanical rooms on residential floors, separated by thick walls and acoustic treatment; locate retail separately to minimize interference"
+        },
+        {
+          "id": "d",
+          "text": "Consolidate retail and mechanical together to reduce the number of separate zones, simplifying maintenance and operational logistics"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This violates the undesirable (X) adjacency requirement between mechanical and residential.",
+        "c": "Placing mechanical on residential floors increases noise impact despite wall treatment.",
+        "d": "Consolidating retail and mechanical creates different problems; retail already conflicts with residential without adding mechanical noise.",
+        "correct": "Mechanical rooms belong in service zones (basement or rooftop). Residential units stack above, with retail at ground level. This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces.",
+        "takeaway": "This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2b15e9dedf28d7af3645edcb568a8c7d4c8fb14cd30cf0c5fae12a55986f994a"
+    },
+    {
+      "question_id": "91aca2d0-cf49-4ee3-bd54-352d2dc91fbe",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "A designer proposes a residential building with public lobbies on two different sides (north and south), semi-public elevator corridors on each floor, and private residential units distributed across the floor plates. Is this zoning strategy coherent, and why or why not?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; this strategy maximizes natural light and ventilation by distributing public access points symmetrically, which can enhance the overall environmental quality of the building"
+        },
+        {
+          "id": "b",
+          "text": "No; residential buildings should have only one entry point for security and operational control, ensuring that access is monitored and managed effectively"
+        },
+        {
+          "id": "c",
+          "text": "Yes; multiple public entries improve accessibility and allow residents to choose preferred routes, which can be beneficial for convenience and emergency egress"
+        },
+        {
+          "id": "d",
+          "text": "This creates zoning confusion; multiple public lobbies serve different purposes; if both serve residents, having two public entries compromises security; if one is public and one is private, the distinction should be clear in the design and program"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Light and ventilation benefits don't override security and zoning clarity requirements.",
+        "b": "One entry is not required; multiple entries can work if they serve distinct functions (resident vs. service, for example).",
+        "c": "Multiple entries for residents (same user group) undermine security; this assumes the lobbies serve the same function.",
+        "correct": "Two lobbies must serve distinct functions clearly. If both serve residents, they undermine access control and security. If one serves residents and one serves commercial/shared uses, this should be explicit in program and design. Ambiguity about zone boundaries and access creates operational and safety problems. The program should clarify what each public zone serves.",
+        "takeaway": "The program should clarify what each public zone serves."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:093f1103518c029cea7d4745ae1e26d42f3171070c5524a8c01dbdcc66408bbb"
+    },
+    {
+      "question_id": "aa6e8d0e-1856-49bc-8d83-ab45d167bea1",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "In a suburban office park, each building is surrounded by parking, with delivery trucks accessing the same parking area as employee and visitor vehicles. What zoning and circulation problem could result from this strategy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Employee cars and delivery trucks occupy the same lot, creating conflicts; visitor experience is compromised by service vehicle presence; valet parking may be necessary"
+        },
+        {
+          "id": "b",
+          "text": "Shared parking reduces total land consumption and cost, improving site efficiency, but may lead to congestion"
+        },
+        {
+          "id": "c",
+          "text": "Shared parking is best practice for suburban office parks; separation would waste land, though it may improve safety"
+        },
+        {
+          "id": "d",
+          "text": "Office workers benefit from seeing operational activity; transparency improves employee morale, though it may distract from work"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While cost efficiency matters, it doesn't justify poor operational performance.",
+        "c": "Suburban sites often have space for separation; separation is preferable where feasible.",
+        "d": "Employees don't benefit from seeing loading activity; this isn't a benefit but a cost.",
+        "correct": "Service zone (loading) should be separated from public parking. Delivery trucks queuing, maneuvering, or loading next to visitor parking creates congestion, operational conflicts, and poor first impressions. Service circulation should be independent.",
+        "takeaway": "Service circulation should be independent."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7238d6a9570ba0ede22b76bc40d2d3b7cac0fa13a736fb7d476b11b14a4e0c4f"
+    }
+  ]
+}

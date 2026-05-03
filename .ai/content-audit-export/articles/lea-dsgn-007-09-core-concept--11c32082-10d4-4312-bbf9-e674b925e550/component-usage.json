@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+  "slug": "lea-dsgn-007-09-core-concept",
+  "title": "MEP space allocation",
+  "component_count": 2,
+  "components": [
+    {
+      "component_name": "Tip",
+      "block_ids": [
+        "ui_0001"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "WikiMistakeList",
+      "block_ids": [
+        "ui_0002"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    }
+  ],
+  "unknown_components": [],
+  "custom_ui_block_count": 2,
+  "normalized_status": "passed",
+  "components_detected": [
+    "Tip",
+    "WikiMistakeList"
+  ],
+  "unknown_components_detected": []
+}

@@ -1,0 +1,250 @@
+{
+  "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+  "slug": "lea-util-003-03-protection-levels-and-risk-assessment",
+  "normalized_created_at": "2026-05-01T13:33:43.589Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:4a378c804c4fe84e091f7126fb771caa77b115e2cb064b4f5096669c8751b05c",
+  "normalized_content_hash": "e88dada7925704e1de35f43d26414926244a1e6cc7b73140db20dc604c10ceaf",
+  "ui_block_count": 7,
+  "total_blocks": 8,
+  "blocks": [
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiCalloutBox",
+      "raw": "<WikiCalloutBox title=\"Rolling Sphere Radii (IEC 62305-3)\" variant=\"info\">Each protection level has a defined radius: **Level I = 20 m**, **Level II = 30 m**, **Level III = 45 m**, **Level IV = 60 m**. These radii determine the maximum distance from air terminals at which protection extends. In the Philippines, Level II and III systems are most common for commercial and residential buildings.</WikiCalloutBox>",
+      "raw_hash": "sha256:00db34106594bf8ff22ba876c841a57660c37240bbe6d841fd156bf0be465f65",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiCalloutBox\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Rolling Sphere Radii (IEC 62305-3)\", variant=\"info\"\n- Text: Each protection level has a defined radius: **Level I = 20 m**, **Level II = 30 m**, **Level III = 45 m**, **Level IV = 60 m**. These radii determine the maximum distance from air terminals at which protection extends. In the Philippines, Level II and III systems are most common for commercial and residential buildings.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:69d1e15606e90bd0133de5102f9ae156295fbfcfcee0def20f21becf137df650",
+      "props": {
+        "title": "Rolling Sphere Radii (IEC 62305-3)",
+        "variant": "info"
+      },
+      "props_json": {
+        "title": "Rolling Sphere Radii (IEC 62305-3)",
+        "variant": "info"
+      },
+      "props_text": "title=\"Rolling Sphere Radii (IEC 62305-3)\" variant=\"info\"",
+      "children_raw": "Each protection level has a defined radius: **Level I = 20 m**, **Level II = 30 m**, **Level III = 45 m**, **Level IV = 60 m**. These radii determine the maximum distance from air terminals at which protection extends. In the Philippines, Level II and III systems are most common for commercial and residential buildings.",
+      "children_text": "Each protection level has a defined radius: **Level I = 20 m**, **Level II = 30 m**, **Level III = 45 m**, **Level IV = 60 m**. These radii determine the maximum distance from air terminals at which protection extends. In the Philippines, Level II and III systems are most common for commercial and residential buildings.",
+      "start_offset": 1987,
+      "end_offset": 2399,
+      "line_start": 34,
+      "line_end": 34,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip message=\"In tropical regions, inspect air terminal connections annually for corrosion at copper-aluminum interfaces. Use bimetallic washers and anti-oxidant compound.\" />",
+      "raw_hash": "sha256:7130e938130450ac1592a7c0d589e3714d8dfab1a6148115db5c2847f159cea1",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: message=\"In tropical regions, inspect air terminal connections annually for corrosion at copper-aluminum interfaces. Use bimetallic washers and anti-oxidant compound.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e6344dbbbc4b40eb0d4cc6a6a71b1bd72593019585972c5030d26f0f3c820005",
+      "props": {
+        "message": "In tropical regions, inspect air terminal connections annually for corrosion at copper-aluminum interfaces. Use bimetallic washers and anti-oxidant compound."
+      },
+      "props_json": {
+        "message": "In tropical regions, inspect air terminal connections annually for corrosion at copper-aluminum interfaces. Use bimetallic washers and anti-oxidant compound."
+      },
+      "props_text": "message=\"In tropical regions, inspect air terminal connections annually for corrosion at copper-aluminum interfaces. Use bimetallic washers and anti-oxidant compound.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8121,
+      "end_offset": 8296,
+      "line_start": 172,
+      "line_end": 172,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "Example",
+      "raw": "<Example title=\"Ground Resistance Calculation\">\n**Scenario:** Metro Manila building with clay soil (resistivity 120 ohms\u00b7m), requires \u226410 ohms.\n\n**Rod specification:** Two 3.5 m deep copper rods, 16 mm diameter, spaced 5.5 m apart (1.5\u00d7 length rule).\n\n**Calculation:**\n- Single rod: R = \u03c1 / L = 120 / 3.5 \u2248 34 ohms\n- Two rods in parallel (approximate): R_parallel \u2248 34 / 2 = 17 ohms (overestimate; actual lower due to spacing reduction factor)\n- With spacing factor k \u2248 0.6: R \u2248 17 \u00d7 0.6 \u2248 10.2 ohms (marginal)\n\n**Improvement:** Add horizontal strap or ring conductor buried 1 m deep around rod cluster.\n- Ring adds ~5 ohms capacitance (parallel path)\n- Final system: R \u2248 (10.2 \u00d7 5) / (10.2 + 5) \u2248 3.4 ohms (well below 10 ohm target)\n\n**Test:** Verify with clamp-on tester at three points on system perimeter; all \u226410 ohms confirms compliance.\n</Example>",
+      "raw_hash": "sha256:e55d83af73090bb29de3222dba06eca262d7811ec50f79a6f87059f9dd7295ab",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Example\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Ground Resistance Calculation\"\n- Text: **Scenario:** Metro Manila building with clay soil (resistivity 120 ohms\u00b7m), requires \u226410 ohms. **Rod specification:** Two 3.5 m deep copper rods, 16 mm diameter, spaced 5.5 m apart (1.5\u00d7 length rule). **Calculation:** - Single rod: R = \u03c1 / L = 120 / 3.5 \u2248 34 ohms - Two rods in parallel (approximate): R_parallel \u2248 34 / 2 = 17 ohms (overestimate; actual lower due to spacing reduction factor) - With spacing factor k \u2248 0.6: R \u2248 17 \u00d7 0.6 \u2248 10.2 ohms (marginal) **Improvement:** Add horizontal strap o\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ee2faf42f14ab68aa663282b58ae0115e30cb00276c16aed10824fb123b49d7e",
+      "props": {
+        "title": "Ground Resistance Calculation"
+      },
+      "props_json": {
+        "title": "Ground Resistance Calculation"
+      },
+      "props_text": "title=\"Ground Resistance Calculation\"",
+      "children_raw": "\n**Scenario:** Metro Manila building with clay soil (resistivity 120 ohms\u00b7m), requires \u226410 ohms.\n\n**Rod specification:** Two 3.5 m deep copper rods, 16 mm diameter, spaced 5.5 m apart (1.5\u00d7 length rule).\n\n**Calculation:**\n- Single rod: R = \u03c1 / L = 120 / 3.5 \u2248 34 ohms\n- Two rods in parallel (approximate): R_parallel \u2248 34 / 2 = 17 ohms (overestimate; actual lower due to spacing reduction factor)\n- With spacing factor k \u2248 0.6: R \u2248 17 \u00d7 0.6 \u2248 10.2 ohms (marginal)\n\n**Improvement:** Add horizontal strap or ring conductor buried 1 m deep around rod cluster.\n- Ring adds ~5 ohms capacitance (parallel path)\n- Final system: R \u2248 (10.2 \u00d7 5) / (10.2 + 5) \u2248 3.4 ohms (well below 10 ohm target)\n\n**Test:** Verify with clamp-on tester at three points on system perimeter; all \u226410 ohms confirms compliance.\n",
+      "children_text": "**Scenario:** Metro Manila building with clay soil (resistivity 120 ohms\u00b7m), requires \u226410 ohms. **Rod specification:** Two 3.5 m deep copper rods, 16 mm diameter, spaced 5.5 m apart (1.5\u00d7 length rule). **Calculation:** - Single rod: R = \u03c1 / L = 120 / 3.5 \u2248 34 ohms - Two rods in parallel (approximate): R_parallel \u2248 34 / 2 = 17 ohms (overestimate; actual lower due to spacing reduction factor) - With spacing factor k \u2248 0.6: R \u2248 17 \u00d7 0.6 \u2248 10.2 ohms (marginal) **Improvement:** Add horizontal strap o",
+      "start_offset": 11030,
+      "end_offset": 11884,
+      "line_start": 247,
+      "line_end": 262,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "WikiCalloutBox",
+      "raw": "<WikiCalloutBox title=\"PD 1096 Requirements for Tall Buildings (UK Standard, Reference)\" variant=\"warning\">PD 1096 does not specify LPS; PEC references NFPA 780 (45m RSM radius) for all structures. For tall residential towers and commercial buildings exceeding 50 m in Philippine cities, use RSM with Level II protection minimum. Mesh conductor spacing \u226410 m required on roofs of structures >50 m to ensure comprehensive coverage and current distribution redundancy.</WikiCalloutBox>",
+      "raw_hash": "sha256:16c6e99cc0ec1aae2f2e4ccf9d1d316232545f6563cf4ff5c6d05aed5f82fb53",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiCalloutBox\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"PD 1096 Requirements for Tall Buildings (UK Standard, Reference)\", variant=\"warning\"\n- Text: PD 1096 does not specify LPS; PEC references NFPA 780 (45m RSM radius) for all structures. For tall residential towers and commercial buildings exceeding 50 m in Philippine cities, use RSM with Level II protection minimum. Mesh conductor spacing \u226410 m required on roofs of structures >50 m to ensure comprehensive coverage and current distribution redundancy.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ccbb9355adaee21625b7b9c221d5f85c9b7d9d307eede6a5438b25c3e5da7fc7",
+      "props": {
+        "title": "PD 1096 Requirements for Tall Buildings (UK Standard, Reference)",
+        "variant": "warning"
+      },
+      "props_json": {
+        "title": "PD 1096 Requirements for Tall Buildings (UK Standard, Reference)",
+        "variant": "warning"
+      },
+      "props_text": "title=\"PD 1096 Requirements for Tall Buildings (UK Standard, Reference)\" variant=\"warning\"",
+      "children_raw": "PD 1096 does not specify LPS; PEC references NFPA 780 (45m RSM radius) for all structures. For tall residential towers and commercial buildings exceeding 50 m in Philippine cities, use RSM with Level II protection minimum. Mesh conductor spacing \u226410 m required on roofs of structures >50 m to ensure comprehensive coverage and current distribution redundancy.",
+      "children_text": "PD 1096 does not specify LPS; PEC references NFPA 780 (45m RSM radius) for all structures. For tall residential towers and commercial buildings exceeding 50 m in Philippine cities, use RSM with Level II protection minimum. Mesh conductor spacing \u226410 m required on roofs of structures >50 m to ensure comprehensive coverage and current distribution redundancy.",
+      "start_offset": 12542,
+      "end_offset": 13025,
+      "line_start": 282,
+      "line_end": 282,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0006",
+      "block_type": "mdx_component",
+      "component_name": "Warn",
+      "raw": "<Warn message=\"Lightning protection systems deteriorate over time. Annual inspection and 5-year comprehensive testing are mandatory in the Philippines per PEC guidelines.\" />",
+      "raw_hash": "sha256:2e0518b5218cb386b9c3b8a619c745c0966ac589a5501631c220f22759973324",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"Warn\" status=\"preserved\"]\nExtracted summary:\n- Props: message=\"Lightning protection systems deteriorate over time. Annual inspection and 5-year comprehensive testing are mandatory in the Philippines per PEC guidelines.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:58cfae0eaa2d36ec0958e740ad91afa550cad0f72853dbd8715e118913b83d25",
+      "props": {
+        "message": "Lightning protection systems deteriorate over time. Annual inspection and 5-year comprehensive testing are mandatory in the Philippines per PEC guidelines."
+      },
+      "props_json": {
+        "message": "Lightning protection systems deteriorate over time. Annual inspection and 5-year comprehensive testing are mandatory in the Philippines per PEC guidelines."
+      },
+      "props_text": "message=\"Lightning protection systems deteriorate over time. Annual inspection and 5-year comprehensive testing are mandatory in the Philippines per PEC guidelines.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 14537,
+      "end_offset": 14711,
+      "line_start": 320,
+      "line_end": 320,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0007",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"},{\"mistake\": \"Accepting ground resistance >15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"},{\"mistake\": \"Running down conductors through occupied spaces (inside walls, along window edges). Strikes produce 30 kA+ currents; voltage rise creates electrocution risk.\",\"correction\": \"Route down conductors on exterior surfaces only. Maintain \u22651.8 m clearance from windows, doors, balconies per NFPA 780. Use insulated supports or conduit for added safety.\"},{\"mistake\": \"Bonding metal roof equipment with undersized wire (e.g., 6 mm\u00b2 copper instead of 16 mm\u00b2 minimum).\",\"correction\": \"All bonding must use \u226516 mm\u00b2 copper or \u226525 mm\u00b2 aluminum per PEC. Undersized bonding can fuse during strike, creating hazard.\"},{\"mistake\": \"Installing air terminals with ball-end design on residential buildings. Belief that ball is more effective.\",\"correction\": \"Ball and sharp terminals are equivleant per IEC 62305. Choose based on aesthetics or regional preference. Ensure terminal \u22650.5 m above roof, properly secured.\"},{\"mistake\": \"Neglecting bonding of solar panel frames. Assumption that PV systems are isolated.\",\"correction\": \"Solar panels are metal structures exposed to direct lightning. Bond frames to down conductor system within 2 m. Bond DC strings and inverter chassis via SPD to grounding network.\"}]} />",
+      "raw_hash": "sha256:b9c5987bb598b2ea6024f2834f65340541b2e4b84f5db541d09817691776e6cd",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"WikiMistakeList\" status=\"unknown\"]\nExtracted summary:\n- Props: mistakes=\"{[{\\\"mistake\\\": \\\"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\\\",\\\"correction\\\": \\\"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\\\"}\", mistake=true, Accepting=true, ground=true, resistance=true\n- Text: 15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"}, , , , ]} />\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:cc0a2a7555195bf66c888c27d1d3375aaae0a0601f9e7b59b63b80abc2ddf251",
+      "props": {
+        "mistakes": "{[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"}",
+        "mistake": true,
+        "Accepting": true,
+        "ground": true,
+        "resistance": true
+      },
+      "props_json": {
+        "mistakes": "{[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"}",
+        "mistake": true,
+        "Accepting": true,
+        "ground": true,
+        "resistance": true
+      },
+      "props_text": "mistakes={[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"},{\"mistake\": \"Accepting ground resistance",
+      "children_raw": null,
+      "children_text": "15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"}, , , , ]} />",
+      "start_offset": 16843,
+      "end_offset": 18737,
+      "line_start": 363,
+      "line_end": 363,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    },
+    {
+      "block_id": "ui_0008",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout type=\"info\" title=\"Design Documentation Package\">For any structure requiring LPS in the Philippines, prepare:**\u2022 Building layout with LPS component locations (plan and elevation views)\u2022 Air terminal specifications and placement rationlea (RSM verification)\u2022 Down conductor routing and bonding schedule\u2022 Grounding electrode design and soil resistivity test results\u2022 Calculated zone of protection diagram\u2022 Maintenance schedule and testing intervals\u2022 Compliance statement referencing PEC Part 2 and IEC 62305**This package becomes the basis for LEA licensing exam questions and site inspection.** </Callout>",
+      "raw_hash": "sha256:03136f8ab1a16652e59b7263b04221951842b07d40950294f8b7668fd2ec5fc9",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0008 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"info\", title=\"Design Documentation Package\"\n- Text: For any structure requiring LPS in the Philippines, prepare:**\u2022 Building layout with LPS component locations (plan and elevation views)\u2022 Air terminal specifications and placement rationlea (RSM verification)\u2022 Down conductor routing and bonding schedule\u2022 Grounding electrode design and soil resistivity test results\u2022 Calculated zone of protection diagram\u2022 Maintenance schedule and testing intervals\u2022 Compliance statement referencing PEC Part 2 and IEC 62305**This package becomes the basis for LEA lic\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:cd976391c2da3d90a2303c3a3b7262b3248ff59208dd8d39181ded54266021df",
+      "props": {
+        "type": "info",
+        "title": "Design Documentation Package"
+      },
+      "props_json": {
+        "type": "info",
+        "title": "Design Documentation Package"
+      },
+      "props_text": "type=\"info\" title=\"Design Documentation Package\"",
+      "children_raw": "For any structure requiring LPS in the Philippines, prepare:**\u2022 Building layout with LPS component locations (plan and elevation views)\u2022 Air terminal specifications and placement rationlea (RSM verification)\u2022 Down conductor routing and bonding schedule\u2022 Grounding electrode design and soil resistivity test results\u2022 Calculated zone of protection diagram\u2022 Maintenance schedule and testing intervals\u2022 Compliance statement referencing PEC Part 2 and IEC 62305**This package becomes the basis for LEA licensing exam questions and site inspection.** ",
+      "children_text": "For any structure requiring LPS in the Philippines, prepare:**\u2022 Building layout with LPS component locations (plan and elevation views)\u2022 Air terminal specifications and placement rationlea (RSM verification)\u2022 Down conductor routing and bonding schedule\u2022 Grounding electrode design and soil resistivity test results\u2022 Calculated zone of protection diagram\u2022 Maintenance schedule and testing intervals\u2022 Compliance statement referencing PEC Part 2 and IEC 62305**This package becomes the basis for LEA lic",
+      "start_offset": 19695,
+      "end_offset": 20308,
+      "line_start": 382,
+      "line_end": 382,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0007",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"},{\"mistake\": \"Accepting ground resistance >15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"},{\"mistake\": \"Running down conductors through occupied spaces (inside walls, along window edges). Strikes produce 30 kA+ currents; voltage rise creates electrocution risk.\",\"correction\": \"Route down conductors on exterior surfaces only. Maintain \u22651.8 m clearance from windows, doors, balconies per NFPA 780. Use insulated supports or conduit for added safety.\"},{\"mistake\": \"Bonding metal roof equipment with undersized wire (e.g., 6 mm\u00b2 copper instead of 16 mm\u00b2 minimum).\",\"correction\": \"All bonding must use \u226516 mm\u00b2 copper or \u226525 mm\u00b2 aluminum per PEC. Undersized bonding can fuse during strike, creating hazard.\"},{\"mistake\": \"Installing air terminals with ball-end design on residential buildings. Belief that ball is more effective.\",\"correction\": \"Ball and sharp terminals are equivleant per IEC 62305. Choose based on aesthetics or regional preference. Ensure terminal \u22650.5 m above roof, properly secured.\"},{\"mistake\": \"Neglecting bonding of solar panel frames. Assumption that PV systems are isolated.\",\"correction\": \"Solar panels are metal structures exposed to direct lightning. Bond frames to down conductor system within 2 m. Bond DC strings and inverter chassis via SPD to grounding network.\"}]} />",
+      "raw_hash": "sha256:b9c5987bb598b2ea6024f2834f65340541b2e4b84f5db541d09817691776e6cd",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"WikiMistakeList\" status=\"unknown\"]\nExtracted summary:\n- Props: mistakes=\"{[{\\\"mistake\\\": \\\"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\\\",\\\"correction\\\": \\\"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\\\"}\", mistake=true, Accepting=true, ground=true, resistance=true\n- Text: 15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"}, , , , ]} />\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:cc0a2a7555195bf66c888c27d1d3375aaae0a0601f9e7b59b63b80abc2ddf251",
+      "props": {
+        "mistakes": "{[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"}",
+        "mistake": true,
+        "Accepting": true,
+        "ground": true,
+        "resistance": true
+      },
+      "props_json": {
+        "mistakes": "{[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"}",
+        "mistake": true,
+        "Accepting": true,
+        "ground": true,
+        "resistance": true
+      },
+      "props_text": "mistakes={[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"},{\"mistake\": \"Accepting ground resistance",
+      "children_raw": null,
+      "children_text": "15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"}, , , , ]} />",
+      "start_offset": 16843,
+      "end_offset": 18737,
+      "line_start": 363,
+      "line_end": 363,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    }
+  ],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "0e5f2d6c468d87fc1243cd19ba7638e9ff5f0847f7003f2875c8ec2d3fa0f5f9"
+}

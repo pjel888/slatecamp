@@ -1,0 +1,26 @@
+{
+  "attempted_at": "2026-05-03T10:56:00.826Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
+  "slug": "lea-util-003-08-summary-for-exam-preparation",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:bb456ecfc57abdbc9913b2660de1dad2bd21321a3b83ca9f4b18c09a0d8c4b86",
+  "original_hash": "sha256:bb456ecfc57abdbc9913b2660de1dad2bd21321a3b83ca9f4b18c09a0d8c4b86",
+  "candidate_hash": "sha256:d7ae0dd7bf8e0aa7d686de0012f9bc0aba6fac871a368ecf40455ce27a6b2aaf",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

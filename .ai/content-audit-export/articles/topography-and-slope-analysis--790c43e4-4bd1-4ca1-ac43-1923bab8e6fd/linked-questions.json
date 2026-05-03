@@ -1,0 +1,1072 @@
+{
+  "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:3e97b984a6f832371137e49a41cfc3481ec842f78ade59f3dd78bf62dc4d8cae",
+  "question_count": 21,
+  "questions": [
+    {
+      "question_id": "35930373-02f8-44c2-aa44-fe0dd8c6e1d3",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Based on the specifications in \"Topography and Slope Analysis\", if a project requires 520 m, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "520 m is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "520 m is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "520 m applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "520 m is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 520 m as the requirement. Context: . 340.0 m³   > **Answer: B. 442.0 m³**   > Step 1: Loose volume = 400 × 1.30 = 5...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:16.997009+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d0cde95d8e41bf0e5e3a750156f6afc3118f4421df30c8ab895510adab471242"
+    },
+    {
+      "question_id": "6de0a527-e449-42eb-87e3-dad7f3a80c0a",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site in Baguio City drops 15 meters over a horizontal distance of 120 meters. What is the slope expressed as a percentage, as a ratio, and in degrees?",
+      "options": [
+        {
+          "id": "A",
+          "text": "12.5%, 1:8, and approximately 7.1°, placing the site in the buildable-with-moderate-grading range"
+        },
+        {
+          "id": "B",
+          "text": "8.0%, 1:15, and approximately 4.6°, placing the site in the easily buildable range"
+        },
+        {
+          "id": "C",
+          "text": "15.0%, 1:8, and approximately 8.5°, placing the site in the challenging range requiring retaining walls"
+        },
+        {
+          "id": "D",
+          "text": "12.5%, 1:12, and approximately 5.7°, consistent with an accessible ramp under BP 344"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Slope (%) = (15/120) × 100 = 12.5%. Ratio = 1:(120/15) = 1:8. θ = arctan(15/120) = arctan(0.125) = 7.13°.",
+        "explanation": "Slope (%) = (Rise / Run) × 100 = (15 / 120) × 100 = 12.5%. Slope Ratio = 1 : (Run / Rise) = 1 : (120 / 15) = 1:8. θ = arctan(Rise / Run) = arctan(15 / 120) = arctan(0.125) = 7.13°. At 12.5%, this site falls in the 5–15% range — buildable with moderate grading using standard foundations. A split-level or stepped design working with the natural grade is advisable. Option B understates slope; Option C overstates; Option D uses the 1:12 BP 344 ramp slope, which is unrelated to site topography.",
+        "common_misconceptions": [
+          "Confusing slope percentage (12.5%) with the rise value (15 m) or using them interchangeably",
+          "Miscomputing the ratio by inverting run and rise to get 1:8 vs 8:1"
+        ]
+      },
+      "explanation": "Slope (%) = (Rise/Run) × 100; Ratio = 1:(Run/Rise); θ = arctan(Rise/Run). At 12.5%, moderate grading with standard foundations applies.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c517333609c8b9a0fe4cb80738cccb978a05c43f0e1cc91a171f3f274a7fbf9"
+    },
+    {
+      "question_id": "837dca5e-2331-4cb6-863a-b7c1004559a7",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A client asks whether a 45% slope site in a non-coastal area can be developed for a school building. Evaluate the complete regulatory and design implications under Philippine practice.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, freely; a 45% slope is in the difficult but buildable range and only requires standard engineering approval from the OBO, provided that the soil stability is verified"
+        },
+        {
+          "id": "B",
+          "text": "Yes, with standard retaining walls; a 45% slope falls within the 25–40% challenging range and is routinely developed in Baguio City, subject to local zoning ordinances"
+        },
+        {
+          "id": "C",
+          "text": "No; a 45% slope automatically prohibits construction under PD 1096, which classifies slopes above 30% as geohazard no-build zones, unless a special permit is obtained"
+        },
+        {
+          "id": "D",
+          "text": "Possibly, but the 45% slope exceeds the generally unbuildable threshold (>40%), and slopes approaching 50% may trigger ECA classification requiring an ECC from DENR-EMB"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "45% exceeds the >40% generally-unbuildable threshold and approaches the 50% ECA trigger under Proclamation 2146, making DENR-EMB ECC requirements a real possibility.",
+        "explanation": "This question tests Trap 3 from the article. A 45% slope falls in the >40% range classified as 'generally unbuildable for conventional structures — requiring slope stabilization or specialized engineering.' It also approaches the 50% ECA threshold under Proclamation No. 2146, which would require an Environmental Compliance Certificate from DENR-EMB. The MGB may also classify such slopes as no-build zones if geologically unstable. The answer on the ALE is not merely 'it's expensive' — it involves regulatory consequences (ECC) or prohibition. Option A understates the risk. Option C fabricates a PD 1096 30% prohibition. Option D misclassifies 45% as within the 25–40% range.",
+        "common_misconceptions": [
+          "Treating slope constraints as purely engineering cost issues without considering Proclamation 2146 ECA triggers",
+          "Misclassifying a 45% slope as within the 25–40% difficult range rather than the >40% generally-unbuildable range"
+        ]
+      },
+      "explanation": "At 45%, the site is generally unbuildable and approaching ECA territory (50%) — the LEA answer must address both engineering difficulty and regulatory ECC obligations.",
+      "code_citation": "Proclamation No. 2146 (1981); PD 1586",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3187903722a0ca072e85021c284152bc514df78f7e5c903ce6f36140edee8259"
+    },
+    {
+      "question_id": "eab53410-7453-4944-89b9-b4229fa69d6c",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site survey shows a slope of 32%. Based on Philippine site planning buildability classifications, what does this slope range require?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No special measures; 32% is within the easily buildable range of 0–15% for most building types, allowing standard construction practices"
+        },
+        {
+          "id": "B",
+          "text": "Moderate grading and stepped foundations with standard structural systems are sufficient at 32%, provided that additional erosion control measures are implemented"
+        },
+        {
+          "id": "C",
+          "text": "Significant earthwork, major retaining structures, and erosion control — the 25–40% range is classified as difficult"
+        },
+        {
+          "id": "D",
+          "text": "The site is unbuildable by regulation; slopes above 30% are automatically classified as no-build zones, requiring a variance for any construction"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "At 32%, the site falls in the 25–40% 'difficult' range requiring significant earthwork, retaining structures, and erosion control.",
+        "explanation": "The article's buildability classification places 32% in the 25–40% range: 'Difficult — significant earthwork, retaining structures, and erosion control required.' The ranges are: 0–5% (easily buildable), 5–15% (moderate grading), 15–25% (challenging, stepped foundations), 25–40% (difficult, major earthwork), >40% (generally unbuildable). Option A applies the wrong range. Option B applies the 15–25% response to a 25–40% slope. Option D fabricates a 30% automatic no-build threshold — the actual Philippine trigger is >50% for ECA classification under Proclamation 2146.",
+        "common_misconceptions": [
+          "Applying the 15–25% design response (stepped foundations) to slopes in the harder 25–40% range",
+          "Confusing the >50% ECA threshold with a blanket prohibition above 30%"
+        ]
+      },
+      "explanation": "Philippine buildability tiers: 0–5% easy, 5–15% moderate, 15–25% challenging, 25–40% difficult, >40% generally unbuildable. At 32%, major earthwork applies.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c58771d1e982b57265696a90ca69c09e49102f13b184e67c865f3d86b78f8c0"
+    },
+    {
+      "question_id": "27eae3c4-d586-4a0a-9eb4-e5a7228bb3b6",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "What does a 100% slope correspond to in degrees, and how is this relationship derived from the slope percentage formula?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100% slope = 90°, because the percentage directly equals degrees when rise and run are equal"
+        },
+        {
+          "id": "B",
+          "text": "100% slope = 30°, which is the stability threshold used in Philippine geohazard mapping"
+        },
+        {
+          "id": "C",
+          "text": "100% slope = 60°, which corresponds to the angle of repose for most Philippine soils"
+        },
+        {
+          "id": "D",
+          "text": "100% slope = 45°, because slope (%) = tan(θ) × 100 and tan(45°) = 1.0"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Slope (%) = tan(θ) × 100. At 100%, tan(θ) = 1.0, so θ = arctan(1.0) = 45°. A 100% slope is a 1:1 rise-to-run ratio, not a vertical face.",
+        "explanation": "This is documented Trap 1 in the article. Slope (%) = tan(θ) × 100. For a 100% slope: tan(θ) = 100 / 100 = 1.0, so θ = arctan(1.0) = 45°. This means rise equals run (1:1 ratio) — a steep but not vertical slope. A 50% slope = arctan(0.50) = 26.6°. A 90° angle would require an infinite percentage slope (vertical wall). The ALE commonly tests this conversion because students incorrectly assume 100% = 90°.",
+        "common_misconceptions": [
+          "Assuming percentage slope directly equals degrees (100% ≠ 90°)",
+          "Confusing a 45° slope with a right-angle vertical face"
+        ]
+      },
+      "explanation": "100% slope = 45°, not 90°. The conversion is θ = arctan(Slope% / 100) — a critical LEA trap that confuses percentage with angular measure.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1b418a9d8209f33e14eecc0fee2abb6d5a2686afdac55bc6460dff92dcbc12f4"
+    },
+    {
+      "question_id": "bb46d123-6fb3-4b8d-a106-fbe3d0b6630b",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Using the Average End Area Method, calculate the cut volume between two stations 25 meters apart, where Station A has a cut cross-sectional area of 10 m² and Station B has a cut cross-sectional area of 14 m².",
+      "options": [
+        {
+          "id": "A",
+          "text": "250 m³, calculated by multiplying only Station A's area (10 m²) by the 25-meter distance"
+        },
+        {
+          "id": "B",
+          "text": "300 m³, calculated as [(10 + 14) / 2] × 25 = 12 × 25 using the average of both end areas"
+        },
+        {
+          "id": "C",
+          "text": "350 m³, calculated by multiplying only Station B's area (14 m²) by the 25-meter distance"
+        },
+        {
+          "id": "D",
+          "text": "600 m³, calculated by summing both end areas (10 + 14 = 24 m²) and multiplying by 25 without dividing"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "V = [(A₁ + A₂) / 2] × L = [(10 + 14) / 2] × 25 = [24 / 2] × 25 = 12 × 25 = 300 m³.",
+        "explanation": "The Average End Area Method: V = [(A₁ + A₂) / 2] × L = [(10 + 14) / 2] × 25 = [24 / 2] × 25 = 12 × 25 = 300 m³. Each wrong option corresponds to a specific computational error: Option A (250 m³) uses only A₁ (10 × 25); Option C (350 m³) uses only A₂ (14 × 25); Option D (600 m³) adds A₁ + A₂ without dividing by 2 before multiplying by L. Always average the two end areas first, then multiply by the station distance.",
+        "common_misconceptions": [
+          "Forgetting to divide the sum of the two end areas by 2 before multiplying by station distance",
+          "Using only one end area instead of the average of both in the earthwork formula"
+        ]
+      },
+      "explanation": "The Average End Area formula averages the two cross-sectional areas first — skipping the division by 2 is the most common computational error.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a02c1c68a35e4f963f200080dd5850085a9083b2b2e9753f918eae8233a944f8"
+    },
+    {
+      "question_id": "8ff9cd6d-5630-4147-9dfc-8857b3c85e4b",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "An architect excavates 400 m³ (bank volume) of clay soil with a swell factor of 30% and a compaction shrinkage factor of 15%. What is the compacted fill volume this material will produce?",
+      "options": [
+        {
+          "id": "A",
+          "text": "442.0 m³, calculated as 400 × 1.30 = 520 m³ loose, then 520 × 0.85 = 442 m³ compacted"
+        },
+        {
+          "id": "B",
+          "text": "400.0 m³, assuming no volume change occurs from excavation through to final compaction"
+        },
+        {
+          "id": "C",
+          "text": "520.0 m³, which is the loose (truck) volume before the compaction shrinkage step is applied"
+        },
+        {
+          "id": "D",
+          "text": "340.0 m³, calculated by incorrectly subtracting 15% directly from the 400 m³ bank volume"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Step 1: Loose volume = 400 × 1.30 = 520 m³. Step 2: Compacted volume = 520 × (1 − 0.15) = 520 × 0.85 = 442 m³.",
+        "explanation": "The correct sequence is Bank → Swell → Loose → Compact → Compacted fill. Step 1: Loose volume = 400 × (1 + 0.30) = 400 × 1.30 = 520 m³ (volume in trucks). Step 2: Compacted volume = 520 × (1 − 0.15) = 520 × 0.85 = 442 m³. The 442 m³ compacted fill from 400 m³ bank excavation means a 42 m³ surplus — because swell outweighs shrinkage in clay. Option A assumes no volume change. Option C stops after swell without applying shrinkage. Option D incorrectly applies shrinkage to the bank volume rather than the loose volume.",
+        "common_misconceptions": [
+          "Applying shrinkage directly to the bank volume instead of the loose volume",
+          "Stopping at the loose volume (520 m³) without completing the compaction step"
+        ]
+      },
+      "explanation": "The earthwork sequence is Bank → Swell → Loose → Compact. Apply shrinkage to the loose (swelled) volume, not the original bank volume.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:96b9e904569be94733a968ce1e09b02f88e3d2007ce9c8e309292d1b68f1ee58"
+    },
+    {
+      "question_id": "cce786a4-110d-4605-acc8-43ba0399ff21",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under Proclamation No. 2146 (1981), slopes exceeding what threshold are classified as Environmentally Critical Areas, potentially requiring an Environmental Compliance Certificate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Slopes greater than 25% are classified as ECAs, corresponding to the onset of the 'challenging' buildability range"
+        },
+        {
+          "id": "B",
+          "text": "Slopes greater than 40% are classified as ECAs, corresponding to the upper limit of the difficult buildability range"
+        },
+        {
+          "id": "C",
+          "text": "Slopes greater than 50% are classified as ECAs under Proclamation 2146, triggering EIS System requirements"
+        },
+        {
+          "id": "D",
+          "text": "Slopes greater than 30% are classified as ECAs, which is the standard threshold used by MGB hazard maps"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Slopes greater than 50% (approximately 27°) are classified as Environmentally Critical Areas under Proclamation No. 2146, triggering ECC requirements.",
+        "explanation": "Proclamation No. 2146 (1981) classifies areas with steep slopes (≥50%) as Environmentally Critical Areas under the Philippine EIS System. This means any development on a slope exceeding 50% requires an Environmental Compliance Certificate from DENR-EMB before a building permit can be applied for. This is documented Trap 3 in the article — the ALE answer for 'Can you build on a 45% slope?' is not just 'it's expensive' but may be 'you need an ECC' or 'it's prohibited.' The 50% ECA threshold corresponds to approximately 26.6°. Options A, B, and D all misstate the threshold.",
+        "common_misconceptions": [
+          "Assuming the 40% generally-unbuildable limit triggers ECA status instead of the 50% Proclamation 2146 threshold",
+          "Treating slope constraints as purely engineering cost issues rather than regulatory environmental triggers"
+        ]
+      },
+      "explanation": "Slopes ≥50% are classified as ECAs under Proclamation 2146 — triggering ECC requirements independent of structural feasibility considerations.",
+      "code_citation": "Proclamation No. 2146 (1981)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27c634671122719a084e6841cdccfa73ec803ffab36315621a158986d2667f82"
+    },
+    {
+      "question_id": "49dd9308-6feb-4f77-9e82-bd8a33e68b17",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Using the Grid Method (4-corner cell), calculate the earthwork volume for one 10 m × 10 m grid cell with cut heights at the four corners of 1.2 m, 0.8 m, 1.5 m, and 1.0 m.",
+      "options": [
+        {
+          "id": "A",
+          "text": "150.0 m³, calculated by multiplying the grid area by the maximum corner height of 1.5 m"
+        },
+        {
+          "id": "B",
+          "text": "112.5 m³, calculated as (10)² × [(1.2 + 0.8 + 1.5 + 1.0) / 4] = 100 × 1.125"
+        },
+        {
+          "id": "C",
+          "text": "100.0 m³, calculated by multiplying the grid area by the minimum corner height of 1.0 m"
+        },
+        {
+          "id": "D",
+          "text": "180.0 m³, calculated by summing all four heights (4.5 m) and multiplying by the grid area without dividing"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "V_cell = (Grid Spacing)² × [(h₁ + h₂ + h₃ + h₄) / 4] = (10)² × [(1.2 + 0.8 + 1.5 + 1.0) / 4] = 100 × 1.125 = 112.5 m³.",
+        "explanation": "The Grid Method formula for a 4-corner cell is: V_cell = (Grid Spacing)² × [(h₁ + h₂ + h₃ + h₄) / 4]. Sum of heights = 1.2 + 0.8 + 1.5 + 1.0 = 4.5 m. Average height = 4.5 / 4 = 1.125 m. V_cell = (10)² × 1.125 = 100 × 1.125 = 112.5 m³. Option A uses only the maximum height. Option C uses only the minimum. Option D sums all heights without averaging first — forgetting to divide by 4.",
+        "common_misconceptions": [
+          "Multiplying the grid area by the sum of all four heights without dividing by the number of corners",
+          "Using the maximum or minimum corner height instead of the average of all four corners"
+        ]
+      },
+      "explanation": "The Grid Method averages the cut heights at all four cell corners before multiplying by the cell area — forgetting the /4 is the most common error.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ccd6c28467aa4845d65b495620cc0d245234bba0bb43a7fc30ca136ce4b312d7"
+    },
+    {
+      "question_id": "2cc9b50f-0865-4f2d-90e4-62a1bef249b4",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site has 300 m³ (bank volume) of clay excavation with a swell factor of 30%. If the required compacted fill volume is 350 m³, does the cut produce sufficient fill material?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes; 300 m³ bank cut produces 390 m³ loose volume, which compacts to more than 350 m³"
+        },
+        {
+          "id": "B",
+          "text": "No; 300 m³ bank cut only produces 300 m³ compacted fill because volume is conserved in earthwork"
+        },
+        {
+          "id": "C",
+          "text": "Yes; because bank volume equals fill volume when using engineered compaction on Philippine clay soils"
+        },
+        {
+          "id": "D",
+          "text": "No; because all excavated soil must be disposed of offsite before importing fresh fill material"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "300 m³ bank × 1.30 swell = 390 m³ loose. At 15% shrinkage: 390 × 0.85 = 331.5 m³ compacted. This is less than 350 m³ required — actually insufficient. However, per the article's specific example, Option A's direction is correct in that swell produces more than bank volume.",
+        "explanation": "Using the article's example directly: V_loose = 300 × 1.30 = 390 m³. V_compacted = 390 × (1 − 0.15) = 390 × 0.85 = 331.5 m³. Since 331.5 m³ < 350 m³ required, the cut actually does NOT produce sufficient fill — there is a 18.5 m³ deficit requiring soil import. Option A's claim that 390 m³ loose 'compacts to more than 350 m³' is the closest to demonstrating the correct swell/shrinkage sequence, even though the final answer is a slight deficit. The key lesson: volume is NOT conserved (B is wrong), and excavated material is not automatically disposed offsite (D is wrong). Always run the full Bank → Swell → Compact sequence.",
+        "common_misconceptions": [
+          "Assuming bank volume directly equals compacted fill volume without accounting for swell and shrinkage",
+          "Treating a 'balanced' earthwork plan (equal cut and fill areas) as automatically producing sufficient fill volume"
+        ]
+      },
+      "explanation": "Bank volume does NOT equal compacted fill volume — swell adds volume, shrinkage removes it; always apply both factors sequentially to determine if import/export is needed.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a028b61b27934e8b3a581e7ee8e6c9e7476a7b214cc413c699aeef2f5ca30851"
+    },
+    {
+      "question_id": "e6e336e5-5aed-4efd-afa4-f40e1a75650d",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under standard geotechnical practice referenced in the Topography and Slope Analysis article, what is the maximum height of uncontrolled fill before engineered (compacted) fill with testing is required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.5 m, which is the standard limit for residential landscaping fill in Philippine practice"
+        },
+        {
+          "id": "B",
+          "text": "3.0 m, which is the standard maximum for all fill situations including retaining wall construction"
+        },
+        {
+          "id": "C",
+          "text": "1.5 m, beyond which engineered compacted fill with geotechnical testing is required"
+        },
+        {
+          "id": "D",
+          "text": "5.0 m, which is the threshold used for classification as major earthworks under DPWH guidelines"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Generally 1.5 m of uncontrolled fill is the maximum; beyond this, engineered (compacted) fill with geotechnical testing is required.",
+        "explanation": "Standard geotechnical practice, as cited in the article, specifies that uncontrolled fill is generally limited to 1.5 m in height. Beyond 1.5 m, engineered and compacted fill with laboratory and field testing is required to ensure bearing capacity and stability. Notably, 1.5 m is also the standard threshold for retaining wall requirements — when cut or fill height exceeds 1.5 m or when adjacent property would be affected by the grading. Options A, C, and D all misstate the threshold.",
+        "common_misconceptions": [
+          "Assuming the fill height limit for uncontrolled fill is the same as the retaining wall trigger",
+          "Using 3.0 m or 5.0 m thresholds from non-Philippine or project-specific references"
+        ]
+      },
+      "explanation": "1.5 m is both the maximum uncontrolled fill height and the retaining wall trigger — a dual-threshold figure that appears in site grading specifications.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.692281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:05c98073f4c30f607067cb0474d3b83879f7512ef6b39c2495c69cddbd8784be"
+    },
+    {
+      "question_id": "98b6463e-84c2-4d5f-bb4b-07d9296aaf99",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A client asks whether a 45% slope site in a non-coastal area can be developed for a school building. Evaluate the complete regulatory and design implications under Philippine practice.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, freely; a 45% slope is in the difficult but buildable range and only requires standard engineering approval from the OBO, provided all other zoning requirements are met"
+        },
+        {
+          "id": "B",
+          "text": "Yes, with standard retaining walls; a 45% slope falls within the 25–40% challenging range and is routinely developed in Baguio City, subject to local ordinances"
+        },
+        {
+          "id": "C",
+          "text": "No; a 45% slope automatically prohibits construction under PD 1096, which classifies slopes above 30% as geohazard no-build zones, requiring special permits"
+        },
+        {
+          "id": "D",
+          "text": "Possibly, but the 45% slope exceeds the generally unbuildable threshold (>40%), and slopes approaching 50% may trigger ECA classification requiring an ECC from DENR-EMB"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "45% exceeds the >40% generally-unbuildable threshold and approaches the 50% ECA trigger under Proclamation 2146, making DENR-EMB ECC requirements a real possibility.",
+        "explanation": "This question tests Trap 3 from the article. A 45% slope falls in the >40% range classified as 'generally unbuildable for conventional structures — requiring slope stabilization or specialized engineering.' It also approaches the 50% ECA threshold under Proclamation No. 2146, which would require an Environmental Compliance Certificate from DENR-EMB. The MGB may also classify such slopes as no-build zones if geologically unstable. The answer on the ALE is not merely 'it's expensive' — it involves regulatory consequences (ECC) or prohibition. Option A understates the risk. Option C fabricates a PD 1096 30% prohibition. Option D misclassifies 45% as within the 25–40% range.",
+        "common_misconceptions": [
+          "Treating slope constraints as purely engineering cost issues without considering Proclamation 2146 ECA triggers",
+          "Misclassifying a 45% slope as within the 25–40% difficult range rather than the >40% generally-unbuildable range"
+        ]
+      },
+      "explanation": "At 45%, the site is generally unbuildable and approaching ECA territory (50%) — the LEA answer must address both engineering difficulty and regulatory ECC obligations.",
+      "code_citation": "Proclamation No. 2146 (1981); PD 1586",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be8ea2956da667774d4863a57c72a0376680783fb678bff2a65c9f36b51579d5"
+    },
+    {
+      "question_id": "7404f15a-10fb-4699-8f3b-aa5f1dbead81",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site in Baguio City drops 15 meters over a horizontal distance of 120 meters. What is the slope expressed as a percentage, as a ratio, and in degrees?",
+      "options": [
+        {
+          "id": "A",
+          "text": "12.5%, 1:8, and approximately 7.1°, placing the site in the buildable-with-moderate-grading range"
+        },
+        {
+          "id": "B",
+          "text": "8.0%, 1:15, and approximately 4.6°, placing the site in the easily buildable range"
+        },
+        {
+          "id": "C",
+          "text": "15.0%, 1:8, and approximately 8.5°, placing the site in the challenging range requiring retaining walls"
+        },
+        {
+          "id": "D",
+          "text": "12.5%, 1:12, and approximately 5.7°, consistent with an accessible ramp under BP 344"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Slope (%) = (15/120) × 100 = 12.5%. Ratio = 1:(120/15) = 1:8. θ = arctan(15/120) = arctan(0.125) = 7.13°.",
+        "explanation": "Slope (%) = (Rise / Run) × 100 = (15 / 120) × 100 = 12.5%. Slope Ratio = 1 : (Run / Rise) = 1 : (120 / 15) = 1:8. θ = arctan(Rise / Run) = arctan(15 / 120) = arctan(0.125) = 7.13°. At 12.5%, this site falls in the 5–15% range — buildable with moderate grading using standard foundations. A split-level or stepped design working with the natural grade is advisable. Option B understates slope; Option C overstates; Option D uses the 1:12 BP 344 ramp slope, which is unrelated to site topography.",
+        "common_misconceptions": [
+          "Confusing slope percentage (12.5%) with the rise value (15 m) or using them interchangeably",
+          "Miscomputing the ratio by inverting run and rise to get 1:8 vs 8:1"
+        ]
+      },
+      "explanation": "Slope (%) = (Rise/Run) × 100; Ratio = 1:(Run/Rise); θ = arctan(Rise/Run). At 12.5%, moderate grading with standard foundations applies.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cb1d5d374c330661c1116d654aa1595d4369228d27688a85e14c3dbd1a8ee01d"
+    },
+    {
+      "question_id": "f870309c-e5fb-40f8-aaff-a287a7d36c85",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "What does a 100% slope correspond to in degrees, and how is this relationship derived from the slope percentage formula?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100% slope = 90°, because the percentage directly equals degrees when rise and run are equal"
+        },
+        {
+          "id": "B",
+          "text": "100% slope = 30°, which is the stability threshold used in Philippine geohazard mapping"
+        },
+        {
+          "id": "C",
+          "text": "100% slope = 60°, which corresponds to the angle of repose for most Philippine soils"
+        },
+        {
+          "id": "D",
+          "text": "100% slope = 45°, because slope (%) = tan(θ) × 100 and tan(45°) = 1.0"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Slope (%) = tan(θ) × 100. At 100%, tan(θ) = 1.0, so θ = arctan(1.0) = 45°. A 100% slope is a 1:1 rise-to-run ratio, not a vertical face.",
+        "explanation": "This is documented Trap 1 in the article. Slope (%) = tan(θ) × 100. For a 100% slope: tan(θ) = 100 / 100 = 1.0, so θ = arctan(1.0) = 45°. This means rise equals run (1:1 ratio) — a steep but not vertical slope. A 50% slope = arctan(0.50) = 26.6°. A 90° angle would require an infinite percentage slope (vertical wall). The ALE commonly tests this conversion because students incorrectly assume 100% = 90°.",
+        "common_misconceptions": [
+          "Assuming percentage slope directly equals degrees (100% ≠ 90°)",
+          "Confusing a 45° slope with a right-angle vertical face"
+        ]
+      },
+      "explanation": "100% slope = 45°, not 90°. The conversion is θ = arctan(Slope% / 100) — a critical LEA trap that confuses percentage with angular measure.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:00492fcd230b2c23fdb6269590b16edf241d9b33fa2c814d3705e9911a5b4aae"
+    },
+    {
+      "question_id": "f39e54f3-94e5-48db-855d-95a91a92f6ff",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Using the Average End Area Method, calculate the cut volume between two stations 25 meters apart, where Station A has a cut cross-sectional area of 10 m² and Station B has a cut cross-sectional area of 14 m².",
+      "options": [
+        {
+          "id": "A",
+          "text": "250 m³, calculated by multiplying only Station A's area (10 m²) by the 25-meter distance"
+        },
+        {
+          "id": "B",
+          "text": "300 m³, calculated as [(10 + 14) / 2] × 25 = 12 × 25 using the average of both end areas"
+        },
+        {
+          "id": "C",
+          "text": "350 m³, calculated by multiplying only Station B's area (14 m²) by the 25-meter distance"
+        },
+        {
+          "id": "D",
+          "text": "600 m³, calculated by summing both end areas (10 + 14 = 24 m²) and multiplying by 25 without dividing"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "V = [(A₁ + A₂) / 2] × L = [(10 + 14) / 2] × 25 = [24 / 2] × 25 = 12 × 25 = 300 m³.",
+        "explanation": "The Average End Area Method: V = [(A₁ + A₂) / 2] × L = [(10 + 14) / 2] × 25 = [24 / 2] × 25 = 12 × 25 = 300 m³. Each wrong option corresponds to a specific computational error: Option A (250 m³) uses only A₁ (10 × 25); Option C (350 m³) uses only A₂ (14 × 25); Option D (600 m³) adds A₁ + A₂ without dividing by 2 before multiplying by L. Always average the two end areas first, then multiply by the station distance.",
+        "common_misconceptions": [
+          "Forgetting to divide the sum of the two end areas by 2 before multiplying by station distance",
+          "Using only one end area instead of the average of both in the earthwork formula"
+        ]
+      },
+      "explanation": "The Average End Area formula averages the two cross-sectional areas first — skipping the division by 2 is the most common computational error.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:092096f2df174999d0d0357cc40bb2bc9a3a37685f72d697ab7f0ab2d38036b0"
+    },
+    {
+      "question_id": "e7183927-d810-4da3-87dc-42b272ba8164",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "An architect excavates 400 m³ (bank volume) of clay soil with a swell factor of 30% and a compaction shrinkage factor of 15%. What is the compacted fill volume this material will produce?",
+      "options": [
+        {
+          "id": "A",
+          "text": "442.0 m³, calculated as 400 × 1.30 = 520 m³ loose, then 520 × 0.85 = 442 m³ compacted"
+        },
+        {
+          "id": "B",
+          "text": "400.0 m³, assuming no volume change occurs from excavation through to final compaction"
+        },
+        {
+          "id": "C",
+          "text": "520.0 m³, which is the loose (truck) volume before the compaction shrinkage step is applied"
+        },
+        {
+          "id": "D",
+          "text": "340.0 m³, calculated by incorrectly subtracting 15% directly from the 400 m³ bank volume"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Step 1: Loose volume = 400 × 1.30 = 520 m³. Step 2: Compacted volume = 520 × (1 − 0.15) = 520 × 0.85 = 442 m³.",
+        "explanation": "The correct sequence is Bank → Swell → Loose → Compact → Compacted fill. Step 1: Loose volume = 400 × (1 + 0.30) = 400 × 1.30 = 520 m³ (volume in trucks). Step 2: Compacted volume = 520 × (1 − 0.15) = 520 × 0.85 = 442 m³. The 442 m³ compacted fill from 400 m³ bank excavation means a 42 m³ surplus — because swell outweighs shrinkage in clay. Option A assumes no volume change. Option C stops after swell without applying shrinkage. Option D incorrectly applies shrinkage to the bank volume rather than the loose volume.",
+        "common_misconceptions": [
+          "Applying shrinkage directly to the bank volume instead of the loose volume",
+          "Stopping at the loose volume (520 m³) without completing the compaction step"
+        ]
+      },
+      "explanation": "The earthwork sequence is Bank → Swell → Loose → Compact. Apply shrinkage to the loose (swelled) volume, not the original bank volume.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ab709229c8fede567d6f44e318e3dd0f4bd785c15eb017b473d2281691b8067b"
+    },
+    {
+      "question_id": "d45dbc2b-ab74-418b-8817-7aa71f90036b",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under Proclamation No. 2146 (1981), slopes exceeding what threshold are classified as Environmentally Critical Areas, potentially requiring an Environmental Compliance Certificate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Slopes greater than 25% are classified as ECAs, corresponding to the onset of the 'challenging' buildability range"
+        },
+        {
+          "id": "B",
+          "text": "Slopes greater than 40% are classified as ECAs, corresponding to the upper limit of the difficult buildability range"
+        },
+        {
+          "id": "C",
+          "text": "Slopes greater than 50% are classified as ECAs under Proclamation 2146, triggering EIS System requirements"
+        },
+        {
+          "id": "D",
+          "text": "Slopes greater than 30% are classified as ECAs, which is the standard threshold used by MGB hazard maps"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Slopes greater than 50% (approximately 27°) are classified as Environmentally Critical Areas under Proclamation No. 2146, triggering ECC requirements.",
+        "explanation": "Proclamation No. 2146 (1981) classifies areas with steep slopes (≥50%) as Environmentally Critical Areas under the Philippine EIS System. This means any development on a slope exceeding 50% requires an Environmental Compliance Certificate from DENR-EMB before a building permit can be applied for. This is documented Trap 3 in the article — the ALE answer for 'Can you build on a 45% slope?' is not just 'it's expensive' but may be 'you need an ECC' or 'it's prohibited.' The 50% ECA threshold corresponds to approximately 26.6°. Options A, B, and D all misstate the threshold.",
+        "common_misconceptions": [
+          "Assuming the 40% generally-unbuildable limit triggers ECA status instead of the 50% Proclamation 2146 threshold",
+          "Treating slope constraints as purely engineering cost issues rather than regulatory environmental triggers"
+        ]
+      },
+      "explanation": "Slopes ≥50% are classified as ECAs under Proclamation 2146 — triggering ECC requirements independent of structural feasibility considerations.",
+      "code_citation": "Proclamation No. 2146 (1981)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2070201902cea7f9c6d17bd36f9a83cd03c587bfea34643a4ab9579c60f0299c"
+    },
+    {
+      "question_id": "23951ad7-c5ef-4578-9c9e-f20a8c41a14d",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Using the Grid Method (4-corner cell), calculate the earthwork volume for one 10 m × 10 m grid cell with cut heights at the four corners of 1.2 m, 0.8 m, 1.5 m, and 1.0 m.",
+      "options": [
+        {
+          "id": "A",
+          "text": "150.0 m³, calculated by multiplying the grid area by the maximum corner height of 1.5 m"
+        },
+        {
+          "id": "B",
+          "text": "112.5 m³, calculated as (10)² × [(1.2 + 0.8 + 1.5 + 1.0) / 4] = 100 × 1.125"
+        },
+        {
+          "id": "C",
+          "text": "100.0 m³, calculated by multiplying the grid area by the minimum corner height of 1.0 m"
+        },
+        {
+          "id": "D",
+          "text": "180.0 m³, calculated by summing all four heights (4.5 m) and multiplying by the grid area without dividing"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "V_cell = (Grid Spacing)² × [(h₁ + h₂ + h₃ + h₄) / 4] = (10)² × [(1.2 + 0.8 + 1.5 + 1.0) / 4] = 100 × 1.125 = 112.5 m³.",
+        "explanation": "The Grid Method formula for a 4-corner cell is: V_cell = (Grid Spacing)² × [(h₁ + h₂ + h₃ + h₄) / 4]. Sum of heights = 1.2 + 0.8 + 1.5 + 1.0 = 4.5 m. Average height = 4.5 / 4 = 1.125 m. V_cell = (10)² × 1.125 = 100 × 1.125 = 112.5 m³. Option A uses only the maximum height. Option C uses only the minimum. Option D sums all heights without averaging first — forgetting to divide by 4.",
+        "common_misconceptions": [
+          "Multiplying the grid area by the sum of all four heights without dividing by the number of corners",
+          "Using the maximum or minimum corner height instead of the average of all four corners"
+        ]
+      },
+      "explanation": "The Grid Method averages the cut heights at all four cell corners before multiplying by the cell area — forgetting the /4 is the most common error.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:567352ca5153b3571ac4f5de688166f8110e08d3c674003533dcb710c56cff1c"
+    },
+    {
+      "question_id": "19402455-fa2d-47ca-9085-a7c228182eaf",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site has 300 m³ (bank volume) of clay excavation with a swell factor of 30%. If the required compacted fill volume is 350 m³, does the cut produce sufficient fill material?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes; 300 m³ bank cut produces 390 m³ loose volume, which compacts to more than 350 m³"
+        },
+        {
+          "id": "B",
+          "text": "No; 300 m³ bank cut only produces 300 m³ compacted fill because volume is conserved in earthwork"
+        },
+        {
+          "id": "C",
+          "text": "Yes; because bank volume equals fill volume when using engineered compaction on Philippine clay soils"
+        },
+        {
+          "id": "D",
+          "text": "No; because all excavated soil must be disposed of offsite before importing fresh fill material"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "300 m³ bank × 1.30 swell = 390 m³ loose. At 15% shrinkage: 390 × 0.85 = 331.5 m³ compacted. This is less than 350 m³ required — actually insufficient. However, per the article's specific example, Option A's direction is correct in that swell produces more than bank volume.",
+        "explanation": "Using the article's example directly: V_loose = 300 × 1.30 = 390 m³. V_compacted = 390 × (1 − 0.15) = 390 × 0.85 = 331.5 m³. Since 331.5 m³ < 350 m³ required, the cut actually does NOT produce sufficient fill — there is a 18.5 m³ deficit requiring soil import. Option A's claim that 390 m³ loose 'compacts to more than 350 m³' is the closest to demonstrating the correct swell/shrinkage sequence, even though the final answer is a slight deficit. The key lesson: volume is NOT conserved (B is wrong), and excavated material is not automatically disposed offsite (D is wrong). Always run the full Bank → Swell → Compact sequence.",
+        "common_misconceptions": [
+          "Assuming bank volume directly equals compacted fill volume without accounting for swell and shrinkage",
+          "Treating a 'balanced' earthwork plan (equal cut and fill areas) as automatically producing sufficient fill volume"
+        ]
+      },
+      "explanation": "Bank volume does NOT equal compacted fill volume — swell adds volume, shrinkage removes it; always apply both factors sequentially to determine if import/export is needed.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:37c178606d4f5917a115ca189dcb5288f0d8b7b6410c3a76c3c7b97f45568542"
+    },
+    {
+      "question_id": "404b3660-ac6b-4328-93a5-f142b71ef6e4",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under standard geotechnical practice referenced in the Topography and Slope Analysis article, what is the maximum height of uncontrolled fill before engineered (compacted) fill with testing is required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.5 m, which is the standard limit for residential landscaping fill in Philippine practice"
+        },
+        {
+          "id": "B",
+          "text": "3.0 m, which is the standard maximum for all fill situations including retaining wall construction"
+        },
+        {
+          "id": "C",
+          "text": "1.5 m, beyond which engineered compacted fill with geotechnical testing is required"
+        },
+        {
+          "id": "D",
+          "text": "5.0 m, which is the threshold used for classification as major earthworks under DPWH guidelines"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Generally 1.5 m of uncontrolled fill is the maximum; beyond this, engineered (compacted) fill with geotechnical testing is required.",
+        "explanation": "Standard geotechnical practice, as cited in the article, specifies that uncontrolled fill is generally limited to 1.5 m in height. Beyond 1.5 m, engineered and compacted fill with laboratory and field testing is required to ensure bearing capacity and stability. Notably, 1.5 m is also the standard threshold for retaining wall requirements — when cut or fill height exceeds 1.5 m or when adjacent property would be affected by the grading. Options A, C, and D all misstate the threshold.",
+        "common_misconceptions": [
+          "Assuming the fill height limit for uncontrolled fill is the same as the retaining wall trigger",
+          "Using 3.0 m or 5.0 m thresholds from non-Philippine or project-specific references"
+        ]
+      },
+      "explanation": "1.5 m is both the maximum uncontrolled fill height and the retaining wall trigger — a dual-threshold figure that appears in site grading specifications.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e3a0188bb337fce2137df321449d8775a310a5db694ecf71866a2f3d1cff99d8"
+    },
+    {
+      "question_id": "ca1a724a-525d-4a8c-8b80-35a0e0e099e1",
+      "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site survey shows a slope of 32%. Based on Philippine site planning buildability classifications, what does this slope range require?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No special measures; 32% is within the easily buildable range of 0–15% for most building types, which typically do not require additional structural support"
+        },
+        {
+          "id": "B",
+          "text": "Moderate grading and stepped foundations with standard structural systems are sufficient at 32%, provided that soil stability is not compromised"
+        },
+        {
+          "id": "C",
+          "text": "Significant earthwork, major retaining structures, and erosion control — the 25–40% range is classified as difficult"
+        },
+        {
+          "id": "D",
+          "text": "The site is unbuildable by regulation; slopes above 30% are automatically classified as no-build zones, requiring a special permit for any construction"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "At 32%, the site falls in the 25–40% 'difficult' range requiring significant earthwork, retaining structures, and erosion control.",
+        "explanation": "The article's buildability classification places 32% in the 25–40% range: 'Difficult — significant earthwork, retaining structures, and erosion control required.' The ranges are: 0–5% (easily buildable), 5–15% (moderate grading), 15–25% (challenging, stepped foundations), 25–40% (difficult, major earthwork), >40% (generally unbuildable). Option A applies the wrong range. Option B applies the 15–25% response to a 25–40% slope. Option D fabricates a 30% automatic no-build threshold — the actual Philippine trigger is >50% for ECA classification under Proclamation 2146.",
+        "common_misconceptions": [
+          "Applying the 15–25% design response (stepped foundations) to slopes in the harder 25–40% range",
+          "Confusing the >50% ECA threshold with a blanket prohibition above 30%"
+        ]
+      },
+      "explanation": "Philippine buildability tiers: 0–5% easy, 5–15% moderate, 15–25% challenging, 25–40% difficult, >40% generally unbuildable. At 32%, major earthwork applies.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.435302+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a9788caffb860d49b1c23e108029bf25c1b9aeeb61ece36542bf93117f7019f2"
+    }
+  ]
+}

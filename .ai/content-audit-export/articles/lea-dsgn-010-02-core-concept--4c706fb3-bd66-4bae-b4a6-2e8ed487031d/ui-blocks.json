@@ -1,0 +1,41 @@
+{
+  "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+  "slug": "lea-dsgn-010-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:44.152Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:1dc2c4ea609a512d65469ce102643ac1871d42d57fe07765a0e3b5c212b4182e",
+  "normalized_content_hash": "1dc2c4ea609a512d65469ce102643ac1871d42d57fe07765a0e3b5c212b4182e",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  mistakes={[\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\n  ]}\n/>",
+      "raw_hash": "sha256:87b2ba4a0ea1bb7bedf1afb49348c5f22a56b468370ad3c7e1e457d8aec0d3a8",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\\n  ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:6c6002df7f64bcaabb4476de6cbc0561d9de025f1cd30d37db667a7c77a3a5d7",
+      "props": {
+        "mistakes": "{[\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\n  ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\n  ]}"
+      },
+      "props_text": "mistakes={[\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\n  ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 2892,
+      "end_offset": 3475,
+      "line_start": 70,
+      "line_end": 78,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:b78de3b044e6c19cffaa24a793a8b2657984f8af0fed00a7990bc74f10ccc591"
+}

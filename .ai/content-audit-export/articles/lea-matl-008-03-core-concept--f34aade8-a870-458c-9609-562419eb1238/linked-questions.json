@@ -1,0 +1,508 @@
+{
+  "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:2d58593034beeb3480397c4563c8755f717e62748b06fa09e10bdf1bb902fcf9",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "a859ca44-02d2-4c4a-aa47-eb1531b59303",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "What is the typical pull-out strength range for common nails driven into wood?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10-25 lbf per inch"
+        },
+        {
+          "id": "b",
+          "text": "25-50 lbf per inch"
+        },
+        {
+          "id": "c",
+          "text": "100-200 lbf per inch"
+        },
+        {
+          "id": "d",
+          "text": "300-500 lbf per inch"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10-25 lbf is too low for nails; this would be appropriate for finishing nails or very small fasteners.",
+        "c": "100-200 lbf per inch exceeds typical nail capacity.",
+        "d": "300-500 lbf per inch is the range for lag screws, not nails.",
+        "correct": "Common nails in wood provide approximately 25-50 lbf per inch of embedment, depending on wood density and nail diameter. This is relatively low compared to lag screws.",
+        "takeaway": "Nail pull-out (25-50 lbf/in) < lag screw pull-out (300-500 lbf/in). Use lag screws for heavy loads."
+      },
+      "explanation": null,
+      "code_citation": "NDS for Wood Construction Table 12A (nail withdrawal design values)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ed9761a55a7c01595a8256cbce46a10f1f48f51137d1ecbf271e2e9c43c74b7"
+    },
+    {
+      "question_id": "2a53ef7b-88cb-4b1a-b4db-3fa74717f27e",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "What is the length of a 16d common nail?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.5 inches"
+        },
+        {
+          "id": "b",
+          "text": "3.0 inches"
+        },
+        {
+          "id": "c",
+          "text": "3.5 inches"
+        },
+        {
+          "id": "d",
+          "text": "4.0 inches"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2.5 inches is the length of a 16d finishing nail, which has a smaller diameter.",
+        "b": "3 inches is the length of a 10d common nail.",
+        "d": "4 inches is the length of a 20d common nail.",
+        "correct": "A 16d common nail is 3.5 inches long, the standard framing fastener specified in most construction documents.",
+        "takeaway": "Memorize key penny weight sizes: 10d = 3 in, 16d = 3.5 in (common); 16d = 2.5 in (finishing). Use ASTM F1667 tables for others."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F1667 Nail Specifications",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:39ae7c8987966c623e4273aab7e87b4da73080c67fdbddd718e849ea2f606d3b"
+    },
+    {
+      "question_id": "ff360930-c8fc-4daa-b7ea-bbc16baf9828",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "What is the primary difference between a common nail and a finishing nail of the same penny weight (e.g., 16d)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Common nails are longer; finishing nails are shorter, typically used for different applications"
+        },
+        {
+          "id": "b",
+          "text": "Common nails have a larger diameter and are used for framing; finishing nails have a smaller diameter and are used for trim."
+        },
+        {
+          "id": "c",
+          "text": "Common nails are steel; finishing nails are aluminum, which affects their use in different environments"
+        },
+        {
+          "id": "d",
+          "text": "Common nails are used for roofing; finishing nails are used for flooring, each suited to specific tasks"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The length comparison is reversed; finishing nails are actually shorter for the same penny weight.",
+        "c": "Both are typically steel; material type is independent of nail classification.",
+        "d": "Neither classification is tied to specific applications like roofing or flooring.",
+        "correct": "Common nails (3.5 inches) have a larger diameter (0.162 inches) than finishing nails (2.5 inches, ~0.099 inches) of the same penny weight, providing greater holding power for framing but leaving larger holes unsuitable for visible trim.",
+        "takeaway": "Nail type (common vs. finishing) determines diameter and holding power, not application exclusively. Choose based on surface finish requirements."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F1667 Nail Specifications",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:90a76f3bd917af54f48f278ad2fc3b7e74adf931a8e77ccd06b290aad07115b8"
+    },
+    {
+      "question_id": "50dc43ed-973a-4b42-9144-dd4266489810",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "A coastal resort project in the Philippines specifies carbon steel bolts for exterior connections. What is the primary risk of this specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carbon steel bolts are weaker than stainless steel bolts, which may lead to structural inadequacies in high-stress applications."
+        },
+        {
+          "id": "b",
+          "text": "Carbon steel bolts corrode rapidly in salt spray environments, reducing cross-sectional area and pull-out strength, and potentially causing structural failure."
+        },
+        {
+          "id": "c",
+          "text": "Carbon steel bolts cannot be used in seismic zones due to their inability to withstand lateral forces effectively."
+        },
+        {
+          "id": "d",
+          "text": "Carbon steel bolts are incompatible with aluminum frames, leading to galvanic corrosion and potential joint failure."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Strength is not the issue; corrosion is. A corroded carbon steel bolt eventually fails under load.",
+        "c": "Carbon steel bolts are suitable for seismic zones if they are not corroding.",
+        "d": "Material compatibility is not the issue; corrosion is.",
+        "correct": "Carbon steel corrodes rapidly in salt spray, especially in coastal typhoon zones. Corrosion reduces the effective diameter and tensile strength, compromising structural reliability. Stainless steel (duplex or super-duplex) or hot-dip galvanized fasteners are required.",
+        "takeaway": "Coastal projects = stainless steel or hot-dip galvanized fasteners. Carbon steel will corrode and fail."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Sec. 714 (corrosion-resistant materials) and good practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e693e406e4f2a03fb809756e56fe4109b16eaa4843fa8eff511a28752ecc4557"
+    },
+    {
+      "question_id": "dfffaca4-9448-498c-8e9d-20ae3529617d",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "A structural steel connection requires bolts with a minimum tensile strength of 100,000 psi. Which ASTM bolt grade is the minimum acceptable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ASTM A307 (60,000 psi), which is typically used for general-purpose applications and not suitable for high-strength requirements"
+        },
+        {
+          "id": "b",
+          "text": "ASTM F3125 Grade A325 (120,000 psi)"
+        },
+        {
+          "id": "c",
+          "text": "ASTM A490 (150,000 psi), often used in high-strength structural applications where higher tensile strength is necessary"
+        },
+        {
+          "id": "d",
+          "text": "Either A307 or A325, depending on the specific engineering requirements and load calculations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A307 (60 ksi) is insufficient; it provides less than the 100 ksi minimum.",
+        "c": "A490 (150 ksi) exceeds the requirement and adds cost without necessity.",
+        "d": "A307 is inadequate; only A325 meets the requirement.",
+        "correct": "A307 provides 60,000 psi, which is less than the 100,000 psi requirement. A325 (120,000 psi) meets the requirement with some margin. A490 exceeds it but is more expensive and typically reserved for ultra-high-stress applications.",
+        "takeaway": "Know the three main grades: A307 (60k general-purpose), A325 (120k structural), A490 (150k ultra-high-stress). Specify the minimum grade that meets the requirement."
+      },
+      "explanation": null,
+      "code_citation": "ASTM A325 Structural Bolt Specifications",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da56d8545bb83f57bb3c83e734ba750a036bf8fed43c0204116d71fe282c6732"
+    },
+    {
+      "question_id": "8952cfa3-ed9a-4863-8896-902b890237c7",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "During LEA exam analysis, you review a detail showing a 10d finishing nail specified for structural framing. What is the error, and what should be specified instead?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10d finishing nails are too small; 16d common nails should be specified for framing, as they provide the necessary strength and holding power"
+        },
+        {
+          "id": "b",
+          "text": "10d finishing nails have insufficient diameter and holding power; 16d common nails provide greater strength and are standard for framing."
+        },
+        {
+          "id": "c",
+          "text": "Finishing nails are appropriate; the detail is correct, which is incorrect as finishing nails are not suitable for structural framing"
+        },
+        {
+          "id": "d",
+          "text": "The error is that 10d is insufficient; specify 20d finishing nails instead, which is incorrect as 20d finishing nails are not typically used for framing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the answer is partially correct, the reasoning about size is incomplete; it is primarily about holding power.",
+        "c": "Finishing nails are inappropriate for structural framing; this is a code violation.",
+        "d": "20d finishing nails still have inadequate diameter; common nails are required for framing.",
+        "correct": "10d finishing nails have a diameter of 0.073 inches, designed for trim with minimal visual impact. Structural framing requires 16d common nails (0.162 inches diameter, 3.5 inches long) for adequate holding power. Using finishing nails in framing creates a structural defect.",
+        "takeaway": "Structural framing = common nails (larger diameter); trim/cabinetry = finishing nails (smaller diameter, less visual impact)."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F1667 Nail Classification and LEA design standards",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b87825b6a6ab08330caf7a416f7bec15f60c71df1551044e65d1241355dd02b7"
+    },
+    {
+      "question_id": "eebb183f-a0e6-4571-a8e9-3d8bd018878e",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "What type of screw is designed to cut its own thread when driven into sheet metal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wood screw, typically used for joining wood pieces and not suitable for metal applications"
+        },
+        {
+          "id": "b",
+          "text": "Self-tapping screw (sheet metal screw)"
+        },
+        {
+          "id": "c",
+          "text": "Machine screw, which requires a pre-tapped hole or nut for installation"
+        },
+        {
+          "id": "d",
+          "text": "Lag screw, primarily used for heavy-duty wood applications and not for metal"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wood screws have a coarse thread designed for timber, not metal.",
+        "c": "Machine screws are precision fasteners used with nuts or threaded holes, not for self-tapping applications.",
+        "d": "Lag screws are heavy-duty hex-head fasteners for timber or concrete, not sheet metal.",
+        "correct": "Self-tapping screws (or sheet metal screws) have a hardened point and fine thread that cuts through metal and creates a thread path as it is driven, eliminating the need for pre-drilling or tapping.",
+        "takeaway": "Self-tapping screws = sheet metal work; wood screws = timber; machine screws = with nuts; lag screws = heavy duty."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F488 Self-Tapping Screw Specifications",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8fbb4521cc80f9926c8d927b35f082b8cf1232322579f7a986c37bb3572ed58c"
+    },
+    {
+      "question_id": "2ceaa0e4-8e40-42d6-8ed7-6b352fe26949",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "What is the primary function of the neoprene washer on a roofing nail?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To increase the holding power of the nail by providing additional friction against the roofing material"
+        },
+        {
+          "id": "b",
+          "text": "To prevent the nail from bending during installation by stabilizing it against lateral forces"
+        },
+        {
+          "id": "c",
+          "text": "To seal the hole around the nail and prevent water infiltration"
+        },
+        {
+          "id": "d",
+          "text": "To distribute the load over a larger area of the shingle, reducing the risk of damage to the roofing material"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The washer does not significantly affect holding power; it serves a sealing function.",
+        "b": "Nail flexibility is determined by material and diameter, not the washer.",
+        "d": "While the washer distributes load, the primary function is water sealing.",
+        "correct": "The neoprene washer compresses under the nail head, sealing the hole and preventing water from entering along the fastener shaft. This is critical for roof weatherproofing.",
+        "takeaway": "Roofing nails must include neoprene washers. Omitting them is a code violation and causes roof leaks."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F1667 Roofing Nail Specifications",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d24ad8fd54cff4b929f90cb18d7ef260831d66906ae27ba78f39f18bdc880cc"
+    },
+    {
+      "question_id": "b97f6b23-3213-4bff-831a-c1e687cfa0f0",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "What is the primary characteristic that distinguishes a carriage bolt from a hex bolt?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carriage bolts are larger; hex bolts are smaller, typically used in different applications"
+        },
+        {
+          "id": "b",
+          "text": "Carriage bolts have a rounded head with a square neck to prevent rotation; hex bolts have a hexagonal head."
+        },
+        {
+          "id": "c",
+          "text": "Carriage bolts are made of stainless steel; hex bolts are carbon steel, which affects their corrosion resistance"
+        },
+        {
+          "id": "d",
+          "text": "Carriage bolts are used for structural steel; hex bolts are used for timber, based on their design and application"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Size is not the distinguishing feature; both types come in various sizes.",
+        "c": "Material type is independent of head shape; both types are available in carbon steel or stainless.",
+        "d": "Both types are used in timber and structural applications; head shape determines installation method, not application.",
+        "correct": "Carriage bolts have a rounded head and a square neck underneath that bites into the material, preventing rotation during installation. Hex bolts have a flat hexagonal head that requires a wrench for tightening.",
+        "takeaway": "Carriage bolt = rounded head + square neck (no wrench needed); hex bolt = hexagonal head (wrench required)."
+      },
+      "explanation": null,
+      "code_citation": "ASTM A307 and A325 Bolt Classification Standards",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f5422651e57764c42aaffdb35ab826c313646e0b2b61920aaffafc84b45a2c3a"
+    },
+    {
+      "question_id": "b9b3fcdb-ba8c-4dc3-ae1b-5caa87c2f763",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+      "text": "A timber roof rafter is being attached to a concrete foundation. The connection requires 5,000 lbf of pull-out strength. Assuming lag screws provide 400 lbf per inch of embedment (example values; verify per NDS/ACI for diameter/species), what is the minimum embedment depth required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 inches, assuming no additional load factors are considered"
+        },
+        {
+          "id": "b",
+          "text": "10 inches, based on a conservative safety factor for seismic zones"
+        },
+        {
+          "id": "c",
+          "text": "12.5 inches"
+        },
+        {
+          "id": "d",
+          "text": "20 inches, accounting for potential future load increases"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 inches provides only 2,000 lbf capacity (5 × 400).",
+        "b": "10 inches provides 4,000 lbf capacity (10 × 400).",
+        "d": "20 inches exceeds the requirement (20 × 400 = 8,000 lbf) and adds cost.",
+        "correct": "Pull-out capacity = 400 lbf/inch × embedment depth. Solving for depth: 5,000 lbf ÷ 400 lbf/inch = 12.5 inches.",
+        "takeaway": "Always calculate minimum embedment using the formula: Depth = Required Capacity ÷ Strength per Inch. Include a safety factor if specified in design code."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F1575 Lag Screw Specifications and LEA design principles",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fec88e2be60f40bebb5e1ce529e4bf5977f23bae5f7df165d811030d1258ee05"
+    }
+  ]
+}

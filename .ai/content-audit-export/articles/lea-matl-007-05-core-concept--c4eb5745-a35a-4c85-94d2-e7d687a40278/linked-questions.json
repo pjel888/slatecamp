@@ -1,0 +1,508 @@
+{
+  "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b82158ccabe374bbecd17469fe5c023b218870fac6e6aded7994a2ee409a0cff",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "e68187ad-8741-4a34-a724-2e3b2e6357e8",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "A finish schedule shows 'Floor: Porcelain tile, 600×600mm, grout color: TBD.' What field problems will result?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) No problem; grout color can be chosen on-site, allowing for flexibility in design decisions"
+        },
+        {
+          "id": "b",
+          "text": "B) Grout color TBD causes rework; when tile is laid, grout color becomes visible and often does not match designer intent. Specify exact grout brand/color (e.g., 'Mapei Ultracolor Plus, Light Gray') to prevent mis-execution"
+        },
+        {
+          "id": "c",
+          "text": "C) Grout color variation is acceptable; it darkens with age, which can be considered a natural patina effect"
+        },
+        {
+          "id": "d",
+          "text": "D) Only a problem if tiles are light-colored, as darker tiles can mask grout color discrepancies more effectively"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Field choice is construction management failure, not acceptable.",
+        "c": "Grout darkens slightly but initial color mismatch is primary risk.",
+        "d": "Dark tiles hide grout variation; light tiles highlight it. Both require spec.",
+        "correct": "Grout color is critical to aesthetic; omitting it (TBD) allows contractor to select based on cost/availability, not design intent. Default grout is often darker than intended. Specify exact brand and color code in schedule. Visible rework occurs when grout is removed and replaced.",
+        "takeaway": "Specify grout color in schedule: brand + color code (e.g., 'Mapei #LG-05'). No TBD. Prevents rework."
+      },
+      "explanation": null,
+      "code_citation": "Field failure analysis; finish specification standards",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c791a8db13aa1c86aa543dbf535abeec0b445765587f49ed8578e5abb816c541"
+    },
+    {
+      "question_id": "a6275c53-fecc-499a-be58-71003916d6a7",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "Which three types of schedules are commonly found in interior finish documentation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Paint, tile, and wood schedules"
+        },
+        {
+          "id": "b",
+          "text": "B) Room finish, door, and window schedules"
+        },
+        {
+          "id": "c",
+          "text": "C) Exterior, interior, and basement schedules"
+        },
+        {
+          "id": "d",
+          "text": "D) Floor, wall, and ceiling schedules"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Material type (paint, tile, wood) is covered within schedules, not as separate schedule types.",
+        "c": "Exterior/interior/basement is a location split; schedules are organized by room number, not location.",
+        "d": "Floor/wall/ceiling are finish elements listed within a single room finish schedule.",
+        "correct": "Room finish schedules (walls/floors/ceilings), door schedules (type/hardware/finish), and window schedules (frame/glass/size) are the three standard schedule types in construction docs.",
+        "takeaway": "Three standard schedules: room finishes, doors, windows. Each specifies products, sizes, and details. Memorize the structure."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat; AIA construction document standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f50ec96531bce269fb4503627e7d077f821c3e90470a0126862a7d8c65af4e7"
+    },
+    {
+      "question_id": "90603524-c5ac-4738-87d6-ba1f3afc8491",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "A multi-story residential building schedules different paint colors for Units on the same floor (Unit 201: Boysen #B150; Unit 301: 'light beige'). What specification and execution problems does this create?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) No problem; units are customizable by owner preference, which may lead to inconsistencies in appearance and quality"
+        },
+        {
+          "id": "b",
+          "text": "B) Inconsistent product spec (one named, one vague) prevents bulk sourcing, creates quality variance, and allows field substitution on Unit 301"
+        },
+        {
+          "id": "c",
+          "text": "C) Color variation is expected in residential; no standard applies, which overlooks the importance of uniformity in multi-unit developments"
+        },
+        {
+          "id": "d",
+          "text": "D) Problem only if units are adjacent, which ignores potential issues with overall building aesthetics"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Residential standardization (not customization) is industry practice for cost and quality control.",
+        "c": "Color variation is not 'expected'; consistency is the standard.",
+        "d": "Adjacency is irrelevant; consistency applies to all same-type units.",
+        "correct": "Unit 201 is fully specified (brand, code); Unit 301 is vague. Vagueness on Unit 301 allows contractor substitution, color mismatch, and quality variance. Bulk purchasing is impossible with mixed specs. Standard practice: all standard units use identical finishes; custom finishes are documented separately with cost tracking.",
+        "takeaway": "Standardize finishes for like spaces. Custom finishes are exceptions, documented separately with cost approval. Avoid mix of specific and vague specs."
+      },
+      "explanation": null,
+      "code_citation": "Residential project best practice; cost control",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9371dc61b7b31c7e6e9c72ef5f247fcc9ee5e7a39109b6caa06cb28823c1930e"
+    },
+    {
+      "question_id": "65873363-85b0-408b-be1c-d6e334f617b6",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "Create a complete finish schedule entry for a law office (high-privacy requirement, accessible path per BP 344, coastal location). Specify: floor, wall, ceiling, base. Address: (1) speech privacy, (2) slip resistance on level surface, (3) salt-air durability.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Floor—tile; Walls—paint; Ceiling—tile; Base—standard, ensuring compliance with BP 344 for accessibility and durability in coastal environments"
+        },
+        {
+          "id": "b",
+          "text": "B) Floor: Porcelain tile 600×600mm, Mariwasa #S-02, grout Light Gray, COF per ANSI A137.1 ≥0.65 per Section 3.3 Floor Finishes; Walls: Boysen Permacoat #B150, matte, fungicide primer, per Section 2.0.5 Paint Systems; Ceiling: Suspended acoustic tile NRC 0.85, 9/16-inch ASTM C635 grid, per Section 3.4 Ceiling Systems; Base: Wood trim, 100mm height, marine-grade sealant per Section 6.2 Millwork"
+        },
+        {
+          "id": "c",
+          "text": "C) Floor—slip-resistant; Walls—painted; Ceiling—acoustic; Base—to match design, with materials selected for high durability and compliance with privacy standards"
+        },
+        {
+          "id": "d",
+          "text": "D) Floor—level surface finishes; Walls—interior paint; Ceiling—sound control; Base—standard wood, all materials chosen for their resistance to salt air and ability to maintain privacy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Generic entries (tile, paint, tile, standard) provide no direction.",
+        "c": "Vague entries (slip-resistant, painted, acoustic, to match) lack product specificity.",
+        "d": "Category names (level surface, interior, sound control) are not product specs.",
+        "correct": "Option B addresses all requirements: porcelain floor with verified COF ≥0.65 (BP 344 accessibility); Boysen paint (salt-air durability in coastal zone) with fungicide primer (moisture resistance); NRC 0.85 ceiling (speech privacy); marine-grade trim sealant (coastal corrosion). All entries include spec-section cross-references and product-specific details.",
+        "takeaway": "Integrated finish specification requires: (1) material selection by function (speech privacy = NRC 0.85; slip resistance = COF ≥0.60; durability = marine sealant), (2) exact product names and codes, (3) cross-references to spec sections. No vague or TBD entries."
+      },
+      "explanation": null,
+      "code_citation": "Integrated finish schedule; multi-criteria design",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e6e60b429a5ac35b09d1279fd71ca4ea8a2f45e2c3b7861ae676559f06d9d0ce"
+    },
+    {
+      "question_id": "29784988-50f9-4b4d-8e9b-d31b9530c7b3",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "What is the primary purpose of a finish schedule in construction documents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) To show architectural style preferences, which are subjective and vary by project"
+        },
+        {
+          "id": "b",
+          "text": "B) To specify all surface treatments (walls, floors, ceilings) for each room with product details and standards, preventing field interpretation and rework"
+        },
+        {
+          "id": "c",
+          "text": "C) To estimate project cost, providing a preliminary financial overview for stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "D) To list contractor requirements, ensuring compliance with project specifications and timelines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schedules reflect design intent via finish selection, not style preference alone.",
+        "c": "Schedules inform cost but are not primarily for estimation.",
+        "d": "Schedules specify finishes, not contractor requirements.",
+        "correct": "Finish schedules serve as the builder's instruction set, specifying exact finishes (material, color, size, spec section) for every space. They prevent ambiguity and rework.",
+        "takeaway": "Finish schedules = contract document specifying finishes with exact product names, colors, sizes, and spec-section cross-references."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat; construction document standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:42ead20866ab2d44ed6ddc1b76fb5ee6bc8c051dc7614319f39a29bede1aad7d"
+    },
+    {
+      "question_id": "011b5df2-94f0-4ae7-9383-193ad275bb71",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "A room finish schedule entry shows: 'Walls—Boysen Permacoat, Color #B150.' What critical information is missing that could lead to specification failure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Nothing; the entry is complete and provides all necessary details for the painting contractor to proceed without further clarification"
+        },
+        {
+          "id": "b",
+          "text": "B) Sheen level (matte/satin/gloss), primer type, surface prep standard, and specification section reference"
+        },
+        {
+          "id": "c",
+          "text": "C) Paint brand alternative, which allows for flexibility in sourcing materials without compromising quality"
+        },
+        {
+          "id": "d",
+          "text": "D) Room location (floor number), which is essential for coordinating the work schedule and ensuring the correct area is painted"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Entry is incomplete without these details.",
+        "c": "Alternatives create uncertainty; one specified product is standard.",
+        "d": "Room location is identified by room number, not in finish entry.",
+        "correct": "Incomplete entry omits sheen (affects appearance and maintenance), primer type (affects adhesion), surface prep (affects durability), and spec-section reference (prevents builders from reading full details). These details prevent rework.",
+        "takeaway": "Schedule entries are abbreviated pointers. Detail specification in spec sections (e.g., Section 2.0.5). Reference the section in the schedule."
+      },
+      "explanation": null,
+      "code_citation": "CSI specification format; construction document practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3d706f7bd281f3d96ded3237392d0d29a943c48c5d6b0fc49ddfc3af1a7754c8"
+    },
+    {
+      "question_id": "8ec65acf-9fa7-41ee-ac65-70c1dece2e95",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "A door schedule shows 'Door Type A: wood composite, finish—per 2.0.10.' What does 'per 2.0.10' direct the builder to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Order the door from supplier #2.0.10, ensuring that all specifications match the detailed requirements listed in the supplier's catalog."
+        },
+        {
+          "id": "b",
+          "text": "B) Skip the finish detail; the door is pre-finished and does not require any additional treatment or coating as per the manufacturer's guidelines."
+        },
+        {
+          "id": "c",
+          "text": "C) Consult Specification Section 2.0.10 (Door Finishes) for detailed application standards (primer, topcoat, sanding, hardness test)"
+        },
+        {
+          "id": "d",
+          "text": "D) Choose any finish matching the style, provided it adheres to the general aesthetic guidelines outlined in the project's design brief."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2.0.10 is a specification section number, not a supplier.",
+        "b": "Cross-reference indicates detailed specs exist; not pre-finished.",
+        "d": "Specification section defines exact standards; no field choice.",
+        "correct": "CSI format cross-reference 'per 2.0.10' directs builders to Specification Section 2.0.10, which details finish prep, primers, topcoats, application sequence, and quality standards. Schedule is abbreviated; spec is detailed.",
+        "takeaway": "Schedule entries reference spec sections. Cross-references are the link. Builder reads schedule, then reads detailed spec section."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat; construction document organization",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:579ad59aaf22fd7ca30b54b7a531063eec44352b8f692bc632deeab7f8c367f3"
+    },
+    {
+      "question_id": "fbb2f72b-31c5-4dd3-8d19-fed57cd197b3",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "Create a finish schedule entry for a bathroom wall requiring mold-resistant paint in a high-humidity environment in the Philippines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Walls—Paint, ensuring that the selected paint is suitable for high-humidity environments to prevent mold growth."
+        },
+        {
+          "id": "b",
+          "text": "B) Walls—Boysen Permacoat, Color #B150, matte, fungicide primer, per Section 2.0.5 Paint Systems for Humid Environments"
+        },
+        {
+          "id": "c",
+          "text": "C) Walls—Semi-gloss enamel, Color TBD, with additional moisture-resistant properties to enhance durability."
+        },
+        {
+          "id": "d",
+          "text": "D) Walls—Paint, light color, per specification, ensuring compliance with local building codes for moisture control."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Generic 'Paint' provides no direction.",
+        "c": "TBD (to be determined) and 'light color' are vague; unacceptable in working docs.",
+        "d": "'Per specification' without section number is incomplete cross-reference.",
+        "correct": "Option B specifies brand, color, sheen, primer type (fungicide), and spec-section reference. This prevents mold and ensures moisture resistance in high-humidity bathroom. Boysen formulations include fungicide.",
+        "takeaway": "High-humidity zones = fungicide primer + specific paint product. Schedule entry must mandate fungicide; spec section details application."
+      },
+      "explanation": null,
+      "code_citation": "Philippine humidity management; finish specification standards",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:02e916c471100b22d57e51bc1d0c4f2ffc6483d85028b21caf261d2094365ab2"
+    },
+    {
+      "question_id": "f5ca4347-c9b3-4e67-841d-6151a59da160",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "What information must be included in a finish schedule entry to prevent field ambiguity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Room name and general material type (e.g., 'paint' or 'tile'), along with the intended application area"
+        },
+        {
+          "id": "b",
+          "text": "B) Product brand/model, color code, size, and specification section reference (e.g., 'Boysen Permacoat #B150 per Section 2.0.5')"
+        },
+        {
+          "id": "c",
+          "text": "C) Only the finish material name, which should be cross-referenced with the project specifications"
+        },
+        {
+          "id": "d",
+          "text": "D) Approximate cost and supplier, ensuring that budget constraints are met"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "General material type (paint, tile) is insufficient; builders need exact product to source.",
+        "c": "Material name alone allows substitution and quality variance.",
+        "d": "Cost and supplier are project management, not finish specification.",
+        "correct": "Complete specification includes brand, model, color code, size/dimensions, and cross-reference to detailed spec sections. This prevents substitution and ensures quality.",
+        "takeaway": "Every schedule entry = product name + color code + size + spec-section reference. No vague entries like 'paint TBD.'"
+      },
+      "explanation": null,
+      "code_citation": "CSI format; construction specification standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:584db34b40c05c82d4bd7238902a8b458ede6fc8cd37d3be247c8edc4eebd9a2"
+    },
+    {
+      "question_id": "7028f39f-8941-4838-8fdb-3e298beb880e",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "Why is a key/legend sheet with material and color samples essential in Philippine residential projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) It is optional; the schedule text is sufficient for most projects unless specified otherwise by the client"
+        },
+        {
+          "id": "b",
+          "text": "B) It displays actual material/color samples, reducing field ambiguity and preventing rework from color/material mismatches"
+        },
+        {
+          "id": "c",
+          "text": "C) It serves as a cost estimate document, which is not its primary purpose but can be used as a reference"
+        },
+        {
+          "id": "d",
+          "text": "D) It is required only for commercial projects, not typically for residential unless specified by local codes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Samples are essential; text alone permits interpretation variance.",
+        "c": "Key sheet is a project document, not cost estimate.",
+        "d": "Samples benefit all projects; residential especially, due to volume and standardization.",
+        "correct": "Key/legend sheets with actual samples prevent 'color match disputes' and 'material substitution' in the field. Pantone numbers and product codes are abstract; physical samples confirm intent. Critical in residential projects with multiple units.",
+        "takeaway": "In Philippine residential: create key sheet with approved color chips + material samples. Include in bid docs and site office. Reduces rework and disputes."
+      },
+      "explanation": null,
+      "code_citation": "Philippine construction practice; field experience",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:baf3c93cac3f6be637c78c9ae34999887f62c9fbe0dad20484b6dda1d95e30d7"
+    }
+  ]
+}

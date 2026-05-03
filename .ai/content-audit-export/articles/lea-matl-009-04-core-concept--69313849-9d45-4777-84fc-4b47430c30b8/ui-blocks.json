@@ -1,0 +1,119 @@
+{
+  "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+  "slug": "lea-matl-009-04-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.625Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:c0f9d5f421867f3091d3c902547c899e7e5700199cbd5bd05a2fe03b3f35e56f",
+  "normalized_content_hash": "fb33736b349d7301528883d047715b31893a7371d8cb5b08cd9a086613bd8b32",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\nMemory aid: **Test, Document, Approve, Correct**. Every material and system goes through this cycle: testing verifies specification compliance, documentation records results, the architect approves or rejects, and non-conforming work is corrected. If any step is skipped (e.g., no testing, poor documentation), disputes arise. The LEA tests your understanding of this systematic approach to quality control. Always ask: What testing is required? At what frequency? By whom? Documented how? Approved by whom?\n</Tip>",
+      "raw_hash": "sha256:f11411bf410c60927dbe0a33ec9fcf29b6419dde698c44a934e9af8e7bbd9a56",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: **Test, Document, Approve, Correct**. Every material and system goes through this cycle: testing verifies specification compliance, documentation records results, the architect approves or rejects, and non-conforming work is corrected. If any step is skipped (e.g., no testing, poor documentation), disputes arise. The LEA tests your understanding of this systematic approach to quality control. Always ask: What testing is required? At what frequency? By whom? Documented how? Approved b\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:2832b00d634587ab47d1550ffc87b83a2508e205ae5fda20daa5821598047d28",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\nMemory aid: **Test, Document, Approve, Correct**. Every material and system goes through this cycle: testing verifies specification compliance, documentation records results, the architect approves or rejects, and non-conforming work is corrected. If any step is skipped (e.g., no testing, poor documentation), disputes arise. The LEA tests your understanding of this systematic approach to quality control. Always ask: What testing is required? At what frequency? By whom? Documented how? Approved by whom?\n",
+      "children_text": "Memory aid: **Test, Document, Approve, Correct**. Every material and system goes through this cycle: testing verifies specification compliance, documentation records results, the architect approves or rejects, and non-conforming work is corrected. If any step is skipped (e.g., no testing, poor documentation), disputes arise. The LEA tests your understanding of this systematic approach to quality control. Always ask: What testing is required? At what frequency? By whom? Documented how? Approved b",
+      "start_offset": 10363,
+      "end_offset": 10883,
+      "line_start": 55,
+      "line_end": 57,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Omitting slump test requirements from concrete specifications, allowing contractors to deliver concrete of unknown workability. High-slump concrete (excess water) passes placement easily but has reduced strength.\" correction=\"Always specify slump range in Part 1: General with reference to ASTM C143. Include testing frequency (every 100 m3 or daily, per DPWH). Slump testing is quick, inexpensive, and prevents strength problems.\" />",
+      "raw_hash": "sha256:020c185e9b865fd7e0858575c71617428b6570a1226124ccf47a004ecab2f021",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Omitting slump test requirements from concrete specifications, allowing contractors to deliver concrete of unknown workability. High-slump concrete (excess water) passes placement easily but has reduced strength.\", correction=\"Always specify slump range in Part 1: General with reference to ASTM C143. Include testing frequency (every 100 m3 or daily, per DPWH). Slump testing is quick, inexpensive, and prevents strength problems.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c8944285746c3cf8c090d4898834a596a47adaf89ab4cd7a4b9139863521d711",
+      "props": {
+        "mistake": "Omitting slump test requirements from concrete specifications, allowing contractors to deliver concrete of unknown workability. High-slump concrete (excess water) passes placement easily but has reduced strength.",
+        "correction": "Always specify slump range in Part 1: General with reference to ASTM C143. Include testing frequency (every 100 m3 or daily, per DPWH). Slump testing is quick, inexpensive, and prevents strength problems."
+      },
+      "props_json": {
+        "mistake": "Omitting slump test requirements from concrete specifications, allowing contractors to deliver concrete of unknown workability. High-slump concrete (excess water) passes placement easily but has reduced strength.",
+        "correction": "Always specify slump range in Part 1: General with reference to ASTM C143. Include testing frequency (every 100 m3 or daily, per DPWH). Slump testing is quick, inexpensive, and prevents strength problems."
+      },
+      "props_text": "mistake=\"Omitting slump test requirements from concrete specifications, allowing contractors to deliver concrete of unknown workability. High-slump concrete (excess water) passes placement easily but has reduced strength.\" correction=\"Always specify slump range in Part 1: General with reference to ASTM C143. Include testing frequency (every 100 m3 or daily, per DPWH). Slump testing is quick, inexpensive, and prevents strength problems.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 10905,
+      "end_offset": 11365,
+      "line_start": 61,
+      "line_end": 61,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Accepting cylinder compression test results that marginally fail (e.g., 26 MPa when 28 MPa specified) without requiring either (1) retest of additional cylinders to establish trend, or (2) core boring to verify in-situ strength. The contractor pressures acceptance.\" correction=\"Establish acceptance criteria in Part 1: General before testing occurs. Typical: '28-day average must equal or exceed design strength; individual tests must not fall below 90 percent of design strength.' If marginal, require statistical analysis or in-situ testing (core boring per ASTM C42). Do not accept failures without documented justification.\" />",
+      "raw_hash": "sha256:264003d568c69ed0bf1d1ffc8fafa5edaf92cd2943b8268126aa8ecc3117fbbc",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Accepting cylinder compression test results that marginally fail (e.g., 26 MPa when 28 MPa specified) without requiring either (1) retest of additional cylinders to establish trend, or (2) core boring to verify in-situ strength. The contractor pressures acceptance.\", correction=\"Establish acceptance criteria in Part 1: General before testing occurs. Typical: '28-day average must equal or exceed design strength; individual tests must not fall below 90 percent of design strength.' If marginal, require statistical analysis or in-situ testing (core boring per ASTM C42). Do not accept failures without documented justification.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:39710ead7c2975ea2aa3553c458dab5d04f9b4941af21d018a241133b45c4f27",
+      "props": {
+        "mistake": "Accepting cylinder compression test results that marginally fail (e.g., 26 MPa when 28 MPa specified) without requiring either (1) retest of additional cylinders to establish trend, or (2) core boring to verify in-situ strength. The contractor pressures acceptance.",
+        "correction": "Establish acceptance criteria in Part 1: General before testing occurs. Typical: '28-day average must equal or exceed design strength; individual tests must not fall below 90 percent of design strength.' If marginal, require statistical analysis or in-situ testing (core boring per ASTM C42). Do not accept failures without documented justification."
+      },
+      "props_json": {
+        "mistake": "Accepting cylinder compression test results that marginally fail (e.g., 26 MPa when 28 MPa specified) without requiring either (1) retest of additional cylinders to establish trend, or (2) core boring to verify in-situ strength. The contractor pressures acceptance.",
+        "correction": "Establish acceptance criteria in Part 1: General before testing occurs. Typical: '28-day average must equal or exceed design strength; individual tests must not fall below 90 percent of design strength.' If marginal, require statistical analysis or in-situ testing (core boring per ASTM C42). Do not accept failures without documented justification."
+      },
+      "props_text": "mistake=\"Accepting cylinder compression test results that marginally fail (e.g., 26 MPa when 28 MPa specified) without requiring either (1) retest of additional cylinders to establish trend, or (2) core boring to verify in-situ strength. The contractor pressures acceptance.\" correction=\"Establish acceptance criteria in Part 1: General before testing occurs. Typical: '28-day average must equal or exceed design strength; individual tests must not fall below 90 percent of design strength.' If marginal, require statistical analysis or in-situ testing (core boring per ASTM C42). Do not accept failures without documented justification.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 11367,
+      "end_offset": 12025,
+      "line_start": 63,
+      "line_end": 63,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Failing to specify testing frequency and acceptance criteria in Part 1: General (leaves contractor and architect guessing)\", \"Approving shop drawings without verifying dimension tolerance, connection adequacy, and specification alignment\", \"Accepting submittals without complete documentation (missing MSDS, thermal data, installation instructions)\", \"Confusing the role of slump test (workability) with compression test (strength); treating slump results as strength indicators\", \"Failing to require waterproofing mock-ups in tropical construction where moisture is persistent problem\", \"Not verifying third-party laboratory credentials (ISO 17025 accreditation) for independent testing\", \"Accepting test reports without chain-of-custody documentation (who collected samples, when, from where)\", \"Omitting acceptance criteria tolerances (e.g., 'flatness tolerance per ACI 117 Table 4.1')\", \"Failing to require retesting if initial tests are questionable (e.g., high slump indicating potential water addition)\"]} />",
+      "raw_hash": "sha256:345a9b59f8cd55a63f682ac583c5c0b1fe5fecd89080d84572995ead00587bc1",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Failing to specify testing frequency and acceptance criteria in Part 1: General (leaves contractor and architect guessing)\\\", \\\"Approving shop drawings without verifying dimension tolerance, connection adequacy, and specification alignment\\\", \\\"Accepting submittals without complete documentation (missing MSDS, thermal data, installation instructions)\\\", \\\"Confusing the role of slump test (workability) with compression test (strength); treating slump results as strength indicators\\\", \\\"Failing to require waterproofing mock-ups in tropical construction where moisture is persistent problem\\\", \\\"Not verifying third-party laboratory credentials (ISO 17025 accreditation) for independent testing\\\", \\\"Accepting test reports without chain-of-custody documentation (who collected samples, when, from where)\\\", \\\"Omitting acceptance criteria tolerances (e.g., 'flatness tolerance per ACI 117 Table 4.1')\\\", \\\"Failing to require retesting if initial tests are questionable (e.g., high slump indicating potential water addition)\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:6a862f5574da10ab1f529ae8be6c058566e8ce29d2fdeba3843ff6e5f179088f",
+      "props": {
+        "mistakes": "{[\"Failing to specify testing frequency and acceptance criteria in Part 1: General (leaves contractor and architect guessing)\", \"Approving shop drawings without verifying dimension tolerance, connection adequacy, and specification alignment\", \"Accepting submittals without complete documentation (missing MSDS, thermal data, installation instructions)\", \"Confusing the role of slump test (workability) with compression test (strength); treating slump results as strength indicators\", \"Failing to require waterproofing mock-ups in tropical construction where moisture is persistent problem\", \"Not verifying third-party laboratory credentials (ISO 17025 accreditation) for independent testing\", \"Accepting test reports without chain-of-custody documentation (who collected samples, when, from where)\", \"Omitting acceptance criteria tolerances (e.g., 'flatness tolerance per ACI 117 Table 4.1')\", \"Failing to require retesting if initial tests are questionable (e.g., high slump indicating potential water addition)\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Failing to specify testing frequency and acceptance criteria in Part 1: General (leaves contractor and architect guessing)\", \"Approving shop drawings without verifying dimension tolerance, connection adequacy, and specification alignment\", \"Accepting submittals without complete documentation (missing MSDS, thermal data, installation instructions)\", \"Confusing the role of slump test (workability) with compression test (strength); treating slump results as strength indicators\", \"Failing to require waterproofing mock-ups in tropical construction where moisture is persistent problem\", \"Not verifying third-party laboratory credentials (ISO 17025 accreditation) for independent testing\", \"Accepting test reports without chain-of-custody documentation (who collected samples, when, from where)\", \"Omitting acceptance criteria tolerances (e.g., 'flatness tolerance per ACI 117 Table 4.1')\", \"Failing to require retesting if initial tests are questionable (e.g., high slump indicating potential water addition)\"]}"
+      },
+      "props_text": "mistakes={[\"Failing to specify testing frequency and acceptance criteria in Part 1: General (leaves contractor and architect guessing)\", \"Approving shop drawings without verifying dimension tolerance, connection adequacy, and specification alignment\", \"Accepting submittals without complete documentation (missing MSDS, thermal data, installation instructions)\", \"Confusing the role of slump test (workability) with compression test (strength); treating slump results as strength indicators\", \"Failing to require waterproofing mock-ups in tropical construction where moisture is persistent problem\", \"Not verifying third-party laboratory credentials (ISO 17025 accreditation) for independent testing\", \"Accepting test reports without chain-of-custody documentation (who collected samples, when, from where)\", \"Omitting acceptance criteria tolerances (e.g., 'flatness tolerance per ACI 117 Table 4.1')\", \"Failing to require retesting if initial tests are questionable (e.g., high slump indicating potential water addition)\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 12027,
+      "end_offset": 13071,
+      "line_start": 65,
+      "line_end": 65,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:1e2a68048d602e3997e11df394da0d8acf99a94e6066f13a1083f052e53c23c8"
+}

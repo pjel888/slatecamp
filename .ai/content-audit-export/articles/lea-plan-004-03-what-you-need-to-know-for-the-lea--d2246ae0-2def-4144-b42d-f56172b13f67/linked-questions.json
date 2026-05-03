@@ -1,0 +1,518 @@
+{
+  "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:2fceb6dff38ae3b2a5f87e31f4a950e93822c3cf8416c7a1310829bd22a98519",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "c3e8c399-0340-4898-92d5-157dc4edff59",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "In site planning, what does a privacy gradient refer to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A range of privacy levels from fully public to fully private spaces"
+        },
+        {
+          "id": "b",
+          "text": "The slope of terrain that affects visibility from neighboring buildings"
+        },
+        {
+          "id": "c",
+          "text": "A measure of distance between buildings and the street for security purposes"
+        },
+        {
+          "id": "d",
+          "text": "A zoning regulation that determines plot sizes and heights"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Privacy gradient is a socio-psychological concept describing layered transitions from public (street) to private (home interior) spaces.",
+        "b": "Student confuses privacy gradient (social) with topographic slope (physical)",
+        "c": "Student conflates privacy with setback distance",
+        "d": "Student conflates socio-psychological concept with regulatory instrument",
+        "correct": "Privacy gradient is a socio-psychological concept describing layered transitions from public (street) to private (home interior) spaces.",
+        "takeaway": "Privacy gradient = layered transition from public → semi-public → semi-private → private."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: Privacy and Privacy Gradients section",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.333335+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f8e9b3e19c9fe0ceca4d2d2e7a45bd2be2e39271b79ab860c75c1fbced22a11"
+    },
+    {
+      "question_id": "7a8bf283-e24e-4a04-a8ba-7acc67f999c2",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "A barangay is planning the redevelopment of an informal settlement into a formal mixed-income housing and commercial development. Currently, the informal settlement has strong territorial identity—residents have personalized their spaces, know all neighbors, and gather daily at an informal market and basketball court. The new plan proposes uniform row houses, standardized finishes, and a commercial plaza designed for strangers (not residents). A site planner must assess whether the new design will preserve or undermine the socio-psychological conditions that supported the informal settlement's cohesion. What analysis should the planner conduct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore the informal settlement's social cohesion; the formal development is inherently superior and will create better social conditions through modern infrastructure"
+        },
+        {
+          "id": "b",
+          "text": "Compare existing territorial markers, gathering spaces, personalization opportunities, and social proximity with the planned design. Assess whether the plan permits residents to personalize units, creates semi-private courtyards for gathering, maintains market/social functions, and enables informal surveillance. Recommend design modifications (unit customization, community spaces, active ground-floor uses) to strengthen territoriality and sense of ownership in the formal development"
+        },
+        {
+          "id": "c",
+          "text": "Accept the uniform design as standard for formal housing; social cohesion will be rebuilt by administration and community programs, not by site design, which is secondary"
+        },
+        {
+          "id": "d",
+          "text": "Abandon the formal development plan and preserve the informal settlement as-is; formal development always destroys community, which is an irreversible process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student assumes formal planning automatically improves social outcomes",
+        "b": "Comprehensive analysis compares social conditions pre- and post-development; recommends design modifications (personalization, courtyards, active uses) to preserve community cohesion.",
+        "c": "Student separates physical design from social outcomes",
+        "d": "Student treats formalization as inherently destructive rather than designable",
+        "correct": "Comprehensive analysis compares social conditions pre- and post-development; recommends design modifications (personalization, courtyards, active uses) to preserve community cohesion.",
+        "takeaway": "Compare existing social conditions with planned design; adapt to preserve cohesion."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: Territoriality, Privacy Gradient, Community Identity sections",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:60e462e4708b93d6018f68b120e1e07c86338d7deec1ee36ada97c3764cd8c74"
+    },
+    {
+      "question_id": "ccae7dcb-3b36-4a2d-bde6-e68b06cbaf05",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "A site planner is designing a barangay community center for a mixed-income residential neighborhood. The planner wants to encourage informal gathering and social interaction. Based on proxemics (study of personal space), what seating and plaza arrangement would best support comfortable social interaction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arrange all benches in a single row facing the plaza, spaced far apart to minimize proximity stress, which may not encourage interaction"
+        },
+        {
+          "id": "b",
+          "text": "Provide benches in clusters facing each other at conversational distance (1–2 meters), with varied seating to accommodate individuals and groups"
+        },
+        {
+          "id": "c",
+          "text": "Place benches very close together (intimate distance) to encourage a sense of togetherness and community bonding, which may cause discomfort for some individuals"
+        },
+        {
+          "id": "d",
+          "text": "Eliminate seating altogether; standing allows people maximum flexibility and comfort, though it may not support prolonged interaction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student prioritizes distance over conversation; misses conversational social distance (1–2m)",
+        "b": "Conversational distance (1–2m) is the social sweet spot—far enough for comfort, close enough for interaction; clusters accommodate varied group sizes.",
+        "c": "Student confuses intimate distance with comfort; violates personal space norms",
+        "d": "Student ignores accessibility and elderly/mobility-impaired users",
+        "correct": "Conversational distance (1–2m) is the social sweet spot—far enough for comfort, close enough for interaction; clusters accommodate varied group sizes.",
+        "takeaway": "Arrange seating at conversational distance (1–2m) in varied clusters."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: Social Distance and Interaction Patterns section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7a9f45ac77aa47b842296addd08f224cf9ec9b215d7e87dd6043d2d0a3e146fd"
+    },
+    {
+      "question_id": "31c940ca-89eb-4d3e-a062-2ad4d85b5606",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "A site planner is designing a 1,200-unit housing development for low-income residents. The available land accommodates only high-density development (density >400 persons/hectare). What socio-psychological design mitigation is most important to address crowding stress?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase unit size without limiting density—larger interior space reduces crowding perception, though it may not be feasible"
+        },
+        {
+          "id": "b",
+          "text": "Provide adequate semi-private outdoor space (courtyards, rooftop gardens), proximity to public parks within a 5-minute walk, and visual variety in building design to mitigate crowding stress"
+        },
+        {
+          "id": "c",
+          "text": "Reduce density to avoid high-density development, even if it means fewer units and higher per-unit cost, which may not be practical"
+        },
+        {
+          "id": "d",
+          "text": "High density always causes crowding stress; design cannot mitigate psychological effects, which is a defeatist view"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student focuses only on interior privacy without addressing site-level crowding stress",
+        "b": "Crowding stress is mitigated by outdoor space access, park proximity, and visual variety—site-level interventions, not just unit interior.",
+        "c": "Student avoids the design challenge rather than addressing it",
+        "d": "Student treats crowding stress as immutable rather than designable",
+        "correct": "Crowding stress is mitigated by outdoor space access, park proximity, and visual variety—site-level interventions, not just unit interior.",
+        "takeaway": "Mitigate crowding stress with outdoor space, parks, and visual variety."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: Density, Crowding, and Psychological Stress section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:09aada98f8819fa988b6c892f0764b1b94170d931a7c19fea9adbd536e96f052"
+    },
+    {
+      "question_id": "c05c5044-4a49-4e34-901a-8ddcde147821",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "Which of the following is an example of semi-private space in site planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A public sidewalk open to all pedestrians, providing unrestricted access"
+        },
+        {
+          "id": "b",
+          "text": "The interior of a residential unit accessible only to the family, ensuring privacy"
+        },
+        {
+          "id": "c",
+          "text": "A residential courtyard or community garden accessible primarily to residents of the development"
+        },
+        {
+          "id": "d",
+          "text": "A commercial shopping mall open to all during business hours, offering a public environment"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student confuses public with semi-private space",
+        "b": "Student conflates private with semi-private space",
+        "c": "Semi-private spaces have controlled access (residents only) but are not private homes; courtyards and community gardens are classic examples.",
+        "d": "Student conflates commercial accessibility with semi-private residential space",
+        "correct": "Semi-private spaces have controlled access (residents only) but are not private homes; courtyards and community gardens are classic examples.",
+        "takeaway": "Semi-private = resident-accessible, not public; not home-interior."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: Privacy and Privacy Gradients section",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:092cc28fcc21dc990adad48f98472af4a7f0a73743634a3e6ad403168bc00c03"
+    },
+    {
+      "question_id": "28c63043-eef8-4df8-8e01-0143be6e9199",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "In the context of site planning, what does _eyes on the street_ (informed by Jane Jacobs' principles) contribute to public safety and community vitality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Informal surveillance by residents and activity—ground-floor shops, varied activity times, and proximity of buildings to the street create natural oversight that deters crime and encourages street life"
+        },
+        {
+          "id": "b",
+          "text": "Extensive security cameras and private security guards monitoring all spaces, ensuring constant surveillance"
+        },
+        {
+          "id": "c",
+          "text": "High fences and gates that allow only residents to view the street from their homes, limiting public access"
+        },
+        {
+          "id": "d",
+          "text": "Public surveillance is invasive and should be minimized in site planning; crime prevention is not a planning concern and should be addressed separately"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Eyes on the street = informal surveillance by residents through active ground floors, varied uses, and street proximity—a natural crime deterrent from good urban design.",
+        "b": "Student conflates eyes-on-street with formal security systems (outside site planning)",
+        "c": "Student treats exclusion as equivalent to surveillance",
+        "d": "Student rejects natural surveillance as privacy invasion",
+        "correct": "Eyes on the street = informal surveillance by residents through active ground floors, varied uses, and street proximity—a natural crime deterrent from good urban design.",
+        "takeaway": "Eyes on the street = ground-floor active uses + mixed-use vitality + informal oversight."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: Surveillance and 'Eyes on the Street' section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:87599858aed8e7ba5c07d16d77fb573e39bbc8c894f20e273050a75b374433d6"
+    },
+    {
+      "question_id": "610892cf-0dae-40d9-94f4-98738e7a9c75",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "A site planner analyzes a proposed high-density commercial-residential district in a business district. The site will have approximately 500 persons/hectare during business hours (very high density). The planner identifies overlapping socio-psychological challenges: (1) crowding stress from high density, (2) low territoriality because residents are transient (workers and short-term residents), (3) weak placemaking because the district has no distinctive character or cultural identity, and (4) poor wayfinding because the dense layout is confusing. To create a viable and socially healthy district, the planner must integrate strategies across all four challenges. Which approach best addresses the overlapping constraints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept high density and do not attempt to mitigate crowding stress; focus exclusively on wayfinding signage, which may not address all issues."
+        },
+        {
+          "id": "b",
+          "text": "Provide abundant semi-private and public open spaces (courtyards, rooftop gardens, plazas) within the dense fabric to mitigate crowding; create distinctive placemaking through mixed retail/cultural uses and public art; enable residents/workers to personalize temporary spaces; ensure clear legible streets with visual landmarks; allow ground-floor cafes and gathering spaces to create territorial anchors and informal surveillance"
+        },
+        {
+          "id": "c",
+          "text": "Reduce density significantly to address crowding stress; this will also solve placemaking and territoriality, though it may not be feasible."
+        },
+        {
+          "id": "d",
+          "text": "High-density commercial districts cannot be socially healthy; recommend less dense development instead, which may not align with urban goals."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student addresses one challenge while ignoring others",
+        "b": "Integrating open spaces, placemaking, personalization, legibility, and active ground-floor uses addresses all four challenges simultaneously—high density is compatible with social health through careful design.",
+        "c": "Student uses density reduction as catch-all rather than integrating design solutions",
+        "d": "Student treats high-density as incompatible with wellbeing rather than designable",
+        "correct": "Integrating open spaces, placemaking, personalization, legibility, and active ground-floor uses addresses all four challenges simultaneously—high density is compatible with social health through careful design.",
+        "takeaway": "Integrate open space, placemaking, legibility, and activity to make high density socially healthy."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: All sections (Density, Territoriality, Placemaking, Wayfinding, Accessibility)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3fd73ce50b7fa60f5fe899f06e198baa88795a996b7cdaa86ac9c314d68f9eff"
+    },
+    {
+      "question_id": "7bb1bc9d-10f7-4e1a-9a92-bf7742d94fcd",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "A site plan for a mixed-use development shows a main plaza with rows of identical benches, minimal vegetation or shade structures, poor lighting, and no accessible water fountains or toilets. The planner observes that the plaza will serve elderly residents, young children, and people with mobility challenges. What is the primary socio-psychological limitation of this design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The plaza is not visually distinctive; it fails to create placemaking and identity for the development, which is crucial for community engagement"
+        },
+        {
+          "id": "b",
+          "text": "The design lacks universal accessibility and inclusion—missing seating for rest, shade for tropical climate, lighting for safety, and water/toilet access—which limits usability for elderly, disabled, and children"
+        },
+        {
+          "id": "c",
+          "text": "The plaza is too large and will feel empty; reduce its size to create a more intimate space, which can enhance social interaction"
+        },
+        {
+          "id": "d",
+          "text": "Identical benches are monotonous but that is an aesthetic, not a socio-psychological, concern, though it may affect user satisfaction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student identifies secondary issue rather than primary accessibility/inclusion problem",
+        "b": "Accessibility is a socio-psychological and ethical requirement; missing rest, shade, lighting, and facilities directly excludes vulnerable users.",
+        "c": "Student addresses scale rather than accessibility",
+        "d": "Student undervalues visual diversity's role in placemaking and inclusion",
+        "correct": "Accessibility is a socio-psychological and ethical requirement; missing rest, shade, lighting, and facilities directly excludes vulnerable users.",
+        "takeaway": "Universal accessibility is fundamental to socially healthy site planning."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: Accessibility and Inclusive Design section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d75a852d7ffc999b4d7dfc08c3e684bc3f70836ccdc4d280e20277d54c6ab521"
+    },
+    {
+      "question_id": "1fb91500-8524-4972-899e-0cc8e4e7bcaf",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "A site planner is analyzing a proposed development adjacent to a barangay market. The existing market is a key placemaking element—residents identify themselves with the market's community and vitality. However, the development's design isolates the market behind tall buildings with minimal pedestrian connection. What is the planner's responsibility in addressing this socio-psychological constraint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore the market's placemaking role; it is a separate land use and not relevant to the development site, focusing solely on the new development's requirements"
+        },
+        {
+          "id": "b",
+          "text": "Recommend the market be relocated to make room for development; this resolves the constraint but may disrupt community ties"
+        },
+        {
+          "id": "c",
+          "text": "Redesign the development's edges to maintain visual and physical connection to the market, incorporate ground-floor retail to extend market vitality, and create pedestrian pathways linking the development and market to strengthen placemaking"
+        },
+        {
+          "id": "d",
+          "text": "Placemaking is subjective and emotional; it cannot be addressed through site planning and should be left to cultural programs, which may not align with planning objectives"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student fails to recognize placemaking as a context factor affecting site planning",
+        "b": "Student advocates for destroying a placemaking element rather than integrating it",
+        "c": "Placemaking is spatial—preserve connections, extend ground-floor activity, and link the development with the existing market to strengthen community identity.",
+        "d": "Student separates spatial design from social/cultural outcomes",
+        "correct": "Placemaking is spatial—preserve connections, extend ground-floor activity, and link the development with the existing market to strengthen community identity.",
+        "takeaway": "Preserve and strengthen existing placemaking through design connection."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: Community Identity and Placemaking section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ce35e8bfbcaa81d4c23de8e23d434ff115b1f218d566c19e078e64ebbaa2bb13"
+    },
+    {
+      "question_id": "a21f4872-7187-4f49-ab80-4e940c190080",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "Why is territoriality important in residential site planning, particularly in community-based or low-income housing developments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Territoriality increases residents' sense of ownership and belonging, leading to stronger community cohesion and better maintenance of common spaces"
+        },
+        {
+          "id": "b",
+          "text": "Territoriality restricts access and prevents outsiders from using public spaces, which is the primary goal of residential design, ensuring privacy and security"
+        },
+        {
+          "id": "c",
+          "text": "Territoriality has no relevance to housing design; it is purely a legal concept related to property boundaries, with no impact on community dynamics"
+        },
+        {
+          "id": "d",
+          "text": "Territoriality means that all spaces should be fenced and gated for security, regardless of accessibility needs, prioritizing safety over openness"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Territoriality (sense of ownership) strengthens community bonds and informal maintenance; informal settlements often have stronger cohesion than planned housing lacking personalization opportunities.",
+        "b": "Student misinterprets territoriality as exclusion rather than ownership",
+        "c": "Student separates psychological principles from planning practice",
+        "d": "Student conflates territoriality with gated or exclusive design",
+        "correct": "Territoriality (sense of ownership) strengthens community bonds and informal maintenance; informal settlements often have stronger cohesion than planned housing lacking personalization opportunities.",
+        "takeaway": "Territoriality = sense of ownership; enable personalization and community identity."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-03: Territoriality and Sense of Ownership section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:51ed5c1ed3431448da8a47ed3618953c9e0230c82f38f94d5f522b7a1d579609"
+    }
+  ]
+}

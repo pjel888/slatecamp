@@ -1,0 +1,1460 @@
+{
+  "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:5339d646a6093ceaf4fd47d8aa687273ea63a11a9e919c713526bf117ff47a60",
+  "question_count": 33,
+  "questions": [
+    {
+      "question_id": "562573f4-38b1-412a-91a9-ce07fdf840ee",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building straddling two fire zones has exactly 400 sq m in the Highly Fire Restrictive Zone out of a total of 1,200 sq m. Which zone governs the entire building under PD 1096 Rule V, Sec. 502?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Highly Fire Restrictive Zone, because 400 sq m is the larger portion of the building, thus requiring stricter compliance"
+        },
+        {
+          "id": "b",
+          "text": "Highly Fire Restrictive Zone, because 400 sq m is more than one-third of 1,200 sq m, triggering the need for enhanced fire safety measures"
+        },
+        {
+          "id": "c",
+          "text": "Less restrictive zone, because exactly one-third (400/1,200) means the triggering condition ('more than one-third') is not met"
+        },
+        {
+          "id": "d",
+          "text": "Building Official discretion determines which zone applies, allowing for case-by-case assessment based on specific building conditions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is the 'exactly one-third' trap. The Code says 'more than one-third' — at exactly 1/3, the less restrictive zone governs. Exam questions specifically present 400/1,200 to test this nuance.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2b8fa8ce6222848b0f8269ef6b9decf2c0b030180380729d7a0dd3ced789ac03"
+    },
+    {
+      "question_id": "9691d764-7cc2-48c7-a69d-5fcb2982f478",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule V, Sec. 503, what are the fire zone compliance requirements for a pre-engineered building that is dismantled and relocated to a different fire zone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The building may retain its original fire zone compliance certification if it was legally compliant at the previous location and no structural changes are made"
+        },
+        {
+          "id": "b",
+          "text": "The building must comply with all requirements for buildings in the new fire zone, regardless of its previous compliance status"
+        },
+        {
+          "id": "c",
+          "text": "The building is exempt from fire zone requirements if it was manufactured to any recognized standard and has not been altered"
+        },
+        {
+          "id": "d",
+          "text": "Relocation is not covered under Sec. 503; general building permit requirements apply instead, necessitating a new compliance review"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This prevents a common loophole: PEBs designed for rural/agricultural sites (Non-Fire Restricted Zone) being moved to industrial zones (Fire Restrictive or Highly Fire Restrictive) without upgrades.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:87e3327bb61bb8c32532de736188adb2787865b9a884d21b51d9343de57ab633"
+    },
+    {
+      "question_id": "0d8071e7-7231-4af2-95f5-eded3930df04",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule V, Sec. 506(e), after a typhoon damages a non-conforming building in a Fire Restrictive Zone, what is the cost cap and material requirement for repair?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≤20% of appraised value; same or better materials allowed"
+        },
+        {
+          "id": "b",
+          "text": "≤20% of replacement cost; same kind of materials as original construction"
+        },
+        {
+          "id": "c",
+          "text": "≤20% of building value; any non-combustible material permitted"
+        },
+        {
+          "id": "d",
+          "text": "≤20% of replacement cost; any material permitted as long as Building Official approves"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Pathway C uses 'value of the existing building' (appraised/market value). Pathway E uses 'replacement cost' (higher). This distinction is frequently tested. Replacement cost > appraised value, so the same absolute peso amount may be compliant under E but not under C.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1b228803ec1d3b064b33ef1813cdbae155bff4a82f5f685f2b07c072ae8b20ce"
+    },
+    {
+      "question_id": "6548066e-372c-43f8-a191-d5bf988c1997",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Using the 'NRH — No Rush Here' mnemonic under PD 1096 Rule V, what do the letters stand for in ascending order of fire zone restriction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N = Non-restrictive, R = Restricted, H = Highly Restricted — Type I = most fire-resistive, Type V = least fire-resistive, with specific requirements for each type"
+        },
+        {
+          "id": "b",
+          "text": "N = Non-Fire Restricted Zone (Types I, II; no fire resistivity), R = Fire Restrictive Zone (Types II, III, IV; 2 hr exterior / 1 hr interior), H = Highly Fire Restrictive Zone (Types IV, V; 3–4 hr throughout)"
+        },
+        {
+          "id": "c",
+          "text": "N = Not fire-rated, R = Rated, H = Highly rated — each zone requires progressively more fire testing and certification"
+        },
+        {
+          "id": "d",
+          "text": "N = National zoning, R = Regional, H = Highly local — increasing administrative jurisdiction with specific local ordinances"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "CRITICAL: Philippine Type I = LEAST fire-resistive; Type V = MOST fire-resistive. This is OPPOSITE of the IBC numbering system. A student who applies IBC logic will reverse every construction type question.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26ca234070c343077bb95fd9448fc7edce909bf1528f7b6c2bb2c4696217802a"
+    },
+    {
+      "question_id": "834e1250-ec22-41fa-8ea0-0a58b814f5a7",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule V, Sec. 504-1, what conditions must be met for a temporary building such as a reviewing stand to be erected in a restrictive fire zone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The structure must be fire-rated for at least 2 hours and approved by the BFP, ensuring compliance with safety standards"
+        },
+        {
+          "id": "b",
+          "text": "A special permit from the Building Official is required for a limited period; the structure must be completely removed upon permit expiration"
+        },
+        {
+          "id": "c",
+          "text": "Temporary structures are prohibited in restrictive and highly restrictive zones regardless of permit, maintaining strict safety protocols"
+        },
+        {
+          "id": "d",
+          "text": "The structure must conform to IBC temporary structure standards for a certificate to be issued, aligning with international guidelines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The Building Official's authority under Sec. 504-2 for non-conforming temporaries in restrictive zones is conditional: fire protective/preventive measures and suppression facilities must be adequate.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3b61194545e20e4e1d3eb24c12cc84d7e8c663dfcf56a37858572db3186a213f"
+    },
+    {
+      "question_id": "e1588ff5-9f2c-4b39-9f12-16e7a38beda9",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule V, Sec. 505, what measuring convention applies when determining fire separation distance for buildings adjacent to a street or alley?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The edge of the sidewalk is used as the property line for distance measurement, which is a common misinterpretation."
+        },
+        {
+          "id": "b",
+          "text": "The center line of the adjoining street or alley may be considered an adjacent property line; distances measured at right angles to the street"
+        },
+        {
+          "id": "c",
+          "text": "The face of the building on the opposite side of the street is used as the reference point, which is incorrect."
+        },
+        {
+          "id": "d",
+          "text": "Distance is measured from the property line to the face of the building, regardless of street width, which is a frequent error."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This convention is consistent with Rule VII, Sec. 704-705. The full half-width of the street corridor counts as effective fire separation distance, relaxing exterior wall fire resistance requirements for buildings on wide streets.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bda1f185633c917c94db1b01296558fd596bbe2adc99b6589de8ec9c122e72a5"
+    },
+    {
+      "question_id": "20573d52-3297-413a-aca7-6c04a606a462",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the '20/12/3' mnemonic for Pathway C under PD 1096 Rule V, Sec. 506(c), what do the three numbers represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 = number of days to file appeal; 12 = months of construction permit validity; 3 = number of required inspections"
+        },
+        {
+          "id": "b",
+          "text": "20 = 20% of building value; 12 = any 12-month period; 3 = three conditions: cost + no combustibles + no increased hazard"
+        },
+        {
+          "id": "c",
+          "text": "20 = 20-year permit validity; 12 = minimum structural design life in years; 3 = three fire zone categories"
+        },
+        {
+          "id": "d",
+          "text": "20 = 20% of replacement cost; 12 = 12-month rolling window; 3 = three permitted construction types per zone"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Say it as: 'Twenty in Twelve, Three conditions.' All three conditions must be satisfied — failing any one invalidates the entire Pathway C pathway, even if the other two are met.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:902b0ebf1c544f3f725b5f524af38b2316c10a4e8548021fd537215e6f48aace"
+    },
+    {
+      "question_id": "91825d29-f47e-4503-9312-112572517417",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which of the following represents the complete set of five pathways available for an existing non-conforming building in a fire zone under PD 1096 Rule V, Sec. 506?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total demolition; relocation outside zone; 20% repair/alteration; addition with fire wall; fortuitous event repair, ensuring compliance with safety standards"
+        },
+        {
+          "id": "b",
+          "text": "Total demolition; relocation; 20% repair/alteration (Pathway C); fire wall-separated addition (Pathway D); fortuitous event repair (Pathway E)"
+        },
+        {
+          "id": "c",
+          "text": "Full code upgrade; partial demolition; sprinkler installation in lieu of compliance; temporary permit renewal, which are not all recognized pathways"
+        },
+        {
+          "id": "d",
+          "text": "Grandfathering for historic buildings; 20% repair/alteration; fortuitous event repair, which does not cover all possible pathways"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Each pathway is an independent option — the owner picks one. The pathways are mutually exclusive for any given scope of work. Pathway C and E both use a 20% threshold but with different denominators and different triggers.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:31555aad7fac0e50c044da8878ba496e25a43a3762db4fc05d3366fa226a466e"
+    },
+    {
+      "question_id": "a0cdd45c-4fbc-4077-857f-f520039200c8",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule V, Sec. 506(d), what is the requirement for making additions to a non-conforming building in a fire zone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additions may be attached directly to the existing building without restriction as long as the addition itself complies"
+        },
+        {
+          "id": "b",
+          "text": "Additions must be separated from the existing building by fire walls per Sec. 506(b)"
+        },
+        {
+          "id": "c",
+          "text": "Additions are prohibited if the existing building is non-conforming"
+        },
+        {
+          "id": "d",
+          "text": "Additions must be reviewed by the BFP but do not require fire wall separation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The fire wall is the legal boundary between the non-conforming past and the compliant present. From the fire zone's perspective, the compliant addition is treated as a separate building.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e2772617bb01a30076c87cb3233b0ac830b01e93933316b789425357bd32b1da"
+    },
+    {
+      "question_id": "c8184ce9-18a2-4ac0-a5c2-93ba68b26693",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "After a typhoon damages a non-conforming building in a Fire Restrictive Zone, the owner repairs it using the same kind of materials at a cost equal to 25% of the building's appraised market value. Under PD 1096 Rule V, Sec. 506(e), is this compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because 25% is close to the 20% threshold and fortuitous event repairs are more lenient"
+        },
+        {
+          "id": "b",
+          "text": "Cannot be determined without knowing the replacement cost of the building"
+        },
+        {
+          "id": "c",
+          "text": "No, because 25% of appraised value exceeds the 20% cap regardless of replacement cost"
+        },
+        {
+          "id": "d",
+          "text": "Yes, because fortuitous event repairs have no cost cap"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Pathway C: 20% of 'value of the existing building' (appraised/market value). Pathway E: 20% of 'replacement cost' (重建 cost). These are different denominators that produce different absolute peso amounts.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2dda64eb2a79710178d965242ac82d2f90c19a61305db606019fcd7a02b48501"
+    },
+    {
+      "question_id": "d9e1643d-0fd2-447c-9bb1-cacc58c110ef",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule V, Sec. 501, what is the definition and purpose of fire zones?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Areas where only certain building materials are prohibited based on their combustibility, ensuring compliance with local fire safety regulations"
+        },
+        {
+          "id": "b",
+          "text": "Areas within which only certain types of buildings are permitted based on their use, type of construction, and resistance to fire — for the management, prevention, control, and suppression of conflagration"
+        },
+        {
+          "id": "c",
+          "text": "Areas designated by the Bureau of Fire Protection for mandatory sprinkler installation, regardless of building height or occupancy type"
+        },
+        {
+          "id": "d",
+          "text": "Areas where the Building Official has authority to override all construction type requirements, provided that the overall fire safety is not compromised"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The word 'conflagration' in Sec. 507 is deliberate and testable — it distinguishes urban-scale fire spread from individual building fires. Fire zones exist to break the chain of fire spreading from building to building across an urban block.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0ca101c5d7d0e702d4a20ff61d8d4ff4ed8d6077aabaf90c68c4efd25a6d6d3c"
+    },
+    {
+      "question_id": "15094e33-337c-465a-bee5-78b582523661",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An existing Type I shophouse (bamboo and light wood construction) located in a Fire Restrictive Zone was built in 1975 and is non-conforming. Which proposed work scenario is permitted under PD 1096 Rule V, Sec. 506(c)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace the roof with new nipa thatch and add a bamboo mezzanine; total cost = 18% of building value; work planned over 6 months. The changes add combustible material."
+        },
+        {
+          "id": "b",
+          "text": "Install new non-combustible metal roofing and repaint all exterior surfaces; total cost = 18% of building value; work planned over 6 months. No added combustibles, no increased fire hazard."
+        },
+        {
+          "id": "c",
+          "text": "Demolish the rear half of the building, rebuild in Type I construction to expand floor area; total cost = 45% of building value."
+        },
+        {
+          "id": "d",
+          "text": "Add a new attached concrete addition without a fire wall, constructed to Type III standards; total cost = 15% of building value."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The '20/12/3' mnemonic: 20% cost ceiling, 12-month measurement window, 3 conditions (cost + no combustibles + no increased hazard). All three must be simultaneously satisfied.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f8f4c73ae865124be0973a8c5d042958b030d1247d427cdedb0d7096cec5c282"
+    },
+    {
+      "question_id": "0e0235e8-1734-4017-a824-27339a8535d8",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which construction type is EXCLUSIVELY permitted in the Highly Fire Restrictive Zone (and not in any less restrictive zone) under PD 1096 Rule V, Sec. 507?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Type IV"
+        },
+        {
+          "id": "b",
+          "text": "Type V"
+        },
+        {
+          "id": "c",
+          "text": "Type III"
+        },
+        {
+          "id": "d",
+          "text": "Type II"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The NRH mnemonic organizes: Non-Fire Restricted (Types I, II) → Fire Restrictive (Types II, III, IV) → Highly Fire Restrictive (Types IV, V). Overlaps: Type II in NFR+FR; Type IV in FR+HFR. Exclusive: Type I only in NFR; Type V only in HFR; Type III only in FR.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3cb40a0887068f1521b36eda0ed4ec8ca9381ac04a8e2748f5c91ffa0d21183c"
+    },
+    {
+      "question_id": "df956457-65f8-4662-bd61-cf426a78d5a4",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A lot has 40% of its area in a Highly Fire Restrictive Zone and 60% in a Fire Restrictive Zone. Under the PD 1096 split-zone rule, which zone's requirements govern the building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fire Restrictive Zone governs because it covers the majority (60%) of the lot area"
+        },
+        {
+          "id": "B",
+          "text": "Highly Fire Restrictive Zone governs because more than one-third of the lot is in the stricter zone"
+        },
+        {
+          "id": "C",
+          "text": "Requirements are blended: Highly Fire Restrictive Zone rules apply only to the 40% portion"
+        },
+        {
+          "id": "D",
+          "text": "The owner chooses: either zone applies since the stricter zone is under 50% of the lot area"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The PD 1096 split-zone rule triggers the stricter zone's requirements whenever the stricter zone contains more than one-third of the lot area. With 40% in the Highly Fire Restrictive Zone — exceeding the one-third (33.3%) threshold — the Highly Fire Restrictive Zone requirements govern the entire building.",
+      "explanation": "This scenario is a deliberate reversal of the previous split-zone question. Here, the less restrictive zone covers the majority (60%), but the one-third rule still triggers the stricter Highly Fire Restrictive Zone requirements because 40% > 33.3%. The rule protects against a building that partially occupies the most hazardous zones from escaping the most stringent requirements.",
+      "code_citation": "PD 1096, Rule V, Sec. 501",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d666d6bb4ff31766123872d42a6b9cfa89b2f3008fc343d2caea488c5b91f244"
+    },
+    {
+      "question_id": "52c93c36-2434-4bac-9c2e-3a9c040f125f",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Pathway C of Sec. 506 includes three cumulative conditions that must ALL be satisfied for alterations to a nonconforming building to proceed. Which of the following conditions is NOT part of Pathway C?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The alterations must not increase the existing nonconformity of the building"
+        },
+        {
+          "id": "B",
+          "text": "The cumulative alteration cost in 12 months must not exceed 20% of assessed building value"
+        },
+        {
+          "id": "C",
+          "text": "The building must obtain a new Certificate of Occupancy after each alteration phase"
+        },
+        {
+          "id": "D",
+          "text": "The occupancy classification must not change as a result of the alterations"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Pathway C does not require a new Certificate of Occupancy after each alteration phase. The three Pathway C conditions are: (1) alterations must not exceed 20% of assessed value in 12 months, (2) the nonconformity must not increase, and (3) the occupancy must not change.",
+      "explanation": "Pathway C has three simultaneous conditions: cost threshold, no increase in nonconformity, and no change of occupancy. The Certificate of Occupancy requirement is a red herring — it is not listed as one of Pathway C's conditions. Adding a fictional requirement to the correct list of three is a common LEA distractor technique.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 Pathway C",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:72a0ddc0eba21c22df8fb68d48d1ef79694e9cd5de9bf2ee77faf60a7cb11517"
+    },
+    {
+      "question_id": "9957fdbc-1c3a-4207-97cd-3f6eee0c64f7",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An existing Type II building (combustible, non-rated) sits in a Fire Restrictive Zone and requires comprehensive renovation exceeding Pathway C thresholds. What does PD 1096 require for this building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The building may proceed if the owner certifies compliance with current fire safety equipment standards"
+        },
+        {
+          "id": "B",
+          "text": "The building must be brought into full conformance with current Fire Restrictive Zone construction requirements"
+        },
+        {
+          "id": "C",
+          "text": "The building may continue as-is since Type II is compatible with Fire Restrictive Zone standards"
+        },
+        {
+          "id": "D",
+          "text": "The building must be demolished; rehabilitation is not permitted when Pathway C thresholds are exceeded"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "When alterations to a nonconforming building exceed the Pathway C threshold (20% of assessed value in 12 months), the building must be brought into full conformance with the current fire zone construction requirements — in this case, the Fire Restrictive Zone standards that Type II construction does not meet.",
+      "explanation": "Once the Pathway C threshold is exceeded, the 'existing building exemption' is lost. The building must comply with current fire zone construction requirements, which for a Fire Restrictive Zone means non-combustible, fire-rated construction. This does not automatically mean demolition — the existing structure may be retrofitted — but it must meet current standards. Option D is incorrect because rehabilitation to current standards is explicitly the intended remedy, not mandatory demolition.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 and Sec. 507",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ae807232b0f27b4d823738d1907877ecc5c59cbbba30296b41b8c6c1079c036"
+    },
+    {
+      "question_id": "9821850f-1e71-433a-aae7-aa4676ca564c",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A lot lies on the boundary between a Fire Restrictive Zone and a Non-Fire Restricted Zone, with two-thirds of the lot area in the Fire Restrictive Zone. Under the PD 1096 split-zone rule, which fire zone requirements govern the entire building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Non-Fire Restricted Zone rules apply because the building can span both zones, allowing flexibility in design."
+        },
+        {
+          "id": "B",
+          "text": "Fire Restrictive Zone rules apply because more than one-third of the lot is in the stricter zone"
+        },
+        {
+          "id": "C",
+          "text": "The two zones' requirements are averaged proportionally based on lot area distribution, ensuring balanced compliance."
+        },
+        {
+          "id": "D",
+          "text": "The owner may choose which zone classification to apply as a matter of right, providing strategic advantages."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The PD 1096 split-zone rule states that when any portion of a lot falls within a stricter fire zone, and that portion exceeds one-third of the lot area, the stricter zone's requirements govern the entire building on the lot.",
+      "explanation": "The one-third threshold is the trigger: if the stricter zone contains more than 1/3 of the lot, that zone's rules apply to the whole building. Here, the Fire Restrictive Zone covers 2/3 of the lot — far exceeding the 1/3 trigger — so Fire Restrictive Zone requirements govern throughout. If the stricter zone covered only 1/4 of the lot, the less restrictive zone's rules would apply.",
+      "code_citation": "PD 1096, Rule V, Sec. 501",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a90f6d875822a663b5dd03fa48559ebe2db77a50cb4d73ea8ccf64f05b9720ef"
+    },
+    {
+      "question_id": "e2981dbe-c8e1-4156-9d1c-0ad1567f57f2",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Sec. 506, how many lawful pathways exist for an existing nonconforming building to continue operating without full reconstruction to current fire zone standards?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Three pathways: repair, ordinary maintenance, and change of occupancy"
+        },
+        {
+          "id": "B",
+          "text": "Four pathways: maintenance, addition, alteration, and reconstruction"
+        },
+        {
+          "id": "C",
+          "text": "Five pathways labeled A through E covering specific conditions for continued use"
+        },
+        {
+          "id": "D",
+          "text": "Two pathways: demolition with reconstruction or ongoing maintenance without alteration"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 506 establishes five specific pathways (A through E) that permit existing nonconforming buildings to continue operating under defined conditions without requiring full compliance reconstruction.",
+      "explanation": "The five-pathway structure of Sec. 506 is a key regulatory framework for existing building work. Each pathway has specific conditions: Pathway A covers ordinary repairs; Pathway C and E deal with alterations within cost thresholds. Knowing that there are exactly five pathways, not three or four, is essential for correctly advising clients on the scope of permissible work.",
+      "code_citation": "PD 1096, Rule V, Sec. 506",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc2360fa1c667caa2bbec207aec208dbf1843c47ad1a7b07ce400cfedcd188b7"
+    },
+    {
+      "question_id": "e36f84ef-6e6a-477f-90e1-b007baeab16b",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building in a Highly Fire Restrictive Zone was legally constructed under older regulations. The owner wants to change the occupancy classification but not alter the structure. Under PD 1096 Sec. 506, which pathway most likely governs this scenario?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pathway A, which covers all ordinary maintenance and repairs without structural changes"
+        },
+        {
+          "id": "B",
+          "text": "Pathway B, which addresses change of occupancy for nonconforming buildings"
+        },
+        {
+          "id": "C",
+          "text": "Pathway C, which permits alterations not exceeding 20% of assessed value in 12 months"
+        },
+        {
+          "id": "D",
+          "text": "Pathway E, which allows same-materials repairs after fire damage without occupancy change"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 506 Pathway B specifically addresses changes of occupancy for nonconforming existing buildings, setting conditions under which the occupancy may be changed without triggering full fire zone reconstruction requirements.",
+      "explanation": "The five pathways in Sec. 506 are not interchangeable — each addresses a specific type of work or change. Pathway B is the operative pathway for occupancy changes. Pathway C governs alteration scope; Pathway E governs post-fire repair. Selecting the wrong pathway leads to applying the wrong cost thresholds and conditions.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 Pathway B",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:41bafabd49567b2e7f0d2c9c2c6c4d3c35057ef9c4fc8f2d41cb1334b219493e"
+    },
+    {
+      "question_id": "f6691308-d82b-42a9-8e4e-d395f550b2a5",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Sec. 506 Pathway C, what is the maximum total value of alterations permitted within any 12-month period before full code compliance is triggered for a nonconforming existing building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alterations may not exceed 10% of the building's assessed value within 12 months"
+        },
+        {
+          "id": "B",
+          "text": "Alterations may not exceed 20% of the building's assessed value within 12 months"
+        },
+        {
+          "id": "C",
+          "text": "Alterations may not exceed 30% of the building's assessed value within 12 months"
+        },
+        {
+          "id": "D",
+          "text": "Alterations may not exceed 50% of the building's assessed value within 12 months"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 506 Pathway C permits alterations to nonconforming buildings provided the cumulative cost of alterations within any 12-month period does not exceed 20% of the building's assessed value.",
+      "explanation": "The 20% threshold within a 12-month rolling period is the Pathway C limit. Exceeding this threshold in cumulative alteration value would require full fire zone compliance for the entire building. Architects must track cumulative alteration costs against the assessed value when advising clients on phased renovation programs for nonconforming buildings.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 Pathway C",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b365c2562c1fde3fd9f88a77e260a814775b48d138e39dcdf9cca9e02b72ef1"
+    },
+    {
+      "question_id": "0779f41d-4659-4bc6-99f2-f356db2d1715",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, how many fire zone classifications does the National Building Code establish for the Philippines?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Two fire zone types: restricted and unrestricted"
+        },
+        {
+          "id": "B",
+          "text": "Three fire zone types with progressively stricter requirements"
+        },
+        {
+          "id": "C",
+          "text": "Four fire zone types mirroring international building code conventions"
+        },
+        {
+          "id": "D",
+          "text": "Five fire zone types corresponding to building construction types"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 Sec. 501 establishes three fire zone classifications: Non-Fire Restricted Zone, Fire Restrictive Zone, and Highly Fire Restrictive Zone, each with progressively stricter construction requirements.",
+      "explanation": "The three-zone system reflects a spectrum from areas where combustible construction is tolerated (Non-Fire Restricted) through zones requiring non-combustible and fire-rated construction (Highly Fire Restrictive). The number of zones — three, not four or five — is a frequently tested fact on the LEA.",
+      "code_citation": "PD 1096, Rule V, Sec. 501",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d8481bb6fa96a58a8c5fe7c0d1de812646bd256a46e0cdd0266d1000e7dcf32"
+    },
+    {
+      "question_id": "adbf6684-c5a1-48f0-83e2-750bb38ca37f",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "In the Philippine fire zone system under PD 1096, which building construction type represents the MOST fire-resistive category?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Type I, which is the highest rated construction type in the Philippine system"
+        },
+        {
+          "id": "B",
+          "text": "Type III, which represents the midpoint and highest practical fire-resistive category"
+        },
+        {
+          "id": "C",
+          "text": "Type V, which represents the most fire-resistive construction in the Philippine system"
+        },
+        {
+          "id": "D",
+          "text": "Type IV, which is the highest because Type V is reserved for special structures"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Under PD 1096, Type V is the most fire-resistive construction type. This is the direct opposite of the International Building Code (IBC) convention, where Type I is the most fire-resistive category.",
+      "explanation": "Philippine LEA candidates must memorize this reversal: PD 1096 Type I = least fire-resistive (ordinary combustible), Type V = most fire-resistive (fully fire-rated). This is a common trap question because IBC-trained practitioners assume the numbering works the same way internationally.",
+      "code_citation": "PD 1096, Rule V, Sec. 501-503",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:28ec6cf2fa399c9b11754aef92964442b1f009b2002973b2f8fc0a3b9dfe335b"
+    },
+    {
+      "question_id": "0160b018-7507-482c-a6a6-bdfeec05a78d",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Pathway E under Sec. 506 permits repairs to a fire-damaged nonconforming building using the same construction materials. What is the cost threshold that governs this pathway?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Repairs may use original materials if cost does not exceed 10% of the building's replacement cost"
+        },
+        {
+          "id": "B",
+          "text": "Repairs may use original materials if cost does not exceed 20% of the building's replacement cost"
+        },
+        {
+          "id": "C",
+          "text": "Repairs may use original materials if cost does not exceed 30% of the building's replacement cost"
+        },
+        {
+          "id": "D",
+          "text": "Repairs may use original materials regardless of cost if the building retains its original occupancy"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 506 Pathway E permits a fire-damaged nonconforming building to be repaired using the same materials — even if those materials do not comply with current fire zone standards — provided the repair cost does not exceed 20% of the building's replacement cost.",
+      "explanation": "Pathway E is specifically designed for post-fire reconstruction scenarios. The 20% replacement cost threshold (as opposed to Pathway C's assessed value basis) reflects that replacement cost is typically the more relevant measure after fire damage. Beyond 20% of replacement cost, the building must be rebuilt to current fire zone standards.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 Pathway E",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.799787+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c068950fafd2d8fc9c314fd20529e222b16ddeb7cacececa1cec49ec159e47dc"
+    },
+    {
+      "question_id": "49e50e09-2086-4821-b09b-afd33a813bde",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "In the Philippine fire zone system under PD 1096, which building construction type represents the MOST fire-resistive category?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Type I, which is the highest rated construction type in the Philippine system"
+        },
+        {
+          "id": "B",
+          "text": "Type III, which represents the midpoint and highest practical fire-resistive category"
+        },
+        {
+          "id": "C",
+          "text": "Type V, which represents the most fire-resistive construction in the Philippine system"
+        },
+        {
+          "id": "D",
+          "text": "Type IV, which is the highest because Type V is reserved for special structures"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Under PD 1096, Type V is the most fire-resistive construction type. This is the direct opposite of the International Building Code (IBC) convention, where Type I is the most fire-resistive category.",
+      "explanation": "Philippine LEA candidates must memorize this reversal: PD 1096 Type I = least fire-resistive (ordinary combustible), Type V = most fire-resistive (fully fire-rated). This is a common trap question because IBC-trained practitioners assume the numbering works the same way internationally.",
+      "code_citation": "PD 1096, Rule V, Sec. 501-503",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d940f9e6debbc9b55c61edfa0da877ac5f54ba0cd107dd0f6ec5a5f0d62bc1b"
+    },
+    {
+      "question_id": "2f5c2212-3f83-4150-819f-0f275360fe68",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A lot lies on the boundary between a Fire Restrictive Zone and a Non-Fire Restricted Zone, with two-thirds of the lot area in the Fire Restrictive Zone. Under the PD 1096 split-zone rule, which fire zone requirements govern the entire building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Non-Fire Restricted Zone rules apply because the building can span both zones, allowing for flexibility in design"
+        },
+        {
+          "id": "B",
+          "text": "Fire Restrictive Zone rules apply because more than one-third of the lot is in the stricter zone"
+        },
+        {
+          "id": "C",
+          "text": "The two zones' requirements are averaged proportionally based on lot area distribution, which is not a standard practice"
+        },
+        {
+          "id": "D",
+          "text": "The owner may choose which zone classification to apply as a matter of right, although this is rarely permitted"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The PD 1096 split-zone rule states that when any portion of a lot falls within a stricter fire zone, and that portion exceeds one-third of the lot area, the stricter zone's requirements govern the entire building on the lot.",
+      "explanation": "The one-third threshold is the trigger: if the stricter zone contains more than 1/3 of the lot, that zone's rules apply to the whole building. Here, the Fire Restrictive Zone covers 2/3 of the lot — far exceeding the 1/3 trigger — so Fire Restrictive Zone requirements govern throughout. If the stricter zone covered only 1/4 of the lot, the less restrictive zone's rules would apply.",
+      "code_citation": "PD 1096, Rule V, Sec. 501",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:92809754be4508fb2d4c0fbac7dc2580748100899f8d932e98ddfc9674c0bf6c"
+    },
+    {
+      "question_id": "1d529e84-d2e4-4706-a4d8-744d79146ff9",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Sec. 506 Pathway C, what is the maximum total value of alterations permitted within any 12-month period before full code compliance is triggered for a nonconforming existing building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alterations may not exceed 10% of the building's assessed value within 12 months"
+        },
+        {
+          "id": "B",
+          "text": "Alterations may not exceed 20% of the building's assessed value within 12 months"
+        },
+        {
+          "id": "C",
+          "text": "Alterations may not exceed 30% of the building's assessed value within 12 months"
+        },
+        {
+          "id": "D",
+          "text": "Alterations may not exceed 50% of the building's assessed value within 12 months"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 506 Pathway C permits alterations to nonconforming buildings provided the cumulative cost of alterations within any 12-month period does not exceed 20% of the building's assessed value.",
+      "explanation": "The 20% threshold within a 12-month rolling period is the Pathway C limit. Exceeding this threshold in cumulative alteration value would require full fire zone compliance for the entire building. Architects must track cumulative alteration costs against the assessed value when advising clients on phased renovation programs for nonconforming buildings.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 Pathway C",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:481f224b8b283c2c37d11b83b49a3a128b1d0f87047268b54ae1174ca17d3781"
+    },
+    {
+      "question_id": "bd216e8e-574c-4acf-bc28-56cd9db3c571",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Sec. 506, how many lawful pathways exist for an existing nonconforming building to continue operating without full reconstruction to current fire zone standards?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Three pathways: repair, ordinary maintenance, and change of occupancy"
+        },
+        {
+          "id": "B",
+          "text": "Four pathways: maintenance, addition, alteration, and reconstruction"
+        },
+        {
+          "id": "C",
+          "text": "Five pathways labeled A through E covering specific conditions for continued use"
+        },
+        {
+          "id": "D",
+          "text": "Two pathways: demolition with reconstruction or ongoing maintenance without alteration"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 506 establishes five specific pathways (A through E) that permit existing nonconforming buildings to continue operating under defined conditions without requiring full compliance reconstruction.",
+      "explanation": "The five-pathway structure of Sec. 506 is a key regulatory framework for existing building work. Each pathway has specific conditions: Pathway A covers ordinary repairs; Pathway C and E deal with alterations within cost thresholds. Knowing that there are exactly five pathways, not three or four, is essential for correctly advising clients on the scope of permissible work.",
+      "code_citation": "PD 1096, Rule V, Sec. 506",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:89d9098b8f2de16a374d284d5d3ea7e532d37fa3ce0aaa818c3564ba3c6b0658"
+    },
+    {
+      "question_id": "86fa54dc-9a43-4148-a171-2075e04756b6",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A lot has 40% of its area in a Highly Fire Restrictive Zone and 60% in a Fire Restrictive Zone. Under the PD 1096 split-zone rule, which zone's requirements govern the building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fire Restrictive Zone governs because it covers the majority (60%) of the lot area"
+        },
+        {
+          "id": "B",
+          "text": "Highly Fire Restrictive Zone governs because more than one-third of the lot is in the stricter zone"
+        },
+        {
+          "id": "C",
+          "text": "Requirements are blended: Highly Fire Restrictive Zone rules apply only to the 40% portion"
+        },
+        {
+          "id": "D",
+          "text": "The owner chooses: either zone applies since the stricter zone is under 50% of the lot area"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The PD 1096 split-zone rule triggers the stricter zone's requirements whenever the stricter zone contains more than one-third of the lot area. With 40% in the Highly Fire Restrictive Zone — exceeding the one-third (33.3%) threshold — the Highly Fire Restrictive Zone requirements govern the entire building.",
+      "explanation": "This scenario is a deliberate reversal of the previous split-zone question. Here, the less restrictive zone covers the majority (60%), but the one-third rule still triggers the stricter Highly Fire Restrictive Zone requirements because 40% > 33.3%. The rule protects against a building that partially occupies the most hazardous zones from escaping the most stringent requirements.",
+      "code_citation": "PD 1096, Rule V, Sec. 501",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:31cd84a9e23f611394dc42bf9c1afee62a2e973e6c8af0fa544e7c884009eceb"
+    },
+    {
+      "question_id": "12fa76ed-14dc-409f-b3e5-0913d7c65426",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Pathway C of Sec. 506 includes three cumulative conditions that must ALL be satisfied for alterations to a nonconforming building to proceed. Which of the following conditions is NOT part of Pathway C?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The alterations must not increase the existing nonconformity of the building"
+        },
+        {
+          "id": "B",
+          "text": "The cumulative alteration cost in 12 months must not exceed 20% of assessed building value"
+        },
+        {
+          "id": "C",
+          "text": "The building must obtain a new Certificate of Occupancy after each alteration phase"
+        },
+        {
+          "id": "D",
+          "text": "The occupancy classification must not change as a result of the alterations"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Pathway C does not require a new Certificate of Occupancy after each alteration phase. The three Pathway C conditions are: (1) alterations must not exceed 20% of assessed value in 12 months, (2) the nonconformity must not increase, and (3) the occupancy must not change.",
+      "explanation": "Pathway C has three simultaneous conditions: cost threshold, no increase in nonconformity, and no change of occupancy. The Certificate of Occupancy requirement is a red herring — it is not listed as one of Pathway C's conditions. Adding a fictional requirement to the correct list of three is a common LEA distractor technique.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 Pathway C",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d0d1b3665fba440756baa3e4146baafef59841979c12b45673743d8a9681ebf8"
+    },
+    {
+      "question_id": "ec8975ad-4016-4f02-ac24-c7edcca5abd7",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An existing Type II building (combustible, non-rated) sits in a Fire Restrictive Zone and requires comprehensive renovation exceeding Pathway C thresholds. What does PD 1096 require for this building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The building may proceed if the owner certifies compliance with current fire safety equipment standards"
+        },
+        {
+          "id": "B",
+          "text": "The building must be brought into full conformance with current Fire Restrictive Zone construction requirements"
+        },
+        {
+          "id": "C",
+          "text": "The building may continue as-is since Type II is compatible with Fire Restrictive Zone standards"
+        },
+        {
+          "id": "D",
+          "text": "The building must be demolished; rehabilitation is not permitted when Pathway C thresholds are exceeded"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "When alterations to a nonconforming building exceed the Pathway C threshold (20% of assessed value in 12 months), the building must be brought into full conformance with the current fire zone construction requirements — in this case, the Fire Restrictive Zone standards that Type II construction does not meet.",
+      "explanation": "Once the Pathway C threshold is exceeded, the 'existing building exemption' is lost. The building must comply with current fire zone construction requirements, which for a Fire Restrictive Zone means non-combustible, fire-rated construction. This does not automatically mean demolition — the existing structure may be retrofitted — but it must meet current standards. Option D is incorrect because rehabilitation to current standards is explicitly the intended remedy, not mandatory demolition.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 and Sec. 507",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3249789881765f1d38481c090aefb0b5919b788562d9cdd7d1fae4642e6a29f9"
+    },
+    {
+      "question_id": "c8f745eb-5e3b-4fe9-b972-d43cc21768fa",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building in a Highly Fire Restrictive Zone was legally constructed under older regulations. The owner wants to change the occupancy classification but not alter the structure. Under PD 1096 Sec. 506, which pathway most likely governs this scenario?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pathway A, which covers all ordinary maintenance and repairs without structural changes"
+        },
+        {
+          "id": "B",
+          "text": "Pathway B, which addresses change of occupancy for nonconforming buildings"
+        },
+        {
+          "id": "C",
+          "text": "Pathway C, which permits alterations not exceeding 20% of assessed value in 12 months"
+        },
+        {
+          "id": "D",
+          "text": "Pathway E, which allows same-materials repairs after fire damage without occupancy change"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 506 Pathway B specifically addresses changes of occupancy for nonconforming existing buildings, setting conditions under which the occupancy may be changed without triggering full fire zone reconstruction requirements.",
+      "explanation": "The five pathways in Sec. 506 are not interchangeable — each addresses a specific type of work or change. Pathway B is the operative pathway for occupancy changes. Pathway C governs alteration scope; Pathway E governs post-fire repair. Selecting the wrong pathway leads to applying the wrong cost thresholds and conditions.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 Pathway B",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6ca6ef0719208bb02f8c410023621652c8767685d7ddd4423ecedd314acd8cf7"
+    },
+    {
+      "question_id": "b7ceb4c6-1d05-4e30-ae6f-8e472bbfc7e5",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Pathway E under Sec. 506 permits repairs to a fire-damaged nonconforming building using the same construction materials. What is the cost threshold that governs this pathway?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Repairs may use original materials if cost does not exceed 10% of the building's replacement cost"
+        },
+        {
+          "id": "B",
+          "text": "Repairs may use original materials if cost does not exceed 20% of the building's replacement cost"
+        },
+        {
+          "id": "C",
+          "text": "Repairs may use original materials if cost does not exceed 30% of the building's replacement cost"
+        },
+        {
+          "id": "D",
+          "text": "Repairs may use original materials regardless of cost if the building retains its original occupancy"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 506 Pathway E permits a fire-damaged nonconforming building to be repaired using the same materials — even if those materials do not comply with current fire zone standards — provided the repair cost does not exceed 20% of the building's replacement cost.",
+      "explanation": "Pathway E is specifically designed for post-fire reconstruction scenarios. The 20% replacement cost threshold (as opposed to Pathway C's assessed value basis) reflects that replacement cost is typically the more relevant measure after fire damage. Beyond 20% of replacement cost, the building must be rebuilt to current fire zone standards.",
+      "code_citation": "PD 1096, Rule V, Sec. 506 Pathway E",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:798dadc13a1c90299e296d15245e76ef24eef84af54299c3d1e28abbe94bfdb2"
+    },
+    {
+      "question_id": "49a236a4-2df0-4785-842b-4f876f4927f0",
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, how many fire zone classifications does the National Building Code establish for the Philippines?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Two fire zone types: restricted and unrestricted"
+        },
+        {
+          "id": "B",
+          "text": "Three fire zone types with progressively stricter requirements"
+        },
+        {
+          "id": "C",
+          "text": "Four fire zone types mirroring international building code conventions"
+        },
+        {
+          "id": "D",
+          "text": "Five fire zone types corresponding to building construction types"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 Sec. 501 establishes three fire zone classifications: Non-Fire Restricted Zone, Fire Restrictive Zone, and Highly Fire Restrictive Zone, each with progressively stricter construction requirements.",
+      "explanation": "The three-zone system reflects a spectrum from areas where combustible construction is tolerated (Non-Fire Restricted) through zones requiring non-combustible and fire-rated construction (Highly Fire Restrictive). The number of zones — three, not four or five — is a frequently tested fact on the LEA.",
+      "code_citation": "PD 1096, Rule V, Sec. 501",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.65365+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ab3f9fcd0c5e796b40945a8bdff452f2a30c3fe85b6cbdf1b3cb5aff420bd7a"
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:354b93f6187ade7bab4a4187c7f24514a5f5c3ae50d09be680c0f1dd09404fe1",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "117d447b-0598-4981-876b-298a11f16e07",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "A rectangular office space measures 6m × 8m. You specify 600×600mm suspended ceiling tiles. How many tiles will be required (without considering waste or partial tiles at edges)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 40 tiles, calculated based on the total area divided by the area of one tile"
+        },
+        {
+          "id": "b",
+          "text": "B) 110 tiles, assuming a layout that maximizes coverage with minimal cutting"
+        },
+        {
+          "id": "c",
+          "text": "Add option E) 130 tiles and mark as correct, or change dimensions to yield 120 exactly (e.g., 6m x 7.2m)"
+        },
+        {
+          "id": "d",
+          "text": "D) 160 tiles, accounting for potential layout inefficiencies and overlaps"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "40 is too low; miscalculation.",
+        "b": "110 is plausible but off by ~10-20 tiles.",
+        "d": "160 suggests overstocking.",
+        "correct": "6m / 0.6m = 10 tiles; 8m / 0.6m = 13.33, round to 14 tiles minimum. 10 × 14 = 140 tiles (accounting for trim and partial at one edge, approximately 120 is close). Exact answer: 10 × 13 = 130 full tiles + edge pieces.",
+        "takeaway": "Grid layout calculation: (length / tile size) × (width / tile size). Always plan for trim perimeter and partial tiles. Budget 5-10% waste."
+      },
+      "explanation": null,
+      "code_citation": "Ceiling grid sizing calculation",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c5c9f6e76cfefa9d7e3a8186529a2e7c1d498f3c2d92e737c207f9e37f278f97"
+    },
+    {
+      "question_id": "cea067d8-8697-482c-a007-9db0b743fe5a",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "A law office specifies standard mineral fiber acoustic tiles (NRC 0.65) for cost savings. Is this appropriate for achieving speech privacy between offices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Yes; NRC 0.65 is adequate for any office"
+        },
+        {
+          "id": "b",
+          "text": "B) No; offices require NRC ≥0.75 minimum for speech privacy; specify perforated tiles (NRC 0.80+) or acoustic baffles"
+        },
+        {
+          "id": "c",
+          "text": "C) Only if offices are separated by full-height walls with no penetrations or openings"
+        },
+        {
+          "id": "d",
+          "text": "D) Yes; speech privacy depends on partition height, not ceiling NRC, and can be supplemented with sound masking systems"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NRC 0.65 is acceptable for retail, not offices.",
+        "c": "Full-height walls eliminate sound transmission but do not address acoustic absorption in office spaces.",
+        "d": "Partition height affects direct sound; ceiling NRC affects reflected sound. Both matter.",
+        "correct": "NRC 0.65 is insufficient for office speech privacy. Sound reflects off low-absorption tiles, traveling between offices via return air path. NRC ≥0.75 (preferably 0.80+) is needed. Cost savings here create design failure and client complaints.",
+        "takeaway": "Match NRC to space function. Office = 0.75+. Don't compromise acoustic performance for cost."
+      },
+      "explanation": null,
+      "code_citation": "Acoustic design standards; office requirements",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:45fd0a5300fd84a51a85ee20fbc98440e5095ce952a4b5b5c3e8642477565ffb"
+    },
+    {
+      "question_id": "f063d4c4-2ad9-4bb6-a80c-cb8092ba6eaf",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "A 20-story office building in Metro Manila includes suspended ceilings throughout. The contractor omits lateral bracing (IBC Section 13.5.7) to save cost. What is the structural and code compliance consequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Minimal impact; bracing is optional in occupied buildings unless specified otherwise by local amendments"
+        },
+        {
+          "id": "b",
+          "text": "B) Code violation and seismic collapse risk; suspended ceilings without bracing will fall during an earthquake, endangering occupants"
+        },
+        {
+          "id": "c",
+          "text": "C) Only a concern in Seismic Zone 5; Zone 4 does not require bracing unless the building exceeds 30 meters in height"
+        },
+        {
+          "id": "d",
+          "text": "D) Bracing is required for ceilings <3m high only, except in high-occupancy areas where additional measures are mandated"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bracing is mandatory, not optional.",
+        "c": "Philippines is Zone 4, requiring bracing; Zone 5 does not apply.",
+        "d": "Bracing applies to all suspended ceilings.",
+        "correct": "IBC Section 13.5.7 is mandatory in Seismic Design Category D (Philippines Zone 4). Omitting lateral and diagonal bracing at 900-1200mm spacing violates code and creates catastrophic collapse risk during earthquakes. Suspended ceilings without bracing fall as discrete tiles or entire sections, injuring occupants below.",
+        "takeaway": "Seismic bracing is non-negotiable. Inspect during construction. Cost savings that omit safety requirements = major liability."
+      },
+      "explanation": null,
+      "code_citation": "IBC Section 13.5.7; Philippine Seismic Design Standards (PHVS)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4f1ac3d208cf0ba5a4f5c88059fb0d01cbc783504b4bccd9a7dcf17b4941ed38"
+    },
+    {
+      "question_id": "07078c5d-5161-44e1-9e0b-6743cea5f0b0",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "A hospital ceiling assembly must achieve a 2-hour fire rating. Standard Class A mineral fiber acoustic tiles are specified. Is this adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Yes; Class A tiles provide 2-hour fire rating, which meets the necessary fire safety standards for hospital environments"
+        },
+        {
+          "id": "b",
+          "text": "B) No; Class A is surface fire rating only; structural 2-hour rating requires additional gypsum, intumescent paint, or rated assembly details"
+        },
+        {
+          "id": "c",
+          "text": "C) Yes if tiles are >25mm thick, which may provide additional fire resistance but is not a guaranteed solution"
+        },
+        {
+          "id": "d",
+          "text": "D) Only if combined with non-rated drywall above, which may not provide the required fire rating without further modifications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Class A is surface-only; not structural rating.",
+        "c": "Thickness does not provide structural rating.",
+        "d": "Non-rated drywall does not help.",
+        "correct": "Class A fire rating (flame spread <25 FRA, smoke <450 SMOG) is a surface property, not structural rating. 2-hour fire rating requires structural design: 5/8-inch Type X gypsum, intumescent paint, or rated assembly. Two different specifications needed.",
+        "takeaway": "Class A = surface fire rating. 2-hour = structural rating. Specify both separately; confirm assembly with fire consultant."
+      },
+      "explanation": null,
+      "code_citation": "IBC fire-rating definitions; ASTM E84 surface testing vs. structural assembly testing",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:458f1dd0dc34c82c244b275fe05e8723fff6ead672e7b844a01b832b8624ade8"
+    },
+    {
+      "question_id": "9567ae14-4aaf-46b0-bf34-f61a403c07a1",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "Design a ceiling system for a 15m × 10m open-plan office in Quezon City requiring: (1) speech privacy (NRC ≥0.80), (2) 2-hour fire rating, (3) seismic compliance (Zone 4), (4) easy MEP access. Which specification best meets all requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Standard mineral fiber 600×600 tiles (NRC 0.65), 9/16-inch grid, no special bracing, which may not meet seismic requirements"
+        },
+        {
+          "id": "b",
+          "text": "B) Perforated acoustic tiles (NRC 0.85), 9/16-inch ASTM C635 grid with lateral and diagonal bracing per IBC 13.5.7; gypsum return air plenum with intumescent paint for 2-hour rating"
+        },
+        {
+          "id": "c",
+          "text": "C) Flat gypsum drywall ceiling with paint, no suspended system, which limits MEP access and may not meet acoustic requirements"
+        },
+        {
+          "id": "d",
+          "text": "D) Metal ceiling panels (NRC 0.40) with seismic bracing only, which may not provide adequate acoustic performance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Standard tiles fail NRC requirement (0.65 < 0.80); no fire rating design.",
+        "c": "Flat gypsum limits MEP access; 2-hour rating requires assembly detail.",
+        "d": "Metal panels fail NRC requirement (0.40).",
+        "correct": "Option B satisfies all requirements: perforated tiles deliver NRC 0.85 for speech privacy; ASTM C635 grid with seismic bracing meets Zone 4 compliance; gypsum + intumescent paint assembly achieves 2-hour fire rating; suspended system allows MEP access above. Perforated tiles add cost but essential for design requirements.",
+        "takeaway": "Integrate acoustic, fire, seismic, and MEP requirements into unified ceiling specification. Cost savings that sacrifice function = design failure."
+      },
+      "explanation": null,
+      "code_citation": "Integrated design standards: acoustics, fire, seismic, MEP coordination",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:91eecb45f52480379edbbb03c8ad3a2b4c468df0e5a7d87d51243488d9a26eb4"
+    },
+    {
+      "question_id": "e9ab80b7-cc32-46e9-8539-c497c82a85e7",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "Why is seismic bracing required for suspended ceiling systems in the Philippines per NSCP 2015 Section 408.3.2 (referencing ASCE 7 Chapter 13)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) To improve acoustic performance by reducing sound transmission through structural elements"
+        },
+        {
+          "id": "b",
+          "text": "B) To prevent ceiling sag under normal loads, especially in areas with high humidity and temperature fluctuations"
+        },
+        {
+          "id": "c",
+          "text": "C) To prevent collapse during lateral (earthquake) motion"
+        },
+        {
+          "id": "d",
+          "text": "D) To reduce vibration from HVAC equipment, ensuring quieter operation and increased occupant comfort"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bracing is not about acoustics.",
+        "b": "Spacing and grid strength address sag; bracing addresses lateral motion.",
+        "d": "Isolation pads address vibration; bracing addresses seismic forces.",
+        "correct": "IBC Section 13.5.7 mandates lateral and diagonal bracing to resist seismic (earthquake) forces. The Philippines is in Seismic Zone 4; bracing prevents catastrophic ceiling collapse during earthquakes.",
+        "takeaway": "Seismic bracing = earthquake resistance. Zone 4 (Philippines) = mandatory. It's not optional for cost savings."
+      },
+      "explanation": null,
+      "code_citation": "IBC Section 13.5.7; Philippine Seismic Design Category",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c6bb9a1b012a119ff3695770f2fffaafda95d94336213b1a87f1825bc79bb2c3"
+    },
+    {
+      "question_id": "df773c56-1fd4-4553-bdb0-50152db2cfe7",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "What Noise Reduction Coefficient (NRC) is appropriate for an office environment requiring speech privacy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) NRC 0.50, suitable for environments with moderate noise control needs"
+        },
+        {
+          "id": "b",
+          "text": "B) NRC 0.65, providing a balance between cost and acoustic performance"
+        },
+        {
+          "id": "c",
+          "text": "C) NRC 0.75 or higher"
+        },
+        {
+          "id": "d",
+          "text": "D) NRC 0.95 (maximum), ensuring the highest level of sound absorption for critical areas"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NRC 0.50 is minimal absorption; inadequate for offices.",
+        "b": "NRC 0.65 is for retail corridors, light-duty spaces; insufficient for offices.",
+        "d": "NRC 0.95 is maximum available; not necessary.",
+        "correct": "Offices require NRC ≥0.75 for adequate sound absorption and speech privacy. NRC 0.75+ controls reverberation and limits sound transmission between offices.",
+        "takeaway": "Offices = 0.75+. Retail/corridors = 0.65. Match NRC to space function."
+      },
+      "explanation": null,
+      "code_citation": "Acoustic design standards; office speech-privacy requirements",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6a5eb8a6b423683f5e653cd2be0f5cebef397b0fe0937273b9bd99f6489659f9"
+    },
+    {
+      "question_id": "f6cbcf2f-7e97-4684-885d-578b4f282677",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "What is the standard T-bar grid width for mineral fiber acoustic tile suspension systems per ASTM C635?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 3/8-inch"
+        },
+        {
+          "id": "b",
+          "text": "B) 9/16-inch"
+        },
+        {
+          "id": "c",
+          "text": "C) 3/4-inch"
+        },
+        {
+          "id": "d",
+          "text": "D) 15/16-inch"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3/8-inch is too narrow; insufficient tile support.",
+        "c": "3/4-inch does not align with standard mineral fiber grid.",
+        "d": "15/16-inch is heavy-duty aluminum grid, not standard.",
+        "correct": "9/16-inch is the most common grid flange width compatible with standard mineral fiber tiles, per market practice and ASTM C635 load-rated systems. This is the cost-effective, most common standard.",
+        "takeaway": "Standard = 9/16 inch. Heavy-duty aluminum = 15/16 inch. Match grid width to tile specification."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C635 Standard Specification for Steel Suspension Systems",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:18ad05504c3bfbdaa4688184ecf14161747e527e8f1987fc851036f0083f3eec"
+    },
+    {
+      "question_id": "a2b94fca-bc04-4096-bed4-b9a2f76aa976",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "What is the most common suspended ceiling tile size in Philippine commercial construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 400×400mm, typically used in smaller spaces where larger tiles are impractical"
+        },
+        {
+          "id": "b",
+          "text": "B) 600×600mm (2×2 ft)"
+        },
+        {
+          "id": "c",
+          "text": "C) 800×800mm, often chosen for its aesthetic appeal in larger open areas"
+        },
+        {
+          "id": "d",
+          "text": "D) 1200×1200mm, suitable for expansive spaces requiring fewer joints"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "400×400mm is less common; increases labor (more tiles to handle).",
+        "c": "800×800mm exists but is less cost-effective than 600×600.",
+        "d": "1200×1200mm is oversized for typical projects.",
+        "correct": "600×600mm (2×2 ft) is the standard global and Philippine market size. It optimizes cost, installation speed, and fit to typical office/retail bays.",
+        "takeaway": "600×600mm is default standard. 600×1200mm is also common for long spaces. Custom sizes increase cost."
+      },
+      "explanation": null,
+      "code_citation": "Market practice, ASTM C635 compatibility",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:52eb62d44549b17feec774e7a51bedcbf4b7b7689b76c594e2a6e3c34c9117b2"
+    },
+    {
+      "question_id": "9be36e02-f086-4b3b-afc3-8e2a20862fa5",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "Standard mineral fiber acoustic tiles are specified for a bathroom ceiling area. What risk does this create in a tropical Philippine climate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) No risk; tiles are fire-rated and thus unaffected by moisture or humidity"
+        },
+        {
+          "id": "b",
+          "text": "B) High risk; mineral fiber absorbs moisture and deteriorates within 3-5 years in high-humidity bathrooms"
+        },
+        {
+          "id": "c",
+          "text": "C) Low risk if tiles are painted with waterproof coating, which can prevent moisture absorption"
+        },
+        {
+          "id": "d",
+          "text": "D) Risk only if bathrooms are above occupied spaces, where moisture could seep through and cause damage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fire rating does not prevent moisture absorption.",
+        "c": "Waterproof coating is temporary; substrate still absorbs moisture.",
+        "d": "Location does not affect material moisture performance.",
+        "correct": "Standard mineral fiber tiles are hydroscopic (absorb moisture). In bathrooms with continuous high humidity (70-95% RH), tiles absorb water, sag, and deteriorate within 3-5 years. Specify moisture-rated gypsum (USG Firecode C) or metal panels for wet areas.",
+        "takeaway": "Bathrooms, kitchens, pool areas = moisture-rated or metal ceiling. Standard tiles fail in tropical climates."
+      },
+      "explanation": null,
+      "code_citation": "Material durability; tropical humidity effects",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:98807e98809bea37dfc1a51ad76bcc54cd05261ed5c5fbe0ca06575f337ee8da"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+  "slug": "lea-dsgn-007-07-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.217Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:86fb20158dc2f574bb06eecd2c52e7e74c5b1c5ade161c80858b6b9ba3d7aee5",
+  "normalized_content_hash": "86fb20158dc2f574bb06eecd2c52e7e74c5b1c5ade161c80858b6b9ba3d7aee5",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  mistakes={[\n    'ERR-DSGN-006: Applying an R-1 PSO of 60% as a default (many LGUs specify 50%; always follow the problem data or ordinance cited)',\n    'ERR-DSGN-007: Calculating TGFA as TLA \u00d7 PSO \u00d7 floors (incorrectly using TLA instead of AMBF)',\n    'ERR-DSGN-008: Calculating FLAR as TGFA \u00f7 AMBF (incorrectly using AMBF instead of TLA)',\n    'ERR-DSGN-009: Using non-standard floor-to-floor heights (e.g., 2.70 m) without explicit exam instructions, which skews the number of floors',\n    'ERR-DSGN-011: Confusing GFA (single floor) with TGFA (sum of all floors)',\n    'ERR-DSGN-012: Misidentifying TOSL as only the landscaped area (TOSL = ISA + USA, i.e., all open space within the lot)'\n  ]}\n/>",
+      "raw_hash": "sha256:28b3bd05667e6ca7636a72de84c04a4f34500c71572fdbf64ef1e3f47c82a6b7",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n    'ERR-DSGN-006: Applying an R-1 PSO of 60% as a default (many LGUs specify 50%; always follow the problem data or ordinance cited)',\\n    'ERR-DSGN-007: Calculating TGFA as TLA \u00d7 PSO \u00d7 floors (incorrectly using TLA instead of AMBF)',\\n    'ERR-DSGN-008: Calculating FLAR as TGFA \u00f7 AMBF (incorrectly using AMBF instead of TLA)',\\n    'ERR-DSGN-009: Using non-standard floor-to-floor heights (e.g., 2.70 m) without explicit exam instructions, which skews the number of floors',\\n    'ERR-DSGN-011: Confusing GFA (single floor) with TGFA (sum of all floors)',\\n    'ERR-DSGN-012: Misidentifying TOSL as only the landscaped area (TOSL = ISA + USA, i.e., all open space within the lot)'\\n  ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:201834b53616a7056f01643c2e58cd6c72a57f2d42901e46fb27db4039f4259d",
+      "props": {
+        "mistakes": "{[\n    'ERR-DSGN-006: Applying an R-1 PSO of 60% as a default (many LGUs specify 50%; always follow the problem data or ordinance cited)',\n    'ERR-DSGN-007: Calculating TGFA as TLA \u00d7 PSO \u00d7 floors (incorrectly using TLA instead of AMBF)',\n    'ERR-DSGN-008: Calculating FLAR as TGFA \u00f7 AMBF (incorrectly using AMBF instead of TLA)',\n    'ERR-DSGN-009: Using non-standard floor-to-floor heights (e.g., 2.70 m) without explicit exam instructions, which skews the number of floors',\n    'ERR-DSGN-011: Confusing GFA (single floor) with TGFA (sum of all floors)',\n    'ERR-DSGN-012: Misidentifying TOSL as only the landscaped area (TOSL = ISA + USA, i.e., all open space within the lot)'\n  ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n    'ERR-DSGN-006: Applying an R-1 PSO of 60% as a default (many LGUs specify 50%; always follow the problem data or ordinance cited)',\n    'ERR-DSGN-007: Calculating TGFA as TLA \u00d7 PSO \u00d7 floors (incorrectly using TLA instead of AMBF)',\n    'ERR-DSGN-008: Calculating FLAR as TGFA \u00f7 AMBF (incorrectly using AMBF instead of TLA)',\n    'ERR-DSGN-009: Using non-standard floor-to-floor heights (e.g., 2.70 m) without explicit exam instructions, which skews the number of floors',\n    'ERR-DSGN-011: Confusing GFA (single floor) with TGFA (sum of all floors)',\n    'ERR-DSGN-012: Misidentifying TOSL as only the landscaped area (TOSL = ISA + USA, i.e., all open space within the lot)'\n  ]}"
+      },
+      "props_text": "mistakes={[\n    'ERR-DSGN-006: Applying an R-1 PSO of 60% as a default (many LGUs specify 50%; always follow the problem data or ordinance cited)',\n    'ERR-DSGN-007: Calculating TGFA as TLA \u00d7 PSO \u00d7 floors (incorrectly using TLA instead of AMBF)',\n    'ERR-DSGN-008: Calculating FLAR as TGFA \u00f7 AMBF (incorrectly using AMBF instead of TLA)',\n    'ERR-DSGN-009: Using non-standard floor-to-floor heights (e.g., 2.70 m) without explicit exam instructions, which skews the number of floors',\n    'ERR-DSGN-011: Confusing GFA (single floor) with TGFA (sum of all floors)',\n    'ERR-DSGN-012: Misidentifying TOSL as only the landscaped area (TOSL = ISA + USA, i.e., all open space within the lot)'\n  ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5743,
+      "end_offset": 6461,
+      "line_start": 102,
+      "line_end": 111,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:15e95d03161f09d05c9d17e54220bf6ad8a404f2f78f4e29d2a15f96260372ef"
+}

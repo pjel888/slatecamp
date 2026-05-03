@@ -1,0 +1,508 @@
+{
+  "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:1abda9ba612ff9177865c0e7af8a0060064f931ce5cb51f6b39791885a789298",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2c0387cf-bfa0-4561-afda-78eb69a7d56f",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "In a simply supported beam with a hinge at the left end and a roller at the right end, which statement is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The left support develops a vertical reaction only, which is typical for a hinge support in this configuration"
+        },
+        {
+          "id": "b",
+          "text": "The right support allows vertical movement, which is characteristic of roller supports in structural systems"
+        },
+        {
+          "id": "c",
+          "text": "The left support develops horizontal and vertical reactions"
+        },
+        {
+          "id": "d",
+          "text": "Both supports develop three reactions each, which is incorrect for this type of beam support configuration"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "At the hinge (left), two reactions develop: Hx (horizontal) and Hy (vertical). At the roller (right), only Hy develops (vertical). The hinge constrains horizontal motion; the roller allows it.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Simply Supported Beam Analysis",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34c12285aad5e12e7ba1da2a525ce741a199a0fde2daad525d7f640df8bf4508"
+    },
+    {
+      "question_id": "ee951241-18b2-4f66-aa01-b444144164d2",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "A cantilever beam is a beam that is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supported on a hinge and a roller at each end"
+        },
+        {
+          "id": "b",
+          "text": "Fixed at one end and free at the other"
+        },
+        {
+          "id": "c",
+          "text": "Simply supported on two hinges"
+        },
+        {
+          "id": "d",
+          "text": "Supported on rollers at both ends"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A cantilever beam is fixed (fully restrained) at one end and extends freely beyond the support. The fixed end develops three reactions (Hx, Hy, M); the free end has none.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Beam Classification and Support Types",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:38b0490fbbb6e701bd7b080ffddc29dc65fa5e70aa0a7891a819f73432fffefc"
+    },
+    {
+      "question_id": "70768658-af0a-43a9-a4d6-91ca42fd7ff8",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "A roller support typically restrains motion in which direction(s)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Horizontal direction only"
+        },
+        {
+          "id": "b",
+          "text": "Vertical direction only"
+        },
+        {
+          "id": "c",
+          "text": "Both horizontal and vertical directions"
+        },
+        {
+          "id": "d",
+          "text": "Rotation only"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A roller support is oriented perpendicular to the rolling surface (typically horizontal surface), allowing horizontal translation and rotation but restraining vertical motion. It develops one reaction: vertical (Hy).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Structural Analysis, Roller Support",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:db50528c6ab4d0f2e1b666c9155671fd22a18aba0e8a1ab8d26fe3d5374d3328"
+    },
+    {
+      "question_id": "6d72bd7e-eb1c-478c-b9f1-a27cc79d96ea",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "An engineer distinguishes between three support types by their restraint characteristics. Which of the following correctly pairs each support type with its degrees of freedom restraint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hinge: 3 DOF; Roller: 2 DOF; Fixed: 1 DOF"
+        },
+        {
+          "id": "b",
+          "text": "Hinge: 2 DOF; Roller: 1 DOF; Fixed: 3 DOF"
+        },
+        {
+          "id": "c",
+          "text": "Hinge: 1 DOF; Roller: 2 DOF; Fixed: 3 DOF"
+        },
+        {
+          "id": "d",
+          "text": "Hinge: 3 DOF; Roller: 1 DOF; Fixed: 2 DOF"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In 2D: Hinge restrains 2 DOF (x and y translation); Roller restrains 1 DOF (one direction of translation); Fixed restrains all 3 DOF (x, y, and rotation). This matches the number of reaction components each develops.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Structural Analysis, Degrees of Freedom",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4a7288ef189ce32f191f4d25af3c7e1c612c8d560ba7533c4e7827d74e55008d"
+    },
+    {
+      "question_id": "dc36720c-0763-478e-a8a0-4b75f4a160ea",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "A complex frame structure has multiple supports: hinges at columns 1 and 3, a roller at column 2, and a fixed support at column 4. In analyzing this structure, which column's support will develop a moment reaction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Column 1 (hinge)"
+        },
+        {
+          "id": "b",
+          "text": "Column 2 (roller)"
+        },
+        {
+          "id": "c",
+          "text": "Column 3 (hinge)"
+        },
+        {
+          "id": "d",
+          "text": "Column 4 (fixed)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "correct": "Only the fixed support (Column 4) develops a moment reaction. Hinges and rollers both allow rotation freely; they do not develop moment reactions. The fixed support prevents rotation and thus develops a moment reaction (M).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Frame Analysis and Support Reactions",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:acea101dccb9b328f68d460c54ca45152988f3f5f93ee90c2ee44ae0d1713ae0"
+    },
+    {
+      "question_id": "298d2ebd-f01b-4be2-8285-5a805d0213bf",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "A structural engineer is designing a wall-to-column connection for a high-rise building. To prevent lateral sway and moment transfer, the engineer specifies a **fixed connection** at the base of the column. How many reaction components does this fixed support develop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 (vertical only), which limits the support to a single direction of force"
+        },
+        {
+          "id": "b",
+          "text": "2 (horizontal and vertical), allowing for resistance in two perpendicular directions"
+        },
+        {
+          "id": "c",
+          "text": "3 (horizontal, vertical, and moment)"
+        },
+        {
+          "id": "d",
+          "text": "4 (multiple directions and moment), suggesting an overestimation of typical fixed support capabilities"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A fixed connection at the column base is a fixed support in structural terms. It restrains horizontal translation, vertical translation, and rotation, developing three reactions: Hx, Hy, and M.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Frame and Connection Design",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2eb065eebb34cbfaad8c5e06db05adc1b3b939ea2232e2559a1fd56246ba54cc"
+    },
+    {
+      "question_id": "f2e03291-6704-482d-ba92-d88662114444",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "A support that prevents horizontal and vertical translation but allows rotation is called a:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roller support, which allows movement in one direction while restricting others"
+        },
+        {
+          "id": "b",
+          "text": "Hinge (pin) support"
+        },
+        {
+          "id": "c",
+          "text": "Fixed support, which restricts all movement and rotation"
+        },
+        {
+          "id": "d",
+          "text": "Cantilever support, projecting horizontally and supported at only one end"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A hinge support restrains motion in both the horizontal and vertical directions (2 degrees of freedom) but freely allows rotation. It develops two reaction components: Hx and Hy.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Structural Analysis, Support Types",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:657ae6e8e012423da92a5ac243f0d20b56f7d0ee5bb13f7dba105e439b5542fb"
+    },
+    {
+      "question_id": "fe1ec42d-841c-4be0-86c8-b15efb218fb2",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "How many reaction components does a fixed (cantilever) support develop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One (vertical only), which limits its ability to resist lateral forces"
+        },
+        {
+          "id": "b",
+          "text": "Two (horizontal and vertical), providing basic stability against lateral and vertical loads"
+        },
+        {
+          "id": "c",
+          "text": "Three (horizontal, vertical, and moment)"
+        },
+        {
+          "id": "d",
+          "text": "Four (two horizontal, two vertical), which is not typical for cantilever supports"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A fixed support restrains all three degrees of freedom in 2D: horizontal translation, vertical translation, and rotation. Therefore, it develops three reaction components: Hx, Hy, and M (moment).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Structural Analysis, Fixed Support Reactions",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f89c8d24109585dfb18cd3b4f0988a51a2fac7e4823088170ee054a7e1b6d5c3"
+    },
+    {
+      "question_id": "b439a1bc-33ee-416c-b356-e28911fde076",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "A bridge span has a total length of 40 m and is supported on a hinge at the left abutment and a roller at the right abutment. Why is the roller support essential to this design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce the total number of supports needed, which simplifies the design but is not the primary reason"
+        },
+        {
+          "id": "b",
+          "text": "To allow horizontal movement due to thermal expansion and prevent axial forces"
+        },
+        {
+          "id": "c",
+          "text": "To eliminate the need for a bearing pad at the right end, which is a misconception about roller supports"
+        },
+        {
+          "id": "d",
+          "text": "To prevent vertical movement at the right end, which is not the function of a roller support"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A 40 m span experiences significant thermal expansion and contraction over its life. A hinge at one end fixes the position; a roller at the other end allows horizontal sliding, preventing large axial compressive or tensile forces that would overstress the bridge.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Bridge Engineering, Expansion and Movement",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e7b145d3618c38e271b92e942dd72a47e134bd8cadb29650bf1d939b3a0171ba"
+    },
+    {
+      "question_id": "d52f98f6-dbf5-4177-b5b6-7fddd830411b",
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
+      "text": "The primary advantage of using a roller support instead of a hinge support at the end of a long-span bridge beam is that the roller:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prevents moment development, which can lead to structural inefficiencies in certain designs"
+        },
+        {
+          "id": "b",
+          "text": "Allows thermal expansion and contraction without creating large axial forces"
+        },
+        {
+          "id": "c",
+          "text": "Reduces the number of required supports, thereby minimizing material usage and cost"
+        },
+        {
+          "id": "d",
+          "text": "Eliminates the need for bearings, simplifying the construction process and reducing maintenance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A roller allows horizontal translation while restraining vertical movement. In long spans, thermal expansion and contraction can cause significant axial movement. The roller accommodates this movement freely, preventing large compressive or tensile forces that would otherwise develop in the structure.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Bridge Design Practice, Thermal Expansion",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:646b4f2c22f6bce3476557725139a4075194d1740fc9f20b8afb4326f92983b3"
+    }
+  ]
+}

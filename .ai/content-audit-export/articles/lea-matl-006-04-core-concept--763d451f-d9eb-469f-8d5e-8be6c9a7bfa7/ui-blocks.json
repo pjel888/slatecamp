@@ -1,0 +1,119 @@
+{
+  "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+  "slug": "lea-matl-006-04-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:44.164Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:7b5b264e15718291a62365da6709d6db1725f9ed7e272ab4a72125fce6208fee",
+  "normalized_content_hash": "f9651765cd342036f52db2293969b7c79948eecc1374358f442166561157cc49",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memorize k-value hierarchy: polyiso (0.020) < XPS (0.025) < fiberglass (0.040) < mineral wool (0.045). R = thickness / k. In tropical climates, reflective barriers outperform bulk insulation for heat reduction. STC = sound isolation, NRC = sound absorption.</Tip>",
+      "raw_hash": "sha256:3fff62902d25a82e0fd95d315072cb26bf338a609033f34b6ae4b641e31a1d9f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memorize k-value hierarchy: polyiso (0.020) < XPS (0.025) < fiberglass (0.040) < mineral wool (0.045). R = thickness / k. In tropical climates, reflective barriers outperform bulk insulation for heat reduction. STC = sound isolation, NRC = sound absorption.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:537eb1b3b3d06948afcecaee12f96d3f47d9fd0769db683fda945320cb21ffe9",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memorize k-value hierarchy: polyiso (0.020) < XPS (0.025) < fiberglass (0.040) < mineral wool (0.045). R = thickness / k. In tropical climates, reflective barriers outperform bulk insulation for heat reduction. STC = sound isolation, NRC = sound absorption.",
+      "children_text": "Memorize k-value hierarchy: polyiso (0.020) < XPS (0.025) < fiberglass (0.040) < mineral wool (0.045). R = thickness / k. In tropical climates, reflective barriers outperform bulk insulation for heat reduction. STC = sound isolation, NRC = sound absorption.",
+      "start_offset": 6061,
+      "end_offset": 6329,
+      "line_start": 45,
+      "line_end": 45,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Confusing R-value with k-value: thinking R-value is material-specific (it is not; R depends on thickness and k-value).\" correction=\"k-value is material property (independent of thickness). R-value = thickness / k-value (depends on thickness). Thicker insulation yields higher R.\" />",
+      "raw_hash": "sha256:504ab2a9d67fb0e2c51b202b1a529b0298d44fe2d3b5f17627fe949caeaf0a6f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Confusing R-value with k-value: thinking R-value is material-specific (it is not; R depends on thickness and k-value).\", correction=\"k-value is material property (independent of thickness). R-value = thickness / k-value (depends on thickness). Thicker insulation yields higher R.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:b031b13d48eef5e4306eae2331a61422ea4e10738ae944282a6448f50a942856",
+      "props": {
+        "mistake": "Confusing R-value with k-value: thinking R-value is material-specific (it is not; R depends on thickness and k-value).",
+        "correction": "k-value is material property (independent of thickness). R-value = thickness / k-value (depends on thickness). Thicker insulation yields higher R."
+      },
+      "props_json": {
+        "mistake": "Confusing R-value with k-value: thinking R-value is material-specific (it is not; R depends on thickness and k-value).",
+        "correction": "k-value is material property (independent of thickness). R-value = thickness / k-value (depends on thickness). Thicker insulation yields higher R."
+      },
+      "props_text": "mistake=\"Confusing R-value with k-value: thinking R-value is material-specific (it is not; R depends on thickness and k-value).\" correction=\"k-value is material property (independent of thickness). R-value = thickness / k-value (depends on thickness). Thicker insulation yields higher R.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6351,
+      "end_offset": 6659,
+      "line_start": 49,
+      "line_end": 49,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Specifying bulk fiberglass insulation for tropical residential cooling without reflective barrier, resulting in heat entrapment and increased air conditioning load.\" correction=\"Tropical heat reduction requires reflective surfaces (aluminum foil, white coating) to minimize radiant gain. Bulk insulation increases cost without proportional cooling benefit.\" />",
+      "raw_hash": "sha256:5e855f3e26851859e03d142287037cb8c7ad7047b2756178e2cf9737786b17d5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Specifying bulk fiberglass insulation for tropical residential cooling without reflective barrier, resulting in heat entrapment and increased air conditioning load.\", correction=\"Tropical heat reduction requires reflective surfaces (aluminum foil, white coating) to minimize radiant gain. Bulk insulation increases cost without proportional cooling benefit.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:80e65be8c03f7b96b969d35e4d2d380577c82492bffc46410281abd1901b8da8",
+      "props": {
+        "mistake": "Specifying bulk fiberglass insulation for tropical residential cooling without reflective barrier, resulting in heat entrapment and increased air conditioning load.",
+        "correction": "Tropical heat reduction requires reflective surfaces (aluminum foil, white coating) to minimize radiant gain. Bulk insulation increases cost without proportional cooling benefit."
+      },
+      "props_json": {
+        "mistake": "Specifying bulk fiberglass insulation for tropical residential cooling without reflective barrier, resulting in heat entrapment and increased air conditioning load.",
+        "correction": "Tropical heat reduction requires reflective surfaces (aluminum foil, white coating) to minimize radiant gain. Bulk insulation increases cost without proportional cooling benefit."
+      },
+      "props_text": "mistake=\"Specifying bulk fiberglass insulation for tropical residential cooling without reflective barrier, resulting in heat entrapment and increased air conditioning load.\" correction=\"Tropical heat reduction requires reflective surfaces (aluminum foil, white coating) to minimize radiant gain. Bulk insulation increases cost without proportional cooling benefit.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6661,
+      "end_offset": 7047,
+      "line_start": 51,
+      "line_end": 51,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing STC (isolation) with NRC (absorption); STC rates walls, NRC rates interior finishes\", \"Installing fiberglass batts in coastal salt-spray zones without vapor barrier; moisture absorption degrades R-value by 20-40%\", \"Calculating assembly U-value without including air films (interior 0.12, exterior 0.03 m\u00b2\u00b7K/W); omission understates thermal performance\", \"Using NRC material (suspension ceiling) without adequate STC walls; noise isolation is wall-dependent, not ceiling-dependent\"]} />",
+      "raw_hash": "sha256:4456b80e485f85ace2deed44f33a6299cd9266a35c4a49e383e3579e29aa165e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing STC (isolation) with NRC (absorption); STC rates walls, NRC rates interior finishes\\\", \\\"Installing fiberglass batts in coastal salt-spray zones without vapor barrier; moisture absorption degrades R-value by 20-40%\\\", \\\"Calculating assembly U-value without including air films (interior 0.12, exterior 0.03 m\u00b2\u00b7K/W); omission understates thermal performance\\\", \\\"Using NRC material (suspension ceiling) without adequate STC walls; noise isolation is wall-dependent, not ceiling-dependent\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c2b1b3dfdb046c7f8e6e8d8610a54b7b00b020d34c0aacd5c4fb4450501d2571",
+      "props": {
+        "mistakes": "{[\"Confusing STC (isolation) with NRC (absorption); STC rates walls, NRC rates interior finishes\", \"Installing fiberglass batts in coastal salt-spray zones without vapor barrier; moisture absorption degrades R-value by 20-40%\", \"Calculating assembly U-value without including air films (interior 0.12, exterior 0.03 m\u00b2\u00b7K/W); omission understates thermal performance\", \"Using NRC material (suspension ceiling) without adequate STC walls; noise isolation is wall-dependent, not ceiling-dependent\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Confusing STC (isolation) with NRC (absorption); STC rates walls, NRC rates interior finishes\", \"Installing fiberglass batts in coastal salt-spray zones without vapor barrier; moisture absorption degrades R-value by 20-40%\", \"Calculating assembly U-value without including air films (interior 0.12, exterior 0.03 m\u00b2\u00b7K/W); omission understates thermal performance\", \"Using NRC material (suspension ceiling) without adequate STC walls; noise isolation is wall-dependent, not ceiling-dependent\"]}"
+      },
+      "props_text": "mistakes={[\"Confusing STC (isolation) with NRC (absorption); STC rates walls, NRC rates interior finishes\", \"Installing fiberglass batts in coastal salt-spray zones without vapor barrier; moisture absorption degrades R-value by 20-40%\", \"Calculating assembly U-value without including air films (interior 0.12, exterior 0.03 m\u00b2\u00b7K/W); omission understates thermal performance\", \"Using NRC material (suspension ceiling) without adequate STC walls; noise isolation is wall-dependent, not ceiling-dependent\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7049,
+      "end_offset": 7574,
+      "line_start": 53,
+      "line_end": 53,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:8347772258ee8c36cb58a6f66620ae5a43f62e3882d49bd1541276fccf4f2f3d"
+}

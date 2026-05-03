@@ -1,0 +1,27 @@
+{
+  "attempted_at": "2026-05-03T10:56:05.189Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "ui-blocks.json contains unknown/unparseable blocks; rerun with --force only after manual review.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+  "slug": "lea-util-004-07-core-concepts-and-formulas",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:8433c4836bd22b7b98230af8a75704588978d1830883fdcdac7ea4c2c769f84b",
+  "original_hash": "sha256:8433c4836bd22b7b98230af8a75704588978d1830883fdcdac7ea4c2c769f84b",
+  "candidate_hash": "sha256:387e5e7594eb112f5d97e699e1bde26c11fc5475b10eec94a26cd1db427284d7",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

@@ -1,0 +1,84 @@
+{
+  "article_id": "b194f38e-8129-4f87-b161-f9f4f7fc43b1",
+  "slug": "mastery-planning-housing-urban-design",
+  "generated_at": "2026-05-01T13:33:45.624Z",
+  "desired_categories": [
+    "formula",
+    "timeline",
+    "code_requirement",
+    "scenario",
+    "diagram",
+    "quiz_or_prompt"
+  ],
+  "suggestion_count": 8,
+  "suggestions": [
+    {
+      "component_name": "CalibrationScreen",
+      "file_path": "src/app/(auth)/onboarding/_components/CalibrationScreen.tsx",
+      "likely_category": "diagram",
+      "confidence": "low",
+      "reason": "Category diagram matched article signals: formula, timeline, code_requirement, scenario, diagram, quiz_or_prompt",
+      "auto_insert": false
+    },
+    {
+      "component_name": "CoexistenceScreen",
+      "file_path": "src/app/(auth)/onboarding/_components/CoexistenceScreen.tsx",
+      "likely_category": "diagram",
+      "confidence": "low",
+      "reason": "Category diagram matched article signals: formula, timeline, code_requirement, scenario, diagram, quiz_or_prompt",
+      "auto_insert": false
+    },
+    {
+      "component_name": "CompExamFlow",
+      "file_path": "src/app/(auth)/onboarding/comp-exam/_components/CompExamFlow.tsx",
+      "likely_category": "quiz_or_prompt",
+      "confidence": "low",
+      "reason": "Category quiz_or_prompt matched article signals: formula, timeline, code_requirement, scenario, diagram, quiz_or_prompt",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AboutPage",
+      "file_path": "src/app/about/page.tsx",
+      "likely_category": "quiz_or_prompt",
+      "confidence": "low",
+      "reason": "Category quiz_or_prompt matched article signals: formula, timeline, code_requirement, scenario, diagram, quiz_or_prompt",
+      "auto_insert": false
+    },
+    {
+      "component_name": "ModelConfigDetail",
+      "file_path": "src/app/admin/3d-models/_components/ModelConfigDetail.tsx",
+      "likely_category": "diagram",
+      "confidence": "low",
+      "reason": "Category diagram matched article signals: formula, timeline, code_requirement, scenario, diagram, quiz_or_prompt",
+      "auto_insert": false
+    },
+    {
+      "component_name": "ModelRegistryPage",
+      "file_path": "src/app/admin/3d-models/_components/ModelRegistryPage.tsx",
+      "likely_category": "formula",
+      "confidence": "low",
+      "reason": "Category formula matched article signals: formula, timeline, code_requirement, scenario, diagram, quiz_or_prompt",
+      "auto_insert": false
+    },
+    {
+      "component_name": "ModelRegistryTree",
+      "file_path": "src/app/admin/3d-models/_components/ModelRegistryTree.tsx",
+      "likely_category": "diagram",
+      "confidence": "low",
+      "reason": "Category diagram matched article signals: formula, timeline, code_requirement, scenario, diagram, quiz_or_prompt",
+      "auto_insert": false
+    },
+    {
+      "component_name": "Loading",
+      "file_path": "src/app/admin/3d-models/loading.tsx",
+      "likely_category": "formula",
+      "confidence": "low",
+      "reason": "Category formula matched article signals: formula, timeline, code_requirement, scenario, diagram, quiz_or_prompt",
+      "auto_insert": false
+    }
+  ],
+  "auto_insertion_enabled": false,
+  "warnings": [
+    "Auto-insertion is intentionally disabled; use this as review metadata only."
+  ]
+}

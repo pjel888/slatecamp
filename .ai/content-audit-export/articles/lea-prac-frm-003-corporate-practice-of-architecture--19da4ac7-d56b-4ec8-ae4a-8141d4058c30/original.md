@@ -1,0 +1,39 @@
+## Corporate Practice of Architecture
+
+## Learning Goal
+
+Explain the 75% RLA majority rule for architectural corporations, analyze share restriction mechanisms that maintain architect control, and evaluate the limited liability protection afforded by the corporate structure.
+
+<Tip>Unlike sole proprietorships and partnerships, the corporate veil protects shareholders from personal liability for corporate debts beyond their investment. However, individual architects remain personally responsible for their own professional negligence — the corporate shield is not absolute for malpractice.</Tip>
+
+### Legal Requirements and Formation
+
+An architecture corporation is a group of professionals in architecture and allied professions incorporated with architects for delivering professional services in architecture and allied fields. RA 9266 permits firms, companies, partnerships, corporations, and associations to be registered for the practice of architecture while imposing strict ownership and control requirements. Corporations must be registered with the Securities and Exchange Commission (SEC) and then with the Board of Architecture and the PRC for professional licensure.
+
+Articles of incorporation must specify that the corporation's primary purpose is delivering architectural services. The corporate bylaws establish governance structure, including the board of directors, officers, and shareholder meetings. All registered architects within the corporation must maintain valid Certificates of Registration and Professional Identification Cards. The corporation itself holds the professional license issued by the Board of Architecture.
+
+<ExamTip>The 75% RLA requirement applies to ALL classes of stock and voting arrangements. Non-architects may own up to 25% but CANNOT serve as directors or executive officers. This is a continuing obligation — the corporation must maintain compliance throughout its existence, not just at incorporation.</ExamTip>
+
+### The 75 Percent RLA Majority Rule
+
+PRC Board Resolution No. 05-07, Section 2(2) mandates that registered and licensed architects (RLA) compose at least 75 percent of the corporation's owners, shareholders, members, incorporators, directors, and executive officers. This ownership threshold applies to all classes of stock and voting arrangements. Non-architects may own up to 25 percent but cannot serve as directors or executive officers. This requirement protects architectural independence and professional standards.
+
+If an existing architectural corporation does not comply with the 75 percent requirement, it must register again with the SEC and BOA to achieve compliance. Architectural corporations must maintain the 75% architect ownership requirement throughout their existence; failure to comply may result in suspension or revocation of professional registration. The Board periodically examines corporations to ensure ongoing compliance with this composition requirement. Violations result in suspension or revocation of the professional registration certificate. The composition requirement binds the corporation throughout its existence, not just at incorporation.
+
+### Share Restrictions and Transferability
+
+Shares of architectural corporations are restricted to maintain architect control. Architects and allied professionals may own shares, but the corporation must maintain the 75 percent architect ownership. Restrictions on share transfer are typically written into the bylaws and stock certificates to prevent control from shifting to non-architects. Sale of shares to non-architects is prohibited if it would reduce architect ownership below 75 percent.
+
+When an architect shareholder dies, sells shares, or withdraws from the corporation, the remaining architects must ensure the 75 percent threshold is maintained. Some corporations establish share buyback agreements or right-of-first-refusal clauses to prevent non-architect acquisition. Changes in shareholder composition must be reported to the SEC and BOA. The corporation's professional registration is conditional on maintaining architect control at all times.
+
+### Professional Liability and Corporate Shield
+
+The corporation holds the professional license and bears liability for architectural services rendered. Individual architects within the corporation remain subject to professional responsibility but operate under the corporate entity's license. The corporate veil provides limited liability protection for shareholders; they are not personally liable for corporate debts beyond their investment. However, professional negligence claims may attach to both the corporation and the responsible architect.
+
+Malpractice insurance is carried by the corporation rather than individual architects. The architect-of-record is identified on all architectural documents and assumes direct responsibility. However, the corporation as the entity holding the professional license also bears liability. Service agreements typically allocate professional risk between the client and the corporation, with indemnification provisions protecting individual architects from third-party claims not caused by their personal negligence.
+
+### Advantages and Operational Structure
+
+Corporate practice offers limited liability protection, easier capital acquisition, institutional continuity, and the ability to employ multiple specialized architects. The corporation can hold property, enter into contracts, and maintain client relationships independent of individual shareholder involvement. Profits and losses flow through corporate tax structures. The corporation name appears on all professional documents, providing brand recognition and institutional credibility.
+
+Operations include regular board meetings, shareholder meetings, and formalized decision-making procedures. Directors oversee major strategic decisions, project selection, and fee structures. The corporation may establish multiple departments by discipline or specialization. Share ownership can be transferred among architects with board approval, allowing succession planning. The corporation continues despite the departure or death of any individual architect, providing institutional stability.

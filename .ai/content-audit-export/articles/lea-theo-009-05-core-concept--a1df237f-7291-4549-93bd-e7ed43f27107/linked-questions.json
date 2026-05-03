@@ -1,0 +1,518 @@
+{
+  "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4407970f732125399c84de03bdeb5f55a44d3b879599d72f8b9c531a21ce5a2c",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "142509a3-4f94-49c4-8ae8-b87768def2ee",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "In a mixed-use tower, retail hours are 7 AM–10 PM; office hours are 7 AM–6 PM weekdays; residential occupancy is 24/7. What operational challenges does this programming create, and how should they be managed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No challenges; each occupancy type is independent; separate hours reduce overlap and conflict, ensuring smooth operation without additional management"
+        },
+        {
+          "id": "b",
+          "text": "Loading, trash collection, and HVAC must accommodate retail operating past office hours; these systems must be scheduled and isolated to avoid residential disturbance during night hours"
+        },
+        {
+          "id": "c",
+          "text": "Residents will be disturbed by retail activity every night; this is unavoidable in mixed-use towers, and requires soundproofing and strategic scheduling to mitigate impact"
+        },
+        {
+          "id": "d",
+          "text": "Separate elevators eliminate all operational conflicts; no additional programming is needed, as each function operates independently without interference"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Different hours create timing conflicts for building systems; these must be coordinated.",
+        "c": "Careful programming and design can minimize disturbance; it's not simply unavoidable.",
+        "d": "Separate elevators address circulation conflicts but not operational system scheduling.",
+        "correct": "Building systems (loading, service, mechanical) must run during retail hours (until 10 PM), but residents occupy 24/7. The program must specify: loading dock hours (restrict to 6 AM–9 PM weekdays); trash collection timing (avoid peak residential sleep hours); mechanical operations (24-hour capacity for residential HVAC while supporting retail operating hours)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q06",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7ab41004a3b1b22832b552a7f97d2a2ac272dcf3508dad4c6da781dc76c8a8dd"
+    },
+    {
+      "question_id": "20ebf1c8-0815-4691-8154-c621de17272a",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "What is the primary distinction between horizontal and vertical mixed-use development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Horizontal mixed-use is multi-story; vertical mixed-use is single-story, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Horizontal mixes uses side-by-side typically on the same level; vertical stacks incompatible uses on different floors"
+        },
+        {
+          "id": "c",
+          "text": "Horizontal is a pedestrian-oriented development; vertical requires automobile access, often due to zoning constraints"
+        },
+        {
+          "id": "d",
+          "text": "Horizontal requires more parking; vertical requires less parking due to shared facilities and integrated design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both horizontal and vertical can be multi-story; the distinction is about arrangement direction.",
+        "c": "Pedestrian orientation relates to urban context, not the arrangement strategy itself.",
+        "d": "Parking relates to development intensity, not the mixing strategy.",
+        "correct": "Horizontal mixed-use arranges distinct programs side-by-side (e.g., retail shops, dining, entertainment on a single floor). Vertical mixed-use stacks programs on different levels (e.g., retail ground floor, office above, residential higher). Each configuration presents different spatial and circulation challenges."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q01",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:39a9ec1f57c496eee4969ae7e126a380f57ed623733d131174b68cc95624769b"
+    },
+    {
+      "question_id": "f83a4cc7-d827-4b82-8ced-1272a46814f3",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "A mixed-use development has shared basement parking for retail customers, office workers, and residents. Peak parking demand occurs at: retail (mid-day, 2–4 hours); office (8 AM–6 PM, 8 hours); residential (evening/night, overnight). What is the advantage of this shared parking arrangement, and what risk must the program address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shared parking reduces total spaces required because demand peaks don't overlap; the program must ensure separate management and valet systems prevent conflicts"
+        },
+        {
+          "id": "b",
+          "text": "Shared parking is impossible; each occupancy type must have separate parking areas and entry points to avoid any potential conflicts"
+        },
+        {
+          "id": "c",
+          "text": "Shared parking reduces cost; no additional programming is needed beyond standard lot design, which simplifies the development process"
+        },
+        {
+          "id": "d",
+          "text": "Shared parking increases conflicts; separate parking for each use is always preferable even if it requires additional site area, ensuring no overlap in usage"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Shared parking can work when peaks don't overlap; this is a viable programming strategy.",
+        "c": "Shared parking requires careful operational programming; assuming 'standard design' ignores the management complexity.",
+        "d": "While separate parking simplifies operations, it's not always preferable; shared parking is legitimate if programmed carefully.",
+        "correct": "Staggered demand allows shared parking in mixed-use: retail peaks mid-day; office peaks during business hours; residential peaks evening/night. Shared basement reduces total spaces (saving land and cost). However, the program must specify separate management, potential dynamic allocation systems, and operational protocols to prevent resident complaints about daytime congestion or customer confusion."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q08",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:11dfbbc1adf9a8a86a57e0437d590c70e2a1f4db601efc2e5a270029f6fc4299"
+    },
+    {
+      "question_id": "e8d946c1-00dc-4e42-8853-06b0aac919b2",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "What is the primary purpose of circulation separation in mixed-use buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To prevent functional conflicts between distinct occupancy types by providing separate elevators, lobbies, and entry points"
+        },
+        {
+          "id": "b",
+          "text": "To reduce total building circulation area and decrease construction cost, which is not the primary goal"
+        },
+        {
+          "id": "c",
+          "text": "To increase building perimeter and maximize frontage for retail tenants, which is not typically a consideration"
+        },
+        {
+          "id": "d",
+          "text": "To simplify wayfinding and signage by limiting the number of public areas, which is not the main purpose"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Separation may increase circulation area; cost reduction is not the primary goal.",
+        "c": "Perimeter activation is a building design strategy, not a circulation separation purpose.",
+        "d": "Separation typically requires more wayfinding, not less.",
+        "correct": "Separate circulation (elevators, lobbies, entries) for retail customers, office workers, and residents prevents conflicts: customers don't encounter residential security checkpoints; residents don't navigate retail crowds; office workers don't traverse public shopping areas. This maintains each group's operational independence."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q03",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:489db7c7320a67a1d1c4879f80a357674654f18f9a2c20346bbae9f0409fe4eb"
+    },
+    {
+      "question_id": "a0e8b92f-2abf-44d3-9232-6e4f781b405f",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "The podium-tower typology is characteristic of contemporary urban development in Asian cities. Which building elements define this typology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A tower set on a plaza with parking garage in the basement only, which limits the use of above-ground space"
+        },
+        {
+          "id": "b",
+          "text": "A low-rise podium (typically 2–5 stories) with ground-level retail and civic functions, and a high-rise tower above containing office or residential"
+        },
+        {
+          "id": "c",
+          "text": "A single integrated structure with no height variation or functional separation, which is not typical of the podium-tower typology"
+        },
+        {
+          "id": "d",
+          "text": "A residential base with commercial tower above, which reverses the typical podium-tower arrangement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Podium-towers have basement parking but this alone doesn't define the form.",
+        "c": "Single integrated structures are not podium-towers; the typology requires distinct base and top.",
+        "d": "Podium-tower mixes uses; this doesn't specify the correct arrangement (retail/civic below, office/residential above).",
+        "correct": "The podium-tower has a low-rise base activating street frontage and public space, with a high-rise tower above. This typology maximizes ground-level activation and urban vitality while achieving density and economic return in the tower. It's dominant in Manila and other Asian cities."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q02",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:442e235772f8bfb6a0abd1c31440ec6510880ff90f18179cfa1fbfc1e6e402c5"
+    },
+    {
+      "question_id": "81895dd8-26b7-40aa-9da9-225de4372c3c",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "A mixed-use program includes: 100,000 NSF retail (efficiency factor 0.70), 150,000 NSF office (efficiency factor 0.80), 120,000 NSF residential (efficiency factor 0.75), and 50,000 SF parking (as built). Calculate total GBA.",
+      "options": [
+        {
+          "id": "a",
+          "text": "540,357 GSF"
+        },
+        {
+          "id": "b",
+          "text": "620,000 GSF"
+        },
+        {
+          "id": "c",
+          "text": "420,000 GSF"
+        },
+        {
+          "id": "d",
+          "text": "480,000 GSF"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This overestimates; verify efficiency factors and their application.",
+        "c": "This underestimates GBA; efficiency factors must be applied correctly.",
+        "d": "This underestimates; recheck calculations for each use type.",
+        "correct": "Retail GBA = 100,000 ÷ 0.70 = 142,857 SF. Office GBA = 150,000 ÷ 0.80 = 187,500 SF. Residential GBA = 120,000 ÷ 0.75 = 160,000 SF. Parking = 50,000 SF (as-built, not divided). Total = 142,857 + 187,500 + 160,000 + 50,000 = 540,357 SF."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q04",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3b60d47e961a07c5d34669ba702d876dd67a17cfb7b0e8d97049cc57d5078088"
+    },
+    {
+      "question_id": "dbd3fac4-a900-4772-bf0b-d6cd00a5365a",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "A mixed-use development on a 60,000 SF urban site is programmed as a 10-story podium-tower. Ground floors 1–3 are retail (70,000 NSF); floors 4–10 are office (140,000 NSF). If the total GBA is calculated as 300,000 SF, what is the floor area ratio (FAR)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FAR = 3.0"
+        },
+        {
+          "id": "b",
+          "text": "FAR = 7.5"
+        },
+        {
+          "id": "c",
+          "text": "FAR = 10.0"
+        },
+        {
+          "id": "d",
+          "text": "FAR = 5.0"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "FAR = 3.0 would result from 180,000 GBA; recheck calculation.",
+        "b": "FAR = 7.5 would result from 450,000 GBA; too high for this project.",
+        "c": "FAR = 10.0 would result from 600,000 GBA; double the stated GBA.",
+        "correct": "FAR = Total GBA ÷ Site Area = 300,000 SF ÷ 60,000 SF = 5.0. FAR of 5.0 indicates high-density urban development; FAR ranges 8–12 in dense city centers, 4–6 in mid-density urban, 1–2 in suburban contexts."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q05",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:92ceb78927d7979c6db42c1d26b4b5694ca7274e1d7c17f035eff67b1fa4f9e7"
+    },
+    {
+      "question_id": "657c7ba8-2ba9-4c79-a49b-d7a745b2a439",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "A nightclub is proposed for the ground floor of a residential tower. A designer argues that excellent acoustic isolation and sound-absorbing materials will allow this adjacency. Is this argument sufficient, and why or why not?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No; the tower should not include residential at all if ground-floor commercial includes nightclub, as this violates zoning laws and residential comfort standards"
+        },
+        {
+          "id": "b",
+          "text": "Yes; nightclubs are common ground-floor uses; this is normal mixed-use development practice, provided that all local ordinances are strictly followed"
+        },
+        {
+          "id": "c",
+          "text": "Yes; modern acoustic technology can sufficiently isolate noise so residents are unaffected, assuming all materials meet the highest industry standards"
+        },
+        {
+          "id": "d",
+          "text": "No; nightclubs operating at 105–108 dB require separation beyond acoustic treatment; residential below nightclubs violates building code and practical standards; nightclub should be relocated to a separate building or lower basement level"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Residential can coexist with commercial if uses are compatible and properly separated; mixed-use isn't inherently problematic.",
+        "b": "While ground-floor retail is common, nightclubs specifically create noise conflicts that make them inappropriate for residential adjacency.",
+        "c": "Modern acoustics help but cannot overcome the fundamental conflict; separation is more effective than treatment.",
+        "correct": "Nightclub noise (105+ dB) is extreme; acoustic treatment alone cannot achieve adequate isolation for residential rest. Code typically requires separation or prohibition. incompatible uses must be separated; nightclub below residential violates program logic and is unacceptable even with treatment. Relocation to separate building or basement (isolated from residential) is proper solution."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q07",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2c19baa146aa3c881ad0c7d3ba962e7c061dd462f95aac1b6a903883def0c4a5"
+    },
+    {
+      "question_id": "d8b9d1ea-7e7e-4297-86e7-4484c68a58ad",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "A Manila mixed-use development proposal includes: 100,000 SF retail podium, 200,000 SF office tower, and 150,000 SF residential tower on a 40,000 SF lot. Calculate the FAR. Is this development density appropriate for an urban context, and what programming considerations should be addressed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FAR = 11.25; appropriate for dense urban context; programming must carefully address circulation separation, noise conflicts between retail and residential, parking integration, and service access to avoid operational chaos"
+        },
+        {
+          "id": "b",
+          "text": "FAR = 5.0; appropriate but underutilizes the site; could accommodate additional program elements such as green spaces or community facilities to enhance livability."
+        },
+        {
+          "id": "c",
+          "text": "FAR = 12.5; too dense; the site cannot support this intensity; reduce program scope or increase site area to comply with zoning regulations and ensure adequate infrastructure support."
+        },
+        {
+          "id": "d",
+          "text": "FAR = 8.75; appropriate for urban Manila; standard mixed-use programming will suffice, but additional considerations for pedestrian flow and public transport access may be beneficial."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "FAR calculations and program scope assessment are correct, but density is not necessarily underutilized.",
+        "c": "FAR of 8.75 is not excessive for Manila urban context; it's within appropriate range.",
+        "d": "While density is appropriate, 'standard programming will suffice' ignores the complexity at this intensity.",
+        "correct": "FAR = 450,000 SF ÷ 40,000 SF = 11.25. This is appropriate for dense urban Manila (FAR 8–12 typical). However, this intensity requires sophisticated programming: separate circulation (retail entry separate from residential/office); retail-residential noise mitigation; service circulation (loading, trash, mechanical) independent from public/residential; parking integrated without creating conflicts. Standard programming is insufficient."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q09",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a58d2981e9d5b6856e1f95d79088218355e4d1503504bb57290afa32d9390822"
+    },
+    {
+      "question_id": "e4812aa2-b0a6-48e7-92ca-0fe09a65c929",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "A mixed-use tower program specifies three occupancy types, each with distinct operating hours and user profiles. The programmer must develop a zoning strategy and circulation plan. Which approach best integrates programming and zoning principles for the specific requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arrange functions horizontally (retail ground, office side wing, residential opposite wing); minimize vertical circulation; share common lobbies to enhance user interaction"
+        },
+        {
+          "id": "b",
+          "text": "Integrate all uses in a single open-plan structure to encourage community interaction and reduce duplication of facilities, promoting a cohesive environment"
+        },
+        {
+          "id": "c",
+          "text": "Horizontally separate uses on the same level to maximize visual integration; assume good signage will guide users to appropriate areas, reducing confusion"
+        },
+        {
+          "id": "d",
+          "text": "Combine all functions vertically (retail ground, office middle, residential top); separate elevator banks; restrict inter-occupancy circulation through access control"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Horizontal arrangement on limited-height site increases walking distances and doesn't achieve the separations needed for distinct occupancies.",
+        "b": "Open-plan integration violates the separation principles necessary for mixed-use with conflicting uses.",
+        "c": "Horizontal integration and shared lobbies create mixing rather than separation; signage doesn't solve functional conflicts.",
+        "correct": "Vertical stacking (retail-office-residential) with separate elevator banks addresses: distinct operating hours (retail late, residential 24/7); user separation (customers don't encounter residents); services (retail service separate from residential). Access control at each elevator entry ensures operational independence. This is the strategy described as dominant in Asian mixed-use urban development."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q10",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:025d35a181e9d4553ed83a15ca862c2ff19d474968c9d06f03591a88c7363def"
+    }
+  ]
+}

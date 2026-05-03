@@ -1,0 +1,113 @@
+{
+  "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+  "slug": "ceiling-heights-and-room-sizes",
+  "normalized_created_at": "2026-05-01T13:33:44.048Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:904044e936832da3c402b93d769cad2d4b86f4033617ebae5dacc12d28dc8015",
+  "normalized_content_hash": "sha256:163b6245cf054646626f061239ab209771f0bfd43f6fb31876c2dfb7b46446d3",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule VIII - Ceiling Heights\">\n\n\nPer PD 1096, Rule VIII, Sec. 805(1): for buildings of more than one storey with artificial ventilation, the minimum ceiling height of the second storey is 2.40 m. The 2.70 m requirement applies to the first storey of a multi-storey artificially ventilated building, and to all rooms with natural ventilation. The 2.10 m requirement is for the third storey and above. Option D (1.80 m) is the mezzanine clearance under Sec. 805(2).\n\n\n</LawCallout>",
+      "raw_hash": "sha256:7fc91c1c0349eaa80f61e1ace0f787d74bbda794f6bd865c4123d395aa3de037",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\"\n- Text: Per PD 1096, Rule VIII, Sec. 805(1): for buildings of more than one storey with artificial ventilation, the minimum ceiling height of the second storey is 2.40 m. The 2.70 m requirement applies to the first storey of a multi-storey artificially ventilated building, and to all rooms with natural ventilation. The 2.10 m requirement is for the third storey and above. Option D (1.80 m) is the mezzanine clearance under Sec. 805(2).\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:598418d23664b886de50889145e245857708d45fa6b9a5ba42fc2c09da01f4cd",
+      "props": {
+        "code": "nbcp"
+      },
+      "props_json": {
+        "code": "pd1096",
+        "section": "Rule VIII - Ceiling Heights"
+      },
+      "props_text": "code=pd1096, section=Rule VIII - Ceiling Heights",
+      "children_raw": "\n\nPer PD 1096, Rule VIII, Sec. 805(1): for buildings of more than one storey with artificial ventilation, the minimum ceiling height of the second storey is 2.40 m. The 2.70 m requirement applies to the first storey of a multi-storey artificially ventilated building, and to all rooms with natural ventilation. The 2.10 m requirement is for the third storey and above. Option D (1.80 m) is the mezzanine clearance under Sec. 805(2).\n\n",
+      "children_text": "Per PD 1096, Rule VIII, Sec. 805(1): for buildings of more than one storey with artificial ventilation, the minimum ceiling height of the second storey is 2.40 m. The 2.70 m requirement applies to the first storey of a multi-storey artificially ventilated building, and to all rooms with natural ventilation. The 2.10 m requirement is for the third storey and above. Option D (1.80 m) is the mezzanine clearance under Sec. 805(2).",
+      "start_offset": 24367,
+      "end_offset": 24838,
+      "line_start": 285,
+      "line_end": 289,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule VII - Room Sizes\">\n\n\nRule VIII, Sec. 805: Natural ventilation requires 2.70 m ceiling height. Artificial/mechanical ventilation allows 2.40 m. Mezzanines: min 2.00 m above and below. These are the three ceiling height tiers every LEA candidate must know.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:748c10b3e439490b496e9730bd8f4ccea95395c3f27e95f0cf01f1fb726ecee4",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- code=\"nbcp\"\n- Text: Rule VIII, Sec. 805: Natural ventilation requires 2.70 m ceiling height. Artificial/mechanical ventilation allows 2.40 m. Mezzanines: min 2.00 m above and below. These are the three ceiling height tie\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:dda7f9bf9e68f7f87eb53aa60d9a2ea82d3153be360808017351a67060563584",
+      "props": {
+        "code": "nbcp"
+      },
+      "props_json": {
+        "code": "pd1096",
+        "section": "Rule VII - Room Sizes"
+      },
+      "props_text": "code=pd1096, section=Rule VII - Room Sizes",
+      "children_raw": "\n\nRule VIII, Sec. 805: Natural ventilation requires 2.70 m ceiling height. Artificial/mechanical ventilation allows 2.40 m. Mezzanines: min 2.00 m above and below. These are the three ceiling height tiers every LEA candidate must know.\n\n",
+      "children_text": "Rule VIII, Sec. 805: Natural ventilation requires 2.70 m ceiling height. Artificial/mechanical ventilation allows 2.40 m. Mezzanines: min 2.00 m above and below. These are the three ceiling height tiers every LEA candidate must know.",
+      "start_offset": 0,
+      "end_offset": 0,
+      "line_start": 0,
+      "line_end": 0,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "KeyValues",
+      "raw": "<KeyValues>\n\n2.70 m: Natural ventilation habitable rooms | 2.40 m: Mechanical ventilation habitable rooms | 2.00 m: Mezzanine clearances | 14.00 m\u00b3: Minimum air space per person (Rule VIII, Sec. 807)\n\n</KeyValues>",
+      "raw_hash": "sha256:30c0bbbf075053aba9c2d00315ba7d457e5080c6b3b70297b83e48575c200ef6",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: 2.70 m: Natural ventilation habitable rooms | 2.40 m: Mechanical ventilation habitable rooms | 2.00 m: Mezzanine clearances | 14.00 m\u00b3: Minimum air space per person (Rule VIII, Sec. 807)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:46f3905f37afaccf30b079b78332e9a3ae4fbe59429dd3171f872ccc680c7128",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\n2.70 m: Natural ventilation habitable rooms | 2.40 m: Mechanical ventilation habitable rooms | 2.00 m: Mezzanine clearances | 14.00 m\u00b3: Minimum air space per person (Rule VIII, Sec. 807)\n\n",
+      "children_text": "2.70 m: Natural ventilation habitable rooms | 2.40 m: Mechanical ventilation habitable rooms | 2.00 m: Mezzanine clearances | 14.00 m\u00b3: Minimum air space per person (Rule VIII, Sec. 807)",
+      "start_offset": 0,
+      "end_offset": 0,
+      "line_start": 0,
+      "line_end": 0,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n\nLEA Pattern: The exam tests ceiling height occupancy-specific values. Group A (residential) requires 2.70 m natural / 2.40 m mechanical. For Group B (hotels/dormitories), guest rooms follow the same tier. For Group I (institutional), classrooms need 2.70 m natural.\n\n</ExamTip>",
+      "raw_hash": "sha256:44663c16c7d1b72627dcbb9c7333281e66e28ef960631e0de0c235f6985b37d6",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: LEA Pattern: The exam tests ceiling height occupancy-specific values. Group A (residential) requires 2.70 m natural / 2.40 m mechanical. For Group B (hotels/dormitories), guest rooms follow the same t\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:21d2e224fd34349ea349c9063a4a1096552cf2fde5cd66dad8c4d699fe824c7b",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\nLEA Pattern: The exam tests ceiling height occupancy-specific values. Group A (residential) requires 2.70 m natural / 2.40 m mechanical. For Group B (hotels/dormitories), guest rooms follow the same tier. For Group I (institutional), classrooms need 2.70 m natural.\n\n",
+      "children_text": "LEA Pattern: The exam tests ceiling height occupancy-specific values. Group A (residential) requires 2.70 m natural / 2.40 m mechanical. For Group B (hotels/dormitories), guest rooms follow the same tier. For Group I (institutional), classrooms need 2.70 m natural.",
+      "start_offset": 0,
+      "end_offset": 0,
+      "line_start": 0,
+      "line_end": 0,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:09694b8b64cbba9a8b423e844490f7c8ce1c4b91112a11f8c3e0ad03cbcc4794"
+}

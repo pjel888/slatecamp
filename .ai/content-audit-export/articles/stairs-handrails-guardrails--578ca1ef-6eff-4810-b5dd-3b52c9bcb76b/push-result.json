@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:52:23.704Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+  "slug": "stairs-handrails-guardrails",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:d0e5e629a7ea229d9093fc1a8f602dd19b721c9dbf799594d11fbc459a6d9e78",
+  "original_hash": "sha256:d0e5e629a7ea229d9093fc1a8f602dd19b721c9dbf799594d11fbc459a6d9e78",
+  "candidate_hash": "sha256:cc735791d8309d97d656b5994a13e508a5ea62df63fdf477f6cb541e140f3781",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

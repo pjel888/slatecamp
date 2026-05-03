@@ -1,0 +1,36 @@
+{
+  "question_id": "32f99e6b-b826-4360-97eb-4e70e0781f4d",
+  "baseline_hash": "sha256:e2c46615a7aa9e3a50c9ac4f7f906d29715bd2bc12fcaeff4e0b59c0ee1c9eba",
+  "reason": "Corrupted rationale text: the 'correct' field contains garbled mid-sentence note ('correct_option_id should be 'c' (Sense)...') that was jammed into the original text. Fixed to provide proper explanatory rationale. Also, option 'd' text ('The sense is explicitly stated') contradicts the question asking what is NOT explicitly specified \u2014 option is grammatically inverted vs. question phrasing.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T04:11:28.087862+00:00",
+  "proposed": {
+    "text": "In Philippine structural practice, a load specification reads: 'A dead load of 2.5 kN/m\u00b2 is applied to the floor slab.' Identify which property of individual forces this load DOES NOT explicitly specify.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Magnitude (per unit area)"
+      },
+      {
+        "id": "b",
+        "text": "Direction (perpendicular to slab)"
+      },
+      {
+        "id": "c",
+        "text": "Sense (downward, due to gravity)"
+      },
+      {
+        "id": "d",
+        "text": "All three properties are explicitly stated in the specification"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Incorrect. Magnitude is explicitly stated: 2.5 kN/m\u00b2.",
+      "b": "Incorrect. Direction is implied as perpendicular to the slab (the force is 'applied to the floor slab'), though some might argue it's not explicit. However, the more clearly missing property is sense.",
+      "d": "Incorrect. The sense is NOT explicitly stated. While convention dictates that dead loads act downward, the specification never states 'downward.'",
+      "correct": "The specification gives magnitude (2.5 kN/m\u00b2) and direction (applied to the floor slab, conventionally perpendicular). Sense (downward) is NOT explicitly stated in the load description \u2014 it is only implied by the convention that dead loads act downward due to gravity. To be fully explicit, the specification should state: '2.5 kN/m\u00b2 acting downward perpendicular to the slab.'",
+      "takeaway": "A complete force specification must explicitly state magnitude, direction, AND sense. Never rely on convention alone."
+    }
+  }
+}

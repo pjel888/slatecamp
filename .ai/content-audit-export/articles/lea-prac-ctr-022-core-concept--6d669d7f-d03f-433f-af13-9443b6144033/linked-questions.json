@@ -1,0 +1,508 @@
+{
+  "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6eddfb91912e3f6d00b6b9924655cfe98c8d5c51cdca3e2bac1bd860ec277801",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "18121003-89ba-427e-8c73-e0e624fa6230",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "A contractor achieves Substantial Completion 30 days late, incurring 1.5 million pesos in liquidated damages. The contractor then completes all punch list items within 5 days of Substantial Completion. Is the contractor liable for additional liquidated damages during the punch list phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because any delay after contract completion date triggers liquidated damages"
+        },
+        {
+          "id": "b",
+          "text": "No, liquidated damages end at Substantial Completion; the contractor is not liable for delay during the punch list (Final Completion) phase"
+        },
+        {
+          "id": "c",
+          "text": "Yes, because the contractor has not yet finished all work, which may affect the project's final acceptance"
+        },
+        {
+          "id": "d",
+          "text": "Only if the punch list completion was also delayed beyond the deadline, which would extend the liability period"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Incomplete work is not by itself cause for liquidated damages; the trigger is failure to meet Substantial Completion by the deadline.",
+        "d": "Incorrect. Liquidated damages do not apply to the punch list phase at all, regardless of deadline.",
+        "correct": "Liquidated damages end at Substantial Completion and do not extend to the punch list/Final Completion phase. Once Substantial Completion is certified (even if late), the contractor is no longer liable for delay damages. The contractor's obligation to complete punch list items is a separate performance obligation, typically with its own deadline, but failing to meet that deadline does not trigger liquidated damages.",
+        "takeaway": "Liquidated damages end at Substantial Completion—no damages accrue during the punch list/Final Completion phase, even if punch items are completed late."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ce42879d0ee2d6d5530887a449d678b6b37372d22ae026af29ab5edbd072aa7e"
+    },
+    {
+      "question_id": "7b3e9db4-7f80-4341-a2bb-a7d704d00217",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "What is the difference between a liquidated damages clause and a penalty clause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are the same thing; the terms are interchangeable, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Liquidated damages are enforceable if they represent reasonable estimates of harm; penalties are excessive amounts designed to punish breach and are not enforceable"
+        },
+        {
+          "id": "c",
+          "text": "Penalties are enforceable; liquidated damages are not, which is contrary to most legal interpretations"
+        },
+        {
+          "id": "d",
+          "text": "Liquidated damages apply to delay; penalties apply to defective work, though this is not a strict legal distinction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Penalties are the opposite; they are not enforceable.",
+        "d": "Incorrect. Both can apply to delay or defective work; the distinction is based on reasonableness, not the type of breach.",
+        "correct": "Liquidated damages are pre-agreed, reasonable estimates of probable harm and are enforceable. Penalties are excessive, punitive amounts designed to punish breach and are not enforceable under Philippine law. A clause that specifies a reasonable daily rate for delay is liquidated damages; a clause that specifies an unconscionable amount to punish breach is a penalty and is unenforceable.",
+        "takeaway": "Liquidated damages are reasonable, pre-agreed harm estimates and enforceable; penalties are excessive, punitive amounts designed to punish breach and are not enforceable."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2d957dfaad2b7d43498f77d2d8a1af2e82b7cc38982a6a33013d19ae9430b324"
+    },
+    {
+      "question_id": "19df8252-e1a5-4ea6-a53b-3308442f3ca9",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "From which date do liquidated damages begin accruing and until which milestone do they continue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "From contract award date until Final Completion certification, ensuring all contractual obligations are met"
+        },
+        {
+          "id": "b",
+          "text": "From the first day of delay after the contract completion date until Substantial Completion is certified"
+        },
+        {
+          "id": "c",
+          "text": "From project commencement until punch list completion, covering all phases of the project lifecycle"
+        },
+        {
+          "id": "d",
+          "text": "From first day of delay and continue indefinitely until the contractor pays, regardless of project status"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Punch list completion is Final Completion, not the point where liquidated damages end.",
+        "d": "Incorrect. Liquidated damages accrue only until Substantial Completion; they do not continue indefinitely.",
+        "correct": "Liquidated damages accrue from the first calendar day on which the contractor fails to achieve Substantial Completion by the contract completion date. They continue accruing daily until Substantial Completion is finally certified, at which point they stop. This is the critical relationship: Substantial Completion is the control point for both delay trigger and delay cessation.",
+        "takeaway": "Liquidated damages accrue from the first day of delay after the contract completion date and stop at Substantial Completion certification—not Final Completion."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:939c574a3c00ce130f13215c5980de03c7c362335e8c5c9562149e41268ce9df"
+    },
+    {
+      "question_id": "22d95fe7-78b4-4c2c-8caa-22378a5d4dba",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "A liquidated damages clause in a construction contract specifies 2% of contract price per cleandar day of delay. A court reviewing the enforceability of this rate determines that 2% per day is vastly disproportionate to any reasonable estimate of harm from one day of delay. Can the court reduce this amount?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, once parties agree to liquidated damages, courts cannot modify the amount, except under extraordinary circumstances"
+        },
+        {
+          "id": "b",
+          "text": "No, the contractor must pay the full 2% rate regardless of reasonableness, unless the contract is amended"
+        },
+        {
+          "id": "c",
+          "text": "Yes, per Article 2226 of the Civil Code, courts can equitably reduce unconscionable or iniquitous liquidated damages stipulations"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only if both parties request reduction together, ensuring mutual agreement"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "b": "Incorrect. Unreasonable and excessive liquidated damages are subject to court reduction.",
+        "d": "Incorrect. A party can seek reduction unilaterally; both parties need not agree.",
+        "correct": "Article 2226 of the Civil Code explicitly authorizes courts to equitably reduce liquidated damages if they are determined to be unconscionable or iniquitous (manifestly disproportionate and unfair). A rate such as 2% per day would typically be found unconscionable and subject to reduction.",
+        "takeaway": "Per Article 2226, courts can equitably reduce unconscionable or iniquitous (unfair/excessive) liquidated damages—they are not absolute once agreed."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d37fa28789ca0708a66ac063708f087d336fda05e67f7e4ed6693b0ee0ccc348"
+    },
+    {
+      "question_id": "2aa2c207-09d3-4c4e-8600-82d2222b80e6",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "Must the owner provide formal notice or demand to the contractor before liquidated damages accrue and the contractor becomes liable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the owner must issue a formal demand letter for liquidated damages to begin accrual, ensuring legal compliance and clarity"
+        },
+        {
+          "id": "b",
+          "text": "No, liquidated damages accrue automatically from the first day of delay without requiring notice or demand"
+        },
+        {
+          "id": "c",
+          "text": "Only if the contract specifies a notice requirement, which is often included to protect both parties"
+        },
+        {
+          "id": "d",
+          "text": "Yes, the owner must notify the contractor that the project is delayed before invoicing, to maintain transparency and fairness"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Most contracts do not require notice for accrual; notice is typically for invoicing purposes, not accrual.",
+        "d": "Incorrect. Notification of delay may be courteous, but it is not required for liquidated damages to accrue.",
+        "correct": "Liquidated damages accrue automatically and continuously from the first calendar day on which the contractor is in delay (failing to meet the contract completion date). No separate notice or demand is required to trigger accrual. The owner may later notify the contractor or invoice for the amount, but the obligation to pay exists from the first day of delay without notice.",
+        "takeaway": "Liquidated damages accrue automatically from the first day of delay—no notice or formal demand is required to trigger liability."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:49a0600094f88ce8b2dea3c9d0e1e19cda6838b3165de12e84fb2146f4cf1368"
+    },
+    {
+      "question_id": "69943e14-b750-4975-8f9c-366547100056",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "A construction contract specifies a total contract price of 50 million pesos and a liquidated damages rate of 0.1% of contract price per cleandar day of delay. The contractor fails to achieve Substantial Completion until 20 days after the contract completion date. How much liquidated damages is owed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50,000 pesos (0.1% of 50 million)"
+        },
+        {
+          "id": "b",
+          "text": "1 million pesos (0.1% of 50 million × 20 days)"
+        },
+        {
+          "id": "c",
+          "text": "100,000 pesos (20 days × 0.1% of contract price)"
+        },
+        {
+          "id": "d",
+          "text": "500,000 pesos (arbitrary percentage of contract price)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. ₱50,000 is the daily rate for one day of delay, not the total owed for 20 days. Multiply the daily rate by the number of delay days: ₱50,000 × 20 = ₱1,000,000.",
+        "c": "Incorrect. This option confuses the percentage calculation. It incorrectly computes 20 days × 0.1% as if 0.1% applies to the entire contract price once, rather than being applied per day. The daily rate is ₱50,000 (not ₱100,000).",
+        "d": "Incorrect. ₱500,000 has no basis in the formula. Liquidated damages are calculated systematically: 0.1% of contract price per day, multiplied by days of delay—not arbitrary percentages.",
+        "correct": "Liquidated damages = daily rate × days of delay. Daily rate = 0.1% of ₱50 million = 0.001 × 50,000,000 = ₱50,000 per day. Total LD = ₱50,000 × 20 days = ₱1,000,000 (1 million pesos).",
+        "takeaway": "Liquidated damages formula: (Daily Rate) × (Days of Delay) = (0.1% × Contract Price) × 20 days = ₱1,000,000."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b49ce891926093450f3bc1d987de82bee59aefde4cd9be3890c54fb44680a6fd"
+    },
+    {
+      "question_id": "7e8288fa-a25a-4c9b-bdb6-7e59efa801e8",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "A contractor claims that the delay was caused by the owner's failure to provide site access for 15 days, not by contractor fault. If the contractor can prove this owner-caused delay, what is the legal consequence regarding liquidated damages?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The contractor is still liable for liquidated damages; owner-caused delays do not excuse payment, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "The contractor can avoid or reduce liquidated damages liability if it proves the delay was not its responsibility"
+        },
+        {
+          "id": "c",
+          "text": "The owner must reimburse the contractor for liquidated damages already paid, which is rarely the case in standard contracts"
+        },
+        {
+          "id": "d",
+          "text": "Liquidated damages are forgiven entirely, even for days the contractor itself caused delay, which is an unusual legal outcome"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Reimbursement is not automatic; the contractor must pursue a claim for delay caused by owner.",
+        "d": "Incorrect. The contractor is liable for delay caused by its own fault; owner-caused delay is only relevant to contractor liability.",
+        "correct": "The contractor can avoid or reduce liquidated damages liability if it proves that the delay was not caused by the contractor's fault or breach, but rather by the owner's actions or inactions (e.g., failure to provide access, late issuance of approvals). Liquidated damages are compensation for contractor breach; if the breach is not the contractor's responsibility, the contractor is not liable. The burden of proof rests on the contractor.",
+        "takeaway": "The contractor can avoid liquidated damages if it proves the delay was caused by the owner (not contractor fault) and obtains a contractual time extension."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aa40189280c939ec1e7edc072215bbf09006559d4041efb5608553bb1875c6f5"
+    },
+    {
+      "question_id": "a2e6bf03-ab36-45cc-b543-531f15bac75c",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "How does the presence of a liquidated damages clause benefit the owner compared to pursuing a claim for actual damages?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Liquidated damages are always larger than actual damages, providing a financial cushion for the owner"
+        },
+        {
+          "id": "b",
+          "text": "Liquidated damages eliminate the owner's burden to prove actual harm; the pre-agreed amount is compensation without further proof"
+        },
+        {
+          "id": "c",
+          "text": "Liquidated damages allow the owner to recover twice: both the liquidated amount and actual damages, maximizing potential recovery"
+        },
+        {
+          "id": "d",
+          "text": "Liquidated damages are adjusted annually for inflation, ensuring that the compensation remains relevant over time"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Liquidated damages substitute for actual damages; double recovery is not permitted.",
+        "d": "Incorrect. Liquidated damages rates are fixed in the contract; they do not adjust automatically.",
+        "correct": "The key benefit of liquidated damages is that the owner avoids the burden and uncertainty of proving actual damages. Instead of documenting lost rent, financing costs, and other consequential losses, the owner simply applies the liquidated damages formula (daily rate × delay days) and claims the amount. This is more efficient and reduces litigation burden.",
+        "takeaway": "Liquidated damages eliminate the owner's burden to prove actual harm; the pre-agreed formula avoids costly proof of lost rent, financing, and other consequential damages."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cc62030078a955a3360a3e9c067427be979fa73e2b4b615a8725a51d2f9f29d6"
+    },
+    {
+      "question_id": "22d20b4a-cde4-4328-a90d-cf163319c2b0",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "A contract contains no liquidated damages clause. During construction, the contractor causes a 60-day delay. Can the owner recover damages for the delay even without a liquidated damages clause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, without a liquidated damages clause, the owner has no right to delay compensation, unless proven otherwise"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the owner can pursue a claim for actual damages caused by the delay through arbitration or litigation, but must prove the actual harm suffered"
+        },
+        {
+          "id": "c",
+          "text": "Yes, the owner automatically receives the equivalent of 0.1% per day as statutory liquidated damages, subject to court approval"
+        },
+        {
+          "id": "d",
+          "text": "No, because no contract term specifies delay liability, leaving the owner without recourse"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. No statutory liquidated damages exist; only contractual rates apply.",
+        "d": "Incorrect. Breach of the contract completion obligation creates liability for damages, liquidated or actual.",
+        "correct": "Without a liquidated damages clause, the owner must pursue a claim for actual damages. The owner has the burden of proving actual harm caused by the delay: lost rent, financing costs, loss of use, third-party claim reimbursements, etc. This is more difficult than claiming liquidated damages (which are pre-agreed). The owner's remedy is through arbitration or litigation seeking actual damages.",
+        "takeaway": "Without a liquidated damages clause, the owner can claim actual damages (lost rent, financing costs, loss of use) but must prove the actual harm caused by delay."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d2975b0e67bc3c8826d6d6dbc978fe1f5df16a706debfcf7ca54a30efa170019"
+    },
+    {
+      "question_id": "8fc3f206-60fb-43a5-b12b-99f8056e2690",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "topic_id": "45838fc1-23fa-4f2b-90a7-8083a5bdbe5e",
+      "text": "Under Philippine law, what two conditions must a liquidated damages clause satisfy to be enforceable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It must be approved by the PRC and signed by a notary public before contract execution to be legally binding"
+        },
+        {
+          "id": "b",
+          "text": "It must represent a reasonable estimate of probable harm, not be unconscionable or iniquitous, and must be agreed upon by the parties in advance"
+        },
+        {
+          "id": "c",
+          "text": "It must be a penalty clause that exceeds 10% of contract price to ensure sufficient deterrence against breach"
+        },
+        {
+          "id": "d",
+          "text": "It must be approved by CIAC before contract execution and registered with the Construction Industry Authority"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Liquidated damages are distinct from penalties; they must NOT be punitive or excessive.",
+        "d": "Incorrect. CIAC approval is not a precondition to contract enforceability; it is the dispute resolution forum.",
+        "correct": "Per Article 2226 of the Civil Code, liquidated damages are enforceable if: (1) they represent a reasonable, pre-agreed estimate of the probable harm from breach (here, contractor delay), not an unconscionable or iniquitous amount, and (2) they are expressly agreed upon by the parties in the contract before breach occurs. These are the core requirements for enforceability.",
+        "takeaway": "Liquidated damages are enforceable if they represent a reasonable, pre-agreed estimate of probable harm (not unconscionable) and are expressly agreed in the contract before breach."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-022-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26157e044bc5e1e51494cd83125f34074cc5240d07083ad9eba333f9c375d6bb"
+    }
+  ]
+}

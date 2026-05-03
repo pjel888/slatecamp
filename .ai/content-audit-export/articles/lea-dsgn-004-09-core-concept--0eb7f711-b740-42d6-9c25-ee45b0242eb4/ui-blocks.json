@@ -1,0 +1,63 @@
+{
+  "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
+  "slug": "lea-dsgn-004-09-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.703Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:2eb3f75bbb1c58aaca7675c14872b88a7c1196f222b9977e2e6fd507a677a458",
+  "normalized_content_hash": "2eb3f75bbb1c58aaca7675c14872b88a7c1196f222b9977e2e6fd507a677a458",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>**Restaurant Anchors:** Group E occupancy. Dining = 1.4 sqm/seat. Kitchen:dining = 1:3 (kitchen is ONE-THIRD of dining, not equal or larger). Parking = 1/30 sqm dining. Exit width = 7.6 mm/person. Dishwash separated from prep.</Tip>",
+      "raw_hash": "sha256:6f5729edc1fc20d793fa36ae36835a6f3a091ca8c95ac3e35ea1a3cc04b5acbf",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Restaurant Anchors:** Group E occupancy. Dining = 1.4 sqm/seat. Kitchen:dining = 1:3 (kitchen is ONE-THIRD of dining, not equal or larger). Parking = 1/30 sqm dining. Exit width = 7.6 mm/person. Dishwash separated from prep.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:036d4b2bc3ccd9d95e6c83b3bd29489c39f06764df757d8f46c07bda95531c48",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Restaurant Anchors:** Group E occupancy. Dining = 1.4 sqm/seat. Kitchen:dining = 1:3 (kitchen is ONE-THIRD of dining, not equal or larger). Parking = 1/30 sqm dining. Exit width = 7.6 mm/person. Dishwash separated from prep.",
+      "children_text": "**Restaurant Anchors:** Group E occupancy. Dining = 1.4 sqm/seat. Kitchen:dining = 1:3 (kitchen is ONE-THIRD of dining, not equal or larger). Parking = 1/30 sqm dining. Exit width = 7.6 mm/person. Dishwash separated from prep.",
+      "start_offset": 4500,
+      "end_offset": 4737,
+      "line_start": 52,
+      "line_end": 52,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"ERR-DSGN-031: Setting kitchen:dining ratio at 1:1 or larger instead of 1:3\",\"ERR-DSGN-001: Classifying restaurant as Group C (education) or Group H (assembly) instead of Group E\",\"ERR-DSGN-019: Using 5 mm/person for exit width instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit for 50+ person occupancy\",\"ERR-DSGN-014: Ramp slope at 1:10 or 1:12 (old IRR) instead of 1:20 (2024 Revised IRR)\"]} />",
+      "raw_hash": "sha256:77cc543511a234184ab42e7d6968ef4fd0b8912c987cd128af95fb480f2c01d5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"ERR-DSGN-031: Setting kitchen:dining ratio at 1:1 or larger instead of 1:3\\\",\\\"ERR-DSGN-001: Classifying restaurant as Group C (education) or Group H (assembly) instead of Group E\\\",\\\"ERR-DSGN-019: Using 5 mm/person for exit width instead of 7.6 mm/person\\\",\\\"ERR-DSGN-021: Single exit for 50+ person occupancy\\\",\\\"ERR-DSGN-014: Ramp slope at 1:10 or 1:12 (old IRR) instead of 1:20 (2024 Revised IRR)\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:eb791c50431291fde5aad279c96eb6847cc0b3b7d51db7073f213594a906ea61",
+      "props": {
+        "mistakes": "{[\"ERR-DSGN-031: Setting kitchen:dining ratio at 1:1 or larger instead of 1:3\",\"ERR-DSGN-001: Classifying restaurant as Group C (education) or Group H (assembly) instead of Group E\",\"ERR-DSGN-019: Using 5 mm/person for exit width instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit for 50+ person occupancy\",\"ERR-DSGN-014: Ramp slope at 1:10 or 1:12 (old IRR) instead of 1:20 (2024 Revised IRR)\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"ERR-DSGN-031: Setting kitchen:dining ratio at 1:1 or larger instead of 1:3\",\"ERR-DSGN-001: Classifying restaurant as Group C (education) or Group H (assembly) instead of Group E\",\"ERR-DSGN-019: Using 5 mm/person for exit width instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit for 50+ person occupancy\",\"ERR-DSGN-014: Ramp slope at 1:10 or 1:12 (old IRR) instead of 1:20 (2024 Revised IRR)\"]}"
+      },
+      "props_text": "mistakes={[\"ERR-DSGN-031: Setting kitchen:dining ratio at 1:1 or larger instead of 1:3\",\"ERR-DSGN-001: Classifying restaurant as Group C (education) or Group H (assembly) instead of Group E\",\"ERR-DSGN-019: Using 5 mm/person for exit width instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit for 50+ person occupancy\",\"ERR-DSGN-014: Ramp slope at 1:10 or 1:12 (old IRR) instead of 1:20 (2024 Revised IRR)\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4759,
+      "end_offset": 5186,
+      "line_start": 56,
+      "line_end": 56,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:0a0c0fd0f046172992102c7166ddd83f13e127c0099dd54743a365b7049a8397"
+}

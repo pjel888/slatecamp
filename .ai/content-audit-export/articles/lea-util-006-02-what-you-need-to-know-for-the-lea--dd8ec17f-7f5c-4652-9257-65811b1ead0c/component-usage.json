@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "dd8ec17f-7f5c-4652-9257-65811b1ead0c",
+  "slug": "lea-util-006-02-what-you-need-to-know-for-the-lea",
+  "title": "Reverberation time (RT60)",
+  "component_count": 6,
+  "components": [
+    {
+      "component_name": "Example",
+      "block_ids": [
+        "ui_0007"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "Tip",
+      "block_ids": [
+        "ui_0005"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "Warn",
+      "block_ids": [
+        "ui_0003"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "WikiCalloutBox",
+      "block_ids": [
+        "ui_0001"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "WikiExactTable",
+      "block_ids": [
+        "ui_0002",
+        "ui_0006"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "WikiMistakeCard",
+      "block_ids": [
+        "ui_0004"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    }
+  ],
+  "unknown_components": [
+    "WikiExactTable"
+  ],
+  "custom_ui_block_count": 7,
+  "normalized_status": "passed",
+  "components_detected": [
+    "Example",
+    "Tip",
+    "Warn",
+    "WikiCalloutBox",
+    "WikiMistakeCard"
+  ],
+  "unknown_components_detected": [
+    "WikiExactTable"
+  ]
+}

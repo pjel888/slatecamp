@@ -1,0 +1,33 @@
+# Content Diff Report: lea-plan-005-01-what-you-need-to-know-for-the-lea
+
+Generated: 2026-05-03T07:53:51.888Z
+Article ID: f5374d6a-fc70-475e-83ce-7feb64056655
+Changed: true
+Safe to push locally: true
+
+## Hashes
+
+- Original: `sha256:078371e8070c8721507582b38ab2f88c542aa817b16965cab6a66a8561b74252`
+- Normalized: `sha256:d89f808ef0d07f6b3ba3e9f22ec08b9b3e2ae46faa065358df363dec5e143a94`
+- Candidate: `sha256:b4072a01397c6c154df88a78aef135c6425d533feb2acdd35aed2acad44bfd2b`
+
+## Line summary
+
+- Changed lines: 72
+- Inserted lines: 14
+- Deleted lines: 0
+
+## UI block preservation
+
+- UI blocks expected: 6
+- UI blocks preserved: 6
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
+
+## Blockers
+
+- None
+
+## Warnings
+
+- Remote stale check has not been run by diff; push command must verify Supabase before mutation.

@@ -1,0 +1,508 @@
+{
+  "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9d740dd3d87bf515d9a32c9a90b5d70593318af464ae49c323b3faf7de94d16c",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "84a45e59-09ee-4b37-a9eb-c52ba379026f",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "On a stress-strain diagram for structural steel, at which point does the material stop obeying Hooke's Law but can still return to zero strain if fully unloaded?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proportional limit"
+        },
+        {
+          "id": "b",
+          "text": "Elastic limit"
+        },
+        {
+          "id": "c",
+          "text": "Yield point"
+        },
+        {
+          "id": "d",
+          "text": "Ultimate strength"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The elastic limit is the highest stress at which the material returns to zero strain upon unloading. Beyond this point, permanent deformation occurs. The proportional limit (earlier) marks where stress is no longer proportional to strain mathematically, but elasticity persists until the elastic limit.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4aac270e382090ff4035762220deddd77187fad5101558fb5fcff5eb275cf617"
+    },
+    {
+      "question_id": "e2e6b7b8-54fe-436d-b83d-a8440b1039fb",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "For A36 structural steel, what is the Modulus of Elasticity (E)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "150,000 MPa"
+        },
+        {
+          "id": "b",
+          "text": "200,000 MPa"
+        },
+        {
+          "id": "c",
+          "text": "250,000 MPa"
+        },
+        {
+          "id": "d",
+          "text": "300,000 MPa"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "E = 200,000 MPa (or 200 GPa) for A36 steel. This is the standard value for all structural steel grades in design codes.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bc2b97221d61fa6b847b2bd1cae9446c6b5dcef7b426d89a7d8e3d4f7201f636"
+    },
+    {
+      "question_id": "3b9d2339-8bbf-4112-8d99-712a22c3807e",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "On a stress-strain diagram, the yield point region appears as a near-horizontal section. What does this horizontal section represent in terms of material behavior?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Strain increases while stress remains approximately constant"
+        },
+        {
+          "id": "b",
+          "text": "Both stress and strain increase at the same rate, indicating a linear elastic behavior which is not typical for yield point"
+        },
+        {
+          "id": "c",
+          "text": "The material is returning to zero strain, which would imply a recovery phase not associated with yield"
+        },
+        {
+          "id": "d",
+          "text": "The material is at its ultimate strength, a point typically beyond the yield region in the stress-strain curve"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The yield plateau (horizontal or near-horizontal region) is the defining characteristic of materials like structural steel. The material flows and accumulates strain while the stress remains at the yield strength Fy. This plastic deformation without increasing load is the hallmark of ductile metals.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c3358eca09b34290389d918f48f377a6576dc0617d4f521230076f5ff13a185"
+    },
+    {
+      "question_id": "52947971-6fdb-4678-adc2-44e11f014f7c",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "Design specifications for structural steel often reference yield strength (Fy) rather than ultimate strength (Fu) for service-level (ASD) design limits. Why is yield strength the controlling reference, not ultimate strength?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because ultimate strength is always lower than yield strength, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Because yielding (permanent deformation) is the practical limit of service; exceeding Fy introduces unacceptable permanent distortion"
+        },
+        {
+          "id": "c",
+          "text": "Because ultimate strength is immeasurable in practice, making it an unreliable design parameter"
+        },
+        {
+          "id": "d",
+          "text": "Because yield strength determines the elastic limit for all materials, providing a consistent basis for design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In service (at working loads), the structure must remain elastic and undistorted. Once yield is reached, permanent deformation (plastic strain) accumulates, making the structure unusable even if it does not break. Fy is the boundary of safe service; exceeding it violates the implicit contract of elasticity and reversibility.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:72414c19ea064150b6bb82716868ca78dc018e28d0a531ac6e84a4bcf64bdc7c"
+    },
+    {
+      "question_id": "513fd85c-8324-49c9-bf57-525932e6ee19",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "In comparing two materials with stress-strain diagrams, Material A shows a very short elastic region followed by a long, flat yield plateau and then strain hardening. Material B shows a steep elastic region with no yield plateau and sudden failure. Which characterization is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material A is brittle; Material B is ductile"
+        },
+        {
+          "id": "b",
+          "text": "Material A is ductile; Material B is brittle"
+        },
+        {
+          "id": "c",
+          "text": "Both materials are equally ductile"
+        },
+        {
+          "id": "d",
+          "text": "Material B is stronger because it fails at higher stress"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Material A exhibits a long plastic region with a yield plateau—classic ductile behavior. Material B exhibits minimal plastic deformation before sudden fracture—classic brittle behavior. The presence of a yield plateau and strain hardening capacity defines ductility.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d0af69754d7aedf7db45f254b94046973f8dd83dbb6e571218173fa0e43089f8"
+    },
+    {
+      "question_id": "55ee080a-30e3-4e90-ade4-bcccc2c4e3e2",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "A material is loaded into the plastic region of its stress-strain diagram and then completely unloaded. What is the slope of the unloading line on the stress-strain plot?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zero (horizontal line)"
+        },
+        {
+          "id": "b",
+          "text": "Equal to E, the Modulus of Elasticity"
+        },
+        {
+          "id": "c",
+          "text": "Less than E due to permanent deformation"
+        },
+        {
+          "id": "d",
+          "text": "Steeper than the loading curve in the elastic region"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Unloading follows a line parallel to the original elastic slope. The slope of the unloading line equals E because the elastic response is reversible, even if permanent strain remains. The material removes only the elastic strain component proportionally.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5ebb2b3f6514038d2fcec597276f8b7f30e4c2ec3fca9d37c2310653aade2c87"
+    },
+    {
+      "question_id": "9756aa23-682e-480a-af90-822a2987b797",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "What is the relationship between the slope of the stress-strain diagram in the elastic region and the modulus of elasticity (E)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E equals the slope; they are identical"
+        },
+        {
+          "id": "b",
+          "text": "E equals the slope divided by a correction factor"
+        },
+        {
+          "id": "c",
+          "text": "E equals the slope only for ductile materials"
+        },
+        {
+          "id": "d",
+          "text": "The slope and E are unrelated"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The slope of the linear portion is stress/strain, which by definition is the Modulus of Elasticity. This is Hooke's Law: E = σ / ε. The slope IS E.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:62aab6fb9864fd8e189d7999e518d01621704aec78e7215c910386f38e15839f"
+    },
+    {
+      "question_id": "5ac10454-b2da-4c43-abaf-fe73ab192445",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "A structural engineer is designing a connection that must not develop any permanent deformation under the design loads. To ensure this, the design stress must not exceed which point on the stress-strain diagram?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proportional limit"
+        },
+        {
+          "id": "b",
+          "text": "Elastic limit"
+        },
+        {
+          "id": "c",
+          "text": "Yield point"
+        },
+        {
+          "id": "d",
+          "text": "Ultimate strength"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "To prevent any permanent deformation, stresses must not exceed the elastic limit. Beyond the elastic limit, permanent strain accumulates. The connection will recover its full original dimensions only if stresses remain at or below the elastic limit. In practice, design codes add safety margins to stay well below this limit.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f9f334422acf87409517910790ca5a047dc9d523072548a5638fd9bb50b275d7"
+    },
+    {
+      "question_id": "138b0aa5-f1d9-4295-bec9-8e5876e2dc9b",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "A specimen is pulled to a point in the plastic region, then unloaded completely to zero stress. When you measure the permanent elongation of the specimen, what does this measurement represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The elastic strain that was stored in the material and released upon unloading"
+        },
+        {
+          "id": "b",
+          "text": "The plastic (permanent) strain that occurred during loading"
+        },
+        {
+          "id": "c",
+          "text": "The total strain at the peak load, which includes both elastic and plastic components"
+        },
+        {
+          "id": "d",
+          "text": "The stress concentration factor, which is a measure of the stress distribution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The permanent elongation is the plastic strain component. It is the horizontal distance between zero and the point where the unloading line intersects the strain axis. The elastic strain is removed during unloading; only the plastic portion remains.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d62f4f052a30ee81248fbb46756d6ac8056a699e64340442fe15438e2af71862"
+    },
+    {
+      "question_id": "849adeca-2245-43c1-a348-0761f7be1137",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "topic_id": "cb9521e5-fb86-4c14-9211-f2bcd814c409",
+      "text": "For A36 steel, the ultimate strength (Fu) is 400 MPa and the yield strength (Fy) is 250 MPa. What is the Fu/Fy ratio, and what does this ratio tell you about the material's behavior beyond yield?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.2; the material gains very little strength after yield, indicating limited ductility"
+        },
+        {
+          "id": "b",
+          "text": "1.6; the material gains significant strength through strain hardening after yield"
+        },
+        {
+          "id": "c",
+          "text": "2.0; the material doubles in strength at ultimate, which is not typical for structural steel"
+        },
+        {
+          "id": "d",
+          "text": "0.6; the material weakens after yield, which is incorrect for A36 steel"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Fu/Fy = 400/248 ≈ 1.6. This ratio indicates that after reaching the yield point, the material continues to gain strength through strain hardening. The 1.6 factor is characteristic of structural steel and shows the significant reserve capacity beyond the yield plateau.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f680e08cbce91b6d9084945d8020a278d18c6e0df926172b118bf1c2b2cde546"
+    }
+  ]
+}

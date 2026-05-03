@@ -1,0 +1,35 @@
+{
+  "question_id": "274ef48a-9dc8-40c8-9f47-96918b9b84bb",
+  "baseline_hash": "sha256:2c7e02b61daac35ca5002d6275dac6ad7a988e3420e91649cfe3dcbf871615c1",
+  "reason": "Options only contain single-letter labels ('A', 'B', 'C', 'D') instead of actual answer content. Reconstructed option text from rationale descriptions.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T04:11:28.087862+00:00",
+  "proposed": {
+    "options": [
+      {
+        "id": "a",
+        "text": "Sensible = 4 kW (error: counted only occupant load, ignoring envelope and equipment)."
+      },
+      {
+        "id": "b",
+        "text": "Option B"
+      },
+      {
+        "id": "c",
+        "text": "Sensible = 112 kW (error: miscalculated envelope as 400 m\u00b2 \u00d7 600 BTU/hr per m\u00b2 and double-counted occupants)."
+      },
+      {
+        "id": "d",
+        "text": "Sensible = 45 kW (error: used 400 BTU/hr per m\u00b2 residential rate instead of 500 BTU/hr per m\u00b2 commercial)."
+      }
+    ],
+    "rationale": {
+      "a": "Sensible = 4 kW (error: counted only occupant load, ignoring envelope and equipment).",
+      "b": "",
+      "c": "Sensible = 112 kW (error: miscalculated envelope as 400 m\u00b2 \u00d7 600 BTU/hr per m\u00b2 and double-counted occupants).",
+      "d": "Sensible = 45 kW (error: used 400 BTU/hr per m\u00b2 residential rate instead of 500 BTU/hr per m\u00b2 commercial).",
+      "correct": "Step 1: Envelope sensible load = 400 m\u00b2 \u00d7 500 BTU/hr per m\u00b2 (commercial, source: ASHRAE 90.1) \u00f7 3.412 \u2248 58.5 kW. Step 2: Occupant sensible load = 40 persons \u00d7 100 W/person (office activity, source: ASHRAE 62.1 Table 6.2.2.1) = 4 kW. Step 3: Equipment load = 20 kW (given). Step 4: Total sensible = 58.5 + 4 + 20 = 82.5 kW \u2248 83 kW. This calculation excludes latent load (occupant moisture, infiltration); latent would be ~24 kW (30\u201340% of sensible for tropical climate), bringing total to ~107 kW \u2248 30 TR. Source: ALE-UTIL-002-04 Module Inverse Computation section; ASHRAE 62.1 Table 6.2.2.1.",
+      "takeaway": "Commercial sensible load breakdown: envelope (~58%), occupants (~5%), equipment (~24%) sum to total sensible; must add latent load separately (30\u201340% of sensible in tropical climate) for complete cooling load sizing."
+    }
+  }
+}

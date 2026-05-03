@@ -1,0 +1,508 @@
+{
+  "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:778b728fe8b7f9b91ae658f21279cff06730ace90ab8798b9460ee87b27c6e39",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "77268107-c2c6-4ec6-a89a-f2f369fb96a6",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "In tropical Philippines with high ambient temperature (30—35°C), high humidity (70—90%), and intense solar radiation, which curing method is most practical and effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "White-pigmented curing compound (Type 2, ASTM C309), applied immediately after finishing, with complete surface coverage."
+        },
+        {
+          "id": "b",
+          "text": "Clear curing compound (Type 1); high humidity means moist curing is not necessary, reducing the need for additional water application"
+        },
+        {
+          "id": "c",
+          "text": "Water ponding; tropical rainfall will keep the surface wet without active curing, relying on natural precipitation"
+        },
+        {
+          "id": "d",
+          "text": "No curing needed; high ambient temperature is sufficient for rapid hydration, eliminating the need for additional curing methods"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Clear compound does not reflect solar heat; surface temperature rises excessively (50—60°C).",
+        "c": "Tropical rainfall is unpredictable; it cannot be relied upon for curing. High humidity (70—90%) reduces but does not prevent evaporation.",
+        "d": "High temperature accelerates hydration but also increases evaporation. Without moisture retention, curing is compromised.",
+        "correct": "White-pigmented compound (Type 2) reflects solar heat, preventing excessive surface temperature rise that causes thermal cracking. It requires minimal maintenance, prevents evaporation despite high humidity, and can be applied to any surface orientation. This is the most practical and effective choice for tropical Philippines.",
+        "takeaway": "Tropical Philippines best practice: White-pigmented curing compound (Type 2), complete coverage, applied within 30 minutes of finishing. This balances effectiveness, practicality, and cost."
+      },
+      "explanation": null,
+      "code_citation": "ACI 305.1-06 (hot-weather concreting); ACI 308R-16; NSCP 2015 Section 1901",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0abecae6b5da4f30cd3fb8ad563efee0165aa1370a865e9335ca0ed844f1799"
+    },
+    {
+      "question_id": "011fb596-d634-4daa-aa74-947ffa99b70c",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "Hydration requires ___, ___, and ___ to occur properly. Below ___ °C, hydration essentially halts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "water, suitable temperature (>10°C), time; 10"
+        },
+        {
+          "id": "b",
+          "text": "cement, aggregate, water; 5, which is critical for maintaining the chemical reactions necessary for setting"
+        },
+        {
+          "id": "c",
+          "text": "water, air, sunlight; 0, as these elements are essential for the curing process in outdoor environments"
+        },
+        {
+          "id": "d",
+          "text": "chemical catalyst, water, pressure; 25, which are necessary conditions for certain specialized concrete mixes"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "These are components of concrete, not requirements for hydration.",
+        "c": "Hydration does not require air or sunlight.",
+        "d": "Hydration is a chemical reaction initiated by water contact with cement, not requiring external catalyst or pressure.",
+        "correct": "Hydration (portland cement + water → hydration products) requires moisture, temperature above 10°C minimum (50°F), and adequate time (7 days for OPC). Below 10°C, hydration rate drops dramatically and is considered essentially halted for practical purposes.",
+        "takeaway": "Hydration = water + temperature (>10°C) + time (7 days minimum). Ensure all three are present. Cold weather (below 10°C) requires heated curing or extended duration."
+      },
+      "explanation": null,
+      "code_citation": "ACI 308R-16; Portland Cement Association (PCA) documentation",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:14f71d1a0e825d12948519c2e12da2a3b9e64d0e856a9a315b6c79a3ff462a19"
+    },
+    {
+      "question_id": "2e5a3725-71fd-4477-abf0-c93cc7dedd68",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "ASTM C309 Type 2 curing compound is ___ to reflect solar radiation, reducing concrete surface temperature during hot-weather curing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "white-pigmented"
+        },
+        {
+          "id": "b",
+          "text": "clear with UV absorbers"
+        },
+        {
+          "id": "c",
+          "text": "translucent green"
+        },
+        {
+          "id": "d",
+          "text": "dark-pigmented"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Type 1A is translucent/clear with water-based formulation; it does not reflect heat.",
+        "c": "Green tint does not reflect radiation as effectively as white.",
+        "d": "Dark pigment absorbs heat, making thermal conditions worse.",
+        "correct": "Type 2 (white-pigmented) curing compound reflects solar radiation and reduces surface temperature rise. Type 1 is clear or translucent and does not reflect heat.",
+        "takeaway": "Type 2 = white = reflects heat. Use for tropical/hot climates. Type 1 = clear = allows inspection but no heat reflection. Use for cooler climates or when appearance monitoring is critical."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C309 Standard Specification; ACI 308R-16",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fb085274bca6ff1a960146c036243e88f83ff255c47fab6246f8aa8f20d15dde"
+    },
+    {
+      "question_id": "ec6c4c3d-ab81-4b28-8a1a-15b117c45e0f",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "Ponding (submersion) curing is most practical for ___ concrete surfaces.",
+      "options": [
+        {
+          "id": "a",
+          "text": "horizontal (slabs, floors, pavements)"
+        },
+        {
+          "id": "b",
+          "text": "vertical (walls, columns), where alternative curing methods are often more effective"
+        },
+        {
+          "id": "c",
+          "text": "sloped (roofs, ramps), which may require additional measures to ensure water retention"
+        },
+        {
+          "id": "d",
+          "text": "overhead (soffit, ledges), typically necessitating specialized equipment for effective curing"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Vertical surfaces cannot hold standing water; spray or wet burlap is required.",
+        "c": "Sloped surfaces shed water; ponding is impractical.",
+        "d": "Overhead surfaces cannot hold water; spray with catch pans is rarely practical.",
+        "correct": "Ponding retains water in shallow ponds on the surface. This only works on horizontal surfaces where water can be impounded. Vertical and overhead surfaces require different methods (spray, wet coverings).",
+        "takeaway": "Match curing method to geometry: Horizontal = ponding, Vertical/Sloped = spray or wet coverings, Any surface = curing compound."
+      },
+      "explanation": null,
+      "code_citation": "ACI 308R-16; curing best practices",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d0cbfc4a63ec38152af42b6acf473fe0538a17c613e8f739aa7355721838b808"
+    },
+    {
+      "question_id": "42132a98-e1ff-4cc7-8d31-d438411b6358",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "ACI 308R specifies minimum curing duration of ___ days at temperature above 10°C (50°F) for ordinary portland cement (OPC).",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 days"
+        },
+        {
+          "id": "b",
+          "text": "3 days"
+        },
+        {
+          "id": "c",
+          "text": "14 days"
+        },
+        {
+          "id": "d",
+          "text": "28 days"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "3 days is the minimum for high-early-strength (Type III) cement, not OPC.",
+        "c": "14 days provides additional strength gain but is not the minimum requirement.",
+        "d": "28 days is the design strength age, not the curing duration requirement; after 7 days, ambient curing is acceptable.",
+        "correct": "ACI 308R-16 specifies 7-day minimum moist curing for OPC at temperature >10°C. This allows sufficient hydration for strength and durability.",
+        "takeaway": "OPC = 7-day minimum. Type III = 3-day minimum. Always meet the minimum duration; shortcutting curing leads to weak, permeable concrete."
+      },
+      "explanation": null,
+      "code_citation": "ACI 308R-16; NSCP 2015 Section 1901",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2bb61a85dd66ec27d3cc535b6c58401feb5eff3c2344b18f94383088f698b3ac"
+    },
+    {
+      "question_id": "a28736fd-a64a-4693-8f9e-f03504743dcd",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "Inadequate curing of concrete leads to several long-term consequences. Which of the following is NOT a typical result of insufficient curing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increased aggregate exposure and surface erosion due to insufficient cement binder, leading to a rough and uneven surface"
+        },
+        {
+          "id": "b",
+          "text": "Low permeability and excellent water resistance due to reduced hydration"
+        },
+        {
+          "id": "c",
+          "text": "Rebar corrosion from water infiltration and carbonation, which compromises structural integrity over time"
+        },
+        {
+          "id": "d",
+          "text": "Differential cracking from uneven curing, resulting in potential structural weaknesses and aesthetic issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Aggregate exposure occurs when cement binder is weak; this is a typical result.",
+        "c": "Rebar corrosion follows from high permeability and water ingress.",
+        "d": "Differential curing creates local weak zones prone to stress concentration and cracking.",
+        "correct": "Inadequate curing results in HIGH permeability, not low. Incomplete hydration leaves porous concrete, allowing water infiltration. High permeability is the defining consequence of inadequate curing.",
+        "takeaway": "Inadequate curing = weak + porous + permeable + durable. Do not confuse the consequences. Poor curing compromises durability and service life."
+      },
+      "explanation": null,
+      "code_citation": "ACI 308R-16; concrete durability principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0bcae15b928d5217b122a9bbbd81ba6bc4753ba8e2e2906c39d06a594105b5a4"
+    },
+    {
+      "question_id": "53b1f308-aba0-4227-a426-e7127fb0cd90",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "A concrete contractor applies curing compound to a wall but achieves only 80% surface coverage due to patchy application. What is the likely consequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The uncovered 20% will evaporate moisture rapidly, potentially creating differential drying, localized cracking, and weak zones that concentrate stress."
+        },
+        {
+          "id": "b",
+          "text": "The 80% coverage is sufficient; most of the curing compound requirement is met, minimizing potential issues"
+        },
+        {
+          "id": "c",
+          "text": "The uncovered areas will cure faster, resulting in higher early strength, which may not be uniformly beneficial"
+        },
+        {
+          "id": "d",
+          "text": "Patchy coverage has minimal effect if applied within the required timeframe, assuming uniform environmental conditions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "80% coverage is not sufficient; the compound must completely seal the surface.",
+        "c": "Faster curing in uncovered areas actually creates differential drying (not beneficial); interior is still hydrating while exposed areas have dried.",
+        "d": "Patchy application is a critical defect; it voids the curing benefits.",
+        "correct": "Curing compound must form a continuous, complete seal to prevent evaporation. Patchy coverage (20% uncovered) allows rapid moisture loss from uncovered areas. Differential drying creates local weak zones and internal stress concentrations, leading to random cracking and reduced durability.",
+        "takeaway": "Curing compound application is all-or-nothing. Patchy or incomplete coverage is worse than no compound (since it may give false confidence). Always inspect coverage and reapply to achieve 100% seal."
+      },
+      "explanation": null,
+      "code_citation": "ACI 308R-16; ASTM C309 application requirements",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:205740d250a3cd9abc036d2cddec822a7aa557ccb3e606277691222e98bc035d"
+    },
+    {
+      "question_id": "3961ee9c-0195-47a5-bb85-8274de6dbe9a",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "Curing compound (ASTM C309) is typically ___—___% as effective as continuous moist water curing for strength development.",
+      "options": [
+        {
+          "id": "a",
+          "text": "70 to 80"
+        },
+        {
+          "id": "b",
+          "text": "95 to 100"
+        },
+        {
+          "id": "c",
+          "text": "50 to 60"
+        },
+        {
+          "id": "d",
+          "text": "40 to 50"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Compounds are not equivalent to moist curing; 95—100% is overstated.",
+        "c": "50—60% is too low and suggests defective application.",
+        "d": "40—50% is too low; compounds are more effective than this.",
+        "correct": "ACI 308R data shows curing compounds (when properly applied) develop 70—80% of the strength of continuous moist curing. They are a practical alternative but not equivalent.",
+        "takeaway": "Moist curing > Compound curing. For critical applications or maximum strength, prefer water curing (ponding, spray). Compounds are acceptable when water curing is impractical, if properly applied."
+      },
+      "explanation": null,
+      "code_citation": "ACI 308R-16; ASTM C309",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d4fec47d7aba559043f913424804182fb1235f4d805d1480445c2b690b2f46d9"
+    },
+    {
+      "question_id": "72c8e2cf-8d4c-42b1-80bf-daa514c7e292",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "Concrete cured for only 3 days (instead of the ACI 308R minimum of 7 days) at 20°C develops approximately ___% of the intended 28-day strength. What is the primary consequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50—60%; reduced early-age strength, extended form removal time, risk of handling damage and lower long-term durability/permeability control."
+        },
+        {
+          "id": "b",
+          "text": "85—95%; acceptable for most applications, though not ideal for high-stress environments."
+        },
+        {
+          "id": "c",
+          "text": "40—50%; only acceptable if Type III cement is used, which accelerates strength gain."
+        },
+        {
+          "id": "d",
+          "text": "100%; no difference from 7-day curing, assuming optimal curing conditions are maintained."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "85—95% would require approximately 7 days of proper curing at ambient temperature.",
+        "c": "Even Type III (high-early-strength) requires 3 days minimum curing; reducing below 3 days risks inadequate strength.",
+        "d": "Curing duration directly affects strength; 3 days is significantly less than 7 days.",
+        "correct": "ACI 308R data shows 3-day cured concrete achieves only 50—60% of design strength. Early form removal risks structural failure under load and handling damage. Incomplete hydration leaves porous, permeable concrete prone to rebar corrosion and deterioration.",
+        "takeaway": "Short curing = weak concrete + high permeability + durability loss. Never shortcut the 7-day minimum for OPC. Use Type III if acceleration is required, but maintain the 7-day curing practice."
+      },
+      "explanation": null,
+      "code_citation": "ACI 308R-16; ACI 305.1-06",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4db98636abd8a797c589c7071ee75caf4263041d35bf7563c9869896e64723d7"
+    },
+    {
+      "question_id": "ae92d510-c489-4cd8-ba06-95ea290345f1",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "A tropical Philippine construction site has average daily temperature of 32°C and wind velocity of 4 m/s. Curing compound (ASTM C309) is being considered. Should white-pigmented (Type 2) or clear (Type 1) compound be specified?",
+      "options": [
+        {
+          "id": "a",
+          "text": "White-pigmented (Type 2); it reflects solar radiation and reduces surface temperature, mitigating thermal stress and cracking risk in the hot, sunny climate."
+        },
+        {
+          "id": "b",
+          "text": "Clear (Type 1); it allows inspection of curing and is superior for all climates, especially in regions with variable weather conditions."
+        },
+        {
+          "id": "c",
+          "text": "Both are equivalent; choice depends on cost only, as performance differences are negligible in most scenarios."
+        },
+        {
+          "id": "d",
+          "text": "Neither; water curing is required in tropical climates to ensure adequate hydration and prevent surface drying."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Clear compound (Type 1) does not reflect solar heat; surface temperature rises excessively in tropical sun.",
+        "c": "Cost is secondary to performance; Type 2 is worth the additional cost in tropical climate.",
+        "d": "Water curing is effective but labor-intensive; curing compound is a practical alternative if properly applied. In tropical windy conditions, spray curing is subject to evaporation interruption.",
+        "correct": "In tropical Philippines with high ambient temperature and solar radiation, white-pigmented compound is preferred. It reflects sun, reducing surface temperature from potential 50—60°C to lower levels, preventing thermal-induced cracking and differential curing. Type 2 is ACI 305.1 recommended for hot-weather concreting.",
+        "takeaway": "Tropical climate + intense sun = white-pigmented curing compound (Type 2, ASTM C309). This is the most practical and effective choice for the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "ACI 305.1-06 (hot-weather concreting); ACI 308R-16; ASTM C309",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c8176f8cb09f376e014a507c11ecf279a4e8ca6888b8d71a5fbf9719bcf70232"
+    }
+  ]
+}

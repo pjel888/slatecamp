@@ -1,0 +1,63 @@
+{
+  "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+  "slug": "lea-dsgn-012-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.426Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:b8644fb185b34920013db77629ffa4e7813c7b622e2ee029445183a211d44a4c",
+  "normalized_content_hash": "b8644fb185b34920013db77629ffa4e7813c7b622e2ee029445183a211d44a4c",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\n **Memory Aid:** Remember **3-20-40** for rivers. For roads, it's\n **12-10-8-3**. PSO is your footprint limit; FAR is your total volume limit.\n</Tip>",
+      "raw_hash": "sha256:e4f7f4004465d95a9e6b3e0edc15d6ac45ce36b712d4c723fc6406e4fcbf9ea6",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory Aid:** Remember **3-20-40** for rivers. For roads, it's **12-10-8-3**. PSO is your footprint limit; FAR is your total volume limit.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c44f3c148477bb76ce5601c4d7f8e8f5ff9d91dedeb685afea33c4dc97d5002c",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n **Memory Aid:** Remember **3-20-40** for rivers. For roads, it's\n **12-10-8-3**. PSO is your footprint limit; FAR is your total volume limit.\n",
+      "children_text": "**Memory Aid:** Remember **3-20-40** for rivers. For roads, it's **12-10-8-3**. PSO is your footprint limit; FAR is your total volume limit.",
+      "start_offset": 3263,
+      "end_offset": 3418,
+      "line_start": 64,
+      "line_end": 67,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n mistakes={[\n 'ERR-DSGN-006: Applying a flat 60% PSO to all residential lots (R-1 is typically 50%).',\n 'ERR-DSGN-007: Calculating TGFA using TLA instead of the allowed AMBF footprint.',\n 'Using waterway width to determine PD 1067 easements (Correct: Use Land Use\u2014Urban, Agri, or Forest).',\n 'Specifying a 1:24 ramp slope as the code maximum (Correct: 1:12).',\n \"Confusing 'Open Space' (parks/playgrounds) with the 'Total Non-Sleaable Area' (roads + parks) in PD 957 projects.\",\n ]}\n/>",
+      "raw_hash": "sha256:3486554bd14c3b3afee6d38fad5b596215fa83505397a3720732b430af66704a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'ERR-DSGN-006: Applying a flat 60% PSO to all residential lots (R-1 is typically 50%).',\\n 'ERR-DSGN-007: Calculating TGFA using TLA instead of the allowed AMBF footprint.',\\n 'Using waterway width to determine PD 1067 easements (Correct: Use Land Use\u2014Urban, Agri, or Forest).',\\n 'Specifying a 1:24 ramp slope as the code maximum (Correct: 1:12).',\\n \\\"Confusing 'Open Space' (parks/playgrounds) with the 'Total Non-Sleaable Area' (roads + parks) in PD 957 projects.\\\",\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:0e7234325498eca2cfcfcb71f65ab8569de99b1d63f3cd8379a28ba16f4c0ab5",
+      "props": {
+        "mistakes": "{[\n 'ERR-DSGN-006: Applying a flat 60% PSO to all residential lots (R-1 is typically 50%).',\n 'ERR-DSGN-007: Calculating TGFA using TLA instead of the allowed AMBF footprint.',\n 'Using waterway width to determine PD 1067 easements (Correct: Use Land Use\u2014Urban, Agri, or Forest).',\n 'Specifying a 1:24 ramp slope as the code maximum (Correct: 1:12).',\n \"Confusing 'Open Space' (parks/playgrounds) with the 'Total Non-Sleaable Area' (roads + parks) in PD 957 projects.\",\n ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n 'ERR-DSGN-006: Applying a flat 60% PSO to all residential lots (R-1 is typically 50%).',\n 'ERR-DSGN-007: Calculating TGFA using TLA instead of the allowed AMBF footprint.',\n 'Using waterway width to determine PD 1067 easements (Correct: Use Land Use\u2014Urban, Agri, or Forest).',\n 'Specifying a 1:24 ramp slope as the code maximum (Correct: 1:12).',\n \"Confusing 'Open Space' (parks/playgrounds) with the 'Total Non-Sleaable Area' (roads + parks) in PD 957 projects.\",\n ]}"
+      },
+      "props_text": "mistakes={[\n 'ERR-DSGN-006: Applying a flat 60% PSO to all residential lots (R-1 is typically 50%).',\n 'ERR-DSGN-007: Calculating TGFA using TLA instead of the allowed AMBF footprint.',\n 'Using waterway width to determine PD 1067 easements (Correct: Use Land Use\u2014Urban, Agri, or Forest).',\n 'Specifying a 1:24 ramp slope as the code maximum (Correct: 1:12).',\n \"Confusing 'Open Space' (parks/playgrounds) with the 'Total Non-Sleaable Area' (roads + parks) in PD 957 projects.\",\n ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 3440,
+      "end_offset": 3942,
+      "line_start": 71,
+      "line_end": 79,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:473264df9ba24c6864ad34d040f0bf3c05c31f3836e705c74451af75ef126c11"
+}

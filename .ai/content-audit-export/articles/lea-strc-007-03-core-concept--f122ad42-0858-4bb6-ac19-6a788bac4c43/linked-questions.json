@@ -1,0 +1,508 @@
+{
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:03c522c6c3f79efd78417f08328a4168abb6469ee4c5f38a5ad8b725627842bc",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "425007a6-69a2-4550-b17a-0e6e188d3bd6",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "A one-way solid concrete slab is simply supported over a clear span of 5 meters (Grade 40 steel). What is the minimum slab thickness required by NSCP to control deflection without explicit calculation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 mm"
+        },
+        {
+          "id": "b",
+          "text": "250 mm"
+        },
+        {
+          "id": "c",
+          "text": "300 mm"
+        },
+        {
+          "id": "d",
+          "text": "400 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "200 mm = L/25, which is not a standard NSCP ratio for slabs.",
+        "c": "300 mm = L/16.7, which is between slab and beam ratios.",
+        "d": "400 mm = L/12.5, which is thicker than required.",
+        "correct": "For simply supported one-way solid slabs, NSCP 2015 Table 409-1 specifies minimum thickness = L/20. For 5 m span: 5000/20 = 250 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 409-1 (One-Way Slab — Simply Supported)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:70a303c4ad7f5c298406b1ac0c9702e4cb7f0301044d95e2a1cb8ed26058aed5"
+    },
+    {
+      "question_id": "7ac3ba8b-5381-4299-ab78-4161de86e9b4",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "An interior span of a continuous one-way solid slab is 6 meters long. What is the minimum slab thickness per NSCP deflection control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "250 mm"
+        },
+        {
+          "id": "b",
+          "text": "300 mm"
+        },
+        {
+          "id": "c",
+          "text": "214 mm"
+        },
+        {
+          "id": "d",
+          "text": "240 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "250 mm = L/24, which is for one-end-continuous slabs.",
+        "b": "300 mm = L/20, which is for simply supported slabs.",
+        "d": "240 mm = L/25, which is not a standard NSCP ratio.",
+        "correct": "For both-ends-continuous one-way solid slabs, NSCP Table 9.5.1 specifies minimum thickness = L/28. For 6 m span: 6000/28 ≈ 214 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 9.5.1 (One-Way Slab — Both Ends Continuous)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:28f2c6e66b49f6afe154cfad38d9bb42fdeb876fb43b4cf183affabd90933db8"
+    },
+    {
+      "question_id": "0ec1aafb-068f-4811-914d-f028558b6227",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "Compare minimum thickness requirements for a simply supported element: one-way solid slab vs. ribbed beam, both with 6 m span and Grade 60 steel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Slab L/20 = 300 mm; Beam L/16 = 375 mm (beam thicker)"
+        },
+        {
+          "id": "b",
+          "text": "Slab L/20 = 300 mm; Beam L/20 = 300 mm (same thickness)"
+        },
+        {
+          "id": "c",
+          "text": "Slab L/16 = 375 mm; Beam L/20 = 300 mm (slab thicker)"
+        },
+        {
+          "id": "d",
+          "text": "Slab L/28 = 214 mm; Beam L/8 = 750 mm (beam thicker)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Solid slab and ribbed beam do NOT use the same ratio.",
+        "c": "Reverses the values; slab is L/20 (300 mm), not L/16.",
+        "d": "Confuses cantilever ratios (L/10 for slab, L/8 for beam) with simply supported.",
+        "correct": "Simply supported solid slab = L/20 (6000/20 = 300 mm). Simply supported ribbed beam = L/16 (6000/16 = 375 mm). Beams require more stiffness because they carry concentrated loads; slabs are more efficient for distributed loads (NSCP Table 9.5.1).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 9.5.1 (Slab vs. Ribbed Beam)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:97fbcde07f0bd239e65966eabe5244742cbcd8fe503d8397dbc2c80aa3469735"
+    },
+    {
+      "question_id": "94abda41-a060-4bbe-943a-2d981037bf9e",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "A one-way continuous ribbed (joist) slab is supported at both ends over a 7 m interior span. What is the minimum joist depth per NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "438 mm"
+        },
+        {
+          "id": "b",
+          "text": "378 mm"
+        },
+        {
+          "id": "c",
+          "text": "333 mm"
+        },
+        {
+          "id": "d",
+          "text": "875 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "438 mm = L/16, which is for simply supported ribbed slabs.",
+        "b": "378 mm = L/18.5, which is for one-end-continuous ribbed slabs.",
+        "d": "875 mm = L/8, which is for cantilever ribbed slabs.",
+        "correct": "For both-ends-continuous ribbed/joist slabs, NSCP Table 9.5.1 specifies minimum depth = L/21. For 7 m span: 7000/21 ≈ 333 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 9.5.1 (Ribbed Slab — Both Ends Continuous)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8d0f412bc60b68abbd055b4f0ad16d6e8d07fa65e9ea10499d82ffe4115183b5"
+    },
+    {
+      "question_id": "d80bfbfb-532b-4cbe-83dd-742dd4e66ac3",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "A one-way solid slab with a 4 m simply supported span is initially designed at thickness = 200 mm per L/20 ratio. A code reviewer notes this is below minimum. What is the correct minimum thickness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 mm (correct per L/20)"
+        },
+        {
+          "id": "b",
+          "text": "160 mm (thinner than specified, not meeting the minimum thickness required for structural integrity)"
+        },
+        {
+          "id": "c",
+          "text": "250 mm (per L/16, more conservative, ensuring compliance with additional safety margins)"
+        },
+        {
+          "id": "d",
+          "text": "The reviewer is wrong; 200 mm satisfies L/20."
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "'a' correctly states 200 mm satisfies L/20; 'd' directly refutes the reviewer.",
+        "b": "160 mm would be too thin and non-compliant.",
+        "c": "L/16 is not applicable to solid slabs; it is for ribbed beams.",
+        "correct": "For a 4 m simply supported one-way solid slab, L/20 = 4000/20 = 200 mm exactly. The design is correct and meets NSCP Table 9.5.1. The reviewer's claim of non-compliance is incorrect; 200 mm IS the minimum (not 'below' it).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 9.5.1 (Minimum Thickness verification)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fccaad9c9582ec2e4fcb1ef4231f0c52a705c84fec17f5734709b04b89d1b48d"
+    },
+    {
+      "question_id": "68e4364f-84b2-4396-8a29-541ff0147809",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "A 6 m interior span uses a ribbed beam floor system. The structural design uses depth = 340 mm for deflection control. Is this compliant, and what is the minimum required depth per NSCP Table 9.5.1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant; 340 mm exceeds L/21 = 286 mm."
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant; minimum depth = 375 mm (L/16)."
+        },
+        {
+          "id": "c",
+          "text": "Compliant; 340 mm = L/17.6 (acceptable)."
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant; minimum depth = 324 mm, but 340 mm is acceptable as conservative."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "L/16 = 375 mm is for simply supported ribbed beams, not continuous.",
+        "c": "Alternative ratios (L/17.6) are not permitted; use the code ratio L/21.",
+        "d": "The statement is contradictory; the minimum is L/21 = 286 mm, not 324 mm.",
+        "correct": "For both-ends-continuous ribbed/beam system, NSCP Table 9.5.1 specifies L/21 = 6000/21 ≈ 286 mm. The proposed 340 mm exceeds 286 mm, so it is compliant. The margin of safety is 340 – 286 = 54 mm above minimum.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 9.5.1 (Ribbed Beam — Both Ends Continuous)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2f79ccb14fd9a917f27718870c47aab118bff5fd95d23afc85aae59ba7e8a876"
+    },
+    {
+      "question_id": "d37a4ca3-16c9-415f-bfaf-4e22292d6998",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "A ribbed (joist) slab cantilevers 3 meters from a support. What is the minimum joist depth required per NSCP deflection control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "375 mm"
+        },
+        {
+          "id": "b",
+          "text": "300 mm"
+        },
+        {
+          "id": "c",
+          "text": "200 mm"
+        },
+        {
+          "id": "d",
+          "text": "500 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "300 mm = L/10, which is for cantilever solid slabs (not ribbed).",
+        "c": "200 mm is too thin for a 3 m cantilever.",
+        "d": "500 mm = L/6, which is thicker than required.",
+        "correct": "For cantilever ribbed slabs, NSCP Table 9.5.1 specifies minimum depth = L/8. For 3 m cantilever: 3000/8 = 375 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 9.5.1 (Ribbed Slab — Cantilever)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7bc466d06cfa24e0dcc17079f7d9df0ec2baa9cd11a65a48c4bc1a48102f358c"
+    },
+    {
+      "question_id": "994be8d3-da40-4bef-adde-fa327cfe6cd1",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "An architect proposes a simply supported one-way solid slab at 225 mm thickness for a 5 m span. Is this compliant with NSCP deflection control? If not, what is the required minimum thickness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant; 225 mm > L/20 minimum, ensuring adequate structural performance"
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant; minimum thickness = 250 mm (L/20 for 5 m)."
+        },
+        {
+          "id": "c",
+          "text": "Compliant; 225 mm = L/22.2 (acceptable alternative), which meets the deflection criteria"
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant; minimum thickness = 300 mm (L/16.7), necessary for heavier loads"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "225 mm < 250 mm, so it is non-compliant.",
+        "c": "Alternative ratios (L/22.2) are not permitted; code specifies the discrete value L/20.",
+        "d": "L/16.7 is not a code ratio for simply supported slabs.",
+        "correct": "For simply supported one-way solid slab, L/20 = 5000/20 = 250 mm. The proposed 225 mm is below this minimum and is non-compliant. The slab must be increased to 250 mm or greater to control deflection per NSCP.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 9.5.1 (Simply Supported Slab minimum)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:03a240bb9fca4255e7483942028566f5e93646f860f8fea6f4e912c2e4194efe"
+    },
+    {
+      "question_id": "d7192cdc-b9bb-4e30-b920-43d70262b701",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "A slab is one-way, solid, and one end is continuous to an adjacent span while the other end is simply supported. Which minimum thickness ratio applies per NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L/20 (simply supported ratio)"
+        },
+        {
+          "id": "b",
+          "text": "L/24 (one end continuous ratio)"
+        },
+        {
+          "id": "c",
+          "text": "L/28 (both ends continuous ratio)"
+        },
+        {
+          "id": "d",
+          "text": "L/25 (average of ratios)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "L/20 applies only when both ends are free (simply supported).",
+        "c": "L/28 applies only when both ends are continuous.",
+        "d": "Averaging ratios is not the code method; code specifies discrete support conditions.",
+        "correct": "When one end is continuous and one end is free (simply supported), NSCP Table 9.5.1 classifies this as 'one end continuous' and requires minimum thickness = L/24 (intermediate between simply supported L/20 and both ends L/28).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 9.5.1 (One-Way Slab — One End Continuous)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:97692d437e2f2efd0a245ce36ddd67dd8866222a89c2f6c6af4af0c0752a23e6"
+    },
+    {
+      "question_id": "f88b1cee-f81c-4809-b056-b2ab90d425e9",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic_id": "fa4a7b76-2e94-46e2-90b7-136a8a450618",
+      "text": "A cantilever balcony slab (one-way solid, Grade 60) extends 2.5 meters from the face of the building. What is the minimum thickness required by NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "250 mm"
+        },
+        {
+          "id": "b",
+          "text": "200 mm"
+        },
+        {
+          "id": "c",
+          "text": "150 mm"
+        },
+        {
+          "id": "d",
+          "text": "300 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "200 mm = L/12.5, which is less stiff than required.",
+        "c": "150 mm = L/16.7, which is even thinner and unsafe for cantilevered elements.",
+        "d": "300 mm = L/8.3, which is thicker than required (but acceptable as conservative design).",
+        "correct": "For cantilever one-way solid slabs, NSCP Table 9.5.1 specifies minimum thickness = L/10. For 2.5 m cantilever: 2500/10 = 250 mm. Cantilevers must be very stiff to limit deflection at the free end.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Table 9.5.1 (One-Way Slab — Cantilever)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e22696451c9d0ae2e9f53687035e0e4ec4841b4fff0ec3ca6ff7be1c987901c3"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+  "slug": "lea-dsgn-007-04-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.777Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:8e2d3a603cca8e99710016bd0a09ffbab1f3cc3facc97741beed9dd35077bc2e",
+  "normalized_content_hash": "8e2d3a603cca8e99710016bd0a09ffbab1f3cc3facc97741beed9dd35077bc2e",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "RevealBlock",
+      "raw": "<RevealBlock prompt=\"Can you recall the correct sequence of the 5 design phases?\">\n\n**Design Phase Sequencing:**\nPre-Design \u2192 Schematic Design \u2192 Design Development \u2192 Construction Documents \u2192 Construction Administration\n\n**Deliverable Progression:**\nEach phase builds on previous work. Schematic establishes direction; Design Development adds technical depth; Construction Documents provide buildable detail. Phases are sequential but may overlap.\n\n</RevealBlock>",
+      "raw_hash": "sha256:94467427d346b126ba32601b2b0654728fd1ec77c97b0971d8d3687b7e36c347",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"RevealBlock\" status=\"preserved\"]\nExtracted summary:\n- Props: prompt=\"Can you recall the correct sequence of the 5 design phases?\"\n- Text: **Design Phase Sequencing:** Pre-Design \u2192 Schematic Design \u2192 Design Development \u2192 Construction Documents \u2192 Construction Administration **Deliverable Progression:** Each phase builds on previous work. Schematic establishes direction; Design Development adds technical depth; Construction Documents provide buildable detail. Phases are sequential but may overlap.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a5ab867fa7c66618cd42123561531b02a510af4469f1fe6b36f92d035b3c8910",
+      "props": {
+        "prompt": "Can you recall the correct sequence of the 5 design phases?"
+      },
+      "props_json": {
+        "prompt": "Can you recall the correct sequence of the 5 design phases?"
+      },
+      "props_text": "prompt=\"Can you recall the correct sequence of the 5 design phases?\"",
+      "children_raw": "\n\n**Design Phase Sequencing:**\nPre-Design \u2192 Schematic Design \u2192 Design Development \u2192 Construction Documents \u2192 Construction Administration\n\n**Deliverable Progression:**\nEach phase builds on previous work. Schematic establishes direction; Design Development adds technical depth; Construction Documents provide buildable detail. Phases are sequential but may overlap.\n\n",
+      "children_text": "**Design Phase Sequencing:** Pre-Design \u2192 Schematic Design \u2192 Design Development \u2192 Construction Documents \u2192 Construction Administration **Deliverable Progression:** Each phase builds on previous work. Schematic establishes direction; Design Development adds technical depth; Construction Documents provide buildable detail. Phases are sequential but may overlap.",
+      "start_offset": 3697,
+      "end_offset": 4159,
+      "line_start": 34,
+      "line_end": 42,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "RevealBlock",
+      "raw": "<RevealBlock prompt=\"What is the architect's role during Construction Administration?\" label=\"Drag to reveal the answer\">\n\nThe architect provides **site observations** to verify that construction complies with documents, **reviews submittals** (shop drawings, material samples), **certifies progress** for payment, and **addresses field changes**. The architect does **not** supervise construction \u2014 the role is observation and verification only.\n\n</RevealBlock>",
+      "raw_hash": "sha256:f29e2e0a3780cf1761a216356956fc001e1d64a37a558011dfea724195ad8d74",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"RevealBlock\" status=\"preserved\"]\nExtracted summary:\n- Props: prompt=\"What is the architect's role during Construction Administration?\", label=\"Drag to reveal the answer\"\n- Text: The architect provides **site observations** to verify that construction complies with documents, **reviews submittals** (shop drawings, material samples), **certifies progress** for payment, and **addresses field changes**. The architect does **not** supervise construction \u2014 the role is observation and verification only.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ee3883124de2c2372375c6dbb57d051ca2984d50b782f3371583f62797f49e1f",
+      "props": {
+        "prompt": "What is the architect's role during Construction Administration?",
+        "label": "Drag to reveal the answer"
+      },
+      "props_json": {
+        "prompt": "What is the architect's role during Construction Administration?",
+        "label": "Drag to reveal the answer"
+      },
+      "props_text": "prompt=\"What is the architect's role during Construction Administration?\" label=\"Drag to reveal the answer\"",
+      "children_raw": "\n\nThe architect provides **site observations** to verify that construction complies with documents, **reviews submittals** (shop drawings, material samples), **certifies progress** for payment, and **addresses field changes**. The architect does **not** supervise construction \u2014 the role is observation and verification only.\n\n",
+      "children_text": "The architect provides **site observations** to verify that construction complies with documents, **reviews submittals** (shop drawings, material samples), **certifies progress** for payment, and **addresses field changes**. The architect does **not** supervise construction \u2014 the role is observation and verification only.",
+      "start_offset": 4161,
+      "end_offset": 4623,
+      "line_start": 44,
+      "line_end": 48,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Five phases: Pre-Design (problem definition), Schematic (concepts), Design Dev (systems), Constr Docs (buildable specs), Constr Admin (verification). Each builds on the previous. Deliverables increase in detail and precision with each phase.</Tip>",
+      "raw_hash": "sha256:4502a46d6ce4e6a64cfbddf9f55d8256c6055aefa4526ef9663e8a3b375122ac",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Five phases: Pre-Design (problem definition), Schematic (concepts), Design Dev (systems), Constr Docs (buildable specs), Constr Admin (verification). Each builds on the previous. Deliverables increase in detail and precision with each phase.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a3b5cba1ea5be06c44db9790eb4f0499dcbf68b1b5bfb21f060169db99c8ff5c",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Five phases: Pre-Design (problem definition), Schematic (concepts), Design Dev (systems), Constr Docs (buildable specs), Constr Admin (verification). Each builds on the previous. Deliverables increase in detail and precision with each phase.",
+      "children_text": "Five phases: Pre-Design (problem definition), Schematic (concepts), Design Dev (systems), Constr Docs (buildable specs), Constr Admin (verification). Each builds on the previous. Deliverables increase in detail and precision with each phase.",
+      "start_offset": 6418,
+      "end_offset": 6670,
+      "line_start": 62,
+      "line_end": 62,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing Schematic Design (exploratory concepts) with Design Development (engineered solutions)\",\"Assuming Construction Documents are complete after Schematic phase (they require Design Dev and detailed engineering)\",\"Treating Construction Administration as the architect directing/supervising construction (it is observation and verification only)\",\"Omitting Pre-Design phase or combining it with Schematic (Pre-Design establishes the problem; Schematic solves it)\",\"Failing to coordinate with consultants during Design Development (MEP, structural, fire protection must be integrated)\",\"Underestimating time for Construction Documents phase; it typically requires 8\u201312 weeks for coordination and completeness\",\"Assuming design is 'complete' at Schematic phase when cost estimates and feasibility verification are still pending\",\"Neglecting the program statement as a deliverable in Pre-Design (it defines project scope and constraints)\",\"Confusing design phases with construction phases (Construction Administration is last design phase; construction continues independently)\",\"Failing to recognize that Construction Documents must be 'complete and sufficient' for bidding (incompleteness extends bidding period or creates field changes)\"]} />",
+      "raw_hash": "sha256:e9531a5c3cc144581ab988b67b30efb115fb386e96efa1e50b1a1c9c48c3b40a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing Schematic Design (exploratory concepts) with Design Development (engineered solutions)\\\",\\\"Assuming Construction Documents are complete after Schematic phase (they require Design Dev and detailed engineering)\\\",\\\"Treating Construction Administration as the architect directing/supervising construction (it is observation and verification only)\\\",\\\"Omitting Pre-Design phase or combining it with Schematic (Pre-Design establishes the problem; Schematic solves it)\\\",\\\"Failing to coordinate with consultants during Design Development (MEP, structural, fire protection must be integrated)\\\",\\\"Underestimating time for Construction Documents phase; it typically requires 8\u201312 weeks for coordination and completeness\\\",\\\"Assuming design is 'complete' at Schematic phase when cost estimates and feasibility verification are still pending\\\",\\\"Neglecting the program statement as a deliverable in Pre-Design (it defines project scope and constraints)\\\",\\\"Confusing design phases with construction phases (Construction Administration is last design phase; construction continues independently)\\\",\\\"Failing to recognize that Construction Documents must be 'complete and sufficient' for bidding (incompleteness extends bidding period or creates field changes)\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:cae9fc478ba870fd9531e49e9b10d640e01bf473b46b8ebf8e6f686c2cb24e5c",
+      "props": {
+        "mistakes": "{[\"Confusing Schematic Design (exploratory concepts) with Design Development (engineered solutions)\",\"Assuming Construction Documents are complete after Schematic phase (they require Design Dev and detailed engineering)\",\"Treating Construction Administration as the architect directing/supervising construction (it is observation and verification only)\",\"Omitting Pre-Design phase or combining it with Schematic (Pre-Design establishes the problem; Schematic solves it)\",\"Failing to coordinate with consultants during Design Development (MEP, structural, fire protection must be integrated)\",\"Underestimating time for Construction Documents phase; it typically requires 8\u201312 weeks for coordination and completeness\",\"Assuming design is 'complete' at Schematic phase when cost estimates and feasibility verification are still pending\",\"Neglecting the program statement as a deliverable in Pre-Design (it defines project scope and constraints)\",\"Confusing design phases with construction phases (Construction Administration is last design phase; construction continues independently)\",\"Failing to recognize that Construction Documents must be 'complete and sufficient' for bidding (incompleteness extends bidding period or creates field changes)\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Confusing Schematic Design (exploratory concepts) with Design Development (engineered solutions)\",\"Assuming Construction Documents are complete after Schematic phase (they require Design Dev and detailed engineering)\",\"Treating Construction Administration as the architect directing/supervising construction (it is observation and verification only)\",\"Omitting Pre-Design phase or combining it with Schematic (Pre-Design establishes the problem; Schematic solves it)\",\"Failing to coordinate with consultants during Design Development (MEP, structural, fire protection must be integrated)\",\"Underestimating time for Construction Documents phase; it typically requires 8\u201312 weeks for coordination and completeness\",\"Assuming design is 'complete' at Schematic phase when cost estimates and feasibility verification are still pending\",\"Neglecting the program statement as a deliverable in Pre-Design (it defines project scope and constraints)\",\"Confusing design phases with construction phases (Construction Administration is last design phase; construction continues independently)\",\"Failing to recognize that Construction Documents must be 'complete and sufficient' for bidding (incompleteness extends bidding period or creates field changes)\"]}"
+      },
+      "props_text": "mistakes={[\"Confusing Schematic Design (exploratory concepts) with Design Development (engineered solutions)\",\"Assuming Construction Documents are complete after Schematic phase (they require Design Dev and detailed engineering)\",\"Treating Construction Administration as the architect directing/supervising construction (it is observation and verification only)\",\"Omitting Pre-Design phase or combining it with Schematic (Pre-Design establishes the problem; Schematic solves it)\",\"Failing to coordinate with consultants during Design Development (MEP, structural, fire protection must be integrated)\",\"Underestimating time for Construction Documents phase; it typically requires 8\u201312 weeks for coordination and completeness\",\"Assuming design is 'complete' at Schematic phase when cost estimates and feasibility verification are still pending\",\"Neglecting the program statement as a deliverable in Pre-Design (it defines project scope and constraints)\",\"Confusing design phases with construction phases (Construction Administration is last design phase; construction continues independently)\",\"Failing to recognize that Construction Documents must be 'complete and sufficient' for bidding (incompleteness extends bidding period or creates field changes)\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6692,
+      "end_offset": 7967,
+      "line_start": 66,
+      "line_end": 66,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:a0f9239af71aa249389a56b6b55601a59dc797cf337842da6616bf4aa792bb74"
+}

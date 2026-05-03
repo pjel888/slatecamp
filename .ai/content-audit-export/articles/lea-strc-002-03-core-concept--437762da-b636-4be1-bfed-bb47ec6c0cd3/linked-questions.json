@@ -1,0 +1,508 @@
+{
+  "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4efa4a7d5b1c738802713a83c0b8647558350c031dae9236599aa6b65164523f",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2d65e34f-dedd-407a-a89b-1e3389e44e4c",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "In a concrete SMRF, what is the purpose of confining transverse reinforcement in columns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To increase the axial strength of the column for gravity loads, ensuring stability under vertical forces"
+        },
+        {
+          "id": "b",
+          "text": "To prevent lateral buckling of longitudinal bars and confine concrete, ensuring ductile behavior during inelastic deformation in seismic events"
+        },
+        {
+          "id": "c",
+          "text": "To reduce the cost of reinforcement, optimizing the budget for construction without compromising safety"
+        },
+        {
+          "id": "d",
+          "text": "To comply with architectural requirements for appearance, maintaining aesthetic consistency with the overall design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In SMRF, confining transverse reinforcement (ties, spirals) restrains the concrete core and prevents buckling of longitudinal bars during inelastic deformation. This ensures ductile (safe) failure, critical for SMRF to achieve R = 8.0.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 418 (Concrete MRF)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4d1e3194070d36e16c86180a5a755787ceee35065f3f9f72acd2e6cbce58718e"
+    },
+    {
+      "question_id": "d0902cc0-0d58-4ac3-89b6-4685716fc74e",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "Why does SMRF require more stringent detailing than OMRF?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SMRF is stronger and must prevent all inelastic deformation, ensuring structural integrity under all conditions"
+        },
+        {
+          "id": "b",
+          "text": "SMRF is designed to undergo controlled inelastic deformation with energy dissipation; stringent detailing ensures ductile (safe) failure modes and confines reinforcement"
+        },
+        {
+          "id": "c",
+          "text": "SMRF detailing is more expensive, so it requires more details to justify the cost, including additional reinforcement and connections"
+        },
+        {
+          "id": "d",
+          "text": "SMRF and OMRF detailing are identical; the only difference is the R factor, which affects the seismic response"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "SMRF is designed to allow inelastic deformation (large displacements). Stringent detailing (full-penetration welds, confinement reinforcement, plastic hinge details) ensures that when the frame yields, it does so in a controlled, ductile manner without brittle failure.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 408, 418",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59aa3e29a1ad6ac39b7cc4e9b01fc8649537a1ae1e192277f35956ef8245bbac"
+    },
+    {
+      "question_id": "0c30c79b-1f77-4c07-9eb0-6e12929805ab",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "What is the critical design difference between IMRF (R = 5.5) and SMRF (R = 8.0)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IMRF and SMRF are identical; R is the only difference, which affects the seismic response modification factor"
+        },
+        {
+          "id": "b",
+          "text": "SMRF requires full-penetration welds at beam-column connections and extensive confinement reinforcement; IMRF connections can be more conventional"
+        },
+        {
+          "id": "c",
+          "text": "IMRF is used only in steel; SMRF is used only in concrete, reflecting material-specific design strategies"
+        },
+        {
+          "id": "d",
+          "text": "SMRF is only for very tall buildings; IMRF is for all mid-rise buildings, based on height and structural requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "SMRF requires extensive seismic detailing: full-penetration welds (steel), plastic hinge zones in beams, and confined transverse reinforcement in concrete columns. IMRF has intermediate detailing with some reinforcement but not the full SMRF package.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 408, 418",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6db171a7044f478134be0f56cb4cfc200a7dbbaee2b88d45a026817012ff22a1"
+    },
+    {
+      "question_id": "f58b8ffc-7feb-4e41-a632-e7bc957e2e94",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "A designer proposes using an OMRF (R = 3.5) for a 6-story residential building in Seismic Zone 2. What is the primary code concern with this proposal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OMRF is too stiff and will damage the building foundation, leading to potential structural failures"
+        },
+        {
+          "id": "b",
+          "text": "OMRF has limited ductility and detailing; it does not meet NSCP requirements for Zone 2, which mandate SMRF for moment-resisting frame systems"
+        },
+        {
+          "id": "c",
+          "text": "OMRF is only allowed in buildings shorter than 4 stories, according to current building codes"
+        },
+        {
+          "id": "d",
+          "text": "OMRF would be acceptable if the building owner accepts liability, transferring risk from the designer"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "NSCP explicitly requires SMRF (R = 8.0) for moment-resisting frame systems in Seismic Zone 2. OMRF (R = 3.5) lacks the stringent detailing and ductility needed for safe performance in the most severe seismic zone. Accepting OMRF would violate building code.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 408, 418; Section 202 (Seismic Zone 2)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4bbd53013e4de5713d279a7c29b0765c3d69e4b85487ebe3acf34b1b7353b44d"
+    },
+    {
+      "question_id": "15f6a22b-ffba-487c-9b5c-ae66483bbfd0",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "Which moment-resisting frame type is appropriate for Seismic Zone 2 in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OMRF (R = 3.5)"
+        },
+        {
+          "id": "b",
+          "text": "IMRF (R = 5.5)"
+        },
+        {
+          "id": "c",
+          "text": "SMRF (R = 8.0)"
+        },
+        {
+          "id": "d",
+          "text": "Any of the three, depending on building height"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Seismic Zone 2 is a high-seismic-hazard zone in the Philippines. SMRF is required by NSCP for moment-resisting frame systems in Zone 2 (and Zones 3 and 4). Zone 4 is the most severe seismic zone.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 408, 418; Section 202 (Zone 2 definition)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9862af15f3b8da3821b3b298e28f87d1a0810f5398defbf1f23c7c7ee2ce04ae"
+    },
+    {
+      "question_id": "cd5bca5b-903c-49a6-8fbe-306aede1180d",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "What does the R factor represent in seismic frame design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A safety factor that multiplies the design force, ensuring structural integrity under seismic loads"
+        },
+        {
+          "id": "b",
+          "text": "A reduction factor that allows the design force to be reduced from elastic demand because the frame can deform inelastically and dissipate energy"
+        },
+        {
+          "id": "c",
+          "text": "A factor that increases the strength of the frame, providing additional support during seismic events"
+        },
+        {
+          "id": "d",
+          "text": "A factor that measures the rigidity of beam-column connections, which is crucial for maintaining structural stability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The R factor is a **reduction** factor. Higher R means the design force can be smaller (divided by R) because the structure is allowed to yield and dissipate energy through inelastic deformation. R reflects ductility, not strength or safety.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "ASCE 7 Section 12.2; NSCP Seismic Design provisions",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:104d010ce8cfcebee62ffd6146646890f3f2f4acff517296c577d39f559b554c"
+    },
+    {
+      "question_id": "1d26ad96-457e-4b01-9b44-4e798537169c",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "What is the seismic response modification factor (R factor) for a Special Moment-Resisting Frame (SMRF)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R = 3.5"
+        },
+        {
+          "id": "b",
+          "text": "R = 5.5"
+        },
+        {
+          "id": "c",
+          "text": "R = 8.0"
+        },
+        {
+          "id": "d",
+          "text": "R = 10.0"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "SMRF (Special Moment-Resisting Frame) has R = 8.0 per NSCP Section 408/418 and ASCE 7. This high R reflects extensive seismic detailing and ductility.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 408 (Steel MRF) or Section 418 (Concrete MRF); ASCE 7 Table 12.2-1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aab5b23aa29178c45fe73859ec1d26c5925436a0468cbf5d54ff301a2b409182"
+    },
+    {
+      "question_id": "cc07a1a8-b437-48bc-aaa9-c05dbbbc142b",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "How do full-penetration welds at beam-column connections in SMRF contribute to the frame's R factor of 8.0?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Full-penetration welds are cheaper than bolted connections, which can be a consideration in cost-sensitive projects but not in structural performance"
+        },
+        {
+          "id": "b",
+          "text": "Full-penetration welds ensure moment transfer without early fracture, enabling the frame to undergo controlled inelastic deformation and energy dissipation, justifying R = 8.0"
+        },
+        {
+          "id": "c",
+          "text": "Full-penetration welds increase the frame stiffness, which is a factor in overall structural integrity but not directly related to the R factor"
+        },
+        {
+          "id": "d",
+          "text": "Full-penetration welds are only aesthetic and do not affect structural performance, which is a misconception in structural engineering"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Full-penetration welds create a robust connection that can transmit moment and rotate inelastically without fracturing. This ductility is essential—SMRF R = 8.0 depends on the frame yielding in a controlled manner. Weak connections would fail prematurely, voiding the high R assumption.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 408 (Steel MRF)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:779914878d23bbfd927065e4e7b1be393481d3c5586118964446e3c4616d5795"
+    },
+    {
+      "question_id": "7c7a5a3e-b25b-4358-af5c-017d120da2e2",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "Given that a moment frame in a Seismic Zone 2 building is designed with R = 8.0, what design assumption must be valid for the building to perform safely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The frame will remain elastic (no yielding) under the design earthquake, maintaining full structural integrity without deformation"
+        },
+        {
+          "id": "b",
+          "text": "The frame will yield and undergo inelastic deformation in a controlled, ductile manner, dissipating energy without brittle failure or collapse"
+        },
+        {
+          "id": "c",
+          "text": "The frame will not deform at all under seismic loading because the R factor guarantees complete rigidity"
+        },
+        {
+          "id": "d",
+          "text": "The frame strength will always exceed lateral forces so that no energy dissipation mechanism is required"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "R = 8.0 inherently assumes the frame **will** yield and deform inelastically, but in a ductile manner. The frame is designed to absorb seismic energy through plastic deformation, not to remain elastic. If the frame cannot yield safely (due to poor detailing), R = 8.0 is not valid.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 408, 418; ASCE 7",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c91221b434b92f8cdbf90fe5503848447d72b53b5abfc1aaccb65265de8eceb"
+    },
+    {
+      "question_id": "d3043c2b-5fdd-49f4-989a-8cabbcefb6cf",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
+      "text": "An 8-story office building in Seismic Zone 2 uses a moment-resisting frame system. What is the maximum R factor allowed, and what does this permit the designer to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R = 5.5; design forces can be reduced to 1/5.5 of the elastic demand, which is typical for moderate seismic zones"
+        },
+        {
+          "id": "b",
+          "text": "R = 8.0; SMRF detailing is required, and design forces can be reduced to 1/8 of the elastic demand"
+        },
+        {
+          "id": "c",
+          "text": "R = 3.5; OMRF is always used regardless of zone, which simplifies design considerations"
+        },
+        {
+          "id": "d",
+          "text": "R = 10.0 for tall buildings in Zone 2, allowing for significant reduction in design forces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Zone 2 requires SMRF with R = 8.0. This means design forces are reduced to 1/8 of the elastic seismic demand, provided the frame meets SMRF detailing requirements (full-penetration welds, confined reinforcement, controlled plastic hinges).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 408, 418; ASCE 7",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:490f6a85955f0eb490af05c0fc87571aa439f33580bcb588503da1f9b561e371"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "question_id": "d926901d-e273-4e49-91af-5cf49525b7ba",
+  "baseline_hash": "sha256:8c538b2cc22f9b8b0d1b6b38e26fb12790075e439df357b5fe09cad4cfa2d47b",
+  "reason": "WRONG ANSWER KEY: correct_option_id was 'b' (m\u00b2\u00b7K/W = R-value units). W/(m\u00b7K) is the correct unit for thermal conductivity (k-value). Also added missing rationale entry for option 'a'.",
+  "approved_by": "hermes-question-audit",
+  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "proposed": {
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "W/(m\u00b7K) is the correct SI unit for thermal conductivity (k-value), representing heat flow per unit length per degree of temperature difference.",
+      "b": "m\u00b2\u00b7K/W is R-value (thermal resistance), which depends on thickness \u2014 not thermal conductivity.",
+      "c": "Btu\u00b7in/(hr\u00b7ft\u00b2\u00b7\u00b0F) is imperial k-value; correct units but less commonly used in metric regions.",
+      "d": "Degrees per watt is not a recognized unit for thermal conductivity.",
+      "correct": "k-value is thermal conductivity in W/(m\u00b7K) per ASTM C518; it describes material's ability to conduct heat, independent of thickness.",
+      "takeaway": "k = thermal conductivity (material property, independent of thickness). R = thermal resistance (depends on thickness and k)."
+    }
+  }
+}

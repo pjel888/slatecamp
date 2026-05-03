@@ -1,0 +1,508 @@
+{
+  "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:8319dcff0c429adf89a03ef8d02e17eff7ccff856a9d9a1df626bc3d8390150f",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "8921948b-059c-40a5-97db-7ed85f187d27",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "An architect is selecting between Design-Build by Administration and Design-Build with GMC for a civic center project. Which model would be most appropriate if the client's highest priority is cost certainty?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design-Build by Administration, as it provides greater budget flexibility"
+        },
+        {
+          "id": "b",
+          "text": "Design-Build by Administration, as the architect assumes greater risk"
+        },
+        {
+          "id": "c",
+          "text": "Design-Build with Guaranteed Maximum Cost, as it provides explicit cost predictability"
+        },
+        {
+          "id": "d",
+          "text": "Neither model provides cost certainty; the client should use Design-Bid-Build instead"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Administration does not provide cost guarantees.",
+        "b": "Risk allocation differs; GMC is designed for cost certainty.",
+        "d": "GMC provides the cost certainty sought in Design-Build.",
+        "correct": "Design-Build with GMC suits projects where cost certainty is paramount and the client requires protection from cost escalation through a guaranteed maximum. SPP 207.",
+        "takeaway": "GMC is chosen when cost certainty is critical."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d97362f4c645c8003bf4f0339cad6f4eaa697b23cae05dd9e4b4356acd22278a"
+    },
+    {
+      "question_id": "1091b598-2b60-465d-9903-afddb3a6615e",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "How does the architect's understanding of construction processes benefit Design-Build projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It allows the architect to eliminate construction managers, reducing project costs and streamlining operations"
+        },
+        {
+          "id": "b",
+          "text": "Understanding cost implications of design decisions and integration requirements enables effective collaboration between design and construction"
+        },
+        {
+          "id": "c",
+          "text": "It requires the architect to become a full-time construction worker, which is impractical and not within the typical scope of architectural practice"
+        },
+        {
+          "id": "d",
+          "text": "It eliminates the need for cost estimating, which can lead to budget overruns and financial mismanagement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Construction management expertise remains important.",
+        "c": "The architect's role is professional, not manual labor.",
+        "d": "Cost estimating remains essential.",
+        "correct": "The architect's understanding of construction processes, cost implications of design decisions, and integration requirements enables effective collaboration between design and construction activities in Design-Build. SPP 207.",
+        "takeaway": "Construction knowledge helps architect-contractor collaboration."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ec1919c9b7885957b9d87ddc7b38087716964273ea8503cab0b30f8b66a8f4f4"
+    },
+    {
+      "question_id": "1b10e05a-209c-4e21-a0d9-eab9d81d9d0f",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "What is the primary advantage of Design-Build Services over Design-Bid-Build?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design-Build eliminates the need for architects in construction management, which can reduce overall project costs"
+        },
+        {
+          "id": "b",
+          "text": "Design-Build simplifies and expedites project delivery while providing cost-effective solutions"
+        },
+        {
+          "id": "c",
+          "text": "Design-Build always costs less than traditional delivery methods, making it the preferred choice for budget-conscious clients"
+        },
+        {
+          "id": "d",
+          "text": "Design-Build eliminates the need for construction management expertise, streamlining the project team"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architects remain essential in Design-Build for design and coordination.",
+        "c": "Cost benefits derive from the integrated method, not guaranteed pricing.",
+        "d": "Construction management expertise is essential in Design-Build.",
+        "correct": "Design-Build simplifies and expedites project delivery while providing creative, cost-effective solutions by allowing design and construction to overlap, reducing overall schedule. SPP 207.",
+        "takeaway": "Design-Build expedites delivery through integration."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:02bf5f912125e61e285836dc03e9d28587398aa498c1766981e6c6b65df62a5a"
+    },
+    {
+      "question_id": "46c9f96e-a5e9-4261-b032-683418ae68c5",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "What fundamental shift does Design-Build represent in the relationship between architects and builders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects and builders become completely separate entities with no interaction, focusing solely on their respective areas of expertise"
+        },
+        {
+          "id": "b",
+          "text": "Both parties become adversaries competing for project resources, often leading to conflicts and inefficiencies"
+        },
+        {
+          "id": "c",
+          "text": "Partners in achieving optimal project outcomes rather than adversaries in traditional bidding scenarios"
+        },
+        {
+          "id": "d",
+          "text": "The architect gains complete authority over all construction decisions, including those typically reserved for builders"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Design-Build requires close collaboration.",
+        "b": "Partnership replaces the adversarial model.",
+        "d": "Decision-making is collaborative, not unilateral.",
+        "correct": "Design-Build represents an evolution positioning both architects and builders as partners in achieving optimal project outcomes rather than adversaries in traditional bidding scenarios, reflecting modern understanding that expertise must integrate. SPP 207.",
+        "takeaway": "Design-Build shifts to partnership, not competition."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bca45c62d1b1107a8dd7ddf3af67d90666acf01ac456bb1ea1ea11c99938bb6f"
+    },
+    {
+      "question_id": "7afe4c5a-9ef2-48e5-be76-180795d35cd0",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "How does Design-Build Services enable value optimization compared to traditional Design-Bid-Build?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design-Bid-Build cannot incorporate any value engineering, as it separates design and construction phases, limiting collaborative opportunities"
+        },
+        {
+          "id": "b",
+          "text": "Design-Build allows overlapping phases and early construction input during design, enabling value optimization"
+        },
+        {
+          "id": "c",
+          "text": "Value optimization is not possible in either delivery method, as both have inherent limitations that prevent full integration of cost-saving measures"
+        },
+        {
+          "id": "d",
+          "text": "Design-Bid-Build provides value optimization; Design-Build does not, due to its focus on speed over cost efficiency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Value engineering is possible in both methods but more seamless in DB.",
+        "c": "Value optimization is possible and important in both methods.",
+        "d": "Design-Build's integration particularly supports value optimization.",
+        "correct": "Design-Build allows design and construction to overlap, reducing schedule and enabling value optimization through early construction input and concurrent planning not possible in sequential Design-Bid-Build. SPP 207.",
+        "takeaway": "Overlap enables value engineering and optimization."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bf35878357bbf0accac9103da0bab29ebf90384b58c5850fcc5a5a1c9173b5c6"
+    },
+    {
+      "question_id": "1d41730f-e90c-48cd-9a8c-39e0728791a4",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "How are cost savings handled in Design-Build with Guaranteed Maximum Cost when actual costs remain below the estimate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All savings are retained by the architect"
+        },
+        {
+          "id": "b",
+          "text": "All savings go to the client"
+        },
+        {
+          "id": "c",
+          "text": "SAll savings revert to the client/owner"
+        },
+        {
+          "id": "d",
+          "text": "Savings are used to purchase new equipment for the contractor"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The client shares in the savings.",
+        "b": "The architect's incentive to optimize costs would be eliminated.",
+        "d": "Savings sharing is between owner and architect only.",
+        "correct": "When realized savings occur from estimated project construction cost, savings are divided equally between the client and the architect. This arrangement aligns both parties' interests toward cost efficiency. SPP 207.",
+        "takeaway": "Savings split equally aligns both parties' interests."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca0d598e92e25746b5c33483d0b3b07dc90171fa309ab101b4499822e26b4978"
+    },
+    {
+      "question_id": "24bb3d48-9f21-499e-9365-1148d1b275e0",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "What is the key difference between Design-Build by Administration and Design-Build with Guaranteed Maximum Cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are essentially the same service with different names, offering similar benefits and limitations"
+        },
+        {
+          "id": "b",
+          "text": "Administration provides all design services; GMC adds a guaranteed maximum cost guarantee"
+        },
+        {
+          "id": "c",
+          "text": "Administration is for small projects; GMC is only for large projects, reflecting the scale and complexity of the work"
+        },
+        {
+          "id": "d",
+          "text": "Administration includes construction; GMC does not, focusing solely on cost management and oversight"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "These are distinct models with different risk allocations.",
+        "c": "Both models apply across project sizes.",
+        "d": "Both models include construction services.",
+        "correct": "Design-Build by Administration provides comprehensive services without cost guarantee. Design-Build with Guaranteed Maximum Cost adds a critical distinction: the client receives a guaranteed maximum project construction cost. SPP 207.",
+        "takeaway": "GMC adds cost guarantee; Administration doesn't."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ba0003ebf7e222ddd0749a85335af64c747c87998d8e145fe8ac5fe7ec719aff"
+    },
+    {
+      "question_id": "d81c1164-dbc3-4bbf-8401-f00d7ef64e3e",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "What risk management strategy does the architect use when Design-Build costs exceed the guaranteed maximum plus ten percent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect bears the full cost of all overruns, regardless of the circumstances leading to the excess costs"
+        },
+        {
+          "id": "b",
+          "text": "The architect bears cost overruns up to the Guaranteed Maximum Cost (subject to change order provisions)"
+        },
+        {
+          "id": "c",
+          "text": "The client assumes all responsibility for overruns, including those due to unforeseen conditions or design changes"
+        },
+        {
+          "id": "d",
+          "text": "Cost overruns are split equally between architect and client, unless otherwise specified in the contract"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Liability is limited to the administration fee.",
+        "c": "The architect shares in overrun liability up to the fee amount.",
+        "d": "The split is not equal; the architect's liability is capped.",
+        "correct": "The architect bears liability for cost overruns only up to the amount of the administration fee. Additional expenditures beyond this threshold are not the architect's responsibility, particularly for legitimate change orders or escalation. SPP 207.",
+        "takeaway": "Architect liable only to administration fee amount."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc66b0d23b5b0039ca62f82ff89e2203f8aa1954600dd94b2909059b0888f33f"
+    },
+    {
+      "question_id": "a4890e45-fa0a-41ea-bf70-dadea274cd7c",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "In Design-Build by Administration, what role does the architect play in the construction management process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect oversees design only; construction is managed independently by the owner or a separate construction manager"
+        },
+        {
+          "id": "b",
+          "text": "The architect organizes and hires construction personnel, negotiates with contractors, procures materials, manages accounts and business transactions"
+        },
+        {
+          "id": "c",
+          "text": "The architect has no involvement in construction management and transfers all authority to the general contractor"
+        },
+        {
+          "id": "d",
+          "text": "The architect works only with the general contractor, not with subcontractors or material suppliers directly"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The architect's role extends directly into construction management.",
+        "c": "The architect assumes significant construction management responsibilities.",
+        "d": "The architect negotiates with multiple contractors and subcontractors.",
+        "correct": "In Design-Build by Administration, the architect organizes and hires construction personnel, negotiates with contractors, procures materials and equipment, maintains accounts, and manages all business transactions related to construction. SPP 207.",
+        "takeaway": "Administration places architect in construction management role."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:583aa8d83b5309ed719cd00ba0f9a023fc3a8fcb7af5d4139592c424ca696a43"
+    },
+    {
+      "question_id": "b0cf2014-96e7-4574-bc52-a7798e8a2415",
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "topic_id": "65f03cbc-6ec1-4ee6-af72-256545273c7f",
+      "text": "What professional responsibility does the architect assume in Design-Build Services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsibility only for design quality, not for construction execution"
+        },
+        {
+          "id": "b",
+          "text": "Professional responsibility and civil liability for both design and construction"
+        },
+        {
+          "id": "c",
+          "text": "Shared responsibility that is divided equally among architect, contractor, and client"
+        },
+        {
+          "id": "d",
+          "text": "No responsibility for construction; that belongs entirely to contractors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Responsibility extends to both design and construction.",
+        "c": "The architect bears primary responsibility in Design-Build.",
+        "d": "The architect maintains direct responsibility for construction execution.",
+        "correct": "In Design-Build Services, the architect assumes professional responsibility and civil liability for both the design and construction of the project, a comprehensive responsibility distinguishing it from Design-Bid-Build. SPP 207.",
+        "takeaway": "Architect responsible for design AND construction."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 207",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-019-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e7efa7d382679519ebac1e890d91e2de3bca99169b88ef248148b25ebe1fba46"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+  "slug": "lea-matl-006-01-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.291Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:b2490bbdebeab7ce9760e7d02e303120524b6f69e1c1260163b74a41f5abff7f",
+  "normalized_content_hash": "e86de51a5ecc7259887188af86c19b7b9c414a71fec113b3200f96051a784cd6",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memorize gauge-to-thickness pairs: Gauge 26 = 0.46 mm, Gauge 24 = 0.61 mm, Gauge 22 = 0.76 mm. Remember ASTM A653 G90 = Z275 metric equivleant. In tropical zones, default to G90 unless project budget forces G60.</Tip>",
+      "raw_hash": "sha256:8ba51a04702d223edb0bab29b5509726a72a122ad1f7b915aaab998f4ab6ef1b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memorize gauge-to-thickness pairs: Gauge 26 = 0.46 mm, Gauge 24 = 0.61 mm, Gauge 22 = 0.76 mm. Remember ASTM A653 G90 = Z275 metric equivleant. In tropical zones, default to G90 unless project budget forces G60.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d1850e80a96e39fbaab82352fcd68d2269e662a081f3a0e6ca4886c41eaef853",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memorize gauge-to-thickness pairs: Gauge 26 = 0.46 mm, Gauge 24 = 0.61 mm, Gauge 22 = 0.76 mm. Remember ASTM A653 G90 = Z275 metric equivleant. In tropical zones, default to G90 unless project budget forces G60.",
+      "children_text": "Memorize gauge-to-thickness pairs: Gauge 26 = 0.46 mm, Gauge 24 = 0.61 mm, Gauge 22 = 0.76 mm. Remember ASTM A653 G90 = Z275 metric equivleant. In tropical zones, default to G90 unless project budget forces G60.",
+      "start_offset": 4956,
+      "end_offset": 5178,
+      "line_start": 40,
+      "line_end": 40,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Confusing gauge numbers with thickness: assuming Gauge 30 is thicker than Gauge 26.\" correction=\"Lower gauge numbers indicate thicker material. Gauge 26 (0.46 mm) is standard; Gauge 30 (0.31 mm) is thinner and not used for primary roofing in Philippines.\" />",
+      "raw_hash": "sha256:57fd8621c39c3f2a56f0c2a130f48e89161112f1773c3fc4d8e09a8edf89c5ce",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Confusing gauge numbers with thickness: assuming Gauge 30 is thicker than Gauge 26.\", correction=\"Lower gauge numbers indicate thicker material. Gauge 26 (0.46 mm) is standard; Gauge 30 (0.31 mm) is thinner and not used for primary roofing in Philippines.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a0b4ad54500c8e9a5f32366c2e71ee3ba6604cda151164762534a8c1b435fd0a",
+      "props": {
+        "mistake": "Confusing gauge numbers with thickness: assuming Gauge 30 is thicker than Gauge 26.",
+        "correction": "Lower gauge numbers indicate thicker material. Gauge 26 (0.46 mm) is standard; Gauge 30 (0.31 mm) is thinner and not used for primary roofing in Philippines."
+      },
+      "props_json": {
+        "mistake": "Confusing gauge numbers with thickness: assuming Gauge 30 is thicker than Gauge 26.",
+        "correction": "Lower gauge numbers indicate thicker material. Gauge 26 (0.46 mm) is standard; Gauge 30 (0.31 mm) is thinner and not used for primary roofing in Philippines."
+      },
+      "props_text": "mistake=\"Confusing gauge numbers with thickness: assuming Gauge 30 is thicker than Gauge 26.\" correction=\"Lower gauge numbers indicate thicker material. Gauge 26 (0.46 mm) is standard; Gauge 30 (0.31 mm) is thinner and not used for primary roofing in Philippines.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5200,
+      "end_offset": 5484,
+      "line_start": 44,
+      "line_end": 44,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Selecting G60 coating for coastal salt-air exposure without verification of project lifecycle costs.\" correction=\"G90 (275 g/m\u00b2) is mandatory for tropical maritime climates. G60 premature rust negates any first-cost savings over 20+ year service life.\" />",
+      "raw_hash": "sha256:156673363d2512fd7da35044a8a32e0dfc0871b9329a47d48c9ea63d336139e7",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Selecting G60 coating for coastal salt-air exposure without verification of project lifecycle costs.\", correction=\"G90 (275 g/m\u00b2) is mandatory for tropical maritime climates. G60 premature rust negates any first-cost savings over 20+ year service life.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:b5d4df749464dbad4cdad93c23c5c9f10b443cc542937f6ac52b2a7b3a605fa2",
+      "props": {
+        "mistake": "Selecting G60 coating for coastal salt-air exposure without verification of project lifecycle costs.",
+        "correction": "G90 (275 g/m\u00b2) is mandatory for tropical maritime climates. G60 premature rust negates any first-cost savings over 20+ year service life."
+      },
+      "props_json": {
+        "mistake": "Selecting G60 coating for coastal salt-air exposure without verification of project lifecycle costs.",
+        "correction": "G90 (275 g/m\u00b2) is mandatory for tropical maritime climates. G60 premature rust negates any first-cost savings over 20+ year service life."
+      },
+      "props_text": "mistake=\"Selecting G60 coating for coastal salt-air exposure without verification of project lifecycle costs.\" correction=\"G90 (275 g/m\u00b2) is mandatory for tropical maritime climates. G60 premature rust negates any first-cost savings over 20+ year service life.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5486,
+      "end_offset": 5767,
+      "line_start": 46,
+      "line_end": 46,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Using minimum slope of 1/4:12 for non-draining flat roofs without sump pumps\", \"Ignoring sheet overlap length (150 mm horizontal, 200 mm vertical) in slope calculations\", \"Applying asphalt shingle specs to tropical zones without 3-5 year lifecycle planning\"]} />",
+      "raw_hash": "sha256:3e2f3779c2130cce53f01ba2a4a064a1f8c981f7c9294bcf75d85809aa64daef",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Using minimum slope of 1/4:12 for non-draining flat roofs without sump pumps\\\", \\\"Ignoring sheet overlap length (150 mm horizontal, 200 mm vertical) in slope calculations\\\", \\\"Applying asphalt shingle specs to tropical zones without 3-5 year lifecycle planning\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:f0f3c47c5ed837bc8745bf8d88ab2ea8236cd5c2d76bdb0190ef604b760523fd",
+      "props": {
+        "mistakes": "{[\"Using minimum slope of 1/4:12 for non-draining flat roofs without sump pumps\", \"Ignoring sheet overlap length (150 mm horizontal, 200 mm vertical) in slope calculations\", \"Applying asphalt shingle specs to tropical zones without 3-5 year lifecycle planning\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Using minimum slope of 1/4:12 for non-draining flat roofs without sump pumps\", \"Ignoring sheet overlap length (150 mm horizontal, 200 mm vertical) in slope calculations\", \"Applying asphalt shingle specs to tropical zones without 3-5 year lifecycle planning\"]}"
+      },
+      "props_text": "mistakes={[\"Using minimum slope of 1/4:12 for non-draining flat roofs without sump pumps\", \"Ignoring sheet overlap length (150 mm horizontal, 200 mm vertical) in slope calculations\", \"Applying asphalt shingle specs to tropical zones without 3-5 year lifecycle planning\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5769,
+      "end_offset": 6060,
+      "line_start": 48,
+      "line_end": 48,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:d9b9cf43567a95923099e3d8ba7e9e6aa1a6ef4d9288db31fb859bc43dc54094"
+}

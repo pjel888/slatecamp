@@ -1,0 +1,63 @@
+{
+  "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+  "slug": "lea-dsgn-012-01-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.325Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:e914b01089f240b2b1246a56b623c7602afd526ec1abbcaf961e86ceaa11d507",
+  "normalized_content_hash": "e914b01089f240b2b1246a56b623c7602afd526ec1abbcaf961e86ceaa11d507",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\n**Memory aid:** \"E-W Orientation Rule\" \u2014 In tropical Philippines, orient buildings with long axis E-W (east-west). This minimizes harsh E and W sun, maximizes gentle N-S sun. Place primary views and living spaces on N or S facades. This is ERR-DSGN-035 territory\u2014incorrect orientation is a common exam error.\n</Tip>",
+      "raw_hash": "sha256:5011a9c678c3607a312becd3ce6956a5575b73b05599d7e9e67248cd77a87175",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory aid:** \"E-W Orientation Rule\" \u2014 In tropical Philippines, orient buildings with long axis E-W (east-west). This minimizes harsh E and W sun, maximizes gentle N-S sun. Place primary views and living spaces on N or S facades. This is ERR-DSGN-035 territory\u2014incorrect orientation is a common exam error.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:f6448a808ff7d95c56b119fbfee47ded44cfe15a35fc9e676b3ea66453723ac7",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n**Memory aid:** \"E-W Orientation Rule\" \u2014 In tropical Philippines, orient buildings with long axis E-W (east-west). This minimizes harsh E and W sun, maximizes gentle N-S sun. Place primary views and living spaces on N or S facades. This is ERR-DSGN-035 territory\u2014incorrect orientation is a common exam error.\n",
+      "children_text": "**Memory aid:** \"E-W Orientation Rule\" \u2014 In tropical Philippines, orient buildings with long axis E-W (east-west). This minimizes harsh E and W sun, maximizes gentle N-S sun. Place primary views and living spaces on N or S facades. This is ERR-DSGN-035 territory\u2014incorrect orientation is a common exam error.",
+      "start_offset": 7230,
+      "end_offset": 7551,
+      "line_start": 74,
+      "line_end": 76,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"ERR-DSGN-035: Orienting buildings with long axis N-S instead of E-W in tropical Philippines; always prioritize E-W orientation for energy efficiency.\",\"Misinterpreting contour lines as individual building levels rather than topographic data; contours show existing grades and slopes, not proposed floor levels.\",\"Calculating slope percentage incorrectly (using vertical only, or forgetting to convert percentage); always use slope % = (rise\u00f7run)\u00d7100.\",\"Placing noise-sensitive spaces (bedrooms, offices) near noise sources (streets, highways) without considering acoustic design or buffers.\",\"Ignoring utility locations and easements; utilities require clear access and cannot be built over.\",\"Failing to account for seasonal wind changes (NE in winter, SW in monsoon) in ventilation and facade design.\",\"Underestimating tree preservation value; existing large trees provide shade, stormwater absorption, and cost savings.\",\"Not analyzing view opportunities and sight lines; overlooking chances to frame desirable views or block undesirable ones.\",\"Assuming all sloping sites are unsuitable for building; slopes 0\u201315% are buildable and often provide design opportunities.\",\"Omitting flood risk analysis in low-lying or coastal areas; critical for site safety and code compliance.\"]} />",
+      "raw_hash": "sha256:4b802c55200d77e5b5d1a41099d16e08f0da79c3314d80567b299589ef038224",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"ERR-DSGN-035: Orienting buildings with long axis N-S instead of E-W in tropical Philippines; always prioritize E-W orientation for energy efficiency.\\\",\\\"Misinterpreting contour lines as individual building levels rather than topographic data; contours show existing grades and slopes, not proposed floor levels.\\\",\\\"Calculating slope percentage incorrectly (using vertical only, or forgetting to convert percentage); always use slope % = (rise\u00f7run)\u00d7100.\\\",\\\"Placing noise-sensitive spaces (bedrooms, offices) near noise sources (streets, highways) without considering acoustic design or buffers.\\\",\\\"Ignoring utility locations and easements; utilities require clear access and cannot be built over.\\\",\\\"Failing to account for seasonal wind changes (NE in winter, SW in monsoon) in ventilation and facade design.\\\",\\\"Underestimating tree preservation value; existing large trees provide shade, stormwater absorption, and cost savings.\\\",\\\"Not analyzing view opportunities and sight lines; overlooking chances to frame desirable views or block undesirable ones.\\\",\\\"Assuming all sloping sites are unsuitable for building; slopes 0\u201315% are buildable and often provide design opportunities.\\\",\\\"Omitting flood risk analysis in low-lying or coastal areas; critical for site safety and code compliance.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ff064c1aca9ddbb9e040d4cb0667cac4534fb92009d5f9a9fe1c6a7423a87060",
+      "props": {
+        "mistakes": "{[\"ERR-DSGN-035: Orienting buildings with long axis N-S instead of E-W in tropical Philippines; always prioritize E-W orientation for energy efficiency.\",\"Misinterpreting contour lines as individual building levels rather than topographic data; contours show existing grades and slopes, not proposed floor levels.\",\"Calculating slope percentage incorrectly (using vertical only, or forgetting to convert percentage); always use slope % = (rise\u00f7run)\u00d7100.\",\"Placing noise-sensitive spaces (bedrooms, offices) near noise sources (streets, highways) without considering acoustic design or buffers.\",\"Ignoring utility locations and easements; utilities require clear access and cannot be built over.\",\"Failing to account for seasonal wind changes (NE in winter, SW in monsoon) in ventilation and facade design.\",\"Underestimating tree preservation value; existing large trees provide shade, stormwater absorption, and cost savings.\",\"Not analyzing view opportunities and sight lines; overlooking chances to frame desirable views or block undesirable ones.\",\"Assuming all sloping sites are unsuitable for building; slopes 0\u201315% are buildable and often provide design opportunities.\",\"Omitting flood risk analysis in low-lying or coastal areas; critical for site safety and code compliance.\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"ERR-DSGN-035: Orienting buildings with long axis N-S instead of E-W in tropical Philippines; always prioritize E-W orientation for energy efficiency.\",\"Misinterpreting contour lines as individual building levels rather than topographic data; contours show existing grades and slopes, not proposed floor levels.\",\"Calculating slope percentage incorrectly (using vertical only, or forgetting to convert percentage); always use slope % = (rise\u00f7run)\u00d7100.\",\"Placing noise-sensitive spaces (bedrooms, offices) near noise sources (streets, highways) without considering acoustic design or buffers.\",\"Ignoring utility locations and easements; utilities require clear access and cannot be built over.\",\"Failing to account for seasonal wind changes (NE in winter, SW in monsoon) in ventilation and facade design.\",\"Underestimating tree preservation value; existing large trees provide shade, stormwater absorption, and cost savings.\",\"Not analyzing view opportunities and sight lines; overlooking chances to frame desirable views or block undesirable ones.\",\"Assuming all sloping sites are unsuitable for building; slopes 0\u201315% are buildable and often provide design opportunities.\",\"Omitting flood risk analysis in low-lying or coastal areas; critical for site safety and code compliance.\"]}"
+      },
+      "props_text": "mistakes={[\"ERR-DSGN-035: Orienting buildings with long axis N-S instead of E-W in tropical Philippines; always prioritize E-W orientation for energy efficiency.\",\"Misinterpreting contour lines as individual building levels rather than topographic data; contours show existing grades and slopes, not proposed floor levels.\",\"Calculating slope percentage incorrectly (using vertical only, or forgetting to convert percentage); always use slope % = (rise\u00f7run)\u00d7100.\",\"Placing noise-sensitive spaces (bedrooms, offices) near noise sources (streets, highways) without considering acoustic design or buffers.\",\"Ignoring utility locations and easements; utilities require clear access and cannot be built over.\",\"Failing to account for seasonal wind changes (NE in winter, SW in monsoon) in ventilation and facade design.\",\"Underestimating tree preservation value; existing large trees provide shade, stormwater absorption, and cost savings.\",\"Not analyzing view opportunities and sight lines; overlooking chances to frame desirable views or block undesirable ones.\",\"Assuming all sloping sites are unsuitable for building; slopes 0\u201315% are buildable and often provide design opportunities.\",\"Omitting flood risk analysis in low-lying or coastal areas; critical for site safety and code compliance.\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7573,
+      "end_offset": 8887,
+      "line_start": 80,
+      "line_end": 80,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:fdb90d19e3e1b11cbab684114bc3f068b739991df1f0c5361e00f360e973da75"
+}

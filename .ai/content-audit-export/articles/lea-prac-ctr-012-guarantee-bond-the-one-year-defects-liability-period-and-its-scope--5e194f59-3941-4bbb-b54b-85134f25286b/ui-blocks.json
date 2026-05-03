@@ -1,0 +1,107 @@
+{
+  "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
+  "slug": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope",
+  "normalized_created_at": "2026-05-01T13:33:44.025Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:d865192c8700b95fefc4bac231d8a99dd6a4755e7a7a92bb326a20b604bdb6c8",
+  "normalized_content_hash": "sha256:2fdfd0212e34a71f1b7ff3d5b8557c07c31fddc2ea0f9b9f97295f6db3daa106",
+  "ui_block_count": 5,
+  "total_blocks": 5,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"ra9266\" section=\"UAP Doc 301 §33\" title=\"Guarantee Bond — One-Year Period\">\nUAP Document 301 establishes the contractor's guarantee period at ONE YEAR from the date of Substantial Completion. During this period, the contractor must correct all defects reported by the Owner or Architect at no additional cost. The bond is independent of the Performance Bond — it covers defects discovered AFTER occupancy, not incomplete work.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=ra9266, section=UAP Doc 301 §33, title=Guarantee Bond — One-Year Period",
+      "props_json": {
+        "code": "ra9266",
+        "section": "UAP Doc 301 §33",
+        "title": "Guarantee Bond — One-Year Period"
+      },
+      "children_raw": "UAP Document 301 establishes the contractor's guarantee period at ONE YEAR from the date of Substantial Completion. During this period, the contractor must correct all defects reported by the Owner or Architect at no additional cost. The bond is independent of the Performance Bond — it covers defects discovered AFTER occupancy, not incomplete work.",
+      "children_text": "UAP Document 301 establishes the contractor's guarantee period at ONE YEAR from the date of Substantial Completion. During this period, the contractor must correct all defects reported by the Owner or Architect at no additional cost. The bond is independent of the Performance Bond — it covers defects discovered AFTER occupancy, not incomplete work.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:a0d2c74caf24089c7b539c76878ac124cce78a0ed6482195f05a3f199b016130"
+    },
+    {
+      "block_id": "ui_0002",
+      "component_name": "Warn",
+      "raw": "<Warn>\n  **Critical Distinction:** The contractor's one-year contractual guarantee under UAP Document 301 is INDEPENDENT of and IN ADDITION TO the statutory liability under Civil Code Article 1723. Article 1723 imposes solidary liability on the architect and contractor for 10 years (poor materials/construction) or 15 years (defects in ground). The one-year guarantee does NOT extinguish the longer statutory liability — defects discovered after one year may still give rise to claims under Article 1723.\n</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**Critical Distinction:** The contractor's one-year contractual guarantee under UAP Document 301 is INDEPENDENT of and IN ADDITION TO the statutory liability under Civil Code Article 1723. Article 1723 imposes solidary liability on the architect and contractor for 10 years (poor materials/construction) or 15 years (defects in ground). The one-year guarantee does NOT extinguish the longer statutory liability — defects discovered after one year may still give rise to claims under Article 1723.",
+      "children_text": "**Critical Distinction:** The contractor's one-year contractual guarantee under UAP Document 301 is INDEPENDENT of and IN ADDITION TO the statutory liability under Civil Code Article 1723. Article 1723 imposes solidary liability on the architect and contractor for 10 years (poor materials/construction) or 15 years (defects in ground). The one-year guarantee does NOT extinguish the longer statutory liability — defects discovered after one year may still give rise to claims under Article 1723.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:d3930b2a3746317d8965a5cd0bad5ec12b3ae29b653042ee191cd272f0313a97"
+    },
+    {
+      "block_id": "ui_0003",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **LEA Priority — Guarantee Bond Rules:**\n  1. Period: 1 year from Substantial Completion (NOT Final Completion)\n  2. Coverage: Workmanship and materials defects (NOT design errors)\n  3. Statutory override: Art. 1723 gives 10-15 years for structural defects\n  4. Reporting: Written notice to contractor required\n  5. Verification: Architect certifies that corrections are complete\n</ExamTip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**LEA Priority — Guarantee Bond Rules:**\n  1. Period: 1 year from Substantial Completion (NOT Final Completion)\n  2. Coverage: Workmanship and materials defects (NOT design errors)\n  3. Statutory override: Art. 1723 gives 10-15 years for structural defects\n  4. Reporting: Written notice to contractor required\n  5. Verification: Architect certifies that corrections are complete",
+      "children_text": "**LEA Priority — Guarantee Bond Rules:**\n  1. Period: 1 year from Substantial Completion (NOT Final Completion)\n  2. Coverage: Workmanship and materials defects (NOT design errors)\n  3. Statutory override: Art. 1723 gives 10-15 years for structural defects\n  4. Reporting: Written notice to contractor required\n  5. Verification: Architect certifies that corrections are complete",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:fd179bf2e5c7c3edcbb50345989c11f3342ef972407f5d9ba3f15d1fcb9fbda1"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  mistakes={[\n    \"Believing the guarantee period runs from Final Completion — it runs from Substantial Completion\",\n    \"Assuming the guarantee bond covers all defects — it does not cover wear and tear, owner damage, or design errors\",\n    \"Confusing the guarantee bond with the performance bond — guarantee covers post-occupancy defects; performance covers completion\",\n    \"Thinking the one-year guarantee replaces the Civil Code liability — Article 1723 provides 10-15 years for structural defects independently\",\n    \"Believing the contractor is not responsible for defects discovered after one year — Article 1723 may still apply for structural defects\",\n  ]}\n/>",
+      "raw_hash": "sha256:fa27530db078db6c0757d81d1be28dd26b8f231497a4671e6ae7f893e036ca64",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes={[\n    \"Believing the guarantee period runs from Final Completion — it runs from Substantial Completion\",\n    \"Assuming the guarantee bond covers all defects — it does not cover wear and tear, owner damage, or design errors\",\n    \"Confusing the guarantee bond with the performance bond — guarantee covers post-occupancy defects; performance covers completion\",\n    \"Thinking the one-year guarantee replaces the Civil Code liability — Article 1723 provides 10-15 years for structural defects independently\",\n    \"Believing the contractor is not responsible for defects discovered after one year — Article 1723 may still apply for structural defects\",\n  ]}\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:db1586506ff4525b0bed12829ff3b5b6a8379f11f4b44ab3ae7441eb6cbca679",
+      "props": {
+        "mistakes": "{[\n    \"Believing the guarantee period runs from Final Completion — it runs from Substantial Completion\",\n    \"Assuming the guarantee bond covers all defects — it does not cover wear and tear, owner damage, or design errors\",\n    \"Confusing the guarantee bond with the performance bond — guarantee covers post-occupancy defects; performance covers completion\",\n    \"Thinking the one-year guarantee replaces the Civil Code liability — Article 1723 provides 10-15 years for structural defects independently\",\n    \"Believing the contractor is not responsible for defects discovered after one year — Article 1723 may still apply for structural defects\",\n  ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n    \"Believing the guarantee period runs from Final Completion — it runs from Substantial Completion\",\n    \"Assuming the guarantee bond covers all defects — it does not cover wear and tear, owner damage, or design errors\",\n    \"Confusing the guarantee bond with the performance bond — guarantee covers post-occupancy defects; performance covers completion\",\n    \"Thinking the one-year guarantee replaces the Civil Code liability — Article 1723 provides 10-15 years for structural defects independently\",\n    \"Believing the contractor is not responsible for defects discovered after one year — Article 1723 may still apply for structural defects\",\n  ]}"
+      },
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": null,
+      "end_offset": null,
+      "line_start": null,
+      "line_end": null,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved",
+      "props_text": "mistakes={[\n    \"Believing the guarantee period runs from Final Completion — it runs from Substantial Completion\",\n    \"Assuming the guarantee bond covers all defects — it does not cover wear and tear, owner damage, or design errors\",\n    \"Confusing the guarantee bond with the performance bond — guarantee covers post-occupancy defects; performance covers completion\",\n    \"Thinking the one-year guarantee replaces the Civil Code liability — Article 1723 provides 10-15 years for structural defects independently\",\n    \"Believing the contractor is not responsible for defects discovered after one year — Article 1723 may still apply for structural defects\",\n  ]}"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "KeyValues",
+      "raw": "<KeyValues\n  values={{\n    \"Guarantee Period\": \"1 year from Substantial Completion\",\n    \"Covered Defects\": \"Materials, workmanship, specification deviations\",\n    \"Not Covered\": \"Wear and tear, owner damage, improper use, design errors\",\n    \"Reporting Window\": \"During or within reasonable time after 1 year\",\n    \"Civil Code Extension\": \"10-15 years for structural defects under Art. 1723\"\n  }}\n/>",
+      "raw_hash": "sha256:a29ce4862d824789a38fde7d1301a9bacfcd1e0f56d7473ec994b0a9d02e2e6f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: values={{\n    \"Guarantee Period\": \"1 year from Substantial Completion\",\n    \"Covered Defects\": \"Materials, workmanship, specification deviations\",\n    \"Not Covered\": \"Wear and tear, owner damage, improper use, design errors\",\n    \"Reporting Window\": \"During or within reasonable time after 1 year\",\n    \"Civil Code Extension\": \"10-15 years for structural defects under Art. 1723\"\n  }\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:0f256b7ee0a38ea61ad36293e67e806a453baa398a93a3700d59429d15d91796",
+      "props": {
+        "values": "{{\n    \"Guarantee Period\": \"1 year from Substantial Completion\",\n    \"Covered Defects\": \"Materials, workmanship, specification deviations\",\n    \"Not Covered\": \"Wear and tear, owner damage, improper use, design errors\",\n    \"Reporting Window\": \"During or within reasonable time after 1 year\",\n    \"Civil Code Extension\": \"10-15 years for structural defects under Art. 1723\"\n  }"
+      },
+      "props_json": {
+        "values": "{{\n    \"Guarantee Period\": \"1 year from Substantial Completion\",\n    \"Covered Defects\": \"Materials, workmanship, specification deviations\",\n    \"Not Covered\": \"Wear and tear, owner damage, improper use, design errors\",\n    \"Reporting Window\": \"During or within reasonable time after 1 year\",\n    \"Civil Code Extension\": \"10-15 years for structural defects under Art. 1723\"\n  }"
+      },
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": null,
+      "end_offset": null,
+      "line_start": null,
+      "line_end": null,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved",
+      "props_text": "values={{\n    \"Guarantee Period\": \"1 year from Substantial Completion\",\n    \"Covered Defects\": \"Materials, workmanship, specification deviations\",\n    \"Not Covered\": \"Wear and tear, owner damage, improper use, design errors\",\n    \"Reporting Window\": \"During or within reasonable time after 1 year\",\n    \"Civil Code Extension\": \"10-15 years for structural defects under Art. 1723\"\n  }"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:a6101ea9245020e06e5a8a464e74aac105289c0c35ef0f13c2053929843a4bc4"
+}

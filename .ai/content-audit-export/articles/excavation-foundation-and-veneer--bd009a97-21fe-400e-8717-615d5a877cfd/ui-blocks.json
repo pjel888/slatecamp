@@ -1,0 +1,43 @@
+{
+  "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+  "slug": "excavation-foundation-and-veneer",
+  "normalized_created_at": "2026-05-01T13:33:43.953Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:c7fbdb8eb1051e444b323b1fc2f49591431a4f175b35c8f10ca9a7edb13cbbbe",
+  "normalized_content_hash": "7d317a5a255e70ad77228cdb82b53c0b729dac1fa428abc05aa4a5eebc1aaa1e",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"nbcp\" title=\"not the Building Official, not a general posting. This 10-day window allows the\">\n\nPer PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner \u2014 not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the wrong period (15 days) and wrong recipient (Building Official). Option D is wrong on the period (5 days) and the method (fence posting is insufficient).\n\n</LawCallout>",
+      "raw_hash": "sha256:b25f87ca8a1294703711f820d7493f255a3f02323967b9f8469e78dde326489c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\", title=\"not the Building Official, not a general posting. This 10-day window allows the\"\n- Text: Per PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner \u2014 not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the w\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d9a3cebfd787443a7d627e35b611b10997fea8ceb49c25c2f3a43040c16a8ccc",
+      "props": {
+        "code": "nbcp",
+        "title": "not the Building Official, not a general posting. This 10-day window allows the"
+      },
+      "props_json": {
+        "code": "nbcp",
+        "title": "not the Building Official, not a general posting. This 10-day window allows the"
+      },
+      "props_text": "code=\"nbcp\" title=\"not the Building Official, not a general posting. This 10-day window allows the\"",
+      "children_raw": "\n\nPer PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner \u2014 not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the wrong period (15 days) and wrong recipient (Building Official). Option D is wrong on the period (5 days) and the method (fence posting is insufficient).\n\n",
+      "children_text": "Per PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner \u2014 not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the w",
+      "start_offset": 17148,
+      "end_offset": 17928,
+      "line_start": 193,
+      "line_end": 197,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:0ce748dde83862a394135e7c7f187687296f0181d3dc00fbffa414794c5d4549"
+}

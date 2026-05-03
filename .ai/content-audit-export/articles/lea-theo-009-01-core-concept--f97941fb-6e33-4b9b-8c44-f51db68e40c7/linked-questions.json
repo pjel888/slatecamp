@@ -1,0 +1,528 @@
+{
+  "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:714ff56c3ecbefa052316463cecc97cdb915b6a2be82dbb3aaf4ae3f5bb8b83e",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "f44656c8-77a7-4412-819e-b31b330df916",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "What is the primary distinction between Net Assignable Area (NAA) and Gross Building Area (GBA)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NAA is calculated from finished dimensions; GBA is calculated from structural dimensions of the building envelope"
+        },
+        {
+          "id": "b",
+          "text": "NAA and GBA are the same measure using different terminology in different countries and professional standards"
+        },
+        {
+          "id": "c",
+          "text": "NAA is usable floor area dedicated to program functions; GBA is total enclosed floor area including circulation and infrastructure"
+        },
+        {
+          "id": "d",
+          "text": "NAA includes corridors and mechanical space; GBA includes only functional spaces designated for occupant activities"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The distinction is not about measurement basis but about which spaces are counted.",
+        "b": "NAA and GBA are distinct measures reflecting different aspects of building area.",
+        "d": "This reverses the definitions; NAA excludes, not includes, circulation and mechanical.",
+        "correct": "NAA excludes corridors, mechanical, and structural elements and accounts for program functions only. GBA includes all spaces. The relationship is: GBA = NAA ÷ efficiency factor.",
+        "takeaway": "The relationship is: GBA = NAA ÷ efficiency factor."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0a67c8c085b7a8a72acaa23d79e5d2fed16f19d371f33a5f53bcf450882f2575"
+    },
+    {
+      "question_id": "4c9d74a0-304c-4e73-91c9-080c9fe00e07",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "In William Peña's Problem Seeking methodology, what is the correct sequence of the first three steps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gather facts, establish goals, establish the client"
+        },
+        {
+          "id": "b",
+          "text": "Establish the client, establish goals, gather facts"
+        },
+        {
+          "id": "c",
+          "text": "Gather facts, establish the client, establish goals"
+        },
+        {
+          "id": "d",
+          "text": "Establish goals, establish the client, gather facts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Facts must follow client and goal identification for structured programming.",
+        "c": "This reverses the critical early steps; gathering facts without first identifying the client and goals leads to unfocused research.",
+        "d": "Establishing goals before identifying all stakeholders may miss important client categories.",
+        "correct": "Peña's five steps are: (1) establish the client, (2) establish goals, (3) gather facts, (4) identify and unify the problem, (5) test the problem. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data.",
+        "takeaway": "This sequence ensures you understand who you're serving and what they aim to achieve before collecting data."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a270a6bb4323b09892029738fb957f92324571659cb3ee28b66042d4caee24d1"
+    },
+    {
+      "question_id": "ceec0691-0c61-415a-a7d8-9e24d0735fbb",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "Which of the following best defines architectural programming in relation to design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The detailed design development phase where architects finalize material specifications, including finishes and fixtures for all spaces"
+        },
+        {
+          "id": "b",
+          "text": "The process of creating conceptual sketches and preliminary design layouts, often involving client feedback and iterative revisions"
+        },
+        {
+          "id": "c",
+          "text": "The systematic investigation phase that documents space, performance, and functional requirements prior to design"
+        },
+        {
+          "id": "d",
+          "text": "The project management phase that oversees construction scheduling and cost control, ensuring adherence to budget and timelines"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Material specifications belong to design development, not the programming phase.",
+        "b": "Sketches and preliminary layouts are design activities, which occur after programming is complete.",
+        "d": "Project management and construction oversight are separate professional functions from programming.",
+        "correct": "Programming is explicitly the systematic analysis phase that precedes design. It answers the 'what' and 'why' before design begins answering 'how.'",
+        "takeaway": "It answers the 'what' and 'why' before design begins answering 'how.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:40bd486182f80e7eb9e53f3e4e4757363c39a0de81fd1a4438a0225169277438"
+    },
+    {
+      "question_id": "cbbf5a9d-3618-4062-ab13-cfb7c00eb195",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "A school program specifies that a library must accommodate 100 simultaneous users, provide 10,000 book volumes, and integrate collaborative learning spaces. Using standards (15 SF per reader, 0.1 SF per volume), what is minimum NAA, and how should the programmer address the resulting GBA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NAA = 2,500 SF; programmer applies 0.75 efficiency factor to calculate GBA = 3,333 SF total, ensuring compliance with spatial standards"
+        },
+        {
+          "id": "b",
+          "text": "NAA = 2,500 SF; programmer must determine realistic efficiency for library (0.60–0.70) and verify GBA fits site and school capacity"
+        },
+        {
+          "id": "c",
+          "text": "NAA calculation is unnecessary; library size should be determined by budget constraints, not user counts, which may lead to underutilization"
+        },
+        {
+          "id": "d",
+          "text": "NAA = 1,500 SF; collaborative spaces reduce area requirements despite circulation overhead, allowing for flexible space usage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The efficiency factor and resulting GBA are too low for a library's circulation requirements; libraries typically use 0.60–0.70, not 0.75.",
+        "c": "Standards-based programming prevents arbitrary sizing; budget is a constraint applied after the program is developed, not a replacement for it.",
+        "d": "Collaborative spaces don't eliminate circulation needs; the standard already accounts for collaborative function within the SF per reader.",
+        "correct": "NAA = (100 × 15 SF) + (10,000 × 0.1 SF) = 2,500 SF. Libraries require significant circulation, mechanical, and structural space. A 0.60–0.70 efficiency factor produces GBA of 3,571–4,167 SF. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible.",
+        "takeaway": "The programmer must verify this fits the site, aligns with school program scope, and is financially feasible."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a16f9fc66f0e2cf4371d6642e5767a5a0b6ffb8cf486742cf99e7988536c0b78"
+    },
+    {
+      "question_id": "b242498c-9f31-43c1-ba8d-38bed393271b",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "An architect receives a program document that lists all required spaces, areas, and functional relationships, but does not include performance standards for acoustic isolation, lighting levels, or thermal comfort. Which component is missing and what is its significance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Performance Specifications; essential for understanding environmental and operational constraints that inform design"
+        },
+        {
+          "id": "b",
+          "text": "Stakeholder Analysis; identifying all decision-makers is required before programming can proceed, ensuring that all voices are considered in the design process"
+        },
+        {
+          "id": "c",
+          "text": "Code Compliance Matrix; failure to address zoning and building code requirements, which could lead to legal and functional issues during construction"
+        },
+        {
+          "id": "d",
+          "text": "Area Summary Table; without it, the total building area cannot be calculated, potentially leading to discrepancies in space allocation and usage"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Stakeholder analysis is done before programming; this is a component of the program document itself.",
+        "c": "Code compliance is important but separate from performance specifications; this program issue is not primarily about code.",
+        "d": "The area summary table is separate; the question addresses environmental and experiential requirements, not area calculations.",
+        "correct": "Performance Specifications quantify testable requirements for environmental conditions, acoustics, lighting, and thermal behavior. Without them, designers lack clear targets for design decisions and cannot verify whether designs satisfy the program.",
+        "takeaway": "Without them, designers lack clear targets for design decisions and cannot verify whether designs satisfy the program."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6beb94105a5fdde5a2d42f491a97018a67efb89c111abb1778c8c4e614984247"
+    },
+    {
+      "question_id": "d58ae72e-0ebe-44ec-b45d-387d28d5e7b9",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "A hospital program specifies 50,000 NSF of clinical and support spaces. Using a typical healthcare efficiency factor of 1.40 (or 0.71 as ratio), what is the anticipated gross building area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "35,714 GSF"
+        },
+        {
+          "id": "b",
+          "text": "50,000 GSF"
+        },
+        {
+          "id": "c",
+          "text": "102,500 GSF"
+        },
+        {
+          "id": "d",
+          "text": "70,435 GSF"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This represents NAA × 0.71, which is incorrect; GBA must be larger than NAA.",
+        "b": "This ignores circulation and service area requirements entirely.",
+        "c": "This overshoots; multiplying rather than dividing produces unrealistic area.",
+        "correct": "GBA = NAA ÷ efficiency factor = 50,000 ÷ 0.71 ≈ 70,423 GSF. Healthcare buildings require larger multipliers than offices due to extensive corridor systems and mechanical infrastructure.",
+        "takeaway": "Healthcare buildings require larger multipliers than offices due to extensive corridor systems and mechanical infrastructure."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:82a236bf1b1482622e643140c8ceaafbadf2bbd315968ca92423ebd19f49cf52"
+    },
+    {
+      "question_id": "de404aeb-a5b5-4609-84f3-a2103e5bb73a",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "A developer commissions a program for a mixed-use building but states: 'We want a building that is flexible.' What is the programmer's most appropriate response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Draft a program without this goal and present alternative flexibility strategies during design, considering potential future uses and adaptability."
+        },
+        {
+          "id": "b",
+          "text": "Accept this as a valid goal and design a building with modular, easily reconfigured spaces, allowing for diverse tenant needs and future changes."
+        },
+        {
+          "id": "c",
+          "text": "Recommend against mixed-use development as it inherently constrains flexibility, due to zoning regulations and specific use requirements."
+        },
+        {
+          "id": "d",
+          "text": "Clarify what 'flexible' means: Does flexibility involve residential unit reconfiguration? Office space subdivision? Commercial tenant fit-out? What timeframe for change?"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The goal should be incorporated into the program, not bypassed; clarity is the programmer's responsibility.",
+        "b": "Accepting vague goals leads to programs that don't constrain design effectively; this abdicates programming responsibility.",
+        "c": "Mixed-use doesn't eliminate flexibility; this dismisses the goal rather than clarifying it.",
+        "correct": "Programming requires testable, specific goals. 'Flexible' is vague. The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification').",
+        "takeaway": "The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification')."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:463628e0aa0724c6030daaea7ba19638cd2051409ec7b105dc6312ba9fe9f6a2"
+    },
+    {
+      "question_id": "ad744e14-166f-4e73-b685-6eb72722cf9e",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "In Step 5 of Problem Seeking (Test the Problem), a programmer simulates patient flow through a proposed hospital clinic program and discovers that nursing stations cannot effectively supervise all patient waiting areas from their current positions. What does this reveal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additional staff or technology is required to execute the program; nothing in the program itself needs change"
+        },
+        {
+          "id": "b",
+          "text": "The program is incomplete or inaccurate; the adjacency relationships or space layouts require revision"
+        },
+        {
+          "id": "c",
+          "text": "The simulation method is inappropriate for healthcare; testing should rely on historical data instead"
+        },
+        {
+          "id": "d",
+          "text": "The design is flawed; testing confirms the program cannot be implemented as conceived"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "If supervision is a functional requirement, it belongs in the program as a spatial relationship; adding staff isn't a program solution.",
+        "c": "Simulation testing is specifically recommended by Peña; this method is entirely appropriate.",
+        "d": "Testing happens before design, so it doesn't confirm design flaws; it confirms program adequacy.",
+        "correct": "Testing reveals that programmed relationships don't support intended operations. Either nursing stations must be repositioned/resized, waiting areas need reconfiguration, or adjacency relationships must be reassessed. The program is incomplete until this is resolved.",
+        "takeaway": "The program is incomplete until this is resolved."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:db4ed134d7a7c4b28d61e9c3e4e6577ed830b8fd2c9ac772cee3fd864a11a7bb"
+    },
+    {
+      "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "During a programming interview for a new law firm office, a senior partner mentions that attorneys currently spend significant time retrieving files from the central storage. Which information-gathering category does this observation address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relationships — which functions must be adjacent or separated"
+        },
+        {
+          "id": "b",
+          "text": "Physical — site characteristics and infrastructure capacity"
+        },
+        {
+          "id": "c",
+          "text": "Human — demographic and psychological needs of occupants"
+        },
+        {
+          "id": "d",
+          "text": "Activity — what tasks occur, frequency, and duration"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Physical site conditions are not what this observation addresses; it's about internal functional organization.",
+        "c": "This addresses user behavior but doesn't directly reveal relationship requirements.",
+        "d": "While file retrieval is an activity, the key issue is the spatial relationship between activity locations.",
+        "correct": "This observation reveals a functional relationship problem: attorney offices and file storage need better adjacency. The comment identifies which functions should be proximate to reduce walking distance and improve workflow.",
+        "takeaway": "The comment identifies which functions should be proximate to reduce walking distance and improve workflow."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ae916237d41993634451fb4c49a73a1dd6222f74edf878894cb8e76bce2eb3bd"
+    },
+    {
+      "question_id": "bd183a62-e105-432e-be0c-3c30f1dacd12",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "Which of these statements would be most appropriate as a goal in an architectural program for a community health clinic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The clinic will include treatment rooms with dimensions of 10 feet by 12 feet minimum, ensuring adequate space for medical equipment and patient comfort"
+        },
+        {
+          "id": "b",
+          "text": "The clinic will contain 4,500 net square feet of space arranged in an open-plan configuration to facilitate flexible use and future expansion"
+        },
+        {
+          "id": "c",
+          "text": "The clinic will be constructed using single-story steel frame with concrete foundation, providing structural stability and ease of maintenance"
+        },
+        {
+          "id": "d",
+          "text": "The waiting room will accommodate 30 seated patients and reduce patient anxiety through design that conveys calm and dignity"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is a space standard, not a goal. It specifies dimensions but not why those dimensions matter or what they should accomplish.",
+        "b": "This mixes a space standard (4,500 SF) with a design decision (open-plan) rather than stating a goal about clinic mission or function.",
+        "c": "This is a design decision (structural system), not a programming goal; it prescribes form prematurely.",
+        "correct": "This goal is testable, mission-driven, and addresses what the space should achieve. It constrains design (conveying calm and dignity) without prescribing how (which is the designer's responsibility). It establishes measurable outcomes.",
+        "takeaway": "It establishes measurable outcomes."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3c19bd2fb893d9ba0926b61b459aa910ce3d5f8d109dbb8f7dee2cbdd86c48ab"
+    }
+  ]
+}

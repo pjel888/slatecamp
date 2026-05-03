@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
+  "slug": "lea-prac-eth-013-introduction",
+  "title": "Ethical Obligations in Digital Practice",
+  "component_count": 4,
+  "components": [
+    {
+      "component_name": "ComparisonTable",
+      "block_ids": [
+        "ui_0007",
+        "ui_0008"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/widgets/bp344/index.ts"
+    },
+    {
+      "component_name": "ExamTip",
+      "block_ids": [
+        "ui_0002",
+        "ui_0004"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "LeartBox",
+      "block_ids": [
+        "ui_0001",
+        "ui_0003",
+        "ui_0005"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "RegulationFramework",
+      "block_ids": [
+        "ui_0006"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    }
+  ],
+  "unknown_components": [
+    "LeartBox",
+    "RegulationFramework"
+  ],
+  "custom_ui_block_count": 8,
+  "normalized_status": "passed",
+  "components_detected": [
+    "ComparisonTable",
+    "ExamTip"
+  ],
+  "unknown_components_detected": [
+    "LeartBox",
+    "RegulationFramework"
+  ]
+}

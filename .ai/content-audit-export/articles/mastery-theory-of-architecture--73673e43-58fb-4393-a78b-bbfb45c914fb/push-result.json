@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:53:47.063Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "73673e43-58fb-4393-a78b-bbfb45c914fb",
+  "slug": "mastery-theory-of-architecture",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:7ef13d0b8e370a293ca4595b058815b55e85728835ba66b95c0cdb87c32b302a",
+  "original_hash": "sha256:7ef13d0b8e370a293ca4595b058815b55e85728835ba66b95c0cdb87c32b302a",
+  "candidate_hash": "sha256:8ff10a904fc8b2267aa7f77dbaae000b5da3209bf30e42e398daf6d902fad640",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

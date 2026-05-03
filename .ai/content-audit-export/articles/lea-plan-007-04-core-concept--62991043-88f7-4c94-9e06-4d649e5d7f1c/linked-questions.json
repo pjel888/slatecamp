@@ -1,0 +1,548 @@
+{
+  "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9a69b2952c10592d239d3b0fc48b99f61d02c3952cc4451d10263c1031c03004",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "09c55602-d84a-444a-8b4e-6a7085f1cbad",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "Which of the following was NOT a function of HUDCC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coordinating housing policy among multiple government agencies"
+        },
+        {
+          "id": "b",
+          "text": "Formulating national housing strategy"
+        },
+        {
+          "id": "c",
+          "text": "Issuing Licenses to Sell for residential subdivision projects"
+        },
+        {
+          "id": "d",
+          "text": "Monitoring implementation progress across all housing agencies"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Coordination was HUDCC's core function.",
+        "b": "Strategic planning and policy formulation were HUDCC functions.",
+        "c": "Issuing Licenses to Sell was HLURB's function (regulatory role under PD 957). HUDCC was a coordinating body, not a regulatory agency.",
+        "d": "Monitoring collective progress was part of HUDCC's coordination role.",
+        "correct": "Issuing Licenses to Sell was HLURB's function (regulatory role under PD 957). HUDCC was a coordinating body, not a regulatory agency.",
+        "takeaway": "HUDCC coordinated; HLURB regulated. Never confused these roles."
+      },
+      "explanation": null,
+      "code_citation": "RA 11201, HUDCC/HLURB roles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "agency roles",
+        "regulatory vs. coordination"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d90d0a81e0b05bb42f0195212ccd98b9f0eb9750ae049efed366d95b7be1a579"
+    },
+    {
+      "question_id": "d5c85b46-bd2f-4b18-835d-a29f9444db8f",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "Why would a multi-agency housing system (with NHA, Pag-IBIG, SSS, GSIS, SHFC, and others) require a coordinating council like HUDCC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To ensure that separate agencies with different mandates align toward common housing goals and do not work at cross-purposes"
+        },
+        {
+          "id": "b",
+          "text": "To eliminate redundancy by having all agencies perform identical functions, streamlining operations"
+        },
+        {
+          "id": "c",
+          "text": "To give HUDCC regulatory authority over all agencies, centralizing decision-making processes"
+        },
+        {
+          "id": "d",
+          "text": "To replace all individual agencies with a single unified authority, simplifying governance"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A multi-agency system requires coordination because agencies have specialized but potentially conflicting mandates. HUDCC ensured NHA's resettlement targets, Pag-IBIG's loan affordability criteria, SHFC's community focus, and others aligned toward complementary rather than contradictory goals.",
+        "b": "The agencies serve different functions; elimination of specialization would reduce effectiveness.",
+        "c": "HUDCC was a coordinating body, not a regulator. It had no authority over agencies.",
+        "d": "Specialization is maintained; coordination bridges the agencies.",
+        "correct": "A multi-agency system requires coordination because agencies have specialized but potentially conflicting mandates. HUDCC ensured NHA's resettlement targets, Pag-IBIG's loan affordability criteria, SHFC's community focus, and others aligned toward complementary rather than contradictory goals.",
+        "takeaway": "HUDCC existed because specialization requires coordination to prevent conflicts."
+      },
+      "explanation": null,
+      "code_citation": "Philippine housing governance structure",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "multi-agency coordination",
+        "specialized mandates",
+        "system design"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dce98868c506a4da64dfd6d3b3ed4f369e8b09d813f3488b445288b40a99ecfb"
+    },
+    {
+      "question_id": "7fa788b1-8c72-4ea9-996e-023cc8cd8a86",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "Given that HUDCC coordinated agencies with different mandates, sectoral focuses, and constituency priorities (e.g., NHA focused on the poor, Pag-IBIG on employed workers, SHFC on communities), how would HUDCC's coordination function have been critical to achieving balanced housing development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It was not critical—each agency worked independently without conflict, and there was no need for overarching coordination"
+        },
+        {
+          "id": "b",
+          "text": "HUDCC ensured that different mandates complemented rather than contradicted each other, and that no segment (poor, employed, community) was neglected"
+        },
+        {
+          "id": "c",
+          "text": "HUDCC merged all mandates into one undifferentiated housing program, eliminating the need for specialized agency roles"
+        },
+        {
+          "id": "d",
+          "text": "HUDCC eliminated specialized agency roles, thereby simplifying the housing development process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uncoordinated agencies risk conflicts (e.g., overlapping resettlement, duplicated funding).",
+        "b": "A balanced housing system requires different agencies serving different segments. Without HUDCC coordination, NHA's resettlement could displace communities that SHFC/CMP was trying to upgrade in place. HUDCC aligned these different approaches toward complementary—not contradictory—outcomes.",
+        "c": "Specialization was maintained; HUDCC coordinated specialized agencies.",
+        "d": "HUDCC preserved specialized roles while ensuring their alignment.",
+        "correct": "A balanced housing system requires different agencies serving different segments. Without HUDCC coordination, NHA's resettlement could displace communities that SHFC/CMP was trying to upgrade in place. HUDCC aligned these different approaches toward complementary—not contradictory—outcomes.",
+        "takeaway": "HUDCC coordination = specialized agencies achieving balanced, non-contradictory outcomes."
+      },
+      "explanation": null,
+      "code_citation": "HUDCC charter, Philippine housing policy",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "specialized mandates",
+        "balanced development",
+        "inter-agency coordination philosophy"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:63c94044b1ad9c42b5cdcf6dc8a9afe61d274133adac8bafc9a9013f712cd4cc"
+    },
+    {
+      "question_id": "d99723ed-9fc1-4231-8c18-f85de622e05c",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "What was the primary purpose of the Housing and Urban Development Coordinating Council (HUDCC)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To regulate and license private housing developers under PD 957, ensuring compliance with national housing standards"
+        },
+        {
+          "id": "b",
+          "text": "To build government housing projects for the poor, focusing on low-cost housing solutions and community development"
+        },
+        {
+          "id": "c",
+          "text": "To coordinate inter-agency housing programs and align policies among multiple government agencies"
+        },
+        {
+          "id": "d",
+          "text": "To finance individual housing loans for employees, providing accessible credit options for home ownership"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That was HLURB's role (now DHSUD)—regulation of developers.",
+        "b": "That is NHA's role—production.",
+        "c": "HUDCC was a coordinating council—it brought together NHA, Pag-IBIG, SSS, GSIS, SHFC, PCUP, and others to harmonize their housing programs and ensure alignment with national goals. It was _not_ a regulatory, production, or finance agency.",
+        "d": "That is Pag-IBIG's, SSS's, GSIS's role—finance.",
+        "correct": "HUDCC was a coordinating council—it brought together NHA, Pag-IBIG, SSS, GSIS, SHFC, PCUP, and others to harmonize their housing programs and ensure alignment with national goals. It was _not_ a regulatory, production, or finance agency.",
+        "takeaway": "HUDCC = inter-agency coordination mechanism (now dissolved, functions in DHSUD)."
+      },
+      "explanation": null,
+      "code_citation": "RA 11201, HUDCC charter",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04284090550aa5ecaa3ba725caa7284c4a390d47a161b3406a0fe2a532d07fec"
+    },
+    {
+      "question_id": "91bab790-b581-4a89-9ebc-24647f21c440",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "What was the key difference between HUDCC and HLURB in terms of their roles in Philippine housing governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HUDCC regulated developers; HLURB coordinated agencies, focusing on policy implementation and oversight"
+        },
+        {
+          "id": "b",
+          "text": "HUDCC built housing; HLURB financed housing, with each agency having distinct operational mandates"
+        },
+        {
+          "id": "c",
+          "text": "HUDCC and HLURB performed identical functions under different names, which often led to confusion in their roles"
+        },
+        {
+          "id": "d",
+          "text": "HUDCC coordinated inter-agency programs; HLURB regulated private developers"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This reverses their roles.",
+        "b": "Neither built or financed housing as their primary roles.",
+        "c": "They had distinct, complementary functions.",
+        "d": "HUDCC was a coordinating council bringing agencies together. HLURB was the regulatory board overseeing developer compliance with PD 957. They had entirely different functions.",
+        "correct": "HUDCC was a coordinating council bringing agencies together. HLURB was the regulatory board overseeing developer compliance with PD 957. They had entirely different functions.",
+        "takeaway": "HUDCC = coordinator. HLURB = regulator."
+      },
+      "explanation": null,
+      "code_citation": "RA 11201, HLURB/HUDCC history",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e412c820fd0a9f6417488091fa534c32c9307fd0b2799061af3906a91c93db04"
+    },
+    {
+      "question_id": "004f92de-f391-455d-92f6-aea7e1fba992",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "Analyze the 2019 institutional restructuring that created DHSUD: What efficiency or coordination benefit might result from consolidating HLURB's regulatory functions and HUDCC's coordination functions into a single agency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elimination of all government housing programs—inefficiency through consolidation that creates bureaucratic redundancy and overlapping mandates among agencies"
+        },
+        {
+          "id": "b",
+          "text": "Increased fragmentation of housing governance into smaller specialized agencies with separate budgets and conflicting implementation guidelines"
+        },
+        {
+          "id": "c",
+          "text": "No changes—consolidation has no effect on governance because the regulatory and coordination functions remain divided among local government units"
+        },
+        {
+          "id": "d",
+          "text": "Faster policy implementation through unified authority; reduced inter-agency disputes; clearer authority lines—but potential risk of concentrated power"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Consolidation simplifies governance; it does not eliminate programs.",
+        "b": "Consolidation reduces fragmentation (the goal).",
+        "c": "Consolidation does change governance—creates unified authority.",
+        "d": "Consolidating regulatory and coordination authority can streamline decision-making and reduce bureaucratic delays. DHSUD can now regulate developers AND coordinate with other agencies from a single authority. However, consolidation concentrates power—a potential governance risk.",
+        "correct": "Consolidating regulatory and coordination authority can streamline decision-making and reduce bureaucratic delays. DHSUD can now regulate developers AND coordinate with other agencies from a single authority. However, consolidation concentrates power—a potential governance risk.",
+        "takeaway": "2019 consolidation trade-off: efficiency vs. concentrated power."
+      },
+      "explanation": null,
+      "code_citation": "RA 11201, governance theory",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "institutional design",
+        "governance efficiency",
+        "centralization vs. decentralization"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1df106ef15ba2886a86a6521549f66ff05c8d092a0aff9365acc4a886c332b12"
+    },
+    {
+      "question_id": "6320e15d-7803-408b-a931-f6c65313b5c5",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "What implication did the dissolution of HUDCC have for housing governance coordination after 2019?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Housing coordination became entirely decentralized with no national oversight or inter-agency alignment mechanism"
+        },
+        {
+          "id": "b",
+          "text": "DHSUD assumed HUDCC's coordination functions, centralizing both regulatory and coordinating authority in one agency"
+        },
+        {
+          "id": "c",
+          "text": "A new separate coordination council was created to replace HUDCC as an independent inter-agency oversight body"
+        },
+        {
+          "id": "d",
+          "text": "Inter-agency coordination for housing was eliminated entirely, leaving each shelter agency to operate independently"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Coordination remained centralized in DHSUD.",
+        "b": "RA 11201 transferred HUDCC's coordination role to DHSUD, creating a unified agency responsible for both policy/regulation (formerly HLURB) and inter-agency coordination (formerly HUDCC). This is a consolidation strategy—fewer bodies with more integrated roles.",
+        "c": "No replacement council was created; functions were absorbed into DHSUD.",
+        "d": "Coordination continued through DHSUD, not eliminated.",
+        "correct": "RA 11201 transferred HUDCC's coordination role to DHSUD, creating a unified agency responsible for both policy/regulation (formerly HLURB) and inter-agency coordination (formerly HUDCC). This is a consolidation strategy—fewer bodies with more integrated roles.",
+        "takeaway": "Post-2019: HUDCC coordination functions transferred to DHSUD."
+      },
+      "explanation": null,
+      "code_citation": "RA 11201, DHSUD charter",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "institutional reform",
+        "coordination mechanisms",
+        "agency consolidation"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:896a70a4206301cfb6850e09f09b39d8a9d92d3b060f4fd9691ee6768b9d4bd0"
+    },
+    {
+      "question_id": "32f5e13e-af2f-47a2-9d32-09fb9bd8f3fe",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "Between 1992 and 2019, HUDCC served which of the following purposes in Philippine housing policy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Legislative body that passed housing laws, ensuring that all housing policies were legally binding and enforceable"
+        },
+        {
+          "id": "b",
+          "text": "Executive coordinating body that harmonized agency programs and formulated collective strategy"
+        },
+        {
+          "id": "c",
+          "text": "Judicial body that resolved housing disputes, providing a legal framework for conflict resolution in housing matters"
+        },
+        {
+          "id": "d",
+          "text": "International organization that coordinated with foreign housing agencies to align local policies with global standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Legislative authority is the Congress; HUDCC was executive.",
+        "b": "HUDCC was an executive-level coordination mechanism—it brought agencies together to harmonize programs, formulate strategy, and ensure alignment. It was neither legislative, judicial, nor international.",
+        "c": "Dispute resolution authority is judicial or regulatory (HLURB/DHSUD), not HUDCC.",
+        "d": "HUDCC was a domestic coordination body.",
+        "correct": "HUDCC was an executive-level coordination mechanism—it brought agencies together to harmonize programs, formulate strategy, and ensure alignment. It was neither legislative, judicial, nor international.",
+        "takeaway": "HUDCC = executive inter-agency coordination body (1992–2019)."
+      },
+      "explanation": null,
+      "code_citation": "HUDCC charter, RA 11201",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "governance structure",
+        "agency roles",
+        "institutional history"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4482d5e2d3fe523aa280671c6e24533757ee7cbe35476836571f8fae1fb84b65"
+    },
+    {
+      "question_id": "ffdb6c40-0702-406f-a7e6-33d778279630",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "If a conflict arose between NHA's resettlement program and Pag-IBIG's loan affordability criteria in the 1990s–2010s, which body would have been responsible for mediating inter-agency conflict?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HUDCC—the coordinating council designed to harmonize programs among housing agencies"
+        },
+        {
+          "id": "b",
+          "text": "The President's Cabinet alone, with no dedicated coordination mechanism, relying on executive intervention"
+        },
+        {
+          "id": "c",
+          "text": "HLURB—the regulatory board, tasked with overseeing compliance and resolving disputes"
+        },
+        {
+          "id": "d",
+          "text": "Individual agencies would resolve it directly without coordination, leading to potential inconsistencies"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "HUDCC's function was to bring agencies together to resolve conflicts and align programs. Inter-agency disputes over housing policy were within HUDCC's mandate.",
+        "b": "While the Cabinet could intervene, HUDCC was the designed mechanism for housing-specific coordination.",
+        "c": "HLURB regulated developers, not inter-agency conflicts.",
+        "d": "Uncoordinated individual agency actions could create conflicts—HUDCC existed to prevent this.",
+        "correct": "HUDCC's function was to bring agencies together to resolve conflicts and align programs. Inter-agency disputes over housing policy were within HUDCC's mandate.",
+        "takeaway": "HUDCC = inter-agency conflict resolution and policy harmonization."
+      },
+      "explanation": null,
+      "code_citation": "HUDCC charter and functions",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "coordination mechanisms",
+        "governance structure",
+        "agency collaboration"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c784293fa248afc39f75ec2361edc897d9114d70d06f39939867f1e177ee7bbc"
+    },
+    {
+      "question_id": "c0ae348b-fb1d-41de-8b7d-13761ef6f907",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "In what year was HUDCC dissolved, and which executive action or legislation created DHSUD to absorb its coordination functions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2015 under Executive Order, which aimed to streamline housing policy coordination"
+        },
+        {
+          "id": "b",
+          "text": "2010 under PD 957 amendment, focusing on housing development regulations"
+        },
+        {
+          "id": "c",
+          "text": "2019 under Republic Act 11201, which created DHSUD by merging HLURB and HUDCC"
+        },
+        {
+          "id": "d",
+          "text": "HUDCC was never formally dissolved; it still coordinates housing policy, maintaining its original mandate"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "RA 11201 was the legislative act, passed in 2019.",
+        "b": "PD 957 was from 1976; it did not affect HUDCC.",
+        "c": "RA 11201 (2019) created DHSUD by merging HLURB (regulatory functions) and HUDCC (coordination functions). HUDCC ceased to exist as a separate entity; its coordination role was transferred to DHSUD.",
+        "d": "HUDCC was formally dissolved in 2019.",
+        "correct": "RA 11201 (2019) created DHSUD by merging HLURB (regulatory functions) and HUDCC (coordination functions). HUDCC ceased to exist as a separate entity; its coordination role was transferred to DHSUD.",
+        "takeaway": "2019 (RA 11201): HUDCC dissolved. HLURB + HUDCC functions → DHSUD."
+      },
+      "explanation": null,
+      "code_citation": "RA 11201",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "agency history",
+        "institutional reform timeline"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f2c17a7e196a6d6d7b233c73625fe5de717e3f27f74e9945c9d7cff85888fdf2"
+    }
+  ]
+}

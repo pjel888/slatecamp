@@ -1,0 +1,508 @@
+{
+  "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:e7c5ffbab54202d0b933c1119de9e757e1b8f4750d6245b529da7ebb953cbe78",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "ed3ba734-4c18-4574-ad29-7f947cf37546",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "What is the primary function of weatherstripping in a window assembly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To support the weight of the sash, ensuring it remains in place during operation"
+        },
+        {
+          "id": "b",
+          "text": "To reduce air leakage and water infiltration around the sash"
+        },
+        {
+          "id": "c",
+          "text": "To provide aesthetic trim, enhancing the visual appeal of the window"
+        },
+        {
+          "id": "d",
+          "text": "To prevent the sash from sticking, allowing for smooth operation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sash support is provided by hinges, balance mechanisms, or friction stays.",
+        "c": "Aesthetic trim is a secondary function; the primary purpose is sealing.",
+        "d": "Lubricants or track design prevent sticking, not weatherstripping.",
+        "correct": "Weatherstripping seals the gap between the sash and frame, reducing air leakage by 30-50 percent and preventing water infiltration during rain.",
+        "takeaway": "Weatherstripping = leakage reduction (30-50%) + water prevention. Essential for tropical climates with monsoons."
+      },
+      "explanation": null,
+      "code_citation": "AAMA 101 Weatherstripping Performance Standards",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:360a252f57d5c39477ecb61c901b74b34ee3c70d63b6a5cfa7b53a3a99392382"
+    },
+    {
+      "question_id": "46efddd1-bb9f-4b88-a135-7e7c42cd4775",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "What is the AAMA Gold Label air leakage limit for windows?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.50 cfm @ 25 mph"
+        },
+        {
+          "id": "b",
+          "text": "0.30 cfm @ 25 mph"
+        },
+        {
+          "id": "c",
+          "text": "0.15 cfm @ 25 mph"
+        },
+        {
+          "id": "d",
+          "text": "1.00 cfm @ 25 mph"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.50 cfm exceeds Gold Label (≤0.30 cfm) limit but may pass lower performance classes.",
+        "c": "0.15 cfm is an exceptional limit not defined in standard AAMA grading.",
+        "d": "1.00 cfm is far too high for any AAMA-certified window.",
+        "correct": "AAMA Gold Label windows are limited to 0.30 cfm (cubic feet per minute) at 25 mph wind speed, the highest performance tier.",
+        "takeaway": "AAMA Gold Label = ≤0.30 cfm air leakage. Always specify Gold Label for tropical and typhoon-prone regions."
+      },
+      "explanation": null,
+      "code_citation": "AAMA/WDMA/CSA 101/I.S.2/A440 NAFS Standard",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:093480a90260f2e575dbde3f17acb672fb80a044b5c94f80e3f8a3893ab4279f"
+    },
+    {
+      "question_id": "24857268-6703-438e-94b4-03e3037385ae",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "What is the AAMA Gold Label structural resistance rating for windows?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 mph wind pressure, suitable for areas with moderate wind exposure and standard building codes"
+        },
+        {
+          "id": "b",
+          "text": "75 mph wind pressure, designed for regions with higher wind speeds and more stringent safety requirements"
+        },
+        {
+          "id": "c",
+          "text": "40 psf design pressure (AW class)"
+        },
+        {
+          "id": "d",
+          "text": "120 mph wind pressure, applicable to hurricane-prone zones requiring enhanced structural integrity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "50 mph is inadequate for any commercial application.",
+        "b": "75 mph is lower than Gold Label; suitable for standard-grade windows.",
+        "d": "120 mph exceeds Gold Label and would require specialized storm-resistant construction.",
+        "correct": "AAMA Gold Label windows must resist at least 94 mph wind pressure without failure, the highest structural rating.",
+        "takeaway": "AAMA Gold Label = ≥94 mph structural resistance. For typhoon zones exceeding 150 mph, specify reinforced frames or storm glazing."
+      },
+      "explanation": null,
+      "code_citation": "AAMA/WDMA/CSA 101/I.S.2/A440 NAFS Standard",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de21b19474adc46cbd8662215fd38d0c99237ea1b4a85a19b03f9e145497600f"
+    },
+    {
+      "question_id": "b2050540-d62a-4315-9765-73435d98f600",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "Which window type automatically sheds rain while allowing ventilation through the bottom opening?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixed window"
+        },
+        {
+          "id": "b",
+          "text": "Sliding window"
+        },
+        {
+          "id": "c",
+          "text": "Casement window"
+        },
+        {
+          "id": "d",
+          "text": "Awning window"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fixed windows do not open; they provide no ventilation.",
+        "b": "Sliding windows do not shed rain effectively; water can enter around the sash during heavy rain.",
+        "c": "Casement windows open to the full width but do not automatically shed rain.",
+        "correct": "Awning windows hinge at the top and swing outward at the bottom. This design naturally sheds rain while the bottom opening allows air intake, ideal for humid climates.",
+        "takeaway": "Awning windows = hinge top, open bottom, rain shedding. Ideal for tropical and monsoon-prone regions."
+      },
+      "explanation": null,
+      "code_citation": "AAMA/WDMA/CSA 101/I.S.2/A440 NAFS Standard",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f4c3beb89e78a3c3d12a86635d240cf6d5c385785000cd53575c92d41716921"
+    },
+    {
+      "question_id": "61d7a99d-1e51-4b14-86e1-80189abf8068",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "A window currently has an air leakage rate of 0.50 cfm at 25 mph. After installing high-quality weatherstripping that reduces air leakage by 40 percent, what is the new air leakage rate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.10 cfm"
+        },
+        {
+          "id": "b",
+          "text": "0.20 cfm"
+        },
+        {
+          "id": "c",
+          "text": "0.30 cfm"
+        },
+        {
+          "id": "d",
+          "text": "0.40 cfm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.10 cfm would require an even greater reduction (80 percent).",
+        "b": "0.20 cfm would require a 60 percent reduction.",
+        "d": "0.40 cfm does not meet AAMA Gold Label (≤0.30 cfm).",
+        "correct": "New air leakage = 0.50 cfm × (1 - 0.40) = 0.50 × 0.60 = 0.30 cfm, which meets AAMA Gold Label requirements.",
+        "takeaway": "Use the formula: New leakage = Original × (1 - reduction percent). Verify that the result meets AAMA Gold Label (≤0.30 cfm)."
+      },
+      "explanation": null,
+      "code_citation": "AAMA 101 Weatherstripping Performance Standards and calculation methods",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c86f30a7a93c33d40cadd3051af6b1cf9a5cd3bc01e4c984def4ed873722aee"
+    },
+    {
+      "question_id": "b2c38567-3eef-4e5f-97ef-184396faeedc",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "During LEA exam analysis, a residential project in Areas with PAGASA Signal No. 4+ (winds exceeding 150 kph gusts) specifies standard AAMA windows (not Gold Label) with 94 mph structural resistance. Why is this specification inadequate, and what should be specified instead?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Standard AAMA is sufficient; the 94 mph rating covers the project needs, assuming no extreme weather conditions are expected"
+        },
+        {
+          "id": "b",
+          "text": "Standard AAMA windows have only 94 mph rating, but typhoon gusts can exceed 150 mph. Upgraded windows, reinforced frames, or storm-resistant glazing and framing must be specified."
+        },
+        {
+          "id": "c",
+          "text": "The problem is air leakage, not structural resistance; weatherstripping will solve it, although it does not address the core issue of structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "AAMA Gold Label (94 mph) is equivalent to standard AAMA; there is no difference, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "94 mph is insufficient for 150+ mph typhoons; structural failure is likely.",
+        "c": "Air leakage is a separate concern; the structural issue is wind resistance.",
+        "d": "Both are AAMA certified, but Gold Label has superior air leakage performance; the issue here is structural resistance beyond Gold Label capability.",
+        "correct": "Typhoon Zone 1 can exceed 150 mph; standard AAMA windows (94 mph) will fail. Either upgrade to windows rated for higher wind speeds, reinforce the frame with impact-resistant materials, or use storm-resistant glazing and framing systems.",
+        "takeaway": "For extreme wind zones, AAMA Gold Label (94 mph) may be insufficient. Verify local wind speeds and specify accordingly."
+      },
+      "explanation": null,
+      "code_citation": "AAMA 101 Standards and PAGASA Philippine typhoon data",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:60916e3a0901827063d48b0626853e7f44e7f3c3a2296137b96589d3a3031d44"
+    },
+    {
+      "question_id": "3cd3bff5-3609-42b2-a1c3-2f59678b66d4",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "A friction stay in a window is rated to hold 50 lbf at 70°F. The temperature coefficient is -0.75 percent per degree Fahrenheit. At an ambient temperature of 95°F, what is the approximate holding force?",
+      "options": [
+        {
+          "id": "a",
+          "text": "37.5 lbf"
+        },
+        {
+          "id": "b",
+          "text": "40.6 lbf"
+        },
+        {
+          "id": "c",
+          "text": "42.5 lbf"
+        },
+        {
+          "id": "d",
+          "text": "48.1 lbf"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "37.5 lbf assumes a reduction of 25 percent (1.0% per °F), which is too aggressive.",
+        "c": "42.5 lbf assumes only a 15 percent reduction, underestimating the temperature effect.",
+        "d": "48.1 lbf assumes only a 3.8 percent reduction, too small for a 25°F swing.",
+        "correct": "Temperature change = 95°F - 70°F = 25°F. Force reduction = 50 lbf × 0.0075 × 25 = 9.375 lbf. Holding force = 50 - 9.375 = 40.625 ≈ 40.6 lbf.",
+        "takeaway": "Friction stay strength decreases with temperature. Always account for peak ambient temperature in tropical climates when specifying hardware."
+      },
+      "explanation": null,
+      "code_citation": "Window operator engineering data and thermal derating calculations",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d19f08811f1325d32f4f07d680150357eeac50d3debb1804839984450638930a"
+    },
+    {
+      "question_id": "85543a8c-10dd-4d02-8525-544ef5e3d6ec",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "What is the typical force required to operate a casement window crank?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 lbf"
+        },
+        {
+          "id": "b",
+          "text": "10 lbf"
+        },
+        {
+          "id": "c",
+          "text": "15 lbf"
+        },
+        {
+          "id": "d",
+          "text": "30 lbf"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 lbf is too light; the operator may not have sufficient mechanical advantage.",
+        "b": "10 lbf is lighter than typical; 15 lbf is more common.",
+        "d": "30 lbf exceeds the comfort limit and creates accessibility issues for elderly or disabled users.",
+        "correct": "Casement window cranks typically require approximately 15 lbf of force, with a crank arm length of 10-12 inches. This is the ergonomic limit for comfortable operation.",
+        "takeaway": "Casement crank force ≈ 15 lbf with 10-12 inch arm. Longer arms reduce the force required."
+      },
+      "explanation": null,
+      "code_citation": "AAMA 101 Window Operator Performance Standards",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:23ea4467d58b82636b066b8e858a1459cac6c83e1f0b52a7046c6a51ec570a0a"
+    },
+    {
+      "question_id": "ece3877b-c961-413d-8851-31653e444d9b",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "A coastal building in the Philippines experiences frequent salt spray. What window hardware material should be specified to resist corrosion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Painted steel, which may require frequent maintenance due to corrosion"
+        },
+        {
+          "id": "b",
+          "text": "Standard aluminum, which is prone to corrosion in salty environments"
+        },
+        {
+          "id": "c",
+          "text": "Stainless steel or coated aluminum"
+        },
+        {
+          "id": "d",
+          "text": "Galvanized steel, which offers some protection but may not be sufficient in severe conditions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Painted steel loses its coating in salt spray, exposing the steel to corrosion.",
+        "b": "Standard aluminum corrodes through pitting in salt spray; galvanic corrosion occurs when aluminum contacts steel.",
+        "d": "Galvanized steel offers some protection but is inferior to stainless steel in salt spray.",
+        "correct": "Salt spray rapidly corrodes painted steel and standard aluminum. Stainless steel (preferably 304 or 316 marine grade) or coated aluminum (powder-coated or anodized) resist corrosion in coastal environments.",
+        "takeaway": "Coastal projects = stainless steel or coated aluminum hardware. Never specify standard painted or uncoated metals."
+      },
+      "explanation": null,
+      "code_citation": "General corrosion resistance practices for coastal environments (PD 1096 Rule VII materials)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:add16c4c2aeef0f9d63ce3bdda1ff114ba1810c2cc26c27fc8866a9f3bb07a31"
+    },
+    {
+      "question_id": "7418747e-05ea-42e6-b324-35c8cee0bb0f",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "What is the maximum water infiltration rate at 15 mph wind speed (2.86 psf static pressure) for AAMA Gold Label windows?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Light water penetration acceptable"
+        },
+        {
+          "id": "b",
+          "text": "Light water penetration acceptable if dried within 1 hour"
+        },
+        {
+          "id": "c",
+          "text": "No water infiltration allowed"
+        },
+        {
+          "id": "d",
+          "text": "Up to 5 percent of test surface allowed to leak"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Gold Label allows no water penetration; lower grades may allow light penetration.",
+        "b": "Time-to-dry is not a criterion; no water should enter.",
+        "d": "Gold Label specifies zero infiltration, not a percentage-based allowance.",
+        "correct": "AAMA Gold Label windows must resist water infiltration up to 32 mph without any water entering the building interior. This is a zero-tolerance standard.",
+        "takeaway": "AAMA Gold Label water resistance = zero infiltration at 32 mph. Anything else fails the test."
+      },
+      "explanation": null,
+      "code_citation": "AAMA/WDMA/CSA 101/I.S.2/A440 NAFS Standard",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:498f4a41e9fdd39d820b70e0ef9377d9b635f41d11366caf5a727caa6b9f6c54"
+    }
+  ]
+}

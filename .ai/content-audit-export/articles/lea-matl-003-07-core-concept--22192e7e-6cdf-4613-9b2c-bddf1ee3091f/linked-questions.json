@@ -1,0 +1,498 @@
+{
+  "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:572041e3b74ca1490dd4c58a702d777b83cb058f31a21b988c94d732f99f9dd7",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "17b5a72a-c775-4e40-9489-e6e4a67275b1",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "A 40-story moment-resisting frame requires slip-critical connections to maintain rigidity under seismic loads. The engineer must decide between A325 (70% preload) and A490 (80% preload) bolts for critical beam-column connections. The project is located in Davao (coastal, salt-spray environment). Recommend appropriate bolt grade and justify based on NSCP 2015 durability, seismic performance, and environmental considerations.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Specify A325 with hot-dip galvanizing per ASTM A153 and TC installation. A325's 70% preload (120 ksi grade) is adequate for moment-resisting slip-critical design; the galvanizing ensures 50-year durability in coastal salt spray per NSCP C101-15 durability requirements. A490 cannot be galvanized (H-embrittlement), and unprotected A490 would corrode in Davao's marine environment. A325 galvanized is the pragmatic choice balancing strength, durability, and cost."
+        },
+        {
+          "id": "b",
+          "text": "Specify A490 with stainless coating for superior corrosion protection, although this may increase costs significantly and require special handling procedures"
+        },
+        {
+          "id": "c",
+          "text": "Specify A307 bolts to minimize cost, but this may compromise structural integrity and fail to meet seismic performance standards"
+        },
+        {
+          "id": "d",
+          "text": "Use A325 bolts without galvanizing; salt spray is not a concern for bolts, though this overlooks potential long-term corrosion issues in coastal environments"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Stainless A490 is acceptable but 3–4x more expensive than A325 galvanized.",
+        "c": "A307 (36 ksi) is inadequate for primary moment-resisting connections.",
+        "d": "Unprotected steel bolts corrode rapidly in salt spray, failing durability requirements.",
+        "correct": "A325 with galvanizing (ASTM A153) provides 120 ksi strength (adequate for moment-resisting frames at 70% preload), superior corrosion resistance required by NSCP 2015 durability (50-year service life), and galvanizing compatibility. A490 cannot be galvanized without H-embrittlement risk. Unprotected A490 corrodes rapidly in coastal environments. Stainless A490 is acceptable but expensive (~4x A325 galvanized). For a 40-story commercial tower in Davao, A325 galvanized is the industry-standard, cost-effective solution."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Sections 402 (Durability), Chapter 5 (Steel); RCSC Specification",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:96499c4537c8599acefbe0d102c10844ba3237308e5e03bed03b61ee97183a1f"
+    },
+    {
+      "question_id": "153b4448-6e26-42b8-b647-4a17abdd8d9e",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "Tension-control (TC) bolts break the splined end automatically when the target preload is reached. What is the primary advantage of TC installation over calibrated wrench installation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TC bolts eliminate wrench calibration drift, require lower operator skill, and reduce installation time by 3–4x while providing visual confirmation of proper preload"
+        },
+        {
+          "id": "b",
+          "text": "TC bolts are cheaper than standard A325 bolts, offering a cost-effective solution for large projects"
+        },
+        {
+          "id": "c",
+          "text": "TC installation is slower but produces higher-quality results than calibrated wrench, ensuring better long-term performance"
+        },
+        {
+          "id": "d",
+          "text": "TC bolts do not require any inspection after installation, simplifying the post-installation process"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "TC bolts are more expensive upfront but reduce labor significantly.",
+        "c": "TC is faster, not slower, than calibrated wrench.",
+        "d": "Visual inspection of complete spline breakoff confirms proper preload but does not eliminate need for connection inspection.",
+        "correct": "TC installation (ASTM F1852/F2280) uses a pneumatic shear wrench that breaks the spline at predetermined tension (~90% UTS). No wrench re-calibration required; operator skill is minimal; installation is fast; visual confirmation is automatic. This consistency and speed make TC the modern standard for high-volume fabrication."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F1852-20; RCSC Specification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eeba116d44b8399359f97d5829e689054e677ea6940fc5042f035504d85b13b4"
+    },
+    {
+      "question_id": "8a863a38-d013-4506-acec-8322dc93e841",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "ASTM F1852 specifies ___ ksi tension-control bolts; ASTM F2280 specifies ___ ksi TC bolts. Both are the modern equivleant to ___ structural bolt grades.",
+      "options": [
+        {
+          "id": "a",
+          "text": "120; 150; A325 and A490 respectively"
+        },
+        {
+          "id": "b",
+          "text": "150; 120; A490 and A325 respectively"
+        },
+        {
+          "id": "c",
+          "text": "92; 130; yield strengths of A325/A490"
+        },
+        {
+          "id": "d",
+          "text": "70; 90; snug-tight preload percentages"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Reversed: F1852 is 120 ksi (A325 equivalent); F2280 is 150 ksi (A490 equivalent).",
+        "c": "These are yield strengths, not tensile strengths, and do not align with F1852/F2280 designations.",
+        "d": "These are preload percentages, not bolt grade specifications.",
+        "correct": "F1852 is the TC equivalent to A325 (120 ksi); F2280 is the TC equivalent to A490 (150 ksi). Both automatically set preload to ~90% UTS via spline breakoff, providing consistency without wrench calibration."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F1852-20; ASTM F2280-20",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b857ce878261c8982acfe9275962952ff4244f00b72555c97d52e3619c2a35e8"
+    },
+    {
+      "question_id": "53c0a3d1-3843-45c7-a703-5bdc424a3a72",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "What is the minimum tensile strength of ASTM A325 structural bolts, and what is the primary advantage of A325 over A307 for primary structural connections?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36 ksi; lower cost, making it a budget-friendly option for non-critical applications"
+        },
+        {
+          "id": "b",
+          "text": "92 ksi; better ductility, allowing for more flexibility in certain structural designs"
+        },
+        {
+          "id": "c",
+          "text": "120 ksi (≤1\" diameter) or 105 ksi (>1\"-1½\"); higher strength supports larger loads and permits slip-critical connections"
+        },
+        {
+          "id": "d",
+          "text": "150 ksi; always superior in all applications, providing unmatched performance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A307 is the lowest-grade structural bolt (36 ksi); it is unsuitable for primary connections.",
+        "b": "A325 yield strength is 92 ksi, not tensile strength. Ductility is good, but the primary advantage is the high tensile strength enabling heavy loads.",
+        "d": "A490 (150 ksi) is superior in specialized high-stiffness applications, but A325 is preferred for most work due to cost and galvanizing compatibility.",
+        "correct": "A325 provides 120 ksi (830 MPa) tensile strength, more than 3x that of A307 (36 ksi). This enables load-bearing capacity and slip-critical design. The 1.25 ratio of proof load to yield strength permits tension-control installation without rupture risk. A325 is the standard for primary structural work."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F3125-20; RCSC Specification",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5d3b312a8e3ae9649fbee4661d6e81f6220d7fb60002d453a238c40cf9ea5515"
+    },
+    {
+      "question_id": "a58834eb-23a2-49c3-81e1-09c49dbe2cd7",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "ASTM A490 bolts provide 150 ksi tensile strength but are PROHIBITED from being galvanized or electroplated. Why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Galvanizing reduces bolt diameter, decreasing load-carrying capacity"
+        },
+        {
+          "id": "b",
+          "text": "Hydrogen embrittlement risk creates brittle failure under tensile stress"
+        },
+        {
+          "id": "c",
+          "text": "Galvanized A490 bolts are too expensive compared to alternatives"
+        },
+        {
+          "id": "d",
+          "text": "Galvanizing is incompatible with the A490 manufacturing process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Galvanizing adds minimal thickness; diameter loss is negligible.",
+        "c": "Cost drives some A490/stainless substitutions, but H-embrittlement is the primary technical concern.",
+        "d": "A490 is manufactured as standard steel; the issue is the plating process itself, not incompatibility with manufacturing.",
+        "correct": "High-strength bolts (A490 at 150 ksi) are susceptible to hydrogen embrittlement during electroplating and hot-dip galvanizing processes. Hydrogen atoms are absorbed into the high-strength steel, causing brittle fracture under tensile load even when preload and design appear correct. A325 (120 ksi) is less susceptible due to lower strength, making it the pragmatic choice for galvanized applications."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F3125-20",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:05ccf25ad71a5a75df2dc1e534b8c39b5864baca9f89e9818bd77027a0c8c147"
+    },
+    {
+      "question_id": "1f5dac3c-7d9b-41a9-abbb-8d412a90820c",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "Snug-tight bolt installation achieves approximately ___ percent of the preload required for proper slip-critical connections. Why is snug-tight unsuitable for primary load-carrying structural connections?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25%; insufficient friction force allows slip under load, increasing deformation and fatigue risk"
+        },
+        {
+          "id": "b",
+          "text": "50%; standard practice for all bolted connections, but not suitable for slip-critical applications due to potential slippage"
+        },
+        {
+          "id": "c",
+          "text": "75%; approaching adequate preload but unreliable for critical connections where slip must be prevented"
+        },
+        {
+          "id": "d",
+          "text": "90%; proper preload for any application, though not typically used for slip-critical connections due to potential variability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "50% snug-tight is still insufficient for primary connections; 70%+ is required for slip-critical behavior.",
+        "c": "75% approaches code requirement but without strict calibration/verification, unreliability increases.",
+        "d": "90% is the target for TC installation, not snug-tight.",
+        "correct": "Snug-tight provides ~25% preload, generating minimal friction between connected surfaces. Under service loads, bolts slip, increasing deformation, vibration, and fatigue damage. For primary connections, snug-tight is inadequate; calibrated wrench (70%) or TC installation (90%) is required per RCSC Specification (adopted by NSCP C101-15)."
+      },
+      "explanation": null,
+      "code_citation": "RCSC Specification; NSCP 2015 Chapter 5",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fae8c0a5d175f90e495c38984537ac3fb4cd740bb299a076796c0ac61642621d"
+    },
+    {
+      "question_id": "b4b44890-d033-4205-9452-b82801b1f0b2",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "A bridge connection exposed to salt spray specifies A490 bolts for maximum stiffness. The fabricator plans to hot-dip galvanize the bolts per ASTM A153. What is the critical flaw in this specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A490 bolts cannot be galvanized due to hydrogen embrittlement risk; A325 with galvanizing (or unprotected A490) should be specified instead. For corrosion protection in marine environments, A325 galvanized is the pragmatic choice."
+        },
+        {
+          "id": "b",
+          "text": "A153 galvanizing is not compatible with any structural bolts; no bolts can be galvanized, which could lead to premature failure"
+        },
+        {
+          "id": "c",
+          "text": "Galvanizing reduces bolt strength below design requirements; thicker bolts are needed to maintain structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "A490 galvanizing is acceptable; the concern is unfounded, as modern techniques mitigate embrittlement"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "A153 galvanizing is compatible with A307 and A325; the issue is A490 susceptibility.",
+        "c": "Galvanizing adds minimal material; strength reduction is negligible.",
+        "d": "Galvanizing A490 is explicitly prohibited due to H-embrittlement.",
+        "correct": "A490 at 150 ksi is susceptible to hydrogen embrittlement during hot-dip galvanizing. Absorbed hydrogen causes brittle fracture under tensile load. For marine environments requiring galvanizing, specify A325 (120 ksi, galvanizing-compatible) instead, or A490 stainless (expensive but H-embrittlement safe). NSCP 2015 and RCSC explicitly prohibit galvanizing A490."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F3125-20; RCSC Specification",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5a49a8c14b5947ccf68ba0d1b8dc31f0f082090cdfd9ba34eeb492d039e252e8"
+    },
+    {
+      "question_id": "2cda0a48-a65f-4fed-988a-84397360aeff",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "During field inspection of a moment-resisting frame, the inspector observes one A325 bolt in a group of ten where the splined TC end is incomplete (approximately 50% of spline remaining). What does this indicate, and what corrective action is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The bolt was under-tensioned; the spline did not fully break because preload did not reach the target. The bolt must be removed and replaced with a properly installed TC bolt to ensure slip-critical connection integrity."
+        },
+        {
+          "id": "b",
+          "text": "This is a normal variation; TC bolts may have partial spline breakoff; no action required, as long as the remaining spline does not affect the overall structural performance"
+        },
+        {
+          "id": "c",
+          "text": "The bolt is over-tensioned; the connection is unsafe; remove the bolt immediately and replace it with a new one to prevent potential structural failure"
+        },
+        {
+          "id": "d",
+          "text": "Partial spline breakoff is acceptable for bearing connections but not slip-critical, unless the design specifically allows for such variations under controlled conditions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Partial spline breakoff is an anomaly requiring replacement, not normal variation.",
+        "c": "Over-tensioning TC bolts is prevented by the automatic spline breakoff mechanism; this is an under-tension condition.",
+        "d": "For slip-critical (moment-resisting frames), under-tension is unacceptable regardless of connection type.",
+        "correct": "TC bolts are designed to break the spline at approximately 90% of UTS. Complete spline breakoff confirms proper preload. Incomplete breakoff (50% remaining) indicates the bolt did not reach target preload due to equipment malfunction, operator error, or thread contamination. For slip-critical connections (moment-resisting frames), this bolt is inadequate and must be removed and replaced. For bearing connections, under-tensioning is less critical, but code practice is to replace the bolt for consistency."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F1852-20; RCSC Specification",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d0a0a9fb8f5258e8dd633417ec656586f1405c2ebd3aa311e5f02b8c026dbf1"
+    },
+    {
+      "question_id": "b646f090-9f5e-42c6-97e4-77d65406b559",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "A bearing connection transfers load through ___ between the bolt shank and plate material. A slip-critical connection transfers load through ___ between connected surfaces and must maintain ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "compression; friction; high preload (70%+ of ultimate strength) throughout the member's life"
+        },
+        {
+          "id": "b",
+          "text": "friction; compression; minimal preload, which may not ensure long-term stability"
+        },
+        {
+          "id": "c",
+          "text": "tensile stress; shear; medium preload, balancing load transfer and structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "shear; adhesion; no preload, which could compromise connection reliability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Friction in bearing connections is secondary; compression (bearing) dominates.",
+        "c": "Slip-critical demands high preload, not minimal.",
+        "d": "Neither tensile stress nor adhesion drives bearing or slip-critical behavior.",
+        "correct": "Bearing connections: the bolt acts as a pin, transferring load through bearing (compression) on the bolt shank. The bolt may slip slightly, increasing deformation. Slip-critical connections: friction between mating surfaces (not bolt bearing) transfers all load. High preload (typically 70% of UTS for A325, 80% for A490) must be maintained throughout the structure's life to ensure friction capacity exceeds service loads."
+      },
+      "explanation": null,
+      "code_citation": "RCSC Specification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26949ee87fbfceb58ca264f08afe966ae7316098599b67fab113d9a8743ce025"
+    },
+    {
+      "question_id": "333652ec-0ddd-42e6-92e4-fe8bfe286211",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "For a slip-critical connection to maintain friction under service loads, what surface conditions are critical, and why does galvanizing or rust affect friction capacity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clean surfaces with Class A or B surface finish are required per AISC/AWS standards. Galvanizing and rust reduce friction coefficient (µ) from ~0.35 for clean steel to ~0.20 or lower, decreasing friction capacity significantly. Surface preparation (wire brush, blast cleaning) is essential for slip-critical design."
+        },
+        {
+          "id": "b",
+          "text": "Any surface condition is acceptable for slip-critical; friction is irrelevant unless specified otherwise in project-specific guidelines"
+        },
+        {
+          "id": "c",
+          "text": "Galvanizing increases friction; blast cleaning reduces it, contrary to common belief, which can lead to design miscalculations"
+        },
+        {
+          "id": "d",
+          "text": "Friction is only critical for bearing connections, not slip-critical, unless the design explicitly states otherwise"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Galvanizing decreases friction; rust and paint also reduce it.",
+        "c": "Galvanizing reduces friction due to the smooth zinc coating.",
+        "d": "Friction is critical for slip-critical connections precisely because load transfer depends on friction, not bearing.",
+        "correct": "Slip-critical connections depend entirely on friction to prevent slip. Clean steel has friction coefficient µ ≈ 0.35. Galvanizing reduces this to ~0.20; rust to ~0.15; paint to ~0.10 or lower. AISC specifies Class A (clean) or Class B (light mill scale) surfaces. For high-friction capacity, surfaces must be blast-cleaned to bright metal before bolting. Surface condition directly impacts connection capacity; neglecting this is a critical design error."
+      },
+      "explanation": null,
+      "code_citation": "RCSC Specification; AISC 360-22",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:65fa8ba321390da16c04ef2069434a01f3967d573426c6995d3e9192ca7ae36d"
+    }
+  ]
+}

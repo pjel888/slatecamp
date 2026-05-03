@@ -1,0 +1,508 @@
+{
+  "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:83dcc3c8773bb56228abedf96f19ea978e4e5d17f5abe78dfd84ff0f0818487b",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1e287c4b-eaf3-45de-bad0-08e4921339d4",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "Which of the following statements best explains why nailed connections are considered weaker than bolted connections of similar size?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nails work through friction and fiber bearing; a single nail can bend or pull through under high shear, whereas bolts develop bearing strength across multiple fibers."
+        },
+        {
+          "id": "b",
+          "text": "Nails rust faster than bolts in tropical climates, leading to potential structural failure over time"
+        },
+        {
+          "id": "c",
+          "text": "Nails cannot be used in Philippine hardwoods due to their density and hardness, which require pre-drilling"
+        },
+        {
+          "id": "d",
+          "text": "Bolts develop their strength from the threads alone, while nails do not have threads, making them less reliable in high-stress applications"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Both nails and bolts can rust; corrosion resistance depends on material, not form factor.",
+        "c": "Nails are used in Philippine hardwoods; the limitation is not material compatibility but load capacity.",
+        "d": "Threads contribute to bolt strength, but the primary load path in wood is bearing and friction, not thread-holding; nail strength is similarly fiber-based.",
+        "correct": "Nails develop strength through friction against wood fibers and bearing at the nail shank. A single nail develops only 150—200 lbf in shear; multiple nails in staggered patterns are needed for higher loads. Bolts develop bearing strength across the full bearing area, which is larger, and transfer load through the bolt shank and threads together.",
+        "takeaway": "Understand the mechanical basis of fastener strength: nails = friction + small bearing area; bolts = friction + larger bearing area + mechanical coupling."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2301 (fastener capacity); AF&PA Design Values for Wood Construction",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f85e03fb89f0479a841b439293bd667d14674feea88215a406de696764551f3"
+    },
+    {
+      "question_id": "09449a32-52b5-44d4-b705-6334e0a58c1e",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "Which of the following wood joints is designed with interlocking teeth that prevent both lateral separation and withdrawal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dovetail joint"
+        },
+        {
+          "id": "b",
+          "text": "Mortise-and-tenon joint"
+        },
+        {
+          "id": "c",
+          "text": "Lap joint"
+        },
+        {
+          "id": "d",
+          "text": "Butt joint"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Mortise-and-tenon joints are strong in tension but primarily resist racking; they do not have interlocking teeth.",
+        "c": "Lap joints overlap by reducing thickness but lack the interlocking geometry of dovetails.",
+        "d": "Butt joints rely entirely on fasteners and have no geometric lock.",
+        "correct": "Dovetail joints feature interlocking tails and pins with angled geometry that creates a mechanical lock, distributing shear stress over large glue lines and resisting both lateral and withdrawal forces.",
+        "takeaway": "Recognize dovetail geometry as the only joint type with interlocking tooth features that mechanically prevent both lateral and withdrawal motion."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2401; Timber Framers Guild joinery standards",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:63235a88aea989c9a7ce2950a384efdcf61d4529a4e17b14806b967df4116667"
+    },
+    {
+      "question_id": "33d54f2b-77f3-4f88-9936-0f77aa9909ed",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "A dado joint differs from a rabbet joint primarily in that:",
+      "options": [
+        {
+          "id": "a",
+          "text": "A dado is a groove cut perpendicular to the grain; a rabbet is a stepped recess on an edge."
+        },
+        {
+          "id": "b",
+          "text": "A dado is cut on the edge; a rabbet is cut across the face, which is a common misunderstanding"
+        },
+        {
+          "id": "c",
+          "text": "A dado is weaker; a rabbet is stronger, which affects their application in construction"
+        },
+        {
+          "id": "d",
+          "text": "A dado requires bolts; a rabbet requires nails, which is incorrect for traditional woodworking"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Both are geometric cuts; edge vs. face is the defining distinction, and the given answer more precisely describes the grain orientation relative to the cut.",
+        "c": "Strength depends on the fastening method and glue, not the joint form alone.",
+        "d": "Both dado and rabbet can be fastened with nails, screws, or bolts; fastener type is independent of joint form.",
+        "correct": "Dado: groove perpendicular to grain, cutting across the face (typically to house a shelf perpendicular to the supporting board). Rabbet: stepped recess cut on an edge (typically to frame a panel or create a flush overlap).",
+        "takeaway": "Dado = perpendicular groove; Rabbet = edge step. Both increase glue area and alignment but differ in geometry and application."
+      },
+      "explanation": null,
+      "code_citation": "Timber Framers Guild Joinery Manual; NSCP 2015 Section 2401",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8ba778f4a5de62eb66ae8d1ae354bcb30ea237f498c3935d9d92dec812a812ad"
+    },
+    {
+      "question_id": "d89ed715-60ec-4d98-87d3-11d3a0c845f7",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "A timber-to-steel connection in a tropical climate requires transfer of 4500 lbf shear load. The designer specifies two 2.5 inch shear plate connectors with 5/8 inch bolts. What is the principal concern with this design in a Philippine context?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corrosion of unprotected fasteners in high humidity; stainless steel or ASTM A 153 Class D galvanized bolts are required."
+        },
+        {
+          "id": "b",
+          "text": "Shear plate capacity is too low; 4-inch rings would be required to ensure adequate load transfer and prevent structural failure."
+        },
+        {
+          "id": "c",
+          "text": "Wood-to-steel connections do not develop adequate load transfer, especially in high moisture environments where wood expansion can compromise joint integrity."
+        },
+        {
+          "id": "d",
+          "text": "Tropical wood species cannot accommodate shear plate connectors due to their density and grain structure, which may lead to splitting or inadequate fastening."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Two 2.5 inch shear plates (roughly 3000—4000 lbf each) provide approximately 6000—8000 lbf total capacity, exceeding 4500 lbf.",
+        "c": "Wood-to-steel connections via shear plates are a standard design method.",
+        "d": "Philippine hardwoods (narra, molave, yakal) accept shear plates well; the issue is fastener corrosion, not wood compatibility.",
+        "correct": "The Philippines' high humidity and salt air near coastal regions accelerate corrosion. Unprotected fasteners rust and lose strength; NSCP 2015 and AWPA standards mandate stainless steel (preferred) or ASTM A 153 Class D hot-dipped galvanized fasteners.",
+        "takeaway": "Environmental context (tropical climate, humidity) drives material selection; failure to specify corrosion-resistant fasteners leads to premature loss of capacity."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2401.7; AWPA U1 Standard (fastener material requirements)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5fb57ef5c994aa5abcf147fa9a2bd32e5f655f74c5611b6f537cc60cd680c24e"
+    },
+    {
+      "question_id": "dc98b005-2b4d-4c39-9645-f886d522f52f",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "A multi-bolt connection using four 3/4 inch machine bolts in a timber lap joint carries 10,000 lbf shear. If a single bolt develops approximately 2500 lbf shear capacity in the wood, what is the most likely reason the connection develops less than 10,000 lbf (4 × 2500)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group bolt interaction and load distribution reduce group capacity by 10—30%; the bolts do not share load equally due to bending and bearing asymmetries."
+        },
+        {
+          "id": "b",
+          "text": "The wood fibers between bolts shear out, reducing total capacity, especially when the spacing between bolts is insufficient to distribute the load effectively."
+        },
+        {
+          "id": "c",
+          "text": "Load factors in the building code reduce the nominal capacity by 50%, which is a significant reduction not typically applied to all connections."
+        },
+        {
+          "id": "d",
+          "text": "Four bolts in a group always fail at exactly 2.5 times single-bolt capacity, which is an oversimplification of actual structural behavior."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While wood shear-out is a possible failure mode, it does not explain why group capacity is non-linear.",
+        "c": "Load factors (1.2, 1.5) apply to applied loads, not to capacity calculations; this would halve capacity only if the applied load were 5000 lbf (not 10,000 lbf).",
+        "d": "Group capacity is not a fixed multiple of single-capacity; it depends on spacing, bolt orientation, and wood condition.",
+        "correct": "Multiple fasteners in a group do not sum linearly. Elastic deformation, unequal load distribution, and bearing eccentricity cause outer bolts to develop more stress than inner bolts. Code provisions (NSCP 2015, NDS) reduce group capacity by 10—30% depending on spacing and geometry.",
+        "takeaway": "Never sum fastener capacities directly; always apply group reduction factors from code or test data. A 4-bolt group at 80% efficiency provides 8000 lbf, not 10,000 lbf."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2401.5 (group reduction); AF&PA NDS (National Design Specification)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3a3bf9ac606d8721f8517c0e57f8a1fe0fd74e5ed5e2eef89368a3d0a488ab14"
+    },
+    {
+      "question_id": "8cc2d01f-922e-42f8-a0f7-20b187f1f610",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "Which Philippine hardwood is traditionally preferred for door and window frames due to its fine grain, workability, and favorable gluing characteristics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Narra"
+        },
+        {
+          "id": "b",
+          "text": "Molave"
+        },
+        {
+          "id": "c",
+          "text": "Yakal"
+        },
+        {
+          "id": "d",
+          "text": "Tanguile"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Molave ('Queen of Philippine Woods') is denser and harder, better suited to heavy structural applications; its hardness makes fine joinery more difficult.",
+        "c": "Yakal is very stiff and strong but less decorative; reserved for heavy-duty structural use, not fine cabinetry.",
+        "d": "Tanguile is used in paneling and general carpentry, but narra is the traditional prestige choice for frames.",
+        "correct": "Narra (Pterocarpus indicus) is the traditional choice for fine joinery and cabinetry in the Philippines. Its interlocked/wavy grain, medium to coarse texture, and good natural luster allow clean mortise-and-tenon joints. It glues and finishes well, making it ideal for visible frames.",
+        "takeaway": "Match wood species to application: narra for fine joinery, molave for heavy structural work, yakal for high-stress environments."
+      },
+      "explanation": null,
+      "code_citation": "Philippines Wood Database; DENR timber resources classification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ceb2c75ae22530106cae370c1896e89a21ffaeb0f3fe3cc554c3f38455c32d43"
+    },
+    {
+      "question_id": "e35deae5-e22f-418f-a317-b849a1ab7f69",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "In a mortise-and-tenon joint, the mortise is best described as which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A rectangular cavity chiseled into one timber member"
+        },
+        {
+          "id": "b",
+          "text": "A protruding rectangular element cut from timber, typically used to fit into a mortise for joint stability"
+        },
+        {
+          "id": "c",
+          "text": "A groove cut perpendicular to the wood grain, often used in decorative applications rather than structural joints"
+        },
+        {
+          "id": "d",
+          "text": "A stepped recess on the edge of a board, which is commonly used in shelving or cabinetry for aesthetic purposes"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This describes the tenon, not the mortise.",
+        "c": "This describes a dado joint.",
+        "d": "This describes a rabbet joint.",
+        "correct": "A mortise is a precisely chiseled rectangular cavity (hole) into which the matching tenon (protrusion) is inserted.",
+        "takeaway": "Mortise = cavity (receptacle); Tenon = protrusion. Always pair these terms correctly."
+      },
+      "explanation": null,
+      "code_citation": "Timber Framers Guild Joinery Manual; NSCP 2015 Section 2401",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff6df94df2a7e077aac4f2118534295006446ad53f36f84c60b1d97a04a32e7f"
+    },
+    {
+      "question_id": "394d9c7b-1067-4916-a394-4f9713a3758d",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "A glued mortise-and-tenon joint is being prepared for a structural frame. The wood moisture content is 18%, and no clamping pressure will be applied due to design constraints. Which of the following is the most serious concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Excess wood moisture and absence of clamping pressure will prevent adequate glue penetration and curing, resulting in low joint strength."
+        },
+        {
+          "id": "b",
+          "text": "Wood at 18% moisture is too dry for gluing, which can lead to inadequate bonding and potential joint failure."
+        },
+        {
+          "id": "c",
+          "text": "Modern glues do not require clamping pressure, but this can lead to uneven curing and weak joints."
+        },
+        {
+          "id": "d",
+          "text": "Mortise-and-tenon joints cannot be glued; they must be fastened with pins or wedges, which is a traditional method."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "18% moisture is actually slightly high, not low; 12—15% is the target.",
+        "c": "Modern glues (PVA, polyurethane, epoxy) do require clamping pressure to achieve full strength and proper surface contact.",
+        "d": "Mortise-and-tenon joints are commonly glued; pins or wedges are used as supplementary security, not as replacements for glue.",
+        "correct": "Optimal gluing conditions require wood moisture of 12—15% and clamping pressure of 100—200 psi. At 18% moisture, the wood is wetter than optimal; without clamping pressure, the glue cannot develop full strength and may not penetrate the joint surfaces uniformly, resulting in weak spots and potential early failure.",
+        "takeaway": "Glue strength is a function of moisture content, clamping pressure, and curing time; neglecting any factor reduces joint capacity significantly."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2401 (wood design); adhesive manufacturing specifications (PVA, epoxy, polyurethane)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eb37abb19ee4b95b35fd70f4349d4bcd5e056a0bced5e16d4c43dd100300bced"
+    },
+    {
+      "question_id": "e807d481-8ec7-4cc4-b82c-d58626eb5f3a",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "A joist hanger connection in a Philippine residential structure carries 3200 lbf vertical load. The hanger is rated for 3500 lbf and is fastened with galvanized steel nails. High humidity and periodic salt spray are present. What is the primary long-term concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corrosion of galvanized nails over time will reduce bearing strength; stainless steel fasteners should be specified for tropical coastal exposure."
+        },
+        {
+          "id": "b",
+          "text": "Joist hangers develop higher capacity than stated; no concerns exist, even in environments with high humidity and salt exposure"
+        },
+        {
+          "id": "c",
+          "text": "Galvanized nails are immune to corrosion, making them suitable for all environmental conditions without any risk of degradation"
+        },
+        {
+          "id": "d",
+          "text": "The 3200 lbf load exceeds the hanger capacity by 300 lbf; immediate failure is expected, necessitating urgent structural reinforcement"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The connection has adequate initial capacity; the issue is durability and long-term strength loss.",
+        "c": "Galvanized coatings, while durable, are not indefinite; salt spray and humidity degrade them over decades.",
+        "d": "3200 lbf is below the 3500 lbf rating; the connection is structurally adequate initially.",
+        "correct": "While hot-dipped galvanized fasteners (ASTM A 153 Class D) provide excellent corrosion resistance, even galvanized coatings eventually corrode in high-humidity tropical environments with salt spray. Stainless steel (316 or 316L) offers superior long-term protection and maintains bearing strength longer. NSCP 2015 and AWPA standards recommend stainless for coastal and high-humidity locations.",
+        "takeaway": "In tropical and coastal Philippine climates, specify stainless steel fasteners for connections that must maintain strength over 50+ years. Galvanized is adequate for interior and moderate-exposure applications."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2401 (fastener materials); AWPA U1 Standard (fastener specifications for treated wood)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:68fc23f5ea254a69b8ed6907e4c76f56f45c7883647241c8c788bce26589c18b"
+    },
+    {
+      "question_id": "bae6dcc0-fb26-45b6-b0a7-8aa304175d25",
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "topic_id": "49f276d3-d90e-4460-8b7a-885d78cbffd8",
+      "text": "A timber frame design specifies a split ring connector with a 4-inch diameter ring on 3/4 inch bolts. The design load is 6200 lbf. According to typical connector capacity tables, is this connection adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; 4-inch split rings with 3/4 inch bolts typically develop 5000—6500 lbf capacity."
+        },
+        {
+          "id": "b",
+          "text": "No; 4-inch split rings are limited to 4000 lbf regardless of bolt size, which is insufficient for the specified load"
+        },
+        {
+          "id": "c",
+          "text": "Yes; all split rings exceed 6500 lbf capacity, ensuring safety under the given load"
+        },
+        {
+          "id": "d",
+          "text": "No; the load exceeds the capacity by 200 lbf at minimum, necessitating a design revision"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While conservative practice may reduce this capacity by 25% for moisture or load duration, the nominal capacity exceeds 4000 lbf.",
+        "c": "Not all split rings exceed 6500 lbf; smaller rings (2.5 inch) develop only 2500—3200 lbf.",
+        "d": "6200 lbf falls within the published 5000—6500 lbf range, so it does not exceed capacity by 200 lbf.",
+        "correct": "Split ring capacity reference tables show a 4-inch diameter ring with 3/4 inch bolt develops 5000—6500 lbf, placing the 6200 lbf load within acceptable range (at the upper end).",
+        "takeaway": "Know the relationship between ring diameter, bolt size, and capacity; do not confuse nominal capacity with allowable capacity under adjusted conditions."
+      },
+      "explanation": null,
+      "code_citation": "AF&PA Design Values; NSCP 2015 Section 2401.7 (connector capacity factors)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1428c2de4fdfb97236235f4addf17fdfa3e9e9befbacf8c3e0c704084adeac87"
+    }
+  ]
+}

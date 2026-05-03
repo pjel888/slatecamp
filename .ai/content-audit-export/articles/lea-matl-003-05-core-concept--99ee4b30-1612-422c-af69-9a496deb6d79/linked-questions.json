@@ -1,0 +1,498 @@
+{
+  "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:44c3c325f1d81fac77c5218794117d5e06927b43bb3c6ffda83c20cad0b68642",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2f77fb95-144b-4a41-a3a1-773329618ac0",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "A designer specifies a 6 mm fillet weld in a lap joint connecting two steel plates. The weld symbol shows the fillet below the reference line. On which side of the joint is the weld located?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The other side (opposite the arrow)"
+        },
+        {
+          "id": "b",
+          "text": "The arrow side (toward which the arrow points)"
+        },
+        {
+          "id": "c",
+          "text": "Both sides simultaneously"
+        },
+        {
+          "id": "d",
+          "text": "The weld location cannot be determined from this information alone"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Welds above the reference line are on the other side; below indicates arrow side.",
+        "c": "A circle around the reference line and arrow (weld-all-around) indicates both sides; a single symbol on one side of the line specifies one side only.",
+        "d": "AWS A2.4 clearly defines reference line conventions; the side is unambiguous from the symbol position.",
+        "correct": "In AWS A2.4 convention, welds below the reference line are on the arrow side (the side toward which the arrow points). This is the standard convention used throughout structural design."
+      },
+      "explanation": null,
+      "code_citation": "AWS A2.4:2020",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb6cb5fb26d49269c0c3d72cb5936687e70f9446ea952be07c27376ff6c4dbc0"
+    },
+    {
+      "question_id": "4f5aed2c-e68c-4923-87b8-88afab4d0c34",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "Which inspection method uses high-frequency sound waves to detect internal defects (internal porosity, lack of fusion, cracks) in welds without destroying the weld?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Visual Inspection (VT)"
+        },
+        {
+          "id": "b",
+          "text": "Ultrasonic Testing (UT)"
+        },
+        {
+          "id": "c",
+          "text": "Radiographic Testing (RT)"
+        },
+        {
+          "id": "d",
+          "text": "Magnetic Particle Testing (MT)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Visual Inspection detects only surface defects; it cannot reveal internal voids or lack of fusion.",
+        "c": "Radiographic Testing (RT) reveals internal defects but requires safety protocols, longer exposure time, and specialized equipment. UT is faster and safer.",
+        "d": "Magnetic Particle Testing (MT) detects surface and near-surface defects in ferrous materials but does not reveal deep internal voids like UT does.",
+        "correct": "Ultrasonic Testing (UT) uses sound waves to detect internal defects. It is non-destructive, relatively quick, and effective for structural work. UT is increasingly preferred over RT (radiography) due to safety and cost advantages."
+      },
+      "explanation": null,
+      "code_citation": "AWS D1.1; NSCP 2015 Chapter 5",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a79045924aa077efe778ca20158431185b6e669d50e7e7bf683a93649dce0478"
+    },
+    {
+      "question_id": "bbbe3d4c-e2bf-44d5-958c-f4db8b8990e2",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "GMAW (Gas Metal Arc Welding) uses a ___ shielding medium and offers a ___ deposition rate compared to SMAW.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flux coating; lower"
+        },
+        {
+          "id": "b",
+          "text": "External gas; lower"
+        },
+        {
+          "id": "c",
+          "text": "Flux coating; higher"
+        },
+        {
+          "id": "d",
+          "text": "External gas; higher"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "GMAW does not rely on flux coating; the flux is in SMAW electrodes.",
+        "b": "While GMAW uses external gas, the deposition rate is higher, not lower.",
+        "c": "GMAW does not use flux coating; this describes SMAW, which has a lower deposition rate.",
+        "correct": "GMAW employs external shielding gas (typically argon-CO₂ mixture) and achieves a higher deposition rate than SMAW, making it economical for production shop welding of high-volume structural members."
+      },
+      "explanation": null,
+      "code_citation": "AWS D1.1",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de159b357b319c6a3bf1c8f810e4ef7f98c64729c8919da076addc65aba8aa19"
+    },
+    {
+      "question_id": "f8c4fecf-8b7d-4bb2-878e-7f81e32de408",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "A 30-story moment-resisting frame requires beam-column connections welded with CJP groove welds. The fabricator proposes performing 100% visual inspection (VT) of all welds without spot ultrasonic testing (UT). The engineer rejects this proposal. Why is UT spot-checking necessary for this application despite the high cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VT detects only surface defects (cracks, undercut, spatter) but cannot reveal internal defects (lack of fusion, internal porosity, incomplete penetration) that compromise strength. For a high-rise moment-resisting frame with seismic demands, internal defects risk ductility loss and connection failure. Spot UT (typically 10–20% of welds) provides statistical assurance of internal quality."
+        },
+        {
+          "id": "b",
+          "text": "UT is always cheaper than VT and should be performed universally, regardless of the project's specific requirements"
+        },
+        {
+          "id": "c",
+          "text": "VT is sufficient; UT is unnecessary luxury for structural work, especially when budget constraints are a primary concern"
+        },
+        {
+          "id": "d",
+          "text": "High-rise buildings do not require weld inspection beyond VT per NSCP 2015, as long as the building is not located in a high seismic zone"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "UT is more expensive than VT; cost justifies spot-checking (not universal UT) based on criticality.",
+        "c": "VT is first-line inspection; it is adequate for routine welds but insufficient for high-criticality moment-resisting frames.",
+        "d": "NSCP 2015 allows fabricators to specify VT + UT sampling for critical connections; spot UT is standard practice.",
+        "correct": "VT is essential but limited to surface defects. For critical applications—particularly moment-resisting frames in seismic regions where ductility and energy dissipation are paramount—internal weld defects (lack of fusion, porosity, incomplete penetration) can reduce connection capacity and ductility. Spot UT provides statistical sampling to verify internal quality without inspecting every weld. This risk-based approach is standard practice for high-rise moment-resisting frames per AWS D1.1 and NSCP 2015."
+      },
+      "explanation": null,
+      "code_citation": "AWS D1.1; NSCP 2015 Chapter 5",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d15781ad37a8e909e43dd53dc9d978d451e5b302f0e4f2b763aff7de4501e7f2"
+    },
+    {
+      "question_id": "45f99b19-4d0d-4e13-8715-3d97c891bdde",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "An AWS A2.4 weld symbol shows a fillet weld on the arrow side with a 6 mm size. The reference line has a filled circle at the arrow intersection. What does the filled circle indicate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The weld is to be ground smooth after welding to ensure a clean finish and remove any surface irregularities"
+        },
+        {
+          "id": "b",
+          "text": "The weld is a field weld (performed on-site, not in the shop)"
+        },
+        {
+          "id": "c",
+          "text": "The weld requires complete joint penetration, which is essential for structural integrity in critical applications"
+        },
+        {
+          "id": "d",
+          "text": "The weld must be inspected using ultrasonic testing to verify internal soundness and detect any hidden flaws"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Grinding or finishing requirements are indicated by supplementary symbols (e.g., 'G' for ground) adjacent to the weld symbol.",
+        "c": "Complete joint penetration is indicated by the groove weld symbol itself, not by the circle on the reference line.",
+        "d": "Inspection requirements are noted separately on the drawing or in specifications, not by the circle symbol.",
+        "correct": "A filled circle (or flag) on the reference line where the arrow meets indicates a field weld—one performed on the construction site rather than in the fabrication shop. This distinction is critical for project sequencing and quality control responsibilities."
+      },
+      "explanation": null,
+      "code_citation": "AWS A2.4:2020",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d0159182e04ba044b3b955d4b967e4f3397512c3211ce846c9fc6bb4d30f411c"
+    },
+    {
+      "question_id": "5a1b0754-a2ee-4c49-b830-46ab4bb0b0de",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "During field inspection of a moment-resisting frame, the visual inspection reveals a 15 mm undercut on a CJP groove weld (the groove extends 3 mm below the base metal surface). The engineer must decide whether this weld is acceptable per AWS D1.1. What is the critical evaluation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Undercut of 3 mm at 15 mm length exceeds AWS D1.1 limits (per AWS D1.1 Table 5.7.1.1: max depth 0.01W or 1/32 in., length ≤ 1/2 in. per 12 in.); the weld is rejected and must be repaired or removed and re-welded"
+        },
+        {
+          "id": "b",
+          "text": "Undercut is cosmetic and does not affect weld strength; the weld is acceptable if no other defects are present"
+        },
+        {
+          "id": "c",
+          "text": "Undercut is acceptable if the overall weld meets design requirements; dimension limits do not apply unless specified by the project engineer"
+        },
+        {
+          "id": "d",
+          "text": "Spot ultrasonic testing must be performed before rejection; visual inspection alone is insufficient to determine compliance with AWS D1.1 standards"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Undercut is a defect, not cosmetic; it significantly reduces fatigue strength and ductility in moment-resisting frames.",
+        "c": "AWS D1.1 specifies absolute dimension limits; weld strength cannot compensate for non-conforming geometry.",
+        "d": "UT spot-checking does not override dimension non-conformance; rejection is required before UT evaluation.",
+        "correct": "AWS D1.1 specifies strict undercut limits to prevent stress concentration and fatigue crack initiation. The limit is typically 1 mm (or 0.05 inches) with cumulative undercut not exceeding 10% of groove depth. A 3 mm undercut significantly exceeds this limit and creates a sharp stress concentration. The weld must be rejected and repaired (ground and re-welded) or, if impractical, the full section removed and re-welded. Rejection is mandatory per AWS D1.1 Clause 5.7."
+      },
+      "explanation": null,
+      "code_citation": "AWS D1.1 Clause 5.7; NSCP 2015 Chapter 5",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f84d0578af598c6a326d42858f2085e0c6af4ddc054ddddd8ef33fac528ecb84"
+    },
+    {
+      "question_id": "648065a2-3d3f-489a-8e2f-e4d57d1a4b25",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "Which welding process uses a consumable electrode coated with flux and is most commonly specified for field structural work in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GMAW (MIG)"
+        },
+        {
+          "id": "b",
+          "text": "GTAW (TIG)"
+        },
+        {
+          "id": "c",
+          "text": "SMAW (Stick)"
+        },
+        {
+          "id": "d",
+          "text": "FCAW (Flux Cored)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "GMAW requires external shielding gas supply and is sensitive to wind; better suited for controlled shop environments and production welding.",
+        "b": "GTAW produces superior weld quality but is slow and requires very high operator skill; used for specialty applications (aluminum, stainless, thin sections), not structural field work.",
+        "d": "FCAW is suitable for production work and outdoor applications but is less versatile than SMAW for Philippine field conditions.",
+        "correct": "SMAW (Shielded Metal Arc Welding) uses a consumable flux-coated electrode, requires minimal equipment, tolerates windy outdoor conditions, and works in all positions. It is the foundation of TESDA NC II certification and dominates Philippine field structural work."
+      },
+      "explanation": null,
+      "code_citation": "AWS D1.1; TESDA NC II; NSCP 2015 Chapter 5",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:388d80ce33d74175e30aa97f2f2ba09ad7adf6ea48a9e86d100dbaeb9374ec38"
+    },
+    {
+      "question_id": "75ff7635-bfbe-4065-b770-5f6ebd9baffc",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "TESDA NC II certification for Shielded Metal Arc Welding (SMAW) qualifies a welder to perform structural connections per NSCP 2015. If a fabricator employs uncertified welders for structural work, what is the compliance risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No risk; TESDA certification is optional and does not affect structural compliance, provided other quality checks are in place."
+        },
+        {
+          "id": "b",
+          "text": "Non-compliance with NSCP 2015 Chapter 5, which requires structural welds to be performed by welders qualified per AWS D1.1; the structure may be considered non-compliant and require re-inspection or rework"
+        },
+        {
+          "id": "c",
+          "text": "Only cosmetic welds require TESDA certification; structural welds do not, unless specified by the project engineer."
+        },
+        {
+          "id": "d",
+          "text": "Uncertified welders can perform any weld if supervised by a certified engineer, assuming the engineer takes full responsibility."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "TESDA NC II provides AWS D1.1-compliant welder qualification recognized for NSCP 2015 structural compliance.",
+        "c": "All structural welds require certified welders; decorative welds may not.",
+        "d": "Engineering supervision does not substitute for welder certification; both are required.",
+        "correct": "NSCP 2015 Chapter 5 (Structural Steel) mandates that structural welds be performed by welders certified per recognized standards (TESDA NC II in the Philippines is the baseline). Employing uncertified welders violates code compliance and creates liability for structural inadequacy. The building authority may reject the structure or require destructive testing and rework."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 5; TESDA NC II",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:44a58db75b4a5584c4f7ba4a27de4978765e13698c487b970c4acab569171cc2"
+    },
+    {
+      "question_id": "f309539c-1c66-434e-823b-bf36ebf22f68",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "A fabricator proposes welding a moment-resisting frame connection using a non-standard CJP groove configuration that falls outside AWS D1.1 prequalified parameters. What is the principal drawback of this approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-prequalified joints require custom qualification testing (expensive, time-consuming) to verify they meet strength requirements; using prequalified joints from AWS D1.1 avoids this cost and schedule impact"
+        },
+        {
+          "id": "b",
+          "text": "Non-prequalified joints cannot be used in the Philippines under any circumstances, as they do not meet local standards"
+        },
+        {
+          "id": "c",
+          "text": "Prequalified joints are always superior in strength; non-prequalified joints are inherently weaker and less reliable"
+        },
+        {
+          "id": "d",
+          "text": "Non-prequalified joints require additional material cost to compensate for reduced capacity, increasing overall project expenses"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Philippine standards allow non-prequalified joints if properly qualified; they are not prohibited.",
+        "c": "Prequalified joints meet a defined standard; non-prequalified joints may be equally strong if properly qualified, but qualification is expensive.",
+        "d": "Material cost is not affected; the concern is qualification testing cost and schedule impact.",
+        "correct": "Prequalified joints have been extensively tested and are approved by AWS D1.1 without requiring individual qualification. Non-prequalified joints must undergo custom testing (tension, bend, CVN impact tests) to demonstrate compliance—a costly process that delays fabrication. For cost and schedule efficiency, designers should default to prequalified joints unless there is a compelling reason otherwise."
+      },
+      "explanation": null,
+      "code_citation": "AWS D1.1",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:98e4b515b14e921bcd53ab2c60741739f104b482b8bb66c16b28e595f73900c8"
+    },
+    {
+      "question_id": "403f9d18-5f2a-4550-ba1e-025a96df41fa",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "A structural detail calls for a 20 mm V-groove weld joining two 25 mm thick steel plates. Why might a U-groove be preferred over a V-groove for this application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "U-groove reduces the number of passes required, decreases total heat input, and reduces residual stress compared to V-groove, providing better economy for thick material"
+        },
+        {
+          "id": "b",
+          "text": "V-groove is always superior to U-groove; the choice is incorrect, which is a common misconception"
+        },
+        {
+          "id": "c",
+          "text": "U-groove permits faster welding speed per pass but requires more total passes, which is often misunderstood"
+        },
+        {
+          "id": "d",
+          "text": "U-groove eliminates the need for preheat, whereas V-groove requires preheating, which is an incorrect assumption"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "V-groove and U-groove each have merit; U-groove is often preferred for thick material due to reduced passes and stress.",
+        "c": "U-groove may permit faster individual passes, but the advantage is fewer total passes required, not more.",
+        "d": "Both V-groove and U-groove may require preheat; the groove profile does not eliminate preheat requirements.",
+        "correct": "For thick material (25 mm), U-groove's rounded profile requires fewer passes (typically 3–4 vs. 5–7 for V-groove), reducing total heat input and residual stress. The rounded profile distributes stress more favorably. U-groove is more economical and produces superior metallurgical properties in thick sections."
+      },
+      "explanation": null,
+      "code_citation": "AWS D1.1",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6bafd703cb07dc7f8ec303f3a41fc98d226dfa29be54f8bd9d686a992e13ef32"
+    }
+  ]
+}

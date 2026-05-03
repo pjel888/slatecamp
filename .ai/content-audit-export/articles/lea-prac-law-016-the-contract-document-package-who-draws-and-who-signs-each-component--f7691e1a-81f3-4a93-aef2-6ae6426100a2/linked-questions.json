@@ -1,0 +1,508 @@
+{
+  "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:2ce49ab7cca07498ee3b9403514f3455324125b8fb83175855872b5a2f3b74cc",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "51c4a992-e7dd-4502-8f10-1253a3e035fe",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "Who may legally sign and seal architectural drawings under RA 9266?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any architect, registered or not"
+        },
+        {
+          "id": "b",
+          "text": "Only a Registered Licensed Architect (RLA)"
+        },
+        {
+          "id": "c",
+          "text": "The project manager or engineer-in-charge"
+        },
+        {
+          "id": "d",
+          "text": "Any professional engineer licensed in the Philippines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Eliminates the registration requirement; only RLAs licensed by the PRC may sign architectural documents.",
+        "c": "Confuses project management roles with professional sealing authority; the project manager is not a licensed professional responsible for document certification.",
+        "d": "Extends authority to other engineers; only architects can sign architectural drawings; structural, mechanical, electrical, and sanitary engineers sign their respective discipline drawings.",
+        "correct": "RA 9266 Section 23 requires that only a Registered Licensed Architect may sign and seal architectural drawings. The signature and seal certify that the architect has reviewed the document and is responsible for its accuracy and code compliance. Unlicensed or differently-disciplined professionals cannot sign architectural drawings.",
+        "takeaway": "Only a Registered Licensed Architect (RLA) may sign and seal architectural drawings under RA 9266 Section 23."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ea7971b7dfb24ad87ab8a4b2b9b19b33a22803483faa2a3d0ce9e5d53f65009c"
+    },
+    {
+      "question_id": "d71e768c-eb25-4332-8572-f4912b035ae2",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "The contract documents package includes architectural drawings, structural drawings, mechanical drawings, electrical drawings, and plumbing drawings. Who is responsible for ensuring these documents are coordinated and integrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each specialist is responsible only for their own drawings; coordination is the contractor's responsibility during construction"
+        },
+        {
+          "id": "b",
+          "text": "The architect, as the lead designer, typically coordinates the design and ensures all specialists integrate their work with the architectural design"
+        },
+        {
+          "id": "c",
+          "text": "The structural engineer, as the most technically senior professional, coordinates all design disciplines and resolves conflicts"
+        },
+        {
+          "id": "d",
+          "text": "No coordination is required if each professional signs and seals their respective documents independently"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misallocates responsibility; coordination is a design team function, not a contractor construction function.",
+        "c": "Incorrectly designates the structural engineer as coordinator; the architect is the lead designer and coordinates all disciplines.",
+        "d": "Falsely assumes professional seals eliminate coordination responsibility; coordination is essential and precedes sealing.",
+        "correct": "Professional practice requires coordination of multi-disciplinary drawings. The architect typically serves as the lead designer (UAP SPP 202) and is responsible for facilitating coordination between the architect's design and the various engineering disciplines. Coordination ensures that structural elements fit within the architect's spatial design, that mechanical and electrical systems can be routed through available spaces, and that all elements integrate into a cohesive building. Failure to coordinate results in conflicts that create construction problems and cost overruns.",
+        "takeaway": "The architect, as lead designer, is responsible for coordinating all design disciplines to ensure integrated, conflict-free contract documents."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP 202, RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de494d89aabf804d625f5772aca51da2a0bf3a4a84fbfc31315d35a577364ed4"
+    },
+    {
+      "question_id": "ddb0a3cb-6848-4533-ab0b-e34ea934d442",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "An architect from Firm A signs and seals architectural drawings actually prepared by architects from Firm B. What professional and legal consequences result?",
+      "options": [
+        {
+          "id": "a",
+          "text": "None, because the drawing is sealed and the contractor can rely on it, assuming all responsibility for any errors"
+        },
+        {
+          "id": "b",
+          "text": "Violation of RA 9266 Section 23; the architect from Firm A signed documents not prepared personally or under direct supervision"
+        },
+        {
+          "id": "c",
+          "text": "Only a disciplinary concern for the architect from Firm B for poor work, as Firm A's architect merely endorsed the documents"
+        },
+        {
+          "id": "d",
+          "text": "The architect from Firm A is not personally liable because the architect merely stamped pre-existing documents, which were assumed to be correct"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mistakenly assumes the seal's presence validates the documents; the seal is only valid if the architect personally prepared or directly supervised the work.",
+        "c": "Misallocates responsibility; the architect signing the documents assumes full responsibility, regardless of where the work originated.",
+        "d": "Falsely claims the architect has no personal liability; the signer assumes full responsibility, not a mere administrative role.",
+        "correct": "RA 9266 Section 23 prohibits architects from signing and sealing documents they did not personally prepare or that were not prepared under their direct supervision. An architect who stamps documents prepared by another firm without personal involvement violates this requirement and faces professional discipline including suspension or revocation. The signature certifies personal responsibility, which cannot be delegated.",
+        "takeaway": "Signing and sealing documents prepared by others without direct supervision violates RA 9266 Section 23 and creates grounds for license suspension or revocation."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:374555bf9a4abdf11e81b889973a15cf8cb7dc57e191088e92634e45a254bc96"
+    },
+    {
+      "question_id": "4b2b462f-75a5-4c20-b446-fc1c564f5335",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "A structural engineer is asked to sign structural drawings based on the architect's design. The engineer identifies that the architect's specified floor-to-floor heights are insufficient to accommodate the required structural depth, creating a structural conflict. The architect insists the design is finalized and refuses to modify the heights. What is the engineer's professional obligation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The engineer must sign the drawings as requested, since the architect is the lead designer and the engineer's role is limited to structural calculations only"
+        },
+        {
+          "id": "b",
+          "text": "The engineer should refuse to sign the documents and should document the structural inadequacy in writing to the architect and owner"
+        },
+        {
+          "id": "c",
+          "text": "The engineer may sign the drawings if the engineer notes the conflict in the specifications as a disclaimer appended to the structural drawings"
+        },
+        {
+          "id": "d",
+          "text": "The engineer should modify the structural design to fit the architect's space without notification to the architect or the project owner"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely subordinates the engineer's professional responsibility to the architect's authority; both have independent certification obligations.",
+        "c": "Allows the engineer to sign knowing of structural inadequacy; noting the conflict does not relieve the certification obligation.",
+        "d": "Violates professional ethics and communication obligations; the engineer cannot unilaterally modify without coordination and owner/architect knowledge.",
+        "correct": "Professional standards require that professionals refuse to sign documents they believe are deficient or contain code violations. A structural engineer cannot sign drawings that are structurally inadequate for the design intent or that violate structural codes. The engineer has a professional obligation to communicate the structural concern to the architect and owner in writing, documenting the nature of the conflict. If the conflict cannot be resolved and the design remains deficient, the engineer must decline to sign and should not allow liability to fall on the engineer for a design conflict created by the architect.",
+        "takeaway": "Professionals must refuse to sign deficient documents and must communicate concerns in writing to the architect and owner."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:318033708dd0fcf37efea714a874627fbbf5482b409e3965499f5051f5e28b22"
+    },
+    {
+      "question_id": "bfd3fd73-7066-4d98-af8d-d5dbe2891eee",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "An architect directs a junior architect-in-training to prepare construction drawings. The architect provides general guidance on design parameters but is not present during the drawing development and does not review the documents until they are substantially complete. May the architect sign and seal these drawings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the architect is the responsible party for the project, ensuring all aspects are covered"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if the junior staff member is competent and experienced, having worked on similar projects before"
+        },
+        {
+          "id": "c",
+          "text": "No, because RA 9266 Section 23 requires direct supervision, meaning the architect must be actively involved during drawing development"
+        },
+        {
+          "id": "d",
+          "text": "Only if the junior staff member has a license under a separate professional firm, which allows for independent practice"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Treats overall project responsibility as sufficient; responsibility alone does not substitute for direct supervision during drawing development.",
+        "b": "Suggests competence of staff eliminates the supervision requirement; the statute requires the architect's active involvement regardless of staff competence.",
+        "d": "Misses the core issue; licensing status of junior staff is irrelevant; the supervising architect must maintain active involvement.",
+        "correct": "RA 9266 Section 23 requires that architects may only sign and seal documents prepared by them personally or under their direct supervision. Direct supervision means the architect was actively involved in the design process and oversaw the work as it was being developed. Providing general guidance after the fact, or reviewing completed documents, does not constitute direct supervision. The architect cannot sign documents prepared without direct involvement.",
+        "takeaway": "Direct supervision under RA 9266 Section 23 requires the architect's active involvement in the design process, not merely final review."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f6a9b126518ac0f4f39cd94d5932f9292916292386c28e8c62443b7e77d65e13"
+    },
+    {
+      "question_id": "211f8944-0730-48ee-8827-4fd27f5fbf35",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "An architect received drawing sets from a design firm in another country for a building to be constructed in the Philippines. The architect made minor edits to adapt the drawings to Philippine site conditions and signed and selead them as the responsible architect. What professional and legal issue results from this action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "None, because the architect made edits demonstrating personal involvement, which is a misunderstanding of RA 9266"
+        },
+        {
+          "id": "b",
+          "text": "None, because international architectural designs are legally permitted without modification, which is incorrect under RA 9266"
+        },
+        {
+          "id": "c",
+          "text": "The architect likely violated RA 9266 Section 23 by signing documents not prepared personally or under direct supervision, even though minor edits were made"
+        },
+        {
+          "id": "d",
+          "text": "The architect is responsible only for the portions of drawings the architect personally edited, which is not a valid defense under RA 9266"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Treats minor edits as sufficient involvement; the statute requires direct involvement in design development, not just minor corrections.",
+        "b": "Falsely permits international designs to be adopted without meeting RA 9266 Section 23 requirements; the statute applies to all work signed in the Philippines.",
+        "d": "Creates false partial responsibility; the seal certifies responsibility for the entire document, not just edited portions.",
+        "correct": "Making minor edits to substantially pre-existing drawings prepared by others does not constitute 'preparation' or 'direct supervision' within the meaning of RA 9266 Section 23. The architect's signature certifies responsibility for the entire document, including all portions. An architect cannot accept responsibility for major design work performed by others merely by making minor edits. The architect should either: (1) thoroughly review and coordinate the design with direct involvement in all major design decisions, or (2) decline to sign and let the original designer assume responsibility for work done in the Philippines.",
+        "takeaway": "Minor edits to foreign designs do not satisfy the direct supervision requirement; the architect must be actively involved in all major design decisions."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cdcc9a8085a01ddbae20c28c2dd4bd001ef2a1b7358d4fec9cbee123489e11e8"
+    },
+    {
+      "question_id": "a05686b5-2d67-484a-b577-b643f7bb041c",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "An electrical engineer signed and selead electrical system drawings that were later found to contain errors in circuit sizing that violated the National Electrical Code. A contractor relied on the drawings to purchase materials and install the system. When the non-compliance was discovered during inspection, the engineer disclaimed responsibility by stating that the contractor should have caught the error. What is the professional and legal result?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The engineer is not responsible; the contractor had the obligation to verify code compliance, which is a common misconception about professional responsibility"
+        },
+        {
+          "id": "b",
+          "text": "The engineer is responsible; the signature and seal certify personal responsibility for the document's accuracy and code compliance, and a reasonable professional should have caught obvious code violations"
+        },
+        {
+          "id": "c",
+          "text": "Both the engineer and contractor share equal responsibility, which oversimplifies the legal implications of professional certification"
+        },
+        {
+          "id": "d",
+          "text": "The engineer is responsible only if the contractor's insurance does not cover the correction costs, which misrepresents the engineer's professional obligations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely shifts responsibility to the contractor; the professional's seal is a certification that contractors reasonably rely upon.",
+        "c": "Creates false equal responsibility; the professional who seals the document bears the primary responsibility.",
+        "d": "Invents an insurance coverage condition; responsibility exists independently of insurance availability.",
+        "correct": "The professional who signs and seals a document assumes direct responsibility for its accuracy, completeness, and code compliance. The signature certifies that a reasonable professional would have reviewed the document and discovered obvious errors or code violations. An electrical engineer cannot disclaim responsibility by claiming the contractor should have caught the engineer's professional errors. The contractor relied on the engineer's certification. The engineer faces professional liability for negligence and may face professional discipline.",
+        "takeaway": "The professional who seals a document bears primary responsibility for its accuracy and code compliance; contractors rely on the seal as certification."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8f6f5cd31ca5270d8e67f446e740deac13dcc19a609e981894df095720e424b4"
+    },
+    {
+      "question_id": "8c035b01-26a5-443c-a161-5264981e503f",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "A registered mechanical engineer is asked to prepare and sign mechanical drawings. The structural engineer has not yet finalized the structural design, so the mechanical engineer cannot determine how to route the ductwork around the structural elements. What is the appropriate professional response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The mechanical engineer should prepare and sign the drawings based on assumptions about the structural design"
+        },
+        {
+          "id": "b",
+          "text": "The mechanical engineer should refuse to sign any documents until the structural design is finalized and coordination can be achieved"
+        },
+        {
+          "id": "c",
+          "text": "The mechanical engineer may sign the drawings and note in the specifications that the designs are preliminary pending structural coordination"
+        },
+        {
+          "id": "d",
+          "text": "The mechanical engineer should request that the architect coordinate the designs before requesting signatures"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Creates technical and legal risk; signing based on assumptions about unfinalized structural design violates the certification standard.",
+        "b": "Correctly identifies the refusal to sign, but skips the critical step of requesting architectural coordination.",
+        "c": "Allows the professional to disclaim responsibility; signing with a note about preliminary status does not relieve the professional's certification obligation.",
+        "correct": "Professional practice standards (UAP SPP 201) require coordination of multi-disciplinary drawings to prevent conflicts and ensure integration. The mechanical engineer should communicate with the architect that structural and mechanical designs cannot be finalized without coordination. The architect, as the lead designer, should facilitate this coordination to ensure all systems integrate. The professional should not sign documents knowing they are incomplete or conflict with other design elements.",
+        "takeaway": "Professionals should refuse to sign incomplete drawings and request the architect to coordinate all disciplines before finalizing documents."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP 201, RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5657f686613bbef44c28aa89603d95c4972f1613467bbc7d5916021e9a5733ef"
+    },
+    {
+      "question_id": "11c0ae86-0f14-4dc0-96aa-0c1d0a7b16d8",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "What is the primary legal significance of a professional's signature and seal on construction documents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It merely indicates the document has been completed and is ready for construction, without implying any liability"
+        },
+        {
+          "id": "b",
+          "text": "It certifies that the professional personally reviewed the document and is responsible for its accuracy, code compliance, and professional adequacy"
+        },
+        {
+          "id": "c",
+          "text": "It transfers all liability from the professional to the contractor, absolving the professional of any future claims"
+        },
+        {
+          "id": "d",
+          "text": "It guarantees the project will be completed on budget and schedule, regardless of unforeseen circumstances"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understates the seal's significance; it is not a mere completion indicator but a certification of responsibility.",
+        "c": "Reverses liability; the seal increases the professional's liability, not transfers it away.",
+        "d": "Extends the seal's scope beyond its function; sealing documents certifies design, not cost and schedule performance.",
+        "correct": "A professional's signature and seal constitute a certification that the professional has reviewed the document, verified its accuracy and completeness, and is willing to assume professional liability for its contents. The signature and seal certify compliance with applicable building codes and professional standards. The professional whose seal appears on the document bears direct responsibility for the document's accuracy and is subject to professional discipline and liability if the document is deficient.",
+        "takeaway": "A professional seal is a legal certification of personal responsibility for document accuracy, code compliance, and professional adequacy."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:617cd3869409d3b6d1417159dbd853ffcb568e78cd78defbd9690e1ec8ed50c1"
+    },
+    {
+      "question_id": "f10783fa-c9df-4598-bd4d-4669a43c974a",
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
+      "text": "Who is responsible for signing and sealing structural and foundation drawings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Registered Licensed Architect, provided they have additional certification in structural design"
+        },
+        {
+          "id": "b",
+          "text": "Any licensed engineer, regardless of specialization, as long as they are registered"
+        },
+        {
+          "id": "c",
+          "text": "Registered Licensed Structural or Civil Engineer"
+        },
+        {
+          "id": "d",
+          "text": "The contractor's project manager, if they hold a relevant engineering degree"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assigns architectural authority to a non-structural matter; architects do not have authority to sign structural drawings.",
+        "b": "Overgeneralizes; only structural or civil engineers specifically licensed for structural design can sign; other engineering disciplines cannot.",
+        "d": "Assigns professional sealing authority to a non-licensed project manager; sealing requires a licensed engineer, not a management role.",
+        "correct": "Under RA 544 (Civil Engineering Law), only a Registered Civil Engineer may sign and seal structural and foundation drawings. The structural professional's signature certifies the structural adequacy of the design and compliance with structural and building codes.",
+        "takeaway": "Only a Registered Licensed Structural or Civil Engineer may sign and seal structural and foundation drawings."
+      },
+      "explanation": null,
+      "code_citation": "RA 544, RA 9266",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-016-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:835dff9350d18768bd843376840f272b56b12982fe75b0279d26c2df026a9fdb"
+    }
+  ]
+}

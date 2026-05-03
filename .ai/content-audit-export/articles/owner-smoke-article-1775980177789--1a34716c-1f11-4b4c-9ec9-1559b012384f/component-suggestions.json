@@ -1,0 +1,80 @@
+{
+  "article_id": "1a34716c-1f11-4b4c-9ec9-1559b012384f",
+  "slug": "owner-smoke-article-1775980177789",
+  "generated_at": "2026-05-01T13:33:45.624Z",
+  "desired_categories": [
+    "formula",
+    "code_requirement"
+  ],
+  "suggestion_count": 8,
+  "suggestions": [
+    {
+      "component_name": "ModelRegistryPage",
+      "file_path": "src/app/admin/3d-models/_components/ModelRegistryPage.tsx",
+      "likely_category": "formula",
+      "confidence": "low",
+      "reason": "Category formula matched article signals: formula, code_requirement",
+      "auto_insert": false
+    },
+    {
+      "component_name": "Loading",
+      "file_path": "src/app/admin/3d-models/loading.tsx",
+      "likely_category": "formula",
+      "confidence": "low",
+      "reason": "Category formula matched article signals: formula, code_requirement",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditArticleDetailLoading",
+      "file_path": "src/app/admin/ai-audit/articles/[articleId]/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, code_requirement",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditArticlesLoading",
+      "file_path": "src/app/admin/ai-audit/articles/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, code_requirement",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditQuestionDetailLoading",
+      "file_path": "src/app/admin/ai-audit/questions/[questionId]/loading.tsx",
+      "likely_category": "quiz_or_prompt",
+      "confidence": "medium",
+      "reason": "Category quiz_or_prompt matched article signals: formula, code_requirement",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditQuestionsLoading",
+      "file_path": "src/app/admin/ai-audit/questions/loading.tsx",
+      "likely_category": "quiz_or_prompt",
+      "confidence": "medium",
+      "reason": "Category quiz_or_prompt matched article signals: formula, code_requirement",
+      "auto_insert": false
+    },
+    {
+      "component_name": "Loading",
+      "file_path": "src/app/admin/articles/[id]/loading.tsx",
+      "likely_category": "unknown",
+      "confidence": "low",
+      "reason": "Category unknown matched article signals: formula, code_requirement",
+      "auto_insert": false
+    },
+    {
+      "component_name": "ArticleDetailClient",
+      "file_path": "src/app/admin/knowledge/_components/ArticleDetailClient.tsx",
+      "likely_category": "quiz_or_prompt",
+      "confidence": "medium",
+      "reason": "Category quiz_or_prompt matched article signals: formula, code_requirement",
+      "auto_insert": false
+    }
+  ],
+  "auto_insertion_enabled": false,
+  "warnings": [
+    "Auto-insertion is intentionally disabled; use this as review metadata only."
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:612c91d2d413c44fc0389e8f06da30e7c15bc47b723a45aa1eb04d06a2c0fedb",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "cba1db3a-8f02-498e-b367-9dd1e1b4b9a3",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "Concrete moisture test in a ground-floor bathroom shows 5% CM (calcium chloride method). The specification requires <3% CM. What is the appropriate action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Proceed with painting; 5% is acceptable for residential use, especially if the area is well-ventilated and not prone to water exposure"
+        },
+        {
+          "id": "b",
+          "text": "B) Wait for concrete to cure further or install a moisture barrier before painting"
+        },
+        {
+          "id": "c",
+          "text": "C) Use a high-VOC paint that cures faster and traps moisture, which can be suitable for temporary solutions in non-critical areas"
+        },
+        {
+          "id": "d",
+          "text": "D) Apply a thin primer coat to test adhesion, ensuring that the primer is compatible with high moisture levels"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5% CM exceeds the safe limit; will cause blistering.",
+        "c": "High-VOC paint does not cure faster; moisture still causes failure.",
+        "d": "Test coats do not solve the underlying moisture problem.",
+        "correct": "ASTM F1869 (Calcium Chloride) <3lbs/1000sf/24hr or ASTM F2170 <85% RH establishes moisture threshold. to prevent vapor-induced blistering and delamination. Concrete at 5% CM will cause paint failure within 4-6 months. Defer painting or install vapor-barrier systems.",
+        "takeaway": "ASTM F2170: <3% CM is non-negotiable. Test before painting every time. Defer work or install moisture barrier."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F2170 Standard Test Method for Moisture in Concrete",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:feaa70abd1753f33771dd665cf6b22a63519fd2624dcb56ccd2093923c77f224"
+    },
+    {
+      "question_id": "019dc05f-fb68-4e84-ad6f-00cf8aefa974",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "A multi-story residential project in Manila specifies: (1) gypsum drywall walls primed with fungicide-treated primer, (2) topcoat per ASTM D3359 minimum rating 3, (3) ground-floor areas use Hardiflex instead of gypsum. Ambient humidity is 72% year-round. A contractor proposes skipping primer on upper floors where humidity is lower. Evaluate this proposal.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Acceptable; upper floors have lower ambient humidity, so fungicide primer is unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "B) Unacceptable; All drywall requires primer per manufacturer instructions and tropical climate best practice. regardless of location; fungicide protects against condensation risk in air-conditioned spaces transitioning to tropical air"
+        },
+        {
+          "id": "c",
+          "text": "C) Acceptable if paint is applied only in <50% RH conditions per ASTM D3276"
+        },
+        {
+          "id": "d",
+          "text": "D) Unacceptable only if annual rainfall exceeds 2000mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lower ambient humidity does not eliminate condensation risk inside A/C spaces.",
+        "c": "ASTM D3276 conditions are application requirements, not exemption criteria.",
+        "d": "Rainfall is irrelevant to interior humidity and condensation risk.",
+        "correct": "Fungicide primer is non-negotiable in the Philippines' tropical climate. Upper floors face condensation risk when air-conditioned interiors meet warm humid outside air, promoting mold on unprimed substrate. ASTM D3276 and field experience in SE Asia demand primer on all gypsum, regardless of floor. Hardiflex ground-floor choice is appropriate due to flood risk.",
+        "takeaway": "Primer is mandatory on all drywall in tropical zones. No exceptions. Hardiflex + painted drywall = dual strategy for moisture resilience."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3276, Philippine humidity/mold patterns, best practice",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:af215952394c9b4e4c0701afa202a861802499697f8324c57f657e59cb090705"
+    },
+    {
+      "question_id": "3d532852-78fd-453f-9b6b-0658504031ec",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "Which paint system is most appropriate for a high-humidity bathroom in Metro Manila where mold growth is a risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Standard latex paint without primer, which may not provide adequate protection against moisture and mold."
+        },
+        {
+          "id": "b",
+          "text": "B) Wallpaper with standard adhesive, which is not recommended due to potential moisture retention and mold growth."
+        },
+        {
+          "id": "c",
+          "text": "C) Latex or enamel with fungicide-treated primer (e.g., Boysen formulations)"
+        },
+        {
+          "id": "d",
+          "text": "D) Unprimed enamel topcoat only, which lacks the necessary mold-resistant properties for high-humidity environments."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Unprimed latex allows moisture absorption and mold on substrate.",
+        "b": "Wallpaper without fungicide base primer is unsuitable for high humidity.",
+        "d": "Unprimed enamel offers no substrate seal or mold protection.",
+        "correct": "High-humidity bathrooms require fungicide-treated primer to prevent mold and mildew on the drywall substrate. Boysen and Davies offer fungicide-rich primers designed for tropical climates. Latex topcoat over fungicide primer provides durable, mold-resistant finish.",
+        "takeaway": "High-humidity zones = fungicide primer + paint topcoat. Never skip primer. Boysen, Davies have proven fungicide formulations."
+      },
+      "explanation": null,
+      "code_citation": "Philippine paint brands (Boysen, Davies); humidity management practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:16962594fb026933ff53ff18ad8421824343f3952ad5940c5af66e2d165daa98"
+    },
+    {
+      "question_id": "f6f38d2c-0a92-46a1-87e6-afd1f273a3ac",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "What sandpaper grit is required for drywall surface preparation prior to painting per ASTM D3276?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 80-120 grit, typically used for initial smoothing of rough surfaces before finer grits are applied"
+        },
+        {
+          "id": "b",
+          "text": "B) 120-180 grit, which is often recommended for intermediate sanding to remove minor imperfections"
+        },
+        {
+          "id": "c",
+          "text": "C) 220 grit or higher"
+        },
+        {
+          "id": "d",
+          "text": "D) 320 grit or higher, generally reserved for final finishing to achieve a very smooth surface"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "80-120 grit leaves surface too coarse and leaves dust; fails D3276.",
+        "b": "120-180 grit is insufficient; adhesion issues arise.",
+        "d": "320 grit or higher is excessive for drywall; 220 is standard.",
+        "correct": "Drywall manufacturers (USG, National Gypsum) recommend 220-grit minimum for paint prep per industry practice. to ensure adequate surface roughness for paint adhesion and to remove contaminants.",
+        "takeaway": "Always 220-grit minimum. Wipe dust-free after sanding. Coarse grit = poor adhesion = future delamination."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3276 Standard Practice for Paint Testing",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0de09700f9005c5242d0a811b1a1f460bf80b5d07fba763150092dec84fded86"
+    },
+    {
+      "question_id": "79a048fe-1a14-4567-9dcb-593fe8c52e7c",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "What is the typical dry film thickness (DFT) range for a paint primer according to ASTM standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 10-30µm"
+        },
+        {
+          "id": "b",
+          "text": "B) 30-50µm"
+        },
+        {
+          "id": "c",
+          "text": "C) 75-150µm"
+        },
+        {
+          "id": "d",
+          "text": "D) 200-300µm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10-30µm is too thin; primer would not adequately seal substrate.",
+        "c": "75-150µm is the topcoat range, not primer.",
+        "d": "200-300µm exceeds both primer and topcoat requirements.",
+        "correct": "Typical primer DFT is 25-50µm per manufacturer specifications and industry practice (not specified in ASTM D3359). This seals the substrate and promotes topcoat adhesion.",
+        "takeaway": "Primer 30-50µm; topcoat 75-150µm. Measure with wet-film thickness gauge during application."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3359 Test Methods for Measuring Adhesion by Tape",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04a8b0a0f781db429f7e5b638447042028c2816e26fc7418ae040f952f3a9e78"
+    },
+    {
+      "question_id": "12d32db4-e405-47cf-9939-ca441eea46a0",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "A specification calls for Hardiflex fiber cement board in a bathroom wall subject to high moisture. What is a key advantage over gypsum drywall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Lower cost, though it may not offer the same level of moisture resistance"
+        },
+        {
+          "id": "b",
+          "text": "B) Easier to cut and install, which can reduce labor costs and installation time"
+        },
+        {
+          "id": "c",
+          "text": "C) Mold resistance and moisture immunity per specifications like MoldBlock Technology"
+        },
+        {
+          "id": "d",
+          "text": "D) Superior paint adhesion, allowing for a more durable and aesthetically pleasing finish"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Hardiflex costs 20-30% more than drywall; not cheaper.",
+        "b": "Fiber cement is harder to cut than drywall; requires saws.",
+        "d": "Paint adhesion is similar; the substrate durability is the advantage.",
+        "correct": "Hardiflex (fiber cement) resists water, mold, and termites, unlike gypsum. HardiFlex NexGen with MoldBlock Technology is specifically engineered for moist environments. Gypsum absorbs moisture and deteriorates, requiring replacement.",
+        "takeaway": "High-moisture zones (kitchens, bathrooms, flood-prone areas) = Hardiflex. Gypsum will fail; Hardiflex survives."
+      },
+      "explanation": null,
+      "code_citation": "James Hardie Philippines product literature; fiber cement properties",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c6585056d9fe4014ee42100dbd2998db15ece8ca9b3d701e33d4f09abfcda89"
+    },
+    {
+      "question_id": "766af87c-5846-4db9-903d-fb8aea71a759",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "Why is it critical to maintain application conditions per ASTM D3276 (10°C minimum, <50% RH, no rain) during paint application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) To ensure the painter's comfort, which indirectly affects the quality of work performed."
+        },
+        {
+          "id": "b",
+          "text": "B) To achieve proper curing and prevent moisture entrapment during film formation"
+        },
+        {
+          "id": "c",
+          "text": "C) To reduce paint consumption per project, thereby lowering overall costs."
+        },
+        {
+          "id": "d",
+          "text": "D) To allow faster drying so recoats can be applied sooner, minimizing project delays."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Painter comfort is not relevant to coating performance.",
+        "c": "Faster drying does not ensure proper chemical cure; conditions matter more.",
+        "d": "Paint consumption is unaffected by application conditions.",
+        "correct": "ASTM D3276 conditions optimize curing kinetics. Low temperature (<10°C) slows evaporation, trapping moisture in the film. High RH (>50%) and rain introduce moisture into the forming film, causing blistering, delamination, and adhesion loss.",
+        "takeaway": "Poor conditions (high humidity, low temperature, rain) cause future failures. Delaying work is cheaper than repainting."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3276 Standard Practice for Paint Testing",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fce997fff40d4aace349731697336f51d769e971cc15fa17b2fa78f463f6df1b"
+    },
+    {
+      "question_id": "64caca33-4249-4624-8b58-7bd479f7db72",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "Paint blistering appears 3 months after application on a ground-floor concrete wall in Cebu. ASTM D3359 adhesion test shows rating 3 (acceptable). Concrete moisture is 4% CM. What is the root cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Paint adhesion failure per ASTM D3359 (rating 3 is below spec), indicating a need for re-evaluation of the substrate preparation process"
+        },
+        {
+          "id": "b",
+          "text": "B) Concrete moisture (4% CM) exceeds ASTM F2170 threshold, causing vapor-induced blistering beneath the film"
+        },
+        {
+          "id": "c",
+          "text": "C) High ambient humidity in Cebu causes topcoat incompatibility, particularly with solvent-based paints"
+        },
+        {
+          "id": "d",
+          "text": "D) Insufficient primer thickness, which fails to provide adequate sealing against moisture ingress"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Rating 3 meets minimum spec; not the cause.",
+        "c": "High humidity affects surface moisture, not subsurface vapor-drive.",
+        "d": "Primer thickness does not prevent vapor diffusion; moisture barrier would.",
+        "correct": "Adhesion rating 3 is acceptable per ASTM D3359. Blistering with acceptable adhesion indicates moisture vapor-drive from substrate. Concrete at 4% CM exceeds ASTM F2170 threshold (<3% CM). Moisture vapor pressure builds behind the film, causing blisters.",
+        "takeaway": "Blistering + acceptable adhesion = moisture problem in substrate. Always test concrete moisture per ASTM F2170 before painting."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F2170, ASTM D3359; concrete moisture failure modes",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cea344a8c6320666d4047b739b8467a8ada368664bdf3b2d7bcea209286756a9"
+    },
+    {
+      "question_id": "a4b0ab65-2c30-4876-998d-adae88195d11",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "According to ASTM D3359, what adhesion rating on the 0-5 sclea is the minimum acceptable for interior wall paint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 0 (complete adhesion)"
+        },
+        {
+          "id": "b",
+          "text": "B) 2 (5-15% adhesion loss)"
+        },
+        {
+          "id": "c",
+          "text": "C) 3 (5-15% adhesion loss)"
+        },
+        {
+          "id": "d",
+          "text": "D) 5 (complete adhesion loss)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0 is perfect adhesion (no loss); not the minimum, the ideal.",
+        "b": "2 indicates 15-35% loss (ASTM D3359 classification), unacceptable per typical specifications.",
+        "d": "5 is complete failure; rejected.",
+        "correct": "ASTM D3359 defines rating 3 as 5-15% adhesion loss (moderate flaking). Rating 4 (<5% loss) is superior, but many specifications accept rating 3 as the minimum for interior walls. Ratings 0, 1, and 2 indicate higher loss and are generally rejected. Always refer to project-specific requirements.",
+        "takeaway": "Spec minimum often rating 3 (5-15% loss). Rating 4 or better is preferred. Verify project requirements."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3359 Standard Test Methods",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:400eee3125886b501e28c3e394c3226cf20fb8ccf5469487d63ec64b3dbc3b2f"
+    },
+    {
+      "question_id": "48ee239e-7dfc-480f-926e-5b6276be4c19",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "A painter applies latex topcoat to gypsum drywall sanded with 120-grit paper and not wiped. What failure is most likely to occur within 12 months?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Cracking due to substrate movement, which can occur if the underlying structure shifts or settles over time"
+        },
+        {
+          "id": "b",
+          "text": "B) Delamination due to poor adhesion from dust and coarse surface profile"
+        },
+        {
+          "id": "c",
+          "text": "C) Fading due to UV exposure, especially if the paint is not UV-resistant and the area receives direct sunlight"
+        },
+        {
+          "id": "d",
+          "text": "D) Mold growth due to fungus, which can happen in areas with high humidity and poor ventilation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cracking is a substrate issue, not a prep failure.",
+        "c": "Fading is UV-related, not adhesion.",
+        "d": "Mold requires fungicide-free primer, not prep issues.",
+        "correct": "Inadequate surface prep (120-grit, not 220; dust residue) violates ASTM D3276. Paint fails to grip the surface, causing delamination and peeling within 6-12 months.",
+        "takeaway": "Surface prep failures show as delamination/peeling, not cracking or fading. Poor prep is the #1 cause of paint failure."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3276; Field failure analysis",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e721817bc52d7c725e1e0fda1c193b71d1e637db20c84e9e8e90cce3f0e3e9b6"
+    }
+  ]
+}

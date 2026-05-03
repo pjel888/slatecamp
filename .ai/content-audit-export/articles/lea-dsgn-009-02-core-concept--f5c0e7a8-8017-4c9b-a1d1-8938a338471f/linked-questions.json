@@ -1,0 +1,508 @@
+{
+  "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:74221af68519d20a291d8a8259f2a01b9febfa25c50910802d9c8c81045ad0a1",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "a86fbe5a-9226-473c-93b0-56c54b183167",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "According to PD 1096, what is the minimum window-to-floor ratio for adequate daylighting in habitable rooms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1:5 (20% window area)"
+        },
+        {
+          "id": "b",
+          "text": "1:10 (10% window area)"
+        },
+        {
+          "id": "c",
+          "text": "1:15 (6.7% window area)"
+        },
+        {
+          "id": "d",
+          "text": "1:20 (5% window area)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1:5 is not a code requirement; it is often used as a performance target but is not the legal minimum.",
+        "c": "1:15 is insufficient and violates the 10% minimum mandated by Section 808.",
+        "d": "1:20 (5%) is the minimum for ventilation in toilets and bathrooms (Section 809), but habitable rooms require 10% for both light and ventilation.",
+        "correct": "PD 1096 Section 808 specifies that for habitable rooms, the total free area of windows shall be equal to at least 10% of the floor area.",
+        "takeaway": "Habitable rooms = 10% for Light (Sec 808) and 10% for Ventilation (Sec 809). Toilets/Bathrooms = 5% for Ventilation."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Section 808, 809",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:07ede4035d1279aaba3138b6657bcaa8a46108b751386a350eb1477685525eec"
+    },
+    {
+      "question_id": "ac6d0468-5371-439e-82ac-657907c70e51",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "Does the daylighting depth formula (2.5× ceiling height) vary based on the building occupancy type (e.g., Office vs. Residential)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, offices require 3.0× while residential requires 2.0×."
+        },
+        {
+          "id": "b",
+          "text": "No, the physics of light penetration is constant regardless of occupancy."
+        },
+        {
+          "id": "c",
+          "text": "Yes, it depends on the lux level required for the specific task."
+        },
+        {
+          "id": "d",
+          "text": "No, it only varies based on the Visible Transmittance (VT) of the glass."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Occupancy doesn't change physics.",
+        "c": "While task requirements change, the 'adequate' daylighting zone is physically defined by the geometry of the space.",
+        "d": "VT affects light intensity, but the geometric reach of daylight is a function of ceiling height.",
+        "correct": "The 2.5× rule is a physical principle of light penetration relative to an opening's height. While task requirements (lux) change, the physical depth of daylight penetration remains constant.",
+        "takeaway": "Daylighting depth is a geometric constant: 2.5 × height."
+      },
+      "explanation": null,
+      "code_citation": "Daylighting Geometry Principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:02b7b083b3e0e5cabb860a3094864ffcebe2686db3fe842322ed2db7d389760a"
+    },
+    {
+      "question_id": "2faad393-8600-4cf1-a5ef-3457667d7726",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "A floor plate of 2,500 m² is served by a total window area of 250 m². Calculate the window-to-floor ratio and determine if this meets PD 1096 daylighting requirements for a habitable space.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1:10 (10%), compliant"
+        },
+        {
+          "id": "b",
+          "text": "1:10 (10%), non-compliant because 10% is the target, not the minimum"
+        },
+        {
+          "id": "c",
+          "text": "1:10 (10%), compliant; but violates ventilation rules"
+        },
+        {
+          "id": "d",
+          "text": "1:100, non-compliant"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "10% is indeed the legal minimum; meeting the minimum constitutes compliance.",
+        "c": "Section 809 also requires 10% for ventilation in habitable rooms; therefore, a 10% opening (if operable) would be compliant for both.",
+        "d": "1:100 is a calculation error.",
+        "correct": "250 ÷ 2,500 = 0.10 or 10%. This exactly meets the Section 808 requirement for daylighting in habitable rooms.",
+        "takeaway": "Always verify WFR against the 10% rule for habitable spaces in PD 1096."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Section 808",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f9a6605cf7a71b4597cd3bf40f7315b532e7ce6b75218f76c346d3e2f3b5fe6"
+    },
+    {
+      "question_id": "d061e52e-e7e7-443a-a37f-e33880da175f",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "A residential bedroom has a 2.4 m floor-to-ceiling height. Calculate the daylighting depth to determine the maximum room depth for adequate natural lighting.",
+      "options": [
+        {
+          "id": "a",
+          "text": "4.8 m"
+        },
+        {
+          "id": "b",
+          "text": "6.0 m"
+        },
+        {
+          "id": "c",
+          "text": "2.4 m"
+        },
+        {
+          "id": "d",
+          "text": "8.0 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "4.8 m is 2.0× height.",
+        "c": "2.4 m is 1.0× height.",
+        "d": "8.0 m is 3.3× height, which is too deep for a single-side window.",
+        "correct": "2.4 m × 2.5 = 6.0 m. This is the maximum depth at which daylight can reach the back of the room effectively.",
+        "takeaway": "Design room depths within 2.5× the ceiling height to ensure natural light reaches the interior."
+      },
+      "explanation": null,
+      "code_citation": "IESNA Lighting Handbook",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:beb58e08e5a887b97dce8f23c1c03100267d074ee061e756dec1b9a971f9465e"
+    },
+    {
+      "question_id": "8eb3969c-521a-4c4e-b25c-9d3529550db4",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "A floor plate has total window area of 320 m² and total floor area of 3,200 m². The design uses half of these windows as operable for ventilation. Which statement is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The design is compliant for daylighting but non-compliant for ventilation."
+        },
+        {
+          "id": "b",
+          "text": "The design is compliant for both daylighting and ventilation, meeting the minimum operable window area required for natural ventilation as per local building codes."
+        },
+        {
+          "id": "c",
+          "text": "The design is non-compliant for both, failing to meet the necessary standards for either daylighting or ventilation as outlined in the building regulations."
+        },
+        {
+          "id": "d",
+          "text": "The design exceeds both requirements by 50%, providing more than the necessary window area for both daylighting and ventilation according to the latest architectural guidelines."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Ventilation is only 5%, which is below the 10% requirement for habitable spaces.",
+        "c": "Daylighting is exactly at the 10% minimum, so it is compliant.",
+        "d": "The design hits the minimum for light and fails the minimum for ventilation.",
+        "correct": "Daylighting: 320/3200 = 10% (Compliant). Ventilation: (320/2)/3200 = 5% (Non-compliant). PD 1096 Section 809 requires 10% for ventilation in habitable rooms.",
+        "takeaway": "Habitable rooms require 10% for light AND 10% for ventilation. 5% is only for bathrooms."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Section 808, 809",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:963ae540ff5c19b69008eeb542aeb271d692be75edfda33dd3ce6eb876ad507f"
+    },
+    {
+      "question_id": "217c974c-57bb-441d-b398-8ed9565040f7",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "A designer optimizes a building's daylighting by: (1) orienting the long axis East-West, (2) minimizing East/West windows, and (3) maximizing North/South windows. Evaluate this strategy for the Philippines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "This is an excellent strategy that follows tropical passive design principles."
+        },
+        {
+          "id": "b",
+          "text": "This strategy is flawed because the long axis should be North-South, which is a common misconception in tropical design"
+        },
+        {
+          "id": "c",
+          "text": "This strategy is non-compliant with PD 1096, which requires specific window orientations for compliance"
+        },
+        {
+          "id": "d",
+          "text": "This strategy only works for residential buildings, limiting its applicability to other building types"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "A N-S long axis would place the largest walls facing the harsh East/West sun, which is incorrect for the tropics.",
+        "c": "This strategy facilitates compliance by making it easier to provide the 10% WFR without creating thermal discomfort.",
+        "d": "Passive orientation is applicable to all building types to reduce cooling loads.",
+        "correct": "Orienting the long axis East-West ensures that the longest facades face North and South. This minimizes solar exposure on the East/West walls and allows for controllable daylighting on the larger N/S facades.",
+        "takeaway": "Long Axis = East-West; Long Facades = North-South. This is the gold standard for Philippine passive design."
+      },
+      "explanation": null,
+      "code_citation": "Tropical Passive Design, LEA-DSGN-009-01",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:73a857d007645c3d309625a48ec772c487894021c3a55c6499c73f96d580d140"
+    },
+    {
+      "question_id": "c9774f9c-8e63-4f0d-a4a1-dc710e7cd04a",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "A designer proposes a 1:6 window-to-floor ratio on a west-facing facade in the Philippines. What is the primary design concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduction in structural rigidity, which may compromise the building's ability to withstand lateral forces."
+        },
+        {
+          "id": "b",
+          "text": "Increased structural load, potentially requiring additional reinforcement in the facade design."
+        },
+        {
+          "id": "c",
+          "text": "Excessive afternoon solar heat gain and glare."
+        },
+        {
+          "id": "d",
+          "text": "Violation of the maximum WFR in PD 1096, which could lead to non-compliance with local building regulations."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Glazing area does not typically compromise rigidity in framed structures.",
+        "b": "Glass is heavier than some wall types, but this is rarely the 'primary' concern compared to thermal comfort.",
+        "d": "PD 1096 sets a minimum WFR (1:10), not a maximum.",
+        "correct": "West-facing glazing in the tropics is the most problematic due to low-angle afternoon sun, which causes extreme heat gain and glare.",
+        "takeaway": "West facades are the 'critical zone' for solar heat gain in the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "Tropical Passive Design Principles",
+      "bloom_level": "understand",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e12d366085aa80741af28234de87ec2a4193da7b85a346ca73add70cfbe8adfa"
+    },
+    {
+      "question_id": "89b9fc9b-5119-44df-8bba-54bb55658cc3",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "An office corridor has a floor-to-ceiling height of 2.7 m and is served by windows at one end. If the corridor is 9.5 m long, what proportion of the corridor benefits from adequate natural daylight?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The entire corridor, assuming optimal window placement and unobstructed light paths"
+        },
+        {
+          "id": "b",
+          "text": "Approximately 70%"
+        },
+        {
+          "id": "c",
+          "text": "Approximately 50%, depending on the window size and the presence of any obstructions that may limit light penetration"
+        },
+        {
+          "id": "d",
+          "text": "None, if the windows are obstructed or improperly sized, preventing adequate light distribution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "6.75 m is less than 9.5 m; the back of the corridor will be dark.",
+        "c": "50% would imply a depth of only 4.75 m.",
+        "d": "Natural daylight is clearly available for the portion nearest the window.",
+        "correct": "Daylighting depth = 2.5 × 2.7 m = 6.75 m. Proportion = 6.75 ÷ 9.5 ≈ 71%. Therefore, roughly 70% of the corridor is adequately daylighted.",
+        "takeaway": "Calculate the depth first, then divide by the total room dimension to find the daylighted proportion."
+      },
+      "explanation": null,
+      "code_citation": "Daylighting Depth Principles",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3e629500cc12626bffda4abc31749db523ff7db4b5914633d1436a6d0c784025"
+    },
+    {
+      "question_id": "77f9ca20-f908-4b1d-846d-951099e0690c",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "Compare Design A (1:10 WFR, equal windows on 4 sides) and Design B (1:10 WFR, windows only on North and South facades). Which is preferred for the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design A; it provides uniform light from all directions and maximizes daylighting flexibility."
+        },
+        {
+          "id": "b",
+          "text": "Design B; it minimizes heat gain by eliminating East/West glazing."
+        },
+        {
+          "id": "c",
+          "text": "Design A; it is easier to comply with code and simplifies window scheduling documentation."
+        },
+        {
+          "id": "d",
+          "text": "Design B; but it is non-compliant because it lacks East/West light required by the code."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uniform light from all sides includes uncontrollable heat gain from the West.",
+        "c": "Both have the same WFR (1:10), so both comply with the minimum area requirement.",
+        "d": "Code does not require windows on all sides; it only requires a total area relative to the floor.",
+        "correct": "Design B follows passive cooling principles by placing windows on the North/South sides, which are easier to shade, while avoiding the harsh East/West solar heat gain.",
+        "takeaway": "Passive design favors North-South orientation for glazing in the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Section 808, Tropical Passive Design",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:03238893f65a6385f35452113f7ae97f69e3b55b214a0455a7b9778e1f240c53"
+    },
+    {
+      "question_id": "3a026507-6375-45fb-80ff-90df74ee593b",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "In a commercial office building with 3.0 m floor-to-ceiling height, what is the effective daylighting depth from the exterior windows, assuming the 2.5× ceiling height rule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.0 m"
+        },
+        {
+          "id": "b",
+          "text": "6.0 m"
+        },
+        {
+          "id": "c",
+          "text": "7.5 m"
+        },
+        {
+          "id": "d",
+          "text": "9.0 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3.0 m is only 1.0× the height.",
+        "b": "6.0 m is 2.0× the height.",
+        "d": "9.0 m is 3.0× the height, which usually results in insufficient light levels in the interior.",
+        "correct": "Daylighting depth = 2.5 × ceiling height. 2.5 × 3.0 m = 7.5 m. This rule of thumb determines the zone where natural light is most effective.",
+        "takeaway": "2.5× Ceiling Height = Effective Daylighting Depth."
+      },
+      "explanation": null,
+      "code_citation": "IESNA Lighting Handbook",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4ccb25481ddf5c795d0c47e35826c2d49daf93f0f3d33e39797da2f83b16d949"
+    }
+  ]
+}

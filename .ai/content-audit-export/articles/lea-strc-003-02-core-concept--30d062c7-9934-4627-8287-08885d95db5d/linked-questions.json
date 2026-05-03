@@ -1,0 +1,508 @@
+{
+  "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:14fb2518a8249b3a17917539d732a279574da4dbe218d07d1a1d92d28da107dd",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "0e6086b5-ad53-414c-822a-73b8f8a42c80",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "What is creep, and under what conditions does it occur in structural materials?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Instantaneous plastic deformation at room temperature under any load, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Time-dependent permanent deformation under sustained constant load, especially at elevated temperature"
+        },
+        {
+          "id": "c",
+          "text": "Elastic recovery that occurs gradually over time, often confused with creep"
+        },
+        {
+          "id": "d",
+          "text": "The process of strain hardening during tensile loading, which is unrelated to creep"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Creep is time-dependent plastic flow under constant stress. In metals, creep becomes significant only at elevated temperatures (above ~40% of absolute melting temperature). In concrete, creep occurs at any temperature under sustained load. The key distinction: creep is gradual over hours/days/years, not instantaneous.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ee1cf3734f4c8535aa560475104147ecefdfac5b8509401237060228cebef51d"
+    },
+    {
+      "question_id": "040d0938-c89e-48dc-9256-4334e2180228",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "Two materials have identical yield strengths but different stress-strain diagrams: Material A shows a small plastic region before rupture (8% elongation); Material B shows a large plastic region before rupture (25% elongation). Which material is tougher, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material A is tougher because it reaches yield at the same stress as Material B"
+        },
+        {
+          "id": "b",
+          "text": "Material B is tougher because it absorbs more energy (larger area under the stress-strain curve) due to its greater plastic deformation capacity"
+        },
+        {
+          "id": "c",
+          "text": "Both materials are equally tough because they have the same yield strength"
+        },
+        {
+          "id": "d",
+          "text": "Material A is tougher because it fails at lower total strain, avoiding excessive deformation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Toughness is the area under the entire stress-strain curve (elastic + plastic regions). With identical yield stresses, both materials start at the same elastic region area. However, Material B's larger plastic region (25% vs. 8% elongation) means more area under the curve. Material B absorbs more energy before fracture, making it tougher.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d868ce932697ad39e6cf1073d79dfeca75e6ad212a5f68795e54f00502a83e2"
+    },
+    {
+      "question_id": "51151ce3-2682-40df-b419-5407f2526057",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "Which of the following best defines ductility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ability to hammer a material into thin sheets without cracking"
+        },
+        {
+          "id": "b",
+          "text": "The ability to draw a material into wire through tensile loading"
+        },
+        {
+          "id": "c",
+          "text": "The ability to return to original shape after unloading"
+        },
+        {
+          "id": "d",
+          "text": "The resistance to fracture under sudden impact"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Ductility is the capacity for permanent elongation under tension. Drawing into wire is the defining test of ductility. It measures how much the material can be plastically deformed without breaking.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:92c90ece4e399bde4e41d6d53cc2a791109a2badac9c1145806e0551760b241f"
+    },
+    {
+      "question_id": "d77ce0cf-f15e-4418-9c02-cd978a1f9a3d",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "What is the primary distinction between ductility and malleability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ductility applies to metals; malleability applies only to non-metals, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Ductility is tension-based (drawing into wire); malleability is compression-based (hammering into sheets)"
+        },
+        {
+          "id": "c",
+          "text": "Ductility is reversible; malleability is permanent, which is not typically the case in material science"
+        },
+        {
+          "id": "d",
+          "text": "Ductility is strength; malleability is stiffness, though these terms are often confused in engineering contexts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Ductility and malleability are deformation-mode properties. Ductility measures elongation under tensile (pulling) stress—drawing into wire. Malleability measures deformation under compressive stress—hammering into sheets. A material can exhibit one without the other, though many metals exhibit both.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e911e243ed8da81c29b27cad80ab4a6eba0e821399e1a5caffa0b5158655227b"
+    },
+    {
+      "question_id": "5f0d4854-4ac5-4592-8a58-8008811e6112",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "Which property describes the ability of a material to return to its original dimensions immediately after the load is completely removed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ductility"
+        },
+        {
+          "id": "b",
+          "text": "Malleability"
+        },
+        {
+          "id": "c",
+          "text": "Elasticity"
+        },
+        {
+          "id": "d",
+          "text": "Toughness"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Elasticity is the property to return to original dimensions upon unloading. It applies to all stresses up to the elastic limit. Once that limit is exceeded, permanent deformation occurs, and elasticity is violated.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:13232350d5644e8343da1e585a06f4758cbe0f9385ac9371a0fbc6a340c64235"
+    },
+    {
+      "question_id": "7251a6cb-ef5a-44af-8d3f-570e6357d233",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "A prestressed concrete beam shows a measurable loss of prestress over a period of several years. Explain which material property is primarily responsible for this loss, and identify all contributors.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elasticity; the concrete returns to its original shape over time, which is not typically a permanent deformation"
+        },
+        {
+          "id": "b",
+          "text": "Creep in the concrete and relaxation in the prestressing steel; permanent deformation accumulates, reducing the effective clamping force"
+        },
+        {
+          "id": "c",
+          "text": "Brittleness; the concrete becomes more brittle and cannot maintain stress, leading to potential cracking"
+        },
+        {
+          "id": "d",
+          "text": "Ductility; the steel tendon yields and loses its tension, which is unlikely in prestressed applications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Prestress loss has two main sources: (1) Creep in the concrete under sustained compressive stress reduces the overall dimensions, allowing the steel to relax. (2) Stress relaxation in the steel tendon (a time-dependent phenomenon in stressed steel) causes the steel to lose some of its tension. Both are permanent, time-dependent phenomena, not reversible elastic recovery.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27412bba6dc00e70028394bd6a3e4faa58074dbfc9eb33b2725836351329dcea"
+    },
+    {
+      "question_id": "8ddb85a4-a7d3-421f-8f2e-396513682028",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "In structural design, why do engineers specify ductile materials (like structural steel) for seismic applications rather than brittle materials (like cast iron or unreinforced concrete), even if the brittle material could theoretically be made very strong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Brittle materials are always more expensive, which makes them less desirable for large-scale projects."
+        },
+        {
+          "id": "b",
+          "text": "Ductile materials provide warning before failure through visible plastic deformation and energy absorption, reducing catastrophic collapse risk"
+        },
+        {
+          "id": "c",
+          "text": "Brittle materials cannot achieve high strength values, which limits their application in critical structural components."
+        },
+        {
+          "id": "d",
+          "text": "Ductile materials have higher elastic moduli, which contributes to their ability to withstand dynamic loads."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Seismic loading is dynamic and cyclic. Ductile materials yield and deform plastically, absorbing energy and providing visible warning. Brittle materials fracture suddenly without warning, leading to catastrophic collapse. Ductility is the margin of safety in seismic design. A ductile structure survives because it deforms; a brittle structure shatters.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b2d4a0fbe2a9ea5b843c3cc280ec0dba1c8673f781f33aad0db47c212d4fae9b"
+    },
+    {
+      "question_id": "c2ad177e-426e-4806-8c75-de1965f54c2b",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "A concrete beam is loaded with a constant service load and allowed to rest for several years. The total deflection at the end of the period is significantly larger than the deflection measured immediately after loading. Which phenomenon best explains this difference?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The concrete is yielding under the constant load, which is unlikely unless the load exceeds the design capacity"
+        },
+        {
+          "id": "b",
+          "text": "Creep in the concrete causes additional time-dependent deformation"
+        },
+        {
+          "id": "c",
+          "text": "The elastic modulus of the concrete has decreased due to environmental factors such as temperature and humidity"
+        },
+        {
+          "id": "d",
+          "text": "The load has increased over time due to additional weight from accumulated debris or structural modifications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Concrete creeps under sustained constant load at room temperature, unlike structural steel. The immediate deflection is elastic (proportional to load and inversely proportional to E). The long-term deflection includes additional creep strains that accumulate over months and years. Design practice accounts for this with a time-dependent amplification factor (typically 2–3).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:83a45caf81cb8eb20bacde06b371bbe531cf341bb45f8b271d84e896df29ee00"
+    },
+    {
+      "question_id": "29b2b02a-6d33-476e-bfe0-b1f2d31f57fa",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "Why is toughness described as a combination of strength and ductility rather than either property alone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because toughness requires high yield strength to resist deformation and plastic deformation capacity to absorb energy without breaking"
+        },
+        {
+          "id": "b",
+          "text": "Because toughness is simply the average of strength and ductility, which is a common misconception"
+        },
+        {
+          "id": "c",
+          "text": "Because only strong materials can be tough, ignoring the role of ductility"
+        },
+        {
+          "id": "d",
+          "text": "Because only ductile materials can be tough, which overlooks the importance of strength"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Toughness is energy absorption capacity. A material must be strong enough to store energy (high yield stress) and ductile enough to deform plastically without fracturing (permanent deformation capacity). A brittle material, no matter how strong, shatters without warning and absorbs little energy. A soft material, no matter how ductile, offers no resistance.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27e30e4cc24e868e33809dd2c4ade4e95f629039555f1b8ca69c18e84540c368"
+    },
+    {
+      "question_id": "b1385a6d-68b3-418c-bf20-85816c2c05da",
+      "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+      "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
+      "text": "A material fractures suddenly with very little visible plastic deformation. What is this material characterized as?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ductile"
+        },
+        {
+          "id": "b",
+          "text": "Brittle"
+        },
+        {
+          "id": "c",
+          "text": "Elastic"
+        },
+        {
+          "id": "d",
+          "text": "Tough"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Brittleness is characterized by fracture with little or no plastic deformation. The stress-strain diagram shows a steep elastic region followed by sudden failure. No yield plateau; no warning. Glass, cast iron, and concrete are brittle materials.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:31088ada69c3c58ea2665465deb6ae49ca09424ff2bb1575cfcab96e5e06f5c1"
+    }
+  ]
+}

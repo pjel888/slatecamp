@@ -1,0 +1,35 @@
+{
+  "question_id": "8259316c-56bc-41ad-a426-657bb61ee231",
+  "baseline_hash": "sha256:f3ecbbad3679399ab8b7db6320d302005f30c5a4c9617983dec9aad85edddbae",
+  "reason": "Options only contain single-letter labels ('A', 'B', 'C', 'D') instead of actual answer content. Reconstructed option text from rationale descriptions.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T04:11:28.087862+00:00",
+  "proposed": {
+    "options": [
+      {
+        "id": "a",
+        "text": "Option A"
+      },
+      {
+        "id": "b",
+        "text": "0.5 L/hr (error: assumed latent load represents 0.5% of sensible, not accounting for explicit 12 kW latent specification)."
+      },
+      {
+        "id": "c",
+        "text": "15 L/hr (error: doubled the latent load due to safety factor misinterpretation)."
+      },
+      {
+        "id": "d",
+        "text": "25 L/hr (error: incorrectly converted 12 kW directly to liters without considering water enthalpy; 12 kW \u2260 12 L/hr)."
+      }
+    ],
+    "rationale": {
+      "a": "",
+      "b": "0.5 L/hr (error: assumed latent load represents 0.5% of sensible, not accounting for explicit 12 kW latent specification).",
+      "c": "15 L/hr (error: doubled the latent load due to safety factor misinterpretation).",
+      "d": "25 L/hr (error: incorrectly converted 12 kW directly to liters without considering water enthalpy; 12 kW \u2260 12 L/hr).",
+      "correct": "Latent load of 12 kW represents energy required to remove water vapor from indoor air. Water phase-change enthalpy (latent heat of vaporization) \u2248 2.45 MJ/kg at room temperature. Condensation rate = 12 kW \u00f7 2.45 MJ/kg = 12,000 J/s \u00f7 2.45 \u00d7 10\u2076 J/kg \u2248 4.9 kg/hr of water removed. Density of water \u2248 1 kg/L, so condensation \u2248 4.9 L/hr minimum. In practice, specify 6\u20138 L/hr drain capacity to account for coil inefficiencies, surge during startup, and safety margin. Drain line must slope \u22651:80 (1/8 unit vertical in 10 units horizontal) per PD 1058 Rule VIII Section 811(e). Source: ALE-UTIL-002-04 Tropical Climate Considerations; ASHRAE humid climate design.",
+      "takeaway": "Latent load conversion to condensate rate requires dividing thermal energy (kW) by water latent heat (~2.45 MJ/kg); specify drain capacity 50% higher than calculated minimum for tropical climate redundancy and coil surge protection."
+    }
+  }
+}

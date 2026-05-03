@@ -1,0 +1,66 @@
+## What You Need to Know for the LEA
+
+## Learning Goal
+Classify warehouses as Group G (not F) storage occupancy, calculate occupant load at 46.5 sqm/person, specify clear height (6.0m standard / 9-12m high-bay), design loading docks at 1,200mm height, and apply cold chain temperature zones.
+
+Warehouses and cold storage facilities are Group G occupancies (storage/hazardous), not Group F. They require specialized spatial standards for clear height, loading docks, occupant load calculations, and temperature-controlled zones that define operational functionality.
+
+
+## Core Concept
+
+Warehouses and cold storage facilities are classified as **Group G occupancies** (storage/hazardous materials) under the National Building Code of the Philippines (NBCP). This is distinct from Group F (industrial/manufacturing). The Group G classification reflects the primary function: material storage with minimal personnel presence, resulting in low occupant load density per PD 1096 Rule VII occupancy classification tables (specific factor depends on whether storage is accessory, open to public, or mechanical equipment—ranges 28.0–46.5 sqm/person) compared to manufacturing facilities.
+
+Warehouse design accommodates two primary configurations: standard warehouses (clear height per design requirements, typically 6.0m in practice) and high-bay storage (9.0–12.0 meters clear height). Clear height is the unobstructed vertical distance from finished floor to the lowest point of the overhead structure (beams, ducts, sprinkler heads), essential for racking systems and material handling equipment.
+
+Cold storage facilities introduce thermal zoning. The cold chain consists of four temperature-controlled environments: blast freezer (-25°C) for rapid temperature reduction, frozen storage (-18°C) for long-term preservation, chiller zones (+2°C) for perishables, and cool rooms (+10°C) for controlled temperature goods. Each zone requires independent HVAC systems, insulation per ASHRAE standards (typically 150–200mm polyurethane), and vapor barriers to prevent condensation and thermal loss.
+
+Loading docks are critical infrastructure. TyTypical loading dock height is 1,200 millimeters above finished grade (industry standard)e, with 1,219 millimeters (48 inches) being the most common North American standard to align with standard semi-trailer bed heights to match truck bed height. Loading dock door dimensions are typically 2.7–3.0 meters wide (9'0") by 2.7–3.0 meters high (9'0"–10'0"), per WBDG standards for accommodating standard semi-trailer widths (maximum legal truck width 8'6") and side-by-side pallet configurations, accommodating standard semi-trailer doors and pallet jacks. Dock design includes leveling plates (bridge plates) and bumpers to prevent vehicle contact with the building envelope.
+
+Occupant load in warehouses is calculated per Table VIII.3.1 of PD 1096: for storage warehouses (accessory storage areas), use 1 person per 28.0 square meters if open to general public, or 1 person per 46.5 square meters for mechanical equipment rooms and accessory storage NOT open to public. General warehouse storage occupancy load shall be determined by the specific use and accessibility classification per PD 1096 Rule VII. Parking requirements per local zoning ordinance (not specified in PD 1096) (gross floor area), the lowest ratio across occupancy types, reflecting low concurrent occupancy and minimal personnel presence.
+
+## Key Provisions
+
+| Element | Standard | Notes |
+|---------|----------|-------|
+| Occupancy Group | G (Storage/Hazardous) | NOT Group F (industrial) |
+| Standard Clear Height | 6.0 m minimum | Unobstructed floor-to-soffit |
+| High-Bay Clear Height | 9.0–12.0 m | For automated/high-rise racking |
+| Loading Dock Height | 1,200 mm | Aligns with truck bed height |
+| Loading Dock Door | 2.7–3.0 m W × 2.7–3.0 m H (9'0" × 9'0" to 10'0") | Standard for semi-trailer access; consult specific truck fleet specifications |
+| Occupant Load | 1 person per 46.5 sqm | Low-density occupancy |
+| Parking Ratio | 1 space per 1,000 sqm GFA | Minimum requirement |
+| Blast Freezer | −25°C | Rapid temperature reduction |
+| Frozen Storage | −18°C | Long-term frozen goods |
+| Chiller Zone | +2°C | Perishable short-term storage |
+| Cool Room | +10°C | Controlled temperature goods |
+
+**Occupant Load Calculation (Group G):**
+Occupant load = Gross floor area ÷ 46.5 sqm/person
+
+**Parking Calculation:**
+Parking spaces = Gross floor area ÷ 1,000 sqm per space
+
+## Philippine Practice Context
+
+Warehouses in the Philippines are prevalent in commercial zones, industrial parks, and agricultural supply chains. Group G classification allows efficient single-story designs with minimal firewall separation. Cold storage facilities serve perishable export industries (fruits, seafood, dairy) and pharmaceutical distribution. Loading dock design must accommodate tropical weather (monsoon rainfall runoff) and local truck dimensions. Fire protection in Group G warehouses requires adequate sprinkler coverage, with occupant load density allowing compliance through standard egress widths and fewer exit requirements than higher-occupancy buildings. Energy efficiency in cold storage is critical due to tropical heat load on insulated envelopes.
+
+## How It's Tested
+
+**Pattern 1 — Occupancy Classification Error:** A design brief describes a warehouse facility. Identify the correct occupancy group (Group G, not Group F) and explain why the distinction matters for egress, parking, and regulatory compliance. Tests understanding of ERR-DSGN-003 (warehouse ≠ Group F).
+
+**Pattern 2 — Loading Dock Sizing:** Given a cold storage facility with specific dock requirements, determine if a proposed loading dock door of 3.5m × 4.5m is adequate. Answer: non-compliant; standard is 3.6m × 4.5m minimum. Tests precision in spatial standards.
+
+**Pattern 3 — Cold Chain Zone Design:** A facility requires blast freezing, frozen storage, and chiller zones. Specify dimensions, HVAC zones, and occupant load for a warehouse with total GFA of 4,000 sqm. Requires multi-part calculation and understanding of thermal separation.
+
+<Tip>Warehouse = Group G (not F). Occupant load = 46.5 sqm/person (low density). Clear height = 6.0m standard, 9.0–12.0m high-bay. Loading dock = 1,200mm height, door 3.6m × 4.5m. Cold chain: blast −25°C, frozen −18°C, chiller +2°C, cool +10°C. Parking = 1/1,000 sqm GFA.</Tip>
+
+
+**Exam Tip — ERR-DSGN-003:** Warehouses are Group G (storage), NOT Group F (industrial). Occupant load = 46.5 sqm/person (lowest density). Parking = 1 space per 1,000 sqm. Loading dock height = 1,200mm.
+
+## Cross-References
+
+See **LEA-DSGN-008-02** (Fire Separation) for Group G 4-hour fire rating, **LEA-DSGN-008-03** (Sprinkler Systems) for warehouse fire suppression, and **LEA-DSGN-010-02** (Parking Geometry) for loading dock design comparison.
+
+## Common Mistakes
+
+<WikiMistakeList mistakes={["Classifying warehouse as Group F (industrial) instead of Group G (storage) — ERR-DSGN-003","Using 1 person per 9.3 sqm (office) instead of 1 person per 46.5 sqm (warehouse/storage)","Specifying loading dock door as 3.0m × 4.0m instead of 3.6m × 4.5m","Calculating parking at 1 per 100 sqm instead of 1 per 1,000 sqm (minimum for Group G)","Assuming clear height of 5.0m is acceptable instead of 6.0m minimum standard","Confusing loading dock height with building entrance height (dock = 1,200mm, not 900mm)","Omitting separate HVAC zones for cold chain temperature ranges (−25°C to +10°C)","Using 4.0m × 4.0m door for semi-trailer access (correct = 3.6m × 4.5m)","Assuming high-bay design at 9.0m is always more cost-effective than standard 6.0m","Overlooking vapor barrier requirements in cold storage insulation, causing condensation and structural damage"]} />

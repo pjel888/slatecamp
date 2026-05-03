@@ -1,0 +1,25 @@
+{
+  "attempted_at": "2026-05-03T10:55:45.294Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+  "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:4f9e0d41fdc1517a3a2fb1ab86b917ecfc87a75909d79c36cc3e984fd791bc96",
+  "original_hash": "sha256:4f9e0d41fdc1517a3a2fb1ab86b917ecfc87a75909d79c36cc3e984fd791bc96",
+  "candidate_hash": "sha256:46be39044a24cae9cc3b37f261fbb87eb95bb19f302113c9efb3024c9ae5b5e5",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

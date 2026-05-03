@@ -1,0 +1,508 @@
+{
+  "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:5499a8c8aa28d40fab356c7e391cb091e8fe29acf575d7bdfb635eeccb1cd810",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2df2646d-a3a3-4465-90c1-f0c4fdf217ae",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "What is Per Diem compensation in architecture practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An annual salary for full-time employment, typically including benefits and bonuses"
+        },
+        {
+          "id": "b",
+          "text": "A daily fee for the architect's time and expertise, charged per day regardless of hours worked"
+        },
+        {
+          "id": "c",
+          "text": "A percentage of construction costs, calculated based on the total project budget and scope"
+        },
+        {
+          "id": "d",
+          "text": "A fixed fee for one-time consultation, often agreed upon before the meeting and covering specific deliverables"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses per diem with full-time employment salary; per diem is project-specific daily billing.",
+        "c": "Describes percentage-of-PCC method, not per diem.",
+        "d": "Misdescribes per diem as fixed-fee; per diem is variable based on number of billable days.",
+        "correct": "Per Diem is a daily fee charged for each day spent on project-related work, regardless of how many hours are worked that day or what specific deliverables result.",
+        "takeaway": "Per Diem charges a fixed daily rate per day on-site, independent of hours worked or specific deliverables produced."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Document 201 (Standard Client-Architect Agreement) and SPP 200 (General Conditions)",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f08a1689268b8ba144ae06eafe8c97c056d450f14d2483f4e0c1b33aa7e9c3a8"
+    },
+    {
+      "question_id": "6279e7dd-2e02-4a48-a36f-2d28dfdb2830",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "An architect proposes: (1) percentage-of-PCC fee of 8 million pesos for design services through Contract Documents, (2) Per Diem rate of 15,000 pesos for Construction Administration site visits, and (3) monthly retainer of 50,000 pesos for post-construction strategic consultation. What should the contract document to ensure clarity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the total amount due, without detailing the breakdown of services or the specific conditions under which each fee applies"
+        },
+        {
+          "id": "b",
+          "text": "The three separate compensation methods, what services each covers, when each applies, and how each is billed"
+        },
+        {
+          "id": "c",
+          "text": "Only the highest compensation amount as the project fee, simplifying the contract but potentially leading to misunderstandings"
+        },
+        {
+          "id": "d",
+          "text": "The three methods without explanation, since they are self-explanatory and do not require further clarification"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical clarification of what each method covers, risking disputes.",
+        "c": "Obscures the three distinct methods and their separate applicability; this lacks transparency.",
+        "d": "Assumes methods are self-evident; clients often misunderstand multiple structures without explicit documentation.",
+        "correct": "Multiple compensation methods in one engagement require comprehensive documentation: each method's scope and applicability, billing procedures, payment terms, and timing to prevent disputes regarding compensation.",
+        "takeaway": "Complex multi-method compensation requires explicit documentation of which method applies to which services, when payment is due, and how each is invoiced."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e4fd804987289cb9427311423a1e4aa3f60161d5b9a5962ee1b264147faea9fc"
+    },
+    {
+      "question_id": "40de506c-0a09-4b52-8ec0-341d2b39319e",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "A developer retains an architect for ongoing facilities planning and strategic consultation at 75,000 pesos monthly. What compensation method is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Per Diem compensation"
+        },
+        {
+          "id": "b",
+          "text": "Retainer compensation"
+        },
+        {
+          "id": "c",
+          "text": "Honorarium compensation"
+        },
+        {
+          "id": "d",
+          "text": "MDPE compensation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Per diem is daily, not monthly; the structure here is retainer.",
+        "c": "Honorarium is one-time for specific expertise; this is ongoing monthly retention.",
+        "d": "MDPE would track hours and multiply by a rate; this is fixed monthly, not hourly-based.",
+        "correct": "A fixed monthly fee that reserves the architect's availability for as-needed services is retainer compensation. This establishes a predictable revenue stream while giving the client flexible access to expertise.",
+        "takeaway": "Monthly fixed-fee compensation that reserves availability for ongoing services is retainer, not per diem or honorarium."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:70f13e3972dd3ff8990726b4cb55dfcd14916b8ad893ec2d430e2fe91a17b2b0"
+    },
+    {
+      "question_id": "8468b618-86b5-4308-9bd3-2586ee34b2f4",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "What is typical Per Diem rate range in Philippine architecture practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,000–4,000 pesos per day"
+        },
+        {
+          "id": "b",
+          "text": "8,000–25,000 pesos per day"
+        },
+        {
+          "id": "c",
+          "text": "50,000–100,000 pesos per day"
+        },
+        {
+          "id": "d",
+          "text": "200,000+ pesos per day"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understates typical rates; these are below market for most professional architects.",
+        "c": "Overstates per diem rates; these suggest full-time employment rather than daily consultation.",
+        "d": "Far exceeds typical per diem; these approach project-level fees.",
+        "correct": "Per Diem rates in Philippine practice are negotiated based on the architect's experience, specialization, project location, and market conditions per UAP SPP Document 202.",
+        "takeaway": "Philippine per diem rates vary from 8,000 pesos (junior architects) to 25,000 pesos (senior specialists) based on experience and expertise."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f9282bdd88f627d984c443035555fc13aa855b9c186eca912548e1ec531344b"
+    },
+    {
+      "question_id": "83471d91-83e3-4d3a-9760-61cccfa02a85",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "An architect is contracted for design services under percentage-of-PCC and also to provide Construction Administration at 12,000 pesos Per Diem for twice-weekly site visits. The contract is signed, but the client now disputes whether Construction Administration is included in the percentage-of-PCC or billed separately as Per Diem. How should this have been prevented?",
+      "options": [
+        {
+          "id": "a",
+          "text": "This conflict is inevitable with multiple compensation methods, and cannot be entirely avoided"
+        },
+        {
+          "id": "b",
+          "text": "Clear documentation specifying that percentage-of-PCC covers design only and Per Diem applies to Construction Administration site observation prevents misunderstanding"
+        },
+        {
+          "id": "c",
+          "text": "The architect should have used only one compensation method to simplify the agreement and avoid confusion"
+        },
+        {
+          "id": "d",
+          "text": "The dispute indicates poor fee negotiation by the architect, highlighting the need for better communication"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly suggests multiple methods inevitably create disputes; clear documentation prevents them.",
+        "c": "Rejects legitimate mixed-method compensation; multiple methods are appropriate when properly documented.",
+        "d": "Blames negotiation rather than contract clarity; the issue is documentation, not negotiation.",
+        "correct": "Clear contract documentation specifying which services are covered under each compensation method prevents disputes. The architect must clearly document what services are covered under percentage-of-PCC design fees and what services are billed as Per Diem.",
+        "takeaway": "Multiple compensation methods are legitimate, but the contract must explicitly specify which method covers which services."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2272520ea66bac613032f08ad2ed0510378ac76f011b8b1d8ceb5ebe9210d78b"
+    },
+    {
+      "question_id": "839f4b18-0ba0-4320-bafe-423c76012141",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "What distinguishes an Honorarium from a Retainer in architectural compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Honorariums are monthly; retainers are one-time, typically paid at the start of a project"
+        },
+        {
+          "id": "b",
+          "text": "Honorariums are for specific one-time expertise; retainers establish ongoing availability at fixed periodic fees"
+        },
+        {
+          "id": "c",
+          "text": "Honorariums are higher-paid; retainers are lower-paid, reflecting the ongoing nature of the service"
+        },
+        {
+          "id": "d",
+          "text": "Honorariums are for design work; retainers are for administration, covering routine tasks"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reverses the typical structure: retainers are usually monthly while honorariums are one-time.",
+        "c": "Incorrectly bases distinction on payment level rather than engagement structure.",
+        "d": "Falsely restricts honorariums to design work and retainers to administration; either can apply to any work type.",
+        "correct": "Honorariums recognize specific professional contribution (design review, jury service, consultation) without creating ongoing availability obligation. Retainers establish ongoing availability for as-needed services at fixed periodic rates.",
+        "takeaway": "Honorarium is one-time for specific expertise; retainer is ongoing monthly to reserve availability."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2a2cc781c4f9e3484e6dba607da9cceab957fbb20cfa87dbdf88a30b6933944e"
+    },
+    {
+      "question_id": "e5622e36-d8ba-4f42-868c-8eb4f8e1b6c6",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "What is a Retainer in architectural compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A refundable deposit held until project completion, ensuring the client's commitment to the project"
+        },
+        {
+          "id": "b",
+          "text": "A fixed periodic fee that reserves the architect's availability for as-needed services"
+        },
+        {
+          "id": "c",
+          "text": "A percentage of the project's construction cost, calculated based on the total estimated budget"
+        },
+        {
+          "id": "d",
+          "text": "A fee paid only if the client is dissatisfied with the work, serving as a form of performance guarantee"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses retainer with a security deposit; retainer is compensation, not a deposit.",
+        "c": "Describes percentage-of-PCC, not retainer compensation.",
+        "d": "Falsely conditions retainer payment on satisfaction; retainer is independent of work quality.",
+        "correct": "A Retainer is a fixed periodic fee (typically monthly) that reserves the architect's availability for project-related services, with the architect providing as-needed services within the retainer amount.",
+        "takeaway": "A retainer is a monthly fee that reserves architect availability; unused retainer does not roll forward to the next month."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a4e5418eb28ee71d13030624acffe9fdbd77924a59697df3dca1e959caac499b"
+    },
+    {
+      "question_id": "344d9086-08d8-4c8f-89c6-c3123911855d",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "When is Per Diem compensation most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "For all full design services including Schematic through Contract Documents, regardless of project size or complexity"
+        },
+        {
+          "id": "b",
+          "text": "For Construction Administration with intermittent on-site presence, site visits, or specialized consultation"
+        },
+        {
+          "id": "c",
+          "text": "For projects with fixed, clearly defined scope, ensuring predictable cost management"
+        },
+        {
+          "id": "d",
+          "text": "For Design-Bid-Build projects with traditional fee structures, where costs are predetermined"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Per diem is inappropriate for full design services; percentage-of-PCC or MDPE are standard.",
+        "c": "Fixed scope suggests percentage-of-PCC or lump sum, not per diem.",
+        "d": "Design-Bid-Build typically uses percentage-of-PCC, not per diem.",
+        "correct": "Per Diem is appropriate for Construction Administration when on-site presence is intermittent or variable, for feasibility analysis site visits, or for specialized consultation where the architect provides expert analysis.",
+        "takeaway": "Per Diem works best for variable-intensity on-site work where hourly tracking is uncertain but daily presence is clear."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:17d088731ede11a34c8d18404654c00f033ee954cb44144dd710c249400c3fbb"
+    },
+    {
+      "question_id": "7b933a55-74fa-48df-9e9c-1a3610f62987",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "What is typical Honorarium rate range in Philippine architecture practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,000–5,000 pesos"
+        },
+        {
+          "id": "b",
+          "text": "15,000–50,000 pesos"
+        },
+        {
+          "id": "c",
+          "text": "100,000–150,000 pesos"
+        },
+        {
+          "id": "d",
+          "text": "200,000+ pesos"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understates typical honorarium rates; these are below market.",
+        "c": "Overstates honorariums; these approach project fees rather than one-time expertise fees.",
+        "d": "Far exceeds honorarium range; these approach project-level compensation.",
+        "correct": "Honorarium amounts in Philippine practice are negotiated based on the specific expertise required, time commitment, and client type per UAP SPP Document 202.",
+        "takeaway": "Philippine honorariums range from 15,000 pesos (single consultation) to 50,000 pesos (jury service on prestige competition)."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd1e47bc4a8322b5de99bc85608b02896f1871cd405ed6a2ea46618c03be9621"
+    },
+    {
+      "question_id": "3eedba70-19e9-4570-9278-05a0c4a19116",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "topic_id": "4858347d-34d2-4144-b984-1b49964c40bf",
+      "text": "What should be documented in a Per Diem engagement contract?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the Per Diem rate amount, without detailing other terms or conditions"
+        },
+        {
+          "id": "b",
+          "text": "The rate, what activities trigger billing, whether partial days are billable, travel arrangements, and engagement duration"
+        },
+        {
+          "id": "c",
+          "text": "Only the daily rate and total project duration, omitting specifics on billing triggers or travel arrangements"
+        },
+        {
+          "id": "d",
+          "text": "The Per Diem rate and a guarantee of minimum billable days, ensuring a baseline income regardless of actual work performed"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical details like what activities count as billable days, creating dispute risk.",
+        "c": "Lacks specification of billing triggers (what constitutes a billable day) and travel terms.",
+        "d": "Guarantees minimum days inappropriately; should allow for actual days only.",
+        "correct": "Per Diem contracts should specify the daily rate, what activities constitute billable days, whether travel days are billable, and the expected engagement duration to prevent misunderstandings.",
+        "takeaway": "Per Diem contracts must clearly define what triggers a billable day to prevent disputes about billing."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-010-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f060abd991d6e9ca4c129b12d5909bdbd9c7b86dcdfa398f71ef0049214b493"
+    }
+  ]
+}

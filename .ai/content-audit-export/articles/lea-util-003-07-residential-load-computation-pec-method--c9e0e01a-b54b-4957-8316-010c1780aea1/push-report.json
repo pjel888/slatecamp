@@ -1,0 +1,26 @@
+{
+  "attempted_at": "2026-05-03T10:56:00.636Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "c9e0e01a-b54b-4957-8316-010c1780aea1",
+  "slug": "lea-util-003-07-residential-load-computation-pec-method",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:6ce4aa9b4ecba6f774ef746c1337225e8f5b1d49b7c78ddceabe6716357ee37e",
+  "original_hash": "sha256:6ce4aa9b4ecba6f774ef746c1337225e8f5b1d49b7c78ddceabe6716357ee37e",
+  "candidate_hash": "sha256:295bb5b4994dcbe71fcc200297adb5a45bfada68c5f8d3380171dfedc7c15e38",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

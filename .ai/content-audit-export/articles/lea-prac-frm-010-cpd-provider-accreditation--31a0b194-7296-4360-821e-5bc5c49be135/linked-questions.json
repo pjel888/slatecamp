@@ -1,0 +1,509 @@
+{
+  "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6ab9b2c60118224c6cd44dad854976a16d0b528606eb49bf630cd4d378c63679",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1ef83040-9fdb-4d13-97d5-2eb66764344d",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "Which organization holds authority to accredit CPD providers for architects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Professional Regulation Commission exclusively"
+        },
+        {
+          "id": "b",
+          "text": "The Board of Architecture"
+        },
+        {
+          "id": "c",
+          "text": "Individual professional organizations"
+        },
+        {
+          "id": "d",
+          "text": "International architectural associations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misidentifies the PRC as sole authority; the Board of Architecture, not the PRC, accredits providers.",
+        "c": "Incorrectly distributes authority to individual organizations; only the Board holds accreditation authority.",
+        "d": "Assigns authority to foreign entities; accreditation is a domestic regulatory function.",
+        "correct": "The CPD Council for Architecture (under the Professional Regulatory Board of Architecture) accredits CPD providers.",
+        "takeaway": "The CPD Council for Architecture holds authority to accredit CPD providers."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd1205a297d4af4d1192d371d388dc972b76e22a06141fe1b1c3dad27a31b68e"
+    },
+    {
+      "question_id": "2d324149-8ce9-4709-8d18-306b7cf6c9b4",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What does the Board evaluate when accrediting CPD providers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the provider's size and location, focusing on the physical capacity to host participants and the geographical accessibility"
+        },
+        {
+          "id": "b",
+          "text": "Instructor qualifications, curriculum content, facilities, and teaching methodologies"
+        },
+        {
+          "id": "c",
+          "text": "Only the provider's registration with the SEC, ensuring legal compliance and operational legitimacy"
+        },
+        {
+          "id": "d",
+          "text": "Provider age and years in business, considering the historical performance and experience in delivering educational programs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores quality criteria; size and location do not determine educational quality.",
+        "c": "Confuses business registration with educational accreditation; SEC registration does not substitute for quality evaluation.",
+        "d": "Relies on irrelevant factors; longevity in business does not guarantee current instructional quality.",
+        "correct": "The Board evaluates instructor qualifications, curriculum design, course content, learning outcomes, facilities, and instructional methodologies during accreditation review.",
+        "takeaway": "Accreditation evaluation focuses on instructor expertise, curriculum design, and instructional quality—not business registration or age."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f074a51b10b0ecef07e95ec7964d0d6f6d89ecb80d57ad96b0962f8bdd8b70be"
+    },
+    {
+      "question_id": "1e46fc5d-34d1-43ac-b76e-11945712d6e9",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "When an architectural firm collaborates with multiple providers to deliver a CPD program, what must be verified?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the lead firm's accreditation status, which may not cover all aspects of the program"
+        },
+        {
+          "id": "b",
+          "text": "Accreditation status of all participating providers"
+        },
+        {
+          "id": "c",
+          "text": "Only participant enrollment numbers, which do not affect the program's accreditation"
+        },
+        {
+          "id": "d",
+          "text": "Only the course topic relevance, which is important but not sufficient for accreditation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly permits non-accredited co-providers; accreditation must apply to all partners.",
+        "c": "Ignores accreditation status entirely; enrollment numbers do not determine credit validity.",
+        "d": "Confuses content relevance with accreditation; both are required, but accreditation is essential for credit validity.",
+        "correct": "When organizations collaborate on CPD programs, all co-offering organizations must hold accreditation status; credits are only valid if all participating providers are accredited.",
+        "takeaway": "All participating providers in a collaborative CPD program must be accredited; a single non-accredited partner invalidates credits."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b47c76fcb5297d99b08b90871ee98f1280771d91e1bda0dd8e032a0385cc589b"
+    },
+    {
+      "question_id": "75dd2b8f-2a16-4023-9490-d97cf1266f29",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "How does automatic accreditation of the professional organization differ from other providers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The professional organization has less stringent quality requirements compared to independently accredited CPD providers"
+        },
+        {
+          "id": "b",
+          "text": "The professional organization is not required to apply; other providers must undergo evaluation"
+        },
+        {
+          "id": "c",
+          "text": "The professional organization pays lower accreditation fees than independent CPD training providers"
+        },
+        {
+          "id": "d",
+          "text": "All organizations receive automatic accreditation equally regardless of their affiliation or organizational type"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely suggests lower standards; automatic accreditation reflects the organization's central regulatory role, not reduced quality expectations.",
+        "b": "Remove or correct self-referential explanation for correct option.",
+        "c": "Incorrectly focuses on fees; the distinction is procedural (automatic vs. applied), not financial.",
+        "d": "Denies UAP's unique automatic status; the professional organization is the sole recipient of automatic accreditation.",
+        "correct": "Only the integrated accredited professional organization receives automatic accreditation without separate application; other providers must undergo standard evaluation.",
+        "takeaway": "UAP alone receives automatic accreditation; all other providers must apply and undergo Board evaluation."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e0592bb3303492a5350edeb10d7abf3285446874f91e5ede94c106781ad39127"
+    },
+    {
+      "question_id": "0cbc9241-4575-41dd-94f2-b7671d41b7b1",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What happens if a CPD provider's accreditation expires without renewal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatic extension for one additional year, provided certain conditions are met"
+        },
+        {
+          "id": "b",
+          "text": "Activities delivered lose accreditation; no valid CPD credits generated"
+        },
+        {
+          "id": "c",
+          "text": "Credits are valid for one year after expiration, allowing time for renewal"
+        },
+        {
+          "id": "d",
+          "text": "The provider is immediately re-accredited, assuming no violations occurred"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly grants automatic grace period; re-accreditation must be applied for before expiration.",
+        "c": "Falsely extends validity; accreditation expiration terminates credit validity immediately.",
+        "d": "Contradicts the requirement for application and evaluation; re-accreditation is not automatic.",
+        "correct": "After accreditation expiration without renewal, activities delivered do not generate valid CPD credits; architects cannot claim credit from expired providers.",
+        "takeaway": "CPD credits from providers become invalid immediately upon accreditation expiration—no grace period applies."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8af18c0c4895693271048ae967de45064ae60e731d03f7366e3e6a4c4b54e9b6"
+    },
+    {
+      "question_id": "ce238350-7798-4658-b66d-dd3a189143f3",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "Which professional organization is automatically accredited as a CPD provider?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All architectural associations equally, regardless of their specific focus or membership size"
+        },
+        {
+          "id": "b",
+          "text": "The United Architects of the Philippines, Inc. (UAP)"
+        },
+        {
+          "id": "c",
+          "text": "Regional architectural chapters, provided they meet certain membership thresholds and activity levels"
+        },
+        {
+          "id": "d",
+          "text": "International architectural organizations only, if they have a recognized presence in the Philippines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely grants automatic accreditation to all associations; only UAP receives automatic status.",
+        "c": "Incorrectly attributes automatic status to regional chapters; automatic accreditation applies only to the national integrated organization.",
+        "d": "Restricts automatic status to foreign entities; automatic accreditation is reserved for the Philippine integrated organization.",
+        "correct": "The United Architects of the Philippines (UAP), as the Accredited Integrated Professional Organization (AIPO) is automatically accredited as a CPD provider without requiring separate application.",
+        "takeaway": "UAP (United Architects of the Philippines) holds automatic CPD provider accreditation—no separate application required."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8115d07ec36efc1bd989733552ba740ade79cd95d23ae89054042a0a46502dbd"
+    },
+    {
+      "question_id": "2266b5d9-90f4-496b-971f-ff358c396bf7",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What is the consequence of completing CPD activities from a non-accredited provider?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Credits count if the content is relevant to architectural practice and approved by a recognized authority"
+        },
+        {
+          "id": "b",
+          "text": "Credits count but at half the normal credit value, subject to verification by the accrediting body"
+        },
+        {
+          "id": "c",
+          "text": "No valid CPD credits are generated regardless of content quality"
+        },
+        {
+          "id": "d",
+          "text": "Credits are valid for one renewal cycle only, provided they meet the minimum standards set by the board"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely permits credit based on content relevance; accreditation status, not content alone, determines validity.",
+        "b": "Incorrectly grants partial credit; the all-or-nothing rule applies—no credits without accreditation.",
+        "d": "Falsely extends validity to one cycle; non-accredited provider credits are never valid.",
+        "correct": "Non-accredited provider activities generate no valid CPD credits regardless of content quality, time invested, or architectural relevance.",
+        "takeaway": "Non-accredited provider activities generate zero valid CPD credits, regardless of content quality."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b24092d2791198028854d049330b1c45597f68f7f71e22b34a4130836b5b0fef"
+    },
+    {
+      "question_id": "51508c33-d7db-4142-ad5b-6187e29ad740",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What is the architect's responsibility regarding CPD provider selection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects can enroll in any program and claim CPD credit, regardless of the provider's accreditation status."
+        },
+        {
+          "id": "b",
+          "text": "Architects must verify provider accreditation status before enrolling"
+        },
+        {
+          "id": "c",
+          "text": "The Board automatically notifies architects of approved providers, ensuring compliance with CPD requirements."
+        },
+        {
+          "id": "d",
+          "text": "All programs count equally regardless of provider status, simplifying the selection process for architects."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fails to apply the accreditation requirement; non-accredited programs generate no CPD credit.",
+        "c": "Reverses the responsibility; architects must proactively verify, not wait for Board notifications.",
+        "d": "Ignores the accreditation distinction; credits are valid only from accredited providers.",
+        "correct": "Architects must verify provider accreditation status before enrollment; only credits from accredited providers count toward the mandatory 45-unit requirement.",
+        "takeaway": "Architects are responsible for verifying provider accreditation before enrollment to ensure CPD credit validity."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f01fb9de1678b8c01e5a75a80a27cfefe8d93047b2792591071f4ccd359d21af"
+    },
+    {
+      "question_id": "ee299893-275e-4d36-928b-497ab3999138",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What is the validity period for CPD provider accreditation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One year from issuance"
+        },
+        {
+          "id": "b",
+          "text": "Two years from issuance"
+        },
+        {
+          "id": "c",
+          "text": "Three years from issuance"
+        },
+        {
+          "id": "d",
+          "text": "Five years from issuance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overly short duration; annual re-accreditation would impose excessive administrative burden.",
+        "b": "Undercounts the validity period; actual term is three years, not two.",
+        "d": "Overcounts; five years exceeds the three-year accreditation validity.",
+        "correct": "CPD provider accreditation is valid for three years from issuance; providers must apply for re-accreditation before expiration.",
+        "takeaway": "CPD provider accreditation is valid for three years and requires re-accreditation before expiration."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0b5e829c7557f1724de7a9f63b877d74c0b69fb52b41aea3d2d89364ea15fea6"
+    },
+    {
+      "question_id": "cf6f886e-14c9-41ae-b6fa-60fb19eb0e19",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What minimum standards must accredited providers meet regarding course design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No specific standards are required, allowing for flexibility in course content and delivery methods"
+        },
+        {
+          "id": "b",
+          "text": "Clearly defined learning outcomes aligned with professional track categories"
+        },
+        {
+          "id": "c",
+          "text": "Only that courses are led by licensed architects, ensuring professional oversight and expertise"
+        },
+        {
+          "id": "d",
+          "text": "Only that certificates are issued to participants, which serves as proof of attendance and completion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores quality standards; the Board prescribes detailed design requirements.",
+        "c": "Limits requirements to instructors; course design standards go beyond instructor licensing.",
+        "d": "Confuses certificates with course design; certificate issuance is an output, not a design standard.",
+        "correct": "Accredited providers must have clearly defined learning objectives aligned with professional track categories and assessment methods evaluating participant competency acquisition.",
+        "takeaway": "Accredited providers must have clearly defined learning outcomes aligned with the five professional track categories."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be4796b068c4a18cd6150b05de2c1118985f9277ebffbac0a0d8ada572466019"
+    }
+  ]
+}

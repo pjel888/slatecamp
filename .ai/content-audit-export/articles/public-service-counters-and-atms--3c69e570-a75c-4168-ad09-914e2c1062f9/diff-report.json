@@ -1,0 +1,38 @@
+{
+  "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+  "slug": "public-service-counters-and-atms",
+  "generated_at": "2026-05-03T07:48:52.095Z",
+  "old_hash": "sha256:dfbabefc89311487e568c66a3df9103d8cfc66f1ea4a6f6134495ba28e84ba45",
+  "new_hash": "sha256:9c553bff77a0f39d1a103620770465c25cbfa0156ccabb5adcee6f6d36dea3ea",
+  "original_hash": "sha256:dfbabefc89311487e568c66a3df9103d8cfc66f1ea4a6f6134495ba28e84ba45",
+  "normalized_hash": "sha256:fca5f396a2e9c445fe048fd0b086761942f7b768ca6f769f373c19f295bb4cd9",
+  "candidate_hash": "sha256:9c553bff77a0f39d1a103620770465c25cbfa0156ccabb5adcee6f6d36dea3ea",
+  "changed": true,
+  "changed_line_count": 381,
+  "inserted_line_count": 23,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 7,
+  "ui_blocks_candidate_count": 7,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 7,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 7,
+  "changed_text_summary": {
+    "changed": 381,
+    "inserted": 23,
+    "deleted": 0,
+    "original_line_count": 359,
+    "candidate_line_count": 382
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [],
+    "changed_count": 0
+  },
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
+}

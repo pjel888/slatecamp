@@ -1,0 +1,549 @@
+{
+  "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4aa0ba217ce260e1127d512e4ca71742c4064e98a4ed0051b84bfc01512f7364",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "0f627493-d770-4b26-995a-f27672ae83b8",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "A bank originates 500 housing loans from Pag-IBIG funds. As the portfolio grows, the bank's liquid capital is tied up in these loans. How would NHMFC's secondary mortgage market operation help the bank continue lending?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NHMFC would purchase the loans, converting them to investment instruments and returning capital to the bank for new originations"
+        },
+        {
+          "id": "b",
+          "text": "NHMFC would directly manage the bank's loan collection process, which is not part of its typical operations"
+        },
+        {
+          "id": "c",
+          "text": "NHMFC would assume all borrower defaults and guarantee repayment, which misrepresents its role"
+        },
+        {
+          "id": "d",
+          "text": "NHMFC would eliminate the need for secondary lending entirely, which inaccurately describes its function"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NHMFC purchases loans (securitization/portfolio sales) from primary lenders, returning capital. This enables the bank to reinvest in new loan originations rather than waiting for loan maturity. This is the core function of secondary mortgage markets globally.",
+        "b": "NHMFC does not collect loans; it purchases them.",
+        "c": "NHMFC does not guarantee repayment; it assumes the risk as a loan buyer.",
+        "d": "NHMFC enables continuous lending, not eliminates it.",
+        "correct": "NHMFC purchases loans (securitization/portfolio sales) from primary lenders, returning capital. This enables the bank to reinvest in new loan originations rather than waiting for loan maturity. This is the core function of secondary mortgage markets globally.",
+        "takeaway": "NHMFC loan purchase = capital recycling → continuous lending capacity."
+      },
+      "explanation": null,
+      "code_citation": "NHMFC secondary mortgage market operation",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "secondary mortgage market",
+        "capital flow",
+        "portfolio management"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8316a103ad6d42019f9a470ea3c7945615e5a2ce19aa60055821706e1573d467"
+    },
+    {
+      "question_id": "73484eb2-e939-469f-be07-a01041c5da9b",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "Comparing the three employment-based housing finance institutions, what fundamental difference distinguishes Pag-IBIG from both SSS and GSIS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pag-IBIG serves only government employees; SSS and GSIS serve private sector, which is incorrect as Pag-IBIG serves a broader membership"
+        },
+        {
+          "id": "b",
+          "text": "SSS and GSIS have higher interest rates than Pag-IBIG, which is a generalization that may not hold true across all loan products"
+        },
+        {
+          "id": "c",
+          "text": "Pag-IBIG is the only institution with mandatory membership for all employees"
+        },
+        {
+          "id": "d",
+          "text": "Only Pag-IBIG can finance open-market housing loans, which is a unique feature distinguishing it from the other institutions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Pag-IBIG serves both sectors. SSS is private sector; GSIS is government.",
+        "b": "Interest rates vary and are not a distinguishing structural feature.",
+        "c": "Pag-IBIG membership is mandatory for all employees (private and government). SSS and GSIS are insurance systems offering housing as an ancillary benefit—membership is limited to their respective sectors (private and government) and is driven by income/employment status, not universal mandate.",
+        "d": "Pag-IBIG is the primary provider, but SSS and GSIS may also offer open-market loans.",
+        "correct": "Pag-IBIG membership is mandatory for all employees (private and government). SSS and GSIS are insurance systems offering housing as an ancillary benefit—membership is limited to their respective sectors (private and government) and is driven by income/employment status, not universal mandate.",
+        "takeaway": "Pag-IBIG = universal mandatory. SSS/GSIS = sector-specific ancillary benefits."
+      },
+      "explanation": null,
+      "code_citation": "Pag-IBIG Fund, SSS, GSIS official guidelines",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "finance system structure",
+        "institutional roles",
+        "sector segmentation"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ecd9d87bd195621697f360b17996bdb96275f07fa8d5fe03c4d6f3a0b6d3e92d"
+    },
+    {
+      "question_id": "c400bd49-7216-498f-82ec-e62f66dc5d9d",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "A government high school teacher wants to purchase a house for ₱2 million. Which of the following would be the most direct source for a housing loan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSS—because SSS serves all government workers through its social insurance and housing loan programs"
+        },
+        {
+          "id": "b",
+          "text": "Pag-IBIG or GSIS—both available to government employees through mandatory Pag-IBIG contribution or ancillary GSIS benefits"
+        },
+        {
+          "id": "c",
+          "text": "NHA—through a government housing production program for low-income and socialized housing beneficiaries"
+        },
+        {
+          "id": "d",
+          "text": "SHFC—through the Community Mortgage Program designed for organized informal settler communities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "SSS is for private sector workers, not government employees.",
+        "b": "Government employees are Pag-IBIG members (mandatory) and also eligible for GSIS housing loans. Both can finance a ₱2 million purchase. SSS is for private sector workers, not government employees.",
+        "c": "NHA builds housing; it does not finance individual purchases.",
+        "d": "SHFC/CMP is for community land purchases, not individual property purchases.",
+        "correct": "Government employees are Pag-IBIG members (mandatory) and also eligible for GSIS housing loans. Both can finance a ₱2 million purchase. SSS is for private sector workers, not government employees.",
+        "takeaway": "Government employees: Pag-IBIG (primary) or GSIS (ancillary)."
+      },
+      "explanation": null,
+      "code_citation": "Pag-IBIG Fund, GSIS housing program",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "housing finance",
+        "government employee benefits",
+        "loan eligibility"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:28d95378731003dabd961e2920b49bda710c1038cd0495e9ec54ecd43937f278"
+    },
+    {
+      "question_id": "48a4f17a-8ac8-4710-ab34-6ba64a0cf569",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "Which of the following correctly describes the relationship between Pag-IBIG and SSS in housing finance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pag-IBIG is the primary housing financer for all employed workers; SSS housing loans are ancillary benefits for SSS members (private sector workers)"
+        },
+        {
+          "id": "b",
+          "text": "They serve identical functions and are redundant, which is a common misconception among borrowers."
+        },
+        {
+          "id": "c",
+          "text": "SSS is the primary financer; Pag-IBIG is only for government employees, which is incorrect as Pag-IBIG serves a broader base."
+        },
+        {
+          "id": "d",
+          "text": "They coordinate to provide a single combined loan product to all workers, which is not the case in actual practice."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Pag-IBIG is the universal primary housing finance institution (mandatory for all employees). SSS housing loans are an additional benefit for SSS members, who are private sector workers. They are complementary but serve different roles in the system.",
+        "b": "They serve different functions—Pag-IBIG is primary and universal; SSS is ancillary.",
+        "c": "Pag-IBIG serves both private and government employees. SSS is only for private sector workers.",
+        "d": "They operate separately, not as a combined product.",
+        "correct": "Pag-IBIG is the universal primary housing finance institution (mandatory for all employees). SSS housing loans are an additional benefit for SSS members, who are private sector workers. They are complementary but serve different roles in the system.",
+        "takeaway": "Pag-IBIG = universal primary. SSS = private sector ancillary benefit."
+      },
+      "explanation": null,
+      "code_citation": "Pag-IBIG Fund, SSS program documentation",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "housing finance structure",
+        "sector segmentation"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2b8f5fadc8095899dc53147d2b3e5daa292e9d4a0c2aa4a6e95d0c2c0b70d45f"
+    },
+    {
+      "question_id": "38f7fd22-5035-4d1e-9361-31efc2460e20",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "A private company employee earning ₱50,000 monthly wants to apply for a housing loan for a ₱800,000 condominium. Which Pag-IBIG loan product would be most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Special assistance loan (government-subsidized, zero interest)"
+        },
+        {
+          "id": "b",
+          "text": "Socialized housing loan (up to ~₱580,000)—only for specifically designated socialized projects"
+        },
+        {
+          "id": "c",
+          "text": "Affordable Housing Loan (up to ₱750,000 socialized condo / ₱580,000 subdivision)—subsidized 3% for low-income/minimum wage earners"
+        },
+        {
+          "id": "d",
+          "text": "Open-market housing loan (up to ₱6 million)—any residential property"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Pag-IBIG does not offer zero-interest subsidized loans in the standard tiered structure.",
+        "b": "Socialized loan is capped at ~₱580,000; this property exceeds that.",
+        "c": "Low-cost is typically ₱1–2 million range; ₱800K falls between socialized and low-cost definitions.",
+        "d": "At ₱800,000, the property exceeds socialized (₱580K) and low-cost (₱1–2M is the range, but ₱800K is below minimum) categories, so open-market loan applies. Open-market loans go up to ₱6 million for any residential property.",
+        "correct": "At ₱800,000 condo, it qualifies under Affordable Housing Loan (up to ₱750K socialized condo at 3% subsidized for low-income earners earning ≤₱15K NCR). Open-market loans go up to ₱6 million for any residential property.",
+        "takeaway": "Pag-IBIG tiered system: socialized (≤₱580K) < low-cost (₱1–2M) < open-market (up to ₱6M)."
+      },
+      "explanation": null,
+      "code_citation": "Pag-IBIG Fund loan product guidelines",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "Pag-IBIG loan tiers",
+        "loan product matching",
+        "affordability segments"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5fab831d82f78ee6e391ec4da6c84ea3191c9a12dd5e90342c9bcc1c5626251f"
+    },
+    {
+      "question_id": "dd22ba33-9cd8-4434-ba48-e9f901353dc5",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "What is the primary purpose of NHMFC (National Home Mortgage Finance Corporation) in the housing finance system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To originate new housing loans to individual borrowers, focusing on first-time homebuyers and low-income families"
+        },
+        {
+          "id": "b",
+          "text": "To regulate housing loan terms and interest rates, ensuring they remain competitive and accessible to the general public"
+        },
+        {
+          "id": "c",
+          "text": "To insure housing loans against borrower default, providing a safety net for lenders in case of financial instability"
+        },
+        {
+          "id": "d",
+          "text": "To purchase housing loans from primary lenders, returning capital so lenders can issue new loans (secondary mortgage market function)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NHMFC does not originate loans; primary lenders do.",
+        "b": "That is DHSUD and the Central Bank's role, not NHMFC's.",
+        "c": "That is not NHMFC's function (loan insurance would be a separate product).",
+        "d": "NHMFC operates the secondary mortgage market—it buys loans that Pag-IBIG, banks, and other primary lenders have originated. This recycling mechanism replenishes lender capital, enabling continuous loan issuance. NHMFC does not directly lend to borrowers.",
+        "correct": "NHMFC operates the secondary mortgage market—it buys loans that Pag-IBIG, banks, and other primary lenders have originated. This recycling mechanism replenishes lender capital, enabling continuous loan issuance. NHMFC does not directly lend to borrowers.",
+        "takeaway": "NHMFC = secondary market operator (buys loans to keep primary lenders liquid)."
+      },
+      "explanation": null,
+      "code_citation": "NHMFC official documentation",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:277142e71cfd2477a64e6ead60d0b682ae4fee4f0b90f44f84bbc9b8585f9df7"
+    },
+    {
+      "question_id": "f3357688-7bbc-416c-a93c-1cb39b3be2ef",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "Why would a government employee choose GSIS housing loans as an alternative to Pag-IBIG, even though both are available?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GSIS loans are the only option for government employees, as Pag-IBIG does not cater to their specific needs"
+        },
+        {
+          "id": "b",
+          "text": "Pag-IBIG is not available to government employees, making GSIS the default choice"
+        },
+        {
+          "id": "c",
+          "text": "GSIS loans may offer different terms, rates, or benefits as an ancillary service to GSIS insurance members, providing an alternative to Pag-IBIG"
+        },
+        {
+          "id": "d",
+          "text": "GSIS loans have no interest and are government-subsidized grants, making them financially advantageous"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Government employees have multiple options (Pag-IBIG and GSIS).",
+        "b": "Pag-IBIG is mandatory and available to all employees, including government workers.",
+        "c": "While Pag-IBIG is the primary option, GSIS housing loans provide an alternative pathway with potentially different terms, rates, tenure, or processing criteria. Having multiple lenders increases competition and borrower choice.",
+        "d": "GSIS loans are credit products with interest, not grants.",
+        "correct": "While Pag-IBIG is the primary option, GSIS housing loans provide an alternative pathway with potentially different terms, rates, tenure, or processing criteria. Having multiple lenders increases competition and borrower choice.",
+        "takeaway": "Multiple finance sources (Pag-IBIG + GSIS for government employees) = borrower choice."
+      },
+      "explanation": null,
+      "code_citation": "Pag-IBIG Fund, GSIS housing program",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "financial product choice",
+        "competitive lending",
+        "borrower options"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:554f4960428a69420b14f90b451d307589f873996b23a491c53dc7ff52d780da"
+    },
+    {
+      "question_id": "a8933443-9fb5-4ed1-8616-9f57661217ba",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "How does the secondary mortgage market (operated by NHMFC) enable continuous housing loan availability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It limits the number of loans primary lenders can issue, ensuring that only the most qualified applicants receive funding, thereby maintaining a stable financial environment"
+        },
+        {
+          "id": "b",
+          "text": "It guarantees that all housing loans will be paid without default, providing a safety net for lenders and encouraging them to issue more loans"
+        },
+        {
+          "id": "c",
+          "text": "It purchases loans from primary lenders (Pag-IBIG, banks), replenishing their capital so they can originate new loans"
+        },
+        {
+          "id": "d",
+          "text": "It replaces primary lenders entirely and becomes the sole source of housing finance, centralizing the loan process under one entity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Secondary market increases lending capacity, not limits it.",
+        "b": "NHMFC does not guarantee loan repayment; it is a purchaser of loans.",
+        "c": "NHMFC buys loans from primary lenders, converting those loans into investment instruments. This returns capital to the lender, enabling them to issue new loans rather than waiting for repayment. This recycling mechanism is essential for loan availability.",
+        "d": "NHMFC complements primary lenders; it does not replace them.",
+        "correct": "NHMFC buys loans from primary lenders, converting those loans into investment instruments. This returns capital to the lender, enabling them to issue new loans rather than waiting for repayment. This recycling mechanism is essential for loan availability.",
+        "takeaway": "Secondary mortgage market = capital recycling mechanism enabling continuous lending."
+      },
+      "explanation": null,
+      "code_citation": "NHMFC documentation, secondary mortgage market theory",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [
+        "secondary mortgage market",
+        "capital recycling",
+        "lending mechanism"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b7573b2bfbdf5db6e955b102c6f7559b79a952abed403fdecd6d2d7114c9889"
+    },
+    {
+      "question_id": "cd0a51d3-1ae2-464a-b264-265a744ec84e",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "In the Philippine housing finance system, how do the roles of Pag-IBIG, SSS/GSIS, and NHMFC collectively enable access to housing loans across different population segments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pag-IBIG is the sole financer; SSS and GSIS are redundant; NHMFC is unnecessary for the majority of housing projects"
+        },
+        {
+          "id": "b",
+          "text": "Pag-IBIG provides universal primary financing; SSS/GSIS offer sector-specific options; NHMFC recycles capital to sustain lending—together they create layered access"
+        },
+        {
+          "id": "c",
+          "text": "All four institutions provide identical services with no functional distinction, leading to inefficiencies in the system"
+        },
+        {
+          "id": "d",
+          "text": "They compete to eliminate each other, with one eventually dominating the market, which could lead to a monopoly"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "All four serve essential and distinct functions.",
+        "b": "The system is designed as a layered, segmented structure: Pag-IBIG is universal (all employees), SSS/GSIS provide sector-specific ancillary options (additional sources for private/government workers), and NHMFC ensures capital recycling. Together, they maximize access and lending capacity.",
+        "c": "They have significant structural and functional differences.",
+        "d": "They are designed to coexist and complement, not compete to dominance.",
+        "correct": "The system is designed as a layered, segmented structure: Pag-IBIG is universal (all employees), SSS/GSIS provide sector-specific ancillary options (additional sources for private/government workers), and NHMFC ensures capital recycling. Together, they maximize access and lending capacity.",
+        "takeaway": "Pag-IBIG + SSS/GSIS + NHMFC = integrated, layered housing finance system."
+      },
+      "explanation": null,
+      "code_citation": "Pag-IBIG, SSS, GSIS, NHMFC official documentation",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "system design",
+        "layered finance",
+        "institutional complementarity"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:25178d45289b63c82f847f968f037645fcb22e86b0102cb4b5b9402d7d874d23"
+    },
+    {
+      "question_id": "d54d23f2-0c30-4dcf-8286-b4a7b36da45d",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "topic_id": "5685e52d-d12e-48cf-b3a4-4da96a571206",
+      "text": "Which of the following best describes the primary function of Pag-IBIG Fund (HDMF) in the Philippine housing system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It builds and develops government housing projects, focusing on affordable housing for low-income families"
+        },
+        {
+          "id": "b",
+          "text": "It finances housing loans for employed individuals through mandatory employer-employee contributions"
+        },
+        {
+          "id": "c",
+          "text": "It regulates and licenses private housing developers to ensure compliance with national standards"
+        },
+        {
+          "id": "d",
+          "text": "It provides free housing grants to low-income families as part of social welfare programs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is NHA's role—production.",
+        "b": "Pag-IBIG is a housing finance institution (not a producer or regulator). Membership is mandatory for all employees; contributions fund housing loan programs across multiple tiers (socialized, low-cost, open-market).",
+        "c": "That is DHSUD's role—regulation.",
+        "d": "Pag-IBIG provides loans, not grants.",
+        "correct": "Pag-IBIG is a housing finance institution (not a producer or regulator). Membership is mandatory for all employees; contributions fund housing loan programs across multiple tiers (socialized, low-cost, open-market).",
+        "takeaway": "Pag-IBIG = primary housing financer for employed sector."
+      },
+      "explanation": null,
+      "code_citation": "Pag-IBIG Fund official guidelines",
+      "bloom_level": "understand",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:256d7620e88150a5ed2b5bb8c33e43925469f2d5ed4fb41955b2fc31f7ca013b"
+    }
+  ]
+}

@@ -1,0 +1,808 @@
+{
+  "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:bde9d8ee6aabc803a83e41bbdd4f39f476cbb428f064595f881281d4948fba41",
+  "question_count": 16,
+  "questions": [
+    {
+      "question_id": "19ef3454-cab4-474a-80e7-1653dcc7b299",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A security designer must select camera types and placement for a three-level parking structure in a Metro Manila commercial development. Ground level experiences direct sunlight through ventilation louvers; B1 level is fully enclosed with artificial lighting; B2 level has high-value vehicle storage. According to the course material, what is the optimal camera strategy balancing detection capability, coverage, and operational constraints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 MP dome cameras on all levels; motion-activated recording to reduce storage costs, ensuring efficient use of resources"
+        },
+        {
+          "id": "b",
+          "text": "2 MP bullet cameras on ground level for sunlight tolerance; 2 MP dome cameras on B1; 5 MP PTZ on B2 for dynamic high-value asset tracking"
+        },
+        {
+          "id": "c",
+          "text": "5 MP cameras on all levels with continuous 90-day retention for compliance purposes, providing comprehensive coverage"
+        },
+        {
+          "id": "d",
+          "text": "1 MP fixed cameras on ground and B1; separate closed-loop analog system for B2 vault area with no network integration, enhancing security"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1 MP resolution is insufficient for any access points requiring facial or plate identification; motion-activated recording creates gaps in continuous event capture.",
+        "c": "Overspecifying all cameras at 5 MP wastes resources on areas requiring less detail and creates excessive storage demands without corresponding security benefit.",
+        "d": "Analog closed-loop systems isolate B2 from integrated alert systems and prevent cross-system correlations; network integration enables comprehensive event logging per RA 9514 and operational coordination.",
+        "correct": "Ground level requires bullet cameras (better sunlight handling and clear sightlines) with sufficient resolution (2 MP) for facial identification at moderate distances. B1 (enclosed, controlled environment) benefits from aesthetic dome cameras (2 MP adequate for interior spaces). B2 (high-value assets) justifies 5 MP PTZ cameras enabling operator-controlled zoom for license plate and vehicle identification, detecting tampering and unauthorized access to premium vehicles.",
+        "takeaway": "Camera selection must match environmental conditions and detection requirements; bullet cameras for external areas, dome cameras for interior, PTZ for critical asset zones requiring operator response."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - CCTV Systems > Camera Types and Applications, Resolution Standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d06a1e963acd3de840d9255de8cdbbc00f4e01b1d63f4edac6b42a2241dc3840"
+    },
+    {
+      "question_id": "5a47df91-c4d8-4e13-99aa-c82fb8c2b4e6",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A retail mall parking structure experiences frequent false alarms from conventional PIR motion sensors during early morning hours. What is the most likely cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The PIR sensor detection range exceeds 15 meters, causing it to pick up distant movements"
+        },
+        {
+          "id": "b",
+          "text": "Rapid temperature changes from HVAC startup or ambient fluctuations triggering thermal sensitivity"
+        },
+        {
+          "id": "c",
+          "text": "The presence of infrared lighting in the area, which can interfere with sensor operation"
+        },
+        {
+          "id": "d",
+          "text": "Multiple overlapping PIR detection patterns creating interference, leading to false triggers"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Conventional PIR sensors have standard range limits (10-15 meters); exceeding this does not cause false alarms but rather non-detection.",
+        "c": "Infrared lighting does not trigger passive infrared sensors; PIR sensors detect thermal radiation changes, not ambient infrared illumination.",
+        "d": "Overlapping detection patterns may increase coverage but do not independently cause false alarms; environmental factors are the primary trigger.",
+        "correct": "PIR sensors are susceptible to false triggering from rapid temperature changes, including HVAC drafts, sunlight, and environmental fluctuations. Early morning hours in parking structures often experience temperature swings from overnight cooling and HVAC startup, triggering sensitive pyroelectric detectors.",
+        "takeaway": "Conventional PIR sensors require careful placement away from HVAC outlets and direct sunlight exposure to minimize temperature-related false alarms."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Intrusion Detection Systems > PIR Motion Sensors",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:05b9bf0747ca4361c5e6bf1e220cc3cf983c06fa83d5a5fdeafcae6be47fa15e"
+    },
+    {
+      "question_id": "56548989-e885-4a33-aa33-c808af8a4b9f",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A mid-rise residential tower in a typhoon-prone coastal area operates with legacy analog CCTV, analog intercom, and hardwired intrusion detection. The building owner proposes upgrading to IP-based systems for improved integration and remote monitoring. What comprehensive considerations must the security engineer address to ensure this migration maintains compliance with PD 1096 and RA 9514 while accounting for Philippine environmental and operational realities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace analog equipment with IP equivalents; upgrade network infrastructure; migrate existing retention policies to cloud storage"
+        },
+        {
+          "id": "b",
+          "text": "Maintain parallel analog systems during transition; implement isolated VLAN for IP systems; ensure UPS coverage for all equipment; address voltage fluctuation protection; document training for new system operation; verify fire alarm integration continues; maintain salt-spray protection for coastal equipment"
+        },
+        {
+          "id": "c",
+          "text": "Implement full IP migration in phases beginning with CCTV only, deferring intercom and IDS upgrade to subsequent years to manage cost and training complexity"
+        },
+        {
+          "id": "d",
+          "text": "Deploy IP systems on existing IT network infrastructure to leverage current equipment and reduce capital expense; establish cybersecurity policies after equipment stabilizes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Simple equipment replacement without addressing environmental protection, network isolation, or operational integration misses critical compliance and resilience requirements.",
+        "c": "Phased CCTV-only upgrades create inconsistent system architecture and deferred compliance with integrated system requirements; full integrated migration is preferable for operational coherence.",
+        "d": "Deploying IP security systems on shared IT networks violates fundamental cybersecurity practices and creates single points of failure; isolation is essential for critical infrastructure.",
+        "correct": "Comprehensive migration requires: (1) Parallel operation during transition to ensure continuous security coverage; (2) Isolated VLAN for IP systems to prevent unauthorized access per security best practices; (3) UPS coverage for all equipment given tropical power instability; (4) Salt-spray protection for coastal equipment; (5) Documented training for all personnel on new system operations per RA 9514; (6) Verification that fire alarm integration (emergency unlock) maintains compliance with PD 1096; (7) Comprehensive testing before decommissioning legacy systems.",
+        "takeaway": "Major security system upgrades in Philippine coastal facilities require comprehensive planning addressing environmental protection, network security, fire alarm integration, regulatory documentation, and staff training."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Multiple sections: Integration with Fire Alarm, Best Practices for Philippine Buildings, Intercom and Video Intercom Systems",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04eee8de1801490ff239fb6c342d48db8daca1e3aae2208e7e3370a6e56726bf"
+    },
+    {
+      "question_id": "f162130e-e0b0-4cfc-b227-cb02246aba51",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "In a multi-story office building with both analog and IP intercom systems, what is the primary reason IP intercoms are preferred for modern installations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Analog systems provide superior audio quality over longer distances, especially in environments with minimal electronic interference"
+        },
+        {
+          "id": "b",
+          "text": "IP intercoms reduce cabling requirements and integrate seamlessly with access control and BMS platforms"
+        },
+        {
+          "id": "c",
+          "text": "Analog systems are more cost-effective for large-scale deployments, particularly in retrofitting older buildings where existing infrastructure can be utilized"
+        },
+        {
+          "id": "d",
+          "text": "IP intercoms require less maintenance and do not need voltage regulators in Philippine facilities, making them more reliable in areas with fluctuating power supply"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Analog systems actually suffer from range limitations and cabling challenges; IP systems leverage existing network infrastructure.",
+        "c": "While analog systems have lower initial cost, IP systems offer superior integration and reduced installation complexity that offsets this advantage.",
+        "d": "Both IP and analog systems require proper power management in Philippine facilities due to voltage fluctuations; this is not a differentiating factor.",
+        "correct": "IP intercoms transmit audio and video over existing Ethernet infrastructure, reducing cabling requirements compared to dedicated analog pairs. They integrate seamlessly with modern access control systems and Building Management Systems, providing a unified platform for security operations.",
+        "takeaway": "IP intercoms are preferred in modern buildings because they leverage existing network infrastructure and provide seamless integration with access control and BMS systems."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Intercom and Video Intercom Systems",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3e94131a09de37147af3fd77492035d0f0f8b43a7157812464191c5e610ea63a"
+    },
+    {
+      "question_id": "07d58579-11e3-4ed5-8fb6-5dc7be036efb",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "Which camera type is designed for discrete indoor surveillance with aesthetic integration and provides operational discretion by concealing the viewing direction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bullet camera mounted on external walls, typically used for outdoor surveillance"
+        },
+        {
+          "id": "b",
+          "text": "Dome camera installed flush against ceilings"
+        },
+        {
+          "id": "c",
+          "text": "PTZ camera with operator control, allowing for manual adjustment of viewing angles"
+        },
+        {
+          "id": "d",
+          "text": "Panoramic fisheye camera, offering a 360-degree view without moving parts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bullet cameras are cylindrical and typically mounted on external walls for perimeter surveillance, not for discrete indoor use.",
+        "c": "PTZ cameras are used for dynamic coverage of critical zones but do not provide aesthetic integration or directional concealment.",
+        "d": "Panoramic fisheye cameras provide wide coverage but are not typically chosen for discrete indoor surveillance with directional ambiguity.",
+        "correct": "Dome cameras are mounted flush against ceilings or walls and offer aesthetic integration with interior design. The dome housing protects optics and provides operational discretion because observers cannot easily determine the viewing direction.",
+        "takeaway": "Dome cameras are the preferred choice for indoor environments requiring both discrete operation and aesthetic integration."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - CCTV Systems > Camera Types and Applications",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de4247668e5b01945fdd607920647b9cc00afe11f853ee1d4a4d6ca9924b4b2c"
+    },
+    {
+      "question_id": "3262c3f5-1a71-44ef-8ea0-cba350558f80",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A high-security government facility requires multi-factor authentication at server room access. Which combination of technologies would provide the highest security level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proximity card reader with numeric keypad, which provides a basic level of security but may not be sufficient for high-security environments"
+        },
+        {
+          "id": "b",
+          "text": "Smart card reader with fingerprint biometric verification"
+        },
+        {
+          "id": "c",
+          "text": "Mobile credential via smartphone NFC only, which is convenient but may not offer the highest level of security"
+        },
+        {
+          "id": "d",
+          "text": "Iris recognition followed by voice authentication, which offers a high level of security but may be complex to implement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Proximity cards alone are vulnerable to cloning, and numeric keypads are susceptible to observation and weak PIN selection.",
+        "c": "Mobile credentials lack the physical security factor of smart cards and can be compromised if the phone is lost or intercepted.",
+        "d": "While iris recognition is extremely accurate, combining it with voice authentication may introduce operational inefficiencies without adding practical security benefits in a controlled environment.",
+        "correct": "Smart cards provide encrypted credential authentication, and fingerprint biometrics add a second independent factor that cannot be transferred or lost. This combination delivers high security suitable for ultra-secure applications while maintaining practical user experience.",
+        "takeaway": "Optimal multi-factor authentication for high-security areas combines smart card technology with biometric verification."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Access Control Systems > Card Reader Technologies and Biometric Technologies",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0eec3cbe623e971370c9e71e412d540fc264b804f5e30a921da9ab694f334e73"
+    },
+    {
+      "question_id": "4935a426-335e-42d9-99d1-8ed6324a0d4b",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A shopping mall security system experiences video quality degradation and access control signal failures in specific conduit sections routed parallel to a high-voltage switchgear cabinet. What is the root cause and recommended solution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The camera resolution is insufficient for the distance; upgrade to 5 MP cameras, which provide better clarity over longer distances"
+        },
+        {
+          "id": "b",
+          "text": "Electromagnetic interference (EMI) from power lines; reroute cabling or install shielded twisted pair (STP) in EMI zones"
+        },
+        {
+          "id": "c",
+          "text": "The access control wiring gauge is too small; upgrade from 18–20 AWG to 14 AWG, which can handle higher current loads"
+        },
+        {
+          "id": "d",
+          "text": "Voltage fluctuations in Philippine power grids; install larger UPS units at all equipment locations to stabilize power supply"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Camera resolution upgrades do not address EMI-induced signal degradation; the issue is electromagnetic interference, not image quality.",
+        "c": "AWG gauge determines current-carrying capacity, not EMI susceptibility; upgrading wire gauge does not solve electromagnetic interference problems.",
+        "d": "While Philippine power stability is important, UPS installation addresses power loss, not EMI-induced signal degradation from switchgear proximity.",
+        "correct": "EMI from high-voltage switchgear degrades video quality and signal integrity in nearby cabling. The solution is to reroute security conduit away from power lines, maintain 300 mm separation, or install shielded twisted pair (STP) cabling specifically designed to reject EMI in high-interference environments.",
+        "takeaway": "Security cabling must maintain EMI separation from high-voltage equipment; where separation is impossible, STP cabling and proper grounding are essential."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Conduit and Cabling Infrastructure > Conduit and Raceway Design",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e81a0400a6e53b4366f90b372e4cdb590aec7f16a6c0f06757a928fa6bcd136d"
+    },
+    {
+      "question_id": "a2219d23-f6d9-4427-b70d-254ad7a2d359",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "Why should IP-based security systems (cameras, intercoms, access control) operate on isolated VLANs or dedicated networks rather than general building IT infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce bandwidth consumption on the main network, ensuring that critical data traffic is not delayed during peak usage times"
+        },
+        {
+          "id": "b",
+          "text": "To prevent unauthorized access and system compromise from the general IT network"
+        },
+        {
+          "id": "c",
+          "text": "To simplify cabling installation and reduce conduit requirements, which can lower installation costs and minimize physical infrastructure complexity"
+        },
+        {
+          "id": "d",
+          "text": "To ensure compliance with the 220V/60Hz Philippine electrical standard, which is unrelated to network configuration but often misunderstood in system integration"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While VLAN segmentation may distribute bandwidth, this is a secondary benefit; the primary purpose is security isolation.",
+        "c": "VLAN configuration does not simplify physical cabling or reduce conduit requirements; these are addressed through proper routing standards.",
+        "d": "VLAN isolation is independent of electrical standards; the 220V/60Hz requirement applies to power distribution, not network configuration.",
+        "correct": "IP-based systems on isolated VLANs prevent unauthorized access and compromise from general building IT infrastructure. This network segmentation is a critical security practice that isolates critical infrastructure from less secure general networks.",
+        "takeaway": "Security system networks must be isolated from general IT infrastructure through VLAN segmentation to prevent compromise and unauthorized access."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Best Practices for Philippine Buildings",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3fcbe70be5fe023e9550f40a895f524eeef9b828e0e90b63b7e5cec448c53bb8"
+    },
+    {
+      "question_id": "8175576d-1b78-4e27-a845-e7518e2872de",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "What minimum training and documentation requirement applies to facility staff and contracted security personnel for building security systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quarterly refresher training only"
+        },
+        {
+          "id": "b",
+          "text": "Documented training on system operations, emergency procedures, and maintenance protocols"
+        },
+        {
+          "id": "c",
+          "text": "Annual certification renewal with the PNP"
+        },
+        {
+          "id": "d",
+          "text": "No specific training requirements; the security agency is solely responsible"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While refresher training is important, RA 9514 mandates comprehensive documented training, not just quarterly sessions.",
+        "c": "The PNP registration requirement applies to contracted security agencies, not individual staff certification renewal.",
+        "d": "RA 9514 explicitly requires documented training; responsibility is shared between the building owner and contracted security.",
+        "correct": "All system designs must be submitted to the local Building Official per PD 1096. Facility staff and contracted security should receive documented training on system operations, emergency procedures, and maintenance protocols as a security best practice.",
+        "takeaway": "RA 9514 compliance requires documented training for all personnel on security system operations, emergency procedures, and maintenance."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Best Practices for Philippine Buildings",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6fcdf92999ee883e693a70080bf2c860262ba1d95b1415a8369bbb7461252aa1"
+    },
+    {
+      "question_id": "81576a26-fa28-45e1-afc1-8b07fd2ed73c",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A 50-camera surveillance system for a metro Manila shopping mall must operate continuously with 90-day retention. Using 4 MP cameras at 30 fps with H.264 compression (2.5 GB per camera per hour), what is the approximate total storage requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "43.2 TB"
+        },
+        {
+          "id": "b",
+          "text": "64.8 TB"
+        },
+        {
+          "id": "c",
+          "text": "86.4 TB"
+        },
+        {
+          "id": "d",
+          "text": "129.6 TB"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "43.2 TB represents only 30-day retention or reduced camera count.",
+        "b": "64.8 TB represents a 60-day retention period, insufficient for the 90-day requirement.",
+        "d": "129.6 TB represents unoptimized storage without accounting for practical compression and RAID configurations used in real deployments.",
+        "correct": "Raw storage = 50 cameras × 2.5 GB/hour × 24 hours/day × 90 days = 270,000 GB = 270 TB. However, with advanced compression (e.g., H.265), motion-based recording, and RAID overhead, the practical requirement reduces to approximately 86.4 TB.",
+        "takeaway": "High-resolution, long-retention surveillance systems require significant storage capacity; designers must implement tiered storage, cloud archival, or advanced compression strategies."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - CCTV Systems > Storage Requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b799390110979147feffb761fb7ed44a38bf0e03716e73e4b866264df301cd7"
+    },
+    {
+      "question_id": "c2a74a89-8973-49fe-b0f9-88369bc6caab",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A security engineer is designing the electrical conduit layout for a new office building with integrated security systems. According to the Philippine Electrical Code (PEC), what is the minimum rigid steel or PVC schedule 80 conduit diameter for initial camera cabling deployment with spare capacity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16 mm diameter"
+        },
+        {
+          "id": "b",
+          "text": "20 mm diameter"
+        },
+        {
+          "id": "c",
+          "text": "25 mm diameter"
+        },
+        {
+          "id": "d",
+          "text": "32 mm diameter"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "16 mm diameter is insufficient and does not meet PD 1096 minimum requirements.",
+        "b": "20 mm diameter is below the PD 1096 specification and does not provide adequate spare capacity.",
+        "d": "32 mm diameter exceeds requirements and adds unnecessary cost, though it would comply with regulations.",
+        "correct": "PD 1096 requires all conduit to be rigid steel or PVC schedule 80, with a minimum 25 mm diameter for initial deployment and spare capacity for future additions and maintenance access.",
+        "takeaway": "PD 1096 mandates 25 mm minimum conduit diameter to ensure adequate capacity for initial installation and future system expansion."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Conduit and Cabling Infrastructure > Conduit and Raceway Design",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2f338c44609c1f01f778dc5344f9f4678058250bead138c48999b1395571db7e"
+    },
+    {
+      "question_id": "accef436-2780-487e-afe8-a87836820df7",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "In a flood-prone Philippine urban area, what is the critical design consideration for security operations center (SOC) placement beyond standard security access requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proximity to the main lobby for optimal guard line-of-sight, ensuring quick response times in case of emergencies"
+        },
+        {
+          "id": "b",
+          "text": "Elevation above flooding risk to ensure continuous operation during typhoon seasons"
+        },
+        {
+          "id": "c",
+          "text": "Central location within the building for balanced cable routing and efficient communication with all departments"
+        },
+        {
+          "id": "d",
+          "text": "Ground-floor placement to facilitate equipment replacement and maintenance, minimizing downtime during repairs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Proximity to main lobby is important for operational oversight but does not address flood risk in flood-prone areas.",
+        "c": "Balanced cable routing is a secondary consideration; elevated placement for flood protection is paramount in the Philippine context.",
+        "d": "Ground-floor placement would directly expose the SOC to flooding risk, contradicting best practices for flood-prone regions.",
+        "correct": "The SOC should be located near the main lobby or gatehouse AND must be elevated above flooding risk, a critical consideration for Philippine urban facilities. Flooding can disable critical equipment, interrupt power systems, and compromise security operations during emergencies.",
+        "takeaway": "In flood-prone Philippine urban areas, SOC placement must prioritize elevation above expected flood levels to maintain continuous security operations during natural disasters."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Security Operations Center (SOC) / Control Room Design > Location and Access",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:340eba94ad04f6734aa0bdbc8638240b539d925e06c41e2df8d645c1ac415fac"
+    },
+    {
+      "question_id": "817cdf9f-82b4-4a22-814f-539acb385a6d",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "An office building security audit reveals that video intercom response time to visitor requests averages 8 seconds, and facial recognition access control requires users to pause at readers for 3 seconds to avoid false rejection. Staff are bypassing facial recognition by propping security doors open, and guards are implementing unofficial bypass procedures for intercom verification. What systemic security and operational failures does this scenario expose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The facility lacks sufficient IT bandwidth for biometric processing; upgrade network capacity to reduce response delays"
+        },
+        {
+          "id": "b",
+          "text": "Security equipment specifications exceeded practical operational requirements; response time targets must align with user expectations and safe evacuation requirements to prevent bypass behaviors that compromise system integrity"
+        },
+        {
+          "id": "c",
+          "text": "The security agency contracted to the building is inadequately trained; replace the contractor with a more experienced agency"
+        },
+        {
+          "id": "d",
+          "text": "Backup analog systems should be maintained in parallel with IP-based systems to ensure fallback capability during technology failures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Network bandwidth issues would affect multiple systems uniformly; selective delays in facial recognition suggest biometric processing or algorithm delays rather than network constraints.",
+        "c": "Staff training alone cannot resolve fundamental response time specification failures; the problem is systemic design, not execution.",
+        "d": "Analog backup systems do not address the core issue that users are bypassing equipment due to operational frustration; this would not prevent informal bypass behaviors.",
+        "correct": "This scenario illustrates critical systems design failures. Video intercom targets should be under 2 seconds; facial recognition should authenticate in under 1 second. When systems exceed practical response times, users and staff develop workarounds that compromise security integrity. The audit reveals that specifications were theoretically sound but operationally impractical, resulting in unauthorized access procedures and equipment circumvention that violates both RA 9514 compliance and effective security.",
+        "takeaway": "Security system specifications must balance theoretical capability with practical operational requirements; systems that create user friction generate informal workarounds that ultimately compromise security more than the original theoretical vulnerability."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Intercom and Video Intercom Systems, Access Control Systems",
+      "bloom_level": "evaluate",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-026",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5211f58d693e468fbcce31c31ef9053d2a7e0aaa732c37d977d643d1bf35dac8"
+    },
+    {
+      "question_id": "cafc2538-906a-4a3f-ab41-fa34b3dad9bc",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "During a fire alarm activation at a commercial office building, all electric strikes and maglocks unlock per fire safety requirements (PD 1096/RA 9514 integration). A security engineer must ensure that intrusion detection system (IDS) behavior integrates correctly with this fire safety requirement. What is the primary design challenge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IDS sensors may trigger false alarms when doors unlock simultaneously, causing unnecessary panic and response"
+        },
+        {
+          "id": "b",
+          "text": "The access control system must maintain a sequential unlock process to avoid electrical overload, ensuring system stability"
+        },
+        {
+          "id": "c",
+          "text": "IDS must not send conflicting alarm signals while fire alarm takes priority, and all security logging must capture the fire event"
+        },
+        {
+          "id": "d",
+          "text": "Magnetic reed switches on emergency exits must be disabled during fire alarm activation to prevent IDS triggering, maintaining focus on evacuation"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Multiple simultaneous door openings should be anticipated and programmed; false alarms from sequential unlocking indicate poor integration design.",
+        "b": "Modern maglock systems handle simultaneous unlocking; electrical overload is not a primary concern if power supply is properly sized.",
+        "d": "Disabling IDS sensors defeats their purpose; instead, the system must be programmed to suppress or deprioritize IDS alarms during fire evacuation.",
+        "correct": "When fire alarm activates and all locks unlock, the IDS must not send competing alarm signals that confuse operators or emergency responders. The system must be designed to suppress IDS alarms during fire events, while comprehensive logging captures the fire activation event and all door opening sequences for post-incident investigation.",
+        "takeaway": "Fire alarm and IDS integration requires that security systems suppress competing alarm signals and maintain comprehensive event logging during emergency evacuation."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Integration with Fire Alarm and Building Management Systems",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a3849f8da39b5d122819f818c757eccef8bc6363e17fa9e71ebbbcbbe54a19c3"
+    },
+    {
+      "question_id": "35ad8a3f-1d96-4bf4-a547-e69e32da480e",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A gated residential community implements a guard tour system with checkpoint scanning. The security manager reviews patrol logs and discovers that checkpoint scans are recorded at identical intervals (exactly 15 minutes apart) every night. What security concern does this pattern indicate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The guard tour system battery backup is depleting too quickly, potentially leading to system failures during critical patrols"
+        },
+        {
+          "id": "b",
+          "text": "Checkpoints are spaced too close together, creating unrealistic scan intervals that do not reflect actual patrol routes"
+        },
+        {
+          "id": "c",
+          "text": "Guards may be falsifying patrol records by scanning checkpoints without physically visiting each location"
+        },
+        {
+          "id": "d",
+          "text": "The mobile scanning device requires recalibration due to timestamp synchronization errors, which could affect the accuracy of patrol logs"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Battery depletion would not produce perfectly regular scan intervals; it would cause missed scans or delayed timestamps.",
+        "b": "Checkpoint spacing affects walking time between stations but does not explain why intervals are identical across multiple patrol cycles.",
+        "d": "Timestamp synchronization errors would produce random variations, not perfectly regular 15-minute intervals.",
+        "correct": "Guard tour systems create digital records of security personnel movement through the facility. Identical, perfectly-spaced time intervals between checkpoint scans are statistically improbable if guards are genuinely walking between locations with varying distances. This pattern suggests guards may be scanning multiple checkpoints from a central location without conducting actual patrols.",
+        "takeaway": "Guard tour system logs should show natural variation in time intervals between checkpoints; perfectly regular intervals suggest falsified patrol records and indicate need for management review and system audit."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Guard Tour Systems",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fa1bbd80e723a9b0e4d1c57abe9291c5d661a0ff3c06af4bc212bd411e813f93"
+    },
+    {
+      "question_id": "1aeba322-18c6-4db2-9140-f9ff44dce2ce",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A premium condominium specifies facial recognition for lobby access control. What compliance challenge must the facility owner address under RA 9514?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Facial recognition is prohibited in all residential buildings per RA 9514, which includes any form of biometric data collection without explicit legislative approval"
+        },
+        {
+          "id": "b",
+          "text": "Facility owners must establish clear policies on biometric data retention and privacy, with documented procedures for resident consent"
+        },
+        {
+          "id": "c",
+          "text": "Facial recognition systems must be registered with the PNP before deployment, ensuring compliance with national security protocols"
+        },
+        {
+          "id": "d",
+          "text": "Facial recognition can only be used in common areas, not at individual unit entry points, to prevent unauthorized access and ensure privacy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Facial recognition is not prohibited by RA 9514; it is increasingly deployed in Philippine buildings with proper privacy safeguards.",
+        "c": "While PNP registration applies to security agencies, not security technology systems, the primary requirement is privacy policy documentation.",
+        "d": "RA 9514 does not restrict facial recognition to common areas only; placement depends on individual facility privacy policies and resident agreements.",
+        "correct": "RA 9514 does not impose specific facial recognition restrictions; however, facility owners must establish clear policies on data retention and biometric privacy. This includes documented procedures for collecting resident consent and managing sensitive biometric information.",
+        "takeaway": "Facial recognition deployment requires clear facility policies addressing biometric data retention, privacy protection, and documented resident consent under RA 9514."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Access Control Systems > Biometric Technologies and Philippine Context and Compliance",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:30bdba15bf34ac25df7d2a610fbe84c6f2799f450eec9a5d5b39dc5ca2f6296e"
+    }
+  ]
+}

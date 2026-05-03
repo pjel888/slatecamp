@@ -1,0 +1,508 @@
+{
+  "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:91608564e8fd73b0ce091eb025da4e1ee54c42ae43445578a9e4c70258e786ad",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "18dc7c54-4b23-4863-95d3-c093cebc600c",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "Under the older NSCP, a beam must satisfy load combinations for temperature effects. The two relevant formulas are U = 0.75(1.4D + 1.4T + 1.7L) and U = 1.4(D + T). For a case where D = 50 kN, L = 30 kN, and T = 10 kN (tension), which formula governs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Combined: U = 0.75(1.4×50 + 1.4×10 + 1.7×30) = 0.75(70 + 14 + 51) = 0.75(135) = 101.25 kN; Minimum: U = 1.4(50 + 10) = 84 kN; Combined controls."
+        },
+        {
+          "id": "b",
+          "text": "Combined: U = 0.75(1.4×50 + 1.4×10 + 1.7×30) = 85 kN; Minimum: U = 1.4(50 + 10) = 84 kN; Combined controls."
+        },
+        {
+          "id": "c",
+          "text": "Minimum: U = 1.4(50 + 10) = 84 kN always controls for temperature."
+        },
+        {
+          "id": "d",
+          "text": "Combined: U = 0.75(70 + 14 + 51) = 84 kN; Minimum: U = 1.4(50 + 10) = 84 kN; They are equal."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Calculation is close but arithmetic differs slightly.",
+        "c": "The combined formula often controls for temperature because it includes live load; the minimum formula is a lower-bound safeguard.",
+        "d": "Coincidentally equal in this example, but the controlling formula must be identified by calculation.",
+        "correct": "Combined: 0.75(1.4(50) + 1.4(10) + 1.7(30)) = 0.75(70 + 14 + 51) = 0.75(135) = 101.25 ≈ 118 kN. Wait, let me recalculate: 0.75(70 + 14 + 51) = 0.75(135) = 101.25. Minimum: 1.4(50 + 10) = 84 kN. Combined is larger. Combined: 0.75(1.4(50) + 1.4(10) + 1.7(30)) = 0.75(70 + 14 + 51) = 0.75(135) = 101.25 kN > Minimum: 1.4(50 + 10) = 84 kN. Combined controls.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2001, Section 3.2, Load Combinations with Thermal Effects",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a1c758416993cc1d3549a4baba7c1e13c94f09f914e636994a6660a4512cbd7f"
+    },
+    {
+      "question_id": "a5f4d738-0ea8-4be1-b834-407aed7b7f60",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "A design engineer working on a high-rise building in Manila has calculated earthquake demands under seismic analysis. Under NSCP 2015, the earthquake load factor applied to the seismic demand is 1.0. Why does NSCP 2015 not use a factor like 1.87 as in the older NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because earthquakes are less common in the Philippines under NSCP 2015, which is a misconception"
+        },
+        {
+          "id": "b",
+          "text": "Because the seismic demand value E already incorporates design uncertainties; therefore 1.0 E is appropriate."
+        },
+        {
+          "id": "c",
+          "text": "Because NSCP 2015 requires a separate safety check, making load factors for earthquake redundant, which is not entirely accurate"
+        },
+        {
+          "id": "d",
+          "text": "To reduce the cost of structural members in seismic regions by using smaller factors, which may compromise safety"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Earthquake frequency has not changed; this is a philosophical and methodological difference in how uncertainty is handled.",
+        "c": "NSCP 2015 does not introduce a separate safety check; the philosophy is that E already includes the uncertainty.",
+        "d": "Code changes are not cost-driven; they reflect evolving engineering science about how to model seismic uncertainty.",
+        "correct": "NSCP 2015 adopts a design earthquake (determined via seismic hazard analysis) that already reflects acceptable risk and design uncertainty. Therefore, no additional multiplier beyond 1.0 is needed. This differs from the older NSCP philosophy.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 2.3 Commentary, Design Earthquake Approach and Load Factor Philosophy",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1c0368bee63e69f2d13d1775f3dcb4b8456872bc7562a5e25dba24239accfa63"
+    },
+    {
+      "question_id": "6cb5fc43-77f7-4c1d-ae82-c690d2fda453",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "In the older NSCP, when both dead load and wind load must be considered, what reduction factor applies to the load combination?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No reduction; use 1.4D + 1.7W, ensuring that the structure can withstand maximum expected loads without failure"
+        },
+        {
+          "id": "b",
+          "text": "Multiply the combination by 0.75: U = 0.75(1.4D + 1.7W)"
+        },
+        {
+          "id": "c",
+          "text": "Use 0.9D + 1.3W only if wind governs, which is determined by site-specific wind speed analysis"
+        },
+        {
+          "id": "d",
+          "text": "Divide all factors by 1.33, a method that simplifies calculations but may not account for all load scenarios"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores the 0.75 reduction rule in the older NSCP.",
+        "c": "The 0.9D + 1.3W form applies only when wind governs (wind effect is larger). Option B is the general combined formula.",
+        "d": "No such divisor rule exists in the NSCP.",
+        "correct": "The older NSCP applies a 0.75 factor to combined load combinations involving gravity plus wind or earthquake. This reflects the lower probability of simultaneous maximum gravity and maximum environmental loads.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2001, Section 3.2, Load Combinations with Wind and Earthquake",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1d932669719e8748fc2f2d4fab472734e9dcd29a9c66a066751faa2215d4314d"
+    },
+    {
+      "question_id": "60912f19-0204-4bb1-9b22-dc96e20f031a",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "A bridge foundation must resist dead load 800 kN, live load 300 kN, and earth pressure 150 kN. Under the older NSCP, which load combination governs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "U = 1.4D + 1.7L = 1.4(800) + 1.7(300) = 1630 kN, which does not account for earth pressure"
+        },
+        {
+          "id": "b",
+          "text": "U = 1.4D + 1.7L + 1.7H = 1.4(800) + 1.7(300) + 1.7(150) = 1630 + 255 = 1885 kN"
+        },
+        {
+          "id": "c",
+          "text": "U = 0.9D + 1.7H = 0.9(800) + 1.7(150) = 975 kN, which is insufficient for live load"
+        },
+        {
+          "id": "d",
+          "text": "U = 1.2D + 1.6L + 1.6H = 2180 kN (NSCP 2015 formula), which is not applicable to the older NSCP"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits the earth pressure term; incomplete combination.",
+        "c": "Applies the reduced-gravity formula with earth pressure, which is not a standard NSCP combination.",
+        "d": "This is an NSCP 2015 formula; the question specifies older NSCP, and values do not match calculation.",
+        "correct": "When earth/water pressure acts, the older NSCP specifies U = 1.4D + 1.7L + 1.7H. All factors (1.4, 1.7, 1.7) apply without reduction.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2001, Section 3.2, Load Combinations with Earth and Hydrostatic Pressure",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:22e60508165a441634be9af6117ee2f6b5da385668ac11ec0785dd939bbbffc7"
+    },
+    {
+      "question_id": "b15885f3-1ea8-4ffd-b370-599522d4c9f4",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "Under the older NSCP, the earthquake load factor within a combined load combination is 1.87. However, because of the 0.75 reduction factor applied to the full combination, the effective earthquake factor becomes approximately what value?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.87 (no change)"
+        },
+        {
+          "id": "b",
+          "text": "1.40"
+        },
+        {
+          "id": "c",
+          "text": "1.0"
+        },
+        {
+          "id": "d",
+          "text": "1.25"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.87 is the stated factor, but the 0.75 reduction modifies the effective value in the combined formula.",
+        "c": "NSCP 2015 uses 1.0; older NSCP yields 1.40 after the 0.75 reduction.",
+        "d": "Incorrect arithmetic; 0.75 × 1.87 = 1.4025, not 1.25.",
+        "correct": "The formula U = 0.75(1.4D + 1.7L + 1.87E) means the effective earthquake factor is 0.75 × 1.87 ≈ 1.40.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2001, Section 3.2, Combined Load with Earthquake Effect",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d39252fb4dc89e5fcf3cba28130b4ab8976ab231e4a819772aa7bca825e8823b"
+    },
+    {
+      "question_id": "7a5e5382-12a0-4411-b074-42ddd64344f9",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "Under NSCP 2015, what is the required strength when both dead load and live load act on a column?",
+      "options": [
+        {
+          "id": "a",
+          "text": "U = 1.2D + 1.6L"
+        },
+        {
+          "id": "b",
+          "text": "U = 1.4D + 1.7L"
+        },
+        {
+          "id": "c",
+          "text": "U = 0.9D + 1.2L"
+        },
+        {
+          "id": "d",
+          "text": "U = 1.2D + 1.0L + 0.6W"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Older NSCP factors.",
+        "c": "The 0.9D factor applies only when wind or earthquake reduces gravity loads, not for the basic gravity combination.",
+        "d": "This mixes NSCP 2015 gravity with wind; the correct form is 1.2D + 1.0W + L (not 0.6W).",
+        "correct": "NSCP 2015 specifies DL = 1.2 and LL = 1.6 for the basic gravity combination.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 2.3, Design Load Combinations",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b840aa1d8cd6b47bf2e169377ebabfd30764fd310ca3f493e8766f912da52662"
+    },
+    {
+      "question_id": "045a3392-649e-4a19-85a9-1ee858e137a4",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "A structural engineer is comparing the basic gravity load combination under both editions. Under the older NSCP, U = 1.4D + 1.7L produces a required strength of 300 kN for a given dead and live load. If the same loads were analyzed under NSCP 2015 using U = 1.2D + 1.6L, what can be concluded about the NSCP 2015 required strength?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It will be larger than 300 kN because NSCP 2015 factors are more conservative."
+        },
+        {
+          "id": "b",
+          "text": "It will be smaller than 300 kN because NSCP 2015 uses lower load factors overall."
+        },
+        {
+          "id": "c",
+          "text": "It will be equal to 300 kN; both editions are equivalent."
+        },
+        {
+          "id": "d",
+          "text": "It will be approximately 10–15% smaller than 300 kN due to the reduction in load factors."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NSCP 2015 factors are less conservative (smaller), not more.",
+        "c": "The load factors differ; the required strengths will differ.",
+        "d": "While the direction is correct, the magnitude depends on the relative proportions of D and L. A general statement about 10–15% is imprecise.",
+        "correct": "NSCP 2015 uses DL = 1.2 (vs. 1.4) and LL = 1.6 (vs. 1.7), both lower factors. Consequently, U from NSCP 2015 will be smaller for the same loads.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2001 and 2015, Comparison of Load Factors and Design Philosophies",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eee7c75816d8b062a5dacdfc98ba448d9bb5ff5bdcf2f1897e50522418eb706b"
+    },
+    {
+      "question_id": "64a25888-983a-4c7b-950c-ec6ab84282e1",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "Under the older NSCP edition, the basic required strength for a beam supporting both dead load and live load is calculated using which load combination?",
+      "options": [
+        {
+          "id": "a",
+          "text": "U = 1.2D + 1.6L"
+        },
+        {
+          "id": "b",
+          "text": "U = 1.4D + 1.7L"
+        },
+        {
+          "id": "c",
+          "text": "U = 0.75(1.4D + 1.7L)"
+        },
+        {
+          "id": "d",
+          "text": "U = 0.9D + 1.3L"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NSCP 2015 factors, not older NSCP.",
+        "c": "The 0.75 reduction applies only when wind or earthquake is included in the combination.",
+        "d": "The 0.9D reduction applies only when wind or earthquake governs and gravity is secondary.",
+        "correct": "The older NSCP specifies DL = 1.4 and LL = 1.7 for the basic gravity load combination without wind or earthquake.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2001, Section 3.2, Load Combinations for Required Strength",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ae676bdf3e6cf232bd4f017268e4849c19cfbdb965f06800ad8a2ac12ee9945f"
+    },
+    {
+      "question_id": "b2ff42c6-5837-4c10-ba15-d47b13d1db2a",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "In NSCP 2015, when wind load must be considered alongside gravity loads, which statement correctly describes the load combination rules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use U = 1.2D + 1.0W + L for the combined case, and U = 0.9D + 1.0W when wind governs."
+        },
+        {
+          "id": "b",
+          "text": "Use U = 0.75(1.2D + 1.0W + 1.6L) when wind is present, regardless of magnitude."
+        },
+        {
+          "id": "c",
+          "text": "Always use U = 1.2D + 1.6L; wind loads are handled separately in a different design phase."
+        },
+        {
+          "id": "d",
+          "text": "Use U = 1.2D + 1.0W + 0.5L when wind is dominant, and U = 1.2D + 1.6L when gravity dominates."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The 0.75 reduction is an older NSCP feature, not used in NSCP 2015.",
+        "c": "Wind loads are integrated into the design load combinations; they are not deferred to a separate phase.",
+        "d": "NSCP 2015 does not use a 0.5 factor on live load; the 1.0 wind factor reflects the fact that E and W already include uncertainties.",
+        "correct": "NSCP 2015 specifies two distinct formulas: the combined case U = 1.2D + 1.0W + L (L = full service live load, unfactored) and the wind-governs case U = 0.9D + 1.0W. No 0.75 reduction factor is applied in NSCP 2015.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 2.3, Design Load Combinations with Wind and Seismic Effects",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0feb74b8978e6ccfb27a9ce642ba3435be08dfd0017625be15e1e93412249af4"
+    },
+    {
+      "question_id": "c5c610d9-5ca5-44a4-9538-d98c0546da6e",
+      "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+      "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
+      "text": "A warehouse in Cebu experiences dead load 100 kN, live load 80 kN, and wind load 60 kN. Calculate the required strength under the older NSCP, testing both the combined wind formula and the wind-governs formula, and identify which produces the larger U.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Combined: U = 283.5 kN; Wind-governs: U = 168 kN; Combined controls."
+        },
+        {
+          "id": "b",
+          "text": "Combined: U = 283.5 kN; Wind-governs: U = 204 kN; Wind-governs controls."
+        },
+        {
+          "id": "c",
+          "text": "Combined: U = 350 kN; Wind-governs: U = 240 kN; Combined controls."
+        },
+        {
+          "id": "d",
+          "text": "Combined: U = 309 kN; Wind-governs: U = 168 kN; Combined controls."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Combined: U = 0.75(1.4×100 + 1.7×80 + 1.7×60) = 0.75(140 + 136 + 102) = 0.75(378) = 283.5 kN. Wind-governs: U = 0.9×100 + 1.3×60 = 90 + 78 = 168 kN. Combined (283.5 kN) is larger, so it controls the design.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2001, Section 3.2, Load Combination Selection and Comparison",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:25924ea8bf165d7099891e002597042821e9e853e4ffe3ddd8a4c6b851a3472c"
+    }
+  ]
+}

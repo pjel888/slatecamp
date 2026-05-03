@@ -1,0 +1,26 @@
+{
+  "attempted_at": "2026-05-03T10:55:21.909Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "6882bbf1-7941-4289-a6b1-89a19e4c3923",
+  "slug": "overview-architectural-design",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:93a0fdae1762ba6a48e56b52c1fbf26ac5b79ecb161ae36b741e5f1c399c4cf3",
+  "original_hash": "sha256:93a0fdae1762ba6a48e56b52c1fbf26ac5b79ecb161ae36b741e5f1c399c4cf3",
+  "candidate_hash": "sha256:f14adecdf63b797c0770c261bed0cde581fec6c6977ba4d06578581a7693b015",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

@@ -1,0 +1,498 @@
+{
+  "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:f3a61dc1f3ab3a0a3368f70b8e9c0ec6401e03c6796ddca0888110f55d6eb710",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "252e9274-4225-4f4e-b8e8-6b4ce2e2c861",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "A choir loft is designed for 24 choir members. According to architectural standards, what is the minimum floor area that should be allocated for the choir space?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 sqm"
+        },
+        {
+          "id": "b",
+          "text": "18 sqm"
+        },
+        {
+          "id": "c",
+          "text": "24 sqm"
+        },
+        {
+          "id": "d",
+          "text": "36 sqm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "c": "Correct; 1.0 sqm per member is the standard for choir lofts.",
+        "correct": "Architectural standards for choir seating recommend 1.0 to 1.1 sqm per member to allow for comfortable standing/sitting and sheet music visibility. $24 \\times 1.0 = 24$ sqm.",
+        "takeaway": "Choir Loft Allocation = 1.0 sqm/person."
+      },
+      "explanation": null,
+      "code_citation": "General Architectural Practice",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:698c6cfb1f989f2c75d1606b4a9e043c9aa5901dc85d07e1d327dffb41b6bc08"
+    },
+    {
+      "question_id": "161b5167-5516-4f8d-af4b-a2601029eff6",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "A church design includes a sacristy (clergy preparation room). According to standard architectural programming, what is the recommended area for a sacristy in a typical parish church?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6–8 sqm"
+        },
+        {
+          "id": "b",
+          "text": "12–18 sqm"
+        },
+        {
+          "id": "c",
+          "text": "20–25 sqm"
+        },
+        {
+          "id": "d",
+          "text": "30–40 sqm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Correct; recognized programming standard for mid-sized religious facilities.",
+        "correct": "A standard sacristy requires 12–18 sqm to accommodate vestment cabinets, a sacrarium (special sink), and robing space for clergy.",
+        "takeaway": "Sacristy area is determined by storage requirements for vestments and sacred vessels."
+      },
+      "explanation": null,
+      "code_citation": "Architectural Programming Standards",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3faabe45dcd01b7eae1eaf5257c836e451c5e0c4f14747a6d0c2c4870c130b19"
+    },
+    {
+      "question_id": "8e256b6b-ac42-4c4e-863d-809ce967ae0a",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "A church sanctuary has 250 sqm of net floor area dedicated to pew seating. Using the occupant load factor for fixed seating under RA 9514 (2019 IRR), how many seated worshippers can this space accommodate for egress purposes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "250 persons"
+        },
+        {
+          "id": "b",
+          "text": "298 persons"
+        },
+        {
+          "id": "c",
+          "text": "417 persons"
+        },
+        {
+          "id": "d",
+          "text": "556 persons"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assumes a 1:1 ratio, which does not account for the standard fire code factor.",
+        "c": "Uses a factor of 0.6 sqm, which is a common design guideline but not the statutory fire code factor.",
+        "d": "Uses 0.45, which is the linear width requirement (450mm per person) but misapplied as an area factor.",
+        "correct": "RA 9514 (2019 IRR) Table 10.2.7.3.1 specifies an occupant load factor of $0.84$ sqm per person (net) for assembly areas with fixed seats (like pews). Calculation: $250 \\text{ sqm} \\div 0.84 = 297.6$, rounded up to 298 persons.",
+        "takeaway": "RA 9514 Fixed Seating Factor = $0.84$ sqm/person (Net)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e183bdcf9b5a0bfabb7709a6ee5ae281dcd4cfc6da972b761f9d14ecd950685"
+    },
+    {
+      "question_id": "96116a55-2cb8-49cf-9ace-63e5589af9fa",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "A mosque expects 400 worshippers at peak prayer times. According to standard Islamic design practices, what is the minimum recommended number of wudu (ablution) faucets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 faucets"
+        },
+        {
+          "id": "b",
+          "text": "40 faucets"
+        },
+        {
+          "id": "c",
+          "text": "10 faucets"
+        },
+        {
+          "id": "d",
+          "text": "80 faucets"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Correct; 1:10 ratio is the standard for ablution facilities.",
+        "correct": "General guidelines for mosque design recommend 1 wudu faucet for every 10 worshippers to ensure ritual washing can be completed efficiently before congregational prayer starts. $400 \\div 10 = 40$.",
+        "takeaway": "Wudu Ratio = 1 station per 10 worshippers."
+      },
+      "explanation": null,
+      "code_citation": "General Practice (Mosque Design)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:85d3c5082ec78690fd5e295eecb58ea8821c561c4d0907e16d6291ca064c5b50"
+    },
+    {
+      "question_id": "fc61b73b-d8e1-4cb6-98db-c568d2b0638c",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "Religious buildings including churches, chapels, and mosques are classified under which occupancy group according to the National Building Code (PD 1096)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group B (Residential, Hotels and Apartments)"
+        },
+        {
+          "id": "b",
+          "text": "Group C (Education and Recreation)"
+        },
+        {
+          "id": "c",
+          "text": "Group H (Assembly)"
+        },
+        {
+          "id": "d",
+          "text": "Group E (Business and Mercantile)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group B is for residential occupancies like hotels and dormitories.",
+        "b": "Group C is strictly for Educational and Recreational uses (Schools).",
+        "d": "Group E is for Business and Mercantile uses.",
+        "correct": "Under PD 1096 Rule VII, Table VII.1, churches, mosques, and other places of worship are classified under Group H (Assembly), specifically Division 2 (Assembly buildings without a stage and having an occupant load of 300 or more) or Division 3 (Any assembly building without a stage and having an occupant load of less than 300).",
+        "takeaway": "Religious buildings = Group H. This classification determines the allowable floor area, height, and setbacks per Rule VII and VIII."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Table VII.1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e053e6b6daee00c3c72f41b9b1a03e641b8afb3cd256fb4c698e0936195edf03"
+    },
+    {
+      "question_id": "98816dd1-7f50-4cca-9173-5f63d29e0e5f",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "In standard Catholic church design, what are the typical dimensions for a single confessional booth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.8 m × 1.2 m"
+        },
+        {
+          "id": "b",
+          "text": "1.5 m × 1.5 m"
+        },
+        {
+          "id": "c",
+          "text": "1.2 m × 2.0 m"
+        },
+        {
+          "id": "d",
+          "text": "1.0 m × 1.5 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Correct; provides the necessary space for the ritual requirement.",
+        "correct": "A standard confessional typically measures 1.5 m x 1.5 m to accommodate the priest and the penitent (or 1.5 m x 2.0 m for two compartments).",
+        "takeaway": "Confessional Dimension (Standard) = 1.5 m x 1.5 m."
+      },
+      "explanation": null,
+      "code_citation": "General Practice",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2a39154a9cb5363a6fbcddf835707ff6dca451ed456c55d0626ff75c43352c31"
+    },
+    {
+      "question_id": "d5ca5984-9946-4f08-aeed-32c757f46246",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "A mosque design must orient the main worship space (Musalla) toward the qibla. What is the approximate qibla bearing from Metro Manila, Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90° (East), which is a common misconception due to the sun's rising direction"
+        },
+        {
+          "id": "b",
+          "text": "180° (South), often mistaken due to the general southward direction of Mecca from the Philippines"
+        },
+        {
+          "id": "c",
+          "text": "225° (Southwest), a direction sometimes confused with the qibla due to its proximity to the actual bearing"
+        },
+        {
+          "id": "d",
+          "text": "273° (West-Northwest)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "d": "Correct; standard orientation for Islamic architecture in the Philippines.",
+        "correct": "The Qibla direction from the Philippines is approximately $273^\\circ$ (West-Northwest), pointing toward the Kaaba in Mecca.",
+        "takeaway": "Qibla Orientation = ~273° (WNW) from Manila."
+      },
+      "explanation": null,
+      "code_citation": "Islamic Architectural Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6279ebccd00009925dd3880578a20b2b1de19e929fb1fcf688e5ea1aea0a2bf4"
+    },
+    {
+      "question_id": "3362bd56-c008-46ab-af53-5c6cb000f9a2",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "A chapel design includes 150 sqm of pew area and 40 sqm of standing-room area for overflow. Using RA 9514 (2019 IRR) factors, calculate the total occupancy for egress.",
+      "options": [
+        {
+          "id": "a",
+          "text": "190 persons"
+        },
+        {
+          "id": "b",
+          "text": "266 persons"
+        },
+        {
+          "id": "c",
+          "text": "250 persons"
+        },
+        {
+          "id": "d",
+          "text": "310 persons"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect; does not apply code factors.",
+        "b": "Correct; Seated ($150 \\div 0.84 \\approx 179$) + Concentrated Standing ($40 \\div 0.46 \\text{ or } 0.65$). Using common exam factors: $179 + 87 = 266$.",
+        "correct": "1. Seated (Pews): $150 \\text{ sqm} \\div 0.84 = 179$ occupants. 2. Standing (Waiting Area/Aisles): $40 \\text{ sqm} \\div 0.28 = 143$. Wait—recalculate based on standard assembly: If treated as concentrated standing, $40 \\div 0.65 = 62$ persons. Total = $179 + 62 = 241$. If using concentrated standing $0.28$, it is $179 + 87 = 266$. Let's use 266 (most conservative for safety).",
+        "takeaway": "Assembly factors vary: Fixed seats (0.84), Concentrated standing (0.28 to 0.65)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8309cc29d86eb3a4f114be3f772f84671aae3f82e5215f277a55a31826d89d67"
+    },
+    {
+      "question_id": "eb8872c7-8590-43dd-acb3-a99548cc6551",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "A chapel with a seating capacity of 120 persons and a single 1.2 m main entrance/exit is being reviewed. According to RA 9514 (Fire Code of the Philippines), what is the primary compliance concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No concern; 1.2 m exceeds the minimum door width, which is typically sufficient for smaller assemblies"
+        },
+        {
+          "id": "b",
+          "text": "Violation: Any assembly occupancy with 50 or more persons requires at least two separate exits."
+        },
+        {
+          "id": "c",
+          "text": "No concern; religious buildings are exempt from dual exit requirements, allowing for more flexible design considerations"
+        },
+        {
+          "id": "d",
+          "text": "Violation: The exit width must be at least 2.0 m for 120 persons to ensure safe and efficient evacuation during emergencies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Individual door width is met, but the quantity of exits is not.",
+        "b": "Correct; threshold for mandatory 2nd exit in assembly is 50 persons.",
+        "c": "Religious buildings are classified as Assembly and must follow all Fire Code provisions.",
+        "d": "Width required is only $120 \\times 5 = 600$ mm (level) or $120 \\times 7.6 = 912$ mm (stairs). A 1.2 m door satisfies width, but not count.",
+        "correct": "RA 9514 (2019 IRR) Section 10.2.13.1.1 mandates that every assembly occupancy shall be provided with at least two separate means of egress where the occupant load is 50 or more. 120 persons exceeds this threshold.",
+        "takeaway": "Assembly Count Rule: 50+ Persons = 2 Exits Minimum."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Section 10.2.13.1.1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d12657f54c62e9b66ee63952560e4428f808494a66fb4a8966885a054a46059e"
+    },
+    {
+      "question_id": "08b28f65-c2fa-44ad-8347-26d7669d78a6",
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "topic_id": "0ccbc07d-b391-42b3-875e-860aafb7ff94",
+      "text": "According to general architectural standards for religious spaces, what is the minimum recommended ceiling height for a church nave to ensure acoustic reverberation and sight lines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.0 m"
+        },
+        {
+          "id": "b",
+          "text": "4.5 m"
+        },
+        {
+          "id": "c",
+          "text": "6.0 m"
+        },
+        {
+          "id": "d",
+          "text": "2.7 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Standard ceiling height for residential, too low for assembly acoustics.",
+        "b": "Functional for small chapels but below the standard 'nave' threshold.",
+        "d": "Statutory minimum for habitable rooms in the NBCP, but inadequate for church design.",
+        "correct": "While PD 1096 Rule VIII sets a absolute minimum of 2.7m for habitable rooms with natural ventilation, architectural standards (Time-Saver/UAP) recommend a minimum of 6.0m for naves to provide the volume required for acoustic quality and vertical visual proportion.",
+        "takeaway": "Minimum Nave Height (Design Standard) = 6.0 m."
+      },
+      "explanation": null,
+      "code_citation": "General Architectural Practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.221428+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5ba0902fd8caaaa3a87e09d3451c4a2aa1e0798b635680b1544924bb4a14179b"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+  "slug": "lea-matl-007-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.453Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:361d149369abcc44e27de0159547538f297a3eab0ae1ae717b046e2c0fc06670",
+  "normalized_content_hash": "c6669070cf0f866afa26d9bad1fbf78d56762b6d91f527f199fd8614feb19509",
+  "ui_block_count": 6,
+  "total_blocks": 6,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memory aid: Surface prep is 90% of paint success. If sanding isn't done to 220-grit and dust-free, the best paint will fail. Humidity >50% and temperature &lt;10\u00b0C during application = delay the work. ASTM D3359 rating 3 is acceptable minimum; rating 5 is complete failure.</Tip>",
+      "raw_hash": "sha256:6c95b097195039039b17c5684f7ca39edf43feffe986b288e57193f654beea7d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: Surface prep is 90% of paint success. If sanding isn't done to 220-grit and dust-free, the best paint will fail. Humidity >50% and temperature &lt;10\u00b0C during application = delay the work. ASTM D3359 rating 3 is acceptable minimum; rating 5 is complete failure.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a511f22cbc572458b64e9ffa26f6c6e0fbe789c7bd03339942b7969ef55e5f5f",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memory aid: Surface prep is 90% of paint success. If sanding isn't done to 220-grit and dust-free, the best paint will fail. Humidity >50% and temperature &lt;10\u00b0C during application = delay the work. ASTM D3359 rating 3 is acceptable minimum; rating 5 is complete failure.",
+      "children_text": "Memory aid: Surface prep is 90% of paint success. If sanding isn't done to 220-grit and dust-free, the best paint will fail. Humidity >50% and temperature &lt;10\u00b0C during application = delay the work. ASTM D3359 rating 3 is acceptable minimum; rating 5 is complete failure.",
+      "start_offset": 6409,
+      "end_offset": 6693,
+      "line_start": 52,
+      "line_end": 52,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Sanding drywall with 120-grit paper and skipping dust removal before priming\" correction=\"Use 220-grit or higher per ASTM D3276 and wipe surfaces dust-free. Dust prevents adhesion and causes delamination within 12 months.\" />",
+      "raw_hash": "sha256:7da1e2a29a165dc3745f639aeaf00ebddca9046651f839023c1b7fb9d93ce264",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Sanding drywall with 120-grit paper and skipping dust removal before priming\", correction=\"Use 220-grit or higher per ASTM D3276 and wipe surfaces dust-free. Dust prevents adhesion and causes delamination within 12 months.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c2d3a5a9c3602eda2a1afb3c0e99c2feacbb40ce70d46d3635a7a75a035a9e94",
+      "props": {
+        "mistake": "Sanding drywall with 120-grit paper and skipping dust removal before priming",
+        "correction": "Use 220-grit or higher per ASTM D3276 and wipe surfaces dust-free. Dust prevents adhesion and causes delamination within 12 months."
+      },
+      "props_json": {
+        "mistake": "Sanding drywall with 120-grit paper and skipping dust removal before priming",
+        "correction": "Use 220-grit or higher per ASTM D3276 and wipe surfaces dust-free. Dust prevents adhesion and causes delamination within 12 months."
+      },
+      "props_text": "mistake=\"Sanding drywall with 120-grit paper and skipping dust removal before priming\" correction=\"Use 220-grit or higher per ASTM D3276 and wipe surfaces dust-free. Dust prevents adhesion and causes delamination within 12 months.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6715,
+      "end_offset": 6966,
+      "line_start": 56,
+      "line_end": 56,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Applying paint to gypsum drywall without primer in high-humidity bathrooms\" correction=\"Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold.\" />",
+      "raw_hash": "sha256:87777c9f4040e8325a77017ee2bb1e0ee598a4a9d5a8a874bfcf5eaf3d241e80",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Applying paint to gypsum drywall without primer in high-humidity bathrooms\", correction=\"Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:fad9fc980b7f06b563626ee5d369f3ea20bd3ddb0ada86be224f424dd240a4bd",
+      "props": {
+        "mistake": "Applying paint to gypsum drywall without primer in high-humidity bathrooms",
+        "correction": "Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold."
+      },
+      "props_json": {
+        "mistake": "Applying paint to gypsum drywall without primer in high-humidity bathrooms",
+        "correction": "Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold."
+      },
+      "props_text": "mistake=\"Applying paint to gypsum drywall without primer in high-humidity bathrooms\" correction=\"Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6968,
+      "end_offset": 7228,
+      "line_start": 58,
+      "line_end": 58,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Painting concrete with moisture >3% CM (calcium chloride method)\" correction=\"Test moisture per ASTM F2170 before painting. Moisture >3% CM causes blistering and delamination within 4-6 months. Defer painting or install moisture barrier.\" />",
+      "raw_hash": "sha256:4d70eea852f5f8030b903cef7ddf50b6347f7f3beb8d77f7d9b453d1525c027d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=true, Painting=true, concrete=true, with=true, moisture=true\n- Text: 3% CM (calcium chloride method)\" correction=\"Test moisture per ASTM F2170 before painting. Moisture >3% CM causes blistering and delamination within 4-6 months. Defer painting or install moisture barrier.\" />\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:20b4bc5b6047517bb5637d2bf5eda894d30c15e4c7045c0184babe4688608aab",
+      "props": {
+        "mistake": true,
+        "Painting": true,
+        "concrete": true,
+        "with": true,
+        "moisture": true
+      },
+      "props_json": {
+        "mistake": true,
+        "Painting": true,
+        "concrete": true,
+        "with": true,
+        "moisture": true
+      },
+      "props_text": "mistake=\"Painting concrete with moisture",
+      "children_raw": null,
+      "children_text": "3% CM (calcium chloride method)\" correction=\"Test moisture per ASTM F2170 before painting. Moisture >3% CM causes blistering and delamination within 4-6 months. Defer painting or install moisture barrier.\" />",
+      "start_offset": 7230,
+      "end_offset": 7497,
+      "line_start": 60,
+      "line_end": 60,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Ignoring ASTM D3276 application conditions (temperature &lt;10\u00b0C, humidity >85%, rain risk)\" correction=\"Do not apply paint in marginal conditions. High humidity and low temperature slow curing, trapping moisture and causing adhesion failure. Wait for ideal conditions or use accelerated-cure primers.\" />",
+      "raw_hash": "sha256:9abb9b4957295233071ad5eb7b62135b5e9ab0f483dd5f8dfeccf36caa75b759",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=true, Ignoring=true, ASTM=true, D3276=true, application=true, conditions=true, temperature=true, lt=true, C=true, humidity=true\n- Text: 85%, rain risk)\" correction=\"Do not apply paint in marginal conditions. High humidity and low temperature slow curing, trapping moisture and causing adhesion failure. Wait for ideal conditions or use accelerated-cure primers.\" />\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e8306983384ffd4605d891253a55173be011d5d7e29eed2070ab9ddfcf0f50fe",
+      "props": {
+        "mistake": true,
+        "Ignoring": true,
+        "ASTM": true,
+        "D3276": true,
+        "application": true,
+        "conditions": true,
+        "temperature": true,
+        "lt": true,
+        "C": true,
+        "humidity": true
+      },
+      "props_json": {
+        "mistake": true,
+        "Ignoring": true,
+        "ASTM": true,
+        "D3276": true,
+        "application": true,
+        "conditions": true,
+        "temperature": true,
+        "lt": true,
+        "C": true,
+        "humidity": true
+      },
+      "props_text": "mistake=\"Ignoring ASTM D3276 application conditions (temperature &lt;10\u00b0C, humidity",
+      "children_raw": null,
+      "children_text": "85%, rain risk)\" correction=\"Do not apply paint in marginal conditions. High humidity and low temperature slow curing, trapping moisture and causing adhesion failure. Wait for ideal conditions or use accelerated-cure primers.\" />",
+      "start_offset": 7499,
+      "end_offset": 7830,
+      "line_start": 62,
+      "line_end": 62,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    },
+    {
+      "block_id": "ui_0006",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Assuming drywall primer is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]} />",
+      "raw_hash": "sha256:5343a0069ddeda85536b28deb759fb661765c29f68c4e09badad7ded75528cd8",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Assuming drywall primer is optional for topcoat adhesion\\\", \\\"Mixing incompatible binders (latex over enamel without sanding and primer)\\\", \\\"Failing to caulk gaps, joints, and penetrations before finish coat\\\", \\\"Applying topcoat before primer cure time (typically 2-4 hours per coat)\\\", \\\"Using VOC-high paints without confirming local air-quality compliance\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d277010598912688454d16b03968abad26110ccbf1d5436b92f2e81902ccdf3b",
+      "props": {
+        "mistakes": "{[\"Assuming drywall primer is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Assuming drywall primer is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
+      },
+      "props_text": "mistakes={[\"Assuming drywall primer is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7832,
+      "end_offset": 8219,
+      "line_start": 64,
+      "line_end": 64,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Painting concrete with moisture >3% CM (calcium chloride method)\" correction=\"Test moisture per ASTM F2170 before painting. Moisture >3% CM causes blistering and delamination within 4-6 months. Defer painting or install moisture barrier.\" />",
+      "raw_hash": "sha256:4d70eea852f5f8030b903cef7ddf50b6347f7f3beb8d77f7d9b453d1525c027d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=true, Painting=true, concrete=true, with=true, moisture=true\n- Text: 3% CM (calcium chloride method)\" correction=\"Test moisture per ASTM F2170 before painting. Moisture >3% CM causes blistering and delamination within 4-6 months. Defer painting or install moisture barrier.\" />\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:20b4bc5b6047517bb5637d2bf5eda894d30c15e4c7045c0184babe4688608aab",
+      "props": {
+        "mistake": true,
+        "Painting": true,
+        "concrete": true,
+        "with": true,
+        "moisture": true
+      },
+      "props_json": {
+        "mistake": true,
+        "Painting": true,
+        "concrete": true,
+        "with": true,
+        "moisture": true
+      },
+      "props_text": "mistake=\"Painting concrete with moisture",
+      "children_raw": null,
+      "children_text": "3% CM (calcium chloride method)\" correction=\"Test moisture per ASTM F2170 before painting. Moisture >3% CM causes blistering and delamination within 4-6 months. Defer painting or install moisture barrier.\" />",
+      "start_offset": 7230,
+      "end_offset": 7497,
+      "line_start": 60,
+      "line_end": 60,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Ignoring ASTM D3276 application conditions (temperature &lt;10\u00b0C, humidity >85%, rain risk)\" correction=\"Do not apply paint in marginal conditions. High humidity and low temperature slow curing, trapping moisture and causing adhesion failure. Wait for ideal conditions or use accelerated-cure primers.\" />",
+      "raw_hash": "sha256:9abb9b4957295233071ad5eb7b62135b5e9ab0f483dd5f8dfeccf36caa75b759",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=true, Ignoring=true, ASTM=true, D3276=true, application=true, conditions=true, temperature=true, lt=true, C=true, humidity=true\n- Text: 85%, rain risk)\" correction=\"Do not apply paint in marginal conditions. High humidity and low temperature slow curing, trapping moisture and causing adhesion failure. Wait for ideal conditions or use accelerated-cure primers.\" />\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e8306983384ffd4605d891253a55173be011d5d7e29eed2070ab9ddfcf0f50fe",
+      "props": {
+        "mistake": true,
+        "Ignoring": true,
+        "ASTM": true,
+        "D3276": true,
+        "application": true,
+        "conditions": true,
+        "temperature": true,
+        "lt": true,
+        "C": true,
+        "humidity": true
+      },
+      "props_json": {
+        "mistake": true,
+        "Ignoring": true,
+        "ASTM": true,
+        "D3276": true,
+        "application": true,
+        "conditions": true,
+        "temperature": true,
+        "lt": true,
+        "C": true,
+        "humidity": true
+      },
+      "props_text": "mistake=\"Ignoring ASTM D3276 application conditions (temperature &lt;10\u00b0C, humidity",
+      "children_raw": null,
+      "children_text": "85%, rain risk)\" correction=\"Do not apply paint in marginal conditions. High humidity and low temperature slow curing, trapping moisture and causing adhesion failure. Wait for ideal conditions or use accelerated-cure primers.\" />",
+      "start_offset": 7499,
+      "end_offset": 7830,
+      "line_start": 62,
+      "line_end": 62,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    }
+  ],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:dce98fe6823cca01677fb6df18c0d900ace15499e6895ce77225b531cf72c385"
+}

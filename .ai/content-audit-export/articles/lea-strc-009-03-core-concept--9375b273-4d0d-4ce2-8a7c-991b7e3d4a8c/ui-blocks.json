@@ -1,0 +1,113 @@
+{
+  "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+  "slug": "lea-strc-009-03-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.532Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:5532921280bf0e8693f32104b487260a8dd31d0aa0e8220bbc191de01abb55e4",
+  "normalized_content_hash": "sha256:38e5bf3de4167a6ee7a7cf9152c75e5c2bdd63cac64af26b7f1f531194ce1335",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Property\", \"Formula\", \"Unit\", \"Use\"]} rows={[ [\"Section Modulus\", \"S = bh²/6\", \"mm³\", \"Bending: fb = M/S\"], [\"Moment of Inertia\", \"I = bh³/12\", \"mm⁴\", \"Deflection and combined stress\"], [\"Cross-sectional Area\", \"A = bh\", \"mm²\", \"Shear: fv = 3V/(2A)\"], [\"Radius of Gyration\", \"r = h/√12\", \"mm\", \"Compression (secondary)\"] ]} />",
+      "raw_hash": "sha256:f1abe14c0690477d017ccba0f244cdd1d1665e6a9108ea83d27ea2967da9f764",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Property\\\", \\\"Formula\\\", \\\"Unit\\\", \\\"Use\\\"]}\", rows=\"{[ [\\\"Section Modulus\\\", \\\"S = bh²/6\\\", \\\"mm³\\\", \\\"Bending: fb = M/S\\\"], [\\\"Moment of Inertia\\\", \\\"I = bh³/12\\\", \\\"mm⁴\\\", \\\"Deflection and combined stress\\\"], [\\\"Cross-sectional Area\\\", \\\"A = bh\\\", \\\"mm²\\\", \\\"Shear: fv = 3V/(2A)\\\"], [\\\"Radius of Gyration\\\", \\\"r = h/√12\\\", \\\"mm\\\", \\\"Compression (secondary)\\\"] ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e1d0d48419364ddacb00d77a31b90fa809cc3f43baa209e0556be51599ec8f15",
+      "props": {
+        "headers": "{[\"Property\", \"Formula\", \"Unit\", \"Use\"]}",
+        "rows": "{[ [\"Section Modulus\", \"S = bh²/6\", \"mm³\", \"Bending: fb = M/S\"], [\"Moment of Inertia\", \"I = bh³/12\", \"mm⁴\", \"Deflection and combined stress\"], [\"Cross-sectional Area\", \"A = bh\", \"mm²\", \"Shear: fv = 3V/(2A)\"], [\"Radius of Gyration\", \"r = h/√12\", \"mm\", \"Compression (secondary)\"] ]}"
+      },
+      "props_json": {
+        "headers": "{[\"Property\", \"Formula\", \"Unit\", \"Use\"]}",
+        "rows": "{[ [\"Section Modulus\", \"S = bh²/6\", \"mm³\", \"Bending: fb = M/S\"], [\"Moment of Inertia\", \"I = bh³/12\", \"mm⁴\", \"Deflection and combined stress\"], [\"Cross-sectional Area\", \"A = bh\", \"mm²\", \"Shear: fv = 3V/(2A)\"], [\"Radius of Gyration\", \"r = h/√12\", \"mm\", \"Compression (secondary)\"] ]}"
+      },
+      "props_text": "headers={[\"Property\", \"Formula\", \"Unit\", \"Use\"]} rows={[ [\"Section Modulus\", \"S = bh²/6\", \"mm³\", \"Bending: fb = M/S\"], [\"Moment of Inertia\", \"I = bh³/12\", \"mm⁴\", \"Deflection and combined stress\"], [\"Cross-sectional Area\", \"A = bh\", \"mm²\", \"Shear: fv = 3V/(2A)\"], [\"Radius of Gyration\", \"r = h/√12\", \"mm\", \"Compression (secondary)\"] ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 2888,
+      "end_offset": 3240,
+      "line_start": 41,
+      "line_end": 41,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>The 3/2 factor in fv = 3V/(2A) is non-negotiable for rectangular timber. Forgetting it gives half the actual maximum shear stress and is unsafe.</Tip>",
+      "raw_hash": "sha256:663c0a32f180b48cb60c34b5c66a15432ea81fc2cece2537dcf579dac1e68cbd",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: The 3/2 factor in fv = 3V/(2A) is non-negotiable for rectangular timber. Forgetting it gives half the actual maximum shear stress and is unsafe.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:5fd700059428a73a984e5e3b030f5a1b188172e7ae86e1a420bf7d60b7edc0cd",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "The 3/2 factor in fv = 3V/(2A) is non-negotiable for rectangular timber. Forgetting it gives half the actual maximum shear stress and is unsafe.",
+      "children_text": "The 3/2 factor in fv = 3V/(2A) is non-negotiable for rectangular timber. Forgetting it gives half the actual maximum shear stress and is unsafe.",
+      "start_offset": 6164,
+      "end_offset": 6319,
+      "line_start": 91,
+      "line_end": 91,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[ \"Using fv = V/A instead of fv = 3V/(2A). The 3/2 factor is mandatory for rectangular sections and accounts for non-uniform shear distribution.\", \"Computing S = bh/6 instead of S = bh²/6. Missing the exponent on h loses the dimension entirely and gives wrong results by orders of magnitude.\", \"Confusing I (moment of inertia, in mm⁴) with S (section modulus, in mm³). I is for deflection; S is for bending stress.\", \"Applying nominal dimensions in S calculation instead of actual dimensions. Nominal 2×4 is 1.5×3.5 actual; mismatch invalidates results.\", \"Forgetting that allowable stresses (Fb, Fv, Fc) are tabulated, not calculated. Never derive Fb from other parameters; always look it up from a design table.\", \"Checking one stress (e.g., bending) and ignoring others (shear, compression). All three must pass simultaneously.\" ]} />",
+      "raw_hash": "sha256:8e82dcd36156d3d4a8d6caeef20a33e02c9375912e4be8b6024b1e881b8a7630",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[ \\\"Using fv = V/A instead of fv = 3V/(2A). The 3/2 factor is mandatory for rectangular sections and accounts for non-uniform shear distribution.\\\", \\\"Computing S = bh/6 instead of S = bh²/6. Missing the exponent on h loses the dimension entirely and gives wrong results by orders of magnitude.\\\", \\\"Confusing I (moment of inertia, in mm⁴) with S (section modulus, in mm³). I is for deflection; S is for bending stress.\\\", \\\"Applying nominal dimensions in S calculation instead of actual dimensions. Nominal 2×4 is 1.5×3.5 actual; mismatch invalidates results.\\\", \\\"Forgetting that allowable stresses (Fb, Fv, Fc) are tabulated, not calculated. Never derive Fb from other parameters; always look it up from a design table.\\\", \\\"Checking one stress (e.g., bending) and ignoring others (shear, compression). All three must pass simultaneously.\\\" ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:b6555cfc4c44d847b18244a078a31f9a8df7656fb98278e8c46521447095dfde",
+      "props": {
+        "mistakes": "{[ \"Using fv = V/A instead of fv = 3V/(2A). The 3/2 factor is mandatory for rectangular sections and accounts for non-uniform shear distribution.\", \"Computing S = bh/6 instead of S = bh²/6. Missing the exponent on h loses the dimension entirely and gives wrong results by orders of magnitude.\", \"Confusing I (moment of inertia, in mm⁴) with S (section modulus, in mm³). I is for deflection; S is for bending stress.\", \"Applying nominal dimensions in S calculation instead of actual dimensions. Nominal 2×4 is 1.5×3.5 actual; mismatch invalidates results.\", \"Forgetting that allowable stresses (Fb, Fv, Fc) are tabulated, not calculated. Never derive Fb from other parameters; always look it up from a design table.\", \"Checking one stress (e.g., bending) and ignoring others (shear, compression). All three must pass simultaneously.\" ]}"
+      },
+      "props_json": {
+        "mistakes": "{[ \"Using fv = V/A instead of fv = 3V/(2A). The 3/2 factor is mandatory for rectangular sections and accounts for non-uniform shear distribution.\", \"Computing S = bh/6 instead of S = bh²/6. Missing the exponent on h loses the dimension entirely and gives wrong results by orders of magnitude.\", \"Confusing I (moment of inertia, in mm⁴) with S (section modulus, in mm³). I is for deflection; S is for bending stress.\", \"Applying nominal dimensions in S calculation instead of actual dimensions. Nominal 2×4 is 1.5×3.5 actual; mismatch invalidates results.\", \"Forgetting that allowable stresses (Fb, Fv, Fc) are tabulated, not calculated. Never derive Fb from other parameters; always look it up from a design table.\", \"Checking one stress (e.g., bending) and ignoring others (shear, compression). All three must pass simultaneously.\" ]}"
+      },
+      "props_text": "mistakes={[ \"Using fv = V/A instead of fv = 3V/(2A). The 3/2 factor is mandatory for rectangular sections and accounts for non-uniform shear distribution.\", \"Computing S = bh/6 instead of S = bh²/6. Missing the exponent on h loses the dimension entirely and gives wrong results by orders of magnitude.\", \"Confusing I (moment of inertia, in mm⁴) with S (section modulus, in mm³). I is for deflection; S is for bending stress.\", \"Applying nominal dimensions in S calculation instead of actual dimensions. Nominal 2×4 is 1.5×3.5 actual; mismatch invalidates results.\", \"Forgetting that allowable stresses (Fb, Fv, Fc) are tabulated, not calculated. Never derive Fb from other parameters; always look it up from a design table.\", \"Checking one stress (e.g., bending) and ignoring others (shear, compression). All three must pass simultaneously.\" ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6341,
+      "end_offset": 7205,
+      "line_start": 95,
+      "line_end": 95,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "Warn",
+      "raw": "<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>",
+      "raw_hash": "sha256:ba1ca1d96638cbbb2a106c0a137a0e03cdff45255a7e66fe9c8d1e126722098c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Warn\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ed51259894cd3187a19f9414f94b6b9c6e48ca7b3b80e4451136a393cff8cce6",
+      "props": {},
+      "props_json": {},
+      "children_raw": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
+      "children_text": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
+      "start_offset": null,
+      "end_offset": null,
+      "line_start": null,
+      "line_end": null,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved",
+      "props_text": null
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:acf4705b9cbe111156f0cf83f86127ae911b5beb8688045db6fc198e2fd384b9"
+}

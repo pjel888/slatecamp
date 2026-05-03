@@ -1,0 +1,63 @@
+{
+  "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
+  "slug": "lea-dsgn-009-03-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.654Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:49866a7ea28de19d76bef945421501afe06e32a62b08debfbbab2851686cacbc",
+  "normalized_content_hash": "49866a7ea28de19d76bef945421501afe06e32a62b08debfbbab2851686cacbc",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>**\"Office = 4\u20136 ACH, Kitchen = 15 ACH, OR = 15\u201320 ACH (positive pressure).\"** These are the three most-tested categories. Operating rooms are the most stringent (highest ACH, special pressure control, HEPA). Kitchens come next. Offices are baseline. Memorize this hierarchy.</Tip>",
+      "raw_hash": "sha256:f0292e7ebd4d21981900618bece92414e223ebbdedd1f198a33868207d6532e8",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **\"Office = 4\u20136 ACH, Kitchen = 15 ACH, OR = 15\u201320 ACH (positive pressure).\"** These are the three most-tested categories. Operating rooms are the most stringent (highest ACH, special pressure control, HEPA). Kitchens come next. Offices are baseline. Memorize this hierarchy.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:27e1f25e4e22397003d046f1fb1ffe659dbc3822c390c500976bc5a9f09cf7ea",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**\"Office = 4\u20136 ACH, Kitchen = 15 ACH, OR = 15\u201320 ACH (positive pressure).\"** These are the three most-tested categories. Operating rooms are the most stringent (highest ACH, special pressure control, HEPA). Kitchens come next. Offices are baseline. Memorize this hierarchy.",
+      "children_text": "**\"Office = 4\u20136 ACH, Kitchen = 15 ACH, OR = 15\u201320 ACH (positive pressure).\"** These are the three most-tested categories. Operating rooms are the most stringent (highest ACH, special pressure control, HEPA). Kitchens come next. Offices are baseline. Memorize this hierarchy.",
+      "start_offset": 5224,
+      "end_offset": 5509,
+      "line_start": 52,
+      "line_end": 52,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing air change rate (ACH, time-based) with air quality metrics (CO\u2082 ppm, particle counts)\",\"Forgetting that operating rooms require positive pressure (to exclude contaminants, not enhance outflow)\",\"Applying office ACH (4\u20136) to high-risk spaces like OR (15\u201320) or kitchens (15)\",\"Calculating air volume without floor area or ceiling height (need all three: area \u00d7 height \u00d7 ACH)\",\"Ignoring natural ventilation opening requirements (1:20 = 5% of floor area) if mechanical ventilation is specified; both may be required by code\"]} />",
+      "raw_hash": "sha256:5e52023396e5eed08be6876d7d0a1457693235e3201c2ba864cf5d4b3e5fc631",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing air change rate (ACH, time-based) with air quality metrics (CO\u2082 ppm, particle counts)\\\",\\\"Forgetting that operating rooms require positive pressure (to exclude contaminants, not enhance outflow)\\\",\\\"Applying office ACH (4\u20136) to high-risk spaces like OR (15\u201320) or kitchens (15)\\\",\\\"Calculating air volume without floor area or ceiling height (need all three: area \u00d7 height \u00d7 ACH)\\\",\\\"Ignoring natural ventilation opening requirements (1:20 = 5% of floor area) if mechanical ventilation is specified; both may be required by code\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:0f51d904ae7f512eb0d6c98bdcc477b188cf3e3f914cd7d8f565b6317b0e887d",
+      "props": {
+        "mistakes": "{[\"Confusing air change rate (ACH, time-based) with air quality metrics (CO\u2082 ppm, particle counts)\",\"Forgetting that operating rooms require positive pressure (to exclude contaminants, not enhance outflow)\",\"Applying office ACH (4\u20136) to high-risk spaces like OR (15\u201320) or kitchens (15)\",\"Calculating air volume without floor area or ceiling height (need all three: area \u00d7 height \u00d7 ACH)\",\"Ignoring natural ventilation opening requirements (1:20 = 5% of floor area) if mechanical ventilation is specified; both may be required by code\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Confusing air change rate (ACH, time-based) with air quality metrics (CO\u2082 ppm, particle counts)\",\"Forgetting that operating rooms require positive pressure (to exclude contaminants, not enhance outflow)\",\"Applying office ACH (4\u20136) to high-risk spaces like OR (15\u201320) or kitchens (15)\",\"Calculating air volume without floor area or ceiling height (need all three: area \u00d7 height \u00d7 ACH)\",\"Ignoring natural ventilation opening requirements (1:20 = 5% of floor area) if mechanical ventilation is specified; both may be required by code\"]}"
+      },
+      "props_text": "mistakes={[\"Confusing air change rate (ACH, time-based) with air quality metrics (CO\u2082 ppm, particle counts)\",\"Forgetting that operating rooms require positive pressure (to exclude contaminants, not enhance outflow)\",\"Applying office ACH (4\u20136) to high-risk spaces like OR (15\u201320) or kitchens (15)\",\"Calculating air volume without floor area or ceiling height (need all three: area \u00d7 height \u00d7 ACH)\",\"Ignoring natural ventilation opening requirements (1:20 = 5% of floor area) if mechanical ventilation is specified; both may be required by code\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5531,
+      "end_offset": 6096,
+      "line_start": 56,
+      "line_end": 56,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:99a9166de233f20b69f73d511f4863f65e0382273ff0f13480e26929ede6144c"
+}

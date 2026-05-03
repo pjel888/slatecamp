@@ -1,0 +1,37 @@
+{
+  "question_id": "7e4e697d-9af0-4014-abfc-d26db4d50092",
+  "baseline_hash": "sha256:b7cdccc37404acc21a168f91fec6f1c443d465bbe6495401cecd4174390ac222",
+  "reason": "The question and rationale incorrectly cite Section 41 as designating IAPOA as the nominating organization. Per RA 9266, Section 4 designates IAPOA, while Section 41 is about implementing rules and regulations. The article explicitly warns about this exact error. The question text and rationale must be corrected.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T11:33:00Z",
+  "proposed": {
+    "text": "Which organization does Section 4 designate as the source from which PRBoA nominees must be drawn?",
+    "options": [
+      {
+        "id": "a",
+        "text": "IAPOA (Integrated and Accredited Professional Organization of Architects, now UAP)"
+      },
+      {
+        "id": "b",
+        "text": "Philippine Association of Construction Industries, which focuses on construction standards and practices"
+      },
+      {
+        "id": "c",
+        "text": "Association of Professional Engineers, which primarily represents engineering professionals"
+      },
+      {
+        "id": "d",
+        "text": "Philippine Institute of Civil Engineers, which focuses on civil engineering standards"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Section 4 of RA 9266 designates IAPOA (now UAP) as the exclusive source from which PRBoA nominees are submitted to the Commission. Section 41 is about IRR adoption, not IAPOA nomination.",
+      "b": "PACI represents construction, not the architecture profession.",
+      "c": "APE represents engineers, not architects; engineers do not nominate the architecture board.",
+      "d": "PICE represents civil engineers, not architects.",
+      "correct": "Section 4 of RA 9266 designates the IAPOA—now the United Architects of the Philippines, Inc.—as the exclusive source from which PRBoA nominees are submitted to the Commission.",
+      "takeaway": "Section 4 designates IAPOA/UAP as the nominating organization, NOT Section 41. This is a commonly tested distinction — Section 41 is about IRR adoption only."
+    }
+  }
+}

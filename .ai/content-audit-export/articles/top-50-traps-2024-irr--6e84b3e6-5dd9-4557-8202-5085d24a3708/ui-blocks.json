@@ -1,0 +1,82 @@
+{
+  "article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
+  "slug": "top-50-traps-2024-irr",
+  "normalized_created_at": "2026-05-01T13:33:43.522Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:b4c4bfdcf8a612182892370d6e8b5d785ca6ad6e78d904ada41978d40fe01534",
+  "normalized_content_hash": "sha256:f01400067ab8fc8e18d765f8570d44cbbd0ef7633f0ba0e3bf3e47b59dcdbc63",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"2024 Revised IRR of PD 1096\">\n\n\nThe BP 344 2024 IRR introduced several changes that differ from earlier versions and from US ADA standards. Critical updates: preferred ramp slope is 1:20 (not 1:12), maximum ramp run is 10,500 mm (not 9,000 mm), and ramp landing length is 1800 mm (not 1500 mm). The LEA favors questions that test whether you know the current IRR value versus the commonly cited older or US value.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:7c093acb6b401c6f6d9107b0f429d46911576b0cf914d02d2c5c3850a72c36f4",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"nbcp\" title=\"2024 IRR vs. Older Standards\"\n- Text: The BP 344 2024 IRR introduced several changes that differ from earlier versions and from US ADA standards. Critical updates: preferred ramp slope is 1:20 (not 1:12), maximum ramp run is 10,500 mm (no\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:3ea583e996ed7b926f12219ed5f66b4c6cad622cc87c7ab16109d53dd648604e",
+      "props": {
+        "code": "nbcp",
+        "title": "2024 IRR vs. Older Standards"
+      },
+      "props_json": {
+        "code": "pd1096",
+        "title": "2024 IRR vs. Older Standards",
+        "section": "2024 Revised IRR of PD 1096"
+      },
+      "props_text": "code=pd1096, title=2024 IRR vs. Older Standards, section=2024 Revised IRR of PD 1096",
+      "children_raw": "\n\nThe BP 344 2024 IRR introduced several changes that differ from earlier versions and from US ADA standards. Critical updates: preferred ramp slope is 1:20 (not 1:12), maximum ramp run is 10,500 mm (not 9,000 mm), and ramp landing length is 1800 mm (not 1500 mm). The LEA favors questions that test whether you know the current IRR value versus the commonly cited older or US value.\n\n",
+      "children_text": "The BP 344 2024 IRR introduced several changes that differ from earlier versions and from US ADA standards. Critical updates: preferred ramp slope is 1:20 (not 1:12), maximum ramp run is 10,500 mm (not 9,000 mm), and ramp landing length is 1800 mm (not 1500 mm). The LEA favors questions that test whether you know the current IRR value versus the commonly cited older or US value.",
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Warn",
+      "raw": "<Warn >\n\nTRAP: When a question states 'per the Philippine accessibility code' and gives a ramp slope of 1:12, check if they're testing the MAXIMUM vs. the PREFERRED. 1:12 is the maximum allowed, 1:20 is the preferred, 1:15 is acceptable. Many examinees incorrectly state 1:12 as the standard because it matches US ADA.\n\n</Warn>",
+      "raw_hash": "sha256:29864e4c7b8dee2fa99b46662ed9f2daccae9cfa558c0ee905c766e311e7fcbc",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: TRAP: When a question states 'per the Philippine accessibility code' and gives a ramp slope of 1:12, check if they're testing the MAXIMUM vs. the PREFERRED. 1:12 is the maximum allowed, 1:20 is the pr\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:1e67914d4341f6eec03dd0df06553799d18331fd7c200e56cdf3cb7f1fb3d90f",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\nTRAP: When a question states 'per the Philippine accessibility code' and gives a ramp slope of 1:12, check if they're testing the MAXIMUM vs. the PREFERRED. 1:12 is the maximum allowed, 1:20 is the preferred, 1:15 is acceptable. Many examinees incorrectly state 1:12 as the standard because it matches US ADA.\n\n",
+      "children_text": "TRAP: When a question states 'per the Philippine accessibility code' and gives a ramp slope of 1:12, check if they're testing the MAXIMUM vs. the PREFERRED. 1:12 is the maximum allowed, 1:20 is the preferred, 1:15 is acceptable. Many examinees incorrectly state 1:12 as the standard because it matches US ADA.",
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip >\n\nThe LEA loves close numerical distractors. For parking: is it 3700 mm or 4000 mm stall width? (4000 mm is correct). For corridor: is it 1500 mm or 1800 mm? (1500 mm is correct). For landing: is it 1500 mm or 1800 mm? (1800 mm is correct). Memorize the exact values \u2014 the difference of 300 mm is the trap.\n\n</ExamTip>",
+      "raw_hash": "sha256:6a4ec36eac2dded054d4fe4ef93f844e1bd14356d3a5cf80da5aacbf83349d0e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: The LEA loves close numerical distractors. For parking: is it 3700 mm or 4000 mm stall width? (4000 mm is correct). For corridor: is it 1500 mm or 1800 mm? (1500 mm is correct). For landing: is it 150\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9a16f9bce42ee3ec2f8015d541efc4ba30eaf5b37a65f2d9e1cbd2b19f29920e",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\nThe LEA loves close numerical distractors. For parking: is it 3700 mm or 4000 mm stall width? (4000 mm is correct). For corridor: is it 1500 mm or 1800 mm? (1500 mm is correct). For landing: is it 1500 mm or 1800 mm? (1800 mm is correct). Memorize the exact values \u2014 the difference of 300 mm is the trap.\n\n",
+      "children_text": "The LEA loves close numerical distractors. For parking: is it 3700 mm or 4000 mm stall width? (4000 mm is correct). For corridor: is it 1500 mm or 1800 mm? (1500 mm is correct). For landing: is it 1500 mm or 1800 mm? (1800 mm is correct). Memorize the exact values \u2014 the difference of 300 mm is the trap.",
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip >\n\nMnemonic: '20-15-12' = Ramp slopes from best to max. '18-15-12' = Landing, Corridor, Ramp widths in hundreds of mm. '10.5' = max ramp run in meters. Say: 'Twenty preferred, fifteen okay, twelve if you must.'\n\n</Tip>",
+      "raw_hash": "sha256:0e7f5726557da1a364df152f1345b934021af0d6c5fabcb43f44be5e551840ef",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Tip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: Mnemonic: '20-15-12' = Ramp slopes from best to max. '18-15-12' = Landing, Corridor, Ramp widths in hundreds of mm. '10.5' = max ramp run in meters. Say: 'Twenty preferred, fifteen okay, twelve if you\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:103fae437716147494fd37e77ef96d898e3ab3130de123bc398ee099db799289",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\nMnemonic: '20-15-12' = Ramp slopes from best to max. '18-15-12' = Landing, Corridor, Ramp widths in hundreds of mm. '10.5' = max ramp run in meters. Say: 'Twenty preferred, fifteen okay, twelve if you must.'\n\n",
+      "children_text": "Mnemonic: '20-15-12' = Ramp slopes from best to max. '18-15-12' = Landing, Corridor, Ramp widths in hundreds of mm. '10.5' = max ramp run in meters. Say: 'Twenty preferred, fifteen okay, twelve if you must.'",
+      "status": "new"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:9627c077e36b0bf6995719c6966d74b61d49f431f301a56bc4111878adc4e9df"
+}

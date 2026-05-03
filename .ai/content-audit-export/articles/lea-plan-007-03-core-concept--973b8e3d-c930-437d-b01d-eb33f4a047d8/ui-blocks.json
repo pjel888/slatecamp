@@ -1,0 +1,91 @@
+{
+  "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+  "slug": "lea-plan-007-03-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.371Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:fe966cf927eb284157c740e701282f40f1979bac449a8960d64edba8f91529cf",
+  "normalized_content_hash": "sha256:fe966cf927eb284157c740e701282f40f1979bac449a8960d64edba8f91529cf",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Institution\", \"Primary Sector Served\", \"Membership/Eligibility\", \"Loan Range\", \"Ancillary Function\"]} rows={[[\"**Pag-IBIG/HDMF**\", \"All employed workers (private and government sectors)\", \"Mandatory for all employees\", \"Socialized (\u2264\u20b1580K) to Open-market (up to \u20b16M)\", \"Housing savings accumulation (membership contributions)\"], [\"**SSS**\", \"Private sector workers\", \"Contributors to SSS insurance\", \"Housing loans for members\", \"Social insurance for private sector\"], [\"**GSIS**\", \"Government employees\", \"Contributors to GSIS insurance\", \"Housing loans for government employees\", \"Life and disability insurance\"], [\"**NHMFC**\", \"Lenders and loan portfolio investors\", \"Buys loans from Pag-IBIG, banks\", \"Purchases loans from primary lenders\", \"Secondary mortgage market operation\"]} />",
+      "raw_hash": "sha256:aebc20f7212f56bf1ac4b934e239cf18c146da4b4842482236879dfd5c663284",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Institution\\\", \\\"Primary Sector Served\\\", \\\"Membership/Eligibility\\\", \\\"Loan Range\\\", \\\"Ancillary Function\\\"]}\", rows=\"{[[\\\"**Pag-IBIG/HDMF**\\\", \\\"All employed workers (private and government sectors)\\\", \\\"Mandatory for all employees\\\", \\\"Socialized (\u2264\u20b1580K) to Open-market (up to \u20b16M)\\\", \\\"Housing savings accumulation (membership contributions)\\\"], [\\\"**SSS**\\\", \\\"Private sector workers\\\", \\\"Contributors to SSS insurance\\\", \\\"Housing loans for members\\\", \\\"Social insurance for private sector\\\"], [\\\"**GSIS**\\\", \\\"Government employees\\\", \\\"Contributors to GSIS insurance\\\", \\\"Housing loans for government employees\\\", \\\"Life and disability insurance\\\"], [\\\"**NHMFC**\\\", \\\"Lenders and loan portfolio investors\\\", \\\"Buys loans from Pag-IBIG, banks\\\", \\\"Purchases loans from primary lenders\\\", \\\"Secondary mortgage market operation\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:aae3698a684421171b88f9f0c7f85386672a632613a2fa9c955449477a3dc471",
+      "props": {
+        "headers": "{[\"Institution\", \"Primary Sector Served\", \"Membership/Eligibility\", \"Loan Range\", \"Ancillary Function\"]}",
+        "rows": "{[[\"**Pag-IBIG/HDMF**\", \"All employed workers (private and government sectors)\", \"Mandatory for all employees\", \"Socialized (\u2264\u20b1580K) to Open-market (up to \u20b16M)\", \"Housing savings accumulation (membership contributions)\"], [\"**SSS**\", \"Private sector workers\", \"Contributors to SSS insurance\", \"Housing loans for members\", \"Social insurance for private sector\"], [\"**GSIS**\", \"Government employees\", \"Contributors to GSIS insurance\", \"Housing loans for government employees\", \"Life and disability insurance\"], [\"**NHMFC**\", \"Lenders and loan portfolio investors\", \"Buys loans from Pag-IBIG, banks\", \"Purchases loans from primary lenders\", \"Secondary mortgage market operation\"]}"
+      },
+      "props_json": {
+        "headers": "{[\"Institution\", \"Primary Sector Served\", \"Membership/Eligibility\", \"Loan Range\", \"Ancillary Function\"]}",
+        "rows": "{[[\"**Pag-IBIG/HDMF**\", \"All employed workers (private and government sectors)\", \"Mandatory for all employees\", \"Socialized (\u2264\u20b1580K) to Open-market (up to \u20b16M)\", \"Housing savings accumulation (membership contributions)\"], [\"**SSS**\", \"Private sector workers\", \"Contributors to SSS insurance\", \"Housing loans for members\", \"Social insurance for private sector\"], [\"**GSIS**\", \"Government employees\", \"Contributors to GSIS insurance\", \"Housing loans for government employees\", \"Life and disability insurance\"], [\"**NHMFC**\", \"Lenders and loan portfolio investors\", \"Buys loans from Pag-IBIG, banks\", \"Purchases loans from primary lenders\", \"Secondary mortgage market operation\"]}"
+      },
+      "props_text": "headers={[\"Institution\", \"Primary Sector Served\", \"Membership/Eligibility\", \"Loan Range\", \"Ancillary Function\"]} rows={[[\"**Pag-IBIG/HDMF**\", \"All employed workers (private and government sectors)\", \"Mandatory for all employees\", \"Socialized (\u2264\u20b1580K) to Open-market (up to \u20b16M)\", \"Housing savings accumulation (membership contributions)\"], [\"**SSS**\", \"Private sector workers\", \"Contributors to SSS insurance\", \"Housing loans for members\", \"Social insurance for private sector\"], [\"**GSIS**\", \"Government employees\", \"Contributors to GSIS insurance\", \"Housing loans for government employees\", \"Life and disability insurance\"], [\"**NHMFC**\", \"Lenders and loan portfolio investors\", \"Buys loans from Pag-IBIG, banks\", \"Purchases loans from primary lenders\", \"Secondary mortgage market operation\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 1933,
+      "end_offset": 2746,
+      "line_start": 24,
+      "line_end": 24,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>**Memory aid:** Pag-IBIG = **P**rimary lender for all **employed** (government + private). SSS = private sector workers (extra benefit beyond insurance). GSIS = government employees (extra benefit). NHMFC = secondary market (buys loans so lenders can lend again).</Tip>",
+      "raw_hash": "sha256:d2fff6b5b9fb7c67e6d0a7acf50f28ec9bd8e9fb898d54d6a794244121f6f5f7",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory aid:** Pag-IBIG = **P**rimary lender for all **employed** (government + private). SSS = private sector workers (extra benefit beyond insurance). GSIS = government employees (extra benefit). NHMFC = secondary market (buys loans so lenders can lend again).\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:024b085d17dfa76d7ab5dda5f26f30c217ce08fa3494c54934fef82267e50422",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Memory aid:** Pag-IBIG = **P**rimary lender for all **employed** (government + private). SSS = private sector workers (extra benefit beyond insurance). GSIS = government employees (extra benefit). NHMFC = secondary market (buys loans so lenders can lend again).",
+      "children_text": "**Memory aid:** Pag-IBIG = **P**rimary lender for all **employed** (government + private). SSS = private sector workers (extra benefit beyond insurance). GSIS = government employees (extra benefit). NHMFC = secondary market (buys loans so lenders can lend again).",
+      "start_offset": 3745,
+      "end_offset": 4019,
+      "line_start": 36,
+      "line_end": 36,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing Pag-IBIG (finance) with NHA (production)\u2014Pag-IBIG loans; NHA builds\", \"Stating SSS or GSIS are primary housing lenders\u2014they are ancillary; Pag-IBIG is primary\", \"Forgetting that NHMFC does not issue loans; it purchases them from primary lenders\", \"Saying Pag-IBIG is for low-income only\u2014Pag-IBIG serves all employed sectors (including open-market loans up to \u20b16M)\", \"Confusing SHFC (community-based) with Pag-IBIG (individual)\u2014different sectors, different mechanisms\"]} />",
+      "raw_hash": "sha256:f267d5db16e363315b46fd63b8ae57884a3ead37d77cc43abe4b7bb6c65af64e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing Pag-IBIG (finance) with NHA (production)\u2014Pag-IBIG loans; NHA builds\\\", \\\"Stating SSS or GSIS are primary housing lenders\u2014they are ancillary; Pag-IBIG is primary\\\", \\\"Forgetting that NHMFC does not issue loans; it purchases them from primary lenders\\\", \\\"Saying Pag-IBIG is for low-income only\u2014Pag-IBIG serves all employed sectors (including open-market loans up to \u20b16M)\\\", \\\"Confusing SHFC (community-based) with Pag-IBIG (individual)\u2014different sectors, different mechanisms\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:5b7cb7ef9fe58ccc910548c1637b11f99349b5f522ca2957c06d55a870a96c00",
+      "props": {
+        "mistakes": "{[\"Confusing Pag-IBIG (finance) with NHA (production)\u2014Pag-IBIG loans; NHA builds\", \"Stating SSS or GSIS are primary housing lenders\u2014they are ancillary; Pag-IBIG is primary\", \"Forgetting that NHMFC does not issue loans; it purchases them from primary lenders\", \"Saying Pag-IBIG is for low-income only\u2014Pag-IBIG serves all employed sectors (including open-market loans up to \u20b16M)\", \"Confusing SHFC (community-based) with Pag-IBIG (individual)\u2014different sectors, different mechanisms\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Confusing Pag-IBIG (finance) with NHA (production)\u2014Pag-IBIG loans; NHA builds\", \"Stating SSS or GSIS are primary housing lenders\u2014they are ancillary; Pag-IBIG is primary\", \"Forgetting that NHMFC does not issue loans; it purchases them from primary lenders\", \"Saying Pag-IBIG is for low-income only\u2014Pag-IBIG serves all employed sectors (including open-market loans up to \u20b16M)\", \"Confusing SHFC (community-based) with Pag-IBIG (individual)\u2014different sectors, different mechanisms\"]}"
+      },
+      "props_text": "mistakes={[\"Confusing Pag-IBIG (finance) with NHA (production)\u2014Pag-IBIG loans; NHA builds\", \"Stating SSS or GSIS are primary housing lenders\u2014they are ancillary; Pag-IBIG is primary\", \"Forgetting that NHMFC does not issue loans; it purchases them from primary lenders\", \"Saying Pag-IBIG is for low-income only\u2014Pag-IBIG serves all employed sectors (including open-market loans up to \u20b16M)\", \"Confusing SHFC (community-based) with Pag-IBIG (individual)\u2014different sectors, different mechanisms\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4041,
+      "end_offset": 4552,
+      "line_start": 40,
+      "line_end": 40,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:bc2ccdbf02254005bcf116c9cd202ca9585985553176f2175240779f739c782c"
+}

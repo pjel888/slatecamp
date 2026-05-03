@@ -1,0 +1,63 @@
+{
+  "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+  "slug": "lea-dsgn-005-07-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.772Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:f57c3e05bbba718a1a7eadfb8d77cf059be8320b6855b6dd736d00651030d9fe",
+  "normalized_content_hash": "679e54417a75b25a3f6aa2aee08158c2c7914f62656a10f504605e0d532ba17a",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>**Day Care Anchors:** Group C occupancy (not B or D). DSWD regulatory authority (not DepEd). Activity room = 1.5 sqm/child, max 25/room. Outdoor play = equal to indoor activity area. Nap room = 0.9\u20131.2 sqm/child. Child toilet = 250\u2013300 mm; child lavatory = 550\u2013600 mm. Exit width = 7.6 mm/child. Dual exits at 50+.</Tip>",
+      "raw_hash": "sha256:4b46e6c4cffa7ee45c3d16b714f3f67c8fa01f50fcb8541bbdc94fab6fd6f118",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Day Care Anchors:** Group C occupancy (not B or D). DSWD regulatory authority (not DepEd). Activity room = 1.5 sqm/child, max 25/room. Outdoor play = equal to indoor activity area. Nap room = 0.9\u20131.2 sqm/child. Child toilet = 250\u2013300 mm; child lavatory = 550\u2013600 mm. Exit width = 7.6 mm/child. Dual exits at 50+.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:69e9d3246adb071fedd3d275a8feee9ec5913422ce6d3151dd637c72b1b5b624",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Day Care Anchors:** Group C occupancy (not B or D). DSWD regulatory authority (not DepEd). Activity room = 1.5 sqm/child, max 25/room. Outdoor play = equal to indoor activity area. Nap room = 0.9\u20131.2 sqm/child. Child toilet = 250\u2013300 mm; child lavatory = 550\u2013600 mm. Exit width = 7.6 mm/child. Dual exits at 50+.",
+      "children_text": "**Day Care Anchors:** Group C occupancy (not B or D). DSWD regulatory authority (not DepEd). Activity room = 1.5 sqm/child, max 25/room. Outdoor play = equal to indoor activity area. Nap room = 0.9\u20131.2 sqm/child. Child toilet = 250\u2013300 mm; child lavatory = 550\u2013600 mm. Exit width = 7.6 mm/child. Dual exits at 50+.",
+      "start_offset": 5789,
+      "end_offset": 6114,
+      "line_start": 56,
+      "line_end": 56,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"ERR-DSGN-004: Classifying day care as Group B (residential) or Group D (institutional) instead of Group C\",\"Activity room oversized beyond max 25 children per room limit\",\"Outdoor play area undersized or omitted (must equal indoor activity area)\",\"Nap room density too high (0.5 sqm/child instead of 0.9\u20131.2 sqm/child)\",\"Child toilet/lavatory heights same as adult standards (incorrect)\",\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit classroom at 50+ child occupancy\"]} />",
+      "raw_hash": "sha256:56e25c9af7fa92660f11aa473c3ce7f4003ed2242272fec801cc1e27542e782d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"ERR-DSGN-004: Classifying day care as Group B (residential) or Group D (institutional) instead of Group C\\\",\\\"Activity room oversized beyond max 25 children per room limit\\\",\\\"Outdoor play area undersized or omitted (must equal indoor activity area)\\\",\\\"Nap room density too high (0.5 sqm/child instead of 0.9\u20131.2 sqm/child)\\\",\\\"Child toilet/lavatory heights same as adult standards (incorrect)\\\",\\\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\\\",\\\"ERR-DSGN-021: Single exit classroom at 50+ child occupancy\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4e0167805988086b4d44394c0c7ea4de3c1fb4c17fc2f1eca65a19aaa7cb5226",
+      "props": {
+        "mistakes": "{[\"ERR-DSGN-004: Classifying day care as Group B (residential) or Group D (institutional) instead of Group C\",\"Activity room oversized beyond max 25 children per room limit\",\"Outdoor play area undersized or omitted (must equal indoor activity area)\",\"Nap room density too high (0.5 sqm/child instead of 0.9\u20131.2 sqm/child)\",\"Child toilet/lavatory heights same as adult standards (incorrect)\",\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit classroom at 50+ child occupancy\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"ERR-DSGN-004: Classifying day care as Group B (residential) or Group D (institutional) instead of Group C\",\"Activity room oversized beyond max 25 children per room limit\",\"Outdoor play area undersized or omitted (must equal indoor activity area)\",\"Nap room density too high (0.5 sqm/child instead of 0.9\u20131.2 sqm/child)\",\"Child toilet/lavatory heights same as adult standards (incorrect)\",\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit classroom at 50+ child occupancy\"]}"
+      },
+      "props_text": "mistakes={[\"ERR-DSGN-004: Classifying day care as Group B (residential) or Group D (institutional) instead of Group C\",\"Activity room oversized beyond max 25 children per room limit\",\"Outdoor play area undersized or omitted (must equal indoor activity area)\",\"Nap room density too high (0.5 sqm/child instead of 0.9\u20131.2 sqm/child)\",\"Child toilet/lavatory heights same as adult standards (incorrect)\",\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit classroom at 50+ child occupancy\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6136,
+      "end_offset": 6685,
+      "line_start": 60,
+      "line_end": 60,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:d5d9a0446aef223188bcbd53625d5b47fb24e2501300d4c9d00376ac4e47e96b"
+}

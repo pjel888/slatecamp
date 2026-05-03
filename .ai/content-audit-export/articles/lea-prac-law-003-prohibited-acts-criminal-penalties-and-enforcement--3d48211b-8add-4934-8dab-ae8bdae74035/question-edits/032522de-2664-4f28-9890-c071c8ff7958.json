@@ -1,0 +1,36 @@
+{
+  "question_id": "032522de-2664-4f28-9890-c071c8ff7958",
+  "baseline_hash": "sha256:a1f58018597bfc9e999f48369897af0a572a3e73845919ce117f007f006591b5",
+  "reason": "The answer key states the penalty as 'not less than P5,000 nor more than P100,000' which is WRONG. The article explicitly warns that some study materials incorrectly state this range. The correct penalty range under Section 29 is: fine of not less than P100,000 nor more than P5,000,000, or imprisonment of 6 months to 6 years, or both.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T11:33:00Z",
+  "proposed": {
+    "text": "What penalties does RA 9266 impose for violation of its prohibitions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only civil fines; no imprisonment, ensuring that penalties are financial rather than punitive"
+      },
+      {
+        "id": "b",
+        "text": "A fine of not less than P100,000 nor more than P5,000,000, or imprisonment of not less than 6 months nor more than 6 years, or both."
+      },
+      {
+        "id": "c",
+        "text": "Unlimited fines and life imprisonment, reflecting the severity of violations"
+      },
+      {
+        "id": "d",
+        "text": "Only professional discipline; no criminal penalties, focusing on maintaining professional standards"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Criminal penalties include both fines and potential imprisonment under Section 29 of the IRR.",
+      "c": "The statute specifies maximum penalties; they are not unlimited.",
+      "d": "RA 9266 provides criminal penalties alongside disciplinary action; they are concurrent.",
+      "correct": "Section 29 specifies a fine of not less than P100,000 nor more than P5,000,000, or imprisonment of 6 months to 6 years, or both. Note: Some materials incorrectly state P5,000-P100,000; the correct range is P100,000-P5,000,000.",
+      "takeaway": "Criminal penalties signal the legislature's determination that certain architectural misconduct warrants not merely professional discipline but criminal sanction. Memorize the correct fine range: P100,000 to P5,000,000."
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
+  "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
+  "generated_at": "2026-05-03T07:49:43.663Z",
+  "old_hash": "sha256:f8e7ab74a0820dd58109904b91d7a748e64cdfde7435a5afa5afc0fd987fd265",
+  "new_hash": "sha256:169a9360536de35e81a44111b3208b62d7d36c3aa5b985df0e84058d239205dc",
+  "original_hash": "sha256:f8e7ab74a0820dd58109904b91d7a748e64cdfde7435a5afa5afc0fd987fd265",
+  "normalized_hash": "sha256:79e1778a43988643bc3b0928744ce47d84ad0389325041bdf6db48a94a22a66e",
+  "candidate_hash": "sha256:169a9360536de35e81a44111b3208b62d7d36c3aa5b985df0e84058d239205dc",
+  "changed": true,
+  "changed_line_count": 134,
+  "inserted_line_count": 34,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 8,
+  "ui_blocks_candidate_count": 6,
+  "ui_blocks_changed_count": 2,
+  "ui_blocks_count": 8,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 6,
+  "changed_text_summary": {
+    "changed": 134,
+    "inserted": 34,
+    "deleted": 0,
+    "original_line_count": 141,
+    "candidate_line_count": 175
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0008"
+    ],
+    "changed_count": 2
+  },
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate is missing 2 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Unsafe: Candidate is missing 2 preserved UI block(s).; original.md hash does not match article metadata export hash."
+}

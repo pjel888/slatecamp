@@ -1,0 +1,24 @@
+{
+  "attempted_at": "2026-05-03T07:52:38.607Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
+  "slug": "lea-prac-frm-008-cpd-requirements-for-architects",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:00785df38af79159bfc6b427195f2802c37d93cc50d7c9ff7cdaa605a0d80f48",
+  "original_hash": "sha256:d8c7aa1929a55b15c9b047b28fcb90cb9cd85c90024a4bbc25369133ca8b23cb",
+  "candidate_hash": "sha256:6ffc42cbddc1d93b71c478587b5625e1155db0116e3ded8a731481b17b16fbc1",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

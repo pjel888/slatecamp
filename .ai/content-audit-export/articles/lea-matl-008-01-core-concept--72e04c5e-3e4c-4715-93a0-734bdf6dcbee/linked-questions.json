@@ -1,0 +1,508 @@
+{
+  "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:07f986179cf56f1e25fa7dabe44531c12af8b8298369efa0634852309082d93d",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "f3c6dcbe-28ad-44e1-8143-b4a6146c9e43",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "A shopping mall in a coastal typhoon zone specifies standard stainless steel hardware for all entry doors. What is the primary concern with this specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stainless steel is more expensive than other materials, which may impact the overall budget allocation for the project"
+        },
+        {
+          "id": "b",
+          "text": "Standard stainless steel may corrode under salt spray exposure; saltwater-grade (duplex stainless or super-duplex) certification is required."
+        },
+        {
+          "id": "c",
+          "text": "Stainless steel is incompatible with aluminum door frames, potentially leading to galvanic corrosion if not properly isolated"
+        },
+        {
+          "id": "d",
+          "text": "Stainless steel hardware requires more frequent maintenance due to potential surface staining in harsh environments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost is a business concern, not a code requirement.",
+        "c": "Stainless steel is compatible with aluminum; they are often used together.",
+        "d": "Proper stainless hardware requires less, not more, maintenance.",
+        "correct": "Coastal environments expose hardware to salt spray, which causes crevice corrosion and pitting in standard stainless steel (304/316 grades). Saltwater-grade hardware (duplex 2205 or super-duplex) resists this attack. This is critical for Philippine typhoon zones.",
+        "takeaway": "Coastal regions require saltwater-grade hardware certification; do not assume standard stainless is sufficient."
+      },
+      "explanation": null,
+      "code_citation": "General corrosion resistance practice for coastal areas (NSCP 2015 materials provisions)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:58814c5086268e2e79584b4e919cf342f59b3e66e23881e51d17d05875ee1ad7"
+    },
+    {
+      "question_id": "3c42003d-f148-4331-9694-9f86f067021a",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "What is the primary advantage of continuous (piano) hinges over butt hinges?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continuous hinges are cheaper to install, although this may vary depending on the specific application and material costs"
+        },
+        {
+          "id": "b",
+          "text": "Continuous hinges distribute load evenly along the full door height, preferred for fire-rated doors."
+        },
+        {
+          "id": "c",
+          "text": "Continuous hinges allow the door to swing in both directions, which is beneficial in certain design scenarios but not universally applicable"
+        },
+        {
+          "id": "d",
+          "text": "Continuous hinges hide the hinge hardware completely, providing a cleaner aesthetic but not necessarily a functional advantage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Continuous hinges are typically more expensive due to their length and fabrication.",
+        "c": "Neither hinge type allows bidirectional swing without additional hardware.",
+        "d": "Continuous hinges are visible on the edge of the door; concealed hinges hide the mechanism.",
+        "correct": "Continuous hinges extend the full door height, distributing stress along the entire hinge length rather than at discrete points (butt hinge locations). This is essential for heavy doors and fire-rated assemblies.",
+        "takeaway": "Continuous hinges = load distribution; use them for heavy doors and fire-rated assemblies."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:31d9bb4f1464a21460f43e519cb601f0dacc7af9eb2208d33c1d58f506accff1"
+    },
+    {
+      "question_id": "459a1bba-4de2-4235-94c5-13c15a5f9294",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "During LEA exam analysis, a hospital project specifies 50-pound frameless glass doors with a single Grade 1 butt hinge pair (1,500 lbf total capacity). Is this specification adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because 1,500 lbf exceeds the 50-pound door weight, providing adequate load capacity for the hinge connection."
+        },
+        {
+          "id": "b",
+          "text": "No, because frameless glass doors require pivot hinges, and butt hinges cannot support the concentrated load at the hinge mortises."
+        },
+        {
+          "id": "c",
+          "text": "Yes, because Grade 1 butt hinges are the strongest available and suitable for all door types regardless of material or mounting."
+        },
+        {
+          "id": "d",
+          "text": "No, because the hinge capacity must be at least twice the door weight for safety, and 1,500 lbf is insufficient margin."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Capacity is adequate in theory, but hinge type is wrong for the application.",
+        "c": "Grade 1 capacity is high, but wrong hinge type for glass.",
+        "d": "Safety factor is not the issue; application-specific hinge selection is.",
+        "correct": "Although 1,500 lbf capacity exceeds the door weight, frameless glass doors have no frame to mortise butt hinges into. Pivot hinges are specifically designed for this application, with top and bottom support. Using butt hinges on glass creates a glass failure hazard.",
+        "takeaway": "Hinge selection must match application: butt for wood doors, pivot for glass doors, regardless of load capacity."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware and LEA exam design principles",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:92a201f37b8c23a85706db9cbe70e52f9e9f6021c6ef888c47eebe37917eee82"
+    },
+    {
+      "question_id": "c068c19d-7e23-450c-bdbc-53852432cf2a",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "What is the minimum cycle count that ANSI/BHMA Grade 1 door hardware must withstand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200,000 cycles"
+        },
+        {
+          "id": "b",
+          "text": "400,000 cycles"
+        },
+        {
+          "id": "c",
+          "text": "1,000,000 cycles"
+        },
+        {
+          "id": "d",
+          "text": "800,000 cycles"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "200,000 cycles is the Grade 3 residential threshold.",
+        "b": "400,000 cycles is the minimum for Grade 2 medium-duty threshold.",
+        "d": "800,000 cycles is a possible Grade 2 rating, but Grade 1 requires 1,000,000 cycles.",
+        "correct": "Grade 1 hardware is rated for a minimum of 1,000,000 cycles, the highest BHMA performance tier for heavy commercial applications.",
+        "takeaway": "Memorize the cycle counts: Grade 1 = 1,000,000, Grade 2 = 400,000–800,000, Grade 3 = 200,000."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de74b783a203178365e93aae64264f8e9378c0d31a06fc428b8f98b2ba972ced"
+    },
+    {
+      "question_id": "76e589b2-5b3c-4ad9-82f3-55e9cffc2f1d",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "A Grade 1 interconnected lock (panic device) must withstand a minimum force of how many pounds-force (lbf) to pass ANSI/BHMA testing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "250 lbf"
+        },
+        {
+          "id": "b",
+          "text": "300 lbf"
+        },
+        {
+          "id": "c",
+          "text": "500 lbf"
+        },
+        {
+          "id": "d",
+          "text": "750 lbf"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "250 lbf is the Grade 3 minimum.",
+        "b": "300 lbf is the Grade 2 minimum.",
+        "d": "750 lbf is not a standard reference for hinges or locks in BHMA testing.",
+        "correct": "Grade 1 interconnected locks are tested to withstand 500 lbf; Grade 2 requires 300 lbf; Grade 3 requires 250 lbf. This simulates panic conditions and forced egress.",
+        "takeaway": "Interconnected lock forces vary by grade: Grade 1 > Grade 2 > Grade 3. Use these values in exam calculations."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:91415be96c2e3eb1c4b3b93a4d8117510befed21340eb5660ae7f78b2c164a1f"
+    },
+    {
+      "question_id": "d6811b63-ffb1-42f8-8e94-b4e867f4d60d",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "According to ADA 2010 Standards, which hardware element is prohibited on doors within an accessible route?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lever handles"
+        },
+        {
+          "id": "b",
+          "text": "Panic bars"
+        },
+        {
+          "id": "c",
+          "text": "Butt hinges"
+        },
+        {
+          "id": "d",
+          "text": "Door knobs"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lever handles are required, not prohibited.",
+        "b": "Panic bars are compliant with ADA and required in high-traffic egress paths.",
+        "c": "Butt hinges are not restricted by ADA; continuous hinges are also acceptable.",
+        "correct": "ADA 2010 requires lever handles (not knobs) on all accessible routes because levers require less grip strength and can be operated with a closed fist or forearm.",
+        "takeaway": "Knobs are a common ADA violation. Always specify levers on accessible doors."
+      },
+      "explanation": null,
+      "code_citation": "ADA 2010 Standards Sec 404.2.6 / BP 344 2024 IRR Sec 5.4.2 (easy-to-operate handles)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f0edefbe6b49a3786a5144d4d704ae7a28b232bd430919f44861f5ac7c9d7b29"
+    },
+    {
+      "question_id": "ee917ef7-76bc-4ab2-8d28-8fb7b65dcc0f",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "Which type of lockset provides the best security and is mandatory for Grade 1 commercial applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cylindrical lock"
+        },
+        {
+          "id": "b",
+          "text": "Mortise lock"
+        },
+        {
+          "id": "c",
+          "text": "Push-button lock"
+        },
+        {
+          "id": "d",
+          "text": "Deadbolt-only lock"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cylindrical locks are faster to install but offer lower security; typical for Grade 2-3 applications.",
+        "c": "Push-button locks are specialty hardware; not standard for commercial grades.",
+        "d": "Deadbolt-only locks lack a latch mechanism for automatic closure.",
+        "correct": "Mortise locks have separate latch and deadbolt mechanisms housed in the frame, providing superior security and durability compared to cylindrical locks (all components in the knob). Grade 1 commercial can be either mortise or cylindrical if certified.",
+        "takeaway": "Mortise lock = Grade 1 commercial; Cylindrical lock = Grade 2-3 residential or light commercial."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:51a5b2a759cbda404ab120286b34c3efc79361c1de8ce1cec0e15681c4f50afd"
+    },
+    {
+      "question_id": "9c9816fd-a7a9-4fd4-8f67-f9a930cd349e",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "A hospital lobby has a main entry door that opens approximately 400 times per day. Using the ANSI/BHMA cycle formula (cycles/day ÷ expected service life), which grade of hardware ensures at least 5 years of service life?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grade 3 only"
+        },
+        {
+          "id": "b",
+          "text": "Grade 2 only"
+        },
+        {
+          "id": "c",
+          "text": "Grade 1 only"
+        },
+        {
+          "id": "d",
+          "text": "Grade 2 or Grade 1"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Grade 3 totals only 200,000 cycles, or 500 days at 400 cycles/day (insufficient).",
+        "b": "Grade 2 (minimum 400,000) provides only ~1,000 days at 400 cycles/day, or ~2.7 years, which may fail the 5‑year requirement unless a high‑end Grade 2 product is selected.",
+        "d": "Only Grade 1 guarantees the requirement; Grade 2 does not guarantee it.",
+        "correct": "At 400 cycles/day for 5 years (1,825 days), total cycles needed = 730,000. Grade 2 has a minimum rating of 400,000 cycles, but the maximum within Grade 2 can be up to 800,000; however, to \"ensure\" the 5‑year service life with the standard minimum, Grade 1 (1,000,000 cycles) is required. Grade 2 may or may not meet the requirement depending on the specific product, while Grade 1 always does.",
+        "takeaway": "High-traffic commercial spaces require Grade 1; use cycle count and expected life to justify the grade selection."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:53f45ee08b41f35d3f6b8c9855fbf9e80eb65a6cf0e96c8915fc541e3fc83214"
+    },
+    {
+      "question_id": "974e116a-cda2-430c-834b-736d82703a1f",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "A fire-rated stairwell door in a commercial building fails inspection because the door closer is surface-mounted instead of concelead. Why is this a code violation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surface-mounted closers are not UL-listed for fire ratings, which is a requirement for compliance with fire safety standards"
+        },
+        {
+          "id": "b",
+          "text": "Both surface-mounted and concealed closers can be fire-rated if listed (e.g., UL 10C). The issue is likely improper installation or lack of listing."
+        },
+        {
+          "id": "c",
+          "text": "Surface-mounted closers are more expensive, which can lead to budget overruns and non-compliance with cost management protocols"
+        },
+        {
+          "id": "d",
+          "text": "ADA 2010 prohibits surface-mounted closers, as they may interfere with accessibility requirements for individuals with disabilities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Surface-mounted closers can be UL-listed; listing is not exclusive to concealed closers.",
+        "c": "Cost is not a code requirement; concealed closers are typically more expensive.",
+        "d": "ADA does not restrict closer mounting type.",
+        "correct": "Fire-rated doors require closers that are listed and labeled for fire door applications. Both surface-mounted and concealed closers can be UL 10C listed if they meet the standard. The violation likely stems from using a non‑listed closer or improper installation, not merely the mounting type.",
+        "takeaway": "Always verify that the closer is listed for fire door use and installed per manufacturer instructions. The mounting type alone does not determine code compliance."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 (Fire Code of the Philippines) and UL 10C",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6aa3208a6722967061b8a6d3a28da7a4bbd1653c9890befbdc4e5545c2bcb42e"
+    },
+    {
+      "question_id": "7dee3af4-e6b5-4ea8-8fde-2608e2e41713",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "Which hinge type is best suited for supporting heavy glass doors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Butt hinges"
+        },
+        {
+          "id": "b",
+          "text": "Pivot hinges"
+        },
+        {
+          "id": "c",
+          "text": "Concealed hinges"
+        },
+        {
+          "id": "d",
+          "text": "Spring hinges"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Butt hinges are for standard wooden doors; they cannot support glass doors without a substantial frame.",
+        "c": "Concealed hinges are hidden within the door but are not rated for glass door loads.",
+        "d": "Spring hinges are for automatic closure, not weight support.",
+        "correct": "Pivot hinges mount at the top and bottom of the door frame, supporting the full weight of heavy or frameless glass doors through a top-mounted pivot mechanism. Butt hinges cannot support glass door frames effectively.",
+        "takeaway": "Pivot hinges = heavy/glass doors; butt hinges = standard wood doors."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2fcefa9d2094f50afd2f1446ab70744e9dc48d42396208058eb14314a061728e"
+    }
+  ]
+}

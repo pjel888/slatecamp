@@ -1,0 +1,56 @@
+{
+  "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+  "slug": "lea-matl-007-01-core-concept",
+  "generated_at": "2026-05-01T13:33:44.127Z",
+  "parser_version": "ui-block-parser-v1",
+  "error_count": 0,
+  "warning_count": 2,
+  "unknown_block_count": 2,
+  "critical_block_count": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "block_id": "ui_0005",
+      "component_name": "WikiMistakeCard",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ]
+    },
+    {
+      "block_id": "ui_0006",
+      "component_name": "WikiMistakeList",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0005",
+      "component_name": "WikiMistakeCard",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:731f38d9d3524ee66a443abe95682090bf995327559434fe26591ebd7d618238",
+      "line_start": 66,
+      "line_end": 66,
+      "warnings": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ]
+    },
+    {
+      "block_id": "ui_0006",
+      "component_name": "WikiMistakeList",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:41f172fa51eec2ed9c924cfb7aaa55d53f38cebdc7317a2d9d04df2cb9bba6ff",
+      "line_start": 68,
+      "line_end": 68,
+      "warnings": [
+        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "critical_blocks": []
+}

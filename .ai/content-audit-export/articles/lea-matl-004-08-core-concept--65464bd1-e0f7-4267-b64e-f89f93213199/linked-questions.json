@@ -1,0 +1,498 @@
+{
+  "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:0f7c598e6bfbddd0b98099de7ed021e65fbd290e2d98c1cf11a1a2195ad2756f",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "d4c05cda-d4ab-4b49-8aca-e7c0344b9599",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "As-built drawings document the ___ construction (field changes, actual material placement, MEP routing). Why are accurate as-builts essential?",
+      "options": [
+        {
+          "id": "a",
+          "text": "actual; for operations, maintenance, future renovations, legal documentation, and warranty claims"
+        },
+        {
+          "id": "b",
+          "text": "design-phase; showing original intent only, which is not sufficient for future reference"
+        },
+        {
+          "id": "c",
+          "text": "estimated; cost tracking and budgeting, which is not the primary purpose of as-builts"
+        },
+        {
+          "id": "d",
+          "text": "preliminary; pre-construction planning, which does not reflect the final construction"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Design drawings show intent; as-builts show reality.",
+        "c": "Cost tracking uses different documentation (progress invoices, change orders).",
+        "d": "Preliminary drawings are pre-construction; as-builts are post-construction.",
+        "correct": "As-builts reflect actual field conditions (substituted materials, MEP rerouting due to conflicts, rebar placement, as-installed dimensions). Accurate as-builts are critical for operations staff (HVAC maintenance, electrical troubleshooting), future renovations (understanding existing conditions), and legal disputes (damage claims, warranty issues). Discrepancies from design must be noted."
+      },
+      "explanation": null,
+      "code_citation": "AIA A201 adapted",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb22efe4ef262c90293cebedd208383a3940ac83979b8d8c5b97dcf4845a9df9"
+    },
+    {
+      "question_id": "25826fee-b3f0-4112-8e1d-2b1cb0f8220f",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "The correct sequence for obtaining a building permit in the Philippines per PD 1096 is: (1) ___, (2) Building Permit application to LBO, (3) LBO plan review, (4) ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1) Barangay Clearance; (4) Permit issuance"
+        },
+        {
+          "id": "b",
+          "text": "(1) LBO review; (4) Geotechnical report"
+        },
+        {
+          "id": "c",
+          "text": "(1) Permit issuance; (4) Demolition"
+        },
+        {
+          "id": "d",
+          "text": "(1) Construction begins; (4) Final inspection"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Geotechnical report is required during design, not as part of permit sequence.",
+        "c": "Permit issuance must precede construction; final inspection occurs after completion.",
+        "d": "Construction cannot begin without permit.",
+        "correct": "Typical sequence includes: (1) Secure local clearances (e.g. Barangay Clearance per LGU ordinance), (2) Submit Building Permit application with ownership docs, structural/MEP/architectural plans per PD 1096 Sec 302 to LBO, (2) Submit Building Permit application with approved structural, MEP, and architectural plans to Local Building Official, (3) LBO reviews for NSCP 2015 compliance, (4) LBO issues permit after plan approval. Construction cannot legally begin without permit issuance."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59e7ffe68b1311d0406a4d72d66c90b87afe5b1bed6eafa6af7b08a10317a1c8"
+    },
+    {
+      "question_id": "3c26d2dd-1811-403e-9184-9550e25af76a",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "A Certificate of Occupancy (CO), also called ___, is the final authorization from the Local Building Official to legally occupy the building. Without CO, ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "occupancy permit; the building cannot be legally occupied"
+        },
+        {
+          "id": "b",
+          "text": "building permit; construction cannot begin, as it is a prerequisite for starting any building work"
+        },
+        {
+          "id": "c",
+          "text": "safety certificate; the structure is unsafe, indicating that it has not passed necessary safety inspections"
+        },
+        {
+          "id": "d",
+          "text": "completion certificate; minor work remains, suggesting that the building is not yet fully ready for use"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Building Permit precedes construction, not occupancy.",
+        "c": "Safety certificate is informal; CO is the legal document.",
+        "d": "CO confirms code compliance; minor punch list items do not prevent CO issuance.",
+        "correct": "CO (Certificate of Occupancy/Occupancy Permit) is issued by LBO after final inspection confirms code compliance and all violations are corrected. Without CO, the building cannot be legally occupied—any occupancy is a violation of PD 1096 with liability for owner/tenant."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6045830f1de5f024d66f24d42cb8ce8761e6eb37b8b8cd88b3fbfc33edcdec5a"
+    },
+    {
+      "question_id": "720c7a3a-f0f7-4848-8232-c608b4b6e5ff",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "Hazardous materials (asbestos, lead paint) in a renovation project require ___ per DENR standards before demolition/disturbance. Failure to comply risks ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "proper abatement by certified contractors; environmental violations and health hazards"
+        },
+        {
+          "id": "b",
+          "text": "standard demolition; no additional concern, which is incorrect as it ignores safety protocols"
+        },
+        {
+          "id": "c",
+          "text": "owner notification; completion, without addressing necessary safety measures"
+        },
+        {
+          "id": "d",
+          "text": "contractor approval; schedule extension, neglecting the need for certified abatement"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Standard demolition does not address hazmat; proper abatement is required.",
+        "c": "Owner notification is insufficient; professional abatement is legally mandated.",
+        "d": "Contractor approval does not substitute for regulatory compliance.",
+        "correct": "DENR (Department of Environment and Natural Resources) and Environmental Compliance Certificate (ECC) requirements mandate proper abatement of hazardous materials by certified contractors. Improper handling risks worker/occupant health, environmental contamination, and regulatory penalties. Abatement must be documented for compliance verification."
+      },
+      "explanation": null,
+      "code_citation": "DENR DAO 2000-11 (Asbestos NESHAP); DOH AO 2001-004 (Lead Paint)",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d63d69939488933c9a79239eb7b662440d5f37b622bf2a098dfb8a5331184c6e"
+    },
+    {
+      "question_id": "06f4a429-b1fb-4084-9caa-4a4283a2baf5",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "The ___ is a systematic list of incomplete or non-conforming work items identified during the final inspection. It is the contractor's responsibility to correct all items to ___ satisfaction before final payment.",
+      "options": [
+        {
+          "id": "a",
+          "text": "punch list; owner's"
+        },
+        {
+          "id": "b",
+          "text": "change order; engineer's"
+        },
+        {
+          "id": "c",
+          "text": "defects list; building authority's"
+        },
+        {
+          "id": "d",
+          "text": "completion certificate; contractor's"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Change orders document scope changes during construction, not defects.",
+        "c": "Defects list is informal; punch list is the contractual standard.",
+        "d": "Completion certificate is issued after punch list closure, not before.",
+        "correct": "Punch list documents work deficiencies (incomplete trim, paint touch-ups, system testing failures) and non-conformances (code violations, design deviations). Contractor is contractually obligated to correct all items to owner's satisfaction. Punch list closure (signed off by owner/engineer) precedes final payment."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Document 202 General Conditions of Contract",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04ca474a06702f1229ece832cd61f4bb48b224a29eed80e52ef48319ce276f56"
+    },
+    {
+      "question_id": "407d4843-5f62-41fe-8753-c90f89d73335",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "A project proceeding without a building permit from the Local Building Official faces the risk of ___. This is a violation of ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "demolition orders and legal liability; PD 1096"
+        },
+        {
+          "id": "b",
+          "text": "owner approval refusal; contract terms, which is a common misconception"
+        },
+        {
+          "id": "c",
+          "text": "construction delay; weather, which is often misunderstood"
+        },
+        {
+          "id": "d",
+          "text": "safety issues; OSHA only, which is an incorrect assumption"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Owner approval is contractual; PD 1096 is regulatory and supersedes contracts.",
+        "c": "Permits are obtained before construction; weather affects schedule but not permit requirement.",
+        "d": "PD 1096 is broader than OSHA; it encompasses structural, MEP, and building code compliance.",
+        "correct": "PD 1096 mandates building permits. Unpermitted construction invites LBO discovery, demolition orders, and legal liability for the builder and owner. Criminal penalties may apply. Permit approval is non-negotiable; no legal construction occurs without it."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3edf4c925e5d9b02d64fa6939042711bc9b1d67c45dbffe297643f2768352ae4"
+    },
+    {
+      "question_id": "40b90f0c-0167-486b-8e69-4c8e11e51719",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "A geotechnical investigation finds soil bearing capacity of 150 kPa at depth, but the structural design (prepared concurrently) was based on assumed 200 kPa. Foundations are already under construction. What is the appropriate corrective action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stop construction immediately; conduct geotechnical engineer consultation to determine if revised design (larger footing, deeper foundations, piles) is needed. Under-designed foundations risk unplanned settlement and structural damage. Correction before completion is far cheaper than post-occupancy repairs."
+        },
+        {
+          "id": "b",
+          "text": "Continue construction; investigate only if settlement occurs post-occupancy, as immediate action may not be necessary unless visible issues arise"
+        },
+        {
+          "id": "c",
+          "text": "Increase concrete strength to compensate for lower bearing capacity, ensuring that the structural integrity is maintained without altering the foundation design"
+        },
+        {
+          "id": "d",
+          "text": "Assume the original design is correct; disregard the investigation findings, as the initial assumptions were based on standard practices"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Investigation findings supersede design assumptions; post-occupancy investigation is too late.",
+        "c": "Concrete strength does not change soil bearing capacity; the constraint is soil, not concrete.",
+        "d": "Investigation results override assumed design parameters; contradictions must be resolved.",
+        "correct": "A 25% reduction in bearing capacity (150 vs. 200 kPa) is significant. Under-designed foundations may experience unplanned settlement (damage, cracking, mechanical failure). Immediate geotechnical engineer consultation is required to determine if foundations are adequate or if redesign is necessary. Correction during construction is far less costly than post-occupancy repairs or litigation."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 18",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c74ad37a6e5e83f6361bcc16d749f2959c5cc9612d45a1f46666ccd62fe41657"
+    },
+    {
+      "question_id": "5b89802d-b51c-4253-8820-4c369dac7f66",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "Substantial completion is declared when the building is ___ complete for occupancy and beneficial use. At this point, ___ items (cosmetic, non-functional) may remain before final closure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "~95%; punch list"
+        },
+        {
+          "id": "b",
+          "text": "~50%; structural"
+        },
+        {
+          "id": "c",
+          "text": "100%; no"
+        },
+        {
+          "id": "d",
+          "text": "~80%; major"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "50% completion is far too early; substantial completion requires near-complete readiness.",
+        "c": "100% completion is final completion, not substantial completion; minor items may remain.",
+        "d": "80% is closer to substantial completion but 95% is the standard threshold.",
+        "correct": "Substantial completion occurs when the building is sufficiently complete (~95%) for occupancy and use as intended. Minor punch list items (cosmetic, non-critical) may remain. This milestone is contractually important: owner gains beneficial use, warranty period begins, final payment (less retention) may be released."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 uses 'final inspection' and 'Certificate of Completion/Occupancy'; punch list is contractual practice, not codified percentage.",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:93186a6a3b7ed53f432f5b829c25f32e880df5f0a99cf7a7b8c2a03cca63bf9a"
+    },
+    {
+      "question_id": "62b3a071-e9c2-4a38-a9d0-3ea2ab593177",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "A commercial building has completed construction and passed final inspection by the LBO, achieving substantial completion. The developer occupies the building and begins leasing office space. Three months later, an inspector discovers structural steel fireproofing applied to only 2-hour rating, while code requires 3 hours (per PD 1096 occupancy tables). Who is liable, and what is the corrective action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The contractor and developer are jointly liable. Fireproofing must be upgraded to 3-hour rating per code. The building should not have been occupied without final CO confirming the 3-hour requirement. This is a serious code violation; occupants may face evacuation orders if the deficiency is escalated to fire authority."
+        },
+        {
+          "id": "b",
+          "text": "The occupants are liable for choosing to lease substandard space, as they should have verified compliance with all applicable codes before occupancy"
+        },
+        {
+          "id": "c",
+          "text": "Only the LBO is liable for not detecting the fireproofing deficiency, as it is their responsibility to ensure all code requirements are met during inspections"
+        },
+        {
+          "id": "d",
+          "text": "The 2-hour rating is grandfathered; no correction is required, assuming that the building was constructed under an older code version that permitted such ratings"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Occupants have no liability; they rely on legal occupancy permit (CO) as assurance of code compliance.",
+        "c": "LBO has responsibility to verify code compliance during final inspection, but contractor bears primary responsibility for correct installation.",
+        "d": "New construction must meet current code; grandfathering applies only to existing structures under renovation.",
+        "correct": "If fireproofing is under-rated per code requirements (e.g., 2 hours vs. required 3 hours), the contractor failed to meet specification and NSCP 2015 Chapter 6 Table 601(A). The LBO's final inspection should have verified the rating, but responsibility for code compliance rests with the contractor and developer. Once occupancy is authorized, occupants have reasonable expectation of code compliance. Under-rated fireproofing must be corrected; retrofit fireproofing is expensive and disruptive. This scenario reflects failure in the final inspection process or contractor non-compliance."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 7; PD 1096",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4c8dc901f28e05a5ac2d12019b94a14d6f66fc618fccdb68ae910deb638cf251"
+    },
+    {
+      "question_id": "77ad610c-e0a9-43e1-b1fd-e76831b59e70",
+      "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+      "topic_id": "6c196086-0232-4cf7-92d0-efe92f4c2fc1",
+      "text": "NSCP 2015 Chapter 10 requires ___ investigation and testing for all structures to determine soil bearing capacity, groundwater elevation, and foundation design requirements. What is the primary purpose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Geotechnical; Prevent foundation failure, settlement, and ensure structural stability"
+        },
+        {
+          "id": "b",
+          "text": "Architectural; Aesthetic compliance, ensuring the building's design aligns with local cultural norms"
+        },
+        {
+          "id": "c",
+          "text": "Environmental; Waste management, focusing on minimizing construction debris"
+        },
+        {
+          "id": "d",
+          "text": "Hydrological; Water drainage design, particularly in flood-prone areas"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Architectural investigation is design refinement, not foundation-critical.",
+        "c": "Environmental investigation is for hazmat/soil contamination, separate from geotechnical.",
+        "d": "Drainage design depends on site grading and hydrology, typically secondary to geotechnical.",
+        "correct": "Geotechnical investigation (soil boring, lab testing) is mandatory per NSCP 2015. It determines bearing capacity (kPa), settlement risk, and groundwater conditions—critical inputs for foundation design. Inadequate investigation leads to foundation failure, unplanned settlement, and expensive underpinning."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 18",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-08-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1562a71a03459f77b1a43a489d55591162b1d8e5ede08993bb7600d7f693ab2f"
+    }
+  ]
+}

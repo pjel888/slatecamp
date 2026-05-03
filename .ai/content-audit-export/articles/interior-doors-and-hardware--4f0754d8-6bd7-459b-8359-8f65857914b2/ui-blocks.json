@@ -1,0 +1,122 @@
+{
+  "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
+  "slug": "interior-doors-and-hardware",
+  "normalized_created_at": "2026-05-03T02:36:00.000Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:ab3046151b4e3b0f0ff6809fe46c511dd76799bc61f16d15b190614a525b3ebc",
+  "normalized_content_hash": "sha256:d90d5fef6234c23c7e4a1c5020c3565b43483d715fcf2dd90c0fe6233c71b447",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 8 - Doors and Hardware\">\n\n\nLegal Basis: BP 344 (2024 IRR) \u2014 Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced with Appendix D Sections 13 (Dressing Rooms) and 17 (Lodging)\n\n\n</LawCallout>",
+      "raw_hash": "sha256:6965f7ebfe2a4bf7912c2cfc82469178a2f0ae7fd2514bee9fd0de2e075e2f2b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"bp344\", title=\"Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced wi\"\n- Text: Legal Basis: BP 344 (2024 IRR) \u2014 Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced with Appendix D Sections 13 (Dressing Rooms) and 17 (Lodging)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2",
+      "props": {
+        "code": "bp344",
+        "title": "Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced wi"
+      },
+      "props_json": {
+        "code": "bp344",
+        "title": "Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced wi",
+        "section": "Section 8 - Doors and Hardware"
+      },
+      "props_text": "code=bp344, title=Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced wi, section=Section 8 - Doors and Hardware",
+      "children_raw": "\n\nLegal Basis: BP 344 (2024 IRR) \u2014 Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced with Appendix D Sections 13 (Dressing Rooms) and 17 (Lodging)\n\n",
+      "children_text": "Legal Basis: BP 344 (2024 IRR) \u2014 Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced with Appendix D Sections 13 (Dressing Rooms) and 17 (Lodging)",
+      "start_offset": 1080,
+      "end_offset": 1450,
+      "line_start": 26,
+      "line_end": 30,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\" title=\"the stricter clear width governs.\">\n\nCross-reference: PD 1096 (National Building Code) governs fire exit door widths and panic hardware. BP 344 governs the accessibility dimension of those same doors. Both apply simultaneously \u2014 the stricter clear width governs.\n\n</LawCallout>",
+      "raw_hash": "sha256:c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"bp344\", title=\"the stricter clear width governs.\"\n- Text: Cross-reference: PD 1096 (National Building Code) governs fire exit door widths and panic hardware. BP 344 governs the accessibility dimension of those same doors. Both apply simultaneously \u2014 the stricter clear width governs.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4",
+      "props": {
+        "code": "bp344",
+        "title": "the stricter clear width governs."
+      },
+      "props_json": {
+        "code": "bp344",
+        "title": "the stricter clear width governs."
+      },
+      "props_text": "code=\"bp344\" title=\"the stricter clear width governs.\"",
+      "children_raw": "\n\nCross-reference: PD 1096 (National Building Code) governs fire exit door widths and panic hardware. BP 344 governs the accessibility dimension of those same doors. Both apply simultaneously \u2014 the stricter clear width governs.\n\n",
+      "children_text": "Cross-reference: PD 1096 (National Building Code) governs fire exit door widths and panic hardware. BP 344 governs the accessibility dimension of those same doors. Both apply simultaneously \u2014 the stricter clear width governs.",
+      "start_offset": 7790,
+      "end_offset": 8100,
+      "line_start": 176,
+      "line_end": 180,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout variant=\"lea-watch\" title=\"Exam Trap\">\n\nExam Trap: Many LEA questions test the distinction between nominal leaf width and clear opening width. Always read carefully \u2014 if the question says \"leaf width is 900 mm\" vs \"clear width is 900 mm,\" the answers differ.\n\n</Callout>",
+      "raw_hash": "sha256:e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"lea-watch\", title=\"Exam Trap\"\n- Text: Exam Trap: Many LEA questions test the distinction between nominal leaf width and clear opening width. Always read carefully \u2014 if the question says \"leaf width is 900 mm\" vs \"clear width is 900 mm,\" the answers differ.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6",
+      "props": {
+        "variant": "lea-watch",
+        "title": "Exam Trap"
+      },
+      "props_json": {
+        "variant": "lea-watch",
+        "title": "Exam Trap"
+      },
+      "props_text": "variant=\"lea-watch\" title=\"Exam Trap\"",
+      "children_raw": "\n\nExam Trap: Many LEA questions test the distinction between nominal leaf width and clear opening width. Always read carefully \u2014 if the question says \"leaf width is 900 mm\" vs \"clear width is 900 mm,\" the answers differ.\n\n",
+      "children_text": "Exam Trap: Many LEA questions test the distinction between nominal leaf width and clear opening width. Always read carefully \u2014 if the question says \"leaf width is 900 mm\" vs \"clear width is 900 mm,\" the answers differ.",
+      "start_offset": 5000,
+      "end_offset": 5400,
+      "line_start": 98,
+      "line_end": 102,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0058",
+      "block_type": "mdx_component",
+      "component_name": "KeyValues",
+      "raw": "<KeyValues title=\"BP 344 Door Dimensional Quick-Reference\">\n\n- Clear opening width (single leaf): 900 mm\n- Clear opening width (double leaf): 1,800 mm\n- Handle height: 900 mm AFF\n- Handle type: Vertical pull or lever (no round knobs)\n- Kick plate range: 300\u2013400 mm AFF\n- Threshold max height: 12 mm (bevel if >6 mm)\n- Vision panel min width: 100 mm\n- Secondary peephole (PWD height): 1,000 mm AFF\n- Glass door marking band: 900\u20131,500 mm AFF\n- Dressing room door swing: Outward\n\n</KeyValues>",
+      "raw_hash": "sha256:a3083657338b8f36b1ecf48dc4f064c4bc8dc13702c2d1c92357513b6f3b2eda",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0058 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: BP 344 Door Dimensional Quick-Reference: Clear opening 900 mm (single), 1,800 mm (double). Handle height 900 mm AFF. Kick plate 300-400 mm. Threshold 12 mm max. Vision panel 100 mm min. Glass markings 900-1,500 mm AFF.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:2dcdbb18f2dd39caa371dd3f4765e74a6255c87358e4e178a10290b8e2775023",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\nBP 344 Door Dimensional Quick-Reference: Clear opening 900 mm (single), 1,800 mm (double). Handle height 900 mm AFF. Kick plate 300-400 mm. Threshold 12 mm max. Vision panel 100 mm min. Glass markings 900-1,500 mm AFF.\n\n",
+      "children_text": "BP 344 Door Dimensional Quick-Reference: Clear opening 900 mm (single), 1,800 mm (double). Handle height 900 mm AFF. Kick plate 300-400 mm. Threshold 12 mm max. Vision panel 100 mm min. Glass markings 900-1,500 mm AFF.",
+      "start_offset": 0,
+      "end_offset": 0,
+      "line_start": 0,
+      "line_end": 0,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "new"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2"
+}

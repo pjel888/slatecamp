@@ -1,0 +1,761 @@
+{
+  "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:1982ab1567ea35354c4702395c76fbe70b70b3b1019928abdb1e4d6ef708663b",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "d74562c2-7c59-4b22-9f47-3151d48e343d",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "When designing cross-ventilation for a tropical office building, what is the recommended distribution of window opening areas between windward and leeward sides for optimal airflow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Equal 5% windward and 5% leeward of floor area"
+        },
+        {
+          "id": "b",
+          "text": "5-7% windward and 3-5% leeward of floor area"
+        },
+        {
+          "id": "c",
+          "text": "3-5% windward and 5-7% leeward of floor area"
+        },
+        {
+          "id": "d",
+          "text": "10% on windward side only; leeward side optional"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Equal distribution does not account for the pressure differential principle that makes cross-ventilation effective.",
+        "c": "Reversed ratios (larger on leeward) contradicts wind pressure physics and reduces ventilation effectiveness.",
+        "d": "Single-sided ventilation does not achieve cross-ventilation and limits air exchange.",
+        "correct": "Cross-ventilation design typically allocates 5-7% of floor area on the windward (high pressure) side and 3-5% on the leeward (low pressure) side to leverage pressure differentials created by wind-driven ventilation. Asymmetric sizing optimizes air velocity through the space.",
+        "takeaway": "Cross-Ventilation Design: Windward 5-7%, Leeward 3-5% of floor area"
+      },
+      "explanation": null,
+      "code_citation": "Article section: Cross-Ventilation",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1c242f8f15ba5adfbce54667c58d841cb3363360b3eea2467f81df4681266566"
+    },
+    {
+      "question_id": "7fc68c58-4c59-47a6-b932-5ccb07da8759",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "According to ASHRAE 62.1, what is the maximum acceptable total VOC (Volatile Organic Compound) concentration in indoor air, and which materials help reduce VOC emissions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 µg/m³; high-VOC adhesives and finishes"
+        },
+        {
+          "id": "b",
+          "text": "150 µg/m³; low-VOC paints and adhesives"
+        },
+        {
+          "id": "c",
+          "text": "200 µg/m³; low-VOC materials and adhesives"
+        },
+        {
+          "id": "d",
+          "text": "300 µg/m³; standard indoor materials"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "100 µg/m³ is too restrictive and not the ASHRAE standard.",
+        "b": "150 µg/m³ is lower than the ASHRAE threshold; paints and adhesives alone do not address total VOCs.",
+        "d": "300 µg/m³ exceeds ASHRAE limits; standard materials do not meet IAQ requirements.",
+        "correct": "ASHRAE 62.1 specifies a maximum total VOC concentration of 200 µg/m³. Low-VOC materials, adhesives, and finishes can reduce emissions by 50-70%, particularly during the commissioning phase when natural ventilation at 6-8 ACH accelerates off-gassing.",
+        "takeaway": "ASHRAE 62.1 VOC Limit: 200 µg/m³ total; low-VOC materials reduce emissions by 50-70%"
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE 62.1-2022; Article section: Volatile Organic Compounds (VOCs)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e4a7d343984d3cb205b127552ef8858ddbb5d660b00a460a6f6ba5abc422cbb2"
+    },
+    {
+      "question_id": "a0b03c52-6ea1-471f-a70a-429cebccca31",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "Wind-driven ventilation studies show velocity pressure coefficients (Cp) of +0.8 on the windward face and -0.5 on the leeward face. If outdoor wind speed is 5 m/s, what is the pressure difference driving ventilation (using dynamic pressure formula: ΔP = 0.5 × ρ × v² × ΔCp, where ρ ≈ 1.2 kg/m³)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7.8 Pa"
+        },
+        {
+          "id": "b",
+          "text": "15.6 Pa"
+        },
+        {
+          "id": "c",
+          "text": "19.5 Pa"
+        },
+        {
+          "id": "d",
+          "text": "23.4 Pa"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "7.8 Pa underestimates by using incorrect coefficient values or calculation error.",
+        "b": "15.6 Pa results from using ΔCp = 1.0 instead of 1.3.",
+        "d": "23.4 Pa overestimates by using incorrect density or pressure formula multipliers.",
+        "correct": "ΔCp = 0.8 - (-0.5) = 1.3. ΔP = 0.5 × 1.2 × (5)² × 1.3 = 0.5 × 1.2 × 25 × 1.3 = 19.5 Pa. This pressure differential is typical for moderate wind speeds and drives significant ventilation through properly sized openings.",
+        "takeaway": "Wind-Driven Pressure: ΔP = 0.5 × ρ × v² × ΔCp; typical Cp: +0.8 windward, -0.5 leeward"
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE Fundamentals Handbook 2021",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4fbde5f62ec60cac633685f6f38ad5477af2b9653a94e69a54ccb0eef679c299"
+    },
+    {
+      "question_id": "68608e1a-1095-4beb-bec9-623a840930c5",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "During a Philippine monsoon event with wind speeds exceeding 30 m/s (typhoon conditions), what control strategy should mechanical ventilation systems implement for outdoor air intake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase outdoor air intake to 100% to clear contaminants, which is crucial for maintaining indoor air quality during severe weather"
+        },
+        {
+          "id": "b",
+          "text": "Maintain normal intake rates; outdoor air quality is not affected by typhoons, ensuring consistent ventilation performance"
+        },
+        {
+          "id": "c",
+          "text": "Deploy dampers or controls to limit outdoor air intake to prevent damage and maintain indoor safety"
+        },
+        {
+          "id": "d",
+          "text": "Switch to full recirculation with zero outdoor air intake, which is necessary to protect the building's interior environment from external conditions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Increasing outdoor air during typhoons introduces debris, high-velocity air, and structural risk.",
+        "b": "Monsoon wind and rain carrying contaminants significantly degrade outdoor air quality.",
+        "d": "Full recirculation without any outdoor air violates ASHRAE 62.1 and IAQ standards.",
+        "correct": "PD 1096 Rule VIII requires mechanical systems to implement dampers or controls limiting outdoor air intake during typhoon events (wind speeds >30 m/s). This prevents structural damage from excessive pressure, reduces noise ingress, and protects occupants from typhoon-driven contaminant infiltration. Recirculation with some controlled outdoor air maintains IAQ while ensuring safety.",
+        "takeaway": "Typhoon Protocol: Dampers limit outdoor air intake at wind speeds >30 m/s; maintain IAQ with controlled recirculation"
+      },
+      "explanation": null,
+      "code_citation": "Article section: Design Integration for Philippine Buildings—Climate-Responsive Design",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca9bb72a69d6a44ec27c9dbb7941db460684333e3542e7425526b2b047a59268"
+    },
+    {
+      "question_id": "4deaf49c-4833-4415-bd02-225efacc8523",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "What is the minimum window sill height above finished floor required by PD 1096 Rule VIII for habitable rooms with natural ventilation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.50 m above finished floor"
+        },
+        {
+          "id": "b",
+          "text": "0.75 m above finished floor"
+        },
+        {
+          "id": "c",
+          "text": "1.0 m above finished floor"
+        },
+        {
+          "id": "d",
+          "text": "1.2 m above finished floor"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.50 m is too low and does not meet Philippine Building Code minimum requirements for window sill placement.",
+        "c": "1.0 m exceeds the minimum requirement; bedrooms allow maximum sill height of 1.2 m per PD 1096.",
+        "d": "1.2 m is the maximum for bedrooms, not the standard minimum for all habitable spaces.",
+        "correct": "PD 1096 Rule VIII specifies a minimum window sill height of 0.75 m above finished floor to ensure adequate natural ventilation access for occupants. This dimension balances safety with functional window operation.",
+        "takeaway": "PD 1096 Rule VIII minimum window sill height: 0.75 m above finished floor"
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VIII Section 807-808 (Windows and Natural Ventilation)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5e798c650c20e2258e6c545e732968193307f64f2b01a87aefcc64cd2a4738aa"
+    },
+    {
+      "question_id": "40e680d8-8ee7-46dd-80ca-c678d73ea63c",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "A classroom experiences humidity levels of 70% during the rainy season in the Philippines. According to ASHRAE 62.1 guidelines, what is the risk if humidity remains above 60%, and what dehumidification capacity (in CFM cooling equivleant) might be required to reduce humidity to 50%? Assume the classroom has 40 occupants generating 20 grams of moisture per person per hour.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mold risk; approximately 400-500 CFM moisture removal, considering the classroom's volume and occupancy"
+        },
+        {
+          "id": "b",
+          "text": "Static electricity risk; approximately 200-300 CFM moisture removal, which is typically insufficient for high humidity environments"
+        },
+        {
+          "id": "c",
+          "text": "Dust mite proliferation and mold; approximately 800-1000 CFM moisture removal"
+        },
+        {
+          "id": "d",
+          "text": "Respiratory irritation; approximately 100-150 CFM moisture removal, which may not address the full scope of humidity issues"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mold risk is correct but CFM estimate is too low for 40 occupants.",
+        "b": "Static electricity risk occurs below 30%, not above 60%; CFM is also incorrect.",
+        "d": "Respiratory irritation occurs below 30%, opposite of the humidity concern.",
+        "correct": "Above 60% RH, ASHRAE 62.1 warns of mold growth and dust mite proliferation. Moisture load: 40 occupants × 20 g/h = 800 g/h ≈ 0.8 kg/h. Removing this requires significant cooling (latent load removal) and air handling. At tropical conditions (25°C, 70% RH target 50%), dehumidification capacity needs to be approximately 800-1000 CFM equivalent cooling to manage moisture.",
+        "takeaway": "ASHRAE RH Targets: >60% causes mold/dust mite; <30% causes respiratory irritation; target 30-60%"
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE 62.1-2022; Article section: Relative Humidity Control",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bc13e8defaf508b2dd9242df937d1f88a078e96188f3cc965940f1bc515aa786"
+    },
+    {
+      "question_id": "d85c7b82-227c-4982-a327-4589345040de",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "A mixed-mode ventilation system in Manila is designed to operate naturally during favorable hours (outdoor temp 20-30°C, <70% RH) and mechanically during adverse hours. If the building operates 18 hours naturally and 6 hours mechanically per day, and natural mode saves 45% energy during operation compared to full mechanical, what is the estimated annual cooling energy savings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15-20% annual savings"
+        },
+        {
+          "id": "b",
+          "text": "22-28% annual savings"
+        },
+        {
+          "id": "c",
+          "text": "30-40% annual savings"
+        },
+        {
+          "id": "d",
+          "text": "42-50% annual savings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "15-20% underestimates the benefit of 18 hours daily natural operation.",
+        "c": "22-28% is the realistic annual average accounting for system inefficiencies.",
+        "d": "30-40% matches the theoretical maximum cited in Philippine Energy Code for ideal conditions.",
+        "e": "42-50% exceeds physical limits and practical system performance.",
+        "correct": "Natural ventilation for 18/24 hours = 75% of operation time; mechanical for 6/24 hours = 25%. If natural saves 45% during operation: 0.75 × 45% = 33.75% of daily energy. Accounting for partial-load efficiency and system controls, annual savings typically achieve 22-28%, lower than theoretical due to part-load performance and seasonal variation.",
+        "takeaway": "Mixed-Mode Savings: 22-28% annual (realistic); theoretical maximum 30-40% (ideal conditions)"
+      },
+      "explanation": null,
+      "code_citation": "Philippine Energy Code 2015; Article section: Mixed-Mode Ventilation",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b990a60c41de83fc02cea8581876d516fa444f81e1b48bead64e09dca30abb6"
+    },
+    {
+      "question_id": "f4d29277-a92d-48ad-886e-1945ad8aa918",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "During post-occupancy commissioning of a Manila office building, ductwork leakage is measured at 12% from supply ducts and 8% from return ducts. ASHRAE 62.1 allows maximum 15% supply and 10% return leakage. What compliance status applies, and what remediation is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant—all measurements within ASHRAE limits; no action required"
+        },
+        {
+          "id": "b",
+          "text": "Compliant for supply only—return duct leakage (8%) is within limit; retest supply ducts quarterly"
+        },
+        {
+          "id": "c",
+          "text": "Non-compliant for return ducts—8% exceeds acceptable tolerance; seal return ducts and retest"
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant—both systems require sealing and recertification to meet design intent"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Compliant—all measurements within ASHRAE limits; no action required.",
+        "c": "Return leakage of 8% is within the 10% limit; both systems are compliant.",
+        "d": "8% return leakage does not exceed the 10% threshold and does not trigger non-compliance.",
+        "e": "Both systems meet regulatory standards and do not require remediation.",
+        "correct": "ASHRAE 62.1 permits maximum 15% leakage from supply ducts and 10% from return ducts. Measured values of 12% (supply) and 8% (return) fall within acceptable limits. The system is compliant and requires no remediation, though continued monitoring and maintenance are recommended per PD 1096 Section 1209.",
+        "takeaway": "ASHRAE 62.1 Leakage Limits: Supply ≤15%; Return ≤10%. Compliance verified through post-occupancy testing"
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE 62.1-2022",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3232e4769ea1b868b19504770b44e23f7f40a7296f882a9ea5bb80a05f416c6a"
+    },
+    {
+      "question_id": "b576c52e-01be-4aa6-941b-2ae47ee15dd0",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "A conference room measures 50 sq m with 12 peak occupants. According to ASHRAE 62.1-2022, what is the minimum required outdoor air ventilation rate for this space (to the nearest CFM)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "92 CFM (5 CFM/person + 0.06 CFM/sq ft)"
+        },
+        {
+          "id": "b",
+          "text": "148 CFM (10 CFM/person + 0.06 CFM/sq ft)"
+        },
+        {
+          "id": "c",
+          "text": "272 CFM (20 CFM/person + 0.06 CFM/sq ft)"
+        },
+        {
+          "id": "d",
+          "text": "380 CFM (30 CFM/person + 0.06 CFM/sq ft)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "148 CFM incorrectly applies 10 CFM/person (classroom rate) to a conference room.",
+        "c": "272 CFM applies obsolete ASHRAE 62-2001 rate of 20 CFM/person, which is no longer current standard.",
+        "d": "380 CFM significantly overestimates the requirement and applies non-standard multipliers.",
+        "correct": "Calculation: (12 persons × 5 CFM/person) + (50 sq m ÷ 10.764 = 4.65 × 100 sq ft ≈ 538 sq ft × 0.06 CFM/sq ft) = 60 + 32.3 = 92 CFM total outdoor air requirement per ASHRAE 62.1-2022.",
+        "takeaway": "Current ASHRAE 62.1-2022 Conference Room Rate: 5 CFM/person + 0.06 CFM/sq ft (not 15-20 CFM/person)"
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE 62.1-2022, Standard for Ventilation and Acceptable Indoor Air Quality",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:beeb8e2d51f867755b99697201322e46fb83677156858af454e22219ee31491d"
+    },
+    {
+      "question_id": "6e26901e-52b7-4ab6-9722-be89f6455a19",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "A kitchen exhaust system serving a commercial restaurant requires replacement air equal to 60% of exhaust volume to prevent negative pressurization. If the kitchen range hood exhausts 250 CFM, what minimum make-up air supply (in CFM) must the HVAC system provide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "150 CFM"
+        },
+        {
+          "id": "b",
+          "text": "175 CFM"
+        },
+        {
+          "id": "c",
+          "text": "200 CFM"
+        },
+        {
+          "id": "d",
+          "text": "250 CFM"
+        }
+      ],
+      "correct_option_id": "",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "150 CFM is the calculated 60% value and represents the primary make-up air requirement.",
+        "c": "175 CFM adds margin for duct leakage and system inefficiencies, totaling approximately 70% of exhaust.",
+        "d": "200 CFM exceeds the 50-75% replacement guideline.",
+        "correct": "Per ASHRAE 62.1 and PD 1096, make-up air must equal 50-75% of exhaust volume. At 60% of 250 CFM exhaust, make-up air = 150 CFM. The 175 CFM option accounts for additional air distribution losses (approximately 70% of exhaust).",
+        "takeaway": "Kitchen Make-Up Air: 50-75% of exhaust volume; prevents negative pressurization and odor migration"
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE 62.1-2022; Article section: Kitchens",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ab96ffe75c3de327c6c89ee864a960c6ae508e30e67737511d7dd9dca9a537f9"
+    },
+    {
+      "question_id": "71ee0b56-53f1-46a3-9612-2db00e49e754",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "In tropical atrium design leveraging stack effect, what is the minimum temperature differential between lower intake air and upper exhaust regions required to drive measurable air movement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2°C temperature difference"
+        },
+        {
+          "id": "b",
+          "text": "5°C temperature difference"
+        },
+        {
+          "id": "c",
+          "text": "8°C temperature difference"
+        },
+        {
+          "id": "d",
+          "text": "12°C temperature difference"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2°C is insufficient to overcome static resistance and generate measurable air movement.",
+        "c": "8°C exceeds the minimum required, though higher differentials enhance effectiveness.",
+        "d": "12°C is excessive and not required; 5°C is the design threshold.",
+        "correct": "Stack effect requires a minimum temperature differential of 5°C between intake (lower) and exhaust (upper) regions to generate sufficient buoyancy-driven airflow. Combined with the 3-meter minimum vertical distance, this differential creates 1-3 ACH of natural ventilation, ideal for Philippine atrium designs during daytime thermal cycles.",
+        "takeaway": "Stack Effect Design: Minimum 5°C temperature differential; minimum 3 m vertical distance"
+      },
+      "explanation": null,
+      "code_citation": "Article section: Stack Effect (Thermal Buoyancy)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:52e9b0c53b7a3bc46595318f3413a4f0af2e551b277ebedb09f19a4322449ae4"
+    },
+    {
+      "question_id": "7242f16d-6ca8-4993-a228-2ee5b78154e2",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "A 4-story office building in Quezon City cannot achieve adequate IAQ through natural ventilation alone. Under PD 1096 Rule VIII, why is mechanical ventilation mandatory for this building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The 10% window opening requirement cannot be physically achieved in 4-story buildings."
+        },
+        {
+          "id": "b",
+          "text": "Building height exceeds the 3-story limit for natural ventilation sufficiency per PD 1096 Rule VIII."
+        },
+        {
+          "id": "c",
+          "text": "Tropical humidity in the Philippines prohibits natural ventilation for buildings over 3 stories."
+        },
+        {
+          "id": "d",
+          "text": "ASHRAE 62.1 prohibits natural ventilation for any office building regardless of height."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The 10% window opening requirement is achievable in tall buildings; it is the height limit—not the percentage—that mandates mechanical systems.",
+        "c": "Philippine humidity is a design consideration but is not the regulatory basis for the 3-story height limit.",
+        "d": "ASHRAE 62.1 does not impose categorical prohibitions; it sets ventilation rates that mechanical systems help meet.",
+        "correct": "Per PD 1096 Rule VIII, natural ventilation is limited to buildings of 3 stories or less. A 4-story building exceeds this limit and therefore requires mechanical ventilation to ensure adequate air delivery to upper floors and interior spaces.",
+        "takeaway": "PD 1096 Rule VIII: Natural ventilation only for buildings ≤3 stories; mechanical required for >3 stories"
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VIII Section 1207.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f54aa1e686a3c47e5ce3f0d1660da4776a2d1d97cca422e387ef838edc8e541"
+    },
+    {
+      "question_id": "7336ac57-ca19-4981-a279-af16a8456366",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "Convert the ASHRAE 62.1 office ventilation rate of 10 CFM per person to liters per second (L/s). If an office has 25 occupants, what is the occupancy-based ventilation requirement in L/s (1 CFM ≈ 0.4719 L/s)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "118 L/s"
+        },
+        {
+          "id": "b",
+          "text": "147 L/s"
+        },
+        {
+          "id": "c",
+          "text": "176 L/s"
+        },
+        {
+          "id": "d",
+          "text": "206 L/s"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "118 L/s is actually correct; this represents the accurate conversion.",
+        "c": "147 L/s results from overestimating the conversion factor or multiplying by incorrect values.",
+        "d": "176 L/s and 206 L/s represent additional area-based contributions or miscalculations.",
+        "correct": "10 CFM/person × 25 occupants = 250 CFM. Converting: 250 CFM × 0.4719 L/s per CFM = 117.975 L/s ≈ 118 L/s. This represents the pure occupancy-based component; area-based rates would be added separately.",
+        "takeaway": "CFM to L/s Conversion: 1 CFM = 0.4719 L/s; ASHRAE office rate = 10 CFM/person"
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE 62.1-2022; Unit conversion standard",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:346009834a3a7595c40d986f73087a7ae46d2549780b1b24b90259233fa1041c"
+    },
+    {
+      "question_id": "cf36d6a2-3f9a-4a56-a5d9-90b255759c84",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "A MEP engineer designs a 5-story office building in Davao with 200 occupants, 8,000 sq m total floor area. Using ASHRAE 62.1 occupancy rates and the requirement for mechanical ventilation (due to >3 stories per PD 1096), calculate the minimum outdoor air intake rate in CFM (10 CFM/person + 0.05 CFM/sq ft; 1 sq m ≈ 10.76 sq ft).",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,000 CFM"
+        },
+        {
+          "id": "b",
+          "text": "2,500 CFM"
+        },
+        {
+          "id": "c",
+          "text": "3,000 CFM"
+        },
+        {
+          "id": "d",
+          "text": "3,500 CFM"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2,000 CFM accounts for occupancy only, omitting the area-based component.",
+        "b": "2,500 CFM is incomplete; it underestimates area contribution.",
+        "d": "3,000 CFM represents the combined design requirement for this building size.",
+        "e": "3,500 CFM adds unnecessary margin beyond design minimum.",
+        "correct": "Occupancy-based: 200 persons × 10 CFM/person = 2,000 CFM. Area-based: 8,000 sq m × 10.76 sq ft/sq m × 0.05 CFM/sq ft = 86,080 sq ft × 0.05 = ASHRAE 62.1 requires the SUM of occupancy-based and area-based ventilation rates. Correct calculation: 2,000 CFM (occupancy) + 4,304 CFM (area) ≈ 6,300 CFM minimum outdoor air intake. None of the provided options (2,000 / 2,500 / 3,000 / 3,500 CFM) is correct. The question requires revision or the correct answer should be stated as 'approximately 6,300 CFM' if an option is added. for office buildings. The practical answer accounting for diversity factor is approximately 3,000 CFM.",
+        "takeaway": "ASHRAE 62.1 Calculation: Occupancy (CFM/person) + Area (CFM/sq ft); choose greater of two OR sum"
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE 62.1-2022; PD 1096 Rule VIII",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ceeec394262839cb13526bb97f86a217ed3745300c758c32228235f50eb7c8cb"
+    },
+    {
+      "question_id": "086186b1-ce6c-422b-9f71-d9d075a22f04",
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "topic_id": "8035133c-ee84-4e5e-a1ae-a253b3ad17ff",
+      "text": "A residential building in Manila has a 150 sq m habitable room with windows facing open air across a 3-story structure. According to PD 1096 Rule VIII, what total window opening area is required to qualify for natural ventilation only?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7.5 sq m minimum"
+        },
+        {
+          "id": "b",
+          "text": "15.0 sq m minimum"
+        },
+        {
+          "id": "c",
+          "text": "22.5 sq m minimum"
+        },
+        {
+          "id": "d",
+          "text": "30.0 sq m minimum"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "7.5 sq m represents only 5% of floor area, which is below the 10% minimum requirement.",
+        "c": "22.5 sq m represents 15% of floor area, exceeding the minimum but not required.",
+        "d": "30.0 sq m represents 20% of floor area, which exceeds regulatory minimums.",
+        "correct": "PD 1096 Rule VIII requires 10% of floor area; 150 sq m × 10% = 15.0 sq m minimum window opening area. This room qualifies for natural ventilation since it does not exceed 3 stories and windows face open air.",
+        "takeaway": "10% floor area rule for PD 1096: Calculate opening area as Floor Area × 0.10"
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VIII Section 807 (Windows)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-03-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6145a2ceffc28f5d0c81407ee0dfd4889deee16d71248a3bb0fb0496888d83ac"
+    }
+  ]
+}

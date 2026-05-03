@@ -1,0 +1,63 @@
+{
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "slug": "lea-strc-007-03-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.687Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:2ff43709781aae14c78fa25e48b315bf0d68875c346d7a2b84ac935224036342",
+  "normalized_content_hash": "sha256:92bd93088ee0568fad14a274ebd21dde0749d0262b6ebff53593874c717d513d",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[ \n \"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\", \n \"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\", \n \"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\", \n \"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\" \n]} />",
+      "raw_hash": "sha256:8694eaa1c9d3e965a104fb9decde2d0be9ed025275e1667e438a67702d69bbc5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[ \\n \\\"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\\\", \\n \\\"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\\\", \\n \\\"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\\\", \\n \\\"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\\\" \\n]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e0a7afa20ff387652f877e793d7677175944f80175710f3d84cd9850ed3cd361",
+      "props": {
+        "mistakes": "{[ \n \"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\", \n \"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\", \n \"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\", \n \"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\" \n]}"
+      },
+      "props_json": {
+        "mistakes": "{[ \n \"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\", \n \"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\", \n \"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\", \n \"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\" \n]}"
+      },
+      "props_text": "mistakes={[ \n \"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\", \n \"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\", \n \"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\", \n \"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\" \n]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 3293,
+      "end_offset": 3699,
+      "line_start": 65,
+      "line_end": 70,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Warn",
+      "raw": "<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>",
+      "raw_hash": "sha256:ba1ca1d96638cbbb2a106c0a137a0e03cdff45255a7e66fe9c8d1e126722098c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d0296104f12c4f343cd11410b78ed3e9527f44531aad348d21bbff4e6e3543cb",
+      "props": {},
+      "props_json": {},
+      "children_raw": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
+      "children_text": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
+      "start_offset": null,
+      "end_offset": null,
+      "line_start": null,
+      "line_end": null,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved",
+      "props_text": null
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:e38246381c97f19a6eb39322085caa02dbf0b31e0ed9c9782f736a40e4c348a5"
+}

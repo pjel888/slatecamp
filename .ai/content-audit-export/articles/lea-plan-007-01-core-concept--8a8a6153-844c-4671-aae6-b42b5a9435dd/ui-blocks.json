@@ -1,0 +1,91 @@
+{
+  "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
+  "slug": "lea-plan-007-01-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.763Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:9beb5b6837b69064116b5cc7ca597a0a3b3deec9425cb6ac2928606f990d4904",
+  "normalized_content_hash": "sha256:9beb5b6837b69064116b5cc7ca597a0a3b3deec9425cb6ac2928606f990d4904",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Agency\", \"Primary Function\", \"Key Programs\", \"Financing Role\"]} rows={[[\"**NHA**\", \"Government housing PRODUCER\", \"Resettlement projects, core housing, medium-rise (4\u20135 stories), slum upgrading\", \"Direct government funding and loan origination for community associations; does NOT issue loans to individuals\"], [\"**SHFC**\", \"Community housing FINANCER\", \"Community Mortgage Program (CMP), community-based upgrading\", \"Finances land purchases through collective mortgages\"], [\"**Pag-IBIG/HDMF**\", \"Individual housing FINANCER\", \"End-buyer loans (socialized to open-market), employer contributions\", \"Loan-based financing for individual employees\"], [\"**SSS**\", \"Private sector insurance + housing\", \"Housing loans for SSS members\", \"Ancillary housing program\"], [\"**GSIS**\", \"Government employee insurance + housing\", \"Housing loans for government employees\", \"Ancillary housing program\"]]} />",
+      "raw_hash": "sha256:3a7092bbd4e0dba86de05705fb70246ff0967244ddf541330299037d3960b329",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Agency\\\", \\\"Primary Function\\\", \\\"Key Programs\\\", \\\"Financing Role\\\"]}\", rows=\"{[[\\\"**NHA**\\\", \\\"Government housing PRODUCER\\\", \\\"Resettlement projects, core housing, medium-rise (4\u20135 stories), slum upgrading\\\", \\\"Direct government funding and loan origination for community associations; does NOT issue loans to individuals\\\"], [\\\"**SHFC**\\\", \\\"Community housing FINANCER\\\", \\\"Community Mortgage Program (CMP), community-based upgrading\\\", \\\"Finances land purchases through collective mortgages\\\"], [\\\"**Pag-IBIG/HDMF**\\\", \\\"Individual housing FINANCER\\\", \\\"End-buyer loans (socialized to open-market), employer contributions\\\", \\\"Loan-based financing for individual employees\\\"], [\\\"**SSS**\\\", \\\"Private sector insurance + housing\\\", \\\"Housing loans for SSS members\\\", \\\"Ancillary housing program\\\"], [\\\"**GSIS**\\\", \\\"Government employee insurance + housing\\\", \\\"Housing loans for government employees\\\", \\\"Ancillary housing program\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:559bba84e49f4a69555f073d05c1429fa0ad853a9b60ad77e9ea7deaa43857c6",
+      "props": {
+        "headers": "{[\"Agency\", \"Primary Function\", \"Key Programs\", \"Financing Role\"]}",
+        "rows": "{[[\"**NHA**\", \"Government housing PRODUCER\", \"Resettlement projects, core housing, medium-rise (4\u20135 stories), slum upgrading\", \"Direct government funding and loan origination for community associations; does NOT issue loans to individuals\"], [\"**SHFC**\", \"Community housing FINANCER\", \"Community Mortgage Program (CMP), community-based upgrading\", \"Finances land purchases through collective mortgages\"], [\"**Pag-IBIG/HDMF**\", \"Individual housing FINANCER\", \"End-buyer loans (socialized to open-market), employer contributions\", \"Loan-based financing for individual employees\"], [\"**SSS**\", \"Private sector insurance + housing\", \"Housing loans for SSS members\", \"Ancillary housing program\"], [\"**GSIS**\", \"Government employee insurance + housing\", \"Housing loans for government employees\", \"Ancillary housing program\"]]}"
+      },
+      "props_json": {
+        "headers": "{[\"Agency\", \"Primary Function\", \"Key Programs\", \"Financing Role\"]}",
+        "rows": "{[[\"**NHA**\", \"Government housing PRODUCER\", \"Resettlement projects, core housing, medium-rise (4\u20135 stories), slum upgrading\", \"Direct government funding and loan origination for community associations; does NOT issue loans to individuals\"], [\"**SHFC**\", \"Community housing FINANCER\", \"Community Mortgage Program (CMP), community-based upgrading\", \"Finances land purchases through collective mortgages\"], [\"**Pag-IBIG/HDMF**\", \"Individual housing FINANCER\", \"End-buyer loans (socialized to open-market), employer contributions\", \"Loan-based financing for individual employees\"], [\"**SSS**\", \"Private sector insurance + housing\", \"Housing loans for SSS members\", \"Ancillary housing program\"], [\"**GSIS**\", \"Government employee insurance + housing\", \"Housing loans for government employees\", \"Ancillary housing program\"]]}"
+      },
+      "props_text": "headers={[\"Agency\", \"Primary Function\", \"Key Programs\", \"Financing Role\"]} rows={[[\"**NHA**\", \"Government housing PRODUCER\", \"Resettlement projects, core housing, medium-rise (4\u20135 stories), slum upgrading\", \"Direct government funding and loan origination for community associations; does NOT issue loans to individuals\"], [\"**SHFC**\", \"Community housing FINANCER\", \"Community Mortgage Program (CMP), community-based upgrading\", \"Finances land purchases through collective mortgages\"], [\"**Pag-IBIG/HDMF**\", \"Individual housing FINANCER\", \"End-buyer loans (socialized to open-market), employer contributions\", \"Loan-based financing for individual employees\"], [\"**SSS**\", \"Private sector insurance + housing\", \"Housing loans for SSS members\", \"Ancillary housing program\"], [\"**GSIS**\", \"Government employee insurance + housing\", \"Housing loans for government employees\", \"Ancillary housing program\"]]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 1584,
+      "end_offset": 2502,
+      "line_start": 17,
+      "line_end": 17,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>**Memory aid:** NHA = **N**ational Housing **A**uthority = **A**uthority = **Authority TO BUILD**. SHFC = **S**ocial Housing **F**inance = **F**inance = provides the mortgage money.</Tip>",
+      "raw_hash": "sha256:50dc0b5c36f801203353d2e2378a40112ea8774221268df36265607456b28930",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory aid:** NHA = **N**ational Housing **A**uthority = **A**uthority = **Authority TO BUILD**. SHFC = **S**ocial Housing **F**inance = **F**inance = provides the mortgage money.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e9746aefa7f5c573dc275cf547cde8fd0c75538f8aaa66fb5c7b7d343ac3f871",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Memory aid:** NHA = **N**ational Housing **A**uthority = **A**uthority = **Authority TO BUILD**. SHFC = **S**ocial Housing **F**inance = **F**inance = provides the mortgage money.",
+      "children_text": "**Memory aid:** NHA = **N**ational Housing **A**uthority = **A**uthority = **Authority TO BUILD**. SHFC = **S**ocial Housing **F**inance = **F**inance = provides the mortgage money.",
+      "start_offset": 3327,
+      "end_offset": 3519,
+      "line_start": 29,
+      "line_end": 29,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing NHA (producer) with Pag-IBIG (financer)\u2014NHA builds units; Pag-IBIG finances loans\", \"Stating NHA finances housing loans\u2014NHA builds; it does not loan money to buyers\", \"Calling SHFC a regulatory agency\u2014SHFC is purely financial (CMP program)\", \"Forgetting that SHFC's CMP is for communities, not individuals\", \"Attributing NHA resettlement implementation directly to DHSUD\u2014DHSUD provides policy coordination; NHA produces and implements\"]} />",
+      "raw_hash": "sha256:7ed6a8775702eff912bdd072da7e93ab5fd746525b1c8ba66d98f7cdfd2c9d9a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing NHA (producer) with Pag-IBIG (financer)\u2014NHA builds units; Pag-IBIG finances loans\\\", \\\"Stating NHA finances housing loans\u2014NHA builds; it does not loan money to buyers\\\", \\\"Calling SHFC a regulatory agency\u2014SHFC is purely financial (CMP program)\\\", \\\"Forgetting that SHFC's CMP is for communities, not individuals\\\", \\\"Attributing NHA resettlement implementation directly to DHSUD\u2014DHSUD provides policy coordination; NHA produces and implements\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:b74599c35368fc4ed6175a47899ab873175e3a6f6696417f3e3a04b20246ceb5",
+      "props": {
+        "mistakes": "{[\"Confusing NHA (producer) with Pag-IBIG (financer)\u2014NHA builds units; Pag-IBIG finances loans\", \"Stating NHA finances housing loans\u2014NHA builds; it does not loan money to buyers\", \"Calling SHFC a regulatory agency\u2014SHFC is purely financial (CMP program)\", \"Forgetting that SHFC's CMP is for communities, not individuals\", \"Attributing NHA resettlement implementation directly to DHSUD\u2014DHSUD provides policy coordination; NHA produces and implements\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Confusing NHA (producer) with Pag-IBIG (financer)\u2014NHA builds units; Pag-IBIG finances loans\", \"Stating NHA finances housing loans\u2014NHA builds; it does not loan money to buyers\", \"Calling SHFC a regulatory agency\u2014SHFC is purely financial (CMP program)\", \"Forgetting that SHFC's CMP is for communities, not individuals\", \"Attributing NHA resettlement implementation directly to DHSUD\u2014DHSUD provides policy coordination; NHA produces and implements\"]}"
+      },
+      "props_text": "mistakes={[\"Confusing NHA (producer) with Pag-IBIG (financer)\u2014NHA builds units; Pag-IBIG finances loans\", \"Stating NHA finances housing loans\u2014NHA builds; it does not loan money to buyers\", \"Calling SHFC a regulatory agency\u2014SHFC is purely financial (CMP program)\", \"Forgetting that SHFC's CMP is for communities, not individuals\", \"Attributing NHA resettlement implementation directly to DHSUD\u2014DHSUD provides policy coordination; NHA produces and implements\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 3541,
+      "end_offset": 4020,
+      "line_start": 33,
+      "line_end": 33,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:8ca189f876281bc452915bf1e7b557e4972b70fdbf3c6afd7ff89106f05e6e91"
+}

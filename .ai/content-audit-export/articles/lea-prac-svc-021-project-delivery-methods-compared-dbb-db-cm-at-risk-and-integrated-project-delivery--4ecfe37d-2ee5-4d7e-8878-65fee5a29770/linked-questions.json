@@ -1,0 +1,508 @@
+{
+  "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:ab2503972a99073dd3cc828c80498dc1e39e715192caf3661d960d4c63bf9477",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "9cf2fb2f-0766-4ccd-b5b6-bc642ff3f3a9",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "What is the primary advantage of Design-Bid-Build for clients?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It compresses the project schedule compared to other methods, allowing for faster project delivery"
+        },
+        {
+          "id": "b",
+          "text": "The client receives a completed design before committing construction funds and gets competitive construction pricing"
+        },
+        {
+          "id": "c",
+          "text": "All cost and schedule risks are eliminated, ensuring a completely risk-free project environment"
+        },
+        {
+          "id": "d",
+          "text": "Construction input during design is maximized, leading to more innovative and practical solutions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "DBB extends schedule due to sequential phases.",
+        "c": "Risks exist in all delivery methods.",
+        "d": "DBB limits construction input during design.",
+        "correct": "Design-Bid-Build's advantages include design clarity (completed design before commitment) and competitive construction pricing from competitive bidding. SPP 206.",
+        "takeaway": "DBB offers design clarity and competitive pricing."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4781fcf3cd3d6eccf93949db06d4b724574916006e425934ce0ba7fbcb4477fd"
+    },
+    {
+      "question_id": "00c10664-ce33-4ce5-b901-3f043f3df729",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "How does Design-Build compress the project schedule compared to Design-Bid-Build?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It uses faster construction methods and pre-fabricated components to reduce on-site assembly time"
+        },
+        {
+          "id": "b",
+          "text": "It eliminates the need for design quality review by consolidating responsibility under a single contract entity"
+        },
+        {
+          "id": "c",
+          "text": "It allows overlapping design and construction phases instead of sequential execution"
+        },
+        {
+          "id": "d",
+          "text": "It reduces the number of consultants required by transferring coordination duties to the general contractor"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schedule compression results from phase overlap, not faster methods.",
+        "b": "Quality review remains essential.",
+        "d": "Consultant requirements don't determine phase overlap.",
+        "correct": "Design-Build compresses schedule through overlapping phases, enabling concurrent planning and reducing overall schedule time compared to sequential Design-Bid-Build. SPP 206.",
+        "takeaway": "Overlapping phases compress schedule."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1b9fa4ee81bf4e1b6955ae831d9ee41aa5178b5efd0b14e29c79b35becc2ea6f"
+    },
+    {
+      "question_id": "37af1c85-9f44-46f0-a0dc-bbfe0395d1dc",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "What distinguishes CM-at-Risk from both Design-Bid-Build and Design-Build?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The CM has no involvement in design and construction is fully sequential, which limits early cost control and design input"
+        },
+        {
+          "id": "b",
+          "text": "The CM participates in design as a consultant but transitions to contractor role after design, guaranteeing maximum price"
+        },
+        {
+          "id": "c",
+          "text": "The CM replaces the architect's design authority, taking full control over the design process and decisions"
+        },
+        {
+          "id": "d",
+          "text": "The CM is responsible for both design and construction under single contract, streamlining project delivery"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CM participates early in CM-at-Risk.",
+        "c": "The architect maintains design authority.",
+        "d": "Design and construction remain separate; CM doesn't design.",
+        "correct": "CM-at-Risk is a hybrid approach where the CM participates in design as consultant providing construction expertise, then guarantees maximum price and manages construction, maintaining architect's design authority. SPP 206.",
+        "takeaway": "CM-at-Risk hybridizes construction input with design control."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:966997a4203aca936c7605f06844f36d9deeb1762000097b6a745cfc583d0cb5"
+    },
+    {
+      "question_id": "fe4e5e58-39fa-45e8-8ada-c8121a1fd9eb",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "For a healthcare facility where budget certainty is critical but design control must remain with the architect, which delivery method is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design-Bid-Build, which offers lowest cost but may compromise design control"
+        },
+        {
+          "id": "b",
+          "text": "Design-Build, which eliminates design authority, transferring control to the contractor"
+        },
+        {
+          "id": "c",
+          "text": "CM-at-Risk, which allows CM construction expertise input while maintaining architect's design authority and providing cost certainty"
+        },
+        {
+          "id": "d",
+          "text": "IPD, which requires equal shared decision-making, potentially diluting the architect's control"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "DBB doesn't guarantee cost certainty.",
+        "b": "Design-Build transfers design-construction responsibility together.",
+        "d": "IPD requires equal shared decision-making, not architect design authority.",
+        "correct": "CM-at-Risk balances design control with construction expertise and cost certainty through guaranteed maximum price while the architect maintains design authority. SPP 206.",
+        "takeaway": "CM-at-Risk balances expertise input with design control."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:610074c0a2a3c6904f1a4f0a3244503edbd9b1e067d1725a8a2d2d7a135e4644"
+    },
+    {
+      "question_id": "8524acf9-beff-4e9e-abab-a34e80229197",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "What preconditions must exist for Integrated Project Delivery to succeed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimal communication and traditional separate contracts, which contradicts the collaborative nature of IPD."
+        },
+        {
+          "id": "b",
+          "text": "High trust, transparent sharing of information, and sophisticated project management"
+        },
+        {
+          "id": "c",
+          "text": "Complete elimination of cost considerations, which is unrealistic in any project delivery method."
+        },
+        {
+          "id": "d",
+          "text": "One party maintaining unilateral decision authority, which undermines the collaborative approach of IPD."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "IPD requires extensive communication and multi-party agreements.",
+        "c": "Cost management remains important in IPD.",
+        "d": "IPD requires collaborative decision-making.",
+        "correct": "IPD requires high trust, transparent communication, and sophisticated project management. IPD works best with experienced teams committed to collaborative delivery. SPP 206.",
+        "takeaway": "IPD needs trust, transparency, and sophistication."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f0da60ac3cd29468d2f77e8b5d19b8ce17a8c23628ca1804c3b05071d5982ea"
+    },
+    {
+      "question_id": "105f0979-2ad7-4521-b263-c0ffe6853724",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "Which delivery method is most suitable for a complex, innovative institutional project where stakeholder alignment and collaborative problem-solving are critical success factors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design-Bid-Build, for sequential clarity and well-defined phases"
+        },
+        {
+          "id": "b",
+          "text": "Design-Build, for single entity control and streamlined communication"
+        },
+        {
+          "id": "c",
+          "text": "CM-at-Risk, for hybrid approach balancing risk and collaboration"
+        },
+        {
+          "id": "d",
+          "text": "Integrated Project Delivery, emphasizing stakeholder collaboration and innovation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "DBB doesn't emphasize stakeholder collaboration.",
+        "b": "Design-Build concentrates responsibility; doesn't emphasize collaboration.",
+        "c": "CM-at-Risk doesn't achieve the stakeholder alignment IPD provides.",
+        "correct": "IPD suits complex projects where stakeholder alignment and collaborative problem-solving are valuable. The method requires high trust but can deliver superior outcomes with experienced teams committed to collaboration. SPP 206.",
+        "takeaway": "IPD is chosen for collaborative complexity."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:904d3a90517f00d7c668e0652d0cf2878675366f3473c4872266f0d9b893a197"
+    },
+    {
+      "question_id": "26a095f6-3e39-4a70-a66d-b2e7b98bd297",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "What is the defining characteristic of Design-Bid-Build as a project delivery method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design and construction occur simultaneously under single entity responsibility, which is not typical of Design-Bid-Build"
+        },
+        {
+          "id": "b",
+          "text": "Design and construction are sequential phases with clear separation of responsibilities"
+        },
+        {
+          "id": "c",
+          "text": "A construction manager participates in design and guarantees maximum price, which is more characteristic of CM at Risk"
+        },
+        {
+          "id": "d",
+          "text": "All parties share risk, reward, and decision-making equally, which is not a feature of Design-Bid-Build"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sequential separation is DBB's defining characteristic.",
+        "c": "That describes CM-at-Risk, not DBB.",
+        "d": "That describes IPD, not DBB.",
+        "correct": "Design-Bid-Build separates design and construction into sequential phases. The architect completes design, then contractors bid for construction work, maintaining clear separation of responsibilities. SPP 206.",
+        "takeaway": "DBB separates design from construction sequentially."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:22320f69e3423fb4a74ff5890f5b269e0b164303cb55ebf68f7c36b215c17844"
+    },
+    {
+      "question_id": "cd99d7cd-f94f-44bc-bcdc-babf723cbfb2",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "What tradeoffs must project teams consider when selecting between Design-Bid-Build and Design-Build delivery methods?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No tradeoffs exist; one method is superior in all circumstances, making the choice straightforward"
+        },
+        {
+          "id": "b",
+          "text": "DBB offers design clarity and competitive pricing but extends schedule and limits construction expertise input; Design-Build compresses schedule and integrates expertise but concentrates risk and may limit competitive pricing"
+        },
+        {
+          "id": "c",
+          "text": "Design-Build is always faster and cheaper, providing a clear advantage over other methods"
+        },
+        {
+          "id": "d",
+          "text": "Design-Bid-Build eliminates all risk, ensuring a smooth project execution without unforeseen issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Tradeoffs are fundamental to delivery method selection.",
+        "c": "Design-Build's speed comes with risk concentration.",
+        "d": "DBB doesn't eliminate risk; it allocates it differently.",
+        "correct": "Design-Bid-Build offers design clarity and competitive pricing but extends schedule and limits construction expertise input during design. Design-Build compresses schedule and integrates expertise but concentrates risk with design-build entity. SPP 206.",
+        "takeaway": "Each method involves inherent tradeoffs."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ef855f40c22b1d0709b0665e6b8d94f0ddcaa1e6f5463516f01987bb53634934"
+    },
+    {
+      "question_id": "a330e636-fc7a-4969-98c4-42092dea2efe",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "What is the fundamental philosophy underlying Integrated Project Delivery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect maintains sole authority over all decisions, ensuring that design integrity is preserved throughout the project"
+        },
+        {
+          "id": "b",
+          "text": "Architect, constructor, and owner establish shared goals, shared risk, and shared reward arrangements"
+        },
+        {
+          "id": "c",
+          "text": "The lowest bidder is selected to manage all decisions, prioritizing cost efficiency over collaborative input"
+        },
+        {
+          "id": "d",
+          "text": "Parties maintain completely separate responsibilities with minimal collaboration, reducing potential conflicts but limiting synergy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "IPD emphasizes shared decision-making, not single authority.",
+        "c": "IPD doesn't select based on bid; it uses collaborative selection.",
+        "d": "IPD emphasizes collaboration over separation.",
+        "correct": "IPD represents the most collaborative approach where architect, constructor, and owner establish shared goals, shared risk, and shared reward arrangements through multi-party agreements. SPP 206.",
+        "takeaway": "IPD aligns all parties toward shared success."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d53dfab0fa77717582947e3818e189793e3576581bf99047834a546f6ba1aad"
+    },
+    {
+      "question_id": "e77f66bd-6ea5-4033-9887-793d40ce87f0",
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "topic_id": "6611e9c3-4ae1-49b0-a329-78bd4eb7fba2",
+      "text": "How does the architect's role differ across the four primary delivery methods?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect's role is identical in all methods, providing consistent design oversight"
+        },
+        {
+          "id": "b",
+          "text": "DBB: architect maintains design authority; Design-Build: architect shares responsibility; CM-at-Risk: architect collaborates with CM; IPD: architect is equal stakeholder in collaborative decision-making"
+        },
+        {
+          "id": "c",
+          "text": "The architect has no role in CM-at-Risk or IPD, as these methods rely solely on construction managers"
+        },
+        {
+          "id": "d",
+          "text": "The architect determines which delivery method to use without client input, ensuring optimal project outcomes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The architect's role is fundamentally different in each method.",
+        "c": "The architect plays essential roles in all methods.",
+        "d": "Delivery method selection is collaborative with the client.",
+        "correct": "The architect's role varies significantly: DBB maintains design authority and contract administration; Design-Build shares responsibility with contractor; CM-at-Risk collaborates with CM while retaining design authority; IPD shares equal stakeholder status. SPP 206.",
+        "takeaway": "Architect roles vary by delivery method."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-021-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:69280e2187fa315eb909b4bf5706b5a0f912e14c96f12e6b8a13b66c24713bfa"
+    }
+  ]
+}

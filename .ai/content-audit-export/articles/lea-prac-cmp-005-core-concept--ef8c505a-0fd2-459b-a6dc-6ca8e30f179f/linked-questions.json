@@ -1,0 +1,508 @@
+{
+  "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:79d8b841334a2433516168af122d78c8b49dac05089ebe1f79e53c1fe2275699",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "94682cb2-9924-4fed-9179-aab193d2e9a3",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "A client challenges an architect's proposed fee of 7.5% on a ₱75M project classified as Group 3 (Exceptional Character). Group 3 applies sliding sclea: 7% (₱0–50M), 6% (₱50–100M). Is 7.5% justified?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; 7.5% is within Group 3 and justified by premium design considerations."
+        },
+        {
+          "id": "b",
+          "text": "No; Group 3 sliding scale yields blended rate of 6.67%, not 7.5%."
+        },
+        {
+          "id": "c",
+          "text": "Yes; Group 3 allows up to 8% on projects exceeding ₱50M."
+        },
+        {
+          "id": "d",
+          "text": "No; only Group 8 (15%) and above allow fees above 7%."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly assumes project complexity alone justifies exceeding Architect's Guidelines sliding scales.",
+        "c": "Misrepresents Group 3 scale; second bracket is 6%, not 8%.",
+        "d": "Overstates fee restrictions; Group 4 (10%), Group 5 (12%), Group 8 (15%) exceed 7%.",
+        "correct": "Group 3 sliding scale on ₱75M: (₱50M × 7%) + (₱25M × 6%) = ₱3.5M + ₱1.5M = ₱5M = 6.67% blended rate. Proposing 7.5% (₱5.625M) exceeds the Architect's Guidelines prescribed scale without justification.",
+        "takeaway": "Group 3 at ₱75M: Bracket-based (7%+6%) yields 6.67% blended rate, not 7.5%."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines Group 3, Sliding Sclea Application",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c5463d8eeec545f2cf3e2922e37c2ff49c5b8a57f3b31382d2d38f1f0065a638"
+    },
+    {
+      "question_id": "161e4f34-2ecd-43c7-a658-74ab9114baee",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "When presenting a fee proposal to a client for a Group 4 residential project, which elements should the architect explicitly document to ensure transparency and prevent fee disputes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the final total fee amount and the negotiated percentage, omitting detailed breakdowns that could clarify the fee structure."
+        },
+        {
+          "id": "b",
+          "text": "Project classification and rationale; PCC amount and estimating basis; group fee percentage and Architect's Guidelines context; total calculation; phase payment schedule; scope assumptions (inclusions/exclusions)."
+        },
+        {
+          "id": "c",
+          "text": "The total fee broken down by design hours and hourly labor costs, which provides a detailed view of labor allocation but may not cover all project costs."
+        },
+        {
+          "id": "d",
+          "text": "Only the total fee and the project name, which lacks sufficient detail to prevent misunderstandings about the fee basis."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Insufficient; final amount without context prevents client understanding of the calculation methodology.",
+        "c": "Mixing hourly costing with percentage-of-PCC method; Architect's Guidelines uses percentage method, not labor hours.",
+        "d": "Minimal; omits essential justification and phase breakdown.",
+        "correct": "Transparent fee proposals document: (1) classification and rationale for Group 4, (2) PCC amount and how it was estimated, (3) group fee percentage within Architect's Guidelines context, (4) total fee calculation with clear arithmetic, (5) phase-by-phase payment schedule (SD 15%, DD 20%, CD 50%, Bidding 5%, CA 10%), (6) assumptions regarding scope—what is included and excluded. This prevents misunderstanding.",
+        "takeaway": "Fee proposal transparency: classification (why Group 4?), PCC (basis), fee % (Architect's Guidelines context), total calculation, payment schedule, scope assumptions."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines Fee Proposal Documentation; SPP 202 Phase Percentages",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a21a8fd632104d22e81976b0d2ca943644b4c6c97930c8e64cb159014d4a349"
+    },
+    {
+      "question_id": "1fe82534-320b-4634-8380-de5996d8aa8b",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "A Group 2 office project has PCC ₱120M. Group 2 sliding sclea: 6% (first ₱50M), 5% (next ₱50M), 4% (remainder). What is the total DAEDS fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱5,900,000"
+        },
+        {
+          "id": "b",
+          "text": "₱6,300,000"
+        },
+        {
+          "id": "c",
+          "text": "₱7,200,000"
+        },
+        {
+          "id": "d",
+          "text": "₱7,800,000"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "₱5,900,000 underestimates by omitting or miscalculating one bracket.",
+        "c": "₱7,200,000 = ₱120M × 6%, applying only the first bracket rate to entire cost.",
+        "d": "₱7,800,000 = ₱120M × 6.5%, averaging incorrectly instead of bracket-by-bracket calculation.",
+        "correct": "Bracket calculation: (₱50M × 6%) + (₱50M × 5%) + (₱20M × 4%) = ₱3M + ₱2.5M + ₱0.8M = ₱6.3M total DAEDS.",
+        "takeaway": "Group 2 sliding scale at ₱120M: 50×6% + 50×5% + 20×4% = 3 + 2.5 + 0.8 = 6.3M pesos."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines Group 2, Sliding Sclea Bracket Calculation",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b3fd98af2e2720d22f47bd587524c5fe63073b06b1da6284bab41c0aab4bc529"
+    },
+    {
+      "question_id": "69443e83-b35b-43c4-a793-510cf3eb300b",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "During Design Development, a project classified as Group 2 (₱100M at 6% base) undergoes major scope expansion and reclassifies to Group 4 (10% rate). If the architect has invoiced 35% of the original Group 2 fee, what is the total additional compensation owed from the reclassification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱400,000"
+        },
+        {
+          "id": "b",
+          "text": "₱1,900,000"
+        },
+        {
+          "id": "c",
+          "text": "₱4,000,000"
+        },
+        {
+          "id": "d",
+          "text": "No additional compensation; the original contract governs."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "₱400,000 = only 1% of ₱100M; underestimates the 4% increase.",
+        "b": "₱1,900,000 does not correspond to standard reclassification calculation.",
+        "d": "Ignores that significant scope expansion during Design Development justifies reclassification per Architect's Guidelines.",
+        "correct": "Original Group 2 fee: ₱100M × 6% = ₱6M. Reclassified Group 4 fee: ₱100M × 10% = ₱10M. Additional compensation = (new total ₱10M × 35% already invoiced adjustment) + (₱10M × 65% remaining) - (original ₱6M × 35% invoiced); requires contract-specific proration per SPP.",
+        "takeaway": "Reclassification from Group 2 to Group 4: 10% − 6% = 4% increase on ₱100M = ₱4M additional compensation."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Reclassification During Design Development",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:157b49d06cf77dc14ab6f6f10ada21b2fbce076b3cfcd398b3d09972aac8def8"
+    },
+    {
+      "question_id": "890102e0-0e4d-4bc7-aff7-f3ba890d6d2b",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "A Group 5 monumental building has PCC ₱300M with flat 12% DAEDS fee. What is the total fee received through Design Development (Schematic Design + Design Development phases combined)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱12,600,000"
+        },
+        {
+          "id": "b",
+          "text": "₱14,400,000"
+        },
+        {
+          "id": "c",
+          "text": "₱21,600,000"
+        },
+        {
+          "id": "d",
+          "text": "₱36,000,000"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "₱14,400,000 = 40% of total fee; applies incorrect cumulative percentage.",
+        "c": "₱21,600,000 = 60% of total fee; would include Contract Documents (50%) plus additional.",
+        "d": "₱36,000,000 = 100% of total fee; this is entire fee, not through DD.",
+        "correct": "Total fee = ₱300M × 12% = ₱36M. Through Design Development (SD 15% + DD 20% = 35% cumulative) = ₱36M × 0.35 = ₱12.6M.",
+        "takeaway": "Group 5 monumental: Total = 300M × 12% = 36M; through DD (15+20=35%) = 12.6M pesos."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines Group 5; SPP 202 Phase Percentages",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b9b8426cceb598fb75b3c9587e50ae9804265c654b3c97126fdb8f0803663dba"
+    },
+    {
+      "question_id": "c0495bb4-7f26-4bb8-9539-a6cc4d602a5d",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "A Group 3 museum renovation classified as Group 9 applies a 150% multiplier to the base group fee. If the Group 3 base is 7% DAEDS on ₱40M PCC, what is the total Group 9 renovation fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱2,400,000"
+        },
+        {
+          "id": "b",
+          "text": "₱4,200,000"
+        },
+        {
+          "id": "c",
+          "text": "₱5,600,000"
+        },
+        {
+          "id": "d",
+          "text": "₱6,800,000"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "₱2,400,000 = ₱40M × 6%, which is the Group 2 rate; does not apply.",
+        "c": "₱5,600,000 represents 14% of PCC; exceeds Group 9 multiplier (150% of 7% = 10.5% equivalent).",
+        "d": "₱6,800,000 = ₱40M × 17%; overstates the Group 9 enhancement.",
+        "correct": "Base Group 3 fee = ₱40M × 7% = ₱2.8M. Group 9 renovation multiplier (150% of base) = ₱2.8M × 1.5 = ₱4.2M total renovation fee.",
+        "takeaway": "Group 9 renovation: Base fee × 1.5 = enhanced fee. Group 3 base = 40M × 7% = 2.8M; 2.8M × 1.5 = 4.2M pesos."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines Group 9, Renovation Multiplier",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f05fb26dc6001d4838dc78d37c181646e95fe80fa025f15b04eefe3498e3a3d1"
+    },
+    {
+      "question_id": "22cb5bdb-5b29-4337-9c0d-caf5878b8e4f",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "A Group 4 residential project (Low-Rise) with PCC ₱8M has a flat 10% DAEDS fee. What is the Schematic Design phase payment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱80,000"
+        },
+        {
+          "id": "b",
+          "text": "₱120,000"
+        },
+        {
+          "id": "c",
+          "text": "₱160,000"
+        },
+        {
+          "id": "d",
+          "text": "₱400,000"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "₱80,000 = 10% of total fee; does not correspond to any SPP 202 phase percentage.",
+        "c": "₱160,000 = 20% of total fee, which is Design Development, not Schematic Design.",
+        "d": "₱400,000 = 50% of total fee, which is Contract Documents, not Schematic Design.",
+        "correct": "Total fee = ₱8M × 10% = ₱800,000. Schematic Design (15% per SPP 202) = ₱800,000 × 0.15 = ₱120,000.",
+        "takeaway": "Group 4 residential: Total = 8M × 10% = 800K; Schematic Design (15%) = 120K pesos."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines Group 4; SPP 202 Phase Percentages",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6e0caa5010e360e4aaec209a47276b22d6f8d90a1c2fae41c26b09cda07fb58b"
+    },
+    {
+      "question_id": "aac489aa-4559-47ca-a123-683d99e211a4",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "A Group 1 warehouse project has an estimated PCC of ₱30 million. At the 5% DAEDS rate for projects ≤₱50M, what is the total architect fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱1,200,000"
+        },
+        {
+          "id": "b",
+          "text": "₱1,500,000"
+        },
+        {
+          "id": "c",
+          "text": "₱1,800,000"
+        },
+        {
+          "id": "d",
+          "text": "₱2,100,000"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "₱1,200,000 = ₱30M × 4%, which is the second bracket rate, not applicable at ₱30M.",
+        "c": "₱1,800,000 = ₱30M × 6%, which is Group 2 rate, not Group 1.",
+        "d": "₱2,100,000 = ₱30M × 7%, which is Group 3 rate, not Group 1.",
+        "correct": "Group 1 (Simplest Utilization) DAEDS: ₱30M × 5% = ₱1,500,000 total fee.",
+        "takeaway": "Group 1 warehouse at ₱30M: 30 × 0.05 = 1.5 million pesos DAEDS."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP 1979 / Architect's Maximum Basic Fees, Project Classification Groups, DAEDS Rates",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a10ed366cd60e87fe2ac7426ffeeff67607436c0bf411b63e990a86769b37365"
+    },
+    {
+      "question_id": "5e88e784-aace-4e80-b589-f7cf44fb2fa6",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "A Group 8 interior design and site planning project has PCC ₱60M with 15% DAEDS rate. What is the Contract Documents phase payment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱900,000"
+        },
+        {
+          "id": "b",
+          "text": "₱1,350,000"
+        },
+        {
+          "id": "c",
+          "text": "₱4,500,000"
+        },
+        {
+          "id": "d",
+          "text": "₱9,000,000"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "₱900,000 = 10% of total fee (Construction Administration), not Contract Documents.",
+        "b": "₱1,350,000 = 15% of total fee; does not match any SPP 202 phase percentage.",
+        "d": "₱9,000,000 = 100% of total fee; this is the entire fee, not the Contract Documents phase.",
+        "correct": "Total fee = ₱60M × 15% = ₱9M. Contract Documents (50% per SPP 202) = ₱9M × 0.50 = ₱4.5M.",
+        "takeaway": "Group 8 interior + site planning: Total = 60M × 15% = 9M; Contract Documents (50%) = 4.5M pesos."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines Group 8; SPP 202 Phase Percentages",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b4b01400916b94db378371f8670013305962c4ff4f38ba0ea4d9deaa0e02bed9"
+    },
+    {
+      "question_id": "ad07d524-766d-49b9-b737-69035179bd37",
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "topic_id": "112ad3aa-0905-4239-9237-94f21d774718",
+      "text": "Compare DAEDS and DADS for a ₱50M Group 1 warehouse project. DADS is approximately 60% of DAEDS. What is the fee difference between the two methods?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱500,000, calculated based on the standard percentage fee structure for architectural services"
+        },
+        {
+          "id": "b",
+          "text": "₱750,000, reflecting the differential in service scope and complexity between DAEDS and DADS"
+        },
+        {
+          "id": "c",
+          "text": "₱1,000,000"
+        },
+        {
+          "id": "d",
+          "text": "₱1,250,000, accounting for additional project management and coordination efforts required under DAEDS"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "₱500,000 = 20% of DAEDS fee; underestimates the DADS−DAEDS gap.",
+        "b": "₱750,000 = 30% of DAEDS fee; does not reflect the 40% DAEDS−DADS gap.",
+        "d": "₱1,250,000 = 50% of total DAEDS; overstates the engineering cost proportion.",
+        "correct": "DAEDS (architect + engineers) = ₱50M × 5% = ₱2.5M. DADS (architecture only, 60% of DAEDS) = ₱2.5M × 0.60 = ₱1.5M. Difference = ₱2.5M − ₱1.5M = ₱1.0M (the engineering component).",
+        "takeaway": "DAEDS ₱2.5M − DADS ₱1.5M = ₱1.0M engineering component difference."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, DAEDS vs. DADS Method Distinction",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-005-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da6b0d20dbe2c4c4b677f49b749df28b63aecb088c6abb980404efab57cd41f0"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+  "slug": "electrical-and-mechanical-regulations",
+  "normalized_created_at": "2026-05-01T13:33:43.651Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:9197a7c0be0cb66d2077f6d33f9f79a8d7a695b3f36465f7e0005d291939b700",
+  "normalized_content_hash": "sha256:c0dbef186f764bcc42d03d8134ec6dfc2ff18a02259a008bcde8bffa8ae8f5fb",
+  "ui_block_count": 5,
+  "total_blocks": 5,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule X - Electrical and Mechanical Regulations\">\n\n\nPer PD 1096, Rule XIII, Section 1301, the minimum vertical clearance for a service drop (≤600V) above a flat roof surface is 2.50 m. The 1.00 m exception applies only to sloped roofs with a pitch of ≥ 100 mm/300 mm (1:3 slope). The 1.80 m value refers to the horizontal firefighting clearance zone for buildings > 15.00 m tall — a completely different provision. The 3.00 m clearance applies above ground level, not above a roof. For a flat roof with no qualifying exception, 2.50 m is the correct answer.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:5e2bb549085e7bbcc5df1aaff6aeb87315b1527368b0057e4e4d0afc5f5e7822",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\", title=\"a completely different provision. The 3.00 m clearance applies above\"\n- Text: Per PD 1096, Rule XIII, Section 1301, the minimum vertical clearance for a service drop (≤600V) above a flat roof surface is 2.50 m. The 1.00 m exception applies only to sloped roofs with a pitch of ≥ 100 mm/300 mm (1:3 slope). The 1.80 m value refers to the horizontal firefighting clearance zone for buildings > 15.00 m tall — a completely different provision. The 3.00 m clearance applies above ground level, not above a roof. For a flat roof with no qualifying exception, 2.50 m is the correct an\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:babead619a2b7a19225fed6251ba459c86e0fce31decba49002d1ba87eddbe5e",
+      "props": {
+        "code": "nbcp",
+        "title": "a completely different provision. The 3.00 m clearance applies above"
+      },
+      "props_json": {
+        "code": "pd1096",
+        "title": "a completely different provision. The 3.00 m clearance applies above",
+        "section": "Rule X - Electrical and Mechanical Regulations"
+      },
+      "props_text": "code=pd1096, title=a completely different provision. The 3.00 m clearance applies above, section=Rule X - Electrical and Mechanical Regulations",
+      "children_raw": "\n\nPer PD 1096, Rule XIII, Section 1301, the minimum vertical clearance for a service drop (≤600V) above a flat roof surface is 2.50 m. The 1.00 m exception applies only to sloped roofs with a pitch of ≥ 100 mm/300 mm (1:3 slope). The 1.80 m value refers to the horizontal firefighting clearance zone for buildings > 15.00 m tall — a completely different provision. The 3.00 m clearance applies above ground level, not above a roof. For a flat roof with no qualifying exception, 2.50 m is the correct answer.\n\n",
+      "children_text": "Per PD 1096, Rule XIII, Section 1301, the minimum vertical clearance for a service drop (≤600V) above a flat roof surface is 2.50 m. The 1.00 m exception applies only to sloped roofs with a pitch of ≥ 100 mm/300 mm (1:3 slope). The 1.80 m value refers to the horizontal firefighting clearance zone for buildings > 15.00 m tall — a completely different provision. The 3.00 m clearance applies above ground level, not above a roof. For a flat roof with no qualifying exception, 2.50 m is the correct an",
+      "start_offset": 24863,
+      "end_offset": 25486,
+      "line_start": 331,
+      "line_end": 335,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"nbcp\" title=\"6 elevators in 1 hoistway exceeds both the &quot;maximum 4 per hoistway&quot; limit and th\">\n\nPer PD 1096, Rule XIII, Section 1302: when a building has 4 or more elevators, a minimum of 2 separate hoistways are required, and a maximum of 4 elevators may be grouped per hoistway. Option A is wrong — 6 elevators in 1 hoistway exceeds both the \"maximum 4 per hoistway\" limit and the \"4+ requires 2 hoistways\" rule. Option B is wrong — 5 in one hoistway exceeds the maximum 4 per hoistway. Option C (4+2) is technically compliant with the per-hoistway maximum but remains a valid answer — however, Option D (3+3) is the most clearly compliant distribution with no hoistway at its maximum, and is the cleanest correct answer. Both C and D are compliant; the exam's correct answer depends on exact phrasing. If the question asks \"which is compliant,\" both C and D qualify, but D is the least ambiguous because neither hoistway approaches the limit of 4.\n\n</LawCallout>",
+      "raw_hash": "sha256:1c58f49ec1b06b268e3be23dfca0d7bd2ca972755fe9e2e82895aa4a866ad90a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\", title=\"6 elevators in 1 hoistway exceeds both the &quot;maximum 4 per hoistway&quot; limit and th\"\n- Text: Per PD 1096, Rule XIII, Section 1302: when a building has 4 or more elevators, a minimum of 2 separate hoistways are required, and a maximum of 4 elevators may be grouped per hoistway. Option A is wrong — 6 elevators in 1 hoistway exceeds both the \"maximum 4 per hoistway\" limit and the \"4+ requires 2 hoistways\" rule. Option B is wrong — 5 in one hoistway exceeds the maximum 4 per hoistway. Option C (4+2) is technically compliant with the per-hoistway maximum but remains a valid answer — however,\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:11724997e50e583a3991ad63b1a530e3ba54b13a9b77e9fe652a417adb527ec9",
+      "props": {
+        "code": "nbcp",
+        "title": "6 elevators in 1 hoistway exceeds both the &quot;maximum 4 per hoistway&quot; limit and th"
+      },
+      "props_json": {
+        "code": "nbcp",
+        "title": "6 elevators in 1 hoistway exceeds both the &quot;maximum 4 per hoistway&quot; limit and th"
+      },
+      "props_text": "code=\"nbcp\" title=\"6 elevators in 1 hoistway exceeds both the &quot;maximum 4 per hoistway&quot; limit and th\"",
+      "children_raw": "\n\nPer PD 1096, Rule XIII, Section 1302: when a building has 4 or more elevators, a minimum of 2 separate hoistways are required, and a maximum of 4 elevators may be grouped per hoistway. Option A is wrong — 6 elevators in 1 hoistway exceeds both the \"maximum 4 per hoistway\" limit and the \"4+ requires 2 hoistways\" rule. Option B is wrong — 5 in one hoistway exceeds the maximum 4 per hoistway. Option C (4+2) is technically compliant with the per-hoistway maximum but remains a valid answer — however, Option D (3+3) is the most clearly compliant distribution with no hoistway at its maximum, and is the cleanest correct answer. Both C and D are compliant; the exam's correct answer depends on exact phrasing. If the question asks \"which is compliant,\" both C and D qualify, but D is the least ambiguous because neither hoistway approaches the limit of 4.\n\n",
+      "children_text": "Per PD 1096, Rule XIII, Section 1302: when a building has 4 or more elevators, a minimum of 2 separate hoistways are required, and a maximum of 4 elevators may be grouped per hoistway. Option A is wrong — 6 elevators in 1 hoistway exceeds both the \"maximum 4 per hoistway\" limit and the \"4+ requires 2 hoistways\" rule. Option B is wrong — 5 in one hoistway exceeds the maximum 4 per hoistway. Option C (4+2) is technically compliant with the per-hoistway maximum but remains a valid answer — however,",
+      "start_offset": 25948,
+      "end_offset": 26942,
+      "line_start": 350,
+      "line_end": 354,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"nbcp\" title=\"1,200 mm ✓; 35 m/min ≤ 38 m/min ✓. Option A fails on inclination (35° > 30°) and\">\n\nPer PD 1096, Rule XIII, Section 1302: escalators must have (1) inclination ≤ 30°, (2) width 560 mm to 1.20 m, and (3) speed ≤ 38 m/min. Option C (28°, 1.10 m, 35 m/min) meets all three criteria: 28° ≤ 30° ✓; 1,100 mm is within 560–1,200 mm ✓; 35 m/min ≤ 38 m/min ✓. Option A fails on inclination (35° > 30°) and width (500 mm < 560 mm). Option B fails on speed (40 m/min > 38 m/min). Option D fails on width (1.50 m > 1.20 m). The exam will typically offer one option that fails on only one criterion and appears nearly correct — careful checking of all three values simultaneously is required.\n\n</LawCallout>",
+      "raw_hash": "sha256:6ff21871f51716765cedae734b6a26cd9b6a2396a4757d2772cc42dfcc140420",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\", title=true, mm=true, m=true, min=true, Option=true, A=true, fails=true, on=true, inclination=true\n- Text: 30°) and\"> Per PD 1096, Rule XIII, Section 1302: escalators must have (1) inclination ≤ 30°, (2) width 560 mm to 1.20 m, and (3) speed ≤ 38 m/min. Option C (28°, 1.10 m, 35 m/min) meets all three criteria: 28° ≤ 30° ✓; 1,100 mm is within 560–1,200 mm ✓; 35 m/min ≤ 38 m/min ✓. Option A fails on inclination (35° > 30°) and width (500 mm 38 m/min). Option D fails on width (1.50 m > 1.20 m). The exam will typically offer one option that fails on only one criterion and appears nearly correct — carefu\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a72121c035f95edbf3d977e543f7df326d7832adcbcef357ee0fae6416ece24f",
+      "props": {
+        "code": "nbcp",
+        "title": true,
+        "mm": true,
+        "m": true,
+        "min": true,
+        "Option": true,
+        "A": true,
+        "fails": true,
+        "on": true,
+        "inclination": true
+      },
+      "props_json": {
+        "code": "nbcp",
+        "title": true,
+        "mm": true,
+        "m": true,
+        "min": true,
+        "Option": true,
+        "A": true,
+        "fails": true,
+        "on": true,
+        "inclination": true
+      },
+      "props_text": "code=\"nbcp\" title=\"1,200 mm ✓; 35 m/min ≤ 38 m/min ✓. Option A fails on inclination (35°",
+      "children_raw": " 30°) and\">\n\nPer PD 1096, Rule XIII, Section 1302: escalators must have (1) inclination ≤ 30°, (2) width 560 mm to 1.20 m, and (3) speed ≤ 38 m/min. Option C (28°, 1.10 m, 35 m/min) meets all three criteria: 28° ≤ 30° ✓; 1,100 mm is within 560–1,200 mm ✓; 35 m/min ≤ 38 m/min ✓. Option A fails on inclination (35° > 30°) and width (500 mm < 560 mm). Option B fails on speed (40 m/min > 38 m/min). Option D fails on width (1.50 m > 1.20 m). The exam will typically offer one option that fails on only one criterion and appears nearly correct — careful checking of all three values simultaneously is required.\n\n",
+      "children_text": "30°) and\"> Per PD 1096, Rule XIII, Section 1302: escalators must have (1) inclination ≤ 30°, (2) width 560 mm to 1.20 m, and (3) speed ≤ 38 m/min. Option C (28°, 1.10 m, 35 m/min) meets all three criteria: 28° ≤ 30° ✓; 1,100 mm is within 560–1,200 mm ✓; 35 m/min ≤ 38 m/min ✓. Option A fails on inclination (35° > 30°) and width (500 mm 38 m/min). Option D fails on width (1.50 m > 1.20 m). The exam will typically offer one option that fails on only one criterion and appears nearly correct — carefu",
+      "start_offset": 27299,
+      "end_offset": 28023,
+      "line_start": 369,
+      "line_end": 373,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>Electrical and mechanical questions appear in Area B (Utilities). Expect 2-4 questions per cycle testing specific clearances, minimum dimensions, and equipment standards. Memorize the key values.</ExamTip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "Electrical and mechanical questions appear in Area B (Utilities). Expect 2-4 questions per cycle testing specific clearances, minimum dimensions, and equipment standards. Memorize the key values.",
+      "children_text": "Electrical and mechanical questions appear in Area B (Utilities). Expect 2-4 questions per cycle testing specific clearances, minimum dimensions, and equipment standards. Memorize the key values.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:d3cf395f60f7d59714b68b61c79f2ef14651107d73eb163024e8fad56c72011d"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"nbcp\" section=\"Rule XIII, PD 1096 IRR\">Rule XIII of the 2004 Revised IRR of PD 1096 governs electrical and mechanical regulations in buildings. All dimensional and regulatory claims below have been verified against this source.</LawCallout>",
+      "raw_hash": "sha256:9e6e5304d5c30295375b83fd3de796198e3be14a5683dcb0504c95cfd09490e1",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=nbcp, section=Rule XIII, PD 1096 IRR\n- Text: Rule XIII of the 2004 Revised IRR of PD 1096 governs electrical and mechanical regulations in buildings. All dimensional and regulatory claims below have been verified against this source.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:97c1a4d614a1e83590151c4a9e81c05ff1d2133d376385cc4ac65b33245a9d67",
+      "props": {
+        "code": "nbcp",
+        "section": "Rule XIII, PD 1096 IRR"
+      },
+      "props_json": {
+        "code": "nbcp",
+        "section": "Rule XIII, PD 1096 IRR"
+      },
+      "children_raw": "Rule XIII of the 2004 Revised IRR of PD 1096 governs electrical and mechanical regulations in buildings. All dimensional and regulatory claims below have been verified against this source.",
+      "children_text": "Rule XIII of the 2004 Revised IRR of PD 1096 governs electrical and mechanical regulations in buildings. All dimensional and regulatory claims below have been verified against this source.",
+      "start_offset": null,
+      "end_offset": null,
+      "line_start": null,
+      "line_end": null,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved",
+      "props_text": "code=nbcp, section=Rule XIII, PD 1096 IRR"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:d8807ded834690e071d08a6d6223a7bce6c605fb61056a221a05b8077a23e03c"
+}

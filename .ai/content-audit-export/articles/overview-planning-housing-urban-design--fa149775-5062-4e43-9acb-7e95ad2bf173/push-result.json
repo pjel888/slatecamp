@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:53:27.864Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "fa149775-5062-4e43-9acb-7e95ad2bf173",
+  "slug": "overview-planning-housing-urban-design",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:8f98c71688da509ddad78f19048277ba2e8e68773ebe8211a8365634d8b08b07",
+  "original_hash": "sha256:8f98c71688da509ddad78f19048277ba2e8e68773ebe8211a8365634d8b08b07",
+  "candidate_hash": "sha256:b9bf8b52eeb0956c96a0f230ad1d165c7e25eba5951c19652a7edf64e42dec71",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

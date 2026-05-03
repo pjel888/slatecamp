@@ -1,0 +1,55 @@
+{
+  "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
+  "slug": "lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers",
+  "normalized_created_at": "2026-05-01T13:33:43.448Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:c28af436a7ec654f43c1c416ae36c22dfb555d1d300e3d133e5f2f5c8d1c2a04",
+  "normalized_content_hash": "78fdff84c41b9dce723c2ad47d96e1e5fdb411eec3b48efe044a7c140e26ca8d",
+  "ui_block_count": 3,
+  "total_blocks": 0,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"ra9266\" section=\"UAP Doc 301\" title=\"Payment Bond vs. Performance Bond\">\nPayment Bond: Guarantees payment of obligations to subcontractors, suppliers, and laborers. Beneficiary: subcontractors/suppliers. Performance Bond: Guarantees completion and quality of work. Beneficiary: Owner. A single contract may have BOTH bonds. The contractor may breach one without breaching the other.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=ra9266, section=UAP Doc 301, title=Payment Bond vs. Performance Bond",
+      "props_json": {
+        "code": "ra9266",
+        "section": "UAP Doc 301",
+        "title": "Payment Bond vs. Performance Bond"
+      },
+      "children_raw": "Payment Bond: Guarantees payment of obligations to subcontractors, suppliers, and laborers. Beneficiary: subcontractors/suppliers. Performance Bond: Guarantees completion and quality of work. Beneficiary: Owner. A single contract may have BOTH bonds. The contractor may breach one without breaching the other.",
+      "children_text": "Payment Bond: Guarantees payment of obligations to subcontractors, suppliers, and laborers. Beneficiary: subcontractors/suppliers. Performance Bond: Guarantees completion and quality of work. Beneficiary: Owner. A single contract may have BOTH bonds. The contractor may breach one without breaching the other.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:de4bc698e5d91cba3336d9982ae4e649a5afebce7fef534632398091bf0d02da"
+    },
+    {
+      "block_id": "ui_0002",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **LEA Priority \u2014 Payment Bond Key Points:**\n  1. Protects subcontractors, suppliers, and laborers (NOT the owner)\n  2. Claim period: typically 60-90 days from last furnishing of labor/materials\n  3. Surety's liability is capped at the bond amount\n  4. If valid claims exceed the bond, surety distributes proportionally\n  5. Performance bond and payment bond serve different purposes \u2014 both may be required on the same project\n</ExamTip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**LEA Priority \u2014 Payment Bond Key Points:**\n  1. Protects subcontractors, suppliers, and laborers (NOT the owner)\n  2. Claim period: typically 60-90 days from last furnishing of labor/materials\n  3. Surety's liability is capped at the bond amount\n  4. If valid claims exceed the bond, surety distributes proportionally\n  5. Performance bond and payment bond serve different purposes \u2014 both may be required on the same project",
+      "children_text": "**LEA Priority \u2014 Payment Bond Key Points:**\n  1. Protects subcontractors, suppliers, and laborers (NOT the owner)\n  2. Claim period: typically 60-90 days from last furnishing of labor/materials\n  3. Surety's liability is capped at the bond amount\n  4. If valid claims exceed the bond, surety distributes proportionally\n  5. Performance bond and payment bond serve different purposes \u2014 both may be required on the same project",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:9af88062e9707349cb28190d3b2d8e0365bf7eda7027fb5ac7c86c7becabe514"
+    },
+    {
+      "block_id": "ui_0003",
+      "component_name": "Warn",
+      "raw": "<Warn>\n  **Exam Trap:** The LEA often tests whether you know which bond covers which risk. If a question involves a subcontractor who was not paid, the answer is the Payment Bond \u2014 NOT the Performance Bond. If a question involves incomplete work, the answer is the Performance Bond.\n</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**Exam Trap:** The LEA often tests whether you know which bond covers which risk. If a question involves a subcontractor who was not paid, the answer is the Payment Bond \u2014 NOT the Performance Bond. If a question involves incomplete work, the answer is the Performance Bond.",
+      "children_text": "**Exam Trap:** The LEA often tests whether you know which bond covers which risk. If a question involves a subcontractor who was not paid, the answer is the Payment Bond \u2014 NOT the Performance Bond. If a question involves incomplete work, the answer is the Performance Bond.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:29f618a4c42549b6390819b932241d013f404c4d926c9f4b8e44f5a8dcb3fd97"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

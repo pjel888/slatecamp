@@ -1,0 +1,508 @@
+{
+  "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:d772d2a83f1fe1cf556e36534c4bbf8f9fd8df6749bd2ad099e0d7ec088b7e16",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "cc29799c-e70f-4e78-b92d-7bf467fdcbe3",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "According to acoustic mass law, doubling the mass of a wall assembly increases sound transmission isolation by approximately ___ dB.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 dB"
+        },
+        {
+          "id": "b",
+          "text": "6 dB"
+        },
+        {
+          "id": "c",
+          "text": "12 dB"
+        },
+        {
+          "id": "d",
+          "text": "Cannot increase; doubling mass reduces frequency response"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3 dB is half the increase; incorrect.",
+        "c": "12 dB is double the increase; overstates relationship.",
+        "d": "Mass increase always improves isolation; frequency response becomes less important at higher mass.",
+        "correct": "Mass law: every doubling of mass increases sound isolation by approximately 6 dB. A 100 kg/m² wall at STC 40 becomes approximately STC 46 when mass is doubled to 200 kg/m².",
+        "takeaway": "Mass law: +6 dB per doubling of mass. For high STC ratings (70+), mass alone is insufficient; damping (decoupling, absorptive fill) is required."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E413, Acoustic Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6095afe7b01eeb2aaea9b125f5f344eb6dcb1a5288217a6d411326e29a07136e"
+    },
+    {
+      "question_id": "8a8b8d25-2b14-4c30-85d3-2d8260f6aee4",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "STC (Sound Transmission Class) rating range is typically ___, with higher values indicating better sound isolation through walls.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0-1.0 (0-100%), which is not applicable to STC ratings as they are not percentage-based"
+        },
+        {
+          "id": "b",
+          "text": "20-50 dB, which is a common range for residential and commercial buildings"
+        },
+        {
+          "id": "c",
+          "text": "50-80 (single number)"
+        },
+        {
+          "id": "d",
+          "text": "NRC 0.3-0.9, which refers to sound absorption rather than transmission"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0-1.0 is NRC (sound absorption rating), not STC (isolation).",
+        "b": "dB is a unit; STC is not expressed in dB directly (though it relates to sound reduction in dB).",
+        "d": "0.3-0.9 is NRC range, not STC.",
+        "correct": "STC is a single-number rating 50-80 (higher = better isolation). A wall with STC 50 blocks average speech; STC 70 blocks loud music.",
+        "takeaway": "STC = sound isolation (wall assembly property); NRC = sound absorption (interior finish property). STC 50-80; NRC 0-1.0."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E413 (STC Rating)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8d6e52aecca9ba71879dfc1352a15222118438dc1a81989c3fb8683117e140d4"
+    },
+    {
+      "question_id": "d43372cf-f536-4457-ae95-95291181c73c",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "In tropical residential design, bulk fiberglass insulation is often supplemented or replaced with reflective barriers (aluminum foil or white coating) because ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reflective barriers cost less than bulk insulation, which is not always the case depending on material quality."
+        },
+        {
+          "id": "b",
+          "text": "Radiant heat is the dominant heat gain mechanism; reflectivity reduces absorbed solar radiation more effectively than k-value"
+        },
+        {
+          "id": "c",
+          "text": "Fiberglass is not fire-resistant in tropical climates, which is a misconception as it is generally fire-resistant."
+        },
+        {
+          "id": "d",
+          "text": "Reflective barriers improve acoustic isolation, although their primary function is thermal management."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost comparison is secondary; performance is primary criterion.",
+        "c": "Fiberglass is inherently fire-resistant (non-combustible mineral).",
+        "d": "Reflective barriers reflect light; acoustic performance is independent of reflectance.",
+        "correct": "Tropical solar radiation creates radiant heat gain (70-80% of total heat load). Reflectivity (emissivity reduction) from white/aluminum surfaces is more effective than bulk insulation k-value reduction. High albedo (reflectance) of light-colored roofing reduces surface temperature from 65°C to 45°C, dramatically reducing convective heat transfer.",
+        "takeaway": "Tropical climates: reflective surfaces > bulk insulation for cooling. Conversely, temperate cold climates prioritize bulk insulation (k-value) for heating resistance."
+      },
+      "explanation": null,
+      "code_citation": "Tropical Building Science, ASHRAE Climate Design Guide",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:747ad3a98f6905cf35304930a33fe0bb8817085480a3dd63874ac478da27f319"
+    },
+    {
+      "question_id": "23798e74-081b-4ab5-8bc6-e28883a91cb8",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "Extruded polystyrene (XPS) foam has k = 0.025 W/(m·K). What is the R-value of a 75 mm thick XPS layer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.875 m²·K/W"
+        },
+        {
+          "id": "b",
+          "text": "3.0 m²·K/W"
+        },
+        {
+          "id": "c",
+          "text": "1.5 m²·K/W"
+        },
+        {
+          "id": "d",
+          "text": "0.5 m²·K/W"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Calculation error or different thickness assumed.",
+        "c": "Correct calculation: 0.075 / 0.025 = 3.0 m²·K/W.",
+        "d": "1.5 reflects half the correct value; division error.",
+        "correct": "R = thickness / k = 0.075 m / 0.025 W/(m·K) = 3.0 m²·K/W (option b). 1.875 would be for 47 mm thickness (0.047/0.025=1.88).",
+        "takeaway": "R = thickness (m) / k-value. XPS k ≈ 0.025 W/(m·K). Memorize: 25 mm XPS ≈ R-1, 50 mm ≈ R-2, 75 mm ≈ R-3, 100 mm ≈ R-4."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C518, XPS Foam Material Data",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1c1a695f093451be6afc4b119eda6f555349dd6bd7b6ebc02d8f9c5d9e0431c9"
+    },
+    {
+      "question_id": "4e491cc9-809e-499c-ac93-ab08605ce1f5",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "The formula relating R-value to k-value and thickness is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "R = k / thickness, which is incorrect as it does not account for the inverse relationship between R-value and k-value"
+        },
+        {
+          "id": "b",
+          "text": "R = thickness / k"
+        },
+        {
+          "id": "c",
+          "text": "R = k × thickness, which would imply a direct proportionality that does not exist in thermal resistance calculations"
+        },
+        {
+          "id": "d",
+          "text": "R = 1 / k, which ignores the role of material thickness in determining thermal resistance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Inverted relationship; incorrect formula.",
+        "c": "Multiplication does not account for heat flow physics.",
+        "d": "Reciprocal of k alone ignores thickness dimension.",
+        "correct": "R = thickness (m) / k-value (W/(m·K)); this yields R-value in m²·K/W. Higher k yields lower R; thicker material yields higher R.",
+        "takeaway": "R = thickness / k. Remember: higher k (poorer insulator) → lower R. Thicker material → higher R."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C518, Heat Transfer Fundamentals",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a2de2343ad41410139c4d6b0b5f07be7b74ecc2d99b6b568913165b864f335e0"
+    },
+    {
+      "question_id": "02cc16b6-1743-43b3-a9dc-5313535cd6aa",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "Calculate the overall U-value for a wall assembly: interior air film (R = 0.12 m²·K/W), gypsum board (R = 0.10), 100 mm XPS insulation (k = 0.025), masonry (R = 0.25), exterior air film (R = 0.03). Assume XPS R = 100 mm / 0.025 = 4.0 m²·K/W.",
+      "options": [
+        {
+          "id": "a",
+          "text": "U = 0.500 W/(m²·K)"
+        },
+        {
+          "id": "b",
+          "text": "U = 0.222 W/(m²·K)"
+        },
+        {
+          "id": "c",
+          "text": "U = 0.050 W/(m²·K)"
+        },
+        {
+          "id": "d",
+          "text": "U = 2.0 W/(m²·K)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.500 reflects inverse calculation or omitted insulation R-value.",
+        "c": "0.050 is over-conservative and reflects 1/20 instead of 1/4.5.",
+        "d": "2.0 indicates poor insulation; error in assembly calculation.",
+        "correct": "R_total = 0.12 + 0.10 + 4.0 + 0.25 + 0.03 = 4.5 m²·K/W. U = 1 / R_total = 1 / 4.5 = 0.222 W/(m²·K). This indicates moderate thermal resistance; a well-insulated wall in tropical climates (where heating is not required) would target U < 0.5.",
+        "takeaway": "U = 1 / R_total. Calculate total R by summing all layers including air films. Lower U-value indicates better insulation."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C518, Assembly Thermal Design",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:909e94fe818f7eab4a36fbd6d62af02e12d0bdae781641a46b949d8b56855e88"
+    },
+    {
+      "question_id": "7d7228b7-af46-482e-8ae9-67742a9f90fb",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "A coastal tropical office specifies fiberglass batts (k = 0.040 W/(m·K)) for exterior cavity insulation. After 2 years of salt-spray and high-humidity exposure (80% RH), moisture absorption causes hygroscopic degradation. If fiberglass R-value decreases by 25% due to moisture, what is the performance loss? (Assume 100 mm fiberglass R = 2.5 initially.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "R-value remains 2.5 (moisture does not affect thermal performance)"
+        },
+        {
+          "id": "b",
+          "text": "R-value decreases to 1.875 (25% loss)"
+        },
+        {
+          "id": "c",
+          "text": "R-value decreases to 1.25 (50% loss; moisture increases k-value)"
+        },
+        {
+          "id": "d",
+          "text": "R-value increases to 3.125 (moisture improves insulation)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Moisture dramatically affects fiberglass performance; R-value always decreases in humid climates.",
+        "c": "50% loss overstates typical moisture effect (25-40% degradation is typical for coastal fiberglass over 2-5 years).",
+        "d": "Water has high thermal conductivity; moisture reduces R-value, not increases it.",
+        "correct": "Initial R = 100 mm / 0.040 = 2.5 m²·K/W. Hygroscopic moisture absorption increases effective k-value (water conducts heat at ~0.6 W/(m·K), much higher than air). 25% R-loss: new R = 2.5 × 0.75 = 1.875 m²·K/W. This represents 25% degradation in thermal resistance, reducing effective insulation value significantly over 2 years.",
+        "takeaway": "Fiberglass is hygroscopic; avoid in humid/coastal tropical zones without vapor barriers. Closed-cell polyurethane foam (low permeability) is superior in tropical maritime environments."
+      },
+      "explanation": null,
+      "code_citation": "Moisture Effects on Fiberglass Insulation, Coastal Building Science",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:448f3a162d598c6913f94dcb64dd236ebe196d17c29de1f166973aca32f4634b"
+    },
+    {
+      "question_id": "76ccbbe1-82e0-4fc2-b48e-05788412909a",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "Polyisocyanurate foam (polyiso) has a lower k-value than XPS, providing approximately ___ R-value per inch thickness compared to XPS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lower (0.16 per inch vs 0.23)"
+        },
+        {
+          "id": "b",
+          "text": "Higher (0.26 per inch vs 0.23)"
+        },
+        {
+          "id": "c",
+          "text": "Equal (0.23 per inch)"
+        },
+        {
+          "id": "d",
+          "text": "Cannot be determined without thickness"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Inverse relationship; polyiso has lower k, therefore higher R.",
+        "c": "Relationship cannot be determined from k-value alone (false premise).",
+        "d": "k-value is material-independent of thickness; R depends on both.",
+        "correct": "Polyiso k ≈ 0.020 W/(m·K) vs XPS k ≈ 0.025 W/(m·K). R per inch: XPS = 25.4 mm / 0.025 = 1.016 m²·K/W ≈ 5.8 per inch (imperial units), polyiso ≈ R-6.5 per inch (k imperial ≈ 0.14 Btu·in/(hr·ft²·°F)) vs XPS R-5.0 (k≈0.18). Polyiso provides higher R per thickness due to lower k-value.",
+        "takeaway": "k-value hierarchy: polyiso (0.020) < XPS (0.025) < fiberglass (0.040). Lower k → higher R per inch. Polyiso is most efficient; highest cost."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C518, Foam Insulation Material Comparison",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:91c5078c4df1c7145068bd7fbdfa42f57d7579a9c684f1cf3a61cc6d697a7fe3"
+    },
+    {
+      "question_id": "5cc8794e-0930-4790-8438-c7014cc210c6",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "NRC (Noise Reduction Coefficient) rating of 0.7 indicates that the material absorbs ___ percent of incident sound.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7%"
+        },
+        {
+          "id": "b",
+          "text": "30%"
+        },
+        {
+          "id": "c",
+          "text": "70%"
+        },
+        {
+          "id": "d",
+          "text": "Cannot be determined from NRC alone"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "7% is 0.07 NRC, not 0.7.",
+        "b": "30% would be NRC 0.3.",
+        "d": "NRC directly indicates absorption percentage; can be determined.",
+        "correct": "NRC 0.7 = 70% sound absorption. NRC 0 = 0% absorption (hard reflective surface); NRC 1.0 = 100% absorption (theoretical maximum).",
+        "takeaway": "NRC 0-1.0 directly scales to absorption %: NRC 0.6 = 60%, NRC 0.8 = 80%, etc. NRC >0.7 required for effective noise control in open-plan offices."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C423 (NRC Rating)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:889fac958824aaf05acc2235b9d0223bde5a8e46be4f921374b812cc2135e61a"
+    },
+    {
+      "question_id": "d926901d-e273-4e49-91af-5cf49525b7ba",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "Thermal conductivity (k-value) is measured in ___ and is material-specific (independent of thickness).",
+      "options": [
+        {
+          "id": "a",
+          "text": "W/(m·K)"
+        },
+        {
+          "id": "b",
+          "text": "m²·K/W"
+        },
+        {
+          "id": "c",
+          "text": "Btu·in/(hr·ft²·°F)"
+        },
+        {
+          "id": "d",
+          "text": "degrees Celsius per watt"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "m²·K/W is R-value (thermal resistance), which depends on thickness.",
+        "c": "Btu·in/(hr·ft²·°F) is imperial k-value; correct units but less commonly used in metric regions.",
+        "d": "Temperature gradient is not a unit of conductivity.",
+        "correct": "k-value is thermal conductivity in W/(m·K) per ASTM C518; it describes material's ability to conduct heat, independent of thickness.",
+        "takeaway": "k = thermal conductivity (material property, independent of thickness). R = thermal resistance (depends on thickness and k)."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C518",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8c538b2cc22f9b8b0d1b6b38e26fb12790075e439df357b5fe09cad4cfa2d47b"
+    }
+  ]
+}

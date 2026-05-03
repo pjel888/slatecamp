@@ -1,0 +1,508 @@
+{
+  "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:c8ead6298dc77dc0628a4c830f77fba5fc7b7d45c0e616e0fd84e53bd3d32774",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1c674382-ef0a-4416-af11-5096072231dc",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "A building code official challenges a bearing wall design for a 10-story mixed-use building in Seismic Zone 2, citing inefficiency. What is the most accurate response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bearing walls are prohibited for buildings taller than 6 stories by NSCP, which mandates alternative structural systems for taller buildings"
+        },
+        {
+          "id": "b",
+          "text": "The official is correct—at 10 stories, bearing walls require excessive thickness and cost; a frame system with moment resistance or shear wall bracing is more practical"
+        },
+        {
+          "id": "c",
+          "text": "Bearing walls are always more efficient and the official is wrong, as they provide superior load distribution"
+        },
+        {
+          "id": "d",
+          "text": "The building height is irrelevant to structural system choice, as long as the design meets all other code requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "NSCP does not forbid bearing walls at any height, but as buildings get taller, bearing walls become massive and uneconomical. A frame system allows thinner elements and flexible architecture.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a1571b19c07407d1d98a9b27cf3519b6f634be5c35479e16950b166d2f53ba27"
+    },
+    {
+      "question_id": "c969d5d6-9289-4ca0-b0ca-6a363d65589b",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "A 12-story commercial office building is planned in Seismic Zone 2. Why would a frame system with moment-resisting capability be preferred over a bearing wall system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bearing wall systems cannot resist seismic loads, making them unsuitable for high-risk seismic zones"
+        },
+        {
+          "id": "b",
+          "text": "At this height, walls would be excessively thick and uneconomical; a frame allows column spacing flexibility and uses lateral bracing (shear walls or moment connections) efficiently"
+        },
+        {
+          "id": "c",
+          "text": "Frame systems are always cheaper than bearing walls, providing a cost-effective solution for high-rise buildings"
+        },
+        {
+          "id": "d",
+          "text": "Bearing walls are only allowed in buildings shorter than 6 stories, limiting their application in taller structures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "For tall buildings, bearing walls become massive and costly. Frames with moment-resisting connections or coupled shear walls provide efficient lateral resistance and allow larger floor-to-floor heights and open floor plans.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4.3; ASCE 7 principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0acd9481b176e7d52828da7534228556006660e37964f65436f934855c134d0d"
+    },
+    {
+      "question_id": "9f65281a-fe58-41ed-8cf4-cac750020cf0",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "A designer proposes a 4-story residential building in a provincial area using a bearing wall system. What is the primary structural advantage in this context?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bearing walls eliminate the need for lateral bracing or shear walls, simplifying construction"
+        },
+        {
+          "id": "b",
+          "text": "The integrated load path (gravity + lateral in walls) reduces total structural material and cost while providing adequate stiffness for a short building"
+        },
+        {
+          "id": "c",
+          "text": "Bearing walls are stronger than frames and will never fail, ensuring absolute safety"
+        },
+        {
+          "id": "d",
+          "text": "Bearing walls allow larger floor-to-floor heights than frames, offering more design flexibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "At 4 stories, bearing walls efficiently carry both vertical and lateral loads with minimal additional bracing, reducing structural cost and complexity.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd495db5bef8c40fabd1487b3a4536741ebcf29bfc32ce270e17f9cb8ce32390"
+    },
+    {
+      "question_id": "b491c02b-73ee-4fd9-a3ca-bd64844e658d",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "Why are bearing wall systems economical for low-rise residential buildings in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They eliminate the need for foundations, which significantly reduces construction costs and simplifies the building process"
+        },
+        {
+          "id": "b",
+          "text": "Walls serve dual structural purposes (gravity + lateral), reducing the number of structural elements and material cost"
+        },
+        {
+          "id": "c",
+          "text": "They are only economical because masonry is unavailable elsewhere, making it a unique cost-saving measure in the region"
+        },
+        {
+          "id": "d",
+          "text": "They automatically meet seismic requirements without additional bracing, thus avoiding the need for costly retrofitting measures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Bearing walls integrate load-bearing and lateral-resisting functions in one element, reducing overall material, formwork, and labor costs—ideal for 1–6 story structures.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4.2; Philippine construction practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d82c815b480061ba097389b2e567c0dac06c71dd9b9887ac81d4be33aa001963"
+    },
+    {
+      "question_id": "74e385a7-9d62-49ac-a6b3-ceeb24a3e989",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "What is the defining characteristic of a bearing wall system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Walls serve as the primary load-bearing elements for both gravity and lateral loads"
+        },
+        {
+          "id": "b",
+          "text": "Walls are non-structural and used only for partition, providing no load-bearing capacity"
+        },
+        {
+          "id": "c",
+          "text": "All walls must be made of masonry, ensuring uniformity in material use"
+        },
+        {
+          "id": "d",
+          "text": "Walls carry lateral loads but not vertical loads, which are supported by columns"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Bearing walls integrate gravity and lateral load paths, transferring loads directly to the foundation through compression.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4.2",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:45b9cd238c716f06460ffb48798b4e30bcc9db9f8665b3e75dbf98fdeed518cd"
+    },
+    {
+      "question_id": "22321fa2-0112-4711-bed0-0c977fc4d26b",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "What architectural advantage do frame systems provide that bearing wall systems do not?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bearing walls also allow open floor plans if they are thin enough, but this compromises structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "Frame systems allow columns to be spaced widely and positioned flexibly, enabling larger open floor areas and free facade placement"
+        },
+        {
+          "id": "c",
+          "text": "Frame systems reduce construction time but bearing walls do not, due to the complexity of wall construction"
+        },
+        {
+          "id": "d",
+          "text": "Bearing walls provide better thermal insulation than frames, which can be advantageous in certain climates"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Because beams span between columns rather than relying on walls, frames enable large column spacing, flexible wall positioning, and architectural freedom.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4.3",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2a7fa4ba799c12901821f330adfcf07f23e609d7763945ae9af6964a308ca5ea"
+    },
+    {
+      "question_id": "dec0cd19-a011-4654-9572-99d8308b16fd",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "In a frame system, what is the typical load path for vertical (gravity) loads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Loads travel directly through walls to the foundation, bypassing any intermediate structural elements"
+        },
+        {
+          "id": "b",
+          "text": "Loads are carried by beams that span to columns, which compress loads to the foundation"
+        },
+        {
+          "id": "c",
+          "text": "Loads are distributed equally to all walls regardless of location, assuming uniform wall strength and material"
+        },
+        {
+          "id": "d",
+          "text": "Loads bypass the frame and are carried by shear walls only, which are designed to handle both lateral and vertical forces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Frame systems use a skeletal structure—beams bend to carry floor loads, columns axially compress to transfer loads to the foundation.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4.3",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:030dd0b97be664952e223d6b2801ce1f309a22091df5e42e64c983f0a5b1faa5"
+    },
+    {
+      "question_id": "313b2265-d3bb-4901-ba61-568d71e8bfd0",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "Which statement correctly distinguishes lateral load resistance between bearing wall and frame systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bearing walls resist lateral loads through their mass; frames resist through rigidity or separate bracing"
+        },
+        {
+          "id": "b",
+          "text": "Frame systems cannot have lateral bracing and must rely on wall compression, which limits their application in high-seismic areas"
+        },
+        {
+          "id": "c",
+          "text": "Bearing walls and frames resist lateral loads identically through moment connections, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "Lateral loads are only resisted by shear walls, never by frames or bearing walls, which is incorrect for most modern designs"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Bearing walls provide lateral resistance through high stiffness and large cross-sectional area. Frames rely on moment-resisting connections or dedicated shear wall bracing.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aa59e325a3788844bcee8634cf48544d48a07751f50f0b348ff90bc293a34c9c"
+    },
+    {
+      "question_id": "a38b1251-2a1b-47ef-9635-455ca0380868",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "Which integrated load path characteristic distinguishes bearing wall systems from frame systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gravity loads and lateral loads follow the same structural element (the wall); in frames, these paths are typically separated"
+        },
+        {
+          "id": "b",
+          "text": "Frames also integrate gravity and lateral loads in the same element, which is not typically the case"
+        },
+        {
+          "id": "c",
+          "text": "Load paths are not relevant to structural system classification, which is a misunderstanding"
+        },
+        {
+          "id": "d",
+          "text": "Bearing walls separate gravity and lateral loads more than frames do, which contradicts typical structural behavior"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "This is the defining feature: bearing walls carry both loads through the same thick element. Frames separate loads—beams/columns for gravity, shear walls or moment connections for lateral.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4.2",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a8b781b8ef6d472fa91bf9cb56796f1145340e72acbd5faa3268ae200de96d35"
+    },
+    {
+      "question_id": "93606072-84cb-4bed-967b-7a6e58a32704",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
+      "text": "Compare the seismic behavior of a bearing wall system and a moment-resisting frame system. Which statement is accurate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bearing walls are more flexible and allow large displacements; frames are stiffer, providing better resistance to lateral forces"
+        },
+        {
+          "id": "b",
+          "text": "Frames are more flexible (larger displacements); bearing walls are stiffer due to mass and cross-section"
+        },
+        {
+          "id": "c",
+          "text": "Both systems have identical seismic response regardless of material or configuration, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "Bearing walls cannot be used in seismic zones; only frames are seismic-safe, which is a regulatory requirement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Bearing walls have high lateral stiffness (large cross-section, high modulus). Moment-resisting frames are more flexible and undergo larger displacements unless stiffened by shear walls.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4; ASCE 7",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aaf52f2b2543f6f3d86b1745efa5de706873252f56256c180eeb8dbb62df1b4d"
+    }
+  ]
+}

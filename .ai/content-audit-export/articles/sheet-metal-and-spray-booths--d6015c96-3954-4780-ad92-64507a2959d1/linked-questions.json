@@ -1,0 +1,1504 @@
+{
+  "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:7e2e8e89bd938db70aa825bc37a61baddc31c1463248c04e6cc99d5144b729e5",
+  "question_count": 34,
+  "questions": [
+    {
+      "question_id": "4fa8a31f-1a01-469d-9f2e-a971689d06ff",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A fireplace damper must be minimum No. 12 gauge metal and must open to provide at least what percentage of the required flue area under the 2004 Revised IRR, Rule XII, Section 1211?",
+      "options": [
+        {
+          "id": "a",
+          "text": "75%"
+        },
+        {
+          "id": "b",
+          "text": "90%"
+        },
+        {
+          "id": "c",
+          "text": "95%"
+        },
+        {
+          "id": "d",
+          "text": "100%"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "No. 12 gauge is approximately 2.7 mm thick. The 90% minimum open area balances the need for draft regulation (the damper's function) with the need to not restrict flow when fully open.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:031768ee39786ff954f7985ac2ed129268660c58e31c6fd02df1a63fa7f6654c"
+    },
+    {
+      "question_id": "e9ecf9a4-0a32-447f-b888-c35b313523e7",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1702, under what condition is a fire curtain or metal deflector required at the upper outer edge of a spray booth's open front, and what is the minimum required depth of this curtain?",
+      "options": [
+        {
+          "id": "sm-011-a",
+          "text": "When the open front exceeds 0.50 sq.m; minimum depth 75 mm, ensuring compliance with fire safety standards"
+        },
+        {
+          "id": "sm-011-b",
+          "text": "When the open front exceeds 1.00 sq.m and no doors are present; minimum depth 100 mm"
+        },
+        {
+          "id": "sm-011-c",
+          "text": "When the open front exceeds 2.00 sq.m regardless of doors; minimum depth 150 mm, to prevent fire spread"
+        },
+        {
+          "id": "sm-011-d",
+          "text": "A fire curtain is always required regardless of opening size or door configuration, as per safety regulations"
+        }
+      ],
+      "correct_option_id": "sm-011-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The curtain's function is to deflect a fireball or pressure wave upward and outward rather than forward into the work area, and to help contain overspray drift. The 100 mm depth is a minimum — deeper curtains are always acceptable.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:337b268badb4637e20d17b98c1e0e45536f6acaf526a74c113ee7bfcdba8beae"
+    },
+    {
+      "question_id": "19f5b2b1-082d-45e8-9467-983ec724300a",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what is the material requirement for exhaust ducts, and which type of spray booth is exempt from the discharge location clearance requirements?",
+      "options": [
+        {
+          "id": "sm-010-a",
+          "text": "Steel ducts; waterwash booths are exempt from discharge location requirements"
+        },
+        {
+          "id": "sm-010-b",
+          "text": "Galvanized sheet metal ducts; no exemptions apply to discharge location requirements, ensuring compliance with safety standards"
+        },
+        {
+          "id": "sm-010-c",
+          "text": "Stainless steel ducts; dry filter booths are exempt, allowing for flexibility in design"
+        },
+        {
+          "id": "sm-010-d",
+          "text": "Aluminum ducts; no exemptions apply, maintaining uniformity in application"
+        }
+      ],
+      "correct_option_id": "sm-010-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The steel specification reflects: (a) resistance to solvent and paint residue chemical attack; (b) structural integrity in fire events; (c) non-flame-propagation properties. Galvanized sheet metal, aluminum flex duct, and other materials are not compliant.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7d7e067e5d02e0e1123020e6ea995d2a52e9bcb88eecfb168e93f26a58c18128"
+    },
+    {
+      "question_id": "a493a0ce-b0aa-4ce5-a947-f91adb050cb8",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1703, which provision is critical to prevent ignition from lighting fixtures in the spray zone, and what performance criterion must be satisfied regarding accumulated paint residue on the lighting panel?",
+      "options": [
+        {
+          "id": "sm-015-a",
+          "text": "Lighting fixtures must be explosion-proof rated; residue accumulation is unregulated under the current code provisions"
+        },
+        {
+          "id": "sm-015-b",
+          "text": "Lighting must be isolated by hammered wire or heat-treated glass panels; normal residue accumulation must not reach dangerous temperatures from the light source"
+        },
+        {
+          "id": "sm-015-c",
+          "text": "LED fixtures must be used exclusively; no glass panel is required because LEDs generate minimal heat output"
+        },
+        {
+          "id": "sm-015-d",
+          "text": "Lighting panels must be cleaned daily; dangerous temperature thresholds are not specified in the code for spray booth installations"
+        }
+      ],
+      "correct_option_id": "sm-015-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The thermal criterion in Section 1703 creates an operational obligation: booths must be maintained with clean lighting panels, or the thermal insulation effect of accumulated paint residue can itself create an ignition hazard. This connects Rule XVII to ongoing operational maintenance under RA 9514 fire safety inspections.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:62ee4dc60c7a24a1da03e07c8633a67013cc3d2cb61c3e3ddfd15c74845a4273"
+    },
+    {
+      "question_id": "cea83892-1d86-421e-a0fc-0bfdba1fd61d",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, the exhaust system of a conventional (non-waterwash) paint spray booth discharges at a point 1.90 m from the nearest wood-framed wall and 5.00 m from the nearest window of an adjacent structure. Which code requirement is violated?",
+      "options": [
+        {
+          "id": "sm-003-a",
+          "text": "The distance from combustible construction only — must be ≥ 2.00 m, as per fire safety regulations"
+        },
+        {
+          "id": "sm-003-b",
+          "text": "The distance from exterior wall openings only — must be ≥ 8.00 m to prevent hazardous fume infiltration"
+        },
+        {
+          "id": "sm-003-c",
+          "text": "Both the distance from combustible construction AND from exterior wall openings"
+        },
+        {
+          "id": "sm-003-d",
+          "text": "Neither — the distances are adequate for a conventional spray booth, assuming no additional local amendments"
+        }
+      ],
+      "correct_option_id": "sm-003-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The exhaust duct discharge is one of the most frequently misapplied provisions. Candidates commonly apply one clearance but forget the other. Both must be satisfied simultaneously.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4e84dffc471f2d19b6150b1840f1c60a6b91aad28fc336f72a8cc98cc53f5896"
+    },
+    {
+      "question_id": "716d0f6d-6d8a-4246-95fd-e4d76d49f6fb",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A spray booth has an open-front elevation of 1.10 sq.m and no doors. The booth is separated from adjacent painting operations by 95 cm. Under PD 1096 Rule XVII, Section 1702, which statement is correct regarding fire protection compliance?",
+      "options": [
+        {
+          "id": "sm-002-a",
+          "text": "The booth is compliant — the 95 cm separation exceeds the 91 cm minimum, ensuring adequate fire safety"
+        },
+        {
+          "id": "sm-002-b",
+          "text": "The booth requires a fire curtain or metal deflector at least 100 mm deep, in addition to the separation distance"
+        },
+        {
+          "id": "sm-002-c",
+          "text": "The booth requires a fire curtain only if it is equipped with a fire-extinguishing system, which is not mandatory"
+        },
+        {
+          "id": "sm-002-d",
+          "text": "The 1.10 sq.m opening is below the threshold — only openings exceeding 1.50 sq.m require a fire curtain"
+        }
+      ],
+      "correct_option_id": "sm-002-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This question tests the critical distinction: the separation distance (91 cm) applies to ALL booths regardless of opening size; the fire curtain (triggered at >1.00 sq.m opening without doors) is an ADDITIONAL independent requirement.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:24dd6747288a34c1cc895a05f67293d448aad353c51c89b61f545050a2e75a2d"
+    },
+    {
+      "question_id": "c9f66d6a-bfe9-401e-aaee-a5fff0c33e5d",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Using the mnemonic 'S-FAR-LV' for Rule XVII spray booth compliance, which of the following correctly maps each letter to its corresponding requirement?",
+      "options": [
+        {
+          "id": "sm-014-a",
+          "text": "S = Steel gauge (No. 18); F = Floor (non-combustible/non-sparking); A = Area cap (≤150 sq.m, ≤10%); R = Ring of clearance (≥91 cm); L = Light isolation (wire/heat-treated glass); V = Ventilation (≥30 m/min, non-ferrous, motor outside)"
+        },
+        {
+          "id": "sm-014-b",
+          "text": "S = Steel gauge (No. 18); F = Fire curtain depth (≥100 mm); A = Area cap (≤100 sq.m); R = Ring of clearance (≥61 cm); L = Light isolation (polycarbonate panels); V = Ventilation (≥20 m/min), ensuring adequate air exchange"
+        },
+        {
+          "id": "sm-014-c",
+          "text": "S = Sprinkler requirement; F = Fire rated walls (1-hr minimum); A = Area cap (≤150 sq.m); R = Roof clearance (≥2 m); L = Lighting (LED fixtures); V = Ventilation (≥50 m/min), which is crucial for safety"
+        },
+        {
+          "id": "sm-014-d",
+          "text": "S = Separation from buildings; F = Floor slope (≥1:20); A = Access width (≥1.2 m); R = Rescue window size (≥0.5 sq.m); L = Light transmittance (≥40%); V = Voltage limit (≤24V), to prevent electrical hazards"
+        }
+      ],
+      "correct_option_id": "sm-014-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 'S-FAR-LV' mnemonic covers all six major compliance areas of Rule XVII. On the board exam, using this mnemonic at the start of any spray booth question ensures no requirement is overlooked.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:460de28f33b8788b47bcf3fad9c93a9deadd076c53879e4537b9cb7b60898417"
+    },
+    {
+      "question_id": "9ec13527-43d9-4ce7-aa75-810d905fb043",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1701, if the floor within or beneath a paint spray booth is combustible, what is required?",
+      "options": [
+        {
+          "id": "sm-009-a",
+          "text": "The booth must be elevated on a steel platform with no floor contact, ensuring that any potential fire hazard is isolated from combustible materials"
+        },
+        {
+          "id": "sm-009-b",
+          "text": "The combustible floor must be covered with a non-combustible, non-sparking material"
+        },
+        {
+          "id": "sm-009-c",
+          "text": "A concrete slab must be poured over the combustible floor, providing a solid and fire-resistant surface that meets safety regulations"
+        },
+        {
+          "id": "sm-009-d",
+          "text": "The floor must be coated with intumescent fire-retardant paint, which expands when exposed to heat, forming a protective char layer"
+        }
+      ],
+      "correct_option_id": "sm-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The non-combustible and non-sparking requirements are both mandatory. A concrete floor is non-combustible but may be slippery; a rubberized coating might be non-sparking but is likely combustible. The code requires both properties simultaneously.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:71118ac5a141e98b12f03e35bedaf6ea884c532ed6db5b63c7ac3dda47476f1e"
+    },
+    {
+      "question_id": "d525c921-7c08-41a5-941f-281e05eb2cc4",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what is the minimum required air movement rate through the spray area of a paint spray booth, and what material must the exhaust fan blades be made of?",
+      "options": [
+        {
+          "id": "sm-004-a",
+          "text": "≥ 15 lineal m/min; steel fan blades with anti-spark coating"
+        },
+        {
+          "id": "sm-004-b",
+          "text": "≥ 30 lineal m/min; non-ferrous fan blades"
+        },
+        {
+          "id": "sm-004-c",
+          "text": "≥ 50 lineal m/min; stainless steel fan blades"
+        },
+        {
+          "id": "sm-004-d",
+          "text": "≥ 30 lineal m/min; steel fan blades with safety fuses"
+        }
+      ],
+      "correct_option_id": "sm-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 30 m/min requirement equals approximately 100 fpm (NFPA 33 uses 100 fpm ≈ 30.5 m/min) — confirming a common technical basis between PH and US standards. The non-ferrous blade requirement is the most frequently tested specific provision in Section 1704.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:65db233bd1f00b6152a27bc15725893c49d7aee282af98c928bce1d902bb3ad1"
+    },
+    {
+      "question_id": "d76bfb02-2700-4169-a84d-bea4924d2064",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1701, what are the two simultaneous area cap requirements for a paint spray booth, and which one governs when they conflict?",
+      "options": [
+        {
+          "id": "sm-013-a",
+          "text": "≤ 150 sq.m absolute cap; ≤ 10% of building's basic permitted area — whichever is larger governs"
+        },
+        {
+          "id": "sm-013-b",
+          "text": "≤ 150 sq.m absolute cap; ≤ 10% of building's basic permitted area — whichever is smaller governs"
+        },
+        {
+          "id": "sm-013-c",
+          "text": "≤ 200 sq.m absolute cap; ≤ 15% of building's basic permitted area — whichever is smaller governs"
+        },
+        {
+          "id": "sm-013-d",
+          "text": "≤ 150 sq.m absolute cap; no percentage-based limitation exists"
+        }
+      ],
+      "correct_option_id": "sm-013-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Worked example: A Group G factory on a lot with basic permitted floor area of 800 sq.m allows a maximum spray booth of 80 sq.m (10% of 800), even though the 150 sq.m cap would permit a larger booth on an absolute basis. The 80 sq.m figure governs.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:244ce23e031c56ae080877de26e6d24098f3314fa279f4d808a14b870af57a0e"
+    },
+    {
+      "question_id": "9c3a54cc-285b-406d-ab61-ec592a0303a5",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, belt drives transmitting power from an external motor to an internal fan must be enclosed when they pass through which parts of the spray booth installation?",
+      "options": [
+        {
+          "id": "sm-012-a",
+          "text": "Only when they pass through the spray booth walls"
+        },
+        {
+          "id": "sm-012-b",
+          "text": "Only when they pass through the duct system"
+        },
+        {
+          "id": "sm-012-c",
+          "text": "When they pass through the booth or the duct system"
+        },
+        {
+          "id": "sm-012-d",
+          "text": "Belt drives are prohibited in spray booth applications"
+        }
+      ],
+      "correct_option_id": "sm-012-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is a detail-level requirement that appears frequently as a question stem in board exam questions. The belt enclosure requirement is part of the ignition source control strategy that runs through all of Section 1704: non-ferrous blades, motor outside, belt enclosures at penetrations.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5badb86e66bd3dc5722bd02aaf5d1c2e56e2f8e9bfa8ede0baf4b2f68dde4f24"
+    },
+    {
+      "question_id": "b89517b0-d2ab-4fcc-9a8d-a0890c8b4140",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, where must the drive motor for the exhaust fan of a paint spray booth be located?",
+      "options": [
+        {
+          "id": "sm-005-a",
+          "text": "Inside the spray booth for convenient maintenance access"
+        },
+        {
+          "id": "sm-005-b",
+          "text": "Inside the exhaust duct system for efficiency"
+        },
+        {
+          "id": "sm-005-c",
+          "text": "Outside the spray booth AND outside the duct system"
+        },
+        {
+          "id": "sm-005-d",
+          "text": "Inside the booth, provided it is explosion-proof rated"
+        }
+      ],
+      "correct_option_id": "sm-005-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The motor-outside-booth-and-duct requirement is one of two independent mandatory requirements in Section 1704 (along with non-ferrous blades). A non-ferrous blade paired with a motor inside the duct still violates the code.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:53c0cace6ad25116a65100318f2b2ef47ebbaf975be7f7a99edf60cc198f41cd"
+    },
+    {
+      "question_id": "be3fcc34-c7cc-4ac5-affa-1b73757d590a",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1702, what is the minimum separation required between a spray booth and adjacent operations, and who may increase this requirement?",
+      "options": [
+        {
+          "id": "sm-007-a",
+          "text": "61 cm minimum; the Building Official may increase this"
+        },
+        {
+          "id": "sm-007-b",
+          "text": "91 cm minimum; the Local Fire Service Marshall may increase this"
+        },
+        {
+          "id": "sm-007-c",
+          "text": "1.50 m minimum; only the Secretary of Public Works may increase this"
+        },
+        {
+          "id": "sm-007-d",
+          "text": "91 cm minimum; this is a fixed requirement with no authority to increase"
+        }
+      ],
+      "correct_option_id": "sm-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The LFSM's authority to increase separation is a critical administrative provision. On dense urban industrial sites, the LFSM may effectively require fire-rated partitions between spray booths and adjacent manufacturing lines — exceeding the code minimum.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b0243107627985afd7f6c111e385edfb6efe8f51cf0b0ceb77db9b0001a1ced4"
+    },
+    {
+      "question_id": "51749991-edf4-4cee-8ea6-ebeb4902ae1c",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214.5, shutters over projection room ports must be of minimum sheet metal thickness and must overlap each other by at least:",
+      "options": [
+        {
+          "id": "sp-011-a",
+          "text": "1.2 mm thickness; 15 mm overlap"
+        },
+        {
+          "id": "sp-011-b",
+          "text": "2.4 mm thickness; 25 mm overlap"
+        },
+        {
+          "id": "sp-011-c",
+          "text": "3.0 mm thickness; 30 mm overlap"
+        },
+        {
+          "id": "sp-011-d",
+          "text": "1.6 mm thickness; 20 mm overlap"
+        }
+      ],
+      "correct_option_id": "sp-011-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2.4 mm sheet metal shutter provides sufficient thermal mass to resist the heat from a projection lamp or film fire long enough for the fusible link to activate and close the shutter. The 25 mm overlap ensures that even if the shutters are slightly misaligned, the opening is still blocked when closed.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3263ba0f8fb6a88f9a926e72094c7878ac8168cf47a3ef901af7c09554191884"
+    },
+    {
+      "question_id": "b5b21e1b-d705-4bfd-9ce9-16e47fec2642",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1701, if the floor within a spray booth is combustible, what must be provided, and what geometry requirement applies to all interior booth surfaces?",
+      "options": [
+        {
+          "id": "sm-002-a",
+          "text": "Combustible floor must be covered with non-combustible, non-sparking material; interior surfaces must be smooth and continuous without outstanding edges"
+        },
+        {
+          "id": "sm-002-b",
+          "text": "Combustible floor must be elevated on a steel platform; interior surfaces require intumescent fire-retardant coating, which is not a standard requirement"
+        },
+        {
+          "id": "sm-002-c",
+          "text": "Combustible floor requires only a concrete slab overlay; no specific requirement governs interior surface geometry, which is incorrect as smooth surfaces are required"
+        },
+        {
+          "id": "sm-002-d",
+          "text": "Combustible floor must be treated with fire-retardant paint; interior surfaces must have a minimum 1-hour fire rating, which is not a typical requirement for spray booths"
+        }
+      ],
+      "correct_option_id": "sm-002-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1701, combustible floors must be covered with a non-combustible, non-sparking material that facilitates safe cleaning and residue removal — satisfying both requirements simultaneously (e.g., concrete with epoxy non-sparking coating, quarry tile). Interior surfaces must be smooth and continuous without outstanding edges: ledges, exposed fasteners, and internal stiffeners create paint residue traps that become ignition reservoirs over time. Bare wood fails on both counts — combustible and spark-producing.",
+      "explanation": "The non-combustible AND non-sparking dual requirement cannot be satisfied by a single conventional material alone. The smooth-surface requirement is a hygiene-and-safety provision: accumulated dry paint residue in crevices is highly combustible. Both provisions operate simultaneously.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1701 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1db86318fdf588b06538eb14df5a90760d6fddbdf4f37f7ca942ad7b65305842"
+    },
+    {
+      "question_id": "3f1775ae-25b9-46b5-b636-9ed2e551fcb6",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1701, what is the minimum steel gauge for spray booth walls, and how do the two simultaneous area caps interact when they conflict?",
+      "options": [
+        {
+          "id": "sm-001-a",
+          "text": "No. 18 U.S. gauge minimum; both caps (≤150 sq.m and ≤10% of basic permitted area) apply — the smaller value governs"
+        },
+        {
+          "id": "sm-001-b",
+          "text": "No. 20 U.S. gauge minimum; the 150 sq.m cap always governs over the percentage-based limit, ensuring a consistent application of the rule"
+        },
+        {
+          "id": "sm-001-c",
+          "text": "No. 18 U.S. gauge minimum; only the 150 sq.m absolute cap applies — no percentage limitation exists, simplifying compliance"
+        },
+        {
+          "id": "sm-001-d",
+          "text": "No. 16 U.S. gauge minimum; both caps apply but the larger value governs to maximize spray area, allowing for greater flexibility in design"
+        }
+      ],
+      "correct_option_id": "sm-001-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1701, the minimum steel gauge is No. 18 U.S. gauge (approximately 1.27 mm nominal thickness). The booth area is doubly limited: it shall not exceed 150 sq.m AND shall not exceed 10% of the basic permitted area for the building's Occupancy Group. Both caps apply simultaneously — whichever is smaller governs. Example: a Group G factory with 800 sq.m permitted area limits the booth to 80 sq.m (10% of 800), not 150 sq.m. Thinner gauges such as No. 20 or No. 22 used in HVAC ductwork would perforate under internal pressure from a minor deflagration.",
+      "explanation": "The double-cap logic mirrors Rule VII accessory occupancy logic: hazardous uses (spray booths) must remain subordinate in area to the building's primary function. The 10% cap prevents a spray booth from consuming so much floor area that the entire building is effectively reclassified as hazardous.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1701 (2004 IRR)",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:80ede88a6cbb72921bc2ea21729b6da8dd839d81975fb61bbf8039ce605c87b8"
+    },
+    {
+      "question_id": "2ca42146-1dc0-4c72-8fee-f7671ddf56c5",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1702, when is a fire curtain or metal deflector required at the upper outer edge of a spray booth's open front, and what is its minimum required depth?",
+      "options": [
+        {
+          "id": "sm-003-a",
+          "text": "Required when the open front exceeds 0.50 sq.m regardless of whether doors are present; minimum depth 75 mm"
+        },
+        {
+          "id": "sm-003-b",
+          "text": "Required when the open front exceeds 1.00 sq.m AND no doors are present; minimum depth 100 mm"
+        },
+        {
+          "id": "sm-003-c",
+          "text": "Required when the open front exceeds 2.00 sq.m regardless of doors; minimum depth 150 mm"
+        },
+        {
+          "id": "sm-003-d",
+          "text": "Always required regardless of opening size or door configuration; minimum depth 100 mm"
+        }
+      ],
+      "correct_option_id": "sm-003-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1702 requires a fire curtain or metal deflector when BOTH conditions are met simultaneously: (1) the open front elevation exceeds 1.00 sq.m AND (2) the booth is not equipped with doors. The curtain must hang from the upper outer edge and extend at least 100 mm downward. If either condition is absent — booth has doors, or opening is ≤1.00 sq.m — the curtain is not required. Note: the USA NFPA 33 trigger is 0.84 sq.m (9 sq.ft), slightly more conservative than the PH 1.00 sq.m trigger.",
+      "explanation": "The curtain deflects a fireball or pressure wave upward and outward rather than forward into the work area. The two-condition AND gate is the critical exam distinction: both opening size AND absence of doors must be true before the curtain requirement activates.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1702 (2004 IRR)",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:289b7ebf3e596f63614d147a1b1b43c4867005505b13f13496e3df1b90a783f4"
+    },
+    {
+      "question_id": "a33b8ad4-f204-4af0-a26b-fcdb1ad9f7da",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1702, what is the minimum required separation distance between a spray booth and adjacent operations, and which authority may require this distance to be increased?",
+      "options": [
+        {
+          "id": "sm-004-a",
+          "text": "Minimum 61 cm separation; the Building Official may require a greater distance based on site review"
+        },
+        {
+          "id": "sm-004-b",
+          "text": "Minimum 91 cm separation; the Local Fire Service Marshall may require greater distance or a partition wall"
+        },
+        {
+          "id": "sm-004-c",
+          "text": "Minimum 1.50 m separation; this is a fixed requirement with no authority permitted to modify it"
+        },
+        {
+          "id": "sm-004-d",
+          "text": "Minimum 91 cm separation; only the DPWH Secretary may increase the requirement through a special order"
+        }
+      ],
+      "correct_option_id": "sm-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1702 requires a minimum 91 cm separation between spray booths and adjacent operations. The 2004 Revised IRR explicitly expands the basic law: the Local Fire Service Marshall may require greater distance, or a partition or wall, based on site-specific hazard assessment. The 91 cm minimum closely aligns with OSHA's 914 mm (3 ft) requirement — a difference of only 4 mm from metric conversion of the same source standard.",
+      "explanation": "The LFSM's authority to require partition walls beyond the 91 cm minimum is a significant administrative expansion in the 2004 IRR. On dense industrial sites, the LFSM effectively exercises discretion to require fire-rated walls where adjacency creates elevated ignition risk — potentially converting a distance requirement into a construction requirement.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1702 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a54b69836bb21fe149f2237ca8845de839714739d445147c87f41d919aed6cc2"
+    },
+    {
+      "question_id": "49faf561-7733-47ef-a2f2-28bf77fafad8",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1703, what glazing material must isolate spray booth lighting from the spray zone, and what performance criterion governs accumulated paint residue on the panel?",
+      "options": [
+        {
+          "id": "sm-005-a",
+          "text": "Standard annealed glass panels; no thermal performance criterion governs paint residue buildup on the panel, making it a less safe option for spray booths"
+        },
+        {
+          "id": "sm-005-b",
+          "text": "Hammered wire glass or heat-treated (tempered) glass; normal residue accumulation must not reach dangerous temperatures from the light source"
+        },
+        {
+          "id": "sm-005-c",
+          "text": "Polycarbonate panels with UV stabilization; accumulated residue must be cleaned weekly and a log kept on site to ensure compliance with safety standards"
+        },
+        {
+          "id": "sm-005-d",
+          "text": "Laminated glass with PVB interlayer; panel must achieve a minimum 1-hour fire resistance rating per ASTM E119, ensuring safety in case of fire"
+        }
+      ],
+      "correct_option_id": "sm-005-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1703, lighting is isolated by hammered wire glass or heat-treated (tempered) glass panels. The panel must be non-combustible or protected against breakage, effectively isolate the spray zone from the lighting area, and be positioned to minimize paint spray deposit. Critically, normal paint accumulation on the panel must not reach dangerous temperatures through radiation or conduction from the light source. This thermal performance criterion limits fixture wattage and proximity — high-intensity lamps behind paint-encrusted panels can ignite residue without electrical arcing.",
+      "explanation": "The thermal criterion creates an ongoing maintenance obligation: booths with accumulated paint on lighting panels may violate Sec. 1703 during RA 9514 fire safety inspections even if the booth was originally compliant. It connects code compliance to operational practice.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1703 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:638a77cb52f8c22bbce24e7680b6e06ecac464c3a623909652c8df3d4ba8ec0a"
+    },
+    {
+      "question_id": "d214e90f-9523-4484-968a-948edd7f411c",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what is the minimum air movement rate through the spray area, what material must exhaust fan blades be made of, and where must the drive motor be located?",
+      "options": [
+        {
+          "id": "sm-006-a",
+          "text": "≥ 15 lineal m/min; steel blades with anti-spark coating; motor inside booth for efficient drive transmission"
+        },
+        {
+          "id": "sm-006-b",
+          "text": "≥ 30 lineal m/min; non-ferrous blades; motor located outside the spray booth AND outside the duct system"
+        },
+        {
+          "id": "sm-006-c",
+          "text": "≥ 50 lineal m/min; stainless steel blades; motor may be inside duct if explosion-proof rated"
+        },
+        {
+          "id": "sm-006-d",
+          "text": "≥ 30 lineal m/min; steel blades with anti-spark coating; motor inside duct provided it is NEMA-rated"
+        }
+      ],
+      "correct_option_id": "sm-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1704: air must move through the spray area at ≥ 30 lineal m/min (directed mechanically to exterior); fan blades must be non-ferrous (aluminum, bronze, or equivalent — ferrous blades can spark against duct walls); and the motor must be located outside the spray booth AND outside the duct system. Electric motors produce arcing at brushes and commutators — direct ignition sources in vapor-saturated air. All three requirements are independent; satisfying two of three violates the code.",
+      "explanation": "The 30 m/min rate equals approximately 100 fpm (NFPA 33 uses 100 fpm ≈ 30.5 m/min), confirming a common technical basis between PH and US standards. The non-ferrous blade requirement is the most commonly tested specific provision in Sec. 1704.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1704 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a69ba662d7c15cd16d25b9e7a34dfc781783e342c51f04d1490a65ac40016783"
+    },
+    {
+      "question_id": "210194e5-91a9-4b92-a6c3-e295a29b8e41",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what are the two clearance distances required for a conventional spray booth exhaust duct discharge point?",
+      "options": [
+        {
+          "id": "sm-007-a",
+          "text": "≥ 1.00 m from combustible construction; ≥ 3.00 m from exterior wall openings such as windows and doors"
+        },
+        {
+          "id": "sm-007-b",
+          "text": "≥ 2.00 m from combustible construction; ≥ 8.00 m from exterior wall openings such as windows and doors"
+        },
+        {
+          "id": "sm-007-c",
+          "text": "≥ 3.00 m from combustible construction; ≥ 5.00 m from exterior wall openings such as windows and doors"
+        },
+        {
+          "id": "sm-007-d",
+          "text": "≥ 2.00 m from combustible construction; ≥ 5.00 m from exterior wall openings such as windows and doors"
+        }
+      ],
+      "correct_option_id": "sm-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1704, the exhaust duct discharge must be at least 2.00 m from combustible construction (wood walls, combustible cladding) AND at least 8.00 m from exterior wall openings (windows, doors, louvers). The 2.00 m buffer prevents flammable exhaust gases from reaching combustibles before dispersing. The 8.00 m buffer prevents gases from re-entering the building. These are independent requirements — both must be satisfied simultaneously. Waterwash booths are explicitly exempt from both clearances.",
+      "explanation": "The 8.00 m clearance to exterior wall openings is substantially larger than most urban building footprints allow, which drives booth placement to building perimeters or rooftop exhaust configurations in dense sites. The PH 2.00 m clearance to combustibles is slightly more restrictive than NFPA 33's 1.83 m (6 ft).",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1704 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:82d7f2fd5ed5aed04e3dcca572ebe51120cb1dac8ae0254b27fa41614dbd5cb3"
+    },
+    {
+      "question_id": "b1624663-8ac4-4349-b6ad-c652eeaa2266",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A spray booth inspector finds: open front elevation of 1.10 sq.m, no doors, separation from adjacent welding operations of 95 cm. Under Rule XVII, Section 1702, which requirements are violated?",
+      "options": [
+        {
+          "id": "sm-009-a",
+          "text": "Only the separation distance — 95 cm is below the 1.00 m minimum required"
+        },
+        {
+          "id": "sm-009-b",
+          "text": "Only the fire curtain — the 1.10 sq.m opening with no doors requires a curtain, which is absent"
+        },
+        {
+          "id": "sm-009-c",
+          "text": "Both the fire curtain and the separation distance — the 95 cm separation is below 1.00 m and no curtain is installed"
+        },
+        {
+          "id": "sm-009-d",
+          "text": "Neither — 95 cm satisfies the 91 cm minimum and the curtain requirement does not apply here"
+        }
+      ],
+      "correct_option_id": "sm-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1702: (1) The fire curtain is required because the open front (1.10 sq.m) exceeds 1.00 sq.m AND no doors are present — the curtain is missing, which is a violation. (2) The separation distance of 95 cm exceeds the 91 cm minimum — this is NOT a violation. Therefore only the missing fire curtain violates the code. The two requirements are independent: the separation distance is satisfied, but the fire curtain requirement is not.",
+      "explanation": "This scenario is designed to isolate which of two Section 1702 requirements is violated. Candidates who confuse 95 cm with non-compliance (it exceeds 91 cm) and miss the fire curtain requirement will choose the wrong answer. The key: 91 cm is the minimum, 95 cm passes; 1.00 sq.m triggers the curtain, 1.10 sq.m without doors fails.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1702 (2004 IRR)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2f989bd49863864236a09bc0b74a731e53430859a9abd191bdde2dd745acbf42"
+    },
+    {
+      "question_id": "8b52a02c-aa8d-4adf-b5ca-6138332d4c60",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what is required of belt drives used to transmit power from an external motor to the spray booth exhaust fan?",
+      "options": [
+        {
+          "id": "sm-008-a",
+          "text": "Belt drives are absolutely prohibited — only direct-drive configurations are permitted under Section 1704, ensuring maximum safety"
+        },
+        {
+          "id": "sm-008-b",
+          "text": "Belt drives must be enclosed where they enter the spray booth or duct system to prevent static electricity and friction sparks"
+        },
+        {
+          "id": "sm-008-c",
+          "text": "Belt drives are permitted only in the exhaust duct — they are prohibited within the spray booth itself, minimizing ignition risks"
+        },
+        {
+          "id": "sm-008-d",
+          "text": "Belt drives require no special treatment provided the motor is explosion-proof rated and located outside the booth, ensuring compliance with safety standards"
+        }
+      ],
+      "correct_option_id": "sm-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1704 requires belt drives to be enclosed where they enter the booth or duct. Belt drives transmit power from the external motor to the internal fan through the booth wall or duct wall — the penetration point where belt-generated static electricity and friction sparks can enter the vapor-rich airstream. Enclosing the belt at both penetration points (booth wall and duct wall) eliminates these ignition sources. The requirement applies to both locations — not one or the other.",
+      "explanation": "Belt drives are permitted — they are not prohibited. The code manages their ignition risk through enclosure at penetration points rather than banning them. This is a detail-level provision frequently appearing as a board exam question stem.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1704 (2004 IRR)",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4197b94a3ac5ae61364338d13c961d9000fde1a987b00be6dced60dad3ac2df9"
+    },
+    {
+      "question_id": "54fb83d4-c180-4685-aa81-e91896e428f9",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what material must exhaust ducts be constructed of, and which type of spray booth is explicitly exempt from the duct discharge clearance requirements?",
+      "options": [
+        {
+          "id": "sm-010-a",
+          "text": "Aluminum ducts; dry filter booths are exempt because filters remove combustibles before exhaust discharge"
+        },
+        {
+          "id": "sm-010-b",
+          "text": "Steel ducts (thickness per Secretary's specifications); waterwash booths are exempt from discharge clearance requirements"
+        },
+        {
+          "id": "sm-010-c",
+          "text": "Galvanized sheet metal ducts; no exemptions apply to discharge clearance requirements for any booth type"
+        },
+        {
+          "id": "sm-010-d",
+          "text": "Stainless steel ducts; all booths with automatic sprinklers are exempt from discharge clearance requirements"
+        }
+      ],
+      "correct_option_id": "sm-010-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1704, exhaust ducts must be constructed of steel with thickness per the Secretary's specifications — resisting solvent corrosion, duct collapse, and fire spread. Waterwash spray booths (where exhaust air is scrubbed by a water curtain before discharge) are explicitly exempt from the 2.00 m combustible clearance and 8.00 m wall opening clearance requirements. Water scrubbing removes combustible paint particles and partially absorbs solvent vapors, producing non-flammable discharge under normal operating conditions.",
+      "explanation": "The steel duct requirement eliminates aluminum flex duct and other common HVAC materials. The waterwash exemption is the only explicitly stated exemption from the discharge clearance requirements — dry filter booths, booths with sprinklers, and all other booth types must still comply with both clearance distances.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1704 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.255221+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:879cf8a2195154db2ffbb92bb48dd9e4a1fd704f16d1fa7f936e9370eb92ffa0"
+    },
+    {
+      "question_id": "6bf8349c-da8d-4ace-bc3d-a9a08f381141",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what material must exhaust ducts be constructed of, and which type of spray booth is explicitly exempt from the duct discharge clearance requirements?",
+      "options": [
+        {
+          "id": "sm-010-a",
+          "text": "Aluminum ducts; dry filter booths are exempt because filters remove combustibles before exhaust discharge"
+        },
+        {
+          "id": "sm-010-b",
+          "text": "Steel ducts (thickness per Secretary's specifications); waterwash booths are exempt from discharge clearance requirements"
+        },
+        {
+          "id": "sm-010-c",
+          "text": "Galvanized sheet metal ducts; no exemptions apply to discharge clearance requirements for any booth type"
+        },
+        {
+          "id": "sm-010-d",
+          "text": "Stainless steel ducts; all booths with automatic sprinklers are exempt from discharge clearance requirements"
+        }
+      ],
+      "correct_option_id": "sm-010-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1704, exhaust ducts must be constructed of steel with thickness per the Secretary's specifications — resisting solvent corrosion, duct collapse, and fire spread. Waterwash spray booths (where exhaust air is scrubbed by a water curtain before discharge) are explicitly exempt from the 2.00 m combustible clearance and 8.00 m wall opening clearance requirements. Water scrubbing removes combustible paint particles and partially absorbs solvent vapors, producing non-flammable discharge under normal operating conditions.",
+      "explanation": "The steel duct requirement eliminates aluminum flex duct and other common HVAC materials. The waterwash exemption is the only explicitly stated exemption from the discharge clearance requirements — dry filter booths, booths with sprinklers, and all other booth types must still comply with both clearance distances.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1704 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:35f5010c2a2a264929cab16d523fe5f8146366e6e59890eb48946b40013c76da"
+    },
+    {
+      "question_id": "923c8e01-3499-4162-a698-e28eb257f1d7",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1701, if the floor within a spray booth is combustible, what must be provided, and what geometry requirement applies to all interior booth surfaces?",
+      "options": [
+        {
+          "id": "sm-002-a",
+          "text": "Combustible floor must be covered with non-combustible, non-sparking material; interior surfaces must be smooth and continuous without outstanding edges"
+        },
+        {
+          "id": "sm-002-b",
+          "text": "Combustible floor must be elevated on a steel platform; interior surfaces require intumescent fire-retardant coating to prevent fire spread"
+        },
+        {
+          "id": "sm-002-c",
+          "text": "Combustible floor requires only a concrete slab overlay; no specific requirement governs interior surface geometry, which can lead to safety issues"
+        },
+        {
+          "id": "sm-002-d",
+          "text": "Combustible floor must be treated with fire-retardant paint; interior surfaces must have a minimum 1-hour fire rating, which is a standard safety measure"
+        }
+      ],
+      "correct_option_id": "sm-002-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1701, combustible floors must be covered with a non-combustible, non-sparking material that facilitates safe cleaning and residue removal — satisfying both requirements simultaneously (e.g., concrete with epoxy non-sparking coating, quarry tile). Interior surfaces must be smooth and continuous without outstanding edges: ledges, exposed fasteners, and internal stiffeners create paint residue traps that become ignition reservoirs over time. Bare wood fails on both counts — combustible and spark-producing.",
+      "explanation": "The non-combustible AND non-sparking dual requirement cannot be satisfied by a single conventional material alone. The smooth-surface requirement is a hygiene-and-safety provision: accumulated dry paint residue in crevices is highly combustible. Both provisions operate simultaneously.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1701 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d8bd0b649cf29abd636453dec4270f2b78f31b07e188cf3f6440b85b0e4c899"
+    },
+    {
+      "question_id": "b7737a09-6815-439d-9970-a812829091ea",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1702, when is a fire curtain or metal deflector required at the upper outer edge of a spray booth's open front, and what is its minimum required depth?",
+      "options": [
+        {
+          "id": "sm-003-a",
+          "text": "Required when the open front exceeds 0.50 sq.m regardless of whether doors are present; minimum depth 75 mm"
+        },
+        {
+          "id": "sm-003-b",
+          "text": "Required when the open front exceeds 1.00 sq.m AND no doors are present; minimum depth 100 mm"
+        },
+        {
+          "id": "sm-003-c",
+          "text": "Required when the open front exceeds 2.00 sq.m regardless of doors; minimum depth 150 mm"
+        },
+        {
+          "id": "sm-003-d",
+          "text": "Always required regardless of opening size or door configuration; minimum depth 100 mm"
+        }
+      ],
+      "correct_option_id": "sm-003-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1702 requires a fire curtain or metal deflector when BOTH conditions are met simultaneously: (1) the open front elevation exceeds 1.00 sq.m AND (2) the booth is not equipped with doors. The curtain must hang from the upper outer edge and extend at least 100 mm downward. If either condition is absent — booth has doors, or opening is ≤1.00 sq.m — the curtain is not required. Note: the USA NFPA 33 trigger is 0.84 sq.m (9 sq.ft), slightly more conservative than the PH 1.00 sq.m trigger.",
+      "explanation": "The curtain deflects a fireball or pressure wave upward and outward rather than forward into the work area. The two-condition AND gate is the critical exam distinction: both opening size AND absence of doors must be true before the curtain requirement activates.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1702 (2004 IRR)",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4012f1eaead886672c024f5f08597504ef226ee09f245e10afaf9f649e1ad1bd"
+    },
+    {
+      "question_id": "152a543d-703b-485f-b174-c03d0cb947df",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1703, what glazing material must isolate spray booth lighting from the spray zone, and what performance criterion governs accumulated paint residue on the panel?",
+      "options": [
+        {
+          "id": "sm-005-a",
+          "text": "Standard annealed glass panels; no thermal performance criterion governs paint residue buildup on the panel, making it unsuitable for safety compliance"
+        },
+        {
+          "id": "sm-005-b",
+          "text": "Hammered wire glass or heat-treated (tempered) glass; normal residue accumulation must not reach dangerous temperatures from the light source"
+        },
+        {
+          "id": "sm-005-c",
+          "text": "Polycarbonate panels with UV stabilization; accumulated residue must be cleaned weekly and a log kept on site to ensure compliance with safety standards"
+        },
+        {
+          "id": "sm-005-d",
+          "text": "Laminated glass with PVB interlayer; panel must achieve a minimum 1-hour fire resistance rating per ASTM E119, which is not typically required for spray booth applications"
+        }
+      ],
+      "correct_option_id": "sm-005-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1703, lighting is isolated by hammered wire glass or heat-treated (tempered) glass panels. The panel must be non-combustible or protected against breakage, effectively isolate the spray zone from the lighting area, and be positioned to minimize paint spray deposit. Critically, normal paint accumulation on the panel must not reach dangerous temperatures through radiation or conduction from the light source. This thermal performance criterion limits fixture wattage and proximity — high-intensity lamps behind paint-encrusted panels can ignite residue without electrical arcing.",
+      "explanation": "The thermal criterion creates an ongoing maintenance obligation: booths with accumulated paint on lighting panels may violate Sec. 1703 during RA 9514 fire safety inspections even if the booth was originally compliant. It connects code compliance to operational practice.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1703 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:54a47dfa86a252d6771bcde0b3e9018dde5c374c9cdbd5127abd75bd8485cffb"
+    },
+    {
+      "question_id": "df00e375-f634-43b1-8bda-6a63388c8c9b",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1702, what is the minimum required separation distance between a spray booth and adjacent operations, and which authority may require this distance to be increased?",
+      "options": [
+        {
+          "id": "sm-004-a",
+          "text": "Minimum 61 cm separation; the Building Official may require a greater distance based on site review"
+        },
+        {
+          "id": "sm-004-b",
+          "text": "Minimum 91 cm separation; the Local Fire Service Marshall may require greater distance or a partition wall"
+        },
+        {
+          "id": "sm-004-c",
+          "text": "Minimum 1.50 m separation; this is a fixed requirement with no authority permitted to modify it"
+        },
+        {
+          "id": "sm-004-d",
+          "text": "Minimum 91 cm separation; only the DPWH Secretary may increase the requirement through a special order"
+        }
+      ],
+      "correct_option_id": "sm-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1702 requires a minimum 91 cm separation between spray booths and adjacent operations. The 2004 Revised IRR explicitly expands the basic law: the Local Fire Service Marshall may require greater distance, or a partition or wall, based on site-specific hazard assessment. The 91 cm minimum closely aligns with OSHA's 914 mm (3 ft) requirement — a difference of only 4 mm from metric conversion of the same source standard.",
+      "explanation": "The LFSM's authority to require partition walls beyond the 91 cm minimum is a significant administrative expansion in the 2004 IRR. On dense industrial sites, the LFSM effectively exercises discretion to require fire-rated walls where adjacency creates elevated ignition risk — potentially converting a distance requirement into a construction requirement.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1702 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ee09b367628fece65e21bb6f38541910138cb51d4ac939680da93cc00b7392e3"
+    },
+    {
+      "question_id": "d40be90b-c519-4e10-9e7a-19b25ad90f1d",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what is the minimum air movement rate through the spray area, what material must exhaust fan blades be made of, and where must the drive motor be located?",
+      "options": [
+        {
+          "id": "sm-006-a",
+          "text": "≥ 15 lineal m/min; steel blades with anti-spark coating; motor inside booth for efficient drive transmission"
+        },
+        {
+          "id": "sm-006-b",
+          "text": "≥ 30 lineal m/min; non-ferrous blades; motor located outside the spray booth AND outside the duct system"
+        },
+        {
+          "id": "sm-006-c",
+          "text": "≥ 50 lineal m/min; stainless steel blades; motor may be inside duct if explosion-proof rated"
+        },
+        {
+          "id": "sm-006-d",
+          "text": "≥ 30 lineal m/min; steel blades with anti-spark coating; motor inside duct provided it is NEMA-rated"
+        }
+      ],
+      "correct_option_id": "sm-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1704: air must move through the spray area at ≥ 30 lineal m/min (directed mechanically to exterior); fan blades must be non-ferrous (aluminum, bronze, or equivalent — ferrous blades can spark against duct walls); and the motor must be located outside the spray booth AND outside the duct system. Electric motors produce arcing at brushes and commutators — direct ignition sources in vapor-saturated air. All three requirements are independent; satisfying two of three violates the code.",
+      "explanation": "The 30 m/min rate equals approximately 100 fpm (NFPA 33 uses 100 fpm ≈ 30.5 m/min), confirming a common technical basis between PH and US standards. The non-ferrous blade requirement is the most commonly tested specific provision in Sec. 1704.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1704 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d1edbb98a12dc51f55e6f3b180e17b96fafb965ca5e17bc3ebe69d1fdf5297ee"
+    },
+    {
+      "question_id": "f45d436a-14f0-4e10-ad9e-43f69d485be4",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what are the two clearance distances required for a conventional spray booth exhaust duct discharge point?",
+      "options": [
+        {
+          "id": "sm-007-a",
+          "text": "≥ 1.00 m from combustible construction; ≥ 3.00 m from exterior wall openings such as windows and doors"
+        },
+        {
+          "id": "sm-007-b",
+          "text": "≥ 2.00 m from combustible construction; ≥ 8.00 m from exterior wall openings such as windows and doors"
+        },
+        {
+          "id": "sm-007-c",
+          "text": "≥ 3.00 m from combustible construction; ≥ 5.00 m from exterior wall openings such as windows and doors"
+        },
+        {
+          "id": "sm-007-d",
+          "text": "≥ 2.00 m from combustible construction; ≥ 5.00 m from exterior wall openings such as windows and doors"
+        }
+      ],
+      "correct_option_id": "sm-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1704, the exhaust duct discharge must be at least 2.00 m from combustible construction (wood walls, combustible cladding) AND at least 8.00 m from exterior wall openings (windows, doors, louvers). The 2.00 m buffer prevents flammable exhaust gases from reaching combustibles before dispersing. The 8.00 m buffer prevents gases from re-entering the building. These are independent requirements — both must be satisfied simultaneously. Waterwash booths are explicitly exempt from both clearances.",
+      "explanation": "The 8.00 m clearance to exterior wall openings is substantially larger than most urban building footprints allow, which drives booth placement to building perimeters or rooftop exhaust configurations in dense sites. The PH 2.00 m clearance to combustibles is slightly more restrictive than NFPA 33's 1.83 m (6 ft).",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1704 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:24957509b67a4cef6830ef00c28c9fac39735224c8fad5fad07ae03289bd5ec4"
+    },
+    {
+      "question_id": "9d034bc9-e6bd-4d02-a20c-c537129ff804",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1704, what is required of belt drives used to transmit power from an external motor to the spray booth exhaust fan?",
+      "options": [
+        {
+          "id": "sm-008-a",
+          "text": "Belt drives are absolutely prohibited — only direct-drive configurations are permitted under Section 1704, ensuring maximum safety"
+        },
+        {
+          "id": "sm-008-b",
+          "text": "Belt drives must be enclosed where they enter the spray booth or duct system to prevent static electricity and friction sparks"
+        },
+        {
+          "id": "sm-008-c",
+          "text": "Belt drives are permitted only in the exhaust duct — they are prohibited within the spray booth itself to minimize fire hazards"
+        },
+        {
+          "id": "sm-008-d",
+          "text": "Belt drives require no special treatment provided the motor is explosion-proof rated and located outside the booth, which reduces installation complexity"
+        }
+      ],
+      "correct_option_id": "sm-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1704 requires belt drives to be enclosed where they enter the booth or duct. Belt drives transmit power from the external motor to the internal fan through the booth wall or duct wall — the penetration point where belt-generated static electricity and friction sparks can enter the vapor-rich airstream. Enclosing the belt at both penetration points (booth wall and duct wall) eliminates these ignition sources. The requirement applies to both locations — not one or the other.",
+      "explanation": "Belt drives are permitted — they are not prohibited. The code manages their ignition risk through enclosure at penetration points rather than banning them. This is a detail-level provision frequently appearing as a board exam question stem.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1704 (2004 IRR)",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:76d5ebc875faf3aef935625699649855bf412b82c1966bc2fceb66213fb263e5"
+    },
+    {
+      "question_id": "88a89298-dd50-4106-b171-f3fac6fc4821",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A spray booth inspector finds: open front elevation of 1.10 sq.m, no doors, separation from adjacent welding operations of 95 cm. Under Rule XVII, Section 1702, which requirements are violated?",
+      "options": [
+        {
+          "id": "sm-009-a",
+          "text": "Only the separation distance — 95 cm is below the 1.00 m minimum required"
+        },
+        {
+          "id": "sm-009-b",
+          "text": "Only the fire curtain — the 1.10 sq.m opening with no doors requires a curtain, which is absent"
+        },
+        {
+          "id": "sm-009-c",
+          "text": "Both the fire curtain and the separation distance — the 95 cm separation is below 1.00 m and no curtain is installed"
+        },
+        {
+          "id": "sm-009-d",
+          "text": "Neither — 95 cm satisfies the 91 cm minimum and the curtain requirement does not apply here"
+        }
+      ],
+      "correct_option_id": "sm-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1702: (1) The fire curtain is required because the open front (1.10 sq.m) exceeds 1.00 sq.m AND no doors are present — the curtain is missing, which is a violation. (2) The separation distance of 95 cm exceeds the 91 cm minimum — this is NOT a violation. Therefore only the missing fire curtain violates the code. The two requirements are independent: the separation distance is satisfied, but the fire curtain requirement is not.",
+      "explanation": "This scenario is designed to isolate which of two Section 1702 requirements is violated. Candidates who confuse 95 cm with non-compliance (it exceeds 91 cm) and miss the fire curtain requirement will choose the wrong answer. The key: 91 cm is the minimum, 95 cm passes; 1.00 sq.m triggers the curtain, 1.10 sq.m without doors fails.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1702 (2004 IRR)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1117b3e01794bb513231174c85658f1c456090064eb5bc08c539fc930778d81a"
+    },
+    {
+      "question_id": "c05127c7-5756-490d-a6e6-4dd85feea199",
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1701, what is the minimum steel gauge for spray booth walls, and how do the two simultaneous area caps interact when they conflict?",
+      "options": [
+        {
+          "id": "sm-001-a",
+          "text": "No. 18 U.S. gauge minimum; both caps (≤150 sq.m and ≤10% of basic permitted area) apply — the smaller value governs"
+        },
+        {
+          "id": "sm-001-b",
+          "text": "No. 20 U.S. gauge minimum; the 150 sq.m cap always governs over the percentage-based limit, ensuring compliance with maximum area restrictions"
+        },
+        {
+          "id": "sm-001-c",
+          "text": "No. 18 U.S. gauge minimum; only the 150 sq.m absolute cap applies — no percentage limitation exists, allowing for larger spray booth areas"
+        },
+        {
+          "id": "sm-001-d",
+          "text": "No. 16 U.S. gauge minimum; both caps apply but the larger value governs to maximize spray area, which is beneficial for larger operations"
+        }
+      ],
+      "correct_option_id": "sm-001-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1701, the minimum steel gauge is No. 18 U.S. gauge (approximately 1.27 mm nominal thickness). The booth area is doubly limited: it shall not exceed 150 sq.m AND shall not exceed 10% of the basic permitted area for the building's Occupancy Group. Both caps apply simultaneously — whichever is smaller governs. Example: a Group G factory with 800 sq.m permitted area limits the booth to 80 sq.m (10% of 800), not 150 sq.m. Thinner gauges such as No. 20 or No. 22 used in HVAC ductwork would perforate under internal pressure from a minor deflagration.",
+      "explanation": "The double-cap logic mirrors Rule VII accessory occupancy logic: hazardous uses (spray booths) must remain subordinate in area to the building's primary function. The 10% cap prevents a spray booth from consuming so much floor area that the entire building is effectively reclassified as hazardous.",
+      "code_citation": "PD 1096 Rule XVII, Sec. 1701 (2004 IRR)",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.063538+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:257489f73b4a72b83950845bedbb3bf93d88171d3f04765174084fec7878fcf9"
+    }
+  ]
+}

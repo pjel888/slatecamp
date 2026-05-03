@@ -1,0 +1,119 @@
+{
+  "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+  "slug": "lea-matl-004-08-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:44.089Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:3b6722e2b1248a6956adb338b99bf4915e773a8af5534ef67f1f143a160fa552",
+  "normalized_content_hash": "7ac1c49ce5ee3d1ca108cecb422bf7b79de905a03183fa1611d458cc9420bb9b",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>The building permit process per PD 1096 is a regulatory gate. Incomplete or non-conforming submissions cause delays. As-built drawings and punch list documentation protect the owner's legal position and warranty claims. Never allow occupancy without final occupancy permit (CO) from LBO\u2014liability falls on the builder and owner if code violations are discovered post-occupancy.</Tip>",
+      "raw_hash": "sha256:56dc63f1812e4285ec8d61f04bf0ca9cf9abe25e61c5577e7ad2a3adfa0922e1",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: The building permit process per PD 1096 is a regulatory gate. Incomplete or non-conforming submissions cause delays. As-built drawings and punch list documentation protect the owner's legal position and warranty claims. Never allow occupancy without final occupancy permit (CO) from LBO\u2014liability falls on the builder and owner if code violations are discovered post-occupancy.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:97482cdc75615733cc26cfe8c857119d840b4418e323d283f1c5eb7785da7341",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "The building permit process per PD 1096 is a regulatory gate. Incomplete or non-conforming submissions cause delays. As-built drawings and punch list documentation protect the owner's legal position and warranty claims. Never allow occupancy without final occupancy permit (CO) from LBO\u2014liability falls on the builder and owner if code violations are discovered post-occupancy.",
+      "children_text": "The building permit process per PD 1096 is a regulatory gate. Incomplete or non-conforming submissions cause delays. As-built drawings and punch list documentation protect the owner's legal position and warranty claims. Never allow occupancy without final occupancy permit (CO) from LBO\u2014liability falls on the builder and owner if code violations are discovered post-occupancy.",
+      "start_offset": 7464,
+      "end_offset": 7852,
+      "line_start": 71,
+      "line_end": 71,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Proceeding Without Building Permit\" body=\"A contractor begins construction without waiting for building permit approval to accelerate schedule. The LBO discovers unpermitted work and orders demolition. Project suffers complete loss. PD 1096 requires permits; violation is criminal.\" />",
+      "raw_hash": "sha256:47d0d47e977caafb3b6ba974eb39158d804b1bf8e7c1fe4d8b36400717656914",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Proceeding Without Building Permit\", body=\"A contractor begins construction without waiting for building permit approval to accelerate schedule. The LBO discovers unpermitted work and orders demolition. Project suffers complete loss. PD 1096 requires permits; violation is criminal.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:cfe708c3111950733a53dc4af1508f9edb85ee2933e5ad8d18f793c6f54b5214",
+      "props": {
+        "title": "Proceeding Without Building Permit",
+        "body": "A contractor begins construction without waiting for building permit approval to accelerate schedule. The LBO discovers unpermitted work and orders demolition. Project suffers complete loss. PD 1096 requires permits; violation is criminal."
+      },
+      "props_json": {
+        "title": "Proceeding Without Building Permit",
+        "body": "A contractor begins construction without waiting for building permit approval to accelerate schedule. The LBO discovers unpermitted work and orders demolition. Project suffers complete loss. PD 1096 requires permits; violation is criminal."
+      },
+      "props_text": "title=\"Proceeding Without Building Permit\" body=\"A contractor begins construction without waiting for building permit approval to accelerate schedule. The LBO discovers unpermitted work and orders demolition. Project suffers complete loss. PD 1096 requires permits; violation is criminal.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7874,
+      "end_offset": 8183,
+      "line_start": 75,
+      "line_end": 75,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Inadequate Soil Testing\" body=\"A geotechnical investigation finds bearing capacity of 150 kPa, but the design (prepared elsewhere) assumes 200 kPa. Foundation settlement occurs post-occupancy, requiring underpinning and major repairs. Proper pre-design investigation prevents foundation disasters.\" />",
+      "raw_hash": "sha256:15ecebded91b18fb38025aac867fe193786e69b3d22fa225c3abbaf02f7ab628",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Inadequate Soil Testing\", body=\"A geotechnical investigation finds bearing capacity of 150 kPa, but the design (prepared elsewhere) assumes 200 kPa. Foundation settlement occurs post-occupancy, requiring underpinning and major repairs. Proper pre-design investigation prevents foundation disasters.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e233c7f09a2ac98d8970ed9022545a9047676712a318427f41d287fadf6bb7d8",
+      "props": {
+        "title": "Inadequate Soil Testing",
+        "body": "A geotechnical investigation finds bearing capacity of 150 kPa, but the design (prepared elsewhere) assumes 200 kPa. Foundation settlement occurs post-occupancy, requiring underpinning and major repairs. Proper pre-design investigation prevents foundation disasters."
+      },
+      "props_json": {
+        "title": "Inadequate Soil Testing",
+        "body": "A geotechnical investigation finds bearing capacity of 150 kPa, but the design (prepared elsewhere) assumes 200 kPa. Foundation settlement occurs post-occupancy, requiring underpinning and major repairs. Proper pre-design investigation prevents foundation disasters."
+      },
+      "props_text": "title=\"Inadequate Soil Testing\" body=\"A geotechnical investigation finds bearing capacity of 150 kPa, but the design (prepared elsewhere) assumes 200 kPa. Foundation settlement occurs post-occupancy, requiring underpinning and major repairs. Proper pre-design investigation prevents foundation disasters.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8185,
+      "end_offset": 8510,
+      "line_start": 77,
+      "line_end": 77,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList items={[\"Occupying the building without occupancy permit (CO)\u2014legally prohibited; owner/tenant are liable. Final inspection must be completed and violations corrected before CO issuance.\", \"Failing to document punch list items and closure\u2014contractor disputes arise post-occupancy; proper documentation protects all parties. Punch list must be signed off before final payment.\", \"As-built drawings incomplete or missing\u2014operations, maintenance, and future renovation suffer. As-builts must accurately reflect field changes, rebar placement, MEP routing, etc.\", \"Underestimating permit approval time\u2014expect 30\u201360 days post-application. Plan accordingly; expedited processing (if available) requires additional fees and coordination.\", \"Ignoring environmental clearances (ECC, DENR permits for hazardous materials)\u2014compliance is mandatory. Asbestos/lead abatement must be documented by certified contractors.\"]} />",
+      "raw_hash": "sha256:4ac116ef020a598c00f5e2fc4e744b0bdf3618e61506071dc632f34a02bd2eb9",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[\\\"Occupying the building without occupancy permit (CO)\u2014legally prohibited; owner/tenant are liable. Final inspection must be completed and violations corrected before CO issuance.\\\", \\\"Failing to document punch list items and closure\u2014contractor disputes arise post-occupancy; proper documentation protects all parties. Punch list must be signed off before final payment.\\\", \\\"As-built drawings incomplete or missing\u2014operations, maintenance, and future renovation suffer. As-builts must accurately reflect field changes, rebar placement, MEP routing, etc.\\\", \\\"Underestimating permit approval time\u2014expect 30\u201360 days post-application. Plan accordingly; expedited processing (if available) requires additional fees and coordination.\\\", \\\"Ignoring environmental clearances (ECC, DENR permits for hazardous materials)\u2014compliance is mandatory. Asbestos/lead abatement must be documented by certified contractors.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:cb8fdb5311a79b686b11817e6cfea01cea23586663e12ebb0518d80275281a75",
+      "props": {
+        "items": "{[\"Occupying the building without occupancy permit (CO)\u2014legally prohibited; owner/tenant are liable. Final inspection must be completed and violations corrected before CO issuance.\", \"Failing to document punch list items and closure\u2014contractor disputes arise post-occupancy; proper documentation protects all parties. Punch list must be signed off before final payment.\", \"As-built drawings incomplete or missing\u2014operations, maintenance, and future renovation suffer. As-builts must accurately reflect field changes, rebar placement, MEP routing, etc.\", \"Underestimating permit approval time\u2014expect 30\u201360 days post-application. Plan accordingly; expedited processing (if available) requires additional fees and coordination.\", \"Ignoring environmental clearances (ECC, DENR permits for hazardous materials)\u2014compliance is mandatory. Asbestos/lead abatement must be documented by certified contractors.\"]}"
+      },
+      "props_json": {
+        "items": "{[\"Occupying the building without occupancy permit (CO)\u2014legally prohibited; owner/tenant are liable. Final inspection must be completed and violations corrected before CO issuance.\", \"Failing to document punch list items and closure\u2014contractor disputes arise post-occupancy; proper documentation protects all parties. Punch list must be signed off before final payment.\", \"As-built drawings incomplete or missing\u2014operations, maintenance, and future renovation suffer. As-builts must accurately reflect field changes, rebar placement, MEP routing, etc.\", \"Underestimating permit approval time\u2014expect 30\u201360 days post-application. Plan accordingly; expedited processing (if available) requires additional fees and coordination.\", \"Ignoring environmental clearances (ECC, DENR permits for hazardous materials)\u2014compliance is mandatory. Asbestos/lead abatement must be documented by certified contractors.\"]}"
+      },
+      "props_text": "items={[\"Occupying the building without occupancy permit (CO)\u2014legally prohibited; owner/tenant are liable. Final inspection must be completed and violations corrected before CO issuance.\", \"Failing to document punch list items and closure\u2014contractor disputes arise post-occupancy; proper documentation protects all parties. Punch list must be signed off before final payment.\", \"As-built drawings incomplete or missing\u2014operations, maintenance, and future renovation suffer. As-builts must accurately reflect field changes, rebar placement, MEP routing, etc.\", \"Underestimating permit approval time\u2014expect 30\u201360 days post-application. Plan accordingly; expedited processing (if available) requires additional fees and coordination.\", \"Ignoring environmental clearances (ECC, DENR permits for hazardous materials)\u2014compliance is mandatory. Asbestos/lead abatement must be documented by certified contractors.\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8512,
+      "end_offset": 9440,
+      "line_start": 79,
+      "line_end": 79,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:3e009d36c9920fb65b38a1b90cc52fdce398188ac420fa9bbffe01c83851d45b"
+}

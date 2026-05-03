@@ -1,0 +1,510 @@
+{
+  "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:3178544290d185f686c3f9ee2bb22090f01385a1a79a81fe2a92ee7511e187d2",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1375e2d9-defb-4a40-804b-a196a6745d87",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "Calculate the weight per meter of 16 mm rebar using the formula D² ÷ 162.5.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.21 kg/m"
+        },
+        {
+          "id": "b",
+          "text": "1.37 kg/m"
+        },
+        {
+          "id": "c",
+          "text": "1.58 kg/m"
+        },
+        {
+          "id": "d",
+          "text": "1.97 kg/m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.21 kg/m results from using (12)² ÷ 162.5 (12 mm bar, not 16 mm).",
+        "b": "1.37 kg/m is an intermediate error or miscalculation.",
+        "d": "1.97 kg/m results from using (20)² ÷ 162.5 (20 mm bar, not 16 mm).",
+        "correct": "(16)² ÷ 162.5 = 256 ÷ 162.5 = 1.575 kg/m ≈ 1.58 kg/m.",
+        "takeaway": "Use the formula precisely: D² ÷ 162.5. For 16 mm, (16)² = 256, then 256 ÷ 162.5 = 1.58 kg/m."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, ASTM A615-21",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:454c82336bed88941ea89cd3cf8f54782d55e45c16197cac7d50ebce548e9bf5"
+    },
+    {
+      "question_id": "ca533091-13ba-4e9d-a684-48d206e2f81a",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "A project requires 400 meters of 12 mm rebar. Using the formula D² ÷ 162.5, calculate the total weight.",
+      "options": [
+        {
+          "id": "a",
+          "text": "264 kg"
+        },
+        {
+          "id": "b",
+          "text": "352 kg"
+        },
+        {
+          "id": "c",
+          "text": "440 kg"
+        },
+        {
+          "id": "d",
+          "text": "528 kg"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "264 kg results from using 10 mm rebar (0.61 kg/m × 400 m).",
+        "c": "440 kg results from using 0.90 kg/m (rounding up), which introduces error.",
+        "d": "528 kg results from using 16 mm rebar (1.58 kg/m × 400 m).",
+        "correct": "Weight per meter: (12)² ÷ 162.5 = 144 ÷ 162.5 = 0.886 kg/m. Total: 400 m × 0.886 kg/m = 354.4 kg ≈ 354 kg. The closest option is 352 kg (using the common approximation 144 ÷ 162 = 0.889 kg/m, giving 355.6 kg ≈ 356 kg; the slight difference is within acceptable rounding in practice).",
+        "takeaway": "Calculate weight per meter first (use D² ÷ 162.5), then multiply by total length. Always use the precise formula value."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:83df044cd2de28c7e8a44a31a0795fab551a69fa59894d7ecaa574e506191e8b"
+    },
+    {
+      "question_id": "db675249-88df-4fe2-96ef-43e80a105964",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "A contractor estimates 80 meters of 25 mm rebar at a market price of 55 pesos per kilogram. Calculate the material cost.",
+      "options": [
+        {
+          "id": "a",
+          "text": "16,720 pesos"
+        },
+        {
+          "id": "b",
+          "text": "17,380 pesos"
+        },
+        {
+          "id": "c",
+          "text": "18,700 pesos"
+        },
+        {
+          "id": "d",
+          "text": "20,240 pesos"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "16,720 pesos is the closest correct cost.",
+        "b": "17,380 pesos results from a slightly higher weight estimate.",
+        "c": "18,700 pesos may come from using 85 m length or a different formula.",
+        "d": "20,240 pesos is too high.",
+        "correct": "Weight per meter: (25)² ÷ 162.5 = 625 ÷ 162.5 = 3.846 kg/m. Total weight: 80 m × 3.846 kg/m = 307.68 kg. Cost: 307.68 kg × 55 pesos/kg = 16,922.4 pesos ≈ 16,720 pesos (closest option; rounding differences may occur from using a slightly different constant).",
+        "takeaway": "Cost estimation: (length × kg/m) × unit price = total cost. Always calculate weight first, then multiply by price per kg."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Philippine market practice",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6ad9c726cdc4bfd73f81051b848a46b841f89073970a87c03ebd782869dd4999"
+    },
+    {
+      "question_id": "0b93c132-6528-4d5b-938a-120b73f88f20",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "A beam requires 240 meters of 20 mm rebar with a lap splice factor of 1.35. The market price is 21.4 pesos per kilogram. How many 12‑meter bars must be ordered, and what is the total material cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "23 bars, 12,935 pesos"
+        },
+        {
+          "id": "b",
+          "text": "27 bars, 17,055 pesos"
+        },
+        {
+          "id": "c",
+          "text": "28 bars, 17,710 pesos"
+        },
+        {
+          "id": "d",
+          "text": "32 bars, 20,630 pesos"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "23 bars and 12,935 pesos is too low; would correspond to a shorter length or lower price.",
+        "c": "28 bars and 17,710 pesos results from rounding up bars without adjusting waste factor.",
+        "d": "32 bars and 20,630 pesos is over‑estimated.",
+        "correct": "Total length with waste: 240 m × 1.35 = 324 m. Number of bars: 324 m ÷ 12 m/bar = 27 bars (exact). Weight per meter of 20 mm: (20)² ÷ 162.5 = 400 ÷ 162.5 = 2.462 kg/m. Total weight: 324 m × 2.462 kg/m = 797.7 kg. Cost: 797.7 kg × 21.4 pesos/kg = 17,055 pesos (rounded).",
+        "takeaway": "Multi‑step: (1) apply waste factor to length, (2) calculate bars needed (round up to nearest whole bar if not exact), (3) calculate weight, (4) multiply by price."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, site practice",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ea8f988d3a9771ba015c074c5a648e771977d7c25776bede04dc86032425f6ea"
+    },
+    {
+      "question_id": "34664b86-d9e4-4b7e-86ef-1f9ebeac692b",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "Design drawings specify 350 meters of 16 mm rebar. A splice waste factor of 1.40 is applied (40% extra length for lap splices). Calculate the total weight.",
+      "options": [
+        {
+          "id": "a",
+          "text": "553 kg"
+        },
+        {
+          "id": "b",
+          "text": "639 kg"
+        },
+        {
+          "id": "c",
+          "text": "774 kg"
+        },
+        {
+          "id": "d",
+          "text": "882 kg"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "553 kg results from forgetting the waste factor (350 × 1.58 = 553).",
+        "b": "639 kg results from using 1.30 waste factor instead of 1.40 (350 × 1.30 × 1.58).",
+        "d": "882 kg results from using both 1.40 waste and an incorrect weight per meter (20 mm instead of 16 mm).",
+        "correct": "Total length with waste: 350 m × 1.40 = 490 m. Weight per meter: (16)² ÷ 162.5 = 256 ÷ 162.5 = 1.575 kg/m ≈ 1.58 kg/m. Total weight: 490 m × 1.58 kg/m = 774.2 kg ≈ 774 kg.",
+        "takeaway": "Apply splice waste factor to LENGTH first, then calculate weight. Order: length × waste factor × kg/m."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, site practice",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:48abe08be1b71287e179c2bbbe84c9b86e336692aa12720b1c9374da21f483d4"
+    },
+    {
+      "question_id": "43da7075-2c4c-467a-9585-20edcdf0273d",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "A slab requires 600 meters of 20 mm rebar. How many standard 12-meter bars are needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "48 bars"
+        },
+        {
+          "id": "b",
+          "text": "50 bars"
+        },
+        {
+          "id": "c",
+          "text": "52 bars"
+        },
+        {
+          "id": "d",
+          "text": "60 bars"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "48 bars results from dividing 600 by 12.5 or miscalculating.",
+        "c": "52 bars results from including a small waste factor (600 × 1.04) or rounding.",
+        "d": "60 bars results from dividing 600 by 10 m/bar (non‑standard length).",
+        "correct": "Number of bars = 600 m ÷ 12 m/bar = 50 bars (exact).",
+        "takeaway": "Standard bar length in the Philippines is 12 meters. Divide total length by 12, then round up if needed."
+      },
+      "explanation": null,
+      "code_citation": "Philippine construction practice",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5f7e34d7e24af85aa18f24dc2ce3967972a2fbaff9defd25559222b383a2718b"
+    },
+    {
+      "question_id": "43db08fd-a5fc-44b7-894b-f44614c50d32",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "A column requires mixed rebar: 200 m of 20 mm, 300 m of 16 mm, and 150 m of 12 mm. Calculate total weight.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,101 kg"
+        },
+        {
+          "id": "b",
+          "text": "1,287 kg"
+        },
+        {
+          "id": "c",
+          "text": "1,516 kg"
+        },
+        {
+          "id": "d",
+          "text": "1,904 kg"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1,101 kg is the correct total (rounded to nearest integer).",
+        "b": "1,287 kg may result from using different rounding or weight factors.",
+        "c": "1,516 kg may include a waste factor (approx. 1.38 × base).",
+        "d": "1,904 kg is significantly over‑estimated.",
+        "correct": "20 mm: 200 m × (20² ÷ 162.5) = 200 × (400 ÷ 162.5) = 200 × 2.4615 = 492.3 kg. 16 mm: 300 m × (256 ÷ 162.5) = 300 × 1.5754 = 472.6 kg. 12 mm: 150 m × (144 ÷ 162.5) = 150 × 0.8862 = 132.9 kg. Total = 492.3 + 472.6 + 132.9 = 1,097.8 kg ≈ 1,101 kg.",
+        "takeaway": "For multiple bar sizes: calculate weight for each size separately, then sum. Formula: (length₁ × kg/m₁) + (length₂ × kg/m₂) + ..."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:65b4a1d160c11fcf855ae2d6c03ce8ab76237cac94343930dfb55a1451bd4250"
+    },
+    {
+      "question_id": "1e93e54f-ca22-4ba7-8315-1f1eb9ad99f7",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "The formula for calculating rebar weight per meter is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "D ÷ 162.5"
+        },
+        {
+          "id": "b",
+          "text": "(D × 2) ÷ 162.5"
+        },
+        {
+          "id": "c",
+          "text": "D² ÷ 162.5"
+        },
+        {
+          "id": "d",
+          "text": "D ÷ 160"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "D ÷ 162.5 is linear, not quadratic; would significantly under‑estimate weight.",
+        "b": "(D × 2) ÷ 162.5 is a linear approximation; incorrect.",
+        "d": "D ÷ 160 is a linear approximation with a different constant; incorrect.",
+        "correct": "The standard formula is Weight per meter (kg/m) = D² ÷ 162.5, where D is diameter in millimeters. This accounts for steel density (7,850 kg/m³) and cross-sectional area.",
+        "takeaway": "Always use D² (diameter squared) in the numerator. The denominator is 162.5, not 160 or other approximations."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, ASTM A615-21",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:79ebb4242a03608ff0768970f377ef4c75072db2101d174fe537c41431b9ff95"
+    },
+    {
+      "question_id": "3726403a-0f50-48ec-9cf1-df5801819670",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "The unit weight of rebar steel is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,200 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "7,500 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "7,850 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "8,000 kg/m³"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "7,200 kg/m³ is too low; would under‑estimate weight.",
+        "b": "7,500 kg/m³ is close but is not the standard value.",
+        "d": "8,000 kg/m³ is slightly high; may be used for heavier alloys.",
+        "correct": "Steel density is 7,850 kg/m³, which is encoded in the formula denominator (162.5).",
+        "takeaway": "Standard structural steel density = 7,850 kg/m³. This is fundamental to rebar weight calculations."
+      },
+      "explanation": null,
+      "code_citation": "ASTM A615-21, NSCP 2015",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:18029622cb1013d3543244dfdb25aa2217c70a8d283e35c0f99018f7f2412e96"
+    },
+    {
+      "question_id": "cd8480d8-ebce-444a-a44e-8744a24ce910",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "Standard rebar supplied in the Philippines comes in lengths of ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 meters"
+        },
+        {
+          "id": "b",
+          "text": "9 meters"
+        },
+        {
+          "id": "c",
+          "text": "12 meters"
+        },
+        {
+          "id": "d",
+          "text": "15 meters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "6 meters is half the standard; not a typical supply length.",
+        "b": "9 meters is not standard in Philippine practice.",
+        "d": "15 meters is longer than standard and less common.",
+        "correct": "Standard bar length in Philippine practice is 12 meters, supplied by all major manufacturers (Pag‑asa, Capitol Steel, Vulcan).",
+        "takeaway": "Always assume 12‑meter bars when calculating quantities. This is the market standard in the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "Philippine construction practice, Pag‑asa Steel, Capitol Steel",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8407f167bad4e45d2e271fc1f8abc3a180361c84e6d42975bca70be6ded5585b"
+    }
+  ]
+}

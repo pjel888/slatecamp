@@ -1,0 +1,25 @@
+{
+  "attempted_at": "2026-05-03T10:55:38.808Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "diff-report.json marks candidate unsafe.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+  "slug": "lea-util-003-06-the-distribution-hierarchy",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:52a902712bbf933d9a365d9d63bb3d442e6319679c0c461286a7df71602ae51b",
+  "original_hash": "sha256:52a902712bbf933d9a365d9d63bb3d442e6319679c0c461286a7df71602ae51b",
+  "candidate_hash": "sha256:af9080283ccc15e8c0b88628deb8e9f13b845aa68f1f6e6a4841113f5c38752b",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

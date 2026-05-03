@@ -1,0 +1,563 @@
+{
+  "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:15fa5a2b1704909a2ee2a49b6f3204394df58e684cc244da889740d1d4b4b2bd",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "45b86527-bd11-4ce4-9b1c-3e2a94f68138",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Accessible Seating in Assembly Areas\", if a project requires 900 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "900 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "900 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "900 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "900 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 900 mm as the requirement. Context: back. An accessible corridor passes through three of the spaces. Each space is 9...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.288092+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f3c5081c2dc217bc2a77b225980f01b330317fe7fcb722e15284699c2f9723fb"
+    },
+    {
+      "question_id": "1c4e9c82-9c5c-4ed9-8ee1-3dfb069fcaea",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under the OLD BP 344 IRR (pre-2024), how many wheelchair spaces were required in a 520-seat concert hall, and how does this compare to the requirement under the 2024 IRR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Old IRR: 6 spaces (all for the first 500 seats, with the remaining 20 seats below the threshold for an extra space); 2024 IRR: 16 spaces (3% of 520 rounded up)"
+        },
+        {
+          "id": "B",
+          "text": "Old IRR: 7 spaces (6 for the first 500 seats + 1 for the 20 above 500); 2024 IRR: 16 spaces (3% of 520 = 15.6, rounded up to 16)"
+        },
+        {
+          "id": "C",
+          "text": "Old IRR: 8 spaces (6 for the first 500 + 2 for each 100 above 500); 2024 IRR: 15 spaces (3% of 520 rounded down to 15)"
+        },
+        {
+          "id": "D",
+          "text": "Old IRR: 7 spaces (6 + 1 per 100 above 500, with 20 seats counted as one unit); 2024 IRR: 15 spaces (3% of 520 = 15.6, rounded down)"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Old IRR: 7 spaces (6 + 1 for the 20 seats above 500); 2024 IRR: 16 spaces (15.6 rounded up)",
+        "explanation": "Under the old IRR: 6 spaces cover the first 500 seats. Above 500, the rule is +1 per 100 seats (or fraction thereof). The hall has 20 seats above 500, which counts as one unit of 100 → 1 additional space. Total: 7. Under the 2024 IRR: 520 × 3% = 15.6, rounded UP to 16. This is a 2.3× increase. The article's 60-second blitz specifically uses a 520-seat example to illustrate this calculation (answer: 7 under old IRR).",
+        "common_misconceptions": [
+          "Rounding 15.6 down to 15 — accessibility always rounds up",
+          "Forgetting to add the +1 for the partial 100-seat block under the old IRR formula"
+        ]
+      },
+      "explanation": "Tests both old and new IRR calculations using the article's specific 520-seat example.",
+      "code_citation": "BP 344 2024 IRR vs Old BP 344 IRR, Appendix D Sec. 4",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b867037e061372bc46d695fbd6b5038942dddb00e2f3dc8733d74300c553b8fe"
+    },
+    {
+      "question_id": "447f242f-f2fe-4e46-b760-96088aa9cb70",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under the 2024 IRR of BP 344, Appendix D Section 4, what percentage of total assembly seating must be provided as wheelchair spaces, and how does this differ from the old IRR rule for a hall with 51 to 300 seats?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2024 IRR: 3% of total seats (flat rule); Old IRR: 4 fixed spaces for 51–300 seats — the new rule is proportional and eliminates the tiered table"
+        },
+        {
+          "id": "B",
+          "text": "2024 IRR: 5% of total seats; Old IRR: 4 fixed spaces for 51–300 seats — the 5% rule applies to both general and assembly seating"
+        },
+        {
+          "id": "C",
+          "text": "2024 IRR: 3% of total seats; Old IRR: 6 fixed spaces for any hall under 300 seats — the threshold changed in the 2024 revision"
+        },
+        {
+          "id": "D",
+          "text": "2024 IRR: 2% of total seats; Old IRR: 2 fixed spaces for 51–300 seats — the new rule slightly reduces the requirement for smaller venues"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "2024 IRR uses a flat 3% rule; old IRR required 4 fixed spaces for 51–300 seats",
+        "explanation": "BP 344 2024 IRR Appendix D Section 4 replaces the old tiered table with a single flat 3% rule applicable to any seating capacity. Under the old IRR, a hall with 51–300 seats required exactly 4 wheelchair spaces. The 3% rule is proportional and eliminates the 'cliff effect' where a 499-seat hall needed 6 spaces but a 501-seat hall needed 7.",
+        "common_misconceptions": [
+          "Confusing the 3% wheelchair-space rule with the separate 5% priority waiting-seat rule (Sec 18.2.b.iii)",
+          "Applying the old tiered table to new construction designed under the 2024 IRR"
+        ]
+      },
+      "explanation": "Tests recall of the 2024 IRR's flat 3% rule versus the old tiered table — a top LEA exam trap.",
+      "code_citation": "BP 344 2024 IRR, Appendix D Sec. 4",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c81a91cf9a12f0b2e9576183eb3d58d190165918f5f77720dd7c7a85172cc6b8"
+    },
+    {
+      "question_id": "f304b641-6cd2-4174-83d8-1e99572eda8a",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A multiplex cinema auditorium has 750 seats and is designed under the 2024 BP 344 IRR. How many wheelchair spaces are required, and what is the minimum total floor area those spaces must occupy?",
+      "options": [
+        {
+          "id": "A",
+          "text": "22 wheelchair spaces occupying at least 23.76 m² — 3% of 750 rounds down to 22, each space is 900 × 1200 mm"
+        },
+        {
+          "id": "B",
+          "text": "23 wheelchair spaces occupying at least 24.84 m² — 3% of 750 = 22.5, rounded up to 23; each space is 900 × 1200 mm"
+        },
+        {
+          "id": "C",
+          "text": "15 wheelchair spaces occupying at least 16.20 m² — 2% of 750 = 15; each space is 900 × 1200 mm per the 2024 rule"
+        },
+        {
+          "id": "D",
+          "text": "23 wheelchair spaces occupying at least 41.40 m² — 3% of 750 rounds up to 23; each space is 900 × 2000 mm per Appendix D"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "23 spaces (3% of 750 = 22.5, always round up); 23 × 0.9 × 1.2 m = 24.84 m²",
+        "explanation": "The 2024 IRR applies a flat 3% rule and fractions always round up — never down — for accessibility counts. 750 × 3% = 22.5 → 23 spaces. Each wheelchair space requires a minimum 900 mm × 1200 mm clear footprint (Appendix D Sec. 4.5), giving 23 × 1.08 m² = 24.84 m² minimum. The old IRR would have yielded only 8–9 spaces for this venue.",
+        "common_misconceptions": [
+          "Rounding 22.5 down to 22 — accessibility counts always round up",
+          "Using the old IRR tiered formula (6 + extras) instead of the 2024 flat 3% rule",
+          "Confusing the 900 × 1200 mm wheelchair space footprint with the 1800 × 1800 mm turning circle"
+        ]
+      },
+      "explanation": "Computation question directly from the article's 750-seat worked example — tests rounding and footprint calculation.",
+      "code_citation": "BP 344 2024 IRR, Appendix D Sec. 4, 4.5",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:652762ac5fceba5f16f34b968918d5e629850199f83efc5e3adebfc67c25a823"
+    },
+    {
+      "question_id": "6275a855-a97b-4b41-91f2-1d59d366e599",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Appendix D Section 4.2, what is the rule governing the relationship between accessible circulation routes and wheelchair seating spaces?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accessible routes may overlap wheelchair spaces only when those spaces are unoccupied and the overlap does not exceed 600 mm in depth"
+        },
+        {
+          "id": "B",
+          "text": "Accessible routes shall NOT overlap wheelchair seating areas under any circumstances — the route and the space must remain separate at all times"
+        },
+        {
+          "id": "C",
+          "text": "Accessible routes should avoid overlapping wheelchair spaces but may do so when no alternative path exists and a warning sign is posted"
+        },
+        {
+          "id": "D",
+          "text": "Accessible routes must pass through at least two wheelchair spaces per row to ensure continuous circulation within the seating bowl"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Section 4.2 is absolute: the accessible route SHALL NOT overlap wheelchair seating areas, occupied or not",
+        "explanation": "Appendix D Sec. 4.2 contains no conditional language. The prohibition is absolute. When a wheelchair user occupies the space, an overlapping circulation route would trap or block them. The space must be a safe haven, not a corridor. The exam frequently offers the distractor that overlap is permitted when spaces are unoccupied — this is explicitly false.",
+        "common_misconceptions": [
+          "Believing the overlap prohibition applies only when spaces are occupied",
+          "Assuming a warning sign or alternative path makes an overlap acceptable"
+        ]
+      },
+      "explanation": "Tests a frequently-tested absolute prohibition — one of the article's six TRAP LEARTS.",
+      "code_citation": "BP 344 2024 IRR, Appendix D Sec. 4.2",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4128f281c0f18e9f831a056273d677d80d843289fb3f64259e7156be8e829d25"
+    },
+    {
+      "question_id": "b4bc3006-6beb-4731-b91f-16a186c743f8",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A sports arena lobby has 80 seats in its ticketing waiting area. Under BP 344 2024 IRR Appendix D Section 18.2.b.iii, how many of these seats must be designated as priority seats for PWDs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 seats — 5% of 80 = 4.0, rounded down to 3 since the result is a whole number with no fraction"
+        },
+        {
+          "id": "B",
+          "text": "4 seats — 5% of 80 = 4.0, an exact whole number requiring no rounding"
+        },
+        {
+          "id": "C",
+          "text": "3 seats — the priority seat rule requires 3% of waiting area seats, not 5%, giving 80 × 3% = 2.4, rounded up to 3"
+        },
+        {
+          "id": "D",
+          "text": "2 seats — the minimum is always 2 priority seats regardless of waiting area size, unless 5% yields a higher number"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "4 seats — 5% of 80 = 4.0 exactly; priority waiting seats are separate from the 3% wheelchair spaces in the seating bowl",
+        "explanation": "Section 18.2.b.iii requires 5% of waiting area seats to be designated priority seats for PWDs. 80 × 5% = 4.0, an exact whole number. These priority seats are for lobbies and queue areas — they are entirely separate from the 3% wheelchair spaces in the seating bowl. Candidates who confuse the two percentages or apply 3% to waiting areas will select option C.",
+        "common_misconceptions": [
+          "Applying the 3% wheelchair-space rule to waiting areas instead of the 5% priority-seat rule",
+          "Confusing priority waiting seats (for queuing lobbies) with accessible seating positions in the performance area"
+        ]
+      },
+      "explanation": "Tests the 5% priority waiting seat rule and ensures it is not confused with the 3% wheelchair space rule.",
+      "code_citation": "BP 344 2024 IRR, Appendix D Sec. 18.2.b.iii",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4612a07a905ebcdbf1d66699cf791ade62d8c465406259f437c066b54f7a010d"
+    },
+    {
+      "question_id": "7fc1c331-4b0b-40b6-9236-aeb7e4a89cb6",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Where must wheelchair viewing areas be located relative to circulation infrastructure, per BP 344 2024 IRR Appendix D Section 4.4, and what is the surface condition requirement for each wheelchair space under Section 4.5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wheelchair spaces must adjoin accessible circulation routes; each space must have a clear, firm, and level surface at 900 mm × 1200 mm minimum"
+        },
+        {
+          "id": "B",
+          "text": "Wheelchair spaces must be located at the front row of the assembly area; each space must have a slip-resistant surface at 900 mm × 1500 mm minimum"
+        },
+        {
+          "id": "C",
+          "text": "Wheelchair spaces must adjoin fire exit stairs; each space must have a clear, firm, and level surface at 1200 mm × 1200 mm minimum"
+        },
+        {
+          "id": "D",
+          "text": "Wheelchair spaces must be located in dedicated accessible zones separate from all circulation; each space surface must have minimum 50% luminance contrast from adjacent floor finishes"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Spaces must adjoin accessible circulation (Sec 4.4); surface must be clear, firm, and level at minimum 900 × 1200 mm (Sec 4.5)",
+        "explanation": "Section 4.4 requires wheelchair viewing areas to adjoin accessible circulation routes — this supports dispersal throughout the seating bowl and ensures PWDs can reach their spaces without crossing non-accessible terrain. Section 4.5 specifies the minimum footprint as 900 mm × 1200 mm (depth × width or front/rear access orientation) with a surface that is clear, firm, and level. The three surface adjectives — clear, firm, level — are individually testable.",
+        "common_misconceptions": [
+          "Confusing the 900 × 1200 mm wheelchair space footprint with the 1800 × 1800 mm turning circle",
+          "Placing wheelchair spaces adjacent to fire stairs rather than accessible circulation routes"
+        ]
+      },
+      "explanation": "Tests two linked requirements — location relative to circulation and surface condition specifications.",
+      "code_citation": "BP 344 2024 IRR, Appendix D Sec. 4.4, 4.5",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:db90d12d8a5d6d4e68cc3992fd0f691541f6ef6fe4ae43989e17081de363fc8d"
+    },
+    {
+      "question_id": "719a26b0-9c53-4dda-8014-9f5873f2def2",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the required handrail height at wheelchair seating positions in assembly areas under BP 344 2024 IRR Appendix D Section 4.7, and why does this differ from the 900 mm height required at accessible stairs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "750 mm at wheelchair seating positions; 900 mm at stairs — the lower height aligns with the natural lateral arm reach of a seated wheelchair user, making a 900 mm rail too high for lateral support"
+        },
+        {
+          "id": "B",
+          "text": "900 mm at both wheelchair seating positions and accessible stairs — BP 344 uses a single handrail height standard for all applications in assembly buildings, ensuring uniformity and compliance"
+        },
+        {
+          "id": "C",
+          "text": "800 mm at wheelchair seating positions; 900 mm at stairs — the 800 mm height matches the lavatory rim height used elsewhere in BP 344 for seated users, providing consistency across different elements"
+        },
+        {
+          "id": "D",
+          "text": "750 mm at wheelchair seating positions; 750 mm at accessible stairs — both contexts involve seated or semi-seated users and use the same lower height, simplifying design and construction requirements"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "750 mm at WC seating (Sec 4.7); 900 mm at stairs — different heights for different biomechanical contexts",
+        "explanation": "Seated wheelchair users reach forward at approximately 750–800 mm. A 900 mm handrail is too high for lateral support from a seated position. Sec. 4.7 specifically sets 750 mm for the front and sides of wheelchair positions. The stair handrail at 900 mm is for ambulatory users gripping while walking. The exam loves this distinction — both numbers are real, but they apply to different contexts.",
+        "common_misconceptions": [
+          "Applying the 900 mm stair handrail height to wheelchair seating positions",
+          "Confusing the 800 mm lavatory rim height with a grab bar or handrail height"
+        ]
+      },
+      "explanation": "Tests the critical 750 mm vs 900 mm handrail distinction — TRAP LEART #3 in the article.",
+      "code_citation": "BP 344 2024 IRR, Appendix D Sec. 4.7",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:326f49f6e579e0a02b0bee2172183b88df2c7a6f36261f51bd28e656ebadf72f"
+    },
+    {
+      "question_id": "a731628a-6a5e-4913-9440-24f7ae4aaa79",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A reviewer audits a 500-seat theater designed under the 2024 BP 344 IRR. The design provides 6 wheelchair spaces, all clustered in a single back row, with the accessible corridor passing through three of those spaces. Each space is 900 mm × 1200 mm. How many distinct BP 344 violations are present?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One violation — only the number of spaces is wrong (should be 15); the location and route overlap are design preferences, not code requirements, which is a misunderstanding of the regulations"
+        },
+        {
+          "id": "B",
+          "text": "Two violations — insufficient space count (6 instead of 15) and the accessible route overlapping wheelchair spaces (Sec. 4.2), which are both critical compliance issues"
+        },
+        {
+          "id": "C",
+          "text": "Three violations — insufficient space count, route overlap through spaces, and spaces not adjoining accessible circulation throughout the bowl (Sec. 4.4), which are all significant design flaws"
+        },
+        {
+          "id": "D",
+          "text": "Four violations — insufficient count (Sec. 4), route overlap (Sec. 4.2), failure to adjoin accessible circulation (Sec. 4.4), and access through adjacent spaces (Sec. 4.3)"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Four violations: wrong count (500 × 3% = 15 required), route overlap (Sec 4.2), clustering failure (Sec 4.4), and pass-through access (Sec 4.3)",
+        "explanation": "500 × 3% = 15 spaces required — only 6 provided (Violation 1: Sec. 4). The accessible corridor passes through spaces — absolute prohibition (Violation 2: Sec. 4.2). All spaces clustered in one back row denies equal seating choice and violates the requirement that spaces adjoin accessible circulation throughout the bowl (Violation 3: Sec. 4.4 + RA 7277). With spaces grouped in a row, accessing interior spaces requires passing through outer spaces (Violation 4: Sec. 4.3). This is the article's Protégé Effect Challenge worked example.",
+        "common_misconceptions": [
+          "Counting only the obvious violation (wrong number) and missing the three dimensional/placement violations",
+          "Treating clustering and pass-through access as design preferences rather than explicit code prohibitions"
+        ]
+      },
+      "explanation": "Multi-violation scenario from the article's Protégé Effect Challenge — tests integrated application of all Sec. 4 requirements.",
+      "code_citation": "BP 344 2024 IRR, Appendix D Sec. 4, 4.2, 4.3, 4.4",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:09a629b957a19ea6034e5086ca8c35298e91509517b3644a62bfa854c22acc45"
+    },
+    {
+      "question_id": "94882d23-3f10-48c1-b81f-ddc00945cace",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Appendix D Section 4.3, why is it prohibited to access one wheelchair space by passing through another wheelchair space?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because building fire codes require each wheelchair space to have two independent egress paths, and a shared access point would reduce available egress routes below code minimum"
+        },
+        {
+          "id": "B",
+          "text": "Because if user A must move to allow user B access to their space, user B's accessibility becomes contingent on user A's cooperation, violating the principle of autonomous access under RA 7277"
+        },
+        {
+          "id": "C",
+          "text": "Because adjacent wheelchair spaces sharing an access point create a sight-line obstruction that prevents both users from viewing the performance area simultaneously"
+        },
+        {
+          "id": "D",
+          "text": "Because the minimum 900 × 1200 mm footprint per space does not provide enough width for two wheelchairs to maneuver simultaneously in the shared access corridor"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Autonomous access is a right under RA 7277 — contingent access through another user's space violates this principle",
+        "explanation": "Section 4.3 is grounded in dignity and independence. If wheelchair user A must move to let wheelchair user B reach their designated space, B's ability to use their accommodation depends entirely on A's cooperation. This directly violates the principle of autonomous access enshrined in RA 7277 (Magna Carta for PWDs), which guarantees equal access in public places — not access conditional on another person's cooperation.",
+        "common_misconceptions": [
+          "Attributing the prohibition to fire egress requirements rather than the dignity/autonomy principle",
+          "Believing the prohibition is purely geometric (about space size) rather than about independent access rights"
+        ]
+      },
+      "explanation": "Tests understanding of the legal rationlea behind Sec. 4.3 — links the dimensional rule to its human rights foundation.",
+      "code_citation": "BP 344 2024 IRR, Appendix D Sec. 4.3; RA 7277",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:22d2bb4ed6f4c0e47a265148c27dc9096780ac6ad6f46c3dfebcbd22d90f1394"
+    },
+    {
+      "question_id": "4b28640f-9b21-4577-91a3-a14869e161ce",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "In which specific venue type does the BP 344 2024 IRR explicitly mandate companion seats adjacent to wheelchair spaces, and what does the code say about companion seating in cinemas and theaters?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sports facilities (Appendix D Sec. 3.3.a) — companion seats are explicitly mandated; for cinemas and theaters, companion seating is best practice implied by dispersal and adjacency rules but not an explicit mandate in the 2024 IRR"
+        },
+        {
+          "id": "B",
+          "text": "Cinemas and theaters only — the 2024 IRR explicitly mandates companion seats for entertainment venues but treats sports facilities differently due to tiered seating configurations and sightline considerations"
+        },
+        {
+          "id": "C",
+          "text": "All assembly occupancies equally — the 2024 IRR mandates companion seats in every venue type with more than 50 seats as a universal requirement applied without distinction between venue categories"
+        },
+        {
+          "id": "D",
+          "text": "Sports facilities and cinemas — both venue types have an explicit companion seat mandate under Appendix D Sec. 3.3.a and Sec. 4.8 respectively, with identical implementation requirements"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Explicit mandate for companion seats is in Appendix D Sec. 3.3.a for sports facilities only; cinemas/theaters have implied but not explicit requirements",
+        "explanation": "This is TRAP ALERT #4 in the article. The 2024 IRR explicitly mandates companion seats in sports facilities (Appendix D Sec. 3.3.a). For general cinemas and theaters, companion seating is strongly implied by the dispersal and adjacency requirements but the code does not contain an explicit mandate for those venue types. Candidates who over-generalize from sports facilities to all assembly spaces will answer incorrectly.",
+        "common_misconceptions": [
+          "Generalizing the sports facility companion seat mandate to all assembly venues",
+          "Believing cinemas have no companion seat requirement at all — they do in practice, but it is implied rather than explicitly mandated"
+        ]
+      },
+      "explanation": "Tests the precise scope of the companion seat mandate — a common over-generalization trap on the LEA.",
+      "code_citation": "BP 344 2024 IRR, Appendix D Sec. 3.3.a",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:53.967492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:37410f0e554bc626d74ce328343e4e9d17567f85a88e081da58830b7ace2e25c"
+    }
+  ]
+}

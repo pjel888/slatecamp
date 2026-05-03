@@ -1,0 +1,508 @@
+{
+  "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b29155fd1f28f0b5c825b703124e7872477ed872c54d1cfa1d1a5be537f4e2ff",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "6aecf565-2191-4ae5-9586-1ca5fb0911ae",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "According to construction waste composition studies, what are the three largest waste streams by weight in construction and demolition projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wood (25-45%), concrete/masonry (20-40%), drywall/gypsum or roofing (10-20%) - varies by study and project type"
+        },
+        {
+          "id": "b",
+          "text": "Concrete and masonry (50%), gypsum (15%), metals (10%) with variations depending on the specific project and location"
+        },
+        {
+          "id": "c",
+          "text": "Wood (35%), metals (25%), concrete (20%) as commonly observed in urban construction sites"
+        },
+        {
+          "id": "d",
+          "text": "Mixed materials (60%), concrete (25%), wood (15%) which is typical in large-scale demolition projects"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "50% for concrete/masonry overstates the proportion; the 40% figure is more accurate for demolition-inclusive studies.",
+        "c": "This reverses wood and metal proportions. Wood typically exceeds metals in C&D waste by 2:1.",
+        "d": "Assigning 60% to mixed materials is unrealistic; mixed and contaminated waste is much smaller, typically 20-30%.",
+        "correct": "Concrete and masonry comprise approximately 40% of C&D waste by weight, wood 20%, and metals 10%. The remaining 30% includes gypsum (5%), insulation, adhesives, and other mixed materials. These percentages reflect typical demolition-heavy waste streams.",
+        "takeaway": "Concrete (40%), wood (20%), and metals (10%) are the three largest C&D waste streams. Candidates must use these percentages to prioritize waste reduction strategies, focusing on high-volume materials first."
+      },
+      "explanation": null,
+      "code_citation": "Metro Vancouver C&D Study 2022; Minnesota PCA C&D Study",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26036642794fdcebfe4c3cd2dbf2c0da5903f2afb7fb5f92744cb0b79b013942"
+    },
+    {
+      "question_id": "c2adc4f4-4d40-41aa-888e-6d0c966eb5e6",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "A conventional construction project generates 10 kg of waste per m² of building floor area. Lean construction implementation reduces waste by 25%, and prefabrication reduces it an additional 15% of the original baseline. What is the approximate total waste generation target per m²?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approximately 6.4 kg/m² (10 kg baseline × 0.75 × 0.85 = 6.4 kg/m²; two independent 25% and 15% reductions compound to ~40% total reduction)"
+        },
+        {
+          "id": "b",
+          "text": "Approximately 6.0 kg/m² (10 kg baseline × 0.40 = 6.0 kg/m²)"
+        },
+        {
+          "id": "c",
+          "text": "Approximately 7.5 kg/m² (10 kg baseline × 0.25 = 7.5 kg/m²; only the first reduction applies)"
+        },
+        {
+          "id": "d",
+          "text": "Approximately 8.5 kg/m² (10 kg baseline - 1.5 kg = 8.5 kg/m²; reductions are additive, not multiplicative)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "6.0 kg/m² assumes a full 40% reduction, not accounting for the correct multiplicative calculation (25% + 15% does not equal 40% when applied sequentially).",
+        "c": "7.5 kg/m² applies only the first reduction (lean) and omits prefabrication, which is incomplete.",
+        "d": "This incorrectly adds reductions linearly (10 - 1.5) rather than applying them sequentially and multiplicatively to the baseline.",
+        "correct": "Lean implementation: 10 × 0.75 = 7.5 kg/m². Prefabrication applies to this reduced baseline: 7.5 × 0.85 = 6.375 ≈ 6.4 kg/m². The two reductions are multiplicative, not additive. Total reduction is 1 - (0.75 × 0.85) = ~0.36 or 36%.",
+        "takeaway": "When multiple waste reduction strategies are applied sequentially, reductions compound multiplicatively, not additively. Candidates must calculate each reduction against the previous baseline, not against the original."
+      },
+      "explanation": null,
+      "code_citation": "Lean Construction Institute; Prefabrication Waste Reduction Studies",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:83ec15473992e1ee92708ba4065b2ac4de3633de3ef9f19a873f79d9d6958c0e"
+    },
+    {
+      "question_id": "7c60ae97-22e9-4fd1-bb4c-80c6caf4a76a",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "A waste management plan specifies that concrete waste will be crushed and reused as base course aggregate on-site, wood will be collected for mulching, metals will be segregated and sold to a scrap delear, and gypsum will be sent to a recycling facility. Which waste stream faces the highest risk of failing to meet its intended recycling destination, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gypsum: most of Philippines lacks dedicated gypsum recycling facilities; segregated gypsum is likely to be landfilled despite plan specifications due to infrastructure scarcity"
+        },
+        {
+          "id": "b",
+          "text": "Concrete: on-site crushing requires equipment and expertise; most projects lack in-house crushers and cannot execute this strategy without significant capital investment"
+        },
+        {
+          "id": "c",
+          "text": "Metals: metals are high-value and guaranteed to be recycled; no risk exists because the scrap market always absorbs ferrous and non-ferrous materials"
+        },
+        {
+          "id": "d",
+          "text": "Wood: mulching is a common practice requiring no special infrastructure; wood always reaches its intended destination through established composting channels"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "On-site concrete crushing is executable via mobile crushers rented or contracted; this is common practice in major projects.",
+        "c": "Metal recycling is nearly guaranteed due to high scrap value; market demand is consistent and reliable.",
+        "d": "Wood mulching markets are well-established; chipping and hauling are straightforward processes with reliable destination facilities.",
+        "correct": "Gypsum recycling is limited globally in C&D streams; concrete crushing and metal markets more established. Segregated gypsum often ends up in landfill despite plans. Concrete on-site crushing is feasible with mobile crushers; metal recycling is market-driven and reliable. Wood has established mulch and fuel markets.",
+        "takeaway": "Waste management plans must account for local infrastructure limitations. Gypsum, specialty glass, and other non-common materials face higher risk of landfilling despite segregation. Candidates must evaluate facility availability before specifying recycling destinations."
+      },
+      "explanation": null,
+      "code_citation": "DENR Recycling Infrastructure Assessment; Waste Management Best Practices",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5cda8e67dd402afd3dede33656ac57bf562154a100f2091ee2dcadf92c2d57ea"
+    },
+    {
+      "question_id": "5301c01a-f7f5-49c7-ae0e-831e34ca42e1",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "What advantage does prefabrication of building components (floor systems, wall panels, roof trusses) provide in reducing construction waste?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Factory-controlled environment enables precision CNC cutting (reduces off-cuts), quality control inspection before delivery (minimizes damage), and assembly-line processes (reduces handling damage) versus on-site field construction with weather exposure and improvisation"
+        },
+        {
+          "id": "b",
+          "text": "Prefabrication eliminates the need for waste management plans; all waste is automatically recycled by the manufacturer, which is a common misconception"
+        },
+        {
+          "id": "c",
+          "text": "Prefabrication requires larger component sizes, increasing material use and overall waste generation on-site, contrary to popular belief"
+        },
+        {
+          "id": "d",
+          "text": "Prefabrication has no measurable waste reduction benefit; it is used only for cost reduction, not environmental improvement, which is often debated"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While manufacturers do manage their own waste, prefabrication's primary benefit is precision and quality control, not automatic recycling by suppliers.",
+        "c": "Prefabrication enables right-sizing of components based on design calculations, reducing material over-specification versus field construction with safety margins.",
+        "d": "Prefabrication demonstrably reduces waste through precision manufacturing and improved quality control. Environmental benefit is well-documented, not mythical.",
+        "correct": "Factory prefabrication reduces waste through: CNC cutting precision (minimizes off-cuts and dimensional errors), quality assurance before delivery (prevents damage-related rework), and controlled assembly processes (reduce handling losses). These factors combine to achieve 15-30% waste reduction compared to field construction.",
+        "takeaway": "Prefabrication reduces waste through factory precision, quality control, and controlled handling. Candidates must recognize prefab as a lean construction strategy complementary to other waste reduction methods."
+      },
+      "explanation": null,
+      "code_citation": "Lean Construction Institute; Prefabrication and Modular Construction Research",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b9d704483ec42f68b7d22ef73d16c4bb30d6cae3a350caee36bb1e8449a0f04b"
+    },
+    {
+      "question_id": "96e238e3-a437-4b8e-ab69-96b81ca024e6",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "RA 9003 (Ecological Solid Waste Management Act) mandates waste management plans for construction projects primarily to accomplish which objective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Establish systematic segregation, reduction, and proper disposal of waste to protect public health and environment per LGU enforcement and DENR EMB oversight"
+        },
+        {
+          "id": "b",
+          "text": "Eliminate all construction projects exceeding specified sizes to prevent waste generation, thereby reducing environmental impact"
+        },
+        {
+          "id": "c",
+          "text": "Require projects to generate a minimum 40% waste to ensure economic viability of recycling facilities, which is a key component of the act"
+        },
+        {
+          "id": "d",
+          "text": "Transfer all responsibility for waste management to national government agencies without local participation, centralizing control"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "RA 9003 does not eliminate projects; it requires management protocols. Large projects proceed with waste management plans in place.",
+        "c": "RA 9003 encourages waste reduction, not generation. Minimum waste requirements would contradict the act's intent.",
+        "d": "RA 9003 empowers LGU's and mandates their participation; it does not centralize responsibility in national agencies.",
+        "correct": "RA 9003 establishes waste management plans requiring source reduction, segregation at source, and appropriate disposal destinations. DENR EMB and LGU enforcement ensures compliance. The goal is environmental protection through systematic waste management, not elimination of projects.",
+        "takeaway": "RA 9003 mandates systematic waste management planning for covered projects, enforced by LGU and DENR EMB. Candidates must understand that compliance plans are required before construction begins."
+      },
+      "explanation": null,
+      "code_citation": "RA 9003 Ecological Solid Waste Management Act of 2000; DENR EMB Requirements",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:05203264eb1f14ee397531d035e33ebeadc02ee0f01123771898f5c00721759d"
+    },
+    {
+      "question_id": "9a380ddc-6a52-4573-9799-872ee7476219",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "What is the correct sequence of the waste management hierarchy in waste reduction planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduce (source elimination), reuse (whole components), recycle (material reprocessing), recover (energy extraction), dispose (landfill)"
+        },
+        {
+          "id": "b",
+          "text": "Reduce (source elimination), recycle (material reprocessing), reuse (whole components), recover (energy extraction), dispose (landfill)"
+        },
+        {
+          "id": "c",
+          "text": "Dispose (source elimination), recover (energy extraction), recycle (material reprocessing), reuse (whole components), reduce (evaluation)"
+        },
+        {
+          "id": "d",
+          "text": "Recycle (source elimination), reuse (whole components), reduce (material reprocessing), recover (energy extraction), dispose (landfill)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Reusing whole components is preferable to recycling, which requires reprocessing energy. The order in the correct answer reflects this priority.",
+        "c": "Dispose and recover are not source elimination steps; the hierarchy does not begin with disposal.",
+        "d": "The sequence in the correct answer reflects environmental impact reduction; swapping recycle and reuse reverses the priority.",
+        "correct": "The waste hierarchy prioritizes reduce first (preventing waste at source), then reuse (whole components), recycle (material reprocessing), recover (energy), and finally dispose. Earlier steps in the hierarchy are always preferable to later ones.",
+        "takeaway": "The waste hierarchy prioritizes source reduction over all other strategies. Candidates must apply the hierarchy in order: reduce first, then reuse, recycle, recover, and finally dispose only when all other options are exhausted."
+      },
+      "explanation": null,
+      "code_citation": "RA 9003 Ecological Solid Waste Management Act; Waste Hierarchy Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:142642cd7dfaf3cb8918bceddb0a100b0cf9eb3327a815062a346e0fa852bbfc"
+    },
+    {
+      "question_id": "d3c1032f-ef99-4b3b-9c95-a3c6f437fc92",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "Lean construction principles reduce material waste through which mechanisms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Just-in-time ordering, value stream mapping, last planner scheduling, and defect elimination reduce on-site stockpile spoilage, identify non-value-adding activities, align material arrival with installation, and minimize rework"
+        },
+        {
+          "id": "b",
+          "text": "Lean construction requires all waste to be recycled immediately; no reduction at source is possible, which contradicts the principles of minimizing waste generation."
+        },
+        {
+          "id": "c",
+          "text": "Lean construction applies only to concrete and steel, not to wood or mixed materials, which limits its effectiveness in diverse construction projects."
+        },
+        {
+          "id": "d",
+          "text": "Lean construction increases waste through continuous design modifications and change orders, which is a misconception of its actual goals."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Lean's intent is source reduction, not end-of-life recycling. While recycling may occur for unavoidable waste, lean prioritizes preventing waste generation.",
+        "c": "Lean applies to all material streams, though concrete and metal are easiest to quantify. Wood formwork waste is a major lean construction target.",
+        "d": "Design modifications and change orders increase waste; lean planning minimizes changes through upfront value engineering and design coordination.",
+        "correct": "Lean construction achieves waste reduction through: just-in-time ordering (minimize stockpile losses), value stream mapping (eliminate non-value activities), last planner scheduling (synchronize material delivery with installation), and defect elimination (reduce rework). Studies show 20-30% waste reduction with these methods.",
+        "takeaway": "Lean construction reduces waste at source through operational improvements: just-in-time ordering, activity mapping, scheduling, and defect elimination. Candidates must understand these mechanisms to explain how lean achieves 20-30% waste reduction."
+      },
+      "explanation": null,
+      "code_citation": "Lean Enterprise Institute; Lean Construction Research",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5325f447621e2ca84f803cb4e12a2b0e5d6a40c6cc271ac737c9e135974f6ad3"
+    },
+    {
+      "question_id": "fa5e3b6a-a4fe-4041-8abc-03d2022a43b8",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "Building Information Modeling (BIM) reduces construction waste primarily by accomplishing which function?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Integrating architectural, structural, MEP, and cost dimensions to enable precise material quantification before fabrication, eliminating over-ordering and reducing waste by 5-15%"
+        },
+        {
+          "id": "b",
+          "text": "Requiring all workers to use smartphones on the jobsite to track material movements, ensuring accountability and reducing loss"
+        },
+        {
+          "id": "c",
+          "text": "Eliminating the need for design review or engineering calculations, which is not feasible in complex projects"
+        },
+        {
+          "id": "d",
+          "text": "Replacing manual labor with robotic equipment on all construction projects, which is not yet a widespread practice"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While smartphone tools may track materials, BIM's primary waste-reduction benefit is quantification accuracy and design coordination, not logistics tracking.",
+        "c": "BIM complements design review and engineering; it does not eliminate these processes.",
+        "d": "BIM does not require or guarantee automation; it is a data integration and visualization tool used by design and planning teams.",
+        "correct": "BIM integrates multidisciplinary data and enables clash detection (identify conflicts before construction) and material quantification (calculate exact volumes before ordering). BIM-driven quantity takeoff reduces error-induced waste by 5-15% compared to manual estimates.",
+        "takeaway": "BIM reduces waste through precise quantification and coordination. Candidates must understand that BIM accuracy prevents over-ordering and design conflicts that cause rework and waste generation."
+      },
+      "explanation": null,
+      "code_citation": "Autodesk BIM Literature; BIM Waste Reduction Research",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:28fb7232c8a3de73577e67810d28902790ae85a195a821844905987a1b996e40"
+    },
+    {
+      "question_id": "abc6b0b8-8be4-4a93-9806-445f19ca16d3",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "Why is contamination an important consideration when planning waste segregation and recycling for construction projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contaminated waste streams (wood with concrete dust, drywall with adhesives) cannot be easily recycled; sorting labor costs may exceed material salvage value, making segregation economically infeasible if contamination is not prevented at source"
+        },
+        {
+          "id": "b",
+          "text": "Contamination has no impact on recycling; all segregated materials can be recycled regardless of contamination status, even if mixed with hazardous substances"
+        },
+        {
+          "id": "c",
+          "text": "Contamination only affects metal recycling, not concrete, wood, or gypsum reprocessing, which are unaffected by any form of contamination"
+        },
+        {
+          "id": "d",
+          "text": "Preventing contamination is impossible in construction; all projects should assume 100% of waste will be contaminated and unrecyclable, thus negating any recycling efforts"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Contamination significantly affects reprocessing of all material types. Assuming recyclability regardless of contamination is unrealistic.",
+        "c": "Contamination affects wood, gypsum, and other streams as much as metals. Adhesives, paint, and foreign materials reduce value.",
+        "d": "While some contamination is inevitable, planning and discipline can minimize cross-contamination. Assuming 100% contamination is defeatist and inconsistent with lean and waste reduction principles.",
+        "correct": "Contamination reduces material value and increases sorting costs. Sawdust mixed with concrete, adhesives on lumber, and paint on drywall make reprocessing difficult or impossible. Prevention at source (separate work areas, careful handling) is preferable to end-of-life sorting.",
+        "takeaway": "Contamination prevention at source through segregation procedures and controlled work areas is more cost-effective than post-generation sorting. Candidates must address contamination risks in waste management plans."
+      },
+      "explanation": null,
+      "code_citation": "Lean Construction Research; Waste Management Best Practices",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9e215181a4904af92d95d6ac7b84da6d5b5086d56c252813f7146a5de642527a"
+    },
+    {
+      "question_id": "8d1fbe63-d7fa-44d9-b6cd-3b434efc9982",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "What is the approximate current rate of C&D waste recycling in the Philippines, and how does this compare to developed countries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Philippines C&D recycling rates are low (limited data available); developed countries achieve 30-90% in some regions per EPA. This disparity reflects lack of local recycling infrastructure and markets."
+        },
+        {
+          "id": "b",
+          "text": "Philippines and developed countries have equivalent recycling rates (40-50%); differences are only in waste composition, not in recycling efficiency"
+        },
+        {
+          "id": "c",
+          "text": "Philippines recycles 20-30% of C&D waste; this exceeds developed-country rates, indicating a higher efficiency in local recycling processes"
+        },
+        {
+          "id": "d",
+          "text": "C&D waste recycling rates are not measured in the Philippines or developed countries, making direct comparisons impossible"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Equivalent rates would suggest recycling infrastructure parity, which is not accurate. Philippines lags in facility development and market demand.",
+        "c": "Philippines rates are lower, not higher, than developed countries. Local infrastructure limits recycling capacity.",
+        "d": "Recycling rates are measured in both contexts; measurement exists but data may be incomplete in Philippines.",
+        "correct": "Philippines currently recycles less than 5% of C&D waste due to lack of facility infrastructure, inconsistent markets, and informal waste handling. Developed countries achieve 30-50% recycling. This gap reflects economic and infrastructure disparities affecting waste strategy feasibility.",
+        "takeaway": "Philippines' low recycling rate (less than 5%) means waste reduction strategies must account for realistic local capacity. Candidates must not assume segregated waste will be recycled; many materials will be landfilled despite sustainability goals."
+      },
+      "explanation": null,
+      "code_citation": "Metro Manila Waste Management Report; DENR Solid Waste Statistics",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:511895ef1ad95f5311fa985089e6cf813843db437640331475a9bf7d8f2007de"
+    }
+  ]
+}

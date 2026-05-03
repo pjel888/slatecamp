@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:52:27.939Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "diff-report.json marks candidate unsafe.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
+  "slug": "lea-util-008-02-mechanical-spaces",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:18f98a5a96bd5a5f9a5045f292f1e20fc1eb4892fdb1146669ae54feb1d48761",
+  "original_hash": "sha256:18f98a5a96bd5a5f9a5045f292f1e20fc1eb4892fdb1146669ae54feb1d48761",
+  "candidate_hash": "sha256:2475e5949ee26ccc21a777f65315c05781e015e99f5f9625ec5c1036780b3096",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

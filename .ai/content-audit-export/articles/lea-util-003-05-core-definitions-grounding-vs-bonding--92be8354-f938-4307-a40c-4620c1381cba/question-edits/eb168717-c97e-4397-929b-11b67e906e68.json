@@ -1,0 +1,35 @@
+{
+  "question_id": "eb168717-c97e-4397-929b-11b67e906e68",
+  "baseline_hash": "sha256:57f4aacf9d046142d86565fa1c391daf123a672c50490fa6466c5d5d1cd26554",
+  "reason": "Critical errors: (1) Options 'b' and 'c' are identical (both say '16 mm (5/8 inch)'). (2) The correct answer for copper-clad rods is 13 mm (1/2 inch) per PEC 250.52(a)(5), but NONE of the options includes this value. Replaced option 'b' with the correct value and removed the duplicate.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T04:11:28.087862+00:00",
+  "proposed": {
+    "options": [
+      {
+        "id": "a",
+        "text": "9.5 mm (3/8 inch)"
+      },
+      {
+        "id": "b",
+        "text": "13 mm (1/2 inch)"
+      },
+      {
+        "id": "c",
+        "text": "16 mm (5/8 inch)"
+      },
+      {
+        "id": "d",
+        "text": "19 mm (3/4 inch)"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Incorrect. 9.5 mm is below the PEC minimum and would not provide adequate cross-sectional area for reliable fault current carrying capacity.",
+      "c": "Incorrect. 16 mm is the minimum for galvanized ferrous rods, not copper-clad rods. Copper has superior conductivity so a smaller diameter is permitted.",
+      "d": "Incorrect. 19 mm exceeds the minimum requirement and is unnecessarily large for copper-clad conductors.",
+      "correct": "PEC Article 250.52(a)(5) specifies minimum 13 mm (1/2 inch) diameter for copper or copper-clad rods. This is smaller than the 16 mm requirement for ferrous rods because copper has superior electrical conductivity.",
+      "takeaway": "Material type determines grounding rod minimum diameter: ferrous requires 16 mm (5/8 inch), copper-clad requires 13 mm (1/2 inch) minimum."
+    }
+  }
+}

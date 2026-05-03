@@ -1,0 +1,63 @@
+{
+  "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
+  "slug": "lea-dsgn-009-01-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.895Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:4c847c5645e0c5347179d10d87d016caa6da64904bf94b126dfd863ae0abebf5",
+  "normalized_content_hash": "f659c744cae9982f67b38d4507a0ce27f82aaa380f286ecfba7f47325242c79a",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>**\"Long axis East-West; short sides catch the sun.\"** In tropical design, _narrow_ your building to the sun's travel arc (east-west rotation). Orient the long sides north and south, where sun angles are less severe at midday.</Tip>",
+      "raw_hash": "sha256:e2241d983ff13fdaa8ba025b814d10fab28c65e9438e97c2ef917faca24f2c84",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **\"Long axis East-West; short sides catch the sun.\"** In tropical design, _narrow_ your building to the sun's travel arc (east-west rotation). Orient the long sides north and south, where sun angles are less severe at midday.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:666763aecbbe70bfc7079e33ff43800830883c6945572037a4feaaaab8c65bd6",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**\"Long axis East-West; short sides catch the sun.\"** In tropical design, _narrow_ your building to the sun's travel arc (east-west rotation). Orient the long sides north and south, where sun angles are less severe at midday.",
+      "children_text": "**\"Long axis East-West; short sides catch the sun.\"** In tropical design, _narrow_ your building to the sun's travel arc (east-west rotation). Orient the long sides north and south, where sun angles are less severe at midday.",
+      "start_offset": 4687,
+      "end_offset": 4923,
+      "line_start": 52,
+      "line_end": 52,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"ERR-DSGN-035: Orienting the long axis North-South (incorrect for tropics)\",\"Assuming any orientation is acceptable if shading devices are added (code prefers inherent orientation strategy)\",\"Confusing overhang ratio with absolute depth; forgetting to multiply floor height\",\"Ignoring wind path in passive ventilation (prevailing monsoon direction is critical)\",\"Over-sizing thermal mass; diminishing returns beyond 150 mm exposed concrete thickness in tropical climates\"]} />",
+      "raw_hash": "sha256:fcec77c38d00499c44d7287b21c7a87302dea9e4b415939f1edc20b17984bbbc",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"ERR-DSGN-035: Orienting the long axis North-South (incorrect for tropics)\\\",\\\"Assuming any orientation is acceptable if shading devices are added (code prefers inherent orientation strategy)\\\",\\\"Confusing overhang ratio with absolute depth; forgetting to multiply floor height\\\",\\\"Ignoring wind path in passive ventilation (prevailing monsoon direction is critical)\\\",\\\"Over-sizing thermal mass; diminishing returns beyond 150 mm exposed concrete thickness in tropical climates\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:89025b2bbdddb3c898c06298b26cf5ba07d0505903cc550b41c6e11dea98347c",
+      "props": {
+        "mistakes": "{[\"ERR-DSGN-035: Orienting the long axis North-South (incorrect for tropics)\",\"Assuming any orientation is acceptable if shading devices are added (code prefers inherent orientation strategy)\",\"Confusing overhang ratio with absolute depth; forgetting to multiply floor height\",\"Ignoring wind path in passive ventilation (prevailing monsoon direction is critical)\",\"Over-sizing thermal mass; diminishing returns beyond 150 mm exposed concrete thickness in tropical climates\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"ERR-DSGN-035: Orienting the long axis North-South (incorrect for tropics)\",\"Assuming any orientation is acceptable if shading devices are added (code prefers inherent orientation strategy)\",\"Confusing overhang ratio with absolute depth; forgetting to multiply floor height\",\"Ignoring wind path in passive ventilation (prevailing monsoon direction is critical)\",\"Over-sizing thermal mass; diminishing returns beyond 150 mm exposed concrete thickness in tropical climates\"]}"
+      },
+      "props_text": "mistakes={[\"ERR-DSGN-035: Orienting the long axis North-South (incorrect for tropics)\",\"Assuming any orientation is acceptable if shading devices are added (code prefers inherent orientation strategy)\",\"Confusing overhang ratio with absolute depth; forgetting to multiply floor height\",\"Ignoring wind path in passive ventilation (prevailing monsoon direction is critical)\",\"Over-sizing thermal mass; diminishing returns beyond 150 mm exposed concrete thickness in tropical climates\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4945,
+      "end_offset": 5449,
+      "line_start": 56,
+      "line_end": 56,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:e189c40091d83e73c0a367d7fced1f43fe3ff4e4e1fcaca8a5aa8db11a77f96d"
+}

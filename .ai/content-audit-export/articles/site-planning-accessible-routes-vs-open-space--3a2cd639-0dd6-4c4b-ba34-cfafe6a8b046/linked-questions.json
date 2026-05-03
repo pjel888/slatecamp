@@ -1,0 +1,1072 @@
+{
+  "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:c182a6307dfc39857429ba2a1a51bd83ef09f5d3bcd9ac5090cf9197d9d3d784",
+  "question_count": 21,
+  "questions": [
+    {
+      "question_id": "e896b494-f1ca-4a15-b6bb-555ed0b03b1f",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Site Planning Accessible Routes vs Open Space\", if a project requires 20 m, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "20 m is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "20 m is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "20 m applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "20 m is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 20 m as the requirement. Context: TOSL = 150 sq.m. Required yards: front (4.5 m × 20 m = 90 sq.m.) + rear (2 m × 2...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:11.519118+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1feaf60ee787b2bc5aed9826cc615bddc0036ed9c20507046b771893de0bd1cb"
+    },
+    {
+      "question_id": "61dfd2ef-ae5f-4a08-8161-305169c8aa6b",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344, what are the minimum stall width, stall length, and access aisle width for a compliant accessible parking space?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3000 mm wide × 5000 mm long with a 1500 mm access aisle beside the stall"
+        },
+        {
+          "id": "B",
+          "text": "3500 mm wide × 5000 mm long with a 1200 mm access aisle beside the stall"
+        },
+        {
+          "id": "C",
+          "text": "4000 mm wide × 5000 mm long with a 1800 mm access aisle beside the stall"
+        },
+        {
+          "id": "D",
+          "text": "2500 mm wide × 6000 mm long with a 2000 mm access aisle beside the stall"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344: accessible parking stall 4000 mm wide × 5000 mm long, with 1800 mm access aisle.",
+        "explanation": "BP 344 specifies accessible parking stalls at 4000 mm wide × 5000 mm long, with a 1800 mm minimum access aisle beside the stall. The 1800 mm aisle is not a traffic lane — it is a dedicated maneuvering space for wheelchair deployment from a van or for wheelchair users to position before entering the vehicle. Two adjacent accessible stalls may share one 1800 mm aisle between them. The standard (non-accessible) parking stall is 2500 mm wide × 5000 mm long — the accessible stall is significantly wider.",
+        "common_misconceptions": [
+          "Selecting 3000 mm or 3500 mm wide — exam distractors frequently use these dimensions; the correct width is 4000 mm",
+          "Treating the 1800 mm aisle as a traffic lane — it is a dedicated access aisle, not a drive lane"
+        ]
+      },
+      "explanation": "Accessible stall: 4000 mm × 5000 mm + 1800 mm access aisle. A common trap uses 3000 mm or 3500 mm as width.",
+      "code_citation": "BP 344, Parking section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f492d4fa6a8e022820d80276df532771d5b0f07e73d86cd4859a70b2e6dc2f8"
+    },
+    {
+      "question_id": "3168a4f1-b5e4-48d4-8a3d-d7bd408f37e5",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A parking facility has 80 total spaces. How many accessible parking spaces are required under the BP 344 table for required accessible parking counts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 accessible spaces — one per 40 regular spaces for medium-sized facilities"
+        },
+        {
+          "id": "B",
+          "text": "3 accessible spaces — covering the 51–75 stall tier of the BP 344 table"
+        },
+        {
+          "id": "C",
+          "text": "4 accessible spaces — as specified for the 76–100 stall tier in the BP 344 table"
+        },
+        {
+          "id": "D",
+          "text": "5 accessible spaces — following the 1-per-16 ratio used for commercial parking"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 table: 76–100 total spaces → 4 accessible spaces required.",
+        "explanation": "BP 344 provides a step-table for required accessible parking spaces: 1–25 spaces → 1; 26–50 → 2; 51–75 → 3; 76–100 → 4; 101–150 → 5; 151–200 → 6; 201+ → 2% of total. A facility with 80 spaces falls in the 76–100 tier, requiring exactly 4 accessible spaces. These spaces must be on the shortest accessible route to the accessible entrance — not just located somewhere convenient in the lot.",
+        "common_misconceptions": [
+          "Selecting 3 spaces (the 51–75 tier) because 80 is perceived as 'close to 75' — 80 falls definitively in the 76–100 tier",
+          "Using 2% of 80 = 1.6 → 2 spaces — the 2% formula applies only to facilities with 201+ spaces"
+        ]
+      },
+      "explanation": "BP 344 table: 76–100 spaces → 4 accessible spaces required; the 2% formula only kicks in at 201+ spaces.",
+      "code_citation": "BP 344, Parking table",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e22679120809fafeeb658c30e425dfba5816365600a1a00cd6287760abb4f6e0"
+    },
+    {
+      "question_id": "d9be8186-b9d0-4c75-ac76-b72cb05d3766",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under PD 1096 Rule VIII, what is the minimum inner court size for a building that is 4 storeys tall?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3.00 × 3.00 m — the minimum inner court size for buildings up to 2 storeys"
+        },
+        {
+          "id": "B",
+          "text": "5.00 × 5.00 m — required for buildings 3 to 5 storeys tall"
+        },
+        {
+          "id": "C",
+          "text": "7.50 × 7.50 m — an intermediate tier for buildings between 3 and 6 storeys"
+        },
+        {
+          "id": "D",
+          "text": "10% of the total floor area — applying the large-building inner court rule to all buildings above 2 storeys"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Rule VIII: inner courts for 3–5 storey buildings must be at least 5.00 × 5.00 m.",
+        "explanation": "PD 1096 Rule VIII Section 805 specifies inner court sizes by building height tier: (1) Buildings ≤ 2 floors: 3.00 × 3.00 m minimum; (2) Buildings 3–5 floors: 5.00 × 5.00 m minimum; (3) Buildings > 5 floors: inner court area must be at least 10% of the floor area it serves. A 4-storey building falls in the 3–5 floor tier, requiring a 5.00 × 5.00 m minimum inner court. The passageway from court to street in this tier must be at least 1.20 m wide.",
+        "common_misconceptions": [
+          "Applying the ≤2 floor rule (3.00 × 3.00 m) to a 4-storey building — the 3.00 m minimum only applies up to 2 floors",
+          "Applying the >5 floor (10% of floor area) rule to a 4-storey building — that tier starts at 6 floors and above"
+        ]
+      },
+      "explanation": "Inner court tiers: ≤2 floors = 3×3 m; 3–5 floors = 5×5 m; >5 floors = 10% of floor area.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 805",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d65f4b0f2bb4adb2dc31b70ffd6a98d569edf973ce1efb4fdb04afd67d369fb6"
+    },
+    {
+      "question_id": "323a40c2-63c6-4344-92d6-3fb1671dab3e",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "In a C-3 (Regional Commercial) zone, PD 1096 does not require a front yard setback. Does BP 344 still require an accessible route from the RROW to the building entrance in this zone?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No — if no setback is required, BP 344 also waives the accessible route requirement for the front of the building"
+        },
+        {
+          "id": "B",
+          "text": "Yes — the BP 344 accessible entry requirement applies regardless of PD 1096 setback rules"
+        },
+        {
+          "id": "C",
+          "text": "Yes — but only when the building is more than 3 storeys tall, requiring an elevator accessible from RROW"
+        },
+        {
+          "id": "D",
+          "text": "No — in C-3 zones, the Building Official may waive accessibility requirements to allow full lot coverage"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 accessible route requirements apply in all zones regardless of PD 1096 setback rules.",
+        "explanation": "PD 1096 Rule VIII may allow C-3 zones to have no required front yard, permitting a building face to be built directly at the RROW. However, BP 344's requirement for an accessible entrance remains fully applicable. In this case, the accessible entrance may be directly at the RROW level — but it must still be accessible: no step at the threshold, level transition between public sidewalk and building entrance, and TGSI at the door threshold. Zero setback does not eliminate accessibility obligations.",
+        "common_misconceptions": [
+          "Treating the absence of a setback as a waiver of BP 344 requirements — PD 1096 and BP 344 are independent laws that both apply",
+          "Limiting BP 344 accessibility to buildings with front yards — accessibility requirements apply at all lot configurations"
+        ]
+      },
+      "explanation": "C-3 zone: no front setback required by PD 1096, but BP 344 accessible entry still applies — both codes are independent.",
+      "code_citation": "PD 1096 Rule VIII; BP 344",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:832592d82753ac1fa8bcb2dd91a52e08c1f2356909592052f38762d167441330"
+    },
+    {
+      "question_id": "7f992425-81f5-4b66-bdf7-af9c356e33e2",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What are the required minimum ramp landing dimensions at the top and bottom of an accessible ramp, and at a direction change mid-ramp, under BP 344?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Top/bottom: 1200 mm in direction of travel; direction change: 1200 × 1200 mm"
+        },
+        {
+          "id": "B",
+          "text": "Top/bottom: 1500 mm in direction of travel; direction change: 1500 × 1500 mm"
+        },
+        {
+          "id": "C",
+          "text": "Top/bottom: 1800 mm in direction of travel; direction change: 1800 × 1800 mm"
+        },
+        {
+          "id": "D",
+          "text": "Top/bottom: 1500 mm in direction of travel; direction change: 1800 × 1800 mm"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344: ramp landings at top/bottom require 1500 mm in direction of travel; at direction changes, 1500 × 1500 mm.",
+        "explanation": "BP 344 specifies ramp landing dimensions as: 1500 mm minimum in the direction of travel at the top and bottom of each ramp run. At a landing where the direction of travel changes, the landing must be 1500 × 1500 mm to allow a wheelchair to fully clear the ramp run before turning. The landing width must equal or exceed the ramp clear width (minimum 1200 mm). This is distinct from the Top 50 Traps article, which describes the alternative 1800 mm landing dimension from a different interpretation — 1500 mm is the BP 344 site planning standard.",
+        "common_misconceptions": [
+          "Selecting 1800 mm landings — the Top 50 Traps article cites 1800 mm for ramp landings; the site planning module shows 1500 mm; know your source context",
+          "Selecting 1200 mm landings — that is the ramp width minimum, not the landing length"
+        ]
+      },
+      "explanation": "Ramp landing: 1500 mm in direction of travel at top/bottom; 1500 × 1500 mm at direction changes.",
+      "code_citation": "BP 344, Site Planning module",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5edb3065101989a15a2da258930cea936eeafc8e450ed32160bb4a8497ec7ec5"
+    },
+    {
+      "question_id": "e2598a13-c50e-423c-b52c-5deb8d383064",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Which item from the following list counts toward the building footprint (AMBF) and must be included in the PSO calculation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An uncovered accessible parking bay paved with concrete but open to the sky"
+        },
+        {
+          "id": "B",
+          "text": "A covered ramp lobby with a permanent roof attached to the building entrance"
+        },
+        {
+          "id": "C",
+          "text": "A wheelchair turning area (paved) at the base of an open ramp in the front yard"
+        },
+        {
+          "id": "D",
+          "text": "Tactile ground surface indicators (TGSI) installed along the accessible path"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "A covered ramp lobby with a permanent roof counts as building footprint; all uncovered open-sky features do not.",
+        "explanation": "BP 344 × PD 1096 interface: items that do NOT count toward footprint include open ramps (no roof), uncovered accessible parking bays, curb ramps, wheelchair turning areas, and TGSI installations — because none of these enclose habitable space. A covered ramp lobby with a permanent roof structurally attached to the building DOES count as building footprint, because the roof creates an enclosed or partially enclosed space that is part of the building's occupied area. This distinction is the most commonly tested PSO trap in site planning questions.",
+        "common_misconceptions": [
+          "Treating paved surfaces as footprint — paving alone without a roof does not create footprint",
+          "Believing any structure touching the building counts as footprint — only structures with permanent roofs count"
+        ]
+      },
+      "explanation": "Rule: permanent roof = footprint. Open to sky = open space. A covered ramp lobby is the one item in this list that has a roof.",
+      "code_citation": "BP 344; PD 1096 Rule VIII",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0961256c741f180a325a8b080af200553fcf61d1ca758b24dd6a3227bb627fb7"
+    },
+    {
+      "question_id": "f3465472-290a-4e6d-9bc6-e338e4847d3f",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A covered carport is constructed over the accessible parking bay. Under the BP 344 × PD 1096 interface, how does this affect the PSO calculation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The carport does not affect PSO because accessible parking areas are always exempt from footprint calculations, regardless of coverage"
+        },
+        {
+          "id": "B",
+          "text": "The carport roof area counts toward the building footprint (AMBF) and must be included in the PSO calculation"
+        },
+        {
+          "id": "C",
+          "text": "The carport counts toward AMBF only if it is attached to the main building structure, otherwise it is considered separate"
+        },
+        {
+          "id": "D",
+          "text": "The carport is exempt from AMBF if it is an open-sided structure with no walls on any side, allowing for natural ventilation"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "A permanent roofed structure over accessible parking counts as building footprint — the roof area must be included in the PSO calculation.",
+        "explanation": "The open-space exemption applies only to uncovered, open-to-sky accessible features. Once a roof is added — even an open-sided carport — the covered area becomes building footprint and counts toward the AMBF. This is true for any structurally permanent roof. A developer who adds a carport over accessible parking must verify that the additional footprint does not push the total PSO over the zone's maximum. Freestanding canopies may be subject to local Building Official interpretation.",
+        "common_misconceptions": [
+          "Believing accessible parking areas are permanently exempt from footprint regardless of coverage — the exemption applies only to uncovered areas",
+          "Treating open-sided structures as automatically exempt — the presence of a roof, not the absence of walls, triggers footprint classification"
+        ]
+      },
+      "explanation": "Any permanent roof — even open-sided — counts as footprint. Only uncovered, open-to-sky accessible features are exempt from AMBF.",
+      "code_citation": "BP 344; PD 1096 Rule VIII",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c784a6378ed00302ba4305101a709cab747d557445de382336d3fb98a266d6bd"
+    },
+    {
+      "question_id": "0c26594a-af9b-490f-ba4a-b33caf61aa6e",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A R-3 (High-density Residential) lot is 20 m wide × 25 m deep (500 sq.m.). PSO = 70%. Required yards: front 4.5 m, rear 2 m, two side yards 2 m each. Do the required yards exceed the TOSL?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No — the TOSL of 150 sq.m. is sufficient to accommodate all required yards totaling 130 sq.m., ensuring compliance"
+        },
+        {
+          "id": "B",
+          "text": "No — the TOSL of 150 sq.m. equals the required yards, so the design is exactly at the minimum, with no excess"
+        },
+        {
+          "id": "C",
+          "text": "Yes — required yards total 230 sq.m., which exceeds the TOSL of 150 sq.m., making the site non-compliant at 70% PSO"
+        },
+        {
+          "id": "D",
+          "text": "Yes — required yards total 180 sq.m., which slightly exceeds the TOSL of 150 sq.m., requiring a PSO reduction to meet standards"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "TOSL = 150 sq.m. but required yards total 230 sq.m. — the lot cannot accommodate all setbacks at 70% PSO.",
+        "explanation": "Calculation: AMBF = 500 × 0.70 = 350 sq.m.; TOSL = 500 − 350 = 150 sq.m. Required yards: front = 4.5 m × 20 m = 90 sq.m.; rear = 2 m × 20 m = 40 sq.m.; two side yards = 2 × (2 m × 25 m) = 100 sq.m.; total required yards = 90 + 40 + 100 = 230 sq.m. Since TOSL (150 sq.m.) < required yards (230 sq.m.), the 70% PSO for R-3 is insufficient to accommodate all required setbacks on this lot — the PSO would need to be reduced further, or lot coverage recalculated.",
+        "common_misconceptions": [
+          "Omitting the side yard calculation — side yards run the full 25 m depth on both sides, contributing 100 sq.m.",
+          "Treating TOSL as sufficient because it seems large — 150 sq.m. is substantially below the 230 sq.m. required by setbacks"
+        ]
+      },
+      "explanation": "TOSL (150 sq.m.) < required yards (230 sq.m.) — demonstrates that PSO alone does not guarantee setback compliance on all lot configurations.",
+      "code_citation": "PD 1096 Rule VIII; BP 344",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3fce2b40cba4f1bbe01e8eeb341ad033110965c43661a52156af18b4fac5a751"
+    },
+    {
+      "question_id": "fb9d5320-3359-42c9-8cf7-683d7c547ce4",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A 500 sq.m. lot is in a C-2 (Community Commercial) zone with a PSO of 80%. What is the Allowable Maximum Building Footprint (AMBF) and the Total Open Space on Lot (TOSL)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "AMBF = 400 sq.m.; TOSL = 100 sq.m. — 80% of 500 sq.m. for footprint, remainder for open space"
+        },
+        {
+          "id": "B",
+          "text": "AMBF = 300 sq.m.; TOSL = 200 sq.m. — applying the C-2 reduced coverage with mandatory courts"
+        },
+        {
+          "id": "C",
+          "text": "AMBF = 450 sq.m.; TOSL = 50 sq.m. — C-2 commercial zones allow up to 90% site coverage"
+        },
+        {
+          "id": "D",
+          "text": "AMBF = 350 sq.m.; TOSL = 150 sq.m. — 70% PSO applies to all commercial zones by default"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "AMBF = 500 × 0.80 = 400 sq.m.; TOSL = 500 − 400 = 100 sq.m.",
+        "explanation": "PD 1096 Rule VIII establishes the PSO calculation chain: AMBF = TLA × PSO = 500 × 0.80 = 400 sq.m. This is the maximum building footprint. TOSL = TLA − AMBF = 500 − 400 = 100 sq.m. This is the minimum open space that must remain. C-2 zones have 80% PSO and 3.00 m front setback; C-3 zones have 90% PSO; neither applies a 70% default. The PSO governs footprint coverage only, not total floor area (which is controlled by FLAR).",
+        "common_misconceptions": [
+          "Applying C-3 (90%) PSO to a C-2 zone — each zone has its own PSO; C-2 is 80%",
+          "Confusing PSO (footprint control) with FLAR (total floor area control) — they are independent limits"
+        ]
+      },
+      "explanation": "AMBF = TLA × PSO: 500 × 0.80 = 400 sq.m.; TOSL = TLA − AMBF = 100 sq.m. for the C-2 example.",
+      "code_citation": "PD 1096 Rule VIII; BP 344",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:904289aa6e7508216b31b85f4dad597dc403c52451fa7e02581123b90f1b5cfb"
+    },
+    {
+      "question_id": "360b4394-108c-41d9-bef9-95e41d5a8999",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An open (uncovered, roofless) accessible ramp is installed in the required front yard to serve the building entrance. Does this ramp count toward the building footprint (AMBF) under PD 1096?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes — any paved structure in a required yard is counted toward the building footprint, including ramps and walkways"
+        },
+        {
+          "id": "B",
+          "text": "No — open ramps serve circulation only and do not enclose habitable space, so they are classified as open space"
+        },
+        {
+          "id": "C",
+          "text": "Yes — ramps are permanent structural elements and always count as footprint regardless of coverage, as per standard building regulations"
+        },
+        {
+          "id": "D",
+          "text": "No — but only if the ramp is less than 1200 mm wide; wider ramps must be included in the AMBF, according to specific zoning ordinances"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Open ramps without roofs or walls do not count toward building footprint — they are circulation features classified as open space.",
+        "explanation": "The BP 344 × PD 1096 interface establishes a critical principle: open accessible features (ramps without roofs, uncovered accessible parking bays, curb cuts, wheelchair turning areas, tactile ground surface indicators) are classified as open space — not building footprint — because they do not enclose habitable space. This prevents a situation where developers would be mathematically forced to eliminate accessibility features to stay within PSO limits. The ramp width (1200 mm or wider) is irrelevant to whether it counts as footprint.",
+        "common_misconceptions": [
+          "Treating all paved surfaces as building footprint — only enclosing structures with roofs/walls count toward AMBF",
+          "Applying a width threshold to ramp footprint classification — no such threshold exists in the code"
+        ]
+      },
+      "explanation": "Open ramps = open space, not footprint. Only enclosing structures (roofs + walls) count toward AMBF.",
+      "code_citation": "BP 344; PD 1096 Rule VIII",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.319338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c25dc96713b59341736694a0b6f753958896d5c25142c3462761972d6f2f7810"
+    },
+    {
+      "question_id": "9bad1f05-247b-4780-ae05-7ebef7e66e2b",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A R-3 (High-density Residential) lot is 20 m wide × 25 m deep (500 sq.m.). PSO = 70%. Required yards: front 4.5 m, rear 2 m, two side yards 2 m each. Do the required yards exceed the TOSL?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No — the TOSL of 150 sq.m. is sufficient to accommodate all required yards totaling 130 sq.m., ensuring compliance"
+        },
+        {
+          "id": "B",
+          "text": "No — the TOSL of 150 sq.m. equals the required yards, so the design is exactly at the minimum, which is often a design goal"
+        },
+        {
+          "id": "C",
+          "text": "Yes — required yards total 230 sq.m., which exceeds the TOSL of 150 sq.m., making the site non-compliant at 70% PSO"
+        },
+        {
+          "id": "D",
+          "text": "Yes — required yards total 180 sq.m., which slightly exceeds the TOSL of 150 sq.m., requiring a PSO reduction to meet standards"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "TOSL = 150 sq.m. but required yards total 230 sq.m. — the lot cannot accommodate all setbacks at 70% PSO.",
+        "explanation": "Calculation: AMBF = 500 × 0.70 = 350 sq.m.; TOSL = 500 − 350 = 150 sq.m. Required yards: front = 4.5 m × 20 m = 90 sq.m.; rear = 2 m × 20 m = 40 sq.m.; two side yards = 2 × (2 m × 25 m) = 100 sq.m.; total required yards = 90 + 40 + 100 = 230 sq.m. Since TOSL (150 sq.m.) < required yards (230 sq.m.), the 70% PSO for R-3 is insufficient to accommodate all required setbacks on this lot — the PSO would need to be reduced further, or lot coverage recalculated.",
+        "common_misconceptions": [
+          "Omitting the side yard calculation — side yards run the full 25 m depth on both sides, contributing 100 sq.m.",
+          "Treating TOSL as sufficient because it seems large — 150 sq.m. is substantially below the 230 sq.m. required by setbacks"
+        ]
+      },
+      "explanation": "TOSL (150 sq.m.) < required yards (230 sq.m.) — demonstrates that PSO alone does not guarantee setback compliance on all lot configurations.",
+      "code_citation": "PD 1096 Rule VIII; BP 344",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:af21c154f200205b9b3143240c1cea150a346eb2c7b152b75da59db59df91f45"
+    },
+    {
+      "question_id": "cec56c5f-9740-4746-bcb3-021c307c555e",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A covered carport is constructed over the accessible parking bay. Under the BP 344 × PD 1096 interface, how does this affect the PSO calculation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The carport does not affect PSO because accessible parking areas are always exempt from footprint calculations, regardless of coverage"
+        },
+        {
+          "id": "B",
+          "text": "The carport roof area counts toward the building footprint (AMBF) and must be included in the PSO calculation"
+        },
+        {
+          "id": "C",
+          "text": "The carport counts toward AMBF only if it is attached to the main building structure, which affects the overall site coverage"
+        },
+        {
+          "id": "D",
+          "text": "The carport is exempt from AMBF if it is an open-sided structure with no walls on any side, allowing for natural ventilation"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "A permanent roofed structure over accessible parking counts as building footprint — the roof area must be included in the PSO calculation.",
+        "explanation": "The open-space exemption applies only to uncovered, open-to-sky accessible features. Once a roof is added — even an open-sided carport — the covered area becomes building footprint and counts toward the AMBF. This is true for any structurally permanent roof. A developer who adds a carport over accessible parking must verify that the additional footprint does not push the total PSO over the zone's maximum. Freestanding canopies may be subject to local Building Official interpretation.",
+        "common_misconceptions": [
+          "Believing accessible parking areas are permanently exempt from footprint regardless of coverage — the exemption applies only to uncovered areas",
+          "Treating open-sided structures as automatically exempt — the presence of a roof, not the absence of walls, triggers footprint classification"
+        ]
+      },
+      "explanation": "Any permanent roof — even open-sided — counts as footprint. Only uncovered, open-to-sky accessible features are exempt from AMBF.",
+      "code_citation": "BP 344; PD 1096 Rule VIII",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:76ac182f5c397eaa47fff14895752e29ff9e53633d743f93dc02a57889a9e528"
+    },
+    {
+      "question_id": "2ece119c-3916-44a3-8b0c-9da3c30593b4",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A 500 sq.m. lot is in a C-2 (Community Commercial) zone with a PSO of 80%. What is the Allowable Maximum Building Footprint (AMBF) and the Total Open Space on Lot (TOSL)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "AMBF = 400 sq.m.; TOSL = 100 sq.m. — 80% of 500 sq.m. for footprint, remainder for open space"
+        },
+        {
+          "id": "B",
+          "text": "AMBF = 300 sq.m.; TOSL = 200 sq.m. — applying the C-2 reduced coverage with mandatory courts"
+        },
+        {
+          "id": "C",
+          "text": "AMBF = 450 sq.m.; TOSL = 50 sq.m. — C-2 commercial zones allow up to 90% site coverage"
+        },
+        {
+          "id": "D",
+          "text": "AMBF = 350 sq.m.; TOSL = 150 sq.m. — 70% PSO applies to all commercial zones by default"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "AMBF = 500 × 0.80 = 400 sq.m.; TOSL = 500 − 400 = 100 sq.m.",
+        "explanation": "PD 1096 Rule VIII establishes the PSO calculation chain: AMBF = TLA × PSO = 500 × 0.80 = 400 sq.m. This is the maximum building footprint. TOSL = TLA − AMBF = 500 − 400 = 100 sq.m. This is the minimum open space that must remain. C-2 zones have 80% PSO and 3.00 m front setback; C-3 zones have 90% PSO; neither applies a 70% default. The PSO governs footprint coverage only, not total floor area (which is controlled by FLAR).",
+        "common_misconceptions": [
+          "Applying C-3 (90%) PSO to a C-2 zone — each zone has its own PSO; C-2 is 80%",
+          "Confusing PSO (footprint control) with FLAR (total floor area control) — they are independent limits"
+        ]
+      },
+      "explanation": "AMBF = TLA × PSO: 500 × 0.80 = 400 sq.m.; TOSL = TLA − AMBF = 100 sq.m. for the C-2 example.",
+      "code_citation": "PD 1096 Rule VIII; BP 344",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d540e1b4c66f41fb1ee156ff9263e8efdd69af622a9ad9ee8d70f7479b6f03c8"
+    },
+    {
+      "question_id": "76599e11-2b07-4a6a-8342-21cb9863b03c",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344, what are the minimum stall width, stall length, and access aisle width for a compliant accessible parking space?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3000 mm wide × 5000 mm long with a 1500 mm access aisle beside the stall"
+        },
+        {
+          "id": "B",
+          "text": "3500 mm wide × 5000 mm long with a 1200 mm access aisle beside the stall"
+        },
+        {
+          "id": "C",
+          "text": "4000 mm wide × 5000 mm long with a 1800 mm access aisle beside the stall"
+        },
+        {
+          "id": "D",
+          "text": "2500 mm wide × 6000 mm long with a 2000 mm access aisle beside the stall"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344: accessible parking stall 4000 mm wide × 5000 mm long, with 1800 mm access aisle.",
+        "explanation": "BP 344 specifies accessible parking stalls at 4000 mm wide × 5000 mm long, with a 1800 mm minimum access aisle beside the stall. The 1800 mm aisle is not a traffic lane — it is a dedicated maneuvering space for wheelchair deployment from a van or for wheelchair users to position before entering the vehicle. Two adjacent accessible stalls may share one 1800 mm aisle between them. The standard (non-accessible) parking stall is 2500 mm wide × 5000 mm long — the accessible stall is significantly wider.",
+        "common_misconceptions": [
+          "Selecting 3000 mm or 3500 mm wide — exam distractors frequently use these dimensions; the correct width is 4000 mm",
+          "Treating the 1800 mm aisle as a traffic lane — it is a dedicated access aisle, not a drive lane"
+        ]
+      },
+      "explanation": "Accessible stall: 4000 mm × 5000 mm + 1800 mm access aisle. A common trap uses 3000 mm or 3500 mm as width.",
+      "code_citation": "BP 344, Parking section",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cb25949a05424fccf6d3f6bcb4ee52a7e1cdf1131af34d54f2ba381be775d716"
+    },
+    {
+      "question_id": "85f0eaf7-1d2f-4fb0-ba46-f44b8b54edf4",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A parking facility has 80 total spaces. How many accessible parking spaces are required under the BP 344 table for required accessible parking counts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 accessible spaces — one per 40 regular spaces for medium-sized facilities"
+        },
+        {
+          "id": "B",
+          "text": "3 accessible spaces — covering the 51–75 stall tier of the BP 344 table"
+        },
+        {
+          "id": "C",
+          "text": "4 accessible spaces — as specified for the 76–100 stall tier in the BP 344 table"
+        },
+        {
+          "id": "D",
+          "text": "5 accessible spaces — following the 1-per-16 ratio used for commercial parking"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 table: 76–100 total spaces → 4 accessible spaces required.",
+        "explanation": "BP 344 provides a step-table for required accessible parking spaces: 1–25 spaces → 1; 26–50 → 2; 51–75 → 3; 76–100 → 4; 101–150 → 5; 151–200 → 6; 201+ → 2% of total. A facility with 80 spaces falls in the 76–100 tier, requiring exactly 4 accessible spaces. These spaces must be on the shortest accessible route to the accessible entrance — not just located somewhere convenient in the lot.",
+        "common_misconceptions": [
+          "Selecting 3 spaces (the 51–75 tier) because 80 is perceived as 'close to 75' — 80 falls definitively in the 76–100 tier",
+          "Using 2% of 80 = 1.6 → 2 spaces — the 2% formula applies only to facilities with 201+ spaces"
+        ]
+      },
+      "explanation": "BP 344 table: 76–100 spaces → 4 accessible spaces required; the 2% formula only kicks in at 201+ spaces.",
+      "code_citation": "BP 344, Parking table",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6974c49be217e80b2dc18d8aa9631219675536191242f2df18829ba36d3af1de"
+    },
+    {
+      "question_id": "38f3e67a-2178-4749-b934-e1fdfffca3f6",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under PD 1096 Rule VIII, what is the minimum inner court size for a building that is 4 storeys tall?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3.00 × 3.00 m — the minimum inner court size for buildings up to 2 storeys"
+        },
+        {
+          "id": "B",
+          "text": "5.00 × 5.00 m — required for buildings 3 to 5 storeys tall"
+        },
+        {
+          "id": "C",
+          "text": "7.50 × 7.50 m — an intermediate tier for buildings between 3 and 6 storeys"
+        },
+        {
+          "id": "D",
+          "text": "10% of the total floor area — applying the large-building inner court rule to all buildings above 2 storeys"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Rule VIII: inner courts for 3–5 storey buildings must be at least 5.00 × 5.00 m.",
+        "explanation": "PD 1096 Rule VIII Section 805 specifies inner court sizes by building height tier: (1) Buildings ≤ 2 floors: 3.00 × 3.00 m minimum; (2) Buildings 3–5 floors: 5.00 × 5.00 m minimum; (3) Buildings > 5 floors: inner court area must be at least 10% of the floor area it serves. A 4-storey building falls in the 3–5 floor tier, requiring a 5.00 × 5.00 m minimum inner court. The passageway from court to street in this tier must be at least 1.20 m wide.",
+        "common_misconceptions": [
+          "Applying the ≤2 floor rule (3.00 × 3.00 m) to a 4-storey building — the 3.00 m minimum only applies up to 2 floors",
+          "Applying the >5 floor (10% of floor area) rule to a 4-storey building — that tier starts at 6 floors and above"
+        ]
+      },
+      "explanation": "Inner court tiers: ≤2 floors = 3×3 m; 3–5 floors = 5×5 m; >5 floors = 10% of floor area.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 805",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:245c16f611f132cc5884d3cb1a3cd629e18c7e4025dddc190836a7328d3bf097"
+    },
+    {
+      "question_id": "af12c266-e97b-4459-a83d-f1d6fdf72913",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "In a C-3 (Regional Commercial) zone, PD 1096 does not require a front yard setback. Does BP 344 still require an accessible route from the RROW to the building entrance in this zone?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No — if no setback is required, BP 344 also waives the accessible route requirement for the front of the building"
+        },
+        {
+          "id": "B",
+          "text": "Yes — the BP 344 accessible entry requirement applies regardless of PD 1096 setback rules"
+        },
+        {
+          "id": "C",
+          "text": "Yes — but only when the building is more than 3 storeys tall, requiring an elevator accessible from RROW"
+        },
+        {
+          "id": "D",
+          "text": "No — in C-3 zones, the Building Official may waive accessibility requirements to allow full lot coverage"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 accessible route requirements apply in all zones regardless of PD 1096 setback rules.",
+        "explanation": "PD 1096 Rule VIII may allow C-3 zones to have no required front yard, permitting a building face to be built directly at the RROW. However, BP 344's requirement for an accessible entrance remains fully applicable. In this case, the accessible entrance may be directly at the RROW level — but it must still be accessible: no step at the threshold, level transition between public sidewalk and building entrance, and TGSI at the door threshold. Zero setback does not eliminate accessibility obligations.",
+        "common_misconceptions": [
+          "Treating the absence of a setback as a waiver of BP 344 requirements — PD 1096 and BP 344 are independent laws that both apply",
+          "Limiting BP 344 accessibility to buildings with front yards — accessibility requirements apply at all lot configurations"
+        ]
+      },
+      "explanation": "C-3 zone: no front setback required by PD 1096, but BP 344 accessible entry still applies — both codes are independent.",
+      "code_citation": "PD 1096 Rule VIII; BP 344",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3ce262888b601a814980509e9523d2ce398f29f6ba1105bef2874efa65ad52ed"
+    },
+    {
+      "question_id": "1e2e5bc1-a183-4993-ba5c-8101eacb90dd",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What are the required minimum ramp landing dimensions at the top and bottom of an accessible ramp, and at a direction change mid-ramp, under BP 344?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Top/bottom: 1200 mm in direction of travel; direction change: 1200 × 1200 mm"
+        },
+        {
+          "id": "B",
+          "text": "Top/bottom: 1500 mm in direction of travel; direction change: 1500 × 1500 mm"
+        },
+        {
+          "id": "C",
+          "text": "Top/bottom: 1800 mm in direction of travel; direction change: 1800 × 1800 mm"
+        },
+        {
+          "id": "D",
+          "text": "Top/bottom: 1500 mm in direction of travel; direction change: 1800 × 1800 mm"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344: ramp landings at top/bottom require 1500 mm in direction of travel; at direction changes, 1500 × 1500 mm.",
+        "explanation": "BP 344 specifies ramp landing dimensions as: 1500 mm minimum in the direction of travel at the top and bottom of each ramp run. At a landing where the direction of travel changes, the landing must be 1500 × 1500 mm to allow a wheelchair to fully clear the ramp run before turning. The landing width must equal or exceed the ramp clear width (minimum 1200 mm). This is distinct from the Top 50 Traps article, which describes the alternative 1800 mm landing dimension from a different interpretation — 1500 mm is the BP 344 site planning standard.",
+        "common_misconceptions": [
+          "Selecting 1800 mm landings — the Top 50 Traps article cites 1800 mm for ramp landings; the site planning module shows 1500 mm; know your source context",
+          "Selecting 1200 mm landings — that is the ramp width minimum, not the landing length"
+        ]
+      },
+      "explanation": "Ramp landing: 1500 mm in direction of travel at top/bottom; 1500 × 1500 mm at direction changes.",
+      "code_citation": "BP 344, Site Planning module",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:80935f87f8596efd5c9396e5db98c6a609e8fc689ac483771ad4bb999efa9291"
+    },
+    {
+      "question_id": "092ec790-9f98-4253-b1a2-68d26981b12e",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Which item from the following list counts toward the building footprint (AMBF) and must be included in the PSO calculation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An uncovered accessible parking bay paved with concrete but open to the sky"
+        },
+        {
+          "id": "B",
+          "text": "A covered ramp lobby with a permanent roof attached to the building entrance"
+        },
+        {
+          "id": "C",
+          "text": "A wheelchair turning area (paved) at the base of an open ramp in the front yard"
+        },
+        {
+          "id": "D",
+          "text": "Tactile ground surface indicators (TGSI) installed along the accessible path"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "A covered ramp lobby with a permanent roof counts as building footprint; all uncovered open-sky features do not.",
+        "explanation": "BP 344 × PD 1096 interface: items that do NOT count toward footprint include open ramps (no roof), uncovered accessible parking bays, curb ramps, wheelchair turning areas, and TGSI installations — because none of these enclose habitable space. A covered ramp lobby with a permanent roof structurally attached to the building DOES count as building footprint, because the roof creates an enclosed or partially enclosed space that is part of the building's occupied area. This distinction is the most commonly tested PSO trap in site planning questions.",
+        "common_misconceptions": [
+          "Treating paved surfaces as footprint — paving alone without a roof does not create footprint",
+          "Believing any structure touching the building counts as footprint — only structures with permanent roofs count"
+        ]
+      },
+      "explanation": "Rule: permanent roof = footprint. Open to sky = open space. A covered ramp lobby is the one item in this list that has a roof.",
+      "code_citation": "BP 344; PD 1096 Rule VIII",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a4165152a1701a363b1375c55b0355963857235501199375107354f7b2b5a209"
+    },
+    {
+      "question_id": "e910f627-24d7-4268-bd2a-9e45ce8da858",
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An open (uncovered, roofless) accessible ramp is installed in the required front yard to serve the building entrance. Does this ramp count toward the building footprint (AMBF) under PD 1096?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes — any paved structure in a required yard is counted toward the building footprint, including ramps and walkways that are permanently installed"
+        },
+        {
+          "id": "B",
+          "text": "No — open ramps serve circulation only and do not enclose habitable space, so they are classified as open space"
+        },
+        {
+          "id": "C",
+          "text": "Yes — ramps are permanent structural elements and always count as footprint regardless of coverage, as they are integral to the building's accessibility"
+        },
+        {
+          "id": "D",
+          "text": "No — but only if the ramp is less than 1200 mm wide; wider ramps must be included in the AMBF calculation as per specific zoning regulations"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Open ramps without roofs or walls do not count toward building footprint — they are circulation features classified as open space.",
+        "explanation": "The BP 344 × PD 1096 interface establishes a critical principle: open accessible features (ramps without roofs, uncovered accessible parking bays, curb cuts, wheelchair turning areas, tactile ground surface indicators) are classified as open space — not building footprint — because they do not enclose habitable space. This prevents a situation where developers would be mathematically forced to eliminate accessibility features to stay within PSO limits. The ramp width (1200 mm or wider) is irrelevant to whether it counts as footprint.",
+        "common_misconceptions": [
+          "Treating all paved surfaces as building footprint — only enclosing structures with roofs/walls count toward AMBF",
+          "Applying a width threshold to ramp footprint classification — no such threshold exists in the code"
+        ]
+      },
+      "explanation": "Open ramps = open space, not footprint. Only enclosing structures (roofs + walls) count toward AMBF.",
+      "code_citation": "BP 344; PD 1096 Rule VIII",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.06122+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc6581748655b16a2df60ef38a8f287e2074f48ee2487304a132d6c20acbc02a"
+    }
+  ]
+}

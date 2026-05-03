@@ -1,0 +1,38 @@
+{
+  "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+  "slug": "lea-strc-002-01-core-concept",
+  "generated_at": "2026-05-03T10:55:44.902Z",
+  "old_hash": "sha256:6c8a016a3c3732623dbf0afa8817accda454f545f9b27859ffe304b70b3d6dcc",
+  "new_hash": "sha256:0b64e3c5c250f61ac1e3777c480c7cfc8003dc491687bf8ef53964bb802c71bb",
+  "original_hash": "sha256:6c8a016a3c3732623dbf0afa8817accda454f545f9b27859ffe304b70b3d6dcc",
+  "normalized_hash": "sha256:da0b9d39e7bac71a26c6376090e92d7da70d4123f34d86c8d225819284313e1d",
+  "candidate_hash": "sha256:0b64e3c5c250f61ac1e3777c480c7cfc8003dc491687bf8ef53964bb802c71bb",
+  "changed": true,
+  "changed_line_count": 55,
+  "inserted_line_count": 14,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 3,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
+  "changed_text_summary": {
+    "changed": 55,
+    "inserted": 14,
+    "deleted": 0,
+    "original_line_count": 43,
+    "candidate_line_count": 57
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [],
+    "changed_count": 0
+  },
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
+}

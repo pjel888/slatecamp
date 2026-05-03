@@ -1,0 +1,107 @@
+{
+  "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+  "slug": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
+  "normalized_created_at": "2026-05-01T13:33:43.435Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:84404d66d96a17c6901ed0df5870e55ab06001e1c5b57ab97d13b9547da35007",
+  "normalized_content_hash": "sha256:160b1dd6cd79b58926d730f7e9cae7654ba2b476078c0c48e15e4b8af903ba75",
+  "ui_block_count": 5,
+  "total_blocks": 5,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"ra9266\" section=\"UAP Doc 301\" title=\"Performance Bond — Three-Party Relationship\">\nThe performance bond creates a three-party relationship: Owner (obligee) — protected party; Contractor (principal) — provides the bond; Surety (guarantor) — financially guarantees performance. If the contractor defaults, the surety has options: (1) allow the contractor to continue under closer supervision; (2) pay for a replacement contractor; (3) negotiate a settlement with the owner. The surety's liability is LIMITED to the bond amount.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=ra9266, section=UAP Doc 301, title=Performance Bond — Three-Party Relationship",
+      "props_json": {
+        "code": "ra9266",
+        "section": "UAP Doc 301",
+        "title": "Performance Bond — Three-Party Relationship"
+      },
+      "children_raw": "The performance bond creates a three-party relationship: Owner (obligee) — protected party; Contractor (principal) — provides the bond; Surety (guarantor) — financially guarantees performance. If the contractor defaults, the surety has options: (1) allow the contractor to continue under closer supervision; (2) pay for a replacement contractor; (3) negotiate a settlement with the owner. The surety's liability is LIMITED to the bond amount.",
+      "children_text": "The performance bond creates a three-party relationship: Owner (obligee) — protected party; Contractor (principal) — provides the bond; Surety (guarantor) — financially guarantees performance. If the contractor defaults, the surety has options: (1) allow the contractor to continue under closer supervision; (2) pay for a replacement contractor; (3) negotiate a settlement with the owner. The surety's liability is LIMITED to the bond amount.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:a92b67940650170942928cb41cd76c334734914c4ca1f3f6ab382d09e23173e2"
+    },
+    {
+      "block_id": "ui_0002",
+      "component_name": "ProcessFlow",
+      "raw": "<ProcessFlow>\n  **Calling the Performance Bond Procedure:**\n  Step 1: Contractor materially breaches contract (abandonment, failure to progress, etc.)\n  Step 2: Owner/Architect documents the default thoroughly\n  Step 3: Owner provides formal written notice to contractor (7-14 day cure period)\n  Step 4: Contractor fails to remedy within cure period\n  Step 5: Owner submits claim to surety with supporting documentation\n  Step 6: Surety investigates and has options (let contractor continue, hire replacement, or settle)\n  Step 7: Surety pays up to the bond amount (liability capped at bond face value)\n</ProcessFlow>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ProcessFlow\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**Calling the Performance Bond Procedure:**\n  Step 1: Contractor materially breaches contract (abandonment, failure to progress, etc.)\n  Step 2: Owner/Architect documents the default thoroughly\n  Step 3: Owner provides formal written notice to contractor (7-14 day cure period)\n  Step 4: Contractor fails to remedy within cure period\n  Step 5: Owner submits claim to surety with supporting documentation\n  Step 6: Surety investigates and has options (let contractor continue, hire replacement, or settle)\n  Step 7: Surety pays up to the bond amount (liability capped at bond face value)",
+      "children_text": "**Calling the Performance Bond Procedure:**\n  Step 1: Contractor materially breaches contract (abandonment, failure to progress, etc.)\n  Step 2: Owner/Architect documents the default thoroughly\n  Step 3: Owner provides formal written notice to contractor (7-14 day cure period)\n  Step 4: Contractor fails to remedy within cure period\n  Step 5: Owner submits claim to surety with supporting documentation\n  Step 6: Surety investigates and has options (let contractor continue, hire replacement, or settle)\n  Step 7: Surety pays up to the bond amount (liability capped at bond face value)",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:29fa09eb272d34d26f655c595b82ad6d0cfefca267804a23760c4e0cd96aea8d"
+    },
+    {
+      "block_id": "ui_0003",
+      "component_name": "Warn",
+      "raw": "<Warn>\n  **Exam Trap:** The surety's liability is LIMITED to the bond amount. If completion costs exceed the bond, the surety is not obligated to pay the excess. The owner's recovery is therefore capped at the bond amount. This is a frequent LEA test point — owners cannot recover damages exceeding the bond from the surety.\n</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**Exam Trap:** The surety's liability is LIMITED to the bond amount. If completion costs exceed the bond, the surety is not obligated to pay the excess. The owner's recovery is therefore capped at the bond amount. This is a frequent LEA test point — owners cannot recover damages exceeding the bond from the surety.",
+      "children_text": "**Exam Trap:** The surety's liability is LIMITED to the bond amount. If completion costs exceed the bond, the surety is not obligated to pay the excess. The owner's recovery is therefore capped at the bond amount. This is a frequent LEA test point — owners cannot recover damages exceeding the bond from the surety.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:a0a1949d7cd0cf7f638683e037ec24259442df897b102873f5fa7388ffbec27d"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  mistakes={[\n    \"Believing the surety is liable for all completion costs — liability is capped at the bond amount\",\n    \"Assuming the owner can call the bond without notice — formal notice and cure period (7-14 days) required\",\n    \"Thinking the performance bond covers subcontractor non-payment — that is the Payment Bond's function\",\n    \"Confusing bid bond with performance bond — bid bond guarantees the bidder will sign; performance bond guarantees execution of work\",\n    \"Believing the bond amount is fixed at the original contract price — bond may need adjustment for change orders\",\n  ]}\n/>",
+      "raw_hash": "sha256:4d477f9f02d92bc2835417a1549c91dfed75138690c7145304d9dac5490c9f4c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes={[\n    \"Believing the surety is liable for all completion costs — liability is capped at the bond amount\",\n    \"Assuming the owner can call the bond without notice — formal notice and cure period (7-14 days) required\",\n    \"Thinking the performance bond covers subcontractor non-payment — that is the Payment Bond's function\",\n    \"Confusing bid bond with performance bond — bid bond guarantees the bidder will sign; performance bond guarantees execution of work\",\n    \"Believing the bond amount is fixed at the original contract price — bond may need adjustment for change orders\",\n  ]}\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:97143522f681b88ffebcf2c3ea62fc749eab9bf3d81fce89e6bba5877c84eeac",
+      "props": {
+        "mistakes": "{[\n    \"Believing the surety is liable for all completion costs — liability is capped at the bond amount\",\n    \"Assuming the owner can call the bond without notice — formal notice and cure period (7-14 days) required\",\n    \"Thinking the performance bond covers subcontractor non-payment — that is the Payment Bond's function\",\n    \"Confusing bid bond with performance bond — bid bond guarantees the bidder will sign; performance bond guarantees execution of work\",\n    \"Believing the bond amount is fixed at the original contract price — bond may need adjustment for change orders\",\n  ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n    \"Believing the surety is liable for all completion costs — liability is capped at the bond amount\",\n    \"Assuming the owner can call the bond without notice — formal notice and cure period (7-14 days) required\",\n    \"Thinking the performance bond covers subcontractor non-payment — that is the Payment Bond's function\",\n    \"Confusing bid bond with performance bond — bid bond guarantees the bidder will sign; performance bond guarantees execution of work\",\n    \"Believing the bond amount is fixed at the original contract price — bond may need adjustment for change orders\",\n  ]}"
+      },
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": null,
+      "end_offset": null,
+      "line_start": null,
+      "line_end": null,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved",
+      "props_text": "mistakes={[\n    \"Believing the surety is liable for all completion costs — liability is capped at the bond amount\",\n    \"Assuming the owner can call the bond without notice — formal notice and cure period (7-14 days) required\",\n    \"Thinking the performance bond covers subcontractor non-payment — that is the Payment Bond's function\",\n    \"Confusing bid bond with performance bond — bid bond guarantees the bidder will sign; performance bond guarantees execution of work\",\n    \"Believing the bond amount is fixed at the original contract price — bond may need adjustment for change orders\",\n  ]}"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "KeyValues",
+      "raw": "<KeyValues\n  values={{\n    \"Standard Performance Bond\": \"100% of contract price\",\n    \"Range\": \"50% to 100% of contract value\",\n    \"Bid Bond Amount\": \"1% to 5% of bid amount\",\n    \"Payment Bond\": \"50% to 100% of contract value\",\n    \"Guarantee Bond\": \"1 year from Substantial Completion\"\n  }}\n/>",
+      "raw_hash": "sha256:8dfdefc7b6e5f8367cfcf454491586168d77f5c5b057e4d04e5f9fce4119279d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: values={{\n    \"Standard Performance Bond\": \"100% of contract price\",\n    \"Range\": \"50% to 100% of contract value\",\n    \"Bid Bond Amount\": \"1% to 5% of bid amount\",\n    \"Payment Bond\": \"50% to 100% of contract value\",\n    \"Guarantee Bond\": \"1 year from Substantial Completion\"\n  }\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:09e75d7eaff434afdc7a0867bb1419ab1399a7c6fe445fccd93cd6ffa84e15a7",
+      "props": {
+        "values": "{{\n    \"Standard Performance Bond\": \"100% of contract price\",\n    \"Range\": \"50% to 100% of contract value\",\n    \"Bid Bond Amount\": \"1% to 5% of bid amount\",\n    \"Payment Bond\": \"50% to 100% of contract value\",\n    \"Guarantee Bond\": \"1 year from Substantial Completion\"\n  }"
+      },
+      "props_json": {
+        "values": "{{\n    \"Standard Performance Bond\": \"100% of contract price\",\n    \"Range\": \"50% to 100% of contract value\",\n    \"Bid Bond Amount\": \"1% to 5% of bid amount\",\n    \"Payment Bond\": \"50% to 100% of contract value\",\n    \"Guarantee Bond\": \"1 year from Substantial Completion\"\n  }"
+      },
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": null,
+      "end_offset": null,
+      "line_start": null,
+      "line_end": null,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved",
+      "props_text": "values={{\n    \"Standard Performance Bond\": \"100% of contract price\",\n    \"Range\": \"50% to 100% of contract value\",\n    \"Bid Bond Amount\": \"1% to 5% of bid amount\",\n    \"Payment Bond\": \"50% to 100% of contract value\",\n    \"Guarantee Bond\": \"1 year from Substantial Completion\"\n  }"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:78a3b352c149a3f74e5c116c367e486ce0e5d29012fc5e504bc9786cebb3c026"
+}

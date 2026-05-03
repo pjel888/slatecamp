@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+  "slug": "comprehensive-signage-package",
+  "title": "Comprehensive Signage Package",
+  "component_count": 2,
+  "components": [
+    {
+      "component_name": "Callout",
+      "block_ids": [
+        "ui_0002",
+        "ui_0003",
+        "ui_0004",
+        "ui_0005",
+        "ui_0006",
+        "ui_0007",
+        "ui_0008",
+        "ui_0009"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "LawCallout",
+      "block_ids": [
+        "ui_0001"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    }
+  ],
+  "unknown_components": [],
+  "custom_ui_block_count": 9,
+  "normalized_status": "passed",
+  "components_detected": [
+    "Callout",
+    "LawCallout"
+  ],
+  "unknown_components_detected": []
+}

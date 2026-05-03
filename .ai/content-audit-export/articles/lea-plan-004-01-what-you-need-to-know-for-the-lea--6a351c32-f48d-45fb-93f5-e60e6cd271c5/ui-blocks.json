@@ -1,0 +1,121 @@
+{
+  "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+  "slug": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
+  "normalized_created_at": "2026-05-01T13:33:43.555Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:779bfb3765fdce86dfeb206c52e5dc25ed1c347c4bbc4cc2b980ddcd70b03b30",
+  "normalized_content_hash": "sha256:b98e8440f7b7d2a0a57aebca0401193c1e84d050eed44500433d6ebbee9fc79e",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Note",
+      "raw": "<Note type=\"warn\">Closely spaced contour lines = **STEEP** terrain. Widely spaced contour lines = **FLAT** or gently sloping terrain. This is one of the most-tested distinctions in site planning. Reversing this rule = automatic wrong answer.</Note>",
+      "raw_hash": "sha256:6248b2b3c7f51538ce4fc67eb9f210637e032f90dbe280fe987ce7d4898b688d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Note\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"warn\"\n- Text: Closely spaced contour lines = **STEEP** terrain. Widely spaced contour lines = **FLAT** or gently sloping terrain. This is one of the most-tested distinctions in site planning. Reversing this rule = automatic wrong answer.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:1090db4c3af41b17ad0f0ca7352ac1ff79ecb94cb4f57e74ea9b9d2157b04b58",
+      "props": {
+        "type": "warn"
+      },
+      "props_json": {
+        "type": "warn"
+      },
+      "props_text": "type=\"warn\"",
+      "children_raw": "Closely spaced contour lines = **STEEP** terrain. Widely spaced contour lines = **FLAT** or gently sloping terrain. This is one of the most-tested distinctions in site planning. Reversing this rule = automatic wrong answer.",
+      "children_text": "Closely spaced contour lines = **STEEP** terrain. Widely spaced contour lines = **FLAT** or gently sloping terrain. This is one of the most-tested distinctions in site planning. Reversing this rule = automatic wrong answer.",
+      "start_offset": 625,
+      "end_offset": 873,
+      "line_start": 11,
+      "line_end": 11,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Note",
+      "raw": "<Note type=\"warn\">**H:W = 1:2 is considered comfortable enclosure.** The building is half as tall as the street is wide. This feels human-sclead and welcoming. **H:W = 2:1 (building twice as tall as street is wide) is oppressive—canyon-like and uncomfortable.**</Note>",
+      "raw_hash": "sha256:e7356f7f9ad018c132d314df060bfdd332a6619a591eb362639b05fc1b350609",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Note\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"warn\"\n- Text: **H:W = 1:2 is considered comfortable enclosure.** The building is half as tall as the street is wide. This feels human-sclead and welcoming. **H:W = 2:1 (building twice as tall as street is wide) is oppressive—canyon-like and uncomfortable.**\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:0ca08b47b7e17736d39c2a84b0cdce10b49ad423c0224e56843d8964b2938f03",
+      "props": {
+        "type": "warn"
+      },
+      "props_json": {
+        "type": "warn"
+      },
+      "props_text": "type=\"warn\"",
+      "children_raw": "**H:W = 1:2 is considered comfortable enclosure.** The building is half as tall as the street is wide. This feels human-sclead and welcoming. **H:W = 2:1 (building twice as tall as street is wide) is oppressive—canyon-like and uncomfortable.**",
+      "children_text": "**H:W = 1:2 is considered comfortable enclosure.** The building is half as tall as the street is wide. This feels human-sclead and welcoming. **H:W = 2:1 (building twice as tall as street is wide) is oppressive—canyon-like and uncomfortable.**",
+      "start_offset": 4755,
+      "end_offset": 5023,
+      "line_start": 83,
+      "line_end": 83,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable rows={3} cols={2} headers={[\"Constraint\", \"Why It Matters Here\"]} data={[[\"PD 1067 water body easements (3m/20m/40m per water body type)\", \"Limits buildable area on sites near esteros, rivers, or lakes\"], [\"PHIVOLCS active fault zones (5m minimum setback)\", \"Seismic risk; buildings must be set back from fault traces\"], [\"Flood-prone areas (RA 10121 DRRM mainstreaming)\", \"May be unsuitable for ground-level sensitive uses\"]]} />",
+      "raw_hash": "sha256:c4260e71c2683c45086600ca4c3f7a65f0a25707a50ff819d596c5ea4a7d521b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: rows=\"{3}\", cols=\"{2}\", headers=\"{[\\\"Constraint\\\", \\\"Why It Matters Here\\\"]}\", data=\"{[[\\\"PD 1067 water body easements (3m/20m/40m per water body type)\\\", \\\"Limits buildable area on sites near esteros, rivers, or lakes\\\"], [\\\"PHIVOLCS active fault zones (5m minimum setback)\\\", \\\"Seismic risk; buildings must be set back from fault traces\\\"], [\\\"Flood-prone areas (RA 10121 DRRM mainstreaming)\\\", \\\"May be unsuitable for ground-level sensitive uses\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:5fd4129cfac0ffdd4c9004a6e82017bc09c8338747502896f8517c42e5f535a2",
+      "props": {
+        "rows": "{3}",
+        "cols": "{2}",
+        "headers": "{[\"Constraint\", \"Why It Matters Here\"]}",
+        "data": "{[[\"PD 1067 water body easements (3m/20m/40m per water body type)\", \"Limits buildable area on sites near esteros, rivers, or lakes\"], [\"PHIVOLCS active fault zones (5m minimum setback)\", \"Seismic risk; buildings must be set back from fault traces\"], [\"Flood-prone areas (RA 10121 DRRM mainstreaming)\", \"May be unsuitable for ground-level sensitive uses\"]]}"
+      },
+      "props_json": {
+        "rows": "{3}",
+        "cols": "{2}",
+        "headers": "{[\"Constraint\", \"Why It Matters Here\"]}",
+        "data": "{[[\"PD 1067 water body easements (3m/20m/40m per water body type)\", \"Limits buildable area on sites near esteros, rivers, or lakes\"], [\"PHIVOLCS active fault zones (5m minimum setback)\", \"Seismic risk; buildings must be set back from fault traces\"], [\"Flood-prone areas (RA 10121 DRRM mainstreaming)\", \"May be unsuitable for ground-level sensitive uses\"]]}"
+      },
+      "props_text": "rows={3} cols={2} headers={[\"Constraint\", \"Why It Matters Here\"]} data={[[\"PD 1067 water body easements (3m/20m/40m per water body type)\", \"Limits buildable area on sites near esteros, rivers, or lakes\"], [\"PHIVOLCS active fault zones (5m minimum setback)\", \"Seismic risk; buildings must be set back from fault traces\"], [\"Flood-prone areas (RA 10121 DRRM mainstreaming)\", \"May be unsuitable for ground-level sensitive uses\"]]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7049,
+      "end_offset": 7494,
+      "line_start": 126,
+      "line_end": 126,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>When analyzing a site for planning, cover these eight areas:\n\n1. Read contours and identify slope hazards\n2. Map sun orientation and shadow patterns seasonally\n3. Note prevailing wind direction and typhoon exposure\n4. Document views from and to the site\n5. Assess H:W ratios of nearby buildings (for context)\n6. Identify soil type and bearing capacity constraints\n7. Locate existing utilities and assess proximity\n8. Note all legal constraints (easements, flood zones, faults)\n\nThese inform what is _possible_ on the site—not what design chooses to do.</Tip>",
+      "raw_hash": "sha256:d81ebf30973d7a44dbf2b6d543ce2f24178946ff662a105ee1f1620d9f3c14f5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: When analyzing a site for planning, cover these eight areas: 1. Read contours and identify slope hazards 2. Map sun orientation and shadow patterns seasonally 3. Note prevailing wind direction and typhoon exposure 4. Document views from and to the site 5. Assess H:W ratios of nearby buildings (for context) 6. Identify soil type and bearing capacity constraints 7. Locate existing utilities and assess proximity 8. Note all legal constraints (easements, flood zones, faults) These inform what is _po\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:cc57ad9309f9272475ae06131d9e84b2d7f2cea61baf67c06189ff2cafc2a956",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "When analyzing a site for planning, cover these eight areas:\n\n1. Read contours and identify slope hazards\n2. Map sun orientation and shadow patterns seasonally\n3. Note prevailing wind direction and typhoon exposure\n4. Document views from and to the site\n5. Assess H:W ratios of nearby buildings (for context)\n6. Identify soil type and bearing capacity constraints\n7. Locate existing utilities and assess proximity\n8. Note all legal constraints (easements, flood zones, faults)\n\nThese inform what is _possible_ on the site—not what design chooses to do.",
+      "children_text": "When analyzing a site for planning, cover these eight areas: 1. Read contours and identify slope hazards 2. Map sun orientation and shadow patterns seasonally 3. Note prevailing wind direction and typhoon exposure 4. Document views from and to the site 5. Assess H:W ratios of nearby buildings (for context) 6. Identify soil type and bearing capacity constraints 7. Locate existing utilities and assess proximity 8. Note all legal constraints (easements, flood zones, faults) These inform what is _po",
+      "start_offset": 8000,
+      "end_offset": 8563,
+      "line_start": 139,
+      "line_end": 150,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:1a73fb0465f491be0a4796ca82d36eee63f299b21d3a7dcd8a0dfe67ef0ba883"
+}

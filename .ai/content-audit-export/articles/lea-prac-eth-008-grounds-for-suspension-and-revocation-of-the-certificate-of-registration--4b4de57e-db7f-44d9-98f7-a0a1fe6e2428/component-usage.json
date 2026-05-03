@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+  "slug": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
+  "title": "Grounds for Suspension and Revocation of the Certificate",
+  "component_count": 2,
+  "components": [
+    {
+      "name": "LawCallout",
+      "usage_count": 2,
+      "instances": [
+        {
+          "block_id": "ui_0001",
+          "raw": "<LawCallout code=\"irr\" section=\"Sec 23(a)-(d)\" title=\"Four Grounds for Suspension or Revocation\">\nRA 9266 Section 23 enumerates: (a) causes or misdemeanors under the Code of Ethical Conduct and Standards of Professional Practice; (b) fraud or deceit in obtaining a certificate of registration; (c) gross negligence, incompetence, or recklessness in the practice of architecture; and (d) violation of any provision of RA 9266, its IRR, the Code of Ethical Conduct, or Standards of Professional Practice.\n</LawCallout>"
+        },
+        {
+          "block_id": "ui_0003",
+          "raw": "<LawCallout code=\"irr\" section=\"Sec 23(c)\" title=\"Gross Negligence vs. Simple Negligence\">\nSimple negligence (a mistake or error in judgment) does not constitute grounds for suspension or revocation. The standard requires gross negligence — a clear, substantial, and unjustified departure from professional standards. An architect who makes an isolated calculation error in structural loading has committed simple negligence. An architect who repeatedly approves structural designs without reviewing calculations, despite visible warning signs, has committed gross negligence.\n</LawCallout>"
+        }
+      ]
+    },
+    {
+      "name": "Warn",
+      "usage_count": 1,
+      "instances": [
+        {
+          "block_id": "ui_0002",
+          "raw": "<Warn>\n  **Critical distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23(d) (Code violations) or the Code of Ethical Conduct. Sec 23(b) targets the gateway to the profession, catching architects who lied about their education, experience, or examination eligibility to secure a license they did not legitimately earn.\n</Warn>"
+        }
+      ]
+    }
+  ],
+  "unknown_components": [],
+  "custom_ui_block_count": 3,
+  "normalized_status": "passed",
+  "components_detected": ["LawCallout", "Warn"],
+  "unknown_components_detected": []
+}

@@ -1,0 +1,508 @@
+{
+  "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:8a52917dba9c1d881b915895de56fd8657af4833e8865450f4eec7ee2aef80e0",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "f0f1c121-5f41-43fc-aabd-0e0053464e6f",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "Under Group 9, why is the architect's fee set at 150% of the basic fee rather than 100% when the project involves renovation of an existing building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because renovation projects require a higher profit margin for the architect, reflecting increased financial risk"
+        },
+        {
+          "id": "b",
+          "text": "Because the PRBoA imposes a surcharge on all renovation permits, increasing overall project costs"
+        },
+        {
+          "id": "c",
+          "text": "Because renovation work demands more architectural effort due to existing conditions, structural constraints, and as-built documentation requirements"
+        },
+        {
+          "id": "d",
+          "text": "Because the contractor's fee is also increased by 150% for renovation work, aligning with industry standards"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The multiplier addresses increased design effort, not profit margin. The architect's overhead and profit structure remains the same.",
+        "b": "The 150% multiplier is a fee guideline in the Architect's Guidelines, not a surcharge imposed by the PRBoA on building permits.",
+        "d": "Group 9 addresses the architect's fee only. The contractor's compensation is determined separately through the construction contract.",
+        "correct": "Renovation projects inherently require more design effort than new construction of equivalent scope. The architect must assess existing conditions, work within structural constraints, produce or verify as-built documentation, and design solutions that integrate with existing building systems. The 150% multiplier compensates for this additional effort.",
+        "takeaway": "Renovation = 150% because working with existing conditions demands more effort than new construction — the multiplier compensates for this, not for higher profit."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Project Classification Group 9",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:213845c07bdba345b638f770bb33544fcb400b48dc63f9042dec6ea4e809c130"
+    },
+    {
+      "question_id": "eb541d35-35f7-421e-ad90-28faf6a55e39",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "Under the Architect's Guidelines, what is the recommended fee percentage for a Group 1 project (Simplest Utilization and Character) with a Project Construction Cost of ₱50 million or less?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5% DAEDS of PCC"
+        },
+        {
+          "id": "b",
+          "text": "6% DAEDS of PCC"
+        },
+        {
+          "id": "c",
+          "text": "7% DAEDS of PCC"
+        },
+        {
+          "id": "d",
+          "text": "8% DAEDS of PCC"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "6% is the base rate for Group 2 (Moderate Complexity), not Group 1.",
+        "c": "7% is the base rate for Group 3 (Exceptional Character), not Group 1.",
+        "d": "8% is an outdated rate from the 1979 UAP schedule — the Architect's Guidelines revised these percentages.",
+        "correct": "the Architect's Guidelines specifies that Group 1 (Simplest Utilization and Character) projects with PCC of ₱50M or less carry a DAEDS fee of 5% of PCC.",
+        "takeaway": "Group 1 = 5% DAEDS, Group 2 = 6% DAEDS, Group 3 = 7% DAEDS — the complexity groups ascend by 1% each according to the Architect's Guidelines."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Project Classification Group 1",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:206c42e42b9ff0f1f39f3c63f952c6e1ad1f2e1a10be8f4a6450dc4b58ee4541"
+    },
+    {
+      "question_id": "5cc63afa-1ebb-47ee-82c7-5b7a903d82bf",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "What is the key difference between Group 6 (Repetitive Building) and Group 7 (Repetitive Housing) in how fees are structured?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group 6 uses a flat percentage while Group 7 uses the MDPE method, which involves detailed cost analysis and adjustments"
+        },
+        {
+          "id": "b",
+          "text": "Group 6 applies declining percentages of the basic fee per repeated building, while Group 7 starts at 10% of PCC and adds incremental amounts per additional unit"
+        },
+        {
+          "id": "c",
+          "text": "Group 6 applies to residential projects and Group 7 applies to commercial projects, with different fee structures based on project type"
+        },
+        {
+          "id": "d",
+          "text": "Group 6 charges 150% of the basic fee while Group 7 charges 100% of the basic fee, reflecting the complexity and scale of the projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Neither group uses the MDPE method — both use variations of the percentage-of-PCC approach. MDPE is reserved for Group 10.",
+        "c": "The reverse is closer: Group 6 applies to repeated non-residential buildings (schools, branch offices), while Group 7 applies to mass housing developments.",
+        "d": "The 150% multiplier belongs to Group 9 (Renovations), not Group 6. Group 6 starts at 100% for the first building and declines from there.",
+        "correct": "Group 6 uses a declining schedule based on percentages of the basic fee (1st at 100%, 2nd at 80%, 3rd at 60%, rest at 40%). Group 7 starts at 10% of PCC for the 1st unit and adds increments (+60% for 2nd–10th, then +30% for 11th onward).",
+        "takeaway": "Group 6 = declining from 100% of basic fee per building; Group 7 = 10% base plus incremental additions per housing unit."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Project Classification Groups 6–7",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0320098ede5c81c30c9cc5ae024129911e68d75a97c101a054d4b54765b64413"
+    },
+    {
+      "question_id": "f33f0fe6-82a8-46d8-b41d-fd2a741fc219",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "An architect is commissioned to design a Group 1 warehouse with a PCC of ₱120 million. Using the sliding sclea, what is the architect's total fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱5,100,000"
+        },
+        {
+          "id": "b",
+          "text": "₱6,300,000"
+        },
+        {
+          "id": "c",
+          "text": "₱7,200,000"
+        },
+        {
+          "id": "d",
+          "text": "₱6,000,000"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "₱6,300,000 results from using the outdated 6% base rate instead of the correct the Architect's Guidelines rate of 5%.",
+        "c": "₱7,200,000 applies a flat 6% to the entire ₱120M — this ignores the sliding scale and uses the wrong base rate.",
+        "d": "₱6,000,000 results from applying only two brackets (₱50M + ₱50M) instead of three, leaving the final ₱20M uncounted.",
+        "correct": "Fee on first ₱50M = ₱50M × 5% = ₱2,500,000. Fee on next ₱50M (₱50M–₱100M bracket) = ₱50M × 4% = ₱2,000,000. Fee on remaining ₱20M (falling in the ₱100M–₱200M bracket at 3%) = ₱20M × 3% = ₱600,000. Total = ₱2,500,000 + ₱2,000,000 + ₱600,000 = ₱5,100,000.",
+        "takeaway": "Group 1 uses the 5% DAEDS base (per the Architect's Guidelines), then slides to 4%, 3%, 2%, 1%, 0.5% on successive brackets."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Group 1 Sliding Sclea",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2cccfab7f61254be899aad67f074c8ede8ee2b8483de44d6bd9e3a0eca0575d5"
+    },
+    {
+      "question_id": "1c805ba0-36b6-47f1-bf1a-6128a55a3735",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "Which Project Classification Group covers low-rise residential buildings such as single-family houses, duplexes, and townhouses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group 1 — Simplest Utilization and Character"
+        },
+        {
+          "id": "b",
+          "text": "Group 3 — Exceptional Character"
+        },
+        {
+          "id": "c",
+          "text": "Group 4 — Low-Rise Residentials"
+        },
+        {
+          "id": "d",
+          "text": "Group 7 — Repetitive Housing"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group 1 covers buildings of simplest utilization and character — utilitarian structures like warehouses and simple factories, not residentials.",
+        "b": "Group 3 covers buildings of exceptional character housing special equipment — churches, theaters, museums — not standard residential buildings.",
+        "d": "Group 7 covers repetitive housing (mass housing developments with a single unit design repeated), not the general low-rise residential category.",
+        "correct": "Group 4 covers residences such as single-detached, duplexes, rowhouses, small apartment houses, and townhouses.",
+        "takeaway": "Low-rise residentials = Group 4 at 10% of PCC — distinct from repetitive housing (Group 7) and utilitarian structures (Group 1)."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Project Classification Group 4",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5b46024882b1bd2d3dfcb8ce0a6408d6482920a4f786918ea3091a4c633da8e5"
+    },
+    {
+      "question_id": "421dcaa1-5d03-4048-96c0-d0edb5cb77e3",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "A developer commissions an architect to design a subdivision with 15 identical housing units under Group 7 (Repetitive Housing). What fee structure applies to the 12th unit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "60% of the basic fee for each additional unit, calculated based on the total construction cost of the unit"
+        },
+        {
+          "id": "b",
+          "text": "40% of the basic fee for each additional unit, provided the design remains unchanged from the original"
+        },
+        {
+          "id": "c",
+          "text": "The fee of the 10th unit plus 30% for each additional unit"
+        },
+        {
+          "id": "d",
+          "text": "10% of PCC as a flat rate for every unit after the 10th, regardless of any modifications made to the design"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The +60% increment applies to the 2nd through 10th units, not units beyond the 10th.",
+        "b": "40% of basic fee is the Group 6 (Repetitive Building) rate for the 4th building onward — this is a different group with a different calculation basis.",
+        "d": "The fee is not a flat 10% for every unit beyond the 10th. The 10% of PCC applies to the 1st unit only; subsequent units use the incremental formula.",
+        "correct": "Under Group 7, units from the 11th onward are charged at the fee of the 10th unit plus 30% for each additional unit. The 12th unit falls in this bracket.",
+        "takeaway": "Group 7 has three tiers: 1st unit at 10%, 2nd–10th at +60% each, 11th onward at fee of 10th + 30% each."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Project Classification Group 7",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e7212b7277688d0a857d3e211d4f8959a33ceecf02b160f259757b1dd460313"
+    },
+    {
+      "question_id": "2a6ac9e1-e210-4ef0-8e4b-5de2c4a8e915",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "An architect classifies a laboratory building with specialized equipment as Group 3 (Exceptional Character) with a PCC of ₱250 million. The client argues it should be Group 2 (Moderate Complexity) because the building uses standard construction methods. Under the Architect's Guidelines, which classification is correct, and what is the fee difference between the two interpretations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group 2 is correct because standard construction methods determine the group; fee difference is ₱1,000,000"
+        },
+        {
+          "id": "b",
+          "text": "Group 3 is correct because it covers buildings housing special equipment; fee difference is ₱2,500,000"
+        },
+        {
+          "id": "c",
+          "text": "Group 3 is correct because it covers buildings housing special equipment; fee difference is ₱500,000"
+        },
+        {
+          "id": "d",
+          "text": "Group 3 is correct because it covers buildings housing special equipment; fee difference is ₱1,500,000"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group 2 is incorrect. The Architect's Guidelines classify by building function and character, not solely by construction method. Special equipment is a Group 3 criterion.",
+        "c": "Group 3 is correct, but ₱500,000 understates the difference. The ₱250M project spans four rate brackets, not just one. Each bracket differs by 1% between groups.",
+        "d": "Group 3 is correct, but ₱1,500,000 still understates the difference. A ₱250M project spans four brackets (₱50M each at different rates), not just 1.5 brackets.",
+        "correct": "Group 3 explicitly covers buildings of exceptional character AND those housing special equipment. A laboratory building qualifies under Group 3 regardless of its structural system. Per the Architect's Guidelines sliding scale: Group 3 = (7%, 6%, 5%, 4%, 3%, 2%), Group 2 = (6%, 5%, 4%, 3%, 2%, 1%). For ₱250M: Group 3 = (₱50M × 7%) + (₱50M × 6%) + (₱100M × 5%) + (₱50M × 4%) = ₱3,500,000 + ₱3,000,000 + ₱5,000,000 + ₱2,000,000 = ₱13,500,000. Group 2 = (₱50M × 6%) + (₱50M × 5%) + (₱100M × 4%) + (₱50M × 3%) = ₱3,000,000 + ₱2,500,000 + ₱4,000,000 + ₱1,500,000 = ₱11,000,000. Difference = ₱2,500,000. Each bracket differs by 1%, and ₱250M spans four brackets (₱50M + ₱50M + ₱100M + ₱50M), so total difference = 1% on each bracket.",
+        "takeaway": "For large projects spanning multiple rate brackets, the cumulative fee difference between adjacent complexity groups grows substantially. Group 3's 1% premium over Group 2 on each bracket compounds across the entire ₱250M PCC."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Project Classification Groups 2–3; Sliding Sclea",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cacb593a595b9327bd90b061822f17bddad46903f45b1c91160351ce4778bbd2"
+    },
+    {
+      "question_id": "4ff44bf1-e1da-45de-96cd-2c7274efb11f",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "An architect is engaged to renovate an existing Group 3 building (Exceptional Character) with a PCC of ₱30 million. What is the architect's fee under Group 9?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱2,100,000"
+        },
+        {
+          "id": "b",
+          "text": "₱3,150,000"
+        },
+        {
+          "id": "c",
+          "text": "₱3,000,000"
+        },
+        {
+          "id": "d",
+          "text": "₱4,500,000"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "₱2,100,000 is the base fee for Group 3 new construction (₱30M × 7%), but this answer omits the 150% renovation multiplier under Group 9.",
+        "c": "₱3,000,000 results from incorrectly applying 10% of PCC (Group 4 rate) instead of the correct Group 3 DAEDS rate of 7%.",
+        "d": "₱4,500,000 results from applying 150% to an incorrect base — likely using an outdated 8% rate instead of the correct the Architect's Guidelines rate of 7%.",
+        "correct": "Step 1: Determine base fee as if new construction under Group 3. Since ₱30M is ≤ ₱50M, apply flat 7% DAEDS rate = ₱30M × 7% = ₱2,100,000. Step 2: Apply Group 9 renovation multiplier = ₱2,100,000 × 150% = ₱3,150,000.",
+        "takeaway": "Group 9 renovation fee = base group fee × 150%. Group 3 base is 7% DAEDS per the Architect's Guidelines."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Project Classification Groups 3 and 9",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bbd7d8fb01bf1ca8b87a8966ccbc05e92b624cc336b3f3039f7920d0c59b9555"
+    },
+    {
+      "question_id": "88e4794e-3483-4670-90e0-337301b73022",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "Why do the Architect's Guidelines apply a sliding sclea to Group 1–3 projects with PCC exceeding ₱50 million, rather than a flat percentage on the entire PCC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because the architect's liability decreases as the project cost increases, reflecting a reduced risk profile for larger projects."
+        },
+        {
+          "id": "b",
+          "text": "Because architectural effort does not increase proportionally with construction cost beyond a certain project size"
+        },
+        {
+          "id": "c",
+          "text": "Because the PRBoA mandates fee reductions for projects over ₱50 million, ensuring affordability for large-scale developments."
+        },
+        {
+          "id": "d",
+          "text": "Because larger projects always use the MDPE compensation method instead, which aligns fees with project complexity rather than cost."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Liability does not decrease with project size — in fact, larger projects may carry greater liability exposure. The sliding scale addresses fee proportionality, not liability.",
+        "c": "The sliding scale is established in the Architect's Guidelines as a professional standard, not mandated by the PRBoA as a regulatory fee reduction.",
+        "d": "Larger projects under Groups 1–3 still use the percentage-of-PCC method with the sliding scale — MDPE is specified for Group 10 (Technical Expertise), not as an alternative for large projects.",
+        "correct": "The sliding scale reflects the economic reality that design effort increases at a diminishing rate as project cost rises. A ₱1 billion warehouse does not require 20 times the design effort of a ₱50M warehouse, so the fee rate decreases on the excess amount.",
+        "takeaway": "The sliding scale exists because design effort does not scale linearly with construction cost — the percentage decreases as PCC increases."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Sliding Sclea for Groups 1–3",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e883cbac10c6b1ec32d4391ba092c530045a70e2c8d1d51257588eb3366ecd39"
+    },
+    {
+      "question_id": "e0bff4b3-7f1a-4015-a69f-4ba1d5d9bb1b",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "A client presents two projects to an architect: Project A is a new Group 2 office building with ₱80M PCC, and Project B is the renovation of an existing Group 1 warehouse with ₱45M PCC. Which project yields the higher architect's fee, and by how much?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project A at ₱4,500,000 vs. Project B at ₱3,375,000 — Project A is higher by ₱1,125,000"
+        },
+        {
+          "id": "b",
+          "text": "Project A at ₱5,600,000 vs. Project B at ₱2,700,000 — Project A is higher by ₱2,900,000"
+        },
+        {
+          "id": "c",
+          "text": "Project A at ₱5,000,000 vs. Project B at ₱2,700,000 — Project A is higher by ₱2,300,000"
+        },
+        {
+          "id": "d",
+          "text": "Project B at ₱4,050,000 vs. Project A at ₱3,500,000 — Project B is higher by ₱550,000"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "₱5,600,000 for Project A results from applying an outdated 7% base rate. ₱2,700,000 for Project B applies the wrong Group 1 base rate (6% instead of 5%) and is missing the renovation multiplier.",
+        "c": "Project A uses wrong base rate (7% instead of 6%). Project B at ₱2,700,000 uses wrong base rate (6% instead of 5%) and omits the Group 9 renovation multiplier of 150%.",
+        "d": "This reverses which project is higher and uses outdated percentage rates from the 1979 UAP schedule.",
+        "correct": "Project A (Group 2, ₱80M): First ₱50M × 6% DAEDS = ₱3,000,000; next ₱30M (₱50M–₱100M bracket) × 5% = ₱1,500,000; total = ₱4,500,000. Project B (Group 1 renovation under Group 9, ₱45M): Base fee = ₱45M × 5% DAEDS = ₱2,250,000; renovation multiplier = ₱2,250,000 × 150% = ₱3,375,000. Project A is higher by ₱1,125,000.",
+        "takeaway": "Per the Architect's Guidelines: Group 1 = 5%, Group 2 = 6%. Apply sliding scale for projects over ₱50M, and multiply by 150% for Group 9 renovations."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Groups 1, 2, and 9; Sliding Sclea",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6baddfa5602ca91fcda8890b1195c25bb17698365c61502d439eada91ebf748c"
+    }
+  ]
+}

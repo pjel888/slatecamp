@@ -1,0 +1,508 @@
+{
+  "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:e491d9a12bf9ebb83068a8cf71f93ccb2af3b83c2174858ef56ae2788bd1354a",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1d983b54-e285-4d25-8a96-e5f0d62170a0",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "A project involves significant innovation and research development value. The construction cost is relatively modest (100 million pesos) compared to the design work required. Which compensation method is more appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Percentage-of-PCC, because the project has a defined construction cost, which allows for a straightforward calculation of fees based on the total project budget"
+        },
+        {
+          "id": "b",
+          "text": "MDPE, because design complexity disproportionately exceeds construction cost"
+        },
+        {
+          "id": "c",
+          "text": "50% percentage-of-PCC and 50% MDPE, providing a balanced approach that considers both construction cost and design effort"
+        },
+        {
+          "id": "d",
+          "text": "Neither method applies to innovative projects, which require a custom compensation structure tailored to the unique demands of the project"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses the existence of a cost estimate with appropriateness of cost-based fees; MDPE is correct here because the cost doesn't reflect design value.",
+        "c": "Hybrid approaches are mentioned in the article but are not the most straightforward answer for this innovation scenario.",
+        "d": "Misunderstands that both methods can apply to innovative projects; MDPE is simply more appropriate in this case.",
+        "correct": "Projects with significant innovation or research value often have construction costs that don't reflect intellectual and developmental effort. MDPE better compensates the architect for design complexity exceeding construction cost.",
+        "takeaway": "When design effort or innovation far exceeds what construction cost reflects, MDPE ensures fair compensation independent of the PCC amount."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b78532114f79a8328b2333bdce566665acf422d7bc8e319aff4b5d06c31270bd"
+    },
+    {
+      "question_id": "fb2ea122-07f1-4f0c-8c0f-302011efc828",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "When is percentage-of-PCC most appropriate as a compensation method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "When Project Construction Cost is difficult to estimate, which can lead to disputes over final fees"
+        },
+        {
+          "id": "b",
+          "text": "When project scope is highly uncertain and likely to change, making fixed fees impractical"
+        },
+        {
+          "id": "c",
+          "text": "When PCC can be estimated reliably and design scope aligns with construction cost"
+        },
+        {
+          "id": "d",
+          "text": "For all innovative and research-based projects, which often require flexible compensation structures"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses the conditions that favor MDPE (difficult cost estimation) with those favoring percentage-of-PCC (reliable cost estimation).",
+        "b": "Misunderstands that uncertain scope favors MDPE's flexibility; percentage-of-PCC requires clearly defined scope.",
+        "d": "Reverses the principle: innovative projects with disproportionate design complexity favor MDPE, not percentage-of-PCC.",
+        "correct": "Percentage-of-PCC is most appropriate when Project Construction Cost can be estimated reliably, design scope aligns logically with construction cost, and scope is clearly defined.",
+        "takeaway": "Percentage-of-PCC suits projects where reliable cost estimates allow the fee to track proportionally with the building's value."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Document 202 (Compensation guidelines)",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5f5016a45b05a6d157eb80b30ba251876b53354cb454b06be67d5ac30565f640"
+    },
+    {
+      "question_id": "ddf0d8d7-148a-4980-b44b-c301fb03fbe6",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "What must an Owner-Architect Agreement specify if using percentage-of-PCC compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the total fee amount, without detailing the percentage rate or project classification group, which are critical for transparency."
+        },
+        {
+          "id": "b",
+          "text": "The percentage rate and the project classification group, ensuring that both parties understand the basis for fee calculation and any potential adjustments."
+        },
+        {
+          "id": "c",
+          "text": "What PCC amount will be used (Design Development estimate, final bid, or lowest responsive bid) and contingency provisions if actual cost differs"
+        },
+        {
+          "id": "d",
+          "text": "The percentage rate, but PCC amount is always determined by the lowest bid, which may not reflect the final project cost or scope changes."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits the critical specification of what PCC benchmark applies and what happens if costs diverge.",
+        "b": "Includes rate and classification but fails to specify which PCC amount applies—a critical gap.",
+        "d": "Incorrectly assumes lowest bid is always the baseline; contract must explicitly state which cost figure applies.",
+        "correct": "For percentage-of-PCC, the contract must specify what PCC amount will be used for fee calculation and must establish clear contingency provisions regarding fee adjustment if actual costs differ from the estimated PCC.",
+        "takeaway": "The contract must explicitly define which cost baseline (Design Development estimate, final bid, or lowest bid) triggers the fee calculation to prevent disputes if costs change."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fb91650ffa672d6b90cc68e7e4bac2f1491790bc22b6e8757c18480743612451"
+    },
+    {
+      "question_id": "92189231-3fb5-40ff-b218-0d5800a9a16e",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "For a project where both methods appear viable, what should the architect do to make a final selection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flip a coin to decide between the methods, which is not a professional approach but highlights the indecision"
+        },
+        {
+          "id": "b",
+          "text": "Calculate fees using both approaches, compare results, and choose based on which produces appropriate compensation and best matches project characteristics"
+        },
+        {
+          "id": "c",
+          "text": "Always use the method that produces the higher fee, although this may not always align with client expectations or project needs"
+        },
+        {
+          "id": "d",
+          "text": "Choose based on which method is most commonly used in the market, which can provide a benchmark for industry standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Replaces professional analysis with chance; inappropriate for fee decision-making.",
+        "c": "Prioritizes higher fee over appropriateness and project fit; unethical and potentially uncompetitive.",
+        "d": "Relies on market precedent instead of project-specific analysis; fails to tailor methods to specific conditions.",
+        "correct": "A quantitative comparison method calculates fees using both approaches and compares results. The architect chooses based on which method produces appropriate compensation for the project and best matches project characteristics.",
+        "takeaway": "Use the quantitative comparison method to calculate both fees and choose the method that produces fairest compensation while matching project conditions."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:276dc9b588ebf61be8716bfb295a920ca1d1d183fc0c6103360cbad65af38c2b"
+    },
+    {
+      "question_id": "328a8cbe-a67b-4fcf-90ae-781c0b43efca",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "What is the critical threshold for cost estimation accuracy when considering percentage-of-PCC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±5% accuracy is required for all projects, regardless of size or complexity, to ensure financial feasibility and risk management"
+        },
+        {
+          "id": "b",
+          "text": "±10% accuracy is required, typically for projects with moderate complexity and standard construction methods"
+        },
+        {
+          "id": "c",
+          "text": "Cost estimation must be reliable within a reasonable margin (typically ±10-20% per industry practice); if uncertain, MDPE is safer"
+        },
+        {
+          "id": "d",
+          "text": "Any estimate accuracy is acceptable for percentage-of-PCC, as long as it aligns with the project's financial goals and stakeholder expectations"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sets the standard too stringently; ±15% (not ±5%) is the threshold in SPP 202 guidance.",
+        "b": "Mistakenly sets the threshold at ±10% instead of the correct ±15% accuracy margin.",
+        "d": "Fails to recognize that cost estimation reliability is fundamental to percentage-of-PCC viability.",
+        "correct": "PCC estimation within ±15% accuracy supports percentage-of-PCC viability. If cost estimation accuracy is uncertain or contingent on design development, MDPE's hourly basis provides safer compensation structure.",
+        "takeaway": "The ±15% threshold is the key decision point: better accuracy supports percentage-of-PCC; greater uncertainty favors MDPE."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4e34c2def433d8ccda5be5852aa0f3447add0c9cbc14e43e10a785d477896e7c"
+    },
+    {
+      "question_id": "a3c0a19f-d37c-4ccd-9b2a-07735150b1b7",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "How should an architect respond if a client strongly prefers percentage-of-PCC but the project characteristics suggest MDPE is more appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatically use percentage-of-PCC to satisfy the client, without considering project specifics"
+        },
+        {
+          "id": "b",
+          "text": "Refuse to consider the client's preference, which may harm client relations"
+        },
+        {
+          "id": "c",
+          "text": "Explain why MDPE suits the project better, perhaps offering hybrid approach or documenting limitations of percentage-of-PCC method"
+        },
+        {
+          "id": "d",
+          "text": "Use MDPE without consulting the client about the method, which could lead to misunderstandings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Abandons professional judgment to defer to client preference without explaining risks.",
+        "b": "Dismisses client input entirely; professional practice requires negotiation and explanation.",
+        "d": "Imposes MDPE without client discussion, violating the collaborative fee negotiation process.",
+        "correct": "The architect should justify the recommended method and be prepared to negotiate. If the client strongly prefers percentage-of-PCC, the architect might offer a hybrid approach or document limitations and risks.",
+        "takeaway": "Professional communication involves educating the client about method appropriateness while remaining open to negotiation and alternatives."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7e1911564891f311b8b0851fa34bc2c02ae481c090e14cb527574ba7928c8697"
+    },
+    {
+      "question_id": "7c7dc166-c547-4cd5-873a-e7243422d944",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "A master-planning project involves defining land use, phasing, and infrastructure for a mixed-use development. Design complexity is very high relative to ultimate construction cost. Which method is more appropriate and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Percentage-of-PCC, because the project ultimately will have significant construction costs that reflect the design effort involved"
+        },
+        {
+          "id": "b",
+          "text": "MDPE, because the architect's planning work defines the program and infrastructure, which may not be adequately reflected in ultimate construction cost"
+        },
+        {
+          "id": "c",
+          "text": "Either method works equally well for master-planning projects regardless of the ratio of design complexity to construction value"
+        },
+        {
+          "id": "d",
+          "text": "Neither method is appropriate for master-planning; a separate fee schedule must be created for planning-only engagements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Treats construction cost presence as the deciding factor; fails to consider that master-planning value is not fully captured in construction cost.",
+        "c": "Falsely suggests equivalence; master-planning disproportionately favors MDPE due to intellectual contribution.",
+        "d": "Incorrectly suggests neither method applies; MDPE is clearly the better choice for master-planning.",
+        "correct": "Master-planning projects where the architect defines land use, phasing, and infrastructure often justify MDPE because construction cost doesn't reflect the architect's significant planning contribution.",
+        "takeaway": "Master-planning and programming-intensive projects favor MDPE because their intellectual value exceeds what construction cost reflects."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de2ed4a8ed00eabb42466ca6d9049e808a19c51089de812d1579e174c578b68a"
+    },
+    {
+      "question_id": "45129512-a603-4d02-9fad-fdc58d900da6",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "When should an architect use a hybrid compensation approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hybrid approaches are not professional and should be avoided, as they may lead to conflicts in project management"
+        },
+        {
+          "id": "b",
+          "text": "Only when the client specifically requests it, ensuring that all terms are clearly defined in the contract"
+        },
+        {
+          "id": "c",
+          "text": "When combining elements—such as MDPE for pre-design phases plus percentage-of-PCC for design phases—addresses the project's characteristics better than a single method"
+        },
+        {
+          "id": "d",
+          "text": "Hybrid approaches are only appropriate for Design-Build projects, where flexibility in compensation is often required"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misrepresents hybrid methods as unprofessional; they are legitimate when project structure justifies them.",
+        "b": "Reverses the principle: hybrid approaches should be architect-proposed when they suit the project, not just client-requested.",
+        "d": "Incorrectly restricts hybrid approaches to Design-Build; they apply to any project with mixed characteristics.",
+        "correct": "Hybrid approaches can be appropriate when project characteristics benefit from combining elements of both methods, such as MDPE for uncertain pre-design phases plus percentage-of-PCC for final design phases.",
+        "takeaway": "Hybrid approaches are legitimate when project phases have different characteristics requiring different compensation structures."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb7f1c2274f0d49272f684a857daca3c3b9ab93d942f6dd93a37525d66f895ad"
+    },
+    {
+      "question_id": "7231d63a-9725-4b73-b02b-aeb4808c3fb0",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "Which project type is most suited to MDPE compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A conventional 5-story apartment building with standard design, offering predictable costs"
+        },
+        {
+          "id": "b",
+          "text": "A straightforward retail space with simple mechanical systems, minimizing complexity"
+        },
+        {
+          "id": "c",
+          "text": "A renovation project with significant scope uncertainty and phased delivery"
+        },
+        {
+          "id": "d",
+          "text": "A standard office building with predictable construction cost, reducing financial risk"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Describes a straightforward project suited to percentage-of-PCC due to predictable scope and cost; not appropriate for MDPE.",
+        "b": "Simple mechanical systems and standard design suggest percentage-of-PCC viability, not MDPE.",
+        "d": "Standard office buildings with predictable costs favor percentage-of-PCC, not MDPE.",
+        "correct": "Renovation projects with uncertain scope, phased delivery, or projects with difficult-to-estimate costs are well-suited to MDPE because hourly billing accommodates uncertainty better than percentage-of-PCC.",
+        "takeaway": "MDPE protects the architect on projects where scope uncertainty and existing conditions make cost estimates unreliable."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9697219b676bd962842dd0ad57275d334c648363780bca8df38af42a1dcf65cb"
+    },
+    {
+      "question_id": "416b64c9-c139-4d3e-8a04-cfc3a9e2d6e2",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "A project has estimated DPE of 1.5 million pesos, estimated PCC of 75 million pesos, MDPE multiplier of 2.4, and the architect is considering Group 5 classification at 10.75% of PCC. What are the respective fees, and which method is more favorable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MDPE: 3.6 million; Percentage-of-PCC: 8.06 million; MDPE is more favorable, as it offers a lower cost for the same scope of work"
+        },
+        {
+          "id": "b",
+          "text": "MDPE: 3.6 million; Percentage-of-PCC: 8.06 million; Percentage-of-PCC is more favorable"
+        },
+        {
+          "id": "c",
+          "text": "MDPE: 2.4 million; Percentage-of-PCC: 10.75 million; MDPE is more favorable, providing a cost-effective solution for the project"
+        },
+        {
+          "id": "d",
+          "text": "MDPE: 3.6 million; Percentage-of-PCC: 5.06 million; MDPE is more favorable, as it aligns with the project's budget constraints"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Calculates correctly but reverses the favorable conclusion: percentage-of-PCC yields the higher fee.",
+        "c": "Miscalculates MDPE fee (incorrectly uses multiplier without DPE) and PCC fee; both calculations are wrong.",
+        "d": "Miscalculates the percentage-of-PCC fee (incorrectly uses 6.75% instead of 10.75%).",
+        "correct": "MDPE: 1.5 million × 2.4 = 3.6 million pesos. Percentage-of-PCC: 75 million × 10.75% = 8.06 million pesos. Percentage-of-PCC produces significantly higher fee, making it more favorable. The architect should verify whether this difference reflects appropriate compensation or indicates misclassification.",
+        "takeaway": "Calculate both methods accurately to reveal which produces substantially different compensation, then verify if the difference justifies one method over the other."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ce35bf3660e29a521c4c0ad5c12510a07a465ad43b58a8bd1429ed98ea8f7f67"
+    }
+  ]
+}

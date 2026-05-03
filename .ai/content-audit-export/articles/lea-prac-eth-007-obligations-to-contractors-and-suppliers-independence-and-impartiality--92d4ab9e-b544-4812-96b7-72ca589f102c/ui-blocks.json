@@ -1,0 +1,55 @@
+{
+  "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+  "slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+  "normalized_created_at": "2026-05-01T13:33:43.561Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:957daac00fe82cc90e910190467faabf796d88c92eb543df7f85692aa1a3c25c",
+  "normalized_content_hash": "sha256:d50c533dbffb7c87c170e7cef15601b7dc7f46e9bb5b928d634114f6e5d8d382",
+  "ui_block_count": 3,
+  "total_blocks": 0,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"uap\" section=\"Code of Ethics - Obligations to Contractors\">\nSection 3 establishes the architect as a \"fair safeguard of contractor interests\" while serving the client. Section 3-d prohibits accepting free engineering services, substantial gifts, commissions, or favors from any contractor or subcontractor. Section 4-a prohibits availing of technical services from manufacturers/suppliers where obligation would detriment client interests. Section 4-b permits market discounts ONLY if credited to the client.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=uap, section=Code of Ethics - Obligations to Contractors, title=Contractor and Supplier Obligations",
+      "props_json": {
+        "code": "uap",
+        "section": "Code of Ethics - Obligations to Contractors",
+        "title": "Contractor and Supplier Obligations"
+      },
+      "children_raw": "Section 3 establishes the architect as a \"fair safeguard of contractor interests\" while serving the client. Section 3-d prohibits accepting free engineering services, substantial gifts, commissions, or favors from any contractor or subcontractor. Section 4-a prohibits availing of technical services from manufacturers/suppliers where obligation would detriment client interests. Section 4-b permits market discounts ONLY if credited to the client.",
+      "children_text": "Section 3 establishes the architect as a \"fair safeguard of contractor interests\" while serving the client. Section 3-d prohibits accepting free engineering services, substantial gifts, commissions, or favors from any contractor or subcontractor. Section 4-a prohibits availing of technical services from manufacturers/suppliers where obligation would detriment client interests. Section 4-b permits market discounts ONLY if credited to the client.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:f8506d0e71aa9a06cc860277f79f982ba9f06691b040b172f8447f67bf840d53"
+    },
+    {
+      "block_id": "ui_0002",
+      "component_name": "Warn",
+      "raw": "<Warn>\n  **Critical Distinction:** Free engineering services from a supplier (service) violate \u00a74-a. A volume discount on materials (financial benefit) is permissible if credited to the client. Services create quid pro quo expectation; material discounts are normal commercial transactions. The LEA frequently tests this distinction.\n</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**Critical Distinction:** Free engineering services from a supplier (service) violate \u00a74-a. A volume discount on materials (financial benefit) is permissible if credited to the client. Services create quid pro quo expectation; material discounts are normal commercial transactions. The LEA frequently tests this distinction.",
+      "children_text": "**Critical Distinction:** Free engineering services from a supplier (service) violate \u00a74-a. A volume discount on materials (financial benefit) is permissible if credited to the client. Services create quid pro quo expectation; material discounts are normal commercial transactions. The LEA frequently tests this distinction.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:f52a4b00a30b74d32b6fa46b70764f8a6134cf4b5ca8a95784ead5c7e592eeff"
+    },
+    {
+      "block_id": "ui_0003",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **LEA Watch:** The \"appearance of bias\" standard is broader than actual bias. Even if the architect consciously remains fair, accepting benefits creates an appearance of impropriety. Professional ethics requires eliminating both actual bias AND the appearance of bias. The stricter standard \u2014 appearance of bias \u2014 governs architectural conduct.\n</ExamTip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**LEA Watch:** The \"appearance of bias\" standard is broader than actual bias. Even if the architect consciously remains fair, accepting benefits creates an appearance of impropriety. Professional ethics requires eliminating both actual bias AND the appearance of bias. The stricter standard \u2014 appearance of bias \u2014 governs architectural conduct.",
+      "children_text": "**LEA Watch:** The \"appearance of bias\" standard is broader than actual bias. Even if the architect consciously remains fair, accepting benefits creates an appearance of impropriety. Professional ethics requires eliminating both actual bias AND the appearance of bias. The stricter standard \u2014 appearance of bias \u2014 governs architectural conduct.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:0338287d9469e6f99e6afc1f54b2cd90274cdba1ef43e70a22d790de43c939fb"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

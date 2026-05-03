@@ -1,0 +1,93 @@
+{
+  "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
+  "slug": "lea-prac-frm-007-reciprocity-principles-in-architectural-practice",
+  "normalized_created_at": "2026-05-01T13:33:43.211Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:30da44853c76b55bb5f87b30e0414ecbb2fb542aba50e0aafcebd1e4ef1d3663",
+  "normalized_content_hash": "sha256:56f071ec5142603f400448ea026d9c7dac9c2a551ff47a67a4bd932d2416dfc7",
+  "ui_block_count": 6,
+  "total_blocks": 0,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "component_name": "ExamTip",
+      "raw": "<LawCallout code=\"ra9266\" section=\"Section 24 - Reciprocity\">\nExpect 1-2 reciprocity questions per exam cycle. The most common trap: conflating Section 27 and Section 38. Know which is which cold.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "code=ra9266, section=Section 24 - Reciprocity",
+      "props_json": {
+        "code": "ra9266",
+        "section": "Section 24 - Reciprocity"
+      },
+      "children_raw": "Expect 1-2 reciprocity questions per exam cycle. The most common trap: conflating Section 27 and Section 38. Know which is which cold.",
+      "children_text": "Expect 1-2 reciprocity questions per exam cycle. The most common trap: conflating Section 27 and Section 38. Know which is which cold.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:ad54b200db48500eaab1acdb53b96f092bf1cf9904ed93bc01174095c76843c2"
+    },
+    {
+      "block_id": "ui_0002",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"irr\" section=\"RA 9266, Section 27\">\nA person who is not a citizen of the Philippines at the time of applying to take the licensure examination shall not be allowed to take the exam unless proof exists that the foreign country either (a) admits Filipino citizens to practice architecture without restriction, or (b) allows them to practice after an examination on terms of strict and absolute equality with its own citizens, including unconditional recognition of prerequisite degrees from Philippine institutions.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=irr, section=RA 9266, Section 27",
+      "props_json": {
+        "code": "irr",
+        "section": "RA 9266, Section 27"
+      },
+      "children_raw": "A person who is not a citizen of the Philippines at the time of applying to take the licensure examination shall not be allowed to take the exam unless proof exists that the foreign country either (a) admits Filipino citizens to practice architecture without restriction, or (b) allows them to practice after an examination on terms of strict and absolute equality with its own citizens, including unconditional recognition of prerequisite degrees from Philippine institutions.",
+      "children_text": "A person who is not a citizen of the Philippines at the time of applying to take the licensure examination shall not be allowed to take the exam unless proof exists that the foreign country either (a) admits Filipino citizens to practice architecture without restriction, or (b) allows them to practice after an examination on terms of strict and absolute equality with its own citizens, including unconditional recognition of prerequisite degrees from Philippine institutions.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:3702710526b7c43a872027a4bfb171493937a0e5902a40f1b74f081bd2123471"
+    },
+    {
+      "block_id": "ui_0003",
+      "component_name": "Warn",
+      "raw": "<Warn>The previous version of this article claimed a foreign applicant could prove \"reciprocity OR substantial equivalence in education, training, and experience.\" This is incorrect. The phrase \"substantial equivalence\" does NOT appear in RA 9266 Section 27. The only pathway under the law is **proof of reciprocal treatment** by the foreign country.</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "The previous version of this article claimed a foreign applicant could prove \"reciprocity OR substantial equivalence in education, training, and experience.\" This is incorrect. The phrase \"substantial equivalence\" does NOT appear in RA 9266 Section 27. The only pathway under the law is **proof of reciprocal treatment** by the foreign country.",
+      "children_text": "The previous version of this article claimed a foreign applicant could prove \"reciprocity OR substantial equivalence in education, training, and experience.\" This is incorrect. The phrase \"substantial equivalence\" does NOT appear in RA 9266 Section 27. The only pathway under the law is **proof of reciprocal treatment** by the foreign country.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:8daca7e530d15179a06d188430c5da74627aec7ff648926042798ad1043d1d80"
+    },
+    {
+      "block_id": "ui_0004",
+      "component_name": "Tip",
+      "raw": "<Tip>Think of these as two different doors: Section 27 leads to **full Philippine licensure** (you pass the exam, you become a licensed Philippine architect). Section 38 leads to a **temporary permit** for a specific project (you remain licensed in your home country, you work on one project with a Filipino counterpart). You go through one door or the other \u2014 not both.</Tip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Tip\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "Think of these as two different doors: Section 27 leads to **full Philippine licensure** (you pass the exam, you become a licensed Philippine architect). Section 38 leads to a **temporary permit** for a specific project (you remain licensed in your home country, you work on one project with a Filipino counterpart). You go through one door or the other \u2014 not both.",
+      "children_text": "Think of these as two different doors: Section 27 leads to **full Philippine licensure** (you pass the exam, you become a licensed Philippine architect). Section 38 leads to a **temporary permit** for a specific project (you remain licensed in your home country, you work on one project with a Filipino counterpart). You go through one door or the other \u2014 not both.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:a3f5e3620138b7c7ef910ba2b3e1d141a4630482b6cef7cdc7101ea9919729de"
+    },
+    {
+      "block_id": "ui_0005",
+      "component_name": "Warn",
+      "raw": "<Warn>The previous version of this article claimed that \"all foreign architects, including those from reciprocal countries, must secure a temporary/special permit under Section 38.\" This is incorrect. A foreign national who passes the Philippine exam under Section 27 becomes a **licensed Philippine architect** and does NOT need a Section 38 permit.</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "The previous version of this article claimed that \"all foreign architects, including those from reciprocal countries, must secure a temporary/special permit under Section 38.\" This is incorrect. A foreign national who passes the Philippine exam under Section 27 becomes a **licensed Philippine architect** and does NOT need a Section 38 permit.",
+      "children_text": "The previous version of this article claimed that \"all foreign architects, including those from reciprocal countries, must secure a temporary/special permit under Section 38.\" This is incorrect. A foreign national who passes the Philippine exam under Section 27 becomes a **licensed Philippine architect** and does NOT need a Section 38 permit.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:ed94cbfa78b1bacbf51c7553bc012e734b62fd238757d3a78b62a548238d799f"
+    },
+    {
+      "block_id": "ui_0006",
+      "component_name": "Warn",
+      "raw": "<Warn>The article previously claimed the Board \"maintains a list of countries with which reciprocity exists.\" The Board evaluates reciprocity evidence on a case-by-case or ad hoc basis. There is no widely published standing list comparable to those in other professions. The phrasing \"the Board maintains a list\" overstates the formalization of this process.</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "The article previously claimed the Board \"maintains a list of countries with which reciprocity exists.\" The Board evaluates reciprocity evidence on a case-by-case or ad hoc basis. There is no widely published standing list comparable to those in other professions. The phrasing \"the Board maintains a list\" overstates the formalization of this process.",
+      "children_text": "The article previously claimed the Board \"maintains a list of countries with which reciprocity exists.\" The Board evaluates reciprocity evidence on a case-by-case or ad hoc basis. There is no widely published standing list comparable to those in other professions. The phrasing \"the Board maintains a list\" overstates the formalization of this process.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:32819d0ca124f71599f87b1b0ae792f6b9af839de8f18259e0968c5dcfd6bca2"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:93ff746e9ff4c3560af6a1e231aa0583a63a21f1c7735bbed63a598b3e496462"
+}

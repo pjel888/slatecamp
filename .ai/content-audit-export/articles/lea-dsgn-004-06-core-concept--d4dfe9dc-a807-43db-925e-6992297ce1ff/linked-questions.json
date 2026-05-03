@@ -1,0 +1,507 @@
+{
+  "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:46531c88fd6cd5f2e134b9c37a2603f303a28859d5edef14e9e2fffeb1a116b0",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "a1b364c5-c529-438d-9ae3-1a8455474e1f",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "A public library has 800 sqm of reading/study areas. Using the RA 9514 2019 Revised IRR, calculate the occupant load for these areas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "174 occupants"
+        },
+        {
+          "id": "b",
+          "text": "422 occupants"
+        },
+        {
+          "id": "c",
+          "text": "430 occupants"
+        },
+        {
+          "id": "d",
+          "text": "800 occupants"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uses the outdated or incorrect factor of 4.6 sqm (intended for laboratories).",
+        "c": "Incorrect rounding or factor.",
+        "d": "This is the floor area, not occupant load.",
+        "correct": "Per RA 9514 2019 IRR Table 10.2.7.3.1, 'Classrooms' and 'Reading Rooms' have an occupant load factor of 1.9 sqm/person (net). 800 sqm ÷ 1.9 ≈ 421.05, which rounds up to 422.",
+        "takeaway": "Library Reading Room Factor = 1.9 sqm/person (net)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ecb1c4536f9ee57902afad3c1835b31d4f129f8c16c22062d11f175b7f1eb8a4"
+    },
+    {
+      "question_id": "c85b3fde-89cb-4638-bb15-c842ca9de437",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "A library contains 600 sqm of reading area and 400 sqm of open-shelf stacks. Using RA 9514 2019 IRR factors, calculate the total occupant load.",
+      "options": [
+        {
+          "id": "a",
+          "text": "218 occupants"
+        },
+        {
+          "id": "b",
+          "text": "359 occupants"
+        },
+        {
+          "id": "c",
+          "text": "527 occupants"
+        },
+        {
+          "id": "d",
+          "text": "413 occupants"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uses 4.6 factor for reading and 9.3 for stacks.",
+        "c": "Uses 1.9 factor for the entire area.",
+        "d": "Incorrect application of factors.",
+        "correct": "1. Reading Area: 600 sqm ÷ 1.9 = 316 occupants. 2. Stacks: 400 sqm ÷ 9.3 = 43 occupants. Total = 316 + 43 = 359 occupants.",
+        "takeaway": "Reading Room = 1.9 sqm/person; Stacks = 9.3 sqm/person."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e2ed54850cd19ac0f05d3962fd38164a5ea50fd5f4606f47bfe1126e95f56596"
+    },
+    {
+      "question_id": "9ad2da53-e02a-429c-9140-33722727c6fe",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "A school library must serve 600 students according to DepEd standards. What is the minimum required floor area for the library facility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "600 sqm"
+        },
+        {
+          "id": "b",
+          "text": "900 sqm"
+        },
+        {
+          "id": "c",
+          "text": "450 sqm"
+        },
+        {
+          "id": "d",
+          "text": "1,200 sqm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Undercalculates; assumes 1.0 sqm per student.",
+        "c": "Undercalculates; assumes 0.75 sqm per student.",
+        "d": "Overcalculates; assumes 2.0 sqm per student.",
+        "correct": "DepEd Educational Facilities Manual specifies 1.5 sqm per student for library spaces. 600 students × 1.5 sqm = 900 sqm.",
+        "takeaway": "DepEd Library Area = 1.5 sqm/student served."
+      },
+      "explanation": null,
+      "code_citation": "DepEd Educational Facilities Manual",
+      "bloom_level": "remember",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e51d8d69a25360eadc6f1b147cdb571ea98374ef43929f70b1fbda190308c26a"
+    },
+    {
+      "question_id": "a699f6c5-0598-488c-8f86-1f553a113681",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "A municipal library serves 30,000 residents. According to PRC Standards, what is the recommended floor area range?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300–500 sqm"
+        },
+        {
+          "id": "b",
+          "text": "500–1,500 sqm"
+        },
+        {
+          "id": "c",
+          "text": "1,500–5,000 sqm"
+        },
+        {
+          "id": "d",
+          "text": "5,000–15,000 sqm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "For populations of 5,000–10,000.",
+        "c": "For populations of 50,000–500,000.",
+        "d": "For populations exceeding 500,000.",
+        "correct": "PRC standards for public libraries: 10,000–50,000 residents require a 500–1,500 sqm facility.",
+        "takeaway": "Library size is categorized by population served: 10k-50k = 500-1,500 sqm."
+      },
+      "explanation": null,
+      "code_citation": "PRC Standards for Libraries",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e0b3296b99afdc503b364477fd6ac11e568538e1e8d6a6ff43886fa9fca0902a"
+    },
+    {
+      "question_id": "cf26855e-b885-4a53-b8fb-03b919d9730c",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "Why is the occupant load factor for library reading areas (1.9 sqm/person) significantly denser than general business offices (9.3 sqm/person)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Libraries have higher fire risks due to paper storage, which necessitates stricter safety measures and denser occupancy"
+        },
+        {
+          "id": "b",
+          "text": "Library activities (reading/study) are stationary and seated at high-density tables/carrels, whereas offices require more circulation space per employee."
+        },
+        {
+          "id": "c",
+          "text": "Offices are Group E and libraries are Group A-2, which affects the calculation of occupant load factors based on different usage types"
+        },
+        {
+          "id": "d",
+          "text": "The factor for libraries is based on the number of books, not the area, which leads to a different approach in determining space requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fire risk determines building construction type, not occupant load density.",
+        "c": "Occupancy group is a result of use, not the cause of the density factor.",
+        "d": "Factors are strictly area-based in the Fire Code.",
+        "correct": "Occupant load factors reflect physical density. Seated study (1.9) is dense; office work (9.3) involves desks, equipment, and circulation, allowing for fewer people in the same area.",
+        "takeaway": "Higher density (1.9) = Seated stationary; Lower density (9.3) = Office/Business."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b70ba98efd9ec5caa0acf0e6aec66188069717170e452b4c585e367ad4e0717b"
+    },
+    {
+      "question_id": "58a848db-1e22-46b2-bfce-cbc0b4825639",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "Under PD 1096, what occupancy group classification applies to a public library?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group E (Business/Mercantile), which typically includes spaces used for the transaction of business or the rendering of professional services."
+        },
+        {
+          "id": "b",
+          "text": "Group C (Education and Recreation), which covers facilities primarily used for educational purposes and recreational activities."
+        },
+        {
+          "id": "c",
+          "text": "Group A-2 (Institutional branch libraries and museums)"
+        },
+        {
+          "id": "d",
+          "text": "Group H (Assembly/Public Gathering), which is designated for buildings used for assembly purposes, including theaters and lecture halls."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group E is for commercial offices and retail; libraries are institutional.",
+        "b": "Group C is strictly for schools and educational institutions.",
+        "d": "Group H is for assembly buildings with fixed seating or high-density stages.",
+        "correct": "PD 1096 Rule VII Table VII.1 explicitly classifies 'branch libraries and museums' as Group A Division 2. This is a common ALE trap where students mistake it for Group C (Educational).",
+        "takeaway": "Public Libraries = Group A-2. Schools = Group C."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Table VII.1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c169ea577ab764c9dc57bad874befed00eeb76840ba562096a3e8eca774b9a6e"
+    },
+    {
+      "question_id": "203bf119-1164-45f3-8454-b0f17d342800",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "A research library vault for manuscripts maintains 18–21°C and 45–55% RH. How should this non-public storage be treated for occupant load?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Excluded from building occupancy as it is a restricted support space."
+        },
+        {
+          "id": "b",
+          "text": "Calculated as Storage at 27.9 sqm/person."
+        },
+        {
+          "id": "c",
+          "text": "Calculated as Reading Room at 1.9 sqm/person."
+        },
+        {
+          "id": "d",
+          "text": "Calculated as Office at 9.3 sqm/person."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect; all areas contribute to the total building load for egress sizing, even at low densities.",
+        "c": "Vaults are not for reading/study.",
+        "d": "Vaults are not for general business staff activities.",
+        "correct": "RA 9514 Section 10.2.1.2 requires every building part to be calculated. Even if non-public, storage/warehouse areas use the factor of 27.9 sqm/person.",
+        "takeaway": "Storage Factor = 27.9 sqm/person."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:03e90a9af7ab16b71e8fd66a03b9ddafb4b3dcfca0a7a217aa3127cd14f1490f"
+    },
+    {
+      "question_id": "2ac6cabd-4309-4117-ab4a-864a332651c9",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "A library has 900 sqm reading, 400 sqm stacks, and 200 sqm admin offices. What is the total building occupancy load?",
+      "options": [
+        {
+          "id": "a",
+          "text": "239 occupants"
+        },
+        {
+          "id": "b",
+          "text": "539 occupants"
+        },
+        {
+          "id": "c",
+          "text": "326 occupants"
+        },
+        {
+          "id": "d",
+          "text": "789 occupants"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uses incorrect factors for reading room.",
+        "c": "Uses a single factor for the entire building area.",
+        "correct": "1. Reading: 900 ÷ 1.9 = 474. 2. Stacks: 400 ÷ 9.3 = 43. 3. Admin: 200 ÷ 9.3 = 22. Total = 474 + 43 + 22 = 539 occupants.",
+        "takeaway": "Sum individual occupancy loads for each functional space type."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e53a22a9da0d604c674b9ec75abf40a1173a423e289a66bfdecbf6963d35735"
+    },
+    {
+      "question_id": "6a0d73cd-6a0b-4d9c-8079-9b7d3ddc39e8",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "A school library serves 800 students. Based on DepEd and Fire Code requirements, is a single 1.0 m wide door adequate for the facility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 1.0 m meets the minimum door width for any room."
+        },
+        {
+          "id": "b",
+          "text": "No, the calculated occupant load is 632; minimum 3 exits are required."
+        },
+        {
+          "id": "c",
+          "text": "No, the calculated occupant load is 632; required width is 3,160 mm."
+        },
+        {
+          "id": "d",
+          "text": "Yes, if the travel distance to the next exit is less than 30 meters."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Minimum width is met, but aggregate width is not.",
+        "b": "Correct that 3 exits are required for 501-1,000 persons, but the primary failure is the width.",
+        "d": "Travel distance is a separate requirement from exit capacity.",
+        "correct": "1. Area = 800 students × 1.5 sqm = 1,200 sqm. 2. Occupancy = 1,200 ÷ 1.9 = 631.5 ≈ 632. 3. Width (Level/Door) = 632 × 5.0 mm = 3,160 mm. One 1,000 mm door is inadequate.",
+        "takeaway": "Check: 1. Minimum individual width, 2. Aggregate width, 3. Number of exits."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Section 10.2.5.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e40b53aa8499c9de841b3d223d7d7dde70a4f6bd33ae28c62b2ac580c1a2de69"
+    },
+    {
+      "question_id": "ce3207df-054e-4a37-9e1c-67dd472d387d",
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "topic_id": "6b8f9718-1724-414e-b724-4fa93f61fa1d",
+      "text": "A university library is designed for 2,174 occupants. Using RA 9514 2019 IRR, what is the required aggregate exit width for the stairs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16,523 mm"
+        },
+        {
+          "id": "b",
+          "text": "10,870 mm"
+        },
+        {
+          "id": "c",
+          "text": "13,044 mm"
+        },
+        {
+          "id": "d",
+          "text": "4,130 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Uses the level component/ramp factor (5.0 mm).",
+        "c": "Incorrect factor used.",
+        "d": "Incorrect calculation.",
+        "correct": "Exit width for stairs is 7.6 mm per person. Calculation: 2,174 × 7.6 = 16,522.4 mm, rounded to 16,523 mm.",
+        "takeaway": "Stair Width Factor = 7.6 mm/person; Level Component Factor = 5.0 mm/person."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Section 10.2.5.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:388042a506aa620e70e85b2c24cff3b01cec05b9a40f20e8ecbc67bb05275d4b"
+    }
+  ]
+}

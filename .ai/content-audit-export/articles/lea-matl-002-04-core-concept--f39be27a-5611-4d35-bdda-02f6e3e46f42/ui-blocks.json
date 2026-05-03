@@ -1,0 +1,144 @@
+{
+  "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+  "slug": "lea-matl-002-04-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.278Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:2801a8bc6dd5e0a82eedce32f9887448b76601f904b600193be95c40949dd24f",
+  "normalized_content_hash": "817973799da83f895d87462fd9ed9483de1061d602bd3443774668e57e845b0f",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Remember the rule: High water absorption + humid or wet exposure = poor durability. Limestone and travertine (high absorption) fail in tropical Philippines without protection; granite (low absorption) performs well.</Tip>",
+      "raw_hash": "sha256:8955b3f1558b8819ca8a782345b85f491a08806e27075a6c4c48c77f20d43854",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Remember the rule: High water absorption + humid or wet exposure = poor durability. Limestone and travertine (high absorption) fail in tropical Philippines without protection; granite (low absorption) performs well.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:05a1b1d176f536aeee9e8e260b422f2302786039b09f3fa670e9a961df66da36",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Remember the rule: High water absorption + humid or wet exposure = poor durability. Limestone and travertine (high absorption) fail in tropical Philippines without protection; granite (low absorption) performs well.",
+      "children_text": "Remember the rule: High water absorption + humid or wet exposure = poor durability. Limestone and travertine (high absorption) fail in tropical Philippines without protection; granite (low absorption) performs well.",
+      "start_offset": 9735,
+      "end_offset": 9961,
+      "line_start": 182,
+      "line_end": 182,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard\n  mistake=\"Assuming harder stone (higher Mohs number) is always stronger (higher compressive strength)\"\n  correction=\"Mohs hardness and compressive strength are different properties. A material can be hard but weak (e.g., some slate). Marble (Mohs 3\u20144) may have lower hardness but higher compressive strength than some sandstones. Always check both properties for design.\"\n  context=\"Designers sometimes select stone based on hardness alone, overlooking compressive strength and absorption issues.\" />",
+      "raw_hash": "sha256:5baff8afe19518d4ca81b0dc92df7c0228a118432ff35aa6a96aff59360b747d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Assuming harder stone (higher Mohs number) is always stronger (higher compressive strength)\", correction=\"Mohs hardness and compressive strength are different properties. A material can be hard but weak (e.g., some slate). Marble (Mohs 3\u20144) may have lower hardness but higher compressive strength than some sandstones. Always check both properties for design.\", context=\"Designers sometimes select stone based on hardness alone, overlooking compressive strength and absorption issues.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:5b31afa24a4f79a3a80affbbe85aa6f72ff8aab7f08673c82f9d9158ac588a7a",
+      "props": {
+        "mistake": "Assuming harder stone (higher Mohs number) is always stronger (higher compressive strength)",
+        "correction": "Mohs hardness and compressive strength are different properties. A material can be hard but weak (e.g., some slate). Marble (Mohs 3\u20144) may have lower hardness but higher compressive strength than some sandstones. Always check both properties for design.",
+        "context": "Designers sometimes select stone based on hardness alone, overlooking compressive strength and absorption issues."
+      },
+      "props_json": {
+        "mistake": "Assuming harder stone (higher Mohs number) is always stronger (higher compressive strength)",
+        "correction": "Mohs hardness and compressive strength are different properties. A material can be hard but weak (e.g., some slate). Marble (Mohs 3\u20144) may have lower hardness but higher compressive strength than some sandstones. Always check both properties for design.",
+        "context": "Designers sometimes select stone based on hardness alone, overlooking compressive strength and absorption issues."
+      },
+      "props_text": "mistake=\"Assuming harder stone (higher Mohs number) is always stronger (higher compressive strength)\"\n  correction=\"Mohs hardness and compressive strength are different properties. A material can be hard but weak (e.g., some slate). Marble (Mohs 3\u20144) may have lower hardness but higher compressive strength than some sandstones. Always check both properties for design.\"\n  context=\"Designers sometimes select stone based on hardness alone, overlooking compressive strength and absorption issues.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9983,
+      "end_offset": 10501,
+      "line_start": 186,
+      "line_end": 189,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  title=\"Common Material Selection and Installation Errors\"\n  items={[\n    \"Using high-absorption stone (limestone >3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",",
+      "raw_hash": "sha256:54c79a85f6eb30df94abb1a6270fb8dd82df30d75cec1b91847464e68861ea27",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"unknown\"]\nExtracted summary:\n- Props: title=\"Common Material Selection and Installation Errors\", items=true, Using=true, high-absorption=true, stone=true, limestone=true\n- Text: 3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e8f9b217f856f434de401f32b299e75b24a055261d3d8bf2b4c684ecd8c9b487",
+      "props": {
+        "title": "Common Material Selection and Installation Errors",
+        "items": true,
+        "Using": true,
+        "high-absorption": true,
+        "stone": true,
+        "limestone": true
+      },
+      "props_json": {
+        "title": "Common Material Selection and Installation Errors",
+        "items": true,
+        "Using": true,
+        "high-absorption": true,
+        "stone": true,
+        "limestone": true
+      },
+      "props_text": "title=\"Common Material Selection and Installation Errors\"\n  items={[\n    \"Using high-absorption stone (limestone",
+      "children_raw": null,
+      "children_text": "3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",",
+      "start_offset": 10503,
+      "end_offset": 10889,
+      "line_start": 191,
+      "line_end": 194,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  title=\"Common Material Selection and Installation Errors\"\n  items={[\n    \"Using high-absorption stone (limestone >3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",",
+      "raw_hash": "sha256:54c79a85f6eb30df94abb1a6270fb8dd82df30d75cec1b91847464e68861ea27",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"unknown\"]\nExtracted summary:\n- Props: title=\"Common Material Selection and Installation Errors\", items=true, Using=true, high-absorption=true, stone=true, limestone=true\n- Text: 3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e8f9b217f856f434de401f32b299e75b24a055261d3d8bf2b4c684ecd8c9b487",
+      "props": {
+        "title": "Common Material Selection and Installation Errors",
+        "items": true,
+        "Using": true,
+        "high-absorption": true,
+        "stone": true,
+        "limestone": true
+      },
+      "props_json": {
+        "title": "Common Material Selection and Installation Errors",
+        "items": true,
+        "Using": true,
+        "high-absorption": true,
+        "stone": true,
+        "limestone": true
+      },
+      "props_text": "title=\"Common Material Selection and Installation Errors\"\n  items={[\n    \"Using high-absorption stone (limestone",
+      "children_raw": null,
+      "children_text": "3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",",
+      "start_offset": 10503,
+      "end_offset": 10889,
+      "line_start": 191,
+      "line_end": 194,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    }
+  ],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:99f631914ea0567ba46d1f9d6e06d7f7e63dfe72b066a2f7b247725f0489508c"
+}

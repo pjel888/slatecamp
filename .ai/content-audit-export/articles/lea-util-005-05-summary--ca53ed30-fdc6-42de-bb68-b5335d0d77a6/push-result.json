@@ -1,0 +1,25 @@
+{
+  "attempted_at": "2026-05-03T07:52:54.190Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+  "slug": "lea-util-005-05-summary",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:6bb17d25667e8f992448a865aa17988e39f83a2c15d45d21cbdfba98215c4ed6",
+  "original_hash": "sha256:6bb17d25667e8f992448a865aa17988e39f83a2c15d45d21cbdfba98215c4ed6",
+  "candidate_hash": "sha256:0d12c5900559f1b0a5bad9f6d2de6bb7254c46d59887e69599119728704a434d",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

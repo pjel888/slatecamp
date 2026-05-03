@@ -1,0 +1,41 @@
+{
+  "article_id": "f3a7ecf3-4df6-4497-958f-3c724875163c",
+  "slug": "lea-dsgn-008-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.754Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:252e7f08ee6b6ec24b023c92f52695b036af9b71413190c9dfb920e8cef6ed04",
+  "normalized_content_hash": "a4b5e6046999a32650639ac8ab722807788f6f7d1ab1bf4c8106d2600d068302",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n mistakes={[\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\n ]}\n/>",
+      "raw_hash": "sha256:e14dda2520ac210412026595c7e58377cfef76fea62482f2cdf5ab1e99211c84",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:1bbf240707cb3cdd8ba204f61f2098867113ca1b2a47f64c61f4b66933018e58",
+      "props": {
+        "mistakes": "{[\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\n ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\n ]}"
+      },
+      "props_text": "mistakes={[\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\n ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 3591,
+      "end_offset": 4032,
+      "line_start": 60,
+      "line_end": 68,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:9d97f69c71fdc49e6652303f842a2789eee18c9e99363766e61922efb5073eac"
+}

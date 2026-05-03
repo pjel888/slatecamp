@@ -1,0 +1,178 @@
+{
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "slug": "lea-strc-009-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.361Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:55c17b08215b3011eb7a39f2b6aba61374e674106f08283eb72feb2a7ca4fbe2",
+  "normalized_content_hash": "sha256:4d5bc36223eca43bcf44d41767bbddbb1a8a9f64026bfbd0ee07a6cba70a378d",
+  "ui_block_count": 5,
+  "total_blocks": 5,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Stress Group\", \"Bending Capacity\", \"Example Species\"]} rows={[  [\"I (Highest)\", \"Very High\", \"Yakal, Molave, Malabayabas, Sasalit\"], [\"II\", \"High\", \"Apitong, Narra, Tindalo, Guijo, Ipil\"] [\"III\", \"Moderate\", \"Lauan, Tanguile, Red Lauan\"], [\"IV (Lowest)\", \"Lower\", \"White Lauan, Almaciga\"] ]} />",
+      "raw_hash": "sha256:d4c823548deee7a577f78e71cc47914ae3564bd33b498c3297f1447dc665a706",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Stress Group\\\", \\\"Bending Capacity\\\", \\\"Example Species\\\"]}\", rows=\"{[  [\\\"I (Highest)\\\", \\\"Very High\\\", \\\"Yakal, Molave, Malabayabas, Sasalit\\\"], [\\\"II\\\", \\\"High\\\", \\\"Apitong, Narra, Tindalo, Guijo, Ipil\\\"] [\\\"III\\\", \\\"Moderate\\\", \\\"Lauan, Tanguile, Red Lauan\\\"], [\\\"IV (Lowest)\\\", \\\"Lower\\\", \\\"White Lauan, Almaciga\\\"] ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:bb6ac77635a9db0817a0d424dd146cde21da7a30909274e2220f8125a77197e9",
+      "props": {
+        "headers": "{[\"Stress Group\", \"Bending Capacity\", \"Example Species\"]}",
+        "rows": "{[  [\"I (Highest)\", \"Very High\", \"Yakal, Molave, Malabayabas, Sasalit\"], [\"II\", \"High\", \"Apitong, Narra, Tindalo, Guijo, Ipil\"] [\"III\", \"Moderate\", \"Lauan, Tanguile, Red Lauan\"], [\"IV (Lowest)\", \"Lower\", \"White Lauan, Almaciga\"] ]}"
+      },
+      "props_json": {
+        "headers": "{[\"Stress Group\", \"Bending Capacity\", \"Example Species\"]}",
+        "rows": "{[  [\"I (Highest)\", \"Very High\", \"Yakal, Molave, Malabayabas, Sasalit\"], [\"II\", \"High\", \"Apitong, Narra, Tindalo, Guijo, Ipil\"] [\"III\", \"Moderate\", \"Lauan, Tanguile, Red Lauan\"], [\"IV (Lowest)\", \"Lower\", \"White Lauan, Almaciga\"] ]}"
+      },
+      "props_text": "headers={[\"Stress Group\", \"Bending Capacity\", \"Example Species\"]} rows={[  [\"I (Highest)\", \"Very High\", \"Yakal, Molave, Malabayabas, Sasalit\"], [\"II\", \"High\", \"Apitong, Narra, Tindalo, Guijo, Ipil\"] [\"III\", \"Moderate\", \"Lauan, Tanguile, Red Lauan\"], [\"IV (Lowest)\", \"Lower\", \"White Lauan, Almaciga\"] ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 1650,
+      "end_offset": 1970,
+      "line_start": 11,
+      "line_end": 11,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Product\", \"Density Range\", \"Typical Use\"]} rows={[ [\"Fiberboard\", \">160 to &lt;497 kg/m³\", \"Thermal/acoustic insulation, underlayment\"],",
+      "raw_hash": "sha256:e694de012d6f77f230eff8ce7048c972cf00e6d6cedb24e10167819f6f9d017c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiExamTable\" status=\"unknown\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Product\\\", \\\"Density Range\\\", \\\"Typical Use\\\"]}\", rows=true, Fiberboard=true\n- Text: 160 to &lt;497 kg/m³\", \"Thermal/acoustic insulation, underlayment\"],\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:40198b8fc8a597a31d809a95d884c360650c4dfbd5903f7a2237c9decb468211",
+      "props": {
+        "headers": "{[\"Product\", \"Density Range\", \"Typical Use\"]}",
+        "rows": true,
+        "Fiberboard": true
+      },
+      "props_json": {
+        "headers": "{[\"Product\", \"Density Range\", \"Typical Use\"]}",
+        "rows": true,
+        "Fiberboard": true
+      },
+      "props_text": "headers={[\"Product\", \"Density Range\", \"Typical Use\"]} rows={[ [\"Fiberboard\", \"",
+      "children_raw": null,
+      "children_text": "160 to &lt;497 kg/m³\", \"Thermal/acoustic insulation, underlayment\"],",
+      "start_offset": 2917,
+      "end_offset": 3079,
+      "line_start": 25,
+      "line_end": 25,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Group I = highest capacity (Yakal, Molave); Group IV = lowest (White Lauan, Red Balau). Always verify the specific group from the design manual or code supplement.</Tip>",
+      "raw_hash": "sha256:3913ba01be05fcee1037f44016bd7436d191071647fa8ea08701715b3c089f14",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Group I = highest capacity (Yakal, Molave); Group IV = lowest (White Lauan, Red Balau). Always verify the specific group from the design manual or code supplement.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:78029a38c7ac2f94c50ba777e14ef7b4d521cac96c7f10753d31025eabd760bd",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Group I = highest capacity (Yakal, Molave); Group IV = lowest (White Lauan, Red Balau). Always verify the specific group from the design manual or code supplement.",
+      "children_text": "Group I = highest capacity (Yakal, Molave); Group IV = lowest (White Lauan, Red Balau). Always verify the specific group from the design manual or code supplement.",
+      "start_offset": 5298,
+      "end_offset": 5472,
+      "line_start": 57,
+      "line_end": 57,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[ \"Using nominal dimensions in design calculations. Nominal 2×4 is 1.5×3.5; actual dimensions are required.\", \"Confusing Narra (Group II) with Yakal or Molave (Group I) and applying wrong allowable stresses.\", \"Treating fiberboard and hardboard as interchangeable with solid lumber. Density alone does not qualify them for primary structural duty.\", \"Ignoring moisture adjustment factors. Green lumber (≥19% MC) may have 10–15% lower allowable stresses than kiln-dried.\", \"Applying allowable stresses from a different species group without re-verifying the table.\" ]} />",
+      "raw_hash": "sha256:6fd3af3b48caef83a5992b68b4c50908080bd7a48e9f33502d9b56dbbf69b8e8",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[ \\\"Using nominal dimensions in design calculations. Nominal 2×4 is 1.5×3.5; actual dimensions are required.\\\", \\\"Confusing Narra (Group II) with Yakal or Molave (Group I) and applying wrong allowable stresses.\\\", \\\"Treating fiberboard and hardboard as interchangeable with solid lumber. Density alone does not qualify them for primary structural duty.\\\", \\\"Ignoring moisture adjustment factors. Green lumber (≥19% MC) may have 10–15% lower allowable stresses than kiln-dried.\\\", \\\"Applying allowable stresses from a different species group without re-verifying the table.\\\" ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d8ce616c1773577626a10203473c4339f03454c2aa1ec1db246dfa6de9a0394d",
+      "props": {
+        "mistakes": "{[ \"Using nominal dimensions in design calculations. Nominal 2×4 is 1.5×3.5; actual dimensions are required.\", \"Confusing Narra (Group II) with Yakal or Molave (Group I) and applying wrong allowable stresses.\", \"Treating fiberboard and hardboard as interchangeable with solid lumber. Density alone does not qualify them for primary structural duty.\", \"Ignoring moisture adjustment factors. Green lumber (≥19% MC) may have 10–15% lower allowable stresses than kiln-dried.\", \"Applying allowable stresses from a different species group without re-verifying the table.\" ]}"
+      },
+      "props_json": {
+        "mistakes": "{[ \"Using nominal dimensions in design calculations. Nominal 2×4 is 1.5×3.5; actual dimensions are required.\", \"Confusing Narra (Group II) with Yakal or Molave (Group I) and applying wrong allowable stresses.\", \"Treating fiberboard and hardboard as interchangeable with solid lumber. Density alone does not qualify them for primary structural duty.\", \"Ignoring moisture adjustment factors. Green lumber (≥19% MC) may have 10–15% lower allowable stresses than kiln-dried.\", \"Applying allowable stresses from a different species group without re-verifying the table.\" ]}"
+      },
+      "props_text": "mistakes={[ \"Using nominal dimensions in design calculations. Nominal 2×4 is 1.5×3.5; actual dimensions are required.\", \"Confusing Narra (Group II) with Yakal or Molave (Group I) and applying wrong allowable stresses.\", \"Treating fiberboard and hardboard as interchangeable with solid lumber. Density alone does not qualify them for primary structural duty.\", \"Ignoring moisture adjustment factors. Green lumber (≥19% MC) may have 10–15% lower allowable stresses than kiln-dried.\", \"Applying allowable stresses from a different species group without re-verifying the table.\" ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5494,
+      "end_offset": 6091,
+      "line_start": 61,
+      "line_end": 61,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "Warn",
+      "raw": "<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>",
+      "raw_hash": "sha256:ba1ca1d96638cbbb2a106c0a137a0e03cdff45255a7e66fe9c8d1e126722098c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"Warn\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:5a8e7139c7c8bc7812b2b37709a11f61777cf6de591f8eee0e025fc3b360bae4",
+      "props": {},
+      "props_json": {},
+      "children_raw": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
+      "children_text": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
+      "start_offset": null,
+      "end_offset": null,
+      "line_start": null,
+      "line_end": null,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved",
+      "props_text": null
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Product\", \"Density Range\", \"Typical Use\"]} rows={[ [\"Fiberboard\", \">160 to &lt;497 kg/m³\", \"Thermal/acoustic insulation, underlayment\"],",
+      "raw_hash": "sha256:e694de012d6f77f230eff8ce7048c972cf00e6d6cedb24e10167819f6f9d017c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiExamTable\" status=\"unknown\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Product\\\", \\\"Density Range\\\", \\\"Typical Use\\\"]}\", rows=true, Fiberboard=true\n- Text: 160 to &lt;497 kg/m³\", \"Thermal/acoustic insulation, underlayment\"],\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:40198b8fc8a597a31d809a95d884c360650c4dfbd5903f7a2237c9decb468211",
+      "props": {
+        "headers": "{[\"Product\", \"Density Range\", \"Typical Use\"]}",
+        "rows": true,
+        "Fiberboard": true
+      },
+      "props_json": {
+        "headers": "{[\"Product\", \"Density Range\", \"Typical Use\"]}",
+        "rows": true,
+        "Fiberboard": true
+      },
+      "props_text": "headers={[\"Product\", \"Density Range\", \"Typical Use\"]} rows={[ [\"Fiberboard\", \"",
+      "children_raw": null,
+      "children_text": "160 to &lt;497 kg/m³\", \"Thermal/acoustic insulation, underlayment\"],",
+      "start_offset": 2917,
+      "end_offset": 3079,
+      "line_start": 25,
+      "line_end": 25,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    }
+  ],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:5722396dff31cee1b7aa08b853bfa29079f934f537f4594e3e5397f09177fbe7"
+}

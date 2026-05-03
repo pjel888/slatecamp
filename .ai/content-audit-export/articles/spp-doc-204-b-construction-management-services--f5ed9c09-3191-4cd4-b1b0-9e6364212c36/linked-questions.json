@@ -1,0 +1,518 @@
+{
+  "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4d71e693bacc283d5ff71e3f8a1436a0544a8c81160785c4a1f383f6c36b63ff",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "f5f0e82e-b43d-4121-993c-860d153d4b36",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How do the responsibilities of a Construction Manager (CM) under SPP 204-B relate to those of the CSG under SPP 204-A?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CM responsibilities are a subset of CSG functions"
+        },
+        {
+          "id": "b",
+          "text": "CM responsibilities are a superset of CSG (204-A) functions"
+        },
+        {
+          "id": "c",
+          "text": "CM and CSG have completely separate, non-overlapping responsibilities"
+        },
+        {
+          "id": "d",
+          "text": "CM replaces the CSG entirely on managed projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A subset would mean the CM does less than the CSG, which is incorrect. The CM does everything the CSG does and more.",
+        "b": "Correct. CM responsibilities are a superset of CSG functions — the CM performs all CSG duties plus additional management, coordination, cost control, and scheduling functions.",
+        "c": "There is significant overlap; the CM incorporates all CSG functions within its broader scope.",
+        "d": "The CM does not replace the CSG. The CM may hire or supervise a CSG as part of its team.",
+        "correct": "SPP 204-B positions Construction Management as a superset of CSG (SPP 204-A) functions. The CM performs all supervision duties plus additional management responsibilities including coordination, cost/time management, and comprehensive records management.",
+        "takeaway": "CM responsibilities = superset of CSG functions (does everything CSG does + more)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-A / SPP 204-B",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:61cf097856ad538a3e70dd5b606d1ad8e6872d6fac6fb7bffeb68e44306a0cce"
+    },
+    {
+      "question_id": "0a52f269-3c24-4782-a9ce-c75818f28bd4",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What qualifications must a Construction Manager possess under SPP 204-B?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any engineering degree and 5 years of experience in construction management roles"
+        },
+        {
+          "id": "b",
+          "text": "A state-regulated professional with managerial capability"
+        },
+        {
+          "id": "c",
+          "text": "PRC-licensed architect with CM certification"
+        },
+        {
+          "id": "d",
+          "text": "A contractor's license and project management diploma from a recognized institution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "An engineering degree alone is not the qualification framework. SPP 204-B uses broader professional criteria.",
+        "b": "Correct. The CM must be a state-regulated professional (architect or engineer) with demonstrated managerial capability to handle the comprehensive management functions.",
+        "c": "While an architect can serve as CM, SPP 204-B does not require a specific CM certification.",
+        "d": "A contractor's license is for contracting, not construction management, which is a professional service.",
+        "correct": "SPP 204-B requires the CM to be a state-regulated professional (typically a licensed architect or engineer) with managerial capability. This dual requirement ensures both technical competence and management skill.",
+        "takeaway": "CM must be a state-regulated professional with managerial capability."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-B",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0612c27f2f49882b08f82f497b28f6635b6af0bada6bb8b0675ff94fe5a7c5f4"
+    },
+    {
+      "question_id": "f9e2c759-3414-428b-b3da-76522aa33e95",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "When a Project Manager also serves as Construction Manager, what fee range applies under SPP 206?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1-3% of PCC"
+        },
+        {
+          "id": "b",
+          "text": "2-5% of PCC"
+        },
+        {
+          "id": "c",
+          "text": "5-10% of PCC"
+        },
+        {
+          "id": "d",
+          "text": "7-12% of PCC"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1-3% is below the SPP 206 fee range for combined PM/CM services.",
+        "b": "Correct. When the PM also serves as CM, the fee is 2-5% of PCC under SPP 206, recognizing the expanded scope of combined management services.",
+        "c": "5-10% exceeds the specified range. The PM/CM combined fee caps at 5% of PCC.",
+        "d": "7-12% is far too high. This exceeds even the design fee for many building groups.",
+        "correct": "When a Project Manager also serves as Construction Manager, SPP 206 specifies a fee of 2-5% of PCC. This combined fee covers both project management and construction management functions.",
+        "takeaway": "PM serving as CM = 2-5% of PCC under SPP 206."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-B / SPP 206",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dbfef458ac63619a0f496d9e2e92aeb6f6617fb9ece97442e365c1e4a4b81d1e"
+    },
+    {
+      "question_id": "6f141c7d-15d6-4587-9928-cc493a06995e",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "During which design phase should the CM begin pre-construction consultations under SPP 204-B?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schematic Design phase"
+        },
+        {
+          "id": "b",
+          "text": "Design Development phase"
+        },
+        {
+          "id": "c",
+          "text": "Contract Documents phase"
+        },
+        {
+          "id": "d",
+          "text": "Bidding/Negotiation phase"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schematic Design is too early. The project is not sufficiently developed for meaningful CM input.",
+        "b": "Correct. CM pre-construction consultations should begin during the Design Development phase, when the design is sufficiently developed for constructability review and cost input.",
+        "c": "Contract Documents phase is too late for effective CM pre-construction input. By this point, major design decisions are finalized.",
+        "d": "Bidding/Negotiation is after design completion, far too late for pre-construction CM input.",
+        "correct": "SPP 204-B specifies that CM pre-construction consultations should begin during the Design Development phase. At this stage, the design is developed enough for the CM to provide meaningful input on constructability, cost implications, and scheduling.",
+        "takeaway": "CM pre-construction consultations begin during Design Development."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-B",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a75644fd6b6bfd7885c0864027b583bf99e1918b8d5337252bf62f50d7c404d2"
+    },
+    {
+      "question_id": "e7ac4ce6-c506-4779-bd0d-c1c22cd0ca9d",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "To whom is the Construction Manager directly responsible under SPP 204-B?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To the Architect only"
+        },
+        {
+          "id": "b",
+          "text": "To the Contractor only"
+        },
+        {
+          "id": "c",
+          "text": "To the Owner on all construction aspects"
+        },
+        {
+          "id": "d",
+          "text": "To the PRBoA for regulatory compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the CM coordinates with the Architect, the CM's primary responsibility is to the Owner.",
+        "b": "The CM has no direct responsibility to the Contractor. The Contractor is a separate party.",
+        "c": "Correct. The CM is directly responsible to the Owner on all construction aspects, serving as the Owner's representative in managing the construction process.",
+        "d": "PRBoA is the regulatory board, not the party to whom the CM is operationally responsible.",
+        "correct": "Under SPP 204-B, the Construction Manager is directly responsible to the Owner on all construction aspects. The CM serves as the Owner's representative in managing, coordinating, and controlling the construction process.",
+        "takeaway": "CM is directly responsible to the Owner on all construction aspects."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-B",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:72f8795d35ae628326ca1f7046615910f274bfab29a08a32245d98a092dc1969"
+    },
+    {
+      "question_id": "72813afe-5c06-4412-a4d4-ea27b6d50cc8",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What are the four core functions of a Construction Manager under SPP 204-B?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design, Procurement, Construction, Handover, including coordination with all stakeholders"
+        },
+        {
+          "id": "b",
+          "text": "Coordination, Cost/Time Management, Quality Control, Records Management"
+        },
+        {
+          "id": "c",
+          "text": "Planning, Scheduling, Budgeting, Risk Management, with a focus on minimizing project delays"
+        },
+        {
+          "id": "d",
+          "text": "Safety, Quality, Environment, Compliance, ensuring adherence to all regulatory requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Design is not a CM function. The CM manages construction, not design.",
+        "b": "Correct. The four core CM functions are: (1) Coordination of all project participants, (2) Cost and Time Management, (3) Quality Control of construction, and (4) Records Management and documentation.",
+        "c": "While related, this does not match the four core functions specified in SPP 204-B.",
+        "d": "Safety and environment are considerations within CM work but are not the four named core functions.",
+        "correct": "SPP 204-B defines four core CM functions: Coordination (managing relationships between all project participants), Cost/Time Management (budget and schedule control), Quality Control (ensuring construction quality), and Records Management (comprehensive documentation).",
+        "takeaway": "Four core CM functions: Coordination, Cost/Time, QC, Records."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-B",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d6f8cf106cf28910e1672e7cd721f922b58e492bee2864ffe49ff9d420b8deec"
+    },
+    {
+      "question_id": "771b6134-205c-4ff2-94ad-2e74514c512d",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 204-B, what is the CM's relationship with the CSG?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The CM replaces the CSG entirely, assuming all responsibilities and oversight functions"
+        },
+        {
+          "id": "b",
+          "text": "The CM may hire a CSG or supervise an owner-hired CSG"
+        },
+        {
+          "id": "c",
+          "text": "The CM and CSG must be from different firms, ensuring independent oversight and accountability"
+        },
+        {
+          "id": "d",
+          "text": "The CSG reports to the contractor, not the CM, maintaining a separate chain of command"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The CM does not replace the CSG. Both can coexist on a project.",
+        "b": "Correct. The CM may hire a CSG as part of the construction management team, or may supervise a CSG that was hired directly by the Owner.",
+        "c": "There is no requirement for separate firms. The CM may include CSG personnel within its organization.",
+        "d": "The CSG reports to the Owner and Architect (per SPP 204-A), and when a CM is engaged, the CSG may report to the CM.",
+        "correct": "Under SPP 204-B, the CM has flexibility in relating to the CSG: the CM may hire its own CSG team as part of the CM organization, or may supervise a CSG that was independently hired by the Owner under SPP 204-A.",
+        "takeaway": "CM may hire CSG or supervise owner-hired CSG."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-B",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:183b1b876f64975d524fe3a9ea57235c9530c5abf2960d380340ebe330255216"
+    },
+    {
+      "question_id": "e5cac33d-10ec-4dbb-a425-0fca3fb17a7e",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 204-B, may the Construction Manager impose methods that impair the Architect's design concept?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, if it improves construction efficiency and results in significant cost savings for the project without compromising safety."
+        },
+        {
+          "id": "b",
+          "text": "Yes, with the Owner's written approval, provided that the changes do not violate any existing contracts or agreements."
+        },
+        {
+          "id": "c",
+          "text": "No, the CM shall not impose methods that impair the Architect's design concept"
+        },
+        {
+          "id": "d",
+          "text": "No, unless the Architect provides written consent, ensuring that the original design intent is respected and maintained."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Efficiency gains do not justify impairing the design concept. The architect's design integrity is protected.",
+        "b": "Even with Owner approval, the CM cannot impair the architect's design concept under SPP 204-B.",
+        "c": "Correct. SPP 204-B explicitly prohibits the CM from imposing construction methods or procedures that would impair the Architect's design concept, regardless of other considerations.",
+        "d": "The prohibition is absolute. Even architect consent does not change the SPP 204-B principle that design integrity must be maintained.",
+        "correct": "SPP 204-B establishes an absolute prohibition: the CM shall not impose construction methods or procedures that impair the Architect's design concept. This protects the architect's creative and professional authority over the design.",
+        "takeaway": "CM must NOT impose methods that impair the Architect's design concept — absolute prohibition."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-B",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:705120f0e61817feb339d4415c34377afe831fe11b81a87bb2cd9a477962d11c"
+    },
+    {
+      "question_id": "d2eb3032-a488-43f4-8ddd-8a2a734f35a4",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Is the CM fee included in the architect's SPP 202 design fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, CM is part of the regular design services, typically bundled with other project management tasks"
+        },
+        {
+          "id": "b",
+          "text": "No, CM services are separately compensated from the SPP 202 design fee"
+        },
+        {
+          "id": "c",
+          "text": "Only if the architect also serves as CM, which requires a separate agreement and fee structure"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only for projects under 10 million PCC, where simplified fee structures apply"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CM is not part of regular design services. It is a separate professional service.",
+        "b": "Correct. CM services under SPP 204-B are separately compensated from the SPP 202 design fee, regardless of whether the same architect performs both services.",
+        "c": "Even when the architect serves as CM, the services are separately compensated.",
+        "d": "There is no PCC threshold for bundling. Separate compensation applies to all projects.",
+        "correct": "Construction Management services under SPP 204-B are separately compensated from the architect's SPP 202 design fee. This principle of separate compensation applies regardless of project size or whether the same professional provides both design and CM services.",
+        "takeaway": "CM fee is always separate from SPP 202 design fee."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-B / SPP 202",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:594e68dfa91bc73795d2638b21b16ea64abe9229bbf5d8d09976229cd8a5cdae"
+    },
+    {
+      "question_id": "086d443c-3d48-4895-b65c-345a790ffec5",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under what conditions is the Construction Manager excluded from liability under SPP 204-B?",
+      "options": [
+        {
+          "id": "a",
+          "text": "When the Owner fails to provide adequate funding for the construction phase as outlined in the project contract documents"
+        },
+        {
+          "id": "b",
+          "text": "When there are only 2 specific conditions: the CM was not consulted on the decision, or the CM's advice was overruled by the Owner"
+        },
+        {
+          "id": "c",
+          "text": "When the contractor assumes full responsibility for project execution and relieves the CM of supervisory obligations"
+        },
+        {
+          "id": "d",
+          "text": "When force majeure events occur that are beyond the reasonable control of all parties involved in the construction project"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Funding issues alone do not trigger the CM's liability exclusion. The conditions are more specific.",
+        "b": "Correct. The CM is excluded from liability under 2 conditions: (1) when the CM was not consulted on a decision that led to the problem, or (2) when the CM's professional advice was given but overruled by the Owner.",
+        "c": "Contractor responsibility does not automatically exclude CM liability. The exclusion conditions are specific to the CM's role.",
+        "d": "Force majeure may affect contractual obligations but is not one of the two specific CM liability exclusion conditions.",
+        "correct": "SPP 204-B excludes the CM from liability under two specific conditions: (1) the CM was not consulted on the relevant decision, or (2) the CM provided professional advice that was overruled by the Owner. These protections ensure the CM is accountable only for matters within their control.",
+        "takeaway": "CM liability exclusion: not consulted, or advice was overruled by Owner."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-B",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.717735+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9395f292351bcb2c1756dc8de165c586f7e2afeb1d2da5734da3321343e5b917"
+    }
+  ]
+}

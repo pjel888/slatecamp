@@ -1,0 +1,176 @@
+{
+  "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+  "slug": "lea-matl-006-03-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.394Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:f43fa52581ac4fcb405bc7e313f91100f96e107b5dbbc09060661079df62b740",
+  "normalized_content_hash": "683e43b3e56ec34f0ebdb9b41ea04ac4006b14c3cddccf9a18ff760404c6191b",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.</Tip>",
+      "raw_hash": "sha256:66b0238dc165cdb4d6f15558a5b5800873e845cdc664bcbd26881c12c3b9a741",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:512074ee84e13964b15b4ec0c677914d46be99dd2a91a832b23b9a2ee433fa53",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.",
+      "children_text": "Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.",
+      "start_offset": 6137,
+      "end_offset": 6447,
+      "line_start": 42,
+      "line_end": 42,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.\" correction=\"Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp.\" />",
+      "raw_hash": "sha256:ca9d0737ed296d12d0a97b331494364625e3b871281da511b11cf57c5e8774b4",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.\", correction=\"Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c8fde9fd1e361375b2b9b10793a106aa6201929e9713f4b4676f105ca3a9f76c",
+      "props": {
+        "mistake": "Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.",
+        "correction": "Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp."
+      },
+      "props_json": {
+        "mistake": "Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.",
+        "correction": "Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp."
+      },
+      "props_text": "mistake=\"Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.\" correction=\"Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6469,
+      "end_offset": 6881,
+      "line_start": 46,
+      "line_end": 46,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Applying liquid acrylic waterproofing over damp concrete (>85% RH) expecting moisture to be tolerated, resulting in blistering and delamination.\" correction=\"Acrylic is humidity-sensitive; requires &lt;85% RH substrate and air. Polyurethane tolerates damp conditions. Match material to substrate moisture before application.\" />",
+      "raw_hash": "sha256:8ace51e68d392ce405aed884834e944073dea453b327b7b64994f810f081ded9",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=true, Applying=true, liquid=true, acrylic=true, waterproofing=true, over=true, damp=true, concrete=true\n- Text: 85% RH) expecting moisture to be tolerated, resulting in blistering and delamination.\" correction=\"Acrylic is humidity-sensitive; requires &lt;85% RH substrate and air. Polyurethane tolerates damp conditions. Match material to substrate moisture before application.\" />\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:3ef5c8cbb10ad9b3b34d491a0c5de32128a7ed04efbd1936ce3e90381a5fb795",
+      "props": {
+        "mistake": true,
+        "Applying": true,
+        "liquid": true,
+        "acrylic": true,
+        "waterproofing": true,
+        "over": true,
+        "damp": true,
+        "concrete": true
+      },
+      "props_json": {
+        "mistake": true,
+        "Applying": true,
+        "liquid": true,
+        "acrylic": true,
+        "waterproofing": true,
+        "over": true,
+        "damp": true,
+        "concrete": true
+      },
+      "props_text": "mistake=\"Applying liquid acrylic waterproofing over damp concrete (",
+      "children_raw": null,
+      "children_text": "85% RH) expecting moisture to be tolerated, resulting in blistering and delamination.\" correction=\"Acrylic is humidity-sensitive; requires &lt;85% RH substrate and air. Polyurethane tolerates damp conditions. Match material to substrate moisture before application.\" />",
+      "start_offset": 6883,
+      "end_offset": 7237,
+      "line_start": 48,
+      "line_end": 48,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Using torch-applied bituminous on damp substrate without allowing concrete cure time\", \"Omitting seam overlap (50-75 mm) on membrane systems, risking water bypass at sheet edges\", \"Applying single-coat liquid waterproofing at 0.8 mm (below ASTM D6083 minimum 1.5 mm), reducing effective protection\", \"Neglecting UV topcoat on exposed acrylic waterproofing (acrylic is not UV-stable; blistering occurs within 1-2 years)\"]} />",
+      "raw_hash": "sha256:729c8c00e826c13d80ee827dcee4889540531a03fd7f450c2428d016c30ccdf8",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Using torch-applied bituminous on damp substrate without allowing concrete cure time\\\", \\\"Omitting seam overlap (50-75 mm) on membrane systems, risking water bypass at sheet edges\\\", \\\"Applying single-coat liquid waterproofing at 0.8 mm (below ASTM D6083 minimum 1.5 mm), reducing effective protection\\\", \\\"Neglecting UV topcoat on exposed acrylic waterproofing (acrylic is not UV-stable; blistering occurs within 1-2 years)\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:2c62e8bac9a5ebcfa8053708e613e4d1366bef82b9824770d34a06e308899624",
+      "props": {
+        "mistakes": "{[\"Using torch-applied bituminous on damp substrate without allowing concrete cure time\", \"Omitting seam overlap (50-75 mm) on membrane systems, risking water bypass at sheet edges\", \"Applying single-coat liquid waterproofing at 0.8 mm (below ASTM D6083 minimum 1.5 mm), reducing effective protection\", \"Neglecting UV topcoat on exposed acrylic waterproofing (acrylic is not UV-stable; blistering occurs within 1-2 years)\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Using torch-applied bituminous on damp substrate without allowing concrete cure time\", \"Omitting seam overlap (50-75 mm) on membrane systems, risking water bypass at sheet edges\", \"Applying single-coat liquid waterproofing at 0.8 mm (below ASTM D6083 minimum 1.5 mm), reducing effective protection\", \"Neglecting UV topcoat on exposed acrylic waterproofing (acrylic is not UV-stable; blistering occurs within 1-2 years)\"]}"
+      },
+      "props_text": "mistakes={[\"Using torch-applied bituminous on damp substrate without allowing concrete cure time\", \"Omitting seam overlap (50-75 mm) on membrane systems, risking water bypass at sheet edges\", \"Applying single-coat liquid waterproofing at 0.8 mm (below ASTM D6083 minimum 1.5 mm), reducing effective protection\", \"Neglecting UV topcoat on exposed acrylic waterproofing (acrylic is not UV-stable; blistering occurs within 1-2 years)\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7239,
+      "end_offset": 7692,
+      "line_start": 50,
+      "line_end": 50,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Applying liquid acrylic waterproofing over damp concrete (>85% RH) expecting moisture to be tolerated, resulting in blistering and delamination.\" correction=\"Acrylic is humidity-sensitive; requires &lt;85% RH substrate and air. Polyurethane tolerates damp conditions. Match material to substrate moisture before application.\" />",
+      "raw_hash": "sha256:8ace51e68d392ce405aed884834e944073dea453b327b7b64994f810f081ded9",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=true, Applying=true, liquid=true, acrylic=true, waterproofing=true, over=true, damp=true, concrete=true\n- Text: 85% RH) expecting moisture to be tolerated, resulting in blistering and delamination.\" correction=\"Acrylic is humidity-sensitive; requires &lt;85% RH substrate and air. Polyurethane tolerates damp conditions. Match material to substrate moisture before application.\" />\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:3ef5c8cbb10ad9b3b34d491a0c5de32128a7ed04efbd1936ce3e90381a5fb795",
+      "props": {
+        "mistake": true,
+        "Applying": true,
+        "liquid": true,
+        "acrylic": true,
+        "waterproofing": true,
+        "over": true,
+        "damp": true,
+        "concrete": true
+      },
+      "props_json": {
+        "mistake": true,
+        "Applying": true,
+        "liquid": true,
+        "acrylic": true,
+        "waterproofing": true,
+        "over": true,
+        "damp": true,
+        "concrete": true
+      },
+      "props_text": "mistake=\"Applying liquid acrylic waterproofing over damp concrete (",
+      "children_raw": null,
+      "children_text": "85% RH) expecting moisture to be tolerated, resulting in blistering and delamination.\" correction=\"Acrylic is humidity-sensitive; requires &lt;85% RH substrate and air. Polyurethane tolerates damp conditions. Match material to substrate moisture before application.\" />",
+      "start_offset": 6883,
+      "end_offset": 7237,
+      "line_start": 48,
+      "line_end": 48,
+      "parser_confidence": "low",
+      "parse_status": "unknown_block",
+      "warnings": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ],
+      "status": "unknown"
+    }
+  ],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:e36314dfbbd42455cd9e358ff53bfffd2d7c255cb8a3c7f2c7cb7739013fc772"
+}

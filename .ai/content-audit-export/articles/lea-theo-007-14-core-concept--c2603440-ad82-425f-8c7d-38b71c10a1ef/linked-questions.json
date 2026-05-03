@@ -1,0 +1,528 @@
+{
+  "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:66b9f577710289336e048545fe7d9e93311a2101bca756710fe6431235554db6",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "6c54a4f3-2ee8-4dd0-b988-7675a54d18b0",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "Compare the theoretical challenges of heritage preservation versus functional viability in adaptive reuse. What is the nature of this tension, and can it be resolved?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One value must be completely sacrificed; projects cannot pursue both heritage and contemporary function, leading to a choice between historical integrity and modern utility"
+        },
+        {
+          "id": "b",
+          "text": "This tension is theoretical only; practical projects have no difficulty managing both values, as modern techniques allow seamless integration"
+        },
+        {
+          "id": "c",
+          "text": "Heritage preservation and functionality are perfectly compatible; all projects easily balance both without trade-offs, thanks to advanced design strategies"
+        },
+        {
+          "id": "d",
+          "text": "Strict heritage preservation may mandate retaining elements (original materials, fenestration) that compromise contemporary functionality/efficiency; prioritizing function may destroy heritage significance. This tension is unresolvable; projects must choose emphasis through negotiated balance rather than finding perfect harmony"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "architectural theory advocates negotiated balance; complete sacrifice of either value is unnecessary.",
+        "b": "This as a significant practical challenge requiring sophisticated navigation.",
+        "c": "Genuine tension; perfect compatibility is rare.",
+        "correct": "This explicitly: 'This tension is unresolvable; projects must choose their emphasis.' Strict heritage mandates (original materials, fenestration) conflict with contemporary performance (energy efficiency, accessibility, comfort). Managing this requires 'negotiation—balancing preservation with pragmatic necessity,' not perfect resolution.",
+        "takeaway": "Managing this requires 'negotiation—balancing preservation with pragmatic necessity,' not perfect resolution."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:798db312e8060778cb3cfff412fff786c4717092fc72eb37b8f92ebeebb937d6"
+    },
+    {
+      "question_id": "b9e6294f-24c4-4951-b941-f76100b3b423",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "Why is embodied carbon preservation significant in adaptive reuse sustainability analysis, and how does it compare to operational carbon reduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A building's embodied carbon (1,500 kg CO2-eq/m²) is substantial and front-loaded; reuse preserves this investment. Operational carbon reduction improves ongoing performance, but preserving embodied carbon often makes total lifecycle carbon of reused buildings lower than new high-performance buildings"
+        },
+        {
+          "id": "b",
+          "text": "Operational carbon preservation is more important; buildings should be demolished and rebuilt with efficient systems, which is a controversial stance"
+        },
+        {
+          "id": "c",
+          "text": "Embodied carbon is irrelevant to sustainability; only operational energy matters, which is a narrow view"
+        },
+        {
+          "id": "d",
+          "text": "Embodied and operational carbon are equivalent; no strategic priority exists between them, which is a debated topic"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Demolition generates new embodied carbon; this strategy is usually less sustainable than reuse.",
+        "c": "Ignoring embodied carbon is a documented sustainability mistake; it is essential to lifecycle assessment.",
+        "d": "Their temporal profiles: embodied is front-loaded, operational is perpetual. Strategy requires balancing these different temporal dynamics.",
+        "correct": "typical embodied carbon is 1,500 kg CO2-eq/m²; reuse preserves this fixed investment. Demolition incurs additional embodied carbon from new construction. Even with lower operational efficiency, reused buildings often achieve lower lifecycle carbon than new construction.",
+        "takeaway": "Even with lower operational efficiency, reused buildings often achieve lower lifecycle carbon than new construction."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d1d1dace51ca0e0105f068a091c5c28bd9e5bea537ad1ef4515a1d5d2d74b1e3"
+    },
+    {
+      "question_id": "9df9b226-4bb5-4a5a-b548-ccec0ca1be44",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "Which represents a common mistake in assessing adaptive reuse viability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prioritizing heritage aesthetics over functional adaptation, or neglecting community impact planning"
+        },
+        {
+          "id": "b",
+          "text": "Treating reuse as merely preserving facades without engaging structural/spatial logic, or assuming reuse is always cheaper than new construction when poor condition buildings requiring extensive repair can cost as much as new construction"
+        },
+        {
+          "id": "c",
+          "text": "All of the above represent common mistakes in contemporary adaptive reuse practice"
+        },
+        {
+          "id": "d",
+          "text": "Underestimating embodied carbon preservation as environmental and economic value, or ignoring typological constraints when forcing incompatible uses into structural systems"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is correct but incomplete.",
+        "b": "This is correct but incomplete.",
+        "d": "This is correct but incomplete.",
+        "correct": "All three categories: (a) façade-only preservation vs. genuine reuse, cost assumptions; (b) heritage prioritization without functionality, community neglect; (c) embodied carbon undervaluation, typological incompatibility. All are documented mistakes.",
+        "takeaway": "genuine reuse, cost assumptions; (b) heritage prioritization without functionality, community neglect; (c) embodied carbon undervaluation, typological incompatibility. All are documented mistakes."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34c41651a21e5ce79e94410ab01ebc6451ed2d6d604c116fcae8c62394031e24"
+    },
+    {
+      "question_id": "f62403d3-f6fb-4709-aca0-1a19a0c9b8ba",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "What does adaptive reuse practice reveal about the relationship between material stewardship, environmental sustainability, and cultural/historical preservation in architectural thought?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adaptive reuse integrates environmental and cultural conservation through material stewardship—preserving embodied investment in buildings honors both sustainability (embodied carbon) and heritage significance (historical meaning), suggesting these values are complementary rather than conflicting when buildings are treated as valuable resources rather than disposable commodities"
+        },
+        {
+          "id": "b",
+          "text": "Environmental sustainability and cultural preservation are incompatible values; architecture must choose one priority, especially when dealing with limited resources and conflicting stakeholder interests"
+        },
+        {
+          "id": "c",
+          "text": "Adaptive reuse is purely economic strategy with no environmental or cultural significance, focusing solely on cost savings and financial returns without regard for broader impacts"
+        },
+        {
+          "id": "d",
+          "text": "Heritage preservation contradicts environmental sustainability; old buildings should be replaced with efficient new construction to maximize energy performance and reduce long-term operational costs"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "architectural theory demonstrates complementarity through integrated practice.",
+        "c": "Reuse's significance for both environmental and cultural frameworks; it is not merely economic.",
+        "d": "Preservation often achieves better lifecycle carbon than replacement.",
+        "correct": "Reuse as philosophical position: 'It treats the building not as disposable commodity but as valuable resource demanding stewardship.' This stewardship addresses simultaneously environmental (embodied carbon preservation) and cultural (heritage meaning) concerns, revealing these are mutually reinforcing when buildings are properly valued.",
+        "takeaway": "Reuse as philosophical position: 'It treats the building not as disposable commodity but as valuable resource demanding stewardship.' This stewardship addresses simultaneously environmental (embodied carbon preservation) and cultural (heritage meaning) concerns, revealing these are mutually reinforcing when buildings are properly valued."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4a87be228d8a35618e03e01c88ca53a1ae9c8f2c55cf697fc21cac19e549cd96"
+    },
+    {
+      "question_id": "7cf92678-505a-4460-bcb0-ffd0f0677698",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "What strategy should adaptive reuse projects employ to avoid gentrification and displacement, and why is this essential to socially-conscious reuse practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gentrification is inevitable; reuse projects cannot prevent it regardless of strategy, as market dynamics are beyond architectural control"
+        },
+        {
+          "id": "b",
+          "text": "Avoid any renovation; preservation of decay prevents gentrification risk by maintaining the status quo and avoiding increased property values"
+        },
+        {
+          "id": "c",
+          "text": "Market forces determine gentrification; architecture and policy cannot influence displacement, making any intervention ineffective"
+        },
+        {
+          "id": "d",
+          "text": "Community land trusts, anti-displacement covenants, community benefit agreements, and community control over development decisions ensure existing residents/businesses benefit from revitalization; without these protections, 'revitalization' becomes displacement engine"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Gentrification as addressable through structural mechanisms; it is not inevitable.",
+        "b": "architectural theory does not propose avoiding improvement; rather improvement coupled with structural protections against displacement.",
+        "c": "architectural theory demonstrates policy and architectural strategy can address displacement; market forces are not sole determinant.",
+        "correct": "Mechanisms: 'Addressing gentrification requires community land trusts, anti-displacement covenants, community benefit agreements ensuring existing residents benefit from revitalization.' Without structural protections, 'improvements attract investment, property values rise, existing residents are displaced.'",
+        "takeaway": "Mechanisms: 'Addressing gentrification requires community land trusts, anti-displacement covenants, community benefit agreements ensuring existing residents benefit from revitalization.' Without structural protections, 'improvements attract investment, property values rise, existing residents are displaced.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04cc9e6fcfc6148c799a37cb73a7894d92bae930ce06829849b9daca875ba6e8"
+    },
+    {
+      "question_id": "0af854ee-befe-444e-a373-e1f5c518a176",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "What is adaptive reuse, and what three intersecting concerns does it simultaneously address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Preservation of buildings as museum objects without contemporary use, focusing solely on historical value"
+        },
+        {
+          "id": "b",
+          "text": "Cosmetic renovation of building facades while maintaining original functions, prioritizing aesthetics over functionality"
+        },
+        {
+          "id": "c",
+          "text": "Transformation of existing buildings to new functions; addresses environmental sustainability (embodied carbon preservation), heritage conservation (cultural/historical significance), and urban economics (revitalization, reduced sprawl)"
+        },
+        {
+          "id": "d",
+          "text": "Complete demolition and reconstruction of existing buildings to contemporary standards, disregarding historical significance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Museum preservation without use is heritage conservation without functional viability; adaptive reuse maintains active use.",
+        "b": "Facade preservation alone is not adaptive reuse; interior reconfiguration to new functions is essential.",
+        "d": "Adaptive reuse preserves the building; demolition and reconstruction is the opposite strategy.",
+        "correct": "Three intersecting concerns: (1) 'Environmental sustainability—preserving embodied carbon investment rather than demolishing,' (2) 'Heritage conservation—maintaining cultural and historical significance,' (3) 'Urban economics—revitalization and reduced sprawl.' Adaptive reuse is transformative practice addressing all three.",
+        "takeaway": "Three intersecting concerns: (1) 'Environmental sustainability—preserving embodied carbon investment rather than demolishing,' (2) 'Heritage conservation—maintaining cultural and historical significance,' (3) 'Urban economics—revitalization and reduced sprawl.' Adaptive reuse is transformative practice addressing all three."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cf00b4bd73453ed29859b71602aa8db36cf8d3ee6dffc60d8659e1d7f3a4ad2b"
+    },
+    {
+      "question_id": "e27e0333-c503-44d4-8886-0b8598f10426",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "How does heritage facade preservation while gutting and reconfiguring interiors relate to distinction between genuine adaptive reuse and 'heritage theater'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Facade preservation automatically qualifies as legitimate adaptive reuse regardless of interior treatment, as long as the exterior remains unchanged"
+        },
+        {
+          "id": "b",
+          "text": "Interior reconfiguration is irrelevant; facade appearance is all that matters for heritage preservation, focusing solely on visual continuity"
+        },
+        {
+          "id": "c",
+          "text": "This approach ('facade preservation, interior replacement') creates disconnect between heritage appearance and contemporary function; it is heritage theater when it preserves appearance while abandoning spatial/structural logic rather than engaging with how the building actually functioned"
+        },
+        {
+          "id": "d",
+          "text": "This approach is genuine adaptive reuse that successfully balances heritage and contemporary function, integrating modern needs with historical aesthetics"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Genuine reuse (engaging spatial/structural logic) from facade-only 'heritage theater.'",
+        "b": "Authentic reuse engages the building's spatial and structural system, not merely appearance.",
+        "d": "This as tension rather than resolution; facade-only preservation is partial solution.",
+        "correct": "Facade preservation while gutting interiors...creates disconnect...This tension is explicit in adaptive reuse: heritage is preserved in appearance while function and operation are thoroughly contemporary.' When preservation is merely aesthetic without engaging structural/spatial meaning, it becomes 'museum shell lacking authentic use.'",
+        "takeaway": "Facade preservation while gutting interiors...creates disconnect...This tension is explicit in adaptive reuse: heritage is preserved in appearance while function and operation are thoroughly contemporary.' When preservation is merely aesthetic without engaging structural/spatial meaning, it becomes 'museum shell lacking authentic use.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:62b7e4c293d4fc9fa6c5063dc0a27e92f75f2a69ba83d1eb6bef00530e8b6f9a"
+    },
+    {
+      "question_id": "afe86d03-cf07-4a31-a0c0-c3bfebe831ab",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "How do warehouse-to-residential and church-to-cultural conversions differ in their typological compatibility, and what does this reveal about adaptive reuse viability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Warehouses cannot be converted; churches are ideal reuse candidates due to their historical significance"
+        },
+        {
+          "id": "b",
+          "text": "Both conversions require complete structural demolition; initial structure is irrelevant, which increases costs"
+        },
+        {
+          "id": "c",
+          "text": "Warehouses' large open spans and robust structure adapt readily to lofts/residential; churches' generous volumes and focal points transfer directly to cultural programming. Both exemplify 'strong structural fundamentals enable diverse uses,' while buildings with excessive specificity are less adaptable"
+        },
+        {
+          "id": "d",
+          "text": "Typological compatibility is irrelevant; any building can be adapted to any use with sufficient renovation, though costs may vary significantly"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both are documented successful conversions; the distinction concerns different compatibility strategies.",
+        "b": "Preservation of structural fundamentals is essential to reuse's carbon and economic logic.",
+        "d": "Working 'within structural logic rather than against it'; compatibility is critical.",
+        "correct": "Compatibility variation: 'Warehouses' open spans suit residential/office conversion; churches' programmatic logic (procession, gathering, focal point) transfers to cultural functions.' Conversely, buildings designed for single narrow functions are hard to adapt. 'Strong structural and spatial fundamentals enable diverse future uses; excessive specificity reduces adaptability.'",
+        "takeaway": "'Strong structural and spatial fundamentals enable diverse future uses; excessive specificity reduces adaptability.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d8f503337559b4c1eaa3f2aecf67a85420ae86ea3f89de612afd5f80cb214462"
+    },
+    {
+      "question_id": "3c0b280a-37ad-4693-89b4-5d36cd73efae",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "A historic factory building features 10-meter ceiling heights and 50-meter column spans. What building uses are compatible with this structure, and why is this structural logic important for adaptive reuse viability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Residential lofts, office, cultural institutions, creative spaces—all benefit from large open spans and high ceilings. Structural logic enables these uses without costly modification. Buildings with incompatible spatial systems require expensive structural work, reducing reuse's economic and environmental advantages"
+        },
+        {
+          "id": "b",
+          "text": "The structure is only suitable for continuation as factory; any other use requires complete demolition and reconstruction on the same footprint to meet current building codes"
+        },
+        {
+          "id": "c",
+          "text": "Any building can accommodate any use; structural characteristics are irrelevant to adaptive reuse success because modern engineering can overcome all spatial constraints"
+        },
+        {
+          "id": "d",
+          "text": "Such large spans are design flaws unsuitable for any contemporary use because they create excessive floor areas that cannot be efficiently subdivided or climate-controlled"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Multiple successful warehouse conversions; the structure is highly adaptable.",
+        "c": "Structural logic is critical; compatibility enables reuse viability.",
+        "d": "Large spans are design strengths for flexible contemporary uses, not flaws.",
+        "correct": "This principle: adaptive reuse works 'within structural constraints rather than against them.' Large industrial structures work for lofts, office, galleries because open spans and high ceilings suit these uses. Conversely, forced adaptation against structural logic requires expensive modification, negating reuse advantages.",
+        "takeaway": "Conversely, forced adaptation against structural logic requires expensive modification, negating reuse advantages."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b32473bb4e585658ca041ae1105f45dc6ee211ccf38e5b79057210a4eb284551"
+    },
+    {
+      "question_id": "97e49b89-4117-4467-9d8e-1972b85adac5",
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "topic_id": "1b6b8155-a7be-4397-b0e6-882e8ba94fd0",
+      "text": "What is the relationship between embodied carbon and lifecycle carbon in sustainable adaptive reuse assessment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Embodied carbon is locked in at construction; lifecycle carbon includes embodied plus operational over 50–100 years. Reuse preserves embodied investment while allowing operational retrofits, typically resulting in lower total lifecycle carbon than new construction"
+        },
+        {
+          "id": "b",
+          "text": "Embodied and lifecycle carbon are identical terms with no meaningful distinction, often leading to confusion in sustainability assessments"
+        },
+        {
+          "id": "c",
+          "text": "Lifecycle carbon refers only to operational phase; embodied carbon is irrelevant to lifecycle assessment, which focuses solely on energy consumption"
+        },
+        {
+          "id": "d",
+          "text": "Embodied carbon is perpetual; operational carbon is one-time investment, making it less significant in long-term sustainability planning"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "These terms refer to distinct temporal and source profiles; conflating them is a documented mistake.",
+        "c": "Lifecycle assessment must include both; ignoring embodied carbon underestimates total impact.",
+        "d": "The relationship is inverse; operational is perpetual, embodied is one-time.",
+        "correct": "Embodied carbon is front-loaded but fixed; operational carbon is perpetual—accrues every year. Lifecycle assessment quantifies embodied plus operational across 50–100-year lifespan. Reuse typically has lower lifecycle carbon than new construction.'",
+        "takeaway": "Reuse typically has lower lifecycle carbon than new construction.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-14-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:568b724faa3fafc671dd3cf2cf8f370b9f575dd145e9878a2d2a9d2d4821ea2a"
+    }
+  ]
+}

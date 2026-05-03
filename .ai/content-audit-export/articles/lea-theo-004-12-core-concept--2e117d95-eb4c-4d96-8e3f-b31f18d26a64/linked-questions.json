@@ -1,0 +1,580 @@
+{
+  "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:e4e9fe3b8b68e0106178fbfbe82a88ac79d083644c388591122d09fb146b4fcd",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "16cdfe20-bbc4-4cb2-acd9-1f59d7e4c335",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "High relative humidity (75% exterior, Type II climate) reduces evaporative cooling potential by ~50% compared to dry seasons. How should thermal comfort design respond to this humidity constraint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Humidity has no impact on thermal comfort design, which is a misconception in climate-responsive architecture"
+        },
+        {
+          "id": "b",
+          "text": "Ignore humidity; focus on temperature setpoint alone, which overlooks the significant role of humidity in perceived comfort"
+        },
+        {
+          "id": "c",
+          "text": "High humidity makes natural ventilation impossible; mechanical dehumidification is mandatory to maintain comfort levels"
+        },
+        {
+          "id": "d",
+          "text": "At RH 75%, evaporative cooling (wet surfaces, fountain effects) provides minimal benefit. Design strategy: hybrid system (natural ventilation primary, desiccant dehumidification supplementary) maintaining RH <60% where evaporative benefit exists. Alternative: accept 1–2°C higher interior temperature (27–28°C) with enhanced air movement (1.0–1.5 m/s) compensating for reduced evaporative cooling. Higher velocity reduces PMV by ~0.3, offsetting humidity constraint"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Humidity is a critical thermal comfort variable; RH >70% significantly alters design strategy.",
+        "b": "Humidity directly affects evaporative cooling and comfort perception; ignoring it degrades design.",
+        "c": "High humidity challenges but does not prevent natural ventilation; hybrid design accommodates it.",
+        "correct": "Humidity impact: 'At relative humidity 75%, evaporative cooling potential is reduced by ~50%... This explains why Coronas Type I dry-season allows better passive cooling than Type II monsoon.' Design response: hybrid strategy combining passive primary + desiccant supplementary, or accept higher temperature with enhanced air velocity to maintain comfort through motion rather than evaporative cooling.",
+        "takeaway": "This explains why Coronas Type I dry-season allows better passive cooling than Type II monsoon.' Design response: hybrid strategy combining passive primary + desiccant supplementary, or accept higher temperature with enhanced air velocity to maintain comfort through motion rather than evaporative cooling."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ac1588d346492489ffabca8b5f40a381464f288b8b115d4d17220b0c71831e0f"
+    },
+    {
+      "question_id": "939fb946-227e-484d-8a66-e18ccdedb5cf",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "Compare cooling energy requirements between a selead mechanical building (24°C setpoint, Category I PMV ±0.5) and a naturally ventilated building (27°C setpoint, Category II adaptive model, PMV −1.0 to +1.0 with 6+ ACH). Quantify the energy difference.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both buildings consume identical energy; setpoint temperature does not affect cooling load in tropical climates with consistent ambient conditions"
+        },
+        {
+          "id": "b",
+          "text": "Natural ventilation increases energy use due to fan operation and the need for supplemental dehumidification systems in high-humidity environments"
+        },
+        {
+          "id": "c",
+          "text": "Sealed mechanical: 25–35 kWh/m²/year cooling. Naturally ventilated: 2–5 kWh/m²/year (fans only). Energy savings: 80–90%. Annual cost difference: ~2,500–4,500 PHP/m² (at 8 PHP/kWh). Over 20 years, this funds premium natural ventilation design ($50M+ for 10,000 m² building)"
+        },
+        {
+          "id": "d",
+          "text": "3°C setpoint difference has negligible energy impact because cooling equipment efficiency dominates total energy consumption regardless of thermostat setting"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Setpoint directly affects cooling load; 3°C difference is substantial at tropical baseline.",
+        "b": "Fans consume minimal electricity (2–5 kWh/m²) vs. refrigeration (25–35 kWh/m²).",
+        "d": "3°C is the difference between mechanical-dependent and naturally ventilated buildings; energy impact is dramatic.",
+        "correct": "Sealed mechanical building (24°C, Category I): ~80–120 W/m² cooling capacity, 25–35 kWh/m²/year. Naturally ventilated (27°C, Category II adaptive): 0 W/m² mechanical cooling, 2–5 kWh/m² fans. Savings: 80–90% energy reduction... Over 20-year lifespan, exceeds 50 million PHP for 10,000 m² building.'",
+        "takeaway": "Over 20-year lifespan, exceeds 50 million PHP for 10,000 m² building.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d7f9987e1992de58752fa9acbe0744c4d6384aaed4c535998baa4dff3cf07df6"
+    },
+    {
+      "question_id": "4af39100-8bc0-43c1-880e-e2a9e826547e",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "Explain how the ASHRAE 55 adaptive comfort model specifically enables tropical architecture to achieve superior occupant well-being compared to fixed-setpoint mechanical-only design, despite allowing higher interior temperatures.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Higher temperatures cannot provide equal comfort regardless of ventilation quality, as physiological limits are fixed"
+        },
+        {
+          "id": "b",
+          "text": "Adaptive model recognizes three mechanisms: (1) Physiological adaptation (acclimatization reduces heat stress thresholds), (2) Psychological adaptation (expectation of variability increases tolerance), (3) Behavioral adaptation (personal control over windows/clothing modifies comfort tolerance). Result: 26–29°C with variable air movement = equal satisfaction as 23–25°C sealed uniform environment. Occupants gain psychological engagement (ventilation, views, personal control) absent in sealed buildings. This leads to superior overall well-being despite higher temperature"
+        },
+        {
+          "id": "c",
+          "text": "Higher temperatures in adaptive models always reduce occupant satisfaction, as they exceed comfort thresholds"
+        },
+        {
+          "id": "d",
+          "text": "Adaptive model only applies to cold climates, making it irrelevant for tropical architecture"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Research confirms equal comfort at 26–29°C (adaptive, natural ventilation) vs. 23–25°C (mechanical, fixed).",
+        "c": "Higher temperatures with control and variability enhance comfort vs. uniform mechanical constraint.",
+        "d": "Adaptive model applies to hot climates primarily; it validates tropical passive design.",
+        "correct": "The adaptive model is defined: 'Recognizes that thermal comfort tolerance increases with outdoor temperature in naturally ventilated buildings; allows higher indoor setpoints... Occupants in naturally ventilated spaces adapt psychologically and physiologically... Variable air movement and thermal conditions increase engagement.'",
+        "takeaway": "Variable air movement and thermal conditions increase engagement.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fcdb88e510e06437ed89cfcdfbf2fdfeb45fbd18de861d268a538c3a9024946a"
+    },
+    {
+      "question_id": "ee2b0edd-588a-4802-9531-be5bf6c66643",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "What does 'operative temperature' measure, and why is it more accurate than dry-bulb temperature alone for assessing thermal comfort in tropical buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Operative temperature combines air temperature and mean radiant temperature effects. In solar-exposed spaces, T_mean_rad (window at 40°C) significantly exceeds air temperature (27°C). Operative temp accounts for this radiation, providing accurate comfort prediction. Single dry-bulb measurement ignores radiant load"
+        },
+        {
+          "id": "b",
+          "text": "Operative temperature ignores occupant behavior, focusing solely on environmental factors without considering human interaction"
+        },
+        {
+          "id": "c",
+          "text": "Operative temperature is irrelevant to tropical design, as it does not account for humidity and other climatic variables"
+        },
+        {
+          "id": "d",
+          "text": "Operative temperature is the outside ambient temperature, which does not reflect indoor conditions accurately"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Operative temperature is a physical condition metric; behavioral adaptation is analyzed separately.",
+        "c": "Operative temperature is critical for tropical design; shading and ventilation both affect it.",
+        "d": "Operative is interior combined metric, not outside ambient.",
+        "correct": "Operative temperature is defined: 'Combined metric accounting for air temperature and radiant effects... used when mean radiant temperature differs significantly from air temperature.' In tropical buildings with solar-exposed windows, radiant temperature can be 10–15°C higher than air; ignoring this overstates comfort.",
+        "takeaway": "used when mean radiant temperature differs significantly from air temperature.' In tropical buildings with solar-exposed windows, radiant temperature can be 10–15°C higher than air; ignoring this overstates comfort."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:24b222cf1ea31eeb19c0a39e60232d76636336bd9e7efb109eace8fa0cbbee15"
+    },
+    {
+      "question_id": "461cc71c-20aa-4b90-8123-ebe88f400df0",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "A residential BERDE project achieves 6+ ACH natural ventilation, operative temperature ≤27°C 95% of occupancy hours, and CO₂ <600 ppm. Calculate potential BERDE points and explain how thermal comfort integration supports certification.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only renewable energy (solar PV) drives BERDE certification, as it significantly reduces the carbon footprint"
+        },
+        {
+          "id": "b",
+          "text": "Thermal comfort points are negligible to BERDE scoring, as other factors like energy efficiency are prioritized"
+        },
+        {
+          "id": "c",
+          "text": "Passive Design (≥3 points for ≥6 ACH without mechanical). Thermal Comfort (≥2 points for ASHRAE 55 Category II compliance with occupant survey ≤20% dissatisfaction). Indoor Air Quality (≥3 points for CO₂ <600 ppm without active exhaust). Daylighting (≥3 points for natural ventilation enabling daylight penetration). Total: 11–15 thermal-comfort-related points. Combined with Green Materials, Water Management, and other categories, project reaches 45–60 points (Silver-Gold certification). Thermal comfort design is not peripheral but central to BERDE success"
+        },
+        {
+          "id": "d",
+          "text": "Natural ventilation alone guarantees BERDE Gold certification, as it meets the highest standards for air quality and occupant comfort"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Solar PV (Emissions category, 6%) is valuable but smaller than combined passive design + thermal comfort categories (20%+).",
+        "b": "Thermal comfort credits account for 11–15% of achievable BERDE points; they are significant.",
+        "d": "Natural ventilation is necessary but not sufficient alone; multiple categories must be addressed.",
+        "correct": "BERDE credit pathway: 'Passive Design (≥3 points), Thermal Comfort (≥2 points), Daylighting & Views (≥3 points), Indoor Air Quality (≥3 points).' Thermal comfort design directly supports multiple categories; it is not isolated but integrated. A naturally ventilated, well-lit, low-CO₂ building accumulates substantial BERDE points through thermal comfort excellence.",
+        "takeaway": "A naturally ventilated, well-lit, low-CO₂ building accumulates substantial BERDE points through thermal comfort excellence."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:03da67e31fbef59ad620498bc4471ce4321433bfe5deebd4a13b7c88e8513848"
+    },
+    {
+      "question_id": "2d8952d3-1aa9-4b82-928a-a534259fd7e8",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "Compare the relationship between clothing insulation (clo) and thermal comfort in naturally ventilated vs. selead mechanical buildings. How does occupant behavior differ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clothing does not affect PMV calculation"
+        },
+        {
+          "id": "b",
+          "text": "Tropical occupants always wear heavy clothing regardless of conditions, which is a misconception as clothing choices vary with climate"
+        },
+        {
+          "id": "c",
+          "text": "Sealed mechanical buildings (24°C uniform): Occupants wear 0.7–1.0 clo (business casual). Naturally ventilated (26–28°C with 1.0 m/s air movement): Occupants adapt to 0.3–0.4 clo tropical light clothing. This behavioral adaptation reduces metabolic heat load by 30–40%, enabling higher comfort at elevated temperatures. PMV calculation depends on clo; vernacular occupants achieve comfort through clothing flexibility sealed-building occupants cannot employ"
+        },
+        {
+          "id": "d",
+          "text": "Clothing has no impact on comfort; thermal sensation is independent of attire, which contradicts established thermal comfort models"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Clothing insulation (clo) is a PMV calculation input; it directly affects comfort prediction.",
+        "b": "Tropical occupants adapt clothing seasonally and situationally; business-formal codes in sealed buildings constrain this.",
+        "d": "Clothing significantly affects metabolic heat generation; it is load-bearing to PMV calculation.",
+        "correct": "Clothing insulation (clo): 1.0 clo = business suit; tropical light clothing = 0.3–0.5 clo... Behavioral adaptation: Assuming occupants wear business attire (1.0 clo) in tropical naturally ventilated buildings is an error. Reality: 0.3–0.4 clo reduces metabolic heat load by 30–40%.' This is a tested behavioral adaptation understanding.",
+        "takeaway": "Reality: 0.3–0.4 clo reduces metabolic heat load by 30–40%.' This is a tested behavioral adaptation understanding."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3b44d3b1843d00e06ca1a284f95d5d7f93e1758b7c7812d4c3f0474b0cf4240d"
+    },
+    {
+      "question_id": "3504704d-b913-4d3a-ad55-11747e2b616e",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "What is thermal comfort defined as according to ASHRAE 55 standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The condition of mind that expresses satisfaction with the thermal environment; a subjective measure dependent on adaptation, expectation, and control"
+        },
+        {
+          "id": "b",
+          "text": "A fixed temperature setpoint (23°C) applicable universally, regardless of individual preferences or environmental conditions"
+        },
+        {
+          "id": "c",
+          "text": "The absence of any temperature sensation, implying a neutral thermal state that is rarely achievable in practice"
+        },
+        {
+          "id": "d",
+          "text": "The lowest achievable interior temperature regardless of occupant adaptation, focusing solely on energy efficiency"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Fixed setpoints ignore climate and cultural variation; comfort is flexible.",
+        "c": "Humans always sense temperature; comfort is about satisfaction, not sensation absence.",
+        "d": "Comfort is adaptive; lowest temperature is not the goal.",
+        "correct": "ASHRAE 55 defines: 'Thermal comfort is the condition of mind that expresses satisfaction with the thermal environment.' It is subjective and context-dependent, not a single fixed condition.",
+        "takeaway": "ASHRAE 55 defines: 'Thermal comfort is the condition of mind that expresses satisfaction with the thermal environment.' It is subjective and context-dependent, not a single fixed condition."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e49d4ad253eb1e1bba7aa1210520e89bf27b9e8392cb4cbf3fede43b971d7c43"
+    },
+    {
+      "question_id": "e49176a1-dadb-4c94-8758-cedaf4ab9925",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "Why do naturally ventilated buildings achieve higher occupant satisfaction and productivity than selead mechanical buildings at supposedly 'lower comfort' temperatures (27°C vs. 24°C), and what does this reveal about fixing setpoints for green building standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Temperature is the only relevant comfort metric; other factors are unimportant, making it the sole focus of design"
+        },
+        {
+          "id": "b",
+          "text": "Naturally ventilated buildings are always less comfortable; higher satisfaction claims are unsupported by empirical data"
+        },
+        {
+          "id": "c",
+          "text": "Naturally ventilated occupants benefit from: (1) Variable thermal conditions stimulating cognitive engagement, (2) Personal control (opening windows, adjusting clothing) enhancing psychological autonomy, (3) Connection to outdoor conditions creating biophilic well-being, (4) Reduced mechanical hum/vibration improving acoustic comfort. These factors elevate satisfaction despite 3°C temperature elevation. Fixed setpoints ignore psychological dimensions; BERDE recognizes this via Health/Wellbeing credits, not just thermal setpoints"
+        },
+        {
+          "id": "d",
+          "text": "Lower temperatures (24°C) universally produce higher satisfaction, as they align with traditional comfort standards"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Satisfaction is multidimensional; temperature is one variable among several.",
+        "b": "Satisfaction differences are documented and significant; they are not claimed but measured.",
+        "d": "24°C in sealed uniformity produces lower satisfaction than 27°C with control + engagement.",
+        "correct": "Occupants in naturally ventilated spaces adapt psychologically and physiologically... Variable air movement and thermal conditions increase engagement.' Research cited: 'Occupants in spaces with water features and visible vegetation reported 22% lower subjective discomfort during peak heat hours compared to fully air-conditioned control spaces.' This reveals that well-being extends beyond temperature; BERDE captures this via daylighting (3+ points), biophilic design, and indoor air quality (3+ points)—factors sealed buildings cannot address.",
+        "takeaway": "Variable air movement and thermal conditions increase engagement.' Research cited: 'Occupants in spaces with water features and visible vegetation reported 22% lower subjective discomfort during peak heat hours compared to fully air-conditioned control spaces.' This reveals that well-being extends beyond temperature; BERDE captures this via daylighting (3+ points), biophilic design, and indoor air quality (3+ points)—factors sealed buildings cannot address."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:429f62cd2fc7cc70b44ec95c3caa61b38084b89c9718829da7b64f8ead9e56c1"
+    },
+    {
+      "question_id": "85583d31-1db4-49e7-a40c-5a502286d6e9",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "For a Coronas Type I school (dry season peak 42–45°C exterior), calculate the adaptive comfort temperature using ASHRAE 55. How does this inform classroom design strategy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adaptive comfort has no application to schools; all buildings require 24°C mechanical cooling, regardless of external conditions"
+        },
+        {
+          "id": "b",
+          "text": "T_mean_out = 34°C (7-day running mean outdoor dry-bulb temperature). T_comfort_adapt = 13.5 + 0.31 × 34 ≈ 24.0°C (upper limit ~27°C with 90% acceptability band). This moderate temperature is achievable with 6+ ACH natural ventilation. Classroom design: maximize window area, ensure cross-ventilation, maintain open floor plan, provide personal control (operable shades, fans). Result: occupant comfort without 8–12 kW/ton AC units; 60–80% cooling energy reduction vs. sealed school"
+        },
+        {
+          "id": "c",
+          "text": "Adaptive model yields same setpoint as mechanical design (24°C), which is standard for all educational facilities"
+        },
+        {
+          "id": "d",
+          "text": "Type I climate is too hot for any comfort; mechanical AC is mandatory to maintain acceptable indoor conditions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schools absolutely can use adaptive model; ASHRAE 55 Category II applies to all occupancy types.",
+        "c": "Adaptive model yields higher setpoint (26–27°C) than fixed mechanical (24°C).",
+        "d": "Type I peak is extreme, but dry season wind enables cooling; 26–27°C is achievable via ventilation.",
+        "correct": "T_mean_out = 34°C... T_comfort_adapt = 27.5°C... Implication: If buildings achieve natural ventilation with occupant control, 27.5°C is acceptable. Cooling load reduction ≈35% vs. sealed mechanical buildings.' Schools benefit equally; 26.5°C is achievable and allows substantial energy savings.",
+        "takeaway": "sealed mechanical buildings.' Schools benefit equally; 26.5°C is achievable and allows substantial energy savings."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a7db6ada4283483eea8976f7cffaf700a5935bb3e9b0a451cb1cb39eb5a8920"
+    },
+    {
+      "question_id": "942b96fc-7324-404f-9a50-ed10943c9864",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "A Manila office building (2:00 PM, April dry season) has T_air = 34°C, T_mean_rad = 36°C, RH = 60%, air velocity = 0.2 m/s, met = 1.2, clo = 0.4. Is this acceptable under ASHRAE 55 Category II (PMV between −0.85 and +0.85)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No. Calculation yields PMV ≈ +1.8 (warm discomfort), outside Category II acceptable range. Design solution: increase air velocity to 1.0 m/s (via fans or improved cross-ventilation) reducing PMV to ≈ +0.8; or reduce interior temperature to 31°C through enhanced shading/ventilation"
+        },
+        {
+          "id": "b",
+          "text": "34°C air temperature guarantees discomfort; no design solution exists, as the environmental conditions exceed the adaptive comfort model limits"
+        },
+        {
+          "id": "c",
+          "text": "Category II is irrelevant for tropical climates; different standards apply, such as those considering local thermal adaptation"
+        },
+        {
+          "id": "d",
+          "text": "Yes; all tropical buildings are acceptable regardless of PMV, due to inherent design flexibility in tropical architecture"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Design interventions (ventilation, shading, temperature reduction) can achieve Category II compliance at elevated interior temperatures.",
+        "c": "ASHRAE 55 applies globally; tropical adaptation uses adaptive model, not different standards.",
+        "d": "Tropical buildings must meet ASHRAE 55 standards; 'acceptable regardless' is incorrect.",
+        "correct": "This exact scenario: 'PMV ≈ +1.8 (warm discomfort)... PPD ≈ 50% (half of occupants uncomfortable).' Category II requires PMV −1.0 to +1.0 (±3K tolerance). Solutions: increase air movement (reduces PMV by ~0.3–0.5), reduce mean radiant temperature via shading, or lower interior temperature via improved cooling. This is the tested problem-solving question.",
+        "takeaway": "This is the tested problem-solving question."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:96bbab336ee17214daeb55c6b6806c1781b71e7d26623dce6145dc1158159078"
+    },
+    {
+      "question_id": "dcc2b4f3-df05-4352-9353-04e5317c0c05",
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "topic_id": "c55581c9-2e36-4954-8837-771734943fb6",
+      "text": "A hospital patient room must maintain ASHRAE 55 Category I (PMV ±0.5) continuously. Why does this stringent requirement make mechanical cooling non-negotiable, and how does this conflict with BERDE green building goals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Category I can be achieved with natural ventilation; mechanical cooling is unnecessary, which contradicts the need for precise temperature control in sensitive environments"
+        },
+        {
+          "id": "b",
+          "text": "Category I eliminates all BERDE eligibility, which is not accurate as BERDE can accommodate mechanical systems if they are part of an integrated sustainable design"
+        },
+        {
+          "id": "c",
+          "text": "Category I requires PMV within ±0.5 (near-neutral); tropical natural ventilation (27–28°C with adaptive tolerance) cannot reliably maintain PMV ±0.5 during peak heat/humidity. Mechanical cooling (24°C setpoint) achieves Category I. Conflict: BERDE encourages passive design (≥6 ACH natural ventilation) for health benefits; hospital Category I demands mechanical control sacrificing adaptive comfort benefits. Resolution: hybrid design (natural primary + mechanical backup) can achieve Category I while earning BERDE passive design credits for baseline cooling reduction"
+        },
+        {
+          "id": "d",
+          "text": "Mechanical cooling and BERDE are universally incompatible, which oversimplifies the potential for integrating mechanical systems within a green building framework"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Category I PMV tolerance is too tight for tropical natural ventilation alone; mechanical is necessary.",
+        "b": "Mechanical cooling can earn BERDE points for efficient systems (COP 3.2+); it does not disqualify certification.",
+        "d": "Hybrid approaches combine mechanical rigor (Category I) with passive benefits (BERDE credits); they are compatible.",
+        "correct": "Category I is the most stringent (±0.5 PMV); it typically requires mechanical systems. Hospital patient rooms, elderly care facilities: Requires mechanical systems; natural ventilation cannot achieve category I in tropical climates.' The design strategy is hybrid (mechanical primary) while natural ventilation provides baseline efficiency, earning BERDE credits in Energy and Health/Wellbeing categories.",
+        "takeaway": "Hospital patient rooms, elderly care facilities: Requires mechanical systems; natural ventilation cannot achieve category I in tropical climates.' The design strategy is hybrid (mechanical primary) while natural ventilation provides baseline efficiency, earning BERDE credits in Energy and Health/Wellbeing categories."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-12-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fd9a1a6a937d786900358a499f4c007c3971dea148304433add409a67c35a8bb"
+    }
+  ]
+}

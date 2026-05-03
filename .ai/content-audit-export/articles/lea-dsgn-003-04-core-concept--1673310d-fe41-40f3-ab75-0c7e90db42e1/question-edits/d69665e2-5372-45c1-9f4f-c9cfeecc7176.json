@@ -1,0 +1,24 @@
+{
+  "question_id": "d69665e2-5372-45c1-9f4f-c9cfeecc7176",
+  "baseline_hash": "sha256:421bcc594ac8652b2459afb3189884e65e50ead4c27966879bea0c024f0a3e6b",
+  "reason": "Math inconsistency: question states 'assuming 4.5 persons/unit' but rationale calculation uses 5 occupants/unit. Also, question mentions 'average unit floor area of 28 sqm' (extraneous info) but calculation uses lot area (64 sqm). No road deduction applied in the rationale despite mentioning 30% roads. The question text and rationale need alignment.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T03:45:00+00:00",
+  "proposed": {
+    "text": "A 1.5-hectare socialized single detached housing project has a minimum lot area of 64 sqm per unit. Calculate the gross density in persons/hectare assuming 5 persons/unit and no deduction for roads and amenities (gross density basis).",
+    "options": [
+      {"id": "a", "text": "Approximately 1,042 persons/hectare"},
+      {"id": "b", "text": "Approximately 781 persons/hectare"},
+      {"id": "c", "text": "Approximately 1,390 persons/hectare"},
+      {"id": "d", "text": "Approximately 500 persons/hectare"}
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "1,042 persons/ha would require 1,042 × 1.5 = 1,563 persons, which is 313 units at 5 pax/unit, needing 20,000 sqm of lots — exceeds the 1.5 ha site.",
+      "c": "1,390 persons/ha would require 1,390 × 1.5 = 2,085 persons, needing 417 units at 5 pax/unit — not achievable on this site.",
+      "d": "500 persons/ha underestimates the density; actual density is higher given the lot area and occupancy assumptions.",
+      "correct": "Units per hectare = 10,000 sqm ÷ 64 sqm/lot = 156.25 units/hectare. Gross density = 156.25 × 5 occupants = 781.25 ≈ 781 persons/hectare. Note: floor area is not used in gross density calculation; lot area determines unit count.",
+      "takeaway": "Gross density = (site area ÷ lot area) × persons per unit ÷ site area in hectares. Floor area is not part of this calculation."
+    }
+  }
+}

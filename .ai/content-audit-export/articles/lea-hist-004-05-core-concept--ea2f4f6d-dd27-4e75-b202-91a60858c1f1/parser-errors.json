@@ -1,0 +1,36 @@
+{
+  "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
+  "slug": "lea-hist-004-05-core-concept",
+  "generated_at": "2026-05-01T13:33:43.640Z",
+  "parser_version": "ui-block-parser-v1",
+  "error_count": 0,
+  "warning_count": 1,
+  "unknown_block_count": 1,
+  "critical_block_count": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "block_id": "ui_0008",
+      "component_name": "ExamTip",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for ExamTip; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0008",
+      "component_name": "ExamTip",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:e4784b473b822f057e93a7eea2dfd176d2bce8867b601fa4a990ddeba84a9bef",
+      "line_start": 46,
+      "line_end": 46,
+      "warnings": [
+        "No closing tag found for ExamTip; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "critical_blocks": []
+}

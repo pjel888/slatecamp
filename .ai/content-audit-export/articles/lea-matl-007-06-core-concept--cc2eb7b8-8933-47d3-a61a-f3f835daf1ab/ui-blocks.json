@@ -1,0 +1,175 @@
+{
+  "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+  "slug": "lea-matl-007-06-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.611Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:5f991a0e1c1a211e7f7a56e3c8a5c5723536b2ba0559b6dfd01d5697ce05c3e5",
+  "normalized_content_hash": "a5403ba6ff782e64185c509e982abba562f5cef10518fb604d5cc9c92dc6b2d2",
+  "ui_block_count": 6,
+  "total_blocks": 6,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memory aid: Engineered quartz = best all-rounder (hard, non-porous, low-maintenance). Natural granite = durable but requires sealing. Marble = beautiful but high-maintenance (etching risk). Laminate = budget-friendly but short-lived. Concrete = artistic but labor-intensive. Match material to maintenance tolerance, not just aesthetics.</Tip>",
+      "raw_hash": "sha256:a5fe93dfb38df6a004c94d26fcb5c999721b3e959ca4ce9a5c0e8ac9f7cad862",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: Engineered quartz = best all-rounder (hard, non-porous, low-maintenance). Natural granite = durable but requires sealing. Marble = beautiful but high-maintenance (etching risk). Laminate = budget-friendly but short-lived. Concrete = artistic but labor-intensive. Match material to maintenance tolerance, not just aesthetics.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9129db26ce443c5301b72a435a107cfa9339ac438966798cf9d66f823dd46805",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memory aid: Engineered quartz = best all-rounder (hard, non-porous, low-maintenance). Natural granite = durable but requires sealing. Marble = beautiful but high-maintenance (etching risk). Laminate = budget-friendly but short-lived. Concrete = artistic but labor-intensive. Match material to maintenance tolerance, not just aesthetics.",
+      "children_text": "Memory aid: Engineered quartz = best all-rounder (hard, non-porous, low-maintenance). Natural granite = durable but requires sealing. Marble = beautiful but high-maintenance (etching risk). Laminate = budget-friendly but short-lived. Concrete = artistic but labor-intensive. Match material to maintenance tolerance, not just aesthetics.",
+      "start_offset": 8191,
+      "end_offset": 8538,
+      "line_start": 60,
+      "line_end": 60,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Specifying marble for a kitchen counter, assuming sealing prevents etching and staining\" correction=\"Sealing delays but does not prevent etching (acidic foods etch marble regardless of selear). Marble is inappropriate for high-use kitchens. Use it in low-use formal kitchens or dining buffets only, with explicit owner education on maintenance.\" />",
+      "raw_hash": "sha256:3549ef338a6b4de9a1737853510bdf374f52fc2f148b98ef6a40c8dd314ba96a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Specifying marble for a kitchen counter, assuming sealing prevents etching and staining\", correction=\"Sealing delays but does not prevent etching (acidic foods etch marble regardless of selear). Marble is inappropriate for high-use kitchens. Use it in low-use formal kitchens or dining buffets only, with explicit owner education on maintenance.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4336570ee028fe9b5248ea46e370322b1c6887571ba79dbb1a18ac276bee827c",
+      "props": {
+        "mistake": "Specifying marble for a kitchen counter, assuming sealing prevents etching and staining",
+        "correction": "Sealing delays but does not prevent etching (acidic foods etch marble regardless of selear). Marble is inappropriate for high-use kitchens. Use it in low-use formal kitchens or dining buffets only, with explicit owner education on maintenance."
+      },
+      "props_json": {
+        "mistake": "Specifying marble for a kitchen counter, assuming sealing prevents etching and staining",
+        "correction": "Sealing delays but does not prevent etching (acidic foods etch marble regardless of selear). Marble is inappropriate for high-use kitchens. Use it in low-use formal kitchens or dining buffets only, with explicit owner education on maintenance."
+      },
+      "props_text": "mistake=\"Specifying marble for a kitchen counter, assuming sealing prevents etching and staining\" correction=\"Sealing delays but does not prevent etching (acidic foods etch marble regardless of selear). Marble is inappropriate for high-use kitchens. Use it in low-use formal kitchens or dining buffets only, with explicit owner education on maintenance.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8560,
+      "end_offset": 8934,
+      "line_start": 64,
+      "line_end": 64,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Assuming all granite is equivleant; sourcing from lowest-cost supplier without quality inspection\" correction=\"Natural stone varies widely by quarry and quality grade. Always inspect sample slabs. Verify sealing application by supplier. Low-cost granite often lacks proper sealing, leading to rapid staining.\" />",
+      "raw_hash": "sha256:8efcd74bdb0ffc2881c0e16d999591483bd19be51bcb3c297267dca3679a008c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Assuming all granite is equivleant; sourcing from lowest-cost supplier without quality inspection\", correction=\"Natural stone varies widely by quarry and quality grade. Always inspect sample slabs. Verify sealing application by supplier. Low-cost granite often lacks proper sealing, leading to rapid staining.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:65b63db32378906397d33e11a1cbadafca119631dafdaf78075e38f60898b0d7",
+      "props": {
+        "mistake": "Assuming all granite is equivleant; sourcing from lowest-cost supplier without quality inspection",
+        "correction": "Natural stone varies widely by quarry and quality grade. Always inspect sample slabs. Verify sealing application by supplier. Low-cost granite often lacks proper sealing, leading to rapid staining."
+      },
+      "props_json": {
+        "mistake": "Assuming all granite is equivleant; sourcing from lowest-cost supplier without quality inspection",
+        "correction": "Natural stone varies widely by quarry and quality grade. Always inspect sample slabs. Verify sealing application by supplier. Low-cost granite often lacks proper sealing, leading to rapid staining."
+      },
+      "props_text": "mistake=\"Assuming all granite is equivleant; sourcing from lowest-cost supplier without quality inspection\" correction=\"Natural stone varies widely by quarry and quality grade. Always inspect sample slabs. Verify sealing application by supplier. Low-cost granite often lacks proper sealing, leading to rapid staining.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8936,
+      "end_offset": 9274,
+      "line_start": 66,
+      "line_end": 66,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Specifying engineered quartz without noting non-repairable scratches vs. Corian's repairable surface\" correction=\"Quartz scratches are permanent (cosmetic only, but visible). Corian scratches are repairable (sanded/re-buffed). Match material to household use (high-risk kitchens favor Corian; low-risk favor quartz for cost).\" />",
+      "raw_hash": "sha256:daa9405608a6d40e815aa0a03dbbf03ea1884b7f012f24e1e2e1dba3fca78b47",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Specifying engineered quartz without noting non-repairable scratches vs. Corian's repairable surface\", correction=\"Quartz scratches are permanent (cosmetic only, but visible). Corian scratches are repairable (sanded/re-buffed). Match material to household use (high-risk kitchens favor Corian; low-risk favor quartz for cost).\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:bf166e708d8dc32ac42c4eb8ee7ef18227d62faded2253604ccf1f06a8fac89a",
+      "props": {
+        "mistake": "Specifying engineered quartz without noting non-repairable scratches vs. Corian's repairable surface",
+        "correction": "Quartz scratches are permanent (cosmetic only, but visible). Corian scratches are repairable (sanded/re-buffed). Match material to household use (high-risk kitchens favor Corian; low-risk favor quartz for cost)."
+      },
+      "props_json": {
+        "mistake": "Specifying engineered quartz without noting non-repairable scratches vs. Corian's repairable surface",
+        "correction": "Quartz scratches are permanent (cosmetic only, but visible). Corian scratches are repairable (sanded/re-buffed). Match material to household use (high-risk kitchens favor Corian; low-risk favor quartz for cost)."
+      },
+      "props_text": "mistake=\"Specifying engineered quartz without noting non-repairable scratches vs. Corian's repairable surface\" correction=\"Quartz scratches are permanent (cosmetic only, but visible). Corian scratches are repairable (sanded/re-buffed). Match material to household use (high-risk kitchens favor Corian; low-risk favor quartz for cost).\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9276,
+      "end_offset": 9631,
+      "line_start": 68,
+      "line_end": 68,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Omitting sealing frequency for natural stone, assuming 'selead at factory' lasts the project life\" correction=\"Factory sealing is initial protection only. Annual re-sealing is required for granite/limestone in high-humidity climates (Philippines). Specify in spec: 'Annual sealing per [brand] protocol.'\" />",
+      "raw_hash": "sha256:54116fd0abc2eafece4af082833941aae70ae90d3bd1709a2451451d23d000d5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Omitting sealing frequency for natural stone, assuming 'selead at factory' lasts the project life\", correction=\"Factory sealing is initial protection only. Annual re-sealing is required for granite/limestone in high-humidity climates (Philippines). Specify in spec: 'Annual sealing per [brand] protocol.'\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:baa23262a45ebfa7245f21a866efdf64033301a57c2bda24e804db89322e5b10",
+      "props": {
+        "mistake": "Omitting sealing frequency for natural stone, assuming 'selead at factory' lasts the project life",
+        "correction": "Factory sealing is initial protection only. Annual re-sealing is required for granite/limestone in high-humidity climates (Philippines). Specify in spec: 'Annual sealing per [brand] protocol.'"
+      },
+      "props_json": {
+        "mistake": "Omitting sealing frequency for natural stone, assuming 'selead at factory' lasts the project life",
+        "correction": "Factory sealing is initial protection only. Annual re-sealing is required for granite/limestone in high-humidity climates (Philippines). Specify in spec: 'Annual sealing per [brand] protocol.'"
+      },
+      "props_text": "mistake=\"Omitting sealing frequency for natural stone, assuming 'selead at factory' lasts the project life\" correction=\"Factory sealing is initial protection only. Annual re-sealing is required for granite/limestone in high-humidity climates (Philippines). Specify in spec: 'Annual sealing per [brand] protocol.'\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9633,
+      "end_offset": 9966,
+      "line_start": 70,
+      "line_end": 70,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0006",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Installing laminate in high-heat zones (next to cooktops) without backsplash or edge protection\", \"Using water-based selears on marble in tropical climates (requires solvent-based selears for durability)\", \"Overlooking edge profiles in natural stone specs (polished vs. honed affects maintenance and appearance)\", \"Failing to coordinate countertop depth and overhang with cabinet and appliance specs\", \"Assuming backsplash is optional; omitting it in tile-wall kitchens (moisture penetration to substrates)\"]} />",
+      "raw_hash": "sha256:9290fc45e578632662c5147e2e3b970e2c8093ca2a76054a1187e43e3e9d8b2a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Installing laminate in high-heat zones (next to cooktops) without backsplash or edge protection\\\", \\\"Using water-based selears on marble in tropical climates (requires solvent-based selears for durability)\\\", \\\"Overlooking edge profiles in natural stone specs (polished vs. honed affects maintenance and appearance)\\\", \\\"Failing to coordinate countertop depth and overhang with cabinet and appliance specs\\\", \\\"Assuming backsplash is optional; omitting it in tile-wall kitchens (moisture penetration to substrates)\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:99069521791614ffb50f1aae63ab6a384e76d058b81dc268e542d4a1524da0c2",
+      "props": {
+        "mistakes": "{[\"Installing laminate in high-heat zones (next to cooktops) without backsplash or edge protection\", \"Using water-based selears on marble in tropical climates (requires solvent-based selears for durability)\", \"Overlooking edge profiles in natural stone specs (polished vs. honed affects maintenance and appearance)\", \"Failing to coordinate countertop depth and overhang with cabinet and appliance specs\", \"Assuming backsplash is optional; omitting it in tile-wall kitchens (moisture penetration to substrates)\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Installing laminate in high-heat zones (next to cooktops) without backsplash or edge protection\", \"Using water-based selears on marble in tropical climates (requires solvent-based selears for durability)\", \"Overlooking edge profiles in natural stone specs (polished vs. honed affects maintenance and appearance)\", \"Failing to coordinate countertop depth and overhang with cabinet and appliance specs\", \"Assuming backsplash is optional; omitting it in tile-wall kitchens (moisture penetration to substrates)\"]}"
+      },
+      "props_text": "mistakes={[\"Installing laminate in high-heat zones (next to cooktops) without backsplash or edge protection\", \"Using water-based selears on marble in tropical climates (requires solvent-based selears for durability)\", \"Overlooking edge profiles in natural stone specs (polished vs. honed affects maintenance and appearance)\", \"Failing to coordinate countertop depth and overhang with cabinet and appliance specs\", \"Assuming backsplash is optional; omitting it in tile-wall kitchens (moisture penetration to substrates)\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9968,
+      "end_offset": 10509,
+      "line_start": 72,
+      "line_end": 72,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:2904d54beb2b9901a6b80c419c648cfdd4347075ca13da587dba9418638a0fad"
+}

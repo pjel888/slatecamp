@@ -1,0 +1,87 @@
+## What You Need to Know for the LEA
+
+Allowable Stress Design (ASD) and Load and Resistance Factor Design (LRFD) are two fundamentally different philosophies for ensuring structural safety. ASD uses elastic analysis with working stresses well below yield. LRFD uses plastic analysis and amplifies loads, allowing stress to reach near yield. Understanding their conceptual difference is essential for code interpretation and design judgment.
+
+## Core Concept
+
+Both ASD and LRFD aim to ensure safety, but they achieve it through different paths. Safety can be introduced at the load side (amplify forces) or at the resistance side (reduce capacity), or both. The choice affects calculations, stress levels, and failure mode control.
+
+**Allowable Stress Design (ASD)** is the classical elastic method. The designer calculates stresses from actual (unfactored) service loads using elastic formulas. Stresses must not exceed allowable limits, which are fractions of yield strength (typically 0.60Fy for axial compression, 0.66Fy for bending, 0.40Fy for shear). The material operates entirely in the elastic region; permanent deformation is implicitly prevented. ASD assumes loads and properties are known with certainty; no amplification is applied to loads. Safety is introduced by keeping working stresses far below yield.
+
+**Load and Resistance Factor Design (LRFD)** is the modern probabilistic method. The designer calculates demands from factored loads (amplified service loads, typically U = 1.2D + 1.6L where D = dead load, L = live load). Capacities are reduced by resistance factors (φ, typically 0.70–0.90). The material may reach or exceed yield; plastic behavior is permitted and expected. LRFD acknowledges that loads and material properties are uncertain; load factors and resistance factors are calibrated statistically to ensure consistent reliability. Safety is introduced on both sides: loads are amplified, and capacities are reduced.
+
+**The Central Principle:** ASD = Elastic analysis + working stresses. LRFD = Factored loads + factored capacities. In ASD, you check: actual stress ≤ allowable stress. In LRFD, you check: factored demand ≤ factored capacity.
+
+**Why Two Methods Coexist:** ASD is simpler conceptually and computationally, making it popular for preliminary design and teaching. LRFD is theoretically superior because it accounts for variability in loads and materials separately, but it requires more detailed analysis and familiarity with factors and formulas. Most modern codes (NSCP, ACI, AISC) permit both methods, though LRFD is increasingly dominant for new design.
+
+## Key Provisions
+
+### Side-by-Side Comparison
+
+| Aspect | ASD (Allowable Stress) | LRFD (Load and Resistance Factor) |
+|--------|----------------------|----------------------------------|
+| **Load Treatment** | Use actual (unfactored) service loads | Amplify loads with factors (U = 1.2D + 1.6L for gravity) |
+| **Stress/Capacity Treatment** | Use allowable stresses (fractions of Fy: 0.60Fy, 0.66Fy, 0.40Fy) | Reduce capacities with resistance factors (φ = 0.70–0.90) |
+| **Material State** | Elastic region only; no permanent deformation | Plastic region permitted; yield is acceptable |
+| **Design Check** | f ≤ Fa (actual ≤ allowable) | Pu ≤ φPn or Mu ≤ φMn (factored demand ≤ factored capacity) |
+| **Failure Mode Control** | Implicit; working stress limits prevent yielding | Explicit; φ factors control failure mode probability |
+| **Uncertainty Treatment** | Single overall safety factor applied indirectly | Separate factors for different load types and resistance types |
+| **Theoretical Basis** | Classical mechanics; factor of safety is ratio of capacity to demand | Probability-based; factors reflect variability in loads and materials |
+
+### Representative Load Factor Examples
+
+**Older American Standard (now obsolete for new design, but still seen in legacy code):**
+- U = 1.4DL + 1.7LL (dead load factor 1.4, live load factor 1.7)
+
+**NSCP 2015 / Modern Standard:**
+- U = 1.2D + 1.6L (dead load factor 1.2, live load factor 1.6)
+- Where D = service dead load, L = service live load
+
+**Live Load Reduction:** In some jurisdictions, live load factors may vary (1.4–1.8L) based on load category. Check the applicable code; do not assume.
+
+### Representative Resistance Factors (φ) for Concrete
+
+Reference only; full table in LEA-STRC-005-02. These illustrate the range; the actual φ depends on failure mode and member type.
+
+| Limit State | φ Factor |
+|-------------|----------|
+| Flexure (ductile) | 0.90 |
+| Axial compression (spiral) | 0.75 |
+| Axial compression (tied) | 0.70 |
+| Shear and torsion | 0.85 |
+| Bearing (concrete on concrete) | 0.70 |
+
+Higher φ = higher allowed capacity (lower reduction). Ductile modes (flexure) have higher φ; brittle modes (bearing, some shear) have lower φ.
+
+### Representative Allowable Stresses for Steel (ASD)
+
+Reference only; full table in LEA-STRC-005-03. These illustrate fractions of Fy; the actual value depends on member classification and stress type.
+
+| Stress Type | A36 Steel (Fy = 248 MPa) | Allowable Stress |
+|-------------|------------------------|-----------------|
+| **Axial tension** | Tension throughout | 0.60Fy ≈ 149 MPa |
+| **Axial compression** | (Euler buckling applies) | 0.60Fy (with slenderness check) |
+| **Bending (compact section)** | Lateral-torsional buckling not critical | 0.66Fy ≈ 164 MPa |
+| **Shear** | Thin webs | 0.40Fy ≈ 99 MPa |
+
+Note: ASD allowable stresses are deterministic and do not explicitly account for variability. The single safety margin (allowable = fraction of Fy) is conservative but does not distinguish between uncertain loads and uncertain material properties.
+
+## Philippine Practice Context
+
+The NSCP permits both ASD and LRFD for structural design. The 2015 edition (current) emphasizes LRFD for concrete and steel, but ASD is still permitted and widely used in practice, especially for preliminary calculations. The NSCP load factors are U = 1.2D + 1.6L (LRFD) for combined gravity loading. Designers must declare their method upfront; switching between methods mid-analysis introduces errors. The limit state equations in LRFD (Mu ≤ φMn, Vu ≤ φVn, Pu ≤ φPn) are the governing checks.
+
+## How It's Tested
+
+**Pattern 1: Conceptual Understanding.** You are given a scenario: "A designer checks that f = 100 MPa ≤ Fa = 150 MPa." Is this ASD or LRFD? Answer: ASD (actual stress vs. allowable stress). The next statement: "A designer checks that Mu = 200 kN·m ≤ φMn = 250 kN·m." Is this ASD or LRFD? Answer: LRFD (factored moment vs. factored capacity).
+
+**Pattern 2: Load Factor Application.** Service loads are D = 50 kN, L = 30 kN. Calculate the factored load for LRFD. Answer: U = 1.2 × 50 + 1.6 × 30 = 60 + 48 = 108 kN. The comparison: ASD would use 50 + 30 = 80 kN (no factors); LRFD uses 108 kN (factors applied).
+
+**Pattern 3: Safety Philosophy.** Why does LRFD amplify live loads more than dead loads (1.6L vs. 1.2D)? Answer: Live loads are more uncertain and variable than dead loads. The higher factor reflects greater variability. This is the heart of probability-based design: factors match uncertainty.
+
+**Pattern 4: Failure Mode Implication.** In LRFD, a flexure member gets φ = 0.90, but a bearing area gets φ = 0.70. Why the difference? Answer: Flexure is ductile (bending allows redistribution and warning); bearing is brittle (sudden crushing). Lower φ penalizes brittle modes. This explicit control of failure mode is a strength of LRFD unavailable in simple ASD.
+
+<Tip>ASD = working stress = elastic = simple. LRFD = factored loads = factored capacity = sophisticated. In ASD, the designer prevents yielding. In LRFD, the designer permits (and expects) yielding but ensures it is controlled and ductile. Load factors > 1 (amplify); resistance factors < 1 (reduce). The product (load factor × resistance factor) is the effective safety margin.</Tip>
+
+## Common Mistakes
+
+<WikiMistakeList mistakes={["Confusing ASD and LRFD by mixing checks. ASD uses unfactored loads and allowable stresses: f ≤ Fa. LRFD uses factored loads and factored capacities: Pu ≤ φPn. Never mix unfactored loads with φ factors or vice versa; the result is unsafe.","Assuming LRFD always gives a lower design (more economical). LRFD often designs more conservatively than ASD in certain regions because factored demands amplify uncertainty. The two methods are not strictly comparable on cost; they address different uncertainties.","Forgetting the difference between load factors for LRFD: U = 1.2D + 1.6L (modern) vs. U = 1.4DL + 1.7LL (older). Always check which code edition applies. Using the wrong factors gives incorrect demand calculations.","Treating φ factors as uniform. φ = 0.90 for flexure (ductile) but φ = 0.70 for tied columns and bearing (brittle). The difference reflects failure mode control. Applying the same φ to all limit states is incorrect.","Assuming ASD allows unlimited stress. ASD limits stress to fractions of Fy (0.60Fy, 0.66Fy, 0.40Fy), not Fy itself. The material must remain in the elastic region. Exceeding the allowable stress is failure, just as exceeding Pu ≤ φPn is failure in LRFD.","Missing the point that both methods aim for safety; they differ only in how safety is introduced. ASD is deterministic (work stress < yield); LRFD is probabilistic (factors reflect uncertainty). Neither is 'safer' in absolute terms; they are calibrated to similar reliability indices."] />

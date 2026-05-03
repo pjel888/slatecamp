@@ -1,0 +1,2208 @@
+{
+  "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:32b094510f3ada2cb9eb12c20b2c583323346c716c2b732fb15ba965043140c9",
+  "question_count": 50,
+  "questions": [
+    {
+      "question_id": "06133b0b-3882-4cc9-b51a-ec5c8a24f377",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VII, Section 706, what are the TWO conditions that must be satisfied before a building may qualify for a floor area increase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Installation of a full NFPA 13 sprinkler system AND approval of the Building Official, provided that the system covers all floors and areas"
+        },
+        {
+          "id": "b",
+          "text": "Public space, streets, or yards adjoining at least one side of the building AND Building Official approval, contingent upon compliance with local zoning ordinances"
+        },
+        {
+          "id": "c",
+          "text": "Public space, streets, or yards extending along and adjoining two or more sides of the building AND subject to Building Official approval"
+        },
+        {
+          "id": "d",
+          "text": "A corner lot location AND a minimum FLAR of 3.0, which must be verified by a licensed surveyor"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option B is a common trap — 'one side' is insufficient. The provision requires 'two or more sides.' Option A misleads by suggesting sprinklers are an explicit standalone trigger — they are considered via Building Official discretion but are not an enumerated requirement in Sec. 706 itself. Option D introduces a FLAR threshold not found in the code text.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d3e79b080effcba7cec3157643da23bb9ab7a9cb35b72fd15bde54a145b42d3f"
+    },
+    {
+      "question_id": "538718e4-c17c-473f-b26e-eeb29a3cf606",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "In the Philippine floor area framework under PD 1096, what does PSO (Percent of Site Occupancy) multiplied by TLA (Total Lot Area) produce?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total Allowable GFA, which determines the maximum floor area that can be constructed on a given lot"
+        },
+        {
+          "id": "b",
+          "text": "AMBF (Allowable Maximum Building Footprint)"
+        },
+        {
+          "id": "c",
+          "text": "TGFA (Total Gross Floor Area), which includes all covered areas of a building"
+        },
+        {
+          "id": "d",
+          "text": "FLAR (Floor to Lot Area Ratio), a measure of density and land use efficiency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "AMBF = TLA × PSO is the foundational formula for determining the maximum building footprint. This is distinct from FLAR (which controls total floor area across all floors) and GFA (which is the actual computed floor area). The AMBF limits horizontal coverage; FLAR limits total building volume.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:094093a33d867654b5ee891c4a496374dbaa63bdd6f83214069fa34ca690f17b"
+    },
+    {
+      "question_id": "7b1c6e8e-5257-4d81-95b3-3961e78fb143",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which of the following areas is EXCLUDED from the calculation of Gross Floor Area (GFA) under the 2004 Revised IRR of PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Covered parking areas provided to satisfy minimum parking requirements"
+        },
+        {
+          "id": "b",
+          "text": "All corridors, lobbies, and toilets within the building envelope, as they are essential for circulation and services"
+        },
+        {
+          "id": "c",
+          "text": "Enclosed mezzanines, which are considered part of the usable floor space"
+        },
+        {
+          "id": "d",
+          "text": "All covered balconies and terraces, which contribute to the building's aesthetic and functional outdoor space"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The GFA exclusion for required parking is a key policy rationale for podium-type developments in the Philippines. By excluding parking from the floor area limit, the code incentivizes adequate parking provision without penalizing the developer through reduced allowable GFA. This is a common exam topic and a practical design consideration.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:77e71d411c658044f06fe19cdfb6b5d17f66be54b6c4513a09e531b31fab3618"
+    },
+    {
+      "question_id": "fb132180-6847-480f-a925-2988f0d2cdf8",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the KEY distinction between PSO and FLAR as building size controls under the Philippine framework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PSO and FLAR both control total floor area — either alone is sufficient, which is a misunderstanding of their distinct roles"
+        },
+        {
+          "id": "b",
+          "text": "PSO controls the building's horizontal footprint (ground coverage); FLAR controls the total aggregate floor area across all floors"
+        },
+        {
+          "id": "c",
+          "text": "FLAR controls the ground-floor footprint; PSO controls the total number of floors allowed, which is an incorrect interpretation of their functions"
+        },
+        {
+          "id": "d",
+          "text": "PSO applies only to residential buildings; FLAR applies only to commercial buildings, a simplification that does not reflect actual regulations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A is wrong because both must be satisfied simultaneously — neither alone is sufficient. Option C inverts the definitions. Option D is incorrect because both PSO and FLAR apply across all occupancy types (values vary per zone and code table).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e07833be3c89a52080ee8ec6024ad993d4992eeff731fe99c9b161f24c1d5a31"
+    },
+    {
+      "question_id": "c8323e34-be21-4e20-be5c-646b0c31ec8c",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum floor area and minimum least dimension for a KITCHEN under Section 806?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum floor area: 4.50 sq.m; minimum least dimension: 1.80 m"
+        },
+        {
+          "id": "b",
+          "text": "Minimum floor area: 3.00 sq.m; minimum least dimension: 1.50 m"
+        },
+        {
+          "id": "c",
+          "text": "Minimum floor area: 5.00 sq.m; minimum least dimension: 2.00 m"
+        },
+        {
+          "id": "d",
+          "text": "Minimum floor area: 2.50 sq.m; minimum least dimension: 1.20 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Mnemonic: '6-3-1.2' chains the three floor area minimums in descending order — habitable room (6.00 sq.m), kitchen (3.00 sq.m), bath/toilet (1.20 sq.m). Option A (4.50 sq.m) and Option D (2.50 sq.m) are off by common rounding or halving errors. Option C (5.00 sq.m) is close to the habitable room minimum but wrong for kitchens.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04dd3a5b0fb336a2d6291ee6321c453ce005548417ac07a96d83a931e70fce0a"
+    },
+    {
+      "question_id": "7346c5f8-04d9-4e40-bd48-965f800f40be",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum floor area for a bath and toilet under Section 806(c), and what is the minimum least dimension?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum floor area: 1.20 sq.m; minimum least dimension: 900 mm"
+        },
+        {
+          "id": "b",
+          "text": "Minimum floor area: 1.50 sq.m; minimum least dimension: 900 mm"
+        },
+        {
+          "id": "c",
+          "text": "Minimum floor area: 1.20 sq.m; minimum least dimension: 700 mm"
+        },
+        {
+          "id": "d",
+          "text": "Minimum floor area: 2.00 sq.m; minimum least dimension: 1.00 m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 900 mm (0.90 m) minimum dimension is sometimes confused with the 1.00 m dimension used in accessible routes or other provisions. Option C (700 mm) is below the ergonomic minimum for toilet clearance. Option B (1.50 sq.m) and Option D (2.00 sq.m) are above the actual minimums. The code establishes an irreducible floor.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bd3f61dd8f5cc0d01c3053127ed7588bf2ee950f386ceee0665fc30968253781"
+    },
+    {
+      "question_id": "a9b7c985-c91e-43f1-a4b4-c56eef047874",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 806, what are the minimum floor area and minimum least horizontal dimension for a room for human habitation (bedroom, living room, dining room)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum floor area: 6.00 sq.m; minimum least dimension: 2.00 m"
+        },
+        {
+          "id": "b",
+          "text": "Minimum floor area: 5.00 sq.m; minimum least dimension: 1.80 m"
+        },
+        {
+          "id": "c",
+          "text": "Minimum floor area: 8.00 sq.m; minimum least dimension: 2.50 m"
+        },
+        {
+          "id": "d",
+          "text": "Minimum floor area: 6.00 sq.m; minimum least dimension: 1.50 m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The dual-requirement structure (area AND dimension) is critical. At the Sec. 806 minimum of 6.00 sq.m and a 2.40 m ceiling, the room volume is 6.00 × 2.40 = 14.40 cu.m — just above the 14.00 cu.m air space minimum per person. The code's internal consistency means these numbers are calibrated to each other.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:639b20ff72d4f9853984d8b4fde7870d049d8f70020d4c53e85378056b415c63"
+    },
+    {
+      "question_id": "b937f3bb-eddf-4a90-8cc7-daff5d2c3241",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 807, what is the minimum air space per person and minimum floor area per person for SCHOOL ROOMS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.00 cu.m per person; 1.00 sq.m per person"
+        },
+        {
+          "id": "b",
+          "text": "5.00 cu.m per person; 2.00 sq.m per person"
+        },
+        {
+          "id": "c",
+          "text": "14.00 cu.m per person; 6.00 sq.m per person"
+        },
+        {
+          "id": "d",
+          "text": "3.00 cu.m per person; no floor area minimum specified"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 3.00 cu.m per person for school rooms is frequently confused with the habitable room standard of 14.00 cu.m per person. The hierarchy reflects metabolic activity and duration: school children are sedentary and supervised (3 cu.m), office workers are more active and occupy spaces longer (12 cu.m), and habitable room occupants may be sleeping unconsciously (14 cu.m).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd450e9e04e30caebeaa1795ab60c4bcb7b40c0428b559d5b03accd9b73d4331"
+    },
+    {
+      "question_id": "07643f67-a9a1-4ad0-88bf-c4a40521613e",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A developer owns a 1,800 sq m building straddling the boundary between a Fire Restrictive Zone and a Highly Fire Restrictive Zone. Of the total floor area, 650 sq m are within the Highly Fire Restrictive Zone and 1,150 sq m are in the Fire Restrictive Zone. Which statement correctly describes the applicable fire zone requirements under PD 1096 Rule V, Sec. 502?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The building must comply with Fire Restrictive Zone requirements for the 1,150 sq m portion and Highly Fire Restrictive Zone requirements for the 650 sq m portion, treated independently"
+        },
+        {
+          "id": "b",
+          "text": "The building must comply with Fire Restrictive Zone requirements because the majority of its floor area (1,150 sq m) is located in that zone, following the predominant-area rule"
+        },
+        {
+          "id": "c",
+          "text": "The building must comply with Highly Fire Restrictive Zone requirements for the entire building, because more than one-third of its total floor area is in that zone"
+        },
+        {
+          "id": "d",
+          "text": "The Building Official has discretion to determine which zone applies based on the building's occupancy classification and the fire safety features provided in the design"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is the 'NRH' split-zone rule. The threshold is 'more than one-third' — not a simple majority. 650/1800 = 36.1%, which exceeds 33.3%. The entire building follows the restrictive zone.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:41f80045ceb8423ab3b9a225a58e168b3936470fad008213554c6422c52a8a8d"
+    },
+    {
+      "question_id": "b9a9e104-25ed-4e19-8808-3ab45facc241",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VII, Sec. 704, what is the relationship between the 50% opening limitation and the 10% natural ventilation requirement of Rule VIII, Sec. 811?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The 10% ventilation requirement overrides the 50% opening cap, so any window satisfying Rule VIII automatically complies with Sec. 704, which simplifies design considerations"
+        },
+        {
+          "id": "b",
+          "text": "The two requirements create potential tension on narrow lots; designers must resolve this by mechanical ventilation, facade orientation, or demonstrating the 10% ventilation is achievable within the 50% cap"
+        },
+        {
+          "id": "c",
+          "text": "Rule VIII ventilation requirements are waived for buildings in Fire Restrictive Zones, which allows for greater design flexibility"
+        },
+        {
+          "id": "d",
+          "text": "There is no interaction — the two rules govern completely different building aspects with no overlap, simplifying compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is a nuanced design challenge in Philippine practice. Dense urban lots in Binondo, Quiapo, and Tondo often face this exact conflict. Mechanical ventilation is the most common resolution.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.648005+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:940dc638ddf2708862c0a555b062131d30ff372fac4af8a559fdae43f025fbe9"
+    },
+    {
+      "question_id": "6e3e0016-250c-40ce-987c-97b0f38bea0a",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the 'FIFTY-SEVEN-FIFTY' mnemonic for PD 1096 Rule VII, Sec. 704, what do the two key numbers represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50% = maximum lot coverage; 750 mm = minimum setback from property line, which is a common misinterpretation"
+        },
+        {
+          "id": "b",
+          "text": "50% = maximum opening area per storey when openings require protection; 750 mm = minimum eave clearance from side and rear property lines"
+        },
+        {
+          "id": "c",
+          "text": "50% = maximum impervious surface area; 750 mm = minimum foundation depth, which is not applicable to this rule"
+        },
+        {
+          "id": "d",
+          "text": "50% = minimum open space requirement; 750 mm = minimum corridor width, which does not align with the mnemonic's intent"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Repeat: 'Fifty percent of the wall, seven-fifty from the line.' The 50% cap applies per storey, not per entire building height. The 750 mm applies to eaves over required windows specifically on side and rear lines.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.648005+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:31d0352328dc390434fd187991266b4a660af1a9f9a97238d30568c1fb9ecbd7"
+    },
+    {
+      "question_id": "bf7b7ef5-7999-4ae1-b6fd-47f1957b1335",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the FLAR range for Commercial 3 (Com-3) under Table VII.G.1, and what is the associated BHL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.60 up to 9.00, at a 15-storey or 45.00 m BHL"
+        },
+        {
+          "id": "b",
+          "text": "9.00 up to 34.00, at a 60-storey or 180.00 m BHL"
+        },
+        {
+          "id": "c",
+          "text": "6.00 up to 15.00, at a 36-storey or 108.00 m BHL"
+        },
+        {
+          "id": "d",
+          "text": "2.00 up to 5.00, at a 10-storey or 30.00 m BHL"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The Com-3 range is frequently confused with Com-2 (3.60–9.00, 15-storey/45m BHL). The 9.00–34.00 FLAR range is specific to Com-3 and PUD-Inland high density configurations.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4bd7da35e0e7dbe11dd16d07c40007f609e399bde5274223142e076594c75305"
+    },
+    {
+      "question_id": "8003a8c6-4cca-4dc4-ab50-49b3d4231dd6",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the FLAR for Institutional uses under Table VII.G.1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.50"
+        },
+        {
+          "id": "b",
+          "text": "2.00"
+        },
+        {
+          "id": "c",
+          "text": "2.50"
+        },
+        {
+          "id": "d",
+          "text": "3.50"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Institutional FLAR of 2.50 is midway between R-2 Maximum (2.10–3.00) and Com-1 (1.70–3.00), reflecting moderate density appropriate for institutional campuses.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc0936d3f81515adb0d38f4c6833e12d671521be98c01ed8e12c6d8a0a3dfe8c"
+    },
+    {
+      "question_id": "e5b8f51e-c482-4a8f-b354-b295df9086c0",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the correct FLAR range for R-3 (High Density Residential) Maximum configuration under Table VII.G.1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.80 up to 2.10, at a 3-storey or 10.00 m BHL"
+        },
+        {
+          "id": "b",
+          "text": "7.10 up to 8.10, at a 12-storey or 36.00 m BHL"
+        },
+        {
+          "id": "c",
+          "text": "6.00 up to 9.00, at an 18-storey or 54.00 m BHL"
+        },
+        {
+          "id": "d",
+          "text": "3.00 up to 5.00, at a 6-storey or 18.00 m BHL"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The Basic/Maximum distinction within R-2 and R-3 is frequently tested. R-3 Max (7.10–8.10) can approach the density of R-5 (6.00–9.00) but with a lower BHL of 36m vs 54m.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9bdf22c4fdc7e49d53ac5f04b4da335f34916e26d7b9791327867c8b7dc45671"
+    },
+    {
+      "question_id": "4c41b885-283c-4586-8eb7-82fcd354cbff",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the FLAR for Residential 5 (R-5) — condominiums — under Table VII.G.1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.00 up to 6.00, at a 15-storey or 45.00 m BHL"
+        },
+        {
+          "id": "b",
+          "text": "6.00 up to 9.00, at an 18-storey or 54.00 m BHL"
+        },
+        {
+          "id": "c",
+          "text": "4.00 up to 8.00, at a 12-storey or 36.00 m BHL"
+        },
+        {
+          "id": "d",
+          "text": "2.50 up to 5.00, at a 10-storey or 30.00 m BHL"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "R-5 is distinct from R-3 (7.10–8.10 at 12-storey/36m) in both FLAR and BHL. R-5 is specifically for condominium-type residential with higher density rights.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1c4b66e54d7431a4ce870f9003ee402b92c268ea5c3d23527f2e12cd0eba9dc1"
+    },
+    {
+      "question_id": "b678fc0d-5abf-4c44-ac7e-19b3a18727a7",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the Guidelines on Building Bulk, what is the relationship between TGFA and GFA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TGFA = GFA − Non-GFA areas, excluding certain utility spaces"
+        },
+        {
+          "id": "b",
+          "text": "TGFA = GFA + Non-GFA areas (parking decks, utility rooms, over-10 sqm balconies)"
+        },
+        {
+          "id": "c",
+          "text": "TGFA = GFA × Number of Floors, assuming uniform floor area distribution"
+        },
+        {
+          "id": "d",
+          "text": "TGFA and GFA are synonymous terms used interchangeably in PD 1096, though context may vary"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Understanding that TGFA > GFA (because it adds back the excluded areas) is critical for infrastructure impact assessments and compliance checks, even though GFA is the metric used for FLAR compliance.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bc1ce5b6b059461256907e748b3dea0208c3a9ab3d0e44a586c6cc58b69b9e6c"
+    },
+    {
+      "question_id": "5fb65716-df8f-445e-8642-0477ae727c0d",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the distinguishing factor between TGFA and AMVB under the Philippine development controls framework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TGFA is measured in cubic meters; AMVB is measured in square meters, which reflects their different applications"
+        },
+        {
+          "id": "b",
+          "text": "TGFA = GFA + Non-GFA areas (sqm); AMVB = AMBF × BHL (cu.m) — they measure different quantities"
+        },
+        {
+          "id": "c",
+          "text": "TGFA and AMVB are the same quantity expressed in different units, leading to confusion in application"
+        },
+        {
+          "id": "d",
+          "text": "TGFA is for commercial buildings; AMVB applies only to residential buildings, ensuring compliance with specific zoning laws"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "A common trap is using AMBF × BHL to derive TGFA — this is wrong because the result is in cubic meters (volume), not square meters (area). TGFA comes from PSO × TLA via Table VII.1/guidelines, not from the volume formula.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:413dead70b35c8de979201779ee2aa295e3abbd92e0688421c318228fed24ec8"
+    },
+    {
+      "question_id": "5ba34576-aab2-4ea0-b229-fa17e0e71102",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which of the following areas is included in GFA under the Guidelines on Determining GFA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rooftop ACCU platforms and water tanks, which are typically excluded from GFA calculations due to their mechanical nature"
+        },
+        {
+          "id": "b",
+          "text": "Balconies with a floor area of 10.0 sqm or less per unit"
+        },
+        {
+          "id": "c",
+          "text": "Elevator shafts and stairwells in parking floors (counted once), as they are considered part of the building's core services"
+        },
+        {
+          "id": "d",
+          "text": "Uncovered swimming pools and court areas, generally excluded unless specified otherwise in local amendments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 10.0 sqm threshold for balconies is a key discriminator in GFA calculations — balconies at or below 10.0 sqm each count toward GFA; those exceeding 10.0 sqm are excluded.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0b223cf3a78fc9041587bb2f410034e6ce35ef2f3d03fa43091d2e062712edc9"
+    },
+    {
+      "question_id": "6e4835c0-3685-479a-af06-31da0e3103a5",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which of the following is EXCLUDED from the calculation of Gross Floor Area (GFA)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Covered parking areas provided to satisfy minimum parking requirements"
+        },
+        {
+          "id": "b",
+          "text": "All corridors, lobbies, and toilet areas within the building envelope, which are typically included in GFA calculations"
+        },
+        {
+          "id": "c",
+          "text": "Enclosed mezzanines within the building perimeter, which are counted as part of the GFA"
+        },
+        {
+          "id": "d",
+          "text": "All balconies, regardless of area, which are generally included unless specified otherwise"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The parking exclusion is a key policy that incentivizes adequate parking provision without penalizing the developer through reduced FLAR allowance.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5208a30e153403f84d08974f24d724a1f847d38395a043a8c99a6e061ed76d17"
+    },
+    {
+      "question_id": "72cfa8e5-2ab0-4a62-8870-9190f12a1030",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A local ordinance imposes a maximum FLAR of 4.0 on a 1,000 sqm lot. The architect proposes a design with a total GFA of 5,000 sqm. What is the regulatory status?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The design complies, as long as the building stays within BHL limits, which may vary based on local zoning laws."
+        },
+        {
+          "id": "b",
+          "text": "The design violates the code because maximum allowable GFA is 4,000 sqm (1,000 × 4.0)"
+        },
+        {
+          "id": "c",
+          "text": "The design complies because 5,000 sqm falls within typical commercial FLAR ranges, assuming additional allowances are granted."
+        },
+        {
+          "id": "d",
+          "text": "The design violates because GFA must include all parking spaces, which are often overlooked in calculations."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This tests the independent nature of FLAR and BHL — compliance with one does not guarantee compliance with the other. The local ordinance's FLAR of 4.0 is binding even if the national FLAR range allows higher values.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:72cbea585f5ca782f6139cafa451bd2a2cd457bfbe06518ede4c8d2358897ad4"
+    },
+    {
+      "question_id": "e12e2bed-7e56-4c36-b8ae-94776a5084d9",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the FLAR designation for Residential 1 (R-1) under Table VII.G.1 of the Guidelines on Building Bulk, and at what BHL is it associated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.00, at a 2-storey or 6.00 m BHL"
+        },
+        {
+          "id": "b",
+          "text": "1.50, at a 3-storey or 10.00 m BHL"
+        },
+        {
+          "id": "c",
+          "text": "2.00, at a 4-storey or 12.00 m BHL"
+        },
+        {
+          "id": "d",
+          "text": "1.30, at a 2-storey or 7.50 m BHL"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The FLAR and BHL are presented together in Table VII.G.1 as associated rights — achieving the full FLAR assumes compliance with the associated BHL.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a05580e4b70f369c9f98660bd57dce33a397a6cd3696151d116a76da1929ff14"
+    },
+    {
+      "question_id": "dbb66782-6a84-411c-890c-69cb51bc3a22",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A residential condominium floor has: 800 sqm of units, a 50 sqm lobby/corridor, a 200 sqm covered parking bay, and twenty balconies of 12 sqm each (one per unit). What is the GFA of this floor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,290 sqm"
+        },
+        {
+          "id": "b",
+          "text": "1,050 sqm"
+        },
+        {
+          "id": "c",
+          "text": "850 sqm"
+        },
+        {
+          "id": "d",
+          "text": "1,090 sqm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A (1,290) is the TGFA — forgetting to exclude parking and oversized balconies. Option B (1,050) includes the parking but excludes balconies. Option D (1,090) includes the parking. The 10.0 sqm balcony threshold is the critical discriminator.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:723649b30d3af25d6f186682991ec637fdf94f4c61cc04771d61548a4dff16be"
+    },
+    {
+      "question_id": "feef8d53-e59b-44e0-b5e9-1b32d1ca1813",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An architect designs a high-rise on a 2,000 sqm lot. PSO is 80% and FLAR is 10.0. The BHL for the zone is 60 storeys (180.00 m). If the footprint is held at full AMBF on every floor, how many full floors can be built by FLAR alone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "60 storeys"
+        },
+        {
+          "id": "b",
+          "text": "12 storeys"
+        },
+        {
+          "id": "c",
+          "text": "18 storeys"
+        },
+        {
+          "id": "d",
+          "text": "25 storeys"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This question tests the master formula chain: always compute both FLAR-driven floor count and BHL-driven floor count, then adopt the more restrictive. FLAR (10.0 × 2,000 = 20,000 sqm GFA budget) only supports 12 full floors at AMBF = 1,600 sqm.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3cc75176b22cdda7a41f720b76d214edcbadc99ced45b692c9186fc664d90cec"
+    },
+    {
+      "question_id": "1602ab82-7398-4bc1-a677-173991c7d770",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A one-storey building contains a convenience store and a barber shop (both Group E) with no fire separation. Under Sec. 703, which rule applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The most restrictive occupancy (Group E) governs the entire building, ensuring compliance with the highest safety standards applicable."
+        },
+        {
+          "id": "b",
+          "text": "Each portion may be treated under its own occupancy requirements because the building is one storey"
+        },
+        {
+          "id": "c",
+          "text": "The larger occupancy (convenience store) governs because it exceeds 10% of total area, which is a common threshold for determining primary use."
+        },
+        {
+          "id": "d",
+          "text": "The building must be reclassified as Group H because it serves the public, which is a misinterpretation of occupancy classification rules."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A applies the general rule — but Exception (a) overrides it for one-storey buildings. Options C and D introduce requirements not found in Sec. 703 for this scenario.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:578682a2540d2b607f8c604fa0bda943cbc3603bd5db359822c8022f2b904638"
+    },
+    {
+      "question_id": "7e6952b4-2a61-4ef9-bb4f-463446bb9080",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 806, what are the minimum floor areas and minimum least dimensions for rooms for human habitation, kitchens, and bathrooms/toilets?",
+      "options": [
+        {
+          "id": "lv-001-a",
+          "text": "Habitable: 6.00 sq.m / 2.00 m; Kitchen: 3.00 sq.m / 1.50 m; Bath: 1.20 sq.m / 0.90 m"
+        },
+        {
+          "id": "lv-001-b",
+          "text": "Habitable: 5.00 sq.m / 2.00 m; Kitchen: 2.50 sq.m / 1.20 m; Bath: 1.00 sq.m / 0.80 m"
+        },
+        {
+          "id": "lv-001-c",
+          "text": "Habitable: 6.00 sq.m / 2.50 m; Kitchen: 3.00 sq.m / 1.50 m; Bath: 1.50 sq.m / 1.00 m"
+        },
+        {
+          "id": "lv-001-d",
+          "text": "Habitable: 8.00 sq.m / 2.50 m; Kitchen: 4.00 sq.m / 2.00 m; Bath: 1.50 sq.m / 1.20 m"
+        }
+      ],
+      "correct_option_id": "lv-001-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The least dimension requirement prevents developers from creating long, narrow 'corridor rooms' that technically meet area minimums but are functionally useless. A 6.00 sq.m room that is 0.50 m × 12.00 m meets the area minimum but fails the 2.00 m least dimension requirement.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5047bed829dea7ec8b1e411440d3eb25dbd8f69703c56538eb37e5b3a4f89162"
+    },
+    {
+      "question_id": "4d4a0492-8dba-4185-942c-167bb8e7a1c6",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVI, what is the maximum aggregate area of plastic light-transmitting elements — including skylights, monitor panels, and sawtooth roof panels combined — permitted over any given floor area?",
+      "options": [
+        {
+          "id": "pl-002-a",
+          "text": "10% of the floor area served"
+        },
+        {
+          "id": "pl-002-b",
+          "text": "20% of the floor area served"
+        },
+        {
+          "id": "pl-002-c",
+          "text": "33.33% of the floor area served"
+        },
+        {
+          "id": "pl-002-d",
+          "text": "10.00 sq.m per element, with no aggregate cap"
+        }
+      ],
+      "correct_option_id": "pl-002-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The aggregate 20% cap is one of the most frequently tested numbers in Rule XVI. Designers must ensure total plastic roof glazing across all types does not exceed this shared limit.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.702597+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0942a44c38b41793531ebabfc1a1b34ef06efdc87a9d984b0eb4fc9f9377ddfc"
+    },
+    {
+      "question_id": "17dae0be-6844-4c16-9ec0-3f014b8e9d76",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XVII, Section 1701, what is the minimum steel gauge required for the walls and structure of a paint spray booth, and what is the maximum permitted floor area of the booth?",
+      "options": [
+        {
+          "id": "sm-001-a",
+          "text": "No. 18 U.S. gauge minimum; booth area ≤ 150 sq.m AND ≤ 10% of the basic permitted area for the building's Occupancy Group"
+        },
+        {
+          "id": "sm-001-b",
+          "text": "No. 20 U.S. gauge minimum; booth area ≤ 200 sq.m, which allows for larger installations but may not meet all safety standards"
+        },
+        {
+          "id": "sm-001-c",
+          "text": "No. 18 U.S. gauge minimum; booth area ≤ 150 sq.m only, ensuring compliance with standard safety regulations"
+        },
+        {
+          "id": "sm-001-d",
+          "text": "No. 16 U.S. gauge minimum; booth area ≤ 80 sq.m, which is more restrictive but may enhance structural integrity"
+        }
+      ],
+      "correct_option_id": "sm-001-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The double-cap for booth area is one of the most tested provisions in Rule XVII. The 150 sq.m hard cap and the 10% of basic area requirement work together — the smaller value always governs.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.870876+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fa42cee98601825f99939f81c350234f4191ba50a7bd7963993be77299877e68"
+    },
+    {
+      "question_id": "fa55ad46-1bce-4878-9efe-e2b5a662013e",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A cinema multiplex is being designed with a projection room serving two projectors simultaneously. Per PD 1096, Rule XII, Section 1214, what is the minimum required floor area for this projection room?",
+      "options": [
+        {
+          "id": "sp-002-a",
+          "text": "7.00 m²"
+        },
+        {
+          "id": "sp-002-b",
+          "text": "8.75 m²"
+        },
+        {
+          "id": "sp-002-c",
+          "text": "10.50 m²"
+        },
+        {
+          "id": "sp-002-d",
+          "text": "14.00 m²"
+        }
+      ],
+      "correct_option_id": "sp-002-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1214 applies to ribbon-type film wider than 22 mm and to electric arc projection equipment. The 7 + 3.50 per machine formula is a frequently examined computation. The room must also have 1-hour fire-resistive construction throughout, incombustible walls and ceiling, and a minimum ceiling height of 2.40 m.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7ab06f33e0ad8e1a313aa7176d6d3df4d8aecbe44b09417237207fe3e48addfd"
+    },
+    {
+      "question_id": "ff0f6f83-1be6-4945-ae74-1f95bfb46595",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A performing arts center in Manila has a stage with a floor area of 240 m² measured within the stage walls. Per PD 1096, Rule XII, Section 1213.1, what is the minimum required total area of stage ventilators?",
+      "options": [
+        {
+          "id": "sp-001-a",
+          "text": "8.00 m²"
+        },
+        {
+          "id": "sp-001-b",
+          "text": "12.00 m²"
+        },
+        {
+          "id": "sp-001-c",
+          "text": "15.00 m²"
+        },
+        {
+          "id": "sp-001-d",
+          "text": "20.00 m²"
+        }
+      ],
+      "correct_option_id": "sp-001-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 5% rule is the most frequently tested provision in Section 1213. Any stage must have metal or incombustible ventilators positioned near the center above the highest part of the working stage, with total area ≥ 5% of the stage floor. The ventilator also serves as a smoke exhaust during fire events. The stage floor measurement is taken within the stage walls, not the overall building footprint.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:787cff97428eb3f23ed690afa2314cf396b6af40740963f3370e7918d4897cee"
+    },
+    {
+      "question_id": "9c4e19c9-9083-4047-ab55-b199389d6294",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A contractor encloses an existing open terrace to create a new room — adding gross floor area but not height. Under IRR Sec. 106, this is classified as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alteration"
+        },
+        {
+          "id": "B",
+          "text": "Addition"
+        },
+        {
+          "id": "C",
+          "text": "Renovation"
+        },
+        {
+          "id": "D",
+          "text": "Conversion"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area. The 'and/or' means increasing EITHER height OR floor area — not necessarily both — constitutes an Addition. Enclosing a terrace increases gross floor area; therefore the work is an Addition, requiring an addition permit. This is a common exam trap where candidates assume both dimensions must change.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:11.788686+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b7c8214c7e0e0aef329904d923ef88615323add2b47207cb26414d3c925e67b"
+    },
+    {
+      "question_id": "5345b765-a74f-480a-8624-451ee3c45b59",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 803, USA (Unpaved Surface Area) is specifically described in the IRR as what type of open space?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The 'permitted open space' — any outdoor area not covered by the building structure including driveways and paved courts"
+        },
+        {
+          "id": "b",
+          "text": "The 'true open space' — the portion that must remain unpaved with exposed soil and planting for ecological function"
+        },
+        {
+          "id": "c",
+          "text": "The 'required open space' — the minimum front setback distance mandated by the local zoning ordinance"
+        },
+        {
+          "id": "d",
+          "text": "The 'total open space' — all lot area not occupied by the enclosed building footprint including paved open areas"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 803.3.b.ii explicitly describes USA as the 'true open space' — the portion of TLA that must remain unpaved with exposed soil and planting. It serves stormwater percolation, microclimate cooling, and groundwater recharge. Option A describes ISA (driveways, paved courts). Option C describes setback requirements, not USA. Option D describes TOSL (= ISA + USA), not USA alone.",
+      "explanation": "USA = 'true open space' per the IRR. TOSL = ISA + USA = all non-building open space (hard + soft). USA is the soft/permeable portion only. The distinction matters: a developer cannot satisfy the USA minimum with concrete pavers — it must be actual unpaved soil and planting.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 803.3.b.ii",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1828ea27a26ef24e5772710b534b0c805e24212509551396e791aa670837892c"
+    },
+    {
+      "question_id": "1f97a853-d952-42d4-86dd-a23a1761c007",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Table VIII.1 distinguishes zone types by firewall status for PSO and area metrics. Which other two tables must an architect consult when both lot type (corner vs. inside) and Table VIII.1 give different PSO values, and what rule governs the conflict?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Table VIII.1 and the local zoning ordinance; the local ordinance always supersedes the national standard, ensuring compliance with local regulations"
+        },
+        {
+          "id": "b",
+          "text": "Table VII.1 (lot-type PSO) and Table VIII.G.6 (lot-type TOSL); Rule VII Sec. 704.4.a — use the most restrictive applicable value"
+        },
+        {
+          "id": "c",
+          "text": "Table VII.1 (lot-type PSO) and Table VIII.1; the larger PSO value from either table may be selected by the owner, allowing flexibility in design"
+        },
+        {
+          "id": "d",
+          "text": "Table VIII.G.6 (lot-type TOSL) and Table IX.1 (structural setbacks); Table IX.1 governs when setbacks are involved, providing guidance on structural placement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1 provides firewall-based PSO, ISA, USA, MACA, TOSL. Table VII.1 provides lot-type-based PSO (inside/corner/through). Table VIII.G.6 provides lot-type-based TOSL. When these tables yield different values, Rule VII Sec. 704.4.a mandates using the most restrictive (most stringent) applicable value for each metric. Option A is incorrect — local ordinances must conform to national minimums. Option C reverses the rule — the more permissive value cannot be selected. Option D cites a non-existent Table IX.1.",
+      "explanation": "Three-table procedure: (1) Get firewall-based PSO, ISA, USA, MACA from Table VIII.1. (2) Get lot-type PSO from Table VII.1. (3) Get lot-type TOSL from Table VIII.G.6. (4) Apply Rule VII Sec. 704.4.a: use the most restrictive value for each metric. Table VIII.1 does NOT distinguish inside vs. corner lots — that is the role of Table VII.1.",
+      "code_citation": "PD 1096, Rule VII, Sec. 704.4.a; Table VII.1; Table VIII.G.6",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e61ef3bd35700eef6a2c19db719dfb010093e55c46932bcb64019912b40ebfc7"
+    },
+    {
+      "question_id": "eb5da72f-d4e1-41bd-98e9-f511fdc3ff96",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "From Table VIII.1, which zoning classification has the LOWEST maximum PSO (50%) and the HIGHEST minimum USA (30%) among all zone types listed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Basic R-2 without firewall — the baseline residential zone has the most restrictive PSO and most open space, ensuring a balance between built and natural environments"
+        },
+        {
+          "id": "b",
+          "text": "Com-3 without firewall — commercial zones have the lowest footprint to preserve public open space, promoting community interaction and environmental sustainability"
+        },
+        {
+          "id": "c",
+          "text": "Institutional without firewall — schools, hospitals, and civic facilities require the most open space per Table VIII.1"
+        },
+        {
+          "id": "d",
+          "text": "Ind-1 without firewall — industrial zones require the largest setbacks and most unpaved area for safety, minimizing environmental impact and ensuring operational efficiency"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1: Institutional without firewall = PSO 50% (lowest), USA 30% (highest), MACA 70% (lowest). This reflects the policy that schools, hospitals, and civic buildings require ample grounds for outdoor activities, emergency assembly, and ecological function. Basic R-2 (55% PSO, 15% USA) has a higher footprint allowance. Com-3 without firewall has PSO=80%. Ind-1 without firewall has PSO=70%.",
+      "explanation": "Institutional (without firewall): PSO=50%, ISA=20%, USA=30%, TOSL=50%, MACA=70% — the most open-space-generous zone. Com-3 (with firewall) has the highest PSO at 90%. Understanding the extremes of Table VIII.1 (Institutional = most open; Com-3 with firewall = most building) anchors all the intermediate values.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59c2e3bdf67cb47ffd5916065ffa24d1dfe8fb961245528d8fc3a0a76a15c36c"
+    },
+    {
+      "question_id": "bd77090f-266c-4186-a1c4-3c7933f51bfd",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, Rule VIII, Sec. 803, what does MACA (Maximum Allowable Construction Area) represent, and how is it calculated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MACA equals PSO alone — it is another name for the building footprint percentage, excluding open paved areas"
+        },
+        {
+          "id": "b",
+          "text": "MACA equals PSO plus ISA — the total of building footprint percentage and impervious paved open area percentage"
+        },
+        {
+          "id": "c",
+          "text": "MACA equals TOSL minus USA — subtracting the unpaved softscape from total open space to find hard coverage"
+        },
+        {
+          "id": "d",
+          "text": "MACA equals TLA minus TOSL — total lot area less total open space, expressed as a square meter figure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "MACA = PSO + ISA: the sum of the building footprint percentage (PSO) and the impervious paved open area percentage (ISA). It represents all hard/impervious coverage on the ground — building plus paving. Option A confuses MACA with PSO. Option C is algebraically equivalent but expressed incorrectly (TOSL − USA = ISA, not MACA). Option D mixes percentage and area units and arrives at MACA incorrectly.",
+      "explanation": "Four governing equations: PSO + TOSL = 100%; TOSL = ISA + USA; MACA = PSO + ISA; TLA% = MACA + USA. MACA caps all hard/impervious coverage (building + paving) combined. For Basic R-2 without firewall: PSO=55%, ISA=30%, MACA=85% — the building plus all paving cannot exceed 85% of the lot.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 803.3–803.4, Table VIII.1",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c1c9542b54aaabcfad8a46b6b3375eca0134fd84b107a4e5e4c140b575def23"
+    },
+    {
+      "question_id": "60da3a6e-8834-46a7-bce7-f1632a67d2e1",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A 500 sq.m. Basic R-2 lot without firewall is to be developed to maximum allowed limits per Table VIII.1. What is the AMBF (Allowable Maximum Building Footprint) in square meters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "225 sq.m. — 45% of 500 sq.m., applying the TOSL percentage as the building footprint"
+        },
+        {
+          "id": "b",
+          "text": "275 sq.m. — 55% of 500 sq.m., applying the PSO for Basic R-2 without firewall"
+        },
+        {
+          "id": "c",
+          "text": "300 sq.m. — 60% of 500 sq.m., applying the PSO for Basic R-2 with firewall"
+        },
+        {
+          "id": "d",
+          "text": "425 sq.m. — 85% of 500 sq.m., applying the MACA percentage as the building footprint"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "AMBF = TLA x PSO. For Basic R-2 without firewall (Table VIII.1): PSO = 55%. AMBF = 500 x 0.55 = 275 sq.m. Option A confuses TOSL (45%) with PSO. Option C uses the firewall PSO (60%) for a project without firewall. Option D confuses MACA (85%) with PSO — MACA covers both building and paving, not just the building footprint.",
+      "explanation": "AMBF = TLA x PSO. PSO is a percentage; AMBF is the actual area in sq.m. Basic R-2 without firewall: PSO=55%, so AMBF = 500 x 0.55 = 275 sq.m. The common trap is using MACA (85%) instead of PSO (55%) to compute AMBF. MACA governs total hard coverage (building + paving), not the building footprint alone.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 803.3; Table VIII.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d2df070f628ef8721ef8465b03ae417c96511dd4b0f42c39c5812c18cf861350"
+    },
+    {
+      "question_id": "a0c0c271-48b9-48c5-b7b3-1d48fcc14f30",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Table VIII.1 of PD 1096 shows that adding a firewall to a Basic R-2 project increases the maximum PSO from 55% to 60%. What is the corresponding effect on the minimum USA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum USA decreases from 15% to 10% — more building coverage means less required unpaved area"
+        },
+        {
+          "id": "b",
+          "text": "Minimum USA remains at 15% — the firewall only affects PSO, not the unpaved area requirement"
+        },
+        {
+          "id": "c",
+          "text": "Minimum USA increases from 15% to 20% — greater coverage requires more compensatory open space"
+        },
+        {
+          "id": "d",
+          "text": "Minimum USA is eliminated entirely — firewall structures have no open space requirement under Table VIII.1"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1 for Basic R-2: without firewall — PSO=55%, ISA=30%, USA=15%, TOSL=45%, MACA=85%. With firewall — PSO=60%, ISA=30%, USA=10%, TOSL=40%, MACA=90%. Adding a firewall increases PSO by 5% (55%→60%) and decreases minimum USA by 5% (15%→10%). The TOSL also drops from 45% to 40%. Option B is incorrect — the firewall does reduce USA. Options C and D are incorrect per Table VIII.1.",
+      "explanation": "Firewall allowance: greater PSO justified because shared boundary with fire separation reduces the need for open-space buffers on that side. Basic R-2 without firewall: PSO=55%, USA=15%. Basic R-2 with firewall: PSO=60%, USA=10%. The arithmetic identity still holds: PSO+TOSL=100%; TOSL=ISA+USA.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e470b91f66b16233cdc9060db5e7c7849fcd0c7643550f1c85ee4903b765e94"
+    },
+    {
+      "question_id": "6e00969b-7d4b-41c6-9169-ffea5146d25f",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An architect's plan shows a Basic R-2 lot (no firewall) where the building footprint is 55%, paved driveways occupy 35%, and planted area is 10%. Per Table VIII.1, is this layout compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant — PSO (55%) meets the maximum, and TOSL (45%) meets the minimum open space requirement"
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant — the ISA (35%) exceeds the 30% maximum ISA for Basic R-2 without firewall per Table VIII.1"
+        },
+        {
+          "id": "c",
+          "text": "Non-compliant — the USA (10%) is below the 15% minimum USA for Basic R-2 without firewall per Table VIII.1"
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant on two counts: ISA exceeds 30% maximum AND USA is below 15% minimum per Table VIII.1"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1 for Basic R-2 without firewall: max PSO=55%, max ISA=30%, min USA=15%. This layout has ISA=35% (exceeds 30% max) AND USA=10% (below 15% min). Both ISA and USA independently violate their respective limits. PSO compliance alone (55%) is not sufficient. Option A ignores the ISA cap and USA floor. Option B or C each catch only one violation.",
+      "explanation": "Three independently enforced limits exist: max PSO, max ISA, and min USA. Meeting one or two does not ensure compliance. Basic R-2 without firewall: PSO max 55%, ISA max 30%, USA min 15%. With ISA=35% and USA=10%, both ISA and USA fail. The MACA check (55+35=90%) also exceeds 85%, confirming the dual failure.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aefb36bfe42a72789b1a0f99d49e353910775cff9f889c75ce006a8c36ecee67"
+    },
+    {
+      "question_id": "34fe3e91-a66c-4909-93db-5faa18928a23",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A 1,000 sq.m. Com-2 lot without firewall is maximally developed. Per Table VIII.1 (PSO=75%, ISA=20%, USA=5%), what are the correct computed areas for AMBF, maximum ISA area, and minimum USA area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AMBF=700 sq.m., ISA max=250 sq.m., USA min=50 sq.m. — applying 70%, 25%, 5% to 1,000 sq.m."
+        },
+        {
+          "id": "b",
+          "text": "AMBF=750 sq.m., ISA max=200 sq.m., USA min=50 sq.m. — applying 75%, 20%, 5% to 1,000 sq.m."
+        },
+        {
+          "id": "c",
+          "text": "AMBF=750 sq.m., ISA max=250 sq.m., USA min=25 sq.m. — mixing Com-2 and Com-3 values across metrics"
+        },
+        {
+          "id": "d",
+          "text": "AMBF=800 sq.m., ISA max=100 sq.m., USA min=100 sq.m. — applying the institutional zone values by mistake"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Com-2 without firewall (Table VIII.1): PSO=75%, ISA=20%, USA=5%. For TLA=1,000 sq.m.: AMBF = 1,000 x 0.75 = 750 sq.m.; ISA max = 1,000 x 0.20 = 200 sq.m.; USA min = 1,000 x 0.05 = 50 sq.m. Arithmetic check: 750+200+50=1,000 sq.m. ✓. Option A applies wrong percentages (70/25/5). Option C mixes values from different zones. Option D applies institutional values.",
+      "explanation": "Full calculation chain for any lot: (1) AMBF = TLA x PSO; (2) ISA max area = TLA x ISA%; (3) USA min area = TLA x USA%. Self-check: AMBF + ISA + USA must equal TLA. For Com-2 without firewall: 750+200+50=1,000 ✓. MACA = PSO+ISA = 75+20 = 95%; MACA area = 950 sq.m.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e67e4dfb4dfda90038e44daa694f7c14157ed6c38c99d847cee2b67a7f668a5"
+    },
+    {
+      "question_id": "47f70b98-6a57-4d34-9f01-961ee9159ba4",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A design proposal for a Basic R-3 lot with firewall shows PSO=70%, ISA=20%, and USA=10%. Per Table VIII.1, what is the MACA for this zone, and does this proposal comply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MACA=85%; non-compliant — PSO+ISA=90% exceeds the 85% MACA for Basic R-3 with firewall"
+        },
+        {
+          "id": "b",
+          "text": "MACA=90%; compliant — PSO(70%)+ISA(20%)=90% equals the MACA limit, and USA(10%) meets the 10% minimum"
+        },
+        {
+          "id": "c",
+          "text": "MACA=90%; non-compliant — the PSO of 70% is below the minimum required footprint for Basic R-3 with firewall"
+        },
+        {
+          "id": "d",
+          "text": "MACA=95%; compliant — Basic R-3 with firewall allows up to 95% total hard coverage per Table VIII.1"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1 for Basic R-3 with firewall: PSO=70%, ISA=20%, USA=10%, TOSL=30%, MACA=90%. The proposal has PSO=70% (at max), ISA=20% (at max), USA=10% (at minimum). MACA = 70+20 = 90% (at limit). All three metrics exactly at their respective limits — fully compliant. Option A uses the wrong MACA (85% belongs to Basic R-3 without firewall). Option C inverts the concept (PSO is a maximum, not a minimum). Option D uses a non-existent 95% MACA for this zone.",
+      "explanation": "Basic R-3 with firewall: PSO max=70%, ISA max=20%, USA min=10%, MACA=90%. Proposal values match these exactly — compliant. MACA self-check: PSO+ISA=70+20=90% ✓. TOSL check: ISA+USA=20+10=30% ✓. PSO+TOSL=70+30=100% ✓. All four governing equations satisfied.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:272ffbdc78117be56c88e43973ccc194ac85712874a201eb255c43bea0aa6058"
+    },
+    {
+      "question_id": "1471043e-5fa1-4a96-ae33-16a981dd9aa2",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An architect calculates PSO for a Basic R-2 project and states: 'The PSO is 275 square meters.' A colleague responds: 'That is the AMBF, not the PSO.' Who is correct, and what is the proper statement of the PSO?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect is correct — PSO can be expressed in sq.m. for lots smaller than 500 sq.m. under Rule VIII conventions, which allows for flexibility in measurement units"
+        },
+        {
+          "id": "b",
+          "text": "The colleague is correct — PSO is always expressed as a percentage; 275 sq.m. is the AMBF derived from PSO (55%) applied to a 500 sq.m. lot"
+        },
+        {
+          "id": "c",
+          "text": "Both are correct — PSO and AMBF are interchangeable terms for the same metric in Rule VIII, which allows for dual expression"
+        },
+        {
+          "id": "d",
+          "text": "The colleague is partially correct — PSO can be in sq.m. for residential zones but must be in percent for commercial zones, reflecting different regulatory requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PSO is always a percentage (e.g., 55%). AMBF is the area in sq.m. derived from applying PSO to TLA: AMBF = TLA x PSO = 500 x 0.55 = 275 sq.m. Calling 275 sq.m. the 'PSO' is a unit error — PSO = 55%, AMBF = 275 sq.m. Options A, C, and D all permit PSO to be expressed as an area, which violates the definitions in Sec. 803. This is Trap 4 from the area metrics article.",
+      "explanation": "PSO = percentage (e.g., 55%). AMBF = area in sq.m. = TLA x PSO. Mnemonic: 'MACA is more than just the building; AMBF is the actual building footprint.' Mixing units (calling 275 sq.m. the PSO) is a conceptual error that triggers wrong calculations in multi-step problems. Always state PSO as a percent and AMBF as an area.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 803.3",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.683737+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:31fe4927a002855db462ead6694c78a20ebffd8d6fffdb84a87ef58c8ce513b1"
+    },
+    {
+      "question_id": "aa59d7dc-e5d6-40f3-ba88-a15a7e55b432",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, Rule VIII, Sec. 803, what does MACA (Maximum Allowable Construction Area) represent, and how is it calculated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MACA equals PSO alone — it is another name for the building footprint percentage, excluding open paved areas"
+        },
+        {
+          "id": "b",
+          "text": "MACA equals PSO plus ISA — the total of building footprint percentage and impervious paved open area percentage"
+        },
+        {
+          "id": "c",
+          "text": "MACA equals TOSL minus USA — subtracting the unpaved softscape from total open space to find hard coverage"
+        },
+        {
+          "id": "d",
+          "text": "MACA equals TLA minus TOSL — total lot area less total open space, expressed as a square meter figure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "MACA = PSO + ISA: the sum of the building footprint percentage (PSO) and the impervious paved open area percentage (ISA). It represents all hard/impervious coverage on the ground — building plus paving. Option A confuses MACA with PSO. Option C is algebraically equivalent but expressed incorrectly (TOSL − USA = ISA, not MACA). Option D mixes percentage and area units and arrives at MACA incorrectly.",
+      "explanation": "Four governing equations: PSO + TOSL = 100%; TOSL = ISA + USA; MACA = PSO + ISA; TLA% = MACA + USA. MACA caps all hard/impervious coverage (building + paving) combined. For Basic R-2 without firewall: PSO=55%, ISA=30%, MACA=85% — the building plus all paving cannot exceed 85% of the lot.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 803.3–803.4, Table VIII.1",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f50a0ea25a0f0b55fd14d9e15b44a13b88f3045a6e3d57765e5462058c86384f"
+    },
+    {
+      "question_id": "7862044d-ec3f-4930-a490-523b0f93a752",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A 500 sq.m. Basic R-2 lot without firewall is to be developed to maximum allowed limits per Table VIII.1. What is the AMBF (Allowable Maximum Building Footprint) in square meters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "225 sq.m. — 45% of 500 sq.m., applying the TOSL percentage as the building footprint"
+        },
+        {
+          "id": "b",
+          "text": "275 sq.m. — 55% of 500 sq.m., applying the PSO for Basic R-2 without firewall"
+        },
+        {
+          "id": "c",
+          "text": "300 sq.m. — 60% of 500 sq.m., applying the PSO for Basic R-2 with firewall"
+        },
+        {
+          "id": "d",
+          "text": "425 sq.m. — 85% of 500 sq.m., applying the MACA percentage as the building footprint"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "AMBF = TLA x PSO. For Basic R-2 without firewall (Table VIII.1): PSO = 55%. AMBF = 500 x 0.55 = 275 sq.m. Option A confuses TOSL (45%) with PSO. Option C uses the firewall PSO (60%) for a project without firewall. Option D confuses MACA (85%) with PSO — MACA covers both building and paving, not just the building footprint.",
+      "explanation": "AMBF = TLA x PSO. PSO is a percentage; AMBF is the actual area in sq.m. Basic R-2 without firewall: PSO=55%, so AMBF = 500 x 0.55 = 275 sq.m. The common trap is using MACA (85%) instead of PSO (55%) to compute AMBF. MACA governs total hard coverage (building + paving), not the building footprint alone.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 803.3; Table VIII.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed9f86db218a855d4a5a9a63c06fee4c9648d23c7b27362ef96ba018009eddbe"
+    },
+    {
+      "question_id": "c2cdbadb-5a0d-4141-888e-7475b7a2980d",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Table VIII.1 of PD 1096 shows that adding a firewall to a Basic R-2 project increases the maximum PSO from 55% to 60%. What is the corresponding effect on the minimum USA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum USA decreases from 15% to 10% — more building coverage means less required unpaved area"
+        },
+        {
+          "id": "b",
+          "text": "Minimum USA remains at 15% — the firewall only affects PSO, not the unpaved area requirement"
+        },
+        {
+          "id": "c",
+          "text": "Minimum USA increases from 15% to 20% — greater coverage requires more compensatory open space"
+        },
+        {
+          "id": "d",
+          "text": "Minimum USA is eliminated entirely — firewall structures have no open space requirement under Table VIII.1"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1 for Basic R-2: without firewall — PSO=55%, ISA=30%, USA=15%, TOSL=45%, MACA=85%. With firewall — PSO=60%, ISA=30%, USA=10%, TOSL=40%, MACA=90%. Adding a firewall increases PSO by 5% (55%→60%) and decreases minimum USA by 5% (15%→10%). The TOSL also drops from 45% to 40%. Option B is incorrect — the firewall does reduce USA. Options C and D are incorrect per Table VIII.1.",
+      "explanation": "Firewall allowance: greater PSO justified because shared boundary with fire separation reduces the need for open-space buffers on that side. Basic R-2 without firewall: PSO=55%, USA=15%. Basic R-2 with firewall: PSO=60%, USA=10%. The arithmetic identity still holds: PSO+TOSL=100%; TOSL=ISA+USA.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:246208c51db37f429f910bc99eb612ec06f06ba419f72e162fde115ec9162a89"
+    },
+    {
+      "question_id": "180be8fd-306c-4a1e-aef2-dec0c0b9c9cb",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "From Table VIII.1, which zoning classification has the LOWEST maximum PSO (50%) and the HIGHEST minimum USA (30%) among all zone types listed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Basic R-2 without firewall — the baseline residential zone has the most restrictive PSO and most open space"
+        },
+        {
+          "id": "b",
+          "text": "Com-3 without firewall — commercial zones have the lowest footprint to preserve public open space, though they may allow higher density in specific cases"
+        },
+        {
+          "id": "c",
+          "text": "Institutional without firewall — schools, hospitals, and civic facilities require the most open space per Table VIII.1"
+        },
+        {
+          "id": "d",
+          "text": "Ind-1 without firewall — industrial zones require the largest setbacks and most unpaved area for safety, which may vary based on specific industrial activities"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1: Institutional without firewall = PSO 50% (lowest), USA 30% (highest), MACA 70% (lowest). This reflects the policy that schools, hospitals, and civic buildings require ample grounds for outdoor activities, emergency assembly, and ecological function. Basic R-2 (55% PSO, 15% USA) has a higher footprint allowance. Com-3 without firewall has PSO=80%. Ind-1 without firewall has PSO=70%.",
+      "explanation": "Institutional (without firewall): PSO=50%, ISA=20%, USA=30%, TOSL=50%, MACA=70% — the most open-space-generous zone. Com-3 (with firewall) has the highest PSO at 90%. Understanding the extremes of Table VIII.1 (Institutional = most open; Com-3 with firewall = most building) anchors all the intermediate values.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4cb33fba1cda58d7b0029bc6492157433217775ab622139a5c67dadf4bb9d327"
+    },
+    {
+      "question_id": "ca55d979-71b3-4182-b754-d861b0086c0c",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An architect's plan shows a Basic R-2 lot (no firewall) where the building footprint is 55%, paved driveways occupy 35%, and planted area is 10%. Per Table VIII.1, is this layout compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant — PSO (55%) meets the maximum, and TOSL (45%) meets the minimum open space requirement"
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant — the ISA (35%) exceeds the 30% maximum ISA for Basic R-2 without firewall per Table VIII.1"
+        },
+        {
+          "id": "c",
+          "text": "Non-compliant — the USA (10%) is below the 15% minimum USA for Basic R-2 without firewall per Table VIII.1"
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant on two counts: ISA exceeds 30% maximum AND USA is below 15% minimum per Table VIII.1"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1 for Basic R-2 without firewall: max PSO=55%, max ISA=30%, min USA=15%. This layout has ISA=35% (exceeds 30% max) AND USA=10% (below 15% min). Both ISA and USA independently violate their respective limits. PSO compliance alone (55%) is not sufficient. Option A ignores the ISA cap and USA floor. Option B or C each catch only one violation.",
+      "explanation": "Three independently enforced limits exist: max PSO, max ISA, and min USA. Meeting one or two does not ensure compliance. Basic R-2 without firewall: PSO max 55%, ISA max 30%, USA min 15%. With ISA=35% and USA=10%, both ISA and USA fail. The MACA check (55+35=90%) also exceeds 85%, confirming the dual failure.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d7171ee90e7317c7654ac056abbcca394070796bc6989e9567f258a808ba5969"
+    },
+    {
+      "question_id": "43ca72b0-b5b7-4d63-87e6-bf74c265a1ca",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Table VIII.1 distinguishes zone types by firewall status for PSO and area metrics. Which other two tables must an architect consult when both lot type (corner vs. inside) and Table VIII.1 give different PSO values, and what rule governs the conflict?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Table VIII.1 and the local zoning ordinance; the local ordinance always supersedes the national standard unless otherwise stated"
+        },
+        {
+          "id": "b",
+          "text": "Table VII.1 (lot-type PSO) and Table VIII.G.6 (lot-type TOSL); Rule VII Sec. 704.4.a — use the most restrictive applicable value"
+        },
+        {
+          "id": "c",
+          "text": "Table VII.1 (lot-type PSO) and Table VIII.1; the larger PSO value from either table may be selected by the owner, subject to local authority approval"
+        },
+        {
+          "id": "d",
+          "text": "Table VIII.G.6 (lot-type TOSL) and Table IX.1 (structural setbacks); Table IX.1 governs when setbacks are involved, especially in mixed-use developments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1 provides firewall-based PSO, ISA, USA, MACA, TOSL. Table VII.1 provides lot-type-based PSO (inside/corner/through). Table VIII.G.6 provides lot-type-based TOSL. When these tables yield different values, Rule VII Sec. 704.4.a mandates using the most restrictive (most stringent) applicable value for each metric. Option A is incorrect — local ordinances must conform to national minimums. Option C reverses the rule — the more permissive value cannot be selected. Option D cites a non-existent Table IX.1.",
+      "explanation": "Three-table procedure: (1) Get firewall-based PSO, ISA, USA, MACA from Table VIII.1. (2) Get lot-type PSO from Table VII.1. (3) Get lot-type TOSL from Table VIII.G.6. (4) Apply Rule VII Sec. 704.4.a: use the most restrictive value for each metric. Table VIII.1 does NOT distinguish inside vs. corner lots — that is the role of Table VII.1.",
+      "code_citation": "PD 1096, Rule VII, Sec. 704.4.a; Table VII.1; Table VIII.G.6",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1d9996ab9d507c8733bd2fd94f6ce9b559cad99379de15ccdf3ae8cc7ce9e17c"
+    },
+    {
+      "question_id": "6a8bd9c9-7cdb-4ff7-98f5-99c0b07cafe2",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A 1,000 sq.m. Com-2 lot without firewall is maximally developed. Per Table VIII.1 (PSO=75%, ISA=20%, USA=5%), what are the correct computed areas for AMBF, maximum ISA area, and minimum USA area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AMBF=700 sq.m., ISA max=250 sq.m., USA min=50 sq.m. — applying 70%, 25%, 5% to 1,000 sq.m."
+        },
+        {
+          "id": "b",
+          "text": "AMBF=750 sq.m., ISA max=200 sq.m., USA min=50 sq.m. — applying 75%, 20%, 5% to 1,000 sq.m."
+        },
+        {
+          "id": "c",
+          "text": "AMBF=750 sq.m., ISA max=250 sq.m., USA min=25 sq.m. — mixing Com-2 and Com-3 values across metrics"
+        },
+        {
+          "id": "d",
+          "text": "AMBF=800 sq.m., ISA max=100 sq.m., USA min=100 sq.m. — applying the institutional zone values by mistake"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Com-2 without firewall (Table VIII.1): PSO=75%, ISA=20%, USA=5%. For TLA=1,000 sq.m.: AMBF = 1,000 x 0.75 = 750 sq.m.; ISA max = 1,000 x 0.20 = 200 sq.m.; USA min = 1,000 x 0.05 = 50 sq.m. Arithmetic check: 750+200+50=1,000 sq.m. ✓. Option A applies wrong percentages (70/25/5). Option C mixes values from different zones. Option D applies institutional values.",
+      "explanation": "Full calculation chain for any lot: (1) AMBF = TLA x PSO; (2) ISA max area = TLA x ISA%; (3) USA min area = TLA x USA%. Self-check: AMBF + ISA + USA must equal TLA. For Com-2 without firewall: 750+200+50=1,000 ✓. MACA = PSO+ISA = 75+20 = 95%; MACA area = 950 sq.m.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca7152aba0758c605f1b0f3801c15061a7a414afa70f6db2e09042b8cc24dafd"
+    },
+    {
+      "question_id": "41ce9976-9bd8-49cc-bc5f-0396e2a63f54",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A design proposal for a Basic R-3 lot with firewall shows PSO=70%, ISA=20%, and USA=10%. Per Table VIII.1, what is the MACA for this zone, and does this proposal comply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MACA=85%; non-compliant — PSO+ISA=90% exceeds the 85% MACA for Basic R-3 with firewall"
+        },
+        {
+          "id": "b",
+          "text": "MACA=90%; compliant — PSO(70%)+ISA(20%)=90% equals the MACA limit, and USA(10%) meets the 10% minimum"
+        },
+        {
+          "id": "c",
+          "text": "MACA=90%; non-compliant — the PSO of 70% is below the minimum required footprint for Basic R-3 with firewall"
+        },
+        {
+          "id": "d",
+          "text": "MACA=95%; compliant — Basic R-3 with firewall allows up to 95% total hard coverage per Table VIII.1"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table VIII.1 for Basic R-3 with firewall: PSO=70%, ISA=20%, USA=10%, TOSL=30%, MACA=90%. The proposal has PSO=70% (at max), ISA=20% (at max), USA=10% (at minimum). MACA = 70+20 = 90% (at limit). All three metrics exactly at their respective limits — fully compliant. Option A uses the wrong MACA (85% belongs to Basic R-3 without firewall). Option C inverts the concept (PSO is a maximum, not a minimum). Option D uses a non-existent 95% MACA for this zone.",
+      "explanation": "Basic R-3 with firewall: PSO max=70%, ISA max=20%, USA min=10%, MACA=90%. Proposal values match these exactly — compliant. MACA self-check: PSO+ISA=70+20=90% ✓. TOSL check: ISA+USA=20+10=30% ✓. PSO+TOSL=70+30=100% ✓. All four governing equations satisfied.",
+      "code_citation": "PD 1096, Rule VIII, Table VIII.1",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c4da2416a6f9037fc56b82f5bd9feb2046e9b012ecd4bfa2aaa2c818e0041b96"
+    },
+    {
+      "question_id": "20822728-5893-475c-a9e2-44fa7e2f739c",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 803, USA (Unpaved Surface Area) is specifically described in the IRR as what type of open space?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The 'permitted open space' — any outdoor area not covered by the building structure including driveways and paved courts"
+        },
+        {
+          "id": "b",
+          "text": "The 'true open space' — the portion that must remain unpaved with exposed soil and planting for ecological function"
+        },
+        {
+          "id": "c",
+          "text": "The 'required open space' — the minimum front setback distance mandated by the local zoning ordinance"
+        },
+        {
+          "id": "d",
+          "text": "The 'total open space' — all lot area not occupied by the enclosed building footprint including paved open areas"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 803.3.b.ii explicitly describes USA as the 'true open space' — the portion of TLA that must remain unpaved with exposed soil and planting. It serves stormwater percolation, microclimate cooling, and groundwater recharge. Option A describes ISA (driveways, paved courts). Option C describes setback requirements, not USA. Option D describes TOSL (= ISA + USA), not USA alone.",
+      "explanation": "USA = 'true open space' per the IRR. TOSL = ISA + USA = all non-building open space (hard + soft). USA is the soft/permeable portion only. The distinction matters: a developer cannot satisfy the USA minimum with concrete pavers — it must be actual unpaved soil and planting.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 803.3.b.ii",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be1baa765a72d12a2beffa1d5618e53fb0acc5211bd5e27b9d5dbf14fc11d47a"
+    },
+    {
+      "question_id": "7b781f0e-e3ff-4d05-b500-7a2c77f714f6",
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An architect calculates PSO for a Basic R-2 project and states: 'The PSO is 275 square meters.' A colleague responds: 'That is the AMBF, not the PSO.' Who is correct, and what is the proper statement of the PSO?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect is correct — PSO can be expressed in sq.m. for lots smaller than 500 sq.m. under Rule VIII conventions, which is a common practice"
+        },
+        {
+          "id": "b",
+          "text": "The colleague is correct — PSO is always expressed as a percentage; 275 sq.m. is the AMBF derived from PSO (55%) applied to a 500 sq.m. lot"
+        },
+        {
+          "id": "c",
+          "text": "Both are correct — PSO and AMBF are interchangeable terms for the same metric in Rule VIII, which is a misunderstanding"
+        },
+        {
+          "id": "d",
+          "text": "The colleague is partially correct — PSO can be in sq.m. for residential zones but must be in percent for commercial zones, which is a nuanced interpretation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PSO is always a percentage (e.g., 55%). AMBF is the area in sq.m. derived from applying PSO to TLA: AMBF = TLA x PSO = 500 x 0.55 = 275 sq.m. Calling 275 sq.m. the 'PSO' is a unit error — PSO = 55%, AMBF = 275 sq.m. Options A, C, and D all permit PSO to be expressed as an area, which violates the definitions in Sec. 803. This is Trap 4 from the area metrics article.",
+      "explanation": "PSO = percentage (e.g., 55%). AMBF = area in sq.m. = TLA x PSO. Mnemonic: 'MACA is more than just the building; AMBF is the actual building footprint.' Mixing units (calling 275 sq.m. the PSO) is a conceptual error that triggers wrong calculations in multi-step problems. Always state PSO as a percent and AMBF as an area.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 803.3",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.4721+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d37e8c3097b373a93d404eb311bca053d82b909d56ac63e6c58644edb2ebb1d"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "attempted_at": "2026-05-03T07:53:54.749Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "6e9a4321-c9db-4720-ab19-288e7f28be48",
+  "slug": "overview-building-materials",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:050d8c32ef2b2cdcd6e9a7cb67fff37fb8042bc0e5f60960bc9cd08728e32a5e",
+  "original_hash": "sha256:050d8c32ef2b2cdcd6e9a7cb67fff37fb8042bc0e5f60960bc9cd08728e32a5e",
+  "candidate_hash": "sha256:4e5c826accfeef4b553da8e40467d419e51b0aa28b99eba1fc5d7eec19bb1152",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

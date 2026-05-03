@@ -1,0 +1,38 @@
+{
+  "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+  "slug": "lea-plan-003-05-core-concept",
+  "generated_at": "2026-05-03T10:55:26.049Z",
+  "old_hash": "sha256:5fd22aa8f88c7eb73de57ab971b9ee951a87a2457a511c69827ddc03654b32f0",
+  "new_hash": "sha256:33fbde957082caaa81062e9eeb702210eb7e1344317dac62c614716b4d4773db",
+  "original_hash": "sha256:5fd22aa8f88c7eb73de57ab971b9ee951a87a2457a511c69827ddc03654b32f0",
+  "normalized_hash": "sha256:580c32583bba4f3da1ca9ed19f90c7991da7858daf3da41d34a23c81eab32a1d",
+  "candidate_hash": "sha256:33fbde957082caaa81062e9eeb702210eb7e1344317dac62c614716b4d4773db",
+  "changed": true,
+  "changed_line_count": 40,
+  "inserted_line_count": 11,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 3,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
+  "changed_text_summary": {
+    "changed": 40,
+    "inserted": 11,
+    "deleted": 0,
+    "original_line_count": 55,
+    "candidate_line_count": 66
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [],
+    "changed_count": 0
+  },
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
+}

@@ -1,0 +1,758 @@
+{
+  "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:28a91ef9c0154870e9e694d9b6b70567159de13893f3ee88f0025b25442a9e58",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "6666284f-668d-4c9e-8bb7-4f339747bf82",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A developer is preparing a carbon-neutral commercial district in Quezon City consisting of six interconnected buildings (total 50,000 m² gross floor area). Estimated annual consumption: 2,000 MWh electricity + 300 MWh thermal equivleant. District-wide renewable strategy under evaluation: (1) Individual building PV systems (30–50 kW each, six buildings), (2) Centralized 200 kW rooftop solar farm on common facility + thermal storage hub, (3) Hybrid district approach combining building-sclea PV (150 kW total) + 50 kW solar thermal + 50 kW geothermal heat pumps serving chilled water loop. All buildings connected via micro-grid with net metering capacity. Analysis should address: code compliance (PGC minimum 10%), technical feasibility, RA 9513 incentive optimization, and lifecycle cost efficiency (analysis horizon 25 years, real discount rate 3%, electricity tariff escalation 2.5%/year). What strategy yields optimal net present value (NPV) while satisfying Philippine Green Building Code compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Strategy 1: Individual PV systems; capital USD 360,000–480,000; achieves 15% renewable (exceeds 10% PGC minimum); simplified maintenance; decentralized risk; NPV positive at USD 180,000–240,000 over 25 years"
+        },
+        {
+          "id": "b",
+          "text": "B) Strategy 2: Centralized solar farm; capital USD 240,000–300,000; achieves 12% renewable; economies of scale in installation/monitoring; concentrated grid interconnection study; NPV positive at USD 320,000–400,000 over 25 years"
+        },
+        {
+          "id": "c",
+          "text": "C) Strategy 3: Hybrid district system; capital USD 420,000–520,000; achieves 20% renewable + 40–50% thermal displacement; integrated micro-grid + storage provides baseload smoothing and demand response capability; NPV positive at USD 450,000–580,000 over 25 years (accounting for district-level operational synergies)"
+        },
+        {
+          "id": "d",
+          "text": "D) None of above strategies viable; capital costs exceed ROI threshold; grid electricity + renewable certificates from third-party suppliers more cost-effective than on-site generation"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Strategy 1 achieves 15% renewable (exceeds minimum) but NPV underperforms Strategy 3 by USD 240,000–340,000 due to: (a) missed thermal recovery synergies (no solar thermal or geothermal coordination), (b) distributed O&M cost penalty (USD 45,000–60,000/year versus USD 25,000–30,000 centralized), (c) no demand response capability across buildings, (d) individual inverters/controllers less efficient than district-level power conversion, (e) economies of scale lost in procurement.",
+        "b": "Strategy 2 (centralized solar farm) achieves highest capital efficiency (lowest cost/kW: USD 1,200–1,400/kW) but NPV intermediary due to: (a) achieves only 12% renewable (barely meets PGC minimum, no safety margin), (b) ignores thermal load entirely (300 MWh thermal demand unaddressed), (c) centralized PV interconnection study complex for 200 kW capacity (may require voltage regulation upgrades), (d) no geothermal cooling synergies with building chilled-water systems, (e) NPV USD 360,000 approximately, USD 90,000–220,000 below Strategy 3.",
+        "d": "Third-party renewable certificates approach (avoiding on-site generation) fails lifecycle economics: (a) renewable energy certificate prices typically USD 20–40/MWh (150 MWh annual need = USD 3,000–6,000/year recurring cost over 25 years = USD 75,000–150,000 total cost); (b) does NOT provide resilience against grid outages (critical for commercial district with tenants expecting reliability); (c) on-site generation payback 10–12 years; certificate approach provides no payback (pure operational expense); (d) RA 9513 incentives (duty-free imports, tax holidays) unavailable when outsourcing renewable generation.",
+        "correct": "Strategy 3 (hybrid district) yields highest lifecycle NPV (USD 450,000–580,000 over 25 years) when accounting for: (a) 150 kW PV generates 180,000–210,000 kWh/year (USD 19,800–23,100/year savings at escalating tariff); (b) 50 kW solar thermal system (600 m² collectors) + 400 kWh thermal storage hub displaces 40–50% of 300 MWh thermal demand (USD 13,200–16,500/year heating savings equivalent); (c) 50 kW geothermal heat pump system serving district chilled-water loop achieves 4.5 COP (versus 3.8 building-level air-source systems), saving USD 6,000–8,000/year in cooling costs across six buildings; (d) Integrated micro-grid enables demand response (load shifting during peak tariff hours 17:00–21:00) generating USD 3,000–5,000/year arbitrage value not available to individual building systems; (e) District-level O&M consolidation reduces cost (USD 25,000–30,000/year versus USD 45,000–60,000 distributed); (f) RA 9513 duty-free importation applies to aggregate equipment (>USD 200,000 equipment value), reducing effective capital cost 20–25%; (g) 25-year NPV = USD 478,000 (midpoint) significantly exceeds individual building strategies due to thermal synergies and micro-grid optimization.",
+        "takeaway": "District-level renewable integration (Strategy 3) with 150 kW PV + solar thermal + geothermal heat pumps achieves 20% renewable compliance, USD 450,000–580,000 lifecycle NPV, and 15–25% superior economics versus individual building systems through thermal synergies, micro-grid demand response, consolidated O&M, and full RA 9513 incentive capture over 25-year analysis horizon."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Green Building Code (2016) district-level compliance guidance. RA 9513 (Renewable Energy Act of 2008). Article LEA-UTIL-007-04: Hybrid System Design Considerations and Implementation Roadmap sections. Meralco (2024) tariff escalation scenarios.",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6fedc67a839e73993f2ab8b3e59d78d74c95b04d65573cf1a26eba2d039e9c83"
+    },
+    {
+      "question_id": "1f7428cb-97ef-4e1e-ab1b-f974b15b39f0",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A government research institution in Laguna (30 MW campus microgrid) is mandated to achieve carbon neutrality by 2030. Current baseline: 40,000 MWh/year electricity (54% coal-sourced) + 5,000 MWh thermal (87% LPG-fueled). Renewable strategy proposed: (1) Install 8 MW rooftop + ground-mount solar PV across campus (estimated 9,600 MWh/year generation at 4.2 kWh/m²/day), (2) Implement 2 MW geothermal heat pump system serving campus chilled-water network (displaces 3,500 MWh/year equivleant LPG heating), (3) Deploy 500 kWh battery storage for peak shaving (avoid demand charges during 17:00–21:00 peak tariff window), (4) Procure 2,000 MWh/year renewable energy certificates from wind farms in Ilocos (Gap-filler to achieve 100% renewable). Strategy capital cost: USD 9.2M (8 MW solar), USD 8.5M (geothermal), USD 3.8M (battery), USD 2.4M (grid modernization) = USD 23.9M total. Annual O&M: USD 400,000–500,000. Financing: 10-year government concessional loan at 4% interest; grant component USD 6M (RA 9513 exemptions valued). What is the levelized cost of energy (LCOE) under this decarbonization pathway?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) LCOE: USD 0.065–0.075/kWh (all-in); payback period 12–14 years; attractive compared to grid tariff (USD 0.11/kWh) if accounting for carbon externality value"
+        },
+        {
+          "id": "b",
+          "text": "B) LCOE: USD 0.085–0.095/kWh (all-in); payback period 15–18 years; marginally viable if carbon tax or SRECs valued at USD 20–30/tonne CO₂"
+        },
+        {
+          "id": "c",
+          "text": "C) LCOE: USD 0.105–0.125/kWh (all-in); payback period 18–22 years; not economically justified without external carbon finance or subsidy continuation"
+        },
+        {
+          "id": "d",
+          "text": "D) LCOE: USD 0.140–0.160/kWh (all-in); capital-intensive strategy; pure economics unviable; requires permanent government subsidy or carbon market mechanisms"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "USD 0.085–0.095/kWh LCOE suggests higher capital costs or lower generation assumptions. This would result if: (a) grant component insufficient or RA 9513 duty-free claim fails, raising net capital to USD 23.9M, (b) actual PV generation underperforms estimate (system soiling, shading, or inefficiency), (c) geothermal COP underestimates thermal load mismatch. At this LCOE level, economics break-even with grid tariff only if carbon externalities valued; 15–18 year payback acceptable but not compelling for government investment.",
+        "c": "USD 0.105–0.125/kWh LCOE implies significant project overruns or poor resource characterization. Possible causes: (a) 8 MW solar undersized for 40,000 MWh target (should be 10 MW capacity), (b) geothermal system capital cost doubled due to boring/drilling inefficiency, (c) grid modernization costs balloon, (d) O&M escalation >3%/year. At this LCOE, project is not economically viable unless external carbon finance (carbon tax credit, UNEP Clean Technology Fund, Green Climate Fund grant) reduces effective capital cost.",
+        "d": "USD 0.140–0.160/kWh LCOE represents capital cost runaway—likely reflects project mismanagement, scope creep, or severe underestimation of grid upgrade costs. Not credible for Philippines where similar 5–10 MW campus solar projects achieve USD 1,200–1,500/kW installed cost (USD 0.065–0.085/kWh LCOE range).",
+        "correct": "LCOE calculation (25-year horizon, 3% discount rate): Numerator: [(Capital Cost USD 23.9M − Grant USD 6M = USD 17.9M net capital) + (O&M USD 450,000/year × 25 years discounted = USD 8.8M present value)] = USD 26.7M total lifecycle cost. Denominator: (8 MW PV 9,600 MWh/year + geothermal 3,500 MWh thermal equivalent + battery peak-shaving benefit estimated USD 50,000/year equivalent 454 MWh avoided peak demand) × 25 years × discount factor ≈ 405,000 MWh total generation. LCOE = USD 26.7M ÷ 405,000 MWh = USD 0.066/kWh (midpoint USD 0.065–0.075/kWh range). This is 40% lower than grid tariff (USD 0.11/kWh), yielding net savings of USD 1.8M–2.2M over 25 years. Carbon benefit: 40,000 MWh baseline coal generation (600 kg CO₂/MWh) = 24,000 tonne CO₂ annually; new renewable system eliminates this, generating USD 480,000/year carbon value at USD 20/tonne CO₂ (voluntary carbon market). Total financial benefit including carbon externality: USD 2.3M–2.8M net present value.",
+        "takeaway": "Government campus decarbonization strategy with 8 MW solar + 2 MW geothermal + battery storage achieves LCOE USD 0.065–0.075/kWh (40% lower than USD 0.11/kWh grid tariff), generating USD 1.8M–2.2M net economic benefit plus USD 480,000/year carbon externality value (at USD 20/tonne CO₂) over 25-year analysis horizon, making it fiscally compelling with RA 9513 duty-free importation incentives."
+      },
+      "explanation": null,
+      "code_citation": "RA 9513 (Renewable Energy Act of 2008) grant and incentive provisions. Department of Energy (2023) Solar Resource Mapping. IRENA (2022) Southeast Asia Renewable Energy Cost Review. Carbon pricing: UNFCCC Nationally Determined Contributions (NDC) Philippine target 2.71% GHG reduction by 2030.",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e51b78fab428368af2ca75906e6bd7b9c6efbefb15fb5322d65372b8244457a"
+    },
+    {
+      "question_id": "8f98493f-d92a-4b2c-83f3-867353e95a24",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A 15 kW solar PV installation in Metro Manila generates 18,000 kWh/year. After 5 years of operation, performance monitoring shows 4.2% annual energy reduction. What is the most likely cause and recommended corrective action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Module degradation (0.5%/year typical) accounts for 2.5% loss; remaining 1.7% suggests soiling/shading—bi-monthly cleaning recommended"
+        },
+        {
+          "id": "b",
+          "text": "B) Inverter efficiency loss (1% annually); system requires inverter replacement and recalibration to restore optimal performance"
+        },
+        {
+          "id": "c",
+          "text": "C) String-level failures requiring complete array rewiring and module replacement, which involves significant downtime and cost"
+        },
+        {
+          "id": "d",
+          "text": "D) Ambient temperature rise in Metro Manila reducing module efficiency by 4.2% annually, necessitating the installation of cooling systems"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Inverter efficiency losses average 1–2% annually but cumulative 5-year loss would be 5–10%, not 4.2%. Inverter replacement typically occurs at 10–12 year mark, not 5 years.",
+        "c": "String-level failures would cause localized performance reduction (single string loss ~10–15%), not gradual 4.2% annual reduction across entire array.",
+        "d": "Ambient temperature effects are seasonal, not cumulative annually. Higher temperatures reduce efficiency by ~0.45%/°C above 25°C reference, but this is captured in seasonal monitoring, not progressive annual loss.",
+        "correct": "Standard module degradation: 0.5%/year × 5 years = 2.5% cumulative. Remaining 1.7% performance loss attributable to soiling (dust, salt spray, pollen). Tropical climate requires bi-monthly collector cleaning (dust, salt, pollen reduction 5–10% performance gain per cleaning). Annual O&M cost USD 150–300/year (0.1–0.2% of installed capital) recovers most performance loss.",
+        "takeaway": "4.2% annual PV performance reduction in tropical climate typically reflects 0.5%/year module degradation plus 1.7% soiling loss; bi-monthly cleaning and standard O&M restore 5–10% generation, validating system viability within expected performance envelope."
+      },
+      "explanation": null,
+      "code_citation": "Article LEA-UTIL-007-04: Maintenance and Monitoring—Solar PV O&M section.",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:45f1031d4d09573e395a2d9b883131063fbf0c7b4def4e9950540af6ac3ed23d"
+    },
+    {
+      "question_id": "78facbb9-7d08-4eba-a4ff-b9aab66bef2e",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A luxury resort in Palawan faces intermittent grid supply and committed carbon neutrality goals. Four design scenarios under evaluation: (A) 100 kW rooftop PV only; (B) 100 kW PV + 50 kWh battery storage; (C) 100 kW PV + 50 kW diesel generator + 20 kWh battery; (D) 50 kW PV + 30 kW geothermal heat pump + 10 kW grid-connected renewable certificates. Resort annual consumption: 350,000 kWh electricity + 50,000 kWh thermal equivleant. Peak load: 80 kW. Grid outage frequency: 5–8 events/year, average 3 hours/event. What is the optimal scenario balancing resilience, carbon footprint reduction, and capital efficiency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Scenario A: Capital USD 120,000; no resilience benefit; limited grid independence; payback 8–10 years, which may not meet carbon goals"
+        },
+        {
+          "id": "b",
+          "text": "B) Scenario B: Capital USD 180,000–220,000; 2–3 hour autonomy covers 50% outage events; payback 12–15 years; high battery degradation risk, affecting long-term viability"
+        },
+        {
+          "id": "c",
+          "text": "C) Scenario C: Capital USD 210,000–260,000; hybrid control manages PV-battery-diesel sequencing; 80% outage event mitigation; payback 10–12 years; strong ROI on resilience value"
+        },
+        {
+          "id": "d",
+          "text": "D) Scenario D: Capital USD 140,000; geothermal provides baseload thermal; renewable certificates offset grid imports; payback 9–11 years; carbon footprint reduction without on-site generation risk, though limited by grid dependency"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Scenario A (PV-only) fails to address intermittent grid supply—primary resort operational challenge. No resilience benefit during 5–8 annual outage events; guest experience degradation and revenue loss exceed capital savings. Not viable for premium hospitality environment.",
+        "b": "Scenario B over-invests in battery (50 kWh): (a) covers only 2–3 hour autonomy, insufficient for full outage mitigation (average 3 hours matches autonomy boundary with no safety margin), (b) battery cost USD 40,000–50,000 (40% of total capex) for limited resilience gain, (c) LiFePO₄ degradation at 50–80% daily depth-of-discharge + high cycling rate in tropical climate (35–38°C ambient) reduces battery useful life to 8–10 years versus 10–15 year system target, (d) Payback 12–15 years approaches battery replacement timeline; net economics deteriorate.",
+        "d": "Scenario D emphasizes thermal efficiency (geothermal) and carbon offset (renewable certificates) but neglects grid resilience—critical vulnerability for Palawan resort. Renewable certificates (USD 10–15/MWh) provide carbon accounting benefit but do NOT provide operational resilience during outages. 50 kW PV insufficient for 350,000 kWh annual demand (14% generation ratio).",
+        "correct": "Scenario C optimizes resilience-economics tradeoff: (a) 100 kW PV generates 120,000–140,000 kWh/year (USD 13,000–15,000 annual savings), (b) 50 kWh battery + hybrid controller provides 2.5–3 hour autonomy covering 80% of outage events (5–8 events × 3 hrs = 15–24 event-hours/year; battery mitigates ~18–20 event-hours), (c) 50 kW diesel generator handles remaining outage scenarios + peak load growth margin, (d) Total capital USD 210,000–260,000 yields lifecycle ROI when factoring avoided revenue loss during outages (resort loses USD 5,000–10,000 per multi-hour blackout due to guest dissatisfaction + business disruption). Hybrid resilience value: USD 10,000–15,000/year, reducing effective payback to 10–12 years.",
+        "takeaway": "For resorts with intermittent grid supply, hybrid PV-battery-diesel Scenario C balances resilience (mitigates 80% outage events via 50 kWh battery + 50 kW diesel generator), carbon reduction (100 kW PV = 40% renewable), and lifecycle economics (payback 10–12 years including avoided outage revenue loss)."
+      },
+      "explanation": null,
+      "code_citation": "Article LEA-UTIL-007-04: Hybrid System Design and Implementation Roadmap sections. Philippine Environmental Quality Standards (2016).",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:84001c9bc39fef83e38940cca0696228f12eb290d0ed04650563fda0a5e5d831"
+    },
+    {
+      "question_id": "0c32d43a-35b6-4fd7-88ea-76eb61cd7f94",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A data center in Metro Manila with 150 TR cooling demand is evaluating geothermal heat pump versus air-source heat pump systems. The geothermal system requires 4,000 m² ground-loop land area and USD 12,000/TR capital cost. Air-source achieves COP 3.5; geothermal achieves COP 4.8. Annual cooling hours: 5,500. Electricity cost: USD 0.11/kWh. What is the annual energy cost difference between systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Geothermal saves USD 8,000–12,000 annually"
+        },
+        {
+          "id": "b",
+          "text": "B) Geothermal saves USD 22,000–28,000 annually"
+        },
+        {
+          "id": "c",
+          "text": "C) Geothermal saves USD 35,000–45,000 annually"
+        },
+        {
+          "id": "d",
+          "text": "D) Air-source is superior; geothermal not economically justified for this load"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Underestimates savings by assuming insufficient load hours or tariff rates. Data centers operate 5,500+ annual cooling hours; savings accumulate more rapidly than conservative estimate.",
+        "c": "Overstates annual savings by assuming lower COP or higher tariff. Realistic savings range USD 22,000–28,000 annually with stated parameters.",
+        "d": "Air-source systems are economically superior for this load at current capital costs. Geothermal payback period (~18.5 years) exceeds typical equipment life (15 years), rendering it marginally viable only if tariffs increase or ground loop costs decrease.",
+        "correct": "Air-source annual energy: (150 TR × 3.516 kW/TR) ÷ 3.5 COP × 5,500 hrs × USD 0.11/kWh = USD 119,000 cooling cost. Geothermal annual energy: (150 TR × 3.516 kW/TR) ÷ 4.8 COP × 5,500 hrs × USD 0.11/kWh = USD 86,500 cooling cost. Annual savings: USD 32,500. Over 15-year system life: USD 487,500 total savings. Geothermal capital premium (USD 1.8M vs. USD 1.2M air-source = USD 600k additional) recovers in ~18.5 years, making it viable for data centers with long operational horizons and continuous cooling demand.",
+        "takeaway": "Geothermal heat pump systems in data centers achieve COP 4.8 versus 3.5 air-source, generating USD 22,000–28,000 annual cooling cost savings at 150 TR load; however, capital cost premium (USD 600k) requires 18+ year payback, limiting economic justification unless operational horizon or tariff increases."
+      },
+      "explanation": null,
+      "code_citation": "Lawrence Berkeley National Laboratory (2014). Ground Source Heat Pump Systems in Hot Climates: Performance and Economics. LBNL Report 180234.",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e47673aa19e338705d8616375b4b946571ef4d178568a24870b5e1dc0c7d4f89"
+    },
+    {
+      "question_id": "7773622a-5d1e-40e4-ba5b-509787c66a53",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A 200-room hotel in Boracay implements a 150 m² solar thermal system paired with a 200 kW diesel boiler. Peak hot water demand: 500 L/day at 50°C. Annual fuel consumption baseline: 50 tonnes diesel/month. Solar thermal system capital cost: USD 8,500; diesel boiler efficiency: 85%. What is the expected payback period under current conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 2–3 years with 60–70% fuel displacement and USD 3,000–4,500 annual savings"
+        },
+        {
+          "id": "b",
+          "text": "B) 4–5 years with 50–60% fuel displacement and USD 1,700–2,300 annual savings"
+        },
+        {
+          "id": "c",
+          "text": "C) 7–9 years with 50–80% fuel displacement and USD 880–1,100 annual savings"
+        },
+        {
+          "id": "d",
+          "text": "D) 10–12 years with 30–40% fuel displacement and USD 700–900 annual savings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2–3 year payback implies 60–70% displacement (8–9 tonnes diesel reduction), exceeding realistic SWH performance unless system oversized. 150 m² is correctly sized for 200-room hotel (0.75 m²/room standard); claims of 60–70% displacement are optimistic.",
+        "b": "4–5 year payback with 50–60% displacement (~5 tonnes diesel) is achievable but underestimates real-world performance in Boracay (high solar resource). This represents conservative estimate rather than expected outcome.",
+        "d": "10–12 year payback with 30–40% displacement underestimates solar thermal system performance in tropical Philippines. This assumes suboptimal system sizing or poor solar resource; Boracay exceeds Philippine average irradiance.",
+        "correct": "A 150 m² SWH system serving 200-room hotel with consistent demand achieves 50–80% annual fuel displacement (~8,000–10,000 kWh thermal equivalent at USD 0.11/kWh equivalent electricity tariff). Annual fuel displacement: 4–5 tonnes diesel (~USD 880–1,100 savings). Capital cost USD 8,500 yields 7–9 year payback period. Degradation rate 0.5%/year means system maintains 96.5% efficiency at year 7, justifying payback calculation. System lifetime 25–30 years ensures net present value positive over lifecycle.",
+        "takeaway": "Solar thermal systems in Philippine hotels achieve 50–80% fuel displacement with 7–9 year payback periods, justified by 25–30 year system lifetime and positive lifecycle economics under RA 9513 duty-free importation incentives."
+      },
+      "explanation": null,
+      "code_citation": "Article LEA-UTIL-007-04: Life Cycle Cost and Payback Analysis—Solar Thermal Payback section.",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:90b04bf2a17caf5cac4feaf225115ed89239db83383db7ee3226a81ed85d3271"
+    },
+    {
+      "question_id": "e3078693-ac7a-40b6-88eb-ccd255cadc09",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A fast-growing commercial district in Makati (15 buildings, 200,000 m² GFA) faces dual pressures: (1) meet Philippine Green Building Code voluntary 10% renewable energy guideline (PGBC 2016), and (2) maintain competitiveness against peer developments by achieving 25–30% renewable energy to support ESG investment mandates. District energy consultant proposes phased implementation over 5 years: (Phase 1) Install 2 MW rooftop PV across eight existing buildings (Year 1–2), (Phase 2) Add 1.5 MW PV + 300 kWh battery storage on three newer buildings + implement 500 kW solar thermal hub (Year 2–3), (Phase 3) Develop 1 MW ground-mount solar + 1.5 MW rooftop PV on future development sites + integrate district geothermal loop serving five buildings (Year 3–5). Phased capital expenditure: Year 1–2: USD 2.4M (Phase 1), Year 2–3: USD 2.8M (Phase 2), Year 3–5: USD 4.1M (Phase 3). Total capital over 5 years: USD 9.3M. District baseline consumption: 45,000 MWh/year (growing 3%/year). Estimated renewable generation (steady-state, post-Phase 3): 6,500 MWh/year electricity + 1,800 MWh thermal equivleant. What lifecycle financial metric best supports Phase 3 geothermal integration decision-making, and what key risk factors require monitoring?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Internal rate of return (IRR) 7–8% signals marginal acceptability; geothermal addition (Phase 3) contributes lowest incremental ROI due to capital intensity (USD 4.1M for 1.5 MW capacity) and long payback (18–20 years); recommend deferring geothermal Phase 3 until tariff increases or technology costs decline"
+        },
+        {
+          "id": "b",
+          "text": "B) Net present value (NPV) USD 2.8M–3.5M at 5% discount rate (district development hurdle rate) indicates strong project viability; phased approach reduces financing burden and allows tariff escalation capture; Phase 3 geothermal provides strategic optionality for future cooling demand growth and resilience enhancement; execute as planned"
+        },
+        {
+          "id": "c",
+          "text": "C) Profitability index (PI) 1.15–1.25 (NPV/Capital Cost) suggests marginal project quality; recommend splitting Phase 3 into geothermal deferral + accelerated ground-mount PV (lower cost/kW, faster payback)"
+        },
+        {
+          "id": "d",
+          "text": "D) Levelized cost of energy (LCOE) USD 0.095–0.110/kWh (all-in 5-year phased rollout) slightly exceeds current grid tariff (USD 0.11/kWh); carbon externality credit (USD 15–20/tonne CO₂) required to justify Phase 3 geothermal expansion; recommend Phase 1–2 only unless carbon pricing implemented"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "IRR (7–8%) undercounts phased project value because: (a) IRR methodology assumes reinvestment of interim cash flows at 7–8%, below realistic discount rate for government-backed institutional debt (4–5%), understating true project return, (b) IRR does not capture time-value-of-money advantage of early-phase high-margin electricity generation (PV Phase 1–2 achieves 12–14% implicit IRR; geothermal Phase 3 achieves 5–6% IRR due to capital intensity), (c) geothermal Phase 3 IRR alone (~5–6%) appears marginal, but when integrated with district cooling system optimization (peak shaving + demand response value), incremental IRR improves to 7–8%, justifying integration despite higher-than-solar capital intensity. Blanket recommendation to defer Phase 3 is suboptimal because it sacrifices downstream tariff escalation benefits (critical for long-lived geothermal equipment with 25–30 year lifespan).",
+        "c": "Profitability Index (PI) 1.15–1.25 is actually healthy (PI > 1.0 indicates NPV-positive projects); recommendation to split Phase 3 confuses index interpretation. PI measures value creation per dollar deployed (USD 1.15–1.25 value per USD 1.00 capital = 15–25% value creation margin). Phase 3 PI may be lower than Phase 1 (PI 1.35–1.45) due to capital intensity, but this is expected for geothermal systems with longer payback horizons. Deferral of geothermal would reduce eventual PI further (due to delayed tariff escalation capture and larger initial deployment cost). Phased execution as planned is financially optimal.",
+        "d": "LCOE USD 0.095–0.110/kWh assessment overestimates costs by ignoring phased tariff escalation. True levelized cost in Year 5 (when Phase 3 completes) is USD 0.085–0.095/kWh when blended with tariff escalation to ~USD 0.127/kWh (2.5% annual growth applied to 2024 baseline). Carbon pricing (USD 15–20/tonne CO₂) is beneficial but NOT required; economics are attractive on electricity value alone. Phase 1–3 execution as planned is justified without external carbon finance.",
+        "correct": "NPV-based decision framework is superior for multi-phase district renewable projects because: (a) NPV captures time-value of money and phased capital deployment, (b) 5-year implementation horizon allows tariff escalation capture (assumed 2.5%/year = 13% cumulative tariff increase by end Phase 3), benefiting later phases disproportionately, (c) phased approach reduces initial financing burden (Phase 1: USD 2.4M year 1–2; Phase 2: USD 2.8M year 2–3; Phase 3: USD 4.1M year 3–5), enabling better cash management for district developer, (d) geothermal Phase 3 (USD 4.1M capital, ~1.5 MW electrical + 1,200 kWh thermal equivalent from 500 kW solar thermal) generates USD 1.2M–1.5M NPV increment when accounting for: (i) COP 4.2–4.8 cooling advantage versus building-level air-source (COP 3.5), (ii) district chilled-water baseload smoothing (reduced peak demand charges), (iii) thermal storage capability enabling demand response (USD 20,000–30,000/year arbitrage value in Meralco peak tariff window 17:00–21:00), (iv) future cooling load growth (3%/year × 200,000 m² = 6,000 MWh additional year 5), justifying geothermal capacity addition. Total project NPV (Phase 1–3) approximately USD 3.2M at 5% discount rate (District developer hurdle rate for long-lived assets). Phase 3 deferral sacrifices future tariff escalation benefits (critical value driver for renewables) and reduces strategic optionality for cooling demand growth.",
+        "takeaway": "Phased district renewable expansion (Phase 1: 2 MW PV; Phase 2: 1.5 MW PV + battery; Phase 3: 1 MW PV + 1.5 MW geothermal) achieves NPV USD 2.8M–3.5M and 10.2% renewable penetration (exceeding 10% GBC minimum, supporting 25–30% ESG trajectory); Phase 3 geothermal integration strategically justified despite 18–20 year payback due to district cooling synergies (peak shaving, demand response, thermal storage), future load growth optionality, and tariff escalation capture over 25-year system lifetime."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Green Building Code (2016) ESG disclosure guidance. Meralco (2024) tariff Schedule USC-A + escalation scenarios. RA 9513 (Renewable Energy Act of 2008) phased project incentive stacking provisions. Lawrence Berkeley National Laboratory (2014) district-level geothermal economics.",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e90b2b90abd8a9ef7bdee5f359b08d3687e254d9de52830a1af6cc19d2208152"
+    },
+    {
+      "question_id": "4cf29e1b-fe44-4a86-b8de-2604ceb50dbc",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A commercial office building in Manila requires 30% annual energy reduction to comply with Philippine Green Building Code. Current consumption: 150,000 kWh/year. The design strategy prioritizes demand-side efficiency (target 20% reduction) before renewable sizing. After efficiency measures reduce load to 120,000 kWh/year, what solar PV system size and expected payback period satisfies Green Building Code minimum renewable energy requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 10 kW system generating 12,000 kWh/year; payback 6–7 years; achieves 10% renewable contribution"
+        },
+        {
+          "id": "b",
+          "text": "B) 20 kW system generating 24,000 kWh/year; payback 8–10 years; achieves 20% renewable contribution"
+        },
+        {
+          "id": "c",
+          "text": "C) 30 kW system generating 36,000 kWh/year; payback 9–11 years; achieves 30% renewable contribution"
+        },
+        {
+          "id": "d",
+          "text": "D) 40 kW system generating 48,000 kWh/year; payback 10–12 years; achieves 40% renewable contribution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10 kW system achieves exactly 10% renewal target (12,000 kWh) but leaves no safety margin. Undersizing increases risk of non-compliance if soiling or shading exceeds estimates. Standard practice recommends 15–20% oversizing.",
+        "c": "30 kW system achieves 30% renewable (exceeding 10% requirement by 3×) with disproportionate capital cost USD 36,000–45,000; payback extends to 9–11 years, reducing ROI attractiveness. Unnecessary after demand-side efficiency optimization.",
+        "d": "40 kW system generates 48,000 kWh/year (40% of residual demand) with capital cost exceeding USD 48,000 and payback >10 years. Economics deteriorate rapidly beyond 2× Green Building Code minimum. Not recommended unless facility plans future electrification of transportation or thermal loads.",
+        "correct": "Green Building Code mandates 10% renewable for commercial buildings. Post-efficiency residual demand: 120,000 kWh/year. Target: 12,000 kWh/year renewable minimum (10% × 120,000). A 20 kW system in Metro Manila generates 24,000 kWh/year (4.0–5.0 kWh/m²/day × 365 days ÷ 0.82 efficiency), exceeding minimum by factor of 2.0. Capital cost: USD 24,000–30,000 (USD 1,200–1,500/kW); annual savings USD 2,640 (at USD 0.11/kWh); payback 8–10 years. Optional battery or hybrid sizing adds cost without necessary justification post-efficiency optimization.",
+        "takeaway": "After demand-side efficiency reduces load 20%, a 20 kW solar PV system generates 24,000 kWh/year (20% renewable contribution, exceeding 10% GBC minimum) with 8–10 year payback, optimizing capital deployment while satisfying regulatory compliance."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Green Building Code (2016). Criteria and Standards for Building Greening. DOE Wind and Solar Policy Framework (2022).",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6e05b0f0e61208c7848de7645c595e706b0a7abde8ee5e9dbd1b3f680be28296"
+    },
+    {
+      "question_id": "2ae5639a-b45a-4f18-971f-4d4877ecadf8",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A rural agricultural facility in Mindanao is designed as a hybrid solar-diesel system with a 10 kW PV array and 5 kW diesel generator. Based on typical hybrid ratios (2–4 kW PV per 1 kW generator), what is the expected annual diesel displacement and fuel cost savings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 10–15% diesel displacement; USD 500–1,000 annual savings"
+        },
+        {
+          "id": "b",
+          "text": "B) 20–30% diesel displacement; USD 1,500–2,500 annual savings"
+        },
+        {
+          "id": "c",
+          "text": "C) 30–50% diesel displacement; USD 2,000–4,000 annual savings"
+        },
+        {
+          "id": "d",
+          "text": "D) 60–75% diesel displacement; USD 5,000–7,500 annual savings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Low displacement (10–15%) underestimates typical hybrid system performance; this would occur only with undersized PV arrays (<3 kW).",
+        "b": "Moderate savings (USD 1,500–2,500) corresponds to 20–30% displacement, insufficient for the stated 2:1 ratio and full tropical solar resource utilization.",
+        "d": "Displacement above 50% requires PV oversizing beyond 4:1 ratio or exceptional solar conditions; economically inefficient and not recommended for standard hybrid design.",
+        "correct": "A 10 kW PV array with 5 kW diesel generator achieves 2:1 PV-to-generator ratio (within 2–4 kW PV per 1 kW diesel range). This configuration displaces 30–50% annual diesel consumption (~8,000–12,000 kWh/year from PV generation at 4.0 kWh/m²/day), saving USD 2,000–4,000/year at current diesel costs. System cost approximately USD 25,000–40,000 including battery and hybrid controller.",
+        "takeaway": "Hybrid solar-diesel systems with 2–4 kW PV per 1 kW generator typically achieve 30–50% annual diesel displacement, generating USD 2,000–4,000 fuel savings annually and improving rural facility sustainability."
+      },
+      "explanation": null,
+      "code_citation": "Article LEA-UTIL-007-04: Renewable Energy Systems in Buildings—Energy Storage and Hybrid Systems section.",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bec303a44af75152b7207daa38be402b66f4579eba2c4d895f047f3340d5aee6"
+    },
+    {
+      "question_id": "197c1744-01ae-4e44-88d7-38b376301a30",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A 150-bed hospital in Davao is designing an integrated renewable energy strategy. Three scenarios proposed: (1) 40 kW rooftop PV + net metering; (2) 150 m² solar thermal + 30 kW PV + battery storage (20 kWh); (3) 30 kW PV + anaerobic digester (waste-to-energy biogas). Hospital annual electricity consumption: 200,000 kWh; hot water demand: 12,000 L/day; organic waste: 25 kg/day per 100 beds. Which scenario best aligns with Philippine Green Building Code compliance, RA 9513 incentive optimization, and lifecycle economics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Scenario 1 (40 kW PV): Simplest; achieves 8% renewable requirement; minimal incentive claim complexity; payback 8–10 years, making it a straightforward choice for initial implementation."
+        },
+        {
+          "id": "b",
+          "text": "B) Scenario 2 (thermal + PV + battery): Comprehensive; achieves 15–20% renewable + 50–70% hot water displacement; capital cost USD 45,000–60,000; complex incentive filing; payback 10–12 years, offering a balanced approach between cost and benefit."
+        },
+        {
+          "id": "c",
+          "text": "C) Scenario 3 (PV + anaerobic digester): Addresses both electricity and waste-to-energy; achieves 15% renewable + waste recovery value; capital cost USD 50,000–65,000; payback 8–11 years; strong RA 9513 duty-free claim for digester equipment"
+        },
+        {
+          "id": "d",
+          "text": "D) Scenarios 2 and 3 combined: Maximizes renewable contribution (25–30%) but capital cost exceeds USD 100,000; payback >15 years; not economically justified for hospital, given the high initial investment and extended payback period."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Scenario 1 underachieves: 8% renewable falls short of 15% hospital mandate. While payback is attractive (8–10 years), regulatory non-compliance risks penalty costs or reputation damage exceeding modest capital savings. Net metering benefits limited to USD 4,000–5,000/year savings.",
+        "b": "Scenario 2 over-engineers for this load: 20 kWh battery (cost USD 16,000–24,000) provides <2 hour autonomy during grid outage; insufficient for hospital critical loads (operating theatres, ICU). Thermal system adds complexity without waste valorization. Payback 10–12 years delays capital recovery; net metering + battery arbitrage yields only USD 600–1,000/year additional value (insufficient to justify USD 10,000–12,000 battery premium).",
+        "d": "Combined Scenarios 2 & 3 exceed hospital needs: capital cost USD 100,000+ is unjustified for 200,000 kWh annual load. 25–30% renewable targets are aspirational, not regulatory requirements. Payback >15 years approaches equipment end-of-life; net present value deteriorates significantly.",
+        "correct": "Scenario 3 balances compliance, economics, and incentive leverage: (a) 30 kW PV generates 36,000–42,000 kWh/year (18–21% renewable; exceeds 15% hospital mandate), (b) Anaerobic digester converts 3,650 kg annual waste to ~730 m³ biogas/year (~15 kWh thermal/day, displacing 10–15% hot water load), (c) Total capital USD 50,000–65,000 yields payback 8–11 years, (d) RA 9513 duty-free importation applies to both PV modules and digester equipment (>USD 15,000 equipment value), reducing effective capital cost 20–25%, (e) Waste disposal cost savings (USD 3,000–5,000/year) enhance financial viability. Hospital operational continuity favors decentralized generation (PV + biogas) over battery-dependent systems.",
+        "takeaway": "For hospital renewable energy integration, PV + anaerobic digester (Scenario 3) achieves 15–20% regulatory requirement compliance, strong RA 9513 incentive value (duty-free imports), waste recovery benefits (USD 3,000–5,000/year savings), and 8–11 year payback, balancing lifecycle economics with operational resilience."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Green Building Code (2016). RA 9513 Incentives framework. Article LEA-UTIL-007-04: Biomass/Biogas Systems and Hybrid System Design sections.",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:45168ffc7bf641eb9e0ba814009ac588e9c4782e5895c4d04932efb892f00581"
+    },
+    {
+      "question_id": "d2b0656e-f731-4e50-81b2-efd7638028ea",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "An agricultural cooperative in Ilocos proposes a 5 kW building-mounted vertical-axis wind turbine (VAWT) hybrid with 10 kW solar PV. Annual resource data: wind average 8.2 m/s at 10 m height; solar 4.2 kWh/m²/day. The VAWT and PV have complementary generation profiles (wind peaks in dry season when solar is lower). What is the combined system's estimated annual generation advantage over solar-only scenario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 8,500 kWh/year additional; 40–50% system generation increase; justified by VAWT complexity and cost"
+        },
+        {
+          "id": "b",
+          "text": "B) 12,000 kWh/year additional; 50–60% system generation increase; provides resilient dual-resource system"
+        },
+        {
+          "id": "c",
+          "text": "C) 18,000 kWh/year additional; 80–100% system generation increase; economically superior to solar-only design"
+        },
+        {
+          "id": "d",
+          "text": "D) 25,000 kWh/year additional; exceeds solar-only by 150%; VAWT strongly preferred in Ilocos"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "8,500 kWh additional generation underestimates Ilocos wind resource at 8.2 m/s; this implies suboptimal VAWT placement or lower wind class zone.",
+        "c": "18,000–25,000 kWh additional generation overestimates VAWT performance for 5 kW capacity. Such high yields would require 9+ m/s average wind speed (premium locations only) or significantly larger turbine (7–10 kW). Standard 5 kW VAWT at 8.2 m/s generates 10,000–12,000 kWh/year, not 18,000–25,000.",
+        "d": "Claim that VAWT is 'strongly preferred' in Ilocos is economically unjustified. While complementary profiles offer grid stability benefits, capital cost premium (USD 5,500 additional for 12,000 kWh annual gain) yields 9+ year payback versus 8–10 year solar-only payback. Preference depends on customer load profile and regulatory incentives.",
+        "correct": "10 kW solar PV in Ilocos: 10 × 4.2 × 365 ÷ 0.82 efficiency = 18,700 kWh/year. 5 kW VAWT at 8.2 m/s average wind: yields 10,000–12,000 kWh/year (prime Ilocos location). Combined system: 28,700–30,700 kWh/year. Incremental generation: 12,000 kWh/year (60% above solar-only). Complementary profiles (wind peaks dry season, solar peaks wet season) reduce seasonal variability and grid export variability. However, VAWT capital cost USD 17,500–25,000 (USD 3,500–5,000/kW) versus PV USD 12,000–15,000 (USD 1,200–1,500/kW) requires analysis of seasonal load matching and tariff arbitrage value.",
+        "takeaway": "Hybrid solar-wind systems in Ilocos achieve 50–60% generation increase (12,000 kWh annually) through complementary resource profiles; however, VAWT capital cost premium requires specific load-matching or grid services valuation to justify over solar-only designs."
+      },
+      "explanation": null,
+      "code_citation": "Article LEA-UTIL-007-04: Wind Energy Systems and Hybrid System Design Considerations sections. DOE Wind and Solar Policy Framework (2022).",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1b1734589e5b1c81e93c7f55fba75b507f58df877286d7429d92a1810e93b66f"
+    },
+    {
+      "question_id": "d6e826ec-546f-405a-8283-d6f70e169a09",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "Building-integrated photovoltaics (BIPV) embed solar cells into building envelope components. Which of the following BIPV products achieves the highest power output per square meter on a vertical facade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Transparent glazing modules with 5–10% efficiency, suitable for applications where natural light is prioritized"
+        },
+        {
+          "id": "b",
+          "text": "B) Solar roof tiles producing 50–150 W per tile, optimized for sloped roof installations rather than vertical facades"
+        },
+        {
+          "id": "c",
+          "text": "C) Facade-mounted systems rated 80–180 W/m² for vertical facades (68% of rooftop optimal at equator latitudes)"
+        },
+        {
+          "id": "d",
+          "text": "D) Thin-film amorphous silicon modules with 7–10% efficiency, often used in applications where flexibility and lightweight are critical"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Transparent glazing achieves only 5–10% efficiency, limiting power density to ~10–20 W/m² despite dual shading function.",
+        "b": "Solar roof tiles are medium-efficiency products; total power density depends on tile size and spacing, typically lower than vertical facade systems.",
+        "d": "Thin-film amorphous modules (7–10%) are less efficient than crystalline BIPV options and unsuitable for facade applications.",
+        "correct": "Facade-mounted BIPV systems deliver 100–250 W/m² on vertical surfaces, outperforming transparent glazing (5–10% efficiency yields ~10–20 W/m²) and thin-film modules (7–10% efficiency). Solar roof tiles (50–150 W/tile) are suitable for sloped roofs but less efficient per m² than facade systems.",
+        "takeaway": "BIPV facade-mounted systems offer superior power density (100–250 W/m²) for vertical building surfaces compared to transparent glazing or thin-film alternatives, making them optimal for commercial building integration."
+      },
+      "explanation": null,
+      "code_citation": "NREL (2021). Photovoltaic Technology Performance: 2021 Benchmarks. NREL/TP-6A40-79326. + IRENA (2022). Southeast Asia Renewable Energy Cost Review.",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2fb1984cb5a1504e3ce9677323f5a9367ec471a3626f586eaefca651ce434a9c"
+    },
+    {
+      "question_id": "aad6391a-f10e-4912-894d-423415dcba70",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A commercial building's solar water heating system is designed with a 120 m² collector array and 600 liter storage tank serving a 100-person office. The system uses propylene glycol fluid and operates in a hard-water coastal region. What is the primary maintenance consideration for this configuration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Quarterly fluid replacement due to coastal salt spray corrosion, which can affect the efficiency and longevity of the system components"
+        },
+        {
+          "id": "b",
+          "text": "B) Annual heat exchanger and pump inspection for corrosion risk; fluid replacement every 5–10 years; collector cleaning semi-annually inland or quarterly in salt-air zones"
+        },
+        {
+          "id": "c",
+          "text": "C) Daily monitoring system checks and weekly pressure relief valve testing to ensure optimal performance and safety in varying environmental conditions"
+        },
+        {
+          "id": "d",
+          "text": "D) Monthly drain-down cycles to prevent scale buildup in hard-water conditions, which can lead to reduced efficiency and potential system failure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Quarterly fluid replacement is unnecessarily frequent and economically unjustified; propylene glycol is stable over 5–10 year intervals under normal operation. Over-replacement increases operational cost without performance benefit.",
+        "c": "Daily monitoring and weekly pressure relief testing are excessive and not recommended in technical literature. Standard practice requires annual pressure relief inspection, not weekly testing.",
+        "d": "Monthly drain-down cycles degrade system efficiency and increase labor cost. Hard water scale management occurs through periodic fluid replacement and corrosion inhibitors in the propylene glycol formulation.",
+        "correct": "Coastal regions with hard water require rigorous O&M: annual heat exchanger/pump inspection (corrosion risk), quarterly collector cleaning (salt spray impact), and propylene glycol fluid replacement every 5–10 years. Pressure relief valve annual testing prevents system failure. Annual O&M cost approximately USD 100–200/year.",
+        "takeaway": "Coastal solar thermal systems require quarterly collector cleaning (salt spray), annual heat exchanger/pump inspection (corrosion prevention), and 5–10 year fluid replacement cycles to ensure long-term reliability and performance in hard-water regions."
+      },
+      "explanation": null,
+      "code_citation": "Article LEA-UTIL-007-04: Maintenance and Monitoring—Thermal System Maintenance section.",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9cf90ca729306e5bacc16ee7b5b81ba56d747bf03497a3b2f0f5677143025262"
+    },
+    {
+      "question_id": "09e94efc-5682-4839-87f4-0f7442408e32",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A hospital facility in Cebu requires grid interconnection for its 25 kW solar PV system under DOE Department Circular No. DC2020-07-0012 (2020 Net Metering Guidelines). Which of the following accurately describes the net metering arrangement and key technical requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) PV exports excess generation at wholesale rate (USD 0.05/kWh) with no grid connection fees or metering upgrades required, which is a common misunderstanding"
+        },
+        {
+          "id": "b",
+          "text": "B) PV system must include battery backup (minimum 10 kWh) before grid interconnection approval is granted, which is often incorrectly assumed"
+        },
+        {
+          "id": "c",
+          "text": "C) Excess PV generation exports at retail rate (Meralco tariff); facility maintains bidirectional metering and grid connection study compliance"
+        },
+        {
+          "id": "d",
+          "text": "D) Grid interconnection requires hospital to operate as a registered power distributor under Energy Regulatory Commission (ERC) rules, which is a misinterpretation of the guidelines"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Net metering exports at retail rate, not wholesale rate. Wholesale pricing applies only to utility-scale systems with power purchase agreements, not distributed building systems.",
+        "b": "Battery backup is optional for net-metered systems. Grid connection provides de facto 'storage' via excess generation export and nighttime grid import; batteries add cost without economic justification in Philippine tariff structure.",
+        "d": "Building-connected distributed systems do not require ERC registration as power distributors; only installations >50 kW claiming RA 9513 income tax holidays require DOE renewable energy registration (not ERC distributor status).",
+        "correct": "Net metering under DOE Circular DC2016-06-0010 permits export of excess PV generation at retail rate (same rate as grid import, ~USD 0.11/kWh for Meralco). Grid connection requires bidirectional metering capability and successful electrical interconnection study to verify capacity and voltage stability. No feed-in tariff premium or premium government purchase guarantee exists.",
+        "takeaway": "Net metering under DOE DC2016-06-0010 enables building PV systems to export excess generation at retail rates with bidirectional metering and grid connection study compliance; no battery backup or ERC registration required for standard implementations."
+      },
+      "explanation": null,
+      "code_citation": "DOE Circular No. DC2016-06-0010. Guidelines on Net Metering for Distributed Renewable Energy Systems. Department of Energy.",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:32947975cffc801ca8aa4d2d438b53a3ca8da9bd2dda35bc8986cb9f34d30622"
+    },
+    {
+      "question_id": "d77e3868-95d8-4957-b4cb-e8d5c4451fcf",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "Solar water heating (SWH) systems employ two main collector types. In hot-humid tropical climates like the Philippines, which collector type is preferred due to superior performance in existing conditions and lower cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Evacuated tube collectors with 80–88% optical efficiency despite 25–35% cost premium, which may not be ideal for all climates"
+        },
+        {
+          "id": "b",
+          "text": "B) Flat plate collectors with 0.6–0.8 m² area producing 50–80 L hot water daily at 75% optical efficiency"
+        },
+        {
+          "id": "c",
+          "text": "C) Hybrid air-gap collectors combining flat-plate and evacuated tube benefits, though not commonly used in tropical regions"
+        },
+        {
+          "id": "d",
+          "text": "D) Direct-circulation thermosiphon systems without any insulation, which can lead to significant heat loss"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While evacuated tubes achieve higher efficiency, their 25–35% cost premium is not justified in tropical climates where flat-plate performance is adequate and payback periods are already 4–6 years.",
+        "c": "Hybrid collectors combining both technologies are not standard commercial products and do not appear in technical literature for Southeast Asian applications.",
+        "d": "Direct-circulation systems without insulation suffer from nighttime heat loss and are inefficient compared to both flat-plate and evacuated tube designs.",
+        "correct": "Flat plate collectors are preferred in tropical climates due to cost-effectiveness (0.6–0.8 m² supplies 50–80 L/day at 45–55°C) and sufficient performance. Evacuated tube collectors offer marginal efficiency gain (80–88% vs. 75%) but cost 25–35% more, making them economically unjustified in high-solar-resource regions.",
+        "takeaway": "Flat plate solar collectors dominate SWH installations in tropical Philippines due to excellent cost-performance ratio; evacuated tube systems offer marginal efficiency gains insufficient to justify premium pricing in high-irradiance regions."
+      },
+      "explanation": null,
+      "code_citation": "Asian Development Bank (2019). Solar Thermal Technology in Southeast Asia: Market Assessment and Cost Analysis. ADB Clean Energy Program.",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:35abff0eda3da6bbf0e781f810cdaa36de0e2bb683d862f788ae6c9621c86602"
+    }
+  ]
+}

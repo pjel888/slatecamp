@@ -1,0 +1,119 @@
+{
+  "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+  "slug": "lea-matl-009-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.947Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:ad967057f1e708829d3600d41a14ebc32eb94053153016c28d27922e2ecc48be",
+  "normalized_content_hash": "1683572402b46656ef737db08df84b1bde90a43d15d12d8785116dbadbb95e77",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\nMemory aid for CSI divisions: Divisions 00-01 are administrative. Divisions 02-09 are the \"core construction divisions\" most tested on the LEA. Divisions 10-49 cover building systems (interior construction, mechanical, electrical, plumbing, fire protection). Master the core divisions 03-09 first. Always remember: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes.\n</Tip>",
+      "raw_hash": "sha256:1ad8bda433edb17fdfa52819dd0c5e1f58850095e441b0afa49ad9eea0b877d9",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid for CSI divisions: Divisions 00-01 are administrative. Divisions 02-09 are the \"core construction divisions\" most tested on the LEA. Divisions 10-49 cover building systems (interior construction, mechanical, electrical, plumbing, fire protection). Master the core divisions 03-09 first. Always remember: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:258ec8ceef2273fe9af3d1b7fda0b6cb2930e20d90d6edbcdb07f8bf2aebf32a",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\nMemory aid for CSI divisions: Divisions 00-01 are administrative. Divisions 02-09 are the \"core construction divisions\" most tested on the LEA. Divisions 10-49 cover building systems (interior construction, mechanical, electrical, plumbing, fire protection). Master the core divisions 03-09 first. Always remember: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes.\n",
+      "children_text": "Memory aid for CSI divisions: Divisions 00-01 are administrative. Divisions 02-09 are the \"core construction divisions\" most tested on the LEA. Divisions 10-49 cover building systems (interior construction, mechanical, electrical, plumbing, fire protection). Master the core divisions 03-09 first. Always remember: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes.",
+      "start_offset": 7854,
+      "end_offset": 8275,
+      "line_start": 48,
+      "line_end": 50,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Confusing 'Division 08: Openings' (doors, windows, hardware) with 'Division 09: Finishes' (paint, flooring, ceilings). Students put window specifications in Division 09.\" correction=\"Division 08 is specifically doors, windows, glazing, and hardware. Division 09 is interior finishes like paint, flooring, and ceiling systems. Windows belong in Division 08, even if they involve finish work.\" />",
+      "raw_hash": "sha256:6e8bd7d16f40e98933bca453a9d3e5db79319d9764a8a4a6448c0cd6b0c89a30",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Confusing 'Division 08: Openings' (doors, windows, hardware) with 'Division 09: Finishes' (paint, flooring, ceilings). Students put window specifications in Division 09.\", correction=\"Division 08 is specifically doors, windows, glazing, and hardware. Division 09 is interior finishes like paint, flooring, and ceiling systems. Windows belong in Division 08, even if they involve finish work.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:6b7fe5ef474d74c34630bc3d8b3435582287c3e42e9ecc6e2afbf817b1eac8ed",
+      "props": {
+        "mistake": "Confusing 'Division 08: Openings' (doors, windows, hardware) with 'Division 09: Finishes' (paint, flooring, ceilings). Students put window specifications in Division 09.",
+        "correction": "Division 08 is specifically doors, windows, glazing, and hardware. Division 09 is interior finishes like paint, flooring, and ceiling systems. Windows belong in Division 08, even if they involve finish work."
+      },
+      "props_json": {
+        "mistake": "Confusing 'Division 08: Openings' (doors, windows, hardware) with 'Division 09: Finishes' (paint, flooring, ceilings). Students put window specifications in Division 09.",
+        "correction": "Division 08 is specifically doors, windows, glazing, and hardware. Division 09 is interior finishes like paint, flooring, and ceiling systems. Windows belong in Division 08, even if they involve finish work."
+      },
+      "props_text": "mistake=\"Confusing 'Division 08: Openings' (doors, windows, hardware) with 'Division 09: Finishes' (paint, flooring, ceilings). Students put window specifications in Division 09.\" correction=\"Division 08 is specifically doors, windows, glazing, and hardware. Division 09 is interior finishes like paint, flooring, and ceiling systems. Windows belong in Division 08, even if they involve finish work.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8297,
+      "end_offset": 8717,
+      "line_start": 54,
+      "line_end": 54,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Placing waterproofing specifications in Division 03 (Concrete) instead of Division 07 (Thermal & Moisture Protection). Students think 'waterproofing concrete means Division 03'.\" correction=\"Waterproofing membranes, sealants, and moisture control systems belong in Division 07, even if they're applied over concrete or masonry. Division 03 specifies the concrete itself; Division 07 specifies the protection layer.\" />",
+      "raw_hash": "sha256:714b84891303bb662d8b583f12cc43d086e70e710c02fcc1d18ebd03bb338110",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Placing waterproofing specifications in Division 03 (Concrete) instead of Division 07 (Thermal & Moisture Protection). Students think 'waterproofing concrete means Division 03'.\", correction=\"Waterproofing membranes, sealants, and moisture control systems belong in Division 07, even if they're applied over concrete or masonry. Division 03 specifies the concrete itself; Division 07 specifies the protection layer.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a0740e15c93921235f87337dfc6992964cc4d84bee49f3fac5e08e88e11d82b6",
+      "props": {
+        "mistake": "Placing waterproofing specifications in Division 03 (Concrete) instead of Division 07 (Thermal & Moisture Protection). Students think 'waterproofing concrete means Division 03'.",
+        "correction": "Waterproofing membranes, sealants, and moisture control systems belong in Division 07, even if they're applied over concrete or masonry. Division 03 specifies the concrete itself; Division 07 specifies the protection layer."
+      },
+      "props_json": {
+        "mistake": "Placing waterproofing specifications in Division 03 (Concrete) instead of Division 07 (Thermal & Moisture Protection). Students think 'waterproofing concrete means Division 03'.",
+        "correction": "Waterproofing membranes, sealants, and moisture control systems belong in Division 07, even if they're applied over concrete or masonry. Division 03 specifies the concrete itself; Division 07 specifies the protection layer."
+      },
+      "props_text": "mistake=\"Placing waterproofing specifications in Division 03 (Concrete) instead of Division 07 (Thermal & Moisture Protection). Students think 'waterproofing concrete means Division 03'.\" correction=\"Waterproofing membranes, sealants, and moisture control systems belong in Division 07, even if they're applied over concrete or masonry. Division 03 specifies the concrete itself; Division 07 specifies the protection layer.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8719,
+      "end_offset": 9163,
+      "line_start": 56,
+      "line_end": 56,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Mixing 3-part format: placing product specifications (Part 2 content) in Part 1 General or mixing execution procedures (Part 3) with product descriptions (Part 2)\", \"Failing to reference coordination between divisions (e.g., Part 1 of Division 03 must reference Division 07 waterproofing for timing and surface requirements)\", \"Assuming CSI structure is mandatory in Philippine projects (DPWH does not require CSI; understanding CSI is for professional literacy)\", \"Not customizing CSI specifications for tropical climate (waterproofing, mold resistance, termite protection are Philippine additions)\", \"Omitting Part 1 General in proprietary or quick specifications (Part 1 is essential for quality standards, testing protocols, and submittals)\"]} />",
+      "raw_hash": "sha256:9eced3bc09ab5a43b7731b42ad536397ec9a720fcc2bc0aa09cfbe682cbe1239",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Mixing 3-part format: placing product specifications (Part 2 content) in Part 1 General or mixing execution procedures (Part 3) with product descriptions (Part 2)\\\", \\\"Failing to reference coordination between divisions (e.g., Part 1 of Division 03 must reference Division 07 waterproofing for timing and surface requirements)\\\", \\\"Assuming CSI structure is mandatory in Philippine projects (DPWH does not require CSI; understanding CSI is for professional literacy)\\\", \\\"Not customizing CSI specifications for tropical climate (waterproofing, mold resistance, termite protection are Philippine additions)\\\", \\\"Omitting Part 1 General in proprietary or quick specifications (Part 1 is essential for quality standards, testing protocols, and submittals)\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:808076288a6a3b4917f3f0c4d5d417f2431eb8efbfba04cdbe4faaefa909c351",
+      "props": {
+        "mistakes": "{[\"Mixing 3-part format: placing product specifications (Part 2 content) in Part 1 General or mixing execution procedures (Part 3) with product descriptions (Part 2)\", \"Failing to reference coordination between divisions (e.g., Part 1 of Division 03 must reference Division 07 waterproofing for timing and surface requirements)\", \"Assuming CSI structure is mandatory in Philippine projects (DPWH does not require CSI; understanding CSI is for professional literacy)\", \"Not customizing CSI specifications for tropical climate (waterproofing, mold resistance, termite protection are Philippine additions)\", \"Omitting Part 1 General in proprietary or quick specifications (Part 1 is essential for quality standards, testing protocols, and submittals)\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Mixing 3-part format: placing product specifications (Part 2 content) in Part 1 General or mixing execution procedures (Part 3) with product descriptions (Part 2)\", \"Failing to reference coordination between divisions (e.g., Part 1 of Division 03 must reference Division 07 waterproofing for timing and surface requirements)\", \"Assuming CSI structure is mandatory in Philippine projects (DPWH does not require CSI; understanding CSI is for professional literacy)\", \"Not customizing CSI specifications for tropical climate (waterproofing, mold resistance, termite protection are Philippine additions)\", \"Omitting Part 1 General in proprietary or quick specifications (Part 1 is essential for quality standards, testing protocols, and submittals)\"]}"
+      },
+      "props_text": "mistakes={[\"Mixing 3-part format: placing product specifications (Part 2 content) in Part 1 General or mixing execution procedures (Part 3) with product descriptions (Part 2)\", \"Failing to reference coordination between divisions (e.g., Part 1 of Division 03 must reference Division 07 waterproofing for timing and surface requirements)\", \"Assuming CSI structure is mandatory in Philippine projects (DPWH does not require CSI; understanding CSI is for professional literacy)\", \"Not customizing CSI specifications for tropical climate (waterproofing, mold resistance, termite protection are Philippine additions)\", \"Omitting Part 1 General in proprietary or quick specifications (Part 1 is essential for quality standards, testing protocols, and submittals)\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9165,
+      "end_offset": 9944,
+      "line_start": 58,
+      "line_end": 58,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:473f000ee2c2e9bbece6b150c193546c2f92ef62fa375553478ed13adf653e78"
+}

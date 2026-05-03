@@ -1,0 +1,83 @@
+{
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "slug": "lea-strc-004-02-core-concept",
+  "generated_at": "2026-05-01T13:33:45.624Z",
+  "desired_categories": [
+    "formula",
+    "timeline",
+    "code_requirement",
+    "comparison",
+    "scenario"
+  ],
+  "suggestion_count": 8,
+  "suggestions": [
+    {
+      "component_name": "ModelRegistryPage",
+      "file_path": "src/app/admin/3d-models/_components/ModelRegistryPage.tsx",
+      "likely_category": "formula",
+      "confidence": "low",
+      "reason": "Category formula matched article signals: formula, timeline, code_requirement, comparison, scenario",
+      "auto_insert": false
+    },
+    {
+      "component_name": "Loading",
+      "file_path": "src/app/admin/3d-models/loading.tsx",
+      "likely_category": "formula",
+      "confidence": "low",
+      "reason": "Category formula matched article signals: formula, timeline, code_requirement, comparison, scenario",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditArticleDetailLoading",
+      "file_path": "src/app/admin/ai-audit/articles/[articleId]/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, timeline, code_requirement, comparison, scenario",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditArticlesLoading",
+      "file_path": "src/app/admin/ai-audit/articles/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, timeline, code_requirement, comparison, scenario",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditFindingDetailLoading",
+      "file_path": "src/app/admin/ai-audit/findings/[findingId]/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, timeline, code_requirement, comparison, scenario",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditTableLoading",
+      "file_path": "src/app/admin/ai-audit/findings/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, timeline, code_requirement, comparison, scenario",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditLoading",
+      "file_path": "src/app/admin/ai-audit/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, timeline, code_requirement, comparison, scenario",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditTableLoading",
+      "file_path": "src/app/admin/ai-audit/proposals/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, timeline, code_requirement, comparison, scenario",
+      "auto_insert": false
+    }
+  ],
+  "auto_insertion_enabled": false,
+  "warnings": [
+    "Auto-insertion is intentionally disabled; use this as review metadata only."
+  ]
+}

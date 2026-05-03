@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
+  "slug": "lea-plan-001-03-core-concept",
+  "title": "Planning in the Philippines",
+  "component_count": 3,
+  "components": [
+    {
+      "component_name": "Tip",
+      "block_ids": [
+        "ui_0003"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "WikiExamTable",
+      "block_ids": [
+        "ui_0001",
+        "ui_0002"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "WikiMistakeList",
+      "block_ids": [
+        "ui_0004"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    }
+  ],
+  "unknown_components": [],
+  "custom_ui_block_count": 4,
+  "normalized_status": "passed",
+  "components_detected": [
+    "Tip",
+    "WikiExamTable",
+    "WikiMistakeList"
+  ],
+  "unknown_components_detected": []
+}

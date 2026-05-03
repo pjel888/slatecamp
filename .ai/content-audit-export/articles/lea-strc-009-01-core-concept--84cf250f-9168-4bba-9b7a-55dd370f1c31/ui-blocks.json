@@ -1,0 +1,113 @@
+{
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "slug": "lea-strc-009-01-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.986Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:852ed46e73590e35d0e1c4d0e3b968585147a6bda51897df2d916839f44b29d0",
+  "normalized_content_hash": "sha256:960d6e747fff6fecf0494e5c2f816537905bb11264bfd9a6237d671707523229",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Species\", \"Decay Resistant\", \"Termite Resistant\", \"Common Use\"]} rows={[ [\"Narra\", \"YES\", \"YES\", \"Ground contact, coastal exposure\"], [\"Kamagong\", \"YES\", \"YES\", \"Ground contact, harsh environments\"], [\"Dao\", \"YES\", \"NO\", \"Above-ground, dry conditions\"], [\"Tangile\", \"YES\", \"NO\", \"Above-ground, dry conditions\"] ]} />",
+      "raw_hash": "sha256:2d816e8dbf47bc5ec2cc250e87e2325aed6f88e146fbbfea98ab9cc029a57a9a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Species\\\", \\\"Decay Resistant\\\", \\\"Termite Resistant\\\", \\\"Common Use\\\"]}\", rows=\"{[ [\\\"Narra\\\", \\\"YES\\\", \\\"YES\\\", \\\"Ground contact, coastal exposure\\\"], [\\\"Kamagong\\\", \\\"YES\\\", \\\"YES\\\", \\\"Ground contact, harsh environments\\\"], [\\\"Dao\\\", \\\"YES\\\", \\\"NO\\\", \\\"Above-ground, dry conditions\\\"], [\\\"Tangile\\\", \\\"YES\\\", \\\"NO\\\", \\\"Above-ground, dry conditions\\\"] ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:2c8a3926dae80080495bfded39684afbd96612a13d60019a0bb4a8f4423827f3",
+      "props": {
+        "headers": "{[\"Species\", \"Decay Resistant\", \"Termite Resistant\", \"Common Use\"]}",
+        "rows": "{[ [\"Narra\", \"YES\", \"YES\", \"Ground contact, coastal exposure\"], [\"Kamagong\", \"YES\", \"YES\", \"Ground contact, harsh environments\"], [\"Dao\", \"YES\", \"NO\", \"Above-ground, dry conditions\"], [\"Tangile\", \"YES\", \"NO\", \"Above-ground, dry conditions\"] ]}"
+      },
+      "props_json": {
+        "headers": "{[\"Species\", \"Decay Resistant\", \"Termite Resistant\", \"Common Use\"]}",
+        "rows": "{[ [\"Narra\", \"YES\", \"YES\", \"Ground contact, coastal exposure\"], [\"Kamagong\", \"YES\", \"YES\", \"Ground contact, harsh environments\"], [\"Dao\", \"YES\", \"NO\", \"Above-ground, dry conditions\"], [\"Tangile\", \"YES\", \"NO\", \"Above-ground, dry conditions\"] ]}"
+      },
+      "props_text": "headers={[\"Species\", \"Decay Resistant\", \"Termite Resistant\", \"Common Use\"]} rows={[ [\"Narra\", \"YES\", \"YES\", \"Ground contact, coastal exposure\"], [\"Kamagong\", \"YES\", \"YES\", \"Ground contact, harsh environments\"], [\"Dao\", \"YES\", \"NO\", \"Above-ground, dry conditions\"], [\"Tangile\", \"YES\", \"NO\", \"Above-ground, dry conditions\"] ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 1397,
+      "end_offset": 1739,
+      "line_start": 11,
+      "line_end": 11,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Narra + Kamagong = BOTH. Dao + Tangile = decay ONLY. This 2+2 rule is the entire resistance spectrum for Philippine timber.</Tip>",
+      "raw_hash": "sha256:63fc38d92b5a140a773eb67e0c6aeaf32985e53b78b91677f0b8dec1b71cb478",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Narra + Kamagong = BOTH. Dao + Tangile = decay ONLY. This 2+2 rule is the entire resistance spectrum for Philippine timber.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:60229afc69b0a970aac8e0500c51856e53595195403bc9e630b250d6467dfaef",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Narra + Kamagong = BOTH. Dao + Tangile = decay ONLY. This 2+2 rule is the entire resistance spectrum for Philippine timber.",
+      "children_text": "Narra + Kamagong = BOTH. Dao + Tangile = decay ONLY. This 2+2 rule is the entire resistance spectrum for Philippine timber.",
+      "start_offset": 3981,
+      "end_offset": 4115,
+      "line_start": 41,
+      "line_end": 41,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[ \"Assuming Dao or Tangile resists termites because they resist decay. Decay and termite resistance are separate mechanisms.\", \"Accepting sapwood freely because the piece has 'mostly heartwood.' The 5% rule is absolute; 6% sapwood fails ground-contact use.\", \"Treating Yakal or Apitong as naturally durable alternatives to Narra. They have no documented resistance; treatment is mandatory for resistance claims.\", \"Confusing heartwood color with heartwood identity. Heartwood must be chemically extractive-rich, not just visually distinct.\" ]} />",
+      "raw_hash": "sha256:7840fed050208e2067de876e0b9abfbcfd5095c2b9407f9d7cf9521885412abf",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[ \\\"Assuming Dao or Tangile resists termites because they resist decay. Decay and termite resistance are separate mechanisms.\\\", \\\"Accepting sapwood freely because the piece has 'mostly heartwood.' The 5% rule is absolute; 6% sapwood fails ground-contact use.\\\", \\\"Treating Yakal or Apitong as naturally durable alternatives to Narra. They have no documented resistance; treatment is mandatory for resistance claims.\\\", \\\"Confusing heartwood color with heartwood identity. Heartwood must be chemically extractive-rich, not just visually distinct.\\\" ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:0219e05e4ca88e203e0cde05121b3bd5f514dad22b81713740237060ec3a869e",
+      "props": {
+        "mistakes": "{[ \"Assuming Dao or Tangile resists termites because they resist decay. Decay and termite resistance are separate mechanisms.\", \"Accepting sapwood freely because the piece has 'mostly heartwood.' The 5% rule is absolute; 6% sapwood fails ground-contact use.\", \"Treating Yakal or Apitong as naturally durable alternatives to Narra. They have no documented resistance; treatment is mandatory for resistance claims.\", \"Confusing heartwood color with heartwood identity. Heartwood must be chemically extractive-rich, not just visually distinct.\" ]}"
+      },
+      "props_json": {
+        "mistakes": "{[ \"Assuming Dao or Tangile resists termites because they resist decay. Decay and termite resistance are separate mechanisms.\", \"Accepting sapwood freely because the piece has 'mostly heartwood.' The 5% rule is absolute; 6% sapwood fails ground-contact use.\", \"Treating Yakal or Apitong as naturally durable alternatives to Narra. They have no documented resistance; treatment is mandatory for resistance claims.\", \"Confusing heartwood color with heartwood identity. Heartwood must be chemically extractive-rich, not just visually distinct.\" ]}"
+      },
+      "props_text": "mistakes={[ \"Assuming Dao or Tangile resists termites because they resist decay. Decay and termite resistance are separate mechanisms.\", \"Accepting sapwood freely because the piece has 'mostly heartwood.' The 5% rule is absolute; 6% sapwood fails ground-contact use.\", \"Treating Yakal or Apitong as naturally durable alternatives to Narra. They have no documented resistance; treatment is mandatory for resistance claims.\", \"Confusing heartwood color with heartwood identity. Heartwood must be chemically extractive-rich, not just visually distinct.\" ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4137,
+      "end_offset": 4710,
+      "line_start": 45,
+      "line_end": 45,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "Warn",
+      "raw": "<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>",
+      "raw_hash": "sha256:ba1ca1d96638cbbb2a106c0a137a0e03cdff45255a7e66fe9c8d1e126722098c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Warn\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ed51259894cd3187a19f9414f94b6b9c6e48ca7b3b80e4451136a393cff8cce6",
+      "props": {},
+      "props_json": {},
+      "children_raw": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
+      "children_text": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
+      "start_offset": null,
+      "end_offset": null,
+      "line_start": null,
+      "line_end": null,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved",
+      "props_text": null
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:808ca0b9dab24b240aefe9c2a72ab731b33d3c6859ec2e1c10f2f00b22f71134"
+}

@@ -1,0 +1,77 @@
+{
+  "article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
+  "slug": "lea-prac-eth-003-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.300Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:6f9cbcd7c8b3dea946d6ca17c1f1b40e0202566df875ca396ea1e1cdd57a7ad6",
+  "normalized_content_hash": "25a974537b50f9d84543d426bc7fea80c8f17735e3ded964e0f69a7ddb29e744",
+  "ui_block_count": 4,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>**Memory Aid: \"PSR\" = Public Safety Reporting.** Remember the three core elements: (P) Public safety above all else, (S) Specializations require credentials, (R) Report violations. When an LEA question involves a conflict between profit and public welfare, public welfare always wins.</Tip>",
+      "raw_hash": "sha256:caba9047c63ef1741e0c64c39e6f33a9c094a3610a194f16be6e5dacd5259b05",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory Aid: \"PSR\" = Public Safety Reporting.** Remember the three core elements: (P) Public safety above all else, (S) Specializations require credentials, (R) Report violations. When an LEA question involves a conflict between profit and public welfare, public welfare always wins.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:680e53d01127de773ebca328a9822f30e86f653bf8e3b3324b8bc7ca32666225",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Memory Aid: \"PSR\" = Public Safety Reporting.** Remember the three core elements: (P) Public safety above all else, (S) Specializations require credentials, (R) Report violations. When an LEA question involves a conflict between profit and public welfare, public welfare always wins.",
+      "children_text": "**Memory Aid: \"PSR\" = Public Safety Reporting.** Remember the three core elements: (P) Public safety above all else, (S) Specializations require credentials, (R) Report violations. When an LEA question involves a conflict between profit and public welfare, public welfare always wins.",
+      "start_offset": 4953,
+      "end_offset": 5248,
+      "line_start": 51,
+      "line_end": 51,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"ra9266\" section=\"Section 1-a, 1-c, 1-d, 1-f\" title=\"Public Obligation Under the Code\">\nSection 1-a requires architects to \"advance the safety, health and well-being of the people and the community\" and contribute to preservation of architectural heritage. Section 1-c requires compliance with government laws and regulations as a good citizen. Section 1-d prohibits paid advertisements and self-laudatory publicity. Section 1-f prohibits misrepresentation of qualifications unless backed by recognized expertise.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=ra9266, section=Section 1-a, 1-c, 1-d, 1-f, title=Public Obligation Under the Code",
+      "props_json": {
+        "code": "ra9266",
+        "section": "Section 1-a, 1-c, 1-d, 1-f",
+        "title": "Public Obligation Under the Code"
+      },
+      "children_raw": "Section 1-a requires architects to \"advance the safety, health and well-being of the people and the community\" and contribute to preservation of architectural heritage. Section 1-c requires compliance with government laws and regulations as a good citizen. Section 1-d prohibits paid advertisements and self-laudatory publicity. Section 1-f prohibits misrepresentation of qualifications unless backed by recognized expertise.",
+      "children_text": "Section 1-a requires architects to \"advance the safety, health and well-being of the people and the community\" and contribute to preservation of architectural heritage. Section 1-c requires compliance with government laws and regulations as a good citizen. Section 1-d prohibits paid advertisements and self-laudatory publicity. Section 1-f prohibits misrepresentation of qualifications unless backed by recognized expertise.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:bc9b8e32d78c6f3d5fe7872ece7bbcac1f8c767f6bb9d1cddaa6a3a0cb9c9467"
+    },
+    {
+      "block_id": "ui_0004",
+      "component_name": "Warn",
+      "raw": "<Warn>\n  **Exam Trap:** A common LEA distracter suggests that \"following client instructions\" or \"the client approved the design\" absolves the architect of public safety responsibility. This is WRONG. The architect's public obligation under Section 1-a is absolute and non-delegable. The architect cannot hide behind client approval when public safety is compromised. Section 23 makes the architect-of-record fully liable for sealed plans regardless of client instructions.\n</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**Exam Trap:** A common LEA distracter suggests that \"following client instructions\" or \"the client approved the design\" absolves the architect of public safety responsibility. This is WRONG. The architect's public obligation under Section 1-a is absolute and non-delegable. The architect cannot hide behind client approval when public safety is compromised. Section 23 makes the architect-of-record fully liable for sealed plans regardless of client instructions.",
+      "children_text": "**Exam Trap:** A common LEA distracter suggests that \"following client instructions\" or \"the client approved the design\" absolves the architect of public safety responsibility. This is WRONG. The architect's public obligation under Section 1-a is absolute and non-delegable. The architect cannot hide behind client approval when public safety is compromised. Section 23 makes the architect-of-record fully liable for sealed plans regardless of client instructions.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:730b8ee6d9fbbcee8c95b04077a54799eebfb7689a55091f69482b15b8fbe17b"
+    },
+    {
+      "block_id": "ui_0005",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **LEA Priority:** Questions about \"public obligation\" almost always test the hierarchy \u2014 public safety trumps client profit. The \"PSR\" mnemonic helps: (P) Public safety above all else, (S) Specializations require credentials, (R) Report violations. When an LEA question involves a conflict between profit and public welfare, public welfare always wins.\n</ExamTip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**LEA Priority:** Questions about \"public obligation\" almost always test the hierarchy \u2014 public safety trumps client profit. The \"PSR\" mnemonic helps: (P) Public safety above all else, (S) Specializations require credentials, (R) Report violations. When an LEA question involves a conflict between profit and public welfare, public welfare always wins.",
+      "children_text": "**LEA Priority:** Questions about \"public obligation\" almost always test the hierarchy \u2014 public safety trumps client profit. The \"PSR\" mnemonic helps: (P) Public safety above all else, (S) Specializations require credentials, (R) Report violations. When an LEA question involves a conflict between profit and public welfare, public welfare always wins.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:508afbbee060ec8822303f1c6154c0e0afa63b8f5d8fdbd82c331b302ea52529"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "15c70da0599efde52e7066a64686a2ef1f58eeb0853e09d0ae3d59cc2a79ba50"
+}

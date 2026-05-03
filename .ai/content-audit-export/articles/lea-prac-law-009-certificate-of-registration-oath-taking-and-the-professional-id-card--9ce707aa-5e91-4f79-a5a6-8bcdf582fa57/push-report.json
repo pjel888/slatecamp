@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:52:17.182Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+  "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:ca07d8ca85c11f180633034be40516604c120013918cb083eb4cd5e180662c00",
+  "original_hash": "sha256:ca07d8ca85c11f180633034be40516604c120013918cb083eb4cd5e180662c00",
+  "candidate_hash": "sha256:14a95d8cd272e7ddb0b2c2b39585bbf8c8824e562eeef67e5c8f4776802900ea",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

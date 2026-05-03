@@ -1,0 +1,41 @@
+{
+  "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+  "slug": "lea-dsgn-009-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.423Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:b2c20b7479e168f398176f3883eeeb99b3e7fa599af5ed06ecee327e7625970f",
+  "normalized_content_hash": "b2c20b7479e168f398176f3883eeeb99b3e7fa599af5ed06ecee327e7625970f",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n mistakes={[\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\n \"Treating the 2.5\u00d7 height rule as a legal 'limit' rather than a design optimization tool.\",\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\n 'Applying code minimums as the final design goal rather than the starting baseline.',\n ]}\n/>",
+      "raw_hash": "sha256:24dde1a64ed6171583b0906e67d6c37ebf330fa704c6d889829b2618e16b2807",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\\n \\\"Treating the 2.5\u00d7 height rule as a legal 'limit' rather than a design optimization tool.\\\",\\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\\n 'Applying code minimums as the final design goal rather than the starting baseline.',\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ac0adffc2be2497e135c974d4c795b76142952bd426a75d92bc389871adbc128",
+      "props": {
+        "mistakes": "{[\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\n \"Treating the 2.5\u00d7 height rule as a legal 'limit' rather than a design optimization tool.\",\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\n 'Applying code minimums as the final design goal rather than the starting baseline.',\n ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\n \"Treating the 2.5\u00d7 height rule as a legal 'limit' rather than a design optimization tool.\",\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\n 'Applying code minimums as the final design goal rather than the starting baseline.',\n ]}"
+      },
+      "props_text": "mistakes={[\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\n \"Treating the 2.5\u00d7 height rule as a legal 'limit' rather than a design optimization tool.\",\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\n 'Applying code minimums as the final design goal rather than the starting baseline.',\n ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 3394,
+      "end_offset": 3912,
+      "line_start": 64,
+      "line_end": 72,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:89b78cf959656a323d6c5ccfc74f81bb1c17108b4f863812a2bface73ff34613"
+}

@@ -1,0 +1,1240 @@
+{
+  "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:32b755a71406ba18ac7b5b800c3e386594d97e419f65b1ca604df1e1dcb93ee4",
+  "question_count": 28,
+  "questions": [
+    {
+      "question_id": "c3660284-79c8-4c4a-9df3-4381145a51b2",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, which fire zone designation permits ONLY Type IV and Type V construction, and why does this matter for allowable floor areas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-Fire Restricted Zones — these permit the highest floor areas, allowing for maximum building size without specific fire restrictions"
+        },
+        {
+          "id": "b",
+          "text": "Fire Restrictive Zones — these permit Types II through IV, providing a balance between safety and construction flexibility"
+        },
+        {
+          "id": "c",
+          "text": "Highly Fire Restrictive Zones — these permit Types IV and V only, which have the highest base floor areas in Section 705"
+        },
+        {
+          "id": "d",
+          "text": "Urban Density Zones — these override construction type restrictions, focusing on population density management"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This question tests the three-tier dependency chain: Fire Zone → permitted Construction Type → base Allowable Floor Area (Sec. 705) → Floor Area Increases (Sec. 706). Candidates must recognize that the most restrictive fire zone (Highly Fire Restrictive) paradoxically enables the largest buildings — because the highest fire-resistive construction types are the only ones permitted there, and those types carry the highest floor area limits.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:633b77404cb21df7dacdb1188361ca1b9858dd1826be171b6b65cb011d9fcfcd"
+    },
+    {
+      "question_id": "18afa6e5-56e0-45a8-b6b7-01e243c7a624",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the PRIMARY distinction between the Philippine system under Sec. 706 and the IBC system for allowable area increases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both systems use identical mathematical formulas to calculate floor area increases, ensuring consistency across jurisdictions"
+        },
+        {
+          "id": "b",
+          "text": "The PH system is discretionary (Building Official approval required); the IBC system is formula-based (no discretionary approval needed)"
+        },
+        {
+          "id": "c",
+          "text": "The IBC system requires Building Official approval; the PH system uses a formula, allowing for more flexibility in application"
+        },
+        {
+          "id": "d",
+          "text": "Both systems are entirely discretionary with no numerical thresholds, relying on professional judgment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A (identical formulas) is directly contradicted by the text of both codes. Option C reverses the two systems. Option D denies the existence of any numerical framework in either system, which is factually wrong. The PH system's flexibility (discretionary Building Official review) is its key advantage; the IBC system's certainty (formula-derived result) is its key advantage.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:35ebefc1031b1ae7575679af07316761e36b33dc57dcffc687833fa1c1e4b623"
+    },
+    {
+      "question_id": "19137561-9656-49ba-884a-f773eed28ef0",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "In the IBC Section 506.2 formula, what value is used for W (width of open space) in the formula when the actual open space is wider than 30 feet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The actual measured width of the open space"
+        },
+        {
+          "id": "b",
+          "text": "30 feet (9.14 m), which is the cap in the formula"
+        },
+        {
+          "id": "c",
+          "text": "The average of the actual width and 30 feet"
+        },
+        {
+          "id": "d",
+          "text": "There is no cap — the actual width is always used"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The W cap of 30 ft is often tested. Candidates sometimes assume that wider streets always produce larger area increases. The IBC drafters recognized that beyond 30 ft of open space, the fire department access and fire spread reduction benefits plateau — so the formula caps the variable at 30 ft. This cap is independent of the minimum qualifying width (20 ft) and the F/P threshold (0.25).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:66fd0e7197503672a62b12308130490adb1b8034831718279497ce160b054b26"
+    },
+    {
+      "question_id": "a9b4c92f-6df9-46d7-a1ff-a1853d6eb2d6",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the relationship between RA 9514 (Revised Fire Code of the Philippines) and PD 1096 Section 706 floor area increases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RA 9514 explicitly overrides Sec. 706 and eliminates all floor area increase provisions, thereby restricting any potential for expansion based on fire safety considerations"
+        },
+        {
+          "id": "b",
+          "text": "Sprinkler installation under RA 9514 strengthens the case for Building Official approval of area increases under Sec. 706, though it is not an explicit standalone trigger"
+        },
+        {
+          "id": "c",
+          "text": "RA 9514 and Sec. 706 operate independently with no connection between fire protection systems and floor area, maintaining separate regulatory domains"
+        },
+        {
+          "id": "d",
+          "text": "Buildings without sprinklers are automatically denied Section 706 increases, as fire safety cannot be assured without such systems in place"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A is factually incorrect — RA 9514 does not override PD 1096. Option C denies the real-world connection between fire protection investment and development flexibility. Option D overstates the sprinkler requirement — sprinklers strengthen the case but are not an explicit mandatory prerequisite for Sec. 706 approval in the Philippine system.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:249553768ffd937a2571c896fd318174c08d4ed5c4e40a46f46ac650f0cb1e6d"
+    },
+    {
+      "question_id": "38075322-c38c-402b-98ad-058e9aa5efce",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the IBC, what is the simplified form of the frontage increase formula (If) when the open space width equals or exceeds 30 feet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "If = F/P × 30, which applies when the open space is consistently maintained"
+        },
+        {
+          "id": "b",
+          "text": "If = F/P − 0.25"
+        },
+        {
+          "id": "c",
+          "text": "If = 0.25 − F/P, applicable only under specific zoning conditions"
+        },
+        {
+          "id": "d",
+          "text": "If = F/P, used when no additional modifications are required"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A (F/P × 30) drops both the threshold subtraction and the division by 30. Option C (0.25 − F/P) reverses the subtraction. Option D (F/P) omits the threshold subtraction entirely. All three are common errors that produce wrong answers in frontage calculations.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a7791386ee83e0e3545056000bf958e566130492c1aa5293a57e689876fabab"
+    },
+    {
+      "question_id": "b963e0f2-9544-4bf9-b28a-b5a9ca12c41e",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the IBC Section 506.4 Combined Area Formula, what is the correct expression for allowable building area per floor (Aa)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aa = At × (1 + If) × (1 + Is), which accounts for increases due to frontage and sprinkler systems"
+        },
+        {
+          "id": "b",
+          "text": "Aa = At + (At × If) + (At × Is)"
+        },
+        {
+          "id": "c",
+          "text": "Aa = At + If + Is, a simplified formula not accounting for all factors"
+        },
+        {
+          "id": "d",
+          "text": "Aa = At − (At × If) − (At × Is), which incorrectly suggests a reduction in area"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This formula tests whether candidates understand additive vs. multiplicative increases. The IBC system is formula-based and precise — any confusion between additive and multiplicative application produces a substantially wrong result. The IBC formula is a key comparison point with the discretionary Philippine system.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12c030a36c6f8b9707592aa8773593e760003207128169452c1ab7dc4416d519"
+    },
+    {
+      "question_id": "cc4314f7-d953-4913-9aba-852526a1aff4",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which of the following correctly identifies a dimension where the Philippine code (2004 Revised IRR) is MORE RESTRICTIVE than the US IRC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum chimney height above the roof surface (600 mm vs. 914 mm), which is less restrictive in the Philippine code"
+        },
+        {
+          "id": "b",
+          "text": "Minimum interior chimney clearance to combustibles (50 mm vs. 50 mm), which is identical in both codes"
+        },
+        {
+          "id": "c",
+          "text": "Hearth extension on each side of the fireplace opening (300 mm vs. 203 mm)"
+        },
+        {
+          "id": "d",
+          "text": "Smoke chamber back wall thickness (150 mm vs. 152 mm), which shows a slight difference but not a significant restriction"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The PH code's larger hearth extension requirement (300 mm vs. 203 mm per side) reflects a deliberate safety margin for Philippine heritage homes with combustible flooring materials like narra parquet, bamboo, and wood.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:53c30fbaa19be8a9be88150bfb1b2fd52149be111874c3b44bbe29b75e479c4c"
+    },
+    {
+      "question_id": "eeca9b02-f12d-4226-883d-39085decca1e",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1301, what is the maximum allowable transition time from main power failure to emergency generator power in a hospital?",
+      "options": [
+        {
+          "id": "em-008-a",
+          "text": "5 seconds"
+        },
+        {
+          "id": "em-008-b",
+          "text": "10 seconds"
+        },
+        {
+          "id": "em-008-c",
+          "text": "15 seconds"
+        },
+        {
+          "id": "em-008-d",
+          "text": "30 seconds"
+        }
+      ],
+      "correct_option_id": "em-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Hospitals are classified as critical-care occupancies where power interruption can directly result in loss of life. The 10-second maximum is not a design target — it is a hard limit. Generator startup time, transfer switch timing, and load sequencing must all be coordinated to ensure compliance.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4526dea91cf0255a57688d6fe5c2a69a5053b8037422b014af0bb585c53c6900"
+    },
+    {
+      "question_id": "147497c3-899a-4c27-983f-a9cc61179389",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A Type III-A office building (Group B, multi-story) has a tabular area (At) of 19,000 sq ft per IBC Table 506.2. The frontage increase factor If = 0.375, and a full NFPA 13 system is installed. What is the allowable building area per floor (Aa) using the IBC combined formula?",
+      "options": [
+        {
+          "id": "a",
+          "text": "19,000 sq ft — the base tabular area without modifications since both factors must be approved by the Building Official"
+        },
+        {
+          "id": "b",
+          "text": "37,125 sq ft — applying only the frontage increase (At + At × 0.375) and omitting the sprinkler factor"
+        },
+        {
+          "id": "c",
+          "text": "64,125 sq ft — applying both increases additively: 19,000 + 7,125 + 38,000"
+        },
+        {
+          "id": "d",
+          "text": "71,250 sq ft — applying both increases but using Is = 3.00 (the single-story factor) on this multi-story building"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Multi-story + NFPA 13 → Is = 2.00. Aa = At + (At × If) + (At × Is) = 19,000 + (19,000 × 0.375) + (19,000 × 2.00) = 19,000 + 7,125 + 38,000 = 64,125 sq ft.",
+      "explanation": "Option B forgets the sprinkler increase. Option D uses Is = 3.00 (single-story factor) on a multi-story building — a classic trap. Always confirm single vs. multi-story before selecting Is. The combined result of 64,125 sq ft represents a 237% increase over the base 19,000 sq ft tabular area.",
+      "code_citation": "IBC 2021, Sec. 506.4",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da15f2fac2560099ee015dae6468c575c00bdf2ae26cbd12fd3eb8087b03fd17"
+    },
+    {
+      "question_id": "c9a0dfc7-1898-4998-85f2-a0deb6dcbc87",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which area is EXCLUDED from the calculation of Gross Floor Area (GFA) under the 2004 Revised IRR of PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Covered parking areas provided to satisfy minimum parking requirements under the applicable zoning ordinance"
+        },
+        {
+          "id": "b",
+          "text": "All corridors, lobbies, and toilet rooms located within the building envelope regardless of purpose, as they contribute to the building's functional circulation."
+        },
+        {
+          "id": "c",
+          "text": "Enclosed mezzanine floors that are accessible by permanent stair from the floor below, which are considered part of the usable floor area."
+        },
+        {
+          "id": "d",
+          "text": "Covered balconies and terraces that are enclosed on three or more sides by permanent walls, which may be included in the GFA if they serve as habitable spaces."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Required parking areas — when provided to satisfy minimum parking requirements — are excluded from GFA under the 2004 Revised IRR. This exclusion means a parking podium does not consume the FLAR allowance. Corridors, lobbies, toilets, enclosed mezzanines, and covered balconies all count toward GFA.",
+      "explanation": "The GFA exclusion for required parking incentivizes adequate parking provision without penalizing the developer through reduced allowable GFA. This policy rationlea explains the prevleance of podium-type developments in Philippine mixed-use projects.",
+      "code_citation": "2004 Revised IRR, Guidelines on Determining GFA",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:01ae2beea3f2b6939d263bc0703d01fb30cada9ede59844c278dc55d7ae45171"
+    },
+    {
+      "question_id": "6afd710f-c2dc-4953-8199-4b7806cf7adf",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the Philippine floor area framework (2004 Revised IRR), PSO (Percent of Site Occupancy) multiplied by TLA (Total Lot Area) produces which result?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FLAR (Floor to Lot Area Ratio), the primary density control mechanism used in local zoning"
+        },
+        {
+          "id": "b",
+          "text": "AMBF (Allowable Maximum Building Footprint), the maximum ground-floor coverage of the building"
+        },
+        {
+          "id": "c",
+          "text": "TGFA (Total Gross Floor Area), the aggregate floor area computed across all building floors"
+        },
+        {
+          "id": "d",
+          "text": "GFA (Gross Floor Area), the actual usable floor area after exclusions are applied per IRR guidelines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PSO × TLA = AMBF (Allowable Maximum Building Footprint). PSO controls the horizontal footprint — the maximum ground-floor coverage. FLAR controls total vertical floor area; GFA is the actual computed area after exclusions.",
+      "explanation": "The AMBF = TLA × PSO formula is the starting point for all building footprint calculations. A slender tower can have a small PSO (small footprint) but a high FLAR (many stacked floors). These are two independent simultaneous controls on building size.",
+      "code_citation": "2004 Revised IRR, Guidelines on Determining GFA",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0a68ee7cde1d01be5d1278c19ef927cebbab36dad3d1cd71efebcc72ba4b7bce"
+    },
+    {
+      "question_id": "3f6e2a2d-44c5-4d05-87d5-b7ce156b8d58",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Section 706 of PD 1096 (Rule VII) states that floor area increases are allowed 'based on the existence of public space, streets or yards extending along and adjoining two or more sides of the building or structure subject to the approval of the Building Official.' Which statement correctly identifies both required conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Installation of a full NFPA 13 sprinkler system AND written approval from the Department of Public Works and Highways"
+        },
+        {
+          "id": "b",
+          "text": "Public space, streets, or yards adjoining at least one side of the building AND a FLAR of at least 3.0 in the applicable zone"
+        },
+        {
+          "id": "c",
+          "text": "Public space, streets, or yards extending along and adjoining two or more sides AND subject to Building Official approval"
+        },
+        {
+          "id": "d",
+          "text": "A corner lot location AND a minimum setback of 6.0 m along each adjoining public street frontage"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 706 requires two concurrent conditions: (1) qualifying frontage on two or more sides — a mid-block building fronting only one street does not qualify; and (2) Building Official approval. Both must coexist. The sprinkler system strengthens the case for approval but is not an explicit enumerated condition in Sec. 706.",
+      "explanation": "Option B is the most common wrong answer — 'one side' is insufficient. The provision requires 'two or more sides.' The rationlea is that multi-sided frontage provides more effective fire separation from neighboring structures, reducing the cumulative fire risk that justifies floor area limits.",
+      "code_citation": "PD 1096, Rule VII, Sec. 706",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a79f6d52ee122fcfb2823843f0da975e9911a71851413bbbf3e4bb042ee89744"
+    },
+    {
+      "question_id": "cd156239-c087-4e1f-8f16-a1573e8c69c0",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VII, Section 708, what are the maximum PSO (Percent of Site Occupancy) values for Group A Dwellings on a corner lot versus an inside lot?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corner lot: 80%; inside lot: 70% — reflecting the additional road access a corner provides"
+        },
+        {
+          "id": "b",
+          "text": "Corner lot: 90%; inside lot: 80% — corner lots have additional road frontage that justifies higher coverage"
+        },
+        {
+          "id": "c",
+          "text": "Corner lot: 75%; inside lot: 65% — corner lots have greater setback requirements that reduce coverage"
+        },
+        {
+          "id": "d",
+          "text": "Corner lot: 85%; inside lot: 80% — based on the standard zoning table for all residential occupancies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 708 establishes: Group A Dwellings on a corner lot may cover up to 90% of the lot area (PSO = 90%), while on an inside lot the maximum is 80% (PSO = 80%). The corner lot's additional road frontage justifies the higher allowable coverage.",
+      "explanation": "These PSO values for Group A are higher than those for other residential occupancy groups. The confusion arises because in other groups, corner lots also receive higher allowances, but at lower absolute values. For Group A specifically, Section 708 establishes these high coverage percentages reflecting the low-rise, high-density character of Filipino residential neighborhoods.",
+      "code_citation": "PD 1096, Rule VII, Sec. 708",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:94a9789fee9bfb6dc6fdb9ab4dbee9ca1dd58d496226beb0c6090ab8b306b4b8"
+    },
+    {
+      "question_id": "89c00ffc-be69-4b9a-be94-8a88d96b086c",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under IBC Section 506.4, the Combined Area Formula for allowable building area per floor is expressed as Aa = At + (At × If) + (At × Is). Which statement correctly distinguishes this formula from the multiplicative alternative?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The formula compounds the increases: Aa = At × (1 + If) × (1 + Is), which gives a larger result than additive"
+        },
+        {
+          "id": "b",
+          "text": "The increases are additive — each bonus is calculated separately as a percentage of At and then summed with At"
+        },
+        {
+          "id": "c",
+          "text": "Only one increase factor may be applied at a time — If and Is cannot be used simultaneously"
+        },
+        {
+          "id": "d",
+          "text": "The formula applies only to single-story buildings; multi-story buildings use a different IBC section"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The IBC Section 506.4 formula is additive: Aa = At + (At × If) + (At × Is). Both increases are calculated independently as percentages of At and then added to At. Compounding (multiplying the factors) would produce a substantially larger and incorrect result.",
+      "explanation": "For a multi-story building with If = 0.75 and Is = 2.00, additive gives At + 0.75At + 2.00At = 3.75At. The multiplicative approach would give At × 1.75 × 3.00 = 5.25At — a 40% overstatement. The IBC explicitly uses additive form to prevent double-compounding of two independent safety bonuses.",
+      "code_citation": "IBC 2021, Sec. 506.4",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e84790decc3f994efee45a1bb6b028235dd6c5eaba9625069f5fda4679e9026d"
+    },
+    {
+      "question_id": "8ee63b08-2b19-4167-bd7a-0835309c79ec",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under IBC Section 506.3, what are the sprinkler increase factors (Is) for a MULTI-STORY building versus a SINGLE-STORY building, both with a full NFPA 13 system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-story: Is = 1.50; single-story: Is = 2.00 — single-story gains more because sprinklers are more effective laterally, providing enhanced coverage across the floor area."
+        },
+        {
+          "id": "b",
+          "text": "Multi-story: Is = 2.00; single-story: Is = 3.00 — single-story gets a larger bonus as fire control is more effective without vertical spread"
+        },
+        {
+          "id": "c",
+          "text": "Multi-story: Is = 3.00; single-story: Is = 2.00 — multi-story buildings have more floors to protect, warranting the higher factor, ensuring comprehensive fire safety across all levels."
+        },
+        {
+          "id": "d",
+          "text": "Multi-story: Is = 2.00; single-story: Is = 2.00 — the same factor applies regardless of building height under IBC, simplifying the application of fire safety measures."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "IBC Section 506.3: multi-story buildings with NFPA 13 sprinklers → Is = 2.00; single-story buildings → Is = 3.00. Single-story buildings receive the higher increase because sprinklers control fires in the horizontal plane without the complication of vertical smoke and flame travel through multiple floors.",
+      "explanation": "Option D (same factor for both) is the most common error. The distinction between single-story and multi-story sprinkler bonuses reflects fire physics: in a single-story building, sprinklers suppress the fire in the horizontal plane with no vertical complications. The 1.00-point difference between Is = 2.00 and Is = 3.00 is significant in combined area calculations.",
+      "code_citation": "IBC 2021, Sec. 506.3",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d5d884eada7eed03acfd1632152535be646b8c57f0301596763757121e1a7e79"
+    },
+    {
+      "question_id": "04ebedb6-5243-443d-80b6-d78280f2aefa",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the PRIMARY structural distinction between the Philippine Section 706 system and the IBC Section 506 system for allowable area increases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both systems use identical mathematical formulas — the only difference is that Philippine law denominates the result in square meters while IBC uses square feet, which affects the conversion process during international projects"
+        },
+        {
+          "id": "b",
+          "text": "The PH system (Sec. 706) is discretionary — the Building Official evaluates conditions and approves; the IBC system is formula-based — the result is computed without requiring discretionary approval"
+        },
+        {
+          "id": "c",
+          "text": "The IBC system requires Building Official discretionary approval for every area increase; the PH system uses a formula that self-executes upon meeting the frontage condition, ensuring compliance without additional review"
+        },
+        {
+          "id": "d",
+          "text": "Both systems are entirely discretionary with no numerical thresholds, relying entirely on the judgment of the relevant authority, which can lead to inconsistencies in application across different jurisdictions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The Philippine system under Sec. 706 is discretionary — the Building Official evaluates whether conditions are met and exercises judgment. The IBC system is formula-based — the designer computes Aa using the IBC formula and the result is the allowable area without requiring separate discretionary approval.",
+      "explanation": "Option C reverses the two systems. The PH system's flexibility (discretionary Building Official review) allows context-specific judgment. The IBC system's certainty (formula-derived result) provides predictability. Developers working under the IBC can calculate allowable area with confidence before submitting plans.",
+      "code_citation": "PD 1096, Rule VII, Sec. 706; IBC 2021, Sec. 506.4",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27a425864a48ad6b26898f6fc511baed2d1f812b0b2fc8ca4322dc3d5b64529f"
+    },
+    {
+      "question_id": "42f32ed3-4d07-42fb-963f-a96828c5b6b9",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "In the IBC Section 506.2 frontage increase formula (If = [F/P − 0.25] × [W/30]), what is the minimum F/P ratio required for any frontage increase to apply, and what is the maximum value of If?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F/P must exceed 0.25 (25%); maximum If is capped at 0.75 (75%)"
+        },
+        {
+          "id": "b",
+          "text": "F/P must equal or exceed 0.50 (50%); maximum If is capped at 1.00 (100%)"
+        },
+        {
+          "id": "c",
+          "text": "F/P must exceed 0.15 (15%); maximum If is capped at 0.50 (50%)"
+        },
+        {
+          "id": "d",
+          "text": "F/P must exceed 0.30 (30%); maximum If is capped at 0.60 (60%)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "IBC Section 506.2: the fraction F/P must be greater than 0.25 (25%) for any frontage increase to apply. Buildings with less than 25% qualifying frontage receive no increase. The maximum value of If is capped at 0.75 (75%) regardless of how large the actual F/P ratio is.",
+      "explanation": "The 0.25 threshold is the qualifying floor — below it, no increase. The 0.75 cap prevents the frontage bonus from dominating the calculation. Both are hard limits that must be memorized. The simplified form when W = 30 ft (the cap): If = F/P − 0.25.",
+      "code_citation": "IBC 2021, Sec. 506.2",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f05bdfe29f20760de19060db89d182de24d539d3403ee01149a9d9a6cda21a90"
+    },
+    {
+      "question_id": "b2f75d2e-6f80-443a-81c0-9b74519df098",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building has a rectangular footprint 60 m long × 40 m wide. It fronts on a 10-meter-wide street on both long sides. Using the IBC Section 506.2 formula (W capped at 30 ft), what is the frontage increase factor (If)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "If = 0.25, the minimum threshold value at which the formula begins to produce a result"
+        },
+        {
+          "id": "b",
+          "text": "If = 0.60, the raw F/P ratio without applying the required 0.25 threshold deduction"
+        },
+        {
+          "id": "c",
+          "text": "If = 0.35, calculated as F/P (0.60) minus the 0.25 threshold with W/30 = 1.0"
+        },
+        {
+          "id": "d",
+          "text": "If = 0.75, the maximum cap regardless of the calculated F/P ratio for this configuration"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "P = 2(60) + 2(40) = 200 m. F = 60 + 60 = 120 m (two long sides). F/P = 120/200 = 0.60. W = 10 m = 32.8 ft, capped at 30 ft → (W/30) = 1.0. If = [0.60 − 0.25] × 1.0 = 0.35.",
+      "explanation": "Option A (0.25) is the threshold — forgetting to subtract it from F/P. Option B (0.60) is the raw F/P ratio — forgetting the subtraction entirely. Option D (0.75) is the maximum cap. Converting meters to feet for W, applying the 30 ft cap, computing F/P correctly, and subtracting 0.25 are all required steps.",
+      "code_citation": "IBC 2021, Sec. 506.2",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.112658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1f1cd0a3fa380ee1c7b42ea8ac7f135dbbca392dc50826adaf6d17c8d5700ed6"
+    },
+    {
+      "question_id": "31d7b5e0-9917-4bbb-a572-24acf07f3634",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under IBC Section 506.4, the Combined Area Formula for allowable building area per floor is expressed as Aa = At + (At × If) + (At × Is). Which statement correctly distinguishes this formula from the multiplicative alternative?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The formula compounds the increases: Aa = At × (1 + If) × (1 + Is), which gives a larger result than additive"
+        },
+        {
+          "id": "b",
+          "text": "The increases are additive — each bonus is calculated separately as a percentage of At and then summed with At"
+        },
+        {
+          "id": "c",
+          "text": "Only one increase factor may be applied at a time — If and Is cannot be used simultaneously"
+        },
+        {
+          "id": "d",
+          "text": "The formula applies only to single-story buildings; multi-story buildings use a different IBC section"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The IBC Section 506.4 formula is additive: Aa = At + (At × If) + (At × Is). Both increases are calculated independently as percentages of At and then added to At. Compounding (multiplying the factors) would produce a substantially larger and incorrect result.",
+      "explanation": "For a multi-story building with If = 0.75 and Is = 2.00, additive gives At + 0.75At + 2.00At = 3.75At. The multiplicative approach would give At × 1.75 × 3.00 = 5.25At — a 40% overstatement. The IBC explicitly uses additive form to prevent double-compounding of two independent safety bonuses.",
+      "code_citation": "IBC 2021, Sec. 506.4",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5335744583efe29640433682921ec0f7737127b3489ac2d0d318bfefe3c63eda"
+    },
+    {
+      "question_id": "94e8b454-62b7-4202-a0c4-f674df80d502",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under IBC Section 506.3, what are the sprinkler increase factors (Is) for a MULTI-STORY building versus a SINGLE-STORY building, both with a full NFPA 13 system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-story: Is = 1.50; single-story: Is = 2.00 — single-story gains more because sprinklers are more effective laterally, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Multi-story: Is = 2.00; single-story: Is = 3.00 — single-story gets a larger bonus as fire control is more effective without vertical spread"
+        },
+        {
+          "id": "c",
+          "text": "Multi-story: Is = 3.00; single-story: Is = 2.00 — multi-story buildings have more floors to protect, warranting the higher factor, which is not supported by IBC guidelines"
+        },
+        {
+          "id": "d",
+          "text": "Multi-story: Is = 2.00; single-story: Is = 2.00 — the same factor applies regardless of building height under IBC, which simplifies the application of fire safety measures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "IBC Section 506.3: multi-story buildings with NFPA 13 sprinklers → Is = 2.00; single-story buildings → Is = 3.00. Single-story buildings receive the higher increase because sprinklers control fires in the horizontal plane without the complication of vertical smoke and flame travel through multiple floors.",
+      "explanation": "Option D (same factor for both) is the most common error. The distinction between single-story and multi-story sprinkler bonuses reflects fire physics: in a single-story building, sprinklers suppress the fire in the horizontal plane with no vertical complications. The 1.00-point difference between Is = 2.00 and Is = 3.00 is significant in combined area calculations.",
+      "code_citation": "IBC 2021, Sec. 506.3",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5600949028d12292fddfa3ab812ac93bd403e6cbc3e141b0a3b5c49290d383ef"
+    },
+    {
+      "question_id": "dcb3fbf7-166b-49ce-b368-ce4142630a43",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A Type III-A office building (Group B, multi-story) has a tabular area (At) of 19,000 sq ft per IBC Table 506.2. The frontage increase factor If = 0.375, and a full NFPA 13 system is installed. What is the allowable building area per floor (Aa) using the IBC combined formula?",
+      "options": [
+        {
+          "id": "a",
+          "text": "19,000 sq ft — the base tabular area without modifications since both factors must be approved by the Building Official"
+        },
+        {
+          "id": "b",
+          "text": "37,125 sq ft — applying only the frontage increase (At + At × 0.375) and omitting the sprinkler factor"
+        },
+        {
+          "id": "c",
+          "text": "64,125 sq ft — applying both increases additively: 19,000 + 7,125 + 38,000"
+        },
+        {
+          "id": "d",
+          "text": "71,250 sq ft — applying both increases but using Is = 3.00 (the single-story factor) on this multi-story building"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Multi-story + NFPA 13 → Is = 2.00. Aa = At + (At × If) + (At × Is) = 19,000 + (19,000 × 0.375) + (19,000 × 2.00) = 19,000 + 7,125 + 38,000 = 64,125 sq ft.",
+      "explanation": "Option B forgets the sprinkler increase. Option D uses Is = 3.00 (single-story factor) on a multi-story building — a classic trap. Always confirm single vs. multi-story before selecting Is. The combined result of 64,125 sq ft represents a 237% increase over the base 19,000 sq ft tabular area.",
+      "code_citation": "IBC 2021, Sec. 506.4",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:71e07fe442334752192725baeb55878da32964058b7961954260ca5d236c62e5"
+    },
+    {
+      "question_id": "1189db66-0c61-4728-81d9-9103e824693e",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the Philippine floor area framework (2004 Revised IRR), PSO (Percent of Site Occupancy) multiplied by TLA (Total Lot Area) produces which result?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FLAR (Floor to Lot Area Ratio), the primary density control mechanism used in local zoning"
+        },
+        {
+          "id": "b",
+          "text": "AMBF (Allowable Maximum Building Footprint), the maximum ground-floor coverage of the building"
+        },
+        {
+          "id": "c",
+          "text": "TGFA (Total Gross Floor Area), the aggregate floor area computed across all building floors"
+        },
+        {
+          "id": "d",
+          "text": "GFA (Gross Floor Area), the actual usable floor area after exclusions are applied per IRR guidelines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PSO × TLA = AMBF (Allowable Maximum Building Footprint). PSO controls the horizontal footprint — the maximum ground-floor coverage. FLAR controls total vertical floor area; GFA is the actual computed area after exclusions.",
+      "explanation": "The AMBF = TLA × PSO formula is the starting point for all building footprint calculations. A slender tower can have a small PSO (small footprint) but a high FLAR (many stacked floors). These are two independent simultaneous controls on building size.",
+      "code_citation": "2004 Revised IRR, Guidelines on Determining GFA",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:82c773f8c0fb9d51bf645fc50342ca794531c0fed8bdf12f2b5525a6cb1dde5c"
+    },
+    {
+      "question_id": "c25955f6-1c88-4260-afcb-925dac06acd4",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Section 706 of PD 1096 (Rule VII) states that floor area increases are allowed 'based on the existence of public space, streets or yards extending along and adjoining two or more sides of the building or structure subject to the approval of the Building Official.' Which statement correctly identifies both required conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Installation of a full NFPA 13 sprinkler system AND written approval from the Department of Public Works and Highways"
+        },
+        {
+          "id": "b",
+          "text": "Public space, streets, or yards adjoining at least one side of the building AND a FLAR of at least 3.0 in the applicable zone"
+        },
+        {
+          "id": "c",
+          "text": "Public space, streets, or yards extending along and adjoining two or more sides AND subject to Building Official approval"
+        },
+        {
+          "id": "d",
+          "text": "A corner lot location AND a minimum setback of 6.0 m along each adjoining public street frontage"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 706 requires two concurrent conditions: (1) qualifying frontage on two or more sides — a mid-block building fronting only one street does not qualify; and (2) Building Official approval. Both must coexist. The sprinkler system strengthens the case for approval but is not an explicit enumerated condition in Sec. 706.",
+      "explanation": "Option B is the most common wrong answer — 'one side' is insufficient. The provision requires 'two or more sides.' The rationlea is that multi-sided frontage provides more effective fire separation from neighboring structures, reducing the cumulative fire risk that justifies floor area limits.",
+      "code_citation": "PD 1096, Rule VII, Sec. 706",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a02db0f3ba646dee17a95b940e114bed7456e164e679139aa3e4535a9d93e891"
+    },
+    {
+      "question_id": "fb32318a-7854-45fc-8a16-f648df74f484",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "In the IBC Section 506.2 frontage increase formula (If = [F/P − 0.25] × [W/30]), what is the minimum F/P ratio required for any frontage increase to apply, and what is the maximum value of If?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F/P must exceed 0.25 (25%); maximum If is capped at 0.75 (75%)"
+        },
+        {
+          "id": "b",
+          "text": "F/P must equal or exceed 0.50 (50%); maximum If is capped at 1.00 (100%)"
+        },
+        {
+          "id": "c",
+          "text": "F/P must exceed 0.15 (15%); maximum If is capped at 0.50 (50%)"
+        },
+        {
+          "id": "d",
+          "text": "F/P must exceed 0.30 (30%); maximum If is capped at 0.60 (60%)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "IBC Section 506.2: the fraction F/P must be greater than 0.25 (25%) for any frontage increase to apply. Buildings with less than 25% qualifying frontage receive no increase. The maximum value of If is capped at 0.75 (75%) regardless of how large the actual F/P ratio is.",
+      "explanation": "The 0.25 threshold is the qualifying floor — below it, no increase. The 0.75 cap prevents the frontage bonus from dominating the calculation. Both are hard limits that must be memorized. The simplified form when W = 30 ft (the cap): If = F/P − 0.25.",
+      "code_citation": "IBC 2021, Sec. 506.2",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:663cab380c11a22453c11868019e294e147ce9f2352387b17f5164d61dca8b2a"
+    },
+    {
+      "question_id": "ebe9390a-cc09-431d-ac38-b79e916a1da1",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building has a rectangular footprint 60 m long × 40 m wide. It fronts on a 10-meter-wide street on both long sides. Using the IBC Section 506.2 formula (W capped at 30 ft), what is the frontage increase factor (If)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "If = 0.25, the minimum threshold value at which the formula begins to produce a result"
+        },
+        {
+          "id": "b",
+          "text": "If = 0.60, the raw F/P ratio without applying the required 0.25 threshold deduction"
+        },
+        {
+          "id": "c",
+          "text": "If = 0.35, calculated as F/P (0.60) minus the 0.25 threshold with W/30 = 1.0"
+        },
+        {
+          "id": "d",
+          "text": "If = 0.75, the maximum cap regardless of the calculated F/P ratio for this configuration"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "P = 2(60) + 2(40) = 200 m. F = 60 + 60 = 120 m (two long sides). F/P = 120/200 = 0.60. W = 10 m = 32.8 ft, capped at 30 ft → (W/30) = 1.0. If = [0.60 − 0.25] × 1.0 = 0.35.",
+      "explanation": "Option A (0.25) is the threshold — forgetting to subtract it from F/P. Option B (0.60) is the raw F/P ratio — forgetting the subtraction entirely. Option D (0.75) is the maximum cap. Converting meters to feet for W, applying the 30 ft cap, computing F/P correctly, and subtracting 0.25 are all required steps.",
+      "code_citation": "IBC 2021, Sec. 506.2",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:384bec02ac89e18760830ac963102c49f3810f0bb1d7e64c8b14cc9f5093fff2"
+    },
+    {
+      "question_id": "6cd7dc61-34eb-4eba-b271-69c880b5626f",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which area is EXCLUDED from the calculation of Gross Floor Area (GFA) under the 2004 Revised IRR of PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Covered parking areas provided to satisfy minimum parking requirements under the applicable zoning ordinance"
+        },
+        {
+          "id": "b",
+          "text": "All corridors, lobbies, and toilet rooms located within the building envelope regardless of purpose, as they contribute to the overall usable space"
+        },
+        {
+          "id": "c",
+          "text": "Enclosed mezzanine floors that are accessible by permanent stair from the floor below, which are considered part of the building's functional area"
+        },
+        {
+          "id": "d",
+          "text": "Covered balconies and terraces that are enclosed on three or more sides by permanent walls, adding to the building's habitable space"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Required parking areas — when provided to satisfy minimum parking requirements — are excluded from GFA under the 2004 Revised IRR. This exclusion means a parking podium does not consume the FLAR allowance. Corridors, lobbies, toilets, enclosed mezzanines, and covered balconies all count toward GFA.",
+      "explanation": "The GFA exclusion for required parking incentivizes adequate parking provision without penalizing the developer through reduced allowable GFA. This policy rationlea explains the prevleance of podium-type developments in Philippine mixed-use projects.",
+      "code_citation": "2004 Revised IRR, Guidelines on Determining GFA",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f092101208d3e095b97b1c98a50d8ed6c263fac611d2bba5b6c91771cd7ca1f7"
+    },
+    {
+      "question_id": "f39e3f4e-7060-4592-98df-db47e0581922",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the PRIMARY structural distinction between the Philippine Section 706 system and the IBC Section 506 system for allowable area increases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both systems use identical mathematical formulas — the only difference is that Philippine law denominates the result in square meters while IBC uses square feet, affecting unit conversion"
+        },
+        {
+          "id": "b",
+          "text": "The PH system (Sec. 706) is discretionary — the Building Official evaluates conditions and approves; the IBC system is formula-based — the result is computed without requiring discretionary approval"
+        },
+        {
+          "id": "c",
+          "text": "The IBC system requires Building Official discretionary approval for every area increase; the PH system uses a formula that self-executes upon meeting the frontage condition, streamlining the process"
+        },
+        {
+          "id": "d",
+          "text": "Both systems are entirely discretionary with no numerical thresholds, relying entirely on the judgment of the relevant authority, which can vary significantly"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The Philippine system under Sec. 706 is discretionary — the Building Official evaluates whether conditions are met and exercises judgment. The IBC system is formula-based — the designer computes Aa using the IBC formula and the result is the allowable area without requiring separate discretionary approval.",
+      "explanation": "Option C reverses the two systems. The PH system's flexibility (discretionary Building Official review) allows context-specific judgment. The IBC system's certainty (formula-derived result) provides predictability. Developers working under the IBC can calculate allowable area with confidence before submitting plans.",
+      "code_citation": "PD 1096, Rule VII, Sec. 706; IBC 2021, Sec. 506.4",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:78e006500d8d7b3e0968d8ba0cc679c6be4b7f1695f3aa3a976ac08ad2256260"
+    },
+    {
+      "question_id": "39fca092-4137-46e3-a462-c21a252e059b",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VII, Section 708, what are the maximum PSO (Percent of Site Occupancy) values for Group A Dwellings on a corner lot versus an inside lot?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corner lot: 80%; inside lot: 70% — reflecting the additional road access a corner provides"
+        },
+        {
+          "id": "b",
+          "text": "Corner lot: 90%; inside lot: 80% — corner lots have additional road frontage that justifies higher coverage"
+        },
+        {
+          "id": "c",
+          "text": "Corner lot: 75%; inside lot: 65% — corner lots have greater setback requirements that reduce coverage"
+        },
+        {
+          "id": "d",
+          "text": "Corner lot: 85%; inside lot: 80% — based on the standard zoning table for all residential occupancies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 708 establishes: Group A Dwellings on a corner lot may cover up to 90% of the lot area (PSO = 90%), while on an inside lot the maximum is 80% (PSO = 80%). The corner lot's additional road frontage justifies the higher allowable coverage.",
+      "explanation": "These PSO values for Group A are higher than those for other residential occupancy groups. The confusion arises because in other groups, corner lots also receive higher allowances, but at lower absolute values. For Group A specifically, Section 708 establishes these high coverage percentages reflecting the low-rise, high-density character of Filipino residential neighborhoods.",
+      "code_citation": "PD 1096, Rule VII, Sec. 708",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.021137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e69f17c5fd0e2f1a7fb8872eb62b46f36150abb69fbd06c4a3cff58708edb453"
+    }
+  ]
+}

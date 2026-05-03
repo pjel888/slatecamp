@@ -1,0 +1,562 @@
+{
+  "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:f77fdad8cae5dbde313b063d7f933fb4cdf951145d11fec34c037ab66dba6436",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "58295282-30d6-4f57-b2a8-ed39144921c2",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"BP 344 Accessible Washrooms\", if a project requires 300 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "300 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "300 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "300 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 300 mm as the requirement. Context: +\r <--- 750mm clear transfer\r \r Label:\r \r - Side wall grab bar: 900mm long, top ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.60525+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b662d9e5ae777aa98833eba2320691f810219c32364b2e8863f0da33ec0f52ba"
+    },
+    {
+      "question_id": "3badda29-6310-42a0-a47c-98fdea52f5e3",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What are the minimum clear floor dimensions for an accessible toilet cubicle under BP 344 2024 IRR Section 6.1.a, and what is the separate turning space requirement under Section 6.4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimum cubicle clear floor: 1500 mm × 1500 mm; turning space: 1800 mm × 1800 mm for a full 360° wheelchair turn"
+        },
+        {
+          "id": "B",
+          "text": "Minimum cubicle clear floor: 1200 mm × 1800 mm; turning space: 1500 mm × 1500 mm — the narrower cubicle allows side transfer if the turning area is nearby"
+        },
+        {
+          "id": "C",
+          "text": "Minimum cubicle clear floor: 1800 mm × 2250 mm; turning space: 2000 mm × 2000 mm — the larger dimensions accommodate door swing and an attendant"
+        },
+        {
+          "id": "D",
+          "text": "Minimum cubicle clear floor: 1800 mm × 1800 mm; turning space: 1800 mm × 1800 mm — both use the same 1.8 m square dimension"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both the accessible WC cubicle minimum clear floor and the turning space are 1800 mm × 1800 mm — the '1.8 Rule'",
+        "explanation": "Section 6.1.a specifies a minimum clear floor of 1800 mm × 1800 mm for the accessible toilet cubicle. Deeper layouts of 1800 × 2250 mm are acceptable for door swing and additional maneuvering, but the key exam minimum is 1.8 × 1.8 m clear. Section 6.4 independently specifies 1800 × 1800 mm as the turning space for a full 360° wheelchair rotation. The mnemonic 'The 1.8 Rule' covers both — the wheelchair dance floor used for turning and for roll-in showers.",
+        "common_misconceptions": [
+          "Using 1500 × 1500 mm from older references — the 2024 IRR specifies 1800 × 1800 mm",
+          "Confusing the 1800 × 2250 mm deeper layout option with the code minimum of 1800 × 1800 mm"
+        ]
+      },
+      "explanation": "Tests the foundational '1.8 Rule' — the most frequently tested accessible washroom dimension.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.1.a, 6.4",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f8fd7e47019106929a8dde0c7ec59bd95322eb7e8edac8d278ce2c6373a79066"
+    },
+    {
+      "question_id": "2331bf6f-4e0b-4728-ab79-a7c3a34ef068",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 6.9, what is the maximum rim height for an accessible lavatory, and what knee clearance dimensions must be provided beneath it?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum rim height: 800 mm AFF; knee clearance: minimum 650 mm height and 500 mm depth under the basin so a wheelchair can roll underneath"
+        },
+        {
+          "id": "B",
+          "text": "Maximum rim height: 750 mm AFF; knee clearance: minimum 700 mm height and 450 mm depth — mirrors the grab bar height used at toilet positions"
+        },
+        {
+          "id": "C",
+          "text": "Maximum rim height: 900 mm AFF; knee clearance: minimum 650 mm height and 500 mm depth — the higher rim accommodates standing users who are the primary users"
+        },
+        {
+          "id": "D",
+          "text": "Maximum rim height: 800 mm AFF; knee clearance: minimum 550 mm height and 600 mm depth — the shallower depth is permitted when the lavatory projects less than 300 mm from the wall"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Maximum lavatory rim: 800 mm AFF (Sec 6.9); knee clearance: min 650 mm height, 500 mm depth",
+        "explanation": "Section 6.9 sets the lavatory rim at a maximum of 800 mm AFF — low enough to clear the wheelchair armrest and permit knee insertion. Knee clearance must be at least 650 mm in height and 500 mm in depth so the wheelchair can roll under the basin for a forward approach. The 800 mm figure is a trap: it belongs specifically to the lavatory rim, not to toilet grab bars. The mnemonic '800 is the wash basin, not the bar' directly addresses this common error.",
+        "common_misconceptions": [
+          "Applying 800 mm to toilet grab bars — 800 mm is the lavatory rim height, not a grab bar dimension",
+          "Using 900 mm rim height, which is too high for wheelchair users to access the basin from a seated position"
+        ]
+      },
+      "explanation": "Tests the '450/800 Rule' for heights — toilet seat at 450 mm AFF, lavatory rim maximum at 800 mm AFF.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.9",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c838936a7c04c69e1faa9773ef9a7273434801e7269971e67b206ca1dd8aa8d5"
+    },
+    {
+      "question_id": "7652f8cc-6362-457a-911f-44383edd1329",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A designer is specifying accessible urinals under BP 344 2024 IRR Section 6.12. What are the correct lip height, grab bar specifications, and clear floor space for each accessible urinal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lip: 450–500 mm AFF; grab bars: 600 mm long each, tops at 1200 mm AFF, 700 mm clear between outer edges; floor space: 900 × 900 mm"
+        },
+        {
+          "id": "B",
+          "text": "Lip: 400–450 mm AFF; grab bars: 600 mm long each, tops at 1200 mm AFF, 600 mm clear between outer edges; floor space: 900 × 900 mm"
+        },
+        {
+          "id": "C",
+          "text": "Lip: 350–400 mm AFF; grab bars: 600 mm long each, tops at 1500 mm AFF, 650 mm clear between outer edges; floor space: 900 × 900 mm"
+        },
+        {
+          "id": "D",
+          "text": "Lip: 350–400 mm AFF; grab bars: 900 mm long each, tops at 1500 mm AFF, 650 mm clear between outer edges; floor space: 1200 × 900 mm"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Lip: 350–400 mm AFF; grab bars: 600 mm long, tops at 1500 mm AFF, 650 mm between outer edges; floor space: 900 × 900 mm — all from Sec 6.12",
+        "explanation": "Section 6.12 specifies: urinal lip at 350–400 mm AFF (low enough for seated/short-statured users), bilateral grab bars each 600 mm long with tops at 1500 mm AFF, and 650 mm clear between their outer edges (symmetrical bilateral support). The clear floor space at each urinal is 900 × 900 mm for a frontal approach. The high 1500 mm grab bar tops serve standing users who need bilateral support; the low lip serves seated users. These numbers differ from both the toilet and lavatory specifications and are frequently tested separately.",
+        "common_misconceptions": [
+          "Applying toilet grab bar length (minimum 900 mm side bar) to urinals — urinal bars are 600 mm each",
+          "Using 1200 mm for grab bar tops — 1500 mm AFF is the urinal-specific height; 1200 mm is the Braille jamb height for elevators"
+        ]
+      },
+      "explanation": "Tests urinal-specific specifications that differ from toilet and lavatory requirements — a frequent LEA detail question.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.12",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:641660c134d6493748a6af5ce03fbdd1bca69196de9e9dfff2e7320c1e03e7f8"
+    },
+    {
+      "question_id": "471af8a5-4970-46c2-946a-6445a166ba2f",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Sections 6.14 and 6.18, what are the required door swing direction and emergency call button specifications for an accessible toilet cubicle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Door swings inward; emergency call button at 900–1100 mm AFF in a contrasting color — allows the user to reach the button from a seated transfer position"
+        },
+        {
+          "id": "B",
+          "text": "Door swings outward; emergency call button at 400–600 mm AFF, waterproof, in a contrasting color — reachable even from the floor after a fall"
+        },
+        {
+          "id": "C",
+          "text": "Door swings outward; emergency call button at 600–800 mm AFF, waterproof, in a neutral color to avoid visual clutter in the accessible cubicle"
+        },
+        {
+          "id": "D",
+          "text": "Door swings inward; emergency call button at 400–600 mm AFF, waterproof, in a contrasting color — the inward swing creates space for the button on the hinge side"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Door swings outward (Sec 6.14); emergency call button at 400–600 mm AFF, waterproof, contrasting color (Sec 6.18)",
+        "explanation": "Section 6.14 requires the accessible toilet door to open outward so rescuers can enter even if the user has collapsed inside (an inward-opening door would be blocked by a person on the floor). Section 6.18 specifies the emergency call button at 400–600 mm AFF — low enough to reach from the floor after a fall — and requires it to be waterproof (bathroom environment) and in a contrasting color for visibility. The door pull bar height is separately specified at 900 mm AFF (Sec 6.17).",
+        "common_misconceptions": [
+          "Specifying an inward-swinging door to 'protect privacy' — outward swing is mandatory for safety rescue access",
+          "Placing the emergency button at 900+ mm AFF — the 400–600 mm low placement is specifically for floor-level reach after a fall"
+        ]
+      },
+      "explanation": "Tests two life-safety provisions: outward door swing and low emergency call button placement.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.14, 6.18",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c1aa4130a50fdb0f7db938d7fef8747fa43eadedc1a3f6fc3985d8c7dcab303b"
+    },
+    {
+      "question_id": "9c200c7f-b0cf-4625-a351-39229d62e3ba",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 6.22, what are the minimum floor dimensions for an accessible roll-in shower, and what is the maximum curb height?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimum shower floor: 1500 mm × 1500 mm; maximum curb: 25 mm beveled — smaller than the turning space to allow an attendant to assist inside"
+        },
+        {
+          "id": "B",
+          "text": "Minimum shower floor: 1200 mm × 1800 mm; maximum curb: 12 mm beveled — the narrower dimension permits a side-entry roll-in configuration"
+        },
+        {
+          "id": "C",
+          "text": "Minimum shower floor: 1800 mm × 1800 mm; maximum curb: 20 mm beveled — the higher curb is permitted when a shower seat is provided inside the stall"
+        },
+        {
+          "id": "D",
+          "text": "Minimum shower floor: 1800 mm × 1800 mm; maximum curb: 12 mm beveled — full roll-in without lifting or tipping the wheelchair"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "1800 mm × 1800 mm minimum; maximum 12 mm beveled curb (Sec 6.22)",
+        "explanation": "Section 6.22 uses the same 1800 × 1800 mm dimension as the turning space — the 'wheelchair dance floor' dimension. A 12 mm maximum beveled curb allows the wheelchair to roll through without lifting or tipping. The spray hose must be at least 1500 mm long to allow washing from various seated positions. A curb higher than 12 mm would require front wheels to be lifted, which some users cannot do independently, defeating the purpose of a roll-in shower.",
+        "common_misconceptions": [
+          "Using 1500 × 1500 mm for the shower — the same 1800 mm square used for turning spaces applies here",
+          "Allowing a 25 mm curb — the maximum is 12 mm; anything higher defeats the roll-in purpose"
+        ]
+      },
+      "explanation": "Tests roll-in shower dimensions and the maximum curb height — a specific detail from Sec 6.22.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.22",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:076bb984df477bc8f4a4ee14dedbd8bf362bfd55f6bba3dd266e964ee67b95dc"
+    },
+    {
+      "question_id": "457a3745-222c-478e-b0d1-a58a6f78474e",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 6.19, what is the maximum flash rate for a strobe alarm inside an accessible toilet cubicle, and which fire standard does this cross-reference?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum 3 flashes per second — cross-referenced with the Philippine Fire Code (RA 9514) photosensitivity provisions for occupied spaces"
+        },
+        {
+          "id": "B",
+          "text": "Maximum 4 flashes per second — cross-referenced with IEC 60118 hearing-loop standards for deaf users who rely on visual signals in enclosed spaces"
+        },
+        {
+          "id": "C",
+          "text": "Maximum 2 flashes per second — cross-referenced with DPWH Department Order 68 which governs all strobe requirements in public building toilets"
+        },
+        {
+          "id": "D",
+          "text": "Maximum 2 flashes per second — cross-referenced with NFPA 72 to avoid triggering photosensitive seizures in users with epilepsy or similar conditions"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Maximum 2 flashes per second; cross-referenced with NFPA 72 (Sec 6.19)",
+        "explanation": "Section 6.19 requires strobe alarms inside accessible toilet cubicles with a maximum rate of 2 flashes per second, consistent with NFPA 72 photosensitivity limits. Flash rates above 3 Hz (3 per second) can trigger photosensitive seizures in people with epilepsy. The 2-flash maximum provides visible emergency notification for deaf and hard-of-hearing users without the seizure risk. The emergency call button (Sec 6.18) complements this by allowing the user to summon help independently.",
+        "common_misconceptions": [
+          "Citing RA 9514 (Philippine Fire Code) instead of NFPA 72 — the BP 344 cross-reference is specifically NFPA 72",
+          "Confusing the strobe flash rate with the strobe requirement itself — the rate limit (2/sec) and the location requirement (inside accessible toilets) are both testable"
+        ]
+      },
+      "explanation": "Tests the strobe alarm flash rate and its NFPA 72 basis — a high-difficulty detail from the washroom article.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.19; NFPA 72",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7adb9cb43b90e673220111299dff572857d2789a3235865c40f9702a93f0676e"
+    },
+    {
+      "question_id": "b64e22fe-5fa3-4755-b7d2-bf2b16281a51",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 6.3.b, how is the height of the horizontal grab bar on the side wall of an accessible toilet cubicle measured, and why does the code use this reference point instead of a fixed above-finished-floor (AFF) dimension?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The bar top is set at 800 mm AFF — a fixed floor reference that works regardless of toilet model, keeping the bar within the standard reach zone of all seated users"
+        },
+        {
+          "id": "B",
+          "text": "The bar top is set at 900 mm AFF — consistent with handrail heights at ramps and stairs to standardize grip height throughout the building"
+        },
+        {
+          "id": "C",
+          "text": "The bar top is set 300 mm above the top of the toilet seat — a seat-referenced dimension that remains biomechanically correct regardless of bowl height or model variation"
+        },
+        {
+          "id": "D",
+          "text": "The bar top is set 300 mm above the finished floor — a low position designed for users who transfer from the floor level rather than from a wheelchair seat height"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "300 mm above the top of the toilet seat (seat-referenced, not floor-referenced) — Sec 6.3.b",
+        "explanation": "During a lateral transfer from wheelchair to toilet, the user's elbow is flexed and the hand grips a bar slightly above seat height. Referencing the bar 300 mm above the seat top keeps the bar in a consistent biomechanical zone even when seat thickness or mounting varies. A rigid AFF value (like 800 mm) would float relative to the seat and could become unusable or unsafe depending on the toilet model. With a typical 450 mm AFF seat, the bar ends up around 750 mm AFF — but the code's controlling dimension is from the seat, not the floor.",
+        "common_misconceptions": [
+          "Treating 800 mm AFF as a grab bar height — 800 mm is the lavatory rim height (Sec 6.9), not a toilet grab bar dimension",
+          "Using a fixed AFF value for the grab bar, ignoring that different toilet models have different seat heights"
+        ]
+      },
+      "explanation": "Tests the core 'C-S-H' concept: the 300-Above Rule for grab bars referenced from seat height, not floor height.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.3.b",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2da517ce5b94c36521925ec472339861bc9a03585c10270563bbae972e8e2cd2"
+    },
+    {
+      "question_id": "f20e6d4b-8ea1-4736-b80b-caaa0de099bb",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 6.9, what is the maximum height for a mirror's bottom edge in an accessible washroom, and what alternative mounting option is permitted when that height cannot be achieved?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum mirror bottom edge: 1000 mm AFF; alternative: tilt the mirror 15° downward — both options allow visibility from a seated wheelchair position"
+        },
+        {
+          "id": "B",
+          "text": "Maximum mirror bottom edge: 800 mm AFF; alternative: tilt the mirror 10° downward so seated users can see themselves, ensuring compliance with accessibility standards"
+        },
+        {
+          "id": "C",
+          "text": "Maximum mirror bottom edge: 1200 mm AFF; alternative: provide a separate lower mirror mounted at 800 mm AFF beside the primary mirror, which offers an additional viewing option"
+        },
+        {
+          "id": "D",
+          "text": "Maximum mirror bottom edge: 900 mm AFF; alternative: tilt the mirror 15° downward so seated users can see their reflection, maintaining visibility for all users"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Maximum 1000 mm AFF for mirror bottom edge; or tilt 15° downward — Sec 6.9.j",
+        "explanation": "Section 6.9.j sets the mirror bottom edge at a maximum of 1000 mm AFF so it is visible from a seated position. Where this cannot be achieved (e.g., existing buildings or fixed tile layouts), the mirror may be tilted 15° downward to provide the seated viewing angle. Accessories and other fixtures (soap dispensers, towel hooks) are governed by Sec 6.9.k, which sets a maximum of 1000 mm AFF — the same height as the mirror bottom edge.",
+        "common_misconceptions": [
+          "Confusing the 800 mm lavatory rim height with the 1000 mm mirror/accessory height",
+          "Using a 10° tilt instead of 15° — the code specifies 15° as the permitted tilt angle"
+        ]
+      },
+      "explanation": "Tests the mirror height and tilt provisions — a detail that distinguishes thorough code knowledge from surface familiarity.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.9.j",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:723d8a964f61e25e76d247e5f453b848ad42ab7013683203efb3402e00bbb9a9"
+    },
+    {
+      "question_id": "e4a9c949-d613-4946-b0c2-2832e60eacb5",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A hospital architect places the side-wall grab bar in an accessible toilet at a fixed height of 800 mm AFF, reasoning that 800 mm is a recognized BP 344 dimension. Is this compliant, and what would be the correct specification?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compliant — 800 mm AFF is within the acceptable range for toilet grab bars under Section 6.3; the seat height simply needs to be coordinated so the bar ends up near 800 mm"
+        },
+        {
+          "id": "B",
+          "text": "Not compliant — the correct specification is that the bar top must be 300 mm above the top of the toilet seat (Sec 6.3.b); with a 450 mm seat the result is approximately 750 mm AFF, not 800 mm"
+        },
+        {
+          "id": "C",
+          "text": "Not compliant — 800 mm AFF is too low for a grab bar; the correct height is 900 mm AFF to match handrail heights used elsewhere in BP 344"
+        },
+        {
+          "id": "D",
+          "text": "Compliant — 800 mm is the maximum permitted grab bar height, so a bar set at exactly 800 mm AFF satisfies both the maximum and the typical functional range for wheelchair transfers"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Not compliant — 800 mm is the lavatory rim height (Sec 6.9), not a grab bar height; the grab bar must be 300 mm above the seat top (Sec 6.3.b)",
+        "explanation": "The 800 mm figure is real in BP 344 — but it belongs exclusively to the lavatory rim height (Sec 6.9). The toilet side-wall grab bar is specified by Sec 6.3.b as 300 mm above the top of the toilet seat, not by any AFF value. With a typical 450 mm AFF seat top, the bar top results in approximately 750 mm AFF. An 800 mm fixed AFF bar would be approximately 50 mm too high relative to a standard seat, potentially making it unusable for lateral transfers. The mnemonic: '800 is the wash basin, not the bar.'",
+        "common_misconceptions": [
+          "Treating 800 mm as a universal 'accessible height' that applies to all grab bars",
+          "Assuming any dimension within 50 mm of the correct value is acceptable — the code's controlling dimension is seat-referenced, not floor-referenced"
+        ]
+      },
+      "explanation": "Tests the classic TRAP LEART: 800 mm belongs to the lavatory rim, not to toilet grab bars.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.3.b, 6.9",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:14e5a2ff9f149f570206b10726732316249d9e7befa0514e3b8a94fe09abcdd3"
+    },
+    {
+      "question_id": "9be94bd0-ae1f-4694-95bc-901c6e60656e",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Sections 6.3.a and 6.3.c, what are the minimum lengths of the side-wall grab bar and the rear-wall grab bar for an accessible toilet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Side-wall bar: minimum 600 mm long; rear-wall bar: minimum 900 mm long — the rear bar is longer to span the full rear wall width, ensuring comprehensive support"
+        },
+        {
+          "id": "B",
+          "text": "Side-wall bar: minimum 750 mm long; rear-wall bar: minimum 750 mm long — both bars use the same 750 mm standard as the wheelchair seating handrail height, providing uniformity"
+        },
+        {
+          "id": "C",
+          "text": "Side-wall bar: minimum 900 mm long; rear-wall bar: minimum 600 mm long — the longer side bar aids lateral transfer while the shorter rear bar stabilizes the seated position"
+        },
+        {
+          "id": "D",
+          "text": "Side-wall bar: minimum 900 mm long; rear-wall bar: minimum 900 mm long — equal lengths on both walls provide symmetrical support for all transfer directions, enhancing user safety"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Side-wall bar: min 900 mm (Sec 6.3.a); rear-wall bar: min 600 mm (Sec 6.3.c)",
+        "explanation": "Section 6.3.a specifies the side-wall grab bar at a minimum of 900 mm long — long enough to grip during the full arc of a lateral wheelchair-to-toilet transfer. Section 6.3.c specifies the rear-wall bar at a minimum of 600 mm long, positioned at seat height to aid push-off when standing or to stabilize when seated. The centerline of the toilet is 450 mm from the adjacent side wall (Sec 6.1.b), keeping the side bar within comfortable lateral reach.",
+        "common_misconceptions": [
+          "Reversing the lengths — thinking the rear bar is longer than the side bar",
+          "Applying the 750 mm assembly-area handrail height to grab bar length — these are different dimensions in different contexts"
+        ]
+      },
+      "explanation": "Tests the specific minimum lengths of side-wall vs rear-wall grab bars — frequently confused on the LEA.",
+      "code_citation": "BP 344 2024 IRR, Sec 6.3.a, 6.3.c",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.241943+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d189561726f0046e0360848d995093701777e701c1d05da4214215d3a9bff17a"
+    }
+  ]
+}

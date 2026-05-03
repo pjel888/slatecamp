@@ -1,0 +1,17 @@
+{
+  "question_id": "2d1f422b-b013-4ced-9bf8-52a7cdefb9c6",
+  "baseline_hash": "sha256:a501eb452149126a78bff3951bc90d876b00c291df6b7401b79c9d4fbc18d6a1",
+  "reason": "WRONG ANSWER KEY: 2.5 MT \u00d7 40,000 pesos/MT = 100,000 pesos (option b), not 150,000 pesos (option c). The rationale itself notes this discrepancy. Fixed correct_option_id to 'b' and corrected rationale.",
+  "approved_by": "hermes-question-audit",
+  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "proposed": {
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "60,000 pesos results from using 1.5 MT instead of 2.5 MT.",
+      "c": "150,000 pesos results from using 3.75 MT instead of 2.5 MT, or incorrectly multiplying.",
+      "d": "200,000 pesos results from using 5 MT instead of 2.5 MT (double the actual quantity).",
+      "correct": "Cost = 2.5 MT \u00d7 40,000 pesos/MT = 100,000 pesos (option b). Always multiply total metric tons by price per metric ton.",
+      "takeaway": "Cost estimation: Total weight (MT) \u00d7 Price per MT = Total material cost."
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+  "slug": "lea-dsgn-005-06-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.373Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:d43c38b97eab701f3d6ed2545dfb9baf66b060342c06927e93f5ae1290b3979a",
+  "normalized_content_hash": "95868cc1658ee218fc7c45c88015f777a931c86340730f6c2ef3879156ea46fb",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>**Religious Building Anchors:** Group C occupancy. Pew seating = 0.5\u20130.6 sqm/person. Standing = 0.7\u20131.0 sqm/person. Nave ceiling min = 6.0 m. Sacristy = 12\u201318 sqm. Confessional = 1 \u00d7 1.5 m. Mosque qibla \u2248273\u00b0 from Manila. Wudu = 1 faucet/10 worshippers. RT60 = 1.2\u20132.0 sec.</Tip>",
+      "raw_hash": "sha256:e4cba87e7cc1c76c63dab1954d813c33520976de5e0b64082a33893ce5561897",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Religious Building Anchors:** Group C occupancy. Pew seating = 0.5\u20130.6 sqm/person. Standing = 0.7\u20131.0 sqm/person. Nave ceiling min = 6.0 m. Sacristy = 12\u201318 sqm. Confessional = 1 \u00d7 1.5 m. Mosque qibla \u2248273\u00b0 from Manila. Wudu = 1 faucet/10 worshippers. RT60 = 1.2\u20132.0 sec.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c275bd861df689d3012c69946ee80dcec7a2064cac88b9e939abbfedac30dc38",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Religious Building Anchors:** Group C occupancy. Pew seating = 0.5\u20130.6 sqm/person. Standing = 0.7\u20131.0 sqm/person. Nave ceiling min = 6.0 m. Sacristy = 12\u201318 sqm. Confessional = 1 \u00d7 1.5 m. Mosque qibla \u2248273\u00b0 from Manila. Wudu = 1 faucet/10 worshippers. RT60 = 1.2\u20132.0 sec.",
+      "children_text": "**Religious Building Anchors:** Group C occupancy. Pew seating = 0.5\u20130.6 sqm/person. Standing = 0.7\u20131.0 sqm/person. Nave ceiling min = 6.0 m. Sacristy = 12\u201318 sqm. Confessional = 1 \u00d7 1.5 m. Mosque qibla \u2248273\u00b0 from Manila. Wudu = 1 faucet/10 worshippers. RT60 = 1.2\u20132.0 sec.",
+      "start_offset": 5800,
+      "end_offset": 6084,
+      "line_start": 55,
+      "line_end": 55,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"ERR-DSGN-005: Classifying churches/mosques as Group H (assembly) instead of Group C\",\"Pew density too high (0.4 sqm/person instead of 0.5\u20130.6)\",\"Nave ceiling undersized (5.0 m instead of 6.0 m minimum)\",\"Wudu faucet ratio incorrect (1 per 20 or 30 instead of 1 per 10)\",\"Qibla direction incorrect or not verified with faith community\",\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit for 50+ person worship space\"]} />",
+      "raw_hash": "sha256:026a2ca46b5bcc4625240e315fee8a2c2820697a348960040afcad463f3ae166",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"ERR-DSGN-005: Classifying churches/mosques as Group H (assembly) instead of Group C\\\",\\\"Pew density too high (0.4 sqm/person instead of 0.5\u20130.6)\\\",\\\"Nave ceiling undersized (5.0 m instead of 6.0 m minimum)\\\",\\\"Wudu faucet ratio incorrect (1 per 20 or 30 instead of 1 per 10)\\\",\\\"Qibla direction incorrect or not verified with faith community\\\",\\\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\\\",\\\"ERR-DSGN-021: Single exit for 50+ person worship space\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:879af94c3afc43aef7a30f7515b417226a34f45d1341ef0ae8eb1bd501d5a146",
+      "props": {
+        "mistakes": "{[\"ERR-DSGN-005: Classifying churches/mosques as Group H (assembly) instead of Group C\",\"Pew density too high (0.4 sqm/person instead of 0.5\u20130.6)\",\"Nave ceiling undersized (5.0 m instead of 6.0 m minimum)\",\"Wudu faucet ratio incorrect (1 per 20 or 30 instead of 1 per 10)\",\"Qibla direction incorrect or not verified with faith community\",\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit for 50+ person worship space\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"ERR-DSGN-005: Classifying churches/mosques as Group H (assembly) instead of Group C\",\"Pew density too high (0.4 sqm/person instead of 0.5\u20130.6)\",\"Nave ceiling undersized (5.0 m instead of 6.0 m minimum)\",\"Wudu faucet ratio incorrect (1 per 20 or 30 instead of 1 per 10)\",\"Qibla direction incorrect or not verified with faith community\",\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit for 50+ person worship space\"]}"
+      },
+      "props_text": "mistakes={[\"ERR-DSGN-005: Classifying churches/mosques as Group H (assembly) instead of Group C\",\"Pew density too high (0.4 sqm/person instead of 0.5\u20130.6)\",\"Nave ceiling undersized (5.0 m instead of 6.0 m minimum)\",\"Wudu faucet ratio incorrect (1 per 20 or 30 instead of 1 per 10)\",\"Qibla direction incorrect or not verified with faith community\",\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit for 50+ person worship space\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6106,
+      "end_offset": 6598,
+      "line_start": 59,
+      "line_end": 59,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:9986f059943f273163f103b2024e33baf32aff00c336f67f58bc30cd370ad15c"
+}

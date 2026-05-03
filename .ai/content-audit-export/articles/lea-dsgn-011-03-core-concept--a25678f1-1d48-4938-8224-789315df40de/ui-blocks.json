@@ -1,0 +1,63 @@
+{
+  "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+  "slug": "lea-dsgn-011-03-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.732Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:d6a46b2179e4b06b86e6f423202c09272a089a8e66f7f0e1b0bd37bb88df13b3",
+  "normalized_content_hash": "d6a46b2179e4b06b86e6f423202c09272a089a8e66f7f0e1b0bd37bb88df13b3",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\n**Memory aid:** \"PD 1096 Setback Rule\" \u2014 For buildings up to 6\u20139 m, front=4.5 m, sides=2.0 m, rear=2.0 m. For taller buildings (9\u201315 m), front and rear increase; sides gradually increase. Always check building height first to determine the correct setback row in the table.\n</Tip>",
+      "raw_hash": "sha256:9d906103f1883ae8d0a8b6cde16a43980fc02fb4f5c2128db2dc669ea6a451c8",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory aid:** \"PD 1096 Setback Rule\" \u2014 For buildings up to 6\u20139 m, front=4.5 m, sides=2.0 m, rear=2.0 m. For taller buildings (9\u201315 m), front and rear increase; sides gradually increase. Always check building height first to determine the correct setback row in the table.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:03bb59bed346d54b87515017a9f6e991cb37805a6784eb43bdee0dac49adbd6d",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n**Memory aid:** \"PD 1096 Setback Rule\" \u2014 For buildings up to 6\u20139 m, front=4.5 m, sides=2.0 m, rear=2.0 m. For taller buildings (9\u201315 m), front and rear increase; sides gradually increase. Always check building height first to determine the correct setback row in the table.\n",
+      "children_text": "**Memory aid:** \"PD 1096 Setback Rule\" \u2014 For buildings up to 6\u20139 m, front=4.5 m, sides=2.0 m, rear=2.0 m. For taller buildings (9\u201315 m), front and rear increase; sides gradually increase. Always check building height first to determine the correct setback row in the table.",
+      "start_offset": 6027,
+      "end_offset": 6313,
+      "line_start": 76,
+      "line_end": 78,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Applying the wrong setback row for building height; always determine building height (in meters) first, then select the corresponding setback category.\",\"Showing parking stalls at 2.0 m \u00d7 4.5 m instead of the standard 2.5 m \u00d7 5.0 m; always verify parking dimension standards.\",\"Omitting the north arrow or placing it ambiguously, making orientation unclear to plan readers.\",\"Not showing property lines or boundary dimensions; a site plan without clear property boundaries is incomplete.\",\"Misaligning the building footprint shown on the site plan with the floor plan above it (they should have identical footprint outlines).\",\"Failing to show utility connections (water, sewer, electrical, gas) and their locations relative to the building and property lines.\",\"Using a sclea that is too small, making details (parking, access) illegible; 1:200\u20131:250 is more appropriate than 1:500 for detailed site review.\",\"Not indicating driveway width or showing insufficient space for fire truck access (minimum 3.5 m for one-way, 6.0 m for two-way).\"]} />",
+      "raw_hash": "sha256:34335814c14e64792a264e3ad219b94c39720d6f14d9c75d2e1ed86f8e1740c3",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Applying the wrong setback row for building height; always determine building height (in meters) first, then select the corresponding setback category.\\\",\\\"Showing parking stalls at 2.0 m \u00d7 4.5 m instead of the standard 2.5 m \u00d7 5.0 m; always verify parking dimension standards.\\\",\\\"Omitting the north arrow or placing it ambiguously, making orientation unclear to plan readers.\\\",\\\"Not showing property lines or boundary dimensions; a site plan without clear property boundaries is incomplete.\\\",\\\"Misaligning the building footprint shown on the site plan with the floor plan above it (they should have identical footprint outlines).\\\",\\\"Failing to show utility connections (water, sewer, electrical, gas) and their locations relative to the building and property lines.\\\",\\\"Using a sclea that is too small, making details (parking, access) illegible; 1:200\u20131:250 is more appropriate than 1:500 for detailed site review.\\\",\\\"Not indicating driveway width or showing insufficient space for fire truck access (minimum 3.5 m for one-way, 6.0 m for two-way).\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:07fa5edaa56e6a18448724859c21d274457395dd0cf22ab2230c034dc2d1e4c9",
+      "props": {
+        "mistakes": "{[\"Applying the wrong setback row for building height; always determine building height (in meters) first, then select the corresponding setback category.\",\"Showing parking stalls at 2.0 m \u00d7 4.5 m instead of the standard 2.5 m \u00d7 5.0 m; always verify parking dimension standards.\",\"Omitting the north arrow or placing it ambiguously, making orientation unclear to plan readers.\",\"Not showing property lines or boundary dimensions; a site plan without clear property boundaries is incomplete.\",\"Misaligning the building footprint shown on the site plan with the floor plan above it (they should have identical footprint outlines).\",\"Failing to show utility connections (water, sewer, electrical, gas) and their locations relative to the building and property lines.\",\"Using a sclea that is too small, making details (parking, access) illegible; 1:200\u20131:250 is more appropriate than 1:500 for detailed site review.\",\"Not indicating driveway width or showing insufficient space for fire truck access (minimum 3.5 m for one-way, 6.0 m for two-way).\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Applying the wrong setback row for building height; always determine building height (in meters) first, then select the corresponding setback category.\",\"Showing parking stalls at 2.0 m \u00d7 4.5 m instead of the standard 2.5 m \u00d7 5.0 m; always verify parking dimension standards.\",\"Omitting the north arrow or placing it ambiguously, making orientation unclear to plan readers.\",\"Not showing property lines or boundary dimensions; a site plan without clear property boundaries is incomplete.\",\"Misaligning the building footprint shown on the site plan with the floor plan above it (they should have identical footprint outlines).\",\"Failing to show utility connections (water, sewer, electrical, gas) and their locations relative to the building and property lines.\",\"Using a sclea that is too small, making details (parking, access) illegible; 1:200\u20131:250 is more appropriate than 1:500 for detailed site review.\",\"Not indicating driveway width or showing insufficient space for fire truck access (minimum 3.5 m for one-way, 6.0 m for two-way).\"]}"
+      },
+      "props_text": "mistakes={[\"Applying the wrong setback row for building height; always determine building height (in meters) first, then select the corresponding setback category.\",\"Showing parking stalls at 2.0 m \u00d7 4.5 m instead of the standard 2.5 m \u00d7 5.0 m; always verify parking dimension standards.\",\"Omitting the north arrow or placing it ambiguously, making orientation unclear to plan readers.\",\"Not showing property lines or boundary dimensions; a site plan without clear property boundaries is incomplete.\",\"Misaligning the building footprint shown on the site plan with the floor plan above it (they should have identical footprint outlines).\",\"Failing to show utility connections (water, sewer, electrical, gas) and their locations relative to the building and property lines.\",\"Using a sclea that is too small, making details (parking, access) illegible; 1:200\u20131:250 is more appropriate than 1:500 for detailed site review.\",\"Not indicating driveway width or showing insufficient space for fire truck access (minimum 3.5 m for one-way, 6.0 m for two-way).\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6335,
+      "end_offset": 7410,
+      "line_start": 82,
+      "line_end": 82,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:f482623d2326a9a9e9b165b25ba897d0d67a3922ec201ab3ae95327dcd2725fa"
+}

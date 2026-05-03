@@ -1,0 +1,508 @@
+{
+  "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:3e9f429459d64e780d6c6158791d78b4eedb1da8293df071456960c5c024ec48",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "decdd89e-f41b-4917-94a5-4fd70a3e38a8",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "An architect designs a prototype office building for a developer. The developer then builds the same design in five different cities over the next three years. Should each new city location receive full fees or reduced repetitive design fees?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All locations should receive the same reduced fees as repetitions of the original prototype design"
+        },
+        {
+          "id": "b",
+          "text": "This depends on whether the contract specifies that fee reduction applies across multiple separate client projects or only within a single project"
+        },
+        {
+          "id": "c",
+          "text": "Each location is a separate client engagement; all receive full fees regardless of design repetition"
+        },
+        {
+          "id": "d",
+          "text": "The first city receives full fee; all others receive reduced fees automatically under SPP 202"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assumes reduced fees apply; depends on contract clarification between separate projects vs. repetitions.",
+        "c": "Assumes all cities are separate engagements; could be true, but contract must specify.",
+        "d": "Suggests arbitrary reduction pattern; clarity depends on contract specifications about project scope.",
+        "correct": "Repetitive design fee reduction principles apply differently to multi-unit single-project versus multiple separate projects. The contract should specify whether designs applied across multiple separate client projects receive full or reduced fees.",
+        "takeaway": "For multi-city projects, the contract must clarify whether each city is a separate project (full fees) or repetition of one prototype (reduced fees)."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:58efc0f130eba32a1d92ef52aa9fc02eeffa74eb01d16b58f07e868da646daa7"
+    },
+    {
+      "question_id": "78753553-9f7e-47a9-b4d2-844e5c260dd2",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "An architect's initial prototype apartment building design costs 5 million pesos. The project involves designing the same building on three additional identical sites. What is the total fee for all four sites?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 million pesos (5 million × 4 sites), assuming no cost reduction for repetition"
+        },
+        {
+          "id": "b",
+          "text": "15.5 million pesos (5 million initial + 3.5 million × 3 repetitions at 70% reduction)"
+        },
+        {
+          "id": "c",
+          "text": "10 million pesos (5 million × 2), assuming a 50% discount for repeated designs"
+        },
+        {
+          "id": "d",
+          "text": "22.5 million pesos (5 million initial + 5.83 million for three sites), which includes additional site-specific adjustments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores fee reduction; applies full fees to all sites without discount.",
+        "c": "Drastically underestimates; calculates only half the sites.",
+        "d": "Miscalculates the repetition fee or the total cumulative amount.",
+        "correct": "Initial design: 5 million. Repetitive designs at 70% reduction: 5 million × 0.70 = 3.5 million each. Total for three repetitions: 3.5 × 3 = 10.5 million. Total project: 5 + 10.5 = 15.5 million pesos.",
+        "takeaway": "Calculate repetitive fees as: (initial fee × 0.70) × number of repetitions, then add initial fee for total project cost."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59e1f65299abcbfe2fdbd2cafe425c4f13a673aca4edec08cc1f338a0a5fad26"
+    },
+    {
+      "question_id": "153c1923-34a5-4497-a4af-d7fa20375489",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "What scope of work does the architect complete for the initial prototype in a repetitive design project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only Schematic Design; subsequent designs begin from Design Development"
+        },
+        {
+          "id": "b",
+          "text": "All five design phases at full SPP 202 fee for the initial design"
+        },
+        {
+          "id": "c",
+          "text": "Only Contract Documents; other phases are reduced"
+        },
+        {
+          "id": "d",
+          "text": "Design Development through Construction Administration only"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly limits initial design to Schematic Design; full fees apply to all phases for the prototype.",
+        "c": "Incorrectly limits initial design to Contract Documents; all phases receive full fees.",
+        "d": "Excludes Schematic Design from the initial design; all five phases are included.",
+        "correct": "The initial prototype design receives full SPP 202 compensation for all five phases: Schematic Design, Design Development, Contract Documents, Bidding Assistance, and Construction Administration.",
+        "takeaway": "The initial prototype receives full fees for all five phases; only subsequent repetitions receive reduced fees."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b7706e31f060cfac42df30da306471afa63dcca8dbb8e70412fc812aea5b90b6"
+    },
+    {
+      "question_id": "00d6e974-88d4-4a1b-b8d6-cd967d458a68",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "Why does SPP 202 allow reduced fees for repetitive designs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects should be compensated less for work they have done before, as it requires less effort and time compared to new designs"
+        },
+        {
+          "id": "b",
+          "text": "The architect's intellectual and creative effort is concentrated in the initial design; repetitions adapt rather than redesign"
+        },
+        {
+          "id": "c",
+          "text": "Repetitive designs are of lower quality and justify lower fees, as they do not require the same level of innovation or customization"
+        },
+        {
+          "id": "d",
+          "text": "Clients deserve discounts for multiple buildings, especially when the designs are similar and do not require additional creative input"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misrepresents the rationale; the reduction is about effort distribution, not penalizing experience.",
+        "c": "Falsely suggests reduced fees indicate lower quality; they reflect lower effort, not lower quality.",
+        "d": "Reverses cause and effect; the reduction is about architect effort, not client discounts.",
+        "correct": "Reduced fees are justified because the architect's major intellectual and creative effort is expended during the initial prototype design. Subsequent repetitions benefit from completed design work and reduce to adaptation.",
+        "takeaway": "Repetitive design fees are reduced because all creative effort is in the prototype; subsequent designs adapt proven solutions."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ec48c4135e0f233062765e756a9e0476285d39204156cda6ce2beba1a0c5c6ad"
+    },
+    {
+      "question_id": "8daee28e-c4d7-475d-87fb-f7b3146c69af",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "How should a contract distinguish between initial and repetitive designs in a multi-unit project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The contract need not specify; it is understood that all designs are identical, which is a common assumption in standard agreements."
+        },
+        {
+          "id": "b",
+          "text": "Clearly specify which design is the initial prototype receiving full fees and which are repetitions receiving reduced fees"
+        },
+        {
+          "id": "c",
+          "text": "All designs receive identical fees regardless of whether they are initial or repetitive, which simplifies the billing process but may not reflect the actual work involved."
+        },
+        {
+          "id": "d",
+          "text": "The architect determines which design is initial and which are repetitive without client input, which can lead to misunderstandings and disputes."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assumes all designs are identical; contracts must specify which receives full fees.",
+        "c": "Eliminates appropriate fee differentiation; specifications are essential.",
+        "d": "Removes client involvement in fee determination; client input is necessary.",
+        "correct": "Clear contract specification of which design is the initial prototype and which are repetitions prevents disputes about applicable fee percentages and fee reduction applicability.",
+        "takeaway": "The contract must explicitly identify the initial prototype and each repetition to establish clear fee application."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:df1850580959b2f15efe31bebfbfd520388226576461a7cf469822f818810e6a"
+    },
+    {
+      "question_id": "39300b9d-04dc-4fa0-848d-9698713629c4",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "When does repetitive design fee reduction NOT apply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "When designing the same building type on multiple sites, provided each site requires unique adaptations"
+        },
+        {
+          "id": "b",
+          "text": "When designing two unique buildings of the same building type (completely different designs)"
+        },
+        {
+          "id": "c",
+          "text": "When multiple identical units are on the same project site, unless each unit requires individual customization"
+        },
+        {
+          "id": "d",
+          "text": "When adaptations are made for climate or code differences, which necessitate significant design changes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Designing the same building on multiple sites is exactly when repetitive design applies.",
+        "c": "Multiple identical units on the same site is a classic repetitive design scenario.",
+        "d": "Climate or code adaptations of a prototype still qualify as repetitive design with adaptation.",
+        "correct": "Designing two completely unique buildings of the same type is not repetitive design. Repetitive designs require that one prototype is designed and then the same (or substantially similar) design is repeated.",
+        "takeaway": "Repetitive design requires designing one prototype, then repeating it; two unique designs of the same building type do not qualify."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8e625d6a615665cb9edf742410b1f02ae49c51c213b29abef266bf557680cfd2"
+    },
+    {
+      "question_id": "41ab1960-bf08-4453-b85d-0d7e12788ce2",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "What is the typical fee reduction for subsequent repetitive designs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50% of the initial design fee, assuming minimal changes are required"
+        },
+        {
+          "id": "b",
+          "text": "reduced fees (typically 60-75% depending on adaptation, per Architect's Guidelines) depending on variation from the prototype"
+        },
+        {
+          "id": "c",
+          "text": "Identical fee to the initial design; no reduction applies unless specified otherwise in the contract"
+        },
+        {
+          "id": "d",
+          "text": "85–95% of the initial design fee, which may vary based on the complexity of the project"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Underestimates the fee; 60–75% is the standard range, not 50%.",
+        "c": "Falsely suggests no reduction; SPP 202 explicitly provides reduced fees.",
+        "d": "Overstates the reduction; 85–95% approaches full fees, not the intended reduction.",
+        "correct": "SPP 202 establishes reduced fee percentages for repetitive designs of 60–75% of the initial prototype design fee for each subsequent repetition, depending on how substantially the design varies from the prototype.",
+        "takeaway": "Repetitive designs receive 60–75% of the initial design fee (not eliminated fees); minimal variation justifies 60–70%, complex adaptation justifies 70–75%."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12342564424eae0552c4b283e917335334d0b26852940fb5a30c2e51c4a7bf0c"
+    },
+    {
+      "question_id": "fc934959-3dee-42f3-a575-c193560abc41",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "When proposing repetitive design fees, what should the architect communicate to the client?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the total project fee; details about initial vs. repetitive designs are internal architect information and not typically disclosed"
+        },
+        {
+          "id": "b",
+          "text": "Which design is the initial prototype receiving full fees, which are repetitions receiving reduced fees, the reduction percentage and its justification, and how site-specific adaptations are reflected"
+        },
+        {
+          "id": "c",
+          "text": "That the client will receive a discount because the architect is repeating previous work, which reduces the overall design effort required"
+        },
+        {
+          "id": "d",
+          "text": "Only that some designs receive reduced fees; justification is not necessary unless specifically requested by the client"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Hides the rationale from the client; transparency is more professional.",
+        "c": "Frames the reduction as a discount rather than reflecting actual effort differences; inaccurate framing.",
+        "d": "Omits justification; clients appreciate understanding the rationale for fee differences.",
+        "correct": "Clear communication about which design is initial, which are repetitions, the reduction rationale, and how adaptations affect fees prevents disputes and demonstrates transparent fee determination.",
+        "takeaway": "Transparent communication about repetitive design fees, initial vs. repetition status, and adaptation complexity builds client confidence."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:49f9f066e570592431e029e611da7755c567d6dbb5faafd30a7d0e220d03c8dd"
+    },
+    {
+      "question_id": "a34caab0-5358-4287-84a5-000ada6fe8f9",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "A prototype residential building design is adapted for a different climate zone, requiring significant changes to insulation, HVAC design, and building envelope. How should the fee reduction be adjusted?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apply the standard 60% reduction regardless of adaptation complexity, assuming all projects are similar"
+        },
+        {
+          "id": "b",
+          "text": "Apply the standard 70–75% reduction since adaptations are limited to established systems, without considering unique project demands"
+        },
+        {
+          "id": "c",
+          "text": "Negotiate fees at the higher end of the reduction range (70–75%) to reflect greater adaptation effort"
+        },
+        {
+          "id": "d",
+          "text": "Charge full fees; significant adaptations negate repetitive design status, ensuring fair compensation for additional work"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Undercompensates for significant adaptation; the 70–75% range is more appropriate.",
+        "b": "Incorrectly suggests adaptations are 'limited'; climate zone changes are substantial.",
+        "d": "Falsely suggests significant adaptations end repetitive design status; adaptations are still repetitive design.",
+        "correct": "While the design remains fundamentally a repetition, unusual complexity in adaptation (climate zone differences, significant code requirement changes) justifies fees at the higher end of the 60–75% reduction range.",
+        "takeaway": "Substantial adaptations (climate, codes) justify fees at the 70–75% end of the range within repetitive design, not full fees."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a11144c0edafb1cdc8eeffecc1acde8d4c140a51aeaef98fc07436b552e46926"
+    },
+    {
+      "question_id": "38bf0302-b729-4677-855c-48d8e3122419",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "What is a repetitive design in architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Designing one unique building type, which does not involve repetition."
+        },
+        {
+          "id": "b",
+          "text": "Designing a prototype building and then reproducing that design or similar variations multiple times"
+        },
+        {
+          "id": "c",
+          "text": "A building that is designed by multiple architects, which is unrelated to repetitive design."
+        },
+        {
+          "id": "d",
+          "text": "A building with repetitive structural elements like repeated columns, which is a form of repetition but not the primary definition."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Describes designing only one building; repetitive design requires multiple versions.",
+        "c": "Multiple architects is a project management structure, not a definition of repetitive design.",
+        "d": "Refers to structural repetition (columns) within a single building, not design repetition across multiple buildings.",
+        "correct": "Repetitive designs involve designing a building prototype once and then reproducing that design or variations of it for multiple units or locations, such as apartment buildings with repeated units or residential subdivisions with the same house design.",
+        "takeaway": "Repetitive design means one prototype design is created and then reproduced (with adaptations) multiple times."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Document 205 / Architect's Guidelines",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d06e0b7eab670123ea2aad516c996b37b97500694022a35ebc607430389806b8"
+    }
+  ]
+}

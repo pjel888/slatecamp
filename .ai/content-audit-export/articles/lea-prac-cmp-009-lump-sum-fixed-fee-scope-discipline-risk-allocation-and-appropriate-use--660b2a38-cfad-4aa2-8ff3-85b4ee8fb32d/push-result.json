@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:52:44.001Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+  "slug": "lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:1acb181b459f2355021468da0fa5188f04ce1fd9909f657d85bb153b01c7c337",
+  "original_hash": "sha256:1acb181b459f2355021468da0fa5188f04ce1fd9909f657d85bb153b01c7c337",
+  "candidate_hash": "sha256:bed21c20b417c57b5cd8c75c75a50590444b07468e2a7eb753141b035f1137a5",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

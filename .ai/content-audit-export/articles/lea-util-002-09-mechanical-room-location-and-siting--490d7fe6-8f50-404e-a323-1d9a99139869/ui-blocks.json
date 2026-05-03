@@ -1,0 +1,102 @@
+{
+  "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
+  "slug": "lea-util-002-09-mechanical-room-location-and-siting",
+  "normalized_created_at": "2026-05-01T13:33:43.349Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:dd2b423cb740b300f91b83110c0d0f444b2c59b6a86c04fae39db225d316896d",
+  "normalized_content_hash": "4b5a245824ce287a9c36cc0c9788d8166699c9759d95f04bbbff00b6109bed00",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\n**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.\n</Tip>",
+      "raw_hash": "sha256:622356ab599708ef8e1c499f87ee74fcb972fdb43c1691365ba4dee76ae2ee06",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, ...\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:becc5f5dc793a9c10d145ec6247be586757366b4782088bf7ace0b3f74932c6c",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.",
+      "children_text": "**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.",
+      "start_offset": 3461,
+      "end_offset": 3793,
+      "line_start": 46,
+      "line_end": 50,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.\n</ExamTip>",
+      "raw_hash": "sha256:e53acaa5613c2e999fc15fb6a87f2e26408d6f5fdf9ffa39265cd66e38da4cf2",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC ...\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a0d94898346af53f844d72c9e2e3f3105f2dd8f2822eb9288fe26d0455c8b89d",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.",
+      "children_text": "**Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.",
+      "start_offset": 3122,
+      "end_offset": 3458,
+      "line_start": 39,
+      "line_end": 43,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "KeyValues",
+      "raw": "<KeyValues items=[{\"value\": \"THHN\", \"label\": \"90\\u00b0C General Wiring\"}, {\"value\": \"THWN\", \"label\": \"75\\u00b0C Wet Locations\"}, {\"value\": \"XHHW\", \"label\": \"90\\u00b0C Dry/75\\u00b0C Wet\"}, {\"value\": \"UF-B\", \"label\": \"Underground Feeder\"}] />",
+      "raw_hash": "sha256:cb19796597f37406e19489f140214e5e82aea8e6ad4f069c00df139b305f131a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: items=[{\"value\": \"THHN\", \"label\": \"90\\u00b0C General Wiring\"}, {\"value\": \"THWN\", \"label\": \"75\\u00b0C Wet Locations\"}, {\"value\": \"XHHW\", \"label\": \"90\\u00b0C Dry/75\\u00b0C Wet\"}, {\"value\": \"UF-B\", \"label\": \"Underground Feeder\"}]\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:5145b5c877756ddba24a32002537e88906d2a30a2fc1e252dc6b9771fb5e9593",
+      "props": {
+        "items": "[{\"value\": \"THHN\", \"label\": \"90\\u00b0C General Wiring\"}, {\"value\": \"THWN\", \"label\": \"75\\u00b0C Wet Locations\"}, {\"value\": \"XHHW\", \"label\": \"90\\u00b0C Dry/75\\u00b0C Wet\"}, {\"value\": \"UF-B\", \"label\": \"Underground Feeder\"}]"
+      },
+      "props_json": {
+        "items": [
+          {
+            "value": "THHN",
+            "label": "90\u00b0C General Wiring"
+          },
+          {
+            "value": "THWN",
+            "label": "75\u00b0C Wet Locations"
+          },
+          {
+            "value": "XHHW",
+            "label": "90\u00b0C Dry/75\u00b0C Wet"
+          },
+          {
+            "value": "UF-B",
+            "label": "Underground Feeder"
+          }
+        ]
+      },
+      "props_text": "items=[{\"value\": \"THHN\", \"label\": \"90\\u00b0C General Wiring\"}, {\"value\": \"THWN\", \"label\": \"75\\u00b0C Wet Locations\"}, {\"value\": \"XHHW\", \"label\": \"90\\u00b0C Dry/75\\u00b0C Wet\"}, {\"value\": \"UF-B\", \"label\": \"Underground Feeder\"}]",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 2749,
+      "end_offset": 3119,
+      "line_start": 32,
+      "line_end": 36,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:84d262897143fd4f02ab42af71e32b860dea9b13b6b0be8a2dc1856618d0fb71"
+}

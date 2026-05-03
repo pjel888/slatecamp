@@ -1,0 +1,36 @@
+{
+  "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+  "slug": "lea-strc-004-05-core-concept",
+  "generated_at": "2026-05-01T13:33:43.297Z",
+  "parser_version": "ui-block-parser-v1",
+  "error_count": 0,
+  "warning_count": 1,
+  "unknown_block_count": 1,
+  "critical_block_count": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "block_id": "ui_0002",
+      "component_name": "WikiMistakeList",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0002",
+      "component_name": "WikiMistakeList",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:f502f0fcf372ee56013ef2196054b13c5a39df811857ca6490260fef5b1d712d",
+      "line_start": 68,
+      "line_end": 68,
+      "warnings": [
+        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "critical_blocks": []
+}

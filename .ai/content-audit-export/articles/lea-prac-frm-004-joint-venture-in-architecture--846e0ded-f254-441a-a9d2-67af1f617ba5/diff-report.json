@@ -1,0 +1,43 @@
+{
+  "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+  "slug": "lea-prac-frm-004-joint-venture-in-architecture",
+  "generated_at": "2026-05-03T10:55:48.584Z",
+  "old_hash": "sha256:c40c48feef5b4dd0df6bfd3080aec53aea235e461a9e5ba6ca70fc7db9d661d5",
+  "new_hash": "sha256:a5609d8bd27c87748d59b5b1bbee468250325be1e28955b7477eff0e2e0dac3f",
+  "original_hash": "sha256:c40c48feef5b4dd0df6bfd3080aec53aea235e461a9e5ba6ca70fc7db9d661d5",
+  "normalized_hash": "sha256:20f8f21dd4f1f7d12c7475f97c6a10600d045025781589d1d67be746607ab412",
+  "candidate_hash": "sha256:a5609d8bd27c87748d59b5b1bbee468250325be1e28955b7477eff0e2e0dac3f",
+  "changed": true,
+  "changed_line_count": 45,
+  "inserted_line_count": 24,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 2,
+  "ui_blocks_candidate_count": 1,
+  "ui_blocks_changed_count": 1,
+  "ui_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 1,
+  "changed_text_summary": {
+    "changed": 45,
+    "inserted": 24,
+    "deleted": 0,
+    "original_line_count": 40,
+    "candidate_line_count": 64
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [
+      "ui_0003"
+    ],
+    "changed_count": 1
+  },
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 1 preserved UI block(s)."
+  ],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
+}

@@ -1,0 +1,42 @@
+{
+  "article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
+  "slug": "lea-hist-007-05-core-concept",
+  "generated_at": "2026-05-03T07:49:15.914Z",
+  "old_hash": "sha256:6ba1c45b8ebf77e2b433de277a413e303e4468f4339cc7aa5ea5c4bb664f9eb5",
+  "new_hash": "sha256:42b8ec2adf3fc86f23394b628140ea3a1e312bff7848b5290a0843cd97f16d77",
+  "original_hash": "sha256:6ba1c45b8ebf77e2b433de277a413e303e4468f4339cc7aa5ea5c4bb664f9eb5",
+  "normalized_hash": "sha256:bc845a9c5f04685da2d31674d9e29dc83cb2fc35a02c53e6a66ffb03a1124849",
+  "candidate_hash": "sha256:42b8ec2adf3fc86f23394b628140ea3a1e312bff7848b5290a0843cd97f16d77",
+  "changed": true,
+  "changed_line_count": 62,
+  "inserted_line_count": 6,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 10,
+  "ui_blocks_candidate_count": 9,
+  "ui_blocks_changed_count": 1,
+  "ui_blocks_count": 10,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 9,
+  "changed_text_summary": {
+    "changed": 62,
+    "inserted": 6,
+    "deleted": 0,
+    "original_line_count": 59,
+    "candidate_line_count": 65
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [
+      "ui_0001"
+    ],
+    "changed_count": 1
+  },
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate is missing 1 preserved UI block(s)."
+  ],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."
+}

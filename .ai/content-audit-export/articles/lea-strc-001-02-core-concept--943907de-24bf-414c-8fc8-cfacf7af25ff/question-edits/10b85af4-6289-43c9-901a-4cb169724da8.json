@@ -1,0 +1,35 @@
+{
+  "question_id": "10b85af4-6289-43c9-901a-4cb169724da8",
+  "baseline_hash": "sha256:6774151491d992f93c5ebfb531503b83be019fee39d1305495b57b3ae3ae94a7",
+  "reason": "Options reference 'Zone 4' and 'Zone 2 with Z=0.2' but the article only describes Zone 1 (Z=0.2) and Zone 2 (Z=0.4) per NSCP. Also, rationale mentions 'Zone 4 covers Eastern Visayas, most of Luzon' which contradicts the article. Fixed options to match article's two-zone system (NSCP). Correct answer for Metro Manila is Zone 2 with Z=0.4.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T04:12:44.015285+00:00",
+  "proposed": {
+    "options": [
+      {
+        "id": "a",
+        "text": "Zone 1, with Z = 0.2"
+      },
+      {
+        "id": "b",
+        "text": "Zone 2, with Z = 0.2"
+      },
+      {
+        "id": "c",
+        "text": "Zone 2, with Z = 0.4"
+      },
+      {
+        "id": "d",
+        "text": "Zone 1, with Z = 0.4"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Incorrect. Zone 1 (Z=0.2) applies only to Palawan (except Busuanga), Tawi-Tawi, and Sulu \u2014 not Metro Manila.",
+      "b": "Incorrect. Zone 2 has Z=0.4, not Z=0.2. Zone 1 has Z=0.2.",
+      "d": "Incorrect. Zone 1 (Z=0.4) is not a valid combination. Zone 1 has Z=0.2; Zone 2 has Z=0.4.",
+      "correct": "Per NSCP, the Philippines has two seismic zones: Zone 1 (Z=0.2, lower risk, covering Palawan/Tawi-Tawi/Sulu) and Zone 2 (Z=0.4, higher risk, covering all other provinces including Metro Manila). Metro Manila is in Zone 2 with Z = 0.4.",
+      "takeaway": "The Philippines uses a two-zone seismic system. Zone 2 (Z=0.4) applies to all provinces except Palawan, Tawi-Tawi, and Sulu."
+    }
+  }
+}

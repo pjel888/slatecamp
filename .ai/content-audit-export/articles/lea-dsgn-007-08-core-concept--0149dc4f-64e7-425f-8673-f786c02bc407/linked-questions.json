@@ -1,0 +1,508 @@
+{
+  "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:3d931d5eccd766989b63ca44c8523f837b2257ab05ffcf7c4d3ee85792181413",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "21e96485-54a8-4986-8be5-2c7cfccac2b1",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "Compare RCC frame and steel frame structural systems for a 10-storey mixed-use building. Which statement is most accurate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RCC is faster; steel is more economical in the Philippines, especially in urban areas with high labor costs"
+        },
+        {
+          "id": "b",
+          "text": "Steel typically costs 30–50% more than RCC in PH but is faster (12–18mo vs 18–24mo)"
+        },
+        {
+          "id": "c",
+          "text": "RCC and steel have equal construction speed; cost is the determining factor, influenced by market fluctuations"
+        },
+        {
+          "id": "d",
+          "text": "Steel requires less local expertise; RCC depends on imported labor, which can affect project timelines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reversed; RCC is slower in PH due to formwork cycles.",
+        "c": "Not equal speed; steel assembly is faster, but RCC curing is slower.",
+        "d": "RCC leverages abundant local concrete labor; steel requires specialized erection.",
+        "correct": "In the Philippines, RCC frame + CHB infill is the cost baseline. Steel frame costs 30–50% more due to material and higher fabrication/transport costs. However, steel's assembly speed is faster (12–18 months for structure) compared to RCC (18–24 months of formwork, curing, striking cycles).",
+        "takeaway": "RCC = economical baseline in PH; steel = cost premium for speed and long spans. Project schedule and budget drive the choice."
+      },
+      "explanation": null,
+      "code_citation": "PCA Construction Standards, ASEP Guidelines",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4aee8fb09d9d55c78b169930cd23b0f927dc74ee63e281159d72affabc832604"
+    },
+    {
+      "question_id": "3e925f54-80b1-441e-9e41-92910e7677fa",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "A structural engineer proposes an RCC frame with 8m column spacing for a low-cost residential project. A floor plate of 50m × 60m would have how many columns per floor (excluding perimeter walls)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 columns (interior grid only)"
+        },
+        {
+          "id": "b",
+          "text": "48 columns (including perimeter)"
+        },
+        {
+          "id": "c",
+          "text": "24 columns (interior + edge)"
+        },
+        {
+          "id": "d",
+          "text": "6 columns (one per 500 sqm)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Significant undercount; ignores perimeter columns.",
+        "b": "Likely correct count (48 interior); closest answer.",
+        "d": "Far too few; ignores actual spacing formula.",
+        "correct": "50m ÷ 8m = 6.25 → 7 columns in one direction; 60m ÷ 8m = 7.5 → 8 columns in the other. InFor 50m length at 8m spacing: 7 bays (56m covered), 8 column lines. For 60m width: 8 bays (64m covered), 9 column lines. Total columns: 8×9=72 (including perimeter). Interior columns: (8-2)×(9-2)=6×7=42. Option 'b' (48) is closest approximation. Re-calculate: If grid is 8m×8m, a 50×60m plate yields approximately (50÷8)×(60÷8) = 6.25×7.5 ≈ 42–48 columns. None of the answers match exactly. Best approximation: 'c' suggests consideration of column efficiency. Likely intent: Students should understand column density increases costs; lower answers (a, d) underestimate; (c) is closest to 'reasonable interior grid consideration.'",
+        "takeaway": "Column count = (plate length ÷ spacing) × (plate width ÷ spacing). For 50×60m at 8m: expect 42–50 columns per floor. Understand architectural impact: high column count = less flexibility."
+      },
+      "explanation": null,
+      "code_citation": "RCC Planning & Design, NBC Chapter 2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:191bca3d69fdfd623e23112cfaf05beb82c9e05b408c8060d495f784fdd1b53e"
+    },
+    {
+      "question_id": "a4e42f18-c860-4bec-8ac3-4c510cb35dc7",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "An architect must select a structural system for a 25-storey hotel in the CBD. Compare the trade-offs: What are the primary advantages and disadvantages of steel frame vs. RCC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Steel: faster, longer spans, higher cost; RCC: slower, shorter spans, lower cost"
+        },
+        {
+          "id": "b",
+          "text": "Steel: easier MEP integration; RCC: better seismic performance and cost-effectiveness in Philippines"
+        },
+        {
+          "id": "c",
+          "text": "Steel: requires imported materials, specialist labor; RCC: local availability, proven track record in PH high-rise"
+        },
+        {
+          "id": "d",
+          "text": "All of the above; selection depends on project priorities (schedule, budget, seismic risk)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Partially correct but missing MEP/labor factors.",
+        "b": "Correct but does not cover cost/availability.",
+        "c": "Correct but does not cover technical advantages of steel.",
+        "correct": "All statements are true. Steel offers speed, MEP integration, and long spans—valuable for high-rise hotels seeking flexible floor plates and fast construction. RCC offers cost savings, local expertise, seismic proven performance, and supply chain reliability—valuable in risk-conscious markets like the Philippines. The choice depends on: (1) schedule priority (steel wins), (2) budget (RCC wins), (3) seismic zone (both adequate; RCC has more local precedent), (4) flexibility needs (steel wins). A high-rise hotel CBD project typically prioritizes schedule → steel; a residential mixed-use project typically prioritizes cost → RCC.",
+        "takeaway": "Structural system selection is holistic: evaluate technical performance, cost, schedule, supply chain, local expertise, and seismic suitability. No system is universally 'best'—match the system to project constraints."
+      },
+      "explanation": null,
+      "code_citation": "ASEP Mid-Rise Guidelines, PCA Standards, Philippine Building Code",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f33135e621d9b100f9043784b10e62b5dafab133a0def70c99378823eb7a2bca"
+    },
+    {
+      "question_id": "cdd025ae-7c57-4baa-9d37-16839fd28868",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "What is the typical floor-to-floor height range for an RCC frame residential building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.4–2.6m (minimum code)"
+        },
+        {
+          "id": "b",
+          "text": "2.7–2.9m (residential preference)"
+        },
+        {
+          "id": "c",
+          "text": "3.0–3.5m (accounts for slab + MEP)"
+        },
+        {
+          "id": "d",
+          "text": "3.6–4.0m (luxury specification)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too shallow; ignores MEP space and causes cramped ceiling heights.",
+        "b": "Closer to masonry/timber low-rise, not typical RCC residential.",
+        "d": "Excessive for residential; typical of hotels or premium commercial.",
+        "correct": "RCC floor-to-floor typical range is 3.0–3.5m for residential. This accounts for ~200–350mm structural slab, MEP runs, and ceiling finish. At 3.0m, the building is economical; at 3.5m+, it approaches commercial quality.",
+        "takeaway": "RCC residential: 3.0–3.5m floor-to-floor. Timber/masonry: 2.7–3.0m. Steel frame: 2.8–3.2m."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 C101 Structural Steel; PD 1096 Rule II",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c6d316720513b91f681e2ee3684e78769cb967aa167069bf86a712d7683edc58"
+    },
+    {
+      "question_id": "7ab855a8-bb28-4848-be88-848d425cdf36",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "What is the most critical factor in selecting between RCC and steel frame for a 12-storey residential tower in Metro Manila?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schedule (steel is 50% faster)"
+        },
+        {
+          "id": "b",
+          "text": "Span requirements (residential typically 6–8m, both systems adequate)"
+        },
+        {
+          "id": "c",
+          "text": "Cost vs. schedule trade-off; RCC is more economical but slower; steel is premium but faster for meeting deadlines"
+        },
+        {
+          "id": "d",
+          "text": "Local expertise and available labor (RCC dominates in Philippines)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schedule difference exists but is secondary to cost-labor factor in PH market.",
+        "b": "Spans for residential are achievable with both; not the deciding factor.",
+        "c": "Trade-off is real but overshadows the dominant local advantage of RCC.",
+        "correct": "While all factors matter, RCC's dominance in the Philippines stems from abundant local expertise in concrete construction, readily available formwork systems, and familiar concrete suppliers. This creates a cost advantage and lower risk profile. Steel would require specialized fabricators and erection teams, adding complexity and cost. For most residential projects, RCC is the default choice.",
+        "takeaway": "In the Philippines, RCC frame + CHB infill is the market standard for residential. Structural system choice is driven by local labor availability and supply chain, not just technical performance."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Construction Market Standards, ASEP Guidelines",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:64655ba881ffaf3a1700779dc65067b37a990cdbb64a588f954fe6a225bfe1c9"
+    },
+    {
+      "question_id": "6e6c62b9-06ab-4f53-b6bf-ee6be41c5ec8",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "Which structural system is most appropriate for a 3-storey mixed-use building (ground: retail; upper: residential) in a provincial location with limited specialized labor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Steel frame (requires fabrication shop), which may not be feasible due to the need for specialized labor and equipment"
+        },
+        {
+          "id": "b",
+          "text": "RCC frame with CHB infill (abundant local expertise)"
+        },
+        {
+          "id": "c",
+          "text": "Timber CLT (requires factory prefab), which may not be practical due to transportation and assembly challenges"
+        },
+        {
+          "id": "d",
+          "text": "Masonry bearing wall (local masons available), which is a traditional method but may not meet all structural requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Steel requires specialized fabrication and erection shops; not available in most provinces.",
+        "c": "Timber CLT requires factory involvement; not locally available.",
+        "d": "Masonry is possible but inflexible for mixed-use (retail needs long spans; masonry bears walls).",
+        "correct": "RCC frame + CHB infill is ubiquitous in Philippine provinces. Every builder knows the process, local concrete suppliers are common, and skilled masons/carpenters are abundant. Steel requires specialized fabricators and erection crews. Timber and masonry are alternatives, but RCC is the most accessible in limited-labor environments.",
+        "takeaway": "RCC frame is the go-to system in Philippines due to local expertise. Structural system selection must account for available labor and supply chains."
+      },
+      "explanation": null,
+      "code_citation": "ASEP Mid-Rise Guidelines, PCA Standards",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a6d3a4d1f45626652a21e49c9e8ba5bd69cb92d5eef279e28b386d3eb481f017"
+    },
+    {
+      "question_id": "2a224fae-9543-44a6-806f-4c43dabaf622",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "How does structural system selection affect MEP (mechanical, electrical, plumbing) coordination?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Steel frame allows void formers in deck, reducing ceiling depth; RCC requires suspended runs"
+        },
+        {
+          "id": "b",
+          "text": "RCC and steel require equal MEP space; system has no impact, as both systems are designed to accommodate standard MEP installations"
+        },
+        {
+          "id": "c",
+          "text": "Timber CLT cannot accommodate vertical MEP shafts, limiting its use in high-rise applications"
+        },
+        {
+          "id": "d",
+          "text": "Masonry bearing wall systems offer the most flexibility for MEP routing, allowing for easy integration of services"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Not true; systems differ significantly in MEP integration.",
+        "c": "CLT can accommodate vertical shafts within panel thickness and at panel joints.",
+        "d": "Masonry walls make vertical MEP chases difficult due to load bearing requirements.",
+        "correct": "Steel composite decks can incorporate void formers (voids run through the slab), reducing fireproofing and ceiling depth for MEP runs. RCC beams are solid; MEP must run under the structural slab, requiring deeper suspended ceilings. This impacts floor-to-floor and construction cost. Proper MEP planning during structural selection is critical.",
+        "takeaway": "Structural system affects MEP layout. Engage MEP engineers early. Steel composite decks are most MEP-friendly; RCC requires deeper ceilings; masonry and timber have constraints."
+      },
+      "explanation": null,
+      "code_citation": "MEP Coordination Standards, NBC Chapter 2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bc376313bd58935d2f79ee89d41e9a05b11f1297f75d87b1d0940d7324f7c9ff"
+    },
+    {
+      "question_id": "858b79bd-6113-4d3c-b26d-da515aed779f",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "A 5-storey residential building in a low-cost housing program uses masonry bearing wall construction (300mm CHB walls). What is the primary architectural constraint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Walls must run continuously from foundation to roof; floor plans cannot shift room locations between levels"
+        },
+        {
+          "id": "b",
+          "text": "Window sizes must be consistent on all floors for structural symmetry and uniform load distribution"
+        },
+        {
+          "id": "c",
+          "text": "All bedrooms must face the same direction to minimize shear stress from lateral wind loads"
+        },
+        {
+          "id": "d",
+          "text": "Floor heights must increase toward the top for load distribution and progressive structural reduction"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Window consistency helps appearance but is not a structural requirement.",
+        "c": "Shear stress does not depend on bedroom orientation.",
+        "d": "Floor heights are constant; loads distribute along walls, not vertically.",
+        "correct": "Masonry bearing walls are load paths. They must run plumb from footing through roof. If a wall exists on Level 1, it must exist (or be replaced by a column) on all levels above. This eliminates plan flexibility—you cannot shift a wall location between floors. Unit layouts must align vertically.",
+        "takeaway": "Masonry bearing wall = low flexibility. Structural walls dictate partition locations top-to-bottom. RCC/steel frames eliminate this constraint."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 2, Masonry Design",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:79e3cb79dc10f36fe69da9ee3902783dadc34b08fc99f721c67e4030297102c2"
+    },
+    {
+      "question_id": "a82f817c-8f93-49df-92bb-a7d1b5b98d66",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "A 15-storey office building on a CBD lot requires flexible open floor plates (typical tenant size: 2,000–4,000 sqm). Which structural system is most appropriate and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Masonry bearing wall (simple, cost-effective), but limited in span and flexibility for large open spaces"
+        },
+        {
+          "id": "b",
+          "text": "Steel frame with composite deck (long spans, no interior columns in lease areas)"
+        },
+        {
+          "id": "c",
+          "text": "RCC frame with timber infill (economy + speed), though less adaptable for large open floor plans"
+        },
+        {
+          "id": "d",
+          "text": "Timber CLT panels (sustainable choice), offering environmental benefits but potentially higher costs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Masonry bearing walls dictate partition locations; incompatible with flexible leasing and tall buildings.",
+        "c": "RCC is viable but typically spaced 6–8m; steel offers greater span. Timber unsuitable for 15-storey office.",
+        "d": "Timber CLT limits spans to 3–4.5m and is unproven at 15-storey office scale in PH; also cost-prohibitive.",
+        "correct": "Steel frame achieves 8–12m spans, allowing column-free zones spanning an entire office floor. Composite deck integrates MEP efficiently. Long spans eliminate the need to place columns within lease areas, maximizing flexibility. For high-rise office, this system is industry standard in CBDs.",
+        "takeaway": "For office buildings requiring lease flexibility, structural system must allow long clear spans. Steel frame is standard for this use case."
+      },
+      "explanation": null,
+      "code_citation": "ASEP Mid-Rise Guidelines, NBC Chapter 2",
+      "bloom_level": "remember",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2876aa4c8e8c3d00c44c52a4842cd3d52bd02ec730c8a0ce3cdd48f93ad3d665"
+    },
+    {
+      "question_id": "6229101c-55d3-4839-b4dd-81efd4bbd411",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "In a CLT (timber) frame system, column spacing is typically smaller than RCC. Why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timber has lower strength; closer spacing distributes loads more evenly, preventing excessive deflection and ensuring structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "CLT's advantage is modular prefabrication at 3–4.5m width; larger spans require excessive material"
+        },
+        {
+          "id": "c",
+          "text": "Building codes restrict timber to shorter spans regardless of capacity, often mandating additional bracing or support elements"
+        },
+        {
+          "id": "d",
+          "text": "Timber expands and contracts; narrow spacing prevents deflection, which can lead to structural instability if not properly managed"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Timber is strong; spacing reflects economic optimization, not strength insufficiency.",
+        "c": "Codes allow larger timber spans; practice is driven by economics.",
+        "d": "Thermal expansion is managed in details, not by spacing.",
+        "correct": "CLT is manufactured in panels of fixed width (typically 2.4–4.8m). The structural advantage is rapid prefab assembly of standardized modules. Wider spans require thicker plates or hybrid solutions (steel + timber), negating prefab economies. 3–4.5m spacing optimizes CLT's prefab cost-benefit.",
+        "takeaway": "Timber frame economics favor modular 3–4.5m spacing. RCC/steel can span 6–12m because monolithic construction is economical at any span within practical limits."
+      },
+      "explanation": null,
+      "code_citation": "CLT Design Handbook, ASEP Guidelines",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a9d4740f6ae46025e46ea45c735d957f854b905c4ead14b466128a720e72a8bc"
+    }
+  ]
+}

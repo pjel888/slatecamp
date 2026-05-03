@@ -1,0 +1,93 @@
+{
+  "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+  "slug": "lea-prac-ctr-018-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.224Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:69fdd94b7eed0a1a001efcd3acf01167e2443efa4edd0074bdce6b24691f0f7f",
+  "normalized_content_hash": "a6201b0170db509fe9265c77d8592ad398493ce892b96e71eb3d7ae5cb446ecd",
+  "ui_block_count": 5,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding\u2014not optional or negotiable.</Tip>",
+      "raw_hash": "sha256:d06520e9bd8856c33998428b48ea1274230e95a647722160952d2bc1e029739a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding\u2014not optional or negotiable.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:2d53186ae6c1a7cafe9bce69826a1146a0d78dcd1f6279f480877081ffbe7004",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding\u2014not optional or negotiable.",
+      "children_text": "Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding\u2014not optional or negotiable.",
+      "start_offset": 7292,
+      "end_offset": 7606,
+      "line_start": 48,
+      "line_end": 48,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0006",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"ra9266\" section=\"PD 1096 (National Building Code)\" title=\"Certificate of Occupancy \u2014 Architect's Role\">\nThe Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance \u2014 sealed drawings must comply with NBC; (2) Construction administration \u2014 inspect for code compliance; (3) Occupancy coordination \u2014 assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy \u2014 only the Building Official's Certificate of Occupancy does.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=ra9266, section=PD 1096 (National Building Code), title=Certificate of Occupancy \u2014 Architect",
+      "props_json": {
+        "code": "ra9266",
+        "section": "PD 1096 (National Building Code)",
+        "title": "Certificate of Occupancy \u2014 Architect"
+      },
+      "children_raw": "The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance \u2014 sealed drawings must comply with NBC; (2) Construction administration \u2014 inspect for code compliance; (3) Occupancy coordination \u2014 assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy \u2014 only the Building Official's Certificate of Occupancy does.",
+      "children_text": "The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance \u2014 sealed drawings must comply with NBC; (2) Construction administration \u2014 inspect for code compliance; (3) Occupancy coordination \u2014 assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy \u2014 only the Building Official's Certificate of Occupancy does.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:f468fa4797cbb9890e782b5127e242a61d02a8415debf33a6c12f07a76d5b86e"
+    },
+    {
+      "block_id": "ui_0005",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **LEA Priority \u2014 Certificate of Occupancy Key Points:**\n  1. Issued by Building Official (government), not architect\n  2. Separate from and often after Substantial Completion\n  3. Based on inspection against National Building Code\n  4. Architect is liable if design or construction supervision failed to ensure code compliance\n  5. Owner cannot legally occupy without Certificate of Occupancy\n</ExamTip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**LEA Priority \u2014 Certificate of Occupancy Key Points:**\n  1. Issued by Building Official (government), not architect\n  2. Separate from and often after Substantial Completion\n  3. Based on inspection against National Building Code\n  4. Architect is liable if design or construction supervision failed to ensure code compliance\n  5. Owner cannot legally occupy without Certificate of Occupancy",
+      "children_text": "**LEA Priority \u2014 Certificate of Occupancy Key Points:**\n  1. Issued by Building Official (government), not architect\n  2. Separate from and often after Substantial Completion\n  3. Based on inspection against National Building Code\n  4. Architect is liable if design or construction supervision failed to ensure code compliance\n  5. Owner cannot legally occupy without Certificate of Occupancy",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:4a186d936550731cf6ac6723477106fc32760c6b0bee0446af4b09b6ba105773"
+    },
+    {
+      "block_id": "ui_0004",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"ra9266\" section=\"PD 1096 (National Building Code)\" title=\"Certificate of Occupancy \u2014 Architect's Role\">\nThe Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance \u2014 sealed drawings must comply with NBC; (2) Construction administration \u2014 inspect for code compliance; (3) Occupancy coordination \u2014 assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy \u2014 only the Building Official's Certificate of Occupancy does.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=ra9266, section=PD 1096 (National Building Code), title=Certificate of Occupancy \u2014 Architect",
+      "props_json": {
+        "code": "ra9266",
+        "section": "PD 1096 (National Building Code)",
+        "title": "Certificate of Occupancy \u2014 Architect"
+      },
+      "children_raw": "The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance \u2014 sealed drawings must comply with NBC; (2) Construction administration \u2014 inspect for code compliance; (3) Occupancy coordination \u2014 assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy \u2014 only the Building Official's Certificate of Occupancy does.",
+      "children_text": "The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance \u2014 sealed drawings must comply with NBC; (2) Construction administration \u2014 inspect for code compliance; (3) Occupancy coordination \u2014 assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy \u2014 only the Building Official's Certificate of Occupancy does.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:f468fa4797cbb9890e782b5127e242a61d02a8415debf33a6c12f07a76d5b86e"
+    },
+    {
+      "block_id": "ui_0003",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **LEA Priority \u2014 Certificate of Occupancy Key Points:**\n  1. Issued by Building Official (government), not architect\n  2. Separate from and often after Substantial Completion\n  3. Based on inspection against National Building Code\n  4. Architect is liable if design or construction supervision failed to ensure code compliance\n  5. Owner cannot legally occupy without Certificate of Occupancy\n</ExamTip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**LEA Priority \u2014 Certificate of Occupancy Key Points:**\n  1. Issued by Building Official (government), not architect\n  2. Separate from and often after Substantial Completion\n  3. Based on inspection against National Building Code\n  4. Architect is liable if design or construction supervision failed to ensure code compliance\n  5. Owner cannot legally occupy without Certificate of Occupancy",
+      "children_text": "**LEA Priority \u2014 Certificate of Occupancy Key Points:**\n  1. Issued by Building Official (government), not architect\n  2. Separate from and often after Substantial Completion\n  3. Based on inspection against National Building Code\n  4. Architect is liable if design or construction supervision failed to ensure code compliance\n  5. Owner cannot legally occupy without Certificate of Occupancy",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:4a186d936550731cf6ac6723477106fc32760c6b0bee0446af4b09b6ba105773"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "6e7cbdd7c165a7085e0204705104484b65b82a8ddc26ec780b96a58fd1681a87"
+}

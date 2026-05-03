@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+  "slug": "lea-matl-006-02-core-concept",
+  "title": "Roof trusses transfer roof loads through triangulated",
+  "component_count": 3,
+  "components": [
+    {
+      "component_name": "Tip",
+      "block_ids": [
+        "ui_0001"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "WikiMistakeCard",
+      "block_ids": [
+        "ui_0002",
+        "ui_0003"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "WikiMistakeList",
+      "block_ids": [
+        "ui_0004"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    }
+  ],
+  "unknown_components": [],
+  "custom_ui_block_count": 4,
+  "normalized_status": "warnings",
+  "components_detected": [
+    "Tip",
+    "WikiMistakeCard",
+    "WikiMistakeList"
+  ],
+  "unknown_components_detected": []
+}

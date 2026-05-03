@@ -1,0 +1,158 @@
+{
+  "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+  "slug": "bp-344-elevator-dimensions",
+  "normalized_created_at": "2026-05-01T13:33:43.691Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:ab67cc7a83b94b283320e0c52ae791c7d13c27277f98eda699f0b3e79f2a60a6",
+  "normalized_content_hash": "sha256:fd687065c72706c17e97a4a7889408c84bb31734ca8b924d98a285c2b78fcce1",
+  "ui_block_count": 5,
+  "total_blocks": 5,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 10 - Vertical Access\">\n\n\nWhy the letter V matters (and how it fits with PD 1096):\nPD 1096 frames elevators as part of vertical circulation and fire safety but does not prescribe detailed accessibility tech like voice synthesizers or visual emergency links.[file:1] The 2024 BP 344 IRR closes this gap by explicitly requiring auditory and visual communication so that elevators remain usable by all occupants in everyday use and during emergencies.[file:4]\n\n\n</LawCallout>",
+      "raw_hash": "sha256:ad00290cda9d769075d5c8c6e6e333fa14ea5fe9a03e81bddd8086e18758a92a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\"\n- Text: Why the letter V matters (and how it fits with PD 1096): PD 1096 frames elevators as part of vertical circulation and fire safety but does not prescribe detailed accessibility tech like voice synthesizers or visual emergency links.[file:1] The 2024 BP 344 IRR closes this gap by explicitly requiring auditory and visual communication so that elevators remain usable by all occupants in everyday use and during emergencies.[file:4]\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a9130fccecfaae088cd7d3d6ab3a36d040294d53701c6bf04bde79184b9045e9",
+      "props": {
+        "code": "nbcp"
+      },
+      "props_json": {
+        "code": "bp344",
+        "section": "Section 10 - Vertical Access"
+      },
+      "props_text": "code=bp344, section=Section 10 - Vertical Access",
+      "children_raw": "\n\nWhy the letter V matters (and how it fits with PD 1096):\nPD 1096 frames elevators as part of vertical circulation and fire safety but does not prescribe detailed accessibility tech like voice synthesizers or visual emergency links.[file:1] The 2024 BP 344 IRR closes this gap by explicitly requiring auditory and visual communication so that elevators remain usable by all occupants in everyday use and during emergencies.[file:4]\n\n",
+      "children_text": "Why the letter V matters (and how it fits with PD 1096): PD 1096 frames elevators as part of vertical circulation and fire safety but does not prescribe detailed accessibility tech like voice synthesizers or visual emergency links.[file:1] The 2024 BP 344 IRR closes this gap by explicitly requiring auditory and visual communication so that elevators remain usable by all occupants in everyday use and during emergencies.[file:4]",
+      "start_offset": 2414,
+      "end_offset": 2885,
+      "line_start": 26,
+      "line_end": 31,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 10.1 - Elevator Car Dimensions\">\n\n\nWhy 1200mm width (not the old 1100mm)?\nModern power wheelchairs and scooters are wider than older manual chairs, and PD 1096\u2019s general exit width logic anticipates larger occupant flow paths in public occupancies.[file:1] The 2024 IRR aligns with this reality by requiring 1200mm clear car width, future\u2011proofing the accessible car for current and near\u2011future mobility devices.[file:4]\n\n\n</LawCallout>",
+      "raw_hash": "sha256:2bca51d4e9d3e22d0afb56b26f94dde1a8ff83b58581ebfb91781e87ea35813e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"authority\", title=\"Why 1200mm width (not the old 1100mm)?\"\n- Text: Why 1200mm width (not the old 1100mm)? Modern power wheelchairs and scooters are wider than older manual chairs, and PD 1096\u2019s general exit width logic anticipates larger occupant flow paths in public occupancies.[file:1] The 2024 IRR aligns with this reality by requiring 1200mm clear car width, future\u2011proofing the accessible car for current and near\u2011future mobility devices.[file:4]\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4fd6d893a67e77cc0c95b43b2525e5a0d051da0ec063a7046a1e0a999e18d847",
+      "props": {
+        "variant": "authority",
+        "title": "Why 1200mm width (not the old 1100mm)?"
+      },
+      "props_json": {
+        "variant": "authority",
+        "title": "Why 1200mm width (not the old 1100mm)?",
+        "code": "bp344",
+        "section": "Section 10.1 - Elevator Car Dimensions"
+      },
+      "props_text": "variant=authority, title=Why 1200mm width (not the old 1100mm)?, code=bp344, section=Section 10.1 - Elevator Car Dimensions",
+      "children_raw": "\n\nWhy 1200mm width (not the old 1100mm)?\nModern power wheelchairs and scooters are wider than older manual chairs, and PD 1096\u2019s general exit width logic anticipates larger occupant flow paths in public occupancies.[file:1] The 2024 IRR aligns with this reality by requiring 1200mm clear car width, future\u2011proofing the accessible car for current and near\u2011future mobility devices.[file:4]\n\n",
+      "children_text": "Why 1200mm width (not the old 1100mm)? Modern power wheelchairs and scooters are wider than older manual chairs, and PD 1096\u2019s general exit width logic anticipates larger occupant flow paths in public occupancies.[file:1] The 2024 IRR aligns with this reality by requiring 1200mm clear car width, future\u2011proofing the accessible car for current and near\u2011future mobility devices.[file:4]",
+      "start_offset": 8506,
+      "end_offset": 8981,
+      "line_start": 57,
+      "line_end": 62,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 10.3 - Controls and Signals\">\n\n\nWhy 1800 x 1800mm lobby turning space, given NBC Rules VII & VIII?\nNBC Rule VIII establishes general minimum room and circulation sizes but does not fix a turning circle dimension for wheelchairs.[file:1][file:3] BP 344\u2019s 1800 x 1800mm turning space overlays on that framework to guarantee a full turn without violating light, ventilation, and exit layout logic set by PD 1096.[file:4]\n\n\n</LawCallout>",
+      "raw_hash": "sha256:3aec4744ab1dd325c6f96c5f9a058c807c4ed92ea76bb6c0c1cc8418678574b2",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"authority\", title=\"Why 1800 x 1800mm lobby turning space, given NBC Rules VII & VIII?\"\n- Text: Why 1800 x 1800mm lobby turning space, given NBC Rules VII & VIII? NBC Rule VIII establishes general minimum room and circulation sizes but does not fix a turning circle dimension for wheelchairs.[file:1][file:3] BP 344\u2019s 1800 x 1800mm turning space overlays on that framework to guarantee a full turn without violating light, ventilation, and exit layout logic set by PD 1096.[file:4]\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a3f9cf99e0cefb2094b78e83f07e2b92c1a28d301d019cffa5efedf6ec1b903c",
+      "props": {
+        "variant": "authority",
+        "title": "Why 1800 x 1800mm lobby turning space, given NBC Rules VII & VIII?"
+      },
+      "props_json": {
+        "variant": "authority",
+        "title": "Why 1800 x 1800mm lobby turning space, given NBC Rules VII & VIII?",
+        "code": "bp344",
+        "section": "Section 10.3 - Controls and Signals"
+      },
+      "props_text": "variant=authority, title=Why 1800 x 1800mm lobby turning space, given NBC Rules VII & VIII?, code=bp344, section=Section 10.3 - Controls and Signals",
+      "children_raw": "\n\nWhy 1800 x 1800mm lobby turning space, given NBC Rules VII & VIII?\nNBC Rule VIII establishes general minimum room and circulation sizes but does not fix a turning circle dimension for wheelchairs.[file:1][file:3] BP 344\u2019s 1800 x 1800mm turning space overlays on that framework to guarantee a full turn without violating light, ventilation, and exit layout logic set by PD 1096.[file:4]\n\n",
+      "children_text": "Why 1800 x 1800mm lobby turning space, given NBC Rules VII & VIII? NBC Rule VIII establishes general minimum room and circulation sizes but does not fix a turning circle dimension for wheelchairs.[file:1][file:3] BP 344\u2019s 1800 x 1800mm turning space overlays on that framework to guarantee a full turn without violating light, ventilation, and exit layout logic set by PD 1096.[file:4]",
+      "start_offset": 8984,
+      "end_offset": 9487,
+      "line_start": 64,
+      "line_end": 69,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout variant=\"lea-watch\" title=\"Trap Leart\">\n\nAn exam stem that shows handrails on \u201cone side only\u201d or \u201ctwo sides only\u201d is under\u2011compliant. The 2024 IRR requires all three walls (both sides plus rear) for the accessible car.[file:4]\n\n</Callout>",
+      "raw_hash": "sha256:a3f4e66ccf40cd6fd16af5fa6424bd79f8a70c6eb214b3e1e0f102b3f9f3e3fc",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"lea-watch\", title=\"Trap Leart\"\n- Text: An exam stem that shows handrails on \u201cone side only\u201d or \u201ctwo sides only\u201d is under\u2011compliant. The 2024 IRR requires all three walls (both sides plus rear) for the accessible car.[file:4]\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:da27009b23c900e41afb1aa7ed85f6b0f43af0c1d1e47d31b07e3dcbcb45f0f7",
+      "props": {
+        "variant": "lea-watch",
+        "title": "Trap Leart"
+      },
+      "props_json": {
+        "variant": "lea-watch",
+        "title": "Trap Leart"
+      },
+      "props_text": "variant=\"lea-watch\" title=\"Trap Leart\"",
+      "children_raw": "\n\nAn exam stem that shows handrails on \u201cone side only\u201d or \u201ctwo sides only\u201d is under\u2011compliant. The 2024 IRR requires all three walls (both sides plus rear) for the accessible car.[file:4]\n\n",
+      "children_text": "An exam stem that shows handrails on \u201cone side only\u201d or \u201ctwo sides only\u201d is under\u2011compliant. The 2024 IRR requires all three walls (both sides plus rear) for the accessible car.[file:4]",
+      "start_offset": 10885,
+      "end_offset": 11132,
+      "line_start": 114,
+      "line_end": 118,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout variant=\"authority\" title=\"Power Outage (Sec 8.10) vs NBC Exit Stairs\">\n\nPower Outage (Sec 8.10) vs NBC Exit Stairs:\nPD 1096 exit and stair provisions assume ambulatory occupants can use stairs.[file:1] PWDs who rely on elevators cannot; thus BP 344 requires that at least the accessible elevator remain operable via backup or alternate power, so the egress strategy remains inclusive.[file:4]\n\n</Callout>",
+      "raw_hash": "sha256:1694f7a3527b72d15f12f3a09fd171816e1c4ff4ce417f7974c6974a3a410b0b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"authority\", title=\"Power Outage (Sec 8.10) vs NBC Exit Stairs\"\n- Text: Power Outage (Sec 8.10) vs NBC Exit Stairs: PD 1096 exit and stair provisions assume ambulatory occupants can use stairs.[file:1] PWDs who rely on elevators cannot; thus BP 344 requires that at least the accessible elevator remain operable via backup or alternate power, so the egress strategy remains inclusive.[file:4]\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:b04a05a9a6633a046a36e1138b970fe6f07f92534803f83ba74616f6e977f292",
+      "props": {
+        "variant": "authority",
+        "title": "Power Outage (Sec 8.10) vs NBC Exit Stairs"
+      },
+      "props_json": {
+        "variant": "authority",
+        "title": "Power Outage (Sec 8.10) vs NBC Exit Stairs"
+      },
+      "props_text": "variant=\"authority\" title=\"Power Outage (Sec 8.10) vs NBC Exit Stairs\"",
+      "children_raw": "\n\nPower Outage (Sec 8.10) vs NBC Exit Stairs:\nPD 1096 exit and stair provisions assume ambulatory occupants can use stairs.[file:1] PWDs who rely on elevators cannot; thus BP 344 requires that at least the accessible elevator remain operable via backup or alternate power, so the egress strategy remains inclusive.[file:4]\n\n",
+      "children_text": "Power Outage (Sec 8.10) vs NBC Exit Stairs: PD 1096 exit and stair provisions assume ambulatory occupants can use stairs.[file:1] PWDs who rely on elevators cannot; thus BP 344 requires that at least the accessible elevator remain operable via backup or alternate power, so the egress strategy remains inclusive.[file:4]",
+      "start_offset": 11960,
+      "end_offset": 12374,
+      "line_start": 132,
+      "line_end": 137,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:3f6ffda0f66e1579667b6f83771f88203769a39c49aafc31e9b061c02c409b14"
+}

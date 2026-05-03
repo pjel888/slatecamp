@@ -1,0 +1,1460 @@
+{
+  "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:7805ea65efd9a912a23b14b9c6ddfe4d4ff9e22ce07aef8fad058e24f4090cb5",
+  "question_count": 33,
+  "questions": [
+    {
+      "question_id": "7e4a04ed-c723-42b2-81b6-ba7ae7779f19",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 809-c, at what minimum height above the shaft bottom and above the street or court surface must the air duct opening be positioned?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150 mm"
+        },
+        {
+          "id": "B",
+          "text": "300 mm"
+        },
+        {
+          "id": "C",
+          "text": "450 mm"
+        },
+        {
+          "id": "D",
+          "text": "600 mm"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 809-c requires both: (1) the duct opening into the shaft must be at least 300 mm above the bottom of the shaft, and (2) the street or court end of the duct must be at least 300 mm above the street or court surface. The 300 mm elevation prevents flooding and the ingress of surface-level contaminants, puddles, and street runoff into the duct system.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8cc5a87796d31d46d203a210e777c25ffdc475494488bc06885ebf2059b359ed"
+    },
+    {
+      "question_id": "fd6db4f2-8547-4f05-962a-b4bd5685838d",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 809-c, when a horizontal air duct is used as an alternative to an open vent shaft top, what is the minimum required cross-sectional area of such a duct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.10 sq.m."
+        },
+        {
+          "id": "B",
+          "text": "0.30 sq.m."
+        },
+        {
+          "id": "C",
+          "text": "0.60 sq.m."
+        },
+        {
+          "id": "D",
+          "text": "1.00 sq.m."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 'Three Thirties' mnemonic governs the air duct alternative: the duct must have a minimum cross-sectional area of 0.30 sq.m. (along with minimum dimension of 300 mm and minimum elevation of 300 mm above the shaft bottom and street level). The 0.30 sq.m. area is the largest of the three dimensional requirements for this alternative.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e9032d7d6373cccd0a50b376060225c60d3b4c92d6919626614041c1efd86843"
+    },
+    {
+      "question_id": "5b204e95-efd2-49bb-9a70-bccc01d9dd05",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 811, what is the minimum required rate of artificial ventilation for rooms or spaces located below grade (basements)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 air changes per hour"
+        },
+        {
+          "id": "B",
+          "text": "4 air changes per hour"
+        },
+        {
+          "id": "C",
+          "text": "5 air changes per hour"
+        },
+        {
+          "id": "D",
+          "text": "6 air changes per hour"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 811 mandates a minimum of 6 ACH for all rooms below grade — exactly double the above-grade rate. The rationale: natural air movement does not assist mechanical systems in basement spaces, and contaminants tend to pool at lower elevations. This is a favorite board exam trap: candidates who memorize only the above-grade rate will consistently choose the wrong answer for below-grade scenarios.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:615a696e2658b93bd4ecea5b15ff7fd10c5e4f320ea146203ae7312525c3c7c0"
+    },
+    {
+      "question_id": "3e2de8d1-4d49-47fe-8cbb-10dc932697f6",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "In the context of vent shaft sizing under Sec. 809-a, the formula of 0.10 sq.m. per meter of height is based on which measurement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The height of the highest floor served by the shaft, ensuring adequate ventilation for all levels"
+        },
+        {
+          "id": "B",
+          "text": "The total height of the shaft (from its bottom to its top at roof level)"
+        },
+        {
+          "id": "C",
+          "text": "The height of the building from the curb to the roof parapet, which includes all architectural projections"
+        },
+        {
+          "id": "D",
+          "text": "The height of the room being ventilated, as it determines the volume of air required for proper circulation"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 809-a calculates shaft area based on the total height of the shaft — from its bottom (lowest connection point) to its top (roof termination). This is not the building height, floor height, or room height. In multi-storey buildings with internal shafts, the shaft height may equal several storey heights and must be measured from the lowest floor served to the roof.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f83b128451de0ea7494301a6b5e87a2bc8a3fa1a3c7c1e7543d203408581d26"
+    },
+    {
+      "question_id": "1fd144f8-347e-41a6-a043-a9813003b4f1",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum least (shortest) horizontal dimension required for any vent shaft under Sec. 809-a of the National Building Code?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm"
+        },
+        {
+          "id": "B",
+          "text": "450 mm"
+        },
+        {
+          "id": "C",
+          "text": "600 mm"
+        },
+        {
+          "id": "D",
+          "text": "800 mm"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 809-a explicitly requires that the least horizontal dimension of a vent shaft shall not be less than 600 mm. This prevents the shaft from becoming too narrow and ineffective, regardless of whether the cross-sectional area formula result would permit a smaller dimension. Note: 300 mm is the minimum dimension for the air duct alternative — not the shaft itself.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ab7388cdffb0e342771b904d61b42518cc6a89c4d65753f1020dde4a72f56999"
+    },
+    {
+      "question_id": "4b53284f-bd20-4809-b447-a752dd40a889",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum least dimension required for a horizontal air duct used as a ventilation alternative under Sec. 809-c?",
+      "options": [
+        {
+          "id": "A",
+          "text": "200 mm"
+        },
+        {
+          "id": "B",
+          "text": "300 mm"
+        },
+        {
+          "id": "C",
+          "text": "400 mm"
+        },
+        {
+          "id": "D",
+          "text": "600 mm"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 809-c requires the least dimension of the air duct to be at least 300 mm on the short side. This is part of the 'Three Thirties' requirement alongside the 0.30 sq.m. area and the 300 mm elevation minimum. The 300 mm minimum dimension ensures the duct is large enough to remain clear and functional.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:def66343104dc21eca2ea41aa62d78f5b1e98c44bebce91467482637ec5cc673"
+    },
+    {
+      "question_id": "5904449c-0259-453a-94ce-67cff51f4298",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A vent shaft is designed for a 30-meter tall building. What is the minimum required cross-sectional area for this shaft under Sec. 809-a?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.00 sq.m."
+        },
+        {
+          "id": "B",
+          "text": "2.00 sq.m."
+        },
+        {
+          "id": "C",
+          "text": "3.00 sq.m."
+        },
+        {
+          "id": "D",
+          "text": "6.00 sq.m."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Applying the formula: 0.10 sq.m. × 30.00 m = 3.00 sq.m. At 30.00 m, the formula result (3.00 sq.m.) is well above the 1.00 sq.m. absolute minimum, so 3.00 sq.m. governs the design. This would require a shaft roughly 1.73 m × 1.73 m on plan — architects must coordinate these dimensions early in the design process as they consume significant floor area on every storey in high-rise buildings.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0d4f3847afa2e715dc88a25a005ac17b9f364b16eababd36c1773daccac47ed"
+    },
+    {
+      "question_id": "b587d079-0620-4705-8430-4019417a38e3",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A proposed building features a vent shaft with a total height of 8.00 meters. What is the minimum required cross-sectional area for this shaft under Sec. 809-a?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.80 sq.m."
+        },
+        {
+          "id": "B",
+          "text": "1.00 sq.m."
+        },
+        {
+          "id": "C",
+          "text": "1.20 sq.m."
+        },
+        {
+          "id": "D",
+          "text": "1.60 sq.m."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Applying the formula: 0.10 sq.m. × 8.00 m = 0.80 sq.m. However, Sec. 809-a specifies an absolute minimum of 1.00 sq.m. that overrides the formula for short shafts. The formula yields 0.80 sq.m. which is below the code floor, so 1.00 sq.m. governs. This is a classic board exam trap — candidates who apply only the formula without checking the absolute minimum will choose the wrong answer.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b5c9d20421a9e0ba73b8bec362b98b423deae5c8b99cdd95fc78770142fb723b"
+    },
+    {
+      "question_id": "cf007323-2f99-4d71-9780-0638f896b354",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "According to PD 1096, Rule VIII, Section 809-a, what is the absolute minimum cross-sectional area required for any vent shaft — regardless of its height?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.30 sq.m."
+        },
+        {
+          "id": "B",
+          "text": "0.60 sq.m."
+        },
+        {
+          "id": "C",
+          "text": "1.00 sq.m."
+        },
+        {
+          "id": "D",
+          "text": "1.20 sq.m."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 809-a establishes a formula: cross-sectional area ≥ 0.10 sq.m. × height (meters). However, the code specifies an absolute minimum of 1.00 sq.m. that applies regardless of the formula result. For any shaft shorter than 10.00 m, the absolute minimum of 1.00 sq.m. always governs — the formula result would be below the floor.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:05934aeedc4e4cd8d6ab84f9128b04fefd97aa41eb15176c6ea6723ca2611bca"
+    },
+    {
+      "question_id": "f3ec51c0-4d5d-477f-9a94-8aef966a2c6c",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "For a vent shaft with a total height of 15.00 meters, what is the minimum required cross-sectional area under Sec. 809-a?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.00 sq.m."
+        },
+        {
+          "id": "B",
+          "text": "1.25 sq.m."
+        },
+        {
+          "id": "C",
+          "text": "1.50 sq.m."
+        },
+        {
+          "id": "D",
+          "text": "2.00 sq.m."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Applying the formula: 0.10 sq.m. × 15.00 m = 1.50 sq.m. At 15.00 m, the formula result (1.50 sq.m.) exceeds the absolute minimum of 1.00 sq.m., so the formula result governs. This is the critical height threshold: above 10.00 m, the formula always yields more than 1.00 sq.m. and the formula result controls the design.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ae06197369856bbe631d9bfe7a97092ea2161c75240ea301804fdb92f117c597"
+    },
+    {
+      "question_id": "acccf926-32d0-4f12-b5fd-bdd326ffb463",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 811, what is the CRITICAL word in the window area requirement that means the window GRILLES do NOT count toward the opening area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unobstructed"
+        },
+        {
+          "id": "b",
+          "text": "Free"
+        },
+        {
+          "id": "c",
+          "text": "Operable"
+        },
+        {
+          "id": "d",
+          "text": "Minimum"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This tests whether candidates understand the practical application of the window area requirement. A window with large fixed glass panels and small operable clerestory vents may have a large nominal opening but a small FREE area. In the Philippines, security grilles are common — and they can significantly reduce the effective ventilation opening if not designed with sufficient operable clearance.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:853f86fbc379a67faf28226905797a28813306c44337b48caad6489bf11b0384"
+    },
+    {
+      "question_id": "bb239352-2a48-49b9-aae0-798f88ec43c2",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 809, what are the dimensional requirements for vent shafts and air ducts?",
+      "options": [
+        {
+          "id": "lv-006-a",
+          "text": "Shaft: 1.00 sq.m per meter of height, minimum 600 mm least dimension; Duct: 0.30 sq.m, minimum 300 mm least dimension; outlet at least 300 mm above street/court level"
+        },
+        {
+          "id": "lv-006-b",
+          "text": "Shaft: 2.00 sq.m per meter of height, minimum 900 mm least dimension; Duct: 0.50 sq.m, minimum 400 mm least dimension; outlet at least 600 mm above street/court level"
+        },
+        {
+          "id": "lv-006-c",
+          "text": "Shaft: 1.00 sq.m total, minimum 900 mm least dimension; Duct: 0.60 sq.m, minimum 300 mm least dimension; outlet at least 450 mm above street/court level"
+        },
+        {
+          "id": "lv-006-d",
+          "text": "Shaft: 2.00 sq.m total, minimum 600 mm least dimension; Duct: 0.30 sq.m, minimum 200 mm least dimension; outlet at least 200 mm above street/court level"
+        }
+      ],
+      "correct_option_id": "lv-006-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The vent shaft formula (1.00 sq.m per meter of height) means a 3-storey building requires a 3.00 sq.m shaft minimum. Taller buildings need progressively larger shafts. This connects to structural planning — the shaft needs to be counted in the floor plan from the beginning.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f6d0224887bf4767d1831c40bf0a47b177aa30c600509c15e2262e40fed6a18"
+    },
+    {
+      "question_id": "4fd34fdf-49df-45d4-9134-91052af20e7f",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1208, what is the minimum net free area required for a ventilation opening using plain (non-wired) glass over a vertical shaft skylight?",
+      "options": [
+        {
+          "id": "A",
+          "text": "At least 1/4 of the shaft's cross-sectional area, which may vary based on specific design conditions"
+        },
+        {
+          "id": "B",
+          "text": "At least 1/8 of the shaft's cross-sectional area, with an absolute minimum of 1.20 m"
+        },
+        {
+          "id": "C",
+          "text": "At least 1.00 sq.m regardless of shaft area, which is not typically sufficient for larger shafts"
+        },
+        {
+          "id": "D",
+          "text": "Plain glass is not permitted over vertical shaft skylights under any condition, which is a misunderstanding of the code"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1208, plain (non-wired) glass is permitted over vertical shaft skylights (2+ storeys) if the shaft is ventilated with a net free area of at least 1/8 of the shaft's cross-sectional area, with a minimum opening of 1.20 m in any dimension. This maintains adequate smoke and heat venting from the shaft.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:11.283396+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8072a7aed09e42bc6fc881ed1a946bda7b31530e34567b01b1939616ad543aac"
+    },
+    {
+      "question_id": "5f7381d3-3670-4c8d-a795-37bfaf8002ac",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 809-a, what is the minimum required least (shortest) dimension of any vent shaft cross-section?",
+      "options": [
+        {
+          "id": "vent-003-a",
+          "text": "300 mm — the same minimum as the horizontal air duct alternative"
+        },
+        {
+          "id": "vent-003-b",
+          "text": "450 mm — the standard minimum for mechanical shafts under the Mechanical Code"
+        },
+        {
+          "id": "vent-003-c",
+          "text": "600 mm — regardless of shaft height or cross-sectional area result"
+        },
+        {
+          "id": "vent-003-d",
+          "text": "800 mm — to ensure adequate airflow velocity through the shaft"
+        }
+      ],
+      "correct_option_id": "vent-003-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809-a, the least (smallest) dimension of the vent shaft cross-section must be at least 600 mm, regardless of the cross-sectional area formula result or building height. This is an independent constraint — a shaft could have a compliant area but still fail if one dimension is less than 600 mm. For example, a 0.60 m × 1.67 m shaft has area 1.00 sq.m but its least dimension (600 mm) exactly meets the minimum.",
+      "explanation": "The three vent shaft constraints from Sec. 809-a must ALL be satisfied simultaneously: (1) area ≥ 0.10 sq.m × height; (2) area ≥ 1.00 sq.m absolute minimum; (3) least dimension ≥ 600 mm. Satisfying two of three is insufficient.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-a",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0eeb03ac7682eb20d5d0c1b6b4fd42acad807bf4a214356b4f5df5198cb641f3"
+    },
+    {
+      "question_id": "c565600c-92bf-46c8-90c7-b354e4a961d1",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A vent shaft in a proposed six-storey building has a total height of 8.00 meters. What is the minimum required cross-sectional area per PD 1096, Rule VIII, Section 809-a?",
+      "options": [
+        {
+          "id": "vent-002-a",
+          "text": "0.80 sq.m — the formula result of 0.10 × 8.00 m governs, ensuring adequate ventilation."
+        },
+        {
+          "id": "vent-002-b",
+          "text": "1.00 sq.m — the absolute minimum overrides the formula result of 0.80 sq.m"
+        },
+        {
+          "id": "vent-002-c",
+          "text": "1.20 sq.m — a 50% safety factor is added to the formula result, providing extra safety margin."
+        },
+        {
+          "id": "vent-002-d",
+          "text": "0.60 sq.m — the minimum least dimension is used as the cross-sectional area, which is not standard practice."
+        }
+      ],
+      "correct_option_id": "vent-002-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Applying the formula: 0.10 sq.m × 8.00 m = 0.80 sq.m. However, Sec. 809-a specifies an absolute minimum of 1.00 sq.m that overrides the formula result for short shafts. The formula yields 0.80 sq.m, which is below the 1.00 sq.m floor, so 1.00 sq.m governs. This is a classic board exam trap — candidates who apply only the formula and skip the absolute minimum check will select the wrong answer.",
+      "explanation": "The crossover point where the formula result first exceeds the absolute minimum is exactly 10.00 m: 0.10 × 10 = 1.00 sq.m. Below 10.00 m, always use 1.00 sq.m. Above 10.00 m, use the formula. At exactly 10.00 m, both yield the same answer.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-a",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:829389f362b077fc15db124fd4c9d93589867b7da2073739029741d88d72063e"
+    },
+    {
+      "question_id": "0c16c7e6-600a-46da-ae53-72b2512ff9b4",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 809-a, what is the formula for calculating the minimum required cross-sectional area of a vent shaft, and what absolute minimum overrides the formula for short shafts?",
+      "options": [
+        {
+          "id": "vent-001-a",
+          "text": "Area ≥ 0.10 sq.m × shaft height (m); absolute minimum 1.00 sq.m regardless of formula result"
+        },
+        {
+          "id": "vent-001-b",
+          "text": "Area ≥ 0.30 sq.m × shaft height (m); absolute minimum 0.60 sq.m regardless of formula result"
+        },
+        {
+          "id": "vent-001-c",
+          "text": "Area ≥ 0.10 sq.m × shaft height (m); absolute minimum 0.60 sq.m regardless of formula result"
+        },
+        {
+          "id": "vent-001-d",
+          "text": "Area ≥ 0.05 sq.m × shaft height (m); absolute minimum 1.00 sq.m regardless of formula result"
+        }
+      ],
+      "correct_option_id": "vent-001-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809-a, cross-sectional area ≥ 0.10 sq.m × height of shaft in meters, but the absolute minimum is 1.00 sq.m regardless of the formula result. For any shaft shorter than 10.00 m, the formula yields less than 1.00 sq.m — the absolute minimum governs. At 10.00 m: 0.10 × 10 = 1.00 sq.m — formula and minimum coincide. Above 10.00 m, the formula governs. The 0.60 sq.m figure refers to the minimum least dimension, not the area.",
+      "explanation": "The formula-vs-absolute-minimum interaction is the most tested computational aspect of Sec. 809-a. Always check the formula result against the 1.00 sq.m floor before finalizing the design. The minimum least dimension of 600 mm is an independent third constraint that must also be satisfied.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-a",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:49c012846fdf185526c02a42c6118bf777cacd461d8128e66b0e8f42cdb1f60c"
+    },
+    {
+      "question_id": "7f57e61b-7f8a-4769-b061-7d52b20e256d",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 809-b, when a vent shaft does not open directly to outer air at the top, what coverage is permitted and what minimum free area must it provide?",
+      "options": [
+        {
+          "id": "vent-004-a",
+          "text": "A solid concrete cap with forced mechanical exhaust; free area equal to 50% of the shaft cross-section"
+        },
+        {
+          "id": "vent-004-b",
+          "text": "A skylight or fixed louvers; net free area must equal or exceed the maximum required cross-sectional area of the shaft"
+        },
+        {
+          "id": "vent-004-c",
+          "text": "A skylight or fixed louvers; net free area may equal 50% of the shaft's cross-sectional area if mechanically assisted"
+        },
+        {
+          "id": "vent-004-d",
+          "text": "Any opaque cap is acceptable if the shaft is served by a forced-air mechanical system at minimum 3 ACH"
+        }
+      ],
+      "correct_option_id": "vent-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809-b, if the shaft does not open directly to outer air, it must be covered with a skylight or fixed louvers. The net free area of the skylight openings or louver openings must equal or exceed the maximum required cross-sectional area of the shaft — not a partial or reduced area. 'Maximum required' means the area calculated for the full shaft height. This prevents the design shortcut of covering a large shaft with a small louvered panel.",
+      "explanation": "The requirement for free area ≥ maximum required shaft area is the critical detail. A shaft requiring 1.50 sq.m per the formula must have a skylight or louver with at least 1.50 sq.m of net free opening — not just 1.50 sq.m of glass or louver panel area.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-b",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c629c57eaa1a3b01801d830e547c8dff86383eae538940c15467f21f3def99f"
+    },
+    {
+      "question_id": "5a2f2b85-7d24-4a7c-b5fc-fab93b0f7aab",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 809-c, when a horizontal air duct is used as an alternative to an open vent shaft top, what are the three minimum dimensional requirements for the duct and its opening elevation?",
+      "options": [
+        {
+          "id": "vent-005-a",
+          "text": "Minimum duct area 0.10 sq.m; minimum duct short dimension 200 mm; opening elevation ≥ 150 mm above shaft bottom and street"
+        },
+        {
+          "id": "vent-005-b",
+          "text": "Minimum duct area 0.30 sq.m; minimum duct short dimension 300 mm; opening elevation ≥ 300 mm above shaft bottom and street"
+        },
+        {
+          "id": "vent-005-c",
+          "text": "Minimum duct area 0.60 sq.m; minimum duct short dimension 300 mm; opening elevation ≥ 600 mm above shaft bottom and street"
+        },
+        {
+          "id": "vent-005-d",
+          "text": "Minimum duct area 0.30 sq.m; minimum duct short dimension 600 mm; opening elevation ≥ 300 mm above shaft bottom and street"
+        }
+      ],
+      "correct_option_id": "vent-005-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809-c, the air duct alternative requires three independent minimums: (1) minimum cross-sectional area of 0.30 sq.m; (2) minimum short dimension of 300 mm; (3) duct opening into shaft at least 300 mm above the shaft bottom AND at least 300 mm above the street or court surface. All three '300' values apply simultaneously. The 300 mm floor elevation prevents flooding and surface contaminant ingress.",
+      "explanation": "The 'Three Thirties' mnemonic captures all three requirements: 0.30 sq.m area, 300 mm minimum dimension, 300 mm minimum elevation (applied twice — above shaft bottom and above street). Confusing the 300 mm duct dimension with the 600 mm shaft dimension is the most common error.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-c",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:067da87fe0c65ae01285858a1429cd2538016fe822d8518361f5db84d81c11a9"
+    },
+    {
+      "question_id": "e45a311d-85cf-4e72-9095-34422fa2fbce",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 810, when a ventilation skylight substitutes for a required window, what two equivleancy requirements must the skylight satisfy?",
+      "options": [
+        {
+          "id": "vent-006-a",
+          "text": "Glass area ≥ glass area of replaced window(s); movable sash/louver free area ≥ openable area of replaced window(s)"
+        },
+        {
+          "id": "vent-006-b",
+          "text": "Glass area ≥ 10% of the floor area of the room; movable sash/louver free area ≥ 5% of floor area"
+        },
+        {
+          "id": "vent-006-c",
+          "text": "Glass area ≥ 50% of glass area of replaced window(s) since skylights admit more direct light"
+        },
+        {
+          "id": "vent-006-d",
+          "text": "Glass area ≥ glass area of replaced window(s); skylight may be fixed (non-operable) if artificial ventilation supplements"
+        }
+      ],
+      "correct_option_id": "vent-006-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 810, the ventilation skylight substitution test requires full equivalency: (1) the glass area must be at least equal to the glass area of the window(s) replaced; and (2) the net free area of movable sashes or louvers must be at least equal to the total openable area of the windows replaced. A skylight may not provide less light or ventilation than what it replaces. If neither condition can be met, 'approved artificial ventilation of equivalent effectiveness' may be used as an alternative.",
+      "explanation": "The substitution standard is full equivleancy, not partial. The skylight cannot simply be 'adequate' — it must match or exceed the glass area AND the openable area of what it replaces. If both conditions cannot be satisfied, only approved artificial ventilation qualifies as the alternative.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 810",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6c44052613d3c64dc65606d36625dc58bc587e8fe59b6a9d574590c2b81ecaab"
+    },
+    {
+      "question_id": "ee249d87-4ad9-42c6-b105-8eeca10caf9a",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 811, what is the minimum required air change rate per hour (ACH) for offices, stores, restaurants, and factories located above grade when mechanical ventilation is used?",
+      "options": [
+        {
+          "id": "vent-007-a",
+          "text": "1 ACH above grade; 3 ACH below grade for the same occupancy types"
+        },
+        {
+          "id": "vent-007-b",
+          "text": "3 ACH above grade; 6 ACH below grade for the same occupancy types"
+        },
+        {
+          "id": "vent-007-c",
+          "text": "6 ACH above grade; 12 ACH below grade for the same occupancy types"
+        },
+        {
+          "id": "vent-007-d",
+          "text": "3 ACH above grade; 3 ACH below grade — no distinction is made by grade level"
+        }
+      ],
+      "correct_option_id": "vent-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 811, offices, stores, restaurants, markets, factories, workshops, and machinery rooms above grade require a minimum of 3 ACH. All rooms below grade require a minimum of 6 ACH — double the above-grade rate. The doubling for below-grade spaces reflects that natural air movement does not assist mechanical systems underground, and contaminants pool at lower elevations. The 3 ACH vs. 6 ACH distinction is among the most tested numerical comparisons in Rule VIII.",
+      "explanation": "The doubled below-grade rate (6 ACH) applies to ALL room types below grade — not just the occupancy categories listed for above-grade requirements. A storage room below grade with no listed occupancy use still requires 6 ACH when mechanically ventilated.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 811",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:796313fe1ea6a65ccb0a789a5f9db196ac1c0066aa86495b13818e288084ebd1"
+    },
+    {
+      "question_id": "ed333377-7176-4f6a-a606-c151b2904e08",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A basement parking level in a mixed-use building has mechanical ventilation supplying 4 ACH. The basement also contains storage rooms ventilated at 4 ACH. Per PD 1096, Rule VIII, Section 811, what is the compliance status?",
+      "options": [
+        {
+          "id": "vent-008-a",
+          "text": "Both spaces are compliant — 4 ACH exceeds the 3 ACH minimum for all building spaces"
+        },
+        {
+          "id": "vent-008-b",
+          "text": "Both spaces are non-compliant — all below-grade spaces require a minimum of 6 ACH"
+        },
+        {
+          "id": "vent-008-c",
+          "text": "The parking is compliant; the storage rooms are also compliant because storage is not an occupied space"
+        },
+        {
+          "id": "vent-008-d",
+          "text": "Both spaces are compliant — 4 ACH is above the 3 ACH below-grade minimum for non-habitable spaces"
+        }
+      ],
+      "correct_option_id": "vent-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 811, ALL rooms below grade require a minimum of 6 ACH — not 3 ACH. The 3 ACH rate applies only to above-grade spaces. At 4 ACH, both the basement parking and the storage rooms are below the 6 ACH minimum for below-grade locations. The code does not distinguish between occupied and unoccupied below-grade rooms for this requirement — 6 ACH applies across all room types underground.",
+      "explanation": "This scenario tests whether candidates correctly apply the 6 ACH below-grade rule universally. 4 ACH satisfies the above-grade 3 ACH requirement but fails the below-grade 6 ACH requirement. Both spaces being below grade means both fail — regardless of their specific use category.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 811",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:64e765444be1fbad552a3623544c494bf5fc9a3657059cae6f0be68ddba75147"
+    },
+    {
+      "question_id": "f98b40a5-61b5-4d56-b687-c79a10cbfecc",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A proposed 25.00 m tall vent shaft in a high-rise building has a cross-section of 1.60 m × 1.60 m. Is this shaft compliant with PD 1096, Rule VIII, Section 809-a?",
+      "options": [
+        {
+          "id": "vent-009-a",
+          "text": "No — the required area is 3.00 sq.m, and the provided 2.56 sq.m is insufficient, necessitating redesign to meet compliance"
+        },
+        {
+          "id": "vent-009-b",
+          "text": "Yes — the 2.56 sq.m area exceeds the required 2.50 sq.m, and the 1.60 m least dimension exceeds the 600 mm minimum"
+        },
+        {
+          "id": "vent-009-c",
+          "text": "No — the least dimension of 1.60 m exceeds the maximum 600 mm permitted for any vent shaft dimension, requiring adjustment"
+        },
+        {
+          "id": "vent-009-d",
+          "text": "Yes — any shaft exceeding 1.00 sq.m is compliant for buildings above 10 storeys, provided other criteria are met"
+        }
+      ],
+      "correct_option_id": "vent-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "For a 25.00 m shaft: required area = 0.10 × 25 = 2.50 sq.m. The provided shaft area = 1.60 × 1.60 = 2.56 sq.m, which exceeds 2.50 sq.m. The least dimension is 1.60 m, which exceeds the 600 mm minimum. Both constraints are satisfied — the shaft is compliant. At 25.00 m, the formula governs (formula result 2.50 sq.m exceeds the 1.00 sq.m absolute minimum).",
+      "explanation": "This question requires applying both the formula (0.10 × 25 = 2.50 sq.m) and the least dimension check (1.60 m ≥ 600 mm) simultaneously. Both pass. The area comparison (2.56 ≥ 2.50) requires precise calculation — a shaft of 1.50 m × 1.50 m = 2.25 sq.m would fail despite appearing large.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-a",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7707ba08e1840656e97c9dcb07fa88e49f8400da57e9038ff3aca199f477b828"
+    },
+    {
+      "question_id": "5e9e2b84-189c-4d1a-8735-5be2f44b8a72",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 811-a, which specific category of rooms requires artificial ventilation regardless of whether other ventilation is available?",
+      "options": [
+        {
+          "id": "vent-010-a",
+          "text": "All basement spaces regardless of use, due to the doubled 6 ACH below-grade requirement"
+        },
+        {
+          "id": "vent-010-b",
+          "text": "Rooms housing industrial or heating equipment, to prevent excessive heat and polluted air buildup"
+        },
+        {
+          "id": "vent-010-c",
+          "text": "All occupied rooms in buildings exceeding 15.00 m in height regardless of window openings"
+        },
+        {
+          "id": "vent-010-d",
+          "text": "Public toilet rooms in commercial buildings, due to mandatory exhaust requirements"
+        }
+      ],
+      "correct_option_id": "vent-010-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 811-a, rooms housing industrial or heating equipment require artificial ventilation to prevent excessive heat buildup and polluted air accumulation, regardless of other ventilation available. This is not a conditional requirement — it applies even where natural ventilation windows exist. The rationale is that heat-generating equipment can overwhelm passive ventilation during peak operation, creating both comfort and safety hazards.",
+      "explanation": "Section 811-a creates an unconditional obligation for equipment rooms. Even a ground-floor boiler room with large windows on two sides must have mechanical ventilation if it houses industrial or heating equipment. The 'regardless of other ventilation available' language eliminates any exception.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 811-a",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.923144+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:427b0db5c10c4543b41a966e9fdd3d6ab1ff3b4eecea6b6bff27c20507a39316"
+    },
+    {
+      "question_id": "fe5d929a-224a-4809-a2e8-0e60c172537e",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 811-a, which specific category of rooms requires artificial ventilation regardless of whether other ventilation is available?",
+      "options": [
+        {
+          "id": "vent-010-a",
+          "text": "All basement spaces regardless of use, due to the doubled 6 ACH below-grade requirement"
+        },
+        {
+          "id": "vent-010-b",
+          "text": "Rooms housing industrial or heating equipment, to prevent excessive heat and polluted air buildup"
+        },
+        {
+          "id": "vent-010-c",
+          "text": "All occupied rooms in buildings exceeding 15.00 m in height regardless of window openings"
+        },
+        {
+          "id": "vent-010-d",
+          "text": "Public toilet rooms in commercial buildings, due to mandatory exhaust requirements"
+        }
+      ],
+      "correct_option_id": "vent-010-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 811-a, rooms housing industrial or heating equipment require artificial ventilation to prevent excessive heat buildup and polluted air accumulation, regardless of other ventilation available. This is not a conditional requirement — it applies even where natural ventilation windows exist. The rationale is that heat-generating equipment can overwhelm passive ventilation during peak operation, creating both comfort and safety hazards.",
+      "explanation": "Section 811-a creates an unconditional obligation for equipment rooms. Even a ground-floor boiler room with large windows on two sides must have mechanical ventilation if it houses industrial or heating equipment. The 'regardless of other ventilation available' language eliminates any exception.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 811-a",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ab283d32dca6514f24202cb16779776c8bf8dcaa3c766cf96304374551f12b2d"
+    },
+    {
+      "question_id": "71908765-b999-42fd-b136-ebc2c3f93396",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 809-a, what is the formula for calculating the minimum required cross-sectional area of a vent shaft, and what absolute minimum overrides the formula for short shafts?",
+      "options": [
+        {
+          "id": "vent-001-a",
+          "text": "Area ≥ 0.10 sq.m × shaft height (m); absolute minimum 1.00 sq.m regardless of formula result"
+        },
+        {
+          "id": "vent-001-b",
+          "text": "Area ≥ 0.30 sq.m × shaft height (m); absolute minimum 0.60 sq.m regardless of formula result"
+        },
+        {
+          "id": "vent-001-c",
+          "text": "Area ≥ 0.10 sq.m × shaft height (m); absolute minimum 0.60 sq.m regardless of formula result"
+        },
+        {
+          "id": "vent-001-d",
+          "text": "Area ≥ 0.05 sq.m × shaft height (m); absolute minimum 1.00 sq.m regardless of formula result"
+        }
+      ],
+      "correct_option_id": "vent-001-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809-a, cross-sectional area ≥ 0.10 sq.m × height of shaft in meters, but the absolute minimum is 1.00 sq.m regardless of the formula result. For any shaft shorter than 10.00 m, the formula yields less than 1.00 sq.m — the absolute minimum governs. At 10.00 m: 0.10 × 10 = 1.00 sq.m — formula and minimum coincide. Above 10.00 m, the formula governs. The 0.60 sq.m figure refers to the minimum least dimension, not the area.",
+      "explanation": "The formula-vs-absolute-minimum interaction is the most tested computational aspect of Sec. 809-a. Always check the formula result against the 1.00 sq.m floor before finalizing the design. The minimum least dimension of 600 mm is an independent third constraint that must also be satisfied.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-a",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d95783cd34932f20e2e8e2b9e099a2ce8f744a3e54160ba7eb4bfbeb4aebac62"
+    },
+    {
+      "question_id": "aa2766a4-d884-432c-95a7-dfcc3d1c021d",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 809-a, what is the minimum required least (shortest) dimension of any vent shaft cross-section?",
+      "options": [
+        {
+          "id": "vent-003-a",
+          "text": "300 mm — the same minimum as the horizontal air duct alternative"
+        },
+        {
+          "id": "vent-003-b",
+          "text": "450 mm — the standard minimum for mechanical shafts under the Mechanical Code"
+        },
+        {
+          "id": "vent-003-c",
+          "text": "600 mm — regardless of shaft height or cross-sectional area result"
+        },
+        {
+          "id": "vent-003-d",
+          "text": "800 mm — to ensure adequate airflow velocity through the shaft"
+        }
+      ],
+      "correct_option_id": "vent-003-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809-a, the least (smallest) dimension of the vent shaft cross-section must be at least 600 mm, regardless of the cross-sectional area formula result or building height. This is an independent constraint — a shaft could have a compliant area but still fail if one dimension is less than 600 mm. For example, a 0.60 m × 1.67 m shaft has area 1.00 sq.m but its least dimension (600 mm) exactly meets the minimum.",
+      "explanation": "The three vent shaft constraints from Sec. 809-a must ALL be satisfied simultaneously: (1) area ≥ 0.10 sq.m × height; (2) area ≥ 1.00 sq.m absolute minimum; (3) least dimension ≥ 600 mm. Satisfying two of three is insufficient.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-a",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f814d27e69f2feadce8a256328c1cbdc495742e9071504ddd309f7e7d2a669d"
+    },
+    {
+      "question_id": "18b5caf6-c85e-48a1-8c5e-158970acb2b6",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A vent shaft in a proposed six-storey building has a total height of 8.00 meters. What is the minimum required cross-sectional area per PD 1096, Rule VIII, Section 809-a?",
+      "options": [
+        {
+          "id": "vent-002-a",
+          "text": "0.80 sq.m — the formula result of 0.10 × 8.00 m governs"
+        },
+        {
+          "id": "vent-002-b",
+          "text": "1.00 sq.m — the absolute minimum overrides the formula result of 0.80 sq.m"
+        },
+        {
+          "id": "vent-002-c",
+          "text": "1.20 sq.m — a 50% safety factor is added to the formula result"
+        },
+        {
+          "id": "vent-002-d",
+          "text": "0.60 sq.m — the minimum least dimension is used as the cross-sectional area"
+        }
+      ],
+      "correct_option_id": "vent-002-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Applying the formula: 0.10 sq.m × 8.00 m = 0.80 sq.m. However, Sec. 809-a specifies an absolute minimum of 1.00 sq.m that overrides the formula result for short shafts. The formula yields 0.80 sq.m, which is below the 1.00 sq.m floor, so 1.00 sq.m governs. This is a classic board exam trap — candidates who apply only the formula and skip the absolute minimum check will select the wrong answer.",
+      "explanation": "The crossover point where the formula result first exceeds the absolute minimum is exactly 10.00 m: 0.10 × 10 = 1.00 sq.m. Below 10.00 m, always use 1.00 sq.m. Above 10.00 m, use the formula. At exactly 10.00 m, both yield the same answer.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-a",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:368e17b030a8bc8241e5437ad48c28e13748cda8c949ee67c538e72654e84937"
+    },
+    {
+      "question_id": "10f21ffc-4793-444a-b5c2-bbbae43e89d6",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 809-b, when a vent shaft does not open directly to outer air at the top, what coverage is permitted and what minimum free area must it provide?",
+      "options": [
+        {
+          "id": "vent-004-a",
+          "text": "A solid concrete cap with forced mechanical exhaust; free area equal to 50% of the shaft cross-section"
+        },
+        {
+          "id": "vent-004-b",
+          "text": "A skylight or fixed louvers; net free area must equal or exceed the maximum required cross-sectional area of the shaft"
+        },
+        {
+          "id": "vent-004-c",
+          "text": "A skylight or fixed louvers; net free area may equal 50% of the shaft's cross-sectional area if mechanically assisted"
+        },
+        {
+          "id": "vent-004-d",
+          "text": "Any opaque cap is acceptable if the shaft is served by a forced-air mechanical system at minimum 3 ACH"
+        }
+      ],
+      "correct_option_id": "vent-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809-b, if the shaft does not open directly to outer air, it must be covered with a skylight or fixed louvers. The net free area of the skylight openings or louver openings must equal or exceed the maximum required cross-sectional area of the shaft — not a partial or reduced area. 'Maximum required' means the area calculated for the full shaft height. This prevents the design shortcut of covering a large shaft with a small louvered panel.",
+      "explanation": "The requirement for free area ≥ maximum required shaft area is the critical detail. A shaft requiring 1.50 sq.m per the formula must have a skylight or louver with at least 1.50 sq.m of net free opening — not just 1.50 sq.m of glass or louver panel area.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-b",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:95c56d188adefbb92179a664baabc1df9be5081075b67f0fcba97500a6badf96"
+    },
+    {
+      "question_id": "5618f163-8a6d-416d-8346-6fcb87d93e60",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 809-c, when a horizontal air duct is used as an alternative to an open vent shaft top, what are the three minimum dimensional requirements for the duct and its opening elevation?",
+      "options": [
+        {
+          "id": "vent-005-a",
+          "text": "Minimum duct area 0.10 sq.m; minimum duct short dimension 200 mm; opening elevation ≥ 150 mm above shaft bottom and street"
+        },
+        {
+          "id": "vent-005-b",
+          "text": "Minimum duct area 0.30 sq.m; minimum duct short dimension 300 mm; opening elevation ≥ 300 mm above shaft bottom and street"
+        },
+        {
+          "id": "vent-005-c",
+          "text": "Minimum duct area 0.60 sq.m; minimum duct short dimension 300 mm; opening elevation ≥ 600 mm above shaft bottom and street"
+        },
+        {
+          "id": "vent-005-d",
+          "text": "Minimum duct area 0.30 sq.m; minimum duct short dimension 600 mm; opening elevation ≥ 300 mm above shaft bottom and street"
+        }
+      ],
+      "correct_option_id": "vent-005-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809-c, the air duct alternative requires three independent minimums: (1) minimum cross-sectional area of 0.30 sq.m; (2) minimum short dimension of 300 mm; (3) duct opening into shaft at least 300 mm above the shaft bottom AND at least 300 mm above the street or court surface. All three '300' values apply simultaneously. The 300 mm floor elevation prevents flooding and surface contaminant ingress.",
+      "explanation": "The 'Three Thirties' mnemonic captures all three requirements: 0.30 sq.m area, 300 mm minimum dimension, 300 mm minimum elevation (applied twice — above shaft bottom and above street). Confusing the 300 mm duct dimension with the 600 mm shaft dimension is the most common error.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-c",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:65643b8aac71dbaac1101095bcb9d978d165d83d23bd5a3fd9b3c701bc6a8e67"
+    },
+    {
+      "question_id": "0e77b2a7-3864-4e58-b0c2-be3695e0d277",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 810, when a ventilation skylight substitutes for a required window, what two equivleancy requirements must the skylight satisfy?",
+      "options": [
+        {
+          "id": "vent-006-a",
+          "text": "Glass area ≥ glass area of replaced window(s); movable sash/louver free area ≥ openable area of replaced window(s)"
+        },
+        {
+          "id": "vent-006-b",
+          "text": "Glass area ≥ 10% of the floor area of the room; movable sash/louver free area ≥ 5% of floor area"
+        },
+        {
+          "id": "vent-006-c",
+          "text": "Glass area ≥ 50% of glass area of replaced window(s) since skylights admit more direct light"
+        },
+        {
+          "id": "vent-006-d",
+          "text": "Glass area ≥ glass area of replaced window(s); skylight may be fixed (non-operable) if artificial ventilation supplements"
+        }
+      ],
+      "correct_option_id": "vent-006-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 810, the ventilation skylight substitution test requires full equivalency: (1) the glass area must be at least equal to the glass area of the window(s) replaced; and (2) the net free area of movable sashes or louvers must be at least equal to the total openable area of the windows replaced. A skylight may not provide less light or ventilation than what it replaces. If neither condition can be met, 'approved artificial ventilation of equivalent effectiveness' may be used as an alternative.",
+      "explanation": "The substitution standard is full equivleancy, not partial. The skylight cannot simply be 'adequate' — it must match or exceed the glass area AND the openable area of what it replaces. If both conditions cannot be satisfied, only approved artificial ventilation qualifies as the alternative.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 810",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a793c81a47a17eb0c90b0d4be09e101e49bf6de5cc594773544987a79fa25071"
+    },
+    {
+      "question_id": "97499896-bbec-48a7-a6b5-9aae61753c58",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Section 811, what is the minimum required air change rate per hour (ACH) for offices, stores, restaurants, and factories located above grade when mechanical ventilation is used?",
+      "options": [
+        {
+          "id": "vent-007-a",
+          "text": "1 ACH above grade; 3 ACH below grade for the same occupancy types"
+        },
+        {
+          "id": "vent-007-b",
+          "text": "3 ACH above grade; 6 ACH below grade for the same occupancy types"
+        },
+        {
+          "id": "vent-007-c",
+          "text": "6 ACH above grade; 12 ACH below grade for the same occupancy types"
+        },
+        {
+          "id": "vent-007-d",
+          "text": "3 ACH above grade; 3 ACH below grade — no distinction is made by grade level"
+        }
+      ],
+      "correct_option_id": "vent-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 811, offices, stores, restaurants, markets, factories, workshops, and machinery rooms above grade require a minimum of 3 ACH. All rooms below grade require a minimum of 6 ACH — double the above-grade rate. The doubling for below-grade spaces reflects that natural air movement does not assist mechanical systems underground, and contaminants pool at lower elevations. The 3 ACH vs. 6 ACH distinction is among the most tested numerical comparisons in Rule VIII.",
+      "explanation": "The doubled below-grade rate (6 ACH) applies to ALL room types below grade — not just the occupancy categories listed for above-grade requirements. A storage room below grade with no listed occupancy use still requires 6 ACH when mechanically ventilated.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 811",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9642d444c63c53635d4d7d758dcb5c197f50ea1d0704627a4e5a39bba01e600a"
+    },
+    {
+      "question_id": "78a1d2ba-6691-448c-a0fc-27916ffb0512",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A basement parking level in a mixed-use building has mechanical ventilation supplying 4 ACH. The basement also contains storage rooms ventilated at 4 ACH. Per PD 1096, Rule VIII, Section 811, what is the compliance status?",
+      "options": [
+        {
+          "id": "vent-008-a",
+          "text": "Both spaces are compliant — 4 ACH exceeds the 3 ACH minimum for all building spaces"
+        },
+        {
+          "id": "vent-008-b",
+          "text": "Both spaces are non-compliant — all below-grade spaces require a minimum of 6 ACH"
+        },
+        {
+          "id": "vent-008-c",
+          "text": "The parking is compliant; the storage rooms are also compliant because storage is not an occupied space"
+        },
+        {
+          "id": "vent-008-d",
+          "text": "Both spaces are compliant — 4 ACH is above the 3 ACH below-grade minimum for non-habitable spaces"
+        }
+      ],
+      "correct_option_id": "vent-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 811, ALL rooms below grade require a minimum of 6 ACH — not 3 ACH. The 3 ACH rate applies only to above-grade spaces. At 4 ACH, both the basement parking and the storage rooms are below the 6 ACH minimum for below-grade locations. The code does not distinguish between occupied and unoccupied below-grade rooms for this requirement — 6 ACH applies across all room types underground.",
+      "explanation": "This scenario tests whether candidates correctly apply the 6 ACH below-grade rule universally. 4 ACH satisfies the above-grade 3 ACH requirement but fails the below-grade 6 ACH requirement. Both spaces being below grade means both fail — regardless of their specific use category.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 811",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ee6426c0ed13ce0755804000755f8b3148a6bfb82c58ff334aa53a621cd21045"
+    },
+    {
+      "question_id": "7990b360-9667-4425-a601-69e5dce1da33",
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A proposed 25.00 m tall vent shaft in a high-rise building has a cross-section of 1.60 m × 1.60 m. Is this shaft compliant with PD 1096, Rule VIII, Section 809-a?",
+      "options": [
+        {
+          "id": "vent-009-a",
+          "text": "No — the required area is 3.00 sq.m, and the provided 2.56 sq.m is insufficient, necessitating a redesign"
+        },
+        {
+          "id": "vent-009-b",
+          "text": "Yes — the 2.56 sq.m area exceeds the required 2.50 sq.m, and the 1.60 m least dimension exceeds the 600 mm minimum"
+        },
+        {
+          "id": "vent-009-c",
+          "text": "No — the least dimension of 1.60 m exceeds the maximum 600 mm permitted for any vent shaft dimension, requiring adjustment"
+        },
+        {
+          "id": "vent-009-d",
+          "text": "Yes — any shaft exceeding 1.00 sq.m is compliant for buildings above 10 storeys, according to the code"
+        }
+      ],
+      "correct_option_id": "vent-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "For a 25.00 m shaft: required area = 0.10 × 25 = 2.50 sq.m. The provided shaft area = 1.60 × 1.60 = 2.56 sq.m, which exceeds 2.50 sq.m. The least dimension is 1.60 m, which exceeds the 600 mm minimum. Both constraints are satisfied — the shaft is compliant. At 25.00 m, the formula governs (formula result 2.50 sq.m exceeds the 1.00 sq.m absolute minimum).",
+      "explanation": "This question requires applying both the formula (0.10 × 25 = 2.50 sq.m) and the least dimension check (1.60 m ≥ 600 mm) simultaneously. Both pass. The area comparison (2.56 ≥ 2.50) requires precise calculation — a shaft of 1.50 m × 1.50 m = 2.25 sq.m would fail despite appearing large.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 809-a",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.610176+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:884b189333867572c1eb7e0f3b826fdb27f12b30c5dd178bd4108f8f31ef617f"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
+  "slug": "lea-theo-004-03-core-concept",
+  "generated_at": "2026-05-01T13:33:43.943Z",
+  "parser_version": "ui-block-parser-v1",
+  "error_count": 0,
+  "warning_count": 3,
+  "unknown_block_count": 3,
+  "critical_block_count": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "block_id": "ui_0003",
+      "component_name": "VE",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for VE; preserved opening line as unknown custom block."
+      ]
+    },
+    {
+      "block_id": "ui_0006",
+      "component_name": "WikiExamTable",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
+      ]
+    },
+    {
+      "block_id": "ui_0015",
+      "component_name": "VE",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for VE; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0003",
+      "component_name": "VE",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:3ee75c5ee922e58ba881fe33b6743eb80654204479b9d96bbef26b1186022240",
+      "line_start": 121,
+      "line_end": 121,
+      "warnings": [
+        "No closing tag found for VE; preserved opening line as unknown custom block."
+      ]
+    },
+    {
+      "block_id": "ui_0006",
+      "component_name": "WikiExamTable",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:d3ba17d0131caee1ee9c87b60831313d67d6371e55967a81de039ea62d9f1348",
+      "line_start": 205,
+      "line_end": 205,
+      "warnings": [
+        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
+      ]
+    },
+    {
+      "block_id": "ui_0015",
+      "component_name": "VE",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:dc570043c43d7a5aef508213c959b4434e880e5bf79a92854f18ef387ee2295c",
+      "line_start": 268,
+      "line_end": 268,
+      "warnings": [
+        "No closing tag found for VE; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "critical_blocks": []
+}

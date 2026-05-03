@@ -1,0 +1,55 @@
+{
+  "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+  "slug": "lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra",
+  "normalized_created_at": "2026-05-01T13:33:44.108Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:4faa9a9eb951832f41142b2ae9bbeb15f6dc0aa562a3e3bd57c01c097c05845a",
+  "normalized_content_hash": "sha256:970d2355ca29070a90b453c89138fd607dc5da9013560153ee0db4711a747948",
+  "ui_block_count": 3,
+  "total_blocks": 0,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"uap\" section=\"SPP Doc. 202 - Standard Owner-Architect Agreement\">\nBasic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=uap, section=SPP Doc. 202 - Standard Owner-Architect Agreement, title=Basic Services vs. Additional Services",
+      "props_json": {
+        "code": "uap",
+        "section": "SPP Doc. 202 - Standard Owner-Architect Agreement",
+        "title": "Basic Services vs. Additional Services"
+      },
+      "children_raw": "Basic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.",
+      "children_text": "Basic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:f80bf612300b85980bf77bb1d6d762f25179aeae9e67a75ff567efa383cfd030"
+    },
+    {
+      "block_id": "ui_0002",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **LEA Watch \u2014 Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: \"Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed.\"\n</ExamTip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**LEA Watch \u2014 Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: \"Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed.\"",
+      "children_text": "**LEA Watch \u2014 Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: \"Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed.\"",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:32adc5621fbcb482087d3f982249bc03ff7fcf2014d0cd25cc8282817b2a2b4e"
+    },
+    {
+      "block_id": "ui_0003",
+      "component_name": "Warn",
+      "raw": "<Warn>\n  **Common Exam Trap:** The LEA test often asks: \"Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?\" The answer is NO \u2014 written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.\n</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**Common Exam Trap:** The LEA test often asks: \"Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?\" The answer is NO \u2014 written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.",
+      "children_text": "**Common Exam Trap:** The LEA test often asks: \"Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?\" The answer is NO \u2014 written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:dec3c839109dbae995eac60e1a6d7aed6c2a2d9619169b4725329b8f18308b55"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

@@ -1,0 +1,83 @@
+{
+  "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
+  "slug": "lea-plan-005-01-what-you-need-to-know-for-the-lea",
+  "generated_at": "2026-05-01T13:33:45.624Z",
+  "desired_categories": [
+    "formula",
+    "timeline",
+    "comparison",
+    "scenario",
+    "diagram"
+  ],
+  "suggestion_count": 8,
+  "suggestions": [
+    {
+      "component_name": "CalibrationScreen",
+      "file_path": "src/app/(auth)/onboarding/_components/CalibrationScreen.tsx",
+      "likely_category": "diagram",
+      "confidence": "low",
+      "reason": "Category diagram matched article signals: formula, timeline, comparison, scenario, diagram",
+      "auto_insert": false
+    },
+    {
+      "component_name": "CoexistenceScreen",
+      "file_path": "src/app/(auth)/onboarding/_components/CoexistenceScreen.tsx",
+      "likely_category": "diagram",
+      "confidence": "low",
+      "reason": "Category diagram matched article signals: formula, timeline, comparison, scenario, diagram",
+      "auto_insert": false
+    },
+    {
+      "component_name": "ModelConfigDetail",
+      "file_path": "src/app/admin/3d-models/_components/ModelConfigDetail.tsx",
+      "likely_category": "diagram",
+      "confidence": "low",
+      "reason": "Category diagram matched article signals: formula, timeline, comparison, scenario, diagram",
+      "auto_insert": false
+    },
+    {
+      "component_name": "ModelRegistryPage",
+      "file_path": "src/app/admin/3d-models/_components/ModelRegistryPage.tsx",
+      "likely_category": "formula",
+      "confidence": "low",
+      "reason": "Category formula matched article signals: formula, timeline, comparison, scenario, diagram",
+      "auto_insert": false
+    },
+    {
+      "component_name": "ModelRegistryTree",
+      "file_path": "src/app/admin/3d-models/_components/ModelRegistryTree.tsx",
+      "likely_category": "diagram",
+      "confidence": "low",
+      "reason": "Category diagram matched article signals: formula, timeline, comparison, scenario, diagram",
+      "auto_insert": false
+    },
+    {
+      "component_name": "Loading",
+      "file_path": "src/app/admin/3d-models/loading.tsx",
+      "likely_category": "formula",
+      "confidence": "low",
+      "reason": "Category formula matched article signals: formula, timeline, comparison, scenario, diagram",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditArticleDetailLoading",
+      "file_path": "src/app/admin/ai-audit/articles/[articleId]/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, timeline, comparison, scenario, diagram",
+      "auto_insert": false
+    },
+    {
+      "component_name": "AiAuditArticlesLoading",
+      "file_path": "src/app/admin/ai-audit/articles/loading.tsx",
+      "likely_category": "comparison",
+      "confidence": "low",
+      "reason": "Category comparison matched article signals: formula, timeline, comparison, scenario, diagram",
+      "auto_insert": false
+    }
+  ],
+  "auto_insertion_enabled": false,
+  "warnings": [
+    "Auto-insertion is intentionally disabled; use this as review metadata only."
+  ]
+}

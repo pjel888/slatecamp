@@ -1,0 +1,508 @@
+{
+  "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:33e55d2ed93e4c1c2a75aa4b94f9b073972eb57dc89ea5bda244fa19ab31c024",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "d0deb92b-7a62-4fdd-958a-20a9a9f455dd",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What is a bill of quantities (BOQ)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "marketing document used to promote construction projects"
+        },
+        {
+          "id": "b",
+          "text": "detailed list itemizing all materials, labor, and equipment required for construction"
+        },
+        {
+          "id": "c",
+          "text": "Only a list of costs, excluding detailed specifications"
+        },
+        {
+          "id": "d",
+          "text": "Not used in the Philippines, as local practices differ"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses BOQ with promotional material; BOQ is a technical contract document.",
+        "c": "Incomplete; BOQ lists quantities and sometimes unit prices, but the main purpose is ensuring complete, accurate specifications.",
+        "d": "False; BOQ is used in Philippines, especially for government projects and large commercial work.",
+        "correct": "A BOQ is a comprehensive list prepared by the QS itemizing all materials, labor, equipment, and services required, enabling contractors to bid accurately.",
+        "takeaway": "BOQ = detailed material and labor list—allows contractors to bid on specific quantities rather than guess from drawings."
+      },
+      "explanation": null,
+      "code_citation": "Quantity Surveying Standards",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:06102a9afc9d96c8724dadbdf53aab0a6a3bdd85bfbe1175f9d01227e720ba7e"
+    },
+    {
+      "question_id": "96ebb783-059e-472d-bcb3-d68b608e381a",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What is the typical accuracy range of cost estimates during the schematic design phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±50% or more, indicating a high level of uncertainty typical of early design stages"
+        },
+        {
+          "id": "b",
+          "text": "±15-25% accuracy (AACE Class 3); useful for budget approval but not construction bidding"
+        },
+        {
+          "id": "c",
+          "text": "±5% accuracy, which is generally not achievable at this stage due to limited design information"
+        },
+        {
+          "id": "d",
+          "text": "100% accurate, which is an unrealistic expectation for any phase of design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too broad; ±50% or more applies to order-of-magnitude/conceptual (pre-schematic) per AACE Class 5.",
+        "c": "Too optimistic; ±5% requires construction documents with complete specifications.",
+        "d": "False; no estimate is 100% accurate—actual costs depend on market, labor, and contractor variables.",
+        "correct": "Schematic estimates based on building massing and major systems achieve ±20% accuracy—useful for client budget approval but not for final construction cost control.",
+        "takeaway": "Schematic estimates are ±20% accurate—use for budget approval; final estimates approach ±5% accuracy."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Document 201 (General Conditions); RA 9266 IRR Section 26 (Scope of Practice)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c24d9ec57c118e20da6facc4047e932e017e5bc285276187d3dd7a64bd5640b8"
+    },
+    {
+      "question_id": "dc04110d-d467-4f07-9c52-ae40ff45ee83",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What is the difference between a cost estimate and a construction budget?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are identical, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Cost estimate is the architect's projection; construction budget is the client's authorized spending limit, which may differ"
+        },
+        {
+          "id": "c",
+          "text": "Budget is always higher, which is not necessarily true"
+        },
+        {
+          "id": "d",
+          "text": "Only the budget matters, which oversimplifies the relationship between the two"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; they serve different purposes and are often different amounts.",
+        "c": "Not always; if estimate exceeds budget, architect and client must discuss scope reduction or budget increase.",
+        "d": "Incomplete; both matter—if estimate exceeds budget, they must discuss options.",
+        "correct": "Cost estimate is the architect's professional prediction; budget is the client's authorized spending limit, which may be higher (contingency) or lower (triggering value engineering).",
+        "takeaway": "Estimate ≠ budget—architect projects PHP 50M, client authorizes PHP 45M budget; discuss options to align."
+      },
+      "explanation": null,
+      "code_citation": "Cost Estimation Standards",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:52d42a900f11d14b8c2b9e190132980b099f7036e216779f7b4591595b52d81a"
+    },
+    {
+      "question_id": "4b272c1b-f522-47eb-a0a8-7074ac02ec8e",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "Who is a quantity surveyor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Person who measures land only and prepares topographic surveys for site development planning purposes"
+        },
+        {
+          "id": "b",
+          "text": "professional specializing in cost estimation, cost control, and contract management for construction projects"
+        },
+        {
+          "id": "c",
+          "text": "Only a contractor role limited to on-site material takeoff and procurement scheduling activities"
+        },
+        {
+          "id": "d",
+          "text": "Quantity surveyors do not exist in the Philippines and are recognized only in Commonwealth countries"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses QS with surveyor; QS focuses on cost management, not land measurement.",
+        "c": "Incomplete; while contractors use QS services, QS is an independent professional role not exclusive to contractors.",
+        "d": "False; QS services are available in the Philippines for complex projects.",
+        "correct": "A quantity surveyor (QS) specializes in cost estimation, detailed bills of quantities, cost control monitoring, value engineering analysis, and contract management.",
+        "takeaway": "QS is a cost management specialist—prepares detailed BOQ, analyzes bids, monitors construction costs, and advises on value engineering."
+      },
+      "explanation": null,
+      "code_citation": "Quantity Surveying Standards",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e4c8b592de478123770a572fe84688b7ab379b221009283701b210f4e250ac9"
+    },
+    {
+      "question_id": "ae94d0a4-8821-4e99-8cdd-f5ba0ee740cd",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "How can architects improve the reliability of cost estimates over time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost estimation cannot be improved without significant changes in market conditions and technological advancements."
+        },
+        {
+          "id": "b",
+          "text": "Maintain cost databases for their region and building types; track actual costs against estimates; use BIM for accurate quantity takeoff"
+        },
+        {
+          "id": "c",
+          "text": "Guess based on feelings and intuition, which is not a reliable method for professional practice."
+        },
+        {
+          "id": "d",
+          "text": "Cost databases are not available, making it difficult to track historical data and trends."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; cost estimation improves with systematic data collection and analysis.",
+        "c": "Reckless; guessing abandons professional responsibility.",
+        "d": "False; cost databases from suppliers, regional construction cost indices, and historical projects are available.",
+        "correct": "Architects improve estimates by maintaining regional cost databases, analyzing actual costs against estimates to identify trends, and using BIM to automate accurate quantity takeoff.",
+        "takeaway": "Build cost databases for your region and project types—track estimates vs. actuals to improve future accuracy and identify market trends."
+      },
+      "explanation": null,
+      "code_citation": "Cost Estimation Standards",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e516ce7dcdb06c7576bad574d1c7aab5ab64ca790aded036547478e40d9e0443"
+    },
+    {
+      "question_id": "ce68fa13-e90c-4320-9157-998d8ebf6405",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What assumptions should architects clearly state in cost estimates to prevent misinterpretation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No assumptions need to be stated, as the estimate should be self-explanatory and comprehensive"
+        },
+        {
+          "id": "b",
+          "text": "Build type, materials, systems, site conditions, scope inclusions/exclusions, basis of estimate (databases, quotes), and accuracy range"
+        },
+        {
+          "id": "c",
+          "text": "Only the total cost, as detailed breakdowns are unnecessary for initial estimates"
+        },
+        {
+          "id": "d",
+          "text": "Assumptions are confidential and should not be disclosed to maintain competitive advantage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reckless; unstated assumptions lead to client disputes.",
+        "c": "Insufficient; total cost alone tells the client nothing about scope, and they may misinterpret estimate applicability.",
+        "d": "Misconception; clear assumptions are client communication, not confidential.",
+        "correct": "Clear assumptions prevent disputes—state building type, material selections, systems (concrete vs. steel), site conditions, what's included/excluded, data sources, and accuracy (±20%).",
+        "takeaway": "State assumptions clearly—'Conventional 4-story RC, standard finishes, mid-range MEP, ±20% accuracy'—prevents client misunderstanding."
+      },
+      "explanation": null,
+      "code_citation": "Cost Estimation Standards",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:221c3dc10ae8816482ed0b672627596c51e17712e74bb89318dbb55ca116b9d1"
+    },
+    {
+      "question_id": "343b6549-358b-482e-af91-b1d65b1e6c8e",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What should architects do if the cost estimate exceeds the client's construction budget?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept the overrun silently, hoping the client will not notice the discrepancy"
+        },
+        {
+          "id": "b",
+          "text": "Discuss options: reduce scope, adjust quality, defer phases, or increase budget; lead this discussion with QS support"
+        },
+        {
+          "id": "c",
+          "text": "Blame the client for insufficient budget, suggesting they should have anticipated higher costs"
+        },
+        {
+          "id": "d",
+          "text": "Proceed without addressing the issue, assuming the budget will adjust itself during construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Negligent; unaddressed budget overruns lead to disputes and financial stress during construction.",
+        "c": "Unprofessional; architects should work with clients to find solutions, not blame.",
+        "d": "Reckless; unaddressed budget gaps cause construction delays and conflicts.",
+        "correct": "When estimate exceeds budget, architects and QS should facilitate client discussion on options: scope reduction, quality adjustment, phase deferral, or budget increase.",
+        "takeaway": "When estimate exceeds budget, lead a professional discussion with options—don't proceed silently or blame the client."
+      },
+      "explanation": null,
+      "code_citation": "Cost Estimation Standards",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1dc2a19ca2a3e9b97841b07320b6f824f53a0d8849a84e0700d7847739f779b9"
+    },
+    {
+      "question_id": "80e3539e-73bb-48e9-9da7-c6d546d29eff",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What is the typical accuracy range of cost estimates after construction documents are finalized?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±50% accuracy, which is not typical for finalized documents"
+        },
+        {
+          "id": "b",
+          "text": "±30% accuracy, which is more common in earlier design phases"
+        },
+        {
+          "id": "c",
+          "text": "±10-20% accuracy, suitable for bidding with complete specifications (AACE Class 2)"
+        },
+        {
+          "id": "d",
+          "text": "No accuracy is possible, which is an exaggeration"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too broad; ±50% is conceptual-phase accuracy.",
+        "b": "Too broad; detailed specs achieve better than ±30%.",
+        "d": "False; detailed specifications enable reliable cost estimation.",
+        "correct": "Construction documents with complete specifications enable accurate takeoff of all materials, labor, and equipment; accuracy approaches ±5%.",
+        "takeaway": "After construction documents are finalized, cost estimates approach ±5% accuracy—these are used for bid preparation."
+      },
+      "explanation": null,
+      "code_citation": "Cost Estimation Standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:06d903d03c8efc3ab9f793086ce14aaef5268ea31418248d7f82f14c31db979f"
+    },
+    {
+      "question_id": "d4cd25d4-fa63-4106-830c-655f5e2b7a1d",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What should the architect's service agreement specify regarding cost estimation scope and accuracy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No specification is needed, which is incorrect as cost estimation is crucial"
+        },
+        {
+          "id": "b",
+          "text": "Which phases include cost estimates, the accuracy range (±20% schematic, ±5% final), whether QS is engaged, and responsibilities for detailed takeoff"
+        },
+        {
+          "id": "c",
+          "text": "Only the final bid amount, which does not cover the full scope of cost estimation"
+        },
+        {
+          "id": "d",
+          "text": "Cost estimation is never mentioned in agreements, which is a misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reckless; vague cost estimation responsibility creates disputes.",
+        "c": "Insufficient; final bid is contractor-provided, not architect-provided estimate.",
+        "d": "False; cost estimation scope must be clearly defined in service agreements.",
+        "correct": "Service agreements must clarify cost estimation scope: which phases include estimates, accuracy ranges, QS engagement, detailed takeoff responsibility—preventing disputes.",
+        "takeaway": "Service agreement must specify which design phases include cost estimates and their accuracy ranges to prevent client disputes."
+      },
+      "explanation": null,
+      "code_citation": "Cost Estimation Standards",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7507cff943a29fe6c794e710ee8843e13d20bd2e736c33b66151df89dd289101"
+    },
+    {
+      "question_id": "f3031fa0-3095-47ed-bef4-0c14e810b1fc",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "When is it most effective to engage a quantity surveyor for value engineering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only after construction starts, when changes are more costly and less effective"
+        },
+        {
+          "id": "b",
+          "text": "During schematic phase when design changes have lowest cost impact"
+        },
+        {
+          "id": "c",
+          "text": "During construction documents phase to analyze and reduce costs, but with limited flexibility"
+        },
+        {
+          "id": "d",
+          "text": "Never; value engineering is not necessary, as initial estimates are always accurate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too late; construction-phase changes are most expensive.",
+        "c": "Too late; DD phase changes cost more than schematic changes.",
+        "d": "False; value engineering saves clients significant cost by optimizing design elements.",
+        "correct": "Value engineering is most effective during schematic phase when design changes are least costly; post-schematic changes are expensive to implement.",
+        "takeaway": "Engage QS early during schematic design—cost advice then influences design; cost analysis after design is fixed has limited impact."
+      },
+      "explanation": null,
+      "code_citation": "Value Engineering Standards",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e88de6ec4694ac4329f35a8369645a749a339cdc37959eaf87e2e37b991f6837"
+    }
+  ]
+}

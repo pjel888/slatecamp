@@ -1,0 +1,684 @@
+{
+  "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:f7d71bb861bb737be760aa4d70f76371fcfd0159e1db52983c29593ba34f7035",
+  "question_count": 13,
+  "questions": [
+    {
+      "question_id": "73029143-1ec0-4df2-8676-85a30e257a61",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "A plane in architectural terms is best understood as which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A flat geometric surface with length and width but no depth; it defines and bounds surfaces that separate spaces"
+        },
+        {
+          "id": "b",
+          "text": "A section or elevation drawing of a building, typically used to illustrate the vertical dimensions and spatial relationships within the structure"
+        },
+        {
+          "id": "c",
+          "text": "A three-dimensional form such as a cube or rectangular box, which is used to represent volumetric space in architectural design"
+        },
+        {
+          "id": "d",
+          "text": "An imaginary grid used to organize building layouts, often employed in the initial stages of design to ensure spatial coherence"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Drawings represent planes; they are not planes themselves.",
+        "c": "This describes volume, not plane.",
+        "d": "A grid may employ planes, but a grid is an ordering system, not a plane.",
+        "correct": "A plane is a two-dimensional element with length and width. It establishes surfaces that bound and divide space. In architecture, planes manifest as floors, ceilings, walls, and façades.",
+        "takeaway": "In architecture, planes manifest as floors, ceilings, walls, and façades."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3d482e0e5d50cfd4adcd1b5da2a1c4f6677b11a841cbe28f8896a75a46f061ed"
+    },
+    {
+      "question_id": "23e98d13-fad7-4dc3-8eec-c0bd07616eff",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "In a residential interior where multiple spaces need to be organized, how might the primary elements framework guide design thinking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat each room as an independent volume without considering relationships among them, which may lead to a disjointed layout"
+        },
+        {
+          "id": "b",
+          "text": "Focus exclusively on creating visually interesting planes; spatial organization is secondary and may not be cohesive"
+        },
+        {
+          "id": "c",
+          "text": "Apply random points, lines, planes without systematic organization; individual elements can be managed separately, risking incoherence"
+        },
+        {
+          "id": "d",
+          "text": "Identify key points (entry, stairwell) to anchor the composition; use lines (walls, corridors) to direct movement; organize planes (floors, ceilings) to define individual rooms; integrate into coherent volume"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Integrated thinking about relationships creates superior spatial experiences.",
+        "b": "Planes are important but insufficient without understanding spatial flow.",
+        "c": "Random organization creates confusion, not good design.",
+        "correct": "Systematic thinking about primary elements guides coherent organization: identifying focal points (points), movement patterns and spatial divisions (lines), surface definitions (planes), and overall spatial envelope (volume) creates integrated, comprehensible design.",
+        "takeaway": "Systematic thinking about primary elements guides coherent organization: identifying focal points (points), movement patterns and spatial divisions (lines), surface definitions (planes), and overall spatial envelope (volume) creates integrated, comprehensible design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f23afa6a18e0ab967d44969347ae3a0e7965312e90f7e066296cd346ea3aa7e"
+    },
+    {
+      "question_id": "0d3b8fb6-7322-4329-ac83-f2aabd0daf9c",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "How do primary elements help an architect analyze and understand a complex building façade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are historical concepts with no application to contemporary practice, as modern architecture relies on new design paradigms"
+        },
+        {
+          "id": "b",
+          "text": "They provide decorative principles for adding ornament, focusing on aesthetic enhancements rather than structural analysis"
+        },
+        {
+          "id": "c",
+          "text": "They are primarily useful for simple, geometric buildings but not complex designs, where advanced modeling techniques are required"
+        },
+        {
+          "id": "d",
+          "text": "They reveal the underlying organizational logic by identifying lines that create visual hierarchy, planes that define surfaces, and their relationships"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Contemporary architects apply these concepts regularly to understand and generate form.",
+        "b": "Primary elements organize fundamental spatial thinking, not ornamental decoration.",
+        "c": "The framework applies to all complexity levels; it reveals organizational logic in intricate designs.",
+        "correct": "Primary elements provide a conceptual vocabulary for analyzing how form is organized. Even complex buildings employ fundamental organizing principles that can be understood through point, line, plane, and volume relationships.",
+        "takeaway": "Even complex buildings employ fundamental organizing principles that can be understood through point, line, plane, and volume relationships."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f77a8ed0908a30d012eff0204cbdfce265d6a3dd2d6c92aefc701bf2ba30fc15"
+    },
+    {
+      "question_id": "4f0d8f36-1988-48ab-8161-ca71e486e649",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "In Ching's framework of primary elements, a point is best described as which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A small physical object or decorative element placed in a space, often used to draw attention"
+        },
+        {
+          "id": "b",
+          "text": "A circular form used to organize architectural compositions, providing a central focus"
+        },
+        {
+          "id": "c",
+          "text": "A fixed location on a building site used for measurement, typically marked by a surveyor"
+        },
+        {
+          "id": "d",
+          "text": "A zero-dimensional conceptual element marking position in space, static and directionless, creating visual focus"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While a physical object might manifest as a point visually, the point itself is conceptual.",
+        "b": "A circle is a shape; a point is the center or organizing focus.",
+        "c": "While survey points mark locations, Ching's point is a spatial organizing element, not a measurement tool.",
+        "correct": "A point is a conceptual tool with no length, width, or depth. It marks position. In architecture, we perceive points as convergences of lines, junctures of planes, or single objects creating visual centers that organize surrounding space.",
+        "takeaway": "In architecture, we perceive points as convergences of lines, junctures of planes, or single objects creating visual centers that organize surrounding space."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4ac621489a6ae5cc11c28d744d0af260d942442eaae9c9db9f85ace46e933a65"
+    },
+    {
+      "question_id": "55fe95ba-aefc-4fc7-b015-51d1f62bc0a2",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "Why is it said that primary elements are 'conceptual tools' rather than necessarily visible in their pure form?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because we perceive them in architecture through the intersection and relationship of actual building elements, not as isolated geometric forms visible in space"
+        },
+        {
+          "id": "b",
+          "text": "Because they apply only to historical architecture, not modern buildings"
+        },
+        {
+          "id": "c",
+          "text": "Because they cannot actually exist in real buildings; they are only theoretical"
+        },
+        {
+          "id": "d",
+          "text": "Because contemporary architecture has abandoned use of these classical concepts"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "They apply universally across all architectural periods and styles.",
+        "c": "They exist as organizing principles that manifest through actual buildings.",
+        "d": "Contemporary architects employ these concepts actively.",
+        "correct": "A point is perceived as the convergence of surfaces or a singular focal element, not as an isolated zero-dimensional object. Lines exist as edges where planes meet or as the alignment of repeated elements. They are tools for understanding, not always explicit visual forms.",
+        "takeaway": "They are tools for understanding, not always explicit visual forms."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd3dadfc8345d3a00e5a716b27eb9ce8662498c131ca39e81409b011454a1361"
+    },
+    {
+      "question_id": "ce1f17d8-aa68-4212-b05c-dc479b0c480d",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "Which sequence correctly describes the hierarchical generation of primary elements from simplest to most complex?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Line, Point, Plane, Volume"
+        },
+        {
+          "id": "b",
+          "text": "Point, Line, Plane, Volume"
+        },
+        {
+          "id": "c",
+          "text": "Plane, Volume, Point, Line"
+        },
+        {
+          "id": "d",
+          "text": "Volume, Plane, Line, Point"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Line cannot be generated from point without intermediate step.",
+        "c": "This sequence is illogical.",
+        "d": "This reverses the hierarchy.",
+        "correct": "The hierarchy progresses logically: a point marks position; extended in one direction, it becomes a line; extended in another direction, it becomes a plane; extended in a third dimension, it becomes a volume.",
+        "takeaway": "The hierarchy progresses logically: a point marks position; extended in one direction, it becomes a line; extended in another direction, it becomes a plane; extended in a third dimension, it becomes a volume."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d93a91014ea3018341f7ed0323a7bb5f0fd19f6d83dc6338dd22504e1058ea72"
+    },
+    {
+      "question_id": "73a0ada0-b409-4ab9-b6d3-7fc368acfcee",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "Volume, the most complex primary element, is characterized by which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a line extended to create a boundary, defining the limits of a space"
+        },
+        {
+          "id": "b",
+          "text": "It is three-dimensional space that encloses and defines spatial experience"
+        },
+        {
+          "id": "c",
+          "text": "It is a flat surface separating interior from exterior, acting as a barrier"
+        },
+        {
+          "id": "d",
+          "text": "It is the measurement of a building's total floor area, including all usable spaces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes line or plane.",
+        "c": "This describes a single plane, not a volume.",
+        "d": "Floor area is a measure of plane quantity, not volume as a spatial element.",
+        "correct": "A volume has three dimensions: length, width, and height. It encloses three-dimensional space completely. In architecture, rooms and buildings are volumes.",
+        "takeaway": "In architecture, rooms and buildings are volumes."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e5b5f7b1c4c4ac625a1286dd3cdbd9cfc58f6fca8efc1295454e1b91ee0095b7"
+    },
+    {
+      "question_id": "b9f34219-7f71-43f7-a887-bdd3a6eca3ff",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "Which primary element is generated when a point extends or moves in a direction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Space"
+        },
+        {
+          "id": "b",
+          "text": "Plane"
+        },
+        {
+          "id": "c",
+          "text": "Line"
+        },
+        {
+          "id": "d",
+          "text": "Volume"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Space is not a primary element; it is defined by primary elements.",
+        "b": "A plane is generated when a line extends in a new direction.",
+        "d": "A volume is generated when a plane extends in a new direction.",
+        "correct": "A point extended in one direction becomes a line. A line has length but no width or depth; it is one-dimensional and directional.",
+        "takeaway": "A line has length but no width or depth; it is one-dimensional and directional."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9bebee19c5a449747a7387a0931704debae0be63b33efeecc2fbf14ac0e803af"
+    },
+    {
+      "question_id": "d9a0b613-e7ac-4d07-a03d-40975b176134",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "In the colonnade of a Greek temple, what primary element does the vertical alignment of columns create?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A volume (the space enclosed by columns on all sides), defining the temple's spatial boundaries"
+        },
+        {
+          "id": "b",
+          "text": "A sculptural form independent of the primary elements framework, emphasizing the aesthetic of the columns"
+        },
+        {
+          "id": "c",
+          "text": "A series of planes (each column face as a vertical plane), contributing to the temple's overall structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "Individual points (each column stands as a point) creating a line through their alignment"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A colonnade defines space but does not fully enclose it; the primary organizing element is the line created by column alignment.",
+        "b": "The framework precisely explains how colonnade organization works through primary elements.",
+        "c": "While columnar surfaces are planes, the alignment's organizational power comes from line formation.",
+        "correct": "Each column reads as a point in space. Their alignment in a row creates a line that directs vision and organizes space. This line structures the spatial experience and movement through the colonnade.",
+        "takeaway": "This line structures the spatial experience and movement through the colonnade."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:793803091989417ce590468ebd93273f6394ddd62f87622acfcfd41072790ebf"
+    },
+    {
+      "question_id": "a6ecc8af-e479-42aa-afc3-af71d4d5a6ad",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "How does understanding the hierarchical generation of primary elements support an architect's ability to simplify complex forms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It allows architects to ignore complexity and design simple geometric boxes, which may not always be suitable for all design contexts"
+        },
+        {
+          "id": "b",
+          "text": "It provides a method for analyzing complex buildings by breaking them into generating elements, understanding how volume is composed of planes, how planes are organized by lines, and how lines are anchored by points"
+        },
+        {
+          "id": "c",
+          "text": "It has no practical application to form generation or analysis, as it is purely theoretical and not applicable to real-world scenarios"
+        },
+        {
+          "id": "d",
+          "text": "It suggests that complex buildings are failures of design logic, which may not be a universally accepted perspective"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understanding complexity does not mean ignoring it; it enables sophisticated handling.",
+        "c": "The framework is actively useful for understanding architectural organization.",
+        "d": "Appropriate complexity demonstrates design intentionality.",
+        "correct": "The generation hierarchy provides a logical framework for analyzing complexity. A seemingly chaotic building can be understood by identifying the points, lines, and planes organizing it. This understanding allows architects to create complexity with coherence.",
+        "takeaway": "This understanding allows architects to create complexity with coherence."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7d4f7f1faf5cbfdffdb039587513d65fe53abde05ffd7e013c85a943765e73ae"
+    },
+    {
+      "question_id": "3df695aa-c8ca-40af-a482-40ff5de94dd0",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "How do properties of a line affect spatial perception and movement in architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Horizontal lines suggest stability; vertical lines suggest aspiration; diagonal lines suggest movement and tension—directing perception and implying movement direction"
+        },
+        {
+          "id": "b",
+          "text": "All lines function identically regardless of orientation or directional quality, having no impact on spatial perception"
+        },
+        {
+          "id": "c",
+          "text": "Line properties affect only visual aesthetics, not actual movement patterns, thus having limited architectural significance"
+        },
+        {
+          "id": "d",
+          "text": "Line properties are irrelevant; only the plane and volume properties matter for spatial experience, as they define the space"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Directional qualities vary significantly based on orientation.",
+        "c": "Spatial perception directly influences how people move and experience spaces; line properties affect both.",
+        "d": "Lines are fundamental organizing elements that precede and structure planes.",
+        "correct": "Line directionality and orientation profoundly affect spatial perception. A horizontal line receding into distance creates visual depth and suggests movement along that axis. Vertical lines direct eye upward. Diagonal lines create dynamic tension.",
+        "takeaway": "Diagonal lines create dynamic tension."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:57f4163aee0a9cfccb6687e7bf4dd2821dd8cfc8f46ef6ed6063390ce8a27eeb"
+    },
+    {
+      "question_id": "e4bfce5d-572f-439e-8f9a-7cfb25077dd3",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "In analyzing the bahay kubo's spatial organization, which primary elements are most fundamental to its design logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Complex volumetric forms and multiple organizational points"
+        },
+        {
+          "id": "b",
+          "text": "Lines formed by the perimeter posts and roof ridge directing vision; planes of the elevated floor and roof creating horizontal definition; the volume of the open interior space"
+        },
+        {
+          "id": "c",
+          "text": "A single point at the center of the elevated structure"
+        },
+        {
+          "id": "d",
+          "text": "Primary elements are irrelevant to vernacular architecture analysis"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The bahay kubo's genius is simplicity and clarity, not complexity.",
+        "c": "The bahay kubo has multiple structural points, not a single center.",
+        "d": "The framework applies to all architecture regardless of period or tradition.",
+        "correct": "The bahay kubo's clarity of organization exemplifies primary elements: the posts form a linear grid (lines), the horizontal planes (floor, roof) define spatial boundaries, and the open interior volume is the essential architectural space. This framework reveals the design's elegant simplicity.",
+        "takeaway": "This framework reveals the design's elegant simplicity."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a6a77961c35575ffd262192ebeb107609b4db84a2d0ee389150a55e7d733a9bf"
+    },
+    {
+      "question_id": "fd407ff3-eb90-499f-9e6e-90afd82d5705",
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "topic_id": "c5688eb7-b64a-41fa-91bc-b11c9ac19e85",
+      "text": "How do primary elements relate to both form and space in architectural design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are historical concepts irrelevant to contemporary integrated design thinking, which focuses on new paradigms"
+        },
+        {
+          "id": "b",
+          "text": "Primary elements are only concerned with form; space is addressed through separate concepts, which are often more complex"
+        },
+        {
+          "id": "c",
+          "text": "They are useful for analyzing form but cannot address spatial relationships, which require different analytical tools"
+        },
+        {
+          "id": "d",
+          "text": "Primary elements serve both as generators of form (what is visible and solid) and as organizers of space (the emptiness between and around forms)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Contemporary architects actively employ these concepts for integrated design.",
+        "b": "Space is not a separate concern; primary elements organize both form and space together.",
+        "c": "The framework is specifically designed to address spatial relationships through formal organization.",
+        "correct": "A line organizes both form (its own visual presence) and space (the direction and path it suggests). A plane bounds form and creates spatial separation. A volume encloses spatial experience. Primary elements simultaneously shape form and spatial perception.",
+        "takeaway": "Primary elements simultaneously shape form and spatial perception."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-10-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b44f36ef7524cc97517e791cebf41b9a84e46d703923b236544952f8c77d5c7"
+    }
+  ]
+}

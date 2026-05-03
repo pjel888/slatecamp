@@ -1,0 +1,580 @@
+{
+  "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:672ebd5f95b27fb278de5b3f1a6988356c093753f151711812e3da2e3054c424",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "327e00eb-bcb4-4c73-b7c1-0e36a4557a90",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "The Farnsworth House was constructed during which years?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1936–1938"
+        },
+        {
+          "id": "b",
+          "text": "1943–1945"
+        },
+        {
+          "id": "c",
+          "text": "1946–1951"
+        },
+        {
+          "id": "d",
+          "text": "1952–1955"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1936–1938 is too early; this predates the Farnsworth House project.",
+        "b": "1943–1945 is before the project began.",
+        "d": "1952–1955 is after completion.",
+        "correct": "The Farnsworth House was constructed 1946–1951. Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946.",
+        "takeaway": "Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6c35485ab2a315399f2a7a82e7130e766f39a6dab8134549584af8596e000580"
+    },
+    {
+      "question_id": "75d1eb90-9dea-40cc-b41e-ffeb251f1b07",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "In the Seagram Building (1954–1958), the bronze I-beams visible on the facade serve what architectural purpose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-structural bronze I-beam elements applied to the facade to visually express the structural rhythm hidden beneath fire-code-mandated concrete casing"
+        },
+        {
+          "id": "b",
+          "text": "Structural columns that directly support the building's weight and transfer gravity loads to the foundation system below"
+        },
+        {
+          "id": "c",
+          "text": "Cladding material intended to disguise the building as a traditional masonry structure with load-bearing exterior walls"
+        },
+        {
+          "id": "d",
+          "text": "Purely aesthetic ornament with no relationship to the building's structural system or its internal load-bearing framework"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The bronze I-beams do NOT carry structural loads. The actual steel frame is hidden beneath fire-code-mandated concrete cladding. This is the most common factual error about the Seagram Building.",
+        "c": "The I-beams do not disguise the building as masonry; they express (suggest) the steel structure beneath, even though they are not structural themselves.",
+        "d": "While non-structural, the I-beams are philosophically significant — they represent Mies's desire for structural honesty constrained by fire codes, not mere decoration.",
+        "correct": "The bronze I-beams are non-structural. American fire codes required all structural steel to be encased in concrete for fireproofing, concealing the actual structure. Mies applied non-structural bronze-toned I-beams to the facade to visually suggest the structural rhythm hidden within — achieving 'honest expression' through a non-structural appliqué. This famous paradox is one of the most tested details in modern architecture.",
+        "takeaway": "This famous paradox is one of the most tested details in modern architecture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:694c9643756fac4538b56265a6204b7b9cb53419c31b49c0188f38a885977fef"
+    },
+    {
+      "question_id": "ead45cde-a15b-4afc-a177-8431a30f47dd",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "The Barcelona Pavilion (1929, reconstructed 1986) was designed by which architect as an expression of philosophical minimalism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le Corbusier, who designed the Villa Savoie and the Unite d'Habitation"
+        },
+        {
+          "id": "b",
+          "text": "Ludwig Mies van der Rohe"
+        },
+        {
+          "id": "c",
+          "text": "Walter Gropius, founder of the Bauhaus school of design and architecture"
+        },
+        {
+          "id": "d",
+          "text": "Marcel Breuer, known for tubular steel furniture and brutalist buildings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Le Corbusier designed Villa Savoye and other works demonstrating the Five Points.",
+        "c": "Gropius designed the Bauhaus Building and other structures.",
+        "d": "Marcel Breuer designed the Wassily Chair and other furniture.",
+        "correct": "Ludwig Mies van der Rohe designed the Barcelona Pavilion, which uses only free-standing steel columns, glass, and stone planes—demonstrating pure spatial and material minimalism.",
+        "takeaway": "Ludwig Mies van der Rohe designed the Barcelona Pavilion, which uses only free-standing steel columns, glass, and stone planes—demonstrating pure spatial and material minimalism."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:35e5a8c892e55f27d46f07ede55dd3ce4012e928ec5e3554963073288782b9be"
+    },
+    {
+      "question_id": "f93dd3d4-224a-415b-b5bd-3233f346c7c4",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "'Less is more' should not be misunderstood as mere simplicity or austerity. What does it actually represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The elimination of all beauty in favor of pure function, disregarding aesthetic considerations in architectural design"
+        },
+        {
+          "id": "b",
+          "text": "Achieving maximum spatial and material beauty through minimum, essential elements; refined reduction, not poverty or lack"
+        },
+        {
+          "id": "c",
+          "text": "The rejection of all materials except concrete, focusing solely on the use of this single material for all structural and aesthetic purposes"
+        },
+        {
+          "id": "d",
+          "text": "The belief that simple buildings are always superior to complex ones, advocating for a minimalist approach in all architectural endeavors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mies pursued beauty through essential means, not elimination of beauty.",
+        "c": "Mies worked with multiple materials; material choice isn't the point.",
+        "d": "Mies's philosophy is about essence, not inherent superiority of simplicity.",
+        "correct": "'Less is more' is sophisticated reduction, not austerity. Mies's buildings are expensive, luxurious, and proportionally complex—they achieve profundity through elimination of excess, not elimination of quality.",
+        "takeaway": "Mies's buildings are expensive, luxurious, and proportionally complex—they achieve profundity through elimination of excess, not elimination of quality."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6c6d8963722e67145e1a173e8c6be5e3935a666382e0d9d1dae1cbaa89671d3e"
+    },
+    {
+      "question_id": "e181cc37-7bde-4828-8c2b-7d25a0ce7f83",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "Which architect's foundational axiom—'less is more'—became the philosophy of architectural minimalism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louis Sullivan, known for his emphasis on form following function in architectural design"
+        },
+        {
+          "id": "b",
+          "text": "Le Corbusier, who advocated for the use of pilotis and open floor plans in modern architecture"
+        },
+        {
+          "id": "c",
+          "text": "Ludwig Mies van der Rohe"
+        },
+        {
+          "id": "d",
+          "text": "Walter Gropius, a pioneer of the Bauhaus movement and modernist architecture"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Louis Sullivan's axiom was 'form follows function,' not 'less is more.'",
+        "b": "Le Corbusier pursued functionalism and complexity, not reduction to essence.",
+        "d": "Gropius founded the Bauhaus with principles of integration, not Miesian reduction.",
+        "correct": "'Less is more' is Ludwig Mies van der Rohe's foundational principle. It expresses his belief that maximum spatial and material beauty emerges from minimum essential elements.",
+        "takeaway": "It expresses his belief that maximum spatial and material beauty emerges from minimum essential elements."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:63ebefddc4d48c55593cb2f5d4dab25cb42116e5636e664118a20c2f59e01e74"
+    },
+    {
+      "question_id": "66d25d4e-330d-41f4-8a6a-7faa24227f0d",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "A temporary pavilion consists of free-standing steel columns supporting a flat roof, with glass and stone planes floating between them. There are no walls in the traditional sense, no enclosed rooms, no hierarchy between inside and outside. Which architectural principle does this express?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le Corbusier's functionalism, which emphasizes the building's purpose and efficiency over aesthetic considerations"
+        },
+        {
+          "id": "b",
+          "text": "Mies van der Rohe's universal space and reduction to essentials"
+        },
+        {
+          "id": "c",
+          "text": "Walter Gropius's craft-industry integration, focusing on the collaboration between artisans and industrial production methods"
+        },
+        {
+          "id": "d",
+          "text": "Art Deco's machine-age aesthetics, characterized by bold geometric forms and lavish ornamentation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Functionalism organizes space according to specific uses; this pavilion has no predetermined program.",
+        "c": "Craft-industry integration isn't the focus; the focus is spatial minimalism.",
+        "d": "Art Deco celebrates geometric decoration and machine imagery; this is austere and restrained.",
+        "correct": "This describes the Barcelona Pavilion—Mies's expression of universal space through minimal means. The lack of program and enclosed rooms demonstrates his philosophy: pure spatial experience stripped of functional necessity.",
+        "takeaway": "The lack of program and enclosed rooms demonstrates his philosophy: pure spatial experience stripped of functional necessity."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:87be47bd3dafeb685820fad6f10c3e148126cbbe70f403186a17f08531b3bb2e"
+    },
+    {
+      "question_id": "d78c7967-cac6-4777-b9eb-a9b4ac2ed3e9",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "Mies van der Rohe's concept of 'universal space' suggests that [blank].",
+      "options": [
+        {
+          "id": "a",
+          "text": "buildings should be designed to serve specific functional programs, which contradicts the idea of universal space"
+        },
+        {
+          "id": "b",
+          "text": "a geometrically perfect spatial container can accommodate any activity without imposing predetermined uses"
+        },
+        {
+          "id": "c",
+          "text": "all buildings should look identical regardless of location or purpose, which is a misinterpretation of the concept"
+        },
+        {
+          "id": "d",
+          "text": "space must be subdivided into specialized rooms for different functions, which is contrary to the universal space idea"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is the opposite; universal space transcends specific program.",
+        "c": "While Mies believed in universal principles, he didn't require identical designs.",
+        "d": "Universal space prioritizes openness and flexibility, not specialization.",
+        "correct": "Universal space is a neutral, refined container that can flexibly accommodate any activity. This reflects Mies's belief that pure spatial and material beauty transcends specific program.",
+        "takeaway": "This reflects Mies's belief that pure spatial and material beauty transcends specific program."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e893b0ec6553463ce02f39249e38318da4abb2e2e0d931a61df6426128f2dbda"
+    },
+    {
+      "question_id": "21e6a43c-3e28-47c3-9f79-e74fb94080f5",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "How does Mies van der Rohe's approach to program and space fundamentally differ from Le Corbusier's?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mies organizes space according to function; Le Corbusier prioritizes artistic expression, often disregarding functional constraints"
+        },
+        {
+          "id": "b",
+          "text": "Mies prioritizes reduction and essence over functional organization; Le Corbusier organizes space according to specific programmatic requirements"
+        },
+        {
+          "id": "c",
+          "text": "Both architects use identical design methodologies, focusing on modernist principles without deviation"
+        },
+        {
+          "id": "d",
+          "text": "Le Corbusier focuses on structure; Mies focuses on aesthetics, emphasizing minimalism and open space"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This reverses the actual relationship; Mies deprioritizes specific function.",
+        "c": "Their methodologies are fundamentally different.",
+        "d": "Both integrate structure and aesthetics; neither is purely one or the other.",
+        "correct": "This is the fundamental distinction: Mies strips away program to reveal building essence; Le Corbusier's approach is programmatically rational. Le Corbusier's buildings 'do things'; Mies's buildings 'are.'",
+        "takeaway": "Le Corbusier's buildings 'do things'; Mies's buildings 'are.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7bd70654e89269d1ce0fe0a1bb4f41f62ff924752d0e1861aabf05382eeb8d03"
+    },
+    {
+      "question_id": "6b241c0a-cb24-46f8-988d-105c5a7ff54d",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "Why is Mies's minimalism fundamentally different from brutalism, even though both expose structure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimalism uses concrete; brutalism uses steel, which is a common misconception about material usage"
+        },
+        {
+          "id": "b",
+          "text": "Brutalism embraces massive, fortress-like forms; Mies's minimalism is refined, elegant, light—celebrating the delicacy of steel and glass, not mass"
+        },
+        {
+          "id": "c",
+          "text": "Minimalism is decorative; brutalism is functional, although both styles have their own aesthetic and functional purposes"
+        },
+        {
+          "id": "d",
+          "text": "Brutalism appeared earlier; minimalism is a later development, reflecting the evolution of architectural styles over time"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both can use either material; the difference is philosophical, not material-based.",
+        "c": "This reverses the truth; both are functional.",
+        "d": "Timing doesn't explain the philosophical difference.",
+        "correct": "Both expose structure, but their philosophies differ: Brutalism celebrates exposed mass and weightiness; Miesian minimalism celebrates refined proportion and the delicate expression of essential elements. Steel and glass are light; concrete is heavy.",
+        "takeaway": "Steel and glass are light; concrete is heavy."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b9fc1d49cc1642c63a532da29845f987c37c19ffff903af48e5a845fb549364c"
+    },
+    {
+      "question_id": "71101dd4-fc8b-4c40-8490-db1d0160cd32",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "A residential building consists almost entirely of glass walls with a transparent interior visible from outside. It is elevated on steel columns, has only a central service core with fixed functions, and no interior walls except those essential for mechanical systems. Which architect's minimalist philosophy does this exemplify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le Corbusier's Five Points approach, emphasizing pilotis, free facade, open plan, horizontal windows, and roof garden"
+        },
+        {
+          "id": "b",
+          "text": "Walter Gropius's craft-industry integration, focusing on the synthesis of art and technology"
+        },
+        {
+          "id": "c",
+          "text": "Alvar Aalto's humanistic modernism, which incorporates organic forms and natural materials"
+        },
+        {
+          "id": "d",
+          "text": "Mies van der Rohe's reduction to essentials and transparency"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Le Corbusier would include more programmatic complexity and interior organization.",
+        "b": "Gropius focused on craft-industry integration and pedagogy, not this level of reduction.",
+        "c": "Aalto prioritized warmth and human comfort, not transparency and minimalism.",
+        "correct": "This describes the Farnsworth House—Mies's expression of minimalism through transparency, open plans, and structural honesty. The minimal interior divisions and material visibility are quintessentially Miesian.",
+        "takeaway": "The minimal interior divisions and material visibility are quintessentially Miesian."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f484267364ea206ab89b5a78222b90218bcb3037363e987004bd028c51a1c0d0"
+    },
+    {
+      "question_id": "282f7c9b-c37b-4a35-9fa2-7c57387255f5",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "In the Seagram Building, the glass curtain wall is [blank].",
+      "options": [
+        {
+          "id": "a",
+          "text": "a load-bearing structure that supports the building's weight, contrary to typical curtain wall design principles"
+        },
+        {
+          "id": "b",
+          "text": "a non-load-bearing facade that hangs from the structural frame hidden beneath fire-code-mandated concrete cladding, with non-structural bronze I-beams visually expressing the structural rhythm"
+        },
+        {
+          "id": "c",
+          "text": "the primary structural system, with the visible columns purely decorative, which is an unconventional approach for skyscrapers"
+        },
+        {
+          "id": "d",
+          "text": "a temporary screen that can be removed without affecting the building's stability, allowing for flexibility in facade design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Curtain walls don't carry structural loads; the frame beneath does.",
+        "c": "The bronze I-beams are non-structural but philosophically significant — they visually express the hidden structural frame rather than being purely decorative in intent.",
+        "d": "While curtain walls are in principle replaceable, they're part of the integrated design, not truly temporary.",
+        "correct": "The glass curtain wall is a non-load-bearing skin that hangs from the concealed structural frame. The actual steel structure is encased in concrete for fire protection. The non-structural bronze I-beams visually suggest the structural rhythm hidden beneath, achieving Mies's desire for honest expression within fire code constraints.",
+        "takeaway": "The non-structural bronze I-beams visually suggest the structural rhythm hidden beneath, achieving Mies's desire for honest expression within fire code constraints."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b7b93be4b003da70be8463c8e5207d3c658519a70954e768f5681b7b13384592"
+    }
+  ]
+}

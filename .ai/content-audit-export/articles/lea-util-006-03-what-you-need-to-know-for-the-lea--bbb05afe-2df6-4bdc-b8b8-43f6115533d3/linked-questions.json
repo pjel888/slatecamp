@@ -1,0 +1,758 @@
+{
+  "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:c4bf92bf86ba1a5e8f8af70e6749a4b6336390f53f4bb67b3c167da110035ca8",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "bd9dbe00-98e6-46b7-a297-4e2df2bdf66c",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "A developer in the Philippines is designing a mixed-use building (retail on ground floor, offices on levels 2–10, residential units on levels 11–25). Between theThe Philippine Building Code (PD 1096) does not specify STC requirements for floor/ceiling assemblies separating offices from residential units.and why might this requirement be different from typical inter-office separation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "STC 45; between office and residential requires the same standard as inter-office separation, ensuring uniformity in sound control"
+        },
+        {
+          "id": "b",
+          "text": "STC 50; between office and residential uses the higher residential standard because residential occupants have heightened expectation for acoustic privacy and longer occupancy periods"
+        },
+        {
+          "id": "c",
+          "text": "STC 40; offices are less sensitive to sound transmission than residential units, which allows for a lower standard"
+        },
+        {
+          "id": "d",
+          "text": "STC 55; mixed-use buildings require enhanced acoustic standards above code minimums to accommodate diverse uses"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article explicitly distinguishes between office and residential separations; the same standard does not apply.",
+        "c": "Offices are office spaces, not residential units; the code reflects use-based risk, not occupant sensitivity alone.",
+        "d": "Over-specification (STC 55) is not justified by mixed-use occupancy; the code specifies what is needed, not excess.",
+        "correct": "Between office spaces the requirement is STC 45, but between retail spaces and residential is STC 50. While the article does not explicitly state office-to-residential transition, the regulatory pattern indicates that residential units receive the STC 50 standard when separated from non-residential spaces. This reflects that residential occupants spend extended periods in their units, have heightened privacy expectations, and the disruption from office or commercial noise is more consequential than inter-office separation. The STC 50 standard protects residential quality of life.",
+        "takeaway": "Residential units receive STC 50 protection regardless of adjacent use; non-residential-to-residential boundaries require the higher residential standard."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Building Code; PD 1096; mixed-use building acoustic strategy",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8f900f7b0e7bac7b86c75ca4a0f695ca94a7002b3ae9b247c71997896331af9e"
+    },
+    {
+      "question_id": "4593bcd1-9077-49a0-ada3-341356910e44",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "The mass law equation is TL = 20 log₁₀(f × m) − 47.4 dB, where f is frequency and m is mass per unit area. According to this formula, how does increasing frequency affect transmission loss, and what practical implication does this have for acoustic design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transmission loss decreases with frequency; therefore, low-frequency sound is harder to block than high-frequency sound"
+        },
+        {
+          "id": "b",
+          "text": "Transmission loss increases with frequency; therefore, high-frequency sound is harder to block than low-frequency sound"
+        },
+        {
+          "id": "c",
+          "text": "Transmission loss is independent of frequency; the doubling rule applies equally across all frequencies"
+        },
+        {
+          "id": "d",
+          "text": "Transmission loss is nonlinear; frequencies above 4000 Hz provide no additional isolation benefit"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The relationship in the mass law shows TL increases with frequency, not decreases.",
+        "c": "The doubling rule applies consistently across frequencies as a logarithmic relationship; it is not truly frequency-independent but follows the mass law consistently.",
+        "d": "ASTM E90-21 measures up to 4000 Hz; frequencies above 4000 Hz are beyond standard testing range and building code scope.",
+        "correct": "The mass law TL = 20 log₁₀(f × m) − 47.4 shows that transmission loss increases with the logarithm of frequency. At low frequencies (e.g., 100 Hz), the log₁₀(f × m) term is smaller, resulting in lower TL. At high frequencies (e.g., 4000 Hz), the log₁₀(f × m) term is larger, resulting in higher TL. Practically, this means low-frequency sound (traffic rumble, bass music) penetrates partitions more readily and requires greater mass to control. High-frequency sound (speech, telephone ringing) is more easily attenuated. This is why acoustic design often focuses on low-frequency control through mass and damping.",
+        "takeaway": "The mass law shows that low frequencies require greater mass for isolation; high frequencies are more easily attenuated by standard partitions."
+      },
+      "explanation": null,
+      "code_citation": "Mass law: TL = 20 log₁₀(f × m) − 47.4; ASTM E90-21",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5ad3772e9b0eb54b15638f7681f35b3af86a3eb7b0d8c66d866b4ac8271fefda"
+    },
+    {
+      "question_id": "62413dcd-cd81-4006-8c4f-1b3c8310323a",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "What is the minimum Sound Transmission Class (STC) rating requirement specified by the Philippine Building Code for acoustic separation between office spaces?",
+      "options": [
+        {
+          "id": "a",
+          "text": "STC 40"
+        },
+        {
+          "id": "b",
+          "text": "STC 45"
+        },
+        {
+          "id": "c",
+          "text": "STC 50"
+        },
+        {
+          "id": "d",
+          "text": "STC 55"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "STC 40 is below code requirements for office separation.",
+        "c": "STC 50 is the requirement between dwelling units and between dwelling units and common areas, not between office spaces.",
+        "d": "STC 55 exceeds code minimums and represents over-design for standard office separation.",
+        "correct": "The Philippine Building Code (PD 1096) does not specify STC requirements for separation between office spaces. This is lower than the STC 50 requirement for party walls (dwelling unit to dwelling unit) because office confidentiality is typically less stringent than residential acoustic privacy.",
+        "takeaway": "Office space separation requires STC 45 minimum per Philippine Building Code; residential party walls require STC 50."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Building Code; PD 1096",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cda653bec1622e82904772d6d58aa180b8fc28def77008c9c567a7024b98a3da"
+    },
+    {
+      "question_id": "c9f5a2a7-6b72-48c6-9f30-14768351ac43",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "In a tropical Philippine high-rise residential building, the mechanical engineer specifies that HVAC return ducts from apartments pass through the party wall cavity using a single unlined steel duct running continuously from unit to unit. The acoustic consultant raises concern that this violates the sound isolation design intent. Using ASTM E595 flanking transmission principles, explain why this concern is valid even if the party wall itself achieves STC 50.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unlined ducts add mass, which improves STC; the concern is unfounded, as the mass should theoretically enhance sound isolation"
+        },
+        {
+          "id": "b",
+          "text": "Unlined steel ducts create a direct acoustic bridge between units, allowing sound to bypass the party wall partition itself; ASTM E595 demonstrates that this flanking path can degrade overall STC by 5+ points despite the partition's nominal STC 50 rating"
+        },
+        {
+          "id": "c",
+          "text": "Tropical humidity corrodes steel ducts; the structural failure compromises acoustic performance, leading to potential sound leakage"
+        },
+        {
+          "id": "d",
+          "text": "Return ducts are exhaust air paths and do not transmit sound from unit to unit; the concern reflects a misunderstanding of HVAC acoustics, as sound transmission is typically minimal"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Unlined steel ducts do not add acoustic mass; they conduct sound efficiently and create flanking paths, degrading overall performance.",
+        "c": "While corrosion is a maintenance concern in tropical climates, it is not the acoustic design issue here; the problem is active sound transmission, not material degradation.",
+        "d": "Return ducts are air intake paths that conduct sound as effectively as supply ducts; directionality does not eliminate the flanking problem.",
+        "correct": "Ductwork connecting adjacent units is a major flanking path and that ASTM E595 shows even 2% uninsulated area reduces STC by 3–5 points. An unlined steel duct running continuously across the party wall is a high-conductance acoustic path: sound from Unit A travels through the duct air and duct material to Unit B, completely bypassing the partition's isolation. Lining the duct with acoustic material (fiberglass) or using acoustic elbows with sectional barriers breaks this path. The STC 50 party wall rating becomes irrelevant if flanking completely undermines its effectiveness.",
+        "takeaway": "Flanking paths through ductwork can completely undermine partition acoustic performance; all ducts crossing party walls must be lined or isolated per ASTM E595 guidance."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E595; flanking transmission via ductwork; practical design checklist",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:71c9e5a94f2a801a8ddbf1d166e28c2e84b18216e3574ee0dae1f3dd0b3d9111"
+    },
+    {
+      "question_id": "e60121d6-b028-44b5-be5d-9750f1abcb99",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "A sound engineer measures STC performance in a completed residential building and finds that party walls in one unit achieve STC 48, falling 2 points short of the required STC 50. Field investigation reveals that electrical outlet boxes were selead with standard caulk (not acoustic sealant) and that the HVAC return duct was not lined. 's guidance on flanking paths and ASTM E595, what is the most likely explanation for this shortfall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The original wall assembly (staggered studs, drywall, insulation) was under-designed; re-framing is required to meet code, as the current configuration cannot achieve the necessary STC rating."
+        },
+        {
+          "id": "b",
+          "text": "The 2-point shortfall is within measurement uncertainty and does not indicate a compliance failure, suggesting that the building is still within acceptable limits."
+        },
+        {
+          "id": "c",
+          "text": "Flanking paths (unsealed outlets, unlined ductwork) are likely responsible for the STC loss; ASTM E595 indicates that even small uninsulated areas can reduce STC by 3–5 points, explaining the 2-point deficiency"
+        },
+        {
+          "id": "d",
+          "text": "Tropical humidity has degraded the drywall's acoustic properties over time; the assembly was initially compliant but has deteriorated, necessitating maintenance or replacement."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "If the base assembly was staggered studs with insulation (designed for STC 46–50), it was not inherently under-designed; construction quality control is the issue.",
+        "b": "Field test variability is ±2 dB per ASTM E90-21, but this is within the tolerance; however, a 2-point shortfall from STC 50 is at the margin and warrants investigation, especially given known flanking paths.",
+        "d": "While drywall can be affected by humidity, the article does not address long-term degradation in tropical climates; the shortfall is explained by construction defects, not material aging.",
+        "correct": "Flanking paths severely compromise acoustic performance and that ASTM E595 research shows even a 2% uninsulated area can reduce STC by 3–5 points. Standard caulk (not acoustic sealant) and unlined ducts are classic flanking failures. An assembly that should achieve STC 50 fell to STC 48—a 2-point loss consistent with the magnitude of flanking impacts. Remediation involves sealing outlets with acoustic sealant and lining the ductwork, not re-framing. This illustrates why the practical checklist emphasizes sealing penetrations and using proper acoustic materials.",
+        "takeaway": "Acoustic compliance failures are typically due to flanking path construction defects, not base assembly design; quality control and proper sealing are essential."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E595; ASTM E90-21; practical design checklist for sound isolation",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a33a2509855c5468011104613558bee67a734b5173a7a02d73853aaece1e22be"
+    },
+    {
+      "question_id": "b6a00aab-0894-4474-8933-6b820cfbd6f9",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "An architect specifies resilient channels on a steel stud frame with cavity insulation and two layers of drywall, with one layer mounted on the resilient channel. what is the expected STC range for this assembly, and is it adequate for party walls under the Philippine Building Code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "STC 45–50; marginally adequate, as it achieves the minimum for office spaces but not dwelling units"
+        },
+        {
+          "id": "b",
+          "text": "STC 52–60; exceeds the STC 50 minimum and is adequate with safety margin for party walls"
+        },
+        {
+          "id": "c",
+          "text": "STC 40–45; below code requirements and requires additional mass or decoupling"
+        },
+        {
+          "id": "d",
+          "text": "STC 48–54; borderline adequate; field testing should confirm compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "STC 45–50 is the range for single resilient channel + one drywall layer; dual-layer construction achieves higher performance.",
+        "c": "STC 40–45 is the performance of single-stud walls without resilient channels; resilient channel + dual-layer exceeds this significantly.",
+        "d": "The specified assembly achieves a robust performance range (STC 52–60) with adequate safety margin; field testing may confirm but the design intent is clear.",
+        "correct": "Steel stud frame with resilient channel, two drywall layers (one on resilient channel), cavity insulation achieves STC 52–60. This range exceeds STC 50 and is adequate for party wall applications with a safety margin. The resilient channel and dual-layer drywall combination provides both decoupling (via the channel) and mass (via the two layers), optimizing transmission loss across the frequency range.",
+        "takeaway": "Resilient channel + dual-layer drywall is a robust design achieving STC 52–60, providing adequate compliance margin for party walls."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E90-21; steel stud wall assembly performance data",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9554068abbcfdca7ae0575a24a4be90125d50fb24191739be15423883151e5f1"
+    },
+    {
+      "question_id": "104a989b-05e0-42c5-a6b1-7e9e7639edf3",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "In the Sound Transmission Class (STC) rating system, what frequency is used as the reference point for determining the STC number after comparing transmission loss curves to a standardized contour?",
+      "options": [
+        {
+          "id": "a",
+          "text": "125 Hz"
+        },
+        {
+          "id": "b",
+          "text": "500 Hz"
+        },
+        {
+          "id": "c",
+          "text": "1000 Hz"
+        },
+        {
+          "id": "d",
+          "text": "4000 Hz"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "125 Hz is the lowest frequency band measured in ASTM E90-21, but it is not used to determine the STC rating.",
+        "c": "1000 Hz falls within the speech frequency range but is not the designated reference frequency for STC determination.",
+        "d": "4000 Hz is the highest frequency band measured in ASTM E90-21, but it is not the STC reference frequency.",
+        "correct": "The STC rating is defined as the contour value at 500 Hz. ASTM E90-21 measures transmission loss across 16 frequency bands from 125 Hz to 4000 Hz, and the resulting curve is compared to a standardized reference contour; the STC number is read at the 500 Hz point on that contour.",
+        "takeaway": "STC ratings are single-number metrics anchored to 500 Hz performance after acoustic testing per ASTM E90-21."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E90-21; PBC acoustic requirements",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:20.863985+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fcf7f1f22513524ff6421c16e72152465d8198a1abb11423743b028055e57407"
+    },
+    {
+      "question_id": "4fa84301-4f29-49dd-a9ed-0c0e14bd4bf9",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "No specific STC ratings are mandated by the Philippine Building Code (PD 1096) for acoustic separation between dwelling units or within units. What acoustic principle or pragmatic reasoning explains this difference in requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sound transmission is expected to be higher within a single unit due to shared structural elements, which naturally conduct sound more efficiently"
+        },
+        {
+          "id": "b",
+          "text": "Occupants of the same unit share responsibility for privacy, so lower isolation is acceptable; the threat of intrusion from unknown neighbors is the greater concern"
+        },
+        {
+          "id": "c",
+          "text": "STC 45 is easier and less expensive to achieve within unit walls than party walls, making it a more practical standard for developers"
+        },
+        {
+          "id": "d",
+          "text": "Bathrooms generate lower-frequency noise that requires only STC 45; party walls must block higher-frequency speech, which is more challenging"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Shared structural elements within a unit do not inherently require lower acoustic standards; the code could mandate equal performance throughout.",
+        "c": "While STC 45 may be less expensive, this is a secondary effect, not the primary regulatory driver.",
+        "d": "Bathroom noise spans multiple frequencies; the difference in STC is not frequency-dependent but privacy-context dependent.",
+        "correct": "The regulatory difference reflects a risk-based approach: party walls separate unrelated occupants where acoustic privacy is paramount (STC 50 prevents intelligible speech transmission). Within a single dwelling unit, the same occupants share the space and have mutual awareness; the code prioritizes preventing external intrusion. This is a pragmatic regulatory distinction balancing acoustic standards with practical and economic considerations.",
+        "takeaway": "Regulatory STC requirements reflect occupancy relationships and privacy risk, not solely transmission physics."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Building Code; PD 1096; acoustic privacy hierarchy in buildings",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:20.863985+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:65036584336aaf59e58322f9ffb0d4368107932f08fba456f453cba45fcca17b"
+    },
+    {
+      "question_id": "a9de78bb-5139-4e93-9532-4cefe6ceebef",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "The human ear typically perceives a 3 dB change as a noticeable difference and a 10 dB change as approximately halving loudness. Based on the relationship between STC points and decibels, how much is a 3-point increase in STC rating perceptually noticeable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Barely perceptible; requires measurement to detect, often unnoticed in typical environments"
+        },
+        {
+          "id": "b",
+          "text": "Slightly more noticeable than a 3 dB reduction; typically noticeable"
+        },
+        {
+          "id": "c",
+          "text": "Equal to a 10 dB reduction; clearly audible as louder, which is significant in sound-sensitive areas"
+        },
+        {
+          "id": "d",
+          "text": "Equal to a 6 dB reduction; moderately noticeable, especially in quiet settings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the relationship is close (1 STC ≈ 1 dB), a 3 dB change explicitly meets the threshold for perception per the article.",
+        "c": "A 10 dB change represents halving of loudness, which is larger than a 3 STC-point improvement.",
+        "d": "A 6 dB reduction results from doubling the partition mass, not from a 3-point STC change.",
+        "correct": "An increase of 1 STC point ≈ 1 dB reduction. Therefore, a 3 STC-point increase ≈ 3 dB reduction, which the article states is the threshold where the human ear typically perceives a noticeable difference. A 3-point STC improvement is thus slightly more noticeable than barely perceptible but less dramatic than a 10 dB change.",
+        "takeaway": "1 STC point ≈ 1 dB reduction; 3 dB is the perceptual threshold for noticeable acoustic differences in building design."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E90-21; STC rating methodology and perception thresholds",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:20.863985+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c3dedc253ff550ea323aacc966bcc227adea14cc6c7663dfedc721b3c88b8161"
+    },
+    {
+      "question_id": "62737c32-d734-4f81-99f0-f373ee9e999b",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "Research cited in ASTM E595 indicates that even a 2% uninsulated area of a partition can reduce overall STC by 3–5 points. A typical party wall between two residential units is 12 feet high and 35 feet long. Approximately how much linear footage of uninsulated crack or gap would constitute a 2% area loss, and what design implication does this have?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approximately 8.4 linear feet of gap; sealing is not critical because the 3–5 dB loss can be offset by slightly thicker drywall, which is a cost-effective solution"
+        },
+        {
+          "id": "b",
+          "text": "Approximately 8.4 linear feet of gap; even small, seemingly minor uninsulated penetrations (e.g., unsealed electrical outlets, minor cracks) can nullify a significant portion of the wall's acoustic performance"
+        },
+        {
+          "id": "c",
+          "text": "Approximately 16.8 linear feet of gap; the practical implication is that small gaps are negligible and do not warrant sealing if the base wall is STC 50 or higher"
+        },
+        {
+          "id": "d",
+          "text": "Approximately 42 linear feet of gap; only massive openings threaten acoustic performance, making minor gaps less of a concern"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Offsetting a 3–5 dB loss with thicker drywall defeats the design intent; the base assembly was specified to achieve STC 50, and gaps undermine that target.",
+        "c": "While 16.8 linear feet is double the actual 2% threshold, the practical conclusion that small gaps are negligible contradicts ASTM E595 research.",
+        "d": "42 linear feet would represent approximately 10% of the wall area, far larger than the 2% threshold affecting performance.",
+        "correct": "Wall area = 12 ft × 35 ft = 420 sq ft. 2% of 420 = 8.4 sq ft. For a 12-foot-high wall, 8.4 sq ft ÷ 12 ft = 0.7 linear feet of gap (or ~8.4 linear feet of 1-inch-wide crack). This is very small—equivalent to a few unsealed electrical outlet back-boxes or small construction gaps. The implication is that acoustic design requires meticulous attention to detail: even seemingly minor uninsulated areas can reduce STC by 3–5 points, potentially taking an assembly from STC 50 to STC 45–47. This justifies the practical checklist requirement to seal all penetrations with acoustic sealant.",
+        "takeaway": "Acoustic design effectiveness is extremely sensitive to construction detail; minor unsealed penetrations can significantly degrade performance, justifying rigorous site quality control."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E595; flanking transmission analysis",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:20.863985+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dbfde94aef86b0f7085ee1a2c13dbbc95e47ce50eceb2f3e3b647330f3c592e5"
+    },
+    {
+      "question_id": "2fadf096-8aee-48cb-bf50-b8fe0e8d0170",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "The coincidence frequency for concrete is approximately 200 Hz, and for drywall is approximately 1200–1600 Hz. Speech frequencies range from 300–3000 Hz. Why is it important that designs shifting the coincidence frequency away from speech frequencies improve overall STC ratings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frequencies below 300 Hz are not important for speech intelligibility, so coincidence at 200 Hz is irrelevant, unless the structure is specifically designed for low-frequency sound isolation"
+        },
+        {
+          "id": "b",
+          "text": "At the coincidence frequency, the partition vibrates sympathetically and loses 5–15 dB of transmission loss; if this overlap with speech frequencies, overall STC deteriorates; keeping coincidence outside speech range preserves acoustic isolation"
+        },
+        {
+          "id": "c",
+          "text": "The coincidence effect is only problematic for high-frequency sound; low-frequency coincidence actually improves isolation, which is beneficial for environments prioritizing low-frequency sound control"
+        },
+        {
+          "id": "d",
+          "text": "Shifting coincidence frequency requires changing the material's Young's modulus, which is impractical in most building applications, especially when considering cost and material availability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Frequencies below 300 Hz include traffic and mechanical noise, which are important for overall acoustic comfort, not just speech.",
+        "c": "The coincidence effect is frequency-specific; it matters when it overlaps with the most critical frequency ranges.",
+        "d": "Young's modulus is a material property; other design approaches (e.g., damping, decoupling) shift effective coincidence behavior without material substitution.",
+        "correct": "The coincidence effect causes a 5–15 dB dip in transmission loss. If this dip occurs within the speech frequency range (300–3000 Hz), it directly degrades acoustic performance where it matters most for occupied spaces. Concrete's coincidence at 200 Hz is mostly outside speech range, but drywall at 1200–1600 Hz overlaps significantly with speech. Designs that use materials or configurations shifting coincidence frequency outside speech frequencies maximize the transmission loss curve within the frequencies carrying speech, resulting in higher effective STC ratings.",
+        "takeaway": "Coincidence frequency effects are most damaging when they overlap with speech frequencies; acoustic designs minimize this overlap to maximize effective isolation."
+      },
+      "explanation": null,
+      "code_citation": "Coincidence frequency formula; acoustic transmission loss curves; ASTM E90-21",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:20.863985+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4c3dded60e7cd78b0fd088ed026a30c6a7afd1663f18b7cba36d7c2b750658c0"
+    },
+    {
+      "question_id": "d1ed7c53-9f1d-4ec0-b650-ce35d1a7d3bc",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "that resilient channel clips reduce transmission loss by 2–4 dB at mid-to-high frequencies. Why do resilient channels not provide equal benefit across all frequency ranges?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resilient channels only function when mounted vertically; horizontal mounting provides no acoustic benefit, limiting their application"
+        },
+        {
+          "id": "b",
+          "text": "Decoupling via resilient channels mechanically isolates vibration transmission but is frequency-dependent; mid-to-high frequencies (where bending waves dominate) benefit most; low frequencies dominated by mass are less affected"
+        },
+        {
+          "id": "c",
+          "text": "Resilient channels lose stiffness in high-humidity environments, reducing their effectiveness above 2000 Hz, which can be problematic in certain climates"
+        },
+        {
+          "id": "d",
+          "text": "The 2–4 dB benefit is the average across all frequencies; individual frequencies vary, but the benefit is uniform across speech range, which is not always the case"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Orientation relative to stud orientation affects performance, but vertical vs. horizontal is not the distinction; resilient clips couple to studs regardless of direction.",
+        "c": "Humidity can affect material properties, but this is not the reason for frequency-dependent performance; the physics is inherent to decoupling mechanisms.",
+        "d": "The 2–4 dB benefit varies by frequency; the article specifies mid-to-high frequencies specifically, not a uniform average.",
+        "correct": "Decoupling's effectiveness is frequency-dependent. Resilient channels interrupt vibration transmission through the structural connection, which works optimally for mid-to-high frequencies where bending waves and structural resonance dominate. Low frequencies (~100–300 Hz) are governed primarily by the mass law and radiation resistance; decoupling has minimal effect since low-frequency sound propagates through the mass itself. This is why resilient channels are specified alongside cavity insulation and mass—the combination addresses both mass (low-frequency) and decoupling (mid-high-frequency) performance.",
+        "takeaway": "Acoustic design strategies have frequency-dependent effectiveness; mass dominates low frequencies, decoupling benefits mid-to-high frequencies, and multi-layer designs combine mechanisms."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E90-21; resilient channel performance data; acoustic mechanics",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:20.863985+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:47d3c94bde3d68cf0fc9a70a378ab74af56696e8c4d32ce3bfef96001064966b"
+    },
+    {
+      "question_id": "9ed48709-6b8a-4321-8cff-bf8eea47606d",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "A designer is comparing two floor assembly options for a tropical climate residential building: Option A (4-inch concrete slab + suspended ceiling, STC 52–58, IIC 45–52) and Option B (floating wood-frame floor with resilient underlayment, suspended ceiling, STC 52–60, IIC 55–65). Which option is preferable for tropical construction, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A; concrete is more durable in high-humidity tropical climates and less prone to moisture damage than wood, providing long-term structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "Option B; it achieves superior IIC performance (55–65 vs. 45–52) and wood-frame floating systems are resilient to tropical humidity if properly maintained with vapor barriers"
+        },
+        {
+          "id": "c",
+          "text": "Option A; concrete provides better thermal mass for tropical heat management, improving overall building comfort beyond acoustic performance, which is crucial in such climates"
+        },
+        {
+          "id": "d",
+          "text": "Either option is equally suitable; tropical climate impacts HVAC noise but not partition acoustic performance, making both options viable"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While concrete durability is legitimate, it does not override the 10+ dB IIC performance gap, which directly affects acoustic comfort for adjacent occupants.",
+        "c": "Thermal mass aids passive cooling but is secondary to acoustic compliance; acoustic comfort is the code mandate, not thermal optimization.",
+        "d": "Tropical climate does impact HVAC system noise and exterior noise infiltration, but partition performance is independent of climate zone; both options must meet code regardless of climate.",
+        "correct": "Option B delivers superior impact isolation (IIC 55–65), ensuring footstep noise barely transmits—critical for occupant comfort. While Option A is durable, its IIC performance (45–52) is marginal. Modern tropical construction addresses wood moisture risk through proper vapor barriers, ventilation, and resilient underlayment design. The acoustic performance advantage of Option B outweighs durability concerns if construction quality is maintained. In multifamily residential, acoustic comfort directly affects occupant satisfaction and potential liability.",
+        "takeaway": "Acoustic performance must be prioritized in design selection; other factors (durability, thermal mass) are secondary to meeting regulatory and occupant comfort standards."
+      },
+      "explanation": null,
+      "code_citation": "Floor assembly performance data; ASTM E492-21; tropical construction considerations",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:20.863985+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:efee8507082911b1bd743143d53534f51883686cf025c49253c124fa51c843e7"
+    },
+    {
+      "question_id": "0588d3c6-a183-4dde-ac51-a0c3e1b07631",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "A designer proposes using an 8-inch concrete block wall with acoustic plaster on both sides to achieve STC 50 for a party wall in a residential building. what critical issue should concern the acoustics reviewer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8-inch concrete block is too thin; a 12-inch block is required by the Philippine Building Code, which ensures adequate sound insulation"
+        },
+        {
+          "id": "b",
+          "text": "Acoustic plaster is a banned material in multifamily buildings due to dust contamination, which poses health risks and compliance issues"
+        },
+        {
+          "id": "c",
+          "text": "The assembly achieves STC 46–52, which overlaps STC 50 but does not reliably guarantee STC 50 performance; the design is borderline compliant"
+        },
+        {
+          "id": "d",
+          "text": "Concrete block walls are susceptible to moisture, rendering acoustic seals ineffective, which can compromise the intended soundproofing"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article does not specify a minimum block thickness; 8-inch is discussed as a standard option.",
+        "b": "Acoustic plaster is recommended in the article, not banned; it improves concrete block performance.",
+        "d": "While moisture can affect masonry, this is a construction quality issue, not an acoustic design concern specific to this assembly.",
+        "correct": "8-inch concrete block with acoustic plaster and cavity absorption achieves STC 46–52, a range that overlaps STC 50 but does not guarantee it. The lower bound (STC 46) falls below the code requirement, making this a borderline design. A more robust solution (e.g., staggered studs, resilient channel) would reliably achieve STC 50 with minimal risk. Designers should specify assemblies with performance ranges clearly above the minimum to account for field variability.",
+        "takeaway": "Acoustic designs must account for performance uncertainty; specify assemblies with performance ranges safely above code minimums."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E90-21; field performance variability in masonry assemblies",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:20.863985+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:29966b46e11633bcdbba4a3484ed0a19f401a7a8ce391155d63d39fa95ec848d"
+    },
+    {
+      "question_id": "a72f4b62-0ba3-4fe0-8d9b-efd00d2b157f",
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "topic_id": "35b29031-528c-42b9-b5d0-01a31b93f8d8",
+      "text": "A developer specifies a residential floor assembly with a 4-inch concrete slab and suspended ceiling (2-inch air gap with insulation above). what is the critical performance gap if occupants above are sensitive to footstep noise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The STC rating (52–58) is adequate, but the IIC rating (45–52) may be marginal; IIC 50 is the code minimum"
+        },
+        {
+          "id": "b",
+          "text": "The IIC rating (52–58) is more than adequate, indicating over-design, which is not typically a concern for noise-sensitive environments"
+        },
+        {
+          "id": "c",
+          "text": "The assembly fails to meet the STC 50 requirement between units, which could lead to noise complaints from residents"
+        },
+        {
+          "id": "d",
+          "text": "The assembly creates flanking paths through the HVAC system above the suspended ceiling, potentially compromising acoustic performance"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Exceeding code minimums indicates proper design, not over-design; over-design would be unnecessary excess beyond code.",
+        "c": "The STC 52–58 rating exceeds the STC 50 requirement; this assembly meets airborne sound isolation.",
+        "d": "Flanking paths through HVAC above the suspended ceiling are a construction detail issue, not inherent to the assembly performance range.",
+        "correct": "4-inch concrete slab + suspended ceiling achieves STC 52–58 and IIC 45–52. While the airborne sound isolation (STC) exceeds the minimum, the impact isolation (IIC) is borderline: the lower bound of 45 falls below the required IIC 50. For impact-sensitive applications (footstep noise), this assembly may not reliably meet code. A 6-inch slab or floating wood-frame floor system would provide greater safety margin for IIC performance.",
+        "takeaway": "IIC and STC requirements must both be verified; assemblies can meet one requirement while being marginal for the other."
+      },
+      "explanation": null,
+      "code_citation": "ASTM E492-21; floor-ceiling assembly performance data",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-03-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:20.863985+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:282d1310b10fcec4663de0de401c4d2c8791518e59ec0df5412b8e33ca3b1e29"
+    }
+  ]
+}

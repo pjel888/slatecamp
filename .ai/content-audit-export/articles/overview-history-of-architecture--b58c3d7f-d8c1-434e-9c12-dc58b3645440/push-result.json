@@ -1,0 +1,26 @@
+{
+  "attempted_at": "2026-05-03T10:55:20.649Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "b58c3d7f-d8c1-434e-9c12-dc58b3645440",
+  "slug": "overview-history-of-architecture",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:3bab16d5ae0afff5115c89ee4260160467cf772049d384e1a8e429ebf73cf6f3",
+  "original_hash": "sha256:3bab16d5ae0afff5115c89ee4260160467cf772049d384e1a8e429ebf73cf6f3",
+  "candidate_hash": "sha256:d8d2629600eb4093e8d7d8b0827dd774f54a433debe6a003f2c84dfefcc86bf8",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

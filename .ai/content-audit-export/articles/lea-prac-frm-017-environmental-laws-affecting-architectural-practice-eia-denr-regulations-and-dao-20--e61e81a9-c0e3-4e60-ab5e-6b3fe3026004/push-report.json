@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:53:28.740Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+  "slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:d752fd311e62bbb631cbf7db9331429c04fc88c560d4fc7bf92818b9e27a3069",
+  "original_hash": "sha256:d752fd311e62bbb631cbf7db9331429c04fc88c560d4fc7bf92818b9e27a3069",
+  "candidate_hash": "sha256:73cd05bec67f7f66f1db5f318bb1e733a96f7de000ce19fb85e20a111c0d0253",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

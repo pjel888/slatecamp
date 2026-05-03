@@ -1,0 +1,63 @@
+{
+  "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+  "slug": "lea-dsgn-009-04-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.969Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:1702f5a2e02d97f1f734a5e2785537aa39aba71b290e9750944b211a7fe06de5",
+  "normalized_content_hash": "1702f5a2e02d97f1f734a5e2785537aa39aba71b290e9750944b211a7fe06de5",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\nRemember: **BERDE = Philippines**, EDGE = cost/efficiency (20%), LEED = global prestige. All three share core sustainability categories: energy, water, materials, site, waste.\n</Tip>",
+      "raw_hash": "sha256:7a4796f54dd7dc80156a236ba4b1a45ee9624f9e3bfc9d35a06ff902948e292c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Remember: **BERDE = Philippines**, EDGE = cost/efficiency (20%), LEED = global prestige. All three share core sustainability categories: energy, water, materials, site, waste.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:f2fad0f511200f8824a31038e067f6b220ba5e49d2d13773220c1f8d5c968072",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\nRemember: **BERDE = Philippines**, EDGE = cost/efficiency (20%), LEED = global prestige. All three share core sustainability categories: energy, water, materials, site, waste.\n",
+      "children_text": "Remember: **BERDE = Philippines**, EDGE = cost/efficiency (20%), LEED = global prestige. All three share core sustainability categories: energy, water, materials, site, waste.",
+      "start_offset": 5409,
+      "end_offset": 5597,
+      "line_start": 57,
+      "line_end": 59,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing LEED as the Philippine standard\u2014BERDE is the national system under PHILGBC\",\"Thinking EDGE requires 100% renewable energy\u2014it targets 20% efficiency improvement only\",\"Assuming prerequisites are optional\u2014all three systems have mandatory minimums in core areas\",\"Overlooking passive design in favor of technology\u2014tropical Philippines benefits significantly from natural ventilation and thermal mass\",\"Treating green building as cosmetic\u2014certification is a framework; operational discipline and maintenance culture drive real impact\"]} />",
+      "raw_hash": "sha256:95d4a56cf85cbf89f6416046c397b76ddbcafd2221b970320419af941849f162",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing LEED as the Philippine standard\u2014BERDE is the national system under PHILGBC\\\",\\\"Thinking EDGE requires 100% renewable energy\u2014it targets 20% efficiency improvement only\\\",\\\"Assuming prerequisites are optional\u2014all three systems have mandatory minimums in core areas\\\",\\\"Overlooking passive design in favor of technology\u2014tropical Philippines benefits significantly from natural ventilation and thermal mass\\\",\\\"Treating green building as cosmetic\u2014certification is a framework; operational discipline and maintenance culture drive real impact\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a3820f8001a7662aca92da4a8113c4daa2e7850bd28aa4e98d86858a9c008767",
+      "props": {
+        "mistakes": "{[\"Confusing LEED as the Philippine standard\u2014BERDE is the national system under PHILGBC\",\"Thinking EDGE requires 100% renewable energy\u2014it targets 20% efficiency improvement only\",\"Assuming prerequisites are optional\u2014all three systems have mandatory minimums in core areas\",\"Overlooking passive design in favor of technology\u2014tropical Philippines benefits significantly from natural ventilation and thermal mass\",\"Treating green building as cosmetic\u2014certification is a framework; operational discipline and maintenance culture drive real impact\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Confusing LEED as the Philippine standard\u2014BERDE is the national system under PHILGBC\",\"Thinking EDGE requires 100% renewable energy\u2014it targets 20% efficiency improvement only\",\"Assuming prerequisites are optional\u2014all three systems have mandatory minimums in core areas\",\"Overlooking passive design in favor of technology\u2014tropical Philippines benefits significantly from natural ventilation and thermal mass\",\"Treating green building as cosmetic\u2014certification is a framework; operational discipline and maintenance culture drive real impact\"]}"
+      },
+      "props_text": "mistakes={[\"Confusing LEED as the Philippine standard\u2014BERDE is the national system under PHILGBC\",\"Thinking EDGE requires 100% renewable energy\u2014it targets 20% efficiency improvement only\",\"Assuming prerequisites are optional\u2014all three systems have mandatory minimums in core areas\",\"Overlooking passive design in favor of technology\u2014tropical Philippines benefits significantly from natural ventilation and thermal mass\",\"Treating green building as cosmetic\u2014certification is a framework; operational discipline and maintenance culture drive real impact\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5619,
+      "end_offset": 6193,
+      "line_start": 63,
+      "line_end": 63,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:c1893a672c6a897ce726ba11e110aaf77a81da87fb4d294a293e136fe2942558"
+}

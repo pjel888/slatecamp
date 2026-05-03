@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+  "slug": "pd-1096-rule-vii-occupancy",
+  "title": "PD 1096 Rule VII Occupancy",
+  "component_count": 3,
+  "components": [
+    {
+      "component_name": "LawCallout",
+      "block_ids": [
+        "ui_0002",
+        "ui_0003"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "Warn",
+      "block_ids": [
+        "ui_0001"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "details",
+      "block_ids": [
+        "ui_0004",
+        "ui_0005",
+        "ui_0006",
+        "ui_0007"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    }
+  ],
+  "unknown_components": [
+    "details",
+    "summary"
+  ],
+  "custom_ui_block_count": 7,
+  "normalized_status": "passed",
+  "components_detected": [
+    "LawCallout",
+    "Warn"
+  ],
+  "unknown_components_detected": [
+    "details",
+    "summary"
+  ]
+}

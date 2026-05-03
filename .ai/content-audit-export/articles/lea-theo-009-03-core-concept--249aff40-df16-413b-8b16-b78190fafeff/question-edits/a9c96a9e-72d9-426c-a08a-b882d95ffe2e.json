@@ -1,0 +1,17 @@
+{
+  "question_id": "a9c96a9e-72d9-426c-a08a-b882d95ffe2e",
+  "baseline_hash": "sha256:01bae7c0ec083c3e1eef119a62b4bccc70c37f8c25ddceb91d7063572f470005",
+  "reason": "Typo in rationale: 'WWhile' should be 'While'. The rationale text has an extra 'W' at the beginning of the correct rationale.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T03:52:00+00:00",
+  "proposed": {
+    "rationale": {
+      "a": "Accessibility applies to specific spaces; typical bedrooms are not required to be wheelchair-accessible unless specified.",
+      "b": "While PD 1096 does establish minimum bedroom dimensions (though smaller than practice standard); this dimension would comply with code but not practice.",
+      "c": "PD 1096 does establish minimum bedroom dimensions (though smaller than practice standard); this dimension would comply with code but not practice.",
+      "d": "90 SF can accommodate a bed and minimal furniture; the issue is comfort and functionality, not impossibility.",
+      "correct": "While PD 1096 requires light/ventilation but no area minimum, standard design practice allocates 120 SF for secondary bedrooms to accommodate a bed, dresser, desk/chair, and comfortable circulation without forced layout. Code minimum and design standard are distinct; this is a common ALE mistake.",
+      "takeaway": "Code minimum and design standard are distinct; this is a common ALE mistake."
+    }
+  }
+}

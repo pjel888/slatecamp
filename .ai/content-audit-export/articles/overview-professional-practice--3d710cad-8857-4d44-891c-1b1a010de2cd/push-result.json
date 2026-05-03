@@ -1,0 +1,26 @@
+{
+  "attempted_at": "2026-05-03T10:55:20.195Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "3d710cad-8857-4d44-891c-1b1a010de2cd",
+  "slug": "overview-professional-practice",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:dbcaaee83db3d558589d69d0deb773331436d5a9cd9a5854fa2390bbbe61d8f8",
+  "original_hash": "sha256:dbcaaee83db3d558589d69d0deb773331436d5a9cd9a5854fa2390bbbe61d8f8",
+  "candidate_hash": "sha256:26ad0c9a1b6c15657bb9a74afc8725fd1370b7cf513358be07a10752a4f95b92",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

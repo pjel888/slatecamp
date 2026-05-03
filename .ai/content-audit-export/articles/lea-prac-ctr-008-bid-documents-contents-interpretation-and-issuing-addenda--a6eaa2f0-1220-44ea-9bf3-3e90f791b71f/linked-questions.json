@@ -1,0 +1,508 @@
+{
+  "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:13bc39b38d334f1680b2bb1ae72387cb1ac37e73d8353270df1426d1e06d2038",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "ce9954fb-6292-4e96-9f0d-e3e9da602977",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "In the hierarchy of interpretation when conflicts exist between Drawings and Specifications, which prevails?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Drawings always prevail over Specifications, except when the Specifications explicitly state otherwise"
+        },
+        {
+          "id": "b",
+          "text": "Specifications always prevail over Drawings, unless the Drawings are marked as 'For Construction'"
+        },
+        {
+          "id": "c",
+          "text": "Detailed Drawings prevail over general Drawings; written dimensions prevail over scaled dimensions; Specifications prevail over General Conditions"
+        },
+        {
+          "id": "d",
+          "text": "The conflict is resolved through negotiation after bidding, typically involving the architect and contractor"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assumes Drawings universally override Specifications; the rule is more nuanced, favoring specificity over generality.",
+        "b": "Assumes Specifications universally override Drawings; actually, detailed Drawings prevail over general specifications.",
+        "d": "Defers resolution until after bidding; the hierarchy is established in the Contract Documents before bidding to ensure fair evaluation.",
+        "correct": "The hierarchy is: Detailed Drawings prevail over general Drawings; written (figured) dimensions prevail over scaled dimensions; Specifications prevail over General Conditions.",
+        "takeaway": "Detailed Drawings, written dimensions, and Specifications control hierarchy; detail and specificity win over general statements."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a5916e6d144e3ea24abd1e53d6d1fedf08d6020c0afb438dbadb3adf19f6e62a"
+    },
+    {
+      "question_id": "7d023e7b-6daa-4b36-87d3-456e06aed8e4",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What is the purpose of including a Schedule of Materials and Finishes in bid documents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To eliminate the need for Specifications, thereby simplifying the documentation process for contractors"
+        },
+        {
+          "id": "b",
+          "text": "To list all specified materials, finishes, and equipment by location, enabling contractors to organize bids and identify all requirements at a glance"
+        },
+        {
+          "id": "c",
+          "text": "To impose unnecessary restrictions on contractor selection, limiting flexibility in material sourcing"
+        },
+        {
+          "id": "d",
+          "text": "To guarantee that materials will be available during construction, ensuring no delays due to supply chain issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly assumes schedules replace Specifications; schedules supplement and organize Specifications for clarity.",
+        "c": "Inverts the purpose; schedules promote clarity and accuracy, not restriction.",
+        "d": "Confuses the purpose; schedules identify required materials, not guarantee availability.",
+        "correct": "A Schedule of Materials and Finishes lists all specified materials, finishes, and equipment by location, helping contractors organize bids and identify requirements.",
+        "takeaway": "Material schedules organize bid requirements by location and enable organized cost tracking."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b16695995f321e2e34d6cb4e6ec872780112e4ad16ada0dc351582b7f9364562"
+    },
+    {
+      "question_id": "0b29f2ec-57bf-451a-ac67-c7775c0f11a8",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "If a section of the Specifications is ambiguous and permits multiple interpretations, what is the risk to the Owner?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Contractor will automatically select the most cost-efficient interpretation, potentially leading to disputes over scope"
+        },
+        {
+          "id": "b",
+          "text": "Different bidders may bid on different scopes, resulting in bids of vastly different scope and price that are not readily comparable, making fair evaluation difficult"
+        },
+        {
+          "id": "c",
+          "text": "The Owner may reject all bids and start the bidding process over, incurring additional time and cost"
+        },
+        {
+          "id": "d",
+          "text": "The ambiguity has no impact on the bids; all contractors will interpret it identically, which is unlikely in practice"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assumes contractors naturally minimize cost; ambiguity permits wider interpretations, both minimal and expansive.",
+        "c": "Overstates remedy; issuing an Addendum clarifying the ambiguity avoids rebidding.",
+        "d": "Ignores the likely impact; experience shows different contractors interpret ambiguities differently, creating bid variance.",
+        "correct": "Ambiguous Specifications allow multiple interpretations, so bidders may bid on different scopes, resulting in non-comparable bids and difficult evaluation.",
+        "takeaway": "Ambiguous specifications create scope inconsistency across bids, making fair price comparison impossible."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7600b8bf6d739694da86afc1ea33da1c9cf131f63936fb0434ccb688e44cfcc4"
+    },
+    {
+      "question_id": "38fea3d8-e0dd-4b98-91a2-d24f44bdd131",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "If an Addendum is issued less than 48 hours before the bid deadline, what should the Architect typically do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Issue the Addendum without extending the deadline, assuming all contractors have been pre-notified"
+        },
+        {
+          "id": "b",
+          "text": "Extend the bid deadline to provide contractors adequate time to revise their bids based on the new information in the Addendum"
+        },
+        {
+          "id": "c",
+          "text": "Cancel the bidding and start over, ensuring all previous submissions are voided and contractors are informed"
+        },
+        {
+          "id": "d",
+          "text": "Issue the Addendum only to the Architect's preferred contractors, ensuring they have a competitive advantage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Denies bidders adequate time to evaluate and incorporate new information, resulting in inaccurate or withdrawn bids.",
+        "c": "Overcorrects; extending the deadline preserves the existing bidding process and avoids delay of rebidding.",
+        "d": "Permits selective distribution; all bidders must receive Addenda simultaneously to maintain fairness.",
+        "correct": "When an Addendum is issued less than 48 hours before the deadline, the Architect should extend the deadline to give contractors adequate time to revise bids.",
+        "takeaway": "Late Addenda require deadline extension to allow contractors adequate time for accurate bid revision."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a0c2e511ccce0ce8bc0a3e0607b36a19fdfc9f630586c235bc2b69ec11106405"
+    },
+    {
+      "question_id": "48ae83be-231f-4def-bb0e-af02e62e895b",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What coordination responsibility does the Architect have when incorporating Consultant Drawings (structural, mechanical, electrical) into the bid document package?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Architect has no responsibility for consultant documents; each consultant issues documents independently, which is a misunderstanding of the coordination process."
+        },
+        {
+          "id": "b",
+          "text": "The Architect must ensure that Consultant Drawings are on the same scale, coordinate with the Architect's Drawings in terms of dimensions and references, and are free of conflicts with other Drawings"
+        },
+        {
+          "id": "c",
+          "text": "The Architect may incorporate consultant documents without review or coordination, which could lead to significant project issues."
+        },
+        {
+          "id": "d",
+          "text": "Only structural drawings must be coordinated; other consultants' drawings do not need coordination, which is incorrect as all disciplines require integration."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores Architect's coordination responsibility; consultants' documents are incorporated into Architect's package and must coordinate.",
+        "c": "Permits unreviewed incorporation; Architect must verify coordination before issuing consultant documents to bidders.",
+        "d": "Arbitrarily exempts MEP drawings; all consultant disciplines must coordinate for complete, conflict-free bid documents.",
+        "correct": "The Architect must coordinate with consultants to ensure Drawings are on the same scale, dimensions and references are consistent, and conflicts are resolved.",
+        "takeaway": "Architect must coordinate all consultant drawings for scale, dimensional consistency, and conflict resolution."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c064da5d1b491fe915f75cb9f8b8da0197fead8cb55befc1d5e037a9a96f47c"
+    },
+    {
+      "question_id": "ff397f9a-d371-4697-b5f4-b3b01a03e96b",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What is the purpose of Instructions to Bidders in the bid document package?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To specify the exact construction methods contractors must use, ensuring uniformity in project execution"
+        },
+        {
+          "id": "b",
+          "text": "To establish the rules of bidding—bid format, required documentation, deadline, bid opening procedure, and evaluation criteria"
+        },
+        {
+          "id": "c",
+          "text": "To guarantee that the lowest bid will be accepted, regardless of other considerations"
+        },
+        {
+          "id": "d",
+          "text": "To eliminate competition by favoring certain contractors, which is often prohibited by procurement laws"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses Instructions with Specifications; Instructions govern the bidding process, not construction methods.",
+        "c": "Wrongly assumes lowest bid guarantee; Instructions may specify that non-price factors (qualifications, schedule) are considered.",
+        "d": "Mischaracterizes the purpose as anticompetitive; Instructions are designed to ensure fair, transparent bidding.",
+        "correct": "Instructions to Bidders establish binding rules governing the bidding process: bid format, required documentation, deadline, bid opening procedure, and evaluation criteria.",
+        "takeaway": "Instructions to Bidders define the bidding rules—format, documentation, deadline, and evaluation criteria."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1b9f06dc33c9e5d9995f40623c44630225888e18db0be3a93bd621ea68eb5670"
+    },
+    {
+      "question_id": "81199809-d9c3-4622-be93-3d73f84313e5",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "If Drawings show dimensions both as figured (written) dimensions and as sclead measurements, and the two differ, which controls?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The scaled measurement, as it shows the Architect's visual intent, which is crucial for design integrity"
+        },
+        {
+          "id": "b",
+          "text": "The figured (written) dimension controls; the Contractor must use the written dimension, not scaled measurement"
+        },
+        {
+          "id": "c",
+          "text": "The Contractor may choose which dimension to use, which can lead to inconsistencies"
+        },
+        {
+          "id": "d",
+          "text": "Neither dimension controls; the Contractor must request a new Drawing, ensuring accuracy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assumes scaled measurements reflect intent; actually, written dimensions are the explicit expression of intent and control.",
+        "c": "Wrongly permits contractor discretion; the drawing hierarchy is fixed with written dimensions controlling.",
+        "d": "Incorrectly suggests need for new Drawing; the conflict is resolved by applying the established hierarchy favoring written dimensions.",
+        "correct": "Figured (written) dimensions control over scaled measurements; the Contractor must use the written dimension and cannot scale from the Drawing without written confirmation.",
+        "takeaway": "Written dimensions always control over scaled dimensions; scaling without written confirmation is at Contractor's risk."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d3637ea226191629a04db8b22c344566b17c1d395456598aa07f9f50939b01e"
+    },
+    {
+      "question_id": "7677ef3b-3338-4156-bc0b-70bb42d833a3",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What must the Architect do if, after bid documents are issued, an error is discovered in the Specifications or Drawings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Architect may notify only the Architect's preferred contractor to provide a competitive advantage"
+        },
+        {
+          "id": "b",
+          "text": "The Architect must prepare and issue a written Addendum to all potential bidders to correct the error"
+        },
+        {
+          "id": "c",
+          "text": "The Architect may correct the error in the final Contract Documents without notifying bidders"
+        },
+        {
+          "id": "d",
+          "text": "The Architect must withdraw the bid documents and start the bidding process over"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Permits selective disclosure to preferred contractor; all bidders must receive equal information and notice of errors.",
+        "c": "Permits correcting errors silently; this creates unfair competitive advantage and breaches fair dealing obligations.",
+        "d": "Overshoots the remedy; an Addendum corrects the error efficiently without requiring complete rebidding.",
+        "correct": "If errors are discovered after bid issuance, the Architect must prepare and distribute a written Addendum to all bidders to ensure equal information.",
+        "takeaway": "Errors in bid documents require written Addendum to all bidders to maintain fairness."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:40b0829c3b0cb2888023a64151f6bff05778941d7bdc29bc87837ffce7f1d68a"
+    },
+    {
+      "question_id": "5bb2b5cd-45f8-4af6-a730-dc886f4f4525",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "If the Architect specifies a material 'or equal' in the Specifications, what is the Contractor's right?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Contractor may use any substitute without seeking approval, provided it meets the general performance criteria outlined in the project specifications"
+        },
+        {
+          "id": "b",
+          "text": "The Contractor may propose a substitute material subject to the Architect's written approval; however, if the substitute fails performance requirements, the Contractor must revert to the specified material at the Contractor's cost"
+        },
+        {
+          "id": "c",
+          "text": "The Contractor must use the specified material only; no substitutes are permitted, ensuring strict adherence to the original design intent"
+        },
+        {
+          "id": "d",
+          "text": "The Owner decides which substitutes are acceptable without Architect involvement, potentially leading to discrepancies in material quality and performance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly permits unilateral substitution; Architect approval is required for all substitutes.",
+        "c": "Contradicts the 'or equal' language; this phrase explicitly permits alternatives to the named material.",
+        "d": "Assigns approval authority to Owner; the Architect (not Owner) evaluates and approves substitute materials.",
+        "correct": "When 'or equal' is specified, the Contractor may propose a substitute subject to Architect approval; if the substitute fails performance requirements, the Contractor must revert to the specified material at no cost to the Owner.",
+        "takeaway": "Or equal means contractor can propose substitutes, but Architect approves and contractor bears risk if substitute fails."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:39140546afb899315d06254760c2c7eff34d9d102090fab20cefe82ce74b1b61"
+    },
+    {
+      "question_id": "fe3e22fa-85cd-4ae3-b22f-0f596e04807a",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What are the primary components that must be included in bid documents to enable contractors to prepare complete, accurate proposals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only Drawings and a budget estimate, which are insufficient for comprehensive bidding"
+        },
+        {
+          "id": "b",
+          "text": "Advertisement, Instructions to Bidders, proposed Agreement, General Conditions, Special Provisions, Drawings, Specifications, and supplemental schedules"
+        },
+        {
+          "id": "c",
+          "text": "Specifications only; Drawings are prepared after bidding, which is not standard practice"
+        },
+        {
+          "id": "d",
+          "text": "List of approved contractors; bidders are selected by the Owner without formal documents, which limits transparency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical components; bid documents must include Instructions, Agreement, General Conditions, and Specifications for complete bidding.",
+        "c": "Reverses the process; Drawings and Specifications are both provided before bidding to enable accurate bids.",
+        "d": "Describes informal, non-competitive selection, not the structured formal bidding process with required documents.",
+        "correct": "Bid documents comprise the complete package: Advertisement, Instructions to Bidders, proposed Agreement, General Conditions, Special Provisions, Drawings, Specifications, and supplemental schedules.",
+        "takeaway": "Bid documents are a complete package including Advertisement, Instructions, Agreement, General Conditions, Drawings, Specifications, and schedules."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb8ee399628e90f3209582d85f8f81df1be26f0529d30c7079c619865bb2b04a"
+    }
+  ]
+}

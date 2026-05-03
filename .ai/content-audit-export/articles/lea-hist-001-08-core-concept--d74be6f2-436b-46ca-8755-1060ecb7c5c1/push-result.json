@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:52:07.670Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+  "slug": "lea-hist-001-08-core-concept",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:13a2d6b919948b71aa4f4446132373868515780c445d9e1ef1e359c8e440a43d",
+  "original_hash": "sha256:13a2d6b919948b71aa4f4446132373868515780c445d9e1ef1e359c8e440a43d",
+  "candidate_hash": "sha256:3b43f37b72c92c4f173a3a6819d3063a20102eb544ba6b2db6ab743088e648ab",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

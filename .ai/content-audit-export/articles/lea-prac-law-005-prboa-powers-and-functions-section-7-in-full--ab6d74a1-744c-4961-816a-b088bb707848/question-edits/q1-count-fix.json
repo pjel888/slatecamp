@@ -1,0 +1,45 @@
+{
+  "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
+  "generated_at": "2026-05-02T23:10:00.000Z",
+  "edit_count": 1,
+  "edits": [
+    {
+      "edit_id": "edit-q1-count-fix-001",
+      "model_id": "ALE-PRAC-LAW-005-001",
+      "question_id": "af782bb3-3ff2-4f17-b655-60337518147a",
+      "edit_type": "correct_answer_update",
+      "description": "Fix incorrect count: Section 7 lists 14 powers (a) through (n), not 13.",
+      "flag_ref": "FLAG 1 and FLAG 3 — powers count error",
+      "fields": {
+        "correct_option_id": "d",
+        "old_correct_option_id": "c"
+      },
+      "options_changes": {
+        "c": {
+          "original_text": "13 powers (from (a) through (n))",
+          "new_text": "13 powers — falls one short of the statutory enumeration"
+        },
+        "d": {
+          "original_text": "15 powers, encompassing both technical and administrative responsibilities",
+          "new_text": "14 powers (from (a) through (n))"
+        }
+      },
+      "rationale_changes": {
+        "correct": {
+          "original": "Section 7 lists powers (a) through (n), creating a 13-part enumeration of Board authority from rulemaking through disciplinary action.",
+          "new": "Section 7 lists powers (a) through (n), creating a 14-part enumeration of Board authority from rulemaking through disciplinary action and additional duties."
+        },
+        "c": {
+          "original": "Thirteen powers would omit several significant Board functions.",
+          "new": "Thirteen powers falls short by one — the statute enumerates 14 powers from (a) through (n)."
+        },
+        "d": {
+          "original": "Fifteen powers exceeds the statute's enumeration.",
+          "new": "Fourteen powers is the correct count matching the (a) through (n) enumeration."
+        }
+      }
+    }
+  ],
+  "status": "proposed",
+  "notes": "The correct answer shifts from option c to option d. Options c and d have been updated to reflect the accurate count of 14 powers."
+}

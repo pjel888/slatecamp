@@ -1,0 +1,119 @@
+{
+  "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+  "slug": "lea-matl-003-04-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.404Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:d78a9c004c8e72c5a37f122b27e3b0c0399666086cec85accaaf92516cac719c",
+  "normalized_content_hash": "e37a5674aea147c09d3e9d65db34fc9f6d8e0f3055d45da2dc1dab2187dc8311",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Alloy 6063 is the undisputed standard for Philippine architectural extrusions because of its exceptional extrudability, smooth anodizable surface, and cost-effectiveness. When you see \"aluminum curtain wall\" on the LEA, assume 6063-T6 unless context suggests otherwise. Type II anodizing is the default for standard architectural applications; only upgrade to Type III if the question emphasizes high-traffic, severe corrosion, or abrasion resistance.</Tip>",
+      "raw_hash": "sha256:5a1cdcd31b012217317d95daf196c9f79901ecd5b177b6d2504a39cd0f3d8cb9",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Alloy 6063 is the undisputed standard for Philippine architectural extrusions because of its exceptional extrudability, smooth anodizable surface, and cost-effectiveness. When you see \"aluminum curtain wall\" on the LEA, assume 6063-T6 unless context suggests otherwise. Type II anodizing is the default for standard architectural applications; only upgrade to Type III if the question emphasizes high-traffic, severe corrosion, or abrasion resistance.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:6c55576fbc365fd0a290c02d7e423e470be30d04733a5d4f3dee8ba3a046ca0f",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Alloy 6063 is the undisputed standard for Philippine architectural extrusions because of its exceptional extrudability, smooth anodizable surface, and cost-effectiveness. When you see \"aluminum curtain wall\" on the LEA, assume 6063-T6 unless context suggests otherwise. Type II anodizing is the default for standard architectural applications; only upgrade to Type III if the question emphasizes high-traffic, severe corrosion, or abrasion resistance.",
+      "children_text": "Alloy 6063 is the undisputed standard for Philippine architectural extrusions because of its exceptional extrudability, smooth anodizable surface, and cost-effectiveness. When you see \"aluminum curtain wall\" on the LEA, assume 6063-T6 unless context suggests otherwise. Type II anodizing is the default for standard architectural applications; only upgrade to Type III if the question emphasizes high-traffic, severe corrosion, or abrasion resistance.",
+      "start_offset": 8340,
+      "end_offset": 8802,
+      "line_start": 92,
+      "line_end": 92,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Confusing Alloy Number with Strength\" body=\"A candidate specifies 3003-H14 for a structural member because the number looks stronger. In reality, 3003 is a decorative alloy with only 110 MPa tensile strength\u2014insufficient for any structural role. 6063-T6 (190 MPa) is the minimum architectural structural alloy.\" />",
+      "raw_hash": "sha256:e59ddeb457c3a234540ea4d5ec76c5e1d72b8e735b6a01ff52f84b971a9686a8",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Confusing Alloy Number with Strength\", body=\"A candidate specifies 3003-H14 for a structural member because the number looks stronger. In reality, 3003 is a decorative alloy with only 110 MPa tensile strength\u2014insufficient for any structural role. 6063-T6 (190 MPa) is the minimum architectural structural alloy.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:5e05af85de22907a4dc46bc6d6c5352f02e21510a1bd8c8c1f366336e42758b0",
+      "props": {
+        "title": "Confusing Alloy Number with Strength",
+        "body": "A candidate specifies 3003-H14 for a structural member because the number looks stronger. In reality, 3003 is a decorative alloy with only 110 MPa tensile strength\u2014insufficient for any structural role. 6063-T6 (190 MPa) is the minimum architectural structural alloy."
+      },
+      "props_json": {
+        "title": "Confusing Alloy Number with Strength",
+        "body": "A candidate specifies 3003-H14 for a structural member because the number looks stronger. In reality, 3003 is a decorative alloy with only 110 MPa tensile strength\u2014insufficient for any structural role. 6063-T6 (190 MPa) is the minimum architectural structural alloy."
+      },
+      "props_text": "title=\"Confusing Alloy Number with Strength\" body=\"A candidate specifies 3003-H14 for a structural member because the number looks stronger. In reality, 3003 is a decorative alloy with only 110 MPa tensile strength\u2014insufficient for any structural role. 6063-T6 (190 MPa) is the minimum architectural structural alloy.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8824,
+      "end_offset": 9162,
+      "line_start": 96,
+      "line_end": 96,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Anodizing as a Standalone Corrosion Barrier\" body=\"A design relies on Type I anodizing (5 \u00b5m film) for a coastal residential building. Type I provides only minimal protection; Type II (10\u201325 \u00b5m) is the minimum standard for architectural exposure, and Type III (25\u201375 \u00b5m) is required for harsh marine environments. The building faces premature corrosion failure.\" />",
+      "raw_hash": "sha256:482f05e80586fbeecb959becd50f92f819544426303c124a62893a11beab90ea",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Anodizing as a Standalone Corrosion Barrier\", body=\"A design relies on Type I anodizing (5 \u00b5m film) for a coastal residential building. Type I provides only minimal protection; Type II (10\u201325 \u00b5m) is the minimum standard for architectural exposure, and Type III (25\u201375 \u00b5m) is required for harsh marine environments. The building faces premature corrosion failure.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:456edf7bcc2270a67d821cfc64a63285d7287661e324f57b1dff9745b044f67e",
+      "props": {
+        "title": "Anodizing as a Standalone Corrosion Barrier",
+        "body": "A design relies on Type I anodizing (5 \u00b5m film) for a coastal residential building. Type I provides only minimal protection; Type II (10\u201325 \u00b5m) is the minimum standard for architectural exposure, and Type III (25\u201375 \u00b5m) is required for harsh marine environments. The building faces premature corrosion failure."
+      },
+      "props_json": {
+        "title": "Anodizing as a Standalone Corrosion Barrier",
+        "body": "A design relies on Type I anodizing (5 \u00b5m film) for a coastal residential building. Type I provides only minimal protection; Type II (10\u201325 \u00b5m) is the minimum standard for architectural exposure, and Type III (25\u201375 \u00b5m) is required for harsh marine environments. The building faces premature corrosion failure."
+      },
+      "props_text": "title=\"Anodizing as a Standalone Corrosion Barrier\" body=\"A design relies on Type I anodizing (5 \u00b5m film) for a coastal residential building. Type I provides only minimal protection; Type II (10\u201325 \u00b5m) is the minimum standard for architectural exposure, and Type III (25\u201375 \u00b5m) is required for harsh marine environments. The building faces premature corrosion failure.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9164,
+      "end_offset": 9553,
+      "line_start": 98,
+      "line_end": 98,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList items={[\"Assuming all non-ferrous metals are 'corrosion-proof'\u2014copper oxidizes (patina), zinc can corrode, and unprotected aluminum is vulnerable in wet/coastal conditions.\", \"Omitting isolation methods when dissimilar metals contact\u2014a stainless steel bolt connecting an aluminum extrusion to a copper component risks galvanic corrosion without EPDM or nylon separation.\", \"Specifying 6063-T5 for load-bearing members when T6 strength is required, or over-specifying T6 when T5 cost savings are acceptable for non-structural trim.\", \"Failing to account for Philippine coastal or high-humidity environments when selecting anodizing type\u2014tropical climates demand more aggressive surface protection than temperate regions.\"]} />",
+      "raw_hash": "sha256:2e5f7098f5ea777a82f64c9254241fe10acda896ad258f219136554fab8bec19",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[\\\"Assuming all non-ferrous metals are 'corrosion-proof'\u2014copper oxidizes (patina), zinc can corrode, and unprotected aluminum is vulnerable in wet/coastal conditions.\\\", \\\"Omitting isolation methods when dissimilar metals contact\u2014a stainless steel bolt connecting an aluminum extrusion to a copper component risks galvanic corrosion without EPDM or nylon separation.\\\", \\\"Specifying 6063-T5 for load-bearing members when T6 strength is required, or over-specifying T6 when T5 cost savings are acceptable for non-structural trim.\\\", \\\"Failing to account for Philippine coastal or high-humidity environments when selecting anodizing type\u2014tropical climates demand more aggressive surface protection than temperate regions.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a92510e57393c848f7ba86addddf629952b10c774d1e79cf0e66730fc8eda8c5",
+      "props": {
+        "items": "{[\"Assuming all non-ferrous metals are 'corrosion-proof'\u2014copper oxidizes (patina), zinc can corrode, and unprotected aluminum is vulnerable in wet/coastal conditions.\", \"Omitting isolation methods when dissimilar metals contact\u2014a stainless steel bolt connecting an aluminum extrusion to a copper component risks galvanic corrosion without EPDM or nylon separation.\", \"Specifying 6063-T5 for load-bearing members when T6 strength is required, or over-specifying T6 when T5 cost savings are acceptable for non-structural trim.\", \"Failing to account for Philippine coastal or high-humidity environments when selecting anodizing type\u2014tropical climates demand more aggressive surface protection than temperate regions.\"]}"
+      },
+      "props_json": {
+        "items": "{[\"Assuming all non-ferrous metals are 'corrosion-proof'\u2014copper oxidizes (patina), zinc can corrode, and unprotected aluminum is vulnerable in wet/coastal conditions.\", \"Omitting isolation methods when dissimilar metals contact\u2014a stainless steel bolt connecting an aluminum extrusion to a copper component risks galvanic corrosion without EPDM or nylon separation.\", \"Specifying 6063-T5 for load-bearing members when T6 strength is required, or over-specifying T6 when T5 cost savings are acceptable for non-structural trim.\", \"Failing to account for Philippine coastal or high-humidity environments when selecting anodizing type\u2014tropical climates demand more aggressive surface protection than temperate regions.\"]}"
+      },
+      "props_text": "items={[\"Assuming all non-ferrous metals are 'corrosion-proof'\u2014copper oxidizes (patina), zinc can corrode, and unprotected aluminum is vulnerable in wet/coastal conditions.\", \"Omitting isolation methods when dissimilar metals contact\u2014a stainless steel bolt connecting an aluminum extrusion to a copper component risks galvanic corrosion without EPDM or nylon separation.\", \"Specifying 6063-T5 for load-bearing members when T6 strength is required, or over-specifying T6 when T5 cost savings are acceptable for non-structural trim.\", \"Failing to account for Philippine coastal or high-humidity environments when selecting anodizing type\u2014tropical climates demand more aggressive surface protection than temperate regions.\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9555,
+      "end_offset": 10297,
+      "line_start": 100,
+      "line_end": 100,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:60ed77c8a282d7ac8c8e311faa94339bc95d7cf0d6139332c66d6a2b16378dc2"
+}

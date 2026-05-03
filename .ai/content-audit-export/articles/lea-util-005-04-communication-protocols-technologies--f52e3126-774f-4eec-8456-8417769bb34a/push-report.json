@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-03T07:52:18.273Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "diff-report.json marks candidate unsafe.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+  "slug": "lea-util-005-04-communication-protocols-technologies",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:055a0212390987910a2d2b6602dbe64a2a1ee5a5b7e44ad3491c124c5676a742",
+  "original_hash": "sha256:055a0212390987910a2d2b6602dbe64a2a1ee5a5b7e44ad3491c124c5676a742",
+  "candidate_hash": "sha256:0d4caed8a3bdf3745bbeb94ca118ea532cb1faed5e5df32f10d006d3b419c55e",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

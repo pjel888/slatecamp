@@ -1,0 +1,1636 @@
+{
+  "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:3b435e3f53f11fbd7efe0ea91da3c59671966a417572f1f019af4464fcda3020",
+  "question_count": 37,
+  "questions": [
+    {
+      "question_id": "a5605b5d-36c6-42ab-a2d3-09d452ffca60",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A boarding house operator wants to use a room measuring 4.00 m × 3.00 m with a 2.40 m ceiling as a dormitory-style habitable room. Per Section 807(c), what is the MAXIMUM number of persons that may legally occupy this room?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 person"
+        },
+        {
+          "id": "b",
+          "text": "2 persons"
+        },
+        {
+          "id": "c",
+          "text": "3 persons"
+        },
+        {
+          "id": "d",
+          "text": "4 persons"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This question tests the ability to derive occupancy density from the air space standard. The volumetric minimum (14.00 cu.m/person) operates as an occupancy LIMITE — you can have fewer people but not more. The floor area minimum (6.00 sq.m) and least dimension (2.00 m) are separate geometric minimums. This room meets the area minimum (12 sq.m > 6 sq.m) and dimension minimum, but the air space limit restricts occupancy to 2 persons.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5f64f3225ddde50344e7a2459f5b137b8ba0fb7542d647e3e8cd5af41e087e63"
+    },
+    {
+      "question_id": "ba5efc1a-a888-40c9-9964-035a2b5dd082",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per Section 811, what is the minimum total FREE AREA of window openings required for a naturally ventilated habitable room with a floor area of 9.00 sq.m?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.45 sq.m"
+        },
+        {
+          "id": "b",
+          "text": "0.90 sq.m"
+        },
+        {
+          "id": "c",
+          "text": "1.00 sq.m"
+        },
+        {
+          "id": "d",
+          "text": "1.35 sq.m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The two-part rule (percentage + absolute minimum) applies to both habitable rooms (10%, min 1.00 sq.m) and wet rooms (5%, min 240 sq mm). For wet rooms, even a very small bathroom with 0.20 sq.m floor area must have at least 240 sq mm of window opening.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a1654ed3fba369f63ca225c44b43c59dbb5b765499b78589df99e6ddabc98cb6"
+    },
+    {
+      "question_id": "64cba10b-080e-476a-9fe6-0e58cd600c51",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum ceiling height for the THIRD STOREY and ABOVE of a multi-storey building with artificial ventilation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.40 m"
+        },
+        {
+          "id": "b",
+          "text": "2.70 m"
+        },
+        {
+          "id": "c",
+          "text": "2.10 m"
+        },
+        {
+          "id": "d",
+          "text": "1.80 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The descending ceiling height chain: 2.70 m (first floor / natural vent) → 2.40 m (second floor / single-storey) → 2.10 m (third floor and above) → 1.80 m (mezzanine clearance). Option A (2.40 m) is the second storey minimum. Option D (1.80 m) is the mezzanine clearance. The progressive reduction is the key memory structure.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bda1cfeb69fc964b7b388180e63125e5fe7fd553582ec87e49d8cc8e046ba0da"
+    },
+    {
+      "question_id": "b74d0dc7-3d9d-48de-83ae-1b9c1b93cc34",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum ceiling height for the FIRST STOREY of a MULTI-STOREY building with artificial (mechanical) ventilation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.40 m"
+        },
+        {
+          "id": "b",
+          "text": "2.70 m"
+        },
+        {
+          "id": "c",
+          "text": "2.10 m"
+        },
+        {
+          "id": "d",
+          "text": "3.00 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This question is frequently confused with the single-storey artificial ventilation minimum (2.40 m). The first floor of multi-storey artificially ventilated buildings requires 2.70 m — the same as natural ventilation. The elevated requirement for the first storey reflects its higher occupant density and functional complexity compared to upper residential floors.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dfde575b852b9c90c75f97f20f1a86cbaa46137fa78d32ad451346ff7b5addba"
+    },
+    {
+      "question_id": "658c86c0-033b-4076-a164-4f9f340d076d",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 807, what is the minimum AIR SPACE per person for habitable rooms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.00 cu.m per person"
+        },
+        {
+          "id": "b",
+          "text": "12.00 cu.m per person"
+        },
+        {
+          "id": "c",
+          "text": "14.00 cu.m per person"
+        },
+        {
+          "id": "d",
+          "text": "20.00 cu.m per person"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The three-tier air space hierarchy: 3.00 cu.m (schools) < 12.00 cu.m (offices/workshops) < 14.00 cu.m (habitable rooms). The habitable room standard is the highest because unconscious occupants during sleep are most vulnerable to CO₂ accumulation. The IBC/ASHRAE uses airflow rate (cfm) instead of volumetric standards — a key PH vs. USA distinction.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1c3056185d8a909c772cc59f4552fc69436c894c285782ccc7c7083cde607949"
+    },
+    {
+      "question_id": "02b7d88c-9cd9-490d-bee9-e99f8ea295d0",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 805, what is the minimum ceiling height for a habitable room with NATURAL ventilation in a single-storey building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.40 m"
+        },
+        {
+          "id": "b",
+          "text": "2.70 m"
+        },
+        {
+          "id": "c",
+          "text": "3.00 m"
+        },
+        {
+          "id": "d",
+          "text": "2.10 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A (2.40 m) is the artificial ventilation minimum for single-storey buildings — the most common trap. The natural ventilation standard is universally 2.70 m regardless of storey. The exam frequently swaps 'single-storey' with 'multi-storey first floor' to trigger this confusion — both require 2.70 m, but for different reasons.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed2e522a7cc1bafcae045594871001ea7f5215ee0eedce0c7f2b663d06391b11"
+    },
+    {
+      "question_id": "ec35cf94-47a4-4c0a-b302-abea950df2f9",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A room of 6.50 sq.m with a 2.10 m ceiling is proposed as a habitable room for one person. Per Sections 806 and 807, does this room meet the requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes — 6.50 sq.m exceeds the 6.00 sq.m minimum and 2.10 m ceiling is acceptable"
+        },
+        {
+          "id": "b",
+          "text": "No — the 2.10 m ceiling fails the minimum ceiling height requirement for habitable rooms"
+        },
+        {
+          "id": "c",
+          "text": "No — the room volume of 13.65 cu.m is below the 14.00 cu.m minimum air space per person"
+        },
+        {
+          "id": "d",
+          "text": "No — the 6.50 sq.m floor area is too large for a single person"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This question forces candidates to check ALL three standards independently: floor area (Sec. 806), ceiling height (Sec. 805), and air space (Sec. 807). A room can pass two standards and fail the third. The 6.50 sq.m / 2.10 m combination fails air space even though it passes area and might pass ceiling height. The lesson: always check every applicable standard independently.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a57135f4090aa5be0a12a6d4e5ffbe13769c045b9afd5593a90434c8a12211d2"
+    },
+    {
+      "question_id": "ddc472c4-f686-4109-a605-fa711af4cbf3",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A room with artificial ventilation in a SINGLE-STORY building requires what minimum ceiling height per Section 805?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.70 m"
+        },
+        {
+          "id": "b",
+          "text": "2.40 m"
+        },
+        {
+          "id": "c",
+          "text": "2.10 m"
+        },
+        {
+          "id": "d",
+          "text": "3.00 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The CHAIN mnemonic: C → 2.40 m Ceiling height for artificial vent (single-storey or 2nd floor); H → 2.70 m Height for natural vent and first floor of multi-storey; A → 2.10 m Above second floor; I → 1.80 m In mezzanine. The 2.40 m single-storey artificial vent is the baseline minimum, not the 2.70 m.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3851907f727859fcf406ceef016b654566fee3d18594e9fb032f8ada4fb23b88"
+    },
+    {
+      "question_id": "d4c64da6-538a-4598-b181-b28685dd8846",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A developer is designing a two-storey residential condominium with a centralized air-conditioning system serving all units. Per PD 1096 Rule VIII, Section 805, what is the minimum ceiling height for a typical bedroom unit on the SECOND floor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.10 m"
+        },
+        {
+          "id": "b",
+          "text": "2.40 m"
+        },
+        {
+          "id": "c",
+          "text": "2.70 m"
+        },
+        {
+          "id": "d",
+          "text": "1.80 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The tiered ceiling height standard for multi-storey artificially ventilated buildings is frequently tested. Candidates must distinguish: (1) 2.70 m for natural ventilation ALL floors; (2) 2.70 m for FIRST floor of multi-storey artificial vent; (3) 2.40 m for SECOND floor; (4) 2.10 m for THIRD floor and above. The second-floor minimum is the same as single-storey artificial ventilation.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:682f154d68eac7153b919c4c45829b8486805bd8cfe799c6e3d2cba8fc44440e"
+    },
+    {
+      "question_id": "9001b08a-4302-4112-b194-37e88f05a662",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 805, paragraph 2, what are the minimum CLEAR ceiling heights for a mezzanine floor (both above AND below the mezzanine slab)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.50 m above and 1.50 m below"
+        },
+        {
+          "id": "b",
+          "text": "1.80 m above and 1.80 m below"
+        },
+        {
+          "id": "c",
+          "text": "2.10 m above and 2.10 m below"
+        },
+        {
+          "id": "d",
+          "text": "2.40 m above and 2.40 m below"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 1.80 m clearance applies to BOTH sides of the mezzanine. Option A (1.50 m) is a confusion with other minimum thresholds. Option C (2.10 m) is the minimum headroom for the third storey and above. Option D (2.40 m) is the ceiling height for artificially ventilated rooms on the second floor. The IBC requires 7 ft (2.13 m) below the mezzanine — 330 mm more than the Philippine requirement.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.569927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26c1f801f1cebfb07c966c1a9cd835072ad011646b65c883227df05d1547a1ee"
+    },
+    {
+      "question_id": "8396e018-430e-432e-be37-7e2d8f27ea74",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 805, what is the minimum ceiling height for a mezzanine floor, and what specific dimension must be verified on BOTH the upper and lower levels?",
+      "options": [
+        {
+          "id": "lv-018-a",
+          "text": "1.80 m clear above and below — both levels must be verified"
+        },
+        {
+          "id": "lv-018-b",
+          "text": "2.40 m clear above and below — both levels must be verified"
+        },
+        {
+          "id": "lv-018-c",
+          "text": "1.80 m clear above only — the lower level is not regulated"
+        },
+        {
+          "id": "lv-018-d",
+          "text": "2.00 m clear above and below — both levels must be verified"
+        }
+      ],
+      "correct_option_id": "lv-018-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The double-check requirement for mezzanines means that the total floor-to-floor height must be at least 3.60 m (1.80 m above + 1.80 m below) — plus structural floor thickness. A developer who wants a mezzanine in a 3.00 m floor-to-floor building cannot do so in compliance with Rule VIII.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:784e39955f2329666b12709a890c196a524a0ed43ad0e9a1e3962560011621ca"
+    },
+    {
+      "question_id": "93754360-2b5e-4017-8796-f072e145d4c8",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 805, what are the minimum ceiling heights for rooms with natural ventilation, rooms with artificial ventilation, and mezzanine floors?",
+      "options": [
+        {
+          "id": "lv-002-a",
+          "text": "Natural: 2.70 m; Artificial: 2.40 m; Mezzanine: 1.80 m clear above and below"
+        },
+        {
+          "id": "lv-002-b",
+          "text": "Natural: 2.40 m; Artificial: 2.70 m; Mezzanine: 1.50 m clear above and below"
+        },
+        {
+          "id": "lv-002-c",
+          "text": "Natural: 2.70 m; Artificial: 2.70 m; Mezzanine: 1.80 m clear above and below"
+        },
+        {
+          "id": "lv-002-d",
+          "text": "Natural: 2.50 m; Artificial: 2.40 m; Mezzanine: 2.00 m clear above and below"
+        }
+      ],
+      "correct_option_id": "lv-002-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "You cannot 'borrow' the lower artificial-ventilation ceiling standard for naturally ventilated rooms. If a room relies on natural ventilation, the minimum ceiling is 2.70 m on every floor — this is a common Trap Alert.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:074e1cf842b2645e0d064faf7317731a8805cd63f2453511608035762b6e5493"
+    },
+    {
+      "question_id": "82ddc730-b980-4e97-a5f6-ea52fb5e7059",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 805, which statement correctly describes the ceiling height requirement for naturally ventilated rooms in a three-storey building?",
+      "options": [
+        {
+          "id": "lv-012-a",
+          "text": "First floor 2.70 m; second floor 2.40 m; upper floors 2.10 m (the multi-storey cascade) with no exceptions for natural ventilation"
+        },
+        {
+          "id": "lv-012-b",
+          "text": "All floors: 2.70 m minimum for naturally ventilated rooms — no cascade applies to the natural ventilation minimum"
+        },
+        {
+          "id": "lv-012-c",
+          "text": "First floor 2.70 m; upper floors may reduce to 2.40 m if mechanical ventilation is available in corridors, ensuring adequate air circulation"
+        },
+        {
+          "id": "lv-012-d",
+          "text": "All floors: 2.40 m minimum regardless of ventilation type, providing a uniform standard across the building"
+        }
+      ],
+      "correct_option_id": "lv-012-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This question distinguishes between code text and reviewer heuristics. The board exam tests whether candidates can correctly cite the code versus repeat common lecture approximations. The cascade (2.70 → 2.40 → 2.10) exists in some review materials but is not the codified standard.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e046775c51695bf849928699f4691bdd452635934ac3f0031ebb1c8206a7f129"
+    },
+    {
+      "question_id": "a5d4ccae-043d-4145-8dc9-63535a4a36f9",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 807, what is the minimum air space required per person for school rooms, workshops/factories/offices, and habitable rooms, and what mnemonic assists recall?",
+      "options": [
+        {
+          "id": "lv-003-a",
+          "text": "School: 3.00 cu.m; Workshop: 12.00 cu.m; Habitable: 14.00 cu.m — mnemonic: '3-12-14: School, Work, Home'"
+        },
+        {
+          "id": "lv-003-b",
+          "text": "School: 5.00 cu.m; Workshop: 15.00 cu.m; Habitable: 20.00 cu.m — mnemonic: '5-15-20: School, Work, Home'"
+        },
+        {
+          "id": "lv-003-c",
+          "text": "School: 3.00 cu.m; Workshop: 10.00 cu.m; Habitable: 12.00 cu.m — mnemonic: '3-10-12: School, Work, Home'"
+        },
+        {
+          "id": "lv-003-d",
+          "text": "School: 4.00 cu.m; Workshop: 12.00 cu.m; Habitable: 16.00 cu.m — mnemonic: '4-12-16: School, Work, Home'"
+        }
+      ],
+      "correct_option_id": "lv-003-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Worked example from the article: 60 sq.m school room at 3.00 m ceiling height → volume 180 cu.m → 180/3 = 60 students max. At 2.70 m ceiling → 162 cu.m → 162/3 = 54 students. The air space calculation determines maximum occupancy independent of floor area ratios.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e6385b3e218b7d40a96d4c896879b4ac92cc3842e73fe087b872fa44886f606"
+    },
+    {
+      "question_id": "f8cb0fd3-ca78-403d-8a32-07f4c0ab8533",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 807, a school room has a floor area of 60.00 sq.m and a ceiling height of 3.00 m. What is the maximum legal occupancy by air space, and what is it by floor area at 1.00 sq.m per student?",
+      "options": [
+        {
+          "id": "lv-015-a",
+          "text": "By air space: 60 students; by floor area: 60 students"
+        },
+        {
+          "id": "lv-015-b",
+          "text": "By air space: 60 students; by floor area: 50 students"
+        },
+        {
+          "id": "lv-015-c",
+          "text": "By air space: 55 students; by floor area: 60 students"
+        },
+        {
+          "id": "lv-015-d",
+          "text": "By air space: 50 students; by floor area: 60 students"
+        }
+      ],
+      "correct_option_id": "lv-015-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This worked example demonstrates when each constraint binds: at higher ceilings, floor area may be the binding constraint; at lower ceilings (approaching 2.70 m), air space becomes the binding constraint. The candidate must calculate both and use the more restrictive.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e61281c561409369dd5a625bd0d8ccfb0f1c3f2767eb4a8b0be5375b98a9ff8"
+    },
+    {
+      "question_id": "54fa45bb-0cfb-40e2-b23f-ba61d5b78e49",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 1606 (2004 IRR), plastic light diffusers in a ceiling are found to cover 12% of a 10.00 sq.m office room. Which statement correctly applies the diffuser rule?",
+      "options": [
+        {
+          "id": "pl-006-a",
+          "text": "The diffuser rule is not triggered because the room area exceeds 10.00 sq.m and diffuser coverage remains below the percentage threshold"
+        },
+        {
+          "id": "pl-006-b",
+          "text": "The diffuser rule is triggered because 12% of 10.00 sq.m equals 1.20 sq.m, which exceeds the 1.00 sq.m threshold; approved plastics are required"
+        },
+        {
+          "id": "pl-006-c",
+          "text": "The diffuser rule is triggered only in sprinklered buildings where fire suppression systems are already installed and operational"
+        },
+        {
+          "id": "pl-006-d",
+          "text": "The diffuser rule is never triggered for office occupancies under PD 1096 regardless of diffuser area or ceiling coverage percentage"
+        }
+      ],
+      "correct_option_id": "pl-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 10% of 10 sq.m = 1.00 sq.m threshold is a frequently tested calculation. The thermal stability test (65°C for 15 minutes) is a separate requirement that applies once the rule is triggered.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.702597+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff63ce53547a80237aa0dffd26a98f8f631d0341bb7800db5fdf4109f5662524"
+    },
+    {
+      "question_id": "b0bb7690-f58b-42ee-a4fd-f9e36e72c339",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214.2, what are the minimum ceiling height and fire-resistive rating for a motion picture projection room?",
+      "options": [
+        {
+          "id": "sp-014-a",
+          "text": "2.10 m ceiling height; 2-hour fire-resistive construction throughout"
+        },
+        {
+          "id": "sp-014-b",
+          "text": "2.40 m ceiling height; 1-hour fire-resistive construction throughout"
+        },
+        {
+          "id": "sp-014-c",
+          "text": "2.40 m ceiling height; 2-hour fire-resistive construction throughout"
+        },
+        {
+          "id": "sp-014-d",
+          "text": "2.70 m ceiling height; 1-hour fire-resistive construction throughout"
+        }
+      ],
+      "correct_option_id": "sp-014-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2.40 m ceiling height ensures adequate volume for ventilation and equipment clearance. The 1-hour fire-resistive rating reflects the fire hazard of the projection equipment and film stock while recognizing that the room is typically a small ancillary space within a larger fire-resistive building. Note that the proscenium wall (Sec. 1213.4) requires 2-hour rating — do not confuse the two requirements.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d98562194efb849f707cb99edd79abd7b6b6fe0cbbe9199cf4564bdc97de390"
+    },
+    {
+      "question_id": "f4e27925-cce8-44c6-a8f0-9206def950bc",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An architect designs a bathroom measuring 1.00 m × 1.30 m (1.30 sq.m) and installs a 200 sq.mm operable louvre for ventilation. Under Rule VIII, which requirement does this bathroom violate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Floor area only — 1.30 sq.m fails the 1.50 sq.m minimum for wet rooms"
+        },
+        {
+          "id": "b",
+          "text": "Ventilation only — the 200 sq.mm louvre is below the 240 sq.mm absolute minimum for wet rooms"
+        },
+        {
+          "id": "c",
+          "text": "Dimension only — the 1.00 m width is below the 1.20 m minimum horizontal dimension for bathrooms"
+        },
+        {
+          "id": "d",
+          "text": "Both floor area and ventilation — 1.30 sq.m fails the 1.50 sq.m minimum and 200 sq.mm fails the opening minimum"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Bathroom requirements: floor area ≥1.20 sq.m (this bathroom has 1.30 sq.m — PASSES); minimum dimension ≥900 mm (1.00 m × 1.30 m — both sides exceed 900 mm — PASSES); ventilation opening ≥5% of floor area with absolute minimum 240 sq.mm for wet rooms. At 200 sq.mm the louvre is below the 240 sq.mm absolute minimum — FAILS ventilation only. Option C is wrong: 900 mm, not 1.20 m, is the minimum dimension for bathrooms. Option A uses the wrong area threshold (1.50 sq.m is for kitchens in dimension, not bathrooms).",
+      "explanation": "Bathroom dimension minimum is 900 mm, not 1.20 m. Wet room ventilation minimum is 240 sq.mm absolute. This question tests whether candidates correctly apply bathroom-specific thresholds rather than defaulting to habitable room standards.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806, 808",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8cf7629e51ed7afe6f09dfcea137c73f6d1ddb9327b0ac6614dca0cc377fc134"
+    },
+    {
+      "question_id": "44efd846-6c7d-469f-8eef-67b0837f5b55",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A single-storey house uses window-type air conditioning units throughout (artificial ventilation). Under Rule VIII, which minimum ceiling height correctly applies to ALL rooms in this building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.70 m — the natural ventilation standard applies regardless of system type"
+        },
+        {
+          "id": "b",
+          "text": "2.10 m — the minimum for any artificially ventilated space in the Philippines"
+        },
+        {
+          "id": "c",
+          "text": "2.40 m — the reduced minimum for single-storey artificially ventilated buildings"
+        },
+        {
+          "id": "d",
+          "text": "2.00 m — the Code allows any height above human standing clearance for cooled spaces"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 805 permits a reduced ceiling height of 2.40 m for single-storey buildings with artificial ventilation. This is less than the 2.70 m required for natural ventilation. The 2.10 m minimum applies only to the 3rd floor and above in artificially ventilated multi-storey buildings. For a single-storey artificially ventilated building, 2.40 m is the correct minimum.",
+      "explanation": "Single-storey + artificial ventilation = 2.40 m minimum. Multi-storey + artificial ventilation = staggered 2.70/2.40/2.10. The 2.10 m figure only applies to 3rd floor and above in multi-storey artificially ventilated buildings — not to single-storey structures.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e564eb721a63797af09d7f44765a4f551f232b6d9d0974b7913075a7ebd5bf12"
+    },
+    {
+      "question_id": "84242c90-2798-4184-8b81-cfb270542c8c",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A kitchen measures 2.80 m × 0.90 m (2.52 sq.m) and a bathroom measures 1.10 m × 1.00 m (1.10 sq.m). Which Rule VIII assessment is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both rooms comply: kitchen exceeds 2.50 sq.m and bathroom exceeds 1.00 sq.m, meeting the minimum area requirements"
+        },
+        {
+          "id": "b",
+          "text": "Kitchen fails area (min 3.00 sq.m) and dimension (min 1.50 m); bathroom fails area (min 1.20 sq.m) only"
+        },
+        {
+          "id": "c",
+          "text": "Kitchen complies; bathroom fails only the 900 mm dimension minimum, which is critical for accessibility"
+        },
+        {
+          "id": "d",
+          "text": "Both rooms fail the 2.00 m minimum horizontal dimension required for all wet rooms, impacting usability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Kitchen minimums: 3.00 sq.m AND 1.50 m minimum dimension. This kitchen is 2.52 sq.m (fails area) and 0.90 m wide (fails dimension — both violations). Bathroom minimums: 1.20 sq.m AND 900 mm minimum dimension. This bathroom is 1.10 sq.m (fails area) but measures 1.00 m × 1.10 m (both sides exceed 900 mm — passes dimension). Both rooms fail, but for different reasons.",
+      "explanation": "Always check BOTH criteria — area AND dimension — independently for each room type. Kitchen: 3.00 sq.m / 1.50 m. Bathroom: 1.20 sq.m / 900 mm. The 2.00 m dimension minimum belongs only to habitable rooms, not wet rooms.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c3655e8ac57aa7c46f52893cb5c4712d8edc384d815322fa3530f2b783b2196"
+    },
+    {
+      "question_id": "83e05bda-830d-4557-976c-762ca9969865",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A mezzanine floor is inserted within a high-ceilinged commercial space. Under Rule VIII, what are the required MINIMUM clear heights both ABOVE and BELOW the mezzanine floor level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.40 m above and 2.40 m below the mezzanine floor level"
+        },
+        {
+          "id": "b",
+          "text": "2.10 m above and 2.10 m below the mezzanine floor level"
+        },
+        {
+          "id": "c",
+          "text": "1.80 m above and 1.80 m below the mezzanine floor level"
+        },
+        {
+          "id": "d",
+          "text": "2.70 m above and 2.40 m below the mezzanine floor level"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Rule VIII specifies that a mezzanine must have a minimum clear height of 1.80 m both above it (from mezzanine floor to ceiling) and below it (from main floor to underside of mezzanine). This 1.80 m standard applies equally to both zones. Options A and B use figures from other ceiling height rules. Option D mixes two unrelated standards.",
+      "explanation": "1.80 m above AND 1.80 m below — both thresholds are identical and apply simultaneously. A mezzanine insertion only complies if both zones clear this minimum.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:36e8eefb5c80f5de23381a49b6ff67e5ff530b09b836f49e2e13409f8d07e9c1"
+    },
+    {
+      "question_id": "5daa649f-2caa-4db1-852d-e3d93e91d7e4",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule VIII of PD 1096, what is the minimum floor area AND minimum horizontal dimension for a general habitable room such as a bedroom or living room?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4.00 sq.m floor area with a minimum dimension of 1.50 m on any side"
+        },
+        {
+          "id": "b",
+          "text": "6.00 sq.m floor area with a minimum horizontal dimension of 2.00 m on any side"
+        },
+        {
+          "id": "c",
+          "text": "5.00 sq.m floor area with a minimum dimension of 1.80 m on any side"
+        },
+        {
+          "id": "d",
+          "text": "8.00 sq.m floor area with a minimum horizontal dimension of 2.40 m on any side"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 806 establishes that habitable rooms must have a minimum floor area of 6.00 sq.m AND a minimum horizontal dimension of 2.00 m. Both conditions must be satisfied simultaneously. Options A, C, and D use dimensions not found in the Code.",
+      "explanation": "The 6.00 sq.m / 2.00 m standards apply to habitable rooms. Compare: kitchen = 3.00 sq.m / 1.50 m; bathroom = 1.20 sq.m / 900 mm. Each room type has its own distinct minimums.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:357c3f2e4dcf31123f2581360b4d2eeae64d16cc3fdf56c3f3a4101ac4d17624"
+    },
+    {
+      "question_id": "9c4f9a4c-3134-496f-addb-11c64caa7ed4",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Rule VIII specifies different minimum air space standards per occupant for schools, offices, and general habitable rooms. What are the correct values for each category?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schools: 6 cu.m/person; Offices: 10 cu.m/person; Habitable rooms: 12 cu.m/person"
+        },
+        {
+          "id": "b",
+          "text": "Schools: 14 cu.m/person; Offices: 12 cu.m/person; Habitable rooms: 3 cu.m/person"
+        },
+        {
+          "id": "c",
+          "text": "Schools: 3 cu.m/person + 1 sq.m/person; Offices: 12 cu.m/person; Habitable rooms: 14 cu.m/person"
+        },
+        {
+          "id": "d",
+          "text": "Schools: 3 cu.m/person; Offices: 14 cu.m/person; Habitable rooms: 12 cu.m/person"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Rule VIII establishes three distinct occupancy-specific air space standards: (1) Schools = 3.00 cu.m per person PLUS an additional floor area requirement of 1.00 sq.m per person; (2) Offices = 12.00 cu.m per person; (3) Habitable rooms = 14.00 cu.m per person. Option B inverts the school and habitable room values. Options A and D use unsupported figures.",
+      "explanation": "Three standards to memorize: Schools = 3 cu.m + 1 sq.m per person (dual criteria); Offices = 12 cu.m/person; Habitable = 14 cu.m/person. Schools uniquely have both a volumetric AND a floor-area requirement applied simultaneously.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b03aa6e4e1827f4d0e1e5402d830553c702f1a568aa723ecc702848e7f23049a"
+    },
+    {
+      "question_id": "0b81eade-47c3-421a-90cb-8cf64be6283f",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule VIII, what minimum window opening area is required for a naturally ventilated habitable room with a floor area of 12.00 sq.m?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.60 sq.m — 5% of floor area is the standard for all room types"
+        },
+        {
+          "id": "b",
+          "text": "1.20 sq.m — 10% of floor area; absolute minimum is 1.00 sq.m"
+        },
+        {
+          "id": "c",
+          "text": "1.80 sq.m — 15% of floor area for rooms larger than 10.00 sq.m"
+        },
+        {
+          "id": "d",
+          "text": "0.96 sq.m — 8% of floor area based on the combined light and ventilation standard"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 808 requires window openings for habitable rooms equal to at least 10% of the floor area, with an absolute minimum of 1.00 sq.m. For a 12.00 sq.m room: 10% × 12.00 = 1.20 sq.m, which exceeds the absolute minimum of 1.00 sq.m. So 1.20 sq.m governs. The 5% standard applies only to wet service rooms (bathrooms, toilets), not habitable rooms.",
+      "explanation": "Habitable rooms: 10% of floor area, absolute minimum 1.00 sq.m. Wet rooms: 5% of floor area, absolute minimum 240 sq.mm. For large rooms the percentage governs; for small rooms the absolute minimum may govern instead.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 808",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:54c1869b5ff45876c935e582bdba856e18674514aac0e5483741ca26921ec2d5"
+    },
+    {
+      "question_id": "b9fa7052-9f99-4f9c-b30a-fe6e6d4cadbc",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A school classroom has a floor area of 48 sq.m and a ceiling height of 2.70 m. Applying BOTH Rule VIII criteria for schools (air space and floor area), what is the maximum legal occupancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "48 pupils — floor area criterion (1 sq.m/person) is the sole governing limit"
+        },
+        {
+          "id": "b",
+          "text": "43 pupils — air space criterion (3 cu.m/person) is more restrictive and governs"
+        },
+        {
+          "id": "c",
+          "text": "36 pupils — the average of both criteria must be used when two limits conflict"
+        },
+        {
+          "id": "d",
+          "text": "16 pupils — volume is divided by 3 cu.m/person without applying the floor area check"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Apply both criteria: Air space limit: volume = 48 × 2.70 = 129.6 cu.m; 129.6 ÷ 3.00 = 43.2 → 43 pupils. Floor area limit: 48 ÷ 1.00 = 48 pupils. The more restrictive (lower) value governs, which is 43 pupils from the air space criterion. Option A ignores the air space check. Option C has no Code basis. Option D miscalculates and ignores the floor area check.",
+      "explanation": "Schools require checking BOTH limits simultaneously and using the lower result. Volume = floor area × ceiling height. Always round down (partial persons not permitted). The air space criterion is typically the binding constraint in normally proportioned classrooms.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d44d33cf0ea00d4306e63a52f4bee4ad9e50afcfd39fffbc1b10925ad969ba69"
+    },
+    {
+      "question_id": "f19f1e60-ec7f-40c5-9559-d63ba98917f6",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A three-storey office building uses a fully mechanical HVAC system with no operable windows. Under Rule VIII, what are the minimum ceiling heights for the 1st, 2nd, and 3rd floors respectively?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.70 m / 2.70 m / 2.70 m — uniform standard same as naturally ventilated"
+        },
+        {
+          "id": "b",
+          "text": "2.70 m / 2.40 m / 2.10 m — staggered reduction for artificial ventilation"
+        },
+        {
+          "id": "c",
+          "text": "2.40 m / 2.40 m / 2.40 m — uniform reduced standard for all floors with artificial ventilation"
+        },
+        {
+          "id": "d",
+          "text": "3.00 m / 2.70 m / 2.40 m — first floor requires a higher standard than upper floors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "For artificially ventilated multi-storey buildings, Sec. 805 establishes a staggered minimum: 1st floor = 2.70 m, 2nd floor = 2.40 m, 3rd floor and above = 2.10 m. The uniform 2.40 m rule applies only to single-storey artificially ventilated buildings. Option A ignores the reduced allowances for mechanical systems. Options C and D use unsupported values.",
+      "explanation": "The staggered reduction recognizes that mechanical systems compensate for reduced ceiling volume. Remember the progression: 2.70 → 2.40 → 2.10 for floors 1, 2, 3+ in artificially ventilated multi-storey buildings.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5d6adb07d5fcfa2b143f26cb9532045f243423102383a6f64b99a2acbbe08378"
+    },
+    {
+      "question_id": "98e8f96f-d997-4284-a206-ce1cbefab663",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule VIII of PD 1096, what is the minimum ceiling height for habitable rooms with NATURAL ventilation, applicable to ALL floor levels?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.40 meters for all floors in naturally ventilated buildings"
+        },
+        {
+          "id": "b",
+          "text": "2.70 meters for all floors in naturally ventilated buildings"
+        },
+        {
+          "id": "c",
+          "text": "2.10 meters for upper floors, 2.70 meters for ground floor only"
+        },
+        {
+          "id": "d",
+          "text": "3.00 meters for all floors to ensure adequate cross-ventilation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 805 requires a minimum ceiling height of 2.70 m for all floors in naturally ventilated rooms. This uniform standard applies regardless of floor level. The 2.40 m allowance applies only to artificially ventilated single-storey buildings, not naturally ventilated spaces.",
+      "explanation": "2.70 m is the baseline for natural ventilation at all floors. The reduced 2.40 m is reserved exclusively for artificially ventilated buildings — and even then, only the single-storey condition applies.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.43637+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7607464e60a0aa99712c7b1d6c58243337ad211db88aa64567196ea46fbbbf11"
+    },
+    {
+      "question_id": "115e5146-f058-4edb-93fa-26b1d316e9cb",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A single-storey house uses window-type air conditioning units throughout (artificial ventilation). Under Rule VIII, which minimum ceiling height correctly applies to ALL rooms in this building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.70 m — the natural ventilation standard applies regardless of system type"
+        },
+        {
+          "id": "b",
+          "text": "2.10 m — the minimum for any artificially ventilated space in the Philippines"
+        },
+        {
+          "id": "c",
+          "text": "2.40 m — the reduced minimum for single-storey artificially ventilated buildings"
+        },
+        {
+          "id": "d",
+          "text": "2.00 m — the Code allows any height above human standing clearance for cooled spaces"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 805 permits a reduced ceiling height of 2.40 m for single-storey buildings with artificial ventilation. This is less than the 2.70 m required for natural ventilation. The 2.10 m minimum applies only to the 3rd floor and above in artificially ventilated multi-storey buildings. For a single-storey artificially ventilated building, 2.40 m is the correct minimum.",
+      "explanation": "Single-storey + artificial ventilation = 2.40 m minimum. Multi-storey + artificial ventilation = staggered 2.70/2.40/2.10. The 2.10 m figure only applies to 3rd floor and above in multi-storey artificially ventilated buildings — not to single-storey structures.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f39c7ba7f3928f65d9ff51fa9e0d855a516e89f3c2a9d12d230facde623fc8cf"
+    },
+    {
+      "question_id": "971309c0-d432-46c8-88e4-ef4dac529382",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A school classroom has a floor area of 48 sq.m and a ceiling height of 2.70 m. Applying BOTH Rule VIII criteria for schools (air space and floor area), what is the maximum legal occupancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "48 pupils — floor area criterion (1 sq.m/person) is the sole governing limit"
+        },
+        {
+          "id": "b",
+          "text": "43 pupils — air space criterion (3 cu.m/person) is more restrictive and governs"
+        },
+        {
+          "id": "c",
+          "text": "36 pupils — the average of both criteria must be used when two limits conflict"
+        },
+        {
+          "id": "d",
+          "text": "16 pupils — volume is divided by 3 cu.m/person without applying the floor area check"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Apply both criteria: Air space limit: volume = 48 × 2.70 = 129.6 cu.m; 129.6 ÷ 3.00 = 43.2 → 43 pupils. Floor area limit: 48 ÷ 1.00 = 48 pupils. The more restrictive (lower) value governs, which is 43 pupils from the air space criterion. Option A ignores the air space check. Option C has no Code basis. Option D miscalculates and ignores the floor area check.",
+      "explanation": "Schools require checking BOTH limits simultaneously and using the lower result. Volume = floor area × ceiling height. Always round down (partial persons not permitted). The air space criterion is typically the binding constraint in normally proportioned classrooms.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d97d3bc3352ba7dcf4a09f7bcc0b9a492e5565399589d1103ab584c495063533"
+    },
+    {
+      "question_id": "65e69fd7-c1a2-4a3f-807f-816310ecece0",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An architect designs a bathroom measuring 1.00 m × 1.30 m (1.30 sq.m) and installs a 200 sq.mm operable louvre for ventilation. Under Rule VIII, which requirement does this bathroom violate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Floor area only — 1.30 sq.m fails the 1.50 sq.m minimum for wet rooms"
+        },
+        {
+          "id": "b",
+          "text": "Ventilation only — the 200 sq.mm louvre is below the 240 sq.mm absolute minimum for wet rooms"
+        },
+        {
+          "id": "c",
+          "text": "Dimension only — the 1.00 m width is below the 1.20 m minimum horizontal dimension for bathrooms"
+        },
+        {
+          "id": "d",
+          "text": "Both floor area and ventilation — 1.30 sq.m fails the 1.50 sq.m minimum and 200 sq.mm fails the opening minimum"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Bathroom requirements: floor area ≥1.20 sq.m (this bathroom has 1.30 sq.m — PASSES); minimum dimension ≥900 mm (1.00 m × 1.30 m — both sides exceed 900 mm — PASSES); ventilation opening ≥5% of floor area with absolute minimum 240 sq.mm for wet rooms. At 200 sq.mm the louvre is below the 240 sq.mm absolute minimum — FAILS ventilation only. Option C is wrong: 900 mm, not 1.20 m, is the minimum dimension for bathrooms. Option A uses the wrong area threshold (1.50 sq.m is for kitchens in dimension, not bathrooms).",
+      "explanation": "Bathroom dimension minimum is 900 mm, not 1.20 m. Wet room ventilation minimum is 240 sq.mm absolute. This question tests whether candidates correctly apply bathroom-specific thresholds rather than defaulting to habitable room standards.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806, 808",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:032cd7147b2b815d6cf39612a8e30d8cab2fca3429fc2ca1cdb7d2e015adc82e"
+    },
+    {
+      "question_id": "eea71aad-f800-48ef-875f-3466c1f1bd57",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Rule VIII specifies different minimum air space standards per occupant for schools, offices, and general habitable rooms. What are the correct values for each category?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schools: 6 cu.m/person; Offices: 10 cu.m/person; Habitable rooms: 12 cu.m/person, which is often misunderstood due to varying interpretations of habitable space"
+        },
+        {
+          "id": "b",
+          "text": "Schools: 14 cu.m/person; Offices: 12 cu.m/person; Habitable rooms: 3 cu.m/person, a configuration that is sometimes misapplied in mixed-use buildings"
+        },
+        {
+          "id": "c",
+          "text": "Schools: 3 cu.m/person + 1 sq.m/person; Offices: 12 cu.m/person; Habitable rooms: 14 cu.m/person"
+        },
+        {
+          "id": "d",
+          "text": "Schools: 3 cu.m/person; Offices: 14 cu.m/person; Habitable rooms: 12 cu.m/person, which is a common misconception in older building codes"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Rule VIII establishes three distinct occupancy-specific air space standards: (1) Schools = 3.00 cu.m per person PLUS an additional floor area requirement of 1.00 sq.m per person; (2) Offices = 12.00 cu.m per person; (3) Habitable rooms = 14.00 cu.m per person. Option B inverts the school and habitable room values. Options A and D use unsupported figures.",
+      "explanation": "Three standards to memorize: Schools = 3 cu.m + 1 sq.m per person (dual criteria); Offices = 12 cu.m/person; Habitable = 14 cu.m/person. Schools uniquely have both a volumetric AND a floor-area requirement applied simultaneously.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e6614005a142a75f88c2fdefedb66c6d39b28b026cee3d17ed403fc124b1948"
+    },
+    {
+      "question_id": "8daefa6f-69e4-4cf6-8aa8-4757a306142c",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A kitchen measures 2.80 m × 0.90 m (2.52 sq.m) and a bathroom measures 1.10 m × 1.00 m (1.10 sq.m). Which Rule VIII assessment is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both rooms comply: kitchen exceeds 2.50 sq.m and bathroom exceeds 1.00 sq.m, which are the minimum area requirements for these types of spaces."
+        },
+        {
+          "id": "b",
+          "text": "Kitchen fails area (min 3.00 sq.m) and dimension (min 1.50 m); bathroom fails area (min 1.20 sq.m) only"
+        },
+        {
+          "id": "c",
+          "text": "Kitchen complies; bathroom fails only the 900 mm dimension minimum, which is critical for accessibility and usability."
+        },
+        {
+          "id": "d",
+          "text": "Both rooms fail the 2.00 m minimum horizontal dimension required for all wet rooms, which is a standard for ensuring adequate space."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Kitchen minimums: 3.00 sq.m AND 1.50 m minimum dimension. This kitchen is 2.52 sq.m (fails area) and 0.90 m wide (fails dimension — both violations). Bathroom minimums: 1.20 sq.m AND 900 mm minimum dimension. This bathroom is 1.10 sq.m (fails area) but measures 1.00 m × 1.10 m (both sides exceed 900 mm — passes dimension). Both rooms fail, but for different reasons.",
+      "explanation": "Always check BOTH criteria — area AND dimension — independently for each room type. Kitchen: 3.00 sq.m / 1.50 m. Bathroom: 1.20 sq.m / 900 mm. The 2.00 m dimension minimum belongs only to habitable rooms, not wet rooms.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4a0041c7ef1e464f774d26186210da80df1658a29655eb163fe4b6bb157df87a"
+    },
+    {
+      "question_id": "bb055257-0b90-462d-940c-2b7ce502a0da",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule VIII of PD 1096, what is the minimum ceiling height for habitable rooms with NATURAL ventilation, applicable to ALL floor levels?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.40 meters for all floors in naturally ventilated buildings"
+        },
+        {
+          "id": "b",
+          "text": "2.70 meters for all floors in naturally ventilated buildings"
+        },
+        {
+          "id": "c",
+          "text": "2.10 meters for upper floors, 2.70 meters for ground floor only"
+        },
+        {
+          "id": "d",
+          "text": "3.00 meters for all floors to ensure adequate cross-ventilation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 805 requires a minimum ceiling height of 2.70 m for all floors in naturally ventilated rooms. This uniform standard applies regardless of floor level. The 2.40 m allowance applies only to artificially ventilated single-storey buildings, not naturally ventilated spaces.",
+      "explanation": "2.70 m is the baseline for natural ventilation at all floors. The reduced 2.40 m is reserved exclusively for artificially ventilated buildings — and even then, only the single-storey condition applies.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4fba869915d9ceb41a4879b06f0182696202d00a834761ad17ccadeaa8aad566"
+    },
+    {
+      "question_id": "c2b210d9-0e54-4b40-b0c3-e81360b04e64",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A three-storey office building uses a fully mechanical HVAC system with no operable windows. Under Rule VIII, what are the minimum ceiling heights for the 1st, 2nd, and 3rd floors respectively?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.70 m / 2.70 m / 2.70 m — uniform standard same as naturally ventilated"
+        },
+        {
+          "id": "b",
+          "text": "2.70 m / 2.40 m / 2.10 m — staggered reduction for artificial ventilation"
+        },
+        {
+          "id": "c",
+          "text": "2.40 m / 2.40 m / 2.40 m — uniform reduced standard for all floors with artificial ventilation"
+        },
+        {
+          "id": "d",
+          "text": "3.00 m / 2.70 m / 2.40 m — first floor requires a higher standard than upper floors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "For artificially ventilated multi-storey buildings, Sec. 805 establishes a staggered minimum: 1st floor = 2.70 m, 2nd floor = 2.40 m, 3rd floor and above = 2.10 m. The uniform 2.40 m rule applies only to single-storey artificially ventilated buildings. Option A ignores the reduced allowances for mechanical systems. Options C and D use unsupported values.",
+      "explanation": "The staggered reduction recognizes that mechanical systems compensate for reduced ceiling volume. Remember the progression: 2.70 → 2.40 → 2.10 for floors 1, 2, 3+ in artificially ventilated multi-storey buildings.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f0812d23caba7f3e0e85c5a71aee4beb653164f3c65a1c1d5ba5233547f4a3c9"
+    },
+    {
+      "question_id": "af8bad86-c8b7-4877-b1e1-522950c8f8de",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A mezzanine floor is inserted within a high-ceilinged commercial space. Under Rule VIII, what are the required MINIMUM clear heights both ABOVE and BELOW the mezzanine floor level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.40 m above and 2.40 m below the mezzanine floor level"
+        },
+        {
+          "id": "b",
+          "text": "2.10 m above and 2.10 m below the mezzanine floor level"
+        },
+        {
+          "id": "c",
+          "text": "1.80 m above and 1.80 m below the mezzanine floor level"
+        },
+        {
+          "id": "d",
+          "text": "2.70 m above and 2.40 m below the mezzanine floor level"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Rule VIII specifies that a mezzanine must have a minimum clear height of 1.80 m both above it (from mezzanine floor to ceiling) and below it (from main floor to underside of mezzanine). This 1.80 m standard applies equally to both zones. Options A and B use figures from other ceiling height rules. Option D mixes two unrelated standards.",
+      "explanation": "1.80 m above AND 1.80 m below — both thresholds are identical and apply simultaneously. A mezzanine insertion only complies if both zones clear this minimum.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fc997acc872c648273d10e87b8f35b3f8413e3d057faa84a4af7d63de5425fdf"
+    },
+    {
+      "question_id": "c12cb492-1860-412c-ac4c-9541252cc80c",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule VIII of PD 1096, what is the minimum floor area AND minimum horizontal dimension for a general habitable room such as a bedroom or living room?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4.00 sq.m floor area with a minimum dimension of 1.50 m on any side"
+        },
+        {
+          "id": "b",
+          "text": "6.00 sq.m floor area with a minimum horizontal dimension of 2.00 m on any side"
+        },
+        {
+          "id": "c",
+          "text": "5.00 sq.m floor area with a minimum dimension of 1.80 m on any side"
+        },
+        {
+          "id": "d",
+          "text": "8.00 sq.m floor area with a minimum horizontal dimension of 2.40 m on any side"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 806 establishes that habitable rooms must have a minimum floor area of 6.00 sq.m AND a minimum horizontal dimension of 2.00 m. Both conditions must be satisfied simultaneously. Options A, C, and D use dimensions not found in the Code.",
+      "explanation": "The 6.00 sq.m / 2.00 m standards apply to habitable rooms. Compare: kitchen = 3.00 sq.m / 1.50 m; bathroom = 1.20 sq.m / 900 mm. Each room type has its own distinct minimums.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b923efec0c33443c0c9d7280664d12b4c8203d1d67b95f879816c9cb9b5e29a5"
+    },
+    {
+      "question_id": "f07c38ad-5cdd-41a8-a89e-19c1168edef2",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule VIII, what minimum window opening area is required for a naturally ventilated habitable room with a floor area of 12.00 sq.m?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.60 sq.m — 5% of floor area is the standard for all room types"
+        },
+        {
+          "id": "b",
+          "text": "1.20 sq.m — 10% of floor area; absolute minimum is 1.00 sq.m"
+        },
+        {
+          "id": "c",
+          "text": "1.80 sq.m — 15% of floor area for rooms larger than 10.00 sq.m"
+        },
+        {
+          "id": "d",
+          "text": "0.96 sq.m — 8% of floor area based on the combined light and ventilation standard"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 808 requires window openings for habitable rooms equal to at least 10% of the floor area, with an absolute minimum of 1.00 sq.m. For a 12.00 sq.m room: 10% × 12.00 = 1.20 sq.m, which exceeds the absolute minimum of 1.00 sq.m. So 1.20 sq.m governs. The 5% standard applies only to wet service rooms (bathrooms, toilets), not habitable rooms.",
+      "explanation": "Habitable rooms: 10% of floor area, absolute minimum 1.00 sq.m. Wet rooms: 5% of floor area, absolute minimum 240 sq.mm. For large rooms the percentage governs; for small rooms the absolute minimum may govern instead.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 808",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.335363+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:511153bb4d584dc6c71fd760fe776d58f8e14737404475a34cc4cdfb51d169c8"
+    }
+  ]
+}

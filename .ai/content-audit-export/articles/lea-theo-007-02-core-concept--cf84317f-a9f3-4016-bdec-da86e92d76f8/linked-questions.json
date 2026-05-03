@@ -1,0 +1,528 @@
+{
+  "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:83f9813b1882a3b6c43d909f634adcf5a9637266716f9b96b03acff56c7fda28",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "20f61979-fa1d-465b-bbde-5c02cbb8cc95",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "What is the primary risk when using machine learning to optimize facade transparency for daylighting in buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Machine learning cannot process daylighting data accurately; optimization results are unreliable compared to traditional design analysis, which remains the industry standard"
+        },
+        {
+          "id": "b",
+          "text": "ML may produce statistically averaged solutions based on training datasets; non-quantifiable qualities (cultural meaning, poetic resonance, wonder) beyond measurable metrics are ignored, risking global homogenization"
+        },
+        {
+          "id": "c",
+          "text": "Machine learning algorithms are computationally expensive, making ML-optimized designs less sustainable than simpler approaches, especially in resource-limited settings"
+        },
+        {
+          "id": "d",
+          "text": "ML tends to increase building complexity rather than simplify; facades become over-engineered and difficult to maintain, leading to higher long-term costs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Daylighting simulation is well-established; architectural theory does not question ML's accuracy for this parameter but rather its selectivity (what it optimizes for).",
+        "c": "architectural theory mentions embodied carbon cost of training large AI models but does not emphasize computational expense as the primary risk to daylighting optimization.",
+        "d": "ML-optimized designs may be complex, but concern is not over-engineering but homogenization and quantification bias.",
+        "correct": "Homogenization as primary risk: if all designers use identical ML training datasets and optimization algorithms, global architecture may converge on statistically averaged solutions. Additionally, unmeasurable qualities (memorial significance, cultural meaning, poetic resonance) are systematically excluded from AI optimization.",
+        "takeaway": "Additionally, unmeasurable qualities (memorial significance, cultural meaning, poetic resonance) are systematically excluded from AI optimization."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:517c11e5b85f60000ee55616f44934500784a1b817b686035c234ed736ac8f98"
+    },
+    {
+      "question_id": "d9a256b2-d1be-4c67-8911-4607563f5372",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "What is the theoretical advantage of 'algorithmic authorship' in contemporary parametric design practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The algorithm becomes the primary author; the designer sets parameters and rules while the algorithm generates outputs, displacing individual intentionality into rule-setting"
+        },
+        {
+          "id": "b",
+          "text": "The computer algorithm can patent designs automatically, protecting intellectual property without human legal involvement, streamlining the design-to-market process"
+        },
+        {
+          "id": "c",
+          "text": "Algorithmic authorship eliminates the need for human aesthetic judgment, producing purely rational solutions that adhere strictly to functional requirements"
+        },
+        {
+          "id": "d",
+          "text": "Multiple designers can simultaneously work on the same project without coordination by allowing the algorithm to resolve conflicts, enhancing collaborative efficiency"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Intellectual property frameworks have not resolved authorship questions in algorithmic design; this is an unsolved legal and philosophical issue, not a theoretical advantage.",
+        "c": "Algorithmic authorship does not eliminate human judgment; designers still set parameters, curate outputs, and make value judgments. Aesthetic judgment persists, but is exercised through rule-setting rather than direct form-making.",
+        "d": "While algorithmic systems can coordinate multiple inputs, this is a practical benefit not central to the concept of algorithmic authorship as a philosophical position.",
+        "correct": "Algorithmic authorship is a philosophical position: when form is generated through computational rules, authorship shifts from the individual designer's compositional choices to the system itself. The designer becomes a rule-setter rather than form-maker, with the algorithm as primary generative agent.",
+        "takeaway": "The designer becomes a rule-setter rather than form-maker, with the algorithm as primary generative agent."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d30a5c777c5414d9b5716ee5dd7ccdac633377e2b47afa5f68e6a7475dc82cc"
+    },
+    {
+      "question_id": "78312a99-9b97-447d-87a7-887e7cddaf9f",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "How does Neri Oxman's material computation approach differ from traditional parametric design in terms of what is optimized?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material computation is manual craft-based; traditional parametric design is entirely algorithmic and relies exclusively on digital optimization tools"
+        },
+        {
+          "id": "b",
+          "text": "Material computation creates ornamental visual patterns; traditional parametric design prioritizes functional efficiency over aesthetic considerations"
+        },
+        {
+          "id": "c",
+          "text": "Material computation applies only to facades; traditional parametric design addresses entire building systems including structure and mechanical"
+        },
+        {
+          "id": "d",
+          "text": "Material computation optimizes local material density according to structural stress distribution; traditional parametric design optimizes form geometry according to multiple linked parameters"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both material computation and parametric design are heavily algorithmic and computational; neither is manual craft.",
+        "b": "Material computation is deeply functional (mimicking bone optimization), not ornamental. Traditional parametric design is also functionally motivated.",
+        "c": "Both approaches can address comprehensive building systems; the distinction concerns the level of optimization (material density vs. formal geometry).",
+        "correct": "Material computation dissolves structure/skin/ornament binaries by varying material density locally according to stress—a strategy distinct from but complementary to parametric form-finding. Both are parameter-responsive, but material computation operates at material/structural level while parametric design often operates at spatial/formal level.",
+        "takeaway": "Both are parameter-responsive, but material computation operates at material/structural level while parametric design often operates at spatial/formal level."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bbcc47682712cc9602639ff4f2ebfab903d204b33ba44b022d5f6df266d86034"
+    },
+    {
+      "question_id": "04b2c33c-4d96-4831-aab3-4a004f9b65bb",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "What does the contemporary discourse about AI-assisted design reveal about the deeper philosophical question of whether architectural excellence can be quantified and optimized?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architectural excellence can be partially quantified (daylighting, thermal performance, structural efficiency) but unmeasurable qualities (wonder, memorial significance, cultural meaning, poetic resonance) resist algorithmic optimization, suggesting architectural value exceeds quantifiable metrics"
+        },
+        {
+          "id": "b",
+          "text": "The question of quantifiability is irrelevant to architectural practice; buildings either function well or they do not, regardless of their quantification status"
+        },
+        {
+          "id": "c",
+          "text": "Architectural excellence is entirely quantifiable; contemporary resistance to full AI design authority reflects conservative professional gatekeeping, not genuine epistemological limitation"
+        },
+        {
+          "id": "d",
+          "text": "Architectural excellence cannot be quantified at all; any attempt at algorithmic optimization necessarily fails and produces mediocre results"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "architectural theory engages this question as substantive; whether architecture can be quantified has real implications for design methodology and authority.",
+        "c": "architectural theory does not attribute resistance to professional gatekeeping; rather it identifies genuine epistemological limitation—unmeasurable qualities are not measurable.",
+        "d": "architectural theory demonstrates that quantifiable metrics are usefully optimized; the issue is incompleteness, not total failure.",
+        "correct": "AI systems 'optimize for measurable parameters. How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority.",
+        "takeaway": "How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e6713eccdd2f050d93ed5f26a94d071f4ee91004aba976d6119ca2f7280ba1e"
+    },
+    {
+      "question_id": "d50e1ad6-6b06-4a71-8a31-9990614e5da4",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "A facade's perforation density increases on south-facing elevations and decreases on north-facing surfaces, with the perforation pattern data-linked to solar intensity calculations. What design methodology best describes this approach, and what does it demonstrate about ornament in contemporary practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Postmodern ornamentation—the facade pattern communicates historical or cultural meaning through symbolic reference, often without direct functional application"
+        },
+        {
+          "id": "b",
+          "text": "High-Tech structural expression—the perforations reveal and celebrate the building's mechanical systems, emphasizing the integration of technology and design"
+        },
+        {
+          "id": "c",
+          "text": "Biomimetic pattern generation—the perforation density mimics natural organism distribution patterns without functional justification, serving primarily an aesthetic purpose"
+        },
+        {
+          "id": "d",
+          "text": "Parametric design with performance visualization—ornament returns as performance data rendered in material form, not as applied decoration"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Postmodern ornament communicates semantic meaning through historical or ironic reference; this approach is functionally justified (thermal performance), not semantically motivated.",
+        "b": "High-Tech exposes structural and mechanical systems; perforation patterns serving thermal performance are not mechanical systems per se.",
+        "c": "While the pattern may resemble natural forms, the justification is functional (solar modulation) not biomimetic (organism imitation).",
+        "correct": "The perforation pattern is algorithmically linked to solar data, making it a performance visualization rather than applied ornament. This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function.",
+        "takeaway": "This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fedb33a17d07089c1f5680a4a9cad7bf53aa5c41f4aff1f889d5f57376747ca4"
+    },
+    {
+      "question_id": "c4a70a7b-6be5-4bdd-92c5-80aee8980a4d",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "The Eastgate Centre in Harare, Zimbabwe exemplified biomimicry by incorporating which biological optimization strategy to reduce mechanical air-conditioning demand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bone density variation—local material concentration following stress distribution patterns, which is not related to air-conditioning"
+        },
+        {
+          "id": "b",
+          "text": "Termite mound ventilation principles—passive air circulation through complex tower geometries maintaining precise internal temperatures"
+        },
+        {
+          "id": "c",
+          "text": "Coral reef structural branching—fractal geometries that distribute mechanical loads efficiently, unrelated to ventilation"
+        },
+        {
+          "id": "d",
+          "text": "Leaf surface porosity—perforation patterns that vary with solar orientation to modulate thermal gain, which is not the primary strategy used"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes Neri Oxman's material computation research (density varying with stress), not Eastgate's biomimetic strategy.",
+        "c": "Coral reef branching is not referenced in Eastgate's biomimetic approach; the project focused specifically on thermal ventilation strategies.",
+        "d": "This resembles parametric facade perforation (like 1111 Lincoln Road), not Eastgate's mound ventilation precedent.",
+        "correct": "The Eastgate Centre explicitly mimicked termite mound passive ventilation, where termites maintain precise internal temperatures through sophisticated air circulation in complex tower geometries. Eastgate replicated this passive thermal cooling, reducing mechanical conditioning by 40%.",
+        "takeaway": "Eastgate replicated this passive thermal cooling, reducing mechanical conditioning by 40%."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:38e197e707d91d2688a1999544aebc78ef991b4ced7dc1a2150dce80c7fa9e65"
+    },
+    {
+      "question_id": "b61cf929-99e8-494b-a6bd-d6174b39e5f9",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "In parametric design, what does it mean to treat form as a responsive system where every element adjusts to linked variables?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The designer uses machine learning to generate random form variations until an aesthetically pleasing result emerges, which may not consider functional requirements"
+        },
+        {
+          "id": "b",
+          "text": "The designer defines rules such as 'surface angles respond to solar exposure' and 'interior volumes modulate with occupancy density,' allowing the computer to calculate optimal configurations across thousands of variables simultaneously"
+        },
+        {
+          "id": "c",
+          "text": "The designer creates ornamental patterns through computational algorithms that have no functional relationship to building performance, focusing solely on aesthetics"
+        },
+        {
+          "id": "d",
+          "text": "The designer draws a single form and applies digital fabrication techniques to manufacture it, without further adjustments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Machine learning generates outputs from training data; parametric design defines explicit mathematical relationships. These are distinct methodologies.",
+        "c": "Parametric ornament must be performance-justified (thermal responsiveness, structural efficiency) to align with contemporary parametric theory; ornament without functional parameter linkage is not genuinely parametric.",
+        "d": "This describes digital fabrication (manufacturing method) divorced from parametric design (methodology); a building can be CNC-fabricated without being parametrically designed.",
+        "correct": "Parametric design defines architectural form through linked variables (parameters) where changing one parameter updates dependent elements. This is fundamentally different from drawing-then-fabricating, ornamental computation, or aesthetic randomization.",
+        "takeaway": "This is fundamentally different from drawing-then-fabricating, ornamental computation, or aesthetic randomization."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:595b6518162d0372dca9e6a786f9cbea658a3bf8da90355181bd5898867e2ba7"
+    },
+    {
+      "question_id": "cb8957b7-82f6-44ce-b569-acf23b4f3b89",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "Which statement represents a common mistake in contemporary architectural thinking about digital design methods?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confusing parametric design with merely complex or curved form—a building with curves is not parametric unless the curves are algorithmically linked to defined parameters"
+        },
+        {
+          "id": "b",
+          "text": "All of the above represent common mistakes in contemporary digital design discourse"
+        },
+        {
+          "id": "c",
+          "text": "Romanticizing biomimicry without material honesty—claiming a design is biomimetic because it resembles an organism, when true biomimicry reverse-engineers optimization logic, not visual form"
+        },
+        {
+          "id": "d",
+          "text": "Assuming digital fabrication requires parametric design—CNC mills produce both parametric and non-parametric forms; these are synergistic but separate methodologies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is correct but incomplete; it identifies only one of three mistakes.",
+        "c": "This is correct but incomplete; it identifies only one of three mistakes.",
+        "d": "This is correct but incomplete; it identifies only one of three mistakes.",
+        "correct": "(a) visual complexity ≠ parametric logic; (b) CNC fabrication is manufacturing, parametricism is design philosophy—distinct but synergistic; (c) true biomimicry reverse-engineers optimization logic, not merely imitate appearance. All three are documented common mistakes in contemporary practice.",
+        "takeaway": "All three are documented common mistakes in contemporary practice."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd7bc0edba8c9465b8d951e0f237308e5a613195955dec72f1dbe998f87501b3"
+    },
+    {
+      "question_id": "52b1b794-785f-4542-b8f6-d80b31e67c41",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "How does parametric design philosophically resolve the historical tension between individual artistic authorship and systematic production logic that haunted modernist theory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It treats the algorithm/system as the author, displacing individual intentionality from form-making into rule-setting, thus legitimizing systematic production as primary creative force rather than threat to authorship"
+        },
+        {
+          "id": "b",
+          "text": "It avoids the tension by abandoning both individual authorship and systematic production in favor of emergent, self-organizing design processes"
+        },
+        {
+          "id": "c",
+          "text": "It restores individual artistic authority by allowing designers to override algorithmic outputs based on aesthetic preference and professional judgment"
+        },
+        {
+          "id": "d",
+          "text": "It eliminates the tension entirely by proving that systematic production and artistic excellence are incompatible; architecture must choose one or the other"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Parametricism is highly systematic and deterministic, not emergent or self-organizing; this mischaracterizes the methodology.",
+        "c": "This describes contemporary practice where designers do curate outputs, but philosophically it evades the question rather than resolving it.",
+        "d": "architectural theory does not claim incompatibility is inevitable; rather it proposes philosophical repositioning of authorship.",
+        "correct": "Parametricism reframes the tension by treating the algorithm as author rather than trying to preserve individual authorship within production logic. The designer becomes rule-setter; the system generates output; authorship is algorithmic rather than individual. This accepts rather than resolves the tension.",
+        "takeaway": "This accepts rather than resolves the tension."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3cd2dde1a211eba0b180bb1c504560580d5ac17c5ea09cc7bada70b429c0b624"
+    },
+    {
+      "question_id": "7a000bac-333b-44cd-aaec-f74cf352c2a4",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "Compare the epistemological shifts from modernism through contemporary practice: How has the basis for architectural decision-making fundamentally changed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modern architecture emphasized visual aesthetics; contemporary architecture emphasizes functional performance, eliminating aesthetic considerations entirely, which is a misconception"
+        },
+        {
+          "id": "b",
+          "text": "Modern architecture was objective and rational; contemporary architecture is subjective and intuitive, representing a return to pre-modern design methods, though often informed by new technologies"
+        },
+        {
+          "id": "c",
+          "text": "Modern architecture attempted to design for average users; contemporary architecture customizes for individual preference through algorithmic personalization, allowing for greater user engagement"
+        },
+        {
+          "id": "d",
+          "text": "Modern architecture relied on professional intuition and universal principles; contemporary architecture relies on data analysis and algorithmic optimization, shifting authority from human judgment to quantitative systems"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Contemporary practice does not eliminate aesthetics; rather it integrates aesthetic and performance concerns through parametric linking.",
+        "b": "Contemporary architecture is increasingly systematic and computational, not a return to pre-modern methods.",
+        "c": "Personalization occurs but is not the primary shift; the shift concerns the methodological basis (data/algorithm vs. intuition/principle).",
+        "correct": "contemporary architecture 'has fundamentally shifted its epistemology—how architects know what to build' from human intuition and universal principles toward data-responsive systems, algorithmic optimization, and machine learning. Authority transfers from individual professional judgment to quantitative analysis.",
+        "takeaway": "Authority transfers from individual professional judgment to quantitative analysis."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bca7afcbe6d078217b62e6415b0a635fb2e35c2a352e15564d1c898b812101fd"
+    }
+  ]
+}

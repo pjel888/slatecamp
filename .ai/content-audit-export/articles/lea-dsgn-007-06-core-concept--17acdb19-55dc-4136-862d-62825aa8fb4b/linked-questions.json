@@ -1,0 +1,549 @@
+{
+  "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:e978e25a7908b6ac409dae67317d6a344766fa4972d5d34eec6a5907463533eb",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "db1f408a-512e-44f7-8083-e69db48de6ca",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "A floor plan shows a corridor that leads to two spaces only (an office and a storage room), with no through passage. This creates a dead-end corridor 8 meters long. Is this design acceptable, and what alternatives would you propose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the design is acceptable; 8 meters is a reasonable dead-end length, provided it complies with local fire safety regulations"
+        },
+        {
+          "id": "b",
+          "text": "Not ideal; the dead-end could be eliminated by repositioning the office and storage to allow corridor through-passage, or justify the dead-end if it serves to isolate support functions away from primary circulation."
+        },
+        {
+          "id": "c",
+          "text": "No, dead-ends are never acceptable in any building type, as they pose significant safety risks during emergencies"
+        },
+        {
+          "id": "d",
+          "text": "Yes, the design is acceptable; 8 meters is less than the fire code limit of 12 meters for sprinklered buildings, ensuring compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Not necessarily acceptable; requires justification. Accidental dead-ends are poor design.",
+        "b": "Correct: Evaluate whether dead-end is purposeful (isolate service) or accidental (poor planning). Redesign if accidental; justify if purposeful.",
+        "c": "Overly rigid; minor dead-ends can be justified for specific purposes (service isolation).",
+        "d": "Fire code limit is not the design goal; goal is to minimize dead-ends. Staying under code limit is not sufficient justification.",
+        "correct": "An 8-meter dead-end should be evaluated: Is it accidental (poor circulation planning) or purposeful (isolates service functions)? If accidental, redesign to eliminate it. If purposeful (e.g., isolates utility storage away from main circulation), it may be acceptable as a minor dead-end. Fire code limits apply (see DSGN-008-01), but circulation design principle is to minimize dead-ends for efficiency and wayfinding clarity.",
+        "takeaway": "Dead-end evaluation: (1) Is it purposeful (service isolation) or accidental (poor planning)? (2) If accidental, redesign. (3) If purposeful, document and justify. (4) Fire code provides maximum limits (6m/12m), but circulation design principle is to minimize dead-ends."
+      },
+      "explanation": null,
+      "code_citation": "Circulation Design Principles; NBCP Dead-End Corridor Limits",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "circulation planning",
+        "design review"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8f198d9f849c20117672b329f38d29712617f7f4a8812a0c816b42427e8b5893"
+    },
+    {
+      "question_id": "031d88a8-722e-42af-8173-8a4c79b1e274",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "A building floor plan is 4,000 square meters total. Analyze the following: primary corridor (main distribution): 400 sqm, secondary corridors (to individual spaces): 300 sqm, service corridor (building systems/staff): 200 sqm, stair/elevator lobbies: 150 sqm, connector spaces: 150 sqm. Total circulation: 1,200 sqm. Is this circulation efficiency within acceptable range (15–30%), and what does it indicate about the design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,200 sqm ÷ 4,000 sqm = 30% — at the upper limit of efficient range. Design is acceptable but uses generous circulation; opportunities to streamline secondary circulation may exist."
+        },
+        {
+          "id": "b",
+          "text": "1,200 sqm ÷ 4,000 sqm = 30% — exceeds efficient range; the design is inefficient and should be redesigned to reduce circulation area by 20%, focusing on optimizing space usage"
+        },
+        {
+          "id": "c",
+          "text": "1,200 sqm ÷ 4,000 sqm = 40% — well above efficient range; significant redesign needed to bring circulation within acceptable limits"
+        },
+        {
+          "id": "d",
+          "text": "1,200 sqm ÷ 4,000 sqm = 15% — below efficient range; circulation is constrained and may create wayfinding or access issues, potentially impacting user experience"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct: 30% is at upper limit of efficient range. Design is acceptable, but review secondary corridors for possible streamlining.",
+        "b": "Incorrect calculation; 30% does not exceed the upper limit of 15–30% range.",
+        "c": "Incorrect calculation; 1,200 ÷ 4,000 = 30%, not 40%.",
+        "d": "Incorrect calculation; 1,200 ÷ 4,000 = 30%, not 15%. This would not be concerning.",
+        "correct": "1,200 ÷ 4,000 = 30% (0.30). This is at the upper limit of the efficient 15–30% range. The design is acceptable but on the generous side. Analysis: Does it reflect necessary complexity (hospital, complex institution)? Or are secondary corridors oversized? The design may be optimized by tightening secondary circulation without compromising access.",
+        "takeaway": "Circulation efficiency calculation: (Circulation area ÷ Total GFA) × 100 = percentage. 15–30% is efficient range. At upper limit (30%), review whether the circulation serves necessary complexity or if it can be optimized."
+      },
+      "explanation": null,
+      "code_citation": "UAP Design Efficiency Standards; Circulation Planning Guidelines",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [
+        "floor area calculations",
+        "design efficiency"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4634fd25242ef48d9b6cc9f9215d8c3e6af38f728ccec42071111e204265f94d"
+    },
+    {
+      "question_id": "4198d010-01f1-4143-b7ce-c3d8427b092f",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "In a large office building, vertical circulation (stairs and elevators) is clustered in a central core. What are the primary advantages of this circulation strategy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduces construction cost slightly; central core is a standard practice, though it may limit design flexibility"
+        },
+        {
+          "id": "b",
+          "text": "Concentrates utilities (MEP, stairs, elevators) in one zone, minimizing distribution throughout the floor; maximizes flexible space arrangement around the core; reduces total circulation area."
+        },
+        {
+          "id": "c",
+          "text": "Ensures all occupants walk past the reception desk, improving security and potentially enhancing visitor management"
+        },
+        {
+          "id": "d",
+          "text": "Makes the building easier to clean because all corridors radiate from one point, simplifying maintenance logistics"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While common, the advantage is not cost reduction; it's spatial and operational efficiency.",
+        "b": "Correct: Central core concentrates utilities, minimizes distribution, maximizes flexibility. This is the primary advantage of central-core strategy.",
+        "c": "Reception security is separate from circulation strategy; can be achieved with distributed circulation.",
+        "d": "Cleaning efficiency is not the primary driver of circulation strategy.",
+        "correct": "Central core strategy concentrates vertical circulation and MEP systems in one zone, allowing flexible, open floor plates around the core. This minimizes distribution requirements, reduces total circulation area, and supports efficient space planning. Most effective for office towers and hotels.",
+        "takeaway": "Central-core circulation strategy: (1) Concentrates stairs, elevators, MEP, (2) Minimizes utility distribution, (3) Maximizes flexible space around core, (4) Reduces total circulation area. Most efficient for large office/hotel buildings. Trade-off: longer travel distance to core if core is oversized."
+      },
+      "explanation": null,
+      "code_citation": "UAP Circulation Strategy Standards; Office Building Design",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "circulation planning",
+        "floor plate design"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a0a5c74baaf5ccd510c6300bee78225f6b03ca26c0f0cb57fdfcd3a4b7b72b1"
+    },
+    {
+      "question_id": "58a10dca-18ec-4ecb-91d5-c756988f65e9",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "What is a dead-end corridor in circulation design, and why should it generally be minimized?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A corridor with only one exit; should be minimized because it creates emergency egress hazards and forces occupants to backtrack."
+        },
+        {
+          "id": "b",
+          "text": "A corridor that is narrower than other corridors; should be minimized because narrow corridors are inefficient and can impede the flow of traffic during peak times."
+        },
+        {
+          "id": "c",
+          "text": "A corridor with poor lighting or ventilation; should be minimized because occupants dislike unpleasant corridors, which can affect the overall user experience."
+        },
+        {
+          "id": "d",
+          "text": "Any corridor shorter than 20 meters; should be minimized because short corridors waste floor area and do not contribute to efficient space utilization."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct: Dead-end = single access/egress. Creates emergency hazard and circulation inefficiency. Fire code limits apply (see DSGN-008-01).",
+        "b": "Dead-end refers to access pattern, not width. Narrow corridors are a different issue.",
+        "c": "Dead-end is about access pattern, not environmental quality.",
+        "d": "Dead-end is about access topology, not length. Even short dead-ends should be avoided unless purposeful.",
+        "correct": "A dead-end corridor has only one point of access/egress. It should be minimized because: (1) fire code limits dead-end length (6m unsprinklered, 15m sprinklered); (2) forces occupants to retrace steps to exit; (3) reduces wayfinding clarity. Dead-ends may be justified purposefully (e.g., isolate service functions), but accidental dead-ends are poor design.",
+        "takeaway": "Dead-end corridor = single access point. Should be minimized because: (1) Creates emergency egress inefficiency, (2) Fire code limits (6m/12m per DSGN-008-01), (3) Confuses wayfinding. May be justified for service isolation, but not accidental."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Sec. 10.2.5.2; Circulation Design Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "circulation planning",
+        "egress design"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:81ed2e6b8f3db41288fa94ddc6627430825de401e2e4612869e0c9587cdd1f07"
+    },
+    {
+      "question_id": "477ee9dc-2d6e-4147-a8e9-d042824b1a3f",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "Describe the circulation design strategy for a large institutional building (hospital, university) that serves multiple program zones (emergency, surgery, inpatient, administrative, service). Which circulation pattern would be most effective, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Linear double-loaded corridor connecting all zones sequentially; maximizes space efficiency by reducing the need for multiple corridors and minimizing the building footprint."
+        },
+        {
+          "id": "b",
+          "text": "Hub-and-spoke pattern with central distribution point connecting to all program zones; allows equal access from each zone to central services (administrative, utilities); supports independent circulation for different zone types (patient, staff, service)."
+        },
+        {
+          "id": "c",
+          "text": "Distributed vertical circulation throughout the building; avoids concentrating movement in one area, which can reduce congestion and improve emergency egress."
+        },
+        {
+          "id": "d",
+          "text": "Single central corridor serving all zones; simplifies wayfinding by routing everything through one path, which can be beneficial for visitors unfamiliar with the building layout."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Linear corridors work for simple, sequential programs (office buildings). Institutional complexity (emergency, surgery, inpatient) requires more sophisticated organization.",
+        "b": "Correct: Hub-and-spoke supports multi-zone institutional complexity. Central services accessible to all zones; independent circulation for different groups; flexibility for zone-specific design.",
+        "c": "Distributed circulation increases complexity and cost without benefit for institutional buildings where zones need coordinated access to central services.",
+        "d": "Single corridor forces incompatible groups (patients, emergency, service) into one path; creates conflicts and poor wayfinding.",
+        "correct": "Large institutional buildings benefit from hub-and-spoke circulation: Multiple program zones radiate from central services (surgery, nursing stations, administrative, MEP). This allows: (1) Equal access to central services, (2) Independent circulation for different groups (patients, staff, visitors), (3) Separation of public, patient, and service flows, (4) Flexibility for each zone to develop independently while maintaining connection to services. Linear or distributed approaches don't support the complexity of institutional programs.",
+        "takeaway": "Institutional circulation pattern (hospital, university): Hub-and-spoke (central services, zones radiating). Supports (1) Multiple program zones with equal access to center, (2) Independent circulation for different groups, (3) Separation of public/patient/service movement, (4) Zone-specific flexibility."
+      },
+      "explanation": null,
+      "code_citation": "UAP Institutional Building Design Standards; Hospital Circulation Patterns",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "circulation planning",
+        "complex buildings",
+        "program organization"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c04632758257abbdcf7bc072f9269a2841b27e939f5f699d10978c91eb193555"
+    },
+    {
+      "question_id": "0d9b0502-f89b-49e1-a15c-924f3d8fdb98",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "In circulation design, what is the primary purpose of distinguishing between primary, secondary, and service circulation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To create different finishes and decorative treatments for each circulation type, which is not the main purpose"
+        },
+        {
+          "id": "b",
+          "text": "To organize movement hierarchically: primary handles main routes and heaviest traffic; secondary distributes to individual spaces; service segregates building systems and staff movement from public circulation."
+        },
+        {
+          "id": "c",
+          "text": "To determine corridor width, which is the same for all circulation types, which is a misconception"
+        },
+        {
+          "id": "d",
+          "text": "To reduce the total amount of circulation in the building, which is not typically the goal"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While finishes may differ by circulation type, the primary purpose is organizational and functional, not decorative.",
+        "b": "Correct: Hierarchy distinguishes movement by function and traffic volume. Primary = main routes (high traffic), Secondary = space distribution (medium traffic), Service = systems/staff (low traffic, segregated). This organization supports operations and clarity.",
+        "c": "All corridors have minimum 1,100mm width, but primary/secondary distinctions are about traffic hierarchy, not width alone.",
+        "d": "Hierarchy doesn't reduce circulation area; it organizes existing circulation purposefully.",
+        "correct": "Circulation hierarchy organizes movement by function and importance: primary routes are main distribution (entry, lobby, stairs), secondary routes serve individual spaces, service circulation (MEP, staff, deliveries) is segregated. This hierarchy clarifies wayfinding, manages traffic efficiency, and separates operational from public movement.",
+        "takeaway": "Circulation hierarchy: (1) Primary = main routes, heaviest traffic, widest when feasible. (2) Secondary = space distribution, medium traffic. (3) Service = building systems/staff, segregated from public. Clear hierarchy improves wayfinding and operational efficiency."
+      },
+      "explanation": null,
+      "code_citation": "UAP Circulation Design Standards; Building Design Principles",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "circulation planning",
+        "building organization"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7b729e3f796e005fb0c3decb5b2bb50468d4ca0c0bd191b2d546bd0cdd29ff00"
+    },
+    {
+      "question_id": "829bc940-9a16-414d-9b8a-02ac0bc2b8f4",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "Circulation area (including corridors, stairs, elevator lobbies) typically comprises what percentage of total floor area in an efficiently designed building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5–10% (minimal circulation to maximize rental/usable space)"
+        },
+        {
+          "id": "b",
+          "text": "15–30% (industry standard range for efficient design)"
+        },
+        {
+          "id": "c",
+          "text": "40–50% (generous circulation for comfort and wayfinding)"
+        },
+        {
+          "id": "d",
+          "text": "60% or more (maximizes flexibility and reduces congestion)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Below-efficient threshold; insufficient circulation creates bottlenecks and poor wayfinding.",
+        "b": "Correct: 15–30% is efficient for most building types. Less is too cramped; more is inefficient.",
+        "c": "40–50% exceeds efficiency; excessive circulation wastes usable area.",
+        "d": "60%+ is wasteful; excessive circulation doesn't improve performance proportionally.",
+        "correct": "Circulation area (corridors, stairs, lobbies, connector spaces) efficiently comprises 15–30% of floor area. This range balances efficiency (sufficient circulation for movement and wayfinding) with economy (not excessive). Varies by building type: office (lower %), hospitals (higher %).",
+        "takeaway": "Efficient circulation design targets 15–30% of floor area. Office buildings trend lower (~15–18%); hospitals and complex institutional buildings trend higher (~25–30%). Design goal: sufficient circulation for operations without excess."
+      },
+      "explanation": null,
+      "code_citation": "UAP Design Efficiency Standards; Building Planning Guidelines",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [
+        "floor area planning",
+        "design efficiency"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:daa5f748fffbbe7fb0ff406236d33f68c1c68fb498ab02175b1d1780f56c3c82"
+    },
+    {
+      "question_id": "679cb3cb-74dd-4f37-953b-7cd33979e88c",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "In a hospital design, what is the primary reason for separating public circulation (patient/visitor routes) from service circulation (staff, deliveries, equipment movement)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce the total number of corridors in the hospital, thereby minimizing construction costs and simplifying the layout"
+        },
+        {
+          "id": "b",
+          "text": "To improve operational efficiency (staff can move independently), maintain infection control (separate paths reduce contamination risk), and provide aesthetic/operational separation of patient experience from utility functions."
+        },
+        {
+          "id": "c",
+          "text": "To ensure that all staff members pass through security checkpoints, which are strategically placed along the service routes"
+        },
+        {
+          "id": "d",
+          "text": "To reduce the cost of flooring materials by limiting the areas that require high-quality finishes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Segregation typically increases total corridors (adds service network alongside public), not reduces.",
+        "b": "Correct: Hospital segregation supports operational efficiency, infection control, and patient experience. Separate staff/delivery paths are essential for hospital function.",
+        "c": "Security is a separate concern from circulation segregation.",
+        "d": "Material costs are not the primary driver of circulation strategy.",
+        "correct": "Hospital circulation segregation is critical for: (1) Operational efficiency — staff movement is independent of patient/visitor traffic; (2) Infection control — separate paths minimize contamination and cross-contamination risk; (3) Aesthetic separation — utility operations (laundry, waste management, food service) are hidden from patient view. This is distinct from general building segregation.",
+        "takeaway": "Hospital (and institutional) circulation segregation: (1) Operational independence (staff movement), (2) Infection control (contamination prevention), (3) Patient experience (hide utility operations). More critical than in commercial buildings."
+      },
+      "explanation": null,
+      "code_citation": "Hospital Circulation Design Standards; AIA Healthcare Guidelines",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "circulation planning",
+        "healthcare facility design"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:962759dc65307894ce0e8f40ba4ac0dc0922928cc3def6bb44b6f2679d6a0b99"
+    },
+    {
+      "question_id": "c08c2aba-524c-49fe-bc6c-483c799487b9",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "What is the minimum width standard for a primary corridor in building design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "900 millimeters (accessible door width)"
+        },
+        {
+          "id": "b",
+          "text": "1,000 millimeters"
+        },
+        {
+          "id": "c",
+          "text": "1,200 millimeters"
+        },
+        {
+          "id": "d",
+          "text": "1,500 millimeters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "900mm is accessible door height (not width) and is narrower than corridor standard.",
+        "b": "1,000mm is narrower than the 1,100mm standard; creates bottlenecks.",
+        "c": "Correct: 1,100mm minimum corridor width. Accommodates wheelchairs and passage. Narrower corridors create accessibility and flow issues.",
+        "d": "1,500mm exceeds the minimum standard; over-sized for efficiency.",
+        "correct": "Standard corridor width minimum = 1,100 millimeters. This accommodates wheelchair (650mm) plus passing space, and supports efficient movement and wayfinding. This applies to primary, secondary, and service corridors as a baseline.",
+        "takeaway": "Corridor width minimum = 1,100mm (NBCP fire egress and design standard). This is the baseline for all corridor types. Primary corridors may be wider for traffic volume; secondary/service may be narrower only when space is constrained."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VIII Sec. 804; Rule III Sec. 1005",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "dimensional standards",
+        "accessibility"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8829a5e4ee9d1c3469effb13908175220038132f9f78e97823507745decec5c4"
+    },
+    {
+      "question_id": "d83f0766-88b2-44c7-b654-1c51c0dcd584",
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "topic_id": "eb3394a4-3d7f-4e04-a1b4-989c957a2993",
+      "text": "Service circulation (for building systems, staff, and deliveries) should generally be segregated from public circulation. What is the primary reason for this segregation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce the total width of corridors in the building, which can lead to cost savings in construction"
+        },
+        {
+          "id": "b",
+          "text": "To maintain operational efficiency (staff/equipment movement independent of occupants) and aesthetic separation (utility functions hidden from public view)."
+        },
+        {
+          "id": "c",
+          "text": "To eliminate the need for wayfinding signs in service areas, simplifying navigation for staff"
+        },
+        {
+          "id": "d",
+          "text": "To reduce the number of elevators required in the building, thereby lowering maintenance costs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Segregation may increase total corridor area, not reduce it.",
+        "b": "Correct: Segregation supports operational efficiency and aesthetic separation. Staff can move freely without occupant conflicts; public spaces are shielded from operational/utility functions.",
+        "c": "Wayfinding applies to service circulation equally; segregation doesn't eliminate this need.",
+        "d": "Elevators are determined by occupancy and code, not primarily by circulation segregation (though freight elevators may be separate).",
+        "correct": "Service circulation segregation allows staff and equipment (deliveries, maintenance, trash) to move independently of building occupants. This improves operational efficiency (e.g., kitchen staff don't impede office workers) and maintains aesthetic separation (utility/loading functions are not visible to tenants). In hospitals, separation is also critical for infection control.",
+        "takeaway": "Service circulation segregation = operational efficiency (independent movement) + aesthetic separation (utilities hidden). Critical in commercial kitchens, hospitals, hotels, where staff/equipment movement must not conflict with or be visible to occupants."
+      },
+      "explanation": null,
+      "code_citation": "UAP Circulation Design Standards; Building Operations Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "circulation planning",
+        "operational design"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a1f1994856f2e3768c1055b16dd2923578e3da68773e621db46a3a0f9227051e"
+    }
+  ]
+}

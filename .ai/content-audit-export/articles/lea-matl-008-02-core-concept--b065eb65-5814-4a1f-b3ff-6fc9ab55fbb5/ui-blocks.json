@@ -1,0 +1,147 @@
+{
+  "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+  "slug": "lea-matl-008-02-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.821Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:7d4eae4c2ef2173a96b2bcecf236eb75fd8afc13ec8e6d6cc22a349276a27e89",
+  "normalized_content_hash": "61971dbbc53e2b31427c5bffadc23cc4f287935bb452375481d29ec23f7fe8a6",
+  "ui_block_count": 5,
+  "total_blocks": 5,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memory aid: \"Expansion = wide gap + flexible sealant (thermal swing); Control = narrow groove (drying shrinkage); Construction = dowels (shear transfer); Isolation = separation (independent movement).\"</Tip>",
+      "raw_hash": "sha256:a084bfe6f3c0ca6d9d154f6b52b6d6cd100eeeae7b5abbe4d739ddaff01566b6",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: \"Expansion = wide gap + flexible sealant (thermal swing); Control = narrow groove (drying shrinkage); Construction = dowels (shear transfer); Isolation = separation (independent movement).\"\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4cfcd2b9a712ebfb2cfbe187983aef7e66c0aafbf029b1e50197d002e14d7ebd",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memory aid: \"Expansion = wide gap + flexible sealant (thermal swing); Control = narrow groove (drying shrinkage); Construction = dowels (shear transfer); Isolation = separation (independent movement).\"",
+      "children_text": "Memory aid: \"Expansion = wide gap + flexible sealant (thermal swing); Control = narrow groove (drying shrinkage); Construction = dowels (shear transfer); Isolation = separation (independent movement).\"",
+      "start_offset": 6588,
+      "end_offset": 6800,
+      "line_start": 44,
+      "line_end": 44,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Using control joints where expansion joints are required, assuming both serve the same purpose.\" correction=\"Control joints (0.25-0.5 inches) handle drying shrinkage at 15-25 feet spacing. Expansion joints (0.2-0.5 inches depending on temperature) are spaced 25-40 feet and require more flexible sealants.\" />",
+      "raw_hash": "sha256:c45ca86b83457a929df8d62a4c7a9a216e25a374b44833bcbe6c2aa98b9fe9d5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Using control joints where expansion joints are required, assuming both serve the same purpose.\", correction=\"Control joints (0.25-0.5 inches) handle drying shrinkage at 15-25 feet spacing. Expansion joints (0.2-0.5 inches depending on temperature) are spaced 25-40 feet and require more flexible sealants.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:91ddb7fe4bf11cccce141397857c1bf6eadc4193b1fe1186ad477be5c913bb4d",
+      "props": {
+        "mistake": "Using control joints where expansion joints are required, assuming both serve the same purpose.",
+        "correction": "Control joints (0.25-0.5 inches) handle drying shrinkage at 15-25 feet spacing. Expansion joints (0.2-0.5 inches depending on temperature) are spaced 25-40 feet and require more flexible sealants."
+      },
+      "props_json": {
+        "mistake": "Using control joints where expansion joints are required, assuming both serve the same purpose.",
+        "correction": "Control joints (0.25-0.5 inches) handle drying shrinkage at 15-25 feet spacing. Expansion joints (0.2-0.5 inches depending on temperature) are spaced 25-40 feet and require more flexible sealants."
+      },
+      "props_text": "mistake=\"Using control joints where expansion joints are required, assuming both serve the same purpose.\" correction=\"Control joints (0.25-0.5 inches) handle drying shrinkage at 15-25 feet spacing. Expansion joints (0.2-0.5 inches depending on temperature) are spaced 25-40 feet and require more flexible sealants.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6822,
+      "end_offset": 7157,
+      "line_start": 48,
+      "line_end": 48,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Omitting dowel bars at construction joints to save cost, assuming the adjacent concrete will key together adequately.\" correction=\"Without dowel bars, differential settlement between pours causes shear failure and spalling. Dowels are mandatory for structural integrity.\" />",
+      "raw_hash": "sha256:64e869c0c30ee71224c044155557900685f49fb45c0fae5ae740eac1754537d0",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Omitting dowel bars at construction joints to save cost, assuming the adjacent concrete will key together adequately.\", correction=\"Without dowel bars, differential settlement between pours causes shear failure and spalling. Dowels are mandatory for structural integrity.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:8f615d7ab6a34f92885066cf4ddf2d50543f8ca9df4c1b9a834a1541f4785396",
+      "props": {
+        "mistake": "Omitting dowel bars at construction joints to save cost, assuming the adjacent concrete will key together adequately.",
+        "correction": "Without dowel bars, differential settlement between pours causes shear failure and spalling. Dowels are mandatory for structural integrity."
+      },
+      "props_json": {
+        "mistake": "Omitting dowel bars at construction joints to save cost, assuming the adjacent concrete will key together adequately.",
+        "correction": "Without dowel bars, differential settlement between pours causes shear failure and spalling. Dowels are mandatory for structural integrity."
+      },
+      "props_text": "mistake=\"Omitting dowel bars at construction joints to save cost, assuming the adjacent concrete will key together adequately.\" correction=\"Without dowel bars, differential settlement between pours causes shear failure and spalling. Dowels are mandatory for structural integrity.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7159,
+      "end_offset": 7459,
+      "line_start": 50,
+      "line_end": 50,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Specifying shear connections in a seismic-zone moment-resisting frame, thinking pin connections are sufficient for gravity loads.\" correction=\"Shear (simple) connections cannot transfer bending moments required to resist lateral forces in earthquakes. Moment connections are mandatory for seismic zones.\" />",
+      "raw_hash": "sha256:f7cecda91b6abc44aaa3cdfe29371a3d77071a9884debec9244fd0d9b8f539c9",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Specifying shear connections in a seismic-zone moment-resisting frame, thinking pin connections are sufficient for gravity loads.\", correction=\"Shear (simple) connections cannot transfer bending moments required to resist lateral forces in earthquakes. Moment connections are mandatory for seismic zones.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:991e777166d629c5b8e41453470c6bc9428e693493b1f44548cb009b42881981",
+      "props": {
+        "mistake": "Specifying shear connections in a seismic-zone moment-resisting frame, thinking pin connections are sufficient for gravity loads.",
+        "correction": "Shear (simple) connections cannot transfer bending moments required to resist lateral forces in earthquakes. Moment connections are mandatory for seismic zones."
+      },
+      "props_json": {
+        "mistake": "Specifying shear connections in a seismic-zone moment-resisting frame, thinking pin connections are sufficient for gravity loads.",
+        "correction": "Shear (simple) connections cannot transfer bending moments required to resist lateral forces in earthquakes. Moment connections are mandatory for seismic zones."
+      },
+      "props_text": "mistake=\"Specifying shear connections in a seismic-zone moment-resisting frame, thinking pin connections are sufficient for gravity loads.\" correction=\"Shear (simple) connections cannot transfer bending moments required to resist lateral forces in earthquakes. Moment connections are mandatory for seismic zones.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7461,
+      "end_offset": 7794,
+      "line_start": 52,
+      "line_end": 52,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Calculating expansion joint width using only the slab length, forgetting to multiply by the thermal coefficient and temperature change (delta-T)\", \"Placing dowel bars on the top surface instead of at mid-depth, reducing their shear transfer capacity\", \"Using rigid welds at isolation joints, eliminating the intended independent movement capability\"]} />",
+      "raw_hash": "sha256:90f0f50fae5c114478c6efad76fafb42543db1063453c8d903bb7f695f3e76ef",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Calculating expansion joint width using only the slab length, forgetting to multiply by the thermal coefficient and temperature change (delta-T)\\\", \\\"Placing dowel bars on the top surface instead of at mid-depth, reducing their shear transfer capacity\\\", \\\"Using rigid welds at isolation joints, eliminating the intended independent movement capability\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:bf391133a39cc8cbedf21ccdd5900126ac4a688cbdc84509882aaa8781be3d88",
+      "props": {
+        "mistakes": "{[\"Calculating expansion joint width using only the slab length, forgetting to multiply by the thermal coefficient and temperature change (delta-T)\", \"Placing dowel bars on the top surface instead of at mid-depth, reducing their shear transfer capacity\", \"Using rigid welds at isolation joints, eliminating the intended independent movement capability\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Calculating expansion joint width using only the slab length, forgetting to multiply by the thermal coefficient and temperature change (delta-T)\", \"Placing dowel bars on the top surface instead of at mid-depth, reducing their shear transfer capacity\", \"Using rigid welds at isolation joints, eliminating the intended independent movement capability\"]}"
+      },
+      "props_text": "mistakes={[\"Calculating expansion joint width using only the slab length, forgetting to multiply by the thermal coefficient and temperature change (delta-T)\", \"Placing dowel bars on the top surface instead of at mid-depth, reducing their shear transfer capacity\", \"Using rigid welds at isolation joints, eliminating the intended independent movement capability\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7796,
+      "end_offset": 8179,
+      "line_start": 54,
+      "line_end": 54,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:1457af43bc124fb950c08570aa2660c453dad63c9aecabb0b277648e27048c04"
+}

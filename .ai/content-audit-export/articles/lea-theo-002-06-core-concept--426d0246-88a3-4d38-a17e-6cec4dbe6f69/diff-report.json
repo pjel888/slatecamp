@@ -1,0 +1,42 @@
+{
+  "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+  "slug": "lea-theo-002-06-core-concept",
+  "generated_at": "2026-05-03T07:48:53.126Z",
+  "old_hash": "sha256:cc369d78a026a9a2d5ab06215362d4e27608a611c8020f32a83d48215b889a0c",
+  "new_hash": "sha256:08cf5b1ff16ec55528ac7acfac5195269cbf728a4f6529061b9f557d1c13e40f",
+  "original_hash": "sha256:cc369d78a026a9a2d5ab06215362d4e27608a611c8020f32a83d48215b889a0c",
+  "normalized_hash": "sha256:46c9d2edcd830713b317d33a7b5b9188b54e4da321a0a5329717b0107ae195aa",
+  "candidate_hash": "sha256:08cf5b1ff16ec55528ac7acfac5195269cbf728a4f6529061b9f557d1c13e40f",
+  "changed": true,
+  "changed_line_count": 112,
+  "inserted_line_count": 1,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 14,
+  "ui_blocks_candidate_count": 13,
+  "ui_blocks_changed_count": 1,
+  "ui_blocks_count": 14,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 13,
+  "changed_text_summary": {
+    "changed": 112,
+    "inserted": 1,
+    "deleted": 0,
+    "original_line_count": 126,
+    "candidate_line_count": 127
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [
+      "ui_0001"
+    ],
+    "changed_count": 1
+  },
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate is missing 1 preserved UI block(s)."
+  ],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."
+}

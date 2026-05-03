@@ -1,0 +1,95 @@
+{
+  "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
+  "slug": "lea-util-002-08-core-principles-standards",
+  "normalized_created_at": "2026-05-01T13:33:43.760Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:45ce8d5e7554274a76155d96d0c01b2a6054b0358b109f96af91f35ec0eecb30",
+  "normalized_content_hash": "d3bc3fb88764c03b4f9e371a5da17a0eb882705959cce5c45937e190468b99c9",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable headers={[\"Design Step\", \"Formula / Method\", \"Philippine Reference\"]} rows={[[\"1. Occupant Load\", \"1 person per 10 m\u00b2 (office)\", \"PD 1096 Table 1206-A\"], [\"2. Peak Population\", \"Occupant Load \u00d7 0.85 (during 15-min peak)\", \"Industry Standard\"], [\"3. RTT Calculation\", \"2H/V + n\u00d7(t_c+t_d) + t_s\", \"ASHRAE 26.1\"], [\"4. Interval Design\", \"RTT / N_e \u2264 40 s (office)\", \"ASME A17.1\"], [\"5. HC Verification\", \"(300 \u00d7 CC \u00d7 trips) / Population \u2265 12%\", \"IGCC Elevator Performance\"]]} />",
+      "raw_hash": "sha256:6c9e25006dcea1dbc7c4317d79354fa508f4aeb5f7f767f54ff577b355fd9a22",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Design Step\\\", \\\"Formula / Method\\\", \\\"Philippine Reference\\\"]}\", rows=\"{[[\\\"1. Occupant Load\\\", \\\"1 person per 10 m\u00b2 (office)\\\", \\\"PD 1096 Table 1206-A\\\"], [\\\"2. Peak Population\\\", \\\"Occupant Load \u00d7 0.85 (during 15-min peak)\\\", \\\"Industry Standard\\\"], [\\\"3. RTT Calculation\\\", \\\"2H/V + n\u00d7(t_c+t_d) + t_s\\\", \\\"ASHRAE 26.1\\\"], [\\\"4. Interval Design\\\", \\\"RTT / N_e \u2264 40 s (office)\\\", \\\"ASME A17.1\\\"], [\\\"5. HC Verification\\\", \\\"(300 \u00d7 CC \u00d7 trips) / Population \u2265 12%\\\", \\\"IGCC Elevator Performance\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:6ce493ff74448dd0545508c537a5f807146e70823196c37496fde33791573316",
+      "props": {
+        "headers": "{[\"Design Step\", \"Formula / Method\", \"Philippine Reference\"]}",
+        "rows": "{[[\"1. Occupant Load\", \"1 person per 10 m\u00b2 (office)\", \"PD 1096 Table 1206-A\"], [\"2. Peak Population\", \"Occupant Load \u00d7 0.85 (during 15-min peak)\", \"Industry Standard\"], [\"3. RTT Calculation\", \"2H/V + n\u00d7(t_c+t_d) + t_s\", \"ASHRAE 26.1\"], [\"4. Interval Design\", \"RTT / N_e \u2264 40 s (office)\", \"ASME A17.1\"], [\"5. HC Verification\", \"(300 \u00d7 CC \u00d7 trips) / Population \u2265 12%\", \"IGCC Elevator Performance\"]]}"
+      },
+      "props_json": {
+        "headers": "{[\"Design Step\", \"Formula / Method\", \"Philippine Reference\"]}",
+        "rows": "{[[\"1. Occupant Load\", \"1 person per 10 m\u00b2 (office)\", \"PD 1096 Table 1206-A\"], [\"2. Peak Population\", \"Occupant Load \u00d7 0.85 (during 15-min peak)\", \"Industry Standard\"], [\"3. RTT Calculation\", \"2H/V + n\u00d7(t_c+t_d) + t_s\", \"ASHRAE 26.1\"], [\"4. Interval Design\", \"RTT / N_e \u2264 40 s (office)\", \"ASME A17.1\"], [\"5. HC Verification\", \"(300 \u00d7 CC \u00d7 trips) / Population \u2265 12%\", \"IGCC Elevator Performance\"]]}"
+      },
+      "props_text": "headers={[\"Design Step\", \"Formula / Method\", \"Philippine Reference\"]} rows={[[\"1. Occupant Load\", \"1 person per 10 m\u00b2 (office)\", \"PD 1096 Table 1206-A\"], [\"2. Peak Population\", \"Occupant Load \u00d7 0.85 (during 15-min peak)\", \"Industry Standard\"], [\"3. RTT Calculation\", \"2H/V + n\u00d7(t_c+t_d) + t_s\", \"ASHRAE 26.1\"], [\"4. Interval Design\", \"RTT / N_e \u2264 40 s (office)\", \"ASME A17.1\"], [\"5. HC Verification\", \"(300 \u00d7 CC \u00d7 trips) / Population \u2265 12%\", \"IGCC Elevator Performance\"]]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9504,
+      "end_offset": 9994,
+      "line_start": 236,
+      "line_end": 236,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing occupant load (area-based) with peak population (85% of occupant load); this inflates elevator count unnecessarily\", \"Using only one RTT estimate without sensitivity analysis for speed variation; a 0.5 m/s speed change alters RTT by 20\u201330%\", \"Forgetting to include door times and dwell times in RTT; these account for 40\u201360% of total RTT in dense office buildings\", \"Treating all floors equally in 'average stops'; high-rise buildings must weight express vs. local service differently\", \"Selecting elevator capacity based only on weight limit (1,000 kg) without verifying persons capacity (13 persons) or HC performance\"]} />",
+      "raw_hash": "sha256:e4e36b36ec1d580ccffc9b1f80b3a41ad2009bddc6842ba85a7cdac0b64981bc",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing occupant load (area-based) with peak population (85% of occupant load); this inflates elevator count unnecessarily\\\", \\\"Using only one RTT estimate without sensitivity analysis for speed variation; a 0.5 m/s speed change alters RTT by 20\u201330%\\\", \\\"Forgetting to include door times and dwell times in RTT; these account for 40\u201360% of total RTT in dense office buildings\\\", \\\"Treating all floors equally in 'average stops'; high-rise buildings must weight express vs. local service differently\\\", \\\"Selecting elevator capacity based only on weight limit (1,000 kg) without verifying persons capacity (13 persons) or HC performance\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:843567a2ec7a4c7437e58c96177896907386c3c53685224833ee1c59d45df228",
+      "props": {
+        "mistakes": "{[\"Confusing occupant load (area-based) with peak population (85% of occupant load); this inflates elevator count unnecessarily\", \"Using only one RTT estimate without sensitivity analysis for speed variation; a 0.5 m/s speed change alters RTT by 20\u201330%\", \"Forgetting to include door times and dwell times in RTT; these account for 40\u201360% of total RTT in dense office buildings\", \"Treating all floors equally in 'average stops'; high-rise buildings must weight express vs. local service differently\", \"Selecting elevator capacity based only on weight limit (1,000 kg) without verifying persons capacity (13 persons) or HC performance\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Confusing occupant load (area-based) with peak population (85% of occupant load); this inflates elevator count unnecessarily\", \"Using only one RTT estimate without sensitivity analysis for speed variation; a 0.5 m/s speed change alters RTT by 20\u201330%\", \"Forgetting to include door times and dwell times in RTT; these account for 40\u201360% of total RTT in dense office buildings\", \"Treating all floors equally in 'average stops'; high-rise buildings must weight express vs. local service differently\", \"Selecting elevator capacity based only on weight limit (1,000 kg) without verifying persons capacity (13 persons) or HC performance\"]}"
+      },
+      "props_text": "mistakes={[\"Confusing occupant load (area-based) with peak population (85% of occupant load); this inflates elevator count unnecessarily\", \"Using only one RTT estimate without sensitivity analysis for speed variation; a 0.5 m/s speed change alters RTT by 20\u201330%\", \"Forgetting to include door times and dwell times in RTT; these account for 40\u201360% of total RTT in dense office buildings\", \"Treating all floors equally in 'average stops'; high-rise buildings must weight express vs. local service differently\", \"Selecting elevator capacity based only on weight limit (1,000 kg) without verifying persons capacity (13 persons) or HC performance\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 10042,
+      "end_offset": 10706,
+      "line_start": 242,
+      "line_end": 242,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout variant=\"info\">\nBefore finalizing elevator design:\n\n\u2713 Confirm occupant load per PD 1096 occupancy type and floor area\n\u2713 Define peak-hour population (typically 85 % of occupant load)\n\u2713 Calculate RTT with realistic speed, stop count, and dwell times\n\u2713 Size number of elevators to achieve 25\u201340 s interval (office) or 40\u201360 s (residential)\n\u2713 Verify HC \u2265 12 % for office; \u2265 8 % for residential (or higher based on client service level)\n\u2713 Confirm car dimensions meet PD 1096 minimums and BP 344 accessibility\n\u2713 Select elevator type (hydraulic, traction, MRL) based on building height and site constraints\n\u2713 Document all calculations for permit submission to Building Official per PD 1096\n</Callout>",
+      "raw_hash": "sha256:e03bedc5b2e12caa3b7c9ef2ae60043939e2073317ccb0a2f008aec00d8130ff",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"info\"\n- Text: Before finalizing elevator design: \u2713 Confirm occupant load per PD 1096 occupancy type and floor area \u2713 Define peak-hour population (typically 85 % of occupant load) \u2713 Calculate RTT with realistic speed, stop count, and dwell times \u2713 Size number of elevators to achieve 25\u201340 s interval (office) or 40\u201360 s (residential) \u2713 Verify HC \u2265 12 % for office; \u2265 8 % for residential (or higher based on client service level) \u2713 Confirm car dimensions meet PD 1096 minimums and BP 344 accessibility \u2713 Select elev\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:8f2a99a5e7d2b6006d996645703a59ea6eedc47b43a2bdf3c20486ef685c7de4",
+      "props": {
+        "variant": "info"
+      },
+      "props_json": {
+        "variant": "info"
+      },
+      "props_text": "variant=\"info\"",
+      "children_raw": "\nBefore finalizing elevator design:\n\n\u2713 Confirm occupant load per PD 1096 occupancy type and floor area\n\u2713 Define peak-hour population (typically 85 % of occupant load)\n\u2713 Calculate RTT with realistic speed, stop count, and dwell times\n\u2713 Size number of elevators to achieve 25\u201340 s interval (office) or 40\u201360 s (residential)\n\u2713 Verify HC \u2265 12 % for office; \u2265 8 % for residential (or higher based on client service level)\n\u2713 Confirm car dimensions meet PD 1096 minimums and BP 344 accessibility\n\u2713 Select elevator type (hydraulic, traction, MRL) based on building height and site constraints\n\u2713 Document all calculations for permit submission to Building Official per PD 1096\n",
+      "children_text": "Before finalizing elevator design: \u2713 Confirm occupant load per PD 1096 occupancy type and floor area \u2713 Define peak-hour population (typically 85 % of occupant load) \u2713 Calculate RTT with realistic speed, stop count, and dwell times \u2713 Size number of elevators to achieve 25\u201340 s interval (office) or 40\u201360 s (residential) \u2713 Verify HC \u2265 12 % for office; \u2265 8 % for residential (or higher based on client service level) \u2713 Confirm car dimensions meet PD 1096 minimums and BP 344 accessibility \u2713 Select elev",
+      "start_offset": 10734,
+      "end_offset": 11436,
+      "line_start": 248,
+      "line_end": 259,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:61ac4c86493e09a18562ae7be73129e557f494fed1ef81e3ed6ff622675f05cc"
+}

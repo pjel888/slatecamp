@@ -1,0 +1,36 @@
+{
+  "article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
+  "slug": "lea-util-001-09-core-concept",
+  "generated_at": "2026-05-01T13:33:43.584Z",
+  "parser_version": "ui-block-parser-v1",
+  "error_count": 0,
+  "warning_count": 1,
+  "unknown_block_count": 1,
+  "critical_block_count": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "block_id": "ui_0006",
+      "component_name": "WikiMistakeCard",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0006",
+      "component_name": "WikiMistakeCard",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:f64504d3b5d67e7d8223c4bd854d42f02911d129444d9c1b861b62d29e6a1c72",
+      "line_start": 150,
+      "line_end": 150,
+      "warnings": [
+        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "critical_blocks": []
+}

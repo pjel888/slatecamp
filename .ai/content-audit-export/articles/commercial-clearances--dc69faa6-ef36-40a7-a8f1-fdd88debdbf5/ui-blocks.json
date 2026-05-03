@@ -1,0 +1,279 @@
+{
+  "article_id": "dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+  "slug": "commercial-clearances",
+  "normalized_created_at": "2026-05-01T13:33:44.130Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:b6ef800b005b196238e703a6a759d29e4b02182e5dcb7aea0ad8b29d7f15f0f3",
+  "normalized_content_hash": "sha256:8be21423b6dff15c139869d7e4c454d8ab85c8928b2fe25544d9902ed09a744b",
+  "ui_block_count": 10,
+  "total_blocks": 10,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule VII - Commercial Clearances\">\n\n\nO-R-D = Office / Retail / Dining \u2014 the three commercial clearance domains.\n\n\n</LawCallout>",
+      "raw_hash": "sha256:d15bc29c882b81a41fe35cdc295b9a7f51489f0b26af1c1148b4b1467c36f41d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"tip\", title=\"Mnemonic\"\n- Text: O-R-D = Office / Retail / Dining \u2014 the three commercial clearance domains.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e688c30ac9382de1a5c5227c9961f11e599dc352cdf886bf7549161a86c0a86d",
+      "props": {
+        "variant": "tip",
+        "title": "Mnemonic"
+      },
+      "props_json": {
+        "variant": "tip",
+        "title": "Mnemonic",
+        "code": "pd1096",
+        "section": "Rule VII - Commercial Clearances"
+      },
+      "props_text": "variant=tip, title=Mnemonic, code=pd1096, section=Rule VII - Commercial Clearances",
+      "children_raw": "\n\nO-R-D = Office / Retail / Dining \u2014 the three commercial clearance domains.\n\n",
+      "children_text": "O-R-D = Office / Retail / Dining \u2014 the three commercial clearance domains.",
+      "start_offset": 5747,
+      "end_offset": 5875,
+      "line_start": 63,
+      "line_end": 67,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\">\n\n\ud83d\uded1 Stop & Think: If Filipinos have a smaller sitting knee height (PH 95th% mlea = 55.9 cm vs. US = 61.6 cm), why does BP 344 set knee clearance at 700 mm H while ADA sets it at 27 inches (685 mm) H? Which is _more generous_?\n\n</LawCallout>",
+      "raw_hash": "sha256:04484193e7e84e3beb81af474193885a77ced81d48e7766433af9f472a1e8623",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"bp344\"\n- Text: \ud83d\uded1 Stop & Think: If Filipinos have a smaller sitting knee height (PH 95th% mlea = 55.9 cm vs. US = 61.6 cm), why does BP 344 set knee clearance at 700 mm H while ADA sets it at 27 inches (685 mm) H? Which is _more generous_?\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:03add20ec80f64de76e36f0b841c5fbccf085acaad06848766a172b99126f807",
+      "props": {
+        "code": "bp344"
+      },
+      "props_json": {
+        "code": "bp344"
+      },
+      "props_text": "code=\"bp344\"",
+      "children_raw": "\n\n\ud83d\uded1 Stop & Think: If Filipinos have a smaller sitting knee height (PH 95th% mlea = 55.9 cm vs. US = 61.6 cm), why does BP 344 set knee clearance at 700 mm H while ADA sets it at 27 inches (685 mm) H? Which is _more generous_?\n\n",
+      "children_text": "\ud83d\uded1 Stop & Think: If Filipinos have a smaller sitting knee height (PH 95th% mlea = 55.9 cm vs. US = 61.6 cm), why does BP 344 set knee clearance at 700 mm H while ADA sets it at 27 inches (685 mm) H? Which is _more generous_?",
+      "start_offset": 8160,
+      "end_offset": 8426,
+      "line_start": 101,
+      "line_end": 105,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout variant=\"tip\" title=\"Mnemonic\">\n\n\"Seven\u2013Nine\u2013One-Two\" = 76 cm \u2192 91 cm \u2192 122 cm\nThink of it as a runway widening as the crowd grows: small crowd, small runway; big crowd, wide runway.\n\n</Callout>",
+      "raw_hash": "sha256:cc083f410a97b2b6b67df6d8ee7a0409b5a9355668bcde168c090c5fbaf4360e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"tip\", title=\"Mnemonic\"\n- Text: \"Seven\u2013Nine\u2013One-Two\" = 76 cm \u2192 91 cm \u2192 122 cm Think of it as a runway widening as the crowd grows: small crowd, small runway; big crowd, wide runway.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:76a9b26b51abae62fec15cefaef79bde527d1d3c2c947dc493f2c92291f33118",
+      "props": {
+        "variant": "tip",
+        "title": "Mnemonic"
+      },
+      "props_json": {
+        "variant": "tip",
+        "title": "Mnemonic"
+      },
+      "props_text": "variant=\"tip\" title=\"Mnemonic\"",
+      "children_raw": "\n\n\"Seven\u2013Nine\u2013One-Two\" = 76 cm \u2192 91 cm \u2192 122 cm\nThink of it as a runway widening as the crowd grows: small crowd, small runway; big crowd, wide runway.\n\n",
+      "children_text": "\"Seven\u2013Nine\u2013One-Two\" = 76 cm \u2192 91 cm \u2192 122 cm Think of it as a runway widening as the crowd grows: small crowd, small runway; big crowd, wide runway.",
+      "start_offset": 12107,
+      "end_offset": 12310,
+      "line_start": 149,
+      "line_end": 154,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "Note",
+      "raw": "<Note>\n\nExam note: Always state your threshold and show the calculation. Partial credit often depends on methodology.\n\n</Note>",
+      "raw_hash": "sha256:6aef06fefe84f82ae25ba916af532de7a07c3f18a22102381a5883e777a6b887",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Note\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Exam note: Always state your threshold and show the calculation. Partial credit often depends on methodology.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:766704a2e7523eb595d3831b0120188934ee8906bd690c4a18079c5af9d984ed",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\nExam note: Always state your threshold and show the calculation. Partial credit often depends on methodology.\n\n",
+      "children_text": "Exam note: Always state your threshold and show the calculation. Partial credit often depends on methodology.",
+      "start_offset": 13570,
+      "end_offset": 13696,
+      "line_start": 177,
+      "line_end": 181,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"ra9514\" title=\"RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks.\">\n\nKey insight: The IBC's _stepped-aisle, both-sides_ minimum of 48 in (122 cm) closely mirrors PH's 122 cm both-sides retail aisle requirement. This is not coincidence \u2014 RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks.\n\n</LawCallout>",
+      "raw_hash": "sha256:940d39189d9662137b9d0ff32d07a7cd4bca22ceb02ebebc139e623bdcbf8376",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"ra9514\", title=\"RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks.\"\n- Text: Key insight: The IBC's _stepped-aisle, both-sides_ minimum of 48 in (122 cm) closely mirrors PH's 122 cm both-sides retail aisle requirement. This is not coincidence \u2014 RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4abc8470f863b5dc41b567920620df109cb0eeb643cdf63285f4ce65d90ff987",
+      "props": {
+        "code": "ra9514",
+        "title": "RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks."
+      },
+      "props_json": {
+        "code": "ra9514",
+        "title": "RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks."
+      },
+      "props_text": "code=\"ra9514\" title=\"RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks.\"",
+      "children_raw": "\n\nKey insight: The IBC's _stepped-aisle, both-sides_ minimum of 48 in (122 cm) closely mirrors PH's 122 cm both-sides retail aisle requirement. This is not coincidence \u2014 RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks.\n\n",
+      "children_text": "Key insight: The IBC's _stepped-aisle, both-sides_ minimum of 48 in (122 cm) closely mirrors PH's 122 cm both-sides retail aisle requirement. This is not coincidence \u2014 RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks.",
+      "start_offset": 14348,
+      "end_offset": 14692,
+      "line_start": 196,
+      "line_end": 200,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0006",
+      "block_type": "mdx_component",
+      "component_name": "Note",
+      "raw": "<Note>\n\nAnthropometric note: RA 9514's 76 cm base aisle accommodates a Filipino mlea at the 95th percentile shoulder breadth of 49.4 cm passing another person at 95th percentile (49.4 cm) \u2014 combined = ~99 cm. The 76 cm base is for _single-file flow_ (one side of aisle with no opposing pedestrian traffic). The 122 cm both-sides dimension enables two-way flow with slight lateral clearance.\n\n</Note>",
+      "raw_hash": "sha256:227462aa1999a6ef88dd6a7b11f92a276217dedac29fb5842a854e2353e7ab5f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"Note\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Anthropometric note: RA 9514's 76 cm base aisle accommodates a Filipino mlea at the 95th percentile shoulder breadth of 49.4 cm passing another person at 95th percentile (49.4 cm) \u2014 combined = ~99 cm. The 76 cm base is for _single-file flow_ (one side of aisle with no opposing pedestrian traffic). The 122 cm both-sides dimension enables two-way flow with slight lateral clearance.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d1f5ef7490ef324858861c7542d4202175e21f6744cecd42d30539234dd91394",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\nAnthropometric note: RA 9514's 76 cm base aisle accommodates a Filipino mlea at the 95th percentile shoulder breadth of 49.4 cm passing another person at 95th percentile (49.4 cm) \u2014 combined = ~99 cm. The 76 cm base is for _single-file flow_ (one side of aisle with no opposing pedestrian traffic). The 122 cm both-sides dimension enables two-way flow with slight lateral clearance.\n\n",
+      "children_text": "Anthropometric note: RA 9514's 76 cm base aisle accommodates a Filipino mlea at the 95th percentile shoulder breadth of 49.4 cm passing another person at 95th percentile (49.4 cm) \u2014 combined = ~99 cm. The 76 cm base is for _single-file flow_ (one side of aisle with no opposing pedestrian traffic). The 122 cm both-sides dimension enables two-way flow with slight lateral clearance.",
+      "start_offset": 15115,
+      "end_offset": 15514,
+      "line_start": 209,
+      "line_end": 213,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0007",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout variant=\"tip\" title=\"Mnemonic\">\n\n\"7-8-4-8\"\n\u2192 **7**00 mm H / **8**00 mm W / **4**80 mm D / table at **7**50 mm \u2192 \"Seven-Eight, Four-Eight, Seven-Fifty\"\n\n</Callout>",
+      "raw_hash": "sha256:962812ec879852893678a312acf8a6bf89024fe28693d071d134deaabc22836e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"tip\", title=\"Mnemonic\"\n- Text: \"7-8-4-8\" \u2192 **7**00 mm H / **8**00 mm W / **4**80 mm D / table at **7**50 mm \u2192 \"Seven-Eight, Four-Eight, Seven-Fifty\"\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:39e96617cae7546109b1b260de47c714ba7618f913727aab1eaa1c8d75391bc8",
+      "props": {
+        "variant": "tip",
+        "title": "Mnemonic"
+      },
+      "props_json": {
+        "variant": "tip",
+        "title": "Mnemonic"
+      },
+      "props_text": "variant=\"tip\" title=\"Mnemonic\"",
+      "children_raw": "\n\n\"7-8-4-8\"\n\u2192 **7**00 mm H / **8**00 mm W / **4**80 mm D / table at **7**50 mm \u2192 \"Seven-Eight, Four-Eight, Seven-Fifty\"\n\n",
+      "children_text": "\"7-8-4-8\" \u2192 **7**00 mm H / **8**00 mm W / **4**80 mm D / table at **7**50 mm \u2192 \"Seven-Eight, Four-Eight, Seven-Fifty\"",
+      "start_offset": 16365,
+      "end_offset": 16536,
+      "line_start": 234,
+      "line_end": 239,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0008",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout variant=\"tip\" title=\"Mnemonic\">\n\nThe ADA knee clearance mnemonic: \"27-30-19\" (Height-Width-Depth in inches). Note the depth of 19 in = 483 mm (not 480 mm \u2014 a slight variance from BP 344's 480 mm, but essentially equivleant).\n\n</Callout>",
+      "raw_hash": "sha256:b0384eec0ed76048bf31b3c76ff8d101b056b7a8315f10a2bf10eb21ec9fbe33",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0008 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"tip\", title=\"Mnemonic\"\n- Text: The ADA knee clearance mnemonic: \"27-30-19\" (Height-Width-Depth in inches). Note the depth of 19 in = 483 mm (not 480 mm \u2014 a slight variance from BP 344's 480 mm, but essentially equivleant).\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4a04abc363114100e9cbb9cca2eca8555fadab6b1514535c00bfe4de0c682928",
+      "props": {
+        "variant": "tip",
+        "title": "Mnemonic"
+      },
+      "props_json": {
+        "variant": "tip",
+        "title": "Mnemonic"
+      },
+      "props_text": "variant=\"tip\" title=\"Mnemonic\"",
+      "children_raw": "\n\nThe ADA knee clearance mnemonic: \"27-30-19\" (Height-Width-Depth in inches). Note the depth of 19 in = 483 mm (not 480 mm \u2014 a slight variance from BP 344's 480 mm, but essentially equivleant).\n\n",
+      "children_text": "The ADA knee clearance mnemonic: \"27-30-19\" (Height-Width-Depth in inches). Note the depth of 19 in = 483 mm (not 480 mm \u2014 a slight variance from BP 344's 480 mm, but essentially equivleant).",
+      "start_offset": 17235,
+      "end_offset": 17480,
+      "line_start": 255,
+      "line_end": 259,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0009",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\">\n\n\ud83d\uded1 Stop & Think: A restaurant has 40 dining tables in the Philippines. How many must be accessible per BP 344? How many would be required if the same restaurant operated in the US under ADA?\n\n</LawCallout>",
+      "raw_hash": "sha256:9d9d54e0e9b26971c7ab98bcc02200e2033ab49aa01a7eb7fb7b06229da166db",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0009 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"bp344\"\n- Text: \ud83d\uded1 Stop & Think: A restaurant has 40 dining tables in the Philippines. How many must be accessible per BP 344? How many would be required if the same restaurant operated in the US under ADA?\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ae75a4a9be574adc188cbe8f458bd7d4713ec9486e2cf92c84815c72ad42d52a",
+      "props": {
+        "code": "bp344"
+      },
+      "props_json": {
+        "code": "bp344"
+      },
+      "props_text": "code=\"bp344\"",
+      "children_raw": "\n\n\ud83d\uded1 Stop & Think: A restaurant has 40 dining tables in the Philippines. How many must be accessible per BP 344? How many would be required if the same restaurant operated in the US under ADA?\n\n",
+      "children_text": "\ud83d\uded1 Stop & Think: A restaurant has 40 dining tables in the Philippines. How many must be accessible per BP 344? How many would be required if the same restaurant operated in the US under ADA?",
+      "start_offset": 18207,
+      "end_offset": 18439,
+      "line_start": 273,
+      "line_end": 277,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0010",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\">\n\nCritical LEA trap: The question may give you tables OR seats. BP 344 is table-based (10%); ADA is seating-space-based (5%). Using the wrong percentage or unit for the wrong code is a full-point deduction.\n\n</LawCallout>",
+      "raw_hash": "sha256:d244b79f76144fdf919ddfc77eb0f31d44680fb15247fe8492430f6cb0413c45",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0010 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"bp344\"\n- Text: Critical LEA trap: The question may give you tables OR seats. BP 344 is table-based (10%); ADA is seating-space-based (5%). Using the wrong percentage or unit for the wrong code is a full-point deduction.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:22ac9f18c4457fee035cdbf5e28017c7041e77a93465ba49c254c0fa78786ada",
+      "props": {
+        "code": "bp344"
+      },
+      "props_json": {
+        "code": "bp344"
+      },
+      "props_text": "code=\"bp344\"",
+      "children_raw": "\n\nCritical LEA trap: The question may give you tables OR seats. BP 344 is table-based (10%); ADA is seating-space-based (5%). Using the wrong percentage or unit for the wrong code is a full-point deduction.\n\n",
+      "children_text": "Critical LEA trap: The question may give you tables OR seats. BP 344 is table-based (10%); ADA is seating-space-based (5%). Using the wrong percentage or unit for the wrong code is a full-point deduction.",
+      "start_offset": 18715,
+      "end_offset": 18961,
+      "line_start": 282,
+      "line_end": 286,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:093e6e76c95a54246042bfb1ef6c845fee29e151630619f37bc2e2120ad9b67e"
+}

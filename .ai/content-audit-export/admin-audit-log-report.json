@@ -1,0 +1,44 @@
+{
+  "attempted_at": "2026-05-01T12:50:04.846Z",
+  "dry_run": true,
+  "apply": false,
+  "run_log_path": "runs/content-roundtrip-2026-05-01T12-50-04-587Z-aa70a2bc/run-log.json",
+  "payload": {
+    "run_type": "content_audit_roundtrip",
+    "scope_type": "content-audit:push",
+    "phase": "tier0_static_check",
+    "provider": "manual",
+    "model": null,
+    "prompt_version": null,
+    "status": "completed",
+    "total_items": 1,
+    "completed_items": 1,
+    "flagged_items": 0,
+    "completed_at": "2026-05-01T12:50:04.791Z",
+    "notes": "Local content-audit run log imported from content-audit:push. No AI job was started.",
+    "metadata": {
+      "created_from": "content_audit_scripts",
+      "no_ai_job_started": true,
+      "local_run_log": {
+        "run_id": "content-roundtrip-2026-05-01T12-50-04-587Z-aa70a2bc",
+        "generated_at": "2026-05-01T12:50:04.791Z",
+        "command": "content-audit:push",
+        "started_at": "2026-05-01T12:50:04.587Z",
+        "completed_at": "2026-05-01T12:50:04.791Z",
+        "dry_run": true,
+        "apply": false,
+        "all_safe": false,
+        "processed": 1,
+        "pushed": 0,
+        "error_count": 0,
+        "status": "completed"
+      }
+    }
+  },
+  "logged": false,
+  "admin_run_id": null,
+  "warnings": [
+    "Dry-run mode: no admin AI Audit row was inserted."
+  ],
+  "blockers": []
+}

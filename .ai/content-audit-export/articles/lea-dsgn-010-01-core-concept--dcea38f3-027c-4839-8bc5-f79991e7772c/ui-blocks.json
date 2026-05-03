@@ -1,0 +1,41 @@
+{
+  "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+  "slug": "lea-dsgn-010-01-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.383Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:13fb67b9ffc6bc903bbe7fab53845135a2674e47b64469abc8e0f28c9087265f",
+  "normalized_content_hash": "13fb67b9ffc6bc903bbe7fab53845135a2674e47b64469abc8e0f28c9087265f",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n mistakes={[\n 'Using Rule VII or VIII for parking (Correct: Rule XIX).',\n 'ERR-DSGN-027: Using 1/100 sqm for Office instead of 1/125 sqm.',\n 'ERR-DSGN-025: Using 2.0m width for standard stalls instead of 2.5m.',\n 'Applying 1% for accessibility without enforcing the minimum 2 slots rule.',\n 'Applying restaurant ratios to the total building area instead of just the dining area.',\n 'Using 1/200 sqm for Warehouse parking (Correct: 1/1,000 sqm GFA).',\n ]}\n/>",
+      "raw_hash": "sha256:78edf508438ec76dc0fe0182baab65db1edbbe818f12a8c7da4cbe2db39a8d25",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'Using Rule VII or VIII for parking (Correct: Rule XIX).',\\n 'ERR-DSGN-027: Using 1/100 sqm for Office instead of 1/125 sqm.',\\n 'ERR-DSGN-025: Using 2.0m width for standard stalls instead of 2.5m.',\\n 'Applying 1% for accessibility without enforcing the minimum 2 slots rule.',\\n 'Applying restaurant ratios to the total building area instead of just the dining area.',\\n 'Using 1/200 sqm for Warehouse parking (Correct: 1/1,000 sqm GFA).',\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:75d8a6bbf96ee58e6ade1b69e4cfd555e624c98b24e9ec977cbb501c430d0454",
+      "props": {
+        "mistakes": "{[\n 'Using Rule VII or VIII for parking (Correct: Rule XIX).',\n 'ERR-DSGN-027: Using 1/100 sqm for Office instead of 1/125 sqm.',\n 'ERR-DSGN-025: Using 2.0m width for standard stalls instead of 2.5m.',\n 'Applying 1% for accessibility without enforcing the minimum 2 slots rule.',\n 'Applying restaurant ratios to the total building area instead of just the dining area.',\n 'Using 1/200 sqm for Warehouse parking (Correct: 1/1,000 sqm GFA).',\n ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n 'Using Rule VII or VIII for parking (Correct: Rule XIX).',\n 'ERR-DSGN-027: Using 1/100 sqm for Office instead of 1/125 sqm.',\n 'ERR-DSGN-025: Using 2.0m width for standard stalls instead of 2.5m.',\n 'Applying 1% for accessibility without enforcing the minimum 2 slots rule.',\n 'Applying restaurant ratios to the total building area instead of just the dining area.',\n 'Using 1/200 sqm for Warehouse parking (Correct: 1/1,000 sqm GFA).',\n ]}"
+      },
+      "props_text": "mistakes={[\n 'Using Rule VII or VIII for parking (Correct: Rule XIX).',\n 'ERR-DSGN-027: Using 1/100 sqm for Office instead of 1/125 sqm.',\n 'ERR-DSGN-025: Using 2.0m width for standard stalls instead of 2.5m.',\n 'Applying 1% for accessibility without enforcing the minimum 2 slots rule.',\n 'Applying restaurant ratios to the total building area instead of just the dining area.',\n 'Using 1/200 sqm for Warehouse parking (Correct: 1/1,000 sqm GFA).',\n ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4059,
+      "end_offset": 4533,
+      "line_start": 95,
+      "line_end": 104,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:5c0eefb07772d53c93f8d2ecb6cf22a72c7973b12d9f695a911414487731adcd"
+}

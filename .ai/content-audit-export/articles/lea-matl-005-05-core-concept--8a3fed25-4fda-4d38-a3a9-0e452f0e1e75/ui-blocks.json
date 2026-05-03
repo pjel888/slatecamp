@@ -1,0 +1,119 @@
+{
+  "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
+  "slug": "lea-matl-005-05-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.853Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:274776aed88a551a06f2b5e16c72db1bebe3fb1bcef8ea9b8566f1ca22a7cf95",
+  "normalized_content_hash": "0e32eb2782db1683fd4e83c3ff3c012ee5ccb4c642fde30a3dd806cf87e4219e",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Conventional timber formwork is the default for Philippine low-rise projects; it is economical and flexible. System formwork becomes cost-effective only for high-rise buildings with 15+ identical floors (capital amortized). ACI 347 stripping criteria (70% strength for horizontal spans) are empirically proven; never deviate for schedule pressure. Proper scaffolding inspection is a life-safety critical; non-negotiable enforcement is essential.</Tip>",
+      "raw_hash": "sha256:0e6f8ba21b70635e9783064fdf233c6c4158bd4f4d668ea560a18bf245d8381b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Conventional timber formwork is the default for Philippine low-rise projects; it is economical and flexible. System formwork becomes cost-effective only for high-rise buildings with 15+ identical floors (capital amortized). ACI 347 stripping criteria (70% strength for horizontal spans) are empirically proven; never deviate for schedule pressure. Proper scaffolding inspection is a life-safety critical; non-negotiable enforcement is essential.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:0cdc088b2a2dc4d1b184ede4cac257f15633f1d2abae3b8106053d3e36323b4d",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Conventional timber formwork is the default for Philippine low-rise projects; it is economical and flexible. System formwork becomes cost-effective only for high-rise buildings with 15+ identical floors (capital amortized). ACI 347 stripping criteria (70% strength for horizontal spans) are empirically proven; never deviate for schedule pressure. Proper scaffolding inspection is a life-safety critical; non-negotiable enforcement is essential.",
+      "children_text": "Conventional timber formwork is the default for Philippine low-rise projects; it is economical and flexible. System formwork becomes cost-effective only for high-rise buildings with 15+ identical floors (capital amortized). ACI 347 stripping criteria (70% strength for horizontal spans) are empirically proven; never deviate for schedule pressure. Proper scaffolding inspection is a life-safety critical; non-negotiable enforcement is essential.",
+      "start_offset": 6994,
+      "end_offset": 7450,
+      "line_start": 78,
+      "line_end": 78,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Stripping Forms Before Strength Criteria Met\" body=\"A project manager orders forms struck at 4 days to accelerate schedule. Concrete has achieved only ~50% strength; beams sag under live load of workers walking on them. Cracks develop in tension zones; concrete is compromised for the structure's 50-year life. ACI 347 criteria (70% for horizontal spans) are non-negotiable; schedule delays are cheaper than structural repair.\" />",
+      "raw_hash": "sha256:0c19c41f48bd526a7ee86b52a92e8f11d3bc80920eead11af340aa332731a512",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Stripping Forms Before Strength Criteria Met\", body=\"A project manager orders forms struck at 4 days to accelerate schedule. Concrete has achieved only ~50% strength; beams sag under live load of workers walking on them. Cracks develop in tension zones; concrete is compromised for the structure's 50-year life. ACI 347 criteria (70% for horizontal spans) are non-negotiable; schedule delays are cheaper than structural repair.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:7aefd5dc8099e6d2e84f7fe248f0508a4c83c62cf195eaa54a98514115198ab8",
+      "props": {
+        "title": "Stripping Forms Before Strength Criteria Met",
+        "body": "A project manager orders forms struck at 4 days to accelerate schedule. Concrete has achieved only ~50% strength; beams sag under live load of workers walking on them. Cracks develop in tension zones; concrete is compromised for the structure's 50-year life. ACI 347 criteria (70% for horizontal spans) are non-negotiable; schedule delays are cheaper than structural repair."
+      },
+      "props_json": {
+        "title": "Stripping Forms Before Strength Criteria Met",
+        "body": "A project manager orders forms struck at 4 days to accelerate schedule. Concrete has achieved only ~50% strength; beams sag under live load of workers walking on them. Cracks develop in tension zones; concrete is compromised for the structure's 50-year life. ACI 347 criteria (70% for horizontal spans) are non-negotiable; schedule delays are cheaper than structural repair."
+      },
+      "props_text": "title=\"Stripping Forms Before Strength Criteria Met\" body=\"A project manager orders forms struck at 4 days to accelerate schedule. Concrete has achieved only ~50% strength; beams sag under live load of workers walking on them. Cracks develop in tension zones; concrete is compromised for the structure's 50-year life. ACI 347 criteria (70% for horizontal spans) are non-negotiable; schedule delays are cheaper than structural repair.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7472,
+      "end_offset": 7926,
+      "line_start": 82,
+      "line_end": 82,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Inadequate Scaffolding Inspection Causing Collapse\" body=\"Tube-and-clamp scaffolding is erected and occupied without formal inspection. A clamp connection fails (poor installation, rust, overload); the entire bay collapses, injuring/killing workers. OSHA requires documented daily/weekly inspections and competent person certification. Inspection is a life-safety requirement, not optional.\" />",
+      "raw_hash": "sha256:006c553e054c50accae4bcf8b1a1bc505dc1cc683eb3edb64a0778b502b29286",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Inadequate Scaffolding Inspection Causing Collapse\", body=\"Tube-and-clamp scaffolding is erected and occupied without formal inspection. A clamp connection fails (poor installation, rust, overload); the entire bay collapses, injuring/killing workers. OSHA requires documented daily/weekly inspections and competent person certification. Inspection is a life-safety requirement, not optional.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:80060e2c0a08c801a7e434fdda50d4c8e0872ab52b4ba28429544e7dc4c2513a",
+      "props": {
+        "title": "Inadequate Scaffolding Inspection Causing Collapse",
+        "body": "Tube-and-clamp scaffolding is erected and occupied without formal inspection. A clamp connection fails (poor installation, rust, overload); the entire bay collapses, injuring/killing workers. OSHA requires documented daily/weekly inspections and competent person certification. Inspection is a life-safety requirement, not optional."
+      },
+      "props_json": {
+        "title": "Inadequate Scaffolding Inspection Causing Collapse",
+        "body": "Tube-and-clamp scaffolding is erected and occupied without formal inspection. A clamp connection fails (poor installation, rust, overload); the entire bay collapses, injuring/killing workers. OSHA requires documented daily/weekly inspections and competent person certification. Inspection is a life-safety requirement, not optional."
+      },
+      "props_text": "title=\"Inadequate Scaffolding Inspection Causing Collapse\" body=\"Tube-and-clamp scaffolding is erected and occupied without formal inspection. A clamp connection fails (poor installation, rust, overload); the entire bay collapses, injuring/killing workers. OSHA requires documented daily/weekly inspections and competent person certification. Inspection is a life-safety requirement, not optional.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7928,
+      "end_offset": 8346,
+      "line_start": 84,
+      "line_end": 84,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList items={[\"Underestimating concrete form pressure from rapid placement\u2014high pour rates (bucket hoisting with rapid cycles) increase hydrostatic-like pressure on vertical forms. Design formwork for actual placement rate, not nominal rate.\", \"Using single-use formwork when reusable coco lumber is available\u2014virgin timber or plastic forms are expensive; conventional reusable timber is economical for 5\u201310 cycles per set.\", \"Failing to account for Philippine rainy season on formwork\u2014wet coco lumber swells, warps, and loses strength. Covered storage and drying periods are necessary; schedule contingency is essential.\", \"Neglecting form pressure calculation in design\u2014fresh concrete is heavy (~2.4 kPa per meter depth). Underestimated support systems fail. Always calculate per ACI 347 and apply safety factors.\", \"Inadequate fall protection on scaffolding\u2014guardrails, safety nets, or harness systems are mandatory per OSHA. Workers without protection face fatal fall risk. Enforcement is non-negotiable, even in cost-sensitive projects.\"]} />",
+      "raw_hash": "sha256:e47156c774a311d2c379cf2e987aadbf02904cd0204f5f9015268e5297aaf0ee",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[\\\"Underestimating concrete form pressure from rapid placement\u2014high pour rates (bucket hoisting with rapid cycles) increase hydrostatic-like pressure on vertical forms. Design formwork for actual placement rate, not nominal rate.\\\", \\\"Using single-use formwork when reusable coco lumber is available\u2014virgin timber or plastic forms are expensive; conventional reusable timber is economical for 5\u201310 cycles per set.\\\", \\\"Failing to account for Philippine rainy season on formwork\u2014wet coco lumber swells, warps, and loses strength. Covered storage and drying periods are necessary; schedule contingency is essential.\\\", \\\"Neglecting form pressure calculation in design\u2014fresh concrete is heavy (~2.4 kPa per meter depth). Underestimated support systems fail. Always calculate per ACI 347 and apply safety factors.\\\", \\\"Inadequate fall protection on scaffolding\u2014guardrails, safety nets, or harness systems are mandatory per OSHA. Workers without protection face fatal fall risk. Enforcement is non-negotiable, even in cost-sensitive projects.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4785d3abcbcbfe11411fa5881db0ea0668da63ddab43b9d4db13e51cbd7464e4",
+      "props": {
+        "items": "{[\"Underestimating concrete form pressure from rapid placement\u2014high pour rates (bucket hoisting with rapid cycles) increase hydrostatic-like pressure on vertical forms. Design formwork for actual placement rate, not nominal rate.\", \"Using single-use formwork when reusable coco lumber is available\u2014virgin timber or plastic forms are expensive; conventional reusable timber is economical for 5\u201310 cycles per set.\", \"Failing to account for Philippine rainy season on formwork\u2014wet coco lumber swells, warps, and loses strength. Covered storage and drying periods are necessary; schedule contingency is essential.\", \"Neglecting form pressure calculation in design\u2014fresh concrete is heavy (~2.4 kPa per meter depth). Underestimated support systems fail. Always calculate per ACI 347 and apply safety factors.\", \"Inadequate fall protection on scaffolding\u2014guardrails, safety nets, or harness systems are mandatory per OSHA. Workers without protection face fatal fall risk. Enforcement is non-negotiable, even in cost-sensitive projects.\"]}"
+      },
+      "props_json": {
+        "items": "{[\"Underestimating concrete form pressure from rapid placement\u2014high pour rates (bucket hoisting with rapid cycles) increase hydrostatic-like pressure on vertical forms. Design formwork for actual placement rate, not nominal rate.\", \"Using single-use formwork when reusable coco lumber is available\u2014virgin timber or plastic forms are expensive; conventional reusable timber is economical for 5\u201310 cycles per set.\", \"Failing to account for Philippine rainy season on formwork\u2014wet coco lumber swells, warps, and loses strength. Covered storage and drying periods are necessary; schedule contingency is essential.\", \"Neglecting form pressure calculation in design\u2014fresh concrete is heavy (~2.4 kPa per meter depth). Underestimated support systems fail. Always calculate per ACI 347 and apply safety factors.\", \"Inadequate fall protection on scaffolding\u2014guardrails, safety nets, or harness systems are mandatory per OSHA. Workers without protection face fatal fall risk. Enforcement is non-negotiable, even in cost-sensitive projects.\"]}"
+      },
+      "props_text": "items={[\"Underestimating concrete form pressure from rapid placement\u2014high pour rates (bucket hoisting with rapid cycles) increase hydrostatic-like pressure on vertical forms. Design formwork for actual placement rate, not nominal rate.\", \"Using single-use formwork when reusable coco lumber is available\u2014virgin timber or plastic forms are expensive; conventional reusable timber is economical for 5\u201310 cycles per set.\", \"Failing to account for Philippine rainy season on formwork\u2014wet coco lumber swells, warps, and loses strength. Covered storage and drying periods are necessary; schedule contingency is essential.\", \"Neglecting form pressure calculation in design\u2014fresh concrete is heavy (~2.4 kPa per meter depth). Underestimated support systems fail. Always calculate per ACI 347 and apply safety factors.\", \"Inadequate fall protection on scaffolding\u2014guardrails, safety nets, or harness systems are mandatory per OSHA. Workers without protection face fatal fall risk. Enforcement is non-negotiable, even in cost-sensitive projects.\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8348,
+      "end_offset": 9406,
+      "line_start": 86,
+      "line_end": 86,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:818645ad12677c3d0e83537467cc6dc2fa5ec2abc15cc6fb32190d4febbc7136"
+}

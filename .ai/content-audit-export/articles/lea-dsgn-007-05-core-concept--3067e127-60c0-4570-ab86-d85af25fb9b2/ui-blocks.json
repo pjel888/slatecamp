@@ -1,0 +1,63 @@
+{
+  "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
+  "slug": "lea-dsgn-007-05-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.461Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:7bb351e206881352dda37fb0e81baeb7457f1a07db42ead648040458bc4ad6c9",
+  "normalized_content_hash": "9363e123d3f62ea89c2a94912a878d1ec5725b600c6e5e6ac74e04b9d3f2dd62",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Brief = requirements, not solutions. Read carefully: explicit requirements, implied constraints, ambiguities. Clarify before design. Program + Site + Code + Intent = Design parameters. Verify occupancy group early; it drives many other decisions.</Tip>",
+      "raw_hash": "sha256:0aeb0ca91d732c2bbcb2c0955605db8f9cf8962a865cc8d7ff04622aa29fb51d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Brief = requirements, not solutions. Read carefully: explicit requirements, implied constraints, ambiguities. Clarify before design. Program + Site + Code + Intent = Design parameters. Verify occupancy group early; it drives many other decisions.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a520e4bc087a75ad87ce079e4c3981b31902ec40f262b5f0c8f6dad18c5d11bd",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Brief = requirements, not solutions. Read carefully: explicit requirements, implied constraints, ambiguities. Clarify before design. Program + Site + Code + Intent = Design parameters. Verify occupancy group early; it drives many other decisions.",
+      "children_text": "Brief = requirements, not solutions. Read carefully: explicit requirements, implied constraints, ambiguities. Clarify before design. Program + Site + Code + Intent = Design parameters. Verify occupancy group early; it drives many other decisions.",
+      "start_offset": 5806,
+      "end_offset": 6063,
+      "line_start": 52,
+      "line_end": 52,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Assuming the brief is complete without asking clarification questions about ambiguous or missing information\",\"Misinterpreting occupancy group, leading to incorrect egress, parking, or accessibility designs\",\"Failing to identify site constraints (topography, utilities, drainage) that should influence building placement\",\"Overlooking regulatory requirements (specific codes, permits, inspections) until design is complete\",\"Confusing program areas with total GFA (program areas usually exclude circulation, structure, MEP)\",\"Assuming design intent from aesthetic preference without understanding functional requirements\",\"Ignoring climate and environmental context (tropical weather, seismic zone, flood risk) specified in brief\",\"Making assumptions about budget or schedule without client confirmation\",\"Failing to identify decision-makers and approval process; designing in isolation\",\"Missing implicit constraints (e.g., 'minimize site disturbance' suggests environmental sensitivity or poor soil conditions)\"]} />",
+      "raw_hash": "sha256:b6b35eb64b007479d8f81802e0a270d284d7ebf8e7b9252e1850fb7b07c05dd0",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Assuming the brief is complete without asking clarification questions about ambiguous or missing information\\\",\\\"Misinterpreting occupancy group, leading to incorrect egress, parking, or accessibility designs\\\",\\\"Failing to identify site constraints (topography, utilities, drainage) that should influence building placement\\\",\\\"Overlooking regulatory requirements (specific codes, permits, inspections) until design is complete\\\",\\\"Confusing program areas with total GFA (program areas usually exclude circulation, structure, MEP)\\\",\\\"Assuming design intent from aesthetic preference without understanding functional requirements\\\",\\\"Ignoring climate and environmental context (tropical weather, seismic zone, flood risk) specified in brief\\\",\\\"Making assumptions about budget or schedule without client confirmation\\\",\\\"Failing to identify decision-makers and approval process; designing in isolation\\\",\\\"Missing implicit constraints (e.g., 'minimize site disturbance' suggests environmental sensitivity or poor soil conditions)\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4c64c279a450d8e6d21113dc4e3411bf7a2e434452190541a3324dc935b2633d",
+      "props": {
+        "mistakes": "{[\"Assuming the brief is complete without asking clarification questions about ambiguous or missing information\",\"Misinterpreting occupancy group, leading to incorrect egress, parking, or accessibility designs\",\"Failing to identify site constraints (topography, utilities, drainage) that should influence building placement\",\"Overlooking regulatory requirements (specific codes, permits, inspections) until design is complete\",\"Confusing program areas with total GFA (program areas usually exclude circulation, structure, MEP)\",\"Assuming design intent from aesthetic preference without understanding functional requirements\",\"Ignoring climate and environmental context (tropical weather, seismic zone, flood risk) specified in brief\",\"Making assumptions about budget or schedule without client confirmation\",\"Failing to identify decision-makers and approval process; designing in isolation\",\"Missing implicit constraints (e.g., 'minimize site disturbance' suggests environmental sensitivity or poor soil conditions)\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Assuming the brief is complete without asking clarification questions about ambiguous or missing information\",\"Misinterpreting occupancy group, leading to incorrect egress, parking, or accessibility designs\",\"Failing to identify site constraints (topography, utilities, drainage) that should influence building placement\",\"Overlooking regulatory requirements (specific codes, permits, inspections) until design is complete\",\"Confusing program areas with total GFA (program areas usually exclude circulation, structure, MEP)\",\"Assuming design intent from aesthetic preference without understanding functional requirements\",\"Ignoring climate and environmental context (tropical weather, seismic zone, flood risk) specified in brief\",\"Making assumptions about budget or schedule without client confirmation\",\"Failing to identify decision-makers and approval process; designing in isolation\",\"Missing implicit constraints (e.g., 'minimize site disturbance' suggests environmental sensitivity or poor soil conditions)\"]}"
+      },
+      "props_text": "mistakes={[\"Assuming the brief is complete without asking clarification questions about ambiguous or missing information\",\"Misinterpreting occupancy group, leading to incorrect egress, parking, or accessibility designs\",\"Failing to identify site constraints (topography, utilities, drainage) that should influence building placement\",\"Overlooking regulatory requirements (specific codes, permits, inspections) until design is complete\",\"Confusing program areas with total GFA (program areas usually exclude circulation, structure, MEP)\",\"Assuming design intent from aesthetic preference without understanding functional requirements\",\"Ignoring climate and environmental context (tropical weather, seismic zone, flood risk) specified in brief\",\"Making assumptions about budget or schedule without client confirmation\",\"Failing to identify decision-makers and approval process; designing in isolation\",\"Missing implicit constraints (e.g., 'minimize site disturbance' suggests environmental sensitivity or poor soil conditions)\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6085,
+      "end_offset": 7132,
+      "line_start": 56,
+      "line_end": 56,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:9c5a2af7b54e65df2fbe8e588aae539142c4ee29aeee19fb046f8a1e32300d6f"
+}

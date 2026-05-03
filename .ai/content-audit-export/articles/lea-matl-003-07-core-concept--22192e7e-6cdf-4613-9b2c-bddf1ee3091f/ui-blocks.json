@@ -1,0 +1,119 @@
+{
+  "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+  "slug": "lea-matl-003-07-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:44.105Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:ba79ab2dad000393e57f6b08348a2d152f5eafbfadb5f4e8e6246118122bac32",
+  "normalized_content_hash": "1f083ce3fa3e31d94a5c1692772272530fe03a9741b788421c9022735e84eb7c",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\n     A325 is the workhorse bolt for Philippine primary structural connections.\n     Default to A325 unless the question emphasizes maximum stiffness/compact\n     geometry (A490), corrosion in a protective environment (A490 stainless), or\n     light connections (A307). For tension-control questions, remember that TC\n     bolts break the spline automatically at approximately 90% of proof load\u2014no\n     wrench calibration or skill required. Modern high-volume fabrication in the\n     Philippines increasingly specifies TC to ensure consistency and speed. For\n     welding of bolted connections, see LEA-MATL-003-05.\n   </Tip>",
+      "raw_hash": "sha256:4b010e0bd0d7ea6a4e038921c6390f2051c2058885db32e8e55bcfcddfb098c1",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: A325 is the workhorse bolt for Philippine primary structural connections. Default to A325 unless the question emphasizes maximum stiffness/compact geometry (A490), corrosion in a protective environment (A490 stainless), or light connections (A307). For tension-control questions, remember that TC bolts break the spline automatically at approximately 90% of proof load\u2014no wrench calibration or skill required. Modern high-volume fabrication in the Philippines increasingly specifies TC to ensure cons\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:16b7a4eac6635e3494026ae2b94df606d173ce88ff0a785ee33ac79421b34858",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n     A325 is the workhorse bolt for Philippine primary structural connections.\n     Default to A325 unless the question emphasizes maximum stiffness/compact\n     geometry (A490), corrosion in a protective environment (A490 stainless), or\n     light connections (A307). For tension-control questions, remember that TC\n     bolts break the spline automatically at approximately 90% of proof load\u2014no\n     wrench calibration or skill required. Modern high-volume fabrication in the\n     Philippines increasingly specifies TC to ensure consistency and speed. For\n     welding of bolted connections, see LEA-MATL-003-05.\n   ",
+      "children_text": "A325 is the workhorse bolt for Philippine primary structural connections. Default to A325 unless the question emphasizes maximum stiffness/compact geometry (A490), corrosion in a protective environment (A490 stainless), or light connections (A307). For tension-control questions, remember that TC bolts break the spline automatically at approximately 90% of proof load\u2014no wrench calibration or skill required. Modern high-volume fabrication in the Philippines increasingly specifies TC to ensure cons",
+      "start_offset": 12000,
+      "end_offset": 12630,
+      "line_start": 113,
+      "line_end": 122,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard\n  title='Specifying A490 Without Accounting for Galvanizing Prohibition'\n  body='A designer specifies A490 bolts for a bridge expecting hot-dip galvanizing for corrosion protection. A490 cannot be galvanized; hydrogen embrittlement causes brittle failure. The fabricator must either abandon galvanizing (risking rust in a marine environment) or substitute stainless bolts (tripling cost). Always verify that A490 can be used ungalvanized, or default to A325 with galvanizing for outdoor work.'\n/>",
+      "raw_hash": "sha256:7bd30ec58c63e9fe64c41ed4b23d04a598a348df835e1df6a60b4dbd8c596b3c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Specifying A490 Without Accounting for Galvanizing Prohibition\", body=\"A designer specifies A490 bolts for a bridge expecting hot-dip galvanizing for corrosion protection. A490 cannot be galvanized; hydrogen embrittlement causes brittle failure. The fabricator must either abandon galvanizing (risking rust in a marine environment) or substitute stainless bolts (tripling cost). Always verify that A490 can be used ungalvanized, or default to A325 with galvanizing for outdoor work.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:3f8e96fae37d3d0437cf86a4866d3d61b8ffe1fdbf7609063095cef3c7001f36",
+      "props": {
+        "title": "Specifying A490 Without Accounting for Galvanizing Prohibition",
+        "body": "A designer specifies A490 bolts for a bridge expecting hot-dip galvanizing for corrosion protection. A490 cannot be galvanized; hydrogen embrittlement causes brittle failure. The fabricator must either abandon galvanizing (risking rust in a marine environment) or substitute stainless bolts (tripling cost). Always verify that A490 can be used ungalvanized, or default to A325 with galvanizing for outdoor work."
+      },
+      "props_json": {
+        "title": "Specifying A490 Without Accounting for Galvanizing Prohibition",
+        "body": "A designer specifies A490 bolts for a bridge expecting hot-dip galvanizing for corrosion protection. A490 cannot be galvanized; hydrogen embrittlement causes brittle failure. The fabricator must either abandon galvanizing (risking rust in a marine environment) or substitute stainless bolts (tripling cost). Always verify that A490 can be used ungalvanized, or default to A325 with galvanizing for outdoor work."
+      },
+      "props_text": "title='Specifying A490 Without Accounting for Galvanizing Prohibition'\n  body='A designer specifies A490 bolts for a bridge expecting hot-dip galvanizing for corrosion protection. A490 cannot be galvanized; hydrogen embrittlement causes brittle failure. The fabricator must either abandon galvanizing (risking rust in a marine environment) or substitute stainless bolts (tripling cost). Always verify that A490 can be used ungalvanized, or default to A325 with galvanizing for outdoor work.'",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 12652,
+      "end_offset": 13165,
+      "line_start": 126,
+      "line_end": 129,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard\n  title='Under-Tensioning Bolts by Specifying Snug-Tight for Primary Connections'\n  body='A floor system connection specifies snug-tight installation to reduce costs. Snug-tight provides only ~25% preload, yielding minimal friction and allowing slip under load. This increases deformation, vibration, and fatigue risk. Primary connections require calibrated wrench (70% preload) or TC installation (90% preload) per NSCP 2015.'\n/>",
+      "raw_hash": "sha256:196aa40bcbcfdb96a50705ecd570d1b1b199a6e5d6cd98b011b1e066d520063a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Under-Tensioning Bolts by Specifying Snug-Tight for Primary Connections\", body=\"A floor system connection specifies snug-tight installation to reduce costs. Snug-tight provides only ~25% preload, yielding minimal friction and allowing slip under load. This increases deformation, vibration, and fatigue risk. Primary connections require calibrated wrench (70% preload) or TC installation (90% preload) per NSCP 2015.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:357f3187b3ecf7fdd35a2ebacdf5a2a345865f3bc8a306699b6c477358d2286c",
+      "props": {
+        "title": "Under-Tensioning Bolts by Specifying Snug-Tight for Primary Connections",
+        "body": "A floor system connection specifies snug-tight installation to reduce costs. Snug-tight provides only ~25% preload, yielding minimal friction and allowing slip under load. This increases deformation, vibration, and fatigue risk. Primary connections require calibrated wrench (70% preload) or TC installation (90% preload) per NSCP 2015."
+      },
+      "props_json": {
+        "title": "Under-Tensioning Bolts by Specifying Snug-Tight for Primary Connections",
+        "body": "A floor system connection specifies snug-tight installation to reduce costs. Snug-tight provides only ~25% preload, yielding minimal friction and allowing slip under load. This increases deformation, vibration, and fatigue risk. Primary connections require calibrated wrench (70% preload) or TC installation (90% preload) per NSCP 2015."
+      },
+      "props_text": "title='Under-Tensioning Bolts by Specifying Snug-Tight for Primary Connections'\n  body='A floor system connection specifies snug-tight installation to reduce costs. Snug-tight provides only ~25% preload, yielding minimal friction and allowing slip under load. This increases deformation, vibration, and fatigue risk. Primary connections require calibrated wrench (70% preload) or TC installation (90% preload) per NSCP 2015.'",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 13167,
+      "end_offset": 13614,
+      "line_start": 131,
+      "line_end": 134,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  items={[\n    'Assuming turn-of-nut and calibrated wrench installation are equally reliable\u2014turn-of-nut requires expert judgment and frequent wrench re-calibration; calibrated wrench relies on mechanical torque consistency; TC eliminates both concerns through automatic spline breakoff.',\n    'Omitting inspection of bolt preload\u2014under-tensioned bolts show visible gaps or slip marks on mating surfaces; over-tensioned TC bolts show incomplete spline breakoff. Visual inspection is critical and inexpensive.',\n    'Mixing bolt grades in a single connection (e.g., A325 and A490)\u2014this complicates design verification and introduces risk of preferential overload on the weaker bolts. Specify uniform bolt grade throughout.',\n    'Failing to account for galvanizing availability when selecting A325 vs. A490\u2014A325 is galvanizing-compatible (ideal for bridges, coastal work); A490 prohibits galvanizing. For outdoor/corrosive environments, A325 is the pragmatic choice.',\n    \"Specifying over-tensioned bolts expecting to increase connection capacity\u2014excessive tension causes premature bolt rupture under load and does not increase capacity beyond the bolt's yield strength. Proper tension (per code) is optimum; higher preload provides no benefit and increases failure risk.\",\n  ]}\n/>",
+      "raw_hash": "sha256:c96a91f5c3307f0f301ce27385dffe97bac84c9542e1819355ced3571f1eb8d0",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[\\n    'Assuming turn-of-nut and calibrated wrench installation are equally reliable\u2014turn-of-nut requires expert judgment and frequent wrench re-calibration; calibrated wrench relies on mechanical torque consistency; TC eliminates both concerns through automatic spline breakoff.',\\n    'Omitting inspection of bolt preload\u2014under-tensioned bolts show visible gaps or slip marks on mating surfaces; over-tensioned TC bolts show incomplete spline breakoff. Visual inspection is critical and inexpensive.',\\n    'Mixing bolt grades in a single connection (e.g., A325 and A490)\u2014this complicates design verification and introduces risk of preferential overload on the weaker bolts. Specify uniform bolt grade throughout.',\\n    'Failing to account for galvanizing availability when selecting A325 vs. A490\u2014A325 is galvanizing-compatible (ideal for bridges, coastal work); A490 prohibits galvanizing. For outdoor/corrosive environments, A325 is the pragmatic choice.',\\n    \\\"Specifying over-tensioned bolts expecting to increase connection capacity\u2014excessive tension causes premature bolt rupture under load and does not increase capacity beyond the bolt's yield strength. Proper tension (per code) is optimum; higher preload provides no benefit and increases failure risk.\\\",\\n  ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:6a20660de806c69c9e1d88e5ca33f0dfadfd32c43f87b0e021959a771a63552d",
+      "props": {
+        "items": "{[\n    'Assuming turn-of-nut and calibrated wrench installation are equally reliable\u2014turn-of-nut requires expert judgment and frequent wrench re-calibration; calibrated wrench relies on mechanical torque consistency; TC eliminates both concerns through automatic spline breakoff.',\n    'Omitting inspection of bolt preload\u2014under-tensioned bolts show visible gaps or slip marks on mating surfaces; over-tensioned TC bolts show incomplete spline breakoff. Visual inspection is critical and inexpensive.',\n    'Mixing bolt grades in a single connection (e.g., A325 and A490)\u2014this complicates design verification and introduces risk of preferential overload on the weaker bolts. Specify uniform bolt grade throughout.',\n    'Failing to account for galvanizing availability when selecting A325 vs. A490\u2014A325 is galvanizing-compatible (ideal for bridges, coastal work); A490 prohibits galvanizing. For outdoor/corrosive environments, A325 is the pragmatic choice.',\n    \"Specifying over-tensioned bolts expecting to increase connection capacity\u2014excessive tension causes premature bolt rupture under load and does not increase capacity beyond the bolt's yield strength. Proper tension (per code) is optimum; higher preload provides no benefit and increases failure risk.\",\n  ]}"
+      },
+      "props_json": {
+        "items": "{[\n    'Assuming turn-of-nut and calibrated wrench installation are equally reliable\u2014turn-of-nut requires expert judgment and frequent wrench re-calibration; calibrated wrench relies on mechanical torque consistency; TC eliminates both concerns through automatic spline breakoff.',\n    'Omitting inspection of bolt preload\u2014under-tensioned bolts show visible gaps or slip marks on mating surfaces; over-tensioned TC bolts show incomplete spline breakoff. Visual inspection is critical and inexpensive.',\n    'Mixing bolt grades in a single connection (e.g., A325 and A490)\u2014this complicates design verification and introduces risk of preferential overload on the weaker bolts. Specify uniform bolt grade throughout.',\n    'Failing to account for galvanizing availability when selecting A325 vs. A490\u2014A325 is galvanizing-compatible (ideal for bridges, coastal work); A490 prohibits galvanizing. For outdoor/corrosive environments, A325 is the pragmatic choice.',\n    \"Specifying over-tensioned bolts expecting to increase connection capacity\u2014excessive tension causes premature bolt rupture under load and does not increase capacity beyond the bolt's yield strength. Proper tension (per code) is optimum; higher preload provides no benefit and increases failure risk.\",\n  ]}"
+      },
+      "props_text": "items={[\n    'Assuming turn-of-nut and calibrated wrench installation are equally reliable\u2014turn-of-nut requires expert judgment and frequent wrench re-calibration; calibrated wrench relies on mechanical torque consistency; TC eliminates both concerns through automatic spline breakoff.',\n    'Omitting inspection of bolt preload\u2014under-tensioned bolts show visible gaps or slip marks on mating surfaces; over-tensioned TC bolts show incomplete spline breakoff. Visual inspection is critical and inexpensive.',\n    'Mixing bolt grades in a single connection (e.g., A325 and A490)\u2014this complicates design verification and introduces risk of preferential overload on the weaker bolts. Specify uniform bolt grade throughout.',\n    'Failing to account for galvanizing availability when selecting A325 vs. A490\u2014A325 is galvanizing-compatible (ideal for bridges, coastal work); A490 prohibits galvanizing. For outdoor/corrosive environments, A325 is the pragmatic choice.',\n    \"Specifying over-tensioned bolts expecting to increase connection capacity\u2014excessive tension causes premature bolt rupture under load and does not increase capacity beyond the bolt's yield strength. Proper tension (per code) is optimum; higher preload provides no benefit and increases failure risk.\",\n  ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 13616,
+      "end_offset": 14914,
+      "line_start": 136,
+      "line_end": 144,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:a0a56cb51ee99fbccd5a50428cfbf3bfb19804b98de325a84bc1d1537abd7233"
+}

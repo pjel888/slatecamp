@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "a7cb156f-be70-4ff4-9d9c-95a92a8052d3",
+  "slug": "translating-pwd-rights",
+  "title": "Translating PWD Rights",
+  "component_count": 3,
+  "components": [
+    {
+      "component_name": "Callout",
+      "block_ids": [
+        "ui_0001",
+        "ui_0002",
+        "ui_0003",
+        "ui_0004"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "LawCallout",
+      "block_ids": [
+        "ui_0006",
+        "ui_0007"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "Warn",
+      "block_ids": [
+        "ui_0005"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    }
+  ],
+  "unknown_components": [],
+  "custom_ui_block_count": 7,
+  "normalized_status": "passed",
+  "components_detected": [
+    "Callout",
+    "LawCallout",
+    "Warn"
+  ],
+  "unknown_components_detected": []
+}

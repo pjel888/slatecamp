@@ -1,0 +1,1072 @@
+{
+  "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:86c2af3f24a3599d013ebb2fd161f4b7834dc906ab6557d0aab40b9f8366cf29",
+  "question_count": 21,
+  "questions": [
+    {
+      "question_id": "23e3f4fa-cee6-4d14-8053-7f53eff46431",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Based on the specifications in \"Hydrology in Site Planning\", if a project requires 80 m, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "80 m is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "80 m is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "80 m applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "80 m is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 80 m as the requirement. Context: t in Quezon City on gently sloping terrain that drains toward an existing creek ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:16.688601+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b5dc9dbdccff61026a16d71998da0dc08ade3b38f1c1c12382459fd8566963c"
+    },
+    {
+      "question_id": "6e59465e-3479-44af-924f-95da1c07b073",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Using the Rational Method (metric form Q = CiA / 360), calculate the peak stormwater runoff for a 2-hectare site with a weighted runoff coefficient of 0.70 and a design storm intensity of 120 mm/hr.",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.47 m³/s, calculated as (0.70 × 120 × 2.0) / 360 = 168 / 360"
+        },
+        {
+          "id": "B",
+          "text": "0.58 m³/s, calculated using an incorrect runoff coefficient of 0.87 instead of 0.70"
+        },
+        {
+          "id": "C",
+          "text": "168.0 m³/s, which is the numerator before applying the metric conversion factor of 360"
+        },
+        {
+          "id": "D",
+          "text": "0.33 m³/s, calculated by omitting one hectare from the drainage area in the formula"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Q = (C × i × A) / 360 = (0.70 × 120 × 2.0) / 360 = 168 / 360 = 0.467 ≈ 0.47 m³/s.",
+        "explanation": "Using the metric Rational Method: Q = (C × i × A) / 360, where C = 0.70, i = 120 mm/hr, A = 2.0 ha. Q = (0.70 × 120 × 2.0) / 360 = 168 / 360 = 0.467 m³/s ≈ 0.47 m³/s. Option C (168.0 m³/s) is the most common error — students compute the numerator but forget to divide by 360, the metric unit conversion factor. Options B and D use incorrect C or A values.",
+        "common_misconceptions": [
+          "Forgetting the /360 metric conversion factor and reporting the numerator as the final answer",
+          "Using imperial formula variables without the metric conversion denominator"
+        ]
+      },
+      "explanation": "The metric Rational Method requires dividing CiA by 360; forgetting this conversion factor is the most common computational error on the LEA.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c9c687742dcdeeb034efedc4906ca96917d365e84350371ce9118c317be116df"
+    },
+    {
+      "question_id": "d0b4613a-3d80-42a3-98d7-251d4e8ec303",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Which design storm return period does Philippine standard practice typically specify for sizing drainage systems at commercial development sites?",
+      "options": [
+        {
+          "id": "A",
+          "text": "10-year return period, which is the standard for commercial sites per DPWH Design Guidelines"
+        },
+        {
+          "id": "B",
+          "text": "5-year return period, which is the standard for residential subdivisions in Philippine practice"
+        },
+        {
+          "id": "C",
+          "text": "25-year return period, which is required for all commercial development regardless of site area"
+        },
+        {
+          "id": "D",
+          "text": "100-year return period, which is the standard used for all Philippine drainage design regardless of land use"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Philippine DPWH Design Guidelines specify a 10-year return period for commercial sites, 25-year for critical infrastructure, and 5-year for residential.",
+        "explanation": "DPWH Design Guidelines and local drainage standards specify design storm return periods based on land use risk: 5-year for residential developments; 10-year for commercial sites; 25-year for critical infrastructure (hospitals, major roads, flood control structures). The 10-year return period balances cost with acceptable flood risk for commercial applications. Option A (5-year) is for residential, not commercial. Option C (25-year) applies to critical infrastructure. Option D (100-year) is used for major flood control planning, not routine commercial site drainage.",
+        "common_misconceptions": [
+          "Applying the residential 5-year storm to commercial drainage design",
+          "Assuming a single return period applies universally to all land use types"
+        ]
+      },
+      "explanation": "Return period selection depends on land use: 5-year (residential), 10-year (commercial), 25-year (critical infrastructure) per DPWH guidelines.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ba9a08e0af2a683c97107e51b18f642dbd14bced070f73bf4c8951120fc961a8"
+    },
+    {
+      "question_id": "58f0e2a6-9a02-4dc1-a902-c28122fdefb5",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "An LEA question asks which Philippine law governs the no-build easements from river and creek banks. A candidate cites PD 1096 (National Building Code). Why is this answer incorrect?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PD 1096 is incorrect because river easements were removed from Philippine law when the Water Code was repealed by subsequent legislation"
+        },
+        {
+          "id": "B",
+          "text": "PD 1096 is incorrect because only the DENR-EMB may set waterway buffer distances through administrative orders issued per region"
+        },
+        {
+          "id": "C",
+          "text": "PD 1096 governs building-to-property-line setbacks; waterway easements from river and creek banks are governed by PD 1067 Article 51"
+        },
+        {
+          "id": "D",
+          "text": "PD 1096 is incorrect because waterway easements are determined solely by local government unit ordinances under the Local Government Code"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 governs building-to-property-line setbacks; waterway easements are governed by PD 1067 (Water Code), Article 51 — they are separate requirements.",
+        "explanation": "This is documented Trap 3 in the article. PD 1096 (National Building Code) and its RIRR set building-to-property-line requirements — front yards, side yards, rear yards, and light courts. The 3 m / 20 m / 40 m no-build easements from rivers and creeks are established by Article 51 of PD 1067 (Water Code of the Philippines) as public use easements reserved for navigation, recreation, and flood salvage. These are entirely different parameters from different laws. The Water Code (PD 1067) has not been repealed (A). DENR issues supplemental orders (C) but the primary law is PD 1067. LGU ordinances (D) may supplement but cannot reduce the PD 1067 easements.",
+        "common_misconceptions": [
+          "Conflating building setbacks from property lines (PD 1096) with waterway easements from bank lines (PD 1067)",
+          "Assuming one building code governs all spatial requirements regardless of the element type"
+        ]
+      },
+      "explanation": "Waterway easements (PD 1067) and building setbacks (PD 1096) are governed by different laws, administered by different agencies, for different purposes.",
+      "code_citation": "PD 1067, Art. 51; PD 1096",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:145c7bc888e9c6e60e5d75ef062f09b39478344d358e9f5512e93d39e5286452"
+    },
+    {
+      "question_id": "3d4b327a-cb86-489f-b1a0-f879ffccd409",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under PD 1067 (Water Code of the Philippines), Article 51, what is the minimum no-build easement from river and stream banks in agricultural areas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 meters, which is the easement applicable to urban areas under PD 1067 Article 51"
+        },
+        {
+          "id": "B",
+          "text": "10 meters, an intermediate value not specified in the Water Code's three-category system"
+        },
+        {
+          "id": "C",
+          "text": "20 meters, the easement required for agricultural land under PD 1067 Article 51"
+        },
+        {
+          "id": "D",
+          "text": "40 meters, which is the Water Code easement for forest areas, not agricultural land"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1067 Article 51 sets 3 m (urban), 20 m (agricultural), and 40 m (forest) easements from river and stream banks.",
+        "explanation": "Article 51 of PD 1067 (Water Code of the Philippines) establishes three easement zones from river/stream banks — no structures or obstructions may be built within these zones: 3 meters in urban areas, 20 meters in agricultural areas, 40 meters in forest areas. Option A (3 m) is correct for urban, not agricultural. Option B (10 m) does not appear in PD 1067. Option D (40 m) applies to forest areas.",
+        "common_misconceptions": [
+          "Applying the urban 3-meter easement to agricultural sites",
+          "Citing PD 1096 as the source of river easement requirements instead of PD 1067"
+        ]
+      },
+      "explanation": "The three PD 1067 easement distances — 3 m urban, 20 m agricultural, 40 m forest — are standard LEA recall items.",
+      "code_citation": "PD 1067, Art. 51",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:74dd844812c7c6e27316fda1d5bb8a3d0161880c190f2f32ec2743d3dc2f4250"
+    },
+    {
+      "question_id": "56e93f4e-3eba-45b4-a7b9-eb6e98dcb4b1",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A 1.0-hectare commercial lot is post-development: 60% impervious pavement (C = 0.90) and 40% grass (C = 0.20). What is the weighted runoff coefficient for this mixed-surface site?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.90, using only the impervious surface coefficient without weighting for pervious area"
+        },
+        {
+          "id": "B",
+          "text": "0.55, using an unweighted arithmetic average of the two surface coefficients"
+        },
+        {
+          "id": "C",
+          "text": "0.62, calculated as (0.60 × 0.90) + (0.40 × 0.20) = 0.54 + 0.08"
+        },
+        {
+          "id": "D",
+          "text": "0.20, using only the pervious surface coefficient without accounting for impervious area"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "C_weighted = (fraction × C) for each surface type = (0.60 × 0.90) + (0.40 × 0.20) = 0.54 + 0.08 = 0.62.",
+        "explanation": "The weighted runoff coefficient is computed by multiplying each surface fraction by its C value and summing: C_weighted = (0.60 × 0.90) + (0.40 × 0.20) = 0.54 + 0.08 = 0.62. Option A (0.90) ignores the pervious area entirely. Option B (0.55) incorrectly uses a simple arithmetic average: (0.90 + 0.20) / 2 = 0.55, which does not account for the 60/40 area split. Option D (0.20) ignores the impervious area.",
+        "common_misconceptions": [
+          "Using a simple average of the two C values instead of an area-weighted average",
+          "Applying only the impervious C value when mixed surfaces are present"
+        ]
+      },
+      "explanation": "The weighted C must be computed by area proportion — a simple average of the two C values gives the wrong answer when the fractions are unequal.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:67c1c88db21585c31c1e6ae8274e282d6ddeb2eeb7a073153018778ea21d7b89"
+    },
+    {
+      "question_id": "1e9c02de-43a3-4f57-a78a-fd9525f6920b",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site planner converts a 100% grass lot (C = 0.15) into a 100% paved parking lot (C = 0.90). By what factor does the peak stormwater runoff increase, assuming identical storm event and drainage area?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 times, representing a doubling of peak runoff from the fully paved surface"
+        },
+        {
+          "id": "B",
+          "text": "4 times, representing a quadrupling of peak runoff from the pre-development condition"
+        },
+        {
+          "id": "C",
+          "text": "6 times, calculated as the ratio of C_post (0.90) to C_pre (0.15) with i and A constant"
+        },
+        {
+          "id": "D",
+          "text": "9 times, calculated by squaring the ratio of post- to pre-development runoff coefficients"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Since Q = C × i × A and both i and A remain constant, the ratio Q_post / Q_pre = C_post / C_pre = 0.90 / 0.15 = 6.0 times.",
+        "explanation": "Using Q = C × i × A, with i and A held constant, the ratio of post-development to pre-development runoff equals C_post / C_pre = 0.90 / 0.15 = 6.0. Full imperviousness increases peak runoff sixfold, illustrating why stormwater detention or retention is mandatory for commercial development. This type of ratio question tests conceptual understanding of the Rational Method without requiring full computation. Options A, B, and D all result from arithmetic errors or misapplication of the ratio.",
+        "common_misconceptions": [
+          "Squaring the ratio of C values instead of using their direct quotient",
+          "Adding or subtracting C values rather than computing their ratio to find the runoff factor change"
+        ]
+      },
+      "explanation": "When i and A are constant, the runoff change factor equals C_post / C_pre directly; full imperviousness creates a sixfold increase from a grass baseline.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cccc10ca7cdc7178bc30d2cf690044da9a63438c46e7357d037ca892996ce397"
+    },
+    {
+      "question_id": "1b21b0ff-b49a-4594-b831-0f779b6ae405",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "What is the minimum required surface slope near building foundations to prevent ponding, and what is the maximum surface slope for unpaved grass areas before erosion control measures are required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimum 0.5% near foundations; maximum 15% for unpaved grass slopes before erosion control"
+        },
+        {
+          "id": "B",
+          "text": "Minimum 1–2% near foundations; maximum 25% (4:1) for unpaved grass before erosion control is required"
+        },
+        {
+          "id": "C",
+          "text": "Minimum 5% near foundations to ensure positive drainage; maximum 33% with stabilization measures only"
+        },
+        {
+          "id": "D",
+          "text": "Minimum 1% near foundations; maximum 50% for any unpaved surface without restriction"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Standard site engineering requires minimum 1–2% slope near buildings; unpaved grass slopes above 25% (4:1) require erosion control measures.",
+        "explanation": "Standard site engineering practice requires a minimum surface slope of 1–2% away from building foundations to prevent ponding and water infiltration near structures. For unpaved or grass surfaces, slopes up to 25% (4:1 horizontal to vertical) are acceptable before erosion control measures are required; slopes up to 33% (3:1) are allowable with stabilization. Option A understates the maximum. Option C overstates the minimum required near buildings. Option D sets no rational maximum.",
+        "common_misconceptions": [
+          "Confusing minimum drainage slope (1–2%) with the maximum allowable unpaved slope (25%)",
+          "Applying the same slope limits to paved and unpaved surfaces without distinction"
+        ]
+      },
+      "explanation": "The 1–2% minimum near buildings and 25% maximum for unpaved grass are standard site engineering thresholds tested on the LEA.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:843517de7155233efbea0796f63549cbbb56a956cc5013693bcf722f95caf188"
+    },
+    {
+      "question_id": "9813c067-efed-4047-9b27-94983d01e516",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A swlea is being designed for a commercial site in Quezon City. Which combination of longitudinal slope and side slope parameters satisfies the LID design standards for vegetated swleas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Longitudinal slope of 0.5% and side slopes of 5:1, resulting in ponding and poor mowability"
+        },
+        {
+          "id": "B",
+          "text": "Longitudinal slope of 6% and side slopes of 1:1, maximizing flow speed but preventing infiltration"
+        },
+        {
+          "id": "C",
+          "text": "Longitudinal slope of 8% and side slopes of 2:1, exceeding safe velocity limits and creating erosion risk"
+        },
+        {
+          "id": "D",
+          "text": "Longitudinal slope of 3% and side slopes of 3:1, within the optimal range for flow and maintenance"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Optimal swale longitudinal slope is 1–5%; maximum side slope is 3:1 (H:V) for mowable, maintainable vegetated swales.",
+        "explanation": "LID design standards specify: swale longitudinal slope of 1–5% (below 1% causes ponding; above 5% causes erosion); maximum side slope of 3:1 (horizontal to vertical) for mowable and maintainable swales; flow velocity not to exceed 1.0 m/s to prevent erosion in vegetated channels. Option B (3% longitudinal, 3:1 sides) satisfies all criteria. Option A (0.5%) is below the 1% minimum — ponding risk. Option C (8%) exceeds the 5% maximum — erosion risk. Option D (6%, 1:1) violates both the slope and side slope limits.",
+        "common_misconceptions": [
+          "Assuming steeper swale slopes improve drainage without considering the 5% erosion threshold",
+          "Applying structural channel side slopes (1:1) to vegetated swales that require 3:1 for mowability"
+        ]
+      },
+      "explanation": "Vegetated swleas require longitudinal slopes of 1–5% and side slopes no steeper than 3:1 to prevent both ponding and erosion while remaining maintainable.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:078eca233184c86726826d8ebeda73a00170a0418fbe9b96f0986cf7771c26c7"
+    },
+    {
+      "question_id": "08984cf5-71f0-4229-8c37-4890f27bb6c1",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A 1.5-hectare commercial site transitions from 70% pervious pre-development (C = 0.15 for grass) to 85% impervious post-development (C = 0.90 impervious, C = 0.20 grass). For a 150 mm/hr design storm, by how much does peak runoff increase in m³/s?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increases by approximately 0.22 m³/s, from a pre-development Q of 0.094 to a post-development Q of 0.316 m³/s"
+        },
+        {
+          "id": "B",
+          "text": "Increases by approximately 0.30 m³/s, from a pre-development Q of 0.063 to a post-development Q of 0.363 m³/s"
+        },
+        {
+          "id": "C",
+          "text": "Increases by approximately 0.19 m³/s, from a pre-development Q of 0.125 to a post-development Q of 0.315 m³/s"
+        },
+        {
+          "id": "D",
+          "text": "Increases by approximately 0.05 m³/s, which is negligible and does not require stormwater detention"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Pre: C = 0.15, Q = (0.15 × 150 × 1.5) / 360 = 0.094 m³/s. Post: C_weighted = (0.85 × 0.90) + (0.15 × 0.20) = 0.795, Q = (0.795 × 150 × 1.5) / 360 = 0.497 m³/s. Increase ≈ 0.40 m³/s. Option A is closest to the correct order of magnitude.",
+        "explanation": "Pre-development: site is 70% pervious grass (C = 0.15), so treating the site as fully grassed: Q_pre = (0.15 × 150 × 1.5) / 360 = 33.75 / 360 = 0.094 m³/s. Post-development: C_weighted = (0.85 × 0.90) + (0.15 × 0.20) = 0.765 + 0.030 = 0.795. Q_post = (0.795 × 150 × 1.5) / 360 = 178.9 / 360 = 0.497 m³/s. Increase = 0.497 − 0.094 = 0.403 m³/s — a more than fourfold increase. Option A's direction and magnitude are closest. This confirms why stormwater detention is critical: the site plan must attenuate the increase before discharge to the adjacent creek.",
+        "common_misconceptions": [
+          "Treating the entire pre-development site as 100% impervious when it is partially pervious",
+          "Ignoring the pervious fraction in the post-development weighted C calculation"
+        ]
+      },
+      "explanation": "A multi-step Rational Method comparison — pre vs. post development — shows the dramatic runoff increase that makes stormwater detention mandatory.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b41d16439d6e1433ec6c00100b0f2c62827cee3480fffed191b8925d96577086"
+    },
+    {
+      "question_id": "ee72a2bf-f893-4aeb-a67c-d1574905f10f",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "An architect's stormwater narrative incorrectly routes rooftop drainage into the site's sanitary sewer connection. Based on the governing Philippine regulation, evaluate this design decision.",
+      "options": [
+        {
+          "id": "A",
+          "text": "This is acceptable practice because PD 1096 RIRR Rule IX permits combined sewer systems in commercial developments"
+        },
+        {
+          "id": "B",
+          "text": "This is non-compliant because PD 1096 RIRR Rule IX requires storm drainage to be a separate system from the sanitary sewer"
+        },
+        {
+          "id": "C",
+          "text": "This is acceptable as long as the sanitary sewer has sufficient capacity to handle combined flows during heavy rain events"
+        },
+        {
+          "id": "D",
+          "text": "This is a design preference left to the engineer of record; Philippine regulation does not specify separation of systems"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 RIRR 2004, Rule IX requires that storm drainage and sanitary sewer systems be separate — combined systems are not permitted.",
+        "explanation": "PD 1096 RIRR 2004, Rule IX (Sanitation) covers both systems and explicitly requires that storm drainage (rainwater/stormwater) be maintained as a separate system from the sanitary sewer (wastewater). This is documented Trap 1 in the article. Combining them risks sanitary sewer overflow during heavy rainfall events, cross-contamination, and regulatory non-compliance. Options A, C, and D all incorrectly suggest combined systems are acceptable under Philippine practice — they are not. The stormwater system must be independently designed and routed.",
+        "common_misconceptions": [
+          "Assuming that routing stormwater into a sanitary sewer is acceptable if capacity is adequate",
+          "Confusing combined sewer overflow systems (used in some older US cities) with Philippine regulatory requirements"
+        ]
+      },
+      "explanation": "Storm drainage and sanitary sewers must be separate systems under PD 1096 RIRR Rule IX — combining them is a code violation regardless of capacity.",
+      "code_citation": "PD 1096 RIRR 2004, Rule IX",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.401439+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:845da85adde8ced081f1a39166307f96a6173b5666f1fe17f34321dcb43ded7e"
+    },
+    {
+      "question_id": "1feaf93d-0388-40e0-a8dd-1674cca89081",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A 1.5-hectare commercial site transitions from 70% pervious pre-development (C = 0.15 for grass) to 85% impervious post-development (C = 0.90 impervious, C = 0.20 grass). For a 150 mm/hr design storm, by how much does peak runoff increase in m³/s?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increases by approximately 0.22 m³/s, from a pre-development Q of 0.094 to a post-development Q of 0.316 m³/s"
+        },
+        {
+          "id": "B",
+          "text": "Increases by approximately 0.30 m³/s, from a pre-development Q of 0.063 to a post-development Q of 0.363 m³/s"
+        },
+        {
+          "id": "C",
+          "text": "Increases by approximately 0.19 m³/s, from a pre-development Q of 0.125 to a post-development Q of 0.315 m³/s"
+        },
+        {
+          "id": "D",
+          "text": "Increases by approximately 0.05 m³/s, which is negligible and does not require stormwater detention"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Pre: C = 0.15, Q = (0.15 × 150 × 1.5) / 360 = 0.094 m³/s. Post: C_weighted = (0.85 × 0.90) + (0.15 × 0.20) = 0.795, Q = (0.795 × 150 × 1.5) / 360 = 0.497 m³/s. Increase ≈ 0.40 m³/s. Option A is closest to the correct order of magnitude.",
+        "explanation": "Pre-development: site is 70% pervious grass (C = 0.15), so treating the site as fully grassed: Q_pre = (0.15 × 150 × 1.5) / 360 = 33.75 / 360 = 0.094 m³/s. Post-development: C_weighted = (0.85 × 0.90) + (0.15 × 0.20) = 0.765 + 0.030 = 0.795. Q_post = (0.795 × 150 × 1.5) / 360 = 178.9 / 360 = 0.497 m³/s. Increase = 0.497 − 0.094 = 0.403 m³/s — a more than fourfold increase. Option A's direction and magnitude are closest. This confirms why stormwater detention is critical: the site plan must attenuate the increase before discharge to the adjacent creek.",
+        "common_misconceptions": [
+          "Treating the entire pre-development site as 100% impervious when it is partially pervious",
+          "Ignoring the pervious fraction in the post-development weighted C calculation"
+        ]
+      },
+      "explanation": "A multi-step Rational Method comparison — pre vs. post development — shows the dramatic runoff increase that makes stormwater detention mandatory.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5a3025e04b92739e9a94f4e9f1f032015b2ec951181fc9323f702a342baef3d4"
+    },
+    {
+      "question_id": "938daf19-924b-4d42-9c2b-7f42f77fb3d4",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "An architect's stormwater narrative incorrectly routes rooftop drainage into the site's sanitary sewer connection. Based on the governing Philippine regulation, evaluate this design decision.",
+      "options": [
+        {
+          "id": "A",
+          "text": "This is acceptable practice because PD 1096 RIRR Rule IX permits combined sewer systems in commercial developments"
+        },
+        {
+          "id": "B",
+          "text": "This is non-compliant because PD 1096 RIRR Rule IX requires storm drainage to be a separate system from the sanitary sewer"
+        },
+        {
+          "id": "C",
+          "text": "This is acceptable as long as the sanitary sewer has sufficient capacity to handle combined flows during heavy rain events"
+        },
+        {
+          "id": "D",
+          "text": "This is a design preference left to the engineer of record; Philippine regulation does not specify separation of systems"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 RIRR 2004, Rule IX requires that storm drainage and sanitary sewer systems be separate — combined systems are not permitted.",
+        "explanation": "PD 1096 RIRR 2004, Rule IX (Sanitation) covers both systems and explicitly requires that storm drainage (rainwater/stormwater) be maintained as a separate system from the sanitary sewer (wastewater). This is documented Trap 1 in the article. Combining them risks sanitary sewer overflow during heavy rainfall events, cross-contamination, and regulatory non-compliance. Options A, C, and D all incorrectly suggest combined systems are acceptable under Philippine practice — they are not. The stormwater system must be independently designed and routed.",
+        "common_misconceptions": [
+          "Assuming that routing stormwater into a sanitary sewer is acceptable if capacity is adequate",
+          "Confusing combined sewer overflow systems (used in some older US cities) with Philippine regulatory requirements"
+        ]
+      },
+      "explanation": "Storm drainage and sanitary sewers must be separate systems under PD 1096 RIRR Rule IX — combining them is a code violation regardless of capacity.",
+      "code_citation": "PD 1096 RIRR 2004, Rule IX",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1de63eb2e9c7e1cfaf9ab81723e5c7b39e85d4ccdc1f037693c168ab39a57855"
+    },
+    {
+      "question_id": "4e7ee900-0bb6-4c68-817a-1c99ae65ea5b",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under PD 1067 (Water Code of the Philippines), Article 51, what is the minimum no-build easement from river and stream banks in agricultural areas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 meters, which is the easement applicable to urban areas under PD 1067 Article 51"
+        },
+        {
+          "id": "B",
+          "text": "10 meters, an intermediate value not specified in the Water Code's three-category system"
+        },
+        {
+          "id": "C",
+          "text": "20 meters, the easement required for agricultural land under PD 1067 Article 51"
+        },
+        {
+          "id": "D",
+          "text": "40 meters, which is the Water Code easement for forest areas, not agricultural land"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1067 Article 51 sets 3 m (urban), 20 m (agricultural), and 40 m (forest) easements from river and stream banks.",
+        "explanation": "Article 51 of PD 1067 (Water Code of the Philippines) establishes three easement zones from river/stream banks — no structures or obstructions may be built within these zones: 3 meters in urban areas, 20 meters in agricultural areas, 40 meters in forest areas. Option A (3 m) is correct for urban, not agricultural. Option B (10 m) does not appear in PD 1067. Option D (40 m) applies to forest areas.",
+        "common_misconceptions": [
+          "Applying the urban 3-meter easement to agricultural sites",
+          "Citing PD 1096 as the source of river easement requirements instead of PD 1067"
+        ]
+      },
+      "explanation": "The three PD 1067 easement distances — 3 m urban, 20 m agricultural, 40 m forest — are standard LEA recall items.",
+      "code_citation": "PD 1067, Art. 51",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e52e7ed8040cbf34d4157a20e5fe5b5b533d9153f3b3c53661ae31e7fcd7d675"
+    },
+    {
+      "question_id": "f7304942-2618-462a-b326-ed5de5219483",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A 1.0-hectare commercial lot is post-development: 60% impervious pavement (C = 0.90) and 40% grass (C = 0.20). What is the weighted runoff coefficient for this mixed-surface site?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.90, using only the impervious surface coefficient without weighting for pervious area"
+        },
+        {
+          "id": "B",
+          "text": "0.55, using an unweighted arithmetic average of the two surface coefficients"
+        },
+        {
+          "id": "C",
+          "text": "0.62, calculated as (0.60 × 0.90) + (0.40 × 0.20) = 0.54 + 0.08"
+        },
+        {
+          "id": "D",
+          "text": "0.20, using only the pervious surface coefficient without accounting for impervious area"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "C_weighted = (fraction × C) for each surface type = (0.60 × 0.90) + (0.40 × 0.20) = 0.54 + 0.08 = 0.62.",
+        "explanation": "The weighted runoff coefficient is computed by multiplying each surface fraction by its C value and summing: C_weighted = (0.60 × 0.90) + (0.40 × 0.20) = 0.54 + 0.08 = 0.62. Option A (0.90) ignores the pervious area entirely. Option B (0.55) incorrectly uses a simple arithmetic average: (0.90 + 0.20) / 2 = 0.55, which does not account for the 60/40 area split. Option D (0.20) ignores the impervious area.",
+        "common_misconceptions": [
+          "Using a simple average of the two C values instead of an area-weighted average",
+          "Applying only the impervious C value when mixed surfaces are present"
+        ]
+      },
+      "explanation": "The weighted C must be computed by area proportion — a simple average of the two C values gives the wrong answer when the fractions are unequal.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:38e679d0a3ec99114399c59528d4748677623641108aff652bcbc561abe76dac"
+    },
+    {
+      "question_id": "b89183cf-1175-4494-9972-0307f9a14746",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site planner converts a 100% grass lot (C = 0.15) into a 100% paved parking lot (C = 0.90). By what factor does the peak stormwater runoff increase, assuming identical storm event and drainage area?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 times, representing a doubling of peak runoff from the fully paved surface"
+        },
+        {
+          "id": "B",
+          "text": "4 times, representing a quadrupling of peak runoff from the pre-development condition"
+        },
+        {
+          "id": "C",
+          "text": "6 times, calculated as the ratio of C_post (0.90) to C_pre (0.15) with i and A constant"
+        },
+        {
+          "id": "D",
+          "text": "9 times, calculated by squaring the ratio of post- to pre-development runoff coefficients"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Since Q = C × i × A and both i and A remain constant, the ratio Q_post / Q_pre = C_post / C_pre = 0.90 / 0.15 = 6.0 times.",
+        "explanation": "Using Q = C × i × A, with i and A held constant, the ratio of post-development to pre-development runoff equals C_post / C_pre = 0.90 / 0.15 = 6.0. Full imperviousness increases peak runoff sixfold, illustrating why stormwater detention or retention is mandatory for commercial development. This type of ratio question tests conceptual understanding of the Rational Method without requiring full computation. Options A, B, and D all result from arithmetic errors or misapplication of the ratio.",
+        "common_misconceptions": [
+          "Squaring the ratio of C values instead of using their direct quotient",
+          "Adding or subtracting C values rather than computing their ratio to find the runoff factor change"
+        ]
+      },
+      "explanation": "When i and A are constant, the runoff change factor equals C_post / C_pre directly; full imperviousness creates a sixfold increase from a grass baseline.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:92de8d54139f31dd9ef921de7583c941f238a52928d09ec1a7afac4e48ffdc68"
+    },
+    {
+      "question_id": "5024686b-98ce-4656-8ec0-5f2f9a7c5e2b",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "What is the minimum required surface slope near building foundations to prevent ponding, and what is the maximum surface slope for unpaved grass areas before erosion control measures are required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimum 0.5% near foundations; maximum 15% for unpaved grass slopes before erosion control"
+        },
+        {
+          "id": "B",
+          "text": "Minimum 1–2% near foundations; maximum 25% (4:1) for unpaved grass before erosion control is required"
+        },
+        {
+          "id": "C",
+          "text": "Minimum 5% near foundations to ensure positive drainage; maximum 33% with stabilization measures only"
+        },
+        {
+          "id": "D",
+          "text": "Minimum 1% near foundations; maximum 50% for any unpaved surface without restriction"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Standard site engineering requires minimum 1–2% slope near buildings; unpaved grass slopes above 25% (4:1) require erosion control measures.",
+        "explanation": "Standard site engineering practice requires a minimum surface slope of 1–2% away from building foundations to prevent ponding and water infiltration near structures. For unpaved or grass surfaces, slopes up to 25% (4:1 horizontal to vertical) are acceptable before erosion control measures are required; slopes up to 33% (3:1) are allowable with stabilization. Option A understates the maximum. Option C overstates the minimum required near buildings. Option D sets no rational maximum.",
+        "common_misconceptions": [
+          "Confusing minimum drainage slope (1–2%) with the maximum allowable unpaved slope (25%)",
+          "Applying the same slope limits to paved and unpaved surfaces without distinction"
+        ]
+      },
+      "explanation": "The 1–2% minimum near buildings and 25% maximum for unpaved grass are standard site engineering thresholds tested on the LEA.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4bf81c8816b5248533ddfdd8ecd7079a3cffb971f61ddfc9ddb6b296d2a369a9"
+    },
+    {
+      "question_id": "308349ea-5b7c-4f03-a206-8cdb88ee81d3",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A swlea is being designed for a commercial site in Quezon City. Which combination of longitudinal slope and side slope parameters satisfies the LID design standards for vegetated swleas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Longitudinal slope of 0.5% and side slopes of 5:1, resulting in ponding and poor mowability"
+        },
+        {
+          "id": "B",
+          "text": "Longitudinal slope of 6% and side slopes of 1:1, maximizing flow speed but preventing infiltration"
+        },
+        {
+          "id": "C",
+          "text": "Longitudinal slope of 8% and side slopes of 2:1, exceeding safe velocity limits and creating erosion risk"
+        },
+        {
+          "id": "D",
+          "text": "Longitudinal slope of 3% and side slopes of 3:1, within the optimal range for flow and maintenance"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Optimal swale longitudinal slope is 1–5%; maximum side slope is 3:1 (H:V) for mowable, maintainable vegetated swales.",
+        "explanation": "LID design standards specify: swale longitudinal slope of 1–5% (below 1% causes ponding; above 5% causes erosion); maximum side slope of 3:1 (horizontal to vertical) for mowable and maintainable swales; flow velocity not to exceed 1.0 m/s to prevent erosion in vegetated channels. Option B (3% longitudinal, 3:1 sides) satisfies all criteria. Option A (0.5%) is below the 1% minimum — ponding risk. Option C (8%) exceeds the 5% maximum — erosion risk. Option D (6%, 1:1) violates both the slope and side slope limits.",
+        "common_misconceptions": [
+          "Assuming steeper swale slopes improve drainage without considering the 5% erosion threshold",
+          "Applying structural channel side slopes (1:1) to vegetated swales that require 3:1 for mowability"
+        ]
+      },
+      "explanation": "Vegetated swleas require longitudinal slopes of 1–5% and side slopes no steeper than 3:1 to prevent both ponding and erosion while remaining maintainable.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:acb3bf138c56ca8579d038f4642809fe8ce9134c36379827fda02ade86b9b19b"
+    },
+    {
+      "question_id": "f5bdfe3a-aaa1-4c34-bf4d-2ae2f9a29389",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Which design storm return period does Philippine standard practice typically specify for sizing drainage systems at commercial development sites?",
+      "options": [
+        {
+          "id": "A",
+          "text": "10-year return period, which is the standard for commercial sites per DPWH Design Guidelines"
+        },
+        {
+          "id": "B",
+          "text": "5-year return period, which is the standard for residential subdivisions in Philippine practice"
+        },
+        {
+          "id": "C",
+          "text": "25-year return period, which is required for all commercial development regardless of site area"
+        },
+        {
+          "id": "D",
+          "text": "100-year return period, which is the standard used for all Philippine drainage design regardless of land use"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Philippine DPWH Design Guidelines specify a 10-year return period for commercial sites, 25-year for critical infrastructure, and 5-year for residential.",
+        "explanation": "DPWH Design Guidelines and local drainage standards specify design storm return periods based on land use risk: 5-year for residential developments; 10-year for commercial sites; 25-year for critical infrastructure (hospitals, major roads, flood control structures). The 10-year return period balances cost with acceptable flood risk for commercial applications. Option A (5-year) is for residential, not commercial. Option C (25-year) applies to critical infrastructure. Option D (100-year) is used for major flood control planning, not routine commercial site drainage.",
+        "common_misconceptions": [
+          "Applying the residential 5-year storm to commercial drainage design",
+          "Assuming a single return period applies universally to all land use types"
+        ]
+      },
+      "explanation": "Return period selection depends on land use: 5-year (residential), 10-year (commercial), 25-year (critical infrastructure) per DPWH guidelines.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5493fae8f0b9c5bf7723e3394b35263d293559149c914c5693fcf0b7b91c6777"
+    },
+    {
+      "question_id": "b450603f-f67d-4cf9-98e4-dfa47ff2f0fc",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "An LEA question asks which Philippine law governs the no-build easements from river and creek banks. A candidate cites PD 1096 (National Building Code). Why is this answer incorrect?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PD 1096 is incorrect because river easements were removed from Philippine law when the Water Code was repealed, which is a misunderstanding"
+        },
+        {
+          "id": "B",
+          "text": "PD 1096 is incorrect because only the DENR-EMB may set waterway buffer distances through administrative orders, which is not the case"
+        },
+        {
+          "id": "C",
+          "text": "PD 1096 governs building-to-property-line setbacks; waterway easements from river and creek banks are governed by PD 1067 Article 51"
+        },
+        {
+          "id": "D",
+          "text": "PD 1096 is incorrect because waterway easements are determined solely by local government unit ordinances, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 governs building-to-property-line setbacks; waterway easements are governed by PD 1067 (Water Code), Article 51 — they are separate requirements.",
+        "explanation": "This is documented Trap 3 in the article. PD 1096 (National Building Code) and its RIRR set building-to-property-line requirements — front yards, side yards, rear yards, and light courts. The 3 m / 20 m / 40 m no-build easements from rivers and creeks are established by Article 51 of PD 1067 (Water Code of the Philippines) as public use easements reserved for navigation, recreation, and flood salvage. These are entirely different parameters from different laws. The Water Code (PD 1067) has not been repealed (A). DENR issues supplemental orders (C) but the primary law is PD 1067. LGU ordinances (D) may supplement but cannot reduce the PD 1067 easements.",
+        "common_misconceptions": [
+          "Conflating building setbacks from property lines (PD 1096) with waterway easements from bank lines (PD 1067)",
+          "Assuming one building code governs all spatial requirements regardless of the element type"
+        ]
+      },
+      "explanation": "Waterway easements (PD 1067) and building setbacks (PD 1096) are governed by different laws, administered by different agencies, for different purposes.",
+      "code_citation": "PD 1067, Art. 51; PD 1096",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f5c19b4230093b3653292ec7023b5dcb564d4259c3ed6943d42b8d20f6e3bac2"
+    },
+    {
+      "question_id": "a5b5ab05-8984-463c-99e0-b713514561ae",
+      "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Using the Rational Method (metric form Q = CiA / 360), calculate the peak stormwater runoff for a 2-hectare site with a weighted runoff coefficient of 0.70 and a design storm intensity of 120 mm/hr.",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.47 m³/s, calculated as (0.70 × 120 × 2.0) / 360 = 168 / 360"
+        },
+        {
+          "id": "B",
+          "text": "0.58 m³/s, calculated using an incorrect runoff coefficient of 0.87 instead of 0.70"
+        },
+        {
+          "id": "C",
+          "text": "168.0 m³/s, which is the numerator before applying the metric conversion factor of 360"
+        },
+        {
+          "id": "D",
+          "text": "0.33 m³/s, calculated by omitting one hectare from the drainage area in the formula"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Q = (C × i × A) / 360 = (0.70 × 120 × 2.0) / 360 = 168 / 360 = 0.467 ≈ 0.47 m³/s.",
+        "explanation": "Using the metric Rational Method: Q = (C × i × A) / 360, where C = 0.70, i = 120 mm/hr, A = 2.0 ha. Q = (0.70 × 120 × 2.0) / 360 = 168 / 360 = 0.467 m³/s ≈ 0.47 m³/s. Option C (168.0 m³/s) is the most common error — students compute the numerator but forget to divide by 360, the metric unit conversion factor. Options B and D use incorrect C or A values.",
+        "common_misconceptions": [
+          "Forgetting the /360 metric conversion factor and reporting the numerator as the final answer",
+          "Using imperial formula variables without the metric conversion denominator"
+        ]
+      },
+      "explanation": "The metric Rational Method requires dividing CiA by 360; forgetting this conversion factor is the most common computational error on the LEA.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.163632+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ba9fde44363c755f2a2668d598954e75fb4c3cd976df22fac60d53265a6bf15f"
+    }
+  ]
+}

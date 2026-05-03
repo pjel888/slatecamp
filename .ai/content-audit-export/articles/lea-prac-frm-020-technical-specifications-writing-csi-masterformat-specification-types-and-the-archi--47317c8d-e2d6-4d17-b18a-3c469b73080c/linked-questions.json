@@ -1,0 +1,508 @@
+{
+  "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b9c384bab1d9144120efb763a8d4c3fb285839352ee4a9eb763080a213af782e",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "e889b717-92f9-456b-b21e-db8fb5186b75",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "Why should specifications avoid vague language like 'high-quality materials' or 'normal workmanship'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vague language is preferred in construction, although it often leads to disputes"
+        },
+        {
+          "id": "b",
+          "text": "Vague language is unenforceable; courts cannot determine what 'high-quality' means; use measurable criteria instead"
+        },
+        {
+          "id": "c",
+          "text": "Vague language always favors the contractor, potentially leading to lower standards"
+        },
+        {
+          "id": "d",
+          "text": "Vague language has no effect, but it can cause misunderstandings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; vague language creates disputes and is disfavored in construction law.",
+        "c": "Misconception; vague language actually favors the contractor who can claim ambiguity.",
+        "d": "False; vague language creates legal disputes over what was required.",
+        "correct": "Vague terms ('high-quality,' 'normal workmanship') are unenforceable—courts cannot interpret subjective terms; instead use measurable criteria ('Grade A per ASTM C62,' 'surface finish within 3 mm deviation').",
+        "takeaway": "Avoid vague language—use specific, measurable standards that courts and inspectors can verify objectively."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d0e79bd6c200f020fc708951b1c9d357de8898100b5ea3a95a27f0a8d56aba9d"
+    },
+    {
+      "question_id": "9cf3b37e-e58e-45cb-a53a-d693758ba692",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What should be done when a specification requires subjective quality (e.g., 'color shall match architect's sample')?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid such specifications or provide permanent reference sample accessible to contractor and inspector"
+        },
+        {
+          "id": "b",
+          "text": "Hope the contractor guesses correctly, which can lead to inconsistent results and potential disputes"
+        },
+        {
+          "id": "c",
+          "text": "Never address color in specifications, as it is too subjective and can lead to misunderstandings"
+        },
+        {
+          "id": "d",
+          "text": "Only use for small projects where the impact of color mismatches is minimal and less critical"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Reckless; hoping the contractor guesses correctly invites disputes and rework.",
+        "c": "Too restrictive; color can be specified objectively with Munsell notation or permanent samples.",
+        "d": "Incorrect limitation; good specifications are used on all projects regardless of size.",
+        "correct": "If subjective quality is unavoidable, provide permanent reference sample stored on-site for contractor and inspector access, or specify objective color standards (Munsell notation, specific RGB values) rather than relying on architect's sample.",
+        "takeaway": "Subjective specs need permanent references—provide an on-site color sample or use Munsell color standards; don't leave it to contractor guessing."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:184bcb8fd02d70abbd44a11fc46530e0050ed5727055d3b8f9dbd80e22c49081"
+    },
+    {
+      "question_id": "ac205b04-4e0d-4001-b991-911c07649f27",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What is CSI MasterFormat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "construction cost index, which is used to estimate the financial requirements of a project"
+        },
+        {
+          "id": "b",
+          "text": "The standard organizational system for construction specifications using numbered divisions and sections"
+        },
+        {
+          "id": "c",
+          "text": "brand of paint, commonly used in commercial and residential projects for its durability"
+        },
+        {
+          "id": "d",
+          "text": "building code, which provides guidelines for construction practices and safety standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses MasterFormat with cost data; MasterFormat is an organizational system, not a cost index.",
+        "c": "Completely unrelated; MasterFormat is an organizational system, not a paint brand.",
+        "d": "Confuses MasterFormat with building codes; MasterFormat is a specification organization system, not a safety standard.",
+        "correct": "CSI MasterFormat is the Construction Specifications Institute standard system organizing trades into numbered divisions (01–48) and subsections, ensuring logical organization and industry standardization.",
+        "takeaway": "CSI MasterFormat (50 divisions) is the standard specification organization system—ensures everyone can locate information consistently."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d6176bd98417de215fd8c8e4ccd5ec4dcb86a7b339ce636bdd429d36227f2df"
+    },
+    {
+      "question_id": "63a7b2d9-0902-4b49-95c5-710cb3cebe5e",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What process should be followed if specifications need updates during design evolution or construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No updates are ever necessary, which is incorrect as changes often occur during construction"
+        },
+        {
+          "id": "b",
+          "text": "Design Development specifications may be preliminary; Construction Documents should be final; changes during construction issued through formal addenda or change orders"
+        },
+        {
+          "id": "c",
+          "text": "Update specifications informally without notification, which can lead to miscommunication and errors"
+        },
+        {
+          "id": "d",
+          "text": "Specifications cannot change once written, which is impractical given the dynamic nature of construction projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; as design evolves from schematic to DD to CD, specifications require refinement.",
+        "c": "Dangerous; informal changes without notice create disputes and allow contractors to claim ambiguity.",
+        "d": "False; specifications can and should be updated through design phases to reflect design refinement.",
+        "correct": "Design Development phase specifications may be preliminary and refined during detailed design; Construction Document specifications must be final and complete; any changes during construction must be issued through formal addenda or change orders.",
+        "takeaway": "Update specs from DD to CD to finalize them; any changes during construction require formal addenda—informal changes create disputes."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7a9631b61197180d52daf72ca3c52c0542f96fc67e75a006bead12e776f5b7e7"
+    },
+    {
+      "question_id": "26e84cb0-c73f-42be-8054-e727667eb59a",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What is a performance specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Specification with no standards or reference criteria for evaluating acceptable product performance"
+        },
+        {
+          "id": "b",
+          "text": "specification that defines the end result without prescribing specific materials; contractor innovation allowed"
+        },
+        {
+          "id": "c",
+          "text": "Only for government projects where open competitive bidding requires brand-neutral specifications"
+        },
+        {
+          "id": "d",
+          "text": "Never used in practice because prescriptive specifications are always preferred by design professionals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; performance specifications include clear acceptance standards and testing requirements.",
+        "c": "Incorrect scope; performance specifications are used on both public and private projects.",
+        "d": "False; performance specifications are common for results dependent on methodology (acoustic, thermal, water-tightness performance).",
+        "correct": "Performance specifications define the desired outcome (e.g., water-tightness) and verification methods (testing standards) but allow contractors to choose materials and methods that achieve the result.",
+        "takeaway": "Performance = 'define the result'—lets contractors innovate; requires clear acceptance criteria and testing procedures."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4418d67ab5840c4e2ed75b07cb509573c6b904fd41dae1511c51d411c26acaa4"
+    },
+    {
+      "question_id": "83a8de7c-bc48-4cb5-8948-8080deac12ec",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What is the architect's professional responsibility if specifications are incomplete (trade sections missing) or poorly written?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No responsibility; contractor must infer requirements, which can lead to varied interpretations"
+        },
+        {
+          "id": "b",
+          "text": "Architect bears responsibility; specifications have legal force; poor specifications allow disputes and inferior quality; professional liability exists"
+        },
+        {
+          "id": "c",
+          "text": "Only the client is responsible, as they approve the final documents"
+        },
+        {
+          "id": "d",
+          "text": "Incomplete specifications are acceptable, provided they are supplemented by verbal agreements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; architects created the ambiguity and bear responsibility for it.",
+        "c": "Misplaces responsibility; architects drafted the specifications and are responsible for their quality.",
+        "d": "False; incomplete specifications invite disputes and expose architects to liability.",
+        "correct": "Specifications are contract documents with legal force; incomplete or poorly written specifications allow contractors to supply inferior materials or claim ambiguity—architects bear professional liability.",
+        "takeaway": "Architect is responsible for complete, clear specifications—professional liability insurance and standards require high-quality specifications."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:18b5ac08516884eff21e1584e2036425384f872d855754bcdde5d7779ab12f17"
+    },
+    {
+      "question_id": "574ababe-dfee-49c7-aa4a-32453e856d52",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What are the three main parts of every specification section?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Title, subtitle, and conclusion, which are typically used in narrative documents but not in technical specifications"
+        },
+        {
+          "id": "b",
+          "text": "Part 1 - General, Part 2 - Products, Part 3 - Execution"
+        },
+        {
+          "id": "c",
+          "text": "Only cost and schedule, which are important but not comprehensive enough to cover all aspects of a specification"
+        },
+        {
+          "id": "d",
+          "text": "Only drawings, which provide visual guidance but lack detailed procedural and material information"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrong structure; CSI format uses Parts 1-3, not title/subtitle/conclusion.",
+        "c": "Incomplete; specifications include much more than cost and schedule.",
+        "d": "Wrong document; specifications describe materials and methods in text; drawings show geometry and relationships.",
+        "correct": "Each specification section must contain Part 1 (General—scope, standards, submittals), Part 2 (Products—materials and performance), Part 3 (Execution—installation, tolerances, inspection).",
+        "takeaway": "Every spec section has three parts: Part 1 defines scope and standards, Part 2 specifies materials, Part 3 describes how to install it."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3ef1d79f7b5dbff5d8e9f59f41a5a1611275940380e9930280da7f4a1a6ca976"
+    },
+    {
+      "question_id": "d4c9b05d-a114-4ce3-8cfa-0e46d8587d84",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What can result from conflicting specifications (specification contradicts drawing or other trade sections)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No problems result, which is incorrect as conflicts can cause significant issues"
+        },
+        {
+          "id": "b",
+          "text": "The contractor must choose; conflicts are contractor responsibility, which is not always true"
+        },
+        {
+          "id": "c",
+          "text": "Disputes arise; the architect must resolve conflicts before construction begins"
+        },
+        {
+          "id": "d",
+          "text": "Conflicts are only a problem if the client notices, which is a misconception"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Dangerously incorrect; conflicts cause expensive construction disputes and rework.",
+        "b": "Misplaces responsibility; the architect created the conflict and must resolve it; contractor should not guess which requirement applies.",
+        "d": "False logic; conflicts cause problems whether the client notices or not—they disrupt construction and create liability.",
+        "correct": "Conflicting specifications create disputes; the contractor is not responsible for choosing between conflicting requirements—the architect must resolve all conflicts before construction through BIM coordination and specification review.",
+        "takeaway": "Architect's responsibility: ensure specifications and drawings are coordinated—no conflicting requirements before construction begins."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bd06dc8bb684e2b27845e5ce20bb32d19c8ee962cbecdd291c06d27d408dd6ce"
+    },
+    {
+      "question_id": "f41caf41-84d5-41b1-9a1e-e4981bfcfc51",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What is a prescriptive specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "specification that allows any material, provided it meets performance criteria"
+        },
+        {
+          "id": "b",
+          "text": "specification that describes exactly what materials and methods the contractor must use"
+        },
+        {
+          "id": "c",
+          "text": "specification that has no legal force unless incorporated into the contract documents"
+        },
+        {
+          "id": "d",
+          "text": "Only architects can write them, and they must be approved by the client"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Opposite of prescriptive; prescriptive specifications restrict material choices, not allow any material.",
+        "c": "False; prescriptive specifications have full legal force and bind the contractor.",
+        "d": "Incorrect limitation; consultants, specification writers, and others can write prescriptive specifications.",
+        "correct": "Prescriptive specifications detail exact materials, brands (or approved equivalents), installation methods, and quality standards—leaving little to contractor discretion.",
+        "takeaway": "Prescriptive = 'specify exactly what to use'—used when aesthetic quality or specific performance is critical."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8cc139d338ea562d0c1e39d429ce499e06d84dec1e130d5bd50080d0a089c9b1"
+    },
+    {
+      "question_id": "f2ce1f9f-2069-4c48-98ad-6186358a6d11",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What is the primary purpose of construction specifications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To provide cost estimates, offering a financial overview of the project"
+        },
+        {
+          "id": "b",
+          "text": "To describe materials, products, methods, and quality standards that the contractor must provide"
+        },
+        {
+          "id": "c",
+          "text": "To entertain the client, providing engaging narratives about the project"
+        },
+        {
+          "id": "d",
+          "text": "Specifications are optional, serving as a guideline rather than a requirement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses specifications with cost estimating; specifications define what will be built, not how much it costs.",
+        "c": "Misses the legal purpose; specifications are binding contract documents, not entertainment.",
+        "d": "False; specifications are mandatory contract documents—without them, contractors can provide inferior materials.",
+        "correct": "Specifications establish what the contractor must build by defining product brands, dimensions, installation methods, quality standards, testing, and warranties.",
+        "takeaway": "Specifications define contractual obligations—what materials and methods the contractor must use, not cost estimates or optional documents."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34e46660f6933deef09a4091100904bf2f2fc958b151630f40e7b85b1229874b"
+    }
+  ]
+}

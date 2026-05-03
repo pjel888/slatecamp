@@ -1,0 +1,17 @@
+{
+  "question_id": "cbe3277b-ffde-4b56-8be1-d4056158a593",
+  "baseline_hash": "sha256:d31d99d5fdf394130c9e9a7d0ebdd3d5a2f010367c4cb4fb519a2f6e68e3c668",
+  "reason": "WRONG ANSWER KEY: 4 beams \u00d7 8 m \u00d7 42.2 kg/m = 1,350.4 kg, closest to option 'c' (1,352 kg), not option 'd' (1,689.6 kg). The rationale itself states 'Closest is 1,352 kg (option c)'. Fixed correct_option_id to 'c' and corrected rationale.",
+  "approved_by": "hermes-question-audit",
+  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "proposed": {
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "846.4 kg results from 2 beams instead of 4 (half the correct quantity).",
+      "b": "1,049 kg is significantly lower; calculation error or wrong section weight.",
+      "d": "1,689.6 kg likely from 5 beams instead of 4, or using wrong weight per meter.",
+      "correct": "Total weight = 4 beams \u00d7 8 m \u00d7 42.2 kg/m = 32 m \u00d7 42.2 kg/m = 1,350.4 kg. Closest option is 1,352 kg (option c).",
+      "takeaway": "Multi-member assembly: Sum of (number \u00d7 length \u00d7 weight per meter) for each member type."
+    }
+  }
+}

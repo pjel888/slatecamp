@@ -1,0 +1,40 @@
+{
+  "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+  "slug": "pd-1096-rule-viii-light-and-ventilation",
+  "normalized_created_at": "2026-05-01T13:33:44.050Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:0fd4fc9539de156e3284106b10362d903b59bd89914fed8f48014b9938847c44",
+  "normalized_content_hash": "sha256:b1abbebd934406f7f1df2aa3ef9389b8ef299e7781f878c8333f2d430b1bf187",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule VIII - Light and Ventilation\">\n\n\nIf a question explicitly refers to the \u201cmulti-storey artificial ventilation\u201d example from your review materials, remember the pattern commonly taught: ground floor 2.70 m, second 2.40 m, upper floors 2.10 m headroom; but for direct Code citation, quote the 2.70 m (natural) and 2.40 m (artificial) minimums in Sec. 805.[file:17][file:18]\n\n\n</LawCallout>",
+      "raw_hash": "sha256:5a4fc63126be96e022e71d7835efc38b0a3f7fa23d6c0967a3f85dd38adcb11e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: If a question explicitly refers to the \u201cmulti-storey artificial ventilation\u201d example from your review materials, remember the pattern commonly taught: ground floor 2.70 m, second 2.40 m, upper floors 2.10 m headroom; but for direct Code citation, quote the 2.70 m (natural) and 2.40 m (artificial) minimums in Sec. 805.[file:17][file:18]\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:95d84e6df0636f607020ed20a61ec7db79208c2c8cf04ad120752c5cf6101337",
+      "props": {},
+      "props_json": {
+        "code": "pd1096",
+        "section": "Rule VIII - Light and Ventilation"
+      },
+      "props_text": "code=pd1096, section=Rule VIII - Light and Ventilation",
+      "children_raw": "\n\nIf a question explicitly refers to the \u201cmulti-storey artificial ventilation\u201d example from your review materials, remember the pattern commonly taught: ground floor 2.70 m, second 2.40 m, upper floors 2.10 m headroom; but for direct Code citation, quote the 2.70 m (natural) and 2.40 m (artificial) minimums in Sec. 805.[file:17][file:18]\n\n",
+      "children_text": "If a question explicitly refers to the \u201cmulti-storey artificial ventilation\u201d example from your review materials, remember the pattern commonly taught: ground floor 2.70 m, second 2.40 m, upper floors 2.10 m headroom; but for direct Code citation, quote the 2.70 m (natural) and 2.40 m (artificial) minimums in Sec. 805.[file:17][file:18]",
+      "start_offset": 3813,
+      "end_offset": 4173,
+      "line_start": 59,
+      "line_end": 63,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:67c434d7e270b1f5f2953b298d26d6c22374a392fd9b08664dec7a6865d2df86"
+}

@@ -1,0 +1,26 @@
+{
+  "attempted_at": "2026-05-03T10:56:00.499Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+  "slug": "transport-nodes-escalators-walkways",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:bbdf1ce26355ce97f43a1d2f40edd24620520b5de085b00db2e3d8066fb3270b",
+  "original_hash": "sha256:bbdf1ce26355ce97f43a1d2f40edd24620520b5de085b00db2e3d8066fb3270b",
+  "candidate_hash": "sha256:7b3281fd488d1b770dd31e2651c01508d6d115aad1edf48c438dfc27cffd4a29",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

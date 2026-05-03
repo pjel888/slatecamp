@@ -1,0 +1,63 @@
+{
+  "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
+  "slug": "lea-dsgn-005-12-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.260Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:b3baad93500c99279e4961df34d69e67e9f0362552c1ce0f4fd08bcdbfa74b24",
+  "normalized_content_hash": "e7996766acb16a772efa7469612da9121dcc45d85ebbd284d7c56ab812c1c5b2",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>RA 10066 = Heritage Act. NHCP = National Historical Commission (clearance required). Occupancy = new function. Character-defining = preserve. Exit width = 7.6mm/person. BP 344: ramp 1:20 (2024 Revised IRR), door 900mm. Reversible preferred over permanent. Variance = cultural constraint + code impossibility.</Tip>",
+      "raw_hash": "sha256:3a0e58a92bb398e6512750162d7bb8b26ca6b32109b5cd0f40f62914960b9af2",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: RA 10066 = Heritage Act. NHCP = National Historical Commission (clearance required). Occupancy = new function. Character-defining = preserve. Exit width = 7.6mm/person. BP 344: ramp 1:20 (2024 Revised IRR), door 900mm. Reversible preferred over permanent. Variance = cultural constraint + code impossibility.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:5f6f4c715831b028f13af10a4dc8393ba5e5a548fd6903f466e5e81addf13ed1",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "RA 10066 = Heritage Act. NHCP = National Historical Commission (clearance required). Occupancy = new function. Character-defining = preserve. Exit width = 7.6mm/person. BP 344: ramp 1:20 (2024 Revised IRR), door 900mm. Reversible preferred over permanent. Variance = cultural constraint + code impossibility.",
+      "children_text": "RA 10066 = Heritage Act. NHCP = National Historical Commission (clearance required). Occupancy = new function. Character-defining = preserve. Exit width = 7.6mm/person. BP 344: ramp 1:20 (2024 Revised IRR), door 900mm. Reversible preferred over permanent. Variance = cultural constraint + code impossibility.",
+      "start_offset": 6945,
+      "end_offset": 7264,
+      "line_start": 72,
+      "line_end": 72,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Classifying heritage adaptive-reuse occupancy by original function instead of new programmed use\",\"Assuming heritage status exempts the building from NBC code compliance\u2014it does not; heritage + new function = full code adherence required\",\"Designing permanent, invasive system routing (e.g., cutting through structural beams) instead of reversible methods (surface-mounted conduit, attic runs)\",\"Neglecting NHCP clearance until construction is underway\u2014clearance must be obtained during schematic design\",\"Using modern materials (PVC, steel studs) that contrast with historic fabric instead of matching composition and appearance\",\"Incorrectly calculating occupant load as if the building retains its original function\u2014new function determines occupancy group and load\",\"Misapplying ramp slope (1:10 or 1:12 [old IRR] instead of 1:20 [2024 IRR]) or accessible door width (800mm instead of 900mm) because of heritage constraints\u2014code still applies; variance is the mechanism for exception\",\"Confusing reversible and permanent interventions\u2014reversible (e.g., lime mortar pointing) preserves original material; permanent (e.g., epoxy injection) obscures or removes heritage fabric\",\"Failing to integrate accessible egress (ramps, lifts) during initial design\u2014retrofitting after framing/finishes creates visual discord and waste\",\"Assuming character-defining features can be relocated or hidden without NHCP objection\u2014character is place-specific\"]} />",
+      "raw_hash": "sha256:b1021571fe0191d1a76622d302f0732fb6d5a639534bc106b5138410f9fff02d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Classifying heritage adaptive-reuse occupancy by original function instead of new programmed use\\\",\\\"Assuming heritage status exempts the building from NBC code compliance\u2014it does not; heritage + new function = full code adherence required\\\",\\\"Designing permanent, invasive system routing (e.g., cutting through structural beams) instead of reversible methods (surface-mounted conduit, attic runs)\\\",\\\"Neglecting NHCP clearance until construction is underway\u2014clearance must be obtained during schematic design\\\",\\\"Using modern materials (PVC, steel studs) that contrast with historic fabric instead of matching composition and appearance\\\",\\\"Incorrectly calculating occupant load as if the building retains its original function\u2014new function determines occupancy group and load\\\",\\\"Misapplying ramp slope (1:10 or 1:12 [old IRR] instead of 1:20 [2024 IRR]) or accessible door width (800mm instead of 900mm) because of heritage constraints\u2014code still applies; variance is the mechanism for exception\\\",\\\"Confusing reversible and permanent interventions\u2014reversible (e.g., lime mortar pointing) preserves original material; permanent (e.g., epoxy injection) obscures or removes heritage fabric\\\",\\\"Failing to integrate accessible egress (ramps, lifts) during initial design\u2014retrofitting after framing/finishes creates visual discord and waste\\\",\\\"Assuming character-defining features can be relocated or hidden without NHCP objection\u2014character is place-specific\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:59c0091dd6ee182ea71827e5f3f610ea0e68c9541c1af6a44672e125043225c7",
+      "props": {
+        "mistakes": "{[\"Classifying heritage adaptive-reuse occupancy by original function instead of new programmed use\",\"Assuming heritage status exempts the building from NBC code compliance\u2014it does not; heritage + new function = full code adherence required\",\"Designing permanent, invasive system routing (e.g., cutting through structural beams) instead of reversible methods (surface-mounted conduit, attic runs)\",\"Neglecting NHCP clearance until construction is underway\u2014clearance must be obtained during schematic design\",\"Using modern materials (PVC, steel studs) that contrast with historic fabric instead of matching composition and appearance\",\"Incorrectly calculating occupant load as if the building retains its original function\u2014new function determines occupancy group and load\",\"Misapplying ramp slope (1:10 or 1:12 [old IRR] instead of 1:20 [2024 IRR]) or accessible door width (800mm instead of 900mm) because of heritage constraints\u2014code still applies; variance is the mechanism for exception\",\"Confusing reversible and permanent interventions\u2014reversible (e.g., lime mortar pointing) preserves original material; permanent (e.g., epoxy injection) obscures or removes heritage fabric\",\"Failing to integrate accessible egress (ramps, lifts) during initial design\u2014retrofitting after framing/finishes creates visual discord and waste\",\"Assuming character-defining features can be relocated or hidden without NHCP objection\u2014character is place-specific\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Classifying heritage adaptive-reuse occupancy by original function instead of new programmed use\",\"Assuming heritage status exempts the building from NBC code compliance\u2014it does not; heritage + new function = full code adherence required\",\"Designing permanent, invasive system routing (e.g., cutting through structural beams) instead of reversible methods (surface-mounted conduit, attic runs)\",\"Neglecting NHCP clearance until construction is underway\u2014clearance must be obtained during schematic design\",\"Using modern materials (PVC, steel studs) that contrast with historic fabric instead of matching composition and appearance\",\"Incorrectly calculating occupant load as if the building retains its original function\u2014new function determines occupancy group and load\",\"Misapplying ramp slope (1:10 or 1:12 [old IRR] instead of 1:20 [2024 IRR]) or accessible door width (800mm instead of 900mm) because of heritage constraints\u2014code still applies; variance is the mechanism for exception\",\"Confusing reversible and permanent interventions\u2014reversible (e.g., lime mortar pointing) preserves original material; permanent (e.g., epoxy injection) obscures or removes heritage fabric\",\"Failing to integrate accessible egress (ramps, lifts) during initial design\u2014retrofitting after framing/finishes creates visual discord and waste\",\"Assuming character-defining features can be relocated or hidden without NHCP objection\u2014character is place-specific\"]}"
+      },
+      "props_text": "mistakes={[\"Classifying heritage adaptive-reuse occupancy by original function instead of new programmed use\",\"Assuming heritage status exempts the building from NBC code compliance\u2014it does not; heritage + new function = full code adherence required\",\"Designing permanent, invasive system routing (e.g., cutting through structural beams) instead of reversible methods (surface-mounted conduit, attic runs)\",\"Neglecting NHCP clearance until construction is underway\u2014clearance must be obtained during schematic design\",\"Using modern materials (PVC, steel studs) that contrast with historic fabric instead of matching composition and appearance\",\"Incorrectly calculating occupant load as if the building retains its original function\u2014new function determines occupancy group and load\",\"Misapplying ramp slope (1:10 or 1:12 [old IRR] instead of 1:20 [2024 IRR]) or accessible door width (800mm instead of 900mm) because of heritage constraints\u2014code still applies; variance is the mechanism for exception\",\"Confusing reversible and permanent interventions\u2014reversible (e.g., lime mortar pointing) preserves original material; permanent (e.g., epoxy injection) obscures or removes heritage fabric\",\"Failing to integrate accessible egress (ramps, lifts) during initial design\u2014retrofitting after framing/finishes creates visual discord and waste\",\"Assuming character-defining features can be relocated or hidden without NHCP objection\u2014character is place-specific\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7286,
+      "end_offset": 8761,
+      "line_start": 76,
+      "line_end": 76,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:9ca957fb7913ba86c3249dfcaa77263ee8260ef80432aec3ab51d02c21a3657f"
+}

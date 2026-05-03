@@ -1,0 +1,67 @@
+{
+  "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+  "slug": "lea-util-007-05-renewable-energy-integration-systems",
+  "normalized_created_at": "2026-05-01T13:33:43.664Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e",
+  "normalized_content_hash": "ddc028af64643329612169b64cc5db3516b4d53d1a2e63dda025209791f7f8a5",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout type=\"info\">\nThe Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compliance and operational cost reduction.\n</Callout>",
+      "raw_hash": "sha256:79f520451303be4d6067aead8285b2ceaee5a7d3cda95ab6c3e58763fba015e5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"info\"\n- Text: The Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compliance and operational cost reduction.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:fb967dab40e6b62cd14bc49ef99997d07d175fc9837751f2992a6488347b945e",
+      "props": {
+        "type": "info"
+      },
+      "props_json": {
+        "type": "info"
+      },
+      "props_text": "type=\"info\"",
+      "children_raw": "\nThe Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compliance and operational cost reduction.\n",
+      "children_text": "The Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compliance and operational cost reduction.",
+      "start_offset": 479,
+      "end_offset": 748,
+      "line_start": 5,
+      "line_end": 7,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout type=\"warning\">\nDesign integration sequencing matters: establish passive design envelope first, then size active systems to remaining load. Reverse sequencing typically increases equipment costs 20-30% while reducing actual performance by 10-15%.\n</Callout>",
+      "raw_hash": "sha256:d906c1c0d98f0612d2e466ca5e47fb11428da104195f5eb1399fd8f6a8182285",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"warning\"\n- Text: Design integration sequencing matters: establish passive design envelope first, then size active systems to remaining load. Reverse sequencing typically increases equipment costs 20-30% while reducing actual performance by 10-15%.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9a2ca32fe192a8f835fcb761b01693eb614bddd5fa9dcca623fa35f731a18caf",
+      "props": {
+        "type": "warning"
+      },
+      "props_json": {
+        "type": "warning"
+      },
+      "props_text": "type=\"warning\"",
+      "children_raw": "\nDesign integration sequencing matters: establish passive design envelope first, then size active systems to remaining load. Reverse sequencing typically increases equipment costs 20-30% while reducing actual performance by 10-15%.\n",
+      "children_text": "Design integration sequencing matters: establish passive design envelope first, then size active systems to remaining load. Reverse sequencing typically increases equipment costs 20-30% while reducing actual performance by 10-15%.",
+      "start_offset": 13555,
+      "end_offset": 13821,
+      "line_start": 165,
+      "line_end": 167,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:20ad3ede5c6d83918dcc088f6255dae505fa4ad65b5c1fa3482b699bfa479356"
+}

@@ -1,0 +1,35 @@
+{
+  "question_id": "4c64749f-c1ce-4479-b8c3-8d30e8d0527b",
+  "baseline_hash": "sha256:5ff9dbca54da6acee3dee1a8635f1b15b20cd75b347c9e67d17838afc962a8dd",
+  "reason": "Options only contain single-letter labels ('A', 'B', 'C', 'D') instead of actual answer content. Reconstructed option text from rationale descriptions.",
+  "approved_by": "hermes-audit-pass-7",
+  "approved_at": "2026-05-03T04:11:28.087862+00:00",
+  "proposed": {
+    "options": [
+      {
+        "id": "a",
+        "text": "3.5 years (error: divided capital cost by monthly savings \u20b11,717, not annual \u20b120,600)."
+      },
+      {
+        "id": "b",
+        "text": "Option B"
+      },
+      {
+        "id": "c",
+        "text": "10 years (error: underestimated energy difference; used COP difference (3.8 \u2212 3.2) \u00f7 3.2 = 18.75% savings instead of actual 21% savings)."
+      },
+      {
+        "id": "d",
+        "text": "5.2 years (error: used wrong efficiency ratio; compared 3.8 \u00f7 3.2 = 1.1875 as multiplier, not divisor)."
+      }
+    ],
+    "rationale": {
+      "a": "3.5 years (error: divided capital cost by monthly savings \u20b11,717, not annual \u20b120,600).",
+      "b": "",
+      "c": "10 years (error: underestimated energy difference; used COP difference (3.8 \u2212 3.2) \u00f7 3.2 = 18.75% savings instead of actual 21% savings).",
+      "d": "5.2 years (error: used wrong efficiency ratio; compared 3.8 \u00f7 3.2 = 1.1875 as multiplier, not divisor).",
+      "correct": "Step 1: Cooling output = 3 TR \u00d7 12,000 BTU/hr = 36,000 BTU/hr = 10.55 kW. Step 2: Current split-type annual energy = 10.55 kW \u00f7 3.2 COP \u00d7 6 hr \u00d7 365 = 7.2 MWh/year \u00d7 \u20b114,000/MWh = \u20b1100,800/year. Step 3: VRF annual energy = 10.55 kW \u00f7 3.8 COP \u00d7 6 \u00d7 365 = 5.7 MWh/year \u00d7 \u20b114,000 = \u20b180,200/year. Step 4: Annual savings = \u20b1100,800 \u2212 \u20b180,200 = \u20b120,600/year. Step 5: Simple payback = \u20b1150,000 capital \u00f7 \u20b120,600 annual savings = 7.3 years \u2248 7.5 years. This is typical for residential VRF upgrade scenarios. Source: ALE-UTIL-002-04 Module energy cost examples.",
+      "takeaway": "VRF payback calculation: Energy savings = (Cooling output \u00f7 Old COP \u2212 Cooling output \u00f7 New COP) \u00d7 Annual operating hours \u00d7 Electricity rate; payback ~7\u20138 years typical for residential units, justifying upgrade in medium-to-long-term ownership scenarios."
+    }
+  }
+}

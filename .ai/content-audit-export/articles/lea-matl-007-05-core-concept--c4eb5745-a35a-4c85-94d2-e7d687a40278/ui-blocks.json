@@ -1,0 +1,175 @@
+{
+  "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+  "slug": "lea-matl-007-05-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.437Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:6bfe60fbf2aa2d253ceee42a7e26fa2fa79d9cef6800becf3308bd9bcca976ac",
+  "normalized_content_hash": "abddc65b1f2645beaab12f7fd00dce6bf7fb6139ccdb287f30669a8404fcb6fe",
+  "ui_block_count": 6,
+  "total_blocks": 6,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memory aid: Finish schedules are the builder's contract. Every finish must be specific: product name, color code, size, and cross-reference to specification section. Vague entries (\"paint TBD,\" \"tiles to match existing\") cause rework and disputes. Use CSI format. Include color/material samples on a separate key sheet.</Tip>",
+      "raw_hash": "sha256:f63554f02c5eb5e446bf890a309f5f972b28c8abe8fd92a0d77bd798bcd30f70",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: Finish schedules are the builder's contract. Every finish must be specific: product name, color code, size, and cross-reference to specification section. Vague entries (\"paint TBD,\" \"tiles to match existing\") cause rework and disputes. Use CSI format. Include color/material samples on a separate key sheet.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:7fa8ad3b318f5da7c89e9c4d14a2b954c3211f3de1fff1abf09b4362936d0930",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memory aid: Finish schedules are the builder's contract. Every finish must be specific: product name, color code, size, and cross-reference to specification section. Vague entries (\"paint TBD,\" \"tiles to match existing\") cause rework and disputes. Use CSI format. Include color/material samples on a separate key sheet.",
+      "children_text": "Memory aid: Finish schedules are the builder's contract. Every finish must be specific: product name, color code, size, and cross-reference to specification section. Vague entries (\"paint TBD,\" \"tiles to match existing\") cause rework and disputes. Use CSI format. Include color/material samples on a separate key sheet.",
+      "start_offset": 7278,
+      "end_offset": 7608,
+      "line_start": 55,
+      "line_end": 55,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Creating finish schedules with vague entries like 'paint\u2014light color' or 'ceramic tile\u2014standard'\" correction=\"Every finish must be specific: product brand/model, color code (e.g., Pantone #), size, and specification section reference. Include approved color samples and material samples on a key sheet.\" />",
+      "raw_hash": "sha256:15efca00f57fccd0d00494a1913de684248471d76c1d4387110ebdedf9bba5d1",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Creating finish schedules with vague entries like 'paint\u2014light color' or 'ceramic tile\u2014standard'\", correction=\"Every finish must be specific: product brand/model, color code (e.g., Pantone #), size, and specification section reference. Include approved color samples and material samples on a key sheet.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:1640cf145aee547a2c7f2677d5596a4268e07f1a139fb0d5002f819ba5357955",
+      "props": {
+        "mistake": "Creating finish schedules with vague entries like 'paint\u2014light color' or 'ceramic tile\u2014standard'",
+        "correction": "Every finish must be specific: product brand/model, color code (e.g., Pantone #), size, and specification section reference. Include approved color samples and material samples on a key sheet."
+      },
+      "props_json": {
+        "mistake": "Creating finish schedules with vague entries like 'paint\u2014light color' or 'ceramic tile\u2014standard'",
+        "correction": "Every finish must be specific: product brand/model, color code (e.g., Pantone #), size, and specification section reference. Include approved color samples and material samples on a key sheet."
+      },
+      "props_text": "mistake=\"Creating finish schedules with vague entries like 'paint\u2014light color' or 'ceramic tile\u2014standard'\" correction=\"Every finish must be specific: product brand/model, color code (e.g., Pantone #), size, and specification section reference. Include approved color samples and material samples on a key sheet.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7630,
+      "end_offset": 7962,
+      "line_start": 59,
+      "line_end": 59,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Failing to cross-reference schedule entries to detailed specification sections, creating ambiguity about prep, application, and durability\" correction=\"Every schedule entry must link to a specification section. E.g., 'Boysen Permacoat, Color #B150, per Section 2.0.5 Paint Systems,' ensures builders read the full spec.\" />",
+      "raw_hash": "sha256:06bf465a817f55c59ea5bfafc65143ece39e4fc4f10500b3ebb9d1fd951309ef",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Failing to cross-reference schedule entries to detailed specification sections, creating ambiguity about prep, application, and durability\", correction=\"Every schedule entry must link to a specification section. E.g., 'Boysen Permacoat, Color #B150, per Section 2.0.5 Paint Systems,' ensures builders read the full spec.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:6f062a0e1f2194b30bcdde24e4c89a21056627dfc435bcf6ea592879a75c427a",
+      "props": {
+        "mistake": "Failing to cross-reference schedule entries to detailed specification sections, creating ambiguity about prep, application, and durability",
+        "correction": "Every schedule entry must link to a specification section. E.g., 'Boysen Permacoat, Color #B150, per Section 2.0.5 Paint Systems,' ensures builders read the full spec."
+      },
+      "props_json": {
+        "mistake": "Failing to cross-reference schedule entries to detailed specification sections, creating ambiguity about prep, application, and durability",
+        "correction": "Every schedule entry must link to a specification section. E.g., 'Boysen Permacoat, Color #B150, per Section 2.0.5 Paint Systems,' ensures builders read the full spec."
+      },
+      "props_text": "mistake=\"Failing to cross-reference schedule entries to detailed specification sections, creating ambiguity about prep, application, and durability\" correction=\"Every schedule entry must link to a specification section. E.g., 'Boysen Permacoat, Color #B150, per Section 2.0.5 Paint Systems,' ensures builders read the full spec.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7964,
+      "end_offset": 8313,
+      "line_start": 61,
+      "line_end": 61,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Inconsistent finishes across similar rooms or units, requiring field changes and change orders\" correction=\"Standardize finishes for like spaces (e.g., all bedrooms in residential units use the same paint/floor). Document custom finishes separately with cost tracking.\" />",
+      "raw_hash": "sha256:7daa0830c9c7ce79f3deb4c86c8bdd0e278935a9ca70bf585bcaa0bfc70db5f9",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Inconsistent finishes across similar rooms or units, requiring field changes and change orders\", correction=\"Standardize finishes for like spaces (e.g., all bedrooms in residential units use the same paint/floor). Document custom finishes separately with cost tracking.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:45cb7cf44d001f0ce52ea1b74107b1a45dfbc041820ad811ab956220613b50cc",
+      "props": {
+        "mistake": "Inconsistent finishes across similar rooms or units, requiring field changes and change orders",
+        "correction": "Standardize finishes for like spaces (e.g., all bedrooms in residential units use the same paint/floor). Document custom finishes separately with cost tracking."
+      },
+      "props_json": {
+        "mistake": "Inconsistent finishes across similar rooms or units, requiring field changes and change orders",
+        "correction": "Standardize finishes for like spaces (e.g., all bedrooms in residential units use the same paint/floor). Document custom finishes separately with cost tracking."
+      },
+      "props_text": "mistake=\"Inconsistent finishes across similar rooms or units, requiring field changes and change orders\" correction=\"Standardize finishes for like spaces (e.g., all bedrooms in residential units use the same paint/floor). Document custom finishes separately with cost tracking.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8315,
+      "end_offset": 8613,
+      "line_start": 63,
+      "line_end": 63,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Omitting finish schedules for door and window hardware, leading to color/style mismatches\" correction=\"Include hardware finish in door and window schedules (e.g., 'Brass handles, stainless hinges, brushed stainless push plates per Section 8.7'). Consistency requires specificity.\" />",
+      "raw_hash": "sha256:703a15e37249b846270f711a343c6a483a34cc9b932f07ba7cd020bd6b1428cd",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Omitting finish schedules for door and window hardware, leading to color/style mismatches\", correction=\"Include hardware finish in door and window schedules (e.g., 'Brass handles, stainless hinges, brushed stainless push plates per Section 8.7'). Consistency requires specificity.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:291bb1b59b03e62d1b1078f12737a56244c74bb848c53fb5c5d2d4e7a0175ca6",
+      "props": {
+        "mistake": "Omitting finish schedules for door and window hardware, leading to color/style mismatches",
+        "correction": "Include hardware finish in door and window schedules (e.g., 'Brass handles, stainless hinges, brushed stainless push plates per Section 8.7'). Consistency requires specificity."
+      },
+      "props_json": {
+        "mistake": "Omitting finish schedules for door and window hardware, leading to color/style mismatches",
+        "correction": "Include hardware finish in door and window schedules (e.g., 'Brass handles, stainless hinges, brushed stainless push plates per Section 8.7'). Consistency requires specificity."
+      },
+      "props_text": "mistake=\"Omitting finish schedules for door and window hardware, leading to color/style mismatches\" correction=\"Include hardware finish in door and window schedules (e.g., 'Brass handles, stainless hinges, brushed stainless push plates per Section 8.7'). Consistency requires specificity.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8615,
+      "end_offset": 8924,
+      "line_start": 65,
+      "line_end": 65,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0006",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Not accounting for finish transitions where different materials meet (e.g., tile to wood, paint to wallpaper)\", \"Failing to specify grout color for tile finishes, assuming default (results in color mismatch and rework)\", \"Omitting baseboard and trim heights in finish schedules (75mm, 100mm, or custom)\", \"Not specifying ceiling finish details (grid type, tile size, NRC rating, paint sheen)\", \"Creating schedules without a key/legend sheet showing actual material and color samples for field reference\"]} />",
+      "raw_hash": "sha256:58b5785eefb9734421d0ebdaba39d4b4a896696589a96666539a2ab0988d874e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Not accounting for finish transitions where different materials meet (e.g., tile to wood, paint to wallpaper)\\\", \\\"Failing to specify grout color for tile finishes, assuming default (results in color mismatch and rework)\\\", \\\"Omitting baseboard and trim heights in finish schedules (75mm, 100mm, or custom)\\\", \\\"Not specifying ceiling finish details (grid type, tile size, NRC rating, paint sheen)\\\", \\\"Creating schedules without a key/legend sheet showing actual material and color samples for field reference\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:75705f469f21a522f89a262dd643cfa6801624211ed0cebc6814181a76787451",
+      "props": {
+        "mistakes": "{[\"Not accounting for finish transitions where different materials meet (e.g., tile to wood, paint to wallpaper)\", \"Failing to specify grout color for tile finishes, assuming default (results in color mismatch and rework)\", \"Omitting baseboard and trim heights in finish schedules (75mm, 100mm, or custom)\", \"Not specifying ceiling finish details (grid type, tile size, NRC rating, paint sheen)\", \"Creating schedules without a key/legend sheet showing actual material and color samples for field reference\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Not accounting for finish transitions where different materials meet (e.g., tile to wood, paint to wallpaper)\", \"Failing to specify grout color for tile finishes, assuming default (results in color mismatch and rework)\", \"Omitting baseboard and trim heights in finish schedules (75mm, 100mm, or custom)\", \"Not specifying ceiling finish details (grid type, tile size, NRC rating, paint sheen)\", \"Creating schedules without a key/legend sheet showing actual material and color samples for field reference\"]}"
+      },
+      "props_text": "mistakes={[\"Not accounting for finish transitions where different materials meet (e.g., tile to wood, paint to wallpaper)\", \"Failing to specify grout color for tile finishes, assuming default (results in color mismatch and rework)\", \"Omitting baseboard and trim heights in finish schedules (75mm, 100mm, or custom)\", \"Not specifying ceiling finish details (grid type, tile size, NRC rating, paint sheen)\", \"Creating schedules without a key/legend sheet showing actual material and color samples for field reference\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8926,
+      "end_offset": 9463,
+      "line_start": 67,
+      "line_end": 67,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:2052b2a7c5abf1d9cb70840c7f4905b0161a4fcee0eaa918048704e7f5bf0810"
+}

@@ -1,0 +1,63 @@
+{
+  "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
+  "slug": "lea-dsgn-012-05-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.269Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:674672e9ee3a50f3c625f4d1647f367ebbbef51295bdf2cb875cf419d3db64fe",
+  "normalized_content_hash": "674672e9ee3a50f3c625f4d1647f367ebbbef51295bdf2cb875cf419d3db64fe",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>**Utility Memory Aids:** Water = pressure + storage if needed. Sewage = 1% slope minimum (never flat). Stormwater = 2% slope or retention. Electrical = separated above wet utilities. Easements = PD 1067 (river 26m), road (6\u201310m), utilities (3\u20135m). These reduce buildable area; account early in site planning.</Tip>",
+      "raw_hash": "sha256:7a998f5d86d0889abae411d905009ef17f525e8c54dfa6b0647848085a61621b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Utility Memory Aids:** Water = pressure + storage if needed. Sewage = 1% slope minimum (never flat). Stormwater = 2% slope or retention. Electrical = separated above wet utilities. Easements = PD 1067 (river 26m), road (6\u201310m), utilities (3\u20135m). These reduce buildable area; account early in site planning.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:de78525fea02c493d285051c90f3422508c6469b06d6f99943f63866d3c4a31e",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Utility Memory Aids:** Water = pressure + storage if needed. Sewage = 1% slope minimum (never flat). Stormwater = 2% slope or retention. Electrical = separated above wet utilities. Easements = PD 1067 (river 26m), road (6\u201310m), utilities (3\u20135m). These reduce buildable area; account early in site planning.",
+      "children_text": "**Utility Memory Aids:** Water = pressure + storage if needed. Sewage = 1% slope minimum (never flat). Stormwater = 2% slope or retention. Electrical = separated above wet utilities. Easements = PD 1067 (river 26m), road (6\u201310m), utilities (3\u20135m). These reduce buildable area; account early in site planning.",
+      "start_offset": 9855,
+      "end_offset": 10174,
+      "line_start": 132,
+      "line_end": 132,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Ignoring sewage slope requirements; assuming flat pipes will work (causes backups and failures)\",\"Underestimating water demand or storage; many Philippine sites require elevated tanks because municipal pressure is inconsistent\",\"Locating utilities in building footprints or landscape zones; always reserve easement first\",\"Failing to coordinate with municipal authorities early; utility upgrades delay projects by months or years\",\"Treating stormwater as secondary; inadequate drainage causes flooding and foundation damage\",\"Overlooking secondary easements (gas, telecommunications); these consume land even if not immediately needed\",\"Routing electrical above sewage or water; cross-contamination risk if lines fail\",\"Forgetting that green infrastructure (BERDE) requires larger easement for bioretention basins or wetlands\"]} />",
+      "raw_hash": "sha256:7724e15c1990dba4515356b2d908f4885c0f191ead3f6231b32c9bfd7e1353fb",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Ignoring sewage slope requirements; assuming flat pipes will work (causes backups and failures)\\\",\\\"Underestimating water demand or storage; many Philippine sites require elevated tanks because municipal pressure is inconsistent\\\",\\\"Locating utilities in building footprints or landscape zones; always reserve easement first\\\",\\\"Failing to coordinate with municipal authorities early; utility upgrades delay projects by months or years\\\",\\\"Treating stormwater as secondary; inadequate drainage causes flooding and foundation damage\\\",\\\"Overlooking secondary easements (gas, telecommunications); these consume land even if not immediately needed\\\",\\\"Routing electrical above sewage or water; cross-contamination risk if lines fail\\\",\\\"Forgetting that green infrastructure (BERDE) requires larger easement for bioretention basins or wetlands\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:259d71a1fe01c9ca8e6375e6fd2fca6a269ff36aef06e8943f4973dbfc8e6279",
+      "props": {
+        "mistakes": "{[\"Ignoring sewage slope requirements; assuming flat pipes will work (causes backups and failures)\",\"Underestimating water demand or storage; many Philippine sites require elevated tanks because municipal pressure is inconsistent\",\"Locating utilities in building footprints or landscape zones; always reserve easement first\",\"Failing to coordinate with municipal authorities early; utility upgrades delay projects by months or years\",\"Treating stormwater as secondary; inadequate drainage causes flooding and foundation damage\",\"Overlooking secondary easements (gas, telecommunications); these consume land even if not immediately needed\",\"Routing electrical above sewage or water; cross-contamination risk if lines fail\",\"Forgetting that green infrastructure (BERDE) requires larger easement for bioretention basins or wetlands\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Ignoring sewage slope requirements; assuming flat pipes will work (causes backups and failures)\",\"Underestimating water demand or storage; many Philippine sites require elevated tanks because municipal pressure is inconsistent\",\"Locating utilities in building footprints or landscape zones; always reserve easement first\",\"Failing to coordinate with municipal authorities early; utility upgrades delay projects by months or years\",\"Treating stormwater as secondary; inadequate drainage causes flooding and foundation damage\",\"Overlooking secondary easements (gas, telecommunications); these consume land even if not immediately needed\",\"Routing electrical above sewage or water; cross-contamination risk if lines fail\",\"Forgetting that green infrastructure (BERDE) requires larger easement for bioretention basins or wetlands\"]}"
+      },
+      "props_text": "mistakes={[\"Ignoring sewage slope requirements; assuming flat pipes will work (causes backups and failures)\",\"Underestimating water demand or storage; many Philippine sites require elevated tanks because municipal pressure is inconsistent\",\"Locating utilities in building footprints or landscape zones; always reserve easement first\",\"Failing to coordinate with municipal authorities early; utility upgrades delay projects by months or years\",\"Treating stormwater as secondary; inadequate drainage causes flooding and foundation damage\",\"Overlooking secondary easements (gas, telecommunications); these consume land even if not immediately needed\",\"Routing electrical above sewage or water; cross-contamination risk if lines fail\",\"Forgetting that green infrastructure (BERDE) requires larger easement for bioretention basins or wetlands\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 10196,
+      "end_offset": 11056,
+      "line_start": 136,
+      "line_end": 136,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:ed92bc3b51153b7e2b583a81bdf0e3c669416042a061a1720bab92a948e3c324"
+}

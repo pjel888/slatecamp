@@ -1,0 +1,102 @@
+{
+  "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+  "slug": "lea-util-003-02-emergency-power-systems",
+  "normalized_created_at": "2026-05-01T13:33:44.043Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:4fe7dcf5466724f5f0aff50765d1b8852fa70014984eacd234327391885512a0",
+  "normalized_content_hash": "658a8a46be40a674e54faa1f410643f0c07c14b82640a374aec698c23e6f9080",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\n**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.\n</Tip>",
+      "raw_hash": "sha256:622356ab599708ef8e1c499f87ee74fcb972fdb43c1691365ba4dee76ae2ee06",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, ...\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:becc5f5dc793a9c10d145ec6247be586757366b4782088bf7ace0b3f74932c6c",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.",
+      "children_text": "**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.",
+      "start_offset": 2030,
+      "end_offset": 2362,
+      "line_start": 42,
+      "line_end": 46,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.\n</ExamTip>",
+      "raw_hash": "sha256:e53acaa5613c2e999fc15fb6a87f2e26408d6f5fdf9ffa39265cd66e38da4cf2",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC ...\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a0d94898346af53f844d72c9e2e3f3105f2dd8f2822eb9288fe26d0455c8b89d",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.",
+      "children_text": "**Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.",
+      "start_offset": 1691,
+      "end_offset": 2027,
+      "line_start": 35,
+      "line_end": 39,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "KeyValues",
+      "raw": "<KeyValues items=[{\"value\": \"15-20%\", \"label\": \"Panel Efficiency\"}, {\"value\": \"25-30yr\", \"label\": \"Warranty Life\"}, {\"value\": \"Grid-Tie\", \"label\": \"Most Common\"}, {\"value\": \"1.2-1.5\", \"label\": \"DC/AC Ratio\"}] />",
+      "raw_hash": "sha256:d86be12afcb80acdd9bb378927b5560c410901197be2ca0165cd84f08c23a430",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: items=[{\"value\": \"15-20%\", \"label\": \"Panel Efficiency\"}, {\"value\": \"25-30yr\", \"label\": \"Warranty Life\"}, {\"value\": \"Grid-Tie\", \"label\": \"Most Common\"}, {\"value\": \"1.2-1.5\", \"label\": \"DC/AC Ratio\"}]\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:f057264414425969304f407effebc25287249ac124cad406d948daceab04fb5f",
+      "props": {
+        "items": "[{\"value\": \"15-20%\", \"label\": \"Panel Efficiency\"}, {\"value\": \"25-30yr\", \"label\": \"Warranty Life\"}, {\"value\": \"Grid-Tie\", \"label\": \"Most Common\"}, {\"value\": \"1.2-1.5\", \"label\": \"DC/AC Ratio\"}]"
+      },
+      "props_json": {
+        "items": [
+          {
+            "value": "15-20%",
+            "label": "Panel Efficiency"
+          },
+          {
+            "value": "25-30yr",
+            "label": "Warranty Life"
+          },
+          {
+            "value": "Grid-Tie",
+            "label": "Most Common"
+          },
+          {
+            "value": "1.2-1.5",
+            "label": "DC/AC Ratio"
+          }
+        ]
+      },
+      "props_text": "items=[{\"value\": \"15-20%\", \"label\": \"Panel Efficiency\"}, {\"value\": \"25-30yr\", \"label\": \"Warranty Life\"}, {\"value\": \"Grid-Tie\", \"label\": \"Most Common\"}, {\"value\": \"1.2-1.5\", \"label\": \"DC/AC Ratio\"}]",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 1347,
+      "end_offset": 1688,
+      "line_start": 28,
+      "line_end": 32,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:08cad74dd2346c231ce0d99202907dbeea9c0217cae0dc0114172f2f4d72dacb"
+}

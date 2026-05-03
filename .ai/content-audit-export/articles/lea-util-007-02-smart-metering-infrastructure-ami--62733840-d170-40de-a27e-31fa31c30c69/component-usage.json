@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
+  "slug": "lea-util-007-02-smart-metering-infrastructure-ami",
+  "title": "Smart metering and energy analytics",
+  "component_count": 11,
+  "components": [
+    {
+      "component_name": "BEMSFunctionality",
+      "block_ids": [
+        "ui_0010"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "CodeBlock",
+      "block_ids": [],
+      "found_in_repo": true,
+      "file_path": "src/components/shared/CodeBlock.tsx"
+    },
+    {
+      "component_name": "ComparisonChart",
+      "block_ids": [
+        "ui_0005"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "ComplianceChecklist",
+      "block_ids": [
+        "ui_0008"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "DataQualitySpec",
+      "block_ids": [
+        "ui_0009"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "DataTable",
+      "block_ids": [
+        "ui_0002"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/shared/data-table.tsx"
+    },
+    {
+      "component_name": "JSXCode",
+      "block_ids": [
+        "ui_0003"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "LeartBox",
+      "block_ids": [
+        "ui_0004"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "PriceBreakdown",
+      "block_ids": [
+        "ui_0006"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "SensorTable",
+      "block_ids": [
+        "ui_0007"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    },
+    {
+      "component_name": "TechnicalBox",
+      "block_ids": [
+        "ui_0001"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    }
+  ],
+  "unknown_components": [
+    "BEMSFunctionality",
+    "ComparisonChart",
+    "ComplianceChecklist",
+    "DataQualitySpec",
+    "JSXCode",
+    "LeartBox",
+    "PriceBreakdown",
+    "SensorTable",
+    "TechnicalBox"
+  ],
+  "custom_ui_block_count": 10,
+  "normalized_status": "warnings",
+  "components_detected": [
+    "CodeBlock",
+    "DataTable"
+  ],
+  "unknown_components_detected": [
+    "BEMSFunctionality",
+    "ComparisonChart",
+    "ComplianceChecklist",
+    "DataQualitySpec",
+    "JSXCode",
+    "LeartBox",
+    "PriceBreakdown",
+    "SensorTable",
+    "TechnicalBox"
+  ]
+}

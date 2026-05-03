@@ -1,0 +1,43 @@
+{
+  "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
+  "slug": "lea-prac-frm-003-corporate-practice-of-architecture",
+  "generated_at": "2026-05-03T10:55:46.676Z",
+  "old_hash": "sha256:be039275d4defa80654ccfacf1e24f4c50cc1464f3cc0f820ac852d4ed1afcca",
+  "new_hash": "sha256:f8ec92433ba09e5d81771769a64180fc83b6b25213fea282d5bdd085b15df95f",
+  "original_hash": "sha256:be039275d4defa80654ccfacf1e24f4c50cc1464f3cc0f820ac852d4ed1afcca",
+  "normalized_hash": "sha256:11d9117faf2e8e0b4b2680aa11d57a23e89466727783a7969d97239501e2c83c",
+  "candidate_hash": "sha256:f8ec92433ba09e5d81771769a64180fc83b6b25213fea282d5bdd085b15df95f",
+  "changed": true,
+  "changed_line_count": 45,
+  "inserted_line_count": 24,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 2,
+  "ui_blocks_candidate_count": 1,
+  "ui_blocks_changed_count": 1,
+  "ui_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 1,
+  "changed_text_summary": {
+    "changed": 45,
+    "inserted": 24,
+    "deleted": 0,
+    "original_line_count": 40,
+    "candidate_line_count": 64
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [
+      "ui_0003"
+    ],
+    "changed_count": 1
+  },
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 1 preserved UI block(s)."
+  ],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
+}

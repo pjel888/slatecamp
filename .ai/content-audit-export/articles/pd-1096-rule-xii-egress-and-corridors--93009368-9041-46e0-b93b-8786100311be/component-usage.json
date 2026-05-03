@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-05-01T13:33:44.784Z",
+  "article_id": "93009368-9041-46e0-b93b-8786100311be",
+  "slug": "pd-1096-rule-xii-egress-and-corridors",
+  "title": "PD 1096 Rule XII Egress and Corridors",
+  "component_count": 2,
+  "components": [
+    {
+      "component_name": "LawCallout",
+      "block_ids": [
+        "ui_0001"
+      ],
+      "found_in_repo": true,
+      "file_path": "src/components/wiki/index.ts"
+    },
+    {
+      "component_name": "details",
+      "block_ids": [
+        "ui_0002",
+        "ui_0003"
+      ],
+      "found_in_repo": false,
+      "file_path": null
+    }
+  ],
+  "unknown_components": [
+    "details",
+    "summary"
+  ],
+  "custom_ui_block_count": 3,
+  "normalized_status": "passed",
+  "components_detected": [
+    "LawCallout"
+  ],
+  "unknown_components_detected": [
+    "details",
+    "summary"
+  ]
+}

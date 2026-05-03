@@ -1,0 +1,508 @@
+{
+  "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:61951ec06619cd576f4cc2be051cbc5d0f7d1886d6f35f8e849eddec31fefabb",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "c5ae97d2-00d7-4c9e-93f7-f411977a1981",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A building slab requires 12 m³ of concrete at f'c = 20 MPa. After delivery and placement, 5% waste is expected. How many cement bags (40 kg each) should be ordered if the standard mix requires 7.8 bags per m³?",
+      "options": [
+        {
+          "id": "a",
+          "text": "92 bags"
+        },
+        {
+          "id": "b",
+          "text": "98 bags"
+        },
+        {
+          "id": "c",
+          "text": "103 bags"
+        },
+        {
+          "id": "d",
+          "text": "112 bags"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "92 bags ignores the 5% waste allowance entirely.",
+        "b": "98 bags uses 12 m³ × 7.8 = 93.6 ≈ 94 bags, forgetting the waste factor.",
+        "d": "112 bags over-estimates by adding 5% to the final bag count (98 × 1.05), not the volume.",
+        "correct": "Concrete needed with waste: 12 m³ × (1 + 0.05) = 12 × 1.05 = 12.6 m³. Bags required: 12.6 m³ × 7.8 bags/m³ = 98.28 bags ≈ 103 bags (round up).",
+        "takeaway": "When waste is specified, multiply volume first by (1 + waste %), then scale bags. Always round UP the final bag count."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1, Site practice",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:736bc7ef47f37ee42f33eac23adc582b6ac92a339757a91b656ceea9fc776d3e"
+    },
+    {
+      "question_id": "c485c22f-5d41-4385-80db-c1d746f2763e",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "For a concrete mix f'c = 20 MPa using ACI 211.1, the cement content is 309 kg/m³. How many bags of 40 kg cement are needed for 5 m³ of concrete?",
+      "options": [
+        {
+          "id": "a",
+          "text": "31 bags"
+        },
+        {
+          "id": "b",
+          "text": "35 bags"
+        },
+        {
+          "id": "c",
+          "text": "39 bags"
+        },
+        {
+          "id": "d",
+          "text": "45 bags"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "31 bags results from using 309 kg ÷ 10 or incorrect scaling.",
+        "b": "35 bags results from dividing 1,400 kg by 40, a calculation error in the scaling step.",
+        "d": "45 bags results from over-estimating the cement content or using 360 kg/m³ instead of 309 kg/m³.",
+        "correct": "Total cement = 309 kg/m³ × 5 m³ = 1,545 kg. Divided by 40 kg/bag = 38.625 bags. Round UP to 39 bags (never round down for cement).",
+        "takeaway": "Always round UP cement bags (never down). The formula is: (cement content kg/m³ × volume m³) ÷ 40 kg/bag, then round up."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22, Philippine cement bag standard (40 kg)",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c3f604faddc72a0d08c9c106b20a5fceb1690de64f2b112c5765cb083473ac63"
+    },
+    {
+      "question_id": "d63a7e64-7299-413e-98f1-448e30d7b228",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A concrete slab measures 8 m long, 6 m wide, and 100 mm thick. How many cubic meters of concrete are required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4.8 m³"
+        },
+        {
+          "id": "b",
+          "text": "6.4 m³"
+        },
+        {
+          "id": "c",
+          "text": "9.6 m³"
+        },
+        {
+          "id": "d",
+          "text": "48 m³"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "6.4 m³ results from using 0.13 m instead of 0.10 m—incorrect unit conversion.",
+        "c": "9.6 m³ results from doubling the thickness or using 20 cm—careless error.",
+        "d": "48 m³ results from forgetting to convert mm to m and using 100 m instead of 0.10 m.",
+        "correct": "V = 8 m × 6 m × 0.10 m = 4.8 m³. Always convert thickness from mm to m (100 mm = 0.10 m).",
+        "takeaway": "Volume = length × width × height. Always convert all dimensions to the same unit (meters) before multiplying."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1, Basic geometry",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:820abc76d0da1a53b138a58ddb61cc72bf2105104235e9b851fa7ebb5b50f64c"
+    },
+    {
+      "question_id": "6ee80a53-2217-46fa-b6b4-e1a61da2c28f",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A concrete estimate uses the formula: cement (kg/m³) = water content ÷ W/C. If water content is 170 L/m³ and W/C = 0.52, calculate the cement content.",
+      "options": [
+        {
+          "id": "a",
+          "text": "88 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "212 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "327 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "408 kg/m³"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "88 kg/m³ results from multiplying 170 × 0.52 instead of dividing.",
+        "b": "212 kg/m³ results from an intermediate calculation or estimation error.",
+        "d": "408 kg/m³ results from using W/C = 0.42 or other incorrect ratio.",
+        "correct": "Cement = 170 ÷ 0.52 = 326.9 ≈ 327 kg/m³.",
+        "takeaway": "Always divide water content by the water-cement ratio: Cement = Water ÷ W/C."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26fbebf5eb1806c885023eefcf4ccd53d45c8f932aa81cd6b59afa1fd66fba97"
+    },
+    {
+      "question_id": "ced3543b-b7b0-4aa2-a36b-b09ca928568b",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A contractor estimates 25 m³ of concrete for a multi-storey building. The structural engineer specifies f'c = 24 MPa with a slump of 150 mm. Using ACI 211.1, cement = 360 kg/m³, water = 180 L/m³, coarse agg = 800 kg/m³, fine agg = 640 kg/m³. Calculate the total mass (in kg) of the complete concrete batch, accounting for all four components.",
+      "options": [
+        {
+          "id": "a",
+          "text": "45,000 kg"
+        },
+        {
+          "id": "b",
+          "text": "49,500 kg"
+        },
+        {
+          "id": "c",
+          "text": "60,000 kg"
+        },
+        {
+          "id": "d",
+          "text": "72,500 kg"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "45,000 kg results from using 1,800 kg/m³ or miscalculating the per-cubic-meter mass.",
+        "c": "60,000 kg results from using 2,400 kg/m³ (cured density) multiplied by 25 m³, which represents hardened concrete weight, not batch ingredient mass.",
+        "d": "72,500 kg is over-estimated; may result from including wastage or doubling a component.",
+        "correct": "Total fresh concrete mass per m³ = 360 + 180 + 800 + 640 = 1,980 kg/m³. For 25 m³: 1,980 × 25 = 49,500 kg. Note: This is the mass of fresh (unhardened) concrete ingredients. After curing, water evaporates and hydration reactions occur, resulting in hardened concrete with a unit weight of approximately 2,400 kg/m³ per NSCP 2015 and ACI 211.1. The question asks for 'complete concrete batch' mass, which correctly refers to fresh concrete ingredients before curing.",
+        "takeaway": "Total concrete batch mass = sum of (cement + water + coarse + fine) per m³, multiplied by volume. Standard fresh concrete weighs ~1,980–2,200 kg/m³."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22, NSCP 2015",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fe414c118db12f1cda6c80cc1568e6df8d7b752f74ad54a6d9775c50c45681fe"
+    },
+    {
+      "question_id": "28a96af7-a201-47ff-a1d0-f56bca78c045",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A concrete footing requires f'c = 24 MPa. According to ACI 211.1, the water-cement ratio (W/C) for this strength is 0.50. If the water content is estimated at 180 L/m³, what is the required cement content?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "180 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "320 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "360 kg/m³"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "90 kg/m³ results from multiplying 180 × 0.50 instead of dividing.",
+        "b": "180 kg/m³ incorrectly assumes cement content equals water content.",
+        "c": "320 kg/m³ results from using W/C = 0.55 (for 20 MPa) instead of 0.50.",
+        "correct": "Cement content = Water content ÷ W/C = 180 ÷ 0.50 = 360 kg/m³.",
+        "takeaway": "The water-cement ratio is W/C, so Cement = Water ÷ (W/C). For higher strength (lower W/C), cement content increases."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22, Mix design methodology",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4bc7537566eedfd497612436846a9dce22603f0ab7ef219e862f162a2a8080ce"
+    },
+    {
+      "question_id": "4cf03943-3b63-47d7-9e92-102e8ec3dcb4",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A project requires 3 m³ of concrete with f'c = 20 MPa. Using the standard ACI mix with 850 kg/m³ coarse aggregate and 650 kg/m³ fine aggregate, how many tons of total aggregate (coarse + fine) are needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.55 tons"
+        },
+        {
+          "id": "b",
+          "text": "4.5 tons"
+        },
+        {
+          "id": "c",
+          "text": "4.8 tons"
+        },
+        {
+          "id": "d",
+          "text": "6.45 tons"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2.55 tons results from calculating only coarse or fine aggregate (850 × 3 ÷ 1,000 = 2.55), not the total.",
+        "c": "4.8 tons may result from using 1,600 kg/m³ total aggregate and rounding.",
+        "d": "6.45 tons results from including cement and water in the aggregate calculation (incorrect).",
+        "correct": "Coarse agg: 850 kg/m³ × 3 m³ = 2,550 kg. Fine agg: 650 kg/m³ × 3 m³ = 1,950 kg. Total = 2,550 + 1,950 = 4,500 kg = 4.5 tons. Formula: (coarse + fine kg/m³) × volume m³ = total kg, then divide by 1,000 for tons.",
+        "takeaway": "Aggregate mass = (coarse agg kg/m³ + fine agg kg/m³) × volume m³. Convert kg to tons by dividing by 1,000."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:af9b2e7185149413dd5636008b86211c919c0512ab70781a21053d14eb2b02e5"
+    },
+    {
+      "question_id": "1b928fc0-4465-430a-bea5-7d369769528b",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "Two concrete mixes are being compared: Mix A for f'c = 20 MPa requires 309 kg/m³ cement, and Mix B for f'c = 24 MPa requires 360 kg/m³ cement. If both mixes need to cover 10 m³, how many additional 40 kg cement bags does Mix B require compared to Mix A?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12.75 bags"
+        },
+        {
+          "id": "b",
+          "text": "12.8 bags"
+        },
+        {
+          "id": "c",
+          "text": "13 bags"
+        },
+        {
+          "id": "d",
+          "text": "25 bags"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "12.75 bags is the calculated difference but must round up to 13 for ordering.",
+        "b": "12.8 bags is a rounding error; the exact difference is 12.75.",
+        "d": "25 bags results from the incorrect calculation (360 – 309) ÷ 40 + a rounding error.",
+        "correct": "Mix A: 309 × 10 ÷ 40 = 77.25 bags. Mix B: 360 × 10 ÷ 40 = 90 bags. Difference: 90 – 77.25 = 12.75 bags ≈ 13 bags (round up the difference).",
+        "takeaway": "When comparing two mixes, calculate total bags for each, find the difference, and round up."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0630f1742f800d634dba6f4b3619aed4d5b6b86373a9ee71529b2df8ec596dc"
+    },
+    {
+      "question_id": "8051bdb4-6602-4773-834c-cad43b1cf584",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "What is the most commonly used standard weight of a Portland cement bag in the Philippines for residential and commercial construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 kg"
+        },
+        {
+          "id": "b",
+          "text": "40 kg"
+        },
+        {
+          "id": "c",
+          "text": "50 kg"
+        },
+        {
+          "id": "d",
+          "text": "60 kg"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "25 kg bags are not standard in Philippine construction; this may confuse with other markets.",
+        "c": "50 kg bags are commercially available, primarily for imported cement, but the 40 kg bag is the established Philippine standard.",
+        "d": "60 kg is industrial-grade cement for specialized projects, not standard residential/commercial concrete.",
+        "correct": "The 40 kg bag is the Philippine standard for locally manufactured and widely distributed Portland cement, used consistently across DPWH and commercial projects. While 50 kg bags exist in the market (primarily for imported cement), the 40 kg format remains the predominant standard referenced in Philippine regulations and local industry practice.",
+        "takeaway": "The Philippine standard is 40 kg per bag. While 50 kg bags exist in the market (often imported), 40 kg is the reference weight for local specifications, DPWH projects, and material estimates."
+      },
+      "explanation": null,
+      "code_citation": "DTI Memorandum Circular No. 20-56, Series of 2020; DPWH Standard Specifications; Republic Cement, Holcim Philippines product specifications",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c7a00b58337abec94299fb003975ad84ca23bd7ae57b660d1c4fa209dd9fe3eb"
+    },
+    {
+      "question_id": "0f696315-b04f-4279-b9a4-51e25bd4f063",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "According to ACI 211.1, what is the unit weight (density) of normal-weight concrete after curing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,000 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "2,200 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "2,400 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "2,600 kg/m³"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2,000 kg/m³ is close but is used only in fresh (unhardened) concrete estimates, not for cured concrete.",
+        "b": "2,200 kg/m³ is below the standard; may confuse with lightweight concrete.",
+        "d": "2,600 kg/m³ is for heavyweight concrete, not normal-weight concrete.",
+        "correct": "ACI 211.1 and NSCP 2015 specify 2,400 kg/m³ as the unit weight for normal-weight concrete used in structural applications.",
+        "takeaway": "Standard unit weight = 2,400 kg/m³. Use this to convert volume (m³) to weight (kg) for transportation and cost calculations."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22, NSCP 2015",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ad78ccdf0f9ab8bfb7a641bcf98912685cf003598d3fffec1cf1b73bdb63eaf0"
+    }
+  ]
+}

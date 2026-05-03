@@ -1,0 +1,632 @@
+{
+  "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:589a5a7b9ddea53fe6cd946c33300dd85f7857acc56decc9edc679cb3d82ec24",
+  "question_count": 12,
+  "questions": [
+    {
+      "question_id": "665e3f89-744e-42c5-9e49-15a1d35a4895",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "An office building plan is 25m (E-W) × 18m (N-S) in Cebu (Type IV climate). Identify the primary design problem for cross-ventilation and propose a solution.",
+      "options": [
+        {
+          "id": "a",
+          "text": "East-west exposure is insufficient; rotate plan 45° diagonal for optimal solar orientation, which may not be feasible due to site constraints"
+        },
+        {
+          "id": "b",
+          "text": "Tropical ventilation requires sealed spaces to prevent external heat penetration; cross-ventilation is unnecessary, which contradicts passive cooling strategies"
+        },
+        {
+          "id": "c",
+          "text": "Window area is too small; increase facade openings to 50% to maximize air velocity, which may affect structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "Plan width (25m) exceeds the 15m effective cross-ventilation depth; interior zones lack fresh air. Solution: interior courtyard (6m×6m) creating two 9.5m zones on each side"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Solar orientation optimization is secondary to ventilation effectiveness in tropical design.",
+        "b": "This contradicts tropical passive design philosophy; sealed spaces are counter to vernacular proven practice.",
+        "c": "Asymmetric sizing (small inlets, large outlets) is optimal, not uniform 50% openings.",
+        "correct": "The 15m rule: 'Buildings wider than 15–18 meters struggle to ventilate interior zones; interior courtyards or atria become necessary.' The solution (atrium splitting the plan) is explicitly provided as the tested answer.",
+        "takeaway": "The 15m rule: 'Buildings wider than 15–18 meters struggle to ventilate interior zones; interior courtyards or atria become necessary.' The solution (atrium splitting the plan) is explicitly provided as the tested answer."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f97b180dec35d1d2c7d4b3f11ef3bfe0c897c5bffffe7061c68bfeb7d6348c94"
+    },
+    {
+      "question_id": "11de4a7a-6d25-455b-8204-3aac5408c9d4",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "A hospital in Quezon City (Type IV) must maintain comfortable spaces for patients. How should architects integrate light shelf design with daylighting and cooling requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Light shelves should use reflective finishes on both shelf and ceiling to maximize brightness and reduce cooling load equally, ensuring optimal energy efficiency"
+        },
+        {
+          "id": "b",
+          "text": "Light shelves are unnecessary if electric lighting is provided; focus on mechanical cooling instead, as it offers more consistent results"
+        },
+        {
+          "id": "c",
+          "text": "Light shelves work best in arid climates; Type IV high humidity reduces their effectiveness significantly, making them less viable"
+        },
+        {
+          "id": "d",
+          "text": "Light shelves reduce window-area heat gain by 30–40% while achieving 2–3× greater interior illumination; specular (mirror-like) aluminum + diffuse ceiling is optimal for redirecting high-angle noon sun deep into building"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mirror ceiling creates secondary glare; diffuse ceilings are required for health-appropriate non-glare illumination.",
+        "b": "Light shelves reduce mechanical cooling demand by 35–40%; they are highly relevant to tropical hospital design.",
+        "c": "Humidity does not reduce light shelf effectiveness; they work equally well in Type IV's perpetual moisture.",
+        "correct": "Light shelves reduce window-area heat gain by 30–40% while achieving 2–3× greater interior illumination... specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration.",
+        "takeaway": "specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:43ac682c34f0eb68571fc9fac3151db92d6f5752ee8d2de284f79e111d9ce87a"
+    },
+    {
+      "question_id": "a9836d18-447e-4f50-82b4-3b53724f5a1d",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "Calculate the required overhang depth for an east wall in Manila (8am, summer) with 4m sill height, given solar altitude 10°. Then determine why this depth alone is insufficient without additional shading.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Overhang depth = 4m × tan(10°) ≈ 0.7m (practical). This blocks noon sun but misses early 6–8am exposure when altitude is <10°, necessitating additional shading solutions"
+        },
+        {
+          "id": "b",
+          "text": "Overhang depth = 4m / sin(10°) ≈ 23m. Vertical fins are unnecessary if overhang is deep enough, although this depth is impractical for most urban settings"
+        },
+        {
+          "id": "c",
+          "text": "Overhang depth = 4m / tan(10°) ≈ 22.7m (impractical). Insufficient without vertical fins blocking low-angle morning sun"
+        },
+        {
+          "id": "d",
+          "text": "East walls require minimal shading because morning sun is cooler than afternoon sun, which is a common misconception in tropical climates"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Calculation is reversed (should be height / tan, not height × tan); also misidentifies altitude at 8am.",
+        "b": "A 23m overhang is structurally and aesthetically implausible; vertical fins are mandatory for practical design.",
+        "d": "Morning sun may be cooler but creates glare and psychological discomfort; early heat gain must be controlled.",
+        "correct": "Using depth = height / tan(altitude): 4m / tan(10°) = 22.7m—clearly impractical. Early morning (6–8am) has even shallower angles (<10°), requiring additional vertical fins or brise-soleil to block oblique-angle low sun. 2–3m overhangs PLUS vertical fins for east facades.",
+        "takeaway": "2–3m overhangs PLUS vertical fins for east facades."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:785b0663d249a44246cc98e1312acdaca5e17ff50404ef227791d189f3ca66ae"
+    },
+    {
+      "question_id": "003a6a7b-7696-4826-be34-19570663f743",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "Explain the relationship between orientation strategy and ventilation strategy in tropical architecture. Why can a poorly shaded N-S elongated building outperform a poorly ventilated E-W elongated building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ventilation effectiveness (cooling load reduction 60–80%) exceeds shade benefit (30–50%); poor ventilation cannot be compensated by good orientation. Conversely, excellent ventilation partially overcomes poor orientation through continuous air movement"
+        },
+        {
+          "id": "b",
+          "text": "North-south orientation is universally superior regardless of ventilation quality, because the reduced solar gain on the longer north and south facades eliminates the need for cross-ventilation, making shading alone sufficient for thermal comfort in all tropical climates"
+        },
+        {
+          "id": "c",
+          "text": "Orientation matters equally to ventilation; neither can compensate for deficiency in the other, as solar geometry and wind patterns contribute identical proportions to thermal comfort, meaning a failure in either parameter results in proportionally equal overheating"
+        },
+        {
+          "id": "d",
+          "text": "East-west orientation is optimal; ventilation is secondary to shading geometry because elongating along the east-west axis maximizes prevailing wind exposure, while narrow north-south facades naturally limit solar gain without requiring additional shading devices"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Orientation does not overcome poor ventilation; occupants will remain thermally uncomfortable.",
+        "c": "This overstates orientation importance; tropics prioritize ventilation > shading > orientation.",
+        "d": "This reverses the hierarchy; ventilation is primary, orientation secondary in tropical design.",
+        "correct": "The ALE often tests whether students recognize that shading and ventilation trump orientation.' Cross-ventilation effectiveness (6–12 ACH with synergistic stack effect) provides dramatically greater cooling than orientation alone. A poorly ventilated building cannot escape its thermal load; a poorly shaded but well-ventilated building can dissipate heat through air movement despite unfavorable aspect ratio.",
+        "takeaway": "A poorly ventilated building cannot escape its thermal load; a poorly shaded but well-ventilated building can dissipate heat through air movement despite unfavorable aspect ratio."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff04ea3ce2e54cc6e7cbd9fa72a136ab7df666fda349cf2af6f2687697acf2ac"
+    },
+    {
+      "question_id": "02559414-0545-4024-9703-df834ee48385",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "What is the 'Venturi skirt' design mentioned as a passive cooling innovation for overhangs in tropical architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A horizontal fin array that blocks oblique solar angles while maintaining vertical light penetration, enhancing daylighting"
+        },
+        {
+          "id": "b",
+          "text": "A sealed plenum chamber beneath overhangs that buffers thermal radiation and reduces heat transfer to interior spaces"
+        },
+        {
+          "id": "c",
+          "text": "A reflective paint coating on soffit surfaces to reduce re-radiation of trapped heat, improving thermal comfort"
+        },
+        {
+          "id": "d",
+          "text": "A 30–45 degree louver beneath overhangs that accelerates wind flow and increases cooling by creating local pressure drop"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes horizontal shading; not the dynamic wind-acceleration principle of Venturi geometry.",
+        "b": "This describes a thermal buffer; not the Venturi acceleration mechanism.",
+        "c": "Soffit reflectance is a separate strategy; not the Venturi skirt.",
+        "correct": ": 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves.",
+        "takeaway": ": 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b8d2009827eb479658612315608137f5f4504402d15245d406b8e292d036153a"
+    },
+    {
+      "question_id": "f88d1267-28e2-4b78-a568-db664836a6e2",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "Why would a developer's proposal for thick concrete walls in an Eastern Visayas project (Type II, no dry season, nighttime 24°C) represent a design error?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Concrete absorbs moisture, causing structural failure in perpetually damp climates, especially when not properly treated with moisture barriers"
+        },
+        {
+          "id": "b",
+          "text": "Type II nighttime temperatures (24°C) prevent thermal mass discharge; concrete absorbs daytime heat and re-radiates at night, degrading comfort. Alternative: lightweight block + insulation + continuous ventilation"
+        },
+        {
+          "id": "c",
+          "text": "Concrete requires high embodied carbon; BERDE would penalize the choice, leading to lower sustainability ratings and potential regulatory issues"
+        },
+        {
+          "id": "d",
+          "text": "Thick walls block cross-ventilation, reducing air circulation by 40–50%, which can lead to increased reliance on mechanical ventilation systems"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While moisture durability matters, the fundamental issue is thermal performance failure.",
+        "c": "Embodied carbon is a secondary BERDE consideration; thermal performance is primary.",
+        "d": "Wall thickness alone does not block ventilation if windows remain properly sized; the core problem is thermal ineffectiveness.",
+        "correct": "The thermal mass error in Type II is explicitly addressed: 'Type II climate prevents nighttime thermal discharge (insufficient ΔT between wall [25°C] and ambient [24°C]). Concrete mass will trap daytime heat and re-radiate at night, degrading comfort.' The proposed alternative (lightweight block + ventilation) is the correct design response.",
+        "takeaway": "Concrete mass will trap daytime heat and re-radiate at night, degrading comfort.' The proposed alternative (lightweight block + ventilation) is the correct design response."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fda3e11d4ad7ae40282b002cb8b21223930ac06b231850f061e6c49959b50b31"
+    },
+    {
+      "question_id": "9c009e8a-fd05-44d3-b301-7626e0e9eca1",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "In tropical climates, what is the primary cooling mechanism that differs fundamentally from temperate-zone passive design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Thermal mass storage of daytime heat for release during cool nights, which is less effective in tropical climates due to minimal temperature variation"
+        },
+        {
+          "id": "b",
+          "text": "Ventilation (cross-ventilation, stack effect, wind acceleration) is the primary mechanism; thermal mass is ineffective due to suppressed diurnal range"
+        },
+        {
+          "id": "c",
+          "text": "Orientation to maximize south-facing winter solar gain for heating, which is not applicable in tropical regions"
+        },
+        {
+          "id": "d",
+          "text": "Reflective surfaces to mirror solar radiation back to atmosphere, reducing heat absorption in buildings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is arid-climate doctrine; it fails in tropics where nighttime temps are too high.",
+        "c": "Tropical orientation prioritizes shade and ventilation, not winter heating gain (unnecessary in tropics).",
+        "d": "Reflectance helps but is secondary to active air movement strategies.",
+        "correct": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat.",
+        "takeaway": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:892530f36db6472629293a66e6a6daa93c8f78d87273ab71287621ca8d281098"
+    },
+    {
+      "question_id": "e09a779d-e420-433b-b63c-32b6daeaa32c",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "A bay kubo-inspired residential design incorporates open floor plan, large windows (30–40% wall area), and slat flooring. Which passive cooling mechanisms does this vernacular exemplar employ simultaneously?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cross-ventilation only; other mechanisms are secondary, which limits the design's effectiveness"
+        },
+        {
+          "id": "b",
+          "text": "Cross-ventilation (wind-driven), stack effect (buoyancy via open floor and roof vents), and evaporative cooling (permeable sawali/flooring)"
+        },
+        {
+          "id": "c",
+          "text": "Thermal mass buffering combined with solar orientation optimization, which is not typical for this design"
+        },
+        {
+          "id": "d",
+          "text": "Active mechanical ventilation with natural light backup, which contradicts the passive design principles"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The bahay kubo achieves 8–10 ACH through synergized mechanisms, not single-strategy reliance.",
+        "c": "Thermal mass and solar orientation are secondary in vernacular tropical design.",
+        "d": "The bahay kubo is passive; mechanical systems are absent by definition.",
+        "correct": "A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard.",
+        "takeaway": "A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c162549f7d91a11c949a498cdec52e7408f1b240c3013431d128944a493b5dbd"
+    },
+    {
+      "question_id": "93364bbd-0470-4cf2-baf3-8c469f838049",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "Compare lightweight construction (timber, metal stud, bamboo) versus heavyweight construction (concrete, masonry) in tropical climates. Which statement correctly reflects research findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heavyweight is better only in Type III/IV zones; weight is neutral in Type I/II climates, where other factors dominate"
+        },
+        {
+          "id": "b",
+          "text": "Heavyweight construction is universally superior; thermal mass reduces peak cooling by 6–8°C, providing consistent comfort"
+        },
+        {
+          "id": "c",
+          "text": "Both perform identically; construction weight is irrelevant to tropical thermal performance, as other variables are more significant"
+        },
+        {
+          "id": "d",
+          "text": "Lightweight construction is 2–3°C cooler during occupied hours (8am–6pm) vs. heavyweight; nighttime cooling techniques are 35.9% more effective in lightweight structures"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lightweight is optimal in all tropical Coronas types; the difference is marginal in Type III/IV only because diurnal range is slightly larger, not because heavyweight becomes advantageous.",
+        "b": "This is arid-climate logic; it explicitly fails in tropical suppressed diurnal range.",
+        "c": "Weight dramatically affects thermal response; lightweight structures have faster adaptation to ventilation cooling.",
+        "correct": "Research: 'Lightweight timber or metal framing responds quickly to cooled air from night ventilation or early-morning stack effect; interior temperature drops 2–3°C faster than heavyweight buildings. Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design.",
+        "takeaway": "Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dea9361e43fdea130219279384d3c327f0f8f3710b93dbde92ab09d27a8e8342"
+    },
+    {
+      "question_id": "14a08653-a3b3-4e51-8e9c-db1e0bec0aa2",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "Contrast the roof insulation strategy in tropical climates versus temperate climates. What different purpose does insulation serve in each?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both climates use insulation to minimize heat transfer; the mechanism is identical, though the specific materials and thicknesses may vary"
+        },
+        {
+          "id": "b",
+          "text": "Tropics require thicker insulation (150mm+) because humidity reduces effectiveness; Temperate can use thinner 50mm, as the primary concern is temperature differential"
+        },
+        {
+          "id": "c",
+          "text": "Tropics: Insulation prevents heat ingress (cooling load reduction); Temperate: Insulation prevents heat loss (heating load reduction). 50–75mm tropical insulation is adequate; 100–150mm is over-specification"
+        },
+        {
+          "id": "d",
+          "text": "Insulation effectiveness is independent of climate; thickness is determined by building code uniformly, though practical applications may differ"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mechanism differs; the directional heat flow and purpose are opposite.",
+        "b": "Humidity does not require thicker tropical insulation; 50–75mm adequately blocks inbound solar heat.",
+        "d": "Climate directly determines optimal insulation thickness; uniform codes ignore regional thermodynamic reality.",
+        "correct": "In tropics, insulation prevents heat *ingress*, not heat loss (unlike cold climates). 50–75mm is sufficient... BERDE penalizes excess insulation as embodied carbon waste.' This climate-specific logic is fundamental to tropical passive design.",
+        "takeaway": "BERDE penalizes excess insulation as embodied carbon waste.' This climate-specific logic is fundamental to tropical passive design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:67aea987b9e81361b54b78d6a847b870e388c4ee240b61355509bebf31840cd6"
+    },
+    {
+      "question_id": "07cef4a3-d502-422d-94fe-e454050ca7e8",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "A heritage bahay kubo must be upgraded with typhoon-resistant sliding doors and insect screens while preserving passive ventilation. Identify three design interventions that maintain cooling effectiveness.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Specify aluminum-frame sliding doors with ventilation louvers (15% aperture when closed), perforated metal insect screens (50% open area), and maintain elevated slat floor to preserve under-structure ventilation"
+        },
+        {
+          "id": "b",
+          "text": "Seal all openings with tight-fitting doors/screens; install mechanical cooling systems to compensate for ventilation loss"
+        },
+        {
+          "id": "c",
+          "text": "Replace bamboo screens with solid walls; compensate with larger roof vents to enhance airflow"
+        },
+        {
+          "id": "d",
+          "text": "Accept ventilation loss; upgrade insulation instead to improve thermal comfort"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Sealing defeats the entire bahay kubo design philosophy and ventilation effectiveness.",
+        "c": "Solid walls eliminate cross-ventilation; roof vents alone cannot compensate (stack effect requires inlet/outlet balance).",
+        "d": "Insulting ventilation with mechanical systems is the opposite of sustainable vernacular preservation.",
+        "correct": "Tested answer explicitly includes: '(a) Specify aluminum-frame sliding doors with ventilation louvers; when closed, louvers maintain 15% aperture area for stack flow. (b) Replace traditional fabric insect screens with perforated metal (aluminum 50% open area)... (c) Maintain elevated slat floor by raising door sills 300–500mm, preserving under-structure ventilation.' All three interventions are required for modernization without ventilation loss.",
+        "takeaway": "(c) Maintain elevated slat floor by raising door sills 300–500mm, preserving under-structure ventilation.' All three interventions are required for modernization without ventilation loss."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a4532f5c93a197a60c96ae744edd11a28a56e1a8c6ea83c7271222da8d819238"
+    },
+    {
+      "question_id": "dec8f145-074a-4181-aba9-1fdc331cca54",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "A tropical courtyard design includes water features (fountains, pools) intended to cool occupants via evaporative effect. Under what climate conditions is this strategy effective, and where does it fail?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Effective in Type I dry season (RH 40–50%); limited in Type II perpetual moisture (RH 75–85%) where evaporative potential is reduced 60–70%. Type II requires drainage/prevention of mosquito breeding instead"
+        },
+        {
+          "id": "b",
+          "text": "Water features provide 1–2°C temperature reduction in all tropical climates through evaporation, assuming optimal placement and maintenance"
+        },
+        {
+          "id": "c",
+          "text": "Water features are ineffective in tropics; humidity is too high for any evaporative cooling, making alternative cooling methods necessary"
+        },
+        {
+          "id": "d",
+          "text": "Water features always increase humidity, worsening thermal comfort regardless of climate type, unless combined with mechanical ventilation"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While 1–2°C is the magnitude, effectiveness varies dramatically with humidity levels.",
+        "c": "Type I dry season provides clear evaporative cooling benefit; not all tropics are equally humid.",
+        "d": "Water features increase humidity locally but provide net cooling through evaporation; this is biophilic benefit despite humidity rise.",
+        "correct": "Courtyard water features increase relative humidity locally and reduce air temperature by 1–2°C through evaporation.' Performance is climate-dependent: Type I dry season (RH 40–50%) maximizes evaporative cooling. Type II perpetual dampness (RH 75–85%) reduces evaporative potential by 60–70%. Courtyards can trap stale air if poorly oriented; drainage must prevent mosquito breeding in wet climates.'",
+        "takeaway": "Courtyards can trap stale air if poorly oriented; drainage must prevent mosquito breeding in wet climates.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:925d9c9625201d925ae97e31ae4949d9fd9ed2f8764b2748adfd3d530d709214"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+# Vertical Openings and Floor Roof Construction
+
+---
+
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply fire protection requirements for vertical openings (stairs, shafts, chutes, ducts) under PD 1096 Rule XII and for floor/roof construction under Rule VIII; determine when draft stops, fire dampers, and firestopping are required; calculate maximum permitted floor opening sizes unprotected vs protected; identify the shaft enclosure fire-rating required by building height.
+
+## Module Header
+
+| Field | Details |
+|---|---|
+| **Module Focus** | Escalator/Elevator Enclosure Requirements, Fire-Rated Shaft Design, Floor Lateral Bracing & Roof Wind Loads |
+| **Legal Basis (PH)** | PD 1096, Rule XII, Sections 1204–1206; RA 9514 (Fire Code of the Philippines) |
+| **IBC Counterpart** | IBC Section 713 (Shaft Enclosures), Table 601 (Fire-Resistance Requirements by Construction Type) |
+| **LEA Area** | Area 2 — Structural Design, Utilities & Materials (30% of exam weight) |
+| **Difficulty** | Intermediate |
+| **Spaced Repetition** | Review on Day 1, Day 3, Day 7, and Day 14 |
+
+---
+
+## Hook Scenario
+
+Picture yourself reviewing the working drawings for a new 10-storey mixed-use development in Ortigas Center. The building has two passenger elevators, one service elevator, and — critically — two escalators connecting the ground floor retail arcade to the second-floor cinema lobby. During the building permit review, the Building Official's fire safety evaluator flags three issues: the escalator opening design has no draft curtain shown on the reflected ceiling plan, the floor-to-floor opening for a feature staircase in the atrium exceeds 25% of the wall length at the 3-hour separation zone, and the roof framing schedule lists a wind load of only 80 kg/sq.m — below the minimum required by Sec. 1206.
+
+Each of these findings can trigger a permit denial or, worse, a fire-safety citation after occupancy. Sections 1204–1206 of PD 1096 are the referee for every vertical opening, every shaft wall, every beam-to-girder connection, and the minimum wind resistance of every roof in the Philippines. Pass this module, and you will know exactly what the evaluator is looking for before the plans leave your table.
+
+---
+
+## Core Concepts
+
+### Concept 1: Escalator Openings — Draft Curtains and Sprinkler Geometry (Sec. 1204)
+
+Escalators present a unique fire hazard because the moving steps create a continuous open path between floor levels — a chimney effect that can carry fire, smoke, and toxic gases from one storey to the next within seconds. PD 1096 Sec. 1204 addresses this with two simultaneous countermeasures:
+
+**Draft Curtain Requirement:**
+- A draft curtain must extend **at least 200 mm** downward from the ceiling on **all sides** of the escalator opening.
+- Purpose: the curtain confines smoke and heat at the ceiling level, preventing horizontal spread before the sprinklers activate.
+- Material: must be of incombustible construction; glass, metal, or approved non-combustible board.
+
+**Sprinkler Ring Requirement:**
+- Automatic sprinklers must be installed around the **perimeter** of each escalator opening.
+- The sprinklers must be positioned **within 600 mm** of the draft curtain (measured horizontally from the curtain face).
+- Maximum sprinkler spacing along the perimeter: **1.80 m center to center**.
+- Purpose: the water curtain from the sprinklers (combined with the draft curtain) creates a drenching barrier at the opening, suppressing fire spread between floors without requiring a full shaft enclosure.
+
+Together, the draft curtain + sprinkler ring system is the Philippine code's alternative to full shaft enclosure for escalators — it provides compartmentalization through active (sprinklers) and passive (curtain) means simultaneously.
+
+### Concept 2: The Three-Hour Separation Opening Limits (Sec. 1204)
+
+When a building's occupancy separation requires a **3-hour fire-resistive rating** between areas (e.g., high-hazard vs. ordinary occupancy), any opening in those separation walls is strictly controlled:
+
+1. **Maximum aggregate opening**: All openings in any wall requiring 3-hour separation must not exceed **25% of the total wall length**.
+2. **Maximum single opening**: No individual opening in that wall may exceed **10.00 sq.m**.
+3. **Vertical enclosure**: Floor-level openings (holes, shafts, atria) within a 3-hour separation zone must be protected by vertical enclosures constructed to a minimum of **2-hour fire-resistive** construction.
+4. **Opening assemblies in enclosure**: The openings within those 2-hour enclosure walls must be protected by **3-hour fire assemblies** (i.e., fire doors or shutters with a 3-hour rating).
+
+This creates a layered system: the shaft wall itself is 2-hour rated, but the door or damper in that wall must be rated for 3 hours — matching the occupancy separation requirement even though the wall rating is lower.
+
+### Concept 3: Floor Construction — Lateral Bracing of Beams (Sec. 1205)
+
+Sec. 1205 contains a frequently overlooked but exam-testable requirement: floor construction must provide a **means to prevent lateral buckling of beams and girders**. Lateral-torsional buckling is the failure mode of long unbraced flexural members — when a beam is loaded vertically, its compression flange can buckle sideways before reaching full flexural capacity.
+
+The code mandates that floor systems — whether reinforced concrete slabs, composite steel-deck systems, or timber framing — inherently brace the beams they rest upon. In practice:
+- A concrete slab cast monolithically with or composite-connected to steel beams provides continuous lateral restraint to the top (compression) flange.
+- Timber floor systems require blocking between joists or lateral bridging.
+- Long-span steel transfer beams that do not have a slab bearing directly on them must have discrete lateral braces at prescribed intervals per the NSCP.
+
+The exam will not ask for specific bracing intervals (those are in NSCP/AISC), but will ask whether floor construction has a duty to prevent lateral buckling — the answer is yes, per Sec. 1205.
+
+### Concept 4: Roof Wind Load — The 120 kg/sq.m Minimum (Sec. 1206)
+
+Per Sec. 1206, roof construction and covering must resist a **minimum wind load of 120 kg/sq.m** applied to the **vertical projection** of the roof. This is not a wind pressure on the inclined roof surface — it is the force calculated against the vertical silhouette of the roof as seen from the windward direction.
+
+This 120 kg/sq.m figure is the **floor**, not a design value — actual wind loads in typhoon-prone regions of the Philippines (Visayas, Eastern Luzon, Bicol) will be substantially higher per NSCP wind maps. The code baseline ensures that no roof in the Philippines is designed to resist less than this minimum, regardless of location.
+
+Roof covering must match the fire-resistance type of construction required for the building. Type I construction (highest fire resistance) requires non-combustible roof coverings; Type V (lowest) permits combustible materials subject to the fire district classification.
+
+### Concept 5: Elevator Enclosures (Sec. 1204)
+
+Elevator shafts (hoistways) must be enclosed per Sec. 1204. The enclosure serves dual functions: containing fire and smoke within the shaft (preventing chimney-effect spread between floors) and protecting passengers from falling objects and mechanical hazards. The fire rating of elevator enclosures in the Philippine system is tied to the **occupancy separation hours** applicable between the served floors — unlike the IBC, which assigns ratings based on the number of stories served.
+
+---
+
+## PH vs. USA Comparative Analysis
+
+The most significant divergence between Philippine and American codes in this topic area is the **method of assigning shaft fire ratings**. The IBC uses a simple, story-count rule that is easy to apply uniformly. The Philippine code ties shaft ratings to the more nuanced occupancy separation requirements — which means the rating depends on what is on each side of the shaft, not just how tall the building is.
+
+| Topic | PH — PD 1096 (Rule XII, Sec. 1204–1206) | USA — IBC (Sec. 713, Table 601) |
+|---|---|---|
+| **Escalator protection method** | Draft curtain (≥ 200mm) + automatic sprinklers within 600mm, max 1.80m spacing | IBC Sec. 713.14: Escalator openings permitted with sprinkler + draft curtain (similar approach); some editions require full shaft enclosure |
+| **Shaft fire rating basis** | Tied to occupancy separation hours for the areas served | IBC Sec. 713.4: 1-hour for shafts ≤ 3 storeys; 2-hour for shafts ≥ 4 storeys |
+| **Shaft ≤ 3 storeys** | Rating per occupancy separation (could be 1- or 2-hour depending on occupancy mix) | 1-hour fire-resistive per IBC Sec. 713.4 |
+| **Shaft ≥ 4 storeys** | Rating per occupancy separation (could be 2- or 3-hour) | 2-hour fire-resistive per IBC Sec. 713.4 |
+| **Max wall opening (3-hr separation)** | 25% of wall length; single opening max 10.00 sq.m | IBC Sec. 707.6: Max 25% aggregate of wall area; single opening max 156 sq.ft (~14.5 sq.m) |
+| **Enclosure wall rating** | Min 2-hour for enclosures within 3-hour separation zones | 1- or 2-hour per Sec. 713.4 based on stories |
+| **Opening assembly rating** | 3-hour fire assembly at openings in 2-hour enclosure walls | IBC Table 716.1: Opening protectives per wall rating; 1.5-hour for 2-hour walls |
+| **Floor lateral bracing** | Required by code language (Sec. 1205) | AISC 360 Appendix 6; IBC defers to referenced structural standards |
+| **Minimum roof wind load** | 120 kg/sq.m on vertical projection (Sec. 1206) | ASCE 7 Chapter 26–27: Wind loads by zone; no universal minimum floor |
+| **Roof covering requirements** | Per type of construction | IBC Table 1505.1: Roof covering by construction type and fire district |
+| **Governing fire code** | RA 9514 (Fire Code) supplements PD 1096 | NFPA 101 (Life Safety Code) and NFPA 13 (Sprinklers) supplement IBC |
+
+**Key Philosophical Difference — Shaft Ratings**: The IBC's story-count rule (1-hour for ≤3 stories, 2-hour for ≥4 stories) is simple and universal, making code compliance straightforward but potentially over-prescribing fire ratings in low-risk situations. The Philippine approach, which ties shaft ratings to occupancy separation requirements, is more nuanced and risk-sensitive — but requires the design architect to first determine the correct occupancy separation for the areas served before selecting the shaft wall rating. This makes the Philippine system harder to apply mechanically but more architecturally responsive.
+
+---
+
+## Hard Data / Cheat Sheet Table
+
+| Parameter | Value | Code Reference |
+|---|---|---|
+| Escalator draft curtain depth | ≥ 200 mm on all sides of opening | Sec. 1204 |
+| Sprinkler proximity to draft curtain | Within 600 mm of curtain | Sec. 1204 |
+| Max sprinkler spacing at escalator perimeter | 1.80 m center to center | Sec. 1204 |
+| Max aggregate opening in 3-hr separation wall | 25% of wall length | Sec. 1204 |
+| Max single opening in 3-hr separation wall | 10.00 sq.m | Sec. 1204 |
+| Min rating of vertical enclosure walls | 2-hour fire-resistive | Sec. 1204 |
+| Fire assembly rating at enclosure openings | 3-hour | Sec. 1204 |
+| Floor construction duty | Prevent lateral buckling of beams/girders | Sec. 1205 |
+| Minimum roof wind load (vertical projection) | 120 kg/sq.m | Sec. 1206 |
+| IBC shaft rating (≤ 3 storeys) | 1-hour fire-resistive | IBC Sec. 713.4 |
+| IBC shaft rating (≥ 4 storeys) | 2-hour fire-resistive | IBC Sec. 713.4 |
+| IBC max single opening (fire barrier) | ~14.5 sq.m (156 sq.ft) | IBC Sec. 707.6 |
+| IBC max aggregate opening | 25% of wall area | IBC Sec. 707.6 |
+| PH escalator sprinkler — activation type | Automatic | Sec. 1204 |
+| Elevator shaft — enclosure required | Yes (all elevator openings) | Sec. 1204 |
+
+---
+
+## Cross-Referencing
+
+### RA 9514 (Fire Code of the Philippines, 2019 IRR)
+RA 9514 and its Implementing Rules and Regulations (IRR) are the operational fire-safety overlay to PD 1096's structural provisions. Where Sec. 1204 establishes the passive fire-resistance requirements for shaft enclosures, RA 9514 governs:
+- **Sprinkler system design standards** (NFPA 13 as adopted in the Philippines).
+- **Fire alarm integration** — shafts require smoke detectors and are connected to the building's fire alarm control panel.
+- **Fire dampers** at HVAC penetrations through shaft enclosure walls.
+- **Occupancy load and egress** considerations that affect how many and what size openings are permitted.
+
+The design team must satisfy both codes simultaneously: PD 1096 sets the minimum construction requirements for the shaft wall; RA 9514 governs the active systems (sprinklers, alarms, dampers) protecting penetrations through those walls.
+
+### Rule VI — Fire-Resistive Requirements
+Rule VI of PD 1096 establishes the fire-resistance hours required for different types of construction and occupancy groups. The shaft rating in Sec. 1204 is not standalone — it must be read in conjunction with the Type of Construction and occupancy group table in Rule VI to determine whether a 1-hour or 2-hour (or higher) enclosure is required for a given building. For example, a mixed Group E (Business) and Group H (Storage) occupancy requiring a 3-hour separation triggers the 10.00 sq.m opening cap and the 2-hour vertical enclosure with 3-hour fire assemblies.
+
+### NSCP — Structural Requirements for Floor Systems
+The structural adequacy of floor systems to prevent lateral buckling (Sec. 1205) is detailed in NSCP Chapter 5 (Steel) and Chapter 6 (Concrete). For steel floor systems, NSCP Table 502.2.1 gives maximum unbraced lengths for beams. For concrete, the slab-to-beam interface inherently provides continuous lateral restraint, satisfying the intent of Sec. 1205 when designed per NSCP standards.
+
+### NSCP Chapter 2 — Wind Load Provisions
+The 120 kg/sq.m minimum wind load for roofs (Sec. 1206) is the administrative floor established by PD 1096. Actual design wind pressures are calculated per NSCP Chapter 2 (Wind Loads), which uses a wind speed map of the Philippines. Typhoon-prone regions may produce design wind pressures of 200–300 kg/sq.m or higher, well above the 120 kg/sq.m NBCP minimum. The NSCP figure always governs when it exceeds the NBCP baseline.
+
+---
+
+## Active Learning Techniques
+
+### Memory Aid — "200-600-1.8" (The Escalator Trio)
+The three escalator sprinkler/curtain numbers form a progression: **200mm curtain depth → 600mm sprinkler distance from curtain → 1.8m between sprinklers**. Visualize a cross-section: the curtain hangs 200mm down, the nearest sprinkler head is 600mm away, and the next sprinkler is 1,800mm from the first.
+
+Say it as: *"Two hundred — six hundred — eighteen hundred."* Each number is three times the last ÷ something — but more reliably, just chain them: **2-6-18** (in units of 100mm).
+
+### Memory Aid — "25-10-2-3" (The Three-Hour Separation Rule)
+For a 3-hour separation:
+- **25%** of wall length — maximum aggregate openings
+- **10 sq.m** — maximum single opening
+- **2-hour** — minimum enclosure wall rating
+- **3-hour** — fire assembly required at openings in enclosure
+
+Read it as: *"Twenty-five percent of the wall, ten square meters max per hole, two-hour walls, three-hour doors."*
+
+### Memory Aid — "120 Kilos Against the Wind"
+Roof wind load minimum: **120 kg/sq.m on vertical projection**. Associate "120" with the number of minutes in 2 hours — a memory bridge. Or simply: *"A Philippine roof must withstand at least 120 kilograms per square meter of wind."*
+
+### If/Then Scenarios
+
+**If** the building has escalators connecting 5 floors of a department store…
+**Then** each escalator floor opening requires a draft curtain ≥ 200mm on all sides AND automatic sprinklers within 600mm of the curtain at max 1.80m spacing — all of this per Sec. 1204.
+
+**If** a wall between a Group H warehouse and a Group E office area requires a 3-hour occupancy separation…
+**Then** total openings in that wall must not exceed 25% of wall length, no single opening may be larger than 10.00 sq.m, and any floor opening must be enclosed in a 2-hour wall fitted with 3-hour fire assemblies.
+
+**If** the structural engineer proposes a long-span steel transfer beam at the ground floor that has no floor slab directly connected to it…
+**Then** discrete lateral bracing is required per Sec. 1205 and the NSCP — the floor construction must prevent lateral buckling of that beam.
+
+**If** the structural drawings show a minimum design roof wind load of 100 kg/sq.m…
+**Then** this is non-compliant per Sec. 1206 — the minimum is 120 kg/sq.m on the vertical projection, regardless of the project's location or wind zone.
+
+---
+
+## Exam Traps
+
+### Trap 1: Confusing the Enclosure Wall Rating with the Fire Assembly Rating (Sec. 1204)
+A classic board exam setup: a question describes a shaft enclosure in a 3-hour occupancy separation zone and asks for the required fire rating of (a) the enclosure wall and (b) the door within that wall.
+
+The trap: candidates assume both are rated the same as the occupancy separation (3 hours). In fact:
+- **Enclosure wall**: minimum **2-hour** fire-resistive construction.
+- **Fire assembly** (door/shutter at opening): **3-hour** — matching the occupancy separation requirement.
+
+The enclosure wall and the door/assembly that penetrates it carry **different ratings**. This is a deliberate code design: the opening assembly compensates for the lower wall rating by being rated for the full occupancy separation requirement.
+
+### Trap 2: Sprinkler Distance — From the Curtain, Not the Opening Edge
+The 600 mm measurement for sprinkler placement at escalator openings is measured **from the draft curtain** — not from the edge of the floor opening. The draft curtain is set in from the opening edge (it hangs from the ceiling slab edge above the escalator), so the 600 mm begins at the curtain face, not at the slab edge. An exam question may describe dimensions from the opening edge and ask whether the sprinkler placement is code-compliant — always re-reference the measurement to the curtain.
+
+### Trap 3: The 120 kg/sq.m Roof Wind Load Is on the Vertical Projection
+The 120 kg/sq.m figure in Sec. 1206 applies to the **vertical projection** of the roof — the area of the roof as projected onto a vertical plane perpendicular to the wind direction. This is not the same as the total inclined roof surface area. A steeply sloped gable roof has a large inclined surface but a relatively small vertical projection (the gable end). An exam question may present a flat roof and an inclined roof and ask for the design wind load — both use vertical projection, but the inclined roof's vertical projection is the wall-silhouette area, not the slope area. Do not multiply the inclined area by cos(θ) or sin(θ) — the code simply says "vertical projection."
+
+---
+
+## Active Recall Questions
+
+**Question 1**
+
+An architect is designing the second-floor opening for escalators in a large shopping mall in Cebu City. The escalator opening is 3.60 m × 1.20 m (plan dimensions). Which of the following correctly describes the required passive and active fire protection for this opening per PD 1096, Rule XII, Sec. 1204?
+
+A. A 150 mm draft curtain on two sides (parallel to travel direction) and sprinklers at 2.00 m spacing within 800 mm of the curtain  
+B. A 200 mm draft curtain on all sides and automatic sprinklers within 600 mm of the curtain at maximum 1.80 m center-to-center spacing  
+C. Full shaft enclosure of 2-hour fire-resistive construction with a 3-hour fire assembly at each escalator landing  
+D. A 200 mm draft curtain on all sides only — no sprinklers required if the mall has a central fire alarm system  
+
+> **Answer: B — 200mm draft curtain on all sides and sprinklers within 600mm at max 1.80m c/c**
+>
+> Per Sec. 1204, escalator openings require: (1) a draft curtain of **at least 200 mm** on **all sides** of the opening (not just two sides), and (2) automatic sprinklers installed within **600 mm** of the draft curtain at **maximum 1.80 m center-to-center** spacing. Option A is wrong on the curtain depth (150mm, not 200mm), the curtain coverage (two sides only, not all sides), and sprinkler proximity (800mm exceeds the 600mm limit). Option C applies the full shaft enclosure requirement — Sec. 1204 offers the draft curtain + sprinkler combination precisely as an alternative to full enclosure. Option D omits the mandatory sprinkler ring — a fire alarm system does not substitute for the required active suppression at the escalator opening.
+
+---
+
+**Question 2**
+
+A firewall is required to achieve a 3-hour fire-resistive occupancy separation between a Group H (storage) warehouse and a Group B (residential) condominium tower that share a common wall. The wall is 20.00 m long. A building manager requests a 12.00 sq.m double door opening and a 4.00 sq.m service window in that wall. Are these openings compliant with PD 1096, Rule XII, Sec. 1204?
+
+A. Yes — the total opening (16.00 sq.m) is less than 25% of the wall area  
+B. No — the 12.00 sq.m double door exceeds the maximum single opening of 10.00 sq.m  
+C. Yes — as long as 3-hour fire assemblies are installed at both openings  
+D. No — no openings are permitted in a 3-hour occupancy separation wall under any circumstances  
+
+> **Answer: B — The 12.00 sq.m double door exceeds the 10.00 sq.m maximum single opening limit**
+>
+<LawCallout code="pd1096" section="Rule IV - Vertical Openings">
+
+
+Per Sec. 1204, for a wall requiring 3-hour fire-resistive occupancy separation: (1) aggregate openings must not exceed 25% of wall length (25% × 20.00m = 5.00m — note this is measured by length, not area), and (2) no single opening may exceed 10.00 sq.m. The 12.00 sq.m double door violates the single-opening maximum regardless of the total. The 4.00 sq.m service window alone would be compliant on its own. Option A incorrectly applies the 25% limit to area rather than length and ignores the 10.00 sq.m single-opening cap. Option C is wrong because 3-hour fire assemblies alone cannot cure an oversize opening — the opening itself must first comply. Option D is incorrect — openings are permitted, subject to the 25%-of-length and 10.00 sq.m limits.
+
+
+</LawCallout>
+
+---
+
+**Question 3**
+
+A structural engineer proposes a minimum design wind load of 95 kg/sq.m on the vertical projection of the roof for a new 3-storey school building in a low-wind-hazard municipality in Mindanao. Is this compliant with PD 1096, Rule XII, Sec. 1206, and if not, what is the minimum required value?
+
+A. Compliant — local wind hazard surveys may reduce the minimum load below 120 kg/sq.m  
+B. Non-compliant — the minimum is 150 kg/sq.m for educational occupancies per Sec. 1206  
+C. Non-compliant — Sec. 1206 requires a minimum of 120 kg/sq.m on the vertical projection regardless of location  
+D. Compliant — Sec. 1206 applies only to buildings taller than 3 storeys  
+
+> **Answer: C — Non-compliant; the minimum is 120 kg/sq.m on the vertical projection**
+>
+> Per Sec. 1206, roof construction must resist **at least 120 kg/sq.m** applied to the **vertical projection** of the roof. This is an absolute minimum with no exception for low-wind municipalities, low-rise buildings, or occupancy type. The 95 kg/sq.m proposed load is 20.8% below the mandatory floor. Local wind surveys may justify higher loads (especially in typhoon corridors), but they cannot justify values below the Sec. 1206 minimum. Option A is incorrect — local surveys cannot reduce the mandatory minimum. Option B invents an occupancy-specific minimum of 150 kg/sq.m that does not exist in Sec. 1206. Option D is wrong — Sec. 1206 applies to all buildings regardless of height.
+
+---
+
+## Spaced Repetition Reminder
+
+**Session 1 (Today):** Memorize the "200-600-1.8" escalator trio and the "25-10-2-3" separation rule chain. Read the Exam Traps section carefully — the wall vs. assembly rating distinction is a perennial board question.
+
+**Session 2 (Day 3):** Without looking at the article, write out the complete requirements for a 3-hour occupancy separation with floor openings. Then check against the Cheat Sheet.
+
+**Session 3 (Day 7):** Reconstruct the PH vs. USA comparison table from memory, focusing on the shaft rating difference (PH: tied to occupancy separation hours; IBC: story-count rule). Explain it to a study partner.
+
+**Session 4 (Day 14):** Review only the Active Recall Questions. If you answer all three correctly and can explain each wrong answer, this module is mastered.
+
+*These articles are LEA board exam review materials based on PD 1096 (National Building Code of the Philippines) and cross-referenced with IBC provisions for comparative analysis. Always verify against the current edition of the implementing rules and regulations.*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Vertical openings ≤ 1.0 m² may be UNPROTECTED if they do not connect more than 3 stories. Openings > 1.0 m² require 1-hour enclosure (or 2-hour for buildings > 4 stories). The 1.0 m² threshold and the 3-story limit are both frequently tested.
+
+## Cross‑References
+
+**Fire Resistive Construction Ratings**, **Stairs Handrails Guardrails**, **Vent Shafts And Ventilation**, **Penthouses And Roof Structures**
+

@@ -1,0 +1,56 @@
+{
+  "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+  "slug": "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
+  "normalized_created_at": "2026-05-01T13:33:44.093Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:f5764bdc456d2d6d3ed7574981a0d53a710e499921ca524e70cc0cca0a271bdc",
+  "normalized_content_hash": "sha256:61a2f7053ada43bc58f8895b57e54f67131d0069a3230a41906881d5f3a02fb2",
+  "ui_block_count": 3,
+  "total_blocks": 0,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"uap\" section=\"SPP Doc. 202 - Architect's Authority During Construction\">\n**Architect's Authority During Construction**\n\nRA 9266 and UAP Doc 301 define the architect's authority, limitations, and responsibility during the construction phase.\n</LawCallout>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
+      "props_text": "code=uap, section=SPP Doc. 202 - Architect's Authority During Construction",
+      "props_json": {
+        "code": "uap",
+        "section": "SPP Doc. 202 - Architect's Authority During Construction"
+      },
+      "children_raw": "**Architect's Authority During Construction**\n\nRA 9266 and UAP Doc 301 define the architect's authority, limitations, and responsibility during the construction phase.",
+      "children_text": "**Architect's Authority During Construction**\n\nRA 9266 and UAP Doc 301 define the architect's authority, limitations, and responsibility during the construction phase.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:650ab1d1205fcbc0aced529dc2f824f5ad58508b9f65b7c921e061e5ac50dcb3"
+    },
+    {
+      "block_id": "ui_0002",
+      "component_name": "Warn",
+      "raw": "<Warn>\n**Common exam trap:** Students often confuse the architect's authority to stop work with the contractor's responsibility for means and methods.\n</Warn>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"preserved\"]",
+      "props_text": "(none)",
+      "props_json": {},
+      "children_raw": "**Common exam trap:** Students often confuse the architect's authority to stop work with the contractor's responsibility for means and methods.",
+      "children_text": "**Common exam trap:** Students often confuse the architect's authority to stop work with the contractor's responsibility for means and methods.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:5cc33cffacf7d9ec5124c5f866bcec26afccd91ba3179648e79a1d5f710377ac"
+    },
+    {
+      "block_id": "ui_0003",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip title=\"ALE Strategy\">\n**High-yield topic:** Know the specific limits of the architect's authority \u2014 they cannot direct contractor means/methods, only verify compliance with contract documents.\n</ExamTip>",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"preserved\"]",
+      "props_text": "title=ALE Strategy",
+      "props_json": {
+        "title": "ALE Strategy"
+      },
+      "children_raw": "**High-yield topic:** Know the specific limits of the architect's authority \u2014 they cannot direct contractor means/methods, only verify compliance with contract documents.",
+      "children_text": "**High-yield topic:** Know the specific limits of the architect's authority \u2014 they cannot direct contractor means/methods, only verify compliance with contract documents.",
+      "parse_status": "parsed",
+      "raw_hash": "sha256:80924d3b4f8d920c5bac549917e31428f080d36c7a3d970aa05e9ffb8046c4cd"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "b1ece91b-f8c3-4624-8c75-43391ac35306",
+  "baseline_hash": "sha256:3d4e8e818d3eba6ddd32f44b503b034b10b2115fd5f87f2ebaac93b0468376c3",
+  "reason": "WRONG ANSWER KEY: Both 'Manufacturer weight tables' (option b) and 'Cross-sectional area \u00d7 7,850 kg/m\u00b3' (option c) are valid methods. Option 'd' explicitly says 'Both B and C (equivalent approaches)'. correct_option_id should be 'd', not 'b'. Also added missing rationale entries for options 'c' and 'd'.",
+  "approved_by": "hermes-question-audit",
+  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "proposed": {
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "D\u00b2\u00f7162.5 is for rebar weight estimation, not structural steel sections.",
+      "c": "Cross-sectional area \u00d7 7,850 kg/m\u00b3 is a valid method; manufacturer weight tables are derived from this calculation.",
+      "d": "Both B and C are equivalent approaches. Manufacturers publish weight tables (B) calculated using cross-sectional area \u00d7 density (C). Either method produces equivalent results.",
+      "correct": "Both B and C are correct: manufacturers publish weight tables (B), which are calculated using cross-sectional area \u00d7 steel density (C). For ALE purposes, use the published weight table as the primary reference.",
+      "takeaway": "Structural steel weight = published weight tables. Memorize key section weights (HEB 200 = 50 kg/m, IPE 300 = 42.2 kg/m)."
+    }
+  }
+}

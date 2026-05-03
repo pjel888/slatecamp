@@ -1,0 +1,508 @@
+{
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:2d754d8103858374b2ffec54171da4500c69f893c27ffcadc8146a515a9e8242",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "3dc00eb0-df32-44f0-a7bc-36561b65fc18",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "A tension member (tie rod) in a pin-jointed truss has an effective length KL = 4.5 m and radius of gyration r = 18 mm. Calculate KL/r and determine if it meets the preferred slenderness standard for tension.",
+      "options": [
+        {
+          "id": "a",
+          "text": "KL/r = 200; non-compliant (exceeds preferred 300)"
+        },
+        {
+          "id": "b",
+          "text": "KL/r = 250; compliant (below preferred 300)"
+        },
+        {
+          "id": "c",
+          "text": "KL/r = 300; on the boundary; marginally acceptable"
+        },
+        {
+          "id": "d",
+          "text": "KL/r = 250; non-compliant for tension (compression limit applies)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "KL/r = 4500 mm ÷ 18 mm = 250. This is less than 300 and meets the maximum slenderness limit for tension members.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC 360-16, Section E3",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8b0cc46d33c4df54e826f377828ef5135951748f3753aa4a3c49becea52232b4"
+    },
+    {
+      "question_id": "d8c2a1b5-420e-4da5-abcf-2af576c4a176",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "In a bolted connection between two C-channels (back-to-back), the engineer must provide a transition element to distribute concentrated load. What is this component called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shear connector"
+        },
+        {
+          "id": "b",
+          "text": "Gusset plate"
+        },
+        {
+          "id": "c",
+          "text": "Shear stud"
+        },
+        {
+          "id": "d",
+          "text": "Splice plate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A gusset plate is a transition piece (often triangular or rectangular) that distributes concentrated load from a member into fasteners or welds. It handles stress concentration.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC Steel Construction Manual, Part 9: Connections",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f42e842e4ae61eaab82b8050cc99c00f9f598bb813e02031b22ff1f60906b8e2"
+    },
+    {
+      "question_id": "feda56eb-137d-4555-bd06-d0a5e06e68cc",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "A compression member in a braced frame has KL/r = 185. Is this member compliant with slenderness limits, and what is the governing standard value?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-compliant; KL/r must be ≤ 150, according to standard design codes for structural stability"
+        },
+        {
+          "id": "b",
+          "text": "Compliant; maximum allowed is 200 for compression"
+        },
+        {
+          "id": "c",
+          "text": "Compliant; maximum allowed is 300, which applies to specific cases under certain conditions"
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant; AISC has no upper limit for compression, but practical limits are often applied"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "AISC 360-16 Section E3 sets maximum KL/r = 200 for compression members. KL/r = 185 is well below this threshold and is compliant.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC 360-16, Section E3: Slenderness Limits",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de9509133a68a0989c989af47accc146e21609c87173b56437861fdca28e36dc"
+    },
+    {
+      "question_id": "41318883-8c4a-4612-acfd-87c1cc9feb3e",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "Which of the following section types is most appropriate for a bracing member that must resist a tensile pull in a truss?",
+      "options": [
+        {
+          "id": "a",
+          "text": "W-section (wide flange)"
+        },
+        {
+          "id": "b",
+          "text": "S-section (American standard)"
+        },
+        {
+          "id": "c",
+          "text": "L-section (angle)"
+        },
+        {
+          "id": "d",
+          "text": "T-section (tee)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "L-angles are standard for truss bracing because they are lightweight, handle pure tension well, and connect easily via bolts through a single leg.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC 360-16, Section A1: General Requirements",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:400f4273443714915dd5f3479533d5142446f71729a54a974729b82033d431ea"
+    },
+    {
+      "question_id": "a0c6caae-dbe4-4555-99ff-f865526df883",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "A wide-flange section (W610×82) is used as a primary beam in a building frame. The web develops local buckling near the point of concentrated load. To prevent this failure, which component should be welded to the section?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gusset plate"
+        },
+        {
+          "id": "b",
+          "text": "Web stiffener"
+        },
+        {
+          "id": "c",
+          "text": "Shear connector"
+        },
+        {
+          "id": "d",
+          "text": "Splice plate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A web stiffener (vertical steel plate) is welded transversely across the web to prevent local buckling and bearing failure under concentrated loads. This is standard practice near reactions and heavy loads.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC Steel Construction Manual, Part 9: Design for Concentrated Forces",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:57b1e76a3e075f3bb9c4c8aafb4eb32ec025f55815ce6329fa15e6540eac0018"
+    },
+    {
+      "question_id": "511d343c-b827-43fd-ae79-373d6ac2f6e6",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "A W460×89 section is selected for a primary column in a braced frame. What does the '460' refer to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flange width in millimeters, which is critical for determining the load distribution across the section."
+        },
+        {
+          "id": "b",
+          "text": "Depth of the section in millimeters"
+        },
+        {
+          "id": "c",
+          "text": "Moment of inertia in 10⁶ mm⁴, a measure of the section's resistance to bending."
+        },
+        {
+          "id": "d",
+          "text": "Section modulus in 10³ mm³, indicating the strength of the section in resisting bending moments."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "W-sections are designated W(depth)×(unit weight). W460×89 means 460 mm deep (nominal), 89 kg/m unit weight.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC Steel Construction Manual, 15th ed., Part 1: Dimensions and Properties",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a63ec0327dfffc565fedb7ad692d50a460a31974a793727c29e95cd938b9a8a"
+    },
+    {
+      "question_id": "20091ac7-2715-479e-bbfb-30e9aa2c2f6e",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "A truss node is formed by welding three members: two diagonals and one vertical. The engineer elects to minimize stress concentration by designing a large triangular gusset plate. However, field inspection reveals the gusset plate is not fully welded to the vertical member along its entire edge. What is the consequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The vertical member will experience bending instead of pure axial compression, which can lead to unexpected structural behavior"
+        },
+        {
+          "id": "b",
+          "text": "Stress concentration will concentrate at the toe of the partial weld, potentially causing fatigue crack initiation"
+        },
+        {
+          "id": "c",
+          "text": "The gusset plate will slip and allow excessive joint rotation, which is a common misconception about weld integrity"
+        },
+        {
+          "id": "d",
+          "text": "The joint will experience no adverse effect; partial welds are acceptable in modern design, which is incorrect as full welds are typically required for structural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Partial welds create a discontinuity and a stress concentration at the weld termination (toe). Under cyclic loading (common in highway bridges and industrial frames), this is a fatigue crack initiation point. Full penetration and continuous welds are required.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC 360-16, Section J2: Welds. AWS D1.1: Structural Welding Code—Steel",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6fed6aefa8e925417d0a96d30117aef127e8f04997879398339f9ac43665596d"
+    },
+    {
+      "question_id": "bee5fdd6-a847-4495-af69-0c6e1011c899",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "An engineer selects a C-section (channel) for a purlin in a roof structure and orients the channel with its web horizontal (opening downward). Later, it is discovered that this orientation reduces the bending strength by ~25% compared to a vertical web orientation. Explain the structural reason.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Horizontal webs have lower shear capacity, which can lead to increased deflection and potential structural failure under load"
+        },
+        {
+          "id": "b",
+          "text": "The neutral axis shifts when the web is horizontal, reducing moment arm, which affects the overall structural integrity and load distribution"
+        },
+        {
+          "id": "c",
+          "text": "The section modulus decreases because the flanges are no longer the furthest fibers from the neutral axis; bending strength depends on flange distance and web contribution"
+        },
+        {
+          "id": "d",
+          "text": "Horizontal channels are never acceptable for purlins due to their inability to effectively distribute loads across the span"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Section modulus S = I/c, where c is the distance from neutral axis to extreme fiber. With a vertical web (typical), the flanges are the furthest fibers. With a horizontal web, the geometry inverts; the effective moment arm and section modulus decline, reducing bending capacity.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC Steel Construction Manual, Part 1: Section Properties and Orientation",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ec7f219e7c298c1ea9e8bb0a5aa0655e63f773549b123c5a355ffa4f57aa580e"
+    },
+    {
+      "question_id": "a5ba96c4-0d78-4fb7-81c8-543b53717984",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "A long tied-arch bridge has main tie rods made from L-sections (angles). The effective length is KL = 12 m and the selected angle has r_min = 25 mm (minimum radius of gyration). Calculate KL/r and evaluate whether this design is at risk if the tie rod transitions from dead load (tension) to wind-induced oscillation (potential compression due to aeroelastic flutter). Assume AISC limits: tension ≤ 300, compression ≤ 200.",
+      "options": [
+        {
+          "id": "a",
+          "text": "KL/r = 480; non-compliant for both tension and compression; angle is undersized and may require redesign"
+        },
+        {
+          "id": "b",
+          "text": "KL/r = 480; non-compliant for both tension (exceeds 300) and compression (exceeds 200); angle is undersized with risk if flutter induces compression"
+        },
+        {
+          "id": "c",
+          "text": "KL/r = 300; marginally acceptable for tension and compression; no risk, but close monitoring is advised"
+        },
+        {
+          "id": "d",
+          "text": "KL/r = 480; acceptable for all loads under AISC flexibility provisions for special bridges, though this is rarely applicable"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "KL/r = 12,000 mm ÷ 25 mm = 480.This exceeds both limits (300 preferred for tension, 200 for compression). The tie rod is non-compliant even as a primary tension member.ons, but if wind flutter induces local compression reversals, the 480 ratio far exceeds the 200 compression limit. The design is at risk.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC 360-16, Section E3: Slenderness Limits. ASCE Guideline 6-19: Aeroelastic Effects on Structures",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:80b15c767994e1d738878d1fb5d55e49067dfd7783bd3b47d6aa926ea857773d"
+    },
+    {
+      "question_id": "542a5dcc-6a5f-4737-aa30-16d9bafb248c",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
+      "text": "A hollow structural section (HSS) is selected over a built-up section for a heavily loaded column. What is the primary advantage of HSS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lower fabrication cost, which can be significant in large-scale projects"
+        },
+        {
+          "id": "b",
+          "text": "Higher section modulus per unit weight, providing better structural efficiency"
+        },
+        {
+          "id": "c",
+          "text": "Closed section geometry and uniform torsional rigidity"
+        },
+        {
+          "id": "d",
+          "text": "Easier field splicing without welding, reducing on-site labor requirements"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "HSS is a closed section, providing symmetrical properties, high torsional stiffness, and uniform strength in all directions. Built-up sections are open and require bracing for torsion.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "AISC Steel Construction Manual, Part 1: Section Properties",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-008-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c163690c0b067a5f066f724c98897a72bfe2f38a8cd8df2b99adac08aed00d15"
+    }
+  ]
+}

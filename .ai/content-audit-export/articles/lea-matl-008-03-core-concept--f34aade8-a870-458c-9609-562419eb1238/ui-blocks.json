@@ -1,0 +1,147 @@
+{
+  "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+  "slug": "lea-matl-008-03-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.446Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:3c9f90b6df48f323483a8163e8870b7232401282ff95e1c282c0fdac66d26d0a",
+  "normalized_content_hash": "9eb00048b2e5499cecb16332e8b7fc373f14856b08d92dc030dbac1b0597f612",
+  "ui_block_count": 5,
+  "total_blocks": 5,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Memory aid: \"Penny weight guides nail size (16d = 3.5 in common, 2.5 in finishing). A307 = 60k, A325 = 120k, A490 = 150k (bolt tensile grades). Wood-to-wood pull-out \u2248 25-50 lbf/in (nails) or 300-500 lbf/in (lags).\"</Tip>",
+      "raw_hash": "sha256:d1537a7893b40df8d59a7c2c19674abe5bb021c402782c5da3bac8896f816310",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: \"Penny weight guides nail size (16d = 3.5 in common, 2.5 in finishing). A307 = 60k, A325 = 120k, A490 = 150k (bolt tensile grades). Wood-to-wood pull-out \u2248 25-50 lbf/in (nails) or 300-500 lbf/in (lags).\"\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:80b036a08763892ead6da1c8613f9d2372cfbd6f5427a2ec9f69f56374029053",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Memory aid: \"Penny weight guides nail size (16d = 3.5 in common, 2.5 in finishing). A307 = 60k, A325 = 120k, A490 = 150k (bolt tensile grades). Wood-to-wood pull-out \u2248 25-50 lbf/in (nails) or 300-500 lbf/in (lags).\"",
+      "children_text": "Memory aid: \"Penny weight guides nail size (16d = 3.5 in common, 2.5 in finishing). A307 = 60k, A325 = 120k, A490 = 150k (bolt tensile grades). Wood-to-wood pull-out \u2248 25-50 lbf/in (nails) or 300-500 lbf/in (lags).\"",
+      "start_offset": 6205,
+      "end_offset": 6431,
+      "line_start": 46,
+      "line_end": 46,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Assuming all nail sizes sclea linearly with penny weight (e.g., 20d is 4 inches because 16d is 3.5 inches).\" correction=\"Penny weight is non-linear and historically based on nail weight. Use ASTM F1667 reference tables; 20d common is 4 inches, but 10d is 3 inches, not 2.5 inches.\" />",
+      "raw_hash": "sha256:e3c703826c78d2fd7e2fc1db2324ac2bc003c89ab8e5f07c85e887da673d7f50",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Assuming all nail sizes sclea linearly with penny weight (e.g., 20d is 4 inches because 16d is 3.5 inches).\", correction=\"Penny weight is non-linear and historically based on nail weight. Use ASTM F1667 reference tables; 20d common is 4 inches, but 10d is 3 inches, not 2.5 inches.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9ba669bc75472c81f21a9ef5ace698baddbff407336d3161a162e0130fbceed4",
+      "props": {
+        "mistake": "Assuming all nail sizes sclea linearly with penny weight (e.g., 20d is 4 inches because 16d is 3.5 inches).",
+        "correction": "Penny weight is non-linear and historically based on nail weight. Use ASTM F1667 reference tables; 20d common is 4 inches, but 10d is 3 inches, not 2.5 inches."
+      },
+      "props_json": {
+        "mistake": "Assuming all nail sizes sclea linearly with penny weight (e.g., 20d is 4 inches because 16d is 3.5 inches).",
+        "correction": "Penny weight is non-linear and historically based on nail weight. Use ASTM F1667 reference tables; 20d common is 4 inches, but 10d is 3 inches, not 2.5 inches."
+      },
+      "props_text": "mistake=\"Assuming all nail sizes sclea linearly with penny weight (e.g., 20d is 4 inches because 16d is 3.5 inches).\" correction=\"Penny weight is non-linear and historically based on nail weight. Use ASTM F1667 reference tables; 20d common is 4 inches, but 10d is 3 inches, not 2.5 inches.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6453,
+      "end_offset": 6763,
+      "line_start": 50,
+      "line_end": 50,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Specifying carbon steel fasteners for a typhoon-exposed building, assuming corrosion is only an aesthetic concern.\" correction=\"Corrosion reduces fastener cross-sectional area and pull-out strength, leading to structural failure during wind or seismic events. Use stainless steel or hot-dip galvanized fasteners in coastal environments.\" />",
+      "raw_hash": "sha256:74f57c125b0e8cc01ea523af493c7a8a3e6a47f13a5b55ed537adc84118b0315",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Specifying carbon steel fasteners for a typhoon-exposed building, assuming corrosion is only an aesthetic concern.\", correction=\"Corrosion reduces fastener cross-sectional area and pull-out strength, leading to structural failure during wind or seismic events. Use stainless steel or hot-dip galvanized fasteners in coastal environments.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ffba23b7bff19595a8d969ce4b6ae3b860b2b538e37766606648291df86514db",
+      "props": {
+        "mistake": "Specifying carbon steel fasteners for a typhoon-exposed building, assuming corrosion is only an aesthetic concern.",
+        "correction": "Corrosion reduces fastener cross-sectional area and pull-out strength, leading to structural failure during wind or seismic events. Use stainless steel or hot-dip galvanized fasteners in coastal environments."
+      },
+      "props_json": {
+        "mistake": "Specifying carbon steel fasteners for a typhoon-exposed building, assuming corrosion is only an aesthetic concern.",
+        "correction": "Corrosion reduces fastener cross-sectional area and pull-out strength, leading to structural failure during wind or seismic events. Use stainless steel or hot-dip galvanized fasteners in coastal environments."
+      },
+      "props_text": "mistake=\"Specifying carbon steel fasteners for a typhoon-exposed building, assuming corrosion is only an aesthetic concern.\" correction=\"Corrosion reduces fastener cross-sectional area and pull-out strength, leading to structural failure during wind or seismic events. Use stainless steel or hot-dip galvanized fasteners in coastal environments.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6765,
+      "end_offset": 7131,
+      "line_start": 52,
+      "line_end": 52,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Using wood screws instead of lag screws to attach a heavy timber beam to a concrete foundation, assuming screw type has no structural impact.\" correction=\"Wood screws in concrete provide minimal pull-out strength and may strip out. Lag screws (or wedge anchors) are designed for timber-to-concrete and provide 300-500 lbf per inch of embedment.\" />",
+      "raw_hash": "sha256:d21c83c5deca406951f755d1bcf54be877d75c06ecab69e7d692fd1cdd978f60",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Using wood screws instead of lag screws to attach a heavy timber beam to a concrete foundation, assuming screw type has no structural impact.\", correction=\"Wood screws in concrete provide minimal pull-out strength and may strip out. Lag screws (or wedge anchors) are designed for timber-to-concrete and provide 300-500 lbf per inch of embedment.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:cff3216fb24082742cf50b9fdca75ee9faf7dc333240b6e4b6691af6f4734279",
+      "props": {
+        "mistake": "Using wood screws instead of lag screws to attach a heavy timber beam to a concrete foundation, assuming screw type has no structural impact.",
+        "correction": "Wood screws in concrete provide minimal pull-out strength and may strip out. Lag screws (or wedge anchors) are designed for timber-to-concrete and provide 300-500 lbf per inch of embedment."
+      },
+      "props_json": {
+        "mistake": "Using wood screws instead of lag screws to attach a heavy timber beam to a concrete foundation, assuming screw type has no structural impact.",
+        "correction": "Wood screws in concrete provide minimal pull-out strength and may strip out. Lag screws (or wedge anchors) are designed for timber-to-concrete and provide 300-500 lbf per inch of embedment."
+      },
+      "props_text": "mistake=\"Using wood screws instead of lag screws to attach a heavy timber beam to a concrete foundation, assuming screw type has no structural impact.\" correction=\"Wood screws in concrete provide minimal pull-out strength and may strip out. Lag screws (or wedge anchors) are designed for timber-to-concrete and provide 300-500 lbf per inch of embedment.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7133,
+      "end_offset": 7507,
+      "line_start": 54,
+      "line_end": 54,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing ASTM A325 (120 ksi structural) with A307 (60 ksi general-purpose); using the wrong grade leads to undersized bolts\", \"Calculating pull-out strength without considering embedment depth (the depth the fastener is driven into the material)\", \"Omitting neoprene washers on roofing nails, allowing water infiltration and fastener corrosion\"]} />",
+      "raw_hash": "sha256:d0284c29d06b824a9cdbfd4f7fe3cd69ec5c883c357b329062a7d5c84df5ed50",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing ASTM A325 (120 ksi structural) with A307 (60 ksi general-purpose); using the wrong grade leads to undersized bolts\\\", \\\"Calculating pull-out strength without considering embedment depth (the depth the fastener is driven into the material)\\\", \\\"Omitting neoprene washers on roofing nails, allowing water infiltration and fastener corrosion\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:725b58a7f075d66224a226b669267e99947ce89bdb210e75988376435b4e3280",
+      "props": {
+        "mistakes": "{[\"Confusing ASTM A325 (120 ksi structural) with A307 (60 ksi general-purpose); using the wrong grade leads to undersized bolts\", \"Calculating pull-out strength without considering embedment depth (the depth the fastener is driven into the material)\", \"Omitting neoprene washers on roofing nails, allowing water infiltration and fastener corrosion\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Confusing ASTM A325 (120 ksi structural) with A307 (60 ksi general-purpose); using the wrong grade leads to undersized bolts\", \"Calculating pull-out strength without considering embedment depth (the depth the fastener is driven into the material)\", \"Omitting neoprene washers on roofing nails, allowing water infiltration and fastener corrosion\"]}"
+      },
+      "props_text": "mistakes={[\"Confusing ASTM A325 (120 ksi structural) with A307 (60 ksi general-purpose); using the wrong grade leads to undersized bolts\", \"Calculating pull-out strength without considering embedment depth (the depth the fastener is driven into the material)\", \"Omitting neoprene washers on roofing nails, allowing water infiltration and fastener corrosion\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7509,
+      "end_offset": 7888,
+      "line_start": 56,
+      "line_end": 56,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:ef92a3e1859b66d1b35d663f252bfcddb2ace16c3df716326b988580fb5bb85f"
+}

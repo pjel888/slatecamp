@@ -1,0 +1,25 @@
+{
+  "attempted_at": "2026-05-03T10:55:27.467Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
+  "slug": "lea-prac-cmp-013-fees-for-abandoned-projects-and-partial-services-protecting-the-architect-s-compensation",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:0ec8b99ea3ba09472a92139cdd7a7715ffefbb43a63d98535f99968017c8091c",
+  "original_hash": "sha256:0ec8b99ea3ba09472a92139cdd7a7715ffefbb43a63d98535f99968017c8091c",
+  "candidate_hash": "sha256:ce14745f095698c10d328d27245982f16be6355e07f1fb92b03cb7abd10c18dd",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+}

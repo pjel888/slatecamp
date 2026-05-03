@@ -1,0 +1,41 @@
+{
+  "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
+  "slug": "lea-dsgn-011-01-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.958Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:d891321d2ca83e8a6be2e7328e325af96e5951c610b04ed4ee572dcba4b75617",
+  "normalized_content_hash": "d891321d2ca83e8a6be2e7328e325af96e5951c610b04ed4ee572dcba4b75617",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n mistakes={[\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\n \"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\",\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\n \"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\",\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\n ]}\n/>",
+      "raw_hash": "sha256:f1c013d71952ed727713a88cd4d05f7fafbe4a48a3325c05b10e7345b72c4157",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\\n \\\"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\\\",\\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\\n \\\"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\\\",\\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:69d68aa961164c3d0a67e81d6b43ad90ebcf9c4948f0459008ae9ca17166dd48",
+      "props": {
+        "mistakes": "{[\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\n \"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\",\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\n \"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\",\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\n ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\n \"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\",\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\n \"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\",\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\n ]}"
+      },
+      "props_text": "mistakes={[\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\n \"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\",\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\n \"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\",\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\n ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5086,
+      "end_offset": 5637,
+      "line_start": 92,
+      "line_end": 100,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:dd5f2063ffd15fcb757c8ca1d1c0f68106a171213eb95bbf3ad151f5ac51f67a"
+}

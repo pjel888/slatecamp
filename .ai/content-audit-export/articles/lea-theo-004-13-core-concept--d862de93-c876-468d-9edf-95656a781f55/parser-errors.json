@@ -1,0 +1,36 @@
+{
+  "article_id": "d862de93-c876-468d-9edf-95656a781f55",
+  "slug": "lea-theo-004-13-core-concept",
+  "generated_at": "2026-05-01T13:33:43.659Z",
+  "parser_version": "ui-block-parser-v1",
+  "error_count": 0,
+  "warning_count": 1,
+  "unknown_block_count": 1,
+  "critical_block_count": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "block_id": "ui_0005",
+      "component_name": "WikiExamTable",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0005",
+      "component_name": "WikiExamTable",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:d066a5809e154862e3cd8a9d20713f67b18d190fc59464d9e34c550d16666664",
+      "line_start": 238,
+      "line_end": 238,
+      "warnings": [
+        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "critical_blocks": []
+}

@@ -1,0 +1,102 @@
+{
+  "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+  "slug": "lea-util-002-07-escalators-specifications-and-design-parameters",
+  "normalized_created_at": "2026-05-01T13:33:43.609Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:3c5ce4e0471d590f5f6c6cc93d690f4edd75dd4b148b70cff028ad256bddcbde",
+  "normalized_content_hash": "c47987e9c31799b84f1b8d1d86f3a44377ddc7cc900447c5fc084b9c4cf9037f",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>\n**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.\n</Tip>",
+      "raw_hash": "sha256:622356ab599708ef8e1c499f87ee74fcb972fdb43c1691365ba4dee76ae2ee06",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, ...\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:becc5f5dc793a9c10d145ec6247be586757366b4782088bf7ace0b3f74932c6c",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.",
+      "children_text": "**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.",
+      "start_offset": 1922,
+      "end_offset": 2254,
+      "line_start": 42,
+      "line_end": 46,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.\n</ExamTip>",
+      "raw_hash": "sha256:e53acaa5613c2e999fc15fb6a87f2e26408d6f5fdf9ffa39265cd66e38da4cf2",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC ...\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a0d94898346af53f844d72c9e2e3f3105f2dd8f2822eb9288fe26d0455c8b89d",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "**Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.",
+      "children_text": "**Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25\u03a9 max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.",
+      "start_offset": 1583,
+      "end_offset": 1919,
+      "line_start": 35,
+      "line_end": 39,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "KeyValues",
+      "raw": "<KeyValues items=[{\"value\": \"300-500 lx\", \"label\": \"Office Work\"}, {\"value\": \"100-200 lx\", \"label\": \"Lobby/Corridor\"}, {\"value\": \"50-100 lx\", \"label\": \"Parking\"}, {\"value\": \"750-1000 lx\", \"label\": \"Detailed Work\"}] />",
+      "raw_hash": "sha256:badb432c8de1300ecdd5b4621619d07689f0f9aaa207a42242ddd15ba263183b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: items=[{\"value\": \"300-500 lx\", \"label\": \"Office Work\"}, {\"value\": \"100-200 lx\", \"label\": \"Lobby/Corridor\"}, {\"value\": \"50-100 lx\", \"label\": \"Parking\"}, {\"value\": \"750-1000 lx\", \"label\": \"Detailed Work\"}]\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:4fe94b6509a1d4793c8682c52680ebfec9645e0a7b8e4f067c6bca204d894a9c",
+      "props": {
+        "items": "[{\"value\": \"300-500 lx\", \"label\": \"Office Work\"}, {\"value\": \"100-200 lx\", \"label\": \"Lobby/Corridor\"}, {\"value\": \"50-100 lx\", \"label\": \"Parking\"}, {\"value\": \"750-1000 lx\", \"label\": \"Detailed Work\"}]"
+      },
+      "props_json": {
+        "items": [
+          {
+            "value": "300-500 lx",
+            "label": "Office Work"
+          },
+          {
+            "value": "100-200 lx",
+            "label": "Lobby/Corridor"
+          },
+          {
+            "value": "50-100 lx",
+            "label": "Parking"
+          },
+          {
+            "value": "750-1000 lx",
+            "label": "Detailed Work"
+          }
+        ]
+      },
+      "props_text": "items=[{\"value\": \"300-500 lx\", \"label\": \"Office Work\"}, {\"value\": \"100-200 lx\", \"label\": \"Lobby/Corridor\"}, {\"value\": \"50-100 lx\", \"label\": \"Parking\"}, {\"value\": \"750-1000 lx\", \"label\": \"Detailed Work\"}]",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 1233,
+      "end_offset": 1580,
+      "line_start": 28,
+      "line_end": 32,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:f1139e806bb85175ce59c4e2ee3ed2d3743f24bda1e2cdae8d854023a46ac3f2"
+}

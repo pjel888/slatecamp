@@ -1,0 +1,38 @@
+{
+  "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
+  "slug": "widths-slopes",
+  "generated_at": "2026-05-03T07:49:24.479Z",
+  "old_hash": "sha256:45cfa45c75154018dccb6ad917d078c9a1032b4c5573f0232c9ff62cdf0e9cc2",
+  "new_hash": "sha256:d4d73a2d60a4e287754dacb216c4b64c97946324b58868cc4a6a10881a7c7ec2",
+  "original_hash": "sha256:45cfa45c75154018dccb6ad917d078c9a1032b4c5573f0232c9ff62cdf0e9cc2",
+  "normalized_hash": "sha256:626d4acb1efe56a83fe640c16f97355605af6f00fa762d9f14c63641ef0f1779",
+  "candidate_hash": "sha256:d4d73a2d60a4e287754dacb216c4b64c97946324b58868cc4a6a10881a7c7ec2",
+  "changed": true,
+  "changed_line_count": 128,
+  "inserted_line_count": 32,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 3,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
+  "changed_text_summary": {
+    "changed": 128,
+    "inserted": 32,
+    "deleted": 0,
+    "original_line_count": 97,
+    "candidate_line_count": 129
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [],
+    "changed_count": 0
+  },
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
+}

@@ -1,0 +1,63 @@
+{
+  "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+  "slug": "lea-dsgn-006-04-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.888Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:e7efdbef92f14f66301f1c209c1fbb6dbc864dacc6a32a981adaac8173878c6e",
+  "normalized_content_hash": "e7efdbef92f14f66301f1c209c1fbb6dbc864dacc6a32a981adaac8173878c6e",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Warehouse = Group G (not F). Occupant load = 46.5 sqm/person (low density). Clear height = 6.0m standard, 9.0\u201312.0m high-bay. Loading dock = 1,200mm height, door 3.6m \u00d7 4.5m. Cold chain: blast \u221225\u00b0C, frozen \u221218\u00b0C, chiller +2\u00b0C, cool +10\u00b0C. Parking = 1/1,000 sqm GFA.</Tip>",
+      "raw_hash": "sha256:92f9c1d0df5c890b351385468aa58c6e9e335296f4798e6e1fa2a80be862db0b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Warehouse = Group G (not F). Occupant load = 46.5 sqm/person (low density). Clear height = 6.0m standard, 9.0\u201312.0m high-bay. Loading dock = 1,200mm height, door 3.6m \u00d7 4.5m. Cold chain: blast \u221225\u00b0C, frozen \u221218\u00b0C, chiller +2\u00b0C, cool +10\u00b0C. Parking = 1/1,000 sqm GFA.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d8abc516fe85ddda94c499a7f621a4478e0308dd61a63f1fe1ede7bba377cd00",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Warehouse = Group G (not F). Occupant load = 46.5 sqm/person (low density). Clear height = 6.0m standard, 9.0\u201312.0m high-bay. Loading dock = 1,200mm height, door 3.6m \u00d7 4.5m. Cold chain: blast \u221225\u00b0C, frozen \u221218\u00b0C, chiller +2\u00b0C, cool +10\u00b0C. Parking = 1/1,000 sqm GFA.",
+      "children_text": "Warehouse = Group G (not F). Occupant load = 46.5 sqm/person (low density). Clear height = 6.0m standard, 9.0\u201312.0m high-bay. Loading dock = 1,200mm height, door 3.6m \u00d7 4.5m. Cold chain: blast \u221225\u00b0C, frozen \u221218\u00b0C, chiller +2\u00b0C, cool +10\u00b0C. Parking = 1/1,000 sqm GFA.",
+      "start_offset": 5877,
+      "end_offset": 6154,
+      "line_start": 51,
+      "line_end": 51,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\"Classifying warehouse as Group F (industrial) instead of Group G (storage) \u2014 ERR-DSGN-003\",\"Using 1 person per 9.3 sqm (office) instead of 1 person per 46.5 sqm (warehouse/storage)\",\"Specifying loading dock door as 3.0m \u00d7 4.0m instead of 3.6m \u00d7 4.5m\",\"Calculating parking at 1 per 100 sqm instead of 1 per 1,000 sqm (minimum for Group G)\",\"Assuming clear height of 5.0m is acceptable instead of 6.0m minimum standard\",\"Confusing loading dock height with building entrance height (dock = 1,200mm, not 900mm)\",\"Omitting separate HVAC zones for cold chain temperature ranges (\u221225\u00b0C to +10\u00b0C)\",\"Using 4.0m \u00d7 4.0m door for semi-trailer access (correct = 3.6m \u00d7 4.5m)\",\"Assuming high-bay design at 9.0m is always more cost-effective than standard 6.0m\",\"Overlooking vapor barrier requirements in cold storage insulation, causing condensation and structural damage\"]} />",
+      "raw_hash": "sha256:5f99accb136802e53857edc4d7934993280420b3fca18af16a602dbb10947e7c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Classifying warehouse as Group F (industrial) instead of Group G (storage) \u2014 ERR-DSGN-003\\\",\\\"Using 1 person per 9.3 sqm (office) instead of 1 person per 46.5 sqm (warehouse/storage)\\\",\\\"Specifying loading dock door as 3.0m \u00d7 4.0m instead of 3.6m \u00d7 4.5m\\\",\\\"Calculating parking at 1 per 100 sqm instead of 1 per 1,000 sqm (minimum for Group G)\\\",\\\"Assuming clear height of 5.0m is acceptable instead of 6.0m minimum standard\\\",\\\"Confusing loading dock height with building entrance height (dock = 1,200mm, not 900mm)\\\",\\\"Omitting separate HVAC zones for cold chain temperature ranges (\u221225\u00b0C to +10\u00b0C)\\\",\\\"Using 4.0m \u00d7 4.0m door for semi-trailer access (correct = 3.6m \u00d7 4.5m)\\\",\\\"Assuming high-bay design at 9.0m is always more cost-effective than standard 6.0m\\\",\\\"Overlooking vapor barrier requirements in cold storage insulation, causing condensation and structural damage\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:720fc5116d1c8a2c9ac896af1873d6c432302b2debd95ba6774d68926bc09ab0",
+      "props": {
+        "mistakes": "{[\"Classifying warehouse as Group F (industrial) instead of Group G (storage) \u2014 ERR-DSGN-003\",\"Using 1 person per 9.3 sqm (office) instead of 1 person per 46.5 sqm (warehouse/storage)\",\"Specifying loading dock door as 3.0m \u00d7 4.0m instead of 3.6m \u00d7 4.5m\",\"Calculating parking at 1 per 100 sqm instead of 1 per 1,000 sqm (minimum for Group G)\",\"Assuming clear height of 5.0m is acceptable instead of 6.0m minimum standard\",\"Confusing loading dock height with building entrance height (dock = 1,200mm, not 900mm)\",\"Omitting separate HVAC zones for cold chain temperature ranges (\u221225\u00b0C to +10\u00b0C)\",\"Using 4.0m \u00d7 4.0m door for semi-trailer access (correct = 3.6m \u00d7 4.5m)\",\"Assuming high-bay design at 9.0m is always more cost-effective than standard 6.0m\",\"Overlooking vapor barrier requirements in cold storage insulation, causing condensation and structural damage\"]}"
+      },
+      "props_json": {
+        "mistakes": "{[\"Classifying warehouse as Group F (industrial) instead of Group G (storage) \u2014 ERR-DSGN-003\",\"Using 1 person per 9.3 sqm (office) instead of 1 person per 46.5 sqm (warehouse/storage)\",\"Specifying loading dock door as 3.0m \u00d7 4.0m instead of 3.6m \u00d7 4.5m\",\"Calculating parking at 1 per 100 sqm instead of 1 per 1,000 sqm (minimum for Group G)\",\"Assuming clear height of 5.0m is acceptable instead of 6.0m minimum standard\",\"Confusing loading dock height with building entrance height (dock = 1,200mm, not 900mm)\",\"Omitting separate HVAC zones for cold chain temperature ranges (\u221225\u00b0C to +10\u00b0C)\",\"Using 4.0m \u00d7 4.0m door for semi-trailer access (correct = 3.6m \u00d7 4.5m)\",\"Assuming high-bay design at 9.0m is always more cost-effective than standard 6.0m\",\"Overlooking vapor barrier requirements in cold storage insulation, causing condensation and structural damage\"]}"
+      },
+      "props_text": "mistakes={[\"Classifying warehouse as Group F (industrial) instead of Group G (storage) \u2014 ERR-DSGN-003\",\"Using 1 person per 9.3 sqm (office) instead of 1 person per 46.5 sqm (warehouse/storage)\",\"Specifying loading dock door as 3.0m \u00d7 4.0m instead of 3.6m \u00d7 4.5m\",\"Calculating parking at 1 per 100 sqm instead of 1 per 1,000 sqm (minimum for Group G)\",\"Assuming clear height of 5.0m is acceptable instead of 6.0m minimum standard\",\"Confusing loading dock height with building entrance height (dock = 1,200mm, not 900mm)\",\"Omitting separate HVAC zones for cold chain temperature ranges (\u221225\u00b0C to +10\u00b0C)\",\"Using 4.0m \u00d7 4.0m door for semi-trailer access (correct = 3.6m \u00d7 4.5m)\",\"Assuming high-bay design at 9.0m is always more cost-effective than standard 6.0m\",\"Overlooking vapor barrier requirements in cold storage insulation, causing condensation and structural damage\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6176,
+      "end_offset": 7068,
+      "line_start": 55,
+      "line_end": 55,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:636b53fb933485769816e012bebbeb5d6814a17328413f6afa55e8b20f3c1b79"
+}

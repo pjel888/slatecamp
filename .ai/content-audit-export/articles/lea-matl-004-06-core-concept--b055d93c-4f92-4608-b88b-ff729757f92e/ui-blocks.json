@@ -1,0 +1,119 @@
+{
+  "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
+  "slug": "lea-matl-004-06-core-concept",
+  "normalized_created_at": "2026-05-01T13:33:43.607Z",
+  "parser_version": "ui-block-parser-v1",
+  "original_content_hash": "sha256:e2f4ea58b63e1bcfc6a020a83324c61c02f48e6555f81afefa35b2a3e8d9c144",
+  "normalized_content_hash": "11d6e75a1415342fb6e1e406671be38b3067564ab24abe4339258655d789794f",
+  "ui_block_count": 4,
+  "total_blocks": 4,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "Tip",
+      "raw": "<Tip>Cast-in-place dominates Philippine construction due to labor cost and site customization advantages. Precast excels for high-volume repetitive elements (hollow-core slabs, DT beams) where transportation and assembly logistics are favorable. Wet (grouted) connections are the norm for structural continuity; dry connections require precision fabrication and careful installation. ACI 347 stripping times (typically 70% of 28-day strength for horizontal spans) govern form removal scheduling.</Tip>",
+      "raw_hash": "sha256:8597be026c343064fa433c960460051a5d8cb415e5e7aabbbd61ddd583da24f2",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Cast-in-place dominates Philippine construction due to labor cost and site customization advantages. Precast excels for high-volume repetitive elements (hollow-core slabs, DT beams) where transportation and assembly logistics are favorable. Wet (grouted) connections are the norm for structural continuity; dry connections require precision fabrication and careful installation. ACI 347 stripping times (typically 70% of 28-day strength for horizontal spans) govern form removal scheduling.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a6dc547615e6fc638863b9887314ff4c8bc77dc627e96e33b6398d4976c97b9a",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "Cast-in-place dominates Philippine construction due to labor cost and site customization advantages. Precast excels for high-volume repetitive elements (hollow-core slabs, DT beams) where transportation and assembly logistics are favorable. Wet (grouted) connections are the norm for structural continuity; dry connections require precision fabrication and careful installation. ACI 347 stripping times (typically 70% of 28-day strength for horizontal spans) govern form removal scheduling.",
+      "children_text": "Cast-in-place dominates Philippine construction due to labor cost and site customization advantages. Precast excels for high-volume repetitive elements (hollow-core slabs, DT beams) where transportation and assembly logistics are favorable. Wet (grouted) connections are the norm for structural continuity; dry connections require precision fabrication and careful installation. ACI 347 stripping times (typically 70% of 28-day strength for horizontal spans) govern form removal scheduling.",
+      "start_offset": 8602,
+      "end_offset": 9103,
+      "line_start": 86,
+      "line_end": 86,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Insufficient Concrete Cover Allowing Early Corrosion\" body=\"Rebar is placed only 20 mm from the surface instead of the specified 40\u201350 mm. Carbonation of exposed concrete (especially in humid, polluted urban environments like Metro Manila) reaches the rebar within 5\u201310 years, causing rust expansion and spalling. Always verify rebar placement against design drawings and specification.\" />",
+      "raw_hash": "sha256:5243c6825998404983aa8395188da9882defe862e1687df7f22a12a028b005f1",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Insufficient Concrete Cover Allowing Early Corrosion\", body=\"Rebar is placed only 20 mm from the surface instead of the specified 40\u201350 mm. Carbonation of exposed concrete (especially in humid, polluted urban environments like Metro Manila) reaches the rebar within 5\u201310 years, causing rust expansion and spalling. Always verify rebar placement against design drawings and specification.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9034b92c7d0fabf1aab7b7a96c5c12e921f44c5dae727f5f6bdafd741bd00a75",
+      "props": {
+        "title": "Insufficient Concrete Cover Allowing Early Corrosion",
+        "body": "Rebar is placed only 20 mm from the surface instead of the specified 40\u201350 mm. Carbonation of exposed concrete (especially in humid, polluted urban environments like Metro Manila) reaches the rebar within 5\u201310 years, causing rust expansion and spalling. Always verify rebar placement against design drawings and specification."
+      },
+      "props_json": {
+        "title": "Insufficient Concrete Cover Allowing Early Corrosion",
+        "body": "Rebar is placed only 20 mm from the surface instead of the specified 40\u201350 mm. Carbonation of exposed concrete (especially in humid, polluted urban environments like Metro Manila) reaches the rebar within 5\u201310 years, causing rust expansion and spalling. Always verify rebar placement against design drawings and specification."
+      },
+      "props_text": "title=\"Insufficient Concrete Cover Allowing Early Corrosion\" body=\"Rebar is placed only 20 mm from the surface instead of the specified 40\u201350 mm. Carbonation of exposed concrete (especially in humid, polluted urban environments like Metro Manila) reaches the rebar within 5\u201310 years, causing rust expansion and spalling. Always verify rebar placement against design drawings and specification.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9125,
+      "end_offset": 9539,
+      "line_start": 90,
+      "line_end": 90,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard title=\"Premature Form Removal Before Strength Gain\" body=\"Forms are struck at 3 days (before ACI 347 minimum of ~70% strength) to accelerate schedule. Concrete sags, cracks develop in tension zones, and water ingress compromises durability. Strict adherence to ACI 347 strength-based removal criteria is essential, especially in tropical climates where variable curing conditions are common.\" />",
+      "raw_hash": "sha256:964079e900b41ce63482ed3ce53eab8223eda774ef18ded2a5b4c0e42c934145",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Premature Form Removal Before Strength Gain\", body=\"Forms are struck at 3 days (before ACI 347 minimum of ~70% strength) to accelerate schedule. Concrete sags, cracks develop in tension zones, and water ingress compromises durability. Strict adherence to ACI 347 strength-based removal criteria is essential, especially in tropical climates where variable curing conditions are common.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:a31d98751ac21091c3e159b559652d13f95351b94f6bb689819d48708a71c417",
+      "props": {
+        "title": "Premature Form Removal Before Strength Gain",
+        "body": "Forms are struck at 3 days (before ACI 347 minimum of ~70% strength) to accelerate schedule. Concrete sags, cracks develop in tension zones, and water ingress compromises durability. Strict adherence to ACI 347 strength-based removal criteria is essential, especially in tropical climates where variable curing conditions are common."
+      },
+      "props_json": {
+        "title": "Premature Form Removal Before Strength Gain",
+        "body": "Forms are struck at 3 days (before ACI 347 minimum of ~70% strength) to accelerate schedule. Concrete sags, cracks develop in tension zones, and water ingress compromises durability. Strict adherence to ACI 347 strength-based removal criteria is essential, especially in tropical climates where variable curing conditions are common."
+      },
+      "props_text": "title=\"Premature Form Removal Before Strength Gain\" body=\"Forms are struck at 3 days (before ACI 347 minimum of ~70% strength) to accelerate schedule. Concrete sags, cracks develop in tension zones, and water ingress compromises durability. Strict adherence to ACI 347 strength-based removal criteria is essential, especially in tropical climates where variable curing conditions are common.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9541,
+      "end_offset": 9953,
+      "line_start": 92,
+      "line_end": 92,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList items={[\"Assuming precast is always faster than CIP\u2014precast requires factory production time, transportation logistics, and careful on-site assembly. Small projects may be faster with CIP; large repetitive projects favor precast.\", \"Omitting proper vibration or over-vibrating concrete\u2014under-vibration leaves voids and weak zones; over-vibration causes segregation and surface blowholes. Operator training and equipment maintenance are critical.\", \"Specifying wet precast connections without accounting for grout curing delay\u2014grouted joints require 7\u201314 days before load application. Schedule accordingly, or switch to dry (bolted) connections for immediate load transfer.\", \"Neglecting Philippine tropical curing conditions\u2014high humidity reduces evaporation but rain exposure can wash off surface mortar. Curing compound spray is practical for Philippine rainy seasons.\", \"Over-specifying concrete strength (e.g., f'c = 35 MPa when f'c = 28 MPa suffices) to ensure durability\u2014only increase strength if design loads or durability analysis (Section 402) requires it. Higher strength increases cost and heat of hydration.\"]} />",
+      "raw_hash": "sha256:e85d3792f53e8cd96b17d56ac77ada5a2777dc929a0cf08355d8353ea4f8087f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[\\\"Assuming precast is always faster than CIP\u2014precast requires factory production time, transportation logistics, and careful on-site assembly. Small projects may be faster with CIP; large repetitive projects favor precast.\\\", \\\"Omitting proper vibration or over-vibrating concrete\u2014under-vibration leaves voids and weak zones; over-vibration causes segregation and surface blowholes. Operator training and equipment maintenance are critical.\\\", \\\"Specifying wet precast connections without accounting for grout curing delay\u2014grouted joints require 7\u201314 days before load application. Schedule accordingly, or switch to dry (bolted) connections for immediate load transfer.\\\", \\\"Neglecting Philippine tropical curing conditions\u2014high humidity reduces evaporation but rain exposure can wash off surface mortar. Curing compound spray is practical for Philippine rainy seasons.\\\", \\\"Over-specifying concrete strength (e.g., f'c = 35 MPa when f'c = 28 MPa suffices) to ensure durability\u2014only increase strength if design loads or durability analysis (Section 402) requires it. Higher strength increases cost and heat of hydration.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c02b964b5c62a15663ab80dc60f7bdfc3145bf05e000a8a981f0f8935cfbe80c",
+      "props": {
+        "items": "{[\"Assuming precast is always faster than CIP\u2014precast requires factory production time, transportation logistics, and careful on-site assembly. Small projects may be faster with CIP; large repetitive projects favor precast.\", \"Omitting proper vibration or over-vibrating concrete\u2014under-vibration leaves voids and weak zones; over-vibration causes segregation and surface blowholes. Operator training and equipment maintenance are critical.\", \"Specifying wet precast connections without accounting for grout curing delay\u2014grouted joints require 7\u201314 days before load application. Schedule accordingly, or switch to dry (bolted) connections for immediate load transfer.\", \"Neglecting Philippine tropical curing conditions\u2014high humidity reduces evaporation but rain exposure can wash off surface mortar. Curing compound spray is practical for Philippine rainy seasons.\", \"Over-specifying concrete strength (e.g., f'c = 35 MPa when f'c = 28 MPa suffices) to ensure durability\u2014only increase strength if design loads or durability analysis (Section 402) requires it. Higher strength increases cost and heat of hydration.\"]}"
+      },
+      "props_json": {
+        "items": "{[\"Assuming precast is always faster than CIP\u2014precast requires factory production time, transportation logistics, and careful on-site assembly. Small projects may be faster with CIP; large repetitive projects favor precast.\", \"Omitting proper vibration or over-vibrating concrete\u2014under-vibration leaves voids and weak zones; over-vibration causes segregation and surface blowholes. Operator training and equipment maintenance are critical.\", \"Specifying wet precast connections without accounting for grout curing delay\u2014grouted joints require 7\u201314 days before load application. Schedule accordingly, or switch to dry (bolted) connections for immediate load transfer.\", \"Neglecting Philippine tropical curing conditions\u2014high humidity reduces evaporation but rain exposure can wash off surface mortar. Curing compound spray is practical for Philippine rainy seasons.\", \"Over-specifying concrete strength (e.g., f'c = 35 MPa when f'c = 28 MPa suffices) to ensure durability\u2014only increase strength if design loads or durability analysis (Section 402) requires it. Higher strength increases cost and heat of hydration.\"]}"
+      },
+      "props_text": "items={[\"Assuming precast is always faster than CIP\u2014precast requires factory production time, transportation logistics, and careful on-site assembly. Small projects may be faster with CIP; large repetitive projects favor precast.\", \"Omitting proper vibration or over-vibrating concrete\u2014under-vibration leaves voids and weak zones; over-vibration causes segregation and surface blowholes. Operator training and equipment maintenance are critical.\", \"Specifying wet precast connections without accounting for grout curing delay\u2014grouted joints require 7\u201314 days before load application. Schedule accordingly, or switch to dry (bolted) connections for immediate load transfer.\", \"Neglecting Philippine tropical curing conditions\u2014high humidity reduces evaporation but rain exposure can wash off surface mortar. Curing compound spray is practical for Philippine rainy seasons.\", \"Over-specifying concrete strength (e.g., f'c = 35 MPa when f'c = 28 MPa suffices) to ensure durability\u2014only increase strength if design loads or durability analysis (Section 402) requires it. Higher strength increases cost and heat of hydration.\"]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9955,
+      "end_offset": 11097,
+      "line_start": 94,
+      "line_end": 94,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
+  "unknown_blocks": [],
+  "unresolved_critical_blocks": [],
+  "ui_blocks_hash": "sha256:0248a4a8dc482f56da2c2c07bf188727544f1fcafe8bfdea7744fa65101c4910"
+}

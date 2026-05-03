@@ -1,0 +1,632 @@
+{
+  "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:868d98b0ba4ce4f700928137553422a5c0e4f53cfb44556b19aab175dda27285",
+  "question_count": 12,
+  "questions": [
+    {
+      "question_id": "10013c66-ea49-485a-bece-d32fa8918a79",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "A hospital serving multicultural patients (Filipino, American, Middle Eastern) should design waiting areas considering cultural spatial preferences. Which approach would be most effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provide only close-together seating, eliminating privacy options, which may not cater to all cultural preferences"
+        },
+        {
+          "id": "b",
+          "text": "Eliminate seating entirely, requiring patients to stand during waiting, which could lead to discomfort and dissatisfaction"
+        },
+        {
+          "id": "c",
+          "text": "Provide varied waiting configurations—intimate clusters (high-context preference), dispersed individual seating (low-context preference)—allowing cultural groups to select preferred spacing"
+        },
+        {
+          "id": "d",
+          "text": "Single waiting area with dispersed seating at maximum distance, serving Western preferences exclusively, potentially alienating other cultural groups"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Close seating exclusively excludes low-context occupants uncomfortable with proximity",
+        "b": "Seating is functionally necessary; spatial variety is the design improvement",
+        "d": "Exclusive Western preference excludes high-context occupants",
+        "correct": "Multiple configurations accommodate cultural variation: close seating for high-context groups, dispersed seating for low-context groups",
+        "takeaway": "Multiple configurations accommodate cultural variation: close seating for high-context groups, dispersed seating for low-context groups."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e485a8824fcca94529d7dd386d1e4e1a2fb4ffb1f95879d58c6e88fda24905fe"
+    },
+    {
+      "question_id": "db25bc9f-85fc-4066-8e3e-ca53d28c011b",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Low-context cultures typically prefer:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mixed spatial organization with no consistent organizational logic, which can lead to confusion in navigation"
+        },
+        {
+          "id": "b",
+          "text": "Fluid spatial boundaries, implicit wayfinding, and communal spaces, fostering informal interactions"
+        },
+        {
+          "id": "c",
+          "text": "Explicit spatial boundaries, clear labeling, private individual spaces, and formal hierarchy"
+        },
+        {
+          "id": "d",
+          "text": "Elimination of all spatial definition and boundaries, creating an open and undefined environment"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both context types develop consistent organization reflecting their communication styles",
+        "b": "This describes high-context spatial preferences",
+        "d": "All cultures establish some spatial organization and definition",
+        "correct": "Low-context cultures (North America, Northern Europe) prefer explicit boundaries, clear signage, and private spaces reflecting direct communication style",
+        "takeaway": "Low-context cultures (North America, Northern Europe) prefer explicit boundaries, clear signage, and private spaces reflecting direct communication style."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a634ab019223779c7ca8be46613370182862988765605e045608132b139576eb"
+    },
+    {
+      "question_id": "758e1ac2-7f4a-481d-8521-5037b92bfe97",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "In designing mixed-income housing serving Filipino families and expatriate professionals, how would you accommodate different spatial culture preferences?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provide open floor plans for Filipino families and enclosed room units for expatriates; develop communal spaces serving community-oriented residents"
+        },
+        {
+          "id": "b",
+          "text": "Segregate occupant groups into separate buildings to avoid cultural conflicts and simplify management operations"
+        },
+        {
+          "id": "c",
+          "text": "Eliminate all shared communal space, prioritizing privacy exclusively across all unit types and common areas"
+        },
+        {
+          "id": "d",
+          "text": "Design all units identically, expecting all occupants to adapt to a standardized layout regardless of cultural preferences"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Segregation violates inclusive design principles; integration with flexibility serves both groups",
+        "c": "Eliminating communal space excludes community-oriented occupants",
+        "d": "Forcing identical units excludes occupants with different spatial preferences",
+        "correct": "Offering unit variety (open and enclosed) with developed communal spaces accommodates both Filipino and expatriate spatial preferences",
+        "takeaway": "Offering unit variety (open and enclosed) with developed communal spaces accommodates both Filipino and expatriate spatial preferences."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e387558af5ef9cab62d224bdc52522c99cfca5fe6e2aee17cf6ba48d7f3a1ee9"
+    },
+    {
+      "question_id": "4a2d077a-cf9a-463a-a255-cf5c7770dc50",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Comparing typical conversational distances, which statement accurately reflects Hall's research findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Closer distances indicate lower-status cultures; greater distances indicate more developed societies, suggesting a correlation between personal space and societal advancement"
+        },
+        {
+          "id": "b",
+          "text": "Latin American and Mediterranean cultures prefer 2–3 feet; Northern European and North American cultures prefer 4–6 feet"
+        },
+        {
+          "id": "c",
+          "text": "All cultures maintain identical 4–6 feet conversational distance, indicating a universal standard for personal space"
+        },
+        {
+          "id": "d",
+          "text": "Distance preferences are individual; no cultural patterns exist, implying that personal space is a matter of personal choice rather than cultural influence"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cultural differences reflect learned preferences, not status hierarchies",
+        "c": "Hall's research specifically documents cultural variation in distance preferences",
+        "d": "Hall found consistent cultural patterns, not merely individual variation",
+        "correct": "Hall documented systematic cultural variation: high-context cultures show closer distances (2–3 feet), low-context cultures show greater distances (4–6 feet)",
+        "takeaway": "Hall documented systematic cultural variation: high-context cultures show closer distances (2–3 feet), low-context cultures show greater distances (4–6 feet)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2f4f3f754987f476330c7ca14ef5eb09913308e8bf64a35450bad50c1c95189e"
+    },
+    {
+      "question_id": "ff29642b-39e8-43d6-b7e3-06b3bf399cb6",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "High-context cultures typically rely on:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Numerical data exclusively, avoiding subjective interpretation, to ensure clarity and precision"
+        },
+        {
+          "id": "b",
+          "text": "Written documentation as the primary communication method, emphasizing formal records"
+        },
+        {
+          "id": "c",
+          "text": "Implicit, contextual communication where meaning derives from context, relationships, and subtle cues"
+        },
+        {
+          "id": "d",
+          "text": "Explicit, direct communication with meaning clearly stated, minimizing ambiguity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Context type addresses communication mode, not data preferences",
+        "b": "Documentation style varies within both context types",
+        "d": "This describes low-context cultures (North America, Northern Europe)",
+        "correct": "High-context cultures (Latin America, Middle East, Asia) communicate through context and relationship understanding",
+        "takeaway": "High-context cultures (Latin America, Middle East, Asia) communicate through context and relationship understanding."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aa4e4e4d2efcb0d92a2e70ebe7233fdaff6942f2f8410e1212dca6524c3955cc"
+    },
+    {
+      "question_id": "b7d736e6-e206-4991-8b64-31da685b24f8",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Why might Western international design standards (explicit labeling, clear boundaries, private spaces) feel 'cold' or 'unwelcoming' to occupants from high-context cultures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "International standards reflect low-context assumptions; high-context preferences for implicit meaning, fluid boundaries, and communal space aren't accommodated"
+        },
+        {
+          "id": "b",
+          "text": "High-context occupants have poor eyesight and cannot read explicit signage, which leads to misunderstandings"
+        },
+        {
+          "id": "c",
+          "text": "High-context cultures prefer lower-quality design and ignore professional standards, which can lead to conflicts in design expectations"
+        },
+        {
+          "id": "d",
+          "text": "Explicit labeling violates religious or cultural prohibitions in high-context cultures, creating discomfort"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Explicit signage is readable; the issue is cultural mismatch, not legibility",
+        "c": "Quality is independent of context type; this is a preference difference, not quality judgment",
+        "d": "While some specific elements may have cultural significance, general preference is about communication and spatial style",
+        "correct": "International standards embody low-context assumptions; high-context preferences for implicit wayfinding, shared spaces, and relational meaning aren't accommodated",
+        "takeaway": "International standards embody low-context assumptions; high-context preferences for implicit wayfinding, shared spaces, and relational meaning aren't accommodated."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b787331a247e527837d1876e1feba43544504edfcc4be0ed91a71eb1a4fac1da"
+    },
+    {
+      "question_id": "bef5793d-b2b2-4fc7-96d3-68c59dee013d",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Edward T. Hall's proxemics framework demonstrates that personal space and distance preferences are:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Individual personality traits; distance preferences correlate only with individual temperament"
+        },
+        {
+          "id": "b",
+          "text": "Culturally learned and conditioned; distance preferences vary systematically across cultural groups"
+        },
+        {
+          "id": "c",
+          "text": "Biologically universal; all humans maintain identical distance preferences regardless of cultural background"
+        },
+        {
+          "id": "d",
+          "text": "Irrelevant to architectural design; distance preferences don't affect building performance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While personality influences behavior, cultural conditioning is the primary determinant",
+        "c": "Hall's research specifically documents cultural variation, not universality",
+        "d": "Proxemics directly informs architectural spacing and design decisions",
+        "correct": "Hall's fundamental finding is that proxemics is culturally learned; distance norms vary systematically by culture",
+        "takeaway": "Hall's fundamental finding is that proxemics is culturally learned; distance norms vary systematically by culture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c32860717e9af53813e037ca38365c99c021598ccfe13e2e566796789eaecd94"
+    },
+    {
+      "question_id": "4a2f2466-3e57-4edd-9563-154ee7db332c",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Edward T. Hall developed proxemics theory based on research in which contexts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1950s field research observing actual cultural interactions in diverse cities"
+        },
+        {
+          "id": "b",
+          "text": "Theoretical speculation about cultural distance without empirical observation, relying solely on hypothetical scenarios"
+        },
+        {
+          "id": "c",
+          "text": "Architectural analysis of historical building patterns, focusing on the spatial arrangements of past societies"
+        },
+        {
+          "id": "d",
+          "text": "Laboratory experiments measuring controlled distance responses, providing a scientific basis for proxemics theory"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Hall's work was grounded in observation, not speculation",
+        "c": "Hall's work was anthropological observation, not historical analysis",
+        "d": "Hall conducted fieldwork, not laboratory experiments",
+        "correct": "Hall's research was empirical—observing actual behavior in diverse cultural contexts to identify distance patterns",
+        "takeaway": "Hall's research was empirical—observing actual behavior in diverse cultural contexts to identify distance patterns."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c5bdc54ed7286c6f72a62e6cc2f68cba8397aa8e5615b0d50daf664060719a59"
+    },
+    {
+      "question_id": "688e83e7-10ef-4a00-b0fc-d6df529748a8",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Filipino culture, with strong family and community orientation, would typically show spatial preferences characteristic of:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exclusively public spaces; no private residential separation, which is uncommon in urban settings"
+        },
+        {
+          "id": "b",
+          "text": "High-context culture: fluid boundaries, shared spaces, implicit spatial negotiation"
+        },
+        {
+          "id": "c",
+          "text": "No cultural preference; space use is purely individual, disregarding communal influences"
+        },
+        {
+          "id": "d",
+          "text": "Low-context culture: explicit boundaries, private spaces, formal separation, often seen in Western societies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "All cultures develop private and public space distinction, though proportions vary",
+        "c": "Culture strongly influences spatial preferences; variation within cultures exists but cultural norms are evident",
+        "d": "This describes low-context Western preferences",
+        "correct": "Filipino high-context, communal culture favors shared residential spaces, fluid boundaries, and implicit spatial negotiation over explicit separation",
+        "takeaway": "Filipino high-context, communal culture favors shared residential spaces, fluid boundaries, and implicit spatial negotiation over explicit separation."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34884bb03db49d67a606d1fc2f0f38754bd3ab68b9b30bc57f9909bc7f584ae9"
+    },
+    {
+      "question_id": "f9587769-12bc-4a58-9ad0-24b98f72439b",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "A German multinational corporation's Manila office requires design accommodating German (low-context) staff and Filipino (high-context) employees. Which design approach would be most effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design exclusively for German preferences, requiring Filipino staff to adapt to a more structured and formal environment"
+        },
+        {
+          "id": "b",
+          "text": "Offer both enclosed private offices (German preference) and open collaborative spaces (Filipino preference), allowing flexible use"
+        },
+        {
+          "id": "c",
+          "text": "Design exclusively for Filipino preferences, treating German staff as temporary occupants who must adjust to local norms"
+        },
+        {
+          "id": "d",
+          "text": "Eliminate all spatial definition, creating completely open layout serving neither preference, thus fostering a neutral environment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Requiring Filipino staff to adapt violates inclusive design principles",
+        "c": "Accommodating only Filipino preferences alienates German employees",
+        "d": "Complete openness serves neither cultural group well",
+        "correct": "Multicultural design offers flexibility—private and shared spaces—allowing both cultural groups to work according to their preferences",
+        "takeaway": "Multicultural design offers flexibility—private and shared spaces—allowing both cultural groups to work according to their preferences."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7762d6f4dc96bdfac03009a1e288f075111bfcf55940049448728fef6a6bc67a"
+    },
+    {
+      "question_id": "6ea4f5f5-8200-4b2d-b768-85ff8e476c60",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "How do high-context and low-context cultural frameworks apply to architectural responses to crowding and density?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crowding affects all cultures identically; cultural context is irrelevant to density perception, which is a simplistic view"
+        },
+        {
+          "id": "b",
+          "text": "High-context cultures show greater tolerance for spatial density; low-context cultures show greater density stress at same population densities"
+        },
+        {
+          "id": "c",
+          "text": "Density tolerance is purely individual; no cultural patterns exist, which ignores significant cultural research"
+        },
+        {
+          "id": "d",
+          "text": "Low-context cultures have evolved to accommodate high density; high-context cultures prefer sparse settlement, which is a generalization"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Culture significantly influences crowding perception and tolerance",
+        "c": "Culture creates systematic variation in density preferences, not purely individual variation",
+        "d": "This reverses actual patterns; high-context cultures developed in higher-density contexts",
+        "correct": "High-context cultures show comfort with closer distances and higher density; low-context cultures experience stress at same densities, preferring greater separation",
+        "takeaway": "High-context cultures show comfort with closer distances and higher density; low-context cultures experience stress at same densities, preferring greater separation."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27eba76307c07cdd6d11bddc89addf13115adf8f1ff3ef78d6a6dbfa120731b2"
+    },
+    {
+      "question_id": "e6236a7d-67fb-445d-9219-ac7962f3e6ba",
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Why is understanding cultural spatial preferences critical for architects designing buildings in multicultural contexts like Manila?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects should ignore cultural preferences and impose Western standards regardless of occupant origin, believing in universal applicability"
+        },
+        {
+          "id": "b",
+          "text": "Only Filipino culture exists in the Philippines; other cultural groups are irrelevant, simplifying design considerations"
+        },
+        {
+          "id": "c",
+          "text": "Different cultural groups occupy the same buildings; understanding varied preferences enables inclusive design serving diverse populations"
+        },
+        {
+          "id": "d",
+          "text": "Cultural differences are irrelevant to professional design practice; all architecture follows universal Western standards, assuming homogeneity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Professional architecture responds to occupant needs; imposing single standards excludes non-Western occupants",
+        "b": "Manila includes significant expatriate populations (American, European, Chinese, Indian) with different spatial cultures",
+        "d": "Hall's research demonstrates cultural variation; ignoring it produces exclusionary design",
+        "correct": "Manila's multicultural population requires design flexibility accommodating diverse spatial and cultural preferences for inclusive outcomes",
+        "takeaway": "Manila's multicultural population requires design flexibility accommodating diverse spatial and cultural preferences for inclusive outcomes."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-07-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7b822e1c7b4fc4b2b7473519548ec59e0fe032d8d6c071e8d5d9fa51915e5d94"
+    }
+  ]
+}
