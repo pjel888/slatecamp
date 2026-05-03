@@ -1,8 +1,8 @@
-# Graph-Based Learning Architecture for a Philippine Architecture Licensure Exam Review App
+# Graph-Based Learning Architecture for a Philippine Licensure Examination for Architects Review App
 
 ## Executive Summary
 
-Graph-based models are a natural fit for a Philippine Architecture Licensure Exam (ALE) review system because the exam domain is inherently relational. Codes depend on definitions; exceptions override base rules; design decisions cascade into compliance consequences; and exam "traps" arise almost exclusively from confusing adjacent concepts. A graph elevates those relationships from prose footnotes to first-class data objects — nodes, edges, and properties — so the system can compute prerequisite-aware learning paths, diagnose root-cause knowledge gaps, and generate traceable explanations that a learner can follow.
+Graph-based models are a natural fit for a Philippine Licensure Examination for Architects (LEA) review system because the exam domain is inherently relational. Codes depend on definitions; exceptions override base rules; design decisions cascade into compliance consequences; and exam "traps" arise almost exclusively from confusing adjacent concepts. A graph elevates those relationships from prose footnotes to first-class data objects — nodes, edges, and properties — so the system can compute prerequisite-aware learning paths, diagnose root-cause knowledge gaps, and generate traceable explanations that a learner can follow.
 
 This report provides a practitioner-level treatment of every layer: the Philippine regulatory and exam context, graph schema design, learning-science algorithms, GraphRAG versus local-RAG trade-offs, Supabase-backed implementation patterns, governance and privacy compliance, and a phased delivery roadmap. The target audience is a development team already familiar with Next.js and Supabase who wants to understand *why* each design choice is made and *how* to implement it without waiting for a perfect schema.
 
@@ -12,7 +12,7 @@ This report provides a practitioner-level treatment of every layer: the Philippi
 
 ### 1.1 Exam Blueprint and Regulatory Basis
 
-The Architecture Licensure Examination (ALE) is administered under Republic Act No. 9266, the Architecture Act of 2004, through the Professional Regulatory Board of Architecture (PRBoA) under the Professional Regulation Commission (PRC). The examination is divided into three major areas with fixed weightings published by the PRC in its official Syllabi document:[^1][^2][^3][^4]
+The Licensure Examination for Architects (LEA) is administered under Republic Act No. 9266, the Architecture Act of 2004, through the Professional Regulatory Board of Architecture (PRBoA) under the Professional Regulation Commission (PRC). The examination is divided into three major areas with fixed weightings published by the PRC in its official Syllabi document:[^1][^2][^3][^4]
 
 | Area | Topics | Weight |
 |------|---------|--------|
@@ -55,7 +55,7 @@ Standard Retrieval-Augmented Generation (RAG) chunks source documents into flat 
 
 GraphRAG, introduced formally by Microsoft Research, extends this by first extracting a knowledge graph from source text, building a community hierarchy over the graph (using Louvain or Leiden clustering), generating LLM-summarized community reports at each hierarchy level, and using both local entity search and global community search at query time. Research comparing the two paradigms found that GraphRAG excels at multi-hop reasoning and relationship-aware queries, while standard RAG is faster for single-step semantic lookup. A hybrid approach combining both consistently outperforms either in isolation.[^15][^16][^17]
 
-For the ALE review app, this distinction is practically important:
+For the LEA review app, this distinction is practically important:
 
 - A learner asking *"What is the minimum ramp width under BP 344?"* is a single-hop factual query — standard RAG handles it well.
 - A learner asking *"What rules apply to a commercial building retrofit that must comply with the NBC, BP 344, and RA 9514 simultaneously?"* is a multi-hop relational query — GraphRAG's community summaries and graph traversal are significantly better.
@@ -68,7 +68,7 @@ The KG²RAG framework demonstrates that using knowledge graph fact-level relatio
 
 ### 3.1 Node Taxonomy
 
-The schema must separate **knowledge**, **resources**, and **assessment** into distinct node types. A concrete starting taxonomy for the ALE domain:
+The schema must separate **knowledge**, **resources**, and **assessment** into distinct node types. A concrete starting taxonomy for the LEA domain:
 
 | Node Type | What it represents | Key Properties |
 |-----------|-------------------|----------------|
@@ -190,7 +190,7 @@ Q = \frac{1}{2m} \sum_{i,j} \left[ A_{ij} - \frac{k_i k_j}{2m} \right] \delta(c_
 
 where \( A_{ij} \) is the edge weight between nodes \( i \) and \( j \), \( k_i \) is the sum of weights of edges attached to node \( i \), \( m \) is the sum of all edge weights, and \( \delta(c_i, c_j) \) is 1 if nodes \( i \) and \( j \) are in the same community. Modularity scores above 0.4 indicate meaningful groupings worth using for curriculum modules.[^20]
 
-In the ALE context, running Louvain over the concept-and-provision graph automatically discovers topic clusters that correspond roughly to exam subject areas (NBC → egress → fire safety → accessibility) plus cross-cutting clusters that emerge from shared concepts. These clusters become the "module" view in the learner UI and the unit of community summary generation in GraphRAG.
+In the LEA context, running Louvain over the concept-and-provision graph automatically discovers topic clusters that correspond roughly to exam subject areas (NBC → egress → fire safety → accessibility) plus cross-cutting clusters that emerge from shared concepts. These clusters become the "module" view in the learner UI and the unit of community summary generation in GraphRAG.
 
 GraphRAG's Microsoft Research implementation (2024) builds a hierarchical community structure, generates LLM summaries of each community at each level, and uses dynamic community selection — embedding the query and scoring community reports for relevance rather than using a fixed hierarchy level. The 2026 core-based hierarchy extension replaces modularity-based clustering with k-core decomposition to produce a more balanced hierarchy.[^16][^21][^12]
 
@@ -248,11 +248,11 @@ IRT calibration requires item parameter estimation from real response data, whic
 
 ALEKS (Assessment and LEarning in Knowledge Spaces) demonstrates large-scale knowledge space theory (KST) in practice: a domain of approximately 350 algebra concepts yields millions of empirically feasible knowledge states, yet a Markovian adaptive assessment can gauge a learner's knowledge state in approximately 25–30 questions. ALEKS employs regularly spaced re-assessments and KST-guided learning mode simultaneously, and has been used by approximately four to five million students per year in mathematics and chemistry.[^36][^37]
 
-The ALE graph system shares the same goal — "start anywhere, route intelligently" — but operates in a multi-source regulatory domain rather than a single curated curriculum. The key lesson from ALEKS is that a well-structured prerequisite graph plus probabilistic state estimation is sufficient to dramatically personalize the learning experience, even without deep learning models.
+The LEA graph system shares the same goal — "start anywhere, route intelligently" — but operates in a multi-source regulatory domain rather than a single curated curriculum. The key lesson from ALEKS is that a well-structured prerequisite graph plus probabilistic state estimation is sufficient to dramatically personalize the learning experience, even without deep learning models.
 
 ### 5.6 Learning Path Recommendation Research
 
-Recent research on educational knowledge graph-based path recommendation shows measurable improvements: a KG-based recommendation strategy in computer programming education improved path acceptance rate by 31.7% and knowledge mastery efficiency by 24.3% compared to non-graph baselines. Incorporating both prerequisite *and* similarity relations between knowledge concepts — rather than prerequisite edges alone — improves recommendation performance. The practical implication for the ALE app: both `PREREQ_OF` and `COMMONLY_CONFUSED_WITH` edges should be populated before attempting adaptive routing.[^38][^39]
+Recent research on educational knowledge graph-based path recommendation shows measurable improvements: a KG-based recommendation strategy in computer programming education improved path acceptance rate by 31.7% and knowledge mastery efficiency by 24.3% compared to non-graph baselines. Incorporating both prerequisite *and* similarity relations between knowledge concepts — rather than prerequisite edges alone — improves recommendation performance. The practical implication for the LEA app: both `PREREQ_OF` and `COMMONLY_CONFUSED_WITH` edges should be populated before attempting adaptive routing.[^38][^39]
 
 ***
 
@@ -276,7 +276,7 @@ Access to this layer is read-only for all downstream processes. Provisions in th
 
 Andrej Karpathy's "LLM Knowledge Bases" pattern (published April 2026) describes an architecture where an LLM incrementally builds and maintains a persistent wiki of interlinked Markdown files from a raw source directory — rather than re-chunking and re-retrieving at every query. The LLM acts as a research librarian: it reads new sources, extracts key information, updates entity pages, notes contradictions, and keeps the synthesis current. The compiled wiki is *stable* and *human-readable*; the LLM writes it and humans can audit it.[^40][^41]
 
-For the ALE app, this means compiling concept pages, provision summaries, cross-references, and exception analyses as editable Markdown files that live in version control. When RA 9514's IRR is updated, the LLM reads the delta and patches the affected wiki pages — not a cold re-indexing of everything. This dramatically reduces operational cost and improves consistency compared to pure RAG.
+For the LEA app, this means compiling concept pages, provision summaries, cross-references, and exception analyses as editable Markdown files that live in version control. When RA 9514's IRR is updated, the LLM reads the delta and patches the affected wiki pages — not a cold re-indexing of everything. This dramatically reduces operational cost and improves consistency compared to pure RAG.
 
 The key difference from raw GraphRAG is editorial accountability: every wiki page is reviewable and correctable by domain SMEs before it becomes a learner-facing node. Automated graph extraction proposals go into a staging table; only SME-approved pages are promoted to production.
 
@@ -554,7 +554,7 @@ A practical UI layout for the study interface:
 
 The Philippines' Data Privacy Act establishes three core processing principles: **transparency** (data subjects must know the nature, purpose, and extent of processing), **legitimate purpose** (processing must be in accordance with a declared purpose), and **proportionality** (processing must not be excessive relative to the declared purpose). The NPC's December 2024 advisory clarifies that the DPA and its IRR apply to AI systems during training, testing, and deployment — not only in production.[^48][^49][^50]
 
-For the ALE app, this means:
+For the LEA app, this means:
 
 - **Registration with NPC:** Personal information controllers processing personal data must register data processing systems with the NPC Registration System (NPCRS). Automated decision-making (adaptive routing based on mastery estimates) must be declared.[^49]
 - **Privacy Notice:** Learners must be informed about what behavioral data (attempts, response times, mastery estimates) is collected, how it is used, how long it is retained, and their rights to access, correct, and delete.
@@ -700,7 +700,7 @@ The roadmap below sequences work to maximize usability per unit of effort, prior
 | Fire Code | RA 9514 | Congress/BFP | lawphil.net and SC e-Library[^42] | 2019 Revised IRR issued by BFP |
 | Architecture Act | RA 9266 | Congress/PRC | architectureboard.com.ph[^10] | IRR Board Resolution No. 07, 2004 |
 | Philippine Green Building Code | PGBC | DPWH | DPWH Green Building portal | Most recent edition |
-| ALE Syllabi | Board Resolution | PRC/PRBoA | prc.gov.ph official Syllabi PDF[^2] | Must re-check each exam season |
+| LEA Syllabi | Board Resolution | PRC/PRBoA | prc.gov.ph official Syllabi PDF[^2] | Must re-check each exam season |
 | PRC Exam Schedule | Annual issuance | PRC | prc.gov.ph | Ingest as versioned document |
 
 ## Appendix B — Mermaid Diagrams
@@ -784,7 +784,7 @@ flowchart LR
 
 4. [Architecture Act: Architect Regulation Law](https://jur.ph/law/summary/the-architecture-act-of-2004) - Republic Act No. 9266: The Architecture Act of 2004 regulates the registration, licensing, and pract...
 
-5. [Understanding the PRBOA Syllabus: A Complete Breakdown](https://arkitekto.review/blog/prboa-syllabus-breakdown) - ALE (Architecture Licensure Examination) Structure · 1. Architectural Design & Site Planning. 7 key ...
+5. [Understanding the PRBOA Syllabus: A Complete Breakdown](https://arkitekto.review/blog/prboa-syllabus-breakdown) - LEA (Licensure Examination for Architects) Structure · 1. Architectural Design & Site Planning. 7 key ...
 
 6. [PD 1096: The National Building Code of the Philippines](https://philippinelawfirm.com/civil/pd-1096-the-national-building-code-of-the-philippines/) - The National Building Code of the Philippines governs all public and even private buildings and stru...
 

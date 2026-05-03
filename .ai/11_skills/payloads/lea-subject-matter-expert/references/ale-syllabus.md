@@ -1,6 +1,6 @@
-# Complete ALE Syllabus Reference
+# Complete LEA Syllabus Reference
 
-**Source:** PRC Board of Architecture — Promulgation of the Syllabi for the Architecture Licensure Examination (Official)
+**Source:** PRC Board of Architecture — Promulgation of the Syllabi for the Licensure Examination for Architects (Official)
 
 ---
 

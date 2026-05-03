@@ -20,7 +20,7 @@ description: >
 
 ## The 3D Lab Mission
 
-The 3D Lab is SlateCamp's most powerful educational differentiator. No other ALE review
+The 3D Lab is SlateCamp's most powerful educational differentiator. No other LEA review
 platform provides interactive 3D models of building codes, structural systems, and
 architectural concepts. The governing question for every 3D feature:
 **"Does this model help a student understand this code or concept better than a 2D diagram?"**
@@ -248,7 +248,7 @@ For models that need to respond to user input (e.g., stairway rise/run configura
 we use Blender + Python scripting to generate the base geometry, then export to GLB.
 
 **Claude's role**: Write the Python scripts for Blender's scripting console.
-AI-generated 3D (Meshy, Luma, etc.) is NOT viable for ALE content — precision is required.
+AI-generated 3D (Meshy, Luma, etc.) is NOT viable for LEA content — precision is required.
 
 ### Blender Python Script Template
 ```python
@@ -349,7 +349,7 @@ useEffect(() => {
 | 2 | RA 9514 Fire Exit Travel Distance | RA 9514 Annex | Click: measure path |
 | 3 | BP 344 Accessible Ramp | BP 344 2024 IRR | Rotate + annotate |
 | 4 | BP 344 Accessible Toilet | BP 344 2024 IRR | Cross-section |
-| 5 | Classical Orders Comparison | ALE History | Side-by-side toggle |
+| 5 | Classical Orders Comparison | LEA History | Side-by-side toggle |
 | 6 | Structural Bay Span | NSCP 2015 | Slider: span length |
 | 7 | Floor Plan Egress | PD 1096 | Path highlight |
 | 8 | CHB Wall Construction | PD 1096 Sec 7 | Exploded view |

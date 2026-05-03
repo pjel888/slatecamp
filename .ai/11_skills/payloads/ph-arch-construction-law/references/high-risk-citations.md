@@ -1,6 +1,6 @@
 # High-Risk Citations — Verified vs. Unverified
 
-This file tracks provisions that are frequently cited in ALE prep content with WRONG section numbers. Every entry documents the common wrong citation and its correction status.
+This file tracks provisions that are frequently cited in LEA prep content with WRONG section numbers. Every entry documents the common wrong citation and its correction status.
 
 **Legend:**
 - ✅ VERIFIED — confirmed against primary source document
@@ -91,7 +91,7 @@ This file tracks provisions that are frequently cited in ALE prep content with W
 | Status | ⚠️ UNVERIFIED (values widely cited but exact section not confirmed) |
 |---|---|
 | **Common citation** | 45m unsprinklered, 60m sprinklered |
-| **What is known** | These values are universally cited in ALE prep materials and appear correct. The exact section in the 2019 IRR needs verification. |
+| **What is known** | These values are universally cited in LEA prep materials and appear correct. The exact section in the 2019 IRR needs verification. |
 | **Safe citation** | "Under RA 9514, maximum travel distance to the nearest exit is 45 meters for unsprinklered buildings and 60 meters for sprinklered buildings." |
 
 ### Exit Width

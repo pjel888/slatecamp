@@ -2,7 +2,7 @@
 
 Source: 2004 Revised Implementing Rules and Regulations of PD 1096, published by DPWH on April 1, 8, and 15, 2005 in The Manila Standard Today. With annotations by PRBoA in 2008.
 
-**This is the document that governs the ALE.** The original 1977 PD 1096 chapter numbers are different from the IRR rule numbers. Always cite the IRR, not the original decree.
+**This is the document that governs the LEA.** The original 1977 PD 1096 chapter numbers are different from the IRR rule numbers. Always cite the IRR, not the original decree.
 
 ---
 
@@ -54,7 +54,7 @@ Source: 2004 Revised Implementing Rules and Regulations of PD 1096, published by
 
 ---
 
-## Sections Frequently Referenced in ALE Content
+## Sections Frequently Referenced in LEA Content
 
 ### Rule VII — The Primary Rule for Development Controls
 

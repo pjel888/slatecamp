@@ -1,6 +1,6 @@
 # Development Controls Computation Reference
 
-Complete computation framework for ALE ADSP questions. Every formula, every table value, every decision tree needed to generate and verify DC questions.
+Complete computation framework for LEA ADSP questions. Every formula, every table value, every decision tree needed to generate and verify DC questions.
 
 **Source:** Rules VII and VIII of the 2004 Revised Implementing Rules and Regulations of PD 1096 (National Building Code of the Philippines, 1977).
 

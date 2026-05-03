@@ -3,13 +3,13 @@
 ## Master Interview Script — First-Taker (45 min)
 
 ### Setup (5 min)
-"Thanks for joining me today. My name is [name]. I'm working on making SlateCamp better for people preparing for the ALE. I want to be clear: there are no right or wrong answers here — I'm trying to understand your experience, not test you. If anything feels confusing or strange, that's actually really useful information for me. Do you mind if I record this? The recording is just for my notes and won't be shared."
+"Thanks for joining me today. My name is [name]. I'm working on making SlateCamp better for people preparing for the LEA. I want to be clear: there are no right or wrong answers here — I'm trying to understand your experience, not test you. If anything feels confusing or strange, that's actually really useful information for me. Do you mind if I record this? The recording is just for my notes and won't be shared."
 
 **[Start recording. Set timer for 45 min.]**
 
 ### Warm-Up (5–8 min)
 1. "Tell me a little about yourself — where you went to school, what you're up to now."
-2. "When did you decide to take the ALE? What triggered that decision?"
+2. "When did you decide to take the LEA? What triggered that decision?"
 3. "How long have you been preparing?"
 
 ### Core Discovery (20–25 min)
@@ -22,7 +22,7 @@
 8. "Have you had sessions where it felt like a waste of time? What was different?"
 
 **Mental model of readiness:**
-9. "If I asked you right now, 'Are you ready for the ALE?' — what would go through your mind?"
+9. "If I asked you right now, 'Are you ready for the LEA?' — what would go through your mind?"
 10. "How would you know you're ready? What would that feel like or look like?"
 11. "Are there parts of the exam content you're confident about? Which parts worry you the most?"
 
@@ -33,7 +33,7 @@
 15. "What did you do with that information?"
 
 ### Emotional Depth Probe (5 min)
-16. "What would it mean to you to pass the ALE? Not practically — emotionally."
+16. "What would it mean to you to pass the LEA? Not practically — emotionally."
 17. "What would happen if you didn't pass? Who would know?"
 18. "Has anyone around you — family, batchmates — influenced how you feel about the exam?"
 
@@ -53,7 +53,7 @@
 Same as First-Taker. Add: "I especially want to understand the experience of people who've been through the exam preparation process — the full arc, not just where you are today. Your perspective is really valuable."
 
 ### Warm-Up (5–8 min)
-1. "Tell me about your journey with the ALE — take me from the beginning."
+1. "Tell me about your journey with the LEA — take me from the beginning."
 2. "How many times have you gone through the review process?"
 3. [If they mention previous attempt:] "Tell me about that experience."
 
@@ -85,7 +85,7 @@ Same as First-Taker. Add: "I especially want to understand the experience of peo
 **Note:** This persona is time-scarce. Keep it tight. No tangents.
 
 ### Setup (3 min)
-Shorter: "I know your time is valuable. This will be exactly 30 minutes. I want to understand how someone with a full work schedule prepares for the ALE."
+Shorter: "I know your time is valuable. This will be exactly 30 minutes. I want to understand how someone with a full work schedule prepares for the LEA."
 
 ### Core (20 min)
 1. "How long has it been since you graduated?"
@@ -138,7 +138,7 @@ Use these when you need focused insight on a specific feature, not a full interv
 5. "Who else was involved in the decision to pay?" [family, batchmates]
 
 ### Probe: Campfire / Community
-1. "Do you talk to other people who are preparing for the ALE?"
+1. "Do you talk to other people who are preparing for the LEA?"
 2. "Have you ever used the SlateCamp community features?"
 3. "What kind of community support would actually help you prepare?"
 4. "Have you talked to someone who passed? What did you learn?"

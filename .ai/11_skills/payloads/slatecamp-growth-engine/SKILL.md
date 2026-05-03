@@ -22,7 +22,7 @@ EdTech growth has one brutal constraint: you're fighting human nature. Learning 
 - The community loop is the most powerful growth mechanism available
 
 **The structural growth advantage:**
-- ALE passers are a natural referral army — they remember the pain, they want to help batchmates
+- LEA passers are a natural referral army — they remember the pain, they want to help batchmates
 - Architecture school networks are dense and trust-based
 - The Readiness Score creates an emotional hook that drives sharing
 - Exam anxiety is one of the most shareable emotional states in Filipino student culture
@@ -38,7 +38,7 @@ ACQUISITION
 "How do they find us?"
 → Social (TikTok, FB, IG) — organic + paid
 → Word of mouth — from passers, from existing users
-→ SEO — "ALE reviewer Philippines"
+→ SEO — "LEA reviewer Philippines"
 → School ambassador program
 → Review center partnerships (B2B)
 → Philip's personal network (founder-led early growth)
@@ -87,7 +87,7 @@ REFERRAL
 SlateCamp's primary growth loop:
 
 ```
-Student feels ALE anxiety
+Student feels LEA anxiety
       ↓
 Discovers SlateCamp (social/referral/SEO)
       ↓
@@ -114,7 +114,7 @@ Passes exam → posts about it
 
 Activation is the single highest-leverage growth investment. A 10% improvement in activation beats a 2x increase in acquisition spend.
 
-**The ALE candidate's activation journey:**
+**The LEA candidate's activation journey:**
 ```
 Day 0: Signs up (motivated, anxious)
 → ACTIVATION GOAL: Get them to the Readiness Score reveal
@@ -167,7 +167,7 @@ Students don't quit SlateCamp because it's bad. They quit because life gets in t
 
 ### 4. Push Notifications (Mobile)
 - "Day 4 of your Camp Trail is ready. Your score was 34 — let's move it."
-- "The [Month] ALE is in 47 days. You have 23 Trail days left."
+- "The [Month] LEA is in 47 days. You have 23 Trail days left."
 - "Your batchmate [Name] just completed Day 30. You're on Day 12. Close the gap."
 - Timing: 8:00–9:00 PM (peak Filipino student study window)
 
@@ -202,13 +202,13 @@ Mechanics:
 - Referrer: 14 days Pro extension for each conversion
 - Cap: No cap (infinite — more referrals = more free Pro time)
 
-Psychology: This is not "earn cash." It's "protect your friend from failing the ALE."
+Psychology: This is not "earn cash." It's "protect your friend from failing the LEA."
 The message: "Share this with your batchmates before it's too late."
 ```
 
 **Referral Tier 2: Passer Referral (Most Powerful)**
 ```
-Trigger: User passes the ALE (detected via their score and in-app self-report)
+Trigger: User passes the LEA (detected via their score and in-app self-report)
 Offer: "Become a SlateCamp Ambassador. Help your batchmates pass."
 Mechanics:
 - Free Pro for life (cost: ₱0 — they're done with the exam, no LTV loss)
@@ -256,7 +256,7 @@ Expected output: Study pods churn at 2x lower rates than solo users
 ## Growth Experiments to Run (Prioritized)
 
 **High impact, low effort (run first):**
-1. A/B test the Diagnostic CTA copy — does "Know your score" or "Am I ready for the ALE?" convert better?
+1. A/B test the Diagnostic CTA copy — does "Know your score" or "Am I ready for the LEA?" convert better?
 2. Test push notification timing (7pm vs 9pm vs 7am)
 3. Test referral reward framing: cash vs. free time vs. "protect a friend"
 4. Test paywall trigger: Day 3 of Camp Trail vs. when score improves 5 points first time

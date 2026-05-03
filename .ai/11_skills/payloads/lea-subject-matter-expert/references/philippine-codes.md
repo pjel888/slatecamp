@@ -1,4 +1,4 @@
-# Philippine Building Codes — Complete Reference for ALE
+# Philippine Building Codes — Complete Reference for LEA
 
 **Critical instruction:** All dimensional values and section numbers in this file should be verified against the current official published text before use in SlateCamp content. Code provisions can be amended by administrative orders. Always cite the source section.
 
@@ -9,7 +9,7 @@
 **Administered by:** DPWH Secretary
 **Technical staff:** National Building Code Development Office (NBCDO)
 **Revised IRR:** Published April 1, 8, 15, 2005 (Manila Standard Today)
-**Note for ALE:** The 2004 Revised IRR is specifically allowed in the exam room (Rules VII and VIII of the 2004 Revised IRR only)
+**Note for LEA:** The 2004 Revised IRR is specifically allowed in the exam room (Rules VII and VIII of the 2004 Revised IRR only)
 
 ### Key Rule Structure (2004 Revised IRR):
 - **Rule I:** General Provisions (Sec. 101–104) — policy, scope, general building requirements
@@ -27,7 +27,7 @@ Only Registered Licensed Architects (RLAs) shall prepare, sign and seal architec
 ---
 
 ### Development Controls (DCs) — Heavily Tested
-These are the mathematical heart of many ALE design questions:
+These are the mathematical heart of many LEA design questions:
 
 **Key Terms:**
 - **TLA** — Total Lot Area (the entire lot, including setbacks)
@@ -188,7 +188,7 @@ Parking is a major exam topic. General principles:
 **Published by:** Association of Structural Engineers of the Philippines (ASEP)
 **Application:** All structures in the Philippines
 
-### Key Facts for ALE:
+### Key Facts for LEA:
 
 **Seismic Design:**
 - Philippines is classified as **Seismic Zone 2** (high seismicity) per NSCP 2015
@@ -269,7 +269,7 @@ Primary load combinations from NSCP Section 203:
 **Administered by:** Board of Electrical Engineering (BEE) under PRC
 **Based on:** Adapted from NFPA 70 (National Electrical Code) with Philippine amendments
 
-### ALE-relevant provisions:
+### LEA-relevant provisions:
 - Minimum lighting power density (LPD) by occupancy
 - Circuit requirements for different occupancies
 - Emergency power systems
@@ -279,7 +279,7 @@ Primary load combinations from NSCP Section 203:
 ---
 
 ## National Plumbing Code of the Philippines
-**Key ALE content:**
+**Key LEA content:**
 - Minimum fixture requirements per occupancy (e.g., number of water closets per X persons)
 - Pipe sizing charts (based on DFU — Drainage Fixture Units; WFU — Water Supply Fixture Units)
 - Septic tank design rules

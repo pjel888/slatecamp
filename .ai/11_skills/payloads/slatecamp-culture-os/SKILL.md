@@ -37,7 +37,7 @@ We don't inflate readiness scores. We don't manufacture urgency. We don't preten
 - We flag problems early, not after they explode
 
 ### 2. Students Before Everything
-Every product decision, every team decision, every resource allocation question is tested against: *does this help a student pass the ALE?* This is not a slogan. It is the tiebreaker.
+Every product decision, every team decision, every resource allocation question is tested against: *does this help a student pass the LEA?* This is not a slogan. It is the tiebreaker.
 
 **In practice:**
 - Features that don't serve student outcomes don't get built
@@ -82,10 +82,10 @@ We are a small team building something large. Everyone ships. Everyone solves. N
 
 ### Quarterly
 - **Camp Retrospective**: What worked, what didn't, what we're committing to next quarter. Documented publicly within the team.
-- **Student Story Session**: A real student's ALE journey is shared with the team — from enrollment to exam result. This is the most important quarterly ritual.
+- **Student Story Session**: A real student's LEA journey is shared with the team — from enrollment to exam result. This is the most important quarterly ritual.
 
 ### Ad Hoc
-- **Passer Wall**: Every time a SlateCamp student passes the ALE, their name goes on the Passer Wall. This is a team-level celebration, not a marketing event.
+- **Passer Wall**: Every time a SlateCamp student passes the LEA, their name goes on the Passer Wall. This is a team-level celebration, not a marketing event.
 
 ---
 
@@ -110,7 +110,7 @@ We are a small team building something large. Everyone ships. Everyone solves. N
 2. "What's a decision you've regretted because you didn't have enough information? How did you handle it?"
 3. "How do you know when something you built is good enough to ship?"
 4. "What does it mean to you to do good work?"
-5. "Why does the ALE matter?" (For non-architecture hires, substitute: "Why does this exam matter to the people taking it?")
+5. "Why does the LEA matter?" (For non-architecture hires, substitute: "Why does this exam matter to the people taking it?")
 
 ---
 

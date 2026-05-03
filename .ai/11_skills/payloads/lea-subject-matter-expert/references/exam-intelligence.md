@@ -1,8 +1,8 @@
-# ALE Exam Intelligence — High-Frequency Topics, Traps, and Patterns
+# LEA Exam Intelligence — High-Frequency Topics, Traps, and Patterns
 
 ---
 
-## How the ALE is Structured (Exam Day Reality)
+## How the LEA is Structured (Exam Day Reality)
 
 **Day 1 (Typically):**
 - Area A: History & Theory; Planning; Practice — multiple choice
@@ -13,7 +13,7 @@
 
 **Format:** Primarily multiple-choice items. Area C involves a design drawing/problem.
 
-**Duration:** The full ALE takes 2 days. Area C alone can run 3+ hours. Pacing is a real issue — students who cannot answer quickly on Area C drawing problems run out of time.
+**Duration:** The full LEA takes 2 days. Area C alone can run 3+ hours. Pacing is a real issue — students who cannot answer quickly on Area C drawing problems run out of time.
 
 **Total items:** Approximately 500 points across all areas.
 
@@ -218,7 +218,7 @@ Practice drawing a full schematic floor plan in under 90 minutes. The exam does 
 
 | Item | Value | Source |
 |---|---|---|
-| ALE passing grade | 70% GWA | RA 9266 Sec. 15 |
+| LEA passing grade | 70% GWA | RA 9266 Sec. 15 |
 | Minimum passing per subject | 50% | RA 9266 Sec. 15 |
 | DAE required | 2 years | RA 9266 Sec. 13 |
 | Masters credits toward DAE | 1 year | RA 9266 Sec. 13 |
@@ -242,7 +242,7 @@ Practice drawing a full schematic floor plan in under 90 minutes. The exam does 
 
 ## Retaker Profile — Why Students Fail the Second Time
 
-Based on ALE performance patterns:
+Based on LEA performance patterns:
 
 **Pattern 1: Over-reliance on memorization without understanding.**
 Retakers often memorize code values but cannot apply them. The exam tests application, not recitation.

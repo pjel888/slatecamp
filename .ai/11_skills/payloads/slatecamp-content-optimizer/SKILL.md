@@ -1,7 +1,7 @@
 ---
 name: slatecamp-content-optimizer
 description: >
-  Rewrite and optimize SlateCamp ALE wiki articles and linked questions at scale for maximum learning retention, comprehension, and exam performance. Combines technical accuracy verification (via SME standards), learning science design (retrieval practice, cognitive load, transfer), and human voice (real-world scenarios, practice stories, relatable stakes). Designed for batch processing 500+ articles and 7000+ questions. Use when the user asks to rewrite, edit, improve, or finalize any SlateCamp content after the flagging pass is complete.
+  Rewrite and optimize SlateCamp LEA wiki articles and linked questions at scale for maximum learning retention, comprehension, and exam performance. Combines technical accuracy verification (via SME standards), learning science design (retrieval practice, cognitive load, transfer), and human voice (real-world scenarios, practice stories, relatable stakes). Designed for batch processing 500+ articles and 7000+ questions. Use when the user asks to rewrite, edit, improve, or finalize any SlateCamp content after the flagging pass is complete.
 version: 2.0.0
 author: Philip Echavez Lewis / SlateCamp
 ---
@@ -138,7 +138,7 @@ Use for topics with a clear legal basis (PD 1096 sections, RA 9266, BP 344, RA 9
 ```
 # Title
 
-## Why This Matters for the ALE
+## Why This Matters for the LEA
 One paragraph explaining how this topic appears on the exam and how much weight it carries.
 
 ## The Legal Basis
@@ -180,7 +180,7 @@ What the learner should be able to do after reading.
 ## The Core Idea
 One paragraph that defines the concept in plain language.
 
-## Why It Matters for the ALE
+## Why It Matters for the LEA
 How this topic appears on the exam. Frequency, question type, weight.
 
 ## Breakdown
@@ -376,7 +376,7 @@ Use these for emphasis, warnings, tips, and legal citations. They break up long 
 
 <Warn>A common mistake is using the 1,100mm standard for residential stairs. Group A dwellings can use 900mm minimum (Table VIII.5).</Warn>
 
-<ExamTip>Ceiling height questions appear in approximately 3 out of every 5 ALE cycles. Know the 2.40m rule cold.</ExamTip>
+<ExamTip>Ceiling height questions appear in approximately 3 out of every 5 LEA cycles. Know the 2.40m rule cold.</ExamTip>
 ```
 
 ### Law Callout (Color-Coded by Code)

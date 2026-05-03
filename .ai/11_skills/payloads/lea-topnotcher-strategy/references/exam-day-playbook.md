@@ -133,11 +133,11 @@ If you genuinely cannot narrow it down: eliminate the most extreme option (the h
 
 ---
 
-## The Mental Traits of High-Performing ALE Candidates
+## The Mental Traits of High-Performing LEA Candidates
 
 These are not personality traits you are born with. They are practiced behaviors.
 
-**Equanimity under uncertainty.** The ALE contains questions you will not know. The topnotcher treats these as calculation exercises ("given what I know, what is most likely correct?") rather than emotional events ("I don't know this, I'm going to fail").
+**Equanimity under uncertainty.** The LEA contains questions you will not know. The topnotcher treats these as calculation exercises ("given what I know, what is most likely correct?") rather than emotional events ("I don't know this, I'm going to fail").
 
 **Consistent daily contact.** Not marathon sessions. Not cramming. The topnotchers who spoke about their review described one consistent behavior: they studied something every single day. Baniago: "Just don't let a day go by without studying something." This is the compound interest of knowledge.
 

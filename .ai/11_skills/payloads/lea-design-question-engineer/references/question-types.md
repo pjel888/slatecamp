@@ -1,4 +1,4 @@
-# Question Types Reference — ALE ADSP
+# Question Types Reference — LEA ADSP
 
 Complete specification for all 8 ADSP question types. Every question you write must belong to exactly one type. This document provides the stem patterns, answer structures, distractor engineering, and examples for each.
 

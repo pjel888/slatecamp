@@ -57,8 +57,8 @@ def audit_article_deep(article_dir):
         
         # Check model_id naming convention
         if model_id and model_id.startswith("ale-"):
-            # Should follow ALE-CAT-XXX-XXX format
-            if not re.match(r'^ALE-[A-Z]+-\d+-\d+-\d+$', model_id) and not re.match(r'^ale-[a-z]+-\d+-\d+-q\d+$', model_id):
+            # Should follow LEA-CAT-XXX-XXX format
+            if not re.match(r'^LEA-[A-Z]+-\d+-\d+-\d+$', model_id) and not re.match(r'^ale-[a-z]+-\d+-\d+-q\d+$', model_id):
                 issues.append(f"  {qid[:8]}... NON-STANDARD model_id: {model_id}")
         
         # Check bloom level

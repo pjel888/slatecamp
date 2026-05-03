@@ -1,4 +1,4 @@
-# Graph-Based Learning Architecture for a Philippine Architecture Licensure Exam Review App
+# Graph-Based Learning Architecture for a Philippine Licensure Examination for Architects Review App
 
 ## Executive summary
 

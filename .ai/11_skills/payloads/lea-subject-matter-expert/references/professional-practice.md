@@ -90,7 +90,7 @@ e. No conviction of crime involving moral turpitude
 3. Urban Design and Architectural Interiors
 4. Architectural Design and Site Planning
 
-**Note on current syllabi:** The PRBoA issued updated syllabi that reorganized these into 3 areas (A, B, C) as detailed in the ALE syllabus reference. The Board may revise subjects for technological advancements.
+**Note on current syllabi:** The PRBoA issued updated syllabi that reorganized these into 3 areas (A, B, C) as detailed in the LEA syllabus reference. The Board may revise subjects for technological advancements.
 
 **Passing Standard (Section 15):**
 - Weighted average of **70%** or above
@@ -111,7 +111,7 @@ e. No conviction of crime involving moral turpitude
 
 ### Article IV: Reciprocity (Foreign Architects)
 
-- Foreigners may take the ALE only if their country admits Filipino architects to the same profession without restriction or on terms of equality
+- Foreigners may take the LEA only if their country admits Filipino architects to the same profession without restriction or on terms of equality
 - Upon issuance of temporary/special permit, the foreign national may become a UAP member
 
 ---

@@ -19,7 +19,7 @@ If you are uncertain:
 - Add: `<!-- VERIFY: [law] section number for [provision] -->`
 - Mark the content with: `**[Verify against primary source]**`
 
-A wrong section number in SlateCamp content will cause a student to cite the wrong provision on the ALE. That is a direct path to a failed exam.
+A wrong section number in SlateCamp content will cause a student to cite the wrong provision on the LEA. That is a direct path to a failed exam.
 
 ---
 
@@ -39,9 +39,9 @@ Before citing any section number in wiki content, EI prompts, quiz questions, or
 
 The **original PD 1096** (the decree) and the **2004 Revised IRR** use DIFFERENT numbering systems. This is the #1 source of citation errors.
 
-### 2004 Revised IRR Rule Structure (AUTHORITATIVE for the ALE)
+### 2004 Revised IRR Rule Structure (AUTHORITATIVE for the LEA)
 
-The ALE tests based on the **2004 Revised IRR**, not the original 1977 PD 1096 text. The IRR rule structure is:
+The LEA tests based on the **2004 Revised IRR**, not the original 1977 PD 1096 text. The IRR rule structure is:
 
 | Rule    | Title                                        | Key Sections (IRR)         |
 |---------|----------------------------------------------|----------------------------|
@@ -134,8 +134,8 @@ Use the law name only: **"PD 1096 requires..."** or **"Under BP 344..."**
 ### For quiz questions and EI prompts:
 **NEVER put an unverified section number in an answer option or rationale.** If students memorize a wrong section number from SlateCamp, they will get it wrong on the exam.
 
-### When the ALE open-book material is referenced:
-Always say: **"Rules VII and VIII of the 2004 Revised IRR of PD 1096"** — this is the exact phrasing used in the ALE Instructions to Examinees.
+### When the LEA open-book material is referenced:
+Always say: **"Rules VII and VIII of the 2004 Revised IRR of PD 1096"** — this is the exact phrasing used in the LEA Instructions to Examinees.
 
 ---
 
@@ -154,7 +154,7 @@ Always say: **"Rules VII and VIII of the 2004 Revised IRR of PD 1096"** — this
 ## Operating Rules
 
 1. **Never invent a section number.** If you cannot trace it to a primary document, do not cite it.
-2. **The 2004 Revised IRR numbering governs for the ALE**, not the original 1977 PD 1096 chapter numbers.
+2. **The 2004 Revised IRR numbering governs for the LEA**, not the original 1977 PD 1096 chapter numbers.
 3. **Rule numbers in the IRR do not always match chapter numbers in the decree.** Always verify.
 4. **When two sources conflict, the more recent IRR governs** (e.g., 2024 IRR of BP 344 supersedes 2013 Illustrated IRR).
 5. **Mark anything uncertain.** It is better to say "verify against primary source" than to publish a wrong section number.

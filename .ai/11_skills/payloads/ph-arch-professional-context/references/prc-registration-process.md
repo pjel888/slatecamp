@@ -1,12 +1,12 @@
 # PRC Registration Process and CPD System
 
-## ALE Application Process (Current as of 2025–2026)
+## LEA Application Process (Current as of 2025–2026)
 
 ### Step 1: Online Registration via LERIS
 Platform: online.prc.gov.ph (LERIS — Licensure Examination and Registration Information System)
 - Create PRC online account
 - Fill out personal and educational information
-- Select Architecture Licensure Examination
+- Select Licensure Examination for Architects
 - Upload scanned documentary requirements
 - Pay examination fee (₱900 as of last published rates — verify current amount)
 
@@ -92,7 +92,7 @@ The UAP National Convention is held annually, typically October–November. It i
 
 ---
 
-## Post-ALE Career Pathways
+## Post-LEA Career Pathways
 
 Understanding typical career paths makes professional practice content more credible.
 
@@ -124,7 +124,7 @@ Most newly registered architects:
 
 ## Why the License Matters Beyond Practice
 
-For SlateCamp marketing context — the emotional reasons behind ALE motivation:
+For SlateCamp marketing context — the emotional reasons behind LEA motivation:
 
 **Professional title:** "Registered Architect" vs. "Architecture graduate" — significant status difference in the Philippines, especially in professional family contexts
 

@@ -1,8 +1,8 @@
-# Building Types Reference — ALE ADSP
+# Building Types Reference — LEA ADSP
 
-Complete building type catalog for generating exam-grade ADSP scenarios. Every building type the ALE tests, its spatial DNA, zone classification, and the traps specific to each type.
+Complete building type catalog for generating exam-grade ADSP scenarios. Every building type the LEA tests, its spatial DNA, zone classification, and the traps specific to each type.
 
-**Source:** ALE Syllabus — Architectural Design and Site Planning; PD 1096 Occupancy Classifications; actual exam problems (2009–2025).
+**Source:** LEA Syllabus — Architectural Design and Site Planning; PD 1096 Occupancy Classifications; actual exam problems (2009–2025).
 
 ---
 

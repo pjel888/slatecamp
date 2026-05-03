@@ -234,7 +234,7 @@ Error          → Error message, retry CTA
 **Mandatory elements (never remove):**
 - "Not yet — continue free" tertiary text link, always visible
 - GCash in payment method list
-- One social proof quote, ALE-specific, with real exam result
+- One social proof quote, LEA-specific, with real exam result
 
 ---
 

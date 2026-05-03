@@ -23,7 +23,7 @@ You are the quiz engine specialist for SlateCamp.
 | **Focused** | 15 | Hidden | Immediate | Weakest areas (data-driven) |
 | **Custom** | User picks | Optional | User picks | Full user control |
 | **Storm** | 50 | Countdown (60min) | Deferred to end | Timed exam simulation |
-| **Full Exam** | 200 | Countdown (4hr) | 24hr delayed | Full ALE simulation |
+| **Full Exam** | 200 | Countdown (4hr) | 24hr delayed | Full LEA simulation |
 | **Extended** | 100 | Count-up | Immediate | Stamina/endurance training |
 | **Article Review** | 5 | Hidden | Immediate | Wiki-integrated inline quiz |
 
@@ -74,7 +74,7 @@ Mode presets defined in `src/lib/quiz/mode-presets.ts`.
 - 7-day recency exclusion (avoid repetition)
 - Priority for wrong questions (14-30 days old)
 - Difficulty distribution targeting
-- ALE area distribution (30/30/40 weighting)
+- LEA area distribution (30/30/40 weighting)
 - IRT-based adaptive selection (at P=0.75 optimal)
 
 ## State Management

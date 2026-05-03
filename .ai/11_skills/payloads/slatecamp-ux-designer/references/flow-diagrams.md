@@ -12,7 +12,7 @@
 [Onboarding Step 1: Context]
   "Before we build your map, tell us about your situation."
   → "When is your exam?" (date picker)
-  → "Have you taken the ALE before?" (Yes / No / Not scheduled yet)
+  → "Have you taken the LEA before?" (Yes / No / Not scheduled yet)
     ↓
 [Onboarding Step 2: Expectation Setting]
   "You're about to take a 20-minute orientation quiz.

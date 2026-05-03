@@ -15,12 +15,12 @@ Revenue architecture is not just pricing. It's the entire system of: **who pays,
 
 ## SlateCamp Revenue Context
 
-**The core product promise:** *"Know you'll win."* — ALE candidates pay for certainty, not content.
+**The core product promise:** *"Know you'll win."* — LEA candidates pay for certainty, not content.
 
 **The asymmetry to exploit:** Students massively underweight the cost of failure (failed board exam = 6+ months delayed career, social shame, lost income) vs. the cost of SlateCamp Pro. This asymmetry is SlateCamp's pricing power.
 
 **Market realities (Philippines, 2025–2026):**
-- ALE candidate pool: ~8,000–12,000 per exam cycle
+- LEA candidate pool: ~8,000–12,000 per exam cycle
 - Two exam cycles per year → ~16,000–24,000 annual addressable paying candidates
 - Filipino students price-compare actively but will pay premium for proven outcomes
 - Mobile payment penetration: GCash/Maya dominant — minimize friction in payment flow
@@ -104,7 +104,7 @@ Upsell to the highest-intent segment.
 Topnotcher Track — ₱4,999–₱9,999 (one-time or installment)
 - Everything in Pro Exam Pass
 - 1:1 AI study coach (personalized weak-area curriculum)
-- Cohort accountability group (8–12 people, ALE exam-aligned)
+- Cohort accountability group (8–12 people, LEA exam-aligned)
 - Guaranteed score improvement or money back
 - "Topnotcher Pledge" — featured in SlateCamp if you rank Top 10
 - Live monthly Q&A with licensed architect mentors
@@ -120,7 +120,7 @@ Platform play: let licensed architects, top-passers, and review experts sell sup
 - Generates revenue even from free-tier users
 
 ### Stream 5: Placement & Career Layer (Phase 3–4)
-After passing the ALE, architects need: firms to join, PRC documentation help, CPD units, job boards. SlateCamp becomes the professional layer.
+After passing the LEA, architects need: firms to join, PRC documentation help, CPD units, job boards. SlateCamp becomes the professional layer.
 
 - Architect job placement board: ₱5,000–₱15,000/posting (employer-side)
 - CPD course partnerships: revenue share with CPD providers
@@ -176,7 +176,7 @@ This gate works because:
 
 5. **The ₱99 trial trick:** Offer 7-day Pro trial for ₱99. Dramatically lowers friction. Converts to full Pro at higher rates than a free trial because ₱99 signals commitment.
 
-6. **Exam season urgency pricing:** Raise prices 15–25% in the final 8 weeks before the ALE. Early buyers saved money; late buyers pay urgency premium. Announce it in advance.
+6. **Exam season urgency pricing:** Raise prices 15–25% in the final 8 weeks before the LEA. Early buyers saved money; late buyers pay urgency premium. Announce it in advance.
 
 ---
 
