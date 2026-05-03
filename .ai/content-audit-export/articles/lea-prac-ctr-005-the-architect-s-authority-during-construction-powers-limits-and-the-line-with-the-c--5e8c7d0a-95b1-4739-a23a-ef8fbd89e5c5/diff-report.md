@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor
 
-Generated: 2026-05-03T11:50:14.795Z
+Generated: 2026-05-03T13:45:28.141Z
 Article ID: 5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5
 Changed: true
 Safe to push locally: true

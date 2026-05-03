@@ -1,6 +1,6 @@
 # Content Diff Report: lea-strc-002-04-core-concept
 
-Generated: 2026-05-03T11:49:56.081Z
+Generated: 2026-05-03T13:45:10.222Z
 Article ID: 7680a85a-b8ee-4b09-a782-00d77fa5c007
 Changed: true
 Safe to push locally: true

@@ -1,6 +1,6 @@
 # Content Diff Report: pd-1096-rule-vii-occupancy
 
-Generated: 2026-05-03T11:49:13.698Z
+Generated: 2026-05-03T13:44:33.622Z
 Article ID: 9085e0d8-3498-4d3b-b991-46e54d94bde0
 Changed: true
 Safe to push locally: true

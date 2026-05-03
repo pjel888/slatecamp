@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.653Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:d8bd89a4b29971e5130070f3e65d7bc654f7bd89058f1c7bcf7bebd0aa68df75",
-  "normalized_content_hash": "3b8260b8ce44ea20705428f9f126db8ef9a99b17652485780c8ac48d4e6c531a",
+  "normalized_content_hash": "423648add49b419520c83e61ce49088b293047e169e8ec7aa73b416d321c7fce",
   "ui_block_count": 8,
   "total_blocks": 8,
   "blocks": [
@@ -12,15 +12,15 @@
       "block_id": "ui_0001",
       "block_type": "mdx_component",
       "component_name": "Example",
-      "raw": "<Example>\n**Scenario 1: Slab reinforcement requiring 500 meters of 12 mm rebar**\n\n**Step 1: Determine unit weight for 12 mm rebar**\n\nUsing the formula: Weight per meter = D² ÷ 162.5 = (12)² ÷ 162.5 = 144 ÷ 162.5 = 0.886 kg/m ≈ 0.88 kg/m\n\n**Step 2: Calculate total weight**\n\nTotal weight = Length × weight per meter = 500 m × 0.88 kg/m = 440 kg\n\n**Step 3: Convert to number of standard bars (12 m per bar, no waste)**\n\nNumber of bars = 500 m ÷ 12 m/bar = 41.67 bars ≈ 42 bars (round up)\n\n**Step 4: Estimate cost (assuming 60 pesos per kg in Philippine market)**\n\nCost = 440 kg × 60 pesos/kg = 26,400 pesos\n\n**Answer: 440 kg total rebar, 42 standard 12 m bars, approximately 26,400 pesos**\n</Example>",
+      "raw": "<Example>\n**Scenario 1: Slab reinforcement requiring 500 meters of 12 mm rebar**\n\n**Step 1: Determine unit weight for 12 mm rebar**\n\nUsing the formula: Weight per meter = D\u00b2 \u00f7 162.5 = (12)\u00b2 \u00f7 162.5 = 144 \u00f7 162.5 = 0.886 kg/m \u2248 0.88 kg/m\n\n**Step 2: Calculate total weight**\n\nTotal weight = Length \u00d7 weight per meter = 500 m \u00d7 0.88 kg/m = 440 kg\n\n**Step 3: Convert to number of standard bars (12 m per bar, no waste)**\n\nNumber of bars = 500 m \u00f7 12 m/bar = 41.67 bars \u2248 42 bars (round up)\n\n**Step 4: Estimate cost (assuming 60 pesos per kg in Philippine market)**\n\nCost = 440 kg \u00d7 60 pesos/kg = 26,400 pesos\n\n**Answer: 440 kg total rebar, 42 standard 12 m bars, approximately 26,400 pesos**\n</Example>",
       "raw_hash": "sha256:4cd4faf56b1d38a0301d1909eec7c1e43904ab1db38a0da27edf7ce206b62248",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Example\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Scenario 1: Slab reinforcement requiring 500 meters of 12 mm rebar** **Step 1: Determine unit weight for 12 mm rebar** Using the formula: Weight per meter = D² ÷ 162.5 = (12)² ÷ 162.5 = 144 ÷ 162.5 = 0.886 kg/m ≈ 0.88 kg/m **Step 2: Calculate total weight** Total weight = Length × weight per meter = 500 m × 0.88 kg/m = 440 kg **Step 3: Convert to number of standard bars (12 m per bar, no waste)** Number of bars = 500 m ÷ 12 m/bar = 41.67 bars ≈ 42 bars (round up) **Step 4: Estimate cost (assum\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Example\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Scenario 1: Slab reinforcement requiring 500 meters of 12 mm rebar** **Step 1: Determine unit weight for 12 mm rebar** Using the formula: Weight per meter = D\u00b2 \u00f7 162.5 = (12)\u00b2 \u00f7 162.5 = 144 \u00f7 162.5 = 0.886 kg/m \u2248 0.88 kg/m **Step 2: Calculate total weight** Total weight = Length \u00d7 weight per meter = 500 m \u00d7 0.88 kg/m = 440 kg **Step 3: Convert to number of standard bars (12 m per bar, no waste)** Number of bars = 500 m \u00f7 12 m/bar = 41.67 bars \u2248 42 bars (round up) **Step 4: Estimate cost (assum\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:830248a1561a7cbc970b1ecf0d90c6ecfff0583739de13cb4fba44278a3a6b62",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "\n**Scenario 1: Slab reinforcement requiring 500 meters of 12 mm rebar**\n\n**Step 1: Determine unit weight for 12 mm rebar**\n\nUsing the formula: Weight per meter = D² ÷ 162.5 = (12)² ÷ 162.5 = 144 ÷ 162.5 = 0.886 kg/m ≈ 0.88 kg/m\n\n**Step 2: Calculate total weight**\n\nTotal weight = Length × weight per meter = 500 m × 0.88 kg/m = 440 kg\n\n**Step 3: Convert to number of standard bars (12 m per bar, no waste)**\n\nNumber of bars = 500 m ÷ 12 m/bar = 41.67 bars ≈ 42 bars (round up)\n\n**Step 4: Estimate cost (assuming 60 pesos per kg in Philippine market)**\n\nCost = 440 kg × 60 pesos/kg = 26,400 pesos\n\n**Answer: 440 kg total rebar, 42 standard 12 m bars, approximately 26,400 pesos**\n",
-      "children_text": "**Scenario 1: Slab reinforcement requiring 500 meters of 12 mm rebar** **Step 1: Determine unit weight for 12 mm rebar** Using the formula: Weight per meter = D² ÷ 162.5 = (12)² ÷ 162.5 = 144 ÷ 162.5 = 0.886 kg/m ≈ 0.88 kg/m **Step 2: Calculate total weight** Total weight = Length × weight per meter = 500 m × 0.88 kg/m = 440 kg **Step 3: Convert to number of standard bars (12 m per bar, no waste)** Number of bars = 500 m ÷ 12 m/bar = 41.67 bars ≈ 42 bars (round up) **Step 4: Estimate cost (assum",
+      "children_raw": "\n**Scenario 1: Slab reinforcement requiring 500 meters of 12 mm rebar**\n\n**Step 1: Determine unit weight for 12 mm rebar**\n\nUsing the formula: Weight per meter = D\u00b2 \u00f7 162.5 = (12)\u00b2 \u00f7 162.5 = 144 \u00f7 162.5 = 0.886 kg/m \u2248 0.88 kg/m\n\n**Step 2: Calculate total weight**\n\nTotal weight = Length \u00d7 weight per meter = 500 m \u00d7 0.88 kg/m = 440 kg\n\n**Step 3: Convert to number of standard bars (12 m per bar, no waste)**\n\nNumber of bars = 500 m \u00f7 12 m/bar = 41.67 bars \u2248 42 bars (round up)\n\n**Step 4: Estimate cost (assuming 60 pesos per kg in Philippine market)**\n\nCost = 440 kg \u00d7 60 pesos/kg = 26,400 pesos\n\n**Answer: 440 kg total rebar, 42 standard 12 m bars, approximately 26,400 pesos**\n",
+      "children_text": "**Scenario 1: Slab reinforcement requiring 500 meters of 12 mm rebar** **Step 1: Determine unit weight for 12 mm rebar** Using the formula: Weight per meter = D\u00b2 \u00f7 162.5 = (12)\u00b2 \u00f7 162.5 = 144 \u00f7 162.5 = 0.886 kg/m \u2248 0.88 kg/m **Step 2: Calculate total weight** Total weight = Length \u00d7 weight per meter = 500 m \u00d7 0.88 kg/m = 440 kg **Step 3: Convert to number of standard bars (12 m per bar, no waste)** Number of bars = 500 m \u00f7 12 m/bar = 41.67 bars \u2248 42 bars (round up) **Step 4: Estimate cost (assum",
       "start_offset": 2378,
       "end_offset": 3076,
       "line_start": 30,
@@ -34,15 +34,15 @@
       "block_id": "ui_0002",
       "block_type": "mdx_component",
       "component_name": "Example",
-      "raw": "<Example>\n**Scenario 2: Column reinforcement requiring 300 meters of 20 mm rebar plus splices (30% waste factor for lapping)**\n\n**Step 1: Design length with splice waste**\n\nDesign length = 300 m (per drawing)\n\nTotal length with 30% waste: 300 m × 1.30 = 390 m\n\n**Step 2: Determine weight per meter for 20 mm rebar**\n\nWeight per meter = (20)² ÷ 162.5 = 400 ÷ 162.5 = 2.462 kg/m ≈ 2.46 kg/m\n\n**Step 3: Calculate total weight**\n\nTotal weight = 390 m × 2.46 kg/m = 959.4 kg ≈ 960 kg\n\n**Step 4: Number of standard 12 m bars**\n\nNumber of bars = 390 m ÷ 12 m/bar = 32.5 bars ≈ 33 bars\n\n**Answer: 960 kg rebar required (design 300 m + 30% splice = 390 m total), 33 standard bars**\n</Example>",
+      "raw": "<Example>\n**Scenario 2: Column reinforcement requiring 300 meters of 20 mm rebar plus splices (30% waste factor for lapping)**\n\n**Step 1: Design length with splice waste**\n\nDesign length = 300 m (per drawing)\n\nTotal length with 30% waste: 300 m \u00d7 1.30 = 390 m\n\n**Step 2: Determine weight per meter for 20 mm rebar**\n\nWeight per meter = (20)\u00b2 \u00f7 162.5 = 400 \u00f7 162.5 = 2.462 kg/m \u2248 2.46 kg/m\n\n**Step 3: Calculate total weight**\n\nTotal weight = 390 m \u00d7 2.46 kg/m = 959.4 kg \u2248 960 kg\n\n**Step 4: Number of standard 12 m bars**\n\nNumber of bars = 390 m \u00f7 12 m/bar = 32.5 bars \u2248 33 bars\n\n**Answer: 960 kg rebar required (design 300 m + 30% splice = 390 m total), 33 standard bars**\n</Example>",
       "raw_hash": "sha256:d5d1856081a2395f7f043c9267aac8a9cba224989d3ada6a873b8584fd59b63a",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Example\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Scenario 2: Column reinforcement requiring 300 meters of 20 mm rebar plus splices (30% waste factor for lapping)** **Step 1: Design length with splice waste** Design length = 300 m (per drawing) Total length with 30% waste: 300 m × 1.30 = 390 m **Step 2: Determine weight per meter for 20 mm rebar** Weight per meter = (20)² ÷ 162.5 = 400 ÷ 162.5 = 2.462 kg/m ≈ 2.46 kg/m **Step 3: Calculate total weight** Total weight = 390 m × 2.46 kg/m = 959.4 kg ≈ 960 kg **Step 4: Number of standard 12 m bars\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Example\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Scenario 2: Column reinforcement requiring 300 meters of 20 mm rebar plus splices (30% waste factor for lapping)** **Step 1: Design length with splice waste** Design length = 300 m (per drawing) Total length with 30% waste: 300 m \u00d7 1.30 = 390 m **Step 2: Determine weight per meter for 20 mm rebar** Weight per meter = (20)\u00b2 \u00f7 162.5 = 400 \u00f7 162.5 = 2.462 kg/m \u2248 2.46 kg/m **Step 3: Calculate total weight** Total weight = 390 m \u00d7 2.46 kg/m = 959.4 kg \u2248 960 kg **Step 4: Number of standard 12 m bars\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:445bb0cb64e425ef4d1a7ebf29572cac97255b803c7145ffe17932df07092682",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "\n**Scenario 2: Column reinforcement requiring 300 meters of 20 mm rebar plus splices (30% waste factor for lapping)**\n\n**Step 1: Design length with splice waste**\n\nDesign length = 300 m (per drawing)\n\nTotal length with 30% waste: 300 m × 1.30 = 390 m\n\n**Step 2: Determine weight per meter for 20 mm rebar**\n\nWeight per meter = (20)² ÷ 162.5 = 400 ÷ 162.5 = 2.462 kg/m ≈ 2.46 kg/m\n\n**Step 3: Calculate total weight**\n\nTotal weight = 390 m × 2.46 kg/m = 959.4 kg ≈ 960 kg\n\n**Step 4: Number of standard 12 m bars**\n\nNumber of bars = 390 m ÷ 12 m/bar = 32.5 bars ≈ 33 bars\n\n**Answer: 960 kg rebar required (design 300 m + 30% splice = 390 m total), 33 standard bars**\n",
-      "children_text": "**Scenario 2: Column reinforcement requiring 300 meters of 20 mm rebar plus splices (30% waste factor for lapping)** **Step 1: Design length with splice waste** Design length = 300 m (per drawing) Total length with 30% waste: 300 m × 1.30 = 390 m **Step 2: Determine weight per meter for 20 mm rebar** Weight per meter = (20)² ÷ 162.5 = 400 ÷ 162.5 = 2.462 kg/m ≈ 2.46 kg/m **Step 3: Calculate total weight** Total weight = 390 m × 2.46 kg/m = 959.4 kg ≈ 960 kg **Step 4: Number of standard 12 m bars",
+      "children_raw": "\n**Scenario 2: Column reinforcement requiring 300 meters of 20 mm rebar plus splices (30% waste factor for lapping)**\n\n**Step 1: Design length with splice waste**\n\nDesign length = 300 m (per drawing)\n\nTotal length with 30% waste: 300 m \u00d7 1.30 = 390 m\n\n**Step 2: Determine weight per meter for 20 mm rebar**\n\nWeight per meter = (20)\u00b2 \u00f7 162.5 = 400 \u00f7 162.5 = 2.462 kg/m \u2248 2.46 kg/m\n\n**Step 3: Calculate total weight**\n\nTotal weight = 390 m \u00d7 2.46 kg/m = 959.4 kg \u2248 960 kg\n\n**Step 4: Number of standard 12 m bars**\n\nNumber of bars = 390 m \u00f7 12 m/bar = 32.5 bars \u2248 33 bars\n\n**Answer: 960 kg rebar required (design 300 m + 30% splice = 390 m total), 33 standard bars**\n",
+      "children_text": "**Scenario 2: Column reinforcement requiring 300 meters of 20 mm rebar plus splices (30% waste factor for lapping)** **Step 1: Design length with splice waste** Design length = 300 m (per drawing) Total length with 30% waste: 300 m \u00d7 1.30 = 390 m **Step 2: Determine weight per meter for 20 mm rebar** Weight per meter = (20)\u00b2 \u00f7 162.5 = 400 \u00f7 162.5 = 2.462 kg/m \u2248 2.46 kg/m **Step 3: Calculate total weight** Total weight = 390 m \u00d7 2.46 kg/m = 959.4 kg \u2248 960 kg **Step 4: Number of standard 12 m bars",
       "start_offset": 3078,
       "end_offset": 3761,
       "line_start": 52,
@@ -56,15 +56,15 @@
       "block_id": "ui_0003",
       "block_type": "mdx_component",
       "component_name": "Tip",
-      "raw": "<Tip>\n**Memory aid**: The formula D² ÷ 162.5 is universal for all rebar sizes. The constant 162.5 encodes steel density and unit conversions. For quick estimation, remember key weights: 12 mm ≈ 0.9 kg/m, 16 mm ≈ 1.6 kg/m, 20 mm ≈ 2.5 kg/m. Standard bars are 12 meters long.\n</Tip>",
+      "raw": "<Tip>\n**Memory aid**: The formula D\u00b2 \u00f7 162.5 is universal for all rebar sizes. The constant 162.5 encodes steel density and unit conversions. For quick estimation, remember key weights: 12 mm \u2248 0.9 kg/m, 16 mm \u2248 1.6 kg/m, 20 mm \u2248 2.5 kg/m. Standard bars are 12 meters long.\n</Tip>",
       "raw_hash": "sha256:d52b2afdbb09dcf585acab2dbbb0fec3f741dc1c84e193063b5c2eab12bcc29a",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory aid**: The formula D² ÷ 162.5 is universal for all rebar sizes. The constant 162.5 encodes steel density and unit conversions. For quick estimation, remember key weights: 12 mm ≈ 0.9 kg/m, 16 mm ≈ 1.6 kg/m, 20 mm ≈ 2.5 kg/m. Standard bars are 12 meters long.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Memory aid**: The formula D\u00b2 \u00f7 162.5 is universal for all rebar sizes. The constant 162.5 encodes steel density and unit conversions. For quick estimation, remember key weights: 12 mm \u2248 0.9 kg/m, 16 mm \u2248 1.6 kg/m, 20 mm \u2248 2.5 kg/m. Standard bars are 12 meters long.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:f2c16e22dd46d005977d2e42cbe10b4a8bf66ec7ac27d40126c567f28227c51d",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "\n**Memory aid**: The formula D² ÷ 162.5 is universal for all rebar sizes. The constant 162.5 encodes steel density and unit conversions. For quick estimation, remember key weights: 12 mm ≈ 0.9 kg/m, 16 mm ≈ 1.6 kg/m, 20 mm ≈ 2.5 kg/m. Standard bars are 12 meters long.\n",
-      "children_text": "**Memory aid**: The formula D² ÷ 162.5 is universal for all rebar sizes. The constant 162.5 encodes steel density and unit conversions. For quick estimation, remember key weights: 12 mm ≈ 0.9 kg/m, 16 mm ≈ 1.6 kg/m, 20 mm ≈ 2.5 kg/m. Standard bars are 12 meters long.",
+      "children_raw": "\n**Memory aid**: The formula D\u00b2 \u00f7 162.5 is universal for all rebar sizes. The constant 162.5 encodes steel density and unit conversions. For quick estimation, remember key weights: 12 mm \u2248 0.9 kg/m, 16 mm \u2248 1.6 kg/m, 20 mm \u2248 2.5 kg/m. Standard bars are 12 meters long.\n",
+      "children_text": "**Memory aid**: The formula D\u00b2 \u00f7 162.5 is universal for all rebar sizes. The constant 162.5 encodes steel density and unit conversions. For quick estimation, remember key weights: 12 mm \u2248 0.9 kg/m, 16 mm \u2248 1.6 kg/m, 20 mm \u2248 2.5 kg/m. Standard bars are 12 meters long.",
       "start_offset": 5774,
       "end_offset": 6054,
       "line_start": 111,
@@ -78,19 +78,19 @@
       "block_id": "ui_0004",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Using 160 or other approximations instead of 162.5 in the denominator\" correction=\"Always use 162.5 for accuracy. Approximations like 160 introduce 1–2% error across large projects.\" />",
+      "raw": "<WikiMistakeCard mistake=\"Using 160 or other approximations instead of 162.5 in the denominator\" correction=\"Always use 162.5 for accuracy. Approximations like 160 introduce 1\u20132% error across large projects.\" />",
       "raw_hash": "sha256:b4ab36e5346be1c699e2b883b01953d04c49fe372f0af086cdeedb24c90c04de",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Using 160 or other approximations instead of 162.5 in the denominator\", correction=\"Always use 162.5 for accuracy. Approximations like 160 introduce 1–2% error across large projects.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Using 160 or other approximations instead of 162.5 in the denominator\", correction=\"Always use 162.5 for accuracy. Approximations like 160 introduce 1\u20132% error across large projects.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:c6c169f7b27597fcceb79a3941ba23cbf010e51654cd1cce6275da7a59cec5e6",
       "props": {
         "mistake": "Using 160 or other approximations instead of 162.5 in the denominator",
-        "correction": "Always use 162.5 for accuracy. Approximations like 160 introduce 1–2% error across large projects."
+        "correction": "Always use 162.5 for accuracy. Approximations like 160 introduce 1\u20132% error across large projects."
       },
       "props_json": {
         "mistake": "Using 160 or other approximations instead of 162.5 in the denominator",
-        "correction": "Always use 162.5 for accuracy. Approximations like 160 introduce 1–2% error across large projects."
+        "correction": "Always use 162.5 for accuracy. Approximations like 160 introduce 1\u20132% error across large projects."
       },
-      "props_text": "mistake=\"Using 160 or other approximations instead of 162.5 in the denominator\" correction=\"Always use 162.5 for accuracy. Approximations like 160 introduce 1–2% error across large projects.\"",
+      "props_text": "mistake=\"Using 160 or other approximations instead of 162.5 in the denominator\" correction=\"Always use 162.5 for accuracy. Approximations like 160 introduce 1\u20132% error across large projects.\"",
       "children_raw": null,
       "children_text": null,
       "start_offset": 6076,
@@ -106,19 +106,19 @@
       "block_id": "ui_0005",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Forgetting to apply the splice/waste factor\" correction=\"Design length on drawings does NOT include splice waste. Multiply by 1.30–1.50 depending on the specified lap length and cutting waste.\" />",
+      "raw": "<WikiMistakeCard mistake=\"Forgetting to apply the splice/waste factor\" correction=\"Design length on drawings does NOT include splice waste. Multiply by 1.30\u20131.50 depending on the specified lap length and cutting waste.\" />",
       "raw_hash": "sha256:d78e660e74924cb9261f15250b60eb6672c98842db4b0e22ace1011a19fef3be",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Forgetting to apply the splice/waste factor\", correction=\"Design length on drawings does NOT include splice waste. Multiply by 1.30–1.50 depending on the specified lap length and cutting waste.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Forgetting to apply the splice/waste factor\", correction=\"Design length on drawings does NOT include splice waste. Multiply by 1.30\u20131.50 depending on the specified lap length and cutting waste.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:6efba84fe3d95983dde8f255f4c74af3d9d95ee6c31ebcf5ab0286c1be1220e9",
       "props": {
         "mistake": "Forgetting to apply the splice/waste factor",
-        "correction": "Design length on drawings does NOT include splice waste. Multiply by 1.30–1.50 depending on the specified lap length and cutting waste."
+        "correction": "Design length on drawings does NOT include splice waste. Multiply by 1.30\u20131.50 depending on the specified lap length and cutting waste."
       },
       "props_json": {
         "mistake": "Forgetting to apply the splice/waste factor",
-        "correction": "Design length on drawings does NOT include splice waste. Multiply by 1.30–1.50 depending on the specified lap length and cutting waste."
+        "correction": "Design length on drawings does NOT include splice waste. Multiply by 1.30\u20131.50 depending on the specified lap length and cutting waste."
       },
-      "props_text": "mistake=\"Forgetting to apply the splice/waste factor\" correction=\"Design length on drawings does NOT include splice waste. Multiply by 1.30–1.50 depending on the specified lap length and cutting waste.\"",
+      "props_text": "mistake=\"Forgetting to apply the splice/waste factor\" correction=\"Design length on drawings does NOT include splice waste. Multiply by 1.30\u20131.50 depending on the specified lap length and cutting waste.\"",
       "children_raw": null,
       "children_text": null,
       "start_offset": 6289,
@@ -134,19 +134,19 @@
       "block_id": "ui_0006",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Using the weight per bar instead of weight per meter when the total length is given\" correction=\"When you have total meters of rebar, use weight per meter directly: Total meters × kg/m. Do NOT divide by 12 first.\" />",
+      "raw": "<WikiMistakeCard mistake=\"Using the weight per bar instead of weight per meter when the total length is given\" correction=\"When you have total meters of rebar, use weight per meter directly: Total meters \u00d7 kg/m. Do NOT divide by 12 first.\" />",
       "raw_hash": "sha256:2f469c5def03b5a4e44b2782c74d6acf2e54188737b05f32bbadafb1b33323b5",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Using the weight per bar instead of weight per meter when the total length is given\", correction=\"When you have total meters of rebar, use weight per meter directly: Total meters × kg/m. Do NOT divide by 12 first.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Using the weight per bar instead of weight per meter when the total length is given\", correction=\"When you have total meters of rebar, use weight per meter directly: Total meters \u00d7 kg/m. Do NOT divide by 12 first.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:4d8c1372a6614de1d4383fbdade22e6bc1330362147931e4117a5500e437e1c1",
       "props": {
         "mistake": "Using the weight per bar instead of weight per meter when the total length is given",
-        "correction": "When you have total meters of rebar, use weight per meter directly: Total meters × kg/m. Do NOT divide by 12 first."
+        "correction": "When you have total meters of rebar, use weight per meter directly: Total meters \u00d7 kg/m. Do NOT divide by 12 first."
       },
       "props_json": {
         "mistake": "Using the weight per bar instead of weight per meter when the total length is given",
-        "correction": "When you have total meters of rebar, use weight per meter directly: Total meters × kg/m. Do NOT divide by 12 first."
+        "correction": "When you have total meters of rebar, use weight per meter directly: Total meters \u00d7 kg/m. Do NOT divide by 12 first."
       },
-      "props_text": "mistake=\"Using the weight per bar instead of weight per meter when the total length is given\" correction=\"When you have total meters of rebar, use weight per meter directly: Total meters × kg/m. Do NOT divide by 12 first.\"",
+      "props_text": "mistake=\"Using the weight per bar instead of weight per meter when the total length is given\" correction=\"When you have total meters of rebar, use weight per meter directly: Total meters \u00d7 kg/m. Do NOT divide by 12 first.\"",
       "children_raw": null,
       "children_text": null,
       "start_offset": 6513,
@@ -162,19 +162,19 @@
       "block_id": "ui_0007",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Assuming all bar diameters weigh the same per meter\" correction=\"Weight per meter depends on diameter squared (D²). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar.\" />",
+      "raw": "<WikiMistakeCard mistake=\"Assuming all bar diameters weigh the same per meter\" correction=\"Weight per meter depends on diameter squared (D\u00b2). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar.\" />",
       "raw_hash": "sha256:56ec2e9ecf6cf52e60919485d982de74a4ecae83d2701da8e2aac9df207e8232",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Assuming all bar diameters weigh the same per meter\", correction=\"Weight per meter depends on diameter squared (D²). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Assuming all bar diameters weigh the same per meter\", correction=\"Weight per meter depends on diameter squared (D\u00b2). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:13309226e3f12f4635f6be27b9911c40cd1083d3b74219868da184c5fe140dcc",
       "props": {
         "mistake": "Assuming all bar diameters weigh the same per meter",
-        "correction": "Weight per meter depends on diameter squared (D²). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar."
+        "correction": "Weight per meter depends on diameter squared (D\u00b2). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar."
       },
       "props_json": {
         "mistake": "Assuming all bar diameters weigh the same per meter",
-        "correction": "Weight per meter depends on diameter squared (D²). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar."
+        "correction": "Weight per meter depends on diameter squared (D\u00b2). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar."
       },
-      "props_text": "mistake=\"Assuming all bar diameters weigh the same per meter\" correction=\"Weight per meter depends on diameter squared (D²). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar.\"",
+      "props_text": "mistake=\"Assuming all bar diameters weigh the same per meter\" correction=\"Weight per meter depends on diameter squared (D\u00b2). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar.\"",
       "children_raw": null,
       "children_text": null,
       "start_offset": 6757,

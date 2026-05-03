@@ -1,10 +1,8 @@
 ## Project Management in an Architectural Firm—Scope, Schedule, Budget, and Communication Control
 
+<JSX>null</JSX>
+
 Project management is the discipline of planning, coordinating, and controlling project variables—scope, time, cost, and quality—to deliver projects successfully. Architects who manage projects well earn client loyalty, maintain profitability, and build reputation. Poor project management leads to cost overruns, missed deadlines, scope disputes, and professional liability. This article addresses project management practices specific to architectural service delivery in the Philippines, governed by Republic Act No. 9266 and the Standards of Professional Practice.
-
-## Learning Goal
-
-Apply project management principles specific to architectural service delivery in the Philippines, including scope definition via SPP Documents, schedule management, fee collection under RA 9266 Section 36, and risk management strategies.
 
 ### Project Scope Definition and Change Control
 
@@ -28,11 +26,11 @@ As outlined in SPP Document 202 (Regular Design Services), architects are typica
 
 Percentage fees align architect and client interests but require clear boundaries if the project scope expands. Lump-sum fees lock the architect's cost; if the project proves more complex, the architect absorbs cost overruns. The architect should track hours and costs throughout the project. If a lump-sum contract is used, monitoring actual hours against budgeted hours reveals whether the project is on financial track. If hours are exceeding budget, the architect can request a change order or discuss project scope adjustment.
 
-Furthermore, Republic Act No. 9266 (The Architecture Act of 2004), specifically **Section 36 (Collection of Professional Fees)**, legally mandates and protects the registered and licensed architect's right to collect remuneration for services rendered. Fee collection discipline is essential to firm profitability. Invoices should be submitted promptly; payment terms should be stated in the contract (usually net 15 or 30 days). If a client delays payment, the architect should follow up promptly. Non-payment can damage firm cash flow and project morale.
+Furthermore, Republic Act No. 9266 (The Architecture Act of 2004), specifically **Section 36 (Collection of Professional Fees)**, legally mandates and protects the registered and licensed architect's right to collect remuneration for services rendered. Fee collection discipline is essential to firm profitability. Invoices should be submitted promptly; payment terms should be stated in the contract (usually net 15 or 30 days). If a client delays payment, the architect should follow up promptly. Non-payment can damage firm cash flow and project morlea.
 
 ### Communication Management: Meetings, Decisions, and Documentation
 
-Clear communication prevents misunderstanding and protects the architect. The architect should: (1) document all design decisions and the rationale; (2) maintain meeting minutes summarizing decisions, action items, and responsible parties; (3) submit design and construction documents in clear, professional format; and (4) respond promptly to client inquiries.
+Clear communication prevents misunderstanding and protects the architect. The architect should: (1) document all design decisions and the rationlea; (2) maintain meeting minutes summarizing decisions, action items, and responsible parties; (3) submit design and construction documents in clear, professional format; and (4) respond promptly to client inquiries.
 
 Design decisions should be documented through sketches, memos, and presentation materials. If the client later claims a feature was not what they wanted, documentation showing the design decision was approved protects the architect. Meeting minutes should note attendees, topics discussed, decisions made, and next steps. Email correspondence confirming decisions creates a written record.
 
@@ -43,8 +41,6 @@ For virtual projects or remote teams, communication discipline is even more crit
 The architect must verify that construction documents are complete, coordinated, and compliant with codes and standards (such as the National Building Code of the Philippines). A constructability review—ideally with contractor input—helps identify build-ability issues, cost-saving opportunities, and construction sequence challenges. Rework during construction is costly and may extend the schedule.
 
 Internal quality control processes include: design reviews by senior staff, code compliance checklists, consultant coordination reviews (MEP, structural, landscape integration), and final document review before issuance. These processes catch errors before they reach the client or the contractor.
-
-<Tip>**Five essential quality control processes:** (1) design reviews by senior staff; (2) code compliance checklists; (3) consultant coordination reviews (MEP, structural, landscape); (4) final document review before issuance; (5) constructability review with contractor input. These catch errors before they reach the client or contractor.</Tip>
 
 ### Consultant Coordination and Agreement Management
 

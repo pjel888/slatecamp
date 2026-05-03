@@ -1,7 +1,44 @@
 {
   "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:8a2a68b0d9de4f2c0dbc87a40d62691b23eb6750251631121118dc7c13346576",
+  "source_count": 3,
+  "sources": [
+    {
+      "source_id": "eb974018-9974-4e81-9c8c-846d8b819874",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "label": "Philippine Electrical Code (PEC) 2017 Part 1, Article 2.15 \u2014 Service and Feeder Requirements",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Governs electrical distribution hierarchy: service entrance, feeders, branch circuits. Defines overcurrent protection, conductor sizing, and voltage drop limits.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "bef0857f-cc91-4c5a-b007-868226a2d765",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "label": "PEC 2017, Article 2.20 \u2014 Branch Circuit Requirements",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Specifies branch circuit types (general purpose, appliance, individual), maximum loads, and minimum number of branch circuits per occupancy type.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "36e8dcbd-c70b-4713-bbeb-d4f989f6fc45",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "label": "PD 1096 RIRR 2004, Rule XII \u2014 Electrical Service Requirements for Buildings",
+      "url": null,
+      "source_type": "primary_law",
+      "description": "Specifies electrical service entrance location requirements and general electrical installation standards.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    }
+  ]
 }

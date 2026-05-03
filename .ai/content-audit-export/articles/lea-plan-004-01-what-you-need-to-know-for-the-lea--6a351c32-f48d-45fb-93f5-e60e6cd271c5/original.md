@@ -80,7 +80,7 @@ The ratio of building height to street width (H:W ratio) affects how enclosed or
 
 **Key Ratios**
 
-<Note type="warn">**H:W = 1:2 is considered comfortable enclosure.** The building is half as tall as the street is wide. This feels human-scale and welcoming. **H:W = 2:1 (building twice as tall as street is wide) is oppressive—canyon-like and uncomfortable.**</Note>
+<Note type="warn">**H:W = 1:2 is considered comfortable enclosure.** The building is half as tall as the street is wide. This feels human-sclead and welcoming. **H:W = 2:1 (building twice as tall as street is wide) is oppressive—canyon-like and uncomfortable.**</Note>
 
 Ratios explained:
 - **1:4** — Very open, exposed feeling; feels like a parking lot

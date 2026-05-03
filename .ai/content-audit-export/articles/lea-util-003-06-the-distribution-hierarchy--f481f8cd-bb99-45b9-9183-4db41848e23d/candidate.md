@@ -332,6 +332,14 @@ This exceeds standard single feeder capacity (>500 A). Solution: Use dual 1000 A
 - [ ] Produce single-line diagram with all voltages, breaker ratings, conductor sizes
 - [ ] Submit design to Meralco and local authority for approval
 
-\<Callout type="info">
-The PEC (Philippine Electrical Code) 2021 Edition mandates that all commercial buildings receive power through a proper metering and service entrance, with calculated feeder sizes and coordinated protection devices.
-</Callout>
+\ component="Callout" status="preserved"]
+Extracted summary:
+- Props: 
+- Text: The PEC (Philippine Electrical Code) 2021 Edition mandates that all commercial buildings receive power through a proper metering and service entrance, with calculated feeder sizes and coordinated prot
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util-003-03-core-concept**, **lea-util-003-04-core-concept**, **lea-util-003-05-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

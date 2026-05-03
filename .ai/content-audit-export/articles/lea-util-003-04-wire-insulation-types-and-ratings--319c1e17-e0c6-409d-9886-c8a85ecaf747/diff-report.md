@@ -1,6 +1,6 @@
 # Content Diff Report: lea-util-003-04-wire-insulation-types-and-ratings
 
-Generated: 2026-05-03T11:49:59.072Z
+Generated: 2026-05-03T13:45:13.078Z
 Article ID: 319c1e17-e0c6-409d-9886-c8a85ecaf747
 Changed: true
 Safe to push locally: true

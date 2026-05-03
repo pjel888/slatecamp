@@ -38,7 +38,7 @@ This extended engagement creates continuity of service, which is essential for e
 
 When the client hires an architect to coordinate the complete range of Comprehensive Architectural Services, this relationship constitutes _Project Management (PM)_. Project Management represents the owner's engagement of the architect for the full scope of professional responsibility.
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+<SPP206RefServices />
 
 <ProcessFlow>
 <ol>
@@ -69,3 +69,5 @@ When the client hires an architect to coordinate the complete range of Comprehen
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

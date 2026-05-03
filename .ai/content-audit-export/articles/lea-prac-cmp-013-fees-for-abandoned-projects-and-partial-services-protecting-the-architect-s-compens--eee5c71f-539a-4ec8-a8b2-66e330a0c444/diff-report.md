@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-013-fees-for-abandoned-projects-and-partial-services-protecting-the-architect-s-compensation
 
-Generated: 2026-05-03T11:49:07.913Z
+Generated: 2026-05-03T13:44:27.858Z
 Article ID: eee5c71f-539a-4ec8-a8b2-66e330a0c444
 Changed: true
 Safe to push locally: true

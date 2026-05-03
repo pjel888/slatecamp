@@ -1,6 +1,6 @@
 # Content Diff Report: lea-util-004-08-seismic-bracing-requirements-per-nscp-2015
 
-Generated: 2026-05-03T11:50:20.175Z
+Generated: 2026-05-03T13:45:32.910Z
 Article ID: 585425ad-355a-4180-b64b-a872115f39f6
 Changed: true
 Safe to push locally: true

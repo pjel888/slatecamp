@@ -77,3 +77,8 @@ Extracted summary:
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
+[/SLATECAMP_UI_BLOCK]

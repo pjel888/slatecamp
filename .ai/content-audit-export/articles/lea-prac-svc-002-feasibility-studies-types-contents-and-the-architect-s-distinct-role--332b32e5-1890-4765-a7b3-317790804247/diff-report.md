@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role
 
-Generated: 2026-05-03T11:49:47.795Z
+Generated: 2026-05-03T13:45:04.164Z
 Article ID: 332b32e5-1890-4765-a7b3-317790804247
 Changed: true
 Safe to push locally: true

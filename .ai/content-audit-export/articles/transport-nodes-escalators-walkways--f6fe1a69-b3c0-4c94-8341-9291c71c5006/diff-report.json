@@ -1,40 +1,38 @@
 {
   "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
   "slug": "transport-nodes-escalators-walkways",
-  "generated_at": "2026-05-03T11:49:34.054Z",
+  "generated_at": "2026-05-03T13:44:51.974Z",
   "old_hash": "sha256:bbdf1ce26355ce97f43a1d2f40edd24620520b5de085b00db2e3d8066fb3270b",
-  "new_hash": "sha256:7b3281fd488d1b770dd31e2651c01508d6d115aad1edf48c438dfc27cffd4a29",
+  "new_hash": "sha256:cec689ff821feecd76456e141c40fdb62ce03fec3c53e5f7a6222a9f31962aa0",
   "original_hash": "sha256:bbdf1ce26355ce97f43a1d2f40edd24620520b5de085b00db2e3d8066fb3270b",
-  "normalized_hash": "sha256:e4afa258790606247db60ea84558f9134ec743a2c3822669066348f7b121c7b8",
-  "candidate_hash": "sha256:7b3281fd488d1b770dd31e2651c01508d6d115aad1edf48c438dfc27cffd4a29",
+  "normalized_hash": "sha256:ad5efba918791095ba0adbe6e7d4e5369dacfa164f4e30b219cb576b81cc3aaa",
+  "candidate_hash": "sha256:cec689ff821feecd76456e141c40fdb62ce03fec3c53e5f7a6222a9f31962aa0",
   "changed": true,
-  "changed_line_count": 165,
-  "inserted_line_count": 28,
+  "changed_line_count": 163,
+  "inserted_line_count": 26,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
   "ui_blocks_candidate_count": 4,
   "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 165,
-    "inserted": 28,
+    "changed": 163,
+    "inserted": 26,
     "deleted": 0,
     "original_line_count": 137,
-    "candidate_line_count": 165
+    "candidate_line_count": 163
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

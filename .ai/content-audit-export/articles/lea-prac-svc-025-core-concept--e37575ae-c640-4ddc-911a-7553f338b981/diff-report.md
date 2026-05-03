@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-025-core-concept
 
-Generated: 2026-05-03T11:49:08.437Z
+Generated: 2026-05-03T13:44:28.396Z
 Article ID: e37575ae-c640-4ddc-911a-7553f338b981
 Changed: true
 Safe to push locally: true

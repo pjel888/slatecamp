@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic
 
-Generated: 2026-05-03T11:48:59.669Z
+Generated: 2026-05-03T13:44:17.935Z
 Article ID: 0b116082-5275-4d0f-bb23-ce5b74339001
 Changed: true
 Safe to push locally: true

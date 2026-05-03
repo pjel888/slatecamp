@@ -1,23 +1,19 @@
 {
-  "attempted_at": "2026-05-03T11:49:04.005Z",
+  "attempted_at": "2026-05-03T13:47:09.209Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
   "slug": "lea-plan-002-01-core-concept",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:2bd2b22096a184ce97e559f6ca9a6ec89119c1f1aa70976d59e1f9be4c774f2a",
-  "original_hash": "sha256:f9699bfd914806f830d32f12e1f2ee88d873d8504ac18b8efda93e4594d4513e",
+  "original_hash": "sha256:2bd2b22096a184ce97e559f6ca9a6ec89119c1f1aa70976d59e1f9be4c774f2a",
   "candidate_hash": "sha256:c5e53a09a1dca769fee029462d7a90faa8ac92ef7ffcb75e072bd24979a8057c",
-  "stale_check_passed": false,
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

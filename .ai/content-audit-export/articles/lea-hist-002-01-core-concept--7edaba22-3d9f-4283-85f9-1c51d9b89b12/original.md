@@ -4,11 +4,6 @@
 Early Christian architecture established the **basilica** as the dominant church form, directly influencing all Western religious architecture. Byzantine refinement of this type, especially through the **pendentive dome**, creates structural and design questions on every board exam.
 </Callout>
 
-
-## Learning Goal
-
-Distinguish Early Christian basilica plans from Byzantine centralized domed churches and explain the pendentive dome innovation as exemplified by Hagia Sophia.
-
 ## Core Concept
 
 Early Christian and Byzantine architecture represent the bridge between Roman building traditions and Medieval Europe. Early Christians (4th–5th centuries) inherited Roman **basilica** forms—rectangular halls with colonnaded aisles—but repurposed them as places of worship after Constantine's legalization of Christianity in 313 CE. The altar replaced the Roman magistrate's seat; the longitudinal plan emphasized procession toward the sacred east end.
@@ -39,7 +34,7 @@ Byzantine aesthetics emphasize:
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Building", "Architect/Builder", "Date", "Location", "Key Feature"]} rows={[["**Old St. Peter's Basilica**", "Constantine I (patron)", "Begun 326–333 CE, completed ~360 CE", "Rome", "First major Early Christian basilica; five-aisled linear plan; established Western church prototype"], ["**Hagia Sophia**", "Anthemius of Tralles, Isidore of Miletus", "532–537 CE", "Constantinople", "Pendentive dome (31.7m diameter, 55.6m height; sources vary 31–32.6m depending on measurement axis — use 31.7m for the LEA); 40 base windows; luminous interior; Byzantine structural masterpiece"], ["**San Vitale**", "Unknown", "526–547 CE", "Ravenna, Italy", "Centralized octagonal plan; Byzantine mosaics; Byzantine influence on Western soil"], ["**Church of SS. Sergius and Bacchus**", "Anthemius of Tralles", "527–536 CE", "Constantinople", "Double-shell octagonal plan; precursor to Hagia Sophia; experimented with dome-on-pendentives"], ["**Church of the Holy Apostles**", "Anthemius of Tralles, Isidore of Miletus", "Circa 536–565 CE (Justinian period); consecrated 550 CE", "Constantinople", "Five-domed Greek-cross plan; constructed under Justinian; influenced later Byzantine churches"]]} />
+<WikiExamTable headers={["Building", "Architect/Builder", "Date", "Location", "Key Feature"]} rows={[["**Old St. Peter's Basilica**", "Constantine I (patron)", "Begun 326–333 CE, completed ~360 CE", "Rome", "First major Early Christian basilica; five-aisled linear plan; established Western church prototype"], ["**Hagia Sophia**", "Anthemius of Tralles, Isidore of Miletus", "532–537 CE", "Constantinople", "Pendentive dome (31.7m diameter, 55.6m height; sources vary 31–32.6m depending on measurement axis — use 31.7m for the LEA); 40 base windows; luminous interior; Byzantine structural masterpiece"], ["**San Vitlea**", "Unknown", "526–547 CE", "Ravenna, Italy", "Centralized octagonal plan; Byzantine mosaics; Byzantine influence on Western soil"], ["**Church of SS. Sergius and Bacchus**", "Anthemius of Tralles", "527–536 CE", "Constantinople", "Double-shell octagonal plan; precursor to Hagia Sophia; experimented with dome-on-pendentives"], ["**Church of the Holy Apostles**", "Anthemius of Tralles, Isidore of Miletus", "Circa 536–565 CE (Justinian period); consecrated 550 CE", "Constantinople", "Five-domed Greek-cross plan; constructed under Justinian; influenced later Byzantine churches"]]} />
 
 **Structural Terms:**
 - **Pendentive**: A spherical triangle that transitions a square base to a circular dome opening
@@ -76,5 +71,3 @@ Byzantine aesthetics emphasize:
 - **Centralized plan**: A church plan organized around a central vertical axis (dome) rather than a linear procession (basilica)
 - **Tesserae**: Small glass or stone cubes used in mosaics
 - **Transept**: The cross arm of a cruciform church plan
-
-<Tip>**Basilica vs. Byzantine Quick Guide:** Basilica = linear, rows of columns, timber roof, procession toward altar. Byzantine = centralized, dome on pendentives, luminous mosaics, spatial unity under one vault. The shift from linear to centralized is a major LEA topic.</Tip>

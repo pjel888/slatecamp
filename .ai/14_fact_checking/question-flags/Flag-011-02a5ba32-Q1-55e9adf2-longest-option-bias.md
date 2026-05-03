@@ -6,7 +6,7 @@
 **Article UUID:** 02a5ba32-0443-4162-837d-326783ed77a2
 **Article Title:** RA 9266 Overview
 **Question ID:** 55e9adf2-fd59-4a65-b7e7-2ec8b42fd4a9
-**Model ID:** ALE-PRAC-LAW-001-007
+**Model ID:** LEA-PRAC-LAW-001-007
 **Severity:** MEDIUM
 **Category:** Law/Code (RA 9266 — Liability)
 

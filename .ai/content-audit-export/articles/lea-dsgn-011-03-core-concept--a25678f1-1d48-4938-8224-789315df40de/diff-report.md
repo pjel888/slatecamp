@@ -1,6 +1,6 @@
 # Content Diff Report: lea-dsgn-011-03-core-concept
 
-Generated: 2026-05-03T11:49:42.926Z
+Generated: 2026-05-03T13:44:59.971Z
 Article ID: a25678f1-1d48-4938-8224-789315df40de
 Changed: true
 Safe to push locally: true

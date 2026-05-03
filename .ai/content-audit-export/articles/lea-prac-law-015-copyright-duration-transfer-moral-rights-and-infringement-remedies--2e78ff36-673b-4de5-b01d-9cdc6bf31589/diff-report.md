@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies
 
-Generated: 2026-05-03T11:50:13.061Z
+Generated: 2026-05-03T13:45:26.441Z
 Article ID: 2e78ff36-673b-4de5-b01d-9cdc6bf31589
 Changed: true
 Safe to push locally: true

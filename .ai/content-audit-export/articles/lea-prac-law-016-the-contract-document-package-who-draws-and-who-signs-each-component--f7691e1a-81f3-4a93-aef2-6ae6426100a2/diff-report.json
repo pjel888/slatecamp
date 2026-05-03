@@ -1,40 +1,38 @@
 {
   "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
   "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
-  "generated_at": "2026-05-03T11:49:20.778Z",
+  "generated_at": "2026-05-03T13:44:39.913Z",
   "old_hash": "sha256:b3798bb02353261235aeb9f685666e1ea0f6e3b2a0a15476b7fda92e07ca8c59",
-  "new_hash": "sha256:7eab77b5d82f53e6dc7ccba6435212b547d65600b62f116930cb920307fddeec",
+  "new_hash": "sha256:43ed2a15af34e2071aec8c15e994e5a05e2be924d8aad0e686872f183616a7e9",
   "original_hash": "sha256:b3798bb02353261235aeb9f685666e1ea0f6e3b2a0a15476b7fda92e07ca8c59",
-  "normalized_hash": "sha256:309ea91474b0322fa1cbf27bb5a53ae829e0614cef38a4c488991f92567f2841",
-  "candidate_hash": "sha256:7eab77b5d82f53e6dc7ccba6435212b547d65600b62f116930cb920307fddeec",
+  "normalized_hash": "sha256:26e74d650e6b1899c60b465fc5bf292d01efdd3f61b7bfdb99b8f72f543ecfe5",
+  "candidate_hash": "sha256:43ed2a15af34e2071aec8c15e994e5a05e2be924d8aad0e686872f183616a7e9",
   "changed": true,
-  "changed_line_count": 61,
-  "inserted_line_count": 36,
+  "changed_line_count": 59,
+  "inserted_line_count": 34,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
   "ui_blocks_candidate_count": 3,
   "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 61,
-    "inserted": 36,
+    "changed": 59,
+    "inserted": 34,
     "deleted": 0,
     "original_line_count": 45,
-    "candidate_line_count": 81
+    "candidate_line_count": 79
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

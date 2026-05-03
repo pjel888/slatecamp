@@ -1,6 +1,6 @@
 # Content Diff Report: spp-doc-203-specialized-architectural-services
 
-Generated: 2026-05-03T11:49:14.073Z
+Generated: 2026-05-03T13:44:34.021Z
 Article ID: 9a800f21-b26e-4e3e-94c8-2f4127eccd42
 Changed: true
 Safe to push locally: true

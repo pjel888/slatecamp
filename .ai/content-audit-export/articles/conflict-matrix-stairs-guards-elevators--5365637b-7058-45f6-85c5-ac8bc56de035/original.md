@@ -1,5 +1,5 @@
 # Conflict Matrix Stairs Guards Elevators
-### BP 344 (2024 IRR) vs. PD 1096 (National Building Code) — Philippine Licensure Examination for Architects Review
+### BP 344 (2024 IRR) vs. PD 1096 (National Building Code) — Philippine Architecture Licensure Exam Review
 
 ---
 

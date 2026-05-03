@@ -1,7 +1,44 @@
 {
   "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:b8cd601cb7b3be201352d1b53a27baab6ef8dcb76bdedf2955c9efec9aec940a",
+  "source_count": 3,
+  "sources": [
+    {
+      "source_id": "011f7260-b61a-4f23-abfd-008f6abb7516",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "label": "Philippine Electrical Code (PEC) 2017 Part 1, Article 3.10 \u2014 Wiring Materials and Methods",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Governs wire insulation types, temperature ratings, conductor materials, and ampacity for different installation methods and environments.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "9c0a0568-1090-47cd-87c6-2cdd46c53e57",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "label": "PEC 2017, Table 3.10.1.7 \u2014 Allowable Ampacities of Insulated Conductors",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Provides ampacity tables for copper and aluminum conductors based on insulation type, temperature rating, and ambient conditions.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "bfe6ec9f-1969-4329-8060-c93fb42dc1c3",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "label": "PEC 2017, Article 1.10 \u2014 Wire Insulation Identification and Color Coding",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Specifies color coding requirements for electrical wiring: black/red for hot, white for neutral, green/bare for ground.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    }
+  ]
 }

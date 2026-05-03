@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period
 
-Generated: 2026-05-03T11:49:55.088Z
+Generated: 2026-05-03T13:45:09.543Z
 Article ID: 367ef654-f42a-4eed-861d-b00648f5dba4
 Changed: true
 Safe to push locally: true

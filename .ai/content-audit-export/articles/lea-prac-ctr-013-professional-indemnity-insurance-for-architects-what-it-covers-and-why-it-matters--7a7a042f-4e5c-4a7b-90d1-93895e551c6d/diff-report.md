@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters
 
-Generated: 2026-05-03T11:49:16.989Z
+Generated: 2026-05-03T13:44:36.485Z
 Article ID: 7a7a042f-4e5c-4a7b-90d1-93895e551c6d
 Changed: true
 Safe to push locally: true

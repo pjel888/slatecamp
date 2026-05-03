@@ -1,7 +1,44 @@
 {
   "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:ba7ed391daeeea83c498191e6f27088fb9b07e3d297124e5629337f828cf8333",
+  "source_count": 3,
+  "sources": [
+    {
+      "source_id": "7019906a-93cb-47a6-ae9d-d086f8b74f8e",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "label": "PD 1096 RIRR 2004, Rule XVIII \u2014 Escalator and Moving Walk Requirements",
+      "url": null,
+      "source_type": "primary_law",
+      "description": "Governs escalator and moving walk design, installation, and safety requirements in Philippine buildings.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "67cd63a2-66ab-42db-8abf-058d87b7987b",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "label": "ASME A17.1/CSA B44 \u2014 Safety Code for Elevators and Escalators",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "International standard referenced for escalator dimensional requirements: minimum width (600mm), step depth, rise, and angle (30\u00b0 max).",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "9b68ff66-679a-42cd-8878-e7a4bf31fcc8",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "label": "BP 344 \u2014 Accessibility Requirements for Vertical Transportation",
+      "url": null,
+      "source_type": "implementing_rules",
+      "description": "Specifies accessibility dimensional requirements for escalators and moving walks serving the public.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    }
+  ]
 }

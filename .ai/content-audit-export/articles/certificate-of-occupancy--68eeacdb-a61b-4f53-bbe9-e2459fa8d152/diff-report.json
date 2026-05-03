@@ -1,10 +1,10 @@
 {
   "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
   "slug": "certificate-of-occupancy",
-  "generated_at": "2026-05-03T11:50:12.163Z",
-  "old_hash": "sha256:cdb4e77c531bd50e5ae746c600b82e74511e7c40f9ab959e8ec9f41d94c8d543",
+  "generated_at": "2026-05-03T13:45:25.652Z",
+  "old_hash": "sha256:f730afece33b7753c59fe84bc35225731540e4fbb2ffa75e8b76365758894bf0",
   "new_hash": "sha256:997210a9127a88e6ef45777ad9ef9de7036adc9f5e17dc6ac6d14e62287c2f48",
-  "original_hash": "sha256:cdb4e77c531bd50e5ae746c600b82e74511e7c40f9ab959e8ec9f41d94c8d543",
+  "original_hash": "sha256:f730afece33b7753c59fe84bc35225731540e4fbb2ffa75e8b76365758894bf0",
   "normalized_hash": "sha256:fa9447638c56d81725192d56356d5789935fbf3e948518d1d49aa7316696bd55",
   "candidate_hash": "sha256:997210a9127a88e6ef45777ad9ef9de7036adc9f5e17dc6ac6d14e62287c2f48",
   "changed": true,
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

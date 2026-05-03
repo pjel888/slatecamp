@@ -1,40 +1,38 @@
 {
   "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
   "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
-  "generated_at": "2026-05-03T11:49:25.101Z",
+  "generated_at": "2026-05-03T13:44:44.099Z",
   "old_hash": "sha256:aab51d5756cda8ab97264588e637112f1883f8be354be955002b69a6c6d59799",
-  "new_hash": "sha256:aea312f76e8a40cbbfaaf96efbfa616e9b1c3dc19e1822f90a8ac4cb7c341db8",
+  "new_hash": "sha256:29267de2e250c0ccf0d0156b5cae06324622ddb1dea4a044cae654160254a673",
   "original_hash": "sha256:aab51d5756cda8ab97264588e637112f1883f8be354be955002b69a6c6d59799",
-  "normalized_hash": "sha256:45ea6c4cb2185ad4cfd694778dde9745cce06e2eec331d9b0e6b22ee5e64c6c7",
-  "candidate_hash": "sha256:aea312f76e8a40cbbfaaf96efbfa616e9b1c3dc19e1822f90a8ac4cb7c341db8",
+  "normalized_hash": "sha256:0cb71e610298ec6d7a79ff22117cf06817ef5199083d1077128a0a8c8070820e",
+  "candidate_hash": "sha256:29267de2e250c0ccf0d0156b5cae06324622ddb1dea4a044cae654160254a673",
   "changed": true,
   "changed_line_count": 504,
   "inserted_line_count": 0,
-  "deleted_line_count": 2,
+  "deleted_line_count": 7,
   "ui_blocks_original_count": 9,
   "ui_blocks_candidate_count": 9,
   "ui_blocks_changed_count": 0,
   "ui_blocks_count": 9,
-  "unresolved_placeholders_count": 1,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 9,
   "changed_text_summary": {
     "changed": 504,
     "inserted": 0,
-    "deleted": 2,
+    "deleted": 7,
     "original_line_count": 539,
-    "candidate_line_count": 537
+    "candidate_line_count": 532
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

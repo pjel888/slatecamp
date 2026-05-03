@@ -60,7 +60,7 @@ Organizations like the Society of American Value Engineers (SAVE) establish prof
 
 Value engineering represents an important specialized service supporting client interests in cost optimization. When practiced ethically with commitment to design quality and transparent client communication, value engineering adds significant value to architectural practice and client project outcomes.
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+<SPP206RefServices />
 
 <ProcessFlow>
 <ol>
@@ -91,3 +91,5 @@ Value engineering represents an important specialized service supporting client 
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

@@ -1,6 +1,6 @@
 # Content Diff Report: lea-util-004-05-seismic-bracing-and-earthquake-resilience
 
-Generated: 2026-05-03T11:49:12.382Z
+Generated: 2026-05-03T13:44:32.302Z
 Article ID: 1caee82f-c2c8-409b-a3bf-41576bc702c5
 Changed: true
 Safe to push locally: true

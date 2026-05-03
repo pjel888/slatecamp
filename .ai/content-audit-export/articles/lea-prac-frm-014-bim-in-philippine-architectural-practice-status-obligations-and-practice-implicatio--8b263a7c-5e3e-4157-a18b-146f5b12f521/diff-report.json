@@ -1,40 +1,38 @@
 {
   "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
   "slug": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications",
-  "generated_at": "2026-05-03T11:49:16.834Z",
+  "generated_at": "2026-05-03T13:44:36.357Z",
   "old_hash": "sha256:e8dc12abd82c8edc6037030132d5a06f681ae015a8d7ce70242d5fec6eae2438",
-  "new_hash": "sha256:3e5c1f3a8b79eeff378d26bb1311570754b8f19f9df28c769ced842b4b6b9f8a",
+  "new_hash": "sha256:ab6e26b30f26e1058fb4464d28c17bf666f2d9628336b96a399455514664ee44",
   "original_hash": "sha256:e8dc12abd82c8edc6037030132d5a06f681ae015a8d7ce70242d5fec6eae2438",
-  "normalized_hash": "sha256:6cf2dd341f43c86a657846fec1c5da49179b115a3f721f3a8dd068510fad01cb",
-  "candidate_hash": "sha256:3e5c1f3a8b79eeff378d26bb1311570754b8f19f9df28c769ced842b4b6b9f8a",
+  "normalized_hash": "sha256:bbd76f50aeeb5562581687bd94b11d5fde04e772aacaf7346b167fc824641ba8",
+  "candidate_hash": "sha256:ab6e26b30f26e1058fb4464d28c17bf666f2d9628336b96a399455514664ee44",
   "changed": true,
-  "changed_line_count": 76,
-  "inserted_line_count": 43,
+  "changed_line_count": 71,
+  "inserted_line_count": 37,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
   "ui_blocks_candidate_count": 3,
   "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 76,
-    "inserted": 43,
+    "changed": 71,
+    "inserted": 37,
     "deleted": 0,
     "original_line_count": 47,
-    "candidate_line_count": 90
+    "candidate_line_count": 84
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

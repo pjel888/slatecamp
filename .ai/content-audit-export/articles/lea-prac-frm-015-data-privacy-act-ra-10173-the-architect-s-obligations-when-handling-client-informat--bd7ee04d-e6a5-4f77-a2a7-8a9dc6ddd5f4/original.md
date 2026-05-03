@@ -6,7 +6,7 @@ The Data Privacy Act of 2012 (RA 10173) protects personal information in the han
 
 ### Scope of RA 10173: Personal Information Controllers and Processors
 
-RA 10173 defines a _personal information controller_ (PIC) as an entity that decides the purpose and manner of processing personal data. A _personal information processor_ (PIP) is an entity that processes data on behalf of a PIC. In typical architectural practice, the client (owner or facility manager) is the PIC, and the architect may be a PIP if processing data at the client's direction.
+RA 10173 defines a _personal information controller_ (PIC) as an entity that decides the purpose and manner of processing personal data. An _personal information processor_ (PIP) is an entity that processes data on behalf of a PIC. In typical architectural practice, the client (owner or facility manager) is the PIC, and the architect may be a PIP if processing data at the client's direction.
 
 However, architects sometimes act as PICs—for example, when maintaining a database of building occupants for emergency egress planning, or collecting tenant information for a mixed-use development. In both roles, architects have legal obligations to protect data and implement reasonable security measures.
 
@@ -30,7 +30,7 @@ During construction administration, architects may observe security weaknesses, 
 
 ### Duty to Implement Data Protection Officer Requirements
 
-RA 10173 requires designation of an individual(s) accountable for compliance; large architectural firms processing significant personal data should assess if a Data Protection Officer (DPO) is required per NPC guidelines. The DPO oversees data protection compliance, fields privacy complaints, and ensures the organization meets legal obligations. Firms should assess whether they process large-scale data or sensitive information of occupants, tenants, employees, or building users. If so, appointing a DPO (internal or external) demonstrates legal compliance and professional responsibility.
+RA 10173 requires designation of an individual(s) accountable for compliance; large architectural firms processing significant personal data should assess if a Data Protection Officer (DPO) is required per NPC guidelines. The DPO oversees data protection compliance, fields privacy complaints, and ensures the organization meets legal obligations. Firms should assess whether they process large-sclea data or sensitive information of occupants, tenants, employees, or building users. If so, appointing a DPO (internal or external) demonstrates legal compliance and professional responsibility.
 
 ### Client Information and Intellectual Property Rights
 

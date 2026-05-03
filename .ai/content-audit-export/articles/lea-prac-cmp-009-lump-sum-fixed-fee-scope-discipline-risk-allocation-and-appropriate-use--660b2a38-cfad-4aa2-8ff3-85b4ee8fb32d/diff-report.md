@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use
 
-Generated: 2026-05-03T11:49:53.887Z
+Generated: 2026-05-03T13:45:08.493Z
 Article ID: 660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d
 Changed: true
 Safe to push locally: true

@@ -26,7 +26,7 @@ Sections 27 and 28 do **not** establish prohibited acts or penalties. Only Secti
 
 **Impact:** `HIGH` — Students studying the wrong sections will misidentify which parts of RA 9266 contain prohibited acts.
 
-**Linked Questions Affected:** Q1 (ALE-PRAC-LAW-003-001) references "RA 9266" generally; Q4 references "Sections 29-30" for penalties (correct), but the article body contradicts this specific reference.
+**Linked Questions Affected:** Q1 (LEA-PRAC-LAW-003-001) references "RA 9266" generally; Q4 references "Sections 29-30" for penalties (correct), but the article body contradicts this specific reference.
 
 ---
 
@@ -48,7 +48,7 @@ None of Sections 35-39 specify criminal penalties. The sole penal clause is **Se
 
 **Impact:** `CRITICAL` — Students directed to Sections 35-39 will find nothing about criminal penalties, creating confusion about where the actual penalty provisions are located.
 
-**Linked Questions Affected:** Q4 (ALE-PRAC-LAW-003-004, model "ALE-PRAC-LAW-003-004")
+**Linked Questions Affected:** Q4 (LEA-PRAC-LAW-003-004, model "LEA-PRAC-LAW-003-004")
 
 ---
 
@@ -67,7 +67,7 @@ The article cites **7(i)** but the correct subsection is **7(h)**. Section 7(i) 
 
 **Impact:** `HIGH` — Students will cite the wrong subsection number when referencing the Board's quasi-judicial power.
 
-**Linked Questions Affected:** Q5 (ALE-PRAC-LAW-003-007) asks about due process under "Section 7(h)" which is correct — but the article body contradicts this by citing 7(i).
+**Linked Questions Affected:** Q5 (LEA-PRAC-LAW-003-007) asks about due process under "Section 7(h)" which is correct — but the article body contradicts this by citing 7(i).
 
 ---
 
@@ -88,7 +88,7 @@ The article cites **7(i)** but the correct subsection is **7(h)**. Section 7(i) 
 
 ## FLAG 5 — HIGH — Wrong Penalty Range in Linked Question Q4 (Article-Question Contradiction)
 
-**Claim in Linked Question (ALE-PRAC-LAW-003-004, Q4):**
+**Claim in Linked Question (LEA-PRAC-LAW-003-004, Q4):**
 > Correct answer states fine is "not less than P5,000 nor more than P100,000"
 
 **Verdict:** `CONTRADICTS_QUESTION` — The article text correctly states "not less than One hundred thousand pesos (P100,000.00) but not more than Five million pesos (P5,000,000.00)" — but the linked question's correct answer specifies a completely different range (P5,000-P100,000).

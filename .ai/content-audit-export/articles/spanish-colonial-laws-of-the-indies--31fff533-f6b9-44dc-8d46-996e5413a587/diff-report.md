@@ -1,6 +1,6 @@
 # Content Diff Report: spanish-colonial-laws-of-the-indies
 
-Generated: 2026-05-03T11:49:08.842Z
+Generated: 2026-05-03T13:44:28.784Z
 Article ID: 31fff533-f6b9-44dc-8d46-996e5413a587
 Changed: true
 Safe to push locally: true

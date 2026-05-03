@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline
 
-Generated: 2026-05-03T11:49:52.673Z
+Generated: 2026-05-03T13:45:07.702Z
 Article ID: 0c599071-cf6f-4b07-9d5f-a6230dd77b36
 Changed: true
 Safe to push locally: true

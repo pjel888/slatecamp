@@ -1,6 +1,6 @@
 # Content Diff Report: lea-util-005-05-summary
 
-Generated: 2026-05-03T11:49:58.790Z
+Generated: 2026-05-03T13:45:12.815Z
 Article ID: ca53ed30-fdc6-42de-bb68-b5335d0d77a6
 Changed: true
 Safe to push locally: true
@@ -8,19 +8,19 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:6bb17d25667e8f992448a865aa17988e39f83a2c15d45d21cbdfba98215c4ed6`
-- Normalized: `sha256:0eefbfb2a090bd895c3d5273434f95dcc19c5bcc0de2e7b60d581b10b7266cc6`
-- Candidate: `sha256:7cec7168c076ceefc1d2bfc0755890b8de724df85556d7c203546da316991f94`
+- Normalized: `sha256:8b7cd9d0fb5ee786522a61f470bcda54671bfca6d20e87c314cfe344b4dc5686`
+- Candidate: `sha256:e521d365d45855ffc170c8f354e57cdc66b286699cb0d451e84ac592e58bded0`
 
 ## Line summary
 
-- Changed lines: 151
+- Changed lines: 149
 - Inserted lines: 0
-- Deleted lines: 139
+- Deleted lines: 126
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 1
+- UI blocks preserved: 1
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

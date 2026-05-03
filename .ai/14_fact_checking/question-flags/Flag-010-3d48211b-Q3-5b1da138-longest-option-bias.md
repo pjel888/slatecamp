@@ -6,7 +6,7 @@
 **Article UUID:** 3d48211b-8add-4934-8dab-ae8bdae74035
 **Article Title:** Prohibited Acts / Penalties
 **Question ID:** 5b1da138-7d1f-42b4-9ab2-ba065604422a
-**Model ID:** ALE-PRAC-LAW-003-009
+**Model ID:** LEA-PRAC-LAW-003-009
 **Severity:** MEDIUM
 **Category:** Law/Code (RA 9266 — Disciplinary Framework)
 

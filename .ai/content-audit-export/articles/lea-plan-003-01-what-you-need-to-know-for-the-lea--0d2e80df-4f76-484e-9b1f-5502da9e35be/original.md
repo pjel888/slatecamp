@@ -2,12 +2,6 @@
 
 Philippine housing law operates through a layered system of buyer protection, developer regulation, and socialized housing standards. Five core laws establish the framework: PD 957 controls market-rate subdivisions and condominiums; BP 220 sets minimum area standards for economic and socialized housing; RA 7279 (UDHA) mandates eviction protections and balanced housing; RA 6552 (Maceda Law) provides installment buyer safeguards; and RA 10884 quantifies the balanced housing percentage. Understanding which law governs which housing type and which provision belongs to which law is the foundation of housing law competency.
 
-## Learning Goal
-
-Identify the five core Philippine housing laws (PD 957, BP 220, RA 7279/UDHA, RA 6552/Maceda Law, RA 10884) and describe their key provisions: developer registration, open space requirements, minimum lot and floor areas, eviction protections, balanced housing percentages, and installment buyer safeguards.
-
-<ExamTip>**Memorize the Law-to-Provision mapping:** PD 957 = market-rate buyer protection. BP 220 = minimum lot/floor SIZES. RA 7279 = eviction + balanced housing. RA 6552 = installment buyer refunds. RA 10884 = 15–20% balanced housing QUANTIFICATION. When stuck, ask: is this about SIZE (BP 220), REFUND (RA 6552), or EVICTION (RA 7279)?</ExamTip>
-
 ### PD 957: Subdivision and Condominium Buyers Protective Decree (1976)
 
 PD 957 is exclusively about **market-rate residential projects** — subdivisions and condominiums sold to individual buyers. It does not govern socialized housing, informal settlements, or government-built projects.
@@ -71,10 +65,10 @@ RA 7279 reframes housing from a market commodity to a human right. It mandates b
 
 **Balanced Housing Requirement**
 
-Developers of open-market and medium-cost housing projects must produce socialized housing equivalent to the market housing. The requirement ensures that every luxury subdivision or mid-range residential project generates affordable units. Options include:
+Developers of open-market and medium-cost housing projects must produce socialized housing equivleant to the market housing. The requirement ensures that every luxury subdivision or mid-range residential project generates affordable units. Options include:
 
 - On-site development: Build socialized units within the same project
-- Off-site development: Develop an equivalent project elsewhere
+- Off-site development: Develop an equivleant project elsewhere
 - Joint venture with NHA: Partner with the National Housing Authority
 - Bond contribution: Pay a contribution to NHA if on-site or off-site are infeasible
 
@@ -124,9 +118,9 @@ The law creates a sharp threshold at 2 years:
 | Years of Installments Paid | Buyer's Rights Upon Cancellation |
 |---------------------------|----------------------------------|
 | Less than 2 years | 60-day grace period from date of last installment; NO refund of payments |
-| 2 years or more | 50% of total payments refunded + 5% per additional year **above 5 years** (capped at 90% refund)
+| 2 years or more | 5050% of total payments refunded + 5% per additional year **above 5 years** (capped at 90% refund)
 
-Example: A buyer who paid for 3.5 years is entitled to a 50% refund. A buyer who paid for 7 years is entitled to 50% + (5% × 2 years) = 60% refund.
+Example: A buyer who paid for 3.5 years is entitled to a 50% refund. A buyer who paid for 7 years is entitled to 50% + (5% × 2 years) = 60% refund.efund.
 
 **Grace Period Rule**
 
@@ -142,7 +136,7 @@ The Maceda Law covers residential real property on installment — subdivision l
 
 RA 10884 updated RA 7279's balanced housing requirement by specifying percentages:
 
-Developers of open-market housing projects must produce socialized housing equivalent to **15–20% of the project cost**. This quantifies the social obligation — it is not vague, it is not discretionary, and it is enforced through the DHSUD licensing system (developers who do not meet the requirement cannot obtain licenses for new projects).
+Developers of open-market housing projects must produce socialized housing equivleant to **15–20% of the project cost**. This quantifies the social obligation — it is not vague, it is not discretionary, and it is enforced through the DHSUD licensing system (developers who do not meet the requirement cannot obtain licenses for new projects).
 
 ---
 
@@ -160,4 +154,4 @@ PD 1216 reinforces PD 957's 30% open space rule. It mandates that 30% of the gro
 
 ### Common Distractors and Mistakes
 
-<WikiMistakeList mistakes={[{"mistake":"PD 957 sets the minimum floor area for socialized housing at 22 sq.m.","fact":"BP 220 sets floor area standards, not PD 957. PD 957 regulates market-rate projects, not socialized housing."},{"mistake":"Economic housing under BP 220 has a minimum lot of 28 sq.m.","fact":"28 sq.m. is the minimum lot for socialized housing in infill sites. Economic housing minimum is 100 sq.m."},{"mistake":"Under RA 7279, occupants in danger areas may be evicted without any notice.","fact":"RA 7279 requires 30-day notice for all evictions, even in danger areas. What changes is that permanent resettlement is not required before clearing a danger zone."},{"mistake":"The Maceda Law entitles buyers who paid less than 2 years to a 50% rrefund.","fact":"The 50% refund applies only to buyers who paid 2 years or more. Buyers who paid less than 2 years receive only a grace period, not a rrefund."},{"mistake":"RA 7279 requires a 50-day notice before eviction.","fact":"RA 7279 requires 30-day written notice, not 50 days."},{"mistake":"PD 957 governs eviction of informal settlers.","fact":"PD 957 governs buyer protection in market-rate subdivisions and condominiums. Eviction is governed by RA 7279 (UDHA)."}]} />
+<WikiMistakeList mistakes={[{"mistake":"PD 957 sets the minimum floor area for socialized housing at 22 sq.m.","fact":"BP 220 sets floor area standards, not PD 957. PD 957 regulates market-rate projects, not socialized housing."},{"mistake":"Economic housing under BP 220 has a minimum lot of 28 sq.m.","fact":"28 sq.m. is the minimum lot for socialized housing in infill sites. Economic housing minimum is 100 sq.m."},{"mistake":"Under RA 7279, occupants in danger areas may be evicted without any notice.","fact":"RA 7279 requires 30-day notice for all evictions, even in danger areas. What changes is that permanent resettlement is not required before clearing a danger zone."},{"mistake":"The Maceda Law entitles buyers who paid less than 2 years to a 50% refund.","fact":"The 50% refund applies only to buyers who paid 2 years or more. Buyers who paid less than 2 years receive only a grace period, not a refund."},{"mistake":"RA 7279 requires a 50-day notice before eviction.","fact":"RA 7279 requires 30-day written notice, not 50 days."},{"mistake":"PD 957 governs eviction of informal settlers.","fact":"PD 957 governs buyer protection in market-rate subdivisions and condominiums. Eviction is governed by RA 7279 (UDHA)."}]} />

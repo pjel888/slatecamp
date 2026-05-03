@@ -4,11 +4,6 @@
 Mesopotamian architecture tests your ability to identify structural innovations, building types, and the relationship between religion and urban planning in civilization's earliest complex society. The LEA expects knowledge of ziggurats, palaces, city walls, and the architectural responses to a floodplain environment.
 </Callout>
 
-## Learning Goal
-
-Identify key Mesopotamian building types (ziggurat, palace, city wall), their construction materials and methods (mud brick, bitumen), and explain how religious cosmology, floodplain constraints, and available resources shaped the architecture of civilization's earliest complex urban societies.
-
-
 ## Core Concept
 
 Mesopotamian architecture spans roughly 3500–539 BCE across the Tigris-Euphrates floodplain (modern Iraq, Syria, eastern Turkey). Unlike megalithic cultures that worked with stone, Mesopotamia's available material was mud and clay. Mesopotamian architects developed the **mud brick**—shaped, dried in the sun, and stacked with mud mortar—as their primary building medium. This constraint, seemingly limiting, drove innovation: mud brick is plastic, allowing for varied forms; it is cheap and renewable, enabling monumental construction; and it conducts heat poorly, providing climate control in a blazing landscape.

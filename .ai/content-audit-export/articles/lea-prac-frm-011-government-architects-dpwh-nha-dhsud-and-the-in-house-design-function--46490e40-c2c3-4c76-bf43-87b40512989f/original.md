@@ -1,16 +1,12 @@
 ## Government Architects—DPWH, NHA, DHSUD, and the In-House Design Function
 
+<JSX>null</JSX>
+
 The Philippine government maintains its own architectural teams within key agencies: the Department of Public Works and Highways (DPWH), the National Housing Authority (NHA), and the Department of Human Settlements and Urban Development (DHSUD). These in-house design functions serve public infrastructure, housing, and urban development projects that shape national development priorities.
-
-## Learning Goal
-
-Describe the role and scope of in-house architectural practice in Philippine government agencies (DPWH, NHA, DHSUD), distinguish government practice from private practice, and identify COA audit compliance requirements.
 
 ### In-House Architectural Practice vs. Private Practice
 
 Government architects operate within a distinct regulatory and contractual framework. Unlike private practitioners bound by service agreements and civil liability under Article 1723 of the Civil Code, government architects work under civil service rules and budget appropriations. However, they must still uphold the professional standards defined in RA 9266 and comply with the same technical codes—the National Building Code, BP 344, and environmental regulations—as private firms.
-
-<Tip>Government architects work under civil service rules and budget appropriations, not private service agreements. However, they must still uphold RA 9266 professional standards and comply with the same technical codes — National Building Code, BP 344, and environmental regulations — as private firms.</Tip>
 
 The architect-of-record for government projects must be a licensed, registered architect personally responsible for design quality and code compliance. This responsibility does not diminish whether the architect works in-house or as a private consultant. Government projects subject to public bidding must comply with RA 9184 (Government Procurement Reform Act) procedures, which may affect how design services are procured and delivered.
 

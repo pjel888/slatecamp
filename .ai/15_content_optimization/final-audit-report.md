@@ -61,14 +61,14 @@
 
 | Article | Question | Error | Fix |
 |---------|----------|-------|-----|
-| lea-matl-006-04 | ALE-MATL-006-04-001 | k-value units: marked 'b' (m²·K/W) | Changed to 'a' (W/(m·K)) |
-| lea-matl-010-07 | ALE-MATL-010-07-008 | Steel cost: 2.5×40,000=100,000 marked 'c' | Changed to 'b' (100,000) |
-| lea-matl-010-07 | ALE-MATL-010-07-005 | Beam weight: 1,350.4kg marked 'd' | Changed to 'c' (1,352) |
-| lea-matl-010-07 | ALE-MATL-010-07-001 | Both B+C correct, marked 'b' | Changed to 'd' (Both B and C) |
+| lea-matl-006-04 | LEA-MATL-006-04-001 | k-value units: marked 'b' (m²·K/W) | Changed to 'a' (W/(m·K)) |
+| lea-matl-010-07 | LEA-MATL-010-07-008 | Steel cost: 2.5×40,000=100,000 marked 'c' | Changed to 'b' (100,000) |
+| lea-matl-010-07 | LEA-MATL-010-07-005 | Beam weight: 1,350.4kg marked 'd' | Changed to 'c' (1,352) |
+| lea-matl-010-07 | LEA-MATL-010-07-001 | Both B+C correct, marked 'b' | Changed to 'd' (Both B and C) |
 | lea-dsgn-003-04 | e0f2175f | Economic floor area: 22 sqm | Corrected to 24 sqm per BP 220 |
-| lea-util-006-02 | ALE-UTIL-006-02-018 | Sabine calc: 205 sabins | Corrected to 75 sabins |
-| lea-util-003-05 | ALE-UTIL-003-05-011 | Duplicate options, wrong answer | Added 13mm (correct PEC) |
-| lea-util-002-03 | ALE-UTIL-002-03-019 | Empty correct_option_id | Set to 'a' (150 CFM) |
+| lea-util-006-02 | LEA-UTIL-006-02-018 | Sabine calc: 205 sabins | Corrected to 75 sabins |
+| lea-util-003-05 | LEA-UTIL-003-05-011 | Duplicate options, wrong answer | Added 13mm (correct PEC) |
+| lea-util-002-03 | LEA-UTIL-002-03-019 | Empty correct_option_id | Set to 'a' (150 CFM) |
 
 ---
 

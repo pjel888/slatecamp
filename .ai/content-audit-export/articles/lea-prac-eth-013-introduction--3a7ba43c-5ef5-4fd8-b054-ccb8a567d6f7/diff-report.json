@@ -1,10 +1,10 @@
 {
   "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
   "slug": "lea-prac-eth-013-introduction",
-  "generated_at": "2026-05-03T11:50:19.245Z",
-  "old_hash": "sha256:8938b073204618cc9acdcba75b3233c87025e39dd8bd2db573236ada5d86ba95",
+  "generated_at": "2026-05-03T13:45:32.211Z",
+  "old_hash": "sha256:82a8637c32e97eadae76e45eb323f602c72f81659e00ea247c3e4f5135d199fc",
   "new_hash": "sha256:d0e14b591d098e894f3ff02fa90882269bbb9dd2b68446b372dcb2d42471fb50",
-  "original_hash": "sha256:8938b073204618cc9acdcba75b3233c87025e39dd8bd2db573236ada5d86ba95",
+  "original_hash": "sha256:82a8637c32e97eadae76e45eb323f602c72f81659e00ea247c3e4f5135d199fc",
   "normalized_hash": "sha256:76fd07bcc4476661da96735ad526a93596475fddbf5e096092a259fa67099f4e",
   "candidate_hash": "sha256:d0e14b591d098e894f3ff02fa90882269bbb9dd2b68446b372dcb2d42471fb50",
   "changed": true,
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

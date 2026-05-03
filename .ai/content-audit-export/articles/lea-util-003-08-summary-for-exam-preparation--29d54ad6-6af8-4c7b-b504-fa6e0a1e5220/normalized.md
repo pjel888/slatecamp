@@ -27,7 +27,7 @@ Key takeaways for the LEA:
 
 _Article prepared in compliance with DOE resource assessments, Meralco grid interconnection procedures, and international standards (IEC, IEEE, ISO). All numerical values dated 2026 based on current rates, equipment costs, and regulatory guidance. Updates anticipated for 2027 as tariffs and technology costs evolve._
 
-\[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+\ component="Note" status="preserved"]
 Extracted summary:
 - Props: 
 - Text: Insolation varies with orientation, tilt angle, and shading. Unobstructed south-facing surfaces at latitude tilt (14–16° in most of Philippines) receive maximum annual energy. Fixed horizontal arrays 
@@ -62,12 +62,6 @@ Extracted summary:
 See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util-003-03-core-concept**, **lea-util-003-04-core-concept**, **lea-util-003-05-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-
-[SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Tip — Identify the key PEC provisions tested on the LEA — service :** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
-[/SLATECAMP_UI_BLOCK]
 
 Extracted summary:
 - Props: title='Philippine Regulatory Framework' variant='info'

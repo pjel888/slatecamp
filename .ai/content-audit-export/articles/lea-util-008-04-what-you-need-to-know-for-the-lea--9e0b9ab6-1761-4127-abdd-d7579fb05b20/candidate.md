@@ -3,6 +3,19 @@
 ## Learning Goal
 
 Identify Philippine utility-related laws and codes — PD 1096 (NBCP), RA 6541 (Revised Plumbing Code), RA 9514 (Fire Code), PEC (Philippine Electrical Code), RA 9003 (Ecological Solid Waste), RA 9275 (Clean Water Act), RA 9513 (Renewable Energy Act) — and explain their scope and interrelationships.
-\<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+\ component="Tip" status="preserved"]
+Extracted summary:
+- Props: 
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, 
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+See also within MEPF Coordination and Integration: **lea-util-008-01-core-concept**, **lea-util-008-02-core-concept**, **lea-util-008-03-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

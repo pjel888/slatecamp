@@ -1,6 +1,6 @@
 # Content Diff Report: overview-professional-practice
 
-Generated: 2026-05-03T11:49:02.094Z
+Generated: 2026-05-03T13:44:21.961Z
 Article ID: 3d710cad-8857-4d44-891c-1b1a010de2cd
 Changed: true
 Safe to push locally: true

@@ -1,16 +1,10 @@
 ## COA Audit Compliance for Publicly Funded Architectural Projects
 
+<JSX>null</JSX>
+
 The Commission on Audit (COA) conducts financial and performance audits of government entities and their spending. When architectural projects are publicly funded, COA review extends to design decisions, contract management, and professional compliance. Understanding audit expectations helps architects document their work defensibly and avoid findings that delay payments or create legal exposure.
 
-## Learning Goal
-
-Explain the three pillars of COA audit (regularity, legality, economy), describe the documentation requirements for a complete audit trail, and identify common audit findings and appropriate architect responses.
-
-<Tip>Maintain these six documentation categories for audit: (1) preliminary studies and feasibility reports; (2) design development records; (3) final contract documents; (4) correspondence; (5) construction administration records (RFIs, change orders, daily logs); (6) close-out documents. Gaps in documentation are audit red flags.</Tip>
-
 ### Three Pillars of COA Audit: Regularity, Legality, and Economy
-
-<ExamTip>COA's three pillars: **Regularity** — were procedures followed (bidding per RA 9184, approvals obtained)? **Legality** — does the design comply with NBC, environmental laws, BP 344? **Economy** — was value achieved, costs controlled, waste avoided? Architects influence all three dimensions.</ExamTip>
 
 COA evaluates publicly funded projects across three dimensions. _Regularity_ ensures that established procedures were followed—that bidding was conducted per RA 9184, approvals obtained, and authorizations documented. _Legality_ verifies that the project complies with applicable laws: the National Building Code, environmental laws, accessibility standards (BP 344), and labor laws. _Economy_ assesses whether the project achieved good value—whether costs were controlled, waste avoided, and resources used efficiently.
 
@@ -18,7 +12,7 @@ Architects influence all three dimensions. Regularity failures occur when design
 
 ### Documentation Requirements for Audit Trail
 
-Architects must maintain a complete audit trail. This includes: (1) preliminary studies and feasibility reports showing design rationale; (2) design development records showing evolution of the design, decisions made, and alternatives considered; (3) final contract documents—plans, specifications, and details; (4) correspondence with the client and other consultants; (5) construction administration records—site observation notes, RFIs (Requests for Information), change orders, and daily logs; and (6) close-out documents and final costs.
+Architects must maintain a complete audit trail. This includes: (1) preliminary studies and feasibility reports showing design rationlea; (2) design development records showing evolution of the design, decisions made, and alternatives considered; (3) final contract documents—plans, specifications, and details; (4) correspondence with the client and other consultants; (5) construction administration records—site observation notes, RFIs (Requests for Information), change orders, and daily logs; and (6) close-out documents and final costs.
 
 Digital filing systems should organize documents chronologically and by project phase. Audit teams review these records to reconstruct what the architect knew at each decision point and why certain choices were made. Gaps in documentation suggest either poor project management or attempts to conceal decisions—both findings that harm the architect's credibility.
 

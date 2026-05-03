@@ -8,7 +8,7 @@ Private construction contracts may employ different bidding procedures: public c
 
 ### Competitive Bidding Process
 
-In a competitive bidding process, the Owner publicly announces the project through advertisements or invitations and invites multiple contractors to submit sealed bids. The Architect prepares the bid documents (drawings, specifications, general conditions, instructions to bidders) and distributes them to prospective bidders. Bidders are given a specified deadline to prepare proposals and submit sealed bids. Bids are typically opened at a public meeting where the Owner reads each bid amount aloud.
+In a competitive bidding process, the Owner publicly announces the project through advertisements or invitations and invites multiple contractors to submit selead bids. The Architect prepares the bid documents (drawings, specifications, general conditions, instructions to bidders) and distributes them to prospective bidders. Bidders are given a specified deadline to prepare proposals and submit selead bids. Bids are typically opened at a public meeting where the Owner reads each bid amount aloud.
 
 The Owner is not obligated to accept the lowest bid in a private competitive bidding process, though public projects must typically award to the lowest responsible bidder. In private bidding, the Owner may consider qualifications, past performance, financial stability, and other factors in addition to price. However, the Owner's selection should be based on rational criteria established before bidding; arbitrary selection or selection based on undisclosed preferences may constitute breach of the implied obligation to conduct fair procurement.
 
@@ -18,7 +18,7 @@ Each bidder must submit a bid bond accompanying the proposal, guaranteeing that 
 
 The Owner advertises the project through appropriate media (newspapers, architectural journals, owner websites, contractor associations) to attract qualified bidders. The advertisement specifies the project description, bid deadline, bid opening time and location, and point of contact for obtaining bid documents. The Owner should attract a sufficient number of bidders (typically at least three) to ensure competitive pricing.
 
-The Architect prepares Instructions to Bidders, which specify the bidding procedure, bid format, content requirements, deadline, and conditions for bid submission. Instructions to Bidders are part of the contract documents and establish binding rules for bidding. Failure to comply with Instructions to Bidders may result in bid rejection. The Instructions clarify whether bids must be sealed, whether oral bids are acceptable, and what documentation must accompany the bid (bid bond, qualifications statement, proposed subcontractors list).
+The Architect prepares Instructions to Bidders, which specify the bidding procedure, bid format, content requirements, deadline, and conditions for bid submission. Instructions to Bidders are part of the contract documents and establish binding rules for bidding. Failure to comply with Instructions to Bidders may result in bid rejection. The Instructions clarify whether bids must be selead, whether oral bids are acceptable, and what documentation must accompany the bid (bid bond, qualifications statement, proposed subcontractors list).
 
 ### Negotiated Contracts
 
@@ -36,7 +36,7 @@ The Owner may pre-qualify contractors by requesting submission of past project r
 
 Bidders must prepare proposals in strict compliance with Instructions to Bidders. The proposal identifies the Contractor's name, organization, and authorized representative; states the total bid amount; includes itemized costs if the bidding procedure requires line-item detail; and confirms that the bidder has reviewed all Contract Documents and understands the scope and conditions.
 
-Each bid must be accompanied by a bid bond (or bid security) guaranteeing that the bidder will enter into the contract if selected. The bid is sealed in an envelope marked with the project name and bid deadline. Bids received after the deadline are rejected, even if only slightly late. Oral bids (if permitted) must be recorded and read back to the bidder for confirmation. Email or electronic bids are permitted only if the Instructions specify electronic submission as acceptable.
+Each bid must be accompanied by a bid bond (or bid security) guaranteeing that the bidder will enter into the contract if selected. The bid is selead in an envelope marked with the project name and bid deadline. Bids received after the deadline are rejected, even if only slightly late. Oral bids (if permitted) must be recorded and read back to the bidder for confirmation. Email or electronic bids are permitted only if the Instructions specify electronic submission as acceptable.
 
 ### Evaluation and Award
 

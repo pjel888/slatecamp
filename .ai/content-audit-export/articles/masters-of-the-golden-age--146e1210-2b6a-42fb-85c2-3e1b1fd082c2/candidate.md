@@ -62,8 +62,6 @@ You are walking through the CCP Complex along Manila Bay at dusk. To your left, 
 ---
 
 <ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
-
-<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap: Confusing Nakpil and Antonio projects.** Both were Art Deco contemporaries active in the same era. Remember: **Antonio = FEU Campus and theaters**; **Nakpil = Quiapo Church, Rizal Theater, UP buildings**. The exam may pair a Nakpil building with Antonio's name as a distractor.

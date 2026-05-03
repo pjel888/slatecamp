@@ -6,7 +6,7 @@
 **Article UUID:** ab6d74a1-744c-4961-816a-b088bb707848
 **Article Title:** PRBOA Powers
 **Question ID:** 926e3a06-edb7-4617-ba84-521369613223
-**Model ID:** ALE-PRAC-LAW-005-010
+**Model ID:** LEA-PRAC-LAW-005-010
 **Severity:** MEDIUM
 **Category:** Law/Code (RA 9266 — Section 7)
 

@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope
 
-Generated: 2026-05-03T11:50:08.865Z
+Generated: 2026-05-03T13:45:22.367Z
 Article ID: 5e194f59-3941-4bbb-b54b-85134f25286b
 Changed: true
 Safe to push locally: true

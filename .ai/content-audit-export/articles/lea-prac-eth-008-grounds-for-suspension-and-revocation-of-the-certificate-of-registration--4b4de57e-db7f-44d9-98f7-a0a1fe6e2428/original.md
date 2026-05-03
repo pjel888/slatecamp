@@ -4,11 +4,7 @@ The Certificate of Registration grants architects the legal authority to practic
 
 ### RA 9266 Section 23 Statutory Grounds
 
-Section 23 of RA 9266 establishes four distinct grounds (a through d) for suspension or revocation. Each ground independently supports Board action.
-
-<LawCallout code="irr" section="Sec 23(a)-(d)" title="Four Grounds for Suspension or Revocation">
-RA 9266 Section 23 enumerates: (a) causes or misdemeanors under the Code of Ethical Conduct and Standards of Professional Practice; (b) fraud or deceit in obtaining a certificate of registration; (c) gross negligence, incompetence, or recklessness in the practice of architecture; and (d) violation of any provision of RA 9266, its IRR, the Code of Ethical Conduct, or Standards of Professional Practice.
-</LawCallout>
+Section 23 of RA 9266 establishes the primary grounds for suspension or revocation:
 
 **Unauthorized Signing and Sealing (UAP Code of Ethical Conduct, Canon II Sec 2)**
 An architect shall not sign and seal plans or documents that the architect did not prepare or that were not prepared under direct supervision. This prohibition protects public safety by ensuring accountability for design content. An architect who affixes a seal to plans prepared by unqualified persons shares responsibility for any defects, code violations, or structural failures. The signature and seal represent the architect's professional judgment and competence regarding all selead documents.
@@ -27,25 +23,7 @@ The phrase "openly solicited" suggests public or widely-known offers of services
 
 "Actually allowed himself to be exploited" extends the prohibition to situations where the architect passively permits non-payment or accepts work knowing compensation will not follow. This includes donating services for commercial projects (distinguished from legitimate civic or charitable work) or accepting architectural work from clients with established payment refusal patterns.
 
-**Fraud or Deceit in Obtaining Registration (RA 9266 Sec 23(b))**
-An architect commits fraud or deceit in obtaining registration by making false statements, submitting forged documents, or misrepresenting qualifications during the application process. This ground addresses the integrity of the licensing system itself — an architect who obtains a certificate through dishonest means undermines the entire regulatory framework, regardless of subsequent professional conduct.
-
-<Warn>
-  **Critical distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23(d) (Code violations) or the Code of Ethical Conduct. Sec 23(b) targets the gateway to the profession, catching architects who lied about their education, experience, or examination eligibility to secure a license they did not legitimately earn.
-</Warn>
-
-Examples include submitting a diploma from an unaccredited institution falsely represented as accredited, falsifying apprenticeship records to meet the experience requirement, cheating on the licensure examination, or making false statements in the registration application about prior disciplinary history. The Board may revoke registration upon discovery of such fraud even years after the certificate was issued.
-
-**Gross Negligence, Incompetence, or Recklessness (RA 9266 Sec 23(c))**
-An architect whose professional conduct falls below the minimum standard of care faces sanction for gross negligence, incompetence, or recklessness. This ground does not require intentional misconduct — it addresses the quality and diligence of professional work itself. Gross negligence means a serious departure from the standard of care that a reasonable architect would exercise under similar circumstances. Incompetence means a demonstrated lack of the knowledge, skill, or ability required to perform architectural services. Recklessness means conscious disregard of a substantial and unjustifiable risk that architectural work will cause harm.
-
-<LawCallout code="irr" section="Sec 23(c)" title="Gross Negligence vs. Simple Negligence">
-Simple negligence (a mistake or error in judgment) does not constitute grounds for suspension or revocation. The standard requires gross negligence — a clear, substantial, and unjustified departure from professional standards. An architect who makes an isolated calculation error in structural loading has committed simple negligence. An architect who repeatedly approves structural designs without reviewing calculations, despite visible warning signs, has committed gross negligence.
-</LawCallout>
-
-Examples include an architect who designs a structural system without performing necessary load calculations (gross negligence), an architect who repeatedly fails to identify obvious code violations in construction documents (incompetence), or an architect who seals documents for a building type the architect has no experience designing and makes no effort to consult qualified specialists (recklessness).
-
-**Code and Standards Violations (RA 9266 Sec 23(d))**
+**Code and Standards Violations (RA 9266 Sec 23)**
 An architect shall not violate any provision of RA 9266, its implementing rules and regulations, the Code of Ethical Conduct, or Standards of Professional Practice. This catch-all provision encompasses all Code violations discussed in other articles: obligations to clients, contractors, colleagues, and the public.
 
 ### IRR Section 23 Procedural Provisions
@@ -75,9 +53,9 @@ RA 9266 Section 24 (as implemented by IRR) permits reinstatement after two years
 
 However, the Board retains discretion to deny reinstatement if the architect has not genuinely remedied the conduct justifying revocation. A two-year waiting period alone does not guarantee reinstatement.
 
-### Fraud or Deceit in Obtaining Registration — Section 23(b) in Detail
+### Fraud and Deceit as Special Category
 
-Section 23(b) of RA 9266 specifically targets fraud or deceit in obtaining a certificate of registration. This ground is distinct from the Code violation grounds discussed above because it addresses the integrity of the licensing process itself rather than professional conduct after licensure. Fraudulent application for examination, false evidence of experience, misrepresented educational credentials, or false statements in registration applications justify refusal to issue or revocation of registration even if subsequent conduct complies with professional standards.
+Beyond Section 23 grounds, architects perpetrating fraud in obtaining registration face additional sanction. Fraudulent application for examination, false evidence of experience, misrepresented educational credentials, or false statements in registration applications justify refusal to issue or revocation of registration even if subsequent conduct complies with standards.
 
 ### LEA Test Points
 
@@ -97,14 +75,6 @@ Section 23(b) of RA 9266 specifically targets fraud or deceit in obtaining a cer
 
 8. **Revocation permanence** — An architect's registration is revoked for repeatedly sealing work not personally prepared. The architect must retake and pass the licensure examination to reregister, demonstrating renewed competence.
 
-9. **Fraud in obtaining registration** — An architect's diploma was issued by an institution that was not accredited by the proper authority at the time of graduation. The architect submitted this diploma in good faith, believing the institution was accredited. This does not constitute fraud under Sec 23(b) because fraud requires intent to deceive. An honest mistake about accreditation status, without knowledge of the deficiency, does not satisfy the deceit element.
-
-10. **Gross negligence threshold** — An architect designs a small residential project and makes a calculation error in sizing a beam that results in a 5% underdesign. No structural failure occurs. This is simple negligence, not gross negligence, and does not warrant revocation. However, if the architect had been warned about similar errors in three prior projects and made no effort to improve calculation methods, the pattern may rise to gross negligence.
-
-11. **Recklessness standard** — An architect seals a structural plan that was prepared by an unlicensed draftsman and contains obvious design flaws the architect could have identified by simple visual inspection. The architect did not review the plan before sealing. This is recklessness — conscious disregard of the risk of harm — and constitutes grounds under Sec 23(c).
-
-12. **Practical distinction: code vs. ability** — An architect is found liable in civil court for professional negligence in designing a structural system. The civil judgment does not automatically trigger revocation. The Board must independently find gross negligence, incompetence, or recklessness under Sec 23(c) — civil liability alone is insufficient.
-
 ### Misconceptions
 
 Many architects assume suspension and revocation are interchangeable terms. In reality, suspension is temporary and conditional; revocation is permanent unless reinstatement is granted after two years. The distinction affects the architect's career trajectory fundamentally.
@@ -114,10 +84,6 @@ Second, some architects believe investigation requires formal written complaint.
 Third, architects sometimes assume that a one-time violation, if disclosed and corrected, avoids sanction. The Code violations still warrant investigation and potential sanction even if the architect self-reported and implemented preventative measures. The Board's discretion permits considering remediation in deciding suspension vs. revocation severity, but violation alone justifies disciplinary action.
 
 Fourth, some misunderstand the two-year reinstatement provision. Two years' waiting does not guarantee reinstatement; the architect must demonstrate that conditions justifying revocation have been remedied. An architect revoked for sealing unlicensed staff work must show implementation of direct supervision systems and actual compliance for two years before reinstatement becomes likely.
-
-Fifth, architects sometimes assume that fraud in obtaining registration is just one type of Code violation treated the same as any other. In reality, Sec 23(b) fraud is procedurally distinct — the Board may revoke a registration obtained through fraud even if the architect's subsequent professional conduct has been impeccable. The ground targets the integrity of the initial licensing decision, not ongoing professional behavior.
-
-Sixth, some practitioners believe any professional mistake or negligence can trigger revocation. Section 23(c) requires gross negligence, incompetence, or recklessness — a high bar. Simple negligence, isolated errors, or honest mistakes in judgment do not constitute grounds. The Board reserves revocation for a serious, demonstrated pattern of substandard professional conduct rather than occasional human error.
 
 ### Practical Application
 

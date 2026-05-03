@@ -1,25 +1,19 @@
 {
-  "attempted_at": "2026-05-03T11:49:18.426Z",
+  "attempted_at": "2026-05-03T13:47:23.728Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "16e972e5-378d-426c-9269-d716204c52de",
   "slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:ca7e1ac56ba8ed420275028a0e53d01db1f3e65bd7c871adbcdfec8bba04ae10",
   "original_hash": "sha256:ca7e1ac56ba8ed420275028a0e53d01db1f3e65bd7c871adbcdfec8bba04ae10",
-  "candidate_hash": "sha256:4f4466fb0d7748d195422cf79847607cdea48479be9cbc68ea1cd512b479dac5",
+  "candidate_hash": "sha256:e0dba4d1fbbecc549f926b97d205516cba1451393cfe9a9591f91c99a9057fd3",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

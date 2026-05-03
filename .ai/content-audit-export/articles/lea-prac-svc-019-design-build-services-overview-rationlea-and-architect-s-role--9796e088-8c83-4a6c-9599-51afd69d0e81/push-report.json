@@ -1,25 +1,19 @@
 {
-  "attempted_at": "2026-05-03T11:49:10.670Z",
+  "attempted_at": "2026-05-03T13:47:16.544Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
   "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:5c6b0c293942e167260cfed4060f2619bc9311edd93c86b377cc468d94d9e6d9",
   "original_hash": "sha256:5c6b0c293942e167260cfed4060f2619bc9311edd93c86b377cc468d94d9e6d9",
-  "candidate_hash": "sha256:e7fceed80d23a14ce0321f4e21b98784f1203037859932627a49b9802f0d22ff",
+  "candidate_hash": "sha256:e4176f25250d9e4c399165890290bdcc7837491753fce2fd157c58231536af03",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

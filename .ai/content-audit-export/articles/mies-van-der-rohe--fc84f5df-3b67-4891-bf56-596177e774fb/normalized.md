@@ -58,7 +58,7 @@ Extracted summary:
 
 \
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+ component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...

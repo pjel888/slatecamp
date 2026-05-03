@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill
 
-Generated: 2026-05-03T11:50:23.149Z
+Generated: 2026-05-03T13:45:35.748Z
 Article ID: 425c5476-12a0-476c-96e3-3f10c1530a9c
 Changed: true
 Safe to push locally: true

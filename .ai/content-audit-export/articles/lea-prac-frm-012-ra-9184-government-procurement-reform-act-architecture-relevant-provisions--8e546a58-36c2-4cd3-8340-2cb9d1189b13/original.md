@@ -1,10 +1,8 @@
 ## RA 9184—Government Procurement Reform Act: Architecture-Relevant Provisions
 
+<JSX>null</JSX>
+
 Republic Act 9184 (Government Procurement Reform Act) establishes the legal framework for all government procurement of goods, services, and infrastructure projects. For architects, understanding RA 9184 is critical because it governs how government clients select architects, procure design services, and manage consulting contracts. The act applies to all branches and instrumentalities of government, including government-owned or controlled corporations (GOCCs) and local government units (LGUs).
-
-## Learning Goal
-
-Identify the three procurement methods under RA 9184 applicable to architectural services, explain the transparency and competitiveness principles, and describe prohibited activities and sanctions relevant to architects.
 
 ### Scope and Coverage of RA 9184
 
@@ -34,15 +32,11 @@ Architects must ensure the contract aligns with the Standards of Professional Pr
 
 RA 9184 allows three methods: competitive bidding (open to all qualified consultants), limited bidding (restricted to a pre-qualified list, used when only few firms have required expertise), and single source procurement (used in exceptional cases—emergency, sole source availability, or direct contracting with existing framework agreements).
 
-<ExamTip>Three procurement methods for architecture under RA 9184: (1) **Competitive bidding** — standard, open to all qualified; (2) **Limited bidding** — restricted to pre-qualified list, used when few firms have expertise; (3) **Single source procurement** — rare, for emergencies or sole source. Single source for architecture is exceptional.</ExamTip>
-
 For architecture, competitive bidding is standard. The government advertises the position, receives qualifications from interested firms, shortlists the best qualified, and either selects based on qualifications or conducts competitive fee bidding. Single source procurement for architecture is rare but may apply when a firm has specialized expertise or when continuing an ongoing design for a complex project.
 
 ### Prohibited Activities and Sanctions
 
 RA 9184 strictly prohibits collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects and their firms must not communicate with other bidding consultants to arrange fees, divide work, or coordinate responses. Doing so violates the law and can result in permanent disqualification from government procurement.
-
-<Tip>**Prohibited activities:** collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects must NOT communicate with other bidding firms to arrange fees or coordinate responses. Violations can result in permanent disqualification from government procurement. Disclose all conflicts of interest.</Tip>
 
 Architects must disclose conflicts of interest. If a firm has worked for the client recently on a related project, or if the same personnel would be assigned to conflicting projects, disclosure and recusal may be required. Failure to disclose creates liability.
 

@@ -14,8 +14,8 @@ Questions that propagate confirmed factual errors from their parent articles int
 
 | # | Flag ID | Article | Question | Model ID | Error |
 |---|---------|---------|----------|----------|-------|
-| 1 | 001 | BP 344 / Universal Design (9eb0b48e) | Q4 — b2951761 | ALE-PRAC-FRM-018-004 | Ramp slope: teaches 1:12 when 2024 Revised IRR says 1:20 |
-| 2 | 003 | Prohibited Acts / Penalties (3d48211b) | Q4 — 032522de | ALE-PRAC-LAW-003-004 | Penalty range P5K-P100K vs actual P100K-P5M |
+| 1 | 001 | BP 344 / Universal Design (9eb0b48e) | Q4 — b2951761 | LEA-PRAC-FRM-018-004 | Ramp slope: teaches 1:12 when 2024 Revised IRR says 1:20 |
+| 2 | 003 | Prohibited Acts / Penalties (3d48211b) | Q4 — 032522de | LEA-PRAC-LAW-003-004 | Penalty range P5K-P100K vs actual P100K-P5M |
 
 ### HIGH Severity
 
@@ -28,16 +28,16 @@ Questions that propagate confirmed factual errors from their parent articles int
 
 | # | Flag ID | Article | Question | Model ID | Error |
 |---|---------|---------|----------|----------|-------|
-| 5 | 002 | RA 9266 Overview (02a5ba32) | Q8 — 7e4e697d | ALE-PRAC-LAW-001-008 | Cite §41 for IAPOA nomination; correct is §4. Also has duplicate identical options. |
-| 6 | 004 | PRBOA Powers (ab6d74a1) | Q1 — af782bb3 | ALE-PRAC-LAW-005-001 | Counts 13 powers when Section 7 enumerates 14 |
+| 5 | 002 | RA 9266 Overview (02a5ba32) | Q8 — 7e4e697d | LEA-PRAC-LAW-001-008 | Cite §41 for IAPOA nomination; correct is §4. Also has duplicate identical options. |
+| 6 | 004 | PRBOA Powers (ab6d74a1) | Q1 — af782bb3 | LEA-PRAC-LAW-005-001 | Counts 13 powers when Section 7 enumerates 14 |
 | 7 | 007 | Change of Use (9e053410) | Q2 — 680174d1 | (bulk) | Rationale says "Certificate of Use" even though correct answer says "Certificate of Occupancy" (contradiction in question) |
 
 ### Contradiction Flags (Question correct, article wrong)
 
 | # | Flag ID | Article | Question | Model ID | Issue |
 |---|---------|---------|----------|----------|-------|
-| 8 | 008 | Reciprocity (e51e9a56) | Q2 — fffa260f | ALE-PRAC-FRM-007-002 | Q correctly says reciprocity only; article says "reciprocity OR substantial equivalence" |
-| 9 | 009 | Reciprocity (e51e9a56) | Q8 — f1d8b55e | ALE-PRAC-FRM-007-008 | Q correctly separates permits from reciprocity; article conflates them |
+| 8 | 008 | Reciprocity (e51e9a56) | Q2 — fffa260f | LEA-PRAC-FRM-007-002 | Q correctly says reciprocity only; article says "reciprocity OR substantial equivalence" |
+| 9 | 009 | Reciprocity (e51e9a56) | Q8 — f1d8b55e | LEA-PRAC-FRM-007-008 | Q correctly separates permits from reciprocity; article conflates them |
 
 ### Not Flagged (No Error Propagation)
 
@@ -53,9 +53,9 @@ Questions where the correct answer is disproportionately long, suggesting "lazy 
 
 | # | Flag ID | Article | Question | Model ID | Length Ratio | Assessment |
 |---|---------|---------|----------|----------|-------------|------------|
-| 10 | 010 | Prohibited Acts (3d48211b) | Q3 — 5b1da138 | ALE-PRAC-LAW-003-009 | ~3:1 vs avg | Suspension vs revocation — binary distinction explained at 3x length |
-| 11 | 011 | RA 9266 Overview (02a5ba32) | Q1 — 55e9adf2 | ALE-PRAC-LAW-001-007 | ~6:1 vs avg | AoR vs Consulting Architect — correct answer is a full tutorial, distractors are one-liners |
-| 12 | 012 | PRBOA Powers (ab6d74a1) | Q10 — 926e3a06 | ALE-PRAC-LAW-005-010 | ~9:1 vs shortest | Public trustee vs guild — one distractor is a 35-char throwaway |
+| 10 | 010 | Prohibited Acts (3d48211b) | Q3 — 5b1da138 | LEA-PRAC-LAW-003-009 | ~3:1 vs avg | Suspension vs revocation — binary distinction explained at 3x length |
+| 11 | 011 | RA 9266 Overview (02a5ba32) | Q1 — 55e9adf2 | LEA-PRAC-LAW-001-007 | ~6:1 vs avg | AoR vs Consulting Architect — correct answer is a full tutorial, distractors are one-liners |
+| 12 | 012 | PRBOA Powers (ab6d74a1) | Q10 — 926e3a06 | LEA-PRAC-LAW-005-010 | ~9:1 vs shortest | Public trustee vs guild — one distractor is a 35-char throwaway |
 
 ### Methodology
 

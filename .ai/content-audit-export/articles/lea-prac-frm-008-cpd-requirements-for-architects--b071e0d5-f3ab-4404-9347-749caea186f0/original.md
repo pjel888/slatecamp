@@ -1,9 +1,5 @@
 ## CPD Requirements for Architects
 
-## Learning Goal
-
-Calculate the 45-credit CPD requirement over the three-year compliance cycle, identify the five professional track areas with their minimum credit allocations, and describe the PIC renewal process and consequences of non-compliance.
-
 ### Mandate and Regulatory Framework
 
 RA 10912, the Continuing Professional Development (CPD) Act of 2016, establishes mandatory CPD requirements for all practicing architects to maintain professional licensure. The law took effect on 16 August 2016, making CPD compliance essential for PRC Professional Identification Card (PIC) renewal starting 1 July 2017. The Board of Architecture prescribes CPD guidelines in consultation with the integrated and accredited professional organization of architects.
@@ -13,8 +9,6 @@ CPD requirements apply uniformly to all registered architects maintaining active
 ### Credit Units and Compliance Cycle
 
 Architects must accumulate 45 credit units every three years to renew their PRC Professional Identification Card. The three-year cycle establishes the compliance period; architects track completion between renewal dates. Credit units are awarded for various professional activities, ranging from structured courses offering higher credits to self-directed learning providing modest credits. Architects must distribute their CPD across multiple activity types to ensure balanced professional development covering multiple knowledge areas.
-
-<ExamTip>Memorize these CPD numbers: 45 credits every 3 years (average 15/year), distributed across 5 professional track areas. No annual minimum is mandated — you may complete requirements unevenly as long as the three-year total is achieved. Failure = PIC renewal denial.</ExamTip>
 
 The 45-unit requirement over three years averages 15 units annually, though no annual minimum is mandated; architects may complete requirements unevenly as long as the three-year total is achieved. Documentation requirements include course certificates, attendance records, or completion proofs from accredited providers. Architects must maintain records of all CPD activities and provide evidence upon PRC request during ID card renewal. Failure to meet the 45-unit requirement results in PIC renewal denial until requirements are satisfied.
 
@@ -33,7 +27,5 @@ The renewal process includes paying prescribed annual registration fees for the 
 ### Impact on Professional Practice Authorization
 
 Active PIC status directly enables legal architectural practice in the Philippines. An architect without a valid, renewed PIC cannot legally practice architecture, sign and seal architectural documents, or execute professional services. Architects employed by firms or government agencies cannot practice architecture without current PIC status, regardless of employment status. This universal requirement ensures all practicing architects meet CPD standards and maintain current professional knowledge.
-
-<Tip>An architect without a valid, renewed PIC CANNOT legally practice architecture, sign and seal documents, or execute professional services — regardless of employment status. Expired PIC = no practice authorization. Maintain current CPD completion to avoid interruption.</Tip>
 
 Architects with expired PIC renewal can restore active status by completing outstanding CPD requirements and submitting renewal documentation. The restoration process reactivates the PIC effective upon approval, but projects undertaken during the lapsed period may be questioned regarding professional authority. Clients may refuse to accept services from architects without valid PIC status, and government agencies cannot employ non-licensed architects for architectural work. Maintaining current PIC status through timely CPD completion is essential for uninterrupted professional practice.

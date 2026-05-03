@@ -1,26 +1,19 @@
 {
-  "attempted_at": "2026-05-03T11:49:39.667Z",
+  "attempted_at": "2026-05-03T13:47:43.542Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
   "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:ca07d8ca85c11f180633034be40516604c120013918cb083eb4cd5e180662c00",
-  "original_hash": "sha256:4c8808b2f18fa81f9a1715f9b3db9c65b4356383b02ea63d51a313106a747871",
-  "candidate_hash": "sha256:032fe0a0a4f634c74d025219ea1de09911c300562edd8f9012c54bdd3cdfdfdf",
+  "original_hash": "sha256:ca07d8ca85c11f180633034be40516604c120013918cb083eb4cd5e180662c00",
+  "candidate_hash": "sha256:615b1e16544862e46e133136ac5da94a5c1701a4472e62ea28630dc9c1f182b8",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

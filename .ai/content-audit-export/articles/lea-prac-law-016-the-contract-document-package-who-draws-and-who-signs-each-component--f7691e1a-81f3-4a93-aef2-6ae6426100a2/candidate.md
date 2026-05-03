@@ -73,7 +73,6 @@ Legal Basis: RA 9266 (Architecture Act of 2004), Section 20(c), defining the con
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
 Extracted summary:
 - Props: courseId="LEA-PRAC-LAW-016"
 - Text: (none detected)

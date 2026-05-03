@@ -78,7 +78,6 @@ Applies to (for PWD’s exclusive use):
 - Medicines and medical supplies.[web:30]
 - Medical & dental services, diagnostics, professional fees.[web:29]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 
 \
@@ -119,8 +118,6 @@ Extracted summary:
 ---
 
 ## Penalties (After RA 10754 and Implementing Rules)
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 
 \
 

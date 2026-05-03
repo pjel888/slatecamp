@@ -1,20 +1,20 @@
 # Content Diff Report: lea-matl-004-09-core-concept
 
-Generated: 2026-05-03T11:50:14.113Z
+Generated: 2026-05-03T13:45:27.493Z
 Article ID: edb9cdaf-4969-4aa8-bd1e-e1605f51fe43
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:fc0cdce45d390526751cf80004499fb804c1552c1b009c950b46d2c7f4c2bf19`
-- Normalized: `sha256:d7b6264e7c4736dc21e88e2b65a62a076c6fb4f340644d056d54b46f8eaa3f5b`
-- Candidate: `sha256:de12a438e2272191a1c76060d029e6c566c0592361a950261b7997463de7c5a2`
+- Normalized: `sha256:2e6ea076883a08872ad9032dd4f7c4488bdd232910c8f39307bde0a41d3b6747`
+- Candidate: `sha256:5e2d3fc4df233a8602d694c0d000ed3b14ba6476c5cf3303fe3e83cf9814578c`
 
 ## Line summary
 
-- Changed lines: 17
-- Inserted lines: 14
+- Changed lines: 11
+- Inserted lines: 8
 - Deleted lines: 0
 
 ## UI block preservation
@@ -22,11 +22,11 @@ Safe to push locally: false
 - UI blocks expected: 4
 - UI blocks preserved: 4
 - UI blocks changed/missing: 0
-- Unresolved placeholders: 1
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
+- None
 
 ## Warnings
 

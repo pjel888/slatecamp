@@ -1,7 +1,44 @@
 {
   "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:78bdc55424e759997b65ad3ffb5eb8b58a960470a41ba9e221eb4e657fc05c1e",
+  "source_count": 3,
+  "sources": [
+    {
+      "source_id": "d7a23cbf-5682-4eff-8b50-aafb76e363d5",
+      "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+      "label": "Philippine Electrical Code (PEC) 2017 Part 1, Article 2.50 \u2014 Lightning Protection Systems",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Governs lightning protection system design including risk assessment, protection levels, air terminal placement, and grounding requirements.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "a9c6c6b7-b941-4acc-9ab7-383b21f363de",
+      "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+      "label": "NFPA 780: Standard for the Installation of Lightning Protection Systems",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "International standard referenced in Philippine practice for lightning protection system design and installation.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "fc933685-62d6-4f8f-aea5-7273ac8d9098",
+      "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+      "label": "PD 1096 RIRR 2004, Rule XII \u2014 Structural Lightning Protection Requirements",
+      "url": null,
+      "source_type": "primary_law",
+      "description": "Requires lightning protection for buildings exceeding certain height thresholds (typically 15m) and buildings in high lightning density areas.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    }
+  ]
 }

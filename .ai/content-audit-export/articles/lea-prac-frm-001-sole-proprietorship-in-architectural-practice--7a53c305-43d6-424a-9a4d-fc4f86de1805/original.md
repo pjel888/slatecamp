@@ -1,16 +1,10 @@
 ## Sole Proprietorship in Architectural Practice
 
-## Learning Goal
-
-Differentiate sole proprietorship from other forms of architectural practice, identify its legal requirements under RA 9266, and evaluate the liability and continuity implications for the individual architect.
-
 ### Definition and Legal Requirements
 
 A sole proprietorship is an individual architect practicing and delivering architectural services, duly registered with the Department of Trade and Industry (DTI), Board of Architecture (BOA), and Professional Regulation Commission (PRC). This structure is the simplest form of architectural practice under RA 9266. The architect maintains complete ownership and control of the practice.
 
 The sole proprietor must hold a valid Certificate of Registration and Professional Identification Card. The architect is personally responsible for all debts, liabilities, and obligations of the practice. This unlimited personal liability is a defining characteristic that distinguishes sole proprietorships from corporate structures. Annual registration and renewal are required with all regulatory bodies.
-
-<Tip>**Key distinction:** In a sole proprietorship, the architect and the practice are legally inseparable. Unlike corporations, there is no corporate veil protecting personal assets. Professional liability insurance is not optional — it is essential for protecting the architect's personal financial exposure.</Tip>
 
 ### Ownership and Control Structure
 

@@ -2,13 +2,8 @@
 
 <Callout>The 19th century marks the transition from historical revivals to modern architecture through industrial innovation and design reform movements. The board exam tests your knowledge of key buildings, the shift from ornamental excess to functional design, and the architects who bridged tradition and modernity.</Callout>
 
-## Learning Goal
-
-Identify the key 19th-century buildings, movements, and architects—Crystal Palace (Paxton), Arts and Crafts (Morris, Voysey), Chicago School (Sullivan, Jenney)—and explain how industrial materials, design reform, and the principle of form follows function transformed architecture from ornament-driven revivalism toward modernism.
-
-
 ## Core Concept
-The 19th century was a pivotal century for architecture, driven by three major forces: industrial technology, design philosophy reform, and urban expansion. Early in the century, architects adopted historical styles—Gothic Revival, Neoclassical—as industrial manufacturing grew. By midcentury, new materials (cast iron, steel, glass) fundamentally changed what buildings could do. The **Crystal Palace** (1851, **Joseph Paxton**, London) exemplified this shift: it used prefabricated iron and glass on an unprecedented scale, proving that industrial materials could be beautiful and functional. This building challenged the assumption that architecture required masonry and ornament.
+The 19th century was a pivotal century for architecture, driven by three major forces: industrial technology, design philosophy reform, and urban expansion. Early in the century, architects adopted historical styles—Gothic Revival, Neoclassical—as industrial manufacturing grew. By midcentury, new materials (cast iron, steel, glass) fundamentally changed what buildings could do. The **Crystal Palace** (1851, **Joseph Paxton**, London) exemplified this shift: it used prefabricated iron and glass on an unprecedented sclea, proving that industrial materials could be beautiful and functional. This building challenged the assumption that architecture required masonry and ornament.
 
 <Tip>
 **Crystal Palace 1851 = industrial materials + prefabrication + proof that beauty doesn't require masonry.** This single building made clear that function and material honesty could be aesthetic without ornament. It legitimized everything modernism would claim a century later.

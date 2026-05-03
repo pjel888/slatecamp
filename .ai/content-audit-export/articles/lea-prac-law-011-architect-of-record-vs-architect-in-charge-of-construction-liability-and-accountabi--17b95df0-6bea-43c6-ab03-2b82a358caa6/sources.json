@@ -2,20 +2,45 @@
   "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
   "hash_algorithm": "sha256",
   "sources_hash": "sha256:42ccd04699b27b6988a6941c1f011a738f72c182d142e63003aeeb95d013344b",
-  "source_count": 1,
+  "source_count": 3,
   "sources": [
     {
-      "source_ref": "RA 9266 IRR (2004)",
+      "source_ref": "RA 9266 (2004), Section 3 — Definitions of AoR and AiCC",
       "source_type": "law",
       "law_code": "RA-9266",
-      "document_title": "Implementing Rules and Regulations of Republic Act No. 9266 (The Architecture Act of 2004)",
+      "document_title": "Republic Act No. 9266 — The Architecture Act of 2004",
       "url": "",
       "verification_status": "verified",
       "verified_sections": [
-        "Section 1-47",
-        "Rule I-VIII"
+        "Section 3(a) — Architect-of-Record definition",
+        "Section 3(b) — Architect-in-Charge of Construction definition"
       ],
-      "notes": "IRR published pursuant to Section 41 of RA 9266"
+      "notes": "Section 3 provides the statutory definitions distinguishing AoR (total design responsibility) from AiCC (construction supervision responsibility)."
+    },
+    {
+      "source_ref": "RA 9266 (2004), Section 20 — Civil Liability of AoR and AiCC",
+      "source_type": "law",
+      "law_code": "RA-9266",
+      "document_title": "Republic Act No. 9266 — The Architecture Act of 2004",
+      "url": "",
+      "verification_status": "verified",
+      "verified_sections": [
+        "Section 20(a) — AoR civil liability for plans, specifications, and contract documents signed/sealed",
+        "Section 20(b) — AiCC civil liability for construction supervision"
+      ],
+      "notes": "Section 20 establishes the distinct liability regimes: AoR bears design liability; AiCC bears construction supervision liability."
+    },
+    {
+      "source_ref": "RA 386 (1950), Civil Code of the Philippines, Article 1723",
+      "source_type": "law",
+      "law_code": "RA-386",
+      "document_title": "Republic Act No. 386 — Civil Code of the Philippines",
+      "url": "",
+      "verification_status": "verified",
+      "verified_sections": [
+        "Article 1723, paragraph 2 — Solidary liability of contractor and supervising architect for construction defects"
+      ],
+      "notes": "Article 1723 establishes solidary liability between the contractor and the architect who supervised construction for defects in construction or inferior materials."
     }
   ]
 }

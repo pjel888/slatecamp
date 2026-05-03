@@ -1,7 +1,44 @@
 {
   "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:94b9293af0671c5f79df1d2b47e0899c8ccf357601d6c23103c875bdb5f89e2b",
+  "source_count": 3,
+  "sources": [
+    {
+      "source_id": "db8cbe25-acaa-4604-aa71-427696cfac1f",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "label": "NSCP 2015, Chapter 2 \u2014 Seismic Provisions for MEPF Systems",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Requires seismic bracing and flexible connections for all mechanical, electrical, plumbing, and fire protection systems in Seismic Zone 4.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "1212ec8e-85f3-43e3-ade7-a1c9129fae37",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "label": "NSCP 2015, Section 2.12 \u2014 Non-Structural Component Seismic Requirements",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Specifies seismic force levels and bracing requirements for non-structural components including MEPF equipment, conduit, piping, and ductwork.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "56407f86-d5d0-43e9-b27f-70e51918d18f",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "label": "PD 1096 RIRR 2004, Rule XII \u2014 Anchorage and Bracing Requirements for Building Services",
+      "url": null,
+      "source_type": "primary_law",
+      "description": "General requirements for anchorage of building service equipment and systems to resist seismic and wind forces.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    }
+  ]
 }

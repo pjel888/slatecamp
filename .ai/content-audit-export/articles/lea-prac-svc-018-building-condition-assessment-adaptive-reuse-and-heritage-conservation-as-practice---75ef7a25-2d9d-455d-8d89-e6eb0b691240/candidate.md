@@ -46,7 +46,7 @@ Architects offering these specialized services should possess documented experie
 
 These services position architects as strategic advisors on building performance, life extension, and sustainable practice. As building performance analysis and environmental responsibility gain importance, these specialized service categories expand in scope and significance.
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+<SPP206RefServices />
 
 <ProcessFlow>
 <ol>
@@ -77,3 +77,5 @@ These services position architects as strategic advisors on building performance
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

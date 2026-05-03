@@ -1,40 +1,38 @@
 {
   "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
   "slug": "lea-matl-005-09-core-concept",
-  "generated_at": "2026-05-03T11:49:45.190Z",
+  "generated_at": "2026-05-03T13:45:02.215Z",
   "old_hash": "sha256:df81de102d55f5e3322a9c9a3cf81b94350151901ecb29311fa1b6c92e01c48f",
-  "new_hash": "sha256:c963f5192aca8d520b0ad6a40c6f2caba34dcf84a36224b8ab125946e4060c74",
+  "new_hash": "sha256:b4d2d384baf0704e3a4dcedf71b1ca1d7d8e4d15ee0d26ae40cac44cc91cc010",
   "original_hash": "sha256:df81de102d55f5e3322a9c9a3cf81b94350151901ecb29311fa1b6c92e01c48f",
-  "normalized_hash": "sha256:dab15d7bf0f3d8eff9a91645056ff1170e3b756c0a744030e8d9fe7c7c53410f",
-  "candidate_hash": "sha256:c963f5192aca8d520b0ad6a40c6f2caba34dcf84a36224b8ab125946e4060c74",
+  "normalized_hash": "sha256:e24e858eaf16e7f2d54058d00e1be6c450613fdcf1a5abf5ca15867d7fad02f6",
+  "candidate_hash": "sha256:b4d2d384baf0704e3a4dcedf71b1ca1d7d8e4d15ee0d26ae40cac44cc91cc010",
   "changed": true,
-  "changed_line_count": 18,
-  "inserted_line_count": 14,
+  "changed_line_count": 12,
+  "inserted_line_count": 8,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 6,
   "ui_blocks_candidate_count": 6,
   "ui_blocks_changed_count": 0,
   "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 1,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 6,
   "changed_text_summary": {
-    "changed": 18,
-    "inserted": 14,
+    "changed": 12,
+    "inserted": 8,
     "deleted": 0,
     "original_line_count": 60,
-    "candidate_line_count": 74
+    "candidate_line_count": 68
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

@@ -1,13 +1,13 @@
 # Content Diff Report: certificate-of-occupancy
 
-Generated: 2026-05-03T11:50:12.163Z
+Generated: 2026-05-03T13:45:25.652Z
 Article ID: 68eeacdb-a61b-4f53-bbe9-e2459fa8d152
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:cdb4e77c531bd50e5ae746c600b82e74511e7c40f9ab959e8ec9f41d94c8d543`
+- Original: `sha256:f730afece33b7753c59fe84bc35225731540e4fbb2ffa75e8b76365758894bf0`
 - Normalized: `sha256:fa9447638c56d81725192d56356d5789935fbf3e948518d1d49aa7316696bd55`
 - Candidate: `sha256:997210a9127a88e6ef45777ad9ef9de7036adc9f5e17dc6ac6d14e62287c2f48`
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

@@ -1,25 +1,19 @@
 {
-  "attempted_at": "2026-05-03T11:49:21.682Z",
+  "attempted_at": "2026-05-03T13:47:26.508Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
   "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:5935c5453fe63aef73edd20f593f69948604b066026f9f73f72e98d030f308e2",
   "original_hash": "sha256:5935c5453fe63aef73edd20f593f69948604b066026f9f73f72e98d030f308e2",
-  "candidate_hash": "sha256:5f6763936ae17a3f1073df9143fa404d35c9bd5a7f46b69a9ee3a4398a47d9b3",
+  "candidate_hash": "sha256:93c4b7c3545013dc99b4a051120eb9c286e3e85d122274c198d2e914dc8c798e",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on
 
-Generated: 2026-05-03T11:50:19.110Z
+Generated: 2026-05-03T13:45:32.076Z
 Article ID: 5967e69f-d295-4dd2-9eb7-b4f1a321db4d
 Changed: true
 Safe to push locally: true

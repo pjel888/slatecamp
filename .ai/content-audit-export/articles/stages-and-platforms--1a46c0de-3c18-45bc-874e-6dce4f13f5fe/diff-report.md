@@ -1,6 +1,6 @@
 # Content Diff Report: stages-and-platforms
 
-Generated: 2026-05-03T11:49:23.555Z
+Generated: 2026-05-03T13:44:42.656Z
 Article ID: 1a46c0de-3c18-45bc-874e-6dce4f13f5fe
 Changed: true
 Safe to push locally: true

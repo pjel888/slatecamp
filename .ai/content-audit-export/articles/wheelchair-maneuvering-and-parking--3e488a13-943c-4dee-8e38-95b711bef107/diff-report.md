@@ -1,6 +1,6 @@
 # Content Diff Report: wheelchair-maneuvering-and-parking
 
-Generated: 2026-05-03T11:50:20.822Z
+Generated: 2026-05-03T13:45:33.526Z
 Article ID: 3e488a13-943c-4dee-8e38-95b711bef107
 Changed: true
 Safe to push locally: true

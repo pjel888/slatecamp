@@ -1,6 +1,6 @@
 # Content Diff Report: mastery-structural-conceptualization
 
-Generated: 2026-05-03T11:49:08.303Z
+Generated: 2026-05-03T13:44:28.273Z
 Article ID: bb2f1b8b-855d-4eeb-aeb3-8cf3874508d0
 Changed: true
 Safe to push locally: true

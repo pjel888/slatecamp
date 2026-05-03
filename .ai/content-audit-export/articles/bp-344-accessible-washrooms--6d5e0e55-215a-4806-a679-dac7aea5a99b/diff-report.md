@@ -1,6 +1,6 @@
 # Content Diff Report: bp-344-accessible-washrooms
 
-Generated: 2026-05-03T11:50:19.509Z
+Generated: 2026-05-03T13:45:32.480Z
 Article ID: 6d5e0e55-215a-4806-a679-dac7aea5a99b
 Changed: true
 Safe to push locally: true

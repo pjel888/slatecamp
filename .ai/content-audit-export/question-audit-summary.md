@@ -22,7 +22,7 @@ Issue types checked and found clean:
 1. **lea-hist-001-05** (Greek Architecture): Question `bbdeac5c` had "All of the above" (option d) as the correct answer for a question about Greek column drum construction. Option a ("reducing total weight") was misleading — drums divide weight into manageable sections but don't reduce total structural weight. **Fix**: Replaced with specific correct answer (option a) identifying transport advantages and entasis benefits, with independently verifiable distractors.
 
 ### Theory (2 issues)
-2. **lea-theo-009-03** (Space Standards): Question `cd54f247` had `rationale: null` and `model_id: null`. **Fix**: Proposed complete rationale explaining the code-minimum vs. standard-practice distinction, and assigned model_id `ALE-THEO-009-03-010`.
+2. **lea-theo-009-03** (Space Standards): Question `cd54f247` had `rationale: null` and `model_id: null`. **Fix**: Proposed complete rationale explaining the code-minimum vs. standard-practice distinction, and assigned model_id `LEA-THEO-009-03-010`.
 
 3. **lea-theo-009-03** (Space Standards): Question `a9c96a9e` had typo "WWhile" in the rationale — should be "While". **Fix**: Corrected the rationale text.
 

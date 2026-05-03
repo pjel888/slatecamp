@@ -1,6 +1,6 @@
 # Content Diff Report: lea-plan-005-01-what-you-need-to-know-for-the-lea
 
-Generated: 2026-05-03T11:50:22.099Z
+Generated: 2026-05-03T13:45:34.691Z
 Article ID: f5374d6a-fc70-475e-83ce-7feb64056655
 Changed: true
 Safe to push locally: true

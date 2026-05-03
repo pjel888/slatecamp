@@ -1,6 +1,6 @@
 # Content Diff Report: site-planning-accessible-routes-vs-open-space
 
-Generated: 2026-05-03T11:49:08.713Z
+Generated: 2026-05-03T13:44:28.643Z
 Article ID: 3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046
 Changed: true
 Safe to push locally: true

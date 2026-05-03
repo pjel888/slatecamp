@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation
 
-Generated: 2026-05-03T11:49:50.764Z
+Generated: 2026-05-03T13:45:06.368Z
 Article ID: df4b2a65-1d08-41b6-83c8-944df4d35938
 Changed: true
 Safe to push locally: true

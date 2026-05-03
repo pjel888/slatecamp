@@ -173,6 +173,14 @@ Design integration sequencing matters: establish passive design envelope first, 
 
 This framework ensures LEA-UTIL-007-05 content aligns with current Philippine regulatory expectations and practical implementation pathways for building utilities professionals.
 
-\<Callout type="info">
-The Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compliance and operational cost reduction.
-</Callout>
+\ component="Callout" status="preserved"]
+Extracted summary:
+- Props: 
+- Text: The Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compli
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+See also within Renewable and Alternative Energy: **lea-util-007-02-core-concept**, **lea-util-007-04-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

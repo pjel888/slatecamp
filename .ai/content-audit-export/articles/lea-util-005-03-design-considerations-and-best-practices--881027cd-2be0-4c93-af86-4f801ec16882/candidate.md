@@ -69,7 +69,41 @@ Large buildings may have a fire command center or emergency operations center. T
 
 Fire detection and alarm systems are communications networks that detect hazards and broadcast safety-critical information to occupants, responders, and building systems. In the Philippine context, system design must account for 220V/60Hz power, RA 9514 occupancy classifications, and NFPA 72 signaling standards. The choice between conventional and addressable architectures, Class A vs. Class B circuits, centralized or distributed voice evacuation, and single or redundant monitoring paths all depends on the building's risk profile and life safety obligations. Proper wiring, grounding, and integration with building management systems ensure that fire alarm signals reliably reach the people and systems that respond.
 
-\<Callout type="info">The 220V/60Hz electrical standard in the Philippines affects fire alarm power supply sizing and standby battery calculations. Fire alarm systems must maintain minimum 24-hour standby plus 15-minute alarm duration per NFPA 72 Chapter 10 Section 10.6, requiring robust UPS and battery backup design.</Callout>
+\ component="Callout" status="preserved"]
+Extracted summary:
+- Props: 
+- Text: The 220V/60Hz electrical standard in the Philippines affects fire alarm power supply sizing and standby battery calculations. Fire alarm systems must maintain minimum 24-hour standby plus 15-minute al
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Addressable detectors in the Philippines comply with NFPA 72 addressing requirements. A typical addressable loop supports 200–250 devices per SLC, depending on the panel manufacturer and protocol. Pan
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: A hotel in Metro Manila has a fire detection alarm triggered on the 12th floor. The FACP identifies the detector address (12-F-201, west corridor). The voice processor is programmed to: - Announce eva
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: A common installation error in Philippine buildings: connecting fire alarm system ground to a different point than the building's main electrical ground. This creates a ground potential difference and
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: A building's alarm signal may reach the fire department through multiple paths: 1. The FACP sends the alarm to a central monitoring station (via SIA or Ethernet). 2. The central station verifies the a
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: A 15-story office building in Makati has a fire alarm on the 8th floor. The FACP: 1. Activates the NAC alarm (sirens and strobes on floors 7–10) 2. Routes voice evacuation to announce on floors 7–10 3
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+See also within Security and Communication Systems: **lea-util-005-04-core-concept**, **lea-util-005-05-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
 Extracted summary:
 - Props: title="Loop Polarity in Class A SLC Circuits" variant="info"

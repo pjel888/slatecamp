@@ -1,25 +1,19 @@
 {
-  "attempted_at": "2026-05-03T11:50:14.946Z",
+  "attempted_at": "2026-05-03T13:48:23.447Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
   "slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:896caf6df4770c5a6c1cf110e0de28570eda94866a123d77764794ef171eef87",
   "original_hash": "sha256:896caf6df4770c5a6c1cf110e0de28570eda94866a123d77764794ef171eef87",
-  "candidate_hash": "sha256:b827e56c1ab75a4a775449f059e398a05a4a0a8c981c18ad8df4a49c6f4043c6",
+  "candidate_hash": "sha256:fd01f989baad330361f22fdd87f4cfff0526607d0785ddb107b2be9f120983c3",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

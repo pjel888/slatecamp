@@ -2,11 +2,6 @@
 
 <Callout>The LEA tests your ability to identify and explain the foundational architectural vocabulary of Islamic design. You must recognize the defining structural and decorative elements that appear across regional variations.</Callout>
 
-## Learning Goal
-
-Identify and describe the five pillars of Islamic architectural vocabulary—Mosque, Minaret, Mihrab, Muqarnas, Arabesques/Calligraphy—and explain their structural function, religious purpose, and regional variation across Islamic architecture.
-
-
 ## Core Concept
 Islamic architecture developed a distinct visual and functional vocabulary shaped by religious practice, climate adaptation, and geometric philosophy. Unlike Gothic verticals or classical columns, Islamic design prioritizes the interior court (courtyard), the prayer hall, and intricate surface decoration. The **mosque** forms the core building type, but Islamic architectural principles extend to palaces, madrasas, and domestic spaces.
 

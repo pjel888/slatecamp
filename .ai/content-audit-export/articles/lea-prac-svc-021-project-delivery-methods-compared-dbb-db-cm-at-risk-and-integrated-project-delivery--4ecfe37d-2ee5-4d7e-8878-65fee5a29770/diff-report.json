@@ -1,42 +1,38 @@
 {
   "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
   "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
-  "generated_at": "2026-05-03T11:49:22.089Z",
+  "generated_at": "2026-05-03T13:44:41.100Z",
   "old_hash": "sha256:4f9e0d41fdc1517a3a2fb1ab86b917ecfc87a75909d79c36cc3e984fd791bc96",
-  "new_hash": "sha256:46be39044a24cae9cc3b37f261fbb87eb95bb19f302113c9efb3024c9ae5b5e5",
+  "new_hash": "sha256:e9d9ba334b0662054ac4b83e90cefeb0a040679a213e963f4b38f32d54df0660",
   "original_hash": "sha256:4f9e0d41fdc1517a3a2fb1ab86b917ecfc87a75909d79c36cc3e984fd791bc96",
-  "normalized_hash": "sha256:11590966e39751a5e3275ec27b214805824f274c5c1bdcdc5a606528ef8a970b",
-  "candidate_hash": "sha256:46be39044a24cae9cc3b37f261fbb87eb95bb19f302113c9efb3024c9ae5b5e5",
+  "normalized_hash": "sha256:0c6b44931b7e552ac7cbd3b8f90deb7a7a41b3c77777b8b6a7a180e270fef2b6",
+  "candidate_hash": "sha256:e9d9ba334b0662054ac4b83e90cefeb0a040679a213e963f4b38f32d54df0660",
   "changed": true,
-  "changed_line_count": 68,
-  "inserted_line_count": 41,
+  "changed_line_count": 70,
+  "inserted_line_count": 43,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 1,
+  "ui_blocks_candidate_count": 5,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 5,
   "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "preserved_blocks_count": 5,
   "changed_text_summary": {
-    "changed": 68,
-    "inserted": 41,
+    "changed": 70,
+    "inserted": 43,
     "deleted": 0,
     "original_line_count": 49,
-    "candidate_line_count": 90
+    "candidate_line_count": 92
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate is missing 1 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

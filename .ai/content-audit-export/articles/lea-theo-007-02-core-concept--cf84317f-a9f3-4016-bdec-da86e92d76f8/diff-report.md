@@ -1,6 +1,6 @@
 # Content Diff Report: lea-theo-007-02-core-concept
 
-Generated: 2026-05-03T11:49:50.388Z
+Generated: 2026-05-03T13:45:06.128Z
 Article ID: cf84317f-a9f3-4016-bdec-da86e92d76f8
 Changed: true
 Safe to push locally: true

@@ -26,7 +26,7 @@
 **Flag Report Ref:** Flag 1 — CRITICAL
 
 ### Question Q4 (b2951761) — PROPAGATES ERROR
-- **Model ID:** ALE-PRAC-FRM-018-004
+- **Model ID:** LEA-PRAC-FRM-018-004
 - **Question:** "What is the recommended ramp slope ratio according to BP 344?"
 - **Correct Answer (b):** "1:12 preferred, steeper allowed temporarily with conditions"
 - **Rationale:** Explicitly states "BP 344 specifies maximum ramp slope of 1:12 (1V:12H) for permanent ramps; maximum 1:20 allowed temporarily" and calls 1:20 "too shallow" and "generally not recommended"
@@ -43,7 +43,7 @@ Questions Q1, Q2, Q3, Q5, Q6, Q7, Q8, Q9, Q10 test general accessibility princip
 **Flag Report Ref:** Flag 2 — CONFIRMED INCORRECT
 
 ### Question Q8 (7e4e697d) — PROPAGATES ERROR
-- **Model ID:** ALE-PRAC-LAW-001-008
+- **Model ID:** LEA-PRAC-LAW-001-008
 - **Question:** "Which organization does Section 41 designate as the source from which PRBoA nominees must be drawn?"
 - **Correct Answer (a):** "IAPOA (Integrated and Accredited Professional Organization of Architects, now UAP)"
 - **Rationale:** "Section 41 of RA 9266 designates the IAPOA...as the exclusive source from which PRBoA nominees are submitted to the Commission."
@@ -62,7 +62,7 @@ Q1 (liability distinction), Q2 (repealed law), Q3 (board composition), Q4 (appoi
 - Flag 5: Linked question Q4 has wrong penalty range
 
 ### Question Q4 (032522de) — PROPAGATES ERROR (QUESTION ITSELF WRONG)
-- **Model ID:** ALE-PRAC-LAW-003-004
+- **Model ID:** LEA-PRAC-LAW-003-004
 - **Question:** "What penalties does RA 9266 impose for violation of its prohibitions?"
 - **Correct Answer (b):** "A fine of not less than P5,000 nor more than P100,000, or imprisonment of not less than 6 months nor more than 6 years, or both."
 - **Rationale:** "Sections 29-30 specify criminal penalties" (this section ref is actually correct for the question itself)
@@ -79,7 +79,7 @@ Q1 (foundational prohibition), Q2 (fraudulent licensure), Q3 (suspension vs revo
 **Flag Report Ref:** Flag 1 — LIKELY_INCORRECT
 
 ### Question Q1 (af782bb3) — PROPAGATES ERROR
-- **Model ID:** ALE-PRAC-LAW-005-001
+- **Model ID:** LEA-PRAC-LAW-005-001
 - **Question:** "How many specific powers and functions are enumerated in Section 7 of RA 9266?"
 - **Correct Answer (c):** "13 powers (from (a) through (n))"
 - **Rationale:** "Section 7 lists powers (a) through (n), creating a 13-part enumeration"
@@ -148,7 +148,7 @@ The article's error ("950 m from the ground" instead of "950 sq.m floor area") i
 - Flag 4: Claims Section 38 temporary permits required for ALL foreign architects (incorrect — only for those without Philippine licensure)
 
 ### Question Q2 (fffa260f) — CONTRADICTS ARTICLE (QUESTION IS CORRECT, ARTICLE IS WRONG)
-- **Model ID:** ALE-PRAC-FRM-007-002
+- **Model ID:** LEA-PRAC-FRM-007-002
 - **Question:** "What is required before a foreign national is permitted to take the Philippine licensure examination?"
 - **Correct Answer (b):** "Proof that reciprocity exists between countries"
 - **Rationale:** "RA 9266 Section 27 requires proof that reciprocity exists"
@@ -156,7 +156,7 @@ The article's error ("950 m from the ground" instead of "950 sq.m floor area") i
 - **Verdict:** QUESTION IS CORRECT; ARTICLE IS WRONG. The question's correct answer contradicts the article's erroneous claim about "substantial equivalence." This creates a user-facing contradiction — students using both resources get mixed signals.
 
 ### Question Q8 (f1d8b55e) — QUESTION CORRECTLY DISTINGUISHES RECIPROCITY FROM PERMITS
-- **Model ID:** ALE-PRAC-FRM-007-008
+- **Model ID:** LEA-PRAC-FRM-007-008
 - **Question:** "Do temporary or special permits for foreign architects require reciprocity status?"
 - **Correct Answer (b):** "No, temporary and special permits remain discretionary Board decisions"
 - **Rationale:** "Reciprocity establishes licensure examination eligibility; temporary and special permits remain discretionary Board decisions independent of reciprocity status."
@@ -172,18 +172,18 @@ Q1 (basic principle), Q3 (unconditional recognition), Q4 (strict and absolute eq
 
 | # | Article | Q ID | Model ID | Issue | Error Type | Severity |
 |---|---------|------|----------|-------|------------|----------|
-| 1 | 9eb0b48e | b2951761 | ALE-PRAC-FRM-018-004 | Ramp slope 1:12 vs 1:20 | Wrong factual claim in answer | CRITICAL |
-| 2 | 02a5ba32 | 7e4e697d | ALE-PRAC-LAW-001-008 | §41 vs §4 for IAPOA nomination | Wrong section reference | MEDIUM |
-| 3 | 3d48211b | 032522de | ALE-PRAC-LAW-003-004 | Penalty range P5K-P100K vs P100K-P5M | Wrong factual values in answer | CRITICAL |
-| 4 | ab6d74a1 | af782bb3 | ALE-PRAC-LAW-005-001 | 13 vs 14 powers count | Wrong count in answer | MEDIUM |
+| 1 | 9eb0b48e | b2951761 | LEA-PRAC-FRM-018-004 | Ramp slope 1:12 vs 1:20 | Wrong factual claim in answer | CRITICAL |
+| 2 | 02a5ba32 | 7e4e697d | LEA-PRAC-LAW-001-008 | §41 vs §4 for IAPOA nomination | Wrong section reference | MEDIUM |
+| 3 | 3d48211b | 032522de | LEA-PRAC-LAW-003-004 | Penalty range P5K-P100K vs P100K-P5M | Wrong factual values in answer | CRITICAL |
+| 4 | ab6d74a1 | af782bb3 | LEA-PRAC-LAW-005-001 | 13 vs 14 powers count | Wrong count in answer | MEDIUM |
 | 5 | 9e053410 | bf891ad7 | (bulk) | Group G/H/A labels + Cert of Use | Wrong occupancy groups + wrong document type | HIGH |
 | 6 | 9e053410 | 680174d1 | (bulk) | Cert of Use mentioned in rationale | Wrong document type in rationale | MEDIUM |
 | 7 | 9e053410 | c7878ba7 | (bulk) | Cert of Use in mnemonic/rationale | Wrong document type in rationale | MEDIUM |
 | 8 | 9e053410 | 470ba6ed | (bulk) | "Certificate of Use" as correct term in options | Wrong document type in question options | MEDIUM |
 | 9 | 9e053410 | (Q18) | (bulk) | Certificate of Use as correct answer | Wrong document type as correct answer | MEDIUM |
 | 10 | 9e053410 | (Q24) | (bulk) | Certificate of Use in rationale | Wrong document type in rationale | MEDIUM |
-| 11 | e51e9a56 | fffa260f | ALE-PRAC-FRM-007-002 | Question contradicts article (Q correct, article wrong) | Article-question contradiction | MEDIUM |
-| 12 | e51e9a56 | f1d8b55e | ALE-PRAC-FRM-007-008 | Question contradicts article (Q correct, article wrong) | Article-question contradiction | MEDIUM |
+| 11 | e51e9a56 | fffa260f | LEA-PRAC-FRM-007-002 | Question contradicts article (Q correct, article wrong) | Article-question contradiction | MEDIUM |
+| 12 | e51e9a56 | f1d8b55e | LEA-PRAC-FRM-007-008 | Question contradicts article (Q correct, article wrong) | Article-question contradiction | MEDIUM |
 
 ---
 

@@ -1,40 +1,38 @@
 {
   "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
   "slug": "stairs-handrails-guardrails",
-  "generated_at": "2026-05-03T11:49:43.960Z",
+  "generated_at": "2026-05-03T13:45:00.903Z",
   "old_hash": "sha256:d0e5e629a7ea229d9093fc1a8f602dd19b721c9dbf799594d11fbc459a6d9e78",
-  "new_hash": "sha256:51325a557136371ad8a07612b5c7cceda93f3b9145ae7624bffbe88c264a8f04",
+  "new_hash": "sha256:08cfab4cd9211c9ac43fd999a1fb1df8f0a88f4c2dcf81cd6aa365acfcc45933",
   "original_hash": "sha256:d0e5e629a7ea229d9093fc1a8f602dd19b721c9dbf799594d11fbc459a6d9e78",
-  "normalized_hash": "sha256:9c73a247f16a8937a33fc3df8a678d08eb83fca578b1a49015fc67545f27effb",
-  "candidate_hash": "sha256:51325a557136371ad8a07612b5c7cceda93f3b9145ae7624bffbe88c264a8f04",
+  "normalized_hash": "sha256:47179a061edab358f0832cb49df4a834f76ebd7af7340cd278939b17e05c6a27",
+  "candidate_hash": "sha256:08cfab4cd9211c9ac43fd999a1fb1df8f0a88f4c2dcf81cd6aa365acfcc45933",
   "changed": true,
-  "changed_line_count": 174,
-  "inserted_line_count": 53,
+  "changed_line_count": 170,
+  "inserted_line_count": 49,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 1,
   "ui_blocks_candidate_count": 1,
   "ui_blocks_changed_count": 0,
   "ui_blocks_count": 1,
-  "unresolved_placeholders_count": 1,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 1,
   "changed_text_summary": {
-    "changed": 174,
-    "inserted": 53,
+    "changed": 170,
+    "inserted": 49,
     "deleted": 0,
     "original_line_count": 121,
-    "candidate_line_count": 174
+    "candidate_line_count": 170
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

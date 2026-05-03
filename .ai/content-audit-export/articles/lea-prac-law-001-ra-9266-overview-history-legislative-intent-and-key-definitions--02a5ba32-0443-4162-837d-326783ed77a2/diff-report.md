@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions
 
-Generated: 2026-05-03T11:49:41.249Z
+Generated: 2026-05-03T13:44:58.541Z
 Article ID: 02a5ba32-0443-4162-837d-326783ed77a2
 Changed: true
 Safe to push locally: true

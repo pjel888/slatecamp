@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.830Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:5c6b0c293942e167260cfed4060f2619bc9311edd93c86b377cc468d94d9e6d9",
-  "normalized_content_hash": "daf5fb2f1b347260a51e719126fd695906bd883c84b1b226e33cb6e26d12c33d",
+  "normalized_content_hash": "1f9d6dbac24e246c1ed893decefce3ee23dc570f532e5ab42813601274dcead6",
   "ui_block_count": 5,
   "total_blocks": 5,
   "blocks": [
@@ -31,12 +31,12 @@
       "status": "preserved"
     },
     {
-      "block_id": "ui_0001",
+      "block_id": "ui_0005",
       "block_type": "mdx_component",
       "component_name": "KeyValues",
       "raw": "<KeyValues items={[{\"value\": \"15%\", \"label\": \"Schematic Design\"}, {\"value\": \"20%\", \"label\": \"Design Development\"}, {\"value\": \"50%\", \"label\": \"Contract Docs\"}, {\"value\": \"5%\", \"label\": \"Bidding Assist\"}, {\"value\": \"10%\", \"label\": \"Constr. Admin.\"}]} />",
       "raw_hash": "sha256:8582b3eb28fd4f7a35dec6b8174795ab8db0ecdb69571e165cbd46455ffc08b2",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\\\"[{\\\\\"value\\\\\": \\\\\"15%\\\\\", \\\\\"label\\\\\": \\\\\"Schematic Design\\\\\"}, {\\\\\"value\\\\\": \\\\\"20%\\\\\", \\\\\"label\\\\\": \\\\\"Design Development\\\\\"}, {\\\\\"value\\\\\": \\\\\"50%\\\\\", \\\\\"label\\\\\": \\\\\"Contract Docs\\\\\"}, {\\\\\"value\\\\\": \\\\\"5%\\\\\", \\\\\"label\\\\\": \\\\\"Bidding Assist\\\\\"}, {\\\\\"value\\\\\": \\\\\"10%\\\\\", \\\\\"label\\\\\": \\\\\"Constr. Admin.\\\\\"}]\\\"\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\\\"[{\\\\\"value\\\\\": \\\\\"15%\\\\\", \\\\\"label\\\\\": \\\\\"Schematic Design\\\\\"}, {\\\\\"value\\\\\": \\\\\"20%\\\\\", \\\\\"label\\\\\": \\\\\"Design Development\\\\\"}, {\\\\\"value\\\\\": \\\\\"50%\\\\\", \\\\\"label\\\\\": \\\\\"Contract Docs\\\\\"}, {\\\\\"value\\\\\": \\\\\"5%\\\\\", \\\\\"label\\\\\": \\\\\"Bidding Assist\\\\\"}, {\\\\\"value\\\\\": \\\\\"10%\\\\\", \\\\\"label\\\\\": \\\\\"Constr. Admin.\\\\\"}]\\\"\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:6516b96d2f9e6a82cd69b2ab89de4b795fbf341c1e8b39e9662b79f6b80d8b54",
       "props": {
         "items": "[{\"value\": \"15%\", \"label\": \"Schematic Design\"}, {\"value\": \"20%\", \"label\": \"Design Development\"}, {\"value\": \"50%\", \"label\": \"Contract Docs\"}, {\"value\": \"5%\", \"label\": \"Bidding Assist\"}, {\"value\": \"10%\", \"label\": \"Constr. Admin.\"}]"

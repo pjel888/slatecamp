@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges
 
-Generated: 2026-05-03T11:50:17.527Z
+Generated: 2026-05-03T13:45:30.645Z
 Article ID: 946e44ee-e4d7-452d-a00a-066bae0f273c
 Changed: true
 Safe to push locally: true

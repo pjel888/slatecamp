@@ -1,6 +1,6 @@
 # Structural Conceptualization — Overview & Study Strategy
 
-Structural Conceptualization sits at the heart of Area B in the Philippine Licensure Examination for Architects. It asks a deceptively honest question: can you think structurally? Not just recall formulas — but genuinely understand why buildings stand, how forces travel through them, and what happens when the ground shakes.
+Structural Conceptualization sits at the heart of Area B in the Philippine Architecture Licensure Exam. It asks a deceptively honest question: can you think structurally? Not just recall formulas — but genuinely understand why buildings stand, how forces travel through them, and what happens when the ground shakes.
 
 If you've been putting this subject off because it feels more like engineering than architecture, this guide is your entry point. The good news: you don't need an engineering degree. You need a clear mental model, the right sequence, and consistent practice with the National Structural Code of the Philippines (NSCP 2015).
 

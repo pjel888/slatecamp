@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
 
 <Callout>
-The Vitruvian Triad is tested on virtually every Philippine Licensure Examination for Architects (LEA). You must know the three principles precisely, understand their Latin and English terminology, and be able to explain each with modern architectural examples. This is foundational theory that cannot be avoided or minimized. Examiners expect candidates to articulate clearly how firmitas, utilitas, and venustas interact to define architecture.
+The Vitruvian Triad is tested on virtually every Philippine Architecture Licensure Examination. You must know the three principles precisely, understand their Latin and English terminology, and be able to explain each with modern architectural examples. This is foundational theory that cannot be avoided or minimized. Examiners expect candidates to articulate clearly how firmitas, utilitas, and venustas interact to define architecture.
 </Callout>
 
 ## Core Concept

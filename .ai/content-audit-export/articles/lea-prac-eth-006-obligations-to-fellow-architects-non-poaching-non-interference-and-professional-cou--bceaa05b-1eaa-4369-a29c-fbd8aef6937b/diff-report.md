@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy
 
-Generated: 2026-05-03T11:49:15.933Z
+Generated: 2026-05-03T13:44:35.630Z
 Article ID: bceaa05b-1eaa-4369-a29c-fbd8aef6937b
 Changed: true
 Safe to push locally: true

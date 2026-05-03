@@ -1,5 +1,5 @@
 ## What You Need to Know for the LEA
-Sprinkler systems and fire detection change two critical egress parameters: sprinklers increase the allowable travel distance from **$46\text{m}$ to $61\text{m}$** and extend the allowable length of dead-end corridors from **$6\text{m}$ to $15\text{m}$**. This is one of the highest-impact code relationships in fire safety design for the Licensure Examination for Architects (LEA).
+Sprinkler systems and fire detection change two critical egress parameters: sprinklers increase the allowable travel distance from **$46\text{m}$ to $61\text{m}$** and extend the allowable length of dead-end corridors from **$6\text{m}$ to $15\text{m}$**. This is one of the highest-impact code relationships in fire safety design for the Architecture Licensure Examination.
 
 ## Core Concept
 Automatic sprinkler systems, combined with fire detection and alarm systems, significantly reduce the probability that a fire will grow unchecked. Under **RA 9514**, buildings with functioning sprinkler systems are granted longer travel distances and dead-end corridors because early detection and suppression buy occupants more time to evacuate safely.

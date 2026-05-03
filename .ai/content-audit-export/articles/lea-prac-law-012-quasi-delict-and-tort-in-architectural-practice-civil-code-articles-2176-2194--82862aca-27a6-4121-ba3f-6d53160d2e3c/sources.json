@@ -2,20 +2,49 @@
   "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
   "hash_algorithm": "sha256",
   "sources_hash": "sha256:d23d99dfad4789269ec249f0240958927513ccfad1f13d740eb1d560863eb310",
-  "source_count": 1,
+  "source_count": 3,
   "sources": [
     {
-      "source_ref": "RA 386 (1950)",
+      "source_ref": "RA 386 (1950), Civil Code of the Philippines — Quasi-Delict Provisions",
       "source_type": "law",
       "law_code": "RA-386",
-      "document_title": "Republic Act No. 386 \u2014 Civil Code of the Philippines",
+      "document_title": "Republic Act No. 386 — Civil Code of the Philippines",
       "url": "",
       "verification_status": "verified",
       "verified_sections": [
-        "Articles 1723",
-        "Articles 2176-2194"
+        "Article 2176 — Quasi-delict defined: act or omission causing damage through fault or negligence",
+        "Article 2180 — Employer/principal liability for employees' negligent acts",
+        "Article 2189 — Owner/employer liability for employees'/contractors' negligent acts",
+        "Article 2194 — Solidary liability for quasi-delict when multiple parties cause damage",
+        "Articles 2191-2193 — Rules on apportionment of liability"
       ],
-      "notes": "Civil Code articles relevant to architect liability"
+      "notes": "Articles 2176-2194 establish the quasi-delict (culpa aquiliana) framework. Article 2176 is the foundational negligence provision; Article 2180 establishes vicarious liability of architects for employees."
+    },
+    {
+      "source_ref": "RA 386 (1950), Civil Code of the Philippines — Prescription Periods",
+      "source_type": "law",
+      "law_code": "RA-386",
+      "document_title": "Republic Act No. 386 — Civil Code of the Philippines",
+      "url": "",
+      "verification_status": "verified",
+      "verified_sections": [
+        "Article 1146 — Quasi-delict actions prescribe in 4 years from accrual of cause of action",
+        "Article 1144 — Written contract actions prescribe in 10 years"
+      ],
+      "notes": "Article 1146 establishes the 4-year prescription period for quasi-delict claims, distinct from the 10-year prescription for written contracts (Article 1144) and the 15-year/10-year framework under Article 1723."
+    },
+    {
+      "source_ref": "RA 9266 (2004), Section 20 — Architect's Civil Liability",
+      "source_type": "law",
+      "law_code": "RA-9266",
+      "document_title": "Republic Act No. 9266 — The Architecture Act of 2004",
+      "url": "",
+      "verification_status": "verified",
+      "verified_sections": [
+        "Section 20(a) — AoR civil liability for plans, specifications, and contract documents",
+        "Section 20(b) — AiCC civil liability for construction supervision"
+      ],
+      "notes": "Section 20 complements Civil Code quasi-delict provisions by establishing the architect's professional liability framework."
     }
   ]
 }

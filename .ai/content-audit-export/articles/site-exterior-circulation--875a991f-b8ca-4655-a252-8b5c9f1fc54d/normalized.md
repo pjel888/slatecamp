@@ -175,12 +175,12 @@ Accessible ramps, dropped sidewalks, and curb cuts inside the lot cannot permane
 
 ---
 
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
@@ -188,4 +188,3 @@ Extracted summary:
 ## Cross‑References
 
 **Site Planning Accessible Routes Vs Open Space**, **Transport Nodes Escalators Walkways**, **Minimum Parking Requirements**, **Pedestrian Protection During Construction**
-

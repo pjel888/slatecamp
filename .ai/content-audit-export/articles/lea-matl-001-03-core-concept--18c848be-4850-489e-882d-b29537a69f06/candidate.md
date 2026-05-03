@@ -127,9 +127,3 @@ See also within Wood and Timber Products: **lea-matl-001-04-core-concept**, **le
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
 
-
-[SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Tip — Classify wood joints (mortise-and-tenon, dovetail, lap, dado:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
-[/SLATECAMP_UI_BLOCK]

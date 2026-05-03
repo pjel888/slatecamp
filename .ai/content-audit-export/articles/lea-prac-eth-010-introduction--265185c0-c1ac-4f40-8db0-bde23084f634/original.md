@@ -439,7 +439,7 @@ Same violation (inadequate site investigation) yields vastly different disciplin
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects (LEA) syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering unprofessional conduct patterns

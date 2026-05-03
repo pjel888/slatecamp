@@ -1,9 +1,9 @@
 # Content Diff Report: lea-theo-004-03-core-concept
 
-Generated: 2026-05-03T11:50:01.427Z
+Generated: 2026-05-03T13:45:15.190Z
 Article ID: e2d9d304-9362-4472-8ca8-34106f6990dd
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -19,14 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 12
+- UI blocks expected: 11
 - UI blocks preserved: 11
-- UI blocks changed/missing: 1
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

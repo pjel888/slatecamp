@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method
 
-Generated: 2026-05-03T11:49:53.300Z
+Generated: 2026-05-03T13:45:08.097Z
 Article ID: db248a33-44f2-411c-a069-9685200a588c
 Changed: true
 Safe to push locally: true

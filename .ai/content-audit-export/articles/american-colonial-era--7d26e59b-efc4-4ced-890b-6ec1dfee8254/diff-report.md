@@ -1,6 +1,6 @@
 # Content Diff Report: american-colonial-era
 
-Generated: 2026-05-03T11:49:21.209Z
+Generated: 2026-05-03T13:44:40.308Z
 Article ID: 7d26e59b-efc4-4ced-890b-6ec1dfee8254
 Changed: true
 Safe to push locally: true

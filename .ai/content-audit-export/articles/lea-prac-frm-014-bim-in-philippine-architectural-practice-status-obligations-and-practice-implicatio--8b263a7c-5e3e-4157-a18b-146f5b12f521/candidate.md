@@ -24,17 +24,13 @@ The contract should clarify who owns the model, who has usage rights, and what h
 
 ### Obligations When BIM is Specified
 
-
-
 <ExamTip>
   **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract standards), NBCP (building regulation). LEA questions test which law governs specific situations.
 </ExamTip>
 
-
 <Warn>
   ****Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequential, not parallel. Architects must advise clients on both sets of obligations or risk project delays and penalties.**
 </Warn>
-
 
 <LawCallout code="irr" section="Regulatory Framework" title="Applicable Regulations">
 Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD 1096), and various specialty laws covering accessibility (BP 344), fire safety (RA 9514), and environmental compliance (PD 1586, DENR DAO).
@@ -82,7 +78,6 @@ BIM training covers not just software but also modeling standards, clash detecti
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
 Extracted summary:
 - Props: code=ra9266, section=Section 3 - Scope of Practice
 - Text: null

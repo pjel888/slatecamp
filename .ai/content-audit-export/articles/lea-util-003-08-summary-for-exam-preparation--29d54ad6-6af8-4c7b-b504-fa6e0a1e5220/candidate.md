@@ -27,12 +27,41 @@ Key takeaways for the LEA:
 
 _Article prepared in compliance with DOE resource assessments, Meralco grid interconnection procedures, and international standards (IEC, IEEE, ISO). All numerical values dated 2026 based on current rates, equipment costs, and regulatory guidance. Updates anticipated for 2027 as tariffs and technology costs evolve._
 
-\<Note>
-  Insolation varies with orientation, tilt angle, and shading. Unobstructed
-  south-facing surfaces at latitude tilt (14–16° in most of Philippines) receive
-  maximum annual energy. Fixed horizontal arrays receive ~10% less; fixed
-  south-facing tilted arrays at latitude optimize year-round performance.
-</Note>
+\ component="Note" status="preserved"]
+Extracted summary:
+- Props: 
+- Text: Insolation varies with orientation, tilt angle, and shading. Unobstructed south-facing surfaces at latitude tilt (14–16° in most of Philippines) receive maximum annual energy. Fixed horizontal arrays 
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Use 2 m² per 400 Wp panel as quick rule-of-thumb for space planning. A 25 kWp system needs ~125 m² roof area, equivleant to a modest three-story commercial building's rooftop.
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: **Installation Checklist:** - Obtain Meralco net metering application and approval - PEC-registered electrician inspection and certification - Structural engineer stamp (roof loading analysis) - Build
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Hybrid inverter commissioning requires MPPT tuning, voltage setpoints, and battery management system (BMS) integration. Engage qualified BMS specialist for safety. Lithium batteries operate optimally 
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Hire structural engineer for any commercial roof installation >15 kWp or if building is &lt;15 years old (may not have original design calcs). Stamp required for permit.
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Maintenance logs (date, nature of work, parts replaced) must be retained for warranty claims and system performance benchmarking. Use monitoring app (most inverters include WiFi/cloud data) to track k
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util-003-03-core-concept**, **lea-util-003-04-core-concept**, **lea-util-003-05-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
 Extracted summary:
 - Props: title='Philippine Regulatory Framework' variant='info'

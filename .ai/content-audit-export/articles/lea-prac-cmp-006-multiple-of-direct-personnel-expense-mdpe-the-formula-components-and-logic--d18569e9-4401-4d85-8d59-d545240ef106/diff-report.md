@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic
 
-Generated: 2026-05-03T11:50:09.516Z
+Generated: 2026-05-03T13:45:23.038Z
 Article ID: d18569e9-4401-4d85-8d59-d545240ef106
 Changed: true
 Safe to push locally: true

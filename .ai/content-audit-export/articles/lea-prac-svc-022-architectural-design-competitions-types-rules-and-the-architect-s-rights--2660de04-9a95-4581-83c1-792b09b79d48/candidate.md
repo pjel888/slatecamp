@@ -58,7 +58,7 @@ Standards also recommend that design competitions occur under supervised conditi
 
 Architects benefit when competitions follow professional standards, provide adequate compensation, protect intellectual property rights, and limit design development requirements to levels justified by compensation offered. Participation in competitions adhering to these standards benefits both individual architects and the profession.
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+<SPP206RefServices />
 
 <ProcessFlow>
 <ol>
@@ -89,3 +89,5 @@ Architects benefit when competitions follow professional standards, provide adeq
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

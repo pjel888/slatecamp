@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:44.179Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:6db352bb1df94d3a705d8d7d32c76e1b6348ca593f04a990f4a718ec83533156",
-  "normalized_content_hash": "f026ecb2385480de0b2420cb82b7894c927be61275c4648b49b6d58e18c2eab6",
+  "normalized_content_hash": "7731ded9dfb955154738c6ac552ff40d01ca960d2f0c205f088f500b9f564493",
   "ui_block_count": 5,
   "total_blocks": 5,
   "blocks": [
@@ -12,15 +12,15 @@
       "block_id": "ui_0001",
       "block_type": "mdx_component",
       "component_name": "Tip",
-      "raw": "<Tip>Memory aid: \"AAMA Gold Label = ≤0.30 cfm air leakage + ≥94 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"</Tip>",
+      "raw": "<Tip>Memory aid: \"AAMA Gold Label = \u22640.30 cfm air leakage + \u226594 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"</Tip>",
       "raw_hash": "sha256:9f822a618ab495f04105ba3eb8a4ea834267566bfe7780c9d8533e23b4de2d67",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: \"AAMA Gold Label = ≤0.30 cfm air leakage + ≥94 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: \"AAMA Gold Label = \u22640.30 cfm air leakage + \u226594 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:e1ea8146108458108878d48702ceaaddbc5106c6a32c3f53ca0a0f5ce7dedfc5",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "Memory aid: \"AAMA Gold Label = ≤0.30 cfm air leakage + ≥94 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"",
-      "children_text": "Memory aid: \"AAMA Gold Label = ≤0.30 cfm air leakage + ≥94 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"",
+      "children_raw": "Memory aid: \"AAMA Gold Label = \u22640.30 cfm air leakage + \u226594 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"",
+      "children_text": "Memory aid: \"AAMA Gold Label = \u22640.30 cfm air leakage + \u226594 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction.\"",
       "start_offset": 6693,
       "end_offset": 6915,
       "line_start": 45,
@@ -62,19 +62,19 @@
       "block_id": "ui_0003",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.\" correction=\"Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95°F, nominal strength may be 20-25 percent lower than rated.\" />",
+      "raw": "<WikiMistakeCard mistake=\"Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.\" correction=\"Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated.\" />",
       "raw_hash": "sha256:4e0c658c79820dbcc06c156aed6956e560fd66160157a0a613556457e3781fe3",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.\", correction=\"Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95°F, nominal strength may be 20-25 percent lower than rated.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.\", correction=\"Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:6ab900832bbc65bbfaa0c2d9a32446d41dc9a3b21123168b759d716a01c15153",
       "props": {
         "mistake": "Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.",
-        "correction": "Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95°F, nominal strength may be 20-25 percent lower than rated."
+        "correction": "Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated."
       },
       "props_json": {
         "mistake": "Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.",
-        "correction": "Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95°F, nominal strength may be 20-25 percent lower than rated."
+        "correction": "Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated."
       },
-      "props_text": "mistake=\"Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.\" correction=\"Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95°F, nominal strength may be 20-25 percent lower than rated.\"",
+      "props_text": "mistake=\"Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.\" correction=\"Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95\u00b0F, nominal strength may be 20-25 percent lower than rated.\"",
       "children_raw": null,
       "children_text": null,
       "start_offset": 7335,

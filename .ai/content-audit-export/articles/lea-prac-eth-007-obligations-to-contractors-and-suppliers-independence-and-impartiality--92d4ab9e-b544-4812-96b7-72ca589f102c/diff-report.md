@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality
 
-Generated: 2026-05-03T11:49:27.596Z
+Generated: 2026-05-03T13:44:46.320Z
 Article ID: 92d4ab9e-b544-4812-96b7-72ca589f102c
 Changed: true
 Safe to push locally: true

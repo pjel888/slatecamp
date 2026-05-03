@@ -1,13 +1,13 @@
 # Content Diff Report: lea-prac-eth-012-introduction
 
-Generated: 2026-05-03T11:50:18.471Z
+Generated: 2026-05-03T13:45:31.538Z
 Article ID: 5f341f81-5e43-49d6-a821-2a67c5d07c59
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:854d94098403c00d4204d0557efe6a40fee13d073e9c6724d7ea88e684f524c9`
+- Original: `sha256:3ccf32cfdcb0995cc7f7b6ef7777c896a38d875f1c9b7e1dc861a2d64a9b2aed`
 - Normalized: `sha256:e88995eee6e5adb68adfe857399a8edc7b92952a7ac69211040abb0a6e6f3b04`
 - Candidate: `sha256:f5dba5d91dc35ea6c20bb2d6d512ae34d243197d2d15fdc3822571a8ae477755`
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

@@ -74,13 +74,7 @@ Extracted summary:
 
 \
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing s...
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+ component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...

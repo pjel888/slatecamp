@@ -1,42 +1,38 @@
 {
   "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
   "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
-  "generated_at": "2026-05-03T11:49:10.671Z",
+  "generated_at": "2026-05-03T13:44:30.590Z",
   "old_hash": "sha256:5c6b0c293942e167260cfed4060f2619bc9311edd93c86b377cc468d94d9e6d9",
-  "new_hash": "sha256:e7fceed80d23a14ce0321f4e21b98784f1203037859932627a49b9802f0d22ff",
+  "new_hash": "sha256:e4176f25250d9e4c399165890290bdcc7837491753fce2fd157c58231536af03",
   "original_hash": "sha256:5c6b0c293942e167260cfed4060f2619bc9311edd93c86b377cc468d94d9e6d9",
-  "normalized_hash": "sha256:daf5fb2f1b347260a51e719126fd695906bd883c84b1b226e33cb6e26d12c33d",
-  "candidate_hash": "sha256:e7fceed80d23a14ce0321f4e21b98784f1203037859932627a49b9802f0d22ff",
+  "normalized_hash": "sha256:1f9d6dbac24e246c1ed893decefce3ee23dc570f532e5ab42813601274dcead6",
+  "candidate_hash": "sha256:e4176f25250d9e4c399165890290bdcc7837491753fce2fd157c58231536af03",
   "changed": true,
-  "changed_line_count": 64,
-  "inserted_line_count": 41,
+  "changed_line_count": 66,
+  "inserted_line_count": 43,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 1,
+  "ui_blocks_candidate_count": 5,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 5,
   "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "preserved_blocks_count": 5,
   "changed_text_summary": {
-    "changed": 64,
-    "inserted": 41,
+    "changed": 66,
+    "inserted": 43,
     "deleted": 0,
     "original_line_count": 39,
-    "candidate_line_count": 80
+    "candidate_line_count": 82
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate is missing 1 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

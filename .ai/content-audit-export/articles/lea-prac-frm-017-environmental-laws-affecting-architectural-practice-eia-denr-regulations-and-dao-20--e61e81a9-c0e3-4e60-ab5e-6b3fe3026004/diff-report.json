@@ -1,40 +1,38 @@
 {
   "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
   "slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
-  "generated_at": "2026-05-03T11:50:09.919Z",
+  "generated_at": "2026-05-03T13:45:23.419Z",
   "old_hash": "sha256:d752fd311e62bbb631cbf7db9331429c04fc88c560d4fc7bf92818b9e27a3069",
-  "new_hash": "sha256:72efb2c64a09f895e34b40eff3f268391ebec89f6e52a0fc899594bf4330349a",
+  "new_hash": "sha256:cf6db51987f91c0d9f93c9df389bc442791fc8a01d1a80a1fe62f70d628d6f4d",
   "original_hash": "sha256:d752fd311e62bbb631cbf7db9331429c04fc88c560d4fc7bf92818b9e27a3069",
-  "normalized_hash": "sha256:8ad25bcd75180e24aa3296fe8cde5699eb85e31aedc87f45b17147c8a5ddc003",
-  "candidate_hash": "sha256:72efb2c64a09f895e34b40eff3f268391ebec89f6e52a0fc899594bf4330349a",
+  "normalized_hash": "sha256:0a3845b62a8fad301896b9a84a05bf21d2886e1c05b85bbd1bc7a6a53141682b",
+  "candidate_hash": "sha256:cf6db51987f91c0d9f93c9df389bc442791fc8a01d1a80a1fe62f70d628d6f4d",
   "changed": true,
-  "changed_line_count": 68,
-  "inserted_line_count": 37,
+  "changed_line_count": 66,
+  "inserted_line_count": 35,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
   "ui_blocks_candidate_count": 4,
   "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 68,
-    "inserted": 37,
+    "changed": 66,
+    "inserted": 35,
     "deleted": 0,
     "original_line_count": 58,
-    "candidate_line_count": 95
+    "candidate_line_count": 93
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

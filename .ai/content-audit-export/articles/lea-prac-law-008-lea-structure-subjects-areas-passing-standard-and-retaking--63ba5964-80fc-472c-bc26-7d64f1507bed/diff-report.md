@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking
 
-Generated: 2026-05-03T11:49:32.448Z
+Generated: 2026-05-03T13:44:50.526Z
 Article ID: 63ba5964-80fc-472c-bc26-7d64f1507bed
 Changed: true
 Safe to push locally: true

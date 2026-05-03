@@ -4,7 +4,7 @@
 
 ### Academic Foundation and Moral Character
 
-To apply for the Licensure Examination for Architects (LEA) (LEA), candidates must meet four fundamental requirements established under RA 9266, Section 13. First, applicants must hold a Bachelor of Science degree in Architecture from a school, college, academy, or institute duly recognized and accredited by the Commission on Higher Education (CHED). This ensures all candidates have completed a rigorous five-year architectural curriculum. Second, all applicants must be of _good moral character_, established through documentary evidence and a valid NBI clearance. Third, candidates must possess Diversified Architectural Experience (DAE) of _two (2) years_ documented through an Architect-Mentor Affidavit. Fourth, applicants must not have been convicted of any criminal offense involving moral turpitude.
+To apply for the Architect Licensure Examination (LEA), candidates must meet four fundamental requirements established under RA 9266, Section 13. First, applicants must hold a Bachelor of Science degree in Architecture from a school, college, academy, or institute duly recognized and accredited by the Commission on Higher Education (CHED). This ensures all candidates have completed a rigorous five-year architectural curriculum. Second, all applicants must be of _good moral character_, established through documentary evidence and a valid NBI clearance. Third, candidates must possess Diversified Architectural Experience (DAE) of _two (2) years_ documented through an Architect-Mentor Affidavit. Fourth, applicants must not have been convicted of any criminal offense involving moral turpitude.
 
 ### Diversified Architectural Experience (DAE) Requirements
 

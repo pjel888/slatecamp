@@ -277,7 +277,7 @@ Extracted summary:
 - [ ] Produce single-line diagram with all voltages, breaker ratings, conductor sizes
 - [ ] Submit design to Meralco and local authority for approval
 
-\[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+\ component="Callout" status="preserved"]
 Extracted summary:
 - Props: 
 - Text: The PEC (Philippine Electrical Code) 2021 Edition mandates that all commercial buildings receive power through a proper metering and service entrance, with calculated feeder sizes and coordinated prot
@@ -288,9 +288,3 @@ See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-
-[SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Tip — Diagram the electrical distribution hierarchy — from utility:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
-[/SLATECAMP_UI_BLOCK]

@@ -163,9 +163,3 @@ See also within Masonry and Concrete: **lea-matl-002-03-core-concept**, **lea-ma
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
 
-
-[SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Tip — Identify cement types (Types I–V per ASTM C150 / PNS 43) by :** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
-[/SLATECAMP_UI_BLOCK]

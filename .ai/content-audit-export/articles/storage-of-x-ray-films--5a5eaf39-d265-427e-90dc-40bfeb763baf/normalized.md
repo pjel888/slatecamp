@@ -327,7 +327,7 @@ Compared to the NFPA 40 standard for cellulose nitrate film storage, which of th
 
 **Question 3**
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+ component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....

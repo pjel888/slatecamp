@@ -284,7 +284,6 @@ This connects to Rule V (Fire Zones) and the IRR provisions on hazardous occupan
 
 **ADDITION** (IRR Sec. 106): *"New construction added to an existing building or structure which increases its height and/or its floor area."*
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 
 \
@@ -426,8 +425,6 @@ The US exception for detached 1-2 family dwellings is analogous to the PH except
 **How the LEA tests this:** The distractor presents a scenario where only one dimension (height OR area, not both) changes, hoping candidates assume both must change. The "and/or" in the definition is the key.
 
 ---
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 
 \
 

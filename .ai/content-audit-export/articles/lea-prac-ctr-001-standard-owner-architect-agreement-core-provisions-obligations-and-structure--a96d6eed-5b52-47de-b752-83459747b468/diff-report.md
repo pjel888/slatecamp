@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure
 
-Generated: 2026-05-03T11:50:23.023Z
+Generated: 2026-05-03T13:45:35.620Z
 Article ID: a96d6eed-5b52-47de-b752-83459747b468
 Changed: true
 Safe to push locally: true

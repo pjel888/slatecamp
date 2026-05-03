@@ -148,12 +148,12 @@ The tactile path must **prioritize elevator access** and terminate at a **warnin
 
 ---
 
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
@@ -161,4 +161,3 @@ Extracted summary:
 ## Cross‑References
 
 **Stairs Handrails Guardrails**, **Widths Slopes**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Elevator Dimensions**
-

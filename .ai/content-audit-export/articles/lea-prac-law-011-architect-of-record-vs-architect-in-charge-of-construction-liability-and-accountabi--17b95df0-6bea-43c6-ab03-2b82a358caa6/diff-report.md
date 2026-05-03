@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability
 
-Generated: 2026-05-03T11:49:30.739Z
+Generated: 2026-05-03T13:44:49.102Z
 Article ID: 17b95df0-6bea-43c6-ab03-2b82a358caa6
 Changed: true
 Safe to push locally: true

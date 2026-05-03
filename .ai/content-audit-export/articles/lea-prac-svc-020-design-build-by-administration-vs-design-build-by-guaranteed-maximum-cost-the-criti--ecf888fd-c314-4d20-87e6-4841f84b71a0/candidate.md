@@ -52,7 +52,7 @@ Both models require clear contractual definition of scope, responsibilities, cha
 
 Successful Design-Build relationships, regardless of model, depend on transparency about cost factors, clear communication about design implications, and shared commitment to project success. The contractual structure provides the framework, but professional integrity and collaborative problem-solving determine actual outcomes.
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+<SPP207RefServices />
 
 <ProcessFlow>
 <ol>
@@ -83,3 +83,5 @@ Successful Design-Build relationships, regardless of model, depend on transparen
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

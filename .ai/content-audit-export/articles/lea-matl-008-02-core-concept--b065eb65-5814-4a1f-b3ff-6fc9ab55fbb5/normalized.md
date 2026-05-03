@@ -79,9 +79,3 @@ See also within Hardware, Joints, and Fasteners: **lea-matl-008-01-core-concept*
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
 
-
-[SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Tip — Identify window hardware types (casement operators, sliding :** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
-[/SLATECAMP_UI_BLOCK]

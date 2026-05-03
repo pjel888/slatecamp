@@ -1,7 +1,44 @@
 {
   "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:15a6c036533709ea961789025f2ea51b358e0d9ffe8c3857ca995ddf110bdde2",
+  "source_count": 3,
+  "sources": [
+    {
+      "source_id": "2abae333-753d-47b6-af6c-5a127f3c3f70",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "label": "Philippine Electrical Code (PEC) 2017 Part 1, Article 7 \u2014 Emergency Power Systems",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Governs emergency power system requirements including generator sizing, transfer switch requirements, and automatic startup for life safety systems.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "e5ab6e0f-604b-4fbd-9bfb-e183cf52f527",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "label": "PD 1096 RIRR 2004, Rule XII \u2014 Emergency Lighting and Backup Power Requirements",
+      "url": null,
+      "source_type": "primary_law",
+      "description": "Specifies when emergency power is required by occupancy type and building height. Minimum illumination levels for egress paths.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "406db14f-cd6d-48e7-b9d8-6461f09f97ff",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "label": "RA 9514: Fire Code of the Philippines \u2014 Emergency Power for Fire Protection Systems",
+      "url": null,
+      "source_type": "primary_law",
+      "description": "Requires emergency/standby power for fire alarm systems, fire pumps, and smoke management systems in specified occupancies.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    }
+  ]
 }

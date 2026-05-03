@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not
 
-Generated: 2026-05-03T11:49:44.356Z
+Generated: 2026-05-03T13:45:01.274Z
 Article ID: 7e511a5d-edb1-4622-8f0f-29c1a631c145
 Changed: true
 Safe to push locally: true

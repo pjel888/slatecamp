@@ -337,7 +337,7 @@ The Philippine tropical climate introduces specific design considerations not ad
 
 The number sequence — **2 and 8** — doubles from one requirement to the next. If you remember "2 and 8," you will never mix up the two discharge clearances. Add the qualifier: **"from the gate"** to remind you this applies to the discharge point (the end of the exhaust duct), not to the booth itself.
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+ component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....

@@ -1,6 +1,6 @@
 # Content Diff Report: residential-clearances
 
-Generated: 2026-05-03T11:50:08.987Z
+Generated: 2026-05-03T13:45:22.481Z
 Article ID: 5ba0b022-0a85-4d27-af92-79d093a8d491
 Changed: true
 Safe to push locally: true

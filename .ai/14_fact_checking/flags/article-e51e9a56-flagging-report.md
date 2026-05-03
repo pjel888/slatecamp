@@ -131,16 +131,16 @@ These are separate, parallel pathways. The article incorrectly implies that Sect
 
 | Question ID | Model ID | Text | Correct Answer | Flag Status | Reason |
 |------------|----------|------|---------------|-------------|--------|
-| `02c48c83-807e-4ada-876e-6329d8030ae8` | ALE-PRAC-FRM-007-004 | What does 'strict and absolute equality' require? | b | OK | Consistent with article |
-| `749e15b5-067f-4c38-a4fb-f105bd61cf72` | ALE-PRAC-FRM-007-003 | What does 'unconditional recognition' mean? | b | OK | Consistent with article |
-| `2c785f40-5853-43f7-aac4-d625a389fb59` | ALE-PRAC-FRM-007-007 | Can a foreign architect automatically practice? | b | OK | Article is confusing but question is correct |
-| `29c88c97-2e22-4c46-a825-d8465e805671` | ALE-PRAC-FRM-007-001 | Basic principle of reciprocity | b | OK | Consistent with article |
-| `f1d8b55e-144a-4637-bcd6-d3c47fcd89cd` | ALE-PRAC-FRM-007-008 | Do temporary permits require reciprocity? | b | **FLAGGED** | Article's broad claim that "all foreign architects must secure temporary permits" could confuse learners about the question's nuanced answer |
-| `fb69fe01-691f-43e0-837b-b3cc4165ad25` | ALE-PRAC-FRM-007-009 | Double exam fees — reciprocity? | b | OK | Consistent with article |
-| `fffa260f-fb8a-45fc-90fc-b4c9918cbcb0` | ALE-PRAC-FRM-007-002 | Required before foreign national takes exam? | b | **FLAGGED** | Article claims "reciprocity OR substantial equivalence" but question answer is reciprocity only. Potential contradiction. |
-| `e1aefbf8-56d8-497c-97c2-9fc50cb56b9e` | ALE-PRAC-FRM-007-005 | How does Board assess reciprocity? | c | OK | Consistent with article |
-| `39e32c3f-ef26-49ae-b227-992489e1185e` | ALE-PRAC-FRM-007-010 | How use reciprocity info? | b | OK | Consistent with article |
-| `a0780570-b344-4882-b84d-8171e14f8d34` | ALE-PRAC-FRM-007-006 | Country restricts access later? | b | OK | Consistent with article |
+| `02c48c83-807e-4ada-876e-6329d8030ae8` | LEA-PRAC-FRM-007-004 | What does 'strict and absolute equality' require? | b | OK | Consistent with article |
+| `749e15b5-067f-4c38-a4fb-f105bd61cf72` | LEA-PRAC-FRM-007-003 | What does 'unconditional recognition' mean? | b | OK | Consistent with article |
+| `2c785f40-5853-43f7-aac4-d625a389fb59` | LEA-PRAC-FRM-007-007 | Can a foreign architect automatically practice? | b | OK | Article is confusing but question is correct |
+| `29c88c97-2e22-4c46-a825-d8465e805671` | LEA-PRAC-FRM-007-001 | Basic principle of reciprocity | b | OK | Consistent with article |
+| `f1d8b55e-144a-4637-bcd6-d3c47fcd89cd` | LEA-PRAC-FRM-007-008 | Do temporary permits require reciprocity? | b | **FLAGGED** | Article's broad claim that "all foreign architects must secure temporary permits" could confuse learners about the question's nuanced answer |
+| `fb69fe01-691f-43e0-837b-b3cc4165ad25` | LEA-PRAC-FRM-007-009 | Double exam fees — reciprocity? | b | OK | Consistent with article |
+| `fffa260f-fb8a-45fc-90fc-b4c9918cbcb0` | LEA-PRAC-FRM-007-002 | Required before foreign national takes exam? | b | **FLAGGED** | Article claims "reciprocity OR substantial equivalence" but question answer is reciprocity only. Potential contradiction. |
+| `e1aefbf8-56d8-497c-97c2-9fc50cb56b9e` | LEA-PRAC-FRM-007-005 | How does Board assess reciprocity? | c | OK | Consistent with article |
+| `39e32c3f-ef26-49ae-b227-992489e1185e` | LEA-PRAC-FRM-007-010 | How use reciprocity info? | b | OK | Consistent with article |
+| `a0780570-b344-4882-b84d-8171e14f8d34` | LEA-PRAC-FRM-007-006 | Country restricts access later? | b | OK | Consistent with article |
 
 **Questions Flagged:** 2 of 10
 **Questions OK:** 8 of 10

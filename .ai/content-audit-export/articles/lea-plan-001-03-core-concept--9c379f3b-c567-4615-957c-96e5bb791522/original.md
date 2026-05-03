@@ -2,11 +2,6 @@
 
 Philippine urban planning history is shaped by three distinct eras: Spanish colonial grid-plaza planning, American City Beautiful intervention, and postwar devolution to local authority. This article tests your knowledge of the _historical narrative_, especially the Burnham Plan of Manila (1905) and the Laws of the Indies (1573), which you must know in detail. Contemporary planners and agencies are tested elsewhere.
 
-## Learning Goal
-
-Identify the three eras of Philippine planning history—Spanish colonial (Laws of the Indies, 1573), American colonial (Burnham Plan of Manila, 1905), and post-devolution (RA 7160, 1991)—and describe the key features and legacy of each period.
-
-
 ## Core Concept
 
 Planning in the Philippines emerged from colonial intervention rather than indigenous settlement organization. The **Laws of the Indies (1573)**, Spain's urban planning code for colonial territories, mandated a strict grid-plaza town plan for all settlements — a central plaza surrounded by the church, municipal hall, and administrative buildings, with streets in a regular grid radiating outward. Every Philippine town established during the 300-year Spanish colonial period (1565–1898) followed this template, from Intramuros (Manila's walled core) to Vigan, Cebu, and provincial capitals. This colonial inheritance created the characteristic spatial organization of Philippine towns: centralized civic nucleus, regular street grid, and defined public plaza.

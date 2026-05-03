@@ -1,6 +1,6 @@
 # Content Diff Report: pre-colonial-vernacular
 
-Generated: 2026-05-03T11:49:41.112Z
+Generated: 2026-05-03T13:44:58.411Z
 Article ID: 41447adf-185f-4a10-a0e9-16febe7b6168
 Changed: true
 Safe to push locally: true

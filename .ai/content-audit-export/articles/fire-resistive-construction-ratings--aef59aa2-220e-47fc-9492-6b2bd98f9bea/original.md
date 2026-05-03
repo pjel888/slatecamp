@@ -19,7 +19,7 @@ Fire-resistive construction is the principle that buildings should be designed n
 
 Rule VI of PD 1096 provides the legal framework, the governing definitions, and the technical standards that make fire-resistive construction quantifiable and enforceable. It is the "how" behind the "what" that Rule V established: Rule V declares that you need two-hour exterior walls in a Fire Restrictive Zone; Rule VI tells you exactly how thick those walls must be and from which materials they must be made. Rule V sets the performance requirement; Rule VI specifies the pathway to compliance.
 
-For the Licensure Examination for Architects (LEA), Rule VI is among the most data-intensive topics tested. The key numbers — minimum thicknesses in millimeters for different assemblies at different time ratings — appear repeatedly in board exam questions. These are not numbers to estimate; they are numbers to know precisely, because the exam will present options that are close but specifically wrong. The strategy for this topic: understand the logic behind the numbers so deeply that memorization becomes a byproduct of comprehension rather than a separate effort.
+For the Architecture Licensure Examination, Rule VI is among the most data-intensive topics tested. The key numbers — minimum thicknesses in millimeters for different assemblies at different time ratings — appear repeatedly in board exam questions. These are not numbers to estimate; they are numbers to know precisely, because the exam will present options that are close but specifically wrong. The strategy for this topic: understand the logic behind the numbers so deeply that memorization becomes a byproduct of comprehension rather than a separate effort.
 
 ---
 

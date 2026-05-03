@@ -1,6 +1,6 @@
 # Content Diff Report: accessible-seating-in-assembly-areas
 
-Generated: 2026-05-03T11:49:35.441Z
+Generated: 2026-05-03T13:44:53.144Z
 Article ID: 571e1d4f-999b-4cf9-a4de-3d35157314d2
 Changed: true
 Safe to push locally: true

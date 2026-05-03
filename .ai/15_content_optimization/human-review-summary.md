@@ -13,7 +13,7 @@ The SlateCamp content-audit export is **ready for human review** but **not yet r
 
 All pipeline blockers have been cleared. The content is internally consistent, composes cleanly, and passes the safety dry-run. Two specific articles need fresh export data before a live push can proceed, and the duplicate question strategy requires a human decision.
 
-**Total content processed:** 567 articles, ~7,159 questions, across 12 ALE subject categories.
+**Total content processed:** 567 articles, ~7,159 questions, across 12 LEA subject categories.
 
 ---
 

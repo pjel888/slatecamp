@@ -1,25 +1,19 @@
 {
-  "attempted_at": "2026-05-03T11:49:41.513Z",
+  "attempted_at": "2026-05-03T13:47:45.286Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
   "slug": "lea-util-001-07-system-components-and-functions",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:5e6598d1f5c5319075836a198ae1ff1254101b5a7c70ccc3cf9ded4c63e1a542",
   "original_hash": "sha256:5e6598d1f5c5319075836a198ae1ff1254101b5a7c70ccc3cf9ded4c63e1a542",
-  "candidate_hash": "sha256:0ca5063f68b4d2632cd607e14bf8812b28870c633bfd29f85ae818019d54fa22",
+  "candidate_hash": "sha256:2202cddb72a57030dfc4546950d78c2e4b0a6fe13c3430726c0441e51cd55e3e",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

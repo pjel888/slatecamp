@@ -77,7 +77,7 @@ Extracted summary:
 
 Fire detection and alarm systems are communications networks that detect hazards and broadcast safety-critical information to occupants, responders, and building systems. In the Philippine context, system design must account for 220V/60Hz power, RA 9514 occupancy classifications, and NFPA 72 signaling standards. The choice between conventional and addressable architectures, Class A vs. Class B circuits, centralized or distributed voice evacuation, and single or redundant monitoring paths all depends on the building's risk profile and life safety obligations. Proper wiring, grounding, and integration with building management systems ensure that fire alarm signals reliably reach the people and systems that respond.
 
-\[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+\ component="Callout" status="preserved"]
 Extracted summary:
 - Props: 
 - Text: The 220V/60Hz electrical standard in the Philippines affects fire alarm power supply sizing and standby battery calculations. Fire alarm systems must maintain minimum 24-hour standby plus 15-minute al
@@ -112,12 +112,6 @@ Extracted summary:
 See also within Security and Communication Systems: **lea-util-005-04-core-concept**, **lea-util-005-05-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-
-[SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Tip — Design fire detection and alarm systems in compliance with R:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
-[/SLATECAMP_UI_BLOCK]
 
 Extracted summary:
 - Props: title="Loop Polarity in Class A SLC Circuits" variant="info"

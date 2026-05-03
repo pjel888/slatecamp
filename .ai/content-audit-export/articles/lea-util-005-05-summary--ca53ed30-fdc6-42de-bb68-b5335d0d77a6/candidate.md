@@ -9,6 +9,19 @@ Cable TV, broadcasting, and Wi-Fi infrastructure are no longer standalone system
 
 <QuestionBank questionSetId="LEA-UTIL-005-05" totalQuestions={10} />
 
-\<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+\ component="Tip" status="preserved"]
+Extracted summary:
+- Props: 
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, 
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+See also within Security and Communication Systems: **lea-util-005-03-core-concept**, **lea-util-005-04-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

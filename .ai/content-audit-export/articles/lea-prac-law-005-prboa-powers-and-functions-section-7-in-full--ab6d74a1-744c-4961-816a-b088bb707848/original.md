@@ -2,7 +2,7 @@
 
 ### Foundational Authority and Enumeration
 
-Section 7 of RA 9266 enumerates the specific powers, functions, and responsibilities of the Professional Regulatory Board of Architecture. The statute lists fourteen (14) distinct powers, from (a) through (n), creating a comprehensive grant of regulatory authority. These are not permissive ("may") but mandatory ("shall exercise"), imposing upon the Board an affirmative duty to perform these functions.
+Section 7 of RA 9266 enumerates the specific powers, functions, and responsibilities of the Professional Regulatory Board of Architecture. The statute lists thirteen (13) distinct powers, from (a) through (n), creating a comprehensive grant of regulatory authority. These are not permissive ("may") but mandatory ("shall exercise"), imposing upon the Board an affirmative duty to perform these functions.
 
 The Board's authority rests on the understanding that professional regulation is a public function; the PRBoA acts on behalf of the state to protect the public, not on behalf of the profession to advance member interests. This distinction is foundational: regulatory power derives from state sovereignty and must be exercised for public benefit.
 

@@ -1,6 +1,6 @@
 # Content Diff Report: excavation-foundation-and-veneer
 
-Generated: 2026-05-03T11:50:02.333Z
+Generated: 2026-05-03T13:45:15.955Z
 Article ID: bd009a97-21fe-400e-8717-615d5a877cfd
 Changed: true
 Safe to push locally: true

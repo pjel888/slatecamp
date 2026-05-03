@@ -4,11 +4,6 @@
 The LEA tests your knowledge of Hindu temple structure (shikhara towers), Buddhist monuments (stupas), and Mughal architecture (tombs and gardens). Recognize key buildings, understand their spatial organization, and distinguish temple typologies and periods.
 </Callout>
 
-## Learning Goal
-
-Distinguish the three major Indian architectural traditions—Hindu (shikhara, gopura, garbhagriha), Buddhist (stupa, pradakshina), and Mughal (chahar bagh, pietra dura, domed chambers)—by their key structures, spatial organization, materials, and chronological development.
-
-
 ## Core Concept
 
 Indian architecture reflects millennia of religious and dynastic development across three major traditions: Hindu, Buddhist, and Mughal. Hindu temples organize sacred space vertically around a central shrine, crowned by the **shikhara** (tower), with specific proportional systems and ritual hierarchies. Buddhist monuments like the **stupa** enclose relics within concentric stone domes, emphasizing circumambulatory paths for devotional circulation. Mughal architecture synthesizes Persian, Central Asian, and Indian traditions through axial gardens, domed chambers, inlay work, and symmetrical planning. Each tradition employs distinct materials—sandstone, marble, granite—and decoration methods that evolved over centuries and across regions (North, South, East).
@@ -56,7 +51,7 @@ For detailed coverage of Mughal architecture including the Taj Mahal, charbagh g
 - **Chahar bagh**: Mughal four-part garden divided by water channels, symbolizing paradise and establishing axial symmetry.
 - **Gopura**: Monumental gateway tower at Hindu temple entrances, especially prominent in South Indian Dravidian temples.
 - **Pietra dura**: Inlay technique using colored stone (marble, jade, lapis lazuli) to create floral and calligraphic patterns, signature Mughal decoration.
-- **Vimana**: Sanctum tower of a Hindu temple, equivalent to shikhara when emphasizing the vertical form.
+- **Vimana**: Sanctum tower of a Hindu temple, equivleant to shikhara when emphasizing the vertical form.
 - **Pradakshina**: Clockwise circumambulatory path around a stupa or shrine, central to Buddhist and Hindu worship.
 - **Mandapa**: Columned hall in a Hindu temple, serving as transitional space between entrance and sanctum.
 - **Jali**: Perforated stone screen used in Mughal architecture for privacy and light diffusion.

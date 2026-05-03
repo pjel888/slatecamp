@@ -1,23 +1,19 @@
 {
-  "attempted_at": "2026-05-03T11:49:27.051Z",
+  "attempted_at": "2026-05-03T13:47:31.359Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
   "slug": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:779bfb3765fdce86dfeb206c52e5dc25ed1c347c4bbc4cc2b980ddcd70b03b30",
-  "original_hash": "sha256:64d36de59cabfa7a08e5740aa33a6cb438b580898341af6b1c23d6ac8c08f7c5",
+  "original_hash": "sha256:779bfb3765fdce86dfeb206c52e5dc25ed1c347c4bbc4cc2b980ddcd70b03b30",
   "candidate_hash": "sha256:2c61c0ca8431a7efac8ffb8edaaafa5ad9583191ea010358478afdec98806cde",
-  "stale_check_passed": false,
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

@@ -1,13 +1,13 @@
 # Content Diff Report: overview-structural-conceptualization
 
-Generated: 2026-05-03T11:49:41.875Z
+Generated: 2026-05-03T13:44:59.039Z
 Article ID: 1f8c0257-0b12-45c0-936c-d821b927a6e9
 Changed: true
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e7c7f280b188ba97a859567b0a1935e835d69617d2c152d296a9ac2b1fcf0eb0`
+- Original: `sha256:5fec557d2e067550f23a0d968ed535e12f7b3e6de6d5f568546f6dc76d66f413`
 - Normalized: `sha256:54e3547ce38811bc40e2bf40161067614231bc35680945de3caa16705984bfa4`
 - Candidate: `sha256:5f81445faef89f2663dc83e5ba785aba4251783c4bb52c2580fc4dbd90befada`
 

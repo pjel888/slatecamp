@@ -1,9 +1,9 @@
 # Content Diff Report: lea-hist-007-06-core-concept
 
-Generated: 2026-05-03T11:49:35.069Z
+Generated: 2026-05-03T13:44:52.889Z
 Article ID: 1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -19,14 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 9
+- UI blocks expected: 8
 - UI blocks preserved: 8
-- UI blocks changed/missing: 1
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

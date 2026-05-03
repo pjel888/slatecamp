@@ -35,8 +35,6 @@ Think: *"People Live Together"* — all three traditions are fundamentally about
 | **Tipi** | Plains nations (Lakota, Cheyenne, Blackfoot, others); widespread post-1700s (horse era) | 14–20 lodgepole pine or red cedar poles; bison hide or canvas cover; 4–6 m height | Conical form; adjustable smoke flaps at apex; tilted axis (steeper windward side); interior liner for insulation and draft control | Low profile resists sustained high winds; chimney-effect ventilation (base intake, apex exhaust); rapid assembly/disassembly (under 30 minutes by experienced users); portable for nomadic life |
 
 <ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
-
-<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
 ## LEA Exam Traps and Common Mistakes
 
 - **Conflating Ancestral Puebloans with Plains tribes:** These are entirely different cultures in different environments with different building traditions. Pueblos are permanent, multi-story, stone-and-adobe complexes in the arid Southwest. Tipis are portable, hide-covered conical structures of the Great Plains. The LEA tests precise cultural attribution — never describe Pueblo peoples as nomadic or Plains peoples as sedentary adobe builders.

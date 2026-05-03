@@ -46,7 +46,7 @@ This integrated approach requires clear contractual definition of responsibiliti
 
 Design-Build represents an evolution in how architects and builders collaborate, positioning both parties as partners in achieving optimal project outcomes rather than adversaries in traditional bidding scenarios. The method reflects modern understanding that design and construction expertise must integrate to deliver projects efficiently and effectively.
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+<SPP207RefServices />
 
 <ProcessFlow>
 <ol>
@@ -77,3 +77,5 @@ Design-Build represents an evolution in how architects and builders collaborate,
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

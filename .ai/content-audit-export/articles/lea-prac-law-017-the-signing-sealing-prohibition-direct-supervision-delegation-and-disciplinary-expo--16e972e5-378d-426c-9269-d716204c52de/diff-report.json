@@ -1,40 +1,38 @@
 {
   "article_id": "16e972e5-378d-426c-9269-d716204c52de",
   "slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
-  "generated_at": "2026-05-03T11:49:18.429Z",
+  "generated_at": "2026-05-03T13:44:37.840Z",
   "old_hash": "sha256:ca7e1ac56ba8ed420275028a0e53d01db1f3e65bd7c871adbcdfec8bba04ae10",
-  "new_hash": "sha256:4f4466fb0d7748d195422cf79847607cdea48479be9cbc68ea1cd512b479dac5",
+  "new_hash": "sha256:e0dba4d1fbbecc549f926b97d205516cba1451393cfe9a9591f91c99a9057fd3",
   "original_hash": "sha256:ca7e1ac56ba8ed420275028a0e53d01db1f3e65bd7c871adbcdfec8bba04ae10",
-  "normalized_hash": "sha256:e9aa811f0806eb0a79d840495c4c8dcca66499876d4527ce3fe5e8e1bf2553bc",
-  "candidate_hash": "sha256:4f4466fb0d7748d195422cf79847607cdea48479be9cbc68ea1cd512b479dac5",
+  "normalized_hash": "sha256:64fc5e07efe7b06c9a2a0347e482af094b97e3a1c019c6cfa1a6b142c1f862c6",
+  "candidate_hash": "sha256:e0dba4d1fbbecc549f926b97d205516cba1451393cfe9a9591f91c99a9057fd3",
   "changed": true,
-  "changed_line_count": 66,
-  "inserted_line_count": 38,
+  "changed_line_count": 64,
+  "inserted_line_count": 36,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
   "ui_blocks_candidate_count": 4,
   "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 66,
-    "inserted": 38,
+    "changed": 64,
+    "inserted": 36,
     "deleted": 0,
     "original_line_count": 51,
-    "candidate_line_count": 89
+    "candidate_line_count": 87
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

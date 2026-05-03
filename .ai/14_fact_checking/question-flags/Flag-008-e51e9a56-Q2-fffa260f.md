@@ -6,7 +6,7 @@
 **Article UUID:** e51e9a56-7251-460e-8d00-5feaa3884f0a
 **Article Title:** Reciprocity Principles
 **Question ID:** fffa260f-fb8a-45fc-90fc-b4c9918cbcb0
-**Model ID:** ALE-PRAC-FRM-007-002
+**Model ID:** LEA-PRAC-FRM-007-002
 **Severity:** MEDIUM
 **Category:** Law/Code (RA 9266 — Section 27)
 

@@ -1,7 +1,44 @@
 {
   "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:99a51750b7830f5b38a690feb18b7873f2bb0875817569800297c91233d97a91",
+  "source_count": 3,
+  "sources": [
+    {
+      "source_id": "da411193-6645-4fe8-9e79-e27342f5f4ff",
+      "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
+      "label": "Philippine Electrical Code (PEC) 2017 Part 1, Article 2.50 \u2014 Grounding and Bonding",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Defines grounding vs. bonding, system grounding requirements, equipment grounding conductor sizing, and ground resistance standards (25 ohms max).",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "959f5fef-ebd5-42fa-b41a-bb4d5b7ebf5b",
+      "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
+      "label": "PEC 2017, Section 2.50.2 \u2014 Grounding Electrode System",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Specifies grounding electrode types (ground rod, concrete-encased, building steel), installation requirements, and resistance standards.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    },
+    {
+      "source_id": "a26b8cf1-574d-4a20-901b-5bcf283a035f",
+      "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
+      "label": "PEC 2017, Section 2.50.4 \u2014 Equipment Bonding",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": "Defines bonding requirements for non-current-carrying metal parts to prevent shock hazards and provide effective ground-fault paths.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-03T20:30:00.000000+00:00",
+      "updated_at": "2026-05-03T20:30:00.000000+00:00"
+    }
+  ]
 }

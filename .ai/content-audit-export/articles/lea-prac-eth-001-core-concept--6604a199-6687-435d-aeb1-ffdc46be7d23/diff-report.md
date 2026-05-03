@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-eth-001-core-concept
 
-Generated: 2026-05-03T11:50:21.973Z
+Generated: 2026-05-03T13:45:34.570Z
 Article ID: 6604a199-6687-435d-aeb1-ffdc46be7d23
 Changed: true
 Safe to push locally: true

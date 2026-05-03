@@ -1,11 +1,5 @@
 ## Certificate of Registration, Oath-Taking, and the Professional ID Card
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -15,17 +9,13 @@ After studying this article, you should be able to:
 - State the grounds for non-issuance or revocation of the Certificate.
 - Identify the fees and documentary requirements for initial registration.
 
-
-
 ### Certificate of Registration and Legal Authority to Practice
 
 Upon successful passage of the Licensure Examination for Architects, the Professional Regulation Commission issues a _Certificate of Registration_ to the candidate, signifying legal authorization to practice architecture in the Philippines. The certificate, defined in RA 9266 Section 3, represents the candidate's entry into the professional register and constitutes legal proof of qualification. The Board of Architecture, as the regulatory authority, has sole power under RA 9266 Section 7(d) to _issue, suspend, revoke, or reinstate_ the Certificate and the Professional Identification Card. The certificate bears a registration number assigned by the Commission's database system, along with the candidate's name, examination date, and signature of the Board's authorized officer. Without a valid Certificate of Registration, no person may practice architecture or represent themselves as a registered architect to the public or in commerce.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
 Extracted summary:
 - Props: variant="lea-watch", title="Exam Trap"
 - Text: Exam Trap — A Certificate of Registration is NOT the same as a Professional Identification Card (PIC). The Certificate is issued once and proves qualification; the PIC is renewed annually and proves current registration status. Many exam questions test this distinction.
-[/SLATECAMP_UI_BLOCK]
 
 ### Professional Identification Card and Annual Renewal
 
@@ -37,34 +27,7 @@ RA 9266 Section 7(c) authorizes the Board to _administer oaths_ in connection wi
 
 ### Rights and Restrictions on Certificate Validity
 
-A registered architect's Certificate remains valid indefinitely as long as annual renewal fees are paid and the holder maintains good standing under the Code of Ethical Conduct and Standards of Professional Practice. However, the Board may _suspend or revoke_ the certificate for violations of RA 9266, the Code of Ethical Conduct, breach of the service agreement, criminal conviction, or moral turpitude. During suspension, the architect may not practice; upon revocation, practice is prohibited until the Board reinstates the certificate following a formal application and investigation. Additionally, architects may voluntarily request _cancellation_ of their Certificate of Registration if they retire from practice, relocate permanently abroad, or cease professional activity. Once cancelled, reinstatement requires reapplication and Board approval. The PIC is a non-transferable personal credential tied solely to the individual architect by name and registration number.
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Key Distinction: The Certificate of Registration is a lifetime credential (subject to good standing), while the PIC must be renewed annually. An architect can have a valid Certificate but a lapsed PIC — and cannot legally practice until the PIC is renewed.
-[/SLATECAMP_UI_BLOCK]
-
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ Key distinction: Certificate of Registration = indefinite validity (one-time issuance after passing LEA and taking oath). Professional ID Card = renewed every 3 years. Failure to renew the PRC ID does NOT invalidate the Certificate of Registration.
-[/SLATECAMP_UI_BLOCK]
-
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Sequence of events: Pass LEA → File Oath of Office before PRBoA → Receive Certificate of Registration → Apply for Professional ID Card (PRC ID). The Oath of Office is a legal prerequisite — without it, no registration is effective.
-[/SLATECAMP_UI_BLOCK]
-
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The PRC ID contains: registrant's name, registration number, date of registration, expiration date, professional tax receipt (PTR) number, and the registrant's signature and photograph. Know that the PTR must be updated annually.
-[/SLATECAMP_UI_BLOCK]
+A registered architect's Certificate remains valid indefinitely as long as annual renewal fees are paid and the holder maintains good standing under the Code of Ethical Conduct and Standards of Professional Practice. However, the Board may _suspend or revoke_ the certificate for violations of RA 9266, the Code of Ethical Conduct, breach of the service agreement, criminal conviction, or moral turpitude. During suspension, the architect may not practice; upon revocation, practice is prohibited until the Board reinstates the certificate following a formal application and investigation. Additionally, architeof statement requires reapplication and Board approval. The PIC is a non-transferable personal credential tied solely to the individual architect by name and registration number.
 
 ---
 
@@ -78,3 +41,43 @@ Extracted summary:
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+Extracted summary:
+- Props: (none)
+- Text: The PRC ID contains: registrant's name, registration number, date of registration, expiration date, professional tax receipt (PTR) number, and the registrant's signature and photograph. Know that the PTR must be updated annually.
+
+[SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The PRC ID contains: registrant's name, registration number, date of registration, expiration date, professional tax receipt (PTR) number, and the registrant's signature and photograph. Know that the PTR must be updated annually.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Exam Trap"
+- Text: Exam Trap — A Certificate of Registration is NOT the same as a Professional Identification Card (PIC). The Certificate is issued once and proves qualification; the PIC is renewed annually and proves current registration status. Many exam questions test this distinction.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Key distinction: Certificate of Registration = indefinite validity (one-time issuance after passing LEA and taking oath). Professional ID Card = renewed every 3 years. Failure to renew the PRC ID does NOT invalidate the Certificate of Registration.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Key Distinction: The Certificate of Registration is a lifetime credential (subject to good standing), while the PIC must be renewed annually. An architect can have a valid Certificate but a lapsed PIC — and cannot legally practice until the PIC is renewed.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Sequence of events: Pass LEA → File Oath of Office before PRBoA → Receive Certificate of Registration → Apply for Professional ID Card (PRC ID). The Oath of Office is a legal prerequisite — without it, no registration is effective.
+[/SLATECAMP_UI_BLOCK]

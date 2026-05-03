@@ -1,7 +1,7 @@
 {
   "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
   "slug": "lea-theo-004-12-core-concept",
-  "generated_at": "2026-05-03T11:50:13.721Z",
+  "generated_at": "2026-05-03T13:45:26.995Z",
   "old_hash": "sha256:66d8b5e39e8517abd32f90fea7f13b90d69b745316bcd6d3a3b143fc4687b866",
   "new_hash": "sha256:42513cddc2de3c2f4bfdd00dcb0e458bf2e9eb5c973e567371ea71810bdfc3e2",
   "original_hash": "sha256:66d8b5e39e8517abd32f90fea7f13b90d69b745316bcd6d3a3b143fc4687b866",
@@ -11,10 +11,10 @@
   "changed_line_count": 225,
   "inserted_line_count": 0,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 11,
+  "ui_blocks_original_count": 10,
   "ui_blocks_candidate_count": 10,
-  "ui_blocks_changed_count": 1,
-  "ui_blocks_count": 11,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 10,
   "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 10,
   "changed_text_summary": {
@@ -25,18 +25,14 @@
     "candidate_line_count": 246
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0006"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate is missing 1 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

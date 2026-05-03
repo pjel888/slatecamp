@@ -1,6 +1,6 @@
 # Content Diff Report: lea-util-002-05-kitchen-exhaust-hood-classification
 
-Generated: 2026-05-03T11:49:19.591Z
+Generated: 2026-05-03T13:44:38.752Z
 Article ID: 7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db
 Changed: true
 Safe to push locally: true

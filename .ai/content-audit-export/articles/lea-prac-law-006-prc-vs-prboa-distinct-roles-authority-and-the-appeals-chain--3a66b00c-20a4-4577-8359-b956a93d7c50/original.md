@@ -40,7 +40,7 @@ This distinction is critical. For rulemaking: the Board proposes rules; the Comm
 
 For disciplinary decisions: the Board hears cases and issues decisions. These decisions do not require Commission pre-approval; they take effect upon issuance. However, an aggrieved party (the architect respondent or the complainant) can appeal to the Commission. The Commission then reviews the decision for errors of law, abuse of discretion, or insufficiency of evidence.
 
-This asymmetry reflects recognition that Board expertise in professional matters should be respected in adjudication. Pre-approval of every disciplinary decision would compromise the Board's independence and would require the Commission to develop expertise equivalent to the Board's. The appeal mechanism provides oversight without compromising the Board's first-instance authority.
+This asymmetry reflects recognition that Board expertise in professional matters should be respected in adjudication. Pre-approval of every disciplinary decision would compromise the Board's independence and would require the Commission to develop expertise equivleant to the Board's. The appeal mechanism provides oversight without compromising the Board's first-instance authority.
 
 ### The Appeals Path: From Board Through Commission to Court
 

@@ -1,6 +1,6 @@
 # Content Diff Report: lea-util-002-06-regulatory-framework
 
-Generated: 2026-05-03T11:49:38.063Z
+Generated: 2026-05-03T13:44:55.671Z
 Article ID: 514f9f04-00a2-49c3-97c6-804fc2362ec7
 Changed: true
 Safe to push locally: true

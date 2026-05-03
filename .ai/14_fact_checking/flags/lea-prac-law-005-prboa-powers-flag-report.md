@@ -37,9 +37,9 @@
 
 Counting (a) through (n) yields **14 items**, not 13 as stated in the article. Note: (a) through (n) inclusive is 14 because you count: a, b, c, d, e, f, g, h, i, j, k, l, m, n = 14.
 
-**Impact:** `MEDIUM` — The linked question Q1 (ALE-PRAC-LAW-005-001) asks "How many specific powers...?" and the correct answer is "13 powers (from (a) through (n))" — both the article AND the linked question are wrong. The correct count is 14.
+**Impact:** `MEDIUM` — The linked question Q1 (LEA-PRAC-LAW-005-001) asks "How many specific powers...?" and the correct answer is "13 powers (from (a) through (n))" — both the article AND the linked question are wrong. The correct count is 14.
 
-**Linked Questions Affected:** Q1 (ALE-PRAC-LAW-005-001) — the correct answer option says 13 when it should be 14.
+**Linked Questions Affected:** Q1 (LEA-PRAC-LAW-005-001) — the correct answer option says 13 when it should be 14.
 
 ---
 
@@ -59,7 +59,7 @@ Counting (a) through (n) yields **14 items**, not 13 as stated in the article. N
 
 ## FLAG 3 — MEDIUM — Linked Question Q1 Contains Wrong Answer
 
-**Claim in Linked Question (ALE-PRAC-LAW-005-001, Q1):**
+**Claim in Linked Question (LEA-PRAC-LAW-005-001, Q1):**
 > Correct answer: "13 powers (from (a) through (n))"
 
 **Verdict:** `CONTRADICTS_QUESTION` — The question asks "How many specific powers and functions are enumerated in Section 7 of RA 9266?" and the correct answer says 13, but the actual count is 14.

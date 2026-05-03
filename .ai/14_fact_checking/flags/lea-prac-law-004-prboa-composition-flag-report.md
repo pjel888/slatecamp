@@ -33,7 +33,7 @@ The article's numbers for the Members are wrong because it assumes the reappoint
 
 **Impact:** `HIGH` — Students memorizing wrong maximum tenures (4 and 2 years instead of 5 and 4 years) will answer exam questions incorrectly.
 
-**Linked Questions Affected:** Q4 (ALE-PRAC-LAW-004-005, reappointment count), Q5 (ALE-PRAC-LAW-004-008, maximum tenure)
+**Linked Questions Affected:** Q4 (LEA-PRAC-LAW-004-005, reappointment count), Q5 (LEA-PRAC-LAW-004-008, maximum tenure)
 
 ---
 

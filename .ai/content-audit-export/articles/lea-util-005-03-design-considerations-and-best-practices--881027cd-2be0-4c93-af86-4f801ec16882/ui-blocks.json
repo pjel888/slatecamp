@@ -4,36 +4,10 @@
   "normalized_created_at": "2026-05-01T13:33:43.882Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:8a570e3a892889f97f8e9094f38b8a62c14177546fda8742ea85acc7632e0110",
-  "normalized_content_hash": "a4ccfedfefb2a1cd871334e34bc554d21f4e62576b3a2df414f96fcd8420878d",
-  "ui_block_count": 3,
+  "normalized_content_hash": "79d6a077855f6a7f3d096838dc61e76a488dcd87b9db7b2060a2cb51c114dab6",
+  "ui_block_count": 2,
   "total_blocks": 11,
   "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "Callout",
-      "raw": "<Callout type=\"info\">The 220V/60Hz electrical standard in the Philippines affects fire alarm power supply sizing and standby battery calculations. Fire alarm systems must maintain minimum 24-hour standby plus 15-minute alarm duration per NFPA 72 Chapter 10 Section 10.6, requiring robust UPS and battery backup design.</Callout>",
-      "raw_hash": "sha256:d8d35faa5a72381bb1664443d5d3d89ea7d7131b144a4fed9e87e6f26eb20293",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"info\"\n- Text: The 220V/60Hz electrical standard in the Philippines affects fire alarm power supply sizing and standby battery calculations. Fire alarm systems must maintain minimum 24-hour standby plus 15-minute alarm duration per NFPA 72 Chapter 10 Section 10.6, requiring robust UPS and battery backup design.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:896e5e72d255e021a5a6ba5f5f9920b9b14dd78ce816b3601755c5c5ecffb6d9",
-      "props": {
-        "type": "info"
-      },
-      "props_json": {
-        "type": "info"
-      },
-      "props_text": "type=\"info\"",
-      "children_raw": "The 220V/60Hz electrical standard in the Philippines affects fire alarm power supply sizing and standby battery calculations. Fire alarm systems must maintain minimum 24-hour standby plus 15-minute alarm duration per NFPA 72 Chapter 10 Section 10.6, requiring robust UPS and battery backup design.",
-      "children_text": "The 220V/60Hz electrical standard in the Philippines affects fire alarm power supply sizing and standby battery calculations. Fire alarm systems must maintain minimum 24-hour standby plus 15-minute alarm duration per NFPA 72 Chapter 10 Section 10.6, requiring robust UPS and battery backup design.",
-      "start_offset": 1694,
-      "end_offset": 2022,
-      "line_start": 17,
-      "line_end": 17,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
     {
       "block_id": "ui_0010",
       "block_type": "mdx_component",

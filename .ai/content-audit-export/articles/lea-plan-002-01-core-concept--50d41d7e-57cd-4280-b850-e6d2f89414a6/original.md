@@ -2,11 +2,6 @@
 
 The three classical urban models — Concentric Zone, Sector, and Multiple Nuclei — explain how cities grow and organize spatially. Each model identifies the theorist, the year, and the underlying mechanism. These are the most-tested models in the LEA and the most commonly swapped by mistake.
 
-## Learning Goal
-
-Distinguish the three classical urban structure models (Concentric Zone, Sector, Multiple Nuclei) by theorist, year, mechanism, and spatial pattern, and identify supporting concepts including Central Place Theory, Von Thünen Rings, Rank-Size Rule, and Primate City.
-
-
 ## Core Concept
 
 **Urban structure models** are theoretical frameworks that explain how cities develop, grow, and organize land use over time. The three foundational classical models emerged in the early 20th century and remain the basis for understanding city form.

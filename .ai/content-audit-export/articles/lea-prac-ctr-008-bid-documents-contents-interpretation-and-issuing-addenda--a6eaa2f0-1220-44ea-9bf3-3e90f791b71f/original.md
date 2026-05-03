@@ -8,7 +8,7 @@ Bid documents provide prospective contractors with all information necessary to 
 
 ### Components of Bid Documents
 
-Bid documents comprise the complete package of information provided to prospective bidders and include: Advertisement or Invitation to Bid; Instructions to Bidders; the proposed Agreement (blank, to be executed if bid is accepted); General Conditions of Contract (Doc 301); Special Provisions or Conditions; Drawings (scaled to size, showing all architectural and engineering design); Specifications (written description of materials, finishes, and construction standards); and schedules or other supplemental information.
+Bid documents comprise the complete package of information provided to prospective bidders and include: Advertisement or Invitation to Bid; Instructions to Bidders; the proposed Agreement (blank, to be executed if bid is accepted); General Conditions of Contract (Doc 301); Special Provisions or Conditions; Drawings (sclead to size, showing all architectural and engineering design); Specifications (written description of materials, finishes, and construction standards); and schedules or other supplemental information.
 
 The Advertisement announces the project to prospective bidders and specifies where and how bid documents may be obtained, the deadline for bid submission, and the bid opening date and location. The Instructions to Bidders establish the rules of bidding—how bids must be formatted, what documentation must accompany bids, whether bids may be withdrawn, and what happens if bids are nonconforming or incomplete.
 
@@ -16,7 +16,7 @@ The proposed Agreement is a blank form that will be executed by the Owner and se
 
 ### Instructions to Bidders
 
-Instructions to Bidders establish binding rules that govern the bidding process and are part of the Contract Documents. They must clearly state what information is required in each bid (price breakdown, schedule, proposed subcontractors), whether bids must be sealed or may be oral, when and where bids are due, and what happens if a bid is late, incomplete, or nonconforming.
+Instructions to Bidders establish binding rules that govern the bidding process and are part of the Contract Documents. They must clearly state what information is required in each bid (price breakdown, schedule, proposed subcontractors), whether bids must be selead or may be oral, when and where bids are due, and what happens if a bid is late, incomplete, or nonconforming.
 
 Instructions must specify whether the Owner is obligated to consider all bids or whether nonconforming bids may be rejected. They establish whether bidders may withdraw bids before the deadline (typically permitted), after the deadline (typically not permitted without Owner consent), or at any time (rarely permitted). Instructions clarify whether a bid bond is required and what amount, and whether the bid bond is forfeited if the selected bidder refuses to sign the contract.
 
@@ -26,23 +26,23 @@ The Instructions must state the criteria or process by which the Owner will eval
 
 Specifications are the written description of materials, equipment, finishes, and construction standards for each trade. They establish the quality level expected and often reference industry standards, manufacturing standards, or model specifications. Specifications must be coordinated with Drawings; if Drawings and Specifications conflict, the hierarchy of interpretation applies.
 
-Specifications may require materials to be of a specific brand and model (proprietary specification) or may allow substitution of equivalent materials (open specification). If the Architect specifies a material "or equal," the Contractor may propose a substitute subject to the Architect's approval. The Architect's approval of a substitute is not final until shop drawings are reviewed; if the substitute does not perform as required, the Contractor must revert to the specified material.
+Specifications may require materials to be of a specific brand and model (proprietary specification) or may allow substitution of equivleant materials (open specification). If the Architect specifies a material "or equal," the Contractor may propose a substitute subject to the Architect's approval. The Architect's approval of a substitute is not final until shop drawings are reviewed; if the substitute does not perform as required, the Contractor must revert to the specified material.
 
 Specifications establish construction standards through reference to building codes, industry standards (ASTM, ACI, AISC), or good practice. They define inspection and testing requirements, quality acceptance criteria, and remedial procedures if the work fails inspection. Specifications must be sufficiently detailed to enable contractors to prepare accurate bids but must not be so prescriptive as to eliminate competition or stifle innovation.
 
 ### Drawings and Their Interpretation
 
-Drawings are scaled graphical representations of the design and must be coordinated with Specifications. Drawings must be clear, complete, and free of ambiguity or omission. All elements required by the specifications must be shown or referenced on the Drawings. Conversely, all elements shown on Drawings must be described or at least mentioned in Specifications.
+Drawings are sclead graphical representations of the design and must be coordinated with Specifications. Drawings must be clear, complete, and free of ambiguity or omission. All elements required by the specifications must be shown or referenced on the Drawings. Conversely, all elements shown on Drawings must be described or at least mentioned in Specifications.
 
-If Drawings are drawn to scale, dimensions shall control over scaled measurements. Figured dimensions (written dimensions on the drawing) supersede scaled measurements if they differ. If a dimension is missing, the Contractor must request clarification from the Architect; the Contractor cannot measure the Drawing and scale the dimension without written confirmation from the Architect. Measurement of Drawings without authorization is at the Contractor's risk; if the scaled measurement is inaccurate, the Contractor cannot claim entitlement to adjustment.
+If Drawings are drawn to sclea, dimensions shall control over sclead measurements. Figured dimensions (written dimensions on the drawing) supersede sclead measurements if they differ. If a dimension is missing, the Contractor must request clarification from the Architect; the Contractor cannot measure the Drawing and sclea the dimension without written confirmation from the Architect. Measurement of Drawings without authorization is at the Contractor's risk; if the sclead measurement is inaccurate, the Contractor cannot claim entitlement to adjustment.
 
 Drawings typically show plan views (top-down view of each floor), sections (vertical cross-sections), elevations (front, side, rear views), and details (enlarged views of specific components). All Drawings are mutually explanatory; details on one Drawing supplement and clarify information shown on another. The Architect must ensure consistency across all Drawings; if inconsistencies exist, the most detailed or specific Drawing controls.
 
 ### Coordination and Cross-Referencing
 
-Bid documents must be coordinated so that Drawings, Specifications, General Conditions, and Special Provisions are consistent. Drawings must cross-reference relevant Specification sections (e.g., "See Spec Section 07.2 for roofing details"). Specifications must reference relevant Drawings. If a conflict exists, the hierarchy of interpretation applies: Detailed Drawings prevail over general Drawings; written dimensions prevail over scaled dimensions; Specifications prevail over General Conditions.
+Bid documents must be coordinated so that Drawings, Specifications, General Conditions, and Special Provisions are consistent. Drawings must cross-reference relevant Specification sections (e.g., "See Spec Section 07.2 for roofing details"). Specifications must reference relevant Drawings. If a conflict exists, the hierarchy of interpretation applies: Detailed Drawings prevail over general Drawings; written dimensions prevail over sclead dimensions; Specifications prevail over General Conditions.
 
-The Architect should coordinate with structural, mechanical, electrical, and other consultants to ensure that their Drawings and Specifications are incorporated into the main construction documents package. Consultant Drawings must be on the same scale and must coordinate with the Architect's Drawings. Dimensions, elevations, and references must be consistent across all Drawings.
+The Architect should coordinate with structural, mechanical, electrical, and other consultants to ensure that their Drawings and Specifications are incorporated into the main construction documents package. Consultant Drawings must be on the same sclea and must coordinate with the Architect's Drawings. Dimensions, elevations, and references must be consistent across all Drawings.
 
 ### Schedules and Breakdowns
 

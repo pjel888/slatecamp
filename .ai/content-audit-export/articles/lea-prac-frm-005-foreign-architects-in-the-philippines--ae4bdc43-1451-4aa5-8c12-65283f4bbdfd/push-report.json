@@ -1,23 +1,19 @@
 {
-  "attempted_at": "2026-05-03T11:49:38.326Z",
+  "attempted_at": "2026-05-03T13:47:42.362Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
   "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:51b951f6ce883c35bdedd451fe497668923234d36c596295d6701064392b34e3",
-  "original_hash": "sha256:79b3bf30c11eb2db46583b3755e1c01b46d1a180900201c39f0fa3e638eb64d8",
+  "original_hash": "sha256:51b951f6ce883c35bdedd451fe497668923234d36c596295d6701064392b34e3",
   "candidate_hash": "sha256:8eb1fa2c29d3d555f372c82fced4aa57c06f103b57a9df3b1e19d2656c87ade6",
-  "stale_check_passed": false,
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

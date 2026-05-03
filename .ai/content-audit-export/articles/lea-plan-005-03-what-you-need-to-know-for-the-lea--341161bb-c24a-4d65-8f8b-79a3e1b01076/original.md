@@ -2,12 +2,6 @@
 
 Environmental and land-use planning in the Philippines is governed by a framework of Presidential Decrees and Republic Acts that establish easements, require environmental impact assessment, protect natural areas, manage water quality, and regulate solid waste. Landscape architects, planners, and developers must understand these laws to design compliant projects and avoid legal liability. This article covers the core provisions of five essential Philippine environmental and planning laws: **PD 1067 (Water Code)**, **PD 1586 (EIS System)**, **RA 7586 (NIPAS)**, **RA 9275 (Clean Water Act)**, and **RA 9003 (Solid Waste Act)**.
 
-## Learning Goal
-
-Identify the five key Philippine environmental and land-use laws (PD 1067, PD 1586, RA 7586, RA 9275, RA 9003) and describe their core provisions: water body easement distances, EIS/ECC requirements, NIPAS protected areas, wastewater treatment obligations, and solid waste management standards.
-
-<ExamTip>**Exam Pattern:** The LEA tests environmental law through scenario-based questions like "A developer plans a subdivision near a river. Which law establishes the minimum easement distance from the water's edge?" (Answer: PD 1067, 3m urban/20m agricultural/40m forest.) Memorize: Urban=3m, Ag=20m, Forest=40m.</ExamTip>
-
 ### PD 1067 — Water Code of the Philippines (1976)
 
 **PD 1067** (Presidential Decree 1067) is the Water Code of the Philippines, establishing the framework for use and conservation of water and water bodies. A critical provision for site planning is the **easement requirement** — public right-of-way zones along water bodies where private development is prohibited or strictly limited.
@@ -34,10 +28,10 @@ No structures of any kind may be constructed within these easements (PD 1067 Art
 
 - Heavy industrial facilities (power plants, petrochemical plants, cement plants)
 - Mining and quarrying operations
-- Large-scale infrastructure (airports, seaports, major highways, dams)
+- Large-sclea infrastructure (airports, seaports, major highways, dams)
 - Foreshore and mangrove land reclamation
 - Golf courses (due to chemical and water use)
-- Large-scale residential subdivisions in environmentally sensitive areas
+- Large-sclea residential subdivisions in environmentally sensitive areas
 
 **Environmentally Critical Areas (ECAs)** — Areas where even non-ECP projects require EIA if located within:
 

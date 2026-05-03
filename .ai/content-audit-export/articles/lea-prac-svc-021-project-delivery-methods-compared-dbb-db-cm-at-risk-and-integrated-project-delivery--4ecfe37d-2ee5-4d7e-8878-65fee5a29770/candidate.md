@@ -56,7 +56,7 @@ The architect's role varies by delivery method. In DBB, the architect maintains 
 
 Understanding these delivery method differences enables architects and clients to select approaches aligned with project objectives and stakeholder capabilities.
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+<SPP206RefServices />
 
 <ProcessFlow>
 <ol>
@@ -87,3 +87,5 @@ Understanding these delivery method differences enables architects and clients t
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

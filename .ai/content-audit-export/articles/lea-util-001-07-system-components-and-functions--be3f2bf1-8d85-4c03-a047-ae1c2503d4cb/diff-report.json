@@ -1,40 +1,38 @@
 {
   "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
   "slug": "lea-util-001-07-system-components-and-functions",
-  "generated_at": "2026-05-03T11:49:41.517Z",
+  "generated_at": "2026-05-03T13:44:58.792Z",
   "old_hash": "sha256:5e6598d1f5c5319075836a198ae1ff1254101b5a7c70ccc3cf9ded4c63e1a542",
-  "new_hash": "sha256:0ca5063f68b4d2632cd607e14bf8812b28870c633bfd29f85ae818019d54fa22",
+  "new_hash": "sha256:2202cddb72a57030dfc4546950d78c2e4b0a6fe13c3430726c0441e51cd55e3e",
   "original_hash": "sha256:5e6598d1f5c5319075836a198ae1ff1254101b5a7c70ccc3cf9ded4c63e1a542",
-  "normalized_hash": "sha256:338b7d6f357b4c96838d983270934c76fbb5ac184159b46c33b7ef97f35a8abf",
-  "candidate_hash": "sha256:0ca5063f68b4d2632cd607e14bf8812b28870c633bfd29f85ae818019d54fa22",
+  "normalized_hash": "sha256:f74a60e9e6efe79e2b9656784950bbae41e4373ed543b1127399d273b86dea63",
+  "candidate_hash": "sha256:2202cddb72a57030dfc4546950d78c2e4b0a6fe13c3430726c0441e51cd55e3e",
   "changed": true,
-  "changed_line_count": 159,
-  "inserted_line_count": 14,
+  "changed_line_count": 153,
+  "inserted_line_count": 8,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 17,
   "ui_blocks_candidate_count": 17,
   "ui_blocks_changed_count": 0,
   "ui_blocks_count": 17,
-  "unresolved_placeholders_count": 1,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 17,
   "changed_text_summary": {
-    "changed": 159,
-    "inserted": 14,
+    "changed": 153,
+    "inserted": 8,
     "deleted": 0,
     "original_line_count": 148,
-    "candidate_line_count": 162
+    "candidate_line_count": 156
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

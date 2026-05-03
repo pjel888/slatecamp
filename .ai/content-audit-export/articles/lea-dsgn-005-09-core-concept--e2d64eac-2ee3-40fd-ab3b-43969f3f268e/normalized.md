@@ -85,8 +85,6 @@ Barangay halls are the civic infrastructure linking national and local governmen
 
 **Pattern 1: Occupancy Classification**
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-
 \
 "A barangay hall with a 120-sqm multi-purpose hall plus administrative offices is classified as Group E or H depending on the dominant occupant load." 
 

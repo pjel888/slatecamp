@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework
 
-Generated: 2026-05-03T11:49:05.428Z
+Generated: 2026-05-03T13:44:24.706Z
 Article ID: 6dc813a9-913d-47b5-9203-f59e8e909869
 Changed: true
 Safe to push locally: true

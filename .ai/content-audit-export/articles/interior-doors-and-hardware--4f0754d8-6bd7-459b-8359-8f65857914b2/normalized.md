@@ -1,11 +1,5 @@
 # Interior Doors and Hardware
-### BP 344 (2024 IRR) — Philippine Licensure Examination for Architects Review
-
----
-
-## Learning Goal
-
-By the end of this module, you will be able to specify all BP 344-mandated door dimensions including clear width (900 mm), handle height (900 mm AFF), threshold limits (12 mm max, beveled if >6 mm), vision panel width (100 mm), and kick plate range (300–400 mm). You will also understand the rationale behind each requirement and recognize common exam traps around nominal vs. clear width, threshold beveling, and door swing direction.
+### BP 344 (2024 IRR) — Philippine Architecture Licensure Exam Review
 
 ---
 
@@ -26,13 +20,6 @@ You are a wheelchair user arriving at a mall's cinema restroom. The door looks w
 | **K** | **K**ick plate height range | **300–400 mm** |
 
 ---
-
-
-[SLATECAMP_UI_BLOCK:ui_0058 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: BP 344 Door Dimensional Quick-Reference: Clear opening 900 mm (single), 1,800 mm (double). Handle height 900 mm AFF. Kick plate 300-400 mm. Threshold 12 mm max. Vision panel 100 mm min. Glass markings 900-1,500 mm AFF.
-[/SLATECAMP_UI_BLOCK]
 
 ## CHEAT SHEET: COMPLETE DOOR SPECIFICATIONS
 
@@ -90,12 +77,6 @@ Extracted summary:
 **Wrong answer:** Yes — 900 mm is the minimum.
 
 **Correct answer:** **It depends.** The 900 mm requirement is for **clear width**, measured face-of-door-at-90°-to-jamb. A 900 mm leaf in a standard frame typically yields only ~855–870 mm clear. A **950–965 mm leaf** is usually needed to achieve 900 mm clear passage.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Exam Trap"
-- Text: Exam Trap: Many LEA questions test the distinction between nominal leaf width and clear opening width. Always read carefully — if the question says "leaf width is 900 mm" vs "clear width is 900 mm," the answers differ.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -267,18 +248,3 @@ You are teaching a first-year architecture student who just drew a restroom door
 
 *Next: Module 6 — Fixtures & Small Items in Common Areas*
 *Previous: Module 4 — Assembly Seating & Waiting Areas*
-
----
-
-
-
----
-
-## Exam Tip
-
-LEA Trap: Minimum clear opening width = 900 mm for accessible doors, 700 mm for interior non-accessible. Fire doors must be self-closing with positive latching. Panic hardware required on exit doors of Group E, F, H, I occupancies. The clear opening is measured with door at 90° — NOT the door leaf width.
-
-## Cross‑References
-
-**Prefabricated Constructions**, **Lathing And Plastering**, **Fire Resistive Construction Ratings**, **Residential Clearances**
-

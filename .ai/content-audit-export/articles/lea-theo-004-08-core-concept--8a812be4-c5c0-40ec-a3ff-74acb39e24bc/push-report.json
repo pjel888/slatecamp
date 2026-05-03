@@ -1,22 +1,16 @@
 {
-  "attempted_at": "2026-05-03T11:49:12.255Z",
+  "attempted_at": "2026-05-03T13:47:18.123Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
   "slug": "lea-theo-004-08-core-concept",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:1085e74a7b397f34ec97cdf8a09681dff2bcd35125e4f6de23b07ef3a3b9fcee",
   "original_hash": "sha256:1085e74a7b397f34ec97cdf8a09681dff2bcd35125e4f6de23b07ef3a3b9fcee",
   "candidate_hash": "sha256:f1421f0d0428b87753e1b788023889dd09d5651fab5f83368926d3ceb6d6dc93",
