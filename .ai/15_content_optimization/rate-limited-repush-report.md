@@ -36,13 +36,15 @@
 | Articles attempted | 69 |
 | Articles pushed | **69** (100%) |
 | Articles failed | **0** |
-| Method | Direct HTTP PATCH to Supabase REST API (bypassing the JS client library's Cloudflare proxy path) |
+| Method | Direct HTTP PATCH to Supabase REST API (controlled fallback after SDK rate-limited) |
 | Route | `PATCH /rest/v1/wiki_articles?article_id=eq.<uuid>` |
 | Content verified | SHA256 hash comparison of remote vs local candidate.md |
 | Average time per article | ~0.8 seconds |
 | Total push time | ~60 seconds |
 | Rate limiting encountered | **None** with direct REST API |
 | Error count | **0** |
+
+> **Note:** The direct REST PATCH route was used only as a controlled fallback path after the Supabase JS client SDK was rate-limited by Cloudflare. This method should not become the default push path. Future pushes should prefer the normal audited push script (`bun run content-audit:push:apply`). If direct REST is needed again, it should be chunked, logged, verified by hash comparison, run with secrets loaded only from environment variables, and followed by secret hygiene checks.
 
 ---
 
