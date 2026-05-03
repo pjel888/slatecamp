@@ -15,7 +15,7 @@ This launch pass is explicitly **payment-free and live-AI-provider-free**. PayRe
 - **Status:** Pre-launch MVP.
 - **Primary user:** LEA candidate/student.
 - **Internal users:** content/admin operators, developers, and owner/CEO operators.
-- **Current post-cleanup counts (2026-04-30):** 109 page routes, 11 App Router route handlers, 13 layouts, 92 loading states, 7 error boundaries, 157 server/action/query files, 76 schema tables, 92 migrations, 88 test/spec files, 100 Storybook stories.
+- **Current post-cleanup counts (2026-05-03):** 500+ articles, 7,000+ questions, 109 page routes, 11 App Router route handlers, 13 layouts, 92 loading states, 7 error boundaries, 157 server/action/query files, 76 schema tables, 92 migrations, 88 test/spec files, 100 Storybook stories.
 - **Important working-tree note:** this audit started with pre-existing uncommitted source changes. Documentation reflects the files currently present on disk.
 
 ## Core Business Features
