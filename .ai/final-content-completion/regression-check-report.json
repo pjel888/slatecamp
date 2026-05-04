@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-05-03T22:49:14.473853+00:00",
+  "all_clean": false,
+  "checks": [
+    {
+      "issue": "PRBoA created by Section 4 (NOT Section 41)",
+      "pattern": "Section\\s+41\\s+.*PRBoA|PRBoA.*Section\\s+41",
+      "context": "Section 41 creates IAPOA, not PRBoA. PRBoA is created by Section 4.",
+      "articles_found": 0,
+      "sample_articles": [],
+      "regressed": false
+    },
+    {
+      "issue": "Ramp slope 1:12 presented as universal standard (ignoring BP 344 tiers)",
+      "pattern": "(?:maximum|standard)\\s+ramp\\s+slope\\s+(?:is|of|:)\\s*1:12(?!\\s*to\\s*1:15)",
+      "context": "BP 344 uses tiered system: Tier 1 (1:12-1:15), Tier 2 (1:15-1:20), Tier 3 (1:20 max)",
+      "articles_found": 0,
+      "sample_articles": [],
+      "regressed": false
+    },
+    {
+      "issue": "Penalty range: P100k-P5M (correct range)",
+      "pattern": "(?:fine|penalty|penalties?).{0,30}(?:5[,\\s]*000|P5[,\\s]*000)",
+      "context": "RA 9266 Section 29: fine P100,000-P5,000,000",
+      "articles_found": 2,
+      "sample_articles": [
+        "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+        "legal-liability-and-enforcement-workflow"
+      ],
+      "regressed": true
+    },
+    {
+      "issue": "Seismic Zone 4 does not exist in Philippine code",
+      "pattern": "Seismic\\s+Zone\\s+4|Zone\\s+4\\s+seismic",
+      "context": "Philippines uses Zones 1-2 (NSCP). Zone 4 doesn't exist.",
+      "articles_found": 7,
+      "sample_articles": [
+        "excavation-foundation-and-veneer",
+        "geological-hazards",
+        "lathing-and-plastering"
+      ],
+      "regressed": true
+    },
+    {
+      "issue": "BP 220 economic housing minimum = 24 sqm (not 22 sqm)",
+      "pattern": "economic.{0,20}22\\s*(?:sqm|m2|sq\\.?\\s*m)",
+      "context": "BP 220 Table 7: Economic = 24 sqm minimum",
+      "articles_found": 0,
+      "sample_articles": [],
+      "regressed": false
+    }
+  ]
+}

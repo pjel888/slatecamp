@@ -1,0 +1,1677 @@
+{
+  "auditDate": "2026-05-04",
+  "totalComponents": 49,
+  "categories": {
+    "article": 6,
+    "blocks": 24,
+    "navigation": 16,
+    "quiz": 2,
+    "shared": 7,
+    "widgets": 17
+  },
+  "components": [
+    {
+      "id": "wiki-article-001",
+      "name": "WikiArticle",
+      "file": "src/components/wiki/article/WikiArticle.tsx",
+      "description": "Primary MDX article renderer — compiles article content using next-mdx-remote/rsc, injects EI prompts, resolves widgets, and wraps content in prose classes.",
+      "props": {
+        "article": "WikiArticleType",
+        "nodeId?": "string",
+        "nodeName?": "string",
+        "eiPrompts?": "EIPromptType[]",
+        "eiResponses?": "EIResponseMap"
+      },
+      "export": "named (WikiArticle, WikiArticleSkeleton, getArticleHeadings, compileWikiArticleWithRenderer)",
+      "registry": "Not in widget registry; it is the article orchestrator — exported via index.ts",
+      "renderContext": "Server component (async) — renders MDX on server. Wraps content in prose-wiki classes. Uses Suspense for WikiHighlighter.",
+      "clientBoundary": "No — server component. WikiHighlighter, WikiTextSelection, WikiNoteAnchor are client sub-components (Suspense-wrapped).",
+      "interactionType": "static (SSR rendered)",
+      "accessibilityRisks": [
+        "MEDIUM: WikiArticleError button uses window.location.reload() — no keyboard-friendly retry mechanism",
+        "LOW: WikiArticleSkeleton has no aria-live region for screen reader awareness of loading state"
+      ],
+      "mobileRisks": [
+        "LOW: Prose max-width via prose-wiki class — responsive via Tailwind but no explicit mobile breakpoint overrides"
+      ],
+      "visualConsistencyRisks": [
+        "MEDIUM: Two component maps exist (WIKI_COMPONENTS in WikiArticle.tsx and baseMdxComponents in mdx-components-shared.ts) — risk of drift between MDX rendering paths"
+      ],
+      "errorBehavior": "Catches MDX compile errors, falls back to createMdxFallbackSource() then WikiArticleError if that also fails",
+      "cancelGraceful": false,
+      "longContent": true,
+      "emptyContent": "Returns null if !article, handles empty content via fallback source",
+      "improvements": [
+        "Unify component maps between WikiArticle.tsx and mdx-components-shared.ts to prevent drift",
+        "Add aria-live region to WikiArticleSkeleton for screen reader loading announcements",
+        "Consider adding a retry button to WikiArticleError instead of only window.location.reload()"
+      ]
+    },
+    {
+      "id": "wiki-article-002",
+      "name": "WikiArticleHeader",
+      "file": "src/components/wiki/article/WikiArticleHeader.tsx",
+      "description": "Simple article header with title, reading time, and updated date.",
+      "props": {
+        "title": "string",
+        "updatedAt": "string",
+        "readingTime?": "number"
+      },
+      "export": "named",
+      "registry": "Not in MDX component map — used as layout element",
+      "renderContext": "No prose wrapper (standalone header), server-compatible",
+      "clientBoundary": "No — uses date-fns format() which works server-side",
+      "interactionType": "static",
+      "accessibilityRisks": [],
+      "mobileRisks": [
+        "LOW: Uses flex with gap — responsive but no explicit breakpoint handling"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "No error handling — expects valid inputs",
+      "longContent": ["LOW: title has no max-length handling or truncation"],
+      "emptyContent": "Renders empty header if title is empty string",
+      "improvements": [
+        "Add truncation for long titles",
+        "Add defensive check for empty/undefined updatedAt"
+      ]
+    },
+    {
+      "id": "wiki-article-003",
+      "name": "WikiArticleHero",
+      "file": "src/components/wiki/article/WikiArticleHero.tsx",
+      "description": "Article hero section — displays subject tag, difficulty badge, read time, title, updated note, and LEA orientation banner.",
+      "props": "WikiArticleHeroProps (subject, difficulty, readTime, title, updatedNote?, leaTestsYou?, isMinimal?)",
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose wrapper — standalone component rendered above MDX content",
+      "clientBoundary": "No — server-compatible pure component",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: LEA orientation banner div uses no role — could be role=\"complementary\" or region"
+      ],
+      "mobileRisks": [
+        "LOW: isMinimal mode reduces title to text-[8px] which may be illegible on some screens"
+      ],
+      "visualConsistencyRisks": [
+        "MEDIUM: isMinimal mode sets h1 to text-[8px] — suspiciously small and likely a unit error (px vs scale?)"
+      ],
+      "errorBehavior": "No explicit error handling — expects valid WikiArticleHeroProps",
+      "longContent": ["MEDIUM: leaTestsYou text has no max-length or line-clamp"],
+      "emptyContent": "Renders structure even with empty title",
+      "improvements": [
+        "Fix isMinimal title size — text-[8px] is almost certainly wrong (should be text-base or similar scaling)",
+        "Add aria-label or role to LEA banner",
+        "Handle missing/empty title gracefully"
+      ]
+    },
+    {
+      "id": "wiki-article-004",
+      "name": "WikiArticleError",
+      "file": "src/components/wiki/article/WikiArticleError.tsx",
+      "description": "Fallback error UI shown when MDX compilation fails — displays error icon, message, and refresh button.",
+      "props": "None",
+      "export": "named",
+      "registry": "Not in component maps — used internally by WikiArticle",
+      "renderContext": "not-prose wrapper, client component ('use client')",
+      "clientBoundary": "Yes — 'use client' because it uses onClick",
+      "interactionType": "minimal interactive (click to reload)",
+      "accessibilityRisks": [
+        "MEDIUM: Relies solely on window.location.reload() — hard navigation, no soft retry mechanism",
+        "LOW: No aria-live region to announce the error to screen readers"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "This component IS the error boundary — always renders when called",
+      "longContent": "N/A — static error message",
+      "emptyContent": "N/A — renders fixed content",
+      "improvements": [
+        "Add aria-live=\"assertive\" for screen reader error announcement",
+        "Consider adding a soft retry (re-invoke compile) instead of hard page reload",
+        "Add a feedback/report link"
+      ]
+    },
+    {
+      "id": "wiki-article-005",
+      "name": "WikiItemRenderer",
+      "file": "src/components/wiki/article/WikiItemRenderer.tsx",
+      "description": "Renders typed wiki_items from taxonomy_tree.wiki_items JSONB array. Supports heading, fact, definition, formula, code_provision, detail, exam_tip, cross_ref, and warning types.",
+      "props": {
+        "items": "WikiItem[]",
+        "leaId?": "string | null",
+        "threeDLabLinked?": "boolean"
+      },
+      "export": "named (WikiItemRenderer) + type (WikiItem)",
+      "registry": "Not in MDX component map — used for taxonomy tree items rendering",
+      "renderContext": "No prose wrapper — standalone div with space-y-3",
+      "clientBoundary": "No — server-compatible",
+      "interactionType": "static (links are standard anchors)",
+      "accessibilityRisks": [
+        "LOW: cross_ref type inline link SVG has no aria-hidden — decorative icon",
+        "LOW: warning type uses ⚠ emoji alone without screen-reader-accessible text"
+      ],
+      "mobileRisks": [
+        "LOW: code_provision and exam_tip use fixed borders/padding — responsive via general classes"
+      ],
+      "visualConsistencyRisks": [
+        "LOW: formatting classes use hardcoded styles rather than shared design tokens"
+      ],
+      "errorBehavior": "Returns null if items is empty/null/undefined. Has default fallback for unknown item types.",
+      "longContent": "text is rendered raw with no truncation — handles long text okay",
+      "emptyContent": "Returns null if !items || items.length === 0",
+      "improvements": [
+        "Add aria-label to warning emoji for screen readers",
+        "Add aria-hidden=\"true\" to decorative SVGs in cross_ref",
+        "Consider extracting SVG link icon to shared component"
+      ]
+    },
+    {
+      "id": "wiki-article-006",
+      "name": "WikiLearningJourney",
+      "file": "src/components/wiki/article/WikiLearningJourney.tsx",
+      "description": "Guided learning module component — shows learning path, checkpoint, outcomes, and related topics. Also exports WikiLearningCompletion for end-of-article review.",
+      "props": {
+        "WikiLearningJourneyProps": "title, subject, difficulty, readTime, whyItMatters?, nodeName?, headings, relatedTopics?, isMinimal?",
+        "WikiLearningCompletion": "title, headings, nodeName?"
+      },
+      "export": "named (WikiLearningJourney, WikiLearningCompletion)",
+      "registry": "Not in MDX component map — used as layout element",
+      "renderContext": "not-prose wrapper, server-compatible",
+      "clientBoundary": "No — pure component with Link navigation",
+      "interactionType": "static (navigation via anchor links and next/link)",
+      "accessibilityRisks": [
+        "LOW: Learning map uses aria-label on aside — well-structured",
+        "LOW: Numbered step links have aria- attributes — adequate"
+      ],
+      "mobileRisks": [
+        "LOW: LG layout uses flex-row with aside — wraps to column on mobile via lg:flex-row"
+      ],
+      "visualConsistencyRisks": [
+        "MEDIUM: Hardcoded 280px aside width on desktop (lg:w-[280px]) — could cause overflow with long text"
+      ],
+      "errorBehavior": "Returns null if isMinimal=true. Handles empty headings with fallback text.",
+      "longContent": ["MEDIUM: No max-length handling on topic titles or whyItMatters"],
+      "emptyContent": "Handles empty headings with fallback message. Returns null for empty relatedTopics.",
+      "improvements": [
+        "Replace hardcoded aside width with min-width + dynamic sizing",
+        "Add truncation for long topic titles in related topics"
+      ]
+    },
+    {
+      "id": "wiki-blocks-001",
+      "name": "Callout",
+      "file": "src/components/wiki/blocks/Callout.tsx",
+      "description": "Unified callout component with 12 variants (note, warning, tip, example, info, danger, requirement, exam-tip, authority, most-tested, lea-watch, version-alert). Also exports backward-compat aliases: Note, Warn, Tip, Example, CalloutBox, AlertBox, ExamTip, AuthorityContent.",
+      "props": "CalloutProps (variant, title?, children, className?, dismissible?, onDismiss?, bordered?, action?)",
+      "export": "named (Callout, Note, Warn, Warning, Tip, Example, CalloutBox, AlertBox, ExamTip, AuthorityContent)",
+      "registry": "MDX component map — all aliases registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose wrapper",
+      "clientBoundary": "No — pure component",
+      "interactionType": "static (dismiss button optional, action button optional)",
+      "accessibilityRisks": [
+        "LOW: role=\"note\" on all callouts — appropriate",
+        "LOW: Dismiss button has aria-label=\"Dismiss\" — good",
+        "LOW: Action links vs buttons handled correctly",
+        "MEDIUM: CalloutBox, AlertBox, ExamTip, AuthorityContent re-export the same component — reduces maintainability"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [
+        "LOW: Uses CSS custom properties (var(--info), var(--warning), etc.) — theme-consistent",
+        "MEDIUM: Some variants share identical styling (example and requirement use same colors)"
+      ],
+      "errorBehavior": "Handles unknown variant gracefully by defaulting to note (first in VARIANTS record)",
+      "longContent": true,
+      "emptyContent": "Renders empty callout structure — could show nothing",
+      "improvements": [
+        "Add aria-live=\"polite\" for content that dynamically appears inside callouts",
+        "Consider consolidating CalloutBox/AlertBox/ExamTip/AuthorityContent into direct variant usage"
+      ]
+    },
+    {
+      "id": "wiki-blocks-002",
+      "name": "WikiTabs",
+      "file": "src/components/wiki/blocks/WikiTabs.tsx",
+      "description": "Tabbed content block — Tabs container and Tab child components. Client-side state for active tab.",
+      "props": {
+        "Tabs": "defaultTab?, children",
+        "Tab": "label, value, children"
+      },
+      "export": "named (Tabs, Tab)",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose wrapper",
+      "clientBoundary": "Yes — 'use client' for useState-based tab switching",
+      "interactionType": "interactive (click to switch tabs, keyboard: Enter/Space on tab buttons)",
+      "accessibilityRisks": [
+        "LOW: role=\"tablist\", role=\"tab\", role=\"tabpanel\", aria-selected, aria-controls, aria-labelledby — well-structured",
+        "MEDIUM: No keyboard arrow navigation between tabs (Left/Right/Up/Down not handled)",
+        "MEDIUM: No aria-orientation on tablist"
+      ],
+      "mobileRisks": [
+        "LOW: Tab bar uses flex — wraps naturally on small screens"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null if no valid Tab children found",
+      "longContent": true,
+      "emptyContent": "Returns null if tabs array is empty after filtering",
+      "improvements": [
+        "Add keyboard arrow navigation between tabs",
+        "Add aria-orientation=\"horizontal\" to tablist",
+        "Consider adding tab overflow/scroll behavior for many tabs"
+      ]
+    },
+    {
+      "id": "wiki-blocks-003",
+      "name": "WikiAccordion / Accordion",
+      "file": "src/components/wiki/blocks/ WikiAccordion.tsx → re-exports from Accordion.tsx → re-exports from @/components/ui/accordion",
+      "description": "Re-export shim — WikiAccordion.tsx re-exports from Accordion.tsx which re-exports from @/components/ui/accordion.",
+      "props": "AccordionProps, AccordionItemProps (from @/components/ui/accordion)",
+      "export": "named (Accordion, AccordionItem)",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "Consumed within prose",
+      "clientBoundary": "Depends on ui/accordion implementation",
+      "interactionType": "interactive (expand/collapse)",
+      "accessibilityRisks": ["LOW: Depends on shadcn/ui accordion — should have proper ARIA"],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Depends on ui/accordion",
+      "longContent": true,
+      "emptyContent": "Depends on ui/accordion",
+      "improvements": ["Chain of re-exports adds indirection — could simplify"]
+    },
+    {
+      "id": "wiki-blocks-004",
+      "name": "WikiCalloutBox",
+      "file": "src/components/wiki/blocks/WikiCalloutBox.tsx",
+      "description": "Re-export shim — delegates to CalloutBox from Callout.tsx (variant-based component).",
+      "props": "type: 'most-tested' | 'lea-watch' | 'version-alert', children",
+      "export": "named (WikiCalloutBox)",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose",
+      "clientBoundary": "No",
+      "interactionType": "static",
+      "accessibilityRisks": ["LOW: Delegates to Callout — re-export adds unnecessary complexity"],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Delegates to Callout — handles unknown variant gracefully",
+      "longContent": true,
+      "emptyContent": "Delegates to Callout",
+      "improvements": ["Could be removed and mapped directly to Callout variant in MDX component map"]
+    },
+    {
+      "id": "wiki-blocks-005",
+      "name": "WikiChangedPill",
+      "file": "src/components/wiki/blocks/WikiChangedPill.tsx",
+      "description": "Small inline badge indicating a value changed in 2024 IRR — shows tooltip with old value.",
+      "props": {
+        "oldValue?": "string",
+        "className?": "string"
+      },
+      "export": "named",
+      "registry": "MDX component map — used as inline element in WikiExamTable",
+      "renderContext": "Inline span within table cells",
+      "clientBoundary": "No — pure component with HTML title attribute",
+      "interactionType": "static (tooltip via title attribute)",
+      "accessibilityRisks": [
+        "LOW: Uses HTML title attribute for tooltip — not consistently accessible on touch devices",
+        "LOW: Uses unicode ⟳ character — may not render in all fonts"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "No error handling — simple display component",
+      "longContent": "N/A — short inline badge",
+      "emptyContent": "Renders with default tooltip if no oldValue",
+      "improvements": [
+        "Replace title attribute with proper accessible tooltip component",
+        "Ensure unicode character has accessible fallback"
+      ]
+    },
+    {
+      "id": "wiki-blocks-006",
+      "name": "WikiExamTable",
+      "file": "src/components/wiki/blocks/WikiExamTable.tsx",
+      "description": "Exam-focused data table with section headers, changed value indicators, source column, and most-tested row highlighting.",
+      "props": "WikiTableProps (caption?, columns, rows, hasSourceColumn?)",
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose wrapper with overflow-x-auto for horizontal scroll",
+      "clientBoundary": "No — server-compatible",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: Uses semantic table — good",
+        "LOW: Source column hidden on small screens (hidden sm:table-cell) — data may be lost on mobile"
+      ],
+      "mobileRisks": [
+        "LOW: Source column hidden on mobile — users lose reference context",
+        "LOW: overflow-x-auto provides horizontal scroll for small screens"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null if no columns or no rows",
+      "longContent": true,
+      "emptyContent": "Returns null if !columns.length || !rows.length",
+      "improvements": [
+        "Consider showing source column content differently on mobile instead of hiding entirely",
+        "Add aria-label to overflow container"
+      ]
+    },
+    {
+      "id": "wiki-blocks-007",
+      "name": "WikiMistakeCard",
+      "file": "src/components/wiki/blocks/WikiMistakeCard.tsx",
+      "description": "Individual mistake card showing # title, wrong value, correct value, and explanation.",
+      "props": "WikiMistakeProps (number, title, wrongValue, correctValue, explanation, sourceRef?)",
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose border container",
+      "clientBoundary": "No — server-compatible",
+      "interactionType": "static",
+      "accessibilityRisks": [],
+      "mobileRisks": [
+        "LOW: Uses grid-cols-1 sm:grid-cols-2 for wrong/correct — stacks on mobile appropriately"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "No error handling — expects valid props",
+      "longContent": true,
+      "emptyContent": "Renders empty structure with wrong/correct sections",
+      "improvements": ["Add defensive checks for empty wrongValue/correctValue"]
+    },
+    {
+      "id": "wiki-blocks-008",
+      "name": "WikiMistakeList",
+      "file": "src/components/wiki/blocks/WikiMistakeList.tsx",
+      "description": "Container for multiple WikiMistakeCards — accepts array of mistake objects or strings, parses via transformMistakeString.",
+      "props": {
+        "mistakes?": "WikiMistakeProps[] | string[] | string"
+      },
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose wrapper",
+      "clientBoundary": "No — server-compatible",
+      "interactionType": "static",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null if parsed array is empty",
+      "longContent": true,
+      "emptyContent": "Returns null if parsed.length === 0",
+      "improvements": []
+    },
+    {
+      "id": "wiki-blocks-009",
+      "name": "WikiPartHeader",
+      "file": "src/components/wiki/blocks/WikiPartHeader.tsx",
+      "description": "Section header for parts of an article — shows part number and optional subtitle.",
+      "props": "WikiPartHeaderProps (partNumber, title, subtitle?)",
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose wrapper",
+      "clientBoundary": "No — server-compatible",
+      "interactionType": "static",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "No error handling",
+      "longContent": ["MEDIUM: title has no max-width or truncation — could overflow on narrow screens"],
+      "emptyContent": "Renders structure even with empty title",
+      "improvements": ["Add truncation for long titles"]
+    },
+    {
+      "id": "wiki-blocks-010",
+      "name": "ComparisonTable",
+      "file": "src/components/wiki/blocks/ComparisonTable.tsx",
+      "description": "Comparison-styled table wrapper — blue header with alternating row colors.",
+      "props": "children: ReactNode",
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose wrapper with overflow-x-auto",
+      "clientBoundary": "No",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: Pure div wrapper using CSS targeting selectors — no semantic table structure enforced"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [
+        "MEDIUM: Uses hardcoded blue header colors ([&_thead]:bg-camp-cobalt) — context-dependent on camp-cobalt token"
+      ],
+      "errorBehavior": "Wraps any children — no error handling",
+      "longContent": true,
+      "emptyContent": "Renders empty container with border",
+      "improvements": [
+        "Consider properly typing expected child elements",
+        "Ensure color tokens are theme-consistent"
+      ]
+    },
+    {
+      "id": "wiki-blocks-011",
+      "name": "ExamTip",
+      "file": "src/components/wiki/blocks/ExamTip.tsx",
+      "description": "Re-export shim — delegates to Callout variant 'exam-tip'.",
+      "props": "children: ReactNode",
+      "export": "named (ExamTip)",
+      "registry": "MDX component map",
+      "renderContext": "not-prose",
+      "clientBoundary": "No",
+      "interactionType": "static",
+      "accessibilityRisks": ["LOW: Re-export adds unnecessary indirection"],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Delegates to Callout",
+      "longContent": true,
+      "emptyContent": "Delegates to Callout",
+      "improvements": ["Could be removed and mapped directly to Callout variant"]
+    },
+    {
+      "id": "wiki-blocks-012",
+      "name": "FormulaBlock",
+      "file": "src/components/wiki/blocks/FormulaBlock.tsx",
+      "description": "Formula display block — renders multi-step formulas with variables, operators, operands, and optional comments.",
+      "props": {
+        "label": "string",
+        "steps": "FormulaStep[] | string"
+      },
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose wrapper with formula-surface background",
+      "clientBoundary": "No — server-compatible (parseMdxProp is pure)",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "MEDIUM: Formula visualization uses divs and spans — no aria-label or MathML for screen readers"
+      ],
+      "mobileRisks": [
+        "LOW: Uses flex-wrap for operands — handles narrow screens"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns empty div if steps array is empty after parsing",
+      "longContent": ["LOW: Many steps could overflow horizontally"],
+      "emptyContent": "Renders label + empty space if steps array is empty",
+      "improvements": [
+        "Add screen-reader-accessible formula description or aria-label",
+        "Consider MathML or alt text for formula content"
+      ]
+    },
+    {
+      "id": "wiki-blocks-013",
+      "name": "GenericBlock",
+      "file": "src/components/wiki/blocks/GenericBlock.tsx",
+      "description": "Generic passthrough for AI-hallucinated MDX component names. Also exports SPP206RefServices and SPP207RefServices as no-op stubs.",
+      "props": "children?: ReactNode",
+      "export": "named (GenericBlock, SPP206RefServices, SPP207RefServices)",
+      "registry": "MDX component map — numerous aliases mapped to GenericBlock",
+      "renderContext": "not-prose border container",
+      "clientBoundary": "No",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: No-op stubs render nothing — fine as they're reference markers already inlined"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Gracefully renders children in bordered box — never crashes",
+      "longContent": true,
+      "emptyContent": "Renders bordered box even with no children",
+      "improvements": [
+        "Consider adding a subtle visual hint when GenericBlock renders (e.g., dotted border) for debugging"
+      ]
+    },
+    {
+      "id": "wiki-blocks-014",
+      "name": "InlineQuiz",
+      "file": "src/components/wiki/blocks/InlineQuiz.tsx",
+      "description": "Inline quiz block with multiple-choice options — shows rationale after answering.",
+      "props": {
+        "question": "string",
+        "options": "QuizOption[] | string",
+        "rationale": "string"
+      },
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose border container",
+      "clientBoundary": "Yes — 'use client' for useState",
+      "interactionType": "interactive (click to select answer, shows feedback)",
+      "accessibilityRisks": [
+        "MEDIUM: Options are buttons — aria-selected used but no radio group role",
+        "LOW: Rationale appears with role=\"status\" aria-live=\"polite\" — good"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Handles malformed options via parseMdxProp with empty array fallback",
+      "longContent": true,
+      "emptyContent": "Returns empty structure if no options",
+      "improvements": [
+        "Use radiogroup role for option buttons",
+        "Add keyboard navigation between options"
+      ]
+    },
+    {
+      "id": "wiki-blocks-015",
+      "name": "KeyValues",
+      "file": "src/components/wiki/blocks/KeyValues.tsx",
+      "description": "Grid of key-value stat cards — dynamically sizes text based on value length.",
+      "props": {
+        "items": "KeyValueItem[] | string"
+      },
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose auto-fill grid",
+      "clientBoundary": "No — server-compatible",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: No aria-label on grid — but visual structure is clear"
+      ],
+      "mobileRisks": [
+        "LOW: auto-fit grid with minmax(140px, 1fr) — responsive"
+      ],
+      "visualConsistencyRisks": [
+        "LOW: Dynamic font sizing based on value length (text-[28px] vs text-[14px]) — could cause inconsistency"
+      ],
+      "errorBehavior": "Returns null if parsed array is empty",
+      "longContent": ["LOW: Long values get smaller text — graceful handling but text-[14px] may be too small for emphasis stats"],
+      "emptyContent": "Returns null if parsed.length === 0",
+      "improvements": [
+        "Consider static font size for consistency in snapshot displays",
+        "Add character-limit-based sizing as alternative to arbitrary thresholds"
+      ]
+    },
+    {
+      "id": "wiki-blocks-016",
+      "name": "LawCallout",
+      "file": "src/components/wiki/blocks/LawCallout.tsx",
+      "description": "Law citation callout — color-coded by legal code (NBCP, BP344, RA9514, BP220, PD957, IRR).",
+      "props": "LawCalloutProps (code, section?, title?, children)",
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose wrapper",
+      "clientBoundary": "No — server-compatible",
+      "interactionType": "static",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Has defensive fallback for unknown codes — renders generic bordered box",
+      "longContent": true,
+      "emptyContent": "Renders structure even with no children or title",
+      "improvements": []
+    },
+    {
+      "id": "wiki-blocks-017",
+      "name": "Mermaid",
+      "file": "src/components/wiki/blocks/Mermaid.tsx",
+      "description": "Mermaid diagram renderer — client-side only, uses mermaid library with dark mode support.",
+      "props": {
+        "chart": "string"
+      },
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS (not in baseMdxComponents)",
+      "renderContext": "not-prose centered container with SVG output",
+      "clientBoundary": "Yes — 'use client' for mermaid rendering and useTheme",
+      "interactionType": "static (rendered diagram)",
+      "accessibilityRisks": [
+        "HIGH: Uses dangerouslySetInnerHTML for SVG output — potential XSS vector if chart content is user-controlled",
+        "MEDIUM: Rendered SVG has no aria-label or title — not accessible to screen readers"
+      ],
+      "mobileRisks": [
+        "LOW: overflow-x-auto on container for horizontal scroll"
+      ],
+      "visualConsistencyRisks": [
+        "LOW: Theme sync handled via mermaid.initialize on chart/theme/resolvedTheme change"
+      ],
+      "errorBehavior": "Catches render errors, shows error message with collapsible source view",
+      "longContent": true,
+      "emptyContent": "Shows error state if chart is empty string",
+      "improvements": [
+        "Add DOMPurify or similar sanitization for SVG output",
+        "Add aria-label or role=\"img\" with accessible description for diagrams",
+        "Consider using mermaid.run() pattern instead of render + dangerouslySetInnerHTML"
+      ]
+    },
+    {
+      "id": "wiki-blocks-018",
+      "name": "PrequestionGate",
+      "file": "src/components/wiki/blocks/PrequestionGate.tsx",
+      "description": "Interactive pre-question gate — shows quiz before article content, fails open to article on error.",
+      "props": {
+        "topicId": "string",
+        "topicName": "string",
+        "articleSlug?": "string",
+        "children": "ReactNode",
+        "onMissedQuestions?": "(questionIds: string[]) => void"
+      },
+      "export": "named",
+      "registry": "Not in MDX component maps — likely used at route/layout level",
+      "renderContext": "Full-screen modal gate (fixed inset-0 z-50)",
+      "clientBoundary": "Yes — 'use client' for state management and server actions",
+      "interactionType": "interactive (quiz with radio buttons, auto-submit on selection)",
+      "accessibilityRisks": [
+        "MEDIUM: Modal dialog uses role=\"dialog\" and aria-modal — proper",
+        "MEDIUM: Full-screen on mobile (h-full w-full) — may trap keyboard without proper focus management",
+        "LOW: aria-live=\"polite\" on feedback — good"
+      ],
+      "mobileRisks": [
+        "LOW: Full-screen card on mobile (h-full w-full) — works but dismiss button placement could be tricky"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Fails open — shows article content on fetch or submit error",
+      "longContent": ["MEDIUM: Question text has no max-length handling"],
+      "emptyContent": "Fails open to article if no questions returned",
+      "improvements": [
+        "Add focus trap for modal dialog",
+        "Add keyboard shortcut (Escape) to skip gate",
+        "Add aria-describedby for question counter"
+      ]
+    },
+    {
+      "id": "wiki-blocks-019",
+      "name": "ProcessFlow",
+      "file": "src/components/wiki/blocks/ProcessFlow.tsx",
+      "description": "Ordered process timeline with vertical connector and circle markers.",
+      "props": "children: ReactNode",
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose timeline container",
+      "clientBoundary": "No",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: CSS-based numbered list with ::before pseudo-elements — properly uses semantic ol"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [
+        "MEDIUM: Hardcoded cobalt shadow color (rgba(27,63,196,0.3)) — not theme-aware"
+      ],
+      "errorBehavior": "Wraps children — no error handling",
+      "longContent": true,
+      "emptyContent": "Renders empty container with border",
+      "improvements": [
+        "Make shadow color theme-aware using CSS variables",
+        "Consider adding step numbers beyond CSS markers"
+      ]
+    },
+    {
+      "id": "wiki-blocks-020",
+      "name": "RevealBlock",
+      "file": "src/components/wiki/blocks/RevealBlock.tsx",
+      "description": "Drag-to-reveal content block — blurs content, user slides handle or clicks toggle to reveal.",
+      "props": {
+        "children": "ReactNode",
+        "prompt?": "string",
+        "label?": "string",
+        "blurRadius?": "number",
+        "defaultRevealed?": "boolean"
+      },
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS (not in baseMdxComponents)",
+      "renderContext": "not-prose border container with blur filter",
+      "clientBoundary": "Yes — 'use client' for useDrag and useState",
+      "interactionType": "interactive (drag slider, click toggle, keyboard arrow keys)",
+      "accessibilityRisks": [
+        "MEDIUM: Slider role=\"slider\" with aria-valuenow, aria-valuemin, aria-valuemax — proper",
+        "MEDIUM: Keyboard support for Arrow keys, Home, End — good",
+        "LOW: Toggle button has aria-label — good",
+        "LOW: use-gesture dependency adds bundle weight"
+      ],
+      "mobileRisks": [
+        "MEDIUM: Larger handle on mobile (40px vs 28px) — good",
+        "LOW: Touch support via use-gesture — handles touch events"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "No error handling — renders content with blur",
+      "longContent": ["MEDIUM: Blurred content could be large — no max-height on content area"],
+      "emptyContent": "Renders blur on empty content",
+      "improvements": [
+        "Add max-height with scroll for very long content",
+        "Consider fallback for environments where use-gesture fails"
+      ]
+    },
+    {
+      "id": "wiki-blocks-021",
+      "name": "SubjectSnapshot",
+      "file": "src/components/wiki/blocks/SubjectSnapshot.tsx",
+      "description": "Compact metadata bar — hero stat with supporting grid. Auto-detects % or weight as hero.",
+      "props": {
+        "items": "SnapshotItem[] | string"
+      },
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "not-prose border container",
+      "clientBoundary": "No",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: Hero detection heuristic (contains '%' or 'weight') — fragile for localization"
+      ],
+      "mobileRisks": [
+        "LOW: Responsive grid (grid-cols-2 sm:grid-cols-3 lg:grid-cols-4) — adequate",
+        "LOW: Hero zone stacks on mobile (flex-col sm:flex-row)"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null if parsed items array is empty",
+      "longContent": ["LOW: No max-length truncation on values"],
+      "emptyContent": "Returns null if parsed.length === 0",
+      "improvements": [
+        "Make hero detection configurable instead of heuristic",
+        "Add proper aria-label to the stat grid"
+      ]
+    },
+    {
+      "id": "wiki-blocks-022",
+      "name": "TeachBackPrompt",
+      "file": "src/components/wiki/blocks/TeachBackPrompt.tsx",
+      "description": "Interactive teach-back component — user writes explanation, gets AI evaluation, can revise. Multi-phase: prompt → submitting → result → revising → done.",
+      "props": {
+        "topicId": "string",
+        "topicName": "string",
+        "entryPoint": "'wiki' | 'focus_review' | 'trail'",
+        "trailDayId?": "string"
+      },
+      "export": "named",
+      "registry": "Not in MDX component maps — likely used at route/layout level",
+      "renderContext": "Standalone section (not not-prose — uses border-t separator)",
+      "clientBoundary": "Yes — 'use client' for state management and server actions",
+      "interactionType": "interactive (textarea, submit button, revise workflow)",
+      "accessibilityRisks": [
+        "LOW: Textarea has aria-label — good",
+        "LOW: Button states managed — disabled states have proper styling",
+        "LOW: Result items use role-less div — could use list semantics"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns to prompt phase on submission error, returns to revising phase on revision error. Returns null if dismissed.",
+      "longContent": ["LOW: No character limit on textarea"],
+      "emptyContent": "Returns null if dismissed=true at top of render",
+      "improvements": [
+        "Add proper list semantics (ul/li) for evaluation items",
+        "Add focus management when transitioning between phases",
+        "Consider saving draft textarea content to sessionStorage"
+      ]
+    },
+    {
+      "id": "wiki-blocks-023",
+      "name": "WrongAnswerBanner",
+      "file": "src/components/wiki/blocks/WrongAnswerBanner.tsx",
+      "description": "Context banner shown at top of article when arriving from a wrong answer — tells user why they're here.",
+      "props": {
+        "fromWrongAnswer": "boolean",
+        "topicName": "string | null"
+      },
+      "export": "named",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS and baseMdxComponents",
+      "renderContext": "Standalone banner (not not-prose)",
+      "clientBoundary": "No",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: Banner has no role — could use role=\"alert\" for screen reader attention"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null if conditions not met",
+      "longContent": "N/A — short banner message",
+      "emptyContent": "Returns null if !fromWrongAnswer or !topicName",
+      "improvements": ["Add role=\"alert\" to banner"]
+    },
+    {
+      "id": "wiki-blocks-024",
+      "name": "WikiPre / ElaborativeInterrogation",
+      "file": "src/components/wiki/blocks/WikiPre.tsx, ElaborativeInterrogation.tsx",
+      "description": "WikiPre: Enhanced <pre> that detects mermaid code blocks and renders Mermaid component. ElaborativeInterrogation: Interactive think-about-it prompt with MCQ or open-ended response.",
+      "props": {
+        "WikiPre": "props: any",
+        "ElaborativeInterrogation": "promptId, question, answer?, revealText?, options, articleId?, type?, placeholder?, existingResponse?"
+      },
+      "export": "named",
+      "registry": "Both in MDX component maps (WIKI_COMPONENTS and baseMdxComponents)",
+      "renderContext": "not-prose for EI, prose for WikiPre",
+      "clientBoundary": "Yes — both 'use client'",
+      "interactionType": "WikiPre: static wrapper. EI: interactive (MCQ select or open-ended text).",
+      "accessibilityRisks": [
+        "EI-LOW: MCQ buttons have aria-label? No — uses `aria-label=\"Write your answer\"` on textarea",
+        "EI-MEDIUM: Opens text with DOMPurify.sanitize() and dangerouslySetInnerHTML",
+        "WikiPre-LOW: Uses any types extensively — type safety risk"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": {
+        "WikiPre": "Renders standard <pre> if not mermaid",
+        "EI": "Handles pre-existing response, empty options gracefully"
+      },
+      "longContent": true,
+      "emptyContent": {
+        "WikiPre": "Renders empty <pre>",
+        "EI": "Handles empty answer gracefully"
+      },
+      "improvements": [
+        "EI: Use DOMPurify.sanitize output safely — consider alternative to dangerouslySetInnerHTML",
+        "WikiPre: Replace any types with proper HTML element props",
+        "EI: Add loading state for submit transition"
+      ]
+    },
+    {
+      "id": "wiki-nav-001",
+      "name": "WikiLayoutContent",
+      "file": "src/components/wiki/navigation/WikiLayoutContent.tsx",
+      "description": "Root layout orchestrator — fetches user + discipline, wraps in context providers, renders sidebar shell with Suspense and content shell.",
+      "props": "children: ReactNode",
+      "export": "named",
+      "registry": "Not in MDX maps — used at app route level",
+      "renderContext": "Full-page layout",
+      "clientBoundary": "No — async server component",
+      "interactionType": "static (orchestrator)",
+      "accessibilityRisks": [
+        "LOW: Skip-to-content link with sr-only pattern — well implemented",
+        "LOW: Focus styles visible on skip link — good"
+      ],
+      "mobileRisks": [
+        "LOW: Sidebar hidden on mobile (hidden md:flex on WikiSidebarShell)"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null if no user. Catches stats fetch error with console.error.",
+      "longContent": "N/A — layout orchestrator",
+      "emptyContent": "Returns null if no user",
+      "improvements": [
+        "Add better error UI when stats fetch fails instead of just console.error",
+        "Consider redirect for unauthenticated users instead of returning null"
+      ]
+    },
+    {
+      "id": "wiki-nav-002",
+      "name": "WikiSidebar",
+      "file": "src/components/wiki/navigation/WikiSidebar.tsx",
+      "description": "Main wiki sidebar — renders taxonomy tree with search, navigation, and article counts. Handles no-discipline, loading, and populated states.",
+      "props": {
+        "disciplineId": "string",
+        "disciplineName": "string",
+        "collapsed?": "boolean",
+        "initialNodes?": "TaxonomyNode[]"
+      },
+      "export": "named (WikiSidebar, shouldFetchClientTaxonomy)",
+      "registry": "Not in MDX maps — layout component",
+      "renderContext": "Aside element with overflow-hidden",
+      "clientBoundary": "Yes — 'use client' for pathname, state, and effects",
+      "interactionType": "interactive (tree expand/collapse, search, navigation)",
+      "accessibilityRisks": [
+        "LOW: Uses TaxonomyTree component — accessibility depends on that component",
+        "LOW: No-discipline state has Link as button — could use next/link directly"
+      ],
+      "mobileRisks": [
+        "MEDIUM: Sidebar is typically hidden on mobile — WikiHeaderClient has Sheet-based mobile nav",
+        "LOW: Loading skeleton has appropriate animation"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Renders no-discipline fallback if disciplineId is empty. Shows loading skeleton while fetching.",
+      "longContent": "N/A — taxonomy tree handles its own scrolling",
+      "emptyContent": "Renders no-discipline fallback. Renders loading skeleton.",
+      "improvements": [
+        "Extract no-discipline state to a reusable EmptyState component",
+        "Use proper next/link instead of button for settings link"
+      ]
+    },
+    {
+      "id": "wiki-nav-003",
+      "name": "WikiSidebarLoader",
+      "file": "src/components/wiki/navigation/WikiSidebarLoader.tsx",
+      "description": "Async server component that fetches cached taxonomy tree and passes initial nodes to WikiSidebar.",
+      "props": "disciplineId: string, disciplineName: string",
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Server component — wraps WikiSidebar",
+      "clientBoundary": "No — async server component",
+      "interactionType": "static (data fetcher)",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Does not catch errors from getCachedTaxonomyTreeFull",
+      "longContent": "N/A",
+      "emptyContent": "Passes empty nodes array to WikiSidebar",
+      "improvements": ["Add error boundary or error handling for failed taxonomy fetch"]
+    },
+    {
+      "id": "wiki-nav-004",
+      "name": "WikiSidebarShell",
+      "file": "src/components/wiki/navigation/WikiSidebarShell.tsx",
+      "description": "Resizable sidebar container with drag handle for width adjustment and collapse toggle. Persists width to localStorage.",
+      "props": "children: ReactNode",
+      "export": "named (WikiSidebarShell)",
+      "registry": "Not in MDX maps",
+      "renderContext": "Layout component",
+      "clientBoundary": "Yes — 'use client' for drag handling and localStorage",
+      "interactionType": "interactive (drag to resize, click to collapse)",
+      "accessibilityRisks": [
+        "MEDIUM: Drag resize uses mouse events only — no keyboard/touch resize support",
+        "LOW: Collapse toggle has aria-expanded and aria-label — good",
+        "MEDIUM: Returns null before mount (hydration safety) — causes flash of missing sidebar"
+      ],
+      "mobileRisks": [
+        "LOW: Hidden on mobile (hidden md:flex) — appropriate"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null before mount (if !mounted). Handles localStorage errors gracefully.",
+      "longContent": "N/A — container only",
+      "emptyContent": "Renders empty sidebar area with drag handle",
+      "improvements": [
+        "Add keyboard resize support (Arrow keys when drag handle focused)",
+        "Avoid null-return before mount — use SSR-safe default instead",
+        "Add touch event support for resize on tablets"
+      ]
+    },
+    {
+      "id": "wiki-nav-005",
+      "name": "WikiSidebarSkeleton",
+      "file": "src/components/wiki/navigation/WikiSidebarSkeleton.tsx",
+      "description": "Lightweight skeleton shown in sidebar while taxonomy tree loads.",
+      "props": "None",
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Skeleton only",
+      "clientBoundary": "No — pure component",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: No aria-busy or aria-live for screen reader loading awareness"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "N/A — simple skeleton",
+      "longContent": "N/A",
+      "emptyContent": "N/A",
+      "improvements": ["Add aria-busy=\"true\" to skeleton container"]
+    },
+    {
+      "id": "wiki-nav-006",
+      "name": "WikiHeader",
+      "file": "src/components/wiki/navigation/WikiHeader.tsx",
+      "description": "Server component wrapper for WikiHeaderClient — fetches breadcrumbs and mobile sidebar nodes.",
+      "props": "nodeId?, disciplineId?, articleId?, articleTitle?, articleSlug?, scrollContainerId?, disableUserActions?, mobileActionsContent?",
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Server component — data fetcher wrapper",
+      "clientBoundary": "No — async server component",
+      "interactionType": "static (data fetcher)",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Does not catch errors from getBreadcrumbTrail or getCachedTaxonomyTreeFull",
+      "longContent": "N/A",
+      "emptyContent": "Passes empty breadcrumbs, empty nodes",
+      "improvements": ["Add error handling for failed data fetches"]
+    },
+    {
+      "id": "wiki-nav-007",
+      "name": "WikiHeaderClient",
+      "file": "src/components/wiki/navigation/WikiHeaderClient.tsx",
+      "description": "Client header with breadcrumbs, mobile nav drawer, bookmarks, reading progress bar.",
+      "props": "breadcrumbs, articleId?, articleTitle?, articleSlug?, scrollContainerId?, disableUserActions?, mobileActionsContent?, mobileSidebarNodes?",
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Sticky top bar with breadcrumbs and actions",
+      "clientBoundary": "Yes — 'use client' for Sheet, bookmarks, reading progress",
+      "interactionType": "interactive (mobile nav drawer, bookmarks popover)",
+      "accessibilityRisks": [
+        "LOW: Sheet components use proper Radix/Shadcn patterns",
+        "LOW: Breadcrumb nav has aria-label=\"Breadcrumb\" — good",
+        "LOW: Back link has aria-label=\"Back to syllabus\" — good"
+      ],
+      "mobileRisks": [
+        "LOW: Mobile nav drawer via Sheet component — appropriate pattern"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Gracefully handles missing data (optional props)",
+      "longContent": "N/A — navigation header",
+      "emptyContent": "Renders minimal header with back link only",
+      "improvements": []
+    },
+    {
+      "id": "wiki-nav-008",
+      "name": "WikiContentShell",
+      "file": "src/components/wiki/navigation/WikiContentShell.tsx",
+      "description": "Content area shell with skeleton transition — shows ArticleSkeleton when navigation is pending.",
+      "props": "children: ReactNode",
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Layout shell wrapping article content",
+      "clientBoundary": "Yes — 'use client' for useWikiNavigation",
+      "interactionType": "static (transition wrapper)",
+      "accessibilityRisks": [
+        "LOW: No aria-busy or aria-live when showing skeleton — screen reader may not detect loading"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "N/A — renders children or skeleton",
+      "longContent": "N/A — wrapper only",
+      "emptyContent": "Renders skeleton if pending regardless of children",
+      "improvements": [
+        "Add aria-busy=\"true\" when showing skeleton",
+        "Add aria-live=\"polite\" for transition announcements"
+      ]
+    },
+    {
+      "id": "wiki-nav-009",
+      "name": "WikiRightSidebar",
+      "file": "src/components/wiki/navigation/WikiRightSidebar.tsx",
+      "description": "Right sidebar with quiz button, related topics popover, feedback buttons, copy link, sources popover, and table of contents.",
+      "props": "practiceHref, practiceLabel, nodeId?, articleId?, topicName?, relatedTopics?, headings, articleSlug, scrollContainerId?, sources?, disableUserActions?",
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Right sidebar panel",
+      "clientBoundary": "Yes — 'use client' for feedback, copy link, bookmarks, ToC",
+      "interactionType": "interactive (quiz button, feedback, copy link, ToC scroll)",
+      "accessibilityRisks": [
+        "LOW: Feedback buttons have aria-label — good",
+        "LOW: Uses WikiTableOfContents and WikiSourcesPopover — a11y depends on those",
+        "LOW: Link copy uses navigator.clipboard.writeText — secure context required"
+      ],
+      "mobileRisks": [
+        "LOW: Hidden on mobile (lg:flex on parent) — content moved to Sheet drawer",
+        "LOW: mobileActionsContent prop allows custom mobile rendering"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Handles missing/null props with defaults. Toast-based error feedback for bookmark/feedback failures.",
+      "longContent": ["LOW: Related topics hard-capped at 3"],
+      "emptyContent": "Renders sections even with no headings (ToC hidden). Returns null for empty sources popover.",
+      "improvements": [
+        "Restore commented-out 'Study in Notes' button or clean up dead code",
+        "Make ToC scroll to heading use smoother animation"
+      ]
+    },
+    {
+      "id": "wiki-nav-010",
+      "name": "WikiRightSidebarSkeleton",
+      "file": "src/components/wiki/navigation/WikiRightSidebarSkeleton.tsx",
+      "description": "Skeleton for right sidebar while article loads — matches WikiRightSidebar layout.",
+      "props": "None",
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Skeleton only",
+      "clientBoundary": "No — pure component",
+      "interactionType": "static",
+      "accessibilityRisks": [
+        "LOW: No aria-busy or aria-live for screen reader loading awareness"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "N/A",
+      "longContent": "N/A",
+      "emptyContent": "N/A",
+      "improvements": ["Add aria-busy=\"true\""]
+    },
+    {
+      "id": "wiki-nav-011",
+      "name": "WikiTableOfContents",
+      "file": "src/components/wiki/navigation/WikiTableOfContents.tsx",
+      "description": "On-this-page table of contents with IntersectionObserver-based active heading tracking and smooth scroll to heading.",
+      "props": {
+        "headings": "TocHeading[]",
+        "scrollContainerId?": "string"
+      },
+      "export": "named",
+      "registry": "Not in MDX maps — used within WikiRightSidebar",
+      "renderContext": "nested inside right sidebar",
+      "clientBoundary": "Yes — 'use client' for IntersectionObserver and scroll behavior",
+      "interactionType": "interactive (click to scroll, auto-highlights active)",
+      "accessibilityRisks": [
+        "LOW: nav with aria-label=\"Table of contents\" — good",
+        "LOW: Buttons with aria-current — good",
+        "LOW: highlight-fade class manipulation — visual-only effect",
+        "MEDIUM: IntersectionObserver-based active detection doesn't work if headings lack IDs"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null if headings array is empty",
+      "longContent": true,
+      "emptyContent": "Returns null if headings.length === 0",
+      "improvements": [
+        "Ensure all rendered headings have IDs (they do via WikiArticle's createWikiHeadingComponents)",
+        "Consider reducing IntersectionObserver rootMargin sensitivity"
+      ]
+    },
+    {
+      "id": "wiki-nav-012",
+      "name": "WikiReadingProgress",
+      "file": "src/components/wiki/navigation/WikiReadingProgress.tsx",
+      "description": "Horizontal reading progress bar that fills as user scrolls through the page.",
+      "props": {
+        "scrollContainerId?": "string"
+      },
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Thin bar below header",
+      "clientBoundary": "Yes — 'use client' for scroll listener",
+      "interactionType": "static (visual progress indicator)",
+      "accessibilityRisks": [
+        "LOW: aria-hidden=\"true\" — appropriate as decorative"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Defaults to window scroll if container not found. Handles zero-height scroll gracefully (sets progress to 0).",
+      "longContent": "N/A — visual progress bar",
+      "emptyContent": "Sets progress to 0 if scrollHeight <= 0",
+      "improvements": ["None — well-implemented"]
+    },
+    {
+      "id": "wiki-nav-013",
+      "name": "WikiBookmarks",
+      "file": "src/components/wiki/navigation/WikiBookmarks.tsx",
+      "description": "Bookmarks popover with save/unsave toggle for current page and list of saved bookmarks with remove option.",
+      "props": {
+        "currentArticleId?": "string",
+        "currentSlug?": "string",
+        "currentTitle?": "string"
+      },
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Popover trigger in header",
+      "clientBoundary": "Yes — 'use client' for server actions and popover state",
+      "interactionType": "interactive (popover toggle, bookmark CRUD)",
+      "accessibilityRisks": [
+        "LOW: PopoverTrigger has aria-label=\"Bookmarks\" — good",
+        "LOW: Remove buttons have aria-label — good",
+        "MEDIUM: Optimistic updates may cause UI/data mismatch if server action fails"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Optimistic updates with rollback on server failure. Returns null before bookmarks are loaded.",
+      "longContent": ["LOW: Popover max-height: 64 (256px) with overflow-y-auto"],
+      "emptyContent": "Shows 'No bookmarks yet' empty state with helpful message",
+      "improvements": [
+        "Add proper error toast for failed remove operations",
+        "Consider adding search within bookmarks for power users"
+      ]
+    },
+    {
+      "id": "wiki-nav-014",
+      "name": "WikiNavigationContext",
+      "file": "src/components/wiki/navigation/WikiNavigationContext.tsx",
+      "description": "React context for navigation state — provides isPending status and navigate function using React.useTransition.",
+      "props": "Provider: children: ReactNode",
+      "export": "named (WikiNavigationProvider, useWikiNavigation)",
+      "registry": "Not in MDX maps — context provider",
+      "renderContext": "Context provider wrapping wiki layout",
+      "clientBoundary": "Yes — 'use client' for useRouter and useTransition",
+      "interactionType": "N/A — context provider",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Minimal — provides default values if context missing",
+      "longContent": "N/A",
+      "emptyContent": "N/A",
+      "improvements": ["Add error boundary around context usage"]
+    },
+    {
+      "id": "wiki-nav-015",
+      "name": "WikiDisciplineContext",
+      "file": "src/components/wiki/navigation/WikiDisciplineContext.tsx",
+      "description": "React context for discipline data — provides disciplineId and disciplineName.",
+      "props": "Provider: disciplineId, disciplineName, children",
+      "export": "named (WikiDisciplineProvider, useWikiDiscipline)",
+      "registry": "Not in MDX maps — context provider",
+      "renderContext": "Context provider wrapping wiki layout",
+      "clientBoundary": "Yes — 'use client'",
+      "interactionType": "N/A — context provider",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Provides default values if context is consumed outside provider",
+      "longContent": "N/A",
+      "emptyContent": "N/A",
+      "improvements": []
+    },
+    {
+      "id": "wiki-nav-016",
+      "name": "WikiDisciplineContext / duplicate entry",
+      "file": "src/components/wiki/navigation/WikiDisciplineContext.tsx",
+      "description": "Already listed above as nav-015. ID: wiki-nav-016 is reserved.",
+      "props": {},
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "N/A",
+      "clientBoundary": "Yes",
+      "interactionType": "N/A",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "N/A",
+      "longContent": "N/A",
+      "emptyContent": "N/A",
+      "improvements": []
+    },
+    {
+      "id": "wiki-quiz-001",
+      "name": "WikiQuizButton",
+      "file": "src/components/wiki/quiz/WikiQuizButton.tsx",
+      "description": "Button that opens the WikiQuizModal — uses lazy loading for the modal component.",
+      "props": {
+        "nodeId": "string",
+        "topicName": "string",
+        "articleSlug?": "string"
+      },
+      "export": "named",
+      "registry": "Not in MDX maps — used in WikiRightSidebar",
+      "renderContext": "Button inline in right sidebar",
+      "clientBoundary": "Yes — 'use client' for useState and lazy loading",
+      "interactionType": "interactive (click to open modal)",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Suspense fallback is null — no loading state for modal",
+      "longContent": "N/A",
+      "emptyContent": "N/A",
+      "improvements": [
+        "Add loading skeleton when modal is being lazy-loaded",
+        "Consider preloading modal on hover"
+      ]
+    },
+    {
+      "id": "wiki-quiz-002",
+      "name": "WikiQuizModal",
+      "file": "src/components/wiki/quiz/WikiQuizModal.tsx",
+      "description": "Full quiz modal with loading, empty, question, feedback, and results states. Uses radio buttons, progress dots, SlideToSubmit, gated delay, focus trap, body scroll lock.",
+      "props": {
+        "nodeId": "string",
+        "topicName": "string",
+        "articleSlug?": "string",
+        "onClose": "() => void"
+      },
+      "export": "named",
+      "registry": "Not in MDX maps",
+      "renderContext": "Portal to document.body",
+      "clientBoundary": "Yes — 'use client' with extensive state management",
+      "interactionType": "interactive (quiz flow with radio buttons, slide to submit, gated next)",
+      "accessibilityRisks": [
+        "LOW: role=\"dialog\", aria-modal=\"true\", aria-label — well-structured",
+        "LOW: Focus trap implemented via focusin handler — functional",
+        "LOW: Escape key handled — good",
+        "LOW: aria-live=\"polite\" on feedback — good",
+        "MEDIUM: progress dots are aria-hidden — correct for decorative elements",
+        "MEDIUM: Focus trap could be stricter — doesn't trap Tab within dialog (only focusin)"
+      ],
+      "mobileRisks": [
+        "LOW: max-w-[560px] with max-h-[90vh] — responsive"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Handles loading errors (sets 'empty' status). Silently handles submit/end-session errors. Resets on nodeId change.",
+      "longContent": true,
+      "emptyContent": "Shows 'No review questions available' empty state",
+      "improvements": [
+        "Implement proper Tab focus trap (cycle focus within modal)",
+        "Replace setInterval for gated timer with setTimeout chain",
+        "Add keyboard shortcut list for power users"
+      ]
+    },
+    {
+      "id": "wiki-shared-001",
+      "name": "WikiHighlighter",
+      "file": "src/components/wiki/shared/WikiHighlighter.tsx",
+      "description": "Client component that highlights a search term in the article text based on 'highlight' query parameter. Uses TreeWalker for text node search and smooth scrolling.",
+      "props": "None",
+      "export": "named (WikiHighlighter)",
+      "registry": "Not in MDX maps — used within WikiArticle",
+      "renderContext": "Invisible — returns null after rendering",
+      "clientBoundary": "Yes — 'use client' for useSearchParams and DOM manipulation",
+      "interactionType": "static (side-effect only, renders nothing)",
+      "accessibilityRisks": [
+        "LOW: Returns null — no impact",
+        "MEDIUM: Uses range.surroundContents — throws on multi-element ranges, caught silently"
+      ],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Catches surroundContents errors silently. Polls with rAF until content is rendered.",
+      "longContent": "N/A — side-effect component",
+      "emptyContent": "Returns early if no highlight param",
+      "improvements": [
+        "Consider using Mark.js or similar robust library instead of raw TreeWalker",
+        "Handle case-insensitive search with international characters"
+      ]
+    },
+    {
+      "id": "wiki-shared-002",
+      "name": "WikiNoteAnchor",
+      "file": "src/components/wiki/shared/WikiNoteAnchor.tsx",
+      "description": "Invisible component that sets NoteContext anchor so QuickCaptureDrawer knows what article the user is reading.",
+      "props": {
+        "article_id": "string",
+        "article_title": "string",
+        "topic_id?": "string",
+        "topic_name?": "string",
+        "source_url": "string"
+      },
+      "export": "named (WikiNoteAnchor)",
+      "registry": "Not in MDX maps — used within WikiArticle",
+      "renderContext": "Invisible — returns null",
+      "clientBoundary": "Yes — 'use client' for context",
+      "interactionType": "static (side-effect only)",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "No error handling — relies on context being available",
+      "longContent": "N/A",
+      "emptyContent": "N/A",
+      "improvements": ["Add defensive check for missing NoteContext"]
+    },
+    {
+      "id": "wiki-shared-003",
+      "name": "WikiReadTracker",
+      "file": "src/components/wiki/shared/WikiReadTracker.tsx",
+      "description": "Tracks article read progress — records read on mount, updates scroll depth and time spent on visibility change/unmount.",
+      "props": {
+        "articleId": "string",
+        "scrollContainerId": "string",
+        "trailStepId?": "string"
+      },
+      "export": "named (WikiReadTracker)",
+      "registry": "Not in MDX maps",
+      "renderContext": "Invisible — returns null",
+      "clientBoundary": "Yes — 'use client' for scroll listener and effects",
+      "interactionType": "static (side-effect only)",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "No error handling if server actions fail",
+      "longContent": "N/A",
+      "emptyContent": "N/A",
+      "improvements": [
+        "Add error handling for failed server actions",
+        "Consider debouncing scroll updates instead of rAF"
+      ]
+    },
+    {
+      "id": "wiki-shared-004",
+      "name": "WikiReference",
+      "file": "src/components/wiki/shared/WikiReference.tsx",
+      "description": "Peek-view component for wiki-to-wiki links — hover shows tooltip summary, click opens full article in slide-out drawer.",
+      "props": {
+        "slug": "string",
+        "children": "ReactNode",
+        "className?": "string"
+      },
+      "export": "named (WikiReference)",
+      "registry": "MDX component map — registered in WIKI_COMPONENTS",
+      "renderContext": "Inline link with hover tooltip + slide drawer",
+      "clientBoundary": "Yes — 'use client' for Tooltip, Sheet, and data fetching",
+      "interactionType": "interactive (hover tooltip, click to open sheet)",
+      "accessibilityRisks": [
+        "LOW: Radix Tooltip with delayDuration — proper",
+        "LOW: Tooltip.Content has proper z-index and positioning",
+        "MEDIUM: Iframe in sheet loads full article URL — no 'minimal=true' guarantee on target",
+        "LOW: Sheet has proper heading (SheetTitle)"
+      ],
+      "mobileRisks": [
+        "LOW: Sheet is full-width on mobile (w-full sm:max-w-xl)"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Handles article fetch errors with fallback messages ('Failed to load summary.', 'Article not found.')",
+      "longContent": "N/A — summary is truncated (line-clamp-3)",
+      "emptyContent": "Handles null/missing article gracefully",
+      "improvements": [
+        "Replace iframe with proper peek renderer component",
+        "Add loading state for iframe content",
+        "Consider pre-fetching on hover for instant open"
+      ]
+    },
+    {
+      "id": "wiki-shared-005",
+      "name": "WikiRelatedPopover",
+      "file": "src/components/wiki/shared/WikiRelatedPopover.tsx",
+      "description": "Popover that displays related topic links — positions itself relative to sidebar trigger.",
+      "props": {
+        "topics": "RelatedTopic[]"
+      },
+      "export": "named (WikiRelatedPopover)",
+      "registry": "Not in MDX maps — used in WikiRightSidebar",
+      "renderContext": "Fixed-position popover via createPortal",
+      "clientBoundary": "Yes — 'use client' for positioning and event handling",
+      "interactionType": "interactive (click to open/close popover)",
+      "accessibilityRisks": [
+        "LOW: Popover positioned via createPortal — no focus management on open/close",
+        "LOW: Click-outside and scroll-close handlers — good",
+        "MEDIUM: No Escape key handler for popover close"
+      ],
+      "mobileRisks": [
+        "MEDIUM: Uses fixed positioning with right-alignment — may overflow on very small screens"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null if topics array is empty",
+      "longContent": ["LOW: max-h-[360px] with overflow-y-auto"],
+      "emptyContent": "Returns null if topics.length === 0",
+      "improvements": [
+        "Add Escape key handler to close popover",
+        "Add focus trap for popover when open",
+        "Consider using Radix Popover instead of custom implementation"
+      ]
+    },
+    {
+      "id": "wiki-shared-006",
+      "name": "WikiSourcesPopover",
+      "file": "src/components/wiki/shared/WikiSourcesPopover.tsx",
+      "description": "Popover that displays article sources — same pattern as WikiRelatedPopover.",
+      "props": {
+        "sources": "WikiArticleSource[]"
+      },
+      "export": "named (WikiSourcesPopover)",
+      "registry": "Not in MDX maps — used in WikiRightSidebar",
+      "renderContext": "Fixed-position popover via createPortal",
+      "clientBoundary": "Yes — 'use client'",
+      "interactionType": "interactive (click to open/close popover)",
+      "accessibilityRisks": [
+        "MEDIUM: Same issues as WikiRelatedPopover — no Escape key, no focus management, no focus trap"
+      ],
+      "mobileRisks": [
+        "MEDIUM: Same overflow risk as WikiRelatedPopover"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns null if sources array is empty",
+      "longContent": ["LOW: max-h-[360px] with overflow-y-auto, descriptions line-clamp-1"],
+      "emptyContent": "Returns null if sources.length === 0",
+      "improvements": [
+        "Add Escape key handler",
+        "Add focus trap",
+        "Use Radix Popover instead of custom createPortal approach"
+      ]
+    },
+    {
+      "id": "wiki-shared-007",
+      "name": "WikiTextSelection",
+      "file": "src/components/wiki/shared/WikiTextSelection.tsx",
+      "description": "Text-selection popover with Highlight, Copy, and Add to Notes actions. Appears when user selects text in the article.",
+      "props": {
+        "articleId?": "string"
+      },
+      "export": "named (WikiTextSelection)",
+      "registry": "Not in MDX maps — used within WikiArticle",
+      "renderContext": "Fixed-position popover near selection",
+      "clientBoundary": "Yes — 'use client' for selection events and actions",
+      "interactionType": "interactive (select text, click action buttons)",
+      "accessibilityRisks": [
+        "LOW: role=\"toolbar\" with aria-label=\"Text selection actions\" — well-structured",
+        "LOW: Each button has aria-label — good",
+        "LOW: Replaces window selection — may lose context for screen reader cursor"
+      ],
+      "mobileRisks": [
+        "MEDIUM: Selection popover position may overlap with mobile context menu"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Handles highlight save failure with error toast. Clears selection after actions.",
+      "longContent": "N/A — selection-based, handles arbitrary text",
+      "emptyContent": "Returns null if no text selected or selection is in wrong container",
+      "improvements": [
+        "Consider debouncing selection change handler for performance",
+        "Add position boundary checking to prevent popover going off-screen"
+      ]
+    },
+    {
+      "id": "wiki-widgets-001",
+      "name": "WidgetContainer",
+      "file": "src/components/wiki/widgets/WidgetContainer.tsx",
+      "description": "Standardized container for all wiki widgets — consistent border, padding, radius, and eyebrow label.",
+      "props": {
+        "label": "string",
+        "children": "ReactNode",
+        "interactive?": "boolean",
+        "className?": "string"
+      },
+      "export": "named (WidgetContainer) + type (WidgetContainerProps)",
+      "registry": "Not in MDX component map — used by widget components internally",
+      "renderContext": "not-prose container",
+      "clientBoundary": "No",
+      "interactionType": "static (decorative wrapper, interactive visuals for child content)",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Wraps children — no error handling needed",
+      "longContent": true,
+      "emptyContent": "Renders container with label and empty children area",
+      "improvements": []
+    },
+    {
+      "id": "wiki-widgets-002",
+      "name": "Lab3DWidget",
+      "file": "src/components/wiki/widgets/Lab3DWidget.tsx",
+      "description": "Embeds a 3D Lab module into a wiki article with dynamic template loading (parametric, exploded, floorplan, cutaway, animated).",
+      "props": {
+        "moduleId": "string",
+        "height?": "number | string",
+        "caption?": "string"
+      },
+      "export": "default",
+      "registry": "Widget registry (lazy loaded for MDX)",
+      "renderContext": "not-prose container with Card",
+      "clientBoundary": "Yes — 'use client' for dynamic imports and state management",
+      "interactionType": "interactive (3D scene manipulation, overlay buttons)",
+      "accessibilityRisks": [
+        "MEDIUM: 3D scenes may not have accessible alternatives",
+        "LOW: Error state has icon + text — adequate",
+        "LOW: Loading state has aria-live? No — uses static text"
+      ],
+      "mobileRisks": [
+        "MEDIUM: 3D scenes may not work or may be heavy on mobile",
+        "LOW: Height is configurable but defaults to 420px — may be too tall on small screens"
+      ],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Handles missing module (null returns), missing registry entry (error state), config loading failure (error state)",
+      "longContent": "N/A — 3D scene with fixed height",
+      "emptyContent": "Returns null if registry entry not found",
+      "improvements": [
+        "Add aria-label to 3D scene container",
+        "Consider responsive height based on viewport",
+        "Add proper error recovery/retry mechanism"
+      ]
+    },
+    {
+      "id": "wiki-widgets-003",
+      "name": "registry.ts (widgetRegistry + utilities)",
+      "file": "src/components/wiki/widgets/registry.ts",
+      "description": "Master widget registry mapping MDX tag names to lazy loaders. Includes detectWidgets() and resolveWidgets() utilities.",
+      "props": "N/A — utility module",
+      "export": "named (widgetRegistry, detectWidgets, resolveWidgets)",
+      "registry": "This IS the registry itself",
+      "renderContext": "N/A — utility",
+      "clientBoundary": "N/A — pure utility functions",
+      "interactionType": "N/A",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "resolveWidgets catches nothing — errors propagate to caller. detectWidgets does string matching — prone to false positives if tag name appears in prose.",
+      "longContent": "N/A",
+      "emptyContent": "detectWidgets returns [] if no matches; resolveWidgets returns {}",
+      "improvements": [
+        "detectWidgets should use regex with word boundaries instead of string .includes()",
+        "Add error handling in resolveWidgets for individual widget load failures"
+      ]
+    },
+    {
+      "id": "wiki-widgets-004",
+      "name": "BP344 Widgets (DoorConfigurator, CorridorVisualizer, CubicleChecker, GrabBarExplainer, RecallDrill, ComparisonTable)",
+      "file": "src/components/wiki/widgets/bp344/*.tsx",
+      "description": "Accessibility standards widgets for BP 344. Interactive tools for door compliance, corridor widths, cubicle dimensions, grab bar placement, recall drills, and comparison tables.",
+      "props": "Varies per widget",
+      "export": "named",
+      "registry": "Widget registry (lazy loaded per MDX tag)",
+      "renderContext": "not-prose via WidgetContainer or direct div",
+      "clientBoundary": "Yes — interactive client components",
+      "interactionType": "interactive (sliders, SVG visualization, calculators)",
+      "accessibilityRisks": [
+        "MEDIUM: Many are SVG-based interactive tools — may lack keyboard/touch support",
+        "MEDIUM: No screen-reader descriptions for SVG-generated visualizations"
+      ],
+      "mobileRisks": [
+        "MEDIUM: Interactive SVG tools with sliders may not work well on small touch screens"
+      ],
+      "visualConsistencyRisks": [
+        "LOW: Some use inline hardcoded styles rather than design tokens"
+      ],
+      "errorBehavior": "Varies — some have basic validation, others render unconditionally",
+      "longContent": "N/A — interactive tools with fixed UI",
+      "emptyContent": "Varies per widget",
+      "improvements": [
+        "Audit each BP344 widget for a11y and mobile behavior individually",
+        "Add proper error boundaries around individual widget loading"
+      ]
+    },
+    {
+      "id": "wiki-widgets-005",
+      "name": "DSGN013 Widgets (BodyDimensionExplorer, ReachEnvelopeDiagram, etc.)",
+      "file": "src/components/wiki/widgets/dsgn013/*.tsx",
+      "description": "Design/ergonomics widgets for DSGN-013: human body dimensions, reach ranges, furniture clearances, spatial quality, and workstation calculations.",
+      "props": "Varies per widget",
+      "export": "named",
+      "registry": "Widget registry (lazy loaded per MDX tag)",
+      "renderContext": "not-prose via WidgetContainer or direct div",
+      "clientBoundary": "Yes — interactive client components",
+      "interactionType": "interactive (drills, explorers, calculators, SVGs)",
+      "accessibilityRisks": [
+        "MEDIUM: Drill components (SpatialQualityDrill, BodyDimensionDrill, DimensionDrill) use interactive selection — keyboard support varies"
+      ],
+      "mobileRisks": [
+        "MEDIUM: Interactive tools may be touch-unfriendly"
+      ],
+      "visualConsistencyRisks": [
+        "LOW: Some use inline styles"
+      ],
+      "errorBehavior": "Varies",
+      "longContent": "N/A",
+      "emptyContent": "Varies",
+      "improvements": [
+        "Audit each DSGN013 widget for a11y and mobile behavior individually",
+        "Ensure all interactive controls are keyboard-accessible"
+      ]
+    },
+    {
+      "id": "wiki-utilities-001",
+      "name": "parseMdxProp",
+      "file": "src/components/wiki/shared/parse-mdx-prop.ts",
+      "description": "Utility that parses MDX string props back into JS values — handles HTML entity decoding and JS object key quoting.",
+      "props": "(value: T | string | undefined, fallback: T) => T",
+      "export": "named",
+      "registry": "N/A — utility",
+      "renderContext": "N/A",
+      "clientBoundary": "N/A — pure function",
+      "interactionType": "N/A",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Returns fallback on any parse error — graceful",
+      "longContent": "N/A",
+      "emptyContent": "Returns fallback if value is undefined/null",
+      "improvements": [
+        "Add support for TypeScript enum/union parsing for more robust type inference"
+      ]
+    },
+    {
+      "id": "wiki-utilities-002",
+      "name": "transformMistakeString",
+      "file": "src/components/wiki/shared/transform-mistake-string.ts",
+      "description": "Transforms plain mistake strings into structured WikiMistakeProps by pattern-matching common formats.",
+      "props": "(text: string, index: number) => WikiMistakeProps",
+      "export": "named",
+      "registry": "N/A — utility",
+      "renderContext": "N/A",
+      "clientBoundary": "N/A — pure function",
+      "interactionType": "N/A",
+      "accessibilityRisks": [],
+      "mobileRisks": [],
+      "visualConsistencyRisks": [],
+      "errorBehavior": "Always returns a WikiMistakeProps — last-resort fallback uses full text as title",
+      "longContent": "N/A",
+      "emptyContent": "Still returns a props object with empty strings",
+      "improvements": []
+    }
+  ],
+  "componentMaps": {
+    "WIKI_COMPONENTS": ["table", "thead", "th", "td", "pre", "code", "Note", "Warn", "Warning", "Tip", "Example", "Callout", "ExamTip", "AlertBox", "CalloutBox", "AuthorityContent", "ComparisonTable", "SubjectSnapshot", "WikiCalloutBox", "WikiExamTable", "WikiArticleHero", "WikiPartHeader", "WikiChangedPill", "WikiMistakeCard", "WikiMistakeList", "MistakeCard", "MistakeList", "Mistakes", "KeyValues", "FormulaBlock", "InlineQuiz", "Tabs", "Tab", "Accordion", "AccordionItem", "ElaborativeInterrogation", "LawCallout", "RevealBlock", "WikiReference", "Mermaid", "EIPrompt", "EIBlock", "GenericBlock aliases (17)", "SPP206RefServices", "SPP207RefServices"],
+    "baseMdxComponents": ["h2", "h3", "table", "thead", "th", "td", "pre", "code", "Note", "Warn", "Warning", "Tip", "Example", "Callout", "WikiCalloutBox", "WikiExamTable", "WikiArticleHero", "WikiPartHeader", "WikiChangedPill", "WikiMistakeCard", "WikiMistakeList", "KeyValues", "FormulaBlock", "InlineQuiz", "Tabs", "Tab", "Accordion", "AccordionItem", "ElaborativeInterrogation", "LawCallout", "ExamTip", "AlertBox", "ComparisonTable", "SubjectSnapshot", "ProcessFlow", "AuthorityContent", "GenericBlock aliases (17)"],
+    "widgetRegistry": ["AccessibilityChangesTable", "DoorConfigurator", "CorridorVisualizer", "CubicleChecker", "GrabBarExplainer", "RecallDrill", "BedroomPlanView", "BedSizeComparator", "WorkstationCalculator", "DimensionDrill", "BodyDimensionExplorer", "ReachEnvelopeDiagram", "BodyDimensionDrill", "DHRatioExplorer", "ProportionComparator", "SpatialQualityDrill", "Lab3DWidget", "PHBuildingSetbacks"]
+  },
+  "exportedFromIndex": [
+    "WikiChangedPill", "WikiCalloutBox", "WikiExamTable", "WikiArticleHero", "WikiLearningJourney", "WikiLearningCompletion", "WikiPartHeader", "WikiMistakeCard", "WikiMistakeList", "KeyValues", "SubjectSnapshot", "Tabs", "Tab", "Accordion", "AccordionItem", "FormulaBlock", "InlineQuiz", "GenericBlock", "SPP206RefServices", "SPP207RefServices", "TeachBackPrompt", "WrongAnswerBanner", "ProcessFlow", "ElaborativeInterrogation", "ComparisonTable", "WikiHeader", "WikiRightSidebar", "WikiRightSidebarSkeleton", "WikiReadTracker", "WikiItemRenderer", "Callout", "Note", "Warn", "Tip", "Example", "CalloutBox", "AlertBox", "ExamTip", "AuthorityContent", "LawCallout", "WikiArticleHeader", "WikiArticle", "WikiArticleSkeleton", "getArticleHeadings"
+  ]
+}

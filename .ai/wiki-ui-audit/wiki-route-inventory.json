@@ -1,0 +1,443 @@
+{
+  "inventory_metadata": {
+    "generated_at": "2026-05-04T01:16:00Z",
+    "project": "slatecamp",
+    "framework": "Next.js App Router",
+    "runtime": "Bun",
+    "scope": "All wiki-related routes and components under /dashboard/wiki"
+  },
+  "routes": [
+    {
+      "route_path": "/dashboard/wiki",
+      "file_path": "src/app/dashboard/wiki/page.tsx",
+      "component_tree": [
+        "WikiPage (default export, client-rendered static component)"
+      ],
+      "render_type": "client",
+      "data_sources": [],
+      "loading_state": {
+        "has_loading_file": true,
+        "loading_file": "src/app/dashboard/wiki/loading.tsx",
+        "loading_ui": "Full-window skeleton with sidebar skeleton (search bar, tree items with staggered widths), center content skeleton (header bar with breadcrumb bones, article title, paragraphs, section headings), right sidebar skeleton (practice button, ToC, related topics). Uses <Skeleton> components.",
+        "loading_triggers": [
+          "Outer layout Suspense boundary in layout.tsx wraps WikiLayoutContent"
+        ]
+      },
+      "error_state": {
+        "has_error_file": false,
+        "error_file": null,
+        "error_handling": "No wiki-level error.tsx. Falls through to parent error boundaries (dashboard error.tsx if it exists, or Next.js default)."
+      },
+      "empty_state": {
+        "description": "Static landing page with hero section, feature grid (Syllabus Mapped, Interactive Content), and footer hint. Always renders — no data dependencies. 'Empty' IS this page's default state before navigating to an article."
+      },
+      "metadata_seo": {
+        "has_generateMetadata": false,
+        "title": null,
+        "description": null,
+        "open_graph": null,
+        "robots": null
+      }
+    },
+    {
+      "route_path": "/dashboard/wiki (layout)",
+      "file_path": "src/app/dashboard/wiki/layout.tsx",
+      "component_tree": [
+        "WikiPageLayout (default export, server component)",
+        "  <div.h-full.w-full.overflow-hidden>",
+        "    <Suspense fallback={<WikiLoading />}>",
+        "      <WikiLayoutContent>{children}</WikiLayoutContent>",
+        "    </Suspense>",
+        "  </div>"
+      ],
+      "render_type": "server (async)",
+      "data_sources": [],
+      "loading_state": {
+        "has_loading_file": true,
+        "loading_file": "src/app/dashboard/wiki/loading.tsx",
+        "loading_ui": "Full layout skeleton including sidebar, content, and right sidebar - see above",
+        "loading_triggers": [
+          "Suspense boundary in layout.tsx wraps WikiLayoutContent async component"
+        ]
+      },
+      "error_state": {
+        "has_error_file": false,
+        "error_file": null,
+        "error_handling": "No wiki root error.tsx. Errors propagate to parent dashboard error boundary."
+      },
+      "metadata_seo": {
+        "not_applicable": true,
+        "note": "Layouts don't have generateMetadata"
+      }
+    },
+    {
+      "route_path": "/dashboard/wiki (WikiLayoutContent orchestrator)",
+      "file_path": "src/components/wiki/navigation/WikiLayoutContent.tsx",
+      "component_tree": [
+        "WikiLayoutContent (async server component)",
+        "  Creates Supabase client, gets user",
+        "  Fetches user_global_stats for current_discipline_id",
+        "  <WikiDisciplineProvider>",
+        "    <WikiNavigationProvider>",
+        "      <a.skip-to-content /> (accessibility)",
+        "      <div.flex>",
+        "        <WikiSidebarShell>",
+        "          {disciplineId ? <Suspense fallback={<WikiSidebarSkeleton />}><WikiSidebarLoader /></Suspense> : <WikiSidebar />}",
+        "        </WikiSidebarShell>",
+        "        <WikiContentShell>",
+        "          {children}",
+        "        </WikiContentShell>",
+        "      </div>",
+        "    </WikiNavigationProvider>",
+        "  </WikiDisciplineProvider>"
+      ],
+      "render_type": "server (async)",
+      "data_sources": [
+        {
+          "name": "getUser()",
+          "source": "src/lib/supabase/server",
+          "returns": "{ data: { user } }",
+          "cached": false
+        },
+        {
+          "name": "supabase.from('user_global_stats').select('current_discipline_id, disciplines(name)').eq('user_id', user.id).maybeSingle()",
+          "source": "Supabase direct query",
+          "returns": "stats row or null",
+          "cached": false
+        }
+      ],
+      "loading_state": {
+        "inner_suspense": {
+          "wiki_sidebar_loader": "WikiSidebarSkeleton — sidebar shape with search bar and tree items",
+          "fallback_ui_used": "WikiSidebarSkeleton"
+        }
+      },
+      "error_state": {
+        "user_null": "Returns null (renders nothing) if no user",
+        "stats_error": "Logs console.error but continues with disciplineId=null — sidebar shows 'No Discipline' empty state",
+        "no_catch_boundary": "No error boundary at this level; relies on parent layout Suspense"
+      },
+      "empty_state": {
+        "no_discipline": "When disciplineId is null, WikiSidebarShell renders WikiSidebar which shows 'No Discipline' state with link to Settings"
+      }
+    },
+    {
+      "route_path": "/dashboard/wiki/[slug]",
+      "file_path": "src/app/dashboard/wiki/[slug]/page.tsx",
+      "component_tree": [
+        "WikiArticlePage (async server component, default export)",
+        "  <WikiHeader nodeId, disciplineId, articleId, articleTitle, articleSlug, mobileActionsContent={sidebarContent} />",
+        "    - Server component that fetches breadcrumbs + mobile sidebar tree",
+        "    - Renders WikiHeaderClient (client component)",
+        "  <div.flex>",
+        "    <main#wiki-center-pane>",
+        "      <WrongAnswerBanner /> (conditional, from=wrong-answer)",
+        "      <WikiArticleHero />",
+        "      <WikiLearningJourney />",
+        "      <Suspense fallback={<WikiArticleSkeleton />}>",
+        "        <WikiArticle /> - async server component, compiles MDX",
+        "      </Suspense>",
+        "      <WikiLearningCompletion /> (conditional, !isMinimal)",
+        "      <WikiReadTracker /> (client, side-effect only)",
+        "      <nav.prev-next /> (conditional, !isMinimal, with sibling links)",
+        "    </main>",
+        "    <aside.xl> (conditional, !isMinimal)",
+        "      <Suspense fallback={<WikiRightSidebarSkeleton />}>",
+        "        <WikiRightSidebar /> - practice button, ToC, sources, feedback, related topics",
+        "      </Suspense>",
+        "    </aside>",
+        "  </div>",
+        "  generateMetadata — async function, returns Metadata"
+      ],
+      "render_type": "dynamic (async server component with Suspense boundaries)",
+      "data_sources": [
+        {
+          "name": "getCachedArticleAndNode(slug)",
+          "source": "src/lib/actions/cached-queries.ts",
+          "wraps": "resolveArticleAndNode(slug) from wiki-actions.ts",
+          "cached": true,
+          "cache_strategy": "unstable_cache with revalidate=3600, tags: [CACHE_TAGS.wiki, CACHE_TAGS.taxonomy]",
+          "query_paths": [
+            "Supabase RPC: get_article_with_node(p_slug)",
+            "Fallback: wiki_articles → wiki_article_taxonomy → taxonomy_tree chains (article-slug or taxonomy-slug path)"
+          ],
+          "returns": "{ article: WikiArticle | null, node: TaxonomyNode | null }"
+        },
+        {
+          "name": "getEIPromptsForArticle(articleId)",
+          "source": "src/lib/actions/ei-prompts",
+          "cached": false
+        },
+        {
+          "name": "getUserEIResponsesForArticle(articleId)",
+          "source": "src/lib/actions/ei-prompts",
+          "cached": false
+        },
+        {
+          "name": "getArticleSources(articleId)",
+          "source": "src/lib/actions/wiki-actions.ts",
+          "cached": false,
+          "query": "supabase.from('wiki_article_sources').select('...').eq('article_id', articleId)"
+        },
+        {
+          "name": "getCachedTaxonomyTreeByDiscipline(disciplineId) (via getRelatedTopics)",
+          "source": "src/lib/actions/cached-queries.ts",
+          "cached": true,
+          "cache_strategy": "unstable_cache with revalidate=7200, tags: [CACHE_TAGS.taxonomy, getTaxonomyDisciplineTag(disciplineId)]"
+        },
+        {
+          "name": "getArticleSiblings(nodeId)",
+          "source": "src/lib/actions/wiki-actions.ts",
+          "cached": false,
+          "query": "Fetches sibling nodes (same parent, level, discipline) ordered by sort_order"
+        },
+        {
+          "name": "getBreadcrumbTrail(nodeId, disciplineId) (via WikiHeader)",
+          "source": "src/lib/actions/wiki-actions.ts",
+          "cached": true,
+          "builds_trail_from": "getCachedTaxonomyTreeByDiscipline(disciplineId)"
+        },
+        {
+          "name": "getCachedTaxonomyTreeFull(disciplineId) (via WikiHeader for mobile sidebar)",
+          "source": "src/lib/actions/cached-queries.ts",
+          "cached": true,
+          "cache_strategy": "unstable_cache with revalidate=7200, wraps getTaxonomyTree()"
+        }
+      ],
+      "loading_state": {
+        "has_loading_file": true,
+        "loading_file": "src/app/dashboard/wiki/[slug]/loading.tsx",
+        "loading_ui": "Centered skeleton: title skeleton (h-8 w-3/4), metadata line (h-4 w-48), 3 paragraph blocks (h-4 w-full/various), image placeholder (h-[200px]), more paragraphs. Simpler than outer wiki loading — focuses on article content area.",
+        "loading_triggers": [
+          "Route-level loading.tsx for initial page load",
+          "WikiContentShell shows ArticleSkeleton during client-side transitions (via useNavigation().isPending)"
+        ]
+      },
+      "error_state": {
+        "has_error_file": false,
+        "error_file": null,
+        "error_handling": {
+          "article_not_found": "Calls notFound() — throws NEXT_NOT_FOUND which matches Next.js not-found boundary (falls to root not-found.tsx or dashboard not-found.tsx if exists).",
+          "mdx_compilation_error": "WikiArticle catches MDX errors, logs warning, renders <WikiArticleError /> component ('Failed to render article' with refresh button).",
+          "sources_error": "getArticleSources logs warning and returns [] — silent degradation.",
+          "breadcrumb_error": "No explicit error handling — errors would crash WikiHeader (server component).",
+          "ei_prompts_error": "No explicit error handling shown — errors would crash the async Promise.all.",
+          "siblings_error": "No explicit error handling — returns { prev: null, next: null } on error.",
+          "stats_error_in_layout": "Logged to console, disciplineId falls to null, sidebar shows 'No Discipline' empty state."
+        }
+      },
+      "empty_state": {
+        "article_null": "notFound() called — user sees Next.js not-found page",
+        "no_headings": "WikiLearningJourney shows 'This article has no section headings yet...' text. WikiRightSidebar hides ToC entirely. WikiTableOfContents returns null.",
+        "no_sources": "WikiSourcesPopover returns null (hidden).",
+        "no_related_topics": "WikiRelatedPopover returns null (hidden). WikiLearningJourney hides 'Nearby topics' section.",
+        "no_siblings": "Prev/Next navigation shows empty spans (no links).",
+        "no_ei_prompts": "ElaborativeInterrogation components not rendered.",
+        "no_content": "WikiArticle receives article with empty/null content — MDX compilation produces empty output."
+      },
+      "metadata_seo": {
+        "has_generateMetadata": true,
+        "function": "generateMetadata({ params })",
+        "article_found": {
+          "title": "{article.title} | SlateCamp Wiki",
+          "description": "truncateMetadataDescription(learningPurpose) — truncated to 155 chars",
+          "robots": "{ index: false, follow: false }",
+          "openGraph": "{ title, description, type: 'article' }",
+          "twitter": "{ card: 'summary', title, description }",
+          "custom_meta": {
+            "slatecamp:wiki-subject": "subjectLabel",
+            "slatecamp:wiki-difficulty": "difficultyLabel"
+          }
+        },
+        "article_not_found": {
+          "title": "Wiki Article Not Found | SlateCamp",
+          "robots": "{ index: false, follow: false }"
+        }
+      },
+      "query_params": {
+        "minimal": "string - When 'true', renders minimal mode (compact padding, no hero metadata, no learning journey, no completion, no prev/next, no right sidebar)",
+        "from": "string - When 'wrong-answer', renders WrongAnswerBanner at top of article",
+        "topic": "string - Topic name passed to WrongAnswerBanner for display"
+      }
+    },
+    {
+      "route_path": "/dashboard/wiki (WikiSidebarLoader)",
+      "file_path": "src/components/wiki/navigation/WikiSidebarLoader.tsx",
+      "component_tree": [
+        "WikiSidebarLoader (async server component)",
+        "  Fetches getCachedTaxonomyTreeFull(disciplineId) — cached full tree with article mappings",
+        "  Renders <WikiSidebar disciplineId disciplineName initialNodes={nodes} />"
+      ],
+      "render_type": "server (async)",
+      "data_sources": [
+        {
+          "name": "getCachedTaxonomyTreeFull(disciplineId)",
+          "cached": true,
+          "source": "src/lib/actions/cached-queries.ts",
+          "cache_strategy": "unstable_cache with revalidate=7200, tags: [CACHE_TAGS.taxonomy, CACHE_TAGS.wiki, getTaxonomyDisciplineTag(disciplineId)]",
+          "wraps": "getTaxonomyTree(disciplineId) from wiki-actions.ts",
+          "returns": "TaxonomyNode[] with articles attached"
+        }
+      ],
+      "loading_state": {
+        "wrapped_in_suspense": true,
+        "fallback": "WikiSidebarSkeleton"
+      },
+      "error_state": {
+        "no_explicit_error_boundary": "Errors bubble up through parent Suspense; no try/catch in component",
+        "db_error": "getTaxonomyTree returns [] on error — WikiSidebar receives empty initialNodes, triggers client-side fetch"
+      },
+      "empty_state": {
+        "empty_tree": "getTaxonomyTree returns [] — WikiSidebar sets loading=true and does client-side getTaxonomyTree call. If that also returns [], sidebar shows empty syllabusTree and renders nothing but the shell."
+      }
+    },
+    {
+      "route_path": "/dashboard/wiki (WikiSidebar — client component)",
+      "file_path": "src/components/wiki/navigation/WikiSidebar.tsx",
+      "component_tree": [
+        "WikiSidebar ('use client')",
+        "  State: nodes (TaxonomyNode[]), loading (boolean)",
+        "  Effect: Client-side data fetch if no initialNodes",
+        "  Memo: buildNestedTree — flat → nested tree conversion",
+        "  Conditions:",
+        "    no disciplineId → 'No Discipline' empty state with Settings link",
+        "    loading → inline skeleton (pulse bars)",
+        "    syllabusTree.length > 0 → TaxonomyTree component with search, counts, dimInactive",
+        "    else → renders empty aside shell"
+      ],
+      "render_type": "client",
+      "data_sources": [
+        {
+          "name": "getTaxonomyTree(disciplineId) — client-side fallback",
+          "source": "src/lib/actions/wiki-actions.ts",
+          "cached": false,
+          "called_when": "initialNodes is empty/falsy"
+        }
+      ],
+      "empty_state": {
+        "no_discipline_id": "Shows 'No Discipline' message with 'Go to Settings' button linking to /dashboard/settings",
+        "empty_syllabus_tree": "Renders aside shell with no TaxonomyTree component (no syllabus section shown)",
+        "loading": "Inline pulse bar skeleton"
+      },
+      "error_state": {
+        "no_explicit_error_handling": "getTaxonomyTree errors are unhandled (Promise.then with no .catch) — would cause unhandled promise rejection",
+        "db_error": "Would silently not update state, leaving loading=true indefinitely"
+      }
+    }
+  ],
+  "component_inventory": {
+    "navigation": {
+      "WikiLayoutContent": { "type": "async server", "file": "src/components/wiki/navigation/WikiLayoutContent.tsx", "role": "Orchestrator — fetches user, discipline, renders providers and layout shell" },
+      "WikiSidebar": { "type": "client", "file": "src/components/wiki/navigation/WikiSidebar.tsx", "role": "Taxonomy tree sidebar with search, navigation, empty/loading states" },
+      "WikiSidebarLoader": { "type": "async server", "file": "src/components/wiki/navigation/WikiSidebarLoader.tsx", "role": "Data-fetching wrapper for sidebar, uses cached full tree" },
+      "WikiSidebarShell": { "type": "client", "file": "src/components/wiki/navigation/WikiSidebarShell.tsx", "role": "Resizable sidebar container with collapse toggle and drag handle" },
+      "WikiSidebarSkeleton": { "type": "server", "file": "src/components/wiki/navigation/WikiSidebarSkeleton.tsx", "role": "Sidebar skeleton with search bar and staggered tree items" },
+      "WikiHeader": { "type": "async server", "file": "src/components/wiki/navigation/WikiHeader.tsx", "role": "Fetches breadcrumbs + mobile sidebar data" },
+      "WikiHeaderClient": { "type": "client", "file": "src/components/wiki/navigation/WikiHeaderClient.tsx", "role": "Breadcrumb bar, mobile nav, bookmarks, reading progress" },
+      "WikiContentShell": { "type": "client", "file": "src/components/wiki/navigation/WikiContentShell.tsx", "role": "Wraps content with ArticleSkeleton during client navigation transitions" },
+      "WikiRightSidebar": { "type": "client", "file": "src/components/wiki/navigation/WikiRightSidebar.tsx", "role": "Quiz button, related topics, feedback, sources, ToC" },
+      "WikiRightSidebarSkeleton": { "type": "server", "file": "src/components/wiki/navigation/WikiRightSidebarSkeleton.tsx", "role": "Right sidebar skeleton" },
+      "WikiTableOfContents": { "type": "client", "file": "src/components/wiki/navigation/WikiTableOfContents.tsx", "role": "Sticky ToC with IntersectionObserver — returns null if headings empty" },
+      "WikiReadingProgress": { "type": "client", "file": "src/components/wiki/navigation/WikiReadingProgress.tsx", "role": "Horizontal scroll progress bar" },
+      "WikiBookmarks": { "type": "client", "file": "src/components/wiki/navigation/WikiBookmarks.tsx", "role": "Bookmarks popover with CRUD — returns null until loaded" },
+      "WikiNavigationContext": { "type": "client", "file": "src/components/wiki/navigation/WikiNavigationContext.tsx", "role": "React context for navigation transitions (useTransition)" },
+      "WikiDisciplineContext": { "type": "client", "file": "src/components/wiki/navigation/WikiDisciplineContext.tsx", "role": "React context for disciplineId/disciplineName" }
+    },
+    "article": {
+      "WikiArticle": { "type": "async server", "file": "src/components/wiki/article/WikiArticle.tsx", "role": "Core article renderer — MDX compilation with component registry, widget resolution, EI prompts" },
+      "WikiArticleSkeleton": { "type": "server", "file": "src/components/wiki/article/WikiArticle.tsx", "role": "Article content skeleton exported alongside WikiArticle" },
+      "WikiArticleError": { "type": "client", "file": "src/components/wiki/article/WikiArticleError.tsx", "role": "Error fallback — 'Failed to render article' with refresh button" },
+      "WikiArticleHeader": { "type": "server", "file": "src/components/wiki/article/WikiArticleHeader.tsx", "role": "Article header with title, reading time, update date" },
+      "WikiArticleHero": { "type": "server", "file": "src/components/wiki/article/WikiArticleHero.tsx", "role": "Hero section — subject, difficulty, read time, 'LEA tests you to'" },
+      "WikiLearningJourney": { "type": "server", "file": "src/components/wiki/article/WikiLearningJourney.tsx", "role": "Learning path component — returns null if isMinimal" },
+      "WikiLearningCompletion": { "type": "server", "file": "src/components/wiki/article/WikiLearningJourney.tsx", "role": "End-of-article learning checkpoint" },
+      "WikiItemRenderer": { "type": "server", "file": "src/components/wiki/article/WikiItemRenderer.tsx", "role": "Renders typed wiki_items from taxonomy_tree — returns null if empty items" }
+    },
+    "shared": {
+      "WikiReadTracker": { "type": "client", "file": "src/components/wiki/shared/WikiReadTracker.tsx", "role": "Tracks scroll depth and time spent — renders nothing" },
+      "WikiSourcesPopover": { "type": "client", "file": "src/components/wiki/shared/WikiSourcesPopover.tsx", "role": "Sources popover — returns null if empty sources" },
+      "WikiRelatedPopover": { "type": "client", "file": "src/components/wiki/shared/WikiRelatedPopover.tsx", "role": "Related topics popover — returns null if empty topics" },
+      "WikiHighlighter": { "type": "client", "file": "src/components/wiki/shared/WikiHighlighter.tsx", "role": "Text highlighter" },
+      "WikiNoteAnchor": { "type": "client/note", "file": "src/components/wiki/shared/WikiNoteAnchor.tsx", "role": "Note anchor for articles" },
+      "WikiReference": { "type": "server", "file": "src/components/wiki/shared/WikiReference.tsx", "role": "Reference component used in MDX" },
+      "WikiTextSelection": { "type": "client", "file": "src/components/wiki/shared/WikiTextSelection.tsx", "role": "Text selection handler" }
+    },
+    "blocks": [
+      "Accordion.tsx", "WikiAccordion.tsx", "WikiTabs.tsx", "WikiCalloutBox.tsx", "WikiChangedPill.tsx",
+      "WikiExamTable.tsx", "WikiMistakeCard.tsx", "WikiMistakeList.tsx", "WikiPartHeader.tsx",
+      "WikiPre.tsx", "Callout.tsx", "ComparisonTable.tsx", "ExamTip.tsx", "FormulaBlock.tsx",
+      "GenericBlock.tsx", "InlineQuiz.tsx", "KeyValues.tsx", "LawCallout.tsx", "Mermaid.tsx",
+      "PrequestionGate.tsx", "ProcessFlow.tsx", "RevealBlock.tsx", "SubjectSnapshot.tsx",
+      "TeachBackPrompt.tsx", "WrongAnswerBanner.tsx", "ElaborativeInterrogation.tsx"
+    ],
+    "widgets": {
+      "registry": "src/components/wiki/widgets/registry.ts",
+      "groups": ["bp344/", "dsgn013/"],
+      "total_widgets": 18,
+      "widget_names": [
+        "AccessibilityChangesTable", "DoorConfigurator", "CorridorVisualizer", "CubicleChecker",
+        "GrabBarExplainer", "RecallDrill", "BedroomPlanView", "BedSizeComparator",
+        "WorkstationCalculator", "DimensionDrill", "BodyDimensionExplorer", "ReachEnvelopeDiagram",
+        "BodyDimensionDrill", "DHRatioExplorer", "ProportionComparator", "SpatialQualityDrill",
+        "Lab3DWidget", "PHBuildingSetbacks"
+      ],
+      "resolution": "Lazy-loaded via detectWidgets() string scan of MDX content — only loaded if tag name present in article content"
+    }
+  },
+  "missing_states": [
+    {
+      "type": "missing_error_boundary",
+      "location": "src/app/dashboard/wiki",
+      "severity": "medium",
+      "description": "No error.tsx at wiki route level. Errors during WikiLayoutContent or children components bubble up to the dashboard root error boundary or Next.js default. A wiki-specific error boundary would allow graceful degradation (e.g., 'Wiki unavailable — try again later' instead of crash)."
+    },
+    {
+      "type": "missing_error_boundary",
+      "location": "src/app/dashboard/wiki/[slug]",
+      "severity": "medium",
+      "description": "No error.tsx at article route level. MDX compilation errors are caught internally (WikiArticleError), but data fetching errors (getCachedArticleAndNode, Promise.all for EI/sources/siblings) have no route-level error boundary. A database failure during the parallel data fan-out would crash the entire article page."
+    },
+    {
+      "type": "missing_not_found_boundary",
+      "location": "src/app/dashboard/wiki/[slug]",
+      "severity": "low",
+      "description": "No not-found.tsx at [slug] level. When article is not found, notFound() throws to the nearest parent not-found boundary. Currently falls to the dashboard or root not-found page. A wiki-specific 404 with 'Article not found — browse the sidebar for available topics' would be better UX."
+    },
+    {
+      "type": "unhandled_error_in_sidebar",
+      "location": "WikiSidebar.tsx",
+      "severity": "high",
+      "description": "Client-side getTaxonomyTree() call in useEffect has no .catch() handler. If the server action throws, the Promise silently fails, leaving loading=true permanently. The sidebar shows the inline skeleton indefinitely."
+    },
+    {
+      "type": "unhandled_error_in_promise_all",
+      "location": "[slug]/page.tsx line 158-166",
+      "severity": "medium",
+      "description": "Promise.all([getEIPromptsForArticle, getUserEIResponsesForArticle, getArticleSources, getRelatedTopics, getArticleSiblings]) has no individual error handling. A single rejection crashes the whole fan-out. In demo mode, these are skipped, but in live mode they're collectively fatal."
+    },
+    {
+      "type": "unhandled_error_in_wiki_header",
+      "location": "WikiHeader.tsx",
+      "severity": "medium",
+      "description": "getBreadcrumbTrail and getCachedTaxonomyTreeFull have no try/catch. If either throws (DB connection issue, etc.), the entire WikiHeader crashes, taking down the breadcrumb bar and mobile navigation."
+    },
+    {
+      "type": "no_cache_fallback_for_sidebar",
+      "location": "WikiSidebarLoader.tsx",
+      "severity": "low",
+      "description": "getCachedTaxonomyTreeFull uses unstable_cache with 2h TTL. If the cache is cold and the DB is down, this throws. There's no fallback to stale data or a graceful error UI within the sidebar Suspense boundary."
+    }
+  ],
+  "observations": [
+    "All 21 wiki navigation/article/shared components have proper 'use client' or async server boundaries",
+    "Wiki content has 3-layer loading: (1) route-level loading.tsx, (2) WikiContentShell ArticleSkeleton for client transitions, (3) inner Suspense around WikiArticle MDX compilation",
+    "Demo mode skips personalization, sources, and siblings — enables fast rendering for smoke tests",
+    "Widget system is fully lazy — only loads JS for widgets present in article content",
+    "All robots metadata set to { index: false, follow: false } — no wiki content is indexed",
+    "Article metadata falls back gracefully through: explicit fields → node fields → computed defaults",
+    "Prev/Next navigation operates on taxonomy siblings, not article chronology",
+    "Empty states are well-handled for sources, related topics, ToC, bookmarks (return null)",
+    "Reading progress uses scroll container ref, not window — works correctly within the wiki center pane",
+    "Bookmarks use optimistic UI — updates local state immediately, rolls back on server error"
+  ]
+}
