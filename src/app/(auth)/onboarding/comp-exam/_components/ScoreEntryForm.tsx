@@ -37,7 +37,7 @@ const getTierLabel = (score: string): string => {
 
 interface ScoreEntryFormProps {
   onSubmit: (scores: CompExamScores, examDate: string | null) => void
-  isLoading: boolean
+  isLoading?: boolean
 }
 
 // ── Component ──────────────────────────────────────────────────────────────────

@@ -127,7 +127,7 @@ export async function seedQuizRealDb() {
       {
         discipline_id: QUIZ_REAL_SEED.disciplineId,
         name: 'Playwright LEA d100',
-acronym: 'PW-LEA-D100'
+        acronym: 'PW-LEA-D100',
         updated_at: now,
       },
       { onConflict: 'discipline_id' },
