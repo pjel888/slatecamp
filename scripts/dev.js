@@ -89,6 +89,9 @@ const nextCli = path.join(
 );
 const useWebpack = process.argv.includes("--webpack");
 const args = ["dev", ...(useWebpack ? ["--webpack"] : ["--turbopack"])];
-const child = spawn(process.execPath, [nextCli, ...args], { stdio: "inherit" });
+// Bun's module resolver fails to resolve Turbopack-externalized next-mdx-remote/rsc.
+// Use Node.js for the dev server to avoid "Cannot find module next-mdx-remote-<hash>/rsc".
+const nodePath = "/opt/homebrew/bin/node";
+const child = spawn(nodePath, [nextCli, ...args], { stdio: "inherit" });
 
 child.on("exit", (code) => process.exit(code ?? 0));
