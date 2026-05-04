@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { createPortal } from 'react-dom'
 import { X, CheckCircle, XCircle, ArrowRight, ArrowCounterClockwise, BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { getWikiQuizQuestions, submitWikiQuizAnswer, endWikiQuizSession } from '@/lib/actions/wiki-quiz'
@@ -63,37 +62,43 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
   const [nextReady, setNextReady] = useState(false)
   const [remainingMs, setRemainingMs] = useState(GATED_DELAY_MS)
   const [error, setError] = useState<string | null>(null)
+  const [submitError, setSubmitError] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isEnding, setIsEnding] = useState(false)
 
   const dialogRef = useRef<HTMLDivElement>(null)
-  const previousFocusRef = useRef<Element | null>(null)
+  const titleRef = useRef<HTMLHeadingElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
-  const firstOptionRef = useRef<HTMLLabelElement>(null)
+  const firstOptionRef = useRef<HTMLInputElement>(null)
   const nextButtonRef = useRef<HTMLButtonElement>(null)
   const gatedTimerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const loadAbortRef = useRef<boolean>(false)
+  const loadingRef = useRef<boolean>(false)
   // Guard against stale async updates when modal re-opens or article changes
   const requestIdRef = useRef<number>(0)
 
   const currentQuestion = questions[currentIndex] ?? null
   const totalQuestions = questions.length
 
+  const safeClose = useCallback(() => {
+    if (gatedTimerRef.current) {
+      clearInterval(gatedTimerRef.current)
+      gatedTimerRef.current = null
+    }
+    loadAbortRef.current = true
+    requestIdRef.current++
+    loadingRef.current = false
+    onClose()
+  }, [onClose])
+
   // ── Focus management ─────────────────────────────────────────────────────
 
   useEffect(() => {
-    previousFocusRef.current = document.activeElement
-    // Small delay to ensure modal is in DOM
+    // Move focus to the modal title on open for a natural entry point
     const timer = setTimeout(() => {
-      closeButtonRef.current?.focus()
+      titleRef.current?.focus()
     }, 50)
-
-    return () => {
-      clearTimeout(timer)
-      if (previousFocusRef.current && 'focus' in previousFocusRef.current) {
-        (previousFocusRef.current as HTMLElement).focus()
-      }
-    }
+    return () => clearTimeout(timer)
   }, [])
 
   // ── Focus trap ────────────────────────────────────────────────────────────
@@ -102,7 +107,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
     const dialog = dialogRef.current
     if (!dialog) return
 
-    const FOCUSABLE_SELECTOR = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    const FOCUSABLE_SELECTOR = 'button:not(:disabled), [href]:not([aria-disabled="true"]), input:not([type="hidden"]):not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex]:not([tabindex="-1"])'
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key !== 'Tab') return
@@ -141,13 +146,13 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
           return
         }
         e.preventDefault()
-        onClose()
+        safeClose()
       }
     }
 
     document.addEventListener('keydown', handleEscape)
     return () => document.removeEventListener('keydown', handleEscape)
-  }, [onClose, isSubmitting, isEnding])
+  }, [safeClose, isSubmitting, isEnding])
 
   // ── Body scroll lock ─────────────────────────────────────────────────────
 
@@ -168,10 +173,13 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
   // ── Load questions ───────────────────────────────────────────────────────
 
   const loadQuestions = useCallback(async () => {
+    if (loadingRef.current) return
+    loadingRef.current = true
     const requestId = ++requestIdRef.current
     loadAbortRef.current = false
     setStatus('loading')
     setError(null)
+    setSubmitError(null)
     setQuestions([])
     setAnswers([])
     setCurrentIndex(0)
@@ -184,7 +192,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
         if (requestId === requestIdRef.current) setStatus('empty')
         return
       }
-      const result = await getWikiQuizQuestions(nodeId, articleSlug)
+      const result = await getWikiQuizQuestions(nodeId, articleSlug, articleId)
       // Stale response guard: ignore if a newer request started or modal unmounted
       if (requestId !== requestIdRef.current || loadAbortRef.current) return
       if (result.questions.length === 0) {
@@ -201,6 +209,8 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
         setError(err instanceof Error ? err.message : 'Failed to load questions')
         setStatus('error')
       }
+    } finally {
+      loadingRef.current = false
     }
   }, [nodeId, articleSlug])
 
@@ -210,6 +220,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
       loadAbortRef.current = true
       // Increment requestId so any in-flight responses are ignored
       requestIdRef.current++
+      loadingRef.current = false
     }
   }, [loadQuestions])
 
@@ -247,6 +258,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
     if (!sessionId || !selectedOptionId || !currentQuestion || isSubmitting) return
 
     setIsSubmitting(true)
+    setSubmitError(null)
     try {
       const result = await submitWikiQuizAnswer({
         sessionId,
@@ -282,8 +294,8 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
           setTimeout(() => nextButtonRef.current?.focus(), 50)
         }
       }, 50)
-    } catch {
-      // Silent fail — user stays on question, can retry
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : 'Failed to submit answer. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
@@ -297,6 +309,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
       clearInterval(gatedTimerRef.current)
       gatedTimerRef.current = null
     }
+    setSubmitError(null)
 
     const isLastQuestion = currentIndex === totalQuestions - 1
 
@@ -325,6 +338,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
       clearInterval(gatedTimerRef.current)
       gatedTimerRef.current = null
     }
+    setSubmitError(null)
     loadQuestions()
   }, [loadQuestions])
 
@@ -338,9 +352,10 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
     setSelectedOptionId(null)
     setNextReady(false)
     setRemainingMs(GATED_DELAY_MS)
-    setStatus('question')
-    setTimeout(() => firstOptionRef.current?.focus(), 100)
-  }, [])
+    setSubmitError(null)
+    setSessionId(null)
+    loadQuestions()
+  }, [loadQuestions])
 
   // ── Score calculation ────────────────────────────────────────────────────
 
@@ -354,7 +369,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-[3px] animate-in fade-in duration-200"
       onClick={(e) => {
-        if (e.target === e.currentTarget && !isSubmitting && !isEnding) onClose()
+        if (e.target === e.currentTarget && !isSubmitting && !isEnding) safeClose()
       }}
       aria-hidden="true"
     >
@@ -362,7 +377,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
         ref={dialogRef}
         role="dialog"
         aria-modal="true"
-        aria-label={`Review quiz for ${topicName}`}
+        aria-labelledby="wiki-quiz-title"
         className={cn(
           'relative w-full max-w-[600px] mx-4 max-h-[92vh] overflow-y-auto',
           'rounded-xl bg-card shadow-xl border border-border',
@@ -375,7 +390,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
             <button
               ref={closeButtonRef}
               type="button"
-              onClick={onClose}
+              onClick={safeClose}
               disabled={isSubmitting || isEnding}
               className={cn(
                 'flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-surface-light transition-colors duration-150 shrink-0',
@@ -386,7 +401,12 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
               <X size={18} weight="bold" aria-hidden="true" />
             </button>
             <div className="min-w-0">
-              <h2 className="text-sm font-semibold text-foreground truncate">
+              <h2
+                ref={titleRef}
+                id="wiki-quiz-title"
+                tabIndex={-1}
+                className="text-sm font-semibold text-foreground truncate outline-none"
+              >
                 {status === 'results' ? 'Review Complete' : `Quick Review — ${topicName}`}
               </h2>
               {articleTitle && status !== 'results' && (
@@ -447,7 +467,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 </button>
                 <button
                   type="button"
-                  onClick={onClose}
+                  onClick={safeClose}
                   className="rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-surface-light transition-colors"
                 >
                   Close
@@ -479,7 +499,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 </button>
                 <button
                   type="button"
-                  onClick={onClose}
+                  onClick={safeClose}
                   className="rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-surface-light transition-colors"
                 >
                   Close
@@ -533,36 +553,16 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                   return (
                     <label
                       key={option.id}
-                      ref={idx === 0 ? firstOptionRef : undefined}
                       className={cn(
                         'flex items-start gap-3 w-full rounded-lg border px-4 py-3.5',
                         'transition-all duration-150 ease-out',
+                        'focus-within:ring-2 focus-within:ring-primary/30',
                         OPTION_STATE_CLASSES[state],
                         isDisabled && state === 'default' && 'pointer-events-none opacity-50',
                       )}
-                      role="radio"
-                      aria-checked={isChecked}
-                      tabIndex={isDisabled ? -1 : 0}
-                      onKeyDown={(e) => {
-                        if (isDisabled) return
-                        if (e.key === 'Enter' || e.key === ' ') {
-                          e.preventDefault()
-                          handleSelectOption(option.id)
-                        }
-                        // Arrow key navigation between options
-                        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-                          e.preventDefault()
-                          const next = e.currentTarget.nextElementSibling as HTMLElement | null
-                          next?.focus()
-                        }
-                        if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-                          e.preventDefault()
-                          const prev = e.currentTarget.previousElementSibling as HTMLElement | null
-                          prev?.focus()
-                        }
-                      }}
                     >
                       <input
+                        ref={idx === 0 ? firstOptionRef : undefined}
                         type="radio"
                         name={`wiki-quiz-${currentQuestion.question_id}`}
                         value={option.id}
@@ -570,7 +570,6 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                         disabled={isDisabled}
                         onChange={() => handleSelectOption(option.id)}
                         className="sr-only"
-                        aria-label={`Option ${option.letter}`}
                       />
                       <span
                         className={cn(
@@ -592,28 +591,35 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
 
               {/* Submit button (desktop-friendly, replaces SlideToSubmit) */}
               {status === 'question' && (
-                <button
-                  type="button"
-                  onClick={handleSubmit}
-                  disabled={!selectedOptionId || isSubmitting}
-                  className={cn(
-                    'w-full rounded-lg px-4 py-3 text-sm font-semibold',
-                    'transition-all duration-150 min-h-[48px]',
-                    selectedOptionId && !isSubmitting
-                      ? 'bg-primary text-white hover:bg-primary-700 shadow-sm active:scale-[0.98]'
-                      : 'bg-muted text-muted-foreground cursor-not-allowed',
+                <div className="space-y-3">
+                  <button
+                    type="button"
+                    onClick={handleSubmit}
+                    disabled={!selectedOptionId || isSubmitting}
+                    className={cn(
+                      'w-full rounded-lg px-4 py-3 text-sm font-semibold',
+                      'transition-all duration-150 min-h-[48px]',
+                      selectedOptionId && !isSubmitting
+                        ? 'bg-primary text-white hover:bg-primary-700 shadow-sm active:scale-[0.98]'
+                        : 'bg-muted text-muted-foreground cursor-not-allowed',
+                    )}
+                    aria-live="polite"
+                  >
+                    {isSubmitting ? (
+                      <span className="flex items-center justify-center gap-2">
+                        <span className="h-4 w-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
+                        Checking…
+                      </span>
+                    ) : (
+                      'Submit answer'
+                    )}
+                  </button>
+                  {submitError && (
+                    <p className="text-sm text-warning text-center" role="alert">
+                      {submitError}
+                    </p>
                   )}
-                  aria-live="polite"
-                >
-                  {isSubmitting ? (
-                    <span className="flex items-center justify-center gap-2">
-                      <span className="h-4 w-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
-                      Checking…
-                    </span>
-                  ) : (
-                    'Submit answer'
-                  )}
-                </button>
+                </div>
               )}
 
               {/* Feedback panel */}
@@ -770,7 +776,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 </button>
                 <button
                   type="button"
-                  onClick={onClose}
+                  onClick={safeClose}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-lg px-5 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-surface-light border border-border transition-all"
                 >
                   <BookOpen size={16} aria-hidden="true" />
@@ -783,10 +789,6 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
       </div>
     </div>
   )
-
-  if (typeof document !== 'undefined') {
-    return createPortal(modalContent, document.body)
-  }
 
   return modalContent
 }

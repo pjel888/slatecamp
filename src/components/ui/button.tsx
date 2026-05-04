@@ -174,10 +174,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 {showSpinner && (
                   <Spinner className={spinnerSizeClass[resolvedSize]} />
                 )}
-                {loadingText && (
+                {loadingText ? (
                   <span className="animate-in fade-in slide-in-from-left-1 duration-200">
                     {loadingText}
                   </span>
+                ) : (
+                  <span className="sr-only">{children}</span>
                 )}
               </>
             ) : (

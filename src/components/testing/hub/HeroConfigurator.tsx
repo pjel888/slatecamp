@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { Plus, Trash, Info, Layout, MagicWand, ArrowRight } from '@phosphor-icons/react'
+import { Plus, Check, ArrowRight } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { ROUTES } from '@/lib/routes'
 import { getCoreSubjects } from '@/lib/actions/taxonomy'
@@ -170,106 +170,116 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
   }, [readySessionId])
 
   const isModalOpen = modalPhase !== null
+  const noSubjectsSelected = selectedSubjectIds.size === 0
 
   return (
     <TooltipProvider>
-      <div className="relative overflow-hidden rounded-md border border-border bg-card p-6 shadow-sm" data-testid="quiz-configurator">
-        {/* Subtle Background Pattern */}
-        <div className="absolute right-0 top-0 -mr-16 -mt-16 opacity-[0.03]">
-          <MagicWand size={320} weight="fill" />
-        </div>
-
-        <div className="relative z-10 grid gap-8 lg:grid-cols-[1fr_320px]">
-          {/* Left Column: Subject Selection */}
-          <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Layout size={20} weight="bold" className="text-primary" />
-                <h3 className="text-lg font-bold text-foreground">Canvas</h3>
-              </div>
-              <div className="flex gap-2">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={addAll}
-                  className="h-8 text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-primary"
-                >
-                  Add All
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={clearAll}
-                  className="h-8 text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-accent"
-                >
-                  Clear
-                </Button>
-              </div>
+      <div
+        className="rounded-lg border border-border bg-card shadow-sm"
+        data-testid="quiz-configurator"
+      >
+        {/* ═══════════════════════════════════════════════════════════════════
+            SUBJECT SELECTION
+           ═══════════════════════════════════════════════════════════════════ */}
+        <div className="p-6 pb-4">
+          <div className="flex items-center justify-between mb-4">
+            <div>
+              <h3 className="text-sm font-semibold text-foreground">
+                Select subjects to practice
+              </h3>
+              <p className="mt-0.5 text-xs text-muted-foreground">
+                {noSubjectsSelected
+                  ? 'Choose at least one subject to build your quiz.'
+                  : `${selectedSubjectIds.size} subject${selectedSubjectIds.size === 1 ? '' : 's'} selected`}
+              </p>
             </div>
-
-            {/* Subject Drop Zone / Palette */}
-            <div className="min-h-[120px] rounded-lg border-2 border-dashed border-muted bg-muted/20 p-4" data-testid="quiz-subject-palette">
-              {availableSubjects.length === 0 ? (
-                <div className="flex flex-wrap gap-2">
-                  {Array.from({ length: 12 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className="h-9 w-32 animate-pulse rounded-full bg-muted/50 border border-border/50"
-                    />
-                  ))}
-                </div>
-              ) : (
-                <div className="flex flex-wrap gap-2">
-                  {availableSubjects.map((subject) => {
-                    const isSelected = selectedSubjectIds.has(subject.node_id)
-                    return (
-                      <motion.button
-                        key={subject.node_id}
-                        layout
-                        type="button"
-                        data-testid="quiz-subject-option"
-                        aria-pressed={isSelected}
-                        onClick={() => toggleSubject(subject.node_id)}
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        className={cn(
-                          "flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all duration-200",
-                          isSelected
-                            ? "bg-primary text-white shadow-md shadow-primary/20"
-                            : "bg-background border border-border text-muted-foreground hover:border-primary/50 hover:text-primary"
-                        )}
-                      >
-                        {isSelected ? <Trash size={14} /> : <Plus size={14} />}
-                        {subject.name}
-                      </motion.button>
-                    )
-                  })}
-                </div>
-              )}
-              {selectedSubjectIds.size === 0 && availableSubjects.length > 0 && (
-                <p className="mt-4 text-center text-xs text-muted-foreground italic">
-                  Select subjects from your discipline to begin building your session.
-                </p>
-              )}
-              {availableSubjects.length === 0 && !isModalOpen && (
-                <div className="flex h-20 flex-col items-center justify-center">
-                  <p className="text-xs text-muted-foreground">No subjects found for your discipline.</p>
-                </div>
-              )}
-            </div>
-
-            {/* Dynamic Status Label */}
-            <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground" data-testid="quiz-selection-status" aria-live="polite">
-              <Info size={16} />
-              {selectedSubjectIds.size === 0
-                ? "Pedagogical routing ready."
-                : `Targeting ${selectedSubjectIds.size} subject${selectedSubjectIds.size === 1 ? '' : 's'} with 60/30/10 logic.`}
+            <div className="flex gap-1">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={addAll}
+                className="h-7 text-[11px] font-medium text-muted-foreground hover:text-primary"
+              >
+                Select all
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={clearAll}
+                disabled={noSubjectsSelected}
+                className="h-7 text-[11px] font-medium text-muted-foreground hover:text-destructive disabled:opacity-30"
+              >
+                Clear
+              </Button>
             </div>
           </div>
 
-          {/* Right Column: Configuration Sliders */}
-          <div className="flex flex-col justify-between rounded-lg bg-muted/30 p-6">
-            <div className="space-y-8">
+          {/* Subject chips */}
+          <div
+            className="min-h-[80px] rounded-lg border border-dashed border-border bg-muted/20 p-4"
+            data-testid="quiz-subject-palette"
+          >
+            {availableSubjects.length === 0 ? (
+              <div className="flex flex-wrap gap-2">
+                {Array.from({ length: 8 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="h-9 w-28 animate-pulse rounded-full bg-muted/50 border border-border/50"
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="flex flex-wrap gap-2">
+                {availableSubjects.map((subject) => {
+                  const isSelected = selectedSubjectIds.has(subject.node_id)
+                  return (
+                    <motion.button
+                      key={subject.node_id}
+                      layout
+                      type="button"
+                      data-testid="quiz-subject-option"
+                      aria-pressed={isSelected}
+                      onClick={() => toggleSubject(subject.node_id)}
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      className={cn(
+                        "flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-all duration-150",
+                        isSelected
+                          ? "bg-primary text-white shadow-sm shadow-primary/20 ring-2 ring-primary/20"
+                          : "bg-background border border-border text-muted-foreground hover:border-primary/40 hover:text-foreground"
+                      )}
+                    >
+                      {isSelected ? (
+                        <Check size={14} weight="bold" />
+                      ) : (
+                        <Plus size={14} />
+                      )}
+                      {subject.name}
+                    </motion.button>
+                  )
+                })}
+              </div>
+            )}
+            {noSubjectsSelected && availableSubjects.length > 0 && (
+              <p className="mt-4 text-center text-xs text-muted-foreground">
+                Select one or more subjects above to begin building your session.
+              </p>
+            )}
+            {availableSubjects.length === 0 && !isModalOpen && (
+              <div className="flex h-20 flex-col items-center justify-center">
+                <p className="text-xs text-muted-foreground">No subjects available for your discipline.</p>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* ═══════════════════════════════════════════════════════════════════
+            CONFIGURATION + START — Questions, timer, slide-to-start
+           ═══════════════════════════════════════════════════════════════════ */}
+        <div className="border-t border-border bg-muted/20 px-6 py-5">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+            {/* Configuration controls */}
+            <div className="flex-1 space-y-5 sm:max-w-sm">
               <UnifiedSlider
                 label="Questions"
                 value={questionCount}
@@ -279,7 +289,6 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                 unit=""
                 onChange={setQuestionCount}
               />
-
               <UnifiedSlider
                 label="Timer"
                 value={timerMinutes}
@@ -288,23 +297,29 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                 step={15}
                 unit={timerMinutes === 0 ? 'OFF' : 'm'}
                 onChange={setTimerMinutes}
+                contextLine={
+                  timerMinutes === 0
+                    ? 'No time limit — answer at your own pace.'
+                    : `Timer will count down from ${timerMinutes} minutes.`
+                }
+                contextLineType="info"
               />
             </div>
 
-            {error && (
-              <div className="rounded-md border border-destructive/30 bg-destructive/5 px-4 py-3 text-sm text-destructive">
-                {error}
-              </div>
-            )}
+            {/* Slide-to-start */}
+            <div className="flex-1 sm:max-w-xs">
+              {error && (
+                <div className="mb-3 rounded-md border border-destructive/30 bg-destructive/5 px-4 py-2.5 text-xs text-destructive">
+                  {error}
+                </div>
+              )}
 
-            {/* Slide to Start CTA */}
-            <div className="mt-8">
               <Tooltip open={showTooltip} onOpenChange={setShowTooltip}>
                 <TooltipTrigger asChild>
                   <div
                     className="w-full"
                     onClickCapture={(e) => {
-                      if (selectedSubjectIds.size === 0 || isModalOpen) {
+                      if (noSubjectsSelected || isModalOpen) {
                         e.preventDefault()
                         e.stopPropagation()
                         setShowTooltip(true)
@@ -312,7 +327,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                     }}
                   >
                     <SlideToSubmit
-                      disabled={selectedSubjectIds.size === 0 || isModalOpen}
+                      disabled={noSubjectsSelected || isModalOpen}
                       onSubmit={handleStart}
                       label="Slide to start quiz"
                       testId="quiz-start-slider"
@@ -321,17 +336,27 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                 </TooltipTrigger>
                 <TooltipContent
                   side="top"
-                  className="bg-accent text-white border-none px-4 py-2"
+                  className="bg-foreground text-white border-none px-4 py-2.5"
                 >
-                  <p className="text-xs font-bold">Please select at least one subject to begin.</p>
+                  <p className="text-xs font-medium">
+                    {noSubjectsSelected
+                      ? 'Select at least one subject to begin.'
+                      : 'Configure your session and slide to start.'}
+                  </p>
                 </TooltipContent>
               </Tooltip>
+
+              {noSubjectsSelected && (
+                <p className="mt-2 text-center text-[11px] text-muted-foreground">
+                  Select one or more subjects above to enable the quiz start.
+                </p>
+              )}
             </div>
           </div>
         </div>
       </div>
 
-      {/* ── Session Preparation Modal (Dialog with focus trap, Escape, ARIA) ── */}
+      {/* ── Session Preparation Modal ── */}
       <Dialog
         open={isModalOpen}
         onOpenChange={(open) => {
@@ -350,7 +375,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                 Preparing Your Quiz
               </h3>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                Building your personalized quiz queue with 60/30/10 intelligent routing...
+                Building your personalized question queue with intelligent routing...
               </p>
               <div className="mt-6 flex items-center gap-3">
                 <div className="flex gap-1">
@@ -376,9 +401,8 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                 {readyQuestionCount} questions queued
               </DialogDescription>
 
-              {/* Success indicator */}
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
-                <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary">
                   <ArrowRight size={16} weight="bold" className="text-white" />
                 </div>
               </div>
@@ -387,7 +411,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                 Quiz Ready
               </h3>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                {readyQuestionCount} questions queued across {selectedSubjectIds.size} subject{selectedSubjectIds.size === 1 ? '' : 's'}.
+                {readyQuestionCount} questions across {selectedSubjectIds.size} subject{selectedSubjectIds.size === 1 ? '' : 's'}.
                 {timerMinutes > 0 ? ` Timer set to ${timerMinutes} minutes.` : ' No time limit.'}
               </p>
 

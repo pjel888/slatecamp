@@ -3,13 +3,26 @@ import {
   wikiQuizQuestionsFixture,
 } from '@/storybook/fixtures/wiki'
 
+export type WikiQuizMockBehavior = 'questions' | 'empty' | 'error'
+
+let mockBehavior: WikiQuizMockBehavior = 'questions'
+
+export const setWikiQuizMockBehavior = (behavior: WikiQuizMockBehavior) => {
+  mockBehavior = behavior
+}
+
 export const getWikiQuizQuestions = async (
   _nodeId: string,
   _articleSlug?: string,
-) => ({
-  questions: wikiQuizQuestionsFixture,
-  sessionId: 'storybook-session',
-})
+) => {
+  if (mockBehavior === 'error') {
+    throw new Error('Mocked network error')
+  }
+  if (mockBehavior === 'empty') {
+    return { questions: [] as typeof wikiQuizQuestionsFixture, sessionId: 'storybook-session-empty' }
+  }
+  return { questions: wikiQuizQuestionsFixture, sessionId: 'storybook-session' }
+}
 
 export const submitWikiQuizAnswer = async (input: {
   sessionId: string

@@ -60,7 +60,21 @@ export const WikiQuizButton = ({ nodeId, topicName, articleSlug, articleTitle, a
       </Button>
 
       {open && (
-        <Suspense fallback={null}>
+        <Suspense
+          fallback={
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+              <div className="w-full max-w-lg rounded-xl bg-white p-6 shadow-2xl">
+                <div className="animate-pulse space-y-4">
+                  <div className="h-4 w-1/3 rounded bg-slate-200" />
+                  <div className="h-8 w-3/4 rounded bg-slate-200" />
+                  <div className="h-4 w-full rounded bg-slate-200" />
+                  <div className="h-4 w-full rounded bg-slate-200" />
+                  <div className="h-4 w-2/3 rounded bg-slate-200" />
+                </div>
+              </div>
+            </div>
+          }
+        >
           <WikiQuizModal
             nodeId={nodeId}
             topicName={topicName}

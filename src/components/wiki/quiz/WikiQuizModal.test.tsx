@@ -108,6 +108,13 @@ describe('WikiQuizModal static render', () => {
     expect(markup).toContain('aria-modal="true"')
   })
 
+  test('modal has aria-labelledby pointing to title', async () => {
+    const element = React.createElement(WikiQuizModal, baseProps)
+    const markup = renderToStaticMarkup(element)
+    expect(markup).toContain('aria-labelledby="wiki-quiz-title"')
+    expect(markup).toContain('id="wiki-quiz-title"')
+  })
+
   test('results actions exist in template', async () => {
     const element = React.createElement(WikiQuizModal, baseProps)
     const markup = renderToStaticMarkup(element)

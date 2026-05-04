@@ -57,6 +57,7 @@ const toClientQuestion = (
 export const getWikiQuizQuestions = async (
   nodeId: string,
   articleSlug?: string,
+  articleId?: string,
 ): Promise<{ questions: QuestionForClient[]; sessionId: string }> => {
   const supabase = await createClient()
   const {
@@ -165,7 +166,8 @@ export const getWikiQuizQuestions = async (
       config: { 
         mode: 'article_review', 
         source: 'wiki_review',
-        ...(articleSlug && { articleSlug }), 
+        ...(articleSlug && { articleSlug }),
+        ...(articleId && { articleId }),
       },
       question_ids: questionIds,
       started_at: new Date().toISOString(),

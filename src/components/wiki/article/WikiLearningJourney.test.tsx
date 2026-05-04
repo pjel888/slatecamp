@@ -26,14 +26,16 @@ describe('WikiLearningJourney', () => {
     )
 
     expect(markup).toContain('Guided learning module')
-    expect(markup).toContain('Learning map')
-    expect(markup).toContain('Core Rule')
-    expect(markup).toContain('#core-rule')
-    expect(markup).toContain('First checkpoint')
+    expect(markup).toContain('Start with the learning path')
+    expect(markup).toContain('Why this matters')
+    expect(markup).toContain('practice doing this')
     expect(markup.toLowerCase()).not.toContain('summary')
+    // Learning map lives in the right sidebar now; it should NOT appear here
+    expect(markup).not.toContain('Learning map')
+    expect(markup).not.toContain('First checkpoint')
   })
 
-  test('handles missing optional metadata and headings with a fallback checkpoint', () => {
+  test('handles missing optional metadata and headings gracefully', () => {
     const markup = renderToStaticMarkup(
       <WikiLearningJourney
         title="Short Article"
@@ -44,8 +46,8 @@ describe('WikiLearningJourney', () => {
       />,
     )
 
-    expect(markup).toContain('This article has no section headings yet')
-    expect(markup).toContain('Before moving on')
+    expect(markup).toContain('Guided learning module')
+    expect(markup).toContain('Start with the learning path')
     expect(markup).not.toContain('undefined')
   })
 

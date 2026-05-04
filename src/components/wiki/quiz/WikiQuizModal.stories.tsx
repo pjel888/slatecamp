@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { WikiQuizModal } from './WikiQuizModal'
+import { setWikiQuizMockBehavior } from '@/storybook/mocks/wiki-quiz'
 
 const meta = {
   title: 'Wiki/Teaching/Wiki Quiz Modal',
@@ -21,11 +22,29 @@ const meta = {
     articleId: 'storybook-article-id',
     onClose: () => undefined,
   },
-  render: (args) => <WikiQuizModal {...args} />,
 } satisfies Meta<typeof WikiQuizModal>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {}
+export const Default: Story = {
+  render: (args) => {
+    setWikiQuizMockBehavior('questions')
+    return <WikiQuizModal {...args} />
+  },
+}
+
+export const ErrorState: Story = {
+  render: (args) => {
+    setWikiQuizMockBehavior('error')
+    return <WikiQuizModal {...args} />
+  },
+}
+
+export const EmptyState: Story = {
+  render: (args) => {
+    setWikiQuizMockBehavior('empty')
+    return <WikiQuizModal {...args} />
+  },
+}

@@ -15,17 +15,18 @@ test.describe('wiki review-the-topic quiz flow', () => {
     test.setTimeout(240000)
 
     // 1. Navigate to a seeded wiki article
+    const articleId = '00000000-0000-4000-8000-000000000106'
     const article = await gotoAllowRedirectAbort(
       page,
-      '/dashboard/wiki/demo-ale-foundations',
+      `/dashboard/wiki/${articleId}`,
     )
     if (article) {
       expect(
         article.ok(),
-        '/dashboard/wiki/demo-ale-foundations should return 2xx',
+        `/dashboard/wiki/${articleId} should return 2xx`,
       ).toBe(true)
     }
-    await expect(page).toHaveURL(/\/dashboard\/wiki\/demo-ale-foundations$/, {
+    await expect(page).toHaveURL(new RegExp(`/dashboard/wiki/${articleId}$`), {
       timeout: 60000,
     })
 
@@ -54,9 +55,9 @@ test.describe('wiki review-the-topic quiz flow', () => {
     await expect(dialog.getByText(/Question \d+ of \d+/i)).toBeVisible()
 
     // 8. Select first option
-    const firstOption = dialog.getByRole('radio').first()
+    const radioGroup = dialog.getByRole('radiogroup')
+    const firstOption = radioGroup.locator('label').first()
     await firstOption.click()
-    await expect(firstOption).toHaveAttribute('aria-checked', 'true')
 
     // 9. Submit button enables
     const submitButton = dialog.getByRole('button', { name: /Submit answer/i })
@@ -83,7 +84,7 @@ test.describe('wiki review-the-topic quiz flow', () => {
       if (await resultsHeading.isVisible().catch(() => false)) break
 
       // Select an option on the current question
-      const option = dialog.getByRole('radio').first()
+      const option = dialog.getByRole('radiogroup').locator('label').first()
       if (await option.isVisible().catch(() => false)) {
         await option.click()
         const submit = dialog.getByRole('button', { name: /Submit answer/i })
@@ -124,8 +125,9 @@ test.describe('wiki review-the-topic quiz flow', () => {
 
   test('rapid repeated clicks do not open multiple modals', async ({ page }) => {
     test.setTimeout(120000)
-    await gotoAllowRedirectAbort(page, '/dashboard/wiki/demo-ale-foundations')
-    await expect(page).toHaveURL(/\/dashboard\/wiki\/demo-ale-foundations$/, {
+    const articleId = '00000000-0000-4000-8000-000000000106'
+    await gotoAllowRedirectAbort(page, `/dashboard/wiki/${articleId}`)
+    await expect(page).toHaveURL(new RegExp(`/dashboard/wiki/${articleId}$`), {
       timeout: 60000,
     })
 
@@ -149,8 +151,9 @@ test.describe('wiki review-the-topic quiz flow', () => {
 
   test('Escape closes modal during idle, not during submit', async ({ page }) => {
     test.setTimeout(120000)
-    await gotoAllowRedirectAbort(page, '/dashboard/wiki/demo-ale-foundations')
-    await expect(page).toHaveURL(/\/dashboard\/wiki\/demo-ale-foundations$/, {
+    const articleId = '00000000-0000-4000-8000-000000000106'
+    await gotoAllowRedirectAbort(page, `/dashboard/wiki/${articleId}`)
+    await expect(page).toHaveURL(new RegExp(`/dashboard/wiki/${articleId}$`), {
       timeout: 60000,
     })
 

@@ -130,6 +130,7 @@ export function WikiRightSidebar({
             topicName={topicName ?? 'This Topic'}
             articleTitle={articleTitle}
             articleId={articleId}
+            articleSlug={articleSlug}
           />
         ) : (
           <Button

@@ -77,6 +77,12 @@ const commandByMode: Record<string, string[]> = {
     'e2e/admin-permissions-developer.spec.ts',
     '--project=chromium',
   ],
+  dialog: [
+    'test',
+    'e2e/dialog-accessibility.spec.ts',
+    '--project=chromium',
+    '--workers=1',
+  ],
   'auth-demo-ceo-portal': [
     'test',
     'e2e/ceo-portal.spec.ts',
@@ -122,7 +128,8 @@ if (
   mode === 'auth-demo-admin-content-admin' ||
   mode === 'auth-demo-admin-sme-reviewer' ||
   mode === 'auth-demo-admin-developer' ||
-  mode === 'auth-demo-ceo-portal'
+  mode === 'auth-demo-ceo-portal' ||
+  mode === 'dialog'
 ) {
   env.PLAYWRIGHT_DEMO_AUTH = 'true'
   env.NEXT_PUBLIC_ENABLE_DEMO_MODE = 'true'
@@ -154,7 +161,7 @@ if (mode === 'auth-demo-admin-sme-reviewer') {
   env.PLAYWRIGHT_PORT ??= '3222'
 }
 
-if (mode === 'auth-demo-admin-developer') {
+if (mode === 'auth-demo-admin-developer' || mode === 'dialog') {
   env.PLAYWRIGHT_DEMO_ROLE = 'developer'
   env.PLAYWRIGHT_DEMO_EMAIL = 'developer@example.com'
   env.PLAYWRIGHT_PORT ??= '3223'

@@ -65,6 +65,7 @@ const eslintConfig = defineConfig([
     "storybook-static/**",
     "flowbite/**",
     ".omx/**",
+    ".ai/**",
   ]),
 ]);
 
