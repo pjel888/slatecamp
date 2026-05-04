@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createCachedClient } from '@/lib/actions/analytics/shared-helpers'
 import { updateTheta } from '@/lib/srs/irt'
 
 /**
@@ -14,7 +14,7 @@ export const writeUserTheta = async (
   sessionId: string,
 ): Promise<void> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
 
     // Fetch interactions with their question metadata for IRT computation
     const { data: interactions } = await supabase

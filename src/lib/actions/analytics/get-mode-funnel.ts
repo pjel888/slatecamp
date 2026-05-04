@@ -1,7 +1,7 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
-import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
+import { getUser } from '@/lib/supabase/server'
+import { createCachedClient, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 export interface ModeFunnelWeek {
   week: string
@@ -10,7 +10,7 @@ export interface ModeFunnelWeek {
 
 export const getModeFunnelData = async (): Promise<AnalyticsResult<ModeFunnelWeek[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 

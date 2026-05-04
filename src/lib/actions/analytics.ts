@@ -1,10 +1,10 @@
 'use server'
 
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
+import { getUser, createServiceClient } from '@/lib/supabase/server'
 import type { HeatmapCluster, NodeState } from '@/components/dashboard/TaxonomyHeatmap'
 import { PACING_TARGET_MS, PASSING_ACCURACY, RETENTION_HALF_LIFE_DAYS, getSubjectColor } from '@/lib/constants/analytics'
-import { fetchTaxonomyNodeMap, buildLevel1Resolver, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
+import { createCachedClient, fetchTaxonomyNodeMap, buildLevel1Resolver, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ── Analytics data interfaces ────────────────────────────────────────────────
 
@@ -63,7 +63,7 @@ function getMasteryState(weight: number, distinctQuestionsSeen: number = 999): N
 }
 
 export async function getTaxonomyHeatmap(disciplineId: string): Promise<HeatmapCluster[]> {
-  const supabase = await createClient()
+  const supabase = await createCachedClient()
   const { data: { user } } = await getUser()
   if (!user) return []
 
@@ -126,7 +126,7 @@ export async function getTaxonomyHeatmap(disciplineId: string): Promise<HeatmapC
 
 export const getReadinessTrajectory = async (): Promise<AnalyticsResult<ReadinessTrajectoryPoint[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 
@@ -158,7 +158,7 @@ export interface ReadinessSectionData {
 
 export const getReadinessSectionData = async (): Promise<AnalyticsResult<ReadinessSectionData>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult({ trajectory: [], currentScore: 0, previousScore: null })
 
@@ -196,7 +196,7 @@ export const getReadinessSectionData = async (): Promise<AnalyticsResult<Readine
 
 export const getPacingQuadrantData = async (): Promise<AnalyticsResult<PacingQuadrantPoint[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 
@@ -250,7 +250,7 @@ export const getPacingQuadrantData = async (): Promise<AnalyticsResult<PacingQua
 
 export const getStaminaCurveData = async (): Promise<AnalyticsResult<StaminaBucket[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 
@@ -369,7 +369,7 @@ export const getPacingInsights = async (): Promise<AnalyticsResult<PacingInsight
 
 const getMemoryHealthDataInternal = async (userId: string): Promise<AnalyticsResult<MemoryHealthItem[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
 
     const { data: mastery } = await supabase
       .from('user_node_mastery')
@@ -442,7 +442,7 @@ export interface TimelineHeatmapData {
 
 export const getTimelineHeatmapData = async (): Promise<AnalyticsResult<TimelineHeatmapData>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult({ rows: [], weekLabels: [] })
 

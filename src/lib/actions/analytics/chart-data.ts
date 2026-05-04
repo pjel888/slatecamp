@@ -1,9 +1,9 @@
 'use server'
 
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
+import { getUser, createServiceClient } from '@/lib/supabase/server'
 import { REVIEW_THRESHOLD, MASTERY_THRESHOLD } from '@/lib/constants/analytics'
-import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
+import { createCachedClient, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 import { getModeColor, getForgettingCurveColor } from '@/lib/constants/chart-colors'
 
 // ── Types ────────────────────────────────────────────────────────────────────
@@ -191,7 +191,7 @@ export const getForgettingCurveData = async (): Promise<AnalyticsResult<Forgetti
 
 export const getStaminaHeatmapData = async (): Promise<AnalyticsResult<StaminaHeatmapData>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     const empty: StaminaHeatmapData = { rows: [], maxQuestions: 0, fatiguePoint: null }
     if (!user) return wrapResult(empty)
@@ -290,7 +290,7 @@ export const getStaminaHeatmapData = async (): Promise<AnalyticsResult<StaminaHe
 
 export const getDifficultyMasteryData = async (): Promise<AnalyticsResult<DifficultyMasteryPoint[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 
@@ -355,7 +355,7 @@ export const getDifficultyMasteryData = async (): Promise<AnalyticsResult<Diffic
 const getStudyVelocityDataInternal = async (userId: string): Promise<AnalyticsResult<StudyVelocityData>> => {
   const empty: StudyVelocityData = { weeks: [], avgPerWeek: 0, totalNodes: 0, projectedCompletionDate: null }
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const user = { id: userId }
 
     // Get mastery snapshots to find when each topic crossed mastery threshold
@@ -464,7 +464,7 @@ export const getStudyVelocityData = async (): Promise<AnalyticsResult<StudyVeloc
 
 export const getPacingAccuracyData = async (): Promise<AnalyticsResult<PacingAccuracyPoint[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 
@@ -535,7 +535,7 @@ export const getExamCountdownData = async (): Promise<AnalyticsResult<ExamCountd
     projectedPassProbability: null,
   }
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult(empty)
 

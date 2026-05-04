@@ -27,6 +27,16 @@ export const wrapError = <T>(error: string, fallback: T): AnalyticsResult<T> => 
   error,
 })
 
+// ── Cached Supabase client (request-level dedup via React.cache) ────────────
+//
+// Without this, every analytics section creates its own SSR Supabase client
+// via createClient(), which calls cookies() and creates a new client object.
+// With React.cache, the first call within a request creates the client and all
+// subsequent calls return the same instance — reducing 27+ client creations
+// to 1 per analytics page load.
+
+export const createCachedClient = cache(() => createClient())
+
 // ── User global stats helper (request-level dedup via React.cache) ──────────
 
 export const fetchUserGlobalStats = cache(

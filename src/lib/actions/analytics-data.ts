@@ -2,6 +2,7 @@
 
 import { unstable_cache } from 'next/cache'
 import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
+import { createCachedClient } from '@/lib/actions/analytics/shared-helpers'
 import { WEAKEST_TOPICS_MIN_ATTEMPTS, WEAKEST_TOPICS_LIMIT } from '@/lib/constants/analytics'
 import { fetchTaxonomyNodeMap, buildLevel1Resolver, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
@@ -123,7 +124,7 @@ export const getAccuracyBySubject = async (): Promise<AnalyticsResult<AccuracyBy
 
 export const getTimeSpentDistribution = async (): Promise<AnalyticsResult<TimeSpentDistributionData>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult({ buckets: [], avgMs: 0 })
 
@@ -161,7 +162,7 @@ export const getTimeSpentDistribution = async (): Promise<AnalyticsResult<TimeSp
 
 export const getSessionHistory = async (): Promise<AnalyticsResult<SessionHistoryData>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult({ points: [], trend: 'stable' as const })
 
@@ -225,7 +226,7 @@ export const getSessionHistory = async (): Promise<AnalyticsResult<SessionHistor
 
 export const getConfidenceCalibration = async (): Promise<AnalyticsResult<ConfidenceCalibrationItem[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 
@@ -268,7 +269,7 @@ export const getConfidenceCalibration = async (): Promise<AnalyticsResult<Confid
 
 const getWeakestTopicsInternal = async (userId: string): Promise<AnalyticsResult<WeakestTopicItem[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
 
     const { data: mastery } = await supabase
       .from('user_node_mastery')
@@ -317,7 +318,7 @@ export const getWeakestTopics = async (): Promise<AnalyticsResult<WeakestTopicIt
 
 export const getStudyActivity = async (): Promise<AnalyticsResult<StudyActivityDay[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 

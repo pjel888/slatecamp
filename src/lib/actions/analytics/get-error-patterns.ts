@@ -1,8 +1,8 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { getUser } from '@/lib/supabase/server'
 import type { ErrorCategory } from '@/lib/quiz/error-classifier'
-import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
+import { createCachedClient, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -33,7 +33,7 @@ export interface ErrorPatternData {
  * Returns category distribution and top struggling topics.
  */
 export const getErrorPatterns = async (): Promise<AnalyticsResult<ErrorPatternData | null>> => {
-  const supabase = await createClient()
+  const supabase = await createCachedClient()
   const { data: { user } } = await getUser()
   if (!user) return wrapResult(null)
 

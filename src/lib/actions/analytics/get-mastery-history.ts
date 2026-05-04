@@ -1,7 +1,8 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { getUser } from '@/lib/supabase/server'
 import {
+  createCachedClient,
   wrapResult,
   wrapError,
   fetchUserGlobalStats,
@@ -17,7 +18,7 @@ export interface MasterySparklineItem {
 
 export const getMasteryHistoryData = async (): Promise<AnalyticsResult<MasterySparklineItem[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 

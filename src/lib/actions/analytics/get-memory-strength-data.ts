@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { getUser } from '@/lib/supabase/server'
 import {
   currentRetrievalStrength,
   classifyQuadrant,
@@ -8,7 +8,7 @@ import {
   type MemoryQuadrant,
   type ActivityRecommendation,
 } from '@/lib/quiz/memory-strength'
-import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
+import { createCachedClient, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -41,7 +41,7 @@ export const getMemoryStrengthData = async (
   userId?: string,
 ): Promise<AnalyticsResult<MemoryStrengthOverview | null>> => {
   try {
-  const supabase = await createClient()
+  const supabase = await createCachedClient()
 
   const effectiveUserId = userId ?? (await getUser()).data.user?.id
   if (!effectiveUserId) return wrapResult(null)

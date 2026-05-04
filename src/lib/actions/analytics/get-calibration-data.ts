@@ -1,7 +1,7 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
-import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
+import { getUser } from '@/lib/supabase/server'
+import { createCachedClient, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -33,7 +33,7 @@ export const getCalibrationCurveData = async (
   userId?: string,
 ): Promise<AnalyticsResult<CalibrationData | null>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
 
     const effectiveUserId = userId ?? (await getUser()).data.user?.id
     if (!effectiveUserId) return wrapResult(null)

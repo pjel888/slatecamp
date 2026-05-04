@@ -1,7 +1,8 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { getUser } from '@/lib/supabase/server'
 import {
+  createCachedClient,
   wrapResult,
   wrapError,
   fetchUserGlobalStats,
@@ -18,7 +19,7 @@ export interface RelearningItem {
 
 export const getRelearningData = async (): Promise<AnalyticsResult<RelearningItem[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createCachedClient()
     const { data: { user } } = await getUser()
     if (!user) return wrapResult([])
 
