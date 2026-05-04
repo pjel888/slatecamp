@@ -548,29 +548,18 @@ _(e) = without firewall; (f) = with firewall; always verify against the full Rul
 
 ### Complete Design Workflow for LEA Area 3
 
-```text
-Step 1:  Identify LOT TYPE (7 types — Figs. VIII.2–VIII.8)
-         ↓
-Step 2:  Check ZONING CLASSIFICATION → Get PSO, FLAR, BHL from Table VIII.1
-         ↓
-Step 3:  Deduct EASEMENTS (PD 1067 Art. 51: 3/20/40 m; powerline/RROW per regs)
-         ↓
-Step 4:  Apply SETBACKS from Table VIII.2 (Residential) or Table VIII.3 (Non-Residential)
-         ↓
-Step 5:  Compute AMBF = TLA × PSO
-         ↓
-Step 6:  Verify that TOSL = TLA − AMBF meets minimum %
-         ↓
-Step 7:  Compute Total Allowable Floor Area = TLA × FLAR
-         ↓
-Step 8:  Determine Max Floors = Total Floor Area ÷ AMBF
-         ↓
-Step 9:  Apply BHL and INCREMENTAL SETBACKS above 2nd floor (300 mm/storey to 14th)
-         ↓
-Step 10: Check RROW ANGLES → OFB cannot exceed angular plane
-         ↓
-Step 11: Apply PROJECTION RULES (Rule X) for balconies, canopies, underground works
-```
+<Mermaid chart={`flowchart TD
+    A["Step 1: Identify LOT TYPE\n(7 types — Figs. VIII.2–VIII.8)"] --> B["Step 2: Check ZONING CLASSIFICATION\n→ Get PSO, FLAR, BHL from Table VIII.1"]
+    B --> C["Step 3: Deduct EASEMENTS\n(PD 1067 Art. 51: 3/20/40 m)"]
+    C --> D["Step 4: Apply SETBACKS\nTables VIII.2 / VIII.3"]
+    D --> E["Step 5: Compute AMBF = TLA × PSO"]
+    E --> F["Step 6: Verify TOSL = TLA − AMBF"]
+    F --> G["Step 7: Total Floor Area = TLA × FLAR"]
+    G --> H["Step 8: Max Floors = Floor Area ÷ AMBF"]
+    H --> I["Step 9: Apply BHL + Incremental Setbacks"]
+    I --> J["Step 10: Check RROW ANGLES"]
+    J --> K["Step 11: Apply PROJECTION RULES"]
+`} />
 
 > Practice writing this 11-step chain from memory until you can reconstruct it in under 2 minutes.
 

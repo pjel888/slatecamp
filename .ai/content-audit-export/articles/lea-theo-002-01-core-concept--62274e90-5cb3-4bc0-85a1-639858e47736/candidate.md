@@ -195,6 +195,14 @@ Architectural terminology also encompasses stylistic periods and ornamental voca
 
 <Tip>**SECS Mnemonic:** Every building element serves at least one of these four needs: **S**helter (protection), **E**nclosure (boundaries), **C**irculation (movement), **S**tructure (support). Test yourself by categorizing random elements during study sessions.</Tip>
 
+<RevealBlock prompt="Test yourself — can you identify each principle?" label="Drag to reveal answers">
+- **Balance** → Distribution of visual weight (symmetrical, asymmetrical, radial)
+- **Rhythm** → Repetition of elements creating visual movement and pattern
+- **Emphasis** → Focal point or area of dominance in a composition
+- **Proportion** → Relationship between parts and the whole (scale, ratio, hierarchy)
+- **Unity** → Cohesive whole where all elements work together harmoniously
+</RevealBlock>
+
 ## Related Articles
 
 See also within Elements & Principles of Design: **lea-theo-002-02-core-concept**, **lea-theo-002-03-core-concept**, **lea-theo-002-04-core-concept**, **lea-theo-002-05-core-concept**.

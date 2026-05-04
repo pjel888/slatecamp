@@ -10,9 +10,16 @@ Parking requirements determine the minimum number of vehicle spaces a building m
 Parking demand scales with building use. The National Building Code (NBC) prescribes minimum ratios—expressed as spaces per unit, per square meter of floor area, or per occupancy measure—that reflect typical peak demand. These ratios balance operational feasibility against public policy, such as reducing on-street parking pressure.
 
 The primary calculation formula is:
-**Total Parking Slots = Σ(Use Type × Ratio) + Accessible Spaces** 
+<FormulaBlock
+  label="Parking Calculation — Mixed-Use NBC Method"
+  steps={[
+    { variable: "Total Slots", operator: "=", operands: ["Σ(Use Type ÷ Ratio)", "Accessible Spaces"] },
+    { variable: "Office", operator: "=", operands: ["800 m²", "125 m²/slot"], comment: "6.4 → 7 slots" },
+    { variable: "Restaurant", operator: "=", operands: ["200 m² dining", "30 m²/slot"], comment: "6.7 → 7 slots" },
+  ]}
+/>
 
-### Worked Example: Mixed-Use Development
+
 
 A proposed building contains:
 

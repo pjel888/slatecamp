@@ -3,6 +3,10 @@
 **Rule XV, Section 1501 — PD 1096 (National Building Code of the Philippines)**
 **LEA Relevance:** Area 2 (Materials & Construction) | Prefab Component Assembly | Modular Construction Trends | Structural Adequacy
 
+<AuthorityContent>
+Per PD 1096 (National Building Code of the Philippines), Rule I Section 104.2 and Rule III, prefabricated assemblies shall meet the fire-resistive requirements of the construction type for which they are approved. All prefabricated structural elements must bear the DPWH Accreditation marking and comply with NSCP 2015 Section 104 for material testing and quality assurance.
+</AuthorityContent>
+
 ## Learning Goal
 
 After reading this article, you should be able to:

@@ -8,6 +8,17 @@ After reading this article, you should be able to:
 
 Master the 50 most frequently tested exam traps in the 2024 Revised IRR of PD 1096: distinguish the correct code reference from plausible distractors; apply the strictest requirement rule across conflicting provisions; and identify hidden conditions — exceptions, footnotes, and 'unless otherwise specified' clauses — that reverse the general rule.
 ---
+<InlineQuiz
+  question="A building with 4 storeys and a BHL of 12 meters is proposed on an R-2 lot with TLA of 600 sqm. What is the maximum AMBF if PSO is 60%?"
+  options={[
+    { letter: "A", text: "300 sqm" },
+    { letter: "B", text: "360 sqm", correct: true },
+    { letter: "C", text: "400 sqm" },
+    { letter: "D", text: "480 sqm" },
+  ]}
+  rationale="AMBF = TLA × PSO = 600 × 0.60 = 360 sqm. The BHL and number of storeys do not affect AMBF — they constrain FLAR and total floor area. This is one of the most common LEA calculation traps."
+/>
+
 
 ## CATEGORY A: RAMPS & SLOPES (Traps 1–10)
 

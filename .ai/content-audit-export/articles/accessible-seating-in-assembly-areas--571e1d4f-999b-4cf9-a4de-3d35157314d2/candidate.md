@@ -42,6 +42,9 @@ Calculate the number and distribution of accessible wheelchair seating locations
 
 ---
 
+
+<WikiPartHeader partNumber=1 title="COMPREHENSIVE DATA CHEAT SHEET" />
+
 ## COMPREHENSIVE DATA CHEAT SHEET
 
 ### Table 1: Wheelchair Space Allocation — Old vs. New IRR
@@ -177,6 +180,9 @@ SCREEN
 - WC spaces at **multiple elevations** for unobstructed views
 - Spaces **dispersed** across left, center, and right of seating bowl
 - Not all grouped in one corner (dispersal requirement implied by "adjoin accessible circulation throughout")
+<WikiPartHeader partNumber=2 title="TRAP LEART BOXES" />
+
+
 - Companion seat is **beside** (same row), not behind or in front
 
 ---
@@ -320,7 +326,10 @@ You are now the reviewer. A classmate says:
 1. **Wrong number of spaces:** 500 × 3% = 15 spaces required. Only 6 provided. **Violation: App. D Sec. 4.**
 2. **All in one row at the back (dispersal failure):** Wheelchair spaces must adjoin accessible circulation throughout the seating bowl, implying dispersal. Clustering all spaces in one location denies PWDs equal choice of seating location. **Violation: App. D Sec. 4.4 + RA 7277 spirit.**
 3. **Accessible corridor passing through WC spaces:** The accessible route SHALL NOT overlap wheelchair seating areas. **Direct violation: App. D Sec. 4.2.**
-4. **Access through adjacent spaces:** If spaces are grouped in a row, accessing an interior space requires passing through the outer spaces. **Violation: App. D Sec. 4.3.**
+4. **Access through adjacent spaces:** If spaces are grouped in a row, accessing an interior space requires passing through the outer spaces. **Violation:
+<WikiPartHeader partNumber=3 title="Cross‑References" />
+
+ App. D Sec. 4.3.**
 
 ---
 

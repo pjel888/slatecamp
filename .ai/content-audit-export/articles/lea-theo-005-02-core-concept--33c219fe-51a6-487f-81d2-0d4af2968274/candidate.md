@@ -2,7 +2,11 @@
 
 ## Learning Goal
 
-Identify the philosophical positions of the major Modernist masters — Le Corbusier (machines for living, Five Points), Wright (organic architecture), Mies (less is more, universal space), Aalto (humanistic modernism), Kahn (silence and light) — by their key concepts and built works.
+Identify the philosophical positions of the major Modernist masters — Le Corbusier (machines for living, Five Points), Wright (organic architecture), Mies (less is more, universal space), Aalto (humanistic modernism), Kahn (silence and light) — by their key concepts and built works.<CalloutBox type="most-tested">
+The distinction between Le Corbusier's functionalism and Mies van der Rohe's minimalism appears in nearly every LEA History/Theory exam cycle. Focus on: Corbusier's Five Points vs Mies' Universal Space — these two architects represent opposite poles of modernism and their contrast is a perennial exam favorite.
+</CalloutBox>
+
+
 ## Core Concept
 
 |<ArticleMedia id="media-lea-theo-005-02-core-concept" type="image" caption="Modernist Masters — Philosophical Positions Compared" alt="Comparative matrix of six modernist architects with columns for Architect, Philosophy, Key Quote, Key Concept, and Key Building: Row 1 — Le Corbusier (Machine for Living, Five Points, Modulor, Villa Savoye); Row 2 — Frank Lloyd Wright (Organic Architecture, building from site, Fallingwater); Row 3 — Mies van der Rohe (Less is More, Universal Space, Seagram Building); Row 4 — Alvar Aalto (Humanist Modernism, warmth and nature, Villa Mairea); Row 5 — Louis Sullivan (Form Follows Function, tall buildings, Wainwright Building); Row 6 — Walter Gropius (Bauhaus, Gesamtkunstwerk, total design integration). A timeline at bottom shows the chronological progression of modernism from 1900-1970." suggestedAsset="Diagram or reference image" status="placeholder" />

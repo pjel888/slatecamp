@@ -25,9 +25,9 @@ The most famous apadana is at **Persepolis** (founded by **Darius I** c. 518 BCE
 
 Persepolis also featured the **Gate of All Nations** (also called Gate of Xerxes, ordered by **Xerxes I**, r. 486–465 BCE), a monumental entrance structure guarded by colossal carved lamassu (winged bull figures with human heads). Pairs of lamassu flanked both eastern and western doorways. These gateways, borrowed from Assyrian precedent but executed in stone and at vastly grander scale, announced imperial authority. The human-headed figures represented the king's wisdom and divine sanction.
 
-<Warn>
+<Warning>
 **Critical Distinction:** Do not confuse Achaemenid and Greek architecture. Both cultures built with stone and columns in the same era, but their intentions and aesthetics differ. Greek temples are enclosed; Achaemenid apadanas are open and hypostyle (many columns visible). Greek columns taper upward; Persian columns are often straight or flare at the capital. Understanding these differences is essential for the LEA.
-</Warn>
+</Warning>
 
 Achaemenid builders worked with **limestone and marble**, quarried locally or imported. They used ashlar masonry—carefully cut, precisely fitted stones—allowing for thinner walls and larger interior spaces than mud brick permitted. Joints were tight, sometimes without mortar (dry ashlar). This stone construction, combined with the apadana's columnar interior, created interiors that were simultaneously monumental and open.
 
@@ -88,6 +88,9 @@ Persian Achaemenid architecture tests your ability to identify structures that m
 **Achaemenid Empire:** The first Persian empire (c. 550–330 BCE) founded by Cyrus II and extending from Egypt to India; its collapse followed Leaxander's conquest.
 
 <ArticleMedia id="media-hist-001-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Aerial site plan of Persepolis (c. 515–330 BCE) showing the Gate of All Nations, Apadana audience hall, Throne Hall, and the overall terrace platform layout illustrating Achaemenid imperial spatial organization." caption="Persepolis — Achaemenid Imperial Complex Plan" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+
+
+For prerequisite concepts, see <WikiReference slug="lea-hist-001-01-core-concept">Mesopotamian Architecture</WikiReference> and <WikiReference slug="lea-hist-001-02-core-concept">Egyptian Architecture</WikiReference>.
 
 ## Related Articles
 

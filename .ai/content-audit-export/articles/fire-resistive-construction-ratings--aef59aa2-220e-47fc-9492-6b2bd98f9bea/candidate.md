@@ -11,6 +11,24 @@ Identify fire-resistive ratings (1-hour through 4-hour) required for structural 
 **LEA Area:** Building Technology / Building Laws, Codes, and Ethics
 **Difficulty:** Intermediate–Advanced
 **Spaced Repetition:** Return in 3 days to re-test yourself on the thickness table for concrete columns, the difference between fire-resistive rating and time period rating, and the material efficiency hierarchy. Return in 7 days to complete the Active Recall Questions without referencing any notes.
+<Tabs defaultTab="type-I">
+  <Tab label="Type I (3-4 hr)" value="type-I">
+    **Most fire-resistive** — Reinforced concrete or protected steel. Columns/beams: 3-4 hours. Floors: 2-3 hours. Used for high-rises and hazardous occupancies.
+  </Tab>
+  <Tab label="Type II (2 hr)" value="type-II">
+    **Moderate fire resistance** — Protected steel or heavy timber. Columns: 2 hours. Used for mid-rise commercial and institutional.
+  </Tab>
+  <Tab label="Type III (1 hr)" value="type-III">
+    **Basic protection** — Masonry bearing walls with protected steel or wood. 1-hour rating throughout. Common for low-rise commercial.
+  </Tab>
+  <Tab label="Type IV (Heavy Timber)" value="type-IV">
+    **Massive wood members** — Columns min 8" thick, floors min 4". No concealed spaces. Mills, warehouses, churches.
+  </Tab>
+  <Tab label="Type V (Unprotected)" value="type-V">
+    **No fire rating required** — Wood frame, light-gauge steel. Single-family, small multi-family under 3 stories.
+  </Tab>
+</Tabs>
+
 
 ## 🎯 Learning Goals
 
