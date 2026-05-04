@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe the final acceptance and project close-out process.
+- Explain the final certificate of payment and final release.
+- Identify punch list items and their resolution timeline.
+- Describe the architect's role in project close-out documentation.
 
 Liquidated damages are pre-agreed monetary sums payable by the contractor to the owner as compensation for contractor breach, typically delay in project completion. They are enforceable under Philippine law (Articles 1226-1230, Civil Code) provided they are: (1) reasonable estimates of probable harm, not penalties, (2) agreed upon by parties in the contract before breach occurs, and (3) not unconscionable or iniquitous. Liquidated damages differ from actual damages—they are a contractual formula that eliminates the owner's burden to prove actual harm. Computation is typically: (contract daily rate) × (number of delay days) = liquidated damages amount.
 
@@ -15,9 +22,9 @@ The contractor's payment obligation for liquidated damages is triggered automati
 | Concept | Definition | LEA Relevance |
 |---------|-----------|--------------|
 | Liquidated damages | Pre-agreed monetary sum for contractor delay, payable daily from delay onset until Substantial Completion | Tests definition and distinguish from penalties |
-| Purpose | Compensate owner for delay-related harm without requiring proof of actual damages | Tests rationlea and advantage over proving actual damages |
+| Purpose | Compensate owner for delay-related harm without requiring proof of actual damages | Tests rationale and advantage over proving actual damages |
 | Enforceability | Enforceable if reasonable estimate of probable harm, not unconscionable or iniquitous per Article 2226 Civil Code | Tests enforceability conditions and court reduction authority |
-| Daily rate | Typically expressed as percentage of contract price per cleandar day of delay | Tests computation method and rate calculation |
+| Daily rate | Typically expressed as percentage of contract price per calendar day of delay | Tests computation method and rate calculation |
 | Trigger | Failure to achieve Substantial Completion by contract completion date | Tests delay measurement and Substantial Completion relationship |
 | Accrual | Liquidated damages accrue from first day of delay until Substantial Completion certification | Tests continuous accrual and end date |
 | Calculation | Daily rate × number of delay days = total liquidated damages amount | Tests arithmetic and day counting method |
@@ -29,7 +36,7 @@ The contractor's payment obligation for liquidated damages is triggered automati
 
 Under Philippine law (Civil Code Article 2226 and construction practice), liquidated damages are enforceable provided they represent a reasonable, pre-agreed estimate of delay-related harm. The owner's advantage is that it does not need to prove actual damages from delay (lost rent, financing costs, loss of use, etc.); the liquidated damages amount stands as fixed compensation. This is particularly valuable in commercial construction where the owner would otherwise need to document exactly what it lost due to the contractor's delay.
 
-Typical liquidated damages rates in Philippine construction range from 0.05% to 0.1% of the contract price per cleandar day of delay. A project with a 100 million peso contract price and 0.1% daily rate incurs 100,000 pesos in liquidated damages per day of delay. The rate must be reasonable—if a contract specifies 1% per day (1 million pesos daily on the example), courts would likely reduce it as unconscionable. The contractor has the burden of proving the amount is iniquitous; the owner has the burden of proving the rate is reasonable if challenged.
+Typical liquidated damages rates in Philippine construction range from 0.05% to 0.1% of the contract price per calendar day of delay. A project with a 100 million peso contract price and 0.1% daily rate incurs 100,000 pesos in liquidated damages per day of delay. The rate must be reasonable—if a contract specifies 1% per day (1 million pesos daily on the example), courts would likely reduce it as unconscionable. The contractor has the burden of proving the amount is iniquitous; the owner has the burden of proving the rate is reasonable if challenged.
 
 Liquidated damages end at Substantial Completion. A critical distinction: if the project is delayed 30 days past the contract completion date but Substantial Completion is finally certified on day 30, liquidated damages accrue for 30 days, then stop. Final Completion (punch list work) is not subject to liquidated damages; the contractor's obligation to finish punch items is separate. The contractor who achieves Substantial Completion late but is prompt with Final Completion avoids additional delay damages.
 
@@ -52,3 +59,18 @@ Enforcement of liquidated damages is typically straightforward: the owner deduct
 ## Common Mistakes
 
 <WikiMistakeList mistakes={["Confusing liquidated damages with penalties (Liquidated damages are enforceable; penalties are not)", "Assuming liquidated damages apply until Final Completion (They end at Substantial Completion)", "Thinking liquidated damages accrue only if owner demands them (They accrue automatically without demand)", "Confusing liquidated damages with late payment interest (Different triggers and purposes)", "Assuming contractor is liable for liquidated damages even if delay was owner-caused (Contractor can avoid by proving non-responsibility)", "Thinking courts cannot modify liquidated damages (Courts can equitably reduce unconscionable amounts per Article 2226)", "Confusing daily rate with total damages (Daily rate is multiplied by number of delay days)", "Assuming liquidated damages are paid in addition to actual damages (Liquidated damages substitute for actual damages; double recovery not allowed)"] />
+
+---
+
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)

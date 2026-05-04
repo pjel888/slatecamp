@@ -1,18 +1,26 @@
 {
   "article_id": "5fd2842e-ca3e-4e6d-bb87-65067d23a482",
   "slug": "north-american-indigenous-architecture",
-  "generated_at": "2026-05-03T13:44:10.951Z",
-  "original_hash": "sha256:6ace96a0dfff2de1dea366be9bbcbcf6e536a6e6bd9fc757bab5a3f6b221c2a3",
-  "normalized_hash": "sha256:e690167f9c6fa97e948b4a0f7d07773da2d6e8dc00e551016d005100ba7ccb5e",
-  "candidate_hash": "sha256:5963af5f771eed214e7b22ef5a675ca1818f4c7456fca973c02260eda9eee55f",
+  "generated_at": "2026-05-04T00:05:38.173Z",
+  "original_hash": "sha256:5963af5f771eed214e7b22ef5a675ca1818f4c7456fca973c02260eda9eee55f",
+  "normalized_hash": "sha256:c9fdc5978adc37030ecff3b8201c18ee3517558f0981d48741f1802ea21f657e",
+  "candidate_hash": "sha256:c9fdc5978adc37030ecff3b8201c18ee3517558f0981d48741f1802ea21f657e",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

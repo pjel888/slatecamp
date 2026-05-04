@@ -5,13 +5,14 @@
 Distinguish the two primary Philippine green building frameworks — BERDE (Philippine national standard) and EDGE (World Bank IFC tool) — by their certification levels, assessment criteria, and applicability to different project types.
 ## Core Concept
 
+<ArticleMedia id="media-lea-theo-004-03-core-concept" a type="image" caption="BERDE vs EDGE — Philippine Green Building Frameworks Compared" description="Side-by-side comparison diagram: BERDE (left side) — Philippine national standard, voluntary, 4 certification levels (Certified, Silver, Gold, Platinum), points-based assessment across 8 categories (Energy, Water, Materials, IEQ, Site, Transport, Management, Innovation), administered by PHILGBC. EDGE (right side) — World Bank IFC tool, 3 certifications (EDGE Certified, Advanced, Zero Carbon), minimum 20% efficiency in energy/water/materials, software-based compliance, aimed at emerging markets. Overlap zone shows projects that use both. A callout explains which framework suits different project types (government buildings prefer BERDE, developer projects often use EDGE)." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 Green building in the Philippines operates at the intersection of voluntary excellence (BERDE) and mandatory compliance (Code/RA 9729). This dual framework reflects global practice but with Philippines-specific climate and resource constraints.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: BERDE is *optional* but increasingly market-demanded; the Code is *mandatory*. The hierarchy: Code is floor (minimum legal requirement), BERDE is ceiling (aspirational). Buildings can be Code-compliant without BERDE certification; cannot be BERDE-certified without Code compliance. On LEA: if asked about compliance requirements, start with Code, then explain BERDE as enhancement layer.
-[/SLATECAMP_UI_BLOCK]
 
 **Regulatory Foundation: RA 9729 and the Philippine Green Building Code**
 
@@ -191,13 +192,11 @@ Critical for LEA: The Code is a *floor* (mandatory minimum); BERDE is a *ceiling
 Extracted summary:
 - Props: (none)
 - Text: BERDE categories are *weighted*—not all 11 carry equal value. Energy (16%), Land/Ecology (16%), Management (12%), and Water (10%) account for 54% of points in new construction. Window dressing in minor categories (Community 4%, Economic 3%) cannot substitute for weak performance in these heavy hitters. Exam questions often test whether students recognize this weighting.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: Path A (prescriptive) compliance is NOT inferior to Path B (performance). Path A is appropriate for buildings &lt;2,000 m² with simple programs. Path B is required for complex buildings or metro-area projects ≥2,000 m². Choosing the wrong path wastes resources (cost, time, expertise). This is frequently tested through scenario questions: "Should a 1,800 m² retail-residential building use Path A or B?"
-[/SLATECAMP_UI_BLOCK]
 
 However, occasional conflicts arise:
 - **Roof insulation:** Code mandates 50mm; BERDE might penalize 100mm as excessive embodied carbon.
@@ -216,40 +215,34 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
 ## Key Facts and Testable Items
 
 ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 1. **Code vs. BERDE Distinction:** "A developer achieves Philippine Green Building Code compliance (Path A prescriptive). Can they claim BERDE certification? Explain the relationship between the two systems." - **Answer:** No. Code compliance is necessary but insufficient for BERDE. Code sets minimum baselines (roof insulation, window U-values, etc.); BERDE requires *exceeding* baseline across 11 categories and earning ≥25 points. A Path A building may meet Code but score only 15–20 BERDE points
-[/SLATECAMP_UI_BLOCK]
+<Note>
+1. **Code vs. BERDE Distinction:** "A developer achieves Philippine Green Building Code compliance (Path A prescriptive). Can they claim BERDE certification? Explain the relationship between the two systems." - **Answer:** No. Code compliance is necessary but insufficient for BERDE. Code sets minimum baselines (roof insulation, window U-values, etc.); BERDE requires *exceeding* baseline across 11 categories and earning ≥25 points. A Path A building may meet Code but score only 15–20 BERDE points
+</Note>
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 2. **Energy Modeling Trade-Off:** "A 3,000 m² office tower in Makati chooses Path B (performance-based) compliance. The design proposes: (a) windows at 35% facade area (exceeding Code 25–30% norm) with low-U-value (4.0 W/m²K), but (b) minimal mechanical cooling (VRF system COP 2.8, smaller capacity). Sketch an energy model logic justifying this trade-off under RA 9729." - **Answer:** Daylighting strategy reduces lighting power density (→ lower cooling load). Larger windows with low-U-value minim
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 3. **BERDE Star Targeting:** "Design a 5,000 m² hotel in Cebu (Type IV, coastal, hillside site with ocean views). Target BERDE 4-Stars (70–85 points). Allocate points across categories, identifying the top three score drivers and justifying regional fit." - **Answer:** - **Energy (16% weighting, target 13 points):** Solar PV (8 kW rooftop array + battery 15 kWh) → 4 points. HVAC COP >3.2 (VRF) + ERV → 3 points. Daylighting + occupancy controls → 6 points. Total ~13–14. - **Water (10%, target 8 p
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 4. **Embodied Carbon Calculation and Trade-Off:** "A 12-story office building (structural program: 1,200 m³ concrete, 180 tonnes steel) is redesigned with 60% timber frame (CLT) and 40% hybrid steel-timber. Concrete reduced to 360 m³. Estimate embodied carbon savings vs. all-concrete baseline. Does this align with BERDE goals?" - **Answer:** - **Baseline:** (1,200 m³ × 2,400 kg/m³ × 1.2 kg CO₂/kg) + (180 tonnes × 1.8 kg CO₂/kg) = 3,456 + 324 = 3,780 tonnes CO₂e - **Optimized:** (360 × 2,400 × 1.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 5. **Compliance Path Selection:** "An 1,800 m² retail-residential mixed-use building in Iloilo (Type III, 1.5-hectare site with 40% existing vegetation). The developer has budget constraints. Recommend Path A (prescriptive) or Path B (performance) compliance with Philippine Green Building Code. Justify your choice." - **Answer:** Path A (prescriptive). Justification: (1) Building size (1,800 m²) and mixed-use program (retail + residential) are below metro-area mandatory Path B thresholds (typica
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 Extracted summary:
 - Props: 
 - Text: The Philippines has two primary green building frameworks: BERDE (Building Ecological Responsive Design Excellence), the national voluntary system administered by the Philippine Green Building Council
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
@@ -257,19 +250,16 @@ Extracted summary:
 Extracted summary:
 - Props: mistake="Conflating Code compliance with BERDE certification:", correction="The most frequent error on LEA. Code is mandatory; BERDE is voluntary. A building can be Code-compliant (roof insulated, windows rated, HVAC efficient per standard) yet earn zero BERDE points if it lacks water reduction, renewable energy, site ecology strategy, or local materials.", context="Conversely, BERDE projects must first clear Code."
 - Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
 Extracted summary:
 - Props: mistake="Underestimating water-reduction targets in Type I zones:", correction="Type I (Western Luzon, Western Visayas) is low-rainfall region (dry Nov–Apr). Students assume rainwater harvesting is ineffective. Error: Even 1,200mm annual rainfall on an 8,000 m² roof = 9,600 m³ potential; a 50 m³ tank + summer irrigation use can offset 20–30% of demand.", context="BERDE scoring rewards this heavily in water-scarce regions."
 - Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
 Extracted summary:
 - Props: mistakes="{["Overdesigning insulation for embodied carbon penalty:. The inverse of mistake #5 from Article 2 applies here. Students specify R-12 (100mm) insulation, thinking \\"more insulation = lower operational carbon.\\" However, BERDE penalizes excess insulation via embodied-carbon scoring in Emissions/Materials categories. Optimal is ~50–75mm (R-7 to R-10), balancing operational vs. embodied.", "Ignoring RA 9729 typhoon-resilience requirement:. Code mandate for climate adaptation is often overlooked. Students design high-efficiency buildings without considering typhoon loads, impact-resistant glazing, or flood resilience. RA 9729 explicitly mandates buildings adapt to climate hazards (typhoons, flooding); BERDE scoring reflects this via Emissions + Management categories.", "Applying LEED standards without Philippine adaptation:. The LEA expects recognition that LEED (US-biased) requires translation for Philippine tropics. Example: LEED water baseline uses fixture counts; Philippine Code uses rainfall reduction. LEED emphasizes site density; Philippine BERDE emphasizes land/ecology preservation in sensitive coastal/agricultural areas. Direct LEED application often scores lower than BERDE-native design.", "Assuming Path B always superior to Path A:. Path B (performance-based) is more flexible but costlier and requires expertise. Path A (prescriptive) is straightforward for buildings &lt;2,000 m², simple programs, or budget-constrained projects. LEA expects students to judge which path suits the project context, not default to \\"B is better.\\""]}"
 - Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

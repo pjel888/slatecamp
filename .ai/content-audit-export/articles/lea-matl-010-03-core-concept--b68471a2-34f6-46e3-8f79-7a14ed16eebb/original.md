@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Rebar (reinforcing steel bar) weight estimation determines material costs and transportation requirements. The formula relates bar diameter to unit weight, then scleas by length. In the Philippines, standard rebar sizes are 10 mm, 12 mm, 16 mm, 20 mm, 25 mm, and 32 mm diameter. Understanding the weight-to-diameter relationship is essential for accurate project estimates.
-
+Calculate rebar quantities by linear meter weight conversion for given bar diameters or bar number designation, using standard steel density (7,850 kg/m³) and applicable waste factors for reinforced concrete elements.
 ## Core Concept
 
 Rebar weight is calculated using the relationship between the bar's cross-sectional area and steel density. The universal formula is: _Weight per meter (kg/m) = (Diameter in mm)² ÷ 162.5_. This formula accounts for steel density (7,850 kg/m³) and converts circular cross-section geometry into a practical tool.
@@ -88,7 +88,7 @@ Number of bars = 390 m ÷ 12 m/bar = 32.5 bars ≈ 33 bars
 
 In the Philippines, rebar is supplied by major manufacturers including Pag-asa Steel, Capitol Steel, and Vulcan Products. Standard bar length is 12 meters. The market commonly trades rebar by the metric ton (MT) or by piece count (pcs). Prices fluctuate with global steel prices but typically range from 45–70 pesos per kilogram depending on market conditions and bar size.
 
-Design standards reference NSCP 2015 for reinforcement detailing and ASTM A615 (or local equivleant PNS) for material properties. Splice lengths are typically 40–50 bar diameters (i.e., 20 mm rebar = 800–1,000 mm splice length). For concrete structures with high durability requirements (coastal areas, industrial environments), deformed rebar with improved bond is specified.
+Design standards reference NSCP 2015 for reinforcement detailing and ASTM A615 (or local equivalent PNS) for material properties. Splice lengths are typically 40–50 bar diameters (i.e., 20 mm rebar = 800–1,000 mm splice length). For concrete structures with high durability requirements (coastal areas, industrial environments), deformed rebar with improved bond is specified.
 
 Climate and corrosion: In high-humidity and coastal areas, galvanized rebar or epoxy-coated rebar is increasingly specified, which raises material costs by 15–25%.
 
@@ -123,3 +123,10 @@ On the LEA, rebar questions focus on:
 <WikiMistakeCard mistake="Assuming all bar diameters weigh the same per meter" correction="Weight per meter depends on diameter squared (D²). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar." />
 
 <WikiMistakeList mistakes={["Confusing diameter in inches vs. millimeters (use mm in the formula)", "Forgetting that standard Philippine bar length is 12 m, not 6 m or other lengths", "Adding waste factor to weight instead of to length (waste applies to length, then calculate weight)", "Double-counting rebar by including splice waste AND standard 5% site waste"]} />
+
+## Related Articles
+
+See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-02-core-concept**, **lea-matl-010-04-core-concept**, **lea-matl-010-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

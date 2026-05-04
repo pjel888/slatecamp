@@ -1,4 +1,6 @@
 ## Introduction
+## Learning Goal
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 The distinction between ethically permissible fee-sharing and prohibited kickbacks is one of the most subtle issues in professional practice. On the surface, they appear identical: an architect receives money from a third party (supplier, contractor, or referral source) based on recommending or engaging that party's services. However, ethical analysis depends on disclosure, client benefit, and absence of profit motive that compromises professional judgment.
 
@@ -8,7 +10,7 @@ This article examines the Code of Ethical Conduct provisions on referral fees an
 
 The Code of Ethical Conduct (SPP Document 200) establishes that the architect's first duty is to the client's interest. Any arrangement with suppliers, referral sources, or consultants must satisfy this test:
 
-<LeartBox type="critical">
+<Callout type="critical">
 **The Core Ethical Rule:** An architect may not accept compensation, commissions, or benefits from third parties in exchange for recommendations or referrals **unless:**
 1. The client is fully informed of the arrangement
 2. The client consents to the arrangement in writing
@@ -18,7 +20,7 @@ The Code of Ethical Conduct (SPP Document 200) establishes that the architect's 
 
 If any of these conditions cannot be satisfied, the arrangement is prohibited.
 
-</LeartBox>
+</Callout>
 
 ## Category 1: Prohibited Kickbacks
 
@@ -33,7 +35,7 @@ A kickback is a payment or benefit provided to an architect in exchange for a re
 
 ### Type 1A: Hidden Supplier Commissions
 
-**Scenario 1:** A curtain wall supplier offers Architect Leax a 15% commission on the cost of every curtain wall system he specifies in projects. Leax accepts without disclosing to clients. When designing a building's facade, Leax consistently specifies this supplier's premium systems even when equivleant lower-cost alternatives exist that would better serve the client's budget.
+**Scenario 1:** A curtain wall supplier offers Architect Leax a 15% commission on the cost of every curtain wall system he specifies in projects. Leax accepts without disclosing to clients. When designing a building's facade, Leax consistently specifies this supplier's premium systems even when equivalent lower-cost alternatives exist that would better serve the client's budget.
 
 **Analysis:**
 
@@ -87,13 +89,13 @@ A kickback is a payment or benefit provided to an architect in exchange for a re
 - **Ethical violation:** SPP Document 200 Article V (Responsibilities to Manufacturers, Delears, and Agents); RA 9266 Section 23
 - **Discipline:** Suspension; restitution of rebates received
 
-<LeartBox type='critical'>
+<Callout type='critical'>
   **Note on Government Projects:** If any funding source is public (tax dollars,
   government grants), kickback arrangements may violate anti-graft and corrupt
   practices acts (such as RA 3019) beyond professional discipline. This can
   result in criminal prosecution, imprisonment, and permanent disqualification
   from public office or government projects.
-</LeartBox>
+</Callout>
 
 ## Category 2: Permitted Fee-Sharing Arrangements
 
@@ -161,7 +163,7 @@ Fee-sharing is ethically permissible when:
 - Document that the recommended supplier was selected based on lowest cost and best quality, not commission
 - Consider whether commission structure undermines claims of objectivity
 
-<LeartBox type='important'>
+<Callout type='important'>
   **The Objectivity Test:** Even with disclosure and consent, a commission
   arrangement is ethically questionable if the architect's financial incentive
   contradicts the claim that the recommendation is merit-based. If an architect
@@ -170,11 +172,11 @@ Fee-sharing is ethically permissible when:
   not. Best practice is to avoid commission arrangements altogether, or if they
   exist, to structure them so that the architect benefits only if the client's
   interests are also served (e.g., cost savings shared equally).
-</LeartBox>
+</Callout>
 
 ## Category 3: The Ethical Framework for Fee Arrangements
 
-<EthicalFramework>
+<ProcessFlow>
 Use this framework to evaluate whether a fee arrangement is ethically permissible:
 
 **Step 1: Identify the arrangement**
@@ -221,7 +223,7 @@ If you're biased toward parties that offer fees → **PROBLEMATIC**
 - Disclosure inadequate → **PROHIBITED** (disclose immediately or cease arrangement)
 - Client receives no benefit → **PROHIBITED** (discontinue arrangement)
 - Objectivity compromised despite disclosure → **ETHICALLY QUESTIONABLE** (best practice is to cease arrangement)
-  </EthicalFramework>
+  </ProcessFlow>
 
 ## Category 4: Specific Arrangements Under the Code of Ethics
 
@@ -243,12 +245,12 @@ Architect Helena specifies a structural steel supplier based on quality and pric
 2. **Document the discount** for each project
 3. **Not retain any portion** of the discount for her firm
 
-<LeartBox type='requirement'>
+<Callout type='requirement'>
   **Practical Implementation:** Best practice is to negotiate pricing that
   already reflects volume discounts, rather than receiving discounts and
   crediting them separately. This simplifies documentation and makes the benefit
   transparent in the cost estimate.
-</LeartBox>
+</Callout>
 
 ### Provision: Honest Representation in Professional Relationships
 
@@ -367,7 +369,7 @@ Some firms use this approach for project management scopes:
 
 **Ethical issues:**
 
-- Architect may unconsciously favor products offering commissions over equivleant alternatives
+- Architect may unconsciously favor products offering commissions over equivalent alternatives
 - Client doesn't know architect has financial interest in product selection
 - Competing manufacturers without commission arrangements are disadvantaged
 
@@ -406,10 +408,23 @@ The LEA examination tests disciplinary judgment about commission arrangements th
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 
 - 2024-03-22: Initial publication covering ethical conduct requirements
 
 **Next Article:** LEA-PRAC-ETH-013 — Professional Licensing and Continuing Registration
+
+---
+
+## Related Articles
+
+- [RA 9266: Legal Framework](lea-prac-law-001)
+- [Prohibited Acts and Penalties](lea-prac-law-003)
+- [Grounds for Suspension and Revocation](lea-prac-eth-008)
+- [Non-Poaching and Professional Courtesy](lea-prac-eth-006)
+- [Obligations to Contractors](lea-prac-eth-007)
+- [Conflict of Interest](lea-prac-eth-010)
+- [Scope of Practice](lea-prac-law-002)
+- [Signing and Sealing Prohibition](lea-prac-law-017)

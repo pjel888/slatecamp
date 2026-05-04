@@ -1,38 +1,47 @@
 {
   "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
   "slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-  "generated_at": "2026-05-03T13:45:28.271Z",
+  "generated_at": "2026-05-04T00:07:11.238Z",
   "old_hash": "sha256:896caf6df4770c5a6c1cf110e0de28570eda94866a123d77764794ef171eef87",
-  "new_hash": "sha256:fd01f989baad330361f22fdd87f4cfff0526607d0785ddb107b2be9f120983c3",
+  "new_hash": "sha256:6a5db556b56b0f9912cac993d6adae023f09a5ca2657e943ecd7c4b92ec6af7e",
   "original_hash": "sha256:896caf6df4770c5a6c1cf110e0de28570eda94866a123d77764794ef171eef87",
-  "normalized_hash": "sha256:394336614af161dfbd4c276f985539708e239e1e80d1cad6305a2c69c33d1da1",
-  "candidate_hash": "sha256:fd01f989baad330361f22fdd87f4cfff0526607d0785ddb107b2be9f120983c3",
+  "normalized_hash": "sha256:6a5db556b56b0f9912cac993d6adae023f09a5ca2657e943ecd7c4b92ec6af7e",
+  "candidate_hash": "sha256:6a5db556b56b0f9912cac993d6adae023f09a5ca2657e943ecd7c4b92ec6af7e",
   "changed": true,
-  "changed_line_count": 71,
-  "inserted_line_count": 43,
+  "changed_line_count": 63,
+  "inserted_line_count": 35,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 71,
-    "inserted": 43,
+    "changed": 63,
+    "inserted": 35,
     "deleted": 0,
     "original_line_count": 51,
-    "candidate_line_count": 94
+    "candidate_line_count": 86
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0005",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
 }

@@ -2,9 +2,11 @@
 
 Physical and aesthetic considerations are the starting point for site planning. Before you design, manage, or maintain a site, you must understand the terrain, its visual qualities, and how sun, wind, and existing views shape what's possible. This article focuses on reading the land itself—not on design choices, which belong to other articles.
 
-### Reading the Terrain: Topography and Contours
+## Learning Goal
 
-Topography is the shape of the land. Contour lines on a map connect points of equal elevation. The _spacing_ of contour lines tells you the slope.
+Analyze a site's physical conditions—topography, sun orientation, wind patterns, views, soil constraints, and existing utilities—to determine development opportunities and constraints before design begins.
+
+### Reading the Terrain: Topography and Contours
 
 **The Critical Rule You Cannot Reverse**
 

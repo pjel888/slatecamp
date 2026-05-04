@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define a construction joint and explain why joints are necessary
+- Distinguish between construction joints, expansion joints, and control joints
+- Describe proper joint preparation (keyed, roughened, with dowels)
+- Identify where construction joints are typically located in beams, slabs, and columns
 
 Construction joints are intentional breaks in concrete placement where two successive concrete pours meet. The LEA tests your mastery of NSCP location rules to minimize stress concentration and ensure adequate shear transfer. Critical values: floor joints locate in the middle third of span, girder offsets = 2× beam width, temporary shrinkage steel ratio = 0.0018 (Grade 60).
 
@@ -15,7 +22,7 @@ The job site reality: concrete placement often does not proceed in a continuous 
 
 ### Construction Joint Locations (NSCP 6.4.1)
 
-| **Member Type** | **Preferred Location** | **Offset Rule** | **Rationlea** |
+| **Member Type** | **Preferred Location** | **Offset Rule** | **Rationale** |
 |---|---|---|---|
 | Floor slabs (one-way) | Within middle third of span | N/A (slab is continuous across joint) | Moment is smallest in the middle; shear is manageable |
 | Continuous beams/girders | Within middle third of each span | N/A (within span) | Minimize moment concentration at joint |
@@ -66,6 +73,13 @@ In Philippine construction, floor slab construction joints are often placed at t
 Joint location: middle third of span (avoid supports and center if possible). Girder offset: 2× beam width minimum from floor joint. Temp steel: ρ = 0.0018 (Grade 60), max spacing = min(5h, 450 mm). Dowels at beam-column joints: ≥50% of flexural steel, normal to joint for shear transfer.
 </Tip>
 
+
+## Related Articles
+
+See also: **Embedded Conduits** (lea-strc-007-05) for how conduits cross joints, **Concrete Materials** (lea-strc-006-01) for how joints affect curing and hydration, and **Precast Concrete** (lea-strc-006-05) for how precast connections differ from cast-in-place joints.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Construction joint can be placed anywhere in the span — WRONG. Must be within middle third (NSCP 6.4.1).", "Girder offset = 1× beam width — WRONG. Always 2× beam width minimum.", "No reinforcement needed at construction joints — WRONG. Temp/shrinkage steel ρ = 0.0018 required (Grade 60).", "Temp steel spacing = full depth (e.g., 450 mm for all) — WRONG. Spacing = min(5h, 450 mm); for thin slabs (h = 100 mm), max = 500 mm, but 450 mm cap applies.", "Temp steel bars can be placed perpendicular to joint (spanning the joint) — WRONG. Bars must be parallel to joint, normal to shear flow direction.", "Construction joint surface does not need preparation — WRONG. Laitance must be removed and aggregate exposed for bond." ]} />

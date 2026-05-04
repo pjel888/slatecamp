@@ -1,19 +1,21 @@
 {
-  "attempted_at": "2026-05-03T14:02:33.250Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:52.863Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
   "slug": "lea-util-005-05-summary",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:e521d365d45855ffc170c8f354e57cdc66b286699cb0d451e84ac592e58bded0",
-  "original_hash": "sha256:6bb17d25667e8f992448a865aa17988e39f83a2c15d45d21cbdfba98215c4ed6",
-  "candidate_hash": "sha256:e521d365d45855ffc170c8f354e57cdc66b286699cb0d451e84ac592e58bded0",
-  "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:52:04.094894+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:27f617be1332c7cf4f248df45995213883aa536c6fb32f162048364c9cee908c",
+  "original_hash": "sha256:27f617be1332c7cf4f248df45995213883aa536c6fb32f162048364c9cee908c",
+  "candidate_hash": "sha256:1bebc4012f8018be9886f40cfa4a1c55b2432a65673b651a0aaefbf9c1de8305",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-03T16:52:32.48852+00:00"
 }

@@ -4,6 +4,11 @@
 Classical architectural theory established the foundational principles that dominated Western architecture for over 2,000 years. Vitruvius's *De Architectura* established the triadic framework (firmitas/utilitas/venustas), Alberti elevated the architect as an intellectual and theorist, and Palladio systematized proportional rules and villa design that became templates for generations. The LEA tests identification of each theorist's specific contributions, key treatise titles, and their philosophical positions on beauty, function, and the architect's role.
 </Callout>
 
+
+## Learning Goal
+
+Trace the evolution of architectural theory from Vitruvius through Alberti to Palladio, identifying their treatises, key concepts (Vitruvian Triad, concinnitas, proportional ratios), and contributions to architectural professionalism.
+
 ## Core Concept
 
 Classical architectural theory represents the intellectual scaffolding that shaped architectural discourse from ancient Rome through the Renaissance and into the modern era. This lineage reveals not merely a succession of buildings, but a succession of *ideas*—about what architecture is for, how beauty is constructed, and what qualifies someone to be called an architect.
@@ -81,3 +86,12 @@ The progression from Vitruvius to Alberti to Palladio reveals the transition fro
 **Villa Rotonda**: Palladio's masterwork (c. 1551); a symmetrical country residence with four identical porticoes, each referencing a classical temple front; exemplifies harmonic proportion and the villa typology.
 
 **Proportional Ratios**: Mathematical relationships (1:1, 2:3, 3:5, 4:5) used by Palladio and Renaissance theorists to determine room dimensions and spatial relationships; derived from harmonic musical intervals and classical sources.
+
+<Tip>**Chronology Tip:** Vitruvius (c. 80-15 BCE) → described what architects do. Alberti (1404-1472) → theorized what architecture should be. Palladio (1508-1580) → systematized principles for universal application. Remember: Describe → Theorize → Systematize.</Tip>
+
+## Related Articles
+
+See also within Architectural Philosophies: **lea-theo-005-02-core-concept**, **lea-theo-005-04-core-concept**, **lea-theo-005-05-core-concept**, **lea-theo-005-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

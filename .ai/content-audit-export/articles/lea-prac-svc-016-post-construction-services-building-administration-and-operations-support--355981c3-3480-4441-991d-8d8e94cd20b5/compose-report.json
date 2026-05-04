@@ -1,18 +1,28 @@
 {
   "article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
   "slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
-  "generated_at": "2026-05-03T13:44:11.589Z",
-  "original_hash": "sha256:ad0a7a33d5ae917ec397121146df3523ece355a9aa1de9f8683e61d318e67988",
-  "normalized_hash": "sha256:73f24a254d408e5b082c04d1b596990f9a360d5f5ecc84d2a03a90c27c489398",
-  "candidate_hash": "sha256:c41add887094e9e299f6df496ca94a75cc15ac7c71130f7ea9a54e10e0718855",
+  "generated_at": "2026-05-04T00:05:38.973Z",
+  "original_hash": "sha256:657f9ddc6ae51c5aac7c32dc4e3720e00f0072f6cc658d1384f331b3c1aba6c9",
+  "normalized_hash": "sha256:e1a5d3dea336449492e5934df41c6f7f89670683b1f781b104c1d2c683297606",
+  "candidate_hash": "sha256:e1a5d3dea336449492e5934df41c6f7f89670683b1f781b104c1d2c683297606",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

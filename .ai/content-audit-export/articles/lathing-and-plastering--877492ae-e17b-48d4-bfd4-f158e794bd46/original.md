@@ -1,8 +1,9 @@
 # Lathing and Plastering
+## Learning Goal
 
-**Rule XII, Section 1215 — PD 1096 (National Building Code of the Philippines)**
-**LEA Relevance:** Area 2 (Materials & Methods) | Interior Finish Requirements | Fire-Resistive Construction
+After reading this article, you should be able to:
 
+Identify the materials, thicknesses, and application methods for lath and plaster construction under PD 1096 Rule XVI; distinguish metal lath, gypsum lath, and wire lath by fire-resistance rating; apply the minimum plaster thickness for fire-rated assemblies; and determine when lath-and-plaster is an acceptable fire-resistive covering.
 ---
 
 ## 1. Hook / Opening Scenario
@@ -10,6 +11,24 @@
 You are reviewing construction documents for a five-storey Type IV (steel frame) commercial building in Quezon City. The plans specify 9.5 mm standard gypsum board on corridor walls — the walls separating tenant spaces from the means of egress. You know the corridor must be fire-rated. You reach for your red pen. This is exactly the kind of call the LEA board exam asks you to make: knowing which wall board, in which thickness, satisfies both the type of construction and the fire-resistive rating required by the National Building Code.
 
 ---
+
+<LawCallout code="nbcp">
+
+Rule XII, Sec. 1215: Lath, plaster, and gypsum wall board must conform to both (a) fire-resistive rating requirements under Rule VI and (b) type of construction under Rule IV. The days of merely referencing 'Secretary's standards' are over — the IRR gives specific cross-references.
+
+</LawCallout>
+
+<Warn>
+
+⚠️ Common Error: 9.5 mm standard gypsum board is NOT fire-rated. For corridor walls requiring fire-resistive rating, you need Type X (15.9 mm or 12.7 mm) gypsum board. Standard gypsum board on a corridor separating tenant space from means of egress will fail inspection.
+
+</Warn>
+
+<ExamTip>
+
+LEA Pattern: Questions test the relationship between type of construction (Type I-V) and required wall board. Type IV steel frame requires 12.7 mm Type X gypsum board for 1-hour rated corridors. Type V wood frame may use 15.9 mm Type X for same rating. Match the type to the thickness.
+
+</ExamTip>
 
 ## 2. Core Concepts with Mnemonic
 
@@ -195,7 +214,7 @@ On gypsum lath or smooth masonry, a scratch coat is not required because mechani
 
 **Material Compatibility Rules:**
 
-| Rule | Rationlea |
+| Rule | Rationale |
 |------|-----------|
 | Gypsum plaster = interior only | Gypsum is water-soluble; exterior exposure causes dissolution and failure |
 | Portland cement plaster = exterior and wet areas | Cement cures by hydration; moisture-resistant after full cure |
@@ -210,7 +229,7 @@ Regular gypsum board consists of a gypsum plaster core encased in paper facings.
 
 **Type X Gypsum Board (Fire-Rated)**
 
-Type X board contains glass fibers and other additives distributed throughout the gypsum core that reinforce the board during fire exposure and inhibit shrinkage. At 15.9 mm thickness, a tested assembly using Type X board on steel studs typically achieves 1-hour fire-resistance rating per ASTM E119 or the equivleant UL assembly.
+Type X board contains glass fibers and other additives distributed throughout the gypsum core that reinforce the board during fire exposure and inhibit shrinkage. At 15.9 mm thickness, a tested assembly using Type X board on steel studs typically achieves 1-hour fire-resistance rating per ASTM E119 or the equivalent UL assembly.
 
 Critical characteristics:
 - Must be labeled "Type X" or "Fire-Rated" by the manufacturer
@@ -228,7 +247,7 @@ MR board has a water-resistant paper facing and moisture-resistant additives in 
 
 **Cement Board**
 
-Cement board (e.g., HardieBacker, Durock, and locally available equivleants) is a cementitious panel with fiberglass reinforcement. It is the correct substrate for tile in wet areas (bathrooms, shower enclosures, kitchen splash areas) because it is dimensionally stable when wet and does not support mold growth. It is not a fire-rated product per se, but it is incombustible.
+Cement board (e.g., HardieBacker, Durock, and locally available equivalents) is a cementitious panel with fiberglass reinforcement. It is the correct substrate for tile in wet areas (bathrooms, shower enclosures, kitchen splash areas) because it is dimensionally stable when wet and does not support mold growth. It is not a fire-rated product per se, but it is incombustible.
 
 ### 4.5 Installation Requirements for Gypsum Board
 
@@ -281,10 +300,10 @@ The fundamental difference is one of **specificity vs. framework**:
 | Exterior plaster total thickness | 15–20 mm (practice) | 22 mm minimum (IBC 2508.1) | USA |
 | Metal lath — walls | Per referral standard | Min. 1.36 kg/m² (IBC 2510) | USA (explicit) |
 | Metal lath — ceilings | Per referral standard | Min. 1.85 kg/m² (IBC 2510) | USA (explicit) |
-| 1-hour corridor wall assembly | 15.9 mm Type X in rated assembly | 15.9 mm Type X in tested assembly | Equivleant |
-| Green board in wet areas | Not explicitly prohibited in code text; standard practice prohibits | Not permitted as direct tile substrate | Equivleant (practice) |
+| 1-hour corridor wall assembly | 15.9 mm Type X in rated assembly | 15.9 mm Type X in tested assembly | equivalent |
+| Green board in wet areas | Not explicitly prohibited in code text; standard practice prohibits | Not permitted as direct tile substrate | equivalent (practice) |
 | Fire-rating verification | Assembly conformance (referral codes) | UL assembly listing required | USA (more prescriptive) |
-| Wood lath in Types II–V | Prohibited (combustible) | Prohibited by fire-resistive requirements | Equivleant |
+| Wood lath in Types II–V | Prohibited (combustible) | Prohibited by fire-resistive requirements | equivalent |
 
 ### 5.3 Philippine Construction Context
 
@@ -306,7 +325,7 @@ The Philippine building industry differs from the US in several ways that affect
 
 **Wrong answer:** A 12.7 mm (1/2") standard gypsum board on steel studs provides a 1-hour fire-resistance rating.
 
-**Why it's wrong:** Fire-resistance ratings belong to assemblies, not individual products. Standard (Type R) gypsum board does not achieve a 1-hour rating regardless of thickness. A 1-hour rated assembly requires, at minimum, 15.9 mm (5/8") **Type X** board with the correct stud spacing, fastener pattern, and joint treatment — all as part of a tested assembly per ASTM E119 or an equivleant protocol.
+**Why it's wrong:** Fire-resistance ratings belong to assemblies, not individual products. Standard (Type R) gypsum board does not achieve a 1-hour rating regardless of thickness. A 1-hour rated assembly requires, at minimum, 15.9 mm (5/8") **Type X** board with the correct stud spacing, fastener pattern, and joint treatment — all as part of a tested assembly per ASTM E119 or an equivalent protocol.
 
 **Correct answer:** The 1-hour rated assembly must conform to a tested design using Type X gypsum board (15.9 mm) installed per the assembly specification. Per the 2004 Revised IRR, Rule XII, Section 1215, the installation must conform to fire-resistive rating requirements — meaning the entire assembly must be rated, not just one component.
 
@@ -378,7 +397,7 @@ A building's corridor wall separating a Type IV office building's egress corrido
 
 A building in Manila requires an exterior plaster finish on concrete hollow block walls. Which specification is correct, and which standard (Philippine or US) is more restrictive regarding minimum total plaster thickness?
 
-- A. Gypsum plaster, 12 mm; PH and USA are equivleant
+- A. Gypsum plaster, 12 mm; PH and USA are equivalent
 - B. Portland cement plaster, 15 mm; Philippine practice (15–20 mm) is less thick than the IBC minimum of 22 mm for 3-coat metal lath systems
 - C. Lime plaster, 20 mm; USA is more restrictive
 - D. Portland cement plaster, 12 mm; Philippine practice exceeds the IBC minimum
@@ -458,3 +477,10 @@ Before closing this article, confirm you can do the following from memory:
 
 *Article 31 of the LEA Board Exam Review Series | Rule XII, Section 1215 | PD 1096 & 2004 Revised IRR*
 *Philippine context: tropical climate, seismic Zone 4/5, CHB construction dominance, fire zone restrictions under Rule V*
+
+---
+
+## Cross‑References
+
+**Glass And Glazing Area Limits**, **Fire Resistive Construction Ratings**, **Plastics In Construction**, **Prefabricated Constructions**
+

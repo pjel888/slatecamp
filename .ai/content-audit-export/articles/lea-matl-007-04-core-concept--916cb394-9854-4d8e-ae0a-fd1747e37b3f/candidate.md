@@ -14,6 +14,13 @@ Surface preparation determines success. Wood stains require sanding to open grai
 
 Specialty finishes include anti-slip coatings for ramps (adding aggregate to paint), anti-bacterial finishes (copper-based additives), and intumescent paint (expands when heated to provide fire protection). These are specified for functional performance beyond aesthetic requirements.
 
+
+<ArticleMedia id="media-paint-coating-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of paint and coating systems: latex, oil-based, epoxy, polyurethane, stain, varnish, enamel, and textured with binder type, durability, sheen, and substrate compatibility"
+  caption="Future chart: paint and coating systems comparison — binder type, sheen, durability, and substrate"
+  suggestedAsset="Material selection chart with finish sample illustrations"
+  placementIntent="Provides reference for coating selection by application and substrate" />
+
 ## Key Provisions
 
 | Property | Specification | Standard | LEA Relevance |
@@ -42,6 +49,12 @@ Intumescent paint is typically specified for structural steel fire protection in
 
 Anti-slip coatings gain importance as BP 344 accessibility enforcement increases. Exterior ramps and interior accessible routes benefit from anti-slip paint (150-250µm DFT with silica or polymer aggregate). Cost premium is 20-30% over standard paint; specifying where required is cost-effective risk management.
 
+
+<ArticleMedia id="media-paint-system-layers" layout="single" type="image" status="placeholder"
+  alt="Cross-section showing paint system layers: primer, intermediate coat, and finish coat on wood, metal, masonry, and gypsum substrates"
+  caption="Future diagram: paint system layers by substrate — wood, metal, masonry, and gypsum"
+  suggestedAsset="Cross-section detail of coating build-up on each substrate type"
+  placementIntent="Visualizes proper paint system specification for different substrates" />
 ## How It's Tested
 
 **Question Type 1 (VOC Compliance):** A project in an occupied high-rise specifies interior paint. What VOC limit ensures air-quality compliance and occupant safety? Answer: &lt;300 g/L per EPA/ASTM guidelines. Oil-based enamel (300-650 g/L) would create indoor air quality issues.
@@ -52,19 +65,19 @@ Anti-slip coatings gain importance as BP 344 accessibility enforcement increases
 
 **Question Type 4 (Fire Protection):** Structural steel beams in a 15-story office building must achieve 2-hour fire rating. Should you specify standard latex paint or intumescent paint? Answer: Intumescent paint with specified DFT (2-3mm, verified per ASTM E119). Standard paint has no structural fire rating.
 
-<Tip>Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success—don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Specifying high-VOC oil-based enamel for interior occupied buildings, creating indoor air quality issues" correction="Use latex (acrylic) or low-VOC enamel (&lt;300 g/L) for interior spaces. Oil enamel (300-650 g/L) is reserved for metal in corrosive exterior environments or industrial spaces." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Omitting primer on drywall or metal, assuming topcoat alone provides adhesion" correction="Primer is 90% of adhesion. Latex primer on drywall seals substrate and promotes topcoat bond. Epoxy or rust-inhibiting primer on metal is non-negotiable in corrosive zones." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Under-specifying intumescent paint on structural steel, assuming aesthetic fire-rated paint provides structural protection" correction="Aesthetic paint fire rating (surface-only) is different from structural fire rating. Structural steel requires intumescent paint per ASTM E119, with DFT verified by testing. Two different specifications." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Calculating paint volume without accounting for spreading rate, under-budgeting materials" correction="Coverage rate (8-12 m²/L) determines volume needed. A 5000 m² wall at 10 m²/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%)." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Specifying standard latex for wood without stain-blocking primer, allowing tannins to bleed through", "Failing to account for recoat time in project schedule (16-24 hours for oil enamel vs. 2-4 hours for latex)", "Over-specifying premium paint for low-visibility or protected areas (cost optimization opportunity)", "Mixing incompatible systems (oil topcoat over latex primer, or vice versa) without sanding and re-priming", "Applying anti-slip coating to interior floors without specifying ramp-specific product and DFT"]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
 
 ## Related Articles
 

@@ -4,6 +4,12 @@
 
 **SPP Document 204-A** governs **Fulltime Supervision Services** — the engagement of an architect or a Construction Supervision Group (CSG) to provide continuous, on-site, eight-hour-a-day construction supervision for a building project in the Philippines. It is part of the 2010 Standards of Professional Practice (SPP), promulgated as the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004), and replaces the earlier **1979 UAP Doc. 204-A**.
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the scope and compensation for SPP Doc 204-A Full-Time Supervision Services: the architect's duties during construction (daily inspection, quality control verification, interpretation of contract documents, preparation of change orders); distinguish full-time supervision from the periodic observation included in SPP 202 Phase 5; apply the monthly salary basis or percentage-of-salary compensation.
+---
 This document directly addresses the gap left by SPP 202 Regular Design Services, which only requires the architect to make **periodic site visits** during the construction phase — not full-time 8-hour daily supervision. When a client requires more rigorous, continuous on-site oversight, SPP 204-A provides the separate framework for that engagement.
 
 ***
@@ -33,7 +39,7 @@ For the past 50 years, four principal members have been involved in the design a
 
 The evolution from the Clerk-of-Works to the CSG reflects the growing size and complexity of construction projects:
 
-- **Clerk-of-Works era**: When projects were manageable in sclea, the architect was assisted by a single construction inspector — the Clerk-of-Works — who monitored day-to-day work on behalf of the architect and owner
+- **Clerk-of-Works era**: When projects were manageable in scale, the architect was assisted by a single construction inspector — the Clerk-of-Works — who monitored day-to-day work on behalf of the architect and owner
 - **CSG era**: As projects became larger and more technically complex, a single individual was no longer adequate. The **Construction Supervision Group (CSG)** — comprising several qualified inspectors — became necessary for continuous, multi-discipline on-site inspection
 
 ***
@@ -330,3 +336,18 @@ A frequently misunderstood distinction is the difference between the architect's
 - The CSG is recommended by the architect but **paid by the owner directly** — the CSG fee does not pass through the architect's accounts.
 - Engaging a CSG is most advisable for large, complex, or high-value projects where construction quality, material conformance, and progress control are critical — the cost of supervision is typically far lower than the cost of construction defects discovered after turnover.
 - Ensure the Owner-Architect Agreement for SPP 204-A clearly states: the scope of the CSG, the number of inspectors, their schedules, the method of compensation, and the reporting structure.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Full-time supervision (204-A) vs Construction Administration (SPP 202 Phase 5): FTS = DAILY on-site inspection, CA = periodic observation. Five FTS duties: (1) Daily quality control, (2) Verify conformance to plans, (3) Interpret contract documents, (4) Prepare change orders, (5) Maintain daily log. Compensation = monthly salary or percentage of salary.
+
+## Cross‑References
+
+**Spp Doc 204 B Construction Management Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 205 Post Construction Services**, **Spp Doc 206 Comprehensive Architectural Services**
+

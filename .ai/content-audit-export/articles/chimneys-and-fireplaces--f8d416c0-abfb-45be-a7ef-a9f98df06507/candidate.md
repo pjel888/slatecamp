@@ -43,11 +43,7 @@ Every chimney must terminate at least **600 mm above** the highest point of roof
 
 ### Master Mnemonic — **"WALSH"**
 
-<LawCallout code="nbcp" section="Rule XII, Sec. 1211" title="WALSH Mnemonic — Five Governing Principles">
-
-W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (≥ 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence — it covers every major metric in Section 1211.
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="new"]
 
 > **W**alls (thickness by heat load)
 > **A**nchorage (lateral, at 1.80 m intervals)
@@ -102,11 +98,7 @@ W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals)
 | Above roof penetration | ≥ 600 mm | ≥ 914 mm / 3 ft (IRC R1003.9) |
 | Above highest building part within 3.00 m | ≥ 600 mm | ≥ 610 mm / 2 ft above anything within 10 ft / 3.05 m (IRC R1003.9) |
 
-<Note>
-
-Philippine code is less restrictive than IBC regarding above-roof height (600 mm vs. 914 mm), but the 3.00 m / 3.05 m reference zone is virtually identical.
-
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
 
 ### Table 5 — Hearth Requirements
 
@@ -264,11 +256,7 @@ The LEA boards may present scenario questions where NFPA 211 data is used as a r
 
 ### Trap 1 — Chimney Height: One Condition or Both?
 
-<Warn>
-
-There are TWO concurrent height conditions. The chimney must be ≥ 600 mm above the roof surface AND ≥ 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails — even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="new"]
 
 **Wrong assumption:** "The chimney is 600 mm above the roof surface, so it meets the height requirement."
 
@@ -302,11 +290,7 @@ There are TWO concurrent height conditions. The chimney must be ≥ 600 mm above
 
 ### Mnemonic 1 — Fireplace Wall Numbers: "2-2.5-5-10"
 
-<Tip>
-
-Remember the fireplace dimensions sequence: 200 mm outer wall → 250 mm firebox wall → 500 mm firebox depth → 10 mm max firebrick joint. Say it like a phone number: "Two, two-fifty, five-hundred, ten."
-
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="new"]
 
 > **2**00 mm — outer fireplace wall
 > **2.5** → 250 mm — firebox wall (without firebrick lining)
@@ -421,15 +405,23 @@ Return to this module in 3 days. If you can answer the Active Recall questions w
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Chimney height above roof = 900 mm minimum (or 600 mm if within 3 m of roof ridge). Spark arrestors required for solid-fuel appliances. Fireplace opening-to-flue ratio is 10:1 — this is the most tested dimensional relationship.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Chimney height above roof = 900 mm minimum (or 600 mm if within 3 m of roof ridge). Spark arrestors required for solid-fuel appliances. Fireplace opening-to-flue ratio is 10:1 — this is the most tested dimensional relationship.
+
 ## Cross‑References
 
 **Fire Resistive Construction Ratings**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Vertical Openings And Floor Roof Construction**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -1,18 +1,26 @@
 {
   "article_id": "664bf527-4be5-49fa-be54-33a70244467c",
   "slug": "mastery-professional-practice",
-  "generated_at": "2026-05-03T13:44:10.785Z",
-  "original_hash": "sha256:c07dba0cc81b38e6822a36840e932795a8386886cfc48c3fb70bd0c21350dbee",
-  "normalized_hash": "sha256:086d7c105f480104f1691bd797de7f84d6754265feb39353d083fc81920d9bc8",
-  "candidate_hash": "sha256:fd5a3394f92741b964277256b37f78cddbc733f516270f2af0c5aec119da34de",
+  "generated_at": "2026-05-04T00:05:37.972Z",
+  "original_hash": "sha256:fd5a3394f92741b964277256b37f78cddbc733f516270f2af0c5aec119da34de",
+  "normalized_hash": "sha256:28653f7ce93d844bdee27d425b91ab4e80bf19fb4fa48550cc3c98134c7935b3",
+  "candidate_hash": "sha256:28653f7ce93d844bdee27d425b91ab4e80bf19fb4fa48550cc3c98134c7935b3",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

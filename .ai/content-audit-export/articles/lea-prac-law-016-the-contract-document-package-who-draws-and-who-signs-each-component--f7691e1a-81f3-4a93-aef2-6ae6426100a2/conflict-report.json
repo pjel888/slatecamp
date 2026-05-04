@@ -1,19 +1,27 @@
 {
-  "attempted_at": "2026-05-03T14:01:41.802Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:15.494Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
   "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:43ed2a15af34e2071aec8c15e994e5a05e2be924d8aad0e686872f183616a7e9",
   "original_hash": "sha256:b3798bb02353261235aeb9f685666e1ea0f6e3b2a0a15476b7fda92e07ca8c59",
-  "candidate_hash": "sha256:43ed2a15af34e2071aec8c15e994e5a05e2be924d8aad0e686872f183616a7e9",
+  "candidate_hash": "sha256:322e053c33c9740d0cf5b0d0d66c73a7ec8572efeb85efc1300a82d04a3b5664",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:50:45.473128+00:00"
 }

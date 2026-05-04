@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your knowledge of three major North American Indigenous architectural traditions: **pueblo** architecture (Ancestral Puebloans), **longhouses** (Haudenosaunee/Iroquois and Pacific Northwest), and **mound builders** (Mississippian culture). Each represents distinct responses to climate, available materials, and social organization.</Callout>
+## Learning Goal
 
+Identify the three regional traditions of North American Indigenous architecture — Southwest (adobe pueblos), Northeast (longhouses, timber), Midwest (earthworks/mounds) — and explain how each tradition responds to available materials, climate, and cultural/spiritual values.
 ## Core Concept
 
 North American Indigenous architecture predates European contact by centuries to millennia, yet was often overlooked or dismissed as "primitive" in early Eurocentric scholarship. Archaeological and ethnographic evidence reveals sophisticated spatial planning, climate adaptation, and building technologies. Three major traditions merit study: the pueblo tradition of the Southwest (adobe and stone construction in arid climates), the longhouse tradition of the Northeast and Pacific Northwest (post-and-beam structures accommodating extended families), and the earthen mound tradition of the Mississippi River valley (ritual and administrative centers built from rammed earth). These traditions demonstrate that "Indigenous architecture" encompasses diverse responses to distinct environments and cultural values.
@@ -38,7 +39,7 @@ This design expressed Haudenosaunee social values: communal living (extended fam
 
 The **Mississippian culture** (approximately 1100–1500 CE, centered in the Mississippi River valley, North America) constructed monumental earthen mounds serving ritual, administrative, and possibly astronomical purposes. Unlike stone or wooden architecture, mound construction involved rammed earth or basketfuls of soil accumulated into precise geometric forms. Major mound complexes like **Cahokia** (present-day Illinois, peak occupation 1100–1200 CE) contained 80+ mounds; the largest, **Monks Mound**, rises 30 meters with a base covering 5.6 hectares—larger at its base than the Great Pyramid of Giza, built entirely from rammed earth.
 
-Monks Mound has a truncated pyramid form with four tiers, surrounded by a wall system. Excavations reveal that the mound was built in stages with earth compacted and carefully placed. Recent radiocarbon analysis suggests construction in two rapid phases between approximately 1050–1150 CE, likely completed within 20–100 years rather than earlier estimates of 300 years. The summit, approximately 100 × 150 meters, likely accommodated a wooden temple or chiefly residence. The mound's precise orientation suggests astronomical function—solstice and equinox observations may have guided construction and informed ritual cleandars.
+Monks Mound has a truncated pyramid form with four tiers, surrounded by a wall system. Excavations reveal that the mound was built in stages with earth compacted and carefully placed. Recent radiocarbon analysis suggests construction in two rapid phases between approximately 1050–1150 CE, likely completed within 20–100 years rather than earlier estimates of 300 years. The summit, approximately 100 × 150 meters, likely accommodated a wooden temple or chiefly residence. The mound's precise orientation suggests astronomical function—solstice and equinox observations may have guided construction and informed ritual calendars.
 
 Cahokia's mound complex was not haphazardly arranged but organized spatially around plazas and ceremonial gateways. Residential structures (wooden post-and-beam buildings) surrounded the mound precinct, suggesting that mound-building was a civic or religious duty. The sheer labor investment—estimates suggest millions of person-hours—indicates centralized authority capable of commanding sustained communal work.
 
@@ -53,18 +54,16 @@ These three traditions—pueblo, longhouse, mound—illustrate that "North Ameri
 <WikiExamTable headers={["**Tradition**", "**Site/Region**", "**Date**", "**Construction Material**", "**Key Feature**", "**Cultural Significance**"]} rows={[['["**Pueblo**", "Chaco Canyon (Pueblo Bonito)", "850–1150 CE", "Adobe, stone, timber", "~650 rooms, D-shaped plan, multi-story", "Ancestral Puebloan aggregate society"]', '["**Pueblo**", "Mesa Verde (Cliff Palace)", "600–1300 CE", "Stone, adobe, timber", "Cliff dwelling in natural alcove, 150 rooms, 23 kivas", "Passive solar design, vertical packing"]', '["**Pueblo**", "Taos Pueblo", "1350+ CE (continuous)", "Adobe, timber", "Multi-story residential, traditional continued use", "Ongoing Indigenous occupation and maintenance"]', '["**Pueblo**", "Acoma Pueblo", "Pre-contact–present", "Adobe, stone, timber", "Built atop 111m (365 ft) mesa", "Defensive siting and community continuity"]', '["**Longhouse**", "Haudenosaunee (Five Nations)", "Pre-contact–historic", "Post-and-beam, wattle-and-bark", "50–200+ m length, compartmented interior, central corridor", "Extended family communal living; matrilineal structure"]', '["**Longhouse**", "Pacific Northwest (Tlingit, Haida, Kwakwaka\'wakw)", "Pre-contact–historic", "Cedar timber, carved posts", "Large wooden structures, heraldic house poles, rank expression", "Hierarchical family organization, artistic expression"]', '["**Mound**", "Cahokia (Monks Mound)", "1100–1200 CE (peak)", "Rammed earth", "30m height, 4 tiers, 5.6 ha base", "Ritual/administrative center; astronomical orientation"]', '["**Mound**", "Cahokia complex", "1100–1200 CE", "Rammed earth", "80+ mounds around plazas", "Civic/religious labor organization"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Environmental Adaptation and Material Choice**
 Exams ask how building material and form respond to regional climate. Example: "Adobe construction in Southwestern pueblos serves what environmental advantages compared to solid stone?" (Answer: thermal mass for temperature moderation; lightweight reduces structural demand; local clay availability reduces transport costs; replastering allows maintenance without structural rebuilding). You must link material to performance.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Social Organization Expressed in Building Form**
 Questions test whether architecture reflects cultural values. Example: "Haudenosaunee longhouse compartmentation and central corridor arrangement indicate what about kinship and property organization?" (Answer: extended family occupation; gender-based space division; women's control of internal compartments; matrilineal inheritance). Distinguish pueblo aggregation (collective storage, status differentiation) from longhouse compartmentation (family autonomy within shared structure).</ExamTip>
 
-
 <ExamTip>**Pattern 3: Labor and Monumental Sclea**
 Exams ask what mound construction reveals about political organization. Example: "Monks Mound's multi-stage construction over 300 years and 5.6-hectare base indicate what administrative capability?" (Answer: sustained labor coordination; centralized authority; multi-generational planning; capability to command resource redistribution). Distinguish mound-building from pueblo clustering—different labor scleas and organization.</ExamTip>
 
+<Callout>The LEA tests your knowledge of three major North American Indigenous architectural traditions: **pueblo** architecture (Ancestral Puebloans), **longhouses** (Haudenosaunee/Iroquois and Pacific Northwest), and **mound builders** (Mississippian culture). Each represents distinct responses to climate, available materials, and social organization.</Callout>
 
 ## Common Mistakes
 
@@ -73,7 +72,6 @@ Exams ask what mound construction reveals about political organization. Example:
 <WikiMistakeCard mistake="Treating pueblo as ancient artifact rather than living tradition" correction="Taos Pueblo, Acoma, and others remain continuously inhabited, with residents maintaining adobe construction and spatial traditions. These are not archaeological sites—they are functioning communities." context="The LEA may ask about ongoing Indigenous architectural practice, not merely pre-contact ruins." />
 
 <WikiMistakeList mistakes={["Underestimating mound construction labor and precision. Students sometimes treat Mississippian mounds as crude earth piles. Monks Mound's precise geometric form, staged construction, and oriented summit demonstrate sophisticated planning. The labor investment (millions of person-hours) exceeded most pre-Columbian North American projects and rivals Mesoamerican pyramid building in scope.", "Missing the social hierarchy expressed in Pacific Northwest longhouses. Students often treat all longhouses as egalitarian. Pacific Northwest longhouses explicitly expressed rank: chiefs and high-status families occupied elevated central positions; slaves and lower-status individuals occupied peripheral areas. Carved house poles proclaimed clan affiliation and wealth. This differs markedly from Haudenosaunee egalitarianism.", "Ignoring vigas and latillas in pueblo construction details. The wooden-beam system is testable. **Vigas** (primary beams) and **latillas** (secondary branches) created a specific structural order. Understanding this timber frame + adobe wall system is essential for distinguishing pueblo construction from solid-stone techniques or European colonial adobe use."]} />
-
 
 ## Key Terms
 
@@ -96,3 +94,10 @@ Exams ask what mound construction reveals about political organization. Example:
 **Mound**: Monumental earthen structure built through rammed-earth or soil accumulation; served ritual, administrative, or astronomical functions in Mississippian culture.
 
 **Monks Mound**: Largest mound at Cahokia; 30 meters high, 5.6-hectare base, four-tiered form; built in two rapid phases (c. 1050–1150 CE) through staged construction.
+
+## Related Articles
+
+See also within Pre-Columbian & Indigenous American Architecture: **lea-hist-012-01-core-concept**, **lea-hist-012-02-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

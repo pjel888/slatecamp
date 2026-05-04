@@ -4,6 +4,8 @@
 
 Comprehensive Architectural Services (CAS) represents the complete range of professional services required throughout an entire building project. This concept evolved through the years in response to the demands of increasingly complex projects. The traditional model of "basic" and "additional" services has evolved toward a more holistic approach.
 
+<ArticleMedia type="process-flow" caption="Comprehensive Architectural Services — The Five Service Categories" description="Process flow diagram showing the five CAS categories: Pre-Design Services (SPP 201) → Regular Design Services (SPP 202) → Specialized Architectural Services (SPP 203) → Construction Services (SPP 204) → Post-Construction Services (SPP 205). The architect is shown as prime professional coordinating all categories." />
+
 ### Understanding Comprehensive Services
 
 Comprehensive Architectural Services encompasses five primary categories: pre-design services, regular design services, specialized architectural services, construction services, and post-construction services. The architect functions as the _prime professional_, serving as the client's agent in coordinating all necessary services for project delivery. This coordinating role defines the architect's leadership position within the project team.

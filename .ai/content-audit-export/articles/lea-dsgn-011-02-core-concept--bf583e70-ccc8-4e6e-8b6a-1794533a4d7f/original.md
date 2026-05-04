@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Read and produce elevations and sections using orthographic projection, label elevations by orientation, indicate finish floor levels and vertical dimensions, show section cuts on plans, and apply standard notation for materials and finishes.
+
 Elevations and sections are orthographic projections that show height, depth, and interior spatial relationships—essential for communicating vertical design intent on drawings. The LEA expects you to read, interpret, and produce these views according to NBC standards.
+
 
 ## Core Concept
 
@@ -57,6 +61,13 @@ A section shows a stairwell with headroom of 1.9 m. The candidate must identify 
 <Tip>
 **Memory aid:** "3-2-4 rule" — Floor-to-floor=**3.0 m** (NBC standard), finished ceiling height≥**2.4 m** (habitable space), stairwell headroom≥**2.0 m** (accessibility). Always verify FFLs in sections before calculating buildable floor area or checking code compliance.
 </Tip>
+
+
+**Exam Tip:** Elevations must show finish floor elevations (FFL), finished ground line (FGL), roof ridge/gable heights, and material indications. Sections must show hidden elements (footings, beams above cut plane).
+
+## Cross-References
+
+See **LEA-DSGN-011-01** (Floor Plans) for plan-section relationships, **LEA-DSGN-011-05** (Symbols) for material notations, and **LEA-DSGN-009-01** (Passive Design) for building section solar analysis.
 
 ## Common Mistakes
 

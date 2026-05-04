@@ -1,4 +1,6 @@
 ## Introduction
+## Learning Goal
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 The LEA examination tests candidates' ability to recognize unprofessional conduct in realistic scenarios. Rather than abstract ethical rules, architects must identify violations in context—understanding when conduct crosses from acceptable professional practice into violation territory.
 
@@ -21,6 +23,21 @@ Acceptable Practice → Gray Area → Professional Deviation → Violation
 Understanding this spectrum is critical because LEA scenarios ask candidates to distinguish between actions that are poor judgment versus actions that constitute violations.
 
 ## Pattern 1: Negligence and Failure to Meet Standard of Care
+
+
+<ExamTip>
+  **LEA Priority — Ethical Hierarchy:** Public safety > Client interests > Personal profit. The architect's obligation under RA 9266 and the Code of Ethical Conduct is absolute and non-delegable. Key violations: misrepresentation (§1-f), paid endorsements (§1-d/e), failure to report illegal practice. Mnemonic: PSR = Public Safety, Specializations need credentials, Report violations.
+</ExamTip>
+
+
+<Warn>
+  ****Exam Trap:** A common LEA distracter suggests that 'following client instructions' or 'the client approved the design' absolves the architect of public safety responsibility. This is WRONG. The architect's public obligation under RA 9266 is absolute. Sealing plans with safety defects makes the architect fully liable regardless of client direction.**
+</Warn>
+
+
+<LawCallout code="ra9266" section="RA 9266" title="RA 9266 — Legal Basis">
+RA 9266 (The Architecture Act of 2004) governs the practice of architecture in the Philippines. Section 23 lists grounds for suspension/revocation of the Certificate of Registration. The Code of Ethical Conduct establishes the architect's primary obligation to public health, safety, and welfare over all other interests.
+</LawCallout>
 
 ### Definition
 
@@ -86,9 +103,9 @@ If all four are "yes," it's negligence.
 - **Causation:** Inadequate investigation led directly to foundation design errors
 - **Likely discipline:** Suspension 2-3 years; liability for modification costs
 
-<LeartBox type="critical">
+<Callout type="critical">
 Failure to investigate site conditions is a classic grounds for discipline. Architects cannot assume site conditions; they must investigate or explicitly recommend investigation by specialists.
-</LeartBox>
+</Callout>
 
 ## Pattern 2: Incompetence and Lack of Professional Qualifications
 
@@ -152,9 +169,9 @@ Dishonesty includes deliberate falsification, fraud, and deception, including:
 - **Harm:** Public safety risk; life safety code violations
 - **Likely discipline:** Suspension 3-5 years; possible revocation (fraud with safety consequences)
 
-<LeartBox type="critical">
+<Callout type="critical">
 Certifying compliance without actual review or with knowledge of non-compliance is fraud. This is treated as one of the most serious violations because it directly endangers public safety and breaches the public trust inherent in professional licensure.
-</LeartBox>
+</Callout>
 
 **Scenario 7: Billing Fraud**
 
@@ -194,7 +211,7 @@ Conflicts of interest occur when an architect has competing financial or profess
 
 **Scenario 9: Undisclosed Supplier Interest**
 
-**Situation:** Architect Jake receives a 15% commission from a curtain wall supplier for every project he specifies their systems. He does not disclose this financial arrangement to clients. When selecting curtain wall systems for projects, he consistently specifies the supplier's high-cost products even when equivleant lower-cost alternatives exist.
+**Situation:** Architect Jake receives a 15% commission from a curtain wall supplier for every project he specifies their systems. He does not disclose this financial arrangement to clients. When selecting curtain wall systems for projects, he consistently specifies the supplier's high-cost products even when equivalent lower-cost alternatives exist.
 
 **Analysis:**
 - **Conflict element:** Financial interest in supplier clouds judgment
@@ -223,7 +240,7 @@ Conflicts of interest occur when an architect has competing financial or profess
 
 **Analysis:**
 - **Conflict element:** Financial incentive to recommend firms regardless of merit
-- **Fraud element:** Disguised payments constitute concelead kickbacks
+- **Fraud element:** Disguised payments constitute concealed kickbacks
 - **Violated standard:** Code of Ethics Section 4 (honest professional relationships)
 - **Potential harm:** Clients may not receive services from best-qualified subconsultants
 - **Likely discipline:** Suspension 3-5 years; possible revocation; mandatory restitution; potential criminal prosecution
@@ -252,9 +269,9 @@ Architects owe clients a fiduciary duty requiring them to:
 - **Causation:** Client incurs costs and delays finding replacement architect
 - **Likely discipline:** Suspension 1-2 years; mandatory restitution of unearned fee; ethics training
 
-<LeartBox type="important">
+<Callout type="important">
 Legitimate reasons to withdraw: Client non-payment, client request for unethical services, professional incapacity (illness), or major project scope changes making contract impossible. Poor judgment about fee adequacy is NOT a legitimate reason.
-</LeartBox>
+</Callout>
 
 **Scenario 13: Failure to Return Client Documents**
 
@@ -316,7 +333,7 @@ Beyond specific violations, RA 9266 Section 23(g) authorizes discipline for "any
 
 **Scenario 17: Harassment of Subordinates**
 
-**Situation:** Architect Rosa creates a hostile work environment through verbal abuse, discriminatory comments toward junior femlea staff, and public humiliation of staff members who make minor errors. Multiple staff members file complaints.
+**Situation:** Architect Rosa creates a hostile work environment through verbal abuse, discriminatory comments toward junior female staff, and public humiliation of staff members who make minor errors. Multiple staff members file complaints.
 
 **Analysis:**
 - **Unfit character element:** Harassment and discrimination violate professional conduct standards
@@ -399,7 +416,7 @@ The PRBoA considers factors beyond the violation itself:
 <ExamTip>
 **LEA Test Strategy:** When analyzing a disciplinary scenario, identify both the core violation AND the contextual factors that affect severity. An LEA question might give you identical violations with different circumstances and ask how discipline would differ.
 
-Example: Two architects each provided inadequate structural design. Architect A discovered the error immediately, notified the client, and paid for correction. Architect B concelead the error and it caused structural damage. Same violation, vastly different discipline recommendations.
+Example: Two architects each provided inadequate structural design. Architect A discovered the error immediately, notified the client, and paid for correction. Architect B concealed the error and it caused structural damage. Same violation, vastly different discipline recommendations.
 </ExamTip>
 
 ## The Role of Intent and Negligence Versus Fraud
@@ -439,9 +456,22 @@ Same violation (inadequate site investigation) yields vastly different disciplin
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering unprofessional conduct patterns
 
 **Next Article:** LEA-PRAC-ETH-011 — Continuing Professional Development and Competency
+
+---
+
+## Related Articles
+
+- [RA 9266: Legal Framework](lea-prac-law-001)
+- [Prohibited Acts and Penalties](lea-prac-law-003)
+- [Grounds for Suspension and Revocation](lea-prac-eth-008)
+- [Non-Poaching and Professional Courtesy](lea-prac-eth-006)
+- [Obligations to Contractors](lea-prac-eth-007)
+- [Conflict of Interest](lea-prac-eth-010)
+- [Scope of Practice](lea-prac-law-002)
+- [Signing and Sealing Prohibition](lea-prac-law-017)

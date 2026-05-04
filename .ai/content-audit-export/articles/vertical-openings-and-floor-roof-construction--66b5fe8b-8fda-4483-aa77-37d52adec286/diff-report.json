@@ -1,38 +1,43 @@
 {
   "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
   "slug": "vertical-openings-and-floor-roof-construction",
-  "generated_at": "2026-05-03T13:45:13.991Z",
-  "old_hash": "sha256:c3046b437bbccae687db3fbcb6c0193af18ca0d323707d7a1c3a37ce2a3c7cc9",
-  "new_hash": "sha256:9ef17390ba7337f39d22ec864efc9cb872334589ca1659f174c8da4e433ccf9b",
-  "original_hash": "sha256:c3046b437bbccae687db3fbcb6c0193af18ca0d323707d7a1c3a37ce2a3c7cc9",
-  "normalized_hash": "sha256:d4fba7665be9b9524ddf08a99c6ab92ab0e9771a7f6f1c6f36fb2ae0ef1c6bee",
-  "candidate_hash": "sha256:9ef17390ba7337f39d22ec864efc9cb872334589ca1659f174c8da4e433ccf9b",
+  "generated_at": "2026-05-04T00:06:54.172Z",
+  "old_hash": "sha256:9ef17390ba7337f39d22ec864efc9cb872334589ca1659f174c8da4e433ccf9b",
+  "new_hash": "sha256:2beab0a4907b441222eb2d69322510f57267a0ed78dab1715a3754f667ac2d20",
+  "original_hash": "sha256:9ef17390ba7337f39d22ec864efc9cb872334589ca1659f174c8da4e433ccf9b",
+  "normalized_hash": "sha256:2beab0a4907b441222eb2d69322510f57267a0ed78dab1715a3754f667ac2d20",
+  "candidate_hash": "sha256:2beab0a4907b441222eb2d69322510f57267a0ed78dab1715a3754f667ac2d20",
   "changed": true,
-  "changed_line_count": 284,
-  "inserted_line_count": 23,
+  "changed_line_count": 229,
+  "inserted_line_count": 8,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 1,
-  "ui_blocks_candidate_count": 1,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 1,
   "ui_blocks_count": 1,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 1,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 284,
-    "inserted": 23,
+    "changed": 229,
+    "inserted": 8,
     "deleted": 0,
-    "original_line_count": 263,
-    "candidate_line_count": 286
+    "original_line_count": 286,
+    "candidate_line_count": 294
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001"
+    ],
+    "changed_count": 1
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 1 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
 }

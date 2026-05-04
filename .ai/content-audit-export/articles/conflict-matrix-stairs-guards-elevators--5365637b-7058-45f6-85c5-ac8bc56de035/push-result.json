@@ -1,19 +1,28 @@
 {
-  "attempted_at": "2026-05-03T14:17:36.643Z",
+  "attempted_at": "2026-05-04T00:06:23.625Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
   "slug": "conflict-matrix-stairs-guards-elevators",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:80c4cf12ad3f80dff62934d5a42eb902b67dce4f4e0ec4345992991ec47ee869",
-  "original_hash": "sha256:80c4cf12ad3f80dff62934d5a42eb902b67dce4f4e0ec4345992991ec47ee869",
-  "candidate_hash": "sha256:90601876c729068021f59083169c83efea128a02a7ed31812513cb6a6a8b8e25",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:90601876c729068021f59083169c83efea128a02a7ed31812513cb6a6a8b8e25",
+  "original_hash": "sha256:6d16fb7a65685355ca93b7d8e7b1d98f4a954be4f27bef0fd181b5cd5a76c473",
+  "candidate_hash": "sha256:24d8361f38b7b71cc7393399af27cb1a0f348d78c9a278130f55dab6f52d5577",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T14:19:04.714714+00:00"
 }

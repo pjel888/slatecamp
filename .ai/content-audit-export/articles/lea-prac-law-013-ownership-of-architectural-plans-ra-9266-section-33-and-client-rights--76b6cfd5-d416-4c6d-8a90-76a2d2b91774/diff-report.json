@@ -1,38 +1,45 @@
 {
   "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
   "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
-  "generated_at": "2026-05-03T13:44:44.499Z",
-  "old_hash": "sha256:721905917b033b64adceaf23b63cb18e7398ea2268b9264d155af6857ba0f723",
-  "new_hash": "sha256:74ad572641caf8c846b84f7c1b0153ba8cfa1c6196b1adf84161bedc6bc74c39",
-  "original_hash": "sha256:721905917b033b64adceaf23b63cb18e7398ea2268b9264d155af6857ba0f723",
-  "normalized_hash": "sha256:f5d0ed8b9adda8bbb38abd842e0be1ea5628ae205c81cae1208a67b407a32173",
-  "candidate_hash": "sha256:74ad572641caf8c846b84f7c1b0153ba8cfa1c6196b1adf84161bedc6bc74c39",
+  "generated_at": "2026-05-04T00:06:20.522Z",
+  "old_hash": "sha256:74ad572641caf8c846b84f7c1b0153ba8cfa1c6196b1adf84161bedc6bc74c39",
+  "new_hash": "sha256:4807e8bd38fef685c7f4adf4b68cec13436604fab9f977ec9c282a9ee798f377",
+  "original_hash": "sha256:74ad572641caf8c846b84f7c1b0153ba8cfa1c6196b1adf84161bedc6bc74c39",
+  "normalized_hash": "sha256:4807e8bd38fef685c7f4adf4b68cec13436604fab9f977ec9c282a9ee798f377",
+  "candidate_hash": "sha256:4807e8bd38fef685c7f4adf4b68cec13436604fab9f977ec9c282a9ee798f377",
   "changed": true,
-  "changed_line_count": 44,
-  "inserted_line_count": 28,
+  "changed_line_count": 5,
+  "inserted_line_count": 2,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 44,
-    "inserted": 28,
+    "changed": 5,
+    "inserted": 2,
     "deleted": 0,
-    "original_line_count": 27,
-    "candidate_line_count": 55
+    "original_line_count": 55,
+    "candidate_line_count": 57
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

@@ -1,21 +1,22 @@
 ## Quantity Surveying and Cost Estimation—The Architect's Role vs. the QS Professional's Role
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: null
-[/SLATECAMP_UI_BLOCK]
+<ExamTip>
+Focus on the key concepts in this section for the Licensure Examination for Architects.
+</ExamTip>
 
 ## Learning Goal
 
 After studying this article, you should be able to:
 
 - Describe quantity surveying and cost estimation in architectural practice.
+
+<Tip>
+Memorize these items — they appear frequently on the exam.
+</Tip>
+
 - Distinguish the architect's role from the QS professional's role.
 - Explain the levels of cost estimates: order-of-magnitude, budget, definitive.
 - Apply cost estimation concepts to project fee calculations.
-
-
 
 ### Cost Estimation Throughout Project Phases
 
@@ -75,6 +76,9 @@ If the estimate exceeds the budget, the architect and client should discuss opti
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Quantity Surveying vs. Architect's Cost Role — Responsibility Matrix" description="Comparison matrix showing QS vs. Architect responsibilities: Cost estimation (QS leads, architect provides design scope), Bill of Quantities (QS prepares, architect verifies), Cost control during design (architect designs to budget, QS tracks), Variation evaluation (QS quantifies, architect certifies). Overlapping and distinct responsibility areas clearly marked." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)
@@ -87,3 +91,7 @@ If the estimate exceeds the budget, the architect and client should discuss opti
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+<Note>
+This article covers foundational material. Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards.
+</Note>

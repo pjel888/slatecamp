@@ -5,6 +5,7 @@ After reading this article, you should understand the key concepts tested in the
 Conflicts of interest represent one of the most challenging ethical issues in architectural practice. Unlike clear violations (fraud, negligence), conflicts exist in shades of gray. An architect may have competing interests that cloud judgment, yet honestly believe she will act objectively. The Code of Ethical Conduct and RA 9266 require more than honest intention—they require **disclosure and client informed consent**.
 
 This article examines how architects identify conflicts, the obligations triggered by their recognition, disclosure mechanics, and situations requiring recusal (withdrawal) from engagement.
+<ArticleMedia id="media-lea-prac-eth-011-introduction" a type="image" caption="Conflict of Interest — Ethical Decision Framework" description="Four-stage decision tree diagram for conflict of interest analysis: Stage 1 — Identify competing interests (financial, professional, personal); Stage 2 — Assess whether objectivity is compromised; Stage 3 — Apply disclosure requirements (who, what, when, how); Stage 4 — Determine if recusal is necessary. Each stage includes yes/no branching logic leading to permitted, disclosure-required, or recusal-required outcomes." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Definition: What Constitutes a Conflict of Interest?
 
@@ -16,10 +17,6 @@ A conflict of interest exists when an architect has competing financial, profess
 - **Create appearance of impropriety** even if actual judgment remains objective
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="critical"
-- Text: **Key Principle:** A conflict of interest is determined **objectively**, not by the architect's subjective belief in her own impartiality. Even an architect convinced she can remain objective must disclose conflicts that would reasonably appear to compromise objectivity.
-[/SLATECAMP_UI_BLOCK]
 
 The Code of Ethical Conduct establishes that architects must:
 
@@ -55,10 +52,6 @@ Financial conflicts occur when the architect has direct or indirect economic int
  - Seek competitive bids from unaffiliated suppliers
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Point:** The fact that equivalent products exist is irrelevant. If the architect benefits financially from selecting one supplier over another, that's a conflict requiring disclosure, regardless of product quality. Disclosure isn't always easy—clients may react negatively—but it's ethically mandatory — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ### Type 1B: Investment in Contractor or Vendor
 
@@ -75,10 +68,6 @@ Extracted summary:
  - Require competitive bid from independent contractors
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="requirement"
-- Text: **Disclosure Elements:** Disclosure must include: 1. **Identification of the conflict** (what competing interest exists) 2. **Financial details** (how much do you stand to gain?) 3. **Impact on judgment** (how could this cloud your recommendation?) 4. **Mitigation steps** (what safeguards can address the conflict?) 5. **Client's right to consent or refuse** (client can require independent bids)
-[/SLATECAMP_UI_BLOCK]
 
 ### Type 1C: Competitor Conflict in Bidding
 
@@ -122,10 +111,6 @@ Extracted summary:
  4. Establish clear boundaries (only design, no construction management; disclose all decisions affecting both clients)
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="important"
-- Text: **Critical Point:** The appearance of conflict is what triggers the disclosure requirement. Even if Eva believes she can remain objective, the existence of multiple opposed clients reasonably appears to compromise objectivity. Disclosure is mandatory.
-[/SLATECAMP_UI_BLOCK]
 
 ### Type 2B: Consultant Conflict
 
@@ -179,10 +164,6 @@ Extracted summary:
  - Disqualify the contractor from consideration
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Point:** Personal romantic relationships with vendors or contractors create conflicts so inherent that disclosure may not be sufficient ethical remedy. Best practice: Recuse yourself entirely from recommendations involving persons with whom you have romantic relationships — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ### Type 3C: Friendship and Social Relationships
 
@@ -202,11 +183,8 @@ Extracted summary:
 ## The Conflict Analysis Matrix
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ConflictMatrix" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Use this framework to analyze whether a situation creates a conflict requiring disclosure: **Question 1:** Do I have a competing financial, professional, or personal interest? - No → No conflict; proceed without disclosure - Yes → Continue to Question 2 **Question 2:** Could this competing interest compromise my objective judgment? - No, clear separation → Likely no conflict, but consider disclosure for transparency - Yes, interests are directly opposed → Clear conflict; proceed to Question 3 **
-[/SLATECAMP_UI_BLOCK]
 
+<ArticleMedia id="media-lea-prac-eth-011-introduction" a type="image" caption="Disclosure Process Flowchart — From Conflict Discovery to Informed Consent" description="Seven-step process flow diagram: Step 1 — Conflict identified → Step 2 — Timing assessment (before engagement or immediately upon discovery) → Step 3 — Written disclosure prepared (identifying conflict, explaining impact, proposing mitigation) → Step 4 — Client notified → Step 5 — Client exercises right of refusal → Step 6 — Informed consent documented in writing → Step 7 — Disclosure retained in project file. Diamond decision nodes show branching when disclosure is insufficient requiring recusal." suggestedAsset="Diagram or reference image" status="placeholder" />
 ## The Disclosure Process
 
 ### Elements of Effective Disclosure
@@ -214,10 +192,6 @@ Extracted summary:
 Disclosure is not a casual mention; it requires structured communication:
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 1. **Timing:** Disclose **before** accepting the engagement or **immediately** upon discovering the conflict 2. **Format:** Written disclosure (email or letter) establishing clear record 3. **Content:** Identify the conflict, explain how it could compromise judgment, describe any mitigation 4. **Clarity:** Use plain language; avoid legal jargon or minimization 5. **Right of Refusal:** Explicitly state client's right to decline proceeding given the conflict 6. **Client Response:** Obtain written 
-[/SLATECAMP_UI_BLOCK]
 
 ### Sample Disclosure Language
 
@@ -282,10 +256,6 @@ Some conflicts are so fundamental that disclosure and consent cannot adequately 
 - Declining work on values grounds is ethically permissible; proceeding while deeply opposed might compromise objectivity
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="important"
-- Text: **Distinction:** Values conflicts (choosing not to serve clients whose practices you oppose) are different from economic conflicts (benefiting from biased advice). Both may justify recusal, but for different reasons. Values conflicts are about the architect's professional integrity; economic conflicts are about protecting the client from the architect's bias.
-[/SLATECAMP_UI_BLOCK]
 
 ## Conflicts in Specialized Roles
 
@@ -330,11 +300,6 @@ The PRBoA enforces conflict of interest rules through discipline:
 - **Refusing to recuse from irreconcilable conflict:** Aggravating factor in other discipline
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Insight:** Questions about conflicts often test whether candidates understand that: 1. A conflict exists based on objective circumstances, not subjective belief in objectivity 2. Disclosure is the primary remedy for most conflicts 3. Some conflicts are so fundamental they require recusal 4. Concealing a conflict and profiting from it is more serious than disclosing it 5. Even clients' consent doesn't eliminate the ethical duty to disclose — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
-
 
 ## About This Article
 

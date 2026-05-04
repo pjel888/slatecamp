@@ -1,9 +1,25 @@
 # Certificate of Occupancy
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Distinguish a Certificate of Occupancy from a Building Permit by purpose and timing; identify the conditions for issuance, denial, and revocation under PD 1096 Sec. 309; apply Temporary CO and Partial CO rules; and calculate the consequences of occupying without a CO.
+---
+
+
 **Module Focus:** Rule III, Sections 308–309 | PD 1096 National Building Code of the Philippines & 2004 Revised IRR
 **LEA Area:** Building Technology / Laws, Contracts & Ethics
 **Difficulty:** ★★★☆☆ (Moderate — procedural sequence is the exam challenge)
 **Spaced Repetition:** Return in 3 days to redraw the full CO process chain from memory. Return in 7 days to answer the Active Recall Questions without looking at the article.
+
+## 🎯 Learning Goals
+
+By the end of this module, you should be able to:
+- Trace the complete Certificate of Occupancy procedural chain from physical completion to lawful occupancy
+- Recall the exact statutory timeframes: 5 working days for FSIC issuance, 30 calendar days for CO issuance after final inspection
+- Identify the required documents in the CO application package and who must sign/seal each
+- Distinguish between Partial CO, Conditional CO, and Change-of-Use CO and when each applies
 
 ---
 
@@ -11,9 +27,9 @@
 
 It is 7:30 in the morning on a Thursday in Quezon City. A developer's newly completed nine-story mixed-use tower stands ready — lobby polished, elevators tested, retail spaces pre-leased and waiting for fit-out. The developer's leasing manager is pressing hard: "Can tenants start moving in this weekend?" The project architect quietly consults her construction logbook, cross-checks the as-built plans stacked on her desk, and shakes her head. "Not yet."
 
-The building is physically complete. But "physically complete" and "legally occupiable" are two entirely different states under Philippine law. Before any person can legally use or occupy that structure — before a single office chair rolls across the lobby floor — the Office of the Building Official (OBO) must issue a Certificate of Occupancy (CO). And before that CO arrives, an entire procedural chain must be completed in the correct sequence: the construction logbook must be closed out, the Certificate of Completion must be notarized, as-built plans must be signed and selead, the Bureau of Fire Protection must conduct its Fire Safety Inspection, and only then may the Building Official conduct the final inspection and issue the CO — with a statutory deadline of **30 cleandar days** from that final inspection.
+The building is physically complete. But "physically complete" and "legally occupiable" are two entirely different states under Philippine law. Before any person can legally use or occupy that structure — before a single office chair rolls across the lobby floor — the Office of the Building Official (OBO) must issue a Certificate of Occupancy (CO). And before that CO arrives, an entire procedural chain must be completed in the correct sequence: the construction logbook must be closed out, the Certificate of Completion must be notarized, as-built plans must be signed and sealed, the Bureau of Fire Protection must conduct its Fire Safety Inspection, and only then may the Building Official conduct the final inspection and issue the CO — with a statutory deadline of **30 calendar days** from that final inspection.
 
-That 30-day clock, the 5-working-day Fire Safety Inspection Certificate window, the requirement for a full-time licensed supervisor on-site, and the provisions for partial and conditional COs are exactly the kind of details that appear on the Architecture Licensure Examination. The LEA does not test whether you know the CO exists — every architect knows that. The LEA tests whether you know the precise sequence, the exact timeframes, who signs what, and what happens when a step is skipped. Walk through this article as if you are the architect standing in that lobby, because the stakes — a building full of future occupants whose safety depends on these procedures being followed — are entirely real.
+That 30-day clock, the 5-working-day Fire Safety Inspection Certificate window, the requirement for a full-time licensed supervisor on-site, and the provisions for partial and conditional COs are exactly the kind of details that appear on the Licensure Examination for Architects. The LEA does not test whether you know the CO exists — every architect knows that. The LEA tests whether you know the precise sequence, the exact timeframes, who signs what, and what happens when a step is skipped. Walk through this article as if you are the architect standing in that lobby, because the stakes — a building full of future occupants whose safety depends on these procedures being followed — are entirely real.
 
 ---
 
@@ -36,7 +52,7 @@ Three critical nuances govern this requirement:
 The logbook is the official contemporaneous record of the construction. If a dispute arises about construction quality, or if a building later exhibits distress, the logbook is the primary legal document. Its absence on-site is a violation of the Code.
 
 **Nuance C — Certificate of Completion submission:** Upon physical completion of construction, the licensed Architect or CE submits two items to the Building Official:
-1. The **logbook** (signed and selead by the Architect/CE)
+1. The **logbook** (signed and sealed by the Architect/CE)
 2. A **Certificate of Completion** — a formal declaration that construction conforms to the National Building Code and to the approved plans and specifications
 
 The Certificate of Completion is the bridge between the construction phase and the occupancy phase. Without it, the CO process cannot begin.
@@ -49,13 +65,13 @@ No building shall be used or occupied until the Building Official issues a Certi
 
 The application for a CO requires the owner to submit a complete package of documents. Section 309 specifies these documents precisely:
 
-1. **Duly notarized Certificate of Completion** — signed by the contractor (if work was done by contract) and signed/selead by the owner's licensed Architect or Civil Engineer. The notarization requirement is significant: the Certificate of Completion is a sworn statement with legal force.
+1. **Duly notarized Certificate of Completion** — signed by the contractor (if work was done by contract) and signed/sealed by the owner's licensed Architect or Civil Engineer. The notarization requirement is significant: the Certificate of Completion is a sworn statement with legal force.
 
 2. **Construction Logbook** — the same logbook maintained on-site throughout construction, submitted as part of the CO application package.
 
-3. **As-built plans and specifications** — these must reflect ALL changes from the original approved plans. During construction, field conditions often require deviations from the original design. Every deviation must be documented in the as-built drawings. The as-built plans are signed and selead by the licensed Architect/CE.
+3. **As-built plans and specifications** — these must reflect ALL changes from the original approved plans. During construction, field conditions often require deviations from the original design. Every deviation must be documented in the as-built drawings. The as-built plans are signed and sealed by the licensed Architect/CE.
 
-4. **Building Inspection Sheet(s)** — signed by the contractor and signed/selead by the owner's licensed Architect or CE.
+4. **Building Inspection Sheet(s)** — signed by the contractor and signed/sealed by the owner's licensed Architect or CE.
 
 The completeness of this package is the owner's responsibility. A CO application with missing or unsigned documents will be rejected.
 
@@ -71,7 +87,7 @@ This is one of the highest-yield exam details in this entire topic. The CO proce
 
 **Step 3 — The "No Action" Clause:** If the BFP takes **no action** within 5 working days, the Building Official **may issue the CO conditionally** without waiting for the FSIC. This "conditional" CO provision prevents the BFP's inaction from indefinitely blocking lawful occupancy — but it does not eliminate the owner's obligation to eventually obtain the FSIC.
 
-The 5-working-day window is exam-critical. Note that this is **working days**, not cleandar days — weekends and legal holidays do not count. For a building endorsed on a Monday, the 5-working-day window closes the following Monday (assuming no holidays). If the BFP has not acted by then, the Building Official has the discretion to issue the CO conditionally.
+The 5-working-day window is exam-critical. Note that this is **working days**, not calendar days — weekends and legal holidays do not count. For a building endorsed on a Monday, the 5-working-day window closes the following Monday (assuming no holidays). If the BFP has not acted by then, the Building Official has the discretion to issue the CO conditionally.
 
 **Why the FSIC matters:** The FSIC certifies that the building complies with the Fire Code of the Philippines (RA 9514 and its IRR). It covers fire exits, fire suppression systems, fire detection and alarm systems, fire safety signage, and emergency lighting. A building without an FSIC — or whose FSIC has lapsed — is operating illegally under RA 9514 regardless of what the Building Code says. This is why the intersection of PD 1096 and RA 9514 is so important: the CO process forces compliance with both regimes simultaneously.
 
@@ -112,7 +128,7 @@ Three final provisions round out the CO framework:
 | Full-time supervisor | Licensed Architect or Civil Engineer | PD 1096, Rule III, Sec. 308.1 |
 | Logbook location | At jobsite at all times | Sec. 308.4 |
 | Logbook contents | Daily progress, tests, weather, pertinent data | Sec. 308.4 |
-| Certificate of Completion signatories | Contractor (if by contract) + licensed Arch/CE (signed & selead) | Sec. 309.2 |
+| Certificate of Completion signatories | Contractor (if by contract) + licensed Arch/CE (signed & sealed) | Sec. 309.2 |
 | Certificate of Completion notarization | Duly notarized | Sec. 309.2 |
 | As-built plans requirement | Must reflect ALL changes from original plans | Sec. 309.3 |
 | Documents submitted for CO | Certificate of Completion + logbook + as-built plans + Building Inspection Sheet | Sec. 309.2 |
@@ -140,7 +156,7 @@ Three final provisions round out the CO framework:
 | **Construction logbook** | Mandatory at jobsite at all times | Not universally mandated by IBC; some jurisdictions require inspection records |
 | **As-built plans** | Required as part of CO application — must reflect ALL changes | Required by some jurisdictions; IBC does not universally mandate as condition of CO |
 | **Fire safety coordination** | BFP issues FSIC within 5 working days; Building Official may conditionally issue CO if BFP inactive | Fire Marshal may inspect separately; IBC 111.2 does not specify a day-count window |
-| **CO issuance deadline** | 30 days after final inspection (statutory deadline) | Typically processed promptly; IBC does not specify a hard cleandar deadline |
+| **CO issuance deadline** | 30 days after final inspection (statutory deadline) | Typically processed promptly; IBC does not specify a hard calendar deadline |
 | **Temporary / Partial CO** | Partial CO for completed portions of unfinished building (Sec. 309.8) | Temporary CO per IBC 111.3 for portion of building before full completion |
 | **CO content/information** | Occupancy classification reflected; posted on premises | IBC 111.2: must include address, owner, description, occupancy, construction type, special stipulations |
 | **CO display** | Posted in conspicuous place on premises | IBC does not explicitly mandate permanent posting on premises |
@@ -148,7 +164,7 @@ Three final provisions round out the CO framework:
 | **Revocation of CO** | Building Official may suspend/revoke per abatement procedures (Rule II, Sec. 215) | Building Official may revoke CO if violations found per IBC 111.4 |
 | **Legal reference for fire safety** | RA 9514 Fire Code of the Philippines (BFP-administered) | NFPA 1, NFPA 101, local fire codes (Fire Marshal-administered) |
 | **Key similarity** | Both prohibit occupancy without CO; both allow partial/temporary CO | Both prohibit occupancy without CO; both allow partial/temporary CO |
-| **Key difference #1** | PH has explicit 5-working-day FSIC window with conditional CO fallback | IBC has no equivleant statutory day-count for fire authority response |
+| **Key difference #1** | PH has explicit 5-working-day FSIC window with conditional CO fallback | IBC has no equivalent statutory day-count for fire authority response |
 | **Key difference #2** | PH requires full-time licensed supervisor (Arch/CE) | IBC requires registered design professional for special inspections, not necessarily full-time on-site |
 | **Key difference #3** | PH requires notarized Certificate of Completion as CO prerequisite | IBC CO application does not universally require a separately notarized completion certificate |
 
@@ -192,7 +208,7 @@ Full-Time Supervision + Construction Logbook (Sec. 308)
       ↓ 
 Physical Completion 
       ↓ 
-Certificate of Completion prepared (signed/selead by Arch/CE; notarized) 
+Certificate of Completion prepared (signed/sealed by Arch/CE; notarized) 
       ↓ 
 CO Application submitted: Certificate of Completion + Logbook + As-Built Plans + Inspection Sheets (Sec. 309.2) 
       ↓ 
@@ -222,12 +238,18 @@ The CO reflects the occupancy classification of the building as established in R
 Remember the five components of the Certificate of Occupancy application:
 
 > **C** — Certificate of Completion (duly notarized)
-> **L** — Logbook (construction logbook, signed and selead)
+> **L** — Logbook (construction logbook, signed and sealed)
 > **A** — As-built plans and specifications (all changes reflected)
 > **B** — Building Inspection Sheet(s)
-> **S** — Selead by licensed Architect/CE
+> **S** — Sealed by licensed Architect/CE
 
 When the LEA asks "What documents must be submitted for a CO application?", run through **C-LABS** — you will have every element.
+
+<Tip>
+
+💡 Tip: The "S" in C-LABS (Sealed by licensed Architect/CE) applies to multiple documents — the Certificate of Completion, logbook, as-built plans, and Building Inspection Sheets all require the Architect/CE's seal. Only the Certificate of Completion additionally requires notarization.
+
+</Tip>
 
 ---
 
@@ -241,6 +263,14 @@ The two critical time windows in CO issuance:
 Think: **"FIRE burns fast (5 days), FINAL takes time (30 days)."**
 
 If FIRE is late (BFP doesn't act in 5 working days), Building Official may issue CO conditionally. FINAL always follows FIRE.
+
+<LawCallout code="pd1096" section="Rule I - Certificate of Occupancy">
+
+
+🔑 The two critical timeframes are directly from PD 1096 Rule III, Sec. 309.4 (5 working days for FSIC) and Sec. 309.6 (30 calendar days for CO issuance after final inspection). These are the most tested numerical values in the CO topic.
+
+
+</LawCallout>
 
 ---
 
@@ -267,6 +297,12 @@ If FIRE is late (BFP doesn't act in 5 working days), Building Official may issue
 **TRAP 4:** "A Partial CO cannot be issued until the entire building passes inspection."
 
 **TRUTH:** Section 309.8 explicitly authorizes the Building Official to issue a **Partial Certificate of Occupancy** for portions of a building prior to completion of the entire building. Phased occupancy is a recognized and lawful practice under PD 1096. The Partial CO covers only the inspected and approved portions.
+
+<ExamTip>
+
+📌 On the LEA, expect a multi-option question asking which document(s) must be submitted with a CO application. The four required items are: (1) notarized Certificate of Completion, (2) construction logbook, (3) as-built plans, (4) Building Inspection Sheets. Wrong answers often omit the logbook or add extraneous documents.
+
+</ExamTip>
 
 ---
 
@@ -300,7 +336,7 @@ An architect has been engaged as the full-time supervisor for a commercial build
 
 > **Answer: C**
 >
-> Section 308.1–308.2 allows the supervising Architect/CE to be the same or different person from the designing professional. Section 309.2 requires the Certificate of Completion to be signed and selead by the owner's licensed Architect/CE — which is the supervising architect in this scenario. There is no requirement for co-signature with the designing firm (eliminating B). The Certificate of Completion is signed by the contractor (if by contract) AND the licensed Arch/CE — not the contractor alone (eliminating D). The supervising architect has full authority to sign (eliminating A).
+> Section 308.1–308.2 allows the supervising Architect/CE to be the same or different person from the designing professional. Section 309.2 requires the Certificate of Completion to be signed and sealed by the owner's licensed Architect/CE — which is the supervising architect in this scenario. There is no requirement for co-signature with the designing firm (eliminating B). The Certificate of Completion is signed by the contractor (if by contract) AND the licensed Arch/CE — not the contractor alone (eliminating D). The supervising architect has full authority to sign (eliminating A).
 >
 > *LEA Area: Laws, Contracts & Ethics*
 
@@ -322,6 +358,14 @@ A large mixed-use development has 12 floors. Floors 1–4 (commercial podium) ar
 > *LEA Area: Building Technology / Laws, Contracts & Ethics*
 
 ---
+
+
+
+---
+
+## Cross‑References
+
+**Building Permit Process**, **Change Of Use And Occupancy**, **Legal Liability And Enforcement Workflow**, **Pedestrian Protection During Construction**
 
 ## Verified Sources
 

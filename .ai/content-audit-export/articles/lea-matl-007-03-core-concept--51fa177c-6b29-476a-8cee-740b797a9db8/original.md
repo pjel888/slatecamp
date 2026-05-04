@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Ceiling systems define acoustic performance, fire safety, and maintenance accessibility in interior spaces. The LEA tests your ability to specify ceiling types, grid standards, and fire ratings that match project requirements and building codes.
-
+Classify ceiling finishes (suspended acoustic tile, gypsum board, metal pan, open plenum, wood strip, stretched fabric) by acoustic performance, fire rating, access requirements, and aesthetic effect for different occupancy types.
 ## Core Concept
 
 Ceiling finishes fall into four categories: suspended (T-grid), gypsum board flat, acoustic tile, and metal panels. Suspended systems dominate commercial buildings for ease of access to MEP (mechanical, electrical, plumbing) infrastructure above. The T-bar grid framework, typically 9/16-inch (standard mineral fiber) or 15/16-inch (heavy-duty aluminum) width, supports interchangeable tiles. Standard grid sizes in the Philippines and globally are 600×600mm (2×2 ft) and 600×1200mm (2×4 ft), aligned with ASTM C635 (grid standards) and ISO 354 (acoustic testing). These modular sizes optimize cost and installation speed.
@@ -23,7 +23,7 @@ Standard dimensions align with structural bays. A 600×600mm grid fitted into a 
 | Suspended Tile Size (Standard) | 600×600mm (2×2 ft) | Market Practice | Cost-effective, rapid installation |
 | Suspended Tile Size (Large) | 600×1200mm (2×4 ft) | Market Practice | Fewer joints; faster installation |
 | Noise Reduction Coefficient | 0.50-0.95 | ISO 354 | NRC ≥0.75 for offices; ≥0.65 for retail |
-| Acoustic Absorption Category | Class A per ASTM E84 (Flame spread &lt;25, Smoke &lt;450) or A2-s1, d0 (EU equivleant) | ASTM E84 / ISO 11925-2, EN 13823 | Fire-safety acoustic materials; ASTM E84 is primary standard for IBC/Philippine compliance |
+| Acoustic Absorption Category | Class A per ASTM E84 (Flame spread &lt;25, Smoke &lt;450) or A2-s1, d0 (EU equivalent) | ASTM E84 / ISO 11925-2, EN 13823 | Fire-safety acoustic materials; ASTM E84 is primary standard for IBC/Philippine compliance |
 | Fire Rating (Gypsum/Mineral Tile) | Class A | IBC, ASTM E84 | Flame spread &lt;25 FRA; smoke &lt;450 SMOG |
 | Gypsum Board Thickness | 5/8-inch (15.9mm) Type X | ASTM C1396 | Type X contains glass fiber reinforcement and vermiculite additives providing 1-hour fire resistance; standard gypsum board has no fire rating |
 | Grid Fastening Spacing | 900-1200mm o.c. (standard); ≤600mm from walls in seismic zones; cross runners ≤1500mm spacing | ASTM C635 / ASTM E580 | Prevents sag and deflection; seismic zones require tighter spacing per ASTM E580 |
@@ -63,3 +63,10 @@ Slab-mounted (flat gypsum) ceilings are common in residential projects and low-b
 <WikiMistakeCard mistake="Installing standard gypsum ceiling tiles in high-humidity bathrooms or areas above pools" correction="Specify moisture-rated gypsum (e.g., USG Firecode C water-resistant) or metal panels. Standard tile absorbs water and deteriorates in 3-5 years." />
 
 <WikiMistakeList mistakes={["Calculating grid layout without accounting for trim perimeter and access panel requirements", "Failing to specify return air path height (≥300mm above tiles) for HVAC compliance", "Mixing 9/16-inch and 15/16-inch grids in the same ceiling without clear transitions", "Specifying non-fire-rated ceilings (NRC only) in occupancy types requiring fire rating", "Ignoring MEP coordination; ceiling height may conflict with ductwork, piping, or cable trays"]} />
+
+## Related Articles
+
+See also within Interior Finishes: **lea-matl-007-01-core-concept**, **lea-matl-007-02-core-concept**, **lea-matl-007-04-core-concept**, **lea-matl-007-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

@@ -1,5 +1,9 @@
 # Fixtures and Small Items in Common Areas
-### BP 344 (2024 IRR) — Philippine Architecture Licensure Exam Review
+## Learning Goal
+After reading this article, you should be able to:
+
+Apply minimum fixture count requirements by occupancy group under PD 1096 Rule IX: calculate required water closets, lavatories, urinals (male), and drinking fountains based on occupant load; determine fixture ratio adjustments for assembly, educational, and mercantile occupancies; and apply BP 344 accessibility requirements to all fixtures.
+### BP 344 (2024 IRR) — Philippine Licensure Examination for Architects Review
 
 ---
 
@@ -8,6 +12,18 @@
 You are thirsty after a long trip through a busy transport terminal. The drinking fountain is there — but the spout is at 1,100 mm, and there is no knee clearance underneath. A man on crutches tries to reach the telephone bank, but the coin slot is at 1,350 mm. A woman in a wheelchair wants to check her bank balance at the ATM, but the keypad is at 1,400 mm and there is no audio output. Every "small" fixture is a potential wall. This module is about the measurements that keep these everyday items *actually* usable.
 
 ---
+
+<LawCallout code="bp344">
+
+DFBA-E mnemonic: Drinking fountain spout at 750-900 mm AFF with knee clearance, public telephones max 1,200 mm controls, Benches at 450 mm seat height, ATMs controls at 900-1,200 mm, Exercise equipment requires 900×1,200 mm clear floor space.
+
+</LawCallout>
+
+<ExamTip>
+
+LEA Pattern: Questions on fixtures test specific dimensional recall. Drinking fountain spout: 750-900 mm AFF with knee clearance min 750 mm high × 450 mm deep. Public phone controls: 1,200 mm max. ATM keypad: 900-1,200 mm. Benches: 450 mm seat height with back support.
+
+</ExamTip>
 
 ## CORE MNEMONIC: **"DFBA-E"** — *"Drink From Benches And Exercise"*
 
@@ -173,11 +189,13 @@ Benches must appear **at least** every 30 m along accessible circulation routes.
 
 ### Legal Basis: BP 344 (2024 IRR) Section 12
 
-<Note>
+<LawCallout code="bp344" section="Section 14 - Fixtures">
+
 
 This section covers ATMs as a fixture — the machine's reach, clearance, and hardware. Signage and counter provisions are in Module 4/12.
 
-</Note>
+
+</LawCallout>
 
 ### Complete Specification Table
 
@@ -353,3 +371,10 @@ Draw a simple floor plan of a 6 m × 4 m alcove in a transport terminal containi
 
 *Next: Module 7 — Conflict Matrix: Stairs, Guards & Elevators*
 *Previous: Module 5 — Interior Doors & Hardware*
+
+---
+
+## Cross‑References
+
+**Sanitation And Water Supply**, **Stages And Platforms**, **Accessible Seating In Assembly Areas**, **Pd 1096 Rule Vii Occupancy**
+

@@ -7,6 +7,14 @@
 
 ## Schema Activation: The Basement That Kills the Budget
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Calculate minimum off-street parking requirements by occupancy group, location (CBD vs non-CBD), and building size under PD 1096 Rule XVIII and local zoning ordinances; distinguish parking space dimensions for standard cars, compact cars, and accessible stalls; and apply the 50% reduction allowance for mixed-use developments.
+---
+
+
 You are designing a 10-story condominium in Quezon City. The developer insists on 80 residential units at 48 sq.m. GFA each to maximize sleas revenue. You start with two basement levels.
 
 If you misapply the parking ratio — using the old table instead of the 2004 Revised IRR, or rounding down instead of up — you will either:
@@ -27,9 +35,11 @@ Before memorizing any ratios, understand this fundamental fact: two sets of park
 | **"Old Summary Table"**            | Pre-2004 simplified parking table, widely reproduced in older review materials and confirmed in some board exam question banks | Questions that cite "PD 1096" generically without specifying a table version, or that use the "low-income single-detached" framing |
 | **"2004 Revised IRR Table VII.4"** | Current legally-binding standard (PRBoA-annotated, effective May 2005); amends and expands the original 1977 table             | Questions referencing "highly urbanized areas," specific GFA brackets, jeepney slots, or Table VII.4 directly                      |
 
-<LawCallout code="nbcp" title="introducing urbanization tiers, vehicle-type-specific slots, and GFA-bracket dif">
+<LawCallout code="pd1096" section="Rule VII - Parking Requirements">
+
 
 Reason for Two Versions: The 2004 Revised IRR significantly updated parking requirements from the original 1977 PD 1096 — introducing urbanization tiers, vehicle-type-specific slots, and GFA-bracket differentiation.[web:2][web:4] Many reviewers and exam question banks were written before or without reflecting the 2004 revision. The board exam draws from both pools. This module presents both versions side by side.
+
 
 </LawCallout>
 
@@ -184,7 +194,7 @@ R-5 Condominium Ratios: "8-6-4-1"
 |                                  | Wrong                                 | Right                                                                           |
 | :------------------------------- | :------------------------------------ | :------------------------------------------------------------------------------ |
 | R-5 condominium at 48 sq.m./unit | Use the Old Table multi-family ratios | Use **2004 IRR Division A-2**: 1 per 6 units (≤50 sq.m. bracket)[web:6][web:10] |
-| R-4 townhouse at 50 sq.m./unit   | Use the condominium 8-6-4-1 sclea     | Use **R-4 townhouse table**: 1 per 2 units[web:2][web:4]                        |
+| R-4 townhouse at 50 sq.m./unit   | Use the condominium 8-6-4-1 scale     | Use **R-4 townhouse table**: 1 per 2 units[web:2][web:4]                        |
 | A-1 subdivision: lot 110 sq.m.   | 1 pooled slot per 4 lots              | **1 slot per each lot** (≥100 sq.m. bracket)[web:2][web:4]                      |
 
 ---
@@ -330,6 +340,12 @@ The 4.00 m width (with 1.20 m walkway) provides generous lateral clearance for w
 
 ---
 
+<Warn>
+
+⚠️ Two tables are in circulation! The 'Old Summary Table' (pre-2004) and the '2004 Revised IRR Table VII.4'. Match your answer to the question's framing. If it says 'highly urbanized city' or 'Table VII.4', use the 2004 IRR. If it says 'as per PD 1096' generically, the Old Table is likely expected.
+
+</Warn>
+
 ## Active Recall Challenges
 
 ### Question 1
@@ -341,7 +357,7 @@ An architect is designing an R-5 condominium with 25 residential units, each wit
 **(C)** 5 slots  
 **(D)** 4 slots
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: C — 5 slots**
@@ -354,7 +370,7 @@ An architect is designing an R-5 condominium with 25 residential units, each wit
 - Option D (4 slots) is the classic rounding-down error — the "fraction thereof" rule requires rounding up.
 - Option B (6 slots) would be the result of applying the 1:4 ratio (50–100 sq.m. bracket) — wrong bracket.[web:6][web:10]
 
-</details>
+</Accordion>
 
 ---
 
@@ -367,7 +383,7 @@ A hotel in a highly urbanized city has 25 guest rooms. What is the minimum requi
 **(C)** 3 car slots + 2 bus slots  
 **(D)** 2 car slots + 2 bus slots
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: B — 9 car slots + 2 bus slots**
@@ -380,7 +396,7 @@ A hotel in a highly urbanized city has 25 guest rooms. What is the minimum requi
 - Option C (3 car slots) would represent 25 ÷ 3 rounded down — wrong direction.
 - Option A omits the mandatory bus slots entirely.
 
-</details>
+</Accordion>
 
 ---
 
@@ -393,7 +409,7 @@ Under the Old Summary Table of PD 1096, a low-income single-detached residential
 **(C)** 6 slots  
 **(D)** 8 slots
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: B — 5 slots**
@@ -405,7 +421,7 @@ Under the Old Summary Table of PD 1096, a low-income single-detached residential
 - Option A (4 slots) is the rounding-down error.
 - The 2004 Revised IRR uses different brackets (lots 50–96 sq.m. = 1 per 4 lots), which would yield a different answer. This question uses the Old Table framing, so use the Old Table.[web:2][web:4]
 
-</details>
+</Accordion>
 
 ---
 
@@ -418,7 +434,7 @@ What are the minimum dimensions of a perpendicular automobile parking slot under
 **(C)** 2.40 m x 5.00 m  
 **(D)** 2.50 m x 5.00 m
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: D — 2.50 m x 5.00 m**
@@ -430,7 +446,7 @@ What are the minimum dimensions of a perpendicular automobile parking slot under
 - Option B (2.15 x 6.00) is the **parallel** parking slot dimension — a deliberate distractor.[web:2][web:12]
 - Option C (2.40 x 5.00) appears in some unofficial reviewers — not the IRR figure.[web:4]
 
-</details>
+</Accordion>
 
 ---
 
@@ -443,7 +459,7 @@ A building has 180 total off-street parking slots. How many accessible (PWD) par
 **(C)** 3 slots  
 **(D)** 4 slots
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: C — 3 slots**
@@ -463,7 +479,7 @@ A building has 180 total off-street parking slots. How many accessible (PWD) par
 
 > If you want a simplified heuristic, remember: once you cross 150 slots, you are already at **5 accessible slots**, and any total up to 200 pushes you to **6 accessible slots**, not just 2.[file:16]
 
-</details>
+</Accordion>
 
 ---
 
@@ -503,6 +519,22 @@ A building has 180 total off-street parking slots. How many accessible (PWD) par
 - Never round down, no matter how small the fraction.[web:6][web:10][file:16]
 
 ---
+
+
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Parking ratios vary by occupancy: Group A (1 per unit), Group B/C (1 per 40 m² GFA), Group D/E (1 per 3 beds), Group F (1 per 50 m² GFA). CBD = 50% reduction. Compact cars = max 35% of total. These are all tested.
+
+## Cross‑References
+
+**Wheelchair Maneuvering And Parking Slots**, **Wheelchair Maneuvering And Parking**, **Site Exterior Circulation**, **Allowable Floor Area Increases**
 
 ## Verified Source Mapping
 

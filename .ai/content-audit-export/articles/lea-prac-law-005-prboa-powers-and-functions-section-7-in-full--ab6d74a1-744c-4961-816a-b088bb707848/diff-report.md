@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-law-005-prboa-powers-and-functions-section-7-in-full
 
-Generated: 2026-05-03T13:44:40.575Z
+Generated: 2026-05-04T00:06:16.206Z
 Article ID: ab6d74a1-744c-4961-816a-b088bb707848
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:7657ca09b9986f9c7e71c4091ff657f1c338e86fc060b87a7d1f0ea13cd12ad1`
-- Normalized: `sha256:052cd90a5ccb964b6f9152f0062cbfe91909a22ea6580dc3c3adfb732aa43e81`
-- Candidate: `sha256:17e29f3281af274ebdec6e68983e120e56c99361d32a75c184660a10d1a8b112`
+- Original: `sha256:17e29f3281af274ebdec6e68983e120e56c99361d32a75c184660a10d1a8b112`
+- Normalized: `sha256:cb7b4fad490e69fe083ce9de1a8cfeff06bded26e0b91291079176f70b468bd0`
+- Candidate: `sha256:cb7b4fad490e69fe083ce9de1a8cfeff06bded26e0b91291079176f70b468bd0`
 
 ## Line summary
 
-- Changed lines: 171
-- Inserted lines: 46
+- Changed lines: 165
+- Inserted lines: 3
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

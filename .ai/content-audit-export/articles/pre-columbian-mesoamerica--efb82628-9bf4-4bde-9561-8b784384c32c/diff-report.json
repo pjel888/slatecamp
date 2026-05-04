@@ -1,38 +1,45 @@
 {
   "article_id": "efb82628-9bf4-4bde-9561-8b784384c32c",
   "slug": "pre-columbian-mesoamerica",
-  "generated_at": "2026-05-03T13:45:02.472Z",
-  "old_hash": "sha256:c866b72dcbc617c94c7118623b905a9f5e9c5485f3625876e4eb581ffe1bf52a",
-  "new_hash": "sha256:fbdfe019d6a3aaed75f3b9212ded3ad366e93905313e7be09014cc9745faf3bc",
-  "original_hash": "sha256:c866b72dcbc617c94c7118623b905a9f5e9c5485f3625876e4eb581ffe1bf52a",
-  "normalized_hash": "sha256:851245183fce760339f33add94b02db69271558e30413c083e38de23e79f7ddb",
-  "candidate_hash": "sha256:fbdfe019d6a3aaed75f3b9212ded3ad366e93905313e7be09014cc9745faf3bc",
+  "generated_at": "2026-05-04T00:06:40.289Z",
+  "old_hash": "sha256:fbdfe019d6a3aaed75f3b9212ded3ad366e93905313e7be09014cc9745faf3bc",
+  "new_hash": "sha256:68c8fc1525cd46fd57e64b4b956e0dc80e5376581d60350db1168d766ea7cbdc",
+  "original_hash": "sha256:fbdfe019d6a3aaed75f3b9212ded3ad366e93905313e7be09014cc9745faf3bc",
+  "normalized_hash": "sha256:68c8fc1525cd46fd57e64b4b956e0dc80e5376581d60350db1168d766ea7cbdc",
+  "candidate_hash": "sha256:68c8fc1525cd46fd57e64b4b956e0dc80e5376581d60350db1168d766ea7cbdc",
   "changed": true,
-  "changed_line_count": 62,
+  "changed_line_count": 82,
   "inserted_line_count": 18,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 62,
+    "changed": 82,
     "inserted": 18,
     "deleted": 0,
-    "original_line_count": 61,
-    "candidate_line_count": 79
+    "original_line_count": 79,
+    "candidate_line_count": 97
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

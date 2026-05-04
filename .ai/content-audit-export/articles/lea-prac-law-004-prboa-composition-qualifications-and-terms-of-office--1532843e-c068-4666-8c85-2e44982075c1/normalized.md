@@ -11,9 +11,11 @@ After studying this article, you should be able to:
 
 ---
 
----
-### Structural Framework: The Three-Person Collegial Board
+<ArticleMedia id="media-law004-prboa-org-chart" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA Organizational Structure" description="Organizational chart showing the PRBoA's three-member collegial structure (1 Chairman + 2 Members), their appointment path from IAPOA/UAP → PRC screening → Presidential appointment, and administrative supervision by the PRC." placementIntent="organizational-structure" suggestedSearchQuery="PRBoA organizational chart composition chairman members Philippines architecture" replacementNotes="Create a hierarchical org chart. Top: President of the Philippines (appointment authority). Middle: PRC (administrative supervision). Bottom: PRBoA (Chairman + 2 Members). Side: IAPOA/UAP (nominating body). Show the nomination flow: IAPOA sends 5 nominees → PRC screens to 3 → President appoints 1 per position. Include max tenure annotations (6-5-4 years)." suggestedAsset="Diagram or reference image" />
 
+---
+
+### Structural Framework: The Three-Person Collegial Board
 Section 4 of RA 9266 establishes the Professional Regulatory Board of Architecture as a collegial body composed of a Chairman and two (2) Members—three (3) persons total. This structure was chosen deliberately as a balance: sufficient size to ensure diverse perspective without bureaucratic unwieldiness, and odd number to prevent deadlocked 2-2 votes.
 
 The Board operates under the administrative supervision and control of the Professional Regulation Commission. This means the Commission provides budgetary, human resources, and facility support; establishes administrative procedures; and oversees the Board's operations. However, the Board retains decision-making autonomy over professional and technical matters. The PRBoA is not merely a commission staff committee; it is a collegial body with independent judgment on matters within its jurisdiction.
@@ -23,6 +25,8 @@ The Board operates under the administrative supervision and control of the Profe
 The President of the Philippines appoints the Board members. However, the appointment is not presidential fiat; Section 4 constrains the President's choice through a nominating process. The Commission (on behalf of the President) receives recommendations from the Integrated and Accredited Professional Organization of Architects (IAPOA, now the United Architects of the Philippines, Inc.).
 
 The process works as follows: for each vacant position, IAPOA submits a list of five (5) nominees. The Commission screens these and submits to the President a list of three (3) recommendations chosen from the five (5) nominees. The President then appoints from these three (3). This system prevents the President from entirely disregarding professional input while reserving final appointment authority to the executive branch.
+
+<ArticleMedia id="media-law004-appointment-flow" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA Appointment Process" description="Flowchart of the three-stage PRBoA appointment process: IAPOA/UAP submits 5 nominees → PRC screens to 3 recommendations → President appoints 1. Shows safeguards against political interference and regulatory capture." placementIntent="organizational-structure" suggestedSearchQuery="PRBoA appointment process nomination screening president flowchart" replacementNotes="Create a horizontal flowchart with three stages: Stage 1: IAPOA/UAP (nominating body) → 5 nominees. Stage 2: PRC (screening body) → 3 recommendations. Stage 3: President (appointing authority) → 1 appointee. Label safeguards: 'prevents political operatives' at Stage 3, 'prevents regulatory capture' at Stage 1." suggestedAsset="Diagram or reference image" />
 
 The structural design reflects a nuanced approach to professional self-regulation: the President ensures democratic accountability (the architect cannot make themselves governors), while the IAPOA ensures that regulators remain rooted in professional knowledge and practice realities. Direct appointment by the President would make regulators political operatives; direct election by the profession would create regulatory capture. The three-stage process—nomination by profession, screening by Commission, appointment by President—balances these concerns.
 
@@ -72,13 +76,11 @@ The "one full additional term only" language is significant: partial additional 
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ The IRR, Section 6, specifies the reappointment term is a uniform **three (3) years** for ALL members, regardless of their initial term length. Do not assume the reappointment equals the initial term.... — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: Remember the tenure pattern as **MAX-6-5-4**: Chairman max 6 years, 2-year Member max 5 years, 1-year Member max 4 years. The reappointment is always a flat 3 years.
-[/SLATECAMP_UI_BLOCK]
 
 ### The Oath of Office Requirement
 
@@ -124,26 +126,18 @@ This deadline ensured that regulatory mechanisms would be in place within a reas
 
 ---
 
-\
-Extracted summary:
-- Props: 
-- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 4 (Composition), 5 (Qualifications), and 6 (Terms of Office); RA 9266 IRR, Sections 4-6.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: The IRR, Section 6, specifies the reappointment term is a uniform **three (3) years** for ALL members, regardless of their initial term length. Do not assume the reappointment equals the initial term.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: Remember the tenure pattern as **MAX-6-5-4**: Chairman max 6 years, 2-year Member max 5 years, 1-year Member max 4 years. The reappointment is always a flat 3 years.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 4 (Composition), 5 (Qualifications), and 6 (Terms of Office); RA 9266 IRR, Sections 4-6.
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+Legal Basis: RA 9266 (Architecture Act of 2004), Sections 4 (Composition), 5 (Qualifications), and 6 (Terms of Office); RA 9266 IRR, Sections 4-6.
+</Note>
+<Note>
+The IRR, Section 6, specifies the reappointment term is a uniform **three (3) years** for ALL members, regardless of their initial term length. Do not assume the reappointment equals the initial term.
+</Note>
+<Note>
+Remember the tenure pattern as **MAX-6-5-4**: Chairman max 6 years, 2-year Member max 5 years, 1-year Member max 4 years. The reappointment is always a flat 3 years.
+</Note>
+<Note>
+Legal Basis: RA 9266 (Architecture Act of 2004), Sections 4 (Composition), 5 (Qualifications), and 6 (Terms of Office); RA 9266 IRR, Sections 4-6.
+</Note>
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)

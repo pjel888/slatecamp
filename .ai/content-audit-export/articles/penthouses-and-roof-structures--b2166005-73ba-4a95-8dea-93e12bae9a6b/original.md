@@ -2,6 +2,12 @@
 
 ---
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Determine when a penthouse or roof structure is exempt from height and FAR calculations under PD 1096 Rule VII; identify the three conditions for penthouse exemption (occupancy, area ≤ 1/3 roof area, and height); distinguish roof structures (tanks, towers, mechanical) from habitable penthouses for code compliance purposes.
+
 ## Module Header
 
 | Field | Details |
@@ -34,12 +40,12 @@ PD 1096 establishes two distinct height limits for penthouses measured **above t
 **Tier 1 — Elevator Machine Rooms and Water Tanks (Non-Type V Construction):**
 - Maximum height: **8.40 m** above the roof.
 - Applies to: tank enclosures (water storage, fire reserve tanks) and elevator machine rooms, on buildings that are not Type V construction.
-- Rationlea: elevator overrun clearance and tank capacities require greater headroom that cannot be accommodated within the 3.60 m general limit.
+- rationale: elevator overrun clearance and tank capacities require greater headroom that cannot be accommodated within the 3.60 m general limit.
 
 **Tier 2 — All Other Penthouses:**
 - Maximum height: **3.60 m** above the roof.
 - Applies to: stairway enclosures, mechanical equipment rooms (other than elevator machinery), generator rooms, cooling tower enclosures.
-- Rationlea: standard mechanical headroom is achievable within 3.60 m; exceeding this implies the structure is being used as a habitable space (triggering the "additional storey" conversion).
+- rationale: standard mechanical headroom is achievable within 3.60 m; exceeding this implies the structure is being used as a habitable space (triggering the "additional storey" conversion).
 
 Board exam trap: when a question asks about penthouse height "in all cases," there is no single answer — always identify whether it is for elevator/tank or general use.
 
@@ -283,6 +289,26 @@ D. The conversion is permitted as a change of use under Rule VII, Sec. 702, subj
 
 ---
 
+<LawCallout code="pd1096" section="Rule VII - Penthouses">
+
+
+Per PD 1096, Rule XII, Sec. 1210, penthouses have two height tiers: (1) elevator machine rooms and water tanks in non-Type V construction: max 8.40 m above roof; (2) all other penthouses: max 3.60 m above roof. Additionally, the aggregate area of all penthouses and roof structures must not exceed 1/3 of the supporting roof area. A penthouse used for any purpose other than sheltering mechanical equipment or shaft openings is reclassified as an additional storey — cascading into BHL, GFA, and FAR compliance issues.
+
+
+</LawCallout>
+
+<Warn >
+
+The 8.40 m height limit applies ONLY to elevator machine rooms and water tank enclosures on non-Type V construction. A generator room penthouse at 5.00 m above the roof violates the 3.60 m general limit — not the 8.40 m limit. Always identify the specific penthouse use before selecting the applicable height tier.
+
+</Warn>
+
+<ExamTip >
+
+On the LEA, expect a question that describes a penthouse with both dimensions and use, asking whether it complies. The correct analysis must check ALL three conditions simultaneously: (1) height within applicable tier, (2) aggregate area ≤1/3 of roof, (3) use is mechanical/shaft only. A single violation triggers reclassification.
+
+</ExamTip>
+
 ## Spaced Repetition Reminder
 
 **Session 1 (Today):** Memorize the two penthouse height limits (8.40 m and 3.60 m) and their specific applications. Write the fraction chain "1/3 roof — 1/4 frontage — 1/8 shaft" from memory. Read Exam Trap 1 carefully.
@@ -294,3 +320,10 @@ D. The conversion is permitted as a change of use under Rule VII, Sec. 702, subj
 **Session 4 (Day 14):** Work all three MCQs under timed conditions (90 seconds per question). Explain to a study partner why Option D in Question 3 is wrong. If you can articulate the Sec. 1210.c consequences without notes, this module is mastered.
 
 *These articles are LEA board exam review materials based on PD 1096 (National Building Code of the Philippines) and cross-referenced with IBC provisions for comparative analysis. Always verify against the current edition of the implementing rules and regulations.*
+
+---
+
+## Cross‑References
+
+**Ceiling Heights And Room Sizes**, **Allowable Floor Area Increases**, **Pd 1096 Rule Vii Height Limits**, **Exam Meta Deck Heights**
+

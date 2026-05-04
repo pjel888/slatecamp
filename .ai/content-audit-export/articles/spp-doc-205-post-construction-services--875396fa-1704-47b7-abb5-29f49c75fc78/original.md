@@ -4,11 +4,17 @@
 
 **SPP Document 205** governs **Post-Construction Services** — the professional architectural services rendered after a building has been constructed and turned over to the owner. It replaces the earlier **1979 UAP Doc. 205** and forms part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004).
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the scope of SPP Doc 205 Post-Construction Services: building start-up and commissioning, preparation of record (as-built) drawings, post-occupancy evaluation, facility management support, and maintenance and operation manuals (MOMM); distinguish post-construction services from construction administration under SPP 202; apply the per-diem or fixed-fee compensation basis.
+---
 SPP 205 is strategically placed as the **final document in the core services sequence** (SPP 201 through 205), and together with SPP 206 (Comprehensive Architectural Services), it represents the full lifecycle of architectural involvement from project inception through the productive life of the built structure. Post-construction services are what give full meaning to what the profession calls **Comprehensive Architectural Services** — they close the loop between design intent and long-term building performance.
 
 ***
 
-## Introduction and Policy Rationlea
+## Introduction and Policy rationale
 
 ### 1.1 Beyond Maintenance and Upkeep
 
@@ -272,3 +278,18 @@ SPP 205 is the **final link in the SPP 201–205 service chain**, which together
 - Engaging the **original Architect-of-Record** under SPP 205 (dual capacity) is generally the most cost-effective option for the first 5–10 years after turnover — the Aor's intimate knowledge of the building's design and construction significantly reduces the time and cost of diagnosing operational issues.
 - The **4–6% of gross rentals** fee structure means that for large commercial buildings with high rental income, the monthly Architect's fee can be substantial — owners should evaluate whether the Architect's full Building Administrator scope justifies this rate versus a more limited consulting retainer under PFPE or MDPE.
 - Post-construction evaluation (Section 2.2) should be scheduled **systematically** — ideally at 1 year, 3 years, and 5 years post-turnover — rather than only triggered by visible defects. Early evaluations catch system failures before they become costly, and provide structured feedback to the design team for future projects.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Four post-construction services: (1) Building commissioning and start-up, (2) Record (as-built) drawings, (3) Post-occupancy evaluation (POE), (4) Operations and maintenance manuals. Distinguish: as-built drawings ARE a post-construction service (SPP 205), NOT part of SPP 202. POE is frequently tested as the systematic evaluation of building performance after occupancy.
+
+## Cross‑References
+
+**Spp Doc 206 Comprehensive Architectural Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 209 Architectural Consulting Services Pacs**
+

@@ -1,32 +1,33 @@
 # Content Diff Report: lea-util-002-04-system-types-and-applications
 
-Generated: 2026-05-03T13:45:28.923Z
+Generated: 2026-05-04T00:07:11.997Z
 Article ID: 635013a5-2aa6-4d97-a79a-e4f44d3aa3ee
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
 - Original: `sha256:37641573e203d85a3cea458b5c166c1f825c86ad16f354f4891d80c5ed764fde`
-- Normalized: `sha256:0605cc594181765d674673a8749c512632c71f13736e4ecd09b4428c062e1ad9`
-- Candidate: `sha256:f5d848960f00e5e67f2a9dfafe8e6a055a0aa489ca1fdf05e8f8fcf162b86988`
+- Normalized: `sha256:fcf72eac7d0a013f85c3249824a83e9158e79dc29f9b7099f18a51f23788d549`
+- Candidate: `sha256:fcf72eac7d0a013f85c3249824a83e9158e79dc29f9b7099f18a51f23788d549`
 
 ## Line summary
 
-- Changed lines: 302
-- Inserted lines: 9
-- Deleted lines: 0
+- Changed lines: 247
+- Inserted lines: 0
+- Deleted lines: 32
 
 ## UI block preservation
 
 - UI blocks expected: 12
-- UI blocks preserved: 12
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 12
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 12 preserved UI block(s).
 
 ## Warnings
 

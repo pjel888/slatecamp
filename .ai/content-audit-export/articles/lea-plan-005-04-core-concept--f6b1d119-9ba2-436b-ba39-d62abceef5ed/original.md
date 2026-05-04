@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply RA 10121 DRRM mainstreaming to site planning and CLUPs, conduct hazard mapping (flood, landslide, seismic, tsunami), assess site vulnerability, and integrate resilience measures and climate adaptation into development design.
+
 Disaster Risk Reduction and Management (DRRM) must be mainstreamed into site planning and municipal CLUPs per RA 10121. This means identifying site-level hazards (flood, landslide, seismic, tsunami), assessing vulnerability, and integrating resilience measures into development design and land use policy. Climate change compounds these risks.
+
 
 ## Core Concept
 
@@ -27,6 +31,13 @@ The Philippines is the world's most disaster-prone country (World Bank). Annual 
 **Pattern 3 — Seismic resilience:** "A site is 3 meters from a PHIVOLCS-mapped active fault. What design standard applies?" → 5-meter minimum setback; site violates PHIVOLCS standard; relocation or exceptional engineering required.
 
 <Tip>**DRRM is mainstreamed into CLUPs and site design.** Always ask: What hazards threaten this site? What RA 10121 requirements apply? What design resilience mitigations are needed? Climate change intensifies all hazards.</Tip>
+
+
+**Exam Tip:** RA 10121 mandates DRRM integration into CLUPs. Key concepts: hazard (natural event), vulnerability (susceptibility to harm), risk (hazard × vulnerability × exposure), and resilience (ability to recover). Know the definitions.
+
+## Cross-References
+
+See **LEA-PLAN-001-05** (CLUP Process) for DRRM mainstreaming in CLUPs, **LEA-PLAN-005-03** (Environmental Laws) for EIS and hazard assessment, and **LEA-PLAN-008-01** (Climate Resilience) for climate adaptation planning.
 
 ## Common Mistakes
 

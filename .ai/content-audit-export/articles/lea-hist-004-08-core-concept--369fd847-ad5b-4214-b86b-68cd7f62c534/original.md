@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your knowledge of **Islamic architecture in the Philippines**, particularly in Mindanao and the Sulu Archipelago. You must understand **Maranao** and **Tausug** design traditions, recognize characteristic mosques, and explain how Islamic architecture adapted to the Philippine tropical environment and indigenous building practices.</Callout>
+## Learning Goal
 
+Identify the testable markers of Philippine Islamic architecture — wooden construction, vernacular mosque forms, langgal, torogan — and explain how indigenous materials and Southeast Asian traditions shaped the Islamic architecture of Mindanao and Sulu.
 ## Core Concept
 **Islamic architecture in the Philippines** represents the adaptation of Islamic design principles to Southeast Asian climate, materials, and indigenous traditions. Islam arrived in the Philippine archipelago through merchants and missionaries from Malaysia and Indonesia during the 14th–15th centuries. The primary Islamic communities developed in **Mindanao** (especially the Maguindanao and Lanao regions) and the **Sulu Archipelago** (Tawi-Tawi, Basilan, Sulu Jolo).
 
@@ -53,6 +54,8 @@ Contemporary Philippine Islamic architecture shows increased use of modern mater
 <ExamTip>**Pattern 5: Contemporary Development**
 "Compare traditional wooden Maranao/Tausug mosques with modern Philippine Islamic buildings like the Grand Mosque of Cotabato. What is retained from traditional practice, and what changes with modern materials and urban context?" (Answer: Retained: Islamic spatial requirements (prayer hall, qibla orientation), minaret symbolism, community and social functions. Changed: wooden construction becomes concrete; modest sclea becomes urban monumental sclea; community-built becomes professionally designed; extended eaves and ventilation become climate-controlled interiors.)</ExamTip>
 
+<Callout>The LEA tests your knowledge of **Islamic architecture in the Philippines**, particularly in Mindanao and the Sulu Archipelago. You must understand **Maranao** and **Tausug** design traditions, recognize characteristic mosques, and explain how Islamic architecture adapted to the Philippine tropical environment and indigenous building practices.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Treating Philippine Islamic Architecture as \"Underdeveloped\"" correction="Students sometimes view Philippine Islamic architecture as simpler or less sophisticated than Middle Eastern, Ottoman, or Mughal models. In fact, the design represents sophisticated adaptation to local conditions. The wooden construction, okir carving, and integration with indigenous traditions demonstrate mastery, not inferiority." context="The architecture serves its context perfectly." />
@@ -60,7 +63,6 @@ Contemporary Philippine Islamic architecture shows increased use of modern mater
 <WikiMistakeCard mistake="Confusing Okir with Arabesque" correction="**Okir patterns** (Maranao geometric carving) are not arabesques. Arabesques are interlocking vegetal and geometric patterns covering surfaces continuously. Okir consists of bold, angular, deeply carved geometric forms on wooden frames and decorative elements." context="Confusing these marks a fundamental misunderstanding of Philippine Islamic aesthetics." />
 
 <WikiMistakeList mistakes={["Overlooking the Sheikh Karimul Makhdum Mosque's Historical Significance. The **Sheikh Karimul Makhdum Mosque** (located in Simunul, Tawi-Tawi) is the oldest mosque in the Philippines, established in 1380, and represents early Islamic tradition introduced by Arab missionary Sheikh Karimul Makhdum. Its long history and multiple reconstructions (notably in the 1960s after WWII damage) show continuity of Islamic practice through changing materials and circumstances. Recognizing its significance to Philippine Islamic heritage and to Southeast Asian Islam is essential.", "Treating Climate as Secondary to Islamic Design. Students sometimes prioritize Islamic spatial requirements (prayer hall, minaret, qibla) while treating climate adaptation as cosmetic modification. In Philippine Islamic architecture, climate fundamentally shapes design—elevated structures, steeply pitched roofs, extensive ventilation, and wooden construction are not compromises but intentional responses to environment and available resources. Climate is primary, not secondary.", "Assuming a Single \"Islamic\" Style in the Philippines. The Philippines has distinct Islamic traditions: **Maranao**, **Tausug**, **Maguindanao**, and others. Each has regional variations in material use, decorative practice, and spatial organization. Recognizing regional diversity within Philippine Islamic architecture shows historical sophistication.", "Neglecting the Transition to Modern Materials. Contemporary Philippine Islamic architecture (Grand Mosque of Cotabato, modern madrasas) marks an important shift from community-built wooden structures to professionally designed concrete buildings. This transition reflects urbanization, increased population, and modernization while maintaining Islamic spatial and symbolic traditions. Understanding this evolution demonstrates comprehension of living, changing traditions."]} />
-
 
 ## Key Terms
 
@@ -85,3 +87,10 @@ Contemporary Philippine Islamic architecture shows increased use of modern mater
 **Sultan Haji Hassanal Bolkiah Mosque (Grand Mosque of Cotabato)** — Contemporary large mosque in Cotabato City; construction 2008–2012, inaugurated July 8, 2012; represents modernization of Philippine Islamic architecture; uses concrete and modern materials while maintaining Islamic spatial traditions; named after Brunei's Sultan Hassanal Bolkiah.
 
 <Warn>Do not treat Philippine Islamic architecture as "underdeveloped" or inferior to Middle Eastern, Ottoman, or Mughal models. Wooden construction, okir carving, elevated structures, and steep roofs represent sophisticated adaptation to tropical climate, available materials, and cultural context—not simplicity. The architecture demonstrates mastery of its environment. This design philosophy (function-driven, climate-responsive, culturally integrated) is as sophisticated as monumental stone models. The LEA tests this understanding of regional appropriateness over universal standards.</Warn>
+
+## Related Articles
+
+See also within Islamic Architecture: **lea-hist-004-01-core-concept**, **lea-hist-004-02-core-concept**, **lea-hist-004-05-core-concept**, **lea-hist-004-06-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

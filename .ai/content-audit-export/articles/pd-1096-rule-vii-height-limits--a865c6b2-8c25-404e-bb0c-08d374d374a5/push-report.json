@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:17:49.211Z",
+  "attempted_at": "2026-05-04T00:06:48.357Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "a865c6b2-8c25-404e-bb0c-08d374d374a5",
   "slug": "pd-1096-rule-vii-height-limits",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:406a91a0a6631209141b970af2d2753dbe597c31bd0da5144f3ce7183c972f6e",
-  "original_hash": "sha256:406a91a0a6631209141b970af2d2753dbe597c31bd0da5144f3ce7183c972f6e",
-  "candidate_hash": "sha256:f2a8e1485a7a3cfc06115bfd82d87ceb2920c429a46bbfc16591aabdc5b3c103",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:ac0826a1d0c00ff22dc0b691d8c0173d93b734df27f5b34b947af2830ec3b4a2",
+  "original_hash": "sha256:ac0826a1d0c00ff22dc0b691d8c0173d93b734df27f5b34b947af2830ec3b4a2",
+  "candidate_hash": "sha256:8903c5dc4a0b6c9471389a557a0e81620f117d764cda7783c32ccf050f5a7aee",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T16:38:17.974674+00:00"
 }

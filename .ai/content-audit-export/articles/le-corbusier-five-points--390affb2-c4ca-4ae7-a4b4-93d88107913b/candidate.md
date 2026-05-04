@@ -6,9 +6,19 @@ Identify and apply Le Corbusier's Five Points of Architecture — pilotis, free 
 
 ## The Real-World Scenario (The Hook)
 
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
 You open an LEA question booklet and see a black-and-white photograph of a white box elevated on slender columns, with a long strip window and a garden visible on the roof. The question asks you to identify all five architectural principles this house embodies. You are looking at the Villa Savoye — and you need to name every point and explain why each one matters.
 
@@ -48,9 +58,18 @@ You open an LEA question booklet and see a black-and-white photograph of a white
 | Villa Stein-de Monzie (Les Terrasses) | 1928 | Garches, France | Proportional system based on regulating lines; demonstration of free plan and free facade |
 | Vers une Architecture (book) | 1923 | — | Manifesto containing the "machine for living" argument and call for a new architecture |
 
-<Example>The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.</Example>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
 
-<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+component="ExamTip" status="preserved"]
+<Note>
+**LEA Pattern:** Questions about this architect often present an unfamiliar b...
+</Note>
+
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap 1: Confusing "Ribbon Window" with "Curtain Wall."** A ribbon window (fenêtre en longueur) is a horizontal strip window within a wall, not a full-floor glass curtain wall. Curtain walls came later with Mies van der Rohe's glass skyscrapers. On the LEA, these are distinct concepts.
@@ -100,3 +119,5 @@ D. The International Style (1932)
 
 **The Bauhaus And International Style**, **Mies Van Der Rohe**, **Masters Of The Golden Age**, **Post Modernism**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

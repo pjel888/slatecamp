@@ -290,22 +290,10 @@ D. The conversion is permitted as a change of use under Rule VII, Sec. 702, subj
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
-Extracted summary:
-- Props: code="nbcp" title="PD 1096, Rule XII, Sec. 1210"
-- Text: Per PD 1096, Rule XII, Sec. 1210, penthouses have two height tiers: (1) elevator machine rooms and water tanks in non-Type V construction: max 8.40 m above roof; (2) all other penthouses: max 3.60 m a
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: The 8.40 m height limit applies ONLY to elevator machine rooms and water tank enclosures on non-Type V construction. A generator room penthouse at 5.00 m above the roof violates the 3.60 m general lim
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: On the LEA, expect a question that describes a penthouse with both dimensions and use, asking whether it complies. The correct analysis must check ALL three conditions simultaneously: (1) height withi
-[/SLATECAMP_UI_BLOCK]
 
 ## Spaced Repetition Reminder
 
@@ -325,3 +313,5 @@ Extracted summary:
 
 **Ceiling Heights And Room Sizes**, **Allowable Floor Area Increases**, **Pd 1096 Rule Vii Height Limits**, **Exam Meta Deck Heights**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

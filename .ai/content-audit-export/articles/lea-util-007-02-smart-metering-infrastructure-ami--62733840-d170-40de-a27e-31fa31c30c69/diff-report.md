@@ -1,32 +1,33 @@
 # Content Diff Report: lea-util-007-02-smart-metering-infrastructure-ami
 
-Generated: 2026-05-03T13:45:02.066Z
+Generated: 2026-05-04T00:06:39.859Z
 Article ID: 62733840-d170-40de-a27e-31fa31c30c69
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:36793fc2022bf18b217cb6ef0dd5109daa4c10152fec41ce806d0cbe340b3114`
-- Normalized: `sha256:f3c0c1f51d8d36a63d0f0fe2dcedb7acbd25003c1fd610caeaa842ea71b11eef`
-- Candidate: `sha256:a9068b2019101e4d18c1bb9dbe633758ab2082901e70eff67cec50cca1605098`
+- Original: `sha256:a74a11a01f279b92f8ad8ac8991231c9c20e74e0e02f75218051c016347ab37a`
+- Normalized: `sha256:dfd33b9475b03673ef317f038b51cc91906cb852e8180235e21295105fd411ea`
+- Candidate: `sha256:dfd33b9475b03673ef317f038b51cc91906cb852e8180235e21295105fd411ea`
 
 ## Line summary
 
-- Changed lines: 198
-- Inserted lines: 3
-- Deleted lines: 0
+- Changed lines: 166
+- Inserted lines: 0
+- Deleted lines: 11
 
 ## UI block preservation
 
-- UI blocks expected: 9
-- UI blocks preserved: 9
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks expected: 8
+- UI blocks preserved: 0
+- UI blocks changed/missing: 8
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 8 preserved UI block(s).
 
 ## Warnings
 

@@ -1,5 +1,8 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Analyze ecological site conditions — watershed hydrology, biodiversity, geological hazards, vegetation — and apply findings to site planning decisions, identify PD 1067 water body easements, and integrate ecological constraints with development programming.
+
 Ecological considerations in site planning address water, biodiversity, environmental hazards, and the living systems that surround and integrate with human settlement. This is not environmental law (that belongs to other articles)—this is what a site planner needs to understand about the natural conditions on a site and how those conditions constrain or enable development.
 
 ### Watershed and Hydrology

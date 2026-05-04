@@ -3,8 +3,6 @@
 After reading this article, you should be able to:
 
 Apply environmental regulations for tree preservation and habitat protection during site development: identify protected species under DENR regulations; calculate tree preservation zone radii; determine when an Environmental Compliance Certificate (ECC) is required; and apply DENR buffer requirements for developments near protected areas and waterways.
-**An Immersive LEA Review Module**
-
 ---
 
 ## The Real-World Scenario (The Hook)
@@ -15,12 +13,7 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## Core Concepts
 
-<Tip>
-
-**Memory Aid: "E-E-T = EIS, ECA, Tree Permit."** Three regulatory requirements for flora/fauna in site development: EIS System (PD 1586) — required for projects in ECAs or classified as ECPs; ECA (Environmentally Critical Areas) — watersheds, mangroves, NIPAS areas trigger the ECC requirement; Tree Cutting Permit (PD 705) — separate from building permit, required by DENR before removing any naturally grown tree.
-
-</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0046 component="Tip" status="preserved"]
 
 - **Environmental Impact Statement (EIS) System (PD 1586 & DENR DAO 2003-30):** The Philippine EIS System, not PD 1096, is the governing framework for evaluating ecological impacts of development projects. Projects located in or adjacent to Environmentally Critical Areas (ECAs) — such as watersheds, mangrove swamps, coral reef areas, habitats of endangered species, and national parks — are required to secure an ECC from the DENR-EMB before construction.
 
@@ -34,12 +27,7 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## The Hard Data (Cheat Sheet)
 
-<Example>
-
-**Philippine Application:** A 2-hectare mixed-use development in Antipolo borders a watershed reserve with 40+ mature Narra trees. Before building permit application, the architect must secure: (1) ECC from DENR-EMB (PD 1586), (2) Tree Cutting/Transplant Permit (PD 705), (3) Wildlife Gratuitous Permit if any threatened species are present (RA 9147). Root Protection Zones (RPZ = 12× DBH) must be marked on the site plan.
-
-</Example>
-
+[SLATECAMP_UI_BLOCK:ui_0047 component="Example" status="preserved"]
 
 | Parameter | Requirement / Standard | Governing Law / Regulation |
 |---|---|---|
@@ -60,12 +48,7 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## Crucial Formulas & Computations
 
-<ExamTip>
-
-**LEA Exam Pattern — Agency Confusion Trap:** The LEA frequently tests which agency handles which permit. Remember: DENR-EMB = EIS System and ECC issuance (PD 1586, DAO 2003-30). OBO (Office of the Building Official) = Building permit under PD 1096. If a question says "who issues the ECC?" the answer is DENR-EMB, NOT the OBO.
-
-</ExamTip>
-
+[SLATECAMP_UI_BLOCK:ui_0048 component="ExamTip" status="preserved"]
 
 While flora/fauna preservation is primarily regulatory and qualitative, two quantitative tools frequently appear in EIA studies for site development:
 
@@ -114,12 +97,7 @@ This metric is used in EIA reports to demonstrate the ecological value of existi
 
 ---
 
-
-<Warn>
-
-⚠️ EXAM WARNING: The RPZ (Root Protection Zone) formula is RPZ = 12 × DBH (diameter at breast height, measured at 1.4 m above grade). This is the standard for Philippine EIA studies. Do NOT confuse it with the 5-meter PHIVOLCS fault buffer (geological hazard) or the 3–40 m PD 1067 easement (hydrology). Each has its own formula and regulatory trigger.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0049 component="Warn" status="preserved"]
 
 ## Active Recall Questions
 
@@ -162,3 +140,5 @@ D. 12.00 meters
 
 **Microclimate Analysis**, **Hydrology In Site Planning**, **Topography And Slope Analysis**, **Geological Hazards**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

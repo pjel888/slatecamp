@@ -1,18 +1,26 @@
 {
   "article_id": "146e1210-2b6a-42fb-85c2-3e1b1fd082c2",
   "slug": "masters-of-the-golden-age",
-  "generated_at": "2026-05-03T13:44:11.422Z",
-  "original_hash": "sha256:5948089db49738dab598d2efd5730ae5aff68d8049ff4f8169ff7e4bad4ff36a",
-  "normalized_hash": "sha256:ec595cbe88cb777aa09ead26f35eb4e1901ae5a2d347cb09c35986c12c79194e",
-  "candidate_hash": "sha256:057acbec5e7cb0d0131e8154f31c096a89812aa486d7b8aebb57446ec6079ca5",
+  "generated_at": "2026-05-04T00:05:38.713Z",
+  "original_hash": "sha256:057acbec5e7cb0d0131e8154f31c096a89812aa486d7b8aebb57446ec6079ca5",
+  "normalized_hash": "sha256:0616ea414b8bc29d5d1435450d480d73ff07690ea55f847bb2697c647d21eff2",
+  "candidate_hash": "sha256:0616ea414b8bc29d5d1435450d480d73ff07690ea55f847bb2697c647d21eff2",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

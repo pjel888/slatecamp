@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Pre-construction and post-construction phases are critical for project delivery, legal compliance, and handover. The LEA expects understanding of site investigation, soil testing, permits (building permits per PD 1096), demolition, temporary facilities design, punch lists, substantial completion, final inspections, occupancy permits, as-built drawings, and warranty periods. You must master Philippine regulatory requirements and construction administration best practices.
-
+Identify formwork types (conventional timber, prefabricated panels, slip forms, climbing forms, tunnel forms) by material, reuse potential, and application, and apply NSCP 2015 lateral pressure and deflection limits for formwork design.
 ## Core Concept
 
 Pre-construction planning ensures site readiness, regulatory compliance, and contractor capability. Post-construction verification confirms that the completed building meets design, code, and contractual requirements before occupancy.
@@ -77,3 +77,10 @@ The LEA evaluates pre/post-construction knowledge through:
 <WikiMistakeCard title="Inadequate Soil Testing" body="A geotechnical investigation finds bearing capacity of 150 kPa, but the design (prepared elsewhere) assumes 200 kPa. Foundation settlement occurs post-occupancy, requiring underpinning and major repairs. Proper pre-design investigation prevents foundation disasters." />
 
 <WikiMistakeList items={["Occupying the building without occupancy permit (CO)—legally prohibited; owner/tenant are liable. Final inspection must be completed and violations corrected before CO issuance.", "Failing to document punch list items and closure—contractor disputes arise post-occupancy; proper documentation protects all parties. Punch list must be signed off before final payment.", "As-built drawings incomplete or missing—operations, maintenance, and future renovation suffer. As-builts must accurately reflect field changes, rebar placement, MEP routing, etc.", "Underestimating permit approval time—expect 30–60 days post-application. Plan accordingly; expedited processing (if available) requires additional fees and coordination.", "Ignoring environmental clearances (ECC, DENR permits for hazardous materials)—compliance is mandatory. Asbestos/lead abatement must be documented by certified contractors."]} />
+
+## Related Articles
+
+See also within Construction Systems and Methods: **lea-matl-004-06-core-concept**, **lea-matl-004-07-core-concept**, **lea-matl-004-09-core-concept**, **lea-matl-004-10-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

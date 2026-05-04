@@ -54,12 +54,14 @@ Characteristics:
 - Examples: luxury residential subdivisions, high-end condominiums, exclusive golf course communities
 
 Open-market housing has no affordability requirement, no balanced housing obligation (except insofar as RA 7279 requires developers to produce an equivalent value of socialized housing), and is entirely driven by market demand and supply.
+<ArticleMedia id="media-lea-plan-003-02-what-you-need-to-know-fo" a type="image" caption="Housing Delivery Methods — On-Site, Off-Site, Joint Venture, CMP, NHA Direct, Pag-IBIG" description="Flowchart diagram showing six housing delivery methods for socialized and economic housing in the Philippines: (1) On-Site Balanced Housing (developer builds within same project), (2) Off-Site Balanced Housing (separate location), (3) Joint Venture with NHA, (4) Bond Contribution to NHA, (5) Community Mortgage Program via SHFC, and (6) Pag-IBIG Direct Purchase. Arrows indicate regulatory pathway and financing flow." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-003-02-what-you-need-to-know-fo" a type="image" caption="Philippine Housing Classification Comparison — Socialized, Economic, Low-Cost, Open-Market" description="Four-panel comparison chart showing the four Philippine housing classifications: Socialized (BP 220 — 72 sqm lot, 22 sqm floor, <₱15K/mo income), Economic (BP 220 — 100 sqm lot, 42 sqm floor, ₱15-40K/mo), Low-Cost (industry standard — 100-200 sqm lot, 60-100 sqm floor, ₱40-60K/mo), and Open-Market (market-determined, >₱60K/mo). Each panel shows minimum lot area, floor area, price range, financing source, and primary developer type. Color-coded by affordability tier." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
 ### Housing Classification Comparison Table
 
-<WikiExamTable headers={["Classification","Target Income Range","Min. Lot (BP 220)","Min. Floor (BP 220)","Price Range","Financing","Primary Developer"]} rows={[{"Classification":"Socialized","Target Income Range":"<₱15,000/month","Min. Lot (BP 220)":"72 sq.m. (new) / 28 sq.m. (infill)","Min. Floor (BP 220)":"22 sq.m.","Price Range":"₱600K–₱1.5M","Financing":"Pag-IBIG (socialized loan), NHA direct grants","Primary Developer":"NHA, private developers (per balanced housing)"},{"Classification":"Economic","Target Income Range":"₱15K–₱40K/month","Min. Lot (BP 220)":"100 sq.m.","Min. Floor (BP 220)":"42 sq.m.","Price Range":"₱1.5M–₱3M","Financing":"Pag-IBIG (standard loan), SSS, commercial banks","Primary Developer":"Private developers, some NHA projects"},{"Classification":"Low-Cost","Target Income Range":"₱40K–₱60K/month","Min. Lot (BP 220)":"None (industry: 100–200 sq.m.)","Min. Floor (BP 220)":"None (industry: 60–100 sq.m.)","Price Range":"₱2M–₱4M","Financing":"Pag-IBIG, SSS, commercial banks","Primary Developer":"Private developers, builders"},{"Classification":"Open-Market","Target Income Range":"₱60K+/month (no ceiling)","Min. Lot (BP 220)":"None (market-determined)","Min. Floor (BP 220)":"None (market-determined)","Price Range":"₱4M–₱50M+","Financing":"Commercial banks, developer financing","Primary Developer":"Large developers, luxury brands"}]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
 
 ---
 
@@ -157,10 +159,22 @@ Another example:
 
 ### Common Distractors and Mistakes
 
-<WikiMistakeList mistakes={[{"mistake":"Low-cost housing is a statutory classification in BP 220.","fact":"BP 220 defines only socialized (72/28 lot, 22 floor) and economic (100 lot, 42 floor) housing. Low-cost is an industry-recognized segment between economic and open-market, but not a legal classification."},{"mistake":"Economic housing has a minimum lot area of 72 sq.m.","fact":"72 sq.m. is socialized housing (new subdivision). Economic housing is 100 sq.m. minimum lot area under BP 220."},{"mistake":"Socialized housing on-site or off-site changes its classification from socialized to something else.","fact":"On-site and off-site are delivery methods, not classifications. Both deliver socialized housing; the location and financing source do not change the legal classification."},{"mistake":"NHA is responsible for financing end-buyer housing loans.","fact":"NHA builds housing; Pag-IBIG/HDMF finances loans to individual buyers. These are distinct functions."},{"mistake":"A private developer building a luxury subdivision has no responsibility to produce affordable housing.","fact":"RA 7279 and RA 10884 require open-market developers to produce balanced housing equivleant to 15–20% of project cost as socialized units."},{"mistake":"The Community Mortgage Program (CMP) is a classification of housing.","fact":"CMP is a delivery method (SHFC financing for community land purchases) that can deliver socialized or economic housing. It is not itself a classification."}]} />
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]
 
 ---
 
 ### Summary: Housing Taxonomy in the Philippines
 
 The Philippine housing system layers four classifications (socialized, economic, low-cost, open-market) with multiple delivery methods (government, private, CMP, Pag-IBIG, etc.). Understanding this two-dimensional structure — what is built (classification) versus how it is built and financed (delivery) — is the key to housing policy analysis on the LEA. Students who confuse classification with delivery method consistently misread case studies and policy questions.
+
+
+---
+## Cross-References
+
+- **Senior Living and Low-Income Housing**: Related article on Senior Living and Low-Income Housing
+- **Dormitories and Student Housing**: Related article on Dormitories and Student Housing
+- **Philippine Housing Law Framework**: Related article on Philippine Housing Law Framework
+- **Housing finance in the Philippines operates through**: Related article on Housing finance in the Philippines operates through
+- **Housing production methods describe HOW**: Related article on Housing production methods describe HOW
+- **Special Housing Programs**: Related article on Special Housing Programs
+- **Philippine Government Housing Agencies**: Related article on Philippine Government Housing Agencies

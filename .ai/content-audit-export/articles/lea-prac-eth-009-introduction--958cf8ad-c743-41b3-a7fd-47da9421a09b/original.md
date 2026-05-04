@@ -1,4 +1,12 @@
 ## Introduction
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Describe the PRBoA's quasi-judicial authority to investigate complaints against licensed architects under RA 9266 and the Code of Ethical Conduct.
+- Identify the four phases of the disciplinary process: complaint filing, formal investigation, administrative hearing, and appeal.
+- Explain the grounds for discipline, range of penalties (from reprimand to revocation), and the appeals process.
+- Apply disciplinary procedures to LEA scenarios involving professional misconduct, ethics violations, and Board jurisdiction.
 
 The Professional Regulatory Board of Architecture (PRBoA), operating under the Professional Regulation Commission (PRC), possesses quasi-judicial authority to investigate complaints against licensed architects and licensed architects-in-training (RLAs). Understanding the disciplinary process is critical for LEA candidates because it establishes the mechanisms through which professional standards are enforced and protects both the public and the profession.
 
@@ -20,14 +28,14 @@ A complaint against a registered architect or RLA may be filed by:
 
 Under RA 9266 Section 39 and PRC Resolution No. 2009-688 (Rules on Administrative Investigations), a formal complaint must contain:
 
-<LeartBox type="requirement">
+<Callout type="requirement">
 1. **Complainant Identification** — Full name, address, and contact information
 2. **Respondent Identification** — Professional license number and registration status
 3. **Factual Narration** — Detailed chronological account of alleged violations
 4. **Documentary Evidence** — Supporting attachments (contracts, emails, photographs, affidavits)
 5. **Legal Basis** — Specific provisions of RA 9266, the Code of Ethics, or SPP allegedly violated
 6. **Prayer for Relief** — Requested disciplinary action (investigation, suspension, revocation)
-</LeartBox>
+</Callout>
 
 ### Location of Filing
 
@@ -139,9 +147,9 @@ The hearing operates under **relaxed evidentiary standards** (compared to court 
 - **Burden of proof** is "preponderance of the evidence" (more likely than not)
 - **Standard of review** focuses on whether violations occurred, not criminal intent
 
-<LeartBox type="important">
+<Callout type="important">
 The PRBoA hearing is **administrative**, not criminal. The respondent's constitutional rights (Miranda, counsel, due process) apply, but the rules of evidence are more flexible. The goal is truth-finding, not prosecution.
-</LeartBox>
+</Callout>
 
 ### Rights of the Respondent
 
@@ -240,9 +248,9 @@ The Court of Appeals **will not reconsider**:
 - **Discretionary penalties** unless grossly disproportionate
 - **Professional judgments** regarding standards violation
 
-<LeartBox type="important">
+<Callout type="important">
 On appeal, the court presumes the PRBoA decision is correct unless the appellant proves legal error. This is a deferential standard of review that respects the board's expertise in professional regulation.
-</LeartBox>
+</Callout>
 
 ### Supreme Court Review (Rare)
 
@@ -326,7 +334,7 @@ Candidates should master these concepts for the LEA examination:
 5. **Appeal Mechanisms:** How to challenge disciplinary decisions and available grounds
 6. **Professional Standards:** What conduct violates the Code of Ethics or SPP
 7. **Proportionality:** How discipline relates to violation severity and circumstances
-8. **Policy Rationlea:** Why disciplinary processes protect public and profession
+8. **Policy Rationale:** Why disciplinary processes protect public and profession
 
 ## Summary: The Disciplinary Process as Professional Safeguard
 
@@ -339,12 +347,23 @@ The PRBoA disciplinary process serves dual purposes:
 
 Understanding this process is essential for ethical practice because it establishes the mechanisms through which professional obligations are enforced and violations are remedied.
 
----
 
+## Related Articles
+
+- [RA 9266: Legal Framework](lea-prac-law-001)
+- [Prohibited Acts and Penalties](lea-prac-law-003)
+- [Grounds for Suspension and Revocation](lea-prac-eth-008)
+- [Non-Poaching and Professional Courtesy](lea-prac-eth-006)
+- [Obligations to Contractors](lea-prac-eth-007)
+- [Conflict of Interest](lea-prac-eth-010)
+- [Scope of Practice](lea-prac-law-002)
+- [Signing and Sealing Prohibition](lea-prac-law-017)
+
+---
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering complaint, investigation, hearing, and appeal phases

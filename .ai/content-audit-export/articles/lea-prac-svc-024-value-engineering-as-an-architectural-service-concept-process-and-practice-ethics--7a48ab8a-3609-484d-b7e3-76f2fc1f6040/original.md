@@ -1,9 +1,17 @@
 ## Value Engineering as an Architectural Service: Concept, Process, and Practice Ethics
 
-<SPP206RefServices />
+## Learning Goal
 
-Value Engineering represents a specialized architectural service that optimizes project value by analyzing design and construction cost relationships. This service diverges from traditional architectural practice by emphasizing cost reduction alongside design quality. Understanding value engineering's concept, methodology, and ethical boundaries is essential for architects offering this service.
+After studying this article, you should be able to:
 
+- Define value engineering (VE) and its purpose in architectural practice.
+- Describe the VE process: information phase, creative phase, evaluation phase.
+- Explain the ethical considerations when performing VE as an architect.
+- Distinguish value engineering from cost cutting.
+
+
+
+---
 ### Understanding Value Engineering
 
 Value Engineering (VE) is a systematic process for analyzing project cost and identifying opportunities for cost reduction without compromising essential performance or quality. The process involves examining every design element to determine whether it delivers necessary function relative to its cost.
@@ -51,3 +59,37 @@ Value engineering demand fluctuates with market conditions. During tight budget 
 Organizations like the Society of American Value Engineers (SAVE) establish professional standards for value engineering practice. Architects interested in value engineering should understand these standards and consider certification in value engineering methodology.
 
 Value engineering represents an important specialized service supporting client interests in cost optimization. When practiced ethically with commitment to design quality and transparent client communication, value engineering adds significant value to architectural practice and client project outcomes.
+
+<SPP206RefServices />
+
+<ProcessFlow>
+<ol>
+  <li><strong>Project Definition</strong> — Problem identification</li>
+  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
+  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
+  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
+  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
+  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
+</ol>
+</ProcessFlow>
+
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

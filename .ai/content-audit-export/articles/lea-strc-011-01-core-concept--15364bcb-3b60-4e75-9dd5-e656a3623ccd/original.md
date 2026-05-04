@@ -1,6 +1,16 @@
 ## What You Need to Know for the LEA
-Pile types are classified by load transfer mechanism and installation method. You must distinguish end-bearing piles from friction piles, identify batter and sheet piles by function, and know the threshold separating piles from caissons: < 600 mm diameter = pile; ≥ 600 mm = caisson.
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Distinguish between end-bearing piles and friction piles by load transfer mechanism
+- Distinguish between driven piles and bored (drilled) piles by installation method
+- Define batter piles and sheet piles and state their functions
+- Explain the pile vs. caisson distinction (≥600 mm diameter threshold)
+- Identify the role of pile caps in distributing superstructure loads
+
+---
 ## Core Concept
 A pile is a slender structural element driven or drilled into soil to transfer loads from a structure to deeper, more competent strata. Piles are classified by two criteria: _load transfer mechanism_ and _installation method_.
 
@@ -37,7 +47,7 @@ This distinction reflects a change in behavior: larger diameter shafts exhibit d
 | Bored (drilled) | Friction or end-bearing | Cast in place | Soft/loose overburden to firm base | All soil types; no lateral densification |
 
 ## Philippine Practice Context
-In the Philippines, driven piles and bored piles are both prevleant, depending on project sclea and soil profile. Metro Manila alluvial deposits favor friction piles to depths of 25–40 m. Mindanao volcanic soils often have competent strata at shallower depths, favoring end-bearing selection. Typhoon-prone regions and bridge design frequently employ batter piles to resist lateral wind and seismic loads. Cofferdam construction using sheet piles is standard for river and coastal projects.
+In the Philippines, driven piles and bored piles are both prevalent, depending on project scale and soil profile. Metro Manila alluvial deposits favor friction piles to depths of 25–40 m. Mindanao volcanic soils often have competent strata at shallower depths, favoring end-bearing selection. Typhoon-prone regions and bridge design frequently employ batter piles to resist lateral wind and seismic loads. Cofferdam construction using sheet piles is standard for river and coastal projects.
 
 ## How It's Tested
 1. **Pile Type Identification:** Given a soil profile with a hard stratum at 15 m depth and soft clay above, identify the optimal pile type and justify by load transfer mechanism.
@@ -48,5 +58,12 @@ In the Philippines, driven piles and bored piles are both prevleant, depending o
 **Memory Aid:** End-bearing piles say "I stand on a rock"; friction piles say "I hug the soil." Batter piles lean to fight sideways forces. Sheet piles lock arm-in-arm to hold back the earth wall. Diameter 600 mm is the magic threshold: below is a pile, at or above is a caisson.
 </Tip>
 
+
+## Related Articles
+
+See also: **Foundations** (lea-strc-011-02) for the overall foundation classification, **Geotechnical Engineering** (lea-strc-011-03) for soil properties that govern pile selection, and **Load Types** (lea-strc-001-02) for the loads piles must resist.
+
 ## Common Mistakes
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+
 <WikiMistakeList mistakes={["Confusing batter piles with bored piles; batter refers to inclination (1:6–1:12), not installation method.","Assuming all drilled piles are cast in place with reduced skin friction; proper borehole preparation and tremie placement preserve friction capacity.","Stating that sheet piles transfer load to the foundation; they are a retaining system, not a load-bearing element.","Using pile and caisson interchangeably without respect to the ≥ 600 mm diameter threshold that governs excavation, integrity testing, and behavior.","Omitting pile caps in load distribution sketches; caps are mandatory to distribute superstructure load across multiple piles."]} />

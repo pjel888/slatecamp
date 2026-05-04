@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply participatory planning methods — community engagement, dialogue facilitation, consensus-building, local knowledge integration — to community development scenarios, distinguish top-down from bottom-up approaches, and apply RA 7160 participation mandates.
+
 Participatory planning and community-led development center the voices and agency of residents—especially marginalized communities—in planning decisions. Rather than planners imposing plans from above, participatory approaches build plans through dialogue, consensus-building, and the integration of local knowledge. This is both a legal mandate (RA 7160 Local Government Code, RA 9266 Architecture Act of 2004 (Environmental Planner profession)) and a theoretical foundation for equitable, legitimate urban planning.
+
 
 ## Core Concept
 
@@ -38,6 +42,13 @@ RA 7160's devolution of planning power to LGUs inherently makes participatory pl
 3. **Design charrette scenario** — "A municipality is planning a new mixed-use waterfront district. What is the advantage of a design charrette over a traditional planning process?" → Answer: A charrette brings all stakeholders (residents, business owners, city planners, developers) into the same room simultaneously to develop design concepts together, rather than sequential stakeholder consultations that may miss integration opportunities. Tests understanding of the charrette method's specific value.
 
 <Tip>Memory aid: **Advocacy = Advocacy Planning by Paul Davidoff = advocate for underrepresented voices**. **Communicative = Communicative Planning by Patsy Heleay = planning through dialogue and communication**. **PRA = Participatory Rural Appraisal by Robert Chambers = community mapping and ranking tools**. **Charrette = intensive collaborative design workshop**.</Tip>
+
+
+**Exam Tip:** Arnstein's Ladder of Citizen Participation: (1) Manipulation, (2) Therapy, (3) Informing, (4) Consultation, (5) Placation, (6) Partnership, (7) Delegated Power, (8) Citizen Control. Rungs 1-2 = non-participation, 3-5 = tokenism, 6-8 = citizen power. Know the rungs.
+
+## Cross-References
+
+See **LEA-PLAN-001-02** (Planning Classifications) for advocacy and communicative planning approaches, **LEA-PLAN-007-05** (LGU Planning) for RA 7160 participation mandates, and **LEA-PLAN-003-06** (Informal Settlements) for community-led upgrading.
 
 ## Common Mistakes
 

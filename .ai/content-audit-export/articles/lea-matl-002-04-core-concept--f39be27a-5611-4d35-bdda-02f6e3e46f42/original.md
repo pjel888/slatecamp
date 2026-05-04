@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Natural stone masonry represents a premium material category with distinct properties and standards. The LEA tests your knowledge of stone types, classification by hardness and durability, ASTM specifications, and Philippine stone resources. Expect questions on Mohs hardness, water absorption limits, and appropriate applications for different stone types.
-
+Identify natural stone types (granite, marble, limestone, sandstone, slate) by their geological origin, physical properties, durability, and appropriate architectural applications in the Philippine context.
 ## Core Concept
 
 Natural stone (granite, marble, limestone, sandstone, slate, travertine) offers superior durability, fire resistance, and aesthetic qualities compared to manufactured units. However, each stone type has different strength, hardness, and durability characteristics requiring careful material selection. Stone masonry is typically used as veneer or cladding rather than as primary load-bearing structure in modern construction.
@@ -95,9 +95,9 @@ Travertine is a sedimentary rock (calcium carbonate) formed from hot springs and
 
 **Limitations:** High porosity and water absorption make it unsuitable for wet or humid exposures. In the Philippines' tropical climate, travertine requires sealing and maintenance to prevent water damage and biological growth.
 
-## Mohs Hardness Sclea
+## Mohs Hardness Scale
 
-The Mohs hardness sclea (1—10) ranks minerals by scratch resistance:
+The Mohs hardness scale (1—10) ranks minerals by scratch resistance:
 
 1. Talc (softest)
 2. Gypsum
@@ -188,12 +188,15 @@ Typical questions present a building facade or interior finish application and a
   correction="Mohs hardness and compressive strength are different properties. A material can be hard but weak (e.g., some slate). Marble (Mohs 3—4) may have lower hardness but higher compressive strength than some sandstones. Always check both properties for design."
   context="Designers sometimes select stone based on hardness alone, overlooking compressive strength and absorption issues." />
 
-<WikiMistakeList
-  title="Common Material Selection and Installation Errors"
-  items={[
-    "Using high-absorption stone (limestone >3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (≤0.4% absorption) or selead marble is required for external exposure.",
-    "Specifying marble for exterior applications: Marble's acid sensitivity and higher absorption make it unsuitable for exposed exterior in wet or industrial environments. Reserve marble for protected interior use.",
-    "Confusing water absorption with durability: A stone with 2% absorption might be durable if properly selead; a stone with 0.3% absorption is inherently durable. Always verify both absorption and protection measures.",
+ity and higher absorption make it unsuitable for exposed exterior in wet or industrial environments. Reserve marble for protected interior use.",
+    "Confusing water absorption with durability: A stone with 2% absorption might be durable if properly sealed; a stone with 0.3% absorption is inherently durable. Always verify both absorption and protection measures.",
     "Neglecting back-up wall water management in stone veneer: Stone veneer does not stop water penetration; water will reach the backup wall at ventilation or control joint gaps. Proper drainage plane and flashing behind veneer is critical.",
-    "Assuming all Romblon marble is equivleant: Romblon marble quality varies by quarry and depth; some sources have lower compressive strength or higher absorption. Verify material test reports, especially for critical applications."
+    "Assuming all Romblon marble is equivalent: Romblon marble quality varies by quarry and depth; some sources have lower compressive strength or higher absorption. Verify material test reports, especially for critical applications."
   ]} />
+
+## Related Articles
+
+See also within Masonry and Concrete: **lea-matl-002-03-core-concept**, **lea-matl-002-05-core-concept**, **lea-matl-002-06-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

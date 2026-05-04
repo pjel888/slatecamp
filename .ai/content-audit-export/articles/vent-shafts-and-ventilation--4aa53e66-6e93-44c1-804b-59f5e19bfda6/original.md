@@ -2,6 +2,12 @@
 
 ---
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Calculate minimum vent shaft dimensions for interior rooms without direct exterior exposure under PD 1096 Rule VIII; apply the 10% maximum vent shaft coverage of required lot area; determine when mechanical ventilation is an acceptable alternative to a vent shaft; and distinguish natural ventilation requirements from mechanical ventilation minimum air changes.
+
 ## Header Block
 
 | Field | Detail |
@@ -28,7 +34,7 @@ This scenario is not hypothetical — it describes one of the most common compli
 
 ### Principle 1 — Vent Shaft Cross-Sectional Area is Dynamic, Not Fixed (Sec. 809-a)
 
-The cross-sectional area of a vent shaft is not a single number — it scleas with the height of the shaft. The rule is:
+The cross-sectional area of a vent shaft is not a single number — it scales with the height of the shaft. The rule is:
 
 **Cross-sectional area ≥ 0.10 sq.m × height of shaft (in meters)**
 
@@ -65,7 +71,7 @@ Ventilation skylights are used when a room's required windows cannot face an ext
 - The **glass area** of the skylight must be ≥ the glass area of the window(s) it replaces.
 - The **net free area** of movable sashes or louvers in the skylight must be ≥ the total openable area of the window(s) it replaces.
 
-This is a substitution test, not a reduction. The skylight may not provide less light or ventilation than the windows it is replacing. If a skylight cannot achieve equivleant openable area, **approved artificial ventilation of equivleant effectiveness** may be used as an alternative — but the burden of proof ("equivleant effectiveness") rests on the design professional.
+This is a substitution test, not a reduction. The skylight may not provide less light or ventilation than the windows it is replacing. If a skylight cannot achieve equivalent openable area, **approved artificial ventilation of equivalent effectiveness** may be used as an alternative — but the burden of proof ("equivalent effectiveness") rests on the design professional.
 
 ### Principle 5 — Artificial Ventilation Air Change Rates Differ Above and Below Grade (Sec. 811)
 
@@ -88,13 +94,13 @@ The Philippine NBCP approach is prescriptive and metric-specific. The American a
 |---|---|---|
 | **Vent Shaft Area** | ≥ 0.10 sq.m per meter height; min 1.00 sq.m; min 600 mm dimension | No prescriptive shaft area formula; shaft sizing per IMC duct sizing tables |
 | **Shaft Top Coverage** | Skylight or fixed louvers with free area ≥ max shaft area | IMC Sec. 501: exhaust systems; shaft termination per IMC Sec. 504 |
-| **Air Duct (alternative)** | ≥ 0.30 sq.m area; ≥ 300 mm dimension; ≥ 300 mm above shaft bottom/street | IMC provides duct sizing tables; no equivleant single metric |
-| **Ventilation Skylights** | Glass area ≥ replaced window; movable sash free area ≥ openable window area | IBC Sec. 1203.2: skylights as ventilation source permitted with equivleant openable area |
+| **Air Duct (alternative)** | ≥ 0.30 sq.m area; ≥ 300 mm dimension; ≥ 300 mm above shaft bottom/street | IMC provides duct sizing tables; no equivalent single metric |
+| **Ventilation Skylights** | Glass area ≥ replaced window; movable sash free area ≥ openable window area | IBC Sec. 1203.2: skylights as ventilation source permitted with equivalent openable area |
 | **Artificial Ventilation** | ≥ 3 ACH above grade; ≥ 6 ACH below grade | ASHRAE 62.1 Table 6.2.2.1: 0.06–0.12 cfm/sq.ft + per-person rates by occupancy type |
 | **Method of Expression** | Air Changes per Hour (ACH) — simple and prescriptive | cfm/person AND cfm/sq.ft — occupancy-specific and more granular |
 | **Below-Grade Spaces** | ≥ 6 ACH (double the above-grade rate) | ASHRAE 62.1 specifies rates per occupancy; no blanket "double below-grade" rule |
 | **Industrial/Equipment Rooms** | Explicitly required (Sec. 811-a) | IMC Table 403.3 provides specific rates for boiler rooms, generator rooms, etc. |
-| **Equivleant Ventilation** | "Approved artificial ventilation of equivleant effectiveness" | ASHRAE 62.1 alternative compliance methods available |
+| **equivalent Ventilation** | "Approved artificial ventilation of equivalent effectiveness" | ASHRAE 62.1 alternative compliance methods available |
 | **Window-to-Floor Ratio** | Addressed in Sec. 801 (not Sec. 809-811); typically 1:10 for light, 1:20 for ventilation | IBC Sec. 1203.1: natural ventilation through exterior openings ≥ 4% of floor area |
 
 **Key Insight:** The Philippine system's use of ACH (air changes per hour) is conceptually simpler than the ASHRAE 62.1 approach and is the dominant framework for board exam questions. When a board question asks about ventilation rates, think ACH — not cfm.
@@ -117,7 +123,7 @@ The Philippine NBCP approach is prescriptive and metric-specific. The American a
 | **Air Duct (alternative)** | Duct opening height above street/court | ≥ 300 mm |
 | **Ventilation Skylight** | Glass area requirement | ≥ glass area of replaced window(s) |
 | **Ventilation Skylight** | Movable sash/louver free area | ≥ openable area of replaced window(s) |
-| **Ventilation Skylight** | Alternative if skylight insufficient | Approved artificial ventilation of equivleant effectiveness |
+| **Ventilation Skylight** | Alternative if skylight insufficient | Approved artificial ventilation of equivalent effectiveness |
 | **Artificial Ventilation** | Offices, stores, restaurants, markets, factories, workshops, machinery rooms — above grade | ≥ 3 ACH |
 | **Artificial Ventilation** | All rooms — below grade | ≥ 6 ACH |
 | **Artificial Ventilation** | Industrial/heating equipment rooms | Required regardless (Sec. 811-a) |
@@ -213,9 +219,11 @@ A vent shaft in a five-storey building is 16.50 m tall. What is the minimum requ
 
 > **Answer: B**
 >
-<LawCallout code="nbcp">
+<LawCallout code="pd1096" section="Rule VIII - Ventilation">
+
 
 Per PD 1096 Sec. 809-a, the required cross-sectional area = 0.10 sq.m × 16.50 m = 1.65 sq.m. This exceeds the absolute minimum of 1.00 sq.m, so 1.65 sq.m governs. The minimum least dimension is always ≥ 600 mm per Sec. 809-a, regardless of area. Option A applies the absolute minimum incorrectly (the formula result of 1.65 sq.m is larger and controls). Option C uses the wrong minimum dimension (300 mm belongs to the horizontal air duct, not the shaft). Option D uses neither the correct area nor the correct minimum dimension.
+
 
 </LawCallout>
 
@@ -232,9 +240,11 @@ A vent shaft in a commercial building terminates at the roof with a fixed louver
 
 > **Answer: C**
 >
-<LawCallout code="nbcp" title="it is non-compliant. The code does not permit a reduction below the maximum requ">
+<LawCallout code="pd1096" section="Rule VIII - Vent Shafts">
+
 
 Per PD 1096 Sec. 809-b, when the shaft does not open directly to outer air, it must be covered by a skylight or fixed louvers with a net free area ≥ the maximum required cross-sectional area of the shaft. The maximum required area here is 1.80 sq.m. The 1.20 sq.m louvered panel provides only 67% of the required free area — it is non-compliant. The code does not permit a reduction below the maximum required shaft area for the covering. Option D is wrong because fixed louvers are explicitly permitted by Sec. 809-b alongside skylights.
+
 
 </LawCallout>
 
@@ -251,9 +261,11 @@ An architect is designing a below-grade workshop in a mixed-use building. The sp
 
 > **Answer: C**
 >
-<LawCallout code="nbcp">
+<LawCallout code="pd1096" section="Rule VIII - Light Courts">
+
 
 ≥ 3 ACH for spaces above grade, and ≥ 6 ACH for rooms below grade. A below-grade workshop falls into the 6 ACH category regardless of the type of work performed therein. The proposed 4 ACH meets the above-grade threshold but falls short of the below-grade requirement. Option A applies the above-grade rate to a below-grade space. Option D invents a 10 ACH rate not found in Sec. 811 (though higher rates may apply under sector-specific codes such as DOH standards for hospital spaces). The correct answer is C.
+
 
 </LawCallout>
 
@@ -267,3 +279,18 @@ An architect is designing a below-grade workshop in a mixed-use building. The sp
 > **Day 14:** Focus on Exam Traps 1–3. Draft a worked example showing shaft area for a 20.00 m shaft to confirm the formula overrides the absolute minimum at greater heights.
 
 *Ventilation (Rule VIII) is Area 2 (Utilities) with a 30% exam weight. Vent shaft calculations are high-frequency numerical questions — practice the math until it is automatic.*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Vent shaft minimum dimensions = 1.20 m × 1.20 m for non-Fire Zone 1 buildings, 1.50 m × 1.50 m for Fire Zone 1. Max shaft coverage = 10% of required lot area. Mechanical ventilation can substitute for natural ventilation at 10 air changes per hour for most occupancy types.
+
+## Cross‑References
+
+**Sanitation And Water Supply**, **Pd 1096 Rule Viii Light And Ventilation**, **Chimneys And Fireplaces**, **Vertical Openings And Floor Roof Construction**
+

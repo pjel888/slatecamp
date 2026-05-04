@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your understanding of **Spanish Colonial** urban planning principles, the **Laws of the Indies**, and the architectural characteristics of colonial churches and civic spaces across Latin America. This knowledge appears in both history and theory questions about colonial planning grids and Baroque ecclesiastical design.</Callout>
+## Learning Goal
 
+Identify the three-part formula of Spanish colonial urban design in Latin America — Laws of the Indies grid plan, central plaza, cathedral — and explain how the Leyes de Indias (1573) imposed standardized city layouts across diverse geographies and cultures.
 ## Core Concept
 
 Spanish colonialism imposed a distinctive architectural and urban order across Latin America from the 16th to 18th centuries. The **Laws of the Indies** (1573), issued by King Philip II, codified the design of every colonial town. Colonizers did not build randomly—they built according to rigid orthogonal grids that prioritized the plaza mayor (main square) as the civic and religious heart. This plaza anchored the cathedral, governor's palace, and municipal buildings in a hierarchical arrangement that reflected Spanish Crown authority.
@@ -21,18 +22,16 @@ The **plaza mayor** itself functioned as a multipurpose space: market, assembly 
 <WikiExamTable headers={["Element", "Purpose", "Characteristics"]} rows={[['["**Plaza Mayor**", "Civic and religious center", "Rectangular, surrounded by colonnades, cathedral on one side"]', '["**Laws of the Indies (1573)**", "Urban planning code", "Orthogonal grid, specific measurements for streets, plaza dimensions regulated"]', '["**Cathedral**", "Spiritual and civic authority", "Large façade, barrel vault or dome, mestizo baroque ornamentation"]', '["**Portleas (Colonnades)**", "Commercial and social space", "Covered arcades around plaza for shade and commerce"]', '["**Fortress Churches**", "Defense and worship", "Thick walls, minimal windows, gun ports in some examples"]', '["**Mestizo Baroque**", "Hybrid aesthetic", "Indigenous motifs integrated with Spanish Baroque ornamentation"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Urban Planning Recognition**
 Questions ask you to identify the Laws of the Indies principles in a town plan diagram—orthogonal grid, plaza at center, cathedral dominance, radiating streets. You must name the planning system and explain why Spanish colonizers used it.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Building Function and Form**
 Questions present colonial churches or civic buildings and ask why they were designed a certain way—fortress-like walls (defense), thick masonry (climate control), multiple chapels (conversion of indigenous populations). You connect form to colonial function.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Regional Variation**
 Questions distinguish colonial architecture across regions: Mexican Baroque differs from Peruvian mestizo style differs from Caribbean island adaptations. You recognize local materials and indigenous influence while identifying shared Spanish colonial principles.</ExamTip>
 
+<Callout>The LEA tests your understanding of **Spanish Colonial** urban planning principles, the **Laws of the Indies**, and the architectural characteristics of colonial churches and civic spaces across Latin America. This knowledge appears in both history and theory questions about colonial planning grids and Baroque ecclesiastical design.</Callout>
 
 ## Common Mistakes
 
@@ -41,7 +40,6 @@ Questions distinguish colonial architecture across regions: Mexican Baroque diff
 <WikiMistakeCard mistake="Forgetting indigenous contribution" correction="Students attribute entire colonial architecture to Spain. Indigenous craftspeople and communities shaped every building—they quarried stone, designed decorative programs influenced by pre-Columbian motifs, and adapted Spanish forms to local climate and labor practices." context="Say \"mestizo\" or \"hybrid\" explicitly." />
 
 <WikiMistakeList mistakes={["Treating plaza mayor as purely European. The plaza is not a straight Spanish import. Indigenous communities had central gathering spaces; colonizers adapted this tradition into the Laws of the Indies orthogonal model. Colonial architecture is fusion, not replacement.", "Ignoring defensive architecture. Many colonial churches are fortress-like because they were fortresses. Students overlook gun ports, minimal windows, and thick walls as defensive features. A church with a gun port is not a design accident—it reflects 16th-century colonial military reality."]} />
-
 
 ## Key Terms
 
@@ -60,3 +58,10 @@ Questions distinguish colonial architecture across regions: Mexican Baroque diff
 **Mestizaje** — Cultural and artistic blending of Spanish and indigenous traditions; visible in colonial architecture through decoration, materials, and spatial adaptation.
 
 **Fortress Church** — Religious building designed with defensive features—thick walls, gun ports, minimal windows—reflecting 16th-17th-century colonial security needs.
+
+## Related Articles
+
+See also within Latin American Architecture: **lea-hist-013-02-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

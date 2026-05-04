@@ -12,6 +12,8 @@ The Professional Regulatory Board of Architecture (PRBoA), operating under the P
 
 The PRBoA disciplinary process is governed by RA 9266 (Architecture Act of 2004), its Implementing Rules and Regulations (IRR), and the Code of Ethical Conduct. This article examines the four-phase disciplinary sequence: complaint filing, formal investigation, administrative hearing, and appeal review.
 
+<ArticleMedia id="media-eth009-disciplinary-flowchart" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA Disciplinary Process — Five-Step Flowchart" description="Horizontal flowchart showing the five-step disciplinary sequence: STEP 1 Complaint Filing (who may file, requirements, informal resolution options) → STEP 2 Investigation Phase (assign investigator, notice to respondent, answer, evidence gathering, report) → STEP 3 Formal Administrative Hearing (structure, relaxed evidentiary rules, respondent rights) → STEP 4 PRBoA Decision and Disciplinary Orders (penalty categories, mitigating/aggravating factors) → STEP 5 Appeal Process (15-day appeal to PRC, Court of Appeals review under Rule 43, Supreme Court discretionary review)." placementIntent="conflict-resolution" suggestedSearchQuery="PRBoA disciplinary process complaint investigation hearing appeal RA 9266 Section 23 flowchart" suggestedAsset="Diagram or reference image" />
+
 ## STEP 1: The Complaint Phase
 
 ### Who May File a Complaint?
@@ -29,10 +31,6 @@ A complaint against a registered architect or RLA may be filed by:
 Under RA 9266 Section 39 and PRC Resolution No. 2009-688 (Rules on Administrative Investigations), a formal complaint must contain:
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="requirement"
-- Text: 1. **Complainant Identification** — Full name, address, and contact information 2. **Respondent Identification** — Professional license number and registration status 3. **Factual Narration** — Detailed chronological account of alleged violations 4. **Documentary Evidence** — Supporting attachments (contracts, emails, photographs, affidavits) 5. **Legal Basis** — Specific provisions of RA 9266, the Code of Ethics, or SPP allegedly violated 6. **Prayer for Relief** — Requested disciplinary action
-[/SLATECAMP_UI_BLOCK]
 
 ### Location of Filing
 
@@ -50,10 +48,6 @@ Prior to formal investigation, the PRBoA may:
 - Consolidate **multiple complaints** against the same respondent
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Point:** Know that the PRBoA may dismiss a complaint before formal investigation if it lacks sufficient factual basis or is clearly frivolous. This is distinct from dismissal after investigation due to insufficient evidence — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ## STEP 2: The Investigation Phase
 
@@ -86,10 +80,6 @@ The respondent architect or RLA must submit:
 The investigator may:
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Investigation Method | Purpose | Authority | |---|---|---| | Document Review | Verify contracts, designs, communications | RA 9266 Sec. 39 | | Site Inspection | Assess quality of work, identify defects | PRC Rules | | Expert Examination | Evaluate technical compliance with standards | PRBoA Direction | | Witness Interviews | Gather testimonial evidence | Administrative Protocol | | Subpoena Duces Tecum | Compel production of relevant documents | RA 9266 Section 39 | | Professional Audit | Revi
-[/SLATECAMP_UI_BLOCK]
 
 ### Investigation Report
 
@@ -103,10 +93,6 @@ The investigator prepares a comprehensive report containing:
 The report is transmitted to the respondent and complainant for comment (10 days).
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Common LEA Misconception:** The investigation report is NOT binding on the PRBoA. The board may reject the investigator's recommendations and order further investigation or proceed to hearing based on different conclusions from the evidence.
-[/SLATECAMP_UI_BLOCK]
 
 ## STEP 3: The Formal Administrative Hearing
 
@@ -122,10 +108,6 @@ The PRBoA conducts a formal hearing when:
 ### Hearing Structure and Procedures
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 1. **PRBoA Board Session Scheduled** (typically within 30 days of investigation completion) 2. **Notice to Parties** — Hearing date, time, location provided 10 days in advance 3. **Opening Statements** — Complainant counsel presents case theory; respondent presents defense position 4. **Presentation of Evidence** — Witnesses testify; documents are marked as exhibits 5. **Cross-Examination** — Opposing party questions witnesses and challenges evidence 6. **Closing Arguments** — Summary of evidenc
-[/SLATECAMP_UI_BLOCK]
 
 ### Evidence Rules and Standards
 
@@ -138,10 +120,6 @@ The hearing operates under **relaxed evidentiary standards** (compared to court 
 - **Standard of review** focuses on whether violations occurred, not criminal intent
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="important"
-- Text: The PRBoA hearing is **administrative**, not criminal. The respondent's constitutional rights (Miranda, counsel, due process) apply, but the rules of evidence are more flexible. The goal is truth-finding, not prosecution.
-[/SLATECAMP_UI_BLOCK]
 
 ### Rights of the Respondent
 
@@ -162,10 +140,6 @@ During hearing, the respondent has the right to:
 The PRBoA may impose penalties ranging from minor to severe:
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Disciplinary Action | Severity | Duration | Examples of Violations | |---|---|---|---| | **Reprimand** | Minor | Written record only | Minor ethical lapses, isolated misconduct | | **Fine** | Minor-Moderate | One-time penalty | Failure to comply with reporting requirements | | **Probation** | Moderate | 1-3 years | Negligence, minor incompetence | | **Suspension** | Severe | 1-5 years | Serious misconduct, conflict of interest abuse | | **Revocation** | Maximum | Permanent | Fraud, gross negli
-[/SLATECAMP_UI_BLOCK]
 
 ### Factors Considered in Sentencing
 
@@ -192,10 +166,6 @@ A disciplinary decision includes:
 8. **Order to Register Penalty** — Direction to PRC to update licensee record
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Point:** The PRBoA decision must contain written findings and conclusions explaining the board's reasoning. A decision that merely announces punishment without explanation is vulnerable to appeal and may be reversed by higher courts — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ## STEP 5: The Appeal Process
 
@@ -238,10 +208,6 @@ The Court of Appeals **will not reconsider**:
 - **Professional judgments** regarding standards violation
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="important"
-- Text: On appeal, the court presumes the PRBoA decision is correct unless the appellant proves legal error. This is a deferential standard of review that respects the board's expertise in professional regulation.
-[/SLATECAMP_UI_BLOCK]
 
 ### Supreme Court Review (Rare)
 
@@ -311,10 +277,6 @@ Consider the following hypothetical:
 **Appeal:** Maria appeals, arguing the punishment was excessive. Court of Appeals reviews the decision and, finding the evidence supports the violation and the penalty is proportionate to the negligence, **affirms** the PRBoA decision.
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Why This Matters for LEA:** This case illustrates that architects are held to current professional standards, not outdated ones. Claiming ignorance of current codes does not excuse violations. The disciplinary process enforces professional accountability through a multi-step procedure protecting both due process and public protection.
-[/SLATECAMP_UI_BLOCK]
 
 ## Key LEA Test Competencies
 
@@ -339,7 +301,6 @@ The PRBoA disciplinary process serves dual purposes:
 - **Enforces professional accountability** through graduated discipline
 
 Understanding this process is essential for ethical practice because it establishes the mechanisms through which professional obligations are enforced and violations are remedied.
-
 
 ## Related Articles
 

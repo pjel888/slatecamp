@@ -1,19 +1,28 @@
 {
-  "attempted_at": "2026-05-03T14:17:36.282Z",
+  "attempted_at": "2026-05-04T00:06:51.666Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
   "slug": "comprehensive-signage-package",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:6e728047f9e7b19e71988c4da32015c4b61a2c3daf8d831f0fc82a740ca8f4d0",
-  "original_hash": "sha256:6e728047f9e7b19e71988c4da32015c4b61a2c3daf8d831f0fc82a740ca8f4d0",
-  "candidate_hash": "sha256:15dccba5fd73b48d9a460315315dd72fe39fb30c84286d1edaa3aa29e8ea6411",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:78eadb0b063f1b9676b8f8c1fa942b9072b266f237589a33087edcffd3a5bc07",
+  "original_hash": "sha256:db370a9f9918a5d2759faec7a9d77c46c357c9d9a44537f49df115f7ffdbf0bd",
+  "candidate_hash": "sha256:e5ed4d20f3cdc196b84048f3f93a77c5b54a2d04b0fb6dcb56103edc4622ab16",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T14:19:03.859636+00:00"
 }

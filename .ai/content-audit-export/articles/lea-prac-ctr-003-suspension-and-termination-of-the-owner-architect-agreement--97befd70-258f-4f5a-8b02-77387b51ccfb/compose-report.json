@@ -1,18 +1,26 @@
 {
   "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
   "slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
-  "generated_at": "2026-05-03T13:44:11.137Z",
+  "generated_at": "2026-05-04T00:05:38.384Z",
   "original_hash": "sha256:f5b8563e4c775e2ea6d11e23c83132706233b85d1c48c27dc1a4ec87c9dc8f2e",
-  "normalized_hash": "sha256:01501134f3d68dc83875a8bdd0cb2c3e3da657af15537a1af6dfe7c82780e393",
-  "candidate_hash": "sha256:69a3802f94507047f5b80accb058d54a3fb0fa7c1e4a9ef0b992a6ca20632382",
+  "normalized_hash": "sha256:b7b52e02db563c10561a19142ea5982f9f7727bfbef173bd1fd5fa069e8773a4",
+  "candidate_hash": "sha256:b7b52e02db563c10561a19142ea5982f9f7727bfbef173bd1fd5fa069e8773a4",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

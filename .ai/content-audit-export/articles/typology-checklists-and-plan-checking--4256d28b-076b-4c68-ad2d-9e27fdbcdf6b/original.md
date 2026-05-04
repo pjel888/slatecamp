@@ -4,8 +4,11 @@
 
 ---
 
-> **HOW TO USE THIS MODULE:** Each checklist is a "non-negotiable list" — if any item is missing, the building fails accessibility compliance. In the LEA, design problem and code compliance questions test whether you know which elements are mandatory for each building type. Section D is a sequential flowchart: work through it on exam questions in order to catch every missing accessibility element.
+## Learning Goal
 
+After reading this article, you should be able to:
+
+Apply the minimum document requirements for building permit applications under PD 1096 Rule III Sec. 302; verify plan completeness using the occupancy-specific checklist; identify common submission deficiencies that result in automatic return; and calculate the correct number of drawing sets, specifications, and soil investigation reports required.
 ---
 
 ## SECTION A: HOSPITAL CHECKLIST (Mandatory Must-Haves)
@@ -57,7 +60,7 @@
 
 | #    | Requirement                                                                            | Dimension / Standard                                                              | Ref              |
 | ---- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ---------------- |
-| ☐ 22 | At least **1 accessible mlea + 1 accessible femlea toilet per floor (\<=20 cubicles)** | Add 1 pair for every additional 20 cubicles or fraction thereof                   | BP 344 Sec. 6    |
+| ☐ 22 | At least **1 accessible male + 1 accessible female toilet per floor (\<=20 cubicles)** | Add 1 pair for every additional 20 cubicles or fraction thereof                   | BP 344 Sec. 6    |
 | ☐ 23 | Accessible WC cubicle dimensions                                                       | Min **1880 mm wide × 1880 mm deep** clear (larger like 1800 × 2250 mm acceptable) | BP 344 Sec. 6    |
 | ☐ 24 | Toilet seat height 450 mm; grab bars 300 mm above seat                                 | Grab bar both sides                                                               | BP 344 Sec. 6    |
 | ☐ 25 | Emergency call button in toilet                                                        | **400–600 mm AFF** (reachable from floor)                                         | BP 344 Sec. 6    |
@@ -114,7 +117,7 @@
 | ---- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | -------------------- |
 | ☐ 14 | **Wheelchair spaces per seating capacity (2024 IRR): 4–50 = 2; 51–300 = 4; 301–500 = 6; >500 = +1 per additional 100 seats** | Each space: ≥ 800 mm × 1100 mm clear        | BP 344 Sec. 4 App. D |
 | ☐ 15 | Wheelchair spaces NOT accessed through other wheelchair spaces                                                               | Each space independently accessible         | BP 344 Sec. 4.3      |
-| ☐ 16 | Companion seats adjacent to wheelchair spaces (sports facilities)                                                            | Equivleant sightlines; same price class     | BP 344 Sec. 3.3      |
+| ☐ 16 | Companion seats adjacent to wheelchair spaces (sports facilities)                                                            | equivalent sightlines; same price class     | BP 344 Sec. 3.3      |
 | ☐ 17 | 5% of general waiting area seating designated priority seats                                                                 | Signed, nearest to service point            | BP 344 Sec. 18.2     |
 | ☐ 18 | Accessible route does NOT overlap or block wheelchair seating                                                                | Route around, not through, WC seating areas | BP 344 Sec. 4.2      |
 
@@ -122,7 +125,7 @@
 
 | #    | Requirement                                                                             | Dimension / Standard                                            | Ref           |
 | ---- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------- |
-| ☐ 19 | At least **1 accessible mlea + 1 accessible femlea cubicle per floor (\<=20 cubicles)** | Add 1 pair for every additional 20 cubicles or fraction thereof | BP 344 Sec. 6 |
+| ☐ 19 | At least **1 accessible male + 1 accessible female cubicle per floor (\<=20 cubicles)** | Add 1 pair for every additional 20 cubicles or fraction thereof | BP 344 Sec. 6 |
 | ☐ 20 | Cubicle min 1800 × 1800 mm clear (larger like 1800 × 2250 mm acceptable)                | Emergency call button 400–600 mm; strobe alarm                  | BP 344 Sec. 6 |
 | ☐ 21 | Accessible route from parking and food areas to toilets                                 | Continuous, no barriers                                         | BP 344 Routes |
 
@@ -172,7 +175,7 @@
 
 | #    | Requirement                                                                             | Dimension / Standard                                            | Ref              |
 | ---- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------- |
-| ☐ 13 | At least **1 accessible mlea + 1 accessible femlea cubicle per floor (\<=20 cubicles)** | Add 1 pair for every additional 20 cubicles or fraction thereof | BP 344 Sec. 6    |
+| ☐ 13 | At least **1 accessible male + 1 accessible female cubicle per floor (\<=20 cubicles)** | Add 1 pair for every additional 20 cubicles or fraction thereof | BP 344 Sec. 6    |
 | ☐ 14 | Accessible WC cubicle min 1800 × 1800 mm clear (larger like 1800 × 2250 mm acceptable)  | Grab bars, emergency button 400–600 mm AFF                      | BP 344 Sec. 6    |
 | ☐ 15 | Visual alarm (strobe) in accessible toilets                                             | Same spec as hospital/lodging: ≤3 flashes/sec                   | BP 344 Sec. 17.8 |
 
@@ -319,8 +322,8 @@ FAIL if any element is absent or undersized
 
 ```
 ARE ACCESSIBLE TOILETS PROVIDED?
-├── Count: At least **1 mlea + 1 femlea accessible cubicle per floor for every 20 or fewer gendered cubicles?**
-│   └── Add 1 mlea + 1 femlea accessible cubicle for every additional 20 cubicles or fraction thereof
+├── Count: At least **1 male + 1 female accessible cubicle per floor for every 20 or fewer gendered cubicles?**
+│   └── Add 1 male + 1 female accessible cubicle for every additional 20 cubicles or fraction thereof
 │   └── Where only one toilet room is provided, at least 1 unisex accessible toilet per floor
 ├── Cubicle: Is it at least 1800 mm wide × 1800 mm deep clear? (larger like 1800 × 2250 mm is acceptable)
 ├── Toilet: Seat height 450 mm?
@@ -409,7 +412,7 @@ IS THE BUILDING LEGALLY COMPLIANT?
 
 | Element                 | Hospital                                                  | Mall / Commercial                                                     | School                                                    |
 | ----------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------- |
-| Accessible toilet (min) | 1 mlea + 1 femlea per floor per 20 cubicles (or fraction) | 1 mlea + 1 femlea per floor per 20 cubicles (or fraction)             | 1 mlea + 1 femlea per floor per 20 cubicles (or fraction) |
+| Accessible toilet (min) | 1 male + 1 female per floor per 20 cubicles (or fraction) | 1 male + 1 female per floor per 20 cubicles (or fraction)             | 1 male + 1 female per floor per 20 cubicles (or fraction) |
 | Guest room % accessible | N/A                                                       | N/A                                                                   | N/A                                                       |
 | WC seating (cinema)     | N/A                                                       | Per table: 4–50 = 2; 51–300 = 4; 301–500 = 6; >500 = +1 per 100 seats | N/A                                                       |
 | Accessible parking      | 1:25 (3700 × 5000 mm + 1200 mm aisle)                     | 1:25 (3700 × 5000 mm + 1200 mm aisle)                                 | 1:25 (if provided; 3700 × 5000 mm + 1200 mm aisle)        |
@@ -438,3 +441,33 @@ IS THE BUILDING LEGALLY COMPLIANT?
 ---
 
 _Module 13 | BP 344 2024 IRR LEA Review Series | Philippine context only_
+
+
+---
+
+<LawCallout code="pd1096" section="Rule VII - Typology Checklists">
+
+
+Per BP 344 2024 IRR, every building typology has a set of non-negotiable accessibility elements. Missing any single item = fails accessibility compliance. The mandatory elements include: accessible parking (1 per 25 regular spaces, 3700×5000 mm + 1200 mm aisle), accessible route (≥1500 mm corridors with 1800×1800 mm turning spaces), accessible toilet (≥1700×1700 mm stall), and ISA signage.
+
+
+</LawCallout>
+
+<Warn >
+
+The most common exam error is assuming a checklist item is optional. In BP 344 compliance, every checklist item is mandatory. If a hospital has a ramp but no ISA signage, or a parking space but no access aisle — the building fails. There are no partial credits in plan checking.
+
+</Warn>
+
+<ExamTip >
+
+For LEA design problems, use the sequential flowchart: (1) Check parking → (2) Check route from parking to entrance → (3) Check entrance → (4) Check corridors → (5) Check vertical circulation → (6) Check destination rooms → (7) Check toilet rooms → (8) Check signage. Miss one step = miss the compliance issue.
+
+</ExamTip>
+
+---
+
+## Cross‑References
+
+**Building Permit Process**, **Legal Liability And Enforcement Workflow**, **Top 50 Traps 2024 Irr**, **Rule I General Provisions**
+

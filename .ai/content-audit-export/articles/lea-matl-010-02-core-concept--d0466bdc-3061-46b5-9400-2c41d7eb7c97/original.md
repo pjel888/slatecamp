@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Concrete Hollow Block (CHB) quantity estimation is a daily task on construction sites across the Philippines. You must calculate the number of blocks needed based on wall area, account for openings, and apply waste factors. Masonry mortar volume and grout requirements follow directly from block count.
-
+Calculate CHB quantities by wall area, accounting for openings (doors, windows), bond pattern, and waste factor, and compute mortar volume and reinforcing steel requirements for reinforced masonry walls.
 ## Core Concept
 
 CHB quantity is determined by wall surface area and block size. In the Philippines, standard CHB sizes are 4 inches (100 mm), 6 inches (150 mm), and 8 inches (200 mm) in thickness, with a consistent nominal height of 8 inches (200 mm) and length of 16 inches (400 mm). Each block occupies approximately 0.16 m² of wall face area (including the 10 mm mortar joint).
@@ -19,7 +19,7 @@ Mortar volume (cement-sand mix for bedding and joints) is estimated at 0.03 to 0
 | CHB nominal length | 16" (400 mm) | With 10 mm joint = 410 mm per block face |
 | Blocks per m² (standard) | ~12.5 pcs/m² | Used for quick estimation across all sizes |
 | Mortar joint thickness | 10 mm (standard) | Included in block spacing calculations |
-| Mortar requirement | ~0.04 m³ per m³ of masonry OR 1 bag + 0.12 m³ sand per 100 blocks | Scleas with block count |
+| Mortar requirement | ~0.04 m³ per m³ of masonry OR 1 bag + 0.12 m³ sand per 100 blocks | Scales with block count |
 | Minimum compressive strength (PH) | 2.0 MPa (loadbearing) | Per PNS ASTM C90:2019 |
 | DPWH Item 1046 | Standard Specification for Masonry Works | Governs public work specifications |
 | Wall opening deduction | Full area of window/door openings | Subtract openings from gross wall area |
@@ -121,7 +121,7 @@ On the LEA, masonry questions focus on:
 
 2. **Waste adjustment**: Quantity × (1 + waste %) for typical 5–10% site waste.
 
-3. **Mortar scaling**: Number of blocks ÷ 100 × 1 bag (or equivleant) for mortar cement and sand.
+3. **Mortar scaling**: Number of blocks ÷ 100 × 1 bag (or equivalent) for mortar cement and sand.
 
 4. **Multi-story scaling**: Same per-floor calculation, then multiply by number of floors.
 
@@ -144,3 +144,10 @@ On the LEA, masonry questions focus on:
 <WikiMistakeCard mistake="Using different CHB pcs/m² for different thicknesses (4\", 6\", 8\")" correction="All standard CHB sizes have the same face area (16\" × 8\" = 0.16 m² per block). Thickness does not affect quantity per m² of wall face." />
 
 <WikiMistakeList mistakes={["Mixing net area and gross area—always subtract openings before multiplying by 12.5", "Calculating mortar based on weight instead of volume (use m³ for sand, bags for cement)", "Double-counting openings or including the same opening twice", "Forgetting that CHB mortar requires both cement AND sand (do not calculate cement only)"]} />
+
+## Related Articles
+
+See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-04-core-concept**, **lea-matl-010-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

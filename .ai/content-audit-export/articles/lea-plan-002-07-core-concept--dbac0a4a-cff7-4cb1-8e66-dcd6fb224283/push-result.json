@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:56.316Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:25.453Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
   "slug": "lea-plan-002-07-core-concept",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:b931776e3ece717dda8069544c5daab88b4f49835f85d19d2766823a3fe3259f",
-  "original_hash": "sha256:2dbb7f8ac572bfa4b26fd2b853be3c97cc18bf92f5fd8d52780d8858a39b8ff4",
-  "candidate_hash": "sha256:b931776e3ece717dda8069544c5daab88b4f49835f85d19d2766823a3fe3259f",
-  "stale_check_passed": false,
+  "original_hash": "sha256:b931776e3ece717dda8069544c5daab88b4f49835f85d19d2766823a3fe3259f",
+  "candidate_hash": "sha256:db70e61895b224c3306d59eafef4551eeec911e7aaa2fffc5fb941bc9263f455",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:51:05.904689+00:00"
 }

@@ -1,9 +1,5 @@
 ## What You Need to Know for the LEA
-<Callout>
-Minimalism is not mere simplicity or absence; it is a **rigorous disciplinary framework** where every element is justified through essential function or philosophical necessity. The LEA tests whether you understand the theoretical distinction between minimalism (restraint as positive principle) and reductivism (elimination as default). You must master the work of Tadao Ando, John Pawson, and SANAA, and understand how minimalism emerged as both aesthetic and ethical stance.
-</Callout>
-
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 ## Learning Goal
 
@@ -13,13 +9,13 @@ Minimalism is not mere simplicity or absence; it is a **rigorous disciplinary fr
 
 ## Core Concept
 
+<ArticleMedia id="media-lea-theo-007-11-minimalism-philosophy" type="image" caption="Minimalism — Restraint as Intellectual Discipline and Ethical Position" description="Concept diagram showing evolution: Modernism (ornament eliminated as non-functional) → Minimalism (restraint as positive principle, sufficiency, intensity). Three branches from Minimalism: (1) Zen/Ma/shibui/wabi-sabi (Japanese aesthetic foundations), (2) Tadao Ando (phenomenological intensity, Church on the Water), (3) John Pawson/SANAA (pure volumes, material reduction). Center quote: 'Less is more — but not because of utility; because each remaining element carries maximum phenomenological weight.'" suggestedAsset="Diagram tracing minimalism's philosophical evolution from modernism through Japanese aesthetics to key practitioners" status="placeholder" />
+
 Minimalism in architecture represents more than stylistic preference for sparse spaces; it is **restraint as intellectual discipline and ethical position**. Mies van der Rohe's aphorism "less is more" encoded the philosophy: reduction to essentials increases significance of what remains; ornament and redundancy distract from pure relationships between form, space, and material.
 
 However, minimalism evolved from modernism's functional reduction into something distinct: whereas modernism eliminated ornament because ornament served no function, minimalism eliminates elements based on a philosophy of **sufficiency and intensity**. A minimalist space may have fewer elements than a modernist space, but not because of utility calculus; rather, each remaining element carries maximum phenomenological weight.
 
-<Tip>
-**Minimalism vs. mere simplicity**: Minimalism is disciplined—every element retained is *essential*; every eliminated element *must* be absent. Simplicity may be accidental (limited budget) or lazy (design ambition lacking). Minimalism is intentional, rigorous, philosophy-driven. Each Tadao Ando concrete surface is precisely formulated; each John Pawson material choice is justified. This is not poverty masquerading as restraint; it is mastery expressed through limitation.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 **The Philosophical Foundation: Zen and Japanese Aesthetics**
 
@@ -61,9 +57,7 @@ Contemporary minimalism increasingly engages environmental and social ethics. Re
 
 However, this alignment is not automatic. A "minimalist" facade clad in rare materials is materially intensive; a seemingly complex building in recycled timber may be more sustainable. Minimalism must be substantive (genuine reduction of material and energy) rather than merely aesthetic (simple appearance while using complex, carbon-heavy systems).
 
-<Note>
-Minimalism can be green, but minimal appearance does not guarantee sustainability. A white minimalist building requiring constant cleaning to maintain appearance, or using rare stone materials shipped globally, may embody more carbon and environmental impact than a visually complex building made from local materials. Authentic minimalism considers both material ethics and phenomenological intensity, not merely visual reduction.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
 
 **Distinction from Reductivism and Mere Simplicity**
 
@@ -97,39 +91,30 @@ In the Philippines, minimalist principles appear in projects responding to mater
 
 **Danger of Aestheticization**: When minimalism becomes style (white walls, wooden flooring, absence of ornament) without underlying disciplinary commitment, it becomes merely fashion—reductivism dressed as philosophy.
 
-<Warn>
-The minimalist market trap: minimalism has been commodified as luxury brand, so "minimalist design" now signals wealth and taste. This corrupts the discipline's core: restraint motivated by philosophical conviction becomes restraint motivated by affluence performance. True minimalist architects (Ando, Zumthor) work against this; superficial minimalism reproduces it. Be suspicious of "minimalist" commercial projects emphasizing style over substance. Authentic minimalism often looks deceptively simple because the rigor is invisible; the moment you notice "how minimalist this is," the project may be failing at minimalism.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Architect", "Project", "Key Principle", "Testable Element"]} rows={[['["Tadao Ando", "Church on the Water", "Nature as liturgical element", "Explain how the freestanding cross in a reflecting pool dissolves the boundary between architecture and landscape"]', '["Tadao Ando", "Water Temple", "Site integration, landscape respect", "Describe how minimal intervention relates to context"]', '["John Pawson", "Calvin Klein Flagship Store", "Refined materiality, visual clarity", "Analyze how material selection communicates luxury through restraint"]', '["SANAA", "21st Century Museum", "Transparency and minimal partition", "Explain how glass building achieves complexity without visible structure"]', '["Peter Zumthor", "Bruder Klaus Field Chapel", "Material intensity, phenomenological focus", "Describe how single material (concrete) creates spiritual experience"]', '["Mies van der Rohe", "Barcelona Pavilion", "\\"Less is more\\"; spatial flow", "Analyze how minimal elements define space through absence"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
 ## How It's Tested on the LEA
 
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 
-<ExamTip>1. **Philosophical Distinction**: "A designer removes all interior walls, all ornament, all detail from a building. Is this minimalism?" (Answer: Not necessarily; minimalism requires that retained elements are essential and carry significance. Removal without intent is reductivism, not minimalism.)</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 
-<ExamTip>2. **Material Intelligence**: "Minimalism is about white walls and empty space. True or false?" (Answer: False. Minimalism is about restraint disciplined by intention. Material selection, quality, and expression are fundamental. A minimalist space achieves intensity through carefully selected materials, not through mere emptiness.)</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 
-
-<ExamTip>3. **Ando's Principle Application**: "How does light function in Tadao Ando's architecture differently from modernism?" (Answer: Modernism uses light functionally (enabling vision). Ando treats light as primary material, shaped and revelead through apertures, creating phenomenological intensity.)</ExamTip>
-
-
-<ExamTip>4. **SANAA and Transparency**: "The 21st Century Museum is primarily glazed. Why is this minimalist rather than maximally exposed?" (Answer: SANAA uses minimal structural expression; interior definition comes from the program and subtle spatial manipulation, not from architectural partitions. The transparency is minimalism, not exposure.)</ExamTip>
-
-
-<ExamTip>5. **Contemporary Critique**: "Minimalist design commands high prices. Does this align with minimalism's philosophical goals?" (Answer: Tension exists; minimalism's aesthetic has been commodified as luxury brand. True minimalism might resist consumerism; contemporary practice often fails to achieve this philosophical consistency.)</ExamTip>
-
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Equating Minimalism with Emptiness" correction="Minimalism is active restraint, not passive absence." context="Empty spaces created without intention or rigor are not minimalist." />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Reducing Minimalism to Aesthetic Style" correction="\"White walls and wooden floors\" superficially mimic minimalism without engaging the philosophical framework of disciplined reduction and material intensity." context="This is commonly tested on the LEA." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Confusing Minimalism with Economy. Sparse design due to budget constraints is not minimalism. Minimalism requires intentional philosophy, not mere frugality. (Though poverty can produce unintentional minimalism with interesting results.)", "Ignoring Cultural Genealogy. Japanese minimalism emerges from specific aesthetic and spiritual traditions. Applying the vocabulary without understanding the source is appropriation without understanding.", "Treating Minimalism as Universally Desirable. Some occupants and cultures value abundance, ornament, and visual richness. Minimalism is legitimate philosophy but not universal prescription.", "Missing the Phenomenological Demand. Minimalism requires active attention from the occupant—awareness of light, material, proportion, spatial relationships. Spaces designed with this expectation may alienate occupants who do not share this cultivated attention."]} />
-
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
 
 ## Key Terms
 

@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests **Sydney Opera House** obsessively—it is the most tested building in the Philippine LEA. Questions focus on **Jørn Utzon** as architect, the **shell structure** design principle, the **1973 completion**, the geographic and symbolic significance for Australia, and the building's influence on contemporary architecture. This single building represents multiple exam domains: architectural history, structural innovation, cultural identity, and design process.</Callout>
+## Learning Goal
 
+Identify Jørn Utzon's Sydney Opera House as a structural and sculptural masterpiece — spherical shell geometry, prefabricated tile ribs, harbor site response — and explain how the design reconciled modernist expression with contextual sensitivity.
 ## Core Concept
 
 The **Sydney Opera House** (1957–1973) is the defining building of late-20th-century architecture. Danish architect **Jørn Utzon** (1918–2008) won an international design competition in 1957 with a radical proposal: vaulted shell structures rising from a harbor platform like billowing sails. The image was perfect—it expressed Australia's maritime identity, aspiration, and modernity. But it was nearly impossible to build.
@@ -16,7 +17,7 @@ The construction process was monumentally difficult. Costs spirlead; timelines e
 
 <Warn>Do not underestimate the engineering difficulty. Utzon's vision was geometrically complex and structurally unprecedented. Engineers spent years developing the spherical geometry, calculating rib positions, designing construction sequences, and solving material and thermal issues. The gap between artistic vision and engineering realization was massive—the building took 16 years and cost 14 times its original budget.</Warn>
 
-The building's genius is multivleant. Functionally, it contains two major theaters (opera and drama) plus concert hall, restaurants, and public spaces. Spatially, the shell vaults create dramatic interior volumes and light effects—the building is about movement and experience as much as function. Structurally, the spherical geometry solved seemingly impossible engineering challenges. Symbolically, the shells express Australia's ocean identity and aspiration toward global culture. The building justifies its iconic status; it works at every sclea and meaning.
+The building's genius is multivleant. Functionally, it contains two major theaters (opera and drama) plus concert hall, restaurants, and public spaces. Spatially, the shell vaults create dramatic interior volumes and light effects—the building is about movement and experience as much as function. Structurally, the spherical geometry solved seemingly impossible engineering challenges. Symbolically, the shells express Australia's ocean identity and aspiration toward global culture. The building justifies its iconic status; it works at every scale and meaning.
 
 The Opera House proved modernist architecture could be monumental, symbolic, and culturally rooted while remaining technically innovative and spatially complex. It rejected International Style anonymity; it declared: architecture can be a nation's voice.
 
@@ -25,22 +26,19 @@ The Opera House proved modernist architecture could be monumental, symbolic, and
 <WikiExamTable headers={["Aspect", "Detail", "Significance"]} rows={[['["**Architect**", "Jørn Utzon (Danish)", "International competition winner; brought modernist rigor to sculptural ambition"]', '["**Year Designed**", "1957 (competition)", "Radical shell concept; spherical geometry innovation"]', '["**Year Completed**", "1973", "16-year construction; iconic opening by Queen Elizabeth II"]', '["**Location**", "Sydney Harbor, Bennelong Point", "Maritime setting essential to design; iconic silhouette"]', '["**Structural System**", "Reinforced concrete spherical shells", "Ribs carry loads; thin outer shell minimizes material; revolutionary engineering"]', '["**Interior Spaces**", "Two theaters (opera and drama), concert hall, restaurants, foyer", "Major 2,700-seat opera theater; flexible drama space; spatial drama in vaults"]', '["**Symbolic Function**", "Australia\'s identity", "Modern, oceanic, aspirational; represents cultural coming-of-age"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Geometric and Structural Logic**
 Questions ask why Utzon chose spherical shells. You explain: spheres can be calculated mathematically, they provide structural efficiency, they unify compositional chaos with hidden order, they allow dramatic interior spaces, and they minimize material. You discuss the reinforced concrete ribs and how they carry loads to the base platform.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Design Process and Realization**
 Questions ask about the gap between design vision and construction reality. Utzon's competition drawings were visionary but geometrically and structurally undefined. Engineers had to solve the spherical geometry, calculate ribs, develop construction sequences. You explain how the building emerged from synthesis of artistic vision and engineering problem-solving.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Symbolism and National Identity**
 Questions ask what the Opera House represents for Australia. You explain: modernity, maritime culture, aspiration to world-class status, break from colonial dependency, investment in public culture. The white shells, harbor setting, and public accessibility make it a democratic monument, not an elite institution.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Influence on Subsequent Architecture**
 Questions ask how Opera House influenced contemporary architecture: it proved sculptural forms could be structurally rational, it showed architecture could be symbolic and monumental within modernism, it demonstrated that landmark buildings enhance cities and national identity. It enabled postmodern expressionism and deconstructivism by showing form need not be minimalist.</ExamTip>
 
+<Callout>The LEA tests **Sydney Opera House** obsessively—it is the most tested building in the Philippine LEA. Questions focus on **Jørn Utzon** as architect, the **shell structure** design principle, the **1973 completion**, the geographic and symbolic significance for Australia, and the building's influence on contemporary architecture. This single building represents multiple exam domains: architectural history, structural innovation, cultural identity, and design process.</Callout>
 
 ## Common Mistakes
 
@@ -49,7 +47,6 @@ Questions ask how Opera House influenced contemporary architecture: it proved sc
 <WikiMistakeCard mistake="Misunderstanding the structural system" correction="Students say the shells are simple curved forms or describe them vaguely. The shells are sections of a sphere—a sophisticated geometric choice. They are supported by internal ribs of reinforced concrete, not a continuous shell. The outer layer is thin cladding on the rib structure." context="Specify \"reinforced concrete ribs supporting thin spherical shells.\"" />
 
 <WikiMistakeList mistakes={["Ignoring the engineering difficulty. Students treat the design as elegant but not difficult. Utzon's vision was geometrically complex and structurally unprecedented. Engineers spent years developing the spherical geometry, calculating rib positions, designing construction sequences, and solving material and thermal issues. The gap between vision and realization was massive.", "Treating it as purely symbolic. Students say Opera House is \"just a symbol, not functionally excellent.\" It is highly functional: the theaters work; the public spaces flow; the acoustic and climate control systems are sophisticated. The building serves its purpose while being monumental. Function and symbolism are integrated."]} />
-
 
 ## Key Terms
 
@@ -61,7 +58,7 @@ Questions ask how Opera House influenced contemporary architecture: it proved sc
 
 **Bennelong Point** — Harbor peninsula in Sydney where Opera House sits; maritime setting integral to design; transforms building into geographic and cultural landmark.
 
-**Monumental Modernism** — Modernism emphasizing symbolic and cultural expression through large sclea and distinctive form; Opera House demonstrates modernism can be monumental and nation-defining.
+**Monumental Modernism** — Modernism emphasizing symbolic and cultural expression through large scale and distinctive form; Opera House demonstrates modernism can be monumental and nation-defining.
 
 **Sculptural Architecture** — Design treating building as three-dimensional sculpture visible from all angles; shells rise dramatically, silhouette changes with viewpoint, ocean and sky become backdrop.
 
@@ -70,3 +67,10 @@ Questions ask how Opera House influenced contemporary architecture: it proved sc
 **Iconic Architecture** — Building achieving symbolic and cultural status beyond functional purpose; becomes shorthand for place, nation, or era; Opera House is quintessential example.
 
 *For broader Oceanian and Pacific architectural context, see the companion article on Oceanian/Pacific Architecture (LEA-HIST-007-06).*
+
+## Related Articles
+
+See also within Australia & New Zealand Architecture: **lea-hist-015-01-core-concept**, **lea-hist-015-03-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

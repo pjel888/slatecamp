@@ -1,18 +1,28 @@
 {
   "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
   "slug": "storage-of-x-ray-films",
-  "generated_at": "2026-05-03T13:44:10.709Z",
-  "original_hash": "sha256:428fe3d2597d38c3c981b10b1d4def2beae8e719bd42c1de6562f6d9f7dcc42e",
-  "normalized_hash": "sha256:79ddd4202a71c8331e1fc720019beac57934ff871f1f6dec76c3b2b6c8689749",
-  "candidate_hash": "sha256:6a06598f5d61b652a596a359a673c7e23dd1c8027fc44595fe537639b3e8729c",
+  "generated_at": "2026-05-04T00:05:37.886Z",
+  "original_hash": "sha256:6a06598f5d61b652a596a359a673c7e23dd1c8027fc44595fe537639b3e8729c",
+  "normalized_hash": "sha256:b7eef64c6005f41f6210c3d20cdb7363d27715932a1491b2616b8fa803aefbc7",
+  "candidate_hash": "sha256:b7eef64c6005f41f6210c3d20cdb7363d27715932a1491b2616b8fa803aefbc7",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

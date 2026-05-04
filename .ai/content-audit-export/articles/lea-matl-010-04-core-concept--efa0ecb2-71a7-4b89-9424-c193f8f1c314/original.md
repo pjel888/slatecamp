@@ -1,12 +1,12 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Board feet calculation determines lumber material quantities for formwork, framing, and structural timber. A board foot is a standard unit of wood volume equal to a 1-inch thick × 1-foot wide × 1-foot long piece (or any combination yielding the same volume). Understanding board feet computation is essential for estimating timber costs on Philippine projects using hardwood (lauan, yakal) and softwood (pine, mahogany) materials.
-
+Calculate lumber/board foot measure using the formula BF = T(in) × W(in) × L(ft) ÷ 12, convert between dimensional lumber sizes, and estimate total board feet for a given framing plan accounting for spacing, layout, and waste.
 ## Core Concept
 
 A board foot (BF) represents a fixed volume: 1 inch × 12 inches × 12 inches = 144 cubic inches. When lumber is purchased, it is priced and quoted in board feet, not linear meters or cubic meters, despite the metric system's use in other construction trades. The conversion formula is: _Board feet = (Thickness in inches × Width in inches × Length in feet) ÷ 12_.
 
-Thickness, width, and length must all be measured in the units specified: thickness and width in inches, length in feet. If all three dimensions are in inches, the formula becomes: _Board feet = (Thickness × Width × Length) ÷ 144_. This is equivleant because dividing by 12 (when length is in feet) or by 144 (when length is in inches) accounts for the standard board foot volume.
+Thickness, width, and length must all be measured in the units specified: thickness and width in inches, length in feet. If all three dimensions are in inches, the formula becomes: _Board feet = (Thickness × Width × Length) ÷ 144_. This is equivalent because dividing by 12 (when length is in feet) or by 144 (when length is in inches) accounts for the standard board foot volume.
 
 In the Philippines, lumber is often purchased in nominal sizes (e.g., 2 inches × 4 inches × 8 feet). Actual dressed sizes are slightly smaller due to planing (e.g., actual 1.5 inches × 3.5 inches). For estimation, use nominal dimensions unless otherwise specified. Standard length increments are 6 feet, 8 feet, 10 feet, and 12 feet in the Philippines and global markets.
 
@@ -128,3 +128,10 @@ On the LEA, lumber questions focus on:
 <WikiMistakeCard mistake="Forgetting to add waste factor or applying it incorrectly" correction="Waste is typically 5–15% and applies to the total board feet calculated, not to individual pieces. Multiply total BF by (1 + waste %)." />
 
 <WikiMistakeList mistakes={["Using the wrong formula constant (144 instead of 12, or vice versa)", "Mixing metric dimensions (meters) with imperial (inches, feet) without converting", "Calculating board feet per piece but not accounting for quantity of pieces", "Forgetting that board feet is a VOLUME measure, not a linear or area measure"]} />
+
+## Related Articles
+
+See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-02-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

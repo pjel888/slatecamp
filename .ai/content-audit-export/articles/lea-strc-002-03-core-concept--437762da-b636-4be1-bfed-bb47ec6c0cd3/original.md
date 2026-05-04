@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define a moment-resisting frame (MRF) and explain its load path
+- Distinguish between ordinary, intermediate, and special MRFs
+- Explain why rigid beam-column connections are essential for MRF behavior
+- Describe the advantages and disadvantages of MRFs compared to shear walls
 
 Moment-resisting frames are classified into three categories based on their seismic design level: Ordinary (OMRF), Intermediate (IMRF), and Special (SMRF). Each category has specific detailing requirements and a seismic response modification factor (R factor). Understanding these categories is critical for seismic design in the Philippines.
 
@@ -42,6 +49,13 @@ NSCP 2015 Table 208-11A (R factors), Sec 408 (steel general), Sec 418 (concrete 
 
 <Tip>**Memory aid:** O=3.5, I=5.5, S=8.0. SMRF (Special) gets the highest R because it's **specially** detailed for maximum ductility. Think: "Special demands special detailing."</Tip>
 
+
+## Related Articles
+
+See also: **Bearing Wall Systems** (lea-strc-002-01) for comparison with wall systems, **Trusses** (lea-strc-002-05) for a different lateral system, and **Static Determinacy** (lea-strc-001-06) for how rigid frames affect determinacy.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing R factor with safety factor—R is a reduction factor allowing smaller design forces due to ductility, not a safety multiplier","Assuming IMRF and SMRF are equivleant; IMRF has less stringent detailing and lower R (5.5 vs 8.0)","Using OMRF (R=3.5) in Seismic Zone 2 because it is cheaper—NSCP requires SMRF in high-seismic areas"]} />

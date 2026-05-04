@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Construction quality control and testing verify that materials, components, and assembled systems meet specification requirements. The LEA tests your knowledge of material testing protocols (concrete slump, cylinder compression, rebar tensile tests), inspection procedures, submittal review, and Philippine regulatory standards (DPWH, NSCP, ACI). This topic bridges specifications with construction verification.
-
+Distinguish specification types — prescriptive, performance, proprietary, reference standard — by their approach to defining requirements, and identify when each type is appropriate based on project goals, procurement rules, and design control needs.
 ## Core Concept
 
 Quality control operates through a systematic process: (1) specification defines requirements, (2) material arrives at site, (3) testing verifies conformance, (4) documentation records results, (5) architect approves or rejects. Testing occurs at three stages: _incoming inspection_ (material upon delivery), _in-process inspection_ (during mixing, placement, or installation), and _final acceptance inspection_ (completed work).
@@ -16,7 +16,7 @@ _Shop drawing review_ occurs before fabrication to verify that fabricator design
 
 _Submittal review_ includes product certificates of compliance, mill test reports, material safety data sheets (MSDS), and samples. For paint, the fabricator submits paint samples on specified substrates, allowing color and finish verification. For windows, submittals include thermal performance data (U-value, SHGC), installation instructions, and warranty information. Submittal review is documented on a submittal log, and the architect stamps submissions "Approved," "Approved as noted," or "Revise and resubmit."
 
-_Mock-ups_ are small-sclea reproductions of completed assemblies (e.g., a 3m x 3m wall assembly with waterproofing, insulation, and finish paint) that are installed at the project site and inspected for conformance before full-sclea production. Mock-ups are particularly valuable for novel systems or where quality is difficult to verify after installation.
+_Mock-ups_ are small-scale reproductions of completed assemblies (e.g., a 3m x 3m wall assembly with waterproofing, insulation, and finish paint) that are installed at the project site and inspected for conformance before full-scale production. Mock-ups are particularly valuable for novel systems or where quality is difficult to verify after installation.
 
 ## Key Provisions
 
@@ -63,3 +63,10 @@ Memory aid: **Test, Document, Approve, Correct**. Every material and system goes
 <WikiMistakeCard mistake="Accepting cylinder compression test results that marginally fail (e.g., 26 MPa when 28 MPa specified) without requiring either (1) retest of additional cylinders to establish trend, or (2) core boring to verify in-situ strength. The contractor pressures acceptance." correction="Establish acceptance criteria in Part 1: General before testing occurs. Typical: '28-day average must equal or exceed design strength; individual tests must not fall below 90 percent of design strength.' If marginal, require statistical analysis or in-situ testing (core boring per ASTM C42). Do not accept failures without documented justification." />
 
 <WikiMistakeList mistakes={["Failing to specify testing frequency and acceptance criteria in Part 1: General (leaves contractor and architect guessing)", "Approving shop drawings without verifying dimension tolerance, connection adequacy, and specification alignment", "Accepting submittals without complete documentation (missing MSDS, thermal data, installation instructions)", "Confusing the role of slump test (workability) with compression test (strength); treating slump results as strength indicators", "Failing to require waterproofing mock-ups in tropical construction where moisture is persistent problem", "Not verifying third-party laboratory credentials (ISO 17025 accreditation) for independent testing", "Accepting test reports without chain-of-custody documentation (who collected samples, when, from where)", "Omitting acceptance criteria tolerances (e.g., 'flatness tolerance per ACI 117 Table 4.1')", "Failing to require retesting if initial tests are questionable (e.g., high slump indicating potential water addition)"]} />
+
+## Related Articles
+
+See also within Architectural Specifications and Documentation: **lea-matl-009-01-core-concept**, **lea-matl-009-02-core-concept**, **lea-matl-009-03-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

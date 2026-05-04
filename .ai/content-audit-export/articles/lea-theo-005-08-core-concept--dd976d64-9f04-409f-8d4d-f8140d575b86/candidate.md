@@ -1,10 +1,5 @@
 ## What You Need to Know for the LEA
-<Callout>
-
-Phenomenology redirects architectural attention from abstract form and function toward lived embodied experience, sensory perception, and the qualitative character of place. The LEA tests your understanding of phenomenological philosophy's application to architecture, particularly through Norberg-Schulz's concept of genius loci, Heidegger's "Building Dwelling Thinking," and contemporary practitioners like Peter Zumthor who design "atmospheres" rather than abstract forms.
-</Callout>
-
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 ## Learning Goal
 
@@ -14,15 +9,17 @@ Phenomenology redirects architectural attention from abstract form and function 
 
 ## Core Concept
 
+<ArticleMedia id="media-lea-theo-005-08-core-concept" a type="image" caption="Architectural Phenomenology — Genius Loci and Atmospheric Design" description="Diagram illustrating key phenomenological concepts: Center — human body as the measure of space (Merleau-Ponty's embodied perception). Surrounding rings show (1) Genius Loci — spirit of place shaped by natural setting, light, material, history, and human activity (Norberg-Schulz); (2) Building Dwelling Thinking — Heidegger's concept that building is dwelling, dwelling is the basis of authentic existence; (3) Atmospheres — Zumthor's nine components: material, sound, temperature, surrounding objects, intimacy, tension between interior/exterior, light, architecture as surroundings, and composure. Bottom panel shows how phenomenology differs from rationalism: lived experience vs abstract form." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 Phenomenology, derived from the philosophical tradition of Husserl, Heidegger, and Merleau-Ponty, emphasizes that human experience cannot be reduced to objective physical properties or abstract intellectual categories. Rather, consciousness emerges through the lived encounter between embodied subjects and their environments. In architecture, phenomenology insists that buildings are not solved by functionalist optimization or geometric beauty alone; buildings must be understood as environments in which humans dwell, perceive, move, and construct meaning through sensory and emotional engagement.
 
-<Tip>Heidegger's Fourfold—**earth, sky, mortals, divinities**—is testable exactly. Don't paraphrase. Be able to recall all four and explain each: earth (materials, gravity), sky (light, weather, seasons), mortals (human presence, finitude), divinities (transcendence, meaning). A building manifesting all four authentically supports dwelling; one missing any element is deficient.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 Martin Heidegger's foundational essay "Building Dwelling Thinking" (1954) established phenomenological architecture's philosophical basis. Heidegger argues that building is not primarily construction but rather the creation of spaces where dwelling—authentic human habitation—becomes possible. The essay's celebrated opening: "The real problem in modern times is not the housing shortage but that mortals have forgotten the essence of dwelling." Heidegger critiques modernism for its technological rationality, which treats building as mere material construction divorced from its existential purpose: enabling mortals to dwell on earth. Heidegger invokes the "Fourfold"—earth, sky, mortals, and divinities—arguing that authentic building creates spaces where all four elements are present and honored. A building that merely shelters, that fulfills purely functional criteria, has not yet achieved dwelling. True dwelling requires poetic encounter with place, materials, and the fundamental human condition.
 
-<Note>Heidegger's critique is *not* romantic anti-modernism. He's not saying "abandon technology and return to vernacular building." Rather, he's claiming that modernism's *reduction of building to technical problem-solving* eviscerates building's existential role in enabling human dwelling. The solution is not rejection of technology but technological practice *oriented toward dwelling rather than optimization*. This subtle distinction is crucial—contemporary phenomenological architects use digital tools, but in service of place-specific sensory engagement.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
 
-<Warn>Common misreading: Heidegger criticizes "housing shortage"—does NOT mean housing abundance solves dwelling problem. The issue is existential, not quantitative. Thousands of modernist apartments solving the "shortage" may still fail at "dwelling" if they don't enable poetic encounter with place/materials/meaning. This is why phenomenological architecture remains relevant despite successful modern mass housing—it identifies a different kind of problem than quantitative shortage.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 
 Christian Norberg-Schulz's *Genius Loci: Towards a Phenomenology of Architecture* (1980) translated Heidegger's existential philosophy into practical architectural analysis. Genius loci, the "spirit of place," refers to the unique character or atmosphere that defines a specific location. Every place, Norberg-Schulz argues, possesses a distinct identity formed by landscape, climate, light, history, and human activity. This atmosphere is not secondary aesthetic decoration; it is fundamental to human dwelling and meaning-making. Norberg-Schulz emphasizes that places are not abstract geometric coordinates but rather qualitative, experiential totalities that cannot be reduced to measurable properties. The genius loci of a Mediterranean hill town emerges through the interplay of golden light, stone materiality, centuries of layered occupation, thermal comfort, and social patterns that have evolved in response to climate and topography.
 
@@ -38,33 +35,26 @@ Phenomenological architecture has become increasingly influential in response to
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Philosopher/Architect", "Key Contribution", "Year", "Phenomenological Focus"]} rows={[['["Martin Heidegger", "\\"Building Dwelling Thinking\\" essay", "1954", "Authentic dwelling; Fourfold; critique of technological rationality"]', '["Christian Norberg-Schulz", "*Genius Loci*", "1980", "Spirit of place; landscape, light, materiality, memory"]', '["Peter Zumthor", "Phenomenological practice; *Atmospheres* writings", "1990s-present", "Sensory engagement; materials; light; thermal experience"]', '["Juhani Pallasmaa", "*Eyes of the Skin*; phenomenological architecture", "2005", "Multi-sensory perception; haptic experience; aging materials"]', '["David Chipperfield", "Contemporary phenomenological design", "2000s-present", "Material honesty; detail; place-responsiveness"]', '["Alvar Aalto", "Modernism with phenomenological sensitivity", "Mid-20th century", "Regional materiality; organic forms; human sclea"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
 ## How It's Tested on the LEA
 
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 
-<ExamTip>1. **Phenomenological vs. Modernist Thinking**: The exam distinguishes between modernist reduction (form follows function; universal principles) and phenomenological engagement (lived experience; place-specific sensitivity). Can you explain why Heidegger critiques modernism's "forgetting of dwelling"?</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 
-<ExamTip>2. **Genius Loci Analysis**: Questions ask you to analyze specific places or buildings through phenomenological lens. What is the genius loci of a given location? How should architecture respond to it? This requires sensitivity to landscape, climate, light, and cultural memory.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 
-
-<ExamTip>3. **Sensory Engagement vs. Visual Composition**: Phenomenological architecture prioritizes sensory encounter over visual composition. You must understand that Zumthor's architecture is not primarily about formal innovation but about sensory and emotional experience.</ExamTip>
-
-
-<ExamTip>4. **Heidegger's Fourfold**: You must explain the four elements—earth, sky, mortals, divinities—and understand how authentic building creates space where all four are present. This is abstract but testable through specific building analysis.</ExamTip>
-
-
-<ExamTip>5. **Materiality and Aging**: Phenomenological architecture embraces materials as they weather and age rather than demanding pristine permanence. Can you explain why material degradation and patina constitute architectural value rather than failure?</ExamTip>
-
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Confusing Phenomenology with Romanticism" correction="Students often reduce phenomenology to sentimental attachment to tradition or \"cozy\" vernacular. Actually, phenomenology is a rigorous philosophical methodology concerned with the structure of embodied experience." context="It can result in severe, minimalist buildings (Zumthor, Chipperfield) that profoundly engage sensory perception through simplicity." />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Misunderstanding Heidegger's Critique" correction="The essay \"Building Dwelling Thinking\" is not a romantic call to return to premodern building; it is a philosophical critique of modernism's reduction of building to technical problem-solving divorced from existential meaning." context="Contemporary phenomenological architecture can be thoroughly modern in technique while remaining true to Heidegger's philosophical insights." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Treating Genius Loci as Purely Visual Aesthetic. Genius loci is not the scenic beauty of a landscape. It is the comprehensive character of a place—including climate, history, social patterns, material traditions, and embodied experience. A beautiful view from a distance may not possess genius loci if the place lacks rich sensory, social, or historical engagement.", "Reducing Zumthor to Material Expression. While Zumthor values local materials, his phenomenology is not simply \"use local stone.\" Rather, his work orchestrates complex sensory sequences—light, temperature, acoustic, tactile—that create what he calls \"atmospheres.\" Materials are vehicles for this orchestration, not ends in themselves.", "Ignoring the Digital Critique. Contemporary phenomenological theory emerges partly as a response to digital mediation's threat to embodied experience. Understanding phenomenology requires understanding its polemical position against virtual simulation, parametric abstraction, and screen-mediated design processes.", "Missing Phenomenology's Integration of Place and Dwelling. Genius loci is not merely aesthetic appreciation of place; it is the condition enabling authentic dwelling. Architecture's phenomenological success is measured by whether it allows inhabitants to dwell meaningfully, to feel at home, to connect with place and community—not simply by visual or sensory aesthetics."]} />
-
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
 
 ## Key Terms
 

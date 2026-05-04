@@ -12,6 +12,13 @@ _Acoustic Insulation_ employs mass (density) and absorption (porous material). S
 
 Tropical context differs fundamentally: insulation is used for _heat reduction_ (keeping external heat out), not for cold retention. Reflective barriers (aluminum foil facing, white/light coatings) reduce radiant heat gain more effectively than bulk insulation in tropical climates. Air gap ventilation (50 mm minimum between roofing and insulation) creates convective breaks to discharge trapped heat.
 
+
+<ArticleMedia id="media-insulation-material-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of thermal insulation materials: fiberglass, mineral wool, EPS, XPS, polyurethane foam, and reflective foil with R-value per inch, fire rating, and moisture resistance"
+  caption="Future chart: thermal insulation material comparison — R-value, fire rating, and moisture resistance"
+  suggestedAsset="Material property comparison chart with application photos"
+  placementIntent="Helps learners select insulation materials by thermal and safety properties" />
+
 ## Key Provisions
 
 | Property | Value | Standard | LEA Relevance |
@@ -32,6 +39,12 @@ Tropical context differs fundamentally: insulation is used for _heat reduction_ 
 
 Philippine residential and commercial construction prioritizes heat reduction through reflective barriers (white/aluminum-faced insulation, light-colored roof coatings) rather than thick bulk insulation, which retains interior heat and increases air conditioning load. Interior design standards increasingly specify acoustic insulation for open-plan offices and hospitality applications, driving demand for NRC 0.6-0.8 materials (suspended acoustic ceilings, wall panels). Fire safety codes require mineral wool or spray foam in compartments due to non-flammability and smoke development limits. Coastal salt spray environments favor closed-cell polyurethane foam (low permeability, water resistance) over fiberglass batts, which absorb moisture and lose R-value (hygroscopic degradation). Green building standards (LEED, BREEAM) incentivize low-k rigid foams (polyiso, XPS) for embodied carbon reduction vs fiberglass.
 
+
+<ArticleMedia id="media-insulation-placement-diagram" layout="single" type="image" status="placeholder"
+  alt="Cross-section of building envelope showing insulation placement: roof, walls, and floor with R-value labels and thermal bridge identification"
+  caption="Future diagram: insulation placement in building envelope — R-values and thermal bridge avoidance"
+  suggestedAsset="Building section diagram with insulation placement callouts"
+  placementIntent="Shows where insulation is placed in the building envelope" />
 ## How It's Tested
 
 **Pattern 1: k-Value to R-Value Conversion** — "Extruded polystyrene (XPS) has k = 0.025 W/(m·K). Calculate the R-value of a 50 mm thick XPS layer." (Answer: R = 0.050 m / 0.025 W/(m·K) = 2.0 m²·K/W; express as R-value or in imperial units R ≈ 11.4 per 3-inch thickness.)
@@ -43,30 +56,14 @@ Philippine residential and commercial construction prioritizes heat reduction th
 **Pattern 4: Tropical Heat Reduction** — "For a metal-roofed tropical residence with 50°C exterior surface temperature, would 100 mm bulk fiberglass insulation or 25 mm reflective aluminum barrier be more effective at reducing interior ceiling temperature?" (Answer: Reflective barrier; radiant heat dominates in tropical solar gain; reflectivity reduces radiant absorption more than k-value reduction.)
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Memorize k-value hierarchy: polyiso (0.020) < XPS (0.025) < fiberglass (0.040) < mineral wool (0.045). R = thickness / k. In tropical climates, reflective barriers outperform bulk insulation for heat reduction. STC = sound isolation, NRC = sound absorption.
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Confusing R-value with k-value: thinking R-value is material-specific (it is not; R depends on thickness and k-value).", correction="k-value is material property (independent of thickness). R-value = thickness / k-value (depends on thickness). Thicker insulation yields higher R."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Specifying bulk fiberglass insulation for tropical residential cooling without reflective barrier, resulting in heat entrapment and increased air conditioning load.", correction="Tropical heat reduction requires reflective surfaces (aluminum foil, white coating) to minimize radiant gain. Bulk insulation increases cost without proportional cooling benefit."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing STC (isolation) with NRC (absorption); STC rates walls, NRC rates interior finishes\", \"Installing fiberglass batts in coastal salt-spray zones without vapor barrier; moisture absorption degrades R-value by 20-40%\", \"Calculating assembly U-value without including air films (interior 0.12, exterior 0.03 m²·K/W); omission understates thermal performance\", \"Using NRC material (suspension ceiling) without adequate STC walls; noise isolation is wall-dependent, not ceiling-dependent\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

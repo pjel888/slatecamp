@@ -1,19 +1,27 @@
 {
-  "attempted_at": "2026-05-03T14:17:39.813Z",
+  "attempted_at": "2026-05-04T00:07:20.662Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
   "slug": "interior-doors-and-hardware",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "original_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "candidate_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:f4fc7ab7f90a874039710eff9dd66caefd1045c272e58643699ff6256117cf27",
+  "original_hash": "sha256:f4fc7ab7f90a874039710eff9dd66caefd1045c272e58643699ff6256117cf27",
+  "candidate_hash": "sha256:dcfa44480d0b8899ebb3616edc07c0cc36c8cafba65ca7ff806e2216d8083113",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T14:19:12.487682+00:00"
 }

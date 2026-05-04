@@ -1,6 +1,12 @@
 # Spanish Colonial Laws of the Indies
 *An Immersive LEA Review Module*
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply the Laws of the Indies (Leyes de las Indias, 1573) urban planning provisions to colonial town analysis: identify the rectangular plaza-mayor (1.5:1 ratio, oriented N-S-E-W), the principal streets radiating from corners, the church-and-government-building frontage, and the solar (standard building lot) dimensions; trace their influence on contemporary Philippine urban patterns.
+---
 ---
 
 ## The Real-World Scenario (The Hook)
@@ -19,6 +25,13 @@ You are standing at the center of a Philippine town plaza. Directly in front of 
 ---
 
 ## The Hard Data (Cheat Sheet)
+
+<Example>
+
+**Intramuros (Manila, 1571):** The textbook application of the Laws of the Indies in the Philippines. Features: Plaza Mayor (Plaza de Armas, now Plaza Roma) as the central square, Manila Cathedral on one side, Palacio del Gobernador on another (the "dos poderes" — church and state). Gridiron street layout (calles running N-S and E-W). Thick stone fortification walls (muralla) enclosing the entire settlement. The plaza-oriented urban form remains the template for every Philippine town center today.
+
+</Example>
+
 
 ### The Laws of the Indies — Key Urban Planning Provisions
 
@@ -67,7 +80,7 @@ You are standing at the center of a Philippine town plaza. Directly in front of 
 
 ### Historical vs. Modern Code Context
 
-| Historical Practice (Laws of the Indies) | Modern Philippine Equivleant |
+| Historical Practice (Laws of the Indies) | Modern Philippine equivalent |
 |------------------------------------------|-------------------------------|
 | Plaza dimensions and proportions mandated by royal ordinance | Open space requirements under **PD 1096 (NBCP)** — TOSL calculations; park and open-space provisions in local zoning ordinances |
 | Gridiron street layout from the plaza | Modern subdivision planning standards under **PD 957** (Subdivision and Condominium Buyers' Protective Decree) |
@@ -77,6 +90,13 @@ You are standing at the center of a Philippine town plaza. Directly in front of 
 ---
 
 ## LEA Exam Traps and Common Mistakes
+
+<ExamTip>
+
+**LEA Trap:** "The Laws of the Indies were applied uniformly across all Spanish colonies" — FALSE. While the 1573 Ordenanzas were the legal framework, local conditions forced adaptations: Philippine versions had thinner walls (earthquake adaptation), wider arcades (tropical sun/rain), and churches oriented differently than the strict E-W rule when site conditions demanded. The LEA tests whether you know the principle AND its local modification.
+
+</ExamTip>
+
 
 - **Trap: Confusing the Laws of the Indies with Las Siete Partidas.** **Las Siete Partidas** is a 13th-century Castilian legal code dealing broadly with civil, criminal, and religious law. The **Laws of the Indies (1573)** specifically codified urban planning and colonial governance. The LEA tests the 1573 ordinances for town planning — not Las Siete Partidas.
 - **Trap: Saying the plaza was "just a park."** The plaza was NOT merely recreational. It was the **political, religious, commercial, and social center** of the town. The church anchored religious authority; the municipio anchored civil authority; the marketplace anchored economic life. The spatial arrangement physically expressed the colonial power hierarchy.
@@ -131,6 +151,20 @@ D) Bandala
 
 > **Answer: B) Reducción.** The reducción (reduction/resettlement) policy forced indigenous communities to consolidate into planned towns built according to the Laws of the Indies grid plan. Residents were required to live "bajo de las campanas" — under the bells — within earshot of the church.
 
+
+<Tip>
+
+**Memory Aid: "P-L-A-Z-A = Plaza, Layout, Arcade, Zoning, Alignment."** The Laws of the Indies (1573) established five urban principles still visible in every Philippine colonial town: Plaza (central square as civic + religious heart), Layout (gridiron streets radiating from plaza), Arcade (portales/arcades for pedestrian shade), Zoning (administrative, religious, commercial zones around plaza), Alignment (buildings facing plaza, church at one end, government at another).
+
+</Tip>
+
 ---
 
 *Return to this module in 3 days. If you can answer the Active Recall questions cold, move to the next module.*
+
+---
+
+## Cross‑References
+
+**Spanish Colonial Bahay Na Bato**, **Colonial European Influence**, **American Colonial Era**, **Pre Colonial Vernacular**
+

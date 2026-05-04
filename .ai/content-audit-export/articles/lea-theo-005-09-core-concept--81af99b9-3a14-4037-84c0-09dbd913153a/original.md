@@ -4,6 +4,14 @@
 Critical Regionalism, theorized by Kenneth Frampton in his 1983 essay "Towards a Critical Regionalism: Six Points for an Architecture of Resistance," offers a third way beyond both modernism's placeless universalism and postmodernism's superficial historicism. The LEA examines your understanding of Frampton's framework, how critical regionalism differs from romantic vernacularism, and how contemporary architects apply its principles to create culturally and environmentally responsive architecture rooted in specific places.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define Kenneth Frampton's Critical Regionalism as a third way beyond universal Modernism and superficial Postmodern historicism.
+- Identify Frampton's six points from his 1983 essay "Towards a Critical Regionalism."
+- Distinguish Critical Regionalism from romantic vernacularism: it engages local conditions critically rather than sentimentally.
+
 ## Core Concept
 
 Critical Regionalism emerged in the 1980s as a response to two seemingly opposed but equally problematic architectural conditions: modernism's imposition of universal principles divorced from specific places, climates, and cultures, and postmodernism's superficial engagement with history through applied symbolism that lacked genuine cultural grounding. Kenneth Frampton, writing his seminal essay in 1983 and published in Hal Foster's anthology *The Anti-Aesthetic*, articulated a framework for architecture that would be critically engaged with local conditions without retreating into sentimental romanticism or nationalist essentialism.
@@ -82,3 +90,10 @@ Contemporary critical regionalism has expanded beyond Frampton's original framew
 **Postcolonial Architecture** — Architecture emerging from formerly colonized regions attempting to define identity beyond both colonizer's modernism and essentialist nationalism; critical regionalism is fundamentally postcolonial framework.
 
 **Climate Responsiveness** — Design decisions that acknowledge and engage specific climatic conditions (solar orientation, prevailing winds, seasonal variation, humidity) rather than imposing universal environmental control.
+
+## Related Articles
+
+See also within Architectural Philosophies: **lea-theo-005-01-core-concept**, **lea-theo-005-02-core-concept**, **lea-theo-005-04-core-concept**, **lea-theo-005-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

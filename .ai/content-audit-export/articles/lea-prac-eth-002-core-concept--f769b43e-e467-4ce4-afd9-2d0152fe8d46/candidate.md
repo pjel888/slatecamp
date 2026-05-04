@@ -16,9 +16,9 @@ The Architect's Credo is a compendium of principles and values embodied in profe
 
 The Credo is a mandatory recitation at mass oath-takings, IAPOA affairs, and PRBoA events. It establishes *tone* and *character* expectations; the Code establishes *conduct* standards. Architects who violate Code provisions may additionally be found to have abandoned Credo principles (grounds for character evaluation).
 
-<LawCallout code="ra9266" section="PRBoA Res. No. 02, Series of 2006" title="The Architect's Credo — Legal Status">
-The Architect's Credo is promulgated under PRBoA authority. It is a mandatory recitation but is aspirational rather than directly enforceable through discipline. Violations of the Credo alone cannot trigger suspension or revocation — only Code violations can. However, the Credo is used as supporting evidence in character evaluations during disciplinary proceedings.
-</LawCallout>
+<ArticleMedia id="media-eth002-architects-credo" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Architect's Credo — Core Pledges Map" description="Visual map of the eight Architect's Credo pledges arranged radially: Virtuous Commitment, Norms of Conduct, Professional Excellence, Fair Remuneration, Conflict of Interest Disclosure, Mentorship, Constructive Criticism, Sharing Knowledge. Each node shows the pledge language and its LEA relevance. Center circle distinguishes aspirational values (Credo) from enforceable rules (Code of Ethical Conduct)." placementIntent="ethics-framework" suggestedSearchQuery="Architect Credo pledges oath PRBoA Resolution 02 2006 aspirational ethics" suggestedAsset="Diagram or reference image" alt="Eight aspirational values from the Architects Credo mapped to professional behaviors" caption="Future diagram: eight aspirational values from the architects credo mapped to professional behaviors" />
+
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 
 ## Key Provisions
 
@@ -41,9 +41,7 @@ The Architect's Credo functions as the profession's character covenant. In Phili
 
 Recitation of the Credo at public oath-taking ceremonies symbolizes profession entry and commitment renewal. Unlike the Code's strict legal enforceability, the Credo's force derives from professional identity — architects who act against credo principles risk reputational damage, peer censure, and ultimately disciplinary action under the Code.
 
-<Warn>
-  **Critical Distinction:** The LEA often tests whether the Credo is "enforceable." The answer is NO — the Credo is aspirational. Only the Code of Ethical Conduct (SPP Doc 200) and RA 9266 are directly enforceable through PRBoA disciplinary action. However, abandoning Credo principles can be used as supporting character evidence in Code violation proceedings.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 
 ## How It's Tested
 
@@ -59,16 +57,9 @@ Recitation of the Credo at public oath-taking ceremonies symbolizes profession e
 **Question Pattern 4:** Constructive Criticism — Under the Credo, how should an architect handle criticisms?
 (Tests the pledge to confine criticisms to constructive limits without malicious motives)
 
-<ExamTip>
-  **LEA Watch:** Questions about the Credo often pair it with a Code provision and ask which applies. Remember: If the question involves a "pledge," "commitment," or "character" — it's the Credo. If it involves enforceable obligations, sanctions, or mandatory conduct — it's the Code. The Credo uses "I shall" language; the Code uses numbered sections.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 
-<Tip>
-  Remember that the Credo is a series of personal pledges ("I shall...")
-  covering duty to God/country, ethical norms, fair dealing, impartial judgment,
-  mentorship, constructive criticism, and sharing knowledge. The Credo aspires;
-  the Code constrains. Both are required for full professional conduct.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Common Mistakes
 

@@ -7,7 +7,6 @@ After reading this article, you should be able to:
 Distinguish a Certificate of Occupancy from a Building Permit by purpose and timing; identify the conditions for issuance, denial, and revocation under PD 1096 Sec. 309; apply Temporary CO and Partial CO rules; and calculate the consequences of occupying without a CO.
 ---
 
-
 **Module Focus:** Rule III, Sections 308–309 | PD 1096 National Building Code of the Philippines & 2004 Revised IRR
 **LEA Area:** Building Technology / Laws, Contracts & Ethics
 **Difficulty:** ★★★☆☆ (Moderate — procedural sequence is the exam challenge)
@@ -24,6 +23,10 @@ By the end of this module, you should be able to:
 ---
 
 ## The Real-World Hook
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="co-process-flowchain" type="diagram" caption="End-to-end procedural flowchart: Physical Completion → Certificate of Completion (notarized) → As-Built Plans → BFP Endorsement → FSIC within 5 working days → OBO Final Inspection → CO Issued within 30 calendar days. Include conditional CO bypass arrow when BFP is inactive. Use swimlane columns for Owner/Architect, OBO, and BFP."]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="co-timeline-comparison" type="diagram" caption="Timeline bar diagram comparing the 5 working day FSIC window vs the 30 calendar day CO issuance window. Show calendar grid with working days vs calendar days marked. Highlight what happens when each deadline expires."]
 
 It is 7:30 in the morning on a Thursday in Quezon City. A developer's newly completed nine-story mixed-use tower stands ready — lobby polished, elevators tested, retail spaces pre-leased and waiting for fit-out. The developer's leasing manager is pressing hard: "Can tenants start moving in this weekend?" The project architect quietly consults her construction logbook, cross-checks the as-built plans stacked on her desk, and shakes her head. "Not yet."
 
@@ -246,9 +249,6 @@ Remember the five components of the Certificate of Occupancy application:
 When the LEA asks "What documents must be submitted for a CO application?", run through **C-LABS** — you will have every element.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Text: 💡 Tip: The "S" in C-LABS (Sealed by licensed Architect/CE) applies to multiple documents — the Certificate of Completion, logbook, as-built plans, and Building Inspection Sheets all require the Architect/CE's seal. Only the Certificate of Completion additionally requires notarization.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -264,10 +264,6 @@ Think: **"FIRE burns fast (5 days), FINAL takes time (30 days)."**
 If FIRE is late (BFP doesn't act in 5 working days), Building Official may issue CO conditionally. FINAL always follows FIRE.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="nbcp"
-- Text: 🔑 The two critical timeframes are directly from PD 1096 Rule III, Sec. 309.4 (5 working days for FSIC) and Sec. 309.6 (30 calendar days for CO issuance after final inspection). These are the most tested numerical values in the CO topic.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -296,9 +292,6 @@ Extracted summary:
 **TRUTH:** Section 309.8 explicitly authorizes the Building Official to issue a **Partial Certificate of Occupancy** for portions of a building prior to completion of the entire building. Phased occupancy is a recognized and lawful practice under PD 1096. The Partial CO covers only the inspected and approved portions.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Text: 📌 On the LEA, expect a multi-option question asking which document(s) must be submitted with a CO application. The four required items are: (1) notarized Certificate of Completion, (2) construction logbook, (3) as-built plans, (4) Building Inspection Sheets. Wrong answers often omit the logbook or add extraneous documents.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -355,8 +348,6 @@ A large mixed-use development has 12 floors. Floors 1–4 (commercial podium) ar
 
 ---
 
-
-
 ---
 
 ## Cross‑References
@@ -373,3 +364,5 @@ A large mixed-use development has 12 floors. Floors 1–4 (commercial podium) ar
 6. **IBC 2021** — International Building Code, Section 111 (Certificate of Occupancy), Sections 111.1–111.4 — used for USA comparative analysis
 7. **IBC 2021** — Section 1705 (Special Inspections) — USA framework for construction inspection
 8. **Architectural Graphic Standards**, 12th Edition (Ramsey/Sleeper) — project delivery and inspection process references
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

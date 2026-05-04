@@ -1,10 +1,11 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your knowledge of **Maya** and **Aztec** monumental architecture—temple-pyramids, corbelled vaults, plaza organization, and the astronomical/cosmological symbolism encoded in their forms. You must distinguish Maya from Aztec traditions and recognize key sites and construction innovations.</Callout>
+## Learning Goal
 
+Distinguish Maya architecture (corbelled vaults, astronomy-aligned pyramids, hieroglyphic stairways, Tikal, Palenque) from Aztec architecture (double pyramids, ritual platforms, hydraulic engineering, Tenochtitlán) by their structural systems, urban planning, and symbolic programs.
 ## Core Concept
 
-Maya and Aztec architecture represents two consecutive Mesoamerican empires with different structural systems, urban philosophies, and building scleas. The **Maya civilization** (circa 2000 BCE – 1600s CE, though classical period peaks 250–900 CE) developed corbelled vault technology, hieroglyphic inscription on buildings, and pyramid-temples oriented to astronomical events. **Aztec civilization** (1345–1521 CE) built massive temple complexes and urban centers using stone masonry at a sclea surpassing earlier peoples, emphasizing ritual sacrifice, double pyramids, and hydraulic engineering. Both cultures embedded sacred cosmology into architectural form.
+Maya and Aztec architecture represents two consecutive Mesoamerican empires with different structural systems, urban philosophies, and building scales. The **Maya civilization** (circa 2000 BCE – 1600s CE, though classical period peaks 250–900 CE) developed corbelled vault technology, hieroglyphic inscription on buildings, and pyramid-temples oriented to astronomical events. **Aztec civilization** (1345–1521 CE) built massive temple complexes and urban centers using stone masonry at a scale surpassing earlier peoples, emphasizing ritual sacrifice, double pyramids, and hydraulic engineering. Both cultures embedded sacred cosmology into architectural form.
 
 <Tip>
 **Maya = corbelled vaults + astronomy + hieroglyphics; Aztec = double pyramids + ritual sacrifice + hydraulic engineering.** These are not the same culture. Maya peaked 250–900 CE, declined, and persisted. Aztec emerged 1345 CE—centuries later, different regions, different priorities. Master this distinction.
@@ -45,18 +46,16 @@ Both cultures used precisely cut stone, but deployment differed. Maya architectu
 <WikiExamTable headers={["**Site**", "**Culture**", "**Location**", "**Date**", "**Architect/Builder**", "**Key Feature**"]} rows={[['["**Chichen Itza** (Kukulkan Pyramid)", "Maya", "Yucatan, Mexico", "600–1200 CE", "Unknown", "Equinox shadow serpent; 365-step count"]', '["**Tikal, Temple IV**", "Maya Classic", "Peten, Guatemala", "600–900 CE", "Unknown", "65m height; corbelled vaults; rainforest siting"]', '["**Pleanque**", "Maya Classic", "Chiapas, Mexico", "600–800 CE", "Unknown", "Palace complex; tomb chamber in pyramid"]', '["**Temple of Inscriptions**", "Maya", "Pleanque", "c. 683 CE", "Unknown", "Interior corbelled-vault passage to royal burial"]', '["**Templo Mayor**", "Aztec", "Tenochtitlan (Mexico City)", "1375–1521 CE", "Aztec state", "Double pyramid; 60m height; Tlaloc/Huitzilopochtli"]', '["**Gran Plaza**", "Aztec", "Tenochtitlan", "1375–1521 CE", "Aztec state", "Ritual sacrifice arena; tens of thousands capacity"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Structural System Identification**
 Exams ask which culture or site employed a specific structural technique. Example: "The corbelled vault is characteristic of which pre-Columbian culture, and what constraint does this structure impose on interior space?" (Answer: Maya; corbelled vaults are triangular and stable only for narrow spans, limiting room width). You must connect structure to performance limits.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Astronomical and Cosmological Symbolism**
 Questions test whether you recognize encoded meaning in architectural form. Example: "The **Kukulkan Pyramid's** 365 steps and equinox shadow effects demonstrate what aspect of Maya culture?" (Answer: astronomical knowledge, solar cleandar integration, and sacred geometry). Expect comparison between Maya celestial and Aztec terrestrial symbolism.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Imperial Organization and Ritual Function**
 Exams ask what building programs reveal about political systems. Example: "The **Templo Mayor's** double pyramid and sclea indicate what about Aztec religious practice and imperial authority?" (Answer: cosmological duality, centralized state ritual, and sacrifice as cosmological necessity). Distinguish Maya dynastic/astronomical focus from Aztec imperial/ritual focus.</ExamTip>
 
+<Callout>The LEA tests your knowledge of **Maya** and **Aztec** monumental architecture—temple-pyramids, corbelled vaults, plaza organization, and the astronomical/cosmological symbolism encoded in their forms. You must distinguish Maya from Aztec traditions and recognize key sites and construction innovations.</Callout>
 
 ## Common Mistakes
 
@@ -65,7 +64,6 @@ Exams ask what building programs reveal about political systems. Example: "The *
 <WikiMistakeCard mistake="Misidentifying corbelled vaults as \"primitive\" or \"inferior\" to Roman arches" correction="Corbelled vaults are not failed attempts at true arches—they are legitimate structural systems adapted to stone technology, materials, and aesthetic preferences in Mesoamerica. Maya architects chose corbels; they were not ignorant of alternatives." context="Corbels' triangular silhouette appears deliberately in Maya art and symbolism." />
 
 <WikiMistakeList mistakes={["Overestimating interior space in Maya palaces. Corbelled vaults restrict span; interior corridors are narrow. Students imagine grand rooms but overlooked that Maya palaces featured multiple rooms in gallery formation. The visual splendor lay in carved stone, hieroglyphic inscriptions, and courtyard organization—not spacious interiors.", "Viewing Aztec sacrifice as \"barbarism\" rather than cosmological theology. The question is not moral judgment but architectural and cultural understanding. Aztec sacrifice was a state mandate tied to cosmological beliefs about maintaining cosmic balance. The **Templo Mayor's** design—accessible summit, central plaza, blood channels—was built to facilitate this theology. Understand the belief system the architecture expressed.", "Missing the astronomical/mathematical precision in pyramid proportions. Treat **Kukulkan's** 365-step count not as coincidence but as intentional encoding. Maya architects calculated planetary cycles and embedded this knowledge in stone. This demonstrates mathematical sophistication and sacred geometry."]} />
-
 
 ## Key Terms
 
@@ -88,3 +86,10 @@ Exams ask what building programs reveal about political systems. Example: "The *
 **Corbel**: Individual stone block projecting inward in a corbelled vault; each layer overhangs the one below.
 
 **Cosmological**: Relating to beliefs about the structure and order of the universe; encoded in architectural orientation and symbolism.
+
+## Related Articles
+
+See also within Pre-Columbian & Indigenous American Architecture: **lea-hist-012-02-core-concept**, **lea-hist-012-03-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

@@ -3,6 +3,12 @@
 
 ---
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Interpret contour maps to calculate slope percentages and identify buildable areas; apply slope categories (< 15% buildable, 15-25% challenging, > 25% constrained) to site planning decisions; calculate cut and fill volumes using the average-end-area method; and determine drainage patterns and erosion control requirements from topographic data.
+
 ## The Real-World Scenario (The Hook)
 
 You are the project architect for a 3-storey school building on a 5,000 sq.m. hillside lot in Baguio City. The site slopes from elevation 1,520 m at the northwest corner down to 1,505 m at the southeast corner over a horizontal distance of 120 meters. Before you can even begin your floor plan, you need to determine the site's average slope percentage, identify which zones are buildable and which require retaining walls, and compute the cut-and-fill volumes to present a balanced earthwork strategy that minimizes hauling costs — all while complying with the NSCP foundation requirements and local geohazard restrictions on steep-slope construction.
@@ -194,3 +200,33 @@ D. 340.0 m³
 
 > **Answer: B. 442.0 m³**  
 > Step 1: Loose volume = 400 × 1.30 = 520 m³. Step 2: Compacted volume = 520 × (1 − 0.15) = 520 × 0.85 = **442.0 m³**. Option A assumes no volume change. Option C is the loose volume (before compaction). Option D incorrectly subtracts 15% from the bank volume. The correct sequence is: Bank → Swell → Loose → Compact → Compacted fill. This 442 m³ result means the 400 m³ cut produces more compacted fill than the original bank volume — because swell outweighs shrinkage in clay. If your fill requirement is only 400 m³, you have a 42 m³ surplus to dispose of.
+
+
+---
+
+<LawCallout code="pd1096" section="Rule VIII - Site Development">
+
+
+Per the NSCP, foundations on sloping sites must be designed for the actual soil conditions at each foundation level. Stepped footings are required where slope exceeds 15%. Retaining walls are mandatory where cut or fill slopes exceed 2H:1V. Geotechnical investigation is required for any building on slopes >25%.
+
+
+</LawCallout>
+
+<Tip >
+
+Remember the slope buildability ranges: 0-5% (easy), 5-15% (moderate), 15-25% (challenging/stepped foundations), 25-40% (difficult/retaining walls), >40% (generally unbuildable). On exam problems, classify the slope first, then identify the required foundation approach.
+
+</Tip>
+
+<ExamTip >
+
+Cut-and-fill balance problems on the LEA typically give you a site cross-section with elevations at regular intervals. Calculate the average elevation, then determine cut and fill areas. The goal is cut ≈ fill to minimize hauling costs. Watch for questions that test whether you know that material compaction reduces fill volume by approximately 15-25%.
+
+</ExamTip>
+
+---
+
+## Cross‑References
+
+**Microclimate Analysis**, **Hydrology In Site Planning**, **Geological Hazards**, **Excavation Foundation And Veneer**
+

@@ -1,9 +1,24 @@
 # Fire Resistive Construction Ratings
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify fire-resistive ratings (1-hour through 4-hour) required for structural elements by building type, height, and occupancy under PD 1096 Rule VIII and Table VIII; apply the Type I-V construction classification to given building scenarios; and calculate required fire-resistive protection for columns, beams, floor/roof assemblies, and bearing walls.
+---
+
 **Module Focus:** Rule VI, Sections 601–604 — PD 1096 National Building Code of the Philippines (NBCP) & 2004 Revised IRR
 **LEA Area:** Building Technology / Building Laws, Codes, and Ethics
 **Difficulty:** Intermediate–Advanced
 **Spaced Repetition:** Return in 3 days to re-test yourself on the thickness table for concrete columns, the difference between fire-resistive rating and time period rating, and the material efficiency hierarchy. Return in 7 days to complete the Active Recall Questions without referencing any notes.
+
+## 🎯 Learning Goals
+
+By the end of this module, you should be able to:
+- Define fire-resistive rating and distinguish it from time period rating as defined in PD 1096 Rule VI
+- Recall the minimum column, wall, partition, and floor/roof thicknesses for 1-hour, 2-hour, 3-hour, and 4-hour fire-resistive ratings across material types
+- Apply the correct fire-resistive rating to building elements based on occupancy type, zone classification, and building height
+- Identify which material assembly type provides the most efficient (thinnest) protection at each rating level
 
 ---
 
@@ -19,7 +34,7 @@ Fire-resistive construction is the principle that buildings should be designed n
 
 Rule VI of PD 1096 provides the legal framework, the governing definitions, and the technical standards that make fire-resistive construction quantifiable and enforceable. It is the "how" behind the "what" that Rule V established: Rule V declares that you need two-hour exterior walls in a Fire Restrictive Zone; Rule VI tells you exactly how thick those walls must be and from which materials they must be made. Rule V sets the performance requirement; Rule VI specifies the pathway to compliance.
 
-For the Architecture Licensure Examination, Rule VI is among the most data-intensive topics tested. The key numbers — minimum thicknesses in millimeters for different assemblies at different time ratings — appear repeatedly in board exam questions. These are not numbers to estimate; they are numbers to know precisely, because the exam will present options that are close but specifically wrong. The strategy for this topic: understand the logic behind the numbers so deeply that memorization becomes a byproduct of comprehension rather than a separate effort.
+For the Licensure Examination for Architects, Rule VI is among the most data-intensive topics tested. The key numbers — minimum thicknesses in millimeters for different assemblies at different time ratings — appear repeatedly in board exam questions. These are not numbers to estimate; they are numbers to know precisely, because the exam will present options that are close but specifically wrong. The strategy for this topic: understand the logic behind the numbers so deeply that memorization becomes a byproduct of comprehension rather than a separate effort.
 
 ---
 
@@ -33,7 +48,7 @@ Per PD 1096, Rule VI, Sec. 601, **fire-resistive rating** is defined as:
 
 This definition deserves careful unpacking because it establishes the philosophical foundation for everything that follows in Rule VI.
 
-**"Degree to which a material can withstand fire"** — fire-resistive rating is a performance measure, not a prescriptive material classification. Two assemblies made of different materials can achieve the same rating if they perform equivleantly in a standardized fire test. A 175 mm solid concrete partition and a 200 mm solid masonry partition both achieve a four-hour rating, even though they are different materials and different thicknesses. The rating is about what they can do, not what they are made of.
+**"Degree to which a material can withstand fire"** — fire-resistive rating is a performance measure, not a prescriptive material classification. Two assemblies made of different materials can achieve the same rating if they perform equivalently in a standardized fire test. A 175 mm solid concrete partition and a 200 mm solid masonry partition both achieve a four-hour rating, even though they are different materials and different thicknesses. The rating is about what they can do, not what they are made of.
 
 **"As determined by generally recognized and accepted testing methods"** — the Code does not name a specific test standard in Sec. 601 itself. This is deliberate: standards evolve, and the Code does not want its definitions to become outdated every time ASTM or ISO revises a test method. The phrase "generally recognized and accepted" encompasses the international consensus on fire testing methodology, including ASTM E119 (Standard Test Methods for Fire Tests of Building Construction and Materials) and UL 263 in the US context, and Section 604 of the same Rule empowers the Secretary to prescribe specific standards as they evolve.
 
@@ -164,7 +179,7 @@ Modern spray-applied fire-resistive materials (SFRM), also called "spray firepro
 | Solid masonry | 200 mm | 175 mm | 150 mm | 100 mm |
 | Hollow masonry | 300 mm | 250 mm | 200 mm | 150 mm |
 
-Exterior walls must handle a more demanding exposure scenario than interior partitions. They face fire from one side (the interior) while simultaneously being exposed to weather, thermal cycling, and potentially heat from an adjacent burning building on the exterior side. This dual exposure explains why exterior wall thicknesses are generally greater than partition thicknesses at equivleant ratings.
+Exterior walls must handle a more demanding exposure scenario than interior partitions. They face fire from one side (the interior) while simultaneously being exposed to weather, thermal cycling, and potentially heat from an adjacent burning building on the exterior side. This dual exposure explains why exterior wall thicknesses are generally greater than partition thicknesses at equivalent ratings.
 
 Compare solid concrete partitions (175 mm at 4 hrs) vs. solid concrete exterior walls (180 mm at 4 hrs) — only 5 mm difference. The exterior exposure adds relatively little at the 4-hour level because at that extreme duration, the thermal mass of 150+ mm of concrete is already so substantial that the additional exposure does not dramatically change the required thickness.
 
@@ -238,7 +253,7 @@ Synthesizing the Sec. 603 table reveals a consistent hierarchy of thermal effici
 3. Masonry encasement — thickest, heaviest (38 mm at 1 hr; 100 mm at 4 hrs)
 
 **For walls, partitions, and columns (Categories B, D, E):**
-1. Solid concrete — thinnest for equivleant rating
+1. Solid concrete — thinnest for equivalent rating
 2. Solid masonry — slightly thicker
 3. Hollow unit masonry — significantly thicker (approximately 50–71% more than solid concrete)
 
@@ -310,7 +325,7 @@ The principle driving this hierarchy: **dense, homogeneous thermal mass is the m
 | **Roof covering classification** | Fire-retardant roof coverings per Sec. 604 | IBC 1505: Class A, B, C per ASTM E108 (test using burning brand, spread of flame, intermittent flame exposures) |
 | **Protection of openings** | Sec. 604: Secretary prescribes firestop standards | IBC 714 (Penetrations); IBC 715 (Fire-Resistant Joint Systems); ASTM E814 for firestop testing |
 | **Prescriptive vs. tested assemblies** | Prescriptive table in Sec. 603 + Secretary's tested assembly standards per Sec. 604 | Both: prescriptive in IBC Chapter 7 (Tables 722.x) + UL Product iQ fire-rated assembly database + GAF, GYPROC, and other manufacturer listings |
-| **Overall thickness tendency** | PH prescriptive thicknesses generally more conservative (thicker) than IBC prescriptive equivleants, especially for RC columns | IBC provides more detailed gradations by concrete mix, aggregate type, and other variables |
+| **Overall thickness tendency** | PH prescriptive thicknesses generally more conservative (thicker) than IBC prescriptive equivalents, especially for RC columns | IBC provides more detailed gradations by concrete mix, aggregate type, and other variables |
 | **Overall philosophy** | Prescriptive minimum thickness approach; straightforward for field application | Combination of prescriptive and tested assemblies; more granular distinction by material properties |
 
 **Key insight for the board exam:** Philippine RC column minimums (200–450 mm) are notably larger than typical IBC prescriptive column sizes (203–305 mm for normal-weight concrete). This reflects the Philippine Code's conservatism, which accounts for the combined effects of fire and seismic loading — columns must be robust enough to maintain structural integrity under both threat types. The IBC, while highly detailed, specifies somewhat smaller column sizes because it separates structural (seismic) design from fire-resistance design more cleanly at the code level.
@@ -482,7 +497,7 @@ TRUTH: A 125 mm overall depth satisfies the 2-hour depth requirement (125 mm at 
 
 **TRAP 2: "Metal encasement in masonry provides better fire protection than metal lath with perlite gypsum plaster because the masonry material is denser and more robust."**
 
-TRUTH: Per PD 1096, Rule VI, Sec. 603, for equivleant thickness, metal lath with vermiculite/perlite gypsum plaster always achieves a **higher fire resistance rating** than masonry encasement. At 50 mm, plaster = 4-hour protection, masonry = between 1 and 2 hours (55 mm is needed for 2 hours). At 38 mm, plaster = 3 hours, masonry = 1 hour. The robustness or durability of masonry has no bearing on fire-resistive time period rating, which is determined solely by thermal performance in a standardized test. Density alone does not predict thermal insulation efficiency — it is the microstructural void geometry (microscopic pores in perlite/vermiculite) that makes the plaster system thermally superior despite being less dense in bulk form.
+TRUTH: Per PD 1096, Rule VI, Sec. 603, for equivalent thickness, metal lath with vermiculite/perlite gypsum plaster always achieves a **higher fire resistance rating** than masonry encasement. At 50 mm, plaster = 4-hour protection, masonry = between 1 and 2 hours (55 mm is needed for 2 hours). At 38 mm, plaster = 3 hours, masonry = 1 hour. The robustness or durability of masonry has no bearing on fire-resistive time period rating, which is determined solely by thermal performance in a standardized test. Density alone does not predict thermal insulation efficiency — it is the microstructural void geometry (microscopic pores in perlite/vermiculite) that makes the plaster system thermally superior despite being less dense in bulk form.
 
 ---
 
@@ -510,9 +525,11 @@ A structural engineer proposes an RC column with a minimum cross-sectional dimen
 
 > **ANSWER: B**
 >
-<LawCallout code="nbcp" title="300 mm is the 2-hour standard; the 1-hour standard is 200 mm. Option C incorrect">
+<LawCallout code="pd1096" section="Rule IV - Fire-Resistive Construction">
+
 
 Per PD 1096, Rule VI, Sec. 603, a reinforced concrete column with all faces exposed requires a minimum dimension of 450 mm for four-hour fire resistance. A Highly Fire Restrictive Zone requires construction assemblies of not less than three to four-hour fire-resistive construction (per Rule V, Sec. 507-c), so the four-hour standard applies. A 300 mm column satisfies the two-hour requirement only. Option A is incorrect — 300 mm is the 2-hour standard; the 1-hour standard is 200 mm. Option C incorrectly applies the Fire Restrictive Zone exterior wall standard to the column dimension requirement. Option D fabricates a restriction that does not exist in the Code — RC columns are the standard structural element for Type V buildings.
+
 
 </LawCallout>
 >
@@ -600,6 +617,14 @@ Before moving on to the next topic, verify you can fill in these values from mem
 | What does Sec. 602 define? | Fire-resistive time period rating (hours — unit of measurement) |
 
 ---
+
+## 🎯 Exam Tip: The Three Most Tested Numbers
+
+---
+
+## Cross‑References
+
+**Fire Zones And Existing Buildings**, **Chimneys And Fireplaces**, **Fire Extinguishing Systems**, **Vertical Openings And Floor Roof Construction**
 
 ## Verified Sources
 

@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>You must know all five Gestalt principles of visual perception: proximity, similarity, continuity, closure, and figure-ground. You must be able to define each principle, explain its psychological basis, and provide architectural examples. The LEA will test these as definitions, visual identification in building designs, and design application problems requiring you to compose spaces following gestalt principles.</Callout>
+## Learning Goal
 
+Identify and apply the five Gestalt principles of visual perception — proximity, similarity, continuity, closure, figure-ground — and explain how each principle affects how architectural forms are perceived, grouped, and understood.
 ## Core Concept
 
 ### Gestalt Psychology and Visual Perception
@@ -12,7 +13,7 @@
 
 German psychologists Max Wertheimer, Kurt Koffka, and Wolfgang Kohler developed gestalt principles through research and observation in the 1920s and 1930s. They documented that humans automatically group visual elements according to consistent rules. These rules are not learned; they operate at pre-conscious levels. Infants show gestalt grouping before cultural learning. However, gestalt principles operate within cultural visual experience; people exposed to different visual environments may emphasize different groupings.
 
-For architects, gestalt principles explain how occupants perceive spaces and compositions. A building composed of distinct, isolated elements appears fragmented and chaotic. A building composed to follow gestalt principles—grouping related elements, creating continuity, emphasizing wholeness—appears organized and coherent. Gestalt principles operate throughout architectural scleas: the organization of a single facade, the arrangement of rooms within a floor, the circulation hierarchy of a complex building, the organization of a campus or urban district.
+For architects, gestalt principles explain how occupants perceive spaces and compositions. A building composed of distinct, isolated elements appears fragmented and chaotic. A building composed to follow gestalt principles—grouping related elements, creating continuity, emphasizing wholeness—appears organized and coherent. Gestalt principles operate throughout architectural scales: the organization of a single facade, the arrangement of rooms within a floor, the circulation hierarchy of a complex building, the organization of a campus or urban district.
 
 <Note>Gestalt principles operate at **pre-conscious levels**—occupants respond to them before conscious thought. This is why gestalt-organized spaces feel "right" and gestalt-violating spaces feel "wrong" without occupants necessarily understanding why.</Note>
 
@@ -66,7 +67,7 @@ Architectural applications of continuity principle:
 ### Principle 4: Closure
 **Closure** is the principle that humans perceive complete shapes from incomplete visual information. Given fragmentary visual cues, the mind fills in missing information to perceive whole, coherent objects. This principle explains why humans perceive complete circles when shown three-quarter circles, perceive rectangles when shown rectangles missing corners, and perceive buildings when shown partial facades.
 
-Closure operates at all scleas. At the level of individual elements, a rectangle can be implied through corners without complete outline. At the sclea of buildings, a structure can be understood through partial visibility; the hidden portions are mentally completed. At the sclea of cities, districts can be perceived as unified wholes despite partial visibility.
+Closure operates at all scales. At the level of individual elements, a rectangle can be implied through corners without complete outline. At the scale of buildings, a structure can be understood through partial visibility; the hidden portions are mentally completed. At the scale of cities, districts can be perceived as unified wholes despite partial visibility.
 
 Architectural applications of closure principle:
 
@@ -108,31 +109,27 @@ However, gestalt principles are not rules to be rigidly followed. Contemporary a
 <WikiExamTable headers={["Principle", "Definition", "Architectural Example", "LEA Test Pattern"]} rows={[['["**Proximity**", "Elements positioned close together are perceived as related and grouped; distance creates separation", "Columns grouped closely define bays; windows clustered define zones", "Design facade or space with proximity-based grouping; analyze how spacing affects perception"]', '["**Similarity**", "Elements sharing visual characteristics (color, shape, size, texture) are perceived as grouped despite spatial separation", "Uniform fenestration creates facade unity; matching materials create campus cohesion", "Select materials and elements creating visual unity through similarity; identify similarity in existing buildings"]', '["**Continuity**", "Eye follows curves and lines; smooth continuation is preferred to abrupt changes; creates visual flow", "Axial corridors provide navigation clarity; horizontal fenestration bands create unified elevation", "Design circulation with clear continuity; analyze how interrupted continuity disrupts spatial coherence"]', '["**Closure**", "Complete shapes are perceived from incomplete information; mind fills in missing visual information", "Colonnades define space without walls; partially visible buildings are still understood", "Design spaces using partial definition and implied enclosure; analyze how closure affects space perception without full enclosure"]', '["**Figure-Ground**", "Objects (figures) are perceptually separated from surrounding context (ground); relationship is relational and reversible", "Buildings distinguished from context through contrast; fenestration patterns defining figure-ground relationships", "Analyze buildings\' figure-ground relationships; design clear figure-ground hierarchy in facade or plan composition"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Gestalt Principle Definition and Identification**
 Stem: "Identify which gestalt principle is demonstrated by each: (a) A row of windows closely spaced followed by a wider gap, then another group of windows creates visual perception of two distinct building bays. (b) An interior space is defined by a circular row of columns without perimeter walls. (c) A glass building's translucent quality makes it difficult to perceive as distinct from its surroundings. (d) Staircases with consistent riser and tread dimensions create sense of continuity despite directional changes."
 Expected response: (a) Proximity; (b) Closure; (c) Figure-ground; (d) Continuity. Demonstration of understanding each principle's perceptual operation.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Facade Design Application**
 Stem: "Design a three-story commercial facade for a 30-meter-wide building. Using gestalt principles, create visual unity and hierarchy that communicates ground-level retail, mid-level office, and upper-level residential uses."
 Expected response: Proximity-based grouping of windows by floor; similarity through material or color differentiation by use; continuity through horizontal bands or vertical columns emphasizing organizational logic; closure through partial enclosure suggesting room divisions; figure-ground distinction between mullion frame (figure) and glass (ground), or vice versa.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Spatial Organization Problem**
 Stem: "A university campus with 12 buildings shows low wayfinding clarity despite signage. Using gestalt principles, explain perceptual problems and propose organizational strategies."
 Expected response: Identification of gestalt failures: buildings not grouped by proximity or similarity, creating perception of scattered objects; circulation paths lacking continuity, requiring multiple mental reorientation; inadequate closure in spatial organization, leaving campus boundaries unclear; confused figure-ground relationships where important buildings don't read as distinct. Proposed improvements: proximity-based building clustering, similarity through consistent materials and sclea, continuous paths defining clear organizational axes, closure through landscape or architectural framing defining campus edges, clear figure-ground distinction between institutional buildings and landscape context.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Interior Space Composition**
 Stem: "Design an open-plan office floor accommodating 40 workers while maintaining visual clarity and functional zones without full walls. Apply gestalt principles to create coherent spatial organization perceived as organized, not chaotic."
 Expected response: Proximity clustering of desks into functional groups; similarity through desk type, materials, color creating zone definition; continuity through linear desk arrangements and sight-line management; closure through partial enclosure (height-variable screens, overhead elements) implying zones without complete walls; figure-ground distinction between primary work areas (figure) and circulation (ground), or between focused work areas and collaborative zones.</ExamTip>
 
-
 <ExamTip>**Pattern 5: Complex Building Facade Analysis**
 Stem: "Analyze this building facade photograph in terms of gestalt principles. How do the design choices create or disrupt perceptual organization? Propose modifications improving gestalt clarity."
 Expected response: Identification of proximity groupings, similarity patterns, continuity (or disruption) of visual lines, closure application, and figure-ground relationships. Analysis of whether these create unified coherence or visual confusion. Specific proposed modifications: adjusted spacing creating clearer proximity groups, modified materials enhancing similarity, aligned elements creating continuity, partial enclosure creating closure, enhanced figure-ground differentiation.</ExamTip>
 
+<Callout>You must know all five Gestalt principles of visual perception: proximity, similarity, continuity, closure, and figure-ground. You must be able to define each principle, explain its psychological basis, and provide architectural examples. The LEA will test these as definitions, visual identification in building designs, and design application problems requiring you to compose spaces following gestalt principles.</Callout>
 
 ## Common Mistakes
 
@@ -141,7 +138,6 @@ Expected response: Identification of proximity groupings, similarity patterns, c
 <WikiMistakeCard mistake="Over-applying similarity" correction="Using such uniform materials, colors, and forms that visual monotony results." context="While similarity creates unity, excessive similarity creates boredom and visual fatigue." />
 
 <WikiMistakeList mistakes={["Disrupting continuity unnecessarily. Creating fragmented visual experiences through frequent directional changes and disrupted sightlines without design intent. Continuity supports navigation clarity; unnecessary disruption creates confusion.", "Misunderstanding closure. Assuming closure means complete visual enclosure. Closure operates through implied completion; partial definition often creates more sophisticated spatial experience than complete enclosure.", "Confusion about figure-ground relativity. Assuming figure-ground relationships are fixed rather than relational and reversible. Good design makes intentional choices about what reads as figure and what reads as ground; ambiguity creates confusion.", "Ignoring complexity at different scleas. Applying gestalt principles at single sclea without recognizing their operation at multiple scleas. A facade may have coherent gestalt organization at close view and different organization at city sclea."]} />
-
 
 ## Key Terms
 
@@ -162,3 +158,10 @@ Expected response: Identification of proximity groupings, similarity patterns, c
 **Visual Hierarchy** — Organization of visual elements into primary (figural) and secondary (ground) relationships supporting clear perception of importance and relationships.
 
 **Spatial Coherence** — Unified, organized perception of space resulting from consistent application of gestalt principles and clear relationships.
+
+## Related Articles
+
+See also within Design Perception: **lea-theo-003-01-core-concept**, **lea-theo-003-02-core-concept**, **lea-theo-003-03-core-concept**, **lea-theo-003-04-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

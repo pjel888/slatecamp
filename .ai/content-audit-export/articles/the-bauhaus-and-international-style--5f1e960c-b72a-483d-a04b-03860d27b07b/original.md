@@ -1,5 +1,9 @@
 # The Bauhaus and International Style
 
+## Learning Goal
+
+By the end of this module, you will be able to distinguish the Bauhaus (a school with a pedagogical mission) from the International Style (a critical label for shared formal characteristics), identify key figures and buildings for each, and recognize "Form Follows Function" as Louis Sullivan's pre-Modernist principle adopted by both movements.
+
 ## The Real-World Scenario (The Hook)
 
 You see a stark white building with a flat roof, glass curtain walls, no applied ornament, and an asymmetric composition of cubic volumes. The LEA question asks you to identify whether this is Bauhaus, International Style, or both — and to name the phrase Louis Sullivan coined that became the movement's battle cry. Getting this right means understanding where the Bauhaus ends and the International Style begins.
@@ -15,6 +19,13 @@ You see a stark white building with a flat roof, glass curtain walls, no applied
 - **Key Distinction for LEA:** The Bauhaus is a school (institution + pedagogy); the International Style is a style label (formal characteristics). Gropius founded the Bauhaus; Hitchcock and Johnson named the International Style. Sullivan coined the phrase but preceded both movements.
 
 ## The Hard Data (Cheat Sheet)
+
+<Note>
+
+**Exam Note:** The Bauhaus was founded 1919 (Weimar), moved to Dessau 1925, closed under Nazi pressure 1933. Three directors: Walter Gropius (1919-1928, founder — "art and technology, a new unity"), Hannes Meyer (1928-1930, more leftist/functionalist), Ludwig Mies van der Rohe (1930-1933, shifted to architecture focus). The International Style was CODIFIED in the 1932 MoMA exhibition by Henry-Russell Hitchcock and Philip Johnson — distinct from the Bauhaus but deeply influenced by it.
+
+</Note>
+
 
 | Entity | Type | Year(s) | Key Figures | Defining Features |
 |---|---|---|---|---|
@@ -41,13 +52,40 @@ You see a stark white building with a flat roof, glass curtain walls, no applied
 | 2. Regularity over Symmetry | Structural grids and modular repetition replace Classical bilateral symmetry |
 | 3. No Applied Ornament | Beauty arises from proportion, material, and detail — not from decorative appliqué |
 
+<Tip>
+
+**Memory Aid: "VRO = Zero Ornament."** Hitchcock and Johnson's three International Style principles: Volume over mass, Regularity over symmetry, (n)O ornament. "VRO" sounds like "zero" — the International Style aims for zero decoration. Memorize this for speed on exam day.
+
+</Tip>
+
+<Example>
+
+**Analogy:** Think of the Bauhaus as a university and the International Style as a fashion trend. The Bauhaus was founded by Walter Gropius with a specific curriculum (the Vorkurs, workshops, guild-like apprenticeship). The International Style was a label applied by critics Hitchcock and Johnson in 1932 to describe what they saw in buildings across Europe — like saying "Mid-Century Modern" to describe a furniture style, not a school. You can graduate from the Bauhaus, but you cannot graduate from the International Style.
+
+</Example>
+
+<ExamTip>
+
+**LEA Exam Pattern:** Expect a question showing a stark white cubic building with a flat roof and strip windows, asking whether it is Bauhaus, International Style, or both. The correct answer is usually "International Style" (a style label), but if the exam mentions Dessau or Gropius, the answer is "Bauhaus" (a specific school). The trap: a building can be both — like Gropius's own Bauhaus Building in Dessau, which is a Bauhaus design that also exemplifies International Style principles.
+
+</ExamTip>
+
 ## LEA Exam Traps and Common Mistakes
+
+<ExamTip>
+
+**LEA Trap:** "The Bauhaus and the International Style are the same thing" — FALSE. The Bauhaus was a GERMAN SCHOOL (1919-1933) that taught all arts and crafts. The International Style is a STYLE CLASSIFICATION (codified 1932 by Hitchcock and Johnson for a MoMA exhibition). The Bauhaus influenced the International Style, but they are not synonymous — Gropius, Breuer, and Mies were Bauhaus figures who later practiced International Style, but many International Style architects (e.g., Le Corbusier) had no Bauhaus connection.
+
+</ExamTip>
+
 
 - **Trap 1: Confusing who coined "Form Follows Function."** Louis Sullivan coined it in 1896 — not Walter Gropius, not Le Corbusier, not Mies. Sullivan was a pre-Modernist working in the Chicago School. The Bauhaus adopted the idea, but Sullivan is the source. LEA distractors frequently misattribute it.
 
 - **Trap 2: Treating "Bauhaus" and "International Style" as synonyms.** The Bauhaus is a school (Weimar → Dessau → Berlin, 1919–1933). The International Style is a critical label applied by Hitchcock and Johnson in 1932 to buildings by multiple architects across multiple countries. Not all International Style buildings are Bauhaus; not all Bauhaus work is International Style (early Weimar-phase work was Expressionist).
 
 - **Trap 3: Thinking the Bauhaus was only about architecture.** The Bauhaus integrated all design disciplines — furniture (Breuer's Wassily Chair, 1925), typography (Herbert Bayer's Universal typeface), textiles (Anni Albers), metalwork (Marianne Brandt), and theater (Oskar Schlemmer). LEA questions may test this interdisciplinary scope.
+
+**Connecting History to the Exam:** On the LEA, when you see a white cubic building with strip windows and no ornament, do not rush to answer "Bauhaus" — check if the exam mentions a school (Bauhaus) or a style label (International Style). That distinction is one of the most frequently tested concepts in the History section.
 
 ## Board-Prep Mnemonics
 
@@ -83,3 +121,10 @@ C. Weimar → Dessau → Berlin
 D. Weimar → Berlin → Dessau
 
 > **Correct Answer: C.** The Bauhaus was founded in Weimar (1919), relocated to Dessau (1925) where Gropius built the iconic school building, and finally moved to Berlin (1932) under Mies van der Rohe's directorship before being forced to close by the Nazi regime in 1933.
+
+---
+
+## Cross‑References
+
+**Le Corbusier Five Points**, **Mies Van Der Rohe**, **Post Modernism**, **21St Century Movements**
+

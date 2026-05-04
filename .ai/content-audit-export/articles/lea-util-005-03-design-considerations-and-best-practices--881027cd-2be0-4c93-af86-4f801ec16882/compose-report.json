@@ -1,18 +1,24 @@
 {
   "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
   "slug": "lea-util-005-03-design-considerations-and-best-practices",
-  "generated_at": "2026-05-03T13:44:11.374Z",
+  "generated_at": "2026-05-04T00:05:38.662Z",
   "original_hash": "sha256:8a570e3a892889f97f8e9094f38b8a62c14177546fda8742ea85acc7632e0110",
-  "normalized_hash": "sha256:79d6a077855f6a7f3d096838dc61e76a488dcd87b9db7b2060a2cb51c114dab6",
-  "candidate_hash": "sha256:a6d257e93dd71031c56834670eb0f6aeb74896fa07d7a5878609943ec47ed6ab",
+  "normalized_hash": "sha256:edef1b2fcc574fe964c5b8d855d634b0e3e4369256e10592a94e9203b4cf20c3",
+  "candidate_hash": "sha256:edef1b2fcc574fe964c5b8d855d634b0e3e4369256e10592a94e9203b4cf20c3",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
+  "unused_blocks": [
+    "ui_0010",
+    "ui_0011"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0010 was not used during composition.",
+    "UI block ui_0011 was not used during composition."
+  ]
 }

@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Proxemics is the study of how people use and perceive space, particularly the invisible boundaries between bodies that signal social relationship. Edward T. Hall's four distances—intimate, personal, social, and public—appear on the LEA with exact numerical measurements. You must memorize these (intimate 0–45cm, personal 45cm–1.2m, social 1.2–3.7m, public 3.7m+) because exam questions directly test whether you can match architectural spacing to Hall's zones and cultural appropriateness.</Callout>
+## Learning Goal
 
+Identify Edward T. Hall's four proxemic zones — intimate (0-0.45m), personal (0.45-1.2m), social (1.2-3.6m), public (3.6m+) — and explain how these invisible spatial boundaries shape design decisions for different functional settings.
 ## Core Concept
 
 Architecture does not exist in isolation from human behavior. Buildings create zones of social interaction, and those zones either support or undermine the activities within them. Edward T. Hall, an American anthropologist and cross-cultural researcher, developed proxemic theory in the 1960s, recognizing that humans maintain invisible, culturally-shaped bubbles of distance around themselves—bubbles that expand or contract depending on relationship, context, and cultural norms. His 1966 book *The Hidden Dimension* published and codified four interpersonal distances based primarily on North American (white, middle-class, urban) behavioral norms, each with distinct physical, psychological, and social characteristics. Understanding proxemics is essential to the LEA because exam questions test whether you can translate Hall's theory into architectural design: spacing between chairs, distance from a speaker to audience, layout of consultation rooms, placement of seating in hospitals and clinics, and the psychology of crowding in public squares.
@@ -31,21 +32,17 @@ Additionally, proxemics is culturally variable. Hall's distances are based on No
 <WikiExamTable headers={["Distance Zone", "Range (cm)", "Range (feet)", "Social Context", "Architectural Application", "Max. Seating Separation", "Tested As"]} rows={[['["Intimate", "0–45", "0–18\\"", "Lovers, close family, confession, trust", "Private bedroom, bathroom, counseling room, consultation booth", "45cm", "Distance for privacy design; consultation room layout"]', '["Personal", "45–120", "18\\"–4\'", "Friends, family, close colleagues", "Living room, dining, kitchen, restaurant booth, small office", "60–90cm (conversation); up to 1.2m (far end of personal distance)", "Table spacing, office cubicle distance, residential layout"]', '["Social", "120–370", "4\'–12\'", "Acquaintances, colleagues, formal meeting", "Office desk-to-desk, classroom teacher-to-student, small conference room, reception area", "1.5–2.5m (optimal); 3.7m (maximum)", "Classroom seating, office layout, meeting room spacing"]', '["Public", "370+", "12\'+", "Formal address, performance, strangers, anonymity", "Lecture hall, auditorium, civic plaza, large plaza, museum gallery", "3.7m+ (minimum); crowd density ~0.4–0.6m² per person", "Plaza design, auditorium seating, lecture hall acoustics"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Direct Proxemic Distance Matching (MCQ):** "According to Edward T. Hall's proxemic theory, personal distance ranges from (a) 0–45cm (b) 45cm–1.2m (c) 1.2–3.7m (d) 3.7m+." Answer: (b). Straightforward recall of Hall's four zones.</ExamTip>
-
 
 <ExamTip>2. **Architectural Application with Proxemic Context:** "A hospital is designing a private consultation room for sensitive medical interviews. Which spatial arrangement best supports the appropriate proxemic distance? (a) Seating 3m apart (social distance) (b) Seating 60–90cm apart with acoustic privacy (personal-intimate transition) (c) Seating 5m apart (public distance) (d) Standing with 30cm separation (intense intimate)." Answer: (b). Tests application of intimate/personal boundary to real design context.</ExamTip>
 
-
 <ExamTip>3. **Classroom Design via Proxemic Principle:** "In designing a 30-student classroom with teacher-led instruction, the distance from the teacher's position to the furthest student should be within which proxemic zone? (a) Personal (45cm–1.2m) (b) Social (1.2–3.7m) (c) Public (3.7m+) (d) Intimate (0–45cm)." Answer: (b) Social distance. Tests understanding that classroom formality requires social distance, not personal intimacy.</ExamTip>
-
 
 <ExamTip>4. **Cultural and Contextual Variation:** "Proxemic distances vary across cultures. Given that the Philippines has a strong family-centered culture, how might residential living rooms differ from the Western (Hall) standard? (a) Closer seating; smaller personal distance zone (b) Larger seating separation; expanded personal distance (c) Elimination of personal distance; merging all zones (d) No cultural difference; apply Hall uniformly." Answer: (a). Tests critical thinking beyond rote memorization; requires integration of cultural knowledge with Hall's theory.</ExamTip>
 
-
 <ExamTip>5. **Crowd Psychology and Public Distance:** "A city plaza is designed for informal gathering and public assembly. If 300 people occupy the plaza, what minimum area (in square meters) ensures crowd comfort without overwhelming density? Using public distance (0.4–0.6m² per person)." Answer: 120–180m² (300 × 0.4–0.6). Tests calculation and understanding of public distance psychology.</ExamTip>
 
+<Callout>Proxemics is the study of how people use and perceive space, particularly the invisible boundaries between bodies that signal social relationship. Edward T. Hall's four distances—intimate, personal, social, and public—appear on the LEA with exact numerical measurements. You must memorize these (intimate 0–45cm, personal 45cm–1.2m, social 1.2–3.7m, public 3.7m+) because exam questions directly test whether you can match architectural spacing to Hall's zones and cultural appropriateness.</Callout>
 
 ## Common Mistakes
 
@@ -54,7 +51,6 @@ Additionally, proxemics is culturally variable. Hall's distances are based on No
 <WikiMistakeCard mistake="Using imperial measurements carelessly" correction="Hall's original work uses feet and inches (4 feet = 1.22m, not 1.2m exactly; 12 feet = 3.66m, not 3.7m). Some conversions are approximate." context="The LEA likely uses metric (45cm, 1.2m, 3.7m), so students must convert and memorize the metric versions, not revert to imperial in exam answers." />
 
 <WikiMistakeList mistakes={["Assuming Hall's distances are universal. Hall based his theory on North American (primarily white, urban, middle-class) behavior. Some students mistakenly treat Hall as a global standard without exception. The LEA tests whether you can recognize cultural variation while still knowing Hall's framework. A follow-up question might ask: \"Which proxemic distance would increase in a high-context collectivist culture?\" Answer: personal and social distance zones might contract, as closer proximity is culturally comfortable.", "Confusing proxemic zones with absolute spacing rules. Proxemics is a psychological and social phenomenon, not a strict architectural dimension like door height. A student might insist \"seats must be exactly 1m apart in personal distance,\" missing that Hall describes a range (45cm–1.2m) and that comfort depends on context, furniture, visual barriers, and activity. Proxemics is about zone appropriateness, not measuring tape precision.", "Forgetting acoustic and visual privacy as proxemic supports. A restaurant can seat tables 1.2m apart (personal distance minimum) if they have booth dividers, screens, or sound absorption; without these, the same spacing feels crowded (social distance violated). Students sometimes choose a distance without considering that barriers, furniture, and sensory design are proxemic technologies. The LEA rewards answers that integrate proxemic distance with privacy design.", "Applying proxemics only to floor plans, ignoring height and enclosure. Proxemics is three-dimensional. Intimate distance in a high-ceilinged, echoing space feels different from intimate distance in a low-ceilinged, enclosed room. A student might design appropriate floor distances but miss that ceiling height, wall finishes, and lighting affect proxemic perception. The LEA tests integrated design, not proxemics in isolation."]} />
-
 
 ## Key Terms
 
@@ -81,3 +77,10 @@ Additionally, proxemics is culturally variable. Hall's distances are based on No
 **Proxemic design** — The deliberate arrangement of architectural elements (furniture, barriers, walls, screens) to support appropriate proxemic zones and social comfort.
 
 **Sensory design (in proxemics context)** — The use of light, color, acoustics, texture, and scent to reinforce proxemic boundaries and create psychological comfort in different distance zones.
+
+## Related Articles
+
+See also within Design Perception: **lea-theo-003-01-core-concept**, **lea-theo-003-03-core-concept**, **lea-theo-003-04-core-concept**, **lea-theo-003-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

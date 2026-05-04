@@ -1,7 +1,9 @@
 ## What You Need to Know for the LEA
 
-Philippine native species form complex ecological systems shaped by tropical biodiversity, endemic endemism, and long human-landscape interaction. Understanding native species identification, ecological systems, and biodiversity conservation is essential for landscape architects, environmental planners, and developers working in the Philippines. This article covers species recognition, ecological principles, and the distinction between native and exotic species, with focus on successional planting and ecological restoration.
+## Learning Goal
+Identify Philippine native species and their ecological roles, distinguish native from exotic/invasive species, apply successional planting and ecological restoration principles, and evaluate biodiversity conservation in landscape design.
 
+Philippine native species form complex ecological systems shaped by tropical biodiversity, endemic endemism, and long human-landscape interaction. Understanding native species identification, ecological systems, and biodiversity conservation is essential for landscape architects, environmental planners, and developers working in the Philippines. 
 ### Philippine Biodiversity and Native Species Framework
 
 The Philippines is one of the world's 17 mega-diverse countries, with extraordinary species richness and high endemism (species found nowhere else on Earth). Philippine ecosystems include tropical rainforests, mangrove wetlands, coastal seagrass beds, coral reefs, and montane forests. Native species are plants and animals that naturally occur in the Philippines, having evolved here over millennia through ecological processes.
@@ -59,9 +61,13 @@ Ecosystems are communities of plants, animals, and microorganisms interacting wi
 
 **Successional stages:**
 
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
 1. **Pioneer stage:** Fast-growing, light-demanding species dominate. Common Philippine pioneer trees include _Albizia_ spp., _Macaranga_ spp., and _Solanum_ spp. Pioneer species thrive in open sun and poor soil.
 
 2. **Early successional stage:** Mix of pioneers and slower-growing species. Soil improves; shade increases.
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
 
 3. **Mid-successional stage:** Shade-tolerant species establish; pioneers decline as canopy closes. Understory becomes richer.
 
@@ -92,6 +98,10 @@ Successional planting intentionally recreates ecological succession to restore d
 
 **Exotic (or introduced) species** are non-native plants brought to the Philippines by humans. Exotic species are not inherently destructive—many valuable agricultural crops (rice, cacao, mango) are exotic. However, some exotic species become **invasive**—they spread rapidly, outcompete natives, and degrade ecosystems.
 
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
+
+
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
 **Examples of problematic invasive species in the Philippines:**
 - _Chromolaena odorata_ (asaeng gubat, devil weed) — invasive shrub that forms monocultures and prevents native regeneration in disturbed areas
 - _Prosopis juliflora_ (algaroba) — thorny tree that spreads rapidly in grasslands and degrades rangelands
@@ -121,4 +131,8 @@ Biodiversity conservation protects native species and ecosystems. The Philippine
 
 ### Summary
 
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
 Philippine native species represent millions of years of evolutionary adaptation to tropical conditions. Understanding species identification, ecological systems, and successional processes enables planners and landscape architects to design restoration and landscapes that support biodiversity, resilience, and sustainability. Narra, the national tree, exemplifies native species adapted to Philippine conditions. Successional planting approaches harness natural ecological processes to restore degraded lands cost-effectively. In all design contexts, preference for native species supports Philippine ecosystems, cultural identity, and global biodiversity.

@@ -2,11 +2,16 @@
 
 <Callout>The LEA requires you to design buildings that engage all human senses—not vision alone. You must understand how light intensity and color temperature affect occupant behavior, how acoustic design shapes spatial experience, and how material tactility creates emotional connection. Sensory design integrates these modalities into coherent spatial experiences.</Callout>
 
+
+## Learning Goal
+
+Design multisensory architectural experiences that coordinate light intensity and color temperature, acoustic reverberation and isolation, and haptic material qualities to support occupant well-being.
+
 ## Core Concept
 
 ### Beyond Vision: Multisensory Architecture
 
-Traditional architectural representation—drawings and models—emphasizes visual information. However, the lived experience of space is fundamentally multisensory. Every significant architectural experience engages the eye, ear, nose, skin, skeleton, and muscle simultaneously. A person entering a cool stone chapel does not merely see columns and arches; they experience the temperature drop against skin, the resonance of footsteps revealing sclea through acoustic behavior, the scent of stone and incense, the texture of worn marble under fingers, the subtle light variation as eyes adjust. In LEA design projects, candidates must recognize and design for this multisensory richness.
+Traditional architectural representation—drawings and models—emphasizes visual information. However, the lived experience of space is fundamentally multisensory. Every significant architectural experience engages the eye, ear, nose, skin, skeleton, and muscle simultaneously. A person entering a cool stone chapel does not merely see columns and arches; they experience the temperature drop against skin, the resonance of footsteps revealing scale through acoustic behavior, the scent of stone and incense, the texture of worn marble under fingers, the subtle light variation as eyes adjust. In LEA design projects, candidates must recognize and design for this multisensory richness.
 
 <Tip>**Design for all senses simultaneously, not vision alone.** Multisensory design coordinates light, sound, tactile qualities, and material properties into coherent spatial experiences that engage the whole body.</Tip>
 
@@ -14,9 +19,9 @@ Sensory design is not ornamentation. Rather, it is the deliberate coordination o
 
 ### Light Design: Intensity, Color Temperature, and Circadian Support
 
-Light is the primary architectural medium. Its behavioral effects are quantifiable and direct. **Light intensity** measured in lux directly influences leartness: dim illumination (below 300 lux) triggers fatigue and poor task performance; moderate illumination (300-500 lux) supports routine work; high intensity illumination (800+ lux) increases leartness but can produce glare and eye strain if not carefully managed. **Color temperature**, measured in Kelvin degrees, shifts psychological state: warm light (2700-3000K) appears intimate and calming, appropriate for residential and hospitality spaces; neutral light (3500-4100K) supports balanced task performance in offices; cool light (5000-6500K) increases leartness and appears energizing but can feel clinical if excessive.
+Light is the primary architectural medium. Its behavioral effects are quantifiable and direct. **Light intensity** measured in lux directly influences alertness: dim illumination (below 300 lux) triggers fatigue and poor task performance; moderate illumination (300-500 lux) supports routine work; high intensity illumination (800+ lux) increases alertness but can produce glare and eye strain if not carefully managed. **Color temperature**, measured in Kelvin degrees, shifts psychological state: warm light (2700-3000K) appears intimate and calming, appropriate for residential and hospitality spaces; neutral light (3500-4100K) supports balanced task performance in offices; cool light (5000-6500K) increases alertness and appears energizing but can feel clinical if excessive.
 
-Critically, light varies throughout the day. Traditional static artificial lighting (standard fluorescent or LED at constant intensity and color temperature) disrupts the circadian rhythm—the biological 24-hour cycle that controls sleep-wake timing, hormone release, and metabolic function. **Circadian-aligned daylighting** designs systems that deliver high-intensity, cool-spectrum light during morning and afternoon hours, transitioning to warm, lower-intensity illumination approaching evening. Studies show that buildings supporting circadian alignment improve occupant sleep quality, leartness, and mood compared to static artificial environments.
+Critically, light varies throughout the day. Traditional static artificial lighting (standard fluorescent or LED at constant intensity and color temperature) disrupts the circadian rhythm—the biological 24-hour cycle that controls sleep-wake timing, hormone release, and metabolic function. **Circadian-aligned daylighting** designs systems that deliver high-intensity, cool-spectrum light during morning and afternoon hours, transitioning to warm, lower-intensity illumination approaching evening. Studies show that buildings supporting circadian alignment improve occupant sleep quality, alertness, and mood compared to static artificial environments.
 
 For Philippine architects, circadian daylighting presents both challenge and opportunity. Tropical locations receive intense equatorial sunlight year-round, eliminating seasonal variation that higher latitudes exploit. However, consistent daylighting availability makes solar orientation and fenestration strategy even more critical. Deep overhangs, intelligent shading systems, and light shelves can deliver deep daylighting penetration while preventing glare and solar heat gain. Clerestories and monitored roofing systems provide controllable top-light. Careful fenestration orientation allows morning and afternoon daylighting while managing intense midday heat.
 
@@ -40,9 +45,9 @@ Positive soundscape design deliberately introduces beneficial acoustic elements.
 
 **Haptic design** engages the sense of touch and proprioception—the body's spatial awareness through movement and contact. Unlike vision, which operates at distance, haptic experience is intimate and requires direct contact. Material texture, temperature, and resistance communicate directly through the nervous system, producing visceral, often subconscious responses.
 
-Material texture operates at multiple scleas. At the microscopic sclea, surface roughness (felt against fingertips) conveys authenticity and material identity: worn stone reveals patina and age; wood grain shows growth patterns; concrete reveals aggregate and casting texture. At the millimeter sclea, edge profiles and transitions between materials create tactile variety: a building with sharp edges and abrupt transitions feels hostile; one with rounded edges and subtle transitions feels welcoming. At the meter sclea, material coverage—how extensively a material is used and how its properties vary spatially—affects spatial mood. A room entirely clad in cool, hard stone feels austere; the same materials interspersed with warm wood and soft textiles feels balanced.
+Material texture operates at multiple scales. At the microscopic scale, surface roughness (felt against fingertips) conveys authenticity and material identity: worn stone reveals patina and age; wood grain shows growth patterns; concrete reveals aggregate and casting texture. At the millimeter scale, edge profiles and transitions between materials create tactile variety: a building with sharp edges and abrupt transitions feels hostile; one with rounded edges and subtle transitions feels welcoming. At the meter scale, material coverage—how extensively a material is used and how its properties vary spatially—affects spatial mood. A room entirely clad in cool, hard stone feels austere; the same materials interspersed with warm wood and soft textiles feels balanced.
 
-Material temperature creates immediate haptic response. Cold materials (stone, metal, concrete) initially feel hostile but can feel refreshing when appropriate to function (kitchen surfaces, bathroom tile). Warm materials (wood, cork, textile) feel psychologically welcoming and supportive. In Philippine climates with high ambient temperature, cool materials perform both thermal and psychological functions. However, entirely hard, cool spaces feel uninviting. Successful tropical architecture balances thermal and sensory needs: hard finishes for thermal and hygiene requirements (concrete flooring, ceramic surfaces) mixed with warm materials for human sclea and psychological comfort (wood trim, textile furnishings).
+Material temperature creates immediate haptic response. Cold materials (stone, metal, concrete) initially feel hostile but can feel refreshing when appropriate to function (kitchen surfaces, bathroom tile). Warm materials (wood, cork, textile) feel psychologically welcoming and supportive. In Philippine climates with high ambient temperature, cool materials perform both thermal and psychological functions. However, entirely hard, cool spaces feel uninviting. Successful tropical architecture balances thermal and sensory needs: hard finishes for thermal and hygiene requirements (concrete flooring, ceramic surfaces) mixed with warm materials for human scale and psychological comfort (wood trim, textile furnishings).
 
 Material aging—the visible changes materials undergo with time—profoundly affects spatial experience and building permanence. Polished, pristine surfaces feel temporary and sterile; materials showing patina, wear, and color variation feel rooted and authentic. In Philippine climates, concrete weathers significantly: exposed aggregate shows clearly, color variations develop through weathering, and surface texture becomes more prominent. Architects can leverage this aging process: designing for visible weathering rather than attempting maintenance-intensive perfection. Raw concrete, weathered steel, and aged wood create buildings that improve visually with time rather than deteriorating.
 
@@ -56,7 +61,7 @@ Successful integration requires systematic approach. During design development, 
 
 <Warn>The common failure: **designing sensory elements independently rather than as integrated systems**. Optimal lighting with poor acoustics creates stress; beautiful materials with harsh light or acoustic chaos feel inhuman. Sensory design success requires simultaneous attention to all modalities working together coherently.</Warn>
 
-Philippine institutional buildings demonstrate both successful and failed sensory integration. Modern hospitals with bright fluorescent lighting, hard reflective finishes, and high reverberation times create acoustic stress and circadian disruption, worsening patient anxiety. In contrast, hospitals designing for sensory quality—daylighting with appropriate shading, acoustic treatment, warm material pleattes, and strategic cooling—report improved patient outcomes and reduced staff stress. Universities with open floor plans lacking acoustic separation show poor classroom acoustics and student stress; those investing in acoustic infrastructure show improved learning outcomes. Office buildings with fixed, cool-temperature lighting appear sterile and uninviting; those with variable daylighting and warm accent materials feel more human and productive.
+Philippine institutional buildings demonstrate both successful and failed sensory integration. Modern hospitals with bright fluorescent lighting, hard reflective finishes, and high reverberation times create acoustic stress and circadian disruption, worsening patient anxiety. In contrast, hospitals designing for sensory quality—daylighting with appropriate shading, acoustic treatment, warm material palettes, and strategic cooling—report improved patient outcomes and reduced staff stress. Universities with open floor plans lacking acoustic separation show poor classroom acoustics and student stress; those investing in acoustic infrastructure show improved learning outcomes. Office buildings with fixed, cool-temperature lighting appear sterile and uninviting; those with variable daylighting and warm accent materials feel more human and productive.
 
 ## Key Facts and Testable Items
 
@@ -100,9 +105,9 @@ Expected response: Daylighting fenestration with seasonal shading adjustment; va
 
 ## Key Terms
 
-**Light Intensity (Lux)** — Quantitative measurement of illumination level. Lower intensities (&lt;300 lux) produce fatigue; moderate levels (300-500 lux) support routine work; high intensities (800+ lux) increase leartness.
+**Light Intensity (Lux)** — Quantitative measurement of illumination level. Lower intensities (&lt;300 lux) produce fatigue; moderate levels (300-500 lux) support routine work; high intensities (800+ lux) increase alertness.
 
-**Color Temperature (Kelvin)** — Measure of light warmth or coolness. Warm light (2700-3000K) appears intimate and calming; neutral light (3500-4100K) supports balanced task performance; cool light (5000-6500K) increases leartness.
+**Color Temperature (Kelvin)** — Measure of light warmth or coolness. Warm light (2700-3000K) appears intimate and calming; neutral light (3500-4100K) supports balanced task performance; cool light (5000-6500K) increases alertness.
 
 **Circadian Rhythm** — 24-hour biological cycle controlling sleep-wake timing, hormone release, and metabolic function. Architecture supporting circadian alignment improves occupant sleep quality and mood.
 
@@ -119,3 +124,12 @@ Expected response: Daylighting fenestration with seasonal shading adjustment; va
 **Material Patina** — Visible surface changes from aging, weathering, and use revealing material authenticity and creating psychological permanence.
 
 **Soundscape** — Acoustic character of environment including all sound sources (background noise, water features, intentional sound) and their integration into coherent acoustic experience.
+
+<Tip>**Sensory Design Checklist:** For any space design on the LEA, verify: (1) Daylighting strategy with variable intensity, (2) Acoustic reverberation target for the space type, (3) Material texture balance (hard + soft), (4) Proprioceptive comfort (stairs, ramps, handrails). All four must be addressed.</Tip>
+
+## Related Articles
+
+See also within Design Perception: **lea-theo-003-01-core-concept**, **lea-theo-003-02-core-concept**, **lea-theo-003-03-core-concept**, **lea-theo-003-04-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

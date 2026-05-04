@@ -15,10 +15,8 @@ The architect's obligation to the profession requires three things: **(1) refusi
 Section 5 of the Code establishes that architects have "moral responsibilities towards his profession, his colleagues and his subordinates." Unlike the public obligation (safety) or the client obligation (loyalty), the profession obligation focuses on **collective standing**, **fair competition**, and **individual accountability for sealed documents**.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=ra9266, section=Section 5 (a-k), title=Profession Obligations — Key Prohibitions
-- Text: Section 5 establishes the profession obligation. Key subsections: (b) shall not compete on basis of fee differences or use donation for competitive advantage; (c) shall not seek commissions known to b...
-[/SLATECAMP_UI_BLOCK]
+
+<ArticleMedia id="media-eth005-profession-pillars" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Duties to the Profession — Three Pillars Diagram" description="Three-column comparison diagram: (1) No unfair fee competition Section 5-b, (2) Respect other architects assignments Sections 5-c/e/f, (3) Never sign/seal without direct supervision Section 5-i. Each column lists key provisions, example violations, and disciplinary consequences. Bottom banner shows overarching principle of collective professional standing." placementIntent="ethics-framework" suggestedSearchQuery="architect duties to profession fee competition direct supervision signing sealing Section 5 RA 9266" suggestedAsset="Diagram or reference image" />
 
 The profession obligation has three critical dimensions:
 
@@ -50,10 +48,6 @@ The Board of Architecture has repeatedly emphasized that signing and sealing doc
 The PRBoA (3 members: 1 Chairman + 2 Members per RA 9266 §4) monitors signing/sealing violations. Architects must report violations to the Board; failure to report is complicity.
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ **Critical Exam Trap:** "Direct supervision" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review w... — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
 
@@ -70,16 +64,8 @@ Original Architect X designed a building. Years later, Owner hires Architect Y t
 Architect A proposes 20M for a project. Architect B offers 12M for identical scope. Architect B violates §5-b — competition "on the basis of difference of professional charges."
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Memory Aid:** "SSN" — (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sea — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: **Memory Aid: "SSN" = Seal, Supervision, Notification.** (S) Seal only work under direct supervision. (S) Supervision must be personal and integral. (N) Notify original architects of successor work. W
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 

@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define static determinacy and distinguish determinate from indeterminate structures
+- Calculate the degree of indeterminacy (n) for beams and frames
+- Explain the effect of support settlement on determinate vs. indeterminate structures
+- Recognize that determinacy and stability are separate properties
 
 This topic distinguishes between statically determinate and statically indeterminate structures. The LEA tests whether you understand how support conditions and member arrangements determine which structures can be fully analyzed using equilibrium equations alone. You will NOT be tested on analysis methods (moment distribution, stiffness methods); focus on the concept of static determinacy.
 
@@ -77,6 +84,13 @@ In Philippine structural design, most buildings use continuous beams and rigid f
 - **Continuous or Fixed-Ended = Indeterminate** (more than 3 unknowns)
 - **Degree n = r − 3** (for unknowns r at supports; ignore joint unknowns if properly accounted)</Tip>
 
+
+## Related Articles
+
+See also: **Supports** (lea-strc-001-03) for how reaction components affect determinacy counts, **Beam Types** (lea-strc-001-04) for examples of determinate and indeterminate beams, and **Structural Systems** (lea-strc-002-01 through lea-strc-002-06) for how system choice affects determinacy.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing determinacy with stability: A structure can be stable but indeterminate (continuous beam). It can also be determinate but unstable (three collinear supports). Determinacy and stability are separate properties.","Forgetting to count all unknowns: A fixed support has 3 unknowns (Hx, Hy, M), not just 1. A hinge has 2 unknowns. Miscounting leads to wrong determinacy assessment.","Assuming indeterminate structures are better: Indeterminate structures have redundancy, which is good. But they are also sensitive to support movement and thermal effects. Determinate structures are simpler to analyze but have no redundancy.","Ignoring the constraint that n = 0 is stable only if geometry is proper: Three hinges that are collinear form an unstable structure (n = 0 mathematically, but mechanism forms). Geometry and support arrangement matter.","Using the wrong equilibrium equations: In 3D, there are 6 equations of equilibrium. In 2D, there are 3. Applying 3D equations to a 2D problem leads to false indeterminacy counts."]} />

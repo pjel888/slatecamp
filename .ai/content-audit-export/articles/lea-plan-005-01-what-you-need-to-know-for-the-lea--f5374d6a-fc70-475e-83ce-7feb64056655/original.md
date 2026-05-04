@@ -1,7 +1,9 @@
 ## What You Need to Know for the LEA
 
-Landscape design transforms outdoor spaces through the strategic integration of natural (softscape) and built (hardscape) elements. Mastering landscape principles requires understanding how landforms, plants, water, and human-made features work together to create functional, beautiful, and resilient environments. This article covers the foundational concepts that landscape architects and planners apply when designing public parks, residential subdivisions, and urban greenways.
+## Learning Goal
+Apply landscape design principles — landform, plant composition, water features, hardscape materials — to create functional outdoor spaces, design planting plans for Philippine tropical conditions, and integrate landscape with site drainage and circulation.
 
+Landscape design transforms outdoor spaces through the strategic integration of natural (softscape) and built (hardscape) elements. Mastering landscape principles requires understanding how landforms, plants, water, and human-made features work together to create functional, beautiful, and resilient environments. 
 ### Landscape Design Fundamentals
 
 Landscape design is the profession and practice of designing outdoor spaces—parks, gardens, streetscapes, campuses, and larger land areas. Unlike architecture, which focuses on buildings, landscape design shapes the land itself and manages the relationship between the built and natural environments. In the Philippines, landscape design responds to tropical climate, diverse ecosystems, and the need for water-efficient design.
@@ -45,8 +47,12 @@ Site grading is the process of reshaping the land to establish proper drainage, 
 
 3. **Terracing and retaining walls:** On sloped sites, terracing creates level platforms for buildings or plazas. Retaining walls hold soil on slopes.
 
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+
 4. **Existing topography:** Grade plans must respect existing slopes and watershed patterns. Steep cuts and fills are costly and cause erosion.
 
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
 5. **Grading plans notation:** Site plans show contour lines and spot elevations to communicate the intended landform to contractors.
 
 ### Planting Design Principles
@@ -69,6 +75,10 @@ Planting design selects plant species and arranges them to achieve functional an
 
 Xeriscaping is landscape design that minimizes water use through plant selection and efficient irrigation management. The prefix "xero-" means dry. Xeriscaping is not about creating dry, barren landscapes—it is about creating beautiful landscapes that use water efficiently by choosing appropriate plants and design strategies.
 
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
+
+
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
 **Core xeriscaping principles:**
 
 1. **Native and adapted species:** Drought-tolerant native plants survive with natural rainfall and need no supplemental watering once established. Native species are ecologically beneficial, requiring no fertilizers or pesticides.
@@ -90,5 +100,9 @@ Xeriscaping is landscape design that minimizes water use through plant selection
 The **Narra** (_Pterocarpus indicus_) is the national tree of the Philippines. Narra is a hardwood tree valued for its timber, nitrogen-fixing properties, and ecological importance. In landscape design, Narra is used in urban reforestation and ecological restoration projects for its site-building capability and shade provision. The tree's cultural significance and ecological role make it a preferred species in Philippine landscape design.
 
 ### Summary
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
 
 Landscape design integrates hardscape and softscape elements through knowledge of grading, planting composition, and water efficiency. Native species selection and xeriscaping principles are fundamental to creating resilient, beautiful, and ecologically beneficial outdoor spaces in the Philippine context. Understanding these fundamentals prepares planners and architects to design landscapes that serve both human needs and ecological health.

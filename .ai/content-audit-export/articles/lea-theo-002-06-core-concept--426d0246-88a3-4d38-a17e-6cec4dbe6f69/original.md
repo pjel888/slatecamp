@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Spatial organization describes how spaces are arranged, connected, and defined within architectural compositions. This is closely related to organizing principles (from Article 4) but focuses specifically on the spatial sequences and relationships. The LEA tests your ability to recognize spatial organization types from floor plans and to understand how space flows, connects, and relates. Questions appear on nearly every examination.</Callout>
+## Learning Goal
 
+Identify the five types of spatial organization — centralized, linear, radial, clustered, and grid — and explain how each arrangement supports different functional programs, circulation patterns, and experiential qualities.
 ## Core Concept
 
 Spaces arrange themselves according to underlying organizational logic. A building's spaces can be organized around a centralized focus, extended linearly along a spine, distributed across a grid, or clustered by function. Understanding these patterns helps you read architectural plans, anticipate spatial sequences, and analyze design intentions. Francis D.K. Ching's framework identifies five primary spatial organization types that encompass most architectural arrangements.
@@ -57,42 +58,37 @@ The psychological impact of grids is mixed. Regular grids are easily understood 
 <WikiExamTable headers={["**Organization Type**", "**Definition**", "**Spatial Characteristic**", "**LEA Test Indicator**"]} rows={[['["**Centralized**", "Secondary spaces cluster about dominant central space", "Convergent; hierarchical; inward-focusing", "\\"Secondary spaces clustered about dominant central\\""]', '["**Linear**", "Spaces arranged in sequence along a spine", "Processive; directional; narrative unfolding", "\\"Series of spaces arranged in sequence along a line\\""]', '["**Radial**", "Spaces arranged like spokes from central hub", "Radiating arms; directional reach; expansion", "\\"Arms extending outward from central organizing point\\""]', '["**Clustered**", "Spaces grouped by functional affinity or proximity", "Flexible; informal; responsive to function", "\\"Grouped by proximity or functional relationship\\""]', '["**Grid**", "Spaces arranged within regular modular grid pattern", "Modular; infinitely flexible; systematic", "\\"Modular forms regulated by regular grid pattern\\""]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Centralized Recognition**
 *Question stem:* "A building plan with a large atrium surrounded by offices and corridors demonstrates..."
 *Correct answer:* "Centralized spatial organization."
 *Trap:* Confusing with radial—look for clustering around a center (centralized) vs. arms extending from a center (radial).</ExamTip>
-
 
 <ExamTip>**Pattern 2: Linear Identification**
 *Question stem:* "A museum where galleries open sequentially along a main corridor, guiding visitor progression, exhibits..."
 *Correct answer:* "Linear spatial organization."
 *Trap:* Missing that linearity is about *sequence* and *procession*, not just about having a corridor. The corridor enables the sequential spatial experience.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Radial vs. Centralized**
 *Question stem:* "A floor plan showing a central entry hall with three distinct departments extending outward in different directions demonstrates..."
 *Correct answer:* "Radial spatial organization."
 *Trap:* Confusing with centralized—radial has *expanding arms*; centralized has *clustered surrounding zones*.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Clustered Spaces**
 *Question stem:* "A residential complex where sleeping areas, living areas, and service areas group separately without a dominant central organization is an example of..."
 *Correct answer:* "Clustered spatial organization."
 *Trap:* Assuming all groupings are centralized or linear—clustering explicitly *lacks* strict geometric hierarchy.</ExamTip>
 
-
 <ExamTip>**Pattern 5: Grid Spatial Unit**
 *Question stem:* "In a building where all room dimensions are proportioned to a modular grid unit, new spaces can be added by extending..."
 *Correct answer:* "The modular grid."
 *Trap:* Confusing grid-based modular organization with purely functional or geometric organization—grids specifically regulate spatial dimensions through repeating modules.</ExamTip>
-
 
 <ExamTip>**Pattern 6: Organizational Flexibility**
 *Question stem:* "Which spatial organization allows addition of new spaces with minimal disruption to existing organization?"
 *Correct answer:* "Grid and clustered organization."
 *Trap:* Choosing centralized or linear, which both depend on their organizing center/spine and become disrupted by major modification.</ExamTip>
 
+<Callout>Spatial organization describes how spaces are arranged, connected, and defined within architectural compositions. This is closely related to organizing principles (from Article 4) but focuses specifically on the spatial sequences and relationships. The LEA tests your ability to recognize spatial organization types from floor plans and to understand how space flows, connects, and relates. Questions appear on nearly every examination.</Callout>
 
 ## Common Mistakes
 
@@ -101,7 +97,6 @@ The psychological impact of grids is mixed. Regular grids are easily understood 
 <WikiMistakeCard mistake="Treating All Sequences as Linear" correction="Not every building with a sequence of spaces is linear organization. Linear organization specifically has a primary spine along which spaces are encountered sequentially. A clustered building might have a sequence of passages connecting clusters, but the primary organization is *clustered*, not *linear*." context="Identify the primary organizing move: does the plan generate from a *spine* (linear) or from *multiple clusters* (clustered)?" />
 
 <WikiMistakeList mistakes={["Missing Radial Logic in Complex Plans. Radial organization isn't always obvious in four-direction symmetry. A courtyard surrounded by wings that extend outward in directions (perhaps only two or three directions visible due to site constraints) is still radial in concept. The organizing logic is radiating from a central hub, even if symmetry is partial or site-constrained. Don't assume radial requires perfect symmetry.", "Overlooking Grid as Spatial Organization. Students often think of grid as purely structural or infrastructural. But Ching identifies grid as a spatial organization type where spaces are dimensioned and proportioned within a regular modular grid. Japanese tatami-based planning, modern office building floor plates, and many traditional buildings use grid-based spatial organization. The module becomes the fundamental spatial unit.", "Confusing Spatial Organization with Functional Zoning. A building can be functionally zoned (medical areas separate, administrative areas separate) without this defining its spatial organization. Spatial organization describes *how spaces connect and relate geometrically*. Functional zoning describes *what activities occur where*. A centralized hospital might zone functions into radial wings; that's both a functional and organizational strategy. The test is \"how are spaces *arranged*?\" not \"what functions *occupy* them?\"", "Not Recognizing Mixed Spatial Organizations. Complex buildings combine organizational types. A building might have a linear main spine (linear organization) with clusters of offices branching off it (clustered organization). A hospital might have a central entry atrium (centralized) with wings extending outward (radial). When asked for the *primary* or *dominant* organization, identify which principle controls the main spatial move. This requires understanding that organizations can coexist with one dominant."]} />
-
 
 ## Key Terms
 
@@ -124,3 +119,10 @@ The psychological impact of grids is mixed. Regular grids are easily understood 
 **Spatial Hierarchy** — The ordering of spaces by importance, size, or emphasis; strongest in centralized and radial arrangements.
 
 **Procession** — Movement through a series of spaces in an intended sequence; characteristic of linear spatial organization.
+
+## Related Articles
+
+See also within Elements & Principles of Design: **lea-theo-002-01-core-concept**, **lea-theo-002-02-core-concept**, **lea-theo-002-03-core-concept**, **lea-theo-002-04-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

@@ -1,18 +1,24 @@
 {
   "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
   "slug": "interior-doors-and-hardware",
-  "generated_at": "2026-05-03T13:44:11.734Z",
-  "original_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "normalized_hash": "sha256:5b72342f866fbe867c6f1a478940f5b0a82e8687e39672a7ddaf86d001c77430",
-  "candidate_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
+  "generated_at": "2026-05-04T00:05:39.132Z",
+  "original_hash": "sha256:f4fc7ab7f90a874039710eff9dd66caefd1045c272e58643699ff6256117cf27",
+  "normalized_hash": "sha256:dcfa44480d0b8899ebb3616edc07c0cc36c8cafba65ca7ff806e2216d8083113",
+  "candidate_hash": "sha256:dcfa44480d0b8899ebb3616edc07c0cc36c8cafba65ca7ff806e2216d8083113",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
-  "candidate_matches_original": true,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002"
+  ],
+  "preserved_blocks_reinserted": 0,
+  "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition."
+  ]
 }

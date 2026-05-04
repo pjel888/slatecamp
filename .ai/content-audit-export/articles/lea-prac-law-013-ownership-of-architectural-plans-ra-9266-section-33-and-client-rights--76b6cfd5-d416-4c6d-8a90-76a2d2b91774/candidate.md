@@ -34,11 +34,11 @@ Architects whose plans are duplicated without consent may pursue legal action un
 
 The strength of the architect's position depends on documentary evidence showing ownership and the unauthorized reproduction. Architects should maintain records of design development, dated submissions, and all communications with the client. When plans are registered with the Intellectual Property Office of the Philippines (IPOPHL), the architect gains additional evidentiary weight in dispute resolution and enforces the copyright with greater confidence.
 
-<Warn />
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 
-<Tip />
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 
 ---
 
@@ -52,3 +52,5 @@ The strength of the architect's position depends on documentary evidence showing
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

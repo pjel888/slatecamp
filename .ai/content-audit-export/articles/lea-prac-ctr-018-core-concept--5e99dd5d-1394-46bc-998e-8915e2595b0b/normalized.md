@@ -53,48 +53,18 @@ The contractor's obligation to complete punch list items at no additional cost i
 **Question Pattern 5:** As-built documentation—What architect responsibility exists regarding as-built drawings and testing documentation required for occupancy? (Tests architect's coordination and documentation duties)
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=ra9266, section=PD 1096 (National Building Code), title=Certificate of Occupancy — Architect
-- Text: The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance — sealed drawings must comply with NBC; (2) ...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Certificate of Occupancy Key Points:**
-  1. Issued by Building Official (government), not architect
-  2. Separate from and often after Substantial Completion
-  3. Based on inspection  — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding—not optional or negotiable.
-[/SLATECAMP_UI_BLOCK]
 
 **Question Pattern 5:** As-built documentation—What architect responsibility exists regarding as-built drawings and testing documentation required for occupancy? (Tests architect's coordination and documentation duties)
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=ra9266, section=PD 1096 (National Building Code), title=Certificate of Occupancy — Architect
-- Text: The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance — sealed drawings must comply with NBC; (2) ...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Certificate of Occupancy Key Points:**
-  1. Issued by Building Official (government), not architect
-  2. Separate from and often after Substantial Completion
-  3. Based on inspection  — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: mistakes=true, Assuming=true, punch=true, list=true, items=true, are=true, suggestions=true, the=true, contractor=true, may=true, decline=true, to=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -110,3 +80,5 @@ Extracted summary:
 - [Change Orders](lea-prac-ctr-016)
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

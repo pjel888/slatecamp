@@ -1,32 +1,33 @@
 # Content Diff Report: african-vernacular-earth-architecture
 
-Generated: 2026-05-03T13:44:46.072Z
+Generated: 2026-05-04T00:06:22.188Z
 Article ID: 4a8c01ab-5515-44f5-aaf7-c1274d8c8dce
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:a67d4ea6bfd90d5b49bba0c43cff5b704f26b5be81d158103873cd49deccb1fd`
-- Normalized: `sha256:e29701c3224f6bd66aa3d1c4e7a30330dbb929264b88c19dad33df56a983ac34`
-- Candidate: `sha256:a891be34940f994a71135700bcb6b84b14548a08358fdb86f5bc869e5387982d`
+- Original: `sha256:a891be34940f994a71135700bcb6b84b14548a08358fdb86f5bc869e5387982d`
+- Normalized: `sha256:e60bea0d85c895742d8c228c15b0aee34bb56d69214696fbe9bbc951d44090dd`
+- Candidate: `sha256:e60bea0d85c895742d8c228c15b0aee34bb56d69214696fbe9bbc951d44090dd`
 
 ## Line summary
 
-- Changed lines: 87
-- Inserted lines: 39
-- Deleted lines: 0
+- Changed lines: 73
+- Inserted lines: 0
+- Deleted lines: 18
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 4
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 4
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 4 preserved UI block(s).
 
 ## Warnings
 

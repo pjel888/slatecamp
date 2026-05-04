@@ -1,4 +1,8 @@
 # Brutalism
+## Learning Goal
+After reading this article, you should be able to:
+
+Identify the three testable markers of Brutalist architecture — exposed raw concrete (béton brut), massive sculptural forms, and honest expression of structure — and recognize key works (Unité d'Habitation/Marseille Block, Boston City Hall, Habitat 67, National Theater London) by their material, massing, and structural expression.
 
 ## The Real-World Scenario (The Hook)
 
@@ -6,11 +10,18 @@ You are visiting the Cultural Center of the Philippines on Roxas Boulevard and n
 
 ## Core Concepts
 
+<Tip>
+
+**Memory Aid — "B-B-C = Battered, Box, Cantilever."** Three Brutalist visual cues for the LEA: Battered walls (walls tapering toward the top — look for wedge-shaped masses), Box masses (repetitive geometric blocks, modular bays), Cantilevered volumes (floating concrete planes defying gravity). If a building image shows all three, it is almost certainly Brutalist.
+
+</Tip>
+
+
 - **Béton Brut Origin:** The term "Brutalism" derives from the French béton brut (raw concrete), a phrase Le Corbusier used to describe the board-marked, unfinished concrete surfaces of his Unité d'Habitation in Marseille (1952). British critics Alison and Peter Smithson adopted the term and transformed it into "New Brutalism" as a full architectural ethic in the 1950s.
 
 - **Truth to Materials:** Brutalism demands that materials be left in their as-built state — no paint, no plaster, no cosmetic covering. Concrete is exposed with its formwork imprints; steel is left weathering; brick is unrendered. The building's construction process becomes its finished expression.
 
-- **Monumental Massing and Structural Heroism:** Brutalist buildings are characterized by heavy, sculptural massing that dramatizes the structural system. Cantilevered volumes, deep coffered ceilings, and massive pilotis convey weight and permanence. The structure is not merely revelead — it is celebrated.
+- **Monumental Massing and Structural Heroism:** Brutalist buildings are characterized by heavy, sculptural massing that dramatizes the structural system. Cantilevered volumes, deep coffered ceilings, and massive pilotis convey weight and permanence. The structure is not merely revealed — it is celebrated.
 
 - **Social Idealism:** Many Brutalist projects arose from post-WWII welfare-state programs — public housing, civic centers, universities — driven by the belief that bold, uncompromising architecture could uplift society. This social mission is inseparable from the aesthetic.
 
@@ -31,18 +42,32 @@ You are visiting the Cultural Center of the Philippines on Roxas Boulevard and n
 | Defining Principle | Description |
 |---|---|
 | Material Honesty | Raw concrete (béton brut), exposed aggregate, unfinished surfaces; formwork patterns left visible |
-| Structural Expression | The load-bearing system is visible and celebrated, not concelead |
-| Monumental Sclea | Heavy, fortress-like massing; deep overhangs and dramatic cantilevers |
+| Structural Expression | The load-bearing system is visible and celebrated, not concealed |
+| Monumental Scale | Heavy, fortress-like massing; deep overhangs and dramatic cantilevers |
 | Repetitive Geometry | Modular grids, repetitive bays, and cellular units reflecting mass-production logic |
 | Social Program | Frequently associated with public housing, civic buildings, and educational institutions |
 
 ## LEA Exam Traps and Common Mistakes
+
+<ExamTip>
+
+**LEA Exam Pattern — Etymology Trap:** Brutalism comes from béton brut (raw concrete), NOT from the English word "brutal." This is the single most tested etymology question on the Philippine LEA for architectural movements. The answer is always "béton brut" (Option B on multiple-choice). Le Corbusier's Unité d'Habitation (1952) is the definitive origin building.
+
+</ExamTip>
+
 
 - **Trap 1: Confusing Brutalism with Deconstructivism.** Both can appear massive and rough, but Brutalism celebrates truth to materials and structural honesty (the building is what it is), while Deconstructivism deliberately fragments and destabilizes form as an intellectual exercise. Ask: "Is the building proudly showing its construction, or deliberately breaking apart?" If the former, it is Brutalism.
 
 - **Trap 2: Thinking Brutalism means "brutal" in the colloquial sense.** The name comes from béton brut (raw concrete), not from "brutal" meaning harsh. This is a classic LEA distractor — exam questions may offer "named for its harsh, brutal aesthetic" as a wrong answer.
 
 - **Trap 3: Forgetting the social dimension.** Brutalism is not just a material style — it emerged from post-war social housing and civic building programs. LEA questions may test whether you understand that Robin Hood Gardens (Smithsons) and the Barbican Estate (Chamberlin, Powell & Bon) were public welfare projects, not luxury developments.
+
+
+<Warn>
+
+⚠️ EXAM WARNING: The LEA frequently pairs Brutalism with Deconstructivism as distractor options. Both can look massive and rough, but Brutalism CELEBRATES structural honesty (the building proudly shows how it was built), while Deconstructivism FRAGMENTS form deliberately (asymmetric, colliding volumes). If the question says "proudly displays its construction process," the answer is Brutalism, not Deconstructivism.
+
+</Warn>
 
 ## Board-Prep Mnemonics
 
@@ -82,3 +107,10 @@ C. Exposed color-coded mechanical systems on the building exterior
 D. Parametrically generated curvilinear concrete shell
 
 > **Correct Answer: B.** Rudolph Hall features aggressively textured bush-hammered concrete (where the surface is chipped after curing to reveal the aggregate) and a famously complex section with 37 interlocking floor levels. Option C describes High-Tech (Centre Pompidou); Option D describes Parametricism.
+
+---
+
+## Cross‑References
+
+**The Bauhaus And International Style**, **Le Corbusier Five Points**, **Mies Van Der Rohe**, **Post Modernism**
+

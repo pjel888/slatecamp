@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Classify community health centers as Group D with assisted evacuation considerations, apply DOH space standards for consultation and treatment rooms, verify fire separation requirements, and apply Sentrong Sigla compliance.
+
 Community health centers and Barangay Health Centers (BHCs) are Group D occupancies where patients may require assisted evacuation. They demand specialized space programming, fire separation, and accessibility standards distinct from acute-care hospitals.
+
 
 ## Core Concept
 
@@ -49,6 +53,13 @@ In the Philippines, community health centers serve as the primary contact point 
 **Pattern 3:** _Accessible design and accessibility standards_ — "An accessible toilet serving a primary care facility must measure _____ × _____ meters per **BP 344**, and the approach ramp slope shall not exceed 1:_____."
 
 <Tip>BHC = Group D (NOT C). Consultation room = 9 sqm. Exit width = 7.6mm/person. 2-hour fire separation required. Accessible door = 900mm. Ramp = 1:20 max (2024 Revised IRR). Toilet = 1.7m × 1.7m.</Tip>
+
+
+**Exam Tip — ERR-DSGN-024:** BHCs are Group D because patients may require assisted evacuation. Unlike acute hospitals, BHCs use DOH Sentrong Sigla standards for space programming, not DOH hospital coding.
+
+## Cross-References
+
+See **LEA-DSGN-005-05** (Specialized Health Facilities) for Group D classification, **LEA-DSGN-008-02** (Fire Separation) for institutional fire ratings, and **LEA-DSGN-007-08** (Human Factors) for consultation room ergonomics.
 
 ## Common Mistakes
 

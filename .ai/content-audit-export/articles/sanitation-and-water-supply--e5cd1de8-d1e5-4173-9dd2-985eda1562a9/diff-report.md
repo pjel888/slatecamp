@@ -1,32 +1,34 @@
 # Content Diff Report: sanitation-and-water-supply
 
-Generated: 2026-05-03T13:45:23.545Z
+Generated: 2026-05-04T00:07:05.161Z
 Article ID: e5cd1de8-d1e5-4173-9dd2-985eda1562a9
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:4fc9cc3b0e7ea7b482485624bea42f02e327f6df87a1e6f2da46f93a22c153d8`
-- Normalized: `sha256:654dfcc444235e9a2c7b58f9c36c09496e393d4959721320177792f6ac17dbfc`
-- Candidate: `sha256:4af469e8233a95cdaac5929b45f14e352f9cdc2c3f8f2e99f32761971d9026f6`
+- Original: `sha256:60b1a518533bd5f06a834ec690e500c2564fbebf2c624ba8fd44642cd1120f05`
+- Normalized: `sha256:c46f1866e43c14957b5c9f47dff7b961bbf76d543b000c8e6f0d7183badb1034`
+- Candidate: `sha256:c46f1866e43c14957b5c9f47dff7b961bbf76d543b000c8e6f0d7183badb1034`
 
 ## Line summary
 
-- Changed lines: 423
-- Inserted lines: 28
+- Changed lines: 327
+- Inserted lines: 16
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

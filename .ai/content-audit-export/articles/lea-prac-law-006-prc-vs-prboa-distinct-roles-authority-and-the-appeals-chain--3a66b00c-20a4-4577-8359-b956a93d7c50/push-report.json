@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:50.202Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:07:05.600Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
   "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:1a3fff46098df5840e23932ca6f2084f44ed2e77319859bd3febc7a1fc27ff79",
-  "original_hash": "sha256:d7c83d4c366e3250373737362c0898895374b01ab9be95d3a9b9ae969bbd913a",
-  "candidate_hash": "sha256:1a3fff46098df5840e23932ca6f2084f44ed2e77319859bd3febc7a1fc27ff79",
-  "stale_check_passed": false,
+  "original_hash": "sha256:1a3fff46098df5840e23932ca6f2084f44ed2e77319859bd3febc7a1fc27ff79",
+  "candidate_hash": "sha256:efc861044f0872ce81dc38ae31a3ddba850b051c98a0ed4b900a8c9d29fc1edf",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:52:27.754209+00:00"
 }

@@ -27,8 +27,7 @@ Upon termination for cause, the architect is entitled to compensation for servic
 
 ### Termination for Convenience
 
-Extracted summary:
-
+<Note>
 \
 Termination for convenience allows the Owner to end the agreement at any time without cause. Upon written notice, the architect ceases work immediately. The architect receives compensation for all services rendered and consultant fees reimbursed through the termination date, calculated on a phase-completion or time-expended basis as specified in the agreement.
 
@@ -43,7 +42,7 @@ The architect does not warrant that work in progress at termination is complete 
 ### Suspension and Termination of the Contractor Relationship
 
 During Construction Administration, the architect may recommend suspension or termination of the contractor relationship to the Owner, but the architect does not have authority to suspend or terminate the construction contract independently. The architect's role is to certify whether the contractor's work complies with thion, or termination. The Owner makes the final decision to suspend or terminate.
-
+</Note>
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)
@@ -61,16 +60,15 @@ During Construction Administration, the architect may recommend suspension or te
 Extracted summary:
 - Props: (none)
 - Text: RA 9266, Section 25 — The architect shall not be held liable for delay caused...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: Process flow: Notice → Cessation/Curve period → Compensation → Document turno...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: The architect does NOT have authority to independently suspend or terminate t...
-[/SLATECAMP_UI_BLOCK]
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

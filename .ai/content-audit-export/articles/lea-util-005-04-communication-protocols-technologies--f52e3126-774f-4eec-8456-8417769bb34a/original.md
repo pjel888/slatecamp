@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Security and access control systems manage physical and electronic access to building spaces through credential verification, reader devices, and centralized control systems. In the Philippines, these systems must comply with PD 1096 (National Building Code) requirements for emergency egress, fire safety integration, and electrical safety at 220V/60Hz supply. From a communication systems perspective, modern access control relies on structured cabling infrastructure, digital communication protocols between readers and controllers, and integration with building management systems (BMS).
+## Learning Goal
 
+Design security and access control systems — card readers, biometric readers, intercoms, door controllers, magnetic locks — and apply Philippine data privacy considerations (RA 10173) and industry standards for integrated building security infrastructure.
 ## Communication Protocols & Technologies
 
 ### Wiegand Protocol
@@ -257,6 +258,19 @@ Security and access control systems integrate multiple communication protocols (
 
 ---
 
+
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
+
 [1] HID Global. Wiegand Protocol Specification. Accessed 2024.
 [2] Belden/Siemon. Access Control Cabling Guide. Document 7CXXX, 2022.
 [3] ISO/IEC 14223-1:2013. Identification cards — Contactless integrated circuit cards — Part 1: Physical characteristics.
@@ -335,3 +349,10 @@ Security and access control systems integrate multiple communication protocols (
 [76] Honeywell. Shopping Mall Back-of-House Access Control. Technical Case Study, 2023.
 [77] HID. Cash Handling Area Biometric Access. Security Brief, 2023.
 [78] NFPA 101 & PD 1096. Emergency Egress & Zone-Based Door Control. 2021, 2015.
+
+## Related Articles
+
+See also within Security and Communication Systems: **lea-util-005-03-core-concept**, **lea-util-005-05-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

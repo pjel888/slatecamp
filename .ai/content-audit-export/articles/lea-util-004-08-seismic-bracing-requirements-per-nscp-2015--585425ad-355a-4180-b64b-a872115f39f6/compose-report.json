@@ -1,18 +1,26 @@
 {
   "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
   "slug": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
-  "generated_at": "2026-05-03T13:44:11.687Z",
+  "generated_at": "2026-05-04T00:05:39.081Z",
   "original_hash": "sha256:7e0f511e8d0170afb4eb4044383a5d27b5e3a4795c4c3a26e1f8f8086f497b02",
-  "normalized_hash": "sha256:0b54b868a928a40fec01715864212d4d5cc151a5f698402c4e4912b476fb98e4",
-  "candidate_hash": "sha256:f60ca9d754486f5d201dd99299745238d0e2463bb0d7a4edbfd59ca93e8bb853",
+  "normalized_hash": "sha256:06f9eda5490478387b182352de0f310d704c3b6cb5a7a447efcf21623c67093c",
+  "candidate_hash": "sha256:06f9eda5490478387b182352de0f310d704c3b6cb5a7a447efcf21623c67093c",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

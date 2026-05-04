@@ -7,7 +7,6 @@ After reading this article, you should be able to:
 Resolve dimensional conflicts between BP 344 and PD 1096: apply the strictest requirement rule correctly when codes conflict; identify areas where BP 344 governs (accessible routes, fixture heights, tactile warnings) vs PD 1096 (fire-rated construction, structural loads, egress widths); and apply the hierarchy: PD 1096 is the baseline, BP 344 adds accessibility requirements on top.
 ---
 
-
 _An Immersive LEA Review Module – Mastering Legislative Conflict Resolution_
 
 ## 🎯 Learning Goals
@@ -25,10 +24,11 @@ You defend your plans to the Building Official. PD 1096 allows a ramp “as wide
 
 **Golden Rule of Conflicts:** For **accessible routes**, the stricter, more specific BP 344 standard prevails over the more general PD 1096 rule.[file:1][file:2] But BP 344 **distinguishes elements** (ramps vs. sidewalks/walkways vs. doors), so you must not mix their dimensions.
 
+[SLATECAMP_UI_BLOCK:ArticleMedia name="code-hierarchy-pyramid" type="diagram" caption="Legal hierarchy diagram: PD 1096 as foundation (general egress/structural), BP 344 as overlay (accessible route dimensions). Pyramid layers show which code governs each design element — exits, ramps, corridors, sidewalks."]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="conflict-dimension-comparison" type="diagram" caption="Side-by-side bar comparison: PD 1096 general egress values vs. BP 344 accessible values for ramp width, ramp slope, landing length, sidewalk width, door clear width. Call out the stricter governing value for each feature with highlight."]
+
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Text: ⚠️ Common mistake: Do not apply the 1200 mm ramp width (Appendix A) to sidewalks/walkways — those require 1500 mm minimum (Appendix B). Each BP 344 element has its own dimension. Mixing them is a frequent exam trap.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -59,6 +59,8 @@ Below is a corrected table based on what is actually in your attachments:
 | **Sidewalks / walkways width** (exterior accessible route) | Not specified in your PD 1096 snippet (public ways are covered in other guidelines).                                                | Sidewalks/walkways/pathways: **1500 mm minimum width**; **1800 mm** where space is needed for two wheelchairs to pass.[file:2]                            | **1500 mm** min (1800 mm where two wheelchairs pass) on exterior accessible paths (BP 344). |
 | **Rest / passing spaces on long walkways**                 | Not specified in PD 1096 snippet.                                                                                                   | Passing/turnaround spaces: **min 1800 mm clear dimension**, spaced at **max 12000 mm** along lengthy/busy sidewalks/walkways.[file:2]                     | **1800 mm** rest/turn spaces every 12 m (BP 344).                                           |
 | **Door clear width**                                       | Exit door clear width **900 mm min** (from PD 1096 IRR, outside your snippet but consistent with your previous modules).[file:1]    | Accessible doors: **900 mm min clear opening** (your earlier elevator/door modules; not in this specific attachment, but consistent with BP 344).[file:2] | **900 mm** clear (no conflict; both align).                                                 |
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="sidewalk-ramp-width-comparison" type="diagram" caption="Cross-section comparison: PD 1096 corridor/exit ramp width (1100mm min) vs. BP 344 accessible ramp width (1200mm min) vs. BP 344 sidewalk/walkway width (1500mm min, 1800mm for two-wheelchair passing). Callout boxes highlight governing values for each route type."]
 
 Because your provided PD 1096 text does **not** show a numeric **1.10 m corridor width** in the specific snippets, but the full IRR (Rule XII, Sec. 1207) does state this minimum, we have included it in the table above with its source citation.[file:1][file:2][file:3] The attached BP 344 amendments do **not** include an internal "corridor 1.50 m" clause for interior corridors, so interior corridor widths remain governed by PD 1096's 1.10 m minimum (with BP 344 accessible ramp and sidewalk/walkway requirements as overlays where applicable).
 
@@ -110,16 +112,8 @@ The following focuses on elements explicitly covered in your attachments:
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- code="bp344"
-- Text: Golden Rule: BP 344 is a special law (lex specialis). For accessible routes, BP 344's stricter dimensional standards prevail over PD 1096's general minimums. The key exam principle: know which law gov
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: LEA Trap: The exam often tests ramp width. PD 1096 says 'as wide as corridor' (min 1.10 m). BP 344 Appendix A says 1.20 m min for accessible ramps. The correct LEA answer for an accessible ramp is 1.2
-[/SLATECAMP_UI_BLOCK]
 
 ## Active Recall Battery (Updated to Match Your Attachments)
 
@@ -146,15 +140,8 @@ Extracted summary:
 **Q6:** When PD 1096 allows a ramp as an exit and requires its width to match corridor width, but BP 344 requires 1200 mm for accessible ramps, which value applies on an accessible route?
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="bp344"
-- Text: Ans: The 1200 mm BP 344 clear width requirement governs for accessible ramps, as the stricter, PWD‑specific standard.[file:1][file:2]
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Text: 📌 Exam Tip: The LEA frequently tests the BP 344 ramp width (1200 mm) vs. sidewalk width (1500 mm) distinction in scenario-based questions. Remember: ramp = 1200 mm, sidewalk = 1500 mm, rest space = 1800 mm. These three numbers appear together in integrated compliance questions.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -182,3 +169,5 @@ If you want, next I can help you build a single one‑page “widths and slopes�
 
 **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Accessible Washrooms**, **Bp 344 Ramp Slope Tiers**, **Top 50 Traps 2024 Irr**
 
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

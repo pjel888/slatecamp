@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill
 
-Generated: 2026-05-03T13:45:35.748Z
+Generated: 2026-05-04T00:07:20.526Z
 Article ID: 425c5476-12a0-476c-96e3-3f10c1530a9c
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:6801ce99bddcb7ad64a683ff7e8045e3db91441786adecfbcd06c43a18986a90`
-- Normalized: `sha256:7628ca8b82dfe505a4924fd815af8deec6d586b9597f75a76d8a71b4c4171499`
-- Candidate: `sha256:6de374389f155a55b74613a39a194f570fd0713547b2844dd70db902374bda36`
+- Original: `sha256:c8aba5e59d28f5aa1cb3c06689062f92846b79545f6a8c148467b1e9f7689f4a`
+- Normalized: `sha256:4d2d8805b4470828b4d151420ceb51ff820372d51176cde6429fe9242d0d38b2`
+- Candidate: `sha256:4d2d8805b4470828b4d151420ceb51ff820372d51176cde6429fe9242d0d38b2`
 
 ## Line summary
 
-- Changed lines: 80
-- Inserted lines: 40
-- Deleted lines: 0
+- Changed lines: 73
+- Inserted lines: 0
+- Deleted lines: 8
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks expected: 3
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

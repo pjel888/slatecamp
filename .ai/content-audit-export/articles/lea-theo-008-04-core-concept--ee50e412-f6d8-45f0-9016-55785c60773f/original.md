@@ -5,6 +5,14 @@ The search for Filipino architectural identity is not a resolved question but an
 
 </Callout>
 
+
+
+## Learning Goal
+
+- Trace the historical emergence of Filipino architectural identity from colonial derivation (pre-1960s) through Nakpil, Locsin, and Mañosa's assertions of cultural autonomy.
+- Explain how Filipino architecture negotiates between cultural authenticity and global practice standards.
+- Analyze how contemporary architects reinterpret tradition through digital and sustainable approaches.
+
 ## Core Concept
 
 Filipino architectural identity emerged from a specific historical context: a nation recovering from colonial domination seeking to assert cultural autonomy through the built environment. The domestic architecture prior to the 1960s was primarily derivative—either importing foreign styles directly or applying indigenous elements superficially without systemic integration. The aspiration for a unified Filipino style represented something more fundamental: a commitment to express Philippine culture, values, and environmental understanding through architecture as a means of cultural assertion and independence.
@@ -93,3 +101,10 @@ Identity is not settled history. The danger is treating historical figures (Nakp
 **Authenticity in Architecture** — Contested concept requiring architectural expression to arise from genuine engagement with culture, context, and values rather than superficial cultural reference or trend-following.
 
 **Design Generation from Tradition** — The process of abstracting principles from traditional architecture to create contemporary designs that are both rooted in culture and genuinely modern.
+
+## Related Articles
+
+See also within Innovation & Filipino Identity: **lea-theo-008-02-core-concept**, **lea-theo-008-03-core-concept**, **lea-theo-008-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

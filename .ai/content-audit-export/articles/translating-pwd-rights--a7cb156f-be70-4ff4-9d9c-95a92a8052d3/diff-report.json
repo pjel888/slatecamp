@@ -1,38 +1,49 @@
 {
   "article_id": "a7cb156f-be70-4ff4-9d9c-95a92a8052d3",
   "slug": "translating-pwd-rights",
-  "generated_at": "2026-05-03T13:45:21.197Z",
-  "old_hash": "sha256:beecc6c3eb243ec0bde1e795ab80f506af47fcd2b521fed6d16667f18802707d",
-  "new_hash": "sha256:b90ef26dfc5efd28a448652a9bc31b8e949dd1701a255b09f4d59972354dc356",
-  "original_hash": "sha256:beecc6c3eb243ec0bde1e795ab80f506af47fcd2b521fed6d16667f18802707d",
-  "normalized_hash": "sha256:f6afe2986ba92f80deeb9e0315ea549fbd023ceff571863ae5b5b1a27e22be27",
-  "candidate_hash": "sha256:b90ef26dfc5efd28a448652a9bc31b8e949dd1701a255b09f4d59972354dc356",
+  "generated_at": "2026-05-04T00:07:02.449Z",
+  "old_hash": "sha256:b90ef26dfc5efd28a448652a9bc31b8e949dd1701a255b09f4d59972354dc356",
+  "new_hash": "sha256:5c0fac08e6cc2e91fe83bf4a2677e0b730efc3919139aa5ccc58acd44d596b2a",
+  "original_hash": "sha256:b90ef26dfc5efd28a448652a9bc31b8e949dd1701a255b09f4d59972354dc356",
+  "normalized_hash": "sha256:5c0fac08e6cc2e91fe83bf4a2677e0b730efc3919139aa5ccc58acd44d596b2a",
+  "candidate_hash": "sha256:5c0fac08e6cc2e91fe83bf4a2677e0b730efc3919139aa5ccc58acd44d596b2a",
   "changed": true,
-  "changed_line_count": 443,
-  "inserted_line_count": 25,
-  "deleted_line_count": 0,
+  "changed_line_count": 338,
+  "inserted_line_count": 0,
+  "deleted_line_count": 24,
   "ui_blocks_original_count": 7,
-  "ui_blocks_candidate_count": 7,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 7,
   "ui_blocks_count": 7,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 7,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 443,
-    "inserted": 25,
-    "deleted": 0,
-    "original_line_count": 424,
-    "candidate_line_count": 449
+    "changed": 338,
+    "inserted": 0,
+    "deleted": 24,
+    "original_line_count": 449,
+    "candidate_line_count": 425
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007"
+    ],
+    "changed_count": 7
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 7 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 7 preserved UI block(s)."
 }

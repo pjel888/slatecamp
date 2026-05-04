@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The **Pritzker Architecture Prize** is the discipline's highest honor. The LEA tests every laureate from **1979 to 2026**, expecting you to match each architect to at least one defining building. This is pure memorization territory — no conceptual shortcut replaces knowing the full list.</Callout>
+## Learning Goal
 
+Identify the Pritzker Prize laureates and their defining contributions — focus on firsts (first woman: Hadid 2004, first African: Kéré 2022), recent winners (2020–2025), and major shifts in the award's focus from formalist to socially engaged architecture.
 ## Core Concept
 
 The **Pritzker Prize**, established in **1979** by the Hyatt Foundation, recognizes living architects whose built work demonstrates tleant, vision, and lasting contribution to the built environment. The jury selects one laureate (or team) annually. Understanding the prize means understanding three eras of recognition that mirror architecture's shifting priorities.
@@ -29,15 +30,13 @@ The recent shift from Western formalist monuments to Global South social practic
 <WikiExamTable headers={["Year", "Laureate", "Country", "Key Building"]} rows={[['["**1979**", "**Philip Johnson**", "USA", "Glass House (1949, New Canaan)"]', '["**1980**", "**Luis Barragán**", "Mexico", "Cuadra San Cristóbal (1968)"]', '["**1981**", "**James Stirling**", "UK", "Seeley Historical Library (1968)"]', '["**1982**", "**Kevin Roche**", "USA", "Ford Foundation Building (1967, New York)"]', '["**1983**", "**I.M. Pei**", "USA/China", "Louvre Pyramid (1989, Paris)"]', '["**1984**", "**Richard Meier**", "USA", "Getty Center (1997, Los Angeles)"]', '["**1985**", "**Hans Hollein**", "Austria", "Abteiberg Museum (1982, Mönchengladbach)"]', '["**1986**", "**Gottfried Böhm**", "Germany", "Pilgrimage Church (1968, Neviges)"]', '["**1987**", "**Kenzo Tange**", "Japan", "Yoyogi National Gymnasium (1964, Tokyo)"]', '["**1988**", "**Gordon Bunshaft & Oscar Niemeyer**", "USA / Brazil", "Lever House (1952, New York); Cathedral of Brasília (1958-1970)"]', '["**1989**", "**Frank Gehry**", "USA/Canada", "Guggenheim Museum Bilbao (1997, Spain)"]', '["**1990**", "**Aldo Rossi**", "Italy", "San Cataldo Cemetery (1971–1988, Modena)"]', '["**1991**", "**Robert Venturi**", "USA", "Vanna Venturi House (1964, Philadelphia)"]', '["**1992**", "**Álvaro Siza**", "Portugal", "Boa Nova Tea House (1963, Porto)"]', '["**1993**", "**Fumihiko Maki**", "Japan", "Spiral Building (1985, Tokyo)"]', '["**1994**", "**Christian de Portzamparc**", "France", "Cité de la Musique (1995, Paris)"]', '["**1995**", "**Tadao Ando**", "Japan", "Church of the Light (1989, Ibaraki, Osaka)"]', '["**1996**", "**Rafael Moneo**", "Spain", "National Museum of Roman Art (1986, Mérida)"]', '["**1997**", "**Sverre Fehn**", "Norway", "Glacier Museum (1991, Fjærland)"]', '["**1998**", "**Renzo Piano**", "Italy", "Pompidou Centre (1977, Paris, with Rogers)"]', '["**1999**", "**Norman Foster**", "UK", "30 St Mary Axe (2004, London)"]', '["**2000**", "**Rem Koolhaas**", "Netherlands", "Seattle Central Library (2004)"]', '["**2001**", "**Herzog & de Meuron**", "Switzerland", "Tate Modern (2000, London)"]', '["**2002**", "**Glenn Murcutt**", "Australia", "Magney House (1984, New South Wleas)"]', '["**2003**", "**Jørn Utzon**", "Denmark", "Sydney Opera House (1973)"]', '["**2004**", "**Zaha Hadid**", "Iraq/UK", "Heydar Aliyev Center (2012, Baku)"]', '["**2005**", "**Thom Mayne**", "USA", "Caltrans District 7 HQ (2004, Los Angeles)"]', '["**2006**", "**Paulo Mendes da Rocha**", "Brazil", "Brazilian Museum of Sculpture (1995, São Paulo)"]', '["**2007**", "**Richard Rogers**", "UK", "Lloyds Building (1986, London)"]', '["**2008**", "**Jean Nouvel**", "France", "Institut du Monde Arabe (1987, Paris)"]', '["**2009**", "**Peter Zumthor**", "Switzerland", "Therme Vals (1996)"]', '["**2010**", "**Kazuyo Sejima & Ryue Nishizawa (SANAA)**", "Japan", "21st Century Museum (2004, Kanazawa)"]', '["**2011**", "**Eduardo Souto de Moura**", "Portugal", "Braga Municipal Stadium (2003)"]', '["**2012**", "**Wang Shu**", "China", "Ningbo History Museum (2008)"]', '["**2013**", "**Toyo Ito**", "Japan", "Sendai Mediatheque (2001)"]', '["**2014**", "**Shigeru Ban**", "Japan", "Cardboard Cathedral (2013, Christchurch)"]', '["**2015**", "**Frei Otto** (posthumous)", "Germany", "Munich Olympic Stadium roof (1972)"]', '["**2016**", "**Leajandro Aravena**", "Chile", "Quinta Monroy Housing (2004, Iquique)"]', '["**2017**", "**RCR Arquitectes**", "Spain", "Tossols-Basil Athletics Track (2000, Olot)"]', '["**2018**", "**Balkrishna Doshi**", "India", "Indian Institute of Management (1992, Bangalore)"]', '["**2019**", "**Arata Isozaki**", "Japan", "Museum of Contemporary Art (1986, Los Angeles)"]', '["**2020**", "**Yvonne Farrell & Shelley McNamara (Grafton Architects)**", "Ireland", "UTEC Lima (2015, Peru)"]', '["**2021**", "**Anne Lacaton & Jean-Philippe Vassal**", "France", "Palais de Tokyo renovation (2012, Paris)"]', '["**2022**", "**Diébédo Francis Kéré**", "Burkina Faso", "Gando Primary School (2001)"]', '["**2023**", "**David Chipperfield**", "UK", "Neues Museum restoration (2009, Berlin)"]', '["**2024**", "**Riken Yamamoto**", "Japan", "Pangyo Housing (2010, South Korea)"]', '["**2025**", "**Liu Jiakun**", "China", "Key works in Chengdu (e.g., Luyeyuan Stone Sculpture Art Museum)"]', '["**2026**", "**Smiljan Radić Clarke**", "Chile", "Serpentine Pavilion (2014, London)"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Direct matching.** The LEA presents a laureate name and asks you to identify their key building, or presents a building and asks for the architect and prize year. Pure recall — no analysis required. Example pattern: "The 1995 Pritzker laureate designed a concrete church in Osaka where light enters through a cross-shaped slit. Name the architect and building."</ExamTip>
-
 
 <ExamTip>**Pattern 2: Era and trend identification.** The LEA asks about shifts in the prize's focus over time. Example pattern: "How do the Pritzker selections from 2010–2024 differ from those in the 1980s in terms of geography, building type, and design philosophy?" Students must identify the shift from Western formalism toward global representation and social impact.</ExamTip>
 
-
 <ExamTip>**Pattern 3: First-of-kind recognition.** The LEA tests milestone laureates: first woman (**Zaha Hadid**, 2004), first African (**Diébédo Francis Kéré**, 2022), first Chinese (**Wang Shu**, 2012), first posthumous award (**Frei Otto**, 2015). These "firsts" are high-probability exam items.</ExamTip>
 
+<Callout>The **Pritzker Architecture Prize** is the discipline's highest honor. The LEA tests every laureate from **1979 to 2026**, expecting you to match each architect to at least one defining building. This is pure memorization territory — no conceptual shortcut replaces knowing the full list.</Callout>
 
 ## Common Mistakes
 
@@ -47,10 +46,9 @@ The recent shift from Western formalist monuments to Global South social practic
 
 <WikiMistakeList mistakes={["Assuming the prize always goes to Western architects. Japan has produced eight laureates — more than any country except the USA. Brazil, Mexico, Chile, China, India, Burkina Faso, and Iraq/UK are represented. The exam tests geographic awareness of the laureate list.", "Conflating the 1988 dual award. In 1988, **Gordon Bunshaft** and **Oscar Niemeyer** shared the prize — the only shared award until team practices won in later years. Students sometimes list Niemeyer as a solo winner or place him in the wrong year."]} />
 
-
 ## Key Terms
 
-**Pritzker Architecture Prize** — Annual award established in 1979 by Jay A. Pritzker and his wife Cindy, funded by the Pritzker family and Hyatt Foundation, recognizing a living architect (or team) whose built work demonstrates enduring contribution to architecture; architecture's equivleant of the Nobel Prize.
+**Pritzker Architecture Prize** — Annual award established in 1979 by Jay A. Pritzker and his wife Cindy, funded by the Pritzker family and Hyatt Foundation, recognizing a living architect (or team) whose built work demonstrates enduring contribution to architecture; architecture's equivalent of the Nobel Prize.
 
 **Formalist practice** — Architectural approach prioritizing visual form, geometric composition, and aesthetic innovation as primary design drivers; characteristic of early Pritzker laureates like Meier, Gehry, and Hadid.
 
@@ -61,3 +59,10 @@ The recent shift from Western formalist monuments to Global South social practic
 **Technological practice** — Architectural approach driven by structural and material innovation; exemplified by Foster, Piano, Rogers, and Otto.
 
 **Laureate** — A person or team awarded a prize; in architecture, typically refers to a Pritzker Prize winner.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

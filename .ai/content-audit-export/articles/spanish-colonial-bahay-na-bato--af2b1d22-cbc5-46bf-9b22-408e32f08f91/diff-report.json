@@ -1,38 +1,45 @@
 {
   "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
   "slug": "spanish-colonial-bahay-na-bato",
-  "generated_at": "2026-05-03T13:45:25.917Z",
-  "old_hash": "sha256:e9fc9dd931898a88f73bdb56e69330e98ef2c07caa49ebacd92d8c8167096297",
-  "new_hash": "sha256:05425616cf16307a2593fab4a94c3d520e5662d231d0b9bbe869b577e0a52578",
-  "original_hash": "sha256:e9fc9dd931898a88f73bdb56e69330e98ef2c07caa49ebacd92d8c8167096297",
-  "normalized_hash": "sha256:d5009b8a94f9532959dddfae9899d8edc1e30daf400934248a73c6b34fc939b0",
-  "candidate_hash": "sha256:05425616cf16307a2593fab4a94c3d520e5662d231d0b9bbe869b577e0a52578",
+  "generated_at": "2026-05-04T00:07:08.727Z",
+  "old_hash": "sha256:05425616cf16307a2593fab4a94c3d520e5662d231d0b9bbe869b577e0a52578",
+  "new_hash": "sha256:47a3692108f75246989b503c6af31d530d06ce6414db111ede61bec842e6be62",
+  "original_hash": "sha256:05425616cf16307a2593fab4a94c3d520e5662d231d0b9bbe869b577e0a52578",
+  "normalized_hash": "sha256:47a3692108f75246989b503c6af31d530d06ce6414db111ede61bec842e6be62",
+  "candidate_hash": "sha256:47a3692108f75246989b503c6af31d530d06ce6414db111ede61bec842e6be62",
   "changed": true,
-  "changed_line_count": 160,
-  "inserted_line_count": 29,
-  "deleted_line_count": 0,
+  "changed_line_count": 78,
+  "inserted_line_count": 0,
+  "deleted_line_count": 10,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 160,
-    "inserted": 29,
-    "deleted": 0,
-    "original_line_count": 153,
-    "candidate_line_count": 182
+    "changed": 78,
+    "inserted": 0,
+    "deleted": 10,
+    "original_line_count": 182,
+    "candidate_line_count": 172
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

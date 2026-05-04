@@ -1,38 +1,48 @@
 {
   "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
   "slug": "lea-prac-frm-007-reciprocity-principles-in-architectural-practice",
-  "generated_at": "2026-05-03T13:44:15.886Z",
-  "old_hash": "sha256:2cf5afa641d46621e90437f79ebf70b9c44d6eba5df32b6490dffab771c843e5",
-  "new_hash": "sha256:2252ca4f380b936171b1fc6ffaa7fc12c3890d78a45ef61da00df7775efc2b2b",
-  "original_hash": "sha256:2cf5afa641d46621e90437f79ebf70b9c44d6eba5df32b6490dffab771c843e5",
-  "normalized_hash": "sha256:2ed6f41df0f6fd6b5ca291fc77499e3c253e67391fe374cc29aa2c1f970f50c9",
-  "candidate_hash": "sha256:2252ca4f380b936171b1fc6ffaa7fc12c3890d78a45ef61da00df7775efc2b2b",
+  "generated_at": "2026-05-04T00:05:47.519Z",
+  "old_hash": "sha256:2252ca4f380b936171b1fc6ffaa7fc12c3890d78a45ef61da00df7775efc2b2b",
+  "new_hash": "sha256:4fd94bed1cabeab4082486b1f89c7977277dea045921e79d9e358cd844b44f4f",
+  "original_hash": "sha256:2252ca4f380b936171b1fc6ffaa7fc12c3890d78a45ef61da00df7775efc2b2b",
+  "normalized_hash": "sha256:4fd94bed1cabeab4082486b1f89c7977277dea045921e79d9e358cd844b44f4f",
+  "candidate_hash": "sha256:4fd94bed1cabeab4082486b1f89c7977277dea045921e79d9e358cd844b44f4f",
   "changed": true,
-  "changed_line_count": 114,
-  "inserted_line_count": 83,
+  "changed_line_count": 71,
+  "inserted_line_count": 6,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 6,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 6,
   "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 6,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 114,
-    "inserted": 83,
+    "changed": 71,
+    "inserted": 6,
     "deleted": 0,
-    "original_line_count": 37,
-    "candidate_line_count": 120
+    "original_line_count": 120,
+    "candidate_line_count": 126
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006"
+    ],
+    "changed_count": 6
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 6 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 6 preserved UI block(s)."
 }

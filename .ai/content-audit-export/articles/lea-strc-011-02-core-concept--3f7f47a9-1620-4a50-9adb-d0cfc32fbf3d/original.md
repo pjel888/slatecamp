@@ -1,6 +1,15 @@
 ## What You Need to Know for the LEA
-Foundations are classified into shallow and deep systems based on depth-to-width ratio and load transfer mechanism. Shallow foundations (footing, strip, mat, raft) bear directly on soil near surface. Deep foundations (piles, caissons) transfer load to deeper strata. Foundation type selection depends on bearing capacity, settlement tolerance, and soil profile.
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Distinguish between shallow and deep foundations
+- Identify the four shallow foundation types: isolated, strip, combined, and mat
+- Explain the floating foundation concept
+- Apply foundation selection criteria based on soil bearing capacity, settlement, and cost
+
+---
 ## Core Concept
 A foundation is the structural system that transfers building load from the superstructure to the soil. Foundation selection is governed by three factors: _soil bearing capacity_, _allowable settlement_, and _site constraints_ (depth to groundwater, adjacent structures, available space).
 
@@ -60,5 +69,12 @@ In Metro Manila and coastal alluvial plains, shallow footings are viable only in
 **Memory Aid:** Shallow footings are direct pushers—they shove load straight down into soil. Deep piles and caissons are deep anchors—they hang onto the soil with friction or grip a firm layer with their tip. Mats are load-spreaders—they flatten pressure across a wide area to reduce settlement. Floating foundations are weight-balancers—they remove as much soil weight as they place in structure.
 </Tip>
 
+
+## Related Articles
+
+See also: **Piles** (lea-strc-011-01) for deep foundation details, **Geotechnical Engineering** (lea-strc-011-03) for soil properties governing selection, and **Concrete Materials** (lea-strc-006-01) for footing concrete requirements.
+
 ## Common Mistakes
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+
 <WikiMistakeList mistakes={["Assuming shallow foundations are always cheaper; deep foundations are often mandatory in soft soil and eliminate costly settlement repair later.","Confusing floating foundation with a raft foundation; floating requires Df and excavation weight to nearly equal structure weight; ordinary mats are intermediate supports, not floating.","Treating combined footing and mat as equivleant; combined footings support 2–4 columns; mats cover the entire footprint and provide greater stiffness and load distribution.","Placing mats at arbitrary depth; mat depth is selected to balance bearing capacity and settlement. Deeper mats reduce pressure but increase cost. Optimization is required.","Omitting the role of groundwater and compressibility in foundation selection; soft, saturated clays mandate deep foundations and settlement monitoring, not shortcuts to shallow systems."]} />

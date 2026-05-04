@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:39.684Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:14.062Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
   "slug": "lea-util-002-05-kitchen-exhaust-hood-classification",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:74c1db1eadba003584147d0fce4a94cc44dc1ded2689a394727d9854fab1ee73",
-  "original_hash": "sha256:34a92d077c8629492031914e0f6c476d071750b84bfa5880fe27c6165404b864",
-  "candidate_hash": "sha256:74c1db1eadba003584147d0fce4a94cc44dc1ded2689a394727d9854fab1ee73",
-  "stale_check_passed": false,
+  "original_hash": "sha256:74c1db1eadba003584147d0fce4a94cc44dc1ded2689a394727d9854fab1ee73",
+  "candidate_hash": "sha256:eebecb97a030bbf3952733e2bedad924ceae93ffb835afa1fd3ba1785e5d29b6",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:50:42.135804+00:00"
 }

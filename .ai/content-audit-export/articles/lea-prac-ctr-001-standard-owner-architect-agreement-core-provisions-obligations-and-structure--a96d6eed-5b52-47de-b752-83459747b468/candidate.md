@@ -15,17 +15,13 @@ The Owner-Architect agreement establishes the terms for design services before c
 
 The Owner-Architect agreement divides design services into distinct phases, each with defined deliverables and compensation. The standard allocation per SPP Document 202 is: Schematic Design (SD) at 20%, Design Development (DD) at 20%, Construction Documents (CD) at 30%, Bidding at 5%, and Construction Administration (CA) at 25%.
 
-<LawCallout code="uap" section="SPP Doc. 202 - Standard Owner-Architect Agreement">
-Under SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 
 ### Architect's Obligations and Authority
 
 The architect serves as the Owner's agent during design and as an impartial contract administrator during construction. The agreement specifies that the architect must exercise professional judgment in accordance with the standard of care. The architect must prepare drawings and specifications sufficiently detailed for competitive bidding and construction execution, complying with all applicable laws, codes, and regulations.
 
-<ExamTip>
-  **LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from "Owner's agent" during design to "impartial contract administrator" during construction — this dual role is a frequent LEA test point.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 
 ### Compensation and Payment Terms
 
@@ -39,16 +35,7 @@ The agreement permits the Owner to suspend services without cause, typically wit
 
 Changes to scope are documented through formal change orders. Dispute resolution is typically handled through negotiation, mediation, or arbitration as specified. The contract should establish whether disputes are submitted to the architect's professional association, an independent arbitrator, or the courts.
 
-<ProcessFlow>
-  **Owner-Architect Agreement Lifecycle:**
-  Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement
-  Step 2: **Schematic Design** — 20% fee earned upon approval
-  Step 3: **Design Development** — 20% fee earned upon approval
-  Step 4: **Construction Documents** — 30% fee earned upon submission for permit
-  Step 5: **Bidding** — 5% fee earned
-  Step 6: **Construction Administration** — 25% fee earned over project duration
-  Step 7: **Closeout** — Final payment, certificate of completion, document turnover
-</ProcessFlow>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
 
 ## Common Mistakes
 
@@ -64,6 +51,9 @@ Changes to scope are documented through formal change orders. Dispute resolution
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Owner-Architect Agreement Structure — UAP Doc 301 Components Diagram" description="Diagram showing the structure of UAP Document 301: three-party relationship (Owner-Architect-Contractor) at top, then branching to General Conditions, Supplementary Conditions, Special Provisions. Core provisions highlighted: scope of work, compensation, termination, dispute resolution, and insurance requirements." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

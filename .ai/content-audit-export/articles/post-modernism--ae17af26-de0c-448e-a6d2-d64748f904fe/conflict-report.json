@@ -1,19 +1,21 @@
 {
-  "attempted_at": "2026-05-03T14:01:24.078Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T15:29:04.536Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "ae17af26-de0c-448e-a6d2-d64748f904fe",
   "slug": "post-modernism",
   "preparation_actions": [],
   "remote_hash_before": "sha256:b9596baa24a6f6fe2d365a2cbeceab9c24a73e7f59fbb0c3eeca2e3ba5122921",
   "original_hash": "sha256:92009998ec3637170ab15c52fc190769a71ba99eaba91176cb5602b7b199fb4a",
-  "candidate_hash": "sha256:b9596baa24a6f6fe2d365a2cbeceab9c24a73e7f59fbb0c3eeca2e3ba5122921",
+  "candidate_hash": "sha256:e77272aa618349d1e54e29fe0c6b7d24fd19fed20c67864d6a1b7acf21d2e623",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:49:56.805088+00:00"
 }

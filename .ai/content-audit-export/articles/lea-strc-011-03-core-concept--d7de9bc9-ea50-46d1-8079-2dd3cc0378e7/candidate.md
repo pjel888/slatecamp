@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
+<ArticleMedia id="media-lea-strc-011-03-core-concept" a type="image" caption="Geotechnical Investigation — Soil Profile and Bearing Capacity" description="Diagram of a geotechnical boring log showing: (1) Soil profile layers (topsoil, clay, sand, weathered rock, bedrock); (2) Standard Penetration Test (SPT) N-values at each depth; (3) Groundwater table elevation; (4) Soil classification per USCS; (5) Allowable bearing capacity calculated from soil properties. Boring location plan on site map showing required number of borings per structure type." suggestedAsset="Diagram or reference image" status="placeholder" />
 Geotechnical engineering characterizes soil, predicts its behavior under load, and specifies construction practices to achieve stable foundations. Five core topics unite this field:
 
 **1. Soil Classification and Properties:**
@@ -96,16 +97,13 @@ Metro Manila buildings almost universally encounter soft alluvial clay with SPT 
 2. **Compaction Specification and Verification:** A building pad requires 90% Proctor compaction at OMC ± 2%. Standard Proctor test gives γd max = 18 kN/m³ at w = 12%. A field density test on the finished pad reads γd = 16.2 kN/m³ and w = 11.8%. Verify compliance.
 3. **Consolidation Settlement Prediction:** Soft clay (H = 8 m, cv = 1 m²/year) underlies a mat foundation. Calculate primary consolidation settlement time to 90% completion and assess risk of cracking if differential settlement is 50 mm.
 
-<Tip>
-**Memory Aid:** SPT N-value is your soil's report card. N < 10 = soft, weak, lots of settlement (piles!). N = 10–30 = medium, okay for shallow footing with care. N > 30 = strong, dense, shallow footing easy. Compaction is the contractor's promise: "90% Proctor" means 90% as stiff as the lab sample. Clay settles slow (consolidation); sand settles fast (immediate). Know your settlement type or face cracking.
-</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Related Articles
 
 See also: **Foundations** (lea-strc-011-02) for how soil properties drive foundation selection, **Piles** (lea-strc-011-01) for deep foundation soil-structure interaction, and **Earthquake Fundamentals** (lea-strc-004-01) for liquefaction and seismic soil behavior.
 
 ## Common Mistakes
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 
-<WikiMistakeList mistakes={["Assuming SPT N-values are absolute and precise; N-values have ±20% uncertainty and are affected by boring method, hammer efficiency, and soil moisture. Use N-values as estimates, not gospel.","Specifying compaction without verification; many projects specify 90% Proctor but never perform field density tests. Without verification, fill may be 70–80% Proctor, leading to settlement and failure.","Ignoring time-dependent settlement in clay; a building on soft clay may appear stable at 6 months (only immediate settlement has occurred) but crack at 2 years as primary consolidation continues. Monitor long-term.","Confusing bearing capacity with settlement. A soil may have adequate bearing capacity (no shear failure) but unacceptable settlement (foundation drops 100 mm). Both must be checked.","Omitting groundwater effects in bearing capacity; saturated soil has lower effective stress and lower bearing capacity than dry soil at the same SPT N-value. Always consider groundwater level."]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

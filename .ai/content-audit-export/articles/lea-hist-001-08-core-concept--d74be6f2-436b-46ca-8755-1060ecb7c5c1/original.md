@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-Indus Valley Civilization architecture tests your understanding of an early urban planning system—planning that predates or rivals Classical Greece's rationality. The LEA expects knowledge of **Harappa** and **Mohenjo-daro**, standardized brick, urban grid layouts, and the absence of monumental temples or palaces—suggesting an egalitarian or theocratic organization. Familiarity with standardization and planning discipline is essential.
-</Callout>
+## Learning Goal
 
+Identify the key characteristics of Indus Valley civilization architecture — grid-plan cities, standardized brick sizes, advanced drainage systems, the Great Bath of Mohenjo-Daro — and explain how urban planning and water management reveal sophisticated civic organization.
 ## Core Concept
 
 The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus River valley (modern Pakistan and northwestern India). This culture is remarkable for its sophistication, planning discipline, and mysterious decline. Unlike Mesopotamian and Egyptian civilizations with visible monumental architecture and royal tombs, the Indus civilization built cities of standardized proportions, absence of hierarchical display, and unknown spiritual beliefs. Written script survives but remains undeciphered, limiting our understanding of governance, religion, and purpose.
@@ -20,7 +19,7 @@ The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus Riv
 **Key Clarification:** Do not assume Indus civilization was "less developed" due to lack of monuments. Absence of monumental architecture does not indicate primitiveness. Indus civilization's urban planning, sanitation, and standardization rival or exceed contemporary civilizations. Different values (functionality over monument) produced different architectural forms, not inferior ones.
 </Note>
 
-**Domestic Architecture:** Indus houses were largely uniform in sclea and plan. Individual dwellings typically featured an internal courtyard (likely for shade and water collection in a hot climate), rooms arranged around the courtyard, and flat roofs. Larger houses (likely merchant or administrator residences) featured multiple courtyards and additional rooms, but even these lacked the ostentatious display of contemporary Near Eastern palaces. This suggests either strong central planning (preventing inequality) or an economy and society with limited hierarchical distinction.
+**Domestic Architecture:** Indus houses were largely uniform in scale and plan. Individual dwellings typically featured an internal courtyard (likely for shade and water collection in a hot climate), rooms arranged around the courtyard, and flat roofs. Larger houses (likely merchant or administrator residences) featured multiple courtyards and additional rooms, but even these lacked the ostentatious display of contemporary Near Eastern palaces. This suggests either strong central planning (preventing inequality) or an economy and society with limited hierarchical distinction.
 
 **Public Structures:** The **Great Bath** at Mohenjo-daro is the most famous Indus public building. Measuring approximately 40 × 23 feet (12 × 7 metres) and sunk 8 feet (2.4 metres) below ground level, it featured brick stairs descending on all sides and a sophisticated drainage system with an overflow outlet. The bath was waterproofed with bitumen. Its ritual or ceremonial purpose remains debated—possibly for ablution (religious purification), public bathing, or cold-water immersion therapy. The sophistication of its drainage system is remarkable: Indus architects engineered gradients allowing water to flow to central drains without stagnation.
 
@@ -52,6 +51,10 @@ The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus Riv
 
 <ExamTip>**Pattern 5: Comparative Analysis.** "Why do Indus cities lack monumental temples and royal palaces evident in Egypt and Mesopotamia?" Tests your ability to infer social organization from architectural evidence and acknowledge uncertainty.</ExamTip>
 
+<Callout>
+Indus Valley Civilization architecture tests your understanding of an early urban planning system—planning that predates or rivals Classical Greece's rationality. The LEA expects knowledge of **Harappa** and **Mohenjo-daro**, standardized brick, urban grid layouts, and the absence of monumental temples or palaces—suggesting an egalitarian or theocratic organization. Familiarity with standardization and planning discipline is essential.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Assuming Indus civilization was 'less developed' due to lack of monuments" correction="Absence of monumental architecture does not indicate primitiveness. Indus civilization's urban planning, sanitation, and standardization rival or exceed contemporary civilizations. Different values (functionality over monument) produced different architectural forms, not inferior ones." context="This demonstrates sophisticated understanding of how diverse societies express different priorities through architecture." />
@@ -81,3 +84,10 @@ The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus Riv
 **Latrine:** An indoor toilet or waste-disposal facility; virtually all Indus houses featured one, connected to covered drainage systems.
 
 **Ablution:** Ritual washing or purification, particularly in religious contexts; possibly the purpose of the Great Bath.
+
+## Related Articles
+
+See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

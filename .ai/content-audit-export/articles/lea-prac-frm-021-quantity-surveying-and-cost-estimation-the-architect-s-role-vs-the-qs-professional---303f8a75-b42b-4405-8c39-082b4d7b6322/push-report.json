@@ -1,19 +1,23 @@
 {
-  "attempted_at": "2026-05-03T14:02:47.763Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:07:03.598Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
   "slug": "lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-s-role",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:969aa97d2956f26c3695d32041c6734736b99a08f75175c37f7a2d2f666a6b95",
-  "original_hash": "sha256:4c9e8dbc2f661123386b8a298857b3ebe7a65a55457c676c4a3393d03f8c6fd2",
-  "candidate_hash": "sha256:969aa97d2956f26c3695d32041c6734736b99a08f75175c37f7a2d2f666a6b95",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:86252bec213716b16cfd89538185b25c6d1dc2096fd3e47fbeda9dcc576880d0",
+  "original_hash": "sha256:eba407c3fdf322b004be7e268ab00e4df1ad6b6245df7fc9a051753a93607b34",
+  "candidate_hash": "sha256:ac5ad2c3df3342ed24a0bff3e60e043a3ba06f85e69804e0083c517ecea44111",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:52:24.204547+00:00"
+  "remote_updated_at_before": "2026-05-03T16:57:49.414452+00:00"
 }

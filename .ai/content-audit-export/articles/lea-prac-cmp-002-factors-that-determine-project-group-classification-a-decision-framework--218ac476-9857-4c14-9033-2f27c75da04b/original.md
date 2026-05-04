@@ -1,9 +1,17 @@
 ## Factors That Determine Project Group Classification — A Decision Framework
 
-<JSX name='ArticleHeader' article='LEA-PRAC-CMP-002' />
+## Learning Goal
 
-Project classification under SPP Document 202 requires systematic evaluation of multiple interconnected factors rather than the application of a single criterion. The architect must assess building type, structural complexity, mechanical and electrical scope, site conditions, regulatory environment, and project delivery context. Accurate classification protects the architect's legitimate interests while demonstrating transparent fee justification to the client.
+After studying this article, you should be able to:
 
+- Explain the factors that determine project group classification.
+- Distinguish Groups 1–5 by complexity and building type.
+- Describe the decision framework for classifying a project.
+- Apply classification criteria to exam scenarios.
+
+
+
+---
 ### Building Type as Primary Indicator
 
 Building type serves as the initial classification anchor. Under Philippine SPP Document 202, project classifications are not a linear hierarchy of complexity from 1 to 10. Instead, the groups are structured categorically:
@@ -18,6 +26,19 @@ Within each applicable design category, the architect must evaluate whether the 
 ### Structural System Complexity
 
 Structural sophistication profoundly influences classification. Simple structures using conventional cast-in-place concrete or light steel framing align with standard baseline classifications. Sophisticated systems—post-tensioned concrete, steel moment frames, innovative systems, or structures serving unconventional functions—indicate a higher degree of complexity. Site-specific structural challenges, such as deep foundations, unusual soil conditions, or seismic-resistant design in high-risk zones, further elevate the project's technical demands.
+
+
+<ExamTip>
+  **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
+</ExamTip>
+
+
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
+
+
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 
 ### Mechanical and Electrical Systems Scope
 
@@ -47,9 +68,9 @@ Projects featuring innovative architectural solutions, sophisticated facade syst
 
 The scope of interior design and finishes influences the overall project demand. Base building with minimal interior specification supports baseline classifications. Comprehensive interior design, custom furnishings, specialized finishes (performance flooring, acoustic treatments, specialized lighting), or integrated interior-exterior design strategies require extensive detailing (often invoking principles similar to Group 8 services) and significantly more design effort.
 
-### Project Sclea and Value
+### Project Scale and Value
 
-Project sclea and construction cost correlate with complexity, though not deterministically. Larger projects typically exhibit higher complexity, but a small specialized facility may outrank a larger conventional building in complexity assessment. Cost alone should not drive the determination of complexity; rather, the accurate classification dictates the appropriate fee percentage applied to the Project Construction Cost (PCC).
+Project scale and construction cost correlate with complexity, though not deterministically. Larger projects typically exhibit higher complexity, but a small specialized facility may outrank a larger conventional building in complexity assessment. Cost alone should not drive the determination of complexity; rather, the accurate classification dictates the appropriate fee percentage applied to the Project Construction Cost (PCC).
 
 ### Decision Framework Application
 
@@ -63,4 +84,19 @@ To apply this framework practically:
 
 ### Documentation and Client Communication
 
-Classification decisions should be clearly documented in proposals and contracts. When submitting proposals, the architect should briefly explain the classification rationlea based on SPP 202 guidelines, demonstrating transparent fee determination. This practice establishes clarity, manages expectations, and provides a solid foundation for discussion if subsequent scope changes trigger reclassification.
+Classification decisions should be clearly documented in proposals and contracts. When submitting proposals, the architect should briefly explain the classification rationale based on SPP 202 guidelines, demonstrating transparent fee determination. This practice establishes clarity, manages expectations, and provides a solid foundation for discussion if subsequent scope changes trigger reclassification.
+
+---
+
+## Related Articles
+
+- [Project Classification Groups](lea-prac-cmp-001)
+- [Factors Determining Classification](lea-prac-cmp-002)
+- [Project Construction Cost](lea-prac-cmp-003)
+- [Schedule of Payments](lea-prac-cmp-004)
+- [MDPE Formula](lea-prac-cmp-006)
+- [MDPE Multipliers](lea-prac-cmp-007)
+- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
+- [Reimbursable Expenses](lea-prac-cmp-011)
+- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)

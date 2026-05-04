@@ -1,18 +1,24 @@
 {
   "article_id": "ba36cb75-5bb4-4d12-802c-f5ab921f7949",
   "slug": "prefabricated-constructions",
-  "generated_at": "2026-05-03T13:44:11.427Z",
-  "original_hash": "sha256:5fbacf1cd1e6b4c2082df1291837d0599c9daaf031c6bd4eb025d68886ec25f0",
-  "normalized_hash": "sha256:d46e1848ea8f5d1634281797d34011d71643954bcfe1dbd3491e8f26549c8cac",
-  "candidate_hash": "sha256:eed8eb5c81165a32c9afac3b2fcc20441a77a0bfa95a48ae140b3f3f7dfaf452",
+  "generated_at": "2026-05-04T00:05:38.720Z",
+  "original_hash": "sha256:e5420cda9d4da3a0e6cde26c6d55961d26e414f4a2811beefd10eda3ac5cbb15",
+  "normalized_hash": "sha256:c94358c4a0435196243dcb00aaad731620765c0959a652d8637b2c5a9b12fbcb",
+  "candidate_hash": "sha256:c94358c4a0435196243dcb00aaad731620765c0959a652d8637b2c5a9b12fbcb",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition."
+  ]
 }

@@ -1,19 +1,27 @@
 {
-  "attempted_at": "2026-05-03T14:01:55.794Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:24.932Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
   "slug": "lea-util-003-03-protection-levels-and-risk-assessment",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:0ceff609c12179cd59773408ba7a2757a7e1f520f7009b6ffedd7c99c500c61d",
   "original_hash": "sha256:4a378c804c4fe84e091f7126fb771caa77b115e2cb064b4f5096669c8751b05c",
-  "candidate_hash": "sha256:0ceff609c12179cd59773408ba7a2757a7e1f520f7009b6ffedd7c99c500c61d",
+  "candidate_hash": "sha256:69fc640753c57be5f7568fe945cb4ffa90c48d70d0a6989aee63f231805afab6",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:51:04.882081+00:00"
 }

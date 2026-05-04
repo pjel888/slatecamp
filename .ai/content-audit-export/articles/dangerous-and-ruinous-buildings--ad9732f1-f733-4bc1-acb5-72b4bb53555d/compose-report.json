@@ -1,18 +1,28 @@
 {
   "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
   "slug": "dangerous-and-ruinous-buildings",
-  "generated_at": "2026-05-03T13:44:10.794Z",
-  "original_hash": "sha256:15ba8915eb4c5af18bbe8d781ae0f803a48ac289d672d8b664db5a4ca56999a4",
-  "normalized_hash": "sha256:360fc6bec9ff7ad45575d7eea101e06fc482c573c1ff255f8f2c2e961c1bb661",
-  "candidate_hash": "sha256:84b9a995f773479b688b35720f572878fe1808384043afe54c2ca8f92e3851d1",
+  "generated_at": "2026-05-04T00:05:37.984Z",
+  "original_hash": "sha256:2815f04950363aad957f4ddc65586a8371ed4c6321ca9079209e4331a1580b44",
+  "normalized_hash": "sha256:3e9c20f4b31a7f5685bccf6539d7d8b4f14e4e7b532534535f0b9e3492505b8f",
+  "candidate_hash": "sha256:3e9c20f4b31a7f5685bccf6539d7d8b4f14e4e7b532534535f0b9e3492505b8f",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

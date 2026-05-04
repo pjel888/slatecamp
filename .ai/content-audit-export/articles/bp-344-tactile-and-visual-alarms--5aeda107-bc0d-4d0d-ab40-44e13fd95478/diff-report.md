@@ -1,32 +1,33 @@
 # Content Diff Report: bp-344-tactile-and-visual-alarms
 
-Generated: 2026-05-03T13:45:20.151Z
+Generated: 2026-05-04T00:07:01.246Z
 Article ID: 5aeda107-bc0d-4d0d-ab40-44e13fd95478
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:14540ed7a77205faf11b72017e4d9861a5d6a24d136e2fa75252896887fc318e`
-- Normalized: `sha256:42512a604d814ba501de54ca79a87241d38806f880c8f21b5c79bf747de81f05`
-- Candidate: `sha256:7c2ba99040cf7a96f64d5c1495c5cf621c1d1858d0dc9031652c8da07ace0185`
+- Original: `sha256:7c2ba99040cf7a96f64d5c1495c5cf621c1d1858d0dc9031652c8da07ace0185`
+- Normalized: `sha256:20b4f6ea1fb2e7b098f92d700d54d5402cc70362a69a579651bdaa435621c8a2`
+- Candidate: `sha256:20b4f6ea1fb2e7b098f92d700d54d5402cc70362a69a579651bdaa435621c8a2`
 
 ## Line summary
 
-- Changed lines: 228
-- Inserted lines: 18
-- Deleted lines: 0
+- Changed lines: 200
+- Inserted lines: 0
+- Deleted lines: 13
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

@@ -1,38 +1,45 @@
 {
   "article_id": "6e9a4321-c9db-4720-ab19-288e7f28be48",
   "slug": "overview-building-materials",
-  "generated_at": "2026-05-03T13:45:36.300Z",
-  "old_hash": "sha256:050d8c32ef2b2cdcd6e9a7cb67fff37fb8042bc0e5f60960bc9cd08728e32a5e",
-  "new_hash": "sha256:146e848dfb501eac4d2fbbf4af14480e241a96182ca5755569be7e817c0bf300",
-  "original_hash": "sha256:050d8c32ef2b2cdcd6e9a7cb67fff37fb8042bc0e5f60960bc9cd08728e32a5e",
-  "normalized_hash": "sha256:306b5debf7dec000bd63db48e0c2d4d954563c472a849f759f2662bcae68a1a6",
-  "candidate_hash": "sha256:146e848dfb501eac4d2fbbf4af14480e241a96182ca5755569be7e817c0bf300",
+  "generated_at": "2026-05-04T00:07:21.176Z",
+  "old_hash": "sha256:146e848dfb501eac4d2fbbf4af14480e241a96182ca5755569be7e817c0bf300",
+  "new_hash": "sha256:4e6332fcf2a19cef962ff210e1860d8c5f7472513db238c2cc063c16eff06086",
+  "original_hash": "sha256:146e848dfb501eac4d2fbbf4af14480e241a96182ca5755569be7e817c0bf300",
+  "normalized_hash": "sha256:4e6332fcf2a19cef962ff210e1860d8c5f7472513db238c2cc063c16eff06086",
+  "candidate_hash": "sha256:4e6332fcf2a19cef962ff210e1860d8c5f7472513db238c2cc063c16eff06086",
   "changed": true,
-  "changed_line_count": 86,
-  "inserted_line_count": 0,
-  "deleted_line_count": 24,
+  "changed_line_count": 72,
+  "inserted_line_count": 6,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 86,
-    "inserted": 0,
-    "deleted": 24,
-    "original_line_count": 95,
-    "candidate_line_count": 71
+    "changed": 72,
+    "inserted": 6,
+    "deleted": 0,
+    "original_line_count": 71,
+    "candidate_line_count": 77
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0003",
+      "ui_0005"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

@@ -1,38 +1,45 @@
 {
   "article_id": "31fff533-f6b9-44dc-8d46-996e5413a587",
   "slug": "spanish-colonial-laws-of-the-indies",
-  "generated_at": "2026-05-03T13:44:28.784Z",
-  "old_hash": "sha256:70075103d21f377fc85a029dc2e92e6a0cd267023ed84f42fac0d10876565bf2",
-  "new_hash": "sha256:fead379a92085d46b1907c2c01cc6ebc0187a22fd948248ad75682debaef7887",
-  "original_hash": "sha256:70075103d21f377fc85a029dc2e92e6a0cd267023ed84f42fac0d10876565bf2",
-  "normalized_hash": "sha256:9c8b530d929ee929a4ddd4b54b424e956812adf6ac50da2facfeaf7d62110dd3",
-  "candidate_hash": "sha256:fead379a92085d46b1907c2c01cc6ebc0187a22fd948248ad75682debaef7887",
+  "generated_at": "2026-05-04T00:06:02.408Z",
+  "old_hash": "sha256:fead379a92085d46b1907c2c01cc6ebc0187a22fd948248ad75682debaef7887",
+  "new_hash": "sha256:8a646dae7bd8b63311b8dc36c26df6ce55c69dc643e06a5cea54e480766b7a92",
+  "original_hash": "sha256:fead379a92085d46b1907c2c01cc6ebc0187a22fd948248ad75682debaef7887",
+  "normalized_hash": "sha256:8a646dae7bd8b63311b8dc36c26df6ce55c69dc643e06a5cea54e480766b7a92",
+  "candidate_hash": "sha256:8a646dae7bd8b63311b8dc36c26df6ce55c69dc643e06a5cea54e480766b7a92",
   "changed": true,
-  "changed_line_count": 150,
-  "inserted_line_count": 34,
-  "deleted_line_count": 0,
+  "changed_line_count": 127,
+  "inserted_line_count": 0,
+  "deleted_line_count": 13,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 150,
-    "inserted": 34,
-    "deleted": 0,
-    "original_line_count": 137,
-    "candidate_line_count": 171
+    "changed": 127,
+    "inserted": 0,
+    "deleted": 13,
+    "original_line_count": 171,
+    "candidate_line_count": 158
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

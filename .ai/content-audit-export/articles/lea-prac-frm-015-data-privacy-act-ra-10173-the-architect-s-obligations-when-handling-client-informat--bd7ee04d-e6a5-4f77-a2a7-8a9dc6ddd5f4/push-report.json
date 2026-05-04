@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:32.020Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:51.952Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
   "slug": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:4b6afa739533b2d6add62106e92fd594390911fb3c9557823d9691bf5d8636b5",
-  "original_hash": "sha256:0d1ee274b5edc57e0e760706731321df8a920c9919827a72c0ac5a837b9780ab",
-  "candidate_hash": "sha256:4b6afa739533b2d6add62106e92fd594390911fb3c9557823d9691bf5d8636b5",
-  "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:52:02.27187+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:d41cd859dc57a272980f4620a160f72782a4bdb48c77ee642e27109c49904a95",
+  "original_hash": "sha256:d41cd859dc57a272980f4620a160f72782a4bdb48c77ee642e27109c49904a95",
+  "candidate_hash": "sha256:05df86b21c665eab9bd840124f8d8447c9ecb67f2d007cf0d0efa802ad3f866b",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-03T16:35:05.235941+00:00"
 }

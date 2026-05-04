@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Explain the fundamental design inequality: Required Strength ≤ Design Capacity
+- Distinguish between nominal strength (Rn) and design strength (φRn)
+- Define the capacity reduction factor (φ) and identify common values
+- Compare LRFD capacity check with ASD allowable stress check
 
 Strength reduction factors (φ) are multipliers applied to material strength to account for variability in construction quality, material properties, and analysis methods. They range from 0.70 to 0.90 depending on the failure mode and reinforcement type. You must memorize the complete φ factor table and understand which factor applies to each structural situation.
 
@@ -60,6 +67,13 @@ For axial compression, remember: **SPIRAL = 0.75, TIED = 0.70** (spiral allows m
 For any mode not listed, confirm the specific provision in the NSCP—do not guess.
 </Tip>
 
+
+## Related Articles
+
+See also: **Required Strength** (lea-strc-005-01) for the demand side of the inequality, **ASD vs LRFD** (lea-strc-003-04) for the design philosophy, and **Stress-Strain** (lea-strc-003-01) for the material properties underlying capacity.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Forgetting that φ differs by reinforcement type for axial compression; spiral is 0.75, tied is 0.70, not both 0.70.", "Applying φ = 0.90 to shear; shear uses φ = 0.85 because the failure is more sudden and less ductile.", "Using φ = 0.85 for bearing; bearing on concrete uses φ = 0.70, the same as tied columns.", "Confusing the requirement φSn ≥ U with Sn ≥ φU (the factor multiplies strength, not load).", "Omitting φ from the capacity check entirely and comparing nominal strength directly to required strength; the LRFD method requires the φ multiplication."]} />

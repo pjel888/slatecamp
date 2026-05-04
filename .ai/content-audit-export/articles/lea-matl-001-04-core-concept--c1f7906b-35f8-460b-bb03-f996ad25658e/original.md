@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Wood preservation extends timber service life by protecting against decay, insects, and weather. The LEA tests your knowledge of preservative types, application methods, and performance standards. Expect questions on pressure-treatment schedules, tropical wood-decay organisms in the Philippines, regulations on restricted preservatives, and treatment adequacy for specific exposure categories.
-
+Identify wood preservation methods (pressure treatment, surface application, thermal modification) and explain how each method protects against decay, termites, and fire in the Philippine tropical climate.
 ## Core Concept
 
 Untreated wood decays when exposed to moisture, temperature, and biological attack (fungi, termites, beetles, marine borers). Chemical preservatives prevent colonization by these organisms. The preservative must penetrate the wood surface deeply enough to protect for the intended service life, typically 20—50 years depending on use category.
@@ -12,7 +12,7 @@ Wood preservation involves applying protective chemicals through pressure treatm
 
 ### Pressure-Treated Lumber: Overview
 
-Pressure treatment uses a vacuum and pressure cycle to force preservative deep into the wood. The wood is placed in a selead cylinder, the air is extracted (vacuum phase), and the preservative is pumped in under 100—200 psi (high-pressure phase). This achieves deep penetration and long service life, superior to surface treatment.
+Pressure treatment uses a vacuum and pressure cycle to force preservative deep into the wood. The wood is placed in a sealed cylinder, the air is extracted (vacuum phase), and the preservative is pumped in under 100—200 psi (high-pressure phase). This achieves deep penetration and long service life, superior to surface treatment.
 
 AWPA (American Wood Protection Association) Standard U1 specifies retention levels (pounds of preservative per cubic foot) for each use category. AWPA is the only ANSI-accredited standards developer for treated wood.
 
@@ -100,7 +100,7 @@ Preservative treatment and surface finishes (paint, varnish) that seal wood and 
 
 ### Wood Decay Fungi
 
-Fungal decay (wet rot and dry rot) causes softening and discoloration of wood. In the Philippines' high-humidity environment, fungal decay occurs rapidly on exposed or inadequately selead timber.
+Fungal decay (wet rot and dry rot) causes softening and discoloration of wood. In the Philippines' high-humidity environment, fungal decay occurs rapidly on exposed or inadequately sealed timber.
 
 Prevention includes proper drainage, ventilation, and application of fungicidal preservatives. Regular maintenance and early repair of damaged finishes prevent deep fungal colonization.
 
@@ -108,7 +108,7 @@ Prevention includes proper drainage, ventilation, and application of fungicidal 
 
 The Philippines Department of Environment and Natural Resources (DENR) regulates timber harvesting and export. Native Philippine hardwoods (narra, molave, yakal) are protected species with restricted harvesting and export quotas.
 
-For construction, imported pressure-treated lumber (primarily ACQ-treated softwoods from North America or Australia) is widely available and conforms to AWPA U1 standards. Locally treated lumber is less common but is occasionally produced under AWPA or equivleant specifications.
+For construction, imported pressure-treated lumber (primarily ACQ-treated softwoods from North America or Australia) is widely available and conforms to AWPA U1 standards. Locally treated lumber is less common but is occasionally produced under AWPA or equivalent specifications.
 
 NSCP 2015 Section 2401 requires that structural lumber in exposed or high-decay environments be preservative-treated. The standard references AWPA Use Category (UC) designations:
 
@@ -164,3 +164,10 @@ Typical questions present a building application (exterior deck, ground-contact 
     "Using CCA-treated lumber for residential applications in the Philippines: CCA is restricted for residential use due to arsenic and environmental regulations. Specify ACQ or CA-B instead.",
     "Neglecting finish coats and regular maintenance: Preservative treatment extends durability, but the wood still requires paint/stain every 3—5 years to maintain the moisture barrier. Exposed treated wood without finish fails sooner than preservative design life."
   ]} />
+
+## Related Articles
+
+See also within Wood and Timber Products: **lea-matl-001-03-core-concept**, **lea-matl-001-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

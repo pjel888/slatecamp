@@ -1,10 +1,24 @@
 # Site Exterior Circulation
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Design site exterior circulation systems — driveways, walkways, loading areas, service access — under PD 1096 and BP 344: calculate minimum driveway width (3.00 m one-way, 6.00 m two-way) and turning radius by vehicle type; apply the 1.50 m minimum sidewalk width; and determine loading berth requirements by building use and gross floor area.
+---
 _Exterior Accessible Routes Integration Module – BP 344 + PD 1096 Context_[web:1][web:2][web:10][web:31][web:32][web:36][web:38][web:40][web:41][web:42]
 
 ---
 
 ## 1. Big Picture: From Street to Building
+
+<LawCallout code="pd1096" section="Rule VIII - Exterior Access">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
+
+<LawCallout code="pd1096" section="Rule VIII - Site Circulation">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
 
 Goal: move a wheelchair user from **road → sidewalk → entrance → interior route** using only compliant slopes and widths under the updated BP 344 IRR, coordinated with PD 1096 site controls.[web:2][web:31][web:32]
 
@@ -110,7 +124,11 @@ Exam tip: when sketching site sections, show **property line, RROW, required fro
 
 ---
 
+<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
+
 ## 7. Active Recall – Site & Exterior Circulation
+
+<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
 
 _(Updated to reflect both original IRR and 2024 reviewer practice values.)_
 
@@ -126,26 +144,35 @@ _(Updated to reflect both original IRR and 2024 reviewer practice values.)_
 
 ---
 
-## Key Corrections / Improvements from Your Original File
+## Common Exam Traps
 
-1. **Sidewalk minimum width clarified (1.20 m vs 1.50 m):**
-   - Your draft used **1500 mm** as the universal minimum sidewalk/walkway width.
-   - This version distinguishes **1.20 m** as the original BP 344 IRR minimum and **1.50 m** as the **newer reviewer/exam practice minimum**, so students understand both values and context.[web:1][web:2][web:31][web:32][web:36]
+**TRAP 1 — Confusing sidewalk minimums:**
+The original BP 344 IRR states **1.20 m** minimum sidewalk width. However, 2024 reviewer materials commonly teach **1.50 m** as the exam-oriented design minimum. Know both: 1.20 m is the code floor, 1.50 m is the exam/reviewer target. A question citing "original BP 344 IRR" expects 1.20 m.
 
-2. **Curb ramp slope toned and cross‑checked:**
-   - You stated **1:15 as the maximum gradient** for curb ramps.
-   - The updated text notes that many materials still show up to **1:12** for curb cuts, and treats **1:12 as the safe upper limit**, with **1:15** explained as a comfortable design slope encouraged in newer decks rather than the absolute legal maximum.[web:1][web:2][web:34][web:42]
+**TRAP 2 — Curb ramp slope over 1:12:**
+Curb ramp slopes steeper than **1:12** are non-compliant. The gentler **1:15** is a preferred design value, not the legal maximum. A curb ramp at 1:10 fails inspection.
 
-3. **Dropped sidewalk dimensions aligned with 2013–2024 texts:**
-   - Your description of the **1500‑mm base** remains, but the revised version adds the **link to crossing widths** (e.g., 4.0 m for national roads) and the **19–25 mm elevation difference** range, matching current IRR/commentary language.[web:2][web:33][web:42]
+**TRAP 3 — Missing rest/turn spaces:**
+Rest/turn spaces of **1,800 mm** clear dimension must be provided **every 12,000 mm** along long walkways and **within 3,500 mm** of every dead-end. These are frequently omitted in site plans — and frequently tested.
 
-4. **Signage phrasing adjusted to “typical reviewer practice”:**
-   - Your 600 × 600‑mm ISA and 2200‑mm mounting height are kept but now clearly framed as **typical practice drawn from 2024 reviewer materials**, not as an explicit single clause of older IRR text, to avoid over‑legalizing reviewer graphics.[web:31][web:32]
+**TRAP 4 — Grating orientation:**
+Where gratings are unavoidable on accessible paths, bars must be **perpendicular** to travel direction with **≤ 13 mm** clear spacing. Parallel bars trap wheelchair casters and white canes.
 
-5. **Tactile path radius and depth clarified:**
-   - The “within 500 m” language is softened to “within and approaching buildings, often several hundred meters from major transport nodes,” to better reflect that exact radii may be in local implementing guidelines; the **300‑mm setback and 600‑mm depth** are retained as the standard reviewer geometry.[web:31][web:32][web:37][web:42]
+**TRAP 5 — RROW encroachment:**
+Accessible ramps, dropped sidewalks, and curb cuts inside the lot cannot permanently encroach on the public RROW or reduce required courts and yards below PD 1096 minimums. Coordinate with local road right-of-way standards.
 
-6. **Explicit tie‑in to PD 1096 Rule VIII (PSO, courts, yards):**
-   - The PD 1096 section now explicitly references **PSO**, **courts**, and **yards**, and clarifies that accessible walks and ramps cannot reduce required courts and yards below minimums or permanently encroach in RROW, directly connecting your site diagrams with Rule VIII text.[web:35][web:38][web:40]
+---
 
-Do you want a separate one‑page exam sheet that just lists the **numbers + code vs reviewer notes** for quick last‑minute review?
+\
+Extracted summary:
+- Props: 
+- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+\[/SLATECAMP_UI_BLOCK\]
+## Cross‑References
+
+**Site Planning Accessible Routes Vs Open Space**, **Transport Nodes Escalators Walkways**, **Minimum Parking Requirements**, **Pedestrian Protection During Construction**

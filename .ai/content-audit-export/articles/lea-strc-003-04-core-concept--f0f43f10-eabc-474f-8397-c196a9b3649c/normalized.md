@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Allowable Stress Design (ASD) and Load and Resistance Factor Design (LRFD) are two fundamentally different philosophies for ensuring structural safety. ASD uses elastic analysis with working stresses well below yield. LRFD uses plastic analysis and amplifies loads, allowing stress to reach near yield. Understanding their conceptual difference is essential for code interpretation and design judgment.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-003-04-core-concept" a type="image" caption="ASD vs LRFD — Design Method Comparison" description="Side-by-side comparison of Allowable Stress Design and Load and Resistance Factor Design: ASD uses Fy/FS with service loads, LRFD uses φRn ≥ ΣγiQi with factored loads. Flowchart shows the two parallel design paths from load/strength data to final member selection. Safety margin distribution curves show how each method achieves target reliability." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Both ASD and LRFD aim to ensure safety, but they achieve it through different paths. Safety can be introduced at the load side (amplify forces) or at the resistance side (reduce capacity), or both. The choice affects calculations, stress levels, and failure mode control.
 
@@ -88,15 +89,6 @@ The NSCP permits both ASD and LRFD for structural design. The 2015 edition (curr
 **Pattern 4: Failure Mode Implication.** In LRFD, a flexure member gets φ = 0.90, but a bearing area gets φ = 0.70. Why the difference? Answer: Flexure is ductile (bending allows redistribution and warning); bearing is brittle (sudden crushing). Lower φ penalizes brittle modes. This explicit control of failure mode is a strength of LRFD unavailable in simple ASD.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ASD = working stress = elastic = simple. LRFD = factored loads = factored capacity = sophisticated. In ASD, the designer prevents yielding. In LRFD, the designer permits (and expects) yielding but ensures it is controlled and ductile. Load factors > 1 (amplify); resistance factors < 1 (reduce). The product (load factor × resistance factor) is the effective safety margin.
-- **Exam relevance:** High — expect at least one question on this topic per LEA set.
-
-
-
-[/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -104,13 +96,5 @@ See also: **Required Strength** (lea-strc-005-01) for LRFD load combinations, **
 
 ## Common Mistakes
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

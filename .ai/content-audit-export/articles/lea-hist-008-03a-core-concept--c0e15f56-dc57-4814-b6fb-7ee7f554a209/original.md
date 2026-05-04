@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Le Corbusier's Five Points of Architecture form the theoretical foundation for modern architecture and are heavily tested on the board exam. You must understand each point, recognize them in buildings, and explain why they represent a break from traditional construction and design.</Callout>
+## Learning Goal
 
+Identify Le Corbusier's Five Points of Architecture — pilotis, roof garden, free plan, horizontal window, free facade — and explain how each point enabled a new relationship between structure, enclosure, and interior space, exemplified by Villa Savoye.
 ## Core Concept
 **Le Corbusier** (Charles-Édouard Jeanneret, 1887–1965) was the 20th century's most influential architect and theorist. In 1926, he formulated the **Five Points of Architecture**—a set of principles that became the DNA of modernism. These five points directly respond to new structural possibilities (reinforced concrete) and modernist ideology (functionalism, openness, light).
 
@@ -12,7 +13,7 @@
 The **Five Points** are:
 
 **1. Pilotis (Free-Standing Posts/Columns)**
-Traditional buildings rest on solid masonry walls. Le Corbusier lifted buildings off the ground using slender reinforced concrete posts, creating an open space beneath. This simple move did three things: it freed the ground plane (permitting gardens, circulation, flexibility), it revelead the structural system (honest expression of how the building stands), and it created visual lightness despite massive walls above. Pilotis are not merely aesthetic; they are a structural and philosophical statement.
+Traditional buildings rest on solid masonry walls. Le Corbusier lifted buildings off the ground using slender reinforced concrete posts, creating an open space beneath. This simple move did three things: it freed the ground plane (permitting gardens, circulation, flexibility), it revealed the structural system (honest expression of how the building stands), and it created visual lightness despite massive walls above. Pilotis are not merely aesthetic; they are a structural and philosophical statement.
 
 **2. Free Plan (Flexible Interior Layout)**
 In traditional buildings, load-bearing walls dictate room sizes and positions. With a concrete skeleton supporting the roof, walls become non-structural screens, movable at will. This gave architects complete freedom to organize interior space according to function, not structural constraint. Rooms could be any size and shape. Walls could be added, removed, or repositioned without affecting the building's stability. The free plan revolutionized how humans inhabit space.
@@ -56,6 +57,8 @@ You may see: "The free plan became possible with reinforced concrete constructio
 <ExamTip>**Pattern 4: Architect-Theory Association**
 You may see: "Which architect formulated the Five Points of Architecture in 1926?" Answer: Le Corbusier. Direct association questions are common.</ExamTip>
 
+<Callout>Le Corbusier's Five Points of Architecture form the theoretical foundation for modern architecture and are heavily tested on the board exam. You must understand each point, recognize them in buildings, and explain why they represent a break from traditional construction and design.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing pilotis with any exposed columns" correction="Not all exposed columns are pilotis in the Le Corbusier sense. Pilotis specifically create *open ground-floor space* and express a philosophical commitment to lifting the building." context="Traditional colonnades are structural ornament; pilotis are functional and conceptual." />
@@ -63,7 +66,6 @@ You may see: "Which architect formulated the Five Points of Architecture in 1926
 <WikiMistakeCard mistake="Assuming the free plan means no interior walls" correction="The free plan allows walls to be placed anywhere *without structural constraint*, not that walls disappear. Most buildings using the free plan have multiple rooms." context="The point is that wall placement is a design choice, not a structural necessity." />
 
 <WikiMistakeList mistakes={["Treating the free facade as merely aesthetic. Students often see the free facade as \"the building can look however you want.\" Actually, it's a liberation from the tyranny of structural necessity—it allows the facade to be designed for its specific performance (light, views, climate) rather than being dictated by column positions.", "Misremembering which building demonstrates the Five Points best. Villa Savoye is the canonical text. If an exam asks \"which of these buildings most clearly demonstrates all Five Points,\" the answer is Villa Savoye. Notre-Dame du Haut, while architecturally important, is a departure from the systematic Five Points doctrine.", "Conflating Le Corbusier's theory with his urban planning ideology. Le Corbusier's modernist urbanism (superblocks, car infrastructure, \"the city is a machine\") is distinct from the Five Points of Architecture. Don't assume one implies the other."]} />
-
 
 ## Key Terms
 
@@ -79,6 +81,13 @@ You may see: "Which architect formulated the Five Points of Architecture in 1926
 
 **Reinforced Concrete**: Structural material combining concrete's compression strength with steel rebar's tension strength; enables long spans and slender profiles; foundational technology for the Five Points.
 
-**Megastructure**: Large-sclea structural frame at urban or multi-building sclea; Unité d'Habitation exemplifies this; can house multiple functions within a single massive system.
+**Megastructure**: Large-scale structural frame at urban or multi-building scale; Unité d'Habitation exemplifies this; can house multiple functions within a single massive system.
 
-**Modulor**: Le Corbusier's proportional system based on human measurements; used to ensure all building elements relate to human sclea; represents his belief in scientific design.
+**Modulor**: Le Corbusier's proportional system based on human measurements; used to ensure all building elements relate to human scale; represents his belief in scientific design.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03b-core-concept**, **lea-hist-008-03c-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

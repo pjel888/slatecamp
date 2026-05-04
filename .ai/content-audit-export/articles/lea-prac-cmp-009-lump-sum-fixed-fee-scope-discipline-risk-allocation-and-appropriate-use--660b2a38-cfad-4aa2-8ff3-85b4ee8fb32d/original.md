@@ -1,9 +1,17 @@
 ## Lump Sum Fixed Fee — Scope Discipline, Risk Allocation, and Appropriate Use
 
-<JSX name="ArticleHeader" article="LEA-PRAC-CMP-009" />
+## Learning Goal
 
-Lump Sum Fixed Fee compensation establishes a single, non-adjustable fee for a defined scope of services. Unlike percentage-of-PCC (which adjusts if construction cost changes) or MDPE (which adjusts based on actual hours), lump sum fees remain constant regardless of how design or project development unfolds. This method transfers scope and cost risk to the architect, making it appropriate only when scope is absolutely clear, the architect has high confidence in estimating effort, and contingencies are modest.
+After studying this article, you should be able to:
 
+- Define lump sum or fixed fee compensation.
+- Explain the scope, discipline, and risk allocation of a fixed fee.
+- Identify when a lump sum fee is appropriate vs. risky.
+- Distinguish lump sum from percentage-of-PCC and MDPE.
+
+
+
+---
 ### Definition and Characteristics of Lump Sum Fixed Fee
 
 A Lump Sum Fixed Fee is a single, predetermined amount for all design services from Schematic Design through Construction Administration. The fee does not increase if the architect works additional hours, implements scope expansion, or responds to client changes. Conversely, the fee does not decrease if the architect completes the project more efficiently than estimated. Lump sum fees are attractive to clients because they provide budget certainty and eliminate surprise invoicing; they are risky for architects because they transfer cost risk.
@@ -18,6 +26,19 @@ Lump sum fees are also appropriate when the architect has internal efficiency ad
 
 ### Inappropriate Uses of Lump Sum Fixed Fee
 
+
+
+<ExamTip>
+  **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
+</ExamTip>
+
+
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
+
+
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Lump sum fees are highly risky for projects with uncertain scope, innovative design, emerging programs, or complex site conditions. Projects involving significant pre-design work (programming, feasibility analysis) should not use lump sum fees because scope is not adequately defined. Design-Build or CM at Risk projects with evolving scope are unsuitable for lump sum architect fees because the architect's scope changes as the project develops.
 
 Lump sum fees are inappropriate for projects with constrained timelines, demanding regulatory environments, or complex stakeholder coordination where scope creep is predictable. Projects with client uncertainty about program or aesthetics should avoid lump sum fees; the inevitable design revisions and refinements will exhaust the architect's fee.
@@ -44,7 +65,7 @@ The contingency belongs to the architect to cover variations within the scope. I
 
 Lump sum fees are highest-risk for the architect but provide greatest budget certainty for the client. Percentage-of-PCC shares risk between architect and client: if construction costs increase, architect fee increases proportionally. MDPE shares risk through hourly accounting: if the project requires more hours, the architect bills additional hours (if not capped). Lump sum places all risk on the architect: the fee does not adjust regardless of hours or costs.
 
-For equivleant projects, lump sum fees should be lower than MDPE or percentage-of-PCC to reflect the architect's assumption of scope and cost risk. If the architect estimates 1.5 million pesos MDPE fee, the lump sum fee should be 10–20% lower (1.2–1.35 million) to reflect risk transfer.
+For equivalent projects, lump sum fees should be lower than MDPE or percentage-of-PCC to reflect the architect's assumption of scope and cost risk. If the architect estimates 1.5 million pesos MDPE fee, the lump sum fee should be 10–20% lower (1.2–1.35 million) to reflect risk transfer.
 
 ### Payment Structure for Lump Sum Fees
 
@@ -57,3 +78,18 @@ Some lump sum contracts establish monthly or periodic invoicing based on estimat
 The contract must establish clear procedures for handling scope changes. If the client requests services beyond the documented scope (additional building additions, significant aesthetic revisions, expanded site work), the architect should issue a change order documenting the additional scope and additional fee. The owner-architect agreement should establish the process for change order approval and fee adjustment.
 
 Without clear change order procedures, the architect faces pressure to accommodate scope expansion within the fixed fee, either by stretching resources or accepting losses. Explicit scope definition and change order procedures protect both parties.
+
+---
+
+## Related Articles
+
+- [Project Classification Groups](lea-prac-cmp-001)
+- [Factors Determining Classification](lea-prac-cmp-002)
+- [Project Construction Cost](lea-prac-cmp-003)
+- [Schedule of Payments](lea-prac-cmp-004)
+- [MDPE Formula](lea-prac-cmp-006)
+- [MDPE Multipliers](lea-prac-cmp-007)
+- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
+- [Reimbursable Expenses](lea-prac-cmp-011)
+- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)

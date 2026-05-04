@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Walter Gropius founded the Bauhaus and shaped its pedagogical approach. The board exam tests your knowledge of Gropius's role as founder, his design philosophy of total design integration, and his specific buildings. Distinguish Gropius's contributions from those of later Bauhaus directors and understand the school's evolution under his leadership.</Callout>
+## Learning Goal
 
+Identify Walter Gropius's contributions as founder of the Bauhaus (1919), his belief in uniting art, craft, and industry, and recognize his key works (Fagus Factory, Bauhaus Dessau) by their integration of glass curtain walls, structural honesty, and industrial aesthetic.
 ## Core Concept
 **Walter Gropius** (1883–1969) was the founder and first director of the **Bauhaus**, the most influential design school of the 20th century. While the Bauhaus evolved under three directors, Gropius set its foundational philosophy: the unity of art, craft, and technology through pedagogy and practice.
 
@@ -15,7 +16,7 @@ The original Bauhaus (1919–1925) operated in Weimar with a radically experimen
 
 In 1925, Gropius moved the Bauhaus to Dessau, a more industrial city, and the school flourished. The **Bauhaus Building in Dessau** (1925–1926, designed by Gropius) is both the school's home and its manifesto. The building is a modernist complex with glass curtain walls, steel frame, and open-plan workshops. It demonstrates every principle the school taught: honest materials, functional clarity, integration of art and technology, human-centered design. The building is also a teaching tool—students learn modernism by inhabiting it.
 
-Gropius's own buildings, while fewer than Le Corbusier's or Mies's, exemplify his design philosophy. The **Gropius House** (1937–1938, Lincoln, Massachusetts, USA) brings Bauhaus principles to domestic architecture: a modern, efficient home that integrates art, craft, and daily life. The **Pan Am Building** (now MetLife Building, completed 1963, designed by **Gropius, Belluschi, and Richard Roth**, New York) applied Bauhaus principles to the corporate skyscraper at urban sclea.
+Gropius's own buildings, while fewer than Le Corbusier's or Mies's, exemplify his design philosophy. The **Gropius House** (1937–1938, Lincoln, Massachusetts, USA) brings Bauhaus principles to domestic architecture: a modern, efficient home that integrates art, craft, and daily life. The **Pan Am Building** (now MetLife Building, completed 1963, designed by **Gropius, Belluschi, and Richard Roth**, New York) applied Bauhaus principles to the corporate skyscraper at urban scale.
 
 Gropius's influence extended beyond buildings. He shaped how architects think about education, the relationship between design and industry, and the social responsibility of designers. Gropius's 1919 Bauhaus manifesto declared: "**The ultimate aim of all visual arts is the complete building.**" This encapsulates his belief that all design disciplines — art, craft, industry — should converge toward architecture as their highest synthesis.
 
@@ -36,6 +37,8 @@ The Nazi regime closed the Bauhaus in 1933, viewing its modernism and Jewish tea
 <ExamTip>**Pattern 3: Role Clarification.** You may see: "Which of the following best describes Walter Gropius's role in the Bauhaus?" Answer: Founder and first director; set pedagogical philosophy; directed school 1919–1928 (before Meyer and Mies). Expect questions distinguishing Gropius from later directors.</ExamTip>
 
 <ExamTip>**Pattern 4: Comparative Context.** You may see: "How did Gropius's approach to design education differ from traditional art schools?" Answer: Gropius unified art, craft, and industry; rejected the fine art-craft hierarchy; taught thinking over style; emphasized mass production for democratic access. Expect contextual questions.</ExamTip>
+
+<Callout>Walter Gropius founded the Bauhaus and shaped its pedagogical approach. The board exam tests your knowledge of Gropius's role as founder, his design philosophy of total design integration, and his specific buildings. Distinguish Gropius's contributions from those of later Bauhaus directors and understand the school's evolution under his leadership.</Callout>
 
 ## Common Mistakes
 
@@ -62,3 +65,10 @@ The Nazi regime closed the Bauhaus in 1933, viewing its modernism and Jewish tea
 **Social Design**: Belief that good design improves everyday life and can be democratized through mass production; Bauhaus mission to raise aesthetic standards for all, not just the wealthy.
 
 **Craft-Industry Integration**: Bauhaus principle reconciling traditional craftsmanship with industrial manufacturing; rejected the fine art-craft hierarchy and the notion that industrial production must be ugly.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

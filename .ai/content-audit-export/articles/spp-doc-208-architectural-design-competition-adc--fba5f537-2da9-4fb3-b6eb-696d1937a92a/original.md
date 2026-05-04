@@ -4,6 +4,12 @@
 
 **SPP Document 208** governs the **Architectural Design Competition (ADC)** — the formal, regulated process by which an Owner seeks design excellence by inviting Architects to submit design proposals, judged by an independent Jury under the oversight of the IAPOA. It replaces the earlier **1979 UAP Doc. 209** and forms part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004).
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the types of architectural design competitions under SPP Doc 208 (open, invited, limited, student), the rules for jury composition and judging criteria, the architect's right to retain authorship, and the compensation requirements for competition winners and participants; distinguish a competition from a design-build procurement under RA 9184.
+---
 SPP 208 is structurally distinct from all other SPP documents: it does not govern a bilateral relationship between Architect and Owner, but rather a **multi-party competitive process** involving Owners, Competitors, a Professional Advisor, a Jury, Technical Advisors, and the IAPOA ADC Committee. Its provisions are drawn up in the interest of **both Project Proponents/Owners and Competitors** — ensuring fairness, design integrity, anonymity, and intellectual property protection throughout the competition process.
 
 ***
@@ -102,7 +108,7 @@ SPP 208 provides a multi-dimensional classification system for ADCs — by **pur
 
 ### 3.4 Classification by Complexity
 
-Project ADCs are **further classified according to degree of complexity** based on the project classification system under **SPP Document 202** (Groups 1–10). This determines the required sclea of the design submissions, the complexity of the program of requirements, and the appropriate prize money levels.
+Project ADCs are **further classified according to degree of complexity** based on the project classification system under **SPP Document 202** (Groups 1–10). This determines the required scale of the design submissions, the complexity of the program of requirements, and the appropriate prize money levels.
 
 ***
 
@@ -163,7 +169,7 @@ All information supplied to Competitors — social, economic, technical, geograp
 
 ### 5.5 Submission Requirements
 
-The Conditions must state the **number, nature, sclea, and dimensions** of the documents, plans, or models required, and the terms of acceptance. Where a cost estimate is required, the Conditions must prescribe a **standard form of presentation** to ensure comparability across entries.
+The Conditions must state the **number, nature, scale, and dimensions** of the documents, plans, or models required, and the terms of acceptance. Where a cost estimate is required, the Conditions must prescribe a **standard form of presentation** to ensure comparability across entries.
 
 ### 5.6 Supplementary Instructions
 
@@ -497,3 +503,18 @@ SPP 208 places extensive mandatory obligations on the Owner:
 - **Copyright is retained unconditionally** — submitting an entry does not transfer any ownership rights to the Owner. If the Owner requests to use a non-winning entry, the Competitor may negotiate terms independently.
 - In **Limited ADCs by Invitation**, participants are entitled to an honorarium regardless of whether they win a prize — this is separate from prize money and must be claimed.
 - In **two-stage competitions**, if selected to proceed to the Second Stage, a separate honorarium is owed for the additional work — ensure this amount is clearly stated in the Conditions before accepting the invitation to the Second Stage.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Competition types: (1) OPEN = any qualified architect, (2) INVITED = selected architects only, (3) LIMITED = pre-qualified firms, (4) STUDENT = architecture students. Jury = 5 members minimum (majority must be architects). Winner gets: (a) cash prize OR (b) commission. The architect RETAINS copyright of competition entries (unless the contract specifically transfers it).
+
+## Cross‑References
+
+**Spp Doc 207 Design Build Services**, **Spp Doc 209 Architectural Consulting Services Pacs**, **Spp Doc 202 Regular Design Services**, **Uap Spp Doc Standards Of Professional Practice For Philippine Architects**
+

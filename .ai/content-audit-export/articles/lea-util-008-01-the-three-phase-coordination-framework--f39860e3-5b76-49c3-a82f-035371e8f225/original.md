@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-MEPF coordination with architecture is the structured process of integrating mechanical, electrical, plumbing, and fire protection systems into the architectural design from initial concept through construction documents. In Philippine practice, the architect serves as the lead coordinator, with MEPF subconsultants providing design input and clash resolution. This coordination begins during schematic design and intensifies through design development and construction documents phases, culminating in combined services drawings that show spatial relationships and clearances.
+## Learning Goal
 
+Apply the three-phase MEPF coordination framework — schematic design, design development, construction documents — and identify the architect's role, coordination deliverables, and integration milestones at each phase for successful building systems design.
 ## The Three-Phase Coordination Framework
 
 ### Schematic Design Phase
@@ -11,6 +12,19 @@ During schematic design, the architect establishes the building envelope, floor-
 Floor-to-floor height decisions made during schematic design directly impact MEPF feasibility. Typical office buildings in the Philippines use 3.0 to 3.6 meters floor-to-floor height (as documented in standard high-rise residential and commercial projects in Metro Manila). Buildings with deep structural beams may require 4.0 to 4.5 meters floor-to-floor to accommodate mechanical ductwork and plumbing within the plenum. The architect must confirm these dimensions with MEPF consultants before finalizing the schematic design package.
 
 Ceiling plenum coordination begins conceptually. The typical plenum depth allocation is 300 to 450 millimeters for standard office installations with moderate MEP density, as derived from standard suspended ceiling systems common in Philippine construction. Buildings with high MEP density (data centers, hospitals) may require 450 to 600 millimeters.
+
+
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 
 ### Design Development Phase
 
@@ -54,7 +68,7 @@ BIM coordination is the standard approach in current Philippine practice for med
 4. Automated clash detection identifies spatial conflicts
 5. Clash reports are distributed to consultants for resolution
 
-Clash detection software (such as Autodesk Navisworks or equivleant) identifies conflicts by comparing geometric volumes. A mechanical duct passing through an electrical panel space, for example, generates a clash flag that both consultants must address.
+Clash detection software (such as Autodesk Navisworks or equivalent) identifies conflicts by comparing geometric volumes. A mechanical duct passing through an electrical panel space, for example, generates a clash flag that both consultants must address.
 
 Resolution strategies include:
 
@@ -251,3 +265,10 @@ The architect confirms:
 ## Summary
 
 MEPF coordination with architecture is a collaborative, iterative process that begins during schematic design and continues through construction. The architect serves as lead coordinator, establishing spatial constraints (floor-to-floor height, plenum depth, shaft sizes) and resolving conflicts between systems. BIM coordination and clash detection provide the technical framework for identifying spatial conflicts early, when design adjustments are least costly. Combined services drawings document final coordination and serve as construction reference. Understanding MEPF coordination requirements—ceiling plenum allocation, shaft sizing, firestopping, acoustic isolation—enables architects to design buildings that accommodate mechanical, electrical, plumbing, and fire protection systems efficiently while meeting National Building Code and PD 1096 requirements for Philippine construction.
+
+## Related Articles
+
+See also within MEPF Coordination and Integration: **lea-util-008-02-core-concept**, **lea-util-008-03-core-concept**, **lea-util-008-04-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

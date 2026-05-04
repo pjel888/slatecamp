@@ -9,6 +9,14 @@
 
 ## Why This Module Decides Your Score
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply maximum building height limits under PD 1096 Rule VII based on occupancy group, fire zone, street width, and setbacks; calculate when a height increase is permitted through sprinklers or open frontage; identify structures exempt from height limits (church towers, chimneys, penthouses); and apply the street-width-to-height relationship formula.
+---
+
+
 Picture this: You are the lead architect for a high-density office tower in a CBD. The client wants to maximize profit by building as tall and as wide as the code allows. Your job is to thread the needle between **Building Height Limit (BHL)**, **Floor to Lot Area Ratio (FLAR)**, **Gross Floor Area (GFA)**, and **Total Gross Floor Area (TGFA)**.[file:17][file:18]
 
 Miscalculate the FLAR and the building loses sleaable floor space. Confuse TGFA with building volume and the project fails compliance review. The board exam tests exactly this: which metric controls the _footprint_, which controls the _density_, and which sets the _vertical limit_.[file:17][file:18]
@@ -52,11 +60,13 @@ The following projections above the main roof are permitted and are **excluded**
 | **Entirely incombustible materials** | May extend beyond BHL, limited by structural and special regulations (e.g., aviation) |
 | **Combustible materials**            | Maximum of **6.00 m above the prescribed BHL**                                        |
 
-<Callout variant="authority" title="Reason for the Law">
+<LawCallout code="pd1096" section="Rule VII - Height Limits">
+
 
 BHL protects urban light and ventilation corridors and helps keep densities within the capacity of roads, water and sewer infrastructure, while separate aviation limits protect flight safety near airports.[file:17] The 3-meter tolerance prevents unrealistic penalties on buildings on steeply sloped lots.[file:17][file:18]
 
-</Callout>
+
+</LawCallout>
 
 ---
 
@@ -74,11 +84,13 @@ Allowable Maximum GFA = TLA x FLAR
 
 **Mental Hook:** _FLAR is your floor area budget; BHL is your height ceiling; they are independent, and FLAR usually bites first on constrained lots._[file:17]
 
-<Callout variant="authority" title="Reason for the Law">
+<LawCallout code="pd1096" section="Rule VII - Section 705">
+
 
 FLAR links total habitable floor area to lot size and zone capacity, preventing very small lots from carrying tower-like densities that overload surrounding infrastructure and urban form.[file:17]
 
-</Callout>
+
+</LawCallout>
 
 ---
 
@@ -334,7 +346,7 @@ B) It complies, because 5,000 sq.m falls within typical commercial ranges.
 C) It violates the code because the maximum allowable GFA is 4,000 sq.m.  
 D) It violates the code because GFA must include parking spaces.
 
-<details>
+<Accordion>
   <summary><b>Click to reveal the answer</b></summary>
   <br>
   <b>Correct Answer: C</b><br><br>
@@ -346,7 +358,7 @@ D) It violates the code because GFA must include parking spaces.
   A — Height/BHL is a separate control; FLAR must still be satisfied.<br>
   B — The local ordinance’s FLAR 4.0 is binding even if the national FLAR range allows higher values.<br>
   D — Parking is excluded from GFA by the Guidelines; including it here reverses the rule.
-</details>
+</Accordion>
 
 ---
 
@@ -359,13 +371,13 @@ B) 3 storeys / 9.00 m.
 C) 2.5 storeys / 7.50 m.  
 D) 2 storeys / 6.00 m.
 
-<details>
+<Accordion>
   <summary><b>Click to reveal the answer</b></summary>
   <br>
   <b>Correct Answer: C</b><br><br>
   Where only one RROW of 4.00–5.00 m width serves the lot, the more restrictive cap of about <b>2.5 storeys / 7.50 m</b> applies, regardless of occupancy-based BHL.<br><br>
   This reflects the guideline that RROW width can override higher occupancy-based height allowances in the interest of emergency access and safety.
-</details>
+</Accordion>
 
 ---
 
@@ -378,7 +390,7 @@ B) 1,050 sq.m
 C) 850 sq.m  
 D) 1,090 sq.m
 
-<details>
+<Accordion>
   <summary><b>Click to reveal the answer</b></summary>
   <br>
   <b>Correct Answer: C</b><br><br>
@@ -388,7 +400,7 @@ D) 1,090 sq.m
   - 20 balconies @ 12 sq.m (240 sq.m): each exceeds 10.0 sq.m → <b>excluded</b> from GFA.<br><br>
   GFA = 800 + 50 = <b>850 sq.m</b>.<br>
   TGFA of the floor = 850 + 200 + 240 = 1,290 sq.m.
-</details>
+</Accordion>
 
 ---
 
@@ -401,7 +413,7 @@ B) 12 storeys
 C) 18 storeys  
 D) 25 storeys
 
-<details>
+<Accordion>
   <summary><b>Click to reveal the answer</b></summary>
   <br>
   <b>Correct Answer: B</b><br><br>
@@ -409,7 +421,7 @@ D) 25 storeys
   Step 2: Max GFA = 2,000 x 10.0 = <b>20,000 sq.m</b>.<br>
   Step 3: Max floors by FLAR = 20,000 / 1,600 = 12.5 → at most <b>12 full floors</b> at full footprint.<br><br>
   Even though BHL allows 60 storeys, the FLAR-based GFA budget only supports 12 full floors at the chosen AMBF. FLAR is binding here.
-</details>
+</Accordion>
 
 ---
 
@@ -426,7 +438,7 @@ Say each answer aloud before revealing.
 7. What formula gives Allowable Maximum GFA from FLAR?
 8. TGFA equals GFA plus \_\_\_.
 
-<details>
+<Accordion>
   <summary><b>Answers</b></summary>
   <br>
   1. <b>1.50</b> (for R-1, at a 3-storey or 10.00 m BHL, per Table VII.G.1).<br>
@@ -437,9 +449,25 @@ Say each answer aloud before revealing.
   6. <b>Not more than 6.00 m above the prescribed BHL</b> for combustible materials.<br>
   7. <b>Max GFA = TLA x FLAR</b>.<br>
   8. <b>Non-GFA areas</b> (parking, utility spaces, over-10 sq.m balconies, external fire escapes, etc.).
-</details>
+</Accordion>
 
 ---
+
+
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Height limits by occupancy — Group A (residential) = 15 m max, Group B (commercial/office) = 15 m, Group C (industrial) = 20 m, Group D (institutional) = 15 m. Height increases: +1 story if sprinklered, +1 story if open frontage > 30%. The 15 m residential height cap is the most tested limit.
+
+## Cross‑References
+
+**Pd 1096 Rule Vii Area Metrics**, **Allowable Floor Area Increases**, **Pd 1096 Rule Vii Occupancy**, **Fire Zones And Existing Buildings**
 
 ## Verified Source Mapping
 
@@ -452,7 +480,7 @@ Say each answer aloud before revealing.
 | BHL exemptions (masts, spires)        | Rule VII, Sec. 707[file:17]                                                 |
 | GFA / TGFA definitions and conversion | Rule VII, Sec. 705–706; Guidelines Table VII.G.2[file:17]                   |
 | Balcony 10.0 sq.m threshold for GFA   | Rule VII / Guidelines on GFA inclusions/exclusions[file:17][file:18]        |
-| PSO, TOSL, AMBF formulas              | Rule VIII, Sec. 802–803; Guidelines on Building Bulk[file:17][file:18]      |
+| PSO, TOSL, AMBF formulas              | Rule VIII, Sec. 803; Guidelines on Building Bulk[file:17][file:18]      |
 | RROW / BHL relationship               | Guidelines on Easements, RROW, and Building Bulk (Rule VIII annex)[file:17] |
 
 ---

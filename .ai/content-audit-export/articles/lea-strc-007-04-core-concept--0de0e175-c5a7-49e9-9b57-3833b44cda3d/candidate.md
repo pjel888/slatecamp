@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Column ties provide transverse confinement to longitudinal bars and prevent buckling during compression. The LEA tests your mastery of _three independent spacing criteria_ and how to select the most restrictive, plus seismic special requirements for SMRF columns. Critical values: normal ties use smallest of (16_db_, 48×tie_dia, least column dimension); seismic confinement length = max(column dim, L/6, 450mm).
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-007-04-core-concept" a type="image" caption="Column Ties and Spirals — Confinement Reinforcement Detailing" description="Column cross-section and elevation diagrams showing: (1) Tie patterns (single, overlapping, cross-ties, 135° seismic hooks); (2) Tie spacing requirements — minimum db/4, 10db longitudinal, 300mm max; (3) Spiral reinforcement — continuous helix, pitch requirements, core confinement; (4) Plastic hinge zone detailing at column ends with reduced spacing. Comparison of tied vs spiral column behavior under axial load." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Column ties serve two purposes: (1) hold longitudinal bars in position during construction and concrete placement, and (2) confine concrete and prevent bar buckling. Tie spacing is controlled by the most restrictive of three criteria, each addressing a different failure mode:
 
@@ -79,10 +80,7 @@ Standard 300mm × 400mm building columns with 12 bars of 20mm and 10mm ties are 
 
 4. **Hook angle error detection:** "A column detail shows 90° hooks for seismic confinement. Is this compliant?" (Answer: No; seismic requires 135° hooks (ERR-STRC-014); difficulty 0.5)
 
-<Tip>
-Three-criteria rule: _smallest_ of (16_db_, 48×_t_tie_, least dim). Always calculate all three; choose the smallest. Seismic hook = 135° (not 90°), with min 75mm extension. Confinement zone = max(dim, L/6, 450mm). Inside zone: spacing = min(b/4, 6_db_, 150mm) (tight). Outside zone: standard spacing applies (relaxed).
-</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Related Articles
 
@@ -90,6 +88,6 @@ See also: **Hooks** (lea-strc-007-02) for the 135° seismic hook used in ties, *
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 
-<WikiMistakeList mistakes={[ "Only 16_db_ controls tie spacing — WRONG. All three criteria must be checked; the smallest governs (ERR-STRC-023).", "Tie spacing = 48 × bar diameter (confusing bar and tie size) — WRONG. Formula is 48 × tie_dia, not bar dia.", "Seismic hoop = 90° — WRONG. Seismic requires 135° bend angle (ERR-STRC-014).", "Minimum tie diameter always 10mm — WRONG. 36mm or larger bars and bundles require 12mm ties (ERR-STRC-026).", "Seismic hoop extension = 6_db_ only (no 75mm minimum) — WRONG. Must satisfy 6_db_ AND min 75mm (largest).", "No confinement required outside seismic zone — WRONG. Standard NSCP 7.10.9 spacing applies outside confinement length; it is relaxed but still required." ]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

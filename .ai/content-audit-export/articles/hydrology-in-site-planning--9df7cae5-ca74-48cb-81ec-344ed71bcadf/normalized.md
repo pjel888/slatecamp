@@ -3,8 +3,6 @@
 After reading this article, you should be able to:
 
 Analyze site hydrology for stormwater management and drainage design: calculate runoff using the Rational Method (Q = CiA); apply minimum pipe sizes and slope for site drainage; determine detention/retention volume requirements; and identify flood zone restrictions and 100-year floodplain development limitations.
-**An Immersive LEA Review Module**
-
 ---
 
 ## The Real-World Scenario (The Hook)
@@ -16,11 +14,6 @@ You are designing a 1.5-hectare commercial development in Quezon City on gently 
 ## Core Concepts
 
 [SLATECAMP_UI_BLOCK:ui_0053 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory Aid: "S-S-S = Slope, Swale, Storm."** Slope (min 1-2% away from buildings), Swale (shallow vegetated channels, side slopes max 3:1, longitudinal 1-5%), Storm (Rational Method Q = C × i × A).
-[/SLATECAMP_UI_BLOCK]
-
 
 - **Hydrology in Site Planning** governs how water moves across, into, and away from a development site. The architect must manage three interrelated systems: (1) surface drainage — directing sheet flow and channeled flow away from structures; (2) subsurface drainage — managing the water table and subgrade moisture; and (3) stormwater management — controlling peak runoff volumes and quality before discharge into public waterways.
 
@@ -35,11 +28,6 @@ Extracted summary:
 ## The Hard Data (Cheat Sheet)
 
 [SLATECAMP_UI_BLOCK:ui_0054 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Application Scenario:** 1.5 ha QC development. Qpre = 0.4×100×1.5 = 60 L/s. Qpost = 0.85×100×1.5 = 127.5 L/s. Need 67.5 L/s detention storage to maintain pre-development peak flow.
-[/SLATECAMP_UI_BLOCK]
-
 
 | Parameter | Value / Standard | Source |
 |---|---|---|
@@ -60,11 +48,6 @@ Extracted summary:
 ## Crucial Formulas & Computations
 
 [SLATECAMP_UI_BLOCK:ui_0055 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Pattern — Easement Distinction:** PD 1067 easement from rivers/creeks: 3 m (urban), 20 m (agricultural), 40 m (forest). No structures allowed within easement.
-[/SLATECAMP_UI_BLOCK]
-
 
 ### 1. The Rational Method (Peak Runoff Estimation)
 
@@ -146,12 +129,7 @@ This formula is used to verify that a designed swlea can convey the peak runoff 
 
 ---
 
-
 [SLATECAMP_UI_BLOCK:ui_0056 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ Design storm return period: 5-year (residential), 10-year (commercial/mall), 25-year (critical infrastructure). Know which applies to which project type.
-[/SLATECAMP_UI_BLOCK]
 
 ## Active Recall Questions
 
@@ -190,6 +168,9 @@ D. 9 times
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Site Hydrology and Stormwater Management — Rational Method and Drainage Design" description="Site drainage plan showing: watershed boundaries, pre/post-development runoff calculation using Rational Method (Q=CiA), swale cross-section (side slopes max 3:1, longitudinal 1-5%), detention basin sizing, pipe drainage network with minimum slopes (0.5% min for 150mm pipe), and 100-year floodplain limits with development restrictions." />
 ## Cross‑References
 
 **Microclimate Analysis**, **Topography And Slope Analysis**, **Geological Hazards**, **Flora And Fauna In Site Development**

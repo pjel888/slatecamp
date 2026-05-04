@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your understanding of the **Chicago School** (1880–1910) as the birthplace of the modern skyscraper. Questions focus on structural innovation (iron and steel frames, curtain walls), key architects (**Louis Sullivan**, **William Le Baron Jenney**), and the architectural principle "form follows function." You must understand why Chicago became the innovation center and how the skyscraper defined American modernism.</Callout>
+## Learning Goal
 
+Identify the four-part structural system of the skyscraper — steel frame carries load, curtain wall hangs, elevator enables vertical rise, piers express height — and trace its evolution from the Home Insurance Building (1885) to the Woolworth and Chrysler Buildings.
 ## Core Concept
 
 The modern skyscraper did not originate in New York or Europe. It emerged in Chicago in the 1880s through a convergence of economic necessity, structural innovation, and architectural ambition. Chicago had burned in 1871; the city rebuilt quickly with new technology. Real estate was expensive; building upward was the only solution. Iron and steel frames could carry weight; curtain walls (thin exterior layers supported by frame) could enclose tall buildings. Electric elevators made upper floors accessible. These technologies converged to make the skyscraper economically viable and structurally possible.
@@ -23,18 +24,16 @@ The **Chicago School** synthesized innovation: frame structure from Jenney, vert
 <WikiExamTable headers={["Building", "Architect", "Year", "Location", "Significance"]} rows={[['["**Home Insurance Building**", "William Le Baron Jenney", "1885", "Chicago", "First skeleton frame (cast/wrought iron); 10 stories"]', '["**Wainwright Building**", "Louis Sullivan & Dankmar Adler", "1891", "St. Louis", "Vertical expression; \\"form follows function\\""]', '["**Guaranty Building**", "Louis Sullivan & Dankmar Adler", "1896", "Buffalo", "Refined vertical composition; terracotta ornament"]', '["**Masonic Temple**", "Daniel Burnham & John Root", "1892", "Chicago", "22 stories; largest building of era"]', '["**Reliance Building**", "Daniel Burnham & John Root", "1890-1895", "Chicago", "Early steel frame; extensive glazing"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Structural Recognition**
 Questions ask you to identify iron and steel frame construction in building diagrams or photographs. You distinguish iron-frame buildings (columns and beams visible or implied) from earlier load-bearing masonry. You explain why frame structure allowed greater height and required less exterior wall material.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Vertical Expression**
 Questions show photographs of skyscrapers and ask why vertical lines dominate the composition. You explain Sullivan's principle: piers express vertical structure, spandrels separate floors, the overall composition is vertical because the building IS vertical stacking. You contrast this with later buildings that disguise vertical stacking with horizontal bands.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Form Follows Function**
 Questions ask what "form follows function" means in skyscraper design. You explain: the exterior should express the building's purpose and structure, not reference historical styles. The function is floor-stacking; the form is vertical bay repetition. You distinguish this Chicago approach from European Beaux-Arts eclecticism.</ExamTip>
 
+<Callout>The LEA tests your understanding of the **Chicago School** (1880–1910) as the birthplace of the modern skyscraper. Questions focus on structural innovation (iron and steel frames, curtain walls), key architects (**Louis Sullivan**, **William Le Baron Jenney**), and the architectural principle "form follows function." You must understand why Chicago became the innovation center and how the skyscraper defined American modernism.</Callout>
 
 ## Common Mistakes
 
@@ -43,7 +42,6 @@ Questions ask what "form follows function" means in skyscraper design. You expla
 <WikiMistakeCard mistake="Overestimating Sullivan's ornament" correction="Students say Sullivan rejected ornament. Wrong. He rejected ornament that disguises function. His buildings are ornate—but ornament follows the structural grid. The **Guaranty Building** is covered in terracotta ornament, but every detail aligns with vertical piers or horizontal spandrels." context="Say \"ornament that enhances structural expression.\"" />
 
 <WikiMistakeList mistakes={["Treating Chicago School as purely American. Students ignore that European architects had developed frame structures and tall buildings (Paris, London). Chicago's innovation was *systematic* application: the frame skeleton became the design principle, not an incidental structure. Chicago unified technology, economics, and aesthetic philosophy.", "Forgetting about curtain walls. Students focus on frame and ignore the outer walls. The curtain wall—thin masonry or glazing supported by frame—is integral to the skyscraper concept. It's lighter, faster to install, and allows flexibility in plan. Say \"frame and curtain wall system.\""]} />
-
 
 ## Key Terms
 
@@ -62,3 +60,10 @@ Questions ask what "form follows function" means in skyscraper design. You expla
 **Masonry Curtain Wall** — Thin outer layer of brick or stone supported by frame; provides weather protection and finish; allows rapid construction.
 
 **Electric Elevator** — Mechanical system making upper floors accessible; prerequisite for skyscraper viability; enabled occupation of 15+ story buildings.
+
+## Related Articles
+
+See also within United States Architecture: **lea-hist-014-01-core-concept**, **lea-hist-014-03-core-concept**, **lea-hist-014-04-core-concept**, **lea-hist-014-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

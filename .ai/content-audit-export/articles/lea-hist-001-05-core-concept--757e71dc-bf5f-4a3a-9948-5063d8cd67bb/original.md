@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-Classical Greek architecture tests your understanding of the three orders (Doric, Ionic, Corinthian) and their defining proportions—heavily tested on the LEA. Know temple plans, the importance of the **Parthenon** as a canonical work, and the distinction between Greek and earlier architectural systems. The LEA expects precise terminology and ability to identify order types from descriptions.
-</Callout>
+## Learning Goal
 
+Distinguish the three Greek orders (Doric, Ionic, Corinthian) by proportion, capital form, and entablature design; identify the Parthenon's optical refinements; and explain the post-and-lintel system as the structural basis of Greek temple architecture.
 ## Core Concept
 
 Greek architecture (c. 900–146 BCE) abandoned the massive walls and hypostyle halls of earlier civilizations. Instead, Greek builders created structures of disciplined proportion, rational geometry, and visual refinement. The **temple** became the primary building type—a rectangular chamber (naos) housing a statue of the deity, elevated on a platform (stereobate), surrounded by a colonnade (peristasis), and roofed.
@@ -54,6 +53,10 @@ The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ f
 
 <ExamTip>**Pattern 5: Temple Plan and Function.** "A Greek temple's naos serves which purpose?" Tests understanding of interior sacred space and the statue it housed.</ExamTip>
 
+<Callout>
+Classical Greek architecture tests your understanding of the three orders (Doric, Ionic, Corinthian) and their defining proportions—heavily tested on the LEA. Know temple plans, the importance of the **Parthenon** as a canonical work, and the distinction between Greek and earlier architectural systems. The LEA expects precise terminology and ability to identify order types from descriptions.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing the three orders' proportions" correction="Doric is stocky (4–6 diameters), Ionic is medium (8–10), Corinthian is slender (10+). Use these ratios to differentiate. Do not describe all columns as 'tall' or 'short' without specificity." context="Order identification by proportion is heavily tested on the LEA and requires memorization of key ratios." />
@@ -84,4 +87,11 @@ The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ f
 
 **Chryselephantine:** A sculptural technique combining gold and ivory; famous examples include Phidias' Athena and Zeus.
 
-**Caryatid (or Caryatids):** A sculpted femlea figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.
+**Caryatid (or Caryatids):** A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.
+
+## Related Articles
+
+See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

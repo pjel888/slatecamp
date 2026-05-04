@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Design site drainage systems — detention/retention basins, rain gardens, permeable pavements, green roofs — to manage stormwater quantity and quality, apply RA 9275 water quality standards, and design for flood mitigation at the site level.
+
 Site drainage and stormwater management ensure that rainfall is captured, retained, filtered, or discharged safely, preventing inundation, pollution, and erosion. Modern design emphasizes sustainable drainage systems (SuDS) that mimic natural hydrology: detention/retention basins, rain gardens, permeable pavements, and green roofs. RA 9275 (Clean Water Act) addresses water pollution control, including non-point sources like stormwater, through effluent standards and management plans.
+
 
 ## Core Concept
 
@@ -27,6 +31,13 @@ Philippine tropical climate brings intense monsoon rainfall concentrated in June
 **Pattern 3 — Green infrastructure benefit:** "A project adds a rain garden to a parking lot. What does this accomplish?" → Captures and filters runoff; reduces peak flow; improves water quality; recharges groundwater.
 
 <Tip>**Detention = temporary storage (lowers peak flow); Retention = permanent storage/infiltration (eliminates runoff).** Permeable surfaces are cheaper and better than gray infrastructure. SuDS provides water quality AND quantity benefits.</Tip>
+
+
+**Exam Tip:** Storm frequency: 10-year storm = standard for site drainage design, 25-year or 100-year for critical infrastructure. Detention basins should drain within 24-48 hours. Retention basins maintain permanent water level. Know the distinction.
+
+## Cross-References
+
+See **LEA-DSGN-012-03** (Grading and Drainage) for site drainage design, **LEA-PLAN-005-05** (Site Grading) for cut/fill and drainage coordination, and **LEA-PLAN-005-03** (Environmental Laws) for Clean Water Act compliance.
 
 ## Common Mistakes
 

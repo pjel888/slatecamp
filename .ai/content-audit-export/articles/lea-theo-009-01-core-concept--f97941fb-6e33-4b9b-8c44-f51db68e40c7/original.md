@@ -4,6 +4,14 @@
 Architectural programming is the systematic process of translating client needs, organizational goals, and functional requirements into documented spatial and performance specifications—distinct from design, which begins only after programming is complete. William Peña's "Problem Seeking" methodology remains the standard framework taught in Philippine architecture schools and explicitly referenced in ADSP exam briefs. Programming answers the *what* and *why*; design answers the *how*.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define architectural programming as the systematic investigation phase that precedes design: translating client needs into spatial and performance specifications.
+- Explain William Peña's "Problem Seeking" methodology as the standard framework for architectural programming.
+- Distinguish programming from design: programming answers what and why; design answers how.
+
 ## Core Concept
 
 Architectural programming is neither design nor planning in the broad sense—it is the disciplined investigation phase that precedes design decision-making. Unlike preliminary sketching or conceptual design, programming remains programmatically prescriptive and quantitatively precise. The architect must function as investigator and analyst, not yet as designer, gathering and analyzing data about the client, the project mission, user needs, site constraints, and regulatory context.
@@ -113,3 +121,10 @@ Once gathered, information must be analyzed and synthesized. Peña's approach us
 **Area Summary Table** — Quantitative schedule listing all spaces, their quantities, net areas, and contributions to total net and gross building area.
 
 **Circulation Analysis** — Study of movement patterns and required connections between spaces to inform adjacency and layout decisions.
+
+## Related Articles
+
+See also within Space Planning Theory: **lea-theo-009-02-core-concept**, **lea-theo-009-03-core-concept**, **lea-theo-009-04-core-concept**, **lea-theo-009-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

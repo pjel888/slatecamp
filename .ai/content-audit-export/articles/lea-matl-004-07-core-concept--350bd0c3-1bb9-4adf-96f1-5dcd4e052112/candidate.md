@@ -6,6 +6,13 @@ Describe structural steel construction systems — bolted and welded connections
 
 Structural steel construction assembles prefabricated members (columns, beams, braces) on-site through bolted or welded connections, creating a framework capable of resisting gravity and lateral forces. Steel offers high strength-to-weight ratio, rapid assembly (vs. concrete), and precision fabrication in controlled shop environments.
 
+
+<ArticleMedia id="media-steel-frame-systems" layout="single" type="image" status="placeholder"
+  alt="Isometric diagrams of structural steel framing systems: moment frame, braced frame, and composite steel-concrete construction"
+  caption="Future diagram: structural steel framing systems — moment frame, braced frame, composite construction"
+  suggestedAsset="Isometric structural system diagrams with connection callouts"
+  placementIntent="Helps learners distinguish steel framing systems by structural behavior" />
+
 ### Erection Sequence
 
 Steel frame erection typically follows this sequence: (1) column erection (starting from lowest level), (2) temporary bracing installation, (3) floor beam installation and connections, (4) floor decking and concrete placement, (5) progress to next level. Temporary bracing (cross-diagonals, knee braces) stabilizes the partially erected frame against wind and seismic forces until permanent lateral systems are complete.
@@ -16,6 +23,12 @@ _Bolted Connections_ — Mechanical fasteners (ASTM A325 or A490 per NSCP 2015 C
 
 _Welded Connections_ — Fused joints via SMAW, GMAW, or GTAW (per NSCP 2015 Chapter 5 Section 506 / AISC 360 J3). Advantages: true monolithic behavior, minimal deformation, clean aesthetics. Disadvantages: require skilled welders, weather-sensitive (SMAW tolerates wind; GMAW requires protection), need on-site quality verification (inspection). Used for critical connections (moment-resisting frames, continuous beams).
 
+
+<ArticleMedia id="media-steel-connection-types" layout="single" type="image" status="placeholder"
+  alt="Detail drawings of bolted and welded steel connections: shear connections, moment connections, and braced frame connections with gusset plates"
+  caption="Future diagram: steel connection types — shear, moment, and braced frame connections"
+  suggestedAsset="Cross-section and isometric detail drawings of steel connections"
+  placementIntent="Shows different steel connection configurations in building frames" />
 ### Lateral Force-Resisting Systems
 
 _Moment-Resisting Frames (MRF)_ — Beam-column connections resist lateral forces through bending moment transfer. Frame joint rotations absorb seismic energy elastically. Advantages: open floor plans (no interior bracing), architectural flexibility. Disadvantages: require larger member sizes for moment capacity, more complex connections (welded or bolted plate connections), higher cost. Widely used in residential/office towers in Philippines.
@@ -73,15 +86,15 @@ The LEA evaluates structural steel construction through:
 5. _Defect recognition_ — Identify erection defects (misalignment, loose bolts, incomplete connections) and corrective actions.
 6. _Philippine standards alignment_ — Apply NSCP 2015 Chapter 5 and AISC 360 provisions.
 
-<Tip>Bolted connections are the default for Philippine field assembly due to convenience and speed. Welded connections require skilled labor and weather protection; reserve them for critical moment-resisting connections and shop work. For high-rise seismic design in the Philippines, specify dual systems (MRF + bracing) for optimal ductility and stiffness. Fireproofing is mandatory for all structural steel; spray-applied is economical, but board is superior for durability. For bolted connection details, see LEA-MATL-003-07. For welded connection requirements, see LEA-MATL-003-05.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard title="Erecting Frame Without Temporary Bracing" body="A fabricator begins erecting columns and beams without diagonal bracing or knee braces. The partially erected frame is unstable; wind or minor seismic activity causes collapse and injuries. OSHA and NSCP 2015 mandate temporary bracing until permanent lateral system is complete." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard title="Specifying Fireproofing Without Rating Verification" body="An architect specifies 'standard spray fireproofing' without confirming the required fire-resistance rating (2, 3, or 4 hours per occupancy). The applied fireproofing fails to achieve the required rating; renovation is necessary. Always specify the fire-resistance rating and verify that the proposed method meets it." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList items={["Assuming bolted and welded connections are interchangeable—bolted is faster in field; welded provides monolithic behavior. Choose based on project needs, not convenience alone.", "Over-relying on moment-resisting frames for seismic design in high-rise buildings without exploring dual systems—dual (MRF + bracing) optimizes ductility and stiffness, reducing member sizes and cost.", "Underestimating fireproofing maintenance—intumescent coatings require periodic touch-up; spray-applied fireproofing is vulnerable to impact and water. Budget for lifecycle maintenance.", "Failing to account for Philippine tropical weather—spray-applied fireproofing application requires dry conditions; monsoon season may delay work. Schedule accordingly.", "Specifying high-cost board fireproofing where spray-applied meets rating requirements—match fireproofing method to actual rating need, not budget assumptions."]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
 
 ## Related Articles
 

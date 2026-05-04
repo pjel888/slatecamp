@@ -8,9 +8,7 @@ After reading this article, you should be able to:
 - Describe the conditions for release of retention at Substantial Completion and Final Completion.
 - Apply retention money rules to LEA scenarios involving contractor default, punch-list completion, and final accounting.
 
-
 Retention money is a percentage of contract payments withheld by the owner as security for contractor performance, quality of work, and defect remediation during and after construction.
-
 
 ### Purpose and Protective Function of Retention
 
@@ -49,26 +47,10 @@ The owner has a fiduciary obligation to account for and properly manage retained
 Interest on retained funds creates a point of contract negotiation. Some contracts specify that the owner must pay the contractor interest on retention funds, recognizing that the owner holds the contractor's money. Other contracts are silent on interest, resulting in the owner retaining use of the funds interest-free throughout the project duration.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=\"nbcp\"
-- Props: section=\"RA 9266\"
-- Props: title=\"Architecture Act of 2004\"
-- Text: RA 9266 governs architectural practice and contract requirements. Agreements mus
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: - <strong>Proposal</strong> — Scope definition and fee negotiation
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibili
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"10%\\", \\"label\\": \\"Standard Retention\\"}, {\\"value\\": \\"60 days\\", \\"label\\": \\"Payment Period\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"COLA Escalation Max\\"}, {\\"value\\": \\"90%\\", \\"label\\": \\"CD Phase Fee\\"}]\"
-[/SLATECAMP_UI_BLOCK]
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

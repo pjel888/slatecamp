@@ -25,6 +25,10 @@ Recall the core wheelchair mnemonic (4.0-1.8-2.3-1.5-1.8-1.2 m) and apply each v
 
 ## 2. Accessible Parking (BP 344 2024 IRR – Appendix C)
 
+[SLATECAMP_UI_BLOCK:ArticleMedia name="accessible-parking-layout" type="diagram" caption="Top-down parking layout showing accessible stall 4.0 m × 5.0 m with 1.8 m access aisle. Show two configurations: single stall + aisle = 5.8 m total width, and two stalls sharing an aisle = 9.8 m total width. Include vertical clearance callout (2.3 m), the shortest route to accessible entrance arrow, and PWD signage symbol."]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="accessible-corridor-ramp-profile" type="diagram" caption="Plan and section of accessible corridor (1.5 m clear width) with turning spaces (1.8 m × 1.8 m every 12 m) and passing space (1.8 m × 2.0 m). Below, show ramp profile with 1.2 m width, 1:20 preferred slope, 1.8 m landings at top/bottom, intermediate landing for runs >10.5 m, and 100 mm edge curb."]
+
 Accessible slots must be nearest the accessible entrance and on the shortest route.[web:8][web:11]
 
 | Item                   | 2024 Spec           | Memory Hook                                    |
@@ -120,26 +124,13 @@ RAMPS & EXTERIOR
 
 Use this one page as your **go‑to widths & slopes sheet** for LEA questions on wheelchair maneuvering, parking, corridors, ramps, and passing spaces.[file:1][file:2][web:8][web:11]
 
-
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
-Extracted summary:
-- Props: code="bp344" title="BP 344 2024 IRR — Accessible Parking"
-- Text: Per BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width × 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be ≥2300 mm. The accessible stall must be 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: Do not confuse accessible parking stall width (4000 mm) with the combined stall+aisle width. The stall is vehicle-only at 4000 mm; the adjacent 1800 mm access aisle is separate. The total width for a 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: Memorize the mnemonic: '4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -147,3 +138,5 @@ Extracted summary:
 
 **Wheelchair Maneuvering And Parking Slots**, **Accessible Seating In Assembly Areas**, **Standard Human Body Dimensions**, **Bp 344 Accessible Washrooms**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

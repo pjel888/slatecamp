@@ -47,37 +47,15 @@ Extracted summary:
 - Text: The PRC ID contains: registrant's name, registration number, date of registration, expiration date, professional tax receipt (PTR) number, and the registrant's signature and photograph. Know that the PTR must be updated annually.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The PRC ID contains: registrant's name, registration number, date of registration, expiration date, professional tax receipt (PTR) number, and the registrant's signature and photograph. Know that the PTR must be updated annually.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Exam Trap"
-- Text: Exam Trap — A Certificate of Registration is NOT the same as a Professional Identification Card (PIC). The Certificate is issued once and proves qualification; the PIC is renewed annually and proves current registration status. Many exam questions test this distinction.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Key distinction: Certificate of Registration = indefinite validity (one-time issuance after passing LEA and taking oath). Professional ID Card = renewed every 3 years. Failure to renew the PRC ID does NOT invalidate the Certificate of Registration.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Key Distinction: The Certificate of Registration is a lifetime credential (subject to good standing), while the PIC must be renewed annually. An architect can have a valid Certificate but a lapsed PIC — and cannot legally practice until the PIC is renewed.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Sequence of events: Pass LEA → File Oath of Office before PRBoA → Receive Certificate of Registration → Apply for Professional ID Card (PRC ID). The Oath of Office is a legal prerequisite — without it, no registration is effective.
-[/SLATECAMP_UI_BLOCK]
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

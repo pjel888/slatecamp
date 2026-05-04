@@ -1,18 +1,24 @@
 {
   "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
   "slug": "lea-prac-cmp-005-core-concept",
-  "generated_at": "2026-05-03T13:44:10.995Z",
-  "original_hash": "sha256:ad899ae1d9b08120c70836e43e3b0a954906297f980240bdec294ec9d44b96fa",
-  "normalized_hash": "sha256:328dead4084a9d7c291e02d4f5d283eeec322580487b897d5428e7b0df2f9107",
-  "candidate_hash": "sha256:0e6e32c279c40ce84d97e7ab399dca659fce3a04be6c7d3f03169f540a19fa95",
+  "generated_at": "2026-05-04T00:05:38.223Z",
+  "original_hash": "sha256:0e6e32c279c40ce84d97e7ab399dca659fce3a04be6c7d3f03169f540a19fa95",
+  "normalized_hash": "sha256:671386fab832249713a816a19e08ca580819762473c6e229f5b66711500161fc",
+  "candidate_hash": "sha256:671386fab832249713a816a19e08ca580819762473c6e229f5b66711500161fc",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition."
+  ]
 }

@@ -1,13 +1,21 @@
 ## What You Need to Know for the LEA
 
-The LEA tests your understanding of occupancy classification for museums, gallery space programming standards, occupant load calculations, and specialized environmental controls for artifact preservation—particularly lighting, temperature, and humidity.
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Identify the phases of the design process — pre-design, schematic design, design development, and contract documents — and their deliverables.
+- Apply design principles — proportion, scale, balance, rhythm, hierarchy — to architectural composition and space planning problems.
+- Explain the integration of building systems, code compliance, and human factors into the design process.
+
+---
 
 ## Core Concept
 
 Museums and cultural facilities are classified as _Group C (Education and Recreation)_ per **PD 1096**, along with libraries, schools, and churches. This classification is significant because museums are not commercial retail spaces (Group E) despite generating revenue through admissions.
 
 The core challenge in museum design is balancing two competing requirements:
-1. **Public Access**: General galleries must accommodate visitor flow at a density similar to retai[Omit specific value or cite correct RA 9514 table; verify actual factor from RA 9514 2019 IRR Table 10.3.2.2.8.1]A 9514 Table 3.1-2), requiring multiple exits and adequate egress widths
+1. **Public Access**: General galleries must accommodate visitor flow at a density similar to retail (1 per 2.8 sqm per RA 9514 Table 3.1-2), requiring multiple exits and adequate egress widths
 2. **Artifact Preservation**: Climate control (18–21°C, 45–55% relative humidity), specialized lighting (50–300 lux range, UV-free), and secure storage create distinct spatial and mechanical design demands
 
 Museum galleries are organized by _circulation patterns_:
@@ -21,7 +29,7 @@ Gallery dimensions and aisle widths must accommodate both visitor comfort and ar
 - Secondary aisle: **1.8 m minimum** (single-file with wall-hugging)
 - Alcove/display area: 2.0–3.0 m (artifact-dependent)
 
-Environmental standards are governed by the **NCCA/NHCP guidelinesCA) and the **National Heritage Commission** (NHC) for protected artifacts. Climate control is critical: fluctuations > 2°C per day cause dimensional changes in wood, canvas, and paper. Humidity swings > 10% risk mold and salt efflorescence on ceramics and stone.
+Environmental standards are governed by the **NCCA/NHCP guidelines** and the **National Heritage Commission** (NHC) for protected artifacts. Climate control is critical: fluctuations > 2°C per day cause dimensional changes in wood, canvas, and paper. Humidity swings > 10% risk mold and salt efflorescence on ceramics and stone.
 
 ## Key Provisions
 
@@ -31,7 +39,7 @@ Museums are Group C regardless of revenue model. **Primary occupancy** = museum 
 
 ### Occupant Load Calculation (RA 9514 Table 3.1-2)
 
-Museum galleries treated as exhibit galleries or retail-equivleant per RA 9514 2019 IRR Table 10.2 (verify exact occupant load factor from Table 10.3.2 or equivleant assembly/retail section in 2019 IRR)
+Museum galleries treated as exhibit galleries or retail-equivalent per RA 9514 2019 IRR Table 10.2 (verify exact occupant load factor from Table 10.3.2 or equivalent assembly/retail section in 2019 IRR)
 
 Example (5,000 sqm museum):
 - Occupant load = 5,000 ÷ 2.8 = **1,786 occupants** (use this for exit design)
@@ -82,6 +90,17 @@ A typical **municipal art museum in the Philippines** (2,000 sqm gallery + 500 s
 - Fire separation: 2-hour wall between climate-controlled storage (Group C mechanical) and administrative offices (Group E)
 - Parking: museums typically exempt or require 1 space per 50 sqm GFA for staff (municipal mandate varies)
 
+<Example>
+**Example: Occupant Load and Egress for a Provincial Museum**
+
+A provincial museum in the Philippines has a 1,200 sqm gallery space. The architect proposes two exit stairs (each 1.8 m wide) and one side exit (1.5 m wide). Verify compliance.
+
+- Occupant load: 1,200 ÷ 2.8 = **429 persons**
+- Required exit width: 429 × 7.6 mm = **3,260 mm (3.26 m)**
+- Available exit width: 1,800 + 1,800 + 1,500 = **5,100 mm (5.1 m)**
+- **Result: COMPLIANT** — available width exceeds requirement. This demonstrates that museums, despite high occupant density, can meet egress requirements with well-placed stairs.
+</Example>
+
 ## How It's Tested
 
 **Occupancy Classification Pattern (Difficulty 0.7):**
@@ -104,6 +123,13 @@ A typical **municipal art museum in the Philippines** (2,000 sqm gallery + 500 s
 - Answer: 18–21°C ± 2°C per day max; 45–55% RH ± 5%; continuous HVAC monitoring; log readings hourly per NCCA standards
 
 <Tip>**Memory rule:** Museums = Group **C** (education), not retail (E). Occupant load = GFA ÷ 2.8 sqm/person. Gallery aisle = 3.0 m primary, 1.8 m secondary. Climate = 18–21°C, 45–55% RH, UV-free 50–300 lux. Temperature swings > 2°C/day = DAMAGE.</Tip>
+
+
+**Exam Tip — ERR-DSGN-017:** Museums are Group C regardless of revenue. Even if they charge admission or have a gift shop (Group E), the primary occupancy remains Group C. The gift shop requires fire-rated separation.
+
+## Cross-References
+
+See **LEA-DSGN-004-06** (Libraries) for comparison of Group C occupant loads, **LEA-DSGN-008-01** (Fire Egress) for exit calculations, and **LEA-DSGN-009-03** (IAQ) for environmental control integration.
 
 ## Common Mistakes
 

@@ -1,10 +1,21 @@
 ## COA Audit Compliance for Publicly Funded Architectural Projects
 
-<JSX>null</JSX>
-
 The Commission on Audit (COA) conducts financial and performance audits of government entities and their spending. When architectural projects are publicly funded, COA review extends to design decisions, contract management, and professional compliance. Understanding audit expectations helps architects document their work defensibly and avoid findings that delay payments or create legal exposure.
 
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe COA audit requirements for publicly funded architectural projects.
+- Explain the architect's obligations regarding documentation and compliance.
+- Identify common COA audit findings on architectural projects.
+- Apply COA compliance rules to government project scenarios.
+
+
+
 ### Three Pillars of COA Audit: Regularity, Legality, and Economy
+
+<ExamTip>COA's three pillars: **Regularity** — were procedures followed (bidding per RA 9184, approvals obtained)? **Legality** — does the design comply with NBC, environmental laws, BP 344? **Economy** — was value achieved, costs controlled, waste avoided? Architects influence all three dimensions.</ExamTip>
 
 COA evaluates publicly funded projects across three dimensions. _Regularity_ ensures that established procedures were followed—that bidding was conducted per RA 9184, approvals obtained, and authorizations documented. _Legality_ verifies that the project complies with applicable laws: the National Building Code, environmental laws, accessibility standards (BP 344), and labor laws. _Economy_ assesses whether the project achieved good value—whether costs were controlled, waste avoided, and resources used efficiently.
 
@@ -12,7 +23,7 @@ Architects influence all three dimensions. Regularity failures occur when design
 
 ### Documentation Requirements for Audit Trail
 
-Architects must maintain a complete audit trail. This includes: (1) preliminary studies and feasibility reports showing design rationlea; (2) design development records showing evolution of the design, decisions made, and alternatives considered; (3) final contract documents—plans, specifications, and details; (4) correspondence with the client and other consultants; (5) construction administration records—site observation notes, RFIs (Requests for Information), change orders, and daily logs; and (6) close-out documents and final costs.
+Architects must maintain a complete audit trail. This includes: (1) preliminary studies and feasibility reports showing design rationale; (2) design development records showing evolution of the design, decisions made, and alternatives considered; (3) final contract documents—plans, specifications, and details; (4) correspondence with the client and other consultants; (5) construction administration records—site observation notes, RFIs (Requests for Information), change orders, and daily logs; and (6) close-out documents and final costs.
 
 Digital filing systems should organize documents chronologically and by project phase. Audit teams review these records to reconstruct what the architect knew at each decision point and why certain choices were made. Gaps in documentation suggest either poor project management or attempts to conceal decisions—both findings that harm the architect's credibility.
 
@@ -45,3 +56,32 @@ Response to audit findings should be factual, timely, and professional. If the f
 Architects should maintain professional liability insurance adequate for the scope and value of government work. Insurance protects both the architect and the client if design errors cause construction problems or cost overruns. Government agencies may require proof of insurance before contract execution.
 
 Professional liability insurance typically covers negligent acts, errors, and omissions in the design or administration. However, it does not cover willful misconduct, fraud, or violation of law. Architects should understand their policy limits and exclusions.
+
+
+<LawCallout code="ra9184" section="Section 37 - Audit">
+Legal Basis: Presidential Decree 1445 (Government Auditing Code of the Philippines). The Commission on Audit has exclusive authority to examine all government-funded projects including architectural consulting contracts.
+</LawCallout>
+
+
+<Warn />
+
+
+<ExamTip />
+
+
+<Tip />
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)

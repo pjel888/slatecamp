@@ -1,5 +1,9 @@
 ## What You Need to Know for the LEA
-Sprinkler systems and fire detection change two critical egress parameters: sprinklers increase the allowable travel distance from **$46\text{m}$ to $61\text{m}$** and extend the allowable length of dead-end corridors from **$6\text{m}$ to $15\text{m}$**. This is one of the highest-impact code relationships in fire safety design for the Architecture Licensure Examination.
+
+## Learning Goal
+Apply sprinkler system impact on egress — increased travel distance (46m → 61m) and dead-end corridor allowance (6m → 15m), identify when sprinklers are required per RA 9514, and specify fire detection and alarm system components.
+Sprinkler systems and fire detection change two critical egress parameters: sprinklers increase the allowable travel distance from **$46\text{m}$ to $61\text{m}$** and extend the allowable length of dead-end corridors from **$6\text{m}$ to $15\text{m}$**. This is one of the highest-impact code relationships in fire safety design for the Licensure Examination for Architects.
+
 
 ## Core Concept
 Automatic sprinkler systems, combined with fire detection and alarm systems, significantly reduce the probability that a fire will grow unchecked. Under **RA 9514**, buildings with functioning sprinkler systems are granted longer travel distances and dead-end corridors because early detection and suppression buy occupants more time to evacuate safely.
@@ -43,6 +47,13 @@ A proposed design has a $10\text{m}$ dead-end corridor.
 <Tip>
 **"Sprinklers = 61/15; No Sprinklers = 46/6."** Memorizing these two pairs covers the majority of egress-bonus questions in the LEA. The bonus reflects the roughly $33\%$ increase in safety margin provided by suppression.
 </Tip>
+
+
+**Exam Tip — ERR-DSGN-011:** Sprinklers increase travel distance from 45m to 60m AND dead-end corridors from 6m to 15m (or 12m to 22.5m depending on code edition). These are the MOST tested code values in fire safety.
+
+## Cross-References
+
+See **LEA-DSGN-008-01** (Fire Egress) for travel distance and dead-end corridor adjustments, **LEA-DSGN-008-02** (Fire Separation) for sprinkler trade-offs with fire ratings, and **LEA-DSGN-007-09** (Building Systems) for MEP coordination.
 
 ## Common Mistakes
 <WikiMistakeList mistakes={[

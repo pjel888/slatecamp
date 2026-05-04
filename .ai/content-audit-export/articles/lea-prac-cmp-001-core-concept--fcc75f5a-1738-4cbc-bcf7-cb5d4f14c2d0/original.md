@@ -1,6 +1,13 @@
-## What You Need to Know for the LEA
+## Learning Goal
 
-The LEA tests your ability to classify a project into the correct group and apply the correct fee percentage to the Project Construction Cost (PCC). Expect questions that present a building type and ask you to identify its group number and corresponding fee — or that test the sliding sclea for Group 1 projects exceeding ₱50M.
+After studying this article, you should be able to:
+
+- Describe the architect's fee structure under the percentage-of-PCC method.
+- Identify the 10 Project Classification Groups and their fee percentages.
+- Distinguish DAEDS from DADS rates.
+- Explain the ₱50M sliding scale for Groups 1–3.
+
+The LEA tests your ability to classify a project into the correct group and apply the correct fee percentage to the Project Construction Cost (PCC). Expect questions that present a building type and ask you to identify its group number and corresponding fee — or that test the sliding scale for Group 1 projects exceeding ₱50M.
 
 ## Core Concept
 
@@ -12,7 +19,7 @@ Classification is the first step in fee determination under the percentage-of-PC
 
 ### Groups by Complexity (Groups 1–3)
 
-Groups 1 through 3 classify projects according to their level of architectural and engineering complexity. All three groups share a common base: the stated percentage applies to projects with a PCC of **₱50 million or less**. For projects exceeding ₱50M, a **sliding sclea** reduces the percentage on the excess amount.
+Groups 1 through 3 classify projects according to their level of architectural and engineering complexity. All three groups share a common base: the stated percentage applies to projects with a PCC of **₱50 million or less**. For projects exceeding ₱50M, a **sliding scale** reduces the percentage on the excess amount.
 
 **Group 1 — Simplest Utilization and Character** covers buildings of the most straightforward design and construction: warehouses, simple factory buildings, storage facilities, and other utilitarian structures requiring minimal architectural elaboration. The base fee is **5% DAEDS of PCC for projects ≤₱50M**.
 
@@ -20,11 +27,11 @@ Groups 1 through 3 classify projects according to their level of architectural a
 
 **Group 3 — Exceptional Character** covers buildings of distinctive architectural character or those housing special equipment: churches, theaters, museums, laboratory buildings, and structures requiring specialized design solutions. The base fee is **7% DAEDS of PCC for projects ≤₱50M**.
 
-### The Sliding Sclea for Groups 1–3
+### The Sliding Scale for Groups 1–3
 
 <Warn>The sliding sclea is one of the most tested computation topics in the Compensation block. For Groups 1–3, the base percentage applies only to the first ₱50M of PCC. The excess is charged at progressively lower rates.</Warn>
 
-The sliding sclea applies identically to Groups 1, 2, and 3 — only the base rate for the first ₱50M differs. Each successive bracket is 1% lower than the previous one. For example, Group 1's sliding sclea is 5% → 4% → 3% → 2% → 1% → 0.5%, while Group 2's is 6% → 5% → 4% → 3% → 2% → 1%:
+The sliding scale applies identically to Groups 1, 2, and 3 — only the base rate for the first ₱50M differs. Each successive bracket is 1% lower than the previous one. For example, Group 1's sliding scale is 5% → 4% → 3% → 2% → 1% → 0.5%, while Group 2's is 6% → 5% → 4% → 3% → 2% → 1%:
 
 <WikiExamTable headers={["PCC Bracket", "Group 1", "Group 2", "Group 3"]} rows={[["First ₱50M", "5%", "6%", "7%"], ["₱50M – ₱100M", "4%", "5%", "6%"], ["₱101M – ₱200M", "3%", "4%", "5%"], ["₱201M – ₱500M", "2%", "3%", "4%"], ["₱501M – ₱1B", "1%", "2%", "3%"], ["Above ₱1B", "0.5%", "1%", "2%"]]} />
 
@@ -32,7 +39,7 @@ The sliding sclea applies identically to Groups 1, 2, and 3 — only the base ra
 
 ### Groups by Building Type (Groups 4–5)
 
-**Group 4 — Low-Rise Residentials** covers residential buildings of low-rise construction: single-family houses, duplexes, townhouses, and low-rise apartment buildings. The fee is **10% of PCC**. No sliding sclea is specified for this group.
+**Group 4 — Low-Rise Residentials** covers residential buildings of low-rise construction: single-family houses, duplexes, townhouses, and low-rise apartment buildings. The fee is **10% of PCC**. No sliding scale is specified for this group.
 
 **Group 5 — Monumental Buildings and Facilities** covers buildings of monumental character and civic importance: government buildings, convention centers, and large public facilities of landmark significance. The fee is **12% of PCC**.
 
@@ -64,9 +71,9 @@ Groups 6 and 7 recognize that repeating a design requires less architectural eff
 
 | Group | Description | Fee | Source |
 | ----- | ----------- | --- | ------ |
-| 1 | Simplest Utilization and Character | 5% DAEDS of PCC (≤₱50M) + sliding sclea | Architect's Guidelines |
-| 2 | Moderate Complexity | 6% DAEDS of PCC (≤₱50M) + sliding sclea | Architect's Guidelines |
-| 3 | Exceptional Character / Special Equipment | 7% DAEDS of PCC (≤₱50M) + sliding sclea | Architect's Guidelines |
+| 1 | Simplest Utilization and Character | 5% DAEDS of PCC (≤₱50M) + sliding scale | Architect's Guidelines |
+| 2 | Moderate Complexity | 6% DAEDS of PCC (≤₱50M) + sliding scale | Architect's Guidelines |
+| 3 | Exceptional Character / Special Equipment | 7% DAEDS of PCC (≤₱50M) + sliding scale | Architect's Guidelines |
 | 4 | Low-Rise Residentials | 10% of PCC | Architect's Guidelines |
 | 5 | Monumental Buildings and Facilities | 12% of PCC | Architect's Guidelines |
 | 6 | Repetitive Building | 100% / 80% / 60% / 40% declining | Architect's Guidelines |
@@ -77,14 +84,29 @@ Groups 6 and 7 recognize that repeating a design requires less architectural eff
 
 ## Philippine Practice Context
 
-In Philippine practice, most private-sector projects fall into Groups 1–5. The sliding sclea for Groups 1–3 becomes critical for large commercial and industrial projects where PCC commonly exceeds ₱50M. Group 9's 150% multiplier is frequently applied in the adaptive reuse and renovation market, particularly for heritage structures and building retrofits in Metro Manila's older commercial districts. Group 7's repetitive housing schedule is directly relevant to the mass housing programs of NHA and DHSUD. Architects negotiating fees must correctly classify the project first — classification errors compound through every subsequent fee calculation.
+In Philippine practice, most private-sector projects fall into Groups 1–5. The sliding scale for Groups 1–3 becomes critical for large commercial and industrial projects where PCC commonly exceeds ₱50M. Group 9's 150% multiplier is frequently applied in the adaptive reuse and renovation market, particularly for heritage structures and building retrofits in Metro Manila's older commercial districts. Group 7's repetitive housing schedule is directly relevant to the mass housing programs of NHA and DHSUD. Architects negotiating fees must correctly classify the project first — classification errors compound through every subsequent fee calculation.
 
 ## How It's Tested
 
-The LEA tests Project Classification in three patterns. First, the exam presents a building type and asks which group number it belongs to — the student must match building descriptions to the correct group. Second, the exam presents a PCC amount for a Group 1, 2, or 3 project exceeding ₱50M and asks the student to compute the fee using the sliding sclea. Third, the exam presents a renovation scenario and asks the student to apply the 150% multiplier after first identifying the correct base group.
+The LEA tests Project Classification in three patterns. First, the exam presents a building type and asks which group number it belongs to — the student must match building descriptions to the correct group. Second, the exam presents a PCC amount for a Group 1, 2, or 3 project exceeding ₱50M and asks the student to compute the fee using the sliding scale. Third, the exam presents a renovation scenario and asks the student to apply the 150% multiplier after first identifying the correct base group.
 
 <Tip>Memorize the groups as three clusters: **Complexity** (1-2-3 at 5-6-7% DAEDS), **Type** (4-5 at 10-12%), and **Special** (6-7 repetitive, 8 interiors at 15%, 9 renovations at 150%, 10 MDPE). The complexity cluster shares the sliding sclea; the others do not.</Tip>
 
 ## Common Mistakes
 
 <WikiMistakeList mistakes={["Applying the flat percentage to the entire PCC for Group 1–3 projects exceeding ₱50M, instead of using the sliding sclea on the excess amount", "Confusing Group 6 (Repetitive Building — declining from 100% of basic fee) with Group 7 (Repetitive Housing — starting at 10% of PCC with additions)", "Classifying a renovation as its base group and applying the base fee, forgetting the 150% multiplier under Group 9", "Assuming Group 10 has a specific percentage fee — it uses the MDPE method, not a percentage of PCC"]} />
+
+---
+
+## Related Articles
+
+- [Project Classification Groups](lea-prac-cmp-001)
+- [Factors Determining Classification](lea-prac-cmp-002)
+- [Project Construction Cost](lea-prac-cmp-003)
+- [Schedule of Payments](lea-prac-cmp-004)
+- [MDPE Formula](lea-prac-cmp-006)
+- [MDPE Multipliers](lea-prac-cmp-007)
+- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
+- [Reimbursable Expenses](lea-prac-cmp-011)
+- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)

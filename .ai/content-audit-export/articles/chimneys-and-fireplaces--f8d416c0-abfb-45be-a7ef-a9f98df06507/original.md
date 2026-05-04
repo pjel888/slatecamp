@@ -4,6 +4,18 @@
 
 ---
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Recall the five principles of Section 1211 using the WALSH mnemonic (Walls, Anchorage, Lining, Separation/S clearance, Height)
+- Identify minimum chimney wall thicknesses for each appliance heat category
+- Apply the dual-condition chimney height rule (≥ 600 mm above roof AND ≥ 600 mm above any building part within 3.00 m)
+- Distinguish between firebox depth (500 mm) and firebox wall thickness (250 mm / 200 mm with lining)
+- Calculate corbeling limits: 150 mm total, 25 mm per course, 300 mm minimum wall thickness
+
+---
+
 ## 1. Hook / Opening Scenario
 
 A plan examiner at the Office of the Building Official flags a set of plans for a two-storey Group A residential dwelling with a masonry fireplace. The fireplace walls are shown at 150 mm thick, the firebox depth is 450 mm, and the chimney terminates only 400 mm above the roof surface — none of which meet minimum code. Before she issues the Notice of Disapproval, she cross-checks the chimney clearance to nearby combustible roof members and discovers they are only 30 mm away on the interior side. The applicant's architect is about to fail three separate provisions of Rule XII, Section 1211 simultaneously. Know the numbers, and you will never be that architect.
@@ -17,7 +29,7 @@ The entire Section 1211 is organized around five governing principles. Memorize 
 ### Principle 1 — Structural Adequacy
 Every chimney must be **designed, anchored, supported, and reinforced** according to engineering principles (2004 Revised IRR, Rule XII, Sec. 1211.1). The chimney carries no structural loads other than its own weight **unless explicitly designed as a supporting member**. In wood-framed buildings (common in Group A occupancies), lateral anchoring is required at the ceiling line and at every floor line more than **1.80 m above grade** — unless the chimney is entirely within the framework or is free-standing.
 
-### Principle 2 — Wall Thickness Scleas with Heat Load
+### Principle 2 — Wall Thickness Scales with Heat Load
 Wall thickness requirements escalate with the operating temperature of the connected appliance. The PH Code recognizes five appliance heat categories: Residential, Low Heat, Medium Heat, High Heat, and Incinerator. Each category has its own minimum wall composition (see Table 1 below).
 
 ### Principle 3 — Lining Protects the Masonry
@@ -30,6 +42,13 @@ The Code distinguishes between chimneys **within the structure** (≥ 50 mm clea
 Every chimney must terminate at least **600 mm above** the highest point of roof penetration AND at least **600 mm above** the highest elevation of any building part within **3.00 m** of the chimney. This dual-condition height rule governs both draft performance and fire prevention.
 
 ### Master Mnemonic — **"WALSH"**
+
+<LawCallout code="nbcp" section="Rule XII, Sec. 1211" title="WALSH Mnemonic — Five Governing Principles">
+
+W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (≥ 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence — it covers every major metric in Section 1211.
+
+</LawCallout>
+
 > **W**alls (thickness by heat load)
 > **A**nchorage (lateral, at 1.80 m intervals)
 > **L**ining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm)
@@ -99,7 +118,7 @@ Philippine code is less restrictive than IBC regarding above-roof height (600 mm
 | Hearth slab thickness | ≥ 100 mm | 4 in / 102 mm (IRC R1001.9) |
 | Support | Noncombustible material or reinforced | Noncombustible or RC (IRC R1001.9) |
 
-> **PH Advantage:** Philippine hearth extension dimensions (450 mm front, 300 mm sides) are slightly more conservative than the IRC equivleants (406 mm front, 203 mm sides), particularly on the sides, reflecting additional fire safety margins.
+> **PH Advantage:** Philippine hearth extension dimensions (450 mm front, 300 mm sides) are slightly more conservative than the IRC equivalents (406 mm front, 203 mm sides), particularly on the sides, reflecting additional fire safety margins.
 
 ### Table 6 — Corbeling Rules (PD 1096, Rule XII, Sec. 1211)
 
@@ -183,7 +202,7 @@ Every masonry chimney requires a **cleanout opening at its base**. In Philippine
 **Fireplace Walls:** The 200 mm outer wall and 250 mm firebox wall (reducible to 200 mm when firebrick-lined) reflect the intense radiant heat at the firebox interior. The **500 mm minimum firebox depth** ensures that logs are positioned far enough from the opening that sparks do not escape into the room — particularly important in homes with combustible flooring (wood, bamboo, or narra parquet floors common in Philippine heritage residences).
 
 **Hoods:** Barbecue and range hoods must be:
-- No. 18 gauge (≈ 1.2 mm) copper, galvanized iron, or equivleant corrosion-resistant metal
+- No. 18 gauge (≈ 1.2 mm) copper, galvanized iron, or equivalent corrosion-resistant metal
 - **Smokeproof construction without soldering** — soldered joints fail under heat
 - Sloped at ≤ 45° from vertical (steep enough to capture rising smoke)
 - Extending ≥ 150 mm beyond the firebox on all sides
@@ -191,7 +210,7 @@ Every masonry chimney requires a **cleanout opening at its base**. In Philippine
 
 **Dampers:** Fireplace dampers must be minimum **No. 12 gauge metal** (≈ 2.7 mm) and must open to provide at least **90% of the required flue area**. The damper blades must not project beyond the inner face of the flue when open — a common installation error that significantly reduces draft.
 
-**Lintels:** All fireplace openings must be spanned by a **non-combustible lintel** — steel angle, reinforced concrete, or equivleant. Wood lintels over fireplaces are absolutely prohibited, regardless of finish treatment.
+**Lintels:** All fireplace openings must be spanned by a **non-combustible lintel** — steel angle, reinforced concrete, or equivalent. Wood lintels over fireplaces are absolutely prohibited, regardless of finish treatment.
 
 ### 4.9 Corbeling — The Most Frequently Tested Detail
 
@@ -221,10 +240,10 @@ The Philippine and US codes are aligned on several critical metrics:
 | Issue | PH Code | US Code (IBC/IRC) | Who Is More Restrictive |
 |---|---|---|---|
 | Chimney height above roof | 600 mm | 914 mm (3 ft) | **US more restrictive** |
-| Chimney height above obstacles (within 3 m/10 ft) | 600 mm | 610 mm (2 ft) | Essentially equivleant |
+| Chimney height above obstacles (within 3 m/10 ft) | 600 mm | 610 mm (2 ft) | Essentially equivalent |
 | Hearth front extension | 450 mm | 406 mm (16 in) | **PH more restrictive** |
 | Hearth side extension | 300 mm | 203 mm (8 in) | **PH significantly more restrictive** |
-| Smoke chamber back wall | 150 mm | 152 mm (6 in) | Essentially equivleant |
+| Smoke chamber back wall | 150 mm | 152 mm (6 in) | Essentially equivalent |
 | Smoke chamber front/side walls | 200 mm | 152 mm (6 in) | **PH more restrictive** |
 | Spark arrester mesh max | 20 mm | 12.7 mm (½ in) | **US more restrictive** |
 | Firebox depth | 500 mm | No specific minimum in IRC | **PH more prescriptive** |
@@ -244,6 +263,12 @@ The LEA boards may present scenario questions where NFPA 211 data is used as a r
 ## 6. Exam Traps
 
 ### Trap 1 — Chimney Height: One Condition or Both?
+
+<Warn>
+
+There are TWO concurrent height conditions. The chimney must be ≥ 600 mm above the roof surface AND ≥ 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails — even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.
+
+</Warn>
 
 **Wrong assumption:** "The chimney is 600 mm above the roof surface, so it meets the height requirement."
 
@@ -276,6 +301,12 @@ The LEA boards may present scenario questions where NFPA 211 data is used as a r
 ## 7. Board-Prep Mnemonics
 
 ### Mnemonic 1 — Fireplace Wall Numbers: "2-2.5-5-10"
+
+<Tip>
+
+Remember the fireplace dimensions sequence: 200 mm outer wall → 250 mm firebox wall → 500 mm firebox depth → 10 mm max firebrick joint. Say it like a phone number: "Two, two-fifty, five-hundred, ten."
+
+</Tip>
 
 > **2**00 mm — outer fireplace wall
 > **2.5** → 250 mm — firebox wall (without firebrick lining)
@@ -323,7 +354,7 @@ Which of the following correctly identifies a dimension where the **Philippine c
 - C. Hearth extension on each side of the fireplace opening (300 mm vs. 203 mm).
 - D. Smoke chamber back wall thickness (150 mm vs. 152 mm).
 
-> **Correct Answer: C.** Philippine code requires hearth extensions of ≥ 300 mm on each side of the fireplace opening, versus the IRC's 203 mm (8 inches). This is a significant divergence. Option A is wrong — IBC/IRC is more restrictive on height (914 mm vs. PH's 600 mm). Option B is not a point of divergence; both are 50 mm. Option D is essentially equivleant (150 mm vs. 152 mm).
+> **Correct Answer: C.** Philippine code requires hearth extensions of ≥ 300 mm on each side of the fireplace opening, versus the IRC's 203 mm (8 inches). This is a significant divergence. Option A is wrong — IBC/IRC is more restrictive on height (914 mm vs. PH's 600 mm). Option B is not a point of divergence; both are 50 mm. Option D is essentially equivalent (150 mm vs. 152 mm).
 
 ---
 
@@ -387,3 +418,18 @@ Return to this module in 3 days. If you can answer the Active Recall questions w
 ---
 
 *Article 30 of the LEA Board Exam Review Series | Rule XII, Section 1211, PD 1096 & 2004 Revised IRR | Last reviewed: March 2026*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Chimney height above roof = 900 mm minimum (or 600 mm if within 3 m of roof ridge). Spark arrestors required for solid-fuel appliances. Fireplace opening-to-flue ratio is 10:1 — this is the most tested dimensional relationship.
+
+## Cross‑References
+
+**Fire Resistive Construction Ratings**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Vertical Openings And Floor Roof Construction**
+

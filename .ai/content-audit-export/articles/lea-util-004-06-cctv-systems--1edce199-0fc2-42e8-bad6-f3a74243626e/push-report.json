@@ -1,19 +1,27 @@
 {
-  "attempted_at": "2026-05-03T14:01:19.101Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:05:52.442Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
   "slug": "lea-util-004-06-cctv-systems",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:5c12808838b1a8e297514cf5bad2a5e94b86838ad688c7552c0bec89d6c1740e",
-  "original_hash": "sha256:6bcffc5e597fa8f088e4587365d4358a6ce7a0b985231d4ab61bd3c44727c935",
-  "candidate_hash": "sha256:5c12808838b1a8e297514cf5bad2a5e94b86838ad688c7552c0bec89d6c1740e",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:577b1f8d9a0a7f6637cbfe33423170899069da578a227aa189ab035fd21a938f",
+  "original_hash": "sha256:5c12808838b1a8e297514cf5bad2a5e94b86838ad688c7552c0bec89d6c1740e",
+  "candidate_hash": "sha256:af99e317efd921212a9500a541bc67def3358079dfb30515939606a4b359beb2",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:49:43.649953+00:00"
+  "remote_updated_at_before": "2026-05-03T15:43:10.851157+00:00"
 }

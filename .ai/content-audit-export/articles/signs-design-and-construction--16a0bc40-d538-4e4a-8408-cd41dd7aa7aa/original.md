@@ -2,6 +2,12 @@
 
 ---
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Classify signs by type (projecting, wall, roof, ground, neon) and apply dimensional limits, clearance requirements, and projection limits under PD 1096 Rule XX Sections 2001-2006; calculate minimum vertical clearance (3.00 m non-arcaded, 5.00 m arcaded); and determine electrical sign permit requirements under PD 1096 and PEC.
+
 ## Header Block
 
 | Field | Detail |
@@ -32,7 +38,7 @@ Under PD 1096, signs are not treated as mere accessories. They are classified as
 
 ### Principle 2 — General Requirements: Traffic Safety and Language (Sec. 2001)
 
-No sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device. This prohibition is absolute: no sign may use red, amber, or green lights in a manner that could be mistaken for traffic control signals. Any sign in a foreign language must carry a translation in **English or the local dileact**. Where multiple signs are grouped on one façade, the Building Official may require all bottom lines of adjacent signs to follow a **common baseline** to ensure a harmonious streetscape.
+No sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device. This prohibition is absolute: no sign may use red, amber, or green lights in a manner that could be mistaken for traffic control signals. Any sign in a foreign language must carry a translation in **English or the local dialect**. Where multiple signs are grouped on one façade, the Building Official may require all bottom lines of adjacent signs to follow a **common baseline** to ensure a harmonious streetscape.
 
 ### Principle 3 — Structural Design and Maintenance (Sec. 2003, 2002)
 
@@ -92,7 +98,7 @@ The Philippine system under PD 1096 is prescriptive and metric-based, directly e
 | **Roof Signs** | Prohibited on wooden structures; governed by Sec. 1210 | Structural requirements apply; height governed by local zoning |
 | **Ground Sign Height** | Per Local Zoning Regulation | Per local zoning ordinance |
 | **Lighting Method** | Electrical means only (per PEC) | Electric signs governed by UL 48 and local electrical code |
-| **Foreign Language** | English or local dileact translation required | No federal requirement; some municipalities have local ordinances |
+| **Foreign Language** | English or local dialect translation required | No federal requirement; some municipalities have local ordinances |
 | **Neon Sign Spacing** | ≥ 4.00 m between signs on same building | No specific federal spacing rule; local ordinances govern |
 | **Traffic Confusion Prohibition** | Explicit (Sec. 2001) | Addressed through local traffic ordinance and state law |
 | **Structural Code Reference** | NSCP (National Structural Code of the Philippines) | ASCE 7 / IBC structural provisions |
@@ -108,7 +114,7 @@ The Philippine system under PD 1096 is prescriptive and metric-based, directly e
 | **All Signs** | Lighting Method | Electrical means only (per PEC) |
 | **All Signs** | Structural Design | Per NSCP (dead + lateral loads) |
 | **All Signs** | Supports Location | Private property only |
-| **All Signs** | Foreign Language | English or local dileact translation required |
+| **All Signs** | Foreign Language | English or local dialect translation required |
 | **Roof Signs** | Prohibited Structure | Wooden structures or wooden roof framing |
 | **Roof Signs** | Lightning Protection | Grounding required |
 | **Roof Signs** | Air Traffic | Warning lights required (where hazardous) |
@@ -139,7 +145,7 @@ Rule XX sign projection limits (≤ 1.00 m for non-arcaded, flush for arcaded) m
 Roof signs are explicitly cross-referenced to Sec. 1210 (penthouses and roof structures). The skeleton tower provision of Sec. 1210(e) — which explicitly allows "neon signs" on roofs as skeleton towers — is the enabling clause for rooftop signage. The area and height limitations of Sec. 1210 apply: aggregate rooftop structure area ≤ 1/3 of supporting roof area.
 
 ### Philippine Electrical Code (PEC)
-All sign lighting is governed by the PEC per Sec. 2006. No alternative lighting method (solar-powered LED, gas, flame, etc.) is code-compliant unless specifically addressed by the PEC. UL 48 (the USA standard for electric signs) has no direct Philippine equivleant but the PEC governs.
+All sign lighting is governed by the PEC per Sec. 2006. No alternative lighting method (solar-powered LED, gas, flame, etc.) is code-compliant unless specifically addressed by the PEC. UL 48 (the USA standard for electric signs) has no direct Philippine equivalent but the PEC governs.
 
 ### National Structural Code of the Philippines (NSCP)
 Wind loads, dead loads, and seismic loads for signs must comply with NSCP. Sign supports and anchorages must be designed by a licensed structural engineer when required by the Building Official.
@@ -213,9 +219,11 @@ A projecting sign is being installed on a building along an arcaded commercial s
 
 > **Answer: B**
 >
-<LawCallout code="nbcp" title="not 3.00 m. The 3.00 m clearance applies only to non-arcaded streets. The sign a">
+<LawCallout code="pd1096" section="Rule VII - Signs">
+
 
 On arcaded streets, PD 1096 Sec. 2004 prohibits projecting signs from extending beyond the outermost face of the arcade (projection = 0). Additionally, the minimum vertical clearance on arcaded streets is ≥ 5.00 m above the road — not 3.00 m. The 3.00 m clearance applies only to non-arcaded streets. The sign at 4.20 m clearance and 0.80 m projection beyond the arcade violates both requirements. Option A incorrectly applies the non-arcaded rule; Option C applies the wrong clearance standard; Option D is partially correct on the clearance but wrong on projection.
+
 
 </LawCallout>
 
@@ -232,9 +240,11 @@ An architect plans three neon signs on the same façade of a building. The signs
 
 > **Answer: D**
 >
-<LawCallout code="nbcp" title="the 3.50 m spacing violates this; (2) tops must not project above the parapet or">
+<LawCallout code="pd1096" section="Rule VII - Sign Construction">
+
 
 (1) clear distance between signs on the same building ≥ 4.00 m — the 3.50 m spacing violates this; (2) tops must not project above the parapet or eave line — the 0.30 m overage violates this; (3) neon signs on adjacent buildings must be ≥ 2.00 m from the common boundary — the 1.80 m fails this. All three violations are present simultaneously. Board questions on neon signs frequently bundle multiple sub-rules to test whether candidates know all conditions, not just one.
+
 
 </LawCallout>
 
@@ -251,9 +261,11 @@ A client wants to illuminate their building sign using solar-powered LED panels 
 
 > **Answer: B**
 >
-<LawCallout code="nbcp" title="not with the architect's preference or general industry practice. At the time of">
+<LawCallout code="pd1096" section="Rule VII - Sign Location">
+
 
 not with the architect's preference or general industry practice. At the time of the NBCP's drafting and in most current PEC interpretations, "electrical means" implies connection to regulated electrical supply. The architect's advice to seek PEC authorization is the correct professional response. Options A, C, and D cite incorrect sections and incorrect reasoning.
+
 
 </LawCallout>
 
@@ -267,3 +279,18 @@ not with the architect's preference or general industry practice. At the time of
 > **Day 14:** Review the Exam Traps and the PH vs. USA comparison table. Focus on the arcaded vs. non-arcaded distinction.
 
 *Signs Rule XX is a cross-area topic — expect it under both Professional Practice (permit process, occupancy classification) and Site Planning (clearances, projections, setbacks). Master both dimensions.*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Projecting sign minimum clearance: 3.00 m on non-arcaded streets, 5.00 m on arcaded streets. Ground signs max height = 6.00 m. Roof signs not permitted above 15.00 m building height. Neon signs minimum spacing: 4.00 m between signs, 2.00 m from common boundaries.
+
+## Cross‑References
+
+**Comprehensive Signage Package**, **Bp 344 Tactile And Visual Alarms**, **Electrical And Mechanical Regulations**, **Site Exterior Circulation**
+

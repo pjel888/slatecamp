@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your mastery of **Inca ashlar masonry** (precisely fitted stone blocks without mortar), **Machu Picchu's** structural design and mountainside adaptation, terracing strategies, and the engineering systems that enabled the **Inca Empire** (1438–1532 CE) to integrate vast Andean territories into a unified built environment.</Callout>
+## Learning Goal
 
+Identify the key characteristics of Inca architecture — ashlar dry-stone masonry, trapezoidal openings, cyclopean walls, batter — and explain the engineering principles behind precisely fitted stonework that enabled earthquake resistance at Machu Picchu and Sacsayhuamán.
 ## Core Concept
 
 Inca architecture represents the pre-Columbian Americas' most advanced masonry tradition. Inca masons achieved perfectly fitting stone blocks cut with such precision that mortar became unnecessary—a technique called **ashlar masonry**. The Inca Empire spanned 2,500 kilometers from Colombia to Chile, and its architecture enforced political unity through standardized building practices, imperial highway networks, and strategic fortress placement. Unlike Maya architecture (which emphasized astronomical alignment and individual city-states) or Aztec architecture (which centralized ritual at capital), Inca architecture organized territorial conquest through infrastructure—roads, way-stations, and administrative centers connected the empire.
@@ -38,29 +39,27 @@ Fortress cities like **Ollantaytambo** (15th century, Sacred Valley, Peru) guard
 
 Major Inca cities like **Cusco** (the empire's capital) employed geometric plaza organization and cardinal orientation. Cusco's central plaza (**Haukaypata**) served state ceremonies and troop mustering. The **Coricancha** (the empire's holiest temple, destroyed by Spanish but foundations remain) housed the sun idol and vast stores of gold and silver treasure. This centralized location expressed the emperor's sacred authority over both religious and secular domains.
 
-Inca residential architecture varied by social rank. The emperor occupied palaces with multiple courtyards, reflecting access and hierarchy. Commoners lived in smaller single-family structures grouped into neighborhoods. This spatial expression of social order—palaces adjacent to commoner dwellings but physically separated—organized Inca society at the sclea of built form.
+Inca residential architecture varied by social rank. The emperor occupied palaces with multiple courtyards, reflecting access and hierarchy. Commoners lived in smaller single-family structures grouped into neighborhoods. This spatial expression of social order—palaces adjacent to commoner dwellings but physically separated—organized Inca society at the scale of built form.
 
 **Terracing as Agricultural and Engineering Strategy**
 
-Inca terraces covered hundreds of thousands of hectares across the Andes. Beyond Machu Picchu, systems at **Moray** (Sacred Valley) created circular terraced amphitheaters of unknown purpose (possibly ritual, perhaps agricultural experimentation). Terrace construction required surveying, drainage design, and sustained labor—typical terraces took years to build and decades to reach maximum productivity. The Inca reorganized landscape at unprecedented scleas, expressing imperial ambition and consolidating subject populations through shared infrastructure projects.
+Inca terraces covered hundreds of thousands of hectares across the Andes. Beyond Machu Picchu, systems at **Moray** (Sacred Valley) created circular terraced amphitheaters of unknown purpose (possibly ritual, perhaps agricultural experimentation). Terrace construction required surveying, drainage design, and sustained labor—typical terraces took years to build and decades to reach maximum productivity. The Inca reorganized landscape at unprecedented scales, expressing imperial ambition and consolidating subject populations through shared infrastructure projects.
 
 ## Key Facts and Testable Items
 
 <WikiExamTable headers={["**Site**", "**Location**", "**Date**", "**Key Features**", "**Engineering Innovation**"]} rows={[['["**Machu Picchu**", "Machu Picchu Mountain, Peru", "c. 1450 CE", "Terraces, Temple of the Sun, residential sectors", "Vertical architecture, precise terracing, seismic resistance"]', '["**Temple of the Sun**", "Machu Picchu", "c. 1450 CE", "Curved ashlar walls, solstice alignment", "Curved stone masonry, astronomical orientation"]', '["**Ollantaytambo**", "Sacred Valley, Peru", "15th c. CE", "Garrison fortress, multi-story structures", "Defensive architecture, troop control passages"]', '["**Cusco**", "Peru", "15th–16th c. CE", "Coricancha temple, plaza organization, cardinal orientation", "Urban planning, sacred center design"]', '["**Coricancha** (Temple of the Sun)", "Cusco", "15th–16th c. CE", "Gold-clad walls, housed sun idol and treasure", "Precious material expression of imperial power"]', '["**Inca Road System (Qhapaq Ñan)**", "Andes, 40,000 km network", "15th–16th c. CE", "Paved stone roads, tambos, drainage", "Infrastructure for military, administration, communication"]', '["**Moray**", "Sacred Valley, Peru", "15th c. CE", "Circular terraced amphitheaters", "Possible agricultural or ceremonial experimentation"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Ashlar Masonry and Structural Performance**
 Exams ask you to identify ashlar masonry characteristics and explain its engineering advantages. Example: "Inca ashlar blocks fit without mortar. How does polygonal interlocking and tight fitting improve seismic performance?" (Answer: blocks shift rather than topple in earthquakes; overlying weight resets shifted blocks; flexible fit absorbs earthquake energy). You must connect precision to structural resilience.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Terrain Adaptation and Terracing**
 Questions test your understanding of landscape transformation. Example: "How did Inca terracing at Machu Picchu address both agricultural productivity and water management on steep slopes?" (Answer: stone walls retained soil; integrated drainage prevented waterlogging; multiplied arable land area). Link terracing to engineering and productive goals.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Imperial Infrastructure and Urban Hierarchy**
 Exams ask what building systems reveal about state organization. Example: "The **Inca road system's** design (paved stone, way-stations every day's travel, relay runner communication) demonstrates what administrative capability?" (Answer: centralized logistics, rapid communication, control over territorial sclea). Distinguish Inca infrastructure focus from Maya astronomical or Aztec ritual emphasis.</ExamTip>
 
+<Callout>The LEA tests your mastery of **Inca ashlar masonry** (precisely fitted stone blocks without mortar), **Machu Picchu's** structural design and mountainside adaptation, terracing strategies, and the engineering systems that enabled the **Inca Empire** (1438–1532 CE) to integrate vast Andean territories into a unified built environment.</Callout>
 
 ## Common Mistakes
 
@@ -69,7 +68,6 @@ Exams ask what building systems reveal about state organization. Example: "The *
 <WikiMistakeCard mistake="Confusing Inca and Aztec as contemporary rivals" correction="The **Aztec Empire** (1345–1521 CE, central Mexico) and **Inca Empire** (1438–1532 CE, western South America) were geographically and chronologically overlapping but separate. They never directly contested." context="Distinguish their architectural traditions: Inca emphasized linear infrastructure and ashlar masonry; Aztec emphasized monumental temple complexes and ritual space." />
 
 <WikiMistakeList mistakes={["Overestimating Inca technological \"advancement\" without historical context. Inca masonry was sophisticated *for stone construction without steel, concrete, or industrial tools*. Do not assume \"better than Aztec\" or \"approaching European Renaissance\"—evaluate each tradition within its own constraints and goals. Inca priorities favored infrastructure and territorial integration; Aztec prioritized ritual and vertical monumentality. Both achieved excellence within their values.", "Missing the relationship between terracing and empire. Terraces were not merely agricultural—they were labor projects binding subject populations to the state through mandatory work (**mit'a** system). Terraces thus served political, economic, and practical purposes simultaneously. The built environment expressed and reinforced imperial hierarchy.", "Attributing all Andean stone structures to the Inca. Pre-Inca Andean cultures—**Tiwanaku**, **Wari**, and others—built monumental stone architecture. The Inca inherited and standardized these traditions. Not all ancient Andean stone architecture is Inca; distinguish periods and regional styles."]} />
-
 
 ## Key Terms
 
@@ -92,3 +90,10 @@ Exams ask what building systems reveal about state organization. Example: "The *
 **Mit'a**: Inca system of mandatory labor obligation; subjects required to contribute labor for state projects (roads, terraces, temples).
 
 **Seismic resistance**: Structural capacity to withstand and survive earthquake ground motion; Inca ashlar masonry demonstrates empirical seismic design.
+
+## Related Articles
+
+See also within Pre-Columbian & Indigenous American Architecture: **lea-hist-012-01-core-concept**, **lea-hist-012-03-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

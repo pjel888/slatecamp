@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply minimum air change rates (ACH) per NBC by space type, calculate fresh air supply from floor area and occupancy, select between mechanical and passive ventilation strategies, and verify IAQ compliance for different occupancy groups.
+
 Indoor air quality (IAQ) and ventilation are foundational to occupant health and building performance. The National Building Code specifies minimum air change rates (ACH) by space type to remove pollutants, moisture, and CO₂. The LEA expects candidates to know these rates, apply them to floor area calculations, and understand how mechanical and passive ventilation systems achieve compliance.
+
 
 ## Core Concept
 
@@ -50,6 +54,13 @@ A hospital has an operating room 50 m² with 3.5 m ceiling height. Exam states 2
 A classroom 200 m² must have natural ventilation. Calculate minimum operable window area (1:20 = 5%): 200 × 0.05 = 10 m² of operable windows required. Exam shows design with 8 m² operable area. Exam asks: is this compliant? Answer: No—insufficient by 2 m².
 
 <Tip>**"Office = 4–6 ACH, Kitchen = 15 ACH, OR = 15–20 ACH (positive pressure)."** These are the three most-tested categories. Operating rooms are the most stringent (highest ACH, special pressure control, HEPA). Kitchens come next. Offices are baseline. Memorize this hierarchy.</Tip>
+
+
+**Exam Tip:** Air change rates (ACH) vary by occupancy: offices 4-6 ACH, restrooms 8-10 ACH, kitchens 15-20 ACH. The LEA tests whether you can select the correct ACH for a given space type and calculate required airflow.
+
+## Cross-References
+
+See **LEA-DSGN-009-01** (Passive Design) for natural ventilation strategies, **LEA-DSGN-008-03** (Sprinkler Systems) for smoke management, and **LEA-DSGN-007-09** (Building Systems) for mechanical ventilation integration.
 
 ## Common Mistakes
 

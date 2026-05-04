@@ -4,13 +4,21 @@
 
 ## PD 1096, Rule XII — Section 1207: Stairs, Exits, and Occupant Loads
 
-<LawCallout code="nbcp">
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Calculate minimum egress width, number of exits, and maximum travel distance under PD 1096 Rule XII for each occupancy group; apply the occupant load factor to determine required exit capacity; design compliant corridor widths by occupancy and occupant load; and determine when a second exit is required based on occupant load and travel distance.
+---
+<LawCallout code="pd1096" section="Rule XII - Means of Egress">
+
 
 Governing Law: Presidential Decree No. 1096, National Building Code of the Philippines
 **Specific Provision:** Rule XII, Section 1207 (2004 Revised IRR) — in the IRR this is under **Rule XII: General Design and Construction Requirements**, but the mother code text calls it **“Stairs, Exits and Occupant Loads”**.[web:22][web:27]  
 **Related Provisions:** Rule VII (Occupancy Classification) for use groups; Rule VIII (Light, Ventilation & Setbacks) for coordination with exit placement and open spaces.[web:25][web:27]  
 **LEA Relevance:** Area 1 (Laws & Professional Practice) + Area 3 (Architectural Design & Site Planning)  
 **Date Verified:** March 28, 2026 — cross‑referenced against DPWH PD text, 2004 Revised IRR (IIBH PDF), and summarized Rule XII references.[web:15][web:27][web:26]
+
 
 </LawCallout>
 
@@ -64,6 +72,8 @@ _“The occupant load permitted in any building or portion thereof shall be dete
 5. **Accessory areas** must have exits sized for full occupancy but can sometimes be excluded from the maximum allowable occupant load calculation for certain code limits (check the IRR text in context).[web:26]
 
 ### TABLE XII.1 — GENERAL REQUIREMENTS FOR OCCUPANT LOADS AND EXITS
+
+> ⚠ **Note on labeling:** This table uses group-letter labels that differ from Rule VII (Sec. 701) occupancy classification. Sec. 701 defines Group C = Educational and Group H = Assembly (under 1,000), but this table uses "Group E" for education, "Group H" for institutional, and "Group C" for assembly. These are the table's own internal references — learn both the Rule VII group letters AND this table's labels, as exam questions draw from both sources.
 
 > In all occupancies, floors above the 1st storey having an occupant load of more than **10** shall have at least **2 exits**.[web:20]
 
@@ -137,14 +147,14 @@ Total exit width = Occupant Load ÷ 165 = 54 ÷ 165 = 0.327 m
 
 But each exit door minimum clear width is **0.90 m** (and stairs/corridors have their own minimums), so in practice you provide at least 1.80 m total exit width across the two exits.[web:26][web:29]
 
-<details>
+<Accordion>
 <summary>Active Recall: Unit area factors</summary>
 
 Office: **9.30 sq.m/person**[web:20]  
 Auditorium: **0.65 sq.m/person**[web:20]  
 Classroom: **1.80 sq.m/person**[web:20]
 
-</details>
+</Accordion>
 
 ---
 
@@ -174,12 +184,12 @@ It is not just about occupant load brackets. Triggers include:
 
 A 3rd-floor office with 8 people still needs **2 exits** because it is above the 2nd storey.[web:26]
 
-<details>
+<Accordion>
 <summary>Active Recall: Basement storage room, 7 occupants — exits?</summary>
 
 Answer: **2 exits** — basement used for other than purely service purposes.[web:26]
 
-</details>
+</Accordion>
 
 ---
 
@@ -504,3 +514,18 @@ Sketch a 20 m × 30 m office floor:
 ---
 
 _Study this alongside your Rule VIII (setbacks) reviewer so you can handle integrated LEA problems that combine site layout with internal egress requirements._
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Occupant load factors: Assembly (concentrated) = 0.65 m²/person, Assembly (less concentrated) = 1.40 m²/person, Business = 9.30 m²/person, Educational = 1.85 m²/person, Mercantile = 2.80 m²/person. Egress width = occupant load × 0.55 mm per person (for stair) or 0.81 mm per person (for door/corridor). These factors are the most tested calculations.
+
+## Cross‑References
+
+**Stairs Handrails Guardrails**, **Widths Slopes**, **Fire Zones And Existing Buildings**, **Commercial Clearances**
+

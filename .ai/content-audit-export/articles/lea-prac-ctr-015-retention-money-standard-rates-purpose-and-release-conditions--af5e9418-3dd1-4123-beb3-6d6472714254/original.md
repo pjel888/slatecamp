@@ -1,4 +1,12 @@
 ## Retention Money — Standard Rates, Purpose, and Release Conditions
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Define retention money and explain its purpose: performance security, defect remediation fund, and completion incentive.
+- Identify standard retention rates (5%-10%) and how retention is applied to each certified payment.
+- Describe the conditions for release of retention at Substantial Completion and Final Completion.
+- Apply retention money rules to LEA scenarios involving contractor default, punch-list completion, and final accounting.
 
 
 Retention money is a percentage of contract payments withheld by the owner as security for contractor performance, quality of work, and defect remediation during and after construction.
@@ -39,3 +47,19 @@ Some contracts require that a portion of retention be held through the entire de
 The owner has a fiduciary obligation to account for and properly manage retained funds. Retention funds belong to the contractor, not the owner, even though the owner holds them. The owner must not commingle retention funds with the owner's general operating funds or use them for purposes unrelated to project security.
 
 Interest on retained funds creates a point of contract negotiation. Some contracts specify that the owner must pay the contractor interest on retention funds, recognizing that the owner holds the contractor's money. Other contracts are silent on interest, resulting in the owner retaining use of the funds interest-free throughout the project duration.
+
+<LawCallout code="nbcp" section="RA 9266" title="Architecture Act of 2004">RA 9266 governs architectural practice and contract requirements. Agreements must specify scope, compensation, termination, and dispute resolution per SPP Document 201.</LawCallout>
+
+<ProcessFlow>
+<ol>
+  <li><strong>Proposal</strong> — Scope definition and fee negotiation</li>
+  <li><strong>Contract Execution</strong> — Signing of UAP Doc 301</li>
+  <li><strong>Service Delivery</strong> — Performance of defined phases</li>
+  <li><strong>Payment Processing</strong> — Progress billing and certificates</li>
+  <li><strong>Close-out</strong> — Final certificate, retention release</li>
+</ol>
+</ProcessFlow>
+
+<ExamTip>Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibility, supervision) are separately compensated. Verify exclusions.</ExamTip>
+
+<KeyValues items={[{"value": "10%", "label": "Standard Retention"}, {"value": "60 days", "label": "Payment Period"}, {"value": "5%", "label": "COLA Escalation Max"}, {"value": "90%", "label": "CD Phase Fee"}]} />

@@ -9,19 +9,14 @@ After studying this article, you should be able to:
 - Describe the unlimited personal liability of the sole proprietor.
 - Distinguish sole proprietorship from partnership and corporation under RA 9266.
 
-
-
 ### Definition and Legal Requirements
+<ArticleMedia id="media-lea-prac-frm-001-sole-proprietorship-in-" a type="image" caption="Sole Proprietorship Structure — Ownership, Liability, and Compliance" description="Organizational structure diagram showing: (1) The architect as the sole proprietor at the top center, with 100% ownership and complete control; (2) Branching to: DTI registration (left), PRC/BOA registration (center), and professional liability insurance (right); (3) Below, the architect's personal assets shown directly connected to practice liabilities, illustrating unlimited personal liability; (4) Terminal nodes showing practice employees, client relationships, and project documents as owned by the proprietor. Red dashed line highlights the absence of a corporate veil." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A sole proprietorship is an individual architect practicing and delivering architectural services, duly registered with the Department of Trade and Industry (DTI), Board of Architecture (BOA), and Professional Regulation Commission (PRC). This structure is the simplest form of architectural practice under RA 9266. The architect maintains complete ownership and control of the practice.
 
 The sole proprietor must hold a valid Certificate of Registration and Professional Identification Card. The architect is personally responsible for all debts, liabilities, and obligations of the practice. This unlimited personal liability is a defining characteristic that distinguishes sole proprietorships from corporate structures. Annual registration and renewal are required with all regulatory bodies.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Key distinction:** In a sole proprietorship, the architect and the practice are legally inseparable. Unlike corporations, there is no corporate veil protecting personal assets. Professional liabilit...
-[/SLATECAMP_UI_BLOCK]
 
 ### Ownership and Control Structure
 

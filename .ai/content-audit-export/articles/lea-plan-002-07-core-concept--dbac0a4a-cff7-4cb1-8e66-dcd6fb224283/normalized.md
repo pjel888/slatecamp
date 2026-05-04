@@ -5,7 +5,6 @@ Analyze Philippine urban challenges (primate city, informal settlements, weak LG
 
 Philippine urban planning applies international concepts (urban models, design principles, new urbanism) to the specific context of rapid urbanization, informal settlements, informal transport, and limited municipal capacity. Felino Palafox Jr. is the leading contemporary Philippine planner.
 
-
 ## Core Concept
 
 Philippine cities face overlapping challenges: population concentration in Metro Manila (primate city), uncontrolled sprawl, inadequate water and sewage systems, informal transport (jeepneys, tricycles), informal settlements (millions of squatters), and weak LGU planning capacity. Planning theory and tools—the Concentric Zone Model, Lynch's elements, New Urbanism, CLUP, zoning—must be adapted to this reality.
@@ -19,14 +18,11 @@ The **Concentric Zone Model (Burgess, 1925)** describes Chicago's outward expans
 **Felino Palafox Jr.** is the nation's leading urban planner and architect. Palafox has masterplanned major developments (BGC, regional growth centers in Laguna, Pampanga, Cavite) and has worked extensively with DHSUD and LGUs on CLUPs. His work bridges international planning theory with Philippine real-world constraints.
 
 Philippine planning must address: **CLUP mandates** (every LGU must have one, RA 7160), **housing integration** (RA 7279 balanced housing, in-situ upgrading), **environmental constraints** (PD 1067 water body easements, PD 1586 ECC requirements), and **stakeholder capacity**. Many provincial LGUs lack professional planners; reliance on consultants means plans are sometimes poorly implemented. Strong PLGUs (Quezon City, Makati, Cebu City) have better planning continuity; weak municipalities struggle with CLUP updates and zoning enforcement.
+<ArticleMedia id="media-lea-plan-002-07-core-concept" a type="image" caption="Philippine Urban Challenges — Primate City and Informal Settlements Diagram" description="Diagram illustrating Philippine urban planning challenges: Metro Manila primate city dominance (population/size imbalance), informal settlement patterns (along waterways, danger zones), weak LGU capacity, and jeepney/UV transport system. Palafox Jr. contributions to tropical urbanism." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: rows="{[{\"heading\":\"Challenge / Concept\",\"description\":\"Philippine Application and Constraint\"}", content=true, Metro=true, Manila=true, as=true, Primate=true, City=true, description=true, s=true, population=true, in=true, metro=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -40,11 +36,6 @@ Every CLUP-related decision in the Philippines involves balancing growth (develo
 - "What is the 400–800m catchment area in Philippine TOD?" → TOD walkable radius around transit stations. Applied to MRT/LRT station areas in Metro Manila.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Philippine planning = applying international theory to local reality (informal settlements, weak capacity, rapid sprawl, diverse stakeholders). Felino Palafox Jr. = leading contemporary planner. In-situ upgrading = keep communities in place. CLUP = law-mandated; zoning ordinance = implementation tool; DHSUD = reviews for conformity.
-[/SLATECAMP_UI_BLOCK]
-
 
 **Exam Tip:** Philippine urbanization statistics to know: Manila ≈10× larger than Cebu (primate city). ~2-3 million informal settlers in Metro Manila. Cities growing 3-4% annually. 80+ municipalities and 145+ cities required to have CLUPs.
 
@@ -55,7 +46,3 @@ See **LEA-PLAN-002-01** (Classical Models) for model application, **LEA-PLAN-003
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Treating the Concentric Zone Model as literally describing Manila's geography — it describes formal urban expansion; informal settlement and leapfrog development violate the model's assumptions\",\"Confusing CLUP (a vision document) with zoning ordinance (the legal implementation) — both are necessary; one without the other fails\",\"Thinking RA 7279 relocation is always used — actually, in-situ upgrading is preferred when possible (CMP), and relocation is used mainly for danger areas\",\"Underestimating Felino Palafox Jr.'s role in contemporary Philippine planning — he is not just a name to know; his work in BGC and LGU CLUPs is foundational to modern PH urbanism\",\"Assuming all LGUs have equal planning capacity — reality: large cities (QC, Makati, Cebu) have professional planners; many municipalities lack capacity and depend on consultants\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

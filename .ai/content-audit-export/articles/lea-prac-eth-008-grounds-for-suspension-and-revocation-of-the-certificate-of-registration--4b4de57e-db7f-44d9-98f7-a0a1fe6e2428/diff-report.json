@@ -1,38 +1,46 @@
 {
   "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
   "slug": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
-  "generated_at": "2026-05-03T13:44:29.852Z",
-  "old_hash": "sha256:62757ab256035b7b25581bd85a857253b5875ef87afdd440202d1cff849a4040",
-  "new_hash": "sha256:67f7c60924b38af8475a448182c1bbf6d1b9f4db28a050395fbf85e9a4025c86",
-  "original_hash": "sha256:62757ab256035b7b25581bd85a857253b5875ef87afdd440202d1cff849a4040",
-  "normalized_hash": "sha256:984d45a5c1d3029eebbb3493116efb0f3fdd37f837429f47828b192a73d3e3f0",
-  "candidate_hash": "sha256:67f7c60924b38af8475a448182c1bbf6d1b9f4db28a050395fbf85e9a4025c86",
+  "generated_at": "2026-05-04T00:06:03.583Z",
+  "old_hash": "sha256:67f7c60924b38af8475a448182c1bbf6d1b9f4db28a050395fbf85e9a4025c86",
+  "new_hash": "sha256:c91af9c7c9afb3f944aa1b48e577e8187a431956bb4e4f05e3996c9cfe34d945",
+  "original_hash": "sha256:67f7c60924b38af8475a448182c1bbf6d1b9f4db28a050395fbf85e9a4025c86",
+  "normalized_hash": "sha256:c91af9c7c9afb3f944aa1b48e577e8187a431956bb4e4f05e3996c9cfe34d945",
+  "candidate_hash": "sha256:c91af9c7c9afb3f944aa1b48e577e8187a431956bb4e4f05e3996c9cfe34d945",
   "changed": true,
-  "changed_line_count": 88,
+  "changed_line_count": 60,
   "inserted_line_count": 0,
   "deleted_line_count": 11,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 88,
+    "changed": 60,
     "inserted": 0,
     "deleted": 11,
-    "original_line_count": 98,
-    "candidate_line_count": 87
+    "original_line_count": 87,
+    "candidate_line_count": 76
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
 }

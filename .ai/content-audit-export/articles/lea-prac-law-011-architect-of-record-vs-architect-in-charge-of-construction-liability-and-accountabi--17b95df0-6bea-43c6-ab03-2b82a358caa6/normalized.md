@@ -1,10 +1,6 @@
 ## Architect-of-Record vs. Architect-in-Charge of Construction — Liability and Accountability
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -15,17 +11,13 @@ After studying this article, you should be able to:
 - Describe when the same architect can serve as both AoR and AiCC.
 - Apply role distinctions to exam scenarios involving design defects vs. construction defects.
 
-
+<ArticleMedia id="media-law011-aor-aicc-comparison" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Architect-of-Record vs Architect-in-Charge of Construction" description="Side-by-side comparison diagram showing AoR (design liability under Article 1723) vs AiCC (supervision liability, solidary with contractor). Covers scope, liability type, timing, and when roles can be combined." placementIntent="legal-framework" suggestedSearchQuery="Architect of Record vs Architect in Charge of Construction comparison Philippines" replacementNotes="Create a two-column comparison table as a graphic. Column 1: AoR — responsible for total design, signs and seals documents, strictly liable for design defects under Art 1723, role during design phase. Column 2: AiCC — responsible for construction supervision, ensures contractor compliance, solidarily liable with contractor for construction defects, role during construction phase. Bottom row: 'Can be same person if architect contracted for both phases.'" suggestedAsset="Diagram or reference image" alt="Side-by-side comparison: Architect of Record vs Architect in Charge of Construction" caption="Future diagram: side-by-side comparison: architect of record vs architect in charge of construction" />
 
 ### Definition and Scope of Architect-of-Record
 
 The _Architect-of-Record_ is defined in RA 9266, Section 3(a) as the architect registered and licensed under RA 9266 who is _directly and professionally responsible for the total design of the project for the client_ and who _assumes the civil liability for the plans, specifications, and contract documents_ that she has signed and sealed. The AoR is the primary design professional who authors or supervises the preparation of all architectural documents and carries professional accountability for design quality, constructability, code compliance, and fitness for purpose. The AoR signs and seals all drawings and specifications, creating a legal certification that the design meets all applicable standards and laws. This role is singular—only one architect may hold AoR status for a project at a given time, ensuring clear accountability for design decisions. The AoR's liability is direct and personal; she cannot disclaim responsibility for the design by designating someone else to review her work.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Key Distinction"
-- Text: Key Distinction — The AoR is liable for DESIGN defects regardless of contractor performance. The AiCC is liable for CONSTRUCTION defects (solidary with contractor). These are distinct legal bases under Article 1723. One architect can serve as both AoR and AiCC, but the liabilities remain separate.
-[/SLATECAMP_UI_BLOCK]
 
 ### Definition and Scope of Architect-in-Charge of Construction
 
@@ -44,31 +36,12 @@ The AiCC bears _solidary liability with the contractor_ for defects in construct
 The critical distinction between AoR and AiCC liability is that the AoR is liable for _design defects regardless of how the contractor performed_, while the AiCC is liable for _construction defects and the architect's failure to supervise adequately_. A project may involve all four liability scenarios: (1) design-only failures (AoR liability); (2) contractor execution failures that the AiCC should have caught (solidary AiCC-contractor liability); (3) both design and construction failures (both AoR and solidary AiCC-contractor liability); and (4) contractor failures that the AiCC could not reasonably have detected (potential contractor-only liability). Architects seeking to minimize liability must carefully define their scope—accepting AoR responsibility only for design quality and limiting AiCC responsibility to periods of actual site supervision. Many architectural practices now carry separate professional liability insurance for design and construction supervision phases, with different policy limits reflecting differing risk profiles.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Exam Note: The LEA board exam frequently tests the four liability scenarios under Article 1723. Remember: AoR = design defects only. AiCC = construction defects (solidary with contractor). When the same architect serves both roles, she bears BOTH liabilities simultaneously.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266" title="RA 9266 Section 20(a) — Architect-of-Record Definition"
-- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 20(a), which defines the Architect-of-Record (AoR) as the architect responsible for the total design, signing and sealing all architectural documents.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ The AoR CANNOT delegate design responsibility to the AiCC. Design is NON-DELEGABLE. However, SUPERVISORY TASKS can be delegated. This line between design modification (AoR territory) and field interpretation (AiCC territory) is frequently tested on the LEA.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Liability comparison: Under Article 1723 — defective plans = AoR bears STRICT LIABILITY (even if contractor didn't follow specs). Defective construction = AiCC shares SOLIDARY LIABILITY with contractor. Know which liability attaches to which role.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 

@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your grasp of major African architectural traditions—**Great Zimbabwe**, **Lalibela**, and the **Djenne Mosque**—and what their structures reveal about engineering, social organization, and regional trade networks.</Callout>
+## Learning Goal
 
+Identify the three canonical examples of African pre-colonial architecture — Great Zimbabwe (dry-stone chevron), Lalibela (monolithic rock carving), Djenne Mosque (mud-brick thermal mass) — by their construction technique, date, region, and cultural significance.
 ## Core Concept
 
 African architecture from the pre-colonial era demonstrates sophisticated spatial planning, advanced stone masonry, and adaptation to climate and available materials. Far from monolithic, African architectural traditions vary by region: the dry savannas of southern Africa demanded dry-stone construction; the Ethiopian highlands inspired vertical rock-cutting; the Sahel required thermal mass and ventilation in mud-brick design. These structures served not merely practical purposes but encoded social hierarchy, spiritual belief, and economic power. The LEA emphasizes buildings that influenced later colonial interpretations and buildings whose construction methods—such as **Great Zimbabwe's** coursed stone or **Lalibela's** monolithic carving—reveal pre-industrial engineering competence.
@@ -29,18 +30,16 @@ The **Djenne Mosque** (current structure 1907, Mali) typifies Sahel mud-brick de
 <WikiExamTable headers={["**Site**", "**Location**", "**Date**", "**Building Technique**", "**Cultural Significance**"]} rows={[['["**Great Zimbabwe**", "Zimbabwe", "c. 1100–1450", "Dry-stone chevron pattern, granite blocks", "Trade hub; royal residence; wealth display"]', '["**Lalibela** (11 churches)", "Ethiopia", "12th–13th c.", "Monolithic rock-carving; subtractive method", "Pilgrimage site; spiritual Jerusleam replica"]', '["**Biete Giyorgis** (Church of St. George)", "Lalibela, Ethiopia", "12th c.", "Rock-carved Greek cross plan (monolithic carving from living rock; dimensions vary by source but approximate interior space is roughly 12m × 12m)", "Most famous and best-preserved Lalibela church (Bet Medhane Leam is the largest monolithic church at Lalibela; specific dimensions should be verified against current archaeological surveys)"]', '["**Djenne Mosque**", "Djenne, Mali", "1907 (current); c. 13th c. (original)", "Mud-brick with wooden support posts", "Sahel thermal mass; replastering culture"]', '["**Great Enclosure** (within Zimbabwe)", "Great Zimbabwe", "c. 1200–1450", "Decorative dry-stone walls, 10m height", "Display of power, not defense"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Identification and Construction Method**
 Questions ask you to match a site with its building technique. Example pattern: "Which African structure employs monolithic rock-carving rather than additive stone masonry?" (Answer: Lalibela). Expect questions testing whether you distinguish dry-stone work from carved rock.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Purpose and Social Context**
 Exams ask what a structure reveals about its society. Example: "Great Zimbabwe's elevated royal enclosure indicates what about its political system?" (Answer: hierarchical, centralized power). You must link architectural form to cultural function.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Regional Adaptation**
 Questions test climate-responsive design. Example: "The **Djenne Mosque's** mud-brick construction and wooden pins serve what climatic purpose in the Sahel?" (Answer: thermal mass, seasonal replastering, material availability). Expect comparisons between stone-based and earth-based traditions.</ExamTip>
 
+<Callout>The LEA tests your grasp of major African architectural traditions—**Great Zimbabwe**, **Lalibela**, and the **Djenne Mosque**—and what their structures reveal about engineering, social organization, and regional trade networks.</Callout>
 
 ## Common Mistakes
 
@@ -49,7 +48,6 @@ Questions test climate-responsive design. Example: "The **Djenne Mosque's** mud-
 <WikiMistakeCard mistake="Assuming Great Zimbabwe was a fortress" correction="The dry-stone chevron pattern and irregular wall placement contradict military design (no crenellations, poor firing angles). Great Zimbabwe functioned as a residential and trading center displaying wealth." context="Walls enclosed space and controlled movement, not defended against siege." />
 
 <WikiMistakeList mistakes={["Overestimating Djenne Mosque's permanence. Students treat Djenne like stone mosques requiring rare repair. Sahel mud-brick requires annual or biennial replastering—it is *not* permanent architecture but cyclically maintained. Wooden pins are structural, not scaffolding.", "Attributing Great Zimbabwe to non-African peoples. Older Eurocentric scholarship denied African construction capability, attributing Zimbabwe to Arab or European builders. Archaeological evidence—local materials, regional settlement patterns, copper and gold trade networks—confirms Bantu-Shona construction and occupation."]} />
-
 
 ## Key Terms
 
@@ -72,3 +70,10 @@ Questions test climate-responsive design. Example: "The **Djenne Mosque's** mud-
 **Sahel**: Semi-arid African region south of the Sahara; shaped building traditions using available earth and wood.
 
 **Trade network**: Economic connections linking distant regions; architectural investment reflects accumulated wealth from trade.
+
+## Related Articles
+
+See also within African Architecture: **lea-hist-011-02-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

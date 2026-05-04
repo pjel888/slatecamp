@@ -2,7 +2,12 @@
 
 Philippine housing law operates through a layered system of buyer protection, developer regulation, and socialized housing standards. Five core laws establish the framework: PD 957 controls market-rate subdivisions and condominiums; BP 220 sets minimum area standards for economic and socialized housing; RA 7279 (UDHA) mandates eviction protections and balanced housing; RA 6552 (Maceda Law) provides installment buyer safeguards; and RA 10884 quantifies the balanced housing percentage. Understanding which law governs which housing type and which provision belongs to which law is the foundation of housing law competency.
 
-### PD 957: Subdivision and Condominium Buyers Protective Decree (1976)
+## Learning Goal
+
+Distinguish the five core Philippine housing laws (PD 957, BP 220, RA 7279, RA 6552, RA 10884) by their scope, key provisions, and housing type coverage, and apply eviction protection rules and balanced housing requirements to given scenarios.
+
+
+## Core Concept
 
 PD 957 is exclusively about **market-rate residential projects** — subdivisions and condominiums sold to individual buyers. It does not govern socialized housing, informal settlements, or government-built projects.
 
@@ -65,10 +70,10 @@ RA 7279 reframes housing from a market commodity to a human right. It mandates b
 
 **Balanced Housing Requirement**
 
-Developers of open-market and medium-cost housing projects must produce socialized housing equivleant to the market housing. The requirement ensures that every luxury subdivision or mid-range residential project generates affordable units. Options include:
+Developers of open-market and medium-cost housing projects must produce socialized housing equivalent to the market housing. The requirement ensures that every luxury subdivision or mid-range residential project generates affordable units. Options include:
 
 - On-site development: Build socialized units within the same project
-- Off-site development: Develop an equivleant project elsewhere
+- Off-site development: Develop an equivalent project elsewhere
 - Joint venture with NHA: Partner with the National Housing Authority
 - Bond contribution: Pay a contribution to NHA if on-site or off-site are infeasible
 
@@ -118,9 +123,9 @@ The law creates a sharp threshold at 2 years:
 | Years of Installments Paid | Buyer's Rights Upon Cancellation |
 |---------------------------|----------------------------------|
 | Less than 2 years | 60-day grace period from date of last installment; NO refund of payments |
-| 2 years or more | 5050% of total payments refunded + 5% per additional year **above 5 years** (capped at 90% refund)
+| 2 years or more | **50%** of total payments refunded + 5% per additional year **above 5 years** (capped at 90% refund)
 
-Example: A buyer who paid for 3.5 years is entitled to a 50% refund. A buyer who paid for 7 years is entitled to 50% + (5% × 2 years) = 60% refund.efund.
+Example: A buyer who paid for 3.5 years is entitled to a 50% refund. A buyer who paid for 7 years is entitled to 50% + (5% × 2 years) = 60% refund.
 
 **Grace Period Rule**
 
@@ -136,7 +141,7 @@ The Maceda Law covers residential real property on installment — subdivision l
 
 RA 10884 updated RA 7279's balanced housing requirement by specifying percentages:
 
-Developers of open-market housing projects must produce socialized housing equivleant to **15–20% of the project cost**. This quantifies the social obligation — it is not vague, it is not discretionary, and it is enforced through the DHSUD licensing system (developers who do not meet the requirement cannot obtain licenses for new projects).
+Developers of open-market housing projects must produce socialized housing equivalent to **15–20% of the project cost**. This quantifies the social obligation — it is not vague, it is not discretionary, and it is enforced through the DHSUD licensing system (developers who do not meet the requirement cannot obtain licenses for new projects).
 
 ---
 

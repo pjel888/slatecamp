@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your understanding of **Indigenous Australian** building traditions and **British Colonial** architecture in Australia (1788–1900). Questions focus on Aboriginal shelter types (temporary and semi-permanent), colonial institutional buildings (courthouses, barracks, government houses), and the adaptation of European architectural styles to Australian climate. You must understand how colonialism suppressed Indigenous building traditions and how European architects adapted their practice to extreme Australian conditions.</Callout>
+## Learning Goal
 
+Identify Indigenous Australian architecture (climate-responsive, ephemeral, bark shelters, windbreaks) and contrast it with colonial imported styles, explaining how climate, materials, and cultural values shaped distinct building traditions.
 ## Core Concept
 
 **Indigenous Australian** architecture precedes European contact by tens of thousands of years. Aboriginal peoples constructed shelter types suited to regional climate: windbreaks and simple domed structures (gunyah) in temperate regions, more substantial bark and timber structures in tropical zones, subterranean and semi-subterranean shelters in desert regions. These structures ranged from temporary to semi-permanent or permanent, reflecting lifestyles from nomadic to settled where people moved with seasons and resources in some regions. Architecture was responsive, with evidence of durable stone houses and long-term base camps—the opposite of European permanence. Colonial documentation typically erased or dismissed Indigenous building as "primitive," but it was sophisticated adaptation to extreme environments.
@@ -29,18 +30,16 @@ By late 19th century, Australian architects developed a distinct identity. They 
 
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Indigenous vs. Colonial Architecture**
 Questions ask you to distinguish Aboriginal building traditions from European colonial architecture. You explain Indigenous architecture as temporary, climate-responsive, and semi-nomadic; colonial architecture as permanent, imposing, and asserting authority. You note how colonization erased and suppressed Indigenous building knowledge.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Thermal and Environmental Adaptation**
 Questions present colonial buildings and ask why they were designed certain ways: deep verandahs (shade), elevated structures (air circulation), large shutters (sun control), substantial masonry (thermal mass). You explain how European architects pragmatically adapted continental styles to extreme Australian conditions.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Colonial Institutionalism**
 Questions ask why courthouses, government houses, and churches were monumental and ordered. You explain: these buildings asserted British authority and civilization, distinguished colonial elites from convict underclass, and represented institutional permanence. Architecture was a tool of colonization.</ExamTip>
 
+<Callout>The LEA tests your understanding of **Indigenous Australian** building traditions and **British Colonial** architecture in Australia (1788–1900). Questions focus on Aboriginal shelter types (temporary and semi-permanent), colonial institutional buildings (courthouses, barracks, government houses), and the adaptation of European architectural styles to Australian climate. You must understand how colonialism suppressed Indigenous building traditions and how European architects adapted their practice to extreme Australian conditions.</Callout>
 
 ## Common Mistakes
 
@@ -49,7 +48,6 @@ Questions ask why courthouses, government houses, and churches were monumental a
 <WikiMistakeCard mistake="Treating colonial architecture as purely European" correction="Students say Australian colonial buildings are \"just British transplants.\" They are transformed by necessity: European style with Australian adaptation. The verandah is not European—it is Australian response to heat. The material is local sandstone, not imported stone." context="Say \"colonial hybrid\" or \"adapted European style.\"" />
 
 <WikiMistakeList mistakes={["Overestimating colonial design skill. Students say colonists designed sophisticated buildings. Early colonial architecture was often crude—utilitarian barracks and gaols, not refined Beaux-Arts. It was pragmatic, not elegant. Say \"functionally appropriate\" rather than \"skillfully designed.\"", "Ignoring the violence of colonization. Students treat colonial architecture neutrally. Colonial architecture was violence—it suppressed Indigenous traditions, asserted dominance, enforced hierarchy, and normalized dispossession. Acknowledge this when discussing colonial buildings."]} />
-
 
 ## Key Terms
 
@@ -68,3 +66,10 @@ Questions ask why courthouses, government houses, and churches were monumental a
 **Utilitarian Colonialism** — Architectural approach prioritizing function, durability, and practical constraint over stylistic expression; characteristic of early convict-era buildings.
 
 **Architectural Colonization** — Imposition of European architectural styles and values as assertion of cultural dominance; erases and suppresses Indigenous building traditions.
+
+## Related Articles
+
+See also within Australia & New Zealand Architecture: **lea-hist-015-02-core-concept**, **lea-hist-015-03-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests three distinct early-modern movements—**De Stijl**, **Constructivism**, and **Expressionism**—that rejected tradition but through opposite visual languages. You must distinguish their aesthetics, recognize their key buildings and figures, and understand the ideology behind each.</Callout>
+## Learning Goal
 
+Identify the three defining characteristics of De Stijl — primary colors (red, yellow, blue), orthogonal geometry (right angles only), and asymmetrical balance — and explain how the Schröder House (Rietveld, 1924) applied Neoplasticist theory to three-dimensional space.
 ## Core Concept
 **De Stijl** (Dutch for "The Style"), **Constructivism**, and **Expressionism** all emerged between 1917 and 1925 as radical breaks from academic architecture. Yet they pursued fundamentally different visions.
 
@@ -31,6 +32,8 @@
 
 <ExamTip>**Pattern 4: Ideological context.** "Which movement emerged from revolutionary Soviet ideals and prioritized technological expression?" Constructivism's connection to communist ideology and asymmetrical dynamism is tested.</ExamTip>
 
+<Callout>The LEA tests three distinct early-modern movements—**De Stijl**, **Constructivism**, and **Expressionism**—that rejected tradition but through opposite visual languages. You must distinguish their aesthetics, recognize their key buildings and figures, and understand the ideology behind each.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Conflating De Stijl and Constructivism" correction="De Stijl uses primary colors and orthogonal geometry systematically for universal harmony. Constructivism is often asymmetrical and avoids color orthodoxy, pursuing revolutionary dynamism and technological expression. The Tatlin Tower is not De Stijl—it's Constructivism." context="Distinguishing these movements by visual and ideological characteristics is essential for identification and comparative analysis questions on the exam." />
@@ -50,3 +53,10 @@
 - **Interpenetrating planes**: Overlapping, sliding surfaces and spaces that dissolve traditional boundaries between inside and outside.
 - **Technological apparatus**: Visible expression of mechanical systems, materials, and industrial processes as design elements.
 - **Dematerialization of walls**: The visual dissolution of solid barriers through transparency, rotation, and open planning.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

@@ -5,13 +5,14 @@
 Explain kinesthetics as the study of the body in motion through space, and identify how architectural sequences — approach, entry, progression, destination — choreograph movement and create spatial narratives.
 ## Core Concept
 
+<ArticleMedia id="media-lea-theo-003-03-core-concept" a type="image" caption="Architectural Promenade — Spatial Sequence and Kinesthetic Narrative" description="Sequential diagram showing Le Corbusier's promenade architecturale as a choreographed path through a building: Approach (distant view of form) → Entry (threshold crossing, compression) → Progression (movement along corridor/ramp, changing vistas) → Climax/Arrival (destination space, release, expanded volume) → Departure (reverse sequence). Each stage shows the kinesthetic experience: changes in ceiling height, light quality, direction, and spatial volume. Examples from Villa Savoye and Ronchamp shown as reference." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 Architecture is not experienced as a frozen image or a floor plan. It is lived through the body in motion. Walking up a stair, navigating a corridor, crossing a threshold, ascending a ramp—these actions are architectural events. Kinesthetics elevates motion from mere circulation to aesthetic and psychological experience. Le Corbusier called it the _promenade architecturlea_ (architectural promenade): the carefully choreographed sequence of spaces that unfolds as one moves through a building. Every corner turn, every step up or down, every change in ceiling height or light is intentional and creates meaning.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: Kinesthetics = **the body in motion through architecture**. It's not just circulation efficiency—it's choreography, rhythm, and meaning-making through movement sequences.
-[/SLATECAMP_UI_BLOCK]
 
 **The Kinesthetic Dimensions:**
 
@@ -27,7 +28,6 @@ Extracted summary:
 Extracted summary:
 - Props: (none)
 - Text: The **2R+T = 600–630mm** rule (2 × riser + tread depth) is an ergonomic guideline ensuring stairs feel proportionally comfortable. It's not a code requirement, but it's the gold standard for step design.
-[/SLATECAMP_UI_BLOCK]
 
 - **Handrails:** PD 1096 Rule VIII Sec. 806 requires handrails on both sides for stairs wider than 1.10 m, and for any stair with more than 3 risers. The handrail height must be **800–900 mm** measured vertically from the tread nosing. BP 344 (Accessibility Law) specifies an additional handrail at 700 mm for children. Handrails must be graspable (30–50 mm diameter) and extend at least 300 mm beyond the top and bottom of the flight.
 
@@ -65,51 +65,43 @@ Kinesthetics is tested because it is where perception (THEO-003) meets design re
 Extracted summary:
 - Props: (none)
 - Text: The most common error: designing a beautiful plan but ignoring kinesthetic details (stair dimensions, ramp slopes, corridor widths, threshold heights). In the body's actual experience of moving through space, kinesthetic failures become immediately obvious. Dimensional accuracy is non-negotiable.
-[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
 ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 1. **Direct Stair Dimension Recall (MCQ):** "According to PD 1096, the maximum riser height for residential stairs is (a) 150 mm (b) 180 mm (c) 200 mm (d) 250 mm." Answer: (c) 200 mm. Straightforward recall of code limits.
-[/SLATECAMP_UI_BLOCK]
+<Note>
+1. **Direct Stair Dimension Recall (MCQ):** "According to PD 1096, the maximum riser height for residential stairs is (a) 150 mm (b) 180 mm (c) 200 mm (d) 250 mm." Answer: (c) 200 mm. Straightforward recall of code limits.
+</Note>
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 2. **Stair Design Calculation via 2R+T Rule:** "A stair has a 170 mm riser. Using the 2R+T = 600–630 mm ergonomic guideline, what is the ideal tread depth? (a) 230 mm (b) 260 mm (c) 290 mm (d) 320 mm." Answer: (c) 290 mm (2×170+290 = 630 mm). Tests understanding of proportional relationship, not just memorization.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 3. **Accessibility Ramp Slope:** "An accessible ramp in a building must span a 1.5 m vertical height. What is the minimum horizontal length at the maximum allowable slope? (a) 15 m (b) 20 m (c) 30 m (d) 40 m." Answer: (c) 30 m (1.5 m × 20 = 30 m, using 1:20 slope per BP 344). Tests calculation and accessibility law knowledge.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 4. **Corridor Psychology and Comfort:** "A residential circulation corridor should be at least (a) 800 mm (b) 900 mm (c) 1200 mm (d) 1500 mm to allow two people to pass without discomfort." Answer: (c) 1200 mm. Tests understanding that proxemic comfort requires adequate width.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 5. **Compression-Release Sequence (Design Critique):** "In Le Corbusier's promenade architecturlea, the sequence low‑narrow entrance → tall central atrium → intimate room → broad gallery exemplifies (a) poor planning (b) compression‑release rhythm (c) accessibility failure (d) structural inefficiency." Answer: (b) compression‑release rhythm. Tests conceptual understanding of kinesthetic experience.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 6. **Threshold Meaning:** "A 20 mm step at a building entrance signals (a) construction error (b) transition/boundary recognition (c) accessibility violation (d) no particular meaning." Answer: (b) transition/boundary recognition, but note that under BP 344 a 20 mm step is an accessibility violation unless it is beveled or a ramp is provided. The LEA may test both the semantic and the regulatory aspect.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 Extracted summary:
 - Props: 
 - Text: Kinesthetics is the study of the body in motion through space. The LEA tests your understanding of how architectural sequences—stairs, ramps, corridors, thresholds, transitions—shape the experience of
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
@@ -117,13 +109,11 @@ Extracted summary:
 Extracted summary:
 - Props: mistake="Confusing riser and tread", correction="Riser = vertical (r = rise); Tread = horizontal (t = tread/trodden).", context="A mnemonic: **Riser Reaches up; Tread Travels forward.**"
 - Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
 Extracted summary:
 - Props: mistake="Applying the 2R+T rule incorrectly", correction="The formula is 2 × (riser) + tread, not (riser + tread) × 2 or riser + 2 × tread.", context="Double‑check: if riser = 170 mm and tread = 290 mm, then 2(170) + 290 = 340 + 290 = 630 mm ✓."
 - Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 chitectural notice.
 

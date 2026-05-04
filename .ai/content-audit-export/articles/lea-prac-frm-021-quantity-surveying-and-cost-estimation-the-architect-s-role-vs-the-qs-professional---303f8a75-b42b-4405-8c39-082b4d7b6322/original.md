@@ -1,8 +1,26 @@
 ## Quantity Surveying and Cost Estimation—The Architect's Role vs. the QS Professional's Role
 
-<JSX>null</JSX>
+<ExamTip>
+Focus on the key concepts in this section for the Licensure Examination for Architects.
+</ExamTip>
 
-Cost estimation is central to architectural practice. Clients need to know what a building will cost before committing to construction. Architects typically prepare preliminary cost estimates during design phases and may coordinate with quantity surveyors for detailed cost analysis. Understanding the architect's role versus the quantity surveyor's role, and when each is appropriate, helps architects deliver reliable cost information and manage client expectations.
+
+
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe quantity surveying and cost estimation in architectural practice.
+
+<Tip>
+Memorize these items — they appear frequently on the exam.
+</Tip>
+
+- Distinguish the architect's role from the QS professional's role.
+- Explain the levels of cost estimates: order-of-magnitude, budget, definitive.
+- Apply cost estimation concepts to project fee calculations.
+
+
 
 ### Cost Estimation Throughout Project Phases
 
@@ -59,3 +77,23 @@ Architects should maintain cost databases for their region and building types. O
 A cost estimate is the architect's prediction of likely cost. A construction budget is the client's authorized spending limit, which may differ from the estimate. The architect should clarify this distinction: "The cost estimate is PHP 50 million, based on current design and market conditions. This is the architect's professional projection. The client's construction budget may be higher (contingency for unknowns) or lower (triggering value engineering if needed)."
 
 If the estimate exceeds the budget, the architect and client should discuss options: reduce scope, adjust quality standards, defer phases, or increase budget. This discussion, led by the architect with QS support, helps the client make informed decisions.
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)
+
+
+<Note>
+This article covers foundational material. Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards.
+</Note>

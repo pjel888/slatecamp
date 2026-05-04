@@ -1,9 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Masonry units form the building blocks of walls, columns, and load-bearing structures.
-The LEA tests your ability to identify unit types, apply compressive strength requirements, and match units to structural requirements.
-Expect questions on concrete hollow block (CHB) sizing, compressive strength standards, and common defects in Philippine construction.
-
+Classify masonry units (concrete hollow blocks, clay bricks, solid concrete blocks) by size, compressive strength, and application, and apply NSCP 2015 minimum strength requirements for load-bearing and non-load-bearing masonry walls.
 ## Core Concept
 
 Masonry units (concrete hollow blocks, clay bricks, solid concrete blocks) are the fundamental components of masonry construction.
@@ -81,7 +79,7 @@ Grouted cells must meet minimum size: typically 1.5 inches (38 mm) net width for
 
 ## Philippine CHB Manufacturing and Market Standards
 
-Philippine concrete hollow block manufacturers typically produce blocks conforming to ASTM C90 or equivleant.
+Philippine concrete hollow block manufacturers typically produce blocks conforming to ASTM C90 or equivalent.
 Common compressive strengths in the local market are:
 
 - 4-inch blocks: 8—12 MPa (mainly for non-loadbearing use)
@@ -198,3 +196,10 @@ efflorescence and assuming it indicates failure: Efflorescence is aesthetic and 
     "Calculating f′m (masonry strength) as equivleant to unit compressive strength: Masonry compressive strength (f′m) is typically 25—50% of unit strength due to mortar joint weakness and imperfect bonding.
 Always use tabular f′m values from NSCP 2015 Table 7.5-2 for concrete masonry."
   ]} />
+
+## Related Articles
+
+See also within Masonry and Concrete: **lea-matl-002-04-core-concept**, **lea-matl-002-05-core-concept**, **lea-matl-002-06-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

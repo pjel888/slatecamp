@@ -3,10 +3,6 @@
 After reading this article, you should be able to:
 
 Explain the complete building permit process under PD 1096 Rule III: identify the Building Official's powers and duties, apply the 15-day payment-to-decision rule, determine when permits expire (1 year / 120 days), and distinguish exempt constructions from those requiring full permits or accessory permits.
-
-**Module Focus: The Legal & Administrative Framework of Construction**
-**Authority: PD 1096 (National Building Code of the Philippines) & 2004 Revised Implementing Rules and Regulations**
-
 ---
 
 ## Schema Activation: Two Projects, Two Different Worlds
@@ -46,6 +42,10 @@ The **Building Official (BO)** is the duly appointed government authority at the
 
 ## Part 2: The Permit Process
 
+[SLATECAMP_UI_BLOCK:ArticleMedia name="permit-process-flowchart" type="diagram" caption="Step-by-step permit process flowchart from application filing → fee payment → 15-day review window → permit issuance or written denial. Include decision diamond for approval/denial and arrows showing the critical path. Highlight the 15-day clock starting from payment date."]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="permit-expiration-timeline" type="diagram" caption="Timeline diagram showing two expiration triggers: 1-year to commence construction from permit issuance date, and 120-day continuous abandonment trigger. Use a horizontal calendar-style bar with labeled thresholds and color-coded safe vs. expired zones."]
+
 ### The Critical Timeline — Where Most LEA Questions Are Set
 
 | Detail                           | Rule                                                                                                                           |
@@ -55,10 +55,6 @@ The **Building Official (BO)** is the duly appointed government authority at the
 | **Denial requirement**           | Must be **in writing**, citing specific Code provisions, within the same 15-day window                                         |
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="authority", title="not submission — because compliance review before payment can take days or weeks"
-- Text: The 15-day clock begins at payment — not submission — because compliance review before payment can take days or weeks as the applicant corrects deficiencies. Once fees are paid, the application is deemed complete and the OBO is legally obligated to act. This protects the applicant from indefinite bureaucratic delay.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -84,10 +80,6 @@ A building permit becomes **null and void** if either condition below occurs:
 **Reason for the Law:** Permits are not licenses to build indefinitely. The one-year commencement rule prevents landowners from hoarding approved permits for speculative purposes. The 120-day abandonment rule ensures that half-built structures — which are hazardous — cannot be left open-ended.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="tip", title="Mnemonic"
-- Text: The Two Clocks That Kill Your Permit:
-[/SLATECAMP_UI_BLOCK]
 >
 > - **1 year** to START
 > - **120 days** to NOT STOP
@@ -119,10 +111,6 @@ These two categories of structures must still obtain a building permit and submi
 | **Traditional Indigenous Family Dwellings** | (1) Intended for use and occupancy by the **family of the owner only** — no rental, no commercial use; (2) Constructed of **native materials** (bamboo, nipa, logs, or lumber from the site); (3) Total cost of construction does **not exceed P15,000.00** | Imposing permit fees on a P12,000 bamboo home would represent a disproportionate financial burden on low-income rural families. The P15,000 threshold is the line below which fee collection is considered inequitable.                 |
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Critical Note: Both of these structures still undergo the full permit review process. A government building's plans are reviewed for structural safety, fire safety, and sanitation just like any private project. Only the payment of fees is waived.
-[/SLATECAMP_UI_BLOCK]
 
 > **Exam Caveat — Traditional Indigenous Family Dwellings**  
 > PD 1096 Sec. 209 states that **public buildings and traditional indigenous family dwellings are exempt only from payment of building permit fees**, not from the permit requirement itself. Some review materials and local practices say that traditional indigenous family dwellings are entirely outside the Code and treat them as **permit‑exempt**. For this module (and for LEA safety), we follow the **stricter Code‑text reading**: permit still required, fees waived. Always match your answer to the exact wording of the exam question.
@@ -216,10 +204,6 @@ The Secretary of the DPWH or an authorized representative may impose administrat
 | **Grave**       | **P10,000.00** | Unauthorized change in submitted and approved plans; unauthorized change from more fire-resistive to less fire-resistive construction; non-compliance with a demolition order; non-compliance with a work stoppage order for construction or demolition without a permit; change in use or occupancy without a certificate; excavations left open for more than 120 days |
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="tip", title="Mnemonic"
-- Text: Administrative Fines: "5-8-10" Think of it as a fragmented phone number: **5 / 8 / 10**
-[/SLATECAMP_UI_BLOCK]
 >
 > - Light = **P5,000**
 > - Less Grave = **P8,000**
@@ -288,10 +272,6 @@ An architect is hired to design (a) a 5 sq.m. detached tool shed in a residentia
 **(D)** Neither structure requires a building permit.
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Reveal Answer **Correct Answer: B** **Analysis:** - The **tool shed** (5 sq.m., detached, private use) is a "minor construction" under Sec. 301.3.a.i of the Revised IRR — sheds not exceeding 6.00 sq.m., completely detached, private use. It is **exempt from the building permit itself**. - The **bamboo house** (native materials, family use, P12,000 — under P15,000) qualifies as a "traditional indigenous family dwelling" under Sec. 209, PD 1096. It **requires a building permit** but is **exempt fro
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -305,10 +285,6 @@ A building permit application is submitted on February 10. After a compliance re
 **(D)** Within a reasonable time, at the BO's discretion
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Reveal Answer **Correct Answer: B — March 16** **Analysis:** Under Sec. 304 of PD 1096, the Building Official must issue or deny the permit within **15 days from payment of the required fees**. Payment occurred on March 1, so the deadline is March 16. - Option A (February 25) would apply if the clock started at submission — it does not. - Option C (March 31) is 30 days from payment — no basis in law. - Option D has no legal support; the BO is on a hard 15-day statutory deadline. If denied, the B
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -322,10 +298,6 @@ An owner builds a residential house without any permit. Inspectors discover the 
 **(D)** 100% of building permit fees
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Reveal Answer **Correct Answer: D — 100% of building permit fees** **Analysis:** The surcharge table under Sec. 212 of the Revised IRR is: - Excavation: 10% - Foundation: 25% - Superstructure up to 2.00 m: 50% - Superstructure **above 2.00 m**: **100%** At 3.0 m above grade, the structure is in the top bracket — the maximum 100% surcharge applies. The owner must pay the building permit fees **plus** an additional amount equal to 100% of those fees as a penalty surcharge.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -339,10 +311,6 @@ A homeowner builds a 1.60 m-high concrete perimeter fence around their property.
 **(D)** Full Building Permit required
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Reveal Answer **Correct Answer: C — Accessory Permit required** **Analysis:** The fence rules under the Revised IRR have three distinct thresholds: - Garden masonry walls **1.20 m and below**: fully exempt from any permit (Sec. 301.3.a.v) - Fences **above 1.20 m up to 1.80 m**: **Accessory Permit required** (Sec. 301.2.b.ii) - Fences **above 1.80 m**: Full Building Permit required as Group J-2 occupancy (Sec. 701, IRR) A 1.60 m fence falls in the middle bracket — Accessory Permit only. Option A 
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -356,10 +324,6 @@ A building permit was issued on January 15. The owner delays construction. When 
 **(D)** The permit does not expire unless formally revoked by the Building Official
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Reveal Answer **Correct Answer: A — January 15 of the following year** **Analysis:** Under Sec. 305 of PD 1096, a building permit becomes null and void if construction has **not commenced within one (1) year** from the date of issue. Issued January 15 → expires January 15 of the following year if no work has started. The 120-day rule (Option B) applies to **abandonment** — once construction has started, a continuous 120-day stoppage voids the permit. These are two separate triggers, and the exam
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -399,6 +363,22 @@ Extracted summary:
 
 ---
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: The most frequently tested building permit trap is the 15-day clock trigger. Remember: payment date, not submission date. If the question gives you both, the answer ALWAYS uses the payment date. If only submission is given, use submission. Read the facts carefully — examiners deliberately put both dates to test this specific distinction.
+
+
+
+---
+
+## Exam Tip
+
+ALE Trap: The most frequently tested building permit trap is the 15-day clock trigger. Remember: payment date, not submission date. If the question gives you both, the answer ALWAYS uses the payment date. If only submission is given, use submission. Read the facts carefully — examiners deliberately put both dates to test this specific distinction.
+
 ## Cross‑References
 
 **Certificate Of Occupancy**, **Legal Liability And Enforcement Workflow**, **Typology Checklists And Plan Checking**, **Change Of Use And Occupancy**
@@ -423,3 +403,5 @@ Extracted summary:
 | Fence classification as Group J, Division 2         | Rule VII, Sec. 701, 2004 Revised IRR                            |
 | Garden masonry wall exemption (≤ 1.20 m)            | Rule III, Sec. 301.3.a.v, 2004 Revised IRR                      |
 | Accessory permit for fences (≤ 1.80 m)              | Rule III, Sec. 301.2.b.ii, 2004 Revised IRR                     |
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

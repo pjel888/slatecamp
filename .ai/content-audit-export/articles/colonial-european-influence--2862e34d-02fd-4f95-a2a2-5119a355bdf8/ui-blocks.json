@@ -4,9 +4,9 @@
   "normalized_created_at": "2026-05-01T13:33:43.339Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:fca7aed0af522cc2fdb0f1d8b823f61e22b230b73d52883bc118031e9d5d4570",
-  "normalized_content_hash": "49eb2bf7c9565666aa76b5665be57128769f17cbc3bb627aca9bbfa41893cecb",
-  "ui_block_count": 4,
-  "total_blocks": 4,
+  "normalized_content_hash": "updated",
+  "ui_block_count": 9,
+  "total_blocks": 9,
   "blocks": [
     {
       "block_id": "ui_0001",
@@ -94,10 +94,124 @@
       "parser_confidence": "high",
       "parse_status": "parsed",
       "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "Callout",
+      "raw": "<Callout>\n\nYou are leading the adaptive reuse of a Spanish colonial-era warehouse in Intramuros, Manila, converting it into a boutique heritage hotel. The client wants to preserve the thick stone walls and internal courtyard, but also integrate climate-responsive features for tropical heat, typhoon rain, and seismic activity. Understanding how European colonists adapted metropolitan styles to local climates across the Americas and Australia gives you a direct design vocabulary for this Philippine project \u2014 and a strong foundation for LEA questions on global colonial architecture.\n\n</Callout>",
+      "raw_hash": "generated",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Callout\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: You are leading the adaptive reuse of a Spanish colonial-era warehouse in Intramuros, Manila, converting it into a boutique heritage hotel. The client wants to preserve the thick stone walls and internal courtyard, but also integrate climate-responsive features for tropical heat, typhoon rain, and seismic activity. Understanding how European colonists adapted metropolitan styles to local climates across the Americas and Australia gives you a direct design vocabulary for this Philippine project \u2014 and a strong foundation for LEA questions on global colonial architecture.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "generated",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\nYou are leading the adaptive reuse of a Spanish colonial-era warehouse in Intramuros, Manila, converting it into a boutique heritage hotel. The client wants to preserve the thick stone walls and internal courtyard, but also integrate climate-responsive features for tropical heat, typhoon rain, and seismic activity. Understanding how European colonists adapted metropolitan styles to local climates across the Americas and Australia gives you a direct design vocabulary for this Philippine project \u2014 and a strong foundation for LEA questions on global colonial architecture.\n\n",
+      "children_text": "You are leading the adaptive reuse of a Spanish colonial-era warehouse in Intramuros, Manila, converting it into a boutique heritage hotel. The client wants to preserve the thick stone walls and internal courtyard, but also integrate climate-responsive features for tropical heat, typhoon rain, and seismic activity. Understanding how European colonists adapted metropolitan styles to local climates across the Americas and Australia gives you a direct design vocabulary for this Philippine project \u2014 and a strong foundation for LEA questions on global colonial architecture.",
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Confusing Spanish Colonial in the Americas with Spanish Colonial in the Philippines\" correction=\"While both derive from Spanish Baroque, the material palette differs significantly. The Americas used adobe and volcanic stone; the Philippines used coral stone (piedra de coral), brick, and hardwood in the bahay na bato. The LEA may present Philippine examples alongside American ones \u2014 know the material distinction.\" context=\"The LEA will present building images from both regions. If a question shows a thick coral-stone wall with a wooden upper story, you are looking at a Philippine bahay na bato, not a Mexican or Peruvian Spanish colonial structure.\"></WikiMistakeCard>",
+      "raw_hash": "generated",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeCard\" status=\"new\"]\nExtracted summary:\n- Props: mistake=\"Confusing Spanish Colonial in the Americas with Spanish Colonial in the Philippines\", correction=\"While both derive from Spanish Baroque, the material palette differs significantly. The Americas used adobe and volcanic stone; the Philippines used coral stone (piedra de coral), brick, and hardwood in the bahay na bato. The LEA may present Philippine examples alongside American ones \u2014 know the material distinction.\", context=\"The LEA will present building images from both regions. If a question shows a thick coral-stone wall with a wooden upper story, you are looking at a Philippine bahay na bato, not a Mexican or Peruvian Spanish colonial structure.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "generated",
+      "props": {
+        "mistake": "Confusing Spanish Colonial in the Americas with Spanish Colonial in the Philippines",
+        "correction": "While both derive from Spanish Baroque, the material palette differs significantly. The Americas used adobe and volcanic stone; the Philippines used coral stone (piedra de coral), brick, and hardwood in the bahay na bato. The LEA may present Philippine examples alongside American ones \u2014 know the material distinction.",
+        "context": "The LEA will present building images from both regions. If a question shows a thick coral-stone wall with a wooden upper story, you are looking at a Philippine bahay na bato, not a Mexican or Peruvian Spanish colonial structure."
+      },
+      "props_json": {
+        "mistake": "Confusing Spanish Colonial in the Americas with Spanish Colonial in the Philippines",
+        "correction": "While both derive from Spanish Baroque, the material palette differs significantly. The Americas used adobe and volcanic stone; the Philippines used coral stone (piedra de coral), brick, and hardwood in the bahay na bato. The LEA may present Philippine examples alongside American ones \u2014 know the material distinction.",
+        "context": "The LEA will present building images from both regions. If a question shows a thick coral-stone wall with a wooden upper story, you are looking at a Philippine bahay na bato, not a Mexican or Peruvian Spanish colonial structure."
+      },
+      "props_text": "mistake=\"Confusing Spanish Colonial in the Americas with Spanish Colonial in the Philippines\", correction=\"While both derive from Spanish Baroque, the material palette differs significantly. The Americas used adobe and volcanic stone; the Philippines used coral stone (piedra de coral), brick, and hardwood in the bahay na bato. The LEA may present Philippine examples alongside American ones \u2014 know the material distinction.\", context=\"The LEA will present building images from both regions. If a question shows a thick coral-stone wall with a wooden upper story, you are looking at a Philippine bahay na bato, not a Mexican or Peruvian Spanish colonial structure.\"",
+      "children_raw": "",
+      "children_text": "",
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0006",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Assuming Federal style predates American independence\" correction=\"The Federal style (also called Adam style in America) is a post-1776 Neoclassical movement. Georgian style is the pre-independence colonial standard. If an LEA question dates a Federal building before 1776, that answer is incorrect.\" context=\"Students must understand that the American Revolution (1775\u20131783) marked a stylistic shift from British Georgian to American Federal Neoclassical. Federal = post-independence. Georgian = colonial period.\"></WikiMistakeCard>",
+      "raw_hash": "generated",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"WikiMistakeCard\" status=\"new\"]\nExtracted summary:\n- Props: mistake=\"Assuming Federal style predates American independence\", correction=\"The Federal style (also called Adam style in America) is a post-1776 Neoclassical movement. Georgian style is the pre-independence colonial standard. If an LEA question dates a Federal building before 1776, that answer is incorrect.\", context=\"Students must understand that the American Revolution (1775\u20131783) marked a stylistic shift from British Georgian to American Federal Neoclassical. Federal = post-independence. Georgian = colonial period.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "generated",
+      "props": {
+        "mistake": "Assuming Federal style predates American independence",
+        "correction": "The Federal style (also called Adam style in America) is a post-1776 Neoclassical movement. Georgian style is the pre-independence colonial standard. If an LEA question dates a Federal building before 1776, that answer is incorrect.",
+        "context": "Students must understand that the American Revolution (1775\u20131783) marked a stylistic shift from British Georgian to American Federal Neoclassical. Federal = post-independence. Georgian = colonial period."
+      },
+      "props_json": {
+        "mistake": "Assuming Federal style predates American independence",
+        "correction": "The Federal style (also called Adam style in America) is a post-1776 Neoclassical movement. Georgian style is the pre-independence colonial standard. If an LEA question dates a Federal building before 1776, that answer is incorrect.",
+        "context": "Students must understand that the American Revolution (1775\u20131783) marked a stylistic shift from British Georgian to American Federal Neoclassical. Federal = post-independence. Georgian = colonial period."
+      },
+      "props_text": "mistake=\"Assuming Federal style predates American independence\", correction=\"The Federal style (also called Adam style in America) is a post-1776 Neoclassical movement. Georgian style is the pre-independence colonial standard. If an LEA question dates a Federal building before 1776, that answer is incorrect.\", context=\"Students must understand that the American Revolution (1775\u20131783) marked a stylistic shift from British Georgian to American Federal Neoclassical. Federal = post-independence. Georgian = colonial period.\"",
+      "children_raw": "",
+      "children_text": "",
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0007",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeCard",
+      "raw": "<WikiMistakeCard mistake=\"Treating Australian Federation as purely Victorian\" correction=\"Federation style (c. 1901\u20131915) is a distinctly Australian hybrid that synthesized Victorian, Arts and Crafts, and Art Nouveau elements with local climate adaptations (bull-nosed verandas, terracotta ornamentation). It emerged after Australian federation in 1901 and should not be conflated with British Victorian architecture, which preceded it.\" context=\"The LEA may compare Australian Federation houses with British Victorian terraces. Federation style's red brick, deep verandas with bull-nosed roofing, and cast-iron lacework are specifically Australian responses to climate \u2014 not mere imports.\"></WikiMistakeCard>",
+      "raw_hash": "generated",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"WikiMistakeCard\" status=\"new\"]\nExtracted summary:\n- Props: mistake=\"Treating Australian Federation as purely Victorian\", correction=\"Federation style (c. 1901\u20131915) is a distinctly Australian hybrid that synthesized Victorian, Arts and Crafts, and Art Nouveau elements with local climate adaptations (bull-nosed verandas, terracotta ornamentation). It emerged after Australian federation in 1901 and should not be conflated with British Victorian architecture, which preceded it.\", context=\"The LEA may compare Australian Federation houses with British Victorian terraces. Federation style's red brick, deep verandas with bull-nosed roofing, and cast-iron lacework are specifically Australian responses to climate \u2014 not mere imports.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "generated",
+      "props": {
+        "mistake": "Treating Australian Federation as purely Victorian",
+        "correction": "Federation style (c. 1901\u20131915) is a distinctly Australian hybrid that synthesized Victorian, Arts and Crafts, and Art Nouveau elements with local climate adaptations (bull-nosed verandas, terracotta ornamentation). It emerged after Australian federation in 1901 and should not be conflated with British Victorian architecture, which preceded it.",
+        "context": "The LEA may compare Australian Federation houses with British Victorian terraces. Federation style's red brick, deep verandas with bull-nosed roofing, and cast-iron lacework are specifically Australian responses to climate \u2014 not mere imports."
+      },
+      "props_json": {
+        "mistake": "Treating Australian Federation as purely Victorian",
+        "correction": "Federation style (c. 1901\u20131915) is a distinctly Australian hybrid that synthesized Victorian, Arts and Crafts, and Art Nouveau elements with local climate adaptations (bull-nosed verandas, terracotta ornamentation). It emerged after Australian federation in 1901 and should not be conflated with British Victorian architecture, which preceded it.",
+        "context": "The LEA may compare Australian Federation houses with British Victorian terraces. Federation style's red brick, deep verandas with bull-nosed roofing, and cast-iron lacework are specifically Australian responses to climate \u2014 not mere imports."
+      },
+      "props_text": "mistake=\"Treating Australian Federation as purely Victorian\", correction=\"Federation style (c. 1901\u20131915) is a distinctly Australian hybrid that synthesized Victorian, Arts and Crafts, and Art Nouveau elements with local climate adaptations (bull-nosed verandas, terracotta ornamentation). It emerged after Australian federation in 1901 and should not be conflated with British Victorian architecture, which preceded it.\", context=\"The LEA may compare Australian Federation houses with British Victorian terraces. Federation style's red brick, deep verandas with bull-nosed roofing, and cast-iron lacework are specifically Australian responses to climate \u2014 not mere imports.\"",
+      "children_raw": "",
+      "children_text": "",
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "new"
+    },
+    {
+      "block_id": "ui_0008",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\n\n**Connecting History to the Exam:** On LEA day, when you see a colonial building question, pause and run C-A-A: Climate, Available Materials, Adapted Forms. That framework turns a memorization problem into a reasoning exercise \u2014 and the exam rewards reasoning every time.\n\n</ExamTip>",
+      "raw_hash": "generated",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0008 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: **Connecting History to the Exam:** On LEA day, when you see a colonial building question, pause and run C-A-A: Climate, Available Materials, Adapted Forms. That framework turns a memorization problem into a reasoning exercise \u2014 and the exam rewards reasoning every time.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "generated",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\n\n**Connecting History to the Exam:** On LEA day, when you see a colonial building question, pause and run C-A-A: Climate, Available Materials, Adapted Forms. That framework turns a memorization problem into a reasoning exercise \u2014 and the exam rewards reasoning every time.\n\n",
+      "children_text": "**Connecting History to the Exam:** On LEA day, when you see a colonial building question, pause and run C-A-A: Climate, Available Materials, Adapted Forms. That framework turns a memorization problem into a reasoning exercise \u2014 and the exam rewards reasoning every time.",
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
       "status": "new"
     }
   ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:230eb89ea817427fcb33fe841d926230bd81c7308cf46dd53ed067b1546b31d1"
+  "ui_blocks_hash": "updated"
 }

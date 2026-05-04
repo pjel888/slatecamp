@@ -1,19 +1,23 @@
 {
-  "attempted_at": "2026-05-03T14:02:02.639Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:29.538Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
   "slug": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:438a67172db7b42a65ee6f264fb2f924cd3907e3624914fbed9fa8ecc5e2fab0",
-  "original_hash": "sha256:46c3d19ce31ffd7936a69b50888134962d0c222424538181cff5f07a1763122e",
-  "candidate_hash": "sha256:438a67172db7b42a65ee6f264fb2f924cd3907e3624914fbed9fa8ecc5e2fab0",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:39ce10777777fdae8ffc6c25afded2d834e71ef500bbd4d243a0ead5758df76e",
+  "original_hash": "sha256:438a67172db7b42a65ee6f264fb2f924cd3907e3624914fbed9fa8ecc5e2fab0",
+  "candidate_hash": "sha256:1fa244c608bd189090b3a285715d00fc96912a3bcacc1042d780feaf2daaf7a2",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:51:17.613235+00:00"
+  "remote_updated_at_before": "2026-05-03T16:06:02.958038+00:00"
 }

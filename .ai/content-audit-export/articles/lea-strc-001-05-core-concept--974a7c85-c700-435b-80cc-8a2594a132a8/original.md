@@ -1,4 +1,12 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Identify the five types of internal forces: tension, compression, shear, bending, and torsion
+- Describe the structural effect of each internal force type
+- Distinguish between axial forces (tension/compression) and moments (bending/torsion)
+- Explain where shear is highest in a simply supported beam
+- Recognize that shear and bending are related but distinct phenomena
 
 This topic covers the five types of internal forces that develop within structural members under loading. The LEA tests whether you can identify, define, and distinguish internal forces conceptually. You will NOT be tested on stress calculations, strain relationships, or material-specific formulas (like the timber shear formula); focus on force type definitions and their structural effects.
 
@@ -58,6 +66,13 @@ In Philippine structural design, engineers identify internal forces through free
 
 **Shear is highest at supports; bending is highest at midspan (for simply supported beams).**</Tip>
 
+
+## Related Articles
+
+See also: **Force Properties** (lea-strc-001-01) for the fundamentals, **Beam Types** (lea-strc-001-04) for where internal forces develop, and **Stress** (lea-strc-003-01) for how internal forces translate to material stress.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Treating bending and shear as the same thing: Shear is a transverse force; bending is a moment. They are related (shear causes bending to vary) but distinct. A beam can have shear with zero moment at one section and moment with zero shear at another.","Confusing torsion with bending: Torsion twists the member about its axis; bending curves it perpendicular to the axis. A twisted beam and a bent beam have opposite failure modes.","Assuming all axial force is tension: Compression is equally important; columns are critical structural elements that must be designed for compressive strength and buckling resistance. Compression is not a weakness; it is a load type.","Forgetting that tension cannot reverse in some materials: Concrete and masonry have low or zero tensile strength. A structural element that experiences tension in concrete design requires reinforcement; plain concrete cannot carry tension alone.","Ignoring shear in design: Shear forces create diagonal cracks in concrete and grain splitting in timber. Shear must be checked; it is not a secondary effect."]} />

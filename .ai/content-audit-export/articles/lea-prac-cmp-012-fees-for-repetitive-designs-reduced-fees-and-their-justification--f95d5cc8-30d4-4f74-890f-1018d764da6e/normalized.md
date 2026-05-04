@@ -1,11 +1,5 @@
 ## Fees for Repetitive Designs — Reduced Fees and Their Justification
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
-Extracted summary:
-- Props: name="ArticleHeader", article="LEA-PRAC-CMP-012"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -14,8 +8,6 @@ After studying this article, you should be able to:
 - Explain the justification for fee reductions on repeat projects.
 - Identify the percentage reduction for subsequent units.
 - Apply reduced fee rules to multi-unit project scenarios.
-
-
 
 ### Definition and Characteristics of Repetitive Designs
 
@@ -29,26 +21,11 @@ For repetitive design fee reduction to apply, the architect must first complete 
 
 The initial design establishes the building prototype, develops construction details, refines specifications, establishes building systems performance, and works through construction coordination issues. The architect's full design effort is expended during the initial design; this work is not reduced in fee.
 
-
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→ — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=irr, section=Architect's Guidelines / SPP 202, title=Fee Computation — Regulatory Basis
-- Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction C...
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}]
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ### Scope and Fee Reduction for Repetitive Units
 
@@ -57,10 +34,6 @@ After the initial design is complete, the architect undertakes reduced scope for
 The architect does not repeat fundamental design decisions (building form, structural system, mechanical and electrical strategy, material selections) that were established in the initial design. Instead, the architect adapts the proven prototype to new conditions. SPP 202 Group 6 establishes reduced fee percentages for repetitive designs: 50% for 2nd instance, 40% for 3rd instance, 30% for 4th and succeeding instances of the initial prototype design fee. These percentages apply to the full Recommended Professional Fee (RPF) of the initial design, regardless of variations from the prototype.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Key Formula"
-- Text: Key Formula — Repetitive Design Fee = Initial RPF × Reduction % per SPP 202 Group 6. 2nd instance: 50% of initial RPF. 3rd instance: 40%. 4th+: 30%. The reduction applies to the base RPF percentage, not the absolute fee amount.
-[/SLATECAMP_UI_BLOCK]
 
 ### Calculating Repetitive Design Fees
 
@@ -93,10 +66,6 @@ For projects where the same design is applied across multiple separate client pr
 When proposing reduced fees for repetitive designs, the architect should clearly explain: (1) which design is the initial prototype receiving full fees, (2) which designs are repetitions receiving reduced fees, (3) the reduction percentage and justification (extent of variation from the prototype), and (4) how site-specific adaptations are reflected in the fee structure. Clients appreciate cost-effective design fees for repetitive work; clear documentation prevents disputes about what constitutes a "repetition" and what additional design work is required beyond the reduced scope.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Board Exam Note: The LEA may ask you to calculate total fees for a repetitive design scenario. Memorize the Group 6 percentages: 50% / 40% / 30%. Be ready to explain why reduced fees are justified — the key reason is that design effort is concentrated in the initial prototype.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -112,3 +81,5 @@ Extracted summary:
 - [Reimbursable Expenses](lea-prac-cmp-011)
 - [SPP Doc 202 Phase Framework](lea-prac-svc-004)
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

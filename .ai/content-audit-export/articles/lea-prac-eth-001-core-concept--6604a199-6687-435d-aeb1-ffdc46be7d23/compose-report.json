@@ -1,18 +1,30 @@
 {
   "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
   "slug": "lea-prac-eth-001-core-concept",
-  "generated_at": "2026-05-03T13:44:11.712Z",
-  "original_hash": "sha256:aeb94ff0b4b1a946dbbc08b104b6bfb93e6325bc0a4b6c50bd30dfa526962aa0",
-  "normalized_hash": "sha256:3e72b8c911aa60b55ceb2c909911ee099a77ee78108578868ef97c3c435398fc",
-  "candidate_hash": "sha256:7c780be2a35a95103036b80388e82d65d2ea849386d0d9a1d75ae41272c39088",
+  "generated_at": "2026-05-04T00:05:39.110Z",
+  "original_hash": "sha256:7c780be2a35a95103036b80388e82d65d2ea849386d0d9a1d75ae41272c39088",
+  "normalized_hash": "sha256:2e73e9001a8a011f17bbd0535189995165b8e943b0fdd8ad09bc660b2cabbc81",
+  "candidate_hash": "sha256:2e73e9001a8a011f17bbd0535189995165b8e943b0fdd8ad09bc660b2cabbc81",
   "ui_blocks_count": 5,
-  "placeholders_found": 5,
-  "placeholders_resolved": 5,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 5,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition."
+  ]
 }

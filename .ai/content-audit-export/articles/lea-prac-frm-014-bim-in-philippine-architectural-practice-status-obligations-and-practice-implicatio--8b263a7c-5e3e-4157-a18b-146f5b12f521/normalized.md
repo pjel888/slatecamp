@@ -28,19 +28,16 @@ The contract should clarify who owns the model, who has usage rights, and what h
 Extracted summary:
 - Props: (none)
 - Text: **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract s...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ **Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequentia... — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: code=ra9266, section=Regulatory Framework, title=Applicable Regulations
 - Text: Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD ...
-[/SLATECAMP_UI_BLOCK]
 When a client specifies BIM, the architect assumes an affirmative obligation to deliver a coordinated, clash-free model suitable for construction. This is more demanding than 2D coordination. The architect must: (1) establish naming conventions and file structure before design begins; (2) coordinate continuously with structural, MEP, and landscape consultants to identify and resolve conflicts early; (3) conduct regular clash detection and issue clash reports to consultants; (4) maintain model discipline and accuracy throughout design phases; and (5) deliver a fully coordinated model at construction documents phase.
 
 Failure to deliver a properly coordinated BIM constitutes professional negligence. If the contractor encounters clashes not detected in the model, the architect may be liable for the cost of resolution—potentially significant for large projects. This liability risk is higher than in 2D coordination, where 2D plan conflicts are discovered during construction without the same legal expectation of advance resolution.
@@ -71,6 +68,9 @@ BIM training covers not just software but also modeling standards, clash detecti
 
 ---
 
+
+
+<ArticleMedia type="image" caption="BIM Implementation in Philippine Architecture — Practice Workflow" description="Diagram showing BIM adoption levels in Philippine practice: Level 0 (2D CAD only), Level 1 (3D visualization, 2D documentation), Level 2 (collaborative BIM with federated models). Process flow showing BIM-enabled design workflow: Model development → Clash detection → Quantity takeoffs → Construction coordination. Status bars showing current adoption rates and regulatory obligations." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)
@@ -84,7 +84,7 @@ BIM training covers not just software but also modeling standards, clash detecti
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
 
-Extracted summary:
-- Props: code=ra9266, section=Section 3 - Scope of Practice
-- Text: null
+<Note>
+null
 [/SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
+</Note>

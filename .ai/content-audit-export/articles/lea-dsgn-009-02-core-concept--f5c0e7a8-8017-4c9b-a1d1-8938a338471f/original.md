@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply daylighting strategies beyond NBC 1:10 minimum window-to-floor ratio, calculate daylight penetration depth (typically 2.5× window head height), specify glare control devices, and integrate daylight with artificial lighting controls.
+
 Natural lighting design extends beyond the National Building Code's minimum window-to-floor ratio. The LEA tests whether candidates can optimize daylighting depth, glare control, and visual comfort while maintaining or exceeding code minimums. The NBC standard (**1:10 for light**, **1:20 for ventilation**) is a legal _baseline_, not a design target.
+
 
 ## Core Concept
 
@@ -58,6 +62,13 @@ The exam asks for the minimum window area for a 100 m² room.
 
 - **Answer:** 10 m² (1:10).
 - **Warning:** If you select 20 m² (1:5), you are applying a common misconception not supported by the NBCP.
+
+
+**Exam Tip:** NBC minimum = 1:10 window-to-floor ratio for light, 1:20 for ventilation. Daylight penetration depth ≈ 2.5× window head height. A 2m high window provides useful daylight ~5m into the room.
+
+## Cross-References
+
+See **LEA-DSGN-009-01** (Passive Design) for solar control strategies, **LEA-DSGN-009-04** (Green Building) for daylight credit requirements, and **LEA-DSGN-011-02** (Elevations and Sections) for fenestration documentation.
 
 ## Common Mistakes
 

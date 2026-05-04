@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:17:33.517Z",
+  "attempted_at": "2026-05-04T00:06:17.118Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
   "slug": "building-permit-process",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:35ea2ad1edb8eb55c36de906f11e29eb75299bbe28d8a5801da982d6c8053df2",
-  "original_hash": "sha256:35ea2ad1edb8eb55c36de906f11e29eb75299bbe28d8a5801da982d6c8053df2",
-  "candidate_hash": "sha256:b8ab1a61c73bff25f62f8332b3fdadb8de9cc3b7b34704b6b4d541e0eeb7b4fe",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:b566176123ddae6abb80be8c775086a37053e8529576b86c0a5a3a2e1be43348",
+  "original_hash": "sha256:b566176123ddae6abb80be8c775086a37053e8529576b86c0a5a3a2e1be43348",
+  "candidate_hash": "sha256:db1e92a98e93e4b21c0d659aa53042a514b772ccd3a058ca7ca03c4b32326554",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T16:38:16.72353+00:00"
 }

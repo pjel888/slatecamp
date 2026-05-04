@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:58.405Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:07:11.383Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "91294dec-6b87-4601-b9c1-a5b303447da4",
   "slug": "mastery-building-materials",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:da5303b18e59d31f7cb6363365cfa0319f396916c3b448019183c70aee6b7128",
-  "original_hash": "sha256:c16514146f9a3ae43cbd380e4cbd27f476ffcc4213f44543afc66d7f35b66f50",
-  "candidate_hash": "sha256:da5303b18e59d31f7cb6363365cfa0319f396916c3b448019183c70aee6b7128",
-  "stale_check_passed": false,
+  "original_hash": "sha256:da5303b18e59d31f7cb6363365cfa0319f396916c3b448019183c70aee6b7128",
+  "candidate_hash": "sha256:35520689dab364c2efbeda5127d2bd88eff107cc7044098b9cc775b98d459166",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:52:38.199474+00:00"
 }

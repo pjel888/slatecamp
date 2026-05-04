@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Thermal and acoustic insulation are independent properties: R-value (thermal resistance) measures heat flow blocking, while Sound Transmission Class (STC) and Noise Reduction Coefficient (NRC) measure sound absorption. The LEA tests conversion between k-value (thermal conductivity) and R-value, understanding acoustic mass law, and recognizing that Philippine tropical insulation prioritizes heat _reduction_ (cooling), not retention (heating).
-
+Identify thermal insulation materials (fiberglass, mineral wool, EPS, XPS, polyurethane foam, reflective foil) by R-value, application method, fire rating, and moisture resistance, and calculate minimum R-values per NBCP energy code requirements.
 ## Core Concept
 
 _Thermal Insulation_ reduces heat transmission through building envelopes by trapping still air in low-density materials. Thermal performance is quantified by k-value (thermal conductivity in W/(m·K) per ASTM C518/C177), which is material-independent of thickness. R-value (thermal resistance) is calculated as R = thickness (m) / k-value; thus R-value _increases_ with thickness and _decreases_ with conductivity. Common insulation materials: (1) Fiberglass batts (k ≈ 0.040 W/(m·K), R ≈ 3.5 per inch) are cost-effective and flame-resistant. (2) Rigid foam (EPS k ≈ 0.038, XPS k ≈ 0.025, polyiso k ≈ 0.020 W/(m·K)) provides higher R-value per thickness and moisture resistance. (3) Spray polyurethane foam (SPF, k ≈ 0.025 W/(m·K)) achieves seamless air sealing and rapid installation. (4) Mineral wool (k ≈ 0.045 W/(m·K)) offers superior fire resistance and acoustic absorption. Radiant barriers have LOW emittance (≤0.1) and HIGH reflectance (≥0.9) and are used to reduce radiant heat gain separately from bulk insulation.
@@ -51,3 +51,10 @@ Philippine residential and commercial construction prioritizes heat reduction th
 <WikiMistakeCard mistake="Specifying bulk fiberglass insulation for tropical residential cooling without reflective barrier, resulting in heat entrapment and increased air conditioning load." correction="Tropical heat reduction requires reflective surfaces (aluminum foil, white coating) to minimize radiant gain. Bulk insulation increases cost without proportional cooling benefit." />
 
 <WikiMistakeList mistakes={["Confusing STC (isolation) with NRC (absorption); STC rates walls, NRC rates interior finishes", "Installing fiberglass batts in coastal salt-spray zones without vapor barrier; moisture absorption degrades R-value by 20-40%", "Calculating assembly U-value without including air films (interior 0.12, exterior 0.03 m²·K/W); omission understates thermal performance", "Using NRC material (suspension ceiling) without adequate STC walls; noise isolation is wall-dependent, not ceiling-dependent"]} />
+
+## Related Articles
+
+See also within Roofing, Waterproofing, and Insulation: **lea-matl-006-01-core-concept**, **lea-matl-006-02-core-concept**, **lea-matl-006-03-core-concept**, **lea-matl-006-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The Bauhaus is a foundational institution in modernist design education and philosophy. The board exam tests comprehensive knowledge: founding date and location, the three directors and their distinct contributions, the school's relocation, the Nazi closure, and the philosophy of integrating art, craft, and industry. You must understand both the historical narrative and the pedagogical innovations.</Callout>
+## Learning Goal
 
+Trace the Bauhaus's three-director evolution (Gropius 1919–1928, Meyer 1928–1930, Mies 1930–1933), identify the curriculum structure (Vorkurs preliminary course, workshop system), and explain its influence on modern design education worldwide.
 ## Core Concept
 The **Bauhaus** (1919–1933) was the most influential design school of the 20th century. Located in Germany, it unified art, craft, and industrial technology through radical pedagogy, attracting the era's greatest modernist thinkers and artists. Though it lasted only 14 years, it transformed design education globally and established principles that guide design thinking today.
 
@@ -67,6 +68,8 @@ These principles shaped post-war design globally. The International Style in arc
 
 <ExamTip>**Pattern 5: Historical Impact.** You may see: "The Bauhaus's closure in 1933 resulted in [A] the end of modernist design globally [B] the emigration of faculty and spread of Bauhaus principles worldwide [C] the triumph of Nazi aesthetics [D] the return to historical design." Answer: B. Understanding the dispersal is crucial.</ExamTip>
 
+<Callout>The Bauhaus is a foundational institution in modernist design education and philosophy. The board exam tests comprehensive knowledge: founding date and location, the three directors and their distinct contributions, the school's relocation, the Nazi closure, and the philosophy of integrating art, craft, and industry. You must understand both the historical narrative and the pedagogical innovations.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Conflating the three directors into one Bauhaus identity" correction="Each director brought distinct philosophy: Gropius was artistic and idealistic, Meyer was functionalist and radical, Mies was austere and geometric. The Bauhaus evolved through its directorate; there is no single Bauhaus aesthetic." context="Test questions explicitly distinguish between the three periods. Knowing the directorship and character of each period is essential for answering questions about Bauhaus evolution and philosophy." />
@@ -93,6 +96,13 @@ These principles shaped post-war design globally. The International Style in arc
 
 **Modernist Pedagogy**: Teaching method emphasizing principles, thinking, and experimentation over style copying; students learn how to design, not what to design.
 
-**Design Principles**: Foundational concepts (form, color, material, proportion, sclea, balance) taught at Bauhaus; applicable to any design problem across all disciplines.
+**Design Principles**: Foundational concepts (form, color, material, proportion, scale, balance) taught at Bauhaus; applicable to any design problem across all disciplines.
 
 **International Style**: Modernist architectural movement influenced by Bauhaus; characterized by geometric forms, open plans, honest structure, and universal applicability across climates and cultures.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

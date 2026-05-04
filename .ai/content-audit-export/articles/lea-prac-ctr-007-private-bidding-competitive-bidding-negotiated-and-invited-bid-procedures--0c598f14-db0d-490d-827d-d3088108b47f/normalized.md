@@ -9,17 +9,11 @@ After studying this article, you should be able to:
 - Describe the architect's role in the bidding process.
 - Apply procurement method rules to exam scenarios.
 
-
-
 ### Competitive Bidding Process
 
 In a competitive bidding process, the Owner publicly announces the project through advertisements or invitations and invites multiple contractors to submit sealed bids. The Architect prepares the bid documents and distributes them to prospective bidders. Bids are typically opened at a public meeting where the Owner reads each bid amount aloud.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=ra9266, section=UAP Doc 301, RA 9184, title=Bidding Procedures Overview
-- Text: Three bidding methods: (1) Competitive Bidding — open to all qualified bidders; (2) Negotiated Contract — Owner selects contractor without competitive bidding (for specialized work, time constraints, ...
-[/SLATECAMP_UI_BLOCK]
 
 ### Competitive vs. Negotiated vs. Invited
 
@@ -32,21 +26,8 @@ Extracted summary:
 | Best for | Standard projects | Specialized/complex projects | Quality-focused projects |
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Competitive Bidding Process:**
-  Step 1: Architect prepares bid documents (drawings, specs, instructions to bidders)
-  Step 2: Owner advertises project (newspapers, journals, websites)
-  Step 3: Pre...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Know the Differences:**
-  - **Competitive** = public announcement, multiple bidders, sealed bids, public opening
-  - **Negotiated** = single contractor, direct negotiation, no bid bon — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
@@ -62,6 +43,9 @@ Extracted summary:
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Procurement Methods Comparison — Public vs. Private Sector Flowchart" description="Two-track comparison flowchart: Public sector (left, RA 9184) vs Private sector (right). Shows procurement methods: Competitive Bidding (Public Bidding for government, Negotiated/Invited Bid for private). Decision criteria for method selection: project value, urgency, and regulatory requirements. Key differences highlighted for each track." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

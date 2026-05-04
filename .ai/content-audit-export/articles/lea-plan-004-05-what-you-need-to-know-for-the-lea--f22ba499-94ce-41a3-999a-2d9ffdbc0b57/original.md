@@ -1,5 +1,8 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply lifecycle cost analysis to site elements, specify durable materials and maintainable systems, develop maintenance schedules for landscapes and infrastructure, and evaluate the long-term cost implications of design decisions.
+
 Maintenance considerations address how a site's physical elements—landscapes, utilities, buildings, and public spaces—are kept functional and safe over time. This is a distinct topic from ecological management (004-04) and focuses on the lifecycle and durability of constructed elements. Maintenance is the lowest-frequency tested topic in the site planning curriculum, but it is still part of the LEA.
 
 ### Lifecycle Cost Analysis

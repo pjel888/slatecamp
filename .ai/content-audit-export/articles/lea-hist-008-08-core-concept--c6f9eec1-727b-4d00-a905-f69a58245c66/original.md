@@ -1,11 +1,12 @@
 ## What You Need to Know for the LEA
 
-<Callout>**Critical Regionalism** and sustainable architecture represent the LEA's engagement with local identity, environmental responsibility, and resistance to global modernist homogenization. The exam tests whether you recognize **Kenneth Frampton's** theoretical formulation, can identify **Tadao Ando** and **Glenn Murcutt** as regional practitioners, and understand how climate, materials, and cultural specificity drive design.</Callout>
+## Learning Goal
 
+Identify Critical Regionalism (Frampton, 1983) as the position that modernist rigor must be inflected by local culture, climate, and materials — rejecting both universal modernism and nostalgic vernacular — and recognize architects (Kahn, Barragán, Utzon) who exemplify this approach.
 ## Core Concept
 **Critical Regionalism**, articulated by theorist **Kenneth Frampton** in his seminal 1983 essay, emerged as a counterpoint to the International Style's claim to universal principles. Frampton argued that uncritical adoption of global modernism—glass boxes and steel frames everywhere—erased local identity, ignored climate specificity, and created placeless, environmentally wasteful buildings.
 
-Critical Regionalism does not reject modernism outright. Rather, it pursues a "critical" engagement with modernist principles while grounding them in local geography, climate, materials, and cultural memory. Regional architects respond to sun angle, rainfall patterns, prevleant winds, and local building traditions. They use indigenous materials—timber, stone, earth—whose sourcing and embodied energy respect the place. They engage with vernacular architecture not through pastiche (Postmodernism) but through understanding deep principles of regional adaptation.
+Critical Regionalism does not reject modernism outright. Rather, it pursues a "critical" engagement with modernist principles while grounding them in local geography, climate, materials, and cultural memory. Regional architects respond to sun angle, rainfall patterns, prevalent winds, and local building traditions. They use indigenous materials—timber, stone, earth—whose sourcing and embodied energy respect the place. They engage with vernacular architecture not through pastiche (Postmodernism) but through understanding deep principles of regional adaptation.
 
 <Tip>
 **Critical Regionalism 1983 (Frampton) = modernist rigor + local specificity.** Not nostalgia, not pastiche, not copying tradition. Extract principles from vernacular and apply them through modernist abstraction. This is the distinction that matters most for understanding the movement.
@@ -34,18 +35,15 @@ Critical Regionalism and sustainability respond to real consequences of uncritic
 <WikiExamTable headers={["Architect", "Building", "Year", "Location", "Critical Regional Features"]} rows={[['["**Tadao Ando**", "**Church of the Light**", "1989", "Ibaraki, Japan", "Raw concrete; single light slot; zen spatial principles; landscape framing"]', '["**Tadao Ando**", "**Water Temple**", "1991", "Shiga, Japan", "Sunken levels; waterscape integration; light modulation; local material pleatte"]', '["**Glenn Murcutt**", "**Magney House**", "1984", "New South Wleas, Australia", "Barrel vault; corrugated metal; natural ventilation; sun and wind response"]', '["**Glenn Murcutt**", "**Simpson-Lee House**", "1994", "New South Wleas, Australia", "Timber pavilion; passive climate control; landscape integration; regional vernacular"]', '["**Alberto Campo Baeza**", "**Gaspar House**", "1992", "Vejer de la Frontera, Cadiz, Spain", "White concrete; sun-responsive form; Mediterranean climate adaptation"]', '["**Diébédo Francis Kéré**", "**Primary School**", "2001", "Gando, Burkina Faso", "Rammed earth; timber; natural ventilation; local craft and material tradition"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Theoretical foundation.** "What is **Critical Regionalism** and which theorist formulated the concept?" Students identify **Kenneth Frampton's** 1983 essay and the movement's challenge to International Style universalism.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Architect-project correspondence.** "Which architect is known for designing regionally responsive buildings in Japan that combine modernist abstraction with zen spatial principles?" Students recognize **Tadao Ando** and his work's deep engagement with cultural and environmental place.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Regional adaptation strategy.** "How does **Glenn Murcutt's** work demonstrate climate-responsive design grounded in regional vernacular?" Students articulate the integration of natural ventilation, solar orientation, and local materials as expressions of place-specific modernism.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Sustainable vs. cosmetic design.** "How does sustainability integrated into design intent differ from applying green technologies superficially?" Students distinguish between genuine environmental engagement and marketing-driven sustainability.</ExamTip>
 
+<Callout>**Critical Regionalism** and sustainable architecture represent the LEA's engagement with local identity, environmental responsibility, and resistance to global modernist homogenization. The exam tests whether you recognize **Kenneth Frampton's** theoretical formulation, can identify **Tadao Ando** and **Glenn Murcutt** as regional practitioners, and understand how climate, materials, and cultural specificity drive design.</Callout>
 
 ## Common Mistakes
 <WikiMistakeCard mistake="Confusing Critical Regionalism with regionalism or vernacular revival" correction="Students sometimes treat it as historicism or romantic localism." context="Critical Regionalism is modernist, abstract, and rigorous; it engages regional specificity through systematic design methodology, not through nostalgic reference to tradition." />
@@ -53,7 +51,6 @@ Critical Regionalism and sustainability respond to real consequences of uncritic
 <WikiMistakeCard mistake="Treating Critical Regionalism and Postmodernism as equivleant" correction="Both respond to International Style's universalism, but through opposite means. Postmodernism quotes historical precedent ironically; Critical Regionalism pursues modernist principles rigorously while grounding them in place." context="**Tadao Ando's** work is nothing like Postmodern historicism." />
 
 <WikiMistakeList mistakes={["Overlooking the centrality of. Kenneth Frampton's** theoretical work.** Students know individual architects (Ando, Murcutt) but forget that Frampton's 1983 essay crystallized the critical framework. Frampton's theory is as important as the buildings it describes.", "Treating sustainability as purely environmental rather than cultural and material. Students sometimes separate \"sustainable design\" from \"critical regionalism.\" In reality, Critical Regionalism is inseparable from sustainability through its emphasis on local materials, climate responsiveness, and cultural specificity.", "Assuming all regionally responsive architecture is Critical Regionalism. Contemporary vernacular revival, biological regionalism, or place-based design can be sincere without being critically rigorous. Critical Regionalism combines modernist rigor with regional specificity; not all regional architecture achieves this synthesis."]} />
-
 
 ## Key Terms
 - **Critical Regionalism**: Architectural approach (articulated by **Kenneth Frampton**, 1983) combining modernist principles with deep engagement to local geography, climate, materials, and cultural memory.
@@ -66,3 +63,10 @@ Critical Regionalism and sustainability respond to real consequences of uncritic
 - **Sustainable architecture**: Design minimizing environmental impact through energy efficiency, material responsibility, water management, and long-term durability.
 - **Deep engagement with place**: The rigorous understanding of a site's geography, climate, history, culture, and local knowledge as a basis for design.
 - **Phenomenology**: Philosophical focus on direct sensory experience and perception; influences regionalist design's emphasis on material presence and tactile qualities.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

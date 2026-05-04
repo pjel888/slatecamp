@@ -17,6 +17,13 @@ Most projects require two coats (primer + finish), which doubles the paint volum
 
 In the Philippines, standard paint cans are 1 liter, 4 liters (1 gallon), and 20 liters (5 gallons). For large projects, contractors often purchase paint by the liter or in bulk containers for cost efficiency.
 
+
+<ArticleMedia id="media-paint-coverage-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing paint coverage calculation: surface area measurement, number of coats, and coverage rate per liter with waste factor"
+  caption="Future diagram: paint coverage calculation — surface area, coats, and coverage rate"
+  suggestedAsset="Wall elevation with area measurement callouts and calculation"
+  placementIntent="Visualizes paint estimation methodology" />
+
 ## Key Provisions
 
 | Parameter | Value | LEA Relevance |
@@ -35,17 +42,15 @@ In the Philippines, standard paint cans are 1 liter, 4 liters (1 gallon), and 20
 ## Worked Examples
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Scenario 1: Interior wall painting, 150 m² total area, 2 coats (primer + finish), coverage 10 m²/L per coat** **Step 1: Calculate paint needed for one coat** Paint per coat = Total area ÷ Coverage rate = 150 m² ÷ 25 m²/L = 6 liters (using standard interior latex coverage) **Step 2: Calculate for two coats** Total paint = 15 L × 2 coats = 30 liters **Step 3: Add 5% waste allowance** Total with waste = 30 L × 1.05 = 31.5 liters ≈ 32 liters **Step 4: Determine can quantities** Using 4-liter (1 ga
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Scenario 2: Exterior wall painting, 300 m² surface area, rough concrete texture, single topcoat after primer, coverage: primer 11 m²/L, topcoat 10 m²/L (reduced due to texture), 10% waste factor** **Step 1: Account for rough surface (reduce coverage by 15%)Adjusted primer coverage: 25 m²/L × 0.85 = 21.25 m²/L Adjusted topcoat coverage: 25 m²/L × 0.85 = 21.25 m²/L **Step 2: Calculate primer needed** Primer = 300 m² ÷ 9.35 m²/L = 32.1 liters **Step 3: Calculate topcoat needed** Topcoat = 300 m² 
-[/SLATECAMP_UI_BLOCK]
 
+
+<ArticleMedia id="media-paint-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step paint estimation example showing surface area calculation, number of coats, coverage rate, and total liters needed for a room"
+  caption="Future diagram: paint estimation worked example — surface area, coats, and coverage calculation"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of paint quantity estimation" />
 ## Quick Reference: Paint Coverage Estimation Table
 
 | Paint Type | Coverage Rate (m²/L) | Typical Use | Cost/Liter (PH) |
@@ -83,42 +88,18 @@ On the LEA, paint estimation questions focus on:
 7. **Mixed areas**: Different surfaces (interior/exterior, smooth/rough) calculated separately, then summed.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid**: Standard coverage is ~10 m²/L per coat. Two coats = ÷ 5 (m²/L per full system). For rough surfaces, reduce coverage by 15–20%. Always round UP the final liter count and can quantity for ordering safety stock.
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Using coverage rate (m²/L) as if it were a divisor when it should be", correction="Paint needed = Area ÷ Coverage rate. If coverage is 10 m²/L and area is 100 m², then paint = 100 ÷ 10 = 10 liters (not 100 × 10)."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Forgetting to account for two coats (primer and finish)", correction="Most projects require primer (prep coat) and finish coat. Calculate paint for EACH coat separately, then sum. Or multiply single-coat amount by 2."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Not adjusting coverage for surface roughness or condition", correction="Rough, porous, or previously painted surfaces reduce coverage by 15–20%. Adjust the coverage rate downward before calculating."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Rounding DOWN the final paint quantity", correction="Always round UP when ordering paint. Shortages mid-project are costly; excess paint can be stored or used for touch-ups."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing m²/L (coverage rate) with L/m² (inverse)\", \"Forgetting that one coat may not be enough for color change or problem surfaces\", \"Using the printed coverage rate without accounting for application method (brush vs. spray reduces coverage)\", \"Mixing units: area in feet and coverage in metric, or vice versa\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

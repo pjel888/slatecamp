@@ -1,38 +1,47 @@
 {
   "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
   "slug": "chimneys-and-fireplaces",
-  "generated_at": "2026-05-03T13:44:20.113Z",
-  "old_hash": "sha256:4134b92eb70d3f18b0df1be62aa7d6534881563f55c0eca57901455bb092f026",
-  "new_hash": "sha256:a8403f60ed05f13146537c5a61618492eedb21551fcabe3b96d2e9b29fe595e1",
-  "original_hash": "sha256:4134b92eb70d3f18b0df1be62aa7d6534881563f55c0eca57901455bb092f026",
-  "normalized_hash": "sha256:eabd985c33c5646679af2bc0f607c0b2be36c9d17bd087fc9646a8159d4f5b4b",
-  "candidate_hash": "sha256:a8403f60ed05f13146537c5a61618492eedb21551fcabe3b96d2e9b29fe595e1",
+  "generated_at": "2026-05-04T00:05:53.001Z",
+  "old_hash": "sha256:176eb4457cb09af8bbdd05400c55724552c2bc4b215832882634c626c4c4f3cd",
+  "new_hash": "sha256:113ddd08a0678903b743732f775ae0ef3bf8ab85c6ef31ee7e35bc5ec2e3c6e5",
+  "original_hash": "sha256:176eb4457cb09af8bbdd05400c55724552c2bc4b215832882634c626c4c4f3cd",
+  "normalized_hash": "sha256:113ddd08a0678903b743732f775ae0ef3bf8ab85c6ef31ee7e35bc5ec2e3c6e5",
+  "candidate_hash": "sha256:113ddd08a0678903b743732f775ae0ef3bf8ab85c6ef31ee7e35bc5ec2e3c6e5",
   "changed": true,
-  "changed_line_count": 433,
-  "inserted_line_count": 46,
+  "changed_line_count": 382,
+  "inserted_line_count": 38,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 433,
-    "inserted": 46,
+    "changed": 382,
+    "inserted": 38,
     "deleted": 0,
     "original_line_count": 390,
-    "candidate_line_count": 436
+    "candidate_line_count": 428
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

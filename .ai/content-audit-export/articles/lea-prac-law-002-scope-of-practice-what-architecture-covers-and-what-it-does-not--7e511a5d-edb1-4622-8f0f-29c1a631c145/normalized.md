@@ -101,31 +101,12 @@ The PRBoA's power under Section 7(f) to "monitor the conditions affecting the pr
 Thus, new service categories—sustainable design certification, resilience planning, heritage documentation, digital fabrication coordination—can be recognized as falling within architectural scope without statutory amendment, provided the PRBoA determines they require architectural competence and warrant professional accountability.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266" title="RA 9266 Section 3 — Ten Categories of Architectural Scope"
-- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 3, which enumerates ten (10) categories of architectural service from planning and design through emerging practices and specialized services.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The IRR enumeration identifies 9 primary service categories (a through i), with a tenth catch-all provision (j). Memorize the sequence: Planning & Design, Consultation, Schematic through CA, Feasibility Studies, Documents/Estimates, Construction Management, Interior/Systems, Programming/Conservation, Coordinating Works, and Emerging Practices.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ Common exam trap: confusing 'structural conceptualization' (architect scope — conceiving structural elements and their arrangement) with 'structural design documents' (engineer scope — calculations and signed/sealed structural plans). Architects lead structural thinking; engineers own structural accountability. — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Section 3 of RA 9266 defines what architects MAY do broadly. But each engagement requires a written service agreement specifically defining what the architect WILL do for that client. Broad statutory scope + specific contractual scope = the two-tier boundary system tested on the LEA.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -139,3 +120,5 @@ Extracted summary:
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

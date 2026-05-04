@@ -1,32 +1,33 @@
 # Content Diff Report: lea-matl-009-03-core-concept
 
-Generated: 2026-05-03T13:44:58.278Z
+Generated: 2026-05-04T00:06:35.693Z
 Article ID: b835f8bb-bb09-44fa-855a-37128197c63b
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:da6f029367a9cbd7ff9b2522ed061e34f45a1b6764d39d11b188b0bc7ae2b72f`
-- Normalized: `sha256:9730c68336f5cea3e3ef0bb6002a699801573a1599f6da174747ffd8168527d5`
-- Candidate: `sha256:ca75e8eba92f0bcb8708c6c1c0e17a8a3b7741b037fc586a49039441b3938069`
+- Original: `sha256:ca75e8eba92f0bcb8708c6c1c0e17a8a3b7741b037fc586a49039441b3938069`
+- Normalized: `sha256:c9a0b8e437dde8cad2a69752de428cb00906b6513f10f82814def2188b06391e`
+- Candidate: `sha256:c9a0b8e437dde8cad2a69752de428cb00906b6513f10f82814def2188b06391e`
 
 ## Line summary
 
-- Changed lines: 12
-- Inserted lines: 8
+- Changed lines: 58
+- Inserted lines: 11
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 4
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 4
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 4 preserved UI block(s).
 
 ## Warnings
 

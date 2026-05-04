@@ -4,6 +4,11 @@
 Every architectural element exists because it serves a specific human need: walls and roofs provide **shelter**; stairs, ramps, and corridors enable **circulation**; windows, louvers, and vents manage **environmental control**; columns, beams, and foundations provide **structure**. The LEA tests your knowledge of architectural vocabulary extensively—balustrade, vestibule, cortile, fenestration, mansard, dome, piazza, rococo, palazzo, colossal order, pulpit, and shell are among the terms you must recognize in context and apply to specific functional needs.
 </Callout>
 
+
+## Learning Goal
+
+Classify architectural elements by the four primary human needs they serve (Shelter, Enclosure, Circulation, Structure) and recognize key terminology including fenestration, cortile, colossal order, and mansard roof.
+
 ## Core Concept
 
 ### Classification by Human Need
@@ -80,7 +85,7 @@ Some architectural elements combine multiple functions and deserve specific term
 
 **Cortile** is an internal courtyard surrounded by arcades, characteristic of Italian Renaissance palaces. The Palazzo Medici-Riccardi and Palazzo Strozzi in Florence (both 15th-century) exemplify the cortile: a central open court surrounded by covered walkways on all sides, providing light, air, and semi-private circulation for residents. The cortile serves simultaneously as shelter (covered walks), circulation (protected movement around the courtyard), environmental control (passive ventilation and light), and social space (gathering place).
 
-**Palazzo** is an Italian palace or substantial mansion, typically built in ashlar (squared stone) with symmetrical facades and monumental sclea. Examples include the Palazzo Farnese and Palazzo Strozzi. A palazzo demonstrates wealth and power through material durability (stone), precise proportions, and abundant fenestration (glass was expensive, signaling affluence).
+**Palazzo** is an Italian palace or substantial mansion, typically built in ashlar (squared stone) with symmetrical facades and monumental scale. Examples include the Palazzo Farnese and Palazzo Strozzi. A palazzo demonstrates wealth and power through material durability (stone), precise proportions, and abundant fenestration (glass was expensive, signaling affluence).
 
 **Piazza** is a public square, typically surrounded by important buildings and serving as civic gathering space. The Piazza San Marco in Venice and Piazza Navona in Rome are world-famous examples. Piazzas serve the entire city—not shelter or individual circulation, but social, ceremonial, and commercial gathering.
 
@@ -190,3 +195,12 @@ Architectural terminology also encompasses stylistic periods and ornamental voca
 **Shell Structure** — A thin curved structural surface that gains strength through curvature rather than thickness, allowing efficient spanning of large distances with minimal material; used for domes and vaults.
 
 **Vestibule** — A transitional entrance space buffering the exterior and interior environments, controlling temperature, protecting from weather, and marking the threshold of arrival into the building.
+
+<Tip>**SECS Mnemonic:** Every building element serves at least one of these four needs: **S**helter (protection), **E**nclosure (boundaries), **C**irculation (movement), **S**tructure (support). Test yourself by categorizing random elements during study sessions.</Tip>
+
+## Related Articles
+
+See also within Elements & Principles of Design: **lea-theo-002-02-core-concept**, **lea-theo-002-03-core-concept**, **lea-theo-002-04-core-concept**, **lea-theo-002-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

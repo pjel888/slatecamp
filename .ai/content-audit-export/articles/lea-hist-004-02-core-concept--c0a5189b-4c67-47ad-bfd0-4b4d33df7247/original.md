@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA distinguishes between **Umayyad** and **Abbasid** architectural traditions. You must know the defining characteristics of each, recognize key buildings, and understand how Islamic architecture evolved during these early Islamic dynasties. The Umayyad period (661–750 CE) and the early Abbasid period (750–10th century) represent distinct architectural visions; later Abbasid architecture (after ~945 CE under Buyid influence) shows declining monumental patronage.</Callout>
+## Learning Goal
 
+Distinguish Umayyad (Roman/Byzantine borrowing, hypostyle halls, mosaic decoration) from Abbasid (brick construction, iwan, stucco, centralized planning) Islamic architecture by material, plan, and ornamental vocabulary.
 ## Core Concept
 The **Umayyad** (661–750 CE) and **Abbasid** (750–945 CE) dynasties established two distinct Islamic architectural visions that shaped all subsequent regional development.
 
@@ -37,6 +38,8 @@ These two periods represent not a simple progression but a cultural reorientatio
 <ExamTip>**Pattern 4: Material and Structural Innovation**
 "Why did Abbasid builders transition from stone to brick in Mesopotamia? What architectural possibilities did this enable?" (Brick allows taller walls, supports muqarnas, permits new vault forms, and reduces reliance on imported stone.)</ExamTip>
 
+<Callout>The LEA distinguishes between **Umayyad** and **Abbasid** architectural traditions. You must know the defining characteristics of each, recognize key buildings, and understand how Islamic architecture evolved during these early Islamic dynasties. The Umayyad period (661–750 CE) and the early Abbasid period (750–10th century) represent distinct architectural visions; later Abbasid architecture (after ~945 CE under Buyid influence) shows declining monumental patronage.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Treating Umayyad and Abbasid as Stylistic Progression" correction="Students often view Abbasid as simply \"more developed\" Umayyad. In reality, the transition represents a cultural and geographic reorientation. Umayyad borrowed directly from Byzantine and Roman precedent; Abbasid rejected that legacy and developed Persian and Mesopotamian models." context="They are distinct visions, not stages of refinement." />
@@ -44,7 +47,6 @@ These two periods represent not a simple progression but a cultural reorientatio
 <WikiMistakeCard mistake="Confusing the Dome of the Rock's Purpose" correction="The **Dome of the Rock** is not a mosque (though it functions as a prayer space). It is a shrine commemorating the Prophet Muhammad's night journey. It contains no mihrab initially and no courtyard in the later mosque sense." context="Recognizing its unique typology is essential." />
 
 <WikiMistakeList mistakes={["Misidentifying the Minaret in Umayyad Mosques. In the Umayyad period, minarets were integral structures attached to the qibla wall (as in the **Great Mosque of Damascus**), not freestanding towers. Later periods introduced separate minarets. This distinction marks chronological and stylistic development.", "Overlooking the Desert Palace Typology. Umayyad **qasrs** (palaces like **Qasr al-Hayr al-Sharqi**) are as architecturally important as mosques but often neglected. These fortified complexes show Umayyad synthesis of Roman logistics, hunting culture, and aristocratic Islam. They appear on the LEA.", "Assuming All Early Islamic Mosques Are Hypostyle. Not all early mosques follow the hypostyle model. The **Dome of the Rock** is centralized, not hypostyle. The **Aqsa Mosque** integrates columned aisles with Byzantine elements. Recognizing variation within the period is critical."]} />
-
 
 ## Key Terms
 
@@ -69,3 +71,10 @@ These two periods represent not a simple progression but a cultural reorientatio
 **Byzantine Influence** — Structural and decorative traditions inherited from the Eastern Roman (Byzantine) Empire; abundant in Umayyad reuse of columns, mosaics, and spatial planning.
 
 <Warn>Do not treat Umayyad and Abbasid as simple stylistic progression. They represent distinct geographic and cultural reorientations. Umayyad is pragmatically Byzantine (reused columns, Mediterranean cities). Abbasid rejects that legacy and builds new with Persian-influenced brick, muqarnas, and iwans. This conceptual shift—not mere aesthetic refinement—is critical for LEA success.</Warn>
+
+## Related Articles
+
+See also within Islamic Architecture: **lea-hist-004-01-core-concept**, **lea-hist-004-05-core-concept**, **lea-hist-004-06-core-concept**, **lea-hist-004-07-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

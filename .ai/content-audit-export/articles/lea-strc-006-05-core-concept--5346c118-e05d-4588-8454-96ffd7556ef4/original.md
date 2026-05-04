@@ -1,6 +1,12 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
 
-## What You Need to Know for the LEA
+- Define precast concrete and distinguish it from cast-in-place
+- Identify advantages of precast construction: quality control, speed, reduced formwork
+- Describe typical precast elements: beams, columns, slabs, wall panels
+- Explain connection requirements for precast systems in seismic zones
+
 Precast concrete members are manufactured off-site in controlled conditions and transported to the construction site for assembly. Construction joints are planned weak points where different concrete pours meet and must be designed to transfer force and resist shear. Composite members combine precast and cast-in-place concrete, leveraging the efficiency of precasting with site-specific design. Understanding these concepts is essential for modern construction and ensures proper force transfer at joints.
 
 ## Core Concept
@@ -52,13 +58,13 @@ For composite behavior, the two concrete elements must be:
 If a construction joint or precast-CIP interface is poorly designed or executed, failure can occur by:
 - Horizontal shear: if shear reinforcement is insufficient, the two concrete elements slide past each other.
 - Loss of composite action: if the interface is smooth or unbonded, the section cannot transfer moment or shear as intended.
-- Water infiltration and corrosion: if the joint is not properly selead, water reaches reinforcement and causes accelerated corrosion (critical in coastal Philippines).
+- Water infiltration and corrosion: if the joint is not properly sealed, water reaches reinforcement and causes accelerated corrosion (critical in coastal Philippines).
 
 **Quality Assurance for Precast and Joints:**
 - Precasting plants are typically certified or accredited to ensure consistent quality.
 - Construction joint surfaces are inspected before placing new concrete.
 - Composite member connections are verified by analysis and testing (especially important in seismic design).
-- Durability: all joints and interfaces are selead or grouted to prevent water infiltration.
+- Durability: all joints and interfaces are sealed or grouted to prevent water infiltration.
 
 ## Key Provisions
 
@@ -105,6 +111,13 @@ Precasting is widely used in the Philippines for housing projects, commercial bu
 
 <Tip>Construction joints are planned weak points, not failures. They are designed to handle predictable stresses by mechanical bonding, surface roughness, and shear reinforcement. The key to success: clean the old surface (sandblast or scarify), reinforce across the joint, and keep the interface moist during new concrete placement. This is a critical supervision point for site engineers.</Tip>
 
+
+## Related Articles
+
+See also: **Prestressing** (lea-strc-006-04) for how prestress is commonly combined with precast, **Concrete Materials** (lea-strc-006-01) for the material properties, and **Construction Joints** (lea-strc-007-06) for how precast connections differ from cast-in-place joints.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Treating construction joints as errors or defects that should be hidden. Construction joints are intentional, designed features. They simplify scheduling and allow staged construction. Poor joints result from inadequate preparation and reinforcement, not from the joint concept itself.", "Placing construction joints without shear reinforcement (dowels or hooked bars) crossing the interface. Shear forces must be transferred; rough surface alone is insufficient in high-shear regions. Dowels are required by code at many construction joint locations.", "Neglecting surface preparation: not sandblasting or scarifying the old concrete surface before placing new concrete. The interface bond depends on mechanical interlocking with exposed aggregate; a smooth surface (laitance) will not develop adequate friction and composite action will be lost.", "Forgetting that precast members and composite structures must be tested to verify composite action and strength. Design calculations assume the two materials work together; testing confirms this assumption. Inadequate testing can lead to serviceability or strength failures." ]} />

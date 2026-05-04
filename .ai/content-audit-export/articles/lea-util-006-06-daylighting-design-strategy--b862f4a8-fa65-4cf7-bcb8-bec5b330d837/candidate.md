@@ -2,10 +2,17 @@
 
 ## Learning Goal
 
+<ExamTip>
+This section is frequently tested. Pay special attention to the distinctions and exceptions.
+</ExamTip>
+
 Design daylighting strategies for tropical buildings — window-to-floor ratio (WFR) requirements, shading device design, light shelves, diffusing glazing, light tubes, clerestories — to maximize natural light while controlling solar heat gain per PD 1096 Rule VIII.
 ## Daylighting Design Strategy
 
 ### Window Placement and Orientation
+
+<ArticleMedia id="media-lea-util-006-06-daylighting-design-strat" a type="image" caption="Daylighting Strategies — Sidelighting, Light Shelves, Clerestory, Skylight" description="Building section showing four daylighting strategies: (1) Sidelighting — windows on external walls, daylight penetration depth 2.5× window height; (2) Light shelves — reflective horizontal surface at 1.8-2.2m bouncing light deeper (20-40% increased daylight factor); (3) Clerestory windows — high windows above obstructions for indirect north light; (4) Skylights — roof openings providing 8-15% daylight factor with thermal control. Daylight factor target of 2-5% labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 
 In tropical climates, east-west orientations receive intense solar radiation, particularly during morning and afternoon hours. North-facing orientations in the Philippines receive diffuse, indirect light throughout the day, reducing glare and unwanted heat. South-facing elevations are less common in Philippine design but can be effective in winter months (minimal concern in tropical zones). Window sizing must satisfy PD 1096 Rule VIII's 10% floor-area requirement while accounting for depth of daylight penetration.
 
@@ -30,6 +37,8 @@ Philippine design targets a daylight factor of 2–5% in regularly occupied spac
 **Light Shelves** are horizontal, reflective surfaces positioned above eye level (typically 1.8–2.2 meters) that bounce daylight deep into a space. Light shelves reduce glare on lower floors while reflecting diffuse northern light deeper into the building. Studies in tropical buildings show light shelves increase daylight factors by 20–40% beyond 5 meters from the window wall.
 
 ### Glare Control in Tropical Environments
+
+<ArticleMedia id="media-lea-util-006-06-daylighting-design-strat" a type="image" caption="Shading Device Types — External Louvers, Fins, Overhangs for Philippine Solar Angles" description="Diagram comparing shading strategies for Philippine tropical climate (5°N-19°N): horizontal overhangs for north/south facades, vertical fins for east/west facades, egg-crate louvers for combined shading. Solar altitude at summer solstice (84-90°) and winter solstice (45-52°) shown to demonstrate shading effectiveness. External louvers reducing cooling loads 40-60% vs. internal blinds annotated per PD 1096 Rule VIII." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 **Glare** occurs when brightness contrasts exceed the eye's adaptive capacity. In the Philippines, intense equatorial sun creates disability glare (reducing visual clarity) and discomfort glare (causing eye fatigue). The angle of solar incidence varies seasonally; the sun's altitude ranges from 45° at summer solstice to 20° at winter solstice, affecting window and shading effectiveness.
 
@@ -224,9 +233,9 @@ Mitigation strategies:
 
 ---
 
-<InfoBox title="Key Takeaway" type="success">Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30–50% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.</InfoBox>
+[SLATECAMP_UI_BLOCK:ui_0001 component="InfoBox" status="preserved"]
 
-<Leart type="note">For tropical climates, specify daylight harvesting setpoints with ±15–20% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.</Leart>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Leart" status="preserved"]
 
 ## Related Articles
 
@@ -234,3 +243,6 @@ See also within Lighting and Acoustics: **lea-util-006-02-core-concept**, **lea-
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
+<Note>
+Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards and amendments.
+</Note>

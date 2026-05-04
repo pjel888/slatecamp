@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-Mechanical rooms house critical building systems—chillers, boilers, pumps, switchgear—and their design directly impacts building performance, safety, and lifecycle cost. Philippine regulations PD 1096 (National Building Code referencing Philippine Mechanical Code), PD 1096 (National Building Code), and RA 9514 (Fire Code of the Philippines) establish mandatory requirements for mechanical space planning, equipment access, fire safety, and environmental protection. Proper mechanical room design prevents system failure, simplifies maintenance, reduces fire risk, and ensures regulatory compliance during construction and occupancy permits.
+## Learning Goal
 
----
-
+Apply NBCP and mechanical code requirements for mechanical room location, siting, ventilation, fire rating, clearances, access, and equipment layout for building mechanical systems (chillers, boilers, AHUs, pumps) in Philippine projects.
 ## Mechanical Room Location and Siting
 
 In Philippine high-rise developments, mechanical rooms occupy two primary locations: below-grade basement levels or above the roofline. Each location presents distinct design trade-offs.
@@ -15,6 +14,19 @@ In Philippine high-rise developments, mechanical rooms occupy two primary locati
 Size allocation for mechanical spaces typically 3-5% of gross floor area based on system requirements_ depending on climate zone, occupancy, and system density. A 50,000 m² commercial office in Metro Manila with four-pipe fan coil systems and dedicated outside air handling typically reserves 2,000–2,500 m² (4–5% GFA) across all mechanical floors. This follows guidance in Minimum 1.2 m clearance around rotating equipment for maintenance access per standard practice.
 
 ---
+
+
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 
 ## Equipment Clearances and Service Access
 
@@ -65,9 +77,9 @@ RA 9514 (Fire Code of the Philippines) establishes mechanical room fire safety a
 - 150 mm reinforced concrete with cement plaster finish, OR
 - 120 mm gypsum drywall assemblies with intumescent sealants at pipe penetrations and two layers of fire-rated board on each face.
 
-Testing to ASTM E119 (or ISO 834 equivleant) must be documented at permit-application stage. PD 1096 previously allowed 1-hour rated walls for spaces &lt;50 m²; RA 9514 supersedes this, mandating 2-hour minimum across all mechanical room categories.
+Testing to ASTM E119 (or ISO 834 equivalent) must be documented at permit-application stage. PD 1096 previously allowed 1-hour rated walls for spaces &lt;50 m²; RA 9514 supersedes this, mandating 2-hour minimum across all mechanical room categories.
 
-**Penetrations** (piping, electrical cable tray, ductwork through fire-rated walls) must be selead with fire-stop sealant (Hilti CFS-SE or equivleant, rated 2-hour per ASTM E814) maintaining the wall rating. Each penetration requires stamped certification; visual inspection alone is insufficient for LEA sign-off.
+**Penetrations** (piping, electrical cable tray, ductwork through fire-rated walls) must be sealed with fire-stop sealant (Hilti CFS-SE or equivalent, rated 2-hour per ASTM E814) maintaining the wall rating. Each penetration requires stamped certification; visual inspection alone is insufficient for LEA sign-off.
 
 **Fire-rated doors** serving mechanical rooms are _1- or 2-hour fire-rated per RA 9514 occupancy requirements self-closing with push-bar hardware, and automatic closure upon smoke detection. Door frames must be steel, set in grouted CMU, with gasketing around all edges. Temporary propping of fire doors—common during commissioning—is prohibited under RA 9514 Section 5.3 enforcement provisions.
 
@@ -154,3 +166,10 @@ Mechanical room design success depends on early coordination across all building
 - _Coordination_ across structural, architectural, and MEP trades at 30%, 60%, 90% DD stages; BIM clash detection mandatory
 
 Mechanical room design is not peripheral to the building systems narrative—it is foundational. Proper early planning ensures regulatory compliance, operational reliability, and cost predictability at handover.
+
+## Related Articles
+
+See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, **lea-util-002-04-core-concept**, **lea-util-002-05-core-concept**, **lea-util-002-06-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

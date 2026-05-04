@@ -1,6 +1,15 @@
 ## What You Need to Know for the LEA
-Timber structural design under Allowable Stress Design (ASD) requires bending, shear, and compression checks using fundamental formulas. Each check compares an applied stress to an allowable stress; compliance means stress ≤ allowable at all points.
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Apply the ASD method to timber design: F_actual ≤ F'_allowable
+- Identify the adjustment factors applied to base allowable stresses (C_D, C_M, C_t, etc.)
+- State the format: F'_b = F_b × (adjustment factors)
+- Distinguish timber ASD from steel ASD in terms of safety factor application
+
+---
 ## Core Concept
 Allowable Stress Design (ASD) is a working stress method in which a timber member is checked by comparing the maximum stress induced by loads to a pre-established allowable stress determined by species, grade, moisture, and load duration. The three critical checks in timber ASD design are: (1) _bending stress_ (fb vs. Fb), (2) _horizontal shear stress_ (fv vs. Fv), and (3) _compression parallel to grain_ (fc vs. Fc). Bending stress is computed as fb = M/S, where M is the maximum moment and S is the section modulus. For a rectangular section, S = bh²/6, derived from the elastic theory of pure bending. Horizontal shear stress is computed as fv = 3V/(2A), not the simplified fv = V/A; the 3/2 factor accounts for the parabolic shear distribution across a rectangular section, with maximum shear occurring at the neutral axis. Here, V is the maximum shear force and A = bh is the cross-sectional area. Section modulus S and moment of inertia I are geometric properties: I = bh³/12. Allowable stresses (Fb, Fv, Fc) are tabulated by species, grade, and condition; they are _never_ calculated—they are looked up from design tables. The design inequality is always _applied stress ≤ allowable stress_. If any check fails, the member is undersized and must be redesigned (larger dimensions, higher grade, or structural reinforcement). A timber element is not "over-designed" if all stresses are below allowable; this is safe reserve capacity and is acceptable. ASD is conservative and widely used in Philippine building practice, though Limit State Design (LSD) is increasingly recognized in modern codes. For the LEA, ASD formulas and checks are the primary focus.
 
@@ -90,6 +99,13 @@ Philippine structural designers routinely apply ASD checks to timber beams and c
 
 <Tip>The 3/2 factor in fv = 3V/(2A) is non-negotiable for rectangular timber. Forgetting it gives half the actual maximum shear stress and is unsafe.</Tip>
 
+
+## Related Articles
+
+See also: **Timber Stress Groups** (lea-strc-009-02) for base stress values, **Timber Durability** (lea-strc-009-01) for factors affecting long-term performance, and **ASD vs LRFD** (lea-strc-003-04) for how ASD compares with LRFD.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Using fv = V/A instead of fv = 3V/(2A). The 3/2 factor is mandatory for rectangular sections and accounts for non-uniform shear distribution.", "Computing S = bh/6 instead of S = bh²/6. Missing the exponent on h loses the dimension entirely and gives wrong results by orders of magnitude.", "Confusing I (moment of inertia, in mm⁴) with S (section modulus, in mm³). I is for deflection; S is for bending stress.", "Applying nominal dimensions in S calculation instead of actual dimensions. Nominal 2×4 is 1.5×3.5 actual; mismatch invalidates results.", "Forgetting that allowable stresses (Fb, Fv, Fc) are tabulated, not calculated. Never derive Fb from other parameters; always look it up from a design table.", "Checking one stress (e.g., bending) and ignoring others (shear, compression). All three must pass simultaneously." ]} />

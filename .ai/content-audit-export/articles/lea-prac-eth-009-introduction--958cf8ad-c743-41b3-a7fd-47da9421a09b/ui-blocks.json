@@ -11,8 +11,8 @@
     {
       "block_id": "ui_0001",
       "block_type": "mdx_component",
-      "component_name": "LeartBox",
-      "raw": "<LeartBox type=\"requirement\">\n1. **Complainant Identification** — Full name, address, and contact information\n2. **Respondent Identification** — Professional license number and registration status\n3. **Factual Narration** — Detailed chronological account of alleged violations\n4. **Documentary Evidence** — Supporting attachments (contracts, emails, photographs, affidavits)\n5. **Legal Basis** — Specific provisions of RA 9266, the Code of Ethics, or SPP allegedly violated\n6. **Prayer for Relief** — Requested disciplinary action (investigation, suspension, revocation)\n</LeartBox>",
+      "component_name": "Callout",
+      "raw": "<Callout type=\"requirement\">\n1. **Complainant Identification** — Full name, address, and contact information\n2. **Respondent Identification** — Professional license number and registration status\n3. **Factual Narration** — Detailed chronological account of alleged violations\n4. **Documentary Evidence** — Supporting attachments (contracts, emails, photographs, affidavits)\n5. **Legal Basis** — Specific provisions of RA 9266, the Code of Ethics, or SPP allegedly violated\n6. **Prayer for Relief** — Requested disciplinary action (investigation, suspension, revocation)\n</Callout>",
       "raw_hash": "sha256:2680b9cc2ee894910a5cb2700ed40ee1ca9010000e332873f48f1cbcfa7cf34a",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LeartBox\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"requirement\"\n- Text: 1. **Complainant Identification** — Full name, address, and contact information 2. **Respondent Identification** — Professional license number and registration status 3. **Factual Narration** — Detailed chronological account of alleged violations 4. **Documentary Evidence** — Supporting attachments (contracts, emails, photographs, affidavits) 5. **Legal Basis** — Specific provisions of RA 9266, the Code of Ethics, or SPP allegedly violated 6. **Prayer for Relief** — Requested disciplinary action\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:1fe02eb3c81e96eb107c848a046da278d083bc03c859ce52d3e51d7c90f81c6d",
@@ -125,8 +125,8 @@
     {
       "block_id": "ui_0006",
       "block_type": "mdx_component",
-      "component_name": "LeartBox",
-      "raw": "<LeartBox type=\"important\">\nThe PRBoA hearing is **administrative**, not criminal. The respondent's constitutional rights (Miranda, counsel, due process) apply, but the rules of evidence are more flexible. The goal is truth-finding, not prosecution.\n</LeartBox>",
+      "component_name": "Callout",
+      "raw": "<Callout type=\"important\">\nThe PRBoA hearing is **administrative**, not criminal. The respondent's constitutional rights (Miranda, counsel, due process) apply, but the rules of evidence are more flexible. The goal is truth-finding, not prosecution.\n</Callout>",
       "raw_hash": "sha256:4d7424d11de1b5bb847b4bb12aec5789c77da545308a1028ff62729ffec58be0",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"LeartBox\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"important\"\n- Text: The PRBoA hearing is **administrative**, not criminal. The respondent's constitutional rights (Miranda, counsel, due process) apply, but the rules of evidence are more flexible. The goal is truth-finding, not prosecution.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:b2ef9ddc1ddfe9e7813ba33760d6b23a43a2dbd8c7f7896a4a2701e4390ceaf6",
@@ -195,8 +195,8 @@
     {
       "block_id": "ui_0009",
       "block_type": "mdx_component",
-      "component_name": "LeartBox",
-      "raw": "<LeartBox type=\"important\">\nOn appeal, the court presumes the PRBoA decision is correct unless the appellant proves legal error. This is a deferential standard of review that respects the board's expertise in professional regulation.\n</LeartBox>",
+      "component_name": "Callout",
+      "raw": "<Callout type=\"important\">\nOn appeal, the court presumes the PRBoA decision is correct unless the appellant proves legal error. This is a deferential standard of review that respects the board's expertise in professional regulation.\n</Callout>",
       "raw_hash": "sha256:d2439ca628f34553f39088fa8d1251f226e31b5ab1138c49417cd05daa99d75b",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0009 component=\"LeartBox\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"important\"\n- Text: On appeal, the court presumes the PRBoA decision is correct unless the appellant proves legal error. This is a deferential standard of review that respects the board's expertise in professional regulation.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:c8145fe769bc24b1a2cc940a95fce1b7d96e1e5e03d312632696ff2db7ec0b06",

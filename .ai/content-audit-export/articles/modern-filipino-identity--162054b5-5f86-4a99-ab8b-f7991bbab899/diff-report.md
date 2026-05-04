@@ -1,32 +1,33 @@
 # Content Diff Report: modern-filipino-identity
 
-Generated: 2026-05-03T13:45:21.330Z
+Generated: 2026-05-04T00:07:02.590Z
 Article ID: 162054b5-5f86-4a99-ab8b-f7991bbab899
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:bfd6b150a1dbc8eb6a2fdbbcf1a6fb762bdaef94f4296fffee5d8fc03dd643ca`
-- Normalized: `sha256:9b920cf5871da6665f278ce04b6eddc10969fce2014f7b1ed6a59f25a0b01835`
-- Candidate: `sha256:ef895afb3270df63e056503ec98f8d3655a91d1b185030b5dcc0552870d7a0ee`
+- Original: `sha256:ef895afb3270df63e056503ec98f8d3655a91d1b185030b5dcc0552870d7a0ee`
+- Normalized: `sha256:5e9fb2ff71fd11a9441619b19c17f442d86b7d6aff96ad5b988c1b8e2f25e8f7`
+- Candidate: `sha256:5e9fb2ff71fd11a9441619b19c17f442d86b7d6aff96ad5b988c1b8e2f25e8f7`
 
 ## Line summary
 
-- Changed lines: 161
-- Inserted lines: 39
-- Deleted lines: 0
+- Changed lines: 156
+- Inserted lines: 0
+- Deleted lines: 26
 
 ## UI block preservation
 
 - UI blocks expected: 5
-- UI blocks preserved: 5
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 5
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 5 preserved UI block(s).
 
 ## Warnings
 

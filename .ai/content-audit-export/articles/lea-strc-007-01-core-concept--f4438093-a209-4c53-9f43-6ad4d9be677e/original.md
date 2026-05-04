@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define concrete cover as the distance from rebar surface to the nearest concrete surface
+- State the minimum cover requirements for different exposure conditions
+- Explain the three functions of cover: fire protection, corrosion protection, and bond
+- Identify when cover must be increased (e.g., corrosive environment, fire rating)
 
 Concrete cover protects reinforcement from corrosion and fire. The LEA tests your mastery of NSCP/ACI cover requirements across three conditions: cast-in-place (most common), precast, and prestressed concrete. The top three tested values are 75mm for footings, 40mm for beams and columns, and 20mm for slabs.
 
@@ -71,6 +78,13 @@ In Philippine concrete design, footing cover (75mm) is the most frequently teste
 Footing = 75mm, Beam/Column = 40mm, Slab = 20mm. Memorize this "three-number rule" first. Then layer: weather exposure adds 10mm (40→50); precast interior halves it (20→10–15). Prestressed is always 25–50mm.
 </Tip>
 
+
+## Related Articles
+
+See also: **Deformed Bars** (lea-strc-006-02) for rebar that requires cover, **Hooks** (lea-strc-007-02) for how hooks interact with cover, and **Concrete Materials** (lea-strc-006-01) for concrete quality affecting cover durability.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Footing cover = 40mm or 50mm — WRONG. Always 75mm for cast against earth (ERR-STRC-020).", "All interior beams = 20mm cover — WRONG. Interior beams require 40mm; only slabs/walls get 20mm.", "Precast cover = same as cast-in-place — WRONG. Precast interior allows 15mm slabs, 10mm shells, and db-based (max 40mm) for beams.", "Prestressed equals 75mm — WRONG. Prestressed exposed = 50mm, fully enclosed interior = 40mm, protected = 25mm.", "Bar size irrelevant to cover — WRONG. Exposed weather bars ≥20mm = 50mm, but ≤16mm = 40mm only." ]} />

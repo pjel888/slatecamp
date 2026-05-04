@@ -1,6 +1,13 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
 
-## What You Need to Know for the LEA
+- Explain how a reinforced concrete section resists bending through the tension-compression couple
+- Define the Whitney stress block and its parameters (a = β₁c)
+- State the assumed ultimate concrete strain (ε_u = 0.003)
+- Distinguish between under-reinforced and over-reinforced sections
+- Identify why under-reinforced design (ductile failure) is preferred
+
 A reinforced concrete section can fail in three modes depending on the ratio of tensile reinforcement: balanced (steel and concrete reach their respective ultimate strains simultaneously), underreinforced (steel yields before concrete crushes, allowing warning), and overreinforced (concrete crushes before steel yields, sudden failure with no warning). Understanding these concepts is fundamental to designing safe, ductile structures. The distinctions are based on comparing steel strain and concrete strain at failure using ε_u = 0.003 for concrete and the yield strain of steel (≈ 0.0021 for Grade 60).
 
 ## Core Concept
@@ -68,6 +75,13 @@ The PNSC and earthquake-resistant design codes in the Philippines require struct
 
 <Tip>Memorize the strain hierarchy: Concrete crushing (0.003) vs. Grade 60 yield (0.0021). If actual steel strain < 0.0021 at failure, the section is overreinforced (bad). If actual steel strain > 0.0021, it is underreinforced or balanced (good). This distinction is the foundation of ductile design.</Tip>
 
+
+## Related Articles
+
+See also: **Concrete Materials** (lea-strc-006-01) for f'c and material properties, **Deformed Bars** (lea-strc-006-02) for the tension reinforcement, and **Stress-Strain** (lea-strc-003-01) for the material behavior underlying flexural theory.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Using 0.003 as the steel crushing strain instead of the concrete crushing strain. The strain 0.003 (3 parts per thousand) is specific to concrete, not steel. Steel at 0.003 strain is well into the plastic range and has long since yielded (at ≈ 0.0021). This confusion breaks strain-compatibility analysis.", "Confusing yield strain with ultimate strain. Steel yield strain ≈ 0.0021; steel ultimate strain is much higher (≈ 0.10 or 10% strain). The balanced section calculation uses _yield_ strain, not ultimate strain. Using the wrong value miscalculates the balanced point.", "Assuming overreinforced sections have no strength advantage. While overreinforced sections are less ductile, they do carry higher loads before failure. However, the lack of warning (brittle failure) makes them unacceptable in code-compliant design, especially in seismic regions.", "Forgetting that ductility (underreinforced sections) is a design requirement, not an option. Code requires ductile behavior to absorb energy and provide warning. Overreinforced design is a violation and may not be approved by authorities." ]} />

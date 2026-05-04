@@ -4,6 +4,12 @@
 
 **SPP Document 202** governs the **Regular Design Services** of Registered and Licensed Architects (RLAs) in the Philippines — the core of architectural practice, covering everything from the first consultation with the client all the way through the turnover of the completed project. It is part of the 2010 Standards of Professional Practice (SPP), promulgated as the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004), and replaces the earlier **1979 UAP Doc. 202**.
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the five phases of SPP Doc 202 Regular Design Services (Schematic Design, Design Development, Contract Documents, Bidding Assistance, Construction Administration) and their deliverables, fee percentages, and architect's level of involvement per phase; apply the 20%-30%-50% fee split across SD/DD/CD; and determine when a phase is complete and the next begins.
+---
 Regular Design Services represent what most people understand as "the architect's job" — translating the client's needs and requirements into physical spaces and forms, preparing all necessary construction documents, managing the bidding or negotiation process, and providing oversight during construction until the project is turned over. SPP 202 is the most frequently referenced document in day-to-day architectural practice because it governs the standard engagement between an architect and a client for any building project.
 
 ***
@@ -164,7 +170,7 @@ The architect may enter into contract with the owner as **Lead Professional** in
 
 ## Project Classification Groups
 
-Professional architectural work is classified according to the **degree of complexity and creative skill required**. These groupings determine the corresponding sclea of charges (minimum basic fee) in the Architect's Guidelines.
+Professional architectural work is classified according to the **degree of complexity and creative skill required**. These groupings determine the corresponding scale of charges (minimum basic fee) in the Architect's Guidelines.
 
 <ComparisonTable>
 
@@ -190,7 +196,7 @@ Professional architectural work is classified according to the **degree of compl
 
 The architect's fee for Regular Design Services is primarily computed as a **Percentage (%) of Project Construction Cost (PCC)**, with the specific rates detailed in the Architect's Guidelines.
 
-### Groups 1–3 (Fee Scleas by PCC Range)
+### Groups 1–3 (Fee scales by PCC Range)
 
 <ComparisonTable>
 
@@ -302,9 +308,9 @@ A per diem plus traveling and living expenses are chargeable to the owner whenev
 
 If the owner requires specialist consultants (acoustic, illumination, etc.), they are engaged with the architect's consent, paid separately by the owner, and their cost shall **not be deducted from the architect's fee**. A **coordination fee** is payable to the architect for coordinating these specialists.
 
-### Sclea Models, 3D Models, and Walk-Thru Presentations
+### scale Models, 3D Models, and Walk-Thru Presentations
 
-Should sclea models or 3D/walk-thru presentations be required, costs are paid separately by the owner and are subject to a **coordination fee** payable to the architect.
+Should scale models or 3D/walk-thru presentations be required, costs are paid separately by the owner and are subject to a **coordination fee** payable to the architect.
 
 ### Ownership of Documents
 
@@ -350,4 +356,18 @@ All signboards placed at the project site during construction must be **approved
 | **SPP Doc. 206** (Comprehensive Services) | Packages SPP 201 through 205 into a single comprehensive engagement |
 
 </ComparisonTable>
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: SPP 202 five phases and fee percentages: SD (Phase 1) = 15% of basic fee | DD (Phase 2) = 20% | CD (Phase 3) = 30% (largest single phase) | Bidding (Phase 4) = 5% (smallest) | CA (Phase 5) = 30%. The 15-20-30-5-30 percentage sequence is the most tested fee allocation on the exam.
+
+## Cross‑References
+
+**Spp Doc 201 Pre Design Services**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 206 Comprehensive Architectural Services**
 

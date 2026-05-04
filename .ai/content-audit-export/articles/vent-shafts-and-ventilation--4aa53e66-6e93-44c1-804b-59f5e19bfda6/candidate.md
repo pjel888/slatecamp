@@ -219,13 +219,7 @@ A vent shaft in a five-storey building is 16.50 m tall. What is the minimum requ
 
 > **Answer: B**
 >
-<LawCallout code="pd1096" section="Rule VIII - Ventilation">
-
-
-Per PD 1096 Sec. 809-a, the required cross-sectional area = 0.10 sq.m × 16.50 m = 1.65 sq.m. This exceeds the absolute minimum of 1.00 sq.m, so 1.65 sq.m governs. The minimum least dimension is always ≥ 600 mm per Sec. 809-a, regardless of area. Option A applies the absolute minimum incorrectly (the formula result of 1.65 sq.m is larger and controls). Option C uses the wrong minimum dimension (300 mm belongs to the horizontal air duct, not the shaft). Option D uses neither the correct area nor the correct minimum dimension.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 
 ---
 
@@ -240,13 +234,7 @@ A vent shaft in a commercial building terminates at the roof with a fixed louver
 
 > **Answer: C**
 >
-<LawCallout code="pd1096" section="Rule VIII - Vent Shafts">
-
-
-Per PD 1096 Sec. 809-b, when the shaft does not open directly to outer air, it must be covered by a skylight or fixed louvers with a net free area ≥ the maximum required cross-sectional area of the shaft. The maximum required area here is 1.80 sq.m. The 1.20 sq.m louvered panel provides only 67% of the required free area — it is non-compliant. The code does not permit a reduction below the maximum required shaft area for the covering. Option D is wrong because fixed louvers are explicitly permitted by Sec. 809-b alongside skylights.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
 ---
 
@@ -261,13 +249,7 @@ An architect is designing a below-grade workshop in a mixed-use building. The sp
 
 > **Answer: C**
 >
-<LawCallout code="pd1096" section="Rule VIII - Light Courts">
-
-
-≥ 3 ACH for spaces above grade, and ≥ 6 ACH for rooms below grade. A below-grade workshop falls into the 6 ACH category regardless of the type of work performed therein. The proposed 4 ACH meets the above-grade threshold but falls short of the below-grade requirement. Option A applies the above-grade rate to a below-grade space. Option D invents a 10 ACH rate not found in Sec. 811 (though higher rates may apply under sector-specific codes such as DOH standards for hospital spaces). The correct answer is C.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 
 ---
 
@@ -282,15 +264,23 @@ An architect is designing a below-grade workshop in a mixed-use building. The sp
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Vent shaft minimum dimensions = 1.20 m × 1.20 m for non-Fire Zone 1 buildings, 1.50 m × 1.50 m for Fire Zone 1. Max shaft coverage = 10% of required lot area. Mechanical ventilation can substitute for natural ventilation at 10 air changes per hour for most occupancy types.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Vent shaft minimum dimensions = 1.20 m × 1.20 m for non-Fire Zone 1 buildings, 1.50 m × 1.50 m for Fire Zone 1. Max shaft coverage = 10% of required lot area. Mechanical ventilation can substitute for natural ventilation at 10 air changes per hour for most occupancy types.
+
 ## Cross‑References
 
 **Sanitation And Water Supply**, **Pd 1096 Rule Viii Light And Ventilation**, **Chimneys And Fireplaces**, **Vertical Openings And Floor Roof Construction**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

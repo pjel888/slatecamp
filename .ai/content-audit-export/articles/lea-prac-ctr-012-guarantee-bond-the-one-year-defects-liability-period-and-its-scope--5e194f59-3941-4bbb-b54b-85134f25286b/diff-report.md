@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope
 
-Generated: 2026-05-03T13:45:22.367Z
+Generated: 2026-05-04T00:07:03.868Z
 Article ID: 5e194f59-3941-4bbb-b54b-85134f25286b
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:0c2c8e4402dbe573f7b9a0f02804578f1026e3fb5f1c3b2e3a5d2de856777c90`
-- Normalized: `sha256:ead048426c68be6b23d3fbee7f2474c5dd4a5dc78f8c9b6ef73b3dbf84cbc220`
-- Candidate: `sha256:1ed2cf1e59262f1600b0c4c286efc3185dacd77a4ad70ae04cfb54c33a747662`
+- Original: `sha256:1ed2cf1e59262f1600b0c4c286efc3185dacd77a4ad70ae04cfb54c33a747662`
+- Normalized: `sha256:925d21b1ecb35cbe96cc97c5625155aa5ea2486298dfbf56141ee57d3c3972e5`
+- Candidate: `sha256:925d21b1ecb35cbe96cc97c5625155aa5ea2486298dfbf56141ee57d3c3972e5`
 
 ## Line summary
 
-- Changed lines: 75
-- Inserted lines: 44
-- Deleted lines: 0
+- Changed lines: 59
+- Inserted lines: 0
+- Deleted lines: 27
 
 ## UI block preservation
 
 - UI blocks expected: 5
-- UI blocks preserved: 5
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 5
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 5 preserved UI block(s).
 
 ## Warnings
 

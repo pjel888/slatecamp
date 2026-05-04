@@ -1,5 +1,17 @@
 ## PRBoA Composition, Qualifications, and Terms of Office
 
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe the PRBoA composition: 1 Chairman and 2 Members appointed by the President.
+- List the six (6) qualifications for PRBoA membership under RA 9266 §4.
+- State the term of office (3 years, staggered, max 2 terms / 6 years).
+- Identify the IAPOA (UAP) as the nominating body.
+
+---
+
+---
 ### Structural Framework: The Three-Person Collegial Board
 
 Section 4 of RA 9266 establishes the Professional Regulatory Board of Architecture as a collegial body composed of a Chairman and two (2) Members—three (3) persons total. This structure was chosen deliberately as a balance: sufficient size to ensure diverse perspective without bureaucratic unwieldiness, and odd number to prevent deadlocked 2-2 votes.
@@ -46,15 +58,21 @@ This structure ensures that in any given year, at most one new appointment occur
 
 ### Reappointment and Tenure Limits
 
-Section 6 further states that "Each member of the Board may be reappointed for one full additional term only." This language is critical: it permits reappointment but limits it to a single additional term. Thus, the maximum tenure is:
+Section 6 further states that "Each member of the Board may be reappointed for one full additional term only." However, the IRR clarifies that the reappointment term is a uniform three (3) years for all members, regardless of their initial term length. This language permits reappointment but limits it to a single additional term. Thus, the maximum tenure is:
 
 - Chairman: 3 years (initial) + 3 years (one additional term) = 6 years maximum
-- Member (2-year term): 2 years (initial) + 2 years (one additional term) = 4 years maximum
-- Member (1-year term): 1 year (initial) + 1 year (one additional term) = 2 years maximum
+- Member (2-year term): 2 years (initial) + 3 years (one additional term) = 5 years maximum
+- Member (1-year term): 1 year (initial) + 3 years (one additional term) = 4 years maximum
 
-This design prevents indefinite tenure while allowing sufficient time for a member to develop expertise and implement policy initiatives. A two-year Member with only two years total tenure is just beginning to understand complex issues when term expiration arrives. By allowing one additional term, that Member could serve four years total, gaining reasonable experience.
+This design prevents indefinite tenure while allowing sufficient time for a member to develop expertise and implement policy initiatives. A two-year Member with only two years initial tenure is just beginning to understand complex issues when term expiration arrives. By allowing one additional term, that Member could serve five years total, gaining reasonable experience.
 
-The "one full additional term only" language is significant: partial additional terms are not permitted. If a two-year Member's initial appointment is delayed six months, that Member does not receive a "bonus" sixth month to the reappointment. The one reappointment is fixed at the same term length as the initial appointment.
+The "one full additional term only" language is significant: partial additional terms are not permitted. If a two-year Member's initial appointment is delayed six months, that Member does not receive a "bonus" sixth month to the reappointment. The one reappointment is fixed at three (3) years regardless of the initial term length, as specified in the IRR.
+
+<LawCallout code="ra9266" section="Section 6 - Term of Office">
+The IRR, Section 6, specifies the reappointment term is a uniform **three (3) years** for ALL members, regardless of their initial term length. Do not assume the reappointment equals the initial term. Correct maximum tenures: Chairman — 6 years (3 + 3), 2-year Member — 5 years (2 + 3), 1-year Member — 4 years (1 + 3).
+</LawCallout>
+
+<Tip>Remember the tenure pattern as **MAX-6-5-4**: Chairman max 6 years, 2-year Member max 5 years, 1-year Member max 4 years. The reappointment is always a flat 3 years.</Tip>
 
 ### The Oath of Office Requirement
 
@@ -97,3 +115,36 @@ The compensation likely consists of per diem for meeting attendance, honorarium 
 Section 4 mandates that "The Board shall be organized not later than six (6) months from the effectivity of the Architecture Act of 2004." Since RA 9266 was signed March 17, 2004 and took effect immediately, and the IRR became effective December 1, 2004, the organizational deadline was June 1, 2005.
 
 This deadline ensured that regulatory mechanisms would be in place within a reasonable timeframe. A longer delay would have left architecture practice unregulated during the transition; a shorter deadline might have been impractical given the need to nominate, screen, appoint, and qualify members.
+
+---
+
+\
+Extracted summary:
+- Props: 
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 4 (Composition), 5 (Qualifications), and 6 (Terms of Office); RA 9266 IRR, Sections 4-6.
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: The IRR, Section 6, specifies the reappointment term is a uniform **three (3) years** for ALL members, regardless of their initial term length. Do not assume the reappointment equals the initial term.
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Remember the tenure pattern as **MAX-6-5-4**: Chairman max 6 years, 2-year Member max 5 years, 1-year Member max 4 years. The reappointment is always a flat 3 years.
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 4 (Composition), 5 (Qualifications), and 6 (Terms of Office); RA 9266 IRR, Sections 4-6.
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)

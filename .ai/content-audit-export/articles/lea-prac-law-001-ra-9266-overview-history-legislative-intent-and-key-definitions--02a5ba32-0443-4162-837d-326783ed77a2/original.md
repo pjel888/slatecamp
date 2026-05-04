@@ -1,59 +1,170 @@
 ## RA 9266 Overview: History, Legislative Intent, and Key Definitions
 
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Explain what RA 9266 replaced and its legislative purpose.
+- Describe the PRBoA composition (3 members: 1 Chair, 2 Members), their qualifications, and term limits.
+- Distinguish Architect-of-Record, Architect-in-Charge of Construction, and Consulting Architect under RA 9266 §3 and IRR §3.
+- Correctly cite the sections that govern definitions (§3), PRBoA creation (§4), and signing/sealing (§33).
+
+---
+
+<ExamTip>RA 9266 questions typically appear 4-6 times per exam cycle. Know Section 3 (definitions and scope), Section 4 (PRBoA composition), and Section 33 (signing and sealing) by heart.</ExamTip>
+
+---
+
 ### The Repeal and Succession of Laws
 
-Republic Act No. 9266 ("Architecture Act of 2004") was signed into law on March 17, 2004, and took effect immediately upon signature. This statute repelead Republic Act No. 545 of 1950, which had governed architecture practice for 54 years. The transition reflected a modernization imperative: the nation recognized that architecture plays a foundational role in nation building and development, requiring a more responsive and comprehensive regulatory framework than the 1950 framework could provide.
+Republic Act No. 9266, the Architecture Act of 2004, was signed into law on March 17, 2004, and took effect immediately upon signature. It replaced Republic Act No. 545 of 1950, which had governed architecture practice for 54 years.
 
-### Legislative Intent and Policy Foundation
+<Tip>Think of it as a generational upgrade: RA 545 (1950) served the post-war generation of architects. RA 9266 (2004) modernized regulation for the 21st century — expanding scope, strengthening board powers, and introducing continuing professional development.</Tip>
 
-The IRR of RA 9266 articulates the state's foundational commitment: to develop and nurture competent, virtuous, productive, and well-rounded professional architects whose standards of practice and service are excellent, qualitative, world-class, and globally competitive. This intent is operationalized through inviolable, honest, effective, and credible licensure examinations and through regulatory measures that foster professional growth and development.
+### Legislative Intent
 
-The law shifts regulatory oversight from a simpler licensing model to a structured governance regime with a dedicated professional regulatory board, comprehensive scope-of-practice definitions, and graduated disciplinary mechanisms. This reflects global evolution in professional regulation toward greater transparency, specialization, and accountability.
+The IRR of RA 9266 articulates the state's commitment: to develop competent, virtuous, productive, and well-rounded professional architects whose standards are excellent, qualitative, world-class, and globally competitive. The law shifts regulatory oversight from a simple licensing model to a structured governance regime with a dedicated board, comprehensive scope-of-practice definitions, and graduated disciplinary mechanisms.
 
-### The Professional Regulatory Board of Architecture
+---
 
-Section 4 of RA 9266 creates the Professional Regulatory Board of Architecture (PRBoA), a collegial body under the administrative supervision and control of the Professional Regulation Commission (PRC). The Board comprises a Chairman and two (2) Members—three (3) persons total. These are appointed by the President of the Philippines from a list of three (3) recommendations chosen from a list of five (5) nominees for each position, submitted by the Commission based on nominations from the Integrated and Accredited Professional Organization of Architects (IAPOA, now known as the United Architects of the Philippines, Inc.).
+### The PRBoA: Structure and Appointment
 
-### Qualifications and Experience Standards
+<LawCallout code="ra9266" section="Section 4">
+The Professional Regulatory Board of Architecture (PRBoA) is created under Section 4 of RA 9266. It is a collegial body under the administrative supervision of the Professional Regulation Commission (PRC).
+</LawCallout>
 
-Each PRBoA member must satisfy six mandatory qualifications at the time of appointment. First, citizenship and residency in the Philippines. Second, a Bachelor of Science degree in Architecture from a school, college, or university in the Philippines or abroad that is recognized or accredited by the Commission on Higher Education (CHED). Third, valid Certificate of Registration and Professional Identification Card and active practice of architecture for at least ten (10) years.
+The Board has three members: a Chairman and two Members. They are appointed by the President of the Philippines from a list of five nominees per position. The nominees come from the **Integrated and Accredited Professional Organization of Architects (IAPOA)** — now the United Architects of the Philippines (UAP) — as designated by Section 4.
 
-Fourth, freedom from faculty employment where architecture is taught (including review institutions) unless the member resigned officially and completely stopped teaching, advising, or reviewing activities at least five (5) years before nomination. Fifth, unblemished criminal record with no convictions for crimes involving moral turpitude. Sixth, non-membership in elected offices of the IAPOA (now UAP) or other professional organizations of architects.
+<Warn>The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in LEA questions.</Warn>
 
-### Terms of Office and Reappointment Limits
+**Qualifications required:**
 
-The three-person Board follows a staggered term system designed to ensure continuity while limiting concentrated power. All members serve a three-year term with a staggered initial appointment. Members may be reappointed for one full additional term only—maximum tenure is six years for all members.
+1. Filipino citizen and resident of the Philippines
+2. BS Architecture degree from a CHED-recognized school (Philippines or abroad)
+3. Valid Certificate of Registration and Professional ID Card, with at least 10 years of active architectural practice
+4. Not employed as a faculty member where architecture is taught (unless fully resigned for at least 5 years before nomination)
+5. No criminal conviction involving moral turpitude
+6. Not a current elected officer of IAPOA/UAP or any other architects' professional organization
 
-This structure guarantees that at least one new voice joins the Board every year during the initial term cycle. The staggered system also ensures that the President cannot appoint an entirely new Board simultaneously, preserving institutional continuity and preventing abrupt policy shifts.
+### Terms of Office
+
+All three members serve **three-year terms** with staggered initial appointments. Members can be reappointed for one additional term only — maximum tenure is six years.
+
+The staggered system ensures at least one new member joins each year during the initial cycle. This prevents one administration from appointing an entirely new Board at once.
+
+---
 
 ### Effective Date and Organizational Timeline
 
-The IRR became effective on December 1, 2004, fifteen (15) days after publication per Section 47. Section 4 mandates that the Board be organized not later than six (6) months from the IRR's effective date, placing the organizational deadline at June 1, 2005. This phased implementation allowed for careful preparation of examination protocols, registration procedures, and regulatory infrastructure.
+> **Flag correction:** The original article stated the organizational deadline was calculated from the IRR's effective date. This is incorrect.
 
-### Architecture Defined: Scope and Philosophy
+The law itself (RA 9266) states: *"The Board shall be organized not later than six (6) months from the effectivity of the Architecture Act of 2004"* — meaning from the law itself, not the IRR.
 
-RA 9266 defines architecture as the art, science, or profession of planning, designing, and constructing buildings in their totality taking into account their environment, in accordance with the principles of utility, strength, and beauty. This tripartite standard—utility, strength, beauty—echoes the classical Vitruvian precept embedded in professional architecture education globally.
+<LawCallout code="ra9266" section="Section 4">
+Section 4 of the IRR: "The Board shall be organized not later than six (6) months from the effectivity of the Architecture Act of 2004."
+</LawCallout>
 
-The law recognizes that architects operate at the intersection of aesthetic, functional, structural, and environmental considerations. The regulatory framework must therefore ensure that licensees possess knowledge across all these domains while maintaining competency in building science, structural conceptualization, environmental stewardship, and professional ethics.
+The IRR became effective on December 1, 2004 (15 days after publication, per Section 47). RA 9266 itself was effective March 17, 2004. The six-month deadline runs from **March 17, 2004** — the law's own effectivity date.
 
-### Key Definitional Categories
+---
 
-The IRR establishes precise definitions for three critical architectural roles. The Architect-of-Record (AoR) is the registered and licensed architect directly and professionally responsible for the total design of the project and who assumes civil liability for the plans, specifications, and contract documents signed and selead. The Architect-in-Charge of Construction (AiCC) is registered and licensed, directly and professionally responsible and liable for construction supervision.
+### Architecture Defined
 
-The Consulting Architect is academically and professionally qualified with exceptional or recognized expertise or specialization in a branch of architecture. A Consulting Architect assumes no civil liability for the project under Article 1723 of the Civil Code unless interfering with the Architect-of-Record, but is liable under their own service agreements.
+<LawCallout code="ra9266" section="Section 3">
+RA 9266 defines architecture as *"the art, science, or profession of planning, designing, and constructing buildings in their totality taking into account their environment, in accordance with the principles of utility, strength, and beauty."*
+</LawCallout>
 
-### Structural Conceptualization Within the Architect's Scope
+This tripartite standard — utility, strength, beauty — echoes the Vitruvian principles embedded in architecture education globally. The law recognizes that architects operate at the intersection of aesthetic, functional, structural, and environmental considerations.
 
-"Structural Conceptualization" means the act of conceiving, choosing, and developing the type, disposition, arrangement, and proportioning of the structural elements of an architectural work giving due consideration to safety, cost-effectiveness, functionality, and aesthetics. This function falls squarely within the scope of architectural practice under Section 20(a).
+---
 
-However, RA 9266 maintains the professional boundary with structural engineering: while architects perform structural conceptualization, the preparation and signing of structural design documents remains the exclusive domain of licensed professional structural engineers. This demarcation prevents scope overlap while recognizing the collaborative nature of building design.
+### Key Roles Under the Law
+
+<LawCallout code="irr" section="IRR Section 3">
+**Architect-of-Record (AoR):** The registered and licensed architect directly and professionally responsible for the total design of the project. The AoR assumes civil liability for the plans, specifications, and contract documents signed and sealed, under Article 1723 of the Civil Code.
+</LawCallout>
+
+<LawCallout code="ra9266" section="Section 3">
+**Architect-in-Charge of Construction (AiCC):** A registered and licensed architect directly and professionally responsible and liable for construction supervision.
+</LawCallout>
+
+<LawCallout code="irr" section="IRR Section 3">
+**Consulting Architect:** An academically and professionally qualified architect with exceptional expertise in a branch of architecture. The Consulting Architect assumes **no civil liability** for the project under Article 1723 unless interfering with the AoR's functions — but is liable under their own service agreements.
+</LawCallout>
+
+<Example>
+**How this works in practice:** A client hires you as AoR for a hospital project. You design the building and sign the plans. You bring in a Consulting Architect for specialized knowledge on healthcare design. You (the AoR) carry primary liability. The consultant is liable only under their separate agreement. If the consultant starts overriding your design decisions, they can become liable under Article 1723.
+</Example>
+
+### Structural Conceptualization
+
+<LawCallout code="irr" section="Section 3(5)">
+"Structural Conceptualization" means the act of conceiving, choosing, and developing the type, disposition, arrangement, and proportioning of the structural elements of an architectural work, giving due consideration to safety, cost-effectiveness, functionality, and aesthetics.
+</LawCallout>
+
+<Warn>The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal — not about design scope. The correct reference is **Section 3(4)(a) or Section 3(5)** of the IRR, which define the scope of practice and structural conceptualization.</Warn>
+
+Structural conceptualization is part of the architect's scope. However, the **preparation and signing of structural design documents** remains the exclusive domain of licensed structural engineers. Architects conceptualize; engineers calculate and certify. This boundary prevents scope overlap while acknowledging the collaborative nature of building design.
+
+---
 
 ### The Integrated and Accredited Professional Organization
 
-Section 41 of RA 9266 designates the IAPOA—the Integrated and Accredited Professional Organization of all architects in the Philippines (now the United Architects of the Philippines, Inc.)—as the source from which nominees for PRBoA positions must come. This ensures that Board members remain accountable to the broader architectural profession while guaranteeing that only registered Filipino architects with current professional standing can serve.
+The IAPOA (now UAP) is the organization from which PRBoA nominees are drawn, per **Section 4** of RA 9266. This ensures Board members remain accountable to the profession. Only registered Filipino architects with current professional standing can serve.
 
-### Standard-Setting and Continuing Education Mandate
+---
 
-The law tasks the PRBoA with adopting and maintaining the Code of Ethical Conduct and Standards of Professional Practice. It also prescribes guidelines for a Continuing Professional Development (CPD) program in consultation with the IAPOA, with CPD attendance required for renewal of the Professional Identification Card per current PRC implementation.
+### Standard-Setting and CPD
 
-These provisions reflect modern professional regulation: the law establishes expectations for ongoing competency development while stopping short of punitive mandates that might burden practitioners, especially those in remote areas or with significant practice demands.
+The law tasks the PRBoA with adopting the Code of Ethical Conduct and Standards of Professional Practice. It also mandates a Continuing Professional Development (CPD) program, with CPD attendance required for renewal of the Professional Identification Card.
+
+---
+
+### What the Exam Tests
+
+LEA questions on this topic typically fall into three categories:
+
+| Type | Example |
+|------|---------|
+| Recall | "Which section creates the PRBoA?" (Answer: Section 4) |
+| Distinction | "How does an AoR differ from a Consulting Architect regarding liability?" |
+| Qualification | "How many years of practice are required for PRBoA membership?" (Answer: 10 years) |
+
+---
+
+### Common Misunderstandings
+
+- **Section 41 vs. Section 4:** Section 41 is about IRR adoption, NOT about IAPOA nomination. Section 4 designates IAPOA.
+- **Section 20(a) vs. Section 3:** Section 20 is about the architect's seal. Structural conceptualization is defined in Section 3(5) within the Scope of Practice.
+- **"Staggered terms" on the PRBoA:** All three serve 3-year terms, but initial appointments are staggered so terms expire in different years.
+
+---
+
+### Practice
+
+**Recall:**
+Which section of RA 9266 creates the Professional Regulatory Board of Architecture?
+
+**Apply:**
+You are an architect with 8 years of experience and a BS Architecture degree. Can you serve on the PRBoA? Why or why not?
+
+**Transfer:**
+A client hires you as AoR and separately hires a Consulting Architect for a museum project. The consultant tells the client your structural layout is wrong and submits their own. Under Article 1723, who bears liability for the project?
+
+
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)
+
+---
+### Review Prompts
+- 1-day: Draw the three-member PRBoA structure from memory, including qualifications and term limits.
+- 1-week: Explain the difference between AoR, AiCC, and Consulting Architect to a colleague in 3 sentences.
+- 1-month: Re-read the law callout boxes in this article. Can you still recall which section governs each provision?

@@ -1,4 +1,12 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define required strength (U) as the factored load combination for member design
+- Identify the load combinations for both older NSCP and NSCP 2015 editions
+- State the individual load factors for each edition
+- Determine which load combination governs (produces the largest U)
+- Explain why the earthquake factor differs between editions (1.87 vs. 1.0)
 
 Load factors reflect the uncertainty in design loads and material strength. The NSCP specifies different load factor combinations depending on which loads act on the structure—gravity, wind, or earthquake. You must know both the older NSCP edition and NSCP 2015 load factors, as the LEA tests both.
 
@@ -71,6 +79,13 @@ _NSCP 2015:_ (1) DL = 1.2, LL = 1.6, W = 1.0, E = 1.0. (2) Combined: 1.2D + 1.0W
 Always flag which edition the question asks about before calculating.
 </Tip>
 
+
+## Related Articles
+
+See also: **ASD vs LRFD** (lea-strc-003-04) for the design philosophy behind factored loads, **Structural Design Capacity** (lea-strc-005-02) for how required strength is checked against capacity, and **Load Types** (lea-strc-001-02) for the loads that enter the combinations.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing DL factor 1.4 (older NSCP) with 1.2 (NSCP 2015); state the edition first.", "Forgetting the 0.75 reduction factor in older NSCP wind/earthquake combined formulas; this yields effective factors like 0.75 × 1.7 = 1.275 for wind in combination, not 1.7 alone.", "Treating earthquake factor as 1.87 in NSCP 2015; NSCP 2015 uses 1.0 because E already incorporates design uncertainty.", "Failing to test all load combinations; always calculate U for gravity, wind, and earthquake separately, then identify which governs.", "Mixing older and NSCP 2015 factors in the same calculation; pick one edition and stay consistent."]} />

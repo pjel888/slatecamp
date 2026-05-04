@@ -9,14 +9,14 @@ After studying this article, you should be able to:
 - Identify the risk allocation differences between the two methods.
 - Apply design-build variant selection to project scenarios.
 
-
-
----
+|---
 ### Design-Build by Administration
 
 In Design-Build by Administration, the architect provides comprehensive services including all regular design phases and construction management. The architect organizes and hires construction personnel, negotiates with contractors, procures materials and equipment, maintains accounts, and manages all business transactions related to project construction.
 
-This model places responsibility for technical excellence and professional coordination entirely on the architect. The architect's compensation is typically a percentage of the total project construction cost plus specific administrative fees. The client does not receive a guaranteed maximum cost; instead, the project cost evolves based on actual construction expenses.
+<ArticleMedia id="media-lea-prac-svc-020-design-build-by-adminis" a type="image" caption="Design-Build by Administration vs. Guaranteed Maximum Cost — Risk Comparison" description="Comparison diagram contrasting two Design-Build models: Administration (architect manages construction, no cost guarantee, % of PCC fee, collaborative risk) vs. Guaranteed Maximum Cost (cost guaranteed ≤10% over estimate, architect bears financial risk, savings shared equally 50/50, 10% of PCC fee). Shows cost control mechanisms and liability thresholds for each." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+This model places responsibility for technical excellence and professional coordination entirely on the architect.
 
 Design-Build by Administration works well when project scope and requirements are relatively clear and when the architect and client share a collaborative relationship based on mutual trust. The client benefits from the architect's direct involvement in construction decisions and value management, but assumes cost risk inherent in actual construction expenditures.
 
@@ -53,29 +53,12 @@ Both models require clear contractual definition of scope, responsibilities, cha
 Successful Design-Build relationships, regardless of model, depend on transparency about cost factors, clear communication about design implications, and shared commitment to project success. The contractual structure provides the framework, but professional integrity and collaborative problem-solving determine actual outcomes.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: - <strong>Project Definition</strong> — Problem identification
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=\"irr\"
-- Props: section=\"SPP Documents\"
-- Props: title=\"Professional Practice Framework\"
-- Text: SPP Documents 201–209 establish standards for architectural services scope, fee 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -93,6 +76,3 @@ Extracted summary:
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]

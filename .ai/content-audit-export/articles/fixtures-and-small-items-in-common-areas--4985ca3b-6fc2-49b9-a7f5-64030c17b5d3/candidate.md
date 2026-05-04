@@ -3,8 +3,6 @@
 After reading this article, you should be able to:
 
 Apply minimum fixture count requirements by occupancy group under PD 1096 Rule IX: calculate required water closets, lavatories, urinals (male), and drinking fountains based on occupant load; determine fixture ratio adjustments for assembly, educational, and mercantile occupancies; and apply BP 344 accessibility requirements to all fixtures.
-### BP 344 (2024 IRR) — Philippine Licensure Examination for Architects Review
-
 ---
 
 ## REAL-WORLD HOOK
@@ -13,17 +11,9 @@ You are thirsty after a long trip through a busy transport terminal. The drinkin
 
 ---
 
-<LawCallout code="bp344">
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
-DFBA-E mnemonic: Drinking fountain spout at 750-900 mm AFF with knee clearance, public telephones max 1,200 mm controls, Benches at 450 mm seat height, ATMs controls at 900-1,200 mm, Exercise equipment requires 900×1,200 mm clear floor space.
-
-</LawCallout>
-
-<ExamTip>
-
-LEA Pattern: Questions on fixtures test specific dimensional recall. Drinking fountain spout: 750-900 mm AFF with knee clearance min 750 mm high × 450 mm deep. Public phone controls: 1,200 mm max. ATM keypad: 900-1,200 mm. Benches: 450 mm seat height with back support.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 
 ## CORE MNEMONIC: **"DFBA-E"** — *"Drink From Benches And Exercise"*
 
@@ -189,13 +179,7 @@ Benches must appear **at least** every 30 m along accessible circulation routes.
 
 ### Legal Basis: BP 344 (2024 IRR) Section 12
 
-<LawCallout code="bp344" section="Section 14 - Fixtures">
-
-
-This section covers ATMs as a fixture — the machine's reach, clearance, and hardware. Signage and counter provisions are in Module 4/12.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
 
 ### Complete Specification Table
 
@@ -378,3 +362,5 @@ Draw a simple floor plan of a 6 m × 4 m alcove in a transport terminal containi
 
 **Sanitation And Water Supply**, **Stages And Platforms**, **Accessible Seating In Assembly Areas**, **Pd 1096 Rule Vii Occupancy**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

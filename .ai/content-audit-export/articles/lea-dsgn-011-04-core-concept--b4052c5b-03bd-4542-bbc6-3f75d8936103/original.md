@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Distinguish one-point, two-point, and three-point perspective types, identify vanishing points and horizon lines, compare perspective with axonometric and orthographic projections, and apply visualization techniques for client presentations.
+
 Perspective drawings and visualization techniques translate 2D orthographic projections (plans, elevations, sections) into 3D spatial representations. The LEA expects you to understand perspective types, identify vanishing points, and recognize how perspective differs from axonometric and orthographic views.
+
 
 ## Core Concept
 
@@ -23,7 +27,7 @@ A **perspective drawing** is a three-dimensional representation that mimics how 
 
 **Perspective vs. Axonometric:**
 - **Perspective** mimics human vision; distant objects diminish; has vanishing points. More intuitive for spatial understanding but less useful for accurate dimension extraction.
-- **Axonometric** (isometric, dimetric, trimetric) is a parallel projection where receding lines remain parallel and do not converge. Scleas are consistent, making dimensions easier to extract, but the view is less intuitive than perspective. Axonometric is often used for technical or exploded views.
+- **Axonometric** (isometric, dimetric, trimetric) is a parallel projection where receding lines remain parallel and do not converge. Scales are consistent, making dimensions easier to extract, but the view is less intuitive than perspective. Axonometric is often used for technical or exploded views.
 
 **Perspective in exam contexts:**
 The LEA tests whether candidates can:
@@ -43,7 +47,7 @@ The LEA tests whether candidates can:
 | **Horizon line** | Eye level line on which vanishing points lie | Defines observer's height and viewing angle |
 | **Station point** | Observer position in 3D space | Controls viewpoint, perspective angle, and composition |
 | **Axonometric (isometric)** | Parallel projection, no vanishing points, parallel lines remain parallel | Technical details, exploded assembly views, dimension clarity |
-| **Orthographic (plan, elevation, section)** | True 2D projections, no perspective distortion, true to sclea | Construction documentation, regulatory compliance verification |
+| **Orthographic (plan, elevation, section)** | True 2D projections, no perspective distortion, true to scale | Construction documentation, regulatory compliance verification |
 
 **Construction methods:**
 - **Perspective from plan-elevation method**: Construct a perspective grid from an orthographic plan and elevation, then project points onto the perspective plane to locate building edges and features. This is the traditional hand-drawing method.
@@ -62,11 +66,18 @@ A perspective drawing is shown. The candidate must identify it as 2VP, locate th
 A candidate is asked when to use perspective versus axonometric versus orthographic views. The correct answer recognizes that perspective is best for spatial communication but axonometric or orthographic is better for technical accuracy and code compliance verification.
 
 **Pattern 3: Station point and viewpoint analysis**
-A perspective shows a building from street level, eye-level height. The candidate must explain why this viewpoint was chosen (human sclea, pedestrian experience) and how moving the station point (elevating it or moving it laterally) would change the image.
+A perspective shows a building from street level, eye-level height. The candidate must explain why this viewpoint was chosen (human scale, pedestrian experience) and how moving the station point (elevating it or moving it laterally) would change the image.
 
 <Tip>
 **Memory aid:** "VP-Horizon Rule" — In 1VP and 2VP perspectives, all vanishing points lie on the horizon line, which represents your eye level. If you're standing on the street looking at a building, the horizon is approximately at your eye height (1.5 m). Move your eye level up or down, the horizon line moves with it, and the perspective changes.
 </Tip>
+
+
+**Exam Tip:** One-point perspective: single vanishing point on horizon line, used for interiors and street views. Two-point: two vanishing points, used for exterior building views. Three-point: adds vertical vanishing point for dramatic height.
+
+## Cross-References
+
+See **LEA-DSGN-011-01** (Floor Plans) for plan-to-perspective transformation, **LEA-DSGN-011-02** (Elevations and Sections) for elevation-based perspective construction, and **LEA-DSGN-007-05** (Design Principles) for compositional visualization.
 
 ## Common Mistakes
 

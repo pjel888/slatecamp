@@ -1,18 +1,26 @@
 {
   "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
   "slug": "lea-util-004-06-cctv-systems",
-  "generated_at": "2026-05-03T13:44:10.566Z",
-  "original_hash": "sha256:6bcffc5e597fa8f088e4587365d4358a6ce7a0b985231d4ab61bd3c44727c935",
-  "normalized_hash": "sha256:b10193f5a17243e74766c299516390ee5445da91894c62b6533d969ec63f58c4",
-  "candidate_hash": "sha256:5c12808838b1a8e297514cf5bad2a5e94b86838ad688c7552c0bec89d6c1740e",
+  "generated_at": "2026-05-04T00:05:37.704Z",
+  "original_hash": "sha256:5c12808838b1a8e297514cf5bad2a5e94b86838ad688c7552c0bec89d6c1740e",
+  "normalized_hash": "sha256:af99e317efd921212a9500a541bc67def3358079dfb30515939606a4b359beb2",
+  "candidate_hash": "sha256:af99e317efd921212a9500a541bc67def3358079dfb30515939606a4b359beb2",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

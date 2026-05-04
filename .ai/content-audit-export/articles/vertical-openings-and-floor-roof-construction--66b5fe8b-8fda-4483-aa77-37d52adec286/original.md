@@ -2,6 +2,12 @@
 
 ---
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply fire protection requirements for vertical openings (stairs, shafts, chutes, ducts) under PD 1096 Rule XII and for floor/roof construction under Rule VIII; determine when draft stops, fire dampers, and firestopping are required; calculate maximum permitted floor opening sizes unprotected vs protected; identify the shaft enclosure fire-rating required by building height.
+
 ## Module Header
 
 | Field | Details |
@@ -226,11 +232,13 @@ D. No — no openings are permitted in a 3-hour occupancy separation wall under 
 
 > **Answer: B — The 12.00 sq.m double door exceeds the 10.00 sq.m maximum single opening limit**
 >
-<Note>
+<LawCallout code="pd1096" section="Rule IV - Vertical Openings">
+
 
 Per Sec. 1204, for a wall requiring 3-hour fire-resistive occupancy separation: (1) aggregate openings must not exceed 25% of wall length (25% × 20.00m = 5.00m — note this is measured by length, not area), and (2) no single opening may exceed 10.00 sq.m. The 12.00 sq.m double door violates the single-opening maximum regardless of the total. The 4.00 sq.m service window alone would be compliant on its own. Option A incorrectly applies the 25% limit to area rather than length and ignores the 10.00 sq.m single-opening cap. Option C is wrong because 3-hour fire assemblies alone cannot cure an oversize opening — the opening itself must first comply. Option D is incorrect — openings are permitted, subject to the 25%-of-length and 10.00 sq.m limits.
 
-</Note>
+
+</LawCallout>
 
 ---
 
@@ -260,3 +268,18 @@ D. Compliant — Sec. 1206 applies only to buildings taller than 3 storeys
 **Session 4 (Day 14):** Review only the Active Recall Questions. If you answer all three correctly and can explain each wrong answer, this module is mastered.
 
 *These articles are LEA board exam review materials based on PD 1096 (National Building Code of the Philippines) and cross-referenced with IBC provisions for comparative analysis. Always verify against the current edition of the implementing rules and regulations.*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Vertical openings ≤ 1.0 m² may be UNPROTECTED if they do not connect more than 3 stories. Openings > 1.0 m² require 1-hour enclosure (or 2-hour for buildings > 4 stories). The 1.0 m² threshold and the 3-story limit are both frequently tested.
+
+## Cross‑References
+
+**Fire Resistive Construction Ratings**, **Stairs Handrails Guardrails**, **Vent Shafts And Ventilation**, **Penthouses And Roof Structures**
+

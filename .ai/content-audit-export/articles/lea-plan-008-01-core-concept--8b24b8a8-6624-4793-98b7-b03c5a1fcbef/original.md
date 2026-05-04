@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply climate resilience and disaster-responsive planning principles to CLUPs and site planning, integrate hazard mapping and risk assessment into land use decisions, design for typhoon, earthquake, and flood resilience, and apply RA 10121 DRRM framework.
+
 Climate resilience and disaster-responsive planning integrate hazard awareness into land use decisions, requiring planners to incorporate risk mapping, setback standards, and resilience frameworks into comprehensive land use plans. The Philippine context—exposure to typhoons, earthquakes, and flooding—makes this both a planning priority and a legal mandate.
+
 
 ## Core Concept
 
@@ -33,6 +37,13 @@ The Philippines ranks among the world's most disaster-prone countries, facing an
 3. **Coastal hazard zone application** — "A municipality is planning a new fishing settlement 25 meters from mean high tide. Does this comply with post-Yolanda zoning standards?" → Answer: No, the standard requires 40 meters. This tests application of the numeric standard to planning scenarios.
 
 <Tip>Memory aid: **PHIVOLCS = 5 meters** (both words start with one significant value: PHIVOLCS fault setback). **Post-Yolanda = 40 meters** (easy to recall as a protective buffer roughly the length of 10 houses or 1.5 city blocks).</Tip>
+
+
+**Exam Tip:** Climate adaptation = adjusting to actual/expected climate effects. Mitigation = reducing greenhouse gas emissions. Resilience = ability to withstand and recover. Know which strategies are adaptation vs. mitigation — the LEA tests this distinction.
+
+## Cross-References
+
+See **LEA-PLAN-005-04** (DRRM) for site-level hazard integration, **LEA-PLAN-001-05** (CLUP Process) for resilience mainstreaming in CLUPs, and **LEA-PLAN-003-06** (Informal Settlements) for resettlement due to hazard exposure.
 
 ## Common Mistakes
 

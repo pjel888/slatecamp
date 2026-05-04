@@ -1,4 +1,10 @@
 # Site Planning Accessible Routes vs Open Space
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Reconcile the competing demands of accessible routes (BP 344 accessible path requirements: maximum slope 1:20, minimum width 1.20 m, passing spaces every 30 m) with open space and landscaping requirements under PD 1096 and local ordinances; calculate minimum accessible route length vs open space area; and identify when accessible routes may deviate from the shortest path.
+---
 ### BP 344 × PD 1096 Interface: Fitting Accessibility into Required Yards, Courts & PSO
 
 ---
@@ -285,9 +291,11 @@ Total required yard area: 100 sq.m.  ← exactly equals TOSL (tight!)
 | **Effective building footprint** | **400 sq.m.** | = AMBF ✓ |
 | **PSO check** | 400/500 = 80% | ✓ AT LIMIT |
 
-<LawCallout code="bp344" title="because they are open, uncovered circulation features. The site is">
+<LawCallout code="bp344" section="Section 5 - Accessible Routes">
+
 
 Conclusion: The accessible ramp, parking bay, and dropped sidewalk fit within the 3.00 m front yard and do not push the PSO over 80% — because they are open, uncovered circulation features. The site is BP 344 + PD 1096 compliant.
+
 
 </LawCallout>
 
@@ -320,9 +328,11 @@ Conclusion: The accessible ramp, parking bay, and dropped sidewalk fit within th
 
 > **Why must accessible features be allowed in required open spaces?**
 >
-<LawCallout code="bp344" title="often barely enough for the required yards. If every ramp, curb cut, and accessi">
+<LawCallout code="bp344" section="Section 5.1 - Site Planning">
+
 
 Philippine lots are small. A 60% PSO rule leaves only 40% of the lot as open space — often barely enough for the required yards. If every ramp, curb cut, and accessible parking bay were counted as building footprint, developers would be mathematically forced to eliminate accessibility features to stay within PSO limits. The law recognizes that accessibility infrastructure is circulation, not construction — it occupies the ground plane but does not enclose habitable space. Requiring it to fit within PSO would punish compliance with BP 344. Hence, open (uncovered) accessible features are classified as part of the open space, not as building footprint.
+
 
 </LawCallout>
 
@@ -359,9 +369,11 @@ Philippine lots are small. A 60% PSO rule leaves only 40% of the lot as open spa
 > **A:** **4000 mm** stall width, plus a **1800 mm** access aisle.
 
 **Q4.** A 5-storey building has an inner court. What is the minimum inner court size?
-<LawCallout code="nbcp" title="5 floors (PD 1096 Rule VIII).">
+<LawCallout code="pd1096" section="Rule VIII - Open Space">
+
 
 A: 5.00 × 5.00 m for buildings 3–5 floors (PD 1096 Rule VIII).
+
 
 </LawCallout>
 
@@ -372,16 +384,20 @@ A: 5.00 × 5.00 m for buildings 3–5 floors (PD 1096 Rule VIII).
 > **A:** **Yes.** A permanent roofed structure — even over a parking bay — counts as building footprint and must be included in the PSO calculation.
 
 **Q7.** What is the minimum accessible path width through a required yard or court?
-<LawCallout code="bp344">
+<LawCallout code="bp344" section="Section 5.3 - Accessible Path">
+
 
 A: 1200 mm (BP 344 minimum passageway width).
+
 
 </LawCallout>
 
 **Q8.** In what zone is no front yard setback required under PD 1096?
-<LawCallout code="bp344">
+<LawCallout code="bp344" section="Section 5.4 - Curb Ramps">
+
 
 A: C-3 (Regional Commercial). However, BP 344 accessible entry requirements still apply.
+
 
 </LawCallout>
 
@@ -389,9 +405,11 @@ A: C-3 (Regional Commercial). However, BP 344 accessible entry requirements stil
 > **A:** AMBF = 500 × 0.70 = 350 sq.m. TOSL = 150 sq.m. Required yards: front (4.5 m × 20 m = 90 sq.m.) + rear (2 m × 20 m = 40 sq.m.) + 2 sides (2 × 2 m × 25 m = 100 sq.m.) = **230 sq.m.** TOSL (150) < required yards (230). **The PSO must be reduced further, or lot coverage recalculated** — this lot cannot fit all required setbacks at 70% PSO.
 
 **Q10.** What is the minimum landing dimension at the top and bottom of a ramp?
-<LawCallout code="bp344">
+<LawCallout code="bp344" section="Section 5.5 - Crosswalks">
+
 
 A: 1500 mm in the direction of travel (BP 344). At a change of direction, 1500 × 1500 mm.
+
 
 </LawCallout>
 
@@ -413,3 +431,18 @@ A: 1500 mm in the direction of travel (BP 344). At a change of direction, 1500 �
 ---
 
 *Module 8 | BP 344 × PD 1096 Site Planning Interface | Philippine LEA Review Series*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Accessible route requirements: max slope 1:20, min width 1.20 m, passing spaces every 30 m (1.50 m × 1.50 m minimum). Open space minimum = 30% of lot area (PD 1096). When these conflict, the accessible route width requirement governs — you cannot reduce path width to meet open space minimums.
+
+## Cross‑References
+
+**Site Exterior Circulation**, **Wheelchair Maneuvering And Parking**, **Accessible Seating In Assembly Areas**, **Pd 1096 Rule Viii Setbacks And Easements**
+

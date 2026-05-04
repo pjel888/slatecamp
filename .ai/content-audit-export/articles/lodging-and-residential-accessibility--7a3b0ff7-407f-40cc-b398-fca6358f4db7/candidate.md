@@ -12,24 +12,13 @@ After reading this article, you should be able to:
 Apply BP 344 accessibility requirements to lodging (hotels, inns, dormitories) and residential buildings: calculate the minimum number of accessible guest rooms (5% of total), required roll-in shower rooms, and visual alarm requirements; distinguish Type A (fully accessible) from Type B (adaptable) dwelling units; and apply adaptable design features to meet future accessibility needs.
 ---
 
-
 > Room 214 of a budget hotel in Cebu. The doorbell is silent. The guest — a Deaf traveler — cannot hear the smoke alarm. The bed is 620 mm high, and she cannot transfer from her wheelchair. The peephole is at 1500 mm — she cannot see through it. The light switch is only 200 mm from the floor and the cord plug. Her accessible room is not accessible at all. She files a formal complaint. The building official arrives. He consults the 2024 IRR. Within minutes, he has a list of violations in hand. **You are that building official. Do you know every violation?**
 
 ---
 
-<LawCallout code="bp344" section="Section 8 - Residential Accessibility">
+[SLATECAMP_UI_BLOCK:ui_0008 component="LawCallout" status="preserved"]
 
-
-LEASH-VERBAL mnemonic: Lever handles, Electrical outlets at 450 mm, Alarms with vibrating pillow, Switches at 1,200 mm, Hanger racks at 1,200 mm, Visual strobe ≤3 flashes/sec, Emergency buttons, Room count 2% of total, Bed max 500 mm, Accessible toilets, Lower peephole at 1,000 mm.
-
-
-</LawCallout>
-
-<ExamTip>
-
-LEA Trap: The 2% quota is calculated based on the TOTAL guest rooms, not just accessible rooms. For a 150-room hotel, 2% = 3 accessible rooms minimum. Each must have the full LEASH-VERBAL package. A common mistake is forgetting the strobe alarm requirements for Deaf guests.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 
 ## CORE MNEMONIC FRAMEWORK
 
@@ -207,66 +196,31 @@ Government facilities serve the broadest cross-section of the population, includ
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #1: 2% vs. 1/50
-The 2024 IRR uses **2%**. The old IRR used **1 per 50** (which is also 2%, but only up to 150 rooms, then the rate drops). For hotels under 150 rooms, the results are similar. For large hotels, the **2024 IRR's 2% flat rate** and the old formula give very different answers.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #2: Government vs. Private
-Government-owned lodging = **10%** accessible. Private lodging = **2%** accessible. Mixing these up is a classic exam trap. The question will specify ownership type.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #3: The Peephole Height
-Standard peephole height is ~1500 mm (standing eye level). The **accessible peephole is at 1000 mm** (wheelchair eye level). The exam may ask for the accessible peephole height specifically — answer is **1000 mm**, not 1500 mm.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #4: Strobe Flash Rate Direction
-The spec says **≤ 3 flashes per second** — NOT "at least 3." Too-fast flashing can trigger photosensitive epilepsy. The ceiling is 3 Hz. An exam choice of "minimum 3 flashes/sec" is **wrong**.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #5: Strobe Lens is White, NOT Red
-Fire alarms are traditionally red. The strobe lens is **white** (higher contrast). The word "FIRE" on the lens identifies the purpose. This is counterintuitive and frequently tested.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #6: Switch is 200 mm FROM LATCH SIDE
-Not from the hinge side. Not 200 mm from center. The **latch side** (the side with the door handle/lever) is the operative reference. This ensures the switch is reachable when approaching from the corridor and turning the handle.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Callout" status="preserved"]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #7: Sliding Doors are "Preferred"
-The spec says sliding closet doors are **preferred** (Sec. 17.6) — not mandated. Swing-out doors are not prohibited, but sliding doors are better because they don't require clear floor swing space. The exam may test whether "preferred" = "required."
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
 
 ---
 
@@ -359,3 +313,5 @@ Your classmate submits a hotel design for review:
 
 **Minimum Requirements Group A Dwellings**, **Bp 344 Accessible Washrooms**, **Wheelchair Maneuvering And Parking**, **Ra 9442 Pwd Privileges And Incentives**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

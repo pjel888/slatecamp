@@ -1,32 +1,33 @@
 # Content Diff Report: accessible-seating-in-assembly-areas
 
-Generated: 2026-05-03T13:44:53.144Z
+Generated: 2026-05-04T00:06:30.069Z
 Article ID: 571e1d4f-999b-4cf9-a4de-3d35157314d2
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:36496badf40d8a151aa233201161baa32256d00a0cdf94b725fc607aa116a2bd`
-- Normalized: `sha256:b7b4e495a21a109a8ca0336152b700e96a358a52550137c74d334a3fa40fbbe2`
-- Candidate: `sha256:e2cc0b3222a5993bb0f8ea9d70cccc1eafba735ff1a277e6bcf3ba3edd0bb37e`
+- Original: `sha256:e2cc0b3222a5993bb0f8ea9d70cccc1eafba735ff1a277e6bcf3ba3edd0bb37e`
+- Normalized: `sha256:349bb86b0754ede4afece666c1eab425e4792ddb04153a355910fa07e2b32313`
+- Candidate: `sha256:349bb86b0754ede4afece666c1eab425e4792ddb04153a355910fa07e2b32313`
 
 ## Line summary
 
-- Changed lines: 326
-- Inserted lines: 27
-- Deleted lines: 0
+- Changed lines: 286
+- Inserted lines: 0
+- Deleted lines: 48
 
 ## UI block preservation
 
 - UI blocks expected: 10
-- UI blocks preserved: 10
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 10
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 10 preserved UI block(s).
 
 ## Warnings
 

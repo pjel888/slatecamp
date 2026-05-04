@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Explain the ASD method: F_actual ≤ F_allowable = F_y / Ω
+- Define the safety factor (Ω) and distinguish it from LRFD's φ and load factors
+- Apply ASD to stress checks in steel, timber, and masonry
+- Identify which NSCP edition uses ASD
 
 ASTM A36 is the most common structural steel in the Philippines. Under the Allowable Stress Design (ASD) method, the allowable stresses for A36 are: shear 0.40_F_y (99 MPa), axial compression 0.60_F_y, and bending 0.66_F_y (164 MPa). A36 has _F_y = 248 MPa and _F_u = 400 MPa. You must memorize these allowable stress fractions and understand which applies to each stress type.
 
@@ -63,6 +70,13 @@ Bending is always higher than compression. If you see 0.60 for bending, that is 
 **A36 Properties:** _F_y = 248 MPa, F_u = 400 MPa, E = 200,000 MPa. Use these for calculations.
 </Tip>
 
+
+## Related Articles
+
+See also: **ASD vs LRFD** (lea-strc-003-04) for the comparison of design philosophies, **Required Strength** (lea-strc-005-01) for the LRFD alternative, and **Stress-Strain** (lea-strc-003-01) for the yield strength that defines allowable stress.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing bending allowable 0.66Fy with compression allowable 0.60Fy; bending is higher because the stress distribution is non-uniform.", "Using shear allowable 0.40Fy for bending; shear is the lowest fraction because it is the least ductile under monotonic loading.", "Forgetting that A36 Fy = 248 MPa, not 250 or 255 MPa; precision matters in code citations.", "Applying allowable stresses from a different steel grade (e.g., A992) to A36; always confirm the material grade first.", "Misremembering the fraction: writing 0.65 or 0.67 instead of 0.66 for bending; the exact value is 0.66."]} />

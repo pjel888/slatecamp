@@ -1,4 +1,8 @@
 # Accessible Seating in Assembly Areas
+## Learning Goal
+After reading this article, you should be able to:
+
+Calculate the number and distribution of accessible wheelchair seating locations required in assembly areas under BP 344; apply sightline requirements (18° maximum vertical angle, companion seating); determine which row locations satisfy dispersion requirements; and identify when accessible seating must be provided on each tier or balcony level.
 ### BP 344 (2024 IRR) — LEA Review Series
 
 ---
@@ -52,11 +56,13 @@
 | Old IRR | 301 – 500 seats | 6 spaces | Old BP 344 IRR |
 | Old IRR | > 500 seats | 6 + 1 per 100 seats above 500 | Old BP 344 IRR |
 
-<Note>
+<LawCallout code="bp344" section="Section 11 - Assembly Areas">
+
 
 EXAM NOTE: The 2024 IRR replaces the old tiered table with the flat 3% rule. Exams may ask about EITHER version. Know both.
 
-</Note>
+
+</LawCallout>
 
 ---
 
@@ -102,7 +108,7 @@ Conflict Resolution: BP 344 and PD 1096 may overlap in assembly halls with tiere
 ## REASON FOR THE LAW
 
 ### Why 3% and Not a Flat Number?
-Because **sclea matters**. A 50-seat chapel needs far fewer WC spaces than a 10,000-seat arena. The old tiered table was an approximation; the 3% rule is proportional and eliminates the "cliff effect" (e.g., a 499-seat hall needed only 6 spaces, but a 501-seat hall needed 7).
+Because **scale matters**. A 50-seat chapel needs far fewer WC spaces than a 10,000-seat arena. The old tiered table was an approximation; the 3% rule is proportional and eliminates the "cliff effect" (e.g., a 499-seat hall needed only 6 spaces, but a 501-seat hall needed 7).
 
 ### Why Can't an Accessible Route Overlap a Wheelchair Space? (Sec. 4.2)
 Because when a wheelchair user occupies that space, a circulation route running through it would **trap or block them**. The space must be a safe haven, not a corridor.
@@ -235,6 +241,13 @@ The 5% priority waiting seats are for **waiting areas** (lobbies, queues). They 
 
 ## ACTIVE RECALL DRILL
 
+<Warn>
+
+⚠️ COMMON EXAM MISTAKE: Students frequently confuse the 3% wheelchair space rule (App. D Sec. 4) with the 5% priority waiting seat rule (Sec. 18.2.b.iii). The 3% applies to seating in the assembly bowl. The 5% applies to lobby/waiting-area seats. They are SEPARATE requirements that add together — not interchangeable percentages.
+
+</Warn>
+
+
 *(Cover the answer column, read the question, recall before looking)*
 
 | # | Question | Answer |
@@ -258,6 +271,13 @@ The 5% priority waiting seats are for **waiting areas** (lobbies, queues). They 
 ---
 
 ## 60-SECOND BLITZ QUIZ
+
+<ExamTip>
+
+**LEA Tip — Dispersal is implied, not explicit.** The 2024 IRR says wheelchair spaces must "adjoin accessible circulation" (Sec. 4.4). It does NOT explicitly say "disperse throughout the seating bowl." However, exam questions expect dispersal because clustering all spaces in one location violates the implied principle of equal access. If an answer choice says "group all spaces at the back row," it is WRONG.
+
+</ExamTip>
+
 
 *(Read and answer each in under 4 seconds)*
 
@@ -303,3 +323,10 @@ You are now the reviewer. A classmate says:
 ---
 
 *Module 01 | BP 344 2024 IRR | LEA Review Series | Appendix D, Sections 3.3.a, 4.2–4.7, 18.2.b.iii*
+
+---
+
+## Cross‑References
+
+**Wheelchair Maneuvering And Parking**, **Public Service Counters And Atms**, **Comprehensive Signage Package**, **Conflict Matrix Stairs Guards Elevators**
+

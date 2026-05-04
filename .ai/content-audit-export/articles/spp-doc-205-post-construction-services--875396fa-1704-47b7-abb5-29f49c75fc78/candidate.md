@@ -96,17 +96,7 @@ Business Development and Management is the most commercially oriented sub-servic
 
 ### Building and Facilities Administration: Services at a Glance
 
-<ComparisonTable>
-
-| Sub-Service | Primary Mandate | Key Activities |
-|---|---|---|
-| **Building Maintenance** | Physical upkeep of structure and common areas | Structural/systems monitoring, rules enforcement, security, janitorial oversight |
-| **Grounds and Landscaping** | Outdoor environment management | Landscape contractor supervision, RROW/parking/walkway maintenance |
-| **Equipment Maintenance** | Mechanical/electrical system coordination | Third-party service contractor oversight for HVAC, fire suppression, power systems |
-| **Business Development** | Revenue and occupancy optimization | Tenant schemes, rental billing, utility charge management |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="ComparisonTable" status="preserved"]
 
 ***
 
@@ -128,12 +118,7 @@ Facilitates multi-party reviews by involving the original designers, engineers, 
 **d. Study, research, and give solutions to any discovered/emerging/evolving defects and failures**
 Addresses defects such as shrinkage, water seepage, spalling, settlement, and other building pathologies that emerge during the building's operational life. This is **explicitly referred to in SPP 205 as "forensic investigation" of the building's systems**, with a cross-reference to **SPP 203.13 (Forensic Architecture)**.
 
-<Callout variant="note">
-
-*SPP 205 expressly states: "This is referred to as 'forensic investigation' of the building's systems (Reference Doc 203)."*
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
 
 ***
 
@@ -141,18 +126,7 @@ Addresses defects such as shrinkage, water seepage, spalling, settlement, and ot
 
 The cross-reference between SPP 205 and SPP 203.13 (Forensic Architecture) is architecturally and legally significant:
 
-<ComparisonTable>
-
-| Aspect | SPP 205 Role | SPP 203.13 Role |
-|---|---|---|
-| **Trigger** | Defects discovered during building operation | Retained specifically for forensic investigation |
-| **Who performs** | Architect as Building Administrator, or owner's retained Architect | Consulting Architect with Forensic Architecture specialty |
-| **Scope** | Identification of defects and initial investigation | Full scientific study: causes, deviations, faulty activities, plan/design and construction methodology |
-| **Output** | Recommendations to Owner | Technical report with findings and recommendations; basis for legal claims if necessary |
-| **Fee basis** | Included in building administration fee | Separate engagement under SPP 203 |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0003 component="ComparisonTable" status="preserved"]
 
 If the post-construction evaluation under SPP 205 reveals defects that require deeper forensic investigation — particularly those that may involve contractor or designer liability — the owner should engage a Consulting Architect under SPP 203.13.
 
@@ -186,28 +160,11 @@ SPP 205 prescribes two principal methods of compensation for post-construction s
 
 ### Primary Methods
 
-<ComparisonTable>
-
-| Method | Rate / Structure | Notes |
-|---|---|---|
-| **Percentage of Gross Rentals, Maintenance Fees, and Security Fees** | RPF = **4% to 6%** of Gross Rentals (Value-Based / Incentive-Based) | The preferred method for commercial buildings; creates a direct financial incentive for the Architect to maximize building occupancy and revenue |
-| **Monthly Salary / Fixed Fee** | Monthly sum agreed between Owner and Architect | Preferred for owner-occupied buildings without rental income, or where the owner prefers a predictable fixed cost |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0004 component="ComparisonTable" status="preserved"]
 
 ### Additional Methods
 
-<ComparisonTable>
-
-| Method | Best Used For |
-|---|---|
-| **MDPE (Multiplier × Direct Personnel Expenses)** | Variable-scope or time-limited post-construction engagements |
-| **Retainer + Reimbursable Expenses** | Periodic or on-call consulting relationships where the Architect is not fulltime |
-| **PFPE (Professional Fee + Expenses)** | Ongoing consulting with clear scope and defined deliverables |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0005 component="ComparisonTable" status="preserved"]
 
 ### The Incentive Logic of the Percentage Method
 
@@ -224,44 +181,15 @@ The percentage-of-gross-rentals method is notable because it **aligns the Archit
 
 SPP 205 is the **final link in the SPP 201–205 service chain**, which together constitute the full scope of **Comprehensive Architectural Services (CAS)** as defined under SPP 206:
 
-<ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ComparisonTable" status="preserved"]
 
-| SPP Document | Service Phase | Role in Lifecycle |
-|---|---|---|
-| SPP 201 | Pre-Design | Feasibility, programming, site selection |
-| SPP 202 | Design and Construction | Six-phase regular services |
-| SPP 203 | Specialized Services | Technical and specialist overlays |
-| SPP 204-A | Fulltime Supervision | On-site quality control during construction |
-| SPP 204-B | Construction Management | Project-wide cost, time, and quality management |
-| **SPP 205** | **Post-Construction** | **Building administration, management, and evaluation** |
-| SPP 206 | Comprehensive (umbrella) | All of the above, packaged under a Project Manager |
-
-</ComparisonTable>
-
-
-<Callout variant="note">
-
-*"Post-construction services 'wrap up' the whole range of architectural services. It gives full meaning to what the professional calls Comprehensive Architectural Services."* — SPP 206 / Course Hero
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
 
 ***
 
 ## Relationship to Other SPP Documents
 
-<ComparisonTable>
-
-| Related SPP | Nature of Relationship |
-|---|---|
-| **SPP 203.13** (Forensic Architecture) | SPP 205 cross-references SPP 203.13 for deep forensic investigations of building defects discovered during post-construction evaluation |
-| **SPP 203.11** (Building Testing and Commissioning) | Pre-turnover commissioning under SPP 203 directly feeds into the building's operational baseline that SPP 205 monitors and maintains |
-| **SPP 203.10** (Facilities Maintenance Support) | The Facilities Maintenance Support service under SPP 203 is the specialized technical overlay to SPP 205's general building administration role |
-| **SPP 204-A / 204-B** | SPP 204-A and 204-B handle construction phase supervision and management; SPP 205 takes over at building **turnover** — the moment the contractor hands possession to the owner |
-| **SPP 206** (Comprehensive Services) | SPP 206 packages all services SPP 201–205 under a single Project Manager; SPP 205 is the final deliverable of the CAS lifecycle |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
 
 ***
 
@@ -281,15 +209,23 @@ SPP 205 is the **final link in the SPP 201–205 service chain**, which together
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Four post-construction services: (1) Building commissioning and start-up, (2) Record (as-built) drawings, (3) Post-occupancy evaluation (POE), (4) Operations and maintenance manuals. Distinguish: as-built drawings ARE a post-construction service (SPP 205), NOT part of SPP 202. POE is frequently tested as the systematic evaluation of building performance after occupancy.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Four post-construction services: (1) Building commissioning and start-up, (2) Record (as-built) drawings, (3) Post-occupancy evaluation (POE), (4) Operations and maintenance manuals. Distinguish: as-built drawings ARE a post-construction service (SPP 205), NOT part of SPP 202. POE is frequently tested as the systematic evaluation of building performance after occupancy.
+
 ## Cross‑References
 
 **Spp Doc 206 Comprehensive Architectural Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 209 Architectural Consulting Services Pacs**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

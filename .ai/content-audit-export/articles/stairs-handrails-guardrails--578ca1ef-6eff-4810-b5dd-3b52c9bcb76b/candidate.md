@@ -12,9 +12,10 @@ _Stairs–Ramps–Elevators Integration Module (Accessibility + Life Safety)_[we
 
 ## 1. Big Picture: How BP 344 and PD 1096 Interact
 
-<LawCallout code="pd1096" section="Rule XII - Guardrails">
-BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
 - **PD 1096 IRR** (National Building Code) governs general **stair geometry, exits, and fire safety** (rise/run, landings, enclosures, guardrails, exit capacity, travel distance).[web:45][web:47]
 - **BP 344 IRR (with 2013–2024 amendments)** overlays **accessibility refinements**: dual handrail heights, tactile warnings, and coordination with ramps and elevators, particularly for public and institutional buildings.[web:1][web:2][web:9][web:33][web:49]
@@ -140,31 +141,32 @@ Guard (protective railing) must be **1,100 mm** where drop > 750 mm. This is **s
 
 LEA Trap: When BP 344 and PD 1096 conflict on stairs, BP 344 accessibility requirements PREVAIL for accessible routes, but PD 1096 governs structural and life-safety requirements. Dual handrails (700/900 mm) is the most tested BP 344 stair requirement.
 
-\
-Extracted summary:
-- Props: 
-- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Calculate accessible parking slots per standards.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Calculate accessible parking slots per standards.
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</Note>
+<Note>
+Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+</Note>
+<Note>
+**LEA Pattern:** Determine if a building meets accessibility requirements. Calculate accessible parking slots per standards.
+</Note>
+<Note>
+Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+</Note>
+<Note>
+**LEA Pattern:** Determine if a building meets accessibility requirements. Calculate accessible parking slots per standards.
+</Note>
+
+
+---
+
+## Exam Tip
+
+ALE Trap: When BP 344 and PD 1096 conflict on stairs, BP 344 accessibility requirements PREVAIL for accessible routes, but PD 1096 governs structural and life-safety requirements. Dual handrails (700/900 mm) is the most tested BP 344 stair requirement.
+
+
+
+<ArticleMedia type="image" caption="Stair Geometry — PD 1096 Riser, Tread, and Handrail Dimensions" description="Cross-section and plan of a typical stair showing: riser height (max 200mm PD 1096), tread depth (min 250mm), nosing projection, handrail at 800-900mm (PD 1096) overlaid with BP 344 dual handrails at 700mm and 900mm, guardrail at 1100mm min for drops over 750mm, landing depth equal to stair width, and headroom clearance (2.00m min)." />
 ## Cross‑References
 
 **Widths Slopes**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Ramp Slope Tiers**, **Transport Nodes Escalators Walkways**

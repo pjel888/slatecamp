@@ -1,14 +1,20 @@
 ## Environmental Laws Affecting Architectural Practice—EIA, DENR Regulations, and DAO 2003-30
 
-<JSX>null</JSX>
+## Learning Goal
 
-Environmental law significantly constrains and directs architectural design. The Philippine Environmental Code (PD 1152 as amended by RA 8749), Department of Environment and Natural Resources (DENR) regulations, and specific administrative orders (particularly DAO 2003-30 on environmental impact assessment) establish mandatory environmental review processes. Architects must understand these requirements to ensure designs are legally compliant and environmentally responsible.
+After studying this article, you should be able to:
 
+- Describe environmental laws affecting architectural practice: EIA, DENR regulations, DAO 2020.
+- Explain when an Environmental Compliance Certificate (ECC) is required.
+- Identify the architect's obligations under environmental impact assessment rules.
+- Apply environmental law compliance to project scenarios.
+
+---
 ### The Environmental Impact Assessment (EIA) System
 
 Environmental Impact Assessment is the systematic process of identifying, predicting, and evaluating the environmental effects of a proposed project. In the Philippines, the EIA system is regulated by DENR and requires specific project categories to undergo EIA before construction can proceed. Projects that alter natural landscapes, generate significant waste, affect water resources, or impact sensitive ecosystems must undergo detailed environmental review.
 
-Projects categorized as requiring EIA include: large-sclea commercial or residential developments, industrial facilities, infrastructure projects (roads, bridges, ports), mining and quarrying, power plants, and projects near protected areas or ecologically sensitive zones. The architect should determine early whether the proposed site and project scope trigger EIA requirements. This determination affects the design schedule and budget—EIA studies typically take 3–6 months and can reveal environmental constraints requiring design modifications.
+Projects categorized as requiring EIA include: large-scale commercial or residential developments, industrial facilities, infrastructure projects (roads, bridges, ports), mining and quarrying, power plants, and projects near protected areas or ecologically sensitive zones. The architect should determine early whether the proposed site and project scope trigger EIA requirements. This determination affects the design schedule and budget—EIA studies typically take 3–6 months and can reveal environmental constraints requiring design modifications.
 
 ### DAO 2003-30 and the Environmental Impact Statement Process
 
@@ -55,3 +61,33 @@ If environmental approvals are delayed or conditions are stricter than anticipat
 As of 2026, the Securities and Exchange Commission (SEC) has fully implemented mandatory sustainability reporting for publicly listed companies (PLCs), requiring the disclosure of environmental, social, and governance (ESG) metrics. This introduces a significant environmental disclosure obligation that directly affects architectural practice.
 
 For architectural firms working on projects for listed companies, the building design process must now generate measurable sustainability data. Architects are increasingly required to provide their corporate clients with detailed metrics—such as projected energy consumption, carbon footprint analyses, water efficiency data, and materials lifecycle assessments—to fulfill the client's SEC reporting requirements. Furthermore, architectural firms that are themselves publicly listed must comply with these disclosure obligations regarding their own corporate operations and environmental impact.
+
+<LawCallout code="denr" section="DAO 2003-30 - EIS Requirements">
+Legal Basis: PD 1151 (Environmental Policy), PD 1152 (Environmental Code), DENR DAO 2003-30 (EIA System). Environmental Compliance Certificate (ECC) required for environmentally critical projects or projects in critical areas.
+</LawCallout>
+
+<Warn />
+
+<ExamTip />
+
+<Tip />
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)
+
+Extracted summary:
+- Props: (none)
+- Text: null
+[/SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]

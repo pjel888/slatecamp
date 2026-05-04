@@ -1,29 +1,80 @@
 ## Performance Bond — Purpose, Typical Amount, and Conditions for Calling the Bond
 
+## Learning Goal
 
-The performance bond serves as a financial guarantee of the contractor's commitment to complete the work according to contract specifications, protecting the owner's interests if the contractor defaults.
+After studying this article, you should be able to:
+
+- Define the performance bond and its purpose: guarantee contractor performance.
+- State the typical amount (100% of the contract price).
+- Explain conditions for calling the bond (default by contractor).
+- Distinguish the performance bond from the payment bond.
+
 
 
 ### Purpose and Legal Function of Performance Bonds
 
 A performance bond is security furnished by the contractor and the surety to guarantee that the contractor will execute the work in full compliance with the contract terms. This bond creates a three-party relationship: the owner (obligee), the contractor (principal), and the surety (guarantor). If the contractor fails to complete the work as contracted, the surety becomes liable to the owner for the financial consequences.
 
-The performance bond serves multiple protective functions. It ensures financial capacity and creditworthiness of the contractor, as the surety conducts thorough due diligence before issuing the bond. It guarantees performance of all contractual obligations, from quality of work to adherence to specifications and timelines. The bond also provides compensation if the contractor defaults and a replacement contractor must be hired at potentially higher cost.
+<LawCallout code="ra9266" section="UAP Doc 301" title="Performance Bond — Three-Party Relationship">
+The performance bond creates a three-party relationship: Owner (obligee) — protected party; Contractor (principal) — provides the bond; Surety (guarantor) — financially guarantees performance. If the contractor defaults, the surety has options: (1) allow the contractor to continue under closer supervision; (2) pay for a replacement contractor; (3) negotiate a settlement with the owner. The surety's liability is LIMITED to the bond amount.
+</LawCallout>
 
 ### Typical Bond Amounts and Percentage Requirements
 
-Performance bonds are typically required in an amount equal to the full contract price or a specified percentage thereof, commonly ranging from 50% to 100% of the contract value. Standard practice in construction contracts often fixes the performance bond amount at 100% of the contract price, meaning the surety's maximum liability equals the contract amount. The specific percentage is established in the contract documents before bidding.
+Performance bonds are typically required in an amount equal to the full contract price or a specified percentage thereof. Standard practice often fixes the performance bond amount at 100% of the contract price. For government projects under RA 9184, the performance bond is typically required.
 
-Higher percentages or additional security may be required for large projects, contracts with significant risk factors, or contractors with limited track records. Conversely, some contracts for minor works may permit reduced bond amounts. The bond amount must be stated clearly in the contract documents to provide certainty to all parties. If additional work is required through change orders, the bond amount may need to be increased to maintain its protective value at the new contract total.
+<KeyValues
+  values={{
+    "Standard Performance Bond": "100% of contract price",
+    "Range": "50% to 100% of contract value",
+    "Bid Bond Amount": "1% to 5% of bid amount",
+    "Payment Bond": "50% to 100% of contract value",
+    "Guarantee Bond": "1 year from Substantial Completion"
+  }}
+/>
 
 ### Calling the Bond — Grounds and Procedures
 
-The owner may call the performance bond only when the contractor materially breaches contractual obligations. Typical grounds for calling the bond include the contractor's failure to commence work within the specified time, suspension of work without authorization, failure to maintain progress according to the contract schedule, or abandonment of the project. The architect or owner's representative typically identifies the breach and documents it thoroughly.
+The owner may call the performance bond only when the contractor materially breaches contractual obligations. Typical grounds include: failure to commence work within the specified time, suspension of work without authorization, failure to maintain progress per schedule, or abandonment of the project. Before calling the bond, the owner must provide formal notice and reasonable opportunity to remedy the breach (typically 7 to 14 days).
 
-Before calling the bond, the owner must provide formal notice to the contractor specifying the default and providing reasonable opportunity to remedy the breach. The contract documents usually specify a notice period—commonly 7 to 14 days—within which the contractor must cure the default. Only after this notice period expires without satisfactory remedy can the owner proceed to call the surety. The architect must ensure all documentation supporting the default claim is prepared and submitted to the surety with the call notice.
+<ProcessFlow>
+  **Calling the Performance Bond Procedure:**
+  Step 1: Contractor materially breaches contract (abandonment, failure to progress, etc.)
+  Step 2: Owner/Architect documents the default thoroughly
+  Step 3: Owner provides formal written notice to contractor (7-14 day cure period)
+  Step 4: Contractor fails to remedy within cure period
+  Step 5: Owner submits claim to surety with supporting documentation
+  Step 6: Surety investigates and has options (let contractor continue, hire replacement, or settle)
+  Step 7: Surety pays up to the bond amount (liability capped at bond face value)
+</ProcessFlow>
 
-### Rights and Limitations of the Surety
+<Warn>
+  **Exam Trap:** The surety's liability is LIMITED to the bond amount. If completion costs exceed the bond, the surety is not obligated to pay the excess. The owner's recovery is therefore capped at the bond amount. This is a frequent LEA test point — owners cannot recover damages exceeding the bond from the surety.
+</Warn>
 
-When the performance bond is called, the surety has several options. The surety may allow the contractor to continue work under closer supervision, may pay for a replacement contractor to complete the work, or may negotiate a settlement with the owner. The surety's liability is limited to the bond amount—if completion costs exceed the bond, the surety is not obligated to pay the excess. The owner's recovery is therefore capped at the bond amount.
+## Common Mistakes
 
-The surety has the right to investigate the default claim and may contest it if the grounds do not justify calling the bond. If the contractor was not actually in default or if the owner failed to follow proper notification procedures, the surety may refuse to honor the call. This underscores the importance of documenting defaults thoroughly and following all procedural requirements specified in the contract. The relationship between the owner and surety is contractual, not based on the underlying construction contract, so terms of the performance bond itself govern the surety's obligations.
+<WikiMistakeList
+  mistakes={[
+    "Believing the surety is liable for all completion costs — liability is capped at the bond amount",
+    "Assuming the owner can call the bond without notice — formal notice and cure period (7-14 days) required",
+    "Thinking the performance bond covers subcontractor non-payment — that is the Payment Bond's function",
+    "Confusing bid bond with performance bond — bid bond guarantees the bidder will sign; performance bond guarantees execution of work",
+    "Believing the bond amount is fixed at the original contract price — bond may need adjustment for change orders",
+  ]}
+/>
+
+---
+
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)

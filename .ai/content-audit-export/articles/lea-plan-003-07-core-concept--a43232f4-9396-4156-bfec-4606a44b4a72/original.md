@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Identify specialized housing programs for Indigenous Peoples (IPs), persons with disabilities (PWDs), senior citizens, disaster-affected households, and economic zone workers, and apply legal frameworks (IPRA, PWD Act, Senior Citizens Act) to housing scenarios.
+
 Beyond mainstream socialized and economic housing, the Philippines operates specialized housing programs for vulnerable or distinct populations: Indigenous Peoples (IPs), persons with disabilities (PWDs), senior citizens, disaster-affected households, and urban workers in special economic zones. These programs reflect recognition that one-size-fits-all housing does not serve populations with specific needs or rights.
+
 
 ## Core Concept
 
@@ -47,7 +51,7 @@ Special policies apply to IP relocation: alternative sites must be within ancest
 
 The Philippines' special housing programs reflect evolving recognition of structural inequality and vulnerability. The 1992 constitution (Article II, Section 15) established the right to health, food, shelter, and education. Sectoral laws (RA 8371 for IPs, RA 7277 for PWDs, RA 9257 for seniors) operationalized these rights.
 
-However, implementation remains uneven. IP housing programs are often underfunded relative to need; PWD accessibility standards are frequently violated in practice; disaster housing remains crisis-reactive rather than preventive. The post-Yolanda experience (2013) revelead weaknesses: relocated communities in Tacloban and other areas faced livelihood collapse because new sites lacked job access. This lesson drove integration of livelihood planning into contemporary disaster housing responses.
+However, implementation remains uneven. IP housing programs are often underfunded relative to need; PWD accessibility standards are frequently violated in practice; disaster housing remains crisis-reactive rather than preventive. The post-Yolanda experience (2013) revealed weaknesses: relocated communities in Tacloban and other areas faced livelihood collapse because new sites lacked job access. This lesson drove integration of livelihood planning into contemporary disaster housing responses.
 
 **DHSUD's Inclusive Housing Strategy** (2018 onward) attempts to coordinate special programs more systematically. However, resource constraints and competing demands mean specialized programs remain marginal compared to mainstream socialized housing production.
 
@@ -60,6 +64,13 @@ However, implementation remains uneven. IP housing programs are often underfunde
 **Pattern 3 — Program Characteristics:** "What distinguishes disaster-affected housing from standard relocation?" → Speed requirement; trauma sensitivity; hazard-aware site selection; livelihood restoration emphasis.
 
 <Tip>Special housing = tailored to population needs. IPs require FPIC + ancestral land priority. PWDs require universal accessible design. Disaster housing requires speed + livelihood restoration.</Tip>
+
+
+**Exam Tip:** Know the enabling laws: IPRA (RA 8371) for Indigenous Peoples, RA 9442 (PWD Act) for persons with disabilities, RA 9994 (Senior Citizens Act) for elderly. These mandate specific housing provisions within each population's legal framework.
+
+## Cross-References
+
+See **LEA-PLAN-003-01** (Housing Law Framework) for enabling legislation, **LEA-PLAN-003-04** (Housing Production) for delivery methods adapted to special populations, and **LEA-PLAN-005-04** (DRRM) for disaster-affected housing.
 
 ## Common Mistakes
 

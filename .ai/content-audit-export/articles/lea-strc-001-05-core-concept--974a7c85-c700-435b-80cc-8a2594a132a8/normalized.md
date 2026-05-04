@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 This topic covers the five types of internal forces that develop within structural members under loading. The LEA tests whether you can identify, define, and distinguish internal forces conceptually. You will NOT be tested on stress calculations, strain relationships, or material-specific formulas (like the timber shear formula); focus on force type definitions and their structural effects.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-001-05-core-concept" a type="image" caption="Internal Forces — Tension, Compression, Shear, Bending, and Torsion" description="Five-panel illustration showing each internal force type: (1) Tension — pulling arrows elongating a member; (2) Compression — pushing arrows shortening a member with buckling indicator; (3) Shear — transverse sliding action at a cut section; (4) Bending — curved member showing compression/tension faces; (5) Torsion — twisting moment about longitudinal axis. Each panel shows the force direction, member deformation, and a real structural example." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 When loads are applied to a structure, they cause internal forces to develop within the structural members. Cutting a member at any cross-section and examining the internal actions reveals forces and moments that keep the separated portions in equilibrium. Five types of internal forces are fundamental to structural behavior:
 
@@ -59,15 +60,6 @@ In Philippine structural design, engineers identify internal forces through free
 4. **Conceptual Application:** "In a cable-supported structure, the cables experience primarily ___." — tests tension concept application.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Internal forces — five types remembered by location and effect:** - **Tension & Compression = axial** (along the member length; pulling or pushing) - **Shear = transverse** (perpendicular; sliding) - **Bending = moment** (curves the member) - **Torsion = twisting moment** (rotates about the axis) **Shear is highest at supports; bending is highest at midspan (for simply supported beams).**
-- **Exam relevance:** High — expect at least one question on this topic per LEA set.
-
-
-
-[/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -76,13 +68,5 @@ See also: **Force Properties** (lea-strc-001-01) for the fundamentals, **Beam Ty
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Treating bending and shear as the same thing: Shear is a transverse force; bending is a moment. They are related (shear causes bending to vary) but distinct. A beam can have shear with zero moment at one section and moment with zero shear at another.\",\"Confusing torsion with bending: Torsion twists the member about its axis; bending curves it perpendicular to the axis. A twisted beam and a bent beam have opposite failure modes.\",\"Assuming all axial force is tension: Compression is equally important; columns are critical structural elements that must be designed for compressive strength and buckling resistance. Compression is not a weakness; it is a load type.\",\"Forgetting that tension cannot reverse in some materials: Concrete and masonry have low or zero tensile strength. A structural element that experiences tension in concrete design requires reinforcement; plain concrete cannot carry tension alone.\",\"Ignoring shear in design: Shear forces create diagonal cracks in concrete and grain splitting in timber. Shear must be checked; it is not a secondary effect.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

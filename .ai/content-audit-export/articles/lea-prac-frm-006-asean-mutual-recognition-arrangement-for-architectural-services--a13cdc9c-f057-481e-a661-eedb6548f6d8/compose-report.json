@@ -1,18 +1,26 @@
 {
   "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
   "slug": "lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services",
-  "generated_at": "2026-05-03T13:44:10.831Z",
-  "original_hash": "sha256:bcbffb0f6256da6cfb5e19a555af58da18699484bb0c163e0c45a75212520b89",
-  "normalized_hash": "sha256:3472021d627ee8636c40d1116fdc497643c6ea8c59407d4f54fbbe6e3b0fe2eb",
-  "candidate_hash": "sha256:1f42c77f1993c3d9c2f8ab707d8f91920dcab2d7600f8db1b3fcb5f916749cbe",
+  "generated_at": "2026-05-04T00:05:38.025Z",
+  "original_hash": "sha256:1f42c77f1993c3d9c2f8ab707d8f91920dcab2d7600f8db1b3fcb5f916749cbe",
+  "normalized_hash": "sha256:6e0aaabf21d1f491d898181af1b8bd6a9233726ce7cc0edcb92cf22c3273948a",
+  "candidate_hash": "sha256:6e0aaabf21d1f491d898181af1b8bd6a9233726ce7cc0edcb92cf22c3273948a",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

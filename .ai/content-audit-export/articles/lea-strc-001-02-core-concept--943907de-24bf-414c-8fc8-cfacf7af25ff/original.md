@@ -1,4 +1,12 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Identify the six primary load categories defined by the NSCP
+- Recall the minimum live load values for common Philippine occupancies
+- Distinguish between dead load (permanent) and live load (temporary/changeable)
+- Determine when live load reduction applies based on tributary area
+- Identify seismic zones in the Philippines correctly
 
 This topic covers the types of loads that act on structures in Philippine design. The LEA tests whether you can identify, define, and distinguish load types—and apply the correct load values from NSCP. You will NOT be tested on load combinations or analysis methods; focus on definitions and specified values.
 
@@ -51,8 +59,8 @@ These are MINIMUM design values for common Philippine occupancies:
 
 ## Seismic Zone Reference (Philippines)
 
-- **Zone 1Zone 2: Lower seismic risk; Z = 0.2 (Palawan except Busuanga, Tawi-Tawi, Sulu)
-- **Zone 4:** Higher seismic risk; Z = 0.4 (All other provinces; most severe zone in PH))
+- **Zone 1: Lower seismic risk; Z = 0.2 (Palawan except Busuanga, Tawi-Tawi, Sulu)
+- **Zone 2:** Higher seismic risk; Z = 0.4 (All other provinces; most severe zone in PH))
 
 ## Philippine Practice Context
 
@@ -75,6 +83,13 @@ In Philippine design, load specifications must follow NSCP Table 201 (minimum DL
 
 Zone 2 (seismic) covers **all PH except Palawan, Tawi-Tawi, Sulu.**</Tip>
 
+
+## Related Articles
+
+See also: **Force Properties** (lea-strc-001-01) for the fundamentals of forces, **Required Strength** (lea-strc-005-01) for how loads combine into design demands, and **Base Shear** (lea-strc-004-03) for seismic load calculations.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing dead load with live load: DL is permanent and structural (concrete, steel beams); LL is temporary and changeable (people, furniture). A fixed partition wall is DL; the office workers are LL.","Using wrong LL value: each occupancy has a NSCP-specified minimum. Using residential (1.9 kPa) for an office (2.4 kPa) is non-compliant.","Forgetting to check tributary area for LL reduction: reduction only applies if tributary area ≥ 18.6 m² (200 ft²). A small room with 8 m² cannot use LL reduction.","Confusing load value with load factor: a dead load factor is 1.4 (older NSCP) or 1.2 (2015). This is applied in combination, not part of the load's nominal value.","Applying seismic zone incorrectly: Zone 2 (Z=0.4) applies to almost all Philippines. Zone 1 applies only to three provinces (Palawan, Tawi-Tawi, Sulu)."]} />

@@ -4,6 +4,8 @@
 
 Design-Build services divide into two distinct models that differ fundamentally in cost structure and risk allocation. Understanding the differences between Design-Build by Administration and Design-Build by Guaranteed Maximum Cost is essential for architects and clients to establish appropriate contractual relationships and manage project expectations.
 
+<ArticleMedia type="delivery-comparison" caption="Design-Build by Administration vs. Guaranteed Maximum Cost — Risk Comparison" description="Comparison diagram contrasting two Design-Build models: Administration (architect manages construction, no cost guarantee, % of PCC fee, collaborative risk) vs. Guaranteed Maximum Cost (cost guaranteed ≤10% over estimate, architect bears financial risk, savings shared equally 50/50, 10% of PCC fee). Shows cost control mechanisms and liability thresholds for each." />
+
 ### Design-Build by Administration
 
 In Design-Build by Administration, the architect provides comprehensive services including all regular design phases and construction management. The architect organizes and hires construction personnel, negotiates with contractors, procures materials and equipment, maintains accounts, and manages all business transactions related to project construction.

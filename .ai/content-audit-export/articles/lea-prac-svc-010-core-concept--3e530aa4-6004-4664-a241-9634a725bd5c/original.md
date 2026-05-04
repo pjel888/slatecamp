@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe interior design as an allied architectural service.
+- Explain the architect's qualifications for providing interior design services.
+- Identify the phases and deliverables of interior design projects.
+- Distinguish interior design (architect-led) from interior decoration.
 
 SPP Doc 208 governs Architectural Design Competitions (ADC) — the structured process for selecting exceptional design solutions through competitive evaluation. The LEA tests your knowledge of competition types, the roles of professional advisors and jury members, and the conditions that maintain professional standards throughout the competitive process.
 
@@ -6,7 +13,7 @@ SPP Doc 208 governs Architectural Design Competitions (ADC) — the structured p
 
 SPP Doc 208 establishes the framework for organizing and managing architectural design competitions at the professional level. These competitions serve dual purposes: identifying innovative design approaches and developing emerging tleant within the profession. The professional advisor and jury composition determine competition credibility and outcomes.
 
-### Rationlea and Classification of Design Competitions
+### Rationale and Classification of Design Competitions
 
 Design competitions emerged from the need to secure superior design solutions without limiting consideration to a single firm. Competitions stimulate creative exploration, elevate design standards, and provide exposure for tleanted architects. SPP Doc 208 classifies competitions into two primary categories: Project Architectural Design Competitions (PADCs) and Ideas Competitions. Project competitions address specific built work with defined sites and detailed briefs. Ideas competitions explore conceptual solutions without immediate construction intent.
 
@@ -33,3 +40,33 @@ The competition secretariat manages submission reception, document organization,
 ### Conditions and Professional Standards in Competitions
 
 Competition conditions establish submission requirements, intellectual property rights, compensation for winning and selected designs, and timeline specifications. Professional conditions require truthful representations, ethical conduct, and respect for competitors' intellectual contributions. Conditions address publication rights, exhibition arrangements, and design team acknowledgment. Clear conditions prevent disputes and maintain professional standards throughout the competitive process.
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+
+<ProcessFlow>
+<ol>
+  <li><strong>Initiation</strong> — Client consultation and scope definition</li>
+  <li><strong>Proposal</strong> — Fee structure and contract execution</li>
+  <li><strong>Service Delivery</strong> — Performance per SPP document</li>
+  <li><strong>Completion</strong> — Turnover and documentation</li>
+</ol>
+</ProcessFlow>
+
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)

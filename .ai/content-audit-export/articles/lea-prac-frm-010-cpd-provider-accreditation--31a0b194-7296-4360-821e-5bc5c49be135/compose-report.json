@@ -1,18 +1,24 @@
 {
   "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
   "slug": "lea-prac-frm-010-cpd-provider-accreditation",
-  "generated_at": "2026-05-03T13:44:11.514Z",
-  "original_hash": "sha256:7fe9fbe4ce872db2b495d237e3c572020ff0b22c2dffa73fb1e1df3a0b4244c8",
-  "normalized_hash": "sha256:3eb80738a522a5ff2106e391b91ad424252dfcb828392478eb0311ede47ac123",
-  "candidate_hash": "sha256:d58c3804ef3988f505818048e7711bfed3dcbbdab73bd9252de5b5394da321d8",
+  "generated_at": "2026-05-04T00:05:38.888Z",
+  "original_hash": "sha256:d58c3804ef3988f505818048e7711bfed3dcbbdab73bd9252de5b5394da321d8",
+  "normalized_hash": "sha256:b7275341ccca5a95fba7dedeb09eb3477823c597706570976fa4d0508aa7fece",
+  "candidate_hash": "sha256:b7275341ccca5a95fba7dedeb09eb3477823c597706570976fa4d0508aa7fece",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
+  "unused_blocks": [
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

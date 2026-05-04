@@ -10,6 +10,13 @@ Thickness, width, and length must all be measured in the units specified: thickn
 
 In the Philippines, lumber is often purchased in nominal sizes (e.g., 2 inches × 4 inches × 8 feet). Actual dressed sizes are slightly smaller due to planing (e.g., actual 1.5 inches × 3.5 inches). For estimation, use nominal dimensions unless otherwise specified. Standard length increments are 6 feet, 8 feet, 10 feet, and 12 feet in the Philippines and global markets.
 
+
+<ArticleMedia id="media-board-foot-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing board foot calculation: T × W × L / 12 with annotated lumber dimensions and calculation example"
+  caption="Future diagram: board foot measurement — formula illustration with dimensional lumber example"
+  suggestedAsset="3D lumber diagram with dimension callouts and formula"
+  placementIntent="Visualizes the board foot formula for lumber estimation" />
+
 ## Key Provisions
 
 | Parameter | Value | LEA Relevance |
@@ -26,56 +33,16 @@ In the Philippines, lumber is often purchased in nominal sizes (e.g., 2 inches �
 
 ## Worked Examples
 
-<Example>
-**Scenario 1: Formwork for concrete slab using 1×6 boards, 100 linear meters required, standard 8-foot boards**
+[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
 
-**Step 1: Determine quantity per board**
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 
-Each standard 1×6×8 ft board provides: BF = (1 × 6 × 8) ÷ 12 = 48 ÷ 12 = 4 board feet per board
 
-**Step 2: Convert total length to feet**
-
-100 meters = 100 ÷ 0.3048 = 328 feet (approximately)
-
-**Step 3: Calculate number of boards needed**
-
-Each 8-foot board covers 8 feet of length. Boards needed = 328 ft ÷ 8 ft/board = 41 boards
-
-**Step 4: Calculate total board feet**
-
-Total BF = 41 boards × 4 BF/board = 164 board feet
-
-Alternatively: 100 meters = 328 feet total length. Using 1×6 boards: BF = (1 × 6 × 328) ÷ 12 = 1,968 ÷ 12 = 164 BF
-
-**Step 5: Add waste (10%)**
-
-Total with waste = 164 BF × 1.10 = 180.4 BF ≈ 181 BF
-
-**Answer: 181 board feet of 1×6 lumber, approximately 41–42 boards of 8-foot length**
-</Example>
-
-<Example>
-**Scenario 2: Framing for a structure requiring multiple sizes: 50 pieces of 2×4×8 ft, 30 pieces of 2×6×10 ft, and 20 pieces of 1×8×12 ft**
-
-**Step 1: Calculate board feet for each size**
-
-2×4×8: BF per board = (2 × 4 × 8) ÷ 12 = 64 ÷ 12 = 5.33 BF/board. Total: 50 boards × 5.33 = 266.7 BF
-
-2×6×10: BF per board = (2 × 6 × 10) ÷ 12 = 120 ÷ 12 = 10 BF/board. Total: 30 boards × 10 = 300 BF
-
-1×8×12: BF per board = (1 × 8 × 12) ÷ 12 = 96 ÷ 12 = 8 BF/board. Total: 20 boards × 8 = 160 BF
-
-**Step 2: Sum total board feet**
-
-Total BF = 266.7 + 300 + 160 = 726.7 BF ≈ 727 BF
-
-**Step 3: Add 5% waste**
-
-Total with waste = 727 BF × 1.05 = 763.4 BF ≈ 764 BF
-
-**Answer: 764 board feet total lumber required**
-</Example>
-
+<ArticleMedia id="media-board-foot-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step board foot estimation example showing lumber dimension conversion, quantity calculation per member, and total board feet for a framing plan"
+  caption="Future diagram: board foot estimation worked example — lumber takeoff from framing plan"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of lumber quantity estimation" />
 ## Quick Reference: Board Feet Calculation Table
 
 | Nominal Size | Standard 8 ft | Standard 10 ft | Standard 12 ft | Standard 16 ft |
@@ -113,21 +80,19 @@ On the LEA, lumber questions focus on:
 
 6. **Linear-to-board conversion**: Convert running linear feet/meters to board feet using the formula.
 
-<Tip>
-**Memory aid**: The formula BF = (T × W × L) ÷ 12 is simple if you remember: thickness and width in inches, length in feet, divide by 12 (not 144). A 2×4×8 board is always 5.33 BF. A 2×6×10 board is always 10 BF. Memorize one or two common sizes as anchors.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Forgetting to convert dimensions to inches and feet before applying the formula" correction="Thickness and width MUST be in inches. Length MUST be in feet. Convert meters to feet (1 meter ≈ 3.28 feet). Do NOT mix metric and imperial units." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Using (T × W × L) ÷ 144 when length is in feet instead of inches" correction="Use BF = (T × W × L) ÷ 12 when length is in FEET. Use ÷ 144 only if ALL three dimensions (including length) are in inches." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Confusing nominal dimensions with actual (dressed) dimensions" correction="Specifications typically use nominal sizes (e.g., 2×4). Actual dimensions after planing are 1.5 × 3.5. For estimation, use nominal unless explicitly told to use actual." />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Forgetting to add waste factor or applying it incorrectly" correction="Waste is typically 5–15% and applies to the total board feet calculated, not to individual pieces. Multiply total BF by (1 + waste %)." />
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Using the wrong formula constant (144 instead of 12, or vice versa)", "Mixing metric dimensions (meters) with imperial (inches, feet) without converting", "Calculating board feet per piece but not accounting for quantity of pieces", "Forgetting that board feet is a VOLUME measure, not a linear or area measure"]} />
+[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
 
 ## Related Articles
 

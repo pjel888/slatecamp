@@ -7,24 +7,20 @@ Distinguish grounding from bonding — grounding connects the electrical system 
 
 _Grounding_ and _bonding_ are distinct functions with specific definitions in the PEC:
 
+<ArticleMedia id="media-lea-util-003-05-core-definitions-groundi" a type="image" caption="Grounding Electrode System — Ground Rod, Ufer Ground, Ground Plate, Bonding of Metal Pipes" description="Building electrical grounding diagram showing: driven ground rod (2.4m min, 16mm dia, ≤25 ohms per PEC 2.50.56), concrete-encased Ufer ground (6m conductor in foundation footing), ground plate (0.186m² copper). Bonding conductors connect metal water piping, structural steel, gas piping to service ground. GFCI (5mA, 25ms response) and AFCI locations per PEC annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 **Grounding** refers to the intentional connection of electrical systems or equipment to earth, creating a low-resistance path for fault current. The PEC defines this as the connection of conductive parts to the ground electrode system to establish zero reference potential (PEC Article 2.00 (Definitions)).
 
 **Bonding** means the connection of conductive parts that are not normally part of the electrical circuit—such as metal enclosures, structural steel, water pipes, and gas piping—to ensure they are at the same electrical potential and to carry fault current safely. Bonding prevents dangerous voltage differences between conductive surfaces (PEC Article 2: Definitions and Article 2.50).
 
 ## Grounding Electrode System
 
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
 
-<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 
-
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
-
-
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 The grounding electrode system provides the physical connection from the building electrical system to the earth. The PEC requires a grounding electrode system in all buildings and structures supplied by an electrical service (PEC Article 2.50.50).
 

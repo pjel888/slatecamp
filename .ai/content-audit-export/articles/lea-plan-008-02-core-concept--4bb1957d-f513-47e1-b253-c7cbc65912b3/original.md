@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply smart city concepts — GIS, IoT sensors, real-time data, digital platforms — to urban planning and city management, evaluate digital planning tools for Philippine LGUs, and identify opportunities and risks of smart city implementation.
+
 Smart cities integrate digital technologies—GIS, real-time data, IoT sensors, and digital platforms—into urban planning and city management to improve efficiency, livability, and sustainability. Digital planning enables planners to visualize land use patterns, monitor infrastructure performance, and engage communities through data-informed decision-making.
+
 
 ## Core Concept
 
@@ -35,6 +39,13 @@ Philippine cities face rapid urbanization—Metro Manila, Cebu, Davao, and secon
 3. **Digital engagement and participatory planning** — "A municipality launches an online platform for residents to report potholes, blocked drains, and inadequate street lighting. How does this serve planning?" → Answer: Provides ground-truth data on infrastructure maintenance gaps; identifies priority repair zones; informs capital improvement plans. Tests the link between digital engagement and planning implementation.
 
 <Tip>Memory aid: **GIS = Geographic Information Systems = spatial layer analysis**. Think of GIS as the digital equivleant of drawing transparent maps on overlays and stacking them to find patterns. **IoT = Internet of Things = real-time sensors feeding live data**. Smart cities collect constant data; static data is yesterday's planning.</Tip>
+
+
+**Exam Tip:** Smart city components: GIS (mapping analysis), IoT (sensors for traffic/air quality/waste), big data analytics (demand forecasting), digital platforms (e-governance, community engagement). Focus on PLANNING applications, not technology details.
+
+## Cross-References
+
+See **LEA-PLAN-008-01** (Climate Resilience) for smart climate monitoring, **LEA-PLAN-002-06** (Urban Design) for smart streets design, and **LEA-PLAN-007-05** (LGU Planning) for LGU digital planning capacity.
 
 ## Common Mistakes
 

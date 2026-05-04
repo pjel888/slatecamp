@@ -1,6 +1,16 @@
 ## What You Need to Know for the LEA
-You must memorize the precise definition of basic wind speed, the three exposure categories, and how buildings are classified as open, enclosed, or partially enclosed. Low-rise building height limits and flexible structure thresholds determine which design procedures apply.
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Define basic wind speed (V) as a 3-second gust at 10 m in Exposure C
+- State the return period (50-year, 0.02 annual probability)
+- Classify a building as open, enclosed, or partially enclosed
+- Classify a building as low-rise and determine if flexible structure provisions apply
+- Identify Exposure A, B, and C terrain categories
+
+---
 ## Core Concept
 Wind load provisions begin with establishing a baseline wind hazard and then classifying the specific building that experiences it. The _basic wind speed V_ is defined as a 3-second peak gust speed measured 10 meters above the ground in Exposure C terrain. This speed has a 0.02 annual probability of exceedance, corresponding to a 50-year mean recurrence interval—the standard hazard level for Philippine structural design codes.
 
@@ -37,5 +47,10 @@ The Philippines lies in a typhoon belt where wind speeds regularly exceed 200 km
 
 <Tip>_Basic Wind Speed_ = 3-sec gust at 10m, Exposure C baseline. If you cannot state this in one sentence, you will fail the exam. The 0.02 probability is non-negotiable; it defines the entire hazard level.</Tip>
 
+## Related Articles
+
+See also: **Load Types** (lea-strc-001-02) for wind load as a load category, **Required Strength** (lea-strc-005-01) for wind load combinations, and **Base Shear** (lea-strc-004-03) for comparison with seismic lateral loads.
+
 ## Common Mistakes
-<WikiMistakeList mistakes={["Confusing basic wind speed with locally measured wind or gusts at arbitrary heights—basic wind speed is always the Exposure C reference at 10 m","Treating Exposure B (moderate) and Exposure C (open) as the same category; Exposure B is denser and reduces wind speed more","Ignoring the dual conditions for low-rise buildings (both height ≤18 m AND height ≤ least dimension); a tall, narrow building fails the second condition","Assuming an open building (>80% walls) automatically experiences less wind load; interior pressurization still occurs if the building encloses significant air volume","Forgetting that flexible structure thresholds (f < 1 Hz or height > 4 × least dimension) trigger dynamic wind analysis, not static procedures"]} />
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+

@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Material properties are the language of structural behavior. Ductility, brittleness, elasticity, toughness, and creep define how materials respond to load, time, and environment. Master the sharp distinctions between them, and you can predict failure modes with precision.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-003-02-core-concept" a type="image" caption="Material Properties Comparison — Steel, Concrete, and Timber" description="Three-column comparison table visual: Steel (E=200 GPa, ductile, isotropic), Concrete (E~4700√f'c, brittle in tension, orthotropic), Timber (E varies by species/grain, anisotropic, viscoelastic). Each column shows stress-strain curve shape, Poisson's ratio, thermal expansion coefficient, and typical failure mode illustration." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Material properties describe how materials deform, store energy, and resist damage. These properties are independent of shape or size; they belong to the material itself, not the structure. Understanding this distinction is critical: a steel beam can be designed to fail in ductile or brittle modes depending on geometry and loading. The steel itself is ductile.
 
@@ -68,15 +69,6 @@ The NSCP permits service-level deformations up to span/240 for floors and span/1
 **Pattern 4: Creep and Time.** Concrete under sustained load is loaded to a constant stress (e.g., 0.4 f'c). Questions ask for the long-term deformation, time-dependent amplification, or the distinction between immediate and creep strains. A concrete beam deflects immediately upon loading, then continues to deflect slowly over years.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Ductility = wire. Malleability = sheet. If you cannot draw it into wire, it is not ductile. If you cannot hammer it into a sheet, it is not malleable. Toughness = area under the curve. Creep = time. Remember: creep requires sustained load AND elevated (or moderately elevated) temperature; room-temperature creep in steel is negligible, but concrete creeps at any temperature.
-
-
-
-
-[/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -85,13 +77,5 @@ See also: **Stress-Strain** (lea-strc-003-01) for the diagram that defines these
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes=true, Confusing=true, ductility=true, with=true, malleability=true, Ductility=true, is=true, drawing=true, into=true, wire=true, tension=true, hammering=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

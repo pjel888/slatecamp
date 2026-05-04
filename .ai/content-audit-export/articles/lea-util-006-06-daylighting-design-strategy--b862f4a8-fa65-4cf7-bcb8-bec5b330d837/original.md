@@ -1,7 +1,13 @@
 ## What You Need to Know for the LEA
 
-Lighting design in the Philippines integrates natural daylight with artificial systems to achieve energy efficiency, occupant comfort, and compliance with building codes. PD 1096 Rule VIII Section 806 establishes natural lighting requirements that vary by room type and occupancy; specific window area percentages are determined by room function and are not a uniform 10% of floor area. The Philippine Green Building Code further requires energy-efficient lighting systems and daylight integration in non-residential buildings. Tropical design conditions—intense solar radiation, seasonal monsoon variations, and high humidity—demand careful orientation and shading strategies to maximize daylight while controlling glare and heat gain.
+## Learning Goal
 
+<ExamTip>
+This section is frequently tested. Pay special attention to the distinctions and exceptions.
+</ExamTip>
+
+
+Design daylighting strategies for tropical buildings — window-to-floor ratio (WFR) requirements, shading device design, light shelves, diffusing glazing, light tubes, clerestories — to maximize natural light while controlling solar heat gain per PD 1096 Rule VIII.
 ## Daylighting Design Strategy
 
 ### Window Placement and Orientation
@@ -79,7 +85,7 @@ Number of fixtures = 63,492 / 4,500 ≈ 15 fixtures
 - 4000K–4100K: neutral white, standard for offices and retail
 - 5000K–6500K: cool white/daylight, suitable for detailed visual work and areas requiring color accuracy
 
-**Color Rendering Index (CRI)** rates fidelity to natural color (0–100 sclea). CRI ≥ 90 is specified for spaces requiring accurate color discrimination (graphics, textiles, healthcare); CRI 70–80 is acceptable for general office work.
+**Color Rendering Index (CRI)** rates fidelity to natural color (0–100 scale). CRI ≥ 90 is specified for spaces requiring accurate color discrimination (graphics, textiles, healthcare); CRI 70–80 is acceptable for general office work.
 
 ## Integrated Lighting Control Systems
 
@@ -145,7 +151,7 @@ PD 1096 Rule VIII Section 806 establishes natural lighting requirements. For hab
 Compliance verification:
 - Measure window area on elevations facing primary sidelighting direction
 - Total transparent glazed area divided by floor area of served space
-- Skylights and clerestories count toward this requirement on a 1.5:1 horizontal-equivleant basis (accounting for different daylighting geometry)
+- Skylights and clerestories count toward this requirement on a 1.5:1 horizontal-equivalent basis (accounting for different daylighting geometry)
 
 For a 100 m² office floor, minimum window area = 10 m². If windows are 2 meters tall, required linear length = 10 m² / 2 m = 5 meters.
 
@@ -223,6 +229,18 @@ Mitigation strategies:
 
 ---
 
-<InfoBox title="Key Takeaway" type="success">Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30–50% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.</InfoBox>
+<Callout title="Key Takeaway" type="success">Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30–50% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.</Callout>
 
-<Leart type="note">For tropical climates, specify daylight harvesting setpoints with ±15–20% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.</Leart>
+<Note type="note">For tropical climates, specify daylight harvesting setpoints with ±15–20% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.</Note>
+
+## Related Articles
+
+See also within Lighting and Acoustics: **lea-util-006-02-core-concept**, **lea-util-006-03-core-concept**, **lea-util-006-05-core-concept**, **lea-util-006-07-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+
+
+
+<Note>
+Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards and amendments.
+</Note>

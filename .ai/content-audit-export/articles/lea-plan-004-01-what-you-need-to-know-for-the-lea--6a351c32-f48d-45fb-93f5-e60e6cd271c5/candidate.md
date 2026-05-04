@@ -10,7 +10,7 @@ Analyze a site's physical conditions—topography, sun orientation, wind pattern
 
 **The Critical Rule You Cannot Reverse**
 
-<Note type="warn">Closely spaced contour lines = **STEEP** terrain. Widely spaced contour lines = **FLAT** or gently sloping terrain. This is one of the most-tested distinctions in site planning. Reversing this rule = automatic wrong answer.</Note>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
 
 When contour lines crowd together, the elevation changes rapidly over a short distance—that is steepness. When they are far apart, elevation changes slowly—that is flatness.
 
@@ -23,6 +23,7 @@ For site planning:
 - **5–15% slope:** Moderate; standard building techniques work
 - **15–25% slope:** Steep; retaining walls, terracing common
 - **>25% slope:** Very steep; specialized design, expensive to develop
+<ArticleMedia id="media-lea-plan-004-01-what-you-need-to-know-fo" a type="image" caption="Site Physical Analysis — Contours, Sun, Wind, and Views Diagram" description="Composite site analysis diagram showing: (1) contour lines with slope percentages (0-5% flat, 5-15% moderate, 15-25% steep, >25% very steep); (2) sun path and shadow patterns at different times of day with east-west orientation marked; (3) prevailing wind arrows (amihan northeast Oct-Apr, habagat southwest May-Sep); (4) view corridors and visual focal points. Annotated with key planning considerations for each element." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Sun Orientation and Shadows
 
@@ -82,7 +83,7 @@ The ratio of building height to street width (H:W ratio) affects how enclosed or
 
 **Key Ratios**
 
-<Note type="warn">**H:W = 1:2 is considered comfortable enclosure.** The building is half as tall as the street is wide. This feels human-sclead and welcoming. **H:W = 2:1 (building twice as tall as street is wide) is oppressive—canyon-like and uncomfortable.**</Note>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
 
 Ratios explained:
 - **1:4** — Very open, exposed feeling; feels like a parking lot
@@ -92,6 +93,7 @@ Ratios explained:
 - **3:1 or higher** — Very oppressive; minimal sky visible
 
 The H:W ratio is one of the most tested distinctions in urban design. Always remember: **1:2 is ideal; 2:1 is oppressive.**
+<ArticleMedia id="media-lea-plan-004-01-what-you-need-to-know-fo" a type="image" caption="Height-to-Width Ratio Comparison — Street Section Diagrams (1:4, 1:2, 1:1, 2:1, 3:1)" description="Cross-section comparison showing five H:W building-to-street ratios: 1:4 (very open, parking lot feel), 1:2 (comfortable, plaza-like — ideal), 1:1 (defined but still comfortable), 2:1 (oppressive, canyon-like — tested as the negative example), 3:1+ (very oppressive, minimal sky visible). Color coded green (comfortable) to red (oppressive)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Soils and Foundation Constraints
 
@@ -125,7 +127,7 @@ Vacant or remote sites often require lengthy utility runs, increasing developmen
 Physical site conditions do not exist separately from regulations. Flood zones, fault zones, and water body easements are legal _and_ physical constraints.
 
 **Examples (Full Law Treatment in Other Articles)**
-- <WikiExamTable rows={3} cols={2} headers={["Constraint", "Why It Matters Here"]} data={[["PD 1067 water body easements (3m/20m/40m per water body type)", "Limits buildable area on sites near esteros, rivers, or lakes"], ["PHIVOLCS active fault zones (5m minimum setback)", "Seismic risk; buildings must be set back from fault traces"], ["Flood-prone areas (RA 10121 DRRM mainstreaming)", "May be unsuitable for ground-level sensitive uses"]]} />
+- [SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
 
 These constraints are referenced here as physical and regulatory _facts_; their full legal treatment belongs to other articles.
 
@@ -138,18 +140,7 @@ These constraints are referenced here as physical and regulatory _facts_; their 
 
 ### Checklist: Physical Analysis Before Site Planning
 
-<Tip>When analyzing a site for planning, cover these eight areas:
-
-1. Read contours and identify slope hazards
-2. Map sun orientation and shadow patterns seasonally
-3. Note prevailing wind direction and typhoon exposure
-4. Document views from and to the site
-5. Assess H:W ratios of nearby buildings (for context)
-6. Identify soil type and bearing capacity constraints
-7. Locate existing utilities and assess proximity
-8. Note all legal constraints (easements, flood zones, faults)
-
-These inform what is _possible_ on the site—not what design chooses to do.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 
 ---
 

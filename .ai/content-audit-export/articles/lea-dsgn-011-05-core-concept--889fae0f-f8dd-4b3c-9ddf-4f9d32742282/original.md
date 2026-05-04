@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Identify and interpret standard architectural symbols for materials (section, elevation), fixtures, doors, windows, and mechanical/electrical elements, read dimension and annotation systems, and apply consistent notation across plan, elevation, and section views.
+
 Architectural symbols and notations are the standardized graphical language used on drawings to communicate building components, materials, and design intent to builders and regulators. The LEA expects you to recognize and interpret these symbols accurately and to understand their use across plan, elevation, and section views.
+
 
 ## Core Concept
 
@@ -25,7 +29,7 @@ Architectural drawings communicate through two primary means: **dimensions and a
      - **Insulation**: Wavy or diagonal lines indicating thermal break.
    - **Section cut symbols**: A heavy line on a plan with endpoints and arrows indicating viewing direction (e.g., "Section A-A"). The corresponding section elevation is drawn and labeled with the same letter pair.
 
-3. **Detail markers**: Small symbols placed on plan or elevation indicating where a detail drawing exists at a larger sclea. Typically shown as a circle with a number or letter (e.g., "Detail 3" or "Detail A").
+3. **Detail markers**: Small symbols placed on plan or elevation indicating where a detail drawing exists at a larger scale. Typically shown as a circle with a number or letter (e.g., "Detail 3" or "Detail A").
 
 4. **Electrical & Plumbing symbols**: Outlets, switches, water lines, and drains. These are typically shown in a dedicated legend on their respective specialty plans.
 
@@ -33,7 +37,7 @@ Architectural drawings communicate through two primary means: **dimensions and a
 
 - **Dimension lines**: Thin lines with arrows or tick marks at endpoints, showing distances. Critical dimensions include floor-to-floor heights, room widths, and setbacks.
 - **Leader lines**: Thin lines with arrows or dots pointing to a feature, with text annotation (e.g., "FFL +0.00 m").
-- **Title blocks**: Located at the bottom right of each sheet, showing project name, sclea, and date.
+- **Title blocks**: Located at the bottom right of each sheet, showing project name, scale, and date.
 - **Legends and schedules**: Lists defining abbreviations, symbols, materials, and specifications.
 
 ## Key Provisions
@@ -82,6 +86,13 @@ The exam may ask for the minimum interior dimensions of an elevator cab or the t
   the door. If a door swings into a required egress corridor and reduces the
   width, it is a code violation!
 </Tip>
+
+
+**Exam Tip:** Material symbols: diagonal lines = concrete/brick/masonry (spacing indicates material), random squiggles = earth/gravel, dots = sand/cement. Section marks show cut location + view direction.
+
+## Cross-References
+
+See **LEA-DSGN-011-01** (Floor Plans) for plan symbols, **LEA-DSGN-011-02** (Elevations and Sections) for elevation/section symbols, and **LEA-DSGN-011-03** (Site Plans) for site plan symbols and notation.
 
 ## Common Mistakes
 

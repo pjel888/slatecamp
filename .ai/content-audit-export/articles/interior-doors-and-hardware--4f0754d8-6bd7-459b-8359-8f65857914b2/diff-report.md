@@ -1,32 +1,34 @@
 # Content Diff Report: interior-doors-and-hardware
 
-Generated: 2026-05-03T13:45:35.880Z
+Generated: 2026-05-04T00:07:20.666Z
 Article ID: 4f0754d8-6bd7-459b-8359-8f65857914b2
-Changed: false
-Safe to push locally: true
+Changed: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb`
-- Normalized: `sha256:5b72342f866fbe867c6f1a478940f5b0a82e8687e39672a7ddaf86d001c77430`
-- Candidate: `sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb`
+- Original: `sha256:f4fc7ab7f90a874039710eff9dd66caefd1045c272e58643699ff6256117cf27`
+- Normalized: `sha256:dcfa44480d0b8899ebb3616edc07c0cc36c8cafba65ca7ff806e2216d8083113`
+- Candidate: `sha256:dcfa44480d0b8899ebb3616edc07c0cc36c8cafba65ca7ff806e2216d8083113`
 
 ## Line summary
 
-- Changed lines: 0
-- Inserted lines: 0
+- Changed lines: 96
+- Inserted lines: 17
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 2
-- UI blocks preserved: 2
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 2
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 2 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

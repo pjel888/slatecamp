@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-Security systems in buildings serve as the integrated framework protecting occupants, assets, and critical infrastructure. In the Philippine context, modern building security operates under _PD 1096 (National Building Code)_ and _RA 9514 (Fire Code of the Philippines)_ fire-safety integration requirements. This concept node addresses the design, installation, and integration of CCTV, access control, intrusion detection, security lighting, intercom systems, and the control room infrastructure that ties them together.
+## Learning Goal
 
----
-
+Identify CCTV system components (cameras, DVR/NVR, monitors, cabling, storage), classification by camera type (fixed, PTZ, thermal, IP), resolution standards, and application for security monitoring in different building types per relevant Philippine standards.
 ## CCTV Systems
 
 ### Camera Types and Applications
@@ -13,6 +12,17 @@ Security systems in buildings serve as the integrated framework protecting occup
 **Bullet cameras** are cylindrical and typically mounted on external walls, gate structures, or poles. These are standard for perimeter surveillance, parking lots, and access points. Their design allows straightforward aiming and clear sightlines over outdoor areas, making them the preferred choice for boundary security in condominiums and commercial developments.
 
 **PTZ (Pan-Tilt-Zoom) cameras** deliver operator-controlled movement and optical zoom capability. PTZ units are reserved for critical zones requiring dynamic coverage, such as mall concourses, office lobbies, or gated community main gates. A single PTZ camera can monitor a wider area than fixed cameras but requires security staff presence in the control room for active management.
+
+<ComparisonTable title="Camera Type Selection Guide">
+  | Feature | Dome Camera | Bullet Camera | PTZ Camera |
+  |---|---|---|---|
+  | Mounting | Ceiling / flush wall | External wall / pole | Ceiling / wall / pole |
+  | Aesthetics | High (discreet) | Moderate (visible) | Moderate (bulky) |
+  | Environment | Indoor | Indoor / outdoor | Indoor / outdoor |
+  | Coverage | Fixed zone | Fixed zone | Dynamic (operator-controlled) |
+  | Cost | Moderate | Low–moderate | High |
+  | Best for | Offices, retail, lobbies | Perimeter, parking lots | Malls, gates, large concourses |
+</ComparisonTable>
 
 ### Resolution Standards
 
@@ -24,6 +34,12 @@ Camera resolution is specified in megapixels (MP) and directly affects image cla
 
 The _National Building Code (PD 1096)_ does not prescribe specific megapixel requirements; instead, design engineers select resolution based on application-specific detection distances and local compliance expectations.
 
+<KeyValues items={[
+  {label: "1 MP (1280 × 960)", value: "Entry-level; suitable for access verification at controlled doors and indoor parking where subjects are close to the camera."},
+  {label: "2–4 MP", value: "Standard for most Philippine office and retail applications; sufficient for facial recognition up to 5 meters."},
+  {label: "5 MP and above", value: "Required for license plate identification and wide-area coverage at significant distances; common at mall perimeters and major access gates."}
+]} />
+
 ### Storage Requirements
 
 Video storage capacity depends on resolution, frame rate, compression codec, and retention policy.
@@ -34,7 +50,35 @@ $$\text{Storage} = 16 \text{ cameras} \times 1 \text{ GB/hour} \times 24 \text{ 
 
 High-resolution systems (5 MP) may require 2–3 GB per camera per hour, scaling retention demands significantly. Network video recorders (NVRs) for medium-sized office buildings (50–100 cameras) typically incorporate 4–8 TB of redundant storage, with additional cloud backup or off-site archiving for critical facilities. Philippine shopping malls and office complexes commonly maintain 60–90 day retention periods to comply with tenant and regulatory expectations.
 
+<Note>
+**CCTV Storage Estimation**
+
+Storage (TB) = Cameras × GB/hr × 24 hrs × Retention Days ÷ 1000
+
+Variables:
+- **Cameras**: Number of cameras in the system
+- **GB/hr**: Recording rate per camera (0.5–3 GB/hr depending on resolution)
+- **Retention Days**: Required retention period (30–90 days typical)
+
+Example: 16 cameras × 1 GB/hr × 24 hrs × 30 days = 11.52 TB
+</Note>
+
 ---
+
+
+
+
+<KeyValues items=[{"value": "Dome", "label": "Indoor Ceiling Mount"}, {"value": "Bullet", "label": "Outdoor Perimeter"}, {"value": "PTZ", "label": "Dynamic Coverage"}, {"value": "1080p", "label": "Min. Resolution"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 
 ## Access Control Systems
 
@@ -106,7 +150,7 @@ Industry practice establishes the following minimum security lighting levels:
 - **Building entrance and exit doors**: 100 lux minimum to ensure facial clarity for CCTV and guard verification
 - **Emergency exit pathways**: 20 lux minimum (sufficient to navigate safely)
 
-Lux is measured using a light meter perpendicular to the illuminated surface. In Philippine tropical climates, overhanging vegetation and high humidity can reduce effective illumination, requiring periodic maintenance and possibly higher wattage fixtures than temperate-climate equivleants.
+Lux is measured using a light meter perpendicular to the illuminated surface. In Philippine tropical climates, overhanging vegetation and high humidity can reduce effective illumination, requiring periodic maintenance and possibly higher wattage fixtures than temperate-climate equivalents.
 
 ### Fixture Types and Control
 
@@ -202,7 +246,15 @@ The security operations center is the nerve center of building security. It must
 - **Backup Internet**: Dual Internet service providers or cellular backup connection ensures network connectivity for cloud-based access control and remote monitoring.
 - **Backup recorder**: Many facilities specify a redundant NVR or cloud recording service so that video loss from primary equipment failure does not result in data loss.
 
+<Tip>
+**SOC Design Essentials for the LEA**
+
+When designing a Security Operations Center, remember the **3-2-1 rule**: at least **3** SOC placement criteria (visibility, flood safety, restricted access), **2** redundant systems (UPS + backup Internet), and **1** dedicated equipment cabinet for NVR/DVR appliances. The UPS rating must cover **2 hours** of full-load operation minimum.
+</Tip>
+
 ---
+
+
 
 ## Philippine Context and Compliance
 
@@ -231,8 +283,26 @@ Gated communities in the Philippines typically employ:
 4. **Documentation and training**: All system designs must be submitted to the local Building Official per _PD 1096_. Facility staff and contracted security must receive documented training on system operations, emergency procedures, and maintenance protocols.
 5. **Regular maintenance**: CCTV cameras, door contacts, and conduit are subject to corrosion and insect infiltration in tropical climates. Monthly inspections and preventive maintenance schedules are essential.
 
+<Note>
+**Security System Best Practices Checklist**
+
+- [ ] All external cameras and conduit rated for salt spray and UV exposure
+- [ ] Security equipment connected through voltage regulators or UPS units
+- [ ] IP-based systems isolated on dedicated VLANs, separate from general IT
+- [ ] System designs submitted to local Building Official per PD 1096
+- [ ] Staff and contracted security trained on operations and emergency procedures
+- [ ] Monthly inspections for corrosion and insect infiltration scheduled
+</Note>
+
 ---
 
 ## Summary
 
 A comprehensive security system integrates CCTV, access control, intrusion detection, security lighting, intercom, and control room operations into a unified, codified infrastructure. In Philippine buildings, compliance with _RA 9514_ and _PD 1096_ is non-negotiable. Careful design of electrical infrastructure (220V/60Hz), cabling and conduit routing, and SOC facilities ensures reliable, responsive security operations that protect occupants and assets while maintaining code compliance and operational resilience.
+
+## Related Articles
+
+See also within Fire Protection Systems: **lea-util-004-04-core-concept**, **lea-util-004-05-core-concept**, **lea-util-004-07-core-concept**, **lea-util-004-08-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

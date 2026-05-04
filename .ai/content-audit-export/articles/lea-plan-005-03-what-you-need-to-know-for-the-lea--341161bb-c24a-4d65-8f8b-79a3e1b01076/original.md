@@ -1,6 +1,12 @@
 ## What You Need to Know for the LEA
 
-Environmental and land-use planning in the Philippines is governed by a framework of Presidential Decrees and Republic Acts that establish easements, require environmental impact assessment, protect natural areas, manage water quality, and regulate solid waste. Landscape architects, planners, and developers must understand these laws to design compliant projects and avoid legal liability. This article covers the core provisions of five essential Philippine environmental and planning laws: **PD 1067 (Water Code)**, **PD 1586 (EIS System)**, **RA 7586 (NIPAS)**, **RA 9275 (Clean Water Act)**, and **RA 9003 (Solid Waste Act)**.
+Environmental and land-use planning in the Philippines is governed by a framework of Presidential Decrees and Republic Acts that establish easements, require environmental impact assessment, protect natural areas, manage water quality, and regulate solid waste. Landscape architects, planners, and developers must understand these laws to design compliant projects and avoid legal liability. 
+## Learning Goal
+
+Identify the key provisions of the five core Philippine environmental laws (PD 1067, PD 1586, RA 7586, RA 9275, RA 9003) and apply easement distances, ECC requirements, and environmental constraints to site planning scenarios.
+
+
+## Core Concept
 
 ### PD 1067 — Water Code of the Philippines (1976)
 
@@ -28,10 +34,10 @@ No structures of any kind may be constructed within these easements (PD 1067 Art
 
 - Heavy industrial facilities (power plants, petrochemical plants, cement plants)
 - Mining and quarrying operations
-- Large-sclea infrastructure (airports, seaports, major highways, dams)
+- Large-scale infrastructure (airports, seaports, major highways, dams)
 - Foreshore and mangrove land reclamation
 - Golf courses (due to chemical and water use)
-- Large-sclea residential subdivisions in environmentally sensitive areas
+- Large-scale residential subdivisions in environmentally sensitive areas
 
 **Environmentally Critical Areas (ECAs)** — Areas where even non-ECP projects require EIA if located within:
 

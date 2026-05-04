@@ -1,9 +1,17 @@
 ## Choosing MDPE vs. Percentage of PCC — The Decision Matrix
 
-<JSX name="ArticleHeader" article="LEA-PRAC-CMP-008" />
+## Learning Goal
 
-Both percentage-of-PCC and MDPE represent valid compensation methods under SPP 202, each suited to different project characteristics. Selecting between them requires analyzing the project's scope clarity, cost reliability, design complexity relative to construction cost, and delivery method. A decision matrix helps architects evaluate which method produces fairer compensation and more sustainable project economics.
+After studying this article, you should be able to:
 
+- Compare MDPE and percentage-of-PCC as compensation methods.
+- Describe when to use each method based on project characteristics.
+- Use the decision matrix to select the appropriate fee method.
+- Apply method selection criteria to exam scenarios.
+
+
+
+---
 ### When Percentage-of-PCC Is Most Appropriate
 
 Percentage-of-PCC works best when Project Construction Cost can be estimated reliably and the design scope aligns logically with construction cost. Traditional Design-Bid-Build projects with well-defined building types fit this pattern: standard office buildings, conventional apartment complexes, or routine institutional buildings where construction cost reasonably reflects design effort.
@@ -18,6 +26,19 @@ MDPE is preferable when Project Construction Cost is difficult to estimate relia
 
 Projects with significant innovation, research, or development value justify MDPE because construction cost doesn't reflect the intellectual and developmental effort required. A cutting-edge research facility, a pioneering sustainable building, or a building incorporating advanced technological systems may have construction costs that don't justify percentage-based fees relative to design effort.
 
+
+
+<ExamTip>
+  **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
+</ExamTip>
+
+
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
+
+
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Renovation and historic preservation projects often justify MDPE because existing conditions create unpredictable scope and cost. Similarly, projects with phased or uncertain delivery, projects with substantial pre-design phases, and projects requiring extensive client coordination and redesign cycles may produce cost estimates that inadequately reflect architectural effort.
 
 ### Decision Matrix: Key Questions
@@ -50,7 +71,7 @@ For projects where both methods are viable, calculate fees using both approaches
 6. Calculate resulting percentage-of-PCC fee.
 7. Compare results. Which method produces a fee that feels appropriate for the project?
 
-Example: A modest renovation project might have DPE of 500,000 pesos with MDPE multiplier of 2.3 (resulting in 1.15 million peso fee). The estimated PCC is 15 million pesos. At 8% of PCC (Group 4 equivleant), the percentage-based fee would be 1.2 million pesos. Results are similar, suggesting either method is viable. The architect might choose MDPE because scope uncertainty makes hourly billing more appropriate, or choose percentage-of-PCC for client preference and simplicity.
+Example: A modest renovation project might have DPE of 500,000 pesos with MDPE multiplier of 2.3 (resulting in 1.15 million peso fee). The estimated PCC is 15 million pesos. At 8% of PCC (Group 4 equivalent), the percentage-based fee would be 1.2 million pesos. Results are similar, suggesting either method is viable. The architect might choose MDPE because scope uncertainty makes hourly billing more appropriate, or choose percentage-of-PCC for client preference and simplicity.
 
 ### Hybrid Approaches
 
@@ -67,3 +88,18 @@ Clients often have preferences based on prior experience. Some prefer percentage
 ### Documentation in the Contract
 
 The Owner-Architect Agreement must clearly specify which method applies, how it will be calculated, payment milestones, and contingency provisions. For percentage-of-PCC, the contract must specify what PCC amount will be used (Design Development estimate, final bid, or lowest responsive bid?). For MDPE, the contract must specify whether fees are estimated and capped or actual and variable, how hours will be tracked, and what hourly rates apply.
+
+---
+
+## Related Articles
+
+- [Project Classification Groups](lea-prac-cmp-001)
+- [Factors Determining Classification](lea-prac-cmp-002)
+- [Project Construction Cost](lea-prac-cmp-003)
+- [Schedule of Payments](lea-prac-cmp-004)
+- [MDPE Formula](lea-prac-cmp-006)
+- [MDPE Multipliers](lea-prac-cmp-007)
+- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
+- [Reimbursable Expenses](lea-prac-cmp-011)
+- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)

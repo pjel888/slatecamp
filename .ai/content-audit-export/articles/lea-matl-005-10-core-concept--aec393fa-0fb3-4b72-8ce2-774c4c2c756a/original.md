@@ -1,14 +1,14 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Life Cycle Assessment (LCA) quantifies environmental impacts across all building material and product stages, from extraction through end-of-life. The LEA tests candidates on EN 15978 phase definitions (A1-A5, B1-B7, C1-C4, D), embodied versus operational carbon distinctions, carbon sequestration in organic materials, and Environmental Product Declaration (EPD) interpretation. Understanding the full product lifecycle (cradle-to-grave, cradle-to-gate, cradle-to-cradle) enables informed material selection for projects targeting embodied carbon reduction.
-
+Identify VOC (volatile organic compound) limits for interior finishes, recycled content requirements, regional sourcing criteria, and certified wood requirements under BERDE and LEED green building rating systems.
 ## Core Concept
 
 EN 15978 Standard divides building lifecycle into six modules: Product stage (A1-A3: extraction, processing, manufacturing; A4-A5: transport and construction), Use stage (B1-B7: operation, maintenance, replacement, repair, refurbishment, operational energy, water), End-of-life stage (C1-C4: deconstruction, transport, waste processing, disposal), and Module D (benefits beyond system boundary: reuse, recycling credits). Embodied carbon measures A1-A3 (cradle-to-gate) material production emissions; operational carbon measures B1-B7 energy consumption.
 
 Carbon sequestration in timber results from photosynthetic CO2 uptake during tree growth. Harvested timber retains this stored carbon for the product's service life (typically 50+ years for structural members). When timber is burned or decomposed at end-of-life, stored carbon is released; this is carbon-neutral relative to growth sequestration only if the forest is replanted and regrows.
 
-Environmental Product Declarations (EPDs) per ISO 14025 provide standardized quantification of material environmental impacts, including embodied carbon (kg CO2e per functional unit), water consumption, eutrophication potential, and other metrics. EPDs enable comparison of equivleant materials and verification of embodied carbon claims.
+Environmental Product Declarations (EPDs) per ISO 14025 provide standardized quantification of material environmental impacts, including embodied carbon (kg CO2e per functional unit), water consumption, eutrophication potential, and other metrics. EPDs enable comparison of equivalent materials and verification of embodied carbon claims.
 
 ## Key Provisions
 
@@ -38,7 +38,7 @@ Operational carbon depends on building location (climate), occupancy patterns, e
 
 Carbon sequestration in timber: A 1 m³ of softwood timber represents approximately 500 kg of dry wood, storing approximately 230 kg of CO2 (from photosynthesis during growth). This sequestered carbon persists in-use for 50+ years, representing a carbon credit or offset during service life. Harvesting and processing (A1-A3) generates approximately 0.15 kg CO2e per kg of timber; biogenic carbon storage (Module D) is approximately -0.46 kg CO2e per kg. Net embodied carbon = +0.15 - 0.46 = -0.31 kg CO2e per kg (negative because sequestration exceeds production emissions).
 
-Environmental Product Declarations (EPD ISO 14025) provide data for three typical scenarios: A1-A3 (cradle-to-gate, most common for comparison), A1-A5 (including construction), and sometimes full A1-C4 lifecycle. EPDs enable like-for-like comparison: two equivleant steel products can be compared by A1-A3 embodied carbon per kilogram, normalizing for differences in transport distance and energy sources.
+Environmental Product Declarations (EPD ISO 14025) provide data for three typical scenarios: A1-A3 (cradle-to-gate, most common for comparison), A1-A5 (including construction), and sometimes full A1-C4 lifecycle. EPDs enable like-for-like comparison: two equivalent steel products can be compared by A1-A3 embodied carbon per kilogram, normalizing for differences in transport distance and energy sources.
 
 ## Philippine Construction Context
 
@@ -54,7 +54,7 @@ Timber-producing regions in Mindanao, Palawan, and Visayas provide sustainably h
 
 LEA candidates must identify LCA phases by module number (A1-A5, B1-B7, C1-C4, D) and describe what each module includes (e.g., A1-A3 is cradle-to-gate production; B6-B7 is operational energy and water; C1-C4 is end-of-life). Questions present a building scenario and ask candidates to calculate embodied carbon reduction from material substitution (e.g., 20 percent fly ash concrete replaces virgin cement), accounting for both reduced production (A1-A3) and potential B4 (replacement) stage implications.
 
-A second test approach asks candidates to interpret EPD data for two equivleant materials and select the lower-embodied-carbon option, accounting for variations in A1-A3 values based on manufacturing location and renewable energy use. Candidates must recognize that embodied carbon A1-A3 values vary by manufacturer and location, and cannot assume all steel (or concrete, or timber) has identical values.
+A second test approach asks candidates to interpret EPD data for two equivalent materials and select the lower-embodied-carbon option, accounting for variations in A1-A3 values based on manufacturing location and renewable energy use. Candidates must recognize that embodied carbon A1-A3 values vary by manufacturer and location, and cannot assume all steel (or concrete, or timber) has identical values.
 
 Calculation questions may involve total lifecycle carbon: a building's operational carbon is estimated from climate zone heating/cooling degree-days and energy efficiency (kWh/m²/year). Embodied carbon A1-C4 is calculated from material quantities and EPD values. Candidates must compare the two and recognize that embodied carbon typically represents 15-30 percent of total lifecycle carbon unless operational efficiency is very high.
 
@@ -76,3 +76,10 @@ Calculation questions may involve total lifecycle carbon: a building's operation
 <li>Applying international EPD data without adjusting for Philippine electricity grid composition (40-45% coal) and transport distances from manufacturing hubs to remote regions</li>
 <li>Assuming Module D (recycling credits) equal 100% of material value; recycling efficiency losses and contamination typically reduce Module D credits to 30-80% of theoretical potential</li>
 </WikiMistakeList>
+
+## Related Articles
+
+See also within Sustainable and Green Materials: **lea-matl-005-05-core-concept**, **lea-matl-005-07-core-concept**, **lea-matl-005-08-core-concept**, **lea-matl-005-09-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

@@ -6,8 +6,21 @@ Identify natural stone types (granite, marble, limestone, sandstone, slate) by t
 
 Natural stone (granite, marble, limestone, sandstone, slate, travertine) offers superior durability, fire resistance, and aesthetic qualities compared to manufactured units. However, each stone type has different strength, hardness, and durability characteristics requiring careful material selection. Stone masonry is typically used as veneer or cladding rather than as primary load-bearing structure in modern construction.
 
+
+<ArticleMedia id="media-natural-stone-types-compare" layout="single" type="image" status="placeholder"
+  alt="Visual comparison chart showing granite, marble, limestone, sandstone, and slate with key physical properties and textures"
+  caption="Future chart: natural stone types — geological origin, hardness, porosity, and architectural applications"
+  suggestedAsset="Material property comparison chart with stone texture samples"
+  placementIntent="Provides visual reference for stone identification and selection" />
+
 ## Stone Types and Properties
 
+
+<ArticleMedia id="media-stone-property-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of natural stone properties: granite, marble, limestone, sandstone, slate with compressive strength, porosity, hardness, and architectural applications"
+  caption="Future chart: natural stone property comparison — strength, porosity, and applications"
+  suggestedAsset="Material property comparison chart with application photos"
+  placementIntent="Helps learners select stone types by physical properties" />
 ### Granite (ASTM C615)
 
 Granite is an igneous rock composed of quartz, feldspar, and mica. It is the hardest natural building stone (Mohs 6—7) and offers excellent durability and weather resistance.
@@ -179,14 +192,11 @@ The LEA expects you to:
 
 Typical questions present a building facade or interior finish application and ask which stone type is appropriate, or ask you to identify a stone based on hardness, color, and source.
 
-<Tip>Remember the rule: High water absorption + humid or wet exposure = poor durability. Limestone and travertine (high absorption) fail in tropical Philippines without protection; granite (low absorption) performs well.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard
-  mistake="Assuming harder stone (higher Mohs number) is always stronger (higher compressive strength)"
-  correction="Mohs hardness and compressive strength are different properties. A material can be hard but weak (e.g., some slate). Marble (Mohs 3—4) may have lower hardness but higher compressive strength than some sandstones. Always check both properties for design."
-  context="Designers sometimes select stone based on hardness alone, overlooking compressive strength and absorption issues." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
 
 ity and higher absorption make it unsuitable for exposed exterior in wet or industrial environments. Reserve marble for protected interior use.",
     "Confusing water absorption with durability: A stone with 2% absorption might be durable if properly sealed; a stone with 0.3% absorption is inherently durable. Always verify both absorption and protection measures.",

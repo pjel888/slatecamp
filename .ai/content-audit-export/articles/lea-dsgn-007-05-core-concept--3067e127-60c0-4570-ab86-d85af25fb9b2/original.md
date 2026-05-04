@@ -2,6 +2,11 @@
 
 Reading and analyzing a design brief is a critical skill for architects. The brief sets project parameters, client requirements, site constraints, and regulatory context. Comprehensive brief analysis informs all subsequent design decisions and prevents misalignment with client expectations.
 
+## Learning Goal
+
+Analyze a design brief to extract program elements, site data, regulatory context, and design intent. Calculate total GFA and occupant load from program requirements, identify ambiguities requiring client clarification, and verify occupancy group classification early in the design process.
+
+
 ## Core Concept
 
 A design brief is a document prepared by the client or their representative (often in consultation with the architect during Pre-Design) that defines what the project must accomplish. The brief is not a design solution; it is a statement of requirements and constraints. Effective brief analysis requires careful reading, identification of explicit requirements, recognition of implied constraints, and clarification of ambiguities before design begins.
@@ -50,6 +55,13 @@ Design briefs in the Philippines follow the Unified Architects Practice (UAP) fr
 **Pattern 3 — Ambiguity Identification:** A brief describes a mixed-use facility with vague adjacency requirements and unclear scope. Identify missing information and formulate questions for client clarification. Tests critical thinking and risk recognition.
 
 <Tip>Brief = requirements, not solutions. Read carefully: explicit requirements, implied constraints, ambiguities. Clarify before design. Program + Site + Code + Intent = Design parameters. Verify occupancy group early; it drives many other decisions.</Tip>
+
+
+**Exam Tip — ERR-DSGN-002:** Design principles (proportion, scale, balance, rhythm, hierarchy) are tested through visual analysis. The LEA may present a building image and ask which principle is violated or best represented.
+
+## Cross-References
+
+See **LEA-DSGN-007-06** (Building Integration) for principle application, **LEA-DSGN-011-04** (Perspective Drawing) for visualization of compositional principles, and **LEA-DSGN-012-04** (Landscape Architecture) for site-scale composition.
 
 ## Common Mistakes
 

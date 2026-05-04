@@ -1,32 +1,33 @@
 # Content Diff Report: excavation-foundation-and-veneer
 
-Generated: 2026-05-03T13:45:15.955Z
+Generated: 2026-05-04T00:06:56.516Z
 Article ID: bd009a97-21fe-400e-8717-615d5a877cfd
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:43e3775f8f1386af2cc35dd1dd68decd20b34c95b9d2e60477e2717bc4349a23`
-- Normalized: `sha256:2b8d29ba0f2f1b031843d83a826515376a3c100ab7d8e7b9486476b69ebaae51`
-- Candidate: `sha256:05d45e80dd904cc65f1cfa5b4bd1b86492f416f14ccad1027d99a40c37d6d4ff`
+- Original: `sha256:05d45e80dd904cc65f1cfa5b4bd1b86492f416f14ccad1027d99a40c37d6d4ff`
+- Normalized: `sha256:e7e80340b21e744ae532e31edc2c21392163c0fca6c086ac9de31f852a92cc28`
+- Candidate: `sha256:e7e80340b21e744ae532e31edc2c21392163c0fca6c086ac9de31f852a92cc28`
 
 ## Line summary
 
-- Changed lines: 259
-- Inserted lines: 19
+- Changed lines: 255
+- Inserted lines: 4
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 1
-- UI blocks preserved: 1
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 1
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 1 preserved UI block(s).
 
 ## Warnings
 

@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define a hook and explain its purpose in reinforcing bar anchorage
+- Distinguish between standard hooks (90°, 180°) and seismic hooks (135°)
+- State minimum hook dimensions and extension lengths
+- Identify hooks in stirrups, ties, and main reinforcement
 
 Standard hooks anchor reinforcement at supports and splices. The LEA tests your exact knowledge of hook geometry—bend angle, extension length, and minimum diameter—across three contexts: longitudinal bars, stirrups, and seismic confinement. Critical values: 180° hook = 4_db_ (min 65mm), 90° hook = 12_db_, seismic 135° = 6_db_ (min 75mm).
 
@@ -61,6 +68,11 @@ Standard 180° hooks are most common in Philippine construction for negative mom
 Hook memory: 180° = 4_db_ min 65mm (small bend, short extension). 90° longitudinal = 12_db_ (wide bend, long extension). Stirrup 90° ≤16mm = 4_db_ inside (tight bend). Seismic 135° = 6_db_ with min 75mm extension (mandatory minimum). Bend diameter increases with bar size: 6_db_ (10–25mm), 8_db_ (28–32mm), 10_db_ (36mm).
 </Tip>
 
+## Related Articles
+
+See also: **Concrete Cover** (lea-strc-007-01) for how hooks relate to cover requirements, **Deformed Bars** (lea-strc-006-02) for the bar sizes used with hooks, and **Column Ties** (lea-strc-007-04) for seismic hook requirements in columns.
+
 ## Common Mistakes
 
-<WikiMistakeList mistakes={[ "Seismic hook = 90° — WRONG. Seismic/SMRF hoops = 135° bend angle (ERR-STRC-014).", "180° hook = 12_db_ or 40mm min — WRONG. Always 4_db_ (min 65mm) (ERR-STRC-021).", "All stirrup hooks = 4_db_ inside diameter — WRONG. Only ≤16mm ties; 20–25mm ties = 6_db_.", "Seismic hook extension = 6_db_ only (no mm minimum) — WRONG. Per ACI 318-19 Section 25.3.4, must be 6_db_ AND min 75mm (take the larger). This requirement applies to columns with Pu > 0.3Agf'c or f'c > 70 MPa.", "Longitudinal 90° hook = 6_db_ — WRONG. Longitudinal 90° hook: inside diameter = 12_db_, extension = 12_db_. Stirrup 90° hook ≤16mm: inside diameter = 4_db_, extension = 6_db_. Stirrup 90° hook 20–25mm: inside diameter = 6_db_, extension = 12_db_.", "Inside bend diameter irrelevant to hook type — WRONG. Inside diameter (4_db_, 6_db_, 10_db_) varies by bar size and is critical to prevent concrete crushing." ]} />
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+

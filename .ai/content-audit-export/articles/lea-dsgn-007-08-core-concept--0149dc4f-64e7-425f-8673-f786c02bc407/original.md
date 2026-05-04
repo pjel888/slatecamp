@@ -1,19 +1,23 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply anthropometric data and ergonomic principles to space planning, determine minimum clearances for various activities, design for universal accessibility per BP 344, and apply human dimension standards for institutional facilities.
+
 Structural system selection is not just an engineering problem — it shapes your entire architectural floor plan. The system you choose determines column spacing, floor-to-floor height, and architectural expression. For the LEA, you must understand how each system affects spatial planning and how it is typically applied in Philippine practice.
+
 
 ## Core Concept
 
 Several structural systems are common in Philippine architecture, each with distinct planning implications. For exam purposes, focus on how they affect span capability, grid planning, floor-to-floor height, and flexibility of interior layouts.
 
 **1. Reinforced Concrete (RC) Frame**  
-- Most prevleant system for low- to mid-rise buildings in the Philippines.  
+- Most prevalent system for low- to mid-rise buildings in the Philippines.  
 - Column sizes and spacing are set by the structural engineer; many mid-rise buildings use bay spans in the range of about 5–8 m, depending on loads and beam depth.  
 - Floor-to-floor height is commonly around 3.0–3.5 m to accommodate slab depth and MEP services.  
 - Offers flexible floor plans because partitions are generally non-load-bearing.  
 - Advantages: high stiffness, inherent fire resistance, materials and skills widely available locally.  
 - Disadvantages: longer construction time, significant formwork and curing time.  
-- Architectural impact: Structural grid can be expressed or concelead; coordination with parking modules and unit layouts is crucial.
+- Architectural impact: Structural grid can be expressed or concealed; coordination with parking modules and unit layouts is crucial.
 
 **2. Steel Frame**  
 - Used for high-rise, long-span, and industrial buildings where speed and span are priorities.  
@@ -50,7 +54,7 @@ Several structural systems are common in Philippine architecture, each with dist
 
 | System            | Typical Span / Grid*            | Floor-to-Floor (approx.) | Planning Flexibility            | Facade Potential                         | Relative Speed** | Relative Cost (PH)** |
 |-------------------|---------------------------------|---------------------------|---------------------------------|------------------------------------------|------------------|----------------------|
-| **RC Frame**      | ~5–8 m bays                     | 3.0–3.5 m                 | High (non-structural partitions) | Can be expressed or concelead            | Moderate         | Baseline             |
+| **RC Frame**      | ~5–8 m bays                     | 3.0–3.5 m                 | High (non-structural partitions) | Can be expressed or concealed            | Moderate         | Baseline             |
 | **Steel Frame**   | ~6–9 m (longer with design)     | ~3.0 m ±                  | High                            | Long spans, slender members, large glass | Fast             | Higher than RC       |
 | **Timber / EW**   | ~3–5 m (longer with EW systems) | 2.7–3.0 m                 | Modular                         | Warm exposed structure                    | Fast (prefab)    | Project-specific     |
 | **Masonry Wall**  | Rooms ~3–5 m between walls      | 2.7–3.0 m                 | Low (walls are structural)      | Limited openings, massy appearance       | Moderate         | Often lower upfront  |
@@ -68,7 +72,7 @@ For RC, steel, and composite systems, the structural grid need not coincide with
 Structural depth plus MEP distribution depth determine realistic floor-to-floor height. Overgenerous heights increase envelope cost; undersized heights cause ceiling congestion and service conflicts. In exams, a 3.0 m floor-to-floor is a common assumption unless otherwise specified.
 
 **Facade Expression**  
-- RC: columns and floor bands can be emphasized or concelead; infill walls often define fenestration.  
+- RC: columns and floor bands can be emphasized or concealed; infill walls often define fenestration.  
 - Steel: long spans and slender members allow larger window modules and more open corners.  
 - Masonry: wall thickness and regular openings produce a heavier, more solid character.  
 - Timber: structure is often celebrated; bay spacing dictates the façade module.
@@ -99,6 +103,13 @@ For architects, early collaboration with the structural engineer is essential: g
 <Tip>
 **“The structural grid is the skeleton of the plan.”** Lock in a realistic grid and structural system early, then develop layouts around it. Moving columns late in the process is far more costly — in practice and in the exam.
 </Tip>
+
+
+**Exam Tip — ERR-DSGN-029:** Child-scale anthropometrics differ significantly from adult standards. Toilet seat: 250-300mm (vs 400mm adult). Lavatory: 550-600mm (vs 800mm adult). These are frequently tested dimensions.
+
+## Cross-References
+
+See **LEA-DSGN-007-07** (Space Planning) for application of anthropometric data, **LEA-DSGN-005-07** (Day Care) for child-scale standards, and **LEA-DSGN-004-05** (Museums) for gallery viewing ergonomics.
 
 ## Common Mistakes
 

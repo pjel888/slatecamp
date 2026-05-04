@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Identify and apply Kevin Lynch's five urban image elements — paths, edges, districts, nodes, landmarks — to analyze how people mentally map cities, and use these elements to evaluate wayfinding and urban legibility in Philippine contexts.
+
 Kevin Lynch identified five elements—paths, edges, districts, nodes, landmarks—that shape how people mentally map and navigate cities. Each element is testable with specific definitions.
+
 
 ## Core Concept
 
@@ -35,6 +39,13 @@ In Metro Manila, paths (EDSA, C-3/C-5) structure commuting and mental maps, but 
 - "The LRT corridor that you travel on daily. Which Lynch element?" → Path (channel of movement).
 
 <Tip>Node = where you GO TO and PASS THROUGH (junction, hub). Landmark = what you LOOK AT for direction (not entered). This is the highest-frequency error: students confuse nodes and landmarks. Test yourself: "Does the object primarily function as a gathering/transfer point (node) or as a visual reference (landmark)?"</Tip>
+
+
+**Exam Tip:** Lynch elements tested through scenarios: "A river that separates two neighborhoods" = edge. "A central square where paths converge" = node. "A prominent church tower visible from far away" = landmark. Match the element to the description.
+
+## Cross-References
+
+See **LEA-PLAN-001-01** (Planning Fundamentals) for Lynch attribution, **LEA-PLAN-002-06** (Urban Design) for urban design application of Lynch elements, and **LEA-PLAN-002-07** (Philippine Context) for Lynch in Philippine cities.
 
 ## Common Mistakes
 

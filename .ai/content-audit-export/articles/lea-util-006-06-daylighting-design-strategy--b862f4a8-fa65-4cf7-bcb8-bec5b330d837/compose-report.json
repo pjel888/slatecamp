@@ -1,18 +1,24 @@
 {
   "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
   "slug": "lea-util-006-06-daylighting-design-strategy",
-  "generated_at": "2026-05-03T13:44:11.141Z",
-  "original_hash": "sha256:fc6a16f0526b22c2b3813de3d9f0d6b06520a966ca518f157ad72323ab9e9b38",
-  "normalized_hash": "sha256:a8c20920051300b2241026e919d2acb6a49c2775bbcec37f598001eb858b14c4",
-  "candidate_hash": "sha256:cdb2d3e6e14e3ec47159f2ea2c7dcba298cc817708ec2f35d1c9de8b99e3a458",
+  "generated_at": "2026-05-04T00:05:38.390Z",
+  "original_hash": "sha256:fff2bba4cf9b63d164713a90ffc0a1d58918b639d8e23e47eb6c6e86b06b1c78",
+  "normalized_hash": "sha256:8a03a0926498cbedaf3bb01a96b2109e06c43364e531f239b8053fbadf772f55",
+  "candidate_hash": "sha256:8a03a0926498cbedaf3bb01a96b2109e06c43364e531f239b8053fbadf772f55",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition."
+  ]
 }

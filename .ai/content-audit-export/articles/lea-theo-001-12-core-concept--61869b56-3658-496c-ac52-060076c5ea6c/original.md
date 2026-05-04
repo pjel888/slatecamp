@@ -1,12 +1,11 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The LEA tests your understanding that buildings communicate meaning beyond their functional and structural purposes. You must understand how architecture employs symbols, metaphors, and narrative to convey cultural, religious, political, and emotional meanings. This is the realm of semiotics in architecture—how buildings function as sign systems communicating to observers and occupants.
-</Callout>
+## Learning Goal
 
+Explain how buildings communicate meaning beyond function through architectural language, signs, symbols, and semiotic systems, and identify how form, material, and spatial sequences convey cultural and conceptual content.
 ## Core Concept
 
-Architecture is not merely shelter. Buildings are communication systems; they convey meaning through their forms, proportions, materials, and spatial arrangements. A church building communicates religious purpose through its formal elements even before you enter it. A courthouse communicates authority and permanence through its monumental form and stone construction. A family home communicates intimacy and refuge through its sclea, materials, and relationship to its site. The architecture itself is a language speaking to observers and users about the building's purpose, the values of its builder, and the cultural moment of its creation.
+Architecture is not merely shelter. Buildings are communication systems; they convey meaning through their forms, proportions, materials, and spatial arrangements. A church building communicates religious purpose through its formal elements even before you enter it. A courthouse communicates authority and permanence through its monumental form and stone construction. A family home communicates intimacy and refuge through its scale, materials, and relationship to its site. The architecture itself is a language speaking to observers and users about the building's purpose, the values of its builder, and the cultural moment of its creation.
 
 **Semiotics** is the study of signs and how meaning is created and communicated through sign systems. In architecture, semiotics examines how buildings function as signs—how they communicate meaning to those who observe and use them. A sign consists of three components: the signifier (the form itself—what is visible), the signified (what the form represents or means), and the referent (the actual thing or concept being represented). A pointed arch in a façade is the signifier; "Gothic" or "medieval" or "spiritual aspiration" is the signified; the historical tradition of Gothic architecture is the referent.
 
@@ -22,7 +21,7 @@ Architectural symbols communicate quickly and intuitively. The moment you see a 
 
 The **Sydney Opera House** is a powerful metaphor. Its shell-like forms metaphorically suggest sailboats on the harbor, connecting the building to Australia's maritime identity and the ocean setting of Sydney Harbor. Jørn Utzon designed these shells not as literal representations of sails or shells but as poetic metaphors for movement, lightness, and cultural identity. The metaphor is immediately perceived by observers even if they have never consciously articulated it.
 
-Metaphors can operate at multiple scleas. In the **Guggenheim Museum** by Frank Lloyd Wright, the spiral rotunda metaphorically suggests upward movement and organic growth—a shell spiraling upward. This metaphor shapes how visitors experience the museum: they ascend a spiral ramp, uncoiling upward through the gallery space, an experience that metaphorically mirrors growth and ascent. The architecture embodies the metaphor of upward movement.
+Metaphors can operate at multiple scales. In the **Guggenheim Museum** by Frank Lloyd Wright, the spiral rotunda metaphorically suggests upward movement and organic growth—a shell spiraling upward. This metaphor shapes how visitors experience the museum: they ascend a spiral ramp, uncoiling upward through the gallery space, an experience that metaphorically mirrors growth and ascent. The architecture embodies the metaphor of upward movement.
 
 **Narrative** refers to the capacity of buildings to tell stories—to communicate a sequence of meanings, historical references, or cultural narratives through their physical form. Historic preservation often maintains buildings because they narrate history; the architecture itself is evidence of how people lived, built, and valued their environment in a particular time. Restoration or reuse of a historic building continues its narrative, allowing visitors to read the layers of time encoded in the architecture.
 
@@ -30,7 +29,7 @@ Contemporary architecture also employs narrative. A building might reference his
 
 **Cultural symbolism** varies significantly across societies. The same architectural form might carry different meanings in different cultural contexts. A green-tiled dome is a powerful symbol of Islamic sacred architecture (referencing Islamic paradise traditions), while it might carry no such meaning in a secular Western context. A building with prominent glass and transparency metaphorically communicates openness and accessibility in contemporary Western culture, but in other contexts, transparency might be read as lacking privacy or authority.
 
-For **Filipino architecture**, symbols and meanings are deeply embedded in the built environment. The bahay na bato symbolizes a particular historical moment and cultural synthesis, combining indigenous and colonial traditions. The presence of this architectural type in a community's streetscape narrates a historical story of colonialism, cultural adaptation, and identity formation. Contemporary Filipino architects who reinterpret bahay na bato principles or employ similar material pleattes (stone, timber, capiz) are metaphorically and narratively connecting their work to cultural tradition and place identity.
+For **Filipino architecture**, symbols and meanings are deeply embedded in the built environment. The bahay na bato symbolizes a particular historical moment and cultural synthesis, combining indigenous and colonial traditions. The presence of this architectural type in a community's streetscape narrates a historical story of colonialism, cultural adaptation, and identity formation. Contemporary Filipino architects who reinterpret bahay na bato principles or employ similar material palettes (stone, timber, capiz) are metaphorically and narratively connecting their work to cultural tradition and place identity.
 
 The capacity of architecture to communicate meaning is why architectural choices matter beyond mere functionality or structural soundness. An architect's choice of materials, proportions, symbols, and references communicates values and values to anyone who encounters the building. A glass and steel office tower communicates different values than a low-rise timber-frame structure. A symmetrical, monumental civic building communicates different meanings than an asymmetrical, modest community facility. These meanings are not accidental; they are intentional expressions of cultural values, institutional identity, and aspirations.
 
@@ -63,6 +62,10 @@ Critical distinction: Meaning is integral to architecture, not superficial decor
 <ExamTip>**Pattern 4: Meaning in Context.** Questions address how architectural meaning relates to cultural and historical context. Example stem: "How does the bahay na bato architectural type communicate cultural identity?" Answer: It narrates the synthesis of indigenous Filipino and Spanish colonial traditions, symbolizing the historical experience of colonialism and cultural adaptation. The building's form itself tells a cultural story.</ExamTip>
 
 <ExamTip>**Pattern 5: Multiple Levels of Meaning.** The LEA tests whether you understand that architecture communicates on multiple levels simultaneously. Example stem: "A stone-built government building with a symmetrical form, grand entry, and classical proportions communicates meaning at which of the following levels?" Answer: Multiple levels—denotation (it is a public building), connotation (permanence, authority, civic importance), symbolism (stone = stability and timelessness), metaphor (symmetry = order and justice), and narrative (classical proportions invoke democratic ideals and Western tradition).</ExamTip>
+
+<Callout>
+The LEA tests your understanding that buildings communicate meaning beyond their functional and structural purposes. You must understand how architecture employs symbols, metaphors, and narrative to convey cultural, religious, political, and emotional meanings. This is the realm of semiotics in architecture—how buildings function as sign systems communicating to observers and occupants.
+</Callout>
 
 ## Common Mistakes
 
@@ -97,3 +100,10 @@ Critical distinction: Meaning is integral to architecture, not superficial decor
 **Historical Consciousness** — The awareness embedded in architecture of past events, cultural values, and historical trajectories; buildings as records of history.
 
 **Spatial Metaphor** — The use of spatial arrangement and movement through a building to metaphorically suggest concepts and meanings (e.g., ascent suggests elevation or transcendence).
+
+## Related Articles
+
+See also within Nature of Architecture: **lea-theo-001-01-core-concept**, **lea-theo-001-07-core-concept**, **lea-theo-001-08-core-concept**, **lea-theo-001-09-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

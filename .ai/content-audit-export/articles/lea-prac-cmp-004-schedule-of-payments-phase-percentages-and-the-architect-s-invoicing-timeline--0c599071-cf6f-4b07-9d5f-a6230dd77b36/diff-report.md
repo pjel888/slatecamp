@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline
 
-Generated: 2026-05-03T13:45:07.702Z
+Generated: 2026-05-04T00:06:45.937Z
 Article ID: 0c599071-cf6f-4b07-9d5f-a6230dd77b36
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:a9ed23dec3ba148b7a863f8b43b00fcebc04dddb718991b38265a45fd3a72d6e`
-- Normalized: `sha256:96ff485dce425b127f36761fc9cba8ab4b6d272ab8a393316b8aba1a7b8d8c4c`
-- Candidate: `sha256:fc93f6c6f3fb3594146896df44b8aba61b93667a0b5b452a26c54cf837221b67`
+- Original: `sha256:fc93f6c6f3fb3594146896df44b8aba61b93667a0b5b452a26c54cf837221b67`
+- Normalized: `sha256:498c5822b91c8ade495e1b15f88ff47818da88b00443a5cb348ffe1229a0fd51`
+- Candidate: `sha256:498c5822b91c8ade495e1b15f88ff47818da88b00443a5cb348ffe1229a0fd51`
 
 ## Line summary
 
-- Changed lines: 64
-- Inserted lines: 32
-- Deleted lines: 0
+- Changed lines: 55
+- Inserted lines: 0
+- Deleted lines: 3
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

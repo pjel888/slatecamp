@@ -15,6 +15,8 @@ Acceptable Practice → Gray Area → Professional Deviation → Violation
 ```
 
 **Acceptable Practice:** Actions within professional discretion, consistent with standards
+
+<ArticleMedia id="media-eth010-conflict-matrix" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Conflict of Interest — Analysis Matrix" description="Four-quadrant matrix crossing CONFLICT TYPE (Financial, Professional/Employment, Personal/Relationship, Role-based) against SEVERITY LEVEL (Disclosure sufficient, Consent sufficient, Recusal required, Always prohibited). Each cell shows representative scenarios. Bottom section shows the four-step mandatory process: Recognize → Disclose → Obtain Informed Consent → Recuse if irreconcilable." placementIntent="conflict-resolution" suggestedSearchQuery="architect conflict of interest matrix type severity disclosure recusal Code of Ethics" suggestedAsset="Diagram or reference image" />
 **Gray Area:** Practices that may be questionable but have professional defenders
 **Professional Deviation:** Breach of clear standard but not egregious
 **Violation:** Clear breach that justifies discipline
@@ -24,26 +26,11 @@ Understanding this spectrum is critical because LEA scenarios ask candidates to 
 
 ## Pattern 1: Negligence and Failure to Meet Standard of Care
 
-
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Ethical Hierarchy:** Public safety > Client interests > Personal profit. The architect's obligation under RA 9266 and the Code of Ethical Conduct is absolute and non-delegable. Key vi — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ **Exam Trap:** A common LEA distracter suggests that 'following client instructions' or 'the client approved the design' absolves the architect of public safety responsibility. This is WRONG. The arch...
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=ra9266, section=RA 9266, title=RA 9266 — Legal Basis
-- Text: RA 9266 (The Architecture Act of 2004) governs the practice of architecture in the Philippines. Section 23 lists grounds for suspension/revocation of the Certificate of Registration. The Code of Ethic...
-[/SLATECAMP_UI_BLOCK]
 
 ### Definition
 
@@ -57,13 +44,6 @@ Negligence in architecture occurs when an architect fails to exercise the reason
 ### Negligence Categories
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Category | Example | Severity | Discipline |
-|---|---|---|---|
-| **Design Negligence** | Design non-compliance with building code; inadequate load calculations | High | Suspension 1-3 years |
-| **Co...
-[/SLATECAMP_UI_BLOCK]
 
 ### Scenario 1: Design Negligence
 
@@ -76,12 +56,6 @@ Extracted summary:
 - **Likely discipline:** Suspension 2-3 years; restitution for repair costs
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Strategy:** When evaluating design negligence scenarios, ask:
-1. Did the architect investigate the full scope of requirements?
-2. Are the design calculations consistent with those requireme — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ### Scenario 2: Construction Administration Negligence
 
@@ -106,10 +80,6 @@ Extracted summary:
 - **Likely discipline:** Suspension 2-3 years; liability for modification costs
 
 [SLATECAMP_UI_BLOCK:ui_0014 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type=critical
-- Text: Failure to investigate site conditions is a classic grounds for discipline. Architects cannot assume site conditions; they must investigate or explicitly recommend investigation by specialists.
-[/SLATECAMP_UI_BLOCK]
 
 ## Pattern 2: Incompetence and Lack of Professional Qualifications
 
@@ -145,10 +115,6 @@ Incompetence differs from negligence: an architect may lack the skill or knowled
 - **Likely discipline:** Suspension 3-5 years; possible revocation if pattern of misrepresentation
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Point:** Misrepresentation of qualifications is treated as both incompetence (lacking actual skill) and dishonesty (falsely claiming it). This combination justifies harsher discipline than  — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ## Pattern 3: Dishonesty and Fraudulent Conduct
 
@@ -176,10 +142,6 @@ Dishonesty includes deliberate falsification, fraud, and deception, including:
 - **Likely discipline:** Suspension 3-5 years; possible revocation (fraud with safety consequences)
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type=critical
-- Text: Certifying compliance without actual review or with knowledge of non-compliance is fraud. This is treated as one of the most serious violations because it directly endangers public safety and breaches...
-[/SLATECAMP_UI_BLOCK]
 
 **Scenario 7: Billing Fraud**
 
@@ -229,10 +191,6 @@ Conflicts of interest occur when an architect has competing financial or profess
 - **Likely discipline:** Suspension 1-2 years; mandatory restitution of commissions; disclosure requirement for future
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Critical Point:** A conflict of interest exists when an architect has competing interests that could compromise objectivity—even if the architect believes they would act objectively anyway. The  — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 **Scenario 10: Undisclosed Multiple Representation**
 
@@ -280,10 +238,6 @@ Architects owe clients a fiduciary duty requiring them to:
 - **Likely discipline:** Suspension 1-2 years; mandatory restitution of unearned fee; ethics training
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type=important
-- Text: Legitimate reasons to withdraw: Client non-payment, client request for unethical services, professional incapacity (illness), or major project scope changes making contract impossible. Poor judgment a...
-[/SLATECAMP_UI_BLOCK]
 
 **Scenario 13: Failure to Return Client Documents**
 
@@ -330,10 +284,6 @@ Beyond specific violations, RA 9266 Section 23(g) authorizes discipline for "any
 - **Likely discipline:** Suspension during incarceration; possible revocation upon conviction depending on sentencing and severity
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Point:** Criminal conviction is grounds for professional discipline even if unrelated to architecture practice. The conviction demonstrates character unfitness for holding professional lice — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 **Scenario 16: Habitual Substance Abuse**
 
@@ -394,12 +344,6 @@ Professional discipline is also imposed for:
 Not all violations are equally serious. The PRBoA applies a severity framework:
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Severity | Characteristics | Typical Discipline | Examples |
-|---|---|---|---|
-| **Minor** | Isolated incident; minimal harm; easily remedied | Reprimand; letter of warning | Incomplete drawings; mi...
-[/SLATECAMP_UI_BLOCK]
 
 ## Mitigating and Aggravating Factors
 
@@ -426,10 +370,6 @@ The PRBoA considers factors beyond the violation itself:
 - **Violation while under prior discipline** or regulatory order
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Strategy:** When analyzing a disciplinary scenario, identify both the core violation AND the contextual factors that affect severity. An LEA question might give you identical violations wit — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ## The Role of Intent and Negligence Versus Fraud
 
@@ -454,13 +394,6 @@ Same violation (inadequate site investigation) yields vastly different disciplin
 ## Summary Table: Violation Patterns and Likely Discipline
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Violation Pattern | Typical Examples | Base Discipline | Serious Version |
-|---|---|---|---|
-| **Negligence** | Design errors; missed inspections; poor coordination | Probation/Suspension 1-2y | Sus...
-[/SLATECAMP_UI_BLOCK]
-
 
 ## About This Article
 

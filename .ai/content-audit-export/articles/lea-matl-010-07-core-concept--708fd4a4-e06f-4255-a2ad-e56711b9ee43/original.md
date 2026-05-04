@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Structural steel weight estimation determines material costs and fabrication quantities for steel beams, columns, and connections. Unlike rebar (which uses D²÷162.5), structural steel members have irregular shapes (I-beams, H-beams, channels, angles) with published weight tables. In the Philippines, standard structural steel sections follow international (IPE, HEA, HEB) or American (W-beam) designations, with weights per meter provided by fabricators and the AISC/NSCP design standards.
-
+Calculate structural steel weight using standard section properties — W-shape weight per meter, plate weight (kg = thickness × width × length × density) — and estimate total tonnage for a given steel frame layout.
 ## Core Concept
 
 Structural steel weight is determined by cross-sectional area and steel density (7,850 kg/m³). The formula is: _Weight per unit length (kg/m) = Cross-sectional area (mm²) × Steel density (7,850 kg/m³) ÷ 10⁶_. Manufacturers publish these values in weight tables for each standard section size.
@@ -119,3 +119,10 @@ On the LEA, structural steel questions focus on:
 <WikiMistakeCard mistake="Omitting waste factor for cutting and fabrication" correction="Add 5–7% waste to account for cutting, welding, and handling losses during fabrication." />
 
 <WikiMistakeList mistakes={["Confusing IPE (I-beam) with HEA/HEB (H-beam)—different shapes, different weights", "Using weight from one section type when the drawing specifies another", "Forgetting that long members may be spliced; account for additional connection material", "Not accounting for different weight values for different grades of steel (if specified)"]} />
+
+## Related Articles
+
+See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-02-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

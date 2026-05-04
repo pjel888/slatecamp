@@ -1,32 +1,34 @@
 # Content Diff Report: ra-9442-pwd-privileges-and-incentives
 
-Generated: 2026-05-03T13:44:44.625Z
+Generated: 2026-05-04T00:06:20.735Z
 Article ID: 1262fe88-bb8f-4005-a9e8-0e8d6c03fe64
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:b4f1140b86e00214da3ec241c747f6e3d5c3cde8c3bc4cad8d189c0711d73fa6`
-- Normalized: `sha256:d75c4ab787a14e129bef240569360ac446d9e5d43a87381c97679ee7d1f01ed8`
-- Candidate: `sha256:bc956545a3c551e940e26ef385114af106b1c9b96b371ac38733d109abe2cd99`
+- Original: `sha256:f167d1365ecb096eb0387252d674d8669873bfadc144250cc89b1938890b48a0`
+- Normalized: `sha256:79f744325509676c6362445e6c8fb2aeb32aa2d404cf00b1a408cf8b9f5409d8`
+- Candidate: `sha256:79f744325509676c6362445e6c8fb2aeb32aa2d404cf00b1a408cf8b9f5409d8`
 
 ## Line summary
 
-- Changed lines: 166
-- Inserted lines: 27
+- Changed lines: 161
+- Inserted lines: 38
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 2
-- UI blocks preserved: 2
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 2
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 2 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

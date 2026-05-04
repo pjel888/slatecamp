@@ -1,38 +1,45 @@
 {
   "article_id": "5fd2842e-ca3e-4e6d-bb87-65067d23a482",
   "slug": "north-american-indigenous-architecture",
-  "generated_at": "2026-05-03T13:44:45.666Z",
-  "old_hash": "sha256:6ace96a0dfff2de1dea366be9bbcbcf6e536a6e6bd9fc757bab5a3f6b221c2a3",
-  "new_hash": "sha256:5963af5f771eed214e7b22ef5a675ca1818f4c7456fca973c02260eda9eee55f",
-  "original_hash": "sha256:6ace96a0dfff2de1dea366be9bbcbcf6e536a6e6bd9fc757bab5a3f6b221c2a3",
-  "normalized_hash": "sha256:e690167f9c6fa97e948b4a0f7d07773da2d6e8dc00e551016d005100ba7ccb5e",
-  "candidate_hash": "sha256:5963af5f771eed214e7b22ef5a675ca1818f4c7456fca973c02260eda9eee55f",
+  "generated_at": "2026-05-04T00:06:21.800Z",
+  "old_hash": "sha256:5963af5f771eed214e7b22ef5a675ca1818f4c7456fca973c02260eda9eee55f",
+  "new_hash": "sha256:c9fdc5978adc37030ecff3b8201c18ee3517558f0981d48741f1802ea21f657e",
+  "original_hash": "sha256:5963af5f771eed214e7b22ef5a675ca1818f4c7456fca973c02260eda9eee55f",
+  "normalized_hash": "sha256:c9fdc5978adc37030ecff3b8201c18ee3517558f0981d48741f1802ea21f657e",
+  "candidate_hash": "sha256:c9fdc5978adc37030ecff3b8201c18ee3517558f0981d48741f1802ea21f657e",
   "changed": true,
-  "changed_line_count": 62,
+  "changed_line_count": 82,
   "inserted_line_count": 18,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 62,
+    "changed": 82,
     "inserted": 18,
     "deleted": 0,
-    "original_line_count": 61,
-    "candidate_line_count": 79
+    "original_line_count": 79,
+    "candidate_line_count": 97
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

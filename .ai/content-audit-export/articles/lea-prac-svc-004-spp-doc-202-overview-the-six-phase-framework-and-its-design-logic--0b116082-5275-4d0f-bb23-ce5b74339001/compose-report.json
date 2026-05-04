@@ -1,18 +1,28 @@
 {
   "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
   "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
-  "generated_at": "2026-05-03T13:44:10.553Z",
-  "original_hash": "sha256:225031b061e96e8fda7529d5223c7dc4f87f87a45d24b5b95e33fb519031355f",
-  "normalized_hash": "sha256:78f94dfe76ee9550ab5c8947e10787390836f17d7172aa9cf73e2242e3f4da1c",
-  "candidate_hash": "sha256:39c81917d9efdccdc02bd72696ee99aa7253564f988fe84d5c13513af7143714",
+  "generated_at": "2026-05-04T00:05:37.690Z",
+  "original_hash": "sha256:4172cbb009bff0d52f23e9d8bd0f0d33e76b786844d38fa5898e755848c6b55a",
+  "normalized_hash": "sha256:ed2cbe7150393630425467285033d8dc00e6296a1a3c63a8bd7efa1f5da94acf",
+  "candidate_hash": "sha256:ed2cbe7150393630425467285033d8dc00e6296a1a3c63a8bd7efa1f5da94acf",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

@@ -1,12 +1,28 @@
 ## What You Need to Know for the LEA
 
-The LEA tests your ability to compute minimum lot and floor area requirements for socialized and economic housing under BP 220, and to classify these as Group A residential occupancies with specific density constraints.
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Identify the phases of the design process — pre-design, schematic design, design development, and contract documents — and their deliverables.
+- Apply design principles — proportion, scale, balance, rhythm, hierarchy — to architectural composition and space planning problems.
+- Explain the integration of building systems, code compliance, and human factors into the design process.
 
 ---
 
 ## Core Concept
 
 Senior living facilities and low-income housing are classified as _Group A residential_ per **PD 1096**, with specific typologies defined by **BP 220** (Socialized Housing and Sustainable Community Development).
+
+<KeyValues items={[
+  {label:"Socialized Single Detached lot", value:"64 sqm minimum"},
+  {label:"Economic Single Detached lot", value:"72 sqm minimum"},
+  {label:"Socialized Row House lot", value:"28 sqm minimum"},
+  {label:"Economic Row House lot", value:"36 sqm minimum"},
+  {label:"Socialized floor area", value:"18 sqm per unit"},
+  {label:"Economic floor area", value:"24 sqm per unit"},
+  {label:"Target income", value:"30% gross family income (NEDA)"}
+]} />
 
 BP 220 distinguishes between two primary categories:
 
@@ -23,6 +39,10 @@ BP 220 distinguishes between two primary categories:
 - _Row House_: minimum lot area 36 sqm, minimum floor area **24 sqm** per unit.
 
 These minimums ensure compliance with sanitation, ventilation, and accessibility standards while remaining affordable. Senior living facilities do not follow BP 220 minimums; use PD 1096 Group D/I standards (typically >42 sqm per NBC institutional requirements) to accommodate medical equipment and care spaces, though individual units may be classified as Group A-1 (single-family) or A-2 (multi-family) depending on ownership structure. Density calculations for these developments are regulated by **PD 957** (Subdivision Regulations), which cross-references BP 220 lot and road standards.
+
+<Note>
+**Senior Living Exception:** Senior living facilities (care homes, assisted living) are NOT classified under BP 220 housing standards. Instead, they fall under **Group D (Institutional)** or **Group I** per PD 1096 Section 303 because they provide medical care services. This is a common LEA trap — do not apply BP 220 lot minimums to senior care facilities.
+</Note>
 
 ---
 
@@ -72,7 +92,7 @@ For low-income housing density planning:
 A typical 2-hectare socialized housing project in Metro Manila under BP 220 would contain:
 
 - Lot size: 64 sqm (single detached socialized).
-- Sleaable area: 20,000 sqm ÷ 64 sqm = approximately 312 units.
+- Saleable area: 20,000 sqm ÷ 64 sqm = approximately 312 units.
 - Accounting for 30% roads/amenities: 20,000 × 0.70 = 14,000 sqm buildable ÷ 64 = ~218 units.
 - Unit density: ~200–220 units per net hectare.
 - Common practice: mixed 2-bedroom and 3-bedroom floor plans with shared courtyards.
@@ -99,7 +119,25 @@ A typical 2-hectare socialized housing project in Metro Manila under BP 220 woul
 
 > **Memory rule:** Socialized SD = 64 sqm; Economic SD = 72 sqm; Row House socialized = 28 sqm; Row House economic = 36 sqm. The _housing type_ (SD vs. duplex vs. row) determines the minimum — check the type first, then the category (socialized vs. economic).
 
+<ExamTip>
+**Socialized vs. Economic — The LEA Trap:** The exam often presents a scenario with a housing type and asks for the minimum lot area. The critical first step is identifying whether the project is **Socialized** or **Economic** housing. Socialized targets lower-income families; Economic targets moderate-income families. The lot minimums differ by 8–12 sqm per type. Always check the category FIRST, then apply the type.
+</ExamTip>
+
+<Tip>
+**Memory Aid — "Even numbers for Socialized, add 8 for Economic":**
+- Single Detached: 64 (socialized) → 64 + 8 = 72 (economic)
+- Duplex: 48 (socialized) → 48 + 6 = 54 (economic)
+- Row House: 28 (socialized) → 28 + 8 = 36 (economic)
+Floor areas are simpler: 18 sqm (socialized) vs. 24 sqm (economic) — think "18 is legal drinking age, 24 is a full day."
+</Tip>
+
+<WikiMistakeCard number={1} title="Lot Area vs Floor Area Confusion" wrongValue="Using 64 sqm as the floor area minimum" correctValue="64 sqm is the LOT area for socialized single detached; floor area is 18 sqm" explanation="The LEA often tests whether you distinguish between LOT area (the land parcel) and FLOOR area (the building footprint). For socialized single detached: lot = 64 sqm, floor = 18 sqm. For economic single detached: lot = 72 sqm, floor = 24 sqm." />
+
 ---
+
+## Cross-References
+
+See **LEA-PLAN-003-02** (Housing Classifications) for BP 220 categories, **LEA-PLAN-003-01** (Housing Law Framework) for governing laws, and **LEA-DSGN-008-01** (Fire Egress) for occupant load exit requirements.
 
 ## Common Mistakes
 

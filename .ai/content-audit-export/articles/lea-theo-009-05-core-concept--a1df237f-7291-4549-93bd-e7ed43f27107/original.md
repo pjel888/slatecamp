@@ -4,6 +4,14 @@
 Mixed-use buildings combine two or more distinct program types (retail, office, residential, hotel, parking, parking) in a single structure or development, requiring sophisticated program management to resolve conflicting adjacency requirements and operational logistics. Horizontal mixed-use (functions side-by-side) and vertical mixed-use (functions stacked) each present different spatial and circulation challenges. The podium-tower typology—ground-floor retail/public functions with residential or office tower above—is a dominant contemporary building form, particularly in urban Asian contexts including the Philippines, making it testable content for the LEA.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define mixed-use development as combining two or more program types (retail, office, residential, hotel) in a single structure.
+- Distinguish horizontal mixed-use (functions side-by-side) from vertical mixed-use (functions stacked, podium-tower typology).
+- Resolve conflicting adjacency requirements in mixed-use: separate entries, service access, operational hours, and circulation conflicts.
+
 ## Core Concept
 
 Mixed-use developments emerged from urban design and economic goals: maximizing land utilization, creating vibrant street-level retail and civic spaces, integrating residential and employment on limited urban land, and reducing transportation-dependent sprawl. However, mixed-use introduces programming complexity—conflicting adjacency requirements (customers and residents), differing operational hours (retail until 9 PM, residential 24/7), and circulation conflicts (customer vs. resident entry, service vehicle conflicts).
@@ -151,3 +159,10 @@ Programming must identify code-mandated separations early to inform spatial stra
 **Program Adjacency Conflict** — Incompatible spatial or operational requirements of different program types (retail noise vs. residential quiet, different operating hours, different security protocols).
 
 **Stakeholder Coordination** — Process of identifying and resolving differing requirements of retail operators, office tenants, residents, and building management in a single structure.
+
+## Related Articles
+
+See also within Space Planning Theory: **lea-theo-009-01-core-concept**, **lea-theo-009-02-core-concept**, **lea-theo-009-03-core-concept**, **lea-theo-009-04-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

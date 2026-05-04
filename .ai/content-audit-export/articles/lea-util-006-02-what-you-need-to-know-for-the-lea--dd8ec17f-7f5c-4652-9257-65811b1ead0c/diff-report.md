@@ -1,32 +1,32 @@
 # Content Diff Report: lea-util-006-02-what-you-need-to-know-for-the-lea
 
-Generated: 2026-05-03T13:45:25.778Z
+Generated: 2026-05-04T00:07:08.601Z
 Article ID: dd8ec17f-7f5c-4652-9257-65811b1ead0c
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:a133ced328c532b461a4322fd2e849f3d0e60a444d078f8d8c11769768e19f1a`
-- Normalized: `sha256:6a3a17a54a5616ec137fd8066b9e3227f19cdfea2f36867b4229b4f35e8ed093`
-- Candidate: `sha256:6a3a17a54a5616ec137fd8066b9e3227f19cdfea2f36867b4229b4f35e8ed093`
+- Original: `sha256:c46ac8acceec1c84ee12bb785249a6d236bd9d7a4450e4622dbdf97dea4d727d`
+- Normalized: `sha256:73301d2bfe353c08740bd1158dbb99537327b38d2e27f947c9b23b0921060613`
+- Candidate: `sha256:73301d2bfe353c08740bd1158dbb99537327b38d2e27f947c9b23b0921060613`
 
 ## Line summary
 
-- Changed lines: 242
+- Changed lines: 36
 - Inserted lines: 0
-- Deleted lines: 215
+- Deleted lines: 1
 
 ## UI block preservation
 
 - UI blocks expected: 0
 - UI blocks preserved: 0
 - UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
 
 ## Warnings
 

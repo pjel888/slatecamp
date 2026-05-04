@@ -1,38 +1,45 @@
 {
   "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
   "slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
-  "generated_at": "2026-05-03T13:44:56.943Z",
-  "old_hash": "sha256:97a334e87517179aa403507b446a178da1a2b67b07b30c2290c38d4ddef2f7fb",
-  "new_hash": "sha256:31a5fbad9a5ac1ed08cd0578c2c55132e3a1c439433f4344950fd2f501f30562",
-  "original_hash": "sha256:97a334e87517179aa403507b446a178da1a2b67b07b30c2290c38d4ddef2f7fb",
-  "normalized_hash": "sha256:73334b536ccabd8b0066c1b6d83507bcc8e7bc2b34b6e0ac0a9b381392715d95",
-  "candidate_hash": "sha256:31a5fbad9a5ac1ed08cd0578c2c55132e3a1c439433f4344950fd2f501f30562",
+  "generated_at": "2026-05-04T00:06:34.251Z",
+  "old_hash": "sha256:31a5fbad9a5ac1ed08cd0578c2c55132e3a1c439433f4344950fd2f501f30562",
+  "new_hash": "sha256:b060b26718159db417a44aec0bf1cf280975c0332277e0453bb890837c55f883",
+  "original_hash": "sha256:31a5fbad9a5ac1ed08cd0578c2c55132e3a1c439433f4344950fd2f501f30562",
+  "normalized_hash": "sha256:b060b26718159db417a44aec0bf1cf280975c0332277e0453bb890837c55f883",
+  "candidate_hash": "sha256:b060b26718159db417a44aec0bf1cf280975c0332277e0453bb890837c55f883",
   "changed": true,
-  "changed_line_count": 72,
-  "inserted_line_count": 16,
-  "deleted_line_count": 0,
+  "changed_line_count": 63,
+  "inserted_line_count": 0,
+  "deleted_line_count": 18,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 72,
-    "inserted": 16,
-    "deleted": 0,
-    "original_line_count": 63,
-    "candidate_line_count": 79
+    "changed": 63,
+    "inserted": 0,
+    "deleted": 18,
+    "original_line_count": 79,
+    "candidate_line_count": 61
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

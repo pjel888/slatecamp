@@ -1,6 +1,15 @@
 ## What You Need to Know for the LEA
 
-## What You Need to Know for the LEA
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Define a masonry unit and distinguish between concrete blocks, clay bricks, and stone
+- Identify CHB (concrete hollow block) standard dimensions and grades
+- Explain the role of mortar in bonding units and accommodating movement
+- Describe the difference between load-bearing and non-load-bearing masonry units
+
+---
 Masonry units are classified as hollow or solid based on the ratio of void area to gross cross-sectional area. Understanding these classifications, area definitions (gross, net, bedded), and how they affect design and construction is critical for specifying materials, calculating masonry strength, and meeting code requirements.
 
 ## Core Concept
@@ -71,6 +80,13 @@ _In a four-story hollow CHB building with Design Category D seismic loading, gro
 _Memory aid_: **"75% Rule"** — Hollow unit = net area < 75% of gross. Standard 6-inch CHB = 50% net = HOLLOW. **"BNA"** — **B**edded area (what contacts mortar), **N**et area (solid only), **A**rea gross (full bounding box). Bedded area determines bearing stress, not gross area.
 </Tip>
 
+
+## Related Articles
+
+See also: **Masonry Construction** (lea-strc-010-01) for how units are assembled into walls, **Bearing Walls** (lea-strc-002-04) for load-bearing masonry applications, and **Concrete Materials** (lea-strc-006-01) for the concrete in blocks and mortar.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing net area with bedded area—net area is 100% solid material; bedded area is only the portion in actual mortar contact (typically 50–60% for hollow CHB).","Assuming all hollow units have the same net-to-gross ratio—while typical CHB is 45–55%, clay bricks may be 60–80%; always verify unit-specific data.","Using gross area for bearing stress calculations instead of bedded area—this underestimates stress and may lead to local crushing failures.","Treating the 75% threshold as a rough guideline instead of an absolute code criterion—75% is the exact dividing line: ≥75% is solid, &lt;75% is hollow.","Specifying full-cell grouting to improve insulation—grouting eliminates insulation value and is structurally unnecessary where strategic grouting suffices.","Ignoring bedded area reduction in design—hollow units have 40–50% less bedded area than gross area; this significantly increases bearing stress and must be explicitly checked."]} />

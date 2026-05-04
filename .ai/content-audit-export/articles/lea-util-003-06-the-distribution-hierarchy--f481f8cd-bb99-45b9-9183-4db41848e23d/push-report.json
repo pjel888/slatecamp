@@ -1,19 +1,27 @@
 {
-  "attempted_at": "2026-05-03T14:01:37.185Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:11.150Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
   "slug": "lea-util-003-06-the-distribution-hierarchy",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:d64daa3652fa2328fc3305ae5bb411d13d5f524ca9d7a8c6dd166aa24da22942",
   "original_hash": "sha256:52a902712bbf933d9a365d9d63bb3d442e6319679c0c461286a7df71602ae51b",
-  "candidate_hash": "sha256:d64daa3652fa2328fc3305ae5bb411d13d5f524ca9d7a8c6dd166aa24da22942",
+  "candidate_hash": "sha256:63a528d016b3122f7262aa9e0c58291da2c4412af6f4dff2a3ca4e043a782393",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:50:34.953316+00:00"
 }

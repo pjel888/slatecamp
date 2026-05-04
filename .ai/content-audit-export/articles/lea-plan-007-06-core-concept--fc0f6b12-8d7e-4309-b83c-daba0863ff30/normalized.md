@@ -5,7 +5,6 @@ Identify key figures in Philippine planning — Daniel Burnham (Plan of Manila 1
 
 Philippine planning and architecture has been shaped by both international figures working in the Philippines and Filipino professionals who established local practice. Understanding these key figures—their contributions, disciplines, and the eras in which they worked—is essential for the LEA planning history context.
 
-
 ## Core Concept
 
 **Daniel Burnham** (1846–1912), an American architect and city planner, designed the 1905 _Plan of Manila_ and the Plan of Baguio, foundational to Philippine urban planning. Though not Filipino, Burnham's work established the City Beautiful Movement aesthetic in the Philippines. The Burnham Plan of Manila envisioned grand civic spaces (Luneta), diagonal boulevards (Taft Avenue), and monumental architecture—principles that shaped Manila's early 20th-century development.
@@ -17,14 +16,11 @@ Philippine planning and architecture has been shaped by both international figur
 **Felino Palafox Jr.** is the leading contemporary Philippine urban planner and architect. His master plans for Bonifacio Global City (BGC), numerous provincial capitals, and local government comprehensive plans shape Philippine urbanism today. Palafox emphasizes mixed-use development, pedestrian-friendly design, and strategic growth corridors.
 
 **Jorge Yupangco** is known for waterway rehabilitation planning, addressing Manila's critical waterway ecosystem challenges.
+<ArticleMedia id="media-lea-plan-007-06-core-concept" a type="image" caption="Philippine Planning Figures — Burnham to Palafox Timeline" description="Timeline of key figures in Philippine planning: Daniel Burnham (Plan of Manila 1905, City Beautiful), Juan Arellano (Burnham's collaborator, Philippine neoclassical), Felino Palafox Jr. (contemporary tropical urbanism, Palafox master plans), and other contributors by era." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Figure\", \"Era / Discipline\", \"Key Contribution\", \"Philippine Impact\"]}", rows=true, Daniel=true, Burnham=true, American=true, City=true, Beautiful=true, Movement=true, Plan=true, of=true, Manila=true, Baguio=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -37,11 +33,6 @@ The transition from Burnham (colonial American planning, 1905) to Filipino plann
 3. **Contemporary practice:** "Whose plans emphasize walkability and mixed-use development in Philippine context?" → Felino Palafox Jr.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid:** Burnham = 1905 Manila (American). Santos = landscape artist (National Artist). Toledo = first Filipino planner. Palafox = contemporary walkability. Yupangco = waterways.
-[/SLATECAMP_UI_BLOCK]
-
 
 **Exam Tip:** Must know: Daniel Burnham (1905, Plan of Manila + Baguio), Juan Arellano (post-Burnham architect, Manila Post Office, National Museum), Felino Palafox Jr. (contemporary, mixed-use master plans). Other figures tested less frequently.
 
@@ -52,7 +43,3 @@ See **LEA-PLAN-001-03** (Philippine Planning History) for historical context, **
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Stating Olmsted designed either plan—Burnham designed both the Manila plan (1905) and the Baguio plan; Olmsted was not involved in either Philippine project\", \"Attributing Burnham's Plan of Manila to a Filipino architect—Burnham was American, but his work is foundational to Philippine planning\", \"Forgetting that Ildefonso P. Santos Jr. was a National Artist—his recognition as artist was for his landscape architecture contributions\", \"Confusing Antonio Toledo (first planner) with other figures—Toledo's era was postwar (1950s–70s)\", \"Omitting Felino Palafox's contemporary relevance—Palafox's work is directly applicable to current Philippine planning issues\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

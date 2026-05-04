@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply the human settlements framework treating housing within a holistic system of livelihood, services, infrastructure, and community institutions, evaluate settlement sustainability, and apply carrying capacity concepts to settlement planning.
+
 Human settlements development treats housing within a holistic framework: housing is one component of a settlement system that includes livelihood, services, infrastructure, and community institutions. This integrated approach differs from viewing housing as an isolated supply problem. Key concepts are sustainability, social cohesion, basic services access, and balancing growth with resource carrying capacity.
+
 
 ## Core Concept
 
@@ -32,7 +36,7 @@ The Philippines faces simultaneous pressures: rapid urbanization (cities growing
 
 **RA 7279 (UDHA, 1992)** established the principle that evicted families must have access to adequate resettlement sites—not just housing, but sites with services and livelihood access. This was a major step, though implementation remains inconsistent.
 
-**SHFC's Community Mortgage Program** operationalized in-situ upgrading at sclea, recognizing that keeping communities in place preserves livelihoods and social capital.
+**SHFC's Community Mortgage Program** operationalized in-situ upgrading at scale, recognizing that keeping communities in place preserves livelihoods and social capital.
 
 **RA 10121 (DRRM Act, 2010)** mandated disaster risk reduction mainstreaming into CLUPs, requiring settlements to account for climate and seismic hazards.
 
@@ -49,6 +53,13 @@ The shift is from "housing as construction" toward "housing as integrated commun
 **Pattern 3 — Sustainability Constraints:** "A proposed settlement in a flood-prone area faces what primary integrated planning challenge?" → Not just housing design, but infrastructure resilience, livelihood vulnerability, and carrying capacity. Test integrates environmental and social factors.
 
 <Tip>Human settlements = integrated system: housing + infrastructure + livelihood + services + governance + sustainability. In-situ upgrading preserves existing community systems.</Tip>
+
+
+**Exam Tip:** A human settlement is NOT just housing. It requires: land use, infrastructure, livelihood, social services, and community institutions. The LEA tests whether you recognize that settlements are holistic systems, not just shelter.
+
+## Cross-References
+
+See **LEA-PLAN-003-04** (Housing Production) for delivery methods, **LEA-PLAN-003-06** (Informal Settlements) for settlement upgrading, and **LEA-PLAN-005-04** (DRRM) for resilient settlement planning.
 
 ## Common Mistakes
 

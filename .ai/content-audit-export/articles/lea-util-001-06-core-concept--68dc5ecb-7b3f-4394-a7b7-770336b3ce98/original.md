@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Waste disposal, treatment, and recycling systems form the backbone of building sustainability and public health. In Philippine construction, these systems must comply with the Revised National Plumbing Code, RA 9003 (Ecological Solid Waste Management Act), and RA 9275 (Clean Water Act) to protect water resources and minimize landfill burden.
+## Learning Goal
 
+Identify waste disposal and treatment systems (septic tanks, grease traps, sewage treatment plants, leach fields) and apply Revised National Plumbing Code requirements for sizing, clearances, and discharge standards in Philippine building design.
 ## Core Concept
 
 Building waste disposal encompasses both liquid (wastewater/sewage) and solid waste streams. Liquid waste treatment begins at the source through _septic tanks_ for individual buildings, _grease traps_ for food-preparation areas, and _sewage treatment plants (STP)_ for larger developments. The Revised National Plumbing Code mandates primary treatment (settling and sludge removal) before discharge to environment or municipal systems. Secondary treatment removes dissolved and colloidal matter through biological processes. Tertiary treatment polishes effluent to potable or reuse standards, increasingly required in water-stressed regions.
@@ -57,4 +58,7 @@ _A manufacturing facility proposes discharge of treated effluent (BOD = 45 mg/L)
 
 <WikiMistakeCard mistake="Placing leach field 10 m from well instead of 25 m" correction="Revised National Plumbing Code § 305.2 and P.D. 856 require minimum 25 m separation to protect groundwater from septic tank contamination in areas with 2–8 m depth to water table." />
 
-<WikiMistakeList mistakes={["Ignoring grease trap sizing for commercial kitchens; requires 40 L minimum + flow-based capacity per Revised National Plumbing Code § 307.4", "Storing solid waste >3 days in hot climate without temperature control; RA 9003 requires 3-day max in humid regions", "Not segregating waste per RA 9003 at source; four streams (biodegradable, non-recyclable, recyclable, hazardous) are mandatory, not optional", "Confusing STP overflow rate (50–150 L/capita/day design flow) with peak hourly flow; peak is 3–4× average and drives tank volume sizing", "Submitting building permit without DENR discharge permit or Sanitary Inspection Certificate (SIC) from LGU; required for all projects with on-site treatment"]} />
+ea-util-001-07-core-concept**, **lea-util-001-08-core-concept**, **lea-util-001-09-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

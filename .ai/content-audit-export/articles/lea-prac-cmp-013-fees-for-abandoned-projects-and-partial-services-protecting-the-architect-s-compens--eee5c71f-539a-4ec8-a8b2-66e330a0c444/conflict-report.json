@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:27.106Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T16:51:34.123Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
   "slug": "lea-prac-cmp-013-fees-for-abandoned-projects-and-partial-services-protecting-the-architect-s-compensation",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:d2e7c8203298ebe349f8788cc1cdba5a8a5ff2b8747f74ae1a4179e7c736d81f",
-  "original_hash": "sha256:0ec8b99ea3ba09472a92139cdd7a7715ffefbb43a63d98535f99968017c8091c",
-  "candidate_hash": "sha256:d2e7c8203298ebe349f8788cc1cdba5a8a5ff2b8747f74ae1a4179e7c736d81f",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:3d9993cb9dd00b9d7b2bb6d660a6eb4383de7062e19974d7b6350fe85e9cc647",
+  "original_hash": "sha256:d2e7c8203298ebe349f8788cc1cdba5a8a5ff2b8747f74ae1a4179e7c736d81f",
+  "candidate_hash": "sha256:5c98b246b611bbb7d89e77d882cdc269af5b8611ea2a0666dca008e9ad9653cd",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:50:04.675394+00:00"
+  "remote_updated_at_before": "2026-05-03T16:34:45.697464+00:00"
 }

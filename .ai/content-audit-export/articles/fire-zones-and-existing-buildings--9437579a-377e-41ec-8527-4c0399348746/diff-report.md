@@ -1,32 +1,34 @@
 # Content Diff Report: fire-zones-and-existing-buildings
 
-Generated: 2026-05-03T13:45:34.835Z
+Generated: 2026-05-04T00:07:19.481Z
 Article ID: 9437579a-377e-41ec-8527-4c0399348746
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:b365e17fe841d54651a317e0bc49b97ae8fc6f5563ff069eab9adee915747462`
-- Normalized: `sha256:3340b0d130e2c03f319fa6befddeeef04179edefc6803edec13efc2bc176ab69`
-- Candidate: `sha256:e1465b14dd07344691a3f440f6a8ab0d35b34a134db31657bf0c20d5347f33bc`
+- Original: `sha256:f5aedef22b5df3e3169ca5bddd2a2e7becd0d9043abfd053b709e39b6dece094`
+- Normalized: `sha256:a26e281595cd858e5f632a6f88912d953c43aa3658c5823a6404313ba3854b2f`
+- Candidate: `sha256:a26e281595cd858e5f632a6f88912d953c43aa3658c5823a6404313ba3854b2f`
 
 ## Line summary
 
-- Changed lines: 659
-- Inserted lines: 40
+- Changed lines: 502
+- Inserted lines: 24
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 6
-- UI blocks preserved: 6
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 6
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 6 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

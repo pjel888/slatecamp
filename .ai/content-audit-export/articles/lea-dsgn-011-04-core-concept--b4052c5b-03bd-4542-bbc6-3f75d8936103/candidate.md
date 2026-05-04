@@ -5,7 +5,6 @@ Distinguish one-point, two-point, and three-point perspective types, identify va
 
 Perspective drawings and visualization techniques translate 2D orthographic projections (plans, elevations, sections) into 3D spatial representations. The LEA expects you to understand perspective types, identify vanishing points, and recognize how perspective differs from axonometric and orthographic views.
 
-
 ## Core Concept
 
 A **perspective drawing** is a three-dimensional representation that mimics how the human eye perceives space: objects farther away appear smaller, parallel lines converge toward vanishing points, and depth is communicated through relative size and overlap. Perspective is the most intuitive visualization for clients and stakeholders because it closely matches the experience of being in a space.
@@ -36,6 +35,7 @@ The LEA tests whether candidates can:
 3. Understand the relationship between viewpoint (station point) and the resulting perspective image.
 4. Recognize perspective distortion and when it is appropriate to use (dramatic views) versus when to use axonometric or orthographic views (technical coordination).
 5. Construct basic perspectives from orthographic projections (plan and elevation).
+<ArticleMedia id="media-lea-dsgn-011-04-core-concept" a type="image" caption="Perspective Projection Types — One-Point, Two-Point, and Axonometric Comparison" description="Comparison of architectural visualization methods: one-point perspective (vanishing point centered), two-point perspective (two VPs), and axonometric (parallel lines, no vanishing point). Shows same building in each projection type with application context." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -68,12 +68,10 @@ A candidate is asked when to use perspective versus axonometric versus orthograp
 **Pattern 3: Station point and viewpoint analysis**
 A perspective shows a building from street level, eye-level height. The candidate must explain why this viewpoint was chosen (human scale, pedestrian experience) and how moving the station point (elevating it or moving it laterally) would change the image.
 
-<Tip>
-**Memory aid:** "VP-Horizon Rule" — In 1VP and 2VP perspectives, all vanishing points lie on the horizon line, which represents your eye level. If you're standing on the street looking at a building, the horizon is approximately at your eye height (1.5 m). Move your eye level up or down, the horizon line moves with it, and the perspective changes.
-</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 **Exam Tip:** One-point perspective: single vanishing point on horizon line, used for interiors and street views. Two-point: two vanishing points, used for exterior building views. Three-point: adds vertical vanishing point for dramatic height.
+<ArticleMedia id="media-lea-dsgn-011-04-core-concept" a type="image" caption="Perspective Drawing Methods — One-Point, Two-Point, and Three-Point Comparison" description="Comparative diagram showing: one-point perspective (single vanishing point on horizon, interiors), two-point perspective (two vanishing points, corner views of buildings), and three-point perspective (worm's-eye and bird's-eye views). Horizon line, station point, and cone-of-vision for each method labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -81,4 +79,4 @@ See **LEA-DSGN-011-01** (Floor Plans) for plan-to-perspective transformation, **
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing perspective with axonometric; axonometric has no vanishing points and receding lines remain parallel, while perspective lines converge.","Placing vanishing points off the horizon line in a 1VP or 2VP perspective (they must be on the horizon line by definition).","Using 3VP perspective when 2VP would be more appropriate, introducing unnecessary distortion and making the image appear unrealistic or confusing.","Failing to establish a clear horizon line before constructing a perspective, making it impossible to determine vanishing point locations.","Viewing a perspective drawing and assuming it is true to sclea; perspective measurements cannot be extracted directly—use orthographic views for dimensions.","Not identifying the station point or viewpoint before analyzing a perspective; understanding the observer's position is essential for interpreting the image.","Creating a perspective from an inappropriate or unclear station point that obscures important features or creates awkward composition.","Mixing orthographic and perspective views on the same page without clear labeling, confusing viewers about what type of view each drawing is."]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

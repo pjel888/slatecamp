@@ -4,6 +4,8 @@ After reading this article, you should understand the key concepts tested in the
 
 Construction Management Services address the comprehensive coordination demands of modern construction projects. SPP Doc 204-B establishes standards for construction managers operating within the Philippine architectural profession. This service evolved from recognition that project complexity demands specialized management expertise beyond traditional supervision. Construction managers coordinate cost, schedule, quality, safety, and stakeholder relationships throughout project delivery.
 
+<ArticleMedia id="media-lea-prac-svc-014-construction-management" a type="image" caption="Construction Management Process Flow — Project Delivery Coordination" description="Workflow chart showing the construction management process: project assessment → team assembly → schedule coordination → multi-trade integration → cost tracking → value engineering → change management → quality assurance → safety oversight → project closeout. Based on SPP Doc 204-B." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 ### Rationale and Scope of Construction Management
 
 Construction complexity—including schedule coordination, multi-trade integration, cost control, and quality assurance—justifies specialized management roles. Construction Management services coordinate all project participants including contractors, suppliers, consultants, and regulatory authorities. The construction manager functions as the owner's representative, facilitating communication and resolving issues among project participants. This role differs fundamentally from supervision, which focuses on quality control and design verification.
@@ -32,22 +34,13 @@ Compensation methods include percentage of project construction cost, hourly rat
 
 Construction managers assume responsibility for coordination accuracy, cost management, and schedule control within their authority scope. Article 1723 liability for structural matters applies when construction managers direct structural work or approve structural submissions. Standard of care requires competent project administration, accurate documentation, and professional judgment. Limitation of authority protections apply when managers operate within defined contractual scope.
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
 
-<ProcessFlow>
-<ol>
-  <li><strong>Project Definition</strong> — Problem identification</li>
-  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
-  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
-  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
-  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
-  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
-</ol>
-</ProcessFlow>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
 
-<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 
-<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 
 ---
 

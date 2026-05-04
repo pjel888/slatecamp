@@ -1,18 +1,28 @@
 {
   "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
   "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
-  "generated_at": "2026-05-03T13:44:11.542Z",
-  "original_hash": "sha256:d7c83d4c366e3250373737362c0898895374b01ab9be95d3a9b9ae969bbd913a",
-  "normalized_hash": "sha256:46184b5552148bfb0790895de73675f04be7a9c5d5b98351411a44d121ee561c",
-  "candidate_hash": "sha256:1a3fff46098df5840e23932ca6f2084f44ed2e77319859bd3febc7a1fc27ff79",
+  "generated_at": "2026-05-04T00:05:38.926Z",
+  "original_hash": "sha256:1a3fff46098df5840e23932ca6f2084f44ed2e77319859bd3febc7a1fc27ff79",
+  "normalized_hash": "sha256:efc861044f0872ce81dc38ae31a3ddba850b051c98a0ed4b900a8c9d29fc1edf",
+  "candidate_hash": "sha256:efc861044f0872ce81dc38ae31a3ddba850b051c98a0ed4b900a8c9d29fc1edf",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0004",
+    "ui_0005",
+    "ui_0007",
+    "ui_0006"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0007 was not used during composition.",
+    "UI block ui_0006 was not used during composition."
+  ]
 }

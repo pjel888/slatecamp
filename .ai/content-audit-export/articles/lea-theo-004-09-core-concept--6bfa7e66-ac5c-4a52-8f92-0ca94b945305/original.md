@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-Natural ventilation in Philippine buildings exploits cross-ventilation, stack effect, and monsoon wind patterns to displace interior heat without mechanical air conditioning. The bahay kubo demonstrates all three principles simultaneously; modern applications integrate wind catchers and Venturi-effect roof geometries to achieve 8–12 air changes per hour—exceeding mechanical system efficiency in tropical contexts.
-</Callout>
+## Learning Goal
 
+Explain the principles of natural ventilation — cross-ventilation, stack effect, monsoon wind patterns, prevailing wind orientation — and identify design strategies (operable windows, wind scoops, wing walls, clerestories) that drive air movement in tropical buildings.
 ## Core Concept
 
 ### Driving Forces for Natural Ventilation
@@ -171,21 +170,19 @@ This aligns with Philippine Green Building Code emphasis on **climate-responsive
 
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Cross-Ventilation Design**: Given a Coronas Type I floor plan with unknown orientation, propose window/door locations for maximum cross-ventilation. Justify orientation perpendicularity to SW monsoon. Calculate ventilation efficiency (VE) assuming 20% window-to-wall ratio.</ExamTip>
-
 
 <ExamTip>2. **Stack Effect Calculation**: A 6-meter-tall library space has exterior temp 34°C. Design internal temperatures to achieve 3 K differential (achievable with passive cooling). Calculate resulting stack-effect pressure and estimate ACH contribution. Show calculation.</ExamTip>
 
-
 <ExamTip>3. **Wind Catcher Specification**: For a Coronas Type I office building in Manila (SW wind 225°), specify wind catcher height, duct diameter, and orientation. Estimate ventilation rate using pressure coefficient data. Compare to window-only cross-ventilation.</ExamTip>
-
 
 <ExamTip>4. **Bahay Kubo Ventilation Analysis**: Analyze a traditional bahay kubo floor plan. Identify which ventilation mechanisms (cross, stack, wind angle) it employs. Quantify comparative effectiveness vs. modern selead office building of same floor area.</ExamTip>
 
-
 <ExamTip>5. **Multi-Strategy Integration**: For a Coronas Type II hospital (no dry season, perpetual low wind), design a ventilation strategy combining cross-ventilation, stack effect atrium, and supplementary evaporative cooling. Show how each mechanism compensates for seasonal wind deficit.</ExamTip>
 
+<Callout>
+Natural ventilation in Philippine buildings exploits cross-ventilation, stack effect, and monsoon wind patterns to displace interior heat without mechanical air conditioning. The bahay kubo demonstrates all three principles simultaneously; modern applications integrate wind catchers and Venturi-effect roof geometries to achieve 8–12 air changes per hour—exceeding mechanical system efficiency in tropical contexts.
+</Callout>
 
 ## Common Mistakes
 
@@ -194,7 +191,6 @@ This aligns with Philippine Green Building Code emphasis on **climate-responsive
 <WikiMistakeCard mistake="Ignoring Seasonal Wind Reversal" correction="In Coronas Type I regions, designing for NE monsoon (Nov–Apr) only fails during SW monsoon (May–Oct) dominance." context="Openings must enable bidirectional flow." />
 
 <WikiMistakeList mistakes={["Inadequate Outlet Sizing. Creating large windward inlets but small leeward outlets causes pressure buildup, reducing flow. Outlets must equal or exceed inlet area.", "Blocking Stack Effect with Partitions. Interior walls and closed doors block vertical stack-effect airflow. Open floor plans and stairwell accessibility are essential.", "Wind Catcher at Insufficient Height. Installing wind catchers at roofline height (same as surrounding buildings) eliminates the height advantage needed to escape street-level turbulence. Minimum 3–4 meters above adjacent structures.", "Underestimating Thermal Comfort Adaptation. Assuming occupants require 24°C in naturally ventilated buildings. ASHRAE 55 adaptive model allows 27–29°C with 6+ ACH; this expansion dramatically reduces cooling loads."]} />
-
 
 ## Key Terms
 
@@ -219,3 +215,10 @@ This aligns with Philippine Green Building Code emphasis on **climate-responsive
 **Thermal Buoyancy** — Density difference between warm interior and cool exterior air; creates gravitational force driving upward (stack) flow.
 
 **Coronas Type Ventilation Adaptation** — Natural ventilation strategy modified for Type I (seasonal wind compensation), Type II (year-round weak wind + stack effect), Type III/IV (moderate wind + thermal buoyancy blend).
+
+## Related Articles
+
+See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-02-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-07-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

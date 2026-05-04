@@ -1,0 +1,212 @@
+{
+  "generated_at": "2026-05-04T00:00:00Z",
+  "source": "src/components/wiki/index.ts and src/components/wiki/blocks/*.tsx",
+  "description": "Canonical whitelist of all exportable wiki components. Any component not in this list is hallucinated and will cause runtime crashes.",
+  "components": {
+    "Callout": {
+      "exported_from": "./blocks/Callout",
+      "shorthand": false,
+      "variants": ["note", "warning", "tip", "example", "info", "danger", "requirement", "most-tested", "lea-watch", "version-alert", "exam-tip", "authority"],
+      "usage": "<Callout variant=\"tip\">content</Callout>"
+    },
+    "Note": {
+      "exported_from": "./blocks/Callout",
+      "shorthand": true,
+      "base_variant": "note",
+      "usage": "<Note>content</Note>"
+    },
+    "Warn": {
+      "exported_from": "./blocks/Callout",
+      "shorthand": true,
+      "base_variant": "warning",
+      "usage": "<Warn>content</Warn>"
+    },
+    "Tip": {
+      "exported_from": "./blocks/Callout",
+      "shorthand": true,
+      "base_variant": "tip",
+      "usage": "<Tip>content</Tip>"
+    },
+    "Example": {
+      "exported_from": "./blocks/Callout",
+      "shorthand": true,
+      "base_variant": "example",
+      "usage": "<Example>content</Example>"
+    },
+    "CalloutBox": {
+      "exported_from": "./blocks/Callout",
+      "shorthand": false,
+      "usage": "<CalloutBox variant=\"...\" title=\"...\">content</CalloutBox>"
+    },
+    "AlertBox": {
+      "exported_from": "./blocks/Callout",
+      "shorthand": false,
+      "usage": "<AlertBox variant=\"...\" title=\"...\">content</AlertBox>"
+    },
+    "ExamTip": {
+      "exported_from": "./blocks/Callout",
+      "shorthand": true,
+      "base_variant": "exam-tip",
+      "usage": "<ExamTip>content</ExamTip>"
+    },
+    "AuthorityContent": {
+      "exported_from": "./blocks/Callout",
+      "shorthand": true,
+      "base_variant": "authority",
+      "usage": "<AuthorityContent>content</AuthorityContent>"
+    },
+    "LawCallout": {
+      "exported_from": "./blocks/LawCallout",
+      "shorthand": false,
+      "valid_codes": ["nbcp", "bp344", "ra9514", "bp220", "pd957", "irr"],
+      "usage": "<LawCallout code=\"bp344\" section=\"...\">content</LawCallout>"
+    },
+    "WikiExamTable": {
+      "exported_from": "./blocks/WikiExamTable",
+      "shorthand": false,
+      "usage": "<WikiExamTable columns={[]} rows={[]} />"
+    },
+    "WikiPartHeader": {
+      "exported_from": "./blocks/WikiPartHeader",
+      "shorthand": false,
+      "usage": "<WikiPartHeader partNumber={1} title=\"...\" subtitle=\"...\" />"
+    },
+    "WikiMistakeCard": {
+      "exported_from": "./blocks/WikiMistakeCard",
+      "shorthand": false,
+      "usage": "<WikiMistakeCard number={1} title=\"...\" wrongValue=\"...\" correctValue=\"...\" explanation=\"...\" />"
+    },
+    "WikiMistakeList": {
+      "exported_from": "./blocks/WikiMistakeList",
+      "shorthand": false,
+      "usage": "<WikiMistakeList mistakes={[]} />"
+    },
+    "KeyValues": {
+      "exported_from": "./blocks/KeyValues",
+      "shorthand": false,
+      "usage": "<KeyValues items={[{label:\"...\", value:\"...\"}]} />"
+    },
+    "SubjectSnapshot": {
+      "exported_from": "./blocks/SubjectSnapshot",
+      "shorthand": false,
+      "usage": "<SubjectSnapshot items={[{label:\"...\", value:\"...\"}]} />"
+    },
+    "Tabs": {
+      "exported_from": "./blocks/WikiTabs",
+      "shorthand": false,
+      "child_components": ["Tab"],
+      "usage": "<Tabs><Tab label=\"...\">content</Tab></Tabs>"
+    },
+    "Tab": {
+      "exported_from": "./blocks/WikiTabs",
+      "shorthand": false,
+      "parent_required": "Tabs",
+      "usage": "<Tab label=\"...\">content</Tab>"
+    },
+    "Accordion": {
+      "exported_from": "./blocks/WikiAccordion",
+      "shorthand": false,
+      "child_components": ["AccordionItem"],
+      "usage": "<Accordion><AccordionItem title=\"...\">content</AccordionItem></Accordion>"
+    },
+    "AccordionItem": {
+      "exported_from": "./blocks/WikiAccordion",
+      "shorthand": false,
+      "parent_required": "Accordion",
+      "usage": "<AccordionItem title=\"...\">content</AccordionItem>"
+    },
+    "FormulaBlock": {
+      "exported_from": "./blocks/FormulaBlock",
+      "shorthand": false,
+      "usage": "<FormulaBlock label=\"...\" steps={[]} />"
+    },
+    "InlineQuiz": {
+      "exported_from": "./blocks/InlineQuiz",
+      "shorthand": false,
+      "usage": "<InlineQuiz question=\"...\" options={[]} correctIndex={0} explanation=\"...\" />"
+    },
+    "ProcessFlow": {
+      "exported_from": "./blocks/ProcessFlow",
+      "shorthand": false,
+      "usage": "<ProcessFlow>1. Step one\n2. Step two</ProcessFlow>"
+    },
+    "ElaborativeInterrogation": {
+      "exported_from": "./blocks/ElaborativeInterrogation",
+      "shorthand": false,
+      "usage": "<ElaborativeInterrogation question=\"...\" answer=\"...\" />"
+    },
+    "ComparisonTable": {
+      "exported_from": "./blocks/ComparisonTable",
+      "shorthand": false,
+      "usage": "<ComparisonTable>| Header | Header |\n|--------|--------|\n| Cell   | Cell   |</ComparisonTable>"
+    },
+    "TeachBackPrompt": {
+      "exported_from": "./blocks/TeachBackPrompt",
+      "shorthand": false,
+      "usage": "<TeachBackPrompt question=\"...\" correctAnswer=\"...\" />"
+    },
+    "WrongAnswerBanner": {
+      "exported_from": "./blocks/WrongAnswerBanner",
+      "shorthand": false,
+      "usage": "<WrongAnswerBanner fromWrongAnswer={true} topicName=\"...\" />"
+    },
+    "GenericBlock": {
+      "exported_from": "./blocks/GenericBlock",
+      "shorthand": false,
+      "usage": "<GenericBlock>content</GenericBlock>"
+    },
+    "SPP206RefServices": {
+      "exported_from": "./blocks/GenericBlock",
+      "shorthand": false,
+      "usage": "<SPP206RefServices />"
+    },
+    "SPP207RefServices": {
+      "exported_from": "./blocks/GenericBlock",
+      "shorthand": false,
+      "usage": "<SPP207RefServices />"
+    },
+    "Mermaid": {
+      "exported_from": "./blocks/Mermaid",
+      "shorthand": false,
+      "usage": "<Mermaid chart=\"graph TD; A-->B\" />"
+    },
+    "RevealBlock": {
+      "exported_from": "./blocks/RevealBlock",
+      "shorthand": false,
+      "usage": "<RevealBlock label=\"...\" content=\"...\" />"
+    },
+    "PrequestionGate": {
+      "exported_from": "./blocks/PrequestionGate",
+      "shorthand": false,
+      "usage": "<PrequestionGate question=\"...\" correctAnswer=\"...\" />"
+    },
+    "WikiChangedPill": {
+      "exported_from": "./blocks/WikiChangedPill",
+      "shorthand": false,
+      "usage": "<WikiChangedPill />"
+    },
+    "WikiCalloutBox": {
+      "exported_from": "./blocks/WikiCalloutBox",
+      "shorthand": false,
+      "usage": "<WikiCalloutBox>content</WikiCalloutBox>"
+    }
+  },
+  "hallucinated_components_detected": [
+    "DefinitionList",
+    "FormulaCard",
+    "KeyTakeaway",
+    "Checklist",
+    "Formula",
+    "Variables",
+    "ColumnHeaders",
+    "Rows",
+    "Item"
+  ],
+  "recommended_for_articles": {
+    "safe_always": ["Note", "Tip", "Warn", "Example", "ExamTip", "Callout"],
+    "safe_when_content_fits": ["KeyValues", "SubjectSnapshot", "WikiMistakeCard", "ComparisonTable", "ProcessFlow"],
+    "requires_specific_content": ["LawCallout", "FormulaBlock", "WikiExamTable", "WikiPartHeader"],
+    "requires_client_js": ["Tabs", "Accordion", "InlineQuiz", "ElaborativeInterrogation", "TeachBackPrompt", "RevealBlock", "PrequestionGate"],
+    "rarely_needed": ["WrongAnswerBanner", "GenericBlock", "SPP206RefServices", "SPP207RefServices", "Mermaid", "WikiChangedPill", "WikiCalloutBox"]
+  }
+}

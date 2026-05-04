@@ -17,10 +17,6 @@ SPP 203 recognizes that architecture, as the blending of aesthetics, functions, 
 ## Legal and Regulatory Basis
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="authority", title="Legal Authority: R.A. No. 9266 — The Architecture Act of 2004"
-- Text: This SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.
-[/SLATECAMP_UI_BLOCK]
 
 All specialized architectural services under SPP 203 must be rendered by a **Registered and Licensed Architect (RLA)** acting as a **Consulting Architect (CA)**. The Consulting Architect may also be a separately Registered and Licensed Professional (RLP) — meaning the CA may hold a valid professional identification card for one or more State-regulated professions other than architecture (e.g., Environmental Planner, Landscape Architect). The Board and the Commission may issue a **Specialist Certificate** to a qualifying RLA, upon accreditation by the IAPOA.
 
@@ -67,11 +63,6 @@ For all specialized services, the architect may enter into contract with the own
 **Method of Compensation:** For projects involving extensive detailing of AI components such as custom floor, wall, ceiling construction and finishes, cabinet design, built-in components, equipment, and special fittings, the fee is a **percentage of the cost of the AI work**. Should the client separately hire Specialist Consultants, their fee is for the account of the client directly.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: **Note:** AI under SPP 203 refers specifically to the architectural aspect of interiors — space planning, utility lay-outing, built-ins, and specifications — as distinct from the separate and separately licensed profession of **Interior Design**.
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -158,11 +149,6 @@ The Consulting Architect performing CDP:
 - Prepares conceptual development plans, policies, and implementing strategies to arrive at CDP solutions
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: **Note:** CDP ideally requires the architect to also be a separately qualified and licensed **Environmental Planner (EnP)**. If not, the Architect must engage duly qualified professionals as Specialist Consultants.
-[/SLATECAMP_UI_BLOCK]
-
 
 **Method of Compensation:** Through **man-months** (22 man-days × 8 man-hours/day), multiplied by a factor covering overhead and other direct/indirect costs, as prescribed in the Architect's Guidelines.
 
@@ -315,11 +301,6 @@ The Consulting Architect must have advanced knowledge of:
 ## Quick Reference: All 23 Specialized Services
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | No. | Sub-Service | Category | Compensation Basis | |---|---|---|---| | 203.1 | Architectural Interior (AI) Services | Design & Aesthetic | % of cost of AI work | | 203.2 | Acoustic Design Services | Design & Aesthetic | Based on complexity | | 203.3 | Architectural Lighting Layout and Design | Design & Aesthetic | Based on complexity / cost of fixtures | | 203.4 | Site Development Planning (SDP) | Planning | Based on estimated cost of civil/landscaping works | | 203.5 | Site and Physical Plan
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -342,11 +323,6 @@ Any other applicable mode of fee determination from **SPP Document 201** (MDPE),
 ## Relationship to Other SPP Documents
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | SPP Document | Relationship to SPP 203 | |---|---| | **SPP Doc. 201** (Pre-Design) | SPP 203 services like Architectural Programming and Site Analysis are advanced extensions of pre-design tasks | | **SPP Doc. 202** (Regular Design) | SPP 203 services supplement and enhance the design delivered under SPP 202; the regular architectural plan falls under 202, while specialized components fall under 203 | | **SPP Doc. 204-A/B** (Construction) | SPP 203.18 (Post-Design Services) extends into constr
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -364,15 +340,23 @@ Extracted summary:
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: Nine specialized services: Interior Design, Landscape Architecture, Acoustics, Lighting, Preservation, Space Planning, Urban Design, Graphic Design, Expert Witness. Compensation: per-diem, fixed fee, or lump sum — NOT percentage of construction cost (unless the basic services contract also uses percentage). Expert witness is the only one with a forensic/legal character.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Nine specialized services: Interior Design, Landscape Architecture, Acoustics, Lighting, Preservation, Space Planning, Urban Design, Graphic Design, Expert Witness. Compensation: per-diem, fixed fee, or lump sum — NOT percentage of construction cost (unless the basic services contract also uses percentage). Expert witness is the only one with a forensic/legal character.
+
 ## Cross‑References
 
 **Spp Doc 202 Regular Design Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 205 Post Construction Services**, **Spp Doc 209 Architectural Consulting Services Pacs**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

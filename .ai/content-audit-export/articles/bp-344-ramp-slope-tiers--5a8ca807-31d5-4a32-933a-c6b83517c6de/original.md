@@ -1,4 +1,8 @@
 # BP 344 Ramp Slope Tiers
+## Learning Goal
+After reading this article, you should be able to:
+
+Apply the BP 344 four-tier ramp slope system: Tier 1 (1:12 to 1:15 maximum, 6.0 m max run), Tier 2 (1:15 to 1:20, 12.0 m max run), Tier 3 (1:20 to 1:25, no max run), Tier 4 (> 1:25 classified as walkway); calculate landing dimensions (1.50 m minimum) and handrail height (700 mm and 900 mm); determine when a ramp may substitute for stairs in accessible routes.
 
 _An Immersive LEA Review Module – Board Exam Ramp Calculator_
 
@@ -10,11 +14,21 @@ You are designing a hospital ramp.[file:2] A wheelchair stalls halfway up becaus
 
 The 2024 IRR gives a **tiered system for accessible ramps**: a preferred slope and a steeper slope (with strict limits) for new construction, and it keeps the older 1:12 as a legacy reference applied only under constrained existing‑building conditions.[file:2] Confusing these three situations is one of the most common ramp errors on the LEA.[file:2]
 
-**Anchor phrase: "GOLD–MAX–RENO."**
+**Anchor phrase: \"GOLD–MAX–RENO.\"**
 
 - **GOLD** = 1:20, the ideal design goal for accessibility.
 - **MAX** = 1:15, the steepest slope for accessible ramps in new work (with strict run and landing limits).
 - **RENO** = 1:12, allowed only as a constrained exception for existing/renovation cases — never the preferred standard.
+
+---
+
+<LawCallout code="bp344" section="Section 7 - Ramps">
+
+
+The 2024 BP 344 IRR (Appendix A, Sec 1.2) defines the complete tiered ramp slope system for accessible ramps in the Philippines. PD 1096 (Rule XII) allows ramps as exits with general width requirements, but BP 344 overlays stricter, PWD-specific dimensions — slope tiers (1:20/1:15/1:12), minimum clear width (1200mm), landing lengths (1800mm), handrail heights (700/900mm dual), and edge protection (100mm). On any accessible route, the stricter BP 344 standard prevails over the more general PD 1096 rule.
+
+
+</LawCallout>
 
 ---
 
@@ -42,14 +56,14 @@ From the 2024 BP 344 Appendix A amendments on accessible ramps, Table A.1.1:[fil
 | **1:12 (RENO ONLY)** | **8.33%** | Existing buildings/renovations where 1:15 cannot be achieved due to site constraints | To be kept as short as practicable; follow project‑specific detailing | Higher effort; not for new builds | Landings treated per designer’s compliance strategy in constrained sites |
 
 **Universal formula:**  
-\[
-\text{Horizontal Run Length} = \text{Rise} \times \text{Slope Ratio}
-\]
+\\[
+\\text{Horizontal Run Length} = \\text{Rise} \\times \\text{Slope Ratio}
+\\]
 
 Example for 1:15:  
-\[
-700\,\text{mm rise} \times 15 = 10{,}500\,\text{mm} = 10.50\,\text{m}
-\]  
+\\[
+700\\,\\text{mm rise} \\times 15 = 10{,}500\\,\\text{mm} = 10.50\\,\\text{m}
+\\]  
 This matches the table’s **maximum run length** and **maximum rise** values for 1:15.[file:2]
 
 **10.00 m vs 10.50 m (both appear in the table):**
@@ -57,25 +71,37 @@ This matches the table’s **maximum run length** and **maximum rise** values fo
 - **10.50 m** = absolute maximum sloped run at 1:15 corresponding to the 700mm maximum rise.[file:2]
 - **10.00 m** = interval beyond which you must introduce an intermediate landing even if you have not yet hit the 700mm rise ceiling.[file:2]
 
-**Exam tip:**  
-If the question asks: “Maximum length of a _single_ 1:15 accessible ramp run (2024 IRR)?” → **10.50 m**.  
-If it asks: “At what _interval_ must landings be provided for a 1:15 ramp?” → **Every 10.00 m**.
+<LawCallout code="bp344" section="Section 7.1 - Slope Ratios">
+
+
+If the question asks: "Maximum length of a SINGLE 1:15 accessible ramp run (2024 IRR)?" → 10.50 m. If it asks: "At what INTERVAL must landings be provided for a 1:15 ramp?" → Every 10.00 m. These two numbers are distinct — confusing them is a common exam error. For 1:20 (GOLD), the landing interval is every 15.00 m.
+
+
+</LawCallout>
+
+<LawCallout code="bp344" section="Section 7.2 - Landing Dimensions">
+
+
+Trap — 1:12 is NOT the standard maximum slope for new accessible ramps under the 2024 IRR. The amended Appendix A defines 1:20 and 1:15 as the working slopes. 1:12 belongs only to existing building renovations where 1:15 cannot be achieved. Do not select 1:12 as the maximum for new construction in exam questions.
+
+
+</LawCallout>
 
 ---
 
 ## TRAP LEART — Three Ramp Errors on the LEA
 
-**TRAP 1: “1:12 is the standard maximum slope.”**
+**TRAP 1: "1:12 is the standard maximum slope."**
 
 - The amended Appendix A now defines 1:20 and 1:15 as the working slopes for accessible ramps, with 1:15 as the steepest for new construction.[file:2]
-- A 1:12 slope belongs only to **existing building renovations** where 1:15 cannot be achieved due to site constraints, and even there it should be minimized; it is no longer the default “maximum” for new accessible ramps.[file:2]
+- A 1:12 slope belongs only to **existing building renovations** where 1:15 cannot be achieved due to site constraints, and even there it should be minimized; it is no longer the default "maximum" for new accessible ramps.[file:2]
 
-**TRAP 2: “9 m is the maximum 1:15 run.”**
+**TRAP 2: "9 m is the maximum 1:15 run."**
 
 - 9 m is an **ADA** (U.S.) value, not the Philippine 2024 IRR value.
 - The 2024 IRR explicitly states **10.50 m** maximum length for a 1:15 accessible ramp run, with a **700 mm maximum rise**.[file:2]
 
-**TRAP 3: “Landings must be 1500 mm long.”**
+**TRAP 3: "Landings must be 1500 mm long."**
 
 - Older references often used 1500 mm; the amended IRR now states:
   - Intermediate landings: **minimum 1800 mm**.[file:2]
@@ -88,10 +114,10 @@ If it asks: “At what _interval_ must landings be provided for a 1:15 ramp?” 
 
 ### Ramp Width
 
-- **Accessible ramp minimum clear width:** **1200 mm** (Appendix A, 1.2.a).[file:2]
-- PD 1096 says ramps used as exits shall have width “as required for corridors”; corridors in most public occupancies are ≥1100 mm, so BP 344’s 1200 mm is **more stringent** and controls for accessibility.[file:1][file:2]
+- **Accessible ramp minimum clear width:** **1200 mm** (Section 1, Accessible Ramps (slope tiers)).[file:2]
+- PD 1096 says ramps used as exits shall have width "as required for corridors"; corridors in most public occupancies are ≥1100 mm, so BP 344's 1200 mm is **more stringent** and controls for accessibility.[file:1][file:2]
 
-### Slope (Sec A.1.2, Amended BP 344 IRR)
+### Slope (Section 1, Accessible Ramps (slope), Amended BP 344 IRR)
 
 - **Preferred accessible slope:** **1:20** (new construction).[file:2]
 - **Maximum accessible slope for new work:** **1:15** (with 10.50 m / 700 mm limits).[file:2]
@@ -105,7 +131,7 @@ If it asks: “At what _interval_ must landings be provided for a 1:15 ramp?” 
 
 _Reason for the Law:_ A landing must hold the entire wheelchair length plus safety buffer, allowing the user to stop and rest before committing to the next run or entering a doorway.[file:2]
 
-### Edge Protection (Sec A.1.2.h)
+### Edge Protection (Section 1, Accessible Ramps (slope).h)
 
 - **Curbs/raised edges:** Minimum **100 mm** high on both sides of accessible ramps with open edges.[file:2]
 
@@ -136,9 +162,9 @@ _Reason for the Law:_ Dual heights serve both seated and ambulant users; extensi
 **Problem:** Total rise = 1400 mm, new public building, accessible ramp at 1:15. Compute total horizontal footprint.
 
 1. **Total sloped length:**  
-   \[
-   1400\,\text{mm} \times 15 = 21{,}000\,\text{mm} = 21.0\,\text{m}
-   \]
+   \\[
+   1400\\,\\text{mm} \\times 15 = 21{,}000\\,\\text{mm} = 21.0\\,\\text{m}
+   \\]
 
 2. **Max rise per run:** 700 mm → **2 runs** (1400 ÷ 700 = 2), each **10.50 m**.[file:2]
 
@@ -172,7 +198,7 @@ The amended Appendix A explicitly distinguishes **new accessible ramps** from co
 
 - **Existing buildings undergoing renovation:**
   - If 1:15 is physically feasible, you must still target **1:20 or 1:15**.[file:2]
-  - If site constraints (lot lines, existing structure, easements) make 1:15 impossible, a steeper ramp may be used **only as a special-case exception**, with careful attention to shorter run lengths, landings, and safety—always justified as a last resort, not an “easy option.”[file:2]
+  - If site constraints (lot lines, existing structure, easements) make 1:15 impossible, a steeper ramp may be used **only as a special-case exception**, with careful attention to shorter run lengths, landings, and safety—always justified as a last resort, not an "easy option."[file:2]
 
 There is no indication in the 2024 amendments or PD 1096 IRR that **re‑elevates 1:12 as the default maximum** for new accessible ramps; the **1:20–1:15** structure is the current standard.[file:1][file:2]
 
@@ -219,3 +245,10 @@ _Cover the answers before checking:_
 - Guard rail provisions (1100 mm minimum height) in PD 1096 remain in force and are expressly cross‑referenced in the BP 344 amendments for ramps that are elevated more than 750 mm above adjacent grade.[file:1][file:2]
 
 If you want, next we can generate a combined **stairs–ramps–elevators** board‑exam crib sheet that aligns BP 344 with PD 1096 in one page.
+
+---
+
+## Cross‑References
+
+**Bp 344 Accessible Washrooms**, **Bp 344 Elevator Dimensions**, **Widths Slopes**, **Stairs Handrails Guardrails**
+

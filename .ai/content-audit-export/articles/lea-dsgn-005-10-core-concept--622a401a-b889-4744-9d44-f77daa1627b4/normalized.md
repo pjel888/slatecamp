@@ -7,20 +7,11 @@ Multi-purpose halls and community centers are classified as **Group H (Assembly)
 
 ---
 
-
 ## Core Concept
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Design principles focus on the relationship between form and space. Understan...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Design principles focus on the relationship between form and space. Understan...
-[/SLATECAMP_UI_BLOCK]
 
 Multi-purpose halls are **Group H (Assembly)** occupancies when designed for large-scale public gatherings with standing or chair-based configurations. If a permanent stage is integral to the design (as in a theater or auditorium), the venue may be classified as **Group C**.
 
@@ -41,22 +32,15 @@ Multi-purpose halls are **Group H (Assembly)** occupancies when designed for lar
 - **Exit Width:** Minimum **5.0 mm per occupant** for level components (assembly) per **PD 1096 Rule VIII Table VIII-3**.
 - **Number of Exits:** A minimum of **two exits** is required when the occupant load exceeds **200** or the travel distance to an exit exceeds **20 meters** per **Rule VIII Section 1007**.
 - **Travel Distance:** Shall not exceed **60 meters** in sprinklered buildings or **45 meters** in non-sprinklered buildings.
+<ArticleMedia id="media-lea-dsgn-005-10-core-concept" a type="image" caption="Multi-Purpose Hall — Assembly Occupancy Egress Diagram" description="Floor plan of a multi-purpose hall showing flexible seating configurations, stage area, and egress paths. Annotated with occupant load calculation, exit width (7.6 mm/person), travel distance limits, and dual exit requirement at 50+ occupancy." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
 ## Key Provisions
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: A centralized organization places a dominant central space around which secon...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: A centralized organization places a dominant central space around which secon...
-[/SLATECAMP_UI_BLOCK]
 
 **Occupant Load Determination (Group H):**
 
@@ -90,17 +74,8 @@ Multi-purpose halls are ubiquitous community infrastructure serving celebrations
 
 **Pattern 1: Occupancy Classification (Group C vs. H)**
 
-
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Identify the type of spatial organization from a plan — look...
-[/SLATECAMP_UI_BLOCK]
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Identify the type of spatial organization from a plan — look...
-[/SLATECAMP_UI_BLOCK]
 "A community center with a temporary wooden stage serving barangay meetings is classified as **Group H**, but if it had a permanent concrete stage with theater seating, it would be **Group C** (ERR-DSGN-005)." 
 
 **Pattern 2: Occupant Load and Exit Capacity**
@@ -113,8 +88,8 @@ Extracted summary:
 
 ---
 
-
 **Exam Tip — ERR-DSGN-026:** Multi-purpose halls without fixed stages = Group H (assembly). With permanent stage = Group C. Flexible furniture does not change classification — only the presence of a fixed stage matters.
+<ArticleMedia id="media-lea-dsgn-005-10-core-concept" a type="image" caption="Multi-Purpose Hall — Flexible Seating and Egress Configuration" description="Floor plan diagram of a multi-purpose hall showing three configurations: banquet (round tables), theater (rows), and classroom (tables with chairs). Each configuration annotated with net floor area, occupant load, and exit width requirement at 7.6 mm/person." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

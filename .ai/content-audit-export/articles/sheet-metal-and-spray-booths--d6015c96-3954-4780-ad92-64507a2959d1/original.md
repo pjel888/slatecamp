@@ -3,9 +3,23 @@
 **Rule XVII, Sections 1701–1704 — PD 1096 (National Building Code of the Philippines)**
 **LEA Relevance:** Area 2 (Utilities & Fire Protection) | Hazardous Occupancy | Group G Industrial Buildings
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the construction, ventilation, and fire protection requirements for sheet metal work and spray finishing booths under PD 1096 and NFPA 33 standards; calculate minimum ventilation rates for spray booths; apply explosion relief requirements; distinguish Class A, B, and C spray booths by material handled and fire protection needed.
+---
 ---
 
 ## 1. Hook / Opening Scenario
+
+<LawCallout code="pd1096" section="Rule IV - Sheet Metal">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
+
+<LawCallout code="pd1096" section="Rule IV - Spray Booths">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
 
 A fire safety engineer inspects a new automotive refinishing shop in Caloocan. The spray booth uses a standard exhaust fan with steel blades, the motor is mounted inside the duct plenum, and the booth front opening measures 1.2 sq.m — with no fire curtain. The lighting fixtures are standard incandescent units set directly into the booth ceiling without glass panels. In thirty seconds of reading the plans, you can count four violations of Rule XVII. The LEA board exam will test whether you can catch every one of them.
 
@@ -74,7 +88,7 @@ Recall **S-FAR-LV** at the start of any spray booth question to ensure no requir
 | Duct discharge — combustible construction clearance | ≥2.00 m (Sec. 1704) | ≥6 ft (1.83 m) (NFPA 33) | **PH more restrictive** (+170 mm) |
 | Duct discharge — exterior wall openings clearance | ≥8.00 m (Sec. 1704) | Governed by IFC permit requirements; varies | **PH explicit** |
 | Waterwash booth — duct discharge | Exception: NOT regulated (Sec. 1704) | NFPA 33 provides similar exception for waterwash booths | **Comparable** |
-| Lighting — glazing type | Hammered wire or heat-treated glass (Sec. 1703) | Listed fixtures and wire glass or equivleant (NFPA 33, Ch. 13) | **Comparable** |
+| Lighting — glazing type | Hammered wire or heat-treated glass (Sec. 1703) | Listed fixtures and wire glass or equivalent (NFPA 33, Ch. 13) | **Comparable** |
 | Exhaust duct material | Steel, thickness per Secretary's specs (Sec. 1704) | Steel; NFPA 33 specifies minimum thickness by duct size | **Comparable** |
 
 ---
@@ -128,7 +142,7 @@ Recall **S-FAR-LV** at the start of any spray booth question to ensure no requir
 The **No. 18 U.S. gauge** steel requirement (approximately 1.27 mm nominal thickness) represents the lightest sheet metal that can resist deformation from an internal pressure wave in a minor deflagration event. Thinner gauges — No. 22 or No. 24 commonly used in HVAC ductwork — would perforate or rupture under the same conditions, allowing flammable vapor and burning residue to escape the containment. The code specifies U.S. gauge specifically, consistent with the Philippine practice of referencing ASTM standards for steel products.
 
 #### Area Limitations — The Double Cap
-The 150 sq.m hard cap and the 10% of basic permitted area requirement work together. Consider a Group G factory building on a lot where the basic permitted floor area is 800 sq.m. Ten percent of 800 sq.m is 80 sq.m — which controls over the 150 sq.m cap. The spray booth in that building cannot exceed 80 sq.m regardless of how large it is designed. The rationlea: a spray booth is a high-hazard accessory use; it must remain subordinate in area to the building's primary function. Allowing a spray booth to consume half a building's floor area would effectively reclassify the entire building as hazardous.
+The 150 sq.m hard cap and the 10% of basic permitted area requirement work together. Consider a Group G factory building on a lot where the basic permitted floor area is 800 sq.m. Ten percent of 800 sq.m is 80 sq.m — which controls over the 150 sq.m cap. The spray booth in that building cannot exceed 80 sq.m regardless of how large it is designed. The rationale: a spray booth is a high-hazard accessory use; it must remain subordinate in area to the building's primary function. Allowing a spray booth to consume half a building's floor area would effectively reclassify the entire building as hazardous.
 
 The 10% cap echoes the logic used in Rule VII for accessory occupancies — hazardous uses are tolerated only when they remain incidental to the primary occupancy. This connection to Rule VII, Section 701, is a common board exam cross-reference.
 
@@ -161,7 +175,7 @@ The 91 cm figure (approximately 910 mm) aligns remarkably closely with the OSHA 
 ### Section 1703 — Light
 
 #### Why Isolated Lighting Is Critical
-Spray finishing operations generate flammable vapor-air mixtures that can reach explosive concentrations within seconds of operation. Standard electrical fixtures are ignition sources: lamp heat can ignite paint deposits on the fixture surface, and electrical arcing (even in selead fixtures not rated for explosive atmospheres) can ignite the ambient vapor. The Philippine code's requirement for glass panel isolation creates a physical air gap between the ignition-capable fixture and the flammable atmosphere of the spray zone.
+Spray finishing operations generate flammable vapor-air mixtures that can reach explosive concentrations within seconds of operation. Standard electrical fixtures are ignition sources: lamp heat can ignite paint deposits on the fixture surface, and electrical arcing (even in sealed fixtures not rated for explosive atmospheres) can ignite the ambient vapor. The Philippine code's requirement for glass panel isolation creates a physical air gap between the ignition-capable fixture and the flammable atmosphere of the spray zone.
 
 #### Glazing Material Selection
 **Hammered wire glass** (also called wired glass) is traditional: wire mesh embedded in the glass prevents the panel from shattering and falling into the spray zone when heated. **Heat-treated (tempered) glass** is the modern alternative: it is four to five times stronger than annelead glass and, when it does break, shatters into small blunt pieces rather than sharp shards. Both materials satisfy the code's requirement for panels that are either non-combustible or protected against breakage.
@@ -205,114 +219,9 @@ The requirement that ducts be cleaned periodically — implied by the smooth int
 The following checklist consolidates all prescriptive requirements of Sections 1701–1704 into a sequenced inspection tool. Use this on plan review or site inspection.
 
 ### Construction (Section 1701)
-- [ ] Booth walls and structure: steel ≥ No. 18 U.S. gauge
-- [ ] Booth floor area: ≤ 150 sq.m
-- [ ] Booth floor area: ≤ 10% of basic permitted area for the building's Occupancy Group
-- [ ] If floor is combustible: covered with non-combustible, non-sparking material
-- [ ] Interior surfaces: smooth and continuous, no outstanding edges
-- [ ] Interior geometry: permits free passage of exhaust air (no dead zones)
 
-### Fire Protection (Section 1702)
-- [ ] If open front elevation > 1.00 sq.m AND no doors: fire curtain or metal deflector provided
-- [ ] Fire curtain/deflector: ≥ 100 mm depth at upper outer edge of opening
-- [ ] Clearance from adjacent operations: ≥ 91 cm (or as directed by LFSM)
-- [ ] Any greater clearance or partition/wall requirement per Local Fire Service Marshall: complied with
-
-### Light (Section 1703)
-- [ ] Glazing material: hammered wire glass or heat-treated glass panels
-- [ ] Panel location: positioned to minimize spray deposit accumulation
-- [ ] When transparent materials used: only light units as illumination source
-- [ ] Panel function: effectively isolates spraying area from lighting area
-- [ ] Panel material: non-combustible or protected against breakage
-- [ ] Thermal check: normal residue accumulation will NOT reach dangerous temperature from light source radiation/conduction
-
-### Ventilation (Section 1704)
-- [ ] Ventilation type: mechanical (not natural/passive)
-- [ ] Exhaust direction: direct to exterior of building
-- [ ] Air movement rate: ≥ 30 lineal m/min through any portion of spray area
-- [ ] Fan blade material: non-ferrous
-- [ ] Fan blade clearance: mounted to prevent contact with exhaust duct
-- [ ] Motor location: NOT inside spray booth AND NOT inside duct system
-- [ ] Belt drives: enclosed where entering booth or duct
-- [ ] Discharge from combustible construction: ≥ 2.00 m (unless waterwash booth)
-- [ ] Discharge from exterior wall openings: ≥ 8.00 m (unless waterwash booth)
-- [ ] Duct material: steel, thickness per Secretary's specifications
-
----
-
-## 5. PH vs. USA Comparative Analysis
-
-### Where Philippine and US Standards Converge
-
-The convergence of the Philippine and US spray booth standards is striking. The three most critical technical requirements — steel gauge (No. 18), ventilation rate (≈30 m/min / 100 fpm), and non-ferrous fan blades — are essentially identical. The motor-outside-booth requirement is identical. This alignment reflects the fact that PD 1096 and its IRR drew heavily from US model codes (particularly BOCA, UBC, and NFPA standards) when establishing Philippine building requirements. The spray booth provisions are among the most technically harmonized sections of PD 1096.
-
-The 91 cm / 914 mm separation distance is so close as to be practically identical — a rounding artifact of metric conversion from the 3-foot OSHA standard.
-
-### Where Philippine Code Is More Restrictive
-
-**Area cap:** The PH code's absolute 150 sq.m cap and 10% of basic area rule is more prescriptive than NFPA 33's approach. NFPA 33 limits booth size through construction type, sprinkler status, and fire separation — a performance-based approach that can permit larger booths when fire suppression is provided. The Philippine code imposes a hard cap regardless of suppression.
-
-**Duct discharge from combustible construction:** The PH requirement of ≥2.00 m (approximately 6.56 ft) exceeds the NFPA 33 minimum of ≥6 ft (1.83 m) by approximately 170 mm. This makes the Philippine standard slightly more restrictive for this specific clearance.
-
-### Where US Standards Are More Restrictive
-
-**Fire curtain trigger:** NFPA 33 and California Title 8 require fire curtains for openings exceeding **0.84 sq.m (9 sq.ft)**. The Philippine code triggers the requirement at **1.00 sq.m** — meaning a booth with an 0.90 sq.m opening requires a curtain in the US but not in the Philippines.
-
-**Automatic fire suppression:** NFPA 33 requires automatic fire protection systems for spray booths with open areas exceeding 9 sq.ft — typically wet-pipe sprinkler or dry chemical systems. PD 1096, Rule XVII does not mandate automatic suppression within Sections 1701–1704, though Rule XII, Section 1212 (Fire-Extinguishing Systems) may apply based on building occupancy and size. This is a notable gap in PH prescriptive requirements relative to US practice.
-
-**IBC Occupancy Classification:** The IBC classifies spray operations under Group H-2 or H-3 — the High-Hazard occupancy group — which imposes construction type limitations, required fire separations, and site placement restrictions more stringent than those applied to PH Group G occupancies. Philippine Group G, while classified as hazardous, does not carry the full suite of IBC H-Occupancy constraints.
-
-### Design Implications for Philippine Projects
-
-On Philippine projects, the architect and fire safety engineer must navigate Rule XVII alongside RA 9514 (Revised Fire Code of the Philippines) and the Philippine Mechanical Engineering Code (for exhaust system sizing). The Local Fire Service Marshall's authority to impose additional separation requirements (per Section 1702) means the code minimum of 91 cm is a floor, not a ceiling. In densely occupied industrial estates — common in Metro Manila, Cebu, and Davao — the LFSM may effectively require fire-rated partitions between spray booths and adjacent manufacturing lines.
-
-### Tropical Climate Considerations
-
-The Philippine tropical climate introduces specific design considerations not addressed in US model codes. High ambient humidity — common in coastal and rainy-season conditions — can affect spray equipment performance, solvent evaporation rates, and the flammability characteristics of paint-air mixtures within the booth. Spray booths in high-humidity environments may require dehumidification of supply air to maintain consistent spray quality and predictable flammable vapor concentrations. The ventilation standard of 30 m/min remains constant regardless of season; the mechanical engineer must size for worst-case conditions. Additionally, the prevleance of typhoon conditions in the Philippines means exhaust discharge points must be designed to prevent rain ingress and wind-driven reversal of the exhaust airstream — conditions that could re-introduce flammable vapors into the booth.
-
----
-
-## 6. Exam Traps
-
-### Trap Leart 1 — "The separation distance replaces the fire curtain"
-
-**Wrong answer:** A candidate selects that a 1.5 sq.m open-front booth with 91 cm clearance to adjacent operations is compliant — reasoning that the separation distance provides fire protection equivleant to the curtain.
-
-**Why it's wrong:** Section 1702 imposes **two independent requirements**. The 91 cm separation distance applies to ALL booths regardless of opening size. The fire curtain requirement applies to ANY open-front booth with an opening >1.00 sq.m. Meeting one does not satisfy or substitute for the other. The booth in this question needs both the 91 cm clearance AND a fire curtain/deflector ≥100 mm deep at the upper outer edge of the opening.
-
-**Correct answer:** The booth requires both 91 cm separation AND a fire curtain/deflector of at least 100 mm depth per Rule XVII, Section 1702.
-
----
-
-### Trap Leart 2 — "Non-ferrous blades OR motor inside the duct is acceptable"
-
-**Wrong answer:** A candidate identifies only the non-ferrous blade requirement and misses that the motor is located inside the duct plenum — concluding the system is compliant because the blades are aluminum.
-
-**Why it's wrong:** Section 1704 requires that (a) fan blades are non-ferrous AND (b) the motor is NOT in the spray booth OR the duct system. Both are mandatory. A non-ferrous blade paired with a motor inside the duct still violates the code, because the motor is an ignition source within the flammable exhaust stream regardless of blade material.
-
-**Correct answer:** The motor must be located entirely outside both the spray booth and the duct system. Belts, where used to transmit power from the exterior motor, must be enclosed where they enter the booth or duct per Rule XVII, Section 1704.
-
----
-
-### Trap Leart 3 — Confusing the Two Discharge Clearances
-
-**Wrong answer:** A candidate applies the 2.00 m clearance to exterior wall openings, concluding a discharge point 3.00 m from a neighbor's window complies.
-
-**Why it's wrong:** Section 1704 prescribes **two distinct clearances** at the discharge point: ≥2.00 m from **combustible construction** (e.g., wood walls, combustible cladding) and ≥8.00 m from **adjoining exterior wall openings** (windows, doors, louvers). These are different requirements for different conditions. A discharge point 3.00 m from a window fails the 8.00 m window/opening clearance — even if 2.00 m from the nearest wood wall is satisfied.
-
-**Correct answer:** The exhaust duct discharge point must maintain **both** clearances simultaneously: ≥2.00 m from any combustible construction, AND ≥8.00 m from any adjoining exterior wall openings (Rule XVII, Section 1704). Exception: waterwash spray booths are not subject to these discharge location requirements.
-
----
-
-## 7. Board-Prep Mnemonics
-
-### Mnemonic 1: **"2 and 8 from the Gate"** — Exhaust Discharge Clearances
-
-> **2** meters from combustible construction.
-> **8** meters from exterior wall openings.
-> Both from the exhaust **gate** (discharge point).
-
-The number sequence — **2 and 8** — doubles from one requirement to the next. If you remember "2 and 8," you will never mix up the two discharge clearances. Add the qualifier: **"from the gate"** to remind you this applies to the discharge point (the end of the exhaust duct), not to the booth itself.
+<Warn>Don't memorize every code section number — memorize the *rule*. The LEA tests application of code standards, not section number recall, except for major, frequently tested sections (e.g., Rule VII for occupancy, Rule VIII for light/ventilation).</Warn>
+<ExamTip>**LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.</ExamTip>
 
 ---
 
@@ -420,3 +329,10 @@ Return to this module in 3 days. If you can answer the Active Recall questions w
 ---
 
 *Sources: PD 1096 National Building Code of the Philippines (1977), 2004 Revised Implementing Rules and Regulations Rule XVII Sections 1701–1704; NFPA 33 Standard for Spray Application Using Flammable or Combustible Materials; OSHA 29 CFR 1910.107 Spray Finishing Using Flammable and Combustible Liquids; IBC 2018 Section 2404; California Title 8 Section 5446; RA 9514 Revised Fire Code of the Philippines (2008).*
+
+---
+
+## Cross‑References
+
+**Plastics In Construction**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Electrical And Mechanical Regulations**
+

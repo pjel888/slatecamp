@@ -1,4 +1,12 @@
 ## The Architect's Authority During Construction — Powers, Limits, and the Line With the Contractor
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Identify the scope and limits of the Architect's authority during construction as defined by the Contract Documents and Doc 301.
+- Distinguish between the Architect's right to issue directives (remove defective work, require testing) and the Contractor's control over means and methods.
+- Explain the Architect's authority to issue Change Orders and the thresholds requiring Owner authorization.
+- Apply the limits on Architect authority to LEA scenarios involving disputes over work methods, payment certification, and contract interpretation.
 
 
 
@@ -49,3 +57,17 @@ The Architect does not have authority to waive contract requirements or excuse t
 The Architect's authority to direct removal of defective work does not eliminate the Architect's responsibility for design defects. If the defect is caused by the Architect's incomplete or incorrect specifications (e.g., omitting a required component or specifying incompatible materials), the Architect may direct the Contractor to correct the defect, but the Architect remains liable to the Owner for the design error. The Contractor's correction of a design defect does not transfer liability to the Contractor; the Contractor may seek indemnification from the Architect for the cost of correction if the defect is design-caused.
 
 Similarly, the Architect's authority to interpret the contract does not extend to changing the contract scope or requirements. Interpretations clarify existing requirements; they do not create new requirements or obligations. If the Owner desires to change the contract, a formal Change Order must be issued; an interpretation cannot substitute for a Change Order.
+
+<LawCallout code="uap" section="SPP Doc. 202 - Architect's Authority During Construction">
+**Architect's Authority During Construction**
+
+RA 9266 and UAP Doc 301 define the architect's authority, limitations, and responsibility during the construction phase.
+</LawCallout>
+
+<Warn>
+**Common exam trap:** Students often confuse the architect's authority to stop work with the contractor's responsibility for means and methods.
+</Warn>
+
+<ExamTip title="LEA Strategy">
+**High-yield topic:** Know the specific limits of the architect's authority — they cannot direct contractor means/methods, only verify compliance with contract documents.
+</ExamTip>

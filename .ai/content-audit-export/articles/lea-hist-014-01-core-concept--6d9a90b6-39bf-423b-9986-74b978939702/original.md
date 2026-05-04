@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your knowledge of early American colonial and Federal period architecture (1600–1830)—from timber-frame colonial houses to neoclassical civic monuments. Questions focus on building types (meetinghouses, plantation houses, courthouses), regional variations (Southern, New England, Mid-Atlantic), and the transition from colonial dependence to American independence reflected in architectural style.</Callout>
+## Learning Goal
 
+Identify the four regional traditions of American colonial architecture — New England (timber, chimney, saltbox), Mid-Atlantic (brick, symmetry, Georgian), Dutch (gambrel roof, stone), Spanish/Southwest (coquina, adobe, mission) — by material, climate, and cultural origin.
 ## Core Concept
 
 American colonial architecture was not a monolith. Regional climate, available materials, cultural origin, and economic systems produced distinct building traditions across thirteen colonies. New England built timber-frame houses with central chimneys and steep roofs (shedding snow). The Chesapeake region built brick plantation houses with symmetrical facades (classical ideals, labor-intensive). Dutch New York left steep-roofed townhouses. Spanish Florida used coquina and thick walls. This diversity reflects colonial reality: each region had different settlers, different resources, different ambitions.
@@ -28,18 +29,16 @@ The **Federal period** (1780–1820) marked the transition from colonial depende
 
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Regional Identification**
 Questions show photographs of colonial houses and ask you to identify region by form, materials, and roof type. You distinguish New England timber-frame from Mid-Atlantic brick from Southern plantation precedent. You explain why these differences exist (climate, labor, resources, cultural origin).</ExamTip>
-
 
 <ExamTip>**Pattern 2: Colonial to Federal Transition**
 Questions ask how neoclassicism changed American architecture: Why did Federal-style houses have elliptical windows instead of rectangular? Why did civic buildings become temple-like? You connect architectural style to political ideology—classical order = democratic virtue.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Building Type and Function**
 Questions present meetinghouse, courthouse, or plantation house plans and ask you to explain spatial decisions: Why is the central chimney important in New England houses? Why are plantation houses symmetric and why are dependencies separate? You read plan and section as evidence of cultural values.</ExamTip>
 
+<Callout>The LEA tests your knowledge of early American colonial and Federal period architecture (1600–1830)—from timber-frame colonial houses to neoclassical civic monuments. Questions focus on building types (meetinghouses, plantation houses, courthouses), regional variations (Southern, New England, Mid-Atlantic), and the transition from colonial dependence to American independence reflected in architectural style.</Callout>
 
 ## Common Mistakes
 
@@ -48,7 +47,6 @@ Questions present meetinghouse, courthouse, or plantation house plans and ask yo
 <WikiMistakeCard mistake="Forgetting slavery's role in colonial architecture" correction="Students describe plantation houses as elegant statements of proportion without mentioning the enslaved labor that built them and the economic system they represent. Plantation architecture is inseparable from slavery." context="Address this directly." />
 
 <WikiMistakeList mistakes={["Treating Federal style as purely European. Students say Federal is \"just English neoclassicism imported.\" Federal is hybrid: classical precedent filtered through American democratic ideology, built with American materials and labor, adapted to American climate. It's transformation, not copy.", "Overestimating neoclassical purity. Students expect Federal buildings to be rigidly classical. American Federal is pragmatic: it borrows classical language (portico, column, proportion) while accepting practical constraints (budget, local materials, climate, skill). It's classical with American common sense."]} />
-
 
 ## Key Terms
 
@@ -67,3 +65,10 @@ Questions present meetinghouse, courthouse, or plantation house plans and ask yo
 **Meetinghouse** — New England Protestant gathering space; timber-frame, gallery, simple interior; reflects Puritan theology and regional resources.
 
 **Plantation House** — Large domestic structure on agricultural estate; symmetrical, formal; supported by enslaved labor and economic hierarchy.
+
+## Related Articles
+
+See also within United States Architecture: **lea-hist-014-02-core-concept**, **lea-hist-014-03-core-concept**, **lea-hist-014-04-core-concept**, **lea-hist-014-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

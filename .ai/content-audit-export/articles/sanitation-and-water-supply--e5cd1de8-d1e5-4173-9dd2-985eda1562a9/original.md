@@ -5,6 +5,12 @@
 **Difficulty:** Medium
 **Spaced Repetition:** Return in 3 days to re-answer the Active Recall Questions without looking at the article. If you score 3/3, advance to the next topic. If you score 2/3 or below, re-read Section 901 (General Requirements) and the cross-referencing section on the Certificate of Occupancy.
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply PD 1096 Rule IX and the Sanitary Engineering Code minimum water supply and sanitation requirements: calculate minimum water supply pipe sizes by fixture units; determine minimum septic tank capacity and leaching field size by bedroom count; apply the 15 m minimum well-to-septic-tank separation; and identify connection-to-public-sewer requirements.
+---
 ---
 
 ## The Real-World Hook
@@ -113,7 +119,7 @@ All buildings with **hollow and/or wood construction** shall be provided with ra
 Rat-proofing is not optional for these construction types — it is a mandatory provision triggered by the building's construction system.
 
 **Requirement 2 — Garbage Enclosures:**
-Garbage bins and enclosures must be provided with **positive protection against pests**. "Positive protection" means physical barriers — tight-fitting lids, selead containers, or enclosed garbage rooms — not just regular collection schedules. This requirement connects directly to the building's waste management design, including the location and design of garbage rooms in multi-family and commercial buildings.
+Garbage bins and enclosures must be provided with **positive protection against pests**. "Positive protection" means physical barriers — tight-fitting lids, sealed containers, or enclosed garbage rooms — not just regular collection schedules. This requirement connects directly to the building's waste management design, including the location and design of garbage rooms in multi-family and commercial buildings.
 
 **Requirement 3 — Screened Dining Areas:**
 Dining rooms for **public use** (restaurants, cafeterias, canteens) that are **without artificial ventilation** shall be properly screened. This means fly screens on all openings facing outside — windows, doors, and ventilation openings. The public dining context triggers this requirement because food preparation and consumption in unscreened, naturally ventilated rooms in a tropical climate creates conditions for fly-borne contamination.
@@ -153,7 +159,7 @@ BPS certification covers:
 - CPVC and PPR pipes (hot water systems)
 - Cast iron pipes (heavy drainage)
 
-**For the LEA candidate:** Section 907 is rarely a standalone exam question, but it frequently appears as a rationlea element in questions about material specifications. When a question asks why a particular pipe material must be used in a building, the answer chain is: BPS certification (Sec. 907) → Revised National Plumbing Code → PD 1096, Rule IX.
+**For the LEA candidate:** Section 907 is rarely a standalone exam question, but it frequently appears as a rationale element in questions about material specifications. When a question asks why a particular pipe material must be used in a building, the answer chain is: BPS certification (Sec. 907) → Revised National Plumbing Code → PD 1096, Rule IX.
 
 ---
 
@@ -191,7 +197,7 @@ BPS certification covers:
 | **Wastewater — Where No Public Sewer** | Imhoff tank, OR septic tank + absorption field, OR treatment plant | IRC R905 / IPC 701: septic system (on-site sewage facility) per state health department standards; USEPA guidelines | Same technologies; US relies on state health departments for design standards; PH relies on Plumbing Code and DENR |
 | **Septic Tank Standards** | Revised National Plumbing Code + Code on Sanitation (PD 856) | State-specific regulations (no single national standard); USEPA guidance documents | USA: no single federal septic standard — highly fragmented by state. PH: nationally unified under RNPCP |
 | **Storm Water — Separation** | Rainwater shall NOT discharge to sanitary sewer (Sec. 904) | IBC 1503 / IPC Chapter 11: storm drainage separate from sanitary drainage; same prohibition | Same principle — both codes require separate storm and sanitary systems |
-| **Storm Water — Quality** | PD 1096 Sec. 904 focuses on drainage only; water quality governed by RA 9275 (Clean Water Act) | Clean Water Act Section 402 (NPDES) — stormwater discharge permits required for construction sites > 1 acre | USA has a more developed stormwater quality regulatory framework (NPDES permits). PH RA 9275 is the equivleant but less developed in practice |
+| **Storm Water — Quality** | PD 1096 Sec. 904 focuses on drainage only; water quality governed by RA 9275 (Clean Water Act) | Clean Water Act Section 402 (NPDES) — stormwater discharge permits required for construction sites > 1 acre | USA has a more developed stormwater quality regulatory framework (NPDES permits). PH RA 9275 is the equivalent but less developed in practice |
 | **Pest Control — Rat-Proofing** | Mandatory for all hollow/wood construction (Sec. 905) | IBC 1503.4 (no explicit rat-proofing mandate); local health codes govern; IPC pipe sleeves at penetrations prevent pest entry | PH explicitly mandates rat-proofing based on construction type. USA relies more on building envelope continuity and local health codes |
 | **Pest Control — Screened Dining Rooms** | Required for public dining rooms without artificial ventilation (Sec. 905) | No explicit IBC provision; FDA Food Code governs food service sanitation including screening | PH integrates food safety screening into the building code. USA uses FDA Food Code as a separate regulatory instrument |
 | **Noise Abatement** | Buildings shall have adequate noise abatement devices (Sec. 906) — no numerical limits in PD 1096 | IBC 1207 (Sound Transmission): STC ratings for party walls/floors in residential buildings (STC 50 for walls, STC 50 for floors in hotels and multi-family) | USA IBC specifies minimum STC ratings for specific assemblies. PH NBC requires noise abatement generally without specifying STC ratings — more prescriptive in USA |
@@ -319,9 +325,11 @@ A five-storey mixed-use building in Makati City has its roof drainage pipes conn
 
 > **Answer: B — Violation of Section 904, preventing CO issuance**
 >
-<LawCallout code="nbcp" title="connecting storm drainage to the sanitary sewer is a code violation regardless o">
+<LawCallout code="pd1096" section="Rule IX - Sanitation">
+
 
 Per PD 1096, Rule IX, Sec. 904(1): "Rainwater drainage shall NOT discharge to the sanitary sewer system." This prohibition is absolute — connecting storm drainage to the sanitary sewer is a code violation regardless of sewer capacity, city engineer certification, or otherwise code-compliant status of the building. Because Rule III, Sec. 309 requires the building to comply with all applicable requirements of PD 1096 before a Certificate of Occupancy is issued, this violation prevents CO issuance and must be corrected by rerouting the roof drainage to a separate storm drainage system. Option A is incorrect because Sec. 903 (public sewer connection) and Sec. 904 (storm drainage separation) are independent requirements. Options C and D are not provided for in the code.
+
 
 </LawCallout>
 >
@@ -340,9 +348,11 @@ A developer is constructing a three-storey concrete hollow block (CHB) residenti
 
 > **Answer: B — CHB walls must be provided with rat-proofing**
 >
-<LawCallout code="nbcp" title="window screens are required only for">
+<LawCallout code="pd1096" section="Rule IX - Water Supply">
+
 
 Per PD 1096, Rule IX, Sec. 905(1): all buildings with hollow and/or wood construction shall be provided with rat-proofing. A CHB (concrete hollow block) building falls squarely within this requirement because hollow blocks, if not properly filled and selead, leave cavities that serve as rodent pathways. The Building Official must verify this provision during CO inspection per Rule III, Sec. 309. Option A (central air-conditioning) is not required by Sec. 905. Option C is incorrect — window screens are required only for public dining rooms without artificial ventilation per Sec. 905(3), not for all rooms. Option D (licensed pest control company) is not a mandatory provision of Section 905 — the code requires physical rat-proofing of the building, not a service contract.
+
 
 </LawCallout>
 >
@@ -361,15 +371,33 @@ A building owner in a municipality without a public sewer system seeks a Certifi
 
 > **Answer: C — Not compliant; the code specifies only three acceptable on-site alternatives**
 >
-<LawCallout code="nbcp" title="not mere collection and transport. Furthermore, Sec. 903 requires compliance wit">
+<LawCallout code="pd1096" section="Rule IX - Plumbing Requirements">
+
 
 Per PD 1096, Rule IX, Sec. 903(2): where no public sewer system exists, wastewater must be disposed of via (a) Imhoff or septic tank and subsurface absorption field, or (b) a suitable treatment plant, in conformance with the Code on Sanitation (PD 856) and DENR criteria. A holding tank with pump-out is not one of the enumerated alternatives. The code specifies systems that provide treatment or controlled subsurface dispersal — not mere collection and transport. Furthermore, Sec. 903 requires compliance with the Code on Sanitation (PD 856), which sets standards for on-site treatment, not mere collection. Options A and B conflate "contained" with "compliant." Option D is incorrect because DENR permitting for a holding tank does not substitute for compliance with PD 1096, Sec. 903. The Building Official must refuse CO issuance until a compliant wastewater system is installed.
+
 
 </LawCallout>
 >
 > **LEA Area:** Architectural Practice / Building Utilities
 
 ---
+
+
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Septic tank minimum = 2 chambers (1/3 and 2/3 of volume). Capacity = 0.2 m³ per bedroom minimum. Leaching field trench = 600 mm width minimum, 1.5 m minimum from property line. Well-to-septic separation = 15 m minimum (horizontal). The 15 m separation is the most tested distance.
+
+## Cross‑References
+
+**Vent Shafts And Ventilation**, **Fixtures And Small Items In Common Areas**, **Excavation Foundation And Veneer**, **Hydrology In Site Planning**
 
 ## Verified Sources
 

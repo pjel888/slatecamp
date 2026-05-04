@@ -1,19 +1,23 @@
 {
-  "attempted_at": "2026-05-03T14:01:37.438Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:11.440Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
   "slug": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:fd127e34efb02f087528aa7f56b32e2e945a232e786ec5f5663ff6fea6df8bb8",
-  "original_hash": "sha256:8a9350b24a3e6bb8bbf26ed51a7967888b31c193861d5e9840bfb9ebfd0c937b",
-  "candidate_hash": "sha256:fd127e34efb02f087528aa7f56b32e2e945a232e786ec5f5663ff6fea6df8bb8",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:1b795d9c4e2f2125c6803c48aadb7abb35a3f5fb8051529bcd614a3ae3d5e423",
+  "original_hash": "sha256:fd127e34efb02f087528aa7f56b32e2e945a232e786ec5f5663ff6fea6df8bb8",
+  "candidate_hash": "sha256:a75c4bead0549a0800d5c9bcb4b6bb1141c473b83b2755302e498421b164bd26",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:50:35.554216+00:00"
+  "remote_updated_at_before": "2026-05-03T16:05:48.899572+00:00"
 }

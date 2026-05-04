@@ -4,7 +4,6 @@ Fire egress calculations determine exit count, width, and travel distance—all 
 
 Calculate occupant load using RA 9514 load factors per use type, determine required exit count and aggregate width (OL × 7.6 mm/person), verify travel distance limits (45m/60m) and dead-end corridor lengths (6m/12m), and ensure each exit meets the 900mm minimum clear width.
 
-
 ## Core Concept
 Fire egress is determined by three sequential calculations:
 
@@ -96,6 +95,7 @@ If service corridor leads from kitchen to dining, max length 12m ✓
 - Travel distance: ≤10m to exits (well within 60m)
 - Dead-end: ≤12m acceptable
 - Corridor width: 1,100mm minimum
+<ArticleMedia id="media-lea-dsgn-008-01-core-concept" a type="image" caption="Fire Egress Calculation — Occupant Load, Exit Width, and Travel Distance" description="Multi-panel diagram showing: (1) occupant load calculation table per RA 9514 load factors, (2) exit width computation (OL × 7.6 mm/person), (3) travel distance limits (45m unsprinklered, 60m sprinklered), (4) dead-end corridor limits (6m/12m)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -135,13 +135,9 @@ In the Philippines, fire egress calculation errors are among the most-cited by f
 5. **Dead-end analysis**: Identify dead-end corridors and verify length limits.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **"Exit width = OL × 7.6, then distribute across required exits, each ≥ 900mm."** Never under-size an individual exit. If calculated width doesn't distribute evenly, round up and provide larger exits.
-[/SLATECAMP_UI_BLOCK]
-
 
 **Exam Tip — ERR-DSGN-009:** Exit width = occupant load × 7.6 mm/person (minimum 900mm per exit). Do NOT use 5.0 mm/person (assembly) or 5.6 mm/person (educational) unless the occupancy-specific factor is provided.
+<ArticleMedia id="media-lea-dsgn-008-01-core-concept" a type="image" caption="Egress Component Diagram — Exit Access, Exit, and Exit Discharge" description="Floor plan diagram showing the three egress components per RA 9514: exit access (travel path from any point to an exit), exit (enclosed stairway or door), and exit discharge (path to public way). Minimum widths, travel distances (45m/60m), and dead-end corridor limits (6m/12m) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -149,7 +145,3 @@ See **LEA-DSGN-008-02** (Fire Separation) for compartmentation requirements, **L
 
 ## Common Mistakes
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"ERR-DSGN-019: Using 5mm per person instead of 7.6mm for exit width\",\"ERR-DSGN-020: Using 30m travel distance instead of 45m (unsprinklered) or 60m (sprinklered)\",\"ERR-DSGN-021: Assuming 1 exit serves 100 persons; correct max is 49 persons\",\"ERR-DSGN-024: Using 10m dead-end limit instead of 6m (unsprinklered) or 12m (sprinklered)\",\"Calculating exit width but forgetting 900mm minimum per exit\",\"Not separating occupancy loads by use type (e.g., treating dining + kitchen as one load)\",\"Placing all exits on one side of floor; far side becomes dead-end beyond limit\",\"Using wrong load factors (e.g., assembly 9.3 instead of 0.65-1.1)\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

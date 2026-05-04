@@ -218,21 +218,9 @@ A five-storey office building has an exterior wall facing a side property line. 
 
 > **Answer: B — 26.25 sq m**
 >
-<LawCallout code="pd1096" section="Rule VIII - Location on Property">
-
-
-Per PD 1096, Rule VII, Sec. 704(2), when openings in exterior walls are required to be protected, the sum of their areas in any storey shall not exceed 50% of the total wall area of that storey. Total wall area = 15 m × 3.5 m = 52.50 sq m. Maximum opening area = 52.50 × 50% = 26.25 sq m. Option A is 30% (incorrect percentage). Option C is 80% (too high). Option D is the full wall area (100%, clearly wrong). The key is applying the 50% rule to the storey's wall area, not to the floor area.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 >
-<LawCallout code="pd1096" section="Rule VIII - Exterior Walls">
-
-
-LEA Area: Building Technology — National Building Code of the Philippines
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
 ---
 
@@ -247,21 +235,9 @@ Per PD 1096, Rule VII, Section 704, the centerline of an adjoining street is tre
 
 > **Answer: C — 5 meters**
 >
-<LawCallout code="pd1096" section="Rule VIII - Setbacks">
-
-
-Per PD 1096, Rule VII, Sec. 704(1)(b) and Sec. 505 (Rule V), the centerline of the adjoining street is considered the adjacent property line. The street is 8 meters wide; its centerline is 4 meters from the physical lot boundary on the building's side. The exterior wall is set back 1 meter from the physical lot boundary. Total distance from wall face to the effective "property line" (centerline) = 1 m setback + 4 m (half street width) = 5 meters. This is a significant fire separation distance, which may reduce the required fire-resistance rating of the wall. Option A ignores the centerline rule entirely. Option B omits the building setback. Option D uses the full street width, which is incorrect (centerline, not far edge).
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 >
-<LawCallout code="pd1096" section="Rule VIII - Table VIII-1">
-
-
-LEA Area: Building Technology — National Building Code of the Philippines
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
 
 ---
 
@@ -276,27 +252,19 @@ Under PD 1096, Rule VII, Sec. 704, two buildings are constructed on the same pro
 
 > **Answer: B — As two separate buildings, each with an imaginary property line between them**
 >
-<LawCallout code="pd1096" section="Rule VIII - Minimum Distances">
-
-
-Per PD 1096, Rule VII, Sec. 704(3), buildings on the same property with courts or separation between them are treated as if an imaginary property line exists between them. The exception that allows two buildings to be treated as one (and thus exempt from the exterior wall rules between them) applies only when the aggregate floor area is within the allowable limit for a single building under Sec. 705. In this question, the aggregate area exceeds that limit, so the exception does not apply. Both buildings must independently comply with Sec. 704 exterior wall and opening requirements relative to the imaginary property line. Option A is the classic misconception (common ownership does not override the Code). Option C misidentifies the air gap as a compliance mechanism. Option D is flatly wrong — the Code governs all exterior walls, not only those facing streets.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
 >
-<LawCallout code="pd1096" section="Rule VIII - Wall Openings">
-
-
-LEA Area: Building Technology — National Building Code of the Philippines
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
 
 ---
 
-
+---
 
 ---
+
+## Exam Tip
+
+LEA Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 m = 1-hour from interior, 1.0-3.0 m = 1-hour exterior, > 3.0 m = no fire-rating required for exterior walls. The 1.0 m threshold is the most tested distance.
 
 
 
@@ -304,7 +272,7 @@ LEA Area: Building Technology — National Building Code of the Philippines
 
 ## Exam Tip
 
-LEA Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 m = 1-hour from interior, 1.0-3.0 m = 1-hour exterior, > 3.0 m = no fire-rating required for exterior walls. The 1.0 m threshold is the most tested distance.
+ALE Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 m = 1-hour from interior, 1.0-3.0 m = 1-hour exterior, > 3.0 m = no fire-rating required for exterior walls. The 1.0 m threshold is the most tested distance.
 
 ## Cross‑References
 
@@ -320,3 +288,5 @@ LEA Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 
 - **Civil Code of the Philippines** — Articles 667-673 (Easement of Light and View); Articles 482, 694-707 (referenced in Rule II, Sec. 215 Abatement)
 - **Republic Act 9514** — Fire Code of the Philippines (Revised Fire Code), relevant to sprinkler requirements and their interaction with opening protection
 - **ASTM E119 / UL 263** — Standard fire tests for building construction materials (referenced as US testing standard applicable to IBC assemblies)
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

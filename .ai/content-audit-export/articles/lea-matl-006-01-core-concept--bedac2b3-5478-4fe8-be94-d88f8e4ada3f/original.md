@@ -1,10 +1,10 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Roofing materials are classified by composition, gauge, thermal performance, and durability. The LEA tests your ability to specify correct gauges for Philippine applications, convert gauge-to-thickness values, and select materials for tropical climates with high rain intensity and UV exposure.
-
+Classify roofing materials (corrugated GI sheets, clay tiles, concrete tiles, asphalt shingles, standing seam metal, green roofs) by slope requirements, weather resistance, fire rating, and service life for Philippine climate conditions.
 ## Core Concept
 
-Roofing materials serve three critical functions: weather protection, structural support, and thermal regulation. In the Philippines, galvanized corrugated iron (GI) sheets remain the most common residential choice due to cost and availability. These sheets are manufactured per ASTM A653 and come in standard gauges: Gauge 26 = 0.46 mm (0.0181 inches), Gauge 24 = 0.61 mm (0.0239 inches), Gauge 22 = 0.76 mm (0.0299 inches). Gauge 26 (0.46 mm) is the common minimum for residential applications per industry practice, though Gauge 24 (0.61 mm) is increasingly standard. These measurements include the zinc coating per ASTM A653 specification. GI coating weight is specified by G-rating (G90 = 0.90 oz/ft² or Z275 metric equivleant = 275 g/m²), which directly affects corrosion resistance in tropical salt-air environments.
+Roofing materials serve three critical functions: weather protection, structural support, and thermal regulation. In the Philippines, galvanized corrugated iron (GI) sheets remain the most common residential choice due to cost and availability. These sheets are manufactured per ASTM A653 and come in standard gauges: Gauge 26 = 0.46 mm (0.0181 inches), Gauge 24 = 0.61 mm (0.0239 inches), Gauge 22 = 0.76 mm (0.0299 inches). Gauge 26 (0.46 mm) is the common minimum for residential applications per industry practice, though Gauge 24 (0.61 mm) is increasingly standard. These measurements include the zinc coating per ASTM A653 specification. GI coating weight is specified by G-rating (G90 = 0.90 oz/ft² or Z275 metric equivalent = 275 g/m²), which directly affects corrosion resistance in tropical salt-air environments.
 
 Long-span metal roofing (trapezoidal or corrugated profiles spanning 6-12 meters) reduces support framing costs but requires precise fastening and expansion control in temperature-sensitive applications. Clay and concrete roof tiles provide excellent thermal mass and 50+ year durability but demand stronger roof framing due to weight (approximately 5-6 kN/m²). Asphalt shingles are lightweight and affordable but suffer accelerated degradation in tropical UV and humidity. Built-up roofing (BUR) and single-ply membranes (TPO, PVC, EPDM) serve low-slope or flat roofs and require proper slope (minimum 1/4:12 or 2%) for drainage. Metal standing seam systems offer superior panel-to-panel integration and accommodate building movement through hidden fastening.
 
@@ -46,3 +46,10 @@ Philippine construction heavily relies on GI corrugated roofing in residential a
 <WikiMistakeCard mistake="Selecting G60 coating for coastal salt-air exposure without verification of project lifecycle costs." correction="G90 (275 g/m²) is mandatory for tropical maritime climates. G60 premature rust negates any first-cost savings over 20+ year service life." />
 
 <WikiMistakeList mistakes={["Using minimum slope of 1/4:12 for non-draining flat roofs without sump pumps", "Ignoring sheet overlap length (150 mm horizontal, 200 mm vertical) in slope calculations", "Applying asphalt shingle specs to tropical zones without 3-5 year lifecycle planning"]} />
+
+## Related Articles
+
+See also within Roofing, Waterproofing, and Insulation: **lea-matl-006-02-core-concept**, **lea-matl-006-03-core-concept**, **lea-matl-006-04-core-concept**, **lea-matl-006-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

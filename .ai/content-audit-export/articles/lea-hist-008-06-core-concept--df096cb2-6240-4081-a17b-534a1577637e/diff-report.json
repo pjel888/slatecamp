@@ -1,38 +1,54 @@
 {
   "article_id": "df096cb2-6240-4081-a17b-534a1577637e",
   "slug": "lea-hist-008-06-core-concept",
-  "generated_at": "2026-05-03T13:45:22.247Z",
-  "old_hash": "sha256:0a26d31034722118515c023007ce6841bd80e0bb933afcec8b3953da32b75752",
-  "new_hash": "sha256:c6f95f351b7f2b123b5e1591c7c3e753db851f83ef733886aa285ab148fe2fce",
-  "original_hash": "sha256:0a26d31034722118515c023007ce6841bd80e0bb933afcec8b3953da32b75752",
-  "normalized_hash": "sha256:ec9ebfd747b9a2ef1e4e2ea261b419fbd0efc6c8f3bbc24446afcc7ea1cdc396",
-  "candidate_hash": "sha256:c6f95f351b7f2b123b5e1591c7c3e753db851f83ef733886aa285ab148fe2fce",
+  "generated_at": "2026-05-04T00:07:03.729Z",
+  "old_hash": "sha256:c6f95f351b7f2b123b5e1591c7c3e753db851f83ef733886aa285ab148fe2fce",
+  "new_hash": "sha256:64781c9b98eecf4e683017518610e8d3cf958013397629e22291f2fb1ad04e1c",
+  "original_hash": "sha256:c6f95f351b7f2b123b5e1591c7c3e753db851f83ef733886aa285ab148fe2fce",
+  "normalized_hash": "sha256:64781c9b98eecf4e683017518610e8d3cf958013397629e22291f2fb1ad04e1c",
+  "candidate_hash": "sha256:64781c9b98eecf4e683017518610e8d3cf958013397629e22291f2fb1ad04e1c",
   "changed": true,
-  "changed_line_count": 64,
-  "inserted_line_count": 11,
+  "changed_line_count": 49,
+  "inserted_line_count": 8,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 12,
-  "ui_blocks_candidate_count": 12,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 12,
   "ui_blocks_count": 12,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 12,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 64,
-    "inserted": 11,
+    "changed": 49,
+    "inserted": 8,
     "deleted": 0,
-    "original_line_count": 56,
-    "candidate_line_count": 67
+    "original_line_count": 67,
+    "candidate_line_count": 75
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007",
+      "ui_0008",
+      "ui_0009",
+      "ui_0010",
+      "ui_0011",
+      "ui_0012"
+    ],
+    "changed_count": 12
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 12 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 12 preserved UI block(s)."
 }

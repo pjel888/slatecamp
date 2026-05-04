@@ -1,4 +1,6 @@
 ## Introduction
+## Learning Goal
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 Conflicts of interest represent one of the most challenging ethical issues in architectural practice. Unlike clear violations (fraud, negligence), conflicts exist in shades of gray. An architect may have competing interests that cloud judgment, yet honestly believe she will act objectively. The Code of Ethical Conduct and RA 9266 require more than honest intention—they require **disclosure and client informed consent**.
 
@@ -13,9 +15,9 @@ A conflict of interest exists when an architect has competing financial, profess
 - **Motivate self-dealing** decisions that benefit the architect more than the client
 - **Create appearance of impropriety** even if actual judgment remains objective
 
-<LeartBox type="critical">
+<Callout type="critical">
 **Key Principle:** A conflict of interest is determined **objectively**, not by the architect's subjective belief in her own impartiality. Even an architect convinced she can remain objective must disclose conflicts that would reasonably appear to compromise objectivity.
-</LeartBox>
+</Callout>
 
 The Code of Ethical Conduct establishes that architects must:
 
@@ -38,7 +40,7 @@ Financial conflicts occur when the architect has direct or indirect economic int
 
 ### Type 1A: Undisclosed Supplier Commissions
 
-**Scenario 1:** Architect Leax receives a 10% commission from a mechanical systems supplier whenever he specifies their equipment in projects. He does not disclose this arrangement to clients. When designing an HVAC system, he consistently selects the supplier's higher-cost premium line over equivleant lower-cost alternatives.
+**Scenario 1:** Architect Leax receives a 10% commission from a mechanical systems supplier whenever he specifies their equipment in projects. He does not disclose this arrangement to clients. When designing an HVAC system, he consistently selects the supplier's higher-cost premium line over equivalent lower-cost alternatives.
 
 **Conflict Analysis:**
 - **Financial interest:** Architect's fee increases with supplier's product cost
@@ -68,14 +70,14 @@ Financial conflicts occur when the architect has direct or indirect economic int
  - Prohibit the spouse's contractor from bidding
  - Require competitive bid from independent contractors
 
-<LeartBox type="requirement">
+<Callout type="requirement">
 **Disclosure Elements:** Disclosure must include:
 1. **Identification of the conflict** (what competing interest exists)
 2. **Financial details** (how much do you stand to gain?)
 3. **Impact on judgment** (how could this cloud your recommendation?)
 4. **Mitigation steps** (what safeguards can address the conflict?)
 5. **Client's right to consent or refuse** (client can require independent bids)
-</LeartBox>
+</Callout>
 
 ### Type 1C: Competitor Conflict in Bidding
 
@@ -118,9 +120,9 @@ Financial conflicts occur when the architect has direct or indirect economic int
  3. Obtain informed consent from both clients
  4. Establish clear boundaries (only design, no construction management; disclose all decisions affecting both clients)
 
-<LeartBox type="important">
+<Callout type="important">
 **Critical Point:** The appearance of conflict is what triggers the disclosure requirement. Even if Eva believes she can remain objective, the existence of multiple opposed clients reasonably appears to compromise objectivity. Disclosure is mandatory.
-</LeartBox>
+</Callout>
 
 ### Type 2B: Consultant Conflict
 
@@ -194,7 +196,7 @@ Financial conflicts occur when the architect has direct or indirect economic int
 
 ## The Conflict Analysis Matrix
 
-<ConflictMatrix>
+<ComparisonTable>
 Use this framework to analyze whether a situation creates a conflict requiring disclosure:
 
 **Question 1:** Do I have a competing financial, professional, or personal interest?
@@ -216,7 +218,7 @@ Use this framework to analyze whether a situation creates a conflict requiring d
 **Question 5:** Can I ethically serve the client despite the competing interest?
 - No, interests are irreconcilable → Recuse yourself; decline the engagement
 - Yes, with appropriate safeguards (disclosure, written client consent, limitation of scope) → Proceed with disclosure and documented consent
-</ConflictMatrix>
+</ComparisonTable>
 
 ## The Disclosure Process
 
@@ -296,9 +298,9 @@ Some conflicts are so fundamental that disclosure and consent cannot adequately 
 - This is Mike choosing to decline work based on his own professional values
 - Declining work on values grounds is ethically permissible; proceeding while deeply opposed might compromise objectivity
 
-<LeartBox type="important">
+<Callout type="important">
 **Distinction:** Values conflicts (choosing not to serve clients whose practices you oppose) are different from economic conflicts (benefiting from biased advice). Both may justify recusal, but for different reasons. Values conflicts are about the architect's professional integrity; economic conflicts are about protecting the client from the architect's bias.
-</LeartBox>
+</Callout>
 
 ## Conflicts in Specialized Roles
 
@@ -354,9 +356,22 @@ The PRBoA enforces conflict of interest rules through discipline:
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering conflict of interest management
 
 **Next Article:** LEA-PRAC-ETH-012 — Continuing Professional Development and Competency Maintenance
+
+---
+
+## Related Articles
+
+- [RA 9266: Legal Framework](lea-prac-law-001)
+- [Prohibited Acts and Penalties](lea-prac-law-003)
+- [Grounds for Suspension and Revocation](lea-prac-eth-008)
+- [Non-Poaching and Professional Courtesy](lea-prac-eth-006)
+- [Obligations to Contractors](lea-prac-eth-007)
+- [Conflict of Interest](lea-prac-eth-010)
+- [Scope of Practice](lea-prac-law-002)
+- [Signing and Sealing Prohibition](lea-prac-law-017)

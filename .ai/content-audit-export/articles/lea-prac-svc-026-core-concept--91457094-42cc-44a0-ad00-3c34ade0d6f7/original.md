@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define promotional services and consulting as architectural services.
+- Describe the architect's role in client development, marketing, and public engagement.
+- Explain how consulting services differ from full design services.
+- Identify the ethical boundaries for promotional work under SPP Doc 200.
 
 Site Development Planning (SDP) under SPP 203.4 tests your ability to distinguish between the architect's dual or single roles in landscape/hardscape coordination, correctly classify project size to determine Landscape Architect requirements, and calculate fees based on civil and landscaping cost estimates. High-stakes because candidates confuse SDP (SPP 203.4) with standalone Landscape Architecture (SPP 209) and misunderstand when a Registered Landscape Professional is mandatory versus optional.
 
@@ -34,7 +41,7 @@ Compensation for SDP services depends on the sum of estimated costs: civil works
 
 ## Philippine Practice Context
 
-In Philippine development practice, site development planning has become standard for residential and commercial projects, especially large-sclea estates and commercial mixed-use developments. Architects frequently work with Landscape Architects to integrate planting and hardscape features into master plans. Many architects mistakenly treat landscaping as a minor component outside SDP scope, leading to scope creep and underpricing. SPP 203.4 clarifies that on large projects, engaging a qualified RLP is not optional but mandatory, ensuring quality and professional liability protection. Local clients increasingly expect coordinated site development packages, making clear fee distinction between architect and Landscape Architect essential for contract clarity.
+In Philippine development practice, site development planning has become standard for residential and commercial projects, especially large-scale estates and commercial mixed-use developments. Architects frequently work with Landscape Architects to integrate planting and hardscape features into master plans. Many architects mistakenly treat landscaping as a minor component outside SDP scope, leading to scope creep and underpricing. SPP 203.4 clarifies that on large projects, engaging a qualified RLP is not optional but mandatory, ensuring quality and professional liability protection. Local clients increasingly expect coordinated site development packages, making clear fee distinction between architect and Landscape Architect essential for contract clarity.
 
 ## How It's Tested
 
@@ -55,3 +62,18 @@ Questions present SDP scope (planning, specifications, bid assistance, hardscape
 ## Common Mistakes
 
 <WikiMistakeList mistakes={["Confusing SPP 203.4 (SDP) with SPP 209 (PACS)—SDP includes landscape/hardscape planning under architect scope; PACS does not","Assuming the architect can perform detailed landscape design on large projects without hiring an RLP Landscape Architect Specialist Consultant","Reversing the small/large project rule: architect does landscaping on small projects; must hire RLP on large projects","Deducting a client-engaged Landscape Architect's fee from the architect's SDP compensation (client fee is client's account, not deducted)","Confusing softscape (planting, turf) with hardscape (paving, walls, water features)—compensation includes both","Calculating SDP fee on civil works cost alone, omitting landscaping works (hardscape + softscape) from fee base","Treating Architect-of-Record (AoR) role as different from Consulting Architect (CA) role in terms of service scope—both provide SDP; role distinction affects responsibility only","Misinterpreting 'Landscape Architect' requirement on large projects as optional or advisory rather than mandatory"]} />
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)

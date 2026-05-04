@@ -1,32 +1,33 @@
 # Content Diff Report: lea-util-002-05-kitchen-exhaust-hood-classification
 
-Generated: 2026-05-03T13:44:38.752Z
+Generated: 2026-05-04T00:06:14.065Z
 Article ID: 7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:34a92d077c8629492031914e0f6c476d071750b84bfa5880fe27c6165404b864`
-- Normalized: `sha256:deef814363e07ff428e4564e8066060081820c636e76daf7404e0869d1e6f10a`
-- Candidate: `sha256:74c1db1eadba003584147d0fce4a94cc44dc1ded2689a394727d9854fab1ee73`
+- Original: `sha256:74c1db1eadba003584147d0fce4a94cc44dc1ded2689a394727d9854fab1ee73`
+- Normalized: `sha256:eebecb97a030bbf3952733e2bedad924ceae93ffb835afa1fd3ba1785e5d29b6`
+- Candidate: `sha256:eebecb97a030bbf3952733e2bedad924ceae93ffb835afa1fd3ba1785e5d29b6`
 
 ## Line summary
 
-- Changed lines: 206
-- Inserted lines: 21
-- Deleted lines: 0
+- Changed lines: 190
+- Inserted lines: 0
+- Deleted lines: 4
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

@@ -6,7 +6,9 @@ Architects and project teams select delivery methods based on project characteri
 
 ### Design-Bid-Build (Traditional)
 
-Design-Bid-Build separates design and construction into sequential phases. The architect completes design through contract documents. After design approval, contractors bid for construction work, with the lowest responsive bid typically selected. Construction then proceeds under the selected contractor's management.
+|Design-Bid-Build separates design and construction into sequential phases. The architect completes design through contract documents. After design approval, contractors bid for construction work, with the lowest responsive bid typically selected. Construction then proceeds under the selected contractor's management.
+
+<ArticleMedia type="delivery-comparison" caption="Project Delivery Methods Comparison — DBB, DB, CM-at-Risk, and IPD" description="Comparison visual contrasting four project delivery methods: Design-Bid-Build (sequential, low risk), Design-Build (integrated, compressed schedule), CM-at-Risk (hybrid with GMP), and Integrated Project Delivery (collaborative, shared risk/reward). Shows architect role, risk allocation, sequencing, and owner involvement for each." />
 
 DBB maintains clear separation of responsibilities. The architect provides design and administers the contract during construction. The contractor bears construction risk and responsibility for schedule and cost. The client receives a completed design before committing construction funds, providing design clarity and competitive construction pricing.
 

@@ -4,6 +4,14 @@
 Structuralism and semiotics provided postmodern architecture with theoretical frameworks for understanding how buildings communicate meaning through symbols, signs, and systems of relationships rather than through formal beauty or functional expression. The LEA tests your understanding of how Robert Venturi applied semiotic analysis to architecture, how meaning-making operates in architectural language, and how structural analysis differs from traditional architectural criticism.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define structuralism: meaning emerges through systems of relationships and differences, not from objects' inherent properties.
+- Explain semiotic analysis of architecture using Peirce's signifier-signified-interpretant model.
+- Apply Venturi's semiotic analysis to understand how buildings communicate meaning through signs and symbols.
+
 ## Core Concept
 
 Structuralism and semiotics emerged as intellectual movements in the 1960s, fundamentally challenging modernism's claims to objective truth and universal principles. Structuralism, influenced by Claude Lévi-Strauss, Louis Althusser, and others, argued that meaning does not inhere in objects themselves but rather emerges through systems of relationships and differences. Applied to architecture, structuralism suggested that buildings mean not because of their forms' self-evident purpose but because forms participate in cultural systems of signification. Semiotics, the science of signs developed by Charles Peirce and Ferdinand de Saussure and adapted for cultural analysis by Roland Barthes, provided the theoretical vocabulary for analyzing how signs (signifier-signified relationships) operate to produce meaning.
@@ -24,7 +32,7 @@ Structuralism's emphasis on systems of relationship over individual elements pro
 
 Structuralist urban analysis, developed by theorists including Colin Rowe and Fred Koetter, examined how cities themselves operate as systems of meaningful relationships rather than collections of individual buildings. *Collage City* (1978) argued that urban coherence emerges from the interplay between ground-figure relationships, historical layers, and structured systems of spatial and architectural relationships rather than unified master plans. This structuralist approach proved more productive for understanding actual cities than modernism's total design ambitions or postmodernism's surface pastiche.
 
-However, structuralism in architecture faced significant limitations and critiques. Over-emphasis on systematic analysis could reduce architecture to abstract relationships divorced from embodied experience, materials, and place-specific engagement. Furthermore, structuralism's assumption that systems are stable, complete, and knowable was challenged by poststructuralist and deconstructivist critique, which emphasized the instability, incompleteness, and perpetual slippage of meaning and signification. Deconstructivists argued that structuralism's orderly systems concelead violence and exclusions, and that architecture should embrace instability and fragmentation rather than aspiring to systematic coherence.
+However, structuralism in architecture faced significant limitations and critiques. Over-emphasis on systematic analysis could reduce architecture to abstract relationships divorced from embodied experience, materials, and place-specific engagement. Furthermore, structuralism's assumption that systems are stable, complete, and knowable was challenged by poststructuralist and deconstructivist critique, which emphasized the instability, incompleteness, and perpetual slippage of meaning and signification. Deconstructivists argued that structuralism's orderly systems concealed violence and exclusions, and that architecture should embrace instability and fragmentation rather than aspiring to systematic coherence.
 
 Despite these limitations, structuralist and semiotic frameworks remained productive for architectural analysis. Understanding how buildings communicate through symbols, how architectural language operates through learned associations, and how meaning emerges through systematic relationships rather than individual formal expression continues to inform contemporary architectural discourse. The recognition that architecture is a language—a system for encoding and communicating meaning—fundamentally altered architectural practice from modernism's reduction to pure function toward contemporary architecture's sophisticated engagement with semantics, symbolism, and cultural signification.
 
@@ -84,3 +92,10 @@ Despite these limitations, structuralist and semiotic frameworks remained produc
 **Iconic Sign** — Sign where signifier physically resembles signified (a map resembles territory); distinguished from indexical (signs indicating through causation) and symbolic (conventional relationships).
 
 **Code** — System of conventional associations between signifiers and signifieds shared by communities of interpreters; without shared codes, communication is impossible.
+
+## Related Articles
+
+See also within Architectural Philosophies: **lea-theo-005-01-core-concept**, **lea-theo-005-02-core-concept**, **lea-theo-005-04-core-concept**, **lea-theo-005-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

@@ -1,38 +1,43 @@
 {
   "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
   "slug": "lea-prac-frm-004-joint-venture-in-architecture",
-  "generated_at": "2026-05-03T13:44:43.829Z",
-  "old_hash": "sha256:06faaa422203edc894c37c1b4be868c285298a2ffd77f0e8537d0261586bece3",
-  "new_hash": "sha256:f04c063d55fc9108cca171e7273a14aecc77e5f027e9f8dce203da8d2f8e3799",
-  "original_hash": "sha256:06faaa422203edc894c37c1b4be868c285298a2ffd77f0e8537d0261586bece3",
-  "normalized_hash": "sha256:dfd1d6f46d91a7b39104f6b0f8dbd5c2aa41e7edd8b49d8954c4b82dee781837",
-  "candidate_hash": "sha256:f04c063d55fc9108cca171e7273a14aecc77e5f027e9f8dce203da8d2f8e3799",
+  "generated_at": "2026-05-04T00:06:19.827Z",
+  "old_hash": "sha256:f04c063d55fc9108cca171e7273a14aecc77e5f027e9f8dce203da8d2f8e3799",
+  "new_hash": "sha256:2f743d2c323538531e383133c65d1342776286707eaeef31f4629a47d9667e20",
+  "original_hash": "sha256:f04c063d55fc9108cca171e7273a14aecc77e5f027e9f8dce203da8d2f8e3799",
+  "normalized_hash": "sha256:2f743d2c323538531e383133c65d1342776286707eaeef31f4629a47d9667e20",
+  "candidate_hash": "sha256:2f743d2c323538531e383133c65d1342776286707eaeef31f4629a47d9667e20",
   "changed": true,
-  "changed_line_count": 51,
-  "inserted_line_count": 33,
+  "changed_line_count": 53,
+  "inserted_line_count": 2,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 1,
-  "ui_blocks_candidate_count": 1,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 1,
   "ui_blocks_count": 1,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 1,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 51,
-    "inserted": 33,
+    "changed": 53,
+    "inserted": 2,
     "deleted": 0,
-    "original_line_count": 31,
-    "candidate_line_count": 64
+    "original_line_count": 64,
+    "candidate_line_count": 66
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0004"
+    ],
+    "changed_count": 1
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 1 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
 }

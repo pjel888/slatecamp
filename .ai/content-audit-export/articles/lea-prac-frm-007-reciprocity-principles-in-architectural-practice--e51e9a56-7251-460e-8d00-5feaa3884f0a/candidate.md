@@ -11,19 +11,15 @@ After studying this article, you should be able to:
 
 ---
 
-<LawCallout code="ra9266" section="Section 24 - Reciprocity">
-Expect 1-2 reciprocity questions per exam cycle. The most common trap: conflating Section 27 and Section 38. Know which is which cold.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
 
 ---
 
 ### The Reciprocity Requirement
 
-<LawCallout code="irr" section="RA 9266, Section 27">
-A person who is not a citizen of the Philippines at the time of applying to take the licensure examination shall not be allowed to take the exam unless proof exists that the foreign country either (a) admits Filipino citizens to practice architecture without restriction, or (b) allows them to practice after an examination on terms of strict and absolute equality with its own citizens, including unconditional recognition of prerequisite degrees from Philippine institutions.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
-<Warn>The previous version of this article claimed a foreign applicant could prove "reciprocity OR substantial equivalence in education, training, and experience." This is incorrect. The phrase "substantial equivalence" does NOT appear in RA 9266 Section 27. The only pathway under the law is **proof of reciprocal treatment** by the foreign country.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 
 Reciprocity exists when a foreign country admits Filipino architects to practice without restriction, or allows them to take an examination on fully equal terms. "Strict and absolute equality" means:
 - Equal examination conditions (same test, same language, same fees)
@@ -32,24 +28,28 @@ Reciprocity exists when a foreign country admits Filipino architects to practice
 
 The foreign country's law must specifically provide for this — not merely allow it in practice.
 
+<Note>**Why "law, not practice" matters.** If a foreign country merely tolerates Filipino architects working there without a written statutory right, that does not satisfy Section 27. The applicant must point to a specific legal provision in the foreign jurisdiction that grants Filipino architects equal access. This is a common exam trap: an answer choice describing a country's "established practice" of admitting Filipino architects sounds correct but fails because the law does not explicitly provide for reciprocity.</Note>
+
 ---
 
 ### Section 27 vs Section 38: Two Separate Pathways
 
 This is the most commonly tested distinction on the topic.
 
-<Tip>Think of these as two different doors: Section 27 leads to **full Philippine licensure** (you pass the exam, you become a licensed Philippine architect). Section 38 leads to a **temporary permit** for a specific project (you remain licensed in your home country, you work on one project with a Filipino counterpart). You go through one door or the other — not both.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 
 | Pathway | Legal Basis | What It Grants | Requirements |
 |---|---|---|---|
 | Full licensure via exam | Section 27 | Philippine architect license (permanent, renewable) | Prove reciprocity, pass the LEA, meet all registration requirements |
 | Temporary/special permit | Section 38 | Project-specific practice permit (temporary, with Filipino counterpart) | Foreign national, specific project, Filipino counterpart, Board approval |
 
-<Warn>The previous version of this article claimed that "all foreign architects, including those from reciprocal countries, must secure a temporary/special permit under Section 38." This is incorrect. A foreign national who passes the Philippine exam under Section 27 becomes a **licensed Philippine architect** and does NOT need a Section 38 permit.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
 
 **Section 27 pathway:** A foreign national from a reciprocal country applies to take the LEA. If they prove reciprocity, pass the exam, and meet all requirements, they become a registered and licensed Philippine architect. They practice under the same rules as any Filipino architect.
 
 **Section 38 pathway:** A foreign national who is licensed in their home country (but not in the Philippines) can obtain a temporary or special permit to provide architectural services on a specific project. This permit is project-specific, requires a Filipino counterpart architect, and is granted at the Board's discretion. It applies to both reciprocal and non-reciprocal country nationals.
+
+<Tip>**Exam shortcut.** When reading a fact pattern about a foreign architect in the Philippines, ask: *\"Are they taking the Philippine exam?\"* If yes → Section 27 (reciprocity needed, leads to full license). If no → Section 38 (temporary permit, Filipino counterpart required, Board approval). This single question resolves most pathway-distinction items on the LEA.</Tip>
 
 ---
 
@@ -60,7 +60,7 @@ The Board of Architecture evaluates whether a foreign country actually grants re
 - Embassy certifications or foreign board confirmations
 - Evidence submitted by the applicant
 
-<Warn>The article previously claimed the Board "maintains a list of countries with which reciprocity exists." The Board evaluates reciprocity evidence on a case-by-case or ad hoc basis. There is no widely published standing list comparable to those in other professions. The phrasing "the Board maintains a list" overstates the formalization of this process.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
 
 If a country withdraws reciprocal rights, the Board restricts access for that country's nationals. If new reciprocity is established, the Board certifies it and opens examination access.
 
@@ -76,6 +76,8 @@ LEA questions on this topic typically test three things:
 | **Pathway distinction** | "Does a foreign architect from a reciprocal country need a Section 38 permit?" |
 | **Scope of reciprocity** | "What must a foreign applicant prove before taking the Philippine exam?" |
 
+<ExamTip>**Exam strategy.** Reciprocity questions on the LEA usually follow one pattern: a fact scenario describing a foreign architect's situation, then a question about what they need or which section applies. The distractors often mix up Section 27 and Section 38 requirements. Write a quick 2-column table on scratch paper before reading the answer choices — one column for Section 27 (full license via exam, needs reciprocity proof, no counterpart required after passing) and one for Section 38 (temporary permit, project-specific, Filipino counterpart needed, Board approval). Then map the facts to the correct column.</ExamTip>
+
 ---
 
 ### Common Misunderstandings
@@ -84,6 +86,8 @@ LEA questions on this topic typically test three things:
 - **Section 27 and Section 38 are alternatives, not sequential.** Passing the exam under Section 27 means you are a licensed Philippine architect. You do not also need a Section 38 permit.
 - **"All foreign architects need a temporary permit" is wrong.** Only those who have NOT passed the Philippine exam need a Section 38 permit. Those who pass the exam practice like any other licensed architect.
 - **The Board does not maintain a published reciprocity list.** Reciprocity is evaluated case by case based on evidence.
+
+<Warn>**High-risk trap.** Of all the corrected errors in this article, the "substantial equivalence" myth is the most dangerous on exam day. Some older review materials and online forums still parrot this incorrect doctrine. If you see "substantial equivalence in education, training, and experience" as an answer choice for Section 27 requirements, eliminate it immediately — the law requires actual proof of reciprocity, nothing less.</Warn>
 
 ---
 
@@ -99,6 +103,8 @@ A foreign architect from Singapore wants to practice in the Philippines on a sin
 A foreign architect from a reciprocal country passes the Philippine LEA and registers as a licensed architect. Their client later asks if they need a Filipino counterpart under Section 38. What do you tell them, and why?
 
 
+
+<ArticleMedia type="image" caption="Reciprocity vs. ASEAN MRA vs. Temporary Permit — Comparison Diagram" description="Three-column comparison of foreign architect practice pathways under RA 9266: (1) Reciprocity (Sec 27) — mutual recognition with countries granting same rights to Filipino architects; (2) ASEAN MRA — ASEAN Architect Register for ASEAN member states; (3) Temporary/Special Permit (Sec 38) — for specific projects, limited duration. Each column shows: legal basis, qualification requirements, scope of practice, duration, and renewal conditions." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

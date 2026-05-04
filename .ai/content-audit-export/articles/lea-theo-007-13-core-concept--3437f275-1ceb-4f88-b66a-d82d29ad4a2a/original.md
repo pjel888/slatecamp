@@ -3,6 +3,14 @@
 Vernacular architecture—buildings designed and built by communities without formally trained architects—embodies accumulated climate-responsive knowledge, cultural practices, and material wisdom. The LEA tests your understanding that vernacular is not "primitive" but is a sophisticated, rational response to environmental and cultural constraints. You must master Bernard Rudofsky's theoretical framework, understand Philippine examples (bahay kubo, bahay na bato), and recognize how vernacular principles inform contemporary sustainable design.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define High-Tech's core theoretical position: structure as beauty and mechanics as ornament — mechanical systems and structural engineering honestly expressed.
+- Identify key High-Tech architects (Richard Rogers, Renzo Piano, Norman Foster, Nicholas Grimshaw) and their major works.
+- Explain how High-Tech resolved modernism's contradiction between form and function by celebrating function as form.
+
 ## Core Concept
 
 Vernacular architecture comprises buildings designed and built by users themselves or by craftspeople responding to local conditions without formal architectural training or external design imposition. Rather than being designed according to imported styles or universal principles, vernacular architecture evolves through generations of experiential learning—what works in this climate, with these materials, at this cost, according to these cultural values.
@@ -78,7 +86,7 @@ Contemporary architectural practice increasingly learns from vernacular:
 
 **Typological Stability**: Rather than pursuing novelty, contemporary design sometimes embraces stable types modified for contemporary standards. This reflects vernacular's wisdom: proven typologies are refined rather than abandoned.
 
-**Participatory Design and Community Knowledge**: Social architecture increasingly recognizes that communities possess place-based knowledge equivleant to professional expertise. Vernacular represents accumulated community knowledge; contemporary participatory design attempts to create similar processes in formal design.
+**Participatory Design and Community Knowledge**: Social architecture increasingly recognizes that communities possess place-based knowledge equivalent to professional expertise. Vernacular represents accumulated community knowledge; contemporary participatory design attempts to create similar processes in formal design.
 
 **Seismic and Typhoon Performance**: The Philippines' seismic and typhoon risk requires structural strategies. Vernacular timber construction (flexibility, articulated joints) and elevated platforms (flood resilience) embody this knowledge. Contemporary seismic design in the Philippines increasingly studies vernacular building behavior.
 
@@ -155,3 +163,10 @@ The gentrification trap: "Preserving vernacular heritage" can become displacemen
 **Place-Based Design** — Architecture rooted in specific environmental, cultural, and material conditions; opposes universalist principles; fundamental vernacular approach.
 
 **Pitched Roof and Water Management** — Steep roof angles prevent water accumulation and enable rapid runoff; critical in monsoon climates (bahay kubo design).
+
+## Related Articles
+
+See also within Contemporary Movements & Discourse: **lea-theo-007-01-core-concept**, **lea-theo-007-02-core-concept**, **lea-theo-007-09-core-concept**, **lea-theo-007-10-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

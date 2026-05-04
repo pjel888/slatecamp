@@ -1,32 +1,34 @@
 # Content Diff Report: lathing-and-plastering
 
-Generated: 2026-05-03T13:45:14.789Z
+Generated: 2026-05-04T00:06:55.091Z
 Article ID: 877492ae-e17b-48d4-bfd4-f158e794bd46
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:6f6ebde6df601eb1af34adea4360a3e263ec4b98967a5ab804502fc301698eb8`
-- Normalized: `sha256:f570f3bcf1c3a4f1804c3b60fe6ba47f2daaeee01dd55b9ef28afc49eedd71fa`
-- Candidate: `sha256:dc116ae5271ad9b2ba1be467ab5a806bc30cb2e98df6a2f6d0a121a098f7bd61`
+- Original: `sha256:c21f34fd61b69ab52eb991b28ec39181f468daaf4a52552e8cd055b59904b20b`
+- Normalized: `sha256:281fbbd2f15ab6d5306009d4ea15e82c7598253fb6de063e9c8c8296a7e2f4a1`
+- Candidate: `sha256:281fbbd2f15ab6d5306009d4ea15e82c7598253fb6de063e9c8c8296a7e2f4a1`
 
 ## Line summary
 
-- Changed lines: 487
-- Inserted lines: 26
+- Changed lines: 449
+- Inserted lines: 12
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 4
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 4
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 4 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

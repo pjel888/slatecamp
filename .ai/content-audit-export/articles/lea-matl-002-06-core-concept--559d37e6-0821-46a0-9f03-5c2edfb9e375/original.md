@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Concrete admixtures are chemical additives that modify concrete properties (workability, strength, set time, durability) beyond what cement, water, and aggregate alone can provide. The LEA tests your understanding of admixture types, specifications, dosage ranges, effects on concrete properties, and appropriate applications. Expect questions on ASTM C494 classifications, water reduction mechanisms, air entrainment purposes, and consequences of over-dosing or under-dosing.
-
+Classify concrete admixtures (water reducers, retarders, accelerators, superplasticizers, air-entraining, pozzolans) by function and explain how each modifies fresh or hardened concrete properties to meet specific construction requirements.
 ## Core Concept
 
 Admixtures allow engineers to fine-tune concrete performance for specific project requirements. A water reducer might lower water-cement ratio (increasing strength), while an accelerator speeds early strength for rapid form removal. Each admixture type has dosage limits and secondary effects; exceeding dosage can cause slump loss, segregation, or reduced durability.
@@ -46,7 +46,7 @@ Type B admixtures delay the initial and final set times, slowing hydration. They
 - Delays initial set by 1—6 hours (variable by product and dosage)
 - Delays final set proportionally
 - May reduce early strength (1—3 days) due to delayed hydration
-- At 7 and 28 days, strength is typically equivleant to non-retarded concrete because additional hydration time compensates
+- At 7 and 28 days, strength is typically equivalent to non-retarded concrete because additional hydration time compensates
 - Slump retention is improved in hot weather (workability extends)
 
 **Applications:** Large pours, hot-weather concreting, slipform construction where extended workability is needed.
@@ -64,7 +64,7 @@ Type C admixtures speed hydration, accelerating set time and early strength deve
 **Effects:**
 - Reduces initial set by 30—60% (from typical 6—8 hours to 3—4 hours)
 - Increases 1-day strength by 50—100% (dramatic acceleration of early strength)
-- 7 and 28-day strengths are typically equivleant to non-accelerated concrete
+- 7 and 28-day strengths are typically equivalent to non-accelerated concrete
 - Increases heat of hydration (warm feeling during curing); risk of thermal cracking if cooling is not controlled
 
 **Applications:** Cold-weather concreting, accelerated form removal, repair of concrete damage where rapid strength is critical.
@@ -193,3 +193,10 @@ Typical questions present a concrete application (hot-weather pour, cold-weather
     "Mixing admixture types without trial mixes: Combinations can be incompatible or have unexpected effects. Always conduct trial mixes when combining or changing admixtures.",
     "Varying admixture dosage on-site without notification to designer: Changes in admixture amount alter concrete properties (slump, set time, strength). Always maintain specified dosage and document any changes."
   ]} />
+
+## Related Articles
+
+See also within Masonry and Concrete: **lea-matl-002-03-core-concept**, **lea-matl-002-04-core-concept**, **lea-matl-002-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

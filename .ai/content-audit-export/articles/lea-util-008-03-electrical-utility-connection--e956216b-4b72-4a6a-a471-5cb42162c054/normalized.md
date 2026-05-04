@@ -7,32 +7,20 @@ Coordinate electrical utility connection requirements with the local electric ut
 
 The electrical service entrance is where Meralco's distribution system connects to your building. Meralco service requirements vary by load demand and building classification. For residential units under 10 kW, Meralco typically requires a single-phase service entrance; commercial and industrial buildings above 50 kW demand three-phase service (Meralco Technical Standards, 2023).
 
+<ArticleMedia id="media-lea-util-008-03-electrical-utility-conne" a type="image" caption="Electrical Riser Diagram — Meralco Service Connection to Main Switchgear to Distribution" description="Single-line riser showing: Meralco utility pole with 13.8kV overhead line → pad-mounted transformer (150 kVA, 13.8kV/220-380V) → service entrance conductors (min #4 AWG copper) → metering cabinet → main switchgear with main breaker and service disconnect → distribution panelboards with 25% spare capacity → branch circuits. Grounding electrode system (driven ground rod 2.4m, ≤25 ohms), step-down voltage, and Meralco coordination requirements per PEC Article 2.6 labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 The service entrance consists of three main components: the transformer pad or vault, the metering installation, and the service lateral. Meralco owns and maintains the transformer equipment; the building owner provides and maintains the pad or vault structure. For buildings requiring loads between 10–50 kW, Meralco may install a ground-mounted transformer pad measuring approximately 2.5 m × 2 m × 1.5 m (height). For larger loads exceeding 50 kW or in constrained sites, underground transformer vaults are required, typically 3.5 m × 3 m in plan with 2.5 m clear internal height (Meralco Specifications, 2022).
 
 The service lateral—the underground or overhead conductor from the Meralco distribution line to the building—must be sized per National Electrical Code (NEC) requirements adapted for Philippine installations. A standard residential service lateral is typically 16–25 mm² copper conductor; commercial services range from 50–120 mm² depending on demand (Association of Consulting Engineers, 2020). The metering cabinet must be accessible to Meralco personnel, placed at property line or building face, and located between 1.2–1.8 m above finished ground level (Meralco Installation Standards, 2023).
 
 ## Water Supply Connection
 
-
 [SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}]
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC ...
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, ...
-[/SLATECAMP_UI_BLOCK]
 
 Manila Water Company (serving eastern Metro Manila) and Maynilad Water Services (western zones) own and operate water mains. Individual building water service laterals branch from these mains to the property boundary or building entrance. The service lateral diameter depends on building water demand: residential buildings up to 50 units typically use 19–25 mm copper or PVC pipe; commercial buildings may require 50–75 mm laterals (Manila Water Technical Requirements, 2023; Maynilad Design Manual, 2022).
 

@@ -30,6 +30,7 @@ Gallery dimensions and aisle widths must accommodate both visitor comfort and ar
 - Alcove/display area: 2.0–3.0 m (artifact-dependent)
 
 Environmental standards are governed by the **NCCA/NHCP guidelines** and the **National Heritage Commission** (NHC) for protected artifacts. Climate control is critical: fluctuations > 2°C per day cause dimensional changes in wood, canvas, and paper. Humidity swings > 10% risk mold and salt efflorescence on ceramics and stone.
+<ArticleMedia id="media-lea-dsgn-004-05-core-concept" a type="image" caption="Museum Circulation Patterns — Linear, Radial, Comb, and Free-Flow" description="Comparative diagram of four museum gallery circulation typologies with visitor flow arrows: linear (single path), radial (central hub with wings), comb (spine corridor with side galleries), and free-flow (open plan). Annotated with minimum aisle widths (3.0m primary, 1.8m secondary)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -90,16 +91,7 @@ A typical **municipal art museum in the Philippines** (2,000 sqm gallery + 500 s
 - Fire separation: 2-hour wall between climate-controlled storage (Group C mechanical) and administrative offices (Group E)
 - Parking: museums typically exempt or require 1 space per 50 sqm GFA for staff (municipal mandate varies)
 
-<Example>
-**Example: Occupant Load and Egress for a Provincial Museum**
-
-A provincial museum in the Philippines has a 1,200 sqm gallery space. The architect proposes two exit stairs (each 1.8 m wide) and one side exit (1.5 m wide). Verify compliance.
-
-- Occupant load: 1,200 ÷ 2.8 = **429 persons**
-- Required exit width: 429 × 7.6 mm = **3,260 mm (3.26 m)**
-- Available exit width: 1,800 + 1,800 + 1,500 = **5,100 mm (5.1 m)**
-- **Result: COMPLIANT** — available width exceeds requirement. This demonstrates that museums, despite high occupant density, can meet egress requirements with well-placed stairs.
-</Example>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
 
 ## How It's Tested
 
@@ -122,10 +114,10 @@ A provincial museum in the Philippines has a 1,200 sqm gallery space. The archit
 "A museum stores 5,000-year-old ceramic artifacts. What temperature and humidity maintenance schedule is required?"
 - Answer: 18–21°C ± 2°C per day max; 45–55% RH ± 5%; continuous HVAC monitoring; log readings hourly per NCCA standards
 
-<Tip>**Memory rule:** Museums = Group **C** (education), not retail (E). Occupant load = GFA ÷ 2.8 sqm/person. Gallery aisle = 3.0 m primary, 1.8 m secondary. Climate = 18–21°C, 45–55% RH, UV-free 50–300 lux. Temperature swings > 2°C/day = DAMAGE.</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 **Exam Tip — ERR-DSGN-017:** Museums are Group C regardless of revenue. Even if they charge admission or have a gift shop (Group E), the primary occupancy remains Group C. The gift shop requires fire-rated separation.
+<ArticleMedia id="media-lea-dsgn-004-05-core-concept" a type="image" caption="Assembly Occupancy Comparison — Museum, Gallery, and Exhibition Hall Typologies" description="Comparative diagram showing three assembly occupancy types: linear museum gallery (3.0m primary aisle), radial gallery with central atrium, and open exhibition hall with flexible partitions. Occupant load and egress width annotated per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -133,4 +125,4 @@ See **LEA-DSGN-004-06** (Libraries) for comparison of Group C occupant loads, **
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Classifying commercial museums as Group E (retail) instead of Group C (education/exhibition)","Using general retail load (1 per 18.58 sqm) instead of exhibition-specific rate (1 per 2.8 sqm)","Underestimating occupant load → undersizing emergency exits","Specifying standard 400 lux office lighting in galleries instead of artifact-specific 50–300 lux","Omitting UV filtration from lighting or ignoring 45–55% humidity for ceramics/textiles (climate = primary concern)","Using steeper than 1:20 ramp gradient (BP 344 2024 IRR maximum)","Confusing gallery aisle width (3.0 m primary) with standard corridor width (1.2 m)"]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]

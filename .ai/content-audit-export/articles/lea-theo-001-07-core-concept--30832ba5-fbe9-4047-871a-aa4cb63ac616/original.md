@@ -4,13 +4,18 @@
 You will encounter questions testing your understanding of the architectural design process as a systematic progression from concept through completion. The LEA tests how design decisions flow from initial client intentions through schematic design, design development, and construction administration, reflecting the profession's structured approach to problem-solving.
 </Callout>
 
+
+## Learning Goal
+
+Understand the five-phase architectural design process (Schematic Design through Construction Administration) and the deliverables, approvals, and stakeholder roles at each phase.
+
 ## Core Concept
 
 Architecture is not created in isolation. The **architectural design process** is the systematic progression through which an architect translates client needs and project requirements into a complete building design. This process unfolds in distinct phases, each with specific deliverables, stakeholders, and decision-making criteria. Understanding these phases is essential to the Philippine architecture licensure examination, as the LEA repeatedly tests candidates on how architects organize their work and communicate with clients and contractors.
 
 The standard design process, codified by the American Institute of Architects and adopted internationally, typically encompasses five major phases: schematic design, design development, construction documents, bidding and negotiation, and construction administration. Each phase builds on the previous one, progressively refining the design from concept to reality.
 
-**Schematic Design** marks the beginning of the designer's formal engagement with the project brief. During this phase, the architect translates the client's stated wishes, budget constraints, site conditions, and programmatic requirements into preliminary design concepts. The work typically consists of sketches, preliminary floor plans, site analyses, building sections, and three-dimensional renderings or models. The goal is not to finalize every detail, but to establish the big-picture concept: the general layout of spaces, the overall form and mass of the building, the relationship between interior and exterior, and the approximate sclea before investing time in detailed specifications. The schematic phase concludes when the client approves the general design direction.
+**Schematic Design** marks the beginning of the designer's formal engagement with the project brief. During this phase, the architect translates the client's stated wishes, budget constraints, site conditions, and programmatic requirements into preliminary design concepts. The work typically consists of sketches, preliminary floor plans, site analyses, building sections, and three-dimensional renderings or models. The goal is not to finalize every detail, but to establish the big-picture concept: the general layout of spaces, the overall form and mass of the building, the relationship between interior and exterior, and the approximate scale before investing time in detailed specifications. The schematic phase concludes when the client approves the general design direction.
 
 **Design Development** commences once the schematic concept is approved. This phase transforms the architect's design intent into increasingly detailed drawings and specifications. If the project requires structural engineers, mechanical engineers, or other consultants, they typically join the design team at this stage. The architect develops and presents the client with specific material selections for both exterior and interior finishes, mechanical systems are outlined, structural approaches are defined, and the building's performance characteristics begin to be quantified. Construction costs are estimated more precisely, and the design is refined in response to both aesthetic and practical considerations. The completion of design development results in drawings and specifications sufficiently detailed to indicate the project's final form and systems, though not every construction detail has been resolved.
 
@@ -79,3 +84,12 @@ Critical distinction: Once Construction Documents are issued, changes become exp
 **Change Order** — A document modifying the original contract scope, cost, or schedule, typically issued during Construction Administration when conditions differ from documented expectations.
 
 **Design Intent** — The architect's conceptual and technical vision for the project, communicated through drawings, specifications, and decisions that guide construction.
+
+<ExamTip>**Process Phase Question:** If a client requests a major plan revision after the Construction Documents phase has begun, what is the most appropriate procedure? Answer: Process a Change Order through Construction Administration, documenting cost and schedule impacts. The design is frozen once CD is issued for bidding.</ExamTip>
+
+## Related Articles
+
+See also within Nature of Architecture: **lea-theo-001-01-core-concept**, **lea-theo-001-08-core-concept**, **lea-theo-001-09-core-concept**, **lea-theo-001-10-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

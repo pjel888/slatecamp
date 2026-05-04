@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Specifications are non-graphical construction documents that describe the quality, performance standards, and installation requirements for materials, equipment, and construction methods. The LEA tests your ability to distinguish between five types of specifications and when each is appropriate for Philippine construction projects.
-
+Explain the purpose and structure of architectural specifications as legal contract documents that define quality standards, materials, workmanship, and installation methods, and distinguish specifications from drawings by their complementary roles in defining design intent.
 ## Core Concept
 
 Architectural specifications translate design intent into measurable, achievable construction requirements. Unlike drawings which show _what_ and _where_, specifications explain _how_ and to _what standard_. The five principal specification types serve different project needs and risk management strategies.
@@ -38,7 +38,7 @@ _Pattern 1 — Specification Type Identification:_ The exam presents a specifica
 
 _Pattern 2 — Appropriateness for Context:_ Given a scenario (e.g., renovation of 50-year-old government building with no original documentation), the exam asks which specification type is most appropriate. Answer: _Reference standards and prescriptive specifications for DPWH-approved materials_, balancing certainty for public accountability with minimal substitution risk.
 
-_Pattern 3 — "Or Equal" Clause Drafting:_ The exam presents a proprietary specification and asks you to draft objective equality criteria. Poor answer: "Or an equivleant product of equal or better quality." Good answer: "Or a product meeting these criteria: aluminum frame, anodized finish per ASTM B680, tempered glass, U-value 0.28, SHGC 0.22, and STC rating of 30."
+_Pattern 3 — "Or Equal" Clause Drafting:_ The exam presents a proprietary specification and asks you to draft objective equality criteria. Poor answer: "Or an equivalent product of equal or better quality." Good answer: "Or a product meeting these criteria: aluminum frame, anodized finish per ASTM B680, tempered glass, U-value 0.28, SHGC 0.22, and STC rating of 30."
 
 _Pattern 4 — Risk Management:_ The exam describes a specification type in a failed project and asks which type would have prevented the dispute. Example: A performance specification for "high-strength concrete" without stating compressive strength led to 7-day test disagreement (2,400 psi vs. 3,500 psi). Better approach: _Prescriptive or reference standard specification_ stating "28-day cylinder strength per ASTM C39 of 28 MPa minimum."
 
@@ -55,3 +55,10 @@ Memory aid: The five types form a spectrum from **rigid to flexible**. Prescript
 <WikiMistakeCard mistake="Assuming that 'reference standard specification' removes the architect's responsibility for clarity" correction="Citing a standard (ACI 318, NSCP) is not a substitute for the architect understanding that standard. You must verify the standard aligns with the project. The architect remains responsible for specification clarity under RA 9266." />
 
 <WikiMistakeList mistakes={["Using prescriptive specs for innovative materials where the contractor has superior expertise (misses cost savings and performance gains)", "Mixing specification types inconsistently within one section (confuses contractors and creates ambiguity)", "Failing to address Philippine regulatory requirements (DPWH approval, NSCP compliance) in the specification type selection", "Assuming 'performance specification' is always better (it requires robust testing protocols and disputes if criteria are vague)", "Not including substitution procedures and approval authority in proprietary 'or equal' clauses"]} />
+
+## Related Articles
+
+See also within Architectural Specifications and Documentation: **lea-matl-009-02-core-concept**, **lea-matl-009-03-core-concept**, **lea-matl-009-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

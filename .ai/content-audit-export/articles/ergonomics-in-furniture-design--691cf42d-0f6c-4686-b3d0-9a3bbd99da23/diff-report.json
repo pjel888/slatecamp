@@ -1,38 +1,45 @@
 {
   "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
   "slug": "ergonomics-in-furniture-design",
-  "generated_at": "2026-05-03T13:44:56.176Z",
+  "generated_at": "2026-05-04T00:06:33.335Z",
   "old_hash": "sha256:c83e2c1b98aa2dfe1aad5bc90bff3202a9e708f05665301c12448a0014b0686c",
-  "new_hash": "sha256:dd31f5bc5d917398acdf5a2b7466901f9fba7b40a8dc166cac86fcaaec2312c9",
+  "new_hash": "sha256:5064a9c8310e866f97b13db77dc13667ab955e9a933bbe4436aba3381be0daf6",
   "original_hash": "sha256:c83e2c1b98aa2dfe1aad5bc90bff3202a9e708f05665301c12448a0014b0686c",
-  "normalized_hash": "sha256:ee52aa1c624b13da51dc46c093adf80fed39268c619389506b55dd4243235d42",
-  "candidate_hash": "sha256:dd31f5bc5d917398acdf5a2b7466901f9fba7b40a8dc166cac86fcaaec2312c9",
+  "normalized_hash": "sha256:5064a9c8310e866f97b13db77dc13667ab955e9a933bbe4436aba3381be0daf6",
+  "candidate_hash": "sha256:5064a9c8310e866f97b13db77dc13667ab955e9a933bbe4436aba3381be0daf6",
   "changed": true,
-  "changed_line_count": 336,
-  "inserted_line_count": 29,
+  "changed_line_count": 70,
+  "inserted_line_count": 16,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 336,
-    "inserted": 29,
+    "changed": 70,
+    "inserted": 16,
     "deleted": 0,
     "original_line_count": 378,
-    "candidate_line_count": 407
+    "candidate_line_count": 394
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

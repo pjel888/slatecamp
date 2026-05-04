@@ -3,6 +3,12 @@
 
 ---
 
+## Learning Goal
+
+By the end of this module, you will be able to identify the complete anatomy of the bahay kubo, explain how each element responds to the tropical Philippine climate, describe the nail-less joinery techniques that provide seismic resilience, and distinguish between the major regional vernacular typologies (bahay kubo, torogan, Ivatan stone house, Ifugao bale).
+
+---
+
 ## The Real-World Scenario (The Hook)
 
 You are crouched beneath a traditional bahay kubo in a Visayan coastal village. Above you, the bamboo floor — the **sahig** — flexes gently as someone walks across it. The **haligi** (posts) are lashed to the **batangan** (floor joists) with strips of rattan, not a single nail in sight. Warm air rises through the split-bamboo slats. This 3,000-year-old building technology is the mother of all Philippine architecture — and the LEA expects you to know every part by name.
@@ -14,7 +20,7 @@ You are crouched beneath a traditional bahay kubo in a Visayan coastal village. 
 - **Bahay Kubo (Nipa Hut):** The indigenous stilt house of the Philippine lowlands, literally "cube house" (from the Spanish *cubo*). A lightweight, raised, single-room dwelling made entirely of organic materials — bamboo, nipa palm, cogon grass, rattan, and hardwood.
 - **Climate-Responsive Design:** Every element of the bahay kubo is a direct response to the tropical Philippine climate — elevated for flood protection, open-sided for cross-ventilation, steeply pitched roof for rain shedding, and oriented to catch prevailing winds (Amihan and Habagat).
 - **Nail-less Joinery:** Traditional construction uses **lashing (pagtatali)** with rattan, abaca, or bamboo strips — no metal fasteners. This provides flexibility during earthquakes and typhoons while maintaining structural integrity.
-- **Regional Variations:** The bahay kubo is the lowland archetype, but Philippine vernacular also includes the **torogan** (Maranao royal house of Lanao), **Ivatan stone houses** (Batanes), and **Ifugao blea** (Cordillera) — all adapted to their specific environments.
+- **Regional Variations:** The bahay kubo is the lowland archetype, but Philippine vernacular also includes the **torogan** (Maranao royal house of Lanao), **Ivatan stone houses** (Batanes), and **Ifugao bale** (Cordillera) — all adapted to their specific environments.
 
 ---
 
@@ -56,7 +62,7 @@ You are crouched beneath a traditional bahay kubo in a Visayan coastal village. 
 | **Bahay Kubo** | Lowland Tagalog, Visayan, Bicolano | Raised on stilts; nipa/cogon roof; bamboo-and-palm construction |
 | **Torogan** | **Maranao** (Lanao, Mindanao) | Royal house; massive **okir** (geometric carving) ornamentation; high-peaked roof; raised on thick logs; no interior partitions |
 | **Ivatan Stone House** | **Ivatan** (Batanes Islands) | Thick lime-and-stone walls (up to 1 m thick); low profile to resist typhoons; cogon thatch roof with rattan rope lashing |
-| **Ifugao Blea** | **Ifugao** (Cordillera) | Elevated on four posts with rat guards (**hagabi**-shaped discs); pyramidal thatched roof; compact single-room dwelling |
+|| **Ifugao Bale** | **Ifugao** (Cordillera) | Elevated on four posts with rat guards (**hagabi**-shaped discs); pyramidal thatched roof; compact single-room dwelling |
 
 ### Evolution Timeline: Bahay Kubo to Bahay na Bato
 
@@ -69,13 +75,35 @@ You are crouched beneath a traditional bahay kubo in a Visayan coastal village. 
 
 ---
 
+<Tip>
+
+**Memory Aid: The "HALIGI ng BAHAY" Path (Bottom to Top).** Haligi (posts) → Batangan (joists) → Sahig (floor) → Dingding (walls) → Bubong (roof). Chant it: "Haligi, Batangan, Sahig, Dingding, Bubong" — post, joist, floor, wall, roof. This covers the primary structural sequence of any bahay kubo.
+
+</Tip>
+
+<Example>
+
+**Real-World Analogy:** The bahay kubo's nail-less lashing (pagtatali) works like a shock absorber in a car. A rigid nailed building would snap during an earthquake — the joints would crack and the structure would fail catastrophically. But rattan-lashed bamboo joints flex with the ground motion, then spring back into place. This is why pre-colonial Philippine houses survived typhoons and earthquakes that destroyed rigid Spanish stone structures.
+
+</Example>
+
+<ExamTip>
+
+**LEA Exam Pattern:** The LEA frequently tests regional vernacular distinctions. The key question: "Which dwelling type belongs to which region?" Memorize the four: bahay kubo (lowland Tagalog/Visayan), torogan (Maranao, Mindanao — okir carvings, no partitions), Ivatan stone house (Batanes — thick stone walls for typhoons), Ifugao bale (Cordillera — four posts with hagabi rat guards). Do not mix these up.
+
+</ExamTip>
+
+---
+
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap: Confusing the silong of the bahay kubo with the zaguan of the bahay na bato.** The **silong** is the open space under the bahay kubo's raised floor — it is NOT enclosed. The **zaguan** is the enclosed stone ground floor of the bahay na bato used to store carriages and processional floats (andas). Both are "ground-level spaces," but their material, enclosure, and function are completely different.
 - **Trap: Assuming the bahay kubo used nails or metal fasteners.** Pre-colonial bahay kubo construction is entirely **nail-less**. All joints use lashing (rattan/abaca), pegs, or interlocking cuts. Metal fasteners only appeared with Spanish and later American influence.
-- **Trap: Treating all Philippine vernacular as "bahay kubo."** The LEA tests regional variations. The **torogan** (Maranao), **Ivatan stone house** (Batanes), and **Ifugao blea** (Cordillera) are NOT bahay kubo — they are distinct typologies adapted to different climates and cultures.
+- **Trap: Treating all Philippine vernacular as "bahay kubo."** The LEA tests regional variations. The **torogan** (Maranao), **Ivatan stone house** (Batanes), and **Ifugao bale** (Cordillera) are NOT bahay kubo — they are distinct typologies adapted to different climates and cultures.
 
 ---
+
+**Connecting History to the Exam:** When the LEA asks you to identify regional vernacular, visualize each dwelling's climate — Batanes typhoons = thick stone walls, Cordillera mountains = elevated bale, lowland heat = bahay kubo's open ventilation. Geography is your cheat code.
 
 ## Board-Prep Mnemonics
 
@@ -122,7 +150,7 @@ D) Concrete post-tensioning
 Which of the following is a Maranao royal dwelling distinguished by elaborate okir carvings and a high-peaked roof?
 
 A) Ivatan stone house
-B) Ifugao blea
+B) Ifugao bale
 C) Torogan
 D) Bahay na bato
 
@@ -131,3 +159,10 @@ D) Bahay na bato
 ---
 
 *Return to this module in 3 days. If you can answer the Active Recall questions cold, move to the next module.*
+
+---
+
+## Cross‑References
+
+**Spanish Colonial Bahay Na Bato**, **Modern Filipino Identity**, **American Colonial Era**, **Spanish Colonial Laws Of The Indies**
+

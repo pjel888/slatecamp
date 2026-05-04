@@ -1,32 +1,33 @@
 # Content Diff Report: lea-util-006-06-daylighting-design-strategy
 
-Generated: 2026-05-03T13:44:57.460Z
+Generated: 2026-05-04T00:06:34.771Z
 Article ID: b862f4a8-fa65-4cf7-bcb8-bec5b330d837
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:fc6a16f0526b22c2b3813de3d9f0d6b06520a966ca518f157ad72323ab9e9b38`
-- Normalized: `sha256:a8c20920051300b2241026e919d2acb6a49c2775bbcec37f598001eb858b14c4`
-- Candidate: `sha256:cdb2d3e6e14e3ec47159f2ea2c7dcba298cc817708ec2f35d1c9de8b99e3a458`
+- Original: `sha256:fff2bba4cf9b63d164713a90ffc0a1d58918b639d8e23e47eb6c6e86b06b1c78`
+- Normalized: `sha256:8a03a0926498cbedaf3bb01a96b2109e06c43364e531f239b8053fbadf772f55`
+- Candidate: `sha256:8a03a0926498cbedaf3bb01a96b2109e06c43364e531f239b8053fbadf772f55`
 
 ## Line summary
 
-- Changed lines: 234
-- Inserted lines: 9
+- Changed lines: 220
+- Inserted lines: 11
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 2
-- UI blocks preserved: 2
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 2
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 2 preserved UI block(s).
 
 ## Warnings
 

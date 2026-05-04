@@ -1,32 +1,34 @@
 # Content Diff Report: minimum-requirements-group-a-dwellings
 
-Generated: 2026-05-03T13:45:14.238Z
+Generated: 2026-05-04T00:06:54.438Z
 Article ID: 42eb0c36-da27-4b7e-a1e3-4ed915bfca8d
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:0e238f10db79d856c39c7b1dbf24a000efff5275cfc8b90d61db1001308e4ef5`
-- Normalized: `sha256:463c9db00919c19b9c61f4de61796a9eb0443b12cbe51a0e6768831b9a8f00df`
-- Candidate: `sha256:5b4b551c82c52c8531ac41f20b5308a71e45391e5d58cd25a46133967def10b7`
+- Original: `sha256:a8c8011d0b93188838dfbd0e110b7a41a8d9661efa7c8d1801a710dd53f05b01`
+- Normalized: `sha256:6e1044c662aa38f476f257b8d3cda076f91a3b6265384bbc4300432e3d4a99bf`
+- Candidate: `sha256:6e1044c662aa38f476f257b8d3cda076f91a3b6265384bbc4300432e3d4a99bf`
 
 ## Line summary
 
-- Changed lines: 411
-- Inserted lines: 46
-- Deleted lines: 0
+- Changed lines: 337
+- Inserted lines: 0
+- Deleted lines: 3
 
 ## UI block preservation
 
 - UI blocks expected: 9
-- UI blocks preserved: 9
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 9
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 9 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

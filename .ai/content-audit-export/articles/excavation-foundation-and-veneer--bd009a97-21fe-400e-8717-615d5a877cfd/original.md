@@ -1,4 +1,8 @@
 # Excavation Foundation and Veneer
+## Learning Goal
+After reading this article, you should be able to:
+
+Apply PD 1096 and NSCP requirements for excavation shoring, foundation design, and masonry veneer anchorage; calculate minimum footing size by soil bearing capacity and building load; identify when underpinning of adjacent structures is required; and determine anchor spacing and type for adhered and anchored veneer systems.
 
 ---
 
@@ -79,7 +83,7 @@ The Philippine code (PD 1096) and the IBC approach excavation and veneer from si
 | **Trench exit spacing** | Every 7.50 m for trenches ≥ 1.50 m deep (Sec. 1202.2.n) | OSHA: ladder within 7.6 m (25 ft) of workers in trenches ≥ 1.22 m (4 ft) deep |
 | **Public ROW restoration** | Within 48 hours (Sec. 1202.2.c) | Varies by local ordinance; not addressed in IBC |
 | **Underpinning responsibility** | Excavating party bears full responsibility (Sec. 1202.2.b) | IBC Sec. 1804.1: Excavation shall not reduce support without underpinning |
-| **Liability shift** | Shifts to refusing neighbor after 10-day notice and denial of access (Sec. 1202.2.e) | No equivleant IBC provision; governed by tort law |
+| **Liability shift** | Shifts to refusing neighbor after 10-day notice and denial of access (Sec. 1202.2.e) | No equivalent IBC provision; governed by tort law |
 | **Veneer design force** | Anchored veneer: 2× veneer weight horizontal (Sec. 1203.2.e) | IBC Chapter 14: Anchored masonry veneer designed per TMS 402/602; seismic design per ASCE 7 |
 | **Veneer materials** | Non-combustible, corrosion-resistant anchors (Sec. 1203.2.f) | IBC Sec. 1404.2: Corrosion resistance required; stainless steel or hot-dip galvanized |
 | **Fills near buildings** | Not placed unless building can withstand loads (Sec. 1202.2.r) | IBC Sec. 1804.2: Backfill free of organic material; compacted per Sec. 1804.3 |
@@ -160,7 +164,7 @@ Anchored veneer must resist horizontal forces = **2× its own weight**. Remember
 **Then** at least **3 means of exit** must be provided (at 0m, 7.50m, and 15.00m along the trench), with the last exit no more than 7.50 m from any worker's position per Sec. 1202.2.n.
 
 **If** a veneer system uses metal tie anchors in a coastal building…
-**Then** all anchors must be non-combustible and **corrosion-resistant** (stainless steel or equivleant) per Sec. 1203.2.f — galvanized anchors alone may be insufficient in high-chloride environments.
+**Then** all anchors must be non-combustible and **corrosion-resistant** (stainless steel or equivalent) per Sec. 1203.2.f — galvanized anchors alone may be insufficient in high-chloride environments.
 
 ---
 
@@ -200,7 +204,7 @@ Per PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation m
 
 **Question 2**
 
-During the excavation of a 2.00-meter deep utility trench running 30.00 meters through a project site, the safety inspector asks the site architect how many means of exit (ladders or equivleant) must be provided along the trench per PD 1096. What is the correct answer?
+During the excavation of a 2.00-meter deep utility trench running 30.00 meters through a project site, the safety inspector asks the site architect how many means of exit (ladders or equivalent) must be provided along the trench per PD 1096. What is the correct answer?
 
 A. 2 means of exit — one at each end of the trench  
 B. 3 means of exit — at 0 m, 10 m, and 20 m  
@@ -239,3 +243,18 @@ D. 1,000 kg (2× panel weight per the anchored veneer lateral force requirement)
 **Session 4 (Day 14):** Final review — read exam traps only. If you can explain each trap in your own words without reference to the article, this module is mastered.
 
 *These articles are LEA board exam review materials based on PD 1096 (National Building Code of the Philippines) and cross-referenced with IBC provisions for comparative analysis. Always verify against the current edition of the implementing rules and regulations.*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Minimum footing depth = 600 mm below grade (in non-expansive soils). Shoring required when excavation exceeds 2.0 m from property line. Underpinning required when excavation goes below adjacent foundation bottom. Veneer anchors at maximum 400 mm o.c. vertically, 600 mm o.c. horizontally.
+
+## Cross‑References
+
+**Geological Hazards**, **Location On Property And Exterior Walls**, **Topography And Slope Analysis**, **Sanitation And Water Supply**
+

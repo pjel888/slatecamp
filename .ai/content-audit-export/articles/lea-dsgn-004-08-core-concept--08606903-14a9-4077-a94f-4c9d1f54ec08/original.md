@@ -1,10 +1,18 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Classify resorts and eco-tourism facilities as Group B, apply DOT hospitality standards alongside NBC fire safety provisions, calculate parking ratios (1 slot/room for de luxe), and verify BP 344 accessible features.
+
 Resorts and eco-tourism facilities operate under **Group B** (hotel/dormitory/pension) occupancy classification. This requires careful application of Department of Tourism (DOT) standards alongside National Building Code fire safety provisions. Parking, wayfinding, and landscape integration are critical differentiators from standard hospitality projects.
 
 ---
 
+
 ## Core Concept
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
 
 Resorts and eco-tourism facilities fall under **Group B** occupancy per **PD 1096**. They must comply with both DOT hotel classification standards and specific fire safety egress requirements. Unlike standard commercial hotels, these facilities emphasize landscape integration and environmental stewardship. A resort typically combines overnight accommodation with dining, recreation, and nature-based activities within a single site.
 
@@ -17,6 +25,10 @@ Accessible features under **BP 344** include ramps at a **1:12 maximum slope** p
 ---
 
 ## Key Provisions
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
 
 | Element | Requirement | Source |
 |:--------------------------- |:---------------------------------------- |:----------------------------------------------------- |
@@ -51,6 +63,10 @@ DOT-classified eco-tourism facilities prioritize environmental certification alo
 
 ## How It's Tested
 
+
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
+
 1. **Occupancy Trap:** Do not confuse Group B (resort) with Group E (restaurant) even if the resort has prominent dining areas. Always classify based on the primary use—overnight accommodation is Group B.
 2. **Parking Calculation:** A de luxe resort with 150 rooms requires 150 spaces. A first-class resort with 100 rooms requires 50 spaces. Avoid applying restaurant ratios (1/30 sqm) to overall resort parking.
 3. **Egress Integration:** Outdoor deck areas used as assembly spaces must be counted in the occupancy load. Egress paths from these areas must still meet the 45/60 m travel distance limits.
@@ -58,6 +74,13 @@ DOT-classified eco-tourism facilities prioritize environmental certification alo
 > **Resort Occupancy Anchor:** Group B = overnight stays. Parking (Rule XVIII): de luxe = 1/room; first class = 1/2 rooms. Egress: 7.6 mm/person, 45 m unsprinklered, 60 m sprinklered. Double exit required at 50+ persons.
 
 ---
+
+
+**Exam Tip — ERR-DSGN-019:** Hotel parking ratios: de luxe = 1 slot/room, first-class = 1 slot/2 rooms per PD 1096 Rule XVIII. Do not confuse with BP 344 accessible stall requirements (3.7m × 5.0m).
+
+## Cross-References
+
+See **LEA-DSGN-003-06** (Dormitories) for Group B comparison, **LEA-DSGN-010-01** (Parking Requirements) for hotel parking ratios, and **LEA-DSGN-012-01** (Site Analysis) for tropical resort site selection.
 
 ## Common Mistakes
 

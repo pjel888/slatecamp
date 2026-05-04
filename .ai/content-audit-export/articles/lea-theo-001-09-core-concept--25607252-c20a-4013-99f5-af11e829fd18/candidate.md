@@ -5,6 +5,8 @@
 Identify and explain the Vitruvian Triad — firmitas (strength), utilitas (function), venustas (beauty) — as the foundational framework for architectural quality, and apply it to analyze how design decisions satisfy all three simultaneously.
 ## Core Concept
 
+<ArticleMedia id="media-lea-theo-001-09-core-concept" a type="image" caption="Vitruvian Triad — Firmitas, Utilitas, Venustas" description="Triangular diagram with interconnected nodes showing Vitruvius's three essential qualities of architecture: Firmitas (structural strength, durability, integrity), Utilitas (functional fitness, convenience, commodity), and Venustas (beauty, delight, aesthetic harmony). The center reads 'Architecture' — emphasizing that all three dimensions must be satisfied simultaneously for a building to be considered complete architecture." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 Nearly two thousand years ago, the Roman military engineer, architect, and theorist **Vitruvius** (Marcus Vitruvius Pollio, ca. 80–15 BCE) wrote the only surviving architectural treatise from antiquity: *De Architectura* (Ten Books on Architecture). Written during the reign of Caesar Augustus in the first century BCE, Vitruvius's Ten Books synthesized Greek architectural philosophy with Roman engineering practice and remain the foundation of architectural theory to this day. Within this monumental treatise, Vitruvius articulated a tripartite definition of architecture that has structured architectural thinking for two millennia: **firmitas, utilitas, and venustas**.
 
 **Firmitas** translates from Latin as "firmness" or "solidity," referring to the structural integrity and soundness of a building. A building possessing firmitas is one that stands, that does not collapse, that is constructed with proper materials selected for their strength and durability, with structural systems capable of bearing loads, with foundations adequate to the soil conditions, and with all elements proportioned and joined in ways that create a coherent, stable whole. Firmitas means that the building will endure; it speaks to the permanence and trustworthiness of the structure. In modern terminology, we might speak of structural adequacy, constructional integrity, or durability. A building lacking firmitas will fail—either catastrophically through collapse or gradually through deterioration. The architect's first responsibility is to ensure firmitas. Without it, aesthetic merit and functional excellence are irrelevant because the building will not survive.
@@ -29,45 +31,37 @@ In the Philippine context, the bahay na bato represents an integration of all th
 
 The Vitruvian Triad remains the most reliable framework for architectural evaluation because it recognizes that buildings are simultaneously structural systems, functional instruments, and aesthetic and spiritual experiences. A building that fails in any one dimension has failed in its essential purpose, regardless of excellence in the other two.
 
-<Tip>
-**FUV Hierarchy:** Firmitas (structural integrity) is foundational. Without it, utilitas (function) and venustas (beauty) are impossible. The architect's first responsibility is always ensuring the building will stand. Then utilitas and venustas are integrated simultaneously, not sequentially.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
-<Note>
-Venustas does NOT mean ornament or decoration. It emerges from coherent proportions, honest material expression, and spatial experience. A beautifully proportioned minimalist building possesses venustas just as fully as an ornately detailed classical building—what matters is coherence, not quantity of detail.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
 
-<Warn>
-Critical error: Do NOT treat firmitas, utilitas, and venustas as equal concerns that can be traded off. Firmitas is foundational and non-negotiable. You cannot sacrifice structural integrity for aesthetic effect or functional optimization. An architect cannot present "we chose beauty over safety" as a legitimate design choice.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Principle", "Latin Translation", "Modern Equivleant", "Vitruvian Definition"]} rows={[["**Firmitas**", "Firmness, solidity, strength", "Structural integrity, durability, constructional adequacy", "Building must stand, not collapse; materials and structure appropriate to purpose"], ["**Utilitas**", "Usefulness, utility, functionality", "Functional adequacy, commodity, performance, fitness for purpose", "Building must serve its intended function efficiently and comfortably"], ["**Venustas**", "Beauty, grace, delight", "Aesthetic expression, spiritual resonance, visual coherence, proportional harmony", "Building must engage observers; form should be pleasing and express meaning"], ["**Integrated Application**", "The three principles together", "Holistic architecture that is simultaneously sound, functional, and beautiful", "Architecture achieves its purpose only when all three are present and unified"]]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
 
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Terminology and Definition.** The LEA directly tests whether you can define firmitas, utilitas, and venustas and explain them in contemporary architectural language. Example stem: "Firmitas in Vitruvian terms refers to which of the following?" Answer: Structural integrity and soundness; the building's ability to stand and endure. Common incorrect answers might cite aesthetic qualities or functional performance.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 2: Integrated Principle Identification.** Questions ask you to identify which principle or principles a specific design decision addresses. Example stem: "When an architect specifies concrete strength and joint detailing in a structure, this primarily addresses which Vitruvian principle?" Answer: Firmitas, though the architect should understand that firmitas supports both utilitas and venustas. A building must be sound before it can be functional or beautiful.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 3: Building Examples.** The LEA presents buildings or design problems and asks which principle is being served or violated. Example stem: "A hospital building with brilliant natural light, efficient circulation, and a facade that expresses its structural grid would be demonstrating excellence in which principle(s)?" Answer: All three—structural expression (firmitas visible), functional efficiency (utilitas), and aesthetic coherence (venustas). Alternatively, the question might ask what is missing if the building is structurally sound but confusing to navigate: utilitas is lacking.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 4: Hierarchy and Priority.** The LEA tests whether you understand that firmitas is foundational. Example stem: "In the Vitruvian framework, which principle must be established before the architect can address the others?" Answer: Firmitas; without structural soundness, a building cannot function or be beautiful.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 5: Modern Application.** Questions address how Vitruvian principles apply to contemporary architecture. Example stem: "Contemporary sustainable design, which minimizes energy use through passive design strategies, primarily addresses which Vitruvian principle?" Answer: Utilitas—the building performs its function (maintaining comfort) efficiently. Though sustainability also supports firmitas (durability) and venustas (honest expression of passive performance).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
 
-<Callout>
-The Vitruvian Triad is tested on virtually every Philippine Architecture Licensure Examination. You must know the three principles precisely, understand their Latin and English terminology, and be able to explain each with modern architectural examples. This is foundational theory that cannot be avoided or minimized. Examiners expect candidates to articulate clearly how firmitas, utilitas, and venustas interact to define architecture.
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Treating the three principles as equal in priority" correction="Firmitas is foundational; without it, the other two are impossible. An architect cannot sacrifice structural integrity for aesthetic effect or functional optimization. Firmitas first; then utilitas and venustas are integrated simultaneously." context="Understanding this hierarchy prevents the false belief that design trade-offs between principles are legitimate. The LEA tests whether you recognize that structural soundness is non-negotiable." />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Conflating venustas with ornament" correction="Venustas emerges from coherent proportions, material expression, and spatial experience—not from decorative details. A beautifully proportioned minimalist building possesses venustas just as fully as an ornately detailed classical building." context="This distinction prevents superficial understanding of beauty in architecture. The LEA tests whether you understand that venustas derives from integrity and coherence, not decoration." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Interpreting utilitas narrowly as function: Utilitas includes comfortable spatial experience, appropriate proportion, light, ventilation, and efficiency. A building might be functionally possible but lack utilitas because conditions are unpleasant or inefficient.", "Assuming modern materials or technology eliminates firmitas concerns: Firmitas remains a fundamental responsibility. Structural failures still occur. Inappropriate material specifications, poor detailing, or inadequate understanding of structural behavior still cause failures. The architect's responsibility for firmitas has not diminished.", "Separating aesthetic and structural truth: When structure is expressed honestly, when materials are allowed to reveal their nature, when spatial efficiency creates coherent form, beauty emerges. The most profound venustas derives from the authentic expression of firmitas and utilitas.", "Ignoring venustas in technical discussions: All three principles must be addressed simultaneously. A purely technical solution that ignores aesthetic and spiritual dimensions has not achieved architecture."]} />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
 
 ## Key Terms
 

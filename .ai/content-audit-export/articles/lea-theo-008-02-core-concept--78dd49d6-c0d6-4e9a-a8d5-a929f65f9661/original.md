@@ -4,6 +4,14 @@
 Spatial justice is the concept that architecture and urban design must actively address social inequalities by making spaces inclusive, equitable, and accessible to all. Filipino architects increasingly engage spatial justice by creating public spaces that serve vulnerable populations, prioritize communal gathering areas rooted in bayanihan values, and recognize the built environment as a tool for social reform and community empowerment.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define spatial justice (Edward Soja): social justice must be approached from a spatial perspective — inequality is geographical as well as social.
+- Explain how the built environment reinforces or dismantles systems of marginalization, exclusion, and disadvantage.
+- Apply spatial justice principles to Philippine architectural practice: create inclusive public spaces rooted in bayanihan values.
+
 ## Core Concept
 
 The pursuit of spatial justice in architecture represents a fundamental shift from treating buildings as mere functional objects to understanding them as instruments of social change. Spatial justice, articulated by urban theorist Edward Soja, proposes that social justice must be approached from a spatial perspective, acknowledging that inequality is not just a social phenomenon but a geographical and spatial one. This framework challenges architects to examine how the built environment either reinforces or dismantles systems of marginalization, exclusion, and disadvantage.
@@ -85,3 +93,10 @@ Spatial justice is not decoration. Cosmetic inclusivity—colorful murals in inf
 **Vulnerability** — The susceptibility of populations to environmental, economic, and social harms, often concentrated in spatially marginalized areas.
 
 **Inclusive Design** — Design that accounts for the needs of diverse populations including people with disabilities, elderly persons, children, and economically diverse residents.
+
+## Related Articles
+
+See also within Innovation & Filipino Identity: **lea-theo-008-03-core-concept**, **lea-theo-008-04-core-concept**, **lea-theo-008-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

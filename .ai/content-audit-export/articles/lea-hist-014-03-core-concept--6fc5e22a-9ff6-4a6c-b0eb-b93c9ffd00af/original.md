@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your knowledge of **Beaux-Arts** architecture (École des Beaux-Arts, Paris) and its application to American civic and institutional buildings (1880–1920). Questions focus on architectural principles (symmetry, axiality, classical proportions), key examples (libraries, courthouses, museums), and the relationship between Beaux-Arts training and American institutional design. You must understand why American architects traveled to Paris and how that training shaped American civic identity.</Callout>
+## Learning Goal
 
+Identify Beaux-Arts architecture as a compositional methodology (axis, symmetry, monumentality, hierarchy, classical vocabulary) rather than a style, and recognize key works (NY Public Library, Grand Central Terminal, US Supreme Court) by their urban and formal logic.
 ## Core Concept
 
 The **École des Beaux-Arts** in Paris was the world's most prestigious architecture school. From the 1860s onward, ambitious American architects studied there: Richard Morris Hunt, Charles McKim, Stanford White, Daniel Burnham. They returned to America with rigorous training in classical composition, academic drawing, and monumental design. Beaux-Arts is not a style—it is a methodology. Students learned proportional systems, axial planning, symmetry, and hierarchical ordering. Buildings embody these principles visually.
@@ -23,18 +24,16 @@ Beaux-Arts planning emphasizes **axial symmetry**: a central axis organizes all 
 <WikiExamTable headers={["Building", "Architect(s)", "Year", "Location", "Type", "Characteristics"]} rows={[['["**Boston Public Library**", "McKim, Mead & White", "1895", "Boston", "Library", "Palazzo form; grand stair; murals integrated"]', '["**Pennsylvania Station**", "McKim, Mead & White", "1910", "New York", "Transportation", "Roman Baths model; barrel vault; monumental waiting room; demolished 1963–1966"]', '["(Remove entire row - not Beaux-Arts)", "", "", "", "", ""]', '["**Library of Congress**", "Edward Pearce Casey / Paul J. Pelz", "1897", "Washington, DC", "Institutional", "Dome; murals; eclecticism; symbolic grandeur"]', '["**Art Institute of Chicago**", "Shepley, Rutan and Coolidge", "1893", "Chicago", "Museum", "Beaux-Arts facade; palace form; paired bronze lions"]', '["**Union Station**", "Daniel Burnham", "1908", "Washington, DC", "Transportation", "Colonnaded facade; grand hall; axial symmetry"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Axial Composition Recognition**
 Questions present floor plans or axial diagrams and ask you to identify Beaux-Arts organizing principles. You trace the primary axis, identify the focal point (grand stair, rotunda, entry), and explain how secondary spaces order around it. You distinguish axial planning from grid planning or organic planning.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Institutional Monumentality**
 Questions ask why American Beaux-Arts buildings are so large and ornate. You explain: these buildings (libraries, stations, post offices) embodied democratic ideology. The sclea and ornament said "you, the citizen, deserve grandeur." Beaux-Arts made public institutions visible as civic expression.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Eclecticism and Order**
 Questions present buildings combining multiple historical references (Gothic tower, Renaissance palace, Romanesque arch). You explain why this is Beaux-Arts, not confused eclectic pastiche: the unifying principle is symmetry, proportion, and hierarchical ordering. The multiple styles are coordinated through composition.</ExamTip>
 
+<Callout>The LEA tests your knowledge of **Beaux-Arts** architecture (École des Beaux-Arts, Paris) and its application to American civic and institutional buildings (1880–1920). Questions focus on architectural principles (symmetry, axiality, classical proportions), key examples (libraries, courthouses, museums), and the relationship between Beaux-Arts training and American institutional design. You must understand why American architects traveled to Paris and how that training shaped American civic identity.</Callout>
 
 ## Common Mistakes
 
@@ -43,7 +42,6 @@ Questions present buildings combining multiple historical references (Gothic tow
 <WikiMistakeCard mistake="Dismissing Beaux-Arts as \"too ornate\"" correction="Students judge Beaux-Arts by modernist standards, calling it excessive. Beaux-Arts ornament served specific purposes: it identified building type (sculptures on a library), created focal points, and integrated fine arts with architecture. It was not decoration for decoration's sake." context="Every element participated in the overall composition." />
 
 <WikiMistakeList mistakes={["Forgetting material and craft. Students focus on plan and elevation while ignoring materials—granite, marble, bronze, terracotta—and the craftsmanship required. Beaux-Arts buildings were expensive because they integrated multiple craftspeople: stonemasons, sculptors, muralists, metalworkers. Material honesty was a principle: granite looks like granite, marble like marble.", "Treating all large civic buildings as Beaux-Arts. Students call any symmetrical monumental building \"Beaux-Arts.\" Neoclassical buildings (1780–1840) are symmetrical but predate Beaux-Arts training. Art Deco buildings (1920–1940) are geometric but reject Beaux-Arts ornament. Specify why a building is Beaux-Arts: what principles of composition, ornament, and integration of fine arts does it display?"]} />
-
 
 ## Key Terms
 
@@ -59,6 +57,13 @@ Questions present buildings combining multiple historical references (Gothic tow
 
 **Palazzo Form** — Symmetrical urban palace with rusticated ground floor, refined upper stories, and cornices; referenced in Beaux-Arts civic buildings.
 
-**Monumentality** — Large sclea and formal composition expressing institutional importance and democratic grandeur; primary goal of American Beaux-Arts civic architecture.
+**Monumentality** — Large scale and formal composition expressing institutional importance and democratic grandeur; primary goal of American Beaux-Arts civic architecture.
 
 **Rotunda** — Circular or polygonal domed space; focal point of Beaux-Arts buildings; creates sense of expansion and arrival.
+
+## Related Articles
+
+See also within United States Architecture: **lea-hist-014-01-core-concept**, **lea-hist-014-02-core-concept**, **lea-hist-014-04-core-concept**, **lea-hist-014-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

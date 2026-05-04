@@ -1,19 +1,28 @@
 {
-  "attempted_at": "2026-05-03T14:02:55.935Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:07:09.504Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
   "slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:c41add887094e9e299f6df496ca94a75cc15ac7c71130f7ea9a54e10e0718855",
-  "original_hash": "sha256:ad0a7a33d5ae917ec397121146df3523ece355a9aa1de9f8683e61d318e67988",
-  "candidate_hash": "sha256:c41add887094e9e299f6df496ca94a75cc15ac7c71130f7ea9a54e10e0718855",
+  "original_hash": "sha256:657f9ddc6ae51c5aac7c32dc4e3720e00f0072f6cc658d1384f331b3c1aba6c9",
+  "candidate_hash": "sha256:e1a5d3dea336449492e5934df41c6f7f89670683b1f781b104c1d2c683297606",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:52:34.140857+00:00"
 }

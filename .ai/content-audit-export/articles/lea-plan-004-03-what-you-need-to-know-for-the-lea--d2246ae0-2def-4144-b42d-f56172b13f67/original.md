@@ -1,5 +1,8 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply socio-psychological principles — privacy gradients, territoriality, density perception, wayfinding, defensible space — to site planning decisions, design for human comfort and safety, and evaluate social space quality.
+
 Socio-psychological considerations are about how people experience a site and how human behavior shapes site planning. This is not about design aesthetics (that belongs to other articles) or about conducting community participation (that is LEA-PLAN-008-04). This article addresses the underlying principles of human behavior that inform site planning: privacy, territoriality, density perception, wayfinding, and the social spaces within and around a site.
 
 ### Privacy and Privacy Gradients

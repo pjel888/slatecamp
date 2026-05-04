@@ -8,13 +8,11 @@ _Aligned with RA 7277, RA 9442, RA 10754, and your BP 344 / PD 1096 files.[file:
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
-[/SLATECAMP_UI_BLOCK]
 
 After reading this article, you should be able to:
 
@@ -82,8 +80,7 @@ Applies to (for PWD’s exclusive use):
 - Medicines and medical supplies.[web:30]
 - Medical & dental services, diagnostics, professional fees.[web:29]
 
-Extracted summary:
-
+<Note>
 \
 - Domestic air/sea/land transport fares.[web:29]
 - Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32]
@@ -93,7 +90,7 @@ Extracted summary:
 **Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29]
 
 ---
-
+</Note>
 ## Employment & Tax Incentives (Updated View)
 
 **1. Wage Incentive (Employer hires PWDs)**
@@ -164,7 +161,17 @@ If you’d like, next I can build a **pure Q&A deck** (about 20 flashcards) that
 
 ---
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: PWD 20% discount applies to: hotels, restaurants, recreation centers, theaters, hospitals/dental clinics, transport (land/air/sea), funeral services. Establishments get income tax deduction equal to the discount amount. The architect's obligation = design compliant accessible facilities. The owner's obligation = register with the DSWD to claim deductions.
+
 ## Cross‑References
 
 **Law Qa Deck Ra 7277 9442 10754**, **Translating Pwd Rights**, **Lodging And Residential Accessibility**, **Comprehensive Signage Package**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -7,6 +7,10 @@
 
 ## Schema Activation: Why This Module Matters
 
+[SLATECAMP_UI_BLOCK:ArticleMedia name="occupancy-groups-visual" type="diagram" caption="Visual reference card for all 10 occupancy groups A–J with icons: A (house), B (hotel), C (school), D (hospital), E (office/store), F (factory), G (warehouse/hazardous), H (theater less than 1000), I (stadium 1000 or more), J (fence/shed). Arrange as a grid with group letter, full name, example building, and color-coded hazard band. Include the Type I–V construction scale with opposite direction reminder."]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="mixed-occupancy-flowchart" type="diagram" caption="Decision flowchart for mixed-occupancy buildings: check if 1-storey → each portion follows own occupancy; check if accessory use ≤10% of floor area → major occupancy governs; otherwise → most restrictive occupancy governs the entire building. Include examples like 'mall with clinic' and 'apartment with ground-floor retail'."]
+
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -14,19 +18,11 @@ After reading this article, you should be able to:
 Classify buildings by occupancy group (A through J) and division under PD 1096 Rule VII Table VII; apply the correct classification to mixed-occupancy buildings; identify when the strictest occupancy requirements govern the entire building vs when separated occupancies may have independent requirements; and determine allowable occupancy combinations in the same building.
 ---
 
-
 A 30-storey BPO office tower in Makati built in reinforced concrete is governed by very different rules than a small wooden beach house in La Union. The **use/occupancy** classification dictates the minimum **construction type**, fire-resistive requirements, exits, and many other safety provisions.[file:17]
 
 If you misclassify occupancy or construction type, every dependent computation (allowable area, height, exit widths, fire protection) can be wrong. This module aligns strictly with PD 1096 and the 2004 Revised IRR, not foreign codes.[file:17][file:18]
 
-<LawCallout code="pd1096" section="Rule VII - Classification of Occupancy">
-
-
-BOARD EXAM WARNING:
-The Philippine Code uses Roman numerals I–V for Types of Construction, but **Type I is the least fire-resistive and Type V is the most fire-resistive**, the reverse of the common US practice.[file:17]
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
 
 ---
 
@@ -74,13 +70,7 @@ Where accessory uses occupy **not more than 10%** of the floor area of any store
 
 ## The Hard Data: Occupancy Groups A through J
 
-<LawCallout code="pd1096" section="Rule VII - Section 701">
-
-
-All descriptions are condensed from PD 1096 / Rule VII, Sec. 701.[file:17]
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
 ### Occupancy Groups — Grouped by Function
 
@@ -101,13 +91,7 @@ All descriptions are condensed from PD 1096 / Rule VII, Sec. 701.[file:17]
 
 ## The Hard Data: Types of Construction I through V
 
-<LawCallout code="pd1096" section="Rule VII - Table VII-1">
-
-
-Condensed from PD 1096, Chap. 4 Sec. 401–403 and Rule IV.[file:17]
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 
 ### PH vs US Convention (Awareness Only)
 
@@ -211,63 +195,19 @@ Do not classify a large open stadium without a stage as Group I; it stays within
 
 ## Active Recall Challenge
 
-<details>
-  <summary><b>Question 1 — Occupancy and Construction Type</b></summary>
-  <br>
-  An architect is designing a 5-storey shopping mall in Cebu City using reinforced concrete with a fire-resistive structural system. Under PD 1096, what are the correct Occupancy Group and Construction Type?<br><br>
-  A) Group M (Mercantile), Type I<br>
-  B) Group E (Business and Mercantile), Type V<br>
-  C) Group C (Education and Recreation), Type IV<br>
-  D) Group E (Business and Mercantile), Type I<br><br>
-  <b>Correct Answer: B</b><br><br>
-  A mall is a retail/business occupancy → **Group E (Business and Mercantile)**.[file:17]<br>
-  Reinforced concrete with a fire-resistive rating corresponds to the **most fire-resistive** type → **Type V** in PD 1096.[file:17]<br>
-  Group M does not exist in PD 1096; Type I is wood construction, not fire-resistive.[file:17]
-</details>
+[SLATECAMP_UI_BLOCK:ui_0004 component="details" status="preserved"]
 
 ---
 
-<details>
-  <summary><b>Question 2 — The 10-Person Threshold</b></summary>
-  <br>
-  A convent houses 12 nuns on a non-leasing basis. Under PD 1096/IRR, what is the occupancy group?<br><br>
-  A) Group A, Div. 1<br>
-  B) Group A, Div. 2<br>
-  C) Group B<br>
-  D) Group D, Div. 1<br><br>
-  <b>Correct Answer: C</b><br><br>
-  Group A Div. 2 includes convents/monasteries for non-leasing occupants **not exceeding 10 persons**.[file:17]<br>
-  When such a building accommodates **more than 10 persons**, it is classified under **Group B (Residentials, Hotels and Apartments)**.[file:17]
-</details>
+[SLATECAMP_UI_BLOCK:ui_0005 component="details" status="preserved"]
 
 ---
 
-<details>
-  <summary><b>Question 3 — Type II vs Type III</b></summary>
-  <br>
-  What is the key distinction between Type II and Type III construction in PD 1096?<br><br>
-  A) Type II uses masonry; Type III uses wood.<br>
-  B) Both are roughly 1-hour fire-resistive, but Type III requires incombustible exterior walls.<br>
-  C) Type II is fully incombustible; Type III allows wood framing.<br>
-  D) Type III has 2-hour fire rating; Type II has 1-hour.<br><br>
-  <b>Correct Answer: B</b><br><br>
-  Type II = wood construction with fire-resistive treatment (approx. 1-hour), exterior walls may still be wood within limits.[file:17]<br>
-  Type III = masonry and wood construction, also ~1-hour, but exterior walls must be of incombustible fire-resistive construction.[file:17]
-</details>
+[SLATECAMP_UI_BLOCK:ui_0006 component="details" status="preserved"]
 
 ---
 
-<details>
-  <summary><b>Question 4 — Mixed Occupancy Exception</b></summary>
-  <br>
-  A one-storey building contains a convenience store and a barber shop (both Group E) with no separation. Under Sec. 703, which rule applies?<br><br>
-  A) The most restrictive occupancy governs the entire building.<br>
-  B) Each portion may be treated under its own occupancy requirements because the building is one storey.<br>
-  C) The larger occupancy governs because it exceeds 10% of total area.<br>
-  D) The building must be reclassified as Group H due to public traffic.<br><br>
-  <b>Correct Answer: B</b><br><br>
-  Sec. 703 Exception (a) allows one-storey mixed-occupancy buildings to have each portion conform to its own occupancy requirements, rather than defaulting to the most restrictive group.[file:17]
-</details>
+[SLATECAMP_UI_BLOCK:ui_0007 component="details" status="preserved"]
 
 ---
 
@@ -302,9 +242,13 @@ One-liner: **“One is flimsy. Five is a fortress.”**
 
 ---
 
-
+---
 
 ---
+
+## Exam Tip
+
+LEA Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D=Institutional, E=Educational, F=Assembly, G=Recreational, H=Storage, I=Business, J=Dangerous. For mixed-occupancy, the STRICTEST requirements govern the entire building UNLESS the uses are separated by 2-hour fire-rated construction. The 'separated vs non-separated' distinction is the key exam point.
 
 
 
@@ -312,7 +256,7 @@ One-liner: **“One is flimsy. Five is a fortress.”**
 
 ## Exam Tip
 
-LEA Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D=Institutional, E=Educational, F=Assembly, G=Recreational, H=Storage, I=Business, J=Dangerous. For mixed-occupancy, the STRICTEST requirements govern the entire building UNLESS the uses are separated by 2-hour fire-rated construction. The 'separated vs non-separated' distinction is the key exam point.
+ALE Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D=Institutional, E=Educational, F=Assembly, G=Recreational, H=Storage, I=Business, J=Dangerous. For mixed-occupancy, the STRICTEST requirements govern the entire building UNLESS the uses are separated by 2-hour fire-rated construction. The 'separated vs non-separated' distinction is the key exam point.
 
 ## Cross‑References
 
@@ -351,3 +295,5 @@ LEA Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D
    - Framed the IBC comparison as a caution, emphasizing that PD 1096 is the controlling standard and that foreign labels/groups (e.g., Group M) are traps.[file:17]
 
 If you want a next step, I can compress this into a one-page occupancy + construction type cheat sheet purely for last-week LEA drills.
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

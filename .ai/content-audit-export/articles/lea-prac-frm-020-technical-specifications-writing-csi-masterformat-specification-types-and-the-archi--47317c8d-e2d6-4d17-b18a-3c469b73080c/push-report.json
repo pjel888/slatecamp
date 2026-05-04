@@ -1,19 +1,23 @@
 {
-  "attempted_at": "2026-05-03T14:01:53.172Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:22.704Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
   "slug": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:304b60b7b0c83955d357a57c992f611948445d2735ae8990c432b305b01795a3",
-  "original_hash": "sha256:b7a6254ca29df817dd0c645e19069a0ffeac68ba0a471cc8d0f3443c4c72b292",
-  "candidate_hash": "sha256:304b60b7b0c83955d357a57c992f611948445d2735ae8990c432b305b01795a3",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:2f0bbdcb6c7701d2c3751d88fd7adcd7003c7765ad92cd6cb6bf9b249a4dc439",
+  "original_hash": "sha256:5bc629bc23ba278307564f3bb7c9019554a331627ffe758cfa1af5c7e7c178f5",
+  "candidate_hash": "sha256:16698ef320b3e0d5202e3178af6764b6c605387cb0ab64820fbe07990cfde477",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:51:00.69083+00:00"
+  "remote_updated_at_before": "2026-05-03T16:57:47.205237+00:00"
 }

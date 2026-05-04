@@ -1,44 +1,30 @@
-{
-  "article_id": "dd8ec17f-7f5c-4652-9257-65811b1ead0c",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:04a58c551a927e0e817e46d28453919b3ec723fbd6fa62ae2df10f4398da4092",
-  "source_count": 3,
-  "sources": [
-    {
-      "source_id": "3345fa30-61c1-4815-96bd-fdc7fc8971f1",
-      "article_id": "dd8ec17f-7f5c-4652-9257-65811b1ead0c",
-      "label": "PD 1096 RIRR 2004, Rule VII \u2014 Acoustical Standards for Buildings",
-      "url": null,
-      "source_type": "primary_law",
-      "description": "General building code provisions for acoustical treatment and noise control in different occupancy types.",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-03T20:30:00.000000+00:00",
-      "updated_at": "2026-05-03T20:30:00.000000+00:00"
-    },
-    {
-      "source_id": "58a8ad08-b09c-48a1-8051-d32737ddc2da",
-      "article_id": "dd8ec17f-7f5c-4652-9257-65811b1ead0c",
-      "label": "ASHRAE Handbook \u2014 HVAC Applications: Room Acoustics and Noise Control",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": "References for RT60 (reverberation time) calculations and recommended values by space type: 0.6-0.8s for classrooms, 1.5-2.0s for auditoriums.",
-      "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-03T20:30:00.000000+00:00",
-      "updated_at": "2026-05-03T20:30:00.000000+00:00"
-    },
-    {
-      "source_id": "a5c1acf1-f32b-4144-8069-a603fb0bb12d",
-      "article_id": "dd8ec17f-7f5c-4652-9257-65811b1ead0c",
-      "label": "IESNA RP-1 \u2014 Office Lighting Standard (includes acoustical coordination)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": "References for acoustical design criteria for office and commercial spaces including noise criteria (NC) curves.",
-      "is_verified": true,
-      "sort_order": 2,
-      "created_at": "2026-05-03T20:30:00.000000+00:00",
-      "updated_at": "2026-05-03T20:30:00.000000+00:00"
-    }
-  ]
-}
+[
+  {
+    "source_id": "src-architectural-reference",
+    "title": "Architectural Reference Materials (Board Exam Reviewer Sources)",
+    "type": "reference",
+    "jurisdiction": "Philippines — ALE",
+    "verified_claims": [],
+    "confidence": "unverified"
+  },
+  {
+    "source_id": "src-doh",
+    "title": "DOH Sanitation and Plumbing Standards",
+    "type": "regulation",
+    "jurisdiction": "Philippines — DOH",
+    "verified_claims": [],
+    "confidence": "source_available",
+    "pdf_available": true,
+    "pdf_path": "001-Laws/DOH/DOH Drug Abuse Treatment and Rehab Centers 2003.pdf"
+  },
+  {
+    "source_id": "src-pd-1096",
+    "title": "PD 1096 (National Building Code of the Philippines) — 2004 Revised IRR",
+    "type": "law",
+    "jurisdiction": "Philippines",
+    "verified_claims": [],
+    "confidence": "source_available",
+    "pdf_available": true,
+    "pdf_path": "001-Laws/PD-1096/PD 1096 - National Building Code Illustrated (Pedro Santos Jr).pdf"
+  }
+]

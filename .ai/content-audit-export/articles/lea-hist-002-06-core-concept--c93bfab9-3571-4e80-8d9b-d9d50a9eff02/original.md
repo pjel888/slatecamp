@@ -1,15 +1,14 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-**Neoclassicism (late 18th–early 19th centuries) tests your understanding of Enlightenment rationalism, archaeological revival, and the return to Classical simplicity after Baroque and Rococo excess**. Focus on **James Stuart and Nicholas Revett's archaeological drawings**, **Jacques-Germain Soufflot**, **Jacques-Louis David's influence on design**, and the style's emergence in America and Europe.
-</Callout>
+## Learning Goal
 
+Identify the three catalysts of Neoclassicism — archaeological discoveries (Pompeii, Herculaneum), Grand Tour travel, and Enlightenment rationalism — and recognize key buildings (La Madeleine, Brandenburg Gate, US Capitol) by their revival of Greek and Roman forms.
 ## Core Concept
 
 **Neoclassicism** emerged from Enlightenment values: reason, order, moral clarity, and a romantic (though often romanticized) view of Classical Antiquity as an ideal society. After Baroque drama and Rococo frivolity, architects consciously rejected both styles as decadent and looked backward—but with *archaeological rigor* and modern ambitions.
 
 The style crystallizes through the mid-18th century with key catalysts:
-- **Archaeological expeditions** to Pompeii and Herculaneum (beginning 1748) revelead actual Roman buildings and interiors
+- **Archaeological expeditions** to Pompeii and Herculaneum (beginning 1748) revealed actual Roman buildings and interiors
 - **James Stuart and Nicholas Revett's *Antiquities of Athens*** (Volume I, 1762; continued through 1816) provided measured drawings of Greek temples, spurring Greek Revival
 - **Enlightenment philosophy** valorizing reason, democracy, and virtue associated with Classical republics (Athens, Rome)
 - **Rejection of Rococo** by intellectuals and reformers as morally corrupt and aesthetically frivolous
@@ -84,6 +83,10 @@ Memory aid: **A-S-E** = Archaeology, Stuart-Revett, Enlightenment.</Tip>
 </ExamTip>
 <ExamTip>**Pattern 7:** Archaeological methodology. "Stuart and Revett's *Antiquities of Athens* changed architectural practice. How?" Their measured drawings (1751–1754) provided *authentic data*, not imaginative interpretations. This scientific rigor defined Neoclassicism's difference from earlier revivals.</ExamTip>
 
+<Callout>
+**Neoclassicism (late 18th–early 19th centuries) tests your understanding of Enlightenment rationalism, archaeological revival, and the return to Classical simplicity after Baroque and Rococo excess**. Focus on **James Stuart and Nicholas Revett's archaeological drawings**, **Jacques-Germain Soufflot**, **Jacques-Louis David's influence on design**, and the style's emergence in America and Europe.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="** Confusing Neoclassicism with Renaissance. Renaissance rediscovered Classical *principles* (proportion, harmony); Neoclassicism is *archaeologically rigorous revival* based on measured drawings and excavations. Neoclassicism is more literal and scientifically grounded" correction="Mistake 2:** Assuming Neoclassicism is \"boring\" or \"cold.\" While restrained compared to Baroque, Neoclassicism is intellectually and aesthetically sophisticated." context="The apparent simplicity masks refined proportional relationships and subtle spatial effects." />
@@ -92,12 +95,11 @@ Memory aid: **A-S-E** = Archaeology, Stuart-Revett, Enlightenment.</Tip>
 
 <WikiMistakeList mistakes={["** Confusing interior and exterior in Neoclassical assessment. A Neoclassical facade may be simple and restrained, but the interior (like Soufflot's Panthéon or Soane's Museum) can be spatially sophisticated. Always assess both. Mistake 6:** Assuming Rococo ended abruptly. Rococo lingered in some regions (Iberia, parts of Northern Europe) while Neoclassicism emerged elsewhere. The transition was gradual and regional, not universal.", "** Overlooking the role of *measurement and drawing* in Neoclassical practice. Stuart and Revett's measured drawings were revolutionary—they provided *authentic* data, not imaginative interpretations. This scientific rigor defines Neoclassicism's difference from earlier revivals. Mistake 8:** Misplacing the date of Stuart and Revett's *Antiquities of Athens*. Volume I was published in 1762; subsequent volumes continued through 1816. The first volume was the crucial catalyst for Greek Revival.", "** Confusing the U.S. Capitol's dome history. William Thornton designed the original (1793), Benjamin Latrobe modified it (1803+), but the current cast-iron dome was designed by. Thomas U. Walter** and completed in **1866**—well into the 19th century."]} />
 
-
 ## Key Terms
 
 - **Neoclassicism**: An architectural and design movement (late 18th–early 19th centuries) based on Enlightenment values and archaeological revival of Classical Antiquity
 - **Greek Revival**: A strand of Neoclassicism emphasizing Greek temple orders and forms; emerged in the 1790s, based on Stuart and Revett's measured drawings
-- **Roman Classicism**: A strand of Neoclassicism emphasizing Roman grandeur, domes, and imperial sclea
+- **Roman Classicism**: A strand of Neoclassicism emphasizing Roman grandeur, domes, and imperial scale
 - **Doric order**: The simplest Greek column order; sturdy and tapered
 - **Ionic order**: A Greek column order with scroll-like capitals; more graceful than Doric
 - **Corinthian order**: The most ornate Classical column order; used in grand Neoclassical buildings
@@ -105,3 +107,10 @@ Memory aid: **A-S-E** = Archaeology, Stuart-Revett, Enlightenment.</Tip>
 - **Rotunda**: A circular building or central circular space, often covered by a dome
 - **Entablature**: The horizontal structure above columns (architrave, frieze, cornice)
 - **Archaeological accuracy**: Design based on measured drawings and excavated remains, not imagination or previous stylistic conventions
+
+## Related Articles
+
+See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

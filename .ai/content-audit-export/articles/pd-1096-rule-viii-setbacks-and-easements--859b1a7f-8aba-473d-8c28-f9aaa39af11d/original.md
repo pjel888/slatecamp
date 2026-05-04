@@ -7,6 +7,12 @@
 **Governing Law:** PD 1096 (National Building Code of the Philippines), 2004 Revised IRR; PD 1067 (Water Code of the Philippines)  
 **Date Verified:** March 28, 2026 — cross-referenced against DPWH PD 1096, 2004 Revised IRR (Rule VIII & X), and LawPhil PD 1067 Article 51.[web:2][web:7][web:15][web:16]
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Calculate minimum yard and setback distances under PD 1096 Rule VIII based on building height, occupancy, and fire zone; distinguish front, side, and rear yard requirements for different building types; apply the corner lot special setback rules; and determine when a mandatory easement along waterways or property lines is required by code.
+---
 ---
 
 ## HOW TO USE THIS REVIEWER
@@ -33,9 +39,11 @@ This material is **psychologically engineered** for maximum retention. Every sec
 
 > _You are standing at the front door of a newly built house in a subdivision. Look left — the neighbor's wall is barely a meter away. There is no sunlight. There is no airflow. If a fire starts, the flames jump the gap in seconds._
 
-<LawCallout code="nbcp">
+<LawCallout code="pd1096" section="Rule VIII - Setbacks and Easements">
+
 
 _This is why PD 1096 mandates yards. A "yard" is the required open space between the outermost face of the building and the property line. The width of that yard IS the setback. Setbacks serve three critical purposes:_
+
 
 </LawCallout>
 
@@ -89,13 +97,13 @@ Students frequently confuse this with the 3.00 m basic front setback of R-2 and 
 
 Mnemonic: **"R-1 = 4 and a half, R-2/3 Basic = 3 flat"**
 
-<details>
+<Accordion>
 <summary>Active Recall: What is the front setback for an R-1 lot? For an R-2 Basic lot?</summary>
 
 R-1 front setback: **4.50 m** (Table VIII.2)[web:2]  
 R-2 Basic front setback: **3.00 m** (Table VIII.2)[web:2]
 
-</details>
+</Accordion>
 
 ---
 
@@ -111,7 +119,7 @@ R-2 Basic front setback: **3.00 m** (Table VIII.2)[web:2]
 | 10.00 to 19.00    |   5.00    |   2.00   |   2.00   |
 | Below 10.00       |   5.00    |   2.00   |   2.00   |
 
-**Reason for the Law:** Wider roads carry more traffic and serve a broader urban territory, so buildings on major roads must step back further to maintain sclea, visibility, and safety relative to the roadway width.[web:2]
+**Reason for the Law:** Wider roads carry more traffic and serve a broader urban territory, so buildings on major roads must step back further to maintain scale, visibility, and safety relative to the roadway width.[web:2]
 
 **CRITICAL NOTE:** These values apply primarily to **newly-developed thoroughfares**; for highly built-up areas with established street lines and grades related to planned widening, the building may abut the side and/or rear property lines so long as all open-space, window, ventilation, and firewall requirements are satisfied.[web:2]
 
@@ -128,13 +136,13 @@ R-2 Basic front setback: **3.00 m** (Table VIII.2)[web:2]
 
 Example: A commercial lot along a 20 m RROW uses **5.00 m** front setback from Table VIII.3, not any R-2/R-3 value from Table VIII.2.[web:2]
 
-<details>
+<Accordion>
 <summary>Active Recall: What is the front setback for a commercial building on a 25 m RROW? On a 30 m RROW?</summary>
 
 25 m RROW: **6.00 m** (Table VIII.3, 25.00–29.00)[web:2]  
 30 m RROW: **8.00 m** (Table VIII.3, 30.00 & above)[web:2]
 
-</details>
+</Accordion>
 
 ---
 
@@ -157,13 +165,13 @@ R-1 lots must preserve the character of fully detached single-family dwellings, 
 
 </Callout>
 
-<details>
+<Accordion>
 <summary>Active Recall: How many sides can an R-4 lot have abutments? What about R-3?</summary>
 
 R-4: **2 sides only**, not front/rear.[web:2]  
 R-3: **2 sides OR 1 side + rear**, never on front.[web:2]
 
-</details>
+</Accordion>
 
 ---
 
@@ -182,13 +190,13 @@ R-3: **2 sides OR 1 side + rear**, never on front.[web:2]
 - Increment = 8 × 0.30 m = 2.40 m.[web:2]
 - **Total side court width = 3.00 + 2.40 = 5.40 m.**
 
-<details>
+<Accordion>
 <summary>Active Recall: At what rate does the setback increase per storey? At what storey does the increment cap?</summary>
 
 Rate: **300 mm per storey** above 2nd.[web:2]  
 Cap: **14th storey**.[web:2]
 
-</details>
+</Accordion>
 
 ---
 
@@ -211,13 +219,13 @@ The IRR identifies **seven (7)** standardized lot configurations.[web:2]
 
 > **Reason for these categories:** The more public frontages a lot has, the more natural light and ventilation its buildings receive from the surroundings, so the internal required TOSL can be lower.[web:2]
 
-<details>
+<Accordion>
 <summary>Active Recall: How many lot types does the IRR identify? Which lot type has the lowest TOSL requirement?</summary>
 
 **7 lot types** total.[web:2]  
 Lowest TOSL: **Corner-Through Lot** and **Corner lot abutting 3+ streets/alleys/rivers** at about **5%** for all groups.[web:2]
 
-</details>
+</Accordion>
 
 ---
 
@@ -252,13 +260,13 @@ Always confirm with the specific IRR text when applying variances in a design pr
 
 > **Exam Context:** You must deduct the easement strip from the lot's buildable dimension **based on the site’s land classification (urban/agricultural/forest)**, not just water width.[web:16]
 
-<details>
+<Accordion>
 <summary>Active Recall: What easement applies to a river in an urban area? What about an agricultural shoreline?</summary>
 
 Urban river bank: **3.00 m** easement zone from the bank.[web:16]  
 Agricultural shoreline: **20.00 m** from the mean high tide line.[web:16]
 
-</details>
+</Accordion>
 
 ---
 
@@ -364,13 +372,13 @@ Mnemonic: **"F-3-2 / F-5-6"**
 - **Footing**: **3**00 mm projection, **2**.40 m depth.
 - **Foundation**: **5**00 mm encroachment, **6**00 mm depth (top below grade).
 
-<details>
+<Accordion>
 <summary>Active Recall: What is the maximum projection for a footing along a national road? For a foundation into a sidewalk?</summary>
 
 Footing along national road: **300 mm** max projection at **2.40 m** minimum depth.[web:11]  
 Foundation into sidewalk: **500 mm** max width with top **600 mm** below grade.[web:11]
 
-</details>
+</Accordion>
 
 ---
 
@@ -401,14 +409,14 @@ The **2.40 m** figure applies to:
 
 Mnemonic: **Permanent = 3.00; movable = 2.40.**
 
-<details>
+<Accordion>
 <summary>Active Recall: What is the minimum vertical clearance for a balcony? For an awning? For a canopy?</summary>
 
 Balcony: **3.00 m**.[web:11]  
 Awning: **2.40 m**.[web:11]  
 Canopy/Marquee: **3.00 m**.[web:11]
 
-</details>
+</Accordion>
 
 ---
 
@@ -451,13 +459,13 @@ Canopy/Marquee: **3.00 m**.[web:11]
 
 > Chaflans open sight lines at tight corners so vehicles and pedestrians can see each other earlier.[web:7][web:11]
 
-<details>
+<Accordion>
 <summary>Active Recall: When is a chaflan required? What is the exemption?</summary>
 
 Required: For corner buildings/solid fences on streets or alleys **less than 3.60 m** wide.[web:11]  
 Exemption: Arcaded corner buildings may be exempt, per Section 1008 conditions.[web:11]
 
-</details>
+</Accordion>
 
 ---
 
@@ -517,15 +525,14 @@ It does **not** specify yard widths; those come from Tables VIII.2 and VIII.3.[w
 
 ### Quick PSO Reference (Compressed from Table VIII.1)
 
-| Land Use            | PSO (no firewall) | PSO (with firewall) | TOSL (typical range) |
-| :------------------ | :---------------: | :-----------------: | :------------------: |
-| Residential 1 (R-1) |         —         |          —          |         ≈50%         |
-| Residential 2 (R-2) |         —         |          —          |          —           |
-| Commercial 1        |        80         |         80          |          20          |
-| Commercial 2        |  75 (e) / 85 (f)  |   80 (e) / 85 (f)   |       25 / 15        |
-| Commercial 3        |  80 (e) / 90 (f)  |       70 (e)        |       20 / 10        |
-| Industrial 1        |  70 (e) / 80 (f)  |   70 (e) / 80 (f)   |       30 / 20        |
-| Institutional       |  50 (e) / 60 (f)  |   50 (e) / 60 (f)   |       40 / 50        |
+| Land Use            | PSO (no firewall) | PSO (with firewall) | TOSL without firewall | TOSL with firewall |
+| :------------------ | :---------------: | :-----------------: | :-------------------: | :----------------: |
+| **R-2 Basic**       |       55%         |        60%          |         45%           |        40%         |
+| **Com-1**           |       70%         |        80%          |         30%           |        20%         |
+| **Com-2**           |       75%         |        85%          |         25%           |        15%         |
+| **Com-3**           |       80%         |        90%          |         20%           |        10%         |
+| **Ind-1**           |       70%         |        80%          |         30%           |        20%         |
+| **Institutional**   |       50%         |        60%          |         50%           |        40%         |
 
 _(e) = without firewall; (f) = with firewall; always verify against the full Rule VIII table.[web:2])_
 
@@ -615,3 +622,18 @@ Draw from memory:
 _"The architect who memorizes the rule passes the exam; the architect who understands **why** the rule exists designs buildings that save lives."_
 
 _Study well. See you at the Board._
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Minimum setbacks by occupancy and fire zone: 1-2 story = front 3.0 m, sides 2.0 m, rear 2.0 m | 3-4 story = front 4.5 m, sides 3.0 m, rear 3.0 m | 5+ story = front 6.0 m, sides 4.5 m, rear 4.5 m. Corner lots: both front-facing street sides = front yard requirements. The 3.0 m front setback for 1-2 story buildings is the most tested.
+
+## Cross‑References
+
+**Pd 1096 Rule Viii Light And Ventilation**, **Location On Property And Exterior Walls**, **Pd 1096 Rule Vii Area Metrics**, **Allowable Floor Area Increases**
+

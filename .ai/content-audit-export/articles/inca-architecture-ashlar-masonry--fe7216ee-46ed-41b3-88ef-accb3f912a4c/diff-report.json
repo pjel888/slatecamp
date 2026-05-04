@@ -1,38 +1,43 @@
 {
   "article_id": "fe7216ee-46ed-41b3-88ef-accb3f912a4c",
   "slug": "inca-architecture-ashlar-masonry",
-  "generated_at": "2026-05-03T13:44:18.111Z",
-  "old_hash": "sha256:8b8c3356eca5d20e5bdd0349a34db13c46fef2e2237e0bd635176b755e692a00",
-  "new_hash": "sha256:ff94328b7d3eca923d08b87f370fee0357b37476edc201e2cd6edce7b7b73a28",
-  "original_hash": "sha256:8b8c3356eca5d20e5bdd0349a34db13c46fef2e2237e0bd635176b755e692a00",
-  "normalized_hash": "sha256:25164fc1400a5882f02b6b61b16633aee8094c5349e31534f1ced4bfc3977421",
-  "candidate_hash": "sha256:ff94328b7d3eca923d08b87f370fee0357b37476edc201e2cd6edce7b7b73a28",
+  "generated_at": "2026-05-04T00:05:51.189Z",
+  "old_hash": "sha256:ff94328b7d3eca923d08b87f370fee0357b37476edc201e2cd6edce7b7b73a28",
+  "new_hash": "sha256:4b125837b19a3725815440be01dab47e4e2b4dfb3313211b75ed4ba7925d8ee3",
+  "original_hash": "sha256:ff94328b7d3eca923d08b87f370fee0357b37476edc201e2cd6edce7b7b73a28",
+  "normalized_hash": "sha256:4b125837b19a3725815440be01dab47e4e2b4dfb3313211b75ed4ba7925d8ee3",
+  "candidate_hash": "sha256:4b125837b19a3725815440be01dab47e4e2b4dfb3313211b75ed4ba7925d8ee3",
   "changed": true,
-  "changed_line_count": 90,
-  "inserted_line_count": 39,
+  "changed_line_count": 115,
+  "inserted_line_count": 33,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 1,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 90,
-    "inserted": 39,
+    "changed": 115,
+    "inserted": 33,
     "deleted": 0,
-    "original_line_count": 63,
-    "candidate_line_count": 102
+    "original_line_count": 102,
+    "candidate_line_count": 135
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001"
+    ],
+    "changed_count": 1
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 1 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
 }

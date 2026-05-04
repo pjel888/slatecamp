@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:27.745Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:02.118Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
   "slug": "wheelchair-maneuvering-and-parking-slots",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:8b775cab63c2f46795f1354492cacf74ad8edb753947ff5903c469725c61043c",
-  "original_hash": "sha256:5bb1d50ad558cc076ee4fdae8bad3e1cf6b111c12c26d2ca07b32dba035e1acd",
-  "candidate_hash": "sha256:8b775cab63c2f46795f1354492cacf74ad8edb753947ff5903c469725c61043c",
-  "stale_check_passed": false,
+  "original_hash": "sha256:8b775cab63c2f46795f1354492cacf74ad8edb753947ff5903c469725c61043c",
+  "candidate_hash": "sha256:97030cbbfeac10c1d3beebae951f8ef1812ec450a72da5181042bbcf858d511d",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:50:06.359603+00:00"
 }

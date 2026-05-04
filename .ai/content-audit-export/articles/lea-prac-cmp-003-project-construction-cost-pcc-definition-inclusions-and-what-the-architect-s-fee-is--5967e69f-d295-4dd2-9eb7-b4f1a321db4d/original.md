@@ -1,9 +1,17 @@
 ## Project Construction Cost (PCC) — Definition, Inclusions, and What the Architect's Fee Is Based On
 
-<JSX name="ArticleHeader" article="LEA-PRAC-CMP-003" />
+## Learning Goal
 
-The Project Construction Cost (PCC) serves as the financial basis for calculating architect fees under percentage-of-cost compensation methods in SPP 202. Accurate PCC determination is essential because the fee percentage applied to this cost directly determines the architect's compensation. Understanding PCC inclusions, exclusions, and determination methodology ensures transparent fee calculation and prevents disputes.
+After studying this article, you should be able to:
 
+- Define Project Construction Cost (PCC) and its inclusions.
+- Identify what is included in PCC: materials, labor, equipment, contractor overhead.
+- Explain what is excluded: land, architect's fee, owner's administrative costs.
+- Calculate the architect's basic fee using PCC × percentage.
+
+
+
+---
 ### Definition of Project Construction Cost
 
 Project Construction Cost is the total estimated construction cost of the building and all site work directly related to the building's construction. PCC includes all labor, materials, equipment, and contractor overhead costs necessary to complete the project as designed. PCC does not include the architect's fee, consultant fees, land acquisition, site acquisition costs, financing costs, owner's contingency reserves for budget overruns, or post-construction operations costs.
@@ -20,6 +28,8 @@ Several cost categories fall outside PCC calculation. Architect fees (whether pe
 
 PCC is first submitted during the Schematic Design phase as a Statement of Probable Project Construction Cost (SPPCC) based on current cost parameters. It is refined during Design Development as more detailed information becomes available. The architect obtains cost estimates based on available project information at each phase—initial estimates during Schematic Design based on conceptual plans, and refined estimates during Design Development based on more detailed design documents. If the project proceeds directly to Contract Documents without a distinct Design Development phase, PCC is determined when documents are sufficiently complete for cost estimation.
 
+<LawCallout code="ra9266">RA 9266, Section 22 — The architect's compensation shall be based on a percentage of the construction cost or other mutually agreed basis as provided in the contract. UAP SPP Documents provide the standard fee schedule.</LawCallout>
+
 During Construction Documents preparation, PCC may be refined if significant design changes occur. The PCC used for fee calculation purposes should be clearly defined in the architect-client contract, typically established at a specific project milestone (such as end of Design Development or Contract Documents completion). If the final bid or actual construction cost materially differs from the PCC estimate, the contract terms govern whether fee adjustment occurs; typically, the original PCC-based fee applies unless the contract specifically reserves adjustment rights.
 
 ### Cost Estimation Standards
@@ -32,6 +42,8 @@ During preliminary phases (Schematic Design), PCC estimates may have accuracy ra
 
 ### Contingency Reserves and PCC
 
+
+<ExamTip>**LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.</ExamTip>
 Owner contingency reserves for construction cost overruns are excluded from PCC. These reserves protect the owner against cost escalation during construction but do not represent costs the architect anticipated during design. Contingency reserves typically range from 5–15% of the estimated construction cost and remain separate from PCC for fee calculation purposes.
 
 ### PCC and Fee Recalculation Provisions
@@ -44,4 +56,21 @@ For developments with multiple buildings or phased delivery, PCC calculation add
 
 ### Special Considerations for Specialized Systems
 
+<KeyValues pairs={[["PCC Inclusions", "Labor, materials, equipment, contractor overhead and profit"], ["PCC Exclusions", "Architect's fee, land cost, contingency, legal fees"], ["Typical Fee", "10–15% of PCC depending on project complexity"]]} />
+
 Projects incorporating specialized systems—laboratory equipment, theater systems, specialized HVAC, food service equipment—should ensure these costs are included in the cost estimator's scope. Some cost estimating methodologies underestimate specialized system costs; the architect should verify that cost estimates comprehensively include all project scope.
+
+---
+
+## Related Articles
+
+- [Project Classification Groups](lea-prac-cmp-001)
+- [Factors Determining Classification](lea-prac-cmp-002)
+- [Project Construction Cost](lea-prac-cmp-003)
+- [Schedule of Payments](lea-prac-cmp-004)
+- [MDPE Formula](lea-prac-cmp-006)
+- [MDPE Multipliers](lea-prac-cmp-007)
+- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
+- [Reimbursable Expenses](lea-prac-cmp-011)
+- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)

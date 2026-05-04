@@ -9,14 +9,14 @@ After studying this article, you should be able to:
 - Explain the advantages of a comprehensive contract for the client and architect.
 - Identify typical fee arrangements for comprehensive services.
 
-
-
----
+|---
 ### Understanding Comprehensive Services
 
 Comprehensive Architectural Services encompasses five primary categories: pre-design services, regular design services, specialized architectural services, construction services, and post-construction services. The architect functions as the _prime professional_, serving as the client's agent in coordinating all necessary services for project delivery. This coordinating role defines the architect's leadership position within the project team.
 
-The architect is not expected to perform all services directly. Instead, the architect acts as the _agent of the client_ in procuring and coordinating the necessary services required by the project. This distinction allows architects to maintain professional integrity while managing complex, multidisciplinary teams.
+<ArticleMedia id="media-lea-prac-svc-017-comprehensive-architect" a type="image" caption="Comprehensive Architectural Services — The Five Service Categories" description="Process flow diagram showing the five CAS categories: Pre-Design Services (SPP 201) → Regular Design Services (SPP 202) → Specialized Architectural Services (SPP 203) → Construction Services (SPP 204) → Post-Construction Services (SPP 205). The architect is shown as prime professional coordinating all categories." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+The architect is not expected to perform all services directly.
 
 ### The Five Service Categories
 
@@ -39,29 +39,12 @@ This extended engagement creates continuity of service, which is essential for e
 When the client hires an architect to coordinate the complete range of Comprehensive Architectural Services, this relationship constitutes _Project Management (PM)_. Project Management represents the owner's engagement of the architect for the full scope of professional responsibility.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: - <strong>Project Definition</strong> — Problem identification
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=\"irr\"
-- Props: section=\"SPP Documents\"
-- Props: title=\"Professional Practice Framework\"
-- Text: SPP Documents 201–209 establish standards for architectural services scope, fee 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -79,6 +62,3 @@ Extracted summary:
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]

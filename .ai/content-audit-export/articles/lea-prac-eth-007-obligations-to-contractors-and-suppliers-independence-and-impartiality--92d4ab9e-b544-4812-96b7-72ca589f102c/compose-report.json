@@ -1,18 +1,26 @@
 {
   "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
   "slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
-  "generated_at": "2026-05-03T13:44:10.963Z",
-  "original_hash": "sha256:5910f839ea306da519e80eee821c2ac507b7c4790aeee9df7da3cc199d2151b7",
-  "normalized_hash": "sha256:3979c25b974f6cd18c49c96f5260409c7593d023734e03ac20593278ec6f929d",
-  "candidate_hash": "sha256:efbd11c7a94dc8f5bd45970887ef3525a674b2ecbe23c7ec64b13919fdc51e13",
+  "generated_at": "2026-05-04T00:05:38.184Z",
+  "original_hash": "sha256:efbd11c7a94dc8f5bd45970887ef3525a674b2ecbe23c7ec64b13919fdc51e13",
+  "normalized_hash": "sha256:681d74748b22679c6997af2263bc3a58b0e366dc5efb38619414d4c51eec190e",
+  "candidate_hash": "sha256:681d74748b22679c6997af2263bc3a58b0e366dc5efb38619414d4c51eec190e",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

@@ -1,32 +1,33 @@
 # Content Diff Report: spp-doc-208-architectural-design-competition-adc
 
-Generated: 2026-05-03T13:44:42.247Z
+Generated: 2026-05-04T00:06:17.907Z
 Article ID: fba5f537-2da9-4fb3-b6eb-696d1937a92a
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:aef928132ba2d43dc6f2e9ce1ef8c43034e86faebdd685d19424ef2d7bb7edc2`
-- Normalized: `sha256:39eb9de3a015076b6d3b223f9ed356065fd187fd0b8d804aa2c811abbba006c0`
-- Candidate: `sha256:0dbf90e8f29cdd6b8d6ed687b7a5b95c2fa1c5db732948186f0ecb36209d4bc5`
+- Original: `sha256:0dbf90e8f29cdd6b8d6ed687b7a5b95c2fa1c5db732948186f0ecb36209d4bc5`
+- Normalized: `sha256:3e4eec81d62e2aa3f1b9ccd3a4874aa845242defb171e20978fc43f8d7027979`
+- Candidate: `sha256:3e4eec81d62e2aa3f1b9ccd3a4874aa845242defb171e20978fc43f8d7027979`
 
 ## Line summary
 
-- Changed lines: 409
-- Inserted lines: 21
-- Deleted lines: 0
+- Changed lines: 418
+- Inserted lines: 0
+- Deleted lines: 147
 
 ## UI block preservation
 
 - UI blocks expected: 20
-- UI blocks preserved: 20
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 20
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 20 preserved UI block(s).
 
 ## Warnings
 

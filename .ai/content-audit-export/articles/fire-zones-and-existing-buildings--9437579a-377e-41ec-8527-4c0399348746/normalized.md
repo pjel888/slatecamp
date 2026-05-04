@@ -21,6 +21,10 @@ By the end of this article, you will be able to:
 
 ## The Real-World Hook
 
+[SLATECAMP_UI_BLOCK:ArticleMedia name="fire-zone-classification-map" type="diagram" caption="Three-panel comparison diagram showing Non-Fire Restricted Zone (Type I/II, rural indigenous materials), Fire Restrictive Zone (Type II/III/IV, 2-hr exterior walls, 1-hr interior), and Highly Fire Restrictive Zone (Type IV/V, 3–4 hr throughout). Show typical building examples for each zone with allowed construction types listed."]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="existing-building-pathways" type="diagram" caption="Decision tree for non-conforming existing buildings under Sec 506: check if alteration/repair value exceeds 20% of building value in 12 months → if yes, full zone compliance required. Show five pathways (A–E) as branches: A (normal repairs <20%), B (maintain existing), C (planned alterations ≥20%), D (unsafe building changes), E (fortuitous events). Include the one-third split-zone rule decision diamond."]
+
 It is a Tuesday morning in Divisoria, Manila. You are the architect of record for a row of shophouses that your client purchased along a busy commercial strip. The buildings are old — built in the 1970s before the current Fire Zone designation was formalized. Your client wants to renovate all five units: knock down a shared internal wall, add a mezzanine, repaint and reroof, extend the shopfronts toward the sidewalk, and replace all the electrical service panels. The budget for all this work is about 30% of the current appraised value of the property.
 
 You sit across from the Building Official and slide the permit application across the desk.
@@ -407,10 +411,6 @@ Bonus: The permitted construction types also ascend with the zone. You can remem
 ### Mnemonic 2: "20/12/3" — The Pathway C Checklist
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: When asked about planned renovations to a non-conforming building in a fire zone, remember: 20 = the cost ceiling: 20% of building value; 12 = the measurement window: any 12-month period; 3 = the number of conditions: cost + no combustibles + no increased hazard. Say: "Twenty in Twelve, Three conditions."
-[/SLATECAMP_UI_BLOCK]
 
 When asked about planned renovations
 
@@ -429,10 +429,6 @@ For Pathway E (fortuitous events), the formula changes: **20% of replacement cos
 **TRAP 1: "Exactly one-third in the restrictive zone means the building follows the restrictive zone rules."**
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: TRUTH: Per PD 1096, Rule V, Sec. 502, the trigger is "more than one-third" of total floor area in the more restrictive zone. When exactly one-third (33.33...%) is in the restrictive zone, the condition is NOT met, and the building is governed by the less restrictive zone. The exam will present scenarios with numbers like "400 sq m out of 1,200 sq m" (exactly 1/3) to test whether you apply "more than" strictly. You must.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -462,16 +458,8 @@ A developer owns a 1,800 sq m building straddling the boundary between a Fire Re
 > **ANSWER: C**
 >
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="nbcp", title="the test is not majority but &quot;more than one-third.&quot; Option D fabricates a discre"
-- Text: Per PD 1096, Rule V, Sec. 502, when more than one-third (1/3) of a building's total floor area is located in the more highly restrictive fire zone, the entire building is considered to be in that more restrictive zone. One-third of 1,800 sq m = 600 sq m. Since 650 sq m > 600 sq m (the one-third threshold), the entire building must comply with Highly Fire Restrictive Zone requirements. Option A is incorrect because compliance under Sec. 502 is a whole-building determination, not a split-by-area d
-[/SLATECAMP_UI_BLOCK]
 >
 [SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="nbcp", title="PD 1096, Rule V, Sec. 502"
-- Text: LEA Area: Building Laws, Codes, and Ethics — PD 1096, Rule V, Sec. 502
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -495,10 +483,6 @@ An existing Type I shophouse (bamboo and light wood construction) located in a F
 > Option D proposes an addition without a fire wall. Under Pathway D (Sec. 506-d), additions to non-conforming buildings must be separated from the existing building by fire walls. An attached addition without a fire wall violates this requirement regardless of cost.
 >
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="nbcp", title="PD 1096, Rule V, Sec. 506"
-- Text: LEA Area: Building Laws, Codes, and Ethics — PD 1096, Rule V, Sec. 506
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -525,10 +509,6 @@ Which of the following construction types and materials are CORRECTLY matched to
 > Option D is wrong because Type IV is permitted in BOTH Fire Restrictive and Highly Fire Restrictive Zones — it is not exclusive to either one.
 >
 [SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="nbcp", title="PD 1096, Rule V, Sec. 507"
-- Text: LEA Area: Building Laws, Codes, and Ethics — PD 1096, Rule V, Sec. 507
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -618,9 +598,13 @@ The Philippines faces a combination of risk factors that make fire zone rules mo
 
 ---
 
-
+---
 
 ---
+
+## Exam Tip
+
+LEA Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when the cost of alteration exceeds 50% of building value. Know the three zones (1=highest restriction, 4=lowest) and which occupancy types are prohibited in each.
 
 
 
@@ -628,7 +612,7 @@ The Philippines faces a combination of risk factors that make fire zone rules mo
 
 ## Exam Tip
 
-LEA Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when the cost of alteration exceeds 50% of building value. Know the three zones (1=highest restriction, 4=lowest) and which occupancy types are prohibited in each.
+ALE Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when the cost of alteration exceeds 50% of building value. Know the three zones (1=highest restriction, 4=lowest) and which occupancy types are prohibited in each.
 
 ## Cross‑References
 
@@ -656,3 +640,5 @@ LEA Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when
 - International Building Code (IBC) 2021, Section 3101.3 — Relocated Structures
 - International Building Code (IBC) 2021, Section 3103 — Temporary Structures
 - International Building Code (IBC) 2021, Section 3405 — Repairs to Non-Conforming Buildings
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

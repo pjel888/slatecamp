@@ -1,38 +1,48 @@
 {
   "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
   "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
-  "generated_at": "2026-05-03T13:44:22.338Z",
-  "old_hash": "sha256:18b97b4b0e80d1460186d8730484faad5433e098d38a2ef374e5d6c12504266b",
-  "new_hash": "sha256:93c9ce2d213c201320a57ca3a6d2fdc09154195c70abbec8580977dd91108069",
-  "original_hash": "sha256:18b97b4b0e80d1460186d8730484faad5433e098d38a2ef374e5d6c12504266b",
-  "normalized_hash": "sha256:ef79ffbd51e20ee073388feacb3e721a485b087b4d3066ddd1122c8129442323",
-  "candidate_hash": "sha256:93c9ce2d213c201320a57ca3a6d2fdc09154195c70abbec8580977dd91108069",
+  "generated_at": "2026-05-04T00:05:56.177Z",
+  "old_hash": "sha256:b17a98d136bac87117948b0e81ce536204c4622bbc1b2557e52dff974aba65d0",
+  "new_hash": "sha256:7ec5857c39e67fd4c4c9b42cd478b90067ea0c4d65030bebb67c24715a1f6802",
+  "original_hash": "sha256:b17a98d136bac87117948b0e81ce536204c4622bbc1b2557e52dff974aba65d0",
+  "normalized_hash": "sha256:7ec5857c39e67fd4c4c9b42cd478b90067ea0c4d65030bebb67c24715a1f6802",
+  "candidate_hash": "sha256:7ec5857c39e67fd4c4c9b42cd478b90067ea0c4d65030bebb67c24715a1f6802",
   "changed": true,
-  "changed_line_count": 61,
-  "inserted_line_count": 43,
+  "changed_line_count": 51,
+  "inserted_line_count": 32,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 61,
-    "inserted": 43,
+    "changed": 51,
+    "inserted": 32,
     "deleted": 0,
-    "original_line_count": 31,
-    "candidate_line_count": 74
+    "original_line_count": 33,
+    "candidate_line_count": 65
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0005",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

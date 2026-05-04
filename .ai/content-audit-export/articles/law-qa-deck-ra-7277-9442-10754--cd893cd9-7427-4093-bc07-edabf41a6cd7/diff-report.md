@@ -1,32 +1,33 @@
 # Content Diff Report: law-qa-deck-ra-7277-9442-10754
 
-Generated: 2026-05-03T13:44:30.343Z
+Generated: 2026-05-04T00:06:04.115Z
 Article ID: cd893cd9-7427-4093-bc07-edabf41a6cd7
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:a581e09cfb2637b89ec67f112df5ab60f1e75ab39092839ddfb77b2fec46efb7`
-- Normalized: `sha256:70cff3b0fdd9cbe8e9b5de904d7b7e705b0b06dde7058bebf101451c594afec9`
-- Candidate: `sha256:d0f57c72519d1e358f81ca496841a0af19673701cf90b47227ff6f30721fc3be`
+- Original: `sha256:d0f57c72519d1e358f81ca496841a0af19673701cf90b47227ff6f30721fc3be`
+- Normalized: `sha256:4ad73f922021c30df75b3085deeab4083260a8c603d31c2ae4bb1cf848c0c98f`
+- Candidate: `sha256:4ad73f922021c30df75b3085deeab4083260a8c603d31c2ae4bb1cf848c0c98f`
 
 ## Line summary
 
-- Changed lines: 229
-- Inserted lines: 19
-- Deleted lines: 0
+- Changed lines: 217
+- Inserted lines: 0
+- Deleted lines: 7
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

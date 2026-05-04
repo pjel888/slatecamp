@@ -3,6 +3,16 @@
 
 ---
 
+## Learning Goal
+
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+
+- Identify the four National Artists for Architecture (Nakpil, Antonio, Locsin, Mañosa) in chronological order with their key buildings and signature styles.
+- Explain Locsin's "floating volume" concept and Mañosa's Neo-Vernacular philosophy (Filipino values, climate response, indigenous materials).
+- Distinguish the contributions of each National Artist and correctly attribute their major works (CCP Complex vs. Coconut Palace, FEU vs. Quiapo Church).
+
 ## The Real-World Scenario (The Hook)
 
 You are walking through the CCP Complex along Manila Bay at dusk. To your left, a massive concrete volume seems to hover above a reflecting pool — Leandro Locsin's Tanghalang Pambansa. To your right, the Coconut Palace gleams with indigenous materials — Francisco Mañosa's tropical reinterpretation of the bahay kubo. These two buildings, standing meters apart, represent the twin poles of post-war Philippine architecture: Brutalist internationalism and neo-vernacular nationalism.
@@ -37,7 +47,7 @@ You are walking through the CCP Complex along Manila Bay at dusk. To your left, 
 | **Primary style** | Art Deco → Early Modernism | Brutalism / International Modernism | Neo-Vernacular / Tropical |
 | **Relationship to tradition** | Decorative integration of Filipino motifs into Western frameworks | Abstract reinterpretation of the bahay kubo's spatial concept (floating volume) | Direct physical use of indigenous materials and building forms |
 | **Signature material** | Reinforced concrete with Art Deco ornamentation | Raw, exposed concrete (béton brut) | Bamboo, coconut wood, rattan, capiz shell, volcanic rock |
-| **Sclea** | Commercial, institutional, theaters | Monumental civic / cultural | Resorts, residences, ecclesiastical, institutional |
+| **scale** | Commercial, institutional, theaters | Monumental civic / cultural | Resorts, residences, ecclesiastical, institutional |
 
 ### National Artist Timeline (Chronological Order)
 
@@ -51,6 +61,7 @@ You are walking through the CCP Complex along Manila Bay at dusk. To your left, 
 
 ---
 
+<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap: Confusing Nakpil and Antonio projects.** Both were Art Deco contemporaries active in the same era. Remember: **Antonio = FEU Campus and theaters**; **Nakpil = Quiapo Church, Rizal Theater, UP buildings**. The exam may pair a Nakpil building with Antonio's name as a distractor.
@@ -111,3 +122,10 @@ D) Manila Metropolitan Theater
 ---
 
 *Return to this module in 3 days. If you can answer the Active Recall questions cold, move to the next module.*
+
+---
+
+## Cross‑References
+
+**Le Corbusier Five Points**, **The Bauhaus And International Style**, **Mies Van Der Rohe**, **Pre Columbian Mesoamerica**
+

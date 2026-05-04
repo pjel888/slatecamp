@@ -1,8 +1,17 @@
 ## RA 9184—Government Procurement Reform Act: Architecture-Relevant Provisions
 
-<JSX>null</JSX>
-
 Republic Act 9184 (Government Procurement Reform Act) establishes the legal framework for all government procurement of goods, services, and infrastructure projects. For architects, understanding RA 9184 is critical because it governs how government clients select architects, procure design services, and manage consulting contracts. The act applies to all branches and instrumentalities of government, including government-owned or controlled corporations (GOCCs) and local government units (LGUs).
+
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Explain the architecture-relevant provisions of RA 9184 (Government Procurement Reform Act).
+- Describe the bidding requirements for government architectural projects.
+- Identify the architect's role in government procurement.
+- Distinguish RA 9184 from private procurement rules.
+
+
 
 ### Scope and Coverage of RA 9184
 
@@ -32,11 +41,15 @@ Architects must ensure the contract aligns with the Standards of Professional Pr
 
 RA 9184 allows three methods: competitive bidding (open to all qualified consultants), limited bidding (restricted to a pre-qualified list, used when only few firms have required expertise), and single source procurement (used in exceptional cases—emergency, sole source availability, or direct contracting with existing framework agreements).
 
+<ExamTip>Three procurement methods for architecture under RA 9184: (1) **Competitive bidding** — standard, open to all qualified; (2) **Limited bidding** — restricted to pre-qualified list, used when few firms have expertise; (3) **Single source procurement** — rare, for emergencies or sole source. Single source for architecture is exceptional.</ExamTip>
+
 For architecture, competitive bidding is standard. The government advertises the position, receives qualifications from interested firms, shortlists the best qualified, and either selects based on qualifications or conducts competitive fee bidding. Single source procurement for architecture is rare but may apply when a firm has specialized expertise or when continuing an ongoing design for a complex project.
 
 ### Prohibited Activities and Sanctions
 
 RA 9184 strictly prohibits collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects and their firms must not communicate with other bidding consultants to arrange fees, divide work, or coordinate responses. Doing so violates the law and can result in permanent disqualification from government procurement.
+
+<Tip>**Prohibited activities:** collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects must NOT communicate with other bidding firms to arrange fees or coordinate responses. Violations can result in permanent disqualification from government procurement. Disclose all conflicts of interest.</Tip>
 
 Architects must disclose conflicts of interest. If a firm has worked for the client recently on a related project, or if the same personnel would be assigned to conflicting projects, disclosure and recusal may be required. Failure to disclose creates liability.
 
@@ -49,3 +62,29 @@ Government contracts are subject to government accounting rules and COA audit. A
 ### Recent Updates and RA 12009
 
 RA 12009 (2024) modernizes RA 9184 further. Key updates include enhanced digital procurement systems (e-Procurement), stricter compliance monitoring, and refinements to procurement thresholds and methods. Architects should stay informed of updated implementing rules and familiarize themselves with digital submission and bidding platforms used by their government clients.
+
+
+<LawCallout code="ra9184" section="Section 4 - Scope and Application">
+Legal Basis: RA 9184 (Government Procurement Reform Act), as amended by RA 12009 (2024). Governs procurement of consulting services including architectural design for all government entities, GOCCs, and LGUs.
+</LawCallout>
+
+
+<Warn />
+
+
+<ExamTip />
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)

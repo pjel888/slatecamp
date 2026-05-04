@@ -1,18 +1,24 @@
 {
   "article_id": "0871298e-f789-4d5e-9c50-cdf2556e4903",
   "slug": "mastery-history-of-architecture",
-  "generated_at": "2026-05-03T13:44:11.234Z",
-  "original_hash": "sha256:303bf0802cf5477d335c659aff637d1aa853942a0686ed28c999759a412f8a8e",
-  "normalized_hash": "sha256:69d25a568b1b650dfcff104d437bce606940a2f854c1c6a20901b2f292581a37",
-  "candidate_hash": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
+  "generated_at": "2026-05-04T00:05:38.512Z",
+  "original_hash": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
+  "normalized_hash": "sha256:b4bf4e73f9f2255377532c0e8ce2d95a0e160d992414b8c1ac7db1dc61cb02f9",
+  "candidate_hash": "sha256:b4bf4e73f9f2255377532c0e8ce2d95a0e160d992414b8c1ac7db1dc61cb02f9",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition."
+  ]
 }

@@ -1,10 +1,9 @@
 # Allowable Floor Area Increases
+## Learning Goal
 
-**Module Focus:** Rule VII, Section 706 | PD 1096 National Building Code of the Philippines & 2004 Revised IRR
-**LEA Area:** Building Technology / Design
-**Difficulty:** ★★★★☆ (High — formula application and multi-framework integration are the exam challenge)
-**Spaced Repetition:** Return in 3 days to work through the IBC formula with fresh numbers. Return in 7 days to re-derive the PH FLAR framework from memory and answer the Active Recall Questions without looking at the article.
+After reading this article, you should be able to:
 
+Calculate allowable floor area increases under PD 1096 Table VIII based on frontage, sprinklers, and open space; apply the percentage increase formula correctly in multi-condition scenarios; determine when unlimited area provisions apply; and distinguish area increases from height and FAR increases in exam problems.
 ---
 
 ## The Real-World Hook
@@ -59,9 +58,23 @@ TLA (Total Lot Area)
 
 Section 706 operates at the **Total Allowable GFA** level — it is a mechanism to increase the FLAR-derived ceiling, or to justify a higher allowable floor area than the base tables in Section 705 would otherwise permit, under specific conditions approved by the Building Official.
 
----
+### FLAR vs FAR — Comparison Table
 
-### Principle 2: Section 706 — When the Philippines Allows Floor Area Increases
+Despite superficial similarity, FLAR (Philippine system) and FAR (IBC system) serve different functions:
+
+| Feature | FLAR (PH) | FAR (IBC) |
+|---------|-----------|-----------|
+| Full term | Floor to Lot Area Ratio | Floor Area Ratio |
+| Controls | Total allowable GFA for entire building | Per-floor allowable building area |
+| Applied at | Lot/parcel level (zoning tool) | Building level (code tool) |
+| Modifier | Section 706 (discretionary increase) | Frontage (If) + Sprinkler (Is) increases |
+| Combined with | PSO (footprint) + TLA | Table 506.2 base area (At) |
+| Approval | Building Official discretion | Formula-based, no approval needed |
+| Typical values | 1.5–10.0 depending on zone (zoning ordinance) | Varies by occupancy + construction type (Table 506.2) |
+
+**Exam tip:** When the question mentions "FLAR" or "FAR ratio," immediately identify whether it's a PH or US context. PH = gross floor area across all floors relative to lot area. IBC = per-floor allowable area relative to a tabular base.
+
+---
 
 Section 706 of PD 1096 (Rule VII) states:
 
@@ -69,7 +82,7 @@ Section 706 of PD 1096 (Rule VII) states:
 
 This provision is both a grant of flexibility and a statement of its conditions. Two elements must coexist:
 
-**Condition 1 — Frontage Configuration:** Public space, streets, or yards must extend along and adjoin **two or more sides** of the building. A mid-block building that fronts on only one street does not qualify. A corner lot building fronting two streets qualifies. A building on a through-block site with streets on two opposite sides qualifies. The rationlea is clear: buildings surrounded by open space on multiple sides have more effective fire separation from neighboring structures, reducing the cumulative fire risk that justifies floor area limits in the first place.
+**Condition 1 — Frontage Configuration:** Public space, streets, or yards must extend along and adjoin **two or more sides** of the building. A mid-block building that fronts on only one street does not qualify. A corner lot building fronting two streets qualifies. A building on a through-block site with streets on two opposite sides qualifies. The rationale is clear: buildings surrounded by open space on multiple sides have more effective fire separation from neighboring structures, reducing the cumulative fire risk that justifies floor area limits in the first place.
 
 **Condition 2 — Building Official Approval:** The increase is not automatic. It is subject to the **approval of the Building Official**, who evaluates whether the conditions are genuinely met and whether the proposed increase is appropriate given the building's occupancy, construction type, and surrounding context. This discretionary element distinguishes the Philippine system from the mathematical formula-based American approach.
 
@@ -168,7 +181,7 @@ The sprinkler increase rewards buildings that install a complete automatic sprin
 | **Single-story building** with NFPA 13 sprinkler system throughout | **3.00** (300%) |
 | No sprinkler system | **0** (no increase) |
 
-The rationlea for the higher single-story increase: sprinklers are more effective at controlling fires in single-story buildings (no vertical smoke travel complications), so the code grants a larger reward for the risk reduction.
+The rationale for the higher single-story increase: sprinklers are more effective at controlling fires in single-story buildings (no vertical smoke travel complications), so the code grants a larger reward for the risk reduction.
 
 **Important note:** Is applies only when the entire building is sprinklered per NFPA 13. Partial sprinkler systems do not qualify for the area increase.
 
@@ -274,8 +287,8 @@ The exclusion of required parking is particularly significant: a large parking p
 
 ## PH vs. USA Comparative Analysis
 
-| Dimension | Philippines (PD 1096 / 2004 Revised IRR) | USA (IBC 2021/2024) |
-|---|---|---|
+| Parameter | Philippines (PD 1096 / 2004 Revised IRR) | USA (IBC 2021/2024) |
+|-----------|------------------------------------------|----------------------|
 | **Governing Section** | Rule VII, Sec. 706 (increases); Sec. 705 (base) | IBC Sections 506.2, 506.3, 506.4 |
 | **Base Area Reference** | Sec. 705 allowable floor areas by occupancy/construction type | IBC Table 506.2 by occupancy/construction type |
 | **System approach** | Principles-based / discretionary (Building Official approves case-by-case) | Formula-based / prescriptive (mathematical calculation, objective result) |
@@ -346,6 +359,24 @@ The abatement powers of Section 215 — which include work stoppage, denial of C
 In the US context, IBC Section 705 (Exterior Walls) and Section 506 (Allowable Area Modifications) interact in an important way: the fire separation distance from exterior walls to the lot line determines the fire-resistance rating requirements for those walls. A building that uses the frontage increase under IBC 506.2 is, by definition, surrounded by open space — which typically means greater fire separation distance — which in turn may reduce the required fire-resistance rating for exterior walls under IBC Table 602. The system is self-reinforcing: open space increases allowable area AND reduces fire risk, justifying both the area increase and potentially lower wall ratings.
 
 ---
+
+<LawCallout code="nbcp">
+
+The corner lot bonus under Section 706 rewards open space and public frontage. If your lot fronts on two or more streets with a width of at least 15 m, you may apply for increased allowable floor area beyond the base FLAR at the discretion of the Building Official.
+
+</LawCallout>
+
+<Warn>
+
+The IBC's sprinkler-based area increase (up to 300% under Section 506) does NOT directly apply in the Philippines. Philippine law uses RA 9514 compliance as a factor in the Building Official's discretionary approval but has no codified multiplier like the IBC.
+
+</Warn>
+
+<ExamTip>
+
+LEA Pattern: Expect a question giving you lot dimensions, FLAR, and street frontage. Step 1: Compute base TLA × FLAR. Step 2: Check if Sec. 706 conditions apply (2+ streets adjoining). Step 3: Apply increase factor if given. Always show the intermediate calculation.
+
+</ExamTip>
 
 ## Mnemonic Devices
 
@@ -423,34 +454,28 @@ A building can have a small PSO (small footprint) but a high FLAR (many floors s
 
 A building has a rectangular footprint with a total perimeter of 400 ft. It fronts on a public way with a minimum width of 30 ft along two sides totaling 300 ft of the perimeter. The building is a single-story Group S (Storage) building, Type II-B construction, fully sprinklered per NFPA 13. The tabular area (At) per IBC Table 506.2 for this occupancy/construction type is 13,500 sq ft. What is the allowable building area (Aa) per the IBC Section 506.4 formula?
 
-- A. 13,500 sq ft
-- B. 47,250 sq ft
-- C. 64,125 sq ft
-- D. 74,250 sq ft
-
-> **Answer: D**
->
-> **Step 1 — Frontage Increase (If):**
-> F/P = 300/400 = 0.75
-> W = 30 ft → (W/30) = 1.0
-> If = [0.75 − 0.25] × 1.0 = **0.50**
->
-> **Step 2 — Sprinkler Increase (Is):**
-> Single-story building + NFPA 13 = **Is = 3.00**
->
-> **Step 3 — Combined Formula:**
-> Aa = At + (At × If) + (At × Is)
-> Aa = 13,500 + (13,500 × 0.50) + (13,500 × 3.00)
-> Aa = 13,500 + 6,750 + 40,500
-> **Aa = 60,750 sq ft**
->
-> Wait — none of the answers match 60,750. Let me re-examine. Actually, re-checking the answer choices: D = 74,250 sq ft. Let me verify: 13,500 + 6,750 + 40,500 = 60,750. That gives 60,750, which does not match. The intended answer with D = 74,250 would require At + (At × 0.50) + (At × 4.00) or similar. For exam purposes: apply the formula as written — **Aa = 13,500 + 6,750 + 40,500 = 60,750 sq ft**. This exam question illustrates the importance of careful arithmetic; always show your work step by step. The correct calculated answer is **60,750 sq ft**, closest to answer C in revised context. On the real LEA, verify each numerical substitution before selecting.
->
-<Note>
-
-Corrected note: The answer using the exact formula is 60,750 sq ft. Choose the closest option in the actual exam and always verify arithmetic. The methodology — If = 0.50; Is = 3.00 (single-story); additive formula — is what the LEA tests.
-
-</Note>
+| - A. 13,500 sq ft
+| - B. 47,250 sq ft
+| - C. **60,750 sq ft**
+| - D. 74,250 sq ft
+|
+| > **Answer: C — 60,750 sq ft**
+| >
+| > **Step 1 — Frontage Increase (If):**
+| > F/P = 300/400 = 0.75
+| > W = 30 ft → (W/30) = 1.0
+| > If = [0.75 − 0.25] × 1.0 = **0.50**
+| >
+| > **Step 2 — Sprinkler Increase (Is):**
+| > Single-story building + NFPA 13 = **Is = 3.00**
+| >
+| > **Step 3 — Combined Formula:**
+| > Aa = At + (At × If) + (At × Is)
+| > Aa = 13,500 + (13,500 × 0.50) + (13,500 × 3.00)
+| > Aa = 13,500 + 6,750 + 40,500
+| > **Aa = 60,750 sq ft**
+| >
+| > **Apply the additive formula.** Never multiply If and Is together — they are added separately to At.
 >
 > *LEA Area: Building Technology / Design*
 
@@ -494,6 +519,17 @@ In the Philippine floor area framework under PD 1096 and the 2004 Revised IRR, w
 
 ---
 
+---
+
+## Cross‑References
+
+**Pd 1096 Rule Vii Area Metrics**, **Penthouses And Roof Structures**, **Fire Zones And Existing Buildings**, **Minimum Parking Requirements**
+
+\
+Extracted summary:
+- Props: 
+- Text: Corrected note: The answer using the exact formula is 60,750 sq ft. Choose the closest option in the actual exam and always verify arithmetic. The methodology — If = 0.50; Is = 3.00 (single-story); ad
+\[/SLATECAMP_UI_BLOCK\]
 ## Verified Sources
 
 1. **PD 1096** — National Building Code of the Philippines, Rule VII (Use or Character of Occupancy), Section 705 (Allowable Floor Areas) and Section 706 (Allowable Floor Area Increases)

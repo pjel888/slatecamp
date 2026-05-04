@@ -1,6 +1,15 @@
 ## What You Need to Know for the LEA
-Philippine timber species vary widely in decay and termite resistance—only Narra and Kamagong offer both protections. This distinction controls wood selection for exposed and ground-contact applications.
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Identify the primary durability threats to timber: decay (fungus) and termites
+- Describe preservation treatments for decay and termite resistance
+- Explain how moisture content affects timber durability
+- Distinguish between heartwood (naturally resistant) and sapwood (susceptible)
+
+---
 ## Core Concept
 Decay and termite resistance in timber depend on extractive compounds in the _heartwood_ that inhibit fungal and insect attack. In the Philippines, structural grading standards recognize four species with measurable natural durability: Narra, Kamagong, Dao, and Tangile. Narra and Kamagong are the only species that combine both decay and termite resistance, making them premium choices for harsh environments. Dao and Tangile resist decay but offer no termite protection. Species classification by resistance is not voluntary—it is a mandatory design decision whenever timber contacts soil, water, or high-moisture conditions. Sapwood (outer growth rings) contains no protective extractives and is always susceptible; only heartwood (inner core) qualifies. When sapwood contamination is acceptable under NatCor or ASEAN standards, a maximum of 5% sapwood is tolerated on individual pieces, provided at least 90% of each side face displays heartwood. Resistance classification does not affect allowable stress values—it determines _suitability_, not _capacity_.
 
@@ -40,6 +49,13 @@ Philippines Forestry Code and NatCor timber standards mandate resistance classif
 
 <Tip>Narra + Kamagong = BOTH. Dao + Tangile = decay ONLY. This 2+2 rule is the entire resistance spectrum for Philippine timber.</Tip>
 
+
+## Related Articles
+
+See also: **Timber Stress Groups** (lea-strc-009-02) for strength grading, **Timber ASD** (lea-strc-009-03) for allowable stress design in wood, and **Trusses** (lea-strc-002-05) for timber truss applications.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Assuming Dao or Tangile resists termites because they resist decay. Decay and termite resistance are separate mechanisms.", "Accepting sapwood freely because the piece has 'mostly heartwood.' The 5% rule is absolute; 6% sapwood fails ground-contact use.", "Treating Yakal or Apitong as naturally durable alternatives to Narra. They have no documented resistance; treatment is mandatory for resistance claims.", "Confusing heartwood color with heartwood identity. Heartwood must be chemically extractive-rich, not just visually distinct." ]} />

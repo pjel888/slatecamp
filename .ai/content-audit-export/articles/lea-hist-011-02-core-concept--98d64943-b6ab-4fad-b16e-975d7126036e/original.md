@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your understanding of how colonialism imposed European architectural styles on African cities, and how post-independence architects reclaimed and reinterpreted African identity through modern design. You must recognize colonial-era buildings and identify postcolonial strategies for resistance and renewal.</Callout>
+## Learning Goal
 
+Distinguish colonial-era African architecture (European imposition, imported styles) from postcolonial approaches (pure modernism, critical regionalism, cultural revival), and identify how African architects negotiate identity through built form.
 ## Core Concept
 
 Colonial architecture in Africa (1880s–1960s) did not adapt to African climate or culture—it exported European templates to assert political dominance. Colonial administrations built European villas with wide verandahs (conceding to heat but maintaining "civilized" aesthetics), imposed grid-based street plans that disrupted traditional settlements, and created racial segregation through zoning. After independence, African architects faced a choice: embrace modernism (which promised a fresh, non-colonial start), synthesize African and modern traditions, or revive pre-colonial forms. Contemporary African architecture (1960s onward) shows all three strategies.
@@ -32,7 +33,7 @@ Do not conflate Kéré's contemporary synthesis with "traditional architecture r
 
 **Case Studies in National Identity**
 
-**Dakar, Senegal**: The **Monument of the African Renaissance** (2008–2010, architect: Pierre Goudiaby) combines modernist sclea with symbolic African imagery—a 52-meter bronze family figure references pan-African identity and was unveiled April 3, 2010. The monument showcases contemporary African sculptural ambition, though debate continues about its cost (US$27 million) and symbolic resonance.
+**Dakar, Senegal**: The **Monument of the African Renaissance** (2008–2010, architect: Pierre Goudiaby) combines modernist scale with symbolic African imagery—a 52-meter bronze family figure references pan-African identity and was unveiled April 3, 2010. The monument showcases contemporary African sculptural ambition, though debate continues about its cost (US$27 million) and symbolic resonance.
 
 **Addis Ababa, Ethiopia**: The **Hilton Addis Ababa** (1969) integrates design inspired by the iconic Lalibela rock-hewn churches—its twelve-story form echoes Lalibela's cross-shaped plan—demonstrating that local architectural traditions could inform contemporary modernist design without pastiche.
 
@@ -47,18 +48,16 @@ Contemporary African architecture increasingly prioritizes sustainable practices
 <WikiExamTable headers={["**Period**", "**Characteristic**", "**Example**", "**Location**", "**Architect**", "**Year**"]} rows={[['["Colonial", "European grid plans, segregation, climate-inappropriate design", "Lagos grid plan", "Lagos, Nigeria", "British colonial administration", "1860s–1920s"]', '["Colonial", "Beaux-Arts monumentalism, shipping-dependent materials", "Government buildings", "Dakar, Senegal", "French colonial", "1890s–1950s"]', '["Early Postcolonial", "Glass-and-steel modernism; symbol of progress", "Early office blocks", "Various African cities", "Various", "1960s–1970s"]', '["Contemporary Synthesis", "Climate-responsive modernism, local materials", "**Gando Primary School**", "Gando, Burkina Faso", "Diébédo Francis Kéré", "2001"]', '["Contemporary", "Pan-African monumentalism", "**Monument of African Renaissance**", "Dakar, Senegal", "Pierre Goudiaby", "2008–2010"]', '["Contemporary", "Integration of local architectural tradition", "**Hilton Addis Ababa**", "Addis Ababa, Ethiopia", "Hilton International", "1969"]', '["Contemporary", "Waterfront adaptive design", "**Makoko Floating School**", "Lagos, Nigeria", "Kunlé Adeyemi", "2013"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Colonial Imposition vs. Postcolonial Resistance**
 Exams ask you to identify colonial architectural characteristics and explain postcolonial architectural responses. Example: "Colonial grid plans in African cities served what administrative purpose, and how did postcolonial architects challenge this model?" (Answer: hierarchical control and racial segregation; contemporary architects designed for community-centered, climate-responsive spaces). You must link form to political intent.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Climate and Material Adaptation**
 Questions test whether contemporary designs respond to African conditions. Example: "How does **Kéré's** use of compressed earth blocks and courtyard design address Sahelian climate?" (Answer: thermal mass, passive cooling, local material availability, reduced shipping costs). Contrast climate-responsive strategies with glass-and-steel modernism.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Identity and Symbolism**
 Exams ask what architectural symbols communicate about national identity. Example: "The **Monument of the African Renaissance** employs what sculptural form to express pan-African identity?" (Answer: monumental family figure). You must connect architectural gesture to cultural meaning.</ExamTip>
 
+<Callout>The LEA tests your understanding of how colonialism imposed European architectural styles on African cities, and how post-independence architects reclaimed and reinterpreted African identity through modern design. You must recognize colonial-era buildings and identify postcolonial strategies for resistance and renewal.</Callout>
 
 ## Common Mistakes
 
@@ -68,12 +67,11 @@ Exams ask what architectural symbols communicate about national identity. Exampl
 
 <WikiMistakeList mistakes={["Conflating colonial architecture with African architecture. European colonial buildings in Africa are colonial products, not African architecture. They express European aesthetic codes and were often designed by European architects shipped to Africa. Distinguish colonial imposition from African-authored design.", "Overlooking environmental failure in early postcolonial modernism. Students credit all modernism as \"progressive.\" Early glass-facade buildings in Lagos, Dakar, and Abidjan created heat gain and demanded energy-intensive cooling—failures that prompted the shift toward climate-responsive synthesis. Modernism itself was not the problem; climate-blind application was."]} />
 
-
 ## Key Terms
 
 **Colonial imposition**: Forced adoption of European architectural styles, planning systems, and building standards by colonial powers onto colonized territories.
 
-**Beaux-Arts**: 19th–early 20th century European architectural style emphasizing symmetry, ornament, monumental sclea, and hierarchical composition.
+**Beaux-Arts**: 19th–early 20th century European architectural style emphasizing symmetry, ornament, monumental scale, and hierarchical composition.
 
 **Grid plan**: Rectilinear street network of intersecting perpendicular streets; efficient for administration and commerce but ignores topography and existing settlement.
 
@@ -90,3 +88,10 @@ Exams ask what architectural symbols communicate about national identity. Exampl
 **Embodied carbon**: Energy and emissions invested in material extraction, processing, and transport; locally sourced materials reduce embodied carbon.
 
 **Pan-Africanism**: Political and cultural movement emphasizing unity and shared identity across African nations and diaspora.
+
+## Related Articles
+
+See also within African Architecture: **lea-hist-011-01-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

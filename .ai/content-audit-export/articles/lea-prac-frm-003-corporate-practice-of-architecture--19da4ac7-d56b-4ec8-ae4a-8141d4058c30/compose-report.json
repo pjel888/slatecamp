@@ -1,18 +1,22 @@
 {
   "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
   "slug": "lea-prac-frm-003-corporate-practice-of-architecture",
-  "generated_at": "2026-05-03T13:44:10.899Z",
-  "original_hash": "sha256:1bf2d72a0d8949880033981c4afbe1dd64d8f3b25c01afd1dbc2666877c59e74",
-  "normalized_hash": "sha256:4d9fccd660dbc4106da18e412ba34cfe3eb91f01cb777b1c245f2e7fc67f088a",
-  "candidate_hash": "sha256:bb6f45bbdfa0923bb46d25e1e3082b0d36ac784ced055080e714a79e2cd3b02d",
+  "generated_at": "2026-05-04T00:05:38.109Z",
+  "original_hash": "sha256:bb6f45bbdfa0923bb46d25e1e3082b0d36ac784ced055080e714a79e2cd3b02d",
+  "normalized_hash": "sha256:cbe2c81af867de7177cba613491e39963111b6fb84837a28b96cf18f1be0a737",
+  "candidate_hash": "sha256:cbe2c81af867de7177cba613491e39963111b6fb84837a28b96cf18f1be0a737",
   "ui_blocks_count": 1,
-  "placeholders_found": 1,
-  "placeholders_resolved": 1,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 1,
+  "unused_blocks": [
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0004 was not used during composition."
+  ]
 }

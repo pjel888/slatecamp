@@ -1,5 +1,9 @@
 # 21st Century Movements
 
+## Learning Goal
+
+By the end of this module, you will be able to distinguish Deconstructivism, High-Tech Architecture, and Parametricism by their formal language, theoretical roots, and key buildings — and explain why a given structure belongs to one movement and not another.
+
 ## The Real-World Scenario (The Hook)
 
 You walk into the jury room for your thesis defense. Your panel chair holds up a photograph of the Guggenheim Museum Bilbao and asks: "Is this Deconstructivism, High-Tech, or Parametricism — and what is the theoretical basis for your answer?" Your entire grade hinges on knowing the precise boundaries between these three movements.
@@ -29,6 +33,36 @@ You walk into the jury room for your thesis defense. Your panel chair holds up a
 | Relationship to Technology | Technology serves formal disruption | Technology is the aesthetic itself | Technology generates the form algorithmically |
 | Theoretical Root | Derrida's deconstruction; Russian Constructivism | Archigram; Buckminster Fuller's systems thinking | Complexity theory; scripting and computational design |
 
+<Tip>
+
+**Memory Aid: "DHP — Disrupt, Honor, Program."** Deconstructivism Disrupts form; High-Tech Honors engineering; Parametricism Programs with algorithms. Chronological order: Deconstructivism (1982), High-Tech (1970s, concurrent but conceptually earlier), Parametricism (2000s).
+
+</Tip>
+
+<Example>
+
+**Real-World Example:** Imagine three buildings on the same site. Building A has jagged titanium panels, angled walls, and a fragmented silhouette — that is Deconstructivism, challenging your sense of stability. Building B has exposed steel beams, color-coded ducts, and glass curtain walls — that is High-Tech, celebrating the engineering inside. Building C has a seamless fluid white shell with no straight lines — that could be Parametric, but only if the form was algorithmically generated, not hand-sculpted.
+
+</Example>
+
+<ExamTip>
+
+**LEA Exam Pattern:** The most common question type shows you an image of a building and asks you to identify its movement. Follow this checklist: (1) Is the form fragmented and dislocated? → Deconstructivism. (2) Are structure and services exposed as ornament? → High-Tech. (3) Is the form fluid, continuous, and algorithmically generated? → Parametricism. If the question gives a curved building but no mention of algorithmic software, eliminate Parametricism.
+
+</ExamTip>
+
+<KeyValues>
+
+Deconstructivism: Fragmentation, dislocation, challenging structural conventions | High-Tech: Technology as ornament, exposed structure/services | Parametricism: Algorithm-driven form, continuous differentiation
+
+</KeyValues>
+
+<Warn>
+
+Do NOT confuse Parametricism with mere curvilinear design. Not every curved building is Parametric — it must be algorithmically generated through parametric relationships in software like Grasshopper or CATIA.
+
+</Warn>
+
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap 1: Confusing Deconstructivism with Brutalism.** Both can appear aggressive and angular, but Brutalism is about honest expression of raw concrete (béton brut) and heavy massing, while Deconstructivism is about intellectual fragmentation of form and space — material honesty is not its primary concern.
@@ -36,6 +70,8 @@ You walk into the jury room for your thesis defense. Your panel chair holds up a
 - **Trap 2: Attributing the Centre Pompidou to Deconstructivism.** The Pompidou (Rogers & Piano, 1977) is the defining work of High-Tech architecture, not Deconstructivism. Its exposed color-coded mechanical systems (blue for air, green for water, yellow for electrical, red for circulation) are the textbook example of the High-Tech aesthetic.
 
 - **Trap 3: Confusing Parametricism with mere curvilinear design.** Not every curved building is Parametric. Parametricism specifically requires algorithmic generation of form through parametric relationships — a hand-sculpted freeform shell is not Parametric if it was not generated through computational processes.
+
+**Connecting History to the Exam:** When you face a movement-identification question on the LEA, run the DHP framework — Disrupt, Honor, Program — and you will pinpoint Deconstructivism, High-Tech, or Parametricism in seconds. The exam rewards clear reasoning, not guesswork.
 
 ## Board-Prep Mnemonics
 
@@ -71,3 +107,10 @@ C. An algorithmic approach generating continuously differentiated, fluid forms f
 D. A movement that fragments building volumes to challenge user perception
 
 > **Correct Answer: C.** Parametricism uses computational scripting to generate forms that respond to multiple data inputs (structure, environment, program), producing continuously differentiated and topologically fluid geometry. Option B describes High-Tech; Option D describes Deconstructivism.
+
+---
+
+## Cross‑References
+
+**Post Modernism**, **The Bauhaus And International Style**, **Brutalism**, **Masters Of The Golden Age**
+

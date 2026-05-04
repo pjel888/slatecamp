@@ -10,17 +10,7 @@ After reading this article, you should be able to:
 
 Calculate minimum egress width, number of exits, and maximum travel distance under PD 1096 Rule XII for each occupancy group; apply the occupant load factor to determine required exit capacity; design compliant corridor widths by occupancy and occupant load; and determine when a second exit is required based on occupant load and travel distance.
 ---
-<LawCallout code="pd1096" section="Rule XII - Means of Egress">
-
-
-Governing Law: Presidential Decree No. 1096, National Building Code of the Philippines
-**Specific Provision:** Rule XII, Section 1207 (2004 Revised IRR) — in the IRR this is under **Rule XII: General Design and Construction Requirements**, but the mother code text calls it **“Stairs, Exits and Occupant Loads”**.[web:22][web:27]  
-**Related Provisions:** Rule VII (Occupancy Classification) for use groups; Rule VIII (Light, Ventilation & Setbacks) for coordination with exit placement and open spaces.[web:25][web:27]  
-**LEA Relevance:** Area 1 (Laws & Professional Practice) + Area 3 (Architectural Design & Site Planning)  
-**Date Verified:** March 28, 2026 — cross‑referenced against DPWH PD text, 2004 Revised IRR (IIBH PDF), and summarized Rule XII references.[web:15][web:27][web:26]
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 
 ---
 
@@ -37,6 +27,10 @@ This material is **psychologically engineered** for maximum retention. Every sec
 ---
 
 ## THE MENTAL SCENE — READ THIS FIRST
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="egress-floorplan-separation" type="diagram" caption="Floor plan diagram showing 2 exits separated by ≥ 1/5 of perimeter (straight-line measurement). Example: 20 m × 30 m rectangle, perimeter = 100 m, separation = 20 m. Show exit doors, travel paths, and the 45 m / 60 m travel distance radius arcs. Include a callout: 'PD 1096 uses 1/5 PERIMETER rule — NOT IBC 1/2 diagonal rule.'"]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="occupant-load-exit-calculation" type="diagram" caption="Worked example infographic: 4-storey office, 500 sqm per floor. Step 1: occupant load = 500 ÷ 9.30 = 54 persons. Step 2: check exit count triggers (>10 above 1st, >30 for offices → 2 exits). Step 3: total width = 54 ÷ 165 = 0.327 m → but each exit door min 0.90 m → 2 doors = 1.80 m. Show the floor area ÷ unit area = occupant load → exit width formula chain with visual blocks."]
 
 _You are on the 4th floor of a commercial building. The fire alarm screams. Smoke billows from the stairwell to your left. You turn right — dead end. You backtrack and find the corridor. How wide is it? Can you pass two people running the other way? Where is the next exit? How far is it? Does the door swing toward you or away?_
 
@@ -147,14 +141,7 @@ Total exit width = Occupant Load ÷ 165 = 54 ÷ 165 = 0.327 m
 
 But each exit door minimum clear width is **0.90 m** (and stairs/corridors have their own minimums), so in practice you provide at least 1.80 m total exit width across the two exits.[web:26][web:29]
 
-<details>
-<summary>Active Recall: Unit area factors</summary>
-
-Office: **9.30 sq.m/person**[web:20]  
-Auditorium: **0.65 sq.m/person**[web:20]  
-Classroom: **1.80 sq.m/person**[web:20]
-
-</details>
+[SLATECAMP_UI_BLOCK:ui_0002 component="details" status="preserved"]
 
 ---
 
@@ -184,12 +171,7 @@ It is not just about occupant load brackets. Triggers include:
 
 A 3rd-floor office with 8 people still needs **2 exits** because it is above the 2nd storey.[web:26]
 
-<details>
-<summary>Active Recall: Basement storage room, 7 occupants — exits?</summary>
-
-Answer: **2 exits** — basement used for other than purely service purposes.[web:26]
-
-</details>
+[SLATECAMP_UI_BLOCK:ui_0003 component="details" status="preserved"]
 
 ---
 
@@ -517,15 +499,23 @@ _Study this alongside your Rule VIII (setbacks) reviewer so you can handle integ
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Occupant load factors: Assembly (concentrated) = 0.65 m²/person, Assembly (less concentrated) = 1.40 m²/person, Business = 9.30 m²/person, Educational = 1.85 m²/person, Mercantile = 2.80 m²/person. Egress width = occupant load × 0.55 mm per person (for stair) or 0.81 mm per person (for door/corridor). These factors are the most tested calculations.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Occupant load factors: Assembly (concentrated) = 0.65 m²/person, Assembly (less concentrated) = 1.40 m²/person, Business = 9.30 m²/person, Educational = 1.85 m²/person, Mercantile = 2.80 m²/person. Egress width = occupant load × 0.55 mm per person (for stair) or 0.81 mm per person (for door/corridor). These factors are the most tested calculations.
+
 ## Cross‑References
 
 **Stairs Handrails Guardrails**, **Widths Slopes**, **Fire Zones And Existing Buildings**, **Commercial Clearances**
 
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

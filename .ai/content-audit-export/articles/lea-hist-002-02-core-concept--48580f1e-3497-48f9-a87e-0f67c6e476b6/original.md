@@ -1,14 +1,13 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-Romanesque establishes the **round arch, barrel vault, and flying buttress precursor** as the dominant Medieval structural system before Gothic took over. The exam tests your ability to identify these features and explain how Romanesque solves the problem of building tall, fireproof stone churches.
-</Callout>
+## Learning Goal
 
+Identify Romanesque architectural characteristics — barrel vaults, groin vaults, thick walls, small windows, cruciform plans — and recognize key examples (Pisa Cathedral, Durham Cathedral, Speyer Cathedral) by their structural and regional distinctions.
 ## Core Concept
 
 **Romanesque architecture** (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches without relying on wooden roofs that burned. This period marks the first truly Medieval architectural language, distinct from both Roman revival and subsequent Gothic sophistication.
 
-The structural foundation is the **barrel vault**—a continuous semicircular vault spanning the entire nave. Unlike the Roman equivleants it echoes, Romanesque barrel vaults require massive supporting walls to contain their outward thrust. Builders compensated by thickening walls, reducing window size, and concentrating weight downward. The interior is therefore darker, more massive, and more cavern-like than Early Christian basilicas.
+The structural foundation is the **barrel vault**—a continuous semicircular vault spanning the entire nave. Unlike the Roman equivalents it echoes, Romanesque barrel vaults require massive supporting walls to contain their outward thrust. Builders compensated by thickening walls, reducing window size, and concentrating weight downward. The interior is therefore darker, more massive, and more cavern-like than Early Christian basilicas.
 
 <Tip>
 **Memory Aid: Barrel Vault Challenge.** Barrel vault = Curved tunnel = Weight pushes outward on walls. To hold this weight, you need thick walls and small windows. Light? Limited. Space? Restricted. This is the Romanesque problem. Gothic solves it with flying buttresses.
@@ -56,6 +55,10 @@ Romanesque churches emphasize:
 
 <ExamTip>**Pattern 5:** Sclea and historical context. "Which Romanesque church was the largest in Christendom, and how did its sclea influence later Gothic?" Cluny III held this title until St. Peter's Basilica (1510), demonstrating Romanesque ambition before Gothic took over.</ExamTip>
 
+<Callout>
+Romanesque establishes the **round arch, barrel vault, and flying buttress precursor** as the dominant Medieval structural system before Gothic took over. The exam tests your ability to identify these features and explain how Romanesque solves the problem of building tall, fireproof stone churches.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing Romanesque flying buttresses with Gothic ones" correction="Romanesque flying buttresses are *internal* or modest *external* structures; they do not dominate the structural frame. Gothic flying buttresses are *external*, load-bearing, and define the skeleton. This is a crucial threshold moment." context="Recognizing this distinction shows understanding of the architectural evolution from Romanesque to Gothic." />
@@ -76,3 +79,10 @@ Romanesque churches emphasize:
 - **Flying buttress**: An external or semi-external arch transferring vault thrust to an outer pier; modest in Romanesque, structural skeleton in Gothic
 - **Pier**: A vertical supporting element, typically more substantial than a column
 - **Ambulatory**: A passageway around the choir and apse, allowing pilgrims to view relics without interrupting services
+
+## Related Articles
+
+See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**, **lea-hist-002-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

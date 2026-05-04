@@ -1,18 +1,26 @@
 {
   "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
   "slug": "lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic",
-  "generated_at": "2026-05-03T13:44:11.531Z",
-  "original_hash": "sha256:039e86f3b2c85181ca80c405570537b95af5147627e153738d10c9cd008a9806",
-  "normalized_hash": "sha256:a83c34cdb92441a41cbd0ba111f1f66db542a66f3f5383d096831e8378460d5e",
-  "candidate_hash": "sha256:8ddaac5b28a11f413d6f3698ca63284e7bdff8055ec65fbb0e4d4131df7252cb",
+  "generated_at": "2026-05-04T00:05:38.913Z",
+  "original_hash": "sha256:8ddaac5b28a11f413d6f3698ca63284e7bdff8055ec65fbb0e4d4131df7252cb",
+  "normalized_hash": "sha256:5ac087564a55bd8e17b74ee9fe7c2602da81152069cc54f18a392097b3da881f",
+  "candidate_hash": "sha256:5ac087564a55bd8e17b74ee9fe7c2602da81152069cc54f18a392097b3da881f",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

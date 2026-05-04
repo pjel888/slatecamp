@@ -1,32 +1,34 @@
 # Content Diff Report: electrical-and-mechanical-regulations
 
-Generated: 2026-05-03T13:44:53.278Z
+Generated: 2026-05-04T00:06:30.197Z
 Article ID: aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:bb35d22333fe82da4107b266316d15957432590661f1131a4a45ef2c74a17e63`
-- Normalized: `sha256:c0dbef186f764bcc42d03d8134ec6dfc2ff18a02259a008bcde8bffa8ae8f5fb`
-- Candidate: `sha256:3ba0c774be4cc296ba10ddefcff96f2c6a457105b30ea8f285dd2b8bcfbbda82`
+- Original: `sha256:44ef59f8326d577dfe0fb1f9be04f76bbfba0ff8ea55e277ed251790397d1ee1`
+- Normalized: `sha256:2107fab5280553532f575080bde635465b31e6fb0ba122b79efa88b9d0120a6c`
+- Candidate: `sha256:2107fab5280553532f575080bde635465b31e6fb0ba122b79efa88b9d0120a6c`
 
 ## Line summary
 
-- Changed lines: 404
-- Inserted lines: 17
+- Changed lines: 370
+- Inserted lines: 4
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 5
-- UI blocks preserved: 5
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 5
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 5 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

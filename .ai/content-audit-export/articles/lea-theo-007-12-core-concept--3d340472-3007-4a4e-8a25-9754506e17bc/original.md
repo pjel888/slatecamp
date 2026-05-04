@@ -3,9 +3,17 @@
 High-Tech architecture treats structural systems and mechanical infrastructure not as utilities to be concelead but as primary aesthetic generators. The LEA tests whether you understand the theoretical position: **structure as beauty, mechanics as ornament**. You must master the work of Richard Rogers, Renzo Piano, Norman Foster, and Nicholas Grimshaw, and understand how High-Tech resolved modernism's contradiction between form and function by celebrating function as form.
 </Callout>
 
+
+
+## Learning Goal
+
+- Distinguish minimalism (restraint as positive intellectual/ethical principle) from reductivism (elimination as default).
+- Explain how minimalism evolved from modernism's functional reduction to a philosophy of sufficiency and intensity.
+- Identify key minimalist architects (Tadao Ando, John Pawson, SANAA) and their design philosophies.
+
 ## Core Concept
 
-High-Tech emerged in the 1970s–1980s as a movement that rejected modernism's residual romanticism (the belief that pure geometric form expressed universal truth) and instead embraced technology as honest expression of contemporary reality. If modernism stripped away ornament to reveal "true form," High-Tech revelead that in an industrial age, the true form was **mechanical systems, structural engineering, and industrial materials honestly expressed**.
+High-Tech emerged in the 1970s–1980s as a movement that rejected modernism's residual romanticism (the belief that pure geometric form expressed universal truth) and instead embraced technology as honest expression of contemporary reality. If modernism stripped away ornament to reveal "true form," High-Tech revealed that in an industrial age, the true form was **mechanical systems, structural engineering, and industrial materials honestly expressed**.
 
 The theoretical position: Machines and structures are beautiful. Why conceal a perfectly engineered steel truss, a functioning duct system, or a mechanical component? Rather than hiding mechanical systems behind walls and ceilings, High-Tech architects made them visible, celebrated them, and treated them as primary design elements. This was not mere expression (like Brutalism's sculptural concrete); it was **utilitarian honesty elevated to aesthetic principle**.
 
@@ -89,7 +97,7 @@ Risks:
 
 2. **Maintenance Burden**: Exposed systems accumulate dust, require regular cleaning, may appear shabby as they age.
 
-3. **Acoustic and Thermal Performance**: Exposed systems lack the acoustic absorption and thermal buffering that concelead systems provide through wall cavities.
+3. **Acoustic and Thermal Performance**: Exposed systems lack the acoustic absorption and thermal buffering that concealed systems provide through wall cavities.
 
 4. **Cultural Rejection**: Not all occupants value technological honesty; some find exposed ductwork and structural systems dehumanizing or cold.
 
@@ -157,7 +165,7 @@ High-Tech's industrial aesthetic emerged from British manufacturing culture and 
 
 **Column-Free Spans** — Interior spaces unobstructed by structural columns; enabled by High-Tech structural innovation (suspension structures, long-span trusses).
 
-**Exposed Services** — Mechanical, electrical, and plumbing systems left visible and accessible rather than concelead in cavities; maintenance and design advantage.
+**Exposed Services** — Mechanical, electrical, and plumbing systems left visible and accessible rather than concealed in cavities; maintenance and design advantage.
 
 **Color-Coding** — Using color to identify different service systems (water, electrical, ventilation, steam); practical and visual organizational system.
 
@@ -168,3 +176,10 @@ High-Tech's industrial aesthetic emerged from British manufacturing culture and 
 **Material Authenticity** — Selecting and expressing materials according to their actual properties (stainless steel for corrosion resistance, aluminum for lightweight strength) rather than cosmetic application.
 
 **Technological Expression** — Celebrating contemporary construction technology (steel, glass, sophisticated mechanics) as legitimate and beautiful aesthetic subject.
+
+## Related Articles
+
+See also within Contemporary Movements & Discourse: **lea-theo-007-01-core-concept**, **lea-theo-007-02-core-concept**, **lea-theo-007-09-core-concept**, **lea-theo-007-10-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

@@ -4,6 +4,12 @@ _(Aligned with BP 344 2024 IRR + PD 1096, using your files and the official 2024
 
 ---
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Recall the core wheelchair mnemonic (4.0-1.8-2.3-1.5-1.8-1.2 m) and apply each value to accessible parking stall dimensions, access aisles, vertical clearance, corridors, turning spaces, and ramp widths under BP 344; design compliant accessible parking layouts with correct stall dimensions, signage, and access aisle locations.
+
 ## 1. Core Footprint Numbers (Easy Mnemonic)
 
 **Mnemonic: 4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2**
@@ -113,3 +119,33 @@ RAMPS & EXTERIOR
 ```
 
 Use this one page as your **go‑to widths & slopes sheet** for LEA questions on wheelchair maneuvering, parking, corridors, ramps, and passing spaces.[file:1][file:2][web:8][web:11]
+
+
+---
+
+<LawCallout code="bp344" section="Section 6 - Maneuvering Space">
+
+
+Per BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width × 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be ≥2300 mm. The accessible stall must be the nearest to the accessible entrance on the shortest possible route. ISA signage at 600×600 mm on poles is required.
+
+
+</LawCallout>
+
+<Warn >
+
+Do not confuse accessible parking stall width (4000 mm) with the combined stall+aisle width. The stall is vehicle-only at 4000 mm; the adjacent 1800 mm access aisle is separate. The total width for a single accessible space with aisle = 5800 mm. Two adjacent accessible stalls can share one 1800 mm aisle between them.
+
+</Warn>
+
+<ExamTip >
+
+Memorize the mnemonic: '4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.5 m (corridor width), 1.8 m (turning space), 1.2 m (ramp width).
+
+</ExamTip>
+
+---
+
+## Cross‑References
+
+**Wheelchair Maneuvering And Parking Slots**, **Accessible Seating In Assembly Areas**, **Standard Human Body Dimensions**, **Bp 344 Accessible Washrooms**
+

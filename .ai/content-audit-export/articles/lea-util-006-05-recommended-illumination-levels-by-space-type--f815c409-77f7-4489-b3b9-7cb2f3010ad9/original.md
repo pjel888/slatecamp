@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Illumination levels directly impact occupant productivity, safety, and energy consumption. Philippine building codes, specifically Philippine Energy Efficiency Standards (specify the applicable law: e.g., RA 11285 Energy Efficiency and Conservation Act, or relevant DENR/DOE implementing Philippine Energy Efficiency Standards and IES (Illuminating Engineering Society) standards mandate minimum illumination levels based on space function and occupancy type. Note: PD 1096 Rule VIII addresses natural light and ventilation requirements, not artificial illumination levels in lux.pe. Note: PD 1096 Rule VIII addresses natural light and ventilation requirements, not artificial illumination levels in lux.. Proper lighting design balances visibility requirements with energy efficiency through strategic use of lighting power density (LPD) limits and quality metrics.
+## Learning Goal
 
+Apply recommended illumination levels (lux) by space type per the Philippine Lighting Standard (PNS / IESNA RP-1) for office, educational, healthcare, hospitality, residential, and industrial spaces, and design efficient lighting layouts for given room dimensions.
 ## Recommended Illumination Levels by Space Type
 
 Illumination is measured in _lux_ (lumens per square meter). Each space type has distinct requirements based on visual task complexity and occupancy safety needs.
@@ -11,6 +12,19 @@ Illumination is measured in _lux_ (lumens per square meter). Each space type has
 Office general work areas require **300–500 lux** according to IES (Illuminating Engineering Society) standards. General tasks such as reading printed documents, computer-based work at standard distances, and conference activities fall within this range. Office task areas—where detailed work occurs, such as engineering drawings, medical record entry, or precision assembly—require **500–750 lux** per IES and ASHRAE 90.1 recommendations. The higher illumination supports sustained visual accuracy over extended periods.
 
 ### Educational Facilities
+
+
+<KeyValues items=[{"value": "300-500 lx", "label": "Office Work"}, {"value": "100-200 lx", "label": "Lobby/Corridor"}, {"value": "50-100 lx", "label": "Parking"}, {"value": "750-1000 lx", "label": "Detailed Work"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 
 Classrooms require **300 lux** minimum per IES standards for reading printed materials, viewing instructional aids, and board visibility. Laboratory spaces, where precision measurements, specimen examination, and chemical analysis occur, demand **500 lux** per IES guidelines to ensure accuracy and prevent errors.
 
@@ -44,7 +58,7 @@ Color temperature (measured in Kelvin, K) affects visual perception and circadia
 
 - **3000K (warm white)**: Hospitality, residential, and reception areas. Warm light creates a welcoming atmosphere per IES design guidance.
 - **4000K (neutral white)**: General office, retail, and education. Neutral light provides balanced visibility without warm or cool bias per ASHRAE 90.1.
-- **5000–6500K (cool/daylight)**: Industrial work, healthcare, and precision task areas. Cool light enhances leartness and visual acuity per IES industrial and healthcare standards.
+- **5000–6500K (cool/daylight)**: Industrial work, healthcare, and precision task areas. Cool light enhances alertness and visual acuity per IES industrial and healthcare standards.
 
 ### Uniformity Ratio
 
@@ -78,6 +92,13 @@ Compliance with PD 1096 Rule VIII and Philippine Energy Efficiency Standards req
 
 Illumination levels range from 10 lux (emergency) to 100,000 lux (surgical field) depending on occupancy and task. Office general areas require 300–500 lux; task areas 500–750 lux. Retail and industrial spaces follow IES guidelines specific to merchandise type and object characteristics. Healthcare facilities demand high CRI (90+) and cool color temperature for accurate clinical assessment. Parking areas operate at lower illumination (20–75 lux) due to reduced visual complexity. Uniformity ratios (0.6–0.7) prevent dark zones. LPD limits ensure energy efficiency without sacrificing visibility. Designers achieving compliance combine appropriate illumination with CRI, color temperature, uniformity, and power density control, supported by PD 1096 and Philippine Energy Efficiency Standards requirements.
 
-<MDXComponent type="callout" variant="info" title="Key Takeaway">
+<Callout type="callout" variant="info" title="Key Takeaway">
 Philippine building codes require minimum illumination levels specific to occupancy type, supported by quality metrics (CRI, color temperature, uniformity). Designers must verify lux levels meet IES standards, quality metrics match occupancy needs, and installed power stays within LPD limits to achieve both safety and energy efficiency.
-</MDXComponent>
+</Callout>
+
+## Related Articles
+
+See also within Lighting and Acoustics: **lea-util-006-02-core-concept**, **lea-util-006-03-core-concept**, **lea-util-006-06-core-concept**, **lea-util-006-07-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

@@ -1,32 +1,33 @@
 # Content Diff Report: lea-util-007-05-renewable-energy-integration-systems
 
-Generated: 2026-05-03T13:44:54.332Z
+Generated: 2026-05-04T00:06:31.368Z
 Article ID: 5069fdfb-e96b-435e-9e04-d6526f8b3989
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e`
-- Normalized: `sha256:e077f0c9409b3dfd90e328a712eda84ef9e307d72e47f3c12467f6058113354b`
-- Candidate: `sha256:a5d6c690c5047f1b5637d495096164a24039c305dda6bbfd8b406151acd42980`
+- Original: `sha256:a5d6c690c5047f1b5637d495096164a24039c305dda6bbfd8b406151acd42980`
+- Normalized: `sha256:1845a7742dc8e481fc3b9210f5678bbd0b249e8c375af981430a3d03814b0b54`
+- Candidate: `sha256:1845a7742dc8e481fc3b9210f5678bbd0b249e8c375af981430a3d03814b0b54`
 
 ## Line summary
 
-- Changed lines: 183
-- Inserted lines: 9
+- Changed lines: 178
+- Inserted lines: 3
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 1
-- UI blocks preserved: 1
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 1
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 1 preserved UI block(s).
 
 ## Warnings
 

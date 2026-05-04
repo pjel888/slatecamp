@@ -1,19 +1,28 @@
 {
-  "attempted_at": "2026-05-03T14:01:38.113Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:12.117Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
   "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:e6e857b5761fd1b83db2c513e40183a9a65ed1c3ebf47207e4aab1386db1ffda",
-  "original_hash": "sha256:7a2a011f3a4afc7be52c0f0baa9afa7bb6ab5c1a5fd4e48318e231889f959d67",
-  "candidate_hash": "sha256:e6e857b5761fd1b83db2c513e40183a9a65ed1c3ebf47207e4aab1386db1ffda",
+  "original_hash": "sha256:3c1a32b515880f743638e374d0fdd7d37a857e686f23ce6649af720ff6804367",
+  "candidate_hash": "sha256:d098fcbc8860bd9df7f76ffe64dd1581c154baae4987f25c78e8e2f51bad9aec",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:50:37.230668+00:00"
 }

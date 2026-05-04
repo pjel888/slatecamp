@@ -1,17 +1,35 @@
 # Comprehensive Signage Package
+## Learning Goal
+After reading this article, you should be able to:
+
+Apply the comprehensive signage package requirements under BP 344 and accessibility codes: identify the five required sign types (identification, directional, informational, warning, regulatory); apply tactile sign specifications (raised characters, Braille, mounting height, contrast); and determine when audible signs are required in addition to visual signs.
 ### BP 344 (2024 IRR) — LEA Review Series
 
 ---
 
 ## REAL-WORLD HOOK
 
-<LawCallout code="bp344">
+<LawCallout code="bp344" section="Section 12 - Signage">
+
 
 You close your eyes in the lobby of a government hospital. You are blind and have just arrived for the first time. The receptionist has stepped away. How do you find the accessible toilet? How do you know which elevator is accessible? How do you read the evacuation plan? How do you know which dressing room has accessible features? If the building's signage package was designed correctly under BP 344, you could answer every one of these questions without opening your eyes or asking for help. If it wasn't, you're stranded. This module is the difference between those two outcomes.
+
 
 </LawCallout>
 
 ---
+
+<LawCallout code="bp344">
+
+ISA (International Symbol of Accessibility): UN Blue (Pantone 279) on white background, minimum 150 mm × 150 mm. Braille Grade 2 at minimum 1 mm embossed height. Center of sign at 1,200-1,500 mm AFF. Required at all accessible entrances, parking, toilets, and elevators.
+
+</LawCallout>
+
+<ExamTip>
+
+LEA Pattern: The 'ISA BEST PLAN' mnemonic covers all BP 344 signage elements. Expect questions testing specific dimensions: ISA size on pole = 600×600 mm, center max 1,500 mm AFF, Braille Grade 2, and evacuation plans must be embossed with different textures.
+
+</ExamTip>
 
 ## CORE MNEMONIC FRAMEWORK
 
@@ -406,3 +424,10 @@ You are reviewing a new 5-story office building's signage package. The submittal
 ---
 
 *Module 04 | BP 344 2024 IRR | LEA Review Series | Sec. 5, Sec. 12.10, Sec. 13.4, Appendix A Sec. 7 (Table A.7)*
+
+---
+
+## Cross‑References
+
+**Signs Design And Construction**, **Bp 344 Tactile And Visual Alarms**, **Accessible Seating In Assembly Areas**, **Public Service Counters And Atms**
+

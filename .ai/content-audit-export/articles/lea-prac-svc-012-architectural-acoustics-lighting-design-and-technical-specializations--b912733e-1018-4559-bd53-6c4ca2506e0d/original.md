@@ -1,4 +1,12 @@
 ## Architectural Acoustics, Lighting Design, and Technical Specializations
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Define the scope of acoustic design services: noise control, reverberation, sound isolation, and vibration control.
+- Define the scope of lighting design services: natural and artificial light planning, luminance calculations, and energy efficiency.
+- Identify the building types and applications requiring specialized acoustic or lighting design.
+- Apply technical specialization concepts to LEA scenarios involving specialized service classification and compensation.
 
 Technical architectural specializations extend beyond traditional building design to address sophisticated performance requirements. Acoustic design and lighting design represent two fundamental technical specializations that shape occupant experience and building functionality. SPP Doc 203 establishes standards for these services within the broader framework of specialized allied architectural services. These specializations demand expertise beyond general architectural training and command appropriate professional compensation.
 
@@ -29,3 +37,33 @@ Architects providing acoustic and lighting services must demonstrate specialized
 ### Scope of Deliverables
 
 Acoustic design deliverables include noise analysis reports, absorption specifications, material recommendations, and implementation drawings. Lighting design deliverables encompass daylight simulations, luminaire schedules, photometric calculations, and control system specifications. Both specializations require detailed documentation supporting contractor implementation and post-installation verification. Specifications must address quality standards, performance targets, and acceptance criteria.
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+
+<ProcessFlow>
+<ol>
+  <li><strong>Initiation</strong> — Client consultation and scope definition</li>
+  <li><strong>Proposal</strong> — Fee structure and contract execution</li>
+  <li><strong>Service Delivery</strong> — Performance per SPP document</li>
+  <li><strong>Completion</strong> — Turnover and documentation</li>
+</ol>
+</ProcessFlow>
+
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)

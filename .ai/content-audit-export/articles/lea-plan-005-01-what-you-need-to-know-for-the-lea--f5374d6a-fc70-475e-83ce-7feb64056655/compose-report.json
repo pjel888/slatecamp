@@ -1,18 +1,32 @@
 {
   "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
   "slug": "lea-plan-005-01-what-you-need-to-know-for-the-lea",
-  "generated_at": "2026-05-03T13:44:11.714Z",
-  "original_hash": "sha256:078371e8070c8721507582b38ab2f88c542aa817b16965cab6a66a8561b74252",
-  "normalized_hash": "sha256:d89f808ef0d07f6b3ba3e9f22ec08b9b3e2ae46faa065358df363dec5e143a94",
-  "candidate_hash": "sha256:b4072a01397c6c154df88a78aef135c6425d533feb2acdd35aed2acad44bfd2b",
+  "generated_at": "2026-05-04T00:05:39.112Z",
+  "original_hash": "sha256:b4072a01397c6c154df88a78aef135c6425d533feb2acdd35aed2acad44bfd2b",
+  "normalized_hash": "sha256:f91669de6769b9e582b571f99a60284aa44420c98bde8857f17c7455fa77a9c0",
+  "candidate_hash": "sha256:f91669de6769b9e582b571f99a60284aa44420c98bde8857f17c7455fa77a9c0",
   "ui_blocks_count": 6,
-  "placeholders_found": 6,
-  "placeholders_resolved": 6,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 6,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition."
+  ]
 }

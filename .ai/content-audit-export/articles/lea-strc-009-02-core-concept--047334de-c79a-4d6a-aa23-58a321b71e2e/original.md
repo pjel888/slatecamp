@@ -1,6 +1,15 @@
 ## What You Need to Know for the LEA
-Philippine timber is graded by stress group and product form—each carries distinct allowable stresses and application rules. Lumber grades and wood product densities determine both design capacity and suitability for structural use.
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Define Philippine timber stress groups: Group I (highest strength) through Group IV
+- Identify which stress group a given species belongs to
+- Explain how stress group affects allowable bending and compression values
+- State the basis for stress group classification (testing of small clear specimens)
+
+---
 ## Core Concept
 Philippine timber stress groups rank species by bending and compression capacity, with Group I (highest strength) and Group IV (lowest strength) as the extremes. Within each group, species show similar allowable stresses under the Allowable Stress Design method. Timber products fall into three main categories: solid sawn lumber, fiberboard (density >160 but &lt;497 kg/m³), and hardboard (density ≥497 kg/m³). Grading is not cosmetic—it is a mechanical classification tied to defect tolerance, knot size, slope-of-grain limits, and moisture content. A timber element graded as "Select Structural" (best grade) has stricter knot and defect limits than "No. 2 Common" (standard grade), and allowable stresses differ accordingly. Lumber dimensions follow nominal (timber size as marketed) and actual (true milled size) conventions: a nominal 2×4 is actually 1.5" × 3.5" (38 × 89 mm). The distinction is critical in design calculations. Fiberboard and hardboard are engineered products with uniform density and are not interchangeable with solid lumber—they are specified by density range and intended use (sheathing, subflooring, acoustic backing). Unit weight for Philippine hardwood timber ranges from 5–12 kN/m³; fiberboard (1.6–5.0 kN/m³) and hardboard have specified densities for non-structural uses.
 
@@ -22,9 +31,7 @@ Philippine timber stress groups rank species by bending and compression capacity
 - _Adjustment_: Design tables account for moisture content (green vs. dry). Green timber (≥19% moisture) has lower allowable stresses than kiln-dried (≤15%).
 
 ### Wood Product Density Classifications
-<WikiExamTable headers={["Product", "Density Range", "Typical Use"]} rows={[ ["Fiberboard", ">160 to &lt;497 kg/m³", "Thermal/acoustic insulation, underlayment"],
-    ["Hardboard", "≥497 kg/m³", "Underlayment, sheathing, lining"],
-    ["Solid Lumber", "Varies by species", "Beams, joists, columns, primary structure"]
+  ["Solid Lumber", "Varies by species", "Beams, joists, columns, primary structure"]
   ]}
 />
 
@@ -56,6 +63,12 @@ Philippine lumber grading is governed by the National Timber Code and referenced
 
 <Tip>Group I = highest capacity (Yakal, Molave); Group IV = lowest (White Lauan, Red Balau). Always verify the specific group from the design manual or code supplement.</Tip>
 
+## Related Articles
+
+See also: **Timber Durability** (lea-strc-009-01) for complementary wood properties, **Timber ASD** (lea-strc-009-03) for how stress group values enter design, and **Stress-Strain** (lea-strc-003-01) for the material behavior foundation.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Using nominal dimensions in design calculations. Nominal 2×4 is 1.5×3.5; actual dimensions are required.", "Confusing Narra (Group II) with Yakal or Molave (Group I) and applying wrong allowable stresses.", "Treating fiberboard and hardboard as interchangeable with solid lumber. Density alone does not qualify them for primary structural duty.", "Ignoring moisture adjustment factors. Green lumber (≥19% MC) may have 10–15% lower allowable stresses than kiln-dried.", "Applying allowable stresses from a different species group without re-verifying the table." ]} />

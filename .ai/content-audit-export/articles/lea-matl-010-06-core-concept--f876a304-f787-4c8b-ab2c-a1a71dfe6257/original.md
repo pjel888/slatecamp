@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Tile quantity and wastage computation determines the number of ceramic or stone tiles required for flooring, wall cladding, and finishes. Tiles are priced per piece or per square meter, and calculation accounts for tile size, grout joint thickness, surface area, and waste factors (5–15% typical). In the Philippines, standard tile sizes range from 300 × 300 mm to 600 × 600 mm for flooring, with smaller sizes for walls and specialized applications.
-
+Calculate tile quantities by floor or wall area including trim, thresholds, and a 5-15% waste factor for cutting and breakage, and determine grout and adhesive requirements based on tile size and joint width.
 ## Core Concept
 
 Tile quantity is determined by dividing the total surface area by the area covered by one tile. The formula is: _Number of tiles = Total surface area (m²) ÷ Area per tile (m²)_. Tile area includes the grout joint thickness (typically 10 mm), so a nominal 300 mm × 300 mm tile with 10 mm joint covers 310 × 310 mm = 0.0961 m² when accounting for spacing.
@@ -112,3 +112,10 @@ On the LEA, tile estimation questions focus on:
 <WikiMistakeCard mistake="Not converting final tile count to box quantities" correction="Tiles are sold by the box (20–25 pieces for small, 6–8 for large format). Always convert final count to boxes for ordering." />
 
 <WikiMistakeList mistakes={["Confusing tiles per square meter with area per tile (inverse relationship)", "Applying waste factor to area instead of to tile count", "Using interior tile counts for exterior (outdoor tiles may be thicker and fewer per box)", "Forgetting that grout lines consume space—standard 10 mm joint is already factored into industry tile counts"]} />
+
+## Related Articles
+
+See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-02-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

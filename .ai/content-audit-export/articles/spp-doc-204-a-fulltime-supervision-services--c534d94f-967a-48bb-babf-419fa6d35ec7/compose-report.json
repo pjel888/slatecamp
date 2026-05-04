@@ -1,18 +1,38 @@
 {
   "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
   "slug": "spp-doc-204-a-fulltime-supervision-services",
-  "generated_at": "2026-05-03T13:44:10.551Z",
-  "original_hash": "sha256:206b7f7cab0bb02dd09022ede0f5439c8b78bcaad7f5e8658b0498b2c80adb4a",
-  "normalized_hash": "sha256:0878125d8d829334247bb08b8378fa83166afa9e0a8148716d073225e582485e",
-  "candidate_hash": "sha256:a50226a06d96266371a73846231683b2770e0a209f029dc1e207e9d86decba13",
+  "generated_at": "2026-05-04T00:05:37.688Z",
+  "original_hash": "sha256:a50226a06d96266371a73846231683b2770e0a209f029dc1e207e9d86decba13",
+  "normalized_hash": "sha256:7236acfb8ddf0b7bbba619fb3c0b3dc7c2c4c7a77c525f635465f734c54fc635",
+  "candidate_hash": "sha256:7236acfb8ddf0b7bbba619fb3c0b3dc7c2c4c7a77c525f635465f734c54fc635",
   "ui_blocks_count": 9,
-  "placeholders_found": 9,
-  "placeholders_resolved": 9,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 9,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006",
+    "ui_0007",
+    "ui_0008",
+    "ui_0009"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition.",
+    "UI block ui_0007 was not used during composition.",
+    "UI block ui_0008 was not used during composition.",
+    "UI block ui_0009 was not used during composition."
+  ]
 }

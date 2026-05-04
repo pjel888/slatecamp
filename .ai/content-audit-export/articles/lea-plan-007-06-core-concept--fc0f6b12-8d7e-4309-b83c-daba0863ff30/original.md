@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Identify key figures in Philippine planning — Daniel Burnham (Plan of Manila 1905), Juan Arellano, Felino Palafox Jr., and others — by their contributions, disciplines, and eras, and distinguish international from Filipino practitioners.
+
 Philippine planning and architecture has been shaped by both international figures working in the Philippines and Filipino professionals who established local practice. Understanding these key figures—their contributions, disciplines, and the eras in which they worked—is essential for the LEA planning history context.
+
 
 ## Core Concept
 
@@ -29,6 +33,13 @@ The transition from Burnham (colonial American planning, 1905) to Filipino plann
 3. **Contemporary practice:** "Whose plans emphasize walkability and mixed-use development in Philippine context?" → Felino Palafox Jr.
 
 <Tip>**Memory aid:** Burnham = 1905 Manila (American). Santos = landscape artist (National Artist). Toledo = first Filipino planner. Palafox = contemporary walkability. Yupangco = waterways.</Tip>
+
+
+**Exam Tip:** Must know: Daniel Burnham (1905, Plan of Manila + Baguio), Juan Arellano (post-Burnham architect, Manila Post Office, National Museum), Felino Palafox Jr. (contemporary, mixed-use master plans). Other figures tested less frequently.
+
+## Cross-References
+
+See **LEA-PLAN-001-03** (Philippine Planning History) for historical context, **LEA-PLAN-001-01** (Planning Fundamentals) for international theorist comparison, and **LEA-PLAN-007-07** (Professional Organizations) for professional practice context.
 
 ## Common Mistakes
 

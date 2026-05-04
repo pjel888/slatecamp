@@ -1,18 +1,26 @@
 {
   "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
   "slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
-  "generated_at": "2026-05-03T13:44:11.134Z",
-  "original_hash": "sha256:97a334e87517179aa403507b446a178da1a2b67b07b30c2290c38d4ddef2f7fb",
-  "normalized_hash": "sha256:73334b536ccabd8b0066c1b6d83507bcc8e7bc2b34b6e0ac0a9b381392715d95",
-  "candidate_hash": "sha256:31a5fbad9a5ac1ed08cd0578c2c55132e3a1c439433f4344950fd2f501f30562",
+  "generated_at": "2026-05-04T00:05:38.381Z",
+  "original_hash": "sha256:31a5fbad9a5ac1ed08cd0578c2c55132e3a1c439433f4344950fd2f501f30562",
+  "normalized_hash": "sha256:b060b26718159db417a44aec0bf1cf280975c0332277e0453bb890837c55f883",
+  "candidate_hash": "sha256:b060b26718159db417a44aec0bf1cf280975c0332277e0453bb890837c55f883",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

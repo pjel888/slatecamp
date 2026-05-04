@@ -4,9 +4,15 @@
 
 By the end of this module, you will be able to apply the C-A-A (Climate, Available Materials, Adapted Forms) framework to analyze how Spanish, English, and other European colonists adapted metropolitan architectural styles to local conditions across the Americas and Australia — and identify the resulting hybrid regional styles on the LEA.
 
+<Callout>
+
+**C-A-A Framework Overview:** Think: "Colonies Always Adapt" — no European style arrived in the colonies unchanged. Climate Demands forced modifications (ventilation in hot climates, insulation in cold, shading in intense sun). Available Materials meant colonists substituted local resources — adobe and volcanic stone in the Americas, local hardwoods in Australia, coral stone in the Philippines. Adapted Forms produced hybrid styles — Churrigueresque Baroque, Federal Neoclassical, Federation style — each distinct from its European source. The LEA tests your ability to identify these adaptations and explain the environmental logic behind them.
+
+</Callout>
+
 ## The Real-World Scenario (The Hook)
 
-You are leading the adaptive reuse of a Spanish colonial-era warehouse in Intramuros, Manila, converting it into a boutique heritage hotel. The client wants to preserve the thick stone walls and internal courtyard, but also integrate climate-responsive features for tropical heat, typhoon rains, and seismic activity. Understanding how European colonists adapted metropolitan styles to local climates across the Americas and Australia gives you a direct design vocabulary for this Philippine project — and a strong foundation for LEA questions on global colonial architecture.
+[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="new"]
 
 ## Core Concepts and Memory Aid
 
@@ -31,36 +37,31 @@ Think: *"Colonies Always Adapt"* — no European style arrived in the colonies u
 
 <Tip>
 
-**Memory Anchor: "C-A-A = Colonies Always Adapt."** Every colonial region forced modifications to European prototypes. Climate demands (ventilation, insulation, shading), Available materials (local substitutes for European ones), and Adapted forms (hybrid styles like Churrigueresque, Federal, Federation). When you see a colonial architecture question, mentally run through C-A-A framework before answering.
+**Quick Reference: The Hard Data Table** organizes four major colonial regions by the C-A-A framework. Use it as your mental map on LEA day — identify a building's region from its climate adaptation and material substitution, then match it to the adapted form. The four regions are: Spanish Americas (Churrigueresque Baroque), English North America Northern (Georgian/Federal), English North America Southern (Colonial/Plantation), and British Australia (Georgian → Federation).
 
 </Tip>
 
-<Example>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
-**Philippine Application:** Your adaptive reuse project in Intramuros applies C-A-A directly. Climate = tropical heat and typhoon rain, demanding deep eaves and cross-ventilation. Available materials = coral stone and hardwood instead of European brick. Adapted form = the bahay na bato's stone ground floor (fireproof, secure) with a wooden upper floor (light, ventilated). This is not a copy of Spanish Baroque — it is a specifically Philippine hybrid.
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 
-</Example>
+<WikiMistakeCard mistake="Confusing Southern plantation houses with Northern Georgian houses" correction="Southern plantation houses (elevated floors on brick piers, wrap-around verandas, tall ceilings) responded to hot, humid subtropical conditions, while Northern Georgian houses (thick masonry walls, small upper windows, central chimneys) prioritized cold-winter heat retention. Both derive from Georgian and Neoclassical origins but adapted oppositely to climate." context="The LEA may present images from Monticello (Virginia, Southern) and Independence Hall (Philadelphia, Northern). The key distinction is climate response: raised floors and verandas = Southern; compact massing and central chimneys = Northern." />
 
-<ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 
-**LEA Exam Pattern — Know Your Spanish Colonies:** Do not confuse Spanish Colonial in the Americas with Spanish Colonial in the Philippines. Both came from Spain, but the material palettes are completely different — adobe and volcanic stone in the Americas versus coral stone and hardwood in the Philippines. If an LEA question shows a thick coral-stone wall, you are looking at the Philippines, not Mexico or Peru. Always run C-A-A before choosing.
-
-</ExamTip>
+<WikiMistakeCard mistake="Assuming Churrigueresque Baroque was imported unchanged from Spain" correction="Churrigueresque Baroque (16th–18th century Spanish Americas) is not a direct copy of Spanish Baroque. It adapted to local conditions using adobe, volcanic tezontle stone, stucco over rubble core, and local hardwoods — materials unavailable in Spain. Its highly ornamental retablo-style facades and fortified churches with open-air atrio are distinctly American hybrids." context="The LEA may compare a Spanish Baroque church in Seville with a Churrigueresque church in Mexico City. The adaptation to local materials (volcanic stone, adobe) and climate (thick walls and courtyards for thermal mass in arid heat) distinguishes the colonial form." />
 
 ## LEA Exam Traps and Common Mistakes
 
-<Warn>
+[SLATECAMP_UI_BLOCK:ui_0041 component="Warn" status="preserved"]
 
-⚠️ EXAM TRAP: The LEA may ask about "talud-tablero" in a colonial architecture context. This is a pre-Columbian Mesoamerican profile (slope-and-panel from Teotihuacan, 1st–7th century CE), NOT a colonial Spanish feature. If it appears as an answer option for a colonial question, it is a distractor. The correct colonial profile question would be about "battered walls" or "buttresses" in Earthquake Baroque.
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="new"]
 
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="new"]
 
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="new"]
 
-- **Confusing Spanish Colonial in the Americas with Spanish Colonial in the Philippines:** While both derive from Spanish Baroque, the material palette differs significantly. The Americas used adobe and volcanic stone; the Philippines used coral stone (*piedra de coral*), brick, and hardwood in the *bahay na bato*. The LEA may present Philippine examples alongside American ones — know the material distinction.
-- **Assuming Federal style predates American independence:** The Federal style (also called Adam style in America) is a post-1776 Neoclassical movement. Georgian style is the pre-independence colonial standard. If an LEA question dates a "Federal" building before 1776, that answer is incorrect.
-- **Treating Australian Federation as purely Victorian:** Federation style (c. 1901–1915) is a distinctly Australian hybrid that synthesized Victorian, Arts and Crafts, and Art Nouveau elements with local climate adaptations (bull-nosed verandas, terracotta ornamentation). It emerged after Australian federation in 1901 and should not be conflated with British Victorian architecture, which preceded it.
-
-**Connecting History to the Exam:** On LEA day, when you see a colonial building question, pause and run C-A-A: Climate, Available Materials, Adapted Forms. That framework turns a memorization problem into a reasoning exercise — and the exam rewards reasoning every time.
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="new"]
 
 ## Active Recall Questions
 
@@ -91,9 +92,16 @@ D. Minimalist International Style concrete frames with ribbon windows
 
 > **Correct Answer: C.** Federation style is a uniquely Australian synthesis combining Arts and Crafts ideals with local climate responses. Its hallmarks include red brick walls, Marseilles-pattern terracotta roof tiles, deep verandas with bull-nosed (curved) corrugated iron awnings, and decorative cast-iron or timber lacework — all designed to manage Australia's intense sun and seasonal rainfall.
 
+<Example>
+
+**Australian Federation Style (c. 1901–1915)** is a distinctly Australian hybrid that synthesized Victorian, Arts and Crafts, and Art Nouveau elements with local climate adaptations. Its hallmarks include red brick walls, Marseilles-pattern terracotta roof tiles, deep verandas with bull-nosed (curved) corrugated iron awnings, and decorative cast-iron or timber lacework — all designed to manage Australia's intense sun and seasonal rainfall. It emerged after Australian federation in 1901 and should not be conflated with British Victorian architecture, which preceded it.
+
+</Example>
+
 ---
 
 ## Cross‑References
 
 **American Colonial Era**, **Spanish Colonial Bahay Na Bato**, **Spanish Colonial Laws Of The Indies**, **Modern Filipino Identity**
 
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Floor finishes define durability, safety, and maintenance requirements across diverse spaces. The LEA expects you to specify finishes by wear classification, slip resistance standards, and material properties that match function and climate.
-
+Classify floor finishes (ceramic tile, porcelain, hardwood, engineered wood, vinyl, linoleum, carpet, terrazzo, polished concrete, rubber) by durability, maintenance requirements, moisture resistance, and appropriate application for different room types.
 ## Core Concept
 
 Floor finishes serve dual functions as protective layers and performance indicators. Ceramic and porcelain tiles, the dominant market choice in the Philippines, are classified by three independent systems:
@@ -18,7 +18,7 @@ Slip resistance, measured by coefficient of friction (COF), protects against fal
 
 Beyond tiles, vinyl, hardwood, marble, terrazzo, and epoxy finishes each carry specific performance envelopes. Vinyl offers moisture resistance and cost efficiency for kitchens and bathrooms. Hardwood demands humidity control and regular refinishing. Marble and granite provide aesthetic appeal but require sealing and careful maintenance. Terrazzo, a composite of stone chips and binder, offers monolithic appearance and durability. Epoxy systems bond to concrete substrates for industrial and high-moisture spaces.
 
-Standard tile sizes in the Philippine market reflect import availability and installation efficiency: 20×20cm (approximately 8×8 in or 7.87×7.87 in), 30×30cm, 40×40cm, 60×60cm (standard 2×2 ft equivleant), and large-format 80×80cm or 60×120cm with rectified edges. Mariwasa and Niro Granite dominate local production, offering both traditional sizes and premium large-format options.
+Standard tile sizes in the Philippine market reflect import availability and installation efficiency: 20×20cm (approximately 8×8 in or 7.87×7.87 in), 30×30cm, 40×40cm, 60×60cm (standard 2×2 ft equivalent), and large-format 80×80cm or 60×120cm with rectified edges. Mariwasa and Niro Granite dominate local production, offering both traditional sizes and premium large-format options.
 
 ## Key Provisions
 
@@ -29,7 +29,7 @@ Standard tile sizes in the Philippine market reflect import availability and ins
 | PEI Wear Rating | III-IV for residential; V for commercial | PEI Test Method | Ensures finish durability matches space function |
 | Coefficient of Friction (Level) | ≥0.42 | ANSI A137.1 | Minimum for accessible paths |
 | Coefficient of Friction (Slope) | No BP 344 requirement; ANSI A137.1 ≥0.42 | Ramps and inclined surfaces |
-| Grout Joint Width | 3-6mm (unselead), 2-3mm (selead) | ANSI A108.02 | Affects ease of maintenance and water infiltration |
+| Grout Joint Width | 3-6mm (unsealed), 2-3mm (sealed) | ANSI A108.02 | Affects ease of maintenance and water infiltration |
 | Standard Tile Sizes (PH Market) | 20×20, 30×30, 40×40, 60×60, 80×80cm | Market Practice | Cost-effective procurement and rapid installation |
 | Subfloor Preparation | Flat to 1/8" in 10 ft; moisture &lt;3% CM | ASTM F710 | Prevents tile cracking and lippage |
 | Setting Bed Thickness | 6-10mm for thin-set; 25-50mm for mortar | ANSI A108.02 | Bond strength and load distribution |
@@ -63,6 +63,7 @@ Slip resistance matters in common areas and ramps. Glazed polished tiles (common
 
 <WikiMistakeCard mistake="Selecting PEI I or II for kitchens because the tile 'looks nice'" correction="Kitchens demand PEI III minimum. PEI I and II wear visibly within 2-3 years under foot traffic, leading to costly replacement and drywall damage." />
 
-<WikiMistakeCard mistake="Ignoring subfloor flatness when specifying large-format tiles (>60cm)" correction="Large tiles magnify subfloor irregularities. Require flatness to 1/8" in 10 ft per ASTM F710 and setting bed thickness 6-10mm for thin-set to prevent voids and cracking." />
+core-concept**, **lea-matl-007-05-core-concept**.
 
-<WikiMistakeList mistakes={["Assuming all 'porcelain' tiles meet &lt;0.5% absorption without test data", "Grouting wide joints (>6mm) on floors expecting water exposure", "Failing to specify setting material compatibility (epoxy vs. latex-modified mortar with certain stone types)", "Not accounting for thermal expansion in large-format tile installations in direct sun", "Mixing high-PEI tile with insufficient slope in wet rooms, trapping standing water"]} />
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

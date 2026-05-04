@@ -5,7 +5,6 @@ Sequence the five design phases (Pre-Design → Schematic → Design Development
 
 The architectural design process is a structured methodology that moves from conceptual ideas through detailed specifications to completed construction. Understanding the phases and deliverables at each stage is essential for managing projects and producing compliant designs.
 
-
 ## Core Concept
 
 The architectural design process consists of five primary phases, each with distinct objectives, deliverables, and stakeholder involvement. These phases ensure that projects evolve systematically from client requirements through functional design to buildable specifications.
@@ -24,6 +23,7 @@ The architectural design process consists of five primary phases, each with dist
 
 **Construction Administration Phase** \
 - Occurs during construction. The architect provides site observations to verify that construction complies with documents, reviews contractor submittals (shop drawings, material samples), certifies progress for payment, and addresses field changes. The architect does not supervise construction but ensures quality and code compliance. This phase concludes with final inspection and project close-out.
+<ArticleMedia id="media-lea-dsgn-007-04-core-concept" a type="image" caption="Design Process Workflow — Five Phases of Architectural Services" description="Process flow diagram showing the five sequential design phases: Pre-Design (feasibility, site analysis) → Schematic Design (15%) → Design Development (20%) → Construction Documents (50%) → Construction Administration (10%). Shows key deliverables and fee progression at each phase." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -35,21 +35,9 @@ The architectural design process consists of five primary phases, each with dist
 | Construction Documents | Complete technical specifications | Full-size drawings, specs, schedules, engineer plans | 8–12 weeks |
 | Construction Admin | Verify compliance, manage changes | Site reports, submittals, certifications, close-out | Duration of construction |
 
-<RevealBlock prompt="Can you recall the correct sequence of the 5 design phases?">
+[SLATECAMP_UI_BLOCK:ui_0001 component="RevealBlock" status="preserved"]
 
-**Design Phase Sequencing:**
-Pre-Design → Schematic Design → Design Development → Construction Documents → Construction Administration
-
-**Deliverable Progression:**
-Each phase builds on previous work. Schematic establishes direction; Design Development adds technical depth; Construction Documents provide buildable detail. Phases are sequential but may overlap.
-
-</RevealBlock>
-
-<RevealBlock prompt="What is the architect's role during Construction Administration?" label="Drag to reveal the answer">
-
-The architect provides **site observations** to verify that construction complies with documents, **reviews submittals** (shop drawings, material samples), **certifies progress** for payment, and **addresses field changes**. The architect does **not** supervise construction — the role is observation and verification only.
-
-</RevealBlock>
+[SLATECAMP_UI_BLOCK:ui_0002 component="RevealBlock" status="preserved"]
 
 ## Philippine Practice Context
 
@@ -63,10 +51,10 @@ The Philippine architectural profession follows the design process framework out
 
 **Pattern 3 — Process Timing:** Given project constraints (e.g., 4-month total timeline), allocate approximate time to each phase and explain trade-offs (accelerating design may reduce design quality or increase construction cost).
 
-<Tip>Five phases: Pre-Design (problem definition), Schematic (concepts), Design Dev (systems), Constr Docs (buildable specs), Constr Admin (verification). Each builds on the previous. Deliverables increase in detail and precision with each phase.</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
 
 **Exam Tip — ERR-DSGN-001:** The architect's role during Construction Administration is observation and verification, NOT supervision. The contractor supervises construction; the architect verifies compliance with documents.
+<ArticleMedia id="media-lea-dsgn-007-04-core-concept" a type="image" caption="Fee Progression Chart — Design Phase Fee Distribution" description="Bar and line chart showing typical fee distribution across design phases: Pre-Design (5-10%), Schematic Design (15%), Design Development (20%), Construction Documents (40-50%), and Construction Administration (10-15%). Total project timeline overlay shows overlap between phases." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -74,4 +62,4 @@ See **LEA-PLAN-004-01** (Physical Site Considerations) for pre-design site analy
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing Schematic Design (exploratory concepts) with Design Development (engineered solutions)","Assuming Construction Documents are complete after Schematic phase (they require Design Dev and detailed engineering)","Treating Construction Administration as the architect directing/supervising construction (it is observation and verification only)","Omitting Pre-Design phase or combining it with Schematic (Pre-Design establishes the problem; Schematic solves it)","Failing to coordinate with consultants during Design Development (MEP, structural, fire protection must be integrated)","Underestimating time for Construction Documents phase; it typically requires 8–12 weeks for coordination and completeness","Assuming design is 'complete' at Schematic phase when cost estimates and feasibility verification are still pending","Neglecting the program statement as a deliverable in Pre-Design (it defines project scope and constraints)","Confusing design phases with construction phases (Construction Administration is last design phase; construction continues independently)","Failing to recognize that Construction Documents must be 'complete and sufficient' for bidding (incompleteness extends bidding period or creates field changes)"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]

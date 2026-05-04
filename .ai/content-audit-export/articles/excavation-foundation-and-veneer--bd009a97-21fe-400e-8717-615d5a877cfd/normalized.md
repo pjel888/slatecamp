@@ -3,7 +3,6 @@
 After reading this article, you should be able to:
 
 Apply PD 1096 and NSCP requirements for excavation shoring, foundation design, and masonry veneer anchorage; calculate minimum footing size by soil bearing capacity and building load; identify when underpinning of adjacent structures is required; and determine anchor spacing and type for adhered and anchored veneer systems.
-
 ---
 
 ## Module Header
@@ -195,10 +194,6 @@ D. 5 days, written notice posted on the project fence
 > **Answer: C — 10 days, written notice to the adjoining property owner**
 >
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="nbcp", title="not the Building Official, not a general posting. This 10-day window allows the"
-- Text: Per PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner — not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the w
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -246,14 +241,23 @@ D. 1,000 kg (2× panel weight per the anchored veneer lateral force requirement)
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Minimum footing depth = 600 mm below grade (in non-expansive soils). Shoring required when excavation exceeds 2.0 m from property line. Underpinning required when excavation goes below adjacent foundation bottom. Veneer anchors at maximum 400 mm o.c. vertically, 600 mm o.c. horizontally.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Minimum footing depth = 600 mm below grade (in non-expansive soils). Shoring required when excavation exceeds 2.0 m from property line. Underpinning required when excavation goes below adjacent foundation bottom. Veneer anchors at maximum 400 mm o.c. vertically, 600 mm o.c. horizontally.
+
+
+
+<ArticleMedia type="image" caption="Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning" description="Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base." />
 ## Cross‑References
 
 **Geological Hazards**, **Location On Property And Exterior Walls**, **Topography And Slope Analysis**, **Sanitation And Water Supply**

@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Building utilities infrastructure connects your project to municipal services and emergency systems. In the Philippines, utility connections involve coordination with Meralco (electricity), Manila Water or Maynilad (potable water), MWSS (sewerage), PLDT and Globe (telecommunications), and Manila Gas (natural gas). Each utility has specific technical requirements, lead times, and right-of-way provisions that must be incorporated into your design and construction planning.
+## Learning Goal
 
+Coordinate electrical utility connection requirements with the local electric utility (Meralco or local electric cooperative) — determine service entrance location, transformer clearances, metering configuration, and underground vs overhead service per PEC and utility company standards.
 ## Electrical Utility Connection
 
 The electrical service entrance is where Meralco's distribution system connects to your building. Meralco service requirements vary by load demand and building classification. For residential units under 10 kW, Meralco typically requires a single-phase service entrance; commercial and industrial buildings above 50 kW demand three-phase service (Meralco Technical Standards, 2023).
@@ -11,6 +12,19 @@ The service entrance consists of three main components: the transformer pad or v
 The service lateral—the underground or overhead conductor from the Meralco distribution line to the building—must be sized per National Electrical Code (NEC) requirements adapted for Philippine installations. A standard residential service lateral is typically 16–25 mm² copper conductor; commercial services range from 50–120 mm² depending on demand (Association of Consulting Engineers, 2020). The metering cabinet must be accessible to Meralco personnel, placed at property line or building face, and located between 1.2–1.8 m above finished ground level (Meralco Installation Standards, 2023).
 
 ## Water Supply Connection
+
+
+<KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<LawCallout code="pec" section="PEC 2017 - Article 2.30 - Service Requirements">
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</LawCallout>
 
 Manila Water Company (serving eastern Metro Manila) and Maynilad Water Services (western zones) own and operate water mains. Individual building water service laterals branch from these mains to the property boundary or building entrance. The service lateral diameter depends on building water demand: residential buildings up to 50 units typically use 19–25 mm copper or PVC pipe; commercial buildings may require 50–75 mm laterals (Manila Water Technical Requirements, 2023; Maynilad Design Manual, 2022).
 
@@ -143,4 +157,10 @@ Utility companies typically require site access for inspections at key phases; s
 - Service entrance room design consolidates utility connections with separate zones for electrical, water, gas, and telecom.
 - Lead times for utility connections range 4–16 weeks; early application and coordination are critical.
 - Pre-design meetings and weekly coordination during construction minimize delays and conflicts.
+
+## Related Articles
+
+See also within MEPF Coordination and Integration: **lea-util-008-01-core-concept**, **lea-util-008-02-core-concept**, **lea-util-008-04-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 

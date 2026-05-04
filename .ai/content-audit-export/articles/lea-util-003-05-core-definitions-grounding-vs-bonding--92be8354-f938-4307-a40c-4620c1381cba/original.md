@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Grounding and electrical safety form the protective backbone of building electrical systems. This unit covers grounding system design, protective devices, bonding requirements, and critical safety practices required by the Philippine Electrical Code (PEC).
+## Learning Goal
 
+Distinguish grounding from bonding — grounding connects the electrical system to the earth for safety, bonding creates an electrically conductive path between metallic parts — and apply PEC Article 2.50 and 2.70 requirements for both systems in building design.
 ## Core Definitions: Grounding vs. Bonding
 
 _Grounding_ and _bonding_ are distinct functions with specific definitions in the PEC:
@@ -11,6 +12,19 @@ _Grounding_ and _bonding_ are distinct functions with specific definitions in th
 **Bonding** means the connection of conductive parts that are not normally part of the electrical circuit—such as metal enclosures, structural steel, water pipes, and gas piping—to ensure they are at the same electrical potential and to carry fault current safely. Bonding prevents dangerous voltage differences between conductive surfaces (PEC Article 2: Definitions and Article 2.50).
 
 ## Grounding Electrode System
+
+
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 
 The grounding electrode system provides the physical connection from the building electrical system to the earth. The PEC requires a grounding electrode system in all buildings and structures supplied by an electrical service (PEC Article 2.50.50).
 
@@ -147,7 +161,7 @@ All structural steel members that might carry fault current must be bonded:
 Gas piping may not be used as an equipment grounding conductor, but must be bonded to ensure it does not develop dangerous voltage:
 
 - _Connection:_ Bonded to the service ground at the meter point (PEC Article 2.50.104(b))
-- _Bonding size:_ Minimum 4 mm² (12 AWG) copper or equivleant
+- _Bonding size:_ Minimum 4 mm² (12 AWG) copper or equivalent
 - _Gas company approval:_ Coordinate with gas utility to ensure bonding does not interfere with their isolation requirements
 
 In the Philippines, Meralco and Manila Water service agreements require bonding verification before service activation.
@@ -234,3 +248,10 @@ These voltage standards affect equipment selection, GFCI/AFCI coordination, and 
 | Minimum working clearance: depth  | 1 m (3 feet)                       | Article 1.10.26(a)(1)               |
 | Minimum working clearance: height | 2.1 m (7 feet)                     | Article 1.10.26(a)(3)               |
 | Equipment grounding: 20 A breaker | 3.31 mm² (12 AWG) copper           | Article 2.50.122, Table 2.50.122(A) |
+
+## Related Articles
+
+See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util-003-03-core-concept**, **lea-util-003-04-core-concept**, **lea-util-003-06-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

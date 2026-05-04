@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Concrete curing is the process by which portland cement hydrates and concrete gains strength over time. Proper curing is non-negotiable for durability and performance. The LEA tests your knowledge of curing methods, minimum curing duration, temperature effects in tropical climates, and consequences of inadequate curing. Expect questions on moisture control, water curing vs. membrane curing, and how tropical humidity and heat affect curing rates.
-
+Identify cement types (Types I–V per ASTM C150 / PNS 43) by their chemical composition, strength gain rate, and appropriate applications, and explain how sulfate resistance, heat of hydration, and strength class determine Type selection.
 ## Core Concept
 
 Hydration is the chemical reaction between portland cement and water that produces the glue holding concrete together. Hydration requires water (moisture), suitable temperature (minimum 10°C or 50°F), and time (minimum 7 days for ordinary portland cement at normal temperatures). Without proper curing, concrete remains weak, porous, and permeable, leading to premature failure, rebar corrosion, and reduced service life.
@@ -50,7 +50,7 @@ Curing compounds (ASTM C309) are liquid or wax-based materials sprayed onto the 
 
 **Type 1: Clear (solvent-based):** Forms a transparent film; allows inspection of concrete; used when appearance is important.
 
-**Type 1A: Clear/Translucent (water-based):** Environmentally preferable to Type 1; performance equivleant; gaining market acceptance.
+**Type 1A: Clear/Translucent (water-based):** Environmentally preferable to Type 1; performance equivalent; gaining market acceptance.
 
 **Type 2: White-pigmented:** Forms a white film that reflects solar radiation, reducing concrete temperature rise during hot-weather curing. Preferred for tropical climates to minimize temperature-induced cracking.
 
@@ -156,3 +156,10 @@ Typical questions present a concrete placement scenario in the Philippines and a
     "Assuming membrane curing (compound) is equivleant to water curing: Curing compounds develop 70—80% of the strength of moist curing. For critical applications or where maximum strength is required, water curing (ponding or spray) is preferred.",
     "Failing to account for wind and solar radiation effects: High wind increases evaporation significantly (ACI 305.1 nomographs show 2—3x evaporation rate increase in windy conditions). Intense sun heating can exceed the comfort level for curing rate predictions. Use shade cloth or schedule placement to minimize these effects."
   ]} />
+
+## Related Articles
+
+See also within Masonry and Concrete: **lea-matl-002-03-core-concept**, **lea-matl-002-04-core-concept**, **lea-matl-002-06-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

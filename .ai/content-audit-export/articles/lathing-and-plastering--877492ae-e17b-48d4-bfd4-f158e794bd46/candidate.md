@@ -12,23 +12,11 @@ You are reviewing construction documents for a five-storey Type IV (steel frame)
 
 ---
 
-<LawCallout code="nbcp">
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
-Rule XII, Sec. 1215: Lath, plaster, and gypsum wall board must conform to both (a) fire-resistive rating requirements under Rule VI and (b) type of construction under Rule IV. The days of merely referencing 'Secretary's standards' are over — the IRR gives specific cross-references.
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 
-</LawCallout>
-
-<Warn>
-
-⚠️ Common Error: 9.5 mm standard gypsum board is NOT fire-rated. For corridor walls requiring fire-resistive rating, you need Type X (15.9 mm or 12.7 mm) gypsum board. Standard gypsum board on a corridor separating tenant space from means of egress will fail inspection.
-
-</Warn>
-
-<ExamTip>
-
-LEA Pattern: Questions test the relationship between type of construction (Type I-V) and required wall board. Type IV steel frame requires 12.7 mm Type X gypsum board for 1-hour rated corridors. Type V wood frame may use 15.9 mm Type X for same rating. Match the type to the thickness.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 
 ## 2. Core Concepts with Mnemonic
 
@@ -103,11 +91,7 @@ Use **FLAT-CF** every time you specify or review a wall board specification.
 | Lime plaster | Lime putty | Interior only | No | 1:2–3 (lime:sand) | 3 | Sets by carbonation; slow |
 | Keene's cement | Burnt gypsum + alum | Interior only | Humid (not wet) | Factory mix | 2 | Hard, dense finish coat |
 
-<Note>
-
-PH Practice Note: Portland cement plaster on CHB at 15–20 mm exterior / 12–15 mm interior is the standard Philippine specification. Gypsum plaster is used in commercial interiors where faster setting and smoother finish are required.
-
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
 
 ---
 
@@ -484,3 +468,5 @@ Before closing this article, confirm you can do the following from memory:
 
 **Glass And Glazing Area Limits**, **Fire Resistive Construction Ratings**, **Plastics In Construction**, **Prefabricated Constructions**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

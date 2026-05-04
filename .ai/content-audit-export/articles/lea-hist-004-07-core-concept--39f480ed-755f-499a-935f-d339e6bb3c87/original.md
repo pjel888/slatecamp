@@ -1,9 +1,10 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your knowledge of **Mughal architecture** in the Indian subcontinent (16th–18th centuries). You must identify the **Taj Mahal** and its spatial characteristics, understand Mughal synthesis of Persian and Indian design, and recognize key Mughal buildings and architects.</Callout>
+## Learning Goal
 
+Identify the Mughal synthesis formula — charbagh garden layout, bulbous onion dome, iwan, chhatri, pietra dura inlay — and recognize key monuments (Taj Mahal, Humayun's Tomb, Red Fort, Fatehpur Sikri) by their combination of Persian, Indian, and Islamic elements.
 ## Core Concept
-**Mughal architecture** represents Islamic design adapted to the Indian subcontinent under the Mughal Empire (1526–1857). The Mughals, descended from Central Asian Turks and Mongols, encountered Hindu and Buddhist architectural traditions spanning millennia. Rather than suppress these, Mughal architects synthesized Persian (particularly Safavid) and Indian formal languages. The result is a distinct hybrid tradition that balances Islamic geometry with Indian color, ornament, and sclea.
+**Mughal architecture** represents Islamic design adapted to the Indian subcontinent under the Mughal Empire (1526–1857). The Mughals, descended from Central Asian Turks and Mongols, encountered Hindu and Buddhist architectural traditions spanning millennia. Rather than suppress these, Mughal architects synthesized Persian (particularly Safavid) and Indian formal languages. The result is a distinct hybrid tradition that balances Islamic geometry with Indian color, ornament, and scale.
 
 The defining Mughal innovation is the **garden-building complex**, where architecture and landscape architecture fuse into a unified artistic statement. The **Taj Mahal** exemplifies this: a white marble mausoleum sits centrally within a formal **charbagh** (four-part garden divided by water channels). This garden-centric approach draws from Persian tradition (the Safavid shah gardens of Isfahan) but adapts to Indian climate and patron desires. The garden is not backdrop but equal partner in the architectural composition.
 
@@ -51,6 +52,8 @@ Mughal architecture developed under specific patron dynasties. **Akbar** (r. 155
 <ExamTip>**Pattern 5: Proportional and Spiritual Meaning**
 "Mughal architects employed modular grid systems and mathematical proportions in buildings like the Taj Mahal. Why would precision in proportions matter in Islamic architecture, and how does this differ from the spatial strategies of Andalusian or Ottoman mosques?" (Answer: Mathematical proportions reflect divine harmony and cosmological order; precision makes the building a microcosm of paradise. Andalusian mosques emphasize poetic intimacy and sensory richness; Ottoman mosques emphasize unified dome space and light; Mughal buildings emphasize mathematical perfection and garden integration.)</ExamTip>
 
+<Callout>The LEA tests your knowledge of **Mughal architecture** in the Indian subcontinent (16th–18th centuries). You must identify the **Taj Mahal** and its spatial characteristics, understand Mughal synthesis of Persian and Indian design, and recognize key Mughal buildings and architects.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Treating the Taj Mahal as Primarily a Tomb" correction="Students often describe the Taj Mahal as \"just a mausoleum.\" It is fundamentally a **garden-building complex** where landscape and architecture are equally important. The charbagh is not decorative background but essential to the spiritual and mathematical composition." context="The building makes no sense without the garden context." />
@@ -58,7 +61,6 @@ Mughal architecture developed under specific patron dynasties. **Akbar** (r. 155
 <WikiMistakeCard mistake="Confusing Mughal Material Inlay with Tile Work" correction="**Parchin kari** (semi-precious stone inlay) is not the same as **Iznik tilework** (Ottoman) or **zellige** (Andalusian tile). Parchin kari requires individual stones (jade, turquoise, lapis lazuli) cut and fitted into marble. The effect is subtle, geometric, and creates light reflection rather than color saturation." context="Recognizing this distinction marks Mughal material sophistication." />
 
 <WikiMistakeList mistakes={["Overlooking Akbar's Architectural Integration. Students often begin Mughal architecture with Shah Jahan. However, **Akbar** (founder of Mughal architectural patronage) established the synthesis of Persian and Indian forms. **Fatehpur Sikri** shows Hindu-Islamic integration. Understanding Akbar's foundational role is essential.", "Misidentifying the Double-Shell Dome. Mughal domes use **double-shell construction** (outer and inner domes separated by interior space). This allows height without interior bulk and distributes structural loads. It differs from Ottoman cascading half-domes (structural refinement) and Andalusian muqarnas (decorative fragmentation). Understanding the structural principle behind Mughal domes is essential.", "Underestimating Red Sandstone as an Intentional Design Choice. Students sometimes treat **red sandstone** (Akbar and later Mughal buildings) as merely available material. In fact, the color choice integrates Hindu and Buddhist architectural traditions. Akbar's Fatehpur Sikri uses red sandstone deliberately to connect with Indian heritage. This was politically and culturally strategic."]} />
-
 
 ## Key Terms
 
@@ -83,3 +85,10 @@ Mughal architecture developed under specific patron dynasties. **Akbar** (r. 155
 **Ustad Ahmad Lahauri** — Master architect listed as principal designer of the Taj Mahal (under Shah Jahan), though the monument was created by a collective imperial atelier; represents peak of Mughal architectural mastery.
 
 <Warn>Do not treat the Taj Mahal as "primarily a tomb." It is fundamentally a **garden-building complex** where the charbagh (4-part garden) and mausoleum are equally essential. The garden represents Islamic paradise; the building's proportions represent cosmological order. Garden and building together create spiritual and mathematical meaning. Describing only the building without the garden context misses Mughal architectural philosophy.</Warn>
+
+## Related Articles
+
+See also within Islamic Architecture: **lea-hist-004-01-core-concept**, **lea-hist-004-02-core-concept**, **lea-hist-004-05-core-concept**, **lea-hist-004-06-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

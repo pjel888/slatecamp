@@ -5,7 +5,6 @@ Conduct site analysis evaluating topography, climate, access, utilities, views, 
 
 Site analysis is the systematic study of existing site conditions—topography, climate, access, utilities, views, noise, and vegetation—that informs design decisions. The LEA expects you to conduct and interpret site analysis and apply its findings to site planning and building orientation decisions.
 
-
 ## Core Concept
 
 A **site analysis** evaluates the built and natural environment of a property to identify opportunities and constraints for development. Unlike site plans, which show proposed building placement, a site analysis communicates the _existing conditions_ that must be understood before design begins.
@@ -47,8 +46,10 @@ A **site analysis** evaluates the built and natural environment of a property to
 
 **Building orientation in the Philippines:**
 Per ERR-DSGN-035, the correct building orientation for tropical regions is **long axis E-W (east-west)**. This minimizes east-west sun exposure and maximizes north-south facades (which receive lower-angle, less intense sun). Incorrect orientation (long axis N-S) is a common exam error.
+<ArticleMedia id="media-lea-dsgn-012-01-core-concept" a type="image" caption="Site Analysis Diagram — Sun Path, Wind Rose, and Topography" description="Composite site analysis diagram showing: sun path chart with seasonal arcs, wind rose diagram (prevailing wind direction and speed), topographic contour lines, existing vegetation, views/vistas, noise sources, and access points. Philippine tropical climate context." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
+<ArticleMedia id="media-lea-dsgn-012-01-core-concept" a type="image" caption="Site Analysis Factors — Climate, Access, Utilities, and Context Mapping" description="Multi-layer site analysis mapping: base map with property boundaries, climate overlay (solar radiation, rainfall, wind), access/circulation overlay, utility infrastructure overlay, and environmental constraints (easements, flood zones, geological hazards)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 | Analysis Element | Method | Interpretation |
 |---|---|---|
@@ -75,10 +76,7 @@ A candidate is given a site with primary street frontage on the east side and as
 **Pattern 3: Site constraint analysis**
 A site analysis shows high noise on the western boundary (major road), view opportunities to the north, and gentle slope (5% gradient). The candidate must infer: place noise-sensitive spaces (bedrooms, offices) on eastern side; orient living areas and views toward north; use the gentle slope for terracing or multi-level design. This integrates multiple site analysis findings.
 
-<Tip>
-**Memory aid:** "E-W Orientation Rule" — In tropical Philippines, orient buildings with long axis E-W (east-west). This minimizes harsh E and W sun, maximizes gentle N-S sun. Place primary views and living spaces on N or S facades. This is ERR-DSGN-035 territory—incorrect orientation is a common exam error.
-</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 **Exam Tip:** Site analysis must document: N arrow, prevailing wind direction, sun path, adjacent uses, access points, utility locations, easements, flood hazards, noise sources, and significant vegetation. Omissions = design errors.
 
@@ -88,4 +86,4 @@ See **LEA-DSGN-012-02** (Site Development) for applying site analysis findings, 
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["ERR-DSGN-035: Orienting buildings with long axis N-S instead of E-W in tropical Philippines; always prioritize E-W orientation for energy efficiency.","Misinterpreting contour lines as individual building levels rather than topographic data; contours show existing grades and slopes, not proposed floor levels.","Calculating slope percentage incorrectly (using vertical only, or forgetting to convert percentage); always use slope % = (rise÷run)×100.","Placing noise-sensitive spaces (bedrooms, offices) near noise sources (streets, highways) without considering acoustic design or buffers.","Ignoring utility locations and easements; utilities require clear access and cannot be built over.","Failing to account for seasonal wind changes (NE in winter, SW in monsoon) in ventilation and facade design.","Underestimating tree preservation value; existing large trees provide shade, stormwater absorption, and cost savings.","Not analyzing view opportunities and sight lines; overlooking chances to frame desirable views or block undesirable ones.","Assuming all sloping sites are unsuitable for building; slopes 0–15% are buildable and often provide design opportunities.","Omitting flood risk analysis in low-lying or coastal areas; critical for site safety and code compliance."]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

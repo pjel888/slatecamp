@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects
 
-Generated: 2026-05-03T13:44:31.643Z
+Generated: 2026-05-04T00:06:05.691Z
 Article ID: 9c859ffb-8b3a-4feb-b484-6700d3867e5c
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:76da6d79d46afd3ee43b8370bfff72c432a69c1bcf57a59f7de3c4cdd3f3a7c3`
-- Normalized: `sha256:1be33bed5abcea1db1d0f1673ed8084bed74f2b38f73f758d7cbc6f55da649ef`
-- Candidate: `sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7`
+- Original: `sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7`
+- Normalized: `sha256:89ecd8a3e56078d7f05cb61576e953405610131ba1430866017309135450913d`
+- Candidate: `sha256:89ecd8a3e56078d7f05cb61576e953405610131ba1430866017309135450913d`
 
 ## Line summary
 
-- Changed lines: 82
-- Inserted lines: 41
-- Deleted lines: 0
+- Changed lines: 50
+- Inserted lines: 0
+- Deleted lines: 6
 
 ## UI block preservation
 
 - UI blocks expected: 5
-- UI blocks preserved: 5
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 5
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 5 preserved UI block(s).
 
 ## Warnings
 

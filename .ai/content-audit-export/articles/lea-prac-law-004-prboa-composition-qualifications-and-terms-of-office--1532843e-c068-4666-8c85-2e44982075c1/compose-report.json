@@ -1,18 +1,24 @@
 {
   "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
   "slug": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office",
-  "generated_at": "2026-05-03T13:44:10.774Z",
-  "original_hash": "sha256:a29e3b93f3e8152b7892f61790edf65a69923ee99211a30dbbaeb451669ab09f",
-  "normalized_hash": "sha256:3f65de06b51efe91aa79b07176896af866f1936c2e1a07316228bd4d99af9787",
-  "candidate_hash": "sha256:453395a1ee82c71f39456d68eca7d488c7db9549ab1f01f301335a18f96c4771",
+  "generated_at": "2026-05-04T00:05:37.961Z",
+  "original_hash": "sha256:453395a1ee82c71f39456d68eca7d488c7db9549ab1f01f301335a18f96c4771",
+  "normalized_hash": "sha256:307d796bc6fb234dbe6f348f35ca2bd17762e2abfe908ee31e4473450232a2d8",
+  "candidate_hash": "sha256:307d796bc6fb234dbe6f348f35ca2bd17762e2abfe908ee31e4473450232a2d8",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
+  "unused_blocks": [
+    "ui_0005",
+    "ui_0006"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition."
+  ]
 }

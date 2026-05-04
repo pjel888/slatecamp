@@ -7,24 +7,20 @@ Design emergency and standby power systems — generator sizing based on life-sa
 
 Emergency power systems provide backup electricity when the primary utility source fails. They maintain critical functions including fire protection, life safety, egress lighting, and emergency communications.
 
+<ArticleMedia id="media-lea-util-003-02-emergency-power-systems" a type="image" caption="Emergency Power System — Generator, ATS, UPS, and Life Safety Loads" description="Single-line riser diagram showing: diesel generator with fuel storage tank (8-hour minimum), automatic transfer switch (ATS, 10-second max transfer per PEC 700.12), UPS (online double-conversion for critical loads), and distribution to emergency circuits (fire pump, emergency lighting, elevator, fire alarm). Generator room requirements annotated: 2-hour fire rating, ventilation, sound attenuation, secondary containment for fuel (110% of tank capacity)." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 ### Standby Generators
 
 Diesel generators are the primary emergency power source in the Philippines due to reliable fuel availability and operational efficiency. Key design considerations include:
 
 **Generator Sizing:**
 
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
 
-<KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 
-
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
-
-
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 Emergency generators must be sized to support the emergency load, defined as the total connected load of circuits designated for emergency operation. This includes fire pumps, emergency elevators, exit lighting, emergency communications, and life safety equipment. The PEC requires that generator capacity must not be less than the sum of the rated loads of all equipment that must operate during an outage (PEC Article 700.4).
 
 **Transfer Time:**

@@ -3,10 +3,6 @@
 After reading this article, you should be able to:
 
 Apply anthropometric data to furniture design (workstation heights, seating dimensions, reach envelopes); calculate minimum clearance for workstations and desks under ergonomic standards; identify the 5th to 95th percentile design range for Philippine anthropometry; and apply adjustability requirements to ensure accommodation of the broadest user population.
-
-_LEA Board Exam Review Module — Dual-Context Edition (USA vs. Philippines)_
-_Source data: Del Prado-Lu (2007) Filipino anthropometrics; NC State / NHANES US data; PD 1096 Rule VII; Panero & Zelnik (1979); Neufert Architects' Data; BIFMA standards_
-
 ---
 
 ## Section 1: Accuracy Audit
@@ -366,22 +362,10 @@ An architect is designing a 20-row tiered auditorium in Manila and selects a C-v
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ CRITICAL: The original draft contained fabricated citations ('WS Pangborn') and incorrect anthropometric values. Always verify ergonomics data against Panero & Zelnik (1979) for US standards or Del
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: LEA Pattern: Expect questions comparing Filipino vs. US anthropometric data. Key differences: Filipino seated eye height (from seat pan) is ~73 cm male / ~68 cm female vs. US ~80+ cm male. Filipino po
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Real-World Application: A desk designed to US male 50th percentile (75-80 cm standing elbow height) would force a 5th percentile Filipina to either hunch upward or use an extra-high chair that leaves 
-[/SLATECAMP_UI_BLOCK]
 
 ## Verified References
 
@@ -400,6 +384,9 @@ _End of Module. Review Section 1 to understand what to avoid. Re-read Section 2 
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Ergonomic Furniture Dimensions — Anthropometric Data for Seating and Workstations" description="Scale figure diagrams showing: seated workstation with key dimensions (seat height 38-45cm PH, desk height 72-76cm, monitor at eye level), auditorium sightline C-value diagram (C=120mm optimal clearance between rows), and reach envelopes (5th percentile female to 95th percentile male). Filipino anthropometric data per Del Prado-Lu (2007) annotated." />
 ## Cross‑References
 
 **Standard Human Body Dimensions**, **Institutional Human Dimensions**, **Public Service Counters And Atms**, **Wheelchair Maneuvering And Parking**

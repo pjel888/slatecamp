@@ -12,7 +12,6 @@ After reading this article, you should be able to:
 Analyze site microclimate factors — solar orientation, wind patterns, temperature, humidity, precipitation — for building placement and fenestration design; calculate shadow patterns using solar altitude and azimuth; apply the wind rose to building orientation decisions; and identify the effect of nearby water bodies, vegetation, and topography on site conditions.
 ---
 
-
 You are designing a 5-storey BPO office building on a mid-block lot in Bonifacio Global City, Taguig. The client demands maximum natural ventilation to reduce HVAC costs, but the west-facing lot boundary receives brutal afternoon sun from 1:00–5:00 PM year-round. You must orient the building's long axis, position operable windows to capture the Amihan during the dry season, shield the southwest facade from Habagat-driven rain, and deploy solar shading strategies calibrated to the Philippine sun path — all within the constraints of PD 1096 light-and-ventilation requirements and the lot's setback limitations.
 
 ---
@@ -124,22 +123,10 @@ This airflow rate can then be compared to the minimum ventilation requirements f
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Real-World Application: Orient the long axis of a BGC office building along the east-west line. This captures Amihan (NE) breezes through the long north facade for natural ventilation while minimizing
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ Common Mistake: Students often remember Amihan and Habagat directions but forget the transition periods. April-May (hot, dry, variable winds) is when passive cooling is LEAST effective — this drive
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: LEA Pattern: Questions ask you to identify the correct passive design strategy for a given site condition. South-facing facade receives most consistent solar radiation (sun is south of zenith Sep-Mar)
-[/SLATECAMP_UI_BLOCK]
 
 ## LEA Exam Traps and Common Mistakes
 
@@ -192,3 +179,5 @@ D. West facade
 
 **Topography And Slope Analysis**, **Hydrology In Site Planning**, **Flora And Fauna In Site Development**, **Geological Hazards**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

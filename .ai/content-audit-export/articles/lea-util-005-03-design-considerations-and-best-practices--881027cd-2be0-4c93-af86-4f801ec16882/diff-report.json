@@ -1,38 +1,44 @@
 {
   "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
   "slug": "lea-util-005-03-design-considerations-and-best-practices",
-  "generated_at": "2026-05-03T13:45:12.676Z",
+  "generated_at": "2026-05-04T00:06:52.739Z",
   "old_hash": "sha256:8a570e3a892889f97f8e9094f38b8a62c14177546fda8742ea85acc7632e0110",
-  "new_hash": "sha256:a6d257e93dd71031c56834670eb0f6aeb74896fa07d7a5878609943ec47ed6ab",
+  "new_hash": "sha256:edef1b2fcc574fe964c5b8d855d634b0e3e4369256e10592a94e9203b4cf20c3",
   "original_hash": "sha256:8a570e3a892889f97f8e9094f38b8a62c14177546fda8742ea85acc7632e0110",
-  "normalized_hash": "sha256:79d6a077855f6a7f3d096838dc61e76a488dcd87b9db7b2060a2cb51c114dab6",
-  "candidate_hash": "sha256:a6d257e93dd71031c56834670eb0f6aeb74896fa07d7a5878609943ec47ed6ab",
+  "normalized_hash": "sha256:edef1b2fcc574fe964c5b8d855d634b0e3e4369256e10592a94e9203b4cf20c3",
+  "candidate_hash": "sha256:edef1b2fcc574fe964c5b8d855d634b0e3e4369256e10592a94e9203b4cf20c3",
   "changed": true,
-  "changed_line_count": 293,
+  "changed_line_count": 301,
   "inserted_line_count": 0,
-  "deleted_line_count": 196,
+  "deleted_line_count": 198,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 2,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 293,
+    "changed": 301,
     "inserted": 0,
-    "deleted": 196,
+    "deleted": 198,
     "original_line_count": 313,
-    "candidate_line_count": 117
+    "candidate_line_count": 115
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0010",
+      "ui_0011"
+    ],
+    "changed_count": 2
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 2 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
 }

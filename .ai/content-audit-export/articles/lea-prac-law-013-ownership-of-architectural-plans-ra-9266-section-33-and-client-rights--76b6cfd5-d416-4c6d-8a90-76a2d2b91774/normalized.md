@@ -35,22 +35,10 @@ Architects whose plans are duplicated without consent may pursue legal action un
 The strength of the architect's position depends on documentary evidence showing ownership and the unauthorized reproduction. Architects should maintain records of design development, dated submissions, and all communications with the client. When plans are registered with the Intellectual Property Office of the Philippines (IPOPHL), the architect gains additional evidentiary weight in dispute resolution and enforces the copyright with greater confidence.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ The architect's copyright ownership exists even if (a) the client paid for the design services, AND (b) the project was never constructed. Payment for services does NOT transfer copyright — only a written assignment agreement transfers ownership. — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Client = limited LICENSE HOLDER for the specific project only. Client CANNOT reuse plans on another property without the architect's written permission. Client CAN use plans for: construction, maintenance, and minor site-adaptive modifications of the commissioned building.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: All service agreements should incorporate Section 33's ownership clause as constructive notice to clients. Without such notice, clients may inadvertently violate the law by reproducing plans. Registration with IPOPHL strengthens evidentiary weight in disputes.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -64,3 +52,5 @@ Extracted summary:
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

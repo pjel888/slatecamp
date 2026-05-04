@@ -2,6 +2,11 @@
 
 Adaptive reuse of heritage properties requires balancing modern building codes with historical preservation. The occupancy classification depends on the _new_ function, not the original use. Heritage buildings must comply with RA 10066 (Cultural Heritage Act) and gain NHCP (National Historical Commission of the Philippines) clearance before modifications affecting character-defining features.
 
+## Learning Goal
+
+Determine occupancy classification based on new programmed function (not original use), apply RA 10066 and NHCP clearance requirements, use reversible interventions and compatible materials, calculate egress and accessibility compliance for heritage constraints, and identify when variances are appropriate.
+
+
 ## Core Concept
 
 Adaptive reuse (or adaptive reuse design) is the practice of converting an existing building to a new use or function while preserving its cultural and historical character. A century-old stone church converted to a library (new function = Group C), a colonial mansion reused as a small hotel (Group B), or an old warehouse adapted as an artist collective (Group C/E) each represents adaptive reuse.
@@ -40,7 +45,7 @@ Code compliance (NBC, **BP 344**) still applies: the new use must meet all egres
 
 **Design Integration Standards:**
 
-- _New system routing_: Electrical, plumbing, HVAC in secondary zones or concelead paths (walls, attics, crawl spaces)
+- _New system routing_: Electrical, plumbing, HVAC in secondary zones or concealed paths (walls, attics, crawl spaces)
 - _Exit/accessibility integration_: Ramps, elevators, stair widening—designed for visual and material compatibility
 - _Structural: Minimize alterations to primary structural members; use non-invasive bracing or reinforcement
 - _Materials_: Match original in color, texture, composition; use reversible techniques (e.g., lime mortar, wood stain vs. permanent paint)
@@ -70,6 +75,13 @@ The challenge for architects is code compliance without destroying character. A 
 **Pattern 3:** _Character preservation vs. code compliance_ — "A heritage chapel (original 400 sqm, seating 150) is being converted to an office (10 sqm per person, occupant load = 40). The new occupancy load is _____, and exit width requirement is _____ mm/person per NBC."
 
 <Tip>RA 10066 = Heritage Act. NHCP = National Historical Commission (clearance required). Occupancy = new function. Character-defining = preserve. Exit width = 7.6mm/person. BP 344: ramp 1:20 (2024 Revised IRR), door 900mm. Reversible preferred over permanent. Variance = cultural constraint + code impossibility.</Tip>
+
+
+**Exam Tip — ERR-DSGN-008:** Occupancy classification follows NEW function, not original use. An adaptive reuse church-to-restaurant becomes Group E, not Group C. NHCP clearance required if structure is a heritage designation.
+
+## Cross-References
+
+See **LEA-PLAN-001-03** (Philippine Planning History) for heritage context, **LEA-DSGN-008-01** (Fire Egress) for egress compliance in constrained heritage layouts, and **LEA-DSGN-007-04** (Design Process) for documentation requirements.
 
 ## Common Mistakes
 

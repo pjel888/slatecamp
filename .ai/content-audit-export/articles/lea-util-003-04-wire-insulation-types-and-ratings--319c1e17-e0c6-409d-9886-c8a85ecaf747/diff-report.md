@@ -1,32 +1,33 @@
 # Content Diff Report: lea-util-003-04-wire-insulation-types-and-ratings
 
-Generated: 2026-05-03T13:45:13.078Z
+Generated: 2026-05-04T00:06:53.121Z
 Article ID: 319c1e17-e0c6-409d-9886-c8a85ecaf747
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:3ff8e56b7599e821a0e4c0eb5e2f0b7e700d104812fabcd96c850c5015d027fd`
-- Normalized: `sha256:a3be1d9b791c5388df867822a4c8458ddb0fa7b60a6c8e9cd4829887f3c4b17d`
-- Candidate: `sha256:976ef7613d0f181a40cf74a51293fe09f8adc6da9fee08895acab0b4f55686f6`
+- Original: `sha256:976ef7613d0f181a40cf74a51293fe09f8adc6da9fee08895acab0b4f55686f6`
+- Normalized: `sha256:2da86c9a383c1ecd71ab303f3a0aff73a4c10982c78679dfa9c19d2b5a84670e`
+- Candidate: `sha256:2da86c9a383c1ecd71ab303f3a0aff73a4c10982c78679dfa9c19d2b5a84670e`
 
 ## Line summary
 
-- Changed lines: 384
-- Inserted lines: 19
-- Deleted lines: 0
+- Changed lines: 364
+- Inserted lines: 0
+- Deleted lines: 4
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

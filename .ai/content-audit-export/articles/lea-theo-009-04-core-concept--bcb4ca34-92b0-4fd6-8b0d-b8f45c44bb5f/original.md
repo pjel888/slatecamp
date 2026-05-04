@@ -4,6 +4,14 @@
 Space planning logic is organized through functional zoning—the systematic separation of building areas into public, semi-public, private, and service zones—determined by programmatic adjacency requirements and circulation logic. Zoning creates order, minimizes circulation distance, and ensures that public spaces do not interfere with private functions or operational systems. Circulation spines and connectors organize these zones and determine how users, staff, and goods move through the building.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define functional zoning as the organization of interior spaces into public, semi-public, private, and service domains.
+- Apply adjacency matrix requirements to create logical circulation spines that minimize travel distances and separate conflicting functions.
+- Analyze floor plans for functional zoning: circulation efficiency, public/private separation, and service access.
+
 ## Core Concept
 
 Functional zoning is not zoning in the land-use regulatory sense (residential, commercial, mixed-use); rather, it is the organization of interior spaces into operational domains determined by access control, use intensity, and activity type. Zoning is the framework through which the adjacency matrix translates into layout logic. Where the adjacency matrix documents which spaces must be near or far from each other, zoning explains why those relationships are necessary and organizes them into coherent operational domains.
@@ -137,3 +145,10 @@ Within each zone, adjacency logic still applies. Public zone spaces (entry lobby
 **Access Control** — Architectural or operational mechanism (reception, locked doors, badge systems) separating public and restricted zones.
 
 **Wayfinding** — System of visual and directional cues enabling occupants to navigate through zones; more critical in public zones than restricted zones.
+
+## Related Articles
+
+See also within Space Planning Theory: **lea-theo-009-01-core-concept**, **lea-theo-009-02-core-concept**, **lea-theo-009-03-core-concept**, **lea-theo-009-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

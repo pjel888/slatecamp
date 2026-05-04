@@ -1,10 +1,10 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Philippine vernacular architecture has evolved using locally available, climate-adapted materials for centuries. These sustainable materials including bamboo, coco lumber, adobe, nipa palm, rattan, and abaca fiber have measurable structural properties and are now integrated into modern building codes. The LEA tests candidates on material properties, applicable structural standards (ISO 22156 for bamboo, FPRDI standards for coco lumber), and DPWH acceptance criteria for alternative materials in contemporary construction.
-
+Identify vernacular and sustainable building materials (bamboo, nipa, cogon, rattan, adobe, stabilized earth blocks) and explain how traditional Philippine construction methods achieve environmental performance while supporting local economies.
 ## Core Concept
 
-Vernacular sustainable materials achieve environmental benefits through local sourcing, reduced transport embodied carbon, and alignment with traditional climate adaptation strategies. Bamboo (ISO 22157 testing standards) provides structural capacity equivleant to softwood timber in tension and compression, with allowable stress values of 6-10 MPa for bending when properly graded. Coco lumber (FPRDI-standardized) is produced from coconut tree trunks and offers working properties comparable to hardwood species, reducing pressure on natural forests.
+Vernacular sustainable materials achieve environmental benefits through local sourcing, reduced transport embodied carbon, and alignment with traditional climate adaptation strategies. Bamboo (ISO 22157 testing standards) provides structural capacity equivalent to softwood timber in tension and compression, with allowable stress values of 6-10 MPa for bending when properly graded. Coco lumber (FPRDI-standardized) is produced from coconut tree trunks and offers working properties comparable to hardwood species, reducing pressure on natural forests.
 
 Adobe (volcanic tuff blocks) and rattan woven panels provide thermal mass and ventilation advantages in tropical climates, while nipa palm roofing and abaca fiber composites represent renewable material pathways. These materials reduce dependence on imported construction materials, lower embodied carbon through local production, and support rural livelihoods within the Philippines.
 
@@ -43,7 +43,7 @@ LEA candidates must identify material types by their traditional and modern name
 
 A second test approach asks candidates to evaluate a coco lumber specification, requiring verification that FPRDI grading is documented, preservation is applied, and service life expectations are realistic. Candidates must distinguish between non-structural applications (roofing, interior screens using nipa, rattan, abaca) and structural applications requiring standards compliance (bamboo to ISO 22156, coco lumber to FPRDI/DPWH approval).
 
-Calculations may involve comparing embodied carbon of a bamboo structure (estimated 0.40-0.60 kg CO2e/m³ with local harvesting) to equivleant reinforced concrete or steel-frame designs. Candidates must understand that vernacular materials reduce transport embodied carbon but require careful property verification and may have higher maintenance costs offsetting initial material savings.
+Calculations may involve comparing embodied carbon of a bamboo structure (estimated 0.40-0.60 kg CO2e/m³ with local harvesting) to equivalent reinforced concrete or steel-frame designs. Candidates must understand that vernacular materials reduce transport embodied carbon but require careful property verification and may have higher maintenance costs offsetting initial material savings.
 
 <Tip>When a question specifies a material by common Filipino name (kawayan, coco lumber, nipa) and asks about structural suitability, first identify the material's applicable standard or non-code status. If the material lacks ASTM or ISO standardization, check whether DPWH case-by-case approval is noted or if it is limited to non-structural use. Many vernacular materials are excellent for infill, interior applications, and secondary structural members but unsuitable for primary seismic resisting systems without additional testing and engineer approval.</Tip>
 
@@ -63,3 +63,10 @@ Calculations may involve comparing embodied carbon of a bamboo structure (estima
 <li>Specifying nipa palm or rattan without recognizing they are non-structural or maintenance-intensive (annual inspection, 15-20 year replacement cycle)</li>
 <li>Using vernacular materials in high-moisture or corrosive environments (coastal salt spray, industrial areas) without durability verification</li>
 </WikiMistakeList>
+
+## Related Articles
+
+See also within Sustainable and Green Materials: **lea-matl-005-05-core-concept**, **lea-matl-005-07-core-concept**, **lea-matl-005-09-core-concept**, **lea-matl-005-10-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

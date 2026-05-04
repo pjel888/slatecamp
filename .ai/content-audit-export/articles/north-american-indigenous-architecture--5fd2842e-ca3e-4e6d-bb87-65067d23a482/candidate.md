@@ -2,9 +2,19 @@
 
 ## Learning Goal
 
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
 - Distinguish Pueblo (adobe thermal mass), Longhouse (communal timber-framed), and Tipi (portable hide-covered) building traditions by their climate adaptation strategies.
 - Explain how each tradition's design principles — thermal mass, passive ventilation, communal layout, portability — address specific environmental constraints.
@@ -34,7 +44,13 @@ Think: *"People Live Together"* — all three traditions are fundamentally about
 | **Longhouse** | Haudenosaunee (Iroquois) Confederacy; Northeastern woodlands; pre-contact through historic period | Sapling pole frame (up to 1,000 saplings per 50 m house); bark cladding (elm, cedar); avg. 24 × 5.5 × 5.5 m; up to 75 m+ | Central corridor with multiple hearths; family compartments along both sides; storage platforms above; smoke holes in barrel-vaulted roof | Shared hearths provide communal heating in cold winters; flexible timber frame absorbs wind loads; elongated plan maximizes interior area per unit of material |
 | **Tipi** | Plains nations (Lakota, Cheyenne, Blackfoot, others); widespread post-1700s (horse era) | 14–20 lodgepole pine or red cedar poles; bison hide or canvas cover; 4–6 m height | Conical form; adjustable smoke flaps at apex; tilted axis (steeper windward side); interior liner for insulation and draft control | Low profile resists sustained high winds; chimney-effect ventilation (base intake, apex exhaust); rapid assembly/disassembly (under 30 minutes by experienced users); portable for nomadic life |
 
-<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+
+component="ExamTip" status="preserved"]
+<Note>
+**LEA Pattern:** Questions about this architect often present an unfamiliar b...
+</Note>
 ## LEA Exam Traps and Common Mistakes
 
 - **Conflating Ancestral Puebloans with Plains tribes:** These are entirely different cultures in different environments with different building traditions. Pueblos are permanent, multi-story, stone-and-adobe complexes in the arid Southwest. Tipis are portable, hide-covered conical structures of the Great Plains. The LEA tests precise cultural attribution — never describe Pueblo peoples as nomadic or Plains peoples as sedentary adobe builders.
@@ -76,3 +92,5 @@ D. Large rectangular doorways on all four cardinal orientations
 
 **African Vernacular Earth Architecture**, **Pre Columbian Mesoamerica**, **Inca Architecture Ashlar Masonry**, **Pre Colonial Vernacular**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

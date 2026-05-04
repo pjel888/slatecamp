@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:17:56.088Z",
+  "attempted_at": "2026-05-04T00:06:54.168Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
   "slug": "vertical-openings-and-floor-roof-construction",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:c3046b437bbccae687db3fbcb6c0193af18ca0d323707d7a1c3a37ce2a3c7cc9",
-  "original_hash": "sha256:c3046b437bbccae687db3fbcb6c0193af18ca0d323707d7a1c3a37ce2a3c7cc9",
-  "candidate_hash": "sha256:9ef17390ba7337f39d22ec864efc9cb872334589ca1659f174c8da4e433ccf9b",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:9ef17390ba7337f39d22ec864efc9cb872334589ca1659f174c8da4e433ccf9b",
+  "original_hash": "sha256:9ef17390ba7337f39d22ec864efc9cb872334589ca1659f174c8da4e433ccf9b",
+  "candidate_hash": "sha256:2beab0a4907b441222eb2d69322510f57267a0ed78dab1715a3754f667ac2d20",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T14:19:57.077156+00:00"
 }

@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:48.979Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:19.823Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
   "slug": "lea-prac-frm-004-joint-venture-in-architecture",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:f04c063d55fc9108cca171e7273a14aecc77e5f027e9f8dce203da8d2f8e3799",
-  "original_hash": "sha256:06faaa422203edc894c37c1b4be868c285298a2ffd77f0e8537d0261586bece3",
-  "candidate_hash": "sha256:f04c063d55fc9108cca171e7273a14aecc77e5f027e9f8dce203da8d2f8e3799",
-  "stale_check_passed": false,
+  "original_hash": "sha256:f04c063d55fc9108cca171e7273a14aecc77e5f027e9f8dce203da8d2f8e3799",
+  "candidate_hash": "sha256:2f743d2c323538531e383133c65d1342776286707eaeef31f4629a47d9667e20",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:50:54.483422+00:00"
 }

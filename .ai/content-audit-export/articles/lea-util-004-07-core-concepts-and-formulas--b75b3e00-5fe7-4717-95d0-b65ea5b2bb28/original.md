@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-Fire pump sizing and hydraulic calculations form the technical foundation of every automatic fire suppression system in the Philippines. Whether designing a sprinkler protection system for a warehouse or a standpipe network for a high-rise commercial building, engineers must calculate the pump's capacity to deliver adequate flow and pressure under the most demanding conditions specified by RA 9514 (Fire Code of the Philippines) and its Implementing Rules and Regulations (IRR).
+## Learning Goal
 
-This node covers the formulas, step-by-step computations, and practical applications that determine whether a pump will function correctly when fire protection is needed.
-
+Apply the formula of fire protection: R = hazard × occupancy × area × construction type; calculate fire flow requirements for sprinkler systems and identify standpipe system pressure and hose connection placement per NFPA 13, 14, and RA 9514 IRR.
 ## Core Concepts and Formulas
 
 ### Total Dynamic Head (TDH)
@@ -97,7 +96,7 @@ Add 10% safety factor: **Q = 627 LPM**
 
 **Step 3: Calculate Friction Loss in Main Riser**
 
-Assume 80 m of 100 mm (3.93 in) pipe from suction to roof, plus equivleant 20 m losses in fittings and distribution piping. Total effective length = 100 m.
+Assume 80 m of 100 mm (3.93 in) pipe from suction to roof, plus equivalent 20 m losses in fittings and distribution piping. Total effective length = 100 m.
 
 Using Hazen-Williams with C = 120, d = 100 mm, Q = 627 LPM:
 
@@ -207,7 +206,7 @@ A contractor has a spare 60 kW, 1500 rpm electric motor and wants to know what f
 **Given:**
 - Motor power: 60 kW
 - Estimated pump efficiency: 0.78
-- System friction loss: 3.8 m per 100 m of equivleant pipe
+- System friction loss: 3.8 m per 100 m of equivalent pipe
 - Available suction pressure: 2.5 bar (25.5 m)
 - Required residual pressure: 35 m
 - Static head: 12 m
@@ -273,11 +272,7 @@ The physical installation location significantly influences pump performance and
 
 ## Common Errors and Misconceptions
 
-<WikiMistakeList mistakes={[{"mistake": "Using discharge pressure instead of TDH when sizing pumps.", "correction": "TDH combines static head, friction loss, and residual pressure. The pump must overcome all three simultaneously. Discharge pressure ≠ TDH."}, {"mistake": "Ignoring friction loss in short pipe runs (&lt;50 m).", "correction": "Even short piping with elbows and valves contributes measurable friction loss. Always add 20–30% to the straight-pipe equivleant length for fittings."}, {"mistake": "Assuming municipal water pressure remains constant during peak demand.", "correction": "Pressure drops significantly when municipal supply is shared. Conduct a 24-hour pressure survey and design to the minimum sustained pressure documented."}, {"mistake": "Selecting pump based solely on nameplate capacity without verifying the actual operating point on the pump curve.", "correction": "Pump curves show how flow, head, and efficiency vary. Operating at the design point (center of curve) ensures maximum reliability."}, {"mistake": "Forgetting to account for sclea buildup in older pipes when applying Hazen-Williams C values.", "correction": "Use C = 100–110 for pipes >10 years old instead of C = 120 for new pipe to predict actual friction loss accurately."}]} />
-
-## Summary Checklist for LEA Examiners
-
-When evaluating fire pump sizing calculations:
+g calculations:
 - ✓ Static head calculated correctly (elevation difference from suction to highest device)
 - ✓ Friction loss derived using Hazen-Williams with appropriate C value
 - ✓ Residual pressure at least 3.45 bar (35 m) for Ordinary Hazard Group 1 (RA 9514 IRR)
@@ -290,3 +285,10 @@ When evaluating fire pump sizing calculations:
 - ✓ All numerical values sourced to standards or engineering manuals
 
 ---
+
+## Related Articles
+
+See also within Fire Protection Systems: **lea-util-004-04-core-concept**, **lea-util-004-05-core-concept**, **lea-util-004-06-core-concept**, **lea-util-004-08-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

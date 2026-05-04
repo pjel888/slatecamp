@@ -1,18 +1,26 @@
 {
   "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
   "slug": "lea-strc-008-02-core-concept",
-  "generated_at": "2026-05-03T13:44:11.498Z",
-  "original_hash": "sha256:df0aff81cdbd39ea000e46414d6d5bf48e97d3878d482a6b80c32bb9e1582da9",
-  "normalized_hash": "sha256:319f5a02fa0c1e296a3d7c77a11f723134c4dd5e891fb3daaba0e04669eac8da",
-  "candidate_hash": "sha256:dc4de125e2a4ac600058f7830c83cda0af915b3c9627f4b5ed703219f3d72393",
+  "generated_at": "2026-05-04T00:05:38.866Z",
+  "original_hash": "sha256:dc4de125e2a4ac600058f7830c83cda0af915b3c9627f4b5ed703219f3d72393",
+  "normalized_hash": "sha256:7d6e8115e6a0431fb90bece2e4a756324c6f891065fbfd41c9fc509ae03a108d",
+  "candidate_hash": "sha256:7d6e8115e6a0431fb90bece2e4a756324c6f891065fbfd41c9fc509ae03a108d",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

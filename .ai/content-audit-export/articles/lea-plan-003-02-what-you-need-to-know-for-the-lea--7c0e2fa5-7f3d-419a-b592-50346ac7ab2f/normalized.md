@@ -54,16 +54,14 @@ Characteristics:
 - Examples: luxury residential subdivisions, high-end condominiums, exclusive golf course communities
 
 Open-market housing has no affordability requirement, no balanced housing obligation (except insofar as RA 7279 requires developers to produce an equivalent value of socialized housing), and is entirely driven by market demand and supply.
+<ArticleMedia id="media-lea-plan-003-02-what-you-need-to-know-fo" a type="image" caption="Housing Delivery Methods — On-Site, Off-Site, Joint Venture, CMP, NHA Direct, Pag-IBIG" description="Flowchart diagram showing six housing delivery methods for socialized and economic housing in the Philippines: (1) On-Site Balanced Housing (developer builds within same project), (2) Off-Site Balanced Housing (separate location), (3) Joint Venture with NHA, (4) Bond Contribution to NHA, (5) Community Mortgage Program via SHFC, and (6) Pag-IBIG Direct Purchase. Arrows indicate regulatory pathway and financing flow." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-003-02-what-you-need-to-know-fo" a type="image" caption="Philippine Housing Classification Comparison — Socialized, Economic, Low-Cost, Open-Market" description="Four-panel comparison chart showing the four Philippine housing classifications: Socialized (BP 220 — 72 sqm lot, 22 sqm floor, <₱15K/mo income), Economic (BP 220 — 100 sqm lot, 42 sqm floor, ₱15-40K/mo), Low-Cost (industry standard — 100-200 sqm lot, 60-100 sqm floor, ₱40-60K/mo), and Open-Market (market-determined, >₱60K/mo). Each panel shows minimum lot area, floor area, price range, financing source, and primary developer type. Color-coded by affordability tier." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
 ### Housing Classification Comparison Table
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers={["Classification","Target Income Range","Min. Lot (BP 220)","Min. Floor (BP 220)","Price Range","Financing","Primary Developer"]}, rows={[{"Classification":"Socialized","Target Income Range":"<₱15,000/month","Min. Lot (BP 220)":"72 sq.m. (new) / 28 sq.m. (infill)","Min. Floor (BP 220)":"22 sq.m.","Price Range":"₱600K–₱1.5M","Financing":"Pag-IBIG (socialized loan), NHA direct grants","Primary Developer":"NHA, private developers (per balanced housing)"}
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -162,13 +160,21 @@ Another example:
 ### Common Distractors and Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[{\"mistake\":\"Low-cost housing is a statutory classification in BP 220.\",\"fact\":\"BP 220 defines only socialized (72/28 lot, 22 floor) and economic (100 lot, 42 floor) housing. Low-cost is an industry-recognized segment between economic and open-market, but not a legal classification.\"}", mistake=true, Economic=true, housing=true, has=true, a=true, minimum=true, lot=true, area=true, of=true, sq=true, m=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 ### Summary: Housing Taxonomy in the Philippines
 
 The Philippine housing system layers four classifications (socialized, economic, low-cost, open-market) with multiple delivery methods (government, private, CMP, Pag-IBIG, etc.). Understanding this two-dimensional structure — what is built (classification) versus how it is built and financed (delivery) — is the key to housing policy analysis on the LEA. Students who confuse classification with delivery method consistently misread case studies and policy questions.
+
+
+---
+## Cross-References
+
+- **Senior Living and Low-Income Housing**: Related article on Senior Living and Low-Income Housing
+- **Dormitories and Student Housing**: Related article on Dormitories and Student Housing
+- **Philippine Housing Law Framework**: Related article on Philippine Housing Law Framework
+- **Housing finance in the Philippines operates through**: Related article on Housing finance in the Philippines operates through
+- **Housing production methods describe HOW**: Related article on Housing production methods describe HOW
+- **Special Housing Programs**: Related article on Special Housing Programs
+- **Philippine Government Housing Agencies**: Related article on Philippine Government Housing Agencies

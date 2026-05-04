@@ -1,7 +1,6 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA requires you to design buildings that engage all human senses—not vision alone. You must understand how light intensity and color temperature affect occupant behavior, how acoustic design shapes spatial experience, and how material tactility creates emotional connection. Sensory design integrates these modalities into coherent spatial experiences.</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 ## Learning Goal
 
@@ -11,9 +10,11 @@ Design multisensory architectural experiences that coordinate light intensity an
 
 ### Beyond Vision: Multisensory Architecture
 
+<ArticleMedia id="media-lea-theo-003-05-sensory-diagram" type="image" caption="Multisensory Architecture — Coordinating Light, Sound, Touch, and Scent" description="Concept diagram centered on 'Architectural Experience' with four connected sensory domains: Visual (daylighting patterns, color temperature, luminance), Acoustic (reverberation time, sound isolation, material absorption), Haptic (material texture, thermal feel, surface finish), and Olfactory (scent, air quality, material off-gassing). Each domain connects to a central 'Occupant Well-being' node showing overlap zones." suggestedAsset="Diagram showing multisensory experience layers in architecture" status="placeholder" />
+
 Traditional architectural representation—drawings and models—emphasizes visual information. However, the lived experience of space is fundamentally multisensory. Every significant architectural experience engages the eye, ear, nose, skin, skeleton, and muscle simultaneously. A person entering a cool stone chapel does not merely see columns and arches; they experience the temperature drop against skin, the resonance of footsteps revealing scale through acoustic behavior, the scent of stone and incense, the texture of worn marble under fingers, the subtle light variation as eyes adjust. In LEA design projects, candidates must recognize and design for this multisensory richness.
 
-<Tip>**Design for all senses simultaneously, not vision alone.** Multisensory design coordinates light, sound, tactile qualities, and material properties into coherent spatial experiences that engage the whole body.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 Sensory design is not ornamentation. Rather, it is the deliberate coordination of light, sound, tactile qualities, and scent to support spatial function and occupant well-being. A hospital waiting room designed exclusively for visual clarity (clean, bright, open) without attention to acoustic design produces anxiety through uncontrolled noise. A corporate office with optimal lighting but hostile acoustic conditions—glass surfaces reflecting all sound—produces fatigue. Sensory design integrates physical performance requirements (lighting levels for task visibility, acoustic isolation for speech privacy) with psychological and emotional support (warm color temperature reducing stress, material warmth encouraging presence).
 
@@ -35,7 +36,7 @@ Sound isolation relies on **mass, discontinuity, and absorption**. Mass blocks s
 
 Reverberation time—how long sound persists in space—dramatically affects perceived space quality and occupant stress. Highly reverberant spaces (churches, gymnasiums, underground parking) feel overwhelming and disorienting; speech becomes unintelligible; footsteps echo chaotically. Highly damped spaces (carpeted offices, soft-furnished rooms) feel claustrophobic and lifeless. **Optimal reverberation** balances acoustical clarity with spatial liveliness. Most occupied spaces perform optimally at 0.6-1.2 seconds of reverberation time, varying by use: offices and classrooms require shorter times (0.6-0.8s) supporting speech intelligibility; performance spaces require longer times (1.5-2.0s) supporting musical resonance and presence.
 
-<Note>**Acoustic design is not an afterthought**—it shapes occupant psychology and function. Hard surfaces reflect sound → stress; soft surfaces absorb sound → comfort. Material selection drives acoustic performance from design inception.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
 
 In Filipino contexts, acoustic design presents specific challenges. High humidity in tropical climates affects material absorption; hard, reflective finishes (polished concrete, ceramic tile) common in Philippine construction create excessive reverberation. Office buildings with open floor plans and hard finishes produce acoustic stress. Hospitals with long corridors and hard surfaces create chaotic soundscapes. Schools with concrete block walls and tile floors exhibit poor speech intelligibility in classrooms. Effective acoustic design in Philippine buildings requires strategic material choices: acoustic ceiling tiles, soft furnishings, fabric-wrapped absorption panels, and careful circulation separation.
 
@@ -59,49 +60,32 @@ Effective sensory design integrates light, sound, and haptic systems into cohere
 
 Successful integration requires systematic approach. During design development, architects should explicitly address: (1) How do daylighting patterns change throughout the day and throughout seasons? (2) What acoustic reverberation characteristics support the primary activities? (3) Which material textures and temperatures support the spatial function and occupant psychology? (4) How do these systems interact—does daylighting create glare on reflective acoustic panels? Does acoustic dampening material also feel visually heavy and psychologically oppressive?
 
-<Warn>The common failure: **designing sensory elements independently rather than as integrated systems**. Optimal lighting with poor acoustics creates stress; beautiful materials with harsh light or acoustic chaos feel inhuman. Sensory design success requires simultaneous attention to all modalities working together coherently.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 
 Philippine institutional buildings demonstrate both successful and failed sensory integration. Modern hospitals with bright fluorescent lighting, hard reflective finishes, and high reverberation times create acoustic stress and circadian disruption, worsening patient anxiety. In contrast, hospitals designing for sensory quality—daylighting with appropriate shading, acoustic treatment, warm material palettes, and strategic cooling—report improved patient outcomes and reduced staff stress. Universities with open floor plans lacking acoustic separation show poor classroom acoustics and student stress; those investing in acoustic infrastructure show improved learning outcomes. Office buildings with fixed, cool-temperature lighting appear sterile and uninviting; those with variable daylighting and warm accent materials feel more human and productive.
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Concept", "Definition", "LEA Application"]} rows={[['["**Light Intensity (Lux)**", "Quantitative measure of illumination levels; &lt;300 lux produces fatigue, 300-500 lux supports routine work, 800+ lux increases leartness", "Specify appropriate illumination levels for different space types (office 400-500 lux, task areas 700+ lux)"]', '["**Color Temperature (Kelvin)**", "Warm light 2700-3000K appears intimate; neutral 3500-4100K supports task work; cool 5000-6500K increases leartness", "Design lighting color temperature to match space function (warm in hospitality, cool in offices)"]', '["**Circadian Alignment**", "Daylighting and illumination varying throughout day supporting 24-hour biological cycles improving sleep and mood", "Design fenestration and lighting systems delivering variable intensity and color temperature"]', '["**Reverberation Time (seconds)**", "Duration sound persists in space; optimal 0.6-1.2 seconds depending on use (offices 0.6-0.8s, performance spaces 1.5-2.0s)", "Specify acoustic materials achieving target reverberation times for space type"]', '["**Sound Isolation**", "Prevention of unwanted noise through mass, discontinuity, and absorption", "Design partitions, floating floors, and decoupled framing reducing sound transmission"]', '["**Acoustic Absorption**", "Removal of sound energy through soft and porous materials reducing reverberation and controlling noise", "Apply absorption materials strategically controlling acoustic character"]', '["**Haptic Design**", "Design of tactile experience through material texture, temperature, and sclea supporting psychological response", "Select materials conveying authenticity and supporting occupant well-being through touch"]', '["**Material Patina**", "Visible surface changes from aging and weathering creating authenticity and permanence", "Design for visible aging rather than maintenance-intensive perfection in tropical climates"]', '["**Proprioceptive Design**", "Design for body movement through space with dimensions and surfaces supporting comfortable, confident movement", "Design ramps, stairs, and circulation with appropriate slopes and surfaces reducing physical stress"]', '["**Multisensory Integration**", "Coordination of light, acoustic, and haptic systems into coherent spatial experience", "Design spaces addressing all sensory modalities in support of function and occupant well-being"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
 ## How It's Tested on the LEA
 
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 1: Sensory Design for Specific Building Type**
-Stem: "Design a pediatric clinic in Manila. Specify lighting design (intensity and color temperature), acoustic strategy, and material selection. Justify each choice based on the psychological needs of children and parents in clinical settings."
-Expected response: Warm color temperature (2700-3000K) reducing anxiety; daylighting where possible maintaining circadian support; controlled illumination avoiding harsh shadows; acoustic absorption reducing noise stress; soft material textures (warm wood, fabric) creating psychological safety; smooth transitions and rounded edges supporting safety and comfort.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 2: Sensory Problem-Solving**
-Stem: "An open-plan office shows high employee stress and low productivity despite good lighting design. Analyze possible acoustic and material-related causes. Propose sensory design solutions maintaining open layout while reducing stress."
-Expected response: Identification of excessive reverberation from hard finishes and open circulation; acoustic paneling reducing sound transmission; soft furnishings and textures warming the space; strategic material variation breaking visual and sensory monotony; consideration of daylighting glare management.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 
-
-<ExamTip>**Pattern 3: Climate-Responsive Sensory Design**
-Stem: "Design the acoustic and material strategy for a school in Davao with high humidity, intense solar heat, and inadequate cooling systems. How do sensory design principles address both thermal comfort and occupant stress?"
-Expected response: Acoustic design managing high humidity's impact on material absorption; hard, smooth finishes (ceramic, concrete) supporting hygiene and thermal function balanced with warm material accents; daylighting strategy with deep overhangs and intelligent shading; consideration of material durability in tropical weathering.</ExamTip>
-
-
-<ExamTip>**Pattern 4: Material Selection and Justification**
-Stem: "Select interior finishing materials for a hospital ICU balancing infection control requirements, staff stress reduction, and patient comfort. Justify acoustic, thermal, and haptic implications of your choices."
-Expected response: Specification of wipeable, hygienic surfaces (ceramic, polished concrete) where infection control demands, balanced with warm materials, soft furnishings, and textile elements in patient areas; acoustic considerations separating staff work areas from patient spaces; material texture and temperature supporting psychological comfort.</ExamTip>
-
-
-<ExamTip>**Pattern 5: Temporal Sensory Design**
-Stem: "Design the illumination system for a corporate headquarters considering daily and seasonal changes. How does the lighting strategy support circadian alignment while accommodating the intense equatorial sun?"
-Expected response: Daylighting fenestration with seasonal shading adjustment; variable artificial lighting supplementing daylighting with intensity and color temperature shifts throughout the day; integration of daylight harvesting controls; consideration of glare management throughout day and year.</ExamTip>
-
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Ignoring acoustic requirements" correction="Designing beautiful spaces with reflective surfaces producing excessive reverberation and noise stress." context="Acoustic design cannot be an afterthought; it must inform material selection and layout from the beginning." />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Static lighting design" correction="Specifying constant artificial illumination without considering circadian effects, daylighting integration, or psychological impact of color temperature." context="Modern buildings require responsive, variable lighting systems." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Neglecting material warmth in climate control. Using exclusively hard, cool finishes for thermal or hygiene reasons without providing warm material accents for human sclea and psychological comfort. Balanced material pleattes serve both functional and psychological needs.", "Overcomplicating sensory design. Adding unnecessary sensory elements (decorative materials, background music, artificial scents) without functional justification. Effective sensory design is restrained and purposeful.", "Ignoring proprioceptive dimensions. Designing stairs, ramps, and circulation without attention to human sclea and comfortable movement. Dimensional accuracy (riser height, stair depth, handrail placement) directly affects safety and psychological confidence.", "Assuming visual clarity equals quality. Bright, clean, visually well-organized spaces can produce occupant stress if acoustic, material, and thermal sensory dimensions are neglected. Occupant well-being requires multisensory attention."]} />
-
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
 
 ## Key Terms
 
@@ -125,7 +109,7 @@ Expected response: Daylighting fenestration with seasonal shading adjustment; va
 
 **Soundscape** — Acoustic character of environment including all sound sources (background noise, water features, intentional sound) and their integration into coherent acoustic experience.
 
-<Tip>**Sensory Design Checklist:** For any space design on the LEA, verify: (1) Daylighting strategy with variable intensity, (2) Acoustic reverberation target for the space type, (3) Material texture balance (hard + soft), (4) Proprioceptive comfort (stairs, ramps, handrails). All four must be addressed.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0014 component="Tip" status="preserved"]
 
 ## Related Articles
 

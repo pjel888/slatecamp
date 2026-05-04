@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply zoning ordinance constraints to specific development proposals, verify permitted land uses, calculate FAR and lot coverage, identify variances or exceptions required, and prepare zoning compliance documentation for building permit applications.
+
 Zoning analysis at the site level applies regulatory constraints to a specific development proposal. The designer must verify that proposed land uses comply with the adopted zoning ordinance, understand permitted uses and their restrictions, and identify any variances or exceptions required.
+
 
 ## Core Concept
 
@@ -33,6 +37,13 @@ In Philippine municipal zoning ordinances, agricultural zones remain extensive i
   Remember: PD 1067 water easements (3m urban/20m agricultural/40m forest) apply
   regardless of zoning [citation:1][citation:6].
 </Tip>
+
+
+**Exam Tip:** Apply zoning in order: (1) verify zone classification on zoning map, (2) verify proposed use is permitted in the zone, (3) check dimensional requirements (FAR, setbacks, height), (4) identify required variances. Process is tested.
+
+## Cross-References
+
+See **LEA-PLAN-001-05** (CLUP Process) for CLUP and zoning ordinance background, **LEA-PLAN-002-04** (Land Use Planning) for zoning fundamentals, and **LEA-DSGN-011-03** (Site Plans) for plan documentation.
 
 ## Common Mistakes
 

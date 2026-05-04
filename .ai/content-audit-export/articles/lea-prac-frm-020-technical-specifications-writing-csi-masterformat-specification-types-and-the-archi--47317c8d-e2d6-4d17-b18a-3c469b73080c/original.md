@@ -1,12 +1,30 @@
 ## Technical Specifications Writing—CSI MasterFormat, Specification Types, and the Architect's Responsibility
 
-<JSX>null</JSX>
+<ExamTip>
+Focus on the key concepts in this section for the Licensure Examination for Architects.
+</ExamTip>
 
-Specifications are written descriptions of materials, products, methods, and quality standards for construction. Together with architectural drawings, specifications form the contract documents that bind builder and client. Poorly written specifications lead to disputes (what was the client entitled to?), cost disputes (did the bid price match what the specification required?), and quality problems (contractor supplied inferior material because specification was vague). Architects bear significant responsibility for specification quality.
+
+
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe technical specification writing and the CSI MasterFormat system.
+
+<Tip>
+Memorize these items — they appear frequently on the exam.
+</Tip>
+
+- Distinguish specification types: prescriptive, performance, proprietary.
+- Explain the architect's role in preparing specifications.
+- Identify the relationship between drawings and specifications.
+
+
 
 ### The Purpose and Legal Status of Specifications
 
-Specifications establish what the contractor must build. They define product brands and models (or acceptable equivleants), dimensions, installation methods, quality standards, testing requirements, and warranty obligations. Unlike drawings that show geometry and relationships, specifications convey material properties and construction performance requirements in text.
+Specifications establish what the contractor must build. They define product brands and models (or acceptable equivalents), dimensions, installation methods, quality standards, testing requirements, and warranty obligations. Unlike drawings that show geometry and relationships, specifications convey material properties and construction performance requirements in text.
 
 Specifications have legal force. Courts interpret them as part of the construction contract. If the specification says "brick must be Grade A medium-hard clay brick," the contractor must supply that grade. If the specification is silent, the contractor may supply Grade B, and courts would likely uphold the contractor's lower-cost choice. Therefore, architects must be precise and complete.
 
@@ -18,7 +36,7 @@ Using MasterFormat ensures that specifications are organized logically, consulta
 
 ### Types of Specifications: Prescriptive vs. Performance
 
-_Prescriptive specifications_ describe exactly what the contractor must use. Example: "Supply and install bricks conforming to ASTM C62, Grade A, from either Vung Tau Ceramics or equivleant approved by the architect. Install using Portland cement mortar Type N, 10 mm joints, in running bond pattern." Prescriptive specifications are detailed and leave little to contractor discretion. They are appropriate when the architect has specific product preferences, when aesthetic appearance is critical, or when performance requirements are difficult to verify.
+_Prescriptive specifications_ describe exactly what the contractor must use. Example: "Supply and install bricks conforming to ASTM C62, Grade A, from either Vung Tau Ceramics or equivalent approved by the architect. Install using Portland cement mortar Type N, 10 mm joints, in running bond pattern." Prescriptive specifications are detailed and leave little to contractor discretion. They are appropriate when the architect has specific product preferences, when aesthetic appearance is critical, or when performance requirements are difficult to verify.
 
 _Performance specifications_ define the end result without prescribing how to achieve it. Example: "Exterior walls shall resist water infiltration. Submit evidence of compliance through ASTM E96 water vapor transmission testing and ASTM E331 water penetration testing. All failures observed during final inspection shall be corrected." Performance specifications encourage contractor innovation and may reduce cost, but they require the architect to clearly define acceptance criteria.
 
@@ -30,7 +48,7 @@ Every specification section should include: (1) _Part 1 - General_ (scope of wor
 
 _General section_ sets the scope. What work is included? What standards apply (Philippine Building Code, ASTM, ISO)? What submittals must the contractor provide (product samples, test reports, warranties)? What quality assurance and testing is required? A clear General section prevents the contractor from claiming scope ambiguity.
 
-_Products section_ defines materials, finishes, and performance. Brand names should be avoided unless necessary for aesthetic or technical reasons; instead, specify performance criteria and allow equivleant products subject to architect approval. For example, instead of "Sherwin-Williams ProClassic exterior paint," specify "Acrylic latex exterior paint, VOC not to exceed 50 g/L, minimum 5-year weatherability per ASTM D3274."
+_Products section_ defines materials, finishes, and performance. Brand names should be avoided unless necessary for aesthetic or technical reasons; instead, specify performance criteria and allow equivalent products subject to architect approval. For example, instead of "Sherwin-Williams ProClassic exterior paint," specify "Acrylic latex exterior paint, VOC not to exceed 50 g/L, minimum 5-year weatherability per ASTM D3274."
 
 _Execution section_ describes installation methods, tolerances, and quality standards. For concrete, specify forming tolerances, finish surface (smooth troweled, broom finish), protection from weather, and curing time. For carpentry, specify fastening methods, joint details, and gaps. Clear execution details reduce disputes during construction.
 
@@ -55,3 +73,23 @@ As design evolves, specifications may need updates. Design Development specifica
 ### Professional Liability and Specification Negligence
 
 If a poorly written specification allows the contractor to supply inferior material, or if a missing specification causes ambiguity, the architect may bear responsibility. Insurance and professional standards require that architects produce clear, complete specifications. For complex projects, specification review by a dedicated specification consultant may improve quality.
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)
+
+
+<Note>
+This article covers foundational material. Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards.
+</Note>

@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Architectural coatings—paints, enamels, epoxies, polyurethanes, stains, and specialty finishes—protect and beautify surfaces while managing environmental impact. The LEA tests your ability to specify coatings by resin type, VOC compliance, and substrate compatibility.
-
+Classify paint and coating systems (latex, oil-based, epoxy, polyurethane, stain, varnish, enamel, textured) by binder type, durability, sheen level, cleanability, and appropriate substrate for interior and exterior architectural applications.
 ## Core Concept
 
 Paint systems consist of binder (resin), solvent, pigment, and additives. The binder determines performance: latex (acrylic or vinyl acrylic) uses water as solvent and offers low odor and easy cleanup; oil-based enamel uses mineral spirits and offers superior durability on metal; epoxy uses two-part curing for maximum adhesion and chemical resistance; polyurethane offers flexibility and UV resistance; lacquer provides rapid drying and high gloss but requires ventilation; stain penetrates wood fibers without forming a film.
@@ -65,3 +65,10 @@ Anti-slip coatings gain importance as BP 344 accessibility enforcement increases
 <WikiMistakeCard mistake="Calculating paint volume without accounting for spreading rate, under-budgeting materials" correction="Coverage rate (8-12 m²/L) determines volume needed. A 5000 m² wall at 10 m²/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%)." />
 
 <WikiMistakeList mistakes={["Specifying standard latex for wood without stain-blocking primer, allowing tannins to bleed through", "Failing to account for recoat time in project schedule (16-24 hours for oil enamel vs. 2-4 hours for latex)", "Over-specifying premium paint for low-visibility or protected areas (cost optimization opportunity)", "Mixing incompatible systems (oil topcoat over latex primer, or vice versa) without sanding and re-priming", "Applying anti-slip coating to interior floors without specifying ramp-specific product and DFT"]} />
+
+## Related Articles
+
+See also within Interior Finishes: **lea-matl-007-01-core-concept**, **lea-matl-007-02-core-concept**, **lea-matl-007-03-core-concept**, **lea-matl-007-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

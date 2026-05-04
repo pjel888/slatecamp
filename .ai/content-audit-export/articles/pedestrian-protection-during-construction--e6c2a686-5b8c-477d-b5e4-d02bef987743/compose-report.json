@@ -1,18 +1,26 @@
 {
   "article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
   "slug": "pedestrian-protection-during-construction",
-  "generated_at": "2026-05-03T13:44:10.884Z",
-  "original_hash": "sha256:51580b84d29099811e05296356f6894dded7c14cca394436925b2a4b97e0c423",
-  "normalized_hash": "sha256:05f5266638ad359dea12c50d642f3f4946d195b11972e25061a770457554ff0d",
-  "candidate_hash": "sha256:2b85c24a49fc89d0e8be75fa5a558d6839cc4539ec34eac34ef10084cb217c76",
+  "generated_at": "2026-05-04T00:05:38.088Z",
+  "original_hash": "sha256:982fea044543523cbbeba410520617dc780b4f8c141816440fc256e1bf8293fa",
+  "normalized_hash": "sha256:8f7e723ec018682af963de617fe1a114479db469bdaf0604b242b7140a6a7a7d",
+  "candidate_hash": "sha256:8f7e723ec018682af963de617fe1a114479db469bdaf0604b242b7140a6a7a7d",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

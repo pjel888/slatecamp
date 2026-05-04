@@ -3,8 +3,6 @@
 After reading this article, you should be able to:
 
 Apply environmental regulations for tree preservation and habitat protection during site development: identify protected species under DENR regulations; calculate tree preservation zone radii; determine when an Environmental Compliance Certificate (ECC) is required; and apply DENR buffer requirements for developments near protected areas and waterways.
-**An Immersive LEA Review Module**
-
 ---
 
 ## The Real-World Scenario (The Hook)
@@ -16,11 +14,6 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 ## Core Concepts
 
 [SLATECAMP_UI_BLOCK:ui_0046 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory Aid: "E-E-T = EIS, ECA, Tree Permit."** Three regulatory requirements for flora/fauna: EIS System (PD 1586), ECA (Environmentally Critical Areas), Tree Cutting Permit (PD 705) — separate from building permit, required by DENR.
-[/SLATECAMP_UI_BLOCK]
-
 
 - **Environmental Impact Statement (EIS) System (PD 1586 & DENR DAO 2003-30):** The Philippine EIS System, not PD 1096, is the governing framework for evaluating ecological impacts of development projects. Projects located in or adjacent to Environmentally Critical Areas (ECAs) — such as watersheds, mangrove swamps, coral reef areas, habitats of endangered species, and national parks — are required to secure an ECC from the DENR-EMB before construction.
 
@@ -35,11 +28,6 @@ Extracted summary:
 ## The Hard Data (Cheat Sheet)
 
 [SLATECAMP_UI_BLOCK:ui_0047 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Philippine Application:** A 2-hectare development in Antipolo with mature Narra trees needs: (1) ECC from DENR-EMB, (2) Tree Cutting/Transplant Permit, (3) Wildlife Gratuitous Permit if threatened species present. RPZ = 12× DBH on site plan.
-[/SLATECAMP_UI_BLOCK]
-
 
 | Parameter | Requirement / Standard | Governing Law / Regulation |
 |---|---|---|
@@ -61,11 +49,6 @@ Extracted summary:
 ## Crucial Formulas & Computations
 
 [SLATECAMP_UI_BLOCK:ui_0048 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Pattern — Agency Confusion Trap:** DENR-EMB = EIS System and ECC issuance (PD 1586). OBO = Building permit under PD 1096. If a question says "who issues the ECC?" the answer is DENR-EMB, NOT the OBO.
-[/SLATECAMP_UI_BLOCK]
-
 
 While flora/fauna preservation is primarily regulatory and qualitative, two quantitative tools frequently appear in EIA studies for site development:
 
@@ -114,12 +97,7 @@ This metric is used in EIA reports to demonstrate the ecological value of existi
 
 ---
 
-
 [SLATECAMP_UI_BLOCK:ui_0049 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ EXAM WARNING: RPZ = 12 × DBH (measured at 1.4 m above grade). Do NOT confuse with 5-meter PHIVOLCS fault buffer (geology) or 3-40 m PD 1067 easement (hydrology). Each has its own formula.
-[/SLATECAMP_UI_BLOCK]
 
 ## Active Recall Questions
 
@@ -162,3 +140,5 @@ D. 12.00 meters
 
 **Microclimate Analysis**, **Hydrology In Site Planning**, **Topography And Slope Analysis**, **Geological Hazards**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

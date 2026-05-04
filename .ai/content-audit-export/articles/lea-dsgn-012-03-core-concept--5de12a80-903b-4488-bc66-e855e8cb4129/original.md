@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Read contour maps and calculate slopes (%, degrees, ratios), determine cut and fill volumes, design positive drainage grading (2% minimum for paved surfaces), apply drainage to direct water away from buildings, and verify erosion control measures.
+
 Grading and drainage are the physical foundations of site development. Understanding contour reading, slope calculation, and drainage principles ensures that water moves safely away from buildings, preventing flooding, foundation damage, and landscape erosion. This is among the most calculation-heavy topics in LEA-DSGN.
+
 
 ## Core Concept
 
@@ -61,7 +65,7 @@ Slope % = (Elevation Change ÷ Horizontal Distance) × 100
 
 **Surface Drainage Minimum:** 2% slope away from building perimeters (1:50 ratio)
 
-**Contour Interval and Area:** On a 1:100 sclea plan with 1m contour intervals, each contour line represents a 1m vertical change. The spacing between contours (measured on the plan) indicates slope steepness.
+**Contour Interval and Area:** On a 1:100 scale plan with 1m contour intervals, each contour line represents a 1m vertical change. The spacing between contours (measured on the plan) indicates slope steepness.
 
 **Grading Accuracy Standards:**
 - Finished grades within ±0.1m of design elevation (site engineering standard)
@@ -97,9 +101,16 @@ Calculate the required length of a ramp given rise and maximum allowable gradien
 Estimate whether a site grading plan will require soil import/export by comparing average cut depth to average fill depth across the site.
 
 **Pattern 5: Contour Reading Under Pressure**
-Multiple contour maps are presented; identify which represents the steepest terrain, or calculate slopes from maps with varying scleas and contour intervals.
+Multiple contour maps are presented; identify which represents the steepest terrain, or calculate slopes from maps with varying scales and contour intervals.
 
 <Tip>**Slope % Memory Aid:** Slope % = Rise ÷ Run × 100. For quick estimates: 1:10 slope ≈ 10%, 1:5 ≈ 20%, 1:3 ≈ 33%. Pedestrian ramp is 1:20 (≈5%, BP 344 2024 IRR), vehicle ramp is 1:6 (≈17%). Contours close together = steep; far apart = gentle.</Tip>
+
+
+**Exam Tip — ERR-DSGN-014:** Minimum slope for paved surfaces = 2% (20mm/m). Minimum for unpaved/graded areas = 1.5%. Maximum slope for parking areas = 5%. Slope formula: % = rise/run × 100.
+
+## Cross-References
+
+See **LEA-DSGN-012-02** (Site Development) for grading within site planning, **LEA-PLAN-005-05** (Site Grading) for comprehensive grading analysis, and **LEA-PLAN-005-06** (Drainage) for stormwater management integration.
 
 ## Common Mistakes
 

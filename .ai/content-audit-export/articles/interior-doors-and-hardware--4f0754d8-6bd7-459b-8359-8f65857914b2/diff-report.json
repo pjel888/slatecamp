@@ -1,38 +1,45 @@
 {
   "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
   "slug": "interior-doors-and-hardware",
-  "generated_at": "2026-05-03T13:45:35.880Z",
-  "old_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "new_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "original_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "normalized_hash": "sha256:5b72342f866fbe867c6f1a478940f5b0a82e8687e39672a7ddaf86d001c77430",
-  "candidate_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "changed": false,
-  "changed_line_count": 0,
-  "inserted_line_count": 0,
+  "generated_at": "2026-05-04T00:07:20.666Z",
+  "old_hash": "sha256:f4fc7ab7f90a874039710eff9dd66caefd1045c272e58643699ff6256117cf27",
+  "new_hash": "sha256:dcfa44480d0b8899ebb3616edc07c0cc36c8cafba65ca7ff806e2216d8083113",
+  "original_hash": "sha256:f4fc7ab7f90a874039710eff9dd66caefd1045c272e58643699ff6256117cf27",
+  "normalized_hash": "sha256:dcfa44480d0b8899ebb3616edc07c0cc36c8cafba65ca7ff806e2216d8083113",
+  "candidate_hash": "sha256:dcfa44480d0b8899ebb3616edc07c0cc36c8cafba65ca7ff806e2216d8083113",
+  "changed": true,
+  "changed_line_count": 96,
+  "inserted_line_count": 17,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 2,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 0,
-    "inserted": 0,
+    "changed": 96,
+    "inserted": 17,
     "deleted": 0,
     "original_line_count": 251,
-    "candidate_line_count": 251
+    "candidate_line_count": 268
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002"
+    ],
+    "changed_count": 2
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 2 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

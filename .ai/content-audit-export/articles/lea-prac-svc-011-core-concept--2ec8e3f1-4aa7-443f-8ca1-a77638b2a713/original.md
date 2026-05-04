@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define landscape architecture services within the architect's scope.
+- Describe site planning, planting design, and outdoor space programming.
+- Explain how landscape services are coordinated with building design.
+- Identify the architect's role in landscape design vs. the landscape architect's role.
 
 SPP Doc 209 governs Professional Architectural Consulting Services (PACS) — the framework for international consulting engagements and capacity building within the Philippine architecture profession. The LEA tests your knowledge of consulting arrangement types, knowledge transfer mechanisms, and the policy foundation rooted in RA 9266 and its IRR.
 
@@ -6,9 +13,9 @@ SPP Doc 209 governs Professional Architectural Consulting Services (PACS) — th
 
 Professional Architectural Consulting Services address the specialized needs of international projects and capacity development within the Philippine architecture profession. SPP Doc 209 establishes guidelines for consulting services that strengthen national capability while responding to foreign competition. The framework reflects Letter of Instruction No. 1000 (March 20, 1980) and Standard Guidelines on Consultancy and Consulting Services. These services enable Filipino architects to participate in global practice while developing emerging professionals.
 
-### Rationlea for Consulting Services in Philippine Practice
+### Rationale for Consulting Services in Philippine Practice
 
-Philippine architects face competition from international consultants for complex, large-sclea projects requiring specialized expertise. Consulting services provide mechanisms for knowledge transfer and professional development. Foreign consultants bring experience from advanced economies and established practices. Filipino architects can leverage consulting arrangements to strengthen capabilities and secure project participation.
+Philippine architects face competition from international consultants for complex, large-scale projects requiring specialized expertise. Consulting services provide mechanisms for knowledge transfer and professional development. Foreign consultants bring experience from advanced economies and established practices. Filipino architects can leverage consulting arrangements to strengthen capabilities and secure project participation.
 
 ### Strategy for Strengthening National Capability
 
@@ -33,3 +40,33 @@ Consulting service compensation reflects the consultant's expertise level, engag
 ### Knowledge Transfer and Institutional Development
 
 Consulting services create opportunities for structured knowledge transfer through mentoring, training, and collaborative project work. Documentation of methodologies, processes, and technical decisions supports long-term institutional learning. Regular meetings and reviews facilitate communication and ensure alignment with project objectives. Successful consulting relationships establish foundations for ongoing professional relationships and future collaboration opportunities.
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+
+<ProcessFlow>
+<ol>
+  <li><strong>Initiation</strong> — Client consultation and scope definition</li>
+  <li><strong>Proposal</strong> — Fee structure and contract execution</li>
+  <li><strong>Service Delivery</strong> — Performance per SPP document</li>
+  <li><strong>Completion</strong> — Turnover and documentation</li>
+</ol>
+</ProcessFlow>
+
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)

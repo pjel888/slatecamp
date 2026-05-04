@@ -42,29 +42,12 @@ The competition secretariat manages submission reception, document organization,
 Competition conditions establish submission requirements, intellectual property rights, compensation for winning and selected designs, and timeline specifications. Professional conditions require truthful representations, ethical conduct, and respect for competitors' intellectual contributions. Conditions address publication rights, exhibition arrangements, and design team acknowledgment. Clear conditions prevent disputes and maintain professional standards throughout the competitive process.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: - <strong>Initiation</strong> — Client consultation and scope definition
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=\"irr\"
-- Props: section=\"SPP Documents\"
-- Props: title=\"Professional Practice Framework\"
-- Text: SPP Documents 201–209 establish standards for architectural services scope, fee 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -80,3 +63,5 @@ Extracted summary:
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

@@ -3,6 +3,14 @@
 Contemporary architectural discourse is defined by digital design methods, data-responsive systems, and biomimetic strategies that blur boundaries between structure, ornament, and performance. The LEA tests whether you understand not merely stylistic trends but the underlying philosophical shifts: from human intuition to algorithmic optimization, from sculptural form to behavioral simulation, from industrial reproduction to personalized digital fabrication.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define parametric design systems, computational biomimicry, and AI-assisted design as overlapping frameworks in contemporary architectural practice.
+- Explain how algorithmic form-generation differs from traditional intuition-based design.
+- Identify how digital fabrication and BIM transform architectural workflows from design through construction.
+
 ## Core Concept
 
 Contemporary architecture has fundamentally shifted its epistemology—how architects *know* what to build. Three overlapping frameworks now dominate professional discourse: **parametric design systems** (algorithmic form-generation), **computational biomimicry** (learning from biological systems), and **AI-assisted design** (machine learning for program optimization and form-finding). These are not stylistic preferences but methodological revolutions.
@@ -17,11 +25,11 @@ Parametric design treats architecture as a responsive system where form continuo
 
 Patrik Schumacher's theoretical framework (codified in "Parametricism as Global Style," 2010) proposes this is the first truly comprehensive style of the digital age. Unlike postmodernism's irony or deconstructivism's philosophical fragmentation, parametricism claims ideological coherence: **ornament returns as performance visualization**. A parametrically modulated facade isn't decoration—it's a thermal map rendered in material form. Zaha Hadid Architects exemplifies this: the Port House Antwerp (2016) features spiraling internal ramps where every curve responds to programmatic adjacency and structural efficiency. The form appears organic and complex, but every element is parametrically constrained.
 
-BIG (Bjarke Ingels Group) applies parametric logic to urban and social scleas. Amager Bakke (Copenhagen, 2017) is a waste-to-energy facility that parametrically optimizes slope angles for structural efficiency, daylighting penetration, and recreational activation (slopes become skiable in winter). The building refuses the traditional factory-as-shed typology—it is simultaneously infrastructure, landscape, and public amenity, with every dimension algorithmically justified.
+BIG (Bjarke Ingels Group) applies parametric logic to urban and social scales. Amager Bakke (Copenhagen, 2017) is a waste-to-energy facility that parametrically optimizes slope angles for structural efficiency, daylighting penetration, and recreational activation (slopes become skiable in winter). The building refuses the traditional factory-as-shed typology—it is simultaneously infrastructure, landscape, and public amenity, with every dimension algorithmically justified.
 
 **Digital Fabrication and Bespoke Manufacturing**
 
-Parametric design requires fabrication methods equally precise and variable. CNC (computer numerical control) mills, 3D printers, and robotic arms can now produce complex, non-standardized components at near-industrial sclea and cost. This dissolves the historical binary: mass production no longer demands geometric standardization.
+Parametric design requires fabrication methods equally precise and variable. CNC (computer numerical control) mills, 3D printers, and robotic arms can now produce complex, non-standardized components at near-industrial scale and cost. This dissolves the historical binary: mass production no longer demands geometric standardization.
 
 The Heydar Aliyev Center (Baku, 2013) by Zaha Hadid features continuously curved surfaces impossible to construct with traditional formwork. The facade and interior walls were parametrically defined, CNC-fabricated as unique panels and assembled according to digital coordinates. No two components are identical, yet production remains efficient because the manufacturing logic mirrors the design logic.
 
@@ -133,3 +141,10 @@ Critical distinction: AI-optimized designs risk homogenization if all practition
 **Procedural Generation** — Algorithmic system that generates diverse outputs (streetscapes, floor plans, facades) from consistent rules, ensuring variation within coherence.
 
 **Embodied Carbon** — Carbon emissions embedded in building materials and construction processes (mining, manufacturing, transport) distinct from operational carbon.
+
+## Related Articles
+
+See also within Contemporary Movements & Discourse: **lea-theo-007-01-core-concept**, **lea-theo-007-09-core-concept**, **lea-theo-007-10-core-concept**, **lea-theo-007-11-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

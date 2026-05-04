@@ -1,8 +1,14 @@
 ## Per Diem, Retainer, and Honorarium — Definitions, Scope, and Philippine Application
 
-<JSX name="ArticleHeader" article="LEA-PRAC-CMP-010" />
 
-Per Diem, Retainer, and Honorarium represent specialized compensation methods used for specific professional services that do not fit standard design fee structures. These methods provide flexibility for limited-scope services, ongoing advisory relationships, or professional participation in specialized roles. Understanding when and how to apply each method ensures transparent compensation for services provided outside traditional design deliverables.
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define per diem, retainer, and honorarium as compensation types.
+- Distinguish each method by scope and billing basis.
+- Explain when each method is used in Philippine practice.
+- Apply fee method selection to specific service scenarios.
 
 ### Per Diem Compensation
 
@@ -11,6 +17,12 @@ Per Diem (Latin for "per day") establishes a daily fee for the architect's time 
 Per Diem rates should be established by mutual agreement between architect and client per UAP-APOA SPP Documents. Rates vary based on the architect's experience level, specialization, and the work's nature. The engagement contract must specify the agreed daily rate and what constitutes a billable day. The contract should specify what activities constitute a billable day (a full day on-site, multiple site visits in one day, or partial-day visits) and whether travel days are billable.
 
 Per Diem works well for Construction Administration when the architect's on-site presence is intermittent or variable in intensity. Rather than estimating total hours (which is uncertain during construction), the architect and client agree to specific on-site visit frequency (twice weekly, for example) at a negotiated Per Diem rate. The contract specifies whether the rate includes travel time or whether travel is separate.
+
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
+
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
+- Text: Note: Per Diem rates are distinct from hourly rates. A Per Diem covers a full day regardless of hours worked, while hourly rates charge by actual time spent. The contract must clearly specify which method applies to avoid billing disputes.
+[/SLATECAMP_UI_BLOCK]
 
 Per Diem is also appropriate for specialized consultation where the architect provides expert analysis or recommendations. A facade consultant providing limited analysis, a sustainable design expert advising on building performance, or a heritage conservation specialist providing periodic guidance might charge Per Diem rates for their specialized time.
 
@@ -38,6 +50,10 @@ In Philippine architecture practice, these methods are used for specialized role
 
 These methods work well in combination with primary project fees. An architect might charge percentage-of-PCC for design services (Schematic through Contract Documents) and Per Diem or hourly rates for Construction Administration site observation. A client might contract for design services under one agreement and establish a separate retainer for ongoing strategic consultation.
 
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
+
 ### Documentation and Clarity
 
 Regardless of which method applies, the contract must clearly document:
@@ -53,3 +69,18 @@ Clear documentation prevents misunderstandings regarding compensation and servic
 ### Comparison with Standard Design Fees
 
 Per Diem, Retainer, and Honorarium should complement—not replace—appropriate compensation for primary design services. An architect providing design through Contract Documents should charge percentage-of-Project-Construction-Cost or Multiple-of-Direct-Personnel-Expense per UAP-APOA SPP Doc. 202; additional Per Diem or hourly rates should apply only to services beyond this primary engagement. Clients sometimes attempt to use retainers or Per Diem rates to avoid paying standard design fees; the architect should clearly document what services are covered under each compensation method.
+
+---
+
+## Related Articles
+
+- [Project Classification Groups](lea-prac-cmp-001)
+- [Factors Determining Classification](lea-prac-cmp-002)
+- [Project Construction Cost](lea-prac-cmp-003)
+- [Schedule of Payments](lea-prac-cmp-004)
+- [MDPE Formula](lea-prac-cmp-006)
+- [MDPE Multipliers](lea-prac-cmp-007)
+- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
+- [Reimbursable Expenses](lea-prac-cmp-011)
+- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)

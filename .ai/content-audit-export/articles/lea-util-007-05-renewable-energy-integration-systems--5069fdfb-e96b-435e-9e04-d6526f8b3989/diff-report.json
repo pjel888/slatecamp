@@ -1,38 +1,43 @@
 {
   "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
   "slug": "lea-util-007-05-renewable-energy-integration-systems",
-  "generated_at": "2026-05-03T13:44:54.332Z",
-  "old_hash": "sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e",
-  "new_hash": "sha256:a5d6c690c5047f1b5637d495096164a24039c305dda6bbfd8b406151acd42980",
-  "original_hash": "sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e",
-  "normalized_hash": "sha256:e077f0c9409b3dfd90e328a712eda84ef9e307d72e47f3c12467f6058113354b",
-  "candidate_hash": "sha256:a5d6c690c5047f1b5637d495096164a24039c305dda6bbfd8b406151acd42980",
+  "generated_at": "2026-05-04T00:06:31.368Z",
+  "old_hash": "sha256:a5d6c690c5047f1b5637d495096164a24039c305dda6bbfd8b406151acd42980",
+  "new_hash": "sha256:1845a7742dc8e481fc3b9210f5678bbd0b249e8c375af981430a3d03814b0b54",
+  "original_hash": "sha256:a5d6c690c5047f1b5637d495096164a24039c305dda6bbfd8b406151acd42980",
+  "normalized_hash": "sha256:1845a7742dc8e481fc3b9210f5678bbd0b249e8c375af981430a3d03814b0b54",
+  "candidate_hash": "sha256:1845a7742dc8e481fc3b9210f5678bbd0b249e8c375af981430a3d03814b0b54",
   "changed": true,
-  "changed_line_count": 183,
-  "inserted_line_count": 9,
+  "changed_line_count": 178,
+  "inserted_line_count": 3,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 1,
-  "ui_blocks_candidate_count": 1,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 1,
   "ui_blocks_count": 1,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 1,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 183,
-    "inserted": 9,
+    "changed": 178,
+    "inserted": 3,
     "deleted": 0,
-    "original_line_count": 178,
-    "candidate_line_count": 187
+    "original_line_count": 187,
+    "candidate_line_count": 190
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0002"
+    ],
+    "changed_count": 1
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 1 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
 }

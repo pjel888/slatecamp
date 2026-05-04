@@ -5,7 +5,6 @@ Read and produce site plans showing property boundaries, setback compliance, bui
 
 Site plans are scaled drawings that communicate the spatial relationship between a building and its context—showing property boundaries, setback compliance, access, utilities, and landscape. The LEA expects you to read and produce site plans that demonstrate understanding of zoning setback regulations and site organization principles.
 
-
 ## Core Concept
 
 A **site plan** is an orthographic (top-down) view of a property showing the building footprint, adjacent landscape, utilities, and context features at a defined scale. It is the primary communication tool for demonstrating compliance with zoning and development regulations.
@@ -34,6 +33,7 @@ A **site plan** is an orthographic (top-down) view of a property showing the bui
 - **1:100**: For small infill sites; shows detailed parking layout and access.
 
 Site plans communicate not only building placement but also the designer's understanding of site constraints (slope, utilities, access), regulatory compliance (setbacks), and design intent (landscape, circulation, parking strategy).
+<ArticleMedia id="media-lea-dsgn-011-03-core-concept" a type="image" caption="Site Plan Elements — Property Lines, Setbacks, and Site Development" description="Annotated site plan showing: property boundary lines, setback dimensions (front, side, rear per PD 1096 Rule VIII), building footprint, access routes (vehicular and pedestrian), utility easements, landscaping zones, and contour lines." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -77,12 +77,10 @@ A site plan shows 6 parking stalls with a single-direction aisle of width 3.0 m.
 **Pattern 3: Site planning and context coordination**
 A site plan shows a building on a corner lot with utilities, adjacent buildings, access points, and landscape features. The candidate must assess whether the layout creates safe pedestrian access, complies with setbacks, and integrates utilities logically.
 
-<Tip>
-**Memory aid:** "PD 1096 Setback Rule" — For buildings up to 6–9 m, front=4.5 m, sides=2.0 m, rear=2.0 m. For taller buildings (9–15 m), front and rear increase; sides gradually increase. Always check building height first to determine the correct setback row in the table.
-</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 **Exam Tip:** Site plans must show property lines with dimensions, setbacks (front, side, rear), building footprint with dimensions, access driveways, parking layout, and utility connection points. Scale typically 1:200 or 1:500.
+<ArticleMedia id="media-lea-dsgn-011-03-core-concept" a type="image" caption="Site Plan Checklist — Required Elements for Permit Submission" description="Annotated site plan showing all required elements per PD 1096: property boundaries with metes and bounds, building footprint with setbacks, access drives and parking, utility lines (water, sewer, power, telecom), landscaped areas, easements, topography contours, flood hazard overlay, and north arrow with prevailing wind direction." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -90,4 +88,4 @@ See **LEA-DSGN-012-01** (Site Analysis) for site conditions documentation, **LEA
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Applying the wrong setback row for building height; always determine building height (in meters) first, then select the corresponding setback category.","Showing parking stalls at 2.0 m × 4.5 m instead of the standard 2.5 m × 5.0 m; always verify parking dimension standards.","Omitting the north arrow or placing it ambiguously, making orientation unclear to plan readers.","Not showing property lines or boundary dimensions; a site plan without clear property boundaries is incomplete.","Misaligning the building footprint shown on the site plan with the floor plan above it (they should have identical footprint outlines).","Failing to show utility connections (water, sewer, electrical, gas) and their locations relative to the building and property lines.","Using a sclea that is too small, making details (parking, access) illegible; 1:200–1:250 is more appropriate than 1:500 for detailed site review.","Not indicating driveway width or showing insufficient space for fire truck access (minimum 3.5 m for one-way, 6.0 m for two-way)."]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

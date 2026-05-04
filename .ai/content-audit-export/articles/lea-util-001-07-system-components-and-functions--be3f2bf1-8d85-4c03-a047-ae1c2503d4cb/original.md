@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Sanitary drainage systems remove wastewater and human waste from buildings safely and efficiently. The Revised National Plumbing Code of the Philippines governs all design and installation requirements. Understanding system components, pipe sizing, slope requirements, and connection methods is essential for compliance.
+## Learning Goal
 
+Identify sanitary drainage system components — soil stacks, waste pipes, vents, traps, cleanouts, and building drains — and explain the hydraulic principles and code requirements that govern their sizing, slope, and venting.
 ## System Components and Functions
 
 A complete sanitary drainage system consists of five interconnected components:
@@ -47,7 +48,7 @@ Every fixture connected to the sanitary drainage system must include a trap—a 
 - P-traps (lavatory sinks, showers): most common; water seal maintained below the outlet
 - S-traps (older installations): prone to siphonage; not recommended for new construction
 - Each fixture requires its own trap; common traps for multiple fixtures violate code
-- Traps must be accessible for cleaning; concelead traps in walls are prohibited
+- Traps must be accessible for cleaning; concealed traps in walls are prohibited
 
 ## Cleanout Requirements and Spacing
 
@@ -145,3 +146,10 @@ All requirements cited in this article are sourced from:
 - Department of Health Regional Standards for septic tank design and soil percolation testing
 
 <Callout>For LEA examinations, you must cite the specific Plumbing Code section when explaining why a drainage design is compliant or deficient. Examiners expect precise regulatory references.</Callout>
+
+## Related Articles
+
+See also within Plumbing and Sanitary Systems: **lea-util-001-06-core-concept**, **lea-util-001-08-core-concept**, **lea-util-001-09-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

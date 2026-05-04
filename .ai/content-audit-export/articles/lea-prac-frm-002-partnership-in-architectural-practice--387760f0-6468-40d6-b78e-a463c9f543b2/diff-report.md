@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-frm-002-partnership-in-architectural-practice
 
-Generated: 2026-05-03T13:44:57.848Z
+Generated: 2026-05-04T00:06:35.183Z
 Article ID: 387760f0-6468-40d6-b78e-a463c9f543b2
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:af72cc5506e1063fdf0b4b3d2685598b438fe9c20388d975f18fe5ffe2979a42`
-- Normalized: `sha256:a343b420f9a02873149c9463967e4708a47ed77d3018465125bc935cbb88a3ac`
-- Candidate: `sha256:4c6dc357cf64103dd8429fb6d718ff2725ee53a10f238de16dc53f7f70dcd0b5`
+- Original: `sha256:4c6dc357cf64103dd8429fb6d718ff2725ee53a10f238de16dc53f7f70dcd0b5`
+- Normalized: `sha256:e1582302f5445c044c22bf49294b183ebc3a5105960cdea93b34f620c575c74d`
+- Candidate: `sha256:e1582302f5445c044c22bf49294b183ebc3a5105960cdea93b34f620c575c74d`
 
 ## Line summary
 
-- Changed lines: 57
-- Inserted lines: 31
-- Deleted lines: 0
+- Changed lines: 51
+- Inserted lines: 0
+- Deleted lines: 1
 
 ## UI block preservation
 
 - UI blocks expected: 2
-- UI blocks preserved: 2
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 2
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 2 preserved UI block(s).
 
 ## Warnings
 

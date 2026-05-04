@@ -5,7 +5,6 @@ Apply the human settlements framework treating housing within a holistic system 
 
 Human settlements development treats housing within a holistic framework: housing is one component of a settlement system that includes livelihood, services, infrastructure, and community institutions. This integrated approach differs from viewing housing as an isolated supply problem. Key concepts are sustainability, social cohesion, basic services access, and balancing growth with resource carrying capacity.
 
-
 ## Core Concept
 
 A human settlement is an organized spatial cluster of residential, commercial, and civic functions with sufficient density and diversity to sustain economic and social life. Housing is essential but insufficient; human settlements require integrated planning of land use, infrastructure, livelihood opportunities, and community services.
@@ -25,10 +24,11 @@ The integrated settlement development approach emerged from recognition that hou
 **Disaster Risk Reduction:** Post-Yolanda (2013) and post-COVID frameworks emphasize resilience. Settlements must account for typhoon, flood, and seismic hazards. Post-Yolanda no-build zones (40m from mean high tide) reshape coastal settlement patterns. Climate-aware settlement planning is now mandatory in CLUP requirements under **RA 10121** (DRRM Act).
 
 Human settlements development, at its core, views housing as a vector for achieving integrated community well-being—economic, social, environmental, and institutional—rather than as a supply shortage to be solved through construction volume alone.
+<ArticleMedia id="media-lea-plan-003-05-core-concept" a type="image" caption="Human Settlements Framework — Housing Within a Holistic System" description="Radial ecosystem diagram showing housing at center within: livelihood/employment, basic services (water, power, sanitation), infrastructure (roads, drainage, transport), community institutions (schools, health centers, markets). Carrying capacity limits for settlement planning." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
-<WikiExamTable headers=["Settlement Component", "What It Requires", "Philippine Mechanism"] rows=[["**Infrastructure**", "Water, sanitation, electricity, solid waste, transport", "CLUP utilities section; ECC requirement (PD 1586); local utilities master plan"], ["**Livelihood Opportunities**", "Markets, commercial zones, access to employment centers", "CLUP land use mix; zoning for commercial/industrial; transit connectivity"], ["**Social Services**", "Schools, clinics, day care, community centers", "CLUP facility siting; DPWH service radius standards"], ["**Community Governance**", "Barangay organization, community associations", "RA 7160 LGU structure; RA 10121 DRRM local organization"], ["**Environmental Sustainability**", "Carrying capacity; disaster risk limits", "ECC requirement; RA 10121 DRRM integration in CLUP"], ["**Disaster Resilience**", "Hazard mapping; no-build zones; building typologies", "Post-Yolanda framework; PHIVOLCS data; CLUP hazard zones"]] />
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
 
 ## Philippine Context
 
@@ -52,8 +52,7 @@ The shift is from "housing as construction" toward "housing as integrated commun
 
 **Pattern 3 — Sustainability Constraints:** "A proposed settlement in a flood-prone area faces what primary integrated planning challenge?" → Not just housing design, but infrastructure resilience, livelihood vulnerability, and carrying capacity. Test integrates environmental and social factors.
 
-<Tip>Human settlements = integrated system: housing + infrastructure + livelihood + services + governance + sustainability. In-situ upgrading preserves existing community systems.</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 **Exam Tip:** A human settlement is NOT just housing. It requires: land use, infrastructure, livelihood, social services, and community institutions. The LEA tests whether you recognize that settlements are holistic systems, not just shelter.
 
@@ -63,4 +62,4 @@ See **LEA-PLAN-003-04** (Housing Production) for delivery methods, **LEA-PLAN-00
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Treating human settlements development as synonymous with housing production (they are different: one is integrated; one is just construction)","Assuming relocation is always safer than in-situ upgrading (relocation can be more harmful to livelihoods and community cohesion)","Forgetting that livelihood access is a core settlement component (not peripheral; central to survival)","Neglecting disaster risk in settlement planning (climate/seismic hazards now mandatory CLUP components)","Believing CMP is just another housing finance program (it is fundamentally a settlement preservation and community development approach)"]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]

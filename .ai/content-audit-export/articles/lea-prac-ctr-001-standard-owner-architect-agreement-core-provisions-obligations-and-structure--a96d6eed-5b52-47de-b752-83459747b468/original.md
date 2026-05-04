@@ -1,37 +1,78 @@
 ## Standard Owner-Architect Agreement — Core Provisions, Obligations, and Structure
 
+## Learning Goal
 
+After studying this article, you should be able to:
+
+- Identify the core provisions of a standard Owner-Architect agreement.
+- Describe the phase structure (SD, DD, CD, Bidding, CA).
+- Distinguish the Owner-Architect agreement from the construction contract.
+- Explain compensation methods, termination rights, and dispute resolution mechanisms.
 
 The Owner-Architect agreement establishes the terms for design services before construction begins. It operates independently from the construction contract and defines the scope, duration, and compensation for architectural work.
 
-
-
 ### Scope and Phase Structure
 
-The Owner-Architect agreement divides design services into distinct phases, each with defined deliverables and compensation. Schematic Design (SD), Design Development (DD), Construction Documents (CD), Bidding, and Construction Administration (CA) allocate the architect's effort proportionally across the project timeline. These phases are clearly documented in writing and referenced in all correspondence to prevent scope disputes.
+The Owner-Architect agreement divides design services into distinct phases, each with defined deliverables and compensation. The standard allocation per SPP Document 202 is: Schematic Design (SD) at 20%, Design Development (DD) at 20%, Construction Documents (CD) at 30%, Bidding at 5%, and Construction Administration (CA) at 25%.
 
-The agreement explicitly distinguishes Basic Services from Additional Services. Basic Services typically encompass SD through CA on a standard project, while Additional Services—such as building information modeling, renderings, or specialized consulting—are separately defined and billed. This separation prevents cost overruns and ensures both parties understand what is included in the base fee.
+<LawCallout code="uap" section="SPP Doc. 202 - Standard Owner-Architect Agreement">
+Under SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.
+</LawCallout>
 
 ### Architect's Obligations and Authority
 
-The architect serves as the Owner's agent during design and as an impartial contract administrator during construction. This dual role requires clear definition to avoid conflicts of interest. The agreement specifies that the architect must exercise professional judgment in accordance with the standard of care required in the jurisdiction, typically following AIA standards or local practice norms.
+The architect serves as the Owner's agent during design and as an impartial contract administrator during construction. The agreement specifies that the architect must exercise professional judgment in accordance with the standard of care. The architect must prepare drawings and specifications sufficiently detailed for competitive bidding and construction execution, complying with all applicable laws, codes, and regulations.
 
-The architect must prepare drawings and specifications that are sufficiently detailed for competitive bidding and construction execution. These documents must comply with all applicable laws, codes, and regulations. The architect is responsible for coordination between disciplines, site visits to verify contractor compliance, and issuance of certificates required under the construction contract. The agreement should establish frequency of site visits, not as a replacement for the contractor's quality control but as verification of general conformity.
+<ExamTip>
+  **LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from "Owner's agent" during design to "impartial contract administrator" during construction — this dual role is a frequent LEA test point.
+</ExamTip>
 
 ### Compensation and Payment Terms
 
-Compensation is typically structured as a percentage of construction cost, a fixed lump sum, a hourly rate, or a combination thereof. The Owner-Architect agreement must specify which method applies and how that amount is distributed across the five phases. If the project scope, budget, or schedule changes materially during design, the agreement provides the mechanism for fee adjustment.
-
-Payment is due upon completion of each phase or upon submission of deliverables, not upon client acceptance. Retainage, if any, is specified upfront. The agreement should clarify that the architect's fee is separate from consultant fees, which may be reimbursed as direct expenses or included in the architectural fee. Expense reimbursement—for travel, printing, model making—is defined as actual cost plus a markup, or as a lump sum if the scope permits.
+Compensation is typically structured as a percentage of construction cost, a fixed lump sum, an hourly rate, or a combination thereof. Payment is due upon completion of each phase or upon submission of deliverables, not upon client acceptance. The agreement should clarify that the architect's fee is separate from consultant fees, which may be reimbursed as direct expenses.
 
 ### Suspension, Termination, and Liability
 
-The agreement permits the Owner to suspend services without cause, typically with a specified notice period. Suspension does not terminate the contract but allows the Owner to pause work temporarily. Termination may be either for cause (breach of contract) or for convenience (Owner's election), each with different remedies. Upon suspension or termination, the architect compensates for services rendered up to that point and reimburses consultant fees, but does not continue to absorb overhead costs.
-
-Professional liability insurance requirements are typically specified in the agreement, including coverage limits and the architect's obligation to name the Owner as additional insured. The architect's liability is limited to the extent of professional negligence, not strict liability. The agreement often caps total liability at the architect's fee or a specified dollar amount. These limitations do not eliminate the architect's exposure under Article 1723 of the Civil Code, which establishes a 10-year liability period for hidden defects in construction.
+The agreement permits the Owner to suspend services without cause, typically with a specified notice period. Termination may be either for cause (breach of contract) or for convenience (Owner's election). Professional liability insurance requirements are typically specified, including coverage limits and the obligation to name the Owner as additional insured.
 
 ### Change Order and Dispute Resolution
 
-Changes to the scope of design services or project requirements are documented through formal change orders, which adjust the architect's fee and schedule if necessary. Without a change order, work performed outside the original scope becomes a source of dispute. The agreement specifies whether changes require written authorization before work begins or whether verbal authorization is acceptable.
+Changes to scope are documented through formal change orders. Dispute resolution is typically handled through negotiation, mediation, or arbitration as specified. The contract should establish whether disputes are submitted to the architect's professional association, an independent arbitrator, or the courts.
 
-Dispute resolution is typically handled through negotiation, mediation, or arbitration as specified in the agreement. The contract should establish whether disputes are submitted to the Architect's professional association, to an independent arbitrator, or to the courts. Claims for payment, change orders, or suspension are time-barred if not submitted within a specified period, usually 30 days of the triggering event.
+<ProcessFlow>
+  **Owner-Architect Agreement Lifecycle:**
+  Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement
+  Step 2: **Schematic Design** — 20% fee earned upon approval
+  Step 3: **Design Development** — 20% fee earned upon approval
+  Step 4: **Construction Documents** — 30% fee earned upon submission for permit
+  Step 5: **Bidding** — 5% fee earned
+  Step 6: **Construction Administration** — 25% fee earned over project duration
+  Step 7: **Closeout** — Final payment, certificate of completion, document turnover
+</ProcessFlow>
+
+## Common Mistakes
+
+<WikiMistakeList
+  mistakes={[
+    "Confusing the Owner-Architect agreement with the construction contract — they are separate and independent",
+    "Assuming payment is due upon client acceptance — payment is due upon completion/submission of phase deliverables",
+    "Believing suspension and termination are the same — suspension is temporary; termination ends the contract",
+    "Thinking the architect's role is the same throughout — shifts from Owner's agent (design) to impartial administrator (construction)",
+    "Overlooking the requirement for written change orders — verbal authorization for scope changes leads to disputes",
+  ]}
+/>
+
+---
+
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)

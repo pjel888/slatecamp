@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-HVAC system selection in the Philippines requires matching equipment capacity to building loads while accounting for tropical climate demands. This module covers cooling-focused system types, refrigerant standards, and selection methodologies aligned with Philippine Mechanical Engineering Code (PD 1058) and ASHRAE thermal comfort standards.
+## Learning Goal
 
+Distinguish HVAC system types (split-type, window-type, packaged units, VRF/VRV, chilled water, central plant) by their configuration, capacity range, energy efficiency, and appropriateness for different Philippine building typologies and budgets.
 ## System Types and Applications
 
 ### Split-Type Air Conditioning
@@ -30,7 +31,7 @@ A 200 m² residential unit in Metro Manila requires cooling for living, bedrooms
 
 ### Variable Refrigerant Flow (VRF/VRV) Systems
 
-VRF systems vary refrigerant flow to multiple indoor units from a single outdoor condenser. Systems sclea from 4 TR to 80+ TR outdoor capacity with individual zone control.
+VRF systems vary refrigerant flow to multiple indoor units from a single outdoor condenser. Systems scale from 4 TR to 80+ TR outdoor capacity with individual zone control.
 
 _Seasonal Energy Efficiency Ratio (SEER):_ 13–18 SEER (source: Philippine Energy Efficiency Standards, EER ≈ SEER ÷ 3.41)
 _COP range:_ 3.2–4.1 (source: ASHRAE Standards database)
@@ -178,7 +179,7 @@ Example: 3.5 COP = 3.5 × 3.412 ≈ 11.9 EER
 **Philippine Energy Efficiency Standards (source: Energy Efficiency Labeling Scheme, Republic Act 11285 implementing rules, 2023):**
 - Minimum EER: 9.5 EER for split systems ≤24,000 BTU/hr (≈2 TR)
 - Minimum SEER: 13 SEER for VRF systems (seasonal, accounting for part-load operation)
-- Equivleant COP targets: 2.8 COP (split) / 3.8 COP (VRF) to meet minimum standards
+- equivalent COP targets: 2.8 COP (split) / 3.8 COP (VRF) to meet minimum standards
 
 <Example>
 A 5 TR split unit operating 8 hours/day, 365 days/year at design load (25°C outdoor, 28°C indoor design):
@@ -294,3 +295,10 @@ _Q_total_ ≈ 88 + 15 = 103 kW ≈ 29 TR
 6. **Philippine standards** enforce minimum 9.5 EER (split) / 13 SEER (VRF) and mandate PD 1058 compliance for all installations.
 7. **Sizing rule of thumb:** Commercial 500 BTU/hr per m² = ~1.47 kW per m², residential 400 BTU/hr per m² = ~1.17 kW per m² (quick estimate before detailed load calc).
 8. **Commissioning critical:** All systems require leak test, charge verification, and performance rating per PD 1058 Section 8 before handover.
+
+## Related Articles
+
+See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, **lea-util-002-05-core-concept**, **lea-util-002-06-core-concept**, **lea-util-002-07-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

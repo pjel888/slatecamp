@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Elevators are essential vertical transportation systems in multi-story buildings. In the Philippines, buildings with 5 or more stories _must_ include an elevator per PD 1096. Proper design, installation, and maintenance ensure safety, accessibility, and compliance with local regulations including the Accessibility Law (BP 344).
+## Learning Goal
 
+Apply regulatory requirements for elevator design — PD 1096 minimum car dimensions, travel speed, machine room requirements, and BP 344 accessibility clearances — and identify how code requirements differ by building occupancy and number of floors.
 ## Regulatory Framework
 
 ### PD 1096 Requirements
@@ -11,6 +12,19 @@ Mechanical Regulation No. 5 requires at least one passenger elevator with 24-hou
 BP 344 establishes accessibility standards that directly impact elevator design and operation:
 - Minimum car dimensions: 1100 mm × 1400 mm (interior width × depth) per 2024 IRR
 - Minimum door width: 900 mm to accommodate wheelchairs
+
+
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 - Braille buttons and tactile floor indicators on all elevator control panels
 - Audible signals for floor arrival and direction indication
 - Emergency communication systems with visual and audible learts
@@ -126,7 +140,7 @@ When an elevator is idle (typically after 1–5 minutes without calls), the syst
 Standby modes maintain the system's readiness to respond to calls while minimizing wasted energy in low-traffic periods.
 
 ### Hoistway Pressure Relief
-In air-selead hoistways (the shaft enclosure), the piston effect—the compression and rarefaction of air as the elevator moves—can create pressure differentials. Pressure relief vents allow air to escape, reducing energy losses and improving efficiency.
+In air-sealed hoistways (the shaft enclosure), the piston effect—the compression and rarefaction of air as the elevator moves—can create pressure differentials. Pressure relief vents allow air to escape, reducing energy losses and improving efficiency.
 
 ## Maintenance and Inspection
 
@@ -177,3 +191,10 @@ Failure to include all BP 344 requirements—such as Braille buttons, audible si
 ## Conclusion
 
 Vertical transportation via elevators is a critical system in modern Philippine buildings, subject to stringent regulatory requirements under PD 1096, BP 344, and RA 9514. Proper selection of elevator type, capacity, and speed classification—combined with compliance with machine room specifications, seismic safety measures, and energy efficiency standards—ensures that buildings serve their occupants safely, accessibly, and sustainably. Ongoing maintenance and inspection maintain code compliance and system reliability throughout the building's operational life.
+
+## Related Articles
+
+See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, **lea-util-002-04-core-concept**, **lea-util-002-05-core-concept**, **lea-util-002-07-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

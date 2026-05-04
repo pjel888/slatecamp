@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:35.480Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:09.457Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "664bf527-4be5-49fa-be54-33a70244467c",
   "slug": "mastery-professional-practice",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:fd5a3394f92741b964277256b37f78cddbc733f516270f2af0c5aec119da34de",
-  "original_hash": "sha256:c07dba0cc81b38e6822a36840e932795a8386886cfc48c3fb70bd0c21350dbee",
-  "candidate_hash": "sha256:fd5a3394f92741b964277256b37f78cddbc733f516270f2af0c5aec119da34de",
-  "stale_check_passed": false,
+  "original_hash": "sha256:fd5a3394f92741b964277256b37f78cddbc733f516270f2af0c5aec119da34de",
+  "candidate_hash": "sha256:28653f7ce93d844bdee27d425b91ab4e80bf19fb4fa48550cc3c98134c7935b3",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:50:30.702666+00:00"
 }

@@ -1,4 +1,7 @@
 ## Change Orders — Types, Authority Limits, and the Documentation Process
+
+
+<ArticleMedia type="image" caption="Change Order Process Flow — Documentation and Authorization Workflow" description="Flowchart showing the change order lifecycle: Change request submitted → Architect evaluates scope/cost/schedule impact → Owner approval → Change Order issued → Contractor implements → Architect verifies. Decision diamonds for: Does change affect cost? Does change affect schedule? Is change within architect's authority limit? Document flow arrows showing AIA G701 equivalent documentation." />
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -8,9 +11,7 @@ After reading this article, you should be able to:
 - Explain the Architect's authority limits for issuing Change Orders and when Owner authorization is required.
 - Describe the Change Order documentation process and how cost and schedule adjustments are documented and approved.
 
-
 Change orders formalize modifications to the scope of work, establishing new contract terms when conditions require deviation from the original design or scope.
-
 
 ### Definition and Necessity of Change Orders
 
@@ -55,26 +56,9 @@ Over a project's duration, multiple changes accumulate, potentially creating sig
 Disputes frequently arise regarding whether the contractor is entitled to overhead and profit adjustments when multiple changes substantially alter the original contract conditions. Clear change order language addressing pricing methodology for cumulative changes prevents these disputes.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=\"nbcp\"
-- Props: section=\"RA 9266\"
-- Props: title=\"Architecture Act of 2004\"
-- Text: RA 9266 governs architectural practice and contract requirements. Agreements mus
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: - <strong>Proposal</strong> — Scope definition and fee negotiation
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibili
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"10%\\", \\"label\\": \\"Standard Retention\\"}, {\\"value\\": \\"60 days\\", \\"label\\": \\"Payment Period\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"COLA Escalation Max\\"}, {\\"value\\": \\"90%\\", \\"label\\": \\"CD Phase Fee\\"}]\"
-[/SLATECAMP_UI_BLOCK]

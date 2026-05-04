@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Color, texture, light, and shadow are sensory design elements that fundamentally affect spatial perception, emotional response, and functional performance. The LEA tests your understanding of how these elements operate beyond aesthetics—how light creates spatial definition, how shadow reveals form, how texture communicates material honesty, and how color influences perception and wayfinding. These elements appear in questions about design intent, material expression, and spatial quality.</Callout>
+## Learning Goal
 
+Identify and explain how color, texture, light, and shadow function as sensory design elements that fundamentally affect spatial perception, emotional response, and the experience of architectural form.
 ## Core Concept
 
 According to Francis D.K. Ching, sensory elements—color, texture, light, and shadow—are primary tools in architectural design, not secondary decoration. They affect how spaces feel, how forms are perceived, and how functional requirements (visibility, orientation, thermal comfort) are met. An understanding of these elements requires moving beyond visual appearance to grasp their functional, psychological, and emotional roles in shaping architectural experience.
@@ -14,7 +15,7 @@ According to Francis D.K. Ching, sensory elements—color, texture, light, and s
 
 **Hue** is the fundamental property—red, blue, green, and so forth. Hues carry associations: warm colors (reds, oranges, yellows) feel energetic, intimate, advancing; cool colors (blues, greens, purples) feel calm, spacious, receding. An entrance might employ warm colors to invite; a meditation space might employ cool colors to calm. The same room dimensions feel different painted warm versus cool: a warm color reads as more intimate; a cool color reads as more spacious.
 
-**Value** (lightness/darkness) affects perceived sclea and proportion. A light-colored ceiling reads as higher and more spacious; a dark ceiling reads as lower and more intimate. High-value (light) color schemes feel open and airy; low-value (dark) schemes feel enclosed and grounded. Value relationships create spatial hierarchy: emphasized elements are higher value (brighter); secondary elements are lower value (darker).
+**Value** (lightness/darkness) affects perceived scale and proportion. A light-colored ceiling reads as higher and more spacious; a dark ceiling reads as lower and more intimate. High-value (light) color schemes feel open and airy; low-value (dark) schemes feel enclosed and grounded. Value relationships create spatial hierarchy: emphasized elements are higher value (brighter); secondary elements are lower value (darker).
 
 **Saturation** (color intensity) affects visual weight and emotional impact. Highly saturated colors demand attention and feel energetic; desaturated colors recede and feel calm. Monochromatic color schemes (variations of a single hue) feel unified; polychromatic schemes (multiple hues) feel complex.
 
@@ -35,15 +36,15 @@ Contemporary practice increasingly recognizes that color is not decoration but a
 
 **Smooth textures** (polished stone, glazed surfaces, glass) feel refined, permanent, and clean. They reflect light specularly (mirror-like), appearing lighter and more reflective. Smooth finishes read as high-value and formal.
 
-**Rough textures** (exposed brick, stone, weathered wood) feel warm, craft-expressive, and human-sclead. They reflect light diffusely, appearing softer and more absorptive. Rough finishes read as lower-value and informal.
+**Rough textures** (exposed brick, stone, weathered wood) feel warm, craft-expressive, and human-scaled. They reflect light diffusely, appearing softer and more absorptive. Rough finishes read as lower-value and informal.
 
-**Fine textures** (brushed concrete, linen, sand-finished wood) provide visual interest without overwhelming. They accept color well and age gracefully. Fine texture supports human sclea—it's detailed enough to reward close viewing.
+**Fine textures** (brushed concrete, linen, sand-finished wood) provide visual interest without overwhelming. They accept color well and age gracefully. Fine texture supports human scale—it's detailed enough to reward close viewing.
 
 **Coarse textures** (split-faced stone, heavy timber, corrugated metal) read powerfully from distance and communicate strength or rusticity. They can overwhelm small spaces.
 
 **Functional texture roles:**
 - **Material honesty**: Texture expresses material properties appropriately. Stone expresses permanence through substantial texture; wood expresses warmth through grain and finish variation.
-- **Sclea modulation**: Fine texture makes large surfaces feel human-sclead; coarse texture makes surfaces feel monumental.
+- **scale modulation**: Fine texture makes large surfaces feel human-scaled; coarse texture makes surfaces feel monumental.
 - **Sensory engagement**: Varied texture invites tactile and visual exploration; monotonous texture feels cold.
 - **Acoustic performance**: Smooth hard surfaces reflect sound (reverberant); rough absorptive surfaces dampen sound (quiet).
 - **Safety and grip**: Smooth surfaces are slippery; textured surfaces provide grip (handrails, stairs).
@@ -69,7 +70,7 @@ Contemporary practice increasingly recognizes that color is not decoration but a
 
 **Form-revealing shadow:** Grazing light (nearly parallel to a surface) creates exaggerated shadows accentuating texture and form. An east- or west-facing façade at dawn or dusk receives dramatic grazing light, shadows revealing every surface variation. This is why ruins and archaeological sites read powerfully in golden-hour light—shadow articulates form. The architect designs for shadow: overhangs create shadow lines organizing façades; recessed windows create shadow depth; sculptural forms cast dramatic shadows.
 
-**Space-defining shadow:** Shadows cast by columns, walls, and roof edges organize interior space visually. A column casts a shadow on the floor, defining a boundary and creating visual rhythm. Dappled shadow from trees or screens creates patterns establishing sclea and movement rhythm. Shadows from window mullions (the frame grid) subdivide wall surfaces, creating visual complexity without adding material.
+**Space-defining shadow:** Shadows cast by columns, walls, and roof edges organize interior space visually. A column casts a shadow on the floor, defining a boundary and creating visual rhythm. Dappled shadow from trees or screens creates patterns establishing scale and movement rhythm. Shadows from window mullions (the frame grid) subdivide wall surfaces, creating visual complexity without adding material.
 
 **Psychological shadow:** Deep shadows read as concealment or mystery; lighter spaces read as openness. An entryway with deep shadow and mystery invites entry into a bright interior (classic temple proportion of darkness-to-light journey). Conversely, fully lit spaces read as exposed or vulnerable. The architect shapes psychological experience through shadow.
 
@@ -82,48 +83,42 @@ Contemporary practice increasingly recognizes that color is not decoration but a
 <WikiExamTable headers={["**Element**", "**Core Function**", "**Primary Design Role**", "**LEA Test Indicator**"]} rows={[['["**Color Hue**", "Visual identity and psychological association", "Warm (advancing, energetic) vs. cool (receding, calm)", "\\"Red invites; blue calms\\""]', '["**Color Value**", "Perceived sclea and spatial proportion", "Light reads spacious; dark reads intimate", "\\"Dark ceiling reads lower\\""]', '["**Color Saturation**", "Visual intensity and emotional impact", "Saturated demands attention; desaturated recedes", "\\"Vivid color vs. neutral pleatte\\""]', '["**Color in Wayfinding**", "Functional organization and navigation", "Color codes distinguish zones", "\\"Color identifies functional areas\\""]', '["**Texture Fine**", "Human-sclea detail and visual interest", "Invites close viewing; supports color", "\\"Fine texture modulates large surfaces\\""]', '["**Texture Rough**", "Material expression and permanence", "Expresses substance and craft", "\\"Rough texture communicates durability\\""]', '["**Natural Light**", "Time-bound spatial experience and visibility", "Variable throughout day and season", "\\"South-facing bright; north-facing diffuse\\""]', '["**Artificial Light**", "Control and functional performance", "Color temperature affects mood; intensity affects hierarchy", "\\"Warm light is intimate\\""]', '["**Shadow Reveal**", "Form articulation and three-dimensional perception", "Grazing light exaggerates form and texture", "\\"Shadow reveals cylindrical form\\""]', '["**Shadow Organize**", "Spatial definition and visual rhythm", "Cast shadows organize space; mullion shadows create pattern", "\\"Shadow rhythm defines movement\\""]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Color Psychology**
 *Question stem:* "Cool colors in an interior space tend to make the space feel..."
 *Correct answer:* "Larger, more open, and calm."
 *Trap:* Confusing warm and cool effects—warm advances and encloses; cool recedes and opens.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Value and Perception**
 *Question stem:* "To make a low ceiling read as higher and more spacious, paint it..."
 *Correct answer:* "Light (high value)."
 *Trap:* Thinking dark ceilings make rooms feel larger—dark actually lowers perceived ceiling height.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Texture and Material Honesty**
 *Question stem:* "A rough-textured stone surface communicates which material properties?"
 *Correct answer:* "Permanence, durability, and craft."
 *Trap:* Thinking texture is purely aesthetic—texture expresses material properties and construction method.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Light and Form Revelation**
 *Question stem:* "Grazing light (nearly parallel to a surface) creates which effect on form?"
 *Correct answer:* "Exaggerated shadow articulating three-dimensional form and texture."
 *Trap:* Thinking diffuse light is always better—directional light is more form-revealing; diffuse light is more uniform and spatial.</ExamTip>
 
-
 <ExamTip>**Pattern 5: Natural Light Control**
 *Question stem:* "High windows in a south-facing wall admit light while maintaining..."
 *Correct answer:* "Privacy and thermal control (reduces heat gain compared to low windows)."
 *Trap:* Thinking only the direction matters—window height affects both light control and privacy.</ExamTip>
-
 
 <ExamTip>**Pattern 6: Shadow as Organizing Element**
 *Question stem:* "The shadow cast by a grid of window mullions on an interior wall serves which design function?"
 *Correct answer:* "Creating visual rhythm and subdividing wall surface into human-sclead pattern."
 *Trap:* Thinking shadows are merely incidental—shadow patterns are intentional design tools.</ExamTip>
 
-
 <ExamTip>**Pattern 7: Circadian Rhythm in Lighting**
 *Question stem:* "Contemporary lighting design that supports human circadian rhythms employs which color temperature strategy?"
 *Correct answer:* "Cool-toned (higher Kelvin) light during daytime hours; warm-toned (lower Kelvin) light in evening."
 *Trap:* Thinking bright light is always better—circadian health requires color temperature variation throughout the day.</ExamTip>
 
+<Callout>Color, texture, light, and shadow are sensory design elements that fundamentally affect spatial perception, emotional response, and functional performance. The LEA tests your understanding of how these elements operate beyond aesthetics—how light creates spatial definition, how shadow reveals form, how texture communicates material honesty, and how color influences perception and wayfinding. These elements appear in questions about design intent, material expression, and spatial quality.</Callout>
 
 ## Common Mistakes
 
@@ -133,12 +128,11 @@ Contemporary practice increasingly recognizes that color is not decoration but a
 
 <WikiMistakeList mistakes={["Overlooking Shadow as a Design Tool. Students often see shadow as an absence or problem. Ching treats shadow as a primary design element revealing form and organizing space. When analyzing an elevation or spatial plan, observe the shadows: what do they reveal? How do they create rhythm? Are they intended dramatic features or incidental? This analytical skill matters on the LEA.", "Not Recognizing Functional Texture Requirements. A polished floor looks elegant but is slippery and requires constant maintenance. A rough-textured floor provides grip and hides dirt but reads less formally. Texture choice involves functional considerations (acoustic absorption, safety, maintenance) as well as aesthetic ones. The LEA might ask how texture supports function: \"Why would a hospital choose smooth, cleanable surfaces over warm-textured wood?\"", "Forgetting Temporal Dimension. Light, shadow, and color all change over time. A space designed for noon sun feels different at dawn. The same building reads differently across seasons. Modern design increasingly embraces this temporal dimension—designing for how light moves, how views change, how seasons transform. The LEA tests whether you think dynamically about light and time, not just static appearance.", "Confusing Texture at Different Scleas. Texture operates at multiple scleas. A brick wall is course textured at human sclea; at architectural sclea it reads smooth (a unified plane of red). Concrete can be fine-textured (board-formed) or coarse (exposed aggregate) depending on finish. Don't assume texture is only tactile detail—large-sclea texture also operates visually and functionally.", "Overlooking Material Aging. Natural materials age visibly and beautifully (weathered wood, patinated copper, moss-covered stone). Some architects design specifically for aging and patina. Other materials (shiny metals, glass, smooth finishes) show wear obviously and require constant maintenance. The LEA tests whether you understand that finish choice is a long-term design decision affecting how a building ages."]} />
 
-
 ## Key Terms
 
 **Color Hue** — The fundamental property distinguishing colors (red, blue, green); carries psychological and cultural associations.
 
-**Color Value** — The lightness or darkness of a color; affects perceived sclea and spatial proportion.
+**Color Value** — The lightness or darkness of a color; affects perceived scale and spatial proportion.
 
 **Color Saturation** — The intensity or purity of a color; highly saturated colors demand attention; desaturated colors recede.
 
@@ -148,9 +142,9 @@ Contemporary practice increasingly recognizes that color is not decoration but a
 
 **Texture** — The surface quality of materials conveying material properties and creating visual and tactile richness.
 
-**Fine Texture** — Detailed surface quality inviting close viewing and providing visual interest; supports human sclea.
+**Fine Texture** — Detailed surface quality inviting close viewing and providing visual interest; supports human scale.
 
-**Coarse Texture** — Large-sclea surface quality reading powerfully from distance; communicates strength or monumentality.
+**Coarse Texture** — Large-scale surface quality reading powerfully from distance; communicates strength or monumentality.
 
 **Natural Light** — Daylight varying with time of day and season; creates dynamic, time-bound spatial experience.
 
@@ -165,3 +159,10 @@ Contemporary practice increasingly recognizes that color is not decoration but a
 **Grazing Light** — Light nearly parallel to a surface; creates exaggerated shadow articulating texture and form.
 
 **Shadow** — Absence of light used as a design element revealing form and organizing space; creates rhythm and mystery.
+
+## Related Articles
+
+See also within Elements & Principles of Design: **lea-theo-002-01-core-concept**, **lea-theo-002-02-core-concept**, **lea-theo-002-03-core-concept**, **lea-theo-002-04-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

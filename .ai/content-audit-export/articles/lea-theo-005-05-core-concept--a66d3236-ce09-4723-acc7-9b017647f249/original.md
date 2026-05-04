@@ -4,6 +4,14 @@
 Postmodernism fundamentally disrupted modernism's hegemony by reintroducing historical reference, ornament, symbolism, and contradiction as legitimate design tools. The LEA examines your grasp of key postmodern theorists and architects—Venturi, Jencks, Rossi, Graves, and the deconstructivists—and how their work redefined architectural possibility in the late twentieth century.
 </Callout>
 
+
+
+## Learning Goal
+
+- Explain how Postmodernism rejected Modernism's reductive purism through Venturi's Complexity and Contradiction (1966) and Learning from Las Vegas (1972).
+- Define Jencks's "death of modern architecture" thesis and the demolition of Pruitt-Igoe as symbolic marker.
+- Distinguish Deconstructivism from Postmodernism: where Postmodernism plays with historical reference, Deconstructivism fragments and destabilizes form.
+
 ## Core Concept
 
 Postmodernism in architecture emerged not as a unified style but as a critical reaction against modernism's reductive purism and its claim to universal, timeless principles. Where modernism sought to strip away historical ornament and craft the "honest" expression of materials and function, postmodernism embraced complexity, irony, historical pastiche, and the semantic richness of symbolic language. Robert Venturi's 1966 manifesto *Complexity and Contradiction in Architecture* fundamentally shifted architectural discourse by arguing that modernism's reduction was fundamentally incomplete. "I like elements which are hybrid rather than 'pure,' compromising rather than 'clean,' distorted rather than straightforward, ambiguous rather than articulate," Venturi wrote, inverting modernism's aesthetic hierarchies.
@@ -18,7 +26,7 @@ Charles Jencks, the architecture critic who coined the term "postmodern architec
 
 Aldo Rossi's *L'architettura della città* (1966) reoriented architecture toward memory and typology rather than functionalist prescription. Rossi argued that cities possess a collective memory embedded in monuments, street patterns, and architectural types that survive economic and political upheavals. His concept of "La Città Analoga" (The Analogous City) suggested that architects should understand buildings as part of an eternal dialogue with historical precedent, drawing analogies between contemporary problems and historical solutions. Rather than inventing forms from first principles, architects should engage in "critical reuse" of archetypal building types—the courthouse, the marketplace, the domestic block. Rossi's own designs, particularly his Gallaratese Housing (Milan, 1969-1976) and San Cataldo Cemetery (Modena, 1971-1984), employed stark geometric forms referencing historical prototypes, creating a poignant tension between modernist abstraction and historical meaning.
 
-Michael Graves emerged as the most commercially successful postmodern architect, translating postmodern principles into fashionable residential and public buildings. Graves's work embraced color, applied ornament, and historical allusion that modernists had categorically rejected. His Portland Building (1982) in Portland, Oregon—a massive postmodern pastiche featuring colorful bands, applied ornament, and classical references rendered in contemporary materials—became the symbol of postmodern architecture's popular emergence. Graves demonstrated that postmodernism could achieve market success; his later work for Disneyland and commercial clients revelead postmodernism's capacity to generate engaging, semantically rich architectural experiences that connected with broader audiences.
+Michael Graves emerged as the most commercially successful postmodern architect, translating postmodern principles into fashionable residential and public buildings. Graves's work embraced color, applied ornament, and historical allusion that modernists had categorically rejected. His Portland Building (1982) in Portland, Oregon—a massive postmodern pastiche featuring colorful bands, applied ornament, and classical references rendered in contemporary materials—became the symbol of postmodern architecture's popular emergence. Graves demonstrated that postmodernism could achieve market success; his later work for Disneyland and commercial clients revealed postmodernism's capacity to generate engaging, semantically rich architectural experiences that connected with broader audiences.
 
 Deconstructivism emerged in the 1980s as a more radical critique, translating Jacques Derrida's philosophical deconstruction into architectural form. The 1988 Museum of Modern Art exhibition "Deconstructivist Architecture," curated by Philip Johnson and Mark Wigley, canonized a movement featuring Frank Gehry, Daniel Libeskind, Zaha Hadid, Peter Eisenman, Bernard Tschumi, and Coop Himmelb(l)au. These architects rejected postmodernism's historical quotation as insufficiently critical. Instead, deconstructivism embraced fragmentation, non-Euclidean geometry, and what Wigley called the "violent disruption of stable form." Gehry's Guggenheim Museum Bilbao (1997)—a titanium-clad sculptural mass that appears to defy structural logic—epitomized deconstructivist ambition: architecture as radical formal experimentation liberated from both modernist orthodoxy and postmodern historical pastiche.
 
@@ -79,3 +87,10 @@ Contemporary architectural theory has moved beyond postmodernism's historical ec
 **Critical Regionalism** — Response to postmodern globalization; architecture that respects global modernist principles while remaining grounded in specific place, culture, climate, and material traditions.
 
 **Autonomy of Form** — The notion that architectural form possesses its own logic and meaning independent of functional expression or symbolic reference; central to both deconstructivism and some postmodern theory.
+
+## Related Articles
+
+See also within Architectural Philosophies: **lea-theo-005-01-core-concept**, **lea-theo-005-02-core-concept**, **lea-theo-005-04-core-concept**, **lea-theo-005-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

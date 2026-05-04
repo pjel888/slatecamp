@@ -1,18 +1,34 @@
 {
   "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
   "slug": "fire-extinguishing-systems",
-  "generated_at": "2026-05-03T13:44:11.384Z",
-  "original_hash": "sha256:7188efb056807cad1e40942009d56531943e1f36bc24ea168cf3aca936551e19",
-  "normalized_hash": "sha256:2597b5730aff6338d1b26a0b98166a354c16d20096b84cbf5b692673b3b688a1",
-  "candidate_hash": "sha256:13cb87f75b9f9d64cd4ae415235e30ff5e2755e27839c0eb63ad088f4ad50e53",
+  "generated_at": "2026-05-04T00:05:38.672Z",
+  "original_hash": "sha256:13cb87f75b9f9d64cd4ae415235e30ff5e2755e27839c0eb63ad088f4ad50e53",
+  "normalized_hash": "sha256:652cb7dc4ff8c5ebe6c1d91f180c4bf9a37f6748596d5f7e25a3cb7f9ecc26b2",
+  "candidate_hash": "sha256:652cb7dc4ff8c5ebe6c1d91f180c4bf9a37f6748596d5f7e25a3cb7f9ecc26b2",
   "ui_blocks_count": 7,
-  "placeholders_found": 7,
-  "placeholders_resolved": 7,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 7,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006",
+    "ui_0007"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition.",
+    "UI block ui_0007 was not used during composition."
+  ]
 }

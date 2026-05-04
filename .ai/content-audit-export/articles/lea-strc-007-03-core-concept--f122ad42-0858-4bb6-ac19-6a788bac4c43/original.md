@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define deflection limits for beams, slabs, and cantilevers
+- State the typical span-to-depth ratios for deflection control
+- Distinguish between immediate (elastic) and long-term (creep + shrinkage) deflection
+- Explain why deflection limits are separate from strength requirements
 
 Minimum slab and beam thickness are code minimums to control deflection without explicit calculation. The LEA tests your mastery of four support conditions and the distinction between solid slabs, ribbed/joist sections, and beams.
 
@@ -60,7 +67,14 @@ Per **NSCP 2015 Section 409.9.2.2**, the concrete slab over ribs must satisfy:
 3. **The Top Slab Rule:** "A joist slab has clear rib spacing of $600\text{ mm}$. Minimum top slab thickness?"
  - Answer: $600 / 12 = 50\text{ mm}$. (Matches NSCP minimum).
 
+
+## Related Articles
+
+See also: **Concrete Materials** (lea-strc-006-01) for the modulus that affects deflection, **Flexural Theory** (lea-strc-006-03) for how bending relates to deflection, and **Beam Types** (lea-strc-001-04) for how support conditions affect deflection patterns.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ 
  "Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.", 

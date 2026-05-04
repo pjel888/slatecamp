@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Building Mechanical, Electrical, Plumbing, and Fire (MEPF) systems in the Philippines must be designed and maintained to protect occupants during disasters. The country faces multiple hazard types—earthquakes, typhoons, floods, fires, and volcanic eruptions—that threaten building safety. Disaster prevention and mitigation systems are required under the National Structural Code of the Philippines 2015 (NSCP 2015), Presidential Decree No. 1096 (Building Code), and the Philippine Disaster Risk Reduction and Management Act (RA 10121).
+## Learning Goal
 
+Apply NSCP 2015 seismic bracing requirements for MEPF systems — trapeze supports, lateral sway bracing for pipes and ducts, flexible couplings, and seismic separation — to design earthquake-resilient mechanical, electrical, and plumbing installations.
 ## Seismic Bracing and Earthquake Resilience
 
 MEPF equipment must be seismically braced to prevent equipment failure, utility disruption, and occupant injury during earthquakes. The NSCP 2015 mandates that mechanical systems, electrical cabinets, piping systems, and HVAC components be anchored to structural elements with verified load capacity.
@@ -11,6 +12,19 @@ _Seismic demand levels_ depend on building occupancy classification and seismic 
 Piping systems require flex couplings at seismic isolation joints to prevent rupture. Water supply lines must remain operable post-earthquake to support firefighting and emergency cooling. Electrical conduit and cable trays must use elastomeric hangers rated for expected seismic acceleration.
 
 ## Wind-Resistant Design for Typhoon Protection
+
+
+<KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 
 The Philippines experiences typhoons with sustained winds exceeding 200 km/h in high-hazard areas. NSCP 2015 Sections 26 and 27 define design wind pressures based on Basic Wind Speed (BVS) and Exposure Category.
 
@@ -35,7 +49,7 @@ Flood protection measures:
 - Water supply intakes: elevate above flood level or equip with check valves and automatic shutoff to prevent contamination
 - Sump and drainage systems: sized for post-flood dewatering; backup pump power required (see Emergency Power section)
 - HVAC equipment in basements or ground levels: relocate to upper floors or install flood barriers and waterproof enclosures
-- Selead cable penetrations: prevent water entry into electrical rooms during submersion
+- sealed cable penetrations: prevent water entry into electrical rooms during submersion
 
 ## Emergency Lighting Systems
 
@@ -49,7 +63,7 @@ Emergency light placement:
 - Corridor lighting spaced at maximum 6 m intervals
 - Emergency exit route identification
 
-Battery backup systems must use selead lead-acid, lithium-ion, or equivleant technology. Batteries are tested to 50% of rated capacity at the end of design life; initial capacity must be sized 2.0 times the calculated emergency load to ensure 90-minute runtime. Central emergency power systems (EPS) in hospitals and critical facilities must auto-transfer load within 0.15 seconds of utility failure (per NSCP Section 1205 and PD 1096).
+Battery backup systems must use sealed lead-acid, lithium-ion, or equivalent technology. Batteries are tested to 50% of rated capacity at the end of design life; initial capacity must be sized 2.0 times the calculated emergency load to ensure 90-minute runtime. Central emergency power systems (EPS) in hospitals and critical facilities must auto-transfer load within 0.15 seconds of utility failure (per NSCP Section 1205 and PD 1096).
 
 ## Exit Signage and Wayfinding
 
@@ -129,7 +143,7 @@ Key regulatory documents for MEPF disaster mitigation in the Philippines:
 - **RA 10121 (Philippine Disaster Risk Reduction and Management Act)**: Mandates disaster-resilient infrastructure; applies to critical facilities (hospitals, schools, government offices, emergency operation centers)
 - **RA 9514 (Fire Code of the Philippines)**: Aligns with NSCP requirements for fire detection, suppression, and evacuation systems
 
-All MEPF designs must be selead by a Professional Mechanical Engineer (PME), Professional Electrical Engineer (PEE), or Professional Sanitary Engineer (PSE) licensed in the Philippines.
+All MEPF designs must be sealed by a Professional Mechanical Engineer (PME), Professional Electrical Engineer (PEE), or Professional Sanitary Engineer (PSE) licensed in the Philippines.
 
 ## Key Takeaways
 
@@ -143,3 +157,10 @@ All MEPF designs must be selead by a Professional Mechanical Engineer (PME), Pro
 - Emergency power systems (generators or fuel cells) must be sized for life safety loads and resilience targets; critical facilities require 72-hour autonomy
 - Water supply resilience via elevated storage, wells, and check valves ensures post-disaster functionality
 - All designs must comply with NSCP 2015, PD 1096, and RA 10121; Philippine-licensed professional engineers must seal designs
+
+## Related Articles
+
+See also within Fire Protection Systems: **lea-util-004-04-core-concept**, **lea-util-004-06-core-concept**, **lea-util-004-07-core-concept**, **lea-util-004-08-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

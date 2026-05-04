@@ -7,10 +7,8 @@ Professional relationships form the foundation of architectural practice. The Co
 ## Core Concept
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=ra9266, section=Code §5-c, 5-e, 5-f, 5-g, title=Fellow Architect Obligations Under the Code
-- Text: The Code establishes four key protections for fellow architects: (1) Non-poaching — shall not seek commissions known to be already endowed to another architect (§5-c); (2) Non-interference — shall not...
-[/SLATECAMP_UI_BLOCK]
+
+<ArticleMedia id="media-eth006-conflict-resolution" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Non-Poaching and Professional Courtesy — Conflict Resolution Process" description="Sequential flowchart showing the three-stage notification process under Section 5: (1) Identify previous architect involvement → (2) Send proper written notification → (3) Verify termination and compensation settlement before proceeding. Decision diamonds at each stage. Side callout explains the injurious conduct prohibition Section 5-g and credit proportionality for modifications Section 5-f." placementIntent="conflict-resolution" suggestedSearchQuery="architect non-poaching notification successor architect Section 5 professional courtesy flowchart" suggestedAsset="Diagram or reference image" alt="Conflict resolution flowchart: notification, negotiation, mediation, settlement" caption="Future diagram: conflict resolution flowchart: notification, negotiation, mediation, settlement" />
 
 ### Non-Poaching of Commissions
 
@@ -27,10 +25,6 @@ Section 5-f extends protection to renovation and remodeling work. When another a
 Section 5-g prohibits architects from knowingly injuring, falsely or maliciously, another architect's professional reputation, prospects, or practice. This extends beyond simple non-poaching to active protection of colleagues' standing.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ **Exam Trap:** Notification alone does NOT satisfy the obligation. Section 5-e demands THREE sequential confirmations: (1) written notice to the original architect, (2) conclusive determination of emp... — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
 
@@ -41,16 +35,8 @@ Extracted summary:
 **Pattern 3:** Credit proportionality — Architect performs 40% renovation. Marketing must describe 40% contribution, cannot claim primary credit.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer al — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory Aid:** "NTC" = Notify, Terminate, Compensate. Before assuming any commission where another architect was involved: (N)otify the prior architect in writing, (T)ermination must be confirmed, (C...
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 

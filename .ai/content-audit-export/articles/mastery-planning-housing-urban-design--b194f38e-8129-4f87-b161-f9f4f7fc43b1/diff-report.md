@@ -1,32 +1,33 @@
 # Content Diff Report: mastery-planning-housing-urban-design
 
-Generated: 2026-05-03T13:44:45.546Z
+Generated: 2026-05-04T00:06:21.671Z
 Article ID: b194f38e-8129-4f87-b161-f9f4f7fc43b1
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:df2ed82a182a1e82b7c2921bbf61f12fa064606f50e5165dfcf4910e6608405a`
-- Normalized: `sha256:4f998e6548a8ea05a9b1bd23d328e29fb90f0460a82dab1d1b92bb7201861548`
-- Candidate: `sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c`
+- Original: `sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c`
+- Normalized: `sha256:3450200db0d5ab065b769a1714f1fb38b0f76b1038e0598848bc1b22774c84d9`
+- Candidate: `sha256:3450200db0d5ab065b769a1714f1fb38b0f76b1038e0598848bc1b22774c84d9`
 
 ## Line summary
 
-- Changed lines: 73
-- Inserted lines: 0
-- Deleted lines: 10
+- Changed lines: 89
+- Inserted lines: 10
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

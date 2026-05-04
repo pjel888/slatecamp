@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Embodied carbon in construction materials is increasingly regulated under Philippine environmental codes and green building standards. Recycled and low-embodied-carbon materials reduce lifecycle emissions across product, construction, and disposal phases. You must understand material-specific carbon values, recycling processes, and pozzolanic replacements to pass the materials section of the LEA.
-
+Define embodied carbon and explain how material extraction, manufacturing, transportation, and installation contribute to a building's total carbon footprint, and identify strategies to reduce embodied carbon through material selection and specification.
 ## Core Concept
 
 Embodied carbon measures greenhouse gas emissions generated during material extraction, processing, manufacturing, transport, and end-of-life disposal. Low-embodied-carbon materials either reduce emissions through efficient processing (recycled steel via electric arc furnace) or substitute high-impact materials with waste products (fly ash replacing Portland cement). The LEA focuses on three strategies: material substitution, recycling processes, and carbon sequestration in organic materials.
@@ -38,7 +38,7 @@ BERDE (Building for Ecologically Responsive Design Excellence) version 5 allocat
 
 LEA candidates must identify material types by embodied carbon value, match pozzolanic materials to ASTM specifications, calculate percentage reductions in concrete embodied carbon when fly ash or GGBS replaces Portland cement, and apply replacement rate limits. Questions typically present a structural design scenario requiring 30 percent cost reduction while maintaining strength; the correct answer involves substituting 25 percent fly ash (within ASTM C618 Class F limits) without compromising concrete compressive strength or durability.
 
-A second test approach compares environmental product declarations (EPDs) for equivleant materials: candidates select the option with lowest cradle-to-gate embodied carbon or recognize that recycled steel embodied carbon is roughly half that of primary steel. Calculation questions require converting percentage replacement (25% fly ash) to embodied carbon reduction using provided baseline values (e.g., cement = 0.82 kg CO2e/kg; fly ash = 0.15 kg CO2e/kg; reduction = ~37%).
+A second test approach compares environmental product declarations (EPDs) for equivalent materials: candidates select the option with lowest cradle-to-gate embodied carbon or recognize that recycled steel embodied carbon is roughly half that of primary steel. Calculation questions require converting percentage replacement (25% fly ash) to embodied carbon reduction using provided baseline values (e.g., cement = 0.82 kg CO2e/kg; fly ash = 0.15 kg CO2e/kg; reduction = ~37%).
 
 <Tip>Always verify embodied carbon values from published EPDs or lifecycle assessment databases (ICE, OneClick LCA) rather than assuming values. The actual CO2e per kilogram varies by manufacturing location, process efficiency, and transport distance. When a question provides a baseline embodied carbon for concrete (0.11 kg CO2e/kg), multiply by the percentage cement content and the percentage fly ash replacement to calculate net reduction.</Tip>
 
@@ -57,3 +57,10 @@ A second test approach compares environmental product declarations (EPDs) for eq
 <li>Applying the same embodied carbon value to both Class F and Class C fly ash (Class C typically has 10-15% higher emissions due to calcium oxide content)</li>
 <li>Using embodied carbon values from international databases without accounting for local transport distance and fuel type in the Philippines</li>
 </WikiMistakeList>
+
+## Related Articles
+
+See also within Sustainable and Green Materials: **lea-matl-005-05-core-concept**, **lea-matl-005-08-core-concept**, **lea-matl-005-09-core-concept**, **lea-matl-005-10-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

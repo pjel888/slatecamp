@@ -1,4 +1,8 @@
 # Fire Extinguishing Systems
+## Learning Goal
+After reading this article, you should be able to:
+
+Distinguish automatic sprinkler systems (wet pipe, dry pipe, pre-action, deluge) by application and activation mechanism; identify where standpipe systems (Class I, II, III) are required under PD 1096 and RA 9514; and apply the spacing, coverage, and clearance rules for portable fire extinguishers by hazard classification.
 
 ---
 
@@ -46,10 +50,12 @@ Key technical data:
 - **Construction:** Wrought iron or galvanized steel pipe with approved fittings
 - **Test pressure:** Must withstand **20 kg/sq.cm** water pressure
 - **Design flow rate:** **900 liters/minute**
-- **Applicability threshold:** Any building 4+ storeys where any floor above the 3rd floor is **≤ 950 m** from the ground (in the Philippine context, essentially all mid-rise buildings)
+- **Applicability threshold:** Any building 4+ storeys where any floor above the 3rd floor has a **floor area of 950 sq.m or less** (in the Philippine context, essentially all mid-rise buildings)
 - **Outlets at each floor:** **63 mm** diameter outlet, positioned **max 1.20 m above floor level**, each with a gate valve
 - **Roof outlet:** A **2-way 63 mm** outlet above the roof, also gated
 - **Siamese (street-level) inlets:** Mounted on the street front at **300 mm to 1.20 m above grade**
+
+<Warn>Important Correction: The dry standpipe threshold is floor area, not distance. Per PD 1096 IRR Sec. 1212(2)(c), the requirement applies where "the area of any floor above the third floor is 950 sq.m or less." The original article incorrectly stated this as a distance of 950 m from the ground. This matters for exam questions that test your understanding of the threshold as floor area, not building height from grade.</Warn>
 
 ### Concept 3 — Siamese Connection Sizing
 
@@ -83,7 +89,7 @@ This is the most architecturally significant implication of Section 1212 and is 
 - **Without sprinklers:** Maximum exit travel distance = **45 meters**
 - **With a sprinkler system:** Maximum exit travel distance = **60 meters**
 
-This 15-meter bonus is a direct design enabler. A floor plate that would otherwise require an additional staircase at 45 m becomes legally compliant with a single stairway if fully sprinklered. The equivleant IBC values are 200 ft (≈ 61 m) without and 250 ft (≈ 76 m) with sprinklers. This cross-reference appears in Sec. 1207 (Exits) alongside Sec. 1212.
+This 15-meter bonus is a direct design enabler. A floor plate that would otherwise require an additional staircase at 45 m becomes legally compliant with a single stairway if fully sprinklered. The equivalent IBC values are 200 ft (≈ 61 m) without and 250 ft (≈ 76 m) with sprinklers. This cross-reference appears in Sec. 1207 (Exits) alongside Sec. 1212.
 
 ---
 
@@ -104,7 +110,7 @@ This 15-meter bonus is a direct design enabler. A floor plate that would otherwi
 | **Fire pump minimum** | 1,000 L/min at 2 kg/sq.cm | Per NFPA 20: typically 250–5,000 gpm (750–18,900 L/min) rated |
 | **Gravity/pressure tank** | 1,500 L/min for ≥ 10 min | NFPA 22 governs water storage tanks; 10-min minimum supply common |
 | **Siamese connection** | 2-way (100 mm), 3-way (125 mm), 4-way (150 mm) | NFPA 14 Sec. 6.3: two 2½" (65 mm) inlets standard; no direct size-to-configuration formula |
-| **Siamese inlet height** | 300 mm to 1.20 m above grade | NFPA 14: 18" (457 mm) to 48" (1,220 mm) above grade (equivleant range) |
+| **Siamese inlet height** | 300 mm to 1.20 m above grade | NFPA 14: 18" (457 mm) to 48" (1,220 mm) above grade (equivalent range) |
 | **Supplementary law** | RA 9514 (Fire Code): BFP enforcement, fire safety inspection | NFPA 1 (Fire Code), local fire marshal requirements |
 
 **Key IBC Standpipe Class Summary:**
@@ -155,6 +161,12 @@ The presence or absence of a fire-extinguishing system directly controls the leg
 **2. RA 9514 — Fire Code of the Philippines (IRR)**
 RA 9514 is the enforcement mechanism for fire safety in buildings. The Bureau of Fire Protection (BFP) conducts annual Fire Safety Inspection Certificates (FSIC), which require compliance with the fire-extinguishing systems mandated by PD 1096. A building without a required standpipe will be denied its FSIC, halting occupancy. The Fire Code supplements PD 1096 with more detailed operational requirements, pipe materials, and maintenance protocols.
 
+<LawCallout code="ra9514" title="RA 9514 is the enforcement mechanism that gives BFP the legal authority to inspect and require fire-extinguishing systems">
+
+RA 9514 (Fire Code of the Philippines) operationalizes PD 1096's fire-extinguishing requirements through the Bureau of Fire Protection's inspection and certification process. Key interaction points: (1) Annual FSIC requires verified standpipe and sprinkler compliance; (2) RA 9514 IRR supplements PD 1096 with pipe material specifications, maintenance schedules, and testing protocols; (3) BFP has authority to deny occupancy permits for buildings lacking required fire-extinguishing systems under Sec. 1212. Always cite both PD 1096 (design mandate) and RA 9514 (enforcement mechanism) when discussing fire-extinguishing systems compliance in the Philippines.
+
+</LawCallout>
+
 **3. PD 1096, Rule VII — Occupancy Classifications**
 The occupant load thresholds in Sec. 1212 (>20 for habitation, >10 for workshops) must be cross-referenced against the occupancy classification tables in Rule VII. A space classified as Group E (Business and Mercantile) with 21 persons on a 200 sq.m floor is unambiguously subject to Sec. 1212. Group H (Storage and Hazardous) and Group I (Institutional) have heightened fire requirements that interact with sprinkler installation.
 
@@ -183,12 +195,14 @@ Siamese connections: every **25 mm increase in pipe diameter** adds **one inlet*
 - 150 mm → **4**-way
 
 ### Memory Aid 4 — "45+15=60: The Sprinkler Bonus"
-Without sprinklers: 45 m travel distance. A sprinkler system adds exactly **15 m** to your budget: 45 + 15 = **60 m**. The IBC equivleant is 200 ft + 50 ft = 250 ft (≈ 76 m).
+Without sprinklers: 45 m travel distance. A sprinkler system adds exactly **15 m** to your budget: 45 + 15 = **60 m**. The IBC equivalent is 200 ft + 50 ft = 250 ft (≈ 76 m).
 
 ### Memory Aid 5 — "GravTank vs. FirePump: 1,500 vs. 1,000"
 - **Gravity tank:** 1,500 L/min (passive, gravity-fed, bigger reserve flow)
 - **Fire pump:** 1,000 L/min (active, mechanical)
 Gravity tanks need a higher rated flow because they rely entirely on head pressure; the pump can be modulated.
+
+<Tip>To remember the 950 sq.m dry standpipe threshold: think of a large supermarket floor plate. If any floor above the 3rd storey is smaller than a typical supermarket (under 950 sq.m), it needs a dry standpipe. Pair this with the 200 sq.m sprinkler trigger — 200 sq.m is a small restaurant, 950 sq.m is a full retail floor.</Tip>
 
 ### If/Then Scenarios
 
@@ -217,6 +231,8 @@ Many candidates memorize only one outlet size. The exam will offer both 38 mm an
 **Trap 3 — The Sprinkler–Travel Distance Linkage**
 A question may describe a proposed floor plan with a travel distance of 52 m and ask whether it complies. The answer depends entirely on whether the building has a sprinkler system: 52 m exceeds the 45 m limit without sprinklers but is within the 60 m allowance with sprinklers. The trap is answering based on one scenario without reading the full question. Always check the sprinkler status before judging travel distance compliance.
 
+<ExamTip>When you see a fire-extinguishing systems question on the LEA, immediately identify which system is being tested by looking for these keywords: "63 mm" = dry standpipe, "38 mm" = wet standpipe, "900 L/min" = dry, "190 L/min" = wet. Memorize these pairs — they are the most frequently tested numerical values in this topic and confusing them is the #1 score-killer.</ExamTip>
+
 ---
 
 ## Active Recall Questions
@@ -232,9 +248,11 @@ D. A fire-extinguishing system is required only if the building exceeds 8 storey
 
 > **Answer: B**
 >
-<LawCallout code="nbcp" title="the 200/20 rule is not limited to residential use; habitation includes commercia">
+<LawCallout code="pd1096" section="Rule IV - Fire Extinguishing Systems">
+
 
 Per PD 1096, Rule XII, Section 1212, a fire-extinguishing system is required for every storey ≥ 200 sq.m used for habitation with an occupant load > 20 persons. At 210 sq.m and 25 occupants, both triggers are met on every floor. Option A is wrong — the 200/20 rule is not limited to residential use; habitation includes commercial occupancy. Option C is wrong — the requirement applies to every qualifying storey, not just the basement. Option D fabricates a threshold that does not exist in Sec. 1212.
+
 
 </LawCallout>
 
@@ -287,3 +305,10 @@ Return to this article on **Day 3, Day 7, and Day 14**. On each return, cover th
 4. The 45 m → 60 m travel distance trade-off and its design implications
 
 Cross-drill with **Article 21** (penthouses/roof structures) for fire-rating context and **Article 23** (stages) for the Group H/I occupancy dimension of fire suppression requirements.
+
+---
+
+## Cross‑References
+
+**Fire Resistive Construction Ratings**, **Chimneys And Fireplaces**, **Fire Zones And Existing Buildings**, **Storage Of X Ray Films**
+

@@ -4,13 +4,19 @@
 
 **SPP Document 207** governs **Design-Build Services (DBS)** — the project delivery method in which the Architect assumes professional responsibility and civil liability for **both the design and the construction** of a project. It replaces the **1979 UAP Doc. 207** and forms part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004).
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the architect's role, responsibilities, and compensation under SPP Doc 207 Design-Build Services; distinguish design-build (single contract with design-build entity) from traditional design-bid-build (owner-architect + owner-contractor contracts); explain the architect's ethical obligation to maintain professional independence even under a design-build delivery; and apply the percentage-of-construction-cost or lump-sum compensation basis.
+---
 SPP 207 is unique among the SPP documents because it fundamentally changes the Architect's legal position in the project: instead of acting as the Owner's agent who oversees a separate contractor, the Architect under DBS **directly assumes construction responsibilities** — managing resources, procuring materials, hiring personnel, and in certain modes, guaranteeing the project cost. This document also carries significant legal implications with respect to **Republic Act No. 4566** (the Contractors' License Law) and the need for the Architect to maintain a distinct professional identity even while performing construction management functions.
 
 ***
 
 ## 1. Introduction
 
-### 1.1 The Design-Build Rationlea: Time, Cost, Quality
+### 1.1 The Design-Build rationale: Time, Cost, Quality
 
 Every building project requires a balance of three competing objectives:
 
@@ -363,3 +369,18 @@ Architects who engage in DBS without understanding this distinction risk **cross
 - **DBS-GMPCC is best for cost-sensitive owners**: the guaranteed maximum cost provides budget certainty, the 50/50 savings sharing creates a genuine incentive for the Architect to be cost-efficient, and the 10% tolerance band is a reasonable contingency for any project.
 - Owners should always verify whether the Architect is engaging construction workers **as employees** (under the revolving fund model) or as an independent contractor (which may require PCAB licensing). The former is proper SPP 207 practice; the latter may constitute unlicensed contracting.
 - The Owner retains the right to **audit the revolving fund** — this should be exercised regularly (monthly or quarterly) throughout construction to maintain cost visibility and catch any financial discrepancies early.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Design-Build (DB) vs Design-Bid-Build (DBB): DB = single entity responsible for both design and construction. DBB = separate contracts (owner-architect + owner-contractor). Architect's ethical obligation under DB: must maintain PROFESSIONAL INDEPENDENCE — the architect cannot be subordinate to the contractor's commercial interests. The independence requirement is the most tested ethical point.
+
+## Cross‑References
+
+**Spp Doc 204 B Construction Management Services**, **Spp Doc 206 Comprehensive Architectural Services**, **Spp Doc 208 Architectural Design Competition Adc**, **Spp Doc 209 Architectural Consulting Services Pacs**
+

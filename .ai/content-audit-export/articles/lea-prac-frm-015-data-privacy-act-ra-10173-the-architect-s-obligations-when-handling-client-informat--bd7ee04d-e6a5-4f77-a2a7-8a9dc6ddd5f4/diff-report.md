@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information
 
-Generated: 2026-05-03T13:45:12.025Z
+Generated: 2026-05-04T00:06:51.955Z
 Article ID: bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:0d1ee274b5edc57e0e760706731321df8a920c9919827a72c0ac5a837b9780ab`
-- Normalized: `sha256:ab328372cbee3d3f0620436faee0b7944a6a76ea7bb9703c0cb86b3b2f64e8f3`
-- Candidate: `sha256:4b6afa739533b2d6add62106e92fd594390911fb3c9557823d9691bf5d8636b5`
+- Original: `sha256:d41cd859dc57a272980f4620a160f72782a4bdb48c77ee642e27109c49904a95`
+- Normalized: `sha256:05df86b21c665eab9bd840124f8d8447c9ecb67f2d007cf0d0efa802ad3f866b`
+- Candidate: `sha256:05df86b21c665eab9bd840124f8d8447c9ecb67f2d007cf0d0efa802ad3f866b`
 
 ## Line summary
 
-- Changed lines: 81
-- Inserted lines: 38
-- Deleted lines: 0
+- Changed lines: 80
+- Inserted lines: 0
+- Deleted lines: 5
 
 ## UI block preservation
 
-- UI blocks expected: 5
-- UI blocks preserved: 5
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks expected: 4
+- UI blocks preserved: 0
+- UI blocks changed/missing: 4
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 4 preserved UI block(s).
 
 ## Warnings
 

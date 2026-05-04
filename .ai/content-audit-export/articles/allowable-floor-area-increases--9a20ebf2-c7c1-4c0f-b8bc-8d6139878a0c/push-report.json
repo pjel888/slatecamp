@@ -1,19 +1,28 @@
 {
-  "attempted_at": "2026-05-03T14:18:07.886Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:49.480Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
   "slug": "allowable-floor-area-increases",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:7c1b24108182ae430b62645f9ff855435f34ecb17141253cfb3e699f189dea0a",
-  "original_hash": "sha256:7c1b24108182ae430b62645f9ff855435f34ecb17141253cfb3e699f189dea0a",
-  "candidate_hash": "sha256:95820139025382da9ae37134b2db49b3215b9e7b033af5f668d8648f33ff341c",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:95820139025382da9ae37134b2db49b3215b9e7b033af5f668d8648f33ff341c",
+  "original_hash": "sha256:744c92b18fbb3d15d725b4015e0322747f1683beb716a031ce16e1214c705414",
+  "candidate_hash": "sha256:0e8fb71945a6f7a157139d55d50135fea92fbd96abdea4b190c88d8f2d362f03",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T16:38:19.513953+00:00"
 }

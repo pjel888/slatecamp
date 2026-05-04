@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:51.946Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:22.052Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
   "slug": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:d87d91f95fde7873f15ef96419f1cb46ac8c99ceff476b09981b7c7e4a5eafbf",
-  "original_hash": "sha256:610aedda193d3de7ecdfd7dd788e6e243bdba995ab3ece144c5ed94f957916be",
-  "candidate_hash": "sha256:d87d91f95fde7873f15ef96419f1cb46ac8c99ceff476b09981b7c7e4a5eafbf",
-  "stale_check_passed": false,
+  "original_hash": "sha256:d87d91f95fde7873f15ef96419f1cb46ac8c99ceff476b09981b7c7e4a5eafbf",
+  "candidate_hash": "sha256:a1bcacc3c7fb8d1831f6bd2c96405118f50673a904167d828bac701e3f531686",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:50:59.311717+00:00"
 }

@@ -3,6 +3,7 @@
 ## Learning Goal
 
 Achieve synthesis-level understanding of Building Materials as a connected system from raw material properties through construction methods, estimating, and specifications. Trace the computational chain (material → quantity → cost) and connect Materials knowledge to Structures (concrete f'c, steel fy, timber properties), MEPF (insulation, waterproofing, firestopping), Architectural Design (finishes selection, specifications writing), and Sustainable Design (BERDE, embodied carbon).
+<ArticleMedia id="media-mastery-building-materials" a type="image" caption="Building Materials — Material-to-Delivery Chain Diagram" description="Five-stage process chain diagram: Stage 1 — Material Selection (properties, classification, cost, availability, sustainability); Stage 2 — Construction System (cast-in-place, precast, steel frame, light wood framing, modular); Stage 3 — Installation Methods (connections, joints, fasteners, sequence, quality control); Stage 4 — Estimating (quantities, board feet, concrete volume, rebar weight, CHB count, paint coverage); Stage 5 — Specification (CSI MasterFormat divisions, three-part format, prescriptive vs performance). Arrows show progression from raw material through specification delivery. Cross-links to Architectural Design (material selection), Structural (reinforced concrete), and MEPF (equipment integration)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## The Material-to-Delivery Chain
 
@@ -22,7 +23,6 @@ Estimating Quantities & Material Computation
 Extracted summary:
 - Props: (none)
 - Text: Each stage in this chain depends on the one before it. You cannot write a meaningful specification without knowing the material's properties and appropriate applications. You cannot estimate quantities accurately without knowing the construction method that determines how much material gets used. The chain is a dependency graph, not just a sequence.
-[/SLATECAMP_UI_BLOCK]
 
 ## The Computational Chain
 
@@ -35,7 +35,6 @@ Extracted summary:
 Extracted summary:
 - Props: (none)
 - Text: The LEA frequently presents Step 2 → Step 3 problems: "Given a slab of these dimensions and this mix design, how many bags of cement are required?" Practice these with a consistent unit discipline. Errors almost always come from unit conversion mistakes — confusing cubic meters with cubic feet, or forgetting to account for waste factors.
-[/SLATECAMP_UI_BLOCK]
 
 ## Cross-Subject Connections
 
@@ -47,9 +46,8 @@ Extracted summary:
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
 Extracted summary:
-- Props: headers="{[\\"Structural System\\",\\"Primary Material Consideration (MATL)\\",\\"Primary Design Consideration (STRU)\\"]}", rows="{[[\\"Reinforced concrete frame\\",\\"Cement type, w/c ratio, aggregate size, rebar grade\\",\\"Beam depth, column sizing, stirrup spacing\\"],[\\"Structural steel frame\\",\\"Section shape (W, HSS, angle), yield strength, connection type\\",\\"Member selection, connection design, drift control\\"],[\\"Load-bearing masonry\\",\\"CHB grade, mortar mix, bond pattern\\",\\"Wall thickness, reinforcement, lateral stability\\"],[\\"Timber frame\\",\\"Species, grade, moisture content, connector type\\",\\"Span tables, load duration factors, joint design\\"],[\\"Post-tensioned concrete\\",\\"High-strength strand, duct system, anchorage hardware\\",\\"Prestress losses, balanced loading, deflection control\\"]]}"
+- Props: headers="{["Structural System","Primary Material Consideration (MATL)","Primary Design Consideration (STRU)"]}", rows="{[["Reinforced concrete frame","Cement type, w/c ratio, aggregate size, rebar grade","Beam depth, column sizing, stirrup spacing"],["Structural steel frame","Section shape (W, HSS, angle), yield strength, connection type","Member selection, connection design, drift control"],["Load-bearing masonry","CHB grade, mortar mix, bond pattern","Wall thickness, reinforcement, lateral stability"],["Timber frame","Species, grade, moisture content, connector type","Span tables, load duration factors, joint design"],["Post-tensioned concrete","High-strength strand, duct system, anchorage hardware","Prestress losses, balanced loading, deflection control"]]}"
 - Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ### Materials ↔ MEPF
 
@@ -78,26 +76,18 @@ BERDE credits for regional materials, recycled content, low-VOC finishes, rapidl
 - **Neglecting waste factors.** Always include 5–10% waste in material quantity computations.
 - **Forgetting PH-specific standards.** Philippine standards govern over international ones where they differ.
 
-\
-Extracted summary:
-- Props: 
-- Text: When studying structural systems, always ask: "What does the material need to perform well in this system?" And when studying materials, ask: "What structural system is this material best suited for?"
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: The MEPF coordination dimension of LEA-MATL often appears in scenario questions: "The architect is detailing the penetration of a 150mm sanitary drain through a 2-hour rated concrete floor assembly. W
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: Frame the sustainable materials subtopic as a filter you apply to every other materials decision, not a separate topic. Ask: "What is the embodied carbon of this material? Can recycled or regional alt
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: When you encounter a question that seems purely computational, check whether it has a material property condition embedded in it. The "trick" in many LEA estimating questions is that you must first id
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+When studying structural systems, always ask: "What does the material need to perform well in this system?" And when studying materials, ask: "What structural system is this material best suited for?"
+</Note>
+<Note>
+The MEPF coordination dimension of LEA-MATL often appears in scenario questions: "The architect is detailing the penetration of a 150mm sanitary drain through a 2-hour rated concrete floor assembly. W
+</Note>
+<Note>
+Frame the sustainable materials subtopic as a filter you apply to every other materials decision, not a separate topic. Ask: "What is the embodied carbon of this material? Can recycled or regional alt
+</Note>
+<Note>
+When you encounter a question that seems purely computational, check whether it has a material property condition embedded in it. The "trick" in many LEA estimating questions is that you must first id
+</Note>
 ## Related Articles
 
 - Overview & Study Strategy for Building Materials

@@ -1,38 +1,45 @@
 {
   "article_id": "cd893cd9-7427-4093-bc07-edabf41a6cd7",
   "slug": "law-qa-deck-ra-7277-9442-10754",
-  "generated_at": "2026-05-03T13:44:30.343Z",
-  "old_hash": "sha256:a581e09cfb2637b89ec67f112df5ab60f1e75ab39092839ddfb77b2fec46efb7",
-  "new_hash": "sha256:d0f57c72519d1e358f81ca496841a0af19673701cf90b47227ff6f30721fc3be",
-  "original_hash": "sha256:a581e09cfb2637b89ec67f112df5ab60f1e75ab39092839ddfb77b2fec46efb7",
-  "normalized_hash": "sha256:70cff3b0fdd9cbe8e9b5de904d7b7e705b0b06dde7058bebf101451c594afec9",
-  "candidate_hash": "sha256:d0f57c72519d1e358f81ca496841a0af19673701cf90b47227ff6f30721fc3be",
+  "generated_at": "2026-05-04T00:06:04.115Z",
+  "old_hash": "sha256:d0f57c72519d1e358f81ca496841a0af19673701cf90b47227ff6f30721fc3be",
+  "new_hash": "sha256:4ad73f922021c30df75b3085deeab4083260a8c603d31c2ae4bb1cf848c0c98f",
+  "original_hash": "sha256:d0f57c72519d1e358f81ca496841a0af19673701cf90b47227ff6f30721fc3be",
+  "normalized_hash": "sha256:4ad73f922021c30df75b3085deeab4083260a8c603d31c2ae4bb1cf848c0c98f",
+  "candidate_hash": "sha256:4ad73f922021c30df75b3085deeab4083260a8c603d31c2ae4bb1cf848c0c98f",
   "changed": true,
-  "changed_line_count": 229,
-  "inserted_line_count": 19,
-  "deleted_line_count": 0,
+  "changed_line_count": 217,
+  "inserted_line_count": 0,
+  "deleted_line_count": 7,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 229,
-    "inserted": 19,
-    "deleted": 0,
-    "original_line_count": 216,
-    "candidate_line_count": 235
+    "changed": 217,
+    "inserted": 0,
+    "deleted": 7,
+    "original_line_count": 235,
+    "candidate_line_count": 228
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

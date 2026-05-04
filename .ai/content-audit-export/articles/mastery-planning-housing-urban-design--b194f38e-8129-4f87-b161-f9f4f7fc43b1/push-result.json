@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:51.417Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:21.669Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "b194f38e-8129-4f87-b161-f9f4f7fc43b1",
   "slug": "mastery-planning-housing-urban-design",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c",
-  "original_hash": "sha256:df2ed82a182a1e82b7c2921bbf61f12fa064606f50e5165dfcf4910e6608405a",
-  "candidate_hash": "sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c",
-  "stale_check_passed": false,
+  "original_hash": "sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c",
+  "candidate_hash": "sha256:3450200db0d5ab065b769a1714f1fb38b0f76b1038e0598848bc1b22774c84d9",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:50:58.442562+00:00"
 }

@@ -6,15 +6,15 @@ Identify parametric design as a computational approach where changing a single p
 ## Core Concept
 **Parametricism** emerged in the early 2000s as architecture's primary 21st-century methodology. **Zaha Hadid** and her collaborator **Patrik Schumacher** formalized the term and philosophy. Parametricism uses algorithmic design systems where variables (parameters) and their relationships generate form. Change one variable—a client brief, a site constraint, a performance goal—and the entire design updates automatically through the parametric model.
 
-<Tip>
-**Parametric design = change parameters, the entire design updates automatically.** This is not hand-sketching or iterative drawing—it is algorithmic. Every surface, opening, and element derives from explicit parameters and relationships. This is how contemporary computational architecture works.
-</Tip>
+
+<ArticleMedia id="media-hist-008-07b-core-concept" layout="single" type="image" status="placeholder" alt="View of the Heydar Aliyev Center (Baku, 2007–2012, Zaha Hadid Architects), showing the continuous fluid surface, seamless transitions between floor, wall, and roof, and the computational parametric modeling enabling the complex geometry." caption="Heydar Aliyev Center — Hadid's Parametric Fluid Form" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 Unlike Deconstructivism's fragmentation born of conceptual critique, Parametricism claims to be a systematic, optimization-based methodology. It generates complex, flowing, differentiated forms that respond to environmental data, structural efficiency, or programmatic variation. Every surface, opening, and structural element can be computationally derived from explicit design parameters and objectives. This creates apparent "complexity" that is actually the logical outcome of parametric relationships.
 
-<Note>
-Parametric complexity is not arbitrary—it is systematic. Every variation responds to specified parameters and constraints. This is fundamentally different from Deconstructivism's intentional instability. Parametricism claims logical coherence; Deconstructivism celebrates contradiction. Understand the philosophical difference.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
 
 The aesthetic signature of Parametricism is flowing, continuous, often biomorphic form with minimal sharp edges. Surfaces undulate and vary continuously. Fenestration patterns, structural ribs, and structural expression vary to respond to local conditions. Where modernism pursued universal principles and Postmodernism pursued historical quotation, Parametricism pursues computational optimization and systematic differentiation.
 
@@ -22,35 +22,37 @@ The aesthetic signature of Parametricism is flowing, continuous, often biomorphi
 
 **BIM (Building Information Modeling)** is the practical realization of parametric logic at the industry scale. BIM platforms like Revit and Archicad embed parametric relationships; every change to the model propagates through documentation, scheduling, and coordination. This enables unprecedented integration of design, engineering, and construction logic.
 
-<Warn>
-Parametricism is not just an elite avant-garde movement—it is now standard architectural practice. BIM and parametric tools are used in mainstream offices worldwide, from housing to infrastructure. Students sometimes treat Parametricism as experimental; in reality, it is the dominant methodology of contemporary professional practice. Know that the cutting edge has become routine.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 
 Parametricism claims that universal design principles no longer make sense in a digitally mediated, customized, performance-optimized world. Rather than grid-based repetition or hierarchical order, Parametricism generates **differentiation within coherence**: each element is unique, but all are derived from a unified parametric logic. This reflects contemporary production systems, where digital fabrication (CNC milling, 3D printing, robotic assembly) can economically produce variations.
 
 The movement faces substantial critique. Some argue that parametricism generates complexity for its own sake—the computational logic dictates form rather than meaningful design intent. Others note that the aesthetic is remarkably consistent across practitioners and projects: flowing, biomorphic, and often seemingly weightless, despite ostensible responsiveness to performance criteria. Nonetheless, parametric methods are now standard in architectural practice, from housing to infrastructure.
 
+
+<ArticleMedia id="media-hist-008-07b-core-concept" layout="single" type="image" status="placeholder" alt="Diagram contrasting parametric design (single model with algorithmic parameters, where changing one value updates the entire design) with traditional iterative drafting (sequential 2D drawings requiring manual updates to each view)." caption="Parametric vs. Traditional Design Workflow" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Building/Project", "Architect", "Year", "Location", "Key Features"]} rows={[['["**Heydar Aliyev Center**", "**Zaha Hadid Architects**", "2012", "Baku, Azerbaijan", "Undulating continuous walls; parametric facade; flowing, wavering form; contextual response"]', '["**BMW Central Building**", "**Zaha Hadid Architects**", "2005", "Leipzig, Germany", "Parametric facade panels; responsive fenestration; continuous surfaces; performance-based variation"]', '["**Serpentine Sackler Gallery**", "**Zaha Hadid Architects**", "2013", "London", "Flowing parametric forms; white walls; undulating roof; landscape integration"]', '["**Port Authority Bus Terminal** (design)", "**Hadid & Schumacher**", "2000s", "New York", "Parametric proposal; flowing circulation; performance-optimized passenger flow"]', '["**Morpheus Hotel**", "**Zaha Hadid Architects**", "2018", "Macau", "Parametric structural systems; continuous parametric surfaces; digital fabrication"]', '["**EarthSkyscraper** (concept)", "**Zaha Hadid Architects**", "2000s", "Concept", "Parametric vertical urban form; data-driven geometry; environmental responsiveness"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Definition and methodology.** "What is parametric design and how does it differ from manual form-making?" Students explain the algorithmic relationship between variables and emergent form, with computation replacing drawing-based iteration.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 2: Key figures and theory.** "Which architect and theorist formalized Parametricism in the early 2000s?" Students recognize **Zaha Hadid** and **Patrik Schumacher** as the movement's founders and primary theorists.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 3: Visual signature and design logic.** "The **Heydar Aliyev Center's** undulating, continuous walls are characteristic of Parametricism. How does this form derive from parametric methodology rather than sculptural intent?" Students articulate the distinction between formal variation for aesthetic effect and variation generated by computational logic responding to specified parameters.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 4: Practical implementation.** "How does BIM (Building Information Modeling) implement parametric logic in contemporary architectural practice?" Students connect digital design systems to project delivery and coordination.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 
-<Callout>**Parametricism** and digital architecture represent the LEA's contemporary frontier. The exam tests whether you recognize **Zaha Hadid** and **Patrik Schumacher** as the movement's theorists, understand parametric design's computational basis, and can identify how BIM and algorithmic logic reshape contemporary practice.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 ## Common Mistakes
-<WikiMistakeCard mistake="Confusing Parametricism with Deconstructivism" correction="Both generate complex, fragmented, or flowing forms, but through opposite logics. Deconstructivism fragments order conceptually; Parametricism generates order through algorithmic optimization." context="**Hadid's** early Vitra Fire Station (1993) is proto-deconstructivist; her later work (2005 onward) is parametric." />
+[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Assuming parametric design eliminates aesthetic choice" correction="Students treat algorithms as pure objective logic. In reality, architects choose which parameters matter, how to weight performance criteria, and how to interpret computational outputs." context="Aesthetic intention remains present, now channeled through parametric systems." />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Overlooking the industry shift toward parametric practice. Students sometimes treat Parametricism as an elite avant-garde movement. In fact, BIM and parametric tools are now standard in mainstream architectural offices worldwide, from boutique to corporate practices.", "Misunderstanding \"differentiation within coherence.\". Parametricism claims to generate unique responsive variation while maintaining overall coherence. Students sometimes interpret this as mere variation for its own sake rather than systematic responsiveness to design intent and constraints.", "Treating all flowing or biomorphic contemporary architecture as parametric. Not all smooth or organic forms are parametrically derived. Some are expressionist, some are intuitive, some are structurally/logically determined. Parametricism specifically uses algorithmic design systems with explicit variables and relationships."]} />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeList" status="preserved"]
 
 ## Key Terms
 - **Parametric design**: Digital design methodology using algorithmic relationships between variables that generate form; changing parameters updates the entire model automatically.

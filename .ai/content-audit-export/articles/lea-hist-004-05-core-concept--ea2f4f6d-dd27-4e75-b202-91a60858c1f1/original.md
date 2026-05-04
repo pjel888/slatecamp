@@ -1,11 +1,12 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your knowledge of **Andalusian Islamic** (al-Andalus) architecture in medieval Spain (8th–15th centuries). You must identify the **Alhambra**, understand its spatial and decorative systems, and recognize how Andalusian design differs from Central Islamic traditions.</Callout>
+## Learning Goal
 
+Identify the five testable markers of Andalusian Islamic architecture — multiple interconnecting courtyards, horseshoe arches, mashrabiya screens, geometric tilework (zellij), and water features — and recognize key sites (Great Mosque of Cordoba, Alhambra, Giralda).
 ## Core Concept
 **Al-Andalus** (Islamic Spain) developed a distinct architectural language shaped by geographic isolation, Christian pressure, and Berber/Arab fusion. Unlike the monumental religious hierarchies of Baghdad or Cairo, Andalusian architecture prioritized intimate, private, inward-focused palaces. The **Alhambra** in Granada (14th–15th centuries) represents the apex of this tradition.
 
-Andalusian architecture emphasizes water, geometry, and visual intricacy at intimate sclea. The courtyard (patio) becomes the organizing principle—not a utilitarian space (as in hypostyle mosques) but a poetic microcosm. Fountains occupy the center; arcaded galleries frame three or four sides. Water channels (acequia) run through rooms, carrying sound and coolness. Stucco and tile replace the Byzantine mosaic. Muqarnas reaches its most delicate, ornamental expression—ceiling surfaces fracture into intricate geometric patterns that seem to dematerialize. Calligraphy covers walls, inscribing Quranic verses and court poetry in flowing script.
+Andalusian architecture emphasizes water, geometry, and visual intricacy at intimate scale. The courtyard (patio) becomes the organizing principle—not a utilitarian space (as in hypostyle mosques) but a poetic microcosm. Fountains occupy the center; arcaded galleries frame three or four sides. Water channels (acequia) run through rooms, carrying sound and coolness. Stucco and tile replace the Byzantine mosaic. Muqarnas reaches its most delicate, ornamental expression—ceiling surfaces fracture into intricate geometric patterns that seem to dematerialize. Calligraphy covers walls, inscribing Quranic verses and court poetry in flowing script.
 
 <Tip>**Andalusian architecture's five testable markers:**
 1. **Multiple interconnected courtyards** (patio-focused, not monumental)
@@ -43,8 +44,10 @@ Andalusian architecture represents Islam at its most refined and most fragile. T
 "Distinguish Andalusian Islamic architecture from Abbasid or Ottoman traditions in terms of spatial strategy, material choices, and decorative approach." (Andalusian: intimate courtyards, stucco and tile, poetic inscriptions, ephemeral colonnades; Abbasid: monumental iwans, brick and stone, muqarnas as structural element; Ottoman: centralized domes, marble cladding, hierarchical courtyards.)
 
 </ExamTip>
-<ExamTip>**Pattern 4: Specific Building Features**
+
 "The **Great Mosque of Córdoba** employs which arch type as its signature, and how does this differ from earlier Islamic mosques?" (Answer: **Horseshoe arch** (or Moorish arch) with alternating red and white voussoirs; differs from simple round or four-centered arches; becomes defining feature of Andalusian style; allows expansion without height increase.)
+
+<Callout>The LEA tests your knowledge of **Andalusian Islamic** (al-Andalus) architecture in medieval Spain (8th–15th centuries). You must identify the **Alhambra**, understand its spatial and decorative systems, and recognize how Andalusian design differs from Central Islamic traditions.</Callout>
 
 ## Common Mistakes
 
@@ -53,7 +56,6 @@ Andalusian architecture represents Islam at its most refined and most fragile. T
 <WikiMistakeCard mistake="Attributing Horseshoe Arch to All Islamic Architecture" correction="The **horseshoe arch** is characteristic of Andalusian Islamic architecture (and Visigothic pre-Islamic Spain). It does not appear in Persian, Ottoman, or Central Islamic traditions." context="Recognizing this as a regional signature is essential." />
 
 <WikiMistakeList mistakes={["Misunderstanding the Role of Water in Andalusian Design. Water in the Alhambra is not merely decorative or climatic. Channels (acequias) carry sound and scent through rooms; fountains provide visual focus; reflective surfaces in pools dematerialize architecture. Water is integral to the palace's poetic function, not a utility added afterward.", "Underestimating the Nasrid Period's Artistic Achievement. Students often view the Nasrid dynasty as \"in decline\" because it ruled only Granada. In fact, Nasrid architecture represents the *culmination* of Andalusian tradition. Constraint (political and territorial) drove refinement. The Alhambra is more sophisticated, more intricate, more poetically complete than earlier Andalusian palaces.", "Confusing the Alhambra's Different Courtyards. The **Patio de los Leones** (Court of the Lions) differs functionally from the **Patio de Arrayanes** (Court of Myrtles). The lions courtyard is the heart of royal private quarters and state reception; the myrtles courtyard provides a transition and visual beauty. Each courtyard has distinct spatial, functional, and symbolic roles."]} />
-
 
 ## Key Terms
 
@@ -78,3 +80,10 @@ Andalusian architecture represents Islam at its most refined and most fragile. T
 **Zellige** — Geometric tile work (Morocco/North Africa influenced by Andalusian tradition); interlocking colored tiles forming complex patterns.
 
 <Warn>The horseshoe arch is an Andalusian Islamic signature—it does not appear in Persian, Ottoman, or Central Islamic traditions. Confusing it as universal Islamic is a critical error. Similarly, water integration in Andalusian palaces is poetic (acequias through chambers for sound, scent, reflection) and differs from utilitarian water systems elsewhere. Andalusian = intimate, poetic, decorative; not monumental.</Warn>
+
+## Related Articles
+
+See also within Islamic Architecture: **lea-hist-004-01-core-concept**, **lea-hist-004-02-core-concept**, **lea-hist-004-06-core-concept**, **lea-hist-004-07-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

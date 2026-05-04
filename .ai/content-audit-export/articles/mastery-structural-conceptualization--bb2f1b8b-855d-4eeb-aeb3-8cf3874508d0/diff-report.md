@@ -1,32 +1,33 @@
 # Content Diff Report: mastery-structural-conceptualization
 
-Generated: 2026-05-03T13:44:28.273Z
+Generated: 2026-05-04T00:06:01.768Z
 Article ID: bb2f1b8b-855d-4eeb-aeb3-8cf3874508d0
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:ac525c1382cbfe8d2a5d381636fd40bcef1da71f754830d45ffd640d78bd9cad`
-- Normalized: `sha256:3204116cf29f511f4dd37ab4186b4af8ff47730061542d9e15bce55e7f3c9988`
-- Candidate: `sha256:57e01803c37ab3e28d56f70bd9c9082d9a012b80e8480f1cfbd18a99fed0ee13`
+- Original: `sha256:57e01803c37ab3e28d56f70bd9c9082d9a012b80e8480f1cfbd18a99fed0ee13`
+- Normalized: `sha256:0ea46ff2518d7181cc808aca2cb3d2cf8bf855d5207ddec414fe3441b7409144`
+- Candidate: `sha256:0ea46ff2518d7181cc808aca2cb3d2cf8bf855d5207ddec414fe3441b7409144`
 
 ## Line summary
 
-- Changed lines: 97
-- Inserted lines: 0
-- Deleted lines: 41
+- Changed lines: 68
+- Inserted lines: 11
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 4
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 4
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 4 preserved UI block(s).
 
 ## Warnings
 

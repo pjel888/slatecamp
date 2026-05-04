@@ -1,14 +1,18 @@
 ## Full-Time Supervision Services: Construction Phase Administration
+## Learning Goal
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 Full-Time Supervision Services establish the architect's presence throughout construction implementation, ensuring design intent realization and quality control. SPP Doc 204-A defines the scope, organization, compensation, and legal responsibilities of supervision services. This service category evolved from the historical clerk-of-works role, adapting to modern project complexity and regulatory requirements. Full-time supervision represents a distinct professional offering separate from design services.
 
-### Historical Evolution and Rationlea
+<ArticleMedia type="construction-admin-flow" caption="Full-Time Supervision Process Flow — Site Activities and Quality Control" description="Process flow diagram showing the construction supervision workflow: site mobilization → daily reporting → quality control inspections → material testing → work evaluation → non-conformance identification → corrective action recommendations → payment certification → project closeout. Based on SPP Doc 204-A." />
+
+### Historical Evolution and Rationale
 
 Full-Time Supervision emerged from construction supervision traditions where architect representatives monitored contractor performance. The clerk-of-works model established foundational responsibility for construction oversight. Modern construction complexity, regulatory requirements, and quality standards have expanded supervision scope and intensity. Architect-in-charge responsibility for construction supervision remains a fundamental principle within Philippine architectural practice.
 
 ### Supervision Group Organization
 
-Construction supervision teams comprise the architect-in-charge as principal authority and field personnel providing daily coordination. Organization structures vary based on project sclea, complexity, and duration. Large projects justify full-time resident supervisors with support personnel for material testing and documentation. Smaller projects may employ periodic site visits by design firm staff supplemented by part-time field representatives. Clear authority hierarchies and communication protocols ensure effective coordination and decision-making.
+Construction supervision teams comprise the architect-in-charge as principal authority and field personnel providing daily coordination. Organization structures vary based on project scale, complexity, and duration. Large projects justify full-time resident supervisors with support personnel for material testing and documentation. Smaller projects may employ periodic site visits by design firm staff supplemented by part-time field representatives. Clear authority hierarchies and communication protocols ensure effective coordination and decision-making.
 
 ### Scope of Full-Time Supervision Services
 
@@ -29,3 +33,35 @@ Architects in supervisory roles exercise authority over specified construction m
 ### Legal Responsibilities and Standards of Care
 
 Full-time supervisors assume responsibility for identifying non-conformance and recommending corrective action. Documentation of deficiencies protects both architect and client interests. Standard of care requires vigilant monitoring, prompt issue identification, and professional judgment in technical assessments. Supervisors must balance owner interests against contractor capabilities and construction realities.
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+
+<ProcessFlow>
+<ol>
+  <li><strong>Project Definition</strong> — Problem identification</li>
+  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
+  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
+  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
+  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
+  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
+</ol>
+</ProcessFlow>
+
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)

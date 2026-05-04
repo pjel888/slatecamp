@@ -8,15 +8,17 @@ Identify and apply Le Corbusier's Five Points of Architecture — pilotis, free 
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
-[/SLATECAMP_UI_BLOCK]
 
 You open an LEA question booklet and see a black-and-white photograph of a white box elevated on slender columns, with a long strip window and a garden visible on the roof. The question asks you to identify all five architectural principles this house embodies. You are looking at the Villa Savoye — and you need to name every point and explain why each one matters.
 
@@ -59,19 +61,15 @@ You open an LEA question booklet and see a black-and-white photograph of a white
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 Extracted summary:
 
-\
-
- component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
-[/SLATECAMP_UI_BLOCK]
+component="ExamTip" status="preserved"]
+<Note>
+**LEA Pattern:** Questions about this architect often present an unfamiliar b...
+</Note>
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
-[/SLATECAMP_UI_BLOCK]
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap 1: Confusing "Ribbon Window" with "Curtain Wall."** A ribbon window (fenêtre en longueur) is a horizontal strip window within a wall, not a full-floor glass curtain wall. Curtain walls came later with Mies van der Rohe's glass skyscrapers. On the LEA, these are distinct concepts.
@@ -121,3 +119,5 @@ D. The International Style (1932)
 
 **The Bauhaus And International Style**, **Mies Van Der Rohe**, **Masters Of The Golden Age**, **Post Modernism**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

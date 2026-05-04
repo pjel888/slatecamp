@@ -1,5 +1,17 @@
 ## PRC vs. PRBoA: Distinct Roles, Authority, and the Appeals Chain
 
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Differentiate the PRBoA's role (professional regulation, licensure, discipline) from the PRC's role (administrative supervision, appeals).
+- Describe the appeals chain: PRBoA decision → PRC → Court of Appeals → Supreme Court.
+- Identify which body handles preliminary investigation of ethical complaints.
+- Explain the PRC's power to approve or modify PRBoA resolutions.
+
+---
+
+---
 ### Foundational Distinction: Administrative Supervision vs. Professional Autonomy
 
 The Professional Regulation Commission (PRC) and the Professional Regulatory Board of Architecture (PRBoA) are distinct entities with overlapping but separate authority. The PRC is a constitutional body under the Administrative Code, supervising all professional regulatory boards: Architecture, Engineering, Medicine, Nursing, Surveying, and other professions. The PRBoA is a collegial board created specifically for architecture regulation and operating under PRC administrative supervision.
@@ -32,6 +44,8 @@ If the Commission attempted to order the Board to modify examination standards, 
 
 This distinction reflects a principle in professional regulation: regulatory boards should have insulation from political or administrative pressure in technical matters. The Commission supervises the Board's administrative machinery but not its professional substance.
 
+<Warn>A common exam trap: confusing **administrative supervision** (PRC handles budget, staff, facilities — organizational support) with **operational control** (PRBoA decides professional standards, exam content, discipline — professional autonomy). The PRC cannot order the Board to change exam standards or shield a violator. If an answer choice suggests the PRC can control Board professional judgments, it is wrong.</Warn>
+
 ### Review and Approval Power: Regulatory vs. Disciplinary Decisions
 
 The statute creates asymmetry in the Commission's review authority. Section 7 states: "The policies, resolutions, rules and regulations, issued or promulgated by the Board shall be subject to review and approval of the Commission. However, the Board's decisions, resolutions or orders rendered in administrative cases shall be subject to review only if on appeal."
@@ -40,9 +54,11 @@ This distinction is critical. For rulemaking: the Board proposes rules; the Comm
 
 For disciplinary decisions: the Board hears cases and issues decisions. These decisions do not require Commission pre-approval; they take effect upon issuance. However, an aggrieved party (the architect respondent or the complainant) can appeal to the Commission. The Commission then reviews the decision for errors of law, abuse of discretion, or insufficiency of evidence.
 
-This asymmetry reflects recognition that Board expertise in professional matters should be respected in adjudication. Pre-approval of every disciplinary decision would compromise the Board's independence and would require the Commission to develop expertise equivleant to the Board's. The appeal mechanism provides oversight without compromising the Board's first-instance authority.
+This asymmetry reflects recognition that Board expertise in professional matters should be respected in adjudication. Pre-approval of every disciplinary decision would compromise the Board's independence and would require the Commission to develop expertise equivalent to the Board's. The appeal mechanism provides oversight without compromising the Board's first-instance authority.
 
 ### The Appeals Path: From Board Through Commission to Court
+
+<Tip>The three-tier appeal path is: **Board (first instance)** → **Commission (appeal)** → **Court of Appeals (judicial review)**. The Commission does not retry the case — it reviews the Board's record for legal error, abuse of discretion, or insufficient evidence. The Court applies the arbitrary-and-capricious standard. Know this hierarchy cold for the LEA.</Tip>
 
 Disciplinary proceedings follow a three-tier appeal path. First, the Board hears the case and renders a decision. The Board's decision becomes final 15 days after the respondent receives notice of judgment unless appelead.
 
@@ -87,7 +103,7 @@ The Commission, as custodian, enforces confidentiality and controls access. The 
 
 ### Relationship to the Integrated and Accredited Professional Organization
 
-Section 41 identifies the IAPOA (now the United Architects of the Philippines, Inc.) as "the Integrated and Accredited Professional Organization" under RA 9266. This organization is neither the PRC nor the PRBoA; it is the professional association to which IAPOA membership is mandatory for registered architects.
+Section 4 identifies the IAPOA (now the United Architects of the Philippines, Inc.) as "the Integrated and Accredited Professional Organization" under RA 9266. This organization is neither the PRC nor the PRBoA; it is the professional association to which IAPOA membership is mandatory for registered architects.
 
 The IAPOA's roles include:
 
@@ -139,3 +155,40 @@ Similarly, if the Commission overreaches and infringes on the Board's profession
 The PRC and PRBoA also interact with other agencies. The Commission of Higher Education (CHED) coordinates on curriculum standards under Section 7(l). The Department of Trade and Industry handles registration of architectural firms. The courts enforce disciplinary decisions through proceedings to enforce subpoenas or contempt for violating Board orders.
 
 These interactions create an ecosystem of professional regulation; no single agency has complete authority. This distributed authority, while sometimes creating friction, provides checks and balances preventing any single entity from capturing the regulatory apparatus.
+
+<ExamTip />
+
+<Note />
+
+---
+
+\
+Extracted summary:
+- Props: 
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 7 (Review and Approval), 8 (Administrative Supervision), and 9 (Suspension or Removal of Board Members); RA 9266 IRR, Sections 7-9.
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: A common exam trap: confusing **administrative supervision** (PRC handles budget, staff, facilities — organizational support) with **operational control** (PRBoA decides professional standards, exam c
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: The three-tier appeal path is: **Board (first instance)** → **Commission (appeal)** → **Court of Appeals (judicial review)**. The Commission does not retry the case — it reviews the Board's record for
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 7 (Review and Approval), 8 (Administrative Supervision), and 9 (Suspension or Removal of Board Members); RA 9266 IRR, Sections 7-9.
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)

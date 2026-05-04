@@ -1,4 +1,10 @@
 # Commercial Clearances
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Calculate minimum commercial clearances — aisle width by occupant load, counter clearance, queuing space, and service counter accessibility — under PD 1096 and BP 344; apply egress width requirements for mercantile, business, and assembly occupancies; and determine minimum unobstructed width for retail display areas and service counters.
+
 ### LEA Board Exam Dual-Context Study Resource — US (IBC/ADA) vs. Philippine (PD 1096 / RA 9514 / BP 344)
 
 ---
@@ -42,7 +48,7 @@
   The original makes no mention of the fundamental anthropometric design principle: **never design for the "average" person**. Commercial spaces must accommodate a range of users (typically the 5th–95th percentile), and Filipino anthropometric data differs significantly from the US data that underlies many international standards. This omission weakens the ergonomic foundation of the article.
 
 - **MISSING — Cross-Cultural Anthropometric Comparison:**
-  The original uses Philippine code dimensions (BP 344 knee clearance: 700 mm H) and US code dimensions (ADA knee clearance: 27" / 685 mm H) without explaining _why_ they differ — i.e., that Filipino users are shorter on average (PH mlea mean stature: 167.0 cm vs. US mlea mean: 175.5 cm), which affects seated dimensions and table height standards.
+  The original uses Philippine code dimensions (BP 344 knee clearance: 700 mm H) and US code dimensions (ADA knee clearance: 27" / 685 mm H) without explaining _why_ they differ — i.e., that Filipino users are shorter on average (PH male mean stature: 167.0 cm vs. US male mean: 175.5 cm), which affects seated dimensions and table height standards.
 
 ---
 
@@ -60,16 +66,18 @@ A security guard cannot wheel his injured colleague through a retail aisle. A wh
 
 ### Core Framework: The "ORD" System
 
-<Callout variant="tip" title="Mnemonic">
+<LawCallout code="pd1096" section="Rule VII - Commercial Clearances">
+
 
 O-R-D = Office / Retail / Dining — the three commercial clearance domains.
 
-</Callout>
+
+</LawCallout>
 
 | Domain | PH Governing Law | US Governing Standard | Core Design Rule |
 |--------|-----------------|----------------------|-----------------|
 | **Office (O)** | PD 1096, Table 602-A | IBC / OSHA 1910.37 | Min egress corridor = **1.12 m** (PH) / **44 in / 111.8 cm** (US) |
-| **Retail (R)** | RA 9514 RIRR (2019), Rule 8 | IBC §1030 / NFPA 101 | Aisle scleas with seat count: **76 → 91 → 122 cm** |
+| **Retail (R)** | RA 9514 RIRR (2019), Rule 8 | IBC §1030 / NFPA 101 | Aisle scales with seat count: **76 → 91 → 122 cm** |
 | **Dining (D)** | BP 344 IRR (Amended), Sec. 7 | ADA 2010, §226 + §902 | **10% tables** (PH) / **5% seating spaces** (US) accessible |
 
 ---
@@ -82,7 +90,7 @@ The answer is nuanced — and critical for the exam.
 
 #### The "Average Person" Fallacy
 
-**Never design for the average.** The 50th-percentile mlea Filipino worker stands **167.0 cm** tall — but your building must serve both the 5th-percentile femlea (143.0 cm) and the 95th-percentile mlea (178.0 cm). A single "average" dimension fails both extremes.
+**Never design for the average.** The 50th-percentile male Filipino worker stands **167.0 cm** tall — but your building must serve both the 5th-percentile female (143.0 cm) and the 95th-percentile male (178.0 cm). A single "average" dimension fails both extremes.
 
 Design rule: Use the **5th percentile for reach** (can the shortest person access it?) and the **95th percentile for clearance** (can the largest person fit through?).
 
@@ -90,7 +98,7 @@ Design rule: Use the **5th percentile for reach** (can the shortest person acces
 
 Data sources: Del Prado-Lu (2007) for Filipino manufacturing workers (n=1,805); NC State Ergonomics Center / NHANES-ANSUR for US population.
 
-| Dimension | PH Mlea 95th% | US Mlea 95th% | Gap | Design Impact |
+| Dimension | PH male 95th% | US male 95th% | Gap | Design Impact |
 |-----------|--------------|--------------|-----|--------------|
 | Standing Height (Stature) | 178.0 cm | 186.7 cm | **−8.7 cm** | US door/ceiling clearances are generous for Filipinos |
 | Eye Height (Standing) | 166.0 cm | 174.3 cm | **−8.3 cm** | Signage & display heights can be slightly lower in PH |
@@ -106,7 +114,7 @@ Data sources: Del Prado-Lu (2007) for Filipino manufacturing workers (n=1,805); 
 
 **Answer:** BP 344's 700 mm (70 cm) is _slightly more generous_ in height than ADA's 685 mm, despite Filipino users being shorter. This is because BP 344 is designed to accommodate **wheelchair users** whose knee height (with footrests) may differ from ambulatory users, and because the Philippine standard takes a conservative approach to clearance. The key design implication: when building for mixed Filipino and international users, default to the _more restrictive_ (larger clearance) dimension.
 
-**Practical implication for BP 344 compliance:** A Filipino user at the 95th percentile mlea knee height of 55.9 cm (559 mm) has ample clearance under a 700 mm H table. A wheelchair user may require the full 700 mm. Design to the **wheelchair user's needs**, not the ambulatory majority.
+**Practical implication for BP 344 compliance:** A Filipino user at the 95th percentile male knee height of 55.9 cm (559 mm) has ample clearance under a 700 mm H table. A wheelchair user may require the full 700 mm. Design to the **wheelchair user's needs**, not the ambulatory majority.
 
 ---
 
@@ -157,7 +165,7 @@ Think of it as a runway widening as the crowd grows: small crowd, small runway; 
 
 The Fire Code of the Philippines (RA 9514) and its 2019 Revised Implementing Rules and Regulations (RIRR) govern aisle widths in retail/assembly occupancies through means-of-egress provisions. The core retail aisle progression:
 
-| Condition | Min Aisle Width | Imperial Equivleant |
+| Condition | Min Aisle Width | Imperial equivalent |
 |-----------|----------------|--------------------:|
 | Base / ≤50 seats, one side | **76 cm (760 mm)** | ~30 in |
 | >50 seats, one side | **91 cm (910 mm)** | ~36 in |
@@ -184,7 +192,7 @@ Exam note: Always state your threshold and show the calculation. Partial credit 
 
 The IBC governs assembly occupancy aisle widths through Section 1030 (Egress from Assembly Occupancies):
 
-| Condition | Min Aisle Width | Metric Equivleant |
+| Condition | Min Aisle Width | Metric equivalent |
 |-----------|----------------|------------------:|
 | Stepped aisles, seating both sides | **48 in (121.9 cm)** | 1,219 mm |
 | Stepped aisles, seating one side | **36 in (91.4 cm)** | 914 mm |
@@ -287,9 +295,9 @@ Critical LEA trap: The question may give you tables OR seats. BP 344 is table-ba
 
 #### Why Filipino Anthropometrics Affect Dining Table Design
 
-Filipino users at the 5th percentile femlea have a knee height (sitting) of **42.2 cm (422 mm)** — well below BP 344's 700 mm knee clearance. This means BP 344's clearance is sufficient for essentially all Filipino users. However, wheelchair users (whose footrest height and thigh clearance requirements drive the dimension) require the full 700 mm. The code is designed for the **wheelchair user's envelope**, not the ambulatory Filipino.
+Filipino users at the 5th percentile female have a knee height (sitting) of **42.2 cm (422 mm)** — well below BP 344's 700 mm knee clearance. This means BP 344's clearance is sufficient for essentially all Filipino users. However, wheelchair users (whose footrest height and thigh clearance requirements drive the dimension) require the full 700 mm. The code is designed for the **wheelchair user's envelope**, not the ambulatory Filipino.
 
-The 750 mm table height is slightly lower than the ADA's upper limit of 865 mm, reflecting a slight accommodation for shorter Filipino stature — the seated elbow rest height for Filipino mleas is approximately 22.2 cm above seat height. With a seat at ~45 cm, elbow height ≈ 67 cm — placing the optimal work surface at ~72–75 cm, very close to BP 344's 750 mm.
+The 750 mm table height is slightly lower than the ADA's upper limit of 865 mm, reflecting a slight accommodation for shorter Filipino stature — the seated elbow rest height for Filipino males is approximately 22.2 cm above seat height. With a seat at ~45 cm, elbow height ≈ 67 cm — placing the optimal work surface at ~72–75 cm, very close to BP 344's 750 mm.
 
 ---
 
@@ -379,7 +387,7 @@ D) 142 cm
 
 **Answer: D — 142 cm**
 
-**Rationlea:**
+**Rationale:**
 - Step 1: Seats > 50, on **both sides** → base width = **122 cm**
 - Step 2: Length adjustment = 8 m × 2.5 cm/m = **20 cm**
 - Step 3: Total = 122 + 20 = **142 cm**
@@ -399,7 +407,7 @@ D) 2 tables accessible; knee clearance 700 mm H × 800 mm W × 480 mm D; table h
 
 **Answer: B — 3 tables accessible; knee clearance 700 mm H × 800 mm W × 480 mm D; table height 750 mm**
 
-**Rationlea:**
+**Rationale:**
 - BP 344 requires **10%** of tables accessible: 30 × 10% = **3 tables** (not 2 — a partial or rounded-down answer fails compliance).
 - Knee clearance per BP 344 Sec. 7: **700 mm H × 800 mm W × 480 mm D** (Option A's 685 mm H is the ADA dimension, not BP 344).
 - Table height per BP 344: **750 mm** (not 720 mm).
@@ -419,7 +427,7 @@ D) Incorrect — ADA requires 10% of seating spaces (~20 spaces), while BP 344 r
 
 **Answer: C**
 
-**Rationlea:**
+**Rationale:**
 - **US/ADA (§226.1):** At least **5% of seating spaces** must be accessible. With 200 seats: 5% = **10 seating spaces** minimum. With 4 seats per table, this could be satisfied with as few as 3 tables (12 accessible seats > 10 minimum), but the requirement is seats/spaces, not tables.
 - **PH/BP 344 (Sec. 7):** At least **10% of tables** must be accessible. With 50 tables: 10% = **5 tables** minimum.
 - **Comparison:** PH requires **5 accessible tables** (clear table count); US requires **10 accessible seating spaces** (at minimum 3 tables worth). In practice, the Philippines mandates a higher explicit table count (5 vs. potentially 3). The consultant's blanket "5 tables each" statement is incorrect because the ADA's 5% is seating-space-based, not table-based.
@@ -445,10 +453,26 @@ Before your exam, verify these without looking:
 | RA 9514 both-sides threshold? | **122 cm / 1,220 mm** |
 | PD 1096 min business occupancy aisle? | **1.12 m / 1,120 mm** |
 | Does DAO 2003-30 apply to offices? | **No — it covers ECPs (heavy industry, infrastructure)** |
-| PH mlea mean stature? | **167.0 cm** (vs. US 175.5 cm) |
-| Filipino femlea 5th% stature? | **143.0 cm** |
+| PH male mean stature? | **167.0 cm** (vs. US 175.5 cm) |
+| Filipino female 5th% stature? | **143.0 cm** |
 
 ---
+
+
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: The minimum aisle width for mercantile occupancies is 900 mm for counters (if non-accessible) and 1.20 m for accessible routes. Queuing space = 900 mm per person in line. Service counters must have a 760-860 mm high section for wheelchair users.
+
+## Cross‑References
+
+**Ceiling Heights And Room Sizes**, **Residential Clearances**, **Pd 1096 Rule Xii Egress And Corridors**, **Accessible Seating In Assembly Areas**
 
 ## Verified Sources
 

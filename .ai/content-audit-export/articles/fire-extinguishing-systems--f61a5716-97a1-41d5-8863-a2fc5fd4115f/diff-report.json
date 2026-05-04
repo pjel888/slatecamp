@@ -1,38 +1,49 @@
 {
   "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
   "slug": "fire-extinguishing-systems",
-  "generated_at": "2026-05-03T13:45:13.337Z",
-  "old_hash": "sha256:7188efb056807cad1e40942009d56531943e1f36bc24ea168cf3aca936551e19",
-  "new_hash": "sha256:13cb87f75b9f9d64cd4ae415235e30ff5e2755e27839c0eb63ad088f4ad50e53",
-  "original_hash": "sha256:7188efb056807cad1e40942009d56531943e1f36bc24ea168cf3aca936551e19",
-  "normalized_hash": "sha256:2597b5730aff6338d1b26a0b98166a354c16d20096b84cbf5b692673b3b688a1",
-  "candidate_hash": "sha256:13cb87f75b9f9d64cd4ae415235e30ff5e2755e27839c0eb63ad088f4ad50e53",
+  "generated_at": "2026-05-04T00:06:53.419Z",
+  "old_hash": "sha256:13cb87f75b9f9d64cd4ae415235e30ff5e2755e27839c0eb63ad088f4ad50e53",
+  "new_hash": "sha256:652cb7dc4ff8c5ebe6c1d91f180c4bf9a37f6748596d5f7e25a3cb7f9ecc26b2",
+  "original_hash": "sha256:13cb87f75b9f9d64cd4ae415235e30ff5e2755e27839c0eb63ad088f4ad50e53",
+  "normalized_hash": "sha256:652cb7dc4ff8c5ebe6c1d91f180c4bf9a37f6748596d5f7e25a3cb7f9ecc26b2",
+  "candidate_hash": "sha256:652cb7dc4ff8c5ebe6c1d91f180c4bf9a37f6748596d5f7e25a3cb7f9ecc26b2",
   "changed": true,
-  "changed_line_count": 314,
-  "inserted_line_count": 25,
-  "deleted_line_count": 0,
+  "changed_line_count": 299,
+  "inserted_line_count": 0,
+  "deleted_line_count": 12,
   "ui_blocks_original_count": 7,
-  "ui_blocks_candidate_count": 7,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 7,
   "ui_blocks_count": 7,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 7,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 314,
-    "inserted": 25,
-    "deleted": 0,
-    "original_line_count": 290,
-    "candidate_line_count": 315
+    "changed": 299,
+    "inserted": 0,
+    "deleted": 12,
+    "original_line_count": 315,
+    "candidate_line_count": 303
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007"
+    ],
+    "changed_count": 7
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 7 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 7 preserved UI block(s)."
 }

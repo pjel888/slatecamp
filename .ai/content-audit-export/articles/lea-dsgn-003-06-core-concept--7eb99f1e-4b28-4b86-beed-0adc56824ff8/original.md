@@ -1,6 +1,8 @@
 ## What You Need to Know for the LEA
 
-The LEA tests your ability to correctly classify dormitories as Group B residential (not Group A), understand their space program standards per DOT classifications, and apply occupant load calculations for sleeping and common areas.
+## Learning Goal
+Classify dormitories as Group B (not Group A) residential, calculate occupant load for sleeping areas (9.3 sqm/person) and common areas separately, apply DOT space standards, and distinguish NBC-binding standards from DOT-advisory classifications.
+
 
 ## Core Concept
 
@@ -90,6 +92,13 @@ Common layout: 4–6 stories with double-loaded corridors, 2–4 shared bathroom
 - Exit width needed: 632 occupants ÷ 165 = 3.83 m total exit width required per PD 1096 Section 1207 (approx 6.06 mm per occupant, not 7.6 mm). Provided by 2 doors at 2.4 m clear width each = 4.8 m total (exceeds 3.83 m minimum) ✓
 
 <Tip>**Memory rule:** Dormitory = Group **B** (transient residential, not A). Never confuse with permanent multi-family (A-2). DOT star ratings: 1★=16, 2★=20, 3★=25, 4★=30, 5★=40 sqm. Occupant load formula: sleeping area sqm ÷ 9.3 = occupants (then add common areas separately for total design capacity).</Tip>
+
+
+**Exam Tip — ERR-DSGN-020:** Dormitories are Group B (transient residential), NOT Group A-2 (multi-family). Sleeping area occupant load = 9.3 sqm/person, NOT 18.6 sqm/person (retail) or 4.6 sqm/person (education).
+
+## Cross-References
+
+See **LEA-DSGN-007-04** (Design Process) for space programming methodology, **LEA-DSGN-008-01** (Fire Egress) for dual occupant load calculations, and **LEA-DSGN-007-08** (Human Factors) for anthropometric standards.
 
 ## Common Mistakes
 

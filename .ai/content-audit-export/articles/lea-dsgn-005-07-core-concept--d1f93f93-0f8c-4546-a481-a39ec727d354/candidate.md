@@ -6,7 +6,6 @@ Day care centers and kindergartens are classified as **Group C** (education and 
 
 Classify day care centers as Group C (not B or D), calculate activity room capacity using the 1.5 sqm/child and 25-child maximum rules, size outdoor play areas equal to indoor activity space, apply child-scale anthropometric dimensions for toilets and lavatories, and verify DSWD regulatory authority over DepEd.
 
-
 ## Core Concept
 
 Day care centers and kindergarten facilities fall under **Group C** (education and recreation) per **PD 1096**, NOT Group B (residential/dormitory) or Group D (institutional with custodial care). This is a common LEA error trap (ERR-DSGN-004). DSWD (Department of Social Welfare and Development) is the regulatory authority, distinct from DepEd (which oversees formal schools). Activity rooms for structured learning and play require **1.5 sqm per child** with a maximum of **25 children per room**. Outdoor play area must equal or exceed indoor activity area square footage to provide adequate supervision and developmental space.
@@ -47,6 +46,7 @@ Example: If indoor activity = 150 sqm total, outdoor play must be ≥150 sqm.
 
 **Occupancy for Fire Egress:**
 Total occupancy = active children + caregivers + visiting parents (peak). Dual exits at 50+.
+<ArticleMedia id="media-lea-dsgn-005-07-core-concept" a type="image" caption="Day Care Center — Child-Scale Space Planning Diagram" description="Floor plan of a day care center showing activity room (1.5 sqm/child, max 25 children), nap room (0.9-1.2 sqm/child), outdoor play area (equal to indoor), and child-height toilet fixtures (250-300mm). DSWD regulatory reference." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Philippine Practice Context
 
@@ -58,10 +58,10 @@ Metro Manila day care centers (home-based and institutional) operate under DSWD 
 2. **Room Capacity and Sizing:** A facility wants 40 children in one activity room (1.5 sqm × 40 = 60 sqm). LEA tests whether candidate recognizes the hard limit: max 25 children per room, meaning this requires TWO rooms (25 + 15 children or 25 + 25).
 3. **Outdoor Play Integration:** A 2-floor day care with 150 sqm indoor activity (ground floor) and 80 sqm (second floor) must provide 230 sqm outdoor play minimum. Candidates often provide only 80 sqm (matching one floor) or skip outdoor calculation entirely.
 
-<Tip>**Day Care Anchors:** Group C occupancy (not B or D). DSWD regulatory authority (not DepEd). Activity room = 1.5 sqm/child, max 25/room. Outdoor play = equal to indoor activity area. Nap room = 0.9–1.2 sqm/child. Child toilet = 250–300 mm; child lavatory = 550–600 mm. Exit width = 7.6 mm/child. Dual exits at 50+.</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 **Exam Tip — ERR-DSGN-004:** Day care centers are Group C (education/recreation), NOT Group B (residential) or Group D (institutional). Hard limit: max 25 children per activity room. DSWD regulates, NOT DepEd.
+<ArticleMedia id="media-lea-dsgn-005-07-core-concept" a type="image" caption="Day Care Center — Child-Scale Room Layout and Play Area Diagram" description="Floor plan of a day care center showing: activity room (1.5 sqm/child, max 25), nap room (0.9 sqm/child), child-height toilet fixtures (250-300mm), outdoor play area equal to indoor, and DSWD-mandated caregiver station. DSWD vs. DepEd occupancy distinctions noted." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -69,4 +69,4 @@ See **LEA-DSGN-004-09** (Churches) for Group C classification, **LEA-DSGN-008-01
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["ERR-DSGN-004: Classifying day care as Group B (residential) or Group D (institutional) instead of Group C","Activity room oversized beyond max 25 children per room limit","Outdoor play area undersized or omitted (must equal indoor activity area)","Nap room density too high (0.5 sqm/child instead of 0.9–1.2 sqm/child)","Child toilet/lavatory heights same as adult standards (incorrect)","ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person","ERR-DSGN-021: Single exit classroom at 50+ child occupancy"]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

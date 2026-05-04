@@ -4,6 +4,14 @@
 Digital architecture represents the integration of computational tools, artificial intelligence, virtual reality, and building information modeling (BIM) into architectural practice. Filipino architects increasingly adopt these technologies to enhance design innovation, streamline workflows, improve collaboration, and create data-driven solutions responsive to Philippine tropical climate, rapid urbanization, and resource constraints.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define the key technologies in digital architecture: AI-driven analysis, parametric/generative design, VR visualization, BIM platforms, and computational optimization.
+- Explain how digital tools transform architectural workflows from conceptualization through construction and facilities management.
+- Apply digital architecture concepts to Philippine practice: BIM for tropical climate-responsive design, computational analysis for resource-constrained contexts.
+
 ## Core Concept
 
 Digital architecture fundamentally transforms how architects conceptualize, develop, and communicate design. The field encompasses multiple technologies deployed across the full architectural lifecycle: AI-driven site analysis and crowd simulation, parametric and generative design systems, immersive virtual reality visualization, integrated BIM platforms, computational optimization of material and energy performance, and roboticized fabrication. Rather than replacing traditional architectural thinking, these tools extend architects' capacity to explore complex problems, test numerous iterations rapidly, and make data-informed decisions that would be impractical using conventional methods alone.
@@ -92,3 +100,10 @@ The future of Philippine architectural practice will likely involve increasing d
 **Algorithm Bias** — The phenomenon where artificial intelligence systems perpetuate or amplify biases present in training data, potentially leading to discriminatory or culturally inappropriate design solutions.
 
 **Digital Divide in Architecture** — The inequitable access to computational tools and digital expertise across Filipino practices, concentrating technological capability among large, well-resourced firms.
+
+## Related Articles
+
+See also within Innovation & Filipino Identity: **lea-theo-008-02-core-concept**, **lea-theo-008-04-core-concept**, **lea-theo-008-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

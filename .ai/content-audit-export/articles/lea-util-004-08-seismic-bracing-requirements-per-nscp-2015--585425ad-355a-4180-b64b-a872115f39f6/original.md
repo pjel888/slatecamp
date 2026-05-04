@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-The Philippines sits in Seismic Zone 4 per NSCP 2015, making earthquake-resistant MEPF (Mechanical, Electrical, Plumbing, Fire Protection) design mandatory, not optional. The National Structural Code of the Philippines (NSCP 2015, Section 208) classifies most Philippine territories as high-seismic-risk regions due to proximity to the Philippine Fault and subduction zones. Building systems—from chiller mounts to gas lines to emergency generators—must be engineered to function during and after seismic events. Your responsibility as a building utilities authority includes specifying, installing, and inspecting these systems to ensure they survive ground acceleration, support life safety, and restore critical functions post-earthquake.
+## Learning Goal
 
+Apply NSCP 2015 Section 208 seismic bracing requirements for MEPF components — calculate bracing forces, determine maximum spacing of lateral braces for conduit/pipe/duct runs, and identify anchor types and embedment depths per ACI 318 and NSCP provisions.
 ## Seismic Bracing Requirements per NSCP 2015
 
 ### Minimum Acceleration and Design Force Calculation
@@ -11,6 +12,19 @@ NSCP 2015 Section 208 establishes seismic design categories (SDC) A through F. F
 **F_p = (0.4 a_p S_DS W_p I_p)/R_p
 
 Where:
+
+
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 - a_p = component amplification factor (per NSCP Table 1307.4.1, typically 1.0-2.5 for MEP equipment)
 - S_DS = design spectral response acceleration (site-specific, derived from Z=0.4 and soil factors per Section 208)
 - W_p = weight of component
@@ -205,7 +219,7 @@ Seismic scenario: Earthquake at 11 p.m. causes main power loss. UPS (uninterrupt
 
 ### Fuel Supply and Storage Considerations
 
-- Diesel generator fuel tanks: minimum 24-hour autonomy per NSCP 2015, equivleant to 8 L/kW for typical 4-hour duty cycle
+- Diesel generator fuel tanks: minimum 24-hour autonomy per NSCP 2015, equivalent to 8 L/kW for typical 4-hour duty cycle
 - Tank mounting: bolted to reinforced concrete pad, fuel line with flexible hose and secondary support
 - Fuel intake filter: accessible for post-earthquake inspection and cleaning (silt from ruptured water mains can clog fuel)
 - Post-earthquake inspection protocol: Check tank for cracks, fuel color (water contamination), filter condition; run generator at no load for 15 minutes before accepting load
@@ -331,7 +345,7 @@ The 30 minutes immediately following earthquake ground motion cessation are crit
    - Check chiller/pump main isolation valves are not leaking
    - Inspect piping for visible separation at expansion joints (flexible couplers should show no fluid weeping; if leaking, close isolation valve and isolate system)
    - If water-cooled chiller: check condenser water pump is operating (listen for audible vibration/operation) and discharge pressure is normal (compare to nameplate operating range, typically 50–80 psi for centrifugal chiller)
-   - Document: Isolation valves selead (Y/N), visible leaks (Y/N, location), pump status (operating/not operating)
+   - Document: Isolation valves sealed (Y/N), visible leaks (Y/N, location), pump status (operating/not operating)
 
 4. _Elevator system_
    - Check car position (most elevators revert to lowest floor after seismic shutdown; if car is at intermediate floor, potential entrapment situation—note for Phase 3 professional response)
@@ -423,3 +437,10 @@ Earthquake preparedness for building MEPF systems requires integration of:
 6. **Documentation** of all seismic components and inspection results (maintenance log, photographic record, post-earthquake condition report)
 
 Buildings that apply this integrated strategy—from seismic design of MEPF to emergency power management to post-earthquake inspection—dramatically reduce life safety risk, minimize fire-following-earthquake damage, and enable rapid recovery and restoration of critical services.
+
+## Related Articles
+
+See also within Fire Protection Systems: **lea-util-004-04-core-concept**, **lea-util-004-05-core-concept**, **lea-util-004-06-core-concept**, **lea-util-004-07-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

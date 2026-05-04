@@ -14,6 +14,13 @@ _System Formwork_ — Standardized aluminum or steel panels with integrated brac
 
 _Slip-Form_ — Continuously moving forms support concrete placement as the structure rises. Used for tall repetitive structures (silos, towers, cores). Specialized jacking and guide systems maintain form position as concrete hardens. Advantages: continuous progress (days/floor), minimal setup/removal. Disadvantages: high cost, specialized labor, used only for tall/repetitive geometry.
 
+
+<ArticleMedia id="media-stripping-time-chart" layout="single" type="image" status="placeholder"
+  alt="Chart showing formwork stripping time requirements per NSCP 2015 for slabs, beams, walls, and columns with temperature dependency curves"
+  caption="Future chart: formwork stripping time requirements by member type and concrete strength"
+  suggestedAsset="Chart or table of minimum curing periods before form removal"
+  placementIntent="Provides quick reference for stripping time requirements under different conditions" />
+
 ### Formwork Design
 
 Formwork must support: (1) self-weight of fresh concrete, (2) reinforcement, (3) construction live load (workers, tools, impact from bucket placement), (4) form weight. ACI 347R specifies design loads:
@@ -29,6 +36,12 @@ Form pressure increases with concrete temperature (warmer = faster setting, lowe
 
 Forms supporting horizontal spans must not be struck until concrete achieves 70% of design 28-day strength per ACI 347. Typical timeline: 7–14 days for normal Portland cement at ambient temperature. Accelerated curing (heat, steam, special admixtures) reduces timeline to 1–3 days. Failure to observe minimum strength before stripping risks deflection, cracking, and structural failure.
 
+
+<ArticleMedia id="media-stripping-time-table" layout="single" type="image" status="placeholder"
+  alt="Reference table showing minimum formwork stripping times for slabs, beams, walls, and columns per NSCP 2015 with temperature adjustment factors"
+  caption="Future table: formwork stripping time requirements — NSCP 2015 minimums by member type"
+  suggestedAsset="Reference table or chart of stripping times and strength requirements"
+  placementIntent="Provides quick reference for formwork stripping timing" />
 ### Scaffolding Systems
 
 _Tubular Scaffolding_ — Steel or aluminum tubes (40–50 mm diameter) connected by clamps/welds. Highly flexible; assembled to custom configurations. Advantages: adaptable to irregular structures, reusable. Disadvantages: labor-intensive assembly, slower than frame scaffolding.
@@ -76,30 +89,14 @@ The LEA evaluates formwork/scaffolding through:
 5. _Philippine practices_ — Recognize coco lumber, tube-clamp assembly, and enforcement gaps in local practice.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Conventional timber formwork is the default for Philippine low-rise projects; it is economical and flexible. System formwork becomes cost-effective only for high-rise buildings with 15+ identical floors (capital amortized). ACI 347 stripping criteria (70% strength for horizontal spans) are empirically proven; never deviate for schedule pressure. Proper scaffolding inspection is a life-safety critical; non-negotiable enforcement is essential.
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: title="Stripping Forms Before Strength Criteria Met", body="A project manager orders forms struck at 4 days to accelerate schedule. Concrete has achieved only ~50% strength; beams sag under live load of workers walking on them. Cracks develop in tension zones; concrete is compromised for the structure's 50-year life. ACI 347 criteria (70% for horizontal spans) are non-negotiable; schedule delays are cheaper than structural repair."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: title="Inadequate Scaffolding Inspection Causing Collapse", body="Tube-and-clamp scaffolding is erected and occupied without formal inspection. A clamp connection fails (poor installation, rust, overload); the entire bay collapses, injuring/killing workers. OSHA requires documented daily/weekly inspections and competent person certification. Inspection is a life-safety requirement, not optional."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: items="{[\"Underestimating concrete form pressure from rapid placement—high pour rates (bucket hoisting with rapid cycles) increase hydrostatic-like pressure on vertical forms. Design formwork for actual placement rate, not nominal rate.\", \"Using single-use formwork when reusable coco lumber is available—virgin timber or plastic forms are expensive; conventional reusable timber is economical for 5–10 cycles per set.\", \"Failing to account for Philippine rainy season on formwork—wet coco lumber swells, warps, and loses strength. Covered storage and drying periods are necessary; schedule contingency is essential.\", \"Neglecting form pressure calculation in design—fresh concrete is heavy (~2.4 kPa per meter depth). Underestimated support systems fail. Always calculate per ACI 347 and apply safety factors.\", \"Inadequate fall protection on scaffolding—guardrails, safety nets, or harness systems are mandatory per OSHA. Workers without protection face fatal fall risk. Enforcement is non-negotiable, even in cost-sensitive projects.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

@@ -4,6 +4,12 @@ _(Based only on your attached BP 344 2024 IRR + PD 1096 IRR texts)_
 
 ---
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Calculate the number and dimensions of required accessible parking slots per BP 344: 1 of 25 slots, 2% of total over 100, and van-accessible ratios; distinguish parallel, perpendicular, and angled accessible stalls by required dimensions; apply the 2.30 m minimum vertical clearance to van-accessible routes; and identify required signage and marking specifications.
+
 ## Important Correction Before You Memorize
 
 Your draft uses several **Appendix C corridor and parking values** (4.0 m stall, 1.8 m aisle, 1.5 m corridor, 1.8×2.0 passing space) that are **not present** in the BP 344 amendment pages you attached.[file:2]  
@@ -50,7 +56,7 @@ These 1800‑mm level areas are your **baseline maneuvering depth** at the top a
 
 ---
 
-## 2. Sidewalks / Walkways / Pathways (Exterior “Corridor” Equivleants)
+## 2. Sidewalks / Walkways / Pathways (Exterior “Corridor” equivalents)
 
 From Appendix B, these function as **horizontal accessible routes outside and around buildings**.[file:2]
 
@@ -158,3 +164,33 @@ DROPPED SIDEWALK BASE           → 1500 mm depth at bottom (for narrow crossing
    - 1200‑mm ramp width, 1800‑mm landings, 1500‑mm and 1800‑mm sidewalk widths, 1800‑mm rest/turn spaces, and 12,000‑mm spacing are all from your amendments and are safe to memorize for the LEA.[file:2]
 
 If you like, next we can rebuild your **parking‑specific** crib (4.0‑1.8‑2.3) once you attach the pages of BP 344 Appendix C that actually show the stall, aisle, and headroom values.
+
+
+---
+
+<LawCallout code="bp344" section="Section 6 - Parking Slots">
+
+
+Per BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope = 1:12 (8.33%). Landings must be ≥1800 mm in length. Edge protection required where ramp run exceeds 150 mm vertical rise.
+
+
+</LawCallout>
+
+<Warn >
+
+Many dimensions commonly cited for Philippine accessibility (4000 mm parking stall, 1800 mm access aisle, 1500 mm corridor) come from Appendix C of BP 344, which is NOT included in all IRR amendment batches. Verify which appendix is referenced in the exam question before applying dimensions. Appendix A (ramps) is consistently available.
+
+</Warn>
+
+<ExamTip >
+
+For exam problems: first determine whether the question references Appendix A (ramps — verified dimensions) or Appendix C (parking — verify availability). If the question gives specific slope/run data, use Appendix A formulas: Run = Rise × Slope Ratio. Example: 700 mm rise × 15 = 10,500 mm max run.
+
+</ExamTip>
+
+---
+
+## Cross‑References
+
+**Wheelchair Maneuvering And Parking**, **Minimum Parking Requirements**, **Accessible Seating In Assembly Areas**, **Bp 344 Accessible Washrooms**
+

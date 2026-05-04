@@ -1,16 +1,17 @@
 ## What You Need to Know for the LEA
 
-<Callout>You must know Ron Mace's 7 Principles of Universal Design and understand how to apply them in architectural practice. You must also know BP 344 (Philippine Accessibility Law) and demonstrate that your designs comply with accessibility requirements. The LEA will test whether your designs are usable by all occupants regardless of age, ability, or disability.</Callout>
+## Learning Goal
 
+Identify and apply Ron Mace's 7 Principles of Universal Design — equitable use, flexibility, simple/intuitive, perceptible information, tolerance for error, low physical effort, size/space for approach — to architectural scenarios on the LEA.
 ## Core Concept
 
 ### Universal Design: Inclusive from the Outset
 
 **Universal Design** is the design of products, environments, and systems usable by all people to the greatest extent possible without adaptation or specialized design. It differs fundamentally from accessible design (meeting legal accessibility minimums) or adaptive design (adding accessibility features after the fact). Universal Design integrates accessibility from initial concept development, recognizing that accessible features benefit everyone, not only people with disabilities.
 
-The distinction is operational. Wheelchair-accessible ramps benefit wheelchair users but also serve parents with strollers, elderly people with mobility limitations, delivery personnel with carts, and travelers with luggage. Automatically-opening doors assist wheelchair users but also help people carrying groceries or children. Hearing loop systems enabling hearing aid users to access audio presentations improve clarity for everyone in noisy environments. Legible wayfinding with large-sclea signage helps people with vision impairment and also helps all occupants navigate complex buildings.
+The distinction is operational. Wheelchair-accessible ramps benefit wheelchair users but also serve parents with strollers, elderly people with mobility limitations, delivery personnel with carts, and travelers with luggage. Automatically-opening doors assist wheelchair users but also help people carrying groceries or children. Hearing loop systems enabling hearing aid users to access audio presentations improve clarity for everyone in noisy environments. Legible wayfinding with large-scale signage helps people with vision impairment and also helps all occupants navigate complex buildings.
 
-Universal Design originated from the recognition that disability is not individual pathology but a mismatch between person and environment. A person using a wheelchair is disabled only in environments designed for walking; in a universally designed environment with level surfaces and accessible routes, that person is fully capable. A person with low vision is disabled only in environments with small, low-contrast signage; in universally designed environments with high-contrast, appropriately-sclead signage, wayfinding is clear. This environmental perspective shifts architectural responsibility: accessibility is not accommodation for exceptional users but baseline design competency.
+Universal Design originated from the recognition that disability is not individual pathology but a mismatch between person and environment. A person using a wheelchair is disabled only in environments designed for walking; in a universally designed environment with level surfaces and accessible routes, that person is fully capable. A person with low vision is disabled only in environments with small, low-contrast signage; in universally designed environments with high-contrast, appropriately-scaled signage, wayfinding is clear. This environmental perspective shifts architectural responsibility: accessibility is not accommodation for exceptional users but baseline design competency.
 
 <Tip>**The fundamental shift**: disability is not the person's problem—it's an environmental mismatch. Universal design solves the mismatch by making environments work for everyone.</Tip>
 
@@ -82,31 +83,27 @@ An office building meeting BP 344 provides accessible parking spaces, accessible
 <WikiExamTable headers={["Concept", "Definition", "LEA Application"]} rows={[['["**Universal Design**", "Design of environments usable by all people to greatest extent possible without adaptation; serves diverse abilities equitably", "Design all buildings with universal design principles from inception; demonstrate equitable access throughout"]', '["**Equitable Use**", "Same design serves diverse users without stigmatization or segregation; accessible features integrated as primary design, not segregated alternatives", "Integrate accessible parking, entries, and facilities throughout building core; avoid separate accessible routes"]', '["**Flexibility in Use**", "Accommodate range of individual preferences and abilities; serve users with different body types, abilities, and preferences", "Provide elements at multiple heights, offer multiple modalities, accommodate different user approaches"]', '["**Simple and Intuitive Use**", "Design is easy to understand without specialized knowledge or instruction; clear wayfinding and spatial organization", "Ensure occupants understand space function from design cues; clear circulation paths and accessible signage"]', '["**Perceptible Information**", "Communicate necessary information through multiple sensory channels (visual, auditory, tactile); accommodate sensory diversity", "Provide emergency information audibly and visually; use high-contrast signage; include audio systems in transit"]', '["**Tolerance for Error**", "Minimize hazards and consequences of user mistakes; design accommodating expected behaviors and preventing dangerous situations", "Handrails on stairs; edge markings; stair lighting; hazard prevention; accommodating occupant error"]', '["**Low Physical Effort**", "Design usable with minimum strength and effort; efficient, comfortable operation without fatigue", "Easy door operation; accessible counter heights; gentle ramp slopes (1:12 maximum); seating at intervals"]', '["**Size and Space for Approach and Use**", "Appropriate dimensions and clearances for different body types and postures; accommodate wheelchairs and mobility devices", "Turning spaces 1.5m x 1.5m; reach heights 0.8m-1.1m; counter heights 0.86m-0.97m; circulation widths 0.9m minimum (BP 344 2024 IRR)"]', '["**BP 344 Compliance**", "Philippine accessibility law requiring accessible features in public and private buildings", "Design meeting specific BP 344 standards: ramps, parking, accessible bathrooms, elevators, signage, emergency egress"]', '["**Accessibility Beyond Compliance**", "Excellence exceeding legal minimums; universal design approach exceeding BP 344 basic requirements", "Design going beyond minimum code; integrated accessible systems; anticipatory accommodation of diverse needs"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Inclusive Design for Mixed-Use Project**
 Stem: "Design a mixed-use development (retail, office, residential) in Makati. Specify all accessibility features required by BP 344 and explain how universal design principles guide your design choices beyond minimum compliance."
 Expected response: Accessible parking ratios and locations; ramped, level entries; accessible interior circulation with appropriate widths and heights; accessible bathrooms with grab bars and appropriate fixtures; accessible elevators with audio systems; high-contrast, multi-modal wayfinding; flexible workspaces; accessible retail display heights; accessible residential unit bathrooms and kitchens. Documentation showing integration of universal design thinking, not just compliance checklist.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Retrofitting Accessibility**
 Stem: "An existing 20-story office building lacks accessibility features. The owner wants to retrofit compliance with BP 344 and universal design principles. Develop a phased plan addressing entry, circulation, restrooms, and egress."
 Expected response: Identification of current barriers; systematic phasing addressing highest-impact, most feasible modifications; solution documentation; dimensional accuracy; integration with existing architecture where possible; explanation of why certain features should be integrated despite higher cost. Demonstration that retrofit becomes easier with universal design planning from the start.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Healthcare Facility Accessibility**
 Stem: "Design a 50-bed hospital outpatient facility in Cebu. Demonstrate BP 344 compliance and universal design integration addressing diverse patient abilities, elderly visitors, and staff efficiency."
 Expected response: Detailed site plan showing accessible parking and drop-off; accessible main entry; multiple entry options accommodating different approach angles; comprehensive wayfinding with color, symbols, text, and audio; accessible registration and waiting areas with seating accommodating mobility limitations; accessible examination rooms with appropriate clearances; accessible bathrooms meeting standards; accessible emergency routes; staff facilities enabling care provision to diverse populations.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Educational Building Accessibility**
 Stem: "Design a classroom building for a university in Davao accommodating students with mobility disabilities, hearing loss, and low vision. Specify both BP 344 compliance and universal design features supporting learning for all students."
 Expected response: Accessible entries and circulation routes; accessible classroom design with flexible seating; appropriate lighting and acoustics for low-vision and hearing-loss students; technology integration enabling assistive devices; accessible restrooms and water fountains; accessible emergency egress; staff spaces supporting accessible instruction delivery. Explicit reference to equitable use principle ensuring accessible classrooms are primary classrooms, not segregated special education spaces.</ExamTip>
 
-
 <ExamTip>**Pattern 5: Universal Design Challenge**
 Stem: "A designer argues that universal design features (wider doorways, accessible bathrooms, flexible furniture) increase project cost beyond client budget. Explain why universal design is cost-effective, how accessibility requirements are legal mandates, and how strategic prioritization addresses budget constraints."
 Expected response: Cost-effectiveness argument: early integration costs minimally more than conventional design; features like flexible furniture serve all users better; accessible parking costs no more than inaccessible parking if planned initially. Legal mandate: BP 344 requires accessibility regardless of budget; non-compliance creates liability. Prioritization strategy: identify highest-impact features; implement in phases; focus on equitable access rather than minimum compliance.</ExamTip>
 
+<Callout>You must know Ron Mace's 7 Principles of Universal Design and understand how to apply them in architectural practice. You must also know BP 344 (Philippine Accessibility Law) and demonstrate that your designs comply with accessibility requirements. The LEA will test whether your designs are usable by all occupants regardless of age, ability, or disability.</Callout>
 
 ## Common Mistakes
 
@@ -115,7 +112,6 @@ Expected response: Cost-effectiveness argument: early integration costs minimall
 <WikiMistakeCard mistake="Segregating accessible features" correction="Creating separate accessible entries, restrooms, and routes instead of integrating them as primary design." context="Segregation violates equitable use principle and perpetuates stigmatization." />
 
 <WikiMistakeList mistakes={["Minimum compliance without universal design thinking. Meeting BP 344 technical requirements (ramp slopes, bathroom dimensions) while failing to address equitable use, simple operation, or perceptible information. Excellent design exceeds minimum compliance.", "Ignoring specific user needs. Designing generic accessible spaces without understanding how particular disabilities affect space interaction. Deaf occupants need visual alarms and accessible audio systems; blind occupants need tactile wayfinding; mobility-limited occupants need appropriate dimensions and rest facilities.", "Assuming universal design only serves people with disabilities. Overlooking that accessible features benefit diverse users (families with strollers, elderly people, people carrying items, people with temporary injuries). Universal design serves everyone better.", "Inadequate dimensional knowledge. Misunderstanding reach heights, wheelchair turning radiuses, doorway widths, or counter heights. Specific dimensions are non-negotiable; designs must accommodate documented accessibility standards."]} />
-
 
 ## Key Terms
 
@@ -140,3 +136,10 @@ Expected response: Cost-effectiveness argument: early integration costs minimall
 **Accessible Design** — Design meeting legal accessibility requirements but not necessarily embodying universal design principles; compliance-focused rather than inclusive-focused.
 
 **Retrofitting** — Addition of accessibility features to completed buildings, typically more costly and producing inferior results compared to universal design integration.
+
+## Related Articles
+
+See also within Design Perception: **lea-theo-003-01-core-concept**, **lea-theo-003-02-core-concept**, **lea-theo-003-03-core-concept**, **lea-theo-003-04-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

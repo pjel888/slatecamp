@@ -5,6 +5,14 @@ Standardized space dimensions and area allocations are the quantitative foundati
 
 </Callout>
 
+
+
+## Learning Goal
+
+- Identify minimum space dimensions from PD 1096 (NBCP), RA 9514 (Fire Code), and BP 344 (Accessibility Law) for residential, commercial, and institutional spaces.
+- Apply Ernst Neufert's Architects' Data and Time-Saver Standards for design reference beyond regulatory minimums.
+- Distinguish code-minimum compliance from good practice standards for livable, functional spaces.
+
 ## Core Concept
 
 Space standards serve three purposes: they ensure human comfort and functionality, they enable predictable area programming and cost estimating, and they enforce code compliance. A bedroom designed at 8 feet by 10 feet (80 SF) may technically meet minimum code but is inadequate for modern living; standards establish that a primary bedroom should be 12 feet by 14 feet minimum (168 SF) to accommodate a queen bed, circulation, and furniture. Standards exist for every building type—residential, commercial, institutional, hospitality—and vary by climate, culture, and regulatory context.
@@ -138,3 +146,10 @@ Efficiency factor relationships: If a program specifies 1,000 NSF (net assignabl
 <Warn>
 Dimension consistency between program and design is binding: If your program specifies a bedroom as 12 ft × 14 ft (168 SF), your design floor plan must show this dimension. Shrinking it to 10 ft × 12 ft violates the program. Some designers rationalize this by claiming "the spaces are generous in other dimensions" or "the user won't notice the difference." This is unprofessional. A program is a contract with the client. Designs must satisfy programmed dimensions or document explicitly why deviations are necessary and how they affect functionality.
 </Warn>
+
+## Related Articles
+
+See also within Space Planning Theory: **lea-theo-009-01-core-concept**, **lea-theo-009-02-core-concept**, **lea-theo-009-04-core-concept**, **lea-theo-009-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

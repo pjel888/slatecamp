@@ -1,38 +1,48 @@
 {
   "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
   "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
-  "generated_at": "2026-05-03T13:44:41.100Z",
-  "old_hash": "sha256:4f9e0d41fdc1517a3a2fb1ab86b917ecfc87a75909d79c36cc3e984fd791bc96",
-  "new_hash": "sha256:e9d9ba334b0662054ac4b83e90cefeb0a040679a213e963f4b38f32d54df0660",
-  "original_hash": "sha256:4f9e0d41fdc1517a3a2fb1ab86b917ecfc87a75909d79c36cc3e984fd791bc96",
-  "normalized_hash": "sha256:0c6b44931b7e552ac7cbd3b8f90deb7a7a41b3c77777b8b6a7a180e270fef2b6",
-  "candidate_hash": "sha256:e9d9ba334b0662054ac4b83e90cefeb0a040679a213e963f4b38f32d54df0660",
+  "generated_at": "2026-05-04T00:06:16.798Z",
+  "old_hash": "sha256:e7f9069ccd5fe8e9f77c024bc22dbc15ac86e8c4ca514182c2907873fef7c450",
+  "new_hash": "sha256:933fbd78fe7803745a76ba0d2296ee13302ff13c339b80603d58ba46eea64849",
+  "original_hash": "sha256:e7f9069ccd5fe8e9f77c024bc22dbc15ac86e8c4ca514182c2907873fef7c450",
+  "normalized_hash": "sha256:933fbd78fe7803745a76ba0d2296ee13302ff13c339b80603d58ba46eea64849",
+  "candidate_hash": "sha256:933fbd78fe7803745a76ba0d2296ee13302ff13c339b80603d58ba46eea64849",
   "changed": true,
-  "changed_line_count": 70,
-  "inserted_line_count": 43,
+  "changed_line_count": 60,
+  "inserted_line_count": 32,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 70,
-    "inserted": 43,
+    "changed": 60,
+    "inserted": 32,
     "deleted": 0,
-    "original_line_count": 49,
-    "candidate_line_count": 92
+    "original_line_count": 51,
+    "candidate_line_count": 83
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0005",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

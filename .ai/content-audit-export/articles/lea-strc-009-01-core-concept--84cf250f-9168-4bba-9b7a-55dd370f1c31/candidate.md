@@ -11,13 +11,14 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
+<ArticleMedia id="media-lea-strc-009-01-core-concept" a type="image" caption="Timber Durability — Decay Zones and Termite Resistance" description="Cross-section of a timber member showing: (1) Heartwood (naturally resistant, darker) vs Sapwood (susceptible, lighter); (2) Moisture content zones and fungal decay risk thresholds (>19% MC); (3) Preservation treatment penetration depth for pressure-treated lumber; (4) Termite attack pathways; (5) Philippine wood species durability classification table with Group A (highly durable), Group B, and Group C." suggestedAsset="Diagram or reference image" status="placeholder" />
 Decay and termite resistance in timber depend on extractive compounds in the _heartwood_ that inhibit fungal and insect attack. In the Philippines, structural grading standards recognize four species with measurable natural durability: Narra, Kamagong, Dao, and Tangile. Narra and Kamagong are the only species that combine both decay and termite resistance, making them premium choices for harsh environments. Dao and Tangile resist decay but offer no termite protection. Species classification by resistance is not voluntary—it is a mandatory design decision whenever timber contacts soil, water, or high-moisture conditions. Sapwood (outer growth rings) contains no protective extractives and is always susceptible; only heartwood (inner core) qualifies. When sapwood contamination is acceptable under NatCor or ASEAN standards, a maximum of 5% sapwood is tolerated on individual pieces, provided at least 90% of each side face displays heartwood. Resistance classification does not affect allowable stress values—it determines _suitability_, not _capacity_.
 
 ## Key Provisions
 
 ### Philippine Timber Species Durability Classification
 
-<WikiExamTable headers={["Species", "Decay Resistant", "Termite Resistant", "Common Use"]} rows={[ ["Narra", "YES", "YES", "Ground contact, coastal exposure"], ["Kamagong", "YES", "YES", "Ground contact, harsh environments"], ["Dao", "YES", "NO", "Above-ground, dry conditions"], ["Tangile", "YES", "NO", "Above-ground, dry conditions"] ]} />
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
 
 ### Heartwood vs. Sapwood Acceptance Rules
 - _Heartwood_: Provides all documented resistance. Always acceptable in any proportion.
@@ -47,8 +48,7 @@ Philippines Forestry Code and NatCor timber standards mandate resistance classif
 - Answer: Specify treatment or select Narra/Kamagong.
 - Takeaway: Absence from the resistance table means no untreated use in harsh conditions.
 
-<Tip>Narra + Kamagong = BOTH. Dao + Tangile = decay ONLY. This 2+2 rule is the entire resistance spectrum for Philippine timber.</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 ## Related Articles
 
@@ -56,6 +56,6 @@ See also: **Timber Stress Groups** (lea-strc-009-02) for strength grading, **Tim
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 
-<WikiMistakeList mistakes={[ "Assuming Dao or Tangile resists termites because they resist decay. Decay and termite resistance are separate mechanisms.", "Accepting sapwood freely because the piece has 'mostly heartwood.' The 5% rule is absolute; 6% sapwood fails ground-contact use.", "Treating Yakal or Apitong as naturally durable alternatives to Narra. They have no documented resistance; treatment is mandatory for resistance claims.", "Confusing heartwood color with heartwood identity. Heartwood must be chemically extractive-rich, not just visually distinct." ]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]

@@ -33,12 +33,6 @@ Imagine you are reviewing plans for a 1980s building in Cebu. The current Certif
 ## The Legal Basis
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=nbcp, section=Sec. 702
-- Text: **PD 1096, Rule VII, Section 702 — Change of Use or Occupancy**
-
-No change in the character of occupancy or use of any building that places it in a different division of the same group or a different ...
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -47,6 +41,10 @@ No change in the character of occupancy or use of any building that places it in
 ### 1. Occupancy Classification Under IRR Section 701
 
 Every change-of-use analysis begins with properly classifying both the **existing** and **proposed** occupancy. The IRR Section 701 defines ten groups. Memorize these:
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="occupancy-classification-matrix" type="diagram" caption="Full occupancy classification table A–J as a visual matrix with icons: Residential (A, B), Education (C), Institutional (D), Business/Mercantile (E), Industrial (F), Storage/Hazardous (G), Assembly (H, I), Accessory (J). Color-code by hazard level (green=low, yellow=medium, red=high). Include the 10-person A-vs-B cutoff callout."]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="hazard-hierarchy-ladder" type="diagram" caption="Vertical ladder/spectrum showing the 10-group hazard hierarchy from most hazardous (Group G) to least (Group J). Use colored arrows to show whether a change is 'more hazardous' (red arrow up) or 'less hazardous' (green arrow down). Include worked examples of common change-of-use scenarios on the ladder."]
 
 | Group | Full Name | Examples |
 |-------|-----------|---------|
@@ -62,12 +60,6 @@ Every change-of-use analysis begins with properly classifying both the **existin
 | **Group J** | Accessory | Fences, signs, tanks, towers, sheds |
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Common confusion:** The exam frequently tests these mislabel pairs:
-- Group G is **Storage and Hazardous** — NOT "Mercantile" (Mercantile is Group E)
-- Group E is **Business and Mercantile** — NOT a...
-[/SLATECAMP_UI_BLOCK]
 
 ### 2. The General Prohibition (Sec. 702)
 
@@ -79,13 +71,6 @@ This rule operates in two directions:
 - **Less hazardous new use** — The Building Official **may** approve the change even if the building does not fully meet all standards for the new use, because life and fire risk are reduced, not increased
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid: "MORE = COMPLY, LESS = MAY APPROVE"**
-
-- **More** hazardous (or same hazard) -> must **comply** fully before changing
-- **Less** hazardous -> Building Official **may approve** without fu...
-[/SLATECAMP_UI_BLOCK]
 
 ### 3. The Hazard Assessment: Life Risk + Fire Risk
 
@@ -105,10 +90,6 @@ The general hazard hierarchy (from most to least hazardous):
 10. **Group J** — Accessory (incidental structures)
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Important:** The comparison is specific to the sub-groups involved and the actual conditions of the building, not a general category comparison. Moving from Group D-2 (clinic) to Group B-1 (hotel) r...
-[/SLATECAMP_UI_BLOCK]
 
 ### 4. The Process: Application, Assessment, Inspection, Issuance
 
@@ -123,10 +104,6 @@ Extracted summary:
 **Step 4 — Issuance of Certificate of Occupancy:** Upon approval, the Building Official issues a **Certificate of Occupancy** for the new use. Per the 2004 Revised IRR: "A building for which a Certificate of Occupancy has been issued may further be issued other Certificates of Occupancy due to changes in use." This is the legally operative document.
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Critical distinction for the exam:** The IRR does **not** create a separate "Certificate of Use" document distinct from the Certificate of Occupancy. Sec. 702 itself mentions only compliance require...
-[/SLATECAMP_UI_BLOCK]
 
 ### 5. Building Official Authority is Absolute
 
@@ -153,13 +130,6 @@ The LEA typically tests this topic in three ways:
 "A building owner converted X to Y without Building Official approval. What is the legal consequence?" These test your understanding that the process applies regardless of the owner's opinion about relative hazard.
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Exam strategy:** When you see a change-of-use question, immediately note:
-1. Is the existing use classified? (If not, classify it under Sec. 701)
-2. Is the proposed use classified? (Same)
-3. Compare...
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -188,16 +158,8 @@ Extracted summary:
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: Per PD 1096 Sec. 702, a change of occupancy requires Building Official approval. The owner or architect must file NBC Form No. B-12 (Application for Change of Use or Occupancy). The Building Official 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: no change in the character of occupancy that places a building in a different division or group shall be made without compliance with the Code requirements, and Building Official approval is required.
-[/SLATECAMP_UI_BLOCK]
 
 ## Practice Questions
 
@@ -304,3 +266,5 @@ When you advise a client, you are not just navigating code — you are protectin
 | **Mixed Occupancy** | Governing section | Rule VII, Sec. 703 |
 | **USA Counterpart** | IBC reference | IBC Sec. 3411.4 / IEBC Chapter 10 |
 | **USA Counterpart** | IEBC alternative compliance | IEBC Chapter 14 (point-based building evaluation) |
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

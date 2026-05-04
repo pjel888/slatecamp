@@ -1,4 +1,8 @@
 # Building Permit Process
+## Learning Goal
+After reading this article, you should be able to:
+
+Explain the complete building permit process under PD 1096 Rule III: identify the Building Official's powers and duties, apply the 15-day payment-to-decision rule, determine when permits expire (1 year / 120 days), and distinguish exempt constructions from those requiring full permits or accessory permits.
 
 **Module Focus: The Legal & Administrative Framework of Construction**
 **Authority: PD 1096 (National Building Code of the Philippines) & 2004 Revised Implementing Rules and Regulations**
@@ -46,15 +50,17 @@ The **Building Official (BO)** is the duly appointed government authority at the
 
 | Detail                           | Rule                                                                                                                           |
 | :------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
-| **When the 15-day clock starts** | From the date of **payment of the required fees** — NOT from submission of application _(Sec. 304, PD 1096)_                   |
+| **When the 15-day clock starts** | From the date of **payment of the required fees** — the stricter Code-text reading adopted in this module _(Sec. 304, PD 1096; note: some sources cite "filing of complete application" as the trigger)_                   |
 | **What happens at Day 15**       | The Building Official must either **issue** the permit or **deny** it in writing, specifying the exact Code provisions not met |
 | **Denial requirement**           | Must be **in writing**, citing specific Code provisions, within the same 15-day window                                         |
 
-<Callout variant="authority" title="not submission — because compliance review before payment can take days or weeks">
+<LawCallout code="pd1096" section="Rule I - Building Permits">
+
 
 The 15-day clock begins at payment — not submission — because compliance review before payment can take days or weeks as the applicant corrects deficiencies. Once fees are paid, the application is deemed complete and the OBO is legally obligated to act. This protects the applicant from indefinite bureaucratic delay.
 
-</Callout>
+
+</LawCallout>
 
 ---
 
@@ -79,11 +85,13 @@ A building permit becomes **null and void** if either condition below occurs:
 
 **Reason for the Law:** Permits are not licenses to build indefinitely. The one-year commencement rule prevents landowners from hoarding approved permits for speculative purposes. The 120-day abandonment rule ensures that half-built structures — which are hazardous — cannot be left open-ended.
 
-<Callout variant="tip" title="Mnemonic">
+<LawCallout code="pd1096" section="Rule I - Section 106 - Permit Application">
+
 
 The Two Clocks That Kill Your Permit:
 
-</Callout>
+
+</LawCallout>
 >
 > - **1 year** to START
 > - **120 days** to NOT STOP
@@ -241,7 +249,7 @@ Surcharges are **separate from and in addition to** administrative fines. They a
 | Superstructure up to 2.00 m above established grade                  | **50%**                           |
 | Superstructure **above 2.00 m** above established grade              | **100%**                          |
 
-**Reason for the Law:** The surcharge escalator deters owners from continuing illegal construction after detection. The further you build without a permit, the more you pay — turning every additional meter of illegal construction into a compounding financial liability. Confiscating the equivleant of the full permit fee (100%) at the superstructure stage also eliminates any cost-savings rationlea for skipping the permit.
+**Reason for the Law:** The surcharge escalator deters owners from continuing illegal construction after detection. The further you build without a permit, the more you pay — turning every additional meter of illegal construction into a compounding financial liability. Confiscating the equivalent of the full permit fee (100%) at the superstructure stage also eliminates any cost-savings rationale for skipping the permit.
 
 ---
 
@@ -284,7 +292,7 @@ An architect is hired to design (a) a 5 sq.m. detached tool shed in a residentia
 **(C)** The bamboo house is exempt from a permit; the tool shed requires a permit and fees.
 **(D)** Neither structure requires a building permit.
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: B**
@@ -299,7 +307,7 @@ An architect is hired to design (a) a 5 sq.m. detached tool shed in a residentia
 
 **Rule to lock in:** Fee exemption (Sec. 209) ≠ Permit exemption (Sec. 301.3, IRR). They are different lists with different criteria.
 
-</details>
+</Accordion>
 
 ---
 
@@ -312,7 +320,7 @@ A building permit application is submitted on February 10. After a compliance re
 **(C)** March 31
 **(D)** Within a reasonable time, at the BO's discretion
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: B — March 16**
@@ -327,7 +335,7 @@ Under Sec. 304 of PD 1096, the Building Official must issue or deny the permit w
 
 If denied, the BO must communicate the denial **in writing within the same 15-day period**, specifying which Code provisions were not met.
 
-</details>
+</Accordion>
 
 ---
 
@@ -340,7 +348,7 @@ An owner builds a residential house without any permit. Inspectors discover the 
 **(C)** 50% of building permit fees
 **(D)** 100% of building permit fees
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: D — 100% of building permit fees**
@@ -356,7 +364,7 @@ The surcharge table under Sec. 212 of the Revised IRR is:
 
 At 3.0 m above grade, the structure is in the top bracket — the maximum 100% surcharge applies. The owner must pay the building permit fees **plus** an additional amount equal to 100% of those fees as a penalty surcharge.
 
-</details>
+</Accordion>
 
 ---
 
@@ -369,7 +377,7 @@ A homeowner builds a 1.60 m-high concrete perimeter fence around their property.
 **(C)** Accessory Permit required
 **(D)** Full Building Permit required
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: C — Accessory Permit required**
@@ -384,7 +392,7 @@ The fence rules under the Revised IRR have three distinct thresholds:
 
 A 1.60 m fence falls in the middle bracket — Accessory Permit only. Option A is the most common wrong answer because many candidates believe 1.80 m is the lower threshold. It is actually the upper threshold for the Accessory Permit bracket.
 
-</details>
+</Accordion>
 
 ---
 
@@ -397,7 +405,7 @@ A building permit was issued on January 15. The owner delays construction. When 
 **(C)** 6 months after January 15
 **(D)** The permit does not expire unless formally revoked by the Building Official
 
-<details>
+<Accordion>
 <summary><b>Reveal Answer</b></summary>
 
 **Correct Answer: A — January 15 of the following year**
@@ -408,7 +416,7 @@ Under Sec. 305 of PD 1096, a building permit becomes null and void if constructi
 
 The 120-day rule (Option B) applies to **abandonment** — once construction has started, a continuous 120-day stoppage voids the permit. These are two separate triggers, and the exam will often test whether you can distinguish them.
 
-</details>
+</Accordion>
 
 ---
 
@@ -445,6 +453,12 @@ The 120-day rule (Option B) applies to **abandonment** — once construction has
 - These are criminal — courts only, not the OBO.
 
 ---
+
+---
+
+## Cross‑References
+
+**Certificate Of Occupancy**, **Legal Liability And Enforcement Workflow**, **Typology Checklists And Plan Checking**, **Change Of Use And Occupancy**
 
 ## Verified Source Mapping
 

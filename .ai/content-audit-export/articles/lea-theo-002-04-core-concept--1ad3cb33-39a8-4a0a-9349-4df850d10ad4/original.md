@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Organizing principles describe how architects cluster, arrange, and structure multiple forms and spaces into coherent systems. The LEA tests recognition of these patterns and your ability to identify which organizational type governs a particular plan. Understanding these categories—centralized, linear, radial, clustered, and grid—is essential to reading architectural plans and understanding the geometric logic underlying building design.</Callout>
+## Learning Goal
 
+Identify the organizing principles of architectural composition — unity, hierarchy, datum, rhythm, repetition, transformation — and explain how architects use them to cluster, arrange, and structure multiple forms into coherent systems.
 ## Core Concept
 
 According to Francis D.K. Ching, architectural compositions organize space through recurring patterns that group and arrange forms according to their relationships to each other. These patterns reflect both functional requirements and symbolic intentions. A hospital uses linear organization to connect departments sequentially; a mosque uses centralized organization to focus attention on a sacred center; a market uses clustered organization to accommodate independent vendors. The organizing principle chosen determines how spaces relate, how circulation flows, and what visual and functional hierarchies emerge.
@@ -47,42 +48,37 @@ Grid organization offers maximum flexibility and clarity. The module becomes the
 <WikiExamTable headers={["**Type**", "**Core Definition**", "**Characteristic Feature**", "**LEA Test Indicator**"]} rows={[['["**Centralized**", "Secondary forms cluster about dominant central form", "Central element commands attention", "\\"Secondary forms clustered about dominant center\\""]', '["**Linear**", "Series of forms arranged in sequence in a row", "Procession and directional movement", "\\"Series of forms arranged in sequence in a row\\""]', '["**Radial**", "Linear forms extending outward from central form", "Arms or spokes radiating from hub", "\\"Linear forms extending outward in radial manner\\""]', '["**Clustered**", "Collection of forms grouped by proximity/visual trait", "Informal, flexible, lacks strict hierarchy", "\\"Collection grouped by proximity or common trait\\""]', '["**Grid**", "Set of modular forms regulated by 3D regular grid", "Orthogonal, diagonal, or hexagonal intervals", "\\"Modular forms regulated by 3D grid\\""]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Central Organization Recognition**
 *Question stem:* "A church plan with a dome centered over a crossing and chapels arranged around it demonstrates..."
 *Correct answer:* "Centralized organization."
 *Trap:* Confusing with radial—the difference is that radial has *arms extending out*, while centralized has forms *clustered around* a center without necessarily extending.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Linear Definition**
 *Question stem:* "A cathedral where spaces follow in sequence from entrance through nave to altar exhibits..."
 *Correct answer:* "Linear organization."
 *Trap:* Mistaking for centralized if there's a crossing—the dominant organizing principle is the linear procession, even if a transept interrupts it.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Radial vs. Centralized**
 *Question stem:* "An organizational pattern where linear forms extend outward from a central form in a spoke-like arrangement is..."
 *Correct answer:* "Radial organization."
 *Trap:* Confusing radial (which has extending arms) with centralized (which clusters around a point without arms). A radial plan has visual reach and expansion; centralized is more enclosed and inward-focusing.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Clustered Characteristics**
 *Question stem:* "A village where buildings group around shared resources without strict geometric hierarchy demonstrates..."
 *Correct answer:* "Clustered organization."
 *Trap:* Assuming all groupings are centralized—clustering is explicitly *not* based on a dominant center; it's based on proximity and compatibility.</ExamTip>
 
-
 <ExamTip>**Pattern 5: Grid Definition**
 *Question stem:* "A set of modular building sites regulated by a three-dimensional grid of equal intervals is an example of..."
 *Correct answer:* "Grid organization."
 *Trap:* Confusing linear (which has a single spine) with grid (which has multiple orthogonal or diagonal lines creating modules).</ExamTip>
-
 
 <ExamTip>**Pattern 6: Organizational Flexibility**
 *Question stem:* "Which organizing principle offers maximum flexibility for future expansion without disrupting existing hierarchy?"
 *Correct answer:* "Grid or clustered organization" (both allow addition without disrupting a central hierarchy).
 *Trap:* Choosing centralized or linear, which both depend on their core organizing element and become disrupted if fundamentally altered.</ExamTip>
 
+<Callout>Organizing principles describe how architects cluster, arrange, and structure multiple forms and spaces into coherent systems. The LEA tests recognition of these patterns and your ability to identify which organizational type governs a particular plan. Understanding these categories—centralized, linear, radial, clustered, and grid—is essential to reading architectural plans and understanding the geometric logic underlying building design.</Callout>
 
 ## Common Mistakes
 
@@ -91,7 +87,6 @@ Grid organization offers maximum flexibility and clarity. The module becomes the
 <WikiMistakeCard mistake="Treating Clustered as Informal" correction="Students often think \"clustered means disorganized.\" Ching's definition is precise: clustering is \"a collection of forms grouped by proximity or common visual trait.\" There can be logic to a cluster—functional zones grouped together for efficiency, or similar building types clustered in a district. The organizing principle is different from centralized or linear hierarchy, but not less intentional." context="Medieval market towns are clustered and highly organized; the principle is just not geometric." />
 
 <WikiMistakeList mistakes={["Missing Linear When Axes are Complex. Students miss linear organization if a plan has multiple axes (like a cathedral with nave and transepts). The dominant organizing principle can still be *linear*—the primary axis extends from entrance to altar, even though secondary axes cross it. Identify the primary organizing move: does space proceed in sequence (linear) or cluster around a center (centralized)? Don't get distracted by secondary complexity.", "Confusing Grid with Linear. A grid has *multiple organizing lines* creating modules; a linear organization has a *single spine*. A row of buildings along a street is linear (progression along a spine). A city block subdivided into equal parcels by multiple streets is grid (modular subdivision). The LEA asks this question frequently. Ask: \"Is there one main organizing line (linear) or a system of lines creating modules (grid)?\"", "Forgetting Radial Can Be Conceptual. Radial doesn't always mean explicit radiating paths. Spaces can be conceptually radial through their relationship to a central form or point, even if circulation is not literally radiating. A building complex with wings extending in different directions from a central courtyard is radial in concept. The test is \"do forms extend outward from a core?\" not \"can you literally walk along radiating spokes?\"", "Not Recognizing Mixed Organizational Principles. Complex plans often combine principles. A cathedral is primarily *linear* (nave sequence) with *centralized* elements (crossing/dome). A palace can be *linear* (gallery wings) with *clustered* elements (room suites). When asked for the *primary* or *dominant* organizing principle, identify which principle controls the main spatial move. This requires understanding that principles can coexist, with one dominant."]} />
-
 
 ## Key Terms
 
@@ -114,3 +109,10 @@ Grid organization offers maximum flexibility and clarity. The module becomes the
 **Procession** — A sequence of spatial experiences as one moves through a linear organization; common in cathedrals and processional routes.
 
 **Spine** — A primary organizing line or corridor along which secondary spaces or forms arrange; characteristic of linear organization.
+
+## Related Articles
+
+See also within Elements & Principles of Design: **lea-theo-002-01-core-concept**, **lea-theo-002-02-core-concept**, **lea-theo-002-03-core-concept**, **lea-theo-002-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

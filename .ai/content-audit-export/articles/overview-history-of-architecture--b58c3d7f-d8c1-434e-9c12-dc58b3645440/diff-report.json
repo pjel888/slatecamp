@@ -1,38 +1,45 @@
 {
   "article_id": "b58c3d7f-d8c1-434e-9c12-dc58b3645440",
   "slug": "overview-history-of-architecture",
-  "generated_at": "2026-05-03T13:44:22.209Z",
-  "old_hash": "sha256:3bab16d5ae0afff5115c89ee4260160467cf772049d384e1a8e429ebf73cf6f3",
-  "new_hash": "sha256:75234eecd13f722fc2cf62871ac10f65e12807f34896033909bdc9b9a059e44f",
-  "original_hash": "sha256:3bab16d5ae0afff5115c89ee4260160467cf772049d384e1a8e429ebf73cf6f3",
-  "normalized_hash": "sha256:6a5ef34b9234d3c04a20abbb49beca63eaa21183ad3a400ebd62dbfeeba3d4b1",
-  "candidate_hash": "sha256:75234eecd13f722fc2cf62871ac10f65e12807f34896033909bdc9b9a059e44f",
+  "generated_at": "2026-05-04T00:05:55.799Z",
+  "old_hash": "sha256:75234eecd13f722fc2cf62871ac10f65e12807f34896033909bdc9b9a059e44f",
+  "new_hash": "sha256:88d338ef04f680f341f9424404fe8c18ef361aba60394b6970c81c4ebee5bd56",
+  "original_hash": "sha256:75234eecd13f722fc2cf62871ac10f65e12807f34896033909bdc9b9a059e44f",
+  "normalized_hash": "sha256:88d338ef04f680f341f9424404fe8c18ef361aba60394b6970c81c4ebee5bd56",
+  "candidate_hash": "sha256:88d338ef04f680f341f9424404fe8c18ef361aba60394b6970c81c4ebee5bd56",
   "changed": true,
-  "changed_line_count": 51,
-  "inserted_line_count": 2,
+  "changed_line_count": 77,
+  "inserted_line_count": 8,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 51,
-    "inserted": 2,
+    "changed": 77,
+    "inserted": 8,
     "deleted": 0,
-    "original_line_count": 74,
-    "candidate_line_count": 76
+    "original_line_count": 76,
+    "candidate_line_count": 84
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

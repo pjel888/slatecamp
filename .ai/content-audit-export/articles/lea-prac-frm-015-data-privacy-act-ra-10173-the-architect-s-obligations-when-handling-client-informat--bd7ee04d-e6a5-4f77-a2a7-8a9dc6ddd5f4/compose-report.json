@@ -1,18 +1,28 @@
 {
   "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
   "slug": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information",
-  "generated_at": "2026-05-03T13:44:11.364Z",
-  "original_hash": "sha256:0d1ee274b5edc57e0e760706731321df8a920c9919827a72c0ac5a837b9780ab",
-  "normalized_hash": "sha256:ab328372cbee3d3f0620436faee0b7944a6a76ea7bb9703c0cb86b3b2f64e8f3",
-  "candidate_hash": "sha256:4b6afa739533b2d6add62106e92fd594390911fb3c9557823d9691bf5d8636b5",
-  "ui_blocks_count": 5,
-  "placeholders_found": 5,
-  "placeholders_resolved": 5,
+  "generated_at": "2026-05-04T00:05:38.652Z",
+  "original_hash": "sha256:d41cd859dc57a272980f4620a160f72782a4bdb48c77ee642e27109c49904a95",
+  "normalized_hash": "sha256:05df86b21c665eab9bd840124f8d8447c9ecb67f2d007cf0d0efa802ad3f866b",
+  "candidate_hash": "sha256:05df86b21c665eab9bd840124f8d8447c9ecb67f2d007cf0d0efa802ad3f866b",
+  "ui_blocks_count": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 5,
+  "unused_blocks": [
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition."
+  ]
 }

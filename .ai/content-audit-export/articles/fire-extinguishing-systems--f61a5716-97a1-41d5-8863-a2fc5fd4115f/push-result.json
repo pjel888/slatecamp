@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:33.919Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:53.416Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
   "slug": "fire-extinguishing-systems",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:13cb87f75b9f9d64cd4ae415235e30ff5e2755e27839c0eb63ad088f4ad50e53",
-  "original_hash": "sha256:7188efb056807cad1e40942009d56531943e1f36bc24ea168cf3aca936551e19",
-  "candidate_hash": "sha256:13cb87f75b9f9d64cd4ae415235e30ff5e2755e27839c0eb63ad088f4ad50e53",
-  "stale_check_passed": false,
+  "original_hash": "sha256:13cb87f75b9f9d64cd4ae415235e30ff5e2755e27839c0eb63ad088f4ad50e53",
+  "candidate_hash": "sha256:652cb7dc4ff8c5ebe6c1d91f180c4bf9a37f6748596d5f7e25a3cb7f9ecc26b2",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:52:05.312108+00:00"
 }

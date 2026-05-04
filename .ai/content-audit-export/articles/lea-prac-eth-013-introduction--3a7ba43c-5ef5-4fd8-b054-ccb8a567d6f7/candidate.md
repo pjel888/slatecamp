@@ -11,21 +11,14 @@ After reading this article, you should be able to:
 The relationship between professional ethics and fair competition in architecture creates tension: architects must maintain professional standards while competing fairly with one another for projects and fees. This article examines the ethical limits on fee competition, restrictions on setting minimum fees, and the distinction between competitive fee structures and unethical cost-cutting.
 
 The Code of Ethical Conduct and RA 9266 prohibit fee agreements that restrict competition (collusion on pricing) while also establishing professional standards that fee-discounting cannot undermine. LEA candidates must understand when fee competition is ethical, when it crosses into anti-competitive practice, and how professional standards limit cost-cutting.
+<ArticleMedia id="media-lea-prac-eth-013-introduction" a type="image" caption="Anti-Competitive vs Ethical Fee Practices Comparison Matrix" description="Four-quadrant comparison: (1) Collusive Pricing — architects agreeing on minimum fees, prohibited under RA 10667; (2) Independent Competition — each architect setting fees independently, ethical; (3) Bid-Rigging — pre-arranged bid winners, criminal offense; (4) Competitive Bidding — transparent fee proposals, standard practice. Each quadrant shows scenario, legal basis, consequences, and LEA test point." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-eth-013-introduction" a type="image" caption="Fee Competition Ethics Framework — Permitted vs Prohibited Practices" description="Two-zone diagram: Prohibited Zone (red) — collusive fee-fixing, market division agreements, bid-rigging, predatory pricing, deceptive fee practices, recommended fee schedule enforcement; Permitted Zone (green) — independent fee determination, competitive bidding, negotiated fees, volume-based discounts, reduced fees for repetitive designs. Central dividing line labeled 'Competition must be independent and transparent.' Philippine Competition Act (RA 10667) citations shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Fundamental Principle: Fee Competition is Legal and Ethical
 
 The legal and professional framework in the Philippines allows architects to compete on fees while maintaining professional standards:
 
-<LeartBox type="critical">
-**Core Principle:** Architects may compete on fees and design services. However, this competition must not:
-1. **Compromise professional standards** (designing inadequately due to fee pressure)
-2. **Result from collusive fee agreements** (architects agreeing to charge minimum fees)
-3. **Involve deceptive practices** (misrepresenting scope or qualification)
-4. **Violate employment standards** (forcing architects to work uncompensated overtime due to low fees)
-5. **Constitute predatory pricing** (deliberately underbidding to eliminate competition and later raise prices)
-
-Competition on fees is ethical; agreements to restrict fee competition are not.
-</LeartBox>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LeartBox" status="preserved"]
 
 ## Category 1: Anti-Competitive Fee Practices (Prohibited)
 
@@ -46,9 +39,7 @@ Competition on fees is ethical; agreements to restrict fee competition are not.
 - **Criminal liability:** Potential prosecution under RA 10667 (competition violations can result in fines and imprisonment)
 - **Civil liability:** Clients affected by price-fixing may sue for overcharges
 
-<ExamTip>
-**LEA Test Point:** Even informal "understanding" among architects to maintain price minimums constitutes collusion. "We all know no one charges below 4%" is price-fixing if there's tacit agreement or coordination. Architects charging different fees independently is competition; architects agreeing to matching minimums is collusion.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 
 ### Type 1B: Recommended Fee Schedule Agreements
 
@@ -100,9 +91,7 @@ Even if not formally agreed, if architects use a published schedule as a coordin
 
 **Consequences:** Serious—professional discipline (possible revocation), criminal prosecution, potential imprisonment
 
-<LeartBox type="critical">
-**Note on Government Projects:** If bid-rigging involves government projects, the conduct may also constitute fraud against the government (a felony) with additional criminal liability. Architects have faced imprisonment for bid-rigging on public projects.
-</LeartBox>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LeartBox" status="preserved"]
 
 ## Category 2: Ethical Fee Competition (Permitted)
 
@@ -146,12 +135,7 @@ These varied fees are **not collusive**. Each architect arrived at the fee indep
 - Architects may **lose bids** to competitors with lower fees or better value
 - **Low bidders** must still deliver professional-quality services (no cost-cutting)
 
-<ExamTip>
-**LEA Test Point:** Losing a bid to a competitor with a lower fee is ethical competition. An architect frustrated by losing bids to lower-cost competitors cannot ethically address this by colluding with competitors to maintain minimum fees. The solution is to either:
-- Improve efficiency and reduce costs, or
-- Develop specialization/differentiation to justify higher fees, or
-- Focus on clients who value quality over lowest cost
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 
 ### Type 2C: Value-Based Fee Approaches
 
@@ -205,13 +189,7 @@ This approach allows **fee flexibility** while tying architect compensation to *
 - **Negligence liability:** Building deficiencies result in client claims
 - **Reputational harm:** Word spreads about inadequate design quality
 
-<LeartBox type="critical">
-**Key Principle:** An architect who cannot deliver professional-quality services at the proposed fee should either:
-1. Increase the fee to appropriate level, or
-2. Decline the engagement
-
-The solution is not to accept a low fee and deliver low-quality work. This violates professional standards and harms both client and profession.
-</LeartBox>
+[SLATECAMP_UI_BLOCK:ui_0005 component="LeartBox" status="preserved"]
 
 ### Prohibition: Coercive Low-Fee Arrangements
 
@@ -387,35 +365,7 @@ If the fee is insufficient for these investigations, the architect should:
 
 ## The Anti-Competitive Conduct Framework
 
-<RegulationFramework>
-To evaluate whether fee competition is ethical or anti-competitive:
-
-**Step 1: Is there agreement or coordination?**
-- Independent fee determination → Ethical competition
-- Explicit agreement on fees → Collusion (prohibited)
-- Tacit coordination around a schedule → Price-fixing (prohibited)
-
-**Step 2: Does the fee structure restrict client choice?**
-- Multiple competing fees available → Competition
-- All architects charge same minimum → Price-fixing (prohibited)
-- Market division among architects → Prohibited
-
-**Step 3: Is professional quality maintained?**
-- Adequate services for the fee → Ethical
-- Inadequate services to offset low fee → Prohibited
-- Professional standards maintained despite fee pressure → Ethical
-
-**Step 4: Is the conduct sustainable and beneficial?**
-- Creates genuine efficiency or specialization → Competition
-- Intended to eliminate rivals, then raise prices → Predatory pricing (prohibited)
-- Pressure on competitors to match → Potentially coercive
-
-**Decision Framework:**
-- If all steps check ethical: Permissible fee competition
-- If agreement/coordination exists: Prohibited collusion
-- If quality undermined: Prohibited negligence
-- If predatory or coercive: Prohibited anti-competitive conduct
-</RegulationFramework>
+[SLATECAMP_UI_BLOCK:ui_0006 component="RegulationFramework" status="preserved"]
 
 ## Competition Law Framework: RA 10667
 
@@ -423,32 +373,11 @@ The Philippine Competition Act (RA 10667) specifically addresses anti-competitiv
 
 ### Prohibited Practices Under RA 10667
 
-<ComparisonTable>
-| Practice | RA 10667 Status | Professional Status | Example |
-|---|---|---|---|
-| **Horizontal price fixing** | Per se violation | Professional violation | Architects agreeing on minimum fees |
-| **Market allocation** | Per se violation | Professional violation | Architects dividing clients by territory |
-| **Bid-rigging** | Per se violation | Professional violation; criminal | Architects pre-arranging auction winner |
-| **Predatory pricing** | Violation (case-by-case) | Professional violation | Architect pricing to eliminate competitors |
-| **Coercive pricing** | Violation (case-by-case) | Professional violation | Developer forcing architects to below-cost fees |
-| **Independent fee competition** | Permitted | Ethical | Architects freely setting different fees |
-| **Collusive price coordination** | Prohibited | Professional violation | Architects using published schedule as coordination point |
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ComparisonTable" status="preserved"]
 
 ## Disciplinary Consequences
 
-<ComparisonTable>
-| Conduct | Professional Discipline | Legal Consequences |
-|---|---|---|
-| **Collusive fee agreement** | Suspension 2-3 years; possible revocation | Criminal prosecution under RA 10667; fines and imprisonment |
-| **Bid-rigging** | Possible revocation | Criminal prosecution (felony); imprisonment likely |
-| **Market division** | Suspension 2-3 years | Criminal prosecution under RA 10667 |
-| **Predatory pricing** | Suspension 1-2 years | Investigation by PCC; possible litigation |
-| **Below-standard design for low fee** | Suspension 1-3 years (negligence) | Professional liability; client claims |
-| **Pro bono public interest work** | None; may be commended | None |
-| **Independent competitive pricing** | None | None |
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
 
 ## About This Article
 

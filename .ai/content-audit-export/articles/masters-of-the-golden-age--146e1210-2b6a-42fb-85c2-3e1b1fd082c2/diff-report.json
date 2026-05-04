@@ -1,38 +1,45 @@
 {
   "article_id": "146e1210-2b6a-42fb-85c2-3e1b1fd082c2",
   "slug": "masters-of-the-golden-age",
-  "generated_at": "2026-05-03T13:45:15.686Z",
-  "old_hash": "sha256:5948089db49738dab598d2efd5730ae5aff68d8049ff4f8169ff7e4bad4ff36a",
-  "new_hash": "sha256:057acbec5e7cb0d0131e8154f31c096a89812aa486d7b8aebb57446ec6079ca5",
-  "original_hash": "sha256:5948089db49738dab598d2efd5730ae5aff68d8049ff4f8169ff7e4bad4ff36a",
-  "normalized_hash": "sha256:ec595cbe88cb777aa09ead26f35eb4e1901ae5a2d347cb09c35986c12c79194e",
-  "candidate_hash": "sha256:057acbec5e7cb0d0131e8154f31c096a89812aa486d7b8aebb57446ec6079ca5",
+  "generated_at": "2026-05-04T00:06:56.255Z",
+  "old_hash": "sha256:057acbec5e7cb0d0131e8154f31c096a89812aa486d7b8aebb57446ec6079ca5",
+  "new_hash": "sha256:0616ea414b8bc29d5d1435450d480d73ff07690ea55f847bb2697c647d21eff2",
+  "original_hash": "sha256:057acbec5e7cb0d0131e8154f31c096a89812aa486d7b8aebb57446ec6079ca5",
+  "normalized_hash": "sha256:0616ea414b8bc29d5d1435450d480d73ff07690ea55f847bb2697c647d21eff2",
+  "candidate_hash": "sha256:0616ea414b8bc29d5d1435450d480d73ff07690ea55f847bb2697c647d21eff2",
   "changed": true,
-  "changed_line_count": 116,
+  "changed_line_count": 134,
   "inserted_line_count": 18,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 116,
+    "changed": 134,
     "inserted": 18,
     "deleted": 0,
-    "original_line_count": 114,
-    "candidate_line_count": 132
+    "original_line_count": 132,
+    "candidate_line_count": 150
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Lateral force-resisting systems include shear walls, diaphragms, collectors, and boundary elements. Each component has a specific function in transferring seismic or wind forces from the floor to the foundation. Understanding their definitions and roles is essential for lateral design.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-002-02-core-concept" a type="image" caption="Shear Wall Lateral Load Path — Diaphragm to Foundation" description="Multi-story building section showing lateral load path: wind/seismic force → roof/floor diaphragm (horizontal beam action) → collectors/drag struts → shear walls (vertical cantilever action) → foundation. Key components labeled: diaphragm, collector, shear wall panel, boundary elements, foundation. In-plane shear and overturning moment illustrated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A **shear wall** is a vertical structural element that resists lateral (horizontal) loads through in-plane shear and bending. Shear walls are typically made of reinforced concrete or masonry and are positioned to transfer wind and seismic forces from diaphragms down to the foundation. They act in pairs or groups to form the "skeleton" of lateral resistance.
 
@@ -43,15 +44,6 @@ In Seismic Zone 2, shear wall systems are standard in mid-rise residential and o
 **Apply-level:** Given a floor plan with offset shear walls and a flexible diaphragm, identify where collectors are required and justify the load path.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid:** Diaphragm **collects**, collectors **carry**, walls **resist**. Think of them as a team: hands → arms → feet.
-- **Exam relevance:** High — expect at least one question on this topic per LEA set.
-
-
-
-[/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -60,13 +52,5 @@ See also: **Bearing Wall Systems** (lea-strc-002-01) for how shear walls work wi
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing diaphragm and shear wall—diaphragms are horizontal, shear walls are vertical\",\"Assuming all diaphragms behave identically; flexible diaphragms distribute loads differently than rigid ones\",\"Omitting collectors when shear wall layout is asymmetrical, causing force imbalance and torsion\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

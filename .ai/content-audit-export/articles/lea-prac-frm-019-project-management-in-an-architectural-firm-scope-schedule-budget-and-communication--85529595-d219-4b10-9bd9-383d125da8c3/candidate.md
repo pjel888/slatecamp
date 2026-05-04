@@ -11,8 +11,6 @@ After studying this article, you should be able to:
 - Explain the architect's role as project manager vs. design lead.
 - Identify project management tools and techniques relevant to practice.
 
-
-
 ### Project Scope Definition and Change Control
 
 Under the UAP Standards of Professional Practice (SPP Documents 201-209), the scope of architectural services must be clearly defined to prevent disputes. A clear scope statement in the Owner-Architect Agreement outlines: (1) project phases (programming, schematic design, design development, contract documents, construction administration); (2) deliverables per phase (number of design options, presentation materials, construction document sets); (3) included services (site investigation, consultations, meetings); (4) excluded services (sustainability consulting, cost estimating, specialized engineering); and (5) client responsibilities (timely decisions, providing information).
@@ -51,7 +49,7 @@ The architect must verify that construction documents are complete, coordinated,
 
 Internal quality control processes include: design reviews by senior staff, code compliance checklists, consultant coordination reviews (MEP, structural, landscape integration), and final document review before issuance. These processes catch errors before they reach the client or the contractor.
 
-<Tip>**Five essential quality control processes:** (1) design reviews by senior staff; (2) code compliance checklists; (3) consultant coordination reviews (MEP, structural, landscape); (4) final document review before issuance; (5) constructability review with contractor input. These catch errors before they reach the client or contractor.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
 
 ### Consultant Coordination and Agreement Management
 
@@ -73,6 +71,9 @@ Client feedback, whether positive or critical, is valuable. A client survey or e
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Project Management in Architecture — Scope, Schedule, Budget, Communication Framework" description="Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

@@ -1,6 +1,9 @@
 ## What You Need to Know for the LEA
 
-Vehicular circulation and site access planning translate parking supply into functional site layouts. The LEA tests your ability to position driveways, manage pedestrian-vehicle conflict, and ensure emergency access while respecting zoning and urban design context.
+## Learning Goal
+Position driveways and access points per NBC and zoning standards, manage pedestrian-vehicle conflict zones, ensure emergency vehicle access, design vehicular circulation patterns for different site configurations, and apply minimum driveway width and setback standards.
+
+Vehicular circulation and site access planning translate parking supply into functional site layouts. 
 
 ## Core Concept
 
@@ -124,6 +127,13 @@ Scenario describes parking lot with angled stalls throughout. Question: "Where i
 <Tip>
 **Memory aid:** One access per 100–150m (city dependent), 1:10 driveway slope, 3.5×6.0m loading zone, separate pedestrian path from vehicle circulation.
 </Tip>
+
+
+**Exam Tip:** Driveway width minimum = 6.0m for two-way, 3.5m for one-way. Curb cut radius minimum = 3.0m. Distance from intersection corner = 15m minimum. Fire truck access required to all buildings.
+
+## Cross-References
+
+See **LEA-DSGN-010-01** (Parking Requirements) for space count input, **LEA-DSGN-010-02** (Parking Geometry) for stall layout, and **LEA-DSGN-012-02** (Site Development) for circulation network planning.
 
 ## Common Mistakes
 

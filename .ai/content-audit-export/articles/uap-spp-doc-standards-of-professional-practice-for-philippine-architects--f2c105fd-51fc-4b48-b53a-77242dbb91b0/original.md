@@ -2,6 +2,12 @@
 
 ## Overview
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the structure and coverage of the UAP SPP Doc (Standards of Professional Practice), the nine SPP documents (201-209), their scope of services, and their relationship to RA 9266 and the UAP Code of Ethical Conduct; distinguish mandatory provisions from recommended practices; and apply the correct SPP document reference to common exam scenarios about architect's compensation and scope.
+---
 The Standards of Professional Practice (SPP) documents are the official regulatory framework governing the architectural profession in the Philippines. Promulgated as part of the Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, known as "The Architecture Act of 2004," the SPP became effective on March 9, 2011, and replaced the older 1979 UAP Documents (Docs. 201 through 210). The documents are administered jointly by the **United Architects of the Philippines (UAP)** — the Integrated and Accredited Professional Organization of Architects (IAPOA) — and the **Professional Regulatory Board of Architecture (PRBoA)** under the Professional Regulation Commission (PRC).
 
 The SPP establishes the scope, modes, responsibilities, and conditions of architectural practice in the Philippines. It defines who may legally practice architecture, how services are delivered, and how architects are to be compensated. These documents are mandatory compliance requirements for all Registered and Licensed Architects (RLAs) practicing in the country.
@@ -191,7 +197,7 @@ The document covers 14 or more distinct specialties, including:
 3. **Architectural Lighting Layout and Design** — Lighting systems design
 4. **Site Development Planning (SDP)** — Site layout optimization
 5. **Site and Physical Planning** — Master development, subdivision planning, urban design
-6. **Comprehensive Development Planning (CDP)** — Multi-sclea territorial planning
+6. **Comprehensive Development Planning (CDP)** — Multi-scale territorial planning
 7. **Historic and Cultural Heritage Conservation and Planning** — Preservation work on heritage sites
 8. **Security Evaluation and Planning** — Building security systems
 9. **Building Systems Design** — Integration of MEP and other building systems
@@ -209,7 +215,7 @@ The architect acts as the **prime professional**, coordinating all allied design
 
 SPP 204-A covers the engagement of an **Architect-in-charge of construction (Aicc)** who is directly and professionally responsible and civilly liable for the supervision of a construction project.
 
-### Rationlea
+### rationale
 
 When projects were small, the architect was assisted by a **Clerk-of-Works**. As projects grew in complexity, a **Construction Supervision Group (CSG)** became necessary for full-time, on-site inspection. The CSG is normally recommended by the architect and hired by the owner; they are answerable to both.
 
@@ -430,3 +436,18 @@ The SPP documents collectively define what the profession calls the **Spectrum o
 
 
 Together, these documents ensure that architectural practice in the Philippines meets the standards of public health, safety, welfare, and professional integrity mandated under R.A. No. 9266.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Nine SPP Docs: 201 (Pre-Design), 202 (Regular Design), 203 (Specialized), 204-A (Full-Time Supervision), 204-B (CM), 205 (Post-Construction), 206 (Comprehensive), 207 (Design-Build), 208 (Competition), 209 (Consulting). All are derived from RA 9266, Art. I, Sec. 4 (Architect's scope of practice). The three most tested are 202 (fee split), 201 (pre-design scope), and 207 (design-build).
+
+## Cross‑References
+
+**Spp Doc 201 Pre Design Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 206 Comprehensive Architectural Services**
+

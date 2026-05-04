@@ -1,32 +1,33 @@
 # Content Diff Report: spp-doc-206-comprehensive-architectural-services
 
-Generated: 2026-05-03T13:44:51.063Z
+Generated: 2026-05-04T00:06:27.834Z
 Article ID: f74f79a0-1477-481f-9050-fa43d82f18bd
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:8d72c537564f156cdce8e3fa5b18acffb45d0d8f71fdd8bb85eb1116cb718fc5`
-- Normalized: `sha256:3ee15bf7afe52aa325318114034afb14ae0284fc1ecc210594852e60ba37c23d`
-- Candidate: `sha256:afe99a19248ef4694d7634a8ca49bb4f8fd1b3e5aee6179afcaca3ae46053daa`
+- Original: `sha256:afe99a19248ef4694d7634a8ca49bb4f8fd1b3e5aee6179afcaca3ae46053daa`
+- Normalized: `sha256:cb11a2a40dddddb99ff3a1e33ac169bd2f9f92dfff7334802a4e6fd952d37b85`
+- Candidate: `sha256:cb11a2a40dddddb99ff3a1e33ac169bd2f9f92dfff7334802a4e6fd952d37b85`
 
 ## Line summary
 
-- Changed lines: 302
-- Inserted lines: 21
-- Deleted lines: 0
+- Changed lines: 307
+- Inserted lines: 0
+- Deleted lines: 85
 
 ## UI block preservation
 
 - UI blocks expected: 10
-- UI blocks preserved: 10
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 10
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 10 preserved UI block(s).
 
 ## Warnings
 

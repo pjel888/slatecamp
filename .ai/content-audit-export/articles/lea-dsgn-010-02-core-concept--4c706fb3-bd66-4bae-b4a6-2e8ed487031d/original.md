@@ -1,7 +1,9 @@
 ## What You Need to Know for the LEA
 
-Parking structure geometry—ramp grades, bay widths, aisle dimensions, column spacing, and turning radii—determines whether a parking design is buildable and user-friendly. The LEA tests your understanding of structural and operational constraints that turn a parking count into actual floor plates.
+## Learning Goal
+Design parking structure geometry — ramp grades (max 1:7), bay widths, aisle dimensions, column spacing, and turning radii — to accommodate vehicle maneuverability, verify accessible stall dimensions (3.7m × 5.0m), and apply structural and operational constraints.
 
+Parking structure geometry—ramp grades, bay widths, aisle dimensions, column spacing, and turning radii—determines whether a parking design is buildable and user-friendly. 
 ## Core Concept
 
 A parking structure must accommodate vehicle maneuverability, emergency egress, and structural efficiency. The geometry is constrained by:
@@ -64,6 +66,13 @@ Question: "A vehicle ramp must rise 4.0 m. What is the minimum length?"
 Question: "Is a 2.10 m headroom compliant for a PWD walkway?"
 
 - **Answer:** **No.** BP 344 2024 requires a minimum of **2.20 m**.
+
+
+**Exam Tip:** Ramp grades in parking structures: max 1:7 (14.3%) per PD 1096. Bay width for 90° parking: 2.5m × 5.0m standard, 2.7m × 5.0m for compact accessible. Aisle width for 90°: 6.1m minimum.
+
+## Cross-References
+
+See **LEA-DSGN-010-01** (Parking Requirements) for parking count calculation, **LEA-DSGN-010-03** (Vehicular Circulation) for ramp and driveway geometry, and **LEA-DSGN-011-01** (Floor Plans) for parking plan documentation.
 
 ## Common Mistakes
 

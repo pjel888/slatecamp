@@ -13,6 +13,7 @@ By the end of this article, you will be able to:
 Masonry units are classified as hollow or solid based on the ratio of void area to gross cross-sectional area. Understanding these classifications, area definitions (gross, net, bedded), and how they affect design and construction is critical for specifying materials, calculating masonry strength, and meeting code requirements.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-010-02-core-concept" a type="image" caption="Masonry Unit Types — Concrete Block, Clay Brick, and Structural Clay Tile" description="Comparative illustration of masonry units: (1) Concrete masonry unit (CMU) — hollow and solid types, nominal sizes (4'', 6'', 8''), web/shell thickness; (2) Clay brick — modular (8×4×2.67''), Norman, Roman, Jumbo sizes; (3) Structural clay tile — load-bearing partition and floor tiles. Compressive strength grades per ASTM/NSCP shown for each unit type." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A **masonry unit** is an individual element (brick, concrete block, stone) used to construct masonry walls. The internal structure—whether the unit contains voids (hollow) or is completely solid—determines its classification and structural behavior.
 
@@ -76,10 +77,7 @@ _In a four-story hollow CHB building with Design Category D seismic loading, gro
 - Correct answer: Full grouting is economically wasteful and structurally unnecessary; strategic grouting around reinforcement and at specified intervals provides required lateral confinement and vertical load paths at lower cost. Ungrouted cells maintain thermal insulation value.
 - Test variation: Recognize the balance between structural performance and constructability.
 
-<Tip>
-_Memory aid_: **"75% Rule"** — Hollow unit = net area < 75% of gross. Standard 6-inch CHB = 50% net = HOLLOW. **"BNA"** — **B**edded area (what contacts mortar), **N**et area (solid only), **A**rea gross (full bounding box). Bedded area determines bearing stress, not gross area.
-</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Related Articles
 
@@ -87,6 +85,6 @@ See also: **Masonry Construction** (lea-strc-010-01) for how units are assembled
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 
-<WikiMistakeList mistakes={["Confusing net area with bedded area—net area is 100% solid material; bedded area is only the portion in actual mortar contact (typically 50–60% for hollow CHB).","Assuming all hollow units have the same net-to-gross ratio—while typical CHB is 45–55%, clay bricks may be 60–80%; always verify unit-specific data.","Using gross area for bearing stress calculations instead of bedded area—this underestimates stress and may lead to local crushing failures.","Treating the 75% threshold as a rough guideline instead of an absolute code criterion—75% is the exact dividing line: ≥75% is solid, &lt;75% is hollow.","Specifying full-cell grouting to improve insulation—grouting eliminates insulation value and is structurally unnecessary where strategic grouting suffices.","Ignoring bedded area reduction in design—hollow units have 40–50% less bedded area than gross area; this significantly increases bearing stress and must be explicitly checked."]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

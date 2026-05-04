@@ -7,6 +7,14 @@
 
 ## Schema Activation: Why This Rule Matters
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply minimum light and ventilation requirements under PD 1096 Rule VIII for habitable rooms: minimum window area of 10% of floor area for natural light, 5% of floor area for natural ventilation; apply the 20% mechanical ventilation reduction; calculate required skylight dimensions as an alternative to side windows; and determine when artificial lighting may supplement natural lighting.
+---
+
+
 A developer may pressure you to lower ceilings and shrink rooms to gain more sellable floors, but Rule VIII fixes **hard minimums** for room sizes, ceiling heights, windows, and air volume per person.[file:17] Violating these is both a design defect and a licensure risk.
 
 **Reason for the Law:** In a tropical, high-density context, inadequate light, ventilation, and volume increase heat stress, disease transmission, and fire risk; Rule VIII’s numbers are minimums for health, safety, and human dignity.[file:17]
@@ -54,13 +62,15 @@ Sec. 805 distinguishes **natural** vs **artificial** ventilation and adds a spec
 | Rooms with **artificial ventilation** (general rule) | **2.40 m**                       | Sec. 805[file:17] |
 | Mezzanine floors                                     | **1.80 m** clear above and below | Sec. 805[file:17] |
 
-The IRR text many reviewers use also describes a **cascading pattern** for some multi-storey, artificially ventilated occupancies, but the codified minimums in Sec. 805 are 2.70 m for naturally ventilated rooms and 2.40 m for artificially ventilated rooms, plus 1.80 m around mezzanines.[file:17][file:18]
+Sec. 805 also provides a **cascading pattern** for multi-storey, artificially ventilated buildings: first storey minimum **2.70 m**, second storey **2.40 m**, succeeding storeys **2.10 m** clear headroom. For rooms with natural ventilation, the ceiling height minimum remains **2.70 m** on all floors. Mezzanines require **1.80 m** clear height above and below.[file:17][file:18]
 
-<ExamTip>
+<LawCallout code="pd1096" section="Rule VIII - Light and Ventilation">
+
 
 If a question explicitly refers to the “multi-storey artificial ventilation” example from your review materials, remember the pattern commonly taught: ground floor 2.70 m, second 2.40 m, upper floors 2.10 m headroom; but for direct Code citation, quote the 2.70 m (natural) and 2.40 m (artificial) minimums in Sec. 805.[file:17][file:18]
 
-</ExamTip>
+
+</LawCallout>
 
 ---
 
@@ -163,7 +173,7 @@ Only the **free opening area** counts toward the 10%/5% requirement: deduct fram
 
 ### Trap 3 — Misusing the Multi-Storey Cascade
 
-Some reviewers teach a 2.70 → 2.40 → 2.10 m cascade for artificially ventilated multi-storey buildings, but Sec. 805 text itself states minimums of **2.70 m (natural)** and **2.40 m (artificial)** plus mezzanine conditions.[file:17] In a **code-citation question**, rely on these explicit minima; for **review-center style computational examples**, be aware of the cascade pattern used in lectures.
+Sec. 805 explicitly provides a cascade for artificially ventilated multi-storey buildings: first storey **2.70 m**, second **2.40 m**, succeeding storeys **2.10 m** headroom. Some reviewers present this as the only cascade, but note that rooms with natural ventilation always require **2.70 m** minimum regardless of floor level.[file:17] In a **code-citation question**, always include the full Sec. 805 wording — the cascade for artificial ventilation AND the 2.70 m minimum for natural ventilation.
 
 ### Trap 4 — “Any Room” ≠ “Only Habitable Rooms”
 
@@ -233,6 +243,14 @@ Answer from memory:
 10. Vent shaft minimum area: **1.00 sq.m per meter of height**; least dimension **600 mm**.[file:17]
 
 ---
+
+
+
+---
+
+## Cross‑References
+
+**Pd 1096 Rule Viii Setbacks And Easements**, **Vent Shafts And Ventilation**, **Ceiling Heights And Room Sizes**, **Glass And Glazing Area Limits**
 
 ## Verified Source Mapping
 

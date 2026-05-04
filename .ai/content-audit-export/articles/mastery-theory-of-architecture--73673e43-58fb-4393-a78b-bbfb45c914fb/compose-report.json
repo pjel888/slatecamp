@@ -1,18 +1,24 @@
 {
   "article_id": "73673e43-58fb-4393-a78b-bbfb45c914fb",
   "slug": "mastery-theory-of-architecture",
-  "generated_at": "2026-05-03T13:44:11.683Z",
-  "original_hash": "sha256:7ef13d0b8e370a293ca4595b058815b55e85728835ba66b95c0cdb87c32b302a",
-  "normalized_hash": "sha256:28a0a06cf5fc51991781292be84e390189dfcf17fd0fb5b4d08c46643f9ea991",
-  "candidate_hash": "sha256:439f014a844dcef3f8d1e6fec12bb398282913a6a6b9abe2e3b4021835c3eba9",
+  "generated_at": "2026-05-04T00:05:39.077Z",
+  "original_hash": "sha256:439f014a844dcef3f8d1e6fec12bb398282913a6a6b9abe2e3b4021835c3eba9",
+  "normalized_hash": "sha256:02a415a6c9fedfe788d44990c2e90dba3822ffb359ec6d15c8cd30f20876280d",
+  "candidate_hash": "sha256:02a415a6c9fedfe788d44990c2e90dba3822ffb359ec6d15c8cd30f20876280d",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

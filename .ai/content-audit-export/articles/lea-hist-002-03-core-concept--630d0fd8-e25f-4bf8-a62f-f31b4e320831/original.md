@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-Gothic introduces the **pointed arch, ribbed vault, and external flying buttress** as an integrated structural system that allows walls to become thin screens and windows to become massive and luminous. This is the most heavily tested Medieval period—understand the *why* behind the structural innovation, not just the aesthetic.
-</Callout>
+## Learning Goal
 
+Identify Gothic architectural innovations — pointed arch, ribbed vault, flying buttress — and explain how the structural system enabled verticality, natural light, and the skeletal stone framework exemplified at Chartres, Notre Dame, and Amiens.
 ## Core Concept
 
 **Gothic architecture** (mid-12th–16th centuries) represents the culmination of Medieval ambition: to build impossibly tall cathedrals with walls so thin they nearly disappear, flooded with stained-glass light. The innovation is not decorative but *structural*—a complete rethinking of how to distribute weight.
@@ -69,6 +68,10 @@ Together—**pointed arch + ribbed vault + external flying buttress**—these th
 
 <ExamTip>**Pattern 6:** Construction timeline and historical context. "Why did Cologne Cathedral take until 1880 to complete, and what does this reveal about Gothic ambition?" Gothic cathedrals were massive undertakings; Cologne began 1248, was halted around 1560, resumed around 1814, and finally completed 1880 (632 years), reflecting their sclea and the period's changing political/religious priorities.</ExamTip>
 
+<Callout>
+Gothic introduces the **pointed arch, ribbed vault, and external flying buttress** as an integrated structural system that allows walls to become thin screens and windows to become massive and luminous. This is the most heavily tested Medieval period—understand the *why* behind the structural innovation, not just the aesthetic.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Thinking Gothic is purely *decorative* (fancy tracery, pointed arches as ornament)" correction="Gothic's pointed arches and flying buttresses are *structural innovations* with aesthetic consequences. The tracery is decorative, but it exists because the structural skeleton makes large windows possible." context="Understanding that Gothic form follows structure demonstrates sophisticated architectural understanding." />
@@ -89,3 +92,10 @@ Together—**pointed arch + ribbed vault + external flying buttress**—these th
 - **Transept**: The cross arm of a cruciform church
 - **Nave**: The central longitudinal space of a church
 - **Buttress**: A vertical exterior projection strengthening walls or piers
+
+## Related Articles
+
+See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-04-core-concept**, **lea-hist-002-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

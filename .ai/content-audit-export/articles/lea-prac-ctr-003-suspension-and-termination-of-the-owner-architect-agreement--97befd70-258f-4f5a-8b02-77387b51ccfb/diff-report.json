@@ -1,38 +1,45 @@
 {
   "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
   "slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
-  "generated_at": "2026-05-03T13:44:57.215Z",
+  "generated_at": "2026-05-04T00:06:34.512Z",
   "old_hash": "sha256:f5b8563e4c775e2ea6d11e23c83132706233b85d1c48c27dc1a4ec87c9dc8f2e",
-  "new_hash": "sha256:69a3802f94507047f5b80accb058d54a3fb0fa7c1e4a9ef0b992a6ca20632382",
+  "new_hash": "sha256:b7b52e02db563c10561a19142ea5982f9f7727bfbef173bd1fd5fa069e8773a4",
   "original_hash": "sha256:f5b8563e4c775e2ea6d11e23c83132706233b85d1c48c27dc1a4ec87c9dc8f2e",
-  "normalized_hash": "sha256:01501134f3d68dc83875a8bdd0cb2c3e3da657af15537a1af6dfe7c82780e393",
-  "candidate_hash": "sha256:69a3802f94507047f5b80accb058d54a3fb0fa7c1e4a9ef0b992a6ca20632382",
+  "normalized_hash": "sha256:b7b52e02db563c10561a19142ea5982f9f7727bfbef173bd1fd5fa069e8773a4",
+  "candidate_hash": "sha256:b7b52e02db563c10561a19142ea5982f9f7727bfbef173bd1fd5fa069e8773a4",
   "changed": true,
-  "changed_line_count": 55,
-  "inserted_line_count": 18,
+  "changed_line_count": 71,
+  "inserted_line_count": 26,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 55,
-    "inserted": 18,
+    "changed": 71,
+    "inserted": 26,
     "deleted": 0,
     "original_line_count": 49,
-    "candidate_line_count": 67
+    "candidate_line_count": 75
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

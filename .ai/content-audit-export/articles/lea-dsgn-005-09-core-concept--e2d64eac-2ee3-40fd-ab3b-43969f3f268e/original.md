@@ -1,10 +1,17 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Classify barangay halls with dual-occupancy (Group D administrative + Group E/C assembly), apply space programming per population thresholds, calculate occupant load for mixed-use egress, and verify accessibility compliance.
+
 Barangay halls and small government buildings serve multiple administrative and civic functions. They require understanding of dual-occupancy classification (Group D for administrative/institutional functions, Group E/C if assembly function dominates) and space programming tied to population thresholds.
 
 ---
 
 ## Core Concept
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
 
 Barangay halls in the Philippines operate as mixed-use facilities typically classified as **Group D (Institutional)** for administrative functions, though large assembly components may trigger **Group H (Assembly)** classification. The occupancy classification depends on the primary use and the proportion of assembly space.
 
@@ -27,6 +34,10 @@ The **GI (Government Institutional)** zone requires parking per NBC Table VII.5.
 ---
 
 ## Key Provisions
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
 
 | Function | Minimum Requirement | Reference |
 |:------------------------ |:-------------------------- |:------------------------------------------------ |
@@ -57,9 +68,11 @@ Barangay halls are the civic infrastructure linking national and local governmen
 ## How It's Tested
 
 **Pattern 1: Occupancy Classification**
+
+\
 "A barangay hall with a 120-sqm multi-purpose hall plus administrative offices is classified as Group E or H depending on the dominant occupant load." 
 
-**Pattern 2: Population-Sclead Sizing**
+**Pattern 2: Population-Scaled Sizing**
 "A barangay serving 8,000 persons requires a public counter with a minimum length of **16 meters** (2.0m × 8,000 / 1,000)." 
 
 **Pattern 3: GI Zone Parking**
@@ -68,6 +81,12 @@ Barangay halls are the civic infrastructure linking national and local governmen
 > **Memory Rule:** Captain = 9 sqm; SK = 10 sqm. Counter = 2.0m per 1k people. Exit width = 5.5 mm/person. Ramp = 1:20 (short) or 1:12 (long).
 
 ---
+
+**Exam Tip — ERR-DSGN-025:** Barangay halls have dual occupancy: administrative (Group D) + assembly (Group E/C if public meeting space). Calculate each component separately and use the most restrictive egress.
+
+## Cross-References
+
+See **LEA-DSGN-005-10** (Multi-Purpose Halls) for assembly space standards, **LEA-PLAN-007-05** (LGU Planning) for barangay governance context, and **LEA-DSGN-008-01** (Fire Egress) for mixed-occupancy egress calculations.
 
 ## Common Mistakes
 

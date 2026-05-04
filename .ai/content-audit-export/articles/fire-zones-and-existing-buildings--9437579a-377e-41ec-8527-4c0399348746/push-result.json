@@ -1,19 +1,28 @@
 {
-  "attempted_at": "2026-05-03T14:17:38.616Z",
+  "attempted_at": "2026-05-04T00:07:19.477Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "9437579a-377e-41ec-8527-4c0399348746",
   "slug": "fire-zones-and-existing-buildings",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:b365e17fe841d54651a317e0bc49b97ae8fc6f5563ff069eab9adee915747462",
-  "original_hash": "sha256:b365e17fe841d54651a317e0bc49b97ae8fc6f5563ff069eab9adee915747462",
-  "candidate_hash": "sha256:e1465b14dd07344691a3f440f6a8ab0d35b34a134db31657bf0c20d5347f33bc",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:e1465b14dd07344691a3f440f6a8ab0d35b34a134db31657bf0c20d5347f33bc",
+  "original_hash": "sha256:f5aedef22b5df3e3169ca5bddd2a2e7becd0d9043abfd053b709e39b6dece094",
+  "candidate_hash": "sha256:a26e281595cd858e5f632a6f88912d953c43aa3658c5823a6404313ba3854b2f",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T14:19:09.995569+00:00"
 }

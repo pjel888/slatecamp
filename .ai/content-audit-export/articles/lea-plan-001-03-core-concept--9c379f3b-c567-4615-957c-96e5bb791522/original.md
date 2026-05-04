@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
-Philippine urban planning history is shaped by three distinct eras: Spanish colonial grid-plaza planning, American City Beautiful intervention, and postwar devolution to local authority. This article tests your knowledge of the _historical narrative_, especially the Burnham Plan of Manila (1905) and the Laws of the Indies (1573), which you must know in detail. Contemporary planners and agencies are tested elsewhere.
+Philippine urban planning history is shaped by three distinct eras: Spanish colonial grid-plaza planning, American City Beautiful intervention, and postwar devolution to local authority. 
+## Learning Goal
+
+Trace the evolution of Philippine urban planning from the Laws of the Indies (1573) through the Burnham Plan of Manila (1905) to the Local Government Code (RA 7160, 1991), and identify the planning frameworks, key figures, and legacies of each period.
+
 
 ## Core Concept
 
@@ -38,6 +42,13 @@ The LEA tests Philippine planning history through two dominant question patterns
 <Tip>
 **Historical memory anchors:** LAWS OF THE INDIES = 1573, Spanish planning law. Every Philippine town = grid-plaza. BURNHAM = 1905, Plan of Manila. Three Burnham legacies = LUNETA, TAFT AVENUE, PASIG RIVER. RA 7160 = 1991, devolution, CLUP mandate. DHSUD = 2019 creation (RA 11201) consolidating HLURB, NHA, and other housing/planning agencies.
 </Tip>
+
+
+**Exam Tip:** Three key dates: 1573 (Laws of the Indies), 1905 (Burnham Plan), 1991 (RA 7160 / Local Government Code). Know the exact year for each — 1988 or 1992 are NOT acceptable substitutes for RA 7160.
+
+## Cross-References
+
+See **LEA-PLAN-001-01** (Planning Fundamentals) for theorist attribution, **LEA-PLAN-007-06** (Key Figures) for Burnham biography, and **LEA-PLAN-001-05** (CLUP Process) for post-1991 devolved planning system.
 
 ## Common Mistakes
 

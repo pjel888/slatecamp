@@ -1,18 +1,30 @@
 {
   "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
   "slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects",
-  "generated_at": "2026-05-03T13:44:10.734Z",
-  "original_hash": "sha256:76da6d79d46afd3ee43b8370bfff72c432a69c1bcf57a59f7de3c4cdd3f3a7c3",
-  "normalized_hash": "sha256:1be33bed5abcea1db1d0f1673ed8084bed74f2b38f73f758d7cbc6f55da649ef",
-  "candidate_hash": "sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7",
+  "generated_at": "2026-05-04T00:05:37.915Z",
+  "original_hash": "sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7",
+  "normalized_hash": "sha256:89ecd8a3e56078d7f05cb61576e953405610131ba1430866017309135450913d",
+  "candidate_hash": "sha256:89ecd8a3e56078d7f05cb61576e953405610131ba1430866017309135450913d",
   "ui_blocks_count": 5,
-  "placeholders_found": 5,
-  "placeholders_resolved": 5,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 5,
+  "unused_blocks": [
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006",
+    "ui_0007"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition.",
+    "UI block ui_0007 was not used during composition."
+  ]
 }

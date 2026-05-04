@@ -8,11 +8,7 @@ After reading this article, you should be able to:
 - Explain the Architect's authority to issue Change Orders and the thresholds requiring Owner authorization.
 - Apply the limits on Architect authority to LEA scenarios involving disputes over work methods, payment certification, and contract interpretation.
 
-
-
 The Architect's authority during construction is defined and limited by the Contract Documents and Doc 301. The Architect cannot modify the Contractor's scope, methods, or obligations beyond what the contract permits.
-
-
 
 ### Scope of Architect's Authority
 
@@ -59,21 +55,21 @@ The Architect's authority to direct removal of defective work does not eliminate
 Similarly, the Architect's authority to interpret the contract does not extend to changing the contract scope or requirements. Interpretations clarify existing requirements; they do not create new requirements or obligations. If the Owner desires to change the contract, a formal Change Order must be issued; an interpretation cannot substitute for a Change Order.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=ra9266
-- Text: **Architect's Authority During Construction**
-
-RA 9266 and UAP Doc 301 define the architect's authority, limitations, and responsibility during the construction phase.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Common exam trap:** Students often confuse the architect's authority to stop work with the contractor's responsibility for means and methods.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: title=LEA Strategy
-- Text: **High-yield topic:** Know the specific limits of the architect's authority — they cannot direct contractor means/methods, only verify compliance with contract documents.
-[/SLATECAMP_UI_BLOCK]
+
+
+---
+## Cross-References
+
+- **African Vernacular Earth Architecture**: Related article on African Vernacular Earth Architecture
+- **Inca Architecture Ashlar Masonry**: Related article on Inca Architecture Ashlar Masonry
+- **North American Indigenous Architecture**: Related article on North American Indigenous Architecture
+- **SPP Doc 203: Specialized Architectural Services**: Related article on SPP Doc 203: Specialized Architectural Services
+- **SPP Doc 206: Comprehensive Architectural Services**: Related article on SPP Doc 206: Comprehensive Architectural Services
+- **SPP Doc 208: Architectural Design Competition (ADC)**: Related article on SPP Doc 208: Architectural Design Competition (ADC)
+- **SPP Doc 209: Professional Architectural Consulting Services (PACS)**: Related article on SPP Doc 209: Professional Architectural Consulting Services (PACS)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

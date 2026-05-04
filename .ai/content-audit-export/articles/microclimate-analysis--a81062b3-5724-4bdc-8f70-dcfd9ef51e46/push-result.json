@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:00.056Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:27.699Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "a81062b3-5724-4bdc-8f70-dcfd9ef51e46",
   "slug": "microclimate-analysis",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:5a2ac6d034358742aa60c9d643a7f7b77158b74eb4806908b923a0cdbebb553e",
-  "original_hash": "sha256:8f7e4430b249d3cf4c6bf9a0fd42452e7851eb62b7730b5d962c202c5b7ae093",
-  "candidate_hash": "sha256:5a2ac6d034358742aa60c9d643a7f7b77158b74eb4806908b923a0cdbebb553e",
-  "stale_check_passed": false,
+  "original_hash": "sha256:5a2ac6d034358742aa60c9d643a7f7b77158b74eb4806908b923a0cdbebb553e",
+  "candidate_hash": "sha256:eb4b04fc44e6d68b8c5c37f3a0b8835f62a5537cdaf1bff17398a8a92553e849",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:51:13.412374+00:00"
 }

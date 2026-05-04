@@ -1,0 +1,28 @@
+{
+  "attempted_at": "2026-05-04T00:06:56.693Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "ba36cb75-5bb4-4d12-802c-f5ab921f7949",
+  "slug": "prefabricated-constructions",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:eed8eb5c81165a32c9afac3b2fcc20441a77a0bfa95a48ae140b3f3f7dfaf452",
+  "original_hash": "sha256:e5420cda9d4da3a0e6cde26c6d55961d26e414f4a2811beefd10eda3ac5cbb15",
+  "candidate_hash": "sha256:c94358c4a0435196243dcb00aaad731620765c0959a652d8637b2c5a9b12fbcb",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T14:19:42.391095+00:00"
+}

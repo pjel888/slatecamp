@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Biophilic design reconnects occupants to nature through direct and indirect patterns, enhancing psychological well-being and reducing stress. The Terrapin Bright Green framework provides 14 replicable patterns applicable to Philippine architecture, from water features in tropical courtyards to biomimetic ceiling patterns reflecting indigenous natural geometry.</Callout>
+## Learning Goal
 
+Identify the biophilic design patterns — direct nature experience, indirect nature experience, space and place — and explain how each pattern enhances occupant well-being, cognitive performance, and connection to the natural environment in buildings.
 ## Core Concept
 
 ### Understanding Biophilic Design
@@ -71,21 +72,17 @@ Research in hot-humid climates confirms that biophilic design reduces psychologi
 <WikiExamTable headers={["Pattern Category", "Pattern Name", "Philippine Application", "LEA Testing Focus"]} rows={[['["**Nature in the Space**", "Visual Connection", "Courtyards with native plants; water features", "Window placement, sightline design"]', '["", "Non-Visual Connection", "Bird sounds, water trickling, wind in palms", "Acoustic design, olfactory materials"]', '["", "Thermal/Airflow Variability", "Natural ventilation, cross-breezes in bahay kubo", "Stack effect calculations, CFD analysis"]', '["", "Water Presence", "Pools, fountains, evaporative cooling features", "Water circulation, thermal benefit quantification"]', '["**Natural Analogues**", "Biomorphic Forms", "Spiral stairs, leaf-pattern ceiling panels", "Geometric analysis, fractal dimensions"]', '["", "Material Connection", "Bamboo, rattan, narra wood finishes", "Sourcing documentation, tactility assessment"]', '["", "Complexity and Order", "Fern-frond façades, coral-reef-inspired screens", "Pattern complexity analysis (1.3–1.5 fractal range)"]', '["**Nature of the Space**", "Prospect", "High-rise vista corridors, open observation decks", "Sightline depth, panoramic access"]', '["", "Refuge", "Semi-enclosed alcoves, sleeping lofts (bahay kubo model)", "Privacy ratios, enclosure percentages"]', '["", "Awe", "Cathedral ceilings, views of Taal Volcano or Manila Bay", "Ceiling height, vista sclea effects"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Material Identification**: Given a bahay kubo image or floor plan, identify three biophilic patterns (non-visual connection, thermal variability, material connection) and explain how each enhances occupant experience.</ExamTip>
-
 
 <ExamTip>2. **Design Integration Scenario**: Design a hospital wing for a tropical Coronas Type I climate incorporating ≥5 biophilic patterns. Justify water feature placement, material selections, and natural lighting strategies for thermal comfort.</ExamTip>
 
-
 <ExamTip>3. **Vernacular Analysis**: Compare biophilic effectiveness between a traditional bahay kubo and a modern air-conditioned building. Which patterns does the vernacular structure employ? How do they reduce heat stress?</ExamTip>
-
 
 <ExamTip>4. **BERDE Compliance**: Specify biophilic design features that earn BERDE points for natural materials, daylight autonomy, and indoor air quality while maintaining tropical climate resilience.</ExamTip>
 
-
 <ExamTip>5. **Fractal Analysis**: Given a building façade, analyze whether complex pattern geometry falls within the 1.3–1.5 fractal dimension range for optimal biophilic response. Adjust design if outside range.</ExamTip>
 
+<Callout>Biophilic design reconnects occupants to nature through direct and indirect patterns, enhancing psychological well-being and reducing stress. The Terrapin Bright Green framework provides 14 replicable patterns applicable to Philippine architecture, from water features in tropical courtyards to biomimetic ceiling patterns reflecting indigenous natural geometry.</Callout>
 
 ## Common Mistakes
 
@@ -94,7 +91,6 @@ Research in hot-humid climates confirms that biophilic design reduces psychologi
 <WikiMistakeCard mistake="Ignoring Tropical Material Authenticity" correction="Using plastic plants, artificial water fountains, or imported materials contradicts Francisco Mañosa's indigenous philosophy." context="Philippine-sourced natural materials strengthen biophilic credibility." />
 
 <WikiMistakeList mistakes={["Over-Reliance on Air Conditioning. Installing extensive green walls in fully mechanical buildings wastes biophilic potential. Effective design combines natural ventilation (Coronas climate-responsive) with biophilic elements.", "Neglecting Seasonality. Biophilic design must reflect Coronas climate cycles—dry-season dormancy in Type I regions, year-round verdancy in Type IV. Rigid designs fail to engage dynamic natural cycles.", "Complexity Without Order. Creating chaotic, overstimulating spaces confuses the Complexity and Order pattern. Fractal geometry (1.3–1.5 range) requires balance.", "Excluding Water Presence in Wet Climates. Type II and IV climates (no pronounced dry season) can employ water features safely; dismissing them limits biophilic potential. Design drainage systems to prevent mosquito breeding while retaining water presence benefits."]} />
-
 
 ## Key Terms
 
@@ -121,3 +117,10 @@ Research in hot-humid climates confirms that biophilic design reduces psychologi
 **Coronas Climate Responsiveness** — Integration of biophilic elements aligned with Type I-IV rainfall patterns and seasonal cycles.
 
 **Vernacular Authenticity** — Design fidelity to indigenous Philippine building traditions (bahay kubo, bahay na bato) and materials; validates biophilic approach through cultural rootedness.
+
+## Related Articles
+
+See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-02-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

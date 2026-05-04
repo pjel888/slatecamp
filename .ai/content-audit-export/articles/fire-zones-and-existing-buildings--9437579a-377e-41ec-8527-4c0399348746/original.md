@@ -7,6 +7,18 @@
 
 ---
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Identify the three fire zone classifications under PD 1096 Rule V, Sec. 507 and their permitted construction types
+- Apply the one-third rule for split-zone buildings under Sec. 502
+- Determine which of the five Sec. 506 pathways applies to a non-conforming building in a fire zone
+- Distinguish between Pathway C (20% of building value, planned alterations) and Pathway E (20% of replacement cost, fortuitous events)
+- Calculate whether proposed renovation work triggers full fire zone compliance
+
+---
+
 ## The Real-World Hook
 
 It is a Tuesday morning in Divisoria, Manila. You are the architect of record for a row of shophouses that your client purchased along a busy commercial strip. The buildings are old — built in the 1970s before the current Fire Zone designation was formalized. Your client wants to renovate all five units: knock down a shared internal wall, add a mezzanine, repaint and reroof, extend the shopfronts toward the sidewalk, and replace all the electrical service panels. The budget for all this work is about 30% of the current appraised value of the property.
@@ -37,11 +49,11 @@ Per PD 1096, Rule V, Sec. 501, **fire zones** are defined as:
 
 Three criteria simultaneously determine what is permitted in a fire zone: **use or occupancy** (what the building is for), **type of construction** (how the building is built, cross-referencing Rule IV), and **resistance to fire** (the fire-resistive rating of the construction, cross-referencing Rule VI). All three must align.
 
-The critical word in this definition is *permitted*. Fire zones are gatekeeping mechanisms. They do not merely advise — they prohibit. A building that does not match the type of construction required by the fire zone in which it sits is a non-conforming structure by law, regardless of how structurally sound or well-maintained it may be. This non-conforming status has cascading implications for renovation permits, property sleas, mortgage insurance, and the Certificate of Occupancy process.
+The critical word in this definition is *permitted*. Fire zones are gatekeeping mechanisms. They do not merely advise — they prohibit. A building that does not match the type of construction required by the fire zone in which it sits is a non-conforming structure by law, regardless of how structurally sound or well-maintained it may be. This non-conforming status has cascading implications for renovation permits, property sales, mortgage insurance, and the Certificate of Occupancy process.
 
 The purpose of fire zone designation, stated explicitly in Sec. 507, is **management, prevention, control, and suppression of conflagration** in population centers. The word "conflagration" is deliberate — not just individual building fires, but the catastrophic spread of fire from building to building across an urban block or district. The Great Fire of London in 1666, the San Francisco firestorm following the 1906 earthquake, and the repeated Divisoria and Quiapo fires in Metro Manila all illustrate how buildings of incompatible fire resistance, packed closely together, multiply disaster.
 
-Fire zones operationalize the logic of Rule IV (Types of Construction) at the urban planning sclea. Where Rule IV tells you *how* a building is built, Rule V tells you *where* each type of building may be placed. They are inseparable: you cannot determine whether a specific site plan complies with Rule V unless you know what construction type is proposed under Rule IV.
+Fire zones operationalize the logic of Rule IV (Types of Construction) at the urban planning scale. Where Rule IV tells you *how* a building is built, Rule V tells you *where* each type of building may be placed. They are inseparable: you cannot determine whether a specific site plan complies with Rule V unless you know what construction type is proposed under Rule IV.
 
 ### Principle 2: The Three Fire Zone Classifications (Sec. 507)
 
@@ -60,7 +72,7 @@ Permitted construction types: **Types I and II** (per Sec. 401).
 - **Type I (Non-fire-resistive):** Structures of wood, bamboo, nipa, sawali, cogon, or similar combustible materials, including combinations with or without masonry or concrete walls at ground floor level. No fire-resistive requirement.
 - **Type II (Fire-retardant):** Essentially Type I but the roof covering must be fire-retardant. The rest of the structure may still be combustible.
 
-The Non-Fire Restricted Zone reflects a pragmatic recognition of Philippine realities: imposing full fire-resistive construction standards on scattered rural barangays and farmland dwellings would be economically impossible and socially disruptive. The communities that live in bamboo and nipa structures are not creating the urban-sclea conflagration risk that fire zones are designed to prevent. Their buildings are sparse enough that fire does not cascade from one to the next in the way it does in dense urban settings.
+The Non-Fire Restricted Zone reflects a pragmatic recognition of Philippine realities: imposing full fire-resistive construction standards on scattered rural barangays and farmland dwellings would be economically impossible and socially disruptive. The communities that live in bamboo and nipa structures are not creating the urban-scale conflagration risk that fire zones are designed to prevent. Their buildings are sparse enough that fire does not cascade from one to the next in the way it does in dense urban settings.
 
 **Philippine context note:** The indigenous materials listed in Sec. 507(a) — bamboo, sawali, nipa, cogon, palm leaves — are still the dominant construction materials in many rural communities across Visayas and Mindanao. The Code does not prohibit these materials; it simply recognizes that they are appropriate in Non-Fire Restricted Zones while being incompatible with urban fire zone requirements.
 
@@ -97,7 +109,7 @@ Permitted construction types: **Types IV and V only** (per Sec. 401).
 
 The phrase "no less than three to four-hour" creates a range. In practice, the most critical structural elements (columns, bearing walls) must achieve four hours, while other elements (non-bearing partitions, roof coverings) may achieve three hours. The specific element-by-element requirements are governed by Rule VI (Fire-Resistive Construction Standards) and the construction type requirements of Rule IV.
 
-Highly Fire Restrictive Zones are found in: Metro Manila CBDs (Makati Ayala Triangle, BGC, Ortigas Center, Eastwood), major provincial city cores, areas adjacent to government centers, medical districts, and financial service areas. The rationlea is straightforward: dense occupancy, tall buildings, large populations, complex evacuation dynamics, and high property values all demand maximum passive fire protection.
+Highly Fire Restrictive Zones are found in: Metro Manila CBDs (Makati Ayala Triangle, BGC, Ortigas Center, Eastwood), major provincial city cores, areas adjacent to government centers, medical districts, and financial service areas. The rationale is straightforward: dense occupancy, tall buildings, large populations, complex evacuation dynamics, and high property values all demand maximum passive fire protection.
 
 ---
 
@@ -130,7 +142,7 @@ A building has a total floor area of 1,500 sq m. It straddles the boundary betwe
 - Scenario B: 400 sq m in the Highly Fire Restrictive Zone. Is 400 > 1/3 of 1,500 (= 500 sq m)? No, 400 < 500. Therefore the building is governed by the less restrictive Fire Restrictive Zone requirements.
 - Scenario C: Exactly 500 sq m in the Highly Fire Restrictive Zone. Is 500 > 1/3 of 1,500? No — one-third is exactly 500, and the rule says "more than one-third." At exactly 1/3, the less restrictive zone governs.
 
-**Policy rationlea:** Fire does not stop at administrative zone boundaries. A partially non-compliant structure in a Highly Fire Restrictive Zone is a vulnerability that can ignite a conflagration in the most critical part of the urban fabric. The one-third rule ensures that any building with a meaningful presence in a restrictive zone must fully meet that zone's standards. The one-third threshold is not arbitrary — it represents a minimum "mass" of the building that creates a meaningful fire risk in the restricted zone.
+**Policy rationale:** Fire does not stop at administrative zone boundaries. A partially non-compliant structure in a Highly Fire Restrictive Zone is a vulnerability that can ignite a conflagration in the most critical part of the urban fabric. The one-third rule ensures that any building with a meaningful presence in a restrictive zone must fully meet that zone's standards. The one-third threshold is not arbitrary — it represents a minimum "mass" of the building that creates a meaningful fire risk in the restricted zone.
 
 **Exam note:** The exam frequently tests borderline scenarios. Watch for questions that present exactly one-third of floor area in the restrictive zone. At exactly 1/3, the answer is the **less** restrictive zone governs, because the triggering condition is "more than one-third."
 
@@ -141,7 +153,7 @@ Section 503 addresses a scenario that arises more often in the Philippines than 
 > 1. Any building or structure moved within or into any fire zone shall be made to comply with all the requirements for buildings or structures in that fire zone.
 > 2. This shall also apply to pre-engineered or pre-fabricated buildings or structures that may be dismantled and re-assembled.
 
-**The core principle:** Relocation is treated as equivleant to new construction for fire zone compliance purposes. The building's history — its previous location, its original compliance with a different zone's requirements — is legally irrelevant. What matters is where the building ends up.
+**The core principle:** Relocation is treated as equivalent to new construction for fire zone compliance purposes. The building's history — its previous location, its original compliance with a different zone's requirements — is legally irrelevant. What matters is where the building ends up.
 
 **Why this matters in Philippine practice:** The Philippines has a substantial market in pre-engineered steel buildings (PEBs) used for factories, warehouses, poultry and livestock facilities, and agricultural storage. These buildings are frequently designed for rural or agricultural sites (Non-Fire Restricted Zones) and later sold or leased to operators who want to relocate them to industrial zones near urban areas (which may be Fire Restrictive or Highly Fire Restrictive Zones). Without Sec. 503, a building that was lawfully built for a rural site could be moved into a restrictive urban zone without upgrades. Sec. 503 closes this loophole.
 
@@ -220,7 +232,7 @@ This is the pathway most commonly tested on the board exam. The Code states:
 
 The cost threshold (20% of building value per 12 months) is the most mechanically testable condition and the one most frequently featured in exam questions. Note these nuances:
 
-- **"Any 12-month period"** — not a cleandar year, not the fiscal year. The 12-month window is rolling, meaning if you spent 18% in January through December and propose additional work in February of the following year, the clock does not fully reset — the February through December window of the previous year's spending still counts within the new 12-month measurement.
+- **"Any 12-month period"** — not a calendar year, not the fiscal year. The 12-month window is rolling, meaning if you spent 18% in January through December and propose additional work in February of the following year, the clock does not fully reset — the February through December window of the previous year's spending still counts within the new 12-month measurement.
 - **"Value of the existing building"** — this is the assessed or appraised value of the building (not the land, not the replacement cost). This denominator is specific to Pathway C only.
 - All three conditions form a checklist. Failing any one of the three invalidates the pathway, even if the other two are satisfied.
 
@@ -250,7 +262,7 @@ Two critical distinctions from Pathway C:
 
 3. **Material requirement:** The repairs must use "the same kind of materials of which the building or structure was originally constructed." Like-for-like repair only. If the original building had wood framing, the typhoon-damaged repairs may use wood framing. The owner cannot use a fortuitous event as an opportunity to change materials or upgrade the structural system beyond what was originally there — that would be a planned alteration subject to Pathway C.
 
-**Policy rationlea:** After a typhoon or earthquake damages a non-conforming building, requiring full code compliance before any repair could be done would economically devastate building owners across entire disaster zones. The Code allows like-for-like repair up to 20% of replacement cost as a humanitarian concession to disaster recovery reality.
+**Policy rationale:** After a typhoon or earthquake damages a non-conforming building, requiring full code compliance before any repair could be done would economically devastate building owners across entire disaster zones. The Code allows like-for-like repair up to 20% of replacement cost as a humanitarian concession to disaster recovery reality.
 
 ### Principle 8: The Street Center Line Convention (Sec. 505)
 
@@ -312,13 +324,13 @@ This provision affects fire separation distance calculations. When determining h
 | **Structural frame max. rating (PH)** | Type V: 4-hour | Type I-A: 3-hour |
 | **Most fire-resistive floor (PH)** | Type V: 4-hour floor | IBC Type I-A: 2-hour floor |
 | **Zone designation authority** | LGU legislative body | State/local jurisdiction (Appendix D is optional; many jurisdictions don't adopt it) |
-| **Split-zone rule** | >1/3 floor area in stricter zone → whole building follows stricter zone (Sec. 502) | No explicit equivleant; fire separation distance measured from actual lot line per IBC 705 |
+| **Split-zone rule** | >1/3 floor area in stricter zone → whole building follows stricter zone (Sec. 502) | No explicit equivalent; fire separation distance measured from actual lot line per IBC 705 |
 | **Existing non-conforming — planned repairs** | 20% of building value per any 12-month period (Sec. 506-c) | IBC Section 3405: repairs may be made that do not make the building less safe; no universal percentage threshold in IBC |
 | **Existing non-conforming — fortuitous event** | 20% of replacement cost; same materials (Sec. 506-e) | IBC 3404.5: damage exceeding 50% of replacement value → full compliance for substantial structural damage |
 | **Temporary structures** | Building Official issues special permit; must be removed at expiration (Sec. 504) | IBC Section 3103: temporary structures up to 180 days; permit required; extendable |
 | **Moved buildings** | Must comply with fire zone of new location; explicitly includes pre-fab (Sec. 503) | IBC 3101.3: relocated structures must comply with current code at new location — same principle |
 | **Street/alley centerline rule** | Centerline of street = adjacent property line for distance measurement (Sec. 505) | IBC 705.3: fire separation distance measured from centerline of street or alley — same concept |
-| **Pre-fab buildings** | Explicitly named in Sec. 503 as subject to fire zone compliance | No equivleant explicit treatment; general relocated structure rule applies |
+| **Pre-fab buildings** | Explicitly named in Sec. 503 as subject to fire zone compliance | No equivalent explicit treatment; general relocated structure rule applies |
 | **Sprinkler trade-off** | Not addressed in Rule V; RA 9514 governs active systems separately | IBC 506.3: NFPA 13 sprinkler system allows 200–300% floor area increase |
 | **Interior finish controls** | Sec. 604 empowers Secretary to prescribe flame-spread standards | IBC Chapter 8: Class A (FSI 0–25), B (26–75), C (76–200) flame-spread index per ASTM E84 |
 | **Fire district maps** | Incorporated into LGU CLUPs and zoning maps | Appendix D includes template maps; fire district maps adopted by local ordinance |
@@ -394,7 +406,13 @@ Bonus: The permitted construction types also ascend with the zone. You can remem
 
 ### Mnemonic 2: "20/12/3" — The Pathway C Checklist
 
-When asked about planned renovations to a non-conforming building in a fire zone, remember:
+<Tip>
+
+When asked about planned renovations to a non-conforming building in a fire zone, remember: 20 = the cost ceiling: 20% of building value; 12 = the measurement window: any 12-month period; 3 = the number of conditions: cost + no combustibles + no increased hazard. Say: "Twenty in Twelve, Three conditions."
+
+</Tip>
+
+When asked about planned renovations
 
 - **20** → the cost ceiling: **20%** of building value
 - **12** → the measurement window: any **12-month period**
@@ -406,11 +424,15 @@ For Pathway E (fortuitous events), the formula changes: **20% of replacement cos
 
 ---
 
-## Exam Trap Learts
+## Exam Traps
 
 **TRAP 1: "Exactly one-third in the restrictive zone means the building follows the restrictive zone rules."**
 
-TRUTH: Per PD 1096, Rule V, Sec. 502, the trigger is "more than one-third" of total floor area in the more restrictive zone. When exactly one-third (33.33...%) is in the restrictive zone, the condition is NOT met, and the building is governed by the **less restrictive** zone. The exam will present scenarios with numbers like "400 sq m out of 1,200 sq m" (exactly 1/3) to test whether you apply "more than" strictly. You must.
+<Warn>
+
+TRUTH: Per PD 1096, Rule V, Sec. 502, the trigger is "more than one-third" of total floor area in the more restrictive zone. When exactly one-third (33.33...%) is in the restrictive zone, the condition is NOT met, and the building is governed by the less restrictive zone. The exam will present scenarios with numbers like "400 sq m out of 1,200 sq m" (exactly 1/3) to test whether you apply "more than" strictly. You must.
+
+</Warn>
 
 ---
 
@@ -439,9 +461,11 @@ A developer owns a 1,800 sq m building straddling the boundary between a Fire Re
 
 > **ANSWER: C**
 >
-<LawCallout code="nbcp" title="the test is not majority but &quot;more than one-third.&quot; Option D fabricates a discre">
+<LawCallout code="pd1096" section="Rule IV - Fire Zones">
+
 
 Per PD 1096, Rule V, Sec. 502, when more than one-third (1/3) of a building's total floor area is located in the more highly restrictive fire zone, the entire building is considered to be in that more restrictive zone. One-third of 1,800 sq m = 600 sq m. Since 650 sq m > 600 sq m (the one-third threshold), the entire building must comply with Highly Fire Restrictive Zone requirements. Option A is incorrect because compliance under Sec. 502 is a whole-building determination, not a split-by-area determination. Option B uses the wrong criterion — the test is not majority but "more than one-third." Option D fabricates a discretionary authority that does not exist in Sec. 502.
+
 
 </LawCallout>
 >
@@ -596,6 +620,22 @@ The Philippines faces a combination of risk factors that make fire zone rules mo
 
 ---
 
+
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when the cost of alteration exceeds 50% of building value. Know the three zones (1=highest restriction, 4=lowest) and which occupancy types are prohibited in each.
+
+## Cross‑References
+
+**Fire Resistive Construction Ratings**, **Change Of Use And Occupancy**, **Allowable Floor Area Increases**, **Pd 1096 Rule Vii Height Limits**
+
 ## Verified Sources
 
 - Presidential Decree No. 1096 — National Building Code of the Philippines (NBCP), Rule V, Sections 501–507 (primary source)
@@ -613,7 +653,7 @@ The Philippines faces a combination of risk factors that make fire zone rules mo
 - PD 1096, Rule II, Sections 214–216 — Dangerous and Ruinous Buildings (cross-reference for demolition authority)
 - PD 1096, Rule III, Section 309 — Certificate of Occupancy (cross-reference for BFP inspection requirement)
 - Republic Act 9514 — Fire Code of the Philippines (parallel active fire protection statute)
-- International Building Code (IBC) 2021, Appendix D — Fire Districts (US equivleant framework)
+- International Building Code (IBC) 2021, Appendix D — Fire Districts (US equivalent framework)
 - International Building Code (IBC) 2021, Chapter 6 — Types of Construction, Table 601 (US construction type ratings)
 - International Building Code (IBC) 2021, Section 3101.3 — Relocated Structures
 - International Building Code (IBC) 2021, Section 3103 — Temporary Structures

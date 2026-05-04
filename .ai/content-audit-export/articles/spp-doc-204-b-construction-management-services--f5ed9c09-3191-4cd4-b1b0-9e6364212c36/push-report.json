@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:58.937Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:27.047Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
   "slug": "spp-doc-204-b-construction-management-services",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5",
-  "original_hash": "sha256:1174a70fa66f6f3140c5c143cf394bb3aac6ab78b99d900af2ce8fd6bb3e1ff6",
-  "candidate_hash": "sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5",
-  "stale_check_passed": false,
+  "original_hash": "sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5",
+  "candidate_hash": "sha256:c0ffad8f803d3efd9cfff82de45cf72d08d940e34489dc2c48a796523b029506",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:51:11.87143+00:00"
 }

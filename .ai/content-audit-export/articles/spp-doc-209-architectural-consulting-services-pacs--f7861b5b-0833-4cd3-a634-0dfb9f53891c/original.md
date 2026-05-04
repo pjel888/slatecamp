@@ -4,6 +4,12 @@
 
 **SPP Document 209** governs **Professional Architectural Consulting Services (PACS)** — the broadest and most policy-laden document in the entire SPP series, and the **final document in the 2010 SPP framework**. It replaces the **1981 UAP Doc. 210** and is grounded in the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004), as well as in the Joint Resolution No. 2009-01 of the Philippine Technological Council (PTC) and the Council for the Built and Natural Environments (CBNE) dated December 11, 2009.
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the scope of SPP Doc 209 Architectural Consulting Services (PACS): the definition of 'consultant', permitted consulting relationships, fee arrangements (hourly, retainer, fixed fee), and the limitation that a consultant cannot simultaneously serve as the architect of record on the same project; apply the Code-imposed independence requirements to consulting engagements.
+---
 SPP 209 is structurally distinct from all preceding SPP documents: while SPP 201–208 primarily regulate the relationship between the Architect and a specific project Owner, **SPP 209 operates at the policy level** — defining who may provide consulting services in the Philippines, what those services encompass, how Filipino architects are protected from foreign displacement, and how both government and private sector clients must select and compensate Professional Consulting Architects (PCAs).
 
 ***
@@ -45,9 +51,9 @@ The 2010 SPP 209 is based on the document jointly drafted by PTC and CBNE in acc
 
 ***
 
-## 2. Rationlea
+## 2. rationale
 
-SPP 209 articulates **eight rationlea provisions** that establish the policy foundation of the document:
+SPP 209 articulates **eight rationale provisions** that establish the policy foundation of the document:
 
 ### 2.1 Government and Private Sector Demand for Consultants
 
@@ -363,7 +369,7 @@ Critical requirements for this method:
 
 ### 9.5 Percentage of Project Construction Cost (PCC)
 
-**Best for**: PACS engagements that are directly tied to the sclea and complexity of a specific construction project, such as Project Management or Construction Management services provided in a consulting capacity.
+**Best for**: PACS engagements that are directly tied to the scale and complexity of a specific construction project, such as Project Management or Construction Management services provided in a consulting capacity.
 
 The percentage rate varies depending on the type of PACS, the project group classification (per SPP 202), and the agreed scope of services.
 
@@ -467,7 +473,7 @@ SPP 209 is the **capstone document** of the 2010 SPP series — it governs the p
 **For Architects:**
 
 - **IAPOA membership in good standing** is a non-negotiable qualification for PACS — ensure membership fees, CPE requirements, and professional registration renewals are current before undertaking any consulting engagement.
-- When working with **foreign consultants**, ensure that the TSP is valid, the DOLE work permit is in order, and the collaboration agreement clearly defines that the Filipino PCA assumes all professional responsibilities and civil liabilities for any signed and selead architectural documents.
+- When working with **foreign consultants**, ensure that the TSP is valid, the DOLE work permit is in order, and the collaboration agreement clearly defines that the Filipino PCA assumes all professional responsibilities and civil liabilities for any signed and sealed architectural documents.
 - The **Salary Cost × Multiplier method** with a minimum multiplier of 3.0 is the most transparent compensation method for complex, variable-scope engagements — it makes overhead, profit, and contingency visible to the client and reduces the risk of fee disputes.
 - The **Non-Qualified Entity (NQE) prohibition** is a tool Filipino PCAs should actively invoke when competing against unqualified consultants for government or private sector engagements.
 
@@ -476,3 +482,18 @@ SPP 209 is the **capstone document** of the 2010 SPP series — it governs the p
 - The **priority rule (Filipino PCAs first)** is not merely a professional preference — it is grounded in constitutional policy (Art. XII, Sec. 14) and in the objectives of R.A. 9266. Engaging foreign consultants without proper justification exposes the client to legal risk and undermines national policy.
 - **Qualifications-Based Selection (QBS)** — not lowest-bid selection — is the legally mandated approach for both government (R.A. 9184) and private sector clients. The investment in a more qualified PCA consistently yields better project outcomes than the savings from choosing the cheapest option.
 - The **reimbursable expenses obligation** (Section 10d) means the total cost of a PACS engagement is the professional fee **plus** all documented direct costs. Clients should request a detailed breakdown of anticipated reimbursables at the start of the engagement.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: PACS = Professional Architectural Consulting Services. A consultant under SPP 209 CANNOT be the architect of record on the same project. Fee arrangements: hourly, retainer, or fixed fee. The 'no dual role' prohibition is the most tested principle — an architect cannot both design (as AOR) and advise (as consultant) on the same project.
+
+## Cross‑References
+
+**Spp Doc 203 Specialized Architectural Services**, **Spp Doc 207 Design Build Services**, **Spp Doc 208 Architectural Design Competition Adc**, **Uap Spp Doc Standards Of Professional Practice For Philippine Architects**
+

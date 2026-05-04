@@ -5,7 +5,6 @@ Philippine urban planning history is shaped by three distinct eras: Spanish colo
 
 Trace the evolution of Philippine urban planning from the Laws of the Indies (1573) through the Burnham Plan of Manila (1905) to the Local Government Code (RA 7160, 1991), and identify the planning frameworks, key figures, and legacies of each period.
 
-
 ## Core Concept
 
 Planning in the Philippines emerged from colonial intervention rather than indigenous settlement organization. The **Laws of the Indies (1573)**, Spain's urban planning code for colonial territories, mandated a strict grid-plaza town plan for all settlements — a central plaza surrounded by the church, municipal hall, and administrative buildings, with streets in a regular grid radiating outward. Every Philippine town established during the 300-year Spanish colonial period (1565–1898) followed this template, from Intramuros (Manila's walled core) to Vigan, Cebu, and provincial capitals. This colonial inheritance created the characteristic spatial organization of Philippine towns: centralized civic nucleus, regular street grid, and defined public plaza.
@@ -22,12 +21,13 @@ The American colonial period (1898–1946) introduced modern planning principles
 The Plan of Manila was only partially implemented — wartime destruction, budget constraints, and changing political priorities meant many Burnham visions never materialized. However, Luneta, Taft Avenue, the Pasig River embankment, and government building placement in Manila reflect Burnham's legacy. The Plan of Baguio (also 1905) was more successful; the grid street layout, Wright Park, and overall urban form of Baguio closely follow Burnham's design.
 
 Post-independence planning (1946–1970s) focused on national reconstruction and city expansion, but lacked comprehensive frameworks. The **Local Government Code (RA 7160, 1991)** marked the watershed moment, devolving planning authority to all municipalities and cities and mandating **Comprehensive Land Use Plans (CLUPs)**. This shift acknowledged that centralized planning had failed to manage rapid urbanization, informal settlements, and environmental degradation. Contemporary Philippine planning now operates through LGU CLUPs reviewed by **DHSUD** (formerly HLURB), integrated with housing policy (RA 7279), environmental protection (PD 1586, PD 1067), and disaster risk reduction (RA 10121).
+<ArticleMedia id="media-lea-plan-001-03-core-concept" a type="image" caption="Philippine Urban Planning History — Spanish, American, and Post-War Eras" description="Timeline diagram showing three eras: (1) Spanish colonial grid-plaza system (Law of the Indies), (2) American City Beautiful — Burnham's Plan of Manila 1905 with diagonal boulevards and civic core, (3) Post-war devolution under RA 7160 (1991 LGC) with CLUP mandate." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
-<WikiExamTable headers=["Historical Period", "Planning Framework", "Key Figure(s)", "Legacy"] rows=[["**Spanish Colonial (1565\u20131898)**", "Laws of the Indies (1573) \u2014 grid-plaza mandated for all towns", "Spanish Crown; local governors", "Every Philippine town follows grid-plaza model; Intramuros as walled core"], ["**American Colonial (1898\u20131946)**", "Burnham Plan of Manila (1905); City Beautiful Movement", "Daniel Hudson Burnham", "Luneta, Taft Avenue, Pasig River development; Baguio city plan"], ["**Early Independence (1946\u20131970s)**", "Ad hoc urban expansion; minimal comprehensive planning", "Various \u2014 fragmented authority", "Rapid unplanned growth; informal settlements proliferate"], ["**Devolution Era (1991\u2013present)**", "Local Government Code (RA 7160) \u2014 CLUP mandate for all LGUs", "National and local government", "Planning authority decentralized; CLUPs as strategic tool; DHSUD oversight"]] />
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
 
-<WikiExamTable headers=["Concept", "Significance", "Testable Detail"] rows=[["**Laws of the Indies (1573)**", "Spanish colonial urban planning law; mandated grid-plaza pattern for all NEW colonial settlements", "Every Philippine colonial town follows this template \u2014 not a tax law or military order"], ["**Burnham Plan of Manila (1905)**", "Comprehensive master plan for Manila and Baguio; City Beautiful Movement applied to tropics", "Luneta expansion, Taft Avenue as ceremonial boulevard, Pasig River embankment development, government building placement"], ["**City Beautiful Movement**", "Aesthetic urbanism: monumental civic spaces, diagonal boulevards, parks, grand design", "Applied in Manila; contrast with later functionalist/pragmatic approaches"], ["**Luneta (Rizal Park)**", "Manila's grand civic space; Burnham Plan centerpiece", "Focal point of City Beautiful design; symbol of colonial and national governance"]] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
 
 ## Philippine Context
 
@@ -39,10 +39,7 @@ The historical tension between centralized City Beautiful aesthetics (Burnham's 
 
 The LEA tests Philippine planning history through two dominant question patterns: (1) **Historical attribution and detail** — "The Laws of the Indies were Spain's urban planning law mandating which town pattern?" (Answer: grid-plaza). "The Burnham Plan of Manila (1905) proposed which of the following?" (multiple improvements listed). "Which feature of contemporary Manila reflects Burnham's legacy?" (Answer: Luneta, Taft Avenue, or Pasig embankment). (2) **Postcolonial institutional history** — "RA 7160 marked a shift from centralized to decentralized planning. What was the new planning instrument mandated for all LGUs?" (Answer: CLUP). Questions rarely ask for philosophizing; they test factual knowledge of dates, theorists, and specific projects.
 
-<Tip>
-**Historical memory anchors:** LAWS OF THE INDIES = 1573, Spanish planning law. Every Philippine town = grid-plaza. BURNHAM = 1905, Plan of Manila. Three Burnham legacies = LUNETA, TAFT AVENUE, PASIG RIVER. RA 7160 = 1991, devolution, CLUP mandate. DHSUD = 2019 creation (RA 11201) consolidating HLURB, NHA, and other housing/planning agencies.
-</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
 
 **Exam Tip:** Three key dates: 1573 (Laws of the Indies), 1905 (Burnham Plan), 1991 (RA 7160 / Local Government Code). Know the exact year for each — 1988 or 1992 are NOT acceptable substitutes for RA 7160.
 
@@ -52,4 +49,4 @@ See **LEA-PLAN-001-01** (Planning Fundamentals) for theorist attribution, **LEA-
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing the Burnham Plan of Manila with other planners — Burnham designed both Manila and Baguio (1905); do not attribute Baguio to other architects", "Thinking Laws of the Indies were tax or military laws — they were URBAN PLANNING laws mandating grid-plaza towns", "Forgetting that the Spanish colonial grid-plaza is the MODEL for all Philippine towns — students sometimes think Intramuros is unique", "Misremembering Burnham Plan date — it's 1905, not 1900 or 1910", "Attributing Luneta or Taft Avenue to contemporary planners instead of Burnham legacy"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]

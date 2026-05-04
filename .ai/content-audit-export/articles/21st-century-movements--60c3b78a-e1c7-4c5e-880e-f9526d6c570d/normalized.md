@@ -34,34 +34,14 @@ You walk into the jury room for your thesis defense. Your panel chair holds up a
 | Theoretical Root | Derrida's deconstruction; Russian Constructivism | Archigram; Buckminster Fuller's systems thinking | Complexity theory; scripting and computational design |
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory Aid: "DHP — Disrupt, Honor, Program."** Deconstructivism Disrupts form; High-Tech Honors engineering; Parametricism Programs with algorithms. Chronological order: Deconstructivism (1982), High-Tech (1970s, concurrent but conceptually earlier), Parametricism (2000s).
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Real-World Example:** Imagine three buildings on the same site. Building A has jagged titanium panels, angled walls, and a fragmented silhouette — that is Deconstructivism, challenging your sense of stability. Building B has exposed steel beams, color-coded ducts, and glass curtain walls — that is High-Tech, celebrating the engineering inside. Building C has a seamless fluid white shell with no straight lines — that could be Parametric, but only if the form was algorithmically generated, not hand-sculpted.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Pattern:** The most common question type shows you an image of a building and asks you to identify its movement. Follow this checklist: (1) Is the form fragmented and dislocated? → Deconstructivism. (2) Are structure and services exposed as ornament? → High-Tech. (3) Is the form fluid, continuous, and algorithmically generated? → Parametricism. If the question gives a curved building but no mention of algorithmic software, eliminate Parametricism.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Deconstructivism: Fragmentation, dislocation, challenging structural conventions | High-Tech: Technology as ornament, exposed structure/services | Parametricism: Algorithm-driven form, continuous diff
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Do NOT confuse Parametricism with mere curvilinear design. Not every curved building is Parametric — it must be algorithmically generated through parametric relationships in software like Grasshopper 
-[/SLATECAMP_UI_BLOCK]
 
 ## LEA Exam Traps and Common Mistakes
 
@@ -114,3 +94,5 @@ D. A movement that fragments building volumes to challenge user perception
 
 **Post Modernism**, **The Bauhaus And International Style**, **Brutalism**, **Masters Of The Golden Age**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

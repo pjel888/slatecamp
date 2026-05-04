@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The **International Style** dominates the LEA's modernism section. The exam tests whether you recognize this movement's defining characteristics—glass curtain walls, structural honesty, and rejection of ornament—and can identify landmark buildings from this period.</Callout>
+## Learning Goal
 
+Identify the key markers of the International Style — glass curtain walls, structural frame expressed, rejection of ornament, flat roofs, asymmetrical composition — as codified by Hitchcock and Johnson (1932), and recognize its global dissemination through works like the Seagram Building.
 ## Core Concept
 The **International Style** emerged from the 1932 Museum of Modern Art (MoMA) exhibition curated by **Henry Russell Hitchcock** and **Philip Johnson**. This movement codified early modernism's aesthetic principles: form follows function absolutely, ornament is eliminated entirely, and the beauty of a building lies in its proportions and material honesty rather than decoration.
 
@@ -33,6 +34,8 @@ The International Style dominated institutional and corporate architecture from 
 
 <ExamTip>**Pattern 4: Curator and exhibition knowledge.** "The 1932 MoMA exhibition that codified the International Style was curated by:" Answer: **Henry Russell Hitchcock** and **Philip Johnson**.</ExamTip>
 
+<Callout>The **International Style** dominates the LEA's modernism section. The exam tests whether you recognize this movement's defining characteristics—glass curtain walls, structural honesty, and rejection of ornament—and can identify landmark buildings from this period.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing International Style with all modernism" correction="Students lump together Art Deco, Streamline Moderne, and International Style as &quot;modern.&quot; International Style specifically rejects ALL applied decoration, not just ornate historicism. It's a distinct movement with specific formal and philosophical characteristics." context="Test questions explicitly distinguish between design movements. Recognizing International Style as distinct from other modernisms is essential for comparative analysis and identification questions." />
@@ -52,3 +55,10 @@ The International Style dominated institutional and corporate architecture from 
 - **Proportional grid**: A system of proportional modules controlling facade fenestration and structural bays.
 - **Béton brut**: Raw concrete left exposed after formwork removal; used differently in Brutalism but pioneered in modernism.
 - **Functionalism**: The doctrine that design should serve practical purpose above aesthetic tradition.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

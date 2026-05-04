@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define a space frame and distinguish it from a planar truss
+- Explain how 3D triangulation provides multi-directional stiffness
+- Identify common applications of space frames in Philippine construction
+- Describe the advantages of space frames for long-span structures
 
 Space frames, long-span systems, and advanced structural forms represent sophisticated solutions for enclosing large unobstructed areas. Understanding their definitions, characteristics, and typical applications is important for recognizing system types on drawings and in building descriptions. Detailed design and analysis are not covered here—only definitions and concepts.
 
@@ -46,6 +53,13 @@ Space frames are used in large warehouse roofs, exhibition halls, and airport te
 
 <Tip>**Memory aid:** Space frame = 3D truss (nodes); Cable-stayed = cables + tower (fan); Suspension = catenary (hang); Dome = sphere (balanced); Tensile = fabric (stretched); Arch = curve (compress); Folded = bent plate (stiff).</Tip>
 
+
+## Related Articles
+
+See also: **Trusses** (lea-strc-002-05) for the 2D foundation of space frame behavior, **Load Types** (lea-strc-001-02) for how loads apply to 3D structures, and **Structural Steel** (lea-strc-008-01) for typical space frame materials.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing cable-stayed with suspension; cable-stayed cables run from towers to deck (fan pattern); suspension cables hang in catenary and support deck from above","Thinking arches are the most economical for all long spans; arches need buttressing and are best for moderate spans; cables/suspension are more economical for very long spans","Assuming advanced forms are purely aesthetic; they are structural solutions optimized for specific load and span conditions"]} />

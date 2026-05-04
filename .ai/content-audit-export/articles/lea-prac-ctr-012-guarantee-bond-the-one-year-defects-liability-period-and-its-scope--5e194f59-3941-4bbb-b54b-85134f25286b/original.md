@@ -1,35 +1,78 @@
 ## Guarantee Bond — The One-Year Defects Liability Period and Its Scope
 
+## Learning Goal
 
-The guarantee bond, also called the defects liability bond, extends contractor protection beyond project completion for one year, covering latent defects that emerge after substantial completion.
+After studying this article, you should be able to:
+
+- Define the guarantee bond (warranty bond) for the 1-year defects liability period.
+- Explain the scope of defects covered: workmanship and materials, not normal wear.
+- Describe the bond amount and duration.
+- Distinguish the guarantee bond from the performance bond.
 
 
-### Purpose of the Guarantee Bond
 
-The guarantee bond serves as a continuing security for quality and workmanship following substantial completion of the work. While the performance bond protects against non-completion, the guarantee bond protects against defects in materials, equipment, and workmanship that become apparent after the contractor has substantially completed the project. This bond extends the contractor's liability for quality beyond the project handover date.
+### Purpose and Duration
 
-The guarantee bond creates an obligation for the contractor and surety to make good any defects discovered within the defects liability period. This protection recognizes that some defects in construction work are not apparent at substantial completion but emerge over time as materials weather, equipment is operated, and building systems function under actual conditions. The guarantee bond ensures the owner has recourse against the contractor and surety for these latent defects.
+The Guarantee Bond is security furnished by the contractor to guarantee correction of defects in materials and workmanship during the one-year period following Substantial Completion. The one-year period runs from the date of Substantial Completion certified by the architect — NOT from Final Completion. This is a critical distinction because the guarantee period may begin before all punch list work is finished.
 
-### The One-Year Defects Liability Period
+<LawCallout code="ra9266" section="UAP Doc 301 §33" title="Guarantee Bond — One-Year Period">
+UAP Document 301 establishes the contractor's guarantee period at ONE YEAR from the date of Substantial Completion. During this period, the contractor must correct all defects reported by the Owner or Architect at no additional cost. The bond is independent of the Performance Bond — it covers defects discovered AFTER occupancy, not incomplete work.
+</LawCallout>
 
-The defects liability period under standard contracts extends for one year from the date of substantial completion of the work. This fixed timeframe is critical because it defines the duration of contractor responsibility for quality under the guarantee bond. After this one-year period expires, the contractor and surety are released from guarantee obligations except for defects that were discoverable during the period but not detected until later.
+### Scope of Coverage
 
-The one-year period begins from substantial completion, not from contract execution or final payment. Substantial completion occurs when the work is sufficiently complete that the owner can occupy and use the project for its intended purpose, even though minor finishing items may remain outstanding. The architect typically certifies the date of substantial completion, which formally triggers the commencement of the one-year guarantee period.
+The guarantee bond covers defects arising from: deviations from specifications, workmanship failures, material failures, and any condition where the work does not conform to the Contract Documents. It does NOT cover: normal wear and tear, damage caused by the Owner or third parties, defects caused by improper use or maintenance, or defects resulting from design errors (which are the architect's responsibility).
 
-### Types of Defects Covered by the Guarantee Bond
+<KeyValues
+  values={{
+    "Guarantee Period": "1 year from Substantial Completion",
+    "Covered Defects": "Materials, workmanship, specification deviations",
+    "Not Covered": "Wear and tear, owner damage, improper use, design errors",
+    "Reporting Window": "During or within reasonable time after 1 year",
+    "Civil Code Extension": "10-15 years for structural defects under Art. 1723"
+  }}
+/>
 
-The guarantee bond covers defects in materials, equipment quality, and workmanship that emerge within the one-year period. Common examples include inadequate mortar joint pointing in masonry, cracks in concrete slabs, paint delamination, mechanical equipment malfunction, and plumbing or electrical failures. The defect must relate to the contractor's work; defects caused by the owner's improper maintenance or use are typically excluded.
+<Warn>
+  **Critical Distinction:** The contractor's one-year contractual guarantee under UAP Document 301 is INDEPENDENT of and IN ADDITION TO the statutory liability under Civil Code Article 1723. Article 1723 imposes solidary liability on the architect and contractor for 10 years (poor materials/construction) or 15 years (defects in ground). The one-year guarantee does NOT extinguish the longer statutory liability — defects discovered after one year may still give rise to claims under Article 1723.
+</Warn>
 
-The scope includes both visible defects and those concelead by subsequent finishing work that becomes apparent during the guarantee period. If drywall is installed over structural defects, for example, those structural defects discovered during the guarantee period remain the contractor's responsibility even if they were not visible at substantial completion. However, defects caused by inherent wear and tear of normal use are typically excluded.
+### Procedure for Defect Correction
 
-### Scope Limitations and Exclusions
+The Owner must report defects in writing during or within a reasonable time after the one-year guarantee period. The Contractor must investigate and correct reported defects at no additional cost. The Architect verifies correction and certifies completion of guarantee obligations.
 
-The guarantee bond does not cover defects arising from normal wear and tear, acts of God, or damage caused by the owner's improper maintenance or alteration. Minor cracking due to normal shrinkage of concrete or normal settlement of structures is typically excluded. Defects caused by failure to follow the architect's or contractor's instructions for maintenance are the owner's responsibility, not the guarantee bond's.
+<ExamTip>
+  **LEA Priority — Guarantee Bond Rules:**
+  1. Period: 1 year from Substantial Completion (NOT Final Completion)
+  2. Coverage: Workmanship and materials defects (NOT design errors)
+  3. Statutory override: Art. 1723 gives 10-15 years for structural defects
+  4. Reporting: Written notice to contractor required
+  5. Verification: Architect certifies that corrections are complete
+</ExamTip>
 
-Design defects—problems resulting from the architect's design rather than the contractor's execution—are excluded from the guarantee bond. The guarantee bond covers defects in how the contractor executed the design, not whether the design itself is appropriate. Similarly, defects caused by changes to the work after completion or by systems beyond the contractor's scope are excluded.
+## Common Mistakes
 
-### Release of the Guarantee Bond
+<WikiMistakeList
+  mistakes={[
+    "Believing the guarantee period runs from Final Completion — it runs from Substantial Completion",
+    "Assuming the guarantee bond covers all defects — it does not cover wear and tear, owner damage, or design errors",
+    "Confusing the guarantee bond with the performance bond — guarantee covers post-occupancy defects; performance covers completion",
+    "Thinking the one-year guarantee replaces the Civil Code liability — Article 1723 provides 10-15 years for structural defects independently",
+    "Believing the contractor is not responsible for defects discovered after one year — Article 1723 may still apply for structural defects",
+  ]}
+/>
 
-Upon expiration of the one-year defects liability period, the guarantee bond is released and the surety is discharged from further obligation. The architect typically issues a certificate confirming the end of the guarantee period. All defects discovered and addressed during the year should be remedied prior to release. The owner cannot hold the bond longer or extend its period unilaterally.
+---
 
-However, if defects are discovered during the guarantee period but not reported to the contractor promptly, disputes may arise regarding whether the contractor has adequate opportunity to remedy. The contract documents typically specify procedures for defect notification and correction. The owner must diligently identify and report defects during the guarantee period to preserve the right to claim against the bond for those specific defects.
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)

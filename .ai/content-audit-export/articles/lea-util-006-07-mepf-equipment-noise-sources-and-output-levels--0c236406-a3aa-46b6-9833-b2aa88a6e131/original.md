@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-Noise control in mechanical, electrical, plumbing, and fire (MEPF) equipment rooms is critical to occupant comfort and regulatory compliance under Philippine building standards. Uncontrolled equipment noise can exceed ambient limits by 20–30 dB, violating DENR DAO 2000-81 standards and creating habitability issues. This article presents the noise sources, transmission paths, and attenuation strategies required for LEA-compliant design.
+## Learning Goal
 
----
-
+Identify MEPF equipment noise sources (chillers, pumps, AHUs, cooling towers, transformers, generators, elevators) by typical noise output levels (dB), and apply noise control strategies (isolation, enclosures, silencers, duct lining) for architectural acoustics design.
 ## MEPF Equipment Noise Sources and Output Levels
 
 The primary noise-generating equipment in a typical building mechanical room produces the following acoustic power:
@@ -17,6 +16,19 @@ The primary noise-generating equipment in a typical building mechanical room pro
 These sound levels are measured at 1 meter in a free-field condition. Indoor plant rooms typically create room pressure increases of 5–10 dB above source, requiring aggressive attenuation.
 
 ---
+
+
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 
 ## Philippine Regulatory Framework: PD 1096, PD 1058, and DENR DAO 2000-81
 
@@ -44,7 +56,7 @@ Source: DENR DAO 2000-81, Table 1 (Recommended Ambient Noise Levels)
 
 ## Noise Criteria (NC) Classification and Room Targets
 
-The Noise Criteria (NC) sclea, defined in ANSI/ASA S12.2-2008, provides spectral guidance for acceptable sound levels in specific room types. The NC sclea accounts for the combined effect across octave bands 63 Hz to 8 kHz, with emphasis on human perception of speech interference and task performance.
+The Noise Criteria (NC) scale, defined in ANSI/ASA S12.2-2008, provides spectral guidance for acceptable sound levels in specific room types. The NC scale accounts for the combined effect across octave bands 63 Hz to 8 kHz, with emphasis on human perception of speech interference and task performance.
 
 ### Recommended NC Targets by Occupancy
 
@@ -264,7 +276,7 @@ When a mechanical room is positioned directly above residential or office space,
 1. **Structural floor** (existing)
 2. **Isolation layer**: Resilient supports (elastomeric pads, spring isolators, or cork/rubber composite layers)
 3. **Floating slab**: Reinforced concrete 75–100 mm thick, or structural composite with adequate mass
-4. **Acoustic interface**: Fibrous material or selead cavity above occupied ceiling
+4. **Acoustic interface**: Fibrous material or sealed cavity above occupied ceiling
 
 **Design Parameters**:
 - **Total isolated mass**: Mechanical room equipment + floor slab ≥ 1000–5000 kg depending on isolator stiffness
@@ -429,7 +441,7 @@ Source: ISO 3744 (Determination of sound power level of noise sources using soun
 **Measurement Protocol**:
 - Conduct sound level survey (SLM) per ISO 3444 (Sound level measurement – Procedures) at property boundary, 1.5 m above ground
 - Measure at multiple points (typically 4–8 locations around perimeter)
-- Record LAeq,T (equivleant continuous sound level) over 10 minute period during peak equipment operation
+- Record LAeq,T (equivalent continuous sound level) over 10 minute period during peak equipment operation
 - Compare to DENR DAO 2000-81 limits for applicable zone and time period
 - Margin requirement: Achieve limit minus 3 dB (safety margin for operational variations)
 
@@ -538,3 +550,10 @@ Effective noise control requires analysis of all three transmission paths and in
 - [ ] DENR DAO 2000-81 and PD 1096/1058 compliance documented in design certification
 
 ---
+
+## Related Articles
+
+See also within Lighting and Acoustics: **lea-util-006-02-core-concept**, **lea-util-006-03-core-concept**, **lea-util-006-05-core-concept**, **lea-util-006-06-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

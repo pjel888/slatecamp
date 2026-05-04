@@ -7,6 +7,9 @@ Design mechanical spaces (chiller plants, boiler rooms, AHU rooms, fan rooms, el
 
 ### Chiller Plant and Central AHU Rooms
 
+<ArticleMedia id="media-lea-util-008-02-mechanical-spaces" a type="image" caption="Mechanical Room Floor Plan — Chiller, Pump, AHU, Electrical, and Fire Protection Coordination" description="Coordinated floor plan showing mechanical room: chiller on vibration isolation pads with 1.2-1.5m service clearance, pump sets with flexible connections, AHU with ductwork terminations, electrical panelboard with 1m working clearance, fire suppression header and sprinkler coverage, floor drains and condensate collection (2 L/min per 100kW cooling capacity). Access door (900mm min width), equipment removal path, and BIM coordination at 30/60/90% DD stages annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 Chiller plant rooms typically consume _3–5% of gross floor area (GFA)_ for full-capacity central systems. This allocation accommodates:
 
 - Centrifugal or screw chillers (2–3 units for redundancy)
@@ -44,18 +47,11 @@ Pump room sizing is equipment-driven:
 
 ---
 
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
 
-<KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 
-
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
-
-
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Electrical Spaces
 

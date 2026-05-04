@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define an accelerograph and distinguish it from a seismograph and seismoscope
+- Explain what an accelerogram records (acceleration vs. time)
+- Describe how accelerograph data feeds into seismic design spectra
+- Identify the purpose of each seismic instrument type
 
 High-rise buildings must have accelerographs per NSCP 2015 Section 208.12.6 (exact height threshold to be verified from code)—seismic instruments that record ground motion. The owner is responsible for maintenance. Essential facilities (hospitals, fire stations, emergency centers) require an importance factor I per NSCP 2015 Table 208-1 (typically 1.25 for essential facilities) in the design base shear formula, meaning they must be designed for 25% higher seismic forces.
 
@@ -43,6 +50,13 @@ Major hospitals in Metro Manila (Philippine General Hospital, Makati Medical Cen
 
 <Tip>14 stories = accelerograph threshold. 3 instruments = bottom, middle, top. I = 1.25 = essential (add 25% to base shear). Owner = responsible for maintenance forever.</Tip>
 
+
+## Related Articles
+
+See also: **Earthquake Fundamentals** (lea-strc-004-01) for how earthquakes are measured, **Base Shear** (lea-strc-004-03) for how acceleration data becomes design force, and **Seismic Zones** (lea-strc-004-02) for zoning based on historical records.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Using 10 stories or 12 stories as the accelerograph threshold. The code specifies 14 stories minimum, not 10 or 12.","Specifying only 2 accelerographs. The code requires at least 3: basement, mid-height, roof. All three are needed to capture the building's response.","Treating accelerograph maintenance as a one-time commissioning task. Maintenance is continuous and is the owner's responsibility for the life of the building.","Using I = 1.0 for essential facilities. Essential facilities MUST use I = 1.25. This is not negotiable and is not optional.","Confusing I = 1.25 (essential facility) with I = 1.5 (other codes or contexts). The NSCP specifies I = 1.25 for essential facilities, not 1.5.","Thinking accelerographs are optional or decorative. They are code-mandated equipment in tall buildings and serve critical roles in validation and future design updates."]} />

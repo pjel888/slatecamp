@@ -5,13 +5,11 @@
 Identify and explain how color, texture, light, and shadow function as sensory design elements that fundamentally affect spatial perception, emotional response, and the experience of architectural form.
 ## Core Concept
 
+<ArticleMedia id="media-lea-theo-002-09-core-concept" a type="image" caption="Color Theory Wheel and Architectural Color Schemes" description="Full color wheel showing primary (red, yellow, blue), secondary (orange, green, violet), and tertiary colors. Color harmony schemes overlaid: complementary (opposite colors), analogous (adjacent colors), triadic (equally spaced), and monochromatic (single hue variations). Below the wheel: warm colors (red, orange, yellow — advance, create intimacy) vs cool colors (blue, green, violet — recede, create distance). Architectural examples show how color schemes affect spatial perception and emotional response." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 According to Francis D.K. Ching, sensory elements—color, texture, light, and shadow—are primary tools in architectural design, not secondary decoration. They affect how spaces feel, how forms are perceived, and how functional requirements (visibility, orientation, thermal comfort) are met. An understanding of these elements requires moving beyond visual appearance to grasp their functional, psychological, and emotional roles in shaping architectural experience.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Sensory elements are not decoration**—they are primary design tools serving functional (wayfinding, visibility), psychological (mood, perception), and performance (thermal, acoustic) roles simultaneously.
-[/SLATECAMP_UI_BLOCK]
 
 ### Color as a Design Element
 
@@ -31,10 +29,6 @@ Extracted summary:
 - **Light reflection**: Light-colored surfaces reflect light and reduce artificial lighting needs; dark surfaces absorb heat
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Color operates at three psychological levels: **hue** (identity and association), **value** (perceived scale and proportion), **saturation** (visual intensity and weight). All three must align for coherent color design.
-[/SLATECAMP_UI_BLOCK]
 
 Contemporary practice increasingly recognizes that color is not decoration but a primary design tool affecting how people perceive, navigate, and feel in buildings.
 
@@ -85,87 +79,35 @@ Contemporary practice increasingly recognizes that color is not decoration but a
 **Shadow in time:** Shadows change throughout the day and year. A building's appearance is transformed by morning, noon, and evening light; further transformed by seasonal sun angles. The architect might design for specific light conditions (a sacred space designed for solstice-aligned light) or for dynamic, time-bound experience (interiors that feel different at different hours).
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The critical insight: **shadow is NOT absence of light—it is a design element revealing form**. Architects must deliberately design for shadow: overhangs create shadow lines, recessed windows deepen shadow depth, sculptural forms cast dramatic shadows. Failing to design for shadow leaves shadow as accident, not art.
-[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{["**Element**", "**Core Function**", "**Primary Design Role**", "**LEA Test Indicator**"]}", rows="{[['["**Color Hue**", "Visual identity and psychological association", "Warm (advancing, energetic) vs. cool (receding, calm)", "\\\\"Red invites; blue calms\\\\""]', '["**Color Value**", "Perceived scale and spatial proportion", "Light reads spacious; dark reads intimate", "\\\\"Dark ceiling reads lower\\\\""]', '["**Color Saturation**", "Visual intensity and emotional impact", "Saturated demands attention; desaturated recedes", "\\\\"Vivid color vs. neutral pleatte\\\\""]', '["**Color in Wayfinding**", "Functional organization and navigation", "Color codes distinguish zones", "\\\\"Color identifies functional areas\\\\""]', '["**Texture Fine**", "Human-scale detail and visual interest", "Invites close viewing; supports color", "\\\\"Fine texture modulates large surfaces\\\\""]', '["**Texture Rough**", "Material expression and permanence", "Expresses substance and craft", "\\\\"Rough texture communicates durability\\\\""]', '["**Natural Light**", "Time-bound spatial experience and visibility", "Variable throughout day and season", "\\\\"South-facing bright; north-facing diffuse\\\\""]', '["**Artificial Light**", "Control and functional performance", "Color temperature affects mood; intensity affects hierarchy", "\\\\"Warm light is intimate\\\\""]', '["**Shadow Reveal**", "Form articulation and three-dimensional perception", "Grazing light exaggerates form and texture", "\\\\"Shadow reveals cylindrical form\\\\""]', '["**Shadow Organize**", "Spatial definition and visual rhythm", "Cast shadows organize space; mullion shadows create pattern", "\\\\"Shadow rhythm defines movement\\\\""]']]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 1: Color Psychology** *Question stem:* "Cool colors in an interior space tend to make the space feel..." *Correct answer:* "Larger, more open, and calm." *Trap:* Confusing warm and cool effects—warm advances and encloses; cool recedes and opens.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 2: Value and Perception** *Question stem:* "To make a low ceiling read as higher and more spacious, paint it..." *Correct answer:* "Light (high value)." *Trap:* Thinking dark ceilings make rooms feel larger—dark actually lowers perceived ceiling height.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 3: Texture and Material Honesty** *Question stem:* "A rough-textured stone surface communicates which material properties?" *Correct answer:* "Permanence, durability, and craft." *Trap:* Thinking texture is purely aesthetic—texture expresses material properties and construction method.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 4: Light and Form Revelation** *Question stem:* "Grazing light (nearly parallel to a surface) creates which effect on form?" *Correct answer:* "Exaggerated shadow articulating three-dimensional form and texture." *Trap:* Thinking diffuse light is always better—directional light is more form-revealing; diffuse light is more uniform and spatial.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 5: Natural Light Control** *Question stem:* "High windows in a south-facing wall admit light while maintaining..." *Correct answer:* "Privacy and thermal control (reduces heat gain compared to low windows)." *Trap:* Thinking only the direction matters—window height affects both light control and privacy.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 6: Shadow as Organizing Element** *Question stem:* "The shadow cast by a grid of window mullions on an interior wall serves which design function?" *Correct answer:* "Creating visual rhythm and subdividing wall surface into human-scaled pattern." *Trap:* Thinking shadows are merely incidental—shadow patterns are intentional design tools.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 7: Circadian Rhythm in Lighting** *Question stem:* "Contemporary lighting design that supports human circadian rhythms employs which color temperature strategy?" *Correct answer:* "Cool-toned (higher Kelvin) light during daytime hours; warm-toned (lower Kelvin) light in evening." *Trap:* Thinking bright light is always better—circadian health requires color temperature variation throughout the day.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: Color, texture, light, and shadow are sensory design elements that fundamentally affect spatial perception, emotional response, and functional performance. The LEA tests your understanding of how thes
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Treating Color as Purely Aesthetic", correction="Students often think color choice is decorative taste. In fact, color functions: it wayfinding, creates psychological effects, influences thermal perception, and affects how bright or dark a space reads. A color scheme is a design tool, not decoration.", context="The LEA tests whether you understand color's functional roles."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Confusing Light and Brightness", correction="Light quality (directional, diffuse, color temperature) matters as much as intensity. A brightly lit, diffuse space feels different from a dimly lit, dramatically directional space. A 2700K warm light reads differently from a 5000K cool light at the same brightness level.", context="The LEA tests nuance here—it's not just \", is=true, it=true, bright=true, but=true, what=true, quality=true, of=true, light=true, and=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{["Overlooking Shadow as a Design Tool. Students often see shadow as an absence or problem. Ching treats shadow as a primary design element revealing form and organizing space. When analyzing an elevation or spatial plan, observe the shadows: what do they reveal? How do they create rhythm? Are they intended dramatic features or incidental? This analytical skill matters on the LEA.", "Not Recognizing Functional Texture Requirements. A polished floor looks elegant but is slippery and requires constant maintenance. A rough-textured floor provides grip and hides dirt but reads less formally. Texture choice involves functional considerations (acoustic absorption, safety, maintenance) as well as aesthetic ones. The LEA might ask how texture supports function: \\"Why would a hospital choose smooth, cleanable surfaces over warm-textured wood?\\"", "Forgetting Temporal Dimension. Light, shadow, and color all change over time. A space designed for noon sun feels different at dawn. The same building reads differently across seasons. Modern design increasingly embraces this temporal dimension—designing for how light moves, how views change, how seasons transform. The LEA tests whether you think dynamically about light and time, not just static appearance.", "Confusing Texture at Different scales. Texture operates at multiple scales. A brick wall is course textured at human scale; at architectural scale it reads smooth (a unified plane of red). Concrete can be fine-textured (board-formed) or coarse (exposed aggregate) depending on finish. Don't assume texture is only tactile detail—large-scale texture also operates visually and functionally.", "Overlooking Material Aging. Natural materials age visibly and beautifully (weathered wood, patinated copper, moss-covered stone). Some architects design specifically for aging and patina. Other materials (shiny metals, glass, smooth finishes) show wear obviously and require constant maintenance. The LEA tests whether you understand that finish choice is a long-term design decision affecting how a building ages."]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

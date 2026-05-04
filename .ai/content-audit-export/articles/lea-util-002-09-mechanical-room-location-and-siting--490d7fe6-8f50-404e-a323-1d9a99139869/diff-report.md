@@ -1,32 +1,33 @@
 # Content Diff Report: lea-util-002-09-mechanical-room-location-and-siting
 
-Generated: 2026-05-03T13:44:29.425Z
+Generated: 2026-05-04T00:06:03.161Z
 Article ID: 490d7fe6-8f50-404e-a323-1d9a99139869
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:dd2b423cb740b300f91b83110c0d0f444b2c59b6a86c04fae39db225d316896d`
-- Normalized: `sha256:4b5a245824ce287a9c36cc0c9788d8166699c9759d95f04bbbff00b6109bed00`
-- Candidate: `sha256:c089ae23d4fbe921fcefce226bec0593c71f84f2896ecb5717a7b405633a9fae`
+- Original: `sha256:c089ae23d4fbe921fcefce226bec0593c71f84f2896ecb5717a7b405633a9fae`
+- Normalized: `sha256:4e7087c76c9c762b7ab3b2f21e0ab81a9669676d89f1aafe6448fa1b33ca34e7`
+- Candidate: `sha256:4e7087c76c9c762b7ab3b2f21e0ab81a9669676d89f1aafe6448fa1b33ca34e7`
 
 ## Line summary
 
-- Changed lines: 123
-- Inserted lines: 19
-- Deleted lines: 0
+- Changed lines: 147
+- Inserted lines: 0
+- Deleted lines: 1
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

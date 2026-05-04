@@ -1,38 +1,47 @@
 {
   "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
   "slug": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character",
-  "generated_at": "2026-05-03T13:45:26.173Z",
-  "old_hash": "sha256:fe19a8c1aaf77bad7e4cd3a73e62ca2d582f61e9101b6b55135b43152ba428fb",
-  "new_hash": "sha256:a1d4cf47818efc2fc69021b83ce5366f7590e1a959122162412a13cf5dd619b1",
-  "original_hash": "sha256:fe19a8c1aaf77bad7e4cd3a73e62ca2d582f61e9101b6b55135b43152ba428fb",
-  "normalized_hash": "sha256:a6a43e8278befcc705eee0067682b974054f4bcd017881250c40dfcfe06baa8d",
-  "candidate_hash": "sha256:a1d4cf47818efc2fc69021b83ce5366f7590e1a959122162412a13cf5dd619b1",
+  "generated_at": "2026-05-04T00:07:09.117Z",
+  "old_hash": "sha256:a1d4cf47818efc2fc69021b83ce5366f7590e1a959122162412a13cf5dd619b1",
+  "new_hash": "sha256:06f29d4b94d4321ed222f253c6b2d98e102dc3d7753a282462b2288ecefede18",
+  "original_hash": "sha256:a1d4cf47818efc2fc69021b83ce5366f7590e1a959122162412a13cf5dd619b1",
+  "normalized_hash": "sha256:06f29d4b94d4321ed222f253c6b2d98e102dc3d7753a282462b2288ecefede18",
+  "candidate_hash": "sha256:06f29d4b94d4321ed222f253c6b2d98e102dc3d7753a282462b2288ecefede18",
   "changed": true,
-  "changed_line_count": 64,
-  "inserted_line_count": 49,
+  "changed_line_count": 62,
+  "inserted_line_count": 9,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 64,
-    "inserted": 49,
+    "changed": 62,
+    "inserted": 9,
     "deleted": 0,
-    "original_line_count": 20,
-    "candidate_line_count": 69
+    "original_line_count": 69,
+    "candidate_line_count": 78
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0004",
+      "ui_0005",
+      "ui_0008",
+      "ui_0007",
+      "ui_0006"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
 }

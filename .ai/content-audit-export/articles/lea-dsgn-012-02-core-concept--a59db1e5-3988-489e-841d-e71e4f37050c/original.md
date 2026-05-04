@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Determine buildable area from site constraints and setbacks, organize site access and circulation, coordinate utility routing and easements, apply zoning and subdivision regulations, and produce site development plans showing land use allocation.
+
 Site development planning is the systematic process of organizing land use, access, and infrastructure to create a functional, safe, and efficient site. Understanding how to determine buildable envelopes, manage site access, and coordinate utilities is essential to laying the foundation for any architectural project. 
+
 
 ## Core Concept
 
@@ -65,6 +69,13 @@ A project is located in an **urban** district bordering a river. What is the req
  **Memory Aid:** Remember **3-20-40** for rivers. For roads, it's
  **12-10-8-3**. PSO is your footprint limit; FAR is your total volume limit.
 </Tip>
+
+
+**Exam Tip:** Buildable area = site area − (setbacks + easements + flood hazard areas + steep slopes + water body buffers). A 2,000 sqm lot with 3m setbacks on all sides yields ~1,200 sqm buildable area.
+
+## Cross-References
+
+See **LEA-DSGN-012-01** (Site Analysis) for input conditions, **LEA-DSGN-012-03** (Grading and Drainage) for site grading, and **LEA-PLAN-004-07** (Zoning Analysis) for regulatory compliance in site plans.
 
 ## Common Mistakes
 

@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Identify the five beam types by support configuration
+- Distinguish simply supported, cantilever, continuous, overhanging, and propped cantilever beams
+- Explain where positive and negative moments occur in each beam type
+- Match beam types to real Philippine construction applications
 
 This topic covers beam types and their classification by support conditions. The LEA tests whether you can identify and distinguish different beam configurations. You will NOT be tested on shear and moment diagram construction or analysis; focus on beam type definitions and support characteristics.
 
@@ -69,6 +76,13 @@ In Philippine building design, simply supported beams are standard in floor syst
 - **2+ supports + overhang = Overhanging**
 - **Cantilever + prop = Propped Cantilever**</Tip>
 
+
+## Related Articles
+
+See also: **Supports** (lea-strc-001-03) for the foundations of beam classification, **Static Determinacy** (lea-strc-001-06) for determinate vs. indeterminate beam analysis, and **Load Distribution** (lea-strc-001-05) for how loads travel through beams.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing simply supported with cantilever: Simply supported has no moment reactions at ends (hinges/rollers); cantilever has a large moment reaction at the fixed end. The fixed-end condition is the key distinction.","Treating continuous and simple beams identically: A continuous beam's interior spans develop negative moments over intermediate supports; a simply supported beam develops only positive moments. Ignoring this causes under-design at critical locations.","Underestimating cantilever deflection: Cantilever deflection is often much larger than a simply supported span of the same length due to the fixed-end condition. Never ignore cantilever stiffness checks.","Misidentifying overhang behavior: An overhanging beam is NOT a simple beam everywhere; the overhang acts as a cantilever and can create uplift (negative reactions) at the opposite support if the cantilever load is large enough."]} />

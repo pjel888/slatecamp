@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Minimum slab and beam thickness are code minimums to control deflection without explicit calculation. The LEA tests your mastery of four support conditions and the distinction between solid slabs, ribbed/joist sections, and beams.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-007-03-core-concept" a type="image" caption="Deflection Limits — NSCP Span-to-Depth Ratios" description="Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Deflection limits are based on span-to-depth ratios ($L/h$). The NSCP provides minimum thickness tables (Table 9.5.1) to avoid computing deflections when members meet these minimums.
 
@@ -67,18 +68,12 @@ Per **NSCP 2015 Section 409.9.2.2**, the concrete slab over ribs must satisfy:
 3. **The Top Slab Rule:** "A joist slab has clear rib spacing of $600\text{ mm}$. Minimum top slab thickness?"
  - Answer: $600 / 12 = 50\text{ mm}$. (Matches NSCP minimum).
 
-
 ## Related Articles
 
 See also: **Concrete Materials** (lea-strc-006-01) for the modulus that affects deflection, **Flexural Theory** (lea-strc-006-03) for how bending relates to deflection, and **Beam Types** (lea-strc-001-04) for how support conditions affect deflection patterns.
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 
-<WikiMistakeList mistakes={[ 
- "Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.", 
- "Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.", 
- "Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.", 
- "Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code." 
-]} />
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]

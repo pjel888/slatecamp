@@ -1,18 +1,26 @@
 {
   "article_id": "b194f38e-8129-4f87-b161-f9f4f7fc43b1",
   "slug": "mastery-planning-housing-urban-design",
-  "generated_at": "2026-05-03T13:44:10.949Z",
-  "original_hash": "sha256:df2ed82a182a1e82b7c2921bbf61f12fa064606f50e5165dfcf4910e6608405a",
-  "normalized_hash": "sha256:4f998e6548a8ea05a9b1bd23d328e29fb90f0460a82dab1d1b92bb7201861548",
-  "candidate_hash": "sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c",
+  "generated_at": "2026-05-04T00:05:38.171Z",
+  "original_hash": "sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c",
+  "normalized_hash": "sha256:3450200db0d5ab065b769a1714f1fb38b0f76b1038e0598848bc1b22774c84d9",
+  "candidate_hash": "sha256:3450200db0d5ab065b769a1714f1fb38b0f76b1038e0598848bc1b22774c84d9",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

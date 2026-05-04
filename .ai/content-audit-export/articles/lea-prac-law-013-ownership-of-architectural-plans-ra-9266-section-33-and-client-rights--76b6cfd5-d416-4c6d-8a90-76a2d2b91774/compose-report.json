@@ -1,18 +1,26 @@
 {
   "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
   "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
-  "generated_at": "2026-05-03T13:44:10.932Z",
-  "original_hash": "sha256:721905917b033b64adceaf23b63cb18e7398ea2268b9264d155af6857ba0f723",
-  "normalized_hash": "sha256:f5d0ed8b9adda8bbb38abd842e0be1ea5628ae205c81cae1208a67b407a32173",
-  "candidate_hash": "sha256:74ad572641caf8c846b84f7c1b0153ba8cfa1c6196b1adf84161bedc6bc74c39",
+  "generated_at": "2026-05-04T00:05:38.150Z",
+  "original_hash": "sha256:74ad572641caf8c846b84f7c1b0153ba8cfa1c6196b1adf84161bedc6bc74c39",
+  "normalized_hash": "sha256:4807e8bd38fef685c7f4adf4b68cec13436604fab9f977ec9c282a9ee798f377",
+  "candidate_hash": "sha256:4807e8bd38fef685c7f4adf4b68cec13436604fab9f977ec9c282a9ee798f377",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

@@ -1,18 +1,26 @@
 {
   "article_id": "b58c3d7f-d8c1-434e-9c12-dc58b3645440",
   "slug": "overview-history-of-architecture",
-  "generated_at": "2026-05-03T13:44:10.596Z",
-  "original_hash": "sha256:3bab16d5ae0afff5115c89ee4260160467cf772049d384e1a8e429ebf73cf6f3",
-  "normalized_hash": "sha256:6a5ef34b9234d3c04a20abbb49beca63eaa21183ad3a400ebd62dbfeeba3d4b1",
-  "candidate_hash": "sha256:75234eecd13f722fc2cf62871ac10f65e12807f34896033909bdc9b9a059e44f",
+  "generated_at": "2026-05-04T00:05:37.737Z",
+  "original_hash": "sha256:75234eecd13f722fc2cf62871ac10f65e12807f34896033909bdc9b9a059e44f",
+  "normalized_hash": "sha256:88d338ef04f680f341f9424404fe8c18ef361aba60394b6970c81c4ebee5bd56",
+  "candidate_hash": "sha256:88d338ef04f680f341f9424404fe8c18ef361aba60394b6970c81c4ebee5bd56",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

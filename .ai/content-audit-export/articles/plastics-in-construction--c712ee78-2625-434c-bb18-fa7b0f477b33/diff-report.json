@@ -1,38 +1,44 @@
 {
   "article_id": "c712ee78-2625-434c-bb18-fa7b0f477b33",
   "slug": "plastics-in-construction",
-  "generated_at": "2026-05-03T13:44:21.820Z",
-  "old_hash": "sha256:3ba48790357468e34a0fe5a31c95161e8bcffc01823cff5a84260cb37c167258",
-  "new_hash": "sha256:d57a8b35d363bb19e4354ee351b8468d238c5b94a918723b320a91fdc9151fe0",
-  "original_hash": "sha256:3ba48790357468e34a0fe5a31c95161e8bcffc01823cff5a84260cb37c167258",
-  "normalized_hash": "sha256:291f76e25b7476b56167a8100650f58ba96c21ac42217514bf07b512fb9ae9c6",
-  "candidate_hash": "sha256:d57a8b35d363bb19e4354ee351b8468d238c5b94a918723b320a91fdc9151fe0",
+  "generated_at": "2026-05-04T00:05:55.045Z",
+  "old_hash": "sha256:b38c29be7f675aba8d76b27eba64c5d3bab5fdb5a9bc93589f728081b8d091c4",
+  "new_hash": "sha256:5f513f872af0f7a84f71c58f028bab245b85e9ad6e2fb9bcb0ed5a6d5ffccf9e",
+  "original_hash": "sha256:b38c29be7f675aba8d76b27eba64c5d3bab5fdb5a9bc93589f728081b8d091c4",
+  "normalized_hash": "sha256:5f513f872af0f7a84f71c58f028bab245b85e9ad6e2fb9bcb0ed5a6d5ffccf9e",
+  "candidate_hash": "sha256:5f513f872af0f7a84f71c58f028bab245b85e9ad6e2fb9bcb0ed5a6d5ffccf9e",
   "changed": true,
-  "changed_line_count": 465,
-  "inserted_line_count": 23,
+  "changed_line_count": 391,
+  "inserted_line_count": 30,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 1,
-  "ui_blocks_candidate_count": 1,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 1,
   "ui_blocks_count": 1,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 1,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 465,
-    "inserted": 23,
+    "changed": 391,
+    "inserted": 30,
     "deleted": 0,
     "original_line_count": 442,
-    "candidate_line_count": 465
+    "candidate_line_count": 472
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001"
+    ],
+    "changed_count": 1
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 1 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

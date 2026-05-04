@@ -7,9 +7,11 @@ Distinguish colonial-era African architecture (European imposition, imported sty
 
 Colonial architecture in Africa (1880s–1960s) did not adapt to African climate or culture—it exported European templates to assert political dominance. Colonial administrations built European villas with wide verandahs (conceding to heat but maintaining "civilized" aesthetics), imposed grid-based street plans that disrupted traditional settlements, and created racial segregation through zoning. After independence, African architects faced a choice: embrace modernism (which promised a fresh, non-colonial start), synthesize African and modern traditions, or revive pre-colonial forms. Contemporary African architecture (1960s onward) shows all three strategies.
 
-<Tip>
-**Colonial = European imposition; Postcolonial = African choice.** Three strategic directions: pure modernism (rejecting colonialism through universal progress), synthesis (merging modernism with African principles), or revival (returning to pre-colonial forms). Know that each strategy represents a deliberate postcolonial stance.
-</Tip>
+
+<ArticleMedia id="media-hist-011-02-core-concept" layout="single" type="image" status="placeholder" alt="Comparison view showing the contrast between colonial-era imported styles (neoclassical government buildings, grid plan settler quarters) and postcolonial architecture (modernist national monuments, critical regionalist cultural centers in African cities)." caption="African Colonial vs. Postcolonial — Urban Fabric" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 **Colonial Imposition and Urban Planning**
 
@@ -19,17 +21,13 @@ Colonial powers reorganized African cities to serve extraction and administratio
 
 After independence, many African nations adopted modernism—glass boxes, open floor plans, concrete frame construction—as a symbol of progress untainted by colonialism. Modernism seemed universal, not European. However, early modernist buildings in Africa often failed environmentally: glass facades absorbed equatorial heat, flat roofs leaked in monsoon rains, and air conditioning (when available) consumed energy. A parallel movement, **Negritude** in literature and philosophy, prompted architects to revisit African spatial traditions.
 
-<Note>
-Early postcolonial modernism failed not because modernism itself was bad, but because it was applied climate-blindly. Glass boxes work in temperate climates; they overheat in Africa. Flat roofs shed snow well but leak in monsoon rains. The lesson: modernism without climate adaptation is a colonial imposition using different materials.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
 
 **Contemporary Synthesis: Climate-Responsive Modernism**
 
 By the 1970s–1980s, leading African architects—such as **Diébédo Francis Kéré** (Burkina Faso)—merged modernist reduction with African climatic wisdom and material logic. **Kéré's work** emphasizes locally sourced materials (rammed earth, mud-brick, timber), deep overhangs and courtyards for thermal control, and community participation in design. His **Gando Primary School** (2001, Gando, Burkina Faso) uses compressed earth blocks, timber lattice screens to filter sunlight, and a central courtyard—modern in form but rooted in Sahelian traditions. This approach avoids romanticizing the past while refusing colonial imposition.
 
-<Warn>
-Do not conflate Kéré's contemporary synthesis with "traditional architecture revival." His work is resolutely modern—clean lines, simple geometric forms, efficient structure. What makes it African is that every decision (material, orientation, ventilation) responds to Sahelian climate and uses local resources. This is Critical Regionalism applied to Africa, not nostalgia or pastiche.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 
 **Case Studies in National Identity**
 
@@ -43,29 +41,30 @@ Do not conflate Kéré's contemporary synthesis with "traditional architecture r
 
 Contemporary African architecture increasingly prioritizes sustainable practices reflecting pre-industrial wisdom: passive cooling through courtyards and night ventilation, rainwater harvesting from traditional roof forms, and locally sourced materials reducing embodied carbon. This is not nostalgia—it is pragmatic adaptation to resource constraints and tropical/subtropical climate. Many contemporary African architects reject the "African vernacular revival" stereotype while incorporating environmental lessons from traditional building.
 
+
+<ArticleMedia id="media-hist-011-02-core-concept" layout="single" type="image" status="placeholder" alt="View of the National Assembly complex (Abuja, Nigeria), illustrating how postcolonial African architects negotiate identity through built form, combining modernist clarity with regional cultural references." caption="National Assembly of Nigeria — Postcolonial Modernism" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["**Period**", "**Characteristic**", "**Example**", "**Location**", "**Architect**", "**Year**"]} rows={[['["Colonial", "European grid plans, segregation, climate-inappropriate design", "Lagos grid plan", "Lagos, Nigeria", "British colonial administration", "1860s–1920s"]', '["Colonial", "Beaux-Arts monumentalism, shipping-dependent materials", "Government buildings", "Dakar, Senegal", "French colonial", "1890s–1950s"]', '["Early Postcolonial", "Glass-and-steel modernism; symbol of progress", "Early office blocks", "Various African cities", "Various", "1960s–1970s"]', '["Contemporary Synthesis", "Climate-responsive modernism, local materials", "**Gando Primary School**", "Gando, Burkina Faso", "Diébédo Francis Kéré", "2001"]', '["Contemporary", "Pan-African monumentalism", "**Monument of African Renaissance**", "Dakar, Senegal", "Pierre Goudiaby", "2008–2010"]', '["Contemporary", "Integration of local architectural tradition", "**Hilton Addis Ababa**", "Addis Ababa, Ethiopia", "Hilton International", "1969"]', '["Contemporary", "Waterfront adaptive design", "**Makoko Floating School**", "Lagos, Nigeria", "Kunlé Adeyemi", "2013"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Colonial Imposition vs. Postcolonial Resistance**
-Exams ask you to identify colonial architectural characteristics and explain postcolonial architectural responses. Example: "Colonial grid plans in African cities served what administrative purpose, and how did postcolonial architects challenge this model?" (Answer: hierarchical control and racial segregation; contemporary architects designed for community-centered, climate-responsive spaces). You must link form to political intent.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 2: Climate and Material Adaptation**
-Questions test whether contemporary designs respond to African conditions. Example: "How does **Kéré's** use of compressed earth blocks and courtyard design address Sahelian climate?" (Answer: thermal mass, passive cooling, local material availability, reduced shipping costs). Contrast climate-responsive strategies with glass-and-steel modernism.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 
-<ExamTip>**Pattern 3: Identity and Symbolism**
-Exams ask what architectural symbols communicate about national identity. Example: "The **Monument of the African Renaissance** employs what sculptural form to express pan-African identity?" (Answer: monumental family figure). You must connect architectural gesture to cultural meaning.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 
-<Callout>The LEA tests your understanding of how colonialism imposed European architectural styles on African cities, and how post-independence architects reclaimed and reinterpreted African identity through modern design. You must recognize colonial-era buildings and identify postcolonial strategies for resistance and renewal.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Assuming all postcolonial African architecture is Modernist" correction="Students often categorize all post-1960s African architecture as glass-box modernism. In reality, postcolonial architecture spans modernist, revivalist, and synthesist approaches." context="Contemporary leaders like **Kéré** intentionally *reject* glass-and-steel internationalism for climate-responsive material practice." />
+[SLATECAMP_UI_BLOCK:ui_0009 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Romanticizing \"traditional\" African design without acknowledging change" correction="Referring to \"timeless African vernacular\" erases the dynamism, regional variation, and historical evolution of African architecture." context="Contemporary architects do not copy \"tradition\"—they extract principles (courtyards, thermal mass, local materials) and apply them to modern programs." />
+[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Conflating colonial architecture with African architecture. European colonial buildings in Africa are colonial products, not African architecture. They express European aesthetic codes and were often designed by European architects shipped to Africa. Distinguish colonial imposition from African-authored design.", "Overlooking environmental failure in early postcolonial modernism. Students credit all modernism as \"progressive.\" Early glass-facade buildings in Lagos, Dakar, and Abidjan created heat gain and demanded energy-intensive cooling—failures that prompted the shift toward climate-responsive synthesis. Modernism itself was not the problem; climate-blind application was."]} />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeList" status="preserved"]
 
 ## Key Terms
 

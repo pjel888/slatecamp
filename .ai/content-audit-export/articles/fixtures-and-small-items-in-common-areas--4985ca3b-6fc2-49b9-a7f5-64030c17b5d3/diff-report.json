@@ -1,38 +1,45 @@
 {
   "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
   "slug": "fixtures-and-small-items-in-common-areas",
-  "generated_at": "2026-05-03T13:44:33.110Z",
-  "old_hash": "sha256:c4771c1af94a7603872d8806c54b44b60adadf8af862b22da97a81a285083676",
-  "new_hash": "sha256:e811975a1b39d70cb9a6ebb6a0ef62c17bdfa0b570592ba32ec08668d990e0dc",
-  "original_hash": "sha256:c4771c1af94a7603872d8806c54b44b60adadf8af862b22da97a81a285083676",
-  "normalized_hash": "sha256:b45c7f47b830098e30e5c2f5656fc8970c051033e7a20ff1018de652bff8b257",
-  "candidate_hash": "sha256:e811975a1b39d70cb9a6ebb6a0ef62c17bdfa0b570592ba32ec08668d990e0dc",
+  "generated_at": "2026-05-04T00:06:07.426Z",
+  "old_hash": "sha256:e811975a1b39d70cb9a6ebb6a0ef62c17bdfa0b570592ba32ec08668d990e0dc",
+  "new_hash": "sha256:f4fc022bb3625ebe08924a50c78d2a30be698b01c6ce9f94114794e35a9a48ef",
+  "original_hash": "sha256:e811975a1b39d70cb9a6ebb6a0ef62c17bdfa0b570592ba32ec08668d990e0dc",
+  "normalized_hash": "sha256:f4fc022bb3625ebe08924a50c78d2a30be698b01c6ce9f94114794e35a9a48ef",
+  "candidate_hash": "sha256:f4fc022bb3625ebe08924a50c78d2a30be698b01c6ce9f94114794e35a9a48ef",
   "changed": true,
-  "changed_line_count": 379,
-  "inserted_line_count": 25,
-  "deleted_line_count": 0,
+  "changed_line_count": 329,
+  "inserted_line_count": 0,
+  "deleted_line_count": 14,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 379,
-    "inserted": 25,
-    "deleted": 0,
-    "original_line_count": 356,
-    "candidate_line_count": 381
+    "changed": 329,
+    "inserted": 0,
+    "deleted": 14,
+    "original_line_count": 381,
+    "candidate_line_count": 367
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Art Nouveau and Art Deco represent two distinct design movements of the early 20th century, each with specific formal characteristics, key architects, and buildings. The board exam tests whether you can identify stylistic elements, distinguish between the two movements, and associate buildings with their designers.</Callout>
+## Learning Goal
 
+Distinguish Art Nouveau (flowing organic curves, whiplash lines, natural motifs, Horta, Guimard, Gaudi) from Art Deco (geometric patterns, stepped forms, exotic materials, streamlined shapes) by visual vocabulary, period, and philosophical approach.
 ## Core Concept
 **Art Nouveau** (roughly 1890–1910) and **Art Deco** (roughly 1920–1940) are often conflated because both emerged in the early 20th century, but they are fundamentally opposed in their aesthetics and philosophical roots.
 
@@ -41,6 +42,8 @@ You may see: "Art Nouveau differs from Art Deco in that it emphasizes [A] geomet
 <ExamTip>**Pattern 4: Stylistic Feature Recognition**
 You may see: "The 'whiplash line' is a defining feature of which movement?" Answer: Art Nouveau. Or: "Which style celebrates Jazz Age optimism and streamlined form?" Answer: Art Deco.</ExamTip>
 
+<Callout>Art Nouveau and Art Deco represent two distinct design movements of the early 20th century, each with specific formal characteristics, key architects, and buildings. The board exam tests whether you can identify stylistic elements, distinguish between the two movements, and associate buildings with their designers.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Treating Art Nouveau and Art Deco as variations of the same movement" correction="These are opposite poles. Art Nouveau is organic and chaotic; Art Deco is geometric and controlled. Don't conflate them." context="Know that Art Deco emerged *in reaction to* Art Nouveau's excesses." />
@@ -48,7 +51,6 @@ You may see: "The 'whiplash line' is a defining feature of which movement?" Answ
 <WikiMistakeCard mistake="Misidentifying the whiplash line as a feature of Art Deco" correction="The whiplash line—violent S-curves—belongs to Art Nouveau. Art Deco uses sharp angles and geometric chevrons." context="This is a common confusion." />
 
 <WikiMistakeList mistakes={["Overlooking Gaudí's synthesis of geometry and organicism. Students often categorize Gaudí as purely \"organic,\" but his genius was merging geometric systems (parabolic arches, tessellations) with natural inspiration. Sagrada Família is both geometric *and* organic. Know that Gaudí was working within (and transforming) the Art Nouveau idiom.", "Assuming Art Deco is purely decorative. Art Deco's geometric forms serve structural and functional purposes—setback massing addresses zoning laws and light, vertical emphasis responds to skyscraper logic. The style wasn't applied ornament; it was integrated design.", "Dating Art Deco to the 1910s. Art Deco matured in the 1920s and 1930s, not the 1910s. The **1925 Exposition Internationlea des Arts Décoratifs et Industriels Modernes** in Paris is conventionally marked as the movement's debut."]} />
-
 
 ## Key Terms
 
@@ -67,3 +69,10 @@ You may see: "The 'whiplash line' is a defining feature of which movement?" Answ
 **Decorative Arts**: All aspects of design applied to objects and spaces—furniture, metalwork, textiles, graphic design; both Art Nouveau and Art Deco were total design systems encompassing decorative arts.
 
 **Streamline/Streamlining**: An Art Deco emphasis on smooth, flowing lines that suggest speed and machine efficiency; applied to static buildings to convey modernity.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**, **lea-hist-008-03c-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

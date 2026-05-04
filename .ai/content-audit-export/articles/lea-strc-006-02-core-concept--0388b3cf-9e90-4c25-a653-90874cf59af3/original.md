@@ -1,6 +1,12 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
 
-## What You Need to Know for the LEA
+- Identify deformed reinforcing bars by grade (Gr 275, Gr 415) and diameter
+- State the standard yield strengths: Fy = 275 MPa and Fy = 415 MPa
+- Explain the purpose of deformation patterns on rebar
+- Distinguish between standard bar sizes and their metric equivalents
+
 Reinforcing steel is the tensile component of reinforced concrete. Deformed bars are the primary longitudinal reinforcement; stirrups are transverse elements in beams to resist shear; ties are transverse elements in columns to provide lateral confinement; and spirals are continuous helical reinforcement in circular columns. Prestressing tendons—either pre-tensioned or post-tensioned—provide compression and reduce cracking. Each type has a distinct structural role and spacing requirements.
 
 ## Core Concept
@@ -62,7 +68,7 @@ A 90-degree hook (typical for stirrup ends) has a 12_d_b (90°) or 16_d_b (135°
 
 ## Philippine Practice Context
 
-Philippine Standard PS 249:2008 (equivleant to ASTM A615) defines deformed reinforcing bars. Grade 60 (414 MPa) is widely available and preferred for most structural applications in the Philippines because of superior seismic performance and lower quantities of steel (cost-effective). Grade 40 (275 MPa) is less common and typically used only in non-seismic regions or when specified by design. Stirrup and tie spacing rules in the PNSC Chapter 7 are based on bar diameter and structural requirements; engineers must verify spacing during design and in shop drawings. Spiral columns are common in high-rise structures and seismic-resistant design because of their superior ductility; they are more cost-effective in large-diameter columns subject to high axial load.
+Philippine Standard PS 249:2008 (equivalent to ASTM A615) defines deformed reinforcing bars. Grade 60 (414 MPa) is widely available and preferred for most structural applications in the Philippines because of superior seismic performance and lower quantities of steel (cost-effective). Grade 40 (275 MPa) is less common and typically used only in non-seismic regions or when specified by design. Stirrup and tie spacing rules in the PNSC Chapter 7 are based on bar diameter and structural requirements; engineers must verify spacing during design and in shop drawings. Spiral columns are common in high-rise structures and seismic-resistant design because of their superior ductility; they are more cost-effective in large-diameter columns subject to high axial load.
 
 ## How It's Tested
 
@@ -70,10 +76,17 @@ Philippine Standard PS 249:2008 (equivleant to ASTM A615) defines deformed reinf
 
 2. **Bond Test (ASTM C234 / PS 249):** A deformed bar is embedded in a concrete prism. The bar is pulled axially to measure the bond stress needed to cause slip. High bond stress (good grip) ensures that stress is transferred to the concrete effectively; poor bond indicates inadequate rib geometry or concrete quality.
 
-3. **Visual Inspection and Dimension Verification:** Diameter, rib pattern, and surface condition are visually inspected. Bars must be free of sclea, rust, and damage. Deformation pattern must meet standard specifications.
+3. **Visual Inspection and Dimension Verification:** Diameter, rib pattern, and surface condition are visually inspected. Bars must be free of scale, rust, and damage. Deformation pattern must meet standard specifications.
 
 <Tip>Memorize the critical distinction: Stirrups are in _beams_ (shear resistance). Ties are in _columns_ (confinement and bar stability). Spirals are continuous helical reinforcement in circular columns—much stronger than tied columns. Grade 60 is standard in the Philippines; yield strain ≈ 0.0021.</Tip>
 
+
+## Related Articles
+
+See also: **Concrete Materials** (lea-strc-006-01) for the concrete matrix, **Concrete Cover** (lea-strc-007-01) for rebar protection requirements, and **Hooks** (lea-strc-007-02) for rebar anchorage details.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Confusing stirrups and ties. Stirrups are transverse reinforcement in beams perpendicular to longitudinal bars; they resist shear. Ties are transverse reinforcement in columns; they confine the core and prevent bar buckling. The terms and functions are distinct.", "Using Grade 60 yield strain = 0.003 (wrong). The correct value is 0.00207 ≈ 0.0021. This error propagates through strain-based design (balanced section calculations) and can lead to incorrect section classifications.", "Forgetting that steel modulus E = 200,000 MPa for all grades. Grade 40 and Grade 60 have the same E; only the yield stress (_F_y) differs. Confusion here affects curvature and deflection calculations.", "Placing stirrups in columns or ties in beams. This fundamental confusion reverses the structural system—stirrups in columns do not confine the core, and ties in beams do not resist shear effectively. Design intent is violated." ]} />

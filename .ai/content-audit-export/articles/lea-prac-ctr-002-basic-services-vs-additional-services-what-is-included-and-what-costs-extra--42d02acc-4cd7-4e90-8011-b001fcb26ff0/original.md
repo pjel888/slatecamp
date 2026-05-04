@@ -1,49 +1,75 @@
 ## Basic Services vs. Additional Services — What Is Included and What Costs Extra
 
+## Learning Goal
 
+After studying this article, you should be able to:
 
-Understanding the scope of basic architectural services and which services are billed separately is essential to managing project costs and preventing disputes over architect compensation.
+- Distinguish Basic Services (standard phases per SPP 202) from Additional Services.
+- List examples of Additional Services: feasibility studies, renderings, expert testimony.
+- Explain how compensation differs for Basic vs. Additional Services.
+- Apply the Basic/Additional distinction to scope-of-work scenarios.
 
 
 
 ### Basic Services Defined
 
-Basic Services encompass the core architectural activities necessary to deliver a complete design and oversee construction. These typically include schematic design through construction documents, submission of drawings for permits, assistance during bidding, and construction administration for the duration of the project. Programming and site analysis may be included as Basic Services or scoped as Additional Services depending on the owner-architect agreement. Basic Services are performed as part of the standard architectural fee and constitute the architect's primary obligation to the Owner.
+Basic Services encompass the core architectural activities necessary to deliver a complete design and oversee construction. The standard allocation per SPP Document 202 is: Schematic Design (SD) at 20%, Design Development (DD) at 20%, Construction Documents (CD) at 30%, Bidding at 5%, and Construction Administration (CA) at 25%.
 
-Schematic Design (SD) at 20% of total effort, Design Development (DD) at 20%, Construction Documents (CD) at 30%, Bidding at 5%, and Construction Administration (CA) at 25% establish the standard allocation across the project lifecycle. The architect's site visits during CA are limited to general observation and verification that the contractor's work conforms to the contract documents. Site visits do not constitute full-time inspection or supervision of construction methods; that responsibility remains with the contractor.
+<LawCallout code="uap" section="SPP Doc. 202 - Standard Owner-Architect Agreement">
+Basic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.
+</LawCallout>
 
-### Additional Services—Separately Billable Work
+### Additional Services — Separately Billable Work
 
-Additional Services extend beyond Basic Services and are billed separately at an hourly rate, as a fixed fee for a specific task, or at cost-plus basis. These services are not assumed to be part of the standard architectural agreement unless explicitly included in the scope.
-
-Building Information Modeling (BIM) beyond what is required for CD preparation; detailed cost estimating; value engineering studies; energy modeling and LEED compliance documentation; 3D renderings; construction phase inspection beyond standard CA; preparation of operations and maintenance manuals; and post-construction defect investigation constitute typical Additional Services. The agreement should specifically identify which, if any, of these services are included in Basic Services and which are billable separately. This clarity prevents disputes when the Owner requests work that falls outside the standard design and administration phases.
+Additional Services extend beyond Basic Services and are billed separately at an hourly rate, as a fixed fee for a specific task, or at cost-plus basis. Typical Additional Services include: BIM beyond what is required for CD preparation; detailed cost estimating; value engineering studies; energy modeling and LEED compliance documentation; 3D renderings; construction phase inspection beyond standard CA; preparation of operations and maintenance manuals; and post-construction defect investigation.
 
 ### Consultant Coordination and Reimbursement
 
-The architect coordinates with structural, mechanical, electrical, and other discipline consultants. The agreement must specify whether consultant fees are included in the architectural fee or reimbursed as direct expenses. Typical practice includes structural, mechanical, and electrical consultants as reimbursable costs, while the architect absorbs the cost of coordinating those consultants' work.
+The architect coordinates with structural, mechanical, electrical, and other discipline consultants. The agreement must specify whether consultant fees are included in the architectural fee or reimbursed as direct expenses. Reimbursable expenses — travel, printing, model making, permit applications, and communications — are either included as a lump sum or billed at actual cost plus a markup, typically 15 to 20%.
 
-Reimbursable expenses—travel, printing, model making, permit applications, and communications—are either included as a lump sum in the architectural fee or billed at actual cost plus a markup, typically 15 to 20%. Long-distance travel for multiple site visits, extensive permit coordination, or special coordination with third parties (code officials, neighbors, utility companies) should be identified in the agreement as either included in the fee or billed separately to avoid cost surprises.
-
-### Scope Expansion and Material Changes
-
-If the Owner adds scope to the project during design—such as additional wings, revised systems, or expanded program—the architect is entitled to additional compensation for the redesign effort. Without a change order documenting the scope addition and corresponding fee adjustment, disputes arise. A scope change might increase the architect's effort by 10% to 50%, depending on when in the design process it occurs and how comprehensively the change affects the documents.
-
-Similarly, if the Owner reduces scope or eliminates phases (e.g., by terminating early or reducing the project area), the architect's compensation is typically adjusted downward by the percentage corresponding to the eliminated work. The agreement's change order process applies equally to scope reductions and expansions.
+<ExamTip>
+  **LEA Watch — Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: "Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed."
+</ExamTip>
 
 ### Documentation of Additional Services
 
-When the Owner requests work that appears to be Additional Services, the architect should immediately notify the Owner in writing, identifying the service, estimating the cost or hourly commitment, and requesting authorization before proceeding. Many disputes arise because the architect provides unrequested services or assumes they are included in Basic Services when the Owner did not authorize them or expect them to be covered.
+When the Owner requests work that appears to be Additional Services, the architect should immediately notify the Owner in writing, identifying the service, estimating the cost, and requesting authorization before proceeding. Many disputes arise because the architect provides unrequested services or assumes they are included in Basic Services.
 
-A letter or email from the architect to the Owner should state clearly: "Based on your request for [specific service], I understand this to be an Additional Service outside the scope of the Owner-Architect agreement. The estimated cost is [amount], and I am requesting your written authorization before I proceed." This documentation protects both parties and creates a clear record of scope for subsequent invoicing.
+<Warn>
+  **Common Exam Trap:** The LEA test often asks: "Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?" The answer is NO — written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.
+</Warn>
 
-### Time and Material Basis for Additional Services
+## How It's Tested
 
-Additional Services billed on an hourly basis are typically supported by timesheets or project records showing the hours dedicated to the service. The agreement specifies the hourly rate, which is usually higher than the effective hourly rate implied by the lump-sum Basic Services fee, to account for the architect's overhead and profit. If the agreement does not specify hourly rates, disputes arise over what rate applies.
+**Pattern 1:** Scope classification — Is BIM included in Basic Services or Additional? (Answer: Additional, unless explicitly included)
 
-Fixed-fee Additional Services should be scoped in writing with a clear description of deliverables and completion conditions. Open-ended services billed on an hourly or time-and-materials basis without a cap create unlimited cost exposure for the Owner and potential revenue for the architect if the scope is not managed carefully. The agreement should specify which services are capped at a fixed fee and which are open-ended.
+**Pattern 2:** Documentation requirement — What must the architect do before performing Additional Services? (Answer: Notify client in writing and obtain authorization)
 
-### Phase Completion and Advance to Next Phase
+**Pattern 3:** Phase allocation — What percentage of the total fee is earned at CD phase? (Answer: 30%)
 
-The agreement typically specifies conditions for completion of each phase and advance to the next. Schematic Design is complete when the Owner approves the concept; Design Development is complete when the Owner confirms the systems and materials selections; Construction Documents are complete when submitted for permit. Absent clear phase definitions, the architect may be asked to continue revising or developing work indefinitely while the Owner withholds approval and payment.
+## Common Mistakes
 
-If the Owner does not approve a phase, the architect should not advance to the next phase at the agreed-upon fee. If approval is delayed beyond a specified period (e.g., 30 days of submission), the architect's timeline extends proportionally, and the CA phase may be delayed. The agreement should establish what triggers "completion" of each phase to prevent indefinite work and payment disputes.
+<WikiMistakeList
+  mistakes={[
+    "Assuming BIM, renderings, and energy modeling are always Basic Services — these are typically Additional Services unless explicitly included in the agreement",
+    "Proceeding with Additional Services based on verbal client requests — written authorization is required",
+    "Confusing reimbursable expenses with Additional Services — expenses are pass-through costs; Additional Services are billable work",
+    "Believing consultant fees are always included in the architect's fee — must be specified in the agreement; typical practice makes consultant fees reimbursable",
+    "Thinking phase completion is determined by calendar date — it is determined by Owner approval of deliverables",
+  ]}
+/>
+
+---
+
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)

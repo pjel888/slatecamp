@@ -1,10 +1,26 @@
 ## UAP Doc 301 Overview — Purpose, Structure, and the Three-Party Relationship
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Identify the purpose, scope, and structure of UAP Document 301 (General Conditions) and its role in the three-party relationship.
+- Explain the hierarchy of contract documents and how conflicts are resolved among the Agreement, General Conditions, Special Provisions, Drawings, and Specifications.
+- Describe the respective roles, rights, and obligations of the Owner, Contractor, and Architect under Doc 301.
+- Apply Doc 301 provisions to LEA scenarios involving contract interpretation, party responsibilities, and the architect's role as contract administrator.
 
 
 
 UAP Document 301 (General Conditions) defines the contractual relationship between Owner and Contractor during construction and establishes the Architect's role as contract administrator and impartial interpreter.
 
 
+<KeyValues items={[
+  {label:"Owner's core duty", value:"Payment and provision of site access"},
+  {label:"Contractor's core duty", value:"Execute work per Contract Documents"},
+  {label:"Architect's core duty", value:"Contract administrator + impartial interpreter"},
+  {label:"Three bonds required", value:"Performance, Payment, Guarantee"},
+  {label:"Retention typical rate", value:"5–10% of monthly billings"},
+  {label:"Change order threshold", value:"Typically 25% of contract price"}
+]} />
 
 ### Purpose and Scope of UAP Doc 301
 
@@ -20,9 +36,20 @@ The Contractor is the party whose proposal was accepted and to whom the contract
 
 The Architect is appointed by the Owner and represents the Owner during construction but assumes an impartial role in interpreting the Contract Documents. The Architect issues directives for defective work, certifies progress payments, and certifies Substantial and Final Completion. The Architect does not supervise construction methods or control the Contractor's workers, but verifies that completed work conforms to the Contract Documents. This dual role—Owner's representative yet impartial interpreter—is central to Doc 301's framework.
 
+<Note>
+**Architect's Dual Role:** Under Doc 301, the Architect wears two hats that the LEA frequently tests:
+1. **Owner's Representative** — advocates for the Owner's interests, certifies payments, issues directives for defective work
+2. **Impartial Interpreter** — must fairly interpret Contract Documents when disputes arise between Owner and Contractor
+The Architect does NOT supervise construction methods or control the Contractor's workers. The Architect only verifies that completed work conforms to the Contract Documents.
+</Note>
+
 ### Architect's Authority and Powers
 
 The Architect's authority derives from the Contract Documents and Doc 301. The Architect issues written directives requiring the Contractor to remove defective or non-conforming work and to correct deviations from specifications or drawings. The Architect may order changes to the work through written change orders, requiring the Contractor to proceed despite disagreement over the Architect's decision. However, the Architect cannot unilaterally order changes that increase the Contractor's cost beyond a specified threshold (typically 25% of the original contract price or individual pay item value); larger changes require the Owner's authorization.
+
+<Warn>
+**Change Order Threshold Trap:** The LEA frequently tests the 25% threshold rule. The Architect can order changes unilaterally ONLY if they stay below the threshold (typically 25% of the original contract price or individual pay item). If a Change Order would exceed this threshold, the Owner must authorize it. Work performed beyond the Contract Documents WITHOUT a formal Change Order is at the Contractor's risk — no extra compensation is due.
+</Warn>
 
 The Architect inspects the work and certifies when portions reach Substantial Completion—the state when the work is sufficiently complete for Owner occupancy or use, apart from minor deficiencies and incomplete tasks. This certification triggers the contractor's obligation to provide a Guarantee Bond and establishes the start of the one-year guarantee period. The Architect also certifies Final Completion when all work is done and all defects are remedied, which terminates the Contractor's occupancy of the site and releases the final payment, less retainage retained until the guarantee period expires.
 
@@ -30,11 +57,31 @@ The Architect inspects the work and certifies when portions reach Substantial Co
 
 Under Doc 301, the Contractor provides three bonds: Performance Bond (guaranteeing execution of work per contract), Payment Bond (guaranteeing payment to workers and suppliers), and Guarantee Bond (guaranteeing quality against defects for one year from Substantial Completion). The Guarantee Bond is the Contractor's primary warranty for defects in materials, workmanship, or design execution during the one-year period.
 
+<ComparisonTable>
+| Bond | Purpose | Duration | Protects Against |
+|------|---------|----------|------------------|
+| Performance Bond | Contractor fails to execute work per contract | Until Final Completion | Owner's financial loss from contractor default |
+| Payment Bond | Non-payment to workers/suppliers | Until Final Completion | Subcontractors and suppliers |
+| Guarantee Bond | Defects in materials/workmanship | 1 year from Substantial Completion | Owner's cost to remedy post-completion defects |
+</ComparisonTable>
+
 The one-year guarantee period begins when the Architect certifies Substantial Completion. During this period, the Contractor must correct all defects reported by the Owner or the Architect at no additional cost. Defects discovered after the one-year period are the Owner's responsibility unless caused by the Contractor's negligence or intentional misconduct. After the guarantee period, the Owner's recourse for defects is limited to claims against the Contractor's Guarantee Bond (if still active) or lawsuits under Article 1723 of the Civil Code, which allows claims for structural defects for 15 years from completion.
 
 ### Contract Interpretation and Dispute Resolution
 
-Doc 301 establishes rules for interpreting the Contract Documents when conflicts or ambiguities exist. Agreement and Contract Documents are read together; detailed drawings prevail over general drawings; written dimensions prevail over sclead dimensions. When the meaning cannot be resolved by these rules, the Owner issues an interpretation or directive to the Contractor. The Contractor must proceed with the work in accordance with the Owner's interpretation but may file a claim for adjustment of Contract Price or Completion Time if the interpretation imposes unexpected cost or delay.
+Doc 301 establishes rules for interpreting the Contract Documents when conflicts or ambiguities exist. Agreement and Contract Documents are read together; detailed drawings prevail over general drawings; written dimensions prevail over scaled dimensions. When the meaning cannot be resolved by these rules, the Owner issues an interpretation or directive to the Contractor. The Contractor must proceed with the work in accordance with the Owner's interpretation but may file a claim for adjustment of Contract Price or Completion Time if the interpretation imposes unexpected cost or delay.
+
+<ExamTip>
+**Hierarchy of Contract Documents (LEA Favorite):** When conflicts arise among contract documents, Doc 301 establishes this order of precedence:
+1. Agreement (as modified by Notice of Award)
+2. Instructions to Bidders and amendments
+3. Addenda
+4. Drawings
+5. Specifications
+6. General Conditions (Doc 301)
+7. Other documents
+The LEA frequently tests: "If a drawing dimension conflicts with a specification, which prevails?" Answer: Drawings rank ABOVE Specifications in the hierarchy.
+</ExamTip>
 
 Disputes between Owner and Contractor regarding the interpretation of the Contract Documents are initially resolved through written notice and negotiation. If not resolved within a specified period, disputes may proceed to arbitration or litigation as specified in the Agreement or Doc 301. The Architect's interpretation is binding on the Contractor unless the Contractor objects in writing within a specified period and advances a claim. This structure allows the project to proceed despite disputes, with financial resolution occurring after the contract is substantially complete.
 

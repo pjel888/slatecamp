@@ -1,10 +1,24 @@
 # Transport Nodes Escalators Walkways
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply dimensional, safety, and accessibility requirements for escalators, moving walkways, and transport nodes under BP 344 and PD 1096: calculate minimum escalator width and landing depth; identify the required clear width between escalator handrails (810 mm minimum); apply the 300 mm horizontal handrail extension requirement; and determine when a ramp is preferred over an escalator for accessible routes.
+---
 _Transport Node Accessibility Module – Escalators, Walkalators, Platforms_[web:1][web:2][web:10][web:49][web:51][web:53][web:54][web:56]
 
 ---
 
 ## 1. Why Transport Nodes Matter
+
+<LawCallout code="pd1096" section="Rule XII - Escalators">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
+
+<LawCallout code="pd1096" section="Rule XII - Means of Egress">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
 
 Escalators, moving walks, and transit platforms are where **movement and hazard** are highest; missteps can lead to falls, collisions, or being trapped by moving equipment.[web:51][web:53] BP 344 requires tactile, visual, and audio guidance so PWDs can navigate these safely and independently, especially in high‑traffic transport environments.[web:1][web:49][web:54][web:56]
 
@@ -98,8 +112,12 @@ ESCALATOR / LIFT → PLATFORM EDGE / BOARDING POINT
 - **Warning domes** (600‑mm deep tactile fields, 300‑mm before hazard):[web:49][web:51][web:54]
   - Before stairs and ramps (top and bottom).
   - Before escalators and passenger conveyors.
+
+<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
   - Along platform edges/boarding zones and near doors/gates with possible pinch or fall risk.
 - **Elevator priority:**
+
+<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
   - The tactile path shall **prioritize elevator access** for vertical circulation; it usually terminates at an **elevator landing with warning tactile 300 mm in front of the door** and Braille/tactile labels at controls and jambs, so visually impaired users can find and operate the lift safely.[web:1][web:2][web:49][web:54]
 
 ---
@@ -114,23 +132,32 @@ ESCALATOR / LIFT → PLATFORM EDGE / BOARDING POINT
 
 ---
 
-## Key Corrections / Improvements from Your Original File
+## Common Exam Traps
 
-1. **Voice guidance requirement softened to match sources:**
-   - Your original text said “voice guidance devices: required — announces movement and arrival.”
-   - The revised version keeps **audible announcements** as a strong accessibility feature but frames it as a requirement **emphasized by updated BP 344 reviewers and transport practice**, not as a singular, fixed device mandate in the base IRR text.[web:51][web:53][web:54]
+**TRAP 1 — Confusing escalator tactile with stair tactile:**
+Both use **600 mm depth**, **300 mm setback**, **full width** warning tactile. The difference: escalator tactile goes on the **terminating floor finish preceding the metal landing plate** (not on the moving step), while stair tactile goes at the **top, bottom, and intermediate landings**.
 
-2. **Escalator parameters confirmed and cited:**
-   - The values you listed (S800 tread ~804 mm, 30° angle, 3 horizontal steps, 30 m/min) are consistent with multiple BP‑344‑based reviewers, so they were **retained and explicitly cited** rather than modified.[web:51][web:53]
+**TRAP 2 — Omitting walkalator tactile:**
+Passenger conveyors (walkalators) require the **same 600/300/full-width tactile** as escalators. They are not exempt from tactile requirements just because they are low-slope.
 
-3. **Passenger conveyor section expanded and aligned with ramp/escalator tactile rules:**
-   - Your draft had “requirements mirror escalators” in general terms.
-   - The improved version ties conveyors explicitly to **600‑mm warning tactile depth, 300‑mm setback, full‑width coverage, and bilateral handrails**, matching the **“escalator/ ramp” tactile pattern** described in updated IRR notes.[web:49][web:51][web:54]
+**TRAP 3 — Platform edge gaps:**
+BP 344 requires boarding platforms to be **leveled with the transit vehicle floor** with minimal gaps. Any unavoidable gap must be mitigated by ramps, gap fillers, or trained staff assistance. Don't accept large gaps as permissible.
 
-4. **Transit platform–vehicle interface added from IRR:**
-   - Your original file focused mainly on tactile geometry; the update adds the **BP 344 requirement that boarding platforms be level with the transit vehicle floor**, with minimized gaps, pulled directly from the amended IRR text.[web:10]
+**TRAP 4 — Tactile path termination at elevator:**
+The tactile path must **prioritize elevator access** and terminate at a **warning tactile strip 300 mm in front of the elevator door** with Braille/tactile controls and jambs. Simply stopping the tactile path at the corridor wall is non-compliant.
 
-5. **Station flow section strengthened with explicit elevator tactile termination:**
-   - The “elevator priority” line now specifies that the tactile path typically **terminates at a warning tactile strip 300 mm in front of the elevator door with Braille/tactile controls**, making the integration with vertical circulation more explicit for exam answers.[web:1][web:2][web:49][web:54]
+---
 
-Would it help if I made a separate one‑page “transport node” cram sheet with just numbers and arrows (S800, 30°, 3 steps, 30 m/min, 600/300 tactile, level boarding)?
+\
+Extracted summary:
+- Props: 
+- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+\[/SLATECAMP_UI_BLOCK\]
+## Cross‑References
+
+**Stairs Handrails Guardrails**, **Widths Slopes**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Elevator Dimensions**

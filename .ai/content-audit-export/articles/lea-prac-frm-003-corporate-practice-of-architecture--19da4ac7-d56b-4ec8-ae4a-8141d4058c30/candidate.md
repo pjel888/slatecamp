@@ -11,12 +11,16 @@ After studying this article, you should be able to:
 
 ---
 ### Legal Requirements and Formation
+<ArticleMedia id="media-lea-prac-frm-003-corporate-practice-of-a" a type="image" caption="Architecture Corporation — Ownership, Governance, and RLA Composition" description="Organizational structure diagram showing: (1) SEC registration at top forming the corporate entity; (2) Ownership breakdown: 75% RLA shareholders (architects) + 25% non-architect shareholders (maximum); (3) Board of Directors composition — RLA-only directors, no non-architects allowed; (4) Corporate hierarchy: Shareholders → Board of Directors → Executive Officers (all RLA); (5) Corporate veil illustration showing liability protection separating personal and corporate assets; (6) PRC/BOA professional license held by the corporation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 An architecture corporation is a group of professionals in architecture and allied professions incorporated with architects for delivering professional services in architecture and allied fields. RA 9266 permits firms, companies, partnerships, corporations, and associations to be registered for the practice of architecture while imposing strict ownership and control requirements. Corporations must be registered with the Securities and Exchange Commission (SEC) and then with the Board of Architecture and the PRC for professional licensure.
 
 Articles of incorporation must specify that the corporation's primary purpose is delivering architectural services. The corporate bylaws establish governance structure, including the board of directors, officers, and shareholder meetings. All registered architects within the corporation must maintain valid Certificates of Registration and Professional Identification Cards. The corporation itself holds the professional license issued by the Board of Architecture.
 
-<ExamTip>The 75% RLA requirement applies to ALL classes of stock and voting arrangements. Non-architects may own up to 25% but CANNOT serve as directors or executive officers. This is a continuing obligation — the corporation must maintain compliance throughout its existence, not just at incorporation.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The 75% RLA requirement applies to ALL classes of stock and voting arrangements. Non-architects may own up to 25% but CANNOT serve as directors or executive officers. This is a continuing obligation —...
 
 ### The 75 Percent RLA Majority Rule
 
@@ -44,11 +48,9 @@ Operations include regular board meetings, shareholder meetings, and formalized 
 
 ---
 
-\
-Extracted summary:
-- Props: 
-- Text: Unlike sole proprietorships and partnerships, the corporate veil protects shareholders from personal liability for corporate debts beyond their investment. However, individual architects remain person
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+Unlike sole proprietorships and partnerships, the corporate veil protects shareholders from personal liability for corporate debts beyond their investment. However, individual architects remain person
+</Note>
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

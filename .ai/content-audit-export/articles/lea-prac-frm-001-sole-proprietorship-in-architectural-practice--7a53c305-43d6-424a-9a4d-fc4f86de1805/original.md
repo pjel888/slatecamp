@@ -1,10 +1,23 @@
 ## Sole Proprietorship in Architectural Practice
 
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define sole proprietorship as a form of architectural practice.
+- Explain the legal requirements: DTI registration, PRC/BOA registration.
+- Describe the unlimited personal liability of the sole proprietor.
+- Distinguish sole proprietorship from partnership and corporation under RA 9266.
+
+
+
 ### Definition and Legal Requirements
 
 A sole proprietorship is an individual architect practicing and delivering architectural services, duly registered with the Department of Trade and Industry (DTI), Board of Architecture (BOA), and Professional Regulation Commission (PRC). This structure is the simplest form of architectural practice under RA 9266. The architect maintains complete ownership and control of the practice.
 
 The sole proprietor must hold a valid Certificate of Registration and Professional Identification Card. The architect is personally responsible for all debts, liabilities, and obligations of the practice. This unlimited personal liability is a defining characteristic that distinguishes sole proprietorships from corporate structures. Annual registration and renewal are required with all regulatory bodies.
+
+<Tip>**Key distinction:** In a sole proprietorship, the architect and the practice are legally inseparable. Unlike corporations, there is no corporate veil protecting personal assets. Professional liability insurance is not optional — it is essential for protecting the architect's personal financial exposure.</Tip>
 
 ### Ownership and Control Structure
 
@@ -23,3 +36,18 @@ Continuity of the practice depends entirely on the architect's ability and willi
 Advantages include minimal startup costs, complete autonomy in business decisions, simpler registration procedures, and direct receipt of all profits. The architect maintains full control over project selection, fee structures, and client relationships. No corporate formalities or board meetings are required. Administrative burden is lighter than partnership or corporate structures.
 
 Disadvantages include unlimited personal liability, limited capacity to expand operations, difficulty attracting investment capital, and vulnerability to personal creditors. A single architect may lack specialized expertise across all architectural disciplines. The practice cannot continue beyond the architect's involvement, creating succession challenges. Health issues or personal circumstances can jeopardize client relationships and ongoing projects.
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)

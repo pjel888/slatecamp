@@ -1,8 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Roof framing systems are classified by truss type, material (steel vs timber), member configuration, and load-bearing capacity.
-The LEA tests your ability to identify truss types by geometric pattern, calculate span-to-depth ratios, and apply Philippine wind load requirements per the NSCP 2015.
-
+Identify roofing system components — underlayment, flashings, valleys, ridges, eaves, gutters, vents — and explain how each component contributes to weather-tightness, thermal performance, and durability of the roof assembly.
 ## Core Concept
 
 Roof trusses transfer roof loads through triangulated geometry, eliminating interior supports and creating usable attic space.
@@ -75,16 +74,13 @@ In Philippine wind zones, collar ties in the upper 1/3 are recommended for $V > 
  correction='Truss span depends on geometry. Fink W-pattern distributes load more efficiently than Queen Post verticals. Span capability increases with geometric complexity.'
 />
 
-<WikiMistakeCard
- mistake='Treating collar ties as a mandatory NSCP 2015 code command in all circumstances.'
- correction='Collar ties are a standard design practice for controlling lateral thrust and rafter spreading. While not explicitly mandated by every section of the NSCP, they are essential in typhoon zones ($V > 30\text{ m/s}$) to ensure structural stability.'
-/>
-
-<WikiMistakeList
- mistakes={[
- 'Designing purlins without accounting for corrugated roof load concentration at ribs',
- 'Using span-to-depth ratio >8:1 for residential trusses, which typically causes L/240 deflection limit exceedance',
- 'Neglecting wind uplift in truss web member design, causing tension reversal in diagonals',
- 'Incorrectly calculating collar tie load as tributary rafter load alone without wind multipliers',
+ibutary rafter load alone without wind multipliers',
  ]}
 />
+
+## Related Articles
+
+See also within Roofing, Waterproofing, and Insulation: **lea-matl-006-01-core-concept**, **lea-matl-006-03-core-concept**, **lea-matl-006-04-core-concept**, **lea-matl-006-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

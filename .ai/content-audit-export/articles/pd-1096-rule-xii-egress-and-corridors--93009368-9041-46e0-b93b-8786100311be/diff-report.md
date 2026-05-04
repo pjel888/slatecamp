@@ -1,32 +1,33 @@
 # Content Diff Report: pd-1096-rule-xii-egress-and-corridors
 
-Generated: 2026-05-03T13:45:06.775Z
+Generated: 2026-05-04T00:06:44.894Z
 Article ID: 93009368-9041-46e0-b93b-8786100311be
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:255db37993c662cc0a281fd01e3d2ddc1dabd4fd8fe00e5f0401a6769dc0bfe7`
-- Normalized: `sha256:1071fa8eaa25344f2465cec62a60f8f9b9c76a949371a56c1b89cb992e4cf7b6`
-- Candidate: `sha256:95e2f4f6b470351633eefdf8e3b974e8326ebae20123281863a52e89b91233cd`
+- Original: `sha256:69fed52b89130a7f8a44a1ae3e9e096985fbd912f666c134992a0b7395268778`
+- Normalized: `sha256:b4195bdc2ed3e5fccab7f9e96624ec4db306da6f9116be354406b2d205709295`
+- Candidate: `sha256:b4195bdc2ed3e5fccab7f9e96624ec4db306da6f9116be354406b2d205709295`
 
 ## Line summary
 
-- Changed lines: 527
-- Inserted lines: 25
-- Deleted lines: 0
+- Changed lines: 471
+- Inserted lines: 0
+- Deleted lines: 10
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

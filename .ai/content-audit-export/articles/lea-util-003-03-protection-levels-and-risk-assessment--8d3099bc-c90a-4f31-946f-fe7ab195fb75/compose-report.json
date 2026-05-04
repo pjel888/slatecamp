@@ -1,18 +1,32 @@
 {
   "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
   "slug": "lea-util-003-03-protection-levels-and-risk-assessment",
-  "generated_at": "2026-05-03T13:44:10.997Z",
+  "generated_at": "2026-05-04T00:05:38.225Z",
   "original_hash": "sha256:4a378c804c4fe84e091f7126fb771caa77b115e2cb064b4f5096669c8751b05c",
-  "normalized_hash": "sha256:bf82de0dc22dc3f02961b15a20897926e234c16190f5b33756e7d0a978ff4aed",
-  "candidate_hash": "sha256:0ceff609c12179cd59773408ba7a2757a7e1f520f7009b6ffedd7c99c500c61d",
+  "normalized_hash": "sha256:69fc640753c57be5f7568fe945cb4ffa90c48d70d0a6989aee63f231805afab6",
+  "candidate_hash": "sha256:69fc640753c57be5f7568fe945cb4ffa90c48d70d0a6989aee63f231805afab6",
   "ui_blocks_count": 6,
-  "placeholders_found": 6,
-  "placeholders_resolved": 6,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 6,
+  "unused_blocks": [
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006",
+    "ui_0008"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition.",
+    "UI block ui_0008 was not used during composition."
+  ]
 }

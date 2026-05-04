@@ -1,5 +1,9 @@
 ## What You Need to Know for the LEA
-Fire egress calculations determine exit count, width, and travel distance—all based on occupancy. The LEA tests your ability to calculate occupant load from floor area, then verify exit adequacy. These calculations are critical safety requirements and are heavily tested.
+Fire egress calculations determine exit count, width, and travel distance—all based on occupancy. 
+## Learning Goal
+
+Calculate occupant load using RA 9514 load factors per use type, determine required exit count and aggregate width (OL × 7.6 mm/person), verify travel distance limits (45m/60m) and dead-end corridor lengths (6m/12m), and ensure each exit meets the 900mm minimum clear width.
+
 
 ## Core Concept
 Fire egress is determined by three sequential calculations:
@@ -133,6 +137,13 @@ In the Philippines, fire egress calculation errors are among the most-cited by f
 <Tip>
 **"Exit width = OL × 7.6, then distribute across required exits, each ≥ 900mm."** Never under-size an individual exit. If calculated width doesn't distribute evenly, round up and provide larger exits.
 </Tip>
+
+
+**Exam Tip — ERR-DSGN-009:** Exit width = occupant load × 7.6 mm/person (minimum 900mm per exit). Do NOT use 5.0 mm/person (assembly) or 5.6 mm/person (educational) unless the occupancy-specific factor is provided.
+
+## Cross-References
+
+See **LEA-DSGN-008-02** (Fire Separation) for compartmentation requirements, **LEA-DSGN-008-03** (Sprinkler Systems) for travel distance adjustments, and **LEA-DSGN-007-10** (Code Compliance) for holistic code application.
 
 ## Common Mistakes
 <WikiMistakeList mistakes={["ERR-DSGN-019: Using 5mm per person instead of 7.6mm for exit width","ERR-DSGN-020: Using 30m travel distance instead of 45m (unsprinklered) or 60m (sprinklered)","ERR-DSGN-021: Assuming 1 exit serves 100 persons; correct max is 49 persons","ERR-DSGN-024: Using 10m dead-end limit instead of 6m (unsprinklered) or 12m (sprinklered)","Calculating exit width but forgetting 900mm minimum per exit","Not separating occupancy loads by use type (e.g., treating dining + kitchen as one load)","Placing all exits on one side of floor; far side becomes dead-end beyond limit","Using wrong load factors (e.g., assembly 9.3 instead of 0.65-1.1)"]} />

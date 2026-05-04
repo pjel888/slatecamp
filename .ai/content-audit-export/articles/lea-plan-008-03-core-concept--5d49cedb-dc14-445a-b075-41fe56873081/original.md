@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply sustainable urban development principles — compact, mixed-use, transit-oriented, walkable neighborhoods — design Complete Streets for Philippine conditions, and align planning with SDG 11 and New Urban Agenda frameworks.
+
 Sustainable urban development integrates environmental, social, and economic goals through compact, mixed-use neighborhoods supported by transit and walkable streets. Complete Streets design moves beyond car-centric infrastructure to create pedestrian, bicycle, and transit-friendly public spaces. Together, they form a planning approach aligned with the UN Sustainable Development Goal 11 (SDG 11: Sustainable Cities and Communities) and the New Urban Agenda from Habitat III (2016).
+
 
 ## Core Concept
 
@@ -8,7 +12,7 @@ Sustainable urban development pursues three objectives simultaneously: (1) minim
 
 Key frameworks include:
 
-1. **New Urbanism** (1980s–present) — walkable neighborhoods with mixed uses, human-sclea architecture, and transit connectivity. The traditional 5-minute walk radius of 400 meters enables pedestrian-based daily errands.
+1. **New Urbanism** (1980s–present) — walkable neighborhoods with mixed uses, human-scale architecture, and transit connectivity. The traditional 5-minute walk radius of 400 meters enables pedestrian-based daily errands.
 
 2. **Transit-Oriented Development (TOD)** — higher-density, mixed-use development within 400–800 meters of transit stations, encouraging mode shift from private vehicles to public transit.
 
@@ -18,7 +22,7 @@ Key frameworks include:
 
 5. **Complete Streets** — street design that accommodates pedestrians, cyclists, transit users, and drivers; prioritizes safety and livability over vehicle throughput alone.
 
-These frameworks share a common critique of 20th-century car-dependent suburban sprawl and a commitment to human-sclea, livable urban forms. In Philippine context, Complete Streets addresses the reality that most Filipinos walk or use transit; car-centric design ignores the majority.
+These frameworks share a common critique of 20th-century car-dependent suburban sprawl and a commitment to human-scale, livable urban forms. In Philippine context, Complete Streets addresses the reality that most Filipinos walk or use transit; car-centric design ignores the majority.
 
 ## Key Provisions
 
@@ -37,6 +41,13 @@ Philippine cities face the tension between rapid growth and livability. Metro Ma
 3. **TOD catchment and zoning** — "A new MRT station is being planned in a residential area. What density and mix of uses should planning allow within the TOD walkable catchment (400–800m)?" → Answer: Higher density, mixed-use development (residential + commercial + office) to support transit ridership and reduce car dependency. Tests application of TOD principles to specific development scenarios.
 
 <Tip>Memory aid: **New Urbanism = 400 meters** (the 5-minute walk distance). **15-Minute City = 15 minutes** (walk or bike). **TOD = 400–800 meters** (the wider catchment around stations that can support higher density). Note the hierarchy: NU walk radius is a subset of TOD catchment distance.</Tip>
+
+
+**Exam Tip:** Complete Streets = streets designed for ALL users (pedestrians, cyclists, transit, cars), not just cars. Key elements: sidewalks, bike lanes, transit lanes/stop areas, pedestrian crossings, street furniture, trees. This is the most tested sustainable urban development concept.
+
+## Cross-References
+
+See **LEA-PLAN-002-02** (Contemporary Models) for TOD and New Urbanism, **LEA-PLAN-008-01** (Climate Resilience) for sustainable-resilient integration, and **LEA-PLAN-008-05** (Regeneration) for sustainable redevelopment.
 
 ## Common Mistakes
 

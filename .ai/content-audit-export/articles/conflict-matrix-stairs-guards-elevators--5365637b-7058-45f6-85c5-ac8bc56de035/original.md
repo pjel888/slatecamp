@@ -1,6 +1,9 @@
 # Conflict Matrix Stairs Guards Elevators
-### BP 344 (2024 IRR) vs. PD 1096 (National Building Code) — Philippine Architecture Licensure Exam Review
+## Learning Goal
 
+After reading this article, you should be able to:
+
+Apply the conflict-resolution hierarchy when PD 1096, BP 344, and other codes impose conflicting dimensional requirements on stairs, guards, and elevators; identify which code governs for each specific element (landing depth, handrail height, guard spacing, elevator cab size); and apply the strictest requirement principle consistently.
 ---
 
 ## REAL-WORLD HOOK
@@ -13,21 +16,37 @@ This is not a theoretical problem. In the LEA, the examiner will hand you exactl
 
 ## THE GOVERNING PRINCIPLE — KNOW THIS COLD
 
-<LawCallout code="bp344">
+<LawCallout code="pd1096" section="Rule XII - Stairs and Guards">
+
 
 When BP 344 and PD 1096 conflict, the MORE RESTRICTIVE (more accessibility-protective) provision governs.
+
 
 </LawCallout>
 >
 > BP 344 is a special law protecting the rights of PWDs. PD 1096 is a general building regulation. Under the principle of *lex specialis derogat legi generali*, the special law prevails on matters of accessibility.
 >
-<LawCallout code="nbcp">
+<LawCallout code="bp344" section="Section 10 - Elevators">
+
 
 Exception: Where PD 1096 sets a MORE restrictive dimension that also serves accessibility (e.g., greater guard height), the higher standard of both laws applies simultaneously.
+
 
 </LawCallout>
 
 ---
+
+<Warn>
+
+⚠️ Common Exam Trap: When PD 1096 and BP 344 both specify dimensions for the same element, do NOT simply average them. The stricter (more protective) standard always governs. Exception: if PD 1096 has a MORE restrictive dimension that also aids accessibility (e.g., higher guardrails), apply the higher of both standards.
+
+</Warn>
+
+<ExamTip>
+
+LEA Strategy: Draw a small T-chart on scratch paper. Left column = PD 1096 dimension. Right column = BP 344 dimension. Circle the stricter value. That is your answer. For stairs: PD 1096 allows 1,100 mm width; BP 344 requires 1,500 mm for accessible means of egress.
+
+</ExamTip>
 
 ## CORE MNEMONIC: **"DUAL GRIP — 700 PLUS 900"**
 
@@ -171,7 +190,7 @@ PD 1096's "max 1,200 mm" is a ceiling for straight stairs (to prevent oversized 
 | **Handrails inside** | 900 mm on **3 walls** | 900 mm on **3 walls** |
 | **COP height** | **900 mm** AFF | **900 mm** AFF |
 | **Braille on jambs** | **1,200 mm** AFF | **1,200 mm** AFF |
-| **Rationlea** | Wheelchair turnaround | Wider for transit crowds + mobility aids |
+| **Rationale** | Wheelchair turnaround | Wider for transit crowds + mobility aids |
 
 ### Elevator Interior Spatial Sketch
 
@@ -299,7 +318,7 @@ ACCESSIBLE STAIRCASE COMPLIANCE CHECKLIST
 *The following are all cases where BP 344 is stricter than PD 1096 and therefore governs:*
 
 1. **Dual handrails** (BP 344) vs. single handrail (PD 1096)
-2. **700 mm lower handrail** (BP 344) — no equivleant in PD 1096
+2. **700 mm lower handrail** (BP 344) — no equivalent in PD 1096
 3. **900 mm upper handrail** (BP 344) vs. 800–900 mm band (PD 1096)
 4. **300 mm extensions** (BP 344) — not in PD 1096
 5. **Landing interval: 3 m** (BP 344) vs. 3.6 m (PD 1096)
@@ -415,5 +434,28 @@ Without looking at your notes:
 
 ---
 
+## Cross-Referencing
+
+### Connection to BP 344 Accessible Washrooms
+The 1,800 × 1,800 mm elevator lobby clear space matches the BP 344 requirement for accessible washroom turning space. This is not a coincidence — BP 344 uses this universal turning radius for all fixture approach clearances.
+
+### Connection to Commercial Clearances
+The 1,500 mm stair clear width under BP 344 matches the dining circulation path minimum. Both derive from the minimum space needed for a wheelchair user and an ambulatory person to pass.
+
+### Connection to Widths & Slopes
+The 1:15 maximum ramp slope and 1,800 mm landing dimensions in the ramp article coordinate with the stair landing requirements here. A ramp and stair sharing a landing in a vertical core must both satisfy BP 344 minimums — the largest dimension governs.
+
+### Connection to PD 1096 Rule XII (Means of Egress)
+PD 1096 governs exit stair capacity (number of exits, occupant load, travel distance). BP 344 overlays accessibility dimensions on top of these life-safety requirements. Neither law can be satisfied in isolation — a compliant building must meet both simultaneously.
+
+---
+
 *Previous: Module 6 — Fixtures & Small Items in Common Areas*
 *Series complete: Modules 1–7, BP 344 2024 IRR LEA Review*
+
+---
+
+## Cross‑References
+
+**Stairs Handrails Guardrails**, **Widths Slopes**, **Bp 344 Elevator Dimensions**, **Bp 344 Vs Pd 1096 Conflicts**
+

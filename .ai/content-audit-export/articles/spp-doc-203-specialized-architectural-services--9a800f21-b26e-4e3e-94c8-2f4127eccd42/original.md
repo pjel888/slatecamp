@@ -4,6 +4,12 @@
 
 **SPP Document 203** governs **Specialized Architectural Services** — a broad and evolving category of architectural practice covering expertise needed to complete, complement, or supplement the totality of any building or planning project. It is part of the 2010 Standards of Professional Practice (SPP), promulgated as the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004), and replaces the earlier **1979 UAP Doc. 203**.
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the nine categories of specialized architectural services under SPP Doc 203 — interior design, landscape architecture, acoustical design, lighting design, preservation/conservation, space planning, urban design, graphic design, and expert witness services — and explain how each is scoped, compensated (per-diem, fixed fee, or percentage), and documented separately from basic services.
+---
 SPP 203 recognizes that architecture, as the blending of aesthetics, functions, space, materials and environment, now requires the application of various technologies and specialized skills that go beyond what is covered in SPP 202 Regular Design Services. It contains **23 enumerated sub-specialties** (203.1 through 203.23), each constituting a distinct area of advanced or specialized architectural practice.
 
 ***
@@ -26,7 +32,7 @@ The architect's responsibility under SPP 203 remains consistent: to ensure that 
 
 For each of the 23 specialized services, SPP 203 follows a consistent structure:
 
-1. **Introduction** — Context and rationlea for the service
+1. **Introduction** — Context and rationale for the service
 2. **Scope of Services** — Specific tasks the Consulting Architect performs
 3. **Manner of Providing Services** — How the Architect may be engaged (dual capacity or consulting only)
 4. **Method of Compensation** — How fees are determined
@@ -385,3 +391,18 @@ Any other applicable mode of fee determination from **SPP Document 201** (MDPE),
 - SPP 203 services are **always separately contracted and compensated** from SPP 202 Regular Design Services — they are never included in the regular architect's fee unless explicitly agreed upon in writing.
 - Clients who wish to engage Specialist Consultants (SCs) directly — bypassing the architect — may do so; in that case, the SC fees are paid directly by the owner and do not pass through the architect. However, a **coordination fee** is still due to the architect for managing the interface between the SC's inputs and the architectural design concept.
 - For sub-services 203.5 (Physical Planning) and 203.6 (CDP) involving multi-disciplinary teams, the owner must budget separately for each Specialist Consultant's fee, as these are not covered by the architect's SPP 203 fee.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Nine specialized services: Interior Design, Landscape Architecture, Acoustics, Lighting, Preservation, Space Planning, Urban Design, Graphic Design, Expert Witness. Compensation: per-diem, fixed fee, or lump sum — NOT percentage of construction cost (unless the basic services contract also uses percentage). Expert witness is the only one with a forensic/legal character.
+
+## Cross‑References
+
+**Spp Doc 202 Regular Design Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 205 Post Construction Services**, **Spp Doc 209 Architectural Consulting Services Pacs**
+

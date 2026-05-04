@@ -55,18 +55,10 @@ Enforcement of liquidated damages is typically straightforward: the owner deduct
 **Question Pattern 5:** Contractor responsibility—If the contractor claims delay was not its fault, can it avoid liquidated damages? (Tests contractor burden to prove non-responsibility)
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Remember: Liquidated damages = daily rate × delay days = fixed compensation. Enforceable if reasonable, not unconscionable. Accrues automatically from day of delay until Substantial Completion. Court can reduce iniquitous amounts. Contractor can avoid if it proves delay was not its fault.
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes=true, Confusing=true, liquidated=true, damages=true, with=true, penalties=true, Liquidated=true, are=true, enforceable=true, not=true, Assuming=true, apply=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -82,3 +74,5 @@ Extracted summary:
 - [Change Orders](lea-prac-ctr-016)
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

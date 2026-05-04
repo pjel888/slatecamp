@@ -2,6 +2,11 @@
 
 The three classical urban models — Concentric Zone, Sector, and Multiple Nuclei — explain how cities grow and organize spatially. Each model identifies the theorist, the year, and the underlying mechanism. These are the most-tested models in the LEA and the most commonly swapped by mistake.
 
+## Learning Goal
+
+Distinguish the Concentric Zone (Burgess, 1925), Sector (Hoyt, 1939), and Multiple Nuclei (Harris & Ullman, 1945) models by theorist, year, spatial mechanism, and Philippine application.
+
+
 ## Core Concept
 
 **Urban structure models** are theoretical frameworks that explain how cities develop, grow, and organize land use over time. The three foundational classical models emerged in the early 20th century and remain the basis for understanding city form.
@@ -39,6 +44,13 @@ Metro Manila exemplifies all three models simultaneously. The CBD (Makati-Taguig
 3. **Application questions:** "The Multiple Nuclei Model best explains [Metro Manila's mix of CBD, port district, and government center / Quezon City's radial growth / suburban sprawl]?" Must match the mechanism to the phenomenon.
 
 <Tip>**Memory anchors:** BURGESS = **BULLSEYE** (concentric circles). HOYT = **HOT CORRIDORS** (sectors along transit). HARRIS + ULLMAN = **MULTIPLE** (two names = multiple nuclei).</Tip>
+
+
+**Exam Tip:** Most common swap on the LEA: Burgess (Concentric Zone = bullseye) vs. Hoyt (Sector Model = pie wedges). Memory anchor: BURGESS = BULLSEYE, HOYT = HOT CORRIDORS. Multiple Nuclei requires BOTH Harris AND Ullman.
+
+## Cross-References
+
+See **LEA-PLAN-001-01** (Planning Fundamentals) for theorist context, **LEA-PLAN-002-05** (Lynch Elements) for complementary urban analysis tools, and **LEA-PLAN-002-07** (Philippine Urban Context) for model application to Metro Manila.
 
 ## Common Mistakes
 

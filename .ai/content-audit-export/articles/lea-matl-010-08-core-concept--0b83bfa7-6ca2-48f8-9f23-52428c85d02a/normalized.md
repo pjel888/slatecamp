@@ -10,6 +10,13 @@ The prismoidal formula is more accurate, particularly for parabolic or irregular
 
 In the Philippines, standard practice uses the trapezoidal method for preliminary estimates and the prismoidal method for final billing and payment. The formula constants (L/2 vs. L/3) reflect the different integration approaches.
 
+
+<ArticleMedia id="media-roofing-quantity-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing corrugated GI sheet coverage calculation with side lap, end lap, and slope allowance on a roof plan"
+  caption="Future diagram: roofing quantity estimation — GI sheet coverage, laps, and slope allowance"
+  suggestedAsset="Roof plan with sheet layout and lap allowance callouts"
+  placementIntent="Visualizes roofing material quantity estimation" />
+
 ## Key Provisions
 
 | Formula | Application | Accuracy | LEA Relevance |
@@ -27,17 +34,15 @@ In the Philippines, standard practice uses the trapezoidal method for preliminar
 ## Worked Examples
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Scenario 1: Road section with two cross-sections 20 meters apart; Cut area A₁ = 50 m², Cut area A₂ = 60 m²** **Step 1: Apply trapezoidal formula for single interval** V = (L/2) × (A₁ + A₂) = (20/2) × (50 + 60) = 10 × 110 = 1,100 m³ **Answer: 1,100 m³ cut volume**
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Scenario 2: Road grading with 5 cross-sections at 15 m intervals; Areas: A₁ = 40 m², A₂ = 52 m², A₃ = 58 m², A₄ = 45 m², A₅ = 35 m²** **Step 1: Apply trapezoidal formula for multiple sections** V = (L/2) × [(A₁ + A₅) + 2(A₂ + A₃ + A₄)] V = (15/2) × [(40 + 35) + 2(52 + 58 + 45)] V = 7.5 × [75 + 2(155)] V = 7.5 × [75 + 310] V = 7.5 × 385 = 2,887.5 m³ **Step 2: Apply prismoidal formula for verification (higher accuracy)** V = (L/3) × [(A₁ + A₅) + 4(A₂ + A₄) + 2(A₃)] V = (15/3) × [(40 + 35) + 4(52
-[/SLATECAMP_UI_BLOCK]
 
+
+<ArticleMedia id="media-roofing-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step roofing estimation example showing roof area, GI sheet coverage with end and side laps, ridge length, and fastener count"
+  caption="Future diagram: roofing estimation worked example — sheet coverage, laps, ridge, and fasteners"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of roofing material estimation" />
 ## Quick Reference: Earthwork Formula Table
 
 | Method | Formula | Suitable For | Notes |
@@ -72,42 +77,18 @@ On the LEA, earthwork volume questions focus on:
 6. **Cost estimation**: Volume × unit cost per m³ = earthwork cost.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid**: Trapezoidal = (L/2) × [first + last + 2(middles)]. Prismoidal = (L/3) × [first + last + 4(even stations) + 2(odd stations, excluding first and last)]. When in doubt, use trapezoidal; it's simpler and acceptable for most LEA-level problems.
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Confusing the trapezoidal formula constant L/2 with L/3 (prismoidal)", correction="Trapezoidal uses L/2. Prismoidal uses L/3. If you can't remember which, stick with trapezoidal for simplicity."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Forgetting to divide the first and last terms by 2 in the trapezoidal formula", correction="The formula is (L/2) × [(A₁ + Aₙ) + 2(sum of middle areas)]. The first and last are NOT doubled; only the middle areas are."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Using incorrect numbering for even/odd stations in the prismoidal formula", correction="Stations are numbered 1, 2, 3, ..., n. Even stations: 2, 4, 6, ... Odd stations: 3, 5, 7, ... (exclude 1 and n)."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Not separating cut and fill volumes", correction="Cut and fill are tracked independently. Do not mix them in one calculation."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Applying a swell factor without being asked (swell only applies if loose excavated volume is the deliverable)\", \"Using area measurements in the wrong units (ensure all areas are in m²)\", \"Forgetting that L is the interval between sections, not the total length\", \"Confusing prismoidal accuracy (typically 2–8% lower than trapezoidal) as a defect rather than expected behavior\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

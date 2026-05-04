@@ -1,18 +1,28 @@
 {
   "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
   "slug": "lea-prac-svc-025-core-concept",
-  "generated_at": "2026-05-03T13:44:10.683Z",
-  "original_hash": "sha256:62fc49d89967088543392d0f31e6e62a876e6a9303aa1a3e6e00f067570e1da9",
-  "normalized_hash": "sha256:784ad694bbc161fff88e842429e62c2363ce47451d374b30638d21471039d1c8",
-  "candidate_hash": "sha256:24a52c4df26dfa15cfe44714cf2189ae1cc36fda12ae7cc52435e3e17a44d3b0",
+  "generated_at": "2026-05-04T00:05:37.847Z",
+  "original_hash": "sha256:24a52c4df26dfa15cfe44714cf2189ae1cc36fda12ae7cc52435e3e17a44d3b0",
+  "normalized_hash": "sha256:90e8b59a562440e38a764cdabed888848738fcf42b16aacdcd9dc0e6d3d20e53",
+  "candidate_hash": "sha256:90e8b59a562440e38a764cdabed888848738fcf42b16aacdcd9dc0e6d3d20e53",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

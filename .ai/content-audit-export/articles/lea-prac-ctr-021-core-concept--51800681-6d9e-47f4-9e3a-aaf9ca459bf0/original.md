@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define force majeure and its effect on construction contracts.
+- Identify typical force majeure events: natural disasters, war, strikes.
+- Explain the contractor's relief from liability during force majeure.
+- Describe the notice and documentation requirements for force majeure claims.
 
 The Construction Industry Arbitration Commission (CIAC) was established in 1985 by Executive Order No. 1008 and holds original and exclusive jurisdiction over construction disputes in the Philippines. CIAC jurisdiction is mandatory for construction disputes when the parties have included an arbitration clause in their contract; CIAC may assert jurisdiction even if another arbitral forum was specified. The CIAC is the primary dispute resolution path for construction contracts in the Philippines and operates under its own Rules of Procedure, with finality of awards and limited grounds for court appeal.
 
@@ -52,3 +59,18 @@ The CIAC award's finality creates pressure for thorough arbitration procedure. B
 ## Common Mistakes
 
 <WikiMistakeList mistakes={["Assuming CIAC applies only to large or public projects (CIAC jurisdiction applies to any construction contract regardless of size)", "Thinking parties can avoid CIAC by specifying another arbitral body in the contract (CIAC jurisdiction is mandatory per law; contract forum selection is overridden)", "Confusing CIAC jurisdiction with court litigation (CIAC arbitration is separate from civil court process)", "Believing CIAC awards are subject to extensive court review (Appeals limited to excess authority, non-compliance, corruption, manifest bias only)", "Assuming arbitration agreement must be signed after dispute arises (Arbitration clause in original contract satisfies the agreement requirement)", "Thinking CIAC jurisdiction requires both parties' consent after dispute (If contract has arbitration clause, consent is established; unilateral invocation triggers jurisdiction)", "Confusing the 15-day award executability timeline with appeal deadline (Award becomes executory in 15 days unless TRO issued; this is separate from appeal rights)", "Assuming CIAC is optional or recommendatory (CIAC jurisdiction is mandatory when dispute is from construction contract)"] />
+
+---
+
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)

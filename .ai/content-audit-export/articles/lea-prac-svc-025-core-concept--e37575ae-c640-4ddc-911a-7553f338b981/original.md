@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define architectural research as a professional service.
+- Describe the types of research architects conduct: code analysis, material studies, typology.
+- Explain how research services are scoped and compensated.
+- Identify when research services require a separate agreement from design.
 
 Architectural Interior (AI) Services is a frequently tested sub-service under SPP 203 that candidates commonly confuse with SPP 208 (Architectural Design Competition) or misapply to exterior work. The LEA tests your ability to correctly identify the scope of AI work, classify the two service delivery models (Dual Capacity vs. CA Only), and calculate compensation using the cost of AI work as the base—_not_ total project cost.
 
@@ -83,3 +90,18 @@ The LEA tests AI Services through four primary question patterns:
     'Applying SPP 202 design phase percentages (which are for overall architectural design phases) to AI Services, instead of using the 15% rate specified in SPP 203 Section 4.1.',
   ]}
 />
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)

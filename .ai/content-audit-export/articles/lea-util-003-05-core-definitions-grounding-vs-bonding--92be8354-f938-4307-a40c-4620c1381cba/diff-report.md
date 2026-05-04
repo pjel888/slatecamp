@@ -1,32 +1,33 @@
 # Content Diff Report: lea-util-003-05-core-definitions-grounding-vs-bonding
 
-Generated: 2026-05-03T13:44:33.376Z
+Generated: 2026-05-04T00:06:07.848Z
 Article ID: 92be8354-f938-4307-a40c-4620c1381cba
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:6008dadf6d42d2da99da11d4eef07e8edbf6b46b5a06acbeb9dd41f74be3a35b`
-- Normalized: `sha256:58130908c7d69f0190b4e9daae1148bfa2d16fbbd1caf230030c6666200e09f5`
-- Candidate: `sha256:9f8979827a262ec78d89d76a656f2718cd99d456d705d06d9b81a79c092c2c5d`
+- Original: `sha256:9f8979827a262ec78d89d76a656f2718cd99d456d705d06d9b81a79c092c2c5d`
+- Normalized: `sha256:d9e1861eec8e832f1030b916a4bb9fc2be79436779015827b508c0b7ebda2e64`
+- Candidate: `sha256:d9e1861eec8e832f1030b916a4bb9fc2be79436779015827b508c0b7ebda2e64`
 
 ## Line summary
 
-- Changed lines: 230
-- Inserted lines: 21
-- Deleted lines: 0
+- Changed lines: 196
+- Inserted lines: 0
+- Deleted lines: 4
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

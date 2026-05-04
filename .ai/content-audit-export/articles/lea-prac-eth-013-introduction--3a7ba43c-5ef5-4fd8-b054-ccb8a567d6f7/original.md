@@ -1,4 +1,12 @@
 ## Introduction
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Explain the general rule that fee competition among architects is legal and ethical.
+- Identify prohibited anti-competitive practices: collusive fee-fixing, predatory pricing, and deceptive fee practices.
+- Distinguish ethical fee discounting from unethical practices that compromise professional standards.
+- Apply fee competition rules to LEA scenarios involving minimum fee schedules, competitive bidding, and professional standards.
 
 The relationship between professional ethics and fair competition in architecture creates tension: architects must maintain professional standards while competing fairly with one another for projects and fees. This article examines the ethical limits on fee competition, restrictions on setting minimum fees, and the distinction between competitive fee structures and unethical cost-cutting.
 
@@ -8,7 +16,7 @@ The Code of Ethical Conduct and RA 9266 prohibit fee agreements that restrict co
 
 The legal and professional framework in the Philippines allows architects to compete on fees while maintaining professional standards:
 
-<LeartBox type="critical">
+<Callout type="critical">
 **Core Principle:** Architects may compete on fees and design services. However, this competition must not:
 1. **Compromise professional standards** (designing inadequately due to fee pressure)
 2. **Result from collusive fee agreements** (architects agreeing to charge minimum fees)
@@ -17,7 +25,7 @@ The legal and professional framework in the Philippines allows architects to com
 5. **Constitute predatory pricing** (deliberately underbidding to eliminate competition and later raise prices)
 
 Competition on fees is ethical; agreements to restrict fee competition are not.
-</LeartBox>
+</Callout>
 
 ## Category 1: Anti-Competitive Fee Practices (Prohibited)
 
@@ -92,9 +100,9 @@ Even if not formally agreed, if architects use a published schedule as a coordin
 
 **Consequences:** Serious—professional discipline (possible revocation), criminal prosecution, potential imprisonment
 
-<LeartBox type="critical">
+<Callout type="critical">
 **Note on Government Projects:** If bid-rigging involves government projects, the conduct may also constitute fraud against the government (a felony) with additional criminal liability. Architects have faced imprisonment for bid-rigging on public projects.
-</LeartBox>
+</Callout>
 
 ## Category 2: Ethical Fee Competition (Permitted)
 
@@ -166,7 +174,7 @@ This approach allows **fee flexibility** while tying architect compensation to *
 **Ethical approach:** Architects compete on fees by:
 
 - **Improving efficiency** (faster design process)
-- **Developing specialization** (economies of sclea in specific building types)
+- **Developing specialization** (economies of scale in specific building types)
 - **Leveraging technology** (BIM, prefabrication expertise, digital tools)
 - **Building reputation** (higher-quality designs command higher fees)
 
@@ -197,13 +205,13 @@ This approach allows **fee flexibility** while tying architect compensation to *
 - **Negligence liability:** Building deficiencies result in client claims
 - **Reputational harm:** Word spreads about inadequate design quality
 
-<LeartBox type="critical">
+<Callout type="critical">
 **Key Principle:** An architect who cannot deliver professional-quality services at the proposed fee should either:
 1. Increase the fee to appropriate level, or
 2. Decline the engagement
 
 The solution is not to accept a low fee and deliver low-quality work. This violates professional standards and harms both client and profession.
-</LeartBox>
+</Callout>
 
 ### Prohibition: Coercive Low-Fee Arrangements
 
@@ -328,7 +336,7 @@ If the fee is insufficient for these investigations, the architect should:
 
 ### Case 1: Government Project Competitive Bids
 
-**Context:** Government projects often require competitive selead bids at specified fee levels.
+**Context:** Government projects often require competitive sealed bids at specified fee levels.
 
 **Ethical considerations:**
 - Architects must submit **independent** bids, not coordinate with competitors
@@ -379,7 +387,7 @@ If the fee is insufficient for these investigations, the architect should:
 
 ## The Anti-Competitive Conduct Framework
 
-<RegulationFramework>
+<ProcessFlow>
 To evaluate whether fee competition is ethical or anti-competitive:
 
 **Step 1: Is there agreement or coordination?**
@@ -407,7 +415,7 @@ To evaluate whether fee competition is ethical or anti-competitive:
 - If agreement/coordination exists: Prohibited collusion
 - If quality undermined: Prohibited negligence
 - If predatory or coercive: Prohibited anti-competitive conduct
-</RegulationFramework>
+</ProcessFlow>
 
 ## Competition Law Framework: RA 10667
 
@@ -444,9 +452,22 @@ The Philippine Competition Act (RA 10667) specifically addresses anti-competitiv
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering professional licensing and registration requirements
 
 **Next Article:** Continue with Additional LEA-PRAC Ethics Modules
+
+---
+
+## Related Articles
+
+- [RA 9266: Legal Framework](lea-prac-law-001)
+- [Prohibited Acts and Penalties](lea-prac-law-003)
+- [Grounds for Suspension and Revocation](lea-prac-eth-008)
+- [Non-Poaching and Professional Courtesy](lea-prac-eth-006)
+- [Obligations to Contractors](lea-prac-eth-007)
+- [Conflict of Interest](lea-prac-eth-010)
+- [Scope of Practice](lea-prac-law-002)
+- [Signing and Sealing Prohibition](lea-prac-law-017)

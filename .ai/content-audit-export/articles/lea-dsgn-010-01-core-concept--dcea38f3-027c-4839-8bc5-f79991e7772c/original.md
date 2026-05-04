@@ -1,10 +1,13 @@
 ## What You Need to Know for the LEA
 
-Parking requirements determine the minimum number of vehicle spaces a building must provide based on occupancy type and size. The LEA tests your ability to calculate parking needs from a project program and identify when accessible and compact spaces apply.
+## Learning Goal
+Calculate minimum parking requirements per occupancy type using NBC ratios, identify accessible and compact space allocations, apply parking ratios per PD 1096 (e.g., 1 slot/room for de luxe hotels), and verify compliance for mixed-use projects.
+
+Parking requirements determine the minimum number of vehicle spaces a building must provide based on occupancy type and size. 
 
 ## Core Concept
 
-Parking demand scleas with building use. The National Building Code (NBC) prescribes minimum ratios—expressed as spaces per unit, per square meter of floor area, or per occupancy measure—that reflect typical peak demand. These ratios balance operational feasibility against public policy, such as reducing on-street parking pressure.
+Parking demand scales with building use. The National Building Code (NBC) prescribes minimum ratios—expressed as spaces per unit, per square meter of floor area, or per occupancy measure—that reflect typical peak demand. These ratios balance operational feasibility against public policy, such as reducing on-street parking pressure.
 
 The primary calculation formula is:
 **Total Parking Slots = Σ(Use Type × Ratio) + Accessible Spaces** 
@@ -89,6 +92,13 @@ Scenario: 2,500 m² Office + 500 m² Retail.
 An office building requires only 48 slots by GFA. How many accessible spaces are needed?
 
 - Answer: **2 slots**. Even though 1% of 48 is 0.48, the law mandates a minimum of 2.
+
+
+**Exam Tip — ERR-DSGN-013:** Parking minimums are per PD 1096 Rule XVIII and local zoning ordinances, not the same nationwide. Accessible stalls must be provided at a minimum of 1 per 50 standard stalls (BP 344).
+
+## Cross-References
+
+See **LEA-DSGN-010-02** (Parking Geometry) for stall and aisle dimensions, **LEA-DSGN-010-03** (Vehicular Circulation) for driveway and access design, and **LEA-PLAN-004-07** (Zoning Analysis) for parking ordinance requirements.
 
 ## Common Mistakes
 

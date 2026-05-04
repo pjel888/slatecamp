@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Kitchen exhaust systems and special mechanical systems are critical fire safety and code compliance components in commercial buildings under Philippine regulations. These systems must be designed and installed according to PD 1096 (National Building Code) 2004 Revised IRR, Rules on Mechanical Systems, RA 9514 (Fire Code of the Philippines), and PD 1096 (National Building Code). Improper design or maintenance creates severe fire hazards, particularly in grease-laden environments.
+## Learning Goal
 
+Classify kitchen exhaust hoods (Type I vs Type II) by NFPA 96 requirements based on cooking appliance type (grease-producing vs steam/heat-only), and identify duct construction, fire suppression, and ventilation rate requirements for commercial kitchen exhaust systems.
 ## Kitchen Exhaust Hood Classification
 
 ### Type I Hoods (Grease-Laden Vapor)
@@ -11,8 +12,21 @@ Type I hoods capture grease-laden vapors from cooking equipment including griddl
 - _Grease filters_ to remove particulate matter before exhaust enters ductwork
 - _Fire suppression systems_ integrated within the hood and ductwork
 - _Duct systems_ constructed from minimum gauge per PD 1096 2004 IRR (NFPA 96 references 18 gauge steel or 20 gauge stainless steel for Type I hoods) with full seam welding
+
+
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 - _Sloped ductwork_ at minimum 1:12 gradient to direct grease back toward the hood
-- _Exhaust rate_ calculated at 50–100 cubic feet per minute (CFM) per linear foot of cooking surface length, per PD 1096 2004 IRR Rule VI Section 606 (or equivleant mechanical code section)
+- _Exhaust rate_ calculated at 50–100 cubic feet per minute (CFM) per linear foot of cooking surface length, per PD 1096 2004 IRR Rule VI Section 606 (or equivalent mechanical code section)
 
 A 2-meter linear cooking line requires: 2 m = 6.56 feet × 75 CFM/foot (mid-range) = approximately 492 CFM exhaust capacity.
 
@@ -208,3 +222,10 @@ A 20 m² trash room with 10 ACH requires: (20 m² × 10 ACH) / 60 minutes = 3.33
 3. _Make-up air imbalance_ creates negative pressure, compromising smoke control and pressurization in high-rise buildings.
 4. _Maintenance neglect_ (clogged grease ducts, inoperative dampers) invalidates both fire suppression and smoke control effectiveness.
 5. _Annual professional certification_ of kitchen fire suppression systems is legally required and must be documented for inspection authority review.
+
+## Related Articles
+
+See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, **lea-util-002-04-core-concept**, **lea-util-002-06-core-concept**, **lea-util-002-07-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

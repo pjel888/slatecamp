@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Distinguish NHA's role as housing producer (not financier) from SHFC (community finance) and Pag-IBIG (individual loans), describe NHA production programs (resettlement, MRBs, slum upgrading), and identify NHA's target beneficiaries.
+
 The Philippine government houses policies and production through separate agencies: NHA builds housing; SHFC finances community programs; Pag-IBIG finances individual loans. Understanding who does what is essential for application questions.
+
 
 ## Core Concept
 
@@ -27,6 +31,13 @@ NHA resettlement projects are highly visible in Metro Manila (Alalay sa Kaunlara
 3. **Program matching:** "Which program allows a community to collectively mortgage land they occupy?" → CMP.
 
 <Tip>**Memory aid:** NHA = **N**ational Housing **A**uthority = **A**uthority = **Authority TO BUILD**. SHFC = **S**ocial Housing **F**inance = **F**inance = provides the mortgage money.</Tip>
+
+
+**Exam Tip:** NHA's role: PRODUCER, not financier. NHA builds resettlement projects, MRBs, and slum upgrading. NHA does NOT provide individual home loans — that's Pag-IBIG. NHA targets the poorest: bottom 30% income bracket.
+
+## Cross-References
+
+See **LEA-PLAN-003-04** (Housing Production) for NHA delivery methods, **LEA-PLAN-007-02** (DHSUD) for regulatory oversight of NHA, and **LEA-PLAN-003-06** (Informal Settlements) for NHA resettlement programs.
 
 ## Common Mistakes
 

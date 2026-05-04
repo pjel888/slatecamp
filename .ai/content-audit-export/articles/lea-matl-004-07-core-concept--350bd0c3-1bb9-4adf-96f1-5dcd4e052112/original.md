@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Structural steel construction dominates Philippine high-rise buildings, bridges, and industrial facilities. The LEA expects mastery of steel frame erection sequencing, connection types (bolted vs. welded), lateral force-resisting systems (moment-resisting frames, braced frames, dual systems), fireproofing methods, and design provisions per AISC 360 and NSCP 2015 Chapter 5. You must understand construction logistics, installation defects, and quality control requirements aligned with Philippine fabrication practices.
-
+Describe structural steel construction systems — bolted and welded connections, composite steel-concrete construction, moment frames, braced frames — and identify when each system is appropriate for Philippine building projects.
 ## Core Concept
 
 Structural steel construction assembles prefabricated members (columns, beams, braces) on-site through bolted or welded connections, creating a framework capable of resisting gravity and lateral forces. Steel offers high strength-to-weight ratio, rapid assembly (vs. concrete), and precision fabrication in controlled shop environments.
@@ -82,3 +82,10 @@ The LEA evaluates structural steel construction through:
 <WikiMistakeCard title="Specifying Fireproofing Without Rating Verification" body="An architect specifies 'standard spray fireproofing' without confirming the required fire-resistance rating (2, 3, or 4 hours per occupancy). The applied fireproofing fails to achieve the required rating; renovation is necessary. Always specify the fire-resistance rating and verify that the proposed method meets it." />
 
 <WikiMistakeList items={["Assuming bolted and welded connections are interchangeable—bolted is faster in field; welded provides monolithic behavior. Choose based on project needs, not convenience alone.", "Over-relying on moment-resisting frames for seismic design in high-rise buildings without exploring dual systems—dual (MRF + bracing) optimizes ductility and stiffness, reducing member sizes and cost.", "Underestimating fireproofing maintenance—intumescent coatings require periodic touch-up; spray-applied fireproofing is vulnerable to impact and water. Budget for lifecycle maintenance.", "Failing to account for Philippine tropical weather—spray-applied fireproofing application requires dry conditions; monsoon season may delay work. Schedule accordingly.", "Specifying high-cost board fireproofing where spray-applied meets rating requirements—match fireproofing method to actual rating need, not budget assumptions."]} />
+
+## Related Articles
+
+See also within Construction Systems and Methods: **lea-matl-004-06-core-concept**, **lea-matl-004-08-core-concept**, **lea-matl-004-09-core-concept**, **lea-matl-004-10-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

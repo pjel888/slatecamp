@@ -1,9 +1,10 @@
 ## What You Need to Know for the LEA
 
-<Callout>**Deconstructivism** is tested as the movement that fragmented and destabilized modernism's geometric order. The LEA examines whether you recognize the 1988 MoMA exhibition as the movement's crystallization point, can identify buildings by **Frank Gehry**, **Zaha Hadid**, **Daniel Libeskind**, and **Peter Eisenman**, and understand how digital tools enabled formal experimentation.</Callout>
+## Learning Goal
 
+Identify the key characteristics of Deconstructivism — fragmentation, non-rectilinear geometry, distorted and displaced forms — and recognize the seven architects featured in the 1988 MoMA exhibition (Gehry, Hadid, Libeskind, Eisenman, Koolhaas, Tschumi, Coop Himmelb(l)au) by their major works.
 ## Core Concept
-**Deconstructivism** emerged from the 1988 Museum of Modern Art exhibition "Deconstructivism in Architecture," curated by **Philip Johnson** and **Mark Wigley**. The movement borrowed terminology from French philosopher **Jacques Derrida's** deconstruction theory, which questioned the stability of linguistic meaning by revealing internal contradictions and suppressed assumptions. Architects applied this intellectual framework to building form: what if buildings revelead their own contradictions? What if they appeared to deconstruct or destabilize themselves visually?
+**Deconstructivism** emerged from the 1988 Museum of Modern Art exhibition "Deconstructivism in Architecture," curated by **Philip Johnson** and **Mark Wigley**. The movement borrowed terminology from French philosopher **Jacques Derrida's** deconstruction theory, which questioned the stability of linguistic meaning by revealing internal contradictions and suppressed assumptions. Architects applied this intellectual framework to building form: what if buildings revealed their own contradictions? What if they appeared to deconstruct or destabilize themselves visually?
 
 Deconstructivism fragmented the smooth, continuous surfaces of modernism and postmodernism. Instead of clear, unified forms, Deconstructivist buildings appeared to splinter, collide, or twist in ways that denied coherence. Materials and structural systems were exposed and apparently contradicted; forms seemed to defy gravity or logic. This created an architecture of visual and conceptual instability that reflected postmodern anxiety about certainty and meaning.
 
@@ -36,18 +37,15 @@ Do not dismiss Deconstructivism as merely aesthetic. While critics correctly poi
 <WikiExamTable headers={["Building", "Architect", "Year", "Location", "Key Features"]} rows={[['["**Guggenheim Museum Bilbao**", "**Frank Gehry**", "1993–1997", "Bilbao, Spain", "Titanium-clad biomorphic forms; fragmented geometry; computational design; curvilinear collisions"]', '["**Vitra Fire Station**", "**Zaha Hadid**", "1993", "Weil am Rhein, Germany", "Fractured planes; oblique angles; dynamic unstability; compressed, stretched form"]', '["**Jewish Museum Berlin**", "**Daniel Libeskind**", "1999 (opened 2001)", "Berlin", "Zigzag form; zinc cladding; internal void; fragmented geometry; memorial purpose"]', '["**House VI**", "**Peter Eisenman**", "1975", "Connecticut", "Abstract geometric intersection; deconstructed domestic spaces; contradiction of inside/outside"]', '["**Rosenthal Center for Contemporary Art**", "**Zaha Hadid**", "2003", "Cincinnati", "Cantilevered forms; fragmented facade; continuous undulating surfaces; public void"]', '["**Denver Art Museum Addition**", "**Daniel Libeskind**", "2006", "Denver", "Titanium and glass; fractured angular forms; jagged roofline; deconstructivist expression"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Movement identification and context.** "Which 1988 MoMA exhibition crystallized Deconstructivism as a movement?" Students identify the exhibition, its curators, and the philosophical underpinning from Derridean deconstruction theory.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Visual and formal recognition.** "The **Guggenheim Museum Bilbao's** titanium-clad forms appear to collide and fragment. Which architect designed it and which movement does it exemplify?" Students recognize **Frank Gehry** and Deconstructivism through formal fragmentation and computational geometry.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Technological innovation.** "How did digital tools like CATIA enable Deconstructivist design that would have been nearly impossible to achieve by hand?" Students articulate the relationship between computational capacity and formal experimentation.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Comparative analysis.** "How does Deconstructivism's fragmented geometry differ from Postmodernism's ornamental pastiche?" Students distinguish between formal destabilization (Deconstructivism) and historical quotation (Postmodernism).</ExamTip>
 
+<Callout>**Deconstructivism** is tested as the movement that fragmented and destabilized modernism's geometric order. The LEA examines whether you recognize the 1988 MoMA exhibition as the movement's crystallization point, can identify buildings by **Frank Gehry**, **Zaha Hadid**, **Daniel Libeskind**, and **Peter Eisenman**, and understand how digital tools enabled formal experimentation.</Callout>
 
 ## Common Mistakes
 <WikiMistakeCard mistake="Confusing Deconstructivism with mere sculptural or curvilinear form" correction="Not all curved or complex buildings are Deconstructivist. Deconstructivism is specifically about formal fragmentation, collision, contradiction, and the destabilization of coherent order." context="Zaha Hadid's later fluid parametric work is different from her early Deconstructivist Fire Station." />
@@ -55,7 +53,6 @@ Do not dismiss Deconstructivism as merely aesthetic. While critics correctly poi
 <WikiMistakeCard mistake="Treating Deconstructivism as purely aesthetic without philosophical ground" correction="Students dismiss the movement as superficial style." context="While the 1988 exhibition's theoretical coherence is debated, the movement emerged from genuine intellectual critique of modernist order and postmodern pastiche." />
 
 <WikiMistakeList mistakes={["Overlooking the non-Western architects within Deconstructivism. While **Gehry**, **Hadid**, and **Libeskind** dominate the canon, **Rem Koolhaas** (Dutch) and others shaped the movement. The movement is not purely American or European.", "Equating all Zaha Hadid's work with 1988 Deconstructivism. **Hadid's** early work (Vitra Fire Station) was fractured and deconstructivist; her later work pursued flowing parametric curves that are different in philosophy and aesthetics. The movement evolved; Hadid evolved with it.", "Misunderstanding the relationship to deconstruction theory. Students sometimes assume Deconstructivism directly applies Derrida's linguistic deconstruction to buildings. The relationship is more metaphorical and suggestive; architects borrowed the language of instability and internal contradiction, not literal textual deconstruction."]} />
-
 
 ## Key Terms
 - **Deconstructivism**: Architectural movement (1988–present) fragmenting and destabilizing modernist and postmodern order through colliding planes, complex geometry, and visual contradiction.
@@ -68,3 +65,10 @@ Do not dismiss Deconstructivism as merely aesthetic. While critics correctly poi
 - **Collision**: The intentional intersection and overlapping of distinct geometric or spatial systems without resolution; a Deconstructivist strategy.
 - **Void**: Empty space or absence within or through a building; used symbolically in **Libeskind's Jewish Museum**.
 - **Deconstruction**: French philosophical method questioning the stability of meaning by revealing internal contradictions; provides the movement's intellectual framework.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

@@ -9,13 +9,16 @@
 
 ## The Scenario — See It Before You Read It
 
+[SLATECAMP_UI_BLOCK:ArticleMedia name="lot-area-breakdown-pie" type="diagram" caption="Pie chart and stacked bar diagram showing how TLA (Total Lot Area) partitions into PSO (building footprint), ISA (hardscape/paved open), and USA (unpaved softscape). Show the equations PSO + TOSL = 100%, TOSL = ISA + USA, MACA = PSO + ISA. Use Basic R-2 without firewall as example: PSO 55%, ISA 30%, USA 15%."]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="firewall-comparison-diagram" type="diagram" caption="Side-by-side lot comparison: same lot with and without firewall. Without firewall: PSO 55%, USA 15%, MACA 85%. With firewall: PSO 60%, USA 10%, MACA 90%. Show how firewall shifts the ratio. Include a callout showing that Table VIII.1 is organized by zone + firewall status, NOT by lot type."]
+
 ## Learning Goal
 
 After reading this article, you should be able to:
 
 Calculate floor area ratio (FAR), building footprint, and gross floor area (GFA) under PD 1096 Rule VII; distinguish FAR from building coverage and floor area; apply the maximum allowable FAR by occupancy group and building height; identify floor area exemptions (basements used only for parking, mechanical floors, roof decks under certain conditions).
 ---
-
 
 You are standing on a vacant 500 sq.m lot in Quezon City, zoned Basic R-2 (no local ordinance modifying national standards). Your client hands you a sketch: “I want the biggest building possible, and pave everything else for the cars.”[file:17]
 
@@ -277,10 +280,6 @@ C) PSO can be expressed in sq.m when the lot is smaller than 1,000 sq.m.
 D) PSO = 275 sq.m is correct specifically for Basic R-2 lots.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Click to reveal the answer Correct Answer: B PSO is always a percentage of TLA. The **area** corresponding to PSO is the AMBF. For a 500 sq.m lot at 55% PSO, AMBF = 275 sq.m. The PSO is 55%, not 275 sq.m.[file:17]
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -294,10 +293,6 @@ C) Table VII.1
 D) Table VII.G.1
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Click to reveal the answer Correct Answer: C Table VIII.1 distinguishes firewall vs non-firewall for each zone. Table VII.1 lists PSO by occupancy and **lot type** (inside/corner/through), which you must compare with Table VIII.1 and then adopt the more restrictive value.[file:17][file:18]
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -311,10 +306,6 @@ C) 300 sq.m
 D) 450 sq.m
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Click to reveal the answer Correct Answer: B — 150 sq.m Basic R-2, no firewall: USA = 15% (from Table VIII.1). USA area = 1,000 x 0.15 = 150 sq.m.[file:17]
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -328,10 +319,6 @@ C) Either, at the architect’s discretion.
 D) 70% — firewall entitlement overrides lot-type limitations.
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Click to reveal the answer Correct Answer: B Rule VII, Sec. 704.4.a requires that where multiple applicable controls differ, the **more stringent** (more restrictive) value governs. Here, 65% PSO is more restrictive than 70%.[file:17]
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -351,16 +338,16 @@ Answer aloud, then check.
 10. Com-3 with firewall: PSO = \_\_\_%.
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="details" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Reveal Answers 1. 100% 2. ISA + USA 3. PSO + ISA 4. 55% 5. 15% 6. Table VII.1 7. True — USA is identified as “the true open space”.[file:17] 8. 85% 9. AMBF = TLA x PSO 10. 90% [file:17]
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
-
+---
 
 ---
+
+## Exam Tip
+
+LEA Trap: Three distinct metrics: (1) FAR = total floor area ÷ lot area, (2) Building coverage = footprint area ÷ lot area (max 70% in most zones), (3) Floor area = sum of all floor plates measured from exterior walls. Exclusions from FAR: basement (if used only for parking/mechanical), roof decks, uncovered balconies. FAR is the MOST tested metric on the exam.
 
 
 
@@ -368,7 +355,7 @@ Extracted summary:
 
 ## Exam Tip
 
-LEA Trap: Three distinct metrics: (1) FAR = total floor area ÷ lot area, (2) Building coverage = footprint area ÷ lot area (max 70% in most zones), (3) Floor area = sum of all floor plates measured from exterior walls. Exclusions from FAR: basement (if used only for parking/mechanical), roof decks, uncovered balconies. FAR is the MOST tested metric on the exam.
+ALE Trap: Three distinct metrics: (1) FAR = total floor area ÷ lot area, (2) Building coverage = footprint area ÷ lot area (max 70% in most zones), (3) Floor area = sum of all floor plates measured from exterior walls. Exclusions from FAR: basement (if used only for parking/mechanical), roof decks, uncovered balconies. FAR is the MOST tested metric on the exam.
 
 ## Cross‑References
 
@@ -406,3 +393,5 @@ LEA Trap: Three distinct metrics: (1) FAR = total floor area ÷ lot area, (2) Bu
    - Your Basic R-2, R-3, Com-1–3, Ind-1, and Institutional PSO/ISA/USA/TOSL/MACA values already align with Table VIII.1; I preserved them and just anchored them with citations.[file:17]
 
 If you’d like, I can next build a one-page cheat sheet that only has (1) the equations, (2) the Basic R-2 / Com-2 / Com-3 rows, and (3) the PSO → AMBF conversion, for last-minute LEA cramming.
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

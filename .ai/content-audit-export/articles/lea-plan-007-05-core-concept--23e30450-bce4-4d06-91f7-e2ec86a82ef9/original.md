@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Describe LGU planning authority under RA 7160 — CLUP preparation, zoning ordinance adoption by Sanggunian, DHSUD conformity review — and identify the Planning Office as the LGU's technical planning arm.
+
 Local Government Units (LGUs) under the Local Government Code (RA 7160, 1991) have the authority and responsibility to prepare Comprehensive Land Use Plans (CLUPs) and implement them through zoning ordinances adopted by the Sanggunian (provincial, city, or municipal legislative body). The Planning Office is the LGU's technical arm for planning work.
+
 
 ## Core Concept
 
@@ -35,6 +39,13 @@ Every barangay in the Philippines is subject to its municipality's or city's CLU
 3. **Zoning authority:** "Which body adopts the zoning ordinance?" → Sanggunian (legislative body).
 
 <Tip>**Memory aid:** LGU Planning = prepare. Sanggunian = adopt (legislative). DHSUD = approve (national). Mayor = sign (executive). All four steps are required for a complete CLUP process.</Tip>
+
+
+**Exam Tip:** RA 7160 devolved planning but NOT standard-setting. DHSUD still sets national standards and reviews CLUPs for conformity. The Sanggunian adopts the zoning ordinance (legislative), the Mayor only signs it (executive confirmation).
+
+## Cross-References
+
+See **LEA-PLAN-001-05** (CLUP Process) for LGU planning mandate, **LEA-PLAN-002-04** (Land Use Planning) for zoning ordinance adoption by Sanggunian, and **LEA-PLAN-004-07** (Zoning Analysis) for site-level LGU regulation.
 
 ## Common Mistakes
 

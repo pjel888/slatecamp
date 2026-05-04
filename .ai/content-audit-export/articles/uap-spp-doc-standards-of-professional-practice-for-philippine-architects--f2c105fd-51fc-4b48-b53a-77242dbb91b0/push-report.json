@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:17:55.853Z",
+  "attempted_at": "2026-05-04T00:05:56.764Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
   "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:30365b304f8e3600bb36323f795afe71bcb3b54eaa503c4e1d3cd268956a7097",
-  "original_hash": "sha256:30365b304f8e3600bb36323f795afe71bcb3b54eaa503c4e1d3cd268956a7097",
-  "candidate_hash": "sha256:b520555f6267c92fa811de21cb1b8dc7d1f17e531c016b649c8ae55faf8d2132",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:b520555f6267c92fa811de21cb1b8dc7d1f17e531c016b649c8ae55faf8d2132",
+  "original_hash": "sha256:b520555f6267c92fa811de21cb1b8dc7d1f17e531c016b649c8ae55faf8d2132",
+  "candidate_hash": "sha256:3a949db40abdb5ea8458079335c1c1d4a4a4e594af59c5c1c9011eb025b1a5ee",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T14:19:56.198755+00:00"
 }

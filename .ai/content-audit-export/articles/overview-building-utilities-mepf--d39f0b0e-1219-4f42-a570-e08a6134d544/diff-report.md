@@ -1,32 +1,33 @@
 # Content Diff Report: overview-building-utilities-mepf
 
-Generated: 2026-05-03T13:44:37.969Z
+Generated: 2026-05-04T00:06:13.013Z
 Article ID: d39f0b0e-1219-4f42-a570-e08a6134d544
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:0de56a93588fc7128d177998c5111b724f1fc7ffdd35ae63f775cd5cd10ef845`
-- Normalized: `sha256:2ae977aa0d71502429223cfb45e9b15624fca745838c441de11868f7bf5f51d0`
-- Candidate: `sha256:74bd756461912d83c4c43f11ecbcb04338be75b3a02bbf73726458b1e459748c`
+- Original: `sha256:74bd756461912d83c4c43f11ecbcb04338be75b3a02bbf73726458b1e459748c`
+- Normalized: `sha256:664791691d00aedb1823bb62624a1900b3f257770f94bf783f832b0b07e1a25d`
+- Candidate: `sha256:664791691d00aedb1823bb62624a1900b3f257770f94bf783f832b0b07e1a25d`
 
 ## Line summary
 
-- Changed lines: 99
-- Inserted lines: 0
-- Deleted lines: 35
+- Changed lines: 71
+- Inserted lines: 7
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 4
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 4
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 4 preserved UI block(s).
 
 ## Warnings
 

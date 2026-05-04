@@ -3,31 +3,17 @@
 After reading this article, you should be able to:
 
 Apply the comprehensive signage package requirements under BP 344 and accessibility codes: identify the five required sign types (identification, directional, informational, warning, regulatory); apply tactile sign specifications (raised characters, Braille, mounting height, contrast); and determine when audible signs are required in addition to visual signs.
-### BP 344 (2024 IRR) — LEA Review Series
-
 ---
 
 ## REAL-WORLD HOOK
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="bp344"
-- Text: You close your eyes in the lobby of a government hospital. You are blind and have just arrived for the first time. The receptionist has stepped away. How do you find the accessible toilet? How do you know which elevator is accessible? How do you read the evacuation plan? How do you know which dressing room has accessible features? If the building's signage package was designed correctly under BP 344, you could answer every one of these questions without opening your eyes or asking for help. If i
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="LawCallout" status="preserved"]
-Extracted summary:
-- code="bp344"
-- Text: ISA (International Symbol of Accessibility): UN Blue (Pantone 279) on white background, minimum 150 mm × 150 mm. Braille Grade 2 at minimum 1 mm embossed height. Center of sign at 1,200-1,500 mm AFF. 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: LEA Pattern: The 'ISA BEST PLAN' mnemonic covers all BP 344 signage elements. Expect questions testing specific dimensions: ISA size on pole = 600×600 mm, center max 1,500 mm AFF, Braille Grade 2, and
-[/SLATECAMP_UI_BLOCK]
 
 ## CORE MNEMONIC FRAMEWORK
 
@@ -225,66 +211,34 @@ For a blind person, a flat embossed plan is like a photograph — informative on
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Not Just &quot;Blue&quot;"
-- Text: ### 🚨 TRAP LEART #1: Pantone 279 = "UN Blue" — Not Just "Blue" The exam will not accept generic "blue." The answer is **Pantone 279** or **UN Blue**. If the exam shows color chips, Pantone 279 is a medium royal blue — not navy, not sky blue, not cerulean.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Trap Leart"
-- Text: ### 🚨 TRAP LEART #2: 1500 mm vs. 1800 mm for ISA at Dressing Rooms General sign center: **1500 mm** AFF Dressing room ISA center: **1800 mm** AFF (Sec. 13.4) This is a deliberate exception. The higher position makes the dressing room ISA visible across a retail floor. The exam tests this difference directly.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Trap Leart"
-- Text: ### 🚨 TRAP LEART #3: 2200 mm vs. 2400 mm Overhead Clearance Projecting signs: **2200 mm** minimum vertical clearance ATM/kiosk signage height: max **2400 mm** AFF Both involve overhead space, but 2200 mm is a safety floor; 2400 mm is a reach-range ceiling for ATM instructional signage. These are different concepts: **safety clearance** vs. **readable height cap**.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Trap Leart"
-- Text: ### 🚨 TRAP LEART #4: Door Signs are 200 × 200 mm MINIMUM This is frequently confused with the ISA pole sign (600 × 600 mm). Door identification plates are **smaller** — min 200 × 200 mm. The pole-mounted ISA is **larger** — 600 × 600 mm.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Trap Leart"
-- Text: ### 🚨 TRAP LEART #5: Braille Grade 2, NOT Grade 1 Grade 1 = letter-for-letter (uncontracted). Grade 2 = contracted (standard literacy). **Grade 2 is the exam answer.** Grade 1 is incorrect.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Trap Leart"
-- Text: ### 🚨 TRAP LEART #6: Embossed Depth is 1 mm MINIMUM Not 2 mm. Not "at least 3 mm." The minimum is **1 mm**. Deeper is permitted; shallower is not.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Trap Leart"
-- Text: ### 🚨 TRAP LEART #7: Tactile Map Letter Height vs. Door Sign Size Tactile map letters: **50 mm** tall (raised) Door signs: **200 × 200 mm** plate minimum Pictogram border: **150 mm** (on tactile maps) These three numbers are distinct and all testable.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="Trap Leart"
-- Text: ### 🚨 TRAP LEART #8: Glass Door Markings Location Frameless full-height glass doors require markings between **900 mm and 1500 mm** AFF — this is a **range** (not just "1500 mm"). Both limits matter: lower limit prevents floor-level confusion; upper limit ensures visibility at eye level.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -414,3 +368,5 @@ You are reviewing a new 5-story office building's signage package. The submittal
 
 **Signs Design And Construction**, **Bp 344 Tactile And Visual Alarms**, **Accessible Seating In Assembly Areas**, **Public Service Counters And Atms**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

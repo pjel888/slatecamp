@@ -3,8 +3,6 @@
 After reading this article, you should be able to:
 
 Identify the three phases of American colonial architecture in the Philippines — the Neoclassical civic building period (Burnham Plans), the early 20th-century residential period (chalet/bungalow hybrid), and the Art Deco period — recognize key buildings (Manila Hotel, Post Office, Legislative Building) by architect and style; and explain the City Beautiful Movement's influence on Philippine urban planning.
-*An Immersive LEA Review Module*
-
 ---
 
 ## The Real-World Scenario (The Hook)
@@ -16,11 +14,6 @@ You are standing at the foot of the Luneta (Rizal Park), looking north toward th
 ## Core Concepts
 
 [SLATECAMP_UI_BLOCK:ui_0030 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory Anchor: "B-P-P = Burnham, Parsons, Pensionados."** Remember the chain: Daniel Burnham authored the 1905 plan, William E. Parsons implemented it as Consulting Architect of the BPW, and the Pensionado architects (Toledo, Arellano, Mapua, Barretto) carried the legacy forward. If a question ask
-[/SLATECAMP_UI_BLOCK]
-
 
 - **American Colonial Period (1898–1946):** The era during which U.S. governance transformed Philippine architecture through new building technologies (reinforced concrete, steel framing), institutional building programs, and American-trained Filipino professionals.
 - **Daniel Burnham's City Beautiful Movement:** An urban planning philosophy emphasizing monumental civic spaces, axial boulevards, and park systems to project order, beauty, and democratic ideals — applied to Manila and Baguio in 1905.
@@ -75,11 +68,6 @@ Extracted summary:
 ### New Building Technologies Introduced
 
 [SLATECAMP_UI_BLOCK:ui_0031 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Philippine Application:** Your adaptive reuse of a Gabaldon school in Bulacan preserves the elevated floor (flood protection), capiz-shell windows (natural light without glass), and open hallway-to-classroom plan (cross-ventilation). These are direct applications of William Parsons' tropical desig
-[/SLATECAMP_UI_BLOCK]
-
 
 | Technology | Impact |
 |------------|--------|
@@ -94,11 +82,6 @@ Extracted summary:
 ## LEA Exam Traps and Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0032 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Pattern — Architect-to-Project Pairings:** The exam frequently tests which architect designed which building. Focus on: Toledo = Manila City Hall, National Museum (Neoclassical); Arellano = Metropolitan Theater, Manila Post Office (Art Deco); Mapua = De La Salle Main Building, founded MIT
-[/SLATECAMP_UI_BLOCK]
-
 
 - **Trap: Confusing Burnham with Parsons.** Burnham and Pierce Anderson authored the 1905 plan, but **William E. Parsons** was the architect who actually implemented it on the ground. Burnham spent only weeks in the Philippines; Parsons stayed from 1905 to 1914. Parsons also created his own City Beautiful plans for **Cebu** and **Zamboanga**.
 - **Trap: Assuming the Burnham Plan was fully realized.** The planned Philippine Capitol Building — the centerpiece of Burnham's civic axis — was **never built**. The bayshore drive (Roxas Boulevard) and the radial avenue system are the most visible surviving elements.
@@ -106,12 +89,7 @@ Extracted summary:
 
 ---
 
-
 [SLATECAMP_UI_BLOCK:ui_0033 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ COMMON TRAP: The Philippine Capitol Building (the centerpiece of Burnham's civic axis) was NEVER BUILT. Many students assume it was constructed alongside the other Burnham Plan elements. It was approved in the 1916 Jones Law but killed by budget constraints and the shift toward Commonwealth. Roxa
-[/SLATECAMP_UI_BLOCK]
 
 ## Board-Prep Mnemonics
 
@@ -170,3 +148,5 @@ D) Nipa-thatch roofing with bamboo post-and-beam framing
 
 **Colonial European Influence**, **Spanish Colonial Laws Of The Indies**, **Modern Filipino Identity**, **Pre Colonial Vernacular**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

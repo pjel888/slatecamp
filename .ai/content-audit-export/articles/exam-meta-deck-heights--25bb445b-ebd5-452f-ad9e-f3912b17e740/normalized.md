@@ -3,7 +3,6 @@
 After reading this article, you should be able to:
 
 Apply all code provisions governing deck, balcony, porch, and terrace heights under PD 1096 Rule VII-VIII: determine when a deck counts toward FAR vs when it is excluded; identify minimum guardrail height (1.10 m) for elevated decks; apply minimum ceiling height requirements for covered decks; and distinguish decks from porches and balconies by their code classification.
-### LEA Review | BP 344 2024 IRR | PD 1096 | RA 7277/9442/10754
 ---
 
 > **HOW TO USE THIS DECK:** This is your one-page memory anchor for every dimensional number that appears on the LEA. Sections A and C isolate the two most-tested "clubs." Section B is the complete height ladder from floor to ceiling. Memorize the ladder in order — the LEA frequently asks "what is the correct height for ___?" with distractors only 100–200 mm off.
@@ -13,11 +12,6 @@ Apply all code provisions governing deck, balcony, porch, and terrace heights un
 ## SECTION A: THE "1800 CLUB" — Every Instance Where 1800 mm Appears
 
 [SLATECAMP_UI_BLOCK:ui_0042 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="bp344"
-- Text: All dimensions in this deck are governed by BP 344 (2024 IRR), specifically Appendix A (General Provisions) and Appendix D (Specific Space Requirements). The 1800 mm turning space appears across App. A, Sec. 5.3 (elevators), Sec. 11.4 (telephones), Sec. 12.1 (ATMs), Sec. 13.4 (dressing rooms), and A
-[/SLATECAMP_UI_BLOCK]
-
 
 > **Memory trigger:** "1800 = room to maneuver." Anywhere a wheelchair must turn, pass another chair, or approach a facility — expect 1800 mm.
 
@@ -41,11 +35,6 @@ Extracted summary:
 ### Quick-Fire A-List Recall
 
 [SLATECAMP_UI_BLOCK:ui_0044 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ CRITICAL WARNING: The WC cubicle is 1800 × 2250 mm — NOT 1800 × 1800 mm! The 1800 × 1800 applies to turning spaces, elevator lobbies, ATMs, phones, and roll-in showers. But the accessible WC cubicle requires 1800 mm WIDTH × 2250 mm DEPTH.
-[/SLATECAMP_UI_BLOCK]
-
 
 - **All 1800 × 1800** → turning space, elevator lobby, ATM, phone, drinking fountain, roll-in shower, vestibule
 - **1800 mm linear** → ramp landings (all), sidewalk passing, rest spaces on walkways
@@ -57,11 +46,6 @@ Extracted summary:
 ## SECTION B: THE HEIGHT LADDER — Vertical Stack from 0 mm to Ceiling
 
 [SLATECAMP_UI_BLOCK:ui_0043 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory Strategy: "1-8-2-5" Ladder Trick.** The height ladder from floor to ceiling follows: 200 (floor reach), 300 (handrail), 400 (kick plate), 500 (urinal), 600-700-750 (alarm, grab bar, WC handrail), 900 (handle, stair rail), 1100 (guard), 1200 (max side reach). Most-tested band is 750-1200 mm.
-[/SLATECAMP_UI_BLOCK]
-
 
 > **Memory strategy:** Read this ladder top-to-bottom once, then quiz yourself by covering the left column. On exam day, if you know whether a height is "below 750," "750–900," or "above 1200," you can eliminate three wrong answers instantly.
 
@@ -180,12 +164,7 @@ Extracted summary:
 
 *Module 11 | BP 344 2024 IRR LEA Review Series | Philippine context only*
 
-
 [SLATECAMP_UI_BLOCK:ui_0045 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Dimensional Strategy:** When a question gives a height in mm, immediately locate it on the ladder: below 750 (reach ranges), 750-900 (handrail zone), 900-1200 (handle/guard zone), above 1200 (max reach). If you know the band, you can eliminate 2-3 wrong answers.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -193,3 +172,5 @@ Extracted summary:
 
 **Penthouses And Roof Structures**, **Ceiling Heights And Room Sizes**, **Pd 1096 Rule Vii Height Limits**, **Allowable Floor Area Increases**
 
+
+<!-- no-media-needed: reference deck/QA compilation, text-optimal format -->

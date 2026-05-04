@@ -1,10 +1,14 @@
 ## What You Need to Know for the LEA
 
-Site plans are sclead drawings that communicate the spatial relationship between a building and its context—showing property boundaries, setback compliance, access, utilities, and landscape. The LEA expects you to read and produce site plans that demonstrate understanding of zoning setback regulations and site organization principles.
+## Learning Goal
+Read and produce site plans showing property boundaries, setback compliance, building footprint, access routes, utilities, and landscaping at appropriate scales, and verify site plan compliance with zoning regulations and CLUP requirements.
+
+Site plans are scaled drawings that communicate the spatial relationship between a building and its context—showing property boundaries, setback compliance, access, utilities, and landscape. The LEA expects you to read and produce site plans that demonstrate understanding of zoning setback regulations and site organization principles.
+
 
 ## Core Concept
 
-A **site plan** is an orthographic (top-down) view of a property showing the building footprint, adjacent landscape, utilities, and context features at a defined sclea. It is the primary communication tool for demonstrating compliance with zoning and development regulations.
+A **site plan** is an orthographic (top-down) view of a property showing the building footprint, adjacent landscape, utilities, and context features at a defined scale. It is the primary communication tool for demonstrating compliance with zoning and development regulations.
 
 **Essential site plan elements:**
 
@@ -22,9 +26,9 @@ A **site plan** is an orthographic (top-down) view of a property showing the bui
 
 7. **North arrow** is always included and prominently placed, usually in the upper right corner. This allows readers to understand orientation and interpret facade names (North Elevation, South-facing facade).
 
-8. **Sclea** is shown graphically (a drawn sclea bar) and numerically (e.g., 1:200, 1:500). The choice of sclea depends on the size of the site and level of detail required.
+8. **Scale** is shown graphically (a drawn scale bar) and numerically (e.g., 1:200, 1:500). The choice of scale depends on the size of the site and level of detail required.
 
-**Sclea conventions for site plans:**
+**Scale conventions for site plans:**
 - **1:500 or 1:1000**: For large sites (> 1 hectare) or master plans; shows overall layout.
 - **1:200 or 1:250**: For typical urban lots (0.5–1 hectare); shows building, parking, and immediate context.
 - **1:100**: For small infill sites; shows detailed parking layout and access.
@@ -53,9 +57,9 @@ Site plans communicate not only building placement but also the designer's under
 | **Aisle width (two-way)** | 6.0 m | NBC |
 | **Drive aisle width to accessible stall** | 3.0 m min (single space) / 3.6 m (van) | BP 344 |
 
-**Recommended sclea selection:**
+**Recommended scale selection:**
 - Show the building and immediate context (adjacent buildings, streets, utilities) clearly.
-- A sclea too small risks illegibility; a sclea too large may not show sufficient context.
+- A scale too small risks illegibility; a scale too large may not show sufficient context.
 - For exam drawings, 1:200 or 1:250 is typical for a standard urban lot.
 
 ## Philippine Practice Context
@@ -76,6 +80,13 @@ A site plan shows a building on a corner lot with utilities, adjacent buildings,
 <Tip>
 **Memory aid:** "PD 1096 Setback Rule" — For buildings up to 6–9 m, front=4.5 m, sides=2.0 m, rear=2.0 m. For taller buildings (9–15 m), front and rear increase; sides gradually increase. Always check building height first to determine the correct setback row in the table.
 </Tip>
+
+
+**Exam Tip:** Site plans must show property lines with dimensions, setbacks (front, side, rear), building footprint with dimensions, access driveways, parking layout, and utility connection points. Scale typically 1:200 or 1:500.
+
+## Cross-References
+
+See **LEA-DSGN-012-01** (Site Analysis) for site conditions documentation, **LEA-DSGN-012-02** (Site Development) for buildable area determination, and **LEA-PLAN-004-07** (Zoning Analysis) for setback compliance verification.
 
 ## Common Mistakes
 

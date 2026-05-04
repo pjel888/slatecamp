@@ -1,18 +1,32 @@
 {
   "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
   "slug": "spp-doc-204-b-construction-management-services",
-  "generated_at": "2026-05-03T13:44:11.026Z",
-  "original_hash": "sha256:1174a70fa66f6f3140c5c143cf394bb3aac6ab78b99d900af2ce8fd6bb3e1ff6",
-  "normalized_hash": "sha256:1a5c0bdd6e6866aa7f1d7083f29682bdc2a48cb09211722cf9c85e5c62291aac",
-  "candidate_hash": "sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5",
+  "generated_at": "2026-05-04T00:05:38.264Z",
+  "original_hash": "sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5",
+  "normalized_hash": "sha256:c0ffad8f803d3efd9cfff82de45cf72d08d940e34489dc2c48a796523b029506",
+  "candidate_hash": "sha256:c0ffad8f803d3efd9cfff82de45cf72d08d940e34489dc2c48a796523b029506",
   "ui_blocks_count": 6,
-  "placeholders_found": 6,
-  "placeholders_resolved": 6,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 6,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition."
+  ]
 }

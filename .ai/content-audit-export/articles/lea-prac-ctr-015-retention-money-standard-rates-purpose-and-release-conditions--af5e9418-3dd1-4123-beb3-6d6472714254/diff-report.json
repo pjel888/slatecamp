@@ -1,38 +1,46 @@
 {
   "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
   "slug": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions",
-  "generated_at": "2026-05-03T13:44:45.914Z",
-  "old_hash": "sha256:610aedda193d3de7ecdfd7dd788e6e243bdba995ab3ece144c5ed94f957916be",
-  "new_hash": "sha256:d87d91f95fde7873f15ef96419f1cb46ac8c99ceff476b09981b7c7e4a5eafbf",
-  "original_hash": "sha256:610aedda193d3de7ecdfd7dd788e6e243bdba995ab3ece144c5ed94f957916be",
-  "normalized_hash": "sha256:44ee1177c755a1717b1a2a5ad3839054418121cba2b0eb1ee0778a8b8f880b06",
-  "candidate_hash": "sha256:d87d91f95fde7873f15ef96419f1cb46ac8c99ceff476b09981b7c7e4a5eafbf",
+  "generated_at": "2026-05-04T00:06:22.055Z",
+  "old_hash": "sha256:d87d91f95fde7873f15ef96419f1cb46ac8c99ceff476b09981b7c7e4a5eafbf",
+  "new_hash": "sha256:a1bcacc3c7fb8d1831f6bd2c96405118f50673a904167d828bac701e3f531686",
+  "original_hash": "sha256:d87d91f95fde7873f15ef96419f1cb46ac8c99ceff476b09981b7c7e4a5eafbf",
+  "normalized_hash": "sha256:a1bcacc3c7fb8d1831f6bd2c96405118f50673a904167d828bac701e3f531686",
+  "candidate_hash": "sha256:a1bcacc3c7fb8d1831f6bd2c96405118f50673a904167d828bac701e3f531686",
   "changed": true,
-  "changed_line_count": 47,
-  "inserted_line_count": 24,
-  "deleted_line_count": 0,
+  "changed_line_count": 35,
+  "inserted_line_count": 0,
+  "deleted_line_count": 8,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 47,
-    "inserted": 24,
-    "deleted": 0,
-    "original_line_count": 41,
-    "candidate_line_count": 65
+    "changed": 35,
+    "inserted": 0,
+    "deleted": 8,
+    "original_line_count": 65,
+    "candidate_line_count": 57
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
 }

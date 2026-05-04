@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Mies van der Rohe's design philosophy and signature buildings are core LEA content. You must understand "less is more," recognize the Barcelona Pavilion and Farnsworth House as canonical examples, and explain how his approach differs from Le Corbusier's functionalism. The exam tests both theory and visual identification.</Callout>
+## Learning Goal
 
+Identify Mies van der Rohe's architectural philosophy — 'less is more,' universal space, honest expression of materials — and recognize his major works (Barcelona Pavilion, Farnsworth House, Seagram Building) by their structural clarity and minimalist precision.
 ## Core Concept
 **Ludwig Mies van der Rohe** (1886–1969) stands alongside Le Corbusier as one of the two most influential modernists. But where Le Corbusier pursued functionalism and complexity, Mies pursued reduction and essence. His axiom—"**less is more**"—became the philosophy of minimalism.
 
@@ -35,6 +36,8 @@ Mies's design method was the opposite of Le Corbusier's programmatic rationalism
 
 <ExamTip>**Pattern 4: Visual Identification.** You may see an image of a glass-and-steel pavilion: "This building, designed by Mies van der Rohe, demonstrates the concept of [A] decorative modernism [B] universal space through minimal enclosure [C] functionalist planning [D] structural ornament." Answer: B. You must recognize Miesian principles from images.</ExamTip>
 
+<Callout>Mies van der Rohe's design philosophy and signature buildings are core LEA content. You must understand "less is more," recognize the Barcelona Pavilion and Farnsworth House as canonical examples, and explain how his approach differs from Le Corbusier's functionalism. The exam tests both theory and visual identification.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing Mies's minimalism with Le Corbusier's functionalism" correction="These are fundamentally different. Le Corbusier's approach is programmatic—design follows function. Mies's approach is philosophical—reduce to essence and let form emerge. Le Corbusier's buildings do things; Mies's buildings *are*." context="The LEA tests your understanding of distinct modernist philosophies. Confusing these two architects is a major error that will cost points on comparative questions." />
@@ -60,3 +63,10 @@ Mies's design method was the opposite of Le Corbusier's programmatic rationalism
 **Transparency**: Architectural concept using glass to dissolve boundaries between interior and exterior; creates visual continuity and democratic access to space.
 
 **Minimalism**: Design philosophy emphasizing essential elements, geometric purity, reduction to abstraction; Mies is a foundational figure in architectural minimalism.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03c-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

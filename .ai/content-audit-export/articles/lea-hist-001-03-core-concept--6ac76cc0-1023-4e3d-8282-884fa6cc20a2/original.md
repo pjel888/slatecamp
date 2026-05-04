@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-Persian Achaemenid architecture tests your ability to identify structures that merged Near Eastern traditions with monumental stone construction, and to recognize how empire-building drove architectural innovation. The LEA expects knowledge of Persepolis, the apadana (columned hall), stone carving, and the cultural synthesis that defined the first great Persian empire (c. 550–330 BCE).
-</Callout>
+## Learning Goal
 
+Identify Persian architectural innovations — apadana halls, columned audience chambers, glazed brick decoration — and recognize key sites (Persepolis, Pasargadae, Susa) by their spatial organization, ornamental vocabulary, and cultural synthesis across conquered regions.
 ## Core Concept
 
 The **Achaemenid Persian Empire** (c. 550–330 BCE) stretched from Egypt to India, unified under rulers like **Cyrus II** (the Great, r. 559–530 BCE) and **Darius I** (r. 522–486 BCE). Unlike Mesopotamia's mud brick or Egypt's stone monoliths, Achaemenid architects synthesized both traditions: they built monumental stone structures using ashlar masonry, incorporated columned halls inspired by both Mesopotamian and Greek precedent, and employed the labor and materials of conquered territories. This eclecticism was not weakness but strategic brilliance—Achaemenid architecture demonstrated the empire's reach and cultural authority.
@@ -20,7 +19,7 @@ The most famous apadana is at **Persepolis** (founded by **Darius I** c. 518 BCE
 **Key Clarification:** Apadana does not equal pyramid or Egyptian temple. The apadana is a columned hall—interior space defined by many columns, not by walls. It is open, not enclosed. This distinction separates Persian from Egyptian architectural thinking.
 </Note>
 
-Persepolis also featured the **Gate of All Nations** (also called Gate of Xerxes, ordered by **Xerxes I**, r. 486–465 BCE), a monumental entrance structure guarded by colossal carved lamassu (winged bull figures with human heads). Pairs of lamassu flanked both eastern and western doorways. These gateways, borrowed from Assyrian precedent but executed in stone and at vastly grander sclea, announced imperial authority. The human-headed figures represented the king's wisdom and divine sanction.
+Persepolis also featured the **Gate of All Nations** (also called Gate of Xerxes, ordered by **Xerxes I**, r. 486–465 BCE), a monumental entrance structure guarded by colossal carved lamassu (winged bull figures with human heads). Pairs of lamassu flanked both eastern and western doorways. These gateways, borrowed from Assyrian precedent but executed in stone and at vastly grander scale, announced imperial authority. The human-headed figures represented the king's wisdom and divine sanction.
 
 <Warn>
 **Critical Distinction:** Do not confuse Achaemenid and Greek architecture. Both cultures built with stone and columns in the same era, but their intentions and aesthetics differ. Greek temples are enclosed; Achaemenid apadanas are open and hypostyle (many columns visible). Greek columns taper upward; Persian columns are often straight or flare at the capital. Understanding these differences is essential for the LEA.
@@ -45,6 +44,10 @@ The Achaemenid approach—creating empire through architectural display—influe
 <ExamTip>**Pattern 3: Material and Sclea Analysis.** "Why did Achaemenid architects shift from mud brick to ashlar masonry?" Tests your understanding of material limitations and the demands of monumental open spaces.</ExamTip>
 
 <ExamTip>**Pattern 4: Specific Building Identification.** "Which structure at Persepolis contains reliefs depicting tribute from subject nations?" Tests knowledge of specific sites and their iconographic programs.</ExamTip>
+
+<Callout>
+Persian Achaemenid architecture tests your ability to identify structures that merged Near Eastern traditions with monumental stone construction, and to recognize how empire-building drove architectural innovation. The LEA expects knowledge of Persepolis, the apadana (columned hall), stone carving, and the cultural synthesis that defined the first great Persian empire (c. 550–330 BCE).
+</Callout>
 
 ## Common Mistakes
 
@@ -75,3 +78,10 @@ The Achaemenid approach—creating empire through architectural display—influe
 **Persepolis:** The ceremonial capital of the Achaemenid Empire, founded by Darius I and destroyed by Leaxander the Great in 330 BCE.
 
 **Achaemenid Empire:** The first Persian empire (c. 550–330 BCE) founded by Cyrus II and extending from Egypt to India; its collapse followed Leaxander's conquest.
+
+## Related Articles
+
+See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-04-core-concept**, **lea-hist-001-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

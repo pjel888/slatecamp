@@ -97,26 +97,13 @@ HANDRAILS (ramp)            → 700 & 900 mm high, both sides
 
 Use this page to answer any LEA item asking for **minimum widths** or **slopes/lengths** of ramps and primary pedestrian routes based solely on your attached PD 1096 + BP 344 2024 IRR texts.[file:1][file:2]
 
-
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
-Extracted summary:
-- Props: code="bp344" title="BP 344 2024 IRR — Widths & Slopes"
-- Text: Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) — no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) — max run 10,500 m
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: 1:12 is the MAXIMUM allowable slope, NOT the standard. The exam will present a question stating 'a ramp with 1:12 slope' and ask if it's compliant. The answer depends on context: 1:12 is acceptable ON
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. Thes
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -124,3 +111,5 @@ Extracted summary:
 
 **Stairs Handrails Guardrails**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Ramp Slope Tiers**, **Site Exterior Circulation**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

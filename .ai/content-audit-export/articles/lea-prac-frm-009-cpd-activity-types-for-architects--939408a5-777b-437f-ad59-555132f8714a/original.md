@@ -1,8 +1,21 @@
 ## CPD Activity Types for Architects
 
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- List the CPD activity types for architects: formal learning, seminars, publications, self-study.
+- Explain the CPD credit unit allocation for each activity type.
+- Distinguish among CPD categories: structured, unstructured, and self-directed.
+- Apply CPD credit tracking to renewal scenarios.
+
+
+
 ### Structured Learning Activities
 
 Structured learning encompasses formal courses, seminars, workshops, and conferences offered by accredited CPD providers. These activities include in-person training, online courses, webinars, and hybrid formats combining classroom and digital instruction. Structured learning typically awards higher credit units because it involves systematic curriculum, instructional expertise, and formal evaluation of learning outcomes. Architects completing structured activities receive certificates documenting credit hours and competency areas covered.
+
+<Tip>**Credit value hierarchy (highest to lowest):** Teaching/Presentation and Research/Innovation award the most credits; Structured Learning (formal courses, seminars) is moderate; Self-Directed Learning (reading journals, podcasts) awards the fewest. Plan your CPD portfolio accordingly.</Tip>
 
 Structured learning activities address specific knowledge gaps identified in the professional track categories. Courses on building codes, structural design, sustainable architecture, and project management constitute structured learning. Professional conferences where architects attend presentations and seminars on current practice issues qualify as structured learning. Online platforms offering architecture-specific courses with proctored assessments and completion certification provide structured learning credits. The Board recognizes only programs delivered by accredited providers meeting minimum quality standards.
 
@@ -26,6 +39,23 @@ Teaching activities must be documented with course outlines, attendance records,
 
 ### Research and Innovation Activities
 
+<ExamTip>The LEA may test your ability to classify CPD activities. Key distinction: structured learning = formal courses with evaluation; self-directed = independent study without instruction; work-based = learning through actual practice; teaching = instructing others; research = advancing knowledge through investigation.</ExamTip>
+
 Research activities including conducting studies on architectural practice, testing new materials or methodologies, or investigating emerging design approaches generate CPD credits. Architects participating in professional research projects, contributing to professional organization studies, or conducting independent research on architectural topics earn credits. Innovation projects implementing new technologies, sustainable design methods, or construction processes that enhance professional knowledge qualify for credits. Documentation includes research proposals, findings summaries, or patent/innovation records.
 
 Research activities recognize that architects advancing the profession through investigation and experimentation deserve CPD credit. Sustainable design research, structural innovation studies, or construction technology investigations demonstrate professional advancement. Architects developing new design methodologies or testing emerging construction techniques earn credits reflecting their contribution to professional evolution. Credits are substantial because research requires significant time and intellectual engagement beyond normal practice. The Board evaluates research activities for professional relevance and contribution to architectural practice advancement.
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)

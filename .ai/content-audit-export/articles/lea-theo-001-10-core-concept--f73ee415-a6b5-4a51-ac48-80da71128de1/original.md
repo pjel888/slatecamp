@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The LEA tests your understanding of Francis D. K. Ching's hierarchy of primary elements in architecture. You must grasp that point, line, plane, and volume are conceptual building blocks that organize and generate all architectural form. This is foundational geometric and spatial thinking that underlies design methodology. Understanding how each element generates the next and how architects employ these elements to create form is essential preparation.
-</Callout>
+## Learning Goal
 
+Identify Francis D.K. Ching's hierarchy of primary architectural elements — point, line, plane, volume — and explain how these fundamental elements combine and transform to create architectural form and space.
 ## Core Concept
 
 Francis D. K. Ching's *Architecture: Form, Space, and Order* presents the most influential contemporary framework for understanding how architects think about and manipulate form. Central to Ching's method is the concept of **primary elements**: the foundational geometric and spatial units from which all architectural form is generated. These elements are not visible except to the mind's eye; they are conceptual tools. Yet architects unconsciously or consciously employ them whenever they design. The hierarchy progresses logically: point generates line, line generates plane, plane generates volume. Each element is understood through its properties and its relationship to space.
@@ -68,6 +67,10 @@ Critical distinction: Primary elements are about spatial organization and form g
 
 <ExamTip>**Pattern 5: Complex Form Analysis.** The LEA presents a building or spatial problem and asks you to analyze it using primary elements. Example stem: "A building facade composed of several distinct rectangular volumes, each aligned vertically and horizontally with the others, demonstrates the use of which primary elements to create coherent form?" Answer: Planes (the rectangular surfaces), organized into volumes (the distinct spatial forms), arranged with line-like alignments (the regular grid organizing the composition).</ExamTip>
 
+<Callout>
+The LEA tests your understanding of Francis D. K. Ching's hierarchy of primary elements in architecture. You must grasp that point, line, plane, and volume are conceptual building blocks that organize and generate all architectural form. This is foundational geometric and spatial thinking that underlies design methodology. Understanding how each element generates the next and how architects employ these elements to create form is essential preparation.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Assuming primary elements must be visible" correction="The primary elements are conceptual tools. We perceive them visually as the convergence of surfaces (point), the edge where two planes meet (line), or the bounding surface (plane). They are not necessarily explicit visual elements—they are mental constructs for understanding form." context="Understanding that primary elements are conceptual allows you to apply Ching's framework to any building, even when elements are not literally visible as geometric shapes." />
@@ -97,3 +100,10 @@ Critical distinction: Primary elements are about spatial organization and form g
 **Proportion** — The ratio of dimensions within an element (length to width in a plane, or relationships among edges in a volume); fundamental to visual harmony.
 
 **Orientation** — The alignment of an element relative to cardinal directions or the viewer's position; affects perception and spatial organization.
+
+## Related Articles
+
+See also within Nature of Architecture: **lea-theo-001-01-core-concept**, **lea-theo-001-07-core-concept**, **lea-theo-001-08-core-concept**, **lea-theo-001-09-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

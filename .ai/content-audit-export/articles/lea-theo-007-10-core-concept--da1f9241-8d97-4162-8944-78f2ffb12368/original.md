@@ -3,6 +3,14 @@
 Social architecture reorients the design process from top-down professional authority to participatory engagement with end-users and affected communities. The LEA tests whether you understand the theoretical shift: architecture as a **solution imposed by experts** versus architecture as a **process negotiated among stakeholders**. You must master participatory methodologies, equity frameworks, and the distinction between superficial "community input" and genuine power-sharing in design.
 </Callout>
 
+
+
+## Learning Goal
+
+- Distinguish genuine sustainability (reducing total environmental impact across a building's lifecycle) from greenwashing (cosmetic claims without systematic change).
+- Define embodied carbon, operational energy, lifecycle assessment, and passive/active system balance.
+- Explain how sustainable architecture treats environmental performance as a primary design generator equivalent to program, structure, and aesthetics.
+
 ## Core Concept
 
 Social architecture (also termed socially responsive architecture, community-engaged design, or participatory architecture) treats **the community affected by the building as primary stakeholders in design, not mere end-users**. This represents a fundamental epistemological shift from the modernist model where architects possessed privileged knowledge and communities were passive recipients.
@@ -13,13 +21,13 @@ Social architecture (also termed socially responsive architecture, community-eng
 
 **The Critique of Professional Autonomy**
 
-Modernism consolidated architectural authority: trained professionals possessed technical knowledge unavailable to the public; design decisions were justified through functional and aesthetic principles legible only to the profession. Post-occupancy evaluation research (widely available by the 1970s) revelead the consequences: buildings designed without user input frequently failed to accommodate actual behavior. Oscar Newman's *Defensible Space* (1972) analyzed how modernist housing designs—intended as democratic, efficient, and rational—created instead unsafe, alienated environments because physical form ignored social and behavioral realities.
+Modernism consolidated architectural authority: trained professionals possessed technical knowledge unavailable to the public; design decisions were justified through functional and aesthetic principles legible only to the profession. Post-occupancy evaluation research (widely available by the 1970s) revealed the consequences: buildings designed without user input frequently failed to accommodate actual behavior. Oscar Newman's *Defensible Space* (1972) analyzed how modernist housing designs—intended as democratic, efficient, and rational—created instead unsafe, alienated environments because physical form ignored social and behavioral realities.
 
 Social architecture emerged as ethical corrective: if buildings shape behavior and experience, those affected should have voice in design. This is not merely ethical sentiment but epistemological necessity—communities possess place-based knowledge, experiential understanding, and contextual information that professionals lack.
 
 **Participation Frameworks and Graduated Engagement**
 
-Not all community engagement is equivleant. Sherry Arnstein's "Ladder of Citizen Participation" (1969, still foundational) distinguishes levels:
+Not all community engagement is equivalent. Sherry Arnstein's "Ladder of Citizen Participation" (1969, still foundational) distinguishes levels:
 
 1. **Non-participation**: Manipulation or therapy masquerading as participation; the "community" is informed of decisions already made. Common in projects where consultation is performative.
 
@@ -45,7 +53,7 @@ Contemporary social architecture employs multiple engagement methods:
 
 Lucien Kroll's housing developments in Belgium (1970s–present) pioneered participatory design in residential architecture. Rather than master-planned housing estates, Kroll involved future residents in design decisions—spatial configurations, material choices, facade treatments. The result: buildings that appear collaged, even chaotic, but are deeply responsive to diverse household requirements. Kroll's theoretical position: **order imposed top-down is alienating; diversity emerging from negotiated decision-making is humanizing**.
 
-Richard Sennett's *The Craftsman* (2008) theorizes that participatory design reconnects people to material making and decision-shaping. When residents participate in construction decisions, they develop tacit understanding—feel for materials, awareness of consequences, investment in stewardship. This contrasts with the modernist separation of designer, builder, and user into selead professional roles.
+Richard Sennett's *The Craftsman* (2008) theorizes that participatory design reconnects people to material making and decision-shaping. When residents participate in construction decisions, they develop tacit understanding—feel for materials, awareness of consequences, investment in stewardship. This contrasts with the modernist separation of designer, builder, and user into sealed professional roles.
 
 **Social Equity and Systemic Justice**
 
@@ -55,11 +63,11 @@ Contemporary social architecture increasingly addresses **systemic inequities**�
 
 **Gentrification and Displacement Resistance**: Where neighborhoods face displacement through development, social architecture shifts from improvement-focused (which can trigger gentrification) to community-controlled development ensuring existing residents benefit. This requires political-economic interventions beyond architecture—community land trusts, anti-displacement covenants, community-controlled developer selection.
 
-**Racialized Space and Inclusive Design**: Design frameworks often encode racial and class assumptions invisibly. Contemporary social architecture explicitly names these—how do design standards reflect particular bodies, abilities, cultural practices? Who is centered in the design brief? Public space design, for example, has historically centered mlea, able-bodied, white bodies; inclusive design centers women, disabled people, elders, children, and diverse cultural practices (prayer spaces, informal commerce, multigenerational gathering).
+**Racialized Space and Inclusive Design**: Design frameworks often encode racial and class assumptions invisibly. Contemporary social architecture explicitly names these—how do design standards reflect particular bodies, abilities, cultural practices? Who is centered in the design brief? Public space design, for example, has historically centered male, able-bodied, white bodies; inclusive design centers women, disabled people, elders, children, and diverse cultural practices (prayer spaces, informal commerce, multigenerational gathering).
 
 **Indigenous Sovereignty and Design Authority**
 
-A crucial contemporary framework: **Indigenous communities should control design decisions affecting Indigenous lands**. This reflects broader decolonization principles and acknowledges that Indigenous place-based knowledge is epistemologically equivleant to (and often superior to) professional technical knowledge.
+A crucial contemporary framework: **Indigenous communities should control design decisions affecting Indigenous lands**. This reflects broader decolonization principles and acknowledges that Indigenous place-based knowledge is epistemologically equivalent to (and often superior to) professional technical knowledge.
 
 Examples:
 
@@ -151,3 +159,10 @@ Beware romanticization: communities are not inherently unified or democratic. Pa
 **Citizen Control** — Highest level of participation where community holds decision-making authority; professionals advise but do not override.
 
 **Collective Craftsmanship** — Engagement in material making and design decision-shaping; develops tacit knowledge, ownership, and stewardship (Sennett concept).
+
+## Related Articles
+
+See also within Contemporary Movements & Discourse: **lea-theo-007-01-core-concept**, **lea-theo-007-02-core-concept**, **lea-theo-007-09-core-concept**, **lea-theo-007-11-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

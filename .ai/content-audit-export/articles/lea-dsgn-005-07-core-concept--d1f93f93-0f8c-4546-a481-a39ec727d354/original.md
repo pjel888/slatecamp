@@ -1,6 +1,11 @@
 ## What You Need to Know for the LEA
 
-Day care centers and kindergartens are classified as **Group C** (education and recreation, not Group B or D), with activity rooms at 1.5 sqm per child (maximum 25 children per room), outdoor play equal to indoor area, nap rooms at 0.9-1.2 sqm per child, and child-sclead toilet heights of 250-300 mm. Regulatory authority is **DSWD** (Department of Social Welfare and Development), not DepEd.
+Day care centers and kindergartens are classified as **Group C** (education and recreation, not Group B or D), with activity rooms at 1.5 sqm per child (maximum 25 children per room), outdoor play equal to indoor area, nap rooms at 0.9-1.2 sqm per child, and child-scale toilet heights of 250-300 mm. Regulatory authority is **DSWD** (Department of Social Welfare and Development), not DepEd.
+
+## Learning Goal
+
+Classify day care centers as Group C (not B or D), calculate activity room capacity using the 1.5 sqm/child and 25-child maximum rules, size outdoor play areas equal to indoor activity space, apply child-scale anthropometric dimensions for toilets and lavatories, and verify DSWD regulatory authority over DepEd.
+
 
 ## Core Concept
 
@@ -45,7 +50,7 @@ Total occupancy = active children + caregivers + visiting parents (peak). Dual e
 
 ## Philippine Practice Context
 
-Metro Manila day care centers (home-based and institutional) operate under DSWD licensing, separate from formal schools (DepEd). Compliance challenges include developers confusing DSWD standards with DepEd guidelines, resulting in undersized bathrooms, single-exit classrooms at capacity, and outdoor areas repurposed as parking. Caregiver-to-child ratios affect room occupancy: infant care (0-2 years) = 1:4 ratio; preschool (2-5 years) = 1:10 ratio. This directly impacts activity room sizing—a facility with mixed ages must allocate separate spaces, consuming floor area. Nap room management is contentious; some facilities try to reduce nap room area to 0.5 sqm/child (non-compliant), claiming children are "closely clustered." Toilet facility undersizing is common: single 250 mm toilet for 25 children creates bottlenecks during toilet training. Heritage buildings converted to day care often lack accessible features; retrofitting child-sclead bathrooms requires moving walls. Outdoor play areas in urban settings are frequently inadequate (5-10 sqm for 25 children); code requires minimum equal to indoor activity area, often triggering relocation or capacity reduction.
+Metro Manila day care centers (home-based and institutional) operate under DSWD licensing, separate from formal schools (DepEd). Compliance challenges include developers confusing DSWD standards with DepEd guidelines, resulting in undersized bathrooms, single-exit classrooms at capacity, and outdoor areas repurposed as parking. Caregiver-to-child ratios affect room occupancy: infant care (0-2 years) = 1:4 ratio; preschool (2-5 years) = 1:10 ratio. This directly impacts activity room sizing—a facility with mixed ages must allocate separate spaces, consuming floor area. Nap room management is contentious; some facilities try to reduce nap room area to 0.5 sqm/child (non-compliant), claiming children are "closely clustered." Toilet facility undersizing is common: single 250 mm toilet for 25 children creates bottlenecks during toilet training. Heritage buildings converted to day care often lack accessible features; retrofitting child-scale bathrooms requires moving walls. Outdoor play areas in urban settings are frequently inadequate (5-10 sqm for 25 children); code requires minimum equal to indoor activity area, often triggering relocation or capacity reduction.
 
 ## How It's Tested
 
@@ -54,6 +59,13 @@ Metro Manila day care centers (home-based and institutional) operate under DSWD 
 3. **Outdoor Play Integration:** A 2-floor day care with 150 sqm indoor activity (ground floor) and 80 sqm (second floor) must provide 230 sqm outdoor play minimum. Candidates often provide only 80 sqm (matching one floor) or skip outdoor calculation entirely.
 
 <Tip>**Day Care Anchors:** Group C occupancy (not B or D). DSWD regulatory authority (not DepEd). Activity room = 1.5 sqm/child, max 25/room. Outdoor play = equal to indoor activity area. Nap room = 0.9–1.2 sqm/child. Child toilet = 250–300 mm; child lavatory = 550–600 mm. Exit width = 7.6 mm/child. Dual exits at 50+.</Tip>
+
+
+**Exam Tip — ERR-DSGN-004:** Day care centers are Group C (education/recreation), NOT Group B (residential) or Group D (institutional). Hard limit: max 25 children per activity room. DSWD regulates, NOT DepEd.
+
+## Cross-References
+
+See **LEA-DSGN-004-09** (Churches) for Group C classification, **LEA-DSGN-008-01** (Fire Egress) for educational exit width (7.6 mm/person), and **LEA-DSGN-007-08** (Human Factors) for child anthropometrics.
 
 ## Common Mistakes
 

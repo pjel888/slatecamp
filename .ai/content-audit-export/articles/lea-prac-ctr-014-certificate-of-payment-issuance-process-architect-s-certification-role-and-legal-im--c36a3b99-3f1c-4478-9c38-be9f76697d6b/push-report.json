@@ -1,19 +1,23 @@
 {
-  "attempted_at": "2026-05-03T14:01:45.998Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:17.623Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
   "slug": "lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:f09779fd22199d4686137c3158d6bcaa652d23b154ae93410814ddecbdf450cf",
-  "original_hash": "sha256:3d337b3cf873fcb3bc494cef43605ac5b2b913feb5ae7535adf8085e058ad3b5",
-  "candidate_hash": "sha256:f09779fd22199d4686137c3158d6bcaa652d23b154ae93410814ddecbdf450cf",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:c30e69702a7b0e5652158f844d3551c929c63a50dc4dc270a3005b159733f421",
+  "original_hash": "sha256:f09779fd22199d4686137c3158d6bcaa652d23b154ae93410814ddecbdf450cf",
+  "candidate_hash": "sha256:87668f32ac8a71c0491cf3bb65ceb3268b25f601422380e01b924b33b3b702b2",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:50:49.901627+00:00"
+  "remote_updated_at_before": "2026-05-03T16:06:01.308622+00:00"
 }

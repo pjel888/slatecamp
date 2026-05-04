@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Identify truss member types: top chord, bottom chord, verticals, and diagonals
+- Distinguish Warren, Pratt, and Howe trusses by their diagonal patterns
+- Apply the two zero-force member rules to identify unloaded members
+- Explain why triangular geometry makes trusses structurally efficient
 
 Trusses are skeletal structures composed of members arranged in triangular patterns to span long distances with minimal self-weight. Understanding truss member names, types, and the zero-force member concept is essential for structural analysis and LEA success.
 
@@ -56,6 +63,13 @@ In the Philippines, roof trusses (Warren or Pratt types) are common in agricultu
 
 <Tip>**Memory aid:** "Chord connects, verticals connect, diagonals brace." Pratt has "inward diagonals" (think Pratt ≈ inward pointing). Zero-force: **two collinear, third bye-bye**; **two non-collinear, one zero**.</Tip>
 
+
+## Related Articles
+
+See also: **Space Frames** (lea-strc-002-06) for the 3D extension of trusses, **Supports** (lea-strc-001-03) for how truss end conditions affect analysis, and **Internal Forces** (lea-strc-001-05) for how truss members carry axial loads.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing chord (boundary member) with diagonal members—chords form the truss outline","Assuming all members are necessary in all load cases; zero-force members are valid and should be recognized but may not always carry load","Misidentifying Pratt vs Howe—Pratt: diagonals slope inward from bottom (compression); Howe: outward (tension in diagonals)"]} />

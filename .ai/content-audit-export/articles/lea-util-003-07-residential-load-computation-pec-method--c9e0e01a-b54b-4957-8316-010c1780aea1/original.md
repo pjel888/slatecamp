@@ -1,31 +1,8 @@
 ## What You Need to Know for the LEA
 
-Electrical load computation determines the maximum power demand your building will place on the utility system. This calculation drives wire sizing, transformer selection, and utility billing. In the Philippines (220V/60Hz single phase, 380V/60Hz three phase), load calculations follow Philippine Electrical Code (PEC) Article 220 requirements and Meralco standard practices.
+## Learning Goal
 
-### Core Concepts
-
-**Connected Load** is the sum of all equipment nameplate ratings permanently installed in the building. It represents the absolute maximum possible consumption if everything runs simultaneously—an unrealistic scenario.
-
-**Demand Load** is the actual maximum power the building draws during peak operation, measured in watts (W) or kilowatts (kW). Utility companies bill based on demand, not connected load.
-
-**Demand Factor (DF)** expresses the ratio of actual peak demand to total connected load:
-
-<Callout>
-**Demand Factor = Maximum Demand / Total Connected Load**
-</Callout>
-
-This factor ranges from 0.5 to 1.0 depending on occupancy type and equipment diversity. PEC Article 220 provides demand factor tables for residential, commercial, and institutional buildings.
-
-**Diversity Factor (DiF)** accounts for the reality that not all circuits reach their individual maximum simultaneously:
-
-<Callout>
-**Diversity Factor = Sum of Individual Maximum Demands / Maximum System Demand**
-</Callout>
-
-Diversity Factor exceeds 1.0 and improves system efficiency. A residential complex with 20 apartments may have individual apartment peaks totaling 400 kW, but the building never draws all 400 kW at once—perhaps only 300 kW system peak, giving DiF = 400 / 300 = 1.33.
-
----
-
+Calculate residential electrical loads using the PEC optional method (Section 2.20) — general lighting, small-appliance, laundry, fixed appliances, HVAC, cooking equipment — determine total demand load, and size the service entrance conductors and main disconnect.
 ## Residential Load Computation (PEC Method)
 
 ### Step-by-Step Calculation
@@ -185,6 +162,14 @@ This means the building's demand load cannot exceed 35.85 kW without exceeding s
 
 ---
 
+<Callout>
+**Demand Factor = Maximum Demand / Total Connected Load**
+</Callout>
+
+<Callout>
+**Diversity Factor = Sum of Individual Maximum Demands / Maximum System Demand**
+</Callout>
+
 ## Common Mistakes & Corrections
 
 <WikiMistakeList mistakes={[{"mistake": "Using connected load as demand load without applying demand factor", "correction": "Always apply PEC demand factors: residential 40% for amount over 10 kVA, commercial per schedule"}, {"mistake": "Forgetting to multiply three-phase current by √3", "correction": "Three-phase formula: I = P / (√3 × V × PF). Single phase: I = P / (V × PF)"}, {"mistake": "Assuming all receptacles count as 180 VA each", "correction": "Meralco practice counts only the first outlet; additional outlets in same room may share load allocation"}, {"mistake": "Not applying 125% multiplier to largest motor in feeder circuit", "correction": "PEC 430.24 requires 1.25 × largest motor + 1.0 × all others for feeder demand"}, {"mistake": "Using power factor of 1.0 for commercial calculations", "correction": "Commercial PF typically 0.85–0.90 due to motors, transformers, and ballasts. Use 0.95 minimum for residential"}]} />
@@ -227,3 +212,4 @@ Meralco demand charges apply monthly based on the highest 15-minute average powe
 - LEA-UTIL-003-02: Wire Sizing and Ampacity Tables
 - LEA-UTIL-003-06: Power Factor and Reactive Power
 - LEA-UTIL-003-08: Service Entrance and Meter Installation
+

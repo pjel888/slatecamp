@@ -1,19 +1,28 @@
 {
-  "attempted_at": "2026-05-03T14:17:37.010Z",
+  "attempted_at": "2026-05-04T00:06:10.148Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
   "slug": "dangerous-and-ruinous-buildings",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:15ba8915eb4c5af18bbe8d781ae0f803a48ac289d672d8b664db5a4ca56999a4",
-  "original_hash": "sha256:15ba8915eb4c5af18bbe8d781ae0f803a48ac289d672d8b664db5a4ca56999a4",
-  "candidate_hash": "sha256:84b9a995f773479b688b35720f572878fe1808384043afe54c2ca8f92e3851d1",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:84b9a995f773479b688b35720f572878fe1808384043afe54c2ca8f92e3851d1",
+  "original_hash": "sha256:2815f04950363aad957f4ddc65586a8371ed4c6321ca9079209e4331a1580b44",
+  "candidate_hash": "sha256:3e9c20f4b31a7f5685bccf6539d7d8b4f14e4e7b532534535f0b9e3492505b8f",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T14:19:05.645325+00:00"
 }

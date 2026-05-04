@@ -1,12 +1,13 @@
 ## What You Need to Know for the LEA
 
-<Callout>You must understand how humans respond psychologically to spatial environments and the concept of biophilia—the innate human affinity for nature. The LEA will test whether you can design spaces that support well-being through both physical spatial composition and connection to natural systems.</Callout>
+## Learning Goal
 
+Explain biophilic design principles and how humans respond psychologically to spatial environments, including the restorative effects of nature views, natural light, natural materials, and spatial variety on well-being and performance.
 ## Core Concept
 
 ### Psychology of Space and Environmental Perception
 
-Human behavior within space is driven by measurable psychological states that architects must deliberately design for. Environmental psychology demonstrates that spatial properties—sclea, proportion, materiality, light quality, and visual complexity—trigger predictable emotional and cognitive responses. The brain does not merely register space as empty volume; it perceives psychological dimensions including comfort, security, threat, invitation, and refuge. Architects practicing in the Philippines often design for tropical climates where psychological comfort depends on managing heat, humidity, and visual permeability—variables that directly influence stress levels and productivity.
+Human behavior within space is driven by measurable psychological states that architects must deliberately design for. Environmental psychology demonstrates that spatial properties—scale, proportion, materiality, light quality, and visual complexity—trigger predictable emotional and cognitive responses. The brain does not merely register space as empty volume; it perceives psychological dimensions including comfort, security, threat, invitation, and refuge. Architects practicing in the Philippines often design for tropical climates where psychological comfort depends on managing heat, humidity, and visual permeability—variables that directly influence stress levels and productivity.
 
 <Tip>**Spatial coherence** (clear organization, legible paths, understandable relationships) directly reduces cognitive load and supports focus. In design, clarity is not boring—it's the foundation for psychological well-being.</Tip>
 
@@ -49,31 +50,27 @@ The exam will test whether you understand that spatial psychology is not decorat
 <WikiExamTable headers={["Concept", "Definition", "LEA Application"]} rows={[['["**Biophilia**", "Innate human affinity for connection with nature and living systems", "Justify biophilic design strategies in institutional and commercial projects; identify biophilic elements in case studies"]', '["**Soft Fascinations**", "Non-demanding natural stimuli (moving water, rustling leaves, light variation) that restore directed attention", "Design restorative break spaces; explain why water features benefit attention recovery in offices"]', '["**Spatial Coherence**", "Clear, organized environmental structure reducing cognitive load", "Analyze whether complex building programs maintain legibility; evaluate wayfinding design"]', '["**Prospect**", "Unobstructed visual access to surrounding activity, landscape, or environment", "Evaluate seating, viewing platforms, and overlooks for functional prospect provision"]', '["**Refuge**", "Protected, semi-enclosed position offering security and shelter", "Design alcoves, recesses, and sheltered areas maintaining occupant comfort and engagement"]', '["**Environmental Legibility**", "Clarity of spatial organization enabling easy cognitive mapping", "Assess building plans and sections for clarity; identify landmarks and decision points"]', '["**Circadian Daylighting**", "Illumination patterns varying throughout day supporting biological rhythm alignment", "Design fenestration systems delivering variable light intensity and color temperature"]', '["**Biophilic Materiality**", "Use of natural materials with visible patina and aging processes", "Select wood, stone, and earth materials revealing time and natural degradation"]', '["**Living Systems Integration**", "Incorporation of responsive, metabolic elements (plants, water, soil) in interior and exterior design", "Integrate green walls, plantings, and water features beyond decorative application"]', '["**Restoration Environment**", "Space characterized by fascination, being away, extent, and compatibility", "Design workplace and institutional break areas supporting physiological stress recovery"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Design Brief with Psychological Requirements**
 Stem: "Design a wellness center in a dense Metro Manila commercial district. How would you incorporate biophilic principles given space constraints? Explain the psychological basis for your design decisions, referencing Attention Restoration Theory."
 Expected response: Integration of living plant systems, water features, variable daylighting, access to views (even if small), refuge-prospect balance in seating, natural material selection. Explicit reference to ART and stress reduction mechanisms.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Case Study Analysis**
 Stem: "This hospital building has high staff burnout rates despite adequate facilities and compensation. Analyze the spatial environment. What psychological factors might be contributing? Propose design modifications addressing spatial psychology principles."
 Expected response: Identification of deficient restorative spaces; absence of biophilic elements; poor spatial legibility increasing cognitive load; inadequate refuge options; artificial lighting without circadian variation. Specific recommendations integrating prospect-refuge balance and biophilic strategies.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Material and Spatial Selection Justification**
 Stem: "Select interior materials and spatial configurations for a university study commons. Justify your selections based on psychological support for sustained attention and stress recovery."
 Expected response: Biophilic materials (natural wood, stone); seating arrangements providing both prospect (to activity) and refuge (enclosure or screening); views to vegetation; variable illumination supporting focus and recovery; zones for different attention demands.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Building Type Adaptation**
 Stem: "How would biophilic design strategies differ between a corporate office and a psychiatric hospital? Address the different psychological requirements of each occupant group."
 Expected response: Office environments prioritize restorative break spaces and soft fascinations to recover attention during work; hospitals require sustained biophilic integration supporting anxiety reduction, pain mitigation, and recovery acceleration. Both share refuge-prospect principle but different scleas and intensities.</ExamTip>
 
-
 <ExamTip>**Pattern 5: Climate-Responsive Biophilia**
 Stem: "A client seeks a commercial building in Cebu with high occupant well-being and low operational cost. Propose biophilic strategies that integrate with tropical climate responsiveness."
 Expected response: Cross-ventilation through vegetation (thermal and psychological benefit); strategic fenestration and shading creating dappled light (soft fascination mimicking tree canopy); water features supporting both evaporative cooling and attention restoration; courtyards and gardens as both biophilic and climatic elements.</ExamTip>
 
+<Callout>You must understand how humans respond psychologically to spatial environments and the concept of biophilia—the innate human affinity for nature. The LEA will test whether you can design spaces that support well-being through both physical spatial composition and connection to natural systems.</Callout>
 
 ## Common Mistakes
 
@@ -82,7 +79,6 @@ Expected response: Cross-ventilation through vegetation (thermal and psychologic
 <WikiMistakeCard mistake="Ignoring psychological sclea" correction="Designing spaces with correct biophilic elements but wrong proportions or enclosure relationships." context="A massive atrium with distant vegetation provides prospect but no refuge; a heavily enclosed space with plants lacks adequate prospect." />
 
 <WikiMistakeList mistakes={["Misapplying refuge-prospect balance. Creating refuge without prospect (closed, dim spaces with minimal views) or prospect without refuge (exposed seating in high-traffic areas without screening or backing). Both elements must coexist.", "Conflating natural with biophilic. Natural materials alone (wood flooring, stone walls) do not constitute biophilic design. Biophilic design requires living systems, views to nature, variable light patterns, or fractal complexity—not merely material authenticity.", "Underestimating programmatic impact. Failing to justify biophilic design in terms of measurable outcomes for the specific building program. Hospitals benefit from stress reduction; offices benefit from attention recovery; schools benefit from student focus and behavior improvement. Tailor arguments to program.", "Neglecting maintenance and sustainability. Proposing biophilic elements (living plants, water features) without addressing irrigation, light requirements, or maintenance protocols. Non-viable biophilic design fails when systems deteriorate."]} />
-
 
 ## Key Terms
 
@@ -98,10 +94,17 @@ Expected response: Cross-ventilation through vegetation (thermal and psychologic
 
 **Environmental Legibility** — Clarity and organization of spatial structure enabling occupants to cognitively map the environment and navigate without disorientation or excessive mental effort.
 
-**Circadian Daylighting** — Illumination systems designed to vary in intensity and color temperature throughout the day, supporting alignment with biological circadian rhythms and supporting leartness or rest cycles.
+**Circadian Daylighting** — Illumination systems designed to vary in intensity and color temperature throughout the day, supporting alignment with biological circadian rhythms and supporting alertness or rest cycles.
 
 **Spatial Coherence** — Clear, organized environmental structure with evident hierarchy, legible circulation patterns, and predictable spatial relationships reducing cognitive load and supporting wayfinding.
 
 **Restorative Environment** — A space designed to support physiological and psychological recovery through four characteristics: fascination, being away, extent, and compatibility with occupant values and needs.
 
 **Biophilic Materiality** — Deliberate selection of natural materials (wood, stone, cork, natural fibers) that reveal aging processes, patina, and material authenticity, creating psychological connection to natural processes.
+
+## Related Articles
+
+See also within Design Perception: **lea-theo-003-01-core-concept**, **lea-theo-003-02-core-concept**, **lea-theo-003-03-core-concept**, **lea-theo-003-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

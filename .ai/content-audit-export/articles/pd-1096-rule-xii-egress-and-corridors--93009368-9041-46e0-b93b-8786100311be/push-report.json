@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:17:50.197Z",
+  "attempted_at": "2026-05-04T00:06:44.891Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "93009368-9041-46e0-b93b-8786100311be",
   "slug": "pd-1096-rule-xii-egress-and-corridors",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:255db37993c662cc0a281fd01e3d2ddc1dabd4fd8fe00e5f0401a6769dc0bfe7",
-  "original_hash": "sha256:255db37993c662cc0a281fd01e3d2ddc1dabd4fd8fe00e5f0401a6769dc0bfe7",
-  "candidate_hash": "sha256:95e2f4f6b470351633eefdf8e3b974e8326ebae20123281863a52e89b91233cd",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:69fed52b89130a7f8a44a1ae3e9e096985fbd912f666c134992a0b7395268778",
+  "original_hash": "sha256:69fed52b89130a7f8a44a1ae3e9e096985fbd912f666c134992a0b7395268778",
+  "candidate_hash": "sha256:b4195bdc2ed3e5fccab7f9e96624ec4db306da6f9116be354406b2d205709295",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T16:38:17.507433+00:00"
 }

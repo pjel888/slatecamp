@@ -1,38 +1,55 @@
 {
   "article_id": "859b1a7f-8aba-473d-8c28-f9aaa39af11d",
   "slug": "pd-1096-rule-viii-setbacks-and-easements",
-  "generated_at": "2026-05-03T13:44:39.401Z",
-  "old_hash": "sha256:ad8551a4f140c567b34de020a7aab35e3c565aa19c208d9e285c923ccdb62ec4",
-  "new_hash": "sha256:3c7bbfaf183fc817436710703fa353420ac5603a680a2b2d19e6a29a060c8b12",
-  "original_hash": "sha256:ad8551a4f140c567b34de020a7aab35e3c565aa19c208d9e285c923ccdb62ec4",
-  "normalized_hash": "sha256:785dcdabc76e85f6edd80881cb8fb9969c290a3752f377ca89bf6c51445dc0bf",
-  "candidate_hash": "sha256:3c7bbfaf183fc817436710703fa353420ac5603a680a2b2d19e6a29a060c8b12",
+  "generated_at": "2026-05-04T00:06:14.827Z",
+  "old_hash": "sha256:2e5d7788f34ed1afd8d6d2a5f84bbc7c037b02e92bcf58fb8d164a3c4276dec1",
+  "new_hash": "sha256:a1d7cc96ac4272e0ec52aedb9e94918868e10fb28c8a34e7c7082bb454f9ea62",
+  "original_hash": "sha256:2e5d7788f34ed1afd8d6d2a5f84bbc7c037b02e92bcf58fb8d164a3c4276dec1",
+  "normalized_hash": "sha256:a1d7cc96ac4272e0ec52aedb9e94918868e10fb28c8a34e7c7082bb454f9ea62",
+  "candidate_hash": "sha256:a1d7cc96ac4272e0ec52aedb9e94918868e10fb28c8a34e7c7082bb454f9ea62",
   "changed": true,
-  "changed_line_count": 627,
-  "inserted_line_count": 22,
-  "deleted_line_count": 0,
+  "changed_line_count": 543,
+  "inserted_line_count": 0,
+  "deleted_line_count": 61,
   "ui_blocks_original_count": 13,
-  "ui_blocks_candidate_count": 13,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 13,
   "ui_blocks_count": 13,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 13,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 627,
-    "inserted": 22,
-    "deleted": 0,
-    "original_line_count": 618,
-    "candidate_line_count": 640
+    "changed": 543,
+    "inserted": 0,
+    "deleted": 61,
+    "original_line_count": 640,
+    "candidate_line_count": 579
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007",
+      "ui_0008",
+      "ui_0009",
+      "ui_0010",
+      "ui_0011",
+      "ui_0012",
+      "ui_0013"
+    ],
+    "changed_count": 13
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 13 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 13 preserved UI block(s)."
 }

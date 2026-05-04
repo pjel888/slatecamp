@@ -17,10 +17,6 @@ Pre-Design Services are fundamentally different from design and construction ser
 ## Legal and Regulatory Basis
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="authority", title="Legal Authority: R.A. No. 9266 — The Architecture Act of 2004"
-- Text: This SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.
-[/SLATECAMP_UI_BLOCK]
 
 SPP Document 201 is promulgated as part of the IRR of R.A. No. 9266, making its observance **mandatory for all Registered and Licensed Architects (RLAs)** in the Philippines. Only an RLA — a natural person with a valid PRC Certificate of Registration and a renewable 3-year Professional Identification Card — may legally render pre-design services.
 
@@ -58,22 +54,12 @@ These preliminary studies involve the **procurement, analysis, and use of second
 Detailed analysis of the project based on pre-feasibility studies to **determine the viability of a proposed development**. The studies set the project against present and future trends to forecast how it will perform over time. This service requires **primary data gathering and analysis** — including market research, surveys, interviews, cost projections, and financial modeling — making it a more comprehensive and resource-intensive undertaking than a pre-feasibility study.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="tip", title="Key Distinction: Pre-Feasibility vs. Feasibility Studies"
-- Text: | | Pre-Feasibility Study | Feasibility Study | |---|---|---| | **Data type** | Secondary (existing, published) | Primary (gathered specifically for project) | | **Depth** | Preliminary, rapid assessment | Detailed, comprehensive analysis | | **Purpose** | Early go/no-go indication | Full viability determination | | **Cost** | Lower | Higher |
-[/SLATECAMP_UI_BLOCK]
-
 
 ### 2.4 Site Selection and Analysis
 
 This service entails the **formulation of site criteria**, assistance to the Client in site evaluation, and analysis to **determine the most appropriate site/s** for a proposed project or building program. The architect evaluates multiple candidate locations based on criteria such as accessibility, zoning, utilities, topography, and development potential, then recommends the most suitable option.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: **Note:** Under the 1979 UAP framework, Site Selection and Analysis required the involvement of a licensed **Environmental Planner (EnP)** for certain project types. This requirement persists under applicable environmental and land-use laws.
-[/SLATECAMP_UI_BLOCK]
-
 
 ### 2.5 Site Utilization and Land-Use Studies
 
@@ -127,17 +113,8 @@ Projects may require promotional activities in order to **develop and generate f
 ## Complete List of SPP 201 Services at a Glance
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch"
-- Text: The LEA tests the **12 specific service categories** under SPP 201 (2.1 Consultation through 2.12 Promotional Services). Know the mnemonic from the 1979 UAP Doc. 201: **EPASSSSP** — Economic Feasibility, Project Financing, Architectural Programming, Site Selection, Site Utilization, Space Planning, Space Management, Promotional Services.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | # | Service | Nature | Key Output | |---|---|---|---| | 2.1 | Consultation | Advisory | Oral/written advice, evaluations, appraisals | | 2.2 | Pre-Feasibility Studies | Analytical (secondary data) | Initial viability assessment | | 2.3 | Feasibility Studies | Analytical (primary data) | Full viability report | | 2.4 | Site Selection and Analysis | Evaluative | Site recommendation report | | 2.5 | Site Utilization and Land-Use Studies | Regulatory/Physical | Development controls analysis | | 2.
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -170,10 +147,6 @@ Consultation between the Architect and firms of other disciplines (e.g., economi
 ## Method of Compensation
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch"
-- Text: Pre-Design Services use **cost-based methods** (MDPE, Lump Sum, Per Diem) — NOT percentage of Project Construction Cost (PCC). PCC doesn't exist yet at this stage. The LEA frequently tests whether candidates know which documents use PCC vs. cost-based fees.
-[/SLATECAMP_UI_BLOCK]
 
 The Architect's compensation for Pre-Design Services is based on the architect's or firm's **tleants, skill, experience, imagination, and the type and level of professional services provided**. Unlike SPP 202 Regular Design Services, **Pre-Design Services do not use a percentage of Project Construction Cost (PCC)** as a compensation basis, because there is no project construction cost established at this stage.
 
@@ -218,11 +191,6 @@ The multiplier M (ranging from 1.5 to 2.5) depends on the **office set-up, overh
 - Technical and laboratory tests, licenses, fees, and taxes
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: The architect must disclose to the client, **at the start of the commission**, the rates of professionals and personnel assigned to the project and the multiplier to be applied, before agreeing on this compensation method.
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -259,11 +227,6 @@ The SPP provides for **more than one method of compensation** on a project. Each
 ### Compensation Methods at a Glance
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Method | Best Used For | Key Feature | |---|---|---| | MDPE | Research, data gathering, non-creative tasks | Multiplier (1.5–2.5) on personnel costs | | Professional Fee + Expenses | Ongoing/repeat client relationships | Fixed sum + reimbursements | | Lump Sum / Fixed Fee | Government projects, well-defined scope | Predictable total cost | | Per Diem + Honorarium | Short, personal-time engagements (meetings, site visits) | Daily rate + out-of-pocket | | Mixed Methods | Complex, multi-phase pre
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -272,11 +235,6 @@ Extracted summary:
 SPP 201 Pre-Design Services operates as the **first stage of the Spectrum of Architectural Services** defined across the SPP framework.
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Stage | SPP Document | Feeds Into | |---|---|---| | Pre-Design | **SPP Doc. 201** | SPP Doc. 202 (design) | | Regular Design | SPP Doc. 202 | SPP Doc. 204-A/B (construction) | | Specialized Design | SPP Doc. 203 | SPP Doc. 202 / 204 | | Construction Supervision | SPP Doc. 204-A/B | SPP Doc. 205 | | Post-Construction | SPP Doc. 205 | Long-term building operation | | All Services Combined | SPP Doc. 206 | — |
-[/SLATECAMP_UI_BLOCK]
-
 
 The outputs of SPP 201 — particularly the feasibility studies, site analysis, and architectural program — form the **primary inputs to the Project Definition Phase of SPP 202**. Without sound pre-design work, the architect entering the design phase lacks the data needed to produce a viable, cost-appropriate, and regulatory-compliant building design.
 
@@ -299,15 +257,23 @@ When a project requires Comprehensive Architectural Services under **SPP Doc. 20
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: SPP 201 = PRE-design services (before SPP 202). Six phases: (1) Project Definition, (2) Feasibility Study, (3) Site Analysis, (4) Space Programming, (5) Design Guidelines, (6) Consultant Selection. Compensation is per-diem or fixed fee — NOT percentage of construction cost. The most tested distinction: SPP 201 is optional/separate, SPP 202 is the standard.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: SPP 201 = PRE-design services (before SPP 202). Six phases: (1) Project Definition, (2) Feasibility Study, (3) Site Analysis, (4) Space Programming, (5) Design Guidelines, (6) Consultant Selection. Compensation is per-diem or fixed fee — NOT percentage of construction cost. The most tested distinction: SPP 201 is optional/separate, SPP 202 is the standard.
+
 ## Cross‑References
 
 **Spp Doc 202 Regular Design Services**, **Uap Spp Doc Standards Of Professional Practice For Philippine Architects**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 204 A Fulltime Supervision Services**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

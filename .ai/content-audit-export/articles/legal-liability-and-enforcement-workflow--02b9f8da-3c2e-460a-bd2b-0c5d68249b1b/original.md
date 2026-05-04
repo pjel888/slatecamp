@@ -5,9 +5,31 @@
 
 ## REAL-WORLD HOOK
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Explain the Building Official's enforcement workflow — Notice of Violation, Work Stoppage Order, Demolition Order, Administrative Fines — under PD 1096 Rule II; distinguish Light, Less Grave, and Grave violations and their corresponding fines; apply the surcharge calculation for illegal construction; and identify the appeal process for contested orders.
+---
+
+
 A man in a manual wheelchair approaches the entrance of a newly opened three-storey mall in Cebu. There is no ramp. There is no curb cut from the parking lot. The only entrance is up four steps. He photographs everything, calls the NCDA hotline, and files a written complaint with the City Building Official that same afternoon. Within 72 hours, a stop-work order is posted on the building's Certificate of Occupancy — a document the mall paid 18 months to obtain. The architect of record receives a notice from the PRC. The building owner faces a criminal complaint. The structural engineer is left wondering: *how did a four-step entrance cost everyone this much?* This module is your complete map of that enforcement chain — every actor, every remedy, every penalty.
 
 ---
+
+<LawCallout code="ra9266" section="Section 29 - Prohibited Acts">
+
+
+The enforcement chain: PWD complaint → NCDA/BO investigation → Notice of Violation → Stop Work Order → Fine (up to ₱200,000) → Criminal liability (RA 7277, Sec. 46-47) → PRC revocation for licensed professionals. Every actor in the BOLD-CAPS chain has specific legal responsibilities.
+
+
+</LawCallout>
+
+<ExamTip>
+
+LEA Pattern: Expect questions testing who bears liability. The Architect of Record bears professional liability under RA 9266. The building Owner bears civil and criminal liability for noncompliance. The Building Official faces administrative liability for failure to enforce.
+
+</ExamTip>
 
 ## CORE MNEMONIC FRAMEWORK
 
@@ -394,9 +416,11 @@ The Philippines has approximately 1.57 million registered PWDs (PSA 2020), with 
 > **A: ₱300,000 fine + 6 years imprisonment**, or both.
 
 **Q3.** Can the Building Official be held liable for issuing a permit for a noncompliant building?
-<LawCallout code="nbcp" title="administrative (CSC/Ombudsman) and criminal (PD 1096 Sec. 213) liability.">
+<LawCallout code="ra9266" section="Section 30 - Penalties">
+
 
 A: Yes — administrative (CSC/Ombudsman) and criminal (PD 1096 Sec. 213) liability.
+
 
 </LawCallout>
 
@@ -424,3 +448,10 @@ A: Yes — administrative (CSC/Ombudsman) and criminal (PD 1096 Sec. 213) liabil
 ---
 
 *Module 9 | BP 344 Legal Liability & Enforcement | Philippine LEA Review Series*
+
+---
+
+## Cross‑References
+
+**Building Permit Process**, **Dangerous And Ruinous Buildings**, **Typology Checklists And Plan Checking**, **Certificate Of Occupancy**
+

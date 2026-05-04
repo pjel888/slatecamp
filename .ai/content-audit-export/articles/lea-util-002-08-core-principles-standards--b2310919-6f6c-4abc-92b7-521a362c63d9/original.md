@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Elevator traffic analysis determines the type, number, and capacity of elevators required for a building. The analysis bridges occupant load calculations with mechanical system sizing—a critical mechanical, electrical, and plumbing fundamentals (MEPF) competency. In the Philippines, PD 1096 mandates elevators for buildings 5 or more stories, and elevator sizing directly impacts construction cost, energy consumption, and user experience.
+## Learning Goal
 
+Identify core mechanical HVAC principles — sensible and latent heat, refrigeration cycle, coefficient of performance (COP), psychrometric chart interpretation — and apply these principles to calculate cooling loads for Philippine buildings.
 ## Core Principles & Standards
 
 ### PD 1096 Elevator Requirements
@@ -263,3 +264,10 @@ Before finalizing elevator design:
 ## Summary
 
 Elevator traffic analysis bridges occupant load and mechanical system design. The core workflow—population → RTT → interval → number of elevators—requires careful attention to floor-to-floor height, speed classification, and dwell time. In Philippine buildings, PD 1096 mandates elevators for 5+ story buildings; start with occupancy type to establish population, then size the system to achieve acceptable interval (25–40 s office, 40–60 s residential) and handling capacity (≥12 % office). Always verify with realistic car capacities (typically 13 persons for 1,000 kg) and document the design basis for permit review.
+
+## Related Articles
+
+See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, **lea-util-002-04-core-concept**, **lea-util-002-05-core-concept**, **lea-util-002-06-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

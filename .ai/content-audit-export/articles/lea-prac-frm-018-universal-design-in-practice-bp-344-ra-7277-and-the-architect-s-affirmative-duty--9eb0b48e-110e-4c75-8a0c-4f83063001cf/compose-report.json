@@ -1,18 +1,30 @@
 {
   "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
   "slug": "lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty",
-  "generated_at": "2026-05-03T13:44:11.429Z",
-  "original_hash": "sha256:ac89cd1ce264ee30b26c662cbe3cfcd774811d8c3ae3e8293bb765583333fc0d",
-  "normalized_hash": "sha256:685aec45fea5f8b716ed7308e474740b583ce8ade38f3ddea351161d918002a2",
-  "candidate_hash": "sha256:279285bf22e6e667c603b1098781d96217b1afb6478ea7da4e66878400a406f8",
-  "ui_blocks_count": 6,
-  "placeholders_found": 6,
-  "placeholders_resolved": 6,
+  "generated_at": "2026-05-04T00:05:38.723Z",
+  "original_hash": "sha256:2c41fbc3cd46067afbce9370d4650d2c3f178a5c5ebcff2e6a04f4a9b4d9ac6f",
+  "normalized_hash": "sha256:639d77e3766cf696f5942f382bc550ad99ce2e7bb43c67a3866f7eaad5e8f668",
+  "candidate_hash": "sha256:639d77e3766cf696f5942f382bc550ad99ce2e7bb43c67a3866f7eaad5e8f668",
+  "ui_blocks_count": 5,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 6,
+  "unused_blocks": [
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition."
+  ]
 }

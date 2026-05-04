@@ -1,14 +1,13 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The LEA emphasizes **Angkor Wat** (largest religious monument, Khmer), **Borobudur** (largest Buddhist temple, Javanese), and **Vietnamese tube houses** (colonial-era residential typology). Recognize spatial organization, religious function, material systems, and regional variation. These three monuments represent distinct geographical and cultural areas: Cambodia, Indonesia, and Vietnam.
-</Callout>
+## Learning Goal
 
+Distinguish the three major Southeast Asian monuments — Angkor Wat (Khmer, Hindu, sandstone, 12th c.), Borobudur (Sailendra, Buddhist, volcanic stone, 9th c.), and Shwedagon Pagoda (Mon/Burmese, Buddhist, gold stupa) — by period, religion, materials, and spatial organization.
 ## Core Concept
 
 Southeast Asian architecture reflects Indian, Chinese, and indigenous traditions synthesized through specific geographic and resource contexts. Monumental religious architecture (temples and monuments) towers as cosmic mountains or celestial hierarchies using stone, brick, and elaborate carved imagery. Residential architecture adapts to tropical climate, topography, and material availability through elevated timber frames, deep roof overhangs, and open-air circulation.
 
-**Angkor Wat** (12th century, Cambodia) represents Hindu Khmer imperial ambition: a vast temple-mountain complex at the center of the medieval capital Angkor. The temple rises from a rectangular moat-surrounded platform, ascending through concentric galleries and towers toward a central 65-meter-tall quincunx tower (five towers arranged in a cross pattern, the center tower tallest). Each level narrows and rises, mimicking Mount Meru (Hindu cosmological mountain). Galleries display miles of carved narrative reliefs depicting Hindu epics (Ramayana, Mahabharata); their internal organization moves outward through progressively more public and profane zones. The sclea is staggering: the complex covers 162 hectares; stone blocks—sandstone quarried from nearby highlands—fit without mortar, stabilized by weight and gravity. The moat represents the cosmic ocean; galleries and towers represent celestial hierarchies. Water channels, reservoirs, and streets demonstrate advanced hydraulic engineering sustaining a population exceeding 1 million in the 12th century.
+**Angkor Wat** (12th century, Cambodia) represents Hindu Khmer imperial ambition: a vast temple-mountain complex at the center of the medieval capital Angkor. The temple rises from a rectangular moat-surrounded platform, ascending through concentric galleries and towers toward a central 65-meter-tall quincunx tower (five towers arranged in a cross pattern, the center tower tallest). Each level narrows and rises, mimicking Mount Meru (Hindu cosmological mountain). Galleries display miles of carved narrative reliefs depicting Hindu epics (Ramayana, Mahabharata); their internal organization moves outward through progressively more public and profane zones. The scale is staggering: the complex covers 162 hectares; stone blocks—sandstone quarried from nearby highlands—fit without mortar, stabilized by weight and gravity. The moat represents the cosmic ocean; galleries and towers represent celestial hierarchies. Water channels, reservoirs, and streets demonstrate advanced hydraulic engineering sustaining a population exceeding 1 million in the 12th century.
 
 <Tip>**Three Southeast Asian monuments—testable distinctions:**
 
@@ -36,12 +35,15 @@ Southeast Asian architecture reflects Indian, Chinese, and indigenous traditions
 </ExamTip>
 <ExamTip>**Pattern 3:** Climate and urban typology. "A Southeast Asian residential typology features extremely narrow street frontage (2–4 meters) but extends 10–20 meters in depth. Identify this typology, its geographic context, and the climatic or urban factors driving this form." (Answer: Vietnamese tube house; Hanoi/Ho Chi Minh City; colonial-era land scarcity + tropical ventilation needs.) Expect to relate form to environmental and socioeconomic context.</ExamTip>
 
+<Callout>
+The LEA emphasizes **Angkor Wat** (largest religious monument, Khmer), **Borobudur** (largest Buddhist temple, Javanese), and **Vietnamese tube houses** (colonial-era residential typology). Recognize spatial organization, religious function, material systems, and regional variation. These three monuments represent distinct geographical and cultural areas: Cambodia, Indonesia, and Vietnam.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="** Confusing Angkor Wat with Bayon Temple. Both are Khmer monuments in Angkor, but Angkor Wat is 12th-century Hindu (Suryavarman II) while Bayon is late 12th-century Buddhist-Hindu hybrid (Jayavarman VII). Angkor Wat has a quincunx (five towers); Bayon features 54 towers with carved faces. Know their distinct iconography and patrons" correction="Mistake 2:** Reversing Borobudur's spiritual geography. Borobudur does NOT represent ascending into heaven; visitors ascend from desire realms (lower rectangular levels) to formless realms (upper circular terraces), shedding attachment as they climb. It is a spiritual narrative landscape, not a celebration of height." context="Don't confuse height with holiness." />
 
 <WikiMistakeCard mistake="** Treating Vietnamese tube houses as purely colonial French creation. While French administration established urban density and grid planning, tube houses merge French density logic with Vietnamese spatial traditions (back-altar placement, courtyard ventilation, commercial-residential integration). They are hybrid forms, not impositions. Acknowledge both influences" correction="Mistake 4:** Overgeneralizing \"Southeast Asian architecture\" as monolithic. The region encompasses Hindu (Khmer), Buddhist (Java, Thailand), Islamic (Malaysia, Indonesia), and Vietnamese traditions. Angkor Wat is Khmer Hindu; Borobudur is Javanese Buddhist; tube houses are Vietnamese colonial. Each tradition has distinct structural systems, materials, and religious functions." context="Do not blur them together." />
-
 
 ## Key Terms
 
@@ -57,3 +59,10 @@ Southeast Asian architecture reflects Indian, Chinese, and indigenous traditions
 - **Concentric galleries**: Nested rectangular or circular covered walkways surrounding a temple's central sanctuary or tower, allowing pilgrims or worshippers to circumambulate while viewing reliefs or maintaining ritual separation from the holiest center.
 
 <Warn>Do not confuse Angkor Wat (12th c., Hindu Khmer, quincunx towers, Ramayana reliefs) with Bayon Temple (late 12th c., Buddhist-Hindu hybrid, 54 towers with carved faces). Both are Khmer, but their iconography, patrons, and religious functions differ fundamentally. Do not reverse Borobudur's spiritual geography: ascending the 9 platforms moves from desire realms through form realms toward formless realms and Buddhahood—it is a spiritual narrative, not celebration of height. Do not treat Southeast Asian architecture as monolithic—Hindu, Buddhist, Islamic, and Vietnamese traditions each have distinct systems and regional contexts. This differentiation is directly tested on the LEA.</Warn>
+
+## Related Articles
+
+See also within Asian & Pacific Architecture: **lea-hist-007-01-core-concept**, **lea-hist-007-02-core-concept**, **lea-hist-007-03-core-concept**, **lea-hist-007-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

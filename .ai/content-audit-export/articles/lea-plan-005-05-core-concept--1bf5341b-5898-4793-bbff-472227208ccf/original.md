@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Read contour maps to determine slope steepness, calculate cut and fill volumes for building pads, design grading for positive drainage (2% minimum), identify erosion control measures, and apply grading constraints from environmental regulations.
+
 Site grading is the process of rearranging earth material (cut and fill) to accommodate buildings and infrastructure, adapt to existing topography, and manage surface drainage. Grading analysis begins with contour map reading—closely spaced contours indicate steep terrain; widely spaced contours indicate flat terrain. Slope analysis determines buildability, erosion risk, and visibility.
+
 
 ## Core Concept
 
@@ -27,6 +31,13 @@ Philippine sites are highly varied in topography: coastal plains in Metro Manila
 **Pattern 3 — Grading constraint:** "A site is adjacent to a PD 1067-protected water body. How does this constrain grading?" → No fill into the easement; no permanent structures; grading must respect setback.
 
 <Tip>**Close contours = steep; wide contours = gentle.** Always read the contour interval and horizontal spacing to determine slope. Steep slopes require specialized grading (bench cuts, retaining walls, geotechnical analysis).</Tip>
+
+
+**Exam Tip:** Cut and fill should be balanced on-site to minimize export/import. Slope stability: >30% requires geotechnical study. Max fill slope = 2:1 (horizontal:vertical) or 50%. Max cut slope = 1:1 (45°) in stable soil. Erosion control required on all graded slopes.
+
+## Cross-References
+
+See **LEA-DSGN-012-03** (Grading and Drainage) for grading design, **LEA-PLAN-005-06** (Drainage) for stormwater management on graded sites, and **LEA-PLAN-004-01** (Physical Considerations) for topography analysis.
 
 ## Common Mistakes
 

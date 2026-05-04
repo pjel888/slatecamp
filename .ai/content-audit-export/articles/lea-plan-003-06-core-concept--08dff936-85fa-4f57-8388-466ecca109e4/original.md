@@ -1,12 +1,16 @@
 ## What You Need to Know for the LEA
 
-Informal settlements in the Philippines—commonly called squatter communities, slums, or "informal colonies"—house an estimated 2–3 million people in Metro Manila alone. **RA 7279** establishes the legal framework for addressing informal settlements, while **SHFC's Community Mortgage Program (CMP)** represents the practical model for in-situ upgrading. Understanding the distinction between in-situ upgrading and relocation, the sclea of informal settlements, and the legal protections and constraints is critical.
+## Learning Goal
+Distinguish in-situ upgrading from relocation under RA 7279, describe the SHFC Community Mortgage Program (CMP) as the practical upgrading model, apply eviction protections, and quantify the scale of Philippine informal settlements.
+
+Informal settlements in the Philippines—commonly called squatter communities, slums, or "informal colonies"—house an estimated 2–3 million people in Metro Manila alone. **RA 7279** establishes the legal framework for addressing informal settlements, while **SHFC's Community Mortgage Program (CMP)** represents the practical model for in-situ upgrading. Understanding the distinction between in-situ upgrading and relocation, the scale of informal settlements, and the legal protections and constraints is critical.
+
 
 ## Core Concept
 
 An informal settlement is an unplanned community occupying land without the occupants' legal ownership or formal tenancy rights. These settlements typically develop where formal housing is unaffordable or unavailable—urban fringe areas, public lands, private marginal lands, and especially riverbanks and drainage easements. The Philippines' rapid urbanization (cities growing 3–4% annually) combined with a housing shortage has driven explosive informal settlement expansion.
 
-**Sclea and Characteristics:** Metro Manila has roughly 2–3 million informal dwellers (20–30% of the metro population). Settlements range from spontaneous unplanned neighborhoods (many with internal community organization) to dense informal colonies with thousands of units. Typologically, informal settlements exist on esteros (drainage canals), under bridges, on riverbanks, on steep hillsides, and on private/public marginal lands.
+**Scale and Characteristics:** Metro Manila has roughly 2–3 million informal dwellers (20–30% of the metro population). Settlements range from spontaneous unplanned neighborhoods (many with internal community organization) to dense informal colonies with thousands of units. Typologically, informal settlements exist on esteros (drainage canals), under bridges, on riverbanks, on steep hillsides, and on private/public marginal lands.
 
 **Danger Areas and Eviction Risk:** **RA 7279 Sec 28** defines danger areas where occupants face elevated eviction risk: esteros and drainage canals; riverbanks; railroad tracks; under bridges; power line easements; fault zones; and other areas declared dangerous by the HLURB (now DHSUD) or local government. The specific distances, however, come from other laws:
 
@@ -52,6 +56,13 @@ However, implementation remains inconsistent. Many local government units (LGUs)
   Danger areas = NO relocation obligation (but notice still required). In-situ
   via CMP preserves communities.
 </Tip>
+
+
+**Exam Tip:** In-situ upgrading (improve existing settlement) vs. relocation (move residents elsewhere). RA 7279 favors in-situ where possible. CMP (Community Mortgage Program by SHFC) is the primary upgrading vehicle. Know the distinction.
+
+## Cross-References
+
+See **LEA-PLAN-003-01** (Housing Law Framework) for RA 7279 eviction protections, **LEA-PLAN-003-04** (Housing Production) for upgrading methods, and **LEA-PLAN-005-04** (DRRM) for resettlement due to hazard exposure.
 
 ## Common Mistakes
 

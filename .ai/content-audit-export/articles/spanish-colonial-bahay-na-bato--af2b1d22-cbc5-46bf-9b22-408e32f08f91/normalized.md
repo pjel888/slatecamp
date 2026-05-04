@@ -88,24 +88,12 @@ You step through the massive stone archway — the **zaguan** — of a bahay na 
 | **Santo Tomás de Villanueva Church** | Miagao, Iloilo | **"Fortress Baroque"** style; elaborate façade with a unique depiction of St. Christopher holding the Christ Child amid tropical flora (coconut palms, papaya) |
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory Aid: "ZEScuVA" — Six Layers of Bahay na Bato (Bottom to Top).** Zaguan (ground-floor carriage entrance), Entresuelo (mezzanine), Sala (main living floor), Cuartos (bedrooms), Volada (cantilevered balcony), Azotea (open terrace/roof). Chant "ZEScuVA" like saying "Let's go!" in shorthand.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Exam Strategy — Distinguishing Zaguan vs. Entresuelo:** The zaguan is at grade level (the carriage entrance), while the entresuelo is a mezzanine ~1 meter above ground, between the ground floor and the main living floor. The LEA tests this distinction directly — if a question describes a space that is "elevated about 1 meter above the ground floor and used for storage," the answer is entresuelo, not zaguan.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Real-World Example:** The San Agustin Church in Paoay, Ilocos Norte is the textbook Earthquake Baroque church. Its 14 massive coral-stone buttresses — each wider at the base and tapering upward — are not decorative. They are structural responses to the Philippine seismic environment. Compare this to European Baroque churches like San Carlo alle Quattro Fontane (Rome), which have thin pilasters and no external buttresses. The difference is not style — it is survival. The LEA expects you to explain why the Paoay buttresses exist, not just name them.
-[/SLATECAMP_UI_BLOCK]
 
 **Connecting History to the Exam:** When you face a Philippine colonial architecture question on the LEA, start with the material — coral stone signals the Philippines, adobe signals the Americas — then look for earthquake adaptations. The exam tests your ability to connect form to environment.
 
@@ -179,3 +167,5 @@ D) Nuestra Señora de la Asunción, Santa Maria
 
 **Spanish Colonial Laws Of The Indies**, **Pre Colonial Vernacular**, **Colonial European Influence**, **Modern Filipino Identity**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -9,13 +9,11 @@ After studying this article, you should be able to:
 - Distinguish among CPD categories: structured, unstructured, and self-directed.
 - Apply CPD credit tracking to renewal scenarios.
 
-
-
 ### Structured Learning Activities
 
 Structured learning encompasses formal courses, seminars, workshops, and conferences offered by accredited CPD providers. These activities include in-person training, online courses, webinars, and hybrid formats combining classroom and digital instruction. Structured learning typically awards higher credit units because it involves systematic curriculum, instructional expertise, and formal evaluation of learning outcomes. Architects completing structured activities receive certificates documenting credit hours and competency areas covered.
 
-<Tip>**Credit value hierarchy (highest to lowest):** Teaching/Presentation and Research/Innovation award the most credits; Structured Learning (formal courses, seminars) is moderate; Self-Directed Learning (reading journals, podcasts) awards the fewest. Plan your CPD portfolio accordingly.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
 
 Structured learning activities address specific knowledge gaps identified in the professional track categories. Courses on building codes, structural design, sustainable architecture, and project management constitute structured learning. Professional conferences where architects attend presentations and seminars on current practice issues qualify as structured learning. Online platforms offering architecture-specific courses with proctored assessments and completion certification provide structured learning credits. The Board recognizes only programs delivered by accredited providers meeting minimum quality standards.
 
@@ -39,7 +37,7 @@ Teaching activities must be documented with course outlines, attendance records,
 
 ### Research and Innovation Activities
 
-<ExamTip>The LEA may test your ability to classify CPD activities. Key distinction: structured learning = formal courses with evaluation; self-directed = independent study without instruction; work-based = learning through actual practice; teaching = instructing others; research = advancing knowledge through investigation.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 
 Research activities including conducting studies on architectural practice, testing new materials or methodologies, or investigating emerging design approaches generate CPD credits. Architects participating in professional research projects, contributing to professional organization studies, or conducting independent research on architectural topics earn credits. Innovation projects implementing new technologies, sustainable design methods, or construction processes that enhance professional knowledge qualify for credits. Documentation includes research proposals, findings summaries, or patent/innovation records.
 
@@ -59,3 +57,5 @@ Research activities recognize that architects advancing the profession through i
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

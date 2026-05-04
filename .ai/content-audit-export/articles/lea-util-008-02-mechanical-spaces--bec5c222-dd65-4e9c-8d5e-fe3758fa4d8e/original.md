@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-MEPF (Mechanical, Electrical, Plumbing, and Fire Protection) space requirements represent one of the largest non-occupiable area allocations in Philippine high-rise buildings. This fact node details the spatial demands of critical building systems and provides design guidance aligned with PD 1096 and PD 1058, plus international best practices adapted to Philippine building practice.
+## Learning Goal
 
----
-
+Design mechanical spaces (chiller plants, boiler rooms, AHU rooms, fan rooms, elevator machine rooms) incorporating adequate equipment access, service clearances, ventilation, structural support, acoustic separation, and fire-rated separation per NBCP and mechanical code requirements.
 ## Mechanical Spaces
 
 ### Chiller Plant and Central AHU Rooms
@@ -45,6 +44,19 @@ Pump room sizing is equipment-driven:
 
 ---
 
+
+<KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
+
 ## Electrical Spaces
 
 ### Main Transformer Vault and Switchgear Room
@@ -56,7 +68,7 @@ Electrical rooms typically occupy _1–2% of GFA_. Allocation depends on:
 - Diesel generator control panel location
 
 **Typical footprint for a 30-floor office tower (15,000 m² GFA):**
-- Main transformer vault: 150–200 m² (housing 2–3 × 500 kVA transformers or equivleant)
+- Main transformer vault: 150–200 m² (housing 2–3 × 500 kVA transformers or equivalent)
 - MDB and LV switchgear room: 100–150 m²
 
 **Source:** Philippine Electrical Code (PEC) and typical design practice for Metro Manila commercial buildings.
@@ -389,3 +401,10 @@ Based on PD 1096 and typical Metro Manila commercial practice:
 5. Early coordination with MEP engineers during schematic design ensures efficient space allocation and cost control; changes late in design (DD/CD phases) become expensive.
 
 ---
+
+## Related Articles
+
+See also within MEPF Coordination and Integration: **lea-util-008-01-core-concept**, **lea-util-008-03-core-concept**, **lea-util-008-04-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

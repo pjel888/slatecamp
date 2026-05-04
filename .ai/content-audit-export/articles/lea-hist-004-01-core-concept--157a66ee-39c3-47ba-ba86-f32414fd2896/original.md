@@ -2,6 +2,10 @@
 
 <Callout>The LEA tests your ability to identify and explain the foundational architectural vocabulary of Islamic design. You must recognize the defining structural and decorative elements that appear across regional variations.</Callout>
 
+## Learning Goal
+
+Identify the five pillars of Islamic architectural vocabulary (Mosque, Minaret, Mihrab, Muqarnas, Arabesques/Calligraphy) by their function, form, and regional variation, and distinguish Islamic structural elements from decorative features.
+
 ## Core Concept
 Islamic architecture developed a distinct visual and functional vocabulary shaped by religious practice, climate adaptation, and geometric philosophy. Unlike Gothic verticals or classical columns, Islamic design prioritizes the interior court (courtyard), the prayer hall, and intricate surface decoration. The **mosque** forms the core building type, but Islamic architectural principles extend to palaces, madrasas, and domestic spaces.
 
@@ -82,3 +86,10 @@ Material choices vary by region: stone in the Levant, brick in Mesopotamia and P
 **Calligraphy** — Stylized Quranic script used as both decoration and spiritual expression on walls, domes, and prayer rugs; replaces figurative imagery.
 
 **Hypostyle Mosque** — A mosque plan in which the prayer hall uses columns to support the roof; common in early Islamic and Umayyad periods.
+
+## Related Articles
+
+See also within Islamic Architecture: **lea-hist-004-02-core-concept**, **lea-hist-004-05-core-concept**, **lea-hist-004-06-core-concept**, **lea-hist-004-07-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

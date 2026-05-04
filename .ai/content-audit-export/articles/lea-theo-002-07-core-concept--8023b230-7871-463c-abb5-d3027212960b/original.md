@@ -2,6 +2,14 @@
 
 <Callout>Architectural elements are the basic components—walls, columns, beams, openings, roofs—that make buildings function. The LEA tests your understanding of how each element functions, how elements relate to form, and how elements communicate design intent. This is foundational material appearing in multiple choice and problem-solving items throughout the examination.</Callout>
 
+
+
+## Learning Goal
+
+- Identify the basic architectural elements (walls, columns, beams, openings, roofs) and their multiple functions.
+- Explain how each element simultaneously serves structural, spatial, environmental, and expressive purposes.
+- Analyze how elements communicate design intent and organize architectural space.
+
 ## Core Concept
 
 According to Francis D.K. Ching, architectural elements are the functional and formal building blocks that organize space, support structure, control light and air, and express design intention. Every element serves multiple purposes: a wall encloses space, provides structural support, controls weather, modulates light and sound, and communicates material character. Understanding elements by function—what role each plays in making architecture work—is essential to understanding how buildings are designed and constructed.
@@ -34,7 +42,7 @@ According to Francis D.K. Ching, architectural elements are the functional and f
 
 **Windows** modulate light, enable views, allow ventilation, and express architectural intention. Window size, placement, and type affect spatial character dramatically. Small windows read as defensive or introverted; large windows read as open and connected. High windows admit light while maintaining privacy; low windows create transparency and connection. Window mullions (the grid pattern of frame divisions) can articulate structure (aligning with structural bays) or express aesthetic intention (expressing proportion ratios or hierarchies).
 
-**Doors** are openings that enable passage while maintaining closure. Doors can be solid (providing privacy) or transparent (maintaining visibility). Door size is often related to human sclea—standard door height accommodates standard human height plus hat space. Door placement relates to spatial hierarchies: a monumental door signals entrance to an important space; a small door indicates a secondary passage. The manner of articulation—whether a door reads as opening in a wall or as a distinct portal—communicates spatial meaning.
+**Doors** are openings that enable passage while maintaining closure. Doors can be solid (providing privacy) or transparent (maintaining visibility). Door size is often related to human scale—standard door height accommodates standard human height plus hat space. Door placement relates to spatial hierarchies: a monumental door signals entrance to an important space; a small door indicates a secondary passage. The manner of articulation—whether a door reads as opening in a wall or as a distinct portal—communicates spatial meaning.
 
 **Passages** (corridors, galleries, porticoes) are linear spaces connecting separate zones. They can be functional circulation spaces (minimally finished, maximally efficient) or experiential spaces (generously proportioned, finely finished). The proportion of a passage—narrow and tall (enclosed, formal); wide and low (open, residential)—greatly affects its spatial character.
 
@@ -50,7 +58,7 @@ Articulation also addresses transitions: the manner in which walls meet roofs, m
 
 ### Material Expression
 
-Each material—stone, brick, wood, concrete, glass, steel—communicates differently. Stone reads as heavy, permanent, and culturally established. Brick is human-sclead and craft-expressive. Wood is warm, renewable, and tradition-linked. Concrete is plastic and expressive of form. Glass is transparent and dematerializing. Steel is linear and expressive of structure. The choice of material expresses design philosophy and creates spatial and emotional character.
+Each material—stone, brick, wood, concrete, glass, steel—communicates differently. Stone reads as heavy, permanent, and culturally established. Brick is human-scaled and craft-expressive. Wood is warm, renewable, and tradition-linked. Concrete is plastic and expressive of form. Glass is transparent and dematerializing. Steel is linear and expressive of structure. The choice of material expresses design philosophy and creates spatial and emotional character.
 
 Material also determines construction logic: brick walls are assembled; timber frames are post-and-beam; concrete is cast; steel is bolted. The appropriate expression of each material—stone in massive walls, not thin veneers; wood in frames, not load-bearing walls alone; concrete in forms that express its plastic geometry—ensures that what you see is what structurally makes sense.
 
@@ -127,10 +135,17 @@ Material also determines construction logic: brick walls are assembled; timber f
 
 **Window** — An opening admitting light and enabling views while allowing control of weather, acoustic, and privacy conditions.
 
-**Door** — An opening enabling passage while maintaining closure; sclead to human dimensions.
+**Door** — An opening enabling passage while maintaining closure; scaled to human dimensions.
 
 **Passage** — A linear space connecting separate zones; functions both as circulation and spatial experience.
 
 **Articulation** — The manner in which surfaces come together to define shape and volume; expresses structural or aesthetic intent.
 
 **Material Expression** — The appropriate and honest use of a material's inherent properties and construction logic in design.
+
+## Related Articles
+
+See also within Elements & Principles of Design: **lea-theo-002-01-core-concept**, **lea-theo-002-02-core-concept**, **lea-theo-002-03-core-concept**, **lea-theo-002-04-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

@@ -3,40 +3,11 @@
   "slug": "lea-util-005-05-summary",
   "normalized_created_at": "2026-05-01T13:33:43.883Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:6bb17d25667e8f992448a865aa17988e39f83a2c15d45d21cbdfba98215c4ed6",
+  "original_content_hash": "sha256:27f617be1332c7cf4f248df45995213883aa536c6fb32f162048364c9cee908c",
   "normalized_content_hash": "8b7cd9d0fb5ee786522a61f470bcda54671bfca6d20e87c314cfe344b4dc5686",
-  "ui_block_count": 1,
-  "total_blocks": 3,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "QuestionBank",
-      "raw": "<QuestionBank questionSetId=\"LEA-UTIL-005-05\" totalQuestions={10} />",
-      "raw_hash": "sha256:199d4bd4b861ababad54b20cda4d5edb0e3af2b8468142a07d100d8b1a8db573",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"QuestionBank\" status=\"preserved\"]\nExtracted summary:\n- Props: questionSetId=\"LEA-UTIL-005-05\", totalQuestions=\"{10}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:8adfc6442746f41f055b7ff5e2ffb903b874ce64325daec1414e8fbed68ca46c",
-      "props": {
-        "questionSetId": "LEA-UTIL-005-05",
-        "totalQuestions": "{10}"
-      },
-      "props_json": {
-        "questionSetId": "LEA-UTIL-005-05",
-        "totalQuestions": "{10}"
-      },
-      "props_text": "questionSetId=\"LEA-UTIL-005-05\" totalQuestions={10}",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 16474,
-      "end_offset": 16542,
-      "line_start": 153,
-      "line_end": 153,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
   "ui_blocks_hash": "7a2ecc997d375fcbbcea37c0245bf871a6f1942e8688c5586a8fce119d4013be"

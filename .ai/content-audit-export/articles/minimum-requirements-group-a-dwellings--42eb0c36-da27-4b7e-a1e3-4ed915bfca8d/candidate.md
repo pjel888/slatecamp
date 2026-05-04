@@ -16,7 +16,6 @@ After reading this article, you should be able to:
 Apply the minimum requirements for Group A (Residential) dwellings under PD 1096 Rule VII: minimum lot area, floor area, setback, light and ventilation, and sanitary facilities per unit type (single-family, duplex, apartment, townhouse); distinguish Group A-1 through A-4 by density and configuration.
 ---
 
-
 It is 6:30 in the morning in a barangay in Cavite. The Dela Cruz family — father, mother, grandmother, and three children — wake up in a house that is legally classified as a Group A dwelling, a single-family residence. The kitchen is barely large enough for two people to work in simultaneously. The toilet is tucked under the staircase. The youngest child's bedroom gets no direct light from outside; a borrowed window faces a narrow court between the house and the next property. The house was built without a building permit, without a licensed architect, without any reference to the National Building Code of the Philippines.
 
 Three years later, the family is selling the property to buy something bigger. A buyer's due diligence reveals the house was never issued a Certificate of Occupancy. The municipal Building Official inspects the structure and finds that the toilet room's area is only 0.85 square meters — below the 1.20 square meters required by PD 1096. The habitable rooms fail the minimum 6.00 square meter floor area rule. The corner lot coverage is at 92%, exceeding the 90% maximum. The slea falls through. The family loses two months of paperwork, a lawyer's fees, and the buyer's earnest money.
@@ -237,25 +236,11 @@ The foundation requirement of Sec. 708(d) — "firm ground" and "sufficient size
 
 ---
 
-<LawCallout code="pd1096" section="Rule VII - Area Requirements">
+[SLATECAMP_UI_BLOCK:ui_0007 component="LawCallout" status="preserved"]
 
+[SLATECAMP_UI_BLOCK:ui_0008 component="KeyValues" status="preserved"]
 
-Rule VII, Sec. 708-709: Group A dwelling lot occupancy limits — 90% max for corner lots, 80% max for inside lots. These are the base PSO (Percentage of Site Occupancy) limits before any FLAR adjustments. Corner lots get the bonus because of dual street frontage.
-
-
-</LawCallout>
-
-<KeyValues>
-
-Corner lot max coverage: 90% | Inside lot max coverage: 80% | Min habitable room area: 6.00 m² | Min toilet room area: 1.20 m² | Min kitchen area: No explicit minimum, but must be functionally adequate | Min ceiling height: 2.40 m (mech vent) / 2.70 m (natural vent)
-
-</KeyValues>
-
-<ExamTip>
-
-LEA Pattern: Expect a lot computation question: 'Given a 150 m² inside lot, what is the max building footprint?' Answer: 150 × 0.80 = 120 m². Then compute remaining buildable area with setbacks. Always confirm whether the lot is corner or inside before applying the percentage.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 
 ## Mnemonic Devices
 
@@ -314,19 +299,9 @@ A licensed architect is designing a single-family dwelling on a 120 sq m inside 
 
 > **Answer: C — 96 sq m (80% of 120 sq m)**
 >
-<Note>
-
-Per PD 1096, Rule VII, Sec. 708(a), a Group A dwelling on an inside lot shall occupy not more than 80% of the lot area. 120 sq m × 80% = 96 sq m. The 90% coverage (Option D) applies to corner lots, not inside lots. Option A (60%) and Option B (70%) have no basis in Sec. 708. The candidate must distinguish between corner lot (90%) and inside lot (80%) — this distinction is the primary exam test point in this provision. Note also that the 2-meter setback requirement may further reduce the achievable footprint below 96 sq m depending on lot dimensions.
-
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
 >
-<LawCallout code="pd1096" section="Rule VII - Group A - Dwellings">
-
-
-LEA Area: Building Technology — National Building Code of the Philippines
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
 ---
 
@@ -341,21 +316,9 @@ Per PD 1096, which of the following correctly describes the minimum dimensions f
 
 > **Answer: B — Minimum 3.00 sq m with a least dimension of 1.50 m**
 >
-<LawCallout code="pd1096" section="Rule VII - Minimum Requirements">
-
-
-Per PD 1096, Rule VIII, Sec. 806(1)(b), invoked by Rule VII, Sec. 708(e): kitchens require a minimum floor area of 3.00 sq m and a least dimension of 1.50 m. Option A describes habitable rooms (Sec. 806(1)(a)), not kitchens. Option C has the correct area but an incorrect least dimension (1.00 m is too small). Option D describes the bath and toilet room (Sec. 806(1)(c)). Board exams routinely offer all three room types as distractors for each other — knowing the specific numbers for each room type is essential.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 >
-<LawCallout code="pd1096" section="Rule VII - Room Dimensions">
-
-
-LEA Area: Building Technology — National Building Code of the Philippines
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
 
 ---
 
@@ -370,25 +333,11 @@ A developer is constructing a two-storey Group A dwelling with mechanical air co
 
 > **Answer: C — First storey: 2.70 m; Second storey: 2.40 m**
 >
-<LawCallout code="pd1096" section="Rule VII - Ceiling Heights">
-
-
-Per PD 1096, Rule VIII, Sec. 805, for buildings with artificial ventilation: first storey minimum = 2.70 m; second storey minimum = 2.40 m; succeeding storeys = minimum 2.10 m unobstructed headroom clearance. This is one of the most exam-tested provisions in Rule VIII. Option A is wrong on both storeys (first storey must be 2.70 m, not 2.40 m). Option B has the first storey correct but applies the third-storey clearance (2.10 m) to the second. Option D applies 2.40 m to the first storey, which is incorrect — first storey must be 2.70 m regardless of ventilation type. The first storey standard (2.70 m) applies equally to naturally and artificially ventilated buildings; only the second storey gets the reduced 2.40 m allowance.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
 >
-<LawCallout code="pd1096" section="Rule VIII - Light and Ventilation">
-
-
-LEA Area: Building Technology — National Building Code of the Philippines
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
 
 ---
-
-
 
 ---
 
@@ -410,3 +359,5 @@ LEA Area: Building Technology — National Building Code of the Philippines
 - **Batas Pambansa Bilang 344** — Accessibility Law of the Philippines and its Implementing Rules; minimum toilet room dimensions for accessible design (supersede PD 1096 minimums for accessible elements)
 - **National Structural Code of the Philippines (NSCP)** — Foundation requirements, soil classification, and seismic design standards; implements the "firm ground" requirement of Sec. 708(d)
 - **National Housing Authority (NHA) Standards** — Minimum dwelling unit standards for socialized and economic housing in the Philippines (implementing agency guidelines for Group A dwellings in government housing programs)
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

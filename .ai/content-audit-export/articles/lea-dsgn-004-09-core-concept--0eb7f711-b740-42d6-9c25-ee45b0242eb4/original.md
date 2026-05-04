@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Classify churches and places of worship per occupancy type, calculate assembly occupant load, apply egress standards for places of worship, and distinguish between Group C and Group H classification triggers.
+
 Restaurants are classified as **Group E** (business/mercantile), not Group C, and require strict kitchen-to-dining ratios and FSDO/DOH regulatory compliance. Occupant load is calculated at 1.4 sqm per seat, with parking at 1 space per 30 sqm of dining area.
+
 
 ## Core Concept
 
@@ -50,6 +54,13 @@ Metro Manila restaurants operate under joint FSDO (Food Safety and Drug Office) 
 3. **Fire Egress Integration:** A ground-floor restaurant with 250-person occupancy and single kitchen entry/exit must have two separate dining egress routes, totaling 1900 mm exit width minimum (250 × 7.6 mm).
 
 <Tip>**Restaurant Anchors:** Group E occupancy. Dining = 1.4 sqm/seat. Kitchen:dining = 1:3 (kitchen is ONE-THIRD of dining, not equal or larger). Parking = 1/30 sqm dining. Exit width = 7.6 mm/person. Dishwash separated from prep.</Tip>
+
+
+**Exam Tip — ERR-DSGN-015:** Churches are Group C (education/recreation, as assembly for worship), not Group E (mercantile) or Group D (institutional). Occupant load follows assembly factors per RA 9514.
+
+## Cross-References
+
+See **LEA-DSGN-004-07** (Theaters) for Group C vs H comparison, **LEA-DSGN-008-01** (Fire Egress) for assembly occupant load, and **LEA-DSGN-005-12** (Adaptive Reuse) for heritage church conversions.
 
 ## Common Mistakes
 

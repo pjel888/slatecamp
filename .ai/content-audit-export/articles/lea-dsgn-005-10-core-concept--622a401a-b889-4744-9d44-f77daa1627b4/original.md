@@ -1,12 +1,20 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Classify multi-purpose halls as Group H or Group C based on stage permanence and seating configuration, calculate occupant load per assembly standards, apply exit width at 7.6 mm/person, and verify dual exits at 50+ occupancy.
+
 Multi-purpose halls and community centers are classified as **Group H (Assembly)** or **Group C (Education and Recreation)** depending on configuration, seating, and stage permanence. The correct classification determines exit capacity, occupant load calculations, and egress requirements.
 
 ---
 
+
 ## Core Concept
 
-Multi-purpose halls are **Group H (Assembly)** occupancies when designed for large-sclea public gatherings with standing or chair-based configurations. If a permanent stage is integral to the design (as in a theater or auditorium), the venue may be classified as **Group C**.
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+
+Multi-purpose halls are **Group H (Assembly)** occupancies when designed for large-scale public gatherings with standing or chair-based configurations. If a permanent stage is integral to the design (as in a theater or auditorium), the venue may be classified as **Group C**.
 
 ### Occupant Load Factors
 
@@ -29,6 +37,10 @@ Multi-purpose halls are **Group H (Assembly)** occupancies when designed for lar
 ---
 
 ## Key Provisions
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
 
 **Occupant Load Determination (Group H):**
 
@@ -61,6 +73,10 @@ Multi-purpose halls are ubiquitous community infrastructure serving celebrations
 ## How It's Tested
 
 **Pattern 1: Occupancy Classification (Group C vs. H)**
+
+
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
 "A community center with a temporary wooden stage serving barangay meetings is classified as **Group H**, but if it had a permanent concrete stage with theater seating, it would be **Group C** (ERR-DSGN-005)." 
 
 **Pattern 2: Occupant Load and Exit Capacity**
@@ -72,6 +88,13 @@ Multi-purpose halls are ubiquitous community infrastructure serving celebrations
 > **Memory Rule:** Group H = standing 0.65 sqm/person, seated 1.1 sqm/person. Stage height 600–750 mm. Exit width factor = 5.0 mm/person per Table VIII-3. Chair storage = 0.1 sqm/chair.
 
 ---
+
+
+**Exam Tip — ERR-DSGN-026:** Multi-purpose halls without fixed stages = Group H (assembly). With permanent stage = Group C. Flexible furniture does not change classification — only the presence of a fixed stage matters.
+
+## Cross-References
+
+See **LEA-DSGN-004-07** (Theaters) for Group C vs Group H distinction, **LEA-DSGN-008-01** (Fire Egress) for assembly occupant load (0.9 sqm/seat), and **LEA-DSGN-005-09** (Barangay Halls) for community facility context.
 
 ## Common Mistakes
 

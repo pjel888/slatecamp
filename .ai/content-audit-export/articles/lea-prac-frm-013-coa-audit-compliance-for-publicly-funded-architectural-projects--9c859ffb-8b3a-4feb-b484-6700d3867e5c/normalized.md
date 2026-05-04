@@ -11,15 +11,9 @@ After studying this article, you should be able to:
 - Identify common COA audit findings on architectural projects.
 - Apply COA compliance rules to government project scenarios.
 
-
-
 ### Three Pillars of COA Audit: Regularity, Legality, and Economy
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: COA's three pillars: **Regularity** — were procedures followed (bidding per RA 9184, approvals obtained)? **Legality** — does the design comply with NBC, environmental laws, BP 344? **Economy** — was ...
-[/SLATECAMP_UI_BLOCK]
 
 COA evaluates publicly funded projects across three dimensions. _Regularity_ ensures that established procedures were followed—that bidding was conducted per RA 9184, approvals obtained, and authorizations documented. _Legality_ verifies that the project complies with applicable laws: the National Building Code, environmental laws, accessibility standards (BP 344), and labor laws. _Economy_ assesses whether the project achieved good value—whether costs were controlled, waste avoided, and resources used efficiently.
 
@@ -61,33 +55,13 @@ Architects should maintain professional liability insurance adequate for the sco
 
 Professional liability insurance typically covers negligent acts, errors, and omissions in the design or administration. However, it does not cover willful misconduct, fraud, or violation of law. Architects should understand their policy limits and exclusions.
 
-
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266" title="COA Audit — PD 1445 and COA Circulars"
-- Text: Legal Basis: Presidential Decree 1445 (Government Auditing Code of the Philippines). The Commission on Audit has exclusive authority to examine all government-funded projects including architectural consulting contracts.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ COA findings: Notice of Suspension (NS) — temporary hold; Notice of Disallowance (ND) — transaction disallowed, may require refund; Notice of Charge (NC) — personal liability. Architects must respond promptly and maintain complete documentation. — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Solidary liability: If an architect signs a certificate of completion for defective or incomplete work, and COA disallows payment, the architect may be held SOLIDARILY LIABLE with government officials who approved payment.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Architects on government projects must maintain: signed contract and scope, technical reports, inspection records, billing with support docs, change orders with approvals, and certificate of acceptance from the client agency.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -103,3 +77,5 @@ Extracted summary:
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

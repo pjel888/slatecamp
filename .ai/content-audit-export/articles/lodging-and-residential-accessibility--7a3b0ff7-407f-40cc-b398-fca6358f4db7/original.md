@@ -5,9 +5,31 @@
 
 ## REAL-WORLD HOOK
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply BP 344 accessibility requirements to lodging (hotels, inns, dormitories) and residential buildings: calculate the minimum number of accessible guest rooms (5% of total), required roll-in shower rooms, and visual alarm requirements; distinguish Type A (fully accessible) from Type B (adaptable) dwelling units; and apply adaptable design features to meet future accessibility needs.
+---
+
+
 > Room 214 of a budget hotel in Cebu. The doorbell is silent. The guest — a Deaf traveler — cannot hear the smoke alarm. The bed is 620 mm high, and she cannot transfer from her wheelchair. The peephole is at 1500 mm — she cannot see through it. The light switch is only 200 mm from the floor and the cord plug. Her accessible room is not accessible at all. She files a formal complaint. The building official arrives. He consults the 2024 IRR. Within minutes, he has a list of violations in hand. **You are that building official. Do you know every violation?**
 
 ---
+
+<LawCallout code="bp344" section="Section 8 - Residential Accessibility">
+
+
+LEASH-VERBAL mnemonic: Lever handles, Electrical outlets at 450 mm, Alarms with vibrating pillow, Switches at 1,200 mm, Hanger racks at 1,200 mm, Visual strobe ≤3 flashes/sec, Emergency buttons, Room count 2% of total, Bed max 500 mm, Accessible toilets, Lower peephole at 1,000 mm.
+
+
+</LawCallout>
+
+<ExamTip>
+
+LEA Trap: The 2% quota is calculated based on the TOTAL guest rooms, not just accessible rooms. For a 150-room hotel, 2% = 3 accessible rooms minimum. Each must have the full LEASH-VERBAL package. A common mistake is forgetting the strobe alarm requirements for Deaf guests.
+
+</ExamTip>
 
 ## CORE MNEMONIC FRAMEWORK
 
@@ -330,3 +352,10 @@ Your classmate submits a hotel design for review:
 ---
 
 *Module 02 | BP 344 2024 IRR | LEA Review Series | Appendix D, Section 17; Section 6*
+
+---
+
+## Cross‑References
+
+**Minimum Requirements Group A Dwellings**, **Bp 344 Accessible Washrooms**, **Wheelchair Maneuvering And Parking**, **Ra 9442 Pwd Privileges And Incentives**
+

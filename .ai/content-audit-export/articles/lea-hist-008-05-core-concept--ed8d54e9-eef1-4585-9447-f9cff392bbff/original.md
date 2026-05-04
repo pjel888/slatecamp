@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>**Brutalism** dominates the LEA's post-war modernism section. The exam tests whether you recognize béton brut (raw concrete) as the movement's defining material, can identify canonical Brutalist buildings, and understand why this movement emerged as modernism's most austere expression.</Callout>
+## Learning Goal
 
+Identify the defining characteristics of Brutalism — exposed béton brut concrete, massive sculptural forms, structural honesty, utopian social ambition — and recognize key examples (Unité d'Habitation, Barbican Centre, Boston City Hall) by their materiality and formal language.
 ## Core Concept
 **Brutalism** developed in Britain and spread globally in the 1950s–70s as modernism's most uncompromising phase. The term derives from the French **béton brut** (raw concrete), which defines the movement's visual and ethical character: concrete left exposed after formwork removal, showing the imprint of wooden shuttering, aggregate texture, and construction honesty. British architectural critic **Reyner Banham** codified the movement in his 1955 essay "The New Brutalism" (published in The Architectural Review) and later expanded this analysis in his 1966 book *The New Brutalism: Ethic or Aesthetic?*
 
@@ -15,9 +16,9 @@ Brutalists rejected the International Style's glass refinement in favor of massi
 
 **Habitat 67** (1967, Montreal, designed by **Moshe Safdie**) transforms the Brutalist concrete block into a three-dimensional puzzle of stacked, interlocking modular units. Built as Canada's pavilion for Expo 67, it consists of 365 prefabricated construction modules creating 158 residences. Each unit projects individually, creating a fragmented, dynamic massing while maintaining the raw concrete finish. It addressed postwar housing shortages through prefabrication and systematic modulation.
 
-**National Theatre** (1963–1976, London, **Denys Lasdun**) epitomizes Brutalism's potential for large-sclea cultural institutions. Its design embodies Lasdun's philosophy of "architecture as urban landscape"—layered horizontal concrete terraces cascade from the building's mass, creating a dramatic topographical effect on London's South Bank. The National Theatre demonstrates how raw concrete and structural expressionism can articulate institutional ambition and civic grandeur.
+**National Theatre** (1963–1976, London, **Denys Lasdun**) epitomizes Brutalism's potential for large-scale cultural institutions. Its design embodies Lasdun's philosophy of "architecture as urban landscape"—layered horizontal concrete terraces cascade from the building's mass, creating a dramatic topographical effect on London's South Bank. The National Theatre demonstrates how raw concrete and structural expressionism can articulate institutional ambition and civic grandeur.
 
-**Boston City Hall** (completed 1968, opened 1969, **Kallmann, McKinnell & Knowles**) is American Brutalism's most iconic public building: a massive stepped pyramid in raw concrete with a dramatic cantilever base, creating a publicly accessible plaza beneath. Its sclea and materiality dominate its downtown context, asserting governmental authority through sheer formal power.
+**Boston City Hall** (completed 1968, opened 1969, **Kallmann, McKinnell & Knowles**) is American Brutalism's most iconic public building: a massive stepped pyramid in raw concrete with a dramatic cantilever base, creating a publicly accessible plaza beneath. Its scale and materiality dominate its downtown context, asserting governmental authority through sheer formal power.
 
 Brutalism's ethical dimension set it apart. Architects believed that honest expression of materials and structure—refusing to hide concrete beneath finishes—would create architecture morally superior to decorated facades. This doctrine made Brutalism both revolutionary and austere, praised for its integrity and condemned as inhumane or oppressive.
 
@@ -39,6 +40,8 @@ By the 1980s, Brutalism fell from favor. Concrete deteriorated visibly; maintena
 
 <ExamTip>**Pattern 4: Urban intention.** "The **Barbican Estate** creates an inward-facing community through Brutalist form. What is the architectural strategy?" Students identify how massive concrete walls and elevated pedestrian decks defend and enclose the community. Similarly, "The **National Theatre's** terraced form exemplifies 'architecture as urban landscape.' How does structural expression define public space?" Students recognize how Lasdun's layered concrete volumes create both monumentality and accessibility.</ExamTip>
 
+<Callout>**Brutalism** dominates the LEA's post-war modernism section. The exam tests whether you recognize béton brut (raw concrete) as the movement's defining material, can identify canonical Brutalist buildings, and understand why this movement emerged as modernism's most austere expression.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing Brutalism with mere concrete construction" correction="Any exposed concrete building is NOT necessarily Brutalist. Brutalism is a philosophical movement prioritizing honest material expression, structural drama, and often utopian urban intention. The movement has an ethical stance, not just a material choice." context="Test questions distinguish between Brutalism as a movement and concrete construction as a technique. Understanding the ideology is essential." />
@@ -58,3 +61,10 @@ By the 1980s, Brutalism fell from favor. Concrete deteriorated visibly; maintena
 - **Monolith**: A massive, unified sculptural form; Brutalist towers often appear as monolithic presences.
 - **Prefabrication**: Manufacturing building components off-site for assembly; central to **Habitat 67's** efficiency and repeatability.
 - **Utopian urbanism**: Architectural design pursuing idealized, improved social conditions through form and planning.
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

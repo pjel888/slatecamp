@@ -1,7 +1,15 @@
 ## Ownership of Architectural Plans — RA 9266 Section 33 and Client Rights
 
-<AuthorityContent courseId="LEA-PRAC-LAW-013" />
+## Learning Goal
 
+After studying this article, you should be able to:
+
+- State the general rule under RA 9266 §33: architectural plans are owned by the architect.
+- Identify exceptions: written agreements transferring ownership, or employer-employee works for hire.
+- Explain the client's rights to use plans for the intended project.
+- Apply ownership and use-right scenarios to exam questions.
+
+---
 ### The Architect's Copyright Ownership
 
 Section 33 of RA 9266 establishes that architectural drawings, specifications, and contract documents are the intellectual property of the architect who prepared them. This ownership exists whether the commissioned project is executed or not. The architect retains the copyright as the author and creator of the designs, regardless of who funded the work or who will construct the building.
@@ -25,3 +33,22 @@ The service agreement should clearly define what "use of the plans for the commi
 Architects whose plans are duplicated without consent may pursue legal action under RA 9266 and the Intellectual Property Code. The violation carries administrative consequences for the violating party and civil liability for damages. The architect can seek injunctions to stop the unauthorized reproduction, recover damages for lost fees or reputation, and claim attorney's fees and court costs.
 
 The strength of the architect's position depends on documentary evidence showing ownership and the unauthorized reproduction. Architects should maintain records of design development, dated submissions, and all communications with the client. When plans are registered with the Intellectual Property Office of the Philippines (IPOPHL), the architect gains additional evidentiary weight in dispute resolution and enforces the copyright with greater confidence.
+
+<Warn />
+
+<ExamTip />
+
+<Tip />
+
+---
+
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)

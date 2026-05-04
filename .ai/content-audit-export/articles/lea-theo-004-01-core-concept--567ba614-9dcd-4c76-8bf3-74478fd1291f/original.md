@@ -2,6 +2,11 @@
 
 <Callout>The Philippines occupies a tropical maritime zone between 5°N and 20°N latitude within the Pacific Typhoon Belt, governed by the Coronas Climate Classification (Types I–IV). Monsoon patterns—habagat (May–October) and amihan (November–April)—create distinct seasonal variations that directly drive architectural design requirements, from ventilation strategies to structural resilience.</Callout>
 
+
+## Learning Goal
+
+Analyze Philippine climate using the Coronas classification (Types I–IV), monsoon dynamics (habagat/amihan), and typhoon belt exposure to inform regional architectural design decisions.
+
 ## Core Concept
 
 The Philippine archipelago presents a unique climate challenge for architects: a tropical maritime environment characterized by high temperatures, persistent humidity, and extreme seasonal rainfall variation. Understanding this climate requires three parallel frameworks: geographic position, climate classification, and monsoon dynamics.
@@ -42,7 +47,7 @@ The tropical maritime setting suppresses diurnal temperature range. Nights remai
 
 <Note>Type II zones (no dry month, peak December–February) are often overlooked as simply "wet." The key design implication: these zones face perpetual moisture challenge and may require mechanical dehumidification during peak cold months (Dec–Feb) when outdoor humidity still exceeds 85% and occupants close windows for perceived "cool." Material durability becomes non-negotiable.</Note>
 
-Annual rainfall varies from under 1,000mm in sheltered valleys (interior Mindanao lee slopes) to over 5,000mm on windward mountain faces (Eastern Seaboard). The average for the archipelago approximates 2,000–2,500mm, but this mask enormous regional variation. A building designed for Type I conditions (1,500mm annual) will fail in Type II regions (3,500mm+ annual).
+Annual rainfall varies from under 1,000mm in sheltered valleys (interior Mindanao lee slopes) to over 5,000mm on windward mountain faces (Eastern Seaboard). The average for the archipelago approximates 2,000–2,500mm, but this masks enormous regional variation. A building designed for Type I conditions (1,500mm annual) will fail in Type II regions (3,500mm+ annual).
 
 <Warn>Fatal design error: applying identical ventilation or material strategies across all Philippines zones. A Type I building's open-air design (relying on dry-season ventilation) will accumulate mold and moisture damage if replicated in Type II. Regional climate type must inform material selection, moisture barriers, and ventilation strategy fundamentally—not as secondary consideration.</Warn>
 
@@ -104,3 +109,12 @@ Architects must interrogate the Coronas type and monsoon exposure before selecti
 **Type II Climate (No Dry Season)** — Coronas classification for Eastern Luzon, Eastern Visayas, and Eastern Mindanao; no month with less than 100mm rainfall; peak December–February; requires year-round moisture management.
 
 **Wind-Load Multiplier** — Safety factor applied to basic wind pressure (typically 1.3 kPa for tropical regions) to account for gust effects and sustained typhoon exposure; Philippines typically 1.75–2.0 in high-typhoon zones.
+
+<ExamTip>**Coronas Type Quick ID:** Type I = West (dry season, Luzon/Visayas west coast). Type II = East (no dry month, east coasts). Type III = Interior (short dry, highlands). Type IV = Central (even rainfall). Match the region to the type — this is a direct LEA question.</ExamTip>
+
+## Related Articles
+
+See also within Tropical Architecture & Climate: **lea-theo-004-02-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-07-core-concept**, **lea-theo-004-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

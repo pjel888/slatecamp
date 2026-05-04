@@ -4,6 +4,12 @@
 
 **SPP Document 201** governs the **Pre-Design Services** of Registered and Licensed Architects (RLAs) in the Philippines. It is part of the 2010 Standards of Professional Practice (SPP), approved on 27 July 2010 as the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, known as "The Architecture Act of 2004." It replaces the earlier **1979 UAP Doc. 201**, which referred to these non-creative early-stage services under the mnemonic "EPASSSSP" (Economic Feasibility Studies, Project Financing, Architectural Programming, Site Selection & Analysis, Site Utilization & Land Use Studies, Space/Management Studies, and Promotional Services).
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the scope, deliverables, and compensation method for SPP Doc 201 Pre-Design Services: the six pre-design phases (project definition, feasibility studies, site analysis, space programming, design guidelines, and consultant selection); the per-diem or fixed-fee compensation basis; and distinguish pre-design services from regular design services under SPP 202.
+---
 Pre-Design Services are fundamentally different from design and construction services. They involve **no design or construction work**; instead, they provide the analytical and informational foundation upon which design decisions will later be made. For this reason, they are frequently described as **non-creative work**, and their compensation follows cost-based methods (such as MDPE) rather than percentage-of-construction-cost methods used in SPP Document 202.
 
 ***
@@ -172,7 +178,7 @@ The architect may render pre-design services in any of the following three ways:
 The architect must have special training and be knowledgeable in different fields to supplement his or her skills. This is appropriate for smaller, less complex pre-design engagements.
 
 **3.2.2 Architect's Own Staff**
-Architects working within a single firm may specialize in different aspects of pre-design — research, programming, spatial analysis — without losing the generalist orientation of the firm. This is suitable for medium to large-sclea pre-design engagements.
+Architects working within a single firm may specialize in different aspects of pre-design — research, programming, spatial analysis — without losing the generalist orientation of the firm. This is suitable for medium to large-scale pre-design engagements.
 
 **3.2.3 By Association, Consultation, or Networking**
 Consultation between the Architect and firms of other disciplines (e.g., economists, environmental planners, market researchers) under the **extended terms of the Owner-Architect Agreement** is a common practice for complex, multi-sector pre-design work. The architect remains the lead professional and coordinator of all inputs.
@@ -321,3 +327,18 @@ When a project requires Comprehensive Architectural Services under **SPP Doc. 20
 - Engaging an RLA for pre-design services — especially feasibility studies and site analysis — before committing to land purchase or project financing is best practice and can prevent costly errors.
 - Owners must understand that they are responsible for providing the architect with access to data, documents, and the project site as part of their obligations under the Owner-Architect Agreement.
 - Outputs (reports, studies, design briefs) produced under SPP 201 are the **intellectual property of the Architect** under Sec. 33 of R.A. No. 9266 and must not be reproduced or used without authorization.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: SPP 201 = PRE-design services (before SPP 202). Six phases: (1) Project Definition, (2) Feasibility Study, (3) Site Analysis, (4) Space Programming, (5) Design Guidelines, (6) Consultant Selection. Compensation is per-diem or fixed fee — NOT percentage of construction cost. The most tested distinction: SPP 201 is optional/separate, SPP 202 is the standard.
+
+## Cross‑References
+
+**Spp Doc 202 Regular Design Services**, **Uap Spp Doc Standards Of Professional Practice For Philippine Architects**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 204 A Fulltime Supervision Services**
+

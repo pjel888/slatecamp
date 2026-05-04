@@ -28,12 +28,7 @@ A critical policy principle in SPP 206 is that **the Architect is NOT expected t
 
 When the Owner hires an Architect or a firm to **coordinate the whole range of CAS**, this constitutes **Project Management (PM)**. PM is formally defined as:
 
-<Callout variant="note">
-
-*"Management activities over and above the normal architectural and engineering (A&E) services carried out during the pre-design, design, and construction phase. The overall objective is to have control over time, cost, and quality relative to the construction of a project."*
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 Three foundational principles govern the PM role:
 
@@ -125,23 +120,13 @@ In addition to coordinating all CAS services, the PM has a specifically defined 
 
 #### Pre-Construction Phase
 
-<Callout variant="note">
-
-*"As early as during the design development phase, perhaps even concurrently with the Architect's commission, the Project Manager (PM) should conduct regular consultations with the Owner and with the Architects and Engineers (for A&E services) on all aspects of planning for the project."*
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
 
 This means the PM's engagement begins **before construction starts** — ideally during the design development stage — so that programming, procurement planning, budget controls, and contractor pre-qualification are all in place before the project goes to bid.
 
 #### Construction Phase
 
-<Callout variant="note">
-
-*"If the Project Manager (PM) also serves as the Construction Manager (CM) to oversee time, cost, and quality control during the construction of the project, he shall provide the services detailed under SPP Documents 204-A and/or 204-B."*
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
 
 The PM's default role during construction is **coordination and oversight**. If the PM also takes on the CM role, the full SPP 204-A/204-B scope applies and additional compensation is owed.
 
@@ -149,20 +134,7 @@ The PM's default role during construction is **coordination and oversight**. If 
 
 ### CAS Full Scope at a Glance
 
-<ComparisonTable>
-
-| SPP Document | Service Cluster | Sub-Services |
-|---|---|---|
-| SPP 201 | Pre-Design | 12 services |
-| SPP 202 | Regular Design | 6 phases |
-| SPP 203 | Specialized Services | 23 services |
-| SPP 204-A | Fulltime Supervision | CSG services |
-| SPP 204-B | Construction Management | CM services |
-| SPP 205 | Post-Construction | 2 service clusters |
-| **SPP 206 (PM layer)** | **Coordination of ALL above** | **Pre-construction + Construction PM** |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0004 component="ComparisonTable" status="preserved"]
 
 ***
 
@@ -177,23 +149,7 @@ To perform the variety of CAS services, the Architect **must make full use of hi
 1. **Expand his own staff** by hiring the experts needed, or
 2. **Form a multi-disciplinary team** consisting of professionals such as (but not limited to):
 
-<ComparisonTable>
-
-| Professional Type | Role in CAS Team |
-|---|---|
-| Architects | Design, documentation, site supervision |
-| Engineers | Structural, M/E/P systems design |
-| Market Analysts | Feasibility and demand studies |
-| Accountants | Cost tracking and financial reporting |
-| General Contractors | Construction implementation |
-| Real Estate Consultants | Site analysis, land use advisory |
-| Sociologists | Community impact, occupancy behavior |
-| Planners | Urban design, land use planning |
-| Bankers | Project financing and cash flow |
-| Lawyers | Contracts, permits, legal compliance |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0005 component="ComparisonTable" status="preserved"]
 
 This multi-disciplinary team model is the defining feature of CAS — the Architect as PM does not work alone, but assembles and leads the best team for the specific project.
 
@@ -214,18 +170,7 @@ In like manner, the **Fulltime Supervisor (under SPP 204-A)** can either be a st
 
 The PM operates as a **member of the Owner-Architect-Engineer-Contractor (OAEC) Team**. In this Team Approach, each member has precedence in their own field of expertise:
 
-<ComparisonTable>
-
-| Team Member | Primary Responsibility | Authority Domain |
-|---|---|---|
-| **Architect & Specialist Consultants** | Prime responsibility for plan/design of the project | Design decisions |
-| **Engineers** | Responsible for respective engineering plans | Structural, M/E/P design |
-| **Contractor** | Responsible for men, equipment, and delivery of the project | Construction methods |
-| **Owner** | Makes decisions on the project; assures funds are available | Final approvals, financing |
-| **Project Manager (PM)** | Primary responsibility for **overall cost control**; plans, programs, and monitors activities; advises on material costs and construction methods | Cost, schedule, quality oversight |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0006 component="ComparisonTable" status="preserved"]
 
 The PM sits atop the coordination hierarchy — not as a superior to the designer or contractor in their respective domains, but as the **integrating authority** who ensures all team members deliver on schedule, within budget, and at the required quality level.
 
@@ -239,12 +184,7 @@ SPP 206 is notably concise in its compensation provisions — reflecting that th
 
 The primary compensation method for the Project Manager is a **percentage of the Project Construction Cost (PCC)**:
 
-<Callout variant="note">
-
-*"The Project Manager is compensated on a percentage basis, as shall be described in the Architect's Guidelines."*
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
 
 The **Recommended Professional Fee (RPF) for Project Management Services is 2% to 5% of the Project Construction Cost (PCC)**. The exact rate within this range depends on:
 
@@ -267,16 +207,7 @@ The two fees are cumulative and are not mutually exclusive.
 
 While the percentage method is primary, the Architect's Guidelines also recognize additional methods applicable to CAS/PM services:
 
-<ComparisonTable>
-
-| Method | Applicability |
-|---|---|
-| **Multiple of Direct Personnel Expense (MDPE)** | Variable-scope pre-construction PM activities |
-| **Professional Fee Plus Expenses (PFPE)** | Ongoing PM engagement with defined deliverables |
-| **Lump Sum / Fixed Fee** | Government projects; well-defined PM scope |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
 
 ***
 
@@ -284,19 +215,7 @@ While the percentage method is primary, the Architect's Guidelines also recogniz
 
 A critical question in practice is: **when should a client engage CAS under SPP 206 vs. engaging individual SPP 201–205 services separately?**
 
-<ComparisonTable>
-
-| Factor | Individual SPP Engagements | Comprehensive Architectural Services (SPP 206) |
-|---|---|---|
-| **Project Complexity** | Suitable for straightforward single-phase projects | Best for complex, multi-phase, multi-contractor projects |
-| **Owner's Capacity** | Owner has staff to coordinate consultants and contractors | Owner lacks capacity for multi-party coordination |
-| **Continuity** | Multiple separate contracts; risk of coordination gaps | Single contract; PM maintains continuity across all phases |
-| **Cost Accountability** | Each SPP contract has separate fee | PM fee (2–5% PCC) added on top of individual service fees |
-| **Design Responsibility** | Aor has full design responsibility | Aor retains design responsibility; PM adds management layer |
-| **Construction Oversight** | CSG/CM hired separately | PM coordinates CSG/CM, may assume both roles |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0009 component="ComparisonTable" status="preserved"]
 
 The key insight is that **CAS does not replace the individual services** — it adds a management layer on top of them. The total cost of a CAS engagement includes both the individual SPP fees and the PM fee.
 
@@ -321,19 +240,7 @@ This three-dimensional primacy (Creator–Author–Coordinator) is what distingu
 
 ## 7. Relationship to Other SPP Documents
 
-<ComparisonTable>
-
-| SPP Document | Nature of Relationship |
-|---|---|
-| **SPP 201** (Pre-Design) | First service cluster under CAS; PM engagement should ideally begin at this phase |
-| **SPP 202** (Regular Design) | Core design service under CAS; Aor-PM earns SPP 202 fee separately |
-| **SPP 203** (Specialized Services) | 23 specialized services all fall within CAS scope; PM procures and coordinates specialist consultants |
-| **SPP 204-A** (Fulltime Supervision) | PM may absorb CSG into staff, or coordinate a separately hired CSG |
-| **SPP 204-B** (Construction Management) | PM may serve as CM, earning additional 204-B fee; or may engage a separate CM |
-| **SPP 205** (Post-Construction) | Final phase of CAS; PM transitions to Building Administrator or hands over to a separate Post-Construction Architect |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0010 component="ComparisonTable" status="preserved"]
 
 ***
 
@@ -353,15 +260,23 @@ This three-dimensional primacy (Creator–Author–Coordinator) is what distingu
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: Comprehensive = SPP 201 + 202 + 204 + 205 in a single contract. Basic fee = 15% of construction cost (max). Not included: specialized services (203). Comprehensive is a BUNDLE — the 15% ceiling applies to the bundle, not to each phase. The most tested: if a client asks for 'all services', it likely triggers SPP 206 (Comprehensive), not just SPP 202.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Comprehensive = SPP 201 + 202 + 204 + 205 in a single contract. Basic fee = 15% of construction cost (max). Not included: specialized services (203). Comprehensive is a BUNDLE — the 15% ceiling applies to the bundle, not to each phase. The most tested: if a client asks for 'all services', it likely triggers SPP 206 (Comprehensive), not just SPP 202.
+
 ## Cross‑References
 
 **Spp Doc 201 Pre Design Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 205 Post Construction Services**, **Spp Doc 207 Design Build Services**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

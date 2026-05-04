@@ -1,4 +1,12 @@
 ## The Contractor's Obligations — Scope, Compliance Standards, and the Guarantee Period
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Describe the Contractor's primary obligations under Doc 301: strict conformity to Contract Documents, qualified workforce, bonds, and warranty of quality.
+- Explain the Contractor's one-year Guarantee Period under Doc 301 and the scope of post-completion defect remediation.
+- Identify the bonds required of the Contractor (bid bond, performance bond, guarantee bond) and their respective purposes.
+- Apply Contractor obligation principles to LEA scenarios involving defective work, non-conforming materials, and warranty claims.
 
 
 
@@ -54,8 +62,49 @@ Upon Substantial Completion certification, the Contractor's Guarantee Bond enter
 
 The Owner must report defects in writing during or within a reasonable time after the one-year guarantee period. Defects reported before the end of the one-year period must be corrected by the Contractor. Defects discovered after the one-year period are the Owner's responsibility unless the defect is attributable to the Contractor's negligence or intentional misconduct. However, Article 1723 of the Civil Code extends contractor liability to 10 years for total or partial demolition of the structure due to poor materials or construction, or 15 years if due to defects in the ground, allowing claims even after the one-year guarantee period expires.
 
+<LawCallout code="irr" section="Art. 1723, Civil Code">
+
+Article 1723 of the Civil Code imposes solidary liability on the engineer or architect (who drew the plans) and the contractor for total or partial demolition of a structure within 10 years from completion if due to poor materials or construction, or within 15 years if due to defects in the ground. The contractor's one-year guarantee period under Doc 301 is independent of and in addition to this statutory liability — defects not covered by the guarantee may still give rise to claims under Article 1723.
+
+</LawCallout>
+
+<Warn title="Art. 1723 — Architect vs. Contractor Liability">
+
+Article 1723 creates solidary (joint and several) liability between the architect/engineer and the contractor. The owner may sue either party for the full amount without needing to join the other. The contractor cannot shift blame to the architect — both are independently and solidarily liable. The one-year contractual guarantee does not extinguish or replace the 10/15-year statutory liability under the Civil Code.
+
+</Warn>
+
 ### Relationship Between Contractor and Subcontractors
 
 The Contractor is responsible for all subcontractor performance as if the work were performed by the Contractor directly. The Contractor may not delegate responsibility to subcontractors. If a subcontractor fails to perform or is removed due to incompetence, the Contractor must hire a replacement and complete the work. The Contractor remains the only party with a direct contractual relationship to the Owner; subcontractors have no direct contract with the Owner and cannot claim payment directly from the Owner (absent liens or other legal remedies).
 
 The Contractor is responsible for coordination among subcontractors, resolution of conflicts or interferences among trades, and prevention of schedule conflicts. If subcontractor disputes delay the work, the Contractor is liable for the delay and cannot claim excuse. The Contractor must exercise control over subcontractors to ensure compliance with the Contract Documents and applicable laws, and must enforce safety and quality standards within the subcontractor workforce.
+
+<Tip title="Remembering Key Contractor Obligations — SWEEP Mnemonic">
+
+S — Scope: Execute all work per the Contract Documents. W — Workmanship: Quality materials and proper installation. E — Employment: Hire qualified workers, comply with labor laws. E — Execution: Meet schedule, maintain bonds, comply with codes. P — Protection: Site safety, clean-up, and the one-year guarantee.
+
+</Tip>
+
+<ExamTip title="Contractor Obligations on the Bar/LEA">
+
+This topic appears most often in MCQs testing: (1) the distinction between the 1-year contractual guarantee under Doc 301 and the 10/15-year statutory liability under Art. 1723 of the Civil Code; (2) whether a contractor can delegate responsibility to subcontractors (no); (3) liquidated damages vs. penalties; and (4) the three required bonds (Bid, Performance, Payment). Essay questions often present a structural defect discovered after one year — examinees must analyze both contractual and statutory liability.
+
+</ExamTip>
+
+<!-- Source: Doc 301 (General Conditions of the Contract), Civil Code of the Philippines Art. 1723 -->
+
+---
+
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)

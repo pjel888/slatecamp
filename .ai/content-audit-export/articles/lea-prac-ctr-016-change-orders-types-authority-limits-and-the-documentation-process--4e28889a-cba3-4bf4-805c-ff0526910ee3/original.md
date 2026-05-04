@@ -1,4 +1,12 @@
 ## Change Orders — Types, Authority Limits, and the Documentation Process
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Define a Change Order and distinguish it from other contract modifications (Change Directive, Field Order).
+- Identify the types of changes: owner-initiated, field-discovered, deficiency, regulatory, and force majeure.
+- Explain the Architect's authority limits for issuing Change Orders and when Owner authorization is required.
+- Describe the Change Order documentation process and how cost and schedule adjustments are documented and approved.
 
 
 Change orders formalize modifications to the scope of work, establishing new contract terms when conditions require deviation from the original design or scope.
@@ -45,3 +53,19 @@ The contractor maintains daily logs documenting all work performed on changed sc
 Over a project's duration, multiple changes accumulate, potentially creating significant pricing and scheduling impacts. Some contracts include provisions addressing cumulative change impact, requiring the architect to re-evaluate overhead, profit, and resource allocation as the total modified scope increases. A contractor whose original contract work was substantially modified by multiple changes may have justification for additional compensation reflecting the increased complexity and resource impact of extensive modifications.
 
 Disputes frequently arise regarding whether the contractor is entitled to overhead and profit adjustments when multiple changes substantially alter the original contract conditions. Clear change order language addressing pricing methodology for cumulative changes prevents these disputes.
+
+<LawCallout code="nbcp" section="RA 9266" title="Architecture Act of 2004">RA 9266 governs architectural practice and contract requirements. Agreements must specify scope, compensation, termination, and dispute resolution per SPP Document 201.</LawCallout>
+
+<ProcessFlow>
+<ol>
+  <li><strong>Proposal</strong> — Scope definition and fee negotiation</li>
+  <li><strong>Contract Execution</strong> — Signing of UAP Doc 301</li>
+  <li><strong>Service Delivery</strong> — Performance of defined phases</li>
+  <li><strong>Payment Processing</strong> — Progress billing and certificates</li>
+  <li><strong>Close-out</strong> — Final certificate, retention release</li>
+</ol>
+</ProcessFlow>
+
+<ExamTip>Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibility, supervision) are separately compensated. Verify exclusions.</ExamTip>
+
+<KeyValues items={[{"value": "10%", "label": "Standard Retention"}, {"value": "60 days", "label": "Payment Period"}, {"value": "5%", "label": "COLA Escalation Max"}, {"value": "90%", "label": "CD Phase Fee"}]} />

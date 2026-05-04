@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services
 
-Generated: 2026-05-03T13:44:37.719Z
+Generated: 2026-05-04T00:06:12.747Z
 Article ID: a13cdc9c-f057-481e-a661-eedb6548f6d8
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:bcbffb0f6256da6cfb5e19a555af58da18699484bb0c163e0c45a75212520b89`
-- Normalized: `sha256:3472021d627ee8636c40d1116fdc497643c6ea8c59407d4f54fbbe6e3b0fe2eb`
-- Candidate: `sha256:1f42c77f1993c3d9c2f8ab707d8f91920dcab2d7600f8db1b3fcb5f916749cbe`
+- Original: `sha256:1f42c77f1993c3d9c2f8ab707d8f91920dcab2d7600f8db1b3fcb5f916749cbe`
+- Normalized: `sha256:6e0aaabf21d1f491d898181af1b8bd6a9233726ce7cc0edcb92cf22c3273948a`
+- Candidate: `sha256:6e0aaabf21d1f491d898181af1b8bd6a9233726ce7cc0edcb92cf22c3273948a`
 
 ## Line summary
 
-- Changed lines: 58
-- Inserted lines: 39
-- Deleted lines: 0
+- Changed lines: 34
+- Inserted lines: 0
+- Deleted lines: 6
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

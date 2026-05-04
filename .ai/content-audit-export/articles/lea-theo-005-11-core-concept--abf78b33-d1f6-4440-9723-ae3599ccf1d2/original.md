@@ -4,9 +4,17 @@
 Feminist and postcolonial perspectives fundamentally challenge architecture's traditional canon, revealing how architectural discourse has been structured by patriarchal and colonial assumptions, and how spaces—domestic, institutional, public—reproduce and enforce gender and racial hierarchies. The LEA tests your understanding of how these perspectives expose architecture's political dimensions and how contemporary architects and theorists work toward more equitable, culturally-grounded, and socially-engaged practice.
 </Callout>
 
+
+
+## Learning Goal
+
+- Explain how feminist critiques expose architecture's patriarchal assumptions and how domestic spaces reproduce gender hierarchies.
+- Define postcolonial architectural theory: how colonial built forms imposed power structures and how postcolonial societies reclaim spatial agency.
+- Analyze how space — domestic, institutional, public — reinforces or dismantles social hierarchies.
+
 ## Core Concept
 
-Feminist critiques of architecture emerged in the 1970s and 1980s, initially asking a deceptively simple question: where are the women? The historical canon of "great architects" was overwhelmingly mlea; women's architectural contributions had been systematically erased, marginalized, or credited to mlea colleagues. More fundamentally, feminist theory exposed how architecture—particularly domestic architecture—has historically been designed to control women's bodies, movement, and social roles. The domestic sphere, relegated to women's governance in gender-hierarchical societies, was understood as the realm of necessity and reproduction rather than the realm of creativity and public significance claimed by mlea architects designing cities and institutions.
+Feminist critiques of architecture emerged in the 1970s and 1980s, initially asking a deceptively simple question: where are the women? The historical canon of "great architects" was overwhelmingly male; women's architectural contributions had been systematically erased, marginalized, or credited to male colleagues. More fundamentally, feminist theory exposed how architecture—particularly domestic architecture—has historically been designed to control women's bodies, movement, and social roles. The domestic sphere, relegated to women's governance in gender-hierarchical societies, was understood as the realm of necessity and reproduction rather than the realm of creativity and public significance claimed by male architects designing cities and institutions.
 
 <Tip>Feminist architectural analysis hinges on this equation: **Domestic space = gendered space = political space**. Architectural history treated domestic design as minor/private; feminist analysis reveals it as fundamentally political—it enforces gender roles through spatial organization. This reframing (domesticity as political) is the entire conceptual move.</Tip>
 
@@ -14,7 +22,7 @@ Feminist critiques of architecture emerged in the 1970s and 1980s, initially ask
 
 <Warn>Feminist architectural critique is NOT "hire more women architects" (though visibility matters). The core claim is that **spaces encode power**—that patriarchal arrangements are *materialized* in building design. This requires looking at floor plans, spatial separation, circulation patterns, not just architect demographics. A femlea-designed building can still reproduce patriarchal spatial logic; gender inclusion without spatial criticism is insufficient.</Warn>
 
-Feminist architectural analysis reveals how the spatial organization of houses inscribed gender roles. Victorian and modernist domestic architecture separated kitchen and living spaces, confining reproductive labor (cooking, cleaning, childcare) spatially and socially away from the intellectual and leisure spaces inhabited by men. The isolated suburban nuclear family home, celebrated as modernist domestic ideal, actually increased women's isolation and domestic labor while promoting mlea professional mobility. Feminist architects and theorists questioned these inherited spatial arrangements, asking: what would domestic space look like if designed for women's actual lives—their work, their autonomy, their social engagement—rather than reproducing patriarchal role divisions?
+Feminist architectural analysis reveals how the spatial organization of houses inscribed gender roles. Victorian and modernist domestic architecture separated kitchen and living spaces, confining reproductive labor (cooking, cleaning, childcare) spatially and socially away from the intellectual and leisure spaces inhabited by men. The isolated suburban nuclear family home, celebrated as modernist domestic ideal, actually increased women's isolation and domestic labor while promoting male professional mobility. Feminist architects and theorists questioned these inherited spatial arrangements, asking: what would domestic space look like if designed for women's actual lives—their work, their autonomy, their social engagement—rather than reproducing patriarchal role divisions?
 
 Dolores Hayden's work, particularly *The Grand Domestic Revolution* (1981), examined how women architects and reformers historically imagined collective housing alternatives that would reduce isolated domestic labor through shared kitchens, childcare, and laundry facilities. Hayden's history reveals that feminism and architecture have long been intertwined; women activists envisioned spatial solutions to patriarchal domesticity. Contemporary feminist architects like Lori Brown continue this critical tradition, examining how spaces—from reproductive health clinics to shelters for domestic violence survivors—shape gendered embodied experience. Brown's *Contested Spaces* (2013) analyzes abortion clinics as politically contested architectural sites, revealing how abortion legislation translates into spatial restrictions and surveillance architectures that control women's bodies.
 
@@ -28,7 +36,7 @@ Postcolonial theory also exposes how colonialism shaped architectural knowledge 
 
 Feminist and postcolonial perspectives intersect crucially: poor women, women of color, and women in the Global South experience architecture's violence multiply, as gender oppression intersects with economic marginalization and postcolonial exploitation. Feminist theory that ignores race and imperialism replicates the parochialism of Western feminism; postcolonial theory that ignores gender replicates patriarchal blindness within formerly colonized societies. Contemporary feminist and postcolonial architectural work recognizes these intersections, examining how spaces reproduce interlocking systems of domination.
 
-Lori Brown's establishment of ArchiteXX, an organization dedicated to transforming architecture for women, and her foundational anthology *Feminist Practices: Interdisciplinary Approaches to Women in Architecture*, represent contemporary efforts to center women's voices and feminist perspectives within architectural discourse. The recent *Bloomsbury Global Encyclopedia of Women in Architecture, 1960-2020* documents over 1,000 women architects, critics, historians, and activists—making visible women's contributions that mlea-dominated architectural history had systematically erased.
+Lori Brown's establishment of ArchiteXX, an organization dedicated to transforming architecture for women, and her foundational anthology *Feminist Practices: Interdisciplinary Approaches to Women in Architecture*, represent contemporary efforts to center women's voices and feminist perspectives within architectural discourse. The recent *Bloomsbury Global Encyclopedia of Women in Architecture, 1960-2020* documents over 1,000 women architects, critics, historians, and activists—making visible women's contributions that male-dominated architectural history had systematically erased.
 
 Contemporary practice increasingly reflects feminist and postcolonial concerns. Participatory and community-engaged architecture prioritizes marginalized communities' agency and knowledge rather than imposing expert solutions. Architects work with women's groups, Indigenous communities, and economically marginalized populations to develop architecture emerging from these groups' actual spatial needs and aspirations. This approach challenges modernism's expert authority and postmodernism's elitist irony, instead insisting that architecture's legitimacy emerges through engagement with those who inhabit and use spaces.
 
@@ -90,3 +98,10 @@ Contemporary practice increasingly reflects feminist and postcolonial concerns. 
 **Erasure** — Systematic exclusion of certain groups, knowledges, or contributions from historical record and institutional recognition; feminist and postcolonial scholarship works against erasure.
 
 **Visibility** — Making visible previously erased or marginalized contributions; *Bloomsbury Encyclopedia of Women in Architecture* exemplifies work of bringing women architects into visibility.
+
+## Related Articles
+
+See also within Architectural Philosophies: **lea-theo-005-01-core-concept**, **lea-theo-005-02-core-concept**, **lea-theo-005-04-core-concept**, **lea-theo-005-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

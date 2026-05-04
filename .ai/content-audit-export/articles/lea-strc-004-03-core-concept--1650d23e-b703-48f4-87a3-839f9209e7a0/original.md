@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define base shear (V) as the total design lateral force at the base of a structure
+- Identify the variables in the base shear formula: V = (Z × I × C × W) / R
+- Explain how each variable (Z, I, C, W, R) affects the design seismic force
+- State the relationship between building period (T) and seismic response coefficient (C)
 
 A soft story and a weak story are not synonyms. Soft story is a lateral stiffness deficiency (< 70% of story above); weak story is a lateral strength deficiency (< 80% of story above). Both create seismic vulnerability and are regulated by design codes. The LEA distinguishes them clearly.
 
@@ -43,6 +50,13 @@ Soft stories are common in Philippine commercial buildings where ground floors a
 
 <Tip>_Soft_ = stiffness (S.S. = Same Sound). _Weak_ = strength (starts with W). Soft < 70%; Weak < 80%. Remember: 70 (soft) comes before 80 (weak) numerically and alphabetically (Soft, Weak).</Tip>
 
+
+## Related Articles
+
+See also: **Seismic Zones** (lea-strc-004-02) for zone factor Z, **Earthquake Fundamentals** (lea-strc-004-01) for the science behind seismic demand, and **Required Strength** (lea-strc-005-01) for how base shear combines with other loads.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Treating soft and weak as synonyms. They are distinct: soft = stiffness; weak = strength. Different definitions, different thresholds (70% vs. 80%).","Using 80% for soft story threshold. Soft story threshold is 70% of story above (stiffness). Weak story is 80% (strength).","Confusing story drift (displacement) with soft/weak (stiffness/strength). Drift is the lateral movement; soft/weak are structural deficiencies that can cause excessive drift.","Thinking soft/weak stories only matter for tall buildings. Any building with a stiffness or strength discontinuity (e.g., ground floor retail below office) is subject to the check.","Ignoring the story-pair nature of the check. A soft story is 70% of the story ABOVE, not an absolute value. Compare each story to its upper neighbor.","Assuming P-delta effects are automatically accounted for. If story drift exceeds 0.02H, P-delta analysis is required because second-order effects become significant."]} />

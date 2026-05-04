@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Non-ferrous metals—aluminum, copper, brass, bronze, zinc, and lead—serve critical roles in Philippine construction beyond structural framing. These materials provide weather resistance, thermal management, aesthetic finishes, and specialized functional properties. The LEA expects you to identify aluminum alloy series by designation, specify appropriate tempers for architectural applications, understand anodizing and coating systems, and recognize galvanic corrosion risks when dissimilar metals connect.
-
+Identify structural steel sections (W-shapes, channels, angles, HSS, plates) by their cross-section geometry, standard designations, and typical applications in building frames, and recall standard yield strengths for A36 and A572 Grade 50 steel.
 ## Core Concept
 
 Non-ferrous metals are metallic elements or alloys that contain little or no iron. Unlike ferrous metals (iron-based), they do not corrode through rust oxidation in the same manner, making them ideal for exposed architectural elements, coastal environments, and wet areas. Aluminum dominates Philippine construction due to its lightweight, excellent corrosion resistance, ease of extrusion, and aesthetic versatility.
@@ -98,3 +98,10 @@ The LEA evaluates non-ferrous metals knowledge through:
 <WikiMistakeCard title="Anodizing as a Standalone Corrosion Barrier" body="A design relies on Type I anodizing (5 µm film) for a coastal residential building. Type I provides only minimal protection; Type II (10–25 µm) is the minimum standard for architectural exposure, and Type III (25–75 µm) is required for harsh marine environments. The building faces premature corrosion failure." />
 
 <WikiMistakeList items={["Assuming all non-ferrous metals are 'corrosion-proof'—copper oxidizes (patina), zinc can corrode, and unprotected aluminum is vulnerable in wet/coastal conditions.", "Omitting isolation methods when dissimilar metals contact—a stainless steel bolt connecting an aluminum extrusion to a copper component risks galvanic corrosion without EPDM or nylon separation.", "Specifying 6063-T5 for load-bearing members when T6 strength is required, or over-specifying T6 when T5 cost savings are acceptable for non-structural trim.", "Failing to account for Philippine coastal or high-humidity environments when selecting anodizing type—tropical climates demand more aggressive surface protection than temperate regions."]} />
+
+## Related Articles
+
+See also within Metals, Glass, and Glazing: **lea-matl-003-05-core-concept**, **lea-matl-003-07-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

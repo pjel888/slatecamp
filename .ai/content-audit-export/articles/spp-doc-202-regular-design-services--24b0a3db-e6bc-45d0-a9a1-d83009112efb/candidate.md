@@ -16,11 +16,7 @@ Regular Design Services represent what most people understand as "the architect'
 
 ## Legal and Regulatory Basis
 
-<Callout variant="authority" title="Legal Authority: R.A. No. 9266 — The Architecture Act of 2004">
-
-This SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 SPP 202 applies to all **Registered and Licensed Architects (RLAs)** — natural persons with valid PRC Certificates of Registration and 3-year renewable Professional Identification Cards. It equally applies to architectural firms (AFs) organized as DTI-registered sole proprietorships, or SEC-registered professional partnerships or corporations, all subject to Sec. 37 of R.A. No. 9266.
 
@@ -37,12 +33,7 @@ In regular practice, the Architect acts as the **Owner's/Client's/Proponent's Ad
 - **Covers** all aspects from analysis and study of needs, to preparation of instruments of service, to supervision during project implementation
 - **Ends** work only when the general contractor or builder turns over the completed project to the owner
 
-<Callout variant="note">
-
-The architect does not guarantee construction costs, nor assume professional responsibility for cost estimates, since the architect has no control over the cost of labor, materials, or the many factors that affect competitive bidding — unless glaring errors or discrepancies are clearly evident.
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
 
 ***
 
@@ -90,12 +81,7 @@ Based on approved Design Development documents, the architect:
 - **Updates the SPPCC** based on any changes in scope, requirements, or market conditions
 - Assists the owner in filing required documents to secure approval from **government authorities having jurisdiction** over the project design
 
-<Callout variant="note">
-
-The completion of the Contract Document Phase represents **90% of the architect's total work**. If the owner fails to implement the plans and documents for construction after this phase, the architect is entitled to receive compensation equivleant to **90% of the agreed architect's fee**.
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
 
 ### Phase 5: Bidding or Negotiation Phase
 
@@ -112,12 +98,7 @@ In this phase, the architect:
 
 **For negotiated contracts**, the architect performs similar functions but negotiates with **one contractor** instead of many bidders.
 
-<Callout variant="note">
-
-All Bid Documents are the **intellectual property of the Architect** under Sec. 33 of R.A. No. 9266. Bidders must return bid documents, and must not reproduce or use them for unauthorized purposes. The owner likewise must not use the documents for any purpose other than the specific project under agreement.
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
 
 ### Phase 6: Construction Phase
 
@@ -129,12 +110,7 @@ During construction, the architect:
 - **Determines the amount owing** to the contractor and issues corresponding **Certificates for Payment** based on observations and the Contractor's Applications for Payment
 - Conducts the necessary inspection to determine the date of **substantial and final completion** and issues the **final Certificate for Payment**
 
-<Callout variant="note">
-
-The architect is **not required to make exhaustive or continuous 8-hour on-site supervision** to check the quality of work. The architect shall not be held responsible for the contractor's failure to carry out construction work in accordance with the Contract Documents.
-
-</Callout>
-
+[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
 
 If the owner requires full-time (8-hour) construction supervision, a **separate full-time supervisor** shall be hired and agreed upon under the conditions of **SPP Document 204-A (Fulltime Supervision Services)**.
 
@@ -142,19 +118,7 @@ If the owner requires full-time (8-hour) construction supervision, a **separate 
 
 ## The Six Phases at a Glance
 
-<ComparisonTable>
-
-| Phase | Key Activities | Primary Output |
-|---|---|---|
-| **1. Project Definition** | Consultation, data gathering, program review | Initial SPPCC, Architectural Program |
-| **2. Schematic Design** | Conceptual line drawings, budget/site evaluation | Schematic Plans, updated SPPCC |
-| **3. Design Development** | Plans, elevations, sections, outline specs | DD Documents, updated SPPCC |
-| **4. Contract Documents** | Full construction drawings + technical specs | 7-set permit drawings, updated SPPCC |
-| **5. Bidding/Negotiation** | Bid docs, pre-bid, bid evaluation, award | Abstract of Bids, Notice of Award |
-| **6. Construction** | Site visits, change orders, Certificates of Payment | Final Certificate for Payment |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0006 component="ComparisonTable" status="preserved"]
 
 ***
 
@@ -172,23 +136,7 @@ The architect may enter into contract with the owner as **Lead Professional** in
 
 Professional architectural work is classified according to the **degree of complexity and creative skill required**. These groupings determine the corresponding scale of charges (minimum basic fee) in the Architect's Guidelines.
 
-<ComparisonTable>
-
-| Group | Description | Typical Building Types |
-|---|---|---|
-| **Group 1** | Buildings of the simplest utilization and character | Armories, bakeries, freight facilities, hangars, industrial plants, manufacturing plants, warehouses, parking structures, public markets, service garages |
-| **Group 2** | Buildings of moderate complexity of plan/design | Art galleries, banks, call centers, churches, colleges, dormitories, exhibition halls, libraries, malls, motels, nursing homes, office buildings, residential condominiums, restaurants, schools, shopping centers, supermarkets |
-| **Group 3** | Buildings of exceptional character and complexity | Airports, aquariums, auditoriums, breweries, convention facilities, gymnasiums, hospitals, hotels, laboratories, marinas, mental institutions, research facilities, stadia, theaters, transportation facilities, veterinary hospitals |
-| **Group 4** | Residences | Single-detached, single-attached, duplex, row-houses, shop-houses, small apartment houses, townhouses |
-| **Group 5** | Monumental buildings | Exposition/fair buildings, museums, mausoleums, memorials, specialized decorative buildings |
-| **Group 6** | Repetitive construction | Projects where plans/designs and Contract Documents are **re-used** for the repetitive construction of similar buildings without amending drawings and specifications |
-| **Group 7** | Housing projects | Construction of several residential units on a single site using **one basic plan and specifications** |
-| **Group 8** | Extensive detail | Designs for built-in components/elements, built-in equipment, special fittings, screens, counters, architectural interiors (AI), development planning and/or design |
-| **Group 9** | Alterations/renovations | Alterations, renovations, rehabilitations, retrofits, and expansions/additions to existing buildings belonging to Groups 1 to 5 |
-| **Group 10** | Opinion/advice only | The architect is engaged to render opinion, give advice, provide clarifications, or explanations on technical matters pertaining to architectural works |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0007 component="ComparisonTable" status="preserved"]
 
 ***
 
@@ -198,33 +146,11 @@ The architect's fee for Regular Design Services is primarily computed as a **Per
 
 ### Groups 1–3 (Fee scales by PCC Range)
 
-<ComparisonTable>
-
-| Group | PCC ≤ PHP 50M | Over PHP 50M–100M | Over PHP 100M–200M | Over PHP 200M–500M | Over PHP 500M–1B | Over PHP 1B |
-|---|---|---|---|---|---|---|
-| **Group 1** | 6% | PHP 3M + 5% of excess over 50M | PHP 5.5M + 4% of excess over 100M | PHP 9.5M + 3% of excess over 200M | PHP 18.5M + 2% of excess over 500M | PHP 28.5M + 1% of excess over 1B |
-| **Group 2** | 7% | PHP 3.5M + 6% of excess over 50M | PHP 6.5M + 5% of excess over 100M | PHP 11.5M + 4% of excess over 200M | PHP 23.5M + 3% of excess over 500M | PHP 38.5M + 2% of excess over 1B |
-| **Group 3** | 8% | PHP 4M + 7% of excess over 50M | PHP 7.5M + 6% of excess over 100M | PHP 13.5M + 5% of excess over 200M | PHP 28.5M + 4% of excess over 500M | PHP 48.5M + 3% of excess over 1B |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
 
 ### Groups 4–9 (Fixed or Special Rate Structures)
 
-<ComparisonTable>
-
-| Group | Fee Basis |
-|---|---|
-| **Group 4** (Residences) | **10%** of Project Construction Cost (flat) |
-| **Group 5** (Monumental) | 10% of PCC (requires consummate design skill and precise detailing) |
-| **Group 6** (Repetitive) | 1st structure: full basic fee; 2nd: 80% of basic fee; 3rd: 60%; succeeding: 40% |
-| **Group 7** (Housing Projects) | 1st unit: 10% of PCC; 2nd–10th: fee of 1st + 60% of basic fee per additional unit; 11th+: fee of 10 units + 30% of basic fee per additional unit |
-| **Group 8** (Extensive Detail) | **15%** of Project Construction Cost (flat) |
-| **Group 9** (Alterations/Renovations) | **150%** of the applicable Group 1–5 minimum basic fee |
-| **Group 10** (Opinion/Advice) | Per diem, honorarium, or agreed fee — no construction cost basis applicable |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0009 component="ComparisonTable" status="preserved"]
 
 ***
 
@@ -250,19 +176,7 @@ The broader **Project Development Cost** includes PCC plus all professional fees
 
 Five methods of compensation apply to Regular Design Services:
 
-<ComparisonTable>
-
-| Method | Best Used For | Key Feature |
-|---|---|---|
-| **Percentage of PCC** | All regular building projects (Groups 1–9) | Most common; fee tied to construction cost |
-| **MDPE (Multiple of Direct Personnel Expenses)** | Non-creative tasks (research, reports, data gathering) | Multiplier of 1.5–2.5 on direct personnel hours |
-| **Professional Fee + Expenses** | Continuing/repeat relationships | Fixed sum + reimbursements |
-| **Lump Sum / Fixed Fee** | Government projects; well-defined scope | Predictable total cost |
-| **Per Diem + Honorarium** | Short personal-time engagements | Daily rate + out-of-pocket expenses |
-| **Mixed Methods** | Complex, multi-phase projects | Combination of above methods |
-
-</ComparisonTable>
-
+[SLATECAMP_UI_BLOCK:ui_0010 component="ComparisonTable" status="preserved"]
 
 ***
 
@@ -344,22 +258,9 @@ All signboards placed at the project site during construction must be **approved
 
 ## Relationship to Other SPP Documents
 
-<ComparisonTable>
-
-| Preceding / Parallel Document | Relationship |
-|---|---|
-| **SPP Doc. 201** (Pre-Design Services) | Provides the Architectural Program and feasibility groundwork that feeds Phase 1 of SPP 202 |
-| **SPP Doc. 203** (Specialized Services) | Supplements SPP 202 for special areas (interiors, acoustic design, heritage conservation, etc.) — separately contracted and compensated |
-| **SPP Doc. 204-A** (Fulltime Supervision) | Engaged when the owner requires 8-hour on-site supervision beyond SPP 202's periodic visits |
-| **SPP Doc. 204-B** (Construction Management) | Engaged for broader management responsibilities over the entire construction process |
-| **SPP Doc. 205** (Post-Construction) | Takes over after project turnover for building maintenance, administration, and post-occupancy evaluation |
-| **SPP Doc. 206** (Comprehensive Services) | Packages SPP 201 through 205 into a single comprehensive engagement |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0011 component="ComparisonTable" status="preserved"]
 
 ---
-
-
 
 ---
 
@@ -367,7 +268,17 @@ All signboards placed at the project site during construction must be **approved
 
 LEA Swipe: SPP 202 five phases and fee percentages: SD (Phase 1) = 15% of basic fee | DD (Phase 2) = 20% | CD (Phase 3) = 30% (largest single phase) | Bidding (Phase 4) = 5% (smallest) | CA (Phase 5) = 30%. The 15-20-30-5-30 percentage sequence is the most tested fee allocation on the exam.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: SPP 202 five phases and fee percentages: SD (Phase 1) = 15% of basic fee | DD (Phase 2) = 20% | CD (Phase 3) = 30% (largest single phase) | Bidding (Phase 4) = 5% (smallest) | CA (Phase 5) = 30%. The 15-20-30-5-30 percentage sequence is the most tested fee allocation on the exam.
+
 ## Cross‑References
 
 **Spp Doc 201 Pre Design Services**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 206 Comprehensive Architectural Services**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

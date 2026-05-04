@@ -1,38 +1,46 @@
 {
   "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
   "slug": "african-vernacular-earth-architecture",
-  "generated_at": "2026-05-03T13:44:46.072Z",
-  "old_hash": "sha256:a67d4ea6bfd90d5b49bba0c43cff5b704f26b5be81d158103873cd49deccb1fd",
-  "new_hash": "sha256:a891be34940f994a71135700bcb6b84b14548a08358fdb86f5bc869e5387982d",
-  "original_hash": "sha256:a67d4ea6bfd90d5b49bba0c43cff5b704f26b5be81d158103873cd49deccb1fd",
-  "normalized_hash": "sha256:e29701c3224f6bd66aa3d1c4e7a30330dbb929264b88c19dad33df56a983ac34",
-  "candidate_hash": "sha256:a891be34940f994a71135700bcb6b84b14548a08358fdb86f5bc869e5387982d",
+  "generated_at": "2026-05-04T00:06:22.188Z",
+  "old_hash": "sha256:a891be34940f994a71135700bcb6b84b14548a08358fdb86f5bc869e5387982d",
+  "new_hash": "sha256:e60bea0d85c895742d8c228c15b0aee34bb56d69214696fbe9bbc951d44090dd",
+  "original_hash": "sha256:a891be34940f994a71135700bcb6b84b14548a08358fdb86f5bc869e5387982d",
+  "normalized_hash": "sha256:e60bea0d85c895742d8c228c15b0aee34bb56d69214696fbe9bbc951d44090dd",
+  "candidate_hash": "sha256:e60bea0d85c895742d8c228c15b0aee34bb56d69214696fbe9bbc951d44090dd",
   "changed": true,
-  "changed_line_count": 87,
-  "inserted_line_count": 39,
-  "deleted_line_count": 0,
+  "changed_line_count": 73,
+  "inserted_line_count": 0,
+  "deleted_line_count": 18,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 87,
-    "inserted": 39,
-    "deleted": 0,
-    "original_line_count": 62,
-    "candidate_line_count": 101
+    "changed": 73,
+    "inserted": 0,
+    "deleted": 18,
+    "original_line_count": 101,
+    "candidate_line_count": 83
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0026",
+      "ui_0027",
+      "ui_0028",
+      "ui_0029"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
 }

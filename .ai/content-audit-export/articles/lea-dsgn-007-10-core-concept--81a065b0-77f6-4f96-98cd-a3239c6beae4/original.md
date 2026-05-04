@@ -1,8 +1,11 @@
 ## What You Need to Know for the LEA
 
-Vertical circulation — stairs and elevators — is designed using precise dimensional and egress rules. The LEA tests your ability to calculate stair dimensions, determine the number of risers from floor height, and verify elevator compliance based on Philippine codes.
+## Learning Goal
+Verify design compliance with PD 1096, RA 9514, BP 344, and applicable codes at each design phase, identify code violations in plans and specifications, prepare code compliance checklists, and apply for variances where necessary.
 
+Vertical circulation — stairs and elevators — is designed using precise dimensional and egress rules. 
 ---
+
 
 ## Core Concept
 
@@ -112,6 +115,11 @@ Under the **2024 Revised IRR of BP 344** and related accessibility guidance, ele
 ## Philippine Practice Context
 
 In the Philippines, stair design is dictated primarily by the **National Building Code (PD 1096 and its IRR)** for geometry and by **RA 9514 (Fire Code)** for egress width, landings, and headroom. **Blondel’s formula** is widely used in review materials as a comfort check, but LEA questions will prioritize compliance with the **maximum riser**, **minimum tread**, **minimum width**, and **headroom** requirements set by PD 1096 and RA 9514. Accessibility rules from **BP 344 and its 2024 IRR** govern elevator dimensions, handrail details, and usability for persons with disability. For the LEA, always base your numerical answers on the codes, using Blondel and similar rules to justify good ergonomic practice.
+
+
+## Cross-References
+
+See **LEA-DSGN-008-01** (Fire Egress) for occupant load calculations, **LEA-DSGN-008-02** (Fire Separation) for fire-rated assemblies, and **LEA-PLAN-004-07** (Zoning Analysis) for zoning ordinance compliance.
 
 ## Common Mistakes
 

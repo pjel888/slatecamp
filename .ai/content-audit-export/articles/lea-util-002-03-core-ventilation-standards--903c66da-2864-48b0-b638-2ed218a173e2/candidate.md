@@ -7,6 +7,9 @@ Apply core ventilation standards — NBCP minimum fresh air rates, ASHRAE 62.1 i
 
 ### Philippine Building Code Requirements (PD 1096 Rule VIII)
 
+<ArticleMedia id="media-lea-util-002-03-core-ventilation-standar" a type="image" caption="Natural Ventilation Strategies — Cross-Ventilation and Stack Effect" description="Building section diagram comparing two natural ventilation strategies: (1) Cross-ventilation — opposite windows capturing prevailing wind, window openings min 10% of floor area per PD 1096 Rule VIII; (2) Stack effect — warm air rising through atrium/vent with cooler air entering lower openings, minimum 3m vertical separation between intake and exhaust. Philippine wind direction arrows annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 The Philippine National Building Code establishes minimum ventilation requirements through natural and mechanical means:
 
 - **Natural ventilation minimum**: Window and door openings must total at least 10% of the floor area for habitable rooms (PD 1096 Rule VIII Section 808)[2]
@@ -90,6 +93,9 @@ When mechanical systems are required:
 ## Exhaust Requirements by Space Type
 
 PD 1096 Rule VIII mandates exhaust ventilation for specific occupancies:
+
+<ArticleMedia id="media-lea-util-002-03-core-ventilation-standar" a type="image" caption="Mechanical Ventilation Exhaust — Toilets, Kitchens, Parking Garage" description="Section diagram showing exhaust systems for three space types: toilet exhaust (50-100 CFM, discharge above roof min 1m), kitchen exhaust hood (Type I, 100-300 CFM with grease duct sloping 1:12), and parking garage ventilation (1.5 ACH minimum with CO monitoring at 35 ppm threshold). Make-up air pathways indicated with blue arrows." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 
 ### Toilets (Water Closets)
 
@@ -223,18 +229,11 @@ Philippine Building Code (PD 1096) requires testing within 30 days of occupancy:
 
 ---
 
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
 
-<KeyValues items=[{"value": "NC 30-40", "label": "Office Spaces"}, {"value": "NC 25-35", "label": "Conference Rooms"}, {"value": "NC 45-55", "label": "Mechanical Rooms"}, {"value": "STC 50+", "label": "Party Walls"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 
-
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
-
-
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 _Article prepared per Philippine National Building Code (PD 1096 Rule VIII), ASHRAE 62.1-2022, and Philippine Mechanical Engineering Code (PD 1058). All numerical values sourced from cited standards and Philippine regulatory documents._
 

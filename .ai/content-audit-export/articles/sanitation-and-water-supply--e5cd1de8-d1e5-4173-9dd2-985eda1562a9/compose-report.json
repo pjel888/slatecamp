@@ -1,18 +1,26 @@
 {
   "article_id": "e5cd1de8-d1e5-4173-9dd2-985eda1562a9",
   "slug": "sanitation-and-water-supply",
-  "generated_at": "2026-05-03T13:44:11.540Z",
-  "original_hash": "sha256:4fc9cc3b0e7ea7b482485624bea42f02e327f6df87a1e6f2da46f93a22c153d8",
-  "normalized_hash": "sha256:654dfcc444235e9a2c7b58f9c36c09496e393d4959721320177792f6ac17dbfc",
-  "candidate_hash": "sha256:4af469e8233a95cdaac5929b45f14e352f9cdc2c3f8f2e99f32761971d9026f6",
+  "generated_at": "2026-05-04T00:05:38.922Z",
+  "original_hash": "sha256:60b1a518533bd5f06a834ec690e500c2564fbebf2c624ba8fd44642cd1120f05",
+  "normalized_hash": "sha256:c46f1866e43c14957b5c9f47dff7b961bbf76d543b000c8e6f0d7183badb1034",
+  "candidate_hash": "sha256:c46f1866e43c14957b5c9f47dff7b961bbf76d543b000c8e6f0d7183badb1034",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

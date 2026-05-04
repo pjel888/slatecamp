@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Classify warehouses as Group G (not F) storage occupancy, calculate occupant load at 46.5 sqm/person, specify clear height (6.0m standard / 9-12m high-bay), design loading docks at 1,200mm height, and apply cold chain temperature zones.
+
 Warehouses and cold storage facilities are Group G occupancies (storage/hazardous), not Group F. They require specialized spatial standards for clear height, loading docks, occupant load calculations, and temperature-controlled zones that define operational functionality.
+
 
 ## Core Concept
 
@@ -38,7 +42,7 @@ Parking spaces = Gross floor area ÷ 1,000 sqm per space
 
 ## Philippine Practice Context
 
-Warehouses in the Philippines are prevleant in commercial zones, industrial parks, and agricultural supply chains. Group G classification allows efficient single-story designs with minimal firewall separation. Cold storage facilities serve perishable export industries (fruits, seafood, dairy) and pharmaceutical distribution. Loading dock design must accommodate tropical weather (monsoon rainfall runoff) and local truck dimensions. Fire protection in Group G warehouses requires adequate sprinkler coverage, with occupant load density allowing compliance through standard egress widths and fewer exit requirements than higher-occupancy buildings. Energy efficiency in cold storage is critical due to tropical heat load on insulated envelopes.
+Warehouses in the Philippines are prevalent in commercial zones, industrial parks, and agricultural supply chains. Group G classification allows efficient single-story designs with minimal firewall separation. Cold storage facilities serve perishable export industries (fruits, seafood, dairy) and pharmaceutical distribution. Loading dock design must accommodate tropical weather (monsoon rainfall runoff) and local truck dimensions. Fire protection in Group G warehouses requires adequate sprinkler coverage, with occupant load density allowing compliance through standard egress widths and fewer exit requirements than higher-occupancy buildings. Energy efficiency in cold storage is critical due to tropical heat load on insulated envelopes.
 
 ## How It's Tested
 
@@ -49,6 +53,13 @@ Warehouses in the Philippines are prevleant in commercial zones, industrial park
 **Pattern 3 — Cold Chain Zone Design:** A facility requires blast freezing, frozen storage, and chiller zones. Specify dimensions, HVAC zones, and occupant load for a warehouse with total GFA of 4,000 sqm. Requires multi-part calculation and understanding of thermal separation.
 
 <Tip>Warehouse = Group G (not F). Occupant load = 46.5 sqm/person (low density). Clear height = 6.0m standard, 9.0–12.0m high-bay. Loading dock = 1,200mm height, door 3.6m × 4.5m. Cold chain: blast −25°C, frozen −18°C, chiller +2°C, cool +10°C. Parking = 1/1,000 sqm GFA.</Tip>
+
+
+**Exam Tip — ERR-DSGN-003:** Warehouses are Group G (storage), NOT Group F (industrial). Occupant load = 46.5 sqm/person (lowest density). Parking = 1 space per 1,000 sqm. Loading dock height = 1,200mm.
+
+## Cross-References
+
+See **LEA-DSGN-008-02** (Fire Separation) for Group G 4-hour fire rating, **LEA-DSGN-008-03** (Sprinkler Systems) for warehouse fire suppression, and **LEA-DSGN-010-02** (Parking Geometry) for loading dock design comparison.
 
 ## Common Mistakes
 

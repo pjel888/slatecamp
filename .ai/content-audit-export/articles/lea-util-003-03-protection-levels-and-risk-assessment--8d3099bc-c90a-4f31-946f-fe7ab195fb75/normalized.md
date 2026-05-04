@@ -7,6 +7,9 @@ Apply electrical protection levels and the fault hierarchy — short circuit, gr
 
 Lightning protection systems are designed to one of four protection levels defined in IEC 62305 and adopted in the Philippine Electrical Code (PEC):
 
+<ArticleMedia id="media-lea-util-003-03-protection-levels-and-ri" a type="image" caption="Lightning Protection — Rolling Sphere Method and Protection Angle Method" description="Comparative diagram showing two lightning protection design methods: (1) Rolling Sphere Method — sphere of radius (20-60m by Level I-IV) rolled across building roof, protected surfaces shown in green, unprotected zones requiring additional air terminals; (2) Protection Angle Method — cone of protection from air terminal with angle α (25°-60° by level). Air terminal spacing, down conductor routing, and grounding electrode shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 | Protection Level | Risk Reduction | Primary Use | Effectiveness |
 |---|---|---|---|
 | Level I (Highest) | 99% | High-value assets, hospitals, data centers | r = 20 m radius |
@@ -31,10 +34,6 @@ The RSM involves "rolling" an imaginary sphere of specific radius across the str
 ### Protection Radii by Level
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiCalloutBox" status="preserved"]
-Extracted summary:
-- Props: title="Rolling Sphere Radii (IEC 62305-3)", variant="info"
-- Text: Each protection level has a defined radius: **Level I = 20 m**, **Level II = 30 m**, **Level III = 45 m**, **Level IV = 60 m**. These radii determine the maximum distance from air terminals at which protection extends. In the Philippines, Level II and III systems are most common for commercial and residential buildings.
-[/SLATECAMP_UI_BLOCK]
 
 **Practical Application:**
 
@@ -155,6 +154,9 @@ All mesh conductors must bond to down conductor network at multiple points.
 
 ### 1. Air Terminals (Lightning Rods)
 
+<ArticleMedia id="media-lea-util-003-03-protection-levels-and-ri" a type="image" caption="Lightning Protection System Components — Air Terminal, Down Conductor, Grounding Electrode, Bonding" description="Isometric building diagram showing complete LPS: air terminals (lightning rods) on roof edges and high points, down conductors along building corners (minimum 2, spaced ≤25m), ground rods (2.4-3m deep, 16mm copper), ring conductor around building base, bonding of metal roof equipment (HVAC, satellite dishes). Ground resistance target ≤10 ohms per PEC Part 2." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 **Design per PEC Article 2.50:**
 - Minimum length: 10 inches (0.25 m) minimum per PEC Table 2.90.3.4 above highest point of protected structure
 - Sharp point preferred over ball terminal (contested; IEC 62305 allows both)
@@ -173,10 +175,6 @@ In the Philippines, air terminals must extend above:
 - Tree canopy (if trees nearby)
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: message="In tropical regions, inspect air terminal connections annually for corrosion at copper-aluminum interfaces. Use bimetallic washers and anti-oxidant compound."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ### 2. Down Conductors
 
@@ -252,10 +250,6 @@ For a single 3 m driven rod:
 - Test ground resistance after installation with clamp-on earth tester
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Example" status="preserved"]
-Extracted summary:
-- Props: title="Ground Resistance Calculation"
-- Text: **Scenario:** Metro Manila building with clay soil (resistivity 120 ohms·m), requires ≤10 ohms. **Rod specification:** Two 3.5 m deep copper rods, 16 mm diameter, spaced 5.5 m apart (1.5× length rule). **Calculation:** - Single rod: R = ρ / L = 120 / 3.5 ≈ 34 ohms - Two rods in parallel (approximate): R_parallel ≈ 34 / 2 = 17 ohms (overestimate; actual lower due to spacing reduction factor) - With spacing factor k ≈ 0.6: R ≈ 17 × 0.6 ≈ 10.2 ohms (marginal) **Improvement:** Add horizontal strap o
-[/SLATECAMP_UI_BLOCK]
 
 ## Zone of Protection
 
@@ -276,10 +270,6 @@ The protected zone is the volume surrounding an air terminal where strike curren
    - "Shadow zones" behind chimneys, protrusions unprotected until secondary air terminal added
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiCalloutBox" status="preserved"]
-Extracted summary:
-- Props: title="PD 1096 Requirements for Tall Buildings (UK Standard, Reference)", variant="warning"
-- Text: PD 1096 does not specify LPS; PEC references NFPA 780 (45m RSM radius) for all structures. For tall residential towers and commercial buildings exceeding 50 m in Philippine cities, use RSM with Level II protection minimum. Mesh conductor spacing ≤10 m required on roofs of structures >50 m to ensure comprehensive coverage and current distribution redundancy.
-[/SLATECAMP_UI_BLOCK]
 
 ### Calculating Unprotected Areas
 
@@ -318,10 +308,6 @@ All metal components within or on the structure must be bonded to the LPS networ
 ## Maintenance and Testing
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
-Extracted summary:
-- Props: message="Lightning protection systems deteriorate over time. Annual inspection and 5-year comprehensive testing are mandatory in the Philippines per PEC guidelines."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 **Annual Inspection Checklist:**
 - Visual inspection of all air terminals (corrosion, damage, secure mounting)
@@ -380,10 +366,6 @@ EC) Part 2, Article 2.50 mandates lightning protection systems for structures ex
 - Professional engineer (PE) stamp required on design drawings
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="Callout" status="preserved"]
-Extracted summary:
-- Props: type="info", title="Design Documentation Package"
-- Text: For any structure requiring LPS in the Philippines, prepare:**• Building layout with LPS component locations (plan and elevation views)• Air terminal specifications and placement rationale (RSM verification)• Down conductor routing and bonding schedule• Grounding electrode design and soil resistivity test results• Calculated zone of protection diagram• Maintenance schedule and testing intervals• Compliance statement referencing PEC Part 2 and IEC 62305**This package becomes the basis for LEA lic
-[/SLATECAMP_UI_BLOCK]
 
 ---
 

@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Countertops and solid surface materials define kitchen and bathroom durability and maintenance demands. The LEA tests your ability to specify counter materials by hardness, water absorption, heat resistance, and cost-performance fit.
-
+Classify countertop materials (granite, marble, quartz, solid surface, laminate, stainless steel, concrete, wood, tile) by durability, stain resistance, heat resistance, maintenance, and appropriate application for kitchens, bathrooms, labs, and commercial spaces.
 ## Core Concept
 
 Countertop materials range from high-performance engineered stone and natural stone to laminate and concrete. Each occupies a cost/performance band, and selection depends on space function and maintenance expectations. Note: Countertop materials follow ASTM C97 (natural stone absorption) or manufacturer specs. Tile absorption follows ASTM C373. These are different test methods — do not cross-reference.
@@ -14,7 +14,7 @@ Solid surface (e.g., Corian, DuPont) is a non-porous acrylic/polyester material 
 
 Laminate (high-pressure laminate, HPL) is the budget option, offering cost efficiency and design variety. Water absorption is high (1-2% in cut edges); the substrate is particle board, vulnerable to moisture and swelling. Heat resistance is moderate (max 150-160°C; hot pots cause blistering). Laminate is appropriate for low-use residential areas and rental properties. Common brands in the Philippines: Formica, Wilsonart.
 
-Concrete counters are architectural, offering custom form and finishes (polished, stained, matte). Mohs hardness is low (2-3); porosity is moderate (2-5% water absorption if unselead), requiring epoxy or polyurethane sealant and re-sealing annually. Cost is high ($150-300/m² installation labor), suitable for high-end residential and commercial showrooms. Concrete is uncommon in Philippine residential due to cost and maintenance burden.
+Concrete counters are architectural, offering custom form and finishes (polished, stained, matte). Mohs hardness is low (2-3); porosity is moderate (2-5% water absorption if unsealed), requiring epoxy or polyurethane sealant and re-sealing annually. Cost is high ($150-300/m² installation labor), suitable for high-end residential and commercial showrooms. Concrete is uncommon in Philippine residential due to cost and maintenance burden.
 
 Stainless steel counters are industrial-grade, used in commercial kitchens and professional home kitchens. High cost, thermal conductivity (hot/cold transfer), and visible fingerprints limit residential appeal. Mohs hardness is moderate; scratches are cosmetic but visible.
 
@@ -23,15 +23,15 @@ Stainless steel counters are industrial-grade, used in commercial kitchens and p
 | Property | Granite | Marble | Quartz (Engineered) | Solid Surface (Corian) | Laminate | Concrete |
 | --- | --- | --- | --- | --- | --- | --- |
 | Mohs Hardness | 6-7 | 3 | 7 | 2-3 | 2-3 | 2-3 |
-| Water Absorption | &lt;0.5% (selead) | &lt;0.5% (selead) | 0.05% (inherent) | &lt;0.1% | 1-2% (edge) | 2-5% (unselead) |
+| Water Absorption | &lt;0.5% (sealed) | &lt;0.5% (sealed) | 0.05% (inherent) | &lt;0.1% | 1-2% (edge) | 2-5% (unsealed) |
 | Sealing Requirement | Required, 1-3 years | Required, 1-2 years | Not required | Not required | Not required | Required (annual) |
-| Heat Resistance | Excellent (>300°C) | Good (>200°C) | Good (150-200°C) | Moderate (120-150°C) | Poor (150-160°C) | Good (200-250°C selead) |
-| Stain Resistance | Good (selead) | Poor (etching risk) | Excellent | Excellent | Fair | Fair (selead) |
+| Heat Resistance | Excellent (>300°C) | Good (>200°C) | Good (150-200°C) | Moderate (120-150°C) | Poor (150-160°C) | Good (200-250°C sealed) |
+| Stain Resistance | Good (sealed) | Poor (etching risk) | Excellent | Excellent | Fair | Fair (sealed) |
 | Scratch Resistance | Good | Moderate | Excellent | Moderate (repairable) | Moderate | Poor (visible scratches) |
 | Cost (PHP/m²) | 5,000-15,000 | 6,000-20,000 | 4,000-12,000 | 8,000-18,000 | 2,000-5,000 | 15,000-25,000 (labor) |
 | Edge Detail Options | Polished, honed, beveled | Polished, honed | Polished | Seamless (integrated edge) | Matching edge banding | Custom form |
 | Maintenance Level | High (annual sealing) | Very high (frequent sealing, etching) | Low (wipe clean) | Moderate (avoid hot surfaces) | Low | Very high (annual sealing) |
-| Typical Service Life | 20+ years (with sealing) | 15-20 years (with care) | 25+ years | 20-25 years | 10-15 years | 15-20 years (selead) |
+| Typical Service Life | 20+ years (with sealing) | 15-20 years (with care) | 25+ years | 20-25 years | 10-15 years | 15-20 years (sealed) |
 
 ## Philippine Construction Context
 
@@ -51,11 +51,11 @@ Standard countertop depth is 600mm (matching wall cabinet depth), with 40-50mm o
 
 **Question Type 1 (Hardness/Durability Match):** A client wants a durable kitchen counter with minimal maintenance. Should you specify marble, engineered quartz, or laminate? Answer: Engineered quartz. Marble requires high maintenance (etching, frequent sealing); laminate is not durable long-term. Quartz offers durability + low maintenance.
 
-**Question Type 2 (Water Absorption):** A bathroom counter in a humid Philippine climate requires resistance to moisture. Natural marble (with sealing) or engineered quartz? Answer: Engineered quartz (0.05% absorption inherent, no sealing needed). Selead marble still allows capillary moisture in tropical humidity, leading to staining and substrate damage.
+**Question Type 2 (Water Absorption):** A bathroom counter in a humid Philippine climate requires resistance to moisture. Natural marble (with sealing) or engineered quartz? Answer: Engineered quartz (0.05% absorption inherent, no sealing needed). sealed marble still allows capillary moisture in tropical humidity, leading to staining and substrate damage.
 
 **Question Type 3 (Cost-Performance):** A residential kitchen budget is limited. What countertop material balances cost and performance? Answer: Engineered stone (budget line, 4,000-5,000 PHP/m²) or quality laminate (Formica, 2,000-3,000 PHP/m²) for short-term, replacement-friendly option. Avoid low-cost laminate (&lt;1,500 PHP/m²); it deteriorates in 5-7 years.
 
-**Question Type 4 (Specification Detail):** A marble countertop specification omits sealing frequency. What maintenance problem results? Answer: Unselead or under-selead marble etches and stains within 6-12 months. Specification must state: "Natural marble per ANSI C119.2, selead per ASTM C1028 with stone selear (brand), reselead annually."
+**Question Type 4 (Specification Detail):** A marble countertop specification omits sealing frequency. What maintenance problem results? Answer: Unsealed or under-sealed marble etches and stains within 6-12 months. Specification must state: "Natural marble per ANSI C119.2, sealed per ASTM C1028 with stone selear (brand), resealed annually."
 
 <Tip>Memory aid: Engineered quartz = best all-rounder (hard, non-porous, low-maintenance). Natural granite = durable but requires sealing. Marble = beautiful but high-maintenance (etching risk). Laminate = budget-friendly but short-lived. Concrete = artistic but labor-intensive. Match material to maintenance tolerance, not just aesthetics.</Tip>
 
@@ -70,3 +70,10 @@ Standard countertop depth is 600mm (matching wall cabinet depth), with 40-50mm o
 <WikiMistakeCard mistake="Omitting sealing frequency for natural stone, assuming 'selead at factory' lasts the project life" correction="Factory sealing is initial protection only. Annual re-sealing is required for granite/limestone in high-humidity climates (Philippines). Specify in spec: 'Annual sealing per [brand] protocol.'" />
 
 <WikiMistakeList mistakes={["Installing laminate in high-heat zones (next to cooktops) without backsplash or edge protection", "Using water-based selears on marble in tropical climates (requires solvent-based selears for durability)", "Overlooking edge profiles in natural stone specs (polished vs. honed affects maintenance and appearance)", "Failing to coordinate countertop depth and overhang with cabinet and appliance specs", "Assuming backsplash is optional; omitting it in tile-wall kitchens (moisture penetration to substrates)"]} />
+
+## Related Articles
+
+See also within Interior Finishes: **lea-matl-007-01-core-concept**, **lea-matl-007-02-core-concept**, **lea-matl-007-03-core-concept**, **lea-matl-007-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

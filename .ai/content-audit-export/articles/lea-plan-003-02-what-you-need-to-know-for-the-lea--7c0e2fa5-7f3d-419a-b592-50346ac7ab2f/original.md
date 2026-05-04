@@ -1,5 +1,8 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Distinguish the four Philippine housing classifications — socialized (BP 220), economic (BP 220), low-cost, and open-market — by affordability thresholds, minimum standards, target income groups, and applicable regulations.
+
 Philippine housing is classified into four legal categories based on affordability, target market, and development approach. Socialized and economic housing are regulated by BP 220; low-cost housing bridges the gap between economic and open-market; and open-market housing serves middle-income and affluent buyers. The classification system does not govern delivery methods (these are determined by policy choices), but it defines the minimum standards each category must meet. Understanding the boundaries and definitions of each housing type is essential for reading housing policies, analyzing development projects, and answering classification questions on the LEA.
 
 ### Four Housing Classifications Under Philippine Law
@@ -50,7 +53,7 @@ Characteristics:
 - Price: Market-determined; ₱4 million and up
 - Examples: luxury residential subdivisions, high-end condominiums, exclusive golf course communities
 
-Open-market housing has no affordability requirement, no balanced housing obligation (except insofar as RA 7279 requires developers to produce an equivleant value of socialized housing), and is entirely driven by market demand and supply.
+Open-market housing has no affordability requirement, no balanced housing obligation (except insofar as RA 7279 requires developers to produce an equivalent value of socialized housing), and is entirely driven by market demand and supply.
 
 ---
 
@@ -66,7 +69,7 @@ Housing classifications describe what is built; delivery methods describe who bu
 
 **On-Site Balanced Housing**
 
-Private developers of open-market or economic projects build socialized units within the same subdivision or condominium project. Example: A 500-unit residential project includes 75 units (15% of cost) built as socialized housing with finish standards equivleant to the market units but sold at socialized prices.
+Private developers of open-market or economic projects build socialized units within the same subdivision or condominium project. Example: A 500-unit residential project includes 75 units (15% of cost) built as socialized housing with finish standards equivalent to the market units but sold at socialized prices.
 
 **Off-Site Balanced Housing**
 

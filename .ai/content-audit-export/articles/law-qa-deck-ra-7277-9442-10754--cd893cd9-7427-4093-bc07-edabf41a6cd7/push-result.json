@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:30.099Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:04.112Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "cd893cd9-7427-4093-bc07-edabf41a6cd7",
   "slug": "law-qa-deck-ra-7277-9442-10754",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:d0f57c72519d1e358f81ca496841a0af19673701cf90b47227ff6f30721fc3be",
-  "original_hash": "sha256:a581e09cfb2637b89ec67f112df5ab60f1e75ab39092839ddfb77b2fec46efb7",
-  "candidate_hash": "sha256:d0f57c72519d1e358f81ca496841a0af19673701cf90b47227ff6f30721fc3be",
-  "stale_check_passed": false,
+  "original_hash": "sha256:d0f57c72519d1e358f81ca496841a0af19673701cf90b47227ff6f30721fc3be",
+  "candidate_hash": "sha256:4ad73f922021c30df75b3085deeab4083260a8c603d31c2ae4bb1cf848c0c98f",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:50:12.114672+00:00"
 }

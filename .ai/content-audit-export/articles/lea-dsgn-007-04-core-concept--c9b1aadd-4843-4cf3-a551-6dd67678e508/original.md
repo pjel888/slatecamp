@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Sequence the five design phases (Pre-Design → Schematic → Design Development → Construction Documents → Construction Admin), identify deliverables at each phase, and distinguish the architect's observation role from supervision during construction.
+
 The architectural design process is a structured methodology that moves from conceptual ideas through detailed specifications to completed construction. Understanding the phases and deliverables at each stage is essential for managing projects and producing compliant designs.
+
 
 ## Core Concept
 
@@ -13,7 +17,7 @@ The architectural design process consists of five primary phases, each with dist
 - Develops conceptual solutions to the design problem. The architect prepares multiple design concepts exploring different spatial arrangements, massing, and material approaches. Deliverables include schematic drawings (site plans, floor plans, elevations, sections, perspectives), preliminary cost estimates, and schedule. The client evaluates concepts and selects a preferred direction. Schematic design is exploratory; detailed engineering is minimal.
 
 **Design Development Phase** \
-- Refines the approved schematic concept. The architect works with engineers (structural, MEP, fire protection) to integrate building systems. Deliverables include more detailed drawings (plans, elevations, sections at larger scleas), updated cost estimates, preliminary specifications, and engineering coordination. Design development establishes technical feasibility and begins documenting construction methods.
+- Refines the approved schematic concept. The architect works with engineers (structural, MEP, fire protection) to integrate building systems. Deliverables include more detailed drawings (plans, elevations, sections at larger scales), updated cost estimates, preliminary specifications, and engineering coordination. Design development establishes technical feasibility and begins documenting construction methods.
 
 **Construction Documents Phase** (Contract Documents) \
 - Produces complete, buildable specifications. Architects and all consultants coordinate final details for construction. Deliverables include full-size technical drawings with dimensions, materials specifications, detailed schedules (door, window, finish schedules), engineering plans (structural, MEP), and comprehensive specifications. Construction documents must be complete, precise, and sufficient for competitive bidding and construction.
@@ -31,7 +35,7 @@ The architectural design process consists of five primary phases, each with dist
 | Construction Documents | Complete technical specifications | Full-size drawings, specs, schedules, engineer plans | 8–12 weeks |
 | Construction Admin | Verify compliance, manage changes | Site reports, submittals, certifications, close-out | Duration of construction |
 
-<RevealBlock prompt="Can you recall the correct sequence of the 5 design phases?">
+<Accordion prompt="Can you recall the correct sequence of the 5 design phases?">
 
 **Design Phase Sequencing:**
 Pre-Design → Schematic Design → Design Development → Construction Documents → Construction Administration
@@ -39,17 +43,17 @@ Pre-Design → Schematic Design → Design Development → Construction Document
 **Deliverable Progression:**
 Each phase builds on previous work. Schematic establishes direction; Design Development adds technical depth; Construction Documents provide buildable detail. Phases are sequential but may overlap.
 
-</RevealBlock>
+</Accordion>
 
-<RevealBlock prompt="What is the architect's role during Construction Administration?" label="Drag to reveal the answer">
+<Accordion prompt="What is the architect's role during Construction Administration?" label="Drag to reveal the answer">
 
 The architect provides **site observations** to verify that construction complies with documents, **reviews submittals** (shop drawings, material samples), **certifies progress** for payment, and **addresses field changes**. The architect does **not** supervise construction — the role is observation and verification only.
 
-</RevealBlock>
+</Accordion>
 
 ## Philippine Practice Context
 
-The Philippine architectural profession follows the design process framework outlined in the Standards of Professional Practice (SPP) and related UAP documents. Design phases and fee schedules are structured around a multi-phase model that includes project definition/pre-design, schematic design, design development, contract documents, and construction phase services. Building permit requirements in the Philippines mandate complete, signed and selead construction documents for building permit issuance through the Office of the Building Official; barangay clearances and other local endorsements are separate prerequisites rather than formal schematic approvals. The design process timeline varies with project complexity and regulatory approval speed; larger projects may require several months from schematic design to permit issuance. Coordination with the Bureau of Fire Protection (BFP) for fire safety evaluation clearance and with relevant authorities for electrical and other systems is integrated into the permit processing stage.
+The Philippine architectural profession follows the design process framework outlined in the Standards of Professional Practice (SPP) and related UAP documents. Design phases and fee schedules are structured around a multi-phase model that includes project definition/pre-design, schematic design, design development, contract documents, and construction phase services. Building permit requirements in the Philippines mandate complete, signed and sealed construction documents for building permit issuance through the Office of the Building Official; barangay clearances and other local endorsements are separate prerequisites rather than formal schematic approvals. The design process timeline varies with project complexity and regulatory approval speed; larger projects may require several months from schematic design to permit issuance. Coordination with the Bureau of Fire Protection (BFP) for fire safety evaluation clearance and with relevant authorities for electrical and other systems is integrated into the permit processing stage.
 
 ## How It's Tested
 
@@ -60,6 +64,13 @@ The Philippine architectural profession follows the design process framework out
 **Pattern 3 — Process Timing:** Given project constraints (e.g., 4-month total timeline), allocate approximate time to each phase and explain trade-offs (accelerating design may reduce design quality or increase construction cost).
 
 <Tip>Five phases: Pre-Design (problem definition), Schematic (concepts), Design Dev (systems), Constr Docs (buildable specs), Constr Admin (verification). Each builds on the previous. Deliverables increase in detail and precision with each phase.</Tip>
+
+
+**Exam Tip — ERR-DSGN-001:** The architect's role during Construction Administration is observation and verification, NOT supervision. The contractor supervises construction; the architect verifies compliance with documents.
+
+## Cross-References
+
+See **LEA-PLAN-004-01** (Physical Site Considerations) for pre-design site analysis, **LEA-DSGN-011-01** (Floor Plans) for documentation standards, and **LEA-DSGN-007-10** (Code Compliance) for permit process integration.
 
 ## Common Mistakes
 

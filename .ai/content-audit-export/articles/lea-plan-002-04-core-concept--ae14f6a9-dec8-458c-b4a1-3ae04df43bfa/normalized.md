@@ -5,7 +5,6 @@ Apply land use zoning classifications (residential, commercial, industrial, agri
 
 Land use planning categorizes how cities regulate human activity across space through zoning. The Zoning Ordinance is the legal tool that implements land use decisions made in the CLUP.
 
-
 ## Core Concept
 
 Land use planning assigns legal categories to parcels of land—residential, commercial, industrial, agricultural, institutional—and establishes rules for each. The **Zoning Ordinance** is the Sanggunian-adopted law that translates Comprehensive Land Use Plan (CLUP) decisions into enforceable regulations. Unlike the CLUP (a 10-year vision document prepared by planners), the zoning ordinance is a **legislative enactment** that grants or restricts specific activities on specific sites.
@@ -15,14 +14,12 @@ A zoning regulation typically specifies: permitted uses, prohibited uses, buildi
 Land use categories vary by context. Residential zones typically separate single-family neighborhoods from apartment districts, each with different density allowances. Mixed-use zones permit residential and commercial on the same lot, supporting the "eyes on the street" principle of urban vitality. Industrial zones buffer manufacturing from housing. Institutional zones protect government offices, schools, and hospitals from conflicting uses. In many Philippine municipalities, agricultural zoning protects farmland at the periphery but often conflicts with sprawl pressure. The key challenge: zoning rigidity. Once categories are legally set, changing them requires political approval and often triggers property value shifts.
 
 The Zoning Ordinance must be internally consistent—use designations must align with infrastructure capacity (roads, water, sewage) and with the CLUP's vision. A zoning ordinance that permits high-density residential in an area with no planned water system is both unenforceable and legally vulnerable to challenge.
+<ArticleMedia id="media-lea-plan-002-04-core-concept" a type="image" caption="Land Use Zoning Classifications — Residential, Commercial, Industrial, Agricultural" description="Diagram showing standard zoning classifications: R-1 to R-5 residential density tiers, C-1 to C-4 commercial intensity levels, I-1 to I-3 industrial nuisance classifications, agricultural production zones, and institutional/civic zones. FAR, lot coverage, and height limits per type." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
+<ArticleMedia id="media-lea-plan-002-04-core-concept" a type="image" caption="Zoning Ordinance vs. CLUP — Implementation Relationship Diagram" description="Flowchart showing the relationship: CLUP (policy/vision, 10-year term) → Zoning Ordinance (regulatory tool, implements policy) → Sanggunian adoption. Shows how zoning categories, density regulations, and use restrictions implement the CLUP's land use policies." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: rows="{[{\"heading\":\"Zoning Category\",\"description\":\"Primary Function and Typical Regulations\"}", content=true, Residential=true, Zone=true, description=true, Single-family=true, homes=true, duplexes=true, or=true, apartments=true, Height=true, limits=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -35,11 +32,6 @@ In Philippine municipalities, zoning is often the first tool deployed to manage 
 - "The CLUP designates an area for residential use, but the Zoning Ordinance permits commercial. Is this permitted?" → No. Zoning ordinance must be consistent with the CLUP. If inconsistent, the ordinance is vulnerable to legal challenge.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Zoning adoption = Sanggunian legislative function (not Planning Office, not Mayor alone). Zoning ordinance must align with CLUP. Use designations are enforceable rules with numeric limits (height, setback, lot size).
-[/SLATECAMP_UI_BLOCK]
-
 
 **Exam Tip:** The Zoning Ordinance is a LEGISLATIVE enactment by the Sanggunian, not the CLUP. The CLUP is a planning document; the zoning ordinance is the enforceable law. This distinction is tested frequently.
 
@@ -50,7 +42,3 @@ See **LEA-PLAN-001-05** (CLUP Process) for CLUP-to-zoning ordinance relationship
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Thinking the Planning Office 'approves' the zoning ordinance — it drafts it; the Sanggunian adopts it\",\"Confusing zoning (legal use category) with land subdivision (physical division into lots) — zoning applies to both raw land and already-subdivided areas\",\"Believing a Mayor can veto the zoning ordinance — the Mayor signs it but the Sanggunian passes it; veto is extremely rare\",\"Assuming 'mixed-use' automatically includes residential — mixed-use must be explicitly permitted in the zoning code; many commercial zones exclude residential entirely\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

@@ -1,6 +1,9 @@
 ## What You Need to Know for the LEA
 
-The Comprehensive Land Use Plan (CLUP) is the strategic planning instrument mandated by Philippine law for all local government units. This article owns the full CLUP process, components, and the zoning ordinance as its primary implementation tool. This is the most legally detailed article in the curriculum — you must know the law, the process, the timelines, and the tools.
+## Learning Goal
+Describe the CLUP process — data collection, public consultation, land use mapping, Sanggunian adoption, DHSUD review — apply the 10-year horizon and 3-year midterm review cycle, distinguish CLUP from zoning ordinance, and identify the Environmental Planner's statutory role.
+
+The Comprehensive Land Use Plan (CLUP) is the strategic planning instrument mandated by Philippine law for all local government units. 
 
 ## Core Concept
 
@@ -52,6 +55,13 @@ The LEA tests CLUPs through five dominant question patterns: (1) **Legal require
 <Tip>
 **CLUP memory anchors:** CLUP = 10-year plan, RA 7160. Review = every 3 years (not 5, not annual). ADOPT = Sanggunian (legislature), not Mayor (executive). IMPLEMENT = ZONING ORDINANCE. APPROVE = DHSUD. PREPARE = Environmental Planner (licensed profession).
 </Tip>
+
+
+**Exam Tip:** Five CLUP facts to memorize: (1) 10-year horizon, (2) 3-year midterm review, (3) Sanggunian adopts (NOT Mayor), (4) zoning ordinance implements, (5) DHSUD reviews for conformity. These are THE most tested CLUP items.
+
+## Cross-References
+
+See **LEA-PLAN-002-04** (Land Use Planning) for zoning ordinance detail, **LEA-PLAN-007-05** (LGU Planning) for implementation at local level, and **LEA-PLAN-005-04** (DRRM) for CLUP hazard mainstreaming requirements.
 
 ## Common Mistakes
 

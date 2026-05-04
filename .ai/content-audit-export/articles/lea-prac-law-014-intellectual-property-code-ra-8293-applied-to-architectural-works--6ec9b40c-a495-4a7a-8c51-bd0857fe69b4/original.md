@@ -1,7 +1,15 @@
 ## Intellectual Property Code (RA 8293) Applied to Architectural Works
 
-<AuthorityContent courseId="LEA-PRAC-LAW-014" />
+## Learning Goal
 
+After studying this article, you should be able to:
+
+- Explain how RA 8293 (Intellectual Property Code) protects architectural works.
+- Define what constitutes an 'architectural work' under IP law.
+- Distinguish copyright protection (expression) from patent protection (invention).
+- Identify the copyright owner in various commissioning scenarios.
+
+---
 ### Architectural Works as Protected Creative Output
 
 The Intellectual Property Code of the Philippines (RA 8293) recognizes architectural works as eligible copyright-protected creations. This protection extends to buildings and structures erected in the Philippines, as well as architectural designs and plans in their draft form. The law treats architecture as a legitimate artistic and creative discipline, placing it on the same footing as literature, music, visual arts, and other protected works.
@@ -43,3 +51,24 @@ An architect asserting copyright ownership and seeking enforcement remedies may 
 Copyright infringement of architectural works occurs when a person reproduces, distributes, or publicly displays the work without authorization. For architectural plans, infringement includes unauthorized copying, photocopying, or digital reproduction of the drawings or specifications. For constructed buildings, infringement may include unauthorized construction of a substantially similar building based on the protected design, though courts must distinguish between copying expression and independently creating a functional building.
 
 The remedies available under RA 8293 include preliminary injunctions to stop ongoing infringement, delivery up of infringing materials, corrective advertising to restore the architect's reputation, payment of actual damages or profits derived from infringement, and in cases of willful infringement, statutory damages as determined by the court in accordance with RA 8293 Section 216. Criminal prosecution is available for commercial infringement with willful intent to defraud or profit, carrying penalties of fine and imprisonment.
+
+<LawCallout code="ra9266" section="Section 33 - Ownership of Plans">
+Function vs. Expression distinction: RA 8293 protects the ORIGINAL EXPRESSION (spatial arrangement, aesthetic proportions, facade design, unique structural concept). It does NOT protect FUNCTIONAL elements required by building code (stair dimensions, conduit sizing, minimum room areas).
+</LawCallout>
+
+<ExamTip />
+
+<Tip />
+
+---
+
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)

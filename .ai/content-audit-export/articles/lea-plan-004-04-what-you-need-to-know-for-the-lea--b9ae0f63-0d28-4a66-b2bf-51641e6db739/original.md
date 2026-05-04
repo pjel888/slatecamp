@@ -1,5 +1,8 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Apply ecological management principles — vegetation management, adaptive management, monitoring protocols — to post-development site stewardship, and distinguish management from maintenance in scope and frequency.
+
 Management considerations address how a site and its vegetation, landscapes, and ecological zones are maintained and monitored over time. This is distinct from maintenance of buildings or infrastructure (outside LEA-PLAN scope). Management is about ecological stewardship, vegetation care, and the adaptive response to changing conditions after development. Management is the lowest-frequency tested topic in site planning but still appears on the LEA.
 
 ### Vegetation Management and Landscaping
@@ -17,7 +20,7 @@ Vegetation—trees, shrubs, and groundcover—requires active management to rema
 **Common Philippine Vegetation Management Challenges**
 
 - **Typhoon damage** — High winds break branches and uproot trees; post-typhoon cleanup and pruning are costly
-- **Tropical pests** — Mango hoppers, sclea insects, coconut beetles threaten orchard and shade trees
+- **Tropical pests** — Mango hoppers, scale insects, coconut beetles threaten orchard and shade trees
 - **Invasive species** — Water hyacinth clogs esteros; salvinia invades ponds; ipil-ipil spreads rapidly
 - **Drought sensitivity** — Dry season water scarcity stresses plants; irrigation infrastructure is needed in some sites
 - **Pollution stress** — In urban areas, air pollution and salt spray (coastal) stress vegetation

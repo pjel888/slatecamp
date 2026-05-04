@@ -12,13 +12,15 @@ _Transport Node Accessibility Module – Escalators, Walkalators, Platforms_[web
 
 ## 1. Why Transport Nodes Matter
 
-<LawCallout code="pd1096" section="Rule XII - Escalators">
-BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
-<LawCallout code="pd1096" section="Rule XII - Means of Egress">
-BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
 Escalators, moving walks, and transit platforms are where **movement and hazard** are highest; missteps can lead to falls, collisions, or being trapped by moving equipment.[web:51][web:53] BP 344 requires tactile, visual, and audio guidance so PWDs can navigate these safely and independently, especially in high‑traffic transport environments.[web:1][web:49][web:54][web:56]
 
@@ -113,11 +115,17 @@ ESCALATOR / LIFT → PLATFORM EDGE / BOARDING POINT
   - Before stairs and ramps (top and bottom).
   - Before escalators and passenger conveyors.
 
-<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...
   - Along platform edges/boarding zones and near doors/gates with possible pinch or fall risk.
 - **Elevator priority:**
 
-<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...
   - The tactile path shall **prioritize elevator access** for vertical circulation; it usually terminates at an **elevator landing with warning tactile 300 mm in front of the door** and Braille/tactile labels at controls and jambs, so visually impaired users can find and operate the lift safely.[web:1][web:2][web:49][web:54]
 
 ---
@@ -148,16 +156,13 @@ The tactile path must **prioritize elevator access** and terminate at a **warnin
 
 ---
 
-\
-Extracted summary:
-- Props: 
-- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+</Note>
+<Note>
+Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+</Note>
 ## Cross‑References
 
 **Stairs Handrails Guardrails**, **Widths Slopes**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Elevator Dimensions**
+<!-- no-media-needed: existing content format is sufficient without visual media -->

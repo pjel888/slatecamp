@@ -1,14 +1,14 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Wall finishes protect substrates and define interior aesthetic and functional performance. The LEA tests your ability to specify finishes by substrate compatibility, environmental durability, and adhesion standards that ensure longevity.
-
+Classify wall finishes (paint, wallpaper, gypsum board, plywood paneling, tile, stone cladding, fabric, metal panel, glass) by aesthetic effect, durability, installation method, and fire-resistance rating for interior wall applications.
 ## Core Concept
 
 Wall finishes range from paint systems (latex, enamel, epoxy) to ceramic tile, wallpaper, natural stone veneer, wood paneling, and fiber cement board. Paint is the dominant finish globally and locally in the Philippines. Paint films must bond to properly prepared substrates and maintain adhesion through environmental cycling (humidity, temperature, UV).
 
 Paint performance depends on film thickness and substrate preparation. Dry film thickness (DFT) is measured in micrometers (µm) and ranges from 50µm for primer to 75-150µm for topcoats. Surface preparation—sanding, priming, caulking—is non-negotiable; 90 percent of paint failures stem from substrate defects, not paint itself. Moisture in concrete or gypsum causes blistering and delamination within months.
 
-The ASTM D3359 cross-hatch adhesion test quantifies bond strength. The test cuts a lattice pattern through the film to the substrate, applies tape, and measures adhesion loss on a 0-5 sclea (5B = no loss, best; 0B = complete loss, worst). A rating of 5B (no adhesion loss) indicates excellent performance. A rating of 0B (complete adhesion loss) indicates a failed system. For interior drywall, ratings of 3 or better are typical; for concrete, ratings of 4 or better are expected if substrate is properly prepared.
+The ASTM D3359 cross-hatch adhesion test quantifies bond strength. The test cuts a lattice pattern through the film to the substrate, applies tape, and measures adhesion loss on a 0-5 scale (5B = no loss, best; 0B = complete loss, worst). A rating of 5B (no adhesion loss) indicates excellent performance. A rating of 0B (complete adhesion loss) indicates a failed system. For interior drywall, ratings of 3 or better are typical; for concrete, ratings of 4 or better are expected if substrate is properly prepared.
 
 In the Philippines, Boysen (Pacific Paint), Davies, and Island Paints dominate the market. Boysen's Permacoat (acrylic latex) and Acrytex (enamel/acrylic hybrid) are industry standards. Davies Paints are recognized for color range and premium positioning. These brands publish drying time, coverage rate (8-12 m²/L typical), and VOC limits that must match local air-quality requirements.
 
@@ -21,7 +21,7 @@ Wallpaper, while aesthetic, demands smooth drywall surfaces (sandpaper grit 220+
 | Dry Film Thickness (DFT) Primer | 30-50µm | SSPC-PA 2, ASTM D7091 | Ensures adequate substrate seal |
 | Dry Film Thickness (DFT) Topcoat | 75-150µm | SSPC-PA 2, ASTM D7091 | Provides color and durability |
 | Paint Coverage Rate | 8-12 m²/L (typical) | Manufacturer specs | Affects project cost and timeline |
-| Adhesion Rating (Cross-Hatch) | ≥3 on 0-5 sclea | ASTM D3359 | Failure criterion for bond strength |
+| Adhesion Rating (Cross-Hatch) | ≥3 on 0-5 scale | ASTM D3359 | Failure criterion for bond strength |
 | Surface Preparation (Gypsum) | Sandpaper grit 220+; dust-free | ASTM D3276 | Removes contaminants, promotes adhesion |
 | Moisture in Concrete | &lt;3% CM (calcium chloride method) | ASTM F2170 | Prevents blistering and delamination |
 | Prime and Paint Drying Time | 2-4 hours per coat (latex at 23°C, &lt;50% RH) | Manufacturer specs | Determines recoat timing |
@@ -57,8 +57,13 @@ Boysen brands like KNOxOUT (marketed as air-purifying with claimed NOx-reducing 
 
 <WikiMistakeCard mistake="Applying paint to gypsum drywall without primer in high-humidity bathrooms" correction="Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold." />
 
-<WikiMistakeCard mistake="Painting concrete with moisture >3% CM (calcium chloride method)" correction="Test moisture per ASTM F2170 before painting. Moisture >3% CM causes blistering and delamination within 4-6 months. Defer painting or install moisture barrier." />
+is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Ignoring ASTM D3276 application conditions (temperature &lt;10°C, humidity >85%, rain risk)" correction="Do not apply paint in marginal conditions. High humidity and low temperature slow curing, trapping moisture and causing adhesion failure. Wait for ideal conditions or use accelerated-cure primers." />
+## Related Articles
 
-<WikiMistakeList mistakes={["Assuming drywall primer is optional for topcoat adhesion", "Mixing incompatible binders (latex over enamel without sanding and primer)", "Failing to caulk gaps, joints, and penetrations before finish coat", "Applying topcoat before primer cure time (typically 2-4 hours per coat)", "Using VOC-high paints without confirming local air-quality compliance"]} />
+See also within Interior Finishes: **lea-matl-007-01-core-concept**, **lea-matl-007-03-core-concept**, **lea-matl-007-04-core-concept**, **lea-matl-007-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

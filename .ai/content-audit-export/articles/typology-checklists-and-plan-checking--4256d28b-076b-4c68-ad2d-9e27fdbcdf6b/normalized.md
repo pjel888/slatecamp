@@ -442,26 +442,13 @@ IS THE BUILDING LEGALLY COMPLIANT?
 
 _Module 13 | BP 344 2024 IRR LEA Review Series | Philippine context only_
 
-
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
-Extracted summary:
-- Props: code="bp344" title="BP 344 2024 IRR — Mandatory Elements"
-- Text: Per BP 344 2024 IRR, every building typology has a set of non-negotiable accessibility elements. Missing any single item = fails accessibility compliance. The mandatory elements include: accessible pa
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: The most common exam error is assuming a checklist item is optional. In BP 344 compliance, every checklist item is mandatory. If a hospital has a ramp but no ISA signage, or a parking space but no acc
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
-Extracted summary:
-- Props: (none)
-- Text: For LEA design problems, use the sequential flowchart: (1) Check parking → (2) Check route from parking to entrance → (3) Check entrance → (4) Check corridors → (5) Check vertical circulation → (6) Ch
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -469,3 +456,5 @@ Extracted summary:
 
 **Building Permit Process**, **Legal Liability And Enforcement Workflow**, **Top 50 Traps 2024 Irr**, **Rule I General Provisions**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -1,16 +1,15 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The LEA emphasizes the **dougong** bracket system, axial planning tied to feng shui, the **Forbidden City** (imperial center), the **Temple of Heaven** (ritual space), and **siheyuan** courtyard houses (residential typology). Recognize structural logic, spatial hierarchy, and symbolic orientation.
-</Callout>
+## Learning Goal
 
+Identify the five testable markers of Chinese architecture — dougong bracketing, axial N-S orientation, courtyard organization, modular bay system, and layered/tiered roofs — and explain how geomancy (feng shui) and timber construction shaped the Chinese building tradition.
 ## Core Concept
 
 Chinese architecture organizes space through hierarchical, axially-symmetric planning rooted in cosmological principles and structural innovation. The **dougong** bracket system—interlocking wooden blocks and arms—transfers loads from roof to column without nails, enabling large overhanging eaves, tall interior volumes, and seismic flexibility. This modular structure became the defining technical achievement, repeated across temples, palaces, and residential buildings. Buildings rise on elevated platforms (terraces), their entrances face south (cardinal orientation linked to feng shui), and interior courtyards define privacy gradients: public pavilions fronting streets, private family chambers receding inward.
 
 The **Forbidden City** exemplifies imperial axial planning: a 960-meter north-south axis anchored by the **Gate of Heavenly Peace**, flowing through three outer courts (for state ceremonies), then three inner courts (imperial residence and heir heir quarters), with subsidiary east-west axes for bureaucratic and residential wings. Each pavilion sits on a stone platform; roofs curve upward at edges (eaves supported by dougong), finished with glazed yellow tiles (imperial color). The plan reinforces hierarchical power: only the emperor proceeds down the central axis; officials enter from sides. **Feng shui** orientation—south-facing, with water to the north and mountains to the south—structures the entire metropolitan plan.
 
-The **Temple of Heaven** inverts palace logic: instead of earthly power, it stages the emperor's ritual performance for cosmic harmony. The complex features the **Hall of Prayer for Good Harvests**, a circular pavilion with concentric colored tile rings (blue for heaven) sitting on three marble platforms; no nails or central column—purely dougong construction—allows 32-meter unobstructed interior span. The **siheyuan** courtyard house, the vernacular ideal, repeats palace principles at domestic sclea: a rectangular wall encloses four pavilions (north, south, east, west) facing inward toward a central garden courtyard. Status determines pavilion position: the master occupies the north pavilion (warmest, most prestigious); servants occupy east/west wings; guest pavilion fronts the south gate.
+The **Temple of Heaven** inverts palace logic: instead of earthly power, it stages the emperor's ritual performance for cosmic harmony. The complex features the **Hall of Prayer for Good Harvests**, a circular pavilion with concentric colored tile rings (blue for heaven) sitting on three marble platforms; no nails or central column—purely dougong construction—allows 32-meter unobstructed interior span. The **siheyuan** courtyard house, the vernacular ideal, repeats palace principles at domestic scale: a rectangular wall encloses four pavilions (north, south, east, west) facing inward toward a central garden courtyard. Status determines pavilion position: the master occupies the north pavilion (warmest, most prestigious); servants occupy east/west wings; guest pavilion fronts the south gate.
 
 <Tip>**Chinese architecture's five testable markers:**
 1. **Dougong** (interlocking wooden brackets, no nails)
@@ -39,12 +38,15 @@ Materials and proportion follow standardized modules. Columns and beams interloc
 </ExamTip>
 <ExamTip>**Pattern 3:** Typology comparison. "How does a siheyuan differ from a Western residential courtyard house?" (Answer: Siheyuan distributes rooms around a central garden with strict hierarchical occupation; Western courtyards often emphasize aesthetic display.) Expect to distinguish Chinese residential logic from Mediterranean or Islamic models.</ExamTip>
 
+<Callout>
+The LEA emphasizes the **dougong** bracket system, axial planning tied to feng shui, the **Forbidden City** (imperial center), the **Temple of Heaven** (ritual space), and **siheyuan** courtyard houses (residential typology). Recognize structural logic, spatial hierarchy, and symbolic orientation.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="** Confusing dougong with simple post-and-beam construction. Dougong is a specific modular system of interlocking blocks; not all timber-frame buildings use dougong. Only sophisticated Chinese, Korean, and Japanese structures employ this technique. Don't over-generalize" correction="Mistake 2:** Misremembering the Forbidden City's axis orientation. The central axis runs NORTH-SOUTH, not east-west. The emperor faces south from his northern residence, symbolizing heavenly power over earthly subjects." context="Reversed orientation is incorrect." />
 
 <WikiMistakeCard mistake="** Treating feng shui as optional decoration rather than structural law. Feng shui—water to the north, mountains to the south, southward-facing entrances, cardinal alignment—determines building location, orientation, and plan. It is not superstition in exam context; it is urban and architectural law" correction="Mistake 4:** Confusing siheyuan with Tang-era palace courts. While siheyuan evolved from palace typology, it became the standardized domestic form in Ming and Qing periods." context="Don't attribute siheyuan exclusively to earlier dynasties or equate all Chinese courtyard houses as identical." />
-
 
 ## Key Terms
 
@@ -60,3 +62,10 @@ Materials and proportion follow standardized modules. Columns and beams interloc
 - **Screen wall (zhaobi)**: Decorative partition inside gates, blocking direct sight lines for privacy and spiritual benefit; common in siheyuan and temple entries.
 
 <Warn>Do not treat feng shui as optional decoration or superstition. Feng shui—water to the north, mountains to the south, south-facing entrances, cardinal alignment—is architectural law in Chinese design. It determines building location, orientation, interior hierarchy, and entire urban plans. Understanding feng shui as structural principle (not cosmetic) is critical for analyzing Forbidden City, Temple of Heaven, and siheyuan. Dougong is a specific modular bracket system, not generic timber framing—do not confuse it with simple post-and-beam construction. Only Chinese, Korean, and Japanese sophisticated architecture employs true dougong.</Warn>
+
+## Related Articles
+
+See also within Asian & Pacific Architecture: **lea-hist-007-01-core-concept**, **lea-hist-007-03-core-concept**, **lea-hist-007-04-core-concept**, **lea-hist-007-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

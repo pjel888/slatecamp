@@ -1,6 +1,12 @@
 # Plastics in Construction
 **LEA Review | Area 2: Materials & Construction | PD 1096 Rule XVI, Sections 1601–1609**
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply the fire performance and use limitations for plastics in buildings under PD 1096 and relevant ASTM/NSCP standards: distinguish foam plastic, fiber-reinforced plastic, and thermoplastic by fire behavior; calculate maximum permitted plastic area in interior and exterior applications; and identify where thermal barrier or automatic sprinkler protection is required.
+---
 ---
 
 ## 1. Hook / Opening Scenario
@@ -25,7 +31,7 @@ A plastic is "approved" under PD 1096 only if it meets all three criteria simult
 Plastic components must be supported by technical data demonstrating adequate strength and durability for design loads (dead, live, wind, seismic). Per the 2004 Revised IRR, fastenings must account for both internal and external stresses, and proper allowances must be made when plastics bear against or are in contact with dissimilar materials (thermal expansion differentials are significant in the Philippine tropical climate).
 
 **Principle 3 — Location and Area Limits Control Fire-Zone Risk (Secs. 1603–1607)**
-Every plastic application — veneer, glazing, awnings, diffusers, skylights — has a **maximum area**, **minimum separation**, and **height or distance** restriction that scleas with Fire Zone restrictiveness. The less restrictive the Fire Zone, the more plastic area is permitted.
+Every plastic application — veneer, glazing, awnings, diffusers, skylights — has a **maximum area**, **minimum separation**, and **height or distance** restriction that scales with Fire Zone restrictiveness. The less restrictive the Fire Zone, the more plastic area is permitted.
 
 **Principle 4 — Overhead Plastics Require Active Fire Suppression or Proven Fire Venting (Sec. 1607)**
 Plastic skylights in occupied Groups A, B, C, E, F, H-I, and J-I must be protected by automatic fire-extinguishing systems — unless a qualifying exception applies (approved fire venting, Type IV 1-hr construction, or 1-storey without a required fire-resistive ceiling).
@@ -92,7 +98,7 @@ The total combined area of plastic skylights, plastic panels in monitors, and pl
 | Parameter | PD 1096 / 2004 IRR | IBC 2021 (Sec. 2607) |
 |---|---|---|
 | Area threshold requiring approved plastics | > 10% of any 10.00 sq.m room area | Any single panel > 10 sq.ft (0.93 sq.m) |
-| Thermal stability requirement | Must not detach at 65°C for 15 min | ASTM E2264 or equivleant |
+| Thermal stability requirement | Must not detach at 65°C for 15 min | ASTM E2264 or equivalent |
 | Sprinkler interaction exemption | Yes — for Groups A, B, C, E, F, H, I (not public corridors) | Yes — with test confirmation |
 
 ### Table 6: Light-Transmitting Panels in Monitors/Sawtooth Roofs (Sec. 1608)
@@ -382,10 +388,12 @@ A polycarbonate sheet has a tested flame-spread index of 190. Under which standa
 - C. Fails both PD 1096 and IBC 2021 requirements
 - D. Approved under IBC 2021 only; PD 1096 does not address flame-spread numerically
 
-<LawCallout code="nbcp" title="Approved under PD 1096 only; fails IBC 2021 requirements.">
+<LawCallout code="pd1096" section="Rule IV - Plastics in Construction">
+
 
 Correct Answer: A — Approved under PD 1096 only; fails IBC 2021 requirements.
 PD 1096 Section 1601 (2004 IRR) requires flame-spread ≤ 225; a rating of 190 is compliant under Philippine law. IBC 2021 Section 2606 classifies light-transmitting plastics as CC1 (0–25) or CC2 (26–75); a rating of 190 exceeds the CC2 ceiling of 75 and is therefore not an approved light-transmitting plastic under the IBC. This illustrates one of the most significant divergences between PH and US standards.
+
 
 </LawCallout>
 
@@ -439,3 +447,18 @@ Return to this module in **3 days**. If you can answer the three Active Recall q
 
 *Article 29 of the LEA Board Exam Review Series | PD 1096 Rule XVI | 2004 Revised IRR*
 *Cross-reference: Rule IV (Construction Types), Rule V (Fire Zones), Rule VIII (Light & Ventilation), Rule XVIII (Glass & Glazing), RA 9514 (Fire Code), NSCP, BP 344*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Foam plastic insulation requires a 15-minute thermal barrier unless protected by 1/2″ gypsum board. Maximum permitted foam plastic area in interior finish = 10% of wall/celling area (for foam plastic not covered by thermal barrier). The 15-minute thermal barrier is the key safety requirement.
+
+## Cross‑References
+
+**Prefabricated Constructions**, **Sheet Metal And Spray Booths**, **Lathing And Plastering**, **Fire Resistive Construction Ratings**
+

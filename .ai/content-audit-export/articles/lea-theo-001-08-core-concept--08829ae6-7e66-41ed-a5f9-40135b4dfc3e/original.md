@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The LEA tests your understanding that architecture is not merely structural engineering—it is a cultural expression. Questions probe how buildings reflect the values, traditions, materials, and identity of the communities that create them. For Filipino architects, this means understanding how vernacular architecture, colonial heritage, and contemporary design express cultural continuity and identity.
-</Callout>
+## Learning Goal
 
+Explain architecture as cultural expression — how buildings embody values, beliefs, and identity of societies — and analyze how cultural context shapes form, material, and spatial organization across different traditions.
 ## Core Concept
 
 **Architecture and cultural identity** are inseparable. Buildings are physical expressions of how a culture organizes itself, values its environment, honors its traditions, and projects its aspirations into the future. The built environment both shapes and reflects cultural identity; it is at once a response to the particularities of place and a manifestation of collective values.
@@ -52,6 +51,10 @@ Critical distinction: Cultural identity is not cosmetic or optional. It is not a
 
 <ExamTip>**Pattern 5: Sense of Place and Regional Identity.** The LEA tests understanding of how architecture creates and reinforces distinctive regional character. Example stem: "A building that expresses the distinctive character and accumulated meaning of its location demonstrates which architectural principle?" Answer: Sense of place, meaning the design is culturally and geographically rooted rather than placeless or generic.</ExamTip>
 
+<Callout>
+The LEA tests your understanding that architecture is not merely structural engineering—it is a cultural expression. Questions probe how buildings reflect the values, traditions, materials, and identity of the communities that create them. For Filipino architects, this means understanding how vernacular architecture, colonial heritage, and contemporary design express cultural continuity and identity.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing vernacular with primitive or outdated" correction="Vernacular architecture embodies sophisticated environmental knowledge, rational material choices, and proven structural systems. Traditional timber framing, earthen construction, and passive climate control strategies are intelligent responses to specific conditions." context="Understanding vernacular as technically sophisticated, not historically quaint, prepares you for LEA questions that ask about the logic and effectiveness of traditional solutions." />
@@ -81,3 +84,10 @@ Critical distinction: Cultural identity is not cosmetic or optional. It is not a
 **Passive Climate Control** — Design strategies using building form, orientation, materials, and natural ventilation to regulate interior temperature and humidity without mechanical systems.
 
 **Community Engagement** — Architect's active collaboration with local communities in understanding needs, values, and preferences rather than imposing external design solutions.
+
+## Related Articles
+
+See also within Nature of Architecture: **lea-theo-001-01-core-concept**, **lea-theo-001-07-core-concept**, **lea-theo-001-09-core-concept**, **lea-theo-001-10-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

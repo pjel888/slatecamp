@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define embedded conduits and identify common types (electrical, plumbing, HVAC)
+- Explain the NSCP limitations on conduit placement within structural members
+- State the maximum conduit size relative to member thickness
+- Describe proper coordination between structural and MEP trades
 
 Embedded conduits (for electrical, mechanical, or plumbing services) weaken concrete sections by reducing cross-sectional area and creating stress concentrations. The LEA tests your mastery of size and spacing limits to protect structural integrity. Critical limits: max 1/3 of slab/beam thickness, max 4% of column cross-section, min 3 diameters spacing between conduits, and supplemental reinforcement requirements.
 
@@ -32,7 +39,7 @@ Two design approaches: (1) limit conduit size/area to avoid weakening, or (2) pr
 | From reinforcement | 10–20 mm clear (varies) | Avoid bar interference |
 | Within same cross-section | Check cumulative area | Multiple small pipes count together |
 
-**Spacing Rule:** If spacing is less than 3 diameters, treat multiple conduits as a single larger equivleant void.
+**Spacing Rule:** If spacing is less than 3 diameters, treat multiple conduits as a single larger equivalent void.
 
 ### Reinforcement for Conduit Openings (NSCP 2015 Section 406.3)
 
@@ -52,7 +59,7 @@ Pipes exposed to weather or embedded near exposed surfaces require standard conc
 
 | **Condition** | **Minimum Cover to Pipe (mm)** |
 |---|---|
-| Exposed to weather | 50 mm (bars ≥20 mm equivleant rule) |
+| Exposed to weather | 50 mm (bars ≥20 mm equivalent rule) |
 | Interior (protected) | 40 mm (standard beam/column cover) |
 | Cast against earth | 75 mm (if pipe touching soil) |
 
@@ -74,6 +81,13 @@ Electrical conduits (PVC, 16–25 mm) in floor slabs are ubiquitous in Philippin
 Slab/Beam = max h/3. Column = max 4% area. Spacing = 3 diameters center-to-center. If conduit exceeds limit, either (1) downsize, or (2) add reinforcement normal to pipe (0.002 × area). Always check cumulative area if multiple pipes in same section. Cover = 40–75 mm per exposure (same as rebar cover rules).
 </Tip>
 
+
+## Related Articles
+
+See also: **Concrete Cover** (lea-strc-007-01) for how conduits affect cover requirements, **Construction Joints** (lea-strc-007-06) for how conduits cross joints, and **Concrete Materials** (lea-strc-006-01) for how conduits affect concrete placement.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Slab conduit max = 1/2 thickness — WRONG. Always h/3 (ERR-STRC-024).", "Column conduit max = 3% of area — WRONG. Always 4% per NSCP (ERR-STRC-024).", "Conduit spacing = 2 diameters — WRONG. Code requires 3 diameters minimum.", "Multiple small conduits can be bunched if total area is OK — WRONG. Spacing (3 dia) must be maintained; clustering violates code.", "No reinforcement needed if conduit within size limits — CORRECT (no additional reinforcement beyond design loads).", "Pipes exposed to weather need no special cover — WRONG. Weather-exposed pipes require 50 mm cover (like ≥20 mm bars)." ]} />

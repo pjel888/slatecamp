@@ -1,5 +1,15 @@
 ## Joint Venture in Architecture
 
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define a joint venture in architectural practice.
+- Distinguish a joint venture from a partnership.
+- Describe when joint ventures are used: large projects, specialized expertise.
+- Explain the liability allocation in a joint venture.
+
+---
 ### Definition and Structure
 
 A joint venture in architecture is a formal grouping of two or more architects or architectural firms working together on a project basis. RA 9266 defines an association as any formal grouping of two or more architects or architectural firms working in joint venture on a project basis. This structure is distinct from partnerships or corporations; joint ventures are created for specific projects and dissolve upon project completion.
@@ -29,3 +39,25 @@ Project-based joint ventures allow architects to expand service offerings withou
 Joint venture agreements establish compensation structures, with fees typically split according to services rendered or predetermined percentages. Invoicing mechanisms ensure timely payment distribution. The agreement addresses responsibilities if a venture partner becomes unavailable or unable to complete their portion of work. Provisions may include backup personnel, subcontracting rights, or termination procedures with replacement participants.
 
 Termination occurs naturally upon project completion or may be triggered by partner withdrawal, breach of agreement, or project cancellation. The agreement should address post-project responsibilities, including warranty periods, document custody, and dispute resolution. Final accounting and fee settlement are documented before formal dissolution. Outstanding client obligations must be transferred to the remaining participants or a single designated architect. Professional registrations remain individual to each architect; dissolution of the joint venture does not affect individual professional status.
+
+<Tip>Joint ventures are project-specific and dissolve upon completion. Unlike partnerships, dissolution does not affect each architect's individual professional status. Participants may recombine with different partners on subsequent projects — this flexibility is a key advantage over permanent partnership structures.</Tip>
+
+---
+
+\
+Extracted summary:
+- Props: 
+- Text: The Filipino Counterpart Requirement is a frequently tested concept. Foreign architects CANNOT practice independently in the Philippines — they must always work in association with a local Philippine 
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)

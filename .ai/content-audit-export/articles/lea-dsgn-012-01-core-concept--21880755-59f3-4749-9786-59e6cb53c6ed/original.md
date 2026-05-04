@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Conduct site analysis evaluating topography, climate, access, utilities, views, noise, and vegetation, produce site analysis diagrams documenting existing conditions, and apply findings to building orientation and site planning decisions.
+
 Site analysis is the systematic study of existing site conditions—topography, climate, access, utilities, views, noise, and vegetation—that informs design decisions. The LEA expects you to conduct and interpret site analysis and apply its findings to site planning and building orientation decisions.
+
 
 ## Core Concept
 
@@ -74,6 +78,13 @@ A site analysis shows high noise on the western boundary (major road), view oppo
 <Tip>
 **Memory aid:** "E-W Orientation Rule" — In tropical Philippines, orient buildings with long axis E-W (east-west). This minimizes harsh E and W sun, maximizes gentle N-S sun. Place primary views and living spaces on N or S facades. This is ERR-DSGN-035 territory—incorrect orientation is a common exam error.
 </Tip>
+
+
+**Exam Tip:** Site analysis must document: N arrow, prevailing wind direction, sun path, adjacent uses, access points, utility locations, easements, flood hazards, noise sources, and significant vegetation. Omissions = design errors.
+
+## Cross-References
+
+See **LEA-DSGN-012-02** (Site Development) for applying site analysis findings, **LEA-PLAN-004-01** (Physical Site Considerations) for comprehensive site analysis methodology, and **LEA-DSGN-009-01** (Passive Design) for climate-responsive orientation.
 
 ## Common Mistakes
 

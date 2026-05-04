@@ -8,6 +8,10 @@ Apply PD 1096 Rule VIII minimum ceiling heights (2.40 m residential, 2.70 m comm
 
 ## The Real-World Hook
 
+[SLATECAMP_UI_BLOCK:ArticleMedia name="ceiling-height-section-diagram" type="diagram" caption="Cross-section diagram of a multi-storey building showing ceiling height tiers: natural ventilation (2.70 m all floors), artificial ventilation single-storey (2.40 m), artificial ventilation multi-storey (2.70 m 1st floor, 2.40 m 2nd floor, 2.10 m 3rd+ floors). Color-code each tier and show mezzanine 1.80 m clearances above and below."]
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="room-dimension-floorplan" type="diagram" caption="Annotated floor plan showing minimum room sizes: habitable room 6.00 sqm (2.00 m least dimension), kitchen 3.00 sqm (1.50 m least dim), bath/toilet 1.20 sqm (0.90 m least dim). Show dimensional callouts and darken non-compliant zones for contrast."]
+
 A mid-rise residential condominium in Cebu City fails its pre-occupancy inspection. The building official's report: ceiling heights in second-floor units measure only 2.35 m, the single bedroom in each unit is 5.8 sq m, and the kitchen window opens onto an interior shaft. Every deficiency is a violation of PD 1096, Rule VIII — and each will prevent issuance of a Certificate of Occupancy under Section 309.
 
 The difference between 2.40 m and 2.70 m of ceiling height is not a design preference — it determines whether a room can passively discharge body heat through stack effect. The 6.00 sq m minimum corresponds to 14.40 cu m of air space at a 2.40 m ceiling — just above the 14.00 cu m per person standard under Section 807 that dilutes CO₂ to safe concentrations during an eight-hour rest period.
@@ -219,22 +223,10 @@ Ceiling heights affect fire suppression system coverage. Sprinkler systems desig
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- code="nbcp"
-- Text: Rule VIII, Sec. 805: Natural ventilation requires 2.70 m ceiling height. Artificial/mechanical ventilation allows 2.40 m. Mezzanines: min 2.00 m above and below. These are the three ceiling height tie
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 2.70 m: Natural ventilation habitable rooms | 2.40 m: Mechanical ventilation habitable rooms | 2.00 m: Mezzanine clearances | 14.00 m³: Minimum air space per person (Rule VIII, Sec. 807)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: LEA Pattern: The exam tests ceiling height occupancy-specific values. Group A (residential) requires 2.70 m natural / 2.40 m mechanical. For Group B (hotels/dormitories), guest rooms follow the same t
-[/SLATECAMP_UI_BLOCK]
 
 ## Mnemonic Devices
 
@@ -300,10 +292,6 @@ A developer is designing a two-storey residential condominium with a centralized
 > **Answer: B — 2.40 m**
 >
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="nbcp"
-- Text: Per PD 1096, Rule VIII, Sec. 805(1): for buildings of more than one storey with artificial ventilation, the minimum ceiling height of the second storey is 2.40 m. The 2.70 m requirement applies to the first storey of a multi-storey artificially ventilated building, and to all rooms with natural ventilation. The 2.10 m requirement is for the third storey and above. Option D (1.80 m) is the mezzanine clearance under Sec. 805(2).
-[/SLATECAMP_UI_BLOCK]
 >
 > **LEA Area:** Architecture Utilities / Building Technology
 
@@ -343,8 +331,6 @@ A boarding house operator wants to convert a room measuring 4.00 m × 3.00 m (fl
 
 ---
 
-
-
 ---
 
 ## Cross‑References
@@ -367,3 +353,5 @@ A boarding house operator wants to convert a room measuring 4.00 m × 3.00 m (fl
 - **ASHRAE Standard 62.2** — Ventilation and Acceptable Indoor Air Quality in Residential Buildings
 - **Ramsey/Sleeper, Architectural Graphic Standards, 12th Edition** — Room dimension guidelines and ventilation strategies
 - **Littlefield, Metric Handbook (4th ed.)** — Recommended ceiling heights 2.4–3.0 m by room function
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

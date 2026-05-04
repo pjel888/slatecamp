@@ -1,16 +1,14 @@
 ## What You Need to Know for the LEA
 
-Fire Detection and Alarm Systems are _mandatory_ for most commercial, institutional, and high-rise residential buildings in the Philippines under **RA 9514 (Fire Code of the Philippines)** and its Implementing Rules and Regulations (IRR). These systems detect fire conditions early, leart occupants, and integrate with building safety systems to enable controlled evacuation and damage mitigation.
+## Learning Goal
 
-This module covers system types, detection technologies, design requirements per NFPA 72 (National Fire Alarm and Signaling Code), regulatory thresholds under RA 9514, and integration with building mechanical and safety systems.
-
----
-
+Identify when fire alarm systems are mandatory per RA 9514 (Fire Code of the Philippines) IRR based on building occupancy classification, height, occupant load, and floor area, and distinguish manual from automatic fire alarm system requirements.
 ## When Fire Alarm Systems Are Mandatory (RA 9514 IRR)
 
 Fire alarm systems are **required** in the following occupancies and floor areas:
 
-<WikiCalloutBox title="RA 9514 IRR Mandatory Installation Thresholds" variant="warning">
+<LawCallout code="ra9514" section="Section 10 - Fire Alarm Systems">
+
 **Occupancy Group A (Assembly):** Buildings or structures with occupant load exceeding 500 persons, OR with a floor area exceeding 1,000 m² in any storey.
 
 **Occupancy Group B (Educational):** Buildings used for educational purposes with occupant load exceeding 500 persons, OR floor area exceeding 1,000 m² in any storey.
@@ -22,7 +20,8 @@ Fire alarm systems are **required** in the following occupancies and floor areas
 **Occupancy Group F (Industrial):** Manufacturing plants and facilities classified as high-hazard (flammable liquids, gases, explosives) regardless of floor area.
 
 **All Buildings:** Height exceeding 21 metres (approximately 7 storeys) in any occupancy.
-</WikiCalloutBox>
+
+</LawCallout>
 
 Key regulatory references:
 - **RA 9514 (Fire Code of the Philippines):** Fire alarm system requirements per Implementing Rules and Regulations
@@ -175,13 +174,7 @@ Key regulatory references:
 
 #### Heat Detector Spacing
 
-<WikiExamTable headers={["Detector Type", "Spacing Center-to-Center", "Notes"]} rows={[["Fixed-temperature (typical)", "6.1–9.1 m (20–30 ft)", "NFPA 72 Section 17.6.2; site-specific per thermal capacity"], ["Rate-of-rise", "6.1–9.1 m (20–30 ft)", "Same spacing as fixed-temp; rate element provides early detection"], ["High-temperature spaces (>38°C ambient)", "6.1 m (20 ft) or less", "Reduce spacing; temperature rise rate is slower in hot ambient"]]} />
-
----
-
-### Flame Detectors
-
-**Principle:** Detect infrared or ultraviolet radiation emitted by flames. Used in large, open spaces or outdoors where smoke detectors are impractical.
+et radiation emitted by flames. Used in large, open spaces or outdoors where smoke detectors are impractical.
 
 **Types:**
 - **Infrared (IR):** Senses heat radiation; responds in 4–8 seconds per NFPA 72
@@ -300,7 +293,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 3. Occupied elevators proceed to nearest floor, open doors, release passengers
 4. Elevators return to recall level and remain idle until fire brigade manually resets system
 
-**Safety Rationlea:** Prevents occupants from using elevators during evacuation (smoke inhalation, entrapment in dead floors, shaft damage from fire).
+**Safety rationale:** Prevents occupants from using elevators during evacuation (smoke inhalation, entrapment in dead floors, shaft damage from fire).
 
 ---
 
@@ -416,13 +409,7 @@ Smoke detectors in kitchens create nuisance alarms from normal cooking operation
 
 ## Common Design Errors and Corrections
 
-<WikiMistakeList mistakes={["Spacing smoke detectors 12 m apart to reduce cost (NFPA 72 specifies 9.1 m maximum center-to-center)", "Installing heat detectors in kitchens without adequate spacing in cooking zones, then disabling them due to false alarms", "Mounting manual pull stations at 1.8 m height (too high for children, wheelchair users; must be 1.07–1.22 m per NFPA 72 Section 17.15)", "Forgetting to include voice evacuation system in buildings >21 m; adding expensive retrofit later", "Omitting fire alarm zones in mechanical rooms, electrical rooms; fire protection engineer finds non-compliance pre-occupancy", "Running fire alarm wiring in same conduit as power wiring; causes EMI nuisance alarms in addressable systems", "Not sizing backup battery for 24-hour standby; battery depletes during extended power outage", "Using ionization detectors instead of photoelectric in commercial spaces; higher false-alarm rate per RA 9514 preference"]} />
-
----
-
-## Worked Example: 6-Storey Office Building, Metro Manila
-
-**Building Parameters:**
+ing Parameters:**
 - 6 storeys (height ~21 m)
 - Each floor: 800 m² open-plan office + 200 m² core (toilets, mechanical, storage)
 - Occupant load: ~200 per floor (1,200 total)
@@ -535,4 +522,10 @@ Smoke detectors in kitchens create nuisance alarms from normal cooking operation
 - **Rate-of-Rise Detector:** Heat detector responding to rapid temperature increase (°C/minute)
 - **Strobe:** Visual notification appliance; flashes light (typically 1 Hz per NFPA 72)
 - **Supervision:** System monitoring for open circuits, shorts, device faults; logged at FACP and central station
+
+## Related Articles
+
+See also within Fire Protection Systems: **lea-util-004-05-core-concept**, **lea-util-004-06-core-concept**, **lea-util-004-07-core-concept**, **lea-util-004-08-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 

@@ -1,19 +1,28 @@
 {
-  "attempted_at": "2026-05-03T14:01:36.582Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:10.585Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
   "slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:bf48eb0abc15c0954f1d900a5e803b86df9df7a30462e57c3756cdb9a051833d",
-  "original_hash": "sha256:956c389689214632b78eefa062faf99cb573990e029a584f54185648728e5522",
-  "candidate_hash": "sha256:bf48eb0abc15c0954f1d900a5e803b86df9df7a30462e57c3756cdb9a051833d",
+  "original_hash": "sha256:65e069fbb3a66146aacce1f1cb84028b260a4e2d4fa00fe50ff18d0fc195ab18",
+  "candidate_hash": "sha256:831252cd8cfce9dac14f19bac99b2e7b831551e88b46b72cdfd79116c0566048",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:50:33.455303+00:00"
 }

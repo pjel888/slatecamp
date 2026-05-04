@@ -1,32 +1,34 @@
 # Content Diff Report: location-on-property-and-exterior-walls
 
-Generated: 2026-05-03T13:45:00.365Z
+Generated: 2026-05-04T00:06:38.054Z
 Article ID: 16ba355e-811c-4191-98c2-c7fac22ca59b
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:a96ab21d60874c16dac713716296ab94b1ee9d06ed7f7f478a5145a1b90047da`
-- Normalized: `sha256:6f99e14949033c974d75d08659c1358ab1191e9ab2e454dfccb810f8739b700b`
-- Candidate: `sha256:03f294c29a8c79ea2f9f0a2a94037e27bc1c8b8cbca03f1f52be32c2c92dcac4`
+- Original: `sha256:611785463534af91de90754e4cd0cd169045f747fe02a8afaef575f9d41c999b`
+- Normalized: `sha256:bd35793761eb26ec20fca06a6ce6dd4605c0076ec439e0942005e88465bb518f`
+- Candidate: `sha256:bd35793761eb26ec20fca06a6ce6dd4605c0076ec439e0942005e88465bb518f`
 
 ## Line summary
 
-- Changed lines: 319
-- Inserted lines: 34
+- Changed lines: 197
+- Inserted lines: 4
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 6
-- UI blocks preserved: 6
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 6
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 6 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Earthwork volume computation determines the cubic meters of soil to be excavated (cut) or filled in grading, road construction, and foundation work. Two primary methods are used: (1) trapezoidal (average end area) formula for simplicity, and (2) prismoidal formula for higher accuracy. In the Philippines, road and building projects commonly use these methods per DPWH Blue Book specifications.
-
+Calculate roofing material quantities — area coverage per sheet, side lap and end lap allowances, ridge length, fascia/gutter lengths, fastener count — for corrugated GI sheets and other roofing systems on sloped roofs.
 ## Core Concept
 
 Earthwork volume is calculated from cross-sectional areas at measured stations (e.g., every 10 or 20 meters along a road centerline). The trapezoidal formula is: _V = (L/2) × (A₁ + A₂)_ for a single section, where L is the distance between cross-sections and A₁, A₂ are the areas. For multiple sections at regular intervals: _V = (L/2) × [(A₁ + Aₙ) + 2(A₂ + A₃ + ... + Aₙ₋₁)]_.
@@ -116,3 +116,10 @@ On the LEA, earthwork volume questions focus on:
 <WikiMistakeCard mistake="Not separating cut and fill volumes" correction="Cut and fill are tracked independently. Do not mix them in one calculation." />
 
 <WikiMistakeList mistakes={["Applying a swell factor without being asked (swell only applies if loose excavated volume is the deliverable)", "Using area measurements in the wrong units (ensure all areas are in m²)", "Forgetting that L is the interval between sections, not the total length", "Confusing prismoidal accuracy (typically 2–8% lower than trapezoidal) as a defect rather than expected behavior"]} />
+
+## Related Articles
+
+See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-02-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

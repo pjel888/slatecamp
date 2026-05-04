@@ -1,11 +1,5 @@
 ## BERDE Rating System—Philippine Green Building Standard and the Architect's Role
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: null
-[/SLATECAMP_UI_BLOCK]
-
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -14,8 +8,6 @@ After studying this article, you should be able to:
 - Explain the Philippine Green Building Standards and the architect's role.
 - Identify the certification process and rating levels.
 - Distinguish BERDE from other green building rating systems (LEED, EDGE).
-
-
 
 ### What is BERDE and Its Purpose
 
@@ -66,34 +58,18 @@ Green design often requires higher upfront investment in efficient systems, prem
 Many institutional clients (schools, government facilities) are now prioritizing BERDE certification to demonstrate environmental stewardship and reduce long-term operational costs. Private developers recognize that BERDE-certified buildings command market premiums and attract tenants committed to sustainability. The architect's role is to help the client understand that green design is an investment, not an expense.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266" title="BERDE — Philippine Green Building Rating System"
-- Text: Legal Basis: BERDE (Building for Ecologically Responsive Design Excellence), developed by PhilGBC. Referenced in the Philippine Green Building Code (PD 1096 reference standard).
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ BERDE is VOLUNTARY unless the LGU requires it. The Philippine Green Building Code (PD 1096 IRR) is MANDATORY minimum standard. Do not confuse voluntary certification with mandatory code compliance. — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: BERDE certification levels and compliance thresholds: 1 Star (33%), 2 Stars (46%), 3 Stars (60%), 4 Stars (80%), 5 Stars (100%). Know these thresholds for exam questions.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Architect's role in BERDE: Select appropriate certification level, integrate green strategies from schematic design, coordinate with BERDE-accredited professionals, document compliance for each credit category, and submit to PhilGBC.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
+
+
+<ArticleMedia type="image" caption="BERDE Rating System — Credit Categories and Certification Levels" description="Radial diagram of BERDE Green Building Rating System showing five credit categories: Energy Efficiency, Water Efficiency, Materials & Waste, Indoor Environmental Quality, Land Use & Ecology. Center shows four certification levels: BERDE 1-Star (30-40%), 2-Star (41-50%), 3-Star (51-60%), 4-Star (61%+). Architect's role in each credit category noted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

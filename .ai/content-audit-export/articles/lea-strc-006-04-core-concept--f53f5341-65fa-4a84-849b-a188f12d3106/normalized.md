@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Prestressed concrete applies permanent compression to concrete before or during service loads to reduce or eliminate tensile stresses that would otherwise cause cracking. The two methods are fundamentally different in application timing: pre-tensioning applies compression before concrete is cast, while post-tensioning applies compression after concrete has hardened. Understanding this distinction and the resulting structural behaviors is essential for recognizing when each method is appropriate.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-006-04-core-concept" a type="image" caption="Prestressing — Pretensioning vs Post-Tensioning Comparison" description="Side-by-side comparison of pretensioning and post-tensioning: (1) Pretensioning — strands tensioned before concrete pour, bond transfer after curing, shown in precast bed; (2) Post-tensioning — ducts placed in concrete, strands tensioned after curing, anchored at ends. Stress distribution comparison: full section compression vs eccentric compression. Tendon profile diagrams for simply supported and continuous beams." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 **Prestressing** is the application of deliberately induced internal compression to a concrete member to counteract tensile stresses that would develop from external loads. Instead of relying entirely on reinforcing steel to resist tension (as in ordinary reinforced concrete), prestressed concrete uses high-strength steel tendons—either wires or strands—to apply sustained compression. This reduces or eliminates cracks, improves serviceability, and increases the effective load-carrying capacity of the member.
 
@@ -107,15 +108,6 @@ In the Philippines, precast prestressed members (pre-tensioned I-beams, double-T
 4. **Residual Prestress Verification:** After all curing and service, or after removal of temporary loads (in bridges), the residual compression is verified by ultrasonic methods or other non-destructive testing to confirm that design prestress levels are maintained.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The defining distinction: Pre-tensioning = tendons tensioned BEFORE concrete placed. Post-tensioning = tendons tensioned AFTER concrete hardened. This timing difference determines the structural system, production method, and field application. Memorize this clearly to avoid the common reversal error (ERR-STRC-016).
-
-
-
-
-[/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -124,13 +116,5 @@ See also: **Concrete Materials** (lea-strc-006-01) for the basic concrete proper
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[ \"Reversing pre-tensioning and post-tensioning definitions. Pre = tendons tensioned BEFORE concrete placed. Post = tendons tensioned AFTER concrete hardened. This is the opposite of the common error; verify by physical logic: 'pre' comes before, 'post' comes after.\", \"Assuming pre-tensioning and post-tensioning have identical structural behavior. Pre-tensioning provides immediate compression (from release onward); post-tensioning requires the concrete to develop strength before compression is applied. The timing affects serviceability, deflection, and crack control.\", \"Forgetting that post-tensioned ducts must be grouted after tensioning. Ungrouted tendons do not provide full composite action and allow corrosion risk. Grouting bonds the tendon to concrete and protects against corrosion—non-negotiable for permanent service.\", \"Using ordinary reinforcing bar yield strength (414 MPa) instead of prestressing tendon strength (1,770–1,960 MPa) in calculations. Prestressing relies on the much higher strength of special steel; using lower strength numbers makes the system uneconomical and underperforming.\" ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

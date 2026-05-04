@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define urban design and planning as an architectural service.
+- Describe the architect's role in site planning, subdivision design, and community planning.
+- Explain the regulatory framework: HLURB, DPWH, LGU ordinances.
+- Distinguish urban design from architectural building design.
 
 The LEA tests your ability to identify the six methods of compensation, match each method to the service category where it applies, and compute fees using the MDPE formula and percentage-of-PCC method. Expect questions that present a project scenario and ask which compensation method is appropriate — or that require you to calculate the MDPE fee using the multiplier formula.
 
@@ -10,7 +17,7 @@ Understanding all six methods and knowing which SPP document calls for which met
 
 ### The Six Methods of Compensation
 
-**Method 1 — Percentage of Project Construction Cost (PCC)** calculates the architect's fee as a percentage of the estimated or actual construction cost. This is the primary method for **Regular Design Services under SPP 202**. The percentage is determined by the project's classification group (Groups 1–10 under the Architect's Guidelines). This method aligns architect compensation with project scope — as PCC increases, the fee increases proportionally (subject to the sliding sclea for Groups 1–3).
+**Method 1 — Percentage of Project Construction Cost (PCC)** calculates the architect's fee as a percentage of the estimated or actual construction cost. This is the primary method for **Regular Design Services under SPP 202**. The percentage is determined by the project's classification group (Groups 1–10 under the Architect's Guidelines). This method aligns architect compensation with project scope — as PCC increases, the fee increases proportionally (subject to the sliding scale for Groups 1–3).
 
 **Method 2 — Multiple of Direct Personnel Expense (MDPE)** calculates the fee using the formula:
 
@@ -68,3 +75,18 @@ The LEA tests compensation methods in three patterns. First, the exam presents a
 ## Common Mistakes
 
 <WikiMistakeList mistakes={["Citing 'SPP 210' or 'SPP Document 210' as the source of compensation methods — no such document exists; compensation methods are distributed across individual SPP documents and the Architect's Guidelines", "Confusing the MDPE multiplier (1.5–2.5) with the fee percentage — the multiplier applies to personnel cost, not to PCC", "Assuming all architectural services use percentage-of-PCC — pre-design services (SPP 201) and technical expertise (Group 10) use MDPE, not percentage of PCC", "Forgetting that lump sum/fixed fee is the standard method for government projects, not percentage-of-PCC"]} />
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)

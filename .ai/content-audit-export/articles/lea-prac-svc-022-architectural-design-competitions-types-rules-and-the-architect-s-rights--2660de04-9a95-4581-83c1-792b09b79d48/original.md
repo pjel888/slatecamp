@@ -1,9 +1,17 @@
 ## Architectural Design Competitions: Types, Rules, and the Architect's Rights
 
-<SPP206RefServices />
+## Learning Goal
 
-Architectural competitions represent a specialized service category where architects submit design proposals for evaluation against other competitors. Competitions offer opportunities for public recognition, innovation showcasing, and project acquisition, but require careful understanding of competition rules and architect rights.
+After studying this article, you should be able to:
 
+- Distinguish Project Architectural Design Competitions from Ideas Competitions.
+- Describe the roles of the professional advisor and jury.
+- Explain rules on competition eligibility, submission, and evaluation.
+- Identify the architect's rights regarding competition entries and copyright.
+
+
+
+---
 ### Types of Architectural Competitions
 
 Design competitions vary in scope, selection methods, and architect protections. _Open competitions_ invite participation from all qualified architects without restrictions. _Invited competitions_ limit participation to a selected group of architects, typically those with relevant experience or reputation.
@@ -49,3 +57,37 @@ Professional standards recommend that competitions offer monetary awards recogni
 Standards also recommend that design competitions occur under supervised conditions with published rules, qualified judges, and clear selection procedures. These safeguards ensure competitions serve legitimate selection purposes rather than exploiting architect expertise.
 
 Architects benefit when competitions follow professional standards, provide adequate compensation, protect intellectual property rights, and limit design development requirements to levels justified by compensation offered. Participation in competitions adhering to these standards benefits both individual architects and the profession.
+
+<SPP206RefServices />
+
+<ProcessFlow>
+<ol>
+  <li><strong>Project Definition</strong> — Problem identification</li>
+  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
+  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
+  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
+  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
+  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
+</ol>
+</ProcessFlow>
+
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:19.580Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:41.470Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
   "slug": "mies-van-der-rohe",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:febdcc776f4139217e98489ed9a70392bcbc6af38f7254cfabeefd3bb1fd0208",
-  "original_hash": "sha256:5fd05e08c98eccadebf7f59c2b5729cf8fc6b0f7732ecb25115ca922f1cb9a4d",
-  "candidate_hash": "sha256:febdcc776f4139217e98489ed9a70392bcbc6af38f7254cfabeefd3bb1fd0208",
-  "stale_check_passed": false,
+  "original_hash": "sha256:febdcc776f4139217e98489ed9a70392bcbc6af38f7254cfabeefd3bb1fd0208",
+  "candidate_hash": "sha256:3e0aefcca2cdc1bc4c3717240b641eac24189fe39e34058e8d5594deb930deeb",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:51:43.907084+00:00"
 }

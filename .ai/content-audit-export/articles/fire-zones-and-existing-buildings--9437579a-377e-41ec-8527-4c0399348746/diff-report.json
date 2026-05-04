@@ -1,38 +1,49 @@
 {
   "article_id": "9437579a-377e-41ec-8527-4c0399348746",
   "slug": "fire-zones-and-existing-buildings",
-  "generated_at": "2026-05-03T13:45:34.835Z",
-  "old_hash": "sha256:b365e17fe841d54651a317e0bc49b97ae8fc6f5563ff069eab9adee915747462",
-  "new_hash": "sha256:e1465b14dd07344691a3f440f6a8ab0d35b34a134db31657bf0c20d5347f33bc",
-  "original_hash": "sha256:b365e17fe841d54651a317e0bc49b97ae8fc6f5563ff069eab9adee915747462",
-  "normalized_hash": "sha256:3340b0d130e2c03f319fa6befddeeef04179edefc6803edec13efc2bc176ab69",
-  "candidate_hash": "sha256:e1465b14dd07344691a3f440f6a8ab0d35b34a134db31657bf0c20d5347f33bc",
+  "generated_at": "2026-05-04T00:07:19.481Z",
+  "old_hash": "sha256:f5aedef22b5df3e3169ca5bddd2a2e7becd0d9043abfd053b709e39b6dece094",
+  "new_hash": "sha256:a26e281595cd858e5f632a6f88912d953c43aa3658c5823a6404313ba3854b2f",
+  "original_hash": "sha256:f5aedef22b5df3e3169ca5bddd2a2e7becd0d9043abfd053b709e39b6dece094",
+  "normalized_hash": "sha256:a26e281595cd858e5f632a6f88912d953c43aa3658c5823a6404313ba3854b2f",
+  "candidate_hash": "sha256:a26e281595cd858e5f632a6f88912d953c43aa3658c5823a6404313ba3854b2f",
   "changed": true,
-  "changed_line_count": 659,
-  "inserted_line_count": 40,
+  "changed_line_count": 502,
+  "inserted_line_count": 24,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 6,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 6,
   "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 6,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 659,
-    "inserted": 40,
+    "changed": 502,
+    "inserted": 24,
     "deleted": 0,
     "original_line_count": 621,
-    "candidate_line_count": 661
+    "candidate_line_count": 645
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006"
+    ],
+    "changed_count": 6
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 6 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 6 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define key material properties: strength, stiffness, ductility, and toughness
+- Distinguish between elastic and plastic deformation
+- Explain how Poisson's ratio relates axial and lateral strain
+- Describe how material properties influence structural design choices
 
 Material properties are the language of structural behavior. Ductility, brittleness, elasticity, toughness, and creep define how materials respond to load, time, and environment. Master the sharp distinctions between them, and you can predict failure modes with precision.
 
@@ -62,6 +69,13 @@ The NSCP permits service-level deformations up to span/240 for floors and span/1
 
 <Tip>Ductility = wire. Malleability = sheet. If you cannot draw it into wire, it is not ductile. If you cannot hammer it into a sheet, it is not malleable. Toughness = area under the curve. Creep = time. Remember: creep requires sustained load AND elevated (or moderately elevated) temperature; room-temperature creep in steel is negligible, but concrete creeps at any temperature.</Tip>
 
+
+## Related Articles
+
+See also: **Stress-Strain** (lea-strc-003-01) for the diagram that defines these properties, **Modulus** (lea-strc-003-03) for stiffness measures, and **Concrete Materials** (lea-strc-006-01) for concrete-specific properties.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing ductility with malleability. Ductility is drawing into wire (tension); malleability is hammering into sheets (compression). A material must be tested separately for each property. Gold is malleable but less ductile than copper.","Treating ductility and toughness as synonymous. Ductility is capacity for plastic elongation. Toughness is energy absorption. A material can be ductile but not tough if it has low strength. A material can be strong but brittle (high strength, zero ductility, zero toughness).","Assuming brittleness means low strength. Brittle materials can be very strong (high-strength concrete, glass) but offer no warning before failure. Brittleness = no plastic flow, not weakness.","Thinking creep is instantaneous. Creep is permanent deformation over time under sustained load. It is not yielding (which is immediate). Concrete creeps significantly at room temperature; structural steel does not creep at room temperature.","Omitting creep in concrete deflection calculations. Long-term deflection = immediate elastic deflection × (1 + time-dependent amplification factor). Ignoring creep leads to underestimated total deflection and possible code violations.","Confusing percent elongation with ductility. Percent elongation IS the measurement of ductility, but the concept is broader: the ability to permanently deform and absorb energy. A material with 20% elongation is more ductile than one with 5%."] />

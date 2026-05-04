@@ -1,32 +1,34 @@
 # Content Diff Report: penthouses-and-roof-structures
 
-Generated: 2026-05-03T13:45:16.627Z
+Generated: 2026-05-04T00:06:57.438Z
 Article ID: b2166005-73ba-4a95-8dea-93e12bae9a6b
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:4e48a4b5c96887a63db85c04dc70ed451917ac1d133a695eca2959a64e6b3a49`
-- Normalized: `sha256:4867bb8163e1bc408e752e7722542d2b267ba98f04da145bc69e206f91e70d38`
-- Candidate: `sha256:0b623eb6177df640e86e1fd51d7391235174be88650d525a24c663cb8fdbfd56`
+- Original: `sha256:e3798bfecc45fb44ce8bccd6e77ce1cb3d06790aefaf6d1ac176fdfc61015ed5`
+- Normalized: `sha256:192c73ed04eee0fb2d3fd533cadb65a75133f9ec9befd522ea07451a6e677163`
+- Candidate: `sha256:192c73ed04eee0fb2d3fd533cadb65a75133f9ec9befd522ea07451a6e677163`
 
 ## Line summary
 
-- Changed lines: 329
-- Inserted lines: 33
+- Changed lines: 279
+- Inserted lines: 21
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

@@ -1,18 +1,26 @@
 {
   "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
   "slug": "lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure",
-  "generated_at": "2026-05-03T13:44:11.729Z",
-  "original_hash": "sha256:55fa337e5ff4abb15b0abd9a7a9fee9dd455b8e96acd88c7808a55126a2a34df",
-  "normalized_hash": "sha256:eb1e47b3454a6ef85e09fc75d84bf3b4e15cde152f1ff440741b78c7c5f0646a",
-  "candidate_hash": "sha256:56bce3239240367e2ad7ac044c92b00d5ba376d73fc531c99135f59c80a0aa5f",
+  "generated_at": "2026-05-04T00:05:39.126Z",
+  "original_hash": "sha256:56bce3239240367e2ad7ac044c92b00d5ba376d73fc531c99135f59c80a0aa5f",
+  "normalized_hash": "sha256:49b062c3974b6636500f382ad175efa7b6c6752cb92f1e556e31af73c57fba66",
+  "candidate_hash": "sha256:49b062c3974b6636500f382ad175efa7b6c6752cb92f1e556e31af73c57fba66",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

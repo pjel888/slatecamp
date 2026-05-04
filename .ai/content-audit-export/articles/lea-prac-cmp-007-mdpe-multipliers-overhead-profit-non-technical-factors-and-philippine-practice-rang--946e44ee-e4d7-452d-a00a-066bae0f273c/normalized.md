@@ -24,9 +24,10 @@ Profit component in the multiplier is calculated as: (Target profit percentage �
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
 Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
 - Props: (none)
-- Text: To remember the MDPE formula, use the acronym DOPN: Direct Personnel Expense, Overhead, Profit, and Non-technical factors. The total fee equals DPE times (1 plus Overhead% plus Profit% plus Non-technical%). Practice with the decomposition examples until it becomes second nature.
-[/SLATECAMP_UI_BLOCK]
+- Text: The multiplier ranges presented here are illustrative examples based on typical Philippine practice. Actual rates vary by firm, location, project type, and negotiation. Always calculate your firm's actual overhead and profit targets before proposing MDPE fees.
 
 ### Non-Technical Factors Component
 
@@ -54,7 +55,6 @@ These ranges reflect competitive market conditions in the Philippines and the ba
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ The multiplier ranges presented here are illustrative examples based on typical Philippine practice. Actual rates vary by firm, location, project type, and negotiation. Always calculate your firm's actual overhead and profit targets before proposing MDPE fees. — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
 
 ### Project-Specific Multiplier Adjustment
 
@@ -74,13 +74,10 @@ To compare MDPE multipliers with percentage-of-PCC ranges, the architect can cal
 Extracted summary:
 - Props: (none)
 - Text: On the LEA, MDPE multiplier questions typically test understanding of the fee calculation structure rather than specific multiplier values. Be prepared to identify which components make up the multiplier (overhead, profit, non-technical factors), explain how to derive a multiplier from firm financial data, and compare MDPE with percentage-of-PCC methods. Computation questions may ask you to calculate a fee given DPE and multiplier components.
-[/SLATECAMP_UI_BLOCK]
 
-\
-Extracted summary:
-- Props: 
-- Text: The MDPE multiplier methodology is governed by UAP SPP Document 201, which provides the standard framework for calculating design professional engagement fees based on direct personnel expense, overhe
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+The MDPE multiplier methodology is governed by UAP SPP Document 201, which provides the standard framework for calculating design professional engagement fees based on direct personnel expense, overhe
+</Note>
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)
@@ -98,3 +95,4 @@ Extracted summary:
 ###### Source Note
 
 Sources metadata file (sources.json) is empty for this article. The overhead and profit percentages cited, as well as multiplier examples and ranges, are illustrative and unverifiable against published UAP SPP documents at this time. Verify all figures against the latest UAP SPP 201 document before relying on them for practice or examination purposes.
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

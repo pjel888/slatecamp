@@ -1,11 +1,5 @@
 ## What You Need to Know for the LEA
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Space planning logic is organized through functional zoning—the systematic separation of building areas into public, semi-public, private, and service zones—determined by programmatic adjacency requirements and circulation logic. Zoning creates order, minimizes circulation distance, and ensures that public spaces do not interfere with private functions or operational systems. Circulation spines and connectors organize these zones and determine how users, staff, and goods move through the buildin
-[/SLATECAMP_UI_BLOCK]
-
-
 
 ## Learning Goal
 
@@ -15,13 +9,11 @@ Extracted summary:
 
 ## Core Concept
 
+<ArticleMedia id="media-lea-theo-009-04-core-concept" a type="image" caption="Functional Zoning — Public, Semi-Public, Private, and Service Domains" description="Four-zone diagram showing a floor plan organized by domain: (1) Public Zone — entry, lobby, waiting, reception, accessible from outside, highest traffic; (2) Semi-Public Zone — meeting rooms, conference, open office, transitional spaces between public and private; (3) Private Zone — offices, private rooms, restricted areas, controlled access; (4) Service Zone — restrooms, storage, mechanical, janitorial, kitchen, back-of-house, separate circulation. Arrows show circulation spines connecting zones with appropriate access control points. Callout explains design rules: public-to-private gradient, service separation, circulation efficiency, and conflict avoidance between noise-sensitive and noisy functions." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 Functional zoning is not zoning in the land-use regulatory sense (residential, commercial, mixed-use); rather, it is the organization of interior spaces into operational domains determined by access control, use intensity, and activity type. Zoning is the framework through which the adjacency matrix translates into layout logic. Where the adjacency matrix documents which spaces must be near or far from each other, zoning explains why those relationships are necessary and organizes them into coherent operational domains.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Four zones mnemonic: P-S-P-S (Public, Semi-public, Private, Service)**: Public = unrestricted entry, visible, welcoming; Semi-public = authorized entry, work areas, interior; Private = restricted access, executive/clinical/administrative; Service = mechanical/loading/storage, separated from guest experience. This hierarchy organizes most buildings. Remember the logic: public at entry and perimeter (good visibility, accessibility); service independent and remote (separated from customer experie
-[/SLATECAMP_UI_BLOCK]
 
 ### The Four Primary Zones
 
@@ -60,10 +52,6 @@ Not all zones can be directly adjacent. Public zones benefit from adjacency to e
 Buffer spaces—mechanical rooms, restrooms, storage, hallways—serve as transition zones between incompatible uses. A wall of bathrooms or mechanical shafts between a hotel lobby (public) and guest corridors (semi-public) provides acoustic separation and privacy. A hallway buffers a retail showroom (public, bright, warm) from back-of-house storage (semi-public, controlled climate). The bubble diagram and zoning strategy together determine where these buffers are necessary.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Missing buffer zones creates operational and experience problems. When a high-end retail space has back-of-house storage visually or acoustically adjacent (hearing stockroom noise while shopping, seeing loading activity from the sleas floor), the customer perception of quality degrades. When office spaces are immediately adjacent to mechanical rooms (vibration, noise transmission), worker productivity and satisfaction decline. Buffer zones are not wasted space—they are functional necessities tha
-[/SLATECAMP_UI_BLOCK]
 
 ### Vertical Zoning in Multi-Story Buildings
 
@@ -88,10 +76,6 @@ Multi-story buildings use vertical stacking to reduce horizontal circulation. A 
 Zoning logic often determines building form. A building with a public/retail ground floor, semi-public office above, and mechanical penthouse has a three-tier silhouette reflecting functional zoning. This is common in urban commercial buildings. A residential tower with retail plinth and residential slab reflects residential zoning (vertical) with retail zoning (horizontal ground level). A suburban office park with parking surrounding buildings reflects automotive-era zoning logic (parking and service circulation dominant). Recognizing these form-zoning relationships is a key analytical skill for the LEA.
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Zone adjacency is not symmetric. A public zone benefits from adjacency to entry and parking. A semi-public zone benefits from proximity to public (people flow naturally from public through semi-public). A private zone benefits from isolation from public (restricted access required). A service zone must be separated from public (prevents visual/acoustic intrusion). Understanding this asymmetry prevents bad decisions like placing executive offices adjacent to public lobbies (creates surveillance, 
-[/SLATECAMP_UI_BLOCK]
 
 ### Adjacency Logic Within Zones
 
@@ -100,68 +84,25 @@ Within each zone, adjacency logic still applies. Public zone spaces (entry lobby
 ## Key Facts and Testable Items
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Concept\", \"Definition/Application\"]}", rows="{[['[\"**Public Zone**\", \"Unrestricted access; entry, lobby, retail, customer service; high visibility, clear wayfinding\"]', '[\"**Semi-Public Zone**\", \"Authorized access; offices, work areas, clinical waiting; controlled access at entry, optimized for occupant productivity\"]', '[\"**Private Zone**\", \"Restricted access; executive offices, clinical procedure rooms, residences; secure access, optimized for specific function\"]', '[\"**Service Zone**\", \"Mechanical, loading, storage, utility systems; separated from public/guest spaces; functional rather than aesthetic focus\"]', '[\"**Circulation Spine**\", \"Primary corridor or connector serving multiple zones; organizes building layout and minimizes walking distance\"]', '[\"**Zone Adjacency**\", \"Spatial relationship between zones; public should be near entry, semi-public interior, private remote, service independent\"]', '[\"**Buffer Space**\", \"Transition zone (hallway, mechanical room, restroom) between incompatible uses; provides separation and acoustic/visual privacy\"]', '[\"**Vertical Zoning**\", \"Stacking compatible zones on multiple floors (e.g., retail ground, office above, mechanical roof); reduces horizontal circulation\"]', '[\"**Horizontal Zoning**\", \"Single-story arrangement of zones in sequence from public to semi-public to private (typically in linear or concentric plan)\"]', '[\"**Circulation Efficiency**\", \"Ratio of walking distance to programmatic requirement; lower ratio indicates better efficiency\"]', '[\"**Access Control**\", \"Mechanism separating public and semi-public zones; may be receptionist, badge system, or architectural design (clear separation vs. open flow)\"]']]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 1. **Zoning Strategy Analysis**: You are presented with a program and asked to develop a zoning strategy. "A clinic includes reception, waiting area, examination rooms, treatment room, laboratory, administrative office, and storage. Diagram the four zones and justify the positioning." Expected answer: Public zone (reception, waiting); semi-public zone (exam, treatment); private zone (administrative office); service zone (lab, storage). Justification: patients enter public area, move to semi-publ
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 2. **Floorplan Zoning Analysis**: You are shown a floorplan and asked to identify zones and evaluate zoning logic. "This retail building has checkout at the rear, receiving dock at the front, and stock room adjacent to customer shopping area. Identify problems with this zoning." Expected answer: Customer entry should not be adjacent to loading/receiving (operational and aesthetic conflict); stock room should be semi-public or service (not customer-facing); checkout should be near exit to facilit
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 3. **Circulation Route Evaluation**: Given a program and zoning strategy, you evaluate whether proposed circulation satisfies separation requirements. "Does this design adequately separate public customer circulation from service truck circulation?" Answer depends on whether the design shows separate entry/exit points, distinct routing, and visual/operational separation.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 4. **Vertical Stacking Decision**: Multi-story projects require vertical zoning decisions. "A 60,000 SF program on an urban site suitable for 8 stories. How would you vertically stack public, semi-public, private, and service zones to optimize efficiency and user experience?" Expected strategy: Retail/lobby ground (public); office floors 2–7 (semi-public); mechanical/penthouse floor 8 (service); parking basement (service). Justification: maximizes ground-level activation, maintains office floor 
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 5. **Zone Conflict Resolution**: Scenario-based questions present conflicting requirements and ask you to resolve through zoning strategy. "An urban residential building must include ground-floor retail, residential lobbies, and mechanical systems, with limited separation distance. Design a zoning strategy that minimizes conflict between retail customers and residential tenants." Expected answer: Separate retail entry/exit from residential entry (different facades or sides of building); position
-[/SLATECAMP_UI_BLOCK]
-
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Failing to Identify or Separate Service Zones", correction="Designing service (mechanical, loading, trash) in locations that create visual, operational, or acoustic intrusion into public or customer spaces. A mechanical room vibrating and creating noise adjacent to a hotel guest room or a loading dock visible from a retail showroom are unacceptable.", context="Service zones must be genuinely separated or buffered."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Overlapping Public and Semi-Public Circulation", correction="Designing office or residential buildings where customer/visitor circulation and employee circulation are mixed, creating inefficiency and privacy issues.", context="Public visitors should not pass through employee areas; employees should not navigate through public zones to reach work areas."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Positioning Private Zones Without Access Control. Designing executive offices or restricted areas with direct public access or visibility. Private zones require clear access control—locked doors, separate elevators, or architectural segregation—to function.\", \"Underestimating Buffer Space Needs. Failing to allocate adequate hallway, bathroom, or mechanical space between incompatible zones. A single wall between a high-noise retail area and a residential unit is insufficient; a buffer zone provides acoustic separation and privacy.\", \"Creating Inefficient Circulation Routes. Designing layouts where occupants must traverse unrelated zones to move between frequently paired functions. If a hospital design requires clinicians to walk through public waiting areas to reach patient rooms, circulation is inefficient and may compromise patient privacy.\", \"Inconsistent Zoning Across Floors. In multi-story buildings, shifting zone positions between floors without clear justification, creating complex vertical circulation and user confusion. A hospital with nursing station on one floor but back-of-house on another floor above it creates inefficient vertical circulation.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
 
 ## Key Terms
 

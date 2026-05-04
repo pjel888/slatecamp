@@ -1,18 +1,28 @@
 {
   "article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
   "slug": "top-50-traps-2024-irr",
-  "generated_at": "2026-05-03T13:44:10.912Z",
-  "original_hash": "sha256:b4c4bfdcf8a612182892370d6e8b5d785ca6ad6e78d904ada41978d40fe01534",
-  "normalized_hash": "sha256:c18f80fcf77eb91217e6b9ba4a63bde3c797eccf31b3851ee01b1743d0a7f747",
-  "candidate_hash": "sha256:51546290610bf820ace1e3e4be1ac9f41171587393a568ffa648de809ce85f07",
+  "generated_at": "2026-05-04T00:05:38.123Z",
+  "original_hash": "sha256:51546290610bf820ace1e3e4be1ac9f41171587393a568ffa648de809ce85f07",
+  "normalized_hash": "sha256:cfad518c1c13aa46ef96d0373b06f9f60bbde05f9a76180aa9d8c7ca4d3d7b89",
+  "candidate_hash": "sha256:cfad518c1c13aa46ef96d0373b06f9f60bbde05f9a76180aa9d8c7ca4d3d7b89",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

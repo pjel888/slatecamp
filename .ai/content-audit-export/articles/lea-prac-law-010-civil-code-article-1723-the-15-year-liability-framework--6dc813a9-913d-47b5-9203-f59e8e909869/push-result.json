@@ -1,19 +1,27 @@
 {
-  "attempted_at": "2026-05-03T14:01:24.478Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:05:58.724Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
   "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:16f616dc5535be11f1143b6df775246eff056d856c685b1a5f127aad91790d94",
   "original_hash": "sha256:17543d82128080d15c2f048c7907a0f86af2cb0915a699abb0944456b18fdf48",
-  "candidate_hash": "sha256:16f616dc5535be11f1143b6df775246eff056d856c685b1a5f127aad91790d94",
+  "candidate_hash": "sha256:d6743fe351d9b6aa1d15e3273ceb03a55bc44159f3e2d335d050cb5972eca104",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:49:57.934588+00:00"
 }

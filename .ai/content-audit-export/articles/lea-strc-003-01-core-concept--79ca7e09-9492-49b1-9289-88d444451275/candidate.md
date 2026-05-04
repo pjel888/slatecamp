@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 The stress-strain diagram is the foundation of material behavior analysis. Master the five critical points—proportional limit, elastic limit, yield point, ultimate strength, and rupture—and you own the entire conversation about how materials fail.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-003-01-core-concept" a type="image" caption="Stress-Strain Diagram — Five Critical Points" description="Engineering stress-strain curve for A36 steel showing five critical points: (1) Proportional Limit — end of linear elastic region; (2) Elastic Limit — max stress without permanent deformation; (3) Yield Point — upper and lower yield plateau; (4) Ultimate Strength — maximum stress; (5) Rupture — fracture point. Modulus of Elasticity E shown as slope of elastic region. Elastic vs plastic regions clearly labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Stress measures the internal force per unit area within a material. Strain measures the deformation per unit original length. When you plot stress against strain, the resulting curve tells you everything about how a material responds to loading.
 
@@ -60,8 +61,7 @@ The NSCP (National Structural Code of the Philippines) uses stress-strain diagra
 
 **Pattern 3: Comparative Analysis.** Two stress-strain diagrams are shown—one ductile, one brittle. Questions ask to identify which is which, or to explain why one has a large plastic region and the other does not.
 
-<Tip>The slope of the elastic region IS the Modulus of Elasticity. The slope of the unloading line (even from deep in the plastic region) also equals E. This parallelism is your memory anchor: elastic behavior is reversible, even if permanent strain remains.</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Related Articles
 
@@ -69,6 +69,6 @@ See also: **Material Properties** (lea-strc-003-02) for how materials deform and
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 
-<WikiMistakeList mistakes={["Confusing proportional limit with elastic limit. The proportional limit marks where Hooke's Law stops holding mathematically. The elastic limit marks where the material stops returning to zero strain. These are close but distinct.","Assuming the yield point and elastic limit are the same thing. They are not. The elastic limit comes first; permanent deformation begins there. The yield point (in materials with a yield plateau) comes after, marked by a horizontal or near-flat region.","Misreading the stress axis. Stress is force divided by original (not current) area. This is engineering stress, not true stress. Confusion here leads to wrong numerical answers.","Treating E as variable across steel grades. E = 200,000 MPa for all structural steel grades. Only Fy and Fu change. Grade 50 and A36 have the same E.","Thinking rupture and ultimate strength are the same. Ultimate strength (UTS) is the peak of the curve. Rupture is where the material breaks completely. The difference between them represents necking and final fracture."] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

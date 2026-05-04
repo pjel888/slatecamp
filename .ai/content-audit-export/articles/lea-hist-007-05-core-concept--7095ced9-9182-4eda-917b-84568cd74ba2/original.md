@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The LEA tests **hanok** (traditional Korean timber-frame houses), **ondol** heating systems (underfloor warmth), and **Gyeongbokgung Palace** (Joseon royal seat). Recognize the integration of heating technology with domestic spatial planning, the adaptation of Chinese structural principles to Korean climate and landscape, and the distinctive proportional systems that differ from Japanese and Chinese models.
-</Callout>
+## Learning Goal
 
+Identify the ondol (underfloor heating) system of Korean architecture and explain how it shaped interior planning, social use of space, and the elevated floor culture, and recognize key Korean architectural types (hanok, temple, palace).
 ## Core Concept
 
 Korean architecture synthesizes Chinese and Japanese traditions while responding to continental climate extremes and particular resource conditions. The signature achievement is the **ondol** underfloor heating system: hot smoke from a kitchen fire travels through stone or clay channels beneath the floor before exiting through an external chimney, warming interior rooms and enabling the use of combustible flooring (straw mats, wooden planks) in winter. This technical innovation restructures domestic space: the ondol floor rises slightly above ground level, requiring step-down entrances and reconfigured furniture. Inhabitants sit, sleep, and work on the warm floor rather than standing; furniture minimizes; spatial flexibility increases. Ondol heating allowed Korea to maintain timber-frame, light-partition architecture in a climate far colder than China or Japan, fundamentally shaping residential typology.
@@ -18,7 +17,7 @@ The **hanok** (traditional house) combines ondol with wood-frame structural logi
 Hanok's proportional modules differ from Japanese tatami. While both cultures use modular systems, Korean proportions reflect different climate needs (deeper overhangs for monsoon) and resource conditions (different timber availability). They are not interchangeable systems.
 </Note>
 
-**Gyeongbokgung Palace** (14th century, Seoul), the first major palace of the Joseon Dynasty, demonstrates state-sclea application of Korean principles: a sprawling complex organized along a north-south axis (borrowed from Chinese imperial tradition) but modified for Korean topography and climate. The main throne hall (Geunjeongjeon) features ondol-heated chambers beneath ceremonial floors. Residential quarters (Gangnyeongjeon) integrate ondol for imperial comfort. The palace combines Chinese axial planning with Korean underfloor heating, Japanese-like timber refinement, and Korean site integration (built into natural terrain rather than imposing rigid geometry).
+**Gyeongbokgung Palace** (14th century, Seoul), the first major palace of the Joseon Dynasty, demonstrates state-scale application of Korean principles: a sprawling complex organized along a north-south axis (borrowed from Chinese imperial tradition) but modified for Korean topography and climate. The main throne hall (Geunjeongjeon) features ondol-heated chambers beneath ceremonial floors. Residential quarters (Gangnyeongjeon) integrate ondol for imperial comfort. The palace combines Chinese axial planning with Korean underfloor heating, Japanese-like timber refinement, and Korean site integration (built into natural terrain rather than imposing rigid geometry).
 
 The aesthetic principle guiding Korean architecture is restraint and site responsiveness: buildings nestle into landscape; decorative elements minimize compared to China; spatial proportions emphasize usable comfort over cosmological symbolism. Timber quality, joinery precision, and site integration define status, not glazed tile or gilt.
 
@@ -38,12 +37,15 @@ Korean restraint is not poverty or simplicity—it is *sophisticated craft*. Do 
 </ExamTip>
 <ExamTip>**Pattern 3:** Hanok typology and cultural function. "A traditional Korean house combines ondol heating, wood-frame structure, south-facing orientation, and flexible interior partitions. These features respond to which combination of factors?" (Answer: Extreme continental climate (cold winters), timber availability, landscape topography, and family-based domestic ritual.) Expect to link form to function and environment.</ExamTip>
 
+<Callout>
+The LEA tests **hanok** (traditional Korean timber-frame houses), **ondol** heating systems (underfloor warmth), and **Gyeongbokgung Palace** (Joseon royal seat). Recognize the integration of heating technology with domestic spatial planning, the adaptation of Chinese structural principles to Korean climate and landscape, and the distinctive proportional systems that differ from Japanese and Chinese models.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="** Confusing ondol with Japanese hypocaust heating. Ondol is a Korean invention (predating Japanese heating systems by centuries); it is not an import. While Korea adopted Chinese structural principles, ondol is distinctively Korean. Don't conflate Korean thermal technology with Japanese solutions" correction="Mistake 2:** Treating hanok as identical to Japanese timber-frame houses. While both use wood, modularity, and sliding partitions, they differ fundamentally: hanok integrates ondol (Japanese houses don't), follows different proportional modules, emphasizes site integration over axial geometry, and employs different roofing logic." context="Similar materials don't equal identical systems." />
 
 <WikiMistakeCard mistake="** Misplacing Gyeongbokgung Palace's axis or heating system. The palace follows a north-south axis (Chinese influence) AND incorporates ondol heating (Korean innovation). Don't separate these features; they coexist as adaptive synthesis. The throne hall has ondol beneath ceremonial floors—an integration unique to Korean state architecture" correction="Mistake 4:** Overgeneralizing \"Korean restraint\" as religious asceticism rather than practical sophistication. Korean architectural aesthetic prioritizes site responsiveness and timber joinery precision as signs of high status, not cosmic symbolism or ornamental display. Restraint is cultivated craft, not poverty." context="Understand the cultural logic, not just the visual simplicity." />
-
 
 ## Key Terms
 
@@ -57,3 +59,10 @@ Korean restraint is not poverty or simplicity—it is *sophisticated craft*. Do 
 - **South-facing orientation**: Deliberately siting buildings to face south, maximizing winter solar gain for ondol-heated interiors while maintaining wind protection from north and maintaining landscape views.
 - **Flexible partitions (ajilsan)**: Interior sliding screens and removable wooden lattice dividers allowing quick reconfiguration of room sizes and functions within hanok houses.
 - **Joseon Dynasty**: Korean royal house ruling 1392–1910, responsible for establishing state architecture (palaces, temples) and codifying hanok residential traditions; period of high cultural and architectural achievement.
+
+## Related Articles
+
+See also within Asian & Pacific Architecture: **lea-hist-007-01-core-concept**, **lea-hist-007-02-core-concept**, **lea-hist-007-03-core-concept**, **lea-hist-007-04-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

@@ -1,32 +1,34 @@
 # Content Diff Report: lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic
 
-Generated: 2026-05-03T13:44:17.935Z
+Generated: 2026-05-04T00:05:50.855Z
 Article ID: 0b116082-5275-4d0f-bb23-ce5b74339001
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:225031b061e96e8fda7529d5223c7dc4f87f87a45d24b5b95e33fb519031355f`
-- Normalized: `sha256:78f94dfe76ee9550ab5c8947e10787390836f17d7172aa9cf73e2242e3f4da1c`
-- Candidate: `sha256:39c81917d9efdccdc02bd72696ee99aa7253564f988fe84d5c13513af7143714`
+- Original: `sha256:4172cbb009bff0d52f23e9d8bd0f0d33e76b786844d38fa5898e755848c6b55a`
+- Normalized: `sha256:ed2cbe7150393630425467285033d8dc00e6296a1a3c63a8bd7efa1f5da94acf`
+- Candidate: `sha256:ed2cbe7150393630425467285033d8dc00e6296a1a3c63a8bd7efa1f5da94acf`
 
 ## Line summary
 
-- Changed lines: 43
-- Inserted lines: 35
-- Deleted lines: 0
+- Changed lines: 36
+- Inserted lines: 0
+- Deleted lines: 1
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 4
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 4
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 4 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

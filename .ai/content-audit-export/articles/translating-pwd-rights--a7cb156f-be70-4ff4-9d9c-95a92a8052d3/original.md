@@ -1,5 +1,11 @@
 # Translating PWD Rights
-### The Complete Rights-to-Details Matrix for Philippine Architecture Licensure
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Translate legal PWD rights (RA 7277, RA 9442, RA 10754, BP 344) into specific architectural design decisions: calculate the minimum number of accessible parking spaces (1 of 25, 2% of total), accessible toilet rooms, and accessible routes; identify the design requirements triggered by building occupancy, size, and type; and apply accessibility requirements to existing building alterations.
+---
+### The Complete Rights-to-Details Matrix for Philippine Licensure Examination for Architects
 
 ---
 
@@ -152,7 +158,7 @@ The "≤3 flashes/sec" for strobe alarms refers to the maximum flash rate — fa
 | **Exercise equipment** | At least **one of each type** provided with: 900 × 1200 mm clear floor space; served by accessible route | BP 344 Sec. 3.4.a |
 | **Sports facility companion seat** | Must be adjacent to wheelchair spaces; same sightlines as wheelchair user | BP 344 Sec. 3.3.a |
 | **Museum / gallery accessible route** | Min 1200 mm between exhibit cases; exhibits at reachable height (750–1200 mm AFF for key information); accessible path to all gallery areas | BP 344 |
-| **Accessible bleachers/grandstands** | Accessible route to all sections; ramps or lifts where level changes; handrails at all ramps and stairs | BP 344 |
+| **Accessible Balechers/grandstands** | Accessible route to all sections; ramps or lifts where level changes; handrails at all ramps and stairs | BP 344 |
 | **Spectator restrooms** | At least one accessible WC per gender per facility level; 1800 × 2250 mm cubicle | BP 344 Sec. 6 |
 
 <Callout variant="lea-watch" title="50 seats → 2 spaces; 51–300 → 4; 301–500 → 6) was">
@@ -255,7 +261,7 @@ The old tiered table (4–50 seats → 2 spaces; 51–300 → 4; 301–500 → 6
 
 ### Wheelchair Seating in Assembly — 3% Rule Application
 
-| Total Seats | 3% (rounded up) | Old IRR Equivleant |
+| Total Seats | 3% (rounded up) | Old IRR equivalent |
 |------------|----------------|-------------------|
 | 100 | 3 spaces | 4 (51–300 → 4) |
 | 200 | 6 spaces | 4 (51–300 → 4) |
@@ -265,7 +271,7 @@ The old tiered table (4–50 seats → 2 spaces; 51–300 → 4; 301–500 → 6
 | 1000 | 30 spaces | 11 (6 + 5 extra per 100) |
 | 2000 | 60 spaces | 21 (6 + 15 extra per 100) |
 
-> **Observation:** For smaller venues (100–300 seats), the **2024 IRR 3% rule requires fewer spaces** than the old tiered table. For mid-size (500 seats), they are roughly equivleant. For large venues (1000+), the **3% rule requires more spaces**. Know both — the exam tests both.
+> **Observation:** For smaller venues (100–300 seats), the **2024 IRR 3% rule requires fewer spaces** than the old tiered table. For mid-size (500 seats), they are roughly equivalent. For large venues (1000+), the **3% rule requires more spaces**. Know both — the exam tests both.
 
 ---
 
@@ -297,9 +303,11 @@ A: A level boarding platform — the platform floor height must match the vehicl
 
 **Q4.** A private university claims it does not need accessible toilets on every floor because "the elevator goes to all floors." Is this correct under the Right to Education?
 
-<LawCallout code="bp344" title="the elevator provides access to the floor, but the accessible toilet must be on">
+<LawCallout code="bp344" section="Section 2 - PWD Rights">
+
 
 A: No. BP 344 requires at least one accessible toilet on each floor served by the building — the elevator provides access to the floor, but the accessible toilet must be on that floor. A PWD should not have to go to a different floor to use an accessible toilet.
+
 
 </LawCallout>
 
@@ -345,9 +353,11 @@ A: No. BP 344 requires at least one accessible toilet on each floor served by th
 
 > **Why does every right need a physical translation?**
 >
-<LawCallout code="bp344" title="but a school with no ramps and narrow corridors makes that right a legal fiction">
+<LawCallout code="bp344" section="Section 3 - Scope">
+
 
 Rights written in law are abstractions until they are expressed in stone, concrete, and steel. RA 7277 grants PWDs the right to education — but a school with no ramps and narrow corridors makes that right a legal fiction. RA 10754 gives PWDs a 20% discount — but a pharmacy counter at 900 mm with no knee clearance denies a wheelchair user the ability to stand at that counter long enough to claim it. The architect is the translator: the person who converts abstract rights into millimeter dimensions, slope ratios, and grab bar locations. When you understand that each detail in BP 344 is a physical embodiment of a constitutional right, you stop treating accessibility as a compliance checklist and start treating it as the craft of justice.
+
 
 </LawCallout>
 
@@ -421,3 +431,18 @@ Rights written in law are abstractions until they are expressed in stone, concre
 ---
 
 *Module 10 | From Law to Detail — Translating PWD Rights | Philippine LEA Review Series*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Key design translations from PWD laws: RA 7277 = accessible parking (1 per 25 slots min), accessible toilets (1 per floor), ramps | RA 9442 = 20% discount (triggers NO design change, it is an economic privilege) | BP 344 = specific dimensional requirements (tactile warnings, counter heights, grab bars). The most tested: RA 7277 mandates facilities, RA 9442 mandates discounts — DO NOT confuse them.
+
+## Cross‑References
+
+**Law Qa Deck Ra 7277 9442 10754**, **Ra 9442 Pwd Privileges And Incentives**, **Accessible Seating In Assembly Areas**, **Wheelchair Maneuvering And Parking**
+

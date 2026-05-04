@@ -1,18 +1,28 @@
 {
   "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
   "slug": "case-study-hospital-mall-school",
-  "generated_at": "2026-05-03T13:44:10.846Z",
-  "original_hash": "sha256:5b234a481238dc0945546eae09abcf37b64cc4bb514222476f8a1e3225ce7f2d",
-  "normalized_hash": "sha256:909cd301166b8d55a24755b2403ccea8a9c6b4b6fcfe33f67b1ac4b911aec683",
-  "candidate_hash": "sha256:5ef44ba4fb6b64fc686916de455b9c15a0ce8ba768e05ec0d6aad6b256349512",
+  "generated_at": "2026-05-04T00:05:38.042Z",
+  "original_hash": "sha256:5ef44ba4fb6b64fc686916de455b9c15a0ce8ba768e05ec0d6aad6b256349512",
+  "normalized_hash": "sha256:50a32594e83f1d52a85b4682b8b722de3bbfa01e031426957f2f5bb6176fe6a4",
+  "candidate_hash": "sha256:50a32594e83f1d52a85b4682b8b722de3bbfa01e031426957f2f5bb6176fe6a4",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0037",
+    "ui_0038",
+    "ui_0039",
+    "ui_0040"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0037 was not used during composition.",
+    "UI block ui_0038 was not used during composition.",
+    "UI block ui_0039 was not used during composition.",
+    "UI block ui_0040 was not used during composition."
+  ]
 }

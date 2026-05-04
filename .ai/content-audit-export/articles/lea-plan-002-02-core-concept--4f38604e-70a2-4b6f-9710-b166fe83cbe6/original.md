@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Distinguish contemporary urban models — Garden City (30,000-60,000 pop), New Urbanism (400m walk radius), Transit-Oriented Development, 15-Minute City, CIAM — by their target values, design principles, and urban vision, and apply to Philippine urban scenarios.
+
 Contemporary urban models—Garden City, New Urbanism, Transit-Oriented Development, and 15-Minute City—represent a reaction against sprawl and car-dependent development. Each model specifies exact distances, target populations, or design principles. The LEA tests precise values: Garden City = 30,000–60,000, not 100,000; New Urbanism walk radius = 400m, not 800m; CIAM = separation of functions, not mixing.
+
 
 ## Core Concept
 
@@ -39,6 +43,13 @@ The Philippines adopted New Urbanism principles in Bonifacio Global City (mixed-
 4. **Application:** "Which contemporary model would best guide development around a new MRT station?" → TOD.
 
 <Tip>**Memory anchors:** HOWARD = **30,000–60,000** (Garden City population). New Urbanism = **400m walk** (NOT 800m; that is TOD's upper bound). CIAM = **SEPARATION** (the problem that contemporary models react against). MORENO = **15 MINUTES** (all daily needs within active-transport distance).</Tip>
+
+
+**Exam Tip:** Know precise values: Garden City = 30,000-60,000 population (NOT 100,000). New Urbanism walk radius = 400m (NOT 800m). TOD = 400-800m transit radius. CIAM = separation of functions. 15-Minute City = all services within 15 min walk.
+
+## Cross-References
+
+See **LEA-PLAN-002-01** (Classical Urban Models) for foundational models, **LEA-PLAN-008-03** (Sustainable Urban Development) for TOD and compact city principles, and **LEA-PLAN-002-06** (Urban Design) for New Urbanism design standards.
 
 ## Common Mistakes
 

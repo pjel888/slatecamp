@@ -1,18 +1,24 @@
 {
   "article_id": "939408a5-777b-437f-ad59-555132f8714a",
   "slug": "lea-prac-frm-009-cpd-activity-types-for-architects",
-  "generated_at": "2026-05-03T13:44:10.981Z",
-  "original_hash": "sha256:681e3ac77085ad94769505d2bf1bf8dac37851e7f20c0cf743c3182436a57952",
-  "normalized_hash": "sha256:14735b5e8962e8f0939cbdb5728ac3d6aef7f2cf543f740d2fb2420c10d8817f",
-  "candidate_hash": "sha256:b9321cec9b600bf8d30a6df74602878adb0461e61aa205f16b4855ccb53f5ccd",
+  "generated_at": "2026-05-04T00:05:38.205Z",
+  "original_hash": "sha256:b9321cec9b600bf8d30a6df74602878adb0461e61aa205f16b4855ccb53f5ccd",
+  "normalized_hash": "sha256:0ec43c045140a944b0f2db56ac8296f3cddfe2c697a35b8117e3c2bc8f6afe6a",
+  "candidate_hash": "sha256:0ec43c045140a944b0f2db56ac8296f3cddfe2c697a35b8117e3c2bc8f6afe6a",
   "ui_blocks_count": 2,
-  "placeholders_found": 2,
-  "placeholders_resolved": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 2,
+  "unused_blocks": [
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

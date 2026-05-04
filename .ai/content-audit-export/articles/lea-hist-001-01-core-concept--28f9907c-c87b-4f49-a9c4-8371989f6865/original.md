@@ -4,11 +4,16 @@
 Megalithic architecture tests your understanding of the earliest monumental structures and the post-and-lintel system that dominated pre-classical building. The LEA expects you to identify key sites, construction methods, and the progression from simple dolmens to complex aligned stone arrangements.
 </Callout>
 
+
+## Learning Goal
+
+Recognize megalithic architectural forms (dolmens, menhirs, stone circles, passage graves) and the post-and-lintel system, key sites (Stonehenge, Newgrange, Carnac), and regional variations across Neolithic Europe.
+
 ## Core Concept
 
 Megalithic architecture emerged in the Neolithic and Bronze Age periods (roughly 4500–1000 BCE) across Europe, the Mediterranean, and parts of Asia. The term "megalithic" refers to structures built from large, undressed or roughly dressed stone blocks, arranged without mortar. Unlike later civilizations that developed sophisticated masonry and vaulting, megalithic cultures relied entirely on the **post-and-lintel** system: vertical stones (posts) supporting horizontal stones (lintels) above them. This simple but structurally sound method remained unchanged across centuries and cultures.
 
-The primary function of megalithic structures was ceremonial or funerary. **Dolmens** (chambers formed by vertical stones capped with a flat stone) served as burial chambers, often covered by earthen mounds. **Menhirs** were single standing stones, frequently arranged in patterns for ceremonial or territorial purposes. **Stone circles** and **alignments** (like Stonehenge and Carnac Stones) suggest astronomical or cleandrical functions, though exact purposes remain debated.
+The primary function of megalithic structures was ceremonial or funerary. **Dolmens** (chambers formed by vertical stones capped with a flat stone) served as burial chambers, often covered by earthen mounds. **Menhirs** were single standing stones, frequently arranged in patterns for ceremonial or territorial purposes. **Stone circles** and **alignments** (like Stonehenge and Carnac Stones) suggest astronomical or calendrical functions, though exact purposes remain debated.
 
 Construction methods were labor-intensive but straightforward. Stones were quarried, dragged overland using wooden sledges and ropes, and positioned by communal effort. No evidence suggests mechanical advantage systems; these monuments relied on sheer manpower and persistence. The quarry marks and unfinished stones at various sites show that methods were crude but effective.
 
@@ -71,3 +76,14 @@ Different regions developed local variations. **Passage graves** in Ireland and 
 **Chambered cairn:** A stone mound covering a burial chamber, constructed from stacked megaliths.
 
 **Sarsen stone:** A type of hard sandstone used in megalithic construction, quarried in southern England and used prominently at Stonehenge.
+
+<Tip>**Megalithic vs. Monolithic:** Megalithic = many large stones assembled (Stonehenge). Monolithic = one single carved stone (Egyptian obelisk). This distinction is tested directly — do not confuse them.</Tip>
+
+<ExamTip>**Site-Feature Matching LEA Pattern:** Know which sites match which features: Stonehenge = sarsen/trilithon/astronomical, Newgrange = passage grave/corbelling/solstice, Carnac = menhir alignments/3,000+ stones, Ggantija = temple complex/50-tonne megaliths.</ExamTip>
+
+## Related Articles
+
+See also within Ancient Architecture: **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**, **lea-hist-001-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

@@ -1,38 +1,48 @@
 {
   "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
   "slug": "spp-doc-204-b-construction-management-services",
-  "generated_at": "2026-05-03T13:44:50.271Z",
-  "old_hash": "sha256:1174a70fa66f6f3140c5c143cf394bb3aac6ab78b99d900af2ce8fd6bb3e1ff6",
-  "new_hash": "sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5",
-  "original_hash": "sha256:1174a70fa66f6f3140c5c143cf394bb3aac6ab78b99d900af2ce8fd6bb3e1ff6",
-  "normalized_hash": "sha256:1a5c0bdd6e6866aa7f1d7083f29682bdc2a48cb09211722cf9c85e5c62291aac",
-  "candidate_hash": "sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5",
+  "generated_at": "2026-05-04T00:06:27.050Z",
+  "old_hash": "sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5",
+  "new_hash": "sha256:c0ffad8f803d3efd9cfff82de45cf72d08d940e34489dc2c48a796523b029506",
+  "original_hash": "sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5",
+  "normalized_hash": "sha256:c0ffad8f803d3efd9cfff82de45cf72d08d940e34489dc2c48a796523b029506",
+  "candidate_hash": "sha256:c0ffad8f803d3efd9cfff82de45cf72d08d940e34489dc2c48a796523b029506",
   "changed": true,
-  "changed_line_count": 230,
-  "inserted_line_count": 21,
-  "deleted_line_count": 0,
+  "changed_line_count": 217,
+  "inserted_line_count": 0,
+  "deleted_line_count": 50,
   "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 6,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 6,
   "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 6,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 230,
-    "inserted": 21,
-    "deleted": 0,
-    "original_line_count": 264,
-    "candidate_line_count": 285
+    "changed": 217,
+    "inserted": 0,
+    "deleted": 50,
+    "original_line_count": 285,
+    "candidate_line_count": 235
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006"
+    ],
+    "changed_count": 6
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 6 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 6 preserved UI block(s)."
 }

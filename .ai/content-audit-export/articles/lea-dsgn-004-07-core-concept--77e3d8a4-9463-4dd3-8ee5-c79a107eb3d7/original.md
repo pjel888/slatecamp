@@ -1,10 +1,16 @@
 ## What You Need to Know for the LEA
 
-The LEA tests your ability to correctly classify theaters by type (with vs. without stage), distinguish between Group C (theater with stage) and Group H (large assembly without stage), calculate seating occupancy, and apply stage-specific egress and spatial standards.
+## Learning Goal
 
----
+Distinguish Group C (theater with proscenium stage) from Group H (assembly without stage), calculate seating area at 0.9 sqm/seat, apply egress width at 7.6 mm/person, and verify compliance with stage minimum dimensions and accessibility standards.
+
+|---
 
 ## Core Concept
+
+<ExamTip>
+The LEA frequently tests theater vs. assembly classification. The single deciding factor is the presence of a **fixed proscenium stage** — not seating capacity. A 1,200-seat concert hall WITH a fixed proscenium stage is still Group C (Theater), not Group H.
+</ExamTip>
 
 Theater and performance venue classification is a **critical LEA trap** per **ERR-DSGN-005**. The distinction hinges on the _presence of a stage_:
 
@@ -12,6 +18,15 @@ Theater and performance venue classification is a **critical LEA trap** per **ER
 - **Group H (Large Assembly):** Stadiums, arenas, concert halls without a dedicated stage, amphitheaters, and sports complexes. Typical capacities are 500+ seats; these may have temporary or multi-purpose stages.
 
 This classification difference is significant because Group C uses education/recreation egress standards, while Group H uses assembly egress standards with different occupant load calculations and larger exit aggregate widths. The LEA frequently presents mixed descriptions, requiring students to identify whether a venue is Group C (if a fixed proscenium stage exists) or Group H (if it features flexible staging).
+
+<KeyValues items={[
+  {label:"Seating area per person", value:"0.9 sqm"},
+  {label:"Minimum proscenium stage", value:"9.0 m × 12.0 m"},
+  {label:"Main aisle width (RA 9514)", value:"1.1 m minimum"},
+  {label:"Exit width rate", value:"7.6 mm/person"},
+  {label:"Max travel distance (unsprinklered)", value:"45 m"},
+  {label:"Accessible parking stall", value:"3.7 m × 5.0 m"}
+]} />
 
 ### Space Program Standards
 
@@ -108,19 +123,22 @@ Below are the standards per **RA 9514** and theater design practice:
 **Egress Analysis Pattern (Difficulty 0.9):**
 "A 400-seat theater has two 1.0 m wide exit doors. Verify compliance."
 
-- **Answer:** Required width = 400 × 7.6 mm = 3,040 mm (3.04 m). Since 2.0 m is available, it is **NON-COMPLIANT**.
+| **Answer:** Required width = 400 × 7.6 mm = 3,040 mm (3.04 m). Since 2.0 m is available, it is **NON-COMPLIANT**.
 
-> **Memory rule:** Stage presence determines the group: **Group C** = Stage; **Group H** = No Stage. Stage minimum is **9.0 m x 12.0 m**, and the aisle minimum is **1.1 m**.
+<WikiMistakeCard number={1} title="Group C vs Group H Trap" wrongValue="Use seating capacity alone to classify" correctValue="Check for a fixed proscenium stage — that's the deciding factor" explanation="A 200-seat community theater with a fixed stage is Group C. A 1,200-seat arena with flexible staging is Group H. The LEA often includes stage descriptions to test this distinction." />
+
+<Tip>
+**Memory aid for stage minimums:** Think "9 × 12 = 108" — the minimum proscenium stage is 9.0 m wide × 12.0 m deep (108 sqm). For seating: 0.9 sqm per seat is roughly 1 sqm, making mental math fast under exam pressure.
+</Tip>
 
 ---
 
-## Common Mistakes
+**Exam Tip — ERR-DSGN-005:** The presence of a proscenium stage determines Group C vs Group H classification. Stadiums and arenas without fixed stages = Group H, regardless of seating capacity.
 
-- Classifying any theater as Group H without checking for a fixed proscenium stage.
-- Using standard 0.75 m corridor widths instead of the **1.1 m theater aisle minimum**.
-- Treating the seating area as if occupant load must be calculated; seats = occupants (1:1).
-- Applying standard parking stalls (2.5 x 5.0 m) instead of accessible stalls (**3.7 x 5.0 m**).
-- Forgetting backstage crew in the total occupant load for egress design.
-- Using a 1:10 ramp gradient instead of the **1:20 maximum** per the 2024 Revised IRR.
+## Cross-References
+
+See **LEA-DSGN-005-10** (Multi-Purpose Halls) for Group C vs Group H distinction, **LEA-DSGN-008-01** (Fire Egress) for seating egress calculations, and **LEA-DSGN-007-08** (Human Factors) for sightline standards.
+
+## Common Mistakes
 
 ---

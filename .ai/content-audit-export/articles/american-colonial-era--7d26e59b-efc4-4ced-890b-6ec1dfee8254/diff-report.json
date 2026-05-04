@@ -1,38 +1,46 @@
 {
   "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
   "slug": "american-colonial-era",
-  "generated_at": "2026-05-03T13:44:40.308Z",
-  "old_hash": "sha256:75559932c515d4ef971853c96cbae1ec8918919c6a3f7821c376bb0b503e31e9",
-  "new_hash": "sha256:ee0bd971cbe67f08f1521472465a78102da77fc786f2396c2aa6801f0adf6025",
-  "original_hash": "sha256:75559932c515d4ef971853c96cbae1ec8918919c6a3f7821c376bb0b503e31e9",
-  "normalized_hash": "sha256:b3a56f858cbfb49fd53911393d4afddf733198f6b090379846c880e7ca5197fc",
-  "candidate_hash": "sha256:ee0bd971cbe67f08f1521472465a78102da77fc786f2396c2aa6801f0adf6025",
+  "generated_at": "2026-05-04T00:06:15.901Z",
+  "old_hash": "sha256:ee0bd971cbe67f08f1521472465a78102da77fc786f2396c2aa6801f0adf6025",
+  "new_hash": "sha256:74ff15c57d2e2326a79377617eb884c1adb8ffe865fba9f122b8ab14507f152f",
+  "original_hash": "sha256:ee0bd971cbe67f08f1521472465a78102da77fc786f2396c2aa6801f0adf6025",
+  "normalized_hash": "sha256:74ff15c57d2e2326a79377617eb884c1adb8ffe865fba9f122b8ab14507f152f",
+  "candidate_hash": "sha256:74ff15c57d2e2326a79377617eb884c1adb8ffe865fba9f122b8ab14507f152f",
   "changed": true,
-  "changed_line_count": 155,
-  "inserted_line_count": 39,
-  "deleted_line_count": 0,
+  "changed_line_count": 144,
+  "inserted_line_count": 0,
+  "deleted_line_count": 20,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 155,
-    "inserted": 39,
-    "deleted": 0,
-    "original_line_count": 134,
-    "candidate_line_count": 173
+    "changed": 144,
+    "inserted": 0,
+    "deleted": 20,
+    "original_line_count": 173,
+    "candidate_line_count": 153
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0030",
+      "ui_0031",
+      "ui_0032",
+      "ui_0033"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
 }

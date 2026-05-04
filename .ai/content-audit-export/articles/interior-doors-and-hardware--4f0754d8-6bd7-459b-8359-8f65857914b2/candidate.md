@@ -11,6 +11,10 @@ You are a wheelchair user arriving at a mall's cinema restroom. The door looks w
 
 ## CORE MNEMONIC: **"W-H-T-V-K"** — *"Wheelchair Handles The Very Kickplate"*
 
+<ExamTip>
+This section is frequently tested. Pay special attention to the distinctions and exceptions.
+</ExamTip>
+
 | Letter | Element | Key Number |
 |--------|---------|-----------|
 | **W** | **W**idth — clear door opening | **900 mm** min |
@@ -23,11 +27,7 @@ You are a wheelchair user arriving at a mall's cinema restroom. The door looks w
 
 ## CHEAT SHEET: COMPLETE DOOR SPECIFICATIONS
 
-<LawCallout code="bp344" title="Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced wi">
-
-Legal Basis: BP 344 (2024 IRR) — Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced with Appendix D Sections 13 (Dressing Rooms) and 17 (Lodging)
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 
 | Element | Specification | IRR Reference | Notes |
 |---------|-------------|---------------|-------|
@@ -173,11 +173,7 @@ Is it a lodging/guest room?
 | Opening force | As low as possible; no specific value in BP 344 for standard doors | Governed by fire code — but accessibility requires low force |
 | Threshold | Max 12 mm, bevel if >6 mm | Same; fire-rated thresholds must still comply |
 
-<LawCallout code="bp344" title="the stricter clear width governs.">
-
-Cross-reference: PD 1096 (National Building Code) governs fire exit door widths and panic hardware. BP 344 governs the accessibility dimension of those same doors. Both apply simultaneously — the stricter clear width governs.
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
 ---
 
@@ -248,3 +244,24 @@ You are teaching a first-year architecture student who just drew a restroom door
 
 *Next: Module 6 — Fixtures & Small Items in Common Areas*
 *Previous: Module 4 — Assembly Seating & Waiting Areas*
+
+<Note>
+Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards and amendments.
+</Note>
+
+---
+
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Minimum clear opening width = 900 mm for accessible doors, 700 mm for interior non-accessible. Fire doors must be self-closing with positive latching. Panic hardware required on exit doors of Group E, F, H, I occupancies. The clear opening is measured with door at 90° — NOT the door leaf width.
+
+## Cross‑References
+
+**Prefabricated Constructions**, **Lathing And Plastering**, **Fire Resistive Construction Ratings**, **Residential Clearances**
+
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -1,38 +1,47 @@
 {
   "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
   "slug": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope",
-  "generated_at": "2026-05-03T13:45:22.367Z",
-  "old_hash": "sha256:0c2c8e4402dbe573f7b9a0f02804578f1026e3fb5f1c3b2e3a5d2de856777c90",
-  "new_hash": "sha256:1ed2cf1e59262f1600b0c4c286efc3185dacd77a4ad70ae04cfb54c33a747662",
-  "original_hash": "sha256:0c2c8e4402dbe573f7b9a0f02804578f1026e3fb5f1c3b2e3a5d2de856777c90",
-  "normalized_hash": "sha256:ead048426c68be6b23d3fbee7f2474c5dd4a5dc78f8c9b6ef73b3dbf84cbc220",
-  "candidate_hash": "sha256:1ed2cf1e59262f1600b0c4c286efc3185dacd77a4ad70ae04cfb54c33a747662",
+  "generated_at": "2026-05-04T00:07:03.868Z",
+  "old_hash": "sha256:1ed2cf1e59262f1600b0c4c286efc3185dacd77a4ad70ae04cfb54c33a747662",
+  "new_hash": "sha256:925d21b1ecb35cbe96cc97c5625155aa5ea2486298dfbf56141ee57d3c3972e5",
+  "original_hash": "sha256:1ed2cf1e59262f1600b0c4c286efc3185dacd77a4ad70ae04cfb54c33a747662",
+  "normalized_hash": "sha256:925d21b1ecb35cbe96cc97c5625155aa5ea2486298dfbf56141ee57d3c3972e5",
+  "candidate_hash": "sha256:925d21b1ecb35cbe96cc97c5625155aa5ea2486298dfbf56141ee57d3c3972e5",
   "changed": true,
-  "changed_line_count": 75,
-  "inserted_line_count": 44,
-  "deleted_line_count": 0,
+  "changed_line_count": 59,
+  "inserted_line_count": 0,
+  "deleted_line_count": 27,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 75,
-    "inserted": 44,
-    "deleted": 0,
-    "original_line_count": 35,
-    "candidate_line_count": 79
+    "changed": 59,
+    "inserted": 0,
+    "deleted": 27,
+    "original_line_count": 79,
+    "candidate_line_count": 52
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
 }

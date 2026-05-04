@@ -1,11 +1,8 @@
 ## What You Need to Know for the LEA
 
-Alternative energy and sustainability systems form the technical foundation of modern building design in the Philippines. The intersection of renewable energy integration, water conservation, passive design strategies, and building envelope performance creates measurable performance improvements aligned with regulatory frameworks including the Philippine Green Building Code and RA 11285 (Energy Efficiency and Conservation Act of 2019).
+## Learning Goal
 
-<Callout type="info">
-The Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compliance and operational cost reduction.
-</Callout>
-
+Integrate renewable energy and alternative energy systems (solar PV, solar thermal, wind, biomass, geothermal heat pumps) into building design, and apply BERDE/LEED credit requirements for on-site renewable energy generation in Philippine building projects.
 ## Renewable Energy Integration Systems
 
 ### Solar Photovoltaic (PV) Systems
@@ -16,7 +13,7 @@ Inverter technology selection impacts efficiency: string inverters achieve 96-98
 
 ### Wind Energy Considerations
 
-While large-sclea wind development concentrates in northern Luzon coastal zones (Ilocos and Pangasinan provinces), building-sclea vertical-axis wind turbines (VAWT) address urban applications. VAWT units rated 5-15 kW suit rooftop installation with lower noise profiles (43-50 dB at 10m) compared to horizontal-axis designs.
+While large-scale wind development concentrates in northern Luzon coastal zones (Ilocos and Pangasinan provinces), building-scale vertical-axis wind turbines (VAWT) address urban applications. VAWT units rated 5-15 kW suit rooftop installation with lower noise profiles (43-50 dB at 10m) compared to horizontal-axis designs.
 
 ## Water Conservation and Recycling Systems
 
@@ -73,11 +70,11 @@ A typical 10,000 sqm office building achieves OTTV compliance through window-to-
 
 ### Air Leakage Control
 
-Building airtightness measured as air changes per hour (ACH) at 50 Pa pressure differentials targets ≤3 ACH for conditioned buildings. Selead construction reduces infiltration losses 40-50%, critical in tropical climates where humidity infiltration drives dehumidification load.
+Building airtightness measured as air changes per hour (ACH) at 50 Pa pressure differentials targets ≤3 ACH for conditioned buildings. sealed construction reduces infiltration losses 40-50%, critical in tropical climates where humidity infiltration drives dehumidification load.
 
 ## Waste Heat Recovery
 
-Combined heat and power (CHP) or cogeneration systems, prevleant in Metro Manila hospitals and commercial facilities, capture exhaust heat for domestic water heating or absorption cooling. Cogeneration heat recovery effectiveness:
+Combined heat and power (CHP) or cogeneration systems, prevalent in Metro Manila hospitals and commercial facilities, capture exhaust heat for domestic water heating or absorption cooling. Cogeneration heat recovery effectiveness:
 
 - Exhaust heat: 400-550°C from reciprocating engines, 500-650°C from gas turbines
 - Recovery efficiency: 40-60% of input fuel energy (compared to 30% for generation alone)
@@ -89,7 +86,7 @@ Trigeneration (CHP + absorption chiller) supplies cooling, heating, and power si
 
 ### District Cooling Networks
 
-Large-sclea district cooling systems serve multiple buildings from centralized plants, reducing per-unit refrigeration capital cost by 25-35%. System design uses chilled water distribution at 6-8°C supply, 12-14°C return temperatures. Piping insulation (50-75mm polyurethane) minimizes thermal loss to ≤5% over distribution distances of 500-1,500m in dense urban cores.
+Large-scale district cooling systems serve multiple buildings from centralized plants, reducing per-unit refrigeration capital cost by 25-35%. System design uses chilled water distribution at 6-8°C supply, 12-14°C return temperatures. Piping insulation (50-75mm polyurethane) minimizes thermal loss to ≤5% over distribution distances of 500-1,500m in dense urban cores.
 
 The Makati CBD and Bonifacio Global City (BGC) employ district systems serving 50,000-80,000 sqm building floor areas, reducing peak electrical demand 15-20% through load shifting and thermal storage.
 
@@ -175,3 +172,15 @@ Design integration sequencing matters: establish passive design envelope first, 
 - **RA 11285 (Energy Efficiency and Conservation Act of 2019)**: Building performance standards, equipment MEPS, audit requirements, renewable integration mandates
 
 This framework ensures LEA-UTIL-007-05 content aligns with current Philippine regulatory expectations and practical implementation pathways for building utilities professionals.
+
+\ component="Callout" status="preserved"]
+Extracted summary:
+- Props: 
+- Text: The Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compli
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+See also within Renewable and Alternative Energy: **lea-util-007-02-core-concept**, **lea-util-007-04-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

@@ -3,6 +3,10 @@
 
 _Retention Maximizer | PD 1096 + BP 344 vs. IBC + ADA | Filipino & US Anthropometrics_
 
+## Learning Goal
+
+By the end of this module, you will be able to correctly classify institutional building occupancies under PD 1096, apply the volumetric airspace standard for school rooms, compare Philippine barrier-free requirements (BP 344) against US standards (ADA/IBC), and calculate classroom occupant capacity using both the 3.0 m³/person and 1.0 m²/person limits. You will also recognize common exam traps involving misapplied US code terminology and incorrect ramp slope values.
+
 ---
 
 ## Section 1: Accuracy Audit — Errors in the Original Draft
@@ -137,6 +141,12 @@ LEA Trap Leart: The most frequently tested classification error is placing schoo
 
 </Callout>
 
+<Warn>
+
+Critical Warning — Never mix IBC and PD 1096 occupancy terminology on the LEA exam. "Group I-2" is a US code term that does not exist in Philippine law. Philippine hospitals are always Group D-2. Using US terminology on a Philippine board exam answer will mark the answer wrong, even if the dimensional values are correct.
+
+</Warn>
+
 #### Philippine Occupancy Classification (PD 1096, Sec. 701)
 
 | Occupancy Group | Label | Examples |
@@ -145,7 +155,7 @@ LEA Trap Leart: The most frequently tested classification error is placing schoo
 | **Group D-1** | Institutional (Custody) | Mental hospitals, jails, prisons, reformatories, police stations |
 | **Group D-2** | Institutional (Health Care) | Hospitals, sanitaria, nursing homes (non-ambulatory, >5 persons) |
 | **Group D-3** | Institutional (Ambulatory) | Nursing homes (ambulatory), homes for children over kindergarten age |
-| **Group H** | Assembly (&lt;1,000 pax) | Libraries (when assembly function), auditoriums, theaters |
+| **Group H** | Assembly (<1,000 pax) | Libraries (when assembly function), auditoriums, theaters |
 | **Group I** | Assembly (≥1,000 pax) | Large libraries, convention halls, stadia |
 
 #### US Occupancy Classification (IBC 2021, Sec. 303–308)
@@ -204,6 +214,12 @@ This is simultaneously a **volume** standard AND a **floor area** standard. Both
 **What does the 3.0 m³ standard actually prevent?**
 Not suffocation — but excessive CO₂ buildup, pathogen concentration, and thermal discomfort. The 3.0 m³ floor is a **code-based ventilation sufficiency threshold**, not a biological oxygen limit.
 
+<ExamTip>
+
+Board Exam Tip: When a question gives room dimensions and asks for maximum occupancy, always check BOTH the airspace (volume ÷ 3.0) AND the floor area (area ÷ 1.0) standards. The lower number governs. This is one of the most frequently tested calculations on the LEA — and one of the most commonly missed when candidates forget to check both limits.
+
+</ExamTip>
+
 #### US Approach: Area-Based Occupancy (IBC / ASHRAE)
 
 - **IBC:** Schools use occupant load factors from Table 1004.5. Classrooms: **20 sq ft/person (1.86 m²/person)** — area based, not volumetric.
@@ -240,7 +256,7 @@ PD 1096 requires 1 exit unit (600 mm clear width) per 500 persons for safe dispe
 PD 1096 also requires exit doors no less than 900 mm wide and at least 2.00 m high.
 For 63 students: provide at least **2 exits** (any floor above ground with >10 occupant load requires 2 exits per PD 1096 Sec. 1207).
 
-> **Corrected Calculation Leart:** The original draft stated "67 × 0.55m/person = 37m egress width." This is categorically wrong. No code uses 0.55 m per person as an egress factor. Discard this figure entirely.
+> **Corrected Calculation Lesson:** The original draft stated "67 × 0.55m/person = 37m egress width." This is categorically wrong. No code uses 0.55 m per person as an egress factor. Discard this figure entirely.
 
 🛑 **Stop & Think:** _If a room is 10m × 8m × 3.0m, what is the maximum classroom capacity under PD 1096? Check both the airspace standard AND the floor area standard._
 
@@ -344,7 +360,7 @@ _(Source: Del Prado-Lu, 2007 — n=1,805 Filipino manufacturing workers)_
 
 #### Comparison: Filipino vs. US Body Dimensions
 
-| Dimension | PH Mlea Mean | US Mlea 50th% | Difference | PH Femlea Mean | US Femlea 50th% | Difference |
+| Dimension | PH Male Mean | US Male 50th% | Difference | PH Female Mean | US Female 50th% | Difference |
 |---|---|---|---|---|---|---|
 | **Stature** | 167.0 cm | 175.5 cm | -8.5 cm | 153.9 cm | 162.7 cm | -8.8 cm |
 | **Eye Height (standing)** | 155.0 cm | 163.3 cm | -8.3 cm | 143.1 cm | 151.5 cm | -8.4 cm |
@@ -361,14 +377,14 @@ _(Source: Del Prado-Lu, 2007 — n=1,805 Filipino manufacturing workers)_
 - Seat height for elementary students: **30–38 cm**
 
 **Library Stack and Shelf Heights:**
-- Top shelf maximum reachable height: Use **196–212 cm** (PH femlea mean to mlea mean overhead reach), NOT 220–230 cm (which targets US tall users)
+- Top shelf maximum reachable height: Use **196–212 cm** (PH female mean to male mean overhead reach), NOT 220–230 cm (which targets US tall users)
 - For inclusive design accommodating wheelchair users: top shelf ≤ **120–135 cm** from floor
 - Library stack aisle: minimum **900 mm** (Metric Handbook standard); minimum **1,500 mm** for wheelchair passage (BP 344-compliant aisles)
 
 **Hospital Nurse Station and Work Surface Heights:**
 - Standing work surface: **85–90 cm** (Filipino elbow height 96–104 cm; work surface ~10 cm below elbow)
 - This differs from US standard counter height of 36 in / 91.4 cm — nearly identical in practice
-- Key difference: Filipino 5th percentile femlea elbow height = 89.0 cm; this means standard Philippine counters should trend to the **lower end of the 85–90 cm range** to serve all staff
+- Key difference: Filipino 5th percentile female elbow height = 89.0 cm; this means standard Philippine counters should trend to the **lower end of the 85–90 cm range** to serve all staff
 
 **Key Design Takeaway:** Filipino users, on average 8–9 cm shorter than US users, need:
 - Lower shelf heights in libraries and schools
@@ -485,7 +501,7 @@ An architect is designing a public elementary school classroom in Manila. The ro
 
 **Correct Answer: C — 48 students**
 
-**Rationlea:**
+**Rationale:**
 - Volume: 8 × 6 × 3.0 = **144 m³** ÷ 3.0 m³/person = **48 students** by airspace (PD 1096 Sec. 807.1)
 - Floor area: 8 × 6 = **48 m²** ÷ 1.0 m²/person = **48 students** by floor area
 - Both standards yield 48 students, so the governing maximum is **48 students**
@@ -508,7 +524,7 @@ A Filipino architect is reviewing an international hospital design brief prepare
 
 **Correct Answer: C**
 
-**Rationlea:**
+**Rationale:**
 - "Group I-2" is an **IBC (US)** occupancy classification. PD 1096 does not recognize this terminology.
 - Philippine hospitals fall under **Group D, Division 2 (Group D-2)** per PD 1096 Sec. 701(4).
 - The Philippine minimum hospital corridor width is **2.40 m**.
@@ -532,9 +548,9 @@ A community library in Cebu City is undergoing renovation. The architect propose
 
 **Correct Answer: D — 1:12**
 
-**Rationlea:**
+**Rationale:**
 - **BP 344 IRR (amended), Sec. on Accessible Ramps:** "Gradient not steeper than 1:12."
-- This is equivleant to approximately 4.7° inclination or 8.3% slope.
+- This is equivalent to approximately 4.7° inclination or 8.3% slope.
 - 1:50 is the figure incorrectly cited in many unrevised study materials — **it is wrong**.
 - 1:20 (5%) is the maximum gradient for **sidewalks/walkways**, not ramps.
 - 1:16 is not a BP 344 standard.
@@ -544,11 +560,23 @@ A community library in Cebu City is undergoing renovation. The architect propose
 
 ---
 
+<LawCallout code="nbcp">
+
+PD 1096 Rule VIII, Sec. 807(1): Minimum air space per occupant = 14.00 m³ for adults. Classroom computation: 14 m³ ÷ 2.70 m ceiling height = 5.18 m² floor area per person. Combined with the 1.0 m²/person floor area limit, the effective occupancy limit is the LOWER of the two calculations.
+
+</LawCallout>
+
+<ExamTip>
+
+LEA Pattern: Classroom occupancy calculation questions require TWO checks: (1) Air space: Room volume ÷ 14 m³/person. (2) Floor area: Room area ÷ 1.0 m²/person. The correct occupancy is the LESSER of the two results. Show both calculations in your answer.
+
+</ExamTip>
+
 ## Appendix: Full Data Reference Tables
 
 ### Philippine Anthropometric Data (Del Prado-Lu, 2007 — n=1,805 Filipino manufacturing workers)
 
-| Dimension | Mlea 5th% | Mlea Mean | Mlea 95th% | Femlea 5th% | Femlea Mean | Femlea 95th% |
+| Dimension | Male 5th% | Male Mean | Male 95th% | Female 5th% | Female Mean | Female 95th% |
 |---|---|---|---|---|---|---|
 | Stature (cm) | 157.0 | 167.0 | 178.0 | 143.0 | 153.9 | 165.0 |
 | Eye Height Standing (cm) | 145.0 | 155.0 | 166.0 | 134.0 | 143.1 | 153.0 |
@@ -561,7 +589,7 @@ A community library in Cebu City is undergoing renovation. The architect propose
 
 ### US Anthropometric Data (NHANES / ANSUR — NC State Ergonomics Center)
 
-| Dimension | Mlea 5th% | Mlea 50th% | Mlea 95th% | Femlea 5th% | Femlea 50th% | Femlea 95th% |
+| Dimension | Male 5th% | Male 50th% | Male 95th% | Female 5th% | Female 50th% | Female 95th% |
 |---|---|---|---|---|---|---|
 | Stature (cm) | 164.7 | 175.5 | 186.7 | 152.8 | 162.7 | 173.7 |
 | Eye Height Standing (cm) | 152.8 | 163.3 | 174.3 | 141.5 | 151.5 | 162.1 |
@@ -589,3 +617,10 @@ A community library in Cebu City is undergoing renovation. The architect propose
 
 _End of Module — LEA Institutional Design: Schools, Hospitals, Libraries_
 _Dual-Context Edition: Philippine PD 1096 / BP 344 vs. US IBC / ADA_
+
+---
+
+## Cross‑References
+
+**Ergonomics In Furniture Design**, **Standard Human Body Dimensions**, **Commercial Clearances**, **Case Study Hospital Mall School**
+

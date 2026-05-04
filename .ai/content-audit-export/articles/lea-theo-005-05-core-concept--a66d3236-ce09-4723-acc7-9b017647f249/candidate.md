@@ -1,10 +1,5 @@
 ## What You Need to Know for the LEA
-<Callout>
-
-Postmodernism fundamentally disrupted modernism's hegemony by reintroducing historical reference, ornament, symbolism, and contradiction as legitimate design tools. The LEA examines your grasp of key postmodern theorists and architects—Venturi, Jencks, Rossi, Graves, and the deconstructivists—and how their work redefined architectural possibility in the late twentieth century.
-</Callout>
-
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
 ## Learning Goal
 
@@ -14,13 +9,15 @@ Postmodernism fundamentally disrupted modernism's hegemony by reintroducing hist
 
 ## Core Concept
 
+<ArticleMedia id="media-lea-theo-005-05-core-concept" a type="image" caption="Postmodernism vs Modernism — Key Differences and Concepts" description="Two-column comparison diagram: Left column (Modernism) — purism, functionalism, universal form, anti-ornament, machine aesthetic, form follows function, abstraction. Right column (Postmodernism) — complexity, contradiction, historical reference, ornament, semiotics, double coding, duck vs decorated shed. Middle column shows the transition catalysts: Venturi's Complexity and Contradiction (1966), Learning from Las Vegas (1972), and Jencks's 'death of modern architecture' at Pruitt-Igoe demolition (1972). Bottom section distinguishes Deconstructivism (fragmented form, destabilized structure, Gehry, Eisenman) from Postmodernism (playful reference, Venturi, Graves, Moore)." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 Postmodernism in architecture emerged not as a unified style but as a critical reaction against modernism's reductive purism and its claim to universal, timeless principles. Where modernism sought to strip away historical ornament and craft the "honest" expression of materials and function, postmodernism embraced complexity, irony, historical pastiche, and the semantic richness of symbolic language. Robert Venturi's 1966 manifesto *Complexity and Contradiction in Architecture* fundamentally shifted architectural discourse by arguing that modernism's reduction was fundamentally incomplete. "I like elements which are hybrid rather than 'pure,' compromising rather than 'clean,' distorted rather than straightforward, ambiguous rather than articulate," Venturi wrote, inverting modernism's aesthetic hierarchies.
 
-<Tip>Postmodernism's core move: **rehabilitation of ornament and historical reference**. Where modernism said "ornament is crime" (Loos), postmodernism says "ornament is legitimate cultural expression." This single reversal enables everything postmodern—applied symbolism, color, historical allusion. Testable pattern: any question about postmodernism in architecture hinges on this ornament rehabilitation.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
-<Note>Postmodernism is NOT frivolous or anti-intellectual. Venturi's analysis is semiotic and rigorous—he shows HOW meaning operates through decoration and historical quotation. The LEA may test whether students recognize postmodernism as serious critical theory (challenging modernism's philosophical monopoly) rather than mere stylistic whimsy.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
 
-<Warn>Postmodernism collapsed by the 1990s for a crucial reason: if ALL historical references are equally available, how do architects make choices? Pastiche accumulation exhausts itself. Students sometimes think postmodernism "failed"—actually, it succeeded in disrupting modernism's hegemony; its own internal contradictions (how to choose among infinite references?) generated successor movements (deconstructivism, critical regionalism, etc.). Understanding postmodernism's productive failure is crucial to LEA narrative literacy.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 
 Charles Jencks, the architecture critic who coined the term "postmodern architecture," positioned postmodernism as architecture's response to broader cultural fragmentation and pluralism. Unlike modernism's monolithic truth claims, postmodernism acknowledged that multiple styles and meanings could coexist within a single building or city. Jencks's concept of "double-coding"—simultaneously addressing an educated architectural elite and a popular audience through layered meanings—became central to postmodern design strategy. Buildings could quote history while being functionally contemporary; they could employ ornament while maintaining rational planning.
 
@@ -38,33 +35,26 @@ Contemporary architectural theory has moved beyond postmodernism's historical ec
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Theorist/Architect", "Key Text(s)", "Year", "Central Contribution"]} rows={[['["Robert Venturi", "*Complexity and Contradiction in Architecture*", "1966", "Postmodern manifesto; reintroduced complexity, contradiction, symbolism"]', '["Venturi/Scott Brown/Izenour", "*Learning from Las Vegas*", "1972", "Vernacular architecture as legitimate; duck vs. decorated shed"]', '["Charles Jencks", "*Language of Post-Modern Architecture*", "1977", "Double-coding; postmodernism as plural, multi-coded"]', '["Aldo Rossi", "*L\'architettura della città*", "1966", "Typology, memory, La Città Analoga; analogical design method"]', '["Michael Graves", "Various residential & public buildings", "1970s-1980s", "Accessible postmodernism; color, ornament, historical allusion"]', '["Frank Gehry", "Guggenheim Museum Bilbao", "1997", "Deconstructivism; form liberated from function"]', '["Daniel Libeskind", "Jewish Museum Berlin", "1999", "Deconstructivism as memorial; fragmentation as meaning"]', '["Peter Eisenman", "Various theoretical works", "1970s-1990s", "Conceptual grids, palimpsest; autonomous form"]', '["Bernard Tschumi", "Parc de la Villette", "1983", "Disjunctive systems; follies; strategic fragmentation"]', '["Zaha Hadid", "Various parametric designs", "1990s-2000s", "Fluid, parametric deconstructivism; digital methodology"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
 ## How It's Tested on the LEA
 
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 
-<ExamTip>1. **Theorist Positioning**: The exam asks where theorists stand relative to modernism and each other. You must understand that Venturi critiques modernism from within architectural humanism, while deconstructivists critique both modernism and postmodernism's historical borrowing as insufficiently radical.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 
-<ExamTip>2. **Typological vs. Formal Approaches**: Questions distinguish between Rossi's typological method (engage historical building types analogically) and deconstructivism's formal experimentation (liberate form from typological constraint). These represent fundamentally different postmodern strategies.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 
-
-<ExamTip>3. **Symbolic vs. Deconstructive Language**: Venturi's architecture speaks through applied symbols (the "decorated shed"), while Libeskind's speaks through deconstructed form itself. Can you explain how each strategy differently mobilizes meaning?</ExamTip>
-
-
-<ExamTip>4. **Historical vs. Contemporary Contextualization**: Rossi engages history through analogy; contemporary architects engage context through digital responsiveness, sustainability, and cultural specificity. The exam tests your understanding of how architectural method evolves.</ExamTip>
-
-
-<ExamTip>5. **Architect-Building Attribution**: You must identify which theorist-architect designed which canonical postmodern building. Graves = Portland Building; Gehry = Bilbao; Libeskind = Jewish Museum Berlin.</ExamTip>
-
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Treating Postmodernism as a Style Rather Than Critical Position" correction="Students often think postmodernism means \"using historical ornament.\" Actually, postmodernism is a critique of modernism's totality—multiple styles, meanings, and approaches become simultaneously valid." context="Jencks's double-coding is more important than specific stylistic choices." />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Confusing Rossi with Graves" correction="Both are postmodern, but fundamentally differently. Graves creates colorful, accessible, commercially successful pastiche. Rossi creates austere, melancholic, conceptually complex spaces grounded in urban memory." context="Graves speaks to popular audiences; Rossi speaks to architectural intellectuals." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Misunderstanding Deconstructivism as Pure Formalism. Deconstructivism is not formalism detached from meaning. Libeskind's fragmentation embodies historical trauma; Tschumi's disjunctions enable programmatic complexity. Form and meaning are inseparable, but meaning emerges from formal operations rather than applied symbolism.", "Overstating Deconstructivism's Newness. Students sometimes present deconstructivism as completely rupturing postmodernism. Actually, both reject modernism; deconstructivism simply rejects postmodernism's solution (historical quotation) in favor of more radical formal strategies. They share postmodernism's anti-modernist stance.", "Missing the 1988 MoMA Exhibition's Canonizing Function. The \"Deconstructivist Architecture\" exhibition didn't discover a pre-existing movement; it created one. Understanding how institutional frameworks construct architectural movements is crucial to LEA thinking.", "Ignoring Context-Specificity. Postmodernism, deconstructivism, and contemporary theory all emphasize that architecture must engage specific places, cultures, histories. Generic application of deconstructivist form or postmodern symbolism violates the theoretical foundations."]} />
-
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
 
 ## Key Terms
 

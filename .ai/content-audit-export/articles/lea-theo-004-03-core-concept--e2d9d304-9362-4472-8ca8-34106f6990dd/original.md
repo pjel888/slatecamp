@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The Philippines has two primary green building frameworks: BERDE (Building Ecological Responsive Design Excellence), the national voluntary system administered by the Philippine Green Building Council, and the Philippine Green Building Code (2015), the mandatory regulatory standard. BERDE rates projects 1–5 stars across 11 categories; the Code mandates minimum efficiency standards via RA 9729 (Climate Change Act). Understanding both systems, their overlap, and their compliance pathways is essential for LEA exam questions on energy efficiency, material sustainability, and climate-resilient design.</Callout>
+## Learning Goal
 
+Distinguish the two primary Philippine green building frameworks — BERDE (Philippine national standard) and EDGE (World Bank IFC tool) — by their certification levels, assessment criteria, and applicability to different project types.
 ## Core Concept
 
 Green building in the Philippines operates at the intersection of voluntary excellence (BERDE) and mandatory compliance (Code/RA 9729). This dual framework reflects global practice but with Philippines-specific climate and resource constraints.
@@ -20,12 +21,12 @@ Republic Act 9729, the Philippine Climate Change Act of 2009, establishes the na
 **Philippine Green Building Code Enforcement (2015):**
 The Code specifies minimum requirements in seven domains:
 
-1. **Building Envelope:** Roof insulation (50–75mm minimum, U-value dependent on climate region), window properties (U-value &lt;5.8 W/m²K typical), air tightness (joints, service penetrations selead to limit infiltration).
+1. **Building Envelope:** Roof insulation (50–75mm minimum, U-value dependent on climate region), window properties (U-value &lt;5.8 W/m²K typical), air tightness (joints, service penetrations sealed to limit infiltration).
 
 2. *Natural Ventilation: Minimum 8–12 air changes per hour for naturally ventilated spaces; operable windows must provide 10% minimum of floor area as opening area.rea.
 
 3. Building Envelope Color: Roof surfaces shall be colored white or have a minimum Solar Reflectance Index (SRI) of 70; light-colored or reflective finishes on wall surfaces to reduce solar heat gain.
-4. Roof Insulation: Minimum R-value R-8 (approximately 50–75mm fiberglass or equivleant); higher values in intensive solar-load areas.as.
+4. Roof Insulation: Minimum R-value R-8 (approximately 50–75mm fiberglass or equivalent); higher values in intensive solar-load areas.as.
 
 5. **Mechanical Systems:** COP (Coefficient of Performance) minimum 2.5 for air-conditioning units; duct sealing; regular maintenance protocols.
 
@@ -118,7 +119,7 @@ The Philippine Green Building Code offers two compliance paths:
 **Energy Modeling Software Accepted by DOE:**
 - EnergyPlus (US DOE, freely available; most rigorous)
 - TRACE 3D+ (proprietary; widely used by MEP engineers in Philippines)
-- IES <VE> (proprietary; advanced capability)
+- IES 
 - HAP/CHVAC (design-stage estimates)
 
 Models must account for Philippine tropical conditions: 26–28°C baseline temperatures, 75–85% humidity, monsoon wind patterns, and Type I–IV climate variation by region.
@@ -202,17 +203,14 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Standard / Requirement", "Detail"]} rows={[['["RA 9729 Framework", "Philippine Climate Change Act (2009); delegates building code authority to DOE; mandatory compliance"]', '["Philippine Green Building Code", "Mandatory minimum; 2015 edition; applies to new buildings, major renovations (thresholds vary)"]', '["Code Compliance Paths", "Path A (prescriptive) = meet each category minimum; Path B (performance) = ≤90% baseline via simulation"]', '["BERDE Star Levels", "1–5 stars; thresholds ~25–40 (1★), 40–55 (2★), 55–70 (3★), 70–85 (4★), 85+ (5★) points"]', '["BERDE Categories", "11 total: Energy (16%), Water (10%), Waste (8%), Management (12%), Land/Ecology (16%), Materials (10%), Transport (5%), Health (10%), Emissions (6%), Community (4%), Economic (3%)"]', '["Roof Insulation Minimum", "50–75mm; R-8 minimum (U-value dependent on zone)"]', '["Window U-value Maximum", "&lt;5.8 W/m²K typical; lower in high-solar-load areas"]', '["Natural Ventilation Minimum", "8–12 air changes/hour; 10% operable window area of floor area"]', '["Envelope Color Requirement", "Albedo >0.6 on 30%+ of wall area + roof; light/reflective finishes"]', '["Mechanical HVAC COP Minimum", "2.5 (air conditioning); higher (~3.0–3.5) for variable-refrigerant-flow systems"]', '["Lighting Power Density", "8–10 W/m² (occupancy-dependent); LED minimum 40 lumens/watt"]', '["Water Reduction Target", "30% below baseline (hybrid rainwater + low-flow fixture strategy typical)"]', '["LEED Comparison", "Global standard, US-biased; BERDE is national standard, tropical-optimized"]', '["Energy Modeling Software", "EnergyPlus (free, rigorous), TRACE 3D+, IES <VE>, HAP/CHVAC accepted by DOE"]', '["Net-Zero Definition", "Annual on-site renewable generation ≥ annual consumption (not mandatory Code, but BERDE incentivizes)"]', '["Embodied Carbon (Operational)", "Operational carbon = annual kWh consumed × grid carbon intensity (~0.6 kg CO₂/kWh Philippines grid); mandatory Path B simulation accounting"]']]} />
-## How It's Tested on the LEA
-
-
-<ExamTip>1. **Code vs. BERDE Distinction:** "A developer achieves Philippine Green Building Code compliance (Path A prescriptive). Can they claim BERDE certification? Explain the relationship between the two systems."
-   - **Answer:** No. Code compliance is necessary but insufficient for BERDE. Code sets minimum baselines (roof insulation, window U-values, etc.); BERDE requires *exceeding* baseline across 11 categories and earning ≥25 points. A Path A building may meet Code but score only 15–20 BERDE points (below 1-Star threshold). BERDE requires intentional design optimization (renewables, water reduction, site ecology, materials strategy) beyond Code minimums.</ExamTip>
-
+ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Code vs. BERDE Distinction:** "A developer achieves Philippine Green Building Code compliance (Path A prescriptive). Can they claim BERDE certification? Explain the relationship between the two systems." - **Answer:** No. Code compliance is necessary but insufficient for BERDE. Code sets minimum baselines (roof insulation, window U-values, etc.); BERDE requires *exceeding* baseline across 11 categories and earning ≥25 points. A Path A building may meet Code but score only 15–20 BERDE points
+[/SLATECAMP_UI_BLOCK]
 
 <ExamTip>2. **Energy Modeling Trade-Off:** "A 3,000 m² office tower in Makati chooses Path B (performance-based) compliance. The design proposes: (a) windows at 35% facade area (exceeding Code 25–30% norm) with low-U-value (4.0 W/m²K), but (b) minimal mechanical cooling (VRF system COP 2.8, smaller capacity). Sketch an energy model logic justifying this trade-off under RA 9729."
    - **Answer:** Daylighting strategy reduces lighting power density (→ lower cooling load). Larger windows with low-U-value minimize conductive gain despite increased glazing area. Natural ventilation via operable windows (15% opening area) reduces HVAC runtime 30–40% during amihan (Nov–Apr) and early morning/evening. Path B simulation demonstrates annual kWh ≤90% baseline (e.g., 85 kWh/m²/year vs. 95 baseline). Trade-off is justified if simulation confirms net-zero cooling-load reduction despite higher solar aperture.</ExamTip>
-
 
 <ExamTip>3. **BERDE Star Targeting:** "Design a 5,000 m² hotel in Cebu (Type IV, coastal, hillside site with ocean views). Target BERDE 4-Stars (70–85 points). Allocate points across categories, identifying the top three score drivers and justifying regional fit."
    - **Answer:**
@@ -223,7 +221,6 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
      - **Top Three Drivers:** (1) Land/Ecology (16% weighting + local coastal sensitivity); (2) Water (Type IV rainfall abundance makes harvesting high-value); (3) Energy (renewable solar post-typhoon resilience).
      - **Regional Fit:** Type IV (Cebu) experiences year-round moisture; gray-water reuse is not health-sensitive (no dry season limits microbial risk). Coastal ecology is BERDE incentive. Solar reliability (Cebu ~240 clear-sky days/year) justifies rooftop PV investment.</ExamTip>
 
-
 <ExamTip>4. **Embodied Carbon Calculation and Trade-Off:** "A 12-story office building (structural program: 1,200 m³ concrete, 180 tonnes steel) is redesigned with 60% timber frame (CLT) and 40% hybrid steel-timber. Concrete reduced to 360 m³. Estimate embodied carbon savings vs. all-concrete baseline. Does this align with BERDE goals?"
    - **Answer:**
      - **Baseline:** (1,200 m³ × 2,400 kg/m³ × 1.2 kg CO₂/kg) + (180 tonnes × 1.8 kg CO₂/kg) = 3,456 + 324 = 3,780 tonnes CO₂e
@@ -231,10 +228,10 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
      - **Savings:** 2,587 tonnes CO₂e (68% reduction)
      - **BERDE Alignment:** Yes. Green Materials category (10%) awards points for local/renewable (bamboo CLT sourced from Mindanao mills), low-carbon materials. Embodied carbon reduction supports Emissions category (6%) via low-GWP refrigerant + material carbon offset. Secondary benefit: timber provides thermal mass in temperate zones (not applicable), but passive fire resistance + flexibility for typhoon resilience are co-benefits in Philippines context.</ExamTip>
 
-
 <ExamTip>5. **Compliance Path Selection:** "An 1,800 m² retail-residential mixed-use building in Iloilo (Type III, 1.5-hectare site with 40% existing vegetation). The developer has budget constraints. Recommend Path A (prescriptive) or Path B (performance) compliance with Philippine Green Building Code. Justify your choice."
    - **Answer:** Path A (prescriptive). Justification: (1) Building size (1,800 m²) and mixed-use program (retail + residential) are below metro-area mandatory Path B thresholds (typically ≥2,000 m² or ≥5,000 in less-regulated regions). (2) Type III climate is moderate; no extreme thermal/moisture challenges; prescriptive minimums (50mm roof insulation, standard window U-values, basic HVAC COP 2.5) are achievable without modeling. (3) Budget constraints: Path B requires energy modeling software + certified auditor (₱80,000–150,000); Path A uses design tables + standard details (₱10,000–20,000). (4) Site has existing vegetation → easier Land/Ecology compliance under BERDE (if voluntary certification later pursued) without complex habitat modeling. Path A is regulatory-sufficient and cost-effective for this project sclea.</ExamTip>
 
+<Callout>The Philippines has two primary green building frameworks: BERDE (Building Ecological Responsive Design Excellence), the national voluntary system administered by the Philippine Green Building Council, and the Philippine Green Building Code (2015), the mandatory regulatory standard. BERDE rates projects 1–5 stars across 11 categories; the Code mandates minimum efficiency standards via RA 9729 (Climate Change Act). Understanding both systems, their overlap, and their compliance pathways is essential for LEA exam questions on energy efficiency, material sustainability, and climate-resilient design.</Callout>
 
 ## Common Mistakes
 
@@ -244,7 +241,6 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
 
 <WikiMistakeList mistakes={["Overdesigning insulation for embodied carbon penalty:. The inverse of mistake #5 from Article 2 applies here. Students specify R-12 (100mm) insulation, thinking \"more insulation = lower operational carbon.\" However, BERDE penalizes excess insulation via embodied-carbon scoring in Emissions/Materials categories. Optimal is ~50–75mm (R-7 to R-10), balancing operational vs. embodied.", "Ignoring RA 9729 typhoon-resilience requirement:. Code mandate for climate adaptation is often overlooked. Students design high-efficiency buildings without considering typhoon loads, impact-resistant glazing, or flood resilience. RA 9729 explicitly mandates buildings adapt to climate hazards (typhoons, flooding); BERDE scoring reflects this via Emissions + Management categories.", "Applying LEED standards without Philippine adaptation:. The LEA expects recognition that LEED (US-biased) requires translation for Philippine tropics. Example: LEED water baseline uses fixture counts; Philippine Code uses rainfall reduction. LEED emphasizes site density; Philippine BERDE emphasizes land/ecology preservation in sensitive coastal/agricultural areas. Direct LEED application often scores lower than BERDE-native design.", "Assuming Path B always superior to Path A:. Path B (performance-based) is more flexible but costlier and requires expertise. Path A (prescriptive) is straightforward for buildings &lt;2,000 m², simple programs, or budget-constrained projects. LEA expects students to judge which path suits the project context, not default to \"B is better.\""]} />
 
-
 ## Key Terms
 
 **RA 9729 (Philippine Climate Change Act, 2009)** — National framework establishing climate change policy, delegating building code authority to DOE; mandates that architects/engineers design buildings to reduce GHG emissions and adapt to climate hazards (typhoons, flooding).
@@ -253,7 +249,7 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
 
 **Path A (Prescriptive Compliance)** — Code compliance by meeting specified minimums in each category (roof insulation depth, window U-values, lighting power density); deterministic, no modeling required, suitable for buildings &lt;2,000 m².
 
-**Path B (Performance-Based Compliance)** — Code compliance via energy simulation demonstrating annual consumption ≤90% of baseline; flexible trade-offs allowed; requires EnergyPlus or equivleant; typical for ≥2,000 m² buildings in metro areas.
+**Path B (Performance-Based Compliance)** — Code compliance via energy simulation demonstrating annual consumption ≤90% of baseline; flexible trade-offs allowed; requires EnergyPlus or equivalent; typical for ≥2,000 m² buildings in metro areas.
 
 **BERDE (Building Ecological Responsive Design Excellence)** — Philippine national voluntary green rating system; 1–5 star rating across 11 impact categories; administered by Philippine Green Building Council; recognized by DOE.
 
@@ -265,10 +261,17 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
 
 **Net-Zero Energy** — Annual on-site renewable generation (solar PV, wind, geothermal) equals or exceeds annual building consumption; not mandated by Code but incentivized by BERDE and pursued by forward-looking developers.
 
-**Energy Modeling Software** — Simulation tools predicting annual energy consumption under tropical climate conditions (26–28°C baseline, humidity 75–85%, monsoon wind). EnergyPlus (free, rigorous), TRACE 3D+, IES <VE> accepted by DOE.
+**Energy Modeling Software** — Simulation tools predicting annual energy consumption under tropical climate conditions (26–28°C baseline, humidity 75–85%, monsoon wind). EnergyPlus (free, rigorous), TRACE 3D+, IES 
 
 **ERV (Energy Recovery Ventilation)** — System capturing heat/moisture from exhaust air and transferring to incoming fresh air, reducing HVAC load; typically improves efficiency 20–25% in naturally ventilated spaces.
 
 **Water Baseline Reduction** — Code/BERDE target of 30% below design baseline; achieved via low-flow fixtures (1.9 L/min toilets, 5.7 L/min showerheads) + rainwater/greywater systems offsetting 10–20% of demand.
 
-**Albedo** — Solar reflectance of surface (0–1 sclea); required minimum 0.6 on 30%+ of facade + roofs per Code; white/light finishes reduce surface temperature 25–30°C vs. dark materials.
+**Albedo** — Solar reflectance of surface (0–1 scale); required minimum 0.6 on 30%+ of facade + roofs per Code; white/light finishes reduce surface temperature 25–30°C vs. dark materials.
+
+## Related Articles
+
+See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-02-core-concept**, **lea-theo-004-07-core-concept**, **lea-theo-004-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

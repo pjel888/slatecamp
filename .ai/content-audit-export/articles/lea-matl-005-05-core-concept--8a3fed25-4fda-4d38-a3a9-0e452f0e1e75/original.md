@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Formwork and scaffolding are temporary structural systems supporting concrete construction and worker access. The LEA expects mastery of formwork types (conventional, system, slip-form), design loads and pressures, stripping time criteria (ACI 347), and scaffolding systems (tubular, frame, system types). You must understand Philippine practices (coco lumber formwork, tube-and-clamp assembly) and OSHA-equivleant safety standards per NSCP 2015 Chapter 34.
-
+Explain formwork removal timing (stripping time) requirements per NSCP 2015 based on concrete strength gain, temperature, and member type, and identify minimum curing periods before form removal for slabs, beams, walls, and columns.
 ## Core Concept
 
 _Formwork_ temporarily supports fresh concrete until it achieves sufficient strength for self-support. _Scaffolding_ provides elevated access for workers and supports loads during construction. Both are temporary; they are removed after their purpose is served, but they directly impact construction quality, safety, and schedule.
@@ -41,7 +41,7 @@ _Ladder Scaffolding_ — Lightweight portable frames for low-height work (&lt;5 
 
 ### Philippine Construction Context
 
-Philippine construction predominantly uses tube-and-clamp scaffolding (locally fabricated steel tubes ~3–4 cm diameter, Manila clamps or locally-made fasteners). Coco lumber is the formwork standard for economic reasons, though system formwork appears in high-rise projects. Safety practices vary significantly; proper OSHA-equivleant training (per NSCP 2015 Chapter 34) is not universal—common deficiency requiring enforcement.
+Philippine construction predominantly uses tube-and-clamp scaffolding (locally fabricated steel tubes ~3–4 cm diameter, Manila clamps or locally-made fasteners). Coco lumber is the formwork standard for economic reasons, though system formwork appears in high-rise projects. Safety practices vary significantly; proper OSHA-equivalent training (per NSCP 2015 Chapter 34) is not universal—common deficiency requiring enforcement.
 
 OSHA Construction Standards 1926.500 (Scaffolding General Requirements) and 1926.501 (Duty to Have Fall Protection) specify scaffolding design, fall protection, inspection intervals, and maintenance. Philippine construction authority (DOLE) enforces similar requirements but enforcement varies by LGU.
 
@@ -69,7 +69,7 @@ OSHA Construction Standards 1926.500 (Scaffolding General Requirements) and 1926
 
 The LEA evaluates formwork/scaffolding through:
 
-1. _Formwork selection_ — Match type (conventional, system, slip-form) to project sclea and geometry.
+1. _Formwork selection_ — Match type (conventional, system, slip-form) to project scale and geometry.
 2. _Design loads_ — Calculate concrete pressure, live loads, impact for formwork design verification.
 3. _Stripping criteria_ — Apply ACI 347 strength thresholds (70% for horizontal, 50% for vertical) to determine removal timing.
 4. _Scaffolding safety_ — Identify proper system (tube-clamp vs. frame), inspection intervals, fall protection per OSHA/NSCP 2015.
@@ -84,3 +84,10 @@ The LEA evaluates formwork/scaffolding through:
 <WikiMistakeCard title="Inadequate Scaffolding Inspection Causing Collapse" body="Tube-and-clamp scaffolding is erected and occupied without formal inspection. A clamp connection fails (poor installation, rust, overload); the entire bay collapses, injuring/killing workers. OSHA requires documented daily/weekly inspections and competent person certification. Inspection is a life-safety requirement, not optional." />
 
 <WikiMistakeList items={["Underestimating concrete form pressure from rapid placement—high pour rates (bucket hoisting with rapid cycles) increase hydrostatic-like pressure on vertical forms. Design formwork for actual placement rate, not nominal rate.", "Using single-use formwork when reusable coco lumber is available—virgin timber or plastic forms are expensive; conventional reusable timber is economical for 5–10 cycles per set.", "Failing to account for Philippine rainy season on formwork—wet coco lumber swells, warps, and loses strength. Covered storage and drying periods are necessary; schedule contingency is essential.", "Neglecting form pressure calculation in design—fresh concrete is heavy (~2.4 kPa per meter depth). Underestimated support systems fail. Always calculate per ACI 347 and apply safety factors.", "Inadequate fall protection on scaffolding—guardrails, safety nets, or harness systems are mandatory per OSHA. Workers without protection face fatal fall risk. Enforcement is non-negotiable, even in cost-sensitive projects."]} />
+
+## Related Articles
+
+See also within Sustainable and Green Materials: **lea-matl-005-07-core-concept**, **lea-matl-005-08-core-concept**, **lea-matl-005-09-core-concept**, **lea-matl-005-10-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

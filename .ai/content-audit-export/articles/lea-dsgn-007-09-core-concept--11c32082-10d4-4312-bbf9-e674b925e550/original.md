@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Coordinate structural, mechanical, electrical, plumbing, and fire protection systems within the architectural design, identify spatial requirements for each system, resolve system conflicts, and prepare integrated ceiling plans.
+
 Mechanical, electrical, and plumbing (MEP) systems require dedicated space within a building envelope. For the LEA, you must understand how much of your total floor area is consumed by MEP and related support areas — and how to budget for them during architectural planning so usable space is not compromised.
+
 
 ## Core Concept
 
@@ -91,6 +95,13 @@ In the Philippines, MEP space has historically been under-allocated in many proj
 <Tip>
 **“MEP is invisible but not free.”** If you design to an aggressive net-to-gross ratio without reserving enough space for plant, risers, and cores, the “missing” area will reappear later as exposed services, cramped ceilings, and costly revisions. Budget MEP and core space explicitly from day one.
 </Tip>
+
+
+**Exam Tip:** Ceiling plenum depth (typically 600-900mm) accommodates ductwork, piping, and conduit. Coordinate structural depth (+500-800mm) with MEP zone for total floor-to-floor height calculation.
+
+## Cross-References
+
+See **LEA-DSGN-007-06** (Building Integration) for system coordination process, **LEA-DSGN-008-03** (Sprinkler Systems) for fire protection integration, and **LEA-DSGN-009-03** (IAQ) for mechanical ventilation coordination.
 
 ## Common Mistakes
 

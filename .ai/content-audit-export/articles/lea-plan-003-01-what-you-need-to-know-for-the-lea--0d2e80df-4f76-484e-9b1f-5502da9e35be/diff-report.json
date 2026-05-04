@@ -1,38 +1,44 @@
 {
   "article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
   "slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
-  "generated_at": "2026-05-03T13:44:24.965Z",
-  "old_hash": "sha256:baf4d4efd2ff615786d52e961f5d465cb619cdafbf9e55faeff8680cc99b1ccc",
-  "new_hash": "sha256:4323d29dc94fb5720ce486e6cb2c86b5b44fbf596f4f4662992726500cc590ed",
-  "original_hash": "sha256:baf4d4efd2ff615786d52e961f5d465cb619cdafbf9e55faeff8680cc99b1ccc",
-  "normalized_hash": "sha256:a3a177ba7835f1424bfbcd26bf0036cb008cf15d650aa690ccf4f89d34731758",
-  "candidate_hash": "sha256:4323d29dc94fb5720ce486e6cb2c86b5b44fbf596f4f4662992726500cc590ed",
+  "generated_at": "2026-05-04T00:05:58.994Z",
+  "old_hash": "sha256:4323d29dc94fb5720ce486e6cb2c86b5b44fbf596f4f4662992726500cc590ed",
+  "new_hash": "sha256:164e032dbe3dca530843a73622f464413a1035c9cd1d315395d36a72be9d6899",
+  "original_hash": "sha256:4323d29dc94fb5720ce486e6cb2c86b5b44fbf596f4f4662992726500cc590ed",
+  "normalized_hash": "sha256:164e032dbe3dca530843a73622f464413a1035c9cd1d315395d36a72be9d6899",
+  "candidate_hash": "sha256:164e032dbe3dca530843a73622f464413a1035c9cd1d315395d36a72be9d6899",
   "changed": true,
-  "changed_line_count": 150,
-  "inserted_line_count": 5,
+  "changed_line_count": 30,
+  "inserted_line_count": 12,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 2,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 150,
-    "inserted": 5,
+    "changed": 30,
+    "inserted": 12,
     "deleted": 0,
-    "original_line_count": 158,
-    "candidate_line_count": 163
+    "original_line_count": 163,
+    "candidate_line_count": 175
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002"
+    ],
+    "changed_count": 2
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 2 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
 }

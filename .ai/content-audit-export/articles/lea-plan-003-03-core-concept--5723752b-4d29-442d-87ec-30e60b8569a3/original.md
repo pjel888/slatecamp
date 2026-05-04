@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Distinguish housing finance roles — Pag-IBIG (individual buyer loans), SHFC (community-based CMP), NHA (producer, not financier) — and apply Maceda Law (RA 6552) buyer protection provisions to installment payment scenarios.
+
 Housing finance in the Philippines is distributed across multiple agencies with different mandates: **Pag-IBIG** finances individual buyer loans; **SHFC** finances community-based programs; **NHA** builds housing (it does not finance end-buyers). Understanding these roles and the buyer protections under **RA 6552 (Maceda Law)** is essential.
+
 
 ## Core Concept
 
@@ -33,6 +37,13 @@ The Philippine housing finance system reflects the nation's struggle to balance 
 **Pattern 3 — CMP Eligibility:** "Which program allows a community organization collectively to purchase the land they occupy?" → Community Mortgage Program (SHFC). Tests understanding that CMP is community-level, not individual-buyer financing.
 
 <Tip>Maceda Law: < 2 years = grace only (no refund); ≥ 2 years = 50% minimum refund. Grace = 1 month per year paid. NHA builds housing; Pag-IBIG finances buyer loans.</Tip>
+
+
+**Exam Tip:** NHA does NOT finance individual buyer loans. NHA PRODUCES housing. SHFC finances community-based programs via CMP. Pag-IBIG finances individual wage-worker loans. This agency role distinction is frequently tested.
+
+## Cross-References
+
+See **LEA-PLAN-007-03** (Finance Institutions) for Pag-IBIG/SSS/GSIS comparison, **LEA-PLAN-003-01** (Housing Law Framework) for Maceda Law provisions, and **LEA-PLAN-007-01** (NHA) for NHA's non-finance role.
 
 ## Common Mistakes
 

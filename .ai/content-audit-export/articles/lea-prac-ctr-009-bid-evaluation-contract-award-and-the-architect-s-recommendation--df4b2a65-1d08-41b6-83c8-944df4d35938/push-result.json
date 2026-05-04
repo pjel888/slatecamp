@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:23.778Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:44.463Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
   "slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:cefb7f03bef59695f06ee87575f72310feec40bf86ebc21a627748ec49ef4600",
-  "original_hash": "sha256:27d66edfba2245a4f480ee4d9db5366beb896369fcc20001eaba813c0df46e80",
-  "candidate_hash": "sha256:cefb7f03bef59695f06ee87575f72310feec40bf86ebc21a627748ec49ef4600",
-  "stale_check_passed": false,
+  "original_hash": "sha256:cefb7f03bef59695f06ee87575f72310feec40bf86ebc21a627748ec49ef4600",
+  "candidate_hash": "sha256:ed3057ac5c18a39f89c1389ad3cb363a1107d18f4ab2156ee531deb00b1cda92",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:51:49.983809+00:00"
 }

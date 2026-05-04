@@ -1,8 +1,10 @@
 # Widths & Slopes
 
-_All dimensions below are taken or directly derived from your attached PD 1096 IRR + BP 344 2024 IRR amendments._
+## Learning Goal
 
----
+After reading this article, you should be able to:
+
+Calculate minimum required widths for corridors, aisles, exit passageways, and ramps based on occupant load, occupancy group, and accessibility requirements; apply maximum slope ratios for ramps (1:12, 1:15, 1:20) and sidewalk grades; and determine when a ramp is required versus when stairs alone are acceptable.
 
 ## 1. Accessible Ramps (BP 344 – Appendix A)
 
@@ -94,3 +96,33 @@ HANDRAILS (ramp)            → 700 & 900 mm high, both sides
 ```
 
 Use this page to answer any LEA item asking for **minimum widths** or **slopes/lengths** of ramps and primary pedestrian routes based solely on your attached PD 1096 + BP 344 2024 IRR texts.[file:1][file:2]
+
+
+---
+
+<LawCallout code="bp344" section="Section 7 - Widths and Slopes">
+
+
+Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) — no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) — max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: ≥1800 mm in direction of travel.
+
+
+</LawCallout>
+
+<Warn >
+
+1:12 is the MAXIMUM allowable slope, NOT the standard. The exam will present a question stating 'a ramp with 1:12 slope' and ask if it's compliant. The answer depends on context: 1:12 is acceptable ONLY where space constraints prevent 1:15 or 1:20. If the question doesn't mention space constraints, 1:12 may still be technically compliant as a maximum, but 1:20 is the preferred/ideal.
+
+</Warn>
+
+<ExamTip >
+
+Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together — a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.
+
+</ExamTip>
+
+---
+
+## Cross‑References
+
+**Stairs Handrails Guardrails**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Ramp Slope Tiers**, **Site Exterior Circulation**
+

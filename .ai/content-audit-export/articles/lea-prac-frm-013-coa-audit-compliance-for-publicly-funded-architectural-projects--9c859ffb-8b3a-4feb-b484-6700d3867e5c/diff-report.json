@@ -1,38 +1,47 @@
 {
   "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
   "slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects",
-  "generated_at": "2026-05-03T13:44:31.643Z",
-  "old_hash": "sha256:76da6d79d46afd3ee43b8370bfff72c432a69c1bcf57a59f7de3c4cdd3f3a7c3",
-  "new_hash": "sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7",
-  "original_hash": "sha256:76da6d79d46afd3ee43b8370bfff72c432a69c1bcf57a59f7de3c4cdd3f3a7c3",
-  "normalized_hash": "sha256:1be33bed5abcea1db1d0f1673ed8084bed74f2b38f73f758d7cbc6f55da649ef",
-  "candidate_hash": "sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7",
+  "generated_at": "2026-05-04T00:06:05.691Z",
+  "old_hash": "sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7",
+  "new_hash": "sha256:89ecd8a3e56078d7f05cb61576e953405610131ba1430866017309135450913d",
+  "original_hash": "sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7",
+  "normalized_hash": "sha256:89ecd8a3e56078d7f05cb61576e953405610131ba1430866017309135450913d",
+  "candidate_hash": "sha256:89ecd8a3e56078d7f05cb61576e953405610131ba1430866017309135450913d",
   "changed": true,
-  "changed_line_count": 82,
-  "inserted_line_count": 41,
-  "deleted_line_count": 0,
+  "changed_line_count": 50,
+  "inserted_line_count": 0,
+  "deleted_line_count": 6,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 82,
-    "inserted": 41,
-    "deleted": 0,
-    "original_line_count": 47,
-    "candidate_line_count": 88
+    "changed": 50,
+    "inserted": 0,
+    "deleted": 6,
+    "original_line_count": 88,
+    "candidate_line_count": 82
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
 }

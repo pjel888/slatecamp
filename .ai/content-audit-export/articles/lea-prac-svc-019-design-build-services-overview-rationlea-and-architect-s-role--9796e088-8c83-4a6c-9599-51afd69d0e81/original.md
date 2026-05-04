@@ -4,6 +4,8 @@
 
 Design-Build Services represent an alternative delivery method where a single entity assumes responsibility for both design and construction. In any building project, the fundamental elements of time, quality, and cost must be balanced. When this balance presents particular challenges through traditional Design-Bid-Build methods, Design-Build services offer solutions.
 
+<ArticleMedia type="delivery-comparison" caption="Design-Build vs. Design-Bid-Build — Delivery Method Comparison" description="Comparison diagram showing Design-Build (single entity, integrated, overlapping phases, compressed schedule, shared risk) versus traditional Design-Bid-Build (sequential phases, separate design and construction contracts, competitive bidding, longer timeline). Highlights architect role, cost certainty, and schedule implications of each approach." />
+
 ### The Rationlea for Design-Build
 
 in practice, the time-cost-quality triangle is most effectively achieved through Design-Build Services. This delivery method simplifies and expedites the project process while providing creative, cost-effective solutions. The architect's education, training, and expertise qualify the professional to take a direct role in projects from conceptualization through implementation.

@@ -1,38 +1,47 @@
 {
   "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
   "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
-  "generated_at": "2026-05-03T13:44:24.706Z",
+  "generated_at": "2026-05-04T00:05:58.727Z",
   "old_hash": "sha256:17543d82128080d15c2f048c7907a0f86af2cb0915a699abb0944456b18fdf48",
-  "new_hash": "sha256:16f616dc5535be11f1143b6df775246eff056d856c685b1a5f127aad91790d94",
+  "new_hash": "sha256:d6743fe351d9b6aa1d15e3273ceb03a55bc44159f3e2d335d050cb5972eca104",
   "original_hash": "sha256:17543d82128080d15c2f048c7907a0f86af2cb0915a699abb0944456b18fdf48",
-  "normalized_hash": "sha256:6e612efef03614d6eaeaa7bbaef05a44af0fb15926469540e463533a0c93b23d",
-  "candidate_hash": "sha256:16f616dc5535be11f1143b6df775246eff056d856c685b1a5f127aad91790d94",
+  "normalized_hash": "sha256:d6743fe351d9b6aa1d15e3273ceb03a55bc44159f3e2d335d050cb5972eca104",
+  "candidate_hash": "sha256:d6743fe351d9b6aa1d15e3273ceb03a55bc44159f3e2d335d050cb5972eca104",
   "changed": true,
-  "changed_line_count": 52,
+  "changed_line_count": 53,
   "inserted_line_count": 35,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 52,
+    "changed": 53,
     "inserted": 35,
     "deleted": 0,
     "original_line_count": 23,
     "candidate_line_count": 58
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
 }

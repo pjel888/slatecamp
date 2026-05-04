@@ -1,38 +1,44 @@
 {
   "article_id": "73673e43-58fb-4393-a78b-bbfb45c914fb",
   "slug": "mastery-theory-of-architecture",
-  "generated_at": "2026-05-03T13:45:32.614Z",
-  "old_hash": "sha256:7ef13d0b8e370a293ca4595b058815b55e85728835ba66b95c0cdb87c32b302a",
-  "new_hash": "sha256:439f014a844dcef3f8d1e6fec12bb398282913a6a6b9abe2e3b4021835c3eba9",
-  "original_hash": "sha256:7ef13d0b8e370a293ca4595b058815b55e85728835ba66b95c0cdb87c32b302a",
-  "normalized_hash": "sha256:28a0a06cf5fc51991781292be84e390189dfcf17fd0fb5b4d08c46643f9ea991",
-  "candidate_hash": "sha256:439f014a844dcef3f8d1e6fec12bb398282913a6a6b9abe2e3b4021835c3eba9",
+  "generated_at": "2026-05-04T00:07:16.850Z",
+  "old_hash": "sha256:439f014a844dcef3f8d1e6fec12bb398282913a6a6b9abe2e3b4021835c3eba9",
+  "new_hash": "sha256:02a415a6c9fedfe788d44990c2e90dba3822ffb359ec6d15c8cd30f20876280d",
+  "original_hash": "sha256:439f014a844dcef3f8d1e6fec12bb398282913a6a6b9abe2e3b4021835c3eba9",
+  "normalized_hash": "sha256:02a415a6c9fedfe788d44990c2e90dba3822ffb359ec6d15c8cd30f20876280d",
+  "candidate_hash": "sha256:02a415a6c9fedfe788d44990c2e90dba3822ffb359ec6d15c8cd30f20876280d",
   "changed": true,
-  "changed_line_count": 54,
-  "inserted_line_count": 2,
-  "deleted_line_count": 0,
+  "changed_line_count": 87,
+  "inserted_line_count": 0,
+  "deleted_line_count": 1,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 2,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 54,
-    "inserted": 2,
-    "deleted": 0,
-    "original_line_count": 97,
-    "candidate_line_count": 99
+    "changed": 87,
+    "inserted": 0,
+    "deleted": 1,
+    "original_line_count": 99,
+    "candidate_line_count": 98
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0003"
+    ],
+    "changed_count": 2
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 2 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
 }

@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:24.842Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:45.156Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
   "slug": "brutalism",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:382c00675df15c254e1a38c014cd630f5df47b9861d8f23e7ac21edb47859a85",
-  "original_hash": "sha256:2099e1af1713f2b8aeb11c5a0bd411eeaca5bd8cba86cf4c9717cc8c556caa0e",
-  "candidate_hash": "sha256:382c00675df15c254e1a38c014cd630f5df47b9861d8f23e7ac21edb47859a85",
-  "stale_check_passed": false,
+  "original_hash": "sha256:382c00675df15c254e1a38c014cd630f5df47b9861d8f23e7ac21edb47859a85",
+  "candidate_hash": "sha256:5df727a558a39c774b33b54a3ea88df3cc23f6f4c427752780c3b984c2a48ca7",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:51:51.646338+00:00"
 }

@@ -1,38 +1,45 @@
 {
   "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
   "slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
-  "generated_at": "2026-05-03T13:44:32.302Z",
-  "old_hash": "sha256:62a8bd04c9c5a26e8fe53a4f3637adc43869575adb64f608defaa612a1a20230",
-  "new_hash": "sha256:435c9c5ada49088109b668976e8a7ffe2a6b8b6e5ff0e5d731a59475c7d4160b",
-  "original_hash": "sha256:62a8bd04c9c5a26e8fe53a4f3637adc43869575adb64f608defaa612a1a20230",
-  "normalized_hash": "sha256:de96b6721bc181c460d9e1f460b6a9283c999db04bdd3df9c486102753828be2",
-  "candidate_hash": "sha256:435c9c5ada49088109b668976e8a7ffe2a6b8b6e5ff0e5d731a59475c7d4160b",
+  "generated_at": "2026-05-04T00:06:06.585Z",
+  "old_hash": "sha256:435c9c5ada49088109b668976e8a7ffe2a6b8b6e5ff0e5d731a59475c7d4160b",
+  "new_hash": "sha256:1380a0ffa6b479b779eb29ace5bd5855d1ec775db75f535be7974de5e0315835",
+  "original_hash": "sha256:435c9c5ada49088109b668976e8a7ffe2a6b8b6e5ff0e5d731a59475c7d4160b",
+  "normalized_hash": "sha256:1380a0ffa6b479b779eb29ace5bd5855d1ec775db75f535be7974de5e0315835",
+  "candidate_hash": "sha256:1380a0ffa6b479b779eb29ace5bd5855d1ec775db75f535be7974de5e0315835",
   "changed": true,
-  "changed_line_count": 139,
-  "inserted_line_count": 21,
-  "deleted_line_count": 0,
+  "changed_line_count": 140,
+  "inserted_line_count": 0,
+  "deleted_line_count": 1,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 139,
-    "inserted": 21,
-    "deleted": 0,
-    "original_line_count": 146,
-    "candidate_line_count": 167
+    "changed": 140,
+    "inserted": 0,
+    "deleted": 1,
+    "original_line_count": 167,
+    "candidate_line_count": 166
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

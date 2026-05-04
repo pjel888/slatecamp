@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Trusses are skeletal structures composed of members arranged in triangular patterns to span long distances with minimal self-weight. Understanding truss member names, types, and the zero-force member concept is essential for structural analysis and LEA success.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-002-05-core-concept" a type="image" caption="Truss Types — Warren, Pratt, and Howe Comparison" description="Three-panel diagram comparing: (1) Warren truss — equilateral triangles, diagonals alternate in tension/compression; (2) Pratt truss — diagonals slope downward toward center (tension), verticals in compression; (3) Howe truss — diagonals slope upward toward center (compression), verticals in tension. Each panel shows member force labels (T/C), typical span range, and common application. Zero-force member identification rules illustrated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A **truss** is a structural system of straight members connected at joints (usually pinned connections) that form triangles. Trusses are efficient because triangles cannot change shape without changing member lengths, providing inherent rigidity and allowing members to carry primarily axial loads (tension or compression) rather than bending moments.
 
@@ -61,8 +62,7 @@ In the Philippines, roof trusses (Warren or Pratt types) are common in agricultu
 
 **Apply-level:** Given a truss with specific loading, identify zero-force members using equilibrium equations.
 
-<Tip>**Memory aid:** "Chord connects, verticals connect, diagonals brace." Pratt has "inward diagonals" (think Pratt ≈ inward pointing). Zero-force: **two collinear, third bye-bye**; **two non-collinear, one zero**.</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Related Articles
 
@@ -70,6 +70,6 @@ See also: **Space Frames** (lea-strc-002-06) for the 3D extension of trusses, **
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 
-<WikiMistakeList mistakes={["Confusing chord (boundary member) with diagonal members—chords form the truss outline","Assuming all members are necessary in all load cases; zero-force members are valid and should be recognized but may not always carry load","Misidentifying Pratt vs Howe—Pratt: diagonals slope inward from bottom (compression); Howe: outward (tension in diagonals)"]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

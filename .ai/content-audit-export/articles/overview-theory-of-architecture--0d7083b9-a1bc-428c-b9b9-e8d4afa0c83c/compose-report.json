@@ -1,18 +1,28 @@
 {
   "article_id": "0d7083b9-a1bc-428c-b9b9-e8d4afa0c83c",
   "slug": "overview-theory-of-architecture",
-  "generated_at": "2026-05-03T13:44:11.262Z",
-  "original_hash": "sha256:73d9e268e1899af2c0c1704e136fcd4d0467019a4b34fe1ed3b2be4a8a4b3c46",
-  "normalized_hash": "sha256:580a5631408904fa50e2db473b30bf3b3ab1550c20a3088cba9ad6240f52ef89",
-  "candidate_hash": "sha256:fd11130bedab794d2dfc828ec2c32659b9fe061b08162b546e009af30d4b937b",
+  "generated_at": "2026-05-04T00:05:38.543Z",
+  "original_hash": "sha256:fd11130bedab794d2dfc828ec2c32659b9fe061b08162b546e009af30d4b937b",
+  "normalized_hash": "sha256:89615432f5cac8038622260ac7cb8fbacd43735a062b7d9366fdac0493afb56a",
+  "candidate_hash": "sha256:89615432f5cac8038622260ac7cb8fbacd43735a062b7d9366fdac0493afb56a",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition."
+  ]
 }

@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification
 
-Generated: 2026-05-03T13:45:24.606Z
+Generated: 2026-05-04T00:07:06.764Z
 Article ID: f95d5cc8-30d4-4f74-890f-1018d764da6e
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:ca5e78e115eb3d900542ebeb5d34748e00cec43c456949f93e682c3e3f456c5d`
-- Normalized: `sha256:b1d8c05abc8e506cf40ac044b087ff6e401b4b44fce5ebc1af311721515c6bf5`
-- Candidate: `sha256:821464af23d860a489333876c252ed37e463a7ee0c7367baacf03cab6ef4bb14`
+- Original: `sha256:80459e5fb100bfaac22e8454bfbc2729a50e54911aa1480e1a4fea603323622c`
+- Normalized: `sha256:78b9daa8b5146ef71402d6bc601fd04dd9117b8847926506e0fbfa7dcf8cb13d`
+- Candidate: `sha256:78b9daa8b5146ef71402d6bc601fd04dd9117b8847926506e0fbfa7dcf8cb13d`
 
 ## Line summary
 
-- Changed lines: 79
-- Inserted lines: 43
-- Deleted lines: 0
+- Changed lines: 72
+- Inserted lines: 0
+- Deleted lines: 10
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks expected: 3
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Concrete volume and mix computation is the foundational skill for estimating material costs on any project. You must calculate cubic meters of concrete required, then sclea cement, aggregate, and water proportions using the ACI 211.1 method standard in Philippine construction.
-
+Calculate concrete volume in cubic meters from building dimensions, convert to mix design proportions to determine cement bags, sand, and gravel quantities, and apply waste factors (5-10%) for construction estimating.
 ## Core Concept
 
 Concrete volume is the three-dimensional space the concrete will occupy. The simplest method is length × width × height in meters. For mix computation, once you know the total volume, you apply the ACI 211.1 proportioning method to determine how much cement, fine aggregate (sand), coarse aggregate (gravel), water, and admixtures are needed per cubic meter. The ACI method uses absolute volumes, meaning the sum of volumes of individual materials equals the target concrete volume.
@@ -100,7 +100,7 @@ Standard slump tolerance in the Philippines is 75–100 mm for stiff concrete (s
 
 On the LEA, you will encounter:
 
-1. **Volume-only problems**: Given dimensions in meters, calculate cubic meters, then sclea a single ingredient (cement, water, aggregate). Often tested as "How many bags of cement for a 10 m × 5 m × 0.15 m slab at 7.8 bags/m³?"
+1. **Volume-only problems**: Given dimensions in meters, calculate cubic meters, then scale a single ingredient (cement, water, aggregate). Often tested as "How many bags of cement for a 10 m × 5 m × 0.15 m slab at 7.8 bags/m³?"
 
 2. **Mix design scaling**: Given a base mix (e.g., 1:2:3 ratio or 300 kg/m³ cement) and total volume, calculate total amounts.
 
@@ -123,3 +123,10 @@ On the LEA, you will encounter:
 <WikiMistakeCard mistake="Using weight-based mix ratios (1:2:3 by weight) without converting to volumes" correction="ACI 211.1 uses absolute volumes. Always convert weight ratios to volume by dividing by material density." />
 
 <WikiMistakeList mistakes={["Confusing slump (workability) with the actual concrete thickness required", "Not accounting for aggregate gradation and its effect on paste volume", "Forgetting that total concrete weight includes all four ingredients (cement, water, coarse, fine)", "Using the same mix design for both structural and non-structural elements"]} />
+
+## Related Articles
+
+See also within Estimating Quantities and Material Computation: **lea-matl-010-02-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-04-core-concept**, **lea-matl-010-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

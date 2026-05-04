@@ -1,18 +1,24 @@
 {
   "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
   "slug": "lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application",
-  "generated_at": "2026-05-03T13:44:10.855Z",
-  "original_hash": "sha256:f67e6a4ba09c2207f6464b7ecd8fec56ab9643af1c1c2a051518a8c138828196",
-  "normalized_hash": "sha256:8c19a0fe08769c57bf3b8c58dfb7e06e983ad22402456048e3f17425e0ff5bf2",
-  "candidate_hash": "sha256:3ff8d97be1c4c3c1b864b03846d2bf47109f5c471d7709126d7c3116cadc6785",
-  "ui_blocks_count": 3,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "generated_at": "2026-05-04T00:05:38.052Z",
+  "original_hash": "sha256:7dcc3c942b6e84548e2a2ec3baf1568d0e799cf967522b510583af70532c2fd2",
+  "normalized_hash": "sha256:61c5118bad85f97f09b815444c07c9f1b15701f71830cf2f971617b0afc97995",
+  "candidate_hash": "sha256:61c5118bad85f97f09b815444c07c9f1b15701f71830cf2f971617b0afc97995",
+  "ui_blocks_count": 2,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

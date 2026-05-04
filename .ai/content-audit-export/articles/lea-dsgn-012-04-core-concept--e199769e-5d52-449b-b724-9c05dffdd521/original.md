@@ -1,7 +1,11 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Integrate plants, hardscapes, water features, and spatial organization into outdoor environments, select appropriate plant materials for Philippine tropical conditions, apply zoning strategies for landscape areas, and coordinate hardscape with softscape.
+
 Landscape architecture integrates plants, hardscapes, water features, and spatial organization to create outdoor environments that enhance site functionality, aesthetics, and ecological health.
 Understanding plant selection, zoning strategies, and the relationship between hardscape and softscape is essential to comprehensive site planning.
+
 
 ## Core Concept
 
@@ -138,6 +142,13 @@ Identify distinct functional zones (gathering, activity, buffer, circulation) an
   tropical adapted, less irrigation, higher resilience. Hardscape + softscape =
   balanced design. Bioretention = stormwater + green space synergy.
 </Tip>
+
+
+**Exam Tip:** Plant selection criteria: Philippine climate (tropical wet/dry), microclimate (sun/shade/wind), soil conditions (pH/drainage), maintenance level, mature size (don't overplant), and root system (avoid foundation damage).
+
+## Cross-References
+
+See **LEA-PLAN-005-01** (Landscape Design) for landscape fundamentals, **LEA-PLAN-005-02** (Native Species) for Philippine plant selection, and **LEA-DSGN-012-02** (Site Development) for landscape in site planning.
 
 ## Common Mistakes
 

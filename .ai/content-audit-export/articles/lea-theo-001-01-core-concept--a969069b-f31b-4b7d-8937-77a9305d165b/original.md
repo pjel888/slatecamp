@@ -4,6 +4,11 @@
 Architecture is fundamentally unique because it simultaneously demands three distinct capacities: **artistic vision** to create beauty, **scientific precision** to ensure structural integrity and environmental performance, and **social commitment** to serve human needs and community welfare. The LEA tests this triple nature through questions about definition, design synthesis, and professional responsibility.
 </Callout>
 
+
+## Learning Goal
+
+Understand that architecture uniquely integrates artistic vision, scientific precision, and social responsibility as simultaneous and inseparable requirements of design.
+
 ## Core Concept
 
 ### The Triple Nature of Architecture
@@ -133,3 +138,12 @@ The most critical distinction: Architecture is not about choosing between art, s
 **Social Contract of Architecture** — The ethical obligation that architects design buildings and spaces that serve the public interest, advance equity, and support human flourishing, not merely individual or client interests.
 
 **Synthesis** — The simultaneous integration of artistic, scientific, and social dimensions within a single design, rather than treating them as separate concerns.
+
+<Tip>**LEA Memory Aid:** When analyzing any building scenario, run the **Triple-S test**: Is it Structurally sound (science)? Does it Serve its purpose (utility)? Is it Sublime (art)? All three must pass — any failure is architectural failure.</Tip>
+
+## Related Articles
+
+See also within Nature of Architecture: **lea-theo-001-07-core-concept**, **lea-theo-001-08-core-concept**, **lea-theo-001-09-core-concept**, **lea-theo-001-10-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

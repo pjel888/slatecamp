@@ -17,13 +17,11 @@ Identify the construction, ventilation, and fire protection requirements for she
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
-[/SLATECAMP_UI_BLOCK]
 
 A fire safety engineer inspects a new automotive refinishing shop in Caloocan. The spray booth uses a standard exhaust fan with steel blades, the motor is mounted inside the duct plenum, and the booth front opening measures 1.2 sq.m — with no fire curtain. The lighting fixtures are standard incandescent units set directly into the booth ceiling without glass panels. In thirty seconds of reading the plans, you can count four violations of Rule XVII. The LEA board exam will test whether you can catch every one of them.
 
@@ -338,15 +336,13 @@ The Philippine tropical climate introduces specific design considerations not ad
 The number sequence — **2 and 8** — doubles from one requirement to the next. If you remember "2 and 8," you will never mix up the two discharge clearances. Add the qualifier: **"from the gate"** to remind you this applies to the discharge point (the end of the exhaust duct), not to the booth itself.
 
  component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
-[/SLATECAMP_UI_BLOCK]
+<Note>
+**LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
+</Note>
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -461,3 +457,5 @@ Return to this module in 3 days. If you can answer the Active Recall questions w
 
 **Plastics In Construction**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Electrical And Mechanical Regulations**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

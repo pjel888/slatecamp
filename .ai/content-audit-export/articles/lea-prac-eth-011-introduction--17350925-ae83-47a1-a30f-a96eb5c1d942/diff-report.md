@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-eth-011-introduction
 
-Generated: 2026-05-03T13:45:14.387Z
+Generated: 2026-05-04T00:06:54.679Z
 Article ID: 17350925-ae83-47a1-a30f-a96eb5c1d942
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:fb82e9490d4907bd29d7e91d98db1d239c73acfa8fb9c45529cf9ee91d3995d8`
-- Normalized: `sha256:827bdf1cfceb7f78043e546ec4f56d284588e67c62204cde9b64873c25d11aec`
-- Candidate: `sha256:fcb1e948239a105df5328a76478f14eb1d3fa2791d29a8de28c81ca596285402`
+- Original: `sha256:d5d6ba87071476022fe84c93aedc7094b3094a38e6a3bbc49d542f977bf18007`
+- Normalized: `sha256:7086cfd12006f99027e963c6d3aaf724c4936005de1fb6378425d91e85a38bf8`
+- Candidate: `sha256:7086cfd12006f99027e963c6d3aaf724c4936005de1fb6378425d91e85a38bf8`
 
 ## Line summary
 
-- Changed lines: 303
-- Inserted lines: 16
-- Deleted lines: 0
+- Changed lines: 333
+- Inserted lines: 0
+- Deleted lines: 53
 
 ## UI block preservation
 
 - UI blocks expected: 9
-- UI blocks preserved: 9
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 9
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 9 preserved UI block(s).
 
 ## Warnings
 

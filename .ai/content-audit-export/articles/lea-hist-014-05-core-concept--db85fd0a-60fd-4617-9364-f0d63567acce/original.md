@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your understanding of the **International Style** (1920s–1970s), **American modernist masters** (**Mies van der Rohe**, **I.M. Pei**, **Louis Kahn**, **Eero Saarinen**), and the evolution toward **Postmodernism** (1970s–1990s). Questions focus on design principles (minimalism, structural rationalism, universal design), key buildings, and the philosophical tension between modernist ideals and human experience that led to postmodern critique.</Callout>
+## Learning Goal
 
+Identify the International Style in the United States — glass and steel towers, universal space, curtain wall, rejection of ornament — as exemplified by Mies van der Rohe (Lake Shore Drive, Seagram) and its influence on postwar corporate architecture.
 ## Core Concept
 
 **International Style** modernism emerged in 1920s Europe but flourished in post-World War II America. The principle was universal: good design transcends culture, geography, and individual expression. A building in New York should use the same principles as a building in Tokyo. Rationalism, efficiency, and structural honesty produce timeless beauty. Applied ornament is rejected; form derives purely from function and structure.
@@ -18,7 +19,7 @@
 
 **Eero Saarinen** (1910–1961) designed sculptural modernism: the **TWA Terminal** (New York, 1962) is a concrete shell shaped like a bird in flight. The **Gateway Arch** (St. Louis, 1965) is a weighted (inverted) catenary curve 630 feet tall—pure form, no function except to commemorate. Saarinen showed modernism could be expressive and emotional while remaining rigorously geometric.
 
-By 1970s, modernism faced critique. Buildings were functionally excellent but emotionally cold. Plazas were empty. Modernist urbanism had created anonymous environments. **Postmodernism** (1970s–1990s) rejected modernist austerity, reintroducing ornament, historical reference, color, and human sclea. **Philip Johnson's** AT&T Building (New York, 1984) looks like a Chippendlea dresser—a postmodern joke against modernist severity. **Robert Venturi** championed complexity and contradiction. **Michael Graves** used bright color and figurative ornament.
+By 1970s, modernism faced critique. Buildings were functionally excellent but emotionally cold. Plazas were empty. Modernist urbanism had created anonymous environments. **Postmodernism** (1970s–1990s) rejected modernist austerity, reintroducing ornament, historical reference, color, and human scale. **Philip Johnson's** AT&T Building (New York, 1984) looks like a Chippendlea dresser—a postmodern joke against modernist severity. **Robert Venturi** championed complexity and contradiction. **Michael Graves** used bright color and figurative ornament.
 
 <Warn>Critical distinction: Postmodernism is not mere rejection or irony—it critiques modernism's claim to universal truth. Multiple meanings, historical reference, and cultural specificity coexist. Venturi's "complexity and contradiction" and Johnson's AT&T Building are serious critiques, not frivolous decoration. Postmodernism asks: Can design be culturally specific without abandoning modernist rigor?</Warn>
 
@@ -29,22 +30,19 @@ Contemporary architecture (1990s–present) synthesizes lessons: modernist ratio
 <WikiExamTable headers={["Building", "Architect", "Year", "Location", "Style", "Significance"]} rows={[['["**Barcelona Pavilion**", "Mies van der Rohe", "1929", "Barcelona", "International Style", "Minimal steel and marble; floating planes; weightless"]', '["**Seagram Building**", "Mies van der Rohe & Philip Johnson", "1958", "New York", "International Style", "Bronze-clad frame; grid facade; pure rationalism; plaza"]', '["**Salk Institute**", "Louis Kahn", "1965", "La Jolla", "Modernism", "Travertine plaza; monumental symmetry; sublime geometry"]', '["**National Assembly Building**", "Louis Kahn", "1962-1982", "Dhaka", "Modernism", "Geometric forms; red brick; monumental postcolonial architecture; Kahn died 1974 before completion"]', '["**East Building, National Gallery**", "I.M. Pei", "1978", "Washington, DC", "Modernism", "Triangular form; geometric purity; complex interior spaces"]', '["**TWA Terminal**", "Eero Saarinen", "1962", "New York", "Modernism", "Shell concrete; sculptural form; bird-like expression"]', '["**Gateway Arch**", "Eero Saarinen", "1965", "St. Louis", "Modernism", "Weighted catenary curve; monumental sclea; commemorative sculpture"]', '["**AT&T Building**", "Philip Johnson", "1984", "New York", "Postmodern", "Chippendlea crown; ornamental; ironic historical reference"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: International Style Principles**
 Questions ask you to identify minimalism, structural rationalism, and rejection of ornament in building photographs. You explain Mies's "less is more" and why modernists believed universal design transcends culture. You distinguish International Style from other modernisms.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Modernist Masters**
 Questions present buildings by Kahn, Pei, or Saarinen and ask you to identify their approach: Kahn pursues monumental geometry, Pei pursues crystalline forms, Saarinen pursues sculptural expression. You explain their philosophical differences while recognizing shared commitment to geometric purity and structural honesty.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Postmodern Critique**
 Questions ask why postmodernism rejected modernism: modernist buildings lacked human warmth, plazas were empty, universal principles ignored local culture. You explain postmodern return to ornament, historical reference, and color. You analyze AT&T Building as ironic rejection of modernist severity.</ExamTip>
-
 
 <ExamTip>**Pattern 4: Contemporary Synthesis**
 Questions ask how contemporary architecture responds to modernism and postmodernism. You explain that contemporary architecture accepts modernist environmental responsibility and rationality but rejects universalism; it accepts postmodern cultural specificity but rejects irony; it pursues authentic expression rooted in place and material.</ExamTip>
 
+<Callout>The LEA tests your understanding of the **International Style** (1920s–1970s), **American modernist masters** (**Mies van der Rohe**, **I.M. Pei**, **Louis Kahn**, **Eero Saarinen**), and the evolution toward **Postmodernism** (1970s–1990s). Questions focus on design principles (minimalism, structural rationalism, universal design), key buildings, and the philosophical tension between modernist ideals and human experience that led to postmodern critique.</Callout>
 
 ## Common Mistakes
 
@@ -54,7 +52,6 @@ Questions ask how contemporary architecture responds to modernism and postmodern
 
 <WikiMistakeList mistakes={["Forgetting that Kahn and Saarinen are modernist. Students separate Kahn and Saarinen from \"real modernism,\" calling them sculptural or romantic. They ARE modernist: they reject applied ornament, pursue geometric purity, and believe structure expresses form. They simply allow emotion and monumentality that Mies rejected. Distinguish \"rational modernism\" (Mies) from \"monumental modernism\" (Kahn) or \"sculptural modernism\" (Saarinen).", "Saying contemporary architecture rejects postmodernism. Students think contemporary = returning to modernism. Contemporary architecture learned from both: modernism's environmental rigor and geometric discipline, postmodernism's skepticism of universalism and embrace of cultural specificity. Contemporary is synthesis, not swing back."]} />
 
-
 ## Key Terms
 
 **International Style** — Modernist design philosophy pursuing universal principles independent of culture, geography, or individual expression; emphasizes structural rationalism and rejection of applied ornament.
@@ -63,12 +60,19 @@ Questions ask how contemporary architecture responds to modernism and postmodern
 
 **Structural Rationalism** — Design where form derives directly from structure and function; no applied decoration or historical reference disguises the building's logic.
 
-**Minimalism** — Design aesthetic limiting elements to essentials; pursued in modernist architecture through simplified forms, restricted color pleattes, and rational repetition.
+**Minimalism** — Design aesthetic limiting elements to essentials; pursued in modernist architecture through simplified forms, restricted color palettes, and rational repetition.
 
-**Monumental Modernism** — Modernism emphasizing sclea, geometric purity, and emotional impact (Kahn, Saarinen) rather than minimal austerity; remains structurally and formally rigorous.
+**Monumental Modernism** — Modernism emphasizing scale, geometric purity, and emotional impact (Kahn, Saarinen) rather than minimal austerity; remains structurally and formally rigorous.
 
 **Sculptural Modernism** — Modernism expressing geometric forms as sculptural objects (Saarinen's TWA Terminal, Gateway Arch); structural form becomes aesthetic expression.
 
-**Postmodernism** — Architectural movement (1970s–1990s) critiquing modernism's austerity and universalism; reintroduced ornament, historical reference, color, and human sclea.
+**Postmodernism** — Architectural movement (1970s–1990s) critiquing modernism's austerity and universalism; reintroduced ornament, historical reference, color, and human scale.
 
 **Contextual Architecture** — Contemporary approach integrating buildings with local geography, climate, culture, and existing structures; rejects modernism's universal principles while accepting environmental responsibility.
+
+## Related Articles
+
+See also within United States Architecture: **lea-hist-014-01-core-concept**, **lea-hist-014-02-core-concept**, **lea-hist-014-03-core-concept**, **lea-hist-014-04-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

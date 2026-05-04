@@ -1,18 +1,34 @@
 {
   "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
   "slug": "pd-1096-rule-vii-occupancy",
-  "generated_at": "2026-05-03T13:44:10.766Z",
-  "original_hash": "sha256:73a386dbb3f5ff4be6b868ad0d9222ccd39aed9c176b7f77b156e7a3aea469d7",
-  "normalized_hash": "sha256:4a9c5ea72a5698a9ee32d184700afe579cdcf7291c4a6e49ab373dfab538e8d0",
-  "candidate_hash": "sha256:7dcebfd7f54af46c111455b9f3b7a0ff4e4488e8b2235e4efb2069eb02b4b275",
+  "generated_at": "2026-05-04T00:05:37.951Z",
+  "original_hash": "sha256:39c9f2f9015939ed78f6a5b4b048bb094d1e334e0e341fb9c932a86ffdb7a191",
+  "normalized_hash": "sha256:2c59a07fa0ef8ca40d774b7aad08e36cd755892cd388708a66aa1520ba82c777",
+  "candidate_hash": "sha256:2c59a07fa0ef8ca40d774b7aad08e36cd755892cd388708a66aa1520ba82c777",
   "ui_blocks_count": 7,
-  "placeholders_found": 7,
-  "placeholders_resolved": 7,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 7,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006",
+    "ui_0007"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition.",
+    "UI block ui_0007 was not used during composition."
+  ]
 }

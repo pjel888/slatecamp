@@ -5,6 +5,12 @@
 **Difficulty:** Moderate — Heavily Metric & Detail-Oriented
 **Spaced Repetition:** Return in 3 days to redraw the walkway cross-section from memory, then again in 7 days to recite all dimensions without this page.
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the minimum requirements for pedestrian protection during construction under PD 1096 Rule XXI (Sections 2101-2107): covered walkways, barricades, lighting, and warnings; calculate minimum walkway width, height, and load capacity; and determine when a construction fence versus a pedestrian gallery is required based on building height and site conditions.
+---
 ---
 
 ## The Real-World Hook
@@ -68,7 +74,7 @@ The provision also applies when **no sidewalk exists** — a crucial clause for 
 
 ### Principle 4: The Three Layers of Pedestrian Protection (Sec. 1106)
 
-Section 1106 is the centerpiece of Rule XI and describes three distinct protection systems that apply in different site conditions. These three systems — **railings, fences, and canopies** — work at different scleas and serve different hazard profiles.
+Section 1106 is the centerpiece of Rule XI and describes three distinct protection systems that apply in different site conditions. These three systems — **railings, fences, and canopies** — work at different scales and serve different hazard profiles.
 
 **(a) When is protection required?** Per the general provision, pedestrian traffic shall be protected:
 1. By a **railing on the street side** when the walkway extends into the roadway (i.e., when construction has pushed the pedestrian path off the sidewalk into the lane of traffic).
@@ -94,7 +100,7 @@ The canopy (also called a "shed" or "covered walkway" in practice) addresses the
 
 2. **Structural safety:** The canopy must be **structurally safe.** Given the live load it may receive from workers walking on top or stored materials, the canopy deck should be engineered and not cobbled together from recycled form lumber.
 
-3. **Materials on top — the curb board rule:** When materials are stored on top of a canopy, a **tight curb board not less than 300 mm high** shall be installed on all edges. This prevents materials from rolling or being kicked off the canopy onto pedestrians below. The 300 mm (30 cm) curb is a physical stop — the functional equivleant of a tool-safety barrier.
+3. **Materials on top — the curb board rule:** When materials are stored on top of a canopy, a **tight curb board not less than 300 mm high** shall be installed on all edges. This prevents materials from rolling or being kicked off the canopy onto pedestrians below. The 300 mm (30 cm) curb is a physical stop — the functional equivalent of a tool-safety barrier.
 
 4. **Solid fence on construction side:** The construction-facing side of the canopy walkway shall have a solid fence (the same 2.40 m fence described in (c)) to prevent debris from entering the pedestrian path from the work side.
 
@@ -208,6 +214,26 @@ Articles **694–707 of the Civil Code of the Philippines** govern nuisances. A 
 
 ---
 
+<LawCallout code="pd1096" section="Rule I - Pedestrian Protection">
+
+
+Rule XI, Sec. 1101-1108: Three critical dimensions — (1) Walkway: min 1.20 m clear width, can carry 650 kg/m² live load. (2) Fence/hoarding: min 2.40 m height. (3) Railing: min 1.00 m height with mid-rail at 450 mm. The curb board (300 mm min) prevents debris from spilling onto the walkway.
+
+
+</LawCallout>
+
+<ExamTip>
+
+LEA Pattern: Questions test specific Rule XI dimensions. Memorize the '1.20-2.40-1.00' triplet (walkway width, fence height, railing height). For excavation protection: the walkway must extend the full length of the excavation with a handrail on the street side if within 1.20 m of vehicular traffic.
+
+</ExamTip>
+
+<Warn>
+
+⚠️ Common Violation: Contractors often place construction materials (mixers, rebar, sand) directly on the walkway. Sec. 1102 prohibits this — the walkway must remain clear and unobstructed for pedestrians. Any obstruction requires separate Building Official authorization.
+
+</Warn>
+
 ## Mnemonic Devices
 
 ### Mnemonic 1: "**W-R-F-C**" — The Four Pedestrian Protection Structures
@@ -306,6 +332,14 @@ On a commercial renovation project in Intramuros, the contractor sets up a drum 
 > *LEA Area: Building Laws, Codes & Ethics / Building Technology*
 
 ---
+
+
+
+---
+
+## Cross‑References
+
+**Dangerous And Ruinous Buildings**, **Building Permit Process**, **Legal Liability And Enforcement Workflow**, **Site Exterior Circulation**
 
 ## Verified Sources
 

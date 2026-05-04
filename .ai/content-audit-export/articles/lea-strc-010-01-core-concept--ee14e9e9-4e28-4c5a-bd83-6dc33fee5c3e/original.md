@@ -1,6 +1,15 @@
 ## What You Need to Know for the LEA
 
-## What You Need to Know for the LEA
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Define masonry joint types: bed joint, head joint, collar joint
+- Define wythe, cell, and bond in masonry construction
+- Identify common bond patterns: running, stack, Flemish, English
+- Explain how bond patterns affect lateral resistance
+
+---
 Masonry construction relies on precise terminology for joints, unit arrangement, and bonding patterns. Understanding bed joints, head joints, collar joints, wythes, cells, and bond types is essential for specifying, inspecting, and designing masonry structures per NBP/LEA requirements.
 
 ## Core Concept
@@ -59,6 +68,13 @@ _A concrete hollow block with three cells per unit is selected for a four-story 
 _Memory aid_: **"BC WJC"** — **B**ond patterns (running, Flemish, English), **C**ells (vertical spaces in units), **W**ythes (leaf sections), **J**oints (bed, head, collar), **C**avity walls (air space). Memorize cavity wall minimum air space: **51 mm**. English bond = maximum header tie = seismic zones.
 </Tip>
 
+
+## Related Articles
+
+See also: **Masonry Units** (lea-strc-010-02) for block and brick types, **Bearing Walls** (lea-strc-002-04) for masonry bearing wall applications, and **Concrete Materials** (lea-strc-006-01) for grout and mortar properties.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing a collar joint with a head joint—collar joints exist _between_ wythes; head joints exist _within_ a single wythe.","Assuming stack bond is acceptable for lateral load resistance—stack bond is restricted to non-seismic, architectural applications only.","Treating cell voids as equivleant to cavity walls—cells are internal voids in individual units; cavities are air spaces between two wythes.","Specifying cavity wall air space outside the 51–114 mm range—thinner cavities reduce insulation; thicker spaces are wasteful and violate NBP limits.","Omitting header courses in multi-wythe masonry—without headers, the two wythes function independently and do not act as a composite wall."]} />

@@ -7,24 +7,20 @@ Apply recommended illumination levels (lux) by space type per the Philippine Lig
 
 Illumination is measured in _lux_ (lumens per square meter). Each space type has distinct requirements based on visual task complexity and occupancy safety needs.
 
+<ArticleMedia id="media-lea-util-006-05-recommended-illumination" a type="image" caption="Recommended Illumination Levels — Office, Classroom, Hospital, Retail, Parking" description="Reference chart showing lux levels by space type per IES standards: Office general (300-500 lux), Office task (500-750 lux), Classroom (300 lux), Laboratory (500 lux), Hospital ward (100 lux), Operating room (10,000-100,000 lux), Corridor (100 lux), Stairway (150 lux), Retail general (300-500 lux), Covered parking (50-75 lux), Emergency (10 lux). LPD limits (W/m²) per ASHRAE 90.1 and Philippine Energy Efficiency Standards overlaid." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 ### Office Spaces
 
 Office general work areas require **300–500 lux** according to IES (Illuminating Engineering Society) standards. General tasks such as reading printed documents, computer-based work at standard distances, and conference activities fall within this range. Office task areas—where detailed work occurs, such as engineering drawings, medical record entry, or precision assembly—require **500–750 lux** per IES and ASHRAE 90.1 recommendations. The higher illumination supports sustained visual accuracy over extended periods.
 
 ### Educational Facilities
 
+[SLATECAMP_UI_BLOCK:ui_0004 component="KeyValues" status="preserved"]
 
-<KeyValues items=[{"value": "300-500 lx", "label": "Office Work"}, {"value": "100-200 lx", "label": "Lobby/Corridor"}, {"value": "50-100 lx", "label": "Parking"}, {"value": "750-1000 lx", "label": "Detailed Work"}] />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 
-
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
-
-
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 Classrooms require **300 lux** minimum per IES standards for reading printed materials, viewing instructional aids, and board visibility. Laboratory spaces, where precision measurements, specimen examination, and chemical analysis occur, demand **500 lux** per IES guidelines to ensure accuracy and prevent errors.
 
@@ -92,9 +88,7 @@ Compliance with PD 1096 Rule VIII and Philippine Energy Efficiency Standards req
 
 Illumination levels range from 10 lux (emergency) to 100,000 lux (surgical field) depending on occupancy and task. Office general areas require 300–500 lux; task areas 500–750 lux. Retail and industrial spaces follow IES guidelines specific to merchandise type and object characteristics. Healthcare facilities demand high CRI (90+) and cool color temperature for accurate clinical assessment. Parking areas operate at lower illumination (20–75 lux) due to reduced visual complexity. Uniformity ratios (0.6–0.7) prevent dark zones. LPD limits ensure energy efficiency without sacrificing visibility. Designers achieving compliance combine appropriate illumination with CRI, color temperature, uniformity, and power density control, supported by PD 1096 and Philippine Energy Efficiency Standards requirements.
 
-<MDXComponent type="callout" variant="info" title="Key Takeaway">
-Philippine building codes require minimum illumination levels specific to occupancy type, supported by quality metrics (CRI, color temperature, uniformity). Designers must verify lux levels meet IES standards, quality metrics match occupancy needs, and installed power stays within LPD limits to achieve both safety and energy efficiency.
-</MDXComponent>
+[SLATECAMP_UI_BLOCK:ui_0001 component="MDXComponent" status="preserved"]
 
 ## Related Articles
 

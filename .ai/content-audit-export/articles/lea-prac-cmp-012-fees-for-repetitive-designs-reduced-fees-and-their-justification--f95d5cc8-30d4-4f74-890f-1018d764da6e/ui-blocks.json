@@ -5,37 +5,9 @@
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:ca5e78e115eb3d900542ebeb5d34748e00cec43c456949f93e682c3e3f456c5d",
   "normalized_content_hash": "b1d8c05abc8e506cf40ac044b087ff6e401b4b44fce5ebc1af311721515c6bf5",
-  "ui_block_count": 4,
+  "ui_block_count": 3,
   "total_blocks": 3,
   "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "JSX",
-      "raw": "<JSX name='ArticeHeader' article='LEA-PRAC-CMP-012' />",
-      "raw_hash": "sha256:cdd76cb41f530048116403fdbee57bccdbc724096327038de156a060a4ec6c7a",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"JSX\" status=\"preserved\"]\nExtracted summary:\n- Props: name=\"ArticeHeader\", article=\"LEA-PRAC-CMP-012\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:2f3a140b4c019deb11c83b4449d9a190b92560b4ac39918b4a929ad0f55de283",
-      "props": {
-        "name": "ArticeHeader",
-        "article": "LEA-PRAC-CMP-012"
-      },
-      "props_json": {
-        "name": "ArticeHeader",
-        "article": "LEA-PRAC-CMP-012"
-      },
-      "props_text": "name='ArticeHeader' article='LEA-PRAC-CMP-012'",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 71,
-      "end_offset": 125,
-      "line_start": 3,
-      "line_end": 3,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
     {
       "block_id": "ui_0002",
       "block_type": "mdx_component",

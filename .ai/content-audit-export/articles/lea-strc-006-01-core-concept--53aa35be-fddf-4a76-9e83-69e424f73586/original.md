@@ -1,6 +1,13 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
 
-## What You Need to Know for the LEA
+- Identify the components of concrete: cement, aggregates, water, and admixtures
+- Explain how the water-cement ratio (w/c) controls strength and durability
+- Define slump and its relationship to workability
+- State standard concrete unit weight (2,400 kg/m³) and common compressive strengths
+- Describe proper curing procedures and their importance
+
 Concrete is a composite material made from cement, aggregates (fine and coarse), water, and optional admixtures. Understanding these components and their proportions—especially the water-cement ratio—determines concrete workability, strength, durability, and long-term performance in reinforced concrete structures.
 
 ## Core Concept
@@ -65,6 +72,13 @@ The Philippine National Structural Code (PNSC) requires concrete specifications 
 
 <Tip>The water-cement ratio is your strongest lever to control concrete strength and durability. Every project in the Philippines should specify w/c ≤ 0.50 for coastal or aggressive environments and w/c ≤ 0.55 for normal exposure. Proper 7-day curing is non-negotiable in tropical climates.</Tip>
 
+
+## Related Articles
+
+See also: **Deformed Bars** (lea-strc-006-02) for reinforcement used with concrete, **Concrete Cover** (lea-strc-007-01) for protection requirements, and **Prestressing** (lea-strc-006-04) for an advanced concrete technique.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Confusing w/c ratio with water content. A w/c = 0.50 means 0.5 kg water per 1 kg cement, not 50 kg water per m³. Lower w/c always means stronger concrete if the mix is properly proportioned.", "Assuming 7-day strength equals 28-day strength. Concrete at 7 days is typically 60–75% of 28-day strength. Design is always based on 28-day strength; early testing is for quality control only.", "Using unit weight 2,000 or 2,300 kg/m³ instead of 2,400 kg/m³. This error propagates through load calculations and self-weight estimates. Standard normal-weight concrete is 2,400 kg/m³.", "Neglecting curing in hot, dry conditions. In the Philippines, poor curing in tropical heat causes severe drying shrinkage cracking and reduced long-term durability, even if initial 28-day strength is adequate." ]} />

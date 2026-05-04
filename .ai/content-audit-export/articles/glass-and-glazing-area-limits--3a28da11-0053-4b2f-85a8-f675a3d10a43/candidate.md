@@ -12,23 +12,11 @@ You are conducting a plan review for a new four-storey commercial building in Ma
 
 ---
 
-<LawCallout code="nbcp">
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
-Rule XVIII, Sec. 1802: Maximum area of a single light of glass depends on glass type and thickness. Sheet glass (3 mm): 0.84 m² max. Sheet glass (5 mm): 1.20 m² max. Polished plate (6 mm): 6.00 m² max. These are strict limits for exterior glazing.
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
 
-</LawCallout>
-
-<KeyValues>
-
-3 mm sheet glass: 0.84 m² max single light | 5 mm sheet glass: 1.20 m² max single light | 6 mm polished plate: 6.00 m² max single light | 10 mm polished plate: 12.00 m² max single light | Tempered glass: area per manufacturer spec
-
-</KeyValues>
-
-<ExamTip>
-
-LEA Trap: Jalousie windows have specific limits — each glass blade max 1.20 m length for 5 mm glass, 1.50 m for 6 mm. Total jalousie window area in exterior walls limited to 50% of the wall area. Impact-resistant glazing required in hazardous locations (doors, sidelites, shower enclosures).
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 
 ## 2. Core Concepts with Mnemonic
 
@@ -357,11 +345,7 @@ An architect specifies a single glass panel 2.50 m wide by 2.50 m tall for a gro
 - C. 15 mm
 - D. 8 mm
 
-<Note>
-
-Answer: C. The panel is 2.50 m wide and 2.50 m tall. The 12 mm column allows maximum 3.00 m in both directions, which would appear to accommodate 2.50 m — however, 2.50 m exceeds the maximum of 2.25 m allowed for 10 mm glass, and 2.50 m is within the 3.00 m limit for 12 mm. Therefore, 12 mm is the minimum compliant thickness. (Note: 15 mm applies only when dimensions exceed 3.00 m in either direction.)
-
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
 
 ---
 
@@ -425,6 +409,9 @@ If you hesitated on any of these, return to Section 2 (Core Concepts) and Sectio
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Glass and Glazing Area Limits — Maximum Light Areas by Type and Thickness" description="Reference diagram showing: maximum single-light areas for sheet glass (3mm=0.84sqm, 5mm=1.20sqm), polished plate (6mm=6.00sqm, 10mm=12.00sqm), and tempered glass (per manufacturer). Hazardous locations diagram highlighting doors, sidelites within 300mm of door edge, shower enclosures, and areas within 450mm of floor requiring safety glazing. Jalousie blade length limits (1.20m for 5mm, 1.50m for 6mm)." />
 ## Cross‑References
 
 **Lathing And Plastering**, **Fire Resistive Construction Ratings**, **Vertical Openings And Floor Roof Construction**, **Pd 1096 Rule Viii Light And Ventilation**

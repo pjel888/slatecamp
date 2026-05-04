@@ -1,6 +1,9 @@
 ## What You Need to Know for the LEA
 
-The LEA tests your ability to classify libraries and archives as Group C occupancies, calculate floor area requirements for school vs. public libraries, apply occupant load standards, and understand stack/storage density planning.
+## Learning Goal
+
+Classify libraries and archives as Group C occupancies, calculate floor area using DepEd and PRC 2007 standards, determine occupant load per RA 9514, and apply archive environmental and accessibility requirements.
+
 
 ## Core Concept
 
@@ -131,6 +134,13 @@ A **university library serving 10,000 students** (DepEd + academic standards):
 - **Result: DAMAGE RISK** — paper, ink, binding adhesives at risk; collection condition assessment required; potential molecular degradation
 
 <Tip>**Memory rule:** Library = Group **C** (education). School library = 1.5 sqm/student. Public library occupancy load = floor area ÷ 4.6 sqm/person (seated, low-movement). Archive storage = mechanical support (excluded). Temperature ±2°C/day, humidity ±5%.</Tip>
+
+
+**Exam Tip — ERR-DSGN-018:** Library reading areas use 4.6 sqm/person (education rate), NOT 2.8 sqm/person (museum/gallery rate). Stack areas are NOT counted in occupant load. This is a frequently tested distinction.
+
+## Cross-References
+
+See **LEA-DSGN-004-05** (Museums) for Group C comparison, **LEA-DSGN-008-01** (Fire Egress) for occupant load calculation differences (4.6 vs 2.8 sqm/person), and **LEA-DSGN-009-01** (Passive Design) for daylighting in reading areas.
 
 ## Common Mistakes
 

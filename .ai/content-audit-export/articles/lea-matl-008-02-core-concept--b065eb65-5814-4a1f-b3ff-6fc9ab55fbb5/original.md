@@ -1,10 +1,10 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Structural joints and connections accommodate dimensional changes, transfer loads, and enable construction assembly. LEA exams test your ability to classify joint types by function, apply spacing requirements per NSCP 2015, and specify sealants for load transfer and weatherproofing.
-
+Identify window hardware types (casement operators, sliding locks, awning cranks, jalousie mechanisms, pivot hinges, projected window hardware) and explain how each hardware type supports the operation, security, and weather-tightness of different window configurations.
 ## Core Concept
 
-Structural joints serve distinct purposes in building assembly and must be properly designed, spaced, and selead. Expansion joints accommodate thermal movement in concrete, requiring continuous gaps and flexible sealants. A concrete slab with thermal expansion coefficient of 6 × 10⁻⁶ in/in/°F (0.0000066 in/in/°F) experiencing a 50-degree temperature swing requires expansion space calculated as: ΔL = α × L × ΔT. For a 100-foot slab: ΔL = 6×10⁻⁶ × (100×12) × 50 = 0.36 inches. Joint width = 2× movement = 0.72 inches minimum; expansion joints in concrete pavements are typically spaced 25 to 40 feet apart. Control joints (also called contraction joints) are induced cracks that control random cracking as concrete shrinks during curing. They are narrower than expansion joints (0.25 to 0.5 inches) and are placed at 15 to 25 feet intervals.
+Structural joints serve distinct purposes in building assembly and must be properly designed, spaced, and sealed. Expansion joints accommodate thermal movement in concrete, requiring continuous gaps and flexible sealants. A concrete slab with thermal expansion coefficient of 6 × 10⁻⁶ in/in/°F (0.0000066 in/in/°F) experiencing a 50-degree temperature swing requires expansion space calculated as: ΔL = α × L × ΔT. For a 100-foot slab: ΔL = 6×10⁻⁶ × (100×12) × 50 = 0.36 inches. Joint width = 2× movement = 0.72 inches minimum; expansion joints in concrete pavements are typically spaced 25 to 40 feet apart. Control joints (also called contraction joints) are induced cracks that control random cracking as concrete shrinks during curing. They are narrower than expansion joints (0.25 to 0.5 inches) and are placed at 15 to 25 feet intervals.
 
 Construction joints occur where concrete is cast in separate stages, such as between a foundation pour and a wall pour. These joints must include dowel bars (0.5 to 1 inch diameter steel rods) placed horizontally at mid-depth of the slab to transfer shear loads and prevent differential settlement. Isolation joints (or isolation bearings) completely separate two structural systems, allowing independent vertical and lateral movement. These are critical at interfaces between major components such as a new addition adjoining an existing building, where differential settlement could crack a rigid connection.
 
@@ -52,3 +52,10 @@ The NSCP 2015 (National Structural Code of the Philippines) adopts ACI 318 and A
 <WikiMistakeCard mistake="Specifying shear connections in a seismic-zone moment-resisting frame, thinking pin connections are sufficient for gravity loads." correction="Shear (simple) connections cannot transfer bending moments required to resist lateral forces in earthquakes. Moment connections are mandatory for seismic zones." />
 
 <WikiMistakeList mistakes={["Calculating expansion joint width using only the slab length, forgetting to multiply by the thermal coefficient and temperature change (delta-T)", "Placing dowel bars on the top surface instead of at mid-depth, reducing their shear transfer capacity", "Using rigid welds at isolation joints, eliminating the intended independent movement capability"]} />
+
+## Related Articles
+
+See also within Hardware, Joints, and Fasteners: **lea-matl-008-01-core-concept**, **lea-matl-008-03-core-concept**, **lea-matl-008-04-core-concept**, **lea-matl-008-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

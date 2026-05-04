@@ -1,38 +1,47 @@
 {
   "article_id": "5f1e960c-b72a-483d-a04b-03860d27b07b",
   "slug": "the-bauhaus-and-international-style",
-  "generated_at": "2026-05-03T13:44:24.050Z",
-  "old_hash": "sha256:3c53061a6ad41d8768578ffa43d76ebf37d916bd016d499fe53cb0f8d178079f",
-  "new_hash": "sha256:48a5a2c470f9051499b11fddaf03123d62e7768d3ff50236185b564b51141710",
-  "original_hash": "sha256:3c53061a6ad41d8768578ffa43d76ebf37d916bd016d499fe53cb0f8d178079f",
-  "normalized_hash": "sha256:c502df381aad6982e6e5c8dc80de699cc1b4b11d261eddc3c98dc638c7c610c0",
-  "candidate_hash": "sha256:48a5a2c470f9051499b11fddaf03123d62e7768d3ff50236185b564b51141710",
+  "generated_at": "2026-05-04T00:05:57.962Z",
+  "old_hash": "sha256:48a5a2c470f9051499b11fddaf03123d62e7768d3ff50236185b564b51141710",
+  "new_hash": "sha256:31699be0fecbdb707472d9cf7324d23944ffc714d21481ee58a726dd1eb9df05",
+  "original_hash": "sha256:48a5a2c470f9051499b11fddaf03123d62e7768d3ff50236185b564b51141710",
+  "normalized_hash": "sha256:31699be0fecbdb707472d9cf7324d23944ffc714d21481ee58a726dd1eb9df05",
+  "candidate_hash": "sha256:31699be0fecbdb707472d9cf7324d23944ffc714d21481ee58a726dd1eb9df05",
   "changed": true,
-  "changed_line_count": 116,
-  "inserted_line_count": 45,
-  "deleted_line_count": 0,
+  "changed_line_count": 102,
+  "inserted_line_count": 0,
+  "deleted_line_count": 20,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 116,
-    "inserted": 45,
-    "deleted": 0,
-    "original_line_count": 86,
-    "candidate_line_count": 131
+    "changed": 102,
+    "inserted": 0,
+    "deleted": 20,
+    "original_line_count": 131,
+    "candidate_line_count": 111
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
 }

@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Construction equipment and plant operations are essential for modern construction efficiency. The LEA expects understanding of equipment types, capacities, operational logistics, and environmental impacts. You must recognize when to specify earthmoving (excavation, grading), lifting (cranes, conveyors), concrete placement, and compaction equipment aligned with Philippine construction practices and safety standards.
-
+Classify construction equipment (excavators, cranes, concrete pumps, compactors) by function and application, and explain how equipment selection, site logistics, and material handling affect construction sequencing and project efficiency.
 ## Core Concept
 
 Construction equipment delivers site materials, shapes terrain, lifts heavy loads, and consolidates materials. Proper equipment selection based on task, site constraints, and production rates optimizes construction schedules and reduces labor costs.
@@ -89,3 +89,10 @@ The LEA evaluates equipment knowledge through:
 <WikiMistakeCard title="Concrete Pump Reach Inadequate for Building Geometry" body="A 20-story tower has irregular floor plan with cantilevers 40 m from the tower core. The specified concrete pump has 35 m horizontal reach, leaving some areas inaccessible. Concrete must be bucketted or conveyed, slowing placement and increasing labor. Verify pump reach against site geometry before specification." />
 
 <WikiMistakeList items={["Underestimating concrete pump cost as part of project—pump rental (PHP 10,000–18,000/day) is justified for buildings above 5–10 stories; bucket hoisting is slower and more labor-intensive.", "Neglecting soil compaction testing—equipment alone does not guarantee specified density. Standard Proctor testing verifies density achievement; under-compacted soil risks foundation settlement.", "Staging equipment in constrained site without traffic management—construction equipment movement through populated areas requires traffic control plans, MMDA permits in Manila, and coordination with local governments.", "Equipment noise/dust without environmental controls—Philippine urban areas have strict noise ordinances (especially residential zones). Dust suppression and noise barriers are mandatory per DENR and local ordinances.", "Failing to account for tower crane setup/dismantling time—1–2 weeks for installation/removal; this is critical path for schedule. Budget time and costs before project start."]} />
+
+## Related Articles
+
+See also within Construction Systems and Methods: **lea-matl-004-06-core-concept**, **lea-matl-004-07-core-concept**, **lea-matl-004-08-core-concept**, **lea-matl-004-10-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

@@ -3,39 +3,11 @@
   "slug": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill",
   "normalized_created_at": "2026-05-01T13:33:44.183Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:6801ce99bddcb7ad64a683ff7e8045e3db91441786adecfbcd06c43a18986a90",
+  "original_content_hash": "sha256:c8aba5e59d28f5aa1cb3c06689062f92846b79545f6a8c148467b1e9f7689f4a",
   "normalized_content_hash": "7628ca8b82dfe505a4924fd815af8deec6d586b9597f75a76d8a71b4c4171499",
-  "ui_block_count": 4,
+  "ui_block_count": 3,
   "total_blocks": 3,
   "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "JSX",
-      "raw": "<JSX name=\"ArticleHeader\" article=\"LEA-PRAC-CMP-011\" />",
-      "raw_hash": "sha256:f963dce0251fb16e89e60b5526ccfa692c23c88b14eeb84d9b06ee8cd9e9fba5",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"JSX\" status=\"preserved\"]\nExtracted summary:\n- Props: name=\"ArticleHeader\", article=\"LEA-PRAC-CMP-011\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:17dc77a7dfa38bad937f31db05ca4734ff570e953e80f1783b3ea33dc553abb2",
-      "props": {
-        "name": "ArticleHeader",
-        "article": "LEA-PRAC-CMP-011"
-      },
-      "props_json": {
-        "name": "ArticleHeader",
-        "article": "LEA-PRAC-CMP-011"
-      },
-      "props_text": "name=\"ArticleHeader\" article=\"LEA-PRAC-CMP-011\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 84,
-      "end_offset": 139,
-      "line_start": 3,
-      "line_end": 3,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
     {
       "block_id": "ui_0002",
       "block_type": "mdx_component",

@@ -1,20 +1,18 @@
-{
-  "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:25968b9454e53300c76ff46174bec5b25b525409b45bb0aed84bca7afa840327",
-  "source_count": 1,
-  "sources": [
-    {
-      "source_ref": "PD 1096 IRR (2004 Revised)",
-      "source_type": "law",
-      "law_code": "PD-1096",
-      "document_title": "2004 Revised Implementing Rules and Regulations of PD 1096 (National Building Code)",
-      "url": "",
-      "verification_status": "verified",
-      "verified_sections": [
-        "Rule I-XII"
-      ],
-      "notes": "DPWH Official Revised IRR"
-    }
-  ]
-}
+[
+  {
+    "source_id": "src-pd-1096",
+    "title": "PD 1096 (National Building Code of the Philippines) — 2004 Revised IRR",
+    "type": "law",
+    "jurisdiction": "Philippines",
+    "verified_claims": [],
+    "confidence": "source_available",
+    "pdf_available": true,
+    "pdf_path": "001-Laws/PD-1096/PD 1096 - National Building Code Illustrated (Pedro Santos Jr).pdf",
+    "sections_referenced": [
+      "1208",
+      "401",
+      "808",
+      "801"
+    ]
+  }
+]

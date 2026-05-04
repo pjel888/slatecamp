@@ -11,6 +11,7 @@ The Philippines is one of the world's 17 mega-diverse countries, with extraordin
 **Native species definition:** A native species is one that naturally occurs within a particular region and has not been introduced by humans. Native species are adapted to local climate, soil, and water conditions through natural selection. They support complex food webs, provide ecosystem services (water filtration, soil stability, pollination), and maintain cultural heritage.
 
 **Endemic species definition:** An endemic species occurs naturally in one geographic area and nowhere else in the world. The Philippines has exceptional endemic diversity: 52% of Philippine flowering plants are endemic; numerous birds, reptiles, and mammals are found only in the Philippines. Endemic species are globally irreplaceable and require protection within their native range.
+<ArticleMedia id="media-lea-plan-005-02-what-you-need-to-know-fo" a type="image" caption="Ecological Succession — Pioneer to Climax Forest Diagram" description="Four-stage successional diagram: Stage 1 Pioneer (fast-growing, light-demanding: Albizia, Macaranga, Solanum — open sun, poor soil), Stage 2 Early Successional (mix of pioneers and slower species, soil improves), Stage 3 Mid-Successional (shade-tolerant understory, pioneer decline, canopy closure), Stage 4 Climax Forest (mature hardwoods: Narra, Dipterocarps — stable composition). Shows species transition over 50+ year timeline." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Narra as National Tree and Ecological Reference
 
@@ -61,21 +62,12 @@ Ecosystems are communities of plants, animals, and microorganisms interacting wi
 
 **Successional stages:**
 
-
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: A centralized organization places a dominant central space around which secon...
-[/SLATECAMP_UI_BLOCK]
 1. **Pioneer stage:** Fast-growing, light-demanding species dominate. Common Philippine pioneer trees include _Albizia_ spp., _Macaranga_ spp., and _Solanum_ spp. Pioneer species thrive in open sun and poor soil.
 
 2. **Early successional stage:** Mix of pioneers and slower-growing species. Soil improves; shade increases.
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: A centralized organization places a dominant central space around which secon...
-[/SLATECAMP_UI_BLOCK]
 
 3. **Mid-successional stage:** Shade-tolerant species establish; pioneers decline as canopy closes. Understory becomes richer.
 
@@ -107,17 +99,8 @@ Successional planting intentionally recreates ecological succession to restore d
 **Exotic (or introduced) species** are non-native plants brought to the Philippines by humans. Exotic species are not inherently destructive—many valuable agricultural crops (rice, cacao, mango) are exotic. However, some exotic species become **invasive**—they spread rapidly, outcompete natives, and degrade ecosystems.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Identify the type of spatial organization from a plan — look...
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Identify the type of spatial organization from a plan — look...
-[/SLATECAMP_UI_BLOCK]
 **Examples of problematic invasive species in the Philippines:**
 - _Chromolaena odorata_ (asaeng gubat, devil weed) — invasive shrub that forms monocultures and prevents native regeneration in disturbed areas
 - _Prosopis juliflora_ (algaroba) — thorny tree that spreads rapidly in grasslands and degrades rangelands
@@ -132,6 +115,7 @@ Extracted summary:
 - Reflect Philippine cultural identity
 
 **Appropriate use of exotics:** Exotic species are appropriate in cultural, agricultural, and economic contexts where their benefits are intentional (fruit orchards, spice gardens, farm systems). However, in ecological restoration and natural area management, native species take priority.
+<ArticleMedia id="media-lea-plan-005-02-what-you-need-to-know-fo" a type="image" caption="Native vs. Exotic vs. Invasive Species Identification Chart" description="Three-column comparison chart: Native species (naturally occurring, support Philippine ecosystems, co-evolved with local fauna, examples: Narra, Philippine mahogany, molave), Exotic/Introduced (non-native, purposefully cultivated, examples: rice, cacao, mango), Invasive (outcompete natives, degrade ecosystems, examples: Chromolaena odorata devil weed, Prosopis juliflora algaroba, Salvinia molesta water fern). Color-coded by ecological impact." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Biodiversity Conservation and Landscape Implications
 
@@ -147,16 +131,7 @@ Biodiversity conservation protects native species and ecosystems. The Philippine
 
 ### Summary
 
-
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Design principles focus on the relationship between form and space. Understan...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Design principles focus on the relationship between form and space. Understan...
-[/SLATECAMP_UI_BLOCK]
 Philippine native species represent millions of years of evolutionary adaptation to tropical conditions. Understanding species identification, ecological systems, and successional processes enables planners and landscape architects to design restoration and landscapes that support biodiversity, resilience, and sustainability. Narra, the national tree, exemplifies native species adapted to Philippine conditions. Successional planting approaches harness natural ecological processes to restore degraded lands cost-effectively. In all design contexts, preference for native species supports Philippine ecosystems, cultural identity, and global biodiversity.

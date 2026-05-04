@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:42.279Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:15.898Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
   "slug": "american-colonial-era",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:ee0bd971cbe67f08f1521472465a78102da77fc786f2396c2aa6801f0adf6025",
-  "original_hash": "sha256:75559932c515d4ef971853c96cbae1ec8918919c6a3f7821c376bb0b503e31e9",
-  "candidate_hash": "sha256:ee0bd971cbe67f08f1521472465a78102da77fc786f2396c2aa6801f0adf6025",
-  "stale_check_passed": false,
+  "original_hash": "sha256:ee0bd971cbe67f08f1521472465a78102da77fc786f2396c2aa6801f0adf6025",
+  "candidate_hash": "sha256:74ff15c57d2e2326a79377617eb884c1adb8ffe865fba9f122b8ab14507f152f",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:50:46.498009+00:00"
 }

@@ -1,18 +1,32 @@
 {
   "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
   "slug": "lea-dsgn-005-10-core-concept",
-  "generated_at": "2026-05-03T13:44:11.171Z",
-  "original_hash": "sha256:50aa3e4159a1518f5f33446ab1f1694c0f5ce31ceacbbb296b7d5d2089397e82",
-  "normalized_hash": "sha256:884c46e56a0ade6e04984fb1a3e86a4135f6f6253c802001adb878bdb973dad5",
-  "candidate_hash": "sha256:04e5c11a7c2cf792b9931784050900a5797ae1602385628c362641a77347e6bc",
+  "generated_at": "2026-05-04T00:05:38.445Z",
+  "original_hash": "sha256:04e5c11a7c2cf792b9931784050900a5797ae1602385628c362641a77347e6bc",
+  "normalized_hash": "sha256:20bcf6ee95f804de9ccdb9e3445d98a8909a3e04b99bef4a0c078aff97b8d925",
+  "candidate_hash": "sha256:20bcf6ee95f804de9ccdb9e3445d98a8909a3e04b99bef4a0c078aff97b8d925",
   "ui_blocks_count": 6,
-  "placeholders_found": 6,
-  "placeholders_resolved": 6,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 6,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition."
+  ]
 }

@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:20.277Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:05:54.076Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
   "slug": "lea-util-006-05-recommended-illumination-levels-by-space-type",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:9771e73ef9aba68c772157de446e786938e70912e34c4d5b6fae11d74384ac59",
-  "original_hash": "sha256:090fb061e98d696745edadc6da0d19eb3767bf51a7cf9f45375e1fd6fc206572",
-  "candidate_hash": "sha256:9771e73ef9aba68c772157de446e786938e70912e34c4d5b6fae11d74384ac59",
-  "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:49:45.76326+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:9f42f5c9dfe2d48030d06fc7b5a5bedfabbd68b420c572dcbb8e1165b389f5d0",
+  "original_hash": "sha256:9f42f5c9dfe2d48030d06fc7b5a5bedfabbd68b420c572dcbb8e1165b389f5d0",
+  "candidate_hash": "sha256:0aa6e039e9cde76ca35c5fc9000c9e7e49302a4df98ddf33dd5cd5444fd356ee",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-03T16:34:39.256098+00:00"
 }

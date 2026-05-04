@@ -3,9 +3,6 @@
 After reading this article, you should be able to:
 
 Apply BP 344 requirements for accessible washrooms: calculate minimum clear floor space (1.50 m × 1.50 m) for wheelchair turning; determine water closet clearance (900 mm wide × 1500 mm deep minimum with 450 mm side transfer space); apply grab bar placement and load requirements (horizontal 750-850 mm height, 1.3 kN capacity); and identify lavatory knee clearance and mirror height specifications.
-
-_An Immersive LEA Review Module — Optimized for Board Exam Mastery_
-
 ---
 
 ## The Real-World Hook (Dual Coding Theory)
@@ -27,10 +24,6 @@ Chunk the rules this way: **Clearance → Support → Heights.**[file:4]
 _Chant this three times aloud:_ **"1.8 turns the chair. 300-above steadies the grip. 450 sits them down. 800 is the wash basin, not the bar."**[file:4]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="lea-watch", title="The &quot;800 Rule&quot; Confusion"
-- Text: The "800 Rule" Confusion: The number 800mm is real — but it belongs to the **lavatory rim height** (Section 6, Toilets and Baths, lavatory spec), NOT to toilet grab bars.[file:4] The 2024 IRR does not assign any fixed AFF height to toilet grab bars; they are referenced from the **seat height**.[file:4] If an exam option says "grab bars at 800mm AFF," treat it as a distractor unless the question explicitly states a 450mm seat and asks only for an approximate resulting AFF dimension.[file:4]
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -56,7 +49,9 @@ Visualize two key rectangles:
 | **Lavatory Rim Height**                        | Max **800 mm AFF**                                                                            | Sec 6.9                          | Clears wheelchair armrest; permits knee insertion.[file:4]                |
 | **Lavatory Knee Clearance**                    | Min **650 mm** height, **500 mm** depth                                                       | Sec 6.9                          | Wheelchair can roll under basin.[file:4]                                  |
 | **Lavatory Centerline from Wall**              | **450 mm** from adjacent wall                                                                 | Sec 6.9                          | Mirrors WC centerline for consistent reach.[file:4]                       |
-| **Mirror Bottom Edge**                         | Max **1000 mm AFF** or tilted 15° downward                                                    | Section 6, Toilets and Baths (mirror spec)                        | Visible from a seated position.[file:4]                                   |
+| Mirror Bottom Edge                         | Max **1000 mm AFF** or tilted 15° downward                                                    | Section 6, Toilets and Baths (mirror spec)                        | Visible from a seated position.                                   |
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="accessible-wc-cubicle-plan" type="diagram" caption="Plan view of accessible WC cubicle: 1800×1800mm clear floor space, WC centered 450mm from side wall, 750mm clear transfer space beside WC, side grab bar 900mm long (top 300mm above seat), rear flip-up grab bar, emergency call button at 400-600mm AFF on side wall, outward-opening door with pull bar at 900mm AFF."]
 | **Accessories / Fixtures**                     | Max **1000 mm AFF**                                                                           | Section 6, Toilets and Baths (accessories spec)                        | Soap, towels, hooks within seated reach.[file:4]                          |
 | **Emergency Call Button**                      | **400–600 mm AFF**, waterproof, contrasting color                                             | Section 6, Toilets and Baths (emergency call button)                         | Reachable even from the floor after a fall.[file:4]                       |
 | **Roll-In Shower**                             | **1800 mm x 1800 mm**; curb max **12 mm**, beveled                                            | Section 6, Toilets and Baths (roll-in shower)                         | Full roll‑in without tipping or blocking wheels.[file:4]                  |
@@ -66,10 +61,6 @@ Visualize two key rectangles:
 | **Strobe Alarms**                              | Max **2 flashes/second**, per NFPA 72 / Fire Code reference                                   | Section 6, Toilets and Baths (strobe alarm)[web:16][web:30][web:33] | Avoids triggering photosensitive seizures.[file:4]                        |
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="authority", title="Why 300mm above the seat, not a fixed AFF value?"
-- Text: Why 300mm above the seat, not a fixed AFF value? During a lateral transfer from wheelchair to toilet, the user’s elbow is flexed and the hand grips a bar slightly above seat height.[file:4] Referencing the bar **300mm above the seat top** keeps the bar in a consistent biomechanical zone even when seat thickness or mounting varies, whereas a rigid AFF value (like 800mm) would float relative to the seat and could become unusable or unsafe.[file:4]
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -102,13 +93,11 @@ Urinals are frequently tested because the numbers differ from toilets and lavato
 | Grab bar length (each side)             | **600 mm**          | Section 6, Toilets and Baths (urinal spec)[file:4] |
 | Grab bar tops                           | **1500 mm AFF**     | Section 6, Toilets and Baths (urinal spec)[file:4] |
 | Clear space between outer edges of bars | **650 mm**          | Section 6, Toilets and Baths (urinal spec)[file:4] |
-| Clear floor space at urinal             | **900 mm x 900 mm** | Section 6, Toilets and Baths (urinal spec)[file:4] |
+| Clear floor space at urinal             | **900 mm x 900 mm**                                                                           | Section 6, Toilets and Baths (urinal spec)[file:4] |
+
+[SLATECAMP_UI_BLOCK:ArticleMedia name="accessible-urinal-detail" type="diagram" caption="Front elevation and plan view of accessible urinal: lip height 350-400mm AFF, grab bars 600mm each side with tops at 1500mm AFF, 650mm clear between outer edges of bars, 900×900mm clear floor space for frontal approach."]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="authority", title="Reason for the Law"
-- Text: The low urinal lip allows both seated wheelchair users and ambulant persons with limited balance to use the fixture, while bilateral grab bars at 1500mm AFF provide stable support when standing.[file:4]
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -123,11 +112,9 @@ Extracted summary:
 | Bathtub clear transfer space      | **900 mm x 1500 mm**                                                        | Section 6, Toilets and Baths (bathtub)[file:4] |
 | Bathtub L-type grab bar           | **1200 mm** horizontal + **1200 mm** vertical; mounted **250 mm above rim** | Section 6, Toilets and Baths (bathtub)[file:4] |
 
+[SLATECAMP_UI_BLOCK:ArticleMedia name="accessible-roll-in-shower" type="diagram" caption="Plan view of roll-in shower: 1800×1800mm minimum clear floor area, 12mm max beveled curb, L-shaped grab bars on side and rear walls, shower spray hose minimum 1500mm length, clear transfer space adjacent to fold-down seat."]
+
 [SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="authority", title="Reason for the Law"
-- Text: A 12mm maximum beveled curb allows the wheelchair to roll through without lifting or tipping, and the 1800mm x 1800mm requirement reflects the turning/positioning envelope of a typical wheelchair plus caregiver assistance where needed.[file:4]
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -142,15 +129,31 @@ When designing an accessible washroom in any occupancy under Rule VII, treat BP 
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: Accessible water closet clearance: 900 mm wide × 1,500 mm deep min + 450 mm side transfer space (left or right). Grab bars: horizontal at 750-850 mm height, 1.3 kN capacity. The side transfer side is the most tested dimension — the space must be on BOTH sides of an accessible stall but the BARRIER-FREE approach requires transfer from either side.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Accessible water closet clearance: 900 mm wide × 1,500 mm deep min + 450 mm side transfer space (left or right). Grab bars: horizontal at 750-850 mm height, 1.3 kN capacity. The side transfer side is the most tested dimension — the space must be on BOTH sides of an accessible stall but the BARRIER-FREE approach requires transfer from either side.
+
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Accessible water closet clearance: 900 mm wide × 1,500 mm deep min + 450 mm side transfer space (left or right). Grab bars: horizontal at 750-850 mm height, 1.3 kN capacity. The side transfer side is the most tested dimension — the space must be on BOTH sides of an accessible stall but the BARRIER-FREE approach requires transfer from either side.
+
 ## Cross‑References
 
 **Bp 344 Elevator Dimensions**, **Bp 344 Ramp Slope Tiers**, **Wheelchair Maneuvering And Parking**, **Fixtures And Small Items In Common Areas**
 
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

@@ -1,8 +1,14 @@
 ## Fees for Abandoned Projects and Partial Services — Protecting the Architect's Compensation
 
-<JSX name="ArticleHeader" article="LEA-PRAC-CMP-013" />
 
-Projects do not always proceed to completion. Clients abandon projects due to financing difficulties, changing priorities, market conditions, or other circumstances. When projects are abandoned or when architects provide only partial services (Design Development only, without proceeding to Contract Documents or Construction Administration), the architect must protect compensation for work already completed. SPP 202 addresses compensation methodology for abandoned and partial-service situations to ensure fair payment while establishing clear client expectations.
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe the architect's right to compensation for abandoned projects.
+- Explain how partial services are compensated when a project is discontinued.
+- Identify the rules protecting the architect's compensation.
+- Apply abandonment compensation rules to exam scenarios.
 
 ### Definition of Abandoned Projects
 
@@ -13,6 +19,14 @@ An abandoned project is one where the client discontinues the project before com
 The architect's fee is typically structured as milestone-based payments tied to phase completion. If the client abandons during Schematic Design, the architect receives 15% of total fee (the Schematic Design percentage) for work completed. If abandonment occurs after Design Development, the architect receives 15% + 20% = 35% of total fee. If abandonment occurs after Contract Documents, the architect receives 90% of total fee per SPP 202 Section 7.7.
 
 The key principle is that the architect receives compensation for completed design phases, not for projected future phases. The contract must clearly establish this milestone-based compensation structure so both parties understand what percentage of the total fee the architect earns if the project is abandoned at different points.
+
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
+
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
+Extracted summary:
+- Props: variant="lea-watch", title="Milestone Summary"
+- Text: Milestone Summary — Abandonment compensation per SPP 202: SD phase (15%), SD+DD (35%), SD+DD+CD (90% under Section 7.7 if Owner fails to implement plans). The 90% figure applies when Contract Documents are complete but construction never starts.
+[/SLATECAMP_UI_BLOCK]
 
 ### Reimbursable Expenses at Abandonment
 
@@ -34,7 +48,7 @@ Partial services engagements must be clearly documented in the contract. The eng
 
 ### Handoff Documentation for Partial Services
 
-When an architect provides partial services and another architect will continue, the first architect should provide comprehensive documentation to facilitate handoff. If the first architect completes Design Development and a second architect will prepare Contract Documents, the first architect should provide: complete Design Development drawings and specifications, consultant coordination documentation, site investigation reports, cost estimates, program documentation, and any design notes or rationlea that explain design decisions.
+When an architect provides partial services and another architect will continue, the first architect should provide comprehensive documentation to facilitate handoff. If the first architect completes Design Development and a second architect will prepare Contract Documents, the first architect should provide: complete Design Development drawings and specifications, consultant coordination documentation, site investigation reports, cost estimates, program documentation, and any design notes or rationale that explain design decisions.
 
 This handoff documentation allows the second architect to proceed efficiently without redesigning work the first architect completed. The contract should address whether the first architect provides this documentation as part of their contracted scope (typically yes) or whether the client must pay additional fees for extensive documentation preparation (if documentation beyond standard deliverables is required).
 
@@ -50,7 +64,7 @@ To protect the architect's interests at abandonment, the contract should:
 
 4. Define abandonment circumstances (client decision, financing failure, force majeure) and establish compensation for each scenario.
 
-5. Specify what documentation the architect provides at abandonment (partial deliverables, notes, design rationlea) to facilitate potential future continuation.
+5. Specify what documentation the architect provides at abandonment (partial deliverables, notes, design rationale) to facilitate potential future continuation.
 
 6. Establish payment timing: typically, the architect invoices for completed work within a specified period after abandonment notification, and the client pays within the contract's standard payment terms.
 
@@ -71,3 +85,22 @@ Clear contract language distinguishing suspension (temporary halt with expected 
 ### Client Communication and Expectation Setting
 
 During proposal and contract negotiation, the architect should discuss and document abandonment and partial services provisions. Many clients don't anticipate project abandonment and may not realize the architect earned fees for completed phases even if the project doesn't proceed to completion. Transparency about what happens at abandonment, what the architect is compensated for, and what documentation is provided prevents disputes if abandonment occurs.
+
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
+
+---
+
+## Related Articles
+
+- [Project Classification Groups](lea-prac-cmp-001)
+- [Factors Determining Classification](lea-prac-cmp-002)
+- [Project Construction Cost](lea-prac-cmp-003)
+- [Schedule of Payments](lea-prac-cmp-004)
+- [MDPE Formula](lea-prac-cmp-006)
+- [MDPE Multipliers](lea-prac-cmp-007)
+- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
+- [Reimbursable Expenses](lea-prac-cmp-011)
+- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)

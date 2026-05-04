@@ -1,6 +1,15 @@
 ## What You Need to Know for the LEA
-High-strength bolted connections demand precise control of bolt grade, hole type, edge distance, and pretensioning to achieve reliable force transfer and prevent fatigue failure.
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Define high-strength bolted connections and distinguish them from common bolts
+- Identify the two load transfer mechanisms: bearing-type and slip-critical
+- Explain the role of bolt pretension in slip-critical connections
+- State standard bolt grades (A325, A490) and their approximate strengths
+
+---
 ## Core Concept
 High-strength bolted connections use A325 or A490 bolts to transmit shear and tension across steel-to-steel interfaces via friction or bearing. A307 bolts (general-purpose, Fu = 414 MPa) are not high-strength; they rely on loose bolts and bearing. A325 bolts (Fu = 825 MPa) are the AISC standard for structural work; A490 bolts (Fu = 1,035 MPa) serve extreme-load applications. Bolt holes fall into three categories: (1) standard holes (nominal diameter + 1.6 mm clearance, tightest fit), (2) oversized holes (+ 3.2 mm clearance, for rapid assembly), and (3) slotted holes (long slots for field adjustment). Minimum edge distance (distance from fastener center to member edge) depends on bolt diameter, steel grade, and edge condition: typical values range 32–40 mm for standard holes in A36 steel. Holes are typically drilled or punched; punching is faster but must respect hole-diameter-to-thickness ratios to avoid tearing. Pretensioning (applying initial bolt tension before loading) is mandatory for high-strength bolts under AISC 360; this clamping action ensures friction grip and prevents slipping until the bolt is in direct bearing. Pretension targets are specified in kN and must be verified by turn-of-nut or calibrated wrench methods. Bolt spacing (center-to-center distances between bolts) must be at least 2.67 times the bolt diameter to allow tool access and prevent tearout; maximum spacing in tension is constrained by buckling of the connected elements. The connection design must account for net section (area after hole deduction) in tension; shear capacity in bearing depends on bolt fu, hole geometry, and steel thickness.
 
@@ -32,7 +41,7 @@ High-strength bolted connections use A325 or A490 bolts to transmit shear and te
 
 **Bolt Spacing & Clearance:**
 
-| Parameter | Minimum Value | Rationlea |
+| Parameter | Minimum Value | rationale |
 |---|---|---|
 | Pitch (bolt to bolt, along member) | 2.67 d_bolt | Tool access; tear-out prevention |
 | Gage (bolt to bolt, across member) | 2.0 d_bolt | Standard practice; allows wrench swing |
@@ -65,5 +74,12 @@ _Tests J3.3 spacing rule: minimum pitch = 2.67 d = 2.67 × 24 = 64 mm. 60 mm < 6
 
 <Tip>A325 is the AISC standard. Pretension ~378 kN for M24. Edge distance for M20 rolled edge = 38 mm. Pitch ≥ 2.67 d. Memorize these three numbers.</Tip>
 
+
+## Related Articles
+
+See also: **Steel Members** (lea-strc-008-01) for the members being connected, **Structural Design Capacity** (lea-strc-005-02) for connection capacity checks, and **ASD vs LRFD** (lea-strc-003-04) for the design method applied to bolts.
+
 ## Common Mistakes
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+
 <WikiMistakeList mistakes={["Using A307 bolts in primary friction-grip connections: A307 is for bearing work (loose bolts). A325 or A490 are required for preload and friction. Confusing the two invalidates connection capacity.","Calculating edge distance from the edge of the bolt head rather than the bolt _center_: AISC J3.2 specifies distance from hole center to member edge. Bolts heads are larger; the critical clearance is to the hole.","Spacing bolts at exactly 3 d instead of minimum 2.67 d and calling it code-compliant: the rule is ≥ 2.67 d for tearout prevention. Always add safety margin.","Assuming all four bolt hole types have the same clamping behavior: standard and oversized holes have different clearances and load paths. Slotted holes reduce clamping area and should not be used in high-shear connections.","Neglecting to account for net section in tension: after deducting bolt holes, the remaining area must have sufficient strength. Large holes or closely spaced bolts can render the net section inadequate."]} />

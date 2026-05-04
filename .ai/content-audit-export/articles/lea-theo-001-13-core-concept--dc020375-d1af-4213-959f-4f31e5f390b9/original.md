@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The LEA tests your understanding that architects bear responsibility not only to clients and structural integrity but to society, the environment, and future generations. Questions address professional ethics, sustainable design principles, and the architect's role in addressing social and environmental challenges. This reflects contemporary values emphasizing that architecture is never merely private or neutral; it has public consequences.
-</Callout>
+## Learning Goal
 
+Explain the architect's social and ethical responsibilities — beyond client and structural integrity — including public safety, environmental stewardship, cultural respect, and commitment to human dignity and community welfare.
 ## Core Concept
 
 Architecture shapes the physical environment in which people live, work, gather, and worship. Because buildings last for decades or centuries, architectural decisions made today affect not only current occupants but generations to come. Buildings consume vast quantities of materials and energy; they occupy land; they influence patterns of human movement and social interaction. The architect who designs a building is therefore responsible for more than pleasing a client or completing a technical puzzle; the architect is responsible for the public consequences of private actions. This understanding of **architectural responsibility** has become increasingly central to professional ethics and architectural theory.
@@ -64,6 +63,10 @@ Critical responsibility: Accessibility and universal design are non-negotiable o
 
 <ExamTip>**Pattern 5: Equity and Access.** The LEA asks about designing for vulnerable populations and ensuring equitable access. Example stem: "Universal design principles require architects to ensure that public buildings are accessible to whom?" Answer: All people regardless of age, ability, physical condition, or status. Accessibility is not a special add-on; it is a fundamental responsibility.</ExamTip>
 
+<Callout>
+The LEA tests your understanding that architects bear responsibility not only to clients and structural integrity but to society, the environment, and future generations. Questions address professional ethics, sustainable design principles, and the architect's role in addressing social and environmental challenges. This reflects contemporary values emphasizing that architecture is never merely private or neutral; it has public consequences.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Treating sustainability as optional" correction="Sustainable design is now standard of care. Architects who ignore sustainability principles without justification are failing professional responsibility. It is not a client preference or marketing advantage; it is a fundamental ethical obligation." context="The LEA tests whether you understand that sustainability is mandatory, not optional. Professional codes of ethics increasingly require sustainable design practices." />
@@ -97,3 +100,10 @@ Critical responsibility: Accessibility and universal design are non-negotiable o
 **Social Equity** — Ensuring that architecture serves all community members, addresses inequality, and promotes just distribution of resources and opportunities.
 
 **Climate Resilience** — Designing buildings to withstand and adapt to climate hazards and environmental conditions specific to their geographic location.
+
+## Related Articles
+
+See also within Nature of Architecture: **lea-theo-001-01-core-concept**, **lea-theo-001-07-core-concept**, **lea-theo-001-08-core-concept**, **lea-theo-001-09-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

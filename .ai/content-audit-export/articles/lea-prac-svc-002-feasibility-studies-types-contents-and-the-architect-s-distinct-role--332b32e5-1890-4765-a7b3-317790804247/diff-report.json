@@ -1,38 +1,49 @@
 {
   "article_id": "332b32e5-1890-4765-a7b3-317790804247",
   "slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
-  "generated_at": "2026-05-03T13:45:04.164Z",
-  "old_hash": "sha256:15e3531dd2983c92357083b05bfffefab9c2711c15520482d8f7503c51389aad",
-  "new_hash": "sha256:7970c889faaf3cf5e14eaae47132f372918fa33765372349b8a13e1a4a488649",
-  "original_hash": "sha256:15e3531dd2983c92357083b05bfffefab9c2711c15520482d8f7503c51389aad",
-  "normalized_hash": "sha256:c37ff80d3bd37f1c765270a11e36cf659be6b32dcb59825566cf6b5a951598f4",
-  "candidate_hash": "sha256:7970c889faaf3cf5e14eaae47132f372918fa33765372349b8a13e1a4a488649",
+  "generated_at": "2026-05-04T00:06:42.127Z",
+  "old_hash": "sha256:d1d3d08d1ae3d0a892124d8f607bd7f435d2c417a21a26bb3a4efa4604bcf58d",
+  "new_hash": "sha256:4fdb18a2186d2f36bfe48e628f2cf74b6813ec03f78e81b72b33a3acbd1c9d83",
+  "original_hash": "sha256:d1d3d08d1ae3d0a892124d8f607bd7f435d2c417a21a26bb3a4efa4604bcf58d",
+  "normalized_hash": "sha256:4fdb18a2186d2f36bfe48e628f2cf74b6813ec03f78e81b72b33a3acbd1c9d83",
+  "candidate_hash": "sha256:4fdb18a2186d2f36bfe48e628f2cf74b6813ec03f78e81b72b33a3acbd1c9d83",
   "changed": true,
-  "changed_line_count": 49,
-  "inserted_line_count": 38,
-  "deleted_line_count": 0,
+  "changed_line_count": 39,
+  "inserted_line_count": 0,
+  "deleted_line_count": 5,
   "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 6,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 6,
   "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 6,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 49,
-    "inserted": 38,
-    "deleted": 0,
-    "original_line_count": 15,
-    "candidate_line_count": 53
+    "changed": 39,
+    "inserted": 0,
+    "deleted": 5,
+    "original_line_count": 55,
+    "candidate_line_count": 50
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006"
+    ],
+    "changed_count": 6
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 6 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 6 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

@@ -1,32 +1,34 @@
 # Content Diff Report: site-planning-accessible-routes-vs-open-space
 
-Generated: 2026-05-03T13:44:28.643Z
+Generated: 2026-05-04T00:06:02.268Z
 Article ID: 3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:8593e46336671cae131c8140f8eec16e513904303f36f6f407c59b61e08f68a9`
-- Normalized: `sha256:bb526adb6fec16bf57333ed1d84ba261a19da2ce2f42290235ac176bd3dcf054`
-- Candidate: `sha256:c70970aaa020b46fde868efebd845bd309d9e5b66231f8912ccb8e089f7f4f87`
+- Original: `sha256:1d0457b28da1505042b11a8d93f220d75de52a8a9ede8d157f0c26576112964f`
+- Normalized: `sha256:25d94a61cb11ea4316d8334f48e7554b9c4e58c7dc51da6936f66e0ade83beae`
+- Candidate: `sha256:25d94a61cb11ea4316d8334f48e7554b9c4e58c7dc51da6936f66e0ade83beae`
 
 ## Line summary
 
-- Changed lines: 445
-- Inserted lines: 33
-- Deleted lines: 0
+- Changed lines: 361
+- Inserted lines: 0
+- Deleted lines: 11
 
 ## UI block preservation
 
 - UI blocks expected: 10
-- UI blocks preserved: 10
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 10
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 10 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

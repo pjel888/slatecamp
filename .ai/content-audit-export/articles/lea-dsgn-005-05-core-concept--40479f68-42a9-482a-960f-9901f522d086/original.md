@@ -1,10 +1,18 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Classify specialized health facilities as Group D institutional, apply consultation room minimums (7.43-9 sqm), calculate waiting areas at 1.5 sqm/person, verify DOH Sentrong Sigla compliance, and apply egress at 45m/60m travel distance.
+
 Specialized health facilities (primary care, BHC, RHU, outpatient clinics) are classified as **Group D** (institutional). These facilities require consultation rooms of minimum 9 sqm, waiting areas at 1.5 sqm per seat, and strict DOH regulatory compliance. They differ from acute-care hospitals, which have larger bed area requirements (typically 10.5 sqm per bed).
 
 ---
 
+
 ## Core Concept
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+
+<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
 
 Specialized health facilities—including primary care clinics, barangay health centers (BHC), rural health units (RHU), and outpatient specialist facilities—fall under **Group D** (institutional) occupancy per **PD 1096**. Unlike acute-care hospitals, these facilities provide ambulatory care without bed count requirements.
 
@@ -26,6 +34,10 @@ Specialized health facilities—including primary care clinics, barangay health 
 ---
 
 ## Key Provisions
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+
+<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
 
 | Element | Requirement | Source |
 |:------------------------ |:---------------------------------------- |:------------------------------------------------- |
@@ -53,6 +65,9 @@ DOH-accredited facilities under the **Sentrong Sigla** program require formal sp
 
 ---
 
+
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
+<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
 ## How It's Tested
 
 1. **Occupancy Distinction**: Do not confuse outpatient primary care (9 sqm consultation room) with acute hospitals (10.5 sqm bed area).
@@ -62,6 +77,13 @@ DOH-accredited facilities under the **Sentrong Sigla** program require formal sp
 > **Health Facility Anchors**: Group D occupancy. Consultation = 9 sqm. Treatment = 12 sqm. Waiting = 1.5 sqm/seat. Pharmacy = 4 sqm. Exit width = 7.6 mm/person.
 
 ---
+
+
+**Exam Tip — ERR-DSGN-022:** Outpatient clinics are Group D (institutional) NOT Group B (residential). Consultation room minimum = 9 sqm per DOH standards. Verify dual exits at 50+ occupancy.
+
+## Cross-References
+
+See **LEA-DSGN-005-08** (Community Health Centers) for Group D comparison, **LEA-DSGN-005-13** (Fire Stations) for essential facility standards, and **LEA-DSGN-008-01** (Fire Egress) for assisted evacuation requirements.
 
 ## Common Mistakes
 

@@ -4,15 +4,17 @@
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
-[/SLATECAMP_UI_BLOCK]
 
 - Identify Mesoamerican architectural elements: stepped pyramids with talud-tablero profiles, ceremonial plazas, and Aztec chinampa-based urbanism.
 - Distinguish Teotihuacan (1st–7th c. CE, unidentified builders) from Tenochtitlan (1325 CE, Aztec), correcting common exam confusions.
@@ -45,13 +47,10 @@ Think: *"Power, People, Adaptation"* — pyramids project power, plazas gather p
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 
-\
-
- component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
-[/SLATECAMP_UI_BLOCK]
+component="ExamTip" status="preserved"]
+<Note>
+**LEA Pattern:** Questions about this architect often present an unfamiliar b...
+</Note>
 ## LEA Exam Traps and Common Mistakes
 
 - **"The Aztecs built Teotihuacan":** This is one of the most common exam traps. Teotihuacan flourished from the 1st to 7th century CE and was already a ruin by the time the Aztecs (Mexica) rose to power in the 14th century. The Aztecs revered Teotihuacan as a sacred ancestral site and named it ("The Place Where the Gods Were Born"), but they did not build it. The builders of Teotihuacan remain unidentified by ethnic name.
@@ -93,3 +92,5 @@ D. Teotihuacan was a small ceremonial site; Tenochtitlan was the first city in t
 
 **Inca Architecture Ashlar Masonry**, **North American Indigenous Architecture**, **African Vernacular Earth Architecture**, **Masters Of The Golden Age**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

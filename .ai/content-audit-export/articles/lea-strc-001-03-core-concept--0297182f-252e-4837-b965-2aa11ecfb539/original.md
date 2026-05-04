@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Identify the three support types (hinge, roller, fixed) by symbol and constraint
+- State how many degrees of freedom each support restrains
+- Count reaction components for each support type
+- Explain why roller supports are used in long-span structures
 
 This topic covers the three main types of supports (boundary conditions) that anchor structures and constrain their motion. The LEA tests whether you can identify each support type and understand what degrees of freedom it restrains. You will NOT be tested on reaction calculation; focus on recognition and constraint definitions.
 
@@ -55,6 +62,13 @@ In Philippine structural design, supports are drawn on construction plans and de
 
 Or: Hinge = **H**old 2; Roller = **R**estrains 1; Fixed = **F**ixes 3.</Tip>
 
+
+## Related Articles
+
+See also: **Beam Types** (lea-strc-001-04) for how supports define beam classification, **Static Determinacy** (lea-strc-001-06) for how support count affects solvability, and **Bearing Wall Systems** (lea-strc-002-01) for how walls function as supports.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing hinge and roller: Both allow rotation, but hinge restrains BOTH x and y (develops Hx and Hy), while roller restrains ONLY ONE direction (typically y; develops only Hy).","Forgetting the moment reaction at fixed supports: A fixed support develops NOT just Hx and Hy but also a MOMENT M. This is essential for cantilever analysis.","Drawing roller supports on the wrong surface: A roller perpendicular to a horizontal surface restrains vertical movement. A roller perpendicular to a vertical surface restrains horizontal movement. Orientation matters.","Thinking support type determines if structure is stable: Three hinges or hinges in a collinear pattern do not stabilize a structure. Proper support arrangement, not just type, ensures stability."]} />

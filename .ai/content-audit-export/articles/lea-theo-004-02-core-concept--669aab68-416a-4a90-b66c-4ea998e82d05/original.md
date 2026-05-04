@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>Tropical passive design prioritizes ventilation over thermal mass, shading over orientation, and lightweight construction over heavyweight enclosure. The bahay kubo exemplifies all these principles: elevated on stilts, open floor plans with cross-ventilation, large overhangs, permeable bamboo flooring, and ventanillas (operable louvers) for stack effect. Effective design harnesses wind, sun path, and material thermal properties without mechanical air conditioning.</Callout>
+## Learning Goal
 
+Identify the core principles of tropical passive design — prioritize ventilation over thermal mass, shading over orientation, lightweight construction — and explain how these principles respond to the specific climatic challenges of the Philippines.
 ## Core Concept
 
 Passive design in tropical climates operates on fundamentally different physics than temperate or arid zones. While cold-climate passive design stores heat in thermal mass and hot-arid design alternates between daytime solar gain and nighttime radiative cooling, tropical design must dissipate continuous heat and humidity in an environment where nighttime temperatures remain high (22–25°C) and diurnal range is suppressed (typically 6°C or less).
@@ -156,29 +157,25 @@ The bahay kubo survives typhoons (flexible framing absorbs wind load), remains n
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Strategy", "Mechanism", "LEA-Testable Detail"]} rows={[['["Cross-Ventilation", "Pressure-driven flow through opposing apertures", "Minimum 15m plan depth for effective circulation; asymmetric outlet sizing (20–30% floor area) >inlet (6–10%)"]', '["Stack Effect", "Buoyancy-driven vertical air movement", "Requires ΔT ≥ 3–4°C; 3m+ stack height optimal; open stairwells more effective than shafts"]', '["Overhang Depth", "Solar altitude × sill geometry", "East wall 8am Manila (10°N) requires 2.5–3m; West wall 3pm requires 3–4m"]', '["Light Shelf", "Reflected daylight + reduced glare", "30–40% heat gain reduction; specular aluminum + diffuse ceiling"]', '["Lightweight Construction", "Fast thermal response", "2–3°C cooler during occupied hours vs. heavyweight; 35.9% better nighttime cooling effectiveness"]', '["Thermal Mass Debate", "Suppressed diurnal range (ΔT &lt;6°C)", "Default lightweight in Types I–II; mass justified only in Type III+ with proven nighttime cooling below 20°C"]', '["Roof Reflectance", "Albedo > 0.7 (white surface)", "Reduces surface temp 60→40°C; cuts interior heat gain 40%"]', '["Roof Insulation", "Prevents heat ingress (not loss)", "50–75mm fiberglass/foam reduces heat gain 25–30%"]', '["Bahay Kubo Principles", "Vernacular passive exemplar", "Elevation, overhangs, open plan, slat flooring, ventanillas, natural materials"]']]} />
-## How It's Tested on the LEA
-
-
-<ExamTip>1. **Cross-Ventilation Sizing:** "An office building plan is 18m (N-S) × 25m (E-W) in Cebu (Type IV climate). Prevailing wind: southwest (habagat, May–Oct). Specify aperture sizing for cross-ventilation and justify your inlet/outlet ratio."
-   - **Answer:** E-W width exceeds 15m effective ventilation depth. Solution: interior courtyard or atrium (6m×6m) to create two 9.5m zones on each side. SW-facing facades: inlet 6% floor area (1.5m² for 25m²), NE-facing outlet 25% (6.25m²). Asymmetry creates velocity.</ExamTip>
-
+ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Cross-Ventilation Sizing:** "An office building plan is 18m (N-S) × 25m (E-W) in Cebu (Type IV climate). Prevailing wind: southwest (habagat, May–Oct). Specify aperture sizing for cross-ventilation and justify your inlet/outlet ratio." - **Answer:** E-W width exceeds 15m effective ventilation depth. Solution: interior courtyard or atrium (6m×6m) to create two 9.5m zones on each side. SW-facing facades: inlet 6% floor area (1.5m² for 25m²), NE-facing outlet 25% (6.25m²). Asymmetry creates ve
+[/SLATECAMP_UI_BLOCK]
 
 <ExamTip>2. **Thermal Mass Rejection:** "A developer proposes thick concrete walls in an Eastern Visayas project (Type II, no dry season, nighttime temp 24°C). Critique this choice and propose an alternative."
    - **Answer:** Type II climate prevents nighttime thermal discharge (insufficient ΔT between wall [25°C] and ambient [24°C]). Concrete mass will trap daytime heat and re-radiate at night, degrading comfort. Alternative: 150mm lightweight block + 50mm EPS insulation; open floor plan with 20% window area + operable louvers for continuous ventilation. Stack effect via atrium for core cooling.</ExamTip>
 
-
 <ExamTip>3. **Overhang Design Calculation:** "A south-facing facade in Manila (latitude 14°N) has a 4m tall wall. Design an overhang for the 8am winter-sun position (altitude 35°). Show calculation and final projection depth."
    - **Answer:** Overhang depth = Wall height / tan(altitude) = 4m / tan(35°) ≈ 4m / 0.7 ≈ 5.7m. However, this is winter minimum; at 8am summer (altitude ~60°), same depth overhangs 1.4m shadow. A compromise 3.5–4m overhang is typical, accepting some summer morning sun in exchange for winter protection.</ExamTip>
-
 
 <ExamTip>4. **Bahay Kubo Retrofit:** "A heritage bahay kubo (open floor, slat floors, large overhangs) must accommodate typhoon-resistant sliding doors and insect screens (required for upgraded residential standard). Identify three design moves that preserve passive ventilation."
    - **Answer:** (a) Specify aluminum-frame sliding doors with ventilation louvers; when closed, louvers maintain 15% aperture area for stack flow. (b) Replace traditional fabric insect screens with perforated metal (aluminum 50% open area); reduces airflow resistance ~20% vs. fine mesh. (c) Maintain elevated slat floor by raising door sills 300–500mm, preserving under-structure ventilation.</ExamTip>
 
-
 <ExamTip>5. **Light Shelf Integration:** "An administrative office in Quezon City (Type IV) has south-facing windows (1m sill height, 1.8m tall). Design a light shelf strategy including material, reflectance, and integration with ceiling."
    - **Answer:** Specular aluminum light shelf at 1.5m height (0.5m above sill). Reflectance minimum 0.8 (mirror finish). Redirect sunlight to suspended acoustic ceiling (white, diffuse, albedo >0.6) located 0.3m above shelf. Result: 30–40% reduction in sill-level heat while achieving 300–500 lux interior illumination at 3–4m depth.</ExamTip>
 
+<Callout>Tropical passive design prioritizes ventilation over thermal mass, shading over orientation, and lightweight construction over heavyweight enclosure. The bahay kubo exemplifies all these principles: elevated on stilts, open floor plans with cross-ventilation, large overhangs, permeable bamboo flooring, and ventanillas (operable louvers) for stack effect. Effective design harnesses wind, sun path, and material thermal properties without mechanical air conditioning.</Callout>
 
 ## Common Mistakes
 
@@ -187,7 +184,6 @@ The bahay kubo survives typhoons (flexible framing absorbs wind load), remains n
 <WikiMistakeCard mistake="Applying arid-climate thermal-mass strategy:" correction="This is the highest-scored error on tropical design questions. Heavyweight concrete walls that store 3–4°C of daytime heat will NOT cool at night in a Type II climate (nighttime temp ~24°C, wall ~26°C)." context="Students who cite \"thermal mass reduces peak cooling load by 6–8°C\" are applying wrong climate region logic." />
 
 <WikiMistakeList mistakes={["Underestimating cross-ventilation effectiveness:. Designers who size windows at 10–12% of floor area (template values) fail to account for asymmetry. An 8% inlet + 28% outlet is dramatically more effective than 18% + 18% equal split.", "Conflating stack effect with chimney draft:. Stack effect requires continuous buoyancy-driven flow (ΔT ≥ 3–4°C). In tropical 24-hour ambient temps, stack only operates strongly 5–9am and 6–9pm. Relying on stack for midday cooling is a design error.", "Overdesigning roof insulation:. 50–75mm is sufficient for tropics (heat ingress prevention, not loss). Designers specifying 100–150mm are incurring embodied carbon and cost without performance gain. BERDE scoring penalizes excess insulation.", "Ignoring seasonal monsoon reversal:. Buildings designed only for habagat (southwest May–Oct) will have poor ventilation during amihan (northeast Nov–Apr) if apertures are one-sided. Operable screens or facade adaptability is essential for year-round comfort across monsoon transitions."]} />
-
 
 ## Key Terms
 
@@ -203,7 +199,7 @@ The bahay kubo survives typhoons (flexible framing absorbs wind load), remains n
 
 **Diurnal Range** — Daily temperature swing (high-to-low); suppressed in maritime tropics (6°C or less), preventing thermal-mass cooling strategy that depends on 15–20°C range.
 
-**Albedo** — Solar reflectance of surface (0–1 sclea); white/light surfaces (albedo 0.7+) reduce roof/wall surface temperatures 25–30°C compared to dark finishes.
+**Albedo** — Solar reflectance of surface (0–1 scale); white/light surfaces (albedo 0.7+) reduce roof/wall surface temperatures 25–30°C compared to dark finishes.
 
 **Ventanilla** — Traditional Philippine operable louvre window, located high on walls; adjustable for stack ventilation, rain protection, and wind control; key bahay kubo feature.
 
@@ -212,3 +208,10 @@ The bahay kubo survives typhoons (flexible framing absorbs wind load), remains n
 **Bahay Kubo** — Traditional Philippine elevated wooden dwelling exemplifying passive tropical design: stilts, wide overhangs, open floor plan, permeable flooring, large windows, operable louvers, natural materials.
 
 **Embodied Carbon** — CO₂ released during material extraction, manufacturing, transport, and installation; relevant to LEA because BERDE penalizes excess insulation and favors low-impact tropical materials (bamboo, wood, lightweight block).
+
+## Related Articles
+
+See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-07-core-concept**, **lea-theo-004-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

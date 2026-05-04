@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The Vitruvian Triad is tested on virtually every Philippine Architecture Licensure Examination. You must know the three principles precisely, understand their Latin and English terminology, and be able to explain each with modern architectural examples. This is foundational theory that cannot be avoided or minimized. Examiners expect candidates to articulate clearly how firmitas, utilitas, and venustas interact to define architecture.
-</Callout>
+## Learning Goal
 
+Identify and explain the Vitruvian Triad — firmitas (strength), utilitas (function), venustas (beauty) — as the foundational framework for architectural quality, and apply it to analyze how design decisions satisfy all three simultaneously.
 ## Core Concept
 
 Nearly two thousand years ago, the Roman military engineer, architect, and theorist **Vitruvius** (Marcus Vitruvius Pollio, ca. 80–15 BCE) wrote the only surviving architectural treatise from antiquity: *De Architectura* (Ten Books on Architecture). Written during the reign of Caesar Augustus in the first century BCE, Vitruvius's Ten Books synthesized Greek architectural philosophy with Roman engineering practice and remain the foundation of architectural theory to this day. Within this monumental treatise, Vitruvius articulated a tripartite definition of architecture that has structured architectural thinking for two millennia: **firmitas, utilitas, and venustas**.
@@ -58,6 +57,10 @@ Critical error: Do NOT treat firmitas, utilitas, and venustas as equal concerns 
 
 <ExamTip>**Pattern 5: Modern Application.** Questions address how Vitruvian principles apply to contemporary architecture. Example stem: "Contemporary sustainable design, which minimizes energy use through passive design strategies, primarily addresses which Vitruvian principle?" Answer: Utilitas—the building performs its function (maintaining comfort) efficiently. Though sustainability also supports firmitas (durability) and venustas (honest expression of passive performance).</ExamTip>
 
+<Callout>
+The Vitruvian Triad is tested on virtually every Philippine Architecture Licensure Examination. You must know the three principles precisely, understand their Latin and English terminology, and be able to explain each with modern architectural examples. This is foundational theory that cannot be avoided or minimized. Examiners expect candidates to articulate clearly how firmitas, utilitas, and venustas interact to define architecture.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Treating the three principles as equal in priority" correction="Firmitas is foundational; without it, the other two are impossible. An architect cannot sacrifice structural integrity for aesthetic effect or functional optimization. Firmitas first; then utilitas and venustas are integrated simultaneously." context="Understanding this hierarchy prevents the false belief that design trade-offs between principles are legitimate. The LEA tests whether you recognize that structural soundness is non-negotiable." />
@@ -87,3 +90,10 @@ Critical error: Do NOT treat firmitas, utilitas, and venustas as equal concerns 
 **Spatial Coherence** — The quality of a building's spaces and their relationships creating a unified, comprehensible whole rather than disconnected fragments.
 
 **Architectural Expression** — The translation of structural, functional, and aesthetic principles into visible form that communicates meaning and intention.
+
+## Related Articles
+
+See also within Nature of Architecture: **lea-theo-001-01-core-concept**, **lea-theo-001-07-core-concept**, **lea-theo-001-08-core-concept**, **lea-theo-001-10-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

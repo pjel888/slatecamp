@@ -1,10 +1,10 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Fasteners are mechanical devices that join materials by tension, compression, or shear. LEA exams test your ability to classify fasteners by type and material grade, apply sizing conventions (penny weights for nails, gauge for bolts), specify fastener materials per ASTM standards, and calculate pull-out strength for design adequacy.
-
+Classify fastener systems (nails, screws, bolts, anchors, rivets, welding, adhesives) by material, load capacity, substrate compatibility, and installation method, and select the appropriate fastener for a given structural or non-structural connection.
 ## Core Concept
 
-Fasteners are classified by type (nails, screws, bolts, rivets) and material grade. Nails are categorized by length and diameter. Common nails have a larger diameter and are used for general construction and framing. Finishing nails have a smaller diameter and smoother shaft, minimizing surface damage, suitable for trim and cabinetry. Roofing nails include a neoprene washer to prevent leakage. Nail sizes are measured in penny weight, abbreviated 'd' (penny), historically based on the weight of 100 nails. A 16d common nail is 3.5 inches long; a 10d common nail is 3 inches long. Penny weight does not sclea linearly; reference tables are essential.
+Fasteners are classified by type (nails, screws, bolts, rivets) and material grade. Nails are categorized by length and diameter. Common nails have a larger diameter and are used for general construction and framing. Finishing nails have a smaller diameter and smoother shaft, minimizing surface damage, suitable for trim and cabinetry. Roofing nails include a neoprene washer to prevent leakage. Nail sizes are measured in penny weight, abbreviated 'd' (penny), historically based on the weight of 100 nails. A 16d common nail is 3.5 inches long; a 10d common nail is 3 inches long. Penny weight does not scale linearly; reference tables are essential.
 
 Screws are classified by drive type (Phillips, slotted, square/Robertson, hex head), material (steel, stainless, brass), and application. Wood screws have a coarse thread and sharp point for timber; self-tapping screws (or sheet metal screws) have finer threads and cut their own thread pilot in metal. Lag screws (or lag bolts) are heavy-duty fasteners with a hex head, used for timber-to-timber or timber-to-concrete applications. Machine screws are precision fasteners with consistent thread pitch, used with nuts for metal assembly.
 
@@ -21,7 +21,7 @@ Pull-out strength (or withdrawal strength) depends on fastener diameter, materia
 | Common Nail Size (16d) | 3.5 inches long | ASTM F1667 | Standard framing fastener; penny weight guides sizing |
 | Finishing Nail Size (16d) | 3-1/4 to 3-1/2 inches long | ASTM F1667 | Trim and cabinetry; smaller diameter than common |
 | Roofing Nail | 1.75 to 2 inches + neoprene washer | ASTM F1667 | Leak prevention; washer diameter ≥ 0.5 inches |
-| Penny Weight (d) | 1d through 60d sclea | ASTM F1667 | Non-linear relationship; reference tables required |
+| Penny Weight (d) | 1d through 60d scale | ASTM F1667 | Non-linear relationship; reference tables required |
 | Wood Screw Pull-Out Strength | 25-50 lbf per inch embedment | NDS / ASTM D1761 | Depends on wood density and fastener diameter |
 | Lag Screw Pull-Out Strength | 300-500 lbf per inch | NDS / ASTM D1761 | Heavy-duty timber fastening |
 | ASTM A307 Bolt Tensile Strength | 55-60 ksi (Grade A/B) | ASTM A307 | General-purpose low-strength bolts |
@@ -54,3 +54,10 @@ Philippine construction standards adopt ASTM fastener classifications, though ma
 <WikiMistakeCard mistake="Using wood screws instead of lag screws to attach a heavy timber beam to a concrete foundation, assuming screw type has no structural impact." correction="Wood screws in concrete provide minimal pull-out strength and may strip out. Lag screws (or wedge anchors) are designed for timber-to-concrete and provide 300-500 lbf per inch of embedment." />
 
 <WikiMistakeList mistakes={["Confusing ASTM A325 (120 ksi structural) with A307 (60 ksi general-purpose); using the wrong grade leads to undersized bolts", "Calculating pull-out strength without considering embedment depth (the depth the fastener is driven into the material)", "Omitting neoprene washers on roofing nails, allowing water infiltration and fastener corrosion"]} />
+
+## Related Articles
+
+See also within Hardware, Joints, and Fasteners: **lea-matl-008-01-core-concept**, **lea-matl-008-02-core-concept**, **lea-matl-008-04-core-concept**, **lea-matl-008-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

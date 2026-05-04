@@ -1,32 +1,33 @@
 # Content Diff Report: widths-slopes
 
-Generated: 2026-05-03T13:45:16.498Z
+Generated: 2026-05-04T00:06:57.252Z
 Article ID: 184a1593-2137-45ee-80d4-99c1c4595e84
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:45cfa45c75154018dccb6ad917d078c9a1032b4c5573f0232c9ff62cdf0e9cc2`
-- Normalized: `sha256:626d4acb1efe56a83fe640c16f97355605af6f00fa762d9f14c63641ef0f1779`
-- Candidate: `sha256:d4d73a2d60a4e287754dacb216c4b64c97946324b58868cc4a6a10881a7c7ec2`
+- Original: `sha256:d4d73a2d60a4e287754dacb216c4b64c97946324b58868cc4a6a10881a7c7ec2`
+- Normalized: `sha256:a844ed8a85fb4390d2de5c80f7080fc180cdb99e6aa884b57fe4668dc33e7ed2`
+- Candidate: `sha256:a844ed8a85fb4390d2de5c80f7080fc180cdb99e6aa884b57fe4668dc33e7ed2`
 
 ## Line summary
 
-- Changed lines: 128
-- Inserted lines: 32
-- Deleted lines: 0
+- Changed lines: 26
+- Inserted lines: 0
+- Deleted lines: 13
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

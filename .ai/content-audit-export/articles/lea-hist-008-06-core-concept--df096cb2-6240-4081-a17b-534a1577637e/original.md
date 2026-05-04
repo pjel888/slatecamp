@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>**Postmodernism** represents the LEA's crucial shift from modernism's utopian ambitions to irony, historicism, and color. The exam tests whether you recognize Postmodern buildings through their rejection of "less is more," can cite key projects and architects, and understand why the movement emerged as modernism's antithesis.</Callout>
+## Learning Goal
 
+Identify the defining characteristics of Postmodernism — historical reference, ornament, color, irony, contextualism, 'less is a bore' — and recognize key architects (Venturi, Graves, Moore, Stirling, Gehry) and works (Vanna Venturi House, Piazza d'Italia, AT&T Building).
 ## Core Concept
 **Postmodernism** exploded onto architecture in the 1970s–80s as a deliberate repudiation of modernism's dogma. Where modernism pursued reduction, universal principles, and "form follows function," Postmodernism embraced contradiction, historical reference, applied color, and irony. **Robert Venturi's** slogan "Less is a bore" became the movement's rallying cry against modernist austerity.
 
@@ -35,6 +36,8 @@ By the 1990s, Postmodernism's playfulness had exhausted itself in the eyes of ma
 
 <ExamTip>**Pattern 4: Contextual and semantic intent.** "The **Vanna Venturi House** references a child's drawing of a house. What does this choice communicate about Postmodern values?" Students articulate the movement's embrace of vernacular and popular imagery as legitimate architectural references.</ExamTip>
 
+<Callout>**Postmodernism** represents the LEA's crucial shift from modernism's utopian ambitions to irony, historicism, and color. The exam tests whether you recognize Postmodern buildings through their rejection of "less is more," can cite key projects and architects, and understand why the movement emerged as modernism's antithesis.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Treating Postmodernism as mere ornament or decoration" correction="Postmodernism is fundamentally about meaning, reference, and pluralism. The ornament serves ideological purposes—to communicate, reference history, and reject modernist universalism—not aesthetic preferences alone." context="Test questions probe whether students understand Postmodernism as a philosophical movement rather than a stylistic choice. This distinction is essential." />
@@ -54,3 +57,10 @@ By the 1990s, Postmodernism's playfulness had exhausted itself in the eyes of ma
 - **Pediment**: A triangular gable above a door, window, or facade; a classical form frequently quoted and exaggerated by Postmodernists.
 - **Semantic architecture**: Buildings designed to mean or communicate through form, ornament, and historical reference beyond mere functional expression.
 - **Anti-functionalism**: The philosophy that architecture need not subordinate all design decisions to functional requirements; rejecting "form follows function."
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

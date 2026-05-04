@@ -1,18 +1,38 @@
 {
   "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
   "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
-  "generated_at": "2026-05-03T13:44:10.926Z",
+  "generated_at": "2026-05-04T00:05:38.141Z",
   "original_hash": "sha256:aab51d5756cda8ab97264588e637112f1883f8be354be955002b69a6c6d59799",
-  "normalized_hash": "sha256:0cb71e610298ec6d7a79ff22117cf06817ef5199083d1077128a0a8c8070820e",
-  "candidate_hash": "sha256:29267de2e250c0ccf0d0156b5cae06324622ddb1dea4a044cae654160254a673",
+  "normalized_hash": "sha256:ddf417fe4d9e7f63f275de3abc3d117511b3e1e42184c3be6beca679e120c34d",
+  "candidate_hash": "sha256:ddf417fe4d9e7f63f275de3abc3d117511b3e1e42184c3be6beca679e120c34d",
   "ui_blocks_count": 9,
-  "placeholders_found": 9,
-  "placeholders_resolved": 9,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 9,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006",
+    "ui_0007",
+    "ui_0008",
+    "ui_0009",
+    "ui_0011"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition.",
+    "UI block ui_0007 was not used during composition.",
+    "UI block ui_0008 was not used during composition.",
+    "UI block ui_0009 was not used during composition.",
+    "UI block ui_0011 was not used during composition."
+  ]
 }

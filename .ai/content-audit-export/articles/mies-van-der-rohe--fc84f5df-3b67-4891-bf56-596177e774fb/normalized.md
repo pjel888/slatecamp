@@ -4,15 +4,17 @@
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
-[/SLATECAMP_UI_BLOCK]
 
 - Identify Mies van der Rohe's key works (Barcelona Pavilion, Farnsworth House, Seagram Building, Crown Hall) and their defining architectural innovations.
 - Explain Mies's core concepts — "less is more," universal space, skin-and-bones construction, and cruciform columns — and distinguish his approach from Le Corbusier's.
@@ -56,19 +58,15 @@ You are standing inside the Barcelona Pavilion and notice there are no interior 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 Extracted summary:
 
-\
-
- component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
-[/SLATECAMP_UI_BLOCK]
+component="ExamTip" status="preserved"]
+<Note>
+**LEA Pattern:** Questions about this architect often present an unfamiliar b...
+</Note>
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
-[/SLATECAMP_UI_BLOCK]
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap 1: Confusing Mies's "Free Plan" with Le Corbusier's "Plan Libre."** Both achieve open, flexible interiors but through different means. Le Corbusier uses a concrete column grid (Dom-ino) with non-load-bearing partitions inside. Mies uses freestanding planes of marble, onyx, or glass that slide through space without ever fully enclosing rooms. Mies's plan "flows"; Corbusier's plan is "free to rearrange."
@@ -118,3 +116,5 @@ D. It introduced the ribbon window as a primary design element
 
 **The Bauhaus And International Style**, **Le Corbusier Five Points**, **Brutalism**, **Post Modernism**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

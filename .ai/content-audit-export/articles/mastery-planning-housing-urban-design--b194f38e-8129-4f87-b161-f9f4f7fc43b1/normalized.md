@@ -3,6 +3,7 @@
 ## Learning Goal
 
 Achieve synthesis-level understanding of Planning as a scale-based system from individual site to regional governance. Connect site planning to Architectural Design (FAR, setbacks, parking), housing standards to Laws (BP 220, PD 957, RA 7279), governance to Professional Practice (CLUP process, LGU authority), and landscape ecology to Environmental Design. Move fluently between scales and trace the legislative chain governing Philippine planning.
+<ArticleMedia id="media-mastery-planning-housing-urban-design" a type="image" caption="Planning, Housing & Urban Design — Scale-Based Mental Model Diagram" description="Multi-level concentric scale diagram: Level 1 (innermost) — Site/Block scale: Site Planning & Environmental Analysis (topography, drainage, setbacks, lot coverage); Level 2 — Subdivision/Community scale: Housing & Human Settlements (BP 220, PD 957, lot arrangements, roads, open space); Level 3 — Neighborhood scale: Landscape Architecture & Ecology (green infrastructure, ecological corridors); Level 4 — City/Region scale (outermost): Urban & Regional Planning (transportation networks, land use, density gradients). Connecting arrows showing legislation chain: RA 7160 (LGC) → CLUP → Zoning Ordinance → BP 220/PD 957. Cross-links to Architectural Design (site planning), Professional Practice (governance), and Laws." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## The Scale-Based Mental Model
 
@@ -22,9 +23,10 @@ Achieve synthesis-level understanding of Planning as a scale-based system from i
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
 Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
+Extracted summary:
 - Props: (none)
-- Text: When you encounter a planning question on the LEA, your first move should be to identify the scale it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the scale focuses your recall.
-[/SLATECAMP_UI_BLOCK]
+- Text: When you encounter a planning question on the LEA, your first move should be to identify the sclea it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the sclea focuses your recall.
 
 ## Site Analysis → Urban Planning: The Upward Chain
 
@@ -46,7 +48,6 @@ Same analytical process applied at different scales:
 Extracted summary:
 - Props: (none)
 - Text: The connection between planning and design is most visible in the site plan — the drawing that shows a building in its site context, with setbacks, landscaping, parking, access drives, and open space all shown. If you are comfortable reading and drawing site plans, you are already thinking across the planning-design boundary.
-[/SLATECAMP_UI_BLOCK]
 
 ## Connections to Laws & Codes
 
@@ -60,9 +61,8 @@ Same law = different angles:
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiExamTable" status="preserved"]
 Extracted summary:
-- Props: headers="{[\\"Law\\",\\"Planning Implication\\",\\"Laws & Codes Implication\\"]}", rows="{[[\\"PD 957\\",\\"Minimum subdivision standards\\",\\"Developer obligations and buyer protections\\"],[\\"BP 220\\",\\"Reduced standards for affordable housing\\",\\"Legal housing category definitions\\"],[\\"RA 7279\\",\\"Socialized housing quotas, resettlement frameworks\\",\\"Informal settler rights, eviction procedures\\"],[\\"RA 7160\\",\\"CLUP mandate, LGU planning authority\\",\\"LGU powers, accountability, devolution framework\\"],[\\"PD 1096\\",\\"Building setbacks, height limits, lot coverage\\",\\"Permit requirements, penalties, professional liability\\"],[\\"PD 1586\\",\\"EIA requirement for critical projects\\",\\"Environmental compliance certificate as legal prerequisite\\"]]}"
+- Props: headers="{["Law","Planning Implication","Laws & Codes Implication"]}", rows="{[["PD 957","Minimum subdivision standards","Developer obligations and buyer protections"],["BP 220","Reduced standards for affordable housing","Legal housing category definitions"],["RA 7279","Socialized housing quotas, resettlement frameworks","Informal settler rights, eviction procedures"],["RA 7160","CLUP mandate, LGU planning authority","LGU powers, accountability, devolution framework"],["PD 1096","Building setbacks, height limits, lot coverage","Permit requirements, penalties, professional liability"],["PD 1586","EIA requirement for critical projects","Environmental compliance certificate as legal prerequisite"]]}"
 - Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Connections to Environmental Design
 
@@ -94,11 +94,9 @@ Bioclimatic design at building scale (Environmental Design) and urban scale (Pla
 - **Confusing CLUP with Zoning Ordinance.** CLUP = policy; Zoning Ordinance = legal instrument.
 - **Treating site planning and urban planning as unrelated.** Same analytical discipline at different resolutions.
 
-\
-Extracted summary:
-- Props: 
-- Text: Environmental Impact Assessment (EIA), required under PD 1586, operates across scleas — from the site (direct impacts) to the regional (cumulative and downstream impacts). Understanding EIA as a multi
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+Environmental Impact Assessment (EIA), required under PD 1586, operates across scleas — from the site (direct impacts) to the regional (cumulative and downstream impacts). Understanding EIA as a multi
+</Note>
 ## Related Articles
 
 - Overview & Study Strategy for Planning, Housing & Urban Design

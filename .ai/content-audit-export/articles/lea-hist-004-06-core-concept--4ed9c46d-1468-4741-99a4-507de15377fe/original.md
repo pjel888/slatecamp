@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your ability to identify **Ottoman** architectural characteristics and recognize major Ottoman mosques and public buildings. You must understand the centralized dome system, the role of the architect **Sinan**, and how Ottoman design synthesizes Byzantine and Islamic traditions.</Callout>
+## Learning Goal
 
+Identify the Ottoman dome system — central dome, four half-domes, pendentives, cascading buttressing — and explain how Sinan achieved the iconic Ottoman silhouette exemplified by the Selimiye and Süleymaniye Mosques.
 ## Core Concept
 **Ottoman architecture** (15th–19th centuries) represents Islam's most successful synthesis of Byzantine structural logic with Islamic spatial needs. The Ottomans conquered Constantinople (1453) and inherited Hagia Sophia—a monumental Byzantine dome surrounded by half-domes. Rather than abandon this model, Ottoman architects embraced it and developed it further. The result is the **centralized domed mosque**, a distinctly Ottoman contribution to Islamic architecture.
 
@@ -51,6 +52,8 @@ By the 18th century, Ottoman architecture absorbed European Baroque elements (fl
 <ExamTip>**Pattern 5: Külliye Complex**
 "The Süleymaniye represents not only a mosque but a **külliye**. Define this building type and explain why such complexes were architecturally and socially significant in the Ottoman empire." (Answer: Külliye is a complex of religious and social buildings surrounding a central mosque—madrasa, hospital, public bath, caravanserai, soup kitchen. Demonstrated Ottoman piety, provided social services, and established architectural prestige.)</ExamTip>
 
+<Callout>The LEA tests your ability to identify **Ottoman** architectural characteristics and recognize major Ottoman mosques and public buildings. You must understand the centralized dome system, the role of the architect **Sinan**, and how Ottoman design synthesizes Byzantine and Islamic traditions.</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing Ottoman Domes with Byzantine Domes" correction="Ottoman domes rest on cascading half-domes and pendentives; Byzantine domes (like Hagia Sophia's) are supported by the wall mass and quarter-domes of the building." context="The Ottoman innovation was to refine the Byzantine system and use light to dematerialize the dome, creating the impression of floating space." />
@@ -58,7 +61,6 @@ By the 18th century, Ottoman architecture absorbed European Baroque elements (fl
 <WikiMistakeCard mistake="Treating Sinan as the Only Ottoman Architect" correction="While **Sinan** was the most influential Ottoman architect, others continued his tradition. **Sedefkâr Mehmed Ağa** (architect of the Blue Mosque) represents the post-Sinan development of his principles." context="Understanding the school of Sinan, not just Sinan individually, is essential." />
 
 <WikiMistakeList mistakes={["Overlooking the Külliye as an Architectural Contribution. Students focus on the mosque and ignore the complex. The **külliye** is Ottoman architecture's social and urban signature. It demonstrates how religious buildings integrated hospitals, schools, public baths, and soup kitchens—a holistic urban vision.", "Assuming Ottoman Decoration Is Minimal. While Ottoman mosques use less muqarnas and arabesque than Persian or Andalusian traditions, they employ **Iznik tilework** extensively. Blue, white, and red glazed tiles cover significant wall areas and frame windows. The Blue Mosque demonstrates this clearly. Calling Ottoman decoration \"restrained\" misses the sophistication of tile composition.", "Misidentifying Hagia Sophia's Role in Ottoman Architecture. The Ottomans converted **Hagia Sophia** to a mosque in 1453, and it served as the primary Friday mosque initially. However, Sinan and later architects did not slavishly copy Hagia Sophia. Instead, they abstracted its dome-and-half-dome logic and refined it. The Süleymaniye and Selimiye are innovations, not imitations."]} />
-
 
 ## Key Terms
 
@@ -83,3 +85,10 @@ By the 18th century, Ottoman architecture absorbed European Baroque elements (fl
 **Tulip Period** — Ottoman period (1718–1730 CE); marked by Baroque influence and decoration; represents European stylistic integration into Ottoman tradition.
 
 <Warn>Do not confuse Ottoman domes with Byzantine domes. Ottoman domes rest on *cascading half-domes and pendentives*; Byzantine domes (like Hagia Sophia) are supported by *wall mass*. The Ottoman refinement created the illusion of a floating, weightless dome through light and geometric clarity. Hagia Sophia served as *inspiration*, not model—Sinan invented an Ottoman system, not merely copied Byzantine precedent. This distinction is directly tested on the LEA.</Warn>
+
+## Related Articles
+
+See also within Islamic Architecture: **lea-hist-004-01-core-concept**, **lea-hist-004-02-core-concept**, **lea-hist-004-05-core-concept**, **lea-hist-004-07-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

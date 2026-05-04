@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Paint and coating estimation determines the volume (liters) of paint required to cover a given surface area. Coverage rates vary by paint type, surface texture, and number of coats. In the Philippines, interior and exterior paints are typically specified with a coverage rate in square meters per liter (m²/L). Understanding this fundamental relationship is critical for material budgeting and cost control.
-
+Calculate paint coverage requirements by surface area, number of coats, and paint coverage rate per liter (typically 8-12 m²/L per coat), accounting for substrate porosity and wastage in interior and exterior painting estimates.
 ## Core Concept
 
 Paint coverage is inversely proportional to the required thickness and surface porosity. The basic formula is: _Paint required (liters) = Total surface area (m²) ÷ Coverage rate (m²/L)_. Coverage rates are printed on paint cans by manufacturers and vary by paint type, color, and surface condition.
@@ -136,3 +136,10 @@ On the LEA, paint estimation questions focus on:
 <WikiMistakeCard mistake="Rounding DOWN the final paint quantity" correction="Always round UP when ordering paint. Shortages mid-project are costly; excess paint can be stored or used for touch-ups." />
 
 <WikiMistakeList mistakes={["Confusing m²/L (coverage rate) with L/m² (inverse)", "Forgetting that one coat may not be enough for color change or problem surfaces", "Using the printed coverage rate without accounting for application method (brush vs. spray reduces coverage)", "Mixing units: area in feet and coverage in metric, or vice versa"]} />
+
+## Related Articles
+
+See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-02-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

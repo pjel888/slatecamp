@@ -1,5 +1,15 @@
 # Mies van der Rohe
 
+## Learning Goal
+
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+
+- Identify Mies van der Rohe's key works (Barcelona Pavilion, Farnsworth House, Seagram Building, Crown Hall) and their defining architectural innovations.
+- Explain Mies's core concepts — "less is more," universal space, skin-and-bones construction, and cruciform columns — and distinguish his approach from Le Corbusier's.
+- Analyze how Mies's philosophy of structural clarity and spatial fluidity shaped modern skyscraper design and urban planning (e.g., Seagram Building's public plaza).
+
 ## The Real-World Scenario (The Hook)
 
 You are standing inside the Barcelona Pavilion and notice there are no interior doors, no corridors, and no enclosed rooms — just free-standing planes of travertine, onyx, and glass sliding past each other in open space. Your LEA reviewer asks: "What is the structural principle that makes this spatial fluidity possible, and how does it differ from Le Corbusier's approach?" Your answer must be precise.
@@ -35,6 +45,9 @@ You are standing inside the Barcelona Pavilion and notice there are no interior 
 | Free-Flowing Plan | Non-rectilinear spatial arrangement using freestanding planes | Look for: walls that do not touch floor and ceiling simultaneously; sliding spatial layers |
 | Cruciform Column | A column with a cross-shaped (+) section | Look for: Barcelona Pavilion, Tugendhat House — these are Mies's signature structural members |
 
+<Example>The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.</Example>
+
+<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap 1: Confusing Mies's "Free Plan" with Le Corbusier's "Plan Libre."** Both achieve open, flexible interiors but through different means. Le Corbusier uses a concrete column grid (Dom-ino) with non-load-bearing partitions inside. Mies uses freestanding planes of marble, onyx, or glass that slide through space without ever fully enclosing rooms. Mies's plan "flows"; Corbusier's plan is "free to rearrange."
@@ -77,3 +90,10 @@ C. It was the first building to use béton brut as a facade material
 D. It introduced the ribbon window as a primary design element
 
 > **Correct Answer: B.** The Seagram Building was set back from Park Avenue, creating a generous public plaza — a deliberate sacrifice of rentable area. This gesture influenced the 1961 New York City Zoning Resolution, which incentivized developers to provide public open space in exchange for additional floor area.
+
+---
+
+## Cross‑References
+
+**The Bauhaus And International Style**, **Le Corbusier Five Points**, **Brutalism**, **Post Modernism**
+

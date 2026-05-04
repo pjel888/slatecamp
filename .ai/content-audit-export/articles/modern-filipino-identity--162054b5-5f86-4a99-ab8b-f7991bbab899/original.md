@@ -3,6 +3,14 @@
 
 ---
 
+
+
+## Learning Goal
+
+- Trace the three waves of post-independence Filipino architectural identity: Modernist/Brutalist (Locsin), Neo-Vernacular (Mañosa), and Contemporary Tropical.
+- Explain the principles of Tropical Regionalism — cross-ventilation, wide overhangs, elevated floors, high ceilings, and orientation to monsoon winds.
+- Apply PD 1096 RIRR provisions on indigenous materials maximization in public building design, and distinguish Neo-Vernacular from literal historical imitation.
+
 ## The Real-World Scenario (The Hook)
 
 You are designing a public library in a coastal Philippine municipality. Your client wants a building that "looks Filipino" — not a copy of an American strip mall, not a concrete box, not a literal bahay kubo with air-conditioning bolted on. How do you create architecture that breathes with the tropical climate, speaks with indigenous materials, and serves contemporary needs? This is the central question that has driven Philippine architecture since independence in 1946.
@@ -30,7 +38,7 @@ You are designing a public library in a coastal Philippine municipality. Your cl
 
 ### Tropical Regionalism — Design Strategies
 
-| Strategy | Description | Philippine Climate Rationlea |
+| Strategy | Description | Philippine Climate rationale |
 |----------|-------------|----------------------------|
 | **Wide overhangs and eaves** | Roof extends well beyond wall plane | Shades walls from direct tropical sun; protects from monsoon rain |
 | **Cross-ventilation** | Openings on opposite walls aligned with prevailing winds | Eliminates or reduces need for mechanical cooling; responds to Amihan (NE) and Habagat (SW) |
@@ -75,6 +83,26 @@ You are designing a public library in a coastal Philippine municipality. Your cl
 
 ---
 
+<Tip>
+
+Memory Aid: Three Waves of Filipino Identity — 'MNC' (Modernist, Neo-Vernacular, Contemporary). 1950s-1970s: Leandro Locsin's 'floating volume'. 1970s-2000s: Mañosa's indigenous materials. 2000s-present: Fusion of BERDE/LEED with local craft.
+
+</Tip>
+
+<ExamTip>
+
+LEA Pattern: Questions test which architect belongs to which wave. Leandro Locsin = First Wave (Modernist/Brutalist, CCP, PICC). Francisco Mañosa = Second Wave (Neo-Vernacular, Coconut Palace). Ed Calma/Lor Calma = Third Wave (Contemporary Tropical). Know the key buildings for each.
+
+</ExamTip>
+
+<LawCallout code="ra9266" section="Section 3 - Practice of Architecture">
+
+
+PD 1096 Revised IRR mandates that locally produced materials (marble, stone, adobe, clay tiles, wood, coco wood, kapis shells) should be MAXIMIZED in public buildings unless banned by government for conservation purposes. This is a legal mandate, not just design preference.
+
+
+</LawCallout>
+
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap: Equating "Filipino architecture" with "bahay kubo."** Neo-Vernacular is NOT about literally building nipa huts. It is about extracting the **principles** — elevated floor, cross-ventilation, open plan, indigenous materials, climate responsiveness — and reinterpreting them in contemporary construction. Mañosa used concrete and steel alongside bamboo and coconut wood.
@@ -110,9 +138,11 @@ B) The use of locally produced materials such as marble, stone, adobe, clay tile
 C) Only imported materials meeting international standards may be used in public buildings
 D) Indigenous materials may only be used for decorative purposes, not structural elements
 
-<LawCallout code="nbcp">
+<LawCallout code="ra9266" section="Section 3 - Definition of Architecture">
+
 
 Answer: B) Per PD 1096 RIRR (page 162), the use of locally produced indigenous materials should be maximized in public buildings unless their production or usage has been banned by the government to conserve natural resources.
+
 
 </LawCallout>
 
@@ -134,12 +164,21 @@ B) 1-hour fire-resistive rating
 C) 3-hour fire-resistive rating
 D) 4-hour fire-resistive rating
 
-<LawCallout code="nbcp">
+<LawCallout code="ra9266" section="Section 3 - Scope of Practice">
+
 
 Answer: D) 4-hour fire-resistive rating. Per PD 1096 RIRR (page 39), Type IV and Type V construction require 4-hour fire-resistive exterior walls. Types II and III require only 1-hour ratings. This is a frequently tested distinction.
+
 
 </LawCallout>
 
 ---
 
 *Return to this module in 3 days. If you can answer the Active Recall questions cold, move to the next module.*
+
+---
+
+## Cross‑References
+
+**Pre Colonial Vernacular**, **Spanish Colonial Bahay Na Bato**, **American Colonial Era**, **Colonial European Influence**
+

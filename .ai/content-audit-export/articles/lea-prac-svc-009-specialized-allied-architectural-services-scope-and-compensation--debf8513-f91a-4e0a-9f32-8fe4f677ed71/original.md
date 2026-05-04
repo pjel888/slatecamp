@@ -1,4 +1,12 @@
 ## Specialized Allied Architectural Services: Scope and Compensation
+## Learning Goal
+
+After reading this article, you should be able to:
+
+- Define Specialized Allied Architectural Services under SPP Doc 203 and distinguish them from regular design services.
+- Identify the seventeen service categories under SPP 203, including acoustic design, lighting design, interior design, and heritage conservation.
+- Explain the compensation framework for specialized services: separate agreements, professional fee plus overhead, or percentage of construction cost.
+- Apply SPP 203 classifications to LEA scenarios involving non-traditional architectural engagements.
 
 Specialized Allied Architectural Services encompass a broad range of professional offerings beyond traditional architectural design. These services address specific technical, aesthetic, and functional requirements that projects demand. SPP Doc 203 establishes the framework for scope, compensation, and professional responsibilities across seventeen distinct service categories. Understanding these services enables architects to expand their practice and provide comprehensive solutions to clients.
 
@@ -14,9 +22,13 @@ Site development planning integrates landscape design, grading, utilities coordi
 
 Security evaluation services analyze vulnerabilities in building access, surveillance, emergency egress, and perimeter control. These services protect occupant safety and asset security through comprehensive risk assessment. Building systems design services coordinate mechanical, electrical, plumbing, and specialized systems integration. This service requires collaboration with engineers and manufacturers to ensure optimal performance and code compliance.
 
+
+<KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 ### Facilities Maintenance and Testing/Commissioning Services
 
 Facilities maintenance services establish protocols for equipment preservation, cleaning schedules, and preventive maintenance programs. These services extend building asset life and ensure operational efficiency. Testing and commissioning services verify that all building systems perform according to design specifications before occupancy. This service involves systematic testing protocols, documentation, and performance validation across all major building systems.
+
+<KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 
 ### Environmental Certification and Forensic Architecture
 
@@ -24,7 +36,11 @@ Environmental certification services guide projects through sustainability ratin
 
 ### Building Appraisal and Structural Conceptualization
 
+<ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
+
 Building appraisal services establish market value, condition assessment, and income-generating potential of properties. These services support investment decisions, insurance valuations, and financial planning. Structural conceptualization services develop early-stage structural systems before detailed engineering. This service optimizes structural efficiency, cost, and constructability during the conceptual design phase.
+
+<ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 
 ### Additional Specialized Services
 
@@ -32,4 +48,23 @@ Preliminary services, contract documentation, and post-design services constitut
 
 ### Compensation and Professional Responsibility
 
+<ProcessFlow steps={["Identify client needs", "Define scope of services", "Prepare proposal/contract", "Execute pre-design activities", "Deliver phase outputs", "Submit for owner approval"]} />
+
+<ProcessFlow steps={["Identify client needs", "Define scope of services", "Prepare proposal/contract", "Execute pre-design activities", "Deliver phase outputs", "Submit for owner approval"]} />
+
 Compensation for specialized services varies according to service complexity, duration, and deliverable scope. Methods include percentage of project construction cost, hourly rates, fixed fees, or hybrid arrangements. Professional responsibility encompasses standard of care, schedule adherence, and deliverable accuracy. Architects providing specialized services assume liability for the quality, accuracy, and completeness of technical work within their area of specialization.
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)

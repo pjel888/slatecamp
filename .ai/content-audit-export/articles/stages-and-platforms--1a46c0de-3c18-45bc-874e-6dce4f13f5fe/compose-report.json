@@ -1,18 +1,26 @@
 {
   "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
   "slug": "stages-and-platforms",
-  "generated_at": "2026-05-03T13:44:10.903Z",
-  "original_hash": "sha256:901f7d14fadc6976181892699d648c5140186c1dce41fb357ab49b146c886692",
-  "normalized_hash": "sha256:0b708f54f83d32750be7cbce21866c1e5168c2709468bd6090436979bbbec77d",
-  "candidate_hash": "sha256:c9bb9b600e8dfa2bcb23ee4633b887395a1ad69844cbd469168fb651ef203259",
+  "generated_at": "2026-05-04T00:05:38.113Z",
+  "original_hash": "sha256:c9bb9b600e8dfa2bcb23ee4633b887395a1ad69844cbd469168fb651ef203259",
+  "normalized_hash": "sha256:ce5f579a0eb2291a352197ac9cc26437f919ab9fd5d6bbd1d04e13dd6ab874ea",
+  "candidate_hash": "sha256:ce5f579a0eb2291a352197ac9cc26437f919ab9fd5d6bbd1d04e13dd6ab874ea",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

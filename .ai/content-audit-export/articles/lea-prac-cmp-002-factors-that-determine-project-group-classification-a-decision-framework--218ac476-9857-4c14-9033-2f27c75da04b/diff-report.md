@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework
 
-Generated: 2026-05-03T13:44:34.263Z
+Generated: 2026-05-04T00:06:08.946Z
 Article ID: 218ac476-9857-4c14-9033-2f27c75da04b
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:5041f5a89222584c0b2d06e49071400e2a78e60d30e336fb197ce83a788a8fb6`
-- Normalized: `sha256:ed1769fd37c8f6fddab839a4d510ec915319609943dc7dca53fa7a21fe481d93`
-- Candidate: `sha256:6caa31812f2920ada5a7e0ac9f327edc7b5c3eb156c6a8ec154f893001188c05`
+- Original: `sha256:6caa31812f2920ada5a7e0ac9f327edc7b5c3eb156c6a8ec154f893001188c05`
+- Normalized: `sha256:5ad9d9033d145a0ce9438a399621f90eeee55d289984a58909b73c672de854a5`
+- Candidate: `sha256:5ad9d9033d145a0ce9438a399621f90eeee55d289984a58909b73c672de854a5`
 
 ## Line summary
 
-- Changed lines: 93
-- Inserted lines: 36
-- Deleted lines: 0
+- Changed lines: 84
+- Inserted lines: 0
+- Deleted lines: 6
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

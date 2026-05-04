@@ -1,19 +1,28 @@
 {
-  "attempted_at": "2026-05-03T14:17:48.540Z",
+  "attempted_at": "2026-05-04T00:06:54.435Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
   "slug": "minimum-requirements-group-a-dwellings",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:0e238f10db79d856c39c7b1dbf24a000efff5275cfc8b90d61db1001308e4ef5",
-  "original_hash": "sha256:0e238f10db79d856c39c7b1dbf24a000efff5275cfc8b90d61db1001308e4ef5",
-  "candidate_hash": "sha256:5b4b551c82c52c8531ac41f20b5308a71e45391e5d58cd25a46133967def10b7",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:5b4b551c82c52c8531ac41f20b5308a71e45391e5d58cd25a46133967def10b7",
+  "original_hash": "sha256:a8c8011d0b93188838dfbd0e110b7a41a8d9661efa7c8d1801a710dd53f05b01",
+  "candidate_hash": "sha256:6e1044c662aa38f476f257b8d3cda076f91a3b6265384bbc4300432e3d4a99bf",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T14:19:34.298229+00:00"
 }

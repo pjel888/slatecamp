@@ -1,38 +1,46 @@
 {
   "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
   "slug": "penthouses-and-roof-structures",
-  "generated_at": "2026-05-03T13:45:16.627Z",
-  "old_hash": "sha256:4e48a4b5c96887a63db85c04dc70ed451917ac1d133a695eca2959a64e6b3a49",
-  "new_hash": "sha256:0b623eb6177df640e86e1fd51d7391235174be88650d525a24c663cb8fdbfd56",
-  "original_hash": "sha256:4e48a4b5c96887a63db85c04dc70ed451917ac1d133a695eca2959a64e6b3a49",
-  "normalized_hash": "sha256:4867bb8163e1bc408e752e7722542d2b267ba98f04da145bc69e206f91e70d38",
-  "candidate_hash": "sha256:0b623eb6177df640e86e1fd51d7391235174be88650d525a24c663cb8fdbfd56",
+  "generated_at": "2026-05-04T00:06:57.438Z",
+  "old_hash": "sha256:e3798bfecc45fb44ce8bccd6e77ce1cb3d06790aefaf6d1ac176fdfc61015ed5",
+  "new_hash": "sha256:192c73ed04eee0fb2d3fd533cadb65a75133f9ec9befd522ea07451a6e677163",
+  "original_hash": "sha256:e3798bfecc45fb44ce8bccd6e77ce1cb3d06790aefaf6d1ac176fdfc61015ed5",
+  "normalized_hash": "sha256:192c73ed04eee0fb2d3fd533cadb65a75133f9ec9befd522ea07451a6e677163",
+  "candidate_hash": "sha256:192c73ed04eee0fb2d3fd533cadb65a75133f9ec9befd522ea07451a6e677163",
   "changed": true,
-  "changed_line_count": 329,
-  "inserted_line_count": 33,
+  "changed_line_count": 279,
+  "inserted_line_count": 21,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 329,
-    "inserted": 33,
+    "changed": 279,
+    "inserted": 21,
     "deleted": 0,
     "original_line_count": 297,
-    "candidate_line_count": 330
+    "candidate_line_count": 318
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

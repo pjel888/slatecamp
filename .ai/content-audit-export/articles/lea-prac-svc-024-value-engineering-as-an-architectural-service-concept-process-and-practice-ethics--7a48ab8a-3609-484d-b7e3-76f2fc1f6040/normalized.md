@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain the ethical considerations when performing VE as an architect.
 - Distinguish value engineering from cost cutting.
 
-
-
 ---
 ### Understanding Value Engineering
 
@@ -60,30 +58,15 @@ Organizations like the Society of American Value Engineers (SAVE) establish prof
 
 Value engineering represents an important specialized service supporting client interests in cost optimization. When practiced ethically with commitment to design quality and transparent client communication, value engineering adds significant value to architectural practice and client project outcomes.
 
+<ArticleMedia id="media-lea-prac-svc-024-value-engineering-as-an" a type="ve-methodology" caption="Value Engineering Methodology — Systematic Cost-to-Function Analysis" description="Diagram showing the structured value engineering process: information phase (gather data, identify cost drivers) → creative phase (brainstorm alternatives, question assumptions) → evaluation phase (quantify costs, verify performance) → development phase (refine recommendations) → presentation phase (client disclosure, ethical review). Highlights the distinction between value engineering (cost/function ratio) and cost-cutting." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 [SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: - <strong>Project Definition</strong> — Problem identification
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=\"irr\"
-- Props: section=\"SPP Documents\"
-- Props: title=\"Professional Practice Framework\"
-- Text: SPP Documents 201–209 establish standards for architectural services scope, fee 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -101,6 +84,3 @@ Extracted summary:
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]

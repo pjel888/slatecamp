@@ -1,38 +1,52 @@
 {
   "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
   "slug": "spp-doc-206-comprehensive-architectural-services",
-  "generated_at": "2026-05-03T13:44:51.063Z",
-  "old_hash": "sha256:8d72c537564f156cdce8e3fa5b18acffb45d0d8f71fdd8bb85eb1116cb718fc5",
-  "new_hash": "sha256:afe99a19248ef4694d7634a8ca49bb4f8fd1b3e5aee6179afcaca3ae46053daa",
-  "original_hash": "sha256:8d72c537564f156cdce8e3fa5b18acffb45d0d8f71fdd8bb85eb1116cb718fc5",
-  "normalized_hash": "sha256:3ee15bf7afe52aa325318114034afb14ae0284fc1ecc210594852e60ba37c23d",
-  "candidate_hash": "sha256:afe99a19248ef4694d7634a8ca49bb4f8fd1b3e5aee6179afcaca3ae46053daa",
+  "generated_at": "2026-05-04T00:06:27.834Z",
+  "old_hash": "sha256:afe99a19248ef4694d7634a8ca49bb4f8fd1b3e5aee6179afcaca3ae46053daa",
+  "new_hash": "sha256:cb11a2a40dddddb99ff3a1e33ac169bd2f9f92dfff7334802a4e6fd952d37b85",
+  "original_hash": "sha256:afe99a19248ef4694d7634a8ca49bb4f8fd1b3e5aee6179afcaca3ae46053daa",
+  "normalized_hash": "sha256:cb11a2a40dddddb99ff3a1e33ac169bd2f9f92dfff7334802a4e6fd952d37b85",
+  "candidate_hash": "sha256:cb11a2a40dddddb99ff3a1e33ac169bd2f9f92dfff7334802a4e6fd952d37b85",
   "changed": true,
-  "changed_line_count": 302,
-  "inserted_line_count": 21,
-  "deleted_line_count": 0,
+  "changed_line_count": 307,
+  "inserted_line_count": 0,
+  "deleted_line_count": 85,
   "ui_blocks_original_count": 10,
-  "ui_blocks_candidate_count": 10,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 10,
   "ui_blocks_count": 10,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 10,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 302,
-    "inserted": 21,
-    "deleted": 0,
-    "original_line_count": 347,
-    "candidate_line_count": 368
+    "changed": 307,
+    "inserted": 0,
+    "deleted": 85,
+    "original_line_count": 368,
+    "candidate_line_count": 283
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007",
+      "ui_0008",
+      "ui_0009",
+      "ui_0010"
+    ],
+    "changed_count": 10
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 10 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 10 preserved UI block(s)."
 }

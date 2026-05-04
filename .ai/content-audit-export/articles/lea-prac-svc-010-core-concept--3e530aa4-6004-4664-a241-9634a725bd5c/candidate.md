@@ -41,20 +41,13 @@ The competition secretariat manages submission reception, document organization,
 
 Competition conditions establish submission requirements, intellectual property rights, compensation for winning and selected designs, and timeline specifications. Professional conditions require truthful representations, ethical conduct, and respect for competitors' intellectual contributions. Conditions address publication rights, exhibition arrangements, and design team acknowledgment. Clear conditions prevent disputes and maintain professional standards throughout the competitive process.
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
 
-<ProcessFlow>
-<ol>
-  <li><strong>Initiation</strong> — Client consultation and scope definition</li>
-  <li><strong>Proposal</strong> — Fee structure and contract execution</li>
-  <li><strong>Service Delivery</strong> — Performance per SPP document</li>
-  <li><strong>Completion</strong> — Turnover and documentation</li>
-</ol>
-</ProcessFlow>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
 
-<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 
-<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 
 ---
 
@@ -70,3 +63,5 @@ Competition conditions establish submission requirements, intellectual property 
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

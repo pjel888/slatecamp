@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Board foot calculation is a fundamental skill tested extensively on the LEA. You must be able to apply the formula correctly, account for Philippine lumber dimensions, avoid common computational errors, and work backward from board foot volume to physical dimensions. This topic combines conceptual understanding with practical arithmetic.
-
+Identify Philippine timber species by strength group, density, and common applications, and explain the DENR regulatory framework governing timber sourcing, grading, and documentation for architectural specifications.
 ## Core Concept
 
 A board foot (BF) is the standard unit of lumber volume in the Philippines and North America. It is defined as a piece of wood measuring 1 foot in length, 1 foot in width, and 1 inch in thickness.
@@ -148,7 +148,7 @@ The DPWH specifies lumber grading, species, and sizing for government projects:
 - **Moisture content:** 15% maximum at time of delivery (kiln-dried specification)
 - **Defect limits:** Knots limited to 1/4 of face width; slope of grain not to exceed 1:15
 
-NSCP 2015 Section 2401 references DPWH standards and allows use of visual grading rules from the Philippine National Lumber Grading Committee (NLGC) or equivleant.
+NSCP 2015 Section 2401 references DPWH standards and allows use of visual grading rules from the Philippine National Lumber Grading Committee (NLGC) or equivalent.
 
 ## How It's Tested
 
@@ -166,3 +166,10 @@ The LEA expects you to:
 Typical questions present a project scope (deck, framing, cabinetry) and ask you to calculate total board feet, specify appropriate species/grade, and determine delivered cost. Some questions test your ability to recognize when a given dimension set produces an incorrect or unattainable board foot total.
 
 <Tip>Always write out the formula step-by-step on the exam. Show unit conversions explicitly (e.g., "Length = 144 inches ÷ 12 = 12 feet"). This reduces errors and earns partial credit if final answer is incorrect.</Tip>
+
+## Related Articles
+
+See also within Wood and Timber Products: **lea-matl-001-03-core-concept**, **lea-matl-001-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

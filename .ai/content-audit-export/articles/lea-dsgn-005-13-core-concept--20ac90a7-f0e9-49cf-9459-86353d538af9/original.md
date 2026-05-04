@@ -1,8 +1,12 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Classify fire stations as Group D-1 essential facilities with I=1.50 seismic importance factor per NSCP 2015, apply apparatus bay spatial standards, calculate crew dormitory and egress requirements, and verify Category I performance standards.
+
 Fire stations are **Group D, Division 1 occupancies** (institutional/essential facilities). They are classified as **Category I Essential Facilities** per NSCP 2015 Table 103-1, requiring a seismic importance factor of $I = 1.50$. They require specialized spatial standards for apparatus bays, crew dormitories, and egress that combine fire code requirements with operational functionality.
 
 ---
+
 
 ## Core Concept
 
@@ -81,6 +85,13 @@ Identify the seismic importance factor for a fire station ($I = 1.50$) and expla
 > </Tip>
 
 ---
+
+
+**Exam Tip — ERR-DSGN-028:** Fire stations are Category I Essential Facilities with I=1.50 seismic importance factor per NSCP 2015. This is the HIGHEST importance factor — higher than hospitals (I=1.25).
+
+## Cross-References
+
+See **LEA-DSGN-005-05** (Health Facilities) for Group D-1 comparison, **LEA-DSGN-008-02** (Fire Separation) for essential facility fire ratings, and **LEA-DSGN-010-03** (Vehicular Circulation) for emergency access design.
 
 ## Common Mistakes
 

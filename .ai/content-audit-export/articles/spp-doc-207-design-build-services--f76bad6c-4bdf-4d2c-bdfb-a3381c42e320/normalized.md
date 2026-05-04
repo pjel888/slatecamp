@@ -39,20 +39,10 @@ The Architect's qualification for Design-Build derives from three core competenc
 The defining legal characteristic of SPP 207 is stated clearly in Section 1.5:
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: *"In Design-Build Services, the Architect assumes the professional responsibility and civil liability for both the design and the construction of the project."*
-[/SLATECAMP_UI_BLOCK]
-
 
 This is the fundamental difference between SPP 207 and all preceding SPP documents:
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | SPP Document | Architect's Liability | |---|---| | SPP 202 (Regular Design) | Design only; contractor assumes construction liability | | SPP 204-A (Fulltime Supervision) | Supervisory functions; contractor retains construction liability | | SPP 204-B (Construction Management) | Management functions; designer and contractor retain respective liabilities | | **SPP 207 (Design-Build)** | **Both design AND construction — single-point liability** |
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -123,11 +113,6 @@ The DBS-GMPCC method is **essentially the same as DBS-A** in terms of service sc
 If, upon completion of the project, there is a **realized savings** from the estimated project construction cost:
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: *"The savings shall be divided equally between the Owner/Client and the Architect."*
-[/SLATECAMP_UI_BLOCK]
-
 
 This 50/50 savings split is a powerful incentive for the Architect to find cost efficiencies, negotiate better material prices, and optimize construction methods — because the Architect directly benefits from every peso saved.
 
@@ -156,11 +141,6 @@ The NEDA certification requirement is important: informal market price increases
 ### DBS Mode Comparison
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Feature | DBS by Administration (2.1) | DBS with GMPCC (2.2) | |---|---|---| | **Design Scope** | SPP 202 full 5-phase scope | Same as DBS-A | | **Construction Scope** | Full 8-task administration | Full 8-task administration | | **Cost Guarantee** | No guaranteed maximum | Guaranteed; ±10% tolerance | | **Savings Sharing** | Not applicable | 50/50 between Owner and Architect | | **Overrun Liability** | No; Owner bears all cost risk | Yes, up to the amount of Admin Fee | | **Revolving Fund** |
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -183,11 +163,6 @@ Regardless of which arrangement is adopted, the Architect must strictly adhere t
 #### 3.2.1 Retention of Professional Identity
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: *"The Architect must retain his separate/distinct professional identity, prerogatives and integrity as an Architect, and is therefore subject to the standards and tenets of the SPP, particularly Document 200 (Code of Ethical Conduct) and SPP Document 202."*
-[/SLATECAMP_UI_BLOCK]
-
 
 This provision prevents the Architect from "becoming" a contractor in the legal sense. Even while managing construction under SPP 207, the Architect remains a registered professional subject to PRC oversight, not merely a business entity subject only to DTI or SEC regulation.
 
@@ -196,11 +171,6 @@ This provision prevents the Architect from "becoming" a contractor in the legal 
 The Architect must adhere to the Architect's Credo, with the pledge that he:
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: *"...shall disclose whenever required, any business investment or venture that may tend to create a conflict of interest, and ensure that such conflict neither compromises the legitimate interest of the Client nor interfere with his duty to render impartial judgment."*
-[/SLATECAMP_UI_BLOCK]
-
 
 This conflict of interest provision is particularly important in DBS-GMPCC, where the Architect has a direct financial stake in project cost performance (through the savings-sharing mechanism). The Architect must be transparent about this financial interest and ensure it does not distort material selection, subcontractor evaluation, or construction quality decisions.
 
@@ -213,22 +183,12 @@ This conflict of interest provision is particularly important in DBS-GMPCC, wher
 The method of payment under SPP 207 fundamentally differs from SPP 202:
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: *"The manner of payment to the Architect follows the progress of construction. The Client directly pays all costs for labor and materials. The Architect does not advance any money for payment of expenditures connected with the work."*
-[/SLATECAMP_UI_BLOCK]
-
 
 This is critical: the Architect is an **administrator**, not a financier. The Owner retains financial control; the Architect exercises administrative and professional authority over how the money is spent.
 
 ### 4.2 Permits, Licenses, and Incidentals
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: *"The Owner/Client shall pay for the cost of all permits, licenses and other incidentals to the work."*
-[/SLATECAMP_UI_BLOCK]
-
 
 All government fees (Building Permit, Electrical Permit, Sanitary Permit, Fire Safety Inspection Certificate, etc.) are **Owner's cost**, not deducted from the Architect's administration fee.
 
@@ -237,40 +197,20 @@ All government fees (Building Permit, Electrical Permit, Sanitary Permit, Fire S
 The Architect may appoint — subject to the Owner/Client's approval — a construction superintendent, purchasing agent, timekeeper, and property clerk.
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: *"Salaries of such persons are paid by the Owner/Client and NOT deductible from the Architect's Fee under this SPP."*
-[/SLATECAMP_UI_BLOCK]
-
 
 This means the Owner bears the cost of the site management team — it is separate from the Architect's administration fee. The Architect's 7% (or 10%) RPF covers professional services, not the salaries of site staff.
 
 ### 4.4 Recommended Professional Fees (RPF)
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | DBS Mode | RPF for Administration Services | Notes | |---|---|---| | **DBS by Administration** | **7% of PCC** (exclusive of Regular Design Services fee) | Regular Design Fee (SPP 202 rates per project group) is charged separately and in addition | | **DBS with GMPCC** | **10% of PCC** (exclusive of Regular Design Services fee), or **built into the GMPCC** | The 10% may be stated as a separate fee or incorporated as a cost component within the guaranteed maximum price |
-[/SLATECAMP_UI_BLOCK]
-
 
 ### 4.5 Additional Compensation Methods
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
-Extracted summary:
-- Props: variant="note"
-- Text: *"The method of compensation may be modified by using the relevant alternatives detailed in SPP Doc. 202."*
-[/SLATECAMP_UI_BLOCK]
-
 
 This cross-reference means all SPP 202 alternative compensation methods are available for DBS engagements:
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Method | Application | |---|---| | **MDPE** (Multiplier × Direct Personnel Expenses) | Variable-scope DBS phases | | **PFPE** (Professional Fee Plus Expenses) | Defined-scope DBS with reimbursable site expenses | | **Lump Sum / Fixed Fee** | Well-defined DBS projects with stable scope | | **Per Diem + Honorarium** | Limited advisory DBS engagements | | **Mixed Methods** | Hybrid engagements combining design fee percentage and administration lump sum |
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -285,22 +225,12 @@ R.A. 4566 requires a **contractor's license** for any person or entity undertaki
 The distinction is critical for architects under SPP 207:
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Activity | Classification | License Required | |---|---|---| | Architect administering construction under DBS-A with Owner's revolving fund | **Licensed Professional Practice** — exempt from RA 4566 | PRC Architect's license only | | Architect or firm signing a construction contract committing to deliver a completed building for a fixed lump sum (turnkey) | **Contracting** — subject to RA 4566 | Requires PCAB Contractor's License |
-[/SLATECAMP_UI_BLOCK]
-
 
 Under SPP 207 DBS-A, the architect acts as the **Owner's agent** and **administrator** — the Owner pays all costs directly through the revolving fund. This is the structural mechanism that keeps DBS-A within professional practice rather than contracting.
 
 ### 5.2 The Turnkey vs. Administration Distinction
 
 [SLATECAMP_UI_BLOCK:ui_0014 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Feature | Design-Build by Administration (SPP 207) | Design-Build Turnkey / EPC | |---|---|---| | **Owner pays costs** | Yes — directly, through revolving fund | No — contractor bears construction costs, bills Owner at completion | | **Architect's role** | Administrator / Professional | Contractor / turnkey deliverer | | **RA 4566 applicability** | Generally exempt as professional practice | Requires PCAB license | | **Legal identity** | Professional under RA 9266 | Contractor under RA 4566 |
-[/SLATECAMP_UI_BLOCK]
-
 
 Architects who engage in DBS without understanding this distinction risk **crossing into prohibited contracting territory** — performing construction activities regulated by RA 4566 without the required PCAB license.
 
@@ -309,11 +239,6 @@ Architects who engage in DBS without understanding this distinction risk **cross
 ## 6. Relationship to Other SPP Documents
 
 [SLATECAMP_UI_BLOCK:ui_0015 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Related SPP | Nature of Relationship | |---|---| | **SPP 202** (Regular Design) | DBS-A scope includes the full SPP 202 five-phase design scope; both fees are charged separately | | **SPP 204-A** (Fulltime Supervision) | DBS-A construction phase activities subsume CSG functions — no separate SPP 204-A engagement is needed when the Architect performs DBS-A | | **SPP 204-B** (Construction Management) | DBS-A goes beyond CM — the Architect directly hires personnel, procures materials, and authori
-[/SLATECAMP_UI_BLOCK]
-
 
 ***
 
@@ -335,15 +260,23 @@ Extracted summary:
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Design-Build (DB) vs Design-Bid-Build (DBB): DB = single entity responsible for both design and construction. DBB = separate contracts (owner-architect + owner-contractor). Architect's ethical obligation under DB: must maintain PROFESSIONAL INDEPENDENCE — the architect cannot be subordinate to the contractor's commercial interests. The independence requirement is the most tested ethical point.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Design-Build (DB) vs Design-Bid-Build (DBB): DB = single entity responsible for both design and construction. DBB = separate contracts (owner-architect + owner-contractor). Architect's ethical obligation under DB: must maintain PROFESSIONAL INDEPENDENCE — the architect cannot be subordinate to the contractor's commercial interests. The independence requirement is the most tested ethical point.
+
 ## Cross‑References
 
 **Spp Doc 204 B Construction Management Services**, **Spp Doc 206 Comprehensive Architectural Services**, **Spp Doc 208 Architectural Design Competition Adc**, **Spp Doc 209 Architectural Consulting Services Pacs**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

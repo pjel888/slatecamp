@@ -5,7 +5,6 @@ Apply minimum air change rates (ACH) per NBC by space type, calculate fresh air 
 
 Indoor air quality (IAQ) and ventilation are foundational to occupant health and building performance. The National Building Code specifies minimum air change rates (ACH) by space type to remove pollutants, moisture, and CO₂. The LEA expects candidates to know these rates, apply them to floor area calculations, and understand how mechanical and passive ventilation systems achieve compliance.
 
-
 ## Core Concept
 
 Indoor air quality depends on three factors: (1) _fresh air supply_—introduction of outdoor air to dilute indoor pollutants, (2) _source control_—minimization of pollution sources (materials, activities), and (3) _removal_—extraction of stlea air and contaminants. Air change rate (ACH) quantifies the rate at which indoor air volume is replaced with fresh air, typically measured in air changes per hour. An office space with 300 m³ volume and a specification of 4 ACH requires 300 × 4 = 1,200 m³/hour of fresh air supply.
@@ -13,6 +12,7 @@ Indoor air quality depends on three factors: (1) _fresh air supply_—introducti
 **PD 1096 Rule VII, Section 709** specifies natural ventilation opening requirements: a minimum of 5% of floor area must be operable (1:20 ratio). However, many modern buildings rely on mechanical ventilation to achieve code-required air change rates. The LEA focuses on these rates, not the mechanical design details.
 
 Different occupancies have vastly different IAQ demands. A hospital operating room must have 15–20 ACH with positive pressure (operating room pressure slightly above hallway) and HEPA filtration to remove surgical aerosols. A restaurant kitchen must have 15 ACH minimum (per fire code) to exhaust cooking odors and heat. A standard office requires 4–6 ACH. An unoccupied storage room may have 1–2 ACH. The LEA tests whether candidates can match space type to required ACH and apply these to ventilation system calculations.
+<ArticleMedia id="media-lea-dsgn-009-03-core-concept" a type="image" caption="Indoor Air Quality — Ventilation Strategies by Occupancy Type" description="Comparative diagram showing minimum air change rates (ACH) per space type: restrooms (10 ACH), kitchens (15 ACH), offices (4 ACH), classrooms (6 ACH). Natural vs. mechanical ventilation strategies with NBC compliance annotations." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -54,13 +54,9 @@ A hospital has an operating room 50 m² with 3.5 m ceiling height. Exam states 2
 A classroom 200 m² must have natural ventilation. Calculate minimum operable window area (1:20 = 5%): 200 × 0.05 = 10 m² of operable windows required. Exam shows design with 8 m² operable area. Exam asks: is this compliant? Answer: No—insufficient by 2 m².
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **"Office = 4–6 ACH, Kitchen = 15 ACH, OR = 15–20 ACH (positive pressure)."** These are the three most-tested categories. Operating rooms are the most stringent (highest ACH, special pressure control, HEPA). Kitchens come next. Offices are baseline. Memorize this hierarchy.
-[/SLATECAMP_UI_BLOCK]
-
 
 **Exam Tip:** Air change rates (ACH) vary by occupancy: offices 4-6 ACH, restrooms 8-10 ACH, kitchens 15-20 ACH. The LEA tests whether you can select the correct ACH for a given space type and calculate required airflow.
+<ArticleMedia id="media-lea-dsgn-009-03-core-concept" a type="image" caption="Ventilation Strategy — Cross-Ventilation and Stack Effect Diagrams" description="Section and plan diagrams comparing passive ventilation strategies: single-sided (openings on one wall), cross-ventilation (openings on two walls with prevailing wind path), and stack effect (inlet low, outlet high at roof). Minimum ACH requirements per occupancy type per NBC applied." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -69,7 +65,3 @@ See **LEA-DSGN-009-01** (Passive Design) for natural ventilation strategies, **L
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing air change rate (ACH, time-based) with air quality metrics (CO₂ ppm, particle counts)\",\"Forgetting that operating rooms require positive pressure (to exclude contaminants, not enhance outflow)\",\"Applying office ACH (4–6) to high-risk spaces like OR (15–20) or kitchens (15)\",\"Calculating air volume without floor area or ceiling height (need all three: area × height × ACH)\",\"Ignoring natural ventilation opening requirements (1:20 = 5% of floor area) if mechanical ventilation is specified; both may be required by code\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

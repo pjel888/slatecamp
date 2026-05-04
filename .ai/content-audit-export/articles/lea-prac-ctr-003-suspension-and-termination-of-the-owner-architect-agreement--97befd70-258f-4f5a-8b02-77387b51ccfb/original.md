@@ -1,10 +1,17 @@
 ## Suspension and Termination of the Owner-Architect Agreement
 
+## Learning Goal
 
+After studying this article, you should be able to:
+
+- Distinguish suspension (temporary stop) from termination (permanent end) of the agreement.
+- Explain the notice period and procedural requirements for suspension.
+- Identify grounds for termination for cause and for convenience.
+- Describe the architect's compensation rights upon suspension or termination.
+
+Explain the procedures and consequences for suspension and termination of the Owner-Architect agreement, including compensation, liability, and post-termination obligations.
 
 The Owner-Architect agreement must include clear procedures for suspending work or terminating the relationship, specifying remedies and compensation in each circumstance.
-
-
 
 ### Suspension of Services
 
@@ -20,6 +27,9 @@ Upon termination for cause, the architect is entitled to compensation for servic
 
 ### Termination for Convenience
 
+Extracted summary:
+
+\
 Termination for convenience allows the Owner to end the agreement at any time without cause. Upon written notice, the architect ceases work immediately. The architect receives compensation for all services rendered and consultant fees reimbursed through the termination date, calculated on a phase-completion or time-expended basis as specified in the agreement.
 
 Compensation upon termination for convenience is calculated based on the phase-completion or time-expended basis specified in the agreement. Common AIA-based allocations include approximately 15% for Schematic Design and 35% for Design Development, but actual percentages must be confirmed in the specific contract, as they vary by agreement and jurisdiction. The agreement should clearly establish the compensation calculation for termination at any point, preventing disputes over payment upon early termination. The Owner takes possession of all drawings and design work and may use them to complete the project with another architect or to proceed to construction if substantially complete.
@@ -32,18 +42,25 @@ The architect does not warrant that work in progress at termination is complete 
 
 ### Suspension and Termination of the Contractor Relationship
 
-During Construction Administration, the architect may recommend suspension or termination of the contractor relationship to the Owner, but the architect does not have authority to suspend or terminate the construction contract independently. The architect's role is to certify whether the contractor's work complies with the contract documents and to recommend corrective action, suspension, or termination. The Owner makes the final decision to suspend or terminate.
+During Construction Administration, the architect may recommend suspension or termination of the contractor relationship to the Owner, but the architect does not have authority to suspend or terminate the construction contract independently. The architect's role is to certify whether the contractor's work complies with thion, or termination. The Owner makes the final decision to suspend or terminate.
 
-If the contractor's work is suspended, the architect ceases issuing certificates of payment and verifies that the contractor maintains the site in a safe condition. If the contractor is terminated for default, the architect assists the Owner in evaluating the extent of incomplete work and the cost to complete through a successor contractor. The architect does not assume the contractor's obligations but rather verifies that the successor contractor's work meets the original contract documents.
+## Related Articles
 
-### Effect on Owner's Obligation to Pay
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)
 
-Suspension does not relieve the Owner of the obligation to pay for work completed before suspension. Termination for convenience does not eliminate the architect's entitlement to compensation for work performed before termination, although the total compensation is limited to the phase-based allocation. Termination for cause may reduce the architect's compensation if the architect's breach caused the Owner damages exceeding the unpaid fees.
+<LawCallout code="uap" section="SPP Doc. 202 - Suspension and Termination">
+RA 9266, Section 25 — The architect shall not be held liable for delay caused by force majeure or acts of the Owner.
+</LawCallout>
 
-If the Owner fails to pay the architect during or after suspension/termination, the architect may pursue collection through litigation or arbitration as specified in the agreement. Lien rights for architects are not clearly established under Philippine law; the agreement should specify whether the architect retains any security interest or must resort to judgment. However, many professional agreements waive lien rights; the agreement should clarify whether the architect retains lien rights or must resort to judgment.
+<ProcessFlow steps={["Owner gives written notice", "Architect ceases active work or invokes cure period", "Compensation calculated for work performed", "Architect delivers all documents to Owner", "Owner engages successor or proceeds to close-out"]} />
 
-### Return to Work After Suspension
-
-If the Owner directs resumption of work after suspension, the architect resumes services at the agreed-upon fee and schedule, adjusted for the suspension period. If the suspension has caused changes to the market, building codes, or project scope, the architect should request an addendum to the agreement reflecting the revised conditions. Resumption does not constitute a new contract; it is a continuation of the original agreement.
-
-Upon resumption after suspension, the architect must ensure all design work complies with codes and standards in effect at the time of resumption, as required by RA 9266 and PD 1096. If significant time has elapsed, code updates and specification revisions may be necessary and should be addressed through an addendum to the agreement. The architect should be entitled to additional compensation for incorporating code changes and updating specifications even if the project scope is unchanged. The agreement should establish whether such code updates are included in the original fee or billed as Additional Services if suspension extends beyond a specified period.
+<Warn>The architect does NOT have authority to independently suspend or terminate the construction contract. The architect's role is to certify compliance and recommend action to the Owner. Unauthorized suspension can expose the architect to liability.</Warn>

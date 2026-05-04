@@ -1,38 +1,48 @@
 {
   "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
   "slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics",
-  "generated_at": "2026-05-03T13:45:06.907Z",
-  "old_hash": "sha256:99082e18385cd30447661c6d0dc2c8c7d53fda27aec75a842b5126feeaac2172",
-  "new_hash": "sha256:e8f6ce2a2e4d4aadb4a2416f8cce3c1c42982dcdae815c94d2e5ade38c6e8108",
-  "original_hash": "sha256:99082e18385cd30447661c6d0dc2c8c7d53fda27aec75a842b5126feeaac2172",
-  "normalized_hash": "sha256:f3459841f11fb9b9fa1a1f9615ff4d87c8801f9e9d40bc45c90f94dac0e5a5ce",
-  "candidate_hash": "sha256:e8f6ce2a2e4d4aadb4a2416f8cce3c1c42982dcdae815c94d2e5ade38c6e8108",
+  "generated_at": "2026-05-04T00:06:45.028Z",
+  "old_hash": "sha256:fa17cf0f8efdbd65fa1ff3f82458ca08af4e1941ce6c242603d8b1e0925365e9",
+  "new_hash": "sha256:66d4c8d861e268e20c1c82bea34d989d408fffc4d2dc1e9f7ff8c143fe32653c",
+  "original_hash": "sha256:fa17cf0f8efdbd65fa1ff3f82458ca08af4e1941ce6c242603d8b1e0925365e9",
+  "normalized_hash": "sha256:66d4c8d861e268e20c1c82bea34d989d408fffc4d2dc1e9f7ff8c143fe32653c",
+  "candidate_hash": "sha256:66d4c8d861e268e20c1c82bea34d989d408fffc4d2dc1e9f7ff8c143fe32653c",
   "changed": true,
-  "changed_line_count": 72,
-  "inserted_line_count": 43,
+  "changed_line_count": 62,
+  "inserted_line_count": 32,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 72,
-    "inserted": 43,
+    "changed": 62,
+    "inserted": 32,
     "deleted": 0,
-    "original_line_count": 53,
-    "candidate_line_count": 96
+    "original_line_count": 55,
+    "candidate_line_count": 87
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0005",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

@@ -8,18 +8,27 @@ Admixtures allow engineers to fine-tune concrete performance for specific projec
 
 The most commonly used admixtures in the Philippines are water reducers (to increase strength and reduce cost) and accelerators (to speed form removal in warm climates).
 
+
+<ArticleMedia id="media-admixture-categories-chart" layout="single" type="image" status="placeholder"
+  alt="Classification chart of concrete admixtures showing water reducers, retarders, accelerators, superplasticizers, air-entraining, and pozzolans with function icons"
+  caption="Future chart: concrete admixture classification by function and effect"
+  suggestedAsset="Organizational chart or infographic of admixture types"
+  placementIntent="Provides visual taxonomy of admixture categories" />
+
 ## ASTM C494 Chemical Admixtures for Concrete
 
 ASTM C494 is the primary standard for admixture specifications and testing. It defines seven types (A through G) by primary and secondary effects:
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Type\", \"Primary Effect\", \"Secondary Effect\", \"Typical Use\"]}", rows="{[[\"A\", \"Water Reduction\", \"None\", \"General reduction of water for cost/strength\"], [\"B\", \"Retardation\", \"None\", \"Hot-weather concreting, large pours\"], [\"C\", \"Acceleration\", \"None\", \"Cold-weather, accelerated form removal\"], [\"D\", \"Water Reduction + Retardation\", \"Combined\", \"Hot weather with strength control\"], [\"E\", \"Water Reduction + Acceleration\", \"Combined\", \"Cold weather with water savings\"], [\"F\", \"Water Reduction (High Range)\", \"None\", \"Self-consolidating, flowing concrete\"], [\"G\", \"Water Reduction (High Range) + Retardation\", \"Combined\", \"Flowing concrete in hot weather\"]]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 Each type must pass specific ASTM C494 testing protocols verifying slump, air content, set time, compressive strength at 1, 7, and 28 days, and durability (freeze-thaw, scaling).
 
+
+<ArticleMedia id="media-admixture-application-chart" layout="single" type="image" status="placeholder"
+  alt="Application matrix for concrete admixtures showing which admixture types are suitable for different concrete conditions: hot weather, cold weather, high strength, underwater, and pumped concrete"
+  caption="Future chart: concrete admixture application matrix by project conditions"
+  suggestedAsset="Selection matrix or decision chart for admixture specification"
+  placementIntent="Guides selection of admixtures based on concrete placement conditions" />
 ## Type A: Water-Reducing Admixtures
 
 Type A admixtures reduce the water required to achieve a target slump (workability), allowing engineers to either maintain the same water-cement ratio and increase strength, or reduce both water and cement while maintaining strength.
@@ -76,10 +85,6 @@ Type C admixtures speed hydration, accelerating set time and early strength deve
 **Critical limitation:** Calcium chloride accelerators (>1.0% dosage) are NOT recommended for reinforced concrete because chloride ions migrate to rebar and cause corrosion. Non-chloride accelerators (sodium formate, other compounds) are preferred or required by NSCP 2015 in reinforced structures.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: NSCP 2015 Section 1903 restricts chloride-based accelerators in reinforced concrete. Always specify chloride-free accelerators or document that reinforcement is absent.
-[/SLATECAMP_UI_BLOCK]
 
 ## Type D: Water Reducing + Retarding
 
@@ -184,24 +189,12 @@ The LEA expects you to:
 Typical questions present a concrete application (hot-weather pour, cold-weather placement, self-consolidating concrete requirement) and ask which admixture type is appropriate, or ask about effects on strength, set time, or durability.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Always remember ASTM C494 types A—G. Type A = water reduction. Type B = retardation. Type C = acceleration. Types D and E combine two effects. Types F and G = superplasticizers. Each letter reflects both primary purpose and secondary effects, which are non-negotiable in the specification.
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Assuming all water-reducing admixtures are equivalent and interchangeable", correction="ASTM C494 distinguishes Type A (water reduction alone), Type D (water reduction + retardation), and Types F/G (high-range water reduction). Each has different dosages, effects, and appropriate applications. Type A is inappropriate for hot weather (no retardation); Type D is more suitable. Never interchange without testing.", context="Contractors sometimes use leftover Type A admixture intended for a different project, failing to recognize the change in set time requirements."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: title="Common Admixture Specification and Dosage Errors", items="{[\n    \"Specifying calcium chloride accelerator (CCA) in reinforced concrete: Chloride ions migrate to rebar and cause corrosion, reducing service life. NSCP 2015 prohibits CCA in reinforced concrete. Always specify chloride-free accelerators or document that reinforcement is absent.\",\n    \"Over-dosing water reducers, expecting linear strength increase: Strength increases from water reduction plateau at 5—15%; exceeding optimal dosage (1.0%) causes slump loss, segregation, and potential loss of other benefits. More is not better.\",\n    \"Air entrainment in concrete not exposed to freeze-thaw: Air entrainment reduces compressive strength 3—5% per 1% air, providing no benefit in tropical Philippines. Specify only when freeze-thaw exposure is present.\",\n    \"Mixing admixture types without trial mixes: Combinations can be incompatible or have unexpected effects. Always conduct trial mixes when combining or changing admixtures.\",\n    \"Varying admixture dosage on-site without notification to designer: Changes in admixture amount alter concrete properties (slump, set time, strength). Always maintain specified dosage and document any changes.\"\n  ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

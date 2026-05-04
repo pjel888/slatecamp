@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>The LEA tests your knowledge of **Māori architecture** and cultural building traditions in New Zealand, and the relationship between **indigenous design** and **contemporary New Zealand architecture**. Questions focus on traditional Māori structures (whare, wharenui, pā), the impact of European colonization on Māori building traditions, and how contemporary architects integrate Māori cultural principles with modernist design. You must understand colonialism's suppression of Māori culture and the current movement toward cultural restoration through architecture.</Callout>
+## Learning Goal
 
+Identify the three traditional Maori building types — whare (domestic), wharenui (meeting house), pā (fortified settlement) — by their social function, spatial organization, and carved ornamentation, and explain their cultural and cosmological significance.
 ## Core Concept
 
 **Māori** people inhabited Aotearoa (New Zealand) for over 1,000 years before European contact. Their architecture reflected climate, available materials, cultural values, and spiritual beliefs. The **whare** is a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship. The **wharenui** is a communal meeting house, richly carved and decorated, expressing iwi (tribal) identity and genealogy through visual narrative. The **pā** is a fortified settlement with palisaded defensive structures adapted to terrain and strategic position.
@@ -29,18 +30,16 @@ Contemporary New Zealand architecture increasingly acknowledges dual cultural in
 
 ## How It's Tested on the LEA
 
-
 <ExamTip>**Pattern 1: Māori Spatial and Cultural Principles**
 Questions ask about traditional Māori building organization: Why is the wharenui oriented a certain way? Why are internal spaces organized hierarchically? What does carving represent? You explain: spatial organization reflects cosmology, carving tells genealogy, materials have mana (spiritual power), buildings are cultural repositories, not merely functional shelters.</ExamTip>
-
 
 <ExamTip>**Pattern 2: Colonial Suppression and Contemporary Restoration**
 Questions ask how colonization affected Māori architecture. You explain: colonial authorities suppressed Māori language and cultural practice, mission education denigrated traditional knowledge, land dispossession prevented building on ancestral lands, and Māori cultural traditions were marginalized. Contemporary restoration reasserts these traditions.</ExamTip>
 
-
 <ExamTip>**Pattern 3: Cultural Integration in Contemporary Architecture**
 Questions ask how contemporary architects incorporate Māori principles into modernist design. You explain: spatial organization reflecting Māori values, carving and weaving integrated with contemporary materials, bicultural design processes involving Māori communities, architecture as site of cultural negotiation and healing.</ExamTip>
 
+<Callout>The LEA tests your knowledge of **Māori architecture** and cultural building traditions in New Zealand, and the relationship between **indigenous design** and **contemporary New Zealand architecture**. Questions focus on traditional Māori structures (whare, wharenui, pā), the impact of European colonization on Māori building traditions, and how contemporary architects integrate Māori cultural principles with modernist design. You must understand colonialism's suppression of Māori culture and the current movement toward cultural restoration through architecture.</Callout>
 
 ## Common Mistakes
 
@@ -49,7 +48,6 @@ Questions ask how contemporary architects incorporate Māori principles into mod
 <WikiMistakeCard mistake="Separating culture and structure" correction="Students describe Māori buildings functionally while ignoring cultural meaning. A wharenui's spatial organization isn't arbitrary—it expresses iwi relationships, genealogy, and cosmology. A whare's orientation isn't accidental—it aligns with spiritual and astronomical significance." context="Acknowledge cultural integration." />
 
 <WikiMistakeList mistakes={["Overlooking colonialism's violence. Students describe Māori architecture neutrally without mentioning colonial suppression. Māori were forbidden to speak their language, practice their culture, and build traditionally. Colonial architecture was tool of cultural erasure. Acknowledge this when discussing Māori architectural history.", "Treating contemporary integration as simple. Students say contemporary Māori architecture \"just combines traditional and modern.\" Integration is complex—it requires Māori communities leading design, negotiating between traditions, asserting cultural authority, and challenging colonial hierarchies. It's not aesthetic fusion but cultural assertion."]} />
-
 
 ## Key Terms
 
@@ -72,3 +70,10 @@ Questions ask how contemporary architects incorporate Māori principles into mod
 **Bicultural Design** — Contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.
 
 **Treaty of Waitangi** — 1840 agreement between British Crown and Māori chiefs; systematically breached; foundational to understanding Māori historical dispossession and contemporary cultural reassertion.
+
+## Related Articles
+
+See also within Australia & New Zealand Architecture: **lea-hist-015-01-core-concept**, **lea-hist-015-02-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

@@ -7,15 +7,17 @@
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
-[/SLATECAMP_UI_BLOCK]
 
 - Identify the four National Artists for Architecture (Nakpil, Antonio, Locsin, Mañosa) in chronological order with their key buildings and signature styles.
 - Explain Locsin's "floating volume" concept and Mañosa's Neo-Vernacular philosophy (Filipino values, climate response, indigenous materials).
@@ -72,13 +74,10 @@ You are walking through the CCP Complex along Manila Bay at dusk. To your left, 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 
-\
-
- component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
-[/SLATECAMP_UI_BLOCK]
+component="ExamTip" status="preserved"]
+<Note>
+**LEA Pattern:** Questions about this architect often present an unfamiliar b...
+</Note>
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap: Confusing Nakpil and Antonio projects.** Both were Art Deco contemporaries active in the same era. Remember: **Antonio = FEU Campus and theaters**; **Nakpil = Quiapo Church, Rizal Theater, UP buildings**. The exam may pair a Nakpil building with Antonio's name as a distractor.
@@ -146,3 +145,5 @@ D) Manila Metropolitan Theater
 
 **Le Corbusier Five Points**, **The Bauhaus And International Style**, **Mies Van Der Rohe**, **Pre Columbian Mesoamerica**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

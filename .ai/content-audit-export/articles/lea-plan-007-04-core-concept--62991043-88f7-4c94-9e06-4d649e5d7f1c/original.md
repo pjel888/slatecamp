@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Describe HUDCC's historical coordination role (1986-2019) among housing agencies, identify EO 90 as its creation authority, and explain its supersession by DHSUD under RA 11201.
+
 The Housing and Urban Development Coordinating Council (HUDCC), created in 1986 by Executive Order No. 90, was a high-level inter-agency body that coordinated housing policy among multiple government agencies. [Requires verification against RA 11201 text; search results do not confirm this claim]
+
 
 ## Core Concept
 
@@ -36,6 +40,13 @@ During HUDCC's 33-year existence (1986–2019), it coordinated the shift from ce
 3. **Post-2019 context:** "Where do HUDCC's functions reside today?" → DHSUD.
 
 <Tip>**Memory aid:** HUDCC = **C**ouncil = **C**oordination = bringing agencies together (not regulation, not production, not finance). Now DHSUD's role.</Tip>
+
+
+**Exam Tip:** HUDCC was created by EO 90 (1986), NOT by legislation. It was a coordinating council, not a regulatory body. Superseded by DHSUD under RA 11201 (2019). This history question appears occasionally on the LEA.
+
+## Cross-References
+
+See **LEA-PLAN-007-02** (DHSUD) for post-2019 regulatory framework, **LEA-PLAN-001-05** (CLUP Process) for planning system evolution, and **LEA-PLAN-007-01** (NHA) for production agency context.
 
 ## Common Mistakes
 

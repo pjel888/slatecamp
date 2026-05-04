@@ -1,12 +1,11 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The **Renaissance is tested through four architects**—**Brunelleschi** (dome + perspective), **Alberti** (theory + facade), **Bramante** (centralized plan + Tempietto), and **Michelangelo** (dome mastery, Mannerism)—and through **Palladio** (villas, proportional systems, Four Books). Understand each architect's innovation and their influence on architectural theory.
-</Callout>
+## Learning Goal
 
+Identify the key Renaissance architects (Brunelleschi, Alberti, Bramante, Michelangelo, Palladio) and their major works, and explain how classical orders, linear perspective, humanist proportion, and centralized plans defined Renaissance architectural theory.
 ## Core Concept
 
-**Renaissance architecture** (14th–16th centuries, centered in Florence and Italy) represents a conscious *revival and reinvention* of Classical Antiquity coupled with new mathematical and humanistic thinking. Medieval Gothic gives way to rational proportions, geometric perfection, and human-sclead spaces inspired by Roman temples and Italian Renaissance humanism.
+**Renaissance architecture** (14th–16th centuries, centered in Florence and Italy) represents a conscious *revival and reinvention* of Classical Antiquity coupled with new mathematical and humanistic thinking. Medieval Gothic gives way to rational proportions, geometric perfection, and human-scaled spaces inspired by Roman temples and Italian Renaissance humanism.
 
 The period divides into **Early Renaissance** (15th century, Florence) and **High Renaissance** (early 16th century, Rome). Early Renaissance rediscovered Classical orders (Doric, Ionic, Corinthian), geometric proportion, and linear perspective in architecture. High Renaissance synthesized these discoveries into monumental, spatially integrated designs.
 
@@ -64,6 +63,10 @@ The period divides into **Early Renaissance** (15th century, Florence) and **Hig
 
 <ExamTip>**Pattern 5:** Palladio and influence. "How did Palladio's villa designs influence later European architecture?" Expect: Classical template fronts, proportional systems, symmetry, rural/suburban applicability, *Four Books* (1570) as codified model for 400+ years of architecture.</ExamTip>
 
+<Callout>
+The **Renaissance is tested through four architects**—**Brunelleschi** (dome + perspective), **Alberti** (theory + facade), **Bramante** (centralized plan + Tempietto), and **Michelangelo** (dome mastery, Mannerism)—and through **Palladio** (villas, proportional systems, Four Books). Understand each architect's innovation and their influence on architectural theory.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing Renaissance dome with Gothic vault" correction="Renaissance domes (Brunelleschi, Michelangelo at St. Peter's) use double-shell construction, Classical geometry, and are sculptural forms *dominating* the exterior. Gothic vaults are internal skeletal systems. Different structure, different theology." context="This distinction shows understanding of how different periods approached spatial organization and structural innovation." />
@@ -84,3 +87,10 @@ The period divides into **Early Renaissance** (15th century, Florence) and **Hig
 - **Pediment**: A triangular gable above a portico or facade, derived from Classical temples
 - **Portico**: A covered entrance or porch with columns, derived from Classical temple design
 - **Mannerism**: A late Renaissance style emphasizing tension, distortion of Classical rules, and dramatic effects (Michelangelo's later work)
+
+## Related Articles
+
+See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

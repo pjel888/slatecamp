@@ -2,8 +2,11 @@
 ### LEA Review | BP 344 2024 IRR | PD 1096 | RA 7277/9442/10754
 ---
 
-> **HOW TO USE THIS DECK:** Each trap below describes exactly how an LEA question is designed to fool you. The "WRONG" answer is what most examinees choose. The "CORRECT" answer is what the IRR actually says. Burn these into memory — the LEA favors close numerical distractors and old-vs-new code conflicts.
+## Learning Goal
 
+After reading this article, you should be able to:
+
+Master the 50 most frequently tested exam traps in the 2024 Revised IRR of PD 1096: distinguish the correct code reference from plausible distractors; apply the strictest requirement rule across conflicting provisions; and identify hidden conditions — exceptions, footnotes, and 'unless otherwise specified' clauses — that reverse the general rule.
 ---
 
 ## CATEGORY A: RAMPS & SLOPES (Traps 1–10)
@@ -416,3 +419,39 @@
 ---
 
 *Module 12 | BP 344 2024 IRR LEA Review Series | Philippine context only*
+
+
+---
+
+<LawCallout code="pd1096" section="2024 Revised IRR of PD 1096">
+
+
+The BP 344 2024 IRR introduced several changes that differ from earlier versions and from US ADA standards. Critical updates: preferred ramp slope is 1:20 (not 1:12), maximum ramp run is 10,500 mm (not 9,000 mm), and ramp landing length is 1800 mm (not 1500 mm). The LEA favors questions that test whether you know the current IRR value versus the commonly cited older or US value.
+
+
+</LawCallout>
+
+<Warn >
+
+TRAP: When a question states 'per the Philippine accessibility code' and gives a ramp slope of 1:12, check if they're testing the MAXIMUM vs. the PREFERRED. 1:12 is the maximum allowed, 1:20 is the preferred, 1:15 is acceptable. Many examinees incorrectly state 1:12 as the standard because it matches US ADA.
+
+</Warn>
+
+<ExamTip >
+
+The LEA loves close numerical distractors. For parking: is it 3700 mm or 4000 mm stall width? (4000 mm is correct). For corridor: is it 1500 mm or 1800 mm? (1500 mm is correct). For landing: is it 1500 mm or 1800 mm? (1800 mm is correct). Memorize the exact values — the difference of 300 mm is the trap.
+
+</ExamTip>
+
+<Tip >
+
+Mnemonic: '20-15-12' = Ramp slopes from best to max. '18-15-12' = Landing, Corridor, Ramp widths in hundreds of mm. '10.5' = max ramp run in meters. Say: 'Twenty preferred, fifteen okay, twelve if you must.'
+
+</Tip>
+
+---
+
+## Cross‑References
+
+**Typology Checklists And Plan Checking**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Vs Pd 1096 Conflicts**, **Rule I General Provisions**
+

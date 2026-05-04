@@ -9,6 +9,14 @@
 
 ## The Scenario — See It Before You Read It
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Calculate floor area ratio (FAR), building footprint, and gross floor area (GFA) under PD 1096 Rule VII; distinguish FAR from building coverage and floor area; apply the maximum allowable FAR by occupancy group and building height; identify floor area exemptions (basements used only for parking, mechanical floors, roof decks under certain conditions).
+---
+
+
 You are standing on a vacant 500 sq.m lot in Quezon City, zoned Basic R-2 (no local ordinance modifying national standards). Your client hands you a sketch: “I want the biggest building possible, and pave everything else for the cars.”[file:17]
 
 Before you open a single table, you already know three things from Table VIII.1 for **Basic R-2, without firewall**:[file:17]
@@ -268,13 +276,15 @@ B) The architect has confused PSO (a percentage) with AMBF (an area).
 C) PSO can be expressed in sq.m when the lot is smaller than 1,000 sq.m.  
 D) PSO = 275 sq.m is correct specifically for Basic R-2 lots.
 
-<details>
+<LawCallout code="pd1096" section="Rule VII - Floor Area and Lot Occupancy">
+
   <summary><b>Click to reveal the answer</b></summary>
   <br>
   <b>Correct Answer: B</b><br><br>
   PSO is always a percentage of TLA. The **area** corresponding to PSO is the AMBF.<br>
   For a 500 sq.m lot at 55% PSO, AMBF = 275 sq.m. The PSO is 55%, not 275 sq.m.[file:17]
-</details>
+
+</LawCallout>
 
 ---
 
@@ -287,13 +297,15 @@ B) Table VIII.G.6
 C) Table VII.1  
 D) Table VII.G.1
 
-<details>
+<LawCallout code="pd1096" section="Rule VII - Section 704">
+
   <summary><b>Click to reveal the answer</b></summary>
   <br>
   <b>Correct Answer: C</b><br><br>
   Table VIII.1 distinguishes firewall vs non-firewall for each zone.<br>
   Table VII.1 lists PSO by occupancy and **lot type** (inside/corner/through), which you must compare with Table VIII.1 and then adopt the more restrictive value.[file:17][file:18]
-</details>
+
+</LawCallout>
 
 ---
 
@@ -306,13 +318,13 @@ B) 150 sq.m
 C) 300 sq.m  
 D) 450 sq.m
 
-<details>
+<Accordion>
   <summary><b>Click to reveal the answer</b></summary>
   <br>
   <b>Correct Answer: B — 150 sq.m</b><br><br>
   Basic R-2, no firewall: USA = 15% (from Table VIII.1).<br>
   USA area = 1,000 x 0.15 = 150 sq.m.[file:17]
-</details>
+</Accordion>
 
 ---
 
@@ -325,12 +337,12 @@ B) 65% — the more restrictive value governs.
 C) Either, at the architect’s discretion.  
 D) 70% — firewall entitlement overrides lot-type limitations.
 
-<details>
+<Accordion>
   <summary><b>Click to reveal the answer</b></summary>
   <br>
   <b>Correct Answer: B</b><br><br>
   Rule VII, Sec. 704.4.a requires that where multiple applicable controls differ, the **more stringent** (more restrictive) value governs. Here, 65% PSO is more restrictive than 70%.[file:17]
-</details>
+</Accordion>
 
 ---
 
@@ -349,7 +361,7 @@ Answer aloud, then check.
 9. Formula to convert PSO % into AMBF (sq.m)?
 10. Com-3 with firewall: PSO = \_\_\_%.
 
-<details>
+<Accordion>
 <summary><b>Reveal Answers</b></summary>
 <br>
 1. <b>100%</b><br>
@@ -362,9 +374,25 @@ Answer aloud, then check.
 8. <b>85%</b><br>
 9. <b>AMBF = TLA x PSO</b><br>
 10. <b>90%</b>[file:17]
-</details>
+</Accordion>
 
 ---
+
+
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Three distinct metrics: (1) FAR = total floor area ÷ lot area, (2) Building coverage = footprint area ÷ lot area (max 70% in most zones), (3) Floor area = sum of all floor plates measured from exterior walls. Exclusions from FAR: basement (if used only for parking/mechanical), roof decks, uncovered balconies. FAR is the MOST tested metric on the exam.
+
+## Cross‑References
+
+**Allowable Floor Area Increases**, **Pd 1096 Rule Vii Height Limits**, **Pd 1096 Rule Vii Occupancy**, **Penthouses And Roof Structures**
 
 ## Verified Source Mapping
 

@@ -1,21 +1,22 @@
 ## Technical Specifications Writing—CSI MasterFormat, Specification Types, and the Architect's Responsibility
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: null
-[/SLATECAMP_UI_BLOCK]
+<ExamTip>
+Focus on the key concepts in this section for the Licensure Examination for Architects.
+</ExamTip>
 
 ## Learning Goal
 
 After studying this article, you should be able to:
 
 - Describe technical specification writing and the CSI MasterFormat system.
+
+<Tip>
+Memorize these items — they appear frequently on the exam.
+</Tip>
+
 - Distinguish specification types: prescriptive, performance, proprietary.
 - Explain the architect's role in preparing specifications.
 - Identify the relationship between drawings and specifications.
-
-
 
 ### The Purpose and Legal Status of Specifications
 
@@ -71,6 +72,9 @@ If a poorly written specification allows the contractor to supply inferior mater
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Technical Specifications — CSI MasterFormat Structure and Specification Types" description="Hierarchical diagram of CSI MasterFormat 50-division structure relevant to Philippine practice. Three specification types compared: Performance Specs (what building must achieve), Prescriptive Specs (exact materials/products), Proprietary Specs (brand-specific). Side panel shows architect's coordination with QS/cost estimator and specification integration with construction documents." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)
@@ -83,3 +87,7 @@ If a poorly written specification allows the contractor to supply inferior mater
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+<Note>
+This article covers foundational material. Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards.
+</Note>

@@ -1,9 +1,17 @@
 ## Multiple of Direct Personnel Expense (MDPE) — The Formula, Components, and Logic
 
-<JSX name="ArticleHeader" article="LEA-PRAC-CMP-006" />
+## Learning Goal
 
-Multiple of Direct Personnel Expense (MDPE) represents an alternative compensation method to percentage-of-PCC that bases the architect's fee on the cost of personnel engaged in the project. Under MDPE, the architect calculates direct personnel costs, multiplies that cost by a multiplier reflecting overhead, profit, and non-technical factors, and arrives at total fee. This method provides flexibility for projects where PCC-based fees are difficult to establish or where compensation should reflect actual effort rather than construction cost.
+After studying this article, you should be able to:
 
+- Define Multiple of Direct Personnel Expense (MDPE) and its formula.
+- Identify the components of MDPE: DPE × Multiplier.
+- Calculate MDPE for a given project scenario.
+- Distinguish MDPE from the percentage-of-PCC method.
+
+
+
+---
 ### Definition and Purpose of MDPE
 
 MDPE calculates compensation by identifying all personnel directly engaged in project design and delivery, calculating their total cost (salaries plus labor-related benefits), and multiplying by a factor that covers the architect's overhead, profit, and non-technical project requirements. The formula is: MDPE Fee = Direct Personnel Expense × Multiplier. This approach aligns fee with effort invested, making it particularly suitable for projects with uncertain scopes, innovative solutions, or limited construction costs relative to design complexity.
@@ -18,6 +26,19 @@ DPE does not include: owner or partner time allocated to firm management, market
 
 To calculate DPE, the architect must track or estimate hours spent by each team member and multiply by their fully-loaded hourly cost. Fully-loaded hourly cost = (annual salary + benefits) ÷ billable hours per year. If an architect earns 600,000 pesos annually plus 80,000 pesos in benefits (total 680,000 pesos) and works 1,800 billable hours per year, the fully-loaded hourly rate is 680,000 ÷ 1,800 = 377.78 pesos per hour.
 
+
+
+<ExamTip>
+  **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
+</ExamTip>
+
+
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
+
+
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Project personnel assignment determines DPE. If the senior architect allocates 200 hours to the project at 1,500 pesos per hour, the cost is 300,000 pesos. If the design architect allocates 400 hours at 900 pesos per hour, the cost is 360,000 pesos. If junior staff allocates 800 hours at 450 pesos per hour, the cost is 360,000 pesos. Total DPE = 1,020,000 pesos. This amount becomes the base for the multiplier calculation.
 
 ### The MDPE Multiplier Logic
@@ -45,3 +66,18 @@ When proposing MDPE compensation, the architect should document: (1) the hourly 
 ### MDPE Invoicing and Project Management
 
 When using MDPE compensation on a time-and-materials basis, the architect must track actual hours carefully and invoice based on actual DPE plus the negotiated multiplier. Some MDPE contracts establish a capped fee based on estimated DPE times the multiplier; others allow true billing based on actual hours. The contract should clearly specify whether MDPE is estimated and capped or actual and variable.
+
+---
+
+## Related Articles
+
+- [Project Classification Groups](lea-prac-cmp-001)
+- [Factors Determining Classification](lea-prac-cmp-002)
+- [Project Construction Cost](lea-prac-cmp-003)
+- [Schedule of Payments](lea-prac-cmp-004)
+- [MDPE Formula](lea-prac-cmp-006)
+- [MDPE Multipliers](lea-prac-cmp-007)
+- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
+- [Reimbursable Expenses](lea-prac-cmp-011)
+- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)

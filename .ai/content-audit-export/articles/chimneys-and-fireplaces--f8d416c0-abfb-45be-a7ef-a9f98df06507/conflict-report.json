@@ -1,0 +1,28 @@
+{
+  "attempted_at": "2026-05-04T00:05:52.999Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+  "slug": "chimneys-and-fireplaces",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:a8403f60ed05f13146537c5a61618492eedb21551fcabe3b96d2e9b29fe595e1",
+  "original_hash": "sha256:176eb4457cb09af8bbdd05400c55724552c2bc4b215832882634c626c4c4f3cd",
+  "candidate_hash": "sha256:113ddd08a0678903b743732f775ae0ef3bf8ab85c6ef31ee7e35bc5ec2e3c6e5",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T14:19:02.185994+00:00"
+}

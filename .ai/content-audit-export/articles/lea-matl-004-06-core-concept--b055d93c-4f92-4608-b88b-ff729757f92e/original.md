@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Reinforced concrete construction dominates Philippine buildings, bridges, and infrastructure. The LEA expects comprehensive understanding of cast-in-place (CIP) concrete systems, precast construction methods, component specifications, connection details, and construction sequencing. You must master formwork design, rebar placement, concrete curing protocols, and the economic/logistical trade-offs between CIP and precast systems. Philippine context includes recognition of popular precast manufacturers and connection practices aligned with NSCP 2015.
-
+Explain reinforced concrete design principles — how steel reinforcement and concrete work compositely under tension and compression — and identify rebar grades, sizes, and detailing requirements (cover, spacing, hooks) per NSCP 2015.
 ## Core Concept
 
 Reinforced concrete combines concrete (compressive strength) with steel reinforcement (tensile strength) to create a composite material resisting bending and tension loads. CIP construction involves building forms on-site, placing rebar, pouring concrete, and curing in place. Precast construction fabricates beams, columns, and wall panels in a plant, then transports and assembles them on-site.
@@ -40,7 +40,7 @@ _Dry Connections_ — Bolted or welded connections without grout. Mechanical fas
 
 ### Reinforced Concrete Specifications
 
-Concrete strength is designated by compressive strength (e.g., f'c = 28 MPa per Philippine standards or 4000 psi per ASTM). Common grades in Philippine construction: 21, 24, 28, 35 MPa. Rebar grade: Grade 40 (fy = 275 MPa) and Grade 60 (fy = 420 MPa) per Philippine standards (equivleant to ASTM A615). Grade 60 is dominant in modern construction due to reduced steel volume and cost per meter.
+Concrete strength is designated by compressive strength (e.g., f'c = 28 MPa per Philippine standards or 4000 psi per ASTM). Common grades in Philippine construction: 21, 24, 28, 35 MPa. Rebar grade: Grade 40 (fy = 275 MPa) and Grade 60 (fy = 420 MPa) per Philippine standards (equivalent to ASTM A615). Grade 60 is dominant in modern construction due to reduced steel volume and cost per meter.
 
 ## Key Provisions
 
@@ -67,7 +67,7 @@ Concrete strength is designated by compressive strength (e.g., f'c = 28 MPa per 
 
 Philippine precast manufacturers (including plants in Bulacan, Cavite, and Laguna) produce hollow-core slabs, DT beams, and wall panels to NSCP 2015 standards. Suppliers like Pn. BetonPro, LRC, and regional fabricators provide catalog designs and custom solutions for residential, commercial, and infrastructure projects.
 
-CIP construction remains prevleant in Manila and provincial cities due to labor cost advantages and site customization flexibility. Coconut (coco) lumber formwork dominates low-rise projects; aluminum/steel system forms appear in high-rise buildings where labor reuse favors standardized systems.
+CIP construction remains prevalent in Manila and provincial cities due to labor cost advantages and site customization flexibility. Coconut (coco) lumber formwork dominates low-rise projects; aluminum/steel system forms appear in high-rise buildings where labor reuse favors standardized systems.
 
 NSCP 2015 Chapter 4 (Reinforced Concrete) specifies minimum concrete strength (f'c), rebar coverage (typically 40 mm for beams/columns, 20-30 mm for slabs), and curing requirements aligned with ACI 318 (ACI 349 for special structures). Precast connections are governed by NSCP 2015 Section 416 and 419 (Connections and Anchors).
 
@@ -75,7 +75,7 @@ NSCP 2015 Chapter 4 (Reinforced Concrete) specifies minimum concrete strength (f
 
 The LEA evaluates RC construction through:
 
-1. _Formwork selection_ — Match formwork type to project sclea, schedule, and reusability constraints.
+1. _Formwork selection_ — Match formwork type to project scale, schedule, and reusability constraints.
 2. _Rebar placement and cover_ — Specify cover based on exposure class (Section 402) and member type.
 3. _Concrete specifications_ — Determine appropriate f'c based on member loads and durability requirements.
 4. _Curing protocols_ — Select curing method aligned with climate (tropical rainy season vs. dry season) and schedule.
@@ -92,3 +92,10 @@ The LEA evaluates RC construction through:
 <WikiMistakeCard title="Premature Form Removal Before Strength Gain" body="Forms are struck at 3 days (before ACI 347 minimum of ~70% strength) to accelerate schedule. Concrete sags, cracks develop in tension zones, and water ingress compromises durability. Strict adherence to ACI 347 strength-based removal criteria is essential, especially in tropical climates where variable curing conditions are common." />
 
 <WikiMistakeList items={["Assuming precast is always faster than CIP—precast requires factory production time, transportation logistics, and careful on-site assembly. Small projects may be faster with CIP; large repetitive projects favor precast.", "Omitting proper vibration or over-vibrating concrete—under-vibration leaves voids and weak zones; over-vibration causes segregation and surface blowholes. Operator training and equipment maintenance are critical.", "Specifying wet precast connections without accounting for grout curing delay—grouted joints require 7–14 days before load application. Schedule accordingly, or switch to dry (bolted) connections for immediate load transfer.", "Neglecting Philippine tropical curing conditions—high humidity reduces evaporation but rain exposure can wash off surface mortar. Curing compound spray is practical for Philippine rainy seasons.", "Over-specifying concrete strength (e.g., f'c = 35 MPa when f'c = 28 MPa suffices) to ensure durability—only increase strength if design loads or durability analysis (Section 402) requires it. Higher strength increases cost and heat of hydration."]} />
+
+## Related Articles
+
+See also within Construction Systems and Methods: **lea-matl-004-07-core-concept**, **lea-matl-004-08-core-concept**, **lea-matl-004-09-core-concept**, **lea-matl-004-10-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

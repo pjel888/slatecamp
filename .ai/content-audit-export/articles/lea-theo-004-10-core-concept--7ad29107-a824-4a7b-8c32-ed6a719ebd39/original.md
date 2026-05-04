@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The **bahay kubo** and **bahay na bato** represent centuries of indigenous climate adaptation. The bahay kubo's elevated stilts, steeply pitched nipa-thatched roof, large windows, and open floor plan achieve natural ventilation rates of 8–10 ACH without fans—matching mechanical systems while eliminating operational energy. Francisco Mañosa's assertion, "Everything started with the Nipa Hut," reflects the philosophical foundation of authentic Philippine tropical architecture and BERDE-aligned sustainable design.
-</Callout>
+## Learning Goal
 
+Explain how the bahay kubo (elevated floor, steep roof, wide eaves, permeable walls) and bahay na bato (stone ground floor, timber upper floor, capiz windows) represent centuries of indigenous climate adaptation in Philippine vernacular architecture.
 ## Core Concept
 
 ### The Bahay Kubo: Climate-Responsive Baseline
@@ -81,7 +80,7 @@ Traditional bahay kubo uses exclusively indigenous, locally-sourced materials:
 
 ### The Bahay na Bato: Colonial Climate Adaptation
 
-The **bahay na bato** ("stone house") emerged during the Spanish colonial period (1565–1898). It represents a fusion: Spanish-influenced formal design combined with climate-responsive features inherited from the bahay kubo. It is the aristocratic equivleant of the vernacular dwelling.
+The **bahay na bato** ("stone house") emerged during the Spanish colonial period (1565–1898). It represents a fusion: Spanish-influenced formal design combined with climate-responsive features inherited from the bahay kubo. It is the aristocratic equivalent of the vernacular dwelling.
 
 #### Structural Hybridization
 
@@ -152,7 +151,7 @@ Traditional architecture evolved distinctly within each Coronas climate type:
 
 - **Climate Responsiveness**: Buildings must align with Coronas classification and seasonal patterns (example: Amanpulo Resort incorporates native timber framing and natural ventilation mimicking vernacular strategy)
 - **Material Authenticity**: Preference for indigenous materials (Philippine hardwoods, bamboo, rattan) and visible material expression
-- **Spatial Openness**: Rejecting selead air-conditioned boxes; embracing open floor plans and transitional spaces (courtyards, galleries) that buffer interior from extreme outdoor conditions
+- **Spatial Openness**: Rejecting sealed air-conditioned boxes; embracing open floor plans and transitional spaces (courtyards, galleries) that buffer interior from extreme outdoor conditions
 - **Cultural Continuity**: Modern design references bahay kubo and bahay na bato formal logic, creating visual lineage to indigenous tradition
 
 #### Notable Mañosa Works Demonstrating Vernacular Integration
@@ -186,21 +185,19 @@ This demonstrates that vernacular architecture is not outdated but rather a **va
 
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Vernacular Analysis**: Given a bahay kubo cross-section, identify four climate-responsive features. Explain how each addresses a specific Coronas climate challenge (heat, humidity, flood, wind). Quantify ventilation benefit of elevated structure.</ExamTip>
-
 
 <ExamTip>2. **Bahay na Bato Design Adaptation**: Design a modern residential building incorporating three bahay na bato principles (stone ground floor for thermal mass, wooden upper story, large windows, elevated galleries). Show how seismic resilience and climate responsiveness are achieved.</ExamTip>
 
-
 <ExamTip>3. **Coronas Type Vernacular Match**: Given a Coronas Type II climate description (no dry season, heavy Dec–Feb rain, typhoon exposure), specify vernacular features from bahay kubo/bahay na bato traditions that address these conditions. Justify material and structural choices.</ExamTip>
-
 
 <ExamTip>4. **Mañosa Philosophy Application**: Design a modern commercial building in a tropical Philippine city following Mañosa's principle, "Everything started with the Nipa Hut." Show how vernacular climate responsiveness informs spatial organization, material selection, and structural approach.</ExamTip>
 
-
 <ExamTip>5. **BERDE Vernacular Certification**: A homeowner wants a BERDE-certified addition to a traditional bahay kubo. Specify design interventions that preserve vernacular climate responsiveness while meeting contemporary code and certification requirements (passive cooling rates, natural materials, water management).</ExamTip>
 
+<Callout>
+The **bahay kubo** and **bahay na bato** represent centuries of indigenous climate adaptation. The bahay kubo's elevated stilts, steeply pitched nipa-thatched roof, large windows, and open floor plan achieve natural ventilation rates of 8–10 ACH without fans—matching mechanical systems while eliminating operational energy. Francisco Mañosa's assertion, "Everything started with the Nipa Hut," reflects the philosophical foundation of authentic Philippine tropical architecture and BERDE-aligned sustainable design.
+</Callout>
 
 ## Common Mistakes
 
@@ -209,7 +206,6 @@ This demonstrates that vernacular architecture is not outdated but rather a **va
 <WikiMistakeCard mistake="Treating Bahay na Bato as Pure Heritage" correction="Failing to recognize that bahay na bato was colonial adaptation, not pre-contact indigenous form." context="Its seismic resilience and thermal mass are valuable but not infallible; modern design must strengthen these features." />
 
 <WikiMistakeList mistakes={["Ignoring Seasonal Variation. Designing for monsoon wind direction (May–Oct) but underestimating calm-season ventilation needs (Nov–Apr). Seasonal wind reversals require flexible orientation and supplementary stack effect.", "Using Imported Materials Under \"Vernacular\" Label. Substituting concrete blocks or metal siding for traditional bamboo/timber. BERDE certification requires authentic indigenous materials; imitation undermines both performance and cultural authenticity.", "Assuming Vernacular = Unventilated. A selead bahay kubo-inspired building defeats the entire design philosophy. Open floor plans and window placement must enable actual cross-ventilation; decorative large windows are insufficient.", "Missing Thermal Mass Integration. The bahay na bato's ground-floor stone provides thermal lag; omitting this from modern adaptations loses 2–3 K temperature moderation benefit during heat peaks."]} />
-
 
 ## Key Terms
 
@@ -236,3 +232,10 @@ This demonstrates that vernacular architecture is not outdated but rather a **va
 **Francisco Mañosa Philosophy** — "Everything started with the Nipa Hut"; emphasis that authentic Philippine architecture must derive climate intelligence and design principles from indigenous traditions.
 
 **BERDE Vernacular Credit** — Philippine green building certification points awarded for natural materials, passive design, and climate responsiveness aligned with vernacular practices.
+
+## Related Articles
+
+See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-02-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-07-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

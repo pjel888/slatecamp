@@ -4,9 +4,13 @@
 
 Distinguish Group C (theater with proscenium stage) from Group H (assembly without stage), calculate seating area at 0.9 sqm/seat, apply egress width at 7.6 mm/person, and verify compliance with stage minimum dimensions and accessibility standards.
 
----
+|---
 
 ## Core Concept
+
+<ExamTip>
+The LEA frequently tests theater vs. assembly classification. The single deciding factor is the presence of a **fixed proscenium stage** — not seating capacity. A 1,200-seat concert hall WITH a fixed proscenium stage is still Group C (Theater), not Group H.
+</ExamTip>
 
 Theater and performance venue classification is a **critical LEA trap** per **ERR-DSGN-005**. The distinction hinges on the _presence of a stage_:
 
@@ -14,6 +18,15 @@ Theater and performance venue classification is a **critical LEA trap** per **ER
 - **Group H (Large Assembly):** Stadiums, arenas, concert halls without a dedicated stage, amphitheaters, and sports complexes. Typical capacities are 500+ seats; these may have temporary or multi-purpose stages.
 
 This classification difference is significant because Group C uses education/recreation egress standards, while Group H uses assembly egress standards with different occupant load calculations and larger exit aggregate widths. The LEA frequently presents mixed descriptions, requiring students to identify whether a venue is Group C (if a fixed proscenium stage exists) or Group H (if it features flexible staging).
+
+<KeyValues items={[
+  {label:"Seating area per person", value:"0.9 sqm"},
+  {label:"Minimum proscenium stage", value:"9.0 m × 12.0 m"},
+  {label:"Main aisle width (RA 9514)", value:"1.1 m minimum"},
+  {label:"Exit width rate", value:"7.6 mm/person"},
+  {label:"Max travel distance (unsprinklered)", value:"45 m"},
+  {label:"Accessible parking stall", value:"3.7 m × 5.0 m"}
+]} />
 
 ### Space Program Standards
 
@@ -74,6 +87,7 @@ Below are the standards per **RA 9514** and theater design practice:
 - **Wheelchair space:** 1.5 m × 2.0 m per space, allowing for companion seating.
 - **Accessible parking stall:** **3.7 m × 5.0 m** per BP 344 2024 Revised IRR.
 - **Ramp gradient:** **1:20 maximum** per BP 344 2024 Revised IRR Part 2 Section 206.
+<ArticleMedia id="media-lea-dsgn-004-07-core-concept" a type="image" caption="Theater Typology — Proscenium, Thrust, and Arena Stage Configurations" description="Comparison diagram of three theater stage types: proscenium (framed stage, 0.9 sqm/seat), thrust (stage extends into audience), and arena (surrounded). Shows stage minimum dimensions, seating angles, and egress requirements per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -112,9 +126,16 @@ Below are the standards per **RA 9514** and theater design practice:
 
 | **Answer:** Required width = 400 × 7.6 mm = 3,040 mm (3.04 m). Since 2.0 m is available, it is **NON-COMPLIANT**.
 
+<WikiMistakeCard number={1} title="Group C vs Group H Trap" wrongValue="Use seating capacity alone to classify" correctValue="Check for a fixed proscenium stage — that's the deciding factor" explanation="A 200-seat community theater with a fixed stage is Group C. A 1,200-seat arena with flexible staging is Group H. The LEA often includes stage descriptions to test this distinction." />
+
+<Tip>
+**Memory aid for stage minimums:** Think "9 × 12 = 108" — the minimum proscenium stage is 9.0 m wide × 12.0 m deep (108 sqm). For seating: 0.9 sqm per seat is roughly 1 sqm, making mental math fast under exam pressure.
+</Tip>
+
 ---
 
 **Exam Tip — ERR-DSGN-005:** The presence of a proscenium stage determines Group C vs Group H classification. Stadiums and arenas without fixed stages = Group H, regardless of seating capacity.
+<ArticleMedia id="media-lea-dsgn-004-07-core-concept" a type="image" caption="Theater Seating and Egress — Sightlines, Row Spacing, and Exit Distribution" description="Theater seating plan showing: minimum row spacing (850mm), seat width (500-550mm), sightline angles (max 30° to top of stage), and exit distribution at 7.6 mm/person. Proscenium stage minimum dimensions and BP 344 accessible seating zones shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

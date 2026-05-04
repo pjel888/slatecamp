@@ -1,38 +1,46 @@
 {
   "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
   "slug": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information",
-  "generated_at": "2026-05-03T13:45:12.025Z",
-  "old_hash": "sha256:0d1ee274b5edc57e0e760706731321df8a920c9919827a72c0ac5a837b9780ab",
-  "new_hash": "sha256:4b6afa739533b2d6add62106e92fd594390911fb3c9557823d9691bf5d8636b5",
-  "original_hash": "sha256:0d1ee274b5edc57e0e760706731321df8a920c9919827a72c0ac5a837b9780ab",
-  "normalized_hash": "sha256:ab328372cbee3d3f0620436faee0b7944a6a76ea7bb9703c0cb86b3b2f64e8f3",
-  "candidate_hash": "sha256:4b6afa739533b2d6add62106e92fd594390911fb3c9557823d9691bf5d8636b5",
+  "generated_at": "2026-05-04T00:06:51.955Z",
+  "old_hash": "sha256:d41cd859dc57a272980f4620a160f72782a4bdb48c77ee642e27109c49904a95",
+  "new_hash": "sha256:05df86b21c665eab9bd840124f8d8447c9ecb67f2d007cf0d0efa802ad3f866b",
+  "original_hash": "sha256:d41cd859dc57a272980f4620a160f72782a4bdb48c77ee642e27109c49904a95",
+  "normalized_hash": "sha256:05df86b21c665eab9bd840124f8d8447c9ecb67f2d007cf0d0efa802ad3f866b",
+  "candidate_hash": "sha256:05df86b21c665eab9bd840124f8d8447c9ecb67f2d007cf0d0efa802ad3f866b",
   "changed": true,
-  "changed_line_count": 81,
-  "inserted_line_count": 38,
-  "deleted_line_count": 0,
-  "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
-  "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "changed_line_count": 80,
+  "inserted_line_count": 0,
+  "deleted_line_count": 5,
+  "ui_blocks_original_count": 4,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
+  "ui_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 81,
-    "inserted": 38,
-    "deleted": 0,
-    "original_line_count": 49,
-    "candidate_line_count": 87
+    "changed": 80,
+    "inserted": 0,
+    "deleted": 5,
+    "original_line_count": 86,
+    "candidate_line_count": 81
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
 }

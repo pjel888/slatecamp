@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Finish schedules are working-drawing documents that specify all surface treatments for a project. The LEA tests your ability to read, interpret, and create schedules in standard format that builders can execute without ambiguity.
-
+Identify the purpose and structure of a finish schedule as a specification document that coordinates floor, wall, and ceiling finishes across all rooms, and create a sample finish schedule entry applying correct material codes, locations, and installation notes.
 ## Core Concept
 
 A finish schedule is a matrix table in construction documents that lists each room/space, identifies wall, floor, ceiling, and sometimes door and window finishes, and cross-references them to larger detail drawings. This document prevents field interpretation and rework. Three interrelated schedules exist: room finish schedules, door schedules, and window schedules.
@@ -65,3 +65,10 @@ Accessibility compliance (BP 344) is documented in schedules where applicable. S
 <WikiMistakeCard mistake="Omitting finish schedules for door and window hardware, leading to color/style mismatches" correction="Include hardware finish in door and window schedules (e.g., 'Brass handles, stainless hinges, brushed stainless push plates per Section 8.7'). Consistency requires specificity." />
 
 <WikiMistakeList mistakes={["Not accounting for finish transitions where different materials meet (e.g., tile to wood, paint to wallpaper)", "Failing to specify grout color for tile finishes, assuming default (results in color mismatch and rework)", "Omitting baseboard and trim heights in finish schedules (75mm, 100mm, or custom)", "Not specifying ceiling finish details (grid type, tile size, NRC rating, paint sheen)", "Creating schedules without a key/legend sheet showing actual material and color samples for field reference"]} />
+
+## Related Articles
+
+See also within Interior Finishes: **lea-matl-007-01-core-concept**, **lea-matl-007-02-core-concept**, **lea-matl-007-03-core-concept**, **lea-matl-007-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

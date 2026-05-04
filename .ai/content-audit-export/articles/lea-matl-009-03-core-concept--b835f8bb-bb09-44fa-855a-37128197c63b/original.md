@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Schedules are non-graphical construction documents that organize and systematize repetitive information in tabular format. Schedules complement specifications by providing quick-reference data for materials, products, and installation details that vary across a project. The LEA tests your ability to structure schedules properly and coordinate them with working drawings and specifications.
-
+Identify the three-part format of a specification section (Part 1: General, Part 2: Products, Part 3: Execution) and explain the type of information required in each part, including references, submittals, quality assurance, materials, and installation procedures.
 ## Core Concept
 
 Schedules serve as a bridge between graphical drawings and written specifications. A door schedule lists every door in the project (keyed to room numbers), specifying the type (swing vs. sliding), size, frame material, finish, hardware requirements, and fire rating. Rather than annotating each door on floor plans with detailed notes, a schedule centralizes this information for the contractor and fabricator. Schedules are particularly valuable on large projects where repetition would create drawing clutter.
@@ -30,7 +30,7 @@ _Lighting schedules_ tabulate fixture type, wattage, quantity per room, mounting
 
 Philippine architects use schedules extensively in private commercial practice (office buildings, shopping malls, hotels) but less frequently in small residential projects due to simplicity. Government projects (DPWH, DepEd schools, Department of Health hospitals) mandate schedules for transparency and quality control. The Board of Architecture recommends schedules as best practice in the Architects' Code of Ethics: clear, systematic documentation prevents disputes and demonstrates professional competence.
 
-Schedules are essential in the Philippine climate and regulatory context. Fire-rated door and window schedules ensure compliance with NSCP Chapter 8 (Fire Safety) requirements for occupancy types. Typhoon-resistant window schedules specify wind load ratings per NSCP Chapter 1, which is critical for coastal properties. Room finish schedules address mold resistance and humidity durability for tropical climate. Large public projects (hospitals, schools) use room finish and hardware schedules to ensure accessibility compliance (ADA or equivleant Philippine requirements).
+Schedules are essential in the Philippine climate and regulatory context. Fire-rated door and window schedules ensure compliance with NSCP Chapter 8 (Fire Safety) requirements for occupancy types. Typhoon-resistant window schedules specify wind load ratings per NSCP Chapter 1, which is critical for coastal properties. Room finish schedules address mold resistance and humidity durability for tropical climate. Large public projects (hospitals, schools) use room finish and hardware schedules to ensure accessibility compliance (ADA or equivalent Philippine requirements).
 
 In practice, schedules are often developed by interior designers or specification writers in coordination with the architect. The architect verifies that schedules are complete, internally consistent (door marks match floor plan symbols), and aligned with specification requirements. A door schedule specifying "Fire-Rated 60-minute" must correspond to a Division 08 specification stating "60-minute fire rating per ASTM E152."
 
@@ -57,3 +57,10 @@ Memory aid for schedules: **Completeness, Consistency, Coordination**. Every sch
 <WikiMistakeCard mistake="Specifying different performance criteria in the schedule versus the specification. Example: window schedule specifies 'U-value 0.22' but Division 08 specification requires 'U-value 0.25 minimum.' This ambiguity creates disputes over which document controls." correction="The specification typically controls performance and acceptance criteria. The schedule should reference specification sections (e.g., 'See Division 08 for glazing requirements'). Never let schedule and specification criteria conflict. If they differ, the specification (Part 1: General) must clarify which takes precedence." />
 
 <WikiMistakeList mistakes={["Developing a door schedule without fire rating information when fire-rated doors are required by NSCP (commercial buildings, corridors, exit stairs)", "Omitting hardware schedules, forcing the contractor to infer hardware requirements from specification text", "Creating a room finish schedule but failing to coordinate it with interior design drawings, leading to color/material mismatches", "Specifying 'typical' instead of itemizing each unique door/window (defeats the purpose of the schedule)", "Failing to identify accessibility requirements in hardware schedules (door force, lever handle height, latch design per ADA)", "Omitting quantity columns, making it unclear how many of each item to fabricate", "Not including remarks/notes columns for special conditions (e.g., 'coordinate with structural opening,' 'hold for field verification')"]} />
+
+## Related Articles
+
+See also within Architectural Specifications and Documentation: **lea-matl-009-01-core-concept**, **lea-matl-009-02-core-concept**, **lea-matl-009-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

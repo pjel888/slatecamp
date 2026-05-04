@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Window hardware and operators control window movement and operation. LEA exams test your ability to classify window types by operation, apply AAMA performance standards, specify hardware for typhoon zones, and integrate weatherstripping to prevent air and water infiltration.
-
+Identify expansion joint types and locations in buildings — structural, thermal, seismic, construction joints — and explain how each joint type accommodates movement while maintaining water-tightness, fire rating, and structural integrity.
 ## Core Concept
 
 Window operations are classified by movement type and operator mechanism. Fixed windows do not open and provide no ventilation. Sliding windows (horizontal or vertical) use tracks and wheels, requiring minimal operator effort but prone to binding if tracks are dirty. Casement windows swing outward on hinges (typically one or two) with a crank operator on the interior, providing full opening and unobstructed ventilation. Awning windows hinge at the top and swing outward at the bottom, automatically shedding rain and allowing ventilation during light rainfall. Hopper windows hinge at the bottom and swing inward, typically used in basements. Pivot windows rotate on pivots at the top and bottom, ideal for large or frameless glass panels. Double-hung windows have two vertically sliding sashes balanced by counterweights (historic) or spring mechanisms (modern).
@@ -53,3 +53,10 @@ The Philippines experiences wind speeds exceeding 150 mph during Category 4-5 ty
 <WikiMistakeCard mistake="Omitting weatherstripping to reduce cost, assuming standard window frames provide adequate sealing." correction="Weatherstripping reduces air leakage by 30-50 percent and prevents water infiltration. Omitting it causes high HVAC loads and rain intrusion during monsoons." />
 
 <WikiMistakeList mistakes={["Specifying sliding windows in typhoon zones; they do not shed rain as effectively as awning or casement windows", "Using standard steel hardware in coastal areas; stainless steel or coated aluminum is required to resist salt spray corrosion", "Neglecting to account for local wind speeds; some Philippine regions experience 150+ mph gusts, requiring upgraded specifications"]} />
+
+## Related Articles
+
+See also within Hardware, Joints, and Fasteners: **lea-matl-008-01-core-concept**, **lea-matl-008-02-core-concept**, **lea-matl-008-03-core-concept**, **lea-matl-008-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

@@ -1,18 +1,26 @@
 {
   "article_id": "efb82628-9bf4-4bde-9561-8b784384c32c",
   "slug": "pre-columbian-mesoamerica",
-  "generated_at": "2026-05-03T13:44:11.217Z",
-  "original_hash": "sha256:c866b72dcbc617c94c7118623b905a9f5e9c5485f3625876e4eb581ffe1bf52a",
-  "normalized_hash": "sha256:851245183fce760339f33add94b02db69271558e30413c083e38de23e79f7ddb",
-  "candidate_hash": "sha256:fbdfe019d6a3aaed75f3b9212ded3ad366e93905313e7be09014cc9745faf3bc",
+  "generated_at": "2026-05-04T00:05:38.496Z",
+  "original_hash": "sha256:fbdfe019d6a3aaed75f3b9212ded3ad366e93905313e7be09014cc9745faf3bc",
+  "normalized_hash": "sha256:68c8fc1525cd46fd57e64b4b956e0dc80e5376581d60350db1168d766ea7cbdc",
+  "candidate_hash": "sha256:68c8fc1525cd46fd57e64b4b956e0dc80e5376581d60350db1168d766ea7cbdc",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

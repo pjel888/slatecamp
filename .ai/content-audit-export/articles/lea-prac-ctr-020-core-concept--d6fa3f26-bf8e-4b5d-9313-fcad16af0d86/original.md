@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe dispute resolution methods: negotiation, mediation, arbitration, litigation.
+- Distinguish the Construction Industry Arbitration Commission (CIAC) from regular courts.
+- Explain the arbitration clause in standard construction contracts.
+- Identify which disputes are subject to mandatory arbitration.
 
 Construction claims are formal demands for money, time extensions, or other relief arising from alleged breach or non-performance by the other party. Claims are classified by basis: (1) delay claims for schedule extensions and associated costs, (2) defect claims for contractor failure to perform work per specifications, (3) changed work claims for modifications to original scope, and (4) differing site conditions claims for unforeseen conditions. The contractor bears the obligation to document all claims thoroughly and submit them within contractual timeframes, typically with detailed backup documentation demonstrating the factual and contractual basis.
 
@@ -27,7 +34,7 @@ The documentation obligation is fundamental to claims discipline. The contractor
 
 ## Philippine Practice Context
 
-Under Philippine construction practice and UAP Document 301, claims are governed by strict documentation and submission requirements. The contractor who claims delay must prove: (1) the event that caused delay (owner action/inaction), (2) that the delay was not contractor's responsibility, (3) the number of cleandar days of delay, and (4) the contractor's entitlement under the contract to time extension and associated costs. Without all four elements documented, the claim fails. The contractor cannot simply assert delay; proof is mandatory.
+Under Philippine construction practice and UAP Document 301, claims are governed by strict documentation and submission requirements. The contractor who claims delay must prove: (1) the event that caused delay (owner action/inaction), (2) that the delay was not contractor's responsibility, (3) the number of calendar days of delay, and (4) the contractor's entitlement under the contract to time extension and associated costs. Without all four elements documented, the claim fails. The contractor cannot simply assert delay; proof is mandatory.
 
 Cost-based claims (changed work, differing site conditions) require the contractor to document: original price for the work, actual costs incurred, invoices from suppliers and subcontractors, labor time records, equipment rental evidence, and proof that costs were reasonable and not inflated. The contractor's failure to maintain cost records during construction eliminates the ability to recover additional costs later. The architect is authorized to demand documentation and reject claims that lack substantiation. If the contractor cannot produce invoices or cost records, the architect may recommend claim denial.
 
@@ -52,3 +59,18 @@ The architect's role in claims review is central. The architect inspects the wor
 ## Common Mistakes
 
 <WikiMistakeList mistakes={["Assuming casual requests are claims (Claims are formal written demands with supporting documentation, not casual requests)", "Thinking delay can be claimed without proving the four elements (Must prove event, non-contractor fault, cleandar days, and contract entitlement)", "Confusing cost estimates with proof of actual costs incurred (Invoices and cost records are required, not estimates)", "Believing contractor can claim cost recovery months after performance without documentation (Documentation must be contemporaneous during construction)", "Assuming contract deadline for claims can be extended informally (Deadline is strict; informal extensions do not waive the requirement)", "Thinking architect can ignore contractor claims (Architect must review, request documentation, and make written recommendation)", "Confusing changed work claims with differing conditions claims (Different legal bases, different proof requirements)", "Assuming architect's claim recommendation is final (Architect recommends; owner makes final decision on claim acceptance)"] />
+
+---
+
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)

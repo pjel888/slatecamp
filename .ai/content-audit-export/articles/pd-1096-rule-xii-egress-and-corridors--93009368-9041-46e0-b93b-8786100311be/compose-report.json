@@ -1,18 +1,26 @@
 {
   "article_id": "93009368-9041-46e0-b93b-8786100311be",
   "slug": "pd-1096-rule-xii-egress-and-corridors",
-  "generated_at": "2026-05-03T13:44:11.284Z",
-  "original_hash": "sha256:255db37993c662cc0a281fd01e3d2ddc1dabd4fd8fe00e5f0401a6769dc0bfe7",
-  "normalized_hash": "sha256:1071fa8eaa25344f2465cec62a60f8f9b9c76a949371a56c1b89cb992e4cf7b6",
-  "candidate_hash": "sha256:95e2f4f6b470351633eefdf8e3b974e8326ebae20123281863a52e89b91233cd",
+  "generated_at": "2026-05-04T00:05:38.569Z",
+  "original_hash": "sha256:69fed52b89130a7f8a44a1ae3e9e096985fbd912f666c134992a0b7395268778",
+  "normalized_hash": "sha256:b4195bdc2ed3e5fccab7f9e96624ec4db306da6f9116be354406b2d205709295",
+  "candidate_hash": "sha256:b4195bdc2ed3e5fccab7f9e96624ec4db306da6f9116be354406b2d205709295",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

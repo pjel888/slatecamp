@@ -1,38 +1,45 @@
 {
   "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
   "slug": "lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic",
-  "generated_at": "2026-05-03T13:45:23.038Z",
-  "old_hash": "sha256:039e86f3b2c85181ca80c405570537b95af5147627e153738d10c9cd008a9806",
-  "new_hash": "sha256:8ddaac5b28a11f413d6f3698ca63284e7bdff8055ec65fbb0e4d4131df7252cb",
-  "original_hash": "sha256:039e86f3b2c85181ca80c405570537b95af5147627e153738d10c9cd008a9806",
-  "normalized_hash": "sha256:a83c34cdb92441a41cbd0ba111f1f66db542a66f3f5383d096831e8378460d5e",
-  "candidate_hash": "sha256:8ddaac5b28a11f413d6f3698ca63284e7bdff8055ec65fbb0e4d4131df7252cb",
+  "generated_at": "2026-05-04T00:07:04.537Z",
+  "old_hash": "sha256:8ddaac5b28a11f413d6f3698ca63284e7bdff8055ec65fbb0e4d4131df7252cb",
+  "new_hash": "sha256:5ac087564a55bd8e17b74ee9fe7c2602da81152069cc54f18a392097b3da881f",
+  "original_hash": "sha256:8ddaac5b28a11f413d6f3698ca63284e7bdff8055ec65fbb0e4d4131df7252cb",
+  "normalized_hash": "sha256:5ac087564a55bd8e17b74ee9fe7c2602da81152069cc54f18a392097b3da881f",
+  "candidate_hash": "sha256:5ac087564a55bd8e17b74ee9fe7c2602da81152069cc54f18a392097b3da881f",
   "changed": true,
-  "changed_line_count": 69,
-  "inserted_line_count": 37,
-  "deleted_line_count": 0,
+  "changed_line_count": 52,
+  "inserted_line_count": 0,
+  "deleted_line_count": 7,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 69,
-    "inserted": 37,
-    "deleted": 0,
-    "original_line_count": 47,
-    "candidate_line_count": 84
+    "changed": 52,
+    "inserted": 0,
+    "deleted": 7,
+    "original_line_count": 84,
+    "candidate_line_count": 77
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

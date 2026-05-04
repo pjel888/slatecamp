@@ -5,6 +5,8 @@
 Explain how buildings communicate meaning beyond function through architectural language, signs, symbols, and semiotic systems, and identify how form, material, and spatial sequences convey cultural and conceptual content.
 ## Core Concept
 
+<ArticleMedia id="media-lea-theo-001-12-core-concept" a type="image" caption="Architectural Semiotics — Signifier, Signified, and Referent" description="Three-column diagram explaining how buildings communicate meaning: Signifier column shows architectural elements (pointed arch, dome, column, cross plan), Signified column shows the meanings conveyed (medieval/Gothic, authority/completeness, classical order, sacred/Christian), and Referent column shows the cultural tradition referenced. Examples include Pantheon, Gothic cathedral, Sydney Opera House shells, and bahay na bato. A bottom panel explains denotation (literal function) vs. connotation (cultural associations)." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 Architecture is not merely shelter. Buildings are communication systems; they convey meaning through their forms, proportions, materials, and spatial arrangements. A church building communicates religious purpose through its formal elements even before you enter it. A courthouse communicates authority and permanence through its monumental form and stone construction. A family home communicates intimacy and refuge through its scale, materials, and relationship to its site. The architecture itself is a language speaking to observers and users about the building's purpose, the values of its builder, and the cultural moment of its creation.
 
 **Semiotics** is the study of signs and how meaning is created and communicated through sign systems. In architecture, semiotics examines how buildings function as signs—how they communicate meaning to those who observe and use them. A sign consists of three components: the signifier (the form itself—what is visible), the signified (what the form represents or means), and the referent (the actual thing or concept being represented). A pointed arch in a façade is the signifier; "Gothic" or "medieval" or "spiritual aspiration" is the signified; the historical tradition of Gothic architecture is the referent.
@@ -36,88 +38,36 @@ The capacity of architecture to communicate meaning is why architectural choices
 Understanding architecture as a communication system—as symbol, metaphor, and narrative—is essential to becoming a literate architectural observer and designer. It explains why certain buildings feel right for their purposes and locations, and why others feel discordant. It explains why people attach meaning to buildings beyond their functional value. And it clarifies that architects, in designing buildings, are not only solving practical problems; they are making cultural statements and participating in the production of meaning in society.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Sign System Structure:** Signifier (what you see) → Signified (what it means). Always distinguish between denotation (literal, functional meaning) and connotation (cultural, emotional meanings). A hospital building denotes medical care but connotes trust, hope, and scientific authority. Both levels of meaning matter.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Symbols and metaphors are culturally constructed. Meanings are NOT universal across all cultures or time periods. A dome symbolizes authority in Western tradition but divine presence in Islamic tradition. The same form can carry different meanings in different contexts. Understanding specific cultural contexts (especially Filipino architectural traditions for the LEA) is essential.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Critical distinction: Meaning is integral to architecture, not superficial decoration. Architectural choices (materials, proportions, forms, symbols) carry meaning whether intentional or not. Architects cannot treat meaning as optional; it is an inseparable part of architectural communication. A choice to employ certain forms is a cultural statement.
-[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{["Concept", "Definition", "Example", "Meaning Level"]}", rows="{[["**Signifier**", "The visible form, the architectural element itself", "Pointed arch in a façade", "What you see"], ["**Signified**", "What the form represents or means", "Gothic tradition, spiritual aspiration, medieval origin", "What it means"], ["**Denotation/Primary Meaning**", "Straightforward, functional interpretation", "A hospital building is for medical care", "Literal, functional"], ["**Connotation/Secondary Meaning**", "Cultural associations and interpretations", "A hospital conveys care, trust, scientific authority", "Cultural, emotional"], ["**Symbol**", "A form representing something abstract through cultural convention", "Spire = spiritual aspiration; dome = authority; red brick = heritage", "Culturally constructed"], ["**Metaphor**", "Representation of one thing in terms of another, suggesting analogy", "Sydney Opera House = sailboats; Guggenheim spiral = organic growth", "Poetic, conceptual"], ["**Narrative**", "The capacity of a building to tell stories and communicate historical or cultural meanings", "Historic buildings narrate history; bahay na bato narrates cultural synthesis", "Historical, contextual"]]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 1: Sign System Recognition.** The LEA asks you to identify what a specific architectural element signifies. Example stem: "A pointed arch in a building's façade primarily signifies which of the following?" Answer: Gothic or medieval origin, spiritual aspiration, historical precedent. The pointed arch is the signifier (what you see); the meanings it communicates are the signifieds.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 2: Symbol Identification.** Questions ask you to recognize architectural symbols. Example stem: "The octagonal dome in Islamic sacred architecture symbolizes which concepts?" Answer: Paradise, heaven, eight-folded cosmic order, or divine authority. The dome is not these things literally, but through cultural convention it has come to represent them.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 3: Metaphorical Reading.** The LEA asks you to interpret architectural metaphors. Example stem: "The spiral form of the Guggenheim Museum metaphorically suggests which concepts?" Answer: Upward movement, growth, organic form, continuation. The museum is not literally a spiral shell, but the spiral form carries these metaphorical meanings.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 4: Meaning in Context.** Questions address how architectural meaning relates to cultural and historical context. Example stem: "How does the bahay na bato architectural type communicate cultural identity?" Answer: It narrates the synthesis of indigenous Filipino and Spanish colonial traditions, symbolizing the historical experience of colonialism and cultural adaptation. The building's form itself tells a cultural story.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 5: Multiple Levels of Meaning.** The LEA tests whether you understand that architecture communicates on multiple levels simultaneously. Example stem: "A stone-built government building with a symmetrical form, grand entry, and classical proportions communicates meaning at which of the following levels?" Answer: Multiple levels—denotation (it is a public building), connotation (permanence, authority, civic importance), symbolism (stone = stability and timelessness), metaphor (symmetry =
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: The LEA tests your understanding that buildings communicate meaning beyond their functional and structural purposes. You must understand how architecture employs symbols, metaphors, and narrative to c
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Confusing symbol with metaphor", correction="A symbol is a form representing something abstract through cultural convention (a cross = Christianity). A metaphor is an analogy suggesting likeness (spiral = organic growth). While related, they operate differently. Symbols are more direct conventions; metaphors suggest poetic analogies.", context="The LEA tests whether you can distinguish between these similar but distinct concepts. Confusing them demonstrates incomplete understanding of semiotic theory."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Assuming meanings are universal", correction="Meaning is culturally constructed and varies across cultures and historical periods. A dome might symbolize authority in Western tradition but divine presence in Islamic tradition. Meanings change as cultural values shift. There are no universal architectural meanings.", context="Understanding that meaning is culturally specific is essential, especially for the Philippine LEA where Filipino architectural meanings differ from Western traditions."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{["Reading buildings as textbooks: Much architectural meaning operates intuitively and subliminally. A well-designed building communicates meaning that observers feel rather than consciously articulate. Not all architectural meaning is explicitly intentional; some emerges from cultural internalization.", "Overlooking the Philippines-specific context: You must understand how Filipino architecture specifically communicates meaning—the significance of the bahay na bato, the role of vernacular architecture in expressing cultural identity, the way colonial history is encoded in the built environment. Generic understanding will miss culturally specific meanings.", "Treating meaning as superficial decoration: Meaning is integral to architecture, not an optional layer. The choice to employ certain forms, materials, and proportions carries meaning whether intentional or not. Architectural meanings influence how people experience and understand buildings.", "Confusing narrative with storytelling: Architectural narrative operates subtly through materials (expressing history), proportions (communicating values), and spatial organization (revealing how people move and gather). Narrative is not literal depiction but embedded meaning."]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

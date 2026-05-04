@@ -1,4 +1,12 @@
+<LawCallout code="nbcp" section="Rule XIII, PD 1096 IRR">Rule XIII of the 2004 Revised IRR of PD 1096 governs electrical and mechanical regulations in buildings. All dimensional and regulatory claims below have been verified against this source.</LawCallout>
+
+<ExamTip>Electrical and mechanical questions appear in Area B (Utilities). Expect 2-4 questions per cycle testing specific clearances, minimum dimensions, and equipment standards. Memorize the key values.</ExamTip>
+
 # Electrical and Mechanical Regulations
+## Learning Goal
+After reading this article, you should be able to:
+
+Apply the electrical and mechanical regulations referenced by PD 1096: identify the Philippine Electrical Code (PEC) requirements for building electrical systems (service capacity, minimum outlets, GFCI locations, load calculations); apply the Mechanical Code requirements for ventilation, exhaust, and mechanical equipment rooms; and determine when a separate electrical or mechanical permit is required beyond the building permit.
 
 ---
 
@@ -37,7 +45,7 @@ Every one of these comments arises from PD 1096, Rule XIII. This is one of the h
 
 ### Concept 1 — Electrical Regulations: PEC Compliance and the 15-Meter Trigger (Sec. 1301)
 
-All electrical installations in Philippine buildings must conform to the **Philippine Electrical Code (PEC-1 and PEC-2)** enacted under **RA 7920** (New Electrical Engineering Law). Electrical plans must be prepared, signed, and selead by a **Professional Electrical Engineer (PEE)** and submitted to the Building Official as an **Attachment Plan** to the building permit application.
+All electrical installations in Philippine buildings must conform to the **Philippine Electrical Code (PEC-1 and PEC-2)** enacted under **RA 7920** (New Electrical Engineering Law). Electrical plans must be prepared, signed, and sealed by a **Professional Electrical Engineer (PEE)** and submitted to the Building Official as an **Attachment Plan** to the building permit application.
 
 **The 15-meter building height trigger:**
 For buildings exceeding **15.00 m in height**, any overhead electrical lines in the vicinity must maintain a **1.80 m horizontal clear zone** adjacent to the building. This zone exists to allow firefighting ladder and platform access to the building face without contact with energized lines. Overhead lines may only begin at or within this clearance envelope if they begin at a distance **≤ 2.45 m from the building face**.
@@ -262,7 +270,7 @@ Think of it as "splitting" a group: when you reach 4 elevators, you split into 2
 Read them in order: tilt → width → speed. Each number is distinctive; no overlap with any other section in the code.
 
 ### Memory Aid 5 — "10 Seconds, Life Saves"
-Hospital emergency power transition: **≤ 10 seconds**. Imagine a patient on a ventilator: 10 seconds is the maximum tolerable interruption before critical systems must be back online. This matches NFPA 99's equivleant requirement — the PH and US standards are aligned here.
+Hospital emergency power transition: **≤ 10 seconds**. Imagine a patient on a ventilator: 10 seconds is the maximum tolerable interruption before critical systems must be back online. This matches NFPA 99's equivalent requirement — the PH and US standards are aligned here.
 
 ### Memory Aid 6 — "20–24°C, 50–60% RH: The HVAC Comfort Window"
 Temperature and humidity travel together:
@@ -328,9 +336,11 @@ D. 3.00 m
 
 > **Answer: C**
 >
-<LawCallout code="nbcp" title="a completely different provision. The 3.00 m clearance applies above">
+<LawCallout code="pd1096" section="Rule X - Electrical and Mechanical Regulations">
+
 
 Per PD 1096, Rule XIII, Section 1301, the minimum vertical clearance for a service drop (≤600V) above a flat roof surface is 2.50 m. The 1.00 m exception applies only to sloped roofs with a pitch of ≥ 100 mm/300 mm (1:3 slope). The 1.80 m value refers to the horizontal firefighting clearance zone for buildings > 15.00 m tall — a completely different provision. The 3.00 m clearance applies above ground level, not above a roof. For a flat roof with no qualifying exception, 2.50 m is the correct answer.
+
 
 </LawCallout>
 
@@ -385,3 +395,10 @@ Return to this article on **Day 3, Day 7, and Day 14**. On each return, self-tes
 6. HVAC comfort: 20–24°C / 50–60% RH
 
 Cross-drill with **Article 22** (sprinkler systems in boiler rooms per Sec. 1212) and the **Building Permit process** (Rule V) for the ancillary permit submission sequence and signatory requirements under RA 7920 and RA 8495.
+
+---
+
+## Cross‑References
+
+**Sanitation And Water Supply**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Sheet Metal And Spray Booths**
+

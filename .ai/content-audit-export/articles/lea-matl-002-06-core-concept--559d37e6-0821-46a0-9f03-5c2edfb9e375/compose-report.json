@@ -1,18 +1,30 @@
 {
   "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
   "slug": "lea-matl-002-06-core-concept",
-  "generated_at": "2026-05-03T13:44:11.462Z",
-  "original_hash": "sha256:cbe023d42e533af3dc0b4d6a69cff95000b994a0a79879f94939bc0859170ace",
-  "normalized_hash": "sha256:244f6a36bd6a77503114fbbfd8811781873bfd0a6e085611c743fe5df66f1aca",
-  "candidate_hash": "sha256:2029ab4152ce45b12c4c955ea559c77389a0d94779b2ac32e9c3bd752f828be5",
+  "generated_at": "2026-05-04T00:05:38.765Z",
+  "original_hash": "sha256:2029ab4152ce45b12c4c955ea559c77389a0d94779b2ac32e9c3bd752f828be5",
+  "normalized_hash": "sha256:3fb67970ae753f4981103a0d993650d119e9e0271e86e9996be86d8ba4076315",
+  "candidate_hash": "sha256:3fb67970ae753f4981103a0d993650d119e9e0271e86e9996be86d8ba4076315",
   "ui_blocks_count": 5,
-  "placeholders_found": 5,
-  "placeholders_resolved": 5,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 5,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition."
+  ]
 }

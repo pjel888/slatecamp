@@ -31,14 +31,15 @@ Other CLUP implementation tools include:
 - **Code enforcement** — building permits, occupancy permits, compliance monitoring
 
 The **Environmental Planner** (licensed profession under **RA 10587**, 2013) has professional responsibility for environmental planning aspects of CLUP preparation. While architects may practice urban planning under RA 9266, CLUPs are the formal responsibility of Environmental Planners and planning professionals.
+<ArticleMedia id="media-lea-plan-001-05-core-concept" a type="image" caption="CLUP Process Flowchart — From Data Collection to DHSUD Review" description="Process flow diagram showing the Comprehensive Land Use Plan cycle: data collection → public consultation → situational analysis → land use mapping → draft CLUP → Sanggunian adoption → DHSUD conformity review → 10-year horizon with 3-year midterm review. Zoning ordinance as CLUP implementation tool." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
-<WikiExamTable headers=["CLUP Element", "Definition", "Legal Source"] rows=[["**Planning Horizon**",typically 10-year forward-looking plan (DHSUD guidelines), RA 7160], ["**Review Cycle**", "3-year midterm review (per guidelines), RA 7160160"], ["**Adopting Authority**", "Sanggunian (city/municipal council) adopts as ordinance; Mayor signs", "RA 7160"], ["**Approval Authority**", "DHSUD reviews for conformity with national policies and guidelines", "RA 7160; RA 11201 (DHSUD created 2019)"], ["**Primary Implementer**", "Zoning ordinance specifying permitted uses, density, infrastructure", "RA 7160"], ["**Content Requirements**", "Current conditions analysis, goals/objectives, land use allocation, sectoral integration, public consultation", "RA 7160"]] />
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
 
-<WikiExamTable headers=["Component", "Purpose", "Detail"] rows=[["**Land Use Map**", "Spatially allocates zones to uses", "Shows residential, commercial, industrial, agricultural, environmental zones by specific location"], ["**Zoning Ordinance**", "Enforceable legal tool", "Specifies permitted uses per zone, density limits, setbacks, height, infrastructure requirements"], ["**Infrastructure Plan**", "Guides service provision", "Roads, water, sewage, power, drainage development over CLUP period"], ["**Sectoral Plans**", "Specialized programs", "Transportation, housing (RA 7279 balanced housing), environmental (RA 10121 DRRM integration)"], ["**Public Consultation Report**", "Legitimacy and engagement", "Documents barangay meetings, community input, deliberation process"]] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
 
-<WikiExamTable headers=["Question Type", "Testable Detail", "Answer"] rows=[["**Plan horizon**", "How many years is a CLUP?", "**10 years**"], ["**Review timing**", "How often is a CLUP reviewed?", "**Every 3 years (midterm review)**"], ["**Adopting authority**", "Who adopts a zoning ordinance?", "**Sanggunian (legislative body)**, then signed by Mayor"], ["**Approval authority**", "Which agency reviews LGU CLUPs?", "**DHSUD** (formerly HLURB)"], ["**Implementation tool**", "What legal tool implements a CLUP?", "**Zoning ordinance**"], ["**Professional mandate**", "Which profession has statutory mandate for CLUP preparation?", "**Environmental Planner** (RA 10587)"]] />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
 
 ## Philippine Context
 
@@ -52,10 +53,7 @@ The tension in Philippine CLUPs: balancing _growth and development_ (attracting 
 
 The LEA tests CLUPs through five dominant question patterns: (1) **Legal requirements** — "RA 7160 mandates that all LGUs prepare CLUPs covering a planning horizon of how many years?" (Answer: 10). "How often are CLUPs reviewed?" (Answer: 3-year midterm). (2) **Process and authority** — "A zoning ordinance becomes legally effective when it is adopted by which body?" (Answer: Sanggunian). (3) **Distinguishing CLUP from implementation tools** — "The CLUP is a strategic vision document. Which of the following is the legal tool that specifies permitted uses and density limits?" (Answer: zoning ordinance). (4) **Sectoral integration** — "A CLUP must integrate requirements from multiple laws. Which of the following is NOT a mandatory integration?" (Testing knowledge of RA 7279, RA 10121, PD 1067, PD 1586). (5) **Professional mandate** — "Which licensed profession has statutory mandate for comprehensive land use planning?" (Answer: Environmental Planner under RA 10587).
 
-<Tip>
-**CLUP memory anchors:** CLUP = 10-year plan, RA 7160. Review = every 3 years (not 5, not annual). ADOPT = Sanggunian (legislature), not Mayor (executive). IMPLEMENT = ZONING ORDINANCE. APPROVE = DHSUD. PREPARE = Environmental Planner (licensed profession).
-</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 
 **Exam Tip:** Five CLUP facts to memorize: (1) 10-year horizon, (2) 3-year midterm review, (3) Sanggunian adopts (NOT Mayor), (4) zoning ordinance implements, (5) DHSUD reviews for conformity. These are THE most tested CLUP items.
 
@@ -65,4 +63,4 @@ See **LEA-PLAN-002-04** (Land Use Planning) for zoning ordinance detail, **LEA-P
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Saying CLUP is updated every 5 years — it's a 10-year plan with 3-year review", "Thinking the Mayor signs the zoning ordinance into effect — the Sanggunian adopts it; Mayor signs after legislative action", "Confusing CLUP (strategic vision) with zoning ordinance (regulatory tool) — CLUP is the plan; ordinance is the legal mechanism", "Forgetting DHSUD approval requirement — municipalities can't unilaterally make CLUPs without DHSUD conformity review", "Not recognizing Environmental Planner as the statutory professional — architects and engineers may contribute, but EnPs have the formal mandate"]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]

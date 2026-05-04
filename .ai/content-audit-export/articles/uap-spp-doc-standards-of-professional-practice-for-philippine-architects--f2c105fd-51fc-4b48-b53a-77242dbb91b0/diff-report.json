@@ -1,38 +1,50 @@
 {
   "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
   "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
-  "generated_at": "2026-05-03T13:44:22.866Z",
-  "old_hash": "sha256:30365b304f8e3600bb36323f795afe71bcb3b54eaa503c4e1d3cd268956a7097",
-  "new_hash": "sha256:b520555f6267c92fa811de21cb1b8dc7d1f17e531c016b649c8ae55faf8d2132",
-  "original_hash": "sha256:30365b304f8e3600bb36323f795afe71bcb3b54eaa503c4e1d3cd268956a7097",
-  "normalized_hash": "sha256:12c73548f0543f03d3afc9f89b5419f7f26c7e9f7b2d566b56518991ae5be9b8",
-  "candidate_hash": "sha256:b520555f6267c92fa811de21cb1b8dc7d1f17e531c016b649c8ae55faf8d2132",
+  "generated_at": "2026-05-04T00:05:56.768Z",
+  "old_hash": "sha256:b520555f6267c92fa811de21cb1b8dc7d1f17e531c016b649c8ae55faf8d2132",
+  "new_hash": "sha256:3a949db40abdb5ea8458079335c1c1d4a4a4e594af59c5c1c9011eb025b1a5ee",
+  "original_hash": "sha256:b520555f6267c92fa811de21cb1b8dc7d1f17e531c016b649c8ae55faf8d2132",
+  "normalized_hash": "sha256:3a949db40abdb5ea8458079335c1c1d4a4a4e594af59c5c1c9011eb025b1a5ee",
+  "candidate_hash": "sha256:3a949db40abdb5ea8458079335c1c1d4a4a4e594af59c5c1c9011eb025b1a5ee",
   "changed": true,
-  "changed_line_count": 380,
-  "inserted_line_count": 21,
-  "deleted_line_count": 0,
+  "changed_line_count": 377,
+  "inserted_line_count": 0,
+  "deleted_line_count": 106,
   "ui_blocks_original_count": 8,
-  "ui_blocks_candidate_count": 8,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 8,
   "ui_blocks_count": 8,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 8,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 380,
-    "inserted": 21,
-    "deleted": 0,
-    "original_line_count": 433,
-    "candidate_line_count": 454
+    "changed": 377,
+    "inserted": 0,
+    "deleted": 106,
+    "original_line_count": 454,
+    "candidate_line_count": 348
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007",
+      "ui_0008"
+    ],
+    "changed_count": 8
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 8 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 8 preserved UI block(s)."
 }

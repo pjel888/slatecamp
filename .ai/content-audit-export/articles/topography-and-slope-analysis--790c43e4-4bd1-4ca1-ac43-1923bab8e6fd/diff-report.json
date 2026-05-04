@@ -1,38 +1,45 @@
 {
   "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
   "slug": "topography-and-slope-analysis",
-  "generated_at": "2026-05-03T13:45:11.510Z",
-  "old_hash": "sha256:4bdad11ad34d3fc9edc02710f64a2208b030cf43426ee4c1843f3ea566622080",
-  "new_hash": "sha256:eef7ed6cd3d28277c6b8f5aa865a38f1e88a25fff11e39dd0dda0664a3e4f118",
-  "original_hash": "sha256:4bdad11ad34d3fc9edc02710f64a2208b030cf43426ee4c1843f3ea566622080",
-  "normalized_hash": "sha256:fdc4fc4a73858350ae7bdc7982f77b77ceab74375787bf6e48d7a49787ca2e1a",
-  "candidate_hash": "sha256:eef7ed6cd3d28277c6b8f5aa865a38f1e88a25fff11e39dd0dda0664a3e4f118",
+  "generated_at": "2026-05-04T00:06:51.351Z",
+  "old_hash": "sha256:eef7ed6cd3d28277c6b8f5aa865a38f1e88a25fff11e39dd0dda0664a3e4f118",
+  "new_hash": "sha256:1240d85103ef58e5c4cf0240f9d574cf3b0fc3f21d175ab283cc548bea427dd2",
+  "original_hash": "sha256:eef7ed6cd3d28277c6b8f5aa865a38f1e88a25fff11e39dd0dda0664a3e4f118",
+  "normalized_hash": "sha256:1240d85103ef58e5c4cf0240f9d574cf3b0fc3f21d175ab283cc548bea427dd2",
+  "candidate_hash": "sha256:1240d85103ef58e5c4cf0240f9d574cf3b0fc3f21d175ab283cc548bea427dd2",
   "changed": true,
-  "changed_line_count": 204,
-  "inserted_line_count": 36,
-  "deleted_line_count": 0,
+  "changed_line_count": 25,
+  "inserted_line_count": 0,
+  "deleted_line_count": 12,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 204,
-    "inserted": 36,
-    "deleted": 0,
-    "original_line_count": 197,
-    "candidate_line_count": 233
+    "changed": 25,
+    "inserted": 0,
+    "deleted": 12,
+    "original_line_count": 233,
+    "candidate_line_count": 221
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }

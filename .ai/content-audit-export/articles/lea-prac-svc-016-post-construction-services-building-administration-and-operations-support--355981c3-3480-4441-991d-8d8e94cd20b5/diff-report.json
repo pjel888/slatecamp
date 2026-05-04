@@ -1,38 +1,47 @@
 {
   "article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
   "slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
-  "generated_at": "2026-05-03T13:45:26.571Z",
-  "old_hash": "sha256:ad0a7a33d5ae917ec397121146df3523ece355a9aa1de9f8683e61d318e67988",
-  "new_hash": "sha256:c41add887094e9e299f6df496ca94a75cc15ac7c71130f7ea9a54e10e0718855",
-  "original_hash": "sha256:ad0a7a33d5ae917ec397121146df3523ece355a9aa1de9f8683e61d318e67988",
-  "normalized_hash": "sha256:73f24a254d408e5b082c04d1b596990f9a360d5f5ecc84d2a03a90c27c489398",
-  "candidate_hash": "sha256:c41add887094e9e299f6df496ca94a75cc15ac7c71130f7ea9a54e10e0718855",
+  "generated_at": "2026-05-04T00:07:09.507Z",
+  "old_hash": "sha256:657f9ddc6ae51c5aac7c32dc4e3720e00f0072f6cc658d1384f331b3c1aba6c9",
+  "new_hash": "sha256:e1a5d3dea336449492e5934df41c6f7f89670683b1f781b104c1d2c683297606",
+  "original_hash": "sha256:657f9ddc6ae51c5aac7c32dc4e3720e00f0072f6cc658d1384f331b3c1aba6c9",
+  "normalized_hash": "sha256:e1a5d3dea336449492e5934df41c6f7f89670683b1f781b104c1d2c683297606",
+  "candidate_hash": "sha256:e1a5d3dea336449492e5934df41c6f7f89670683b1f781b104c1d2c683297606",
   "changed": true,
-  "changed_line_count": 53,
-  "inserted_line_count": 35,
-  "deleted_line_count": 0,
+  "changed_line_count": 32,
+  "inserted_line_count": 0,
+  "deleted_line_count": 9,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 53,
-    "inserted": 35,
-    "deleted": 0,
-    "original_line_count": 35,
-    "candidate_line_count": 70
+    "changed": 32,
+    "inserted": 0,
+    "deleted": 9,
+    "original_line_count": 72,
+    "candidate_line_count": 63
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

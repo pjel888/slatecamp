@@ -1,32 +1,33 @@
 # Content Diff Report: topography-and-slope-analysis
 
-Generated: 2026-05-03T13:45:11.510Z
+Generated: 2026-05-04T00:06:51.351Z
 Article ID: 790c43e4-4bd1-4ca1-ac43-1923bab8e6fd
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:4bdad11ad34d3fc9edc02710f64a2208b030cf43426ee4c1843f3ea566622080`
-- Normalized: `sha256:fdc4fc4a73858350ae7bdc7982f77b77ceab74375787bf6e48d7a49787ca2e1a`
-- Candidate: `sha256:eef7ed6cd3d28277c6b8f5aa865a38f1e88a25fff11e39dd0dda0664a3e4f118`
+- Original: `sha256:eef7ed6cd3d28277c6b8f5aa865a38f1e88a25fff11e39dd0dda0664a3e4f118`
+- Normalized: `sha256:1240d85103ef58e5c4cf0240f9d574cf3b0fc3f21d175ab283cc548bea427dd2`
+- Candidate: `sha256:1240d85103ef58e5c4cf0240f9d574cf3b0fc3f21d175ab283cc548bea427dd2`
 
 ## Line summary
 
-- Changed lines: 204
-- Inserted lines: 36
-- Deleted lines: 0
+- Changed lines: 25
+- Inserted lines: 0
+- Deleted lines: 12
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

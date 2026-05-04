@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Adhesives and sealants are chemical products that bond or seal building materials. LEA exams test your ability to classify products by type and application, apply ASTM C920 joint movement classifications, specify products for joint size and material compatibility, and account for tropical climate factors affecting cure time and durability.
-
+Classify adhesive systems (construction adhesive, epoxy, contact cement, PVA glue, polyurethane, silicone, acrylic) by bonding strength, setting time, substrate compatibility, and application, and select the correct adhesive for structural, semi-structural, and non-structural bonding.
 ## Core Concept
 
 Adhesives create permanent bonds between substrates (wood, concrete, metal, glass) through mechanical interlocking or chemical adhesion. Sealants remain flexible after curing, accommodating joint movement and preventing air and water infiltration. The primary difference is that adhesives are rigid after cure (low flexibility), while sealants remain elastic (high flexibility).
@@ -53,3 +53,10 @@ The Philippines' tropical climate (85-95°F year-round, 80+ percent humidity dur
 <WikiMistakeCard mistake="Calculating joint width based only on temperature change, forgetting the 2x multiplication rule specified by ASTM C920." correction="Joint width must equal at least 2 × the expected movement. A joint accommodating 5 inches of movement must be at least 10 inches wide." />
 
 <WikiMistakeList mistakes={["Omitting primer on porous substrates (concrete, wood) when using two-part epoxy; adhesion failure occurs within weeks", "Specifying only acrylic sealant for all joint applications, ignoring that movement capability varies drastically (acrylic = ±7.5% vs. silicone = ±50%)", "Failing to account for tropical climate cure time multiplication (1.5-2x); underestimating cure time leads to premature joint loading"]} />
+
+## Related Articles
+
+See also within Hardware, Joints, and Fasteners: **lea-matl-008-01-core-concept**, **lea-matl-008-02-core-concept**, **lea-matl-008-03-core-concept**, **lea-matl-008-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

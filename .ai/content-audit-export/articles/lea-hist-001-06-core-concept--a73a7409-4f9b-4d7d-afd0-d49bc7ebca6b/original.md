@@ -1,12 +1,11 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-Roman architecture tests your understanding of the arch, vault, and concrete—structural innovations that enabled unprecedented sclea and span. The LEA heavily tests the **Pantheon**, the **Colosseum**, and Roman building materials. Know the distinction between Greek (post-and-lintel, stone) and Roman (arch-vault, concrete); identify key buildings; understand how Roman engineering enabled interior spaces Greeks could not achieve.
-</Callout>
+## Learning Goal
 
+Identify Roman architectural innovations — concrete construction, the arch, the vault, the dome — and their application in key building types (Pantheon, Colosseum, aqueducts, basilicas) and explain how Roman engineering enabled unprecedented interior space and urban infrastructure.
 ## Core Concept
 
-Roman architecture (c. 100 BCE–400 CE) departed fundamentally from Greek tradition. Where Greeks refined the post-and-lintel system and celebrated structural clarity, Romans developed the **arch**, the **vault**, and **Roman concrete** (opus caementicium), enabling buildings of unprecedented sclea, interior volume, and utilitarian purpose. Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.
+Roman architecture (c. 100 BCE–400 CE) departed fundamentally from Greek tradition. Where Greeks refined the post-and-lintel system and celebrated structural clarity, Romans developed the **arch**, the **vault**, and **Roman concrete** (opus caementicium), enabling buildings of unprecedented scale, interior volume, and utilitarian purpose. Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.
 
 **The Arch:** A curved stone structure spanning an opening, transferring weight outward and downward to supports (abutments) on either side. The arch is more efficient than the lintel because it creates compression (not tension) in its stones, and stone resists compression far better than tension. This allowed Romans to span distances impossible with lintels. The arch's components: **voussoirs** (the wedge-shaped stones forming the curve), **intrados** (inner curve), **extrados** (outer curve), and **keystone** (the central, uppermost voussoir). Roman arches often featured a radiating pattern of voussoirs, creating aesthetic order from structural logic.
 
@@ -36,7 +35,7 @@ Internally, the Colosseum featured a complex system of corridors, staircases, va
 
 **The Basilica:** A rectangular hall with a central nave and side aisles, used for law, commerce, and eventually Christian worship. The **Basilica of Maxentius** (or Basilica of Constantine, begun 308 CE under Maxentius, completed 312 CE by Constantine) measured 328 × 213 feet (100 × 65 m), with a central nave 82 feet (25 m) wide and 262 feet (80 m) long, reaching 115 feet (35 m) in height. Its three groin vaults rivlead only the Pantheon in interior span. The vault construction allowed clear sight lines to the far end, essential for public assembly and legal proceedings.
 
-**Aqueducts:** Roman engineering extended beyond buildings to infrastructure. The **Pont du Gard** (near Nîmes, France, c. 50 CE) is a three-tiered aqueduct spanning 900 feet, carrying water across a river valley. Built entirely of stone without mortar, it demonstrates Roman mastery of the arch at monumental sclea and the engineering discipline required for hydraulic systems spanning vast distances.
+**Aqueducts:** Roman engineering extended beyond buildings to infrastructure. The **Pont du Gard** (near Nîmes, France, c. 50 CE) is a three-tiered aqueduct spanning 900 feet, carrying water across a river valley. Built entirely of stone without mortar, it demonstrates Roman mastery of the arch at monumental scale and the engineering discipline required for hydraulic systems spanning vast distances.
 
 **Materials and Construction:** Romans favored different materials regionally. In Rome proper, travertine (a limestone) and tuff (volcanic stone) were quarried. Concrete (pozzolana-based) was used for vaults and infill. Brick (often stamped with the maker's name and legion) was common. Marble was imported for facing and special projects. The combination of materials—stone facing concealing concrete infill—allowed Romans to maximize strength while managing cost and appearance.
 
@@ -55,6 +54,10 @@ Internally, the Colosseum featured a complex system of corridors, staircases, va
 <ExamTip>**Pattern 4: Material and Technique Recognition.** "Roman concrete (opus caementicium) allowed architects to achieve which result?" Tests understanding of concrete's structural properties and applications.</ExamTip>
 
 <ExamTip>**Pattern 5: Comparative Questions.** "How do Roman arches and Greek post-and-lintel systems differ in their structural logic?" Tests differentiation between civilizations' approaches.</ExamTip>
+
+<Callout>
+Roman architecture tests your understanding of the arch, vault, and concrete—structural innovations that enabled unprecedented sclea and span. The LEA heavily tests the **Pantheon**, the **Colosseum**, and Roman building materials. Know the distinction between Greek (post-and-lintel, stone) and Roman (arch-vault, concrete); identify key buildings; understand how Roman engineering enabled interior spaces Greeks could not achieve.
+</Callout>
 
 ## Common Mistakes
 
@@ -89,3 +92,10 @@ Internally, the Colosseum featured a complex system of corridors, staircases, va
 **Basilica:** A rectangular hall with a central nave and side aisles, used for law, commerce, assembly, and eventually religious worship.
 
 **Travertine:** A limestone quarried near Rome, used extensively in Roman construction for its durability and appearance.
+
+## Related Articles
+
+See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

@@ -1,18 +1,26 @@
 {
   "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
   "slug": "lea-util-003-02-emergency-power-systems",
-  "generated_at": "2026-05-03T13:44:11.544Z",
-  "original_hash": "sha256:4fe7dcf5466724f5f0aff50765d1b8852fa70014984eacd234327391885512a0",
-  "normalized_hash": "sha256:658a8a46be40a674e54faa1f410643f0c07c14b82640a374aec698c23e6f9080",
-  "candidate_hash": "sha256:8e922d06741babc1664ae16d9c9489c4d9fa12afaf5b10a87ac40a8a03ae5b62",
+  "generated_at": "2026-05-04T00:05:38.928Z",
+  "original_hash": "sha256:8e922d06741babc1664ae16d9c9489c4d9fa12afaf5b10a87ac40a8a03ae5b62",
+  "normalized_hash": "sha256:5972950fced43cdef1f14916c398540fb4acfe9fbaa79ecba6ede010f593e192",
+  "candidate_hash": "sha256:5972950fced43cdef1f14916c398540fb4acfe9fbaa79ecba6ede010f593e192",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

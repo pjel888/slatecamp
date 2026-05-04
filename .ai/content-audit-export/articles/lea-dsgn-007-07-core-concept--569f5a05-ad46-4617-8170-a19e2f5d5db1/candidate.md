@@ -5,7 +5,6 @@ Develop space programs from client requirements, calculate net-to-gross area rat
 
 Development control calculations determine how much gross floor area (GFA) you can build on a given lot. These calculations bind your design decisions from the earliest stages and are routinely tested in the Licensure Examination for Architects (LEA) through worked problems.
 
-
 ## Core Concept
 
 Development control calculations translate three primary inputs—total lot area (TLA), permitted site occupancy (PSO), and height limits (BHL)—into a buildable gross floor area. The calculation requires understanding four key metrics:
@@ -26,6 +25,7 @@ Development control calculations translate three primary inputs—total lot area
     - **ISA (Impervious Surface Area)**: Paved open spaces (driveways, courts).
     - **USA (Unpaved Surface Area)**: Unpaved, landscaped, or grassy areas.
     - **TOSL (Total Open Space within Lot)**: The sum of ISA and USA, also expressed as \( TOSL = TLA - AMBF \).
+<ArticleMedia id="media-lea-dsgn-007-07-core-concept" a type="image" caption="Space Programming Workflow — From Client Requirements to Net-to-Gross Ratios" description="Diagram showing the space programming process: program requirements → space adjacency matrix → bubble diagram → net area calculation → net-to-gross ratio → gross floor area. Annotated with typical N/G ratios for different building types." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -100,7 +100,7 @@ Exact PSO and FLAR values are always taken from the specific LGU zoning ordinanc
 In the Philippines, development controls are a hybrid of the **National Building Code (PD 1096)** and **local zoning ordinances**. PD 1096 and its IRR provide general safety, light, and ventilation standards (notably Rule VII and Rule VIII), while the intensity-of-use controls (PSO, FLAR, BHL) come from the LGU’s zoning regulations or CLUP. For practice and in the LEA, candidates must read the problem carefully to use the given zoning parameters, even when they differ from “typical” values they have memorized.
 
 Most design failures in the LEA occur because candidates focus on height (BHL) and forget that the Floor Area Ratio (FLAR) often forces a reduction in the number of floors. Another frequent error is confusing AMBF- and TLA-based calculations, which leads to incorrect TGFA and FLAR values.
-
+<ArticleMedia id="media-lea-dsgn-007-07-core-concept" a type="image" caption="Space Programming Matrix — Adjacency, Area, and Net-to-Gross Ratios" description="Space planning bubble diagram with adjacency matrix overlay for a typical building program. Shows: functional bubbles with area labels, desired adjacency weights (essential, desirable, neutral, negative), and net-to-gross ratio calculation (65-75% net for typical office)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -108,13 +108,4 @@ See **LEA-DSGN-007-08** (Human Factors) for anthropometric space standards, **LE
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    'ERR-DSGN-006: Applying an R-1 PSO of 60% as a default (many LGUs specify 50%; always follow the problem data or ordinance cited)',
-    'ERR-DSGN-007: Calculating TGFA as TLA × PSO × floors (incorrectly using TLA instead of AMBF)',
-    'ERR-DSGN-008: Calculating FLAR as TGFA ÷ AMBF (incorrectly using AMBF instead of TLA)',
-    'ERR-DSGN-009: Using non-standard floor-to-floor heights (e.g., 2.70 m) without explicit exam instructions, which skews the number of floors',
-    'ERR-DSGN-011: Confusing GFA (single floor) with TGFA (sum of all floors)',
-    'ERR-DSGN-012: Misidentifying TOSL as only the landscaped area (TOSL = ISA + USA, i.e., all open space within the lot)'
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]

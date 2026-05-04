@@ -9,9 +9,8 @@ After studying this article, you should be able to:
 - Describe the limitations on foreign architectural practice per RA 9266.
 - Distinguish foreign architect registration from full Philippine licensure.
 
-
-
 ### Temporary Permits and Authorization
+<ArticleMedia id="media-lea-prac-frm-005-foreign-architects-in-t" a type="image" caption="Foreign Architect Practice Pathway — Permit Process and Filipino Counterpart" description="Process flow diagram showing: (1) Foreign architect eligibility gate: must come from country with reciprocity; (2) Application pathway: Submit credentials → Board evaluation → Reciprocity verification → Temporary/Special Permit issued; (3) Practice limitation: One project only, defined duration, cannot be extended/renewed; (4) Filipino Counterpart requirement: foreign architect works under local architect who assumes full professional responsibility; (5) Restrictions: cannot sign/seal independently, cannot establish independent practice. Red X markers on restricted activities." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Foreign architects must secure authorization to practice in the Philippines through either temporary permits or special permits issued by the Board of Architecture. RA 9266 Section 38 establishes procedures for foreign nationals who have gained entry to perform professional services as architects or consultants. These permits are project-specific and limited in duration, preventing permanent foreign practice without local registration.
 
@@ -21,7 +20,7 @@ A temporary permit authorizes a foreign architect to work on a specific project 
 
 Temporary/Special Permits are issued only to individual foreign architects from countries with reciprocity and only for one project. These permits authorize foreign architects to engage in general practice of architecture or consulting roles for a specific project for a defined duration connected to that project's completion. Permit holders must work under a Filipino counterpart who assumes full professional responsibility and liability. The Board evaluates each application based on the foreign architect's credentials, project details, and reciprocity status. Permits are valid only for the permitted period and project and cannot be extended or renewed; a new application is required for subsequent projects. Conditions restrict the specialist to the authorized scope and require compliance with Philippine professional ethics and standards.
 
-<ExamTip>Temporary/Special Permits are: (1) issued only to individuals from countries with reciprocity; (2) valid only for ONE project; (3) cannot be extended or renewed — a new application is required for subsequent projects; and (4) the permit holder must work under a Filipino counterpart who assumes full professional responsibility.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 
 ### The Endorsement Process and Requirements
 
@@ -41,7 +40,7 @@ Foreign architects cannot establish independent practices in the Philippines; th
 
 Permanent licensing of foreign architects is not permitted under RA 9266; foreigners may only practice through temporary/special permits. This restriction ensures architectural practice remains controlled by Filipino professionals. Foreign architects cannot sign and seal architectural documents independently; the Filipino counterpart or responsible Philippine architect must authenticate all work. Project procurement laws often require Filipino participation, reinforcing the requirement that foreign architects work with local partners on Philippine construction projects.
 
-<Tip>Permanent licensing of foreign architects is NOT permitted under RA 9266. Foreigners may only practice through temporary/special permits. Foreign architects cannot sign and seal architectural documents independently — the Filipino counterpart must authenticate all work.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 
 ---
 

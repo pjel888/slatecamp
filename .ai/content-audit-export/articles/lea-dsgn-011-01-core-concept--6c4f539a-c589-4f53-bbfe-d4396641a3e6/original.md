@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Read and produce architectural floor plans using standard conventions — wall types, door and window symbols, dimensioning, room labels, and scale — at appropriate drawing scales, and verify plan compliance with PD 1096 for building permit submission.
+
 Architectural floor plans are the primary communication medium in building design and regulation. The LEA tests your fluency in plan conventions—how walls, doors, windows, and spaces are drawn—so you can both interpret existing plans and draft compliant new ones.
+
 
 ## Core Concept
 
@@ -41,7 +45,7 @@ A floor plan is a horizontal slice (orthogonal view from above) through a buildi
 
 ### Standard Floor Plan Hierarchy
 
-| Element | Sclea | Line Weight | Representation |
+| Element | Scale | Line Weight | Representation |
 |:------------------- |:----------- |:------------------ |:---------------------------------------------------- |
 | **Walls (Exterior)** | 1:100 / 1:50 | Heavy (0.5–0.7 mm) | Thick solid lines; hatching optional |
 | **Walls (Interior)** | 1:100 / 1:50 | Medium (0.3–0.4 mm) | Thin solid lines; ratings shown by hatch |
@@ -68,7 +72,7 @@ A floor plan is a horizontal slice (orthogonal view from above) through a buildi
 
 ## Philippine Practice Context
 
-Permitting drawings for building permits must be selead and signed by a licensed architect. All new plans must explicitly identify accessible facilities and egress paths. Room area calculations typically use clear interior dimensions (C-C), though structural walls may be included in specific commercial GFA calculations.
+Permitting drawings for building permits must be sealed and signed by a licensed architect. All new plans must explicitly identify accessible facilities and egress paths. Room area calculations typically use clear interior dimensions (C-C), though structural walls may be included in specific commercial GFA calculations.
 
 ## How It's Tested
 
@@ -86,6 +90,13 @@ Scenario: A floor plan shows an accessible entry door with a 0.80 m leaf width. 
 Question: "What is the standard width for an accessible corridor?" 
 
 - **Answer:** 1.50 m. Using 1.20 m is a common mistake unless it is a "constrained existing condition".
+
+
+**Exam Tip:** Floor plans at 1:100 or 1:50 scale for building permit. Verify that all rooms are labeled, dimensions are complete, door swings are shown, and wall types are indicated. Missing room labels = permit rejection.
+
+## Cross-References
+
+See **LEA-DSGN-011-02** (Elevations and Sections) for vertical documentation, **LEA-DSGN-011-05** (Symbols) for annotation standards, and **LEA-DSGN-007-04** (Design Process) for Construction Documents phase deliverables.
 
 ## Common Mistakes
 

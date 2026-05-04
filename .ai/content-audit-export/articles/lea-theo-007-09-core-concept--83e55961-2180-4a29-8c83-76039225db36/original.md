@@ -3,9 +3,17 @@
 Sustainable architecture has matured from ethical preference to systematic methodology encoded in certification systems (LEED, BREEAM, BERDE) and measurable performance standards. The LEA tests your understanding of the theoretical distinction between **genuine sustainability** (reducing total environmental impact across a building's lifecycle) and **greenwashing** (cosmetic environmental claims without systematic change). You must master performance metrics, embodied carbon analysis, and passive design strategies as core architectural knowledge.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define the methodological revolutions in contemporary architecture: parametric design (algorithmic form-generation), computational biomimicry (learning from biology), and AI-assisted design.
+- Distinguish parametricism from previous movements by its use of algorithmic optimization and data-responsive systems.
+- Explain how digital design tools extend architects' capacity to explore complex problems beyond conventional methods.
+
 ## Core Concept
 
-Sustainable architecture represents a fundamental philosophical reorientation: the building is no longer isolated from its environmental context but is understood as a **system embedded in metabolic flows** (water, energy, materials, waste). Traditional architecture treated environmental factors as constraints (climate, site, materials available). Sustainable architecture treats environmental performance as a primary design generator equivleant to program, structure, and aesthetics.
+Sustainable architecture represents a fundamental philosophical reorientation: the building is no longer isolated from its environmental context but is understood as a **system embedded in metabolic flows** (water, energy, materials, waste). Traditional architecture treated environmental factors as constraints (climate, site, materials available). Sustainable architecture treats environmental performance as a primary design generator equivalent to program, structure, and aesthetics.
 
 <Tip>
 **Three-phase evolution of sustainable thinking**: Passive (let climate do the work), then Active (mechanical systems add intelligence), now Passive-Active synthesis (maximize passive, minimize mechanical load, make mechanics ultra-efficient). The pattern: "Simple is best, complexity should serve genuine need." Design first for climate responsiveness, add systems only where passive strategies cannot achieve comfort.
@@ -142,3 +150,10 @@ The Philippine climate—tropical, monsoon-affected, with extreme solar radiatio
 **Rainwater Harvesting** — Collection and storage of precipitation for non-potable uses (irrigation, toilet flushing, cleaning), reducing municipal water demand and flooding risk.
 
 **Typhoon Resilience** — Building design for extreme wind and water loads; relevant to Philippine context, often overlooked in imported international standards.
+
+## Related Articles
+
+See also within Contemporary Movements & Discourse: **lea-theo-007-01-core-concept**, **lea-theo-007-02-core-concept**, **lea-theo-007-10-core-concept**, **lea-theo-007-11-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

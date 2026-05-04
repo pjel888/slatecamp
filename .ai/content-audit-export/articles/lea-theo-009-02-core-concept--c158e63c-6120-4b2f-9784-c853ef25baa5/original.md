@@ -4,9 +4,17 @@
 Bubble diagrams are analytical tools that graphically represent spatial relationships and functional adjacencies derived from the architectural program; they are not design sketches and do not prescribe form or aesthetics. The adjacency matrix is the tabular companion document that systematically codes relationships as essential, desirable, unimportant, or undesirable, ensuring all functional pairs are evaluated. Both tools translate programmatic requirements into spatial organization logic that constrains but does not determine final design.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define bubble diagrams as analytical tools that graphically represent spatial relationships and functional adjacencies, not as design sketches.
+- Construct and read adjacency matrices that code relationships as essential, desirable, unimportant, or undesirable.
+- Translate programmatic requirements into spatial organization logic using bubble diagrams and adjacency matrices.
+
 ## Core Concept
 
-Bubble diagrams emerge from the program analysis phase, after spaces and their requirements are documented but before design form-making begins. A bubble represents a functional zone or space; the size of the bubble correlates loosely to its area (though not to sclea in typical programming bubble diagrams). Lines or proximity between bubbles indicate required relationships; absence of connection indicates no proximity requirement. The diagram is intentionally abstract—bubbles may be circles, squares, or irregular shapes; their specific geometry carries no architectural meaning.
+Bubble diagrams emerge from the program analysis phase, after spaces and their requirements are documented but before design form-making begins. A bubble represents a functional zone or space; the size of the bubble correlates loosely to its area (though not to scale in typical programming bubble diagrams). Lines or proximity between bubbles indicate required relationships; absence of connection indicates no proximity requirement. The diagram is intentionally abstract—bubbles may be circles, squares, or irregular shapes; their specific geometry carries no architectural meaning.
 
 <Tip>
 **Bubble diagram purpose**: Translate adjacency matrix into spatial organization. The matrix is tabular (abstract); the bubble diagram is spatial but still abstract. It shows "A must be near B; C must be far from D; circulation connects them." It shows logic without prescribing form. From this abstract spatial logic, design then creates form—decides walls, openings, materials, aesthetics. The bubble diagram is neither a floor plan nor preliminary design; it's a constraint-satisfaction diagram. Remembering this prevents the common error of designing within the diagram rather than after.
@@ -134,3 +142,10 @@ Bubble diagrams and adjacency matrices are not limited to initial programming. T
 **Spatial Relationship Notation** — System of symbols or codes (E, D, U, X, connecting lines, proximity) used to indicate the type and strength of required relationships between spaces.
 
 **Programming Document Validation** — Process of checking that a proposed design layout satisfies all adjacency requirements and functional relationships specified in the adjacency matrix.
+
+## Related Articles
+
+See also within Space Planning Theory: **lea-theo-009-01-core-concept**, **lea-theo-009-03-core-concept**, **lea-theo-009-04-core-concept**, **lea-theo-009-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

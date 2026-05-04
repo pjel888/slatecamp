@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-Electrical wiring and cable selection is fundamental to safe, efficient building systems. In Philippine construction, all wiring must comply with the **Philippine Electrical Code (PEC)**, which specifies insulation types, ampacity ratings, conductor materials, and installation methods. This guide covers wire types, sizing calculations, conduit selection, and cable systems used in typical building projects.
+## Learning Goal
 
----
-
+Select electrical wire insulation types (THHN/THWN, XHHW, UF, NM, MC, USE) by temperature rating, moisture resistance, location (wet/dry/damp), and application per Philippine Electrical Code (PEC) ampacity tables and installation requirements.
 ## Wire Insulation Types and Ratings
 
 The Philippine Electrical Code recognizes several standard wire insulation types, each with specific temperature ratings and applications:
@@ -42,11 +41,24 @@ The Philippine Electrical Code recognizes several standard wire insulation types
 
 ---
 
+
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
+
 ## Minimum Wire Sizing for Branch Circuits
 
 The Philippine Electrical Code establishes the following minimum branch circuit wire sizes:
 
-| Circuit Type | Minimum Wire Size | AWG Equivleant | Ampacity (Cu, 75°C) |
+| Circuit Type | Minimum Wire Size | AWG equivalent | Ampacity (Cu, 75°C) |
 |---|---|---|---|
 | General lighting | 2.0 mm² | 14 AWG | 15A |
 | Small appliance | 3.5 mm² | 12 AWG | 20A |
@@ -233,7 +245,7 @@ For _3.5 mm² (12 AWG) copper wires in 16 mm PVC conduit:
 
 ## Cable Types and Applications
 
-### NM (Non-Metallic) Sheathed Cable ("Romex" Equivleant)
+### NM (Non-Metallic) Sheathed Cable ("Romex" equivalent)
 - _Construction: Two or more insulated conductors + ground in plastic sheath_
 - _Temperature rating: 60°C or 75°C depending on insulation_
 - _Voltage rating: Up to 600V_
@@ -392,3 +404,10 @@ Proper electrical wiring selection ensures safe, efficient, and code-compliant b
 8. **Implement proper termination** with appropriate lugs and torque specifications
 
 All installations must comply with the _Philippine Electrical Code_ and be verified by a licensed electrical engineer or inspector before energization.
+
+## Related Articles
+
+See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util-003-03-core-concept**, **lea-util-003-05-core-concept**, **lea-util-003-06-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

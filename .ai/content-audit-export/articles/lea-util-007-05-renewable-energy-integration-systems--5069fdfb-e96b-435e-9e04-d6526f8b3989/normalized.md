@@ -7,6 +7,9 @@ Integrate renewable energy and alternative energy systems (solar PV, solar therm
 
 ### Solar Photovoltaic (PV) Systems
 
+<ArticleMedia id="media-lea-util-007-05-renewable-energy-integra" a type="image" caption="Renewable Energy Integration — Solar PV, Wind, Fuel Cell with Grid and Battery" description="Single-line diagram of building renewable energy system: solar PV array on roof, wind turbine (coastal/exposed areas), fuel cell (hydrogen-based), all feeding to an energy management system with battery storage (lithium-ion). Bidirectional inverter manages grid import/export. RA 9513 (Renewable Energy Act) and DOE net metering framework referenced. Building Energy Index (BEI) calculation and 2% annual reduction targets per RA 11285 shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 Solar installations on Philippine buildings leverage the country's average annual solar irradiance of 4.5-5.5 kWh/sqm/day across major regions (Department of Energy technical studies). Building-integrated photovoltaic (BIPV) systems combine energy generation with structural elements through solar canopies, glazing integration, and facade-mounted arrays. System sizing follows load analysis protocols: 1 kWp installation typically generates 4.0-4.5 kWh daily in tropical regions, reducing grid consumption by 30-50% in net-metering applications.
 
 Inverter technology selection impacts efficiency: string inverters achieve 96-98% efficiency for larger installations, while microinverters (97-99% efficiency) prove cost-effective for partial shading scenarios common in dense urban environments.
@@ -163,7 +166,6 @@ Total capital cost: 11.2-14.8 million PHP. Combined annual operational savings: 
 Extracted summary:
 - Props: type="warning"
 - Text: Design integration sequencing matters: establish passive design envelope first, then size active systems to remaining load. Reverse sequencing typically increases equipment costs 20-30% while reducing actual performance by 10-15%.
-[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Code References and Standards Alignment
 
@@ -175,11 +177,10 @@ Extracted summary:
 
 This framework ensures LEA-UTIL-007-05 content aligns with current Philippine regulatory expectations and practical implementation pathways for building utilities professionals.
 
-\ component="Callout" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: The Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compli
-\[/SLATECAMP_UI_BLOCK\]
+component="Callout" status="preserved"]
+<Note>
+The Philippines targets increasing renewable energy share progressively toward 35%+ by 2030-2040 under RA 9513 (Renewable Energy Act of 2008)., making sustainable building systems essential for compli
+</Note>
 ## Related Articles
 
 See also within Renewable and Alternative Energy: **lea-util-007-02-core-concept**, **lea-util-007-04-core-concept**.

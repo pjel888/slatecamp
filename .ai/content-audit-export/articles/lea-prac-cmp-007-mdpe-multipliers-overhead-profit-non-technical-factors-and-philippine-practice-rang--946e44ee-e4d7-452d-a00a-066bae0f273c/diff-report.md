@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges
 
-Generated: 2026-05-03T13:45:30.645Z
+Generated: 2026-05-04T00:07:14.228Z
 Article ID: 946e44ee-e4d7-452d-a00a-066bae0f273c
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:b4430464a428698d464b941393455ec9de89afb814e675c4d2a696c5a99069dc`
-- Normalized: `sha256:0dc5adb4491972a2ac8cd9d010c7d590d3df8970c4accb2f372091d9350f1229`
-- Candidate: `sha256:9f198c2dfcc4d4a6372ece348d071f576b63726e3e4260b0d8c84dd9f45658fd`
+- Original: `sha256:9f198c2dfcc4d4a6372ece348d071f576b63726e3e4260b0d8c84dd9f45658fd`
+- Normalized: `sha256:dee3f25d7bd2d6a5ea6e7609f936a1b5b8149891b9155d84115fa18954135a76`
+- Candidate: `sha256:dee3f25d7bd2d6a5ea6e7609f936a1b5b8149891b9155d84115fa18954135a76`
 
 ## Line summary
 
-- Changed lines: 64
-- Inserted lines: 35
+- Changed lines: 70
+- Inserted lines: 11
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

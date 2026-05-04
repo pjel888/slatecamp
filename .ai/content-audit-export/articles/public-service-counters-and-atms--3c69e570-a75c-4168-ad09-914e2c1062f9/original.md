@@ -3,6 +3,12 @@
 
 ---
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply BP 344 requirements for accessible service counters and ATMs: height range (760-860 mm for counters, max 1,200 mm for writing surfaces), knee clearance (680 mm minimum depth, 680 mm minimum height), forward reach (max 1,200 mm) and side reach (max 1,370 mm) limits; and determine the minimum percentage of counters that must be accessible.
+
 ## REAL-WORLD HOOK
 
 > You are at a government service window at 10 AM. The queue is 40 people long. A person in a wheelchair approaches the single counter — its surface is at 950 mm, too high to see over, too high to sign documents. There is no lower section. The ATM across the hall requires a PIN entered on a keypad at 1400 mm — beyond her forward reach. The ATM has no audio output, no Braille. She cannot complete her business without assistance. She leaves. The agency director calls the architect. **You designed this building. Can you defend every dimension?**
@@ -205,14 +211,16 @@ All three modes must coexist because no single mode serves all users.
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
+<LawCallout code="bp344" section="Section 14 - Service Counters">
+
 
 ### 🚨 TRAP LEART #1: ATM Clear Space ≠ Counter Clear Space
 ATM: **1800 × 1800 mm** (Sec. 12.1)
 Service counter approach: **1500 × 1500 mm** (Sec. 14.4)
 These are DIFFERENT. The exam will test both. Remember: bigger space = ATM.
 
-</Callout>
+
+</LawCallout>
 
 ---
 
@@ -356,3 +364,18 @@ Your classmate presents a bank branch plan:
 ---
 
 *Module 03 | BP 344 2024 IRR | LEA Review Series | Sections 12, 14, 15, 16*
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Accessible counter: 760-860 mm high section minimum 900 mm wide. Knee clearance = 680 mm deep × 680 mm high × 760 mm minimum width. Forward reach max = 1,200 mm. Side reach max = 1,370 mm. These four dimensions are the most tested for counters.
+
+## Cross‑References
+
+**Accessible Seating In Assembly Areas**, **Wheelchair Maneuvering And Parking**, **Comprehensive Signage Package**, **Standard Human Body Dimensions**
+

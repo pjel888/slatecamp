@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-Egyptian architecture tests your understanding of monumental stone construction, structural evolution from mastabas to pyramids, and the religious obsession with the afterlife that drove architectural form. West Asiatic architecture (Anatolian, Levantine, Hittite) is tested for temple types, garrison structures, and defensive architecture. The LEA expects chronological precision, building typology, and grasp of why these civilizations built as they did.
-</Callout>
+## Learning Goal
 
+Trace the evolution of Egyptian monumental architecture from mastaba to stepped pyramid to true pyramid, explain the structural and symbolic significance of each form, and identify key pyramids (Giza, Saqqara, Dahshur) by builder, date, and innovation.
 ## Core Concept
 
 ### Egyptian Architecture
@@ -58,6 +57,10 @@ West Asiatic cultures (Hittites, Canaanites, Levantine peoples) built temples an
 
 <ExamTip>**Pattern 5: Material and Construction Logic.** "Egyptian builders chose stone for temples and pyramids because..." Tests your understanding of durability, theology, and available resources.</ExamTip>
 
+<Callout>
+Egyptian architecture tests your understanding of monumental stone construction, structural evolution from mastabas to pyramids, and the religious obsession with the afterlife that drove architectural form. West Asiatic architecture (Anatolian, Levantine, Hittite) is tested for temple types, garrison structures, and defensive architecture. The LEA expects chronological precision, building typology, and grasp of why these civilizations built as they did.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Confusing the sequence of pyramid types" correction="Mastaba (early, low, rectangular) → Stepped Pyramid (intermediate, multiple tiers) → True Pyramid (final, smooth sides at consistent angle). Each represents a chronological step and a technical advance. Do not conflate them." context="Understanding the progression shows grasp of how Egyptian architectural ambition and engineering capability evolved over time." />
@@ -87,3 +90,10 @@ West Asiatic cultures (Hittites, Canaanites, Levantine peoples) built temples an
 **Cartouche:** An oval or rectangular frame enclosing a pharaoh's name, commonly carved in relief on temple walls and monuments.
 
 **Clerestory window:** High window providing light to the interior of a hypostyle hall; used strategically to create sacred atmosphere while controlling visibility.
+
+## Related Articles
+
+See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

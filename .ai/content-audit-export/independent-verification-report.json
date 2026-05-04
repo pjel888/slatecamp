@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-05-03T17:13:33.198289+00:00",
+  "overall_pass": true,
+  "corpus_reconciliation": {
+    "local_export_dirs": 567,
+    "supabase_count": 567,
+    "manifest_count": 1,
+    "export_summary_count": 0,
+    "discrepancy_explained": "Manifest shows 1 articles. Local export has 567 dirs. Supabase has 567. True production count is 562 after excluding 5 test/special articles.",
+    "true_production_count": 562,
+    "excluded": [
+      {
+        "dir": "owner-smoke-article-a-1775980402961--79c3fd58-07a0-4623-9704-4a95065d9e0a",
+        "reason": "test/special article"
+      },
+      {
+        "dir": "owner-smoke-article-b-1775980402961--061c0a78-3a9d-405a-9a42-7aa0463181b5",
+        "reason": "test/special article"
+      },
+      {
+        "dir": "owner-smoke-article-1775980207157--62d556dd-c04a-406d-a3d2-d35f3939e42f",
+        "reason": "test/special article"
+      },
+      {
+        "dir": "owner-smoke-article-1775980177789--1a34716c-1f11-4b4c-9ec9-1559b012384f",
+        "reason": "test/special article"
+      },
+      {
+        "dir": "playwright-seeded-quiz-article--00000000-0000-4000-8000-00000000d104",
+        "reason": "test/special article"
+      }
+    ]
+  },
+  "queue_integrity": {
+    "queues": {
+      "queue-completed": {
+        "count": 0,
+        "items_count": 0,
+        "article_ids": []
+      },
+      "queue-placeholder_only": {
+        "count": 0,
+        "items_count": 0,
+        "article_ids": []
+      },
+      "queue-weak_ui": {
+        "count": 0,
+        "items_count": 0,
+        "article_ids": []
+      },
+      "queue-good_no_action": {
+        "count": 74,
+        "items_count": 74,
+        "article_ids": [
+          "33c219fe-51a6-487f-81d2-0d4af2968274",
+          "c534d94f-967a-48bb-babf-419fa6d35ec7",
+          "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+          "62274e90-5cb3-4bc0-85a1-639858e47736",
+          "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+          "5f1e960c-b72a-483d-a04b-03860d27b07b",
+          "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+          "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+          "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+          "265185c0-c1ac-4f40-8db0-bde23084f634",
+          "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+          "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+          "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+          "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+          "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+          "859b1a7f-8aba-473d-8c28-f9aaa39af11d",
+          "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+          "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+          "687e0da7-4e39-454f-b3f8-a95308678556",
+          "fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+          "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+          "6e84b3e6-5dd9-4557-8202-5085d24a3708",
+          "ec61e112-1609-4f49-b1ad-343444eb6248",
+          "5365637b-7058-45f6-85c5-ac8bc56de035",
+          "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+          "f74f79a0-1477-481f-9050-fa43d82f18bd",
+          "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+          "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+          "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+          "f52e3126-774f-4eec-8456-8417769bb34a",
+          "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+          "0c236406-a3aa-46b6-9833-b2aa88a6e131",
+          "16ba355e-811c-4191-98c2-c7fac22ca59b",
+          "36f5bf84-00c5-4534-a716-a05371ac8d23",
+          "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+          "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+          "62733840-d170-40de-a27e-31fa31c30c69",
+          "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+          "9c265d02-df61-46de-8c96-dd474041838e",
+          "93009368-9041-46e0-b93b-8786100311be",
+          "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+          "a865c6b2-8c25-404e-bb0c-08d374d374a5",
+          "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+          "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+          "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+          "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+          "17350925-ae83-47a1-a30f-a96eb5c1d942",
+          "877492ae-e17b-48d4-bfd4-f158e794bd46",
+          "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+          "184a1593-2137-45ee-80d4-99c1c4595e84",
+          "b2166005-73ba-4a95-8dea-93e12bae9a6b",
+          "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+          "a1df237f-7291-4549-93bd-e7ed43f27107",
+          "958cf8ad-c743-41b3-a7fd-47da9421a09b",
+          "a7cb156f-be70-4ff4-9d9c-95a92a8052d3",
+          "b1233aee-06ed-44fd-a31a-e57086eab325",
+          "5ba0b022-0a85-4d27-af92-79d093a8d491",
+          "e5cd1de8-d1e5-4173-9dd2-985eda1562a9",
+          "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+          "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+          "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+          "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+          "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+          "875396fa-1704-47b7-abb5-29f49c75fc78",
+          "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+          "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+          "dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+          "5f341f81-5e43-49d6-a821-2a67c5d07c59",
+          "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
+          "585425ad-355a-4180-b64b-a872115f39f6",
+          "3e488a13-943c-4dee-8e38-95b711bef107",
+          "9437579a-377e-41ec-8527-4c0399348746",
+          "9e053410-cea0-400b-b185-576cbb4a8bd0",
+          "425c5476-12a0-476c-96e3-3f10c1530a9c"
+        ]
+      },
+      "queue-existing_ui_audit": {
+        "count": 0,
+        "items_count": 0,
+        "article_ids": []
+      },
+      "queue-quarantined": {
+        "count": 0,
+        "items_count": 0,
+        "article_ids": []
+      },
+      "queue-zero_components": {
+        "count": 0,
+        "items_count": 0,
+        "article_ids": []
+      },
+      "queue-stale_baselines": {
+        "count": 0,
+        "items_count": 0,
+        "article_ids": []
+      },
+      "queue-hallucinated_components": {
+        "count": 0,
+        "items_count": 0,
+        "article_ids": []
+      },
+      "queue-corrupted_placeholders": {
+        "count": 0,
+        "items_count": 0,
+        "article_ids": []
+      }
+    },
+    "total_unique_in_queues": 74,
+    "duplicates_found": [],
+    "integrity_pass": true
+  },
+  "state_integrity": {
+    "exists": true,
+    "phase": "COMPLETE",
+    "completed_count": 46,
+    "quarantined_count": 0,
+    "duplicates_in_completed": [],
+    "integrity_pass": true
+  },
+  "render_risk": {
+    "total_scanned": 567,
+    "issues_found": 0,
+    "issues": [],
+    "integrity_pass": true
+  },
+  "editorial_completeness": {
+    "unaudited_count": 0,
+    "unaudited_articles": [],
+    "integrity_pass": true
+  },
+  "recommendation": "COMPLETE_VERIFIED"
+}

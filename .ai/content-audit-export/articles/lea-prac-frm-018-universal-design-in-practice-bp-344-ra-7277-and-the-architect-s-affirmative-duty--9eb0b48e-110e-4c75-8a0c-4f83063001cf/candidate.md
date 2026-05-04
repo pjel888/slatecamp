@@ -11,11 +11,7 @@ After studying this article, you should be able to:
 
 ---
 
-<JSX>null</JSX>
-
-<LawCallout code="bp344" section="Section 2 - Universal Design">
-Batas Pambansa Bilang 344 (Accessibility Law) and Republic Act 7277 (Magna Carta for Disabled Persons) establish the legal framework for accessible built environments in the Philippines. These laws create an affirmative duty for architects to design buildings that enable full participation of persons with disabilities (PWDs). Universal Design -- designing for all people regardless of ability -- is both the ethical and legal approach. Compliance is mandatory for all new construction and significant renovations, not optional.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
 ### Legal Mandate: BP 344 and RA 7277
 
@@ -23,9 +19,7 @@ BP 344 was enacted in 1982 and amended multiple times, most recently through the
 
 The law applies to all new construction and alterations. The 2024 Revised IRR does not provide a general cost-based exemption. Limited exceptions exist only for specific technical infeasibilities (e.g., door clearances, wheelchair spaces) as explicitly stated in the IRR. The intent is clear: accessible design is the default expectation, not a luxury option.
 
-<Warn title="No General Cost Exemption">
-The 2024 Revised IRR of BP 344 does NOT contain a general exemption based on cost percentage (such as "20% of total building cost"). If a project faces genuine constraints, the architect should document the specific technical infeasibility and pursue the narrow exception provisions in the IRR. Do not rely on a cost-based exemption that does not exist in the current legal framework.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 
 ### The Architect's Affirmative Duty During Design
 
@@ -51,20 +45,11 @@ BP 344 prescribes minimum standards documented in the 2024 Revised IRR. The IRR 
 
 7. **Wayfinding**: Signage, tactile guides, Braille labels.
 
-<Tip title="Ramp Slope - 2024 Revised IRR Standard">
-The 2024 Revised IRR updates the general maximum ramp slope from the old 1:12 standard to **1:20** (gradient not steeper than 1:20). The slope table is:
-- **1:20** -- no maximum length specified -- max rise 700mm (general standard)
-- **1:15** -- max 10m length -- for special cases only
-- Note: 1:12 now applies ONLY to swimming pool transfer walls, NOT general accessible ramps.
-
-Per the flagging report, the old 1:12 standard is a common error in pre-2024 exam materials. Students must use the 2024 Revised IRR values.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
 
 The architect must verify that the design meets these specific standards. This is not subjective judgment; standards are explicit. The architect should maintain a compliance checklist and verify each element. Doing so creates a documentation trail and demonstrates professional diligence.
 
-<ExamTip title="LEA Exam Tip">
-The LEA frequently tests ramp slope ratios. Remember: **1:20 is the general maximum** under the 2024 Revised IRR. The old 1:12 standard (from the original/original amended IRR) is no longer current for general accessible ramps. The only remaining 1:12 reference in the 2024 Revised IRR is for swimming pool transfer walls. Be careful not to confuse the two standards on exam questions.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 
 ### Universal Design Principles vs. Segregated Access
 
@@ -102,11 +87,11 @@ Failure to meet BP 344 requirements constitutes professional negligence. If a PW
 
 The Code of Ethical Conduct under the IRR of RA 9266 (Architecture Act of 2004) and UAP SPP Document 201 reinforce that architects must design for the public good, which includes enabling disabled persons to participate fully. Accessibility is an ethical imperative, not optional.
 
-<LawCallout code="bp344" section="Section 3 - Scope of Application">
-BP 344 (2024 Revised IRR) mandates a **1:20 maximum ramp slope** for accessible ramps, not the outdated 1:12 standard. Architects must integrate accessibility from conceptual design through post-occupancy verification. Failure to comply constitutes professional negligence. Accessibility is both a legal requirement and an ethical duty under the Code of Ethical Conduct (IRR of RA 9266).
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
 
 
+
+<ArticleMedia type="image" caption="Universal Design Compliance — BP 344, RA 7277, and Accessibility Standards Matrix" description="Comparison matrix of accessibility regulations: BP 344 (Building Accessibility, dimensional standards), RA 7277 (Magna Carta for PWDs, rights-based), RA 11205 (Universal Design, conceptual framework). Each column shows: scope, dimensional requirements (ramp slope, door width, toilet clearances), enforcement mechanism, and architect's compliance duty. Overlap areas highlighted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

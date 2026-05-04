@@ -1,38 +1,45 @@
 {
   "article_id": "ba36cb75-5bb4-4d12-802c-f5ab921f7949",
   "slug": "prefabricated-constructions",
-  "generated_at": "2026-05-03T13:45:16.098Z",
-  "old_hash": "sha256:5fbacf1cd1e6b4c2082df1291837d0599c9daaf031c6bd4eb025d68886ec25f0",
-  "new_hash": "sha256:eed8eb5c81165a32c9afac3b2fcc20441a77a0bfa95a48ae140b3f3f7dfaf452",
-  "original_hash": "sha256:5fbacf1cd1e6b4c2082df1291837d0599c9daaf031c6bd4eb025d68886ec25f0",
-  "normalized_hash": "sha256:d46e1848ea8f5d1634281797d34011d71643954bcfe1dbd3491e8f26549c8cac",
-  "candidate_hash": "sha256:eed8eb5c81165a32c9afac3b2fcc20441a77a0bfa95a48ae140b3f3f7dfaf452",
+  "generated_at": "2026-05-04T00:06:56.696Z",
+  "old_hash": "sha256:e5420cda9d4da3a0e6cde26c6d55961d26e414f4a2811beefd10eda3ac5cbb15",
+  "new_hash": "sha256:c94358c4a0435196243dcb00aaad731620765c0959a652d8637b2c5a9b12fbcb",
+  "original_hash": "sha256:e5420cda9d4da3a0e6cde26c6d55961d26e414f4a2811beefd10eda3ac5cbb15",
+  "normalized_hash": "sha256:c94358c4a0435196243dcb00aaad731620765c0959a652d8637b2c5a9b12fbcb",
+  "candidate_hash": "sha256:c94358c4a0435196243dcb00aaad731620765c0959a652d8637b2c5a9b12fbcb",
   "changed": true,
-  "changed_line_count": 525,
-  "inserted_line_count": 21,
+  "changed_line_count": 437,
+  "inserted_line_count": 27,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 2,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 525,
-    "inserted": 21,
+    "changed": 437,
+    "inserted": 27,
     "deleted": 0,
     "original_line_count": 506,
-    "candidate_line_count": 527
+    "candidate_line_count": 533
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002"
+    ],
+    "changed_count": 2
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 2 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

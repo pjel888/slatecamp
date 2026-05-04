@@ -7,32 +7,20 @@ Apply escalator design parameters — width, rise, inclination angle (30° stand
 
 ### Standard Dimensions
 
+<ArticleMedia id="media-lea-util-002-07-escalators-specification" a type="image" caption="Escalator Section Diagram — Step Width, Inclination, Handrail, Balustrade" description="Cross-section and elevation of a standard escalator showing: step widths (600mm, 800mm, 1000mm), inclination angle (30° standard, 35° max), handrail height (0.90-1.10m), balustrade, flat-step run-in/run-out (400mm per BP 344), and emergency stop button locations at top and bottom landings. Operating speed 0.5 m/s (max 0.65 m/s) labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 Escalator step widths are standardized in three common sizes:
 
 - _600 mm (24 inches)_ — used in lower-traffic areas and secondary locations
 - _800 mm (32 inches)_ — most common in retail and transportation facilities
 - _1000 mm (40 inches)_ — deployed in high-traffic transit stations and commercial centers
 
-
 [SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=[{"value": "300-500 lx", "label": "Office Work"}, {"value": "100-200 lx", "label": "Lobby/Corridor"}, {"value": "50-100 lx", "label": "Parking"}, {"value": "750-1000 lx", "label": "Detailed Work"}]
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC ...
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, ...
-[/SLATECAMP_UI_BLOCK]
 
 These dimensions are industry standards for escalator design. Philippine Building Code (PD 1096) establishes safety and operational requirements for vertical transportation systems, though specific step width mandates are not explicitly detailed in the code.
 
@@ -111,6 +99,9 @@ All material conveyors must have _guarded moving parts_, emergency stop access e
 ## Fire Protection: Escalator Floor Openings
 
 Escalators create openings through fire-rated floor assemblies. PD 1096 requires one of two fire protection strategies:
+
+<ArticleMedia id="media-lea-util-002-07-escalators-specification" a type="image" caption="Escalator Fire Protection — Sprinkler Curtain and Rolling Shutter" description="Section through escalator floor opening showing two fire protection strategies: (1) Sprinkler curtain — automatic sprinkler heads above opening creating water barrier; (2) Rolling shutter — motorized fire-rated gate descending to seal opening upon fire detection. Both systems activate automatically per RA 9514 requirements." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 
 ### Sprinkler Curtain
 

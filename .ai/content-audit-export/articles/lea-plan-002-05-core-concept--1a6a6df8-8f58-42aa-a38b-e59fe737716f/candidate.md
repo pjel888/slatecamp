@@ -5,7 +5,6 @@ Identify and apply Kevin Lynch's five urban image elements — paths, edges, dis
 
 Kevin Lynch identified five elements—paths, edges, districts, nodes, landmarks—that shape how people mentally map and navigate cities. Each element is testable with specific definitions.
 
-
 ## Core Concept
 
 In _The Image of the City_ (1960), Kevin Lynch studied how residents of Boston, Jersey City, and Los Angeles understand and move through urban space. He found that people construct mental maps of cities using recurring physical elements. Understanding these five elements is central to urban design and planning because they reveal how _ordinary people_ (not planners or architects) perceive and orient themselves in the built environment.
@@ -21,10 +20,11 @@ In _The Image of the City_ (1960), Kevin Lynch studied how residents of Boston, 
 **Landmarks** are distinctive objects used for orientation. Unlike nodes, landmarks are _not entered_; they are external reference points. You navigate _by looking at_ a landmark. Rizal Monument, RCBC Plaza in Ayala Triangle, Mayon Volcano (visible from afar), Manila Cathedral—these are things you look at to orient yourself. "Meet me in front of the church" uses the church as a landmark. The key distinction: a node is a place you go TO and pass THROUGH; a landmark is a thing you look AT for direction.
 
 Lynch's five elements are _cognitive_, not physical. The same object can serve different element functions depending on how people use it. A church might be a node (a place to gather) and a landmark (a visual reference point), or either one, depending on context and individual perception.
+<ArticleMedia id="media-lea-plan-002-05-core-concept" a type="image" caption="Kevin Lynch's Five Urban Elements — Paths, Edges, Districts, Nodes, Landmarks" description="Diagram illustrating Kevin Lynch's five elements of city imageability: paths (movement channels), edges (boundaries/barriers), districts (neighborhoods with identity), nodes (junctions/convergence points), landmarks (distinctive reference points). Annotated with Philippine urban examples." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
-<WikiExamTable rows={[{"heading":"Lynch Element","definition":"What It Is","Philippine Example"},{"content":"Paths","definition":"Channels of movement. Experienced sequentially. Major organizing structure of mental maps.","content":"EDSA (major arterial), LRT Line 1 corridor, Roxas Boulevard (Manila Bay waterfront drive), Escolta Street (historic commercial spine)"},{"content":"Edges","definition":"Linear boundaries NOT used as paths. Separate one area from another. Experienced as barriers.","content":"Manila Bay shoreline, C-5 highway edge, Pasig River boundary between Makati and Mandaluyong, Intramuros walls (historic boundary), railroad right-of-way"},{"content":"Districts","definition":"Medium-to-large sections with common identifying character. Felt as 'inside' when entered. Holistic recognition.","content":"Intramuros (Spanish colonial walled city), Binondo/Chinatown (density, narrow streets, food culture), BGC (modern high-rises, planned layout), Divisoria (wholeslea/commercial chaos), Ermita/Malate (mixed residential-commercial heritage zone)"},{"content":"Nodes","definition":"Strategic focal points. Junctions, concentrations, hubs. Places you GO TO or PASS THROUGH. Decision points.","content":"EDSA-Taft interchange (major transfer point), Lawton Bus Terminal (commuter hub), Quiapo Plaza (gathering point), Makati CBD elevator lobbies (vertical decision hubs), MRT stations as transit nodes"},{"content":"Landmarks","definition":"External reference points. Distinctive, memorable objects. NOT entered. Used for orientation by looking AT them.","content":"Rizal Monument (visual anchor), RCBC Plaza/Ayala Triangle (office tower landmark), Mayon Volcano (visible from provincial distances), Manila Cathedral (spiritual landmark), Bonifacio Monument, telephone booth (pre-digital wayfinding landmark)"}]} />
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
 
 ## Philippine Context
 
@@ -38,8 +38,7 @@ In Metro Manila, paths (EDSA, C-3/C-5) structure commuting and mental maps, but 
 - "A church that you don't enter but use to tell visitors 'meet me at the church' for navigation. Which Lynch element?" → Landmark (external reference, not entered).
 - "The LRT corridor that you travel on daily. Which Lynch element?" → Path (channel of movement).
 
-<Tip>Node = where you GO TO and PASS THROUGH (junction, hub). Landmark = what you LOOK AT for direction (not entered). This is the highest-frequency error: students confuse nodes and landmarks. Test yourself: "Does the object primarily function as a gathering/transfer point (node) or as a visual reference (landmark)?"</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 **Exam Tip:** Lynch elements tested through scenarios: "A river that separates two neighborhoods" = edge. "A central square where paths converge" = node. "A prominent church tower visible from far away" = landmark. Match the element to the description.
 
@@ -49,4 +48,4 @@ See **LEA-PLAN-001-01** (Planning Fundamentals) for Lynch attribution, **LEA-PLA
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing nodes and landmarks — remember: Node = place you go TO; Landmark = thing you look AT. A church can be both, but you must identify its PRIMARY function in context.","Thinking edges must be water bodies — edges can be any linear boundary: walls, highways, railroad cuts, development edges, even ridgelines. The key is that they separate and are NOT used as movement channels.","Assuming all major streets are paths — paths are channels through which you move. A walled-off highway embankment, even if major, is more edge than path if you cannot move along it.","Using 'landmark' to mean 'important site' — in Lynch's framework, landmarks are specifically things you look AT for orientation, not things you visit."]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]

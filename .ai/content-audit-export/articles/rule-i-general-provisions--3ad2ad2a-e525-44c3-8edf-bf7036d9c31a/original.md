@@ -3,9 +3,23 @@
 **Rule I, Sections 101–106 — PD 1096 (National Building Code of the Philippines) & 2004 Revised IRR**
 **LEA Relevance:** Area 1 (Professional Practice) | Area 3 (Site Planning & Design) | FOUNDATIONAL — IRR Sec. 106 definitions appear across all LEA areas
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply the general provisions of PD 1096 Rule I: the applicability scope, definitions of key terms (building, structure, alteration, repair, demolition), the rule of strict compliance vs substantial compliance, and the relationship between the NBCP, its IRR, and referenced standards; identify which structures are exempt from the Code entirely.
+---
 ---
 
 ## 1. Hook / Opening Scenario
+
+<LawCallout code="pd1096" section="Rule I - Section 106 - Permits">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
+
+<LawCallout code="pd1096" section="Rule I - Section 101 - Scope">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
 
 You are sitting in the OBO — the Office of the Building Official — of a second-class municipality in Rizal province. A client submits plans for what the drawings label an "alteration": the ground floor of a two-storey residence will be converted into a convenience store, and a third floor will be added. The building official's evaluator looks at you. Is this an alteration? A renovation? A conversion? An addition? Or all four? Your answer determines which permit is required, which technical disciplines must sign the plans, and whether the existing structure must be fully brought up to code. This is Section 106 country — and the LEA board exam lives here.
 
@@ -123,14 +137,14 @@ Recite "PASTED" before any LEA question on Rule I or professional practice funda
 | **ALTERATION** | Changes in materials, partitioning, location/size of openings, structural parts, utilities/equipment — does **NOT** increase height and/or floor area | Any construction or renovation to existing structure **other than repair or addition** | IBC definition is by exclusion (anything that's not repair or addition); PH definition is affirmative with explicit exclusion of height/area increase |
 | **RENOVATION** | Physical change to **increase value, quality, and/or improve aesthetic** — no mention of use or area | Covered under "Alteration" in IBC; no separate "Renovation" definition | IBC does not distinguish renovation from alteration; PH treats them as separate categories |
 | **REPAIR** | Remedial work on damaged/deteriorated portions to **restore to original condition** | Restoration to a condition of being in good or sound state; does not include alteration | Substantively similar; both exclude alterations from repair definition |
-| **CONVERSION** | Change in **use or occupancy** of buildings or portions thereof which has different requirements | Closest IBC equivleant: "Change of Occupancy" (IBC Sec. 101.2, Chapter 34) | IBC handles this under "Change of Occupancy" rules; PH term is "Conversion" — defined in Sec. 106, regulated under Rule VII |
+| **CONVERSION** | Change in **use or occupancy** of buildings or portions thereof which has different requirements | Closest IBC equivalent: "Change of Occupancy" (IBC Sec. 101.2, Chapter 34) | IBC handles this under "Change of Occupancy" rules; PH term is "Conversion" — defined in Sec. 106, regulated under Rule VII |
 | **CONSTRUCTION** | All on-site work: site preparation, excavation, foundation, assembly, installation of utilities/machineries/equipment | Not separately defined; covered under "Building" and activity descriptions | IBC does not provide a standalone "Construction" definition; PH does |
 | **DEMOLITION** | Systematic dismantling or destruction in whole or in part | Covered under permit requirements (IBC Ch. 1); not separately defined in Ch. 2 | PH explicitly defines demolition; IBC addresses it procedurally rather than definitionally |
 | **MOVING** | Transfer from original location to another (same lot or different lot) | "Relocation" — transfer of existing structure to another location | Similar concept, different term: PH uses "Moving," IBC uses "Relocation" |
 | **BUILDING OFFICIAL** | Executive Officer of the OBO; appointed by the Secretary (of DPWH) | Building Official: officer charged with administration/enforcement of code (IBC 103.2) | Both are government-appointed enforcement officers; PH ties appointment authority to DPWH Secretary |
 | **BUILDING PERMIT** | Document issued by BO to proceed with work after plans found satisfactory and conforming | "Permit" (IBC 105): written permission issued by authority having jurisdiction (AHJ) | PH uses "Building Official"; IBC uses "Authority Having Jurisdiction (AHJ)" as broader term |
 | **CODE** | Refers to PD 1096 (National Building Code of the Philippines) | Refers to the specific IBC edition adopted by the jurisdiction | PH has one national code; US has model codes locally adopted with amendments |
-| **REFERRAL CODES** | Applicable provisions of various agency/professional codes, supplementary to PD 1096 | "Referenced standards" (IBC Ch. 35): listed standards incorporated by reference | Functionally equivleant; IBC listed standards are prescriptive; PH referral codes have more flexibility |
+| **REFERRAL CODES** | Applicable provisions of various agency/professional codes, supplementary to PD 1096 | "Referenced standards" (IBC Ch. 35): listed standards incorporated by reference | Functionally equivalent; IBC listed standards are prescriptive; PH referral codes have more flexibility |
 
 ---
 
@@ -266,6 +280,9 @@ This connects to Rule V (Fire Zones) and the IRR provisions on hazardous occupan
 
 **ADDITION** (IRR Sec. 106): *"New construction added to an existing building or structure which increases its height and/or its floor area."*
 
+Extracted summary:
+
+\
 - Height increase example: adding a third floor to a two-storey building
 - Floor area increase example: extending the ground floor footprint into the rear setback (with variance)
 - Both: adding a floor AND extending the footprint
@@ -405,6 +422,8 @@ The US exception for detached 1-2 family dwellings is analogous to the PH except
 
 ---
 
+\
+
 ### Trap Leart 3 — Renovation vs. Repair (The "Like-for-Like" Trap)
 
 **Wrong answer scenario:** A building owner replaces all damaged ceramic floor tiles with new, higher-quality imported marble. The answer choice calls this "Repair."
@@ -542,3 +561,10 @@ The Sec. 103 exemption for BP 220 buildings creates a parallel regulatory univer
 ## 10. Spaced Repetition Prompt
 
 Return to this module in 3 days. If you can answer the Active Recall questions without peeking, and can define — without notes — the five change-type terms (Repair, Renovation, Alteration, Conversion, Addition) with their KEY distinguishing element for each, advance to the next topic. Rule I is not optional review: every question in the LEA that involves permitting, site planning, or professional responsibility traces back to the definitions and policy statements you have studied here.
+
+---
+
+## Cross‑References
+
+**Legal Liability And Enforcement Workflow**, **Top 50 Traps 2024 Irr**, **Typology Checklists And Plan Checking**, **Building Permit Process**
+

@@ -5,6 +5,14 @@ The canonical texts of architecture establish the intellectual foundation for ar
 
 </Callout>
 
+
+
+## Learning Goal
+
+- Identify the canonical texts of architectural theory: Vitruvius's Ten Books, Alberti's On the Art of Building, Le Corbusier's Toward an Architecture, Venturi's Complexity and Contradiction, Frampton's Critical Regionalism.
+- Match each text to its author, publication date, and core theoretical contribution.
+- Explain how each canonical text responded to its era while establishing principles that transcended its time.
+
 ## Core Concept
 
 Architectural canon refers to the collection of foundational texts that have shaped the discipline's theory and practice. These works serve as the intellectual scaffolding upon which architects build their understanding of form, function, space, and meaning. The history of architectural theory is inseparable from the history of architectural writing—from the Roman engineer Vitruvius to contemporary theorists, each canonical text responds to its era while establishing principles that transcend its time.
@@ -75,6 +83,13 @@ Rem Koolhaas's *Delirious New York: A Retroactive Manifesto for Manhattan* (1978
 
 **Genius Loci** — The spirit or character of a place—its unique atmosphere shaped by geography, history, light, materiality, and human activity; central to phenomenological architecture.
 
-**Pattern Language** — Leaxander's system of 253 recurring design patterns, each describing a problem-solution pair at scleas from regional planning to furniture, claiming universal applicability across cultures.
+**Pattern Language** — Leaxander's system of 253 recurring design patterns, each describing a problem-solution pair at scales from regional planning to furniture, claiming universal applicability across cultures.
 
 **Five Orders** — The classical architectural system (Tuscan, Doric, Ionic, Corinthian, Composite) systematized by Palladio and later theorists, establishing proportional rules for columns and entablatures.
+
+## Related Articles
+
+See also within Architectural Philosophies: **lea-theo-005-01-core-concept**, **lea-theo-005-02-core-concept**, **lea-theo-005-05-core-concept**, **lea-theo-005-08-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

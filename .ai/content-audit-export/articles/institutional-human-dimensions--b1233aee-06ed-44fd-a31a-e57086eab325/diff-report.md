@@ -1,32 +1,33 @@
 # Content Diff Report: institutional-human-dimensions
 
-Generated: 2026-05-03T13:45:21.969Z
+Generated: 2026-05-04T00:07:03.373Z
 Article ID: b1233aee-06ed-44fd-a31a-e57086eab325
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
 - Original: `sha256:ab3046151b4e3b0f0ff6809fe46c511dd76799bc61f16d15b190614a525b3ebc`
-- Normalized: `sha256:6e0f73e891dce2de91504c0d0182ff0e9dbec112c7dc9ee3b07415948fd604d1`
-- Candidate: `sha256:787df64e22da2d003d66a6547b30c0260022c30eebbea01b2f7cf4a15c3882da`
+- Normalized: `sha256:80b363f9a5f12b1a7121579580893190bd2035a504761f5eb25e4348ad7d1669`
+- Candidate: `sha256:80b363f9a5f12b1a7121579580893190bd2035a504761f5eb25e4348ad7d1669`
 
 ## Line summary
 
-- Changed lines: 553
-- Inserted lines: 35
+- Changed lines: 411
+- Inserted lines: 9
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 7
-- UI blocks preserved: 7
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 7
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 7 preserved UI block(s).
 
 ## Warnings
 

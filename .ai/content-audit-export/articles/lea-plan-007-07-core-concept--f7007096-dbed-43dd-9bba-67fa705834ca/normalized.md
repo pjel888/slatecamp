@@ -5,7 +5,6 @@ Identify professional organizations (UAP, PIEP, PICE) and their enabling laws (R
 
 Professional organizations and enabling legislation establish standards for architects, planners, and environmental planners in the Philippines. These organizations and laws create licensing frameworks, ethical standards, and professional credentials that govern practice.
 
-
 ## Core Concept
 
 **United Architects of the Philippines (UAP)** is the principal professional organization for architects. Under **RA 9266** (Architecture Act of 2004), architects are licensed professionals required to pass the Architect's Licensure Examination. RA 9266 defines architecture practice, sets examination standards, and establishes ethical requirements. Architects may engage in site planning and design under RA 9266, though comprehensive urban and community planning is the specialized mandate of environmental planners under RA 10587.
@@ -13,14 +12,11 @@ Professional organizations and enabling legislation establish standards for arch
 **Philippine Institute of Environmental Planners (PIEP)** represents environmental planners as a profession. **RA 10587** (Environmental Planning Act, 2013) creates the licensed profession of Environmental Planner (EnP). Unlike architecture, which is older and broader, environmental planning is a specialized licensed profession created more recently. Environmental Planners have the explicit mandate to prepare comprehensive land use plans under national law.
 
 The distinction is important: While architects may practice planning under RA 9266, Environmental Planners have the legal mandate for comprehensive land use planning (CLUPs) and are regulated through RA 10587. Both professions contribute to urban and regional planning, but from different legal bases.
+<ArticleMedia id="media-lea-plan-007-07-core-concept" a type="image" caption="Professional Planning Organizations — UAP, PIEP, PICE Scope Comparison" description="Comparison diagram of professional organizations: UAP (RA 9266, architects), PIEP (RA 10587, environmental planners), PICE (RA 544, civil engineers). Scopes of practice overlap, enabling laws, and ethical standards for professional practice in planning." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Organization / Law\", \"Profession Governed\", \"Key Requirements\", \"Scope of Practice\"]}", rows=true, UAP=true, United=true, Architects=true, of=true, the=true, Philippines=true, IAPOA=true, Architecture=true, License=true, from=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -35,11 +31,6 @@ In practice, CLUPs are prepared by planning teams that may include architects (U
 3. **Practice scope:** "Can an architect practice planning?" → Yes, under RA 9266. "Is planning a separate licensed profession?" → Yes, under RA 10587.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid:** UAP + RA 9266 = architects (older profession, broader scope). PIEP + RA 10587 = environmental planners (newer profession, planning-specific mandate). Both can contribute to planning; EnPs have the statutory CLUP mandate.
-[/SLATECAMP_UI_BLOCK]
-
 
 **Exam Tip:** RA 9266 (Architecture Act of 2004) governs architects. RA 10587 (Environmental Planning Act of 2013) governs environmental planners. An architect CAN do site planning under RA 9266 but CANNOT claim the title 'environmental planner' without RA 10587 licensure.
 
@@ -50,7 +41,3 @@ See **LEA-PLAN-007-06** (Key Figures) for professionals in practice, **LEA-PLAN-
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing RA 9266 (architects) with RA 10587 (environmental planners)—they are different professions with separate licenses\", \"Stating that only architects can practice planning—environmental planners have a separate professional track\", \"Forgetting that RA 10587 is recent (2013)—environmental planning as a licensed profession is newer than architecture\", \"Saying environmental planners are architects—EnPs are a distinct profession with their own exam and licensure\", \"Omitting PIEP as a professional body—PIEP is as significant as UAP, just newer and smaller\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

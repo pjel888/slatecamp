@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Allowable Stress Design (ASD) and Load and Resistance Factor Design (LRFD) are two fundamentally different philosophies for ensuring structural safety. ASD uses elastic analysis with working stresses well below yield. LRFD uses plastic analysis and amplifies loads, allowing stress to reach near yield. Understanding their conceptual difference is essential for code interpretation and design judgment.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-003-04-core-concept" a type="image" caption="ASD vs LRFD — Design Method Comparison" description="Side-by-side comparison of Allowable Stress Design and Load and Resistance Factor Design: ASD uses Fy/FS with service loads, LRFD uses φRn ≥ ΣγiQi with factored loads. Flowchart shows the two parallel design paths from load/strength data to final member selection. Safety margin distribution curves show how each method achieves target reliability." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Both ASD and LRFD aim to ensure safety, but they achieve it through different paths. Safety can be introduced at the load side (amplify forces) or at the resistance side (reduce capacity), or both. The choice affects calculations, stress levels, and failure mode control.
 
@@ -87,14 +88,13 @@ The NSCP permits both ASD and LRFD for structural design. The 2015 edition (curr
 
 **Pattern 4: Failure Mode Implication.** In LRFD, a flexure member gets φ = 0.90, but a bearing area gets φ = 0.70. Why the difference? Answer: Flexure is ductile (bending allows redistribution and warning); bearing is brittle (sudden crushing). Lower φ penalizes brittle modes. This explicit control of failure mode is a strength of LRFD unavailable in simple ASD.
 
-<Tip>ASD = working stress = elastic = simple. LRFD = factored loads = factored capacity = sophisticated. In ASD, the designer prevents yielding. In LRFD, the designer permits (and expects) yielding but ensures it is controlled and ductile. Load factors > 1 (amplify); resistance factors < 1 (reduce). The product (load factor × resistance factor) is the effective safety margin.</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Related Articles
 
 See also: **Required Strength** (lea-strc-005-01) for LRFD load combinations, **Structural Design Capacity** (lea-strc-005-02) for capacity checks, and **Stress-Strain** (lea-strc-003-01) for the stress basis of ASD.
 
 ## Common Mistakes
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 
-<WikiMistakeList mistakes={["Confusing ASD and LRFD by mixing checks. ASD uses unfactored loads and allowable stresses: f ≤ Fa. LRFD uses factored loads and factored capacities: Pu ≤ φPn. Never mix unfactored loads with φ factors or vice versa; the result is unsafe.","Assuming LRFD always gives a lower design (more economical). LRFD often designs more conservatively than ASD in certain regions because factored demands amplify uncertainty. The two methods are not strictly comparable on cost; they address different uncertainties.","Forgetting the difference between load factors for LRFD: U = 1.2D + 1.6L (modern) vs. U = 1.4DL + 1.7LL (older). Always check which code edition applies. Using the wrong factors gives incorrect demand calculations.","Treating φ factors as uniform. φ = 0.90 for flexure (ductile) but φ = 0.70 for tied columns and bearing (brittle). The difference reflects failure mode control. Applying the same φ to all limit states is incorrect.","Assuming ASD allows unlimited stress. ASD limits stress to fractions of Fy (0.60Fy, 0.66Fy, 0.40Fy), not Fy itself. The material must remain in the elastic region. Exceeding the allowable stress is failure, just as exceeding Pu ≤ φPn is failure in LRFD.","Missing the point that both methods aim for safety; they differ only in how safety is introduced. ASD is deterministic (work stress < yield); LRFD is probabilistic (factors reflect uncertainty). Neither is 'safer' in absolute terms; they are calibrated to similar reliability indices."] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]

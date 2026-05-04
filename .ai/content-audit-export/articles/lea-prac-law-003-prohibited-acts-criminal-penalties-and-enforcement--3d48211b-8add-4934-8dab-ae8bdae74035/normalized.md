@@ -84,21 +84,12 @@ Practicing without a valid license (whether never licensed, expired license, or 
 
 Some violations may result in forfeiture of instruments used in the commission of the crime (e.g., seal and stamp used to falsify documents). The statute authorizes the court to order restitution to injured parties, reflecting recognition that some violations cause direct financial harm to clients.
 
-
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ Don't memorize every code section number — memorize the *rule*. The LEA tests...
-[/SLATECAMP_UI_BLOCK]
 ### Disciplinary Action: Suspension and Revocation
 
 Section 23 establishes grounds for suspension or revocation of the professional certificate and identification card. These grounds include conviction of crimes involving moral turpitude, violation of the Code of Ethical Conduct and Standards of Professional Practice, engaging in deceit or misrepresentation in the practice of architecture, and willful breach of professional confidentiality.
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ Don't memorize every code section number — memorize the *rule*. The LEA tests...
-[/SLATECAMP_UI_BLOCK]
 
 Suspension temporarily removes the right to practice; the architect may seek reinstatement after demonstrating rehabilitation. Revocation permanently removes the license; reinstatement requires legislative action or, in some jurisdictions, passage of a new licensure examination. The PRBoA may also issue a public censure or reprimand as an intermediate sanction for minor violations, signaling that the misconduct is noted without removing the license.
 
@@ -139,20 +130,10 @@ Investigations are conducted by the Commission pursuant to procedures in RA 8981
 
 While RA 9266 establishes criminal and disciplinary remedies, the fundamental liability framework for architectural misconduct rests on Article 1723 of the Civil Code. This article provides that architects are liable for injury to person or property resulting from their work or professional acts, except where liability arises from the architect's interference with another licensed professional's reserved functions.
 
-
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 Thus, if an Architect-of-Record designs a structure with inadequate foundation capacity and the building settles, causing damage, the AoR is civilly liable under Article 1723. If a Consulting Architect advises a client on code compliance but intentionally provides false information, the Consulting Architect assumes civil liability for the client's reliance. Civil liability is distinct from and may coexist with criminal or disciplinary consequences.
 
-
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 > **Tip: Three Tracks of Liability**
 >
 | Track | Purpose | Standard of Proof |
@@ -167,11 +148,19 @@ Extracted summary:
 | Double jeopardy applies? | No (separate proceedings) | No (separate proceedings) | No (separate proceedings) |
 | Source | Section 29, IRR | Section 23, RA 9266 | Article 1723, Civil Code |
 
+---
+
+<ArticleMedia id="media-law003-liability-tracks" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Three Tracks of Architect Liability" description="Flowchart comparing Criminal (Section 29), Disciplinary (Section 23), and Civil (Article 1723) liability tracks — their triggers, standards of proof, outcomes, and whether they can run concurrently." placementIntent="enforcement-workflow" suggestedSearchQuery="architect liability three tracks criminal disciplinary civil Philippines flowchart" replacementNotes="Create a three-column parallel flowchart. Left: Criminal track (Section 29) → beyond reasonable doubt → fine/imprisonment. Middle: Disciplinary (Section 23) → clear and convincing → suspension/revocation. Right: Civil (Article 1723) → preponderance of evidence → damages. Show arrows indicating they proceed concurrently." suggestedAsset="Diagram or reference image" />
+
 ### Enforcement Authority: The PRBoA and Commission
 
 The Professional Regulation Commission, through the PRBoA, possesses the authority to investigate complaints, initiate proceedings, and impose discipline. The Board may receive complaints from clients, other architects, regulatory agencies, or members of the public. Upon receipt, the Board's staff typically conducts preliminary investigation to determine whether probable cause exists for formal proceeding.
 
 If probable cause is found, the Board may issue a notice of violation and initiate administrative proceedings. The architect is afforded opportunity to respond, present evidence, cross-examine witnesses, and appeal the Board's decision. The Commission oversees the process to ensure procedural fairness and consistency with administrative law principles.
+
+---
+
+<ArticleMedia id="media-law003-enforcement-workflow" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Enforcement and Disciplinary Workflow" description="Step-by-step flowchart of the enforcement process: Complaint Filing → Preliminary Investigation → Probable Cause Determination → Formal Hearing → PRBoA Decision → Appeal to PRC → Appeal to Court of Appeals." placementIntent="enforcement-workflow" suggestedSearchQuery="PRBoA disciplinary process flowchart complaint investigation hearing appeal" replacementNotes="Create a vertical swimlane flowchart. Track 1: Complaint (client/public/other architect). Track 2: PRBoA investigation. Track 3: Formal hearing. Track 4: Decision (dismissal/censure/suspension/revocation). Track 5: Appeal path (15-day window → PRC → Court of Appeals). Label timeframes at each step." suggestedAsset="Diagram or reference image" />
 
 ### Public Interest Presumption and Strict Construction
 
@@ -195,16 +184,8 @@ The architect may be prosecuted criminally, face disciplinary suspension or revo
 >
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
-[/SLATECAMP_UI_BLOCK]
 > Double jeopardy does not apply because these are separate legal proceedings with distinct purposes and standards of proof.
 
 ---

@@ -10,6 +10,13 @@ The fundamental formula is: _Number of CHB = Wall area (m²) ÷ 0.16 m² per blo
 
 Mortar volume (cement-sand mix for bedding and joints) is estimated at 0.03 to 0.05 m³ per cubic meter of masonry wall, or approximately 1 bag of cement (40 kg) and 0.12 m³ of sand per 100 blocks. Grout (for cavity fill or solid grouting) is calculated separately based on wall thickness and grout design.
 
+
+<ArticleMedia id="media-chb-estimation-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing CHB wall area calculation, opening deductions, and block layout with bond pattern illustration"
+  caption="Future diagram: CHB quantity estimation — wall area, openings, bond pattern, and layout"
+  suggestedAsset="Wall elevation diagram with block count calculation steps"
+  placementIntent="Visualizes CHB estimation methodology" />
+
 ## Key Provisions
 
 | Parameter | Value / Standard | LEA Relevance |
@@ -26,76 +33,16 @@ Mortar volume (cement-sand mix for bedding and joints) is estimated at 0.03 to 0
 
 ## Worked Examples
 
-<Example>
-**Scenario 1: Residential wall, 6-inch CHB, 30 m² gross area with two 1.5 m × 1.2 m windows and one 1.0 m × 2.1 m door**
+[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
 
-**Step 1: Calculate net wall area**
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 
-Gross wall area = 30 m²
 
-Window opening 1: 1.5 m × 1.2 m = 1.8 m²
-
-Window opening 2: 1.5 m × 1.2 m = 1.8 m²
-
-Door opening: 1.0 m × 2.1 m = 2.1 m²
-
-Total openings = 1.8 + 1.8 + 2.1 = 5.7 m²
-
-Net wall area = 30 – 5.7 = 24.3 m²
-
-**Step 2: Calculate CHB quantity**
-
-CHB quantity = 24.3 m² × 12.5 pcs/m² = 303.75 pcs
-
-Round up to 304 blocks (add 5% waste: 304 × 1.05 = 319.2 ≈ 320 blocks)
-
-**Step 3: Estimate mortar (1 bag cement + 0.12 m³ sand per 100 blocks)**
-
-Mortar bags: (320 blocks ÷ 100) × 1 bag = 3.2 bags ≈ 4 bags cement
-
-Mortar sand: (320 blocks ÷ 100) × 0.12 m³ = 0.384 m³ ≈ 0.4 m³ sand
-
-**Answer: 320 CHB, 4 bags cement, 0.4 m³ sand**
-</Example>
-
-<Example>
-**Scenario 2: Commercial building, 4-story structure with 8-inch (200 mm) CHB on ground floor, 45 m² per floor (multiple walls) with 3 doors (1.0 m × 2.1 m each) and 6 windows (1.2 m × 1.5 m each)**
-
-**Step 1: Calculate total gross area for ground floor walls**
-
-Total wall area: 45 m² (given for floor perimeter)
-
-Door openings: 3 × (1.0 × 2.1) = 3 × 2.1 = 6.3 m²
-
-Window openings: 6 × (1.2 × 1.5) = 6 × 1.8 = 10.8 m²
-
-Total openings: 6.3 + 10.8 = 17.1 m²
-
-Net area: 45 – 17.1 = 27.9 m²
-
-**Step 2: Calculate CHB (same formula applies regardless of thickness)**
-
-CHB quantity: 27.9 m² × 12.5 pcs/m² = 348.75 pcs
-
-Add 5% waste: 348.75 × 1.05 = 366.1 ≈ 367 blocks
-
-**Step 3: Mortar estimation**
-
-Mortar cement: (367 ÷ 100) × 1 bag = 3.67 ≈ 4 bags
-
-Mortar sand: (367 ÷ 100) × 0.12 m³ = 0.44 m³
-
-**Step 4: For 4 floors (if same configuration)**
-
-Total CHB: 367 blocks × 4 floors = 1,468 blocks ≈ 1,470 blocks
-
-Total mortar: 4 bags × 4 floors = 16 bags cement
-
-Total sand: 0.44 m³ × 4 floors = 1.76 m³ sand
-
-**Answer: 1,470 CHB for 4 floors, 16 bags cement mortar, 1.76 m³ sand**
-</Example>
-
+<ArticleMedia id="media-chb-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step CHB quantity estimation example showing wall area calculation, opening deduction, block count, mortar volume, and steel reinforcement"
+  caption="Future diagram: CHB estimation worked example — wall area, openings, block count, and reinforcement"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of masonry quantity estimation" />
 ## Quick Reference: CHB Estimation Table
 
 | Wall Thickness | Net Area (m²) | CHB per m² | Total CHB (5% waste) | Mortar Bags | Mortar Sand (m³) |
@@ -129,21 +76,19 @@ On the LEA, masonry questions focus on:
 
 6. **Cost per unit**: CHB cost/block × total blocks for material budgeting.
 
-<Tip>
-**Memory aid**: For any wall thickness and opening arrangement, use 12.5 blocks per m² as your standard. Always subtract openings FIRST, then multiply by 12.5. Always add 5% waste unless otherwise specified.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Using 16 blocks per m² instead of 12.5 blocks per m²" correction="The standard 12.5 pcs/m² accounts for the 10 mm mortar joint and is universal across 4-inch, 6-inch, and 8-inch CHB. Using 16/m² over-estimates." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Forgetting to subtract window and door openings from the gross wall area" correction="Always calculate net wall area = gross area – total opening area. Then apply 12.5 pcs/m² to the net area only." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Not adding waste percentage" correction="Site waste is typically 5–10%; multiply the block count by 1.05 or 1.10 unless the problem specifies zero waste." />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Using different CHB pcs/m² for different thicknesses (4\", 6\", 8\")" correction="All standard CHB sizes have the same face area (16\" × 8\" = 0.16 m² per block). Thickness does not affect quantity per m² of wall face." />
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Mixing net area and gross area—always subtract openings before multiplying by 12.5", "Calculating mortar based on weight instead of volume (use m³ for sand, bags for cement)", "Double-counting openings or including the same opening twice", "Forgetting that CHB mortar requires both cement AND sand (do not calculate cement only)"]} />
+[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
 
 ## Related Articles
 

@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain rules on competition eligibility, submission, and evaluation.
 - Identify the architect's rights regarding competition entries and copyright.
 
-
-
 ---
 ### Types of Architectural Competitions
 
@@ -59,32 +57,18 @@ Standards also recommend that design competitions occur under supervised conditi
 Architects benefit when competitions follow professional standards, provide adequate compensation, protect intellectual property rights, and limit design development requirements to levels justified by compensation offered. Participation in competitions adhering to these standards benefits both individual architects and the profession.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: - <strong>Project Definition</strong> — Problem identification
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=\"irr\"
-- Props: section=\"SPP Documents\"
-- Props: title=\"Professional Practice Framework\"
-- Text: SPP Documents 201–209 establish standards for architectural services scope, fee 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Architectural Design Competition — Types and Process Flowchart" description="Flowchart showing ADC (SPP 208) process: Competition announcement → Registration → Briefing → Design submission → Jury evaluation → Winner selection → Award. Types compared: Open competition (any qualified architect), Limited competition (invited participants), Single-stage (direct evaluation), Two-stage (pre-qualification + detailed design). Architect's rights (copyright, ownership of submissions) and professional advisor's role." />
 ## Related Articles
 
 - [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
@@ -99,6 +83,3 @@ Extracted summary:
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]

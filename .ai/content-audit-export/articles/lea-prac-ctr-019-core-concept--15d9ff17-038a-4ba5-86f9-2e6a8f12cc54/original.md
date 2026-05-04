@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Explain delay damages and extension of time provisions.
+- Distinguish excusable delays (owner-caused, force majeure) from non-excusable delays.
+- Describe the notice requirements for claiming extensions of time.
+- Identify the architect's role in evaluating delay claims.
 
 The Certificate of Occupancy is a government permit issued by the Building Official or local authority that authorizes the owner to occupy and use a completed building. It is distinct from the architect's Certificate of Substantial Completion. The architect's role in the Certificate of Occupancy process includes coordinating with government authorities, ensuring that work complies with approved plans and building codes, and assisting the owner in submitting required documentation. The architect's seal and signature on design drawings authenticate compliance with building codes, but the Building Official issues the final occupancy permit.
 
@@ -6,7 +13,7 @@ The Certificate of Occupancy is a government permit issued by the Building Offic
 
 The Certificate of Occupancy is a legal permit that authorizes a building to be occupied for its intended use. It is issued by the government Building Official (e.g., city or municipal engineer) only after the building is inspected and found to comply with the National Building Code, approved plans, and all applicable regulations. The Certificate of Occupancy is separate from and often issued after the architect's Certificate of Substantial Completion, although both may be timed to coincide. The owner cannot legally occupy the building without the Certificate of Occupancy, even if the architect has certified Substantial Completion.
 
-The architect's responsibility in the occupancy process includes three areas: (1) Design compliance—the architect's selead drawings and specifications must comply with the National Building Code and applicable laws; (2) Construction administration—the architect must inspect construction for code compliance and notify the Building Official of any deviations; (3) Occupancy coordination—the architect assists the owner in preparing documents required for occupancy permit issuance (as-built drawings, test reports, certificates of compliance, etc.). If the architect certifies that work is substantially complete but the building fails final government inspection for code non-compliance, the architect's liability exposure increases significantly.
+The architect's responsibility in the occupancy process includes three areas: (1) Design compliance—the architect's sealed drawings and specifications must comply with the National Building Code and applicable laws; (2) Construction administration—the architect must inspect construction for code compliance and notify the Building Official of any deviations; (3) Occupancy coordination—the architect assists the owner in preparing documents required for occupancy permit issuance (as-built drawings, test reports, certificates of compliance, etc.). If the architect certifies that work is substantially complete but the building fails final government inspection for code non-compliance, the architect's liability exposure increases significantly.
 
 The Certificate of Occupancy requirement creates timing pressure: the owner wants occupancy immediately after Substantial Completion, but the Building Official's final inspection and approval may require additional time and corrections. If the architect's design or construction administration supervision failed to ensure code compliance during construction, defects discovered during final government inspection may delay the Certificate of Occupancy for weeks or months, preventing the owner's occupancy despite the architect's earlier Substantial Completion certification.
 
@@ -50,3 +57,18 @@ The distinction between Substantial Completion (architect's certificate) and Cer
 ## Common Mistakes
 
 <WikiMistakeList mistakes={["Assuming architect's Substantial Completion certificate authorizes occupancy (Only the government Certificate of Occupancy authorizes legal occupancy)", "Thinking the architect issues the Certificate of Occupancy (Building Official issues it—architect assists but does not issue)", "Confusing code compliance as the Building Official's responsibility alone (Architect's design must comply with code; architect must monitor construction compliance)", "Believing architect liability ends at Substantial Completion certification (Architect remains liable for code compliance discovered during occupancy inspection)", "Assuming as-built drawings are optional documents (As-built drawings are required for occupancy permit and must be accurate)", "Thinking design compliance is sufficient without construction monitoring (Both design compliance and construction monitoring are architect responsibilities)", "Confusing deviations from plans as contractor errors only (Architect must identify deviations and ensure they are corrected or approved for code compliance)", "Assuming occupancy inspection will not find code non-compliance if Substantial Completion was certified (Substantial Completion and occupancy inspection use different criteria)"] />
+
+---
+
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)

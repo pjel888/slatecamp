@@ -1,38 +1,46 @@
 {
   "article_id": "0d7083b9-a1bc-428c-b9b9-e8d4afa0c83c",
   "slug": "overview-theory-of-architecture",
-  "generated_at": "2026-05-03T13:45:05.076Z",
-  "old_hash": "sha256:73d9e268e1899af2c0c1704e136fcd4d0467019a4b34fe1ed3b2be4a8a4b3c46",
-  "new_hash": "sha256:fd11130bedab794d2dfc828ec2c32659b9fe061b08162b546e009af30d4b937b",
-  "original_hash": "sha256:73d9e268e1899af2c0c1704e136fcd4d0467019a4b34fe1ed3b2be4a8a4b3c46",
-  "normalized_hash": "sha256:580a5631408904fa50e2db473b30bf3b3ab1550c20a3088cba9ad6240f52ef89",
-  "candidate_hash": "sha256:fd11130bedab794d2dfc828ec2c32659b9fe061b08162b546e009af30d4b937b",
+  "generated_at": "2026-05-04T00:06:43.139Z",
+  "old_hash": "sha256:fd11130bedab794d2dfc828ec2c32659b9fe061b08162b546e009af30d4b937b",
+  "new_hash": "sha256:89615432f5cac8038622260ac7cb8fbacd43735a062b7d9366fdac0493afb56a",
+  "original_hash": "sha256:fd11130bedab794d2dfc828ec2c32659b9fe061b08162b546e009af30d4b937b",
+  "normalized_hash": "sha256:89615432f5cac8038622260ac7cb8fbacd43735a062b7d9366fdac0493afb56a",
+  "candidate_hash": "sha256:89615432f5cac8038622260ac7cb8fbacd43735a062b7d9366fdac0493afb56a",
   "changed": true,
-  "changed_line_count": 59,
-  "inserted_line_count": 0,
-  "deleted_line_count": 12,
+  "changed_line_count": 71,
+  "inserted_line_count": 9,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 59,
-    "inserted": 0,
-    "deleted": 12,
-    "original_line_count": 78,
-    "candidate_line_count": 66
+    "changed": 71,
+    "inserted": 9,
+    "deleted": 0,
+    "original_line_count": 66,
+    "candidate_line_count": 75
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
 }

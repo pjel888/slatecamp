@@ -1,8 +1,21 @@
 ## PRBoA Powers and Functions: Section 7 In Full
 
-### Foundational Authority and Enumeration
+---
 
-Section 7 of RA 9266 enumerates the specific powers, functions, and responsibilities of the Professional Regulatory Board of Architecture. The statute lists thirteen (13) distinct powers, from (a) through (n), creating a comprehensive grant of regulatory authority. These are not permissive ("may") but mandatory ("shall exercise"), imposing upon the Board an affirmative duty to perform these functions.
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Enumerate the powers and functions of the PRBoA under RA 9266 §7.
+- Distinguish the PRBoA's regulatory powers from the PRC's administrative supervision.
+- Explain the Board's role in licensure, discipline, CPD, and standard-setting.
+- Apply §7 powers to exam scenarios involving board jurisdiction.
+
+<LawCallout code="ra9266" section="Section 7 - Specific Powers">
+Legal Basis: RA 9266 (Architecture Act of 2004), Section 7 (Powers and Functions of the Professional Regulatory Board of Architecture); RA 9266 IRR, Section 7.
+</LawCallout>
+
+Section 7 of RA 9266 enumerates the specific powers, functions, and responsibilities of the Professional Regulatory Board of Architecture. The statute lists fourteen (14) distinct powers, from (a) through (n), creating a comprehensive grant of regulatory authority. These are not permissive ("may") but mandatory ("shall exercise"), imposing upon the Board an affirmative duty to perform these functions.
 
 The Board's authority rests on the understanding that professional regulation is a public function; the PRBoA acts on behalf of the state to protect the public, not on behalf of the profession to advance member interests. This distinction is foundational: regulatory power derives from state sovereignty and must be exercised for public benefit.
 
@@ -121,6 +134,8 @@ However, "the Board's decisions, resolutions or orders rendered in administrativ
 
 This dual structure prevents the Board from becoming a runaway agency while preserving Board autonomy in adjudicatory matters where members' expertise and judgment are most valuable.
 
+<Warn>The distinction between Commission review of **rules** (must pre-approve) vs. **disciplinary decisions** (appeal only) is one of the most frequently tested concepts. For rules: Commission pre-approval is required. For disciplinary decisions: Board decides independently; Commission only reviews if appealed. Know this asymmetry cold.</Warn>
+
 ### Implied Limitations on Board Power
 
 While Section 7 grants extensive authority, implied limitations exist. The Board cannot violate the statute or Constitution. It cannot exercise powers reserved to other agencies (e.g., the Board cannot issue professional identification cards to non-architects or regulate engineers). It cannot impose rules beyond architecture practice regulation.
@@ -129,6 +144,36 @@ Additionally, the Board's authority is ministerial where the statute is specific
 
 ### The Board's Role as Public Trustee
 
+<Tip>The 14 powers of the PRBoA can be grouped into four categories: (1) **Rulemaking** — IRR, ethical code, CPD guidelines; (2) **Licensing** — registration, examination, special permits; (3) **Adjudicatory** — hearing cases, issuing subpoenas, imposing discipline; and (4) **Supervisory** — monitoring practice conditions, ensuring education quality, computerizing exams. Exam questions often test which power falls into which category.</Tip>
+
 Underlying all these powers is a foundational principle: the Board acts as public trustee, not as a professional guild advancing member interests. If the Board's powers and the profession's interests conflict, public interest prevails. The Board may adopt standards stricter than the statute, more extensive examination requirements, or broader disciplinary grounds—all in service of protecting the public.
 
 This public-trustee orientation distinguishes professional regulation from industry self-governance. The Board is a regulatory agency, not a trade association.
+
+---
+
+\
+Extracted summary:
+- Props: 
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 7 (Powers and Functions of the Professional Regulatory Board of Architecture); RA 9266 IRR, Section 7.
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: The distinction between Commission review of **rules** (must pre-approve) vs. **disciplinary decisions** (appeal only) is one of the most frequently tested concepts. For rules: Commission pre-approval
+\[/SLATECAMP_UI_BLOCK\]
+\
+Extracted summary:
+- Props: 
+- Text: The 14 powers of the PRBoA can be grouped into four categories: (1) **Rulemaking** — IRR, ethical code, CPD guidelines; (2) **Licensing** — registration, examination, special permits; (3) **Adjudicato
+\[/SLATECAMP_UI_BLOCK\]
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)

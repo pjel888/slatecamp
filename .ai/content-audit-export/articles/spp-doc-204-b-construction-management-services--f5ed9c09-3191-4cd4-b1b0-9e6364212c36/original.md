@@ -4,6 +4,12 @@
 
 **SPP Document 204-B** governs **Construction Management (CM) Services** — a broader, more managerial form of construction oversight that goes beyond the on-site inspection duties of the Construction Supervision Group (CSG) under SPP 204-A. It is part of the 2010 Standards of Professional Practice (SPP), promulgated as the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004), and replaces the earlier **1979 UAP Doc. 204-B**.
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the scope of SPP Doc 204-B Construction Management Services — cost control, schedule management, contract administration, coordination of multiple contractors, value engineering, and project close-out — and distinguish CM from full-time supervision (CM manages the entire construction process including cost and schedule, not just quality and conformance); apply the percentage-of-construction-cost compensation.
+---
 Where SPP 204-A focuses on **on-site quality control and inspection**, SPP 204-B positions the Construction Manager (CM) as the **owner's primary point of accountability for the entire construction process** — covering programming, coordination of all parties, cost control, time management, and quality assurance from a project-wide management perspective. Construction Management Services arose in response to the increasing complexity of construction projects and the corresponding demand for more effective cost control and faster project implementation consistent with high quality of work.
 
 ***
@@ -261,3 +267,18 @@ The PM fee under SPP 206 is generally **2–5% of the Estimated Project Cost**, 
 - Engaging a CM under SPP 204-B is most valuable for **large, multi-phase, or multi-contractor projects** where the owner's in-house team lacks the capacity to coordinate all parties directly.
 - The CM fee is a **separate cost** from the architect's SPP 202 design fee and the CSG's SPP 204-A supervision fee — budget for all three independently.
 - Specify in the Owner-CM Agreement whether the CM will directly hire and pay the CSG, or whether the owner will hire the CSG separately with the CM providing technical oversight — the two arrangements have different billing and accountability implications.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: CM (204-B) vs Full-Time Supervision (204-A): CM manages COST and SCHEDULE in addition to quality. CM coordinates MULTIPLE prime contractors. CM produces (1) CPM schedule, (2) Cost reports, (3) Change order management, (4) Value engineering options. The key test point: CM has authority over budget, FTS does not.
+
+## Cross‑References
+
+**Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 207 Design Build Services**, **Spp Doc 205 Post Construction Services**
+

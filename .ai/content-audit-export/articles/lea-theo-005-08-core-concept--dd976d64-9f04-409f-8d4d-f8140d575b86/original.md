@@ -4,6 +4,14 @@
 Phenomenology redirects architectural attention from abstract form and function toward lived embodied experience, sensory perception, and the qualitative character of place. The LEA tests your understanding of phenomenological philosophy's application to architecture, particularly through Norberg-Schulz's concept of genius loci, Heidegger's "Building Dwelling Thinking," and contemporary practitioners like Peter Zumthor who design "atmospheres" rather than abstract forms.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define architectural phenomenology as the study of lived embodied experience, sensory perception, and the qualitative character of place.
+- Explain Norberg-Schulz's concept of genius loci (spirit of place) and Heidegger's "Building Dwelling Thinking."
+- Apply phenomenological principles to design: create "atmospheres" (Zumthor) that engage sensory perception rather than abstract form.
+
 ## Core Concept
 
 Phenomenology, derived from the philosophical tradition of Husserl, Heidegger, and Merleau-Ponty, emphasizes that human experience cannot be reduced to objective physical properties or abstract intellectual categories. Rather, consciousness emerges through the lived encounter between embodied subjects and their environments. In architecture, phenomenology insists that buildings are not solved by functionalist optimization or geometric beauty alone; buildings must be understood as environments in which humans dwell, perceive, move, and construct meaning through sensory and emotional engagement.
@@ -79,3 +87,10 @@ Phenomenological architecture has become increasingly influential in response to
 **Existential Authenticity** — Heidegger's concept that authentic human existence requires poetic engagement with Being rather than mere technical or functional adequacy; applied architecturally.
 
 **Embodied Perception** — Merleau-Ponty's philosophy that human perception is always already bodily, situated, and relational—rejecting both pure subjectivity and objective mechanism in favor of embodied intersubjectivity.
+
+## Related Articles
+
+See also within Architectural Philosophies: **lea-theo-005-01-core-concept**, **lea-theo-005-02-core-concept**, **lea-theo-005-04-core-concept**, **lea-theo-005-05-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

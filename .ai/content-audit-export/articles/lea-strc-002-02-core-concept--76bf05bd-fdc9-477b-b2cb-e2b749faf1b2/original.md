@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define a shear wall and explain its role in lateral load resistance
+- Distinguish shear walls from bearing walls and moment frames
+- Explain how shear walls transfer lateral loads to the foundation
+- Identify common shear wall locations in building plans
 
 Lateral force-resisting systems include shear walls, diaphragms, collectors, and boundary elements. Each component has a specific function in transferring seismic or wind forces from the floor to the foundation. Understanding their definitions and roles is essential for lateral design.
 
@@ -37,6 +44,13 @@ In Seismic Zone 2, shear wall systems are standard in mid-rise residential and o
 
 <Tip>**Memory aid:** Diaphragm **collects**, collectors **carry**, walls **resist**. Think of them as a team: hands → arms → feet.</Tip>
 
+
+## Related Articles
+
+See also: **Bearing Wall Systems** (lea-strc-002-01) for how shear walls work within a complete system, **Moment-Resisting Frames** (lea-strc-002-03) for an alternative to shear walls, and **Seismic Load** (lea-strc-004-03) for the lateral forces shear walls resist.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing diaphragm and shear wall—diaphragms are horizontal, shear walls are vertical","Assuming all diaphragms behave identically; flexible diaphragms distribute loads differently than rigid ones","Omitting collectors when shear wall layout is asymmetrical, causing force imbalance and torsion"]} />

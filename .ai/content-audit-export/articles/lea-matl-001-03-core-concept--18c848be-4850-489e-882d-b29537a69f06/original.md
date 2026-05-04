@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Carpentry and joinery form the backbone of timber construction. The LEA tests your understanding of wood joints, fastening methods, and structural timber connectors used in Philippine construction. Expect questions on joint classifications, load capacities, and practical applications in building systems.
-
+Classify wood joints (mortise-and-tenon, dovetail, lap, dado, rabbet, butt) by geometry, load capacity, and application, and identify correct fastening methods (nails, screws, bolts, adhesives) for each joint type in Philippine timber construction.
 ## Core Concept
 
 Wood connections transform separate timber pieces into integrated structural elements. Each joint type distributes stress differently and develops strength through geometry, friction, or mechanical fastening. Understanding joint behavior under tension, compression, and shear is essential for designing reliable timber structures.
@@ -85,7 +85,7 @@ Metal hangers suspend floor joists from beams or headers, transferring vertical 
 
 Philippine hardwoods—particularly narra, molave, and yakal—are prized for joinery due to their fine grain and workability. Narra accepts mortise-and-tenon joints cleanly and glues well, making it the traditional choice for door and window frames. Molave's density and hardness suit heavy structural connections in timber frames used in heritage buildings and naval vessels.
 
-High humidity and termite activity in the Philippines demand that all wood connections be selead with approved exterior finishes. Split ring and shear plate connectors must be installed with stainless steel or hot-dipped galvanized fasteners (ASTM A 153 Class D minimum) to prevent rust and wood deterioration.
+High humidity and termite activity in the Philippines demand that all wood connections be sealed with approved exterior finishes. Split ring and shear plate connectors must be installed with stainless steel or hot-dipped galvanized fasteners (ASTM A 153 Class D minimum) to prevent rust and wood deterioration.
 
 NSCP 2015 Sections 601—623 govern timber design and connections. The standard references NFPA Load and Resistance Factor Design (LRFD) equations and allowable stress design (ASD) approaches for computing connection capacity. Load factors and resistance reduction factors account for variability in wood species, moisture, and duration of load.
 
@@ -120,3 +120,10 @@ Typical questions present a building detail with a wood connection and ask wheth
     "Confusing lag bolt capacity with machine bolt capacity: Lag bolts depend on wood bearing and thread engagement (lower capacity); machine bolts develop bearing and shear (higher capacity).",
     "Neglecting to account for load angle: A diagonal load on a bolted connection may produce components that exceed allowable tension or shear in the wood perpendicular to grain (much weaker than parallel-to-grain)."
   ]} />
+
+## Related Articles
+
+See also within Wood and Timber Products: **lea-matl-001-04-core-concept**, **lea-matl-001-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

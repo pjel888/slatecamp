@@ -2,6 +2,10 @@
 
 Circulation design organizes movement through buildings using hierarchies of pathways — primary (main routes), secondary (distribution), and service (utilities, staff, goods). Effective circulation patterns minimize travel distance, clarify wayfinding, and support efficient operations while maintaining required dimensions specific to the occupancy.
 
+## Learning Goal
+
+Design and evaluate building circulation hierarchies (primary, secondary, service), verify corridor widths per PD 1096 and occupancy type, analyze dead-end corridor compliance per RA 9514 IRR, and apply Philippine tropical climate considerations to circulation planning.
+
 ---
 
 ## Core Concept
@@ -74,6 +78,10 @@ Given a floor plan, you locate dead-end corridors and determine if they exceed t
 > <Tip>**Circulation Anchor**: Think in hierarchy — Primary (widest, wayfinding spine), Secondary (distribution), Service (back-of-house). Corridor widths follow PD 1096 and occupancy, not a single universal number. Dead-ends are controlled by RA 9514 IRR; always check the specific occupancy and sprinkler condition, not just a memorized value.</Tip>
 
 ---
+
+## Cross-References
+
+See **LEA-DSGN-007-05** (Design Principles) for compositional foundations, **LEA-DSGN-007-09** (Building Systems) for system coordination, and **LEA-DSGN-007-10** (Code Compliance) for regulatory integration.
 
 ## Common Mistakes
 

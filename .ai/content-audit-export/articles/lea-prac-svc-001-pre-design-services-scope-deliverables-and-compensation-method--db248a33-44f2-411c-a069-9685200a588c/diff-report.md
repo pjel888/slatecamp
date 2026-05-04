@@ -1,32 +1,34 @@
 # Content Diff Report: lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method
 
-Generated: 2026-05-03T13:45:08.097Z
+Generated: 2026-05-04T00:06:46.336Z
 Article ID: db248a33-44f2-411c-a069-9685200a588c
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:4cc481bf118133ca6b3d942995742493db2d340c12f66356d568530a4d68c032`
-- Normalized: `sha256:7f8898d072839e0a988d54f3e047617fa2683e6bb88bc1926f256887d5036ca3`
-- Candidate: `sha256:af0ca22ef56e7a3d50d0534477f95679de7e7f378ca42575cdc21ee56c255edb`
+- Original: `sha256:daa221faa9183934e009edd7ba9381d64028c1d65995341654a43b4ab0fa3178`
+- Normalized: `sha256:ad25b7ec24780643454bf4c3a6c9f168729395b1f4bde2a5057e4314a0d88f89`
+- Candidate: `sha256:ad25b7ec24780643454bf4c3a6c9f168729395b1f4bde2a5057e4314a0d88f89`
 
 ## Line summary
 
-- Changed lines: 49
-- Inserted lines: 38
-- Deleted lines: 0
+- Changed lines: 39
+- Inserted lines: 0
+- Deleted lines: 5
 
 ## UI block preservation
 
 - UI blocks expected: 6
-- UI blocks preserved: 6
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 6
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 6 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

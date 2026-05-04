@@ -1,19 +1,27 @@
 {
-  "attempted_at": "2026-05-03T14:01:18.468Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:05:51.186Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "fe7216ee-46ed-41b3-88ef-accb3f912a4c",
   "slug": "inca-architecture-ashlar-masonry",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:ff94328b7d3eca923d08b87f370fee0357b37476edc201e2cd6edce7b7b73a28",
-  "original_hash": "sha256:8b8c3356eca5d20e5bdd0349a34db13c46fef2e2237e0bd635176b755e692a00",
-  "candidate_hash": "sha256:ff94328b7d3eca923d08b87f370fee0357b37476edc201e2cd6edce7b7b73a28",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:7491bd2465a77baac58208e33fd66df6fedff7ea23feae9e92600a6f4f72c97e",
+  "original_hash": "sha256:ff94328b7d3eca923d08b87f370fee0357b37476edc201e2cd6edce7b7b73a28",
+  "candidate_hash": "sha256:4b125837b19a3725815440be01dab47e4e2b4dfb3313211b75ed4ba7925d8ee3",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:49:42.230488+00:00"
+  "remote_updated_at_before": "2026-05-03T15:36:07.518632+00:00"
 }

@@ -1,4 +1,6 @@
 ## Scope of Practice: What Architecture Covers and What It Does Not
+## Learning Goal
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 ### The Comprehensive Definition of Architectural Scope
 
@@ -48,7 +50,7 @@ The seventh category includes planning, architectural lay-outing, and utilizatio
 
 This recognizes that the built environment encompasses far more than exterior form. Architectural interiors cover spatial organization, material selections, lighting design, acoustic performance, and integration of building systems into finished spaces. Lighting design ensures both function and ambiance; acoustic design ensures speech intelligibility, noise isolation, and reverberation control. Equipment and fixture coordination ensures that HVAC, electrical, plumbing, and communications systems are integrated rather than conflicting.
 
-Housing design and community architecture extend architectural scope to residential development and neighborhood-sclea planning. These emerging practice areas reflect growing demand for sustainable, livable, equitable communities rather than isolated buildings.
+Housing design and community architecture extend architectural scope to residential development and neighborhood-scale planning. These emerging practice areas reflect growing demand for sustainable, livable, equitable communities rather than isolated buildings.
 
 ### Building Programming, Arbitration, and Conservation
 
@@ -82,7 +84,7 @@ These roles may be held by the same person or different persons. When different,
 
 ### Service Agreements and Scope Definition
 
-RA 9266 defines a service agreement as a duly notarized written contract or equivleant public instrument stipulating the scope of services and guaranteeing compensation of services to be rendered by a registered and licensed architect. The statute thus requires that architectural scope, in each engagement, be explicitly defined by written agreement.
+RA 9266 defines a service agreement as a duly notarized written contract or equivalent public instrument stipulating the scope of services and guaranteeing compensation of services to be rendered by a registered and licensed architect. The statute thus requires that architectural scope, in each engagement, be explicitly defined by written agreement.
 
 Service agreements must explicitly define the scope of services per RA 9266 Section 3. Architects are accountable to their contractual undertakings; violation may result in civil liability and disciplinary action by the PRBoA. This standard encourages clear contracting and holds architects accountable to their undertakings.
 
@@ -97,3 +99,31 @@ Architects coordinate all these domains but do not perform them. This creates in
 The PRBoA's power under Section 7(f) to "monitor the conditions affecting the practice of architecture and adopt such measures as may be deemed proper for the enhancement and maintenance of high professional, ethical and technical standards" provides flexibility to evolve scope interpretation as practice develops.
 
 Thus, new service categories—sustainable design certification, resilience planning, heritage documentation, digital fabrication coordination—can be recognized as falling within architectural scope without statutory amendment, provided the PRBoA determines they require architectural competence and warrant professional accountability.
+
+<LawCallout code="ra9266" section="Section 3 - Definition of Terms">
+Legal Basis: RA 9266 (Architecture Act of 2004), Section 3, which enumerates ten (10) categories of architectural service from planning and design through emerging practices and specialized services.
+</LawCallout>
+
+
+<Tip />
+
+
+<LawCallout code="ra9266" section="Section 3 - Scope of Practice">
+Common exam trap: confusing 'structural conceptualization' (architect scope — conceiving structural elements and their arrangement) with 'structural design documents' (engineer scope — calculations and signed/sealed structural plans). Architects lead structural thinking; engineers own structural accountability.
+</LawCallout>
+
+
+<ExamTip />
+
+---
+
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)

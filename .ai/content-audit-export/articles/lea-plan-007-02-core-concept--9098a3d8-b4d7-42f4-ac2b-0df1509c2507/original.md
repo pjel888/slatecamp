@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Distinguish DHSUD's regulatory and policy-formulating role (permit issuance, plan approval, complaint adjudication) from production agencies, identify RA 11201 as its enabling law, and describe the HLURB-to-DHSUD transition.
+
 **DHSUD** (Department of Human Settlements and Urban Development, created by RA 11201 in 2019) is the regulatory and policy authority for housing and urban development. It absorbed the functions of the former HLURB (Housing and Land Use Regulatory Board, 1987–2019) and the coordination role of HUDCC (Housing and Urban Development Coordinating Council). HLURB is now dissolved; DHSUD is the current agency.
+
 
 ## Core Concept
 
@@ -31,6 +35,13 @@ DHSUD is headquartered in Quezon City and maintains regional offices in each reg
 3. **CLUP process:** "Who prepares the CLUP?" → LGU. "Who approves the CLUP?" → DHSUD.
 
 <Tip>**Memory aid:** DHSUD = regulatory (oversees, approves). Does NOT: build, finance, zone, enforce locally. That belongs to NHA, Pag-IBIG, and LGUs.</Tip>
+
+
+**Exam Tip:** DHSUD (RA 11201, 2019) is NOT HLURB — it's a full department (cabinet-level). HLURB was a regulatory board. DHSUD absorbed HLURB + HUDCC + parts of NHA/HGC coordination. Know the date and the transition.
+
+## Cross-References
+
+See **LEA-PLAN-007-01** (NHA) for producer vs. regulator distinction, **LEA-PLAN-001-05** (CLUP Process) for DHSUD CLUP review role, and **LEA-PLAN-007-04** (HUDCC) for pre-DHSUD coordination history.
 
 ## Common Mistakes
 

@@ -7,6 +7,9 @@ Calculate residential electrical loads using the PEC optional method (Section 2.
 
 ### Step-by-Step Calculation
 
+<ArticleMedia id="media-lea-util-003-07-residential-load-computa" a type="image" caption="Residential Load Calculation Workflow — Connected Load to Service Size" description="Step-by-step workflow diagram: Lighting (2 VA/sqm × area) + Small appliance circuits (3 × 1500 VA) + Laundry (1500 VA) + Fixed appliances → Total Connected Load → Apply demand factor (first 10,000 VA at 100%, remainder at 40% per PEC 220.42) → Demand Load → Service current calculation at 220V → Wire size and main breaker selection. Example 12,300 VA house yielding 10.92 kW demand shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 **Step 1: Calculate Connected Load**
 Sum all permanently installed equipment:
 - Lighting: floor area (sqm) × 2 VA/sqm (minimum, PEC 210.11(B))
@@ -44,15 +47,11 @@ Applying demand factor:
 - **Demand Load: 10,920 VA = 10.92 kW**
 
 Current (single phase, 220V, assuming unity PF):
-<Callout>
-**I = P / (V × PF) = 10,920 / (220 × 1.0) = 49.6 A**
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
 
 Wire size: Use 14 AWG (minimum 2.5 mm²) for branch circuits under 20 A; main service requires 35–50 A capacity depending on entrance type (per PEC 230.79 and Meralco regulations).
 
-<Note>
-The demand factor of 40% for the remainder reflects actual usage patterns: kitchens, heating, and entertainment equipment do not all operate at rated capacity simultaneously.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
 
 ---
 
@@ -97,43 +96,30 @@ Applying commercial demand factor (85% conservative estimate):
 - Demand Load = 39,500 × 0.85 = 33,575 VA = 33.575 kW
 
 Current (three phase, 380V, 0.85 PF typical for commercial):
-<Callout>
-**P = √3 × V × I × PF**
-**I = P / (√3 × V × PF) = 33,575 / (1.732 × 380 × 0.85) = 33,575 / 559.7 = 59.99 A ≈ 60 A**
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
 
 Three-phase service requires 60 A capacity; wire minimum 4 mm² copper per phase (PEC 230.79 and Meralco standard).
 
-<Tip>
-For three-phase loads, use √3 = 1.732. Power factor (PF) is typically 0.85–0.90 for commercial buildings due to motor and ballast loads.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
 
 ---
 
 ## Key Formulas & Conventions
 
 ### Single-Phase Power & Current
-<Callout>
-**P = V × I (watts)**
-**I = P / (V × PF) (amperes)**
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
 
 Example: 220V single phase, 5 kW load, PF = 0.95:
 - I = 5,000 / (220 × 0.95) = 5,000 / 209 = 23.9 A
 
 ### Three-Phase Power & Current
-<Callout>
-**P = √3 × V × I × PF (watts)**
-**I = P / (√3 × V × PF) (amperes)**
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0008 component="Callout" status="preserved"]
 
 Example: 380V three phase, 15 kW load, PF = 0.90:
 - I = 15,000 / (1.732 × 380 × 0.90) = 15,000 / 591.4 = 25.4 A per phase
 
 ### Motor Load Demand (PEC 430.24)
-<Callout>
-**Motor Demand = 1.25 × (Largest Motor) + 1.0 × (All Others)**
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0009 component="Callout" status="preserved"]
 
 If feeder supplies motors rated 5 kW, 3 kW, and 2 kW:
 - Motor demand = 1.25 × 5 + 1.0 × (3 + 2) = 6.25 + 5 = 11.25 kW
@@ -148,9 +134,7 @@ Sometimes an electrician knows the maximum available supply current and must siz
 
 **Find:** Maximum allowable demand load
 
-<Callout>
-**P = √3 × V × I × PF = 1.732 × 380 × 60 × 0.90 = 35,846 W = 35.85 kW**
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0010 component="Callout" status="preserved"]
 
 This means the building's demand load cannot exceed 35.85 kW without exceeding supply capacity or requiring service upgrade.
 
@@ -158,21 +142,17 @@ This means the building's demand load cannot exceed 35.85 kW without exceeding s
 
 ## Load Computation Verification Checklist
 
-<WikiExamTable headers={["Verification Point", "Standard Reference", "Check"]} rows={[["Lighting load minimum", "PEC 210.11(B)", "2 VA/sqm residential, per occupancy commercial"], ["Receptacle load", "Meralco + PEC 220.14", "180 VA per outlet, first outlet counted"], ["Demand factor applied", "PEC 220.42 or 220.43", "Residential 40% above 10 kVA, commercial per schedule"], ["Motor sizing", "PEC 430.24", "125% largest + 100% others"], ["Service entrance wire", "PEC 230.79 + Meralco", "Min 3.5 mm² (12 AWG) branch, 4 mm² (10 AWG) main"], ["Power factor assumption", "Meralco rates", "0.95 residential, 0.85–0.90 commercial"], ["Three-phase multiplier", "IEEE 141 / PEC", "√3 = 1.732 used consistently"]]} />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiExamTable" status="preserved"]
 
 ---
 
-<Callout>
-**Demand Factor = Maximum Demand / Total Connected Load**
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 
-<Callout>
-**Diversity Factor = Sum of Individual Maximum Demands / Maximum System Demand**
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
 
 ## Common Mistakes & Corrections
 
-<WikiMistakeList mistakes={[{"mistake": "Using connected load as demand load without applying demand factor", "correction": "Always apply PEC demand factors: residential 40% for amount over 10 kVA, commercial per schedule"}, {"mistake": "Forgetting to multiply three-phase current by √3", "correction": "Three-phase formula: I = P / (√3 × V × PF). Single phase: I = P / (V × PF)"}, {"mistake": "Assuming all receptacles count as 180 VA each", "correction": "Meralco practice counts only the first outlet; additional outlets in same room may share load allocation"}, {"mistake": "Not applying 125% multiplier to largest motor in feeder circuit", "correction": "PEC 430.24 requires 1.25 × largest motor + 1.0 × all others for feeder demand"}, {"mistake": "Using power factor of 1.0 for commercial calculations", "correction": "Commercial PF typically 0.85–0.90 due to motors, transformers, and ballasts. Use 0.95 minimum for residential"}]} />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeList" status="preserved"]
 
 ---
 
@@ -191,9 +171,7 @@ Meralco (Manila Electric Company) defines standard appliance loads for billing c
 | Electric fan | 100 VA |
 | Three-phase motor (per 0.75 kW) | 750 W nameplate |
 
-<Warn>
-Meralco demand charges apply monthly based on the highest 15-minute average power draw recorded. Load computation directly affects your utility bill and service plan classification.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0013 component="Warn" status="preserved"]
 
 ---
 

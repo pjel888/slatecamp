@@ -1,38 +1,54 @@
 {
   "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
   "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
-  "generated_at": "2026-05-03T13:44:58.541Z",
-  "old_hash": "sha256:abae3e259fcf47d728d1f8910b7e0a9bf43d14f77699a6737ac090129ed3438e",
-  "new_hash": "sha256:a96b46825e4d0725957fa0e3716bb5cd559c7edf2045da7ff1055fd9e19c5d6e",
-  "original_hash": "sha256:abae3e259fcf47d728d1f8910b7e0a9bf43d14f77699a6737ac090129ed3438e",
-  "normalized_hash": "sha256:1e294c5327bea55dc16c3335f7470d00cafef0d989205df53c16d0d76d0c3cbb",
-  "candidate_hash": "sha256:a96b46825e4d0725957fa0e3716bb5cd559c7edf2045da7ff1055fd9e19c5d6e",
+  "generated_at": "2026-05-04T00:06:35.940Z",
+  "old_hash": "sha256:a96b46825e4d0725957fa0e3716bb5cd559c7edf2045da7ff1055fd9e19c5d6e",
+  "new_hash": "sha256:07e1730f6f7786ab669d8197471669253eb77826694564266e910f1c2d2dee81",
+  "original_hash": "sha256:a96b46825e4d0725957fa0e3716bb5cd559c7edf2045da7ff1055fd9e19c5d6e",
+  "normalized_hash": "sha256:07e1730f6f7786ab669d8197471669253eb77826694564266e910f1c2d2dee81",
+  "candidate_hash": "sha256:07e1730f6f7786ab669d8197471669253eb77826694564266e910f1c2d2dee81",
   "changed": true,
-  "changed_line_count": 161,
-  "inserted_line_count": 112,
-  "deleted_line_count": 0,
+  "changed_line_count": 98,
+  "inserted_line_count": 0,
+  "deleted_line_count": 13,
   "ui_blocks_original_count": 12,
-  "ui_blocks_candidate_count": 12,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 12,
   "ui_blocks_count": 12,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 12,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 161,
-    "inserted": 112,
-    "deleted": 0,
-    "original_line_count": 59,
-    "candidate_line_count": 171
+    "changed": 98,
+    "inserted": 0,
+    "deleted": 13,
+    "original_line_count": 171,
+    "candidate_line_count": 158
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007",
+      "ui_0008",
+      "ui_0009",
+      "ui_0010",
+      "ui_0011",
+      "ui_0012"
+    ],
+    "changed_count": 12
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 12 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 12 preserved UI block(s)."
 }

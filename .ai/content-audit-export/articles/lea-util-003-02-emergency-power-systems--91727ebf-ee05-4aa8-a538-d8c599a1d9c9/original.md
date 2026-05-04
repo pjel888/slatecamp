@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Emergency and alternative power systems are essential infrastructure components that maintain building operations during utility failures and reduce grid dependency. In the Philippines, where power interruptions and voltage fluctuations from Meralco are common, these systems directly impact building safety, occupant protection, and business continuity.
+## Learning Goal
 
+Design emergency and standby power systems — generator sizing based on life-safety loads, automatic transfer switch (ATS) requirements, fuel storage, and PEC rules for emergency circuits — for Philippine buildings as required by PD 1096 and RA 9514.
 ## Emergency Power Systems
 
 Emergency power systems provide backup electricity when the primary utility source fails. They maintain critical functions including fire protection, life safety, egress lighting, and emergency communications.
@@ -11,6 +12,19 @@ Emergency power systems provide backup electricity when the primary utility sour
 Diesel generators are the primary emergency power source in the Philippines due to reliable fuel availability and operational efficiency. Key design considerations include:
 
 **Generator Sizing:**
+
+
+<KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 Emergency generators must be sized to support the emergency load, defined as the total connected load of circuits designated for emergency operation. This includes fire pumps, emergency elevators, exit lighting, emergency communications, and life safety equipment. The PEC requires that generator capacity must not be less than the sum of the rated loads of all equipment that must operate during an outage (PEC Article 700.4).
 
 **Transfer Time:**
@@ -131,3 +145,10 @@ Documentation of all tests must be retained for at least 3 years and provided to
 5. Separate raceways and selective coordination ensure emergency circuits remain isolated from normal power in Meralco outages
 6. Monthly generator exercise and quarterly load bank testing verify system readiness per NFPA 110
 7. Power quality issues from Meralco fluctuations (±5-10% voltage variation) require voltage stabilization and harmonic filtering
+
+## Related Articles
+
+See also within Electrical Systems: **lea-util-003-03-core-concept**, **lea-util-003-04-core-concept**, **lea-util-003-05-core-concept**, **lea-util-003-06-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

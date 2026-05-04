@@ -4,6 +4,8 @@
 
 Building Condition Assessment, Adaptive Reuse, and Heritage Conservation represent specialized architectural services that address unique project types. These services fall within the broader framework of Comprehensive Architectural Services and require distinctive expertise beyond standard new construction design.
 
+<ArticleMedia type="feasibility-workflow" caption="Building Condition Assessment and Heritage Conservation Workflow" description="Process flow showing the assessment-to-occupancy workflow for existing buildings: building condition assessment (documentation→deficiency identification→structural analysis→systems assessment) → adaptive reuse feasibility → heritage conservation planning → schematic design → regulatory compliance → implementation. Based on SPP 203 specialized services." />
+
 ### Building Condition Assessment
 
 Building Condition Assessment evaluates the physical state of existing structures. This service includes systematic documentation of building components, identification of deficiencies, analysis of structural integrity, and assessment of mechanical and electrical systems. Architects conducting these assessments develop detailed reports on maintenance requirements, code compliance issues, and safety concerns.

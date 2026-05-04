@@ -18,10 +18,6 @@ Final Completion occurs when all remaining work is finished, including punch lis
 The distinction between substantial and final completion is critical for understanding liability exposure. Once Substantial Completion is certified, the contractor's obligation to maintain the site and continue performance under some contract provisions shifts to the owner. However, the contractor remains liable for punch list work until Final Completion. The architect must distinguish these milestones clearly in all certifications to avoid ambiguity and subsequent disputes.
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=ra9266, section=UAP Doc 301 §30-33, title=Substantial Completion vs. Final Completion
-- Text: Substantial Completion: Work sufficiently complete for owner occupancy despite minor punch list items. Contractor's liability for liquidated damages ends. Owner assumes responsibility. Architect issue...
-[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -57,36 +53,20 @@ Final Completion occurs after all punch list items are done. The contractor's ob
 **Question Pattern 5:** Punch list scope—What types of work items constitute appropriate punch list items? (Tests distinction between minor work and substantial items requiring further completion before substantial certification)
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=ra9266, section=UAP Doc 301 §30-33, title=Punch List — Contractor
-- Text: The punch list is a formal contract document created by the architect at Substantial Completion inspection. It itemizes outstanding work items that must be completed before Final Completion. The contr...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Key Punch List Rules:**
-  1. Created by architect at Substantial Completion inspection
-  2. Minor items only (not substantial defects suggesting premature certification)
-  3. Contract — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Remember: Substantial = owner can occupy and use; Final = all work done and guarantee period clock starts running from substantial completion date, not final completion. The architect's certificate establishes the date. Substantial comes first chronologically; Final comes later.
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes=true, Assuming=true, Substantial=true, Completion=true, and=true, Final=true, are=true, the=true, same=true, milestone=true, They=true, distinct=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Project Completion Timeline — Substantial vs. Final Completion Milestones" description="Timeline diagram showing the construction close-out sequence: Contract Completion Date → Architect's Inspection → Substantial Completion (owner can occupy, liquidated damages stop, punch list created) → Punch List Correction Period → Final Inspection → Final Completion (Certificate issued, Guarantee Bond period begins). Annotated with architect's certification responsibilities at each milestone." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

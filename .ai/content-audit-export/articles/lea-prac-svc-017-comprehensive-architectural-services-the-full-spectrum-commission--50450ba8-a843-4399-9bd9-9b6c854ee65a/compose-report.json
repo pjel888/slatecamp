@@ -1,18 +1,30 @@
 {
   "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
   "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
-  "generated_at": "2026-05-03T13:44:10.598Z",
-  "original_hash": "sha256:18b97b4b0e80d1460186d8730484faad5433e098d38a2ef374e5d6c12504266b",
-  "normalized_hash": "sha256:ef79ffbd51e20ee073388feacb3e721a485b087b4d3066ddd1122c8129442323",
-  "candidate_hash": "sha256:93c9ce2d213c201320a57ca3a6d2fdc09154195c70abbec8580977dd91108069",
+  "generated_at": "2026-05-04T00:05:37.739Z",
+  "original_hash": "sha256:b17a98d136bac87117948b0e81ce536204c4622bbc1b2557e52dff974aba65d0",
+  "normalized_hash": "sha256:7ec5857c39e67fd4c4c9b42cd478b90067ea0c4d65030bebb67c24715a1f6802",
+  "candidate_hash": "sha256:7ec5857c39e67fd4c4c9b42cd478b90067ea0c4d65030bebb67c24715a1f6802",
   "ui_blocks_count": 5,
-  "placeholders_found": 5,
-  "placeholders_resolved": 5,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 5,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0005",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

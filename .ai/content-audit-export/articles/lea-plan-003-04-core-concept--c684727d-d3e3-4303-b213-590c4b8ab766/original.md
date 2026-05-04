@@ -1,12 +1,16 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Distinguish housing production methods — sites-and-services, core housing, medium-rise, self-help — by implementing agency (primarily NHA), target beneficiary, and delivery model, and match production method to settlement context.
+
 Housing production methods in the Philippines range from government-built sites-and-services schemes to private core housing and self-help approaches. Understanding how **sites-and-services**, **core housing**, **medium-rise development**, and **self-help** models work—and which agency (primarily **NHA**) implements them—is essential for housing delivery questions.
+
 
 ## Core Concept
 
 Housing production methods describe HOW housing is delivered to beneficiaries, as distinct from WHO finances it. The Philippines employs five primary delivery models:
 
-**Sites-and-Services** is the lowest-cost model: the government (through NHA) acquires and develops land, installs basic infrastructure (water, electricity, roads, drainage), and provides individual plots to families. Beneficiaries then build their own structures incrementally. This method maximizes affordability by separating land preparation from construction, allowing families to self-finance the building phase at their own pace. Sites-and-services projects are particularly prevleant in Metro Manila and provincial expansion areas.
+**Sites-and-Services** is the lowest-cost model: the government (through NHA) acquires and develops land, installs basic infrastructure (water, electricity, roads, drainage), and provides individual plots to families. Beneficiaries then build their own structures incrementally. This method maximizes affordability by separating land preparation from construction, allowing families to self-finance the building phase at their own pace. Sites-and-services projects are particularly prevalent in Metro Manila and provincial expansion areas.
 
 **Core Housing** (or incremental housing) provides families with a pre-built basic unit—typically a 1–2 room shell with a roof, walls, flooring, and basic utilities (water, electricity connections). The family owns the core and may expand vertically or horizontally over time. Core housing accelerates occupancy compared to bare sites, while still allowing owner-driven expansion. This model balances government investment with family autonomy.
 
@@ -26,7 +30,7 @@ These methods are not mutually exclusive; integrated housing projects often comb
 
 ## Philippine Context
 
-The Philippines' housing shortage (estimated at 5+ million units as of 2020s) has driven adoption of all five production methods simultaneously. NHA's sites-and-services and medium-rise programs serve the urban poor in Metro Manila and provincial centers. Community Mortgage Program (SHFC) has become synonymous with in-situ upgrading, keeping informal communities anchored in place rather than displacing them to distant relocation sites. Private developers under PD 957 and RA 10884 are regulated to contribute to the socialized housing supply. This multi-method approach reflects the recognition that no single delivery model can address the sclea of the shortage alone.
+The Philippines' housing shortage (estimated at 5+ million units as of 2020s) has driven adoption of all five production methods simultaneously. NHA's sites-and-services and medium-rise programs serve the urban poor in Metro Manila and provincial centers. Community Mortgage Program (SHFC) has become synonymous with in-situ upgrading, keeping informal communities anchored in place rather than displacing them to distant relocation sites. Private developers under PD 957 and RA 10884 are regulated to contribute to the socialized housing supply. This multi-method approach reflects the recognition that no single delivery model can address the scale of the shortage alone.
 
 ## How It's Tested
 
@@ -37,6 +41,13 @@ The Philippines' housing shortage (estimated at 5+ million units as of 2020s) ha
 **Pattern 3 — Trade-off Analysis:** "Sites-and-services maximizes affordability by shifting construction cost to families. What is the primary disadvantage?" → Extended timeline; occupancy delays; governance risks if materials unavailable. "Medium-rise maximizes density and immediate occupancy. What is the primary constraint?" → Higher upfront government capital; smaller unit sizes.
 
 <Tip>NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15–20% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).</Tip>
+
+
+**Exam Tip:** Sites-and-services = serviced lot + core house (NHA). Core housing = expandable starter unit (NHA). Medium-rise = walk-up 4-5 story (NHA). Self-help = sweat equity (community). Match method to description.
+
+## Cross-References
+
+See **LEA-PLAN-003-06** (Informal Settlements) for upgrading context, **LEA-PLAN-007-01** (NHA) for NHA production programs, and **LEA-PLAN-003-02** (Housing Classifications) for target market definition.
 
 ## Common Mistakes
 

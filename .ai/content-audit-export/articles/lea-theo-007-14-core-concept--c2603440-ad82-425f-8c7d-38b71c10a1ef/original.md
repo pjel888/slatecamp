@@ -3,13 +3,21 @@
 Adaptive reuse preserves existing buildings by converting them to new functions, addressing sustainability (avoiding demolition and new construction), heritage conservation, and urban revitalization simultaneously. The LEA tests your understanding that reuse is not merely aesthetics or nostalgic preservation but a **strategic design and material practice** embedded in embodied energy preservation and typological transformation. You must master the theoretical distinction between reuse and conservation, understand life-cycle benefits, and recognize Philippine examples.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define vernacular architecture as buildings designed and built by communities without formally trained architects, evolving through generations of experiential learning.
+- Explain Bernard Rudofsky's framework (Architecture Without Architects) that challenged the Western architectural canon.
+- Distinguish vernacular architecture from "primitive" stereotypes: vernacular represents sophisticated, rational responses to environmental and cultural constraints.
+
 ## Core Concept
 
 Adaptive reuse is the transformation of existing buildings to new uses, functions, or programs. The building envelope, structure, and primary spatial systems are retained; interiors, systems, and sometimes fenestration are modified to suit new uses.
 
 Adaptive reuse addresses three intersecting concerns:
 
-1. **Environmental Sustainability**: A building's embodied carbon—energy consumed in materials extraction, manufacturing, and construction—is substantial; preserving this embodied investment rather than demolishing and rebuilding captures enormous carbon savings. A typical office building contains 1,000–2,000 tons of embodied carbon (CO2 equivleant). Constructing a replacement, even a highly efficient one, generates similar carbon. Preserving the structure preserves this embedded investment.
+1. **Environmental Sustainability**: A building's embodied carbon—energy consumed in materials extraction, manufacturing, and construction—is substantial; preserving this embodied investment rather than demolishing and rebuilding captures enormous carbon savings. A typical office building contains 1,000–2,000 tons of embodied carbon (CO2 equivalent). Constructing a replacement, even a highly efficient one, generates similar carbon. Preserving the structure preserves this embedded investment.
 
 2. **Heritage Conservation**: Buildings carry cultural, historical, and architectural significance beyond functional utility. Preservation maintains these meanings while adapting buildings to contemporary uses and occupancy.
 
@@ -51,7 +59,7 @@ Typological compatibility matters enormously. A warehouse with large open spans 
 
 Examples of typological transformations:
 
-**Industrial to Residential/Creative**: Factory buildings (large open spans, sturdy structure, robust mechanical systems, often in walkable urban neighborhoods) are ideal candidates for conversion to lofts, apartments, artist studios, or tech offices. Adaptive reuse retains the open-plan flexibility of industrial architecture while adding residential comfort systems. The Meatpacking District (Manhattan) and Brooklyn's DUMBO exemplify this—warehouses adapted to upsclea residential and creative uses.
+**Industrial to Residential/Creative**: Factory buildings (large open spans, sturdy structure, robust mechanical systems, often in walkable urban neighborhoods) are ideal candidates for conversion to lofts, apartments, artist studios, or tech offices. Adaptive reuse retains the open-plan flexibility of industrial architecture while adding residential comfort systems. The Meatpacking District (Manhattan) and Brooklyn's DUMBO exemplify this—warehouses adapted to upscale residential and creative uses.
 
 **Religious to Cultural**: Church buildings (public gathering spaces, often architecturally significant, located centrally) convert to museums, performance spaces, art galleries, or cultural centers. The vocabulary—procession, gathering, focal point, spatial drama—transfers directly. Sacred functions are replaced by cultural functions requiring similar spatial typologies.
 
@@ -160,3 +168,10 @@ The gentrification risk is real. Adaptive reuse in deteriorated neighborhoods of
 **Alternative Means of Compliance** — Building code provisions allowing non-traditional solutions meeting code objectives; relevant for heritage building retrofits.
 
 **Secondary Systems** — Mechanical, electrical, plumbing systems upgraded or added to adapt building to new functions; typically replaced rather than preserving original systems.
+
+## Related Articles
+
+See also within Contemporary Movements & Discourse: **lea-theo-007-01-core-concept**, **lea-theo-007-02-core-concept**, **lea-theo-007-09-core-concept**, **lea-theo-007-10-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

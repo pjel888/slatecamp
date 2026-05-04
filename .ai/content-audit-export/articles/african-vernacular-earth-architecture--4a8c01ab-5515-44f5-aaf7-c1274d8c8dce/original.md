@@ -1,10 +1,21 @@
 # African Vernacular Earth Architecture
+## Learning Goal
+After reading this article, you should be able to:
+
+Identify the five major African vernacular earth construction traditions — adobe (southwest), rammed earth (North Africa), wattle-and-daub (sub-Saharan), mud brick (Sahel), and compressed earth block (modern adaptation) — by region, technique, and climatic response; recognize key examples (Great Mosque of Djenné, Kasbah of Aït Benhaddou, Dogon cliff dwellings) by their earth architecture typology.
 
 ## The Real-World Scenario (The Hook)
 
 You are tasked with designing a low-cost, climate-responsive eco-resort in a typhoon-prone coastal barangay in the Visayas. The client demands locally sourced materials, passive cooling, and seismic resilience — without relying on imported steel framing. The earth-building traditions of the West African Sahel and the dry-stone masonry of Great Zimbabwe offer time-tested principles for thermal mass, natural ventilation, and flexible structural systems that translate directly to Philippine conditions.
 
 ## Core Concepts and Memory Aid
+
+<Tip>
+
+**Memory Aid — "D-S-E = Dry, Stabilized, Engineered."** Three key facts about African earth architecture: Dry-stone (Great Zimbabwe uses no mortar — gravity and friction hold it together), Stabilized earth (modern CSEB blocks can meet Philippine building codes), Engineered solutions (Sudano-Sahelian mosques have tapering walls, toron ventilation, and annual maintenance programs — sophisticated, not primitive).
+
+</Tip>
+
 
 **Memory Aid — "E-M-Z" (Earth, Mali, Zimbabwe)**
 
@@ -15,6 +26,13 @@ Think: *"Easy Materials Zone"* — all three systems prioritize local materials 
 - **Great Zimbabwe:** A monumental dry-stone complex built by ancestors of the Shona people between the 11th and 15th centuries CE. Walls constructed from precisely shaped granite blocks without mortar, relying on gravity, friction, and curved geometry for structural stability. The curvilinear walls flex under seismic loads rather than cracking — a principle directly relevant to earthquake-prone regions.
 
 **Philippine Link:** Earth = thermal mass against tropical heat; Mali = passive ventilation and community-based maintenance; Zimbabwe = seismic flexibility without mortar dependence.
+
+<Example>
+
+**Philippine Application:** A rammed-earth wall at a Batangas eco-resort uses the same thermal mass principle as a Sahelian adobe mosque — thick earthen walls absorb daytime heat and release it at night, reducing air-conditioning load by up to 40%. The wall is stabilized with 8% cement (CSEB technique), meeting NSCP compressive strength requirements while maintaining the vernacular aesthetic.
+
+</Example>
+
 
 ## The Hard Data (Cheat Sheet)
 
@@ -27,9 +45,23 @@ Think: *"Easy Materials Zone"* — all three systems prioritize local materials 
 
 ## LEA Exam Traps and Common Mistakes
 
+<ExamTip>
+
+**LEA Exam Pattern — Colonial Attribution Trap:** The most frequently tested misconception about Great Zimbabwe is that it was built by Phoenicians, Europeans, or other non-African colonizers. This was a deliberate racist discredited claim from the colonial era. Modern archaeology confirms Bantu/Shona construction. Any exam answer suggesting external builders is automatically wrong.
+
+</ExamTip>
+
+
 - **Colonial attribution fallacy:** A persistent discredited claim held that Great Zimbabwe was built by foreign (European or Phoenician) colonizers. Radiocarbon dating and archaeological consensus since the 1950s confirm it was built entirely by Bantu-speaking ancestors of the Shona people. Any exam question implying external builders is a trap — the correct answer is always indigenous Shona construction.
 - **Confusing "mud hut" with engineered earth architecture:** Sudano-Sahelian mosques and Sahelian earth buildings are sophisticated engineered structures with tapering walls, embedded ventilation, and systematic maintenance programs. Do not equate them with impermanent or primitive shelter — the Great Mosque of Djenné is a UNESCO World Heritage Site and the largest mud-brick building in the world.
 - **Assuming vernacular materials cannot meet modern standards:** Stabilized earth (cement-stabilized compressed earth blocks, or CSEB) and reinforced rammed earth are recognized in contemporary building codes worldwide. The LEA may test whether you understand that vernacular principles can be adapted to meet the National Structural Code of the Philippines (NSCP) with appropriate engineering.
+
+
+<Warn>
+
+⚠️ WATCH OUT: The LEA may present an image of the Great Mosque of Djenné and ask "which culture built this?" The trap is that the mosque is in Mali (West Africa), built by the local Songhai/Bozho people — not by Egyptians, not by Arabs, not by Moors. Know your geography: Djenné = Mali, not Egypt or North Africa.
+
+</Warn>
 
 ## Active Recall Questions
 
@@ -59,3 +91,10 @@ C. A dry-stone granite complex in southeastern Africa dating to the 11th–15th 
 D. A rammed-earth fortification in the Saharan interior, abandoned after the 16th century  
 
 > **Correct Answer: B.** The Great Mosque of Djenné was originally built around the 13th century under Djenné's first Muslim sultan, Koi Konboro. The current structure is a reconstruction completed in 1907. Option A describes the Djinguereber Mosque in Timbuktu (founded c. 1325 by Mansa Musa). Option C describes Great Zimbabwe. Distinguishing between these sites and their correct dates is essential for the LEA.
+
+---
+
+## Cross‑References
+
+**North American Indigenous Architecture**, **Pre Columbian Mesoamerica**, **Inca Architecture Ashlar Masonry**, **Pre Colonial Vernacular**
+

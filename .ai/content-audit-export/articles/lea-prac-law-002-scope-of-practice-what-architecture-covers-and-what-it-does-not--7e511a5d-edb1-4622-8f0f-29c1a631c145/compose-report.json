@@ -1,18 +1,28 @@
 {
   "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
   "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
-  "generated_at": "2026-05-03T13:44:11.202Z",
-  "original_hash": "sha256:9201d47871e23052b523989ab4eb6262da4201f71fbaee5fabf8234819bd3f4b",
-  "normalized_hash": "sha256:89aa787769c577608c4107a621d3837f7b2eef3ea28f83901dd5f2c119b6d661",
-  "candidate_hash": "sha256:673aa67d2b5fd456c99bb74f404f852b340ddebf92ca921a8ddc641000c7f0be",
+  "generated_at": "2026-05-04T00:05:38.478Z",
+  "original_hash": "sha256:673aa67d2b5fd456c99bb74f404f852b340ddebf92ca921a8ddc641000c7f0be",
+  "normalized_hash": "sha256:731ff4368883460b6ecd6775d0b5394d8eecb3c3d127d818ba001ddb3e4f62b0",
+  "candidate_hash": "sha256:731ff4368883460b6ecd6775d0b5394d8eecb3c3d127d818ba001ddb3e4f62b0",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

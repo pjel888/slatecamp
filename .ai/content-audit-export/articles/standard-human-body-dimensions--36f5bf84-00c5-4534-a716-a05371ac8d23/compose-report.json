@@ -1,18 +1,26 @@
 {
   "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
   "slug": "standard-human-body-dimensions",
-  "generated_at": "2026-05-03T13:44:11.189Z",
-  "original_hash": "sha256:1d33724299d8cf75f2afeffcfec1485b149f2bb461052da98ab7029fcbad9353",
-  "normalized_hash": "sha256:4954548d3db5c8c1e0a96184a80caa3f34bca43d4fdf5befc2ea6ba2d4f5f4c5",
-  "candidate_hash": "sha256:455d4032f71f73a0f82c18efb48d8153d15697593ba2592506d8f3a23349c8b6",
+  "generated_at": "2026-05-04T00:05:38.465Z",
+  "original_hash": "sha256:455d4032f71f73a0f82c18efb48d8153d15697593ba2592506d8f3a23349c8b6",
+  "normalized_hash": "sha256:ac43c17ecd6d2a276538c06185300f9c667b2089d92a438d055a95cc34f656dc",
+  "candidate_hash": "sha256:ac43c17ecd6d2a276538c06185300f9c667b2089d92a438d055a95cc34f656dc",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition."
+  ]
 }

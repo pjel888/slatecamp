@@ -4,6 +4,12 @@
 
 **SPP Document 206** governs **Comprehensive Architectural Services (CAS)** — the broadest and most integrative SPP document in the entire 2010 series. It replaces the **1979 UAP Doc. 206** and forms part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004).
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Identify the scope of SPP Doc 206 Comprehensive Architectural Services — the full spectrum of pre-design through post-construction services combined into a single commission; explain how the 15% ceiling on basic fee for comprehensive services is calculated; determine when a comprehensive service agreement is appropriate vs separate SPP Doc agreements for each phase.
+---
 SPP 206 is not a standalone service but an **umbrella framework** that consolidates the entire range of services from SPP 201 through SPP 205 under the management of a single professional — the **Project Manager (PM)**. Understanding SPP 206 requires thorough knowledge of all preceding SPP documents, as CAS is only meaningful when each of its component services is fully understood.
 
 ***
@@ -242,7 +248,7 @@ The primary compensation method for the Project Manager is a **percentage of the
 
 The **Recommended Professional Fee (RPF) for Project Management Services is 2% to 5% of the Project Construction Cost (PCC)**. The exact rate within this range depends on:
 
-- The complexity and sclea of the project
+- The complexity and scale of the project
 - Whether the PM also serves as CM and/or CSG
 - The extent of specialized services engaged under SPP 203
 - The duration of the project lifecycle
@@ -344,3 +350,18 @@ This three-dimensional primacy (Creator–Author–Coordinator) is what distingu
 - Engaging an Architect under SPP 206 as PM means **paying two separate fee streams**: the PM coordination fee (2–5% PCC) and the individual SPP 202 design fee (per project group). Clients should request a full fee schedule upfront that itemizes all SPP fees applicable to their project.
 - CAS is most valuable for **large, complex, or phased development projects** where the owner cannot effectively coordinate architects, engineers, specialists, contractors, and administrators directly. For a simple residential or small commercial project, engaging all SPP services individually may be more cost-effective.
 - The **Owner remains the ultimate decision-maker** even under CAS — the PM advises, coordinates, and manages, but the Owner retains authority over all final approvals and funding decisions. CAS does not transfer project ownership decisions to the PM.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Trap: Comprehensive = SPP 201 + 202 + 204 + 205 in a single contract. Basic fee = 15% of construction cost (max). Not included: specialized services (203). Comprehensive is a BUNDLE — the 15% ceiling applies to the bundle, not to each phase. The most tested: if a client asks for 'all services', it likely triggers SPP 206 (Comprehensive), not just SPP 202.
+
+## Cross‑References
+
+**Spp Doc 201 Pre Design Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 205 Post Construction Services**, **Spp Doc 207 Design Build Services**
+

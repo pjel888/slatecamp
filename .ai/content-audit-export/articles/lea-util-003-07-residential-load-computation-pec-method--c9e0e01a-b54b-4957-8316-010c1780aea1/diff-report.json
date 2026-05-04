@@ -1,38 +1,55 @@
 {
   "article_id": "c9e0e01a-b54b-4957-8316-010c1780aea1",
   "slug": "lea-util-003-07-residential-load-computation-pec-method",
-  "generated_at": "2026-05-03T13:44:52.101Z",
-  "old_hash": "sha256:6ce4aa9b4ecba6f774ef746c1337225e8f5b1d49b7c78ddceabe6716357ee37e",
-  "new_hash": "sha256:017c4ae55d7b379747a63a59aee0c69aa7db6c87386f6ef98f6e305a7b36139c",
-  "original_hash": "sha256:6ce4aa9b4ecba6f774ef746c1337225e8f5b1d49b7c78ddceabe6716357ee37e",
-  "normalized_hash": "sha256:17156e2488049b9983f4ec0d43241f49e2037a95e9dad43c43d81cc87a46a36b",
-  "candidate_hash": "sha256:017c4ae55d7b379747a63a59aee0c69aa7db6c87386f6ef98f6e305a7b36139c",
+  "generated_at": "2026-05-04T00:06:28.999Z",
+  "old_hash": "sha256:017c4ae55d7b379747a63a59aee0c69aa7db6c87386f6ef98f6e305a7b36139c",
+  "new_hash": "sha256:ddff434464add5fe222d6e798d15db97c1e6acf3fb6b915e22a46f2d92fd0b15",
+  "original_hash": "sha256:017c4ae55d7b379747a63a59aee0c69aa7db6c87386f6ef98f6e305a7b36139c",
+  "normalized_hash": "sha256:ddff434464add5fe222d6e798d15db97c1e6acf3fb6b915e22a46f2d92fd0b15",
+  "candidate_hash": "sha256:ddff434464add5fe222d6e798d15db97c1e6acf3fb6b915e22a46f2d92fd0b15",
   "changed": true,
-  "changed_line_count": 212,
+  "changed_line_count": 187,
   "inserted_line_count": 0,
-  "deleted_line_count": 14,
+  "deleted_line_count": 22,
   "ui_blocks_original_count": 13,
-  "ui_blocks_candidate_count": 13,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 13,
   "ui_blocks_count": 13,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 13,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 212,
+    "changed": 187,
     "inserted": 0,
-    "deleted": 14,
-    "original_line_count": 230,
-    "candidate_line_count": 216
+    "deleted": 22,
+    "original_line_count": 216,
+    "candidate_line_count": 194
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007",
+      "ui_0008",
+      "ui_0009",
+      "ui_0010",
+      "ui_0011",
+      "ui_0012",
+      "ui_0013"
+    ],
+    "changed_count": 13
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 13 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 13 preserved UI block(s)."
 }

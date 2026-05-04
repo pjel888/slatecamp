@@ -1,38 +1,47 @@
 {
   "article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
   "slug": "fire-resistive-construction-ratings",
-  "generated_at": "2026-05-03T13:44:38.889Z",
-  "old_hash": "sha256:257933bc4ea185e305721484f79eb8f07452bcdd10bd5b0f92ef435006710390",
-  "new_hash": "sha256:7120efde03c1763a74e178c8d01d10706ff301d3431313d1e73b900f1228450d",
-  "original_hash": "sha256:257933bc4ea185e305721484f79eb8f07452bcdd10bd5b0f92ef435006710390",
-  "normalized_hash": "sha256:4efd42fc680d2e05a065e54dcbaa89682685fbdb6b3e94274a1957c145753480",
-  "candidate_hash": "sha256:7120efde03c1763a74e178c8d01d10706ff301d3431313d1e73b900f1228450d",
+  "generated_at": "2026-05-04T00:06:14.210Z",
+  "old_hash": "sha256:17b01d8fd7afaa93e7df6b08d5ce541fecfb9c43544d82d5b21057887ecaf85f",
+  "new_hash": "sha256:db801d77f51dbd58edabf4bc2db4dc84b14a9fcb4a472f20fa48f4f1990a8f0f",
+  "original_hash": "sha256:17b01d8fd7afaa93e7df6b08d5ce541fecfb9c43544d82d5b21057887ecaf85f",
+  "normalized_hash": "sha256:db801d77f51dbd58edabf4bc2db4dc84b14a9fcb4a472f20fa48f4f1990a8f0f",
+  "candidate_hash": "sha256:db801d77f51dbd58edabf4bc2db4dc84b14a9fcb4a472f20fa48f4f1990a8f0f",
   "changed": true,
-  "changed_line_count": 648,
-  "inserted_line_count": 25,
+  "changed_line_count": 592,
+  "inserted_line_count": 21,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 648,
-    "inserted": 25,
+    "changed": 592,
+    "inserted": 21,
     "deleted": 0,
     "original_line_count": 630,
-    "candidate_line_count": 655
+    "candidate_line_count": 651
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

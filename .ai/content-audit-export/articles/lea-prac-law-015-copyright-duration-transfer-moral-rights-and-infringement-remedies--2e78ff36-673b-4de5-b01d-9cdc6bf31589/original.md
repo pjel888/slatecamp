@@ -1,10 +1,18 @@
 ## Copyright Duration, Transfer, Moral Rights, and Infringement Remedies
 
-<AuthorityContent courseId="LEA-PRAC-LAW-015" />
+## Learning Goal
 
+After studying this article, you should be able to:
+
+- State the duration of copyright protection for architectural works (lifetime + 50 years).
+- Explain the transfer of copyright through written assignment.
+- List the moral rights of the architect-author.
+- Identify infringement remedies: injunctions, damages, impounding of infringing materials.
+
+---
 ### Copyright Duration and Post-Mortem Protection
 
-Under RA 8293 as amended by RA 10372 as amended by RUnder RA 8293 as amended by RA 10372, copyright in architectural works by a natural person extends for the lifetime of the architect plus 50 years after death (Sec. 213.4).Sec. 213.4). This extended protection period acknowledges the enduring value and significance of architectural creations, which may appreciate in cultural and commercial importance over decades. The 50-year post-mortem term allows the architect's heirs, estate, and successors to benefit from the intellectual property rights long after the creator's death.
+Under RA 8293 as amended by RA 10372, copyright in architectural works by a natural person extends for the lifetime of the architect plus 50 years after death (Sec. 213.4).. This extended protection period acknowledges the enduring value and significance of architectural creations, which may appreciate in cultural and commercial importance over decades. The 50-year post-mortem term allows the architect's heirs, estate, and successors to benefit from the intellectual property rights long after the creator's death.
 
 Calculating protection duration begins with the date of the architect's death, not the date the building was completed or the design was created. For example, if an architect died in 2020, copyright protection extends through 2070. This calculation applies to individual architects. For works owned by juridical persons (architectural firms or design companies), the protection term is 50 years from date of publication or date of making if unpublished (Sec. 213.2). The extended duration encourages original creative work by guaranteeing long-term commercial value.
 
@@ -49,3 +57,22 @@ A builder who constructs a building with the same general program and functional
 In addition to economic copyright enforcement, architects may pursue remedies for violation of moral rights. These remedies include the right to claim or deny authorship, the right to demand correction of misattribution, and the right to sue for violation of integrity. When an architect's name is removed from a work or falsely attributed to another, the architect may demand restoration of correct attribution and damages for harm to professional reputation.
 
 Violations of the right of integrity—such as radical demolition of distinctive design features, unauthorized major alterations that destroy design intent, or vandalism that damages aesthetic integrity—may trigger legal action. Remedies include injunctions to prevent further distortion, damages for harm to the architect's reputation, and in some cases, mandatory correction or restoration of the work's integrity. The existence and strength of moral rights claims depend on the specific facts and the degree to which the work has been altered or misattributed.
+
+<Warn />
+
+<ExamTip />
+
+<Tip />
+
+---
+
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)

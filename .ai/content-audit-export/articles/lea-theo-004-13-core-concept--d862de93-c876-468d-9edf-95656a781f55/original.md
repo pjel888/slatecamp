@@ -1,9 +1,8 @@
 ## What You Need to Know for the LEA
-<Callout>
 
-Sun shading devices reduce solar heat gain by 40–70% without sacrificing daylighting; they are essential tropical architecture elements. The **brise-soleil** (sun breaker) and related devices—horizontal louvers, vertical fins, egg-crate screens, light shelves, and overhangs—must be designed for Philippine latitude (5°N–20°N) where solar altitude angles are high even in winter. Le Corbusier's Chandigarh Capitol Complex demonstrates brise-soleil geometry creating dynamic facade patterns while controlling solar penetration; this approach integrates climate responsiveness with architectural expression—a model for contemporary Philippine tropical design.
-</Callout>
+## Learning Goal
 
+Design sun shading devices for tropical buildings — horizontal overhangs, vertical fins, egg-crate screens, louver systems — and calculate how each device type reduces solar heat gain by 40-70% while maintaining adequate daylighting.
 ## Core Concept
 
 ### Solar Shading Fundamentals
@@ -22,9 +21,9 @@ In the **Philippine climate**, solar radiation intensity peaks at:
 <Note>The 3,600W calculation (10 m² east window, 600 W/m² incident, 60% transmission) assumes clear-sky conditions. During monsoon (Type I habagat, May–Oct), cloud cover reduces direct radiation 20–40%, making shading less critical. This variation is rarely highlighted but affects BERDE energy modeling—Type III areas with pronounced dry season benefit from seasonal adjustable shading; Type II/IV with perpetual cloud require less aggressive shading to maintain daylighting.</Note>
 
 Unshaded glass windows transmit 50–70% of this radiation as heat. A 10 m² east-facing window receives:
-- 6 AM radiation: 600 W/m² × 10 m² × 0.6 transmission = **3,600 W** (equivleant to 1 ton air conditioning)
+- 6 AM radiation: 600 W/m² × 10 m² × 0.6 transmission = **3,600 W** (equivalent to 1 ton air conditioning)
 
-**Shading effect**: Reducing solar transmission from 60% to 15% eliminates 4,050 W of heat gain—equivleant to operating 1 ton of AC unit continuously. For an office building with 200 m² of glazing, effective shading saves 40–80 kW of instantaneous cooling demand.
+**Shading effect**: Reducing solar transmission from 60% to 15% eliminates 4,050 W of heat gain—equivalent to operating 1 ton of AC unit continuously. For an office building with 200 m² of glazing, effective shading saves 40–80 kW of instantaneous cooling demand.
 
 ### Brise-Soleil (Sun Breaker)
 
@@ -235,24 +234,24 @@ Sun shading devices earn **BERDE points** in multiple categories:
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Shading Device Type", "Optimal Application", "Cooling Load Reduction", "Philippine Effectiveness", "LEA Testing Focus"]} rows={[['["**Horizontal Louvers (Brise-Soleil)**", "South-facing primary windows", "40–50%", "High (sun high-angle year-round)", "Louver angle 45–70°; spacing; depth"]', '["**Vertical Fins**", "East and west facades", "50–70%", "Very High (critical for E/W liability)", "Fin width, spacing, protrusion depth"]', '["**Egg-Crate Screens**", "Combination E/W and high-glare zones", "50–70%", "High (integrated H+V shading)", "Three-dimensional geometry; cell sizing"]', '["**Light Shelves**", "Deep office floor plates (>10 m from window)", "35–45% + daylighting 12–15 m penetration", "Moderate (complementary to direct shading)", "Reflectance ≥90%; shelf angle; ceiling bounce"]', '["**Deep Overhangs**", "South-facing; transitional spaces", "35–50%", "High (vernacular alignment; extended gallery)", "Depth calculation using tangent method"]', '["**Motorized Louvers**", "Premium buildings; seasonal optimization", "45–60% (dynamic) vs. 35–45% (fixed)", "Low-Moderate (cost-benefit marginal in Type I/II perpetual heat)", "Control strategy; sensor integration"]', '["**Switchable Glazing**", "Façade transparency critical (e.g., showcase)", "40–60%", "Low (high cost; marginal benefit in tropical)", "Transmittance range; color uniformity"]', '["**Manual Roller Shades**", "Schools, public buildings, occupied offices", "30–50%", "Moderate (dependent on occupant behavior)", "Cost-effectiveness; occupant reliability"]', '["**Brise-Soleil (Fixed 3D)**", "Architectural expression + performance", "45–65%", "Very High (aesthetic integration)", "Le Corbusier geometric principles; pattern evolution"]', '["**Overhang Sizing (Tangent Calc.)**", "All facades; baseline requirement", "20–50% (depth-dependent)", "Universal", "Window height; solar altitude; seasonal variation"]']]} />
-## How It's Tested on the LEA
-
-
-<ExamTip>1. **Overhang Design Calculation**: Design south-facing windows for a Batanes building (20°N latitude). Winter solstice noon altitude = 53.5°. Window height = 2.5 m. Calculate required overhang depth to prevent direct penetration. Verify summer (79°) and equinox (69°) penetration is acceptable (diffuse only).</ExamTip>
-
+ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Overhang Design Calculation**: Design south-facing windows for a Batanes building (20°N latitude). Winter solstice noon altitude = 53.5°. Window height = 2.5 m. Calculate required overhang depth to prevent direct penetration. Verify summer (79°) and equinox (69°) penetration is acceptable (diffuse only).
+[/SLATECAMP_UI_BLOCK]
 
 <ExamTip>2. **East-West Facade Shading Strategy**: A 14-story Manila office building has 40% of its facade area facing east and west (solar liability). Design a comprehensive shading strategy combining vertical fins, horizontal shelves, and glazing selection. Calculate cooling load reduction percentage. Specify material, spacing, and angle.</ExamTip>
 
-
 <ExamTip>3. **Brise-Soleil Geometric Design**: Using Le Corbusier's Chandigarh Capitol Complex as model, design a brise-soleil facade for a Manila institutional building (library, museum, or court). Specify: (a) horizontal and vertical element spacing, (b) protrusion depth, (c) material, (d) shadow pattern evolution (sketch 4 positions: 8 AM, 12 PM, 4 PM, winter solstice), (e) cooling load reduction estimate.</ExamTip>
-
 
 <ExamTip>4. **Light Shelf Optimization**: A 18-meter-deep office floor plate requires daylighting to 15 meters depth. Design a light shelf system: (a) shelf depth and angle, (b) reflectance and surface finish, (c) integration with mechanical ventilation louvers (ensure no conflict), (d) maintenance protocol, (e) daylight autonomy impact.</ExamTip>
 
-
 <ExamTip>5. **Shading Device Specification for BERDE Certification**: Select shading devices for a mixed-use building (ground retail, upper residential) in a Coronas Type IV climate (year-round rain, perpetual cloud cover, diffuse light dominant). Justify device choices for thermal control while maximizing daylighting (required for occupant well-being despite limited direct sun). Calculate achievable BERDE points.</ExamTip>
 
+<Callout>
+
+Sun shading devices reduce solar heat gain by 40–70% without sacrificing daylighting; they are essential tropical architecture elements. The **brise-soleil** (sun breaker) and related devices—horizontal louvers, vertical fins, egg-crate screens, light shelves, and overhangs—must be designed for Philippine latitude (5°N–20°N) where solar altitude angles are high even in winter. Le Corbusier's Chandigarh Capitol Complex demonstrates brise-soleil geometry creating dynamic facade patterns while controlling solar penetration; this approach integrates climate responsiveness with architectural expression—a model for contemporary Philippine tropical design.
+</Callout>
 
 ## Common Mistakes
 
@@ -261,7 +260,6 @@ Sun shading devices earn **BERDE points** in multiple categories:
 <WikiMistakeCard mistake="Ignoring East-West Exposure" correction="Focusing on south-facing facade shading while neglecting east and west—where solar heat gain is actually greater." context="Unshaded east/west windows undermine overall thermal performance." />
 
 <WikiMistakeList mistakes={["Blocking Stack Effect Exhaust. Placing horizontal louvers across roof-level exhaust vents or clerestories, impeding buoyancy-driven ventilation. Natural ventilation effectiveness drops by 40–50%. Always ensure louvers don't block vertical airflow paths.", "Over-Reliance on Motorized Systems. Installing expensive motorized louvers without fixing fundamental design flaws (oversized windows, poor orientation). The building still overheats during electrical failures or sensor malfunctions.", "Inadequate Winter Daylighting. Designing overhangs that block winter diffuse light, forcing daytime electric lighting. Type II/IV climates (perpetual cloud cover) suffer more; Type I (dry season) benefits from deeper shading year-round.", "Misaligned Brise-Soleil Geometry. Copying Chandigarh egg-crate spacing (0.5–0.7 m cells, appropriate for 31°N) in Manila (14.6°N). Result: Oversized cells; insufficient shading for high-altitude tropical sun; poor aesthetic integration."]} />
-
 
 ## Key Terms
 
@@ -288,3 +286,10 @@ Sun shading devices earn **BERDE points** in multiple categories:
 **Motorized Louver System** — Automatically adjusting shading based on solar sensors; optimizes seasonal performance but adds cost and maintenance complexity.
 
 **BERDE Passive Design Credit** — Green building points awarded for fixed shading reducing cooling load ≥30%; integral to Philippine certification pathway.
+
+## Related Articles
+
+See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-02-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-07-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

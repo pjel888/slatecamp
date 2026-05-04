@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define the three essential properties of a force: magnitude, direction, and sense
+- Distinguish between direction (the line of action) and sense (which way along that line)
+- Interpret free-body diagrams by correctly identifying all three force properties
+- Explain why magnitude is always expressed as a positive value
 
 This topic covers the three fundamental properties that completely describe any force applied to a structure. The LEA tests whether you can identify, define, and distinguish these properties in force diagrams and loading scenarios.
 
@@ -34,6 +41,13 @@ In Philippine structural design, forces are documented in free-body diagrams and
 
 <Tip>**Memory anchor:** **MDS = Magnitude, Direction, Sense.** Every force question will ask you to identify or apply one or more of these. If you can label all three on a diagram, you understand the force completely.</Tip>
 
+
+## Related Articles
+
+See also: **Load Types** (lea-strc-001-02) for how forces are categorized, **Supports** (lea-strc-001-03) for how forces are restrained, and **Internal Forces** (lea-strc-001-05) for how forces develop inside members.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing direction with sense: direction is the LINE (e.g., 45° from horizontal); sense is the ARROW direction (e.g., upward). A force can have the same direction but opposite sense.","Treating magnitude as signed: magnitude is always positive. The sign comes from sense, not from magnitude. Never write 'magnitude = −10 kN'.","Omitting sense on diagrams: an arrow without clear head/tail orientation leaves ambiguity about whether the force is tension or compression, push or pull."]} />

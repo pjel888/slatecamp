@@ -7,6 +7,9 @@ Design security and access control systems — card readers, biometric readers, 
 
 ### Wiegand Protocol
 
+<ArticleMedia id="media-lea-util-005-04-communication-protocols-" a type="image" caption="Building Automation System Architecture — BACnet, Modbus, MQTT Protocol Layers" description="Three-tier BMS architecture diagram: Field level (sensors, actuators, VFDs) using Modbus RTU/RS-485 up to 1200m; Automation level (controllers, gateways) using BACnet/IP on building LAN; Management level (BMS server, dashboards, analytics) using MQTT for IoT data. Protocol data rates, topology, and typical Philippine building applications (HVAC control, lighting, metering, access control) shown per ASHRAE BACnet standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 Wiegand is a legacy, open-source protocol operating at DC levels (0–24V) over two signal wires, originally specified by HID for proximity card readers. The protocol transmits data as differential pulses: a logic "1" is a 20 µs pulse on the data line, while logic "0" is a 20 µs pulse on the clock line[1]. Maximum cable run without repeater is typically 500 feet (approximately 150 m) for twisted-pair Category 3 or better per HID specifications[2].
 
 _Protocol structure_: 26-bit standard format (1 even parity bit, 8-bit facility code, 16-bit card data, 1 odd parity bit) transmits at 100 bits per second[3]. Proximity cards operating at 125 kHz (ISO/IEC 14223) are read passively; no power is required on the card.
@@ -98,6 +101,9 @@ _Throughput_: Iris readers process one person per 2–3 seconds, unsuitable for 
 ## Access Control Architecture
 
 ### Controller & Reader Integration
+
+<ArticleMedia id="media-lea-util-005-04-communication-protocols-" a type="image" caption="Access Control System — Card Reader, Controller, Electric Lock Integration" description="Network diagram of access control system components: credential readers (proximity, smart card, biometric) connected via OSDP (RS-485, up to 1200m) or IP/Ethernet to door controllers, which command electric locks (maglocks or electric strikes, 12/24VDC). Fire alarm integration showing hardwired relay for emergency door unlock per PD 1096. REX (request-to-exit) motion sensors, elevator floor access control, and visitor management system integration shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 
 A typical access control system consists of:
 
@@ -258,18 +264,11 @@ Security and access control systems integrate multiple communication protocols (
 
 ---
 
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
 
-<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 
-
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
-
-
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 [1] HID Global. Wiegand Protocol Specification. Accessed 2024.
 [2] Belden/Siemon. Access Control Cabling Guide. Document 7CXXX, 2022.

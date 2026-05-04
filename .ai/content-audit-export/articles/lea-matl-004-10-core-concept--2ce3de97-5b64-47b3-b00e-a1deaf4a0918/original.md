@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Alternative and modular construction methods enable rapid, sustainable building delivery. The LEA expects understanding of prefabrication, modular construction, 3D printing, insulated concrete forms (ICF), structural insulated panels (SIPs), and container architecture. You must recognize when these systems are economically justified and understand Philippine context including DPWH prefab bridges, NHA socialized housing systems, and bamboo construction standards (NBRC).
-
+Identify preconstruction activities — site investigation, soil testing (SPT, plate load test, compaction testing), survey/staking, temporary facilities — and explain how each activity ensures foundation adequacy and construction readiness.
 ## Core Concept
 
 Modular/prefabricated systems manufacture building components (walls, volumetric modules, structural frames) in controlled factory environments, then assemble on-site. Advantages: quality control, parallel manufacturing and site work, reduced weather dependency, improved safety (factory vs. site hazards). Disadvantages: transportation logistics, higher upfront capital, site customization limits.
@@ -71,3 +71,10 @@ The LEA evaluates alternative construction through:
 <WikiMistakeCard title="Over-relying on 3D Printing for Complex Structures" body="A speculative designer proposes 3D-printed concrete walls for a 5-story building based on research project success. Printing speed is insufficient (weeks vs. traditional days), printer malfunction occurs (unproven repair), and structural quality verification requires extensive testing. Experimental technology is not suitable for time-critical projects." />
 
 <WikiMistakeList items={["Assuming ICF is always cheaper than traditional formwork—in tropical Philippines, insulation premium is minimal, making ICF uncompetitive with conventional formwork.", "Overestimating container architecture durability—containers require welding modifications, corrosion treatment, and structural stiffening for wind/seismic. Hidden costs often exceed initial savings.", "Failing to account for factory tooling lead times—modular projects require 2–4 months for design and factory setup before production begins. Schedule must include this pre-production phase.", "Neglecting transportation logistics in modular specifications—highway restrictions (width, height, weight limits) constrain module size. Over-sized modules cannot be transported; project fails.", "Assuming bamboo construction is only for heritage/rural projects—NBRC standards enable bamboo in modern commercial buildings where sustainability/aesthetics are valued. Wider applications are emerging."]} />
+
+## Related Articles
+
+See also within Construction Systems and Methods: **lea-matl-004-06-core-concept**, **lea-matl-004-07-core-concept**, **lea-matl-004-08-core-concept**, **lea-matl-004-09-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

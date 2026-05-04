@@ -1,18 +1,28 @@
 {
   "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
   "slug": "site-exterior-circulation",
-  "generated_at": "2026-05-03T13:44:11.464Z",
-  "original_hash": "sha256:5de73065f826242db9f73955de86d521e9e17eec93d018727fdc63c753f25505",
-  "normalized_hash": "sha256:2747f369061b976828cd9f4ba3004a2383ab82d905e02d4fe2277c2d62e93193",
-  "candidate_hash": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
+  "generated_at": "2026-05-04T00:05:38.767Z",
+  "original_hash": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
+  "normalized_hash": "sha256:ad7cd1c06313dfc88104d3f68a15ea19a75df915061b3a768ff87a4dd344d36e",
+  "candidate_hash": "sha256:ad7cd1c06313dfc88104d3f68a15ea19a75df915061b3a768ff87a4dd344d36e",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0003",
+    "ui_0004",
+    "ui_0006"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0006 was not used during composition."
+  ]
 }

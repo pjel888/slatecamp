@@ -1,19 +1,27 @@
 {
-  "attempted_at": "2026-05-03T14:02:59.232Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:07:11.994Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
   "slug": "lea-util-002-04-system-types-and-applications",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:f5d848960f00e5e67f2a9dfafe8e6a055a0aa489ca1fdf05e8f8fcf162b86988",
   "original_hash": "sha256:37641573e203d85a3cea458b5c166c1f825c86ad16f354f4891d80c5ed764fde",
-  "candidate_hash": "sha256:f5d848960f00e5e67f2a9dfafe8e6a055a0aa489ca1fdf05e8f8fcf162b86988",
+  "candidate_hash": "sha256:fcf72eac7d0a013f85c3249824a83e9158e79dc29f9b7099f18a51f23788d549",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:52:39.392527+00:00"
 }

@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define the three elastic moduli: Young's modulus (E), shear modulus (G), and bulk modulus (K)
+- State the relationship between E, G, and Poisson's ratio (ν): G = E / [2(1+ν)]
+- Recall standard values: E_steel = 200,000 MPa, E_concrete = 4,700√(f'c)
+- Explain what each modulus measures in terms of material resistance to deformation
 
 The moduli—elasticity, rigidity, resilience, and toughness—are slope-based and energy-based measures of stiffness and energy capacity. Memorize their definitions and standard values. These appear in every calculation: deflection, lateral stability, foundation design.
 
@@ -68,6 +75,13 @@ The NSCP mandates the use of Ec = 4,700√f'c for normal-weight concrete deflect
 
 <Tip>Remember: E is in the denominator of deflection formulas. Lower E = more deflection. Steel (high E) is stiffer than concrete (lower E). Resilience = elastic energy only. Toughness = total energy (elastic + plastic). Every problem involving deflection, lateral stability, or buckling contains a hidden E.</Tip>
 
+
+## Related Articles
+
+See also: **Stress-Strain** (lea-strc-003-01) for where modulus appears as slope, **Material Properties** (lea-strc-003-02) for the broader context, and **ASD vs LRFD** (lea-strc-003-04) for how modulus affects design methods.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Assuming E varies by steel grade. E = 200,000 MPa for all structural steel grades. Only Fy and Fu vary. This is tested repeatedly.","Forgetting the √f'c in the concrete modulus formula. Ec = 4,700√f'c, not 4,700 × f'c. The square root is non-negotiable. For f'c = 25 MPa: Ec = 4,700 × 5 = 23,500 MPa (not 117,500 MPa).","Confusing Modulus of Resilience (elastic energy only, up to yield) with Modulus of Toughness (total energy, to rupture). Resilience uses the formula ER = Fy² / (2E). Toughness is always larger and requires integrating the entire stress-strain curve.","Using the wrong definition of Poisson's ratio. Poisson's ratio is lateral strain / longitudinal strain, not lateral stress / longitudinal stress. For steel, ν ≈ 0.30, meaning lateral strain is 30% of longitudinal strain.","Misapplying the G = E / (2(1 + ν)) relationship. For steel with ν = 0.30: G = E / 2.60, not E / 2.30 or other variations. The denominator is 2(1 + ν) = 2 × 1.30 = 2.60.","Treating moduli as constants across all concrete strengths. Ec depends on f'c. A 40 MPa concrete is stiffer than 25 MPa concrete: Ec(40) / Ec(25) = √40 / √25 = 6.32 / 5 ≈ 1.27×. The modulus increases with strength."] />

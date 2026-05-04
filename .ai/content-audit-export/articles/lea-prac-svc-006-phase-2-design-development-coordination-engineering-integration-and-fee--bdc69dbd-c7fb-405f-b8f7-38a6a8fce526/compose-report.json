@@ -1,18 +1,32 @@
 {
   "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
   "slug": "lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
-  "generated_at": "2026-05-03T13:44:11.529Z",
-  "original_hash": "sha256:81607df183b5cd05015220e766e09aa9dce13ac875d6f709c9f5a27586f2efc6",
-  "normalized_hash": "sha256:70c5115078225fabd87049ce41b782d10d1f7c8b493abf311bef82f1ea0e0693",
-  "candidate_hash": "sha256:4cd1c0e267ffdedb33453778cf13cdbc62433aca77e0f8647a06ba504be18c30",
+  "generated_at": "2026-05-04T00:05:38.911Z",
+  "original_hash": "sha256:f290ece6c952e61701a702fe92946dc98494069ce43f7f395198c0f063679ce9",
+  "normalized_hash": "sha256:a313571161d8b147327e8ced64ae3ddff0e789064b7e1bcf5ac9a141f326ce9d",
+  "candidate_hash": "sha256:a313571161d8b147327e8ced64ae3ddff0e789064b7e1bcf5ac9a141f326ce9d",
   "ui_blocks_count": 6,
-  "placeholders_found": 6,
-  "placeholders_resolved": 6,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 6,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition."
+  ]
 }

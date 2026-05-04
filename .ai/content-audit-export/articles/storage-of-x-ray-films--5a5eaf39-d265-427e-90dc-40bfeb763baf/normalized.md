@@ -16,13 +16,11 @@ Apply the fire protection and storage requirements for X-ray film (nitrate-based
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
-[/SLATECAMP_UI_BLOCK]
 
 The Building Official's inspector enters the basement radiology archive of a provincial hospital and finds a storage room stacked with unexposed X-ray film boxes on open shelving — no automatic fire extinguishing system in sight, a single portable light on an extension cord dangling over the nearest shelf, and a steam pipe running along the ceiling roughly 400 mm above the film. The room smells faintly of chemical processing. Three separate violations of Rule XIV are already on the clipboard before the inspector reaches the cabinet labeled "Negative Films — 500 kg." When the fire investigator later explains how a room like this became the origin point of an entire ward fire, every architect in the hearing room wishes they had memorized Sections 1401 through 1403.
 
@@ -328,15 +326,13 @@ Compared to the NFPA 40 standard for cellulose nitrate film storage, which of th
 **Question 3**
 
  component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
-[/SLATECAMP_UI_BLOCK]
+<Note>
+**LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
+</Note>
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
-[/SLATECAMP_UI_BLOCK]
 *(LEA Area 2 — Fire Protection; Topic: Exemptions and Negative Film Handling)*
 
 An architect is reviewing storage requirements for a hospital that stores: (i) dental X-ray film in the dental clinic, (ii) exposed medical X-ray negatives in Manila envelopes in the radiology archive, and (iii) amateur photographic roll film in original packages totaling 1.20 cu.m in the marketing department. Which of the following is correct under PD 1096, Rule XIV?
@@ -448,3 +444,5 @@ If you paused on any of these, re-read Section 4 before proceeding.
 
 **Fire Extinguishing Systems**, **Fire Resistive Construction Ratings**, **Plastics In Construction**, **Sheet Metal And Spray Booths**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

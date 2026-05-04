@@ -1,7 +1,5 @@
 # Post-Modernism
 
-
-
 ## Learning Goal
 
 - Define Post-Modernism's theoretical foundations: Venturi's "less is a bore," Complexity and Contradiction, and the Duck vs. Decorated Shed distinction.
@@ -11,6 +9,8 @@
 ## The Real-World Scenario (The Hook)
 
 You encounter an LEA question showing a photograph of a building with a comically oversized broken pediment, playful color bands, and what appears to be a television antenna sculpted as a decorative finial. The question asks: "Which architectural movement rejects Modernist purity in favor of historical allusion and irony?" You are looking at Post-Modernism — and you need to know its manifesto, its architects, and its key buildings cold.
+
+<Callout variant="lea-watch">**LEA Diagnostic Clues for Post-Modernism:** On the exam, identify Post-Modern buildings by three visual giveaways: (1) Classical elements used ironically — broken pediments, oversized keystones, out-of-scale columns; (2) Playful or unexpected color — polychrome facades, pastel hues, neon accents; (3) Historical allusion mixed with pop culture — Chippendale tops, cartoon-like ornament, symbolic forms.</Callout>
 
 ## Core Concepts
 
@@ -22,14 +22,11 @@ You encounter an LEA question showing a photograph of a building with a comicall
 
 - **The Return of Ornament:** Post-Modernism reversed Adolf Loos's Modernist dictum "Ornament and Crime" (1910). Post-Modern architects reintroduced columns, pediments, keystones, arches, and other Classical elements — but used them ironically, out of scale, in unexpected materials, or in playful combinations to comment on rather than merely copy history.
 
+<KeyValues items={[{label:"Venturi's Slogan",value:"\"Less is a bore\""},{label:"Form + Symbol",value:"Decorated Shed"},{label:"Form IS Symbol",value:"Duck"},{label:"Elite + Popular",value:"Double Coding"}]} />
+
 ## The Hard Data (Cheat Sheet)
 
-<Example>
-
-**Vanna Venturi House (Robert Venturi, 1964):** The first built manifesto of Post-Modernism. Features: (1) Monumental gable facade — a "house-shaped" front that is purely symbolic, not structural. (2) Broken pediment — a reference to Classical architecture, but fragmented and ironic. (3) Oversized arch — the front door is framed by a giant arch that cuts through the gable. (4) "Decorated shed" concept — the building is a simple box, but the facade is a decorated surface that communicates "house." This building explicitly rejects Mies' "Less is More."
-
-</Example>
-
+<Example>**Vanna Venturi House (Robert Venturi, 1964):** The first built manifesto of Post-Modernism. A deliberately contradictory house in Chestnut Hill, PA with a split gable, oversized chimney, and distorted Classical references. Features: (1) Monumental gable facade — a "house-shaped" front that is purely symbolic, not structural; (2) A deliberate split in the gable line that contradicts the roof's own symmetry; (3) An oversized central chimney that dominates the composition.</Example>
 
 | Architect / Theorist | Key Work(s) | Year | Significance |
 |---|---|---|---|
@@ -55,12 +52,9 @@ You encounter an LEA question showing a photograph of a building with a comicall
 
 ## LEA Exam Traps and Common Mistakes
 
-<ExamTip>
+<ExamTip>**LEA Trap:** "Post-Modernism means 'after Modernism' chronologically" — PARTIALLY TRUE but incomplete. Post-Modernism is a specific architectural movement defined by Venturi's Complexity and Contradiction in Architecture (1966), not merely a temporal label. The movement is characterized by specific theoretical positions — historical allusion, double coding, irony, contextualism — that distinguish it from Late Modernism or any other "after Modernism" style.</ExamTip>
 
-**LEA Trap:** "Post-Modernism means 'after Modernism' chronologically" — PARTIALLY TRUE but incomplete. Post-Modernism is a specific architectural movement defined by Venturi's Complexity and Contradiction in Architecture (1966) and Learning from Las Vegas (1972). It explicitly REJECTS Modernist dogma (ornament is crime, form follows function, truth to materials). Not everything built after 1970 is Post-Modern — it must show historical reference, irony, or symbolism.
-
-</ExamTip>
-
+<Warn>**Do NOT confuse Post-Modernism with Neo-Classicism.** Both use Classical elements (columns, pediments, arches), but Post-Modernism uses them ironically — out of scale, in unexpected colors, or in jarring combinations. Neo-Classicism uses them sincerely and proportionally. The Piazza d'Italia has neon-lit stainless-steel Corinthian columns — that is Post-Modern irony, not Neo-Classical reverence. The LEA tests this distinction directly.</Warn>
 
 - **Trap 1: Confusing Post-Modernism with Neo-Classicism.** Both use Classical elements (columns, pediments), but Post-Modernism uses them ironically, out of scale, in unexpected colors, or in jarring combinations. Neo-Classicism uses them sincerely and proportionally. The Piazza d'Italia has neon-lit stainless-steel Corinthian columns — that is irony, not reverence.
 
@@ -103,18 +97,22 @@ D. The opening of Philip Johnson's AT&T Building
 
 > **Correct Answer: A.** Jencks famously pinpointed the demolition of the Pruitt-Igoe public housing project (designed by Minoru Yamasaki, completed 1956, demolished 1972) as the symbolic death of Modernism — a failed social housing megaproject that proved Modernist idealism could not solve urban problems. He published this claim in The Language of Post-Modern Architecture (1977).
 
+---
+
+<Tip>**Memory Anchor: "P-M = Post-Modernism = Pluralism + Metaphor."** Two defining characteristics: Pluralism (rejects the single "correct" style of Modernism — mixes historical references, ornament, color, and forms from different eras) and Metaphor (architecture communicates meaning through symbolism, allusion, and double coding — simultaneously appealing to popular taste and elite architectural culture).</Tip>
 
 ---
 
-<Tip>
 
-**Memory Anchor: "P-M = Post-Modernism = Pluralism + Metaphor."** Two defining characteristics: Pluralism (rejects the single "correct" style of Modernism — mixes historical references, ornament, color, irony) and Metaphor (buildings communicate meaning through form — e.g., Venturi's "decorated shed" vs. "duck"). Philip Johnson's AT&T Building (Chippendale top) and Michael Graves' Portland Building (keystone, garland, color) are textbook examples.
-
-</Tip>
 
 ---
+
+## Exam Tip
+
+ALE Trap: Post-Modernism vs Modernism: Modernism = no ornament, universal, ahistorical. Post-Modernism = ornament returned, context-specific, historical quotation. Four markers: (1) Historical reference, (2) Ornament, (3) Pop-culture/irony, (4) Contextualism. Venturi's 'Less is a bore' vs Mies' 'Less is more' — this contrast is frequently tested.
 
 ## Cross‑References
 
 **The Bauhaus And International Style**, **Brutalism**, **21St Century Movements**, **Le Corbusier Five Points**
 
+<!-- no-media-needed: existing content format is sufficient without visual media -->

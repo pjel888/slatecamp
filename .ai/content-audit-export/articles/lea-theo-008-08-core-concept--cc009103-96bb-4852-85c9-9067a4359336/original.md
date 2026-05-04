@@ -4,9 +4,17 @@
 Philippine design identity extends beyond architecture to encompass furniture design, industrial design, interior design, and broader cultural production where Filipino architects and designers assert international recognition. From Kenneth Cobonpue's rattan furniture earning global acclaim to the professionalization of interior design through figures like Lor Calma, Filipino design culture demonstrates that identity transcends buildings to express distinctively Filipino sensibility across multiple disciplines and scleas.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define Philippine design identity across scales: architecture, furniture, industrial design, interiors — united by indigenous materials, tropical responsiveness, and craftsmanship.
+- Identify key figures in Philippine design culture: Kenneth Cobonpue (rattan furniture), Lor Calma (interior design).
+- Explain how broader design culture supports and sustains Filipino architectural identity.
+
 ## Core Concept
 
-Philippine design identity operates across a spectrum of scleas and disciplines united by common sensibility: commitment to indigenous materials, responsiveness to tropical climate, integration of craftsmanship and cultural values, and refusal of wholeslea importation of foreign aesthetic standards. While architecture addresses building-sclea design challenges, furniture and product design enable individual Filipino designers to achieve international recognition and influence, often with less institutional constraint than architectural practice requires. This broader design ecosystem both supports architectural identity and sustains related professional conversations about Filipino culture in the contemporary world.
+Philippine design identity operates across a spectrum of scales and disciplines united by common sensibility: commitment to indigenous materials, responsiveness to tropical climate, integration of craftsmanship and cultural values, and refusal of wholeslea importation of foreign aesthetic standards. While architecture addresses building-scale design challenges, furniture and product design enable individual Filipino designers to achieve international recognition and influence, often with less institutional constraint than architectural practice requires. This broader design ecosystem both supports architectural identity and sustains related professional conversations about Filipino culture in the contemporary world.
 
 <Tip>
 **Design identity across scleas**: Filipino architectural principles (material honesty, climate responsiveness, craft integration, community values) manifest across architecture, furniture, interiors, and product design. Kenneth Cobonpue's rattan furniture embodies the same principles as Francisco Mañosa's bamboo structures: deep engagement with material properties, sophisticated formal resolution, responsiveness to (tropical) context, commitment to genuine (not superficial) cultural expression. This consistency across scleas demonstrates that Filipino identity is coherent philosophy, not merely aesthetic preference.
@@ -94,3 +102,10 @@ Success trap: As Filipino design gains international recognition, the danger is 
 **Cultural Specificity as Competitive Advantage** — The insight that markets reward genuine cultural expression more than generic internationalism, and that Philippines benefits from designers committed to distinctive identity rather than attempting cultural erasure.
 
 **Design Entrepreneurship** — The establishment of design-based enterprises like the Cobonpue furniture business that create employment, build market demand, and sustain craft traditions while achieving international success.
+
+## Related Articles
+
+See also within Innovation & Filipino Identity: **lea-theo-008-02-core-concept**, **lea-theo-008-03-core-concept**, **lea-theo-008-04-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

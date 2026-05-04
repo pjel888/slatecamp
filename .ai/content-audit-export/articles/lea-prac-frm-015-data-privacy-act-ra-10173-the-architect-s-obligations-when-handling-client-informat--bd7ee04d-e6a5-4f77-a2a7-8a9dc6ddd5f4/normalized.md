@@ -1,11 +1,5 @@
 ## Data Privacy Act (RA 10173)—The Architect's Obligations When Handling Client Information
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: null
-[/SLATECAMP_UI_BLOCK]
-
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -14,8 +8,6 @@ After studying this article, you should be able to:
 - Describe how DPA applies to client information, project data, and employee records.
 - Identify required data protection measures for architectural firms.
 - Apply DPA compliance rules to practice scenarios.
-
-
 
 ### Scope of RA 10173: Personal Information Controllers and Processors
 
@@ -62,34 +54,18 @@ Professional disciplinary bodies (Board of Architecture) may also view serious p
 Architects should implement the following: (1) maintain a data inventory documenting what personal information is collected, why, and how long it is retained; (2) draft privacy notices to inform data subjects; (3) obtain written consent before collecting sensitive data; (4) implement confidentiality agreements with staff; (5) encrypt sensitive files; (6) restrict access to authorized personnel only; (7) maintain audit trails; (8) secure disposal of information when no longer needed; (9) have a breach response plan; and (10) provide staff training on data protection obligations.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266" title="RA 10173 — Data Privacy Act"
-- Text: Legal Basis: RA 10173 (Data Privacy Act of 2012). Architects collecting/processing client personal data are 'personal information controllers' subject to NPC (National Privacy Commission) oversight.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ Penalties: Unauthorized processing of personal info = 1-3 years imprisonment + fine up to PHP 2M. Unauthorized processing of SENSITIVE personal info = 3-6 years + fine up to PHP 5M. Architects must take data privacy obligations seriously. — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Key principles: Consent (obtain explicit consent), Purpose Limitation (only collect what's needed for the project), Proportionality (reasonable necessity), Security (implement safeguards). Maintain a Data Privacy Manual and designate a DPO.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The NPC may conduct compliance checks. Register your data processing systems with the NPC if you process personal data of 250+ individuals or process sensitive personal data. Data subjects have rights to access, correct, and delete their data.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Data Privacy Compliance for Architects — RA 10173 Workflow" description="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

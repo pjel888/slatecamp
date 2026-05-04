@@ -1,19 +1,23 @@
 {
-  "attempted_at": "2026-05-03T14:01:37.562Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:11.572Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "061c0a78-3a9d-405a-9a42-7aa0463181b5",
   "slug": "owner-smoke-article-b-1775980402961",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:01d5d13079e2c33b9ca781dfa98dd26ee3cf5837abf7fa38644e53b5d66209af",
   "original_hash": "sha256:d6973fd90fb396976172f32c71547c3132adc1dccf72d1debd00cbfa116aab9e",
-  "candidate_hash": "sha256:01d5d13079e2c33b9ca781dfa98dd26ee3cf5837abf7fa38644e53b5d66209af",
+  "candidate_hash": "sha256:14411df3a7d1da401c4b22d7e649bb861d375e8fedc4236861b5e6aee252ede1",
   "stale_check_passed": false,
   "remote_updated_at_before": "2026-05-03T13:50:35.87382+00:00"
 }

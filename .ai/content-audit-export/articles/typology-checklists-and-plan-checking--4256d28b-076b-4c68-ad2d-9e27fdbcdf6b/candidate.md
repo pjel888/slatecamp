@@ -442,28 +442,13 @@ IS THE BUILDING LEGALLY COMPLIANT?
 
 _Module 13 | BP 344 2024 IRR LEA Review Series | Philippine context only_
 
-
 ---
 
-<LawCallout code="pd1096" section="Rule VII - Typology Checklists">
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
 
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="new"]
 
-Per BP 344 2024 IRR, every building typology has a set of non-negotiable accessibility elements. Missing any single item = fails accessibility compliance. The mandatory elements include: accessible parking (1 per 25 regular spaces, 3700×5000 mm + 1200 mm aisle), accessible route (≥1500 mm corridors with 1800×1800 mm turning spaces), accessible toilet (≥1700×1700 mm stall), and ISA signage.
-
-
-</LawCallout>
-
-<Warn >
-
-The most common exam error is assuming a checklist item is optional. In BP 344 compliance, every checklist item is mandatory. If a hospital has a ramp but no ISA signage, or a parking space but no access aisle — the building fails. There are no partial credits in plan checking.
-
-</Warn>
-
-<ExamTip >
-
-For LEA design problems, use the sequential flowchart: (1) Check parking → (2) Check route from parking to entrance → (3) Check entrance → (4) Check corridors → (5) Check vertical circulation → (6) Check destination rooms → (7) Check toilet rooms → (8) Check signage. Miss one step = miss the compliance issue.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
 
 ---
 
@@ -471,3 +456,5 @@ For LEA design problems, use the sequential flowchart: (1) Check parking → (2)
 
 **Building Permit Process**, **Legal Liability And Enforcement Workflow**, **Top 50 Traps 2024 Irr**, **Rule I General Provisions**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

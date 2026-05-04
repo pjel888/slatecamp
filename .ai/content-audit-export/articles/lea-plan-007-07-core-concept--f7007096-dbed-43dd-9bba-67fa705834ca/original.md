@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Identify professional organizations (UAP, PIEP, PICE) and their enabling laws (RA 9266, RA 10587, RA 544), distinguish architect from environmental planner scopes of practice, and apply ethical standards to professional practice scenarios.
+
 Professional organizations and enabling legislation establish standards for architects, planners, and environmental planners in the Philippines. These organizations and laws create licensing frameworks, ethical standards, and professional credentials that govern practice.
+
 
 ## Core Concept
 
@@ -27,6 +31,13 @@ In practice, CLUPs are prepared by planning teams that may include architects (U
 3. **Practice scope:** "Can an architect practice planning?" → Yes, under RA 9266. "Is planning a separate licensed profession?" → Yes, under RA 10587.
 
 <Tip>**Memory aid:** UAP + RA 9266 = architects (older profession, broader scope). PIEP + RA 10587 = environmental planners (newer profession, planning-specific mandate). Both can contribute to planning; EnPs have the statutory CLUP mandate.</Tip>
+
+
+**Exam Tip:** RA 9266 (Architecture Act of 2004) governs architects. RA 10587 (Environmental Planning Act of 2013) governs environmental planners. An architect CAN do site planning under RA 9266 but CANNOT claim the title 'environmental planner' without RA 10587 licensure.
+
+## Cross-References
+
+See **LEA-PLAN-007-06** (Key Figures) for professionals in practice, **LEA-PLAN-001-05** (CLUP Process) for Environmental Planner mandate, and **LEA-DSGN-007-04** (Design Process) for architect scope under RA 9266.
 
 ## Common Mistakes
 

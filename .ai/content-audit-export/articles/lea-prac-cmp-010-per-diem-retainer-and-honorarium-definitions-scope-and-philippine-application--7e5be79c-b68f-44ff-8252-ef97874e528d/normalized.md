@@ -1,11 +1,5 @@
 ## Per Diem, Retainer, and Honorarium — Definitions, Scope, and Philippine Application
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
-Extracted summary:
-- Props: name="ArticleHeader", article="LEA-PRAC-CMP-010"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -27,25 +21,20 @@ Per Diem works well for Construction Administration when the architect's on-site
 Extracted summary:
 - Props: (none)
 
-\
-Extracted summary:
-- Props: 
-- Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+**LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→
+</Note>
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: code=irr, section=Architect's Guidelines / SPP 202, title=Fee Computation — Regulatory Basis
 - Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction C...
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
 Extracted summary:
 - Props: items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}]
 - Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 - Text: Note: Per Diem rates are distinct from hourly rates. A Per Diem covers a full day regardless of hours worked, while hourly rates charge by actual time spent. The contract must clearly specify which method applies to avoid billing disputes.
-[/SLATECAMP_UI_BLOCK]
 
 Per Diem is also appropriate for specialized consultation where the architect provides expert analysis or recommendations. A facade consultant providing limited analysis, a sustainable design expert advising on building performance, or a heritage conservation specialist providing periodic guidance might charge Per Diem rates for their specialized time.
 
@@ -77,7 +66,6 @@ These methods work well in combination with primary project fees. An architect m
 Extracted summary:
 - Props: variant="lea-watch", title="Exam Tip"
 - Text: Exam Tip — The LEA frequently tests whether candidates can identify the correct compensation method for a given scenario. Remember: Per Diem = field/site work, Retainer = ongoing availability, Honorarium = one-time expert contribution. Mixing these up is a common error.
-[/SLATECAMP_UI_BLOCK]
 
 ### Documentation and Clarity
 
@@ -97,6 +85,9 @@ Per Diem, Retainer, and Honorarium should complement—not replace—appropriate
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Compensation Methods Comparison — Per Diem, Retainer, and Honorarium" description="Three-column comparison table showing Per Diem (daily rate, site visits/CA), Retainer (monthly fixed, ongoing availability), and Honorarium (discretionary, expert opinion). Each column shows: basis of payment, typical use cases, billing mechanism, and Philippine practice examples. Decision criteria at bottom for when to use each method." />
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

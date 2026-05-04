@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Coordinate water supply, sewage, stormwater, electrical, telecommunications, and gas utility systems within site plans, apply easement requirements per PD 1096 and utility standards, and design utility routing that minimizes conflicts with buildings and landscape.
+
 Site utilities and infrastructure form the hidden backbone of every development. Water supply, sewage, stormwater, electrical power, telecommunications, and gas service must be coordinated into efficient, resilient networks that serve the building while respecting public rights-of-way and environmental standards. Understanding utility routing, easement requirements, and integration logistics is essential to feasible site planning.
+
 
 ## Core Concept
 
@@ -130,6 +134,13 @@ A 12-story building requires 20 psi minimum at the top floor (12 × 4.34 psi/sto
 A site plan shows water main, sewage line, electrical conduit, and gas line all crossing in narrow trenches. Recommend rerouting or stacking to eliminate conflicts and ensure safety.
 
 <Tip>**Utility Memory Aids:** Water = pressure + storage if needed. Sewage = 1% slope minimum (never flat). Stormwater = 2% slope or retention. Electrical = separated above wet utilities. Easements = PD 1067 (river 26m), road (6–10m), utilities (3–5m). These reduce buildable area; account early in site planning.</Tip>
+
+
+**Exam Tip:** Utility easement minimums vary: water main = 3m each side of pipe centerline, sewer = 2m, electrical = 2m, telecommunications = 1m. Always verify with the local utility provider. Coordinate utility routing BEFORE building layout.
+
+## Cross-References
+
+See **LEA-PLAN-004-06** (Utilities Assessment) for infrastructure capacity analysis, **LEA-DSGN-012-02** (Site Development) for utility routing in site plans, and **LEA-DSGN-012-03** (Grading and Drainage) for drainage utility coordination.
 
 ## Common Mistakes
 

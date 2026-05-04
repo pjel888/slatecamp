@@ -1,14 +1,13 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-The LEA tests the **tatami module** (3×6 shaku proportions driving interior space), the **torii gate** (Shinto threshold), **pagoda** typology (Buddhist vertical form), **shoji/fusuma screens** (sliding partitions), and specific temples like **Katsura Imperial Villa** (timber refinement) and **Ise Grand Shrine** (20-year rebuilding cycle and sacred archaeology). Recognize modular logic, spatial flexibility, and ritual function.
-</Callout>
+## Learning Goal
 
+Identify the five testable markers of Japanese architecture — tatami module, shoji/sliding screens, engawa (veranda), tokonoma alcove, and exposed wood joinery — and explain the cultural values (simplicity, transience, connection to nature) embodied in Japanese building design.
 ## Core Concept
 
-Japanese architecture adapts Chinese and indigenous traditions through modular spatial systems, natural materials, and spiritual reverence for wood. The **tatami** mat—a straw rectangle measuring 3 shaku × 6 shaku (approximately 0.9m × 1.8m, where 1 shaku = 30.3cm)—determines interior proportions: rooms measure 4.5 mats, 6 mats, 8 mats, etc., and ceiling heights sclea proportionally. This module enabled flexible residential design: screens and sliding doors (shoji and fusuma) allow rooms to expand, contract, or merge without structural walls. Permanence and impermanence coexist: wooden posts sink into stone or wooden sills; walls are paper-thin; earthquakes flex rather than fracture the frame.
+Japanese architecture adapts Chinese and indigenous traditions through modular spatial systems, natural materials, and spiritual reverence for wood. The **tatami** mat—a straw rectangle measuring 3 shaku × 6 shaku (approximately 0.9m × 1.8m, where 1 shaku = 30.3cm)—determines interior proportions: rooms measure 4.5 mats, 6 mats, 8 mats, etc., and ceiling heights scale proportionally. This module enabled flexible residential design: screens and sliding doors (shoji and fusuma) allow rooms to expand, contract, or merge without structural walls. Permanence and impermanence coexist: wooden posts sink into stone or wooden sills; walls are paper-thin; earthquakes flex rather than fracture the frame.
 
-Sacred architecture emphasizes wooden craft and ritual geography. The **torii gate**—a simple post-and-lintel structure of wood or stone—marks Shinto shrine boundaries, separating sacred from secular space. Multiple torii create ascending gradations of sanctity (as at Fushimi Inari, thousands of vermillion gates tunnel up the mountainside). The **pagoda** (derived from Chinese models) tapers upward through diminishing floor levels, typically 5 or 7 stories, with each story featuring a domed roof and radiating eaves supported by elaborate wooden brackets. Unlike Chinese equivleants, Japanese pagodas often house no relics or statuary—they stand as sculptural monuments affirming celestial aspiration.
+Sacred architecture emphasizes wooden craft and ritual geography. The **torii gate**—a simple post-and-lintel structure of wood or stone—marks Shinto shrine boundaries, separating sacred from secular space. Multiple torii create ascending gradations of sanctity (as at Fushimi Inari, thousands of vermillion gates tunnel up the mountainside). The **pagoda** (derived from Chinese models) tapers upward through diminishing floor levels, typically 5 or 7 stories, with each story featuring a domed roof and radiating eaves supported by elaborate wooden brackets. Unlike Chinese equivalents, Japanese pagodas often house no relics or statuary—they stand as sculptural monuments affirming celestial aspiration.
 
 <Tip>**Japanese architecture's five testable markers:**
 1. **Tatami mats** (3×6 shaku = 0.9m × 1.8m modular unit)
@@ -37,12 +36,15 @@ Garden integration shapes Japanese architectural presence. Buildings sit within 
 </ExamTip>
 <ExamTip>**Pattern 3:** Temporal and renewal concepts. "A major Shinto shrine is completely rebuilt every 20 years on adjacent ground. This practice, called ___, reflects which architectural principle?" (Answer: Shikinen Sengu; impermanence and sacred renewal.) Expect to understand how Japanese architecture treats time and impermanence differently from Western permanence-based thinking.</ExamTip>
 
+<Callout>
+The LEA tests the **tatami module** (3×6 shaku proportions driving interior space), the **torii gate** (Shinto threshold), **pagoda** typology (Buddhist vertical form), **shoji/fusuma screens** (sliding partitions), and specific temples like **Katsura Imperial Villa** (timber refinement) and **Ise Grand Shrine** (20-year rebuilding cycle and sacred archaeology). Recognize modular logic, spatial flexibility, and ritual function.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="** Confusing tatami dimensions. The standard tatami mat is 3 shaku × 6 shaku (approximately 0.9m × 1.8m in modern metric, or roughly 3ft × 6ft). Some regions vary (Tokyo vs. Kyoto standards differ slightly), but 3×6 is canonical. Don't reverse dimensions or conflate tatami with Western floor area units" correction="Mistake 2:** Treating torii as a uniquely decorative element. Torii are not ornament; they are cosmological thresholds marking the boundary between sacred (kami) and profane (human) space. Their function is spatial demarcation, not aesthetics." context="Multiple torii create a spiritual progression, not a tourist attraction, in the Shinto worldview." />
 
 <WikiMistakeCard mistake="** Misunderstanding Shikinen Sengu as preservation. The 20-year rebuild of Ise Grand Shrine is NOT aimed at preserving a fixed original; it is sacred renewal. The architecture intentionally embraces impermanence; each rebuild re-enacts the original act of creation. This is radical for Western preservation thinking—don't conflate it with restoration or conservation" correction="Mistake 4:** Overstating Chinese influence without acknowledging Japanese adaptation. While Japanese architecture incorporates pagoda forms and some structural principles from China, it fundamentally rethinks them through timber, modularity, and spiritual reverence for wood. Japanese architecture is not merely \"Chinese adapted\"; it is a distinct system." context="Acknowledge influence but identify Japanese innovations." />
-
 
 ## Key Terms
 
@@ -58,3 +60,10 @@ Garden integration shapes Japanese architectural presence. Buildings sit within 
 - **Pagoda (tou)**: Vertical Buddhist monument, typically 5 or 7 stories, with diminishing floor levels, domed roofs, and radiating eaves; often serves as sculptural rather than functional religious structure.
 
 <Warn>Do not confuse tatami dimensions or reverse them: tatami is **3 shaku × 6 shaku** (~0.9m × 1.8m), not the reverse. Do not treat torii gates as purely decorative—they are cosmological thresholds marking sacred/profane boundaries. Multiple torii (thousands at Fushimi Inari) create spiritual gradations, not visual spectacle. Japanese architecture is not merely "Chinese influenced"—while pagodas and some forms derive from China, Japanese architects fundamentally adapted them through wooden modularity, impermanence acceptance, and garden integration. Recognize these as distinct systems, not imitations.</Warn>
+
+## Related Articles
+
+See also within Asian & Pacific Architecture: **lea-hist-007-01-core-concept**, **lea-hist-007-02-core-concept**, **lea-hist-007-04-core-concept**, **lea-hist-007-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

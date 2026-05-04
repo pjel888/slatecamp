@@ -2,13 +2,18 @@
 
 Religious buildings—churches, chapels, and mosques—are classified as **Group C, Division C-2** (Education and Recreation - Institutional), with pew seating at 0.5-0.6 sqm/person, standing at 0.7-1.0 sqm/person, and nave ceiling typically 6.0 m. Mosques require qibla orientation near **289°** (clockwise from north) from Metro Manila, or approximately **19°** clockwise from west and wudu facilities at **1 faucet per 10 worshippers**.
 
+## Learning Goal
+
+Identify religious buildings as Group C occupancy, calculate seating and standing occupancy using pew density factors, determine nave ceiling height and sacristy dimensions, apply mosque-specific qibla orientation and wudu requirements, and verify fire egress compliance.
+
+
 ## Core Concept
 
 Religious buildings (churches, chapels, mosques, temples) are classified as **Group C** (education and recreation) per **RA 9514 2019 Revised IRR Rule 10** (table reference should be verified against current edition; occupancy classification per PD 1096 Rule VII Sec 701). This differs from assembly halls (Group H, used for sports/concerts), which have much larger standing occupancy densities. Pew-based seating in churches accommodates **0.5-0.6 sqm per seated person**; standing areas (narthex, aisles during overflow) use **0.7-1.0 sqm per person**. The nave (main worship space) requires minimum ceiling height of **6.0 m** to achieve adequate acoustics and visual sight lines to altar/pulpit.
 
 Sacristy (preparation room for clergy) is typically **12-18 sqm**, providing robing space and sacramental item storage. Confessionals are compact: **1.0 m × 1.5 m** per booth (priest + penitent separated). Choir lofts allocate **1.0 sqm per choir member**. Acoustic performance targets reverberation time (RT60) of **1.2-2.0 seconds**, achieved through material selection and volume optimization.
 
-Mosque-specific requirements include qibla (prayer direction) oriented approximately **273° from Manila** (adjusted by location). Wudu (ritual ablution) facilities provide *1 faucet per 10 worshippers (recommended practice)rate mlea/femlea if applicable), typically with low-height basins (0.6-0.8 m) and floor drainage. Heritage religious buildings often trigger **NHCP (National Heritage Commission of the Philippines) certification**, extending approval timelines but ensuring cultural preservation. Fire egress follows Group C: 45 m travel distance (unsprinklered) or 60 m (sprinklered), **7.6 mm per occupant** exit width (per RA 9514 2019 Revised IRR Rule 10 Table 10.2.5.1.1 for 'All Others' occupancy), dual exits at 50+ persons.
+Mosque-specific requirements include qibla (prayer direction) oriented approximately **273° from Manila** (adjusted by location). Wudu (ritual ablution) facilities provide *1 faucet per 10 worshippers (recommended practice)rate male/female if applicable), typically with low-height basins (0.6-0.8 m) and floor drainage. Heritage religious buildings often trigger **NHCP (National Heritage Commission of the Philippines) certification**, extending approval timelines but ensuring cultural preservation. Fire egress follows Group C: 45 m travel distance (unsprinklered) or 60 m (sprinklered), **7.6 mm per occupant** exit width (per RA 9514 2019 Revised IRR Rule 10 Table 10.2.5.1.1 for 'All Others' occupancy), dual exits at 50+ persons.
 
 ## Key Provisions
 
@@ -53,6 +58,13 @@ Manila's diverse religious landscape includes centuries-old churches (requiring 
 3. **Wudu Facility Requirement:** A 500-capacity mosque requires 50 wudu faucets. Candidates often underestimate this (providing only 10-15 faucets), creating prayer time delays and non-compliance.
 
 <Tip>**Religious Building Anchors:** Group C occupancy. Pew seating = 0.5–0.6 sqm/person. Standing = 0.7–1.0 sqm/person. Nave ceiling min = 6.0 m. Sacristy = 12–18 sqm. Confessional = 1 × 1.5 m. Mosque qibla ≈273° from Manila. Wudu = 1 faucet/10 worshippers. RT60 = 1.2–2.0 sec.</Tip>
+
+
+**Exam Tip — ERR-DSGN-023:** Ambulatory surgical centers are Group D with higher egress standards due to patients under sedation. Treatment room minimum = 12 sqm. Travel distance limits apply to all patient areas.
+
+## Cross-References
+
+See **LEA-DSGN-005-05** (Specialized Health Facilities) for Group D space standards, **LEA-DSGN-008-02** (Fire Separation) for institutional fire ratings, and **LEA-DSGN-007-08** (Human Factors) for accessible exam room layout.
 
 ## Common Mistakes
 

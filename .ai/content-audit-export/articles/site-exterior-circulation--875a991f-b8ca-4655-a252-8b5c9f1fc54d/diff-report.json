@@ -1,38 +1,46 @@
 {
   "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
   "slug": "site-exterior-circulation",
-  "generated_at": "2026-05-03T13:45:18.833Z",
-  "old_hash": "sha256:5de73065f826242db9f73955de86d521e9e17eec93d018727fdc63c753f25505",
-  "new_hash": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
-  "original_hash": "sha256:5de73065f826242db9f73955de86d521e9e17eec93d018727fdc63c753f25505",
-  "normalized_hash": "sha256:2747f369061b976828cd9f4ba3004a2383ab82d905e02d4fe2277c2d62e93193",
-  "candidate_hash": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
+  "generated_at": "2026-05-04T00:06:59.672Z",
+  "old_hash": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
+  "new_hash": "sha256:ad7cd1c06313dfc88104d3f68a15ea19a75df915061b3a768ff87a4dd344d36e",
+  "original_hash": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
+  "normalized_hash": "sha256:ad7cd1c06313dfc88104d3f68a15ea19a75df915061b3a768ff87a4dd344d36e",
+  "candidate_hash": "sha256:ad7cd1c06313dfc88104d3f68a15ea19a75df915061b3a768ff87a4dd344d36e",
   "changed": true,
-  "changed_line_count": 178,
-  "inserted_line_count": 26,
+  "changed_line_count": 141,
+  "inserted_line_count": 6,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 178,
-    "inserted": 26,
+    "changed": 141,
+    "inserted": 6,
     "deleted": 0,
-    "original_line_count": 152,
-    "candidate_line_count": 178
+    "original_line_count": 178,
+    "candidate_line_count": 184
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0003",
+      "ui_0004",
+      "ui_0006"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
 }

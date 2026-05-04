@@ -1,38 +1,47 @@
 {
   "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
   "slug": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions",
-  "generated_at": "2026-05-03T13:44:23.393Z",
-  "old_hash": "sha256:eeeba38e579a1cf8bd8c865a8b3dd91addf40899b4bbf55a81d802700ec4354a",
-  "new_hash": "sha256:066ade00f32f82afdc0703545473a0abdb508b596a2273b3d28c9c3f93ebe3ca",
-  "original_hash": "sha256:eeeba38e579a1cf8bd8c865a8b3dd91addf40899b4bbf55a81d802700ec4354a",
-  "normalized_hash": "sha256:c0ee35389cda1133b75e1cad8baf3159bfff1e006830d2ad4580f3e1f8983e43",
-  "candidate_hash": "sha256:066ade00f32f82afdc0703545473a0abdb508b596a2273b3d28c9c3f93ebe3ca",
+  "generated_at": "2026-05-04T00:05:57.289Z",
+  "old_hash": "sha256:066ade00f32f82afdc0703545473a0abdb508b596a2273b3d28c9c3f93ebe3ca",
+  "new_hash": "sha256:b359bb75108385c1b02d4aba8a78d13d0bd4e7c19e7ff762ac7c47c72464cdd0",
+  "original_hash": "sha256:066ade00f32f82afdc0703545473a0abdb508b596a2273b3d28c9c3f93ebe3ca",
+  "normalized_hash": "sha256:b359bb75108385c1b02d4aba8a78d13d0bd4e7c19e7ff762ac7c47c72464cdd0",
+  "candidate_hash": "sha256:b359bb75108385c1b02d4aba8a78d13d0bd4e7c19e7ff762ac7c47c72464cdd0",
   "changed": true,
-  "changed_line_count": 85,
-  "inserted_line_count": 40,
-  "deleted_line_count": 0,
+  "changed_line_count": 49,
+  "inserted_line_count": 0,
+  "deleted_line_count": 4,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 5,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 5,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 5,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 85,
-    "inserted": 40,
-    "deleted": 0,
-    "original_line_count": 51,
-    "candidate_line_count": 91
+    "changed": 49,
+    "inserted": 0,
+    "deleted": 4,
+    "original_line_count": 91,
+    "candidate_line_count": 87
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0003",
+      "ui_0004",
+      "ui_0005",
+      "ui_0006",
+      "ui_0007"
+    ],
+    "changed_count": 5
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 5 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
 }

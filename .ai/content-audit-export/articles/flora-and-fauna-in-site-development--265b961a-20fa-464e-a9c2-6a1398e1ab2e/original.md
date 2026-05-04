@@ -1,4 +1,8 @@
 # Flora and Fauna in Site Development
+## Learning Goal
+After reading this article, you should be able to:
+
+Apply environmental regulations for tree preservation and habitat protection during site development: identify protected species under DENR regulations; calculate tree preservation zone radii; determine when an Environmental Compliance Certificate (ECC) is required; and apply DENR buffer requirements for developments near protected areas and waterways.
 **An Immersive LEA Review Module**
 
 ---
@@ -11,6 +15,13 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## Core Concepts
 
+<Tip>
+
+**Memory Aid: "E-E-T = EIS, ECA, Tree Permit."** Three regulatory requirements for flora/fauna in site development: EIS System (PD 1586) — required for projects in ECAs or classified as ECPs; ECA (Environmentally Critical Areas) — watersheds, mangroves, NIPAS areas trigger the ECC requirement; Tree Cutting Permit (PD 705) — separate from building permit, required by DENR before removing any naturally grown tree.
+
+</Tip>
+
+
 - **Environmental Impact Statement (EIS) System (PD 1586 & DENR DAO 2003-30):** The Philippine EIS System, not PD 1096, is the governing framework for evaluating ecological impacts of development projects. Projects located in or adjacent to Environmentally Critical Areas (ECAs) — such as watersheds, mangrove swamps, coral reef areas, habitats of endangered species, and national parks — are required to secure an ECC from the DENR-EMB before construction.
 
 - **Environmentally Critical Areas (ECAs) vs. Environmentally Critical Projects (ECPs):** The EIS System classifies triggers into two categories. ECAs are sensitive locations (e.g., within NIPAS areas, prime agricultural land, near water bodies). ECPs are project types that inherently carry high environmental risk (e.g., heavy industries, mining, major infrastructure). A project can be triggered by either or both.
@@ -22,6 +33,13 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 ---
 
 ## The Hard Data (Cheat Sheet)
+
+<Example>
+
+**Philippine Application:** A 2-hectare mixed-use development in Antipolo borders a watershed reserve with 40+ mature Narra trees. Before building permit application, the architect must secure: (1) ECC from DENR-EMB (PD 1586), (2) Tree Cutting/Transplant Permit (PD 705), (3) Wildlife Gratuitous Permit if any threatened species are present (RA 9147). Root Protection Zones (RPZ = 12× DBH) must be marked on the site plan.
+
+</Example>
+
 
 | Parameter | Requirement / Standard | Governing Law / Regulation |
 |---|---|---|
@@ -41,6 +59,13 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 ---
 
 ## Crucial Formulas & Computations
+
+<ExamTip>
+
+**LEA Exam Pattern — Agency Confusion Trap:** The LEA frequently tests which agency handles which permit. Remember: DENR-EMB = EIS System and ECC issuance (PD 1586, DAO 2003-30). OBO (Office of the Building Official) = Building permit under PD 1096. If a question says "who issues the ECC?" the answer is DENR-EMB, NOT the OBO.
+
+</ExamTip>
+
 
 While flora/fauna preservation is primarily regulatory and qualitative, two quantitative tools frequently appear in EIA studies for site development:
 
@@ -89,6 +114,13 @@ This metric is used in EIA reports to demonstrate the ecological value of existi
 
 ---
 
+
+<Warn>
+
+⚠️ EXAM WARNING: The RPZ (Root Protection Zone) formula is RPZ = 12 × DBH (diameter at breast height, measured at 1.4 m above grade). This is the standard for Philippine EIA studies. Do NOT confuse it with the 5-meter PHIVOLCS fault buffer (geological hazard) or the 3–40 m PD 1067 easement (hydrology). Each has its own formula and regulatory trigger.
+
+</Warn>
+
 ## Active Recall Questions
 
 ### Question 1
@@ -123,3 +155,10 @@ D. 12.00 meters
 
 > **Answer: C. 7.20 meters**  
 > The RPZ radius = 12 × DBH = 12 × 0.60 m = 7.20 m. This means no excavation, grading, or compaction within 7.20 m of the trunk center. Option A (3.60 m) would result from incorrectly using 6× DBH. Option D (12 m) confuses the multiplier (12) with the result. The architect must either reroute the access road or justify tree removal through a DENR Tree Cutting Permit — but on the LEA, the safe answer is always to preserve and reroute.
+
+---
+
+## Cross‑References
+
+**Microclimate Analysis**, **Hydrology In Site Planning**, **Topography And Slope Analysis**, **Geological Hazards**
+

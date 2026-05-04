@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:17:48.896Z",
+  "attempted_at": "2026-05-04T00:06:38.562Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
   "slug": "pd-1096-rule-vii-area-metrics",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:d178115f769fc4c9027195e9ab97faa9592bff90871a4edd4b69b85656b442be",
-  "original_hash": "sha256:d178115f769fc4c9027195e9ab97faa9592bff90871a4edd4b69b85656b442be",
-  "candidate_hash": "sha256:87994895e9d2145cf0d3c7461be66262962d59c68025d3bb9395f792b8ab462c",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:b5c5cd65be2ab5e3d404a4d9cf434c68b1dcf1971d41425a0a59737742b39987",
+  "original_hash": "sha256:b5c5cd65be2ab5e3d404a4d9cf434c68b1dcf1971d41425a0a59737742b39987",
+  "candidate_hash": "sha256:5410b124281a6aba5f145d494382268404ea591dfb354045c2501a6313de3a51",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T16:38:17.074859+00:00"
 }

@@ -1,6 +1,15 @@
 ## What You Need to Know for the LEA
-Geotechnical terminology defines soil classification, fill behavior, compaction standards, and settlement mechanics. Soil bearing capacity, compaction methods, and settlement types are foundational to foundation design. Standard Penetration Test (SPT) quantifies soil density; consolidation and settlement predict superstructure movement. Master these terms to understand why certain foundations fail and others succeed.
 
+## Learning Goal
+
+By the end of this article, you will be able to:
+
+- Classify soil by type (clay, silt, sand, gravel) and estimate bearing capacity from SPT N-values
+- Define Proctor compaction and verify fill compliance from field density data
+- Distinguish immediate, primary consolidation, and secondary settlement
+- Explain how groundwater and soil compressibility affect foundation design
+
+---
 ## Core Concept
 Geotechnical engineering characterizes soil, predicts its behavior under load, and specifies construction practices to achieve stable foundations. Five core topics unite this field:
 
@@ -91,5 +100,12 @@ Metro Manila buildings almost universally encounter soft alluvial clay with SPT 
 **Memory Aid:** SPT N-value is your soil's report card. N < 10 = soft, weak, lots of settlement (piles!). N = 10–30 = medium, okay for shallow footing with care. N > 30 = strong, dense, shallow footing easy. Compaction is the contractor's promise: "90% Proctor" means 90% as stiff as the lab sample. Clay settles slow (consolidation); sand settles fast (immediate). Know your settlement type or face cracking.
 </Tip>
 
+
+## Related Articles
+
+See also: **Foundations** (lea-strc-011-02) for how soil properties drive foundation selection, **Piles** (lea-strc-011-01) for deep foundation soil-structure interaction, and **Earthquake Fundamentals** (lea-strc-004-01) for liquefaction and seismic soil behavior.
+
 ## Common Mistakes
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+
 <WikiMistakeList mistakes={["Assuming SPT N-values are absolute and precise; N-values have ±20% uncertainty and are affected by boring method, hammer efficiency, and soil moisture. Use N-values as estimates, not gospel.","Specifying compaction without verification; many projects specify 90% Proctor but never perform field density tests. Without verification, fill may be 70–80% Proctor, leading to settlement and failure.","Ignoring time-dependent settlement in clay; a building on soft clay may appear stable at 6 months (only immediate settlement has occurred) but crack at 2 years as primary consolidation continues. Monitor long-term.","Confusing bearing capacity with settlement. A soil may have adequate bearing capacity (no shear failure) but unacceptable settlement (foundation drops 100 mm). Both must be checked.","Omitting groundwater effects in bearing capacity; saturated soil has lower effective stress and lower bearing capacity than dry soil at the same SPT N-value. Always consider groundwater level."]} />

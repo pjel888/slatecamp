@@ -5,14 +5,14 @@
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:36793fc2022bf18b217cb6ef0dd5109daa4c10152fec41ce806d0cbe340b3114",
   "normalized_content_hash": "f3c0c1f51d8d36a63d0f0fe2dcedb7acbd25003c1fd610caeaa842ea71b11eef",
-  "ui_block_count": 9,
-  "total_blocks": 10,
+  "ui_block_count": 8,
+  "total_blocks": 8,
   "blocks": [
     {
       "block_id": "ui_0001",
       "block_type": "mdx_component",
-      "component_name": "TechnicalBox",
-      "raw": "<TechnicalBox title=\"AMI Architecture in Philippine Facilities\" color=\"blue\">\n<ul>\n<li>**Utility meter**: Primary revenue-grade meter from Meralco; records kWh and kW demand</li>\n<li>**Data collector/concentrator**: Aggregates sub-meter and sensor readings; communicates via GPRS or fiber to utility backend</li>\n<li>**Building-side gateway**: Receives AMI signals; interfaces with Building Energy Management System (BEMS)</li>\n<li>**Communications protocol**: Meralco uses IEC 62056-21 (DLMS/COSEM) for meter data exchange; buildings may use Modbus TCP or BACnet/IP internally</li>\n</ul>\n</TechnicalBox>",
+      "component_name": "Callout",
+      "raw": "<Callout title=\"AMI Architecture in Philippine Facilities\" color=\"blue\">\n<ul>\n<li>**Utility meter**: Primary revenue-grade meter from Meralco; records kWh and kW demand</li>\n<li>**Data collector/concentrator**: Aggregates sub-meter and sensor readings; communicates via GPRS or fiber to utility backend</li>\n<li>**Building-side gateway**: Receives AMI signals; interfaces with Building Energy Management System (BEMS)</li>\n<li>**Communications protocol**: Meralco uses IEC 62056-21 (DLMS/COSEM) for meter data exchange; buildings may use Modbus TCP or BACnet/IP internally</li>\n</ul>\n</Callout>",
       "raw_hash": "sha256:2be7b1e9353798613a97060b82a7d60443bdbe7e95fbd345e23ae17d288869d6",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"TechnicalBox\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"AMI Architecture in Philippine Facilities\", color=\"blue\"\n- Text: **Utility meter**: Primary revenue-grade meter from Meralco; records kWh and kW demand **Data collector/concentrator**: Aggregates sub-meter and sensor readings; communicates via GPRS or fiber to utility backend **Building-side gateway**: Receives AMI signals; interfaces with Building Energy Management System (BEMS) **Communications protocol**: Meralco uses IEC 62056-21 (DLMS/COSEM) for meter data exchange; buildings may use Modbus TCP or BACnet/IP internally\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:bcdce610feaec85171eabf9a44aca5999c6ed404bd57c6b4fa8f8aa6088f0932",
@@ -39,20 +39,20 @@
     {
       "block_id": "ui_0002",
       "block_type": "mdx_component",
-      "component_name": "DataTable",
-      "raw": "<DataTable columns={[\"End-Use Category\", \"Typical Range (% of Total)\", \"Philippine Office Baseline\"]} rows={[[\"HVAC (cooling, ventilation)\", \"40\u201355%\", \"48\u201352%\"], [\"Lighting (LED and conventional)\", \"20\u201330%\", \"22\u201328%\"], [\"Plug loads (equipment, IT)\", \"15\u201325%\", \"18\u201324%\"], [\"Water heating & sanitation\", \"5\u201310%\", \"6\u20139%\"], [\"Vertical transport (elevators)\", \"3\u20138%\", \"4\u20136%\"]]} />",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable columns={[\"End-Use Category\", \"Typical Range (% of Total)\", \"Philippine Office Baseline\"]} rows={[[\"HVAC (cooling, ventilation)\", \"40–55%\", \"48–52%\"], [\"Lighting (LED and conventional)\", \"20–30%\", \"22–28%\"], [\"Plug loads (equipment, IT)\", \"15–25%\", \"18–24%\"], [\"Water heating & sanitation\", \"5–10%\", \"6–9%\"], [\"Vertical transport (elevators)\", \"3–8%\", \"4–6%\"]]} />",
       "raw_hash": "sha256:bd2b97e9f3b2849770e52de455a629dad2bfc970178f220571053ebde3ff6843",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"DataTable\" status=\"preserved\"]\nExtracted summary:\n- Props: columns=\"{[\\\"End-Use Category\\\", \\\"Typical Range (% of Total)\\\", \\\"Philippine Office Baseline\\\"]}\", rows=\"{[[\\\"HVAC (cooling, ventilation)\\\", \\\"40\u201355%\\\", \\\"48\u201352%\\\"], [\\\"Lighting (LED and conventional)\\\", \\\"20\u201330%\\\", \\\"22\u201328%\\\"], [\\\"Plug loads (equipment, IT)\\\", \\\"15\u201325%\\\", \\\"18\u201324%\\\"], [\\\"Water heating & sanitation\\\", \\\"5\u201310%\\\", \\\"6\u20139%\\\"], [\\\"Vertical transport (elevators)\\\", \\\"3\u20138%\\\", \\\"4\u20136%\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"DataTable\" status=\"preserved\"]\nExtracted summary:\n- Props: columns=\"{[\\\"End-Use Category\\\", \\\"Typical Range (% of Total)\\\", \\\"Philippine Office Baseline\\\"]}\", rows=\"{[[\\\"HVAC (cooling, ventilation)\\\", \\\"40–55%\\\", \\\"48–52%\\\"], [\\\"Lighting (LED and conventional)\\\", \\\"20–30%\\\", \\\"22–28%\\\"], [\\\"Plug loads (equipment, IT)\\\", \\\"15–25%\\\", \\\"18–24%\\\"], [\\\"Water heating & sanitation\\\", \\\"5–10%\\\", \\\"6–9%\\\"], [\\\"Vertical transport (elevators)\\\", \\\"3–8%\\\", \\\"4–6%\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:68ace9daa5ea70d198a67de0d4ef3abfeab73ace4ef7d40b3cad5d4ef6cbb449",
       "props": {
         "columns": "{[\"End-Use Category\", \"Typical Range (% of Total)\", \"Philippine Office Baseline\"]}",
-        "rows": "{[[\"HVAC (cooling, ventilation)\", \"40\u201355%\", \"48\u201352%\"], [\"Lighting (LED and conventional)\", \"20\u201330%\", \"22\u201328%\"], [\"Plug loads (equipment, IT)\", \"15\u201325%\", \"18\u201324%\"], [\"Water heating & sanitation\", \"5\u201310%\", \"6\u20139%\"], [\"Vertical transport (elevators)\", \"3\u20138%\", \"4\u20136%\"]]}"
+        "rows": "{[[\"HVAC (cooling, ventilation)\", \"40–55%\", \"48–52%\"], [\"Lighting (LED and conventional)\", \"20–30%\", \"22–28%\"], [\"Plug loads (equipment, IT)\", \"15–25%\", \"18–24%\"], [\"Water heating & sanitation\", \"5–10%\", \"6–9%\"], [\"Vertical transport (elevators)\", \"3–8%\", \"4–6%\"]]}"
       },
       "props_json": {
         "columns": "{[\"End-Use Category\", \"Typical Range (% of Total)\", \"Philippine Office Baseline\"]}",
-        "rows": "{[[\"HVAC (cooling, ventilation)\", \"40\u201355%\", \"48\u201352%\"], [\"Lighting (LED and conventional)\", \"20\u201330%\", \"22\u201328%\"], [\"Plug loads (equipment, IT)\", \"15\u201325%\", \"18\u201324%\"], [\"Water heating & sanitation\", \"5\u201310%\", \"6\u20139%\"], [\"Vertical transport (elevators)\", \"3\u20138%\", \"4\u20136%\"]]}"
+        "rows": "{[[\"HVAC (cooling, ventilation)\", \"40–55%\", \"48–52%\"], [\"Lighting (LED and conventional)\", \"20–30%\", \"22–28%\"], [\"Plug loads (equipment, IT)\", \"15–25%\", \"18–24%\"], [\"Water heating & sanitation\", \"5–10%\", \"6–9%\"], [\"Vertical transport (elevators)\", \"3–8%\", \"4–6%\"]]}"
       },
-      "props_text": "columns={[\"End-Use Category\", \"Typical Range (% of Total)\", \"Philippine Office Baseline\"]} rows={[[\"HVAC (cooling, ventilation)\", \"40\u201355%\", \"48\u201352%\"], [\"Lighting (LED and conventional)\", \"20\u201330%\", \"22\u201328%\"], [\"Plug loads (equipment, IT)\", \"15\u201325%\", \"18\u201324%\"], [\"Water heating & sanitation\", \"5\u201310%\", \"6\u20139%\"], [\"Vertical transport (elevators)\", \"3\u20138%\", \"4\u20136%\"]]}",
+      "props_text": "columns={[\"End-Use Category\", \"Typical Range (% of Total)\", \"Philippine Office Baseline\"]} rows={[[\"HVAC (cooling, ventilation)\", \"40–55%\", \"48–52%\"], [\"Lighting (LED and conventional)\", \"20–30%\", \"22–28%\"], [\"Plug loads (equipment, IT)\", \"15–25%\", \"18–24%\"], [\"Water heating & sanitation\", \"5–10%\", \"6–9%\"], [\"Vertical transport (elevators)\", \"3–8%\", \"4–6%\"]]}",
       "children_raw": null,
       "children_text": null,
       "start_offset": 2529,
@@ -65,38 +65,12 @@
       "status": "preserved"
     },
     {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "JSXCode",
-      "raw": "<JSXCode language=\"jsx\">\n<CodeBlock>{`<EnergyDashboard\n  updateInterval=\"15 minutes\"\n  protocols={[\"Modbus RTU/TCP\", \"BACnet/IP\", \"MQTT\"]}\n  dataRetention=\"3 years minimum\"\n  timezone=\"Philippines/Manila (UTC+8)\"\n/>`}</CodeBlock>\n</JSXCode>",
-      "raw_hash": "sha256:96bc94e3c8e1b59d11b1c118cb343a11b3a415375bd9c915f36820a74e4450f2",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"JSXCode\" status=\"preserved\"]\nExtracted summary:\n- Props: language=\"jsx\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:1df92dd7761161686a9ad526d127ff9aacaaa4006a0758c436a0d3b0244d4ab7",
-      "props": {
-        "language": "jsx"
-      },
-      "props_json": {
-        "language": "jsx"
-      },
-      "props_text": "language=\"jsx\"",
-      "children_raw": "\n<CodeBlock>{`<EnergyDashboard\n  updateInterval=\"15 minutes\"\n  protocols={[\"Modbus RTU/TCP\", \"BACnet/IP\", \"MQTT\"]}\n  dataRetention=\"3 years minimum\"\n  timezone=\"Philippines/Manila (UTC+8)\"\n/>`}</CodeBlock>\n",
-      "children_text": null,
-      "start_offset": 3432,
-      "end_offset": 3672,
-      "line_start": 52,
-      "line_end": 59,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
       "block_id": "ui_0004",
       "block_type": "mdx_component",
-      "component_name": "LeartBox",
-      "raw": "<LeartBox severity=\"info\">\n**Energy anomalies detected by BEMS typically include:**\n- Demand spikes >15% above rolling 7-day baseline (suggests unscheduled equipment activation or fault)\n- Power factor &lt;0.90 at billing interval (indicates excessive reactive load; penalties apply under Meralco contracts)\n- Temperature setpoint drift >2\u00b0C from schedule (suggests thermostat malfunction)\n- Lighting consumption during unoccupied periods (vacancy sensors or occupancy sensors malfunctioning)\n</LeartBox>",
+      "component_name": "Callout",
+      "raw": "<Callout severity=\"info\">\n**Energy anomalies detected by BEMS typically include:**\n- Demand spikes >15% above rolling 7-day baseline (suggests unscheduled equipment activation or fault)\n- Power factor &lt;0.90 at billing interval (indicates excessive reactive load; penalties apply under Meralco contracts)\n- Temperature setpoint drift >2°C from schedule (suggests thermostat malfunction)\n- Lighting consumption during unoccupied periods (vacancy sensors or occupancy sensors malfunctioning)\n</Callout>",
       "raw_hash": "sha256:71767f4031eab5ba31db9e3f78f3dcf3069cee157c4041b6012adba14dc488fe",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"LeartBox\" status=\"preserved\"]\nExtracted summary:\n- Props: severity=\"info\"\n- Text: **Energy anomalies detected by BEMS typically include:** - Demand spikes >15% above rolling 7-day baseline (suggests unscheduled equipment activation or fault) - Power factor &lt;0.90 at billing interval (indicates excessive reactive load; penalties apply under Meralco contracts) - Temperature setpoint drift >2\u00b0C from schedule (suggests thermostat malfunction) - Lighting consumption during unoccupied periods (vacancy sensors or occupancy sensors malfunctioning)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"LeartBox\" status=\"preserved\"]\nExtracted summary:\n- Props: severity=\"info\"\n- Text: **Energy anomalies detected by BEMS typically include:** - Demand spikes >15% above rolling 7-day baseline (suggests unscheduled equipment activation or fault) - Power factor &lt;0.90 at billing interval (indicates excessive reactive load; penalties apply under Meralco contracts) - Temperature setpoint drift >2°C from schedule (suggests thermostat malfunction) - Lighting consumption during unoccupied periods (vacancy sensors or occupancy sensors malfunctioning)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:e35f494cfbf612c59d611b19a57212562a6336cc223315226f09fe97b68dcc39",
       "props": {
         "severity": "info"
@@ -105,8 +79,8 @@
         "severity": "info"
       },
       "props_text": "severity=\"info\"",
-      "children_raw": "\n**Energy anomalies detected by BEMS typically include:**\n- Demand spikes >15% above rolling 7-day baseline (suggests unscheduled equipment activation or fault)\n- Power factor &lt;0.90 at billing interval (indicates excessive reactive load; penalties apply under Meralco contracts)\n- Temperature setpoint drift >2\u00b0C from schedule (suggests thermostat malfunction)\n- Lighting consumption during unoccupied periods (vacancy sensors or occupancy sensors malfunctioning)\n",
-      "children_text": "**Energy anomalies detected by BEMS typically include:** - Demand spikes >15% above rolling 7-day baseline (suggests unscheduled equipment activation or fault) - Power factor &lt;0.90 at billing interval (indicates excessive reactive load; penalties apply under Meralco contracts) - Temperature setpoint drift >2\u00b0C from schedule (suggests thermostat malfunction) - Lighting consumption during unoccupied periods (vacancy sensors or occupancy sensors malfunctioning)",
+      "children_raw": "\n**Energy anomalies detected by BEMS typically include:**\n- Demand spikes >15% above rolling 7-day baseline (suggests unscheduled equipment activation or fault)\n- Power factor &lt;0.90 at billing interval (indicates excessive reactive load; penalties apply under Meralco contracts)\n- Temperature setpoint drift >2°C from schedule (suggests thermostat malfunction)\n- Lighting consumption during unoccupied periods (vacancy sensors or occupancy sensors malfunctioning)\n",
+      "children_text": "**Energy anomalies detected by BEMS typically include:** - Demand spikes >15% above rolling 7-day baseline (suggests unscheduled equipment activation or fault) - Power factor &lt;0.90 at billing interval (indicates excessive reactive load; penalties apply under Meralco contracts) - Temperature setpoint drift >2°C from schedule (suggests thermostat malfunction) - Lighting consumption during unoccupied periods (vacancy sensors or occupancy sensors malfunctioning)",
       "start_offset": 4299,
       "end_offset": 4803,
       "line_start": 73,
@@ -119,24 +93,24 @@
     {
       "block_id": "ui_0005",
       "block_type": "mdx_component",
-      "component_name": "ComparisonChart",
-      "raw": "<ComparisonChart title=\"Philippine Office Building Energy Indices\" categories={[\"Top Quartile\", \"Median\", \"Bottom Quartile\"]} data={[[\"Office (air-conditioned, 9\u20135 operation)\", 140, 220, 310], [\"Retail (extended hours, high-efficiency cooling)\", 220, 320, 450], [\"Hotel (24/7 operation, hot water intensive)\", 180, 280, 420]]} unit=\"kWh/m\u00b2/year\" />",
+      "component_name": "ComparisonTable",
+      "raw": "<ComparisonTable title=\"Philippine Office Building Energy Indices\" categories={[\"Top Quartile\", \"Median\", \"Bottom Quartile\"]} data={[[\"Office (air-conditioned, 9–5 operation)\", 140, 220, 310], [\"Retail (extended hours, high-efficiency cooling)\", 220, 320, 450], [\"Hotel (24/7 operation, hot water intensive)\", 180, 280, 420]]} unit=\"kWh/m²/year\" />",
       "raw_hash": "sha256:c1799a14c903bb6f2f18316381ba01cf49a423dad60bb8c53bb8ec64b94ff40a",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"ComparisonChart\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Philippine Office Building Energy Indices\", categories=\"{[\\\"Top Quartile\\\", \\\"Median\\\", \\\"Bottom Quartile\\\"]}\", data=\"{[[\\\"Office (air-conditioned, 9\u20135 operation)\\\", 140, 220, 310], [\\\"Retail (extended hours, high-efficiency cooling)\\\", 220, 320, 450], [\\\"Hotel (24/7 operation, hot water intensive)\\\", 180, 280, 420]]}\", unit=\"kWh/m\u00b2/year\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"ComparisonChart\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Philippine Office Building Energy Indices\", categories=\"{[\\\"Top Quartile\\\", \\\"Median\\\", \\\"Bottom Quartile\\\"]}\", data=\"{[[\\\"Office (air-conditioned, 9–5 operation)\\\", 140, 220, 310], [\\\"Retail (extended hours, high-efficiency cooling)\\\", 220, 320, 450], [\\\"Hotel (24/7 operation, hot water intensive)\\\", 180, 280, 420]]}\", unit=\"kWh/m²/year\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:334468ddd068f10db568fcc30e4594cbe5fd4edaded1ecdee13ceddfefbdc20e",
       "props": {
         "title": "Philippine Office Building Energy Indices",
         "categories": "{[\"Top Quartile\", \"Median\", \"Bottom Quartile\"]}",
-        "data": "{[[\"Office (air-conditioned, 9\u20135 operation)\", 140, 220, 310], [\"Retail (extended hours, high-efficiency cooling)\", 220, 320, 450], [\"Hotel (24/7 operation, hot water intensive)\", 180, 280, 420]]}",
-        "unit": "kWh/m\u00b2/year"
+        "data": "{[[\"Office (air-conditioned, 9–5 operation)\", 140, 220, 310], [\"Retail (extended hours, high-efficiency cooling)\", 220, 320, 450], [\"Hotel (24/7 operation, hot water intensive)\", 180, 280, 420]]}",
+        "unit": "kWh/m²/year"
       },
       "props_json": {
         "title": "Philippine Office Building Energy Indices",
         "categories": "{[\"Top Quartile\", \"Median\", \"Bottom Quartile\"]}",
-        "data": "{[[\"Office (air-conditioned, 9\u20135 operation)\", 140, 220, 310], [\"Retail (extended hours, high-efficiency cooling)\", 220, 320, 450], [\"Hotel (24/7 operation, hot water intensive)\", 180, 280, 420]]}",
-        "unit": "kWh/m\u00b2/year"
+        "data": "{[[\"Office (air-conditioned, 9–5 operation)\", 140, 220, 310], [\"Retail (extended hours, high-efficiency cooling)\", 220, 320, 450], [\"Hotel (24/7 operation, hot water intensive)\", 180, 280, 420]]}",
+        "unit": "kWh/m²/year"
       },
-      "props_text": "title=\"Philippine Office Building Energy Indices\" categories={[\"Top Quartile\", \"Median\", \"Bottom Quartile\"]} data={[[\"Office (air-conditioned, 9\u20135 operation)\", 140, 220, 310], [\"Retail (extended hours, high-efficiency cooling)\", 220, 320, 450], [\"Hotel (24/7 operation, hot water intensive)\", 180, 280, 420]]} unit=\"kWh/m\u00b2/year\"",
+      "props_text": "title=\"Philippine Office Building Energy Indices\" categories={[\"Top Quartile\", \"Median\", \"Bottom Quartile\"]} data={[[\"Office (air-conditioned, 9–5 operation)\", 140, 220, 310], [\"Retail (extended hours, high-efficiency cooling)\", 220, 320, 450], [\"Hotel (24/7 operation, hot water intensive)\", 180, 280, 420]]} unit=\"kWh/m²/year\"",
       "children_raw": null,
       "children_text": null,
       "start_offset": 5098,
@@ -151,20 +125,20 @@
     {
       "block_id": "ui_0006",
       "block_type": "mdx_component",
-      "component_name": "PriceBreakdown",
-      "raw": "<PriceBreakdown items={[[\"Off-peak (9 PM\u20139 AM weekdays, all-day weekends)\", \"PHP 2,100\u20132,400 per kW/month\"], [\"Semi-peak (9 AM\u201312 PM, 2 PM\u20139 PM weekdays)\", \"PHP 2,900\u20133,200 per kW/month\"], [\"Peak (12 PM\u20132 PM weekdays)\", \"PHP 4,200\u20134,700 per kW/month\"]]} note=\"Rates vary by voltage level (Low Voltage, LV; Medium Voltage, MV) and location; 2024 rates from ERC Order 2024-021.\" />",
+      "component_name": "KeyValues",
+      "raw": "<KeyValues items={[[\"Off-peak (9 PM–9 AM weekdays, all-day weekends)\", \"PHP 2,100–2,400 per kW/month\"], [\"Semi-peak (9 AM–12 PM, 2 PM–9 PM weekdays)\", \"PHP 2,900–3,200 per kW/month\"], [\"Peak (12 PM–2 PM weekdays)\", \"PHP 4,200–4,700 per kW/month\"]]} note=\"Rates vary by voltage level (Low Voltage, LV; Medium Voltage, MV) and location; 2024 rates from ERC Order 2024-021.\" />",
       "raw_hash": "sha256:e51f7b0fed2bf1934f4c01e7f1c7d897dfa340a4112d24b61ad481ffe0fbc9c1",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"PriceBreakdown\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[[\\\"Off-peak (9 PM\u20139 AM weekdays, all-day weekends)\\\", \\\"PHP 2,100\u20132,400 per kW/month\\\"], [\\\"Semi-peak (9 AM\u201312 PM, 2 PM\u20139 PM weekdays)\\\", \\\"PHP 2,900\u20133,200 per kW/month\\\"], [\\\"Peak (12 PM\u20132 PM weekdays)\\\", \\\"PHP 4,200\u20134,700 per kW/month\\\"]]}\", note=\"Rates vary by voltage level (Low Voltage, LV; Medium Voltage, MV) and location; 2024 rates from ERC Order 2024-021.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"PriceBreakdown\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[[\\\"Off-peak (9 PM–9 AM weekdays, all-day weekends)\\\", \\\"PHP 2,100–2,400 per kW/month\\\"], [\\\"Semi-peak (9 AM–12 PM, 2 PM–9 PM weekdays)\\\", \\\"PHP 2,900–3,200 per kW/month\\\"], [\\\"Peak (12 PM–2 PM weekdays)\\\", \\\"PHP 4,200–4,700 per kW/month\\\"]]}\", note=\"Rates vary by voltage level (Low Voltage, LV; Medium Voltage, MV) and location; 2024 rates from ERC Order 2024-021.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:3b4ac54f1418eaf73fd005ff986fc445c0a9b57901cc26dbe9fc4446560c3413",
       "props": {
-        "items": "{[[\"Off-peak (9 PM\u20139 AM weekdays, all-day weekends)\", \"PHP 2,100\u20132,400 per kW/month\"], [\"Semi-peak (9 AM\u201312 PM, 2 PM\u20139 PM weekdays)\", \"PHP 2,900\u20133,200 per kW/month\"], [\"Peak (12 PM\u20132 PM weekdays)\", \"PHP 4,200\u20134,700 per kW/month\"]]}",
+        "items": "{[[\"Off-peak (9 PM–9 AM weekdays, all-day weekends)\", \"PHP 2,100–2,400 per kW/month\"], [\"Semi-peak (9 AM–12 PM, 2 PM–9 PM weekdays)\", \"PHP 2,900–3,200 per kW/month\"], [\"Peak (12 PM–2 PM weekdays)\", \"PHP 4,200–4,700 per kW/month\"]]}",
         "note": "Rates vary by voltage level (Low Voltage, LV; Medium Voltage, MV) and location; 2024 rates from ERC Order 2024-021."
       },
       "props_json": {
-        "items": "{[[\"Off-peak (9 PM\u20139 AM weekdays, all-day weekends)\", \"PHP 2,100\u20132,400 per kW/month\"], [\"Semi-peak (9 AM\u201312 PM, 2 PM\u20139 PM weekdays)\", \"PHP 2,900\u20133,200 per kW/month\"], [\"Peak (12 PM\u20132 PM weekdays)\", \"PHP 4,200\u20134,700 per kW/month\"]]}",
+        "items": "{[[\"Off-peak (9 PM–9 AM weekdays, all-day weekends)\", \"PHP 2,100–2,400 per kW/month\"], [\"Semi-peak (9 AM–12 PM, 2 PM–9 PM weekdays)\", \"PHP 2,900–3,200 per kW/month\"], [\"Peak (12 PM–2 PM weekdays)\", \"PHP 4,200–4,700 per kW/month\"]]}",
         "note": "Rates vary by voltage level (Low Voltage, LV; Medium Voltage, MV) and location; 2024 rates from ERC Order 2024-021."
       },
-      "props_text": "items={[[\"Off-peak (9 PM\u20139 AM weekdays, all-day weekends)\", \"PHP 2,100\u20132,400 per kW/month\"], [\"Semi-peak (9 AM\u201312 PM, 2 PM\u20139 PM weekdays)\", \"PHP 2,900\u20133,200 per kW/month\"], [\"Peak (12 PM\u20132 PM weekdays)\", \"PHP 4,200\u20134,700 per kW/month\"]]} note=\"Rates vary by voltage level (Low Voltage, LV; Medium Voltage, MV) and location; 2024 rates from ERC Order 2024-021.\"",
+      "props_text": "items={[[\"Off-peak (9 PM–9 AM weekdays, all-day weekends)\", \"PHP 2,100–2,400 per kW/month\"], [\"Semi-peak (9 AM–12 PM, 2 PM–9 PM weekdays)\", \"PHP 2,900–3,200 per kW/month\"], [\"Peak (12 PM–2 PM weekdays)\", \"PHP 4,200–4,700 per kW/month\"]]} note=\"Rates vary by voltage level (Low Voltage, LV; Medium Voltage, MV) and location; 2024 rates from ERC Order 2024-021.\"",
       "children_raw": null,
       "children_text": null,
       "start_offset": 5776,
@@ -179,18 +153,18 @@
     {
       "block_id": "ui_0007",
       "block_type": "mdx_component",
-      "component_name": "SensorTable",
-      "raw": "<SensorTable sensors={[[\"Temperature/Humidity (RH)\", \"\u00b10.5\u00b0C / \u00b13% RH\", \"BACnet/MQTT\"], [\"Occupancy (PIR, CO\u2082)\", \"0\u2013500 persons\", \"Modbus, wireless 802.15.4\"], [\"Illuminance (lux meter)\", \"0\u20132000 lux\", \"BACnet, LoRaWAN\"], [\"Power quality (true RMS)\", \"V, I, PF, THD, harmonics\", \"Modbus, Ethernet\"], [\"Meter (sub-level)\", \"kWh, kW, kVAR, power factor\", \"Modbus RTU, DLMS\"]]} />",
+      "component_name": "WikiExamTable",
+      "raw": "<WikiExamTable sensors={[[\"Temperature/Humidity (RH)\", \"±0.5°C / ±3% RH\", \"BACnet/MQTT\"], [\"Occupancy (PIR, CO₂)\", \"0–500 persons\", \"Modbus, wireless 802.15.4\"], [\"Illuminance (lux meter)\", \"0–2000 lux\", \"BACnet, LoRaWAN\"], [\"Power quality (true RMS)\", \"V, I, PF, THD, harmonics\", \"Modbus, Ethernet\"], [\"Meter (sub-level)\", \"kWh, kW, kVAR, power factor\", \"Modbus RTU, DLMS\"]]} />",
       "raw_hash": "sha256:faa19d656d04cf51ae4ad9506634036d72d9c3d783081bc5d79c856e4a89ac55",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"SensorTable\" status=\"preserved\"]\nExtracted summary:\n- Props: sensors=\"{[[\\\"Temperature/Humidity (RH)\\\", \\\"\u00b10.5\u00b0C / \u00b13% RH\\\", \\\"BACnet/MQTT\\\"], [\\\"Occupancy (PIR, CO\u2082)\\\", \\\"0\u2013500 persons\\\", \\\"Modbus, wireless 802.15.4\\\"], [\\\"Illuminance (lux meter)\\\", \\\"0\u20132000 lux\\\", \\\"BACnet, LoRaWAN\\\"], [\\\"Power quality (true RMS)\\\", \\\"V, I, PF, THD, harmonics\\\", \\\"Modbus, Ethernet\\\"], [\\\"Meter (sub-level)\\\", \\\"kWh, kW, kVAR, power factor\\\", \\\"Modbus RTU, DLMS\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"SensorTable\" status=\"preserved\"]\nExtracted summary:\n- Props: sensors=\"{[[\\\"Temperature/Humidity (RH)\\\", \\\"±0.5°C / ±3% RH\\\", \\\"BACnet/MQTT\\\"], [\\\"Occupancy (PIR, CO₂)\\\", \\\"0–500 persons\\\", \\\"Modbus, wireless 802.15.4\\\"], [\\\"Illuminance (lux meter)\\\", \\\"0–2000 lux\\\", \\\"BACnet, LoRaWAN\\\"], [\\\"Power quality (true RMS)\\\", \\\"V, I, PF, THD, harmonics\\\", \\\"Modbus, Ethernet\\\"], [\\\"Meter (sub-level)\\\", \\\"kWh, kW, kVAR, power factor\\\", \\\"Modbus RTU, DLMS\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:5b3a21afb9224fa05460ae2f538b4d47917d43b621efeb0dcac0a52d75c0fac2",
       "props": {
-        "sensors": "{[[\"Temperature/Humidity (RH)\", \"\u00b10.5\u00b0C / \u00b13% RH\", \"BACnet/MQTT\"], [\"Occupancy (PIR, CO\u2082)\", \"0\u2013500 persons\", \"Modbus, wireless 802.15.4\"], [\"Illuminance (lux meter)\", \"0\u20132000 lux\", \"BACnet, LoRaWAN\"], [\"Power quality (true RMS)\", \"V, I, PF, THD, harmonics\", \"Modbus, Ethernet\"], [\"Meter (sub-level)\", \"kWh, kW, kVAR, power factor\", \"Modbus RTU, DLMS\"]]}"
+        "sensors": "{[[\"Temperature/Humidity (RH)\", \"±0.5°C / ±3% RH\", \"BACnet/MQTT\"], [\"Occupancy (PIR, CO₂)\", \"0–500 persons\", \"Modbus, wireless 802.15.4\"], [\"Illuminance (lux meter)\", \"0–2000 lux\", \"BACnet, LoRaWAN\"], [\"Power quality (true RMS)\", \"V, I, PF, THD, harmonics\", \"Modbus, Ethernet\"], [\"Meter (sub-level)\", \"kWh, kW, kVAR, power factor\", \"Modbus RTU, DLMS\"]]}"
       },
       "props_json": {
-        "sensors": "{[[\"Temperature/Humidity (RH)\", \"\u00b10.5\u00b0C / \u00b13% RH\", \"BACnet/MQTT\"], [\"Occupancy (PIR, CO\u2082)\", \"0\u2013500 persons\", \"Modbus, wireless 802.15.4\"], [\"Illuminance (lux meter)\", \"0\u20132000 lux\", \"BACnet, LoRaWAN\"], [\"Power quality (true RMS)\", \"V, I, PF, THD, harmonics\", \"Modbus, Ethernet\"], [\"Meter (sub-level)\", \"kWh, kW, kVAR, power factor\", \"Modbus RTU, DLMS\"]]}"
+        "sensors": "{[[\"Temperature/Humidity (RH)\", \"±0.5°C / ±3% RH\", \"BACnet/MQTT\"], [\"Occupancy (PIR, CO₂)\", \"0–500 persons\", \"Modbus, wireless 802.15.4\"], [\"Illuminance (lux meter)\", \"0–2000 lux\", \"BACnet, LoRaWAN\"], [\"Power quality (true RMS)\", \"V, I, PF, THD, harmonics\", \"Modbus, Ethernet\"], [\"Meter (sub-level)\", \"kWh, kW, kVAR, power factor\", \"Modbus RTU, DLMS\"]]}"
       },
-      "props_text": "sensors={[[\"Temperature/Humidity (RH)\", \"\u00b10.5\u00b0C / \u00b13% RH\", \"BACnet/MQTT\"], [\"Occupancy (PIR, CO\u2082)\", \"0\u2013500 persons\", \"Modbus, wireless 802.15.4\"], [\"Illuminance (lux meter)\", \"0\u20132000 lux\", \"BACnet, LoRaWAN\"], [\"Power quality (true RMS)\", \"V, I, PF, THD, harmonics\", \"Modbus, Ethernet\"], [\"Meter (sub-level)\", \"kWh, kW, kVAR, power factor\", \"Modbus RTU, DLMS\"]]}",
+      "props_text": "sensors={[[\"Temperature/Humidity (RH)\", \"±0.5°C / ±3% RH\", \"BACnet/MQTT\"], [\"Occupancy (PIR, CO₂)\", \"0–500 persons\", \"Modbus, wireless 802.15.4\"], [\"Illuminance (lux meter)\", \"0–2000 lux\", \"BACnet, LoRaWAN\"], [\"Power quality (true RMS)\", \"V, I, PF, THD, harmonics\", \"Modbus, Ethernet\"], [\"Meter (sub-level)\", \"kWh, kW, kVAR, power factor\", \"Modbus RTU, DLMS\"]]}",
       "children_raw": null,
       "children_text": null,
       "start_offset": 6517,
@@ -205,8 +179,8 @@
     {
       "block_id": "ui_0008",
       "block_type": "mdx_component",
-      "component_name": "ComplianceChecklist",
-      "raw": "<ComplianceChecklist items={[[\"Energy baseline established (kWh, kW, BEI)\", \"Initial audit only\"], [\"Sub-metering installed at prescribed granularity\", \"Within 12 months of baseline\"], [\"Monthly consumption tracking vs. baseline\", \"Ongoing\"], [\"Quarterly anomaly review and corrective action log\", \"Ongoing\"], [\"Annual ECMP update and progress report to DOE\", \"By December 31 each year\"]]} />",
+      "component_name": "ProcessFlow",
+      "raw": "<ProcessFlow items={[[\"Energy baseline established (kWh, kW, BEI)\", \"Initial audit only\"], [\"Sub-metering installed at prescribed granularity\", \"Within 12 months of baseline\"], [\"Monthly consumption tracking vs. baseline\", \"Ongoing\"], [\"Quarterly anomaly review and corrective action log\", \"Ongoing\"], [\"Annual ECMP update and progress report to DOE\", \"By December 31 each year\"]]} />",
       "raw_hash": "sha256:469338f7dd4f18273ac7b4f951761babfd6cf13e4530a44d47e23352507eed0b",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0008 component=\"ComplianceChecklist\" status=\"preserved\"]\nExtracted summary:\n- Props: items=\"{[[\\\"Energy baseline established (kWh, kW, BEI)\\\", \\\"Initial audit only\\\"], [\\\"Sub-metering installed at prescribed granularity\\\", \\\"Within 12 months of baseline\\\"], [\\\"Monthly consumption tracking vs. baseline\\\", \\\"Ongoing\\\"], [\\\"Quarterly anomaly review and corrective action log\\\", \\\"Ongoing\\\"], [\\\"Annual ECMP update and progress report to DOE\\\", \\\"By December 31 each year\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:bb7fa3adce4944d0dc00cb1ec545c54bc544e6162b37c1a94db6d66f5c62bb86",
@@ -231,18 +205,18 @@
     {
       "block_id": "ui_0009",
       "block_type": "mdx_component",
-      "component_name": "DataQualitySpec",
-      "raw": "<DataQualitySpec spec={{\"completeness\": \"\u226599.5% of expected 15-min intervals recorded\", \"accuracy\": \"\u00b11.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\", \"timeliness\": \"Data upload to BEMS within 1 hour of collection\", \"auditability\": \"Tamper-evident logs; change history retained \u22653 years\"}} />",
+      "component_name": "Note",
+      "raw": "<Note spec={{\"completeness\": \"≥99.5% of expected 15-min intervals recorded\", \"accuracy\": \"±1.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\", \"timeliness\": \"Data upload to BEMS within 1 hour of collection\", \"auditability\": \"Tamper-evident logs; change history retained ≥3 years\"}} />",
       "raw_hash": "sha256:a033995edf41e4a69fa222de5641753efb4dea168ca93d5319772c93ffeef712",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0009 component=\"DataQualitySpec\" status=\"preserved\"]\nExtracted summary:\n- Props: spec=\"{{\\\"completeness\\\": \\\"\u226599.5% of expected 15-min intervals recorded\\\", \\\"accuracy\\\": \\\"\u00b11.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\\\", \\\"timeliness\\\": \\\"Data upload to BEMS within 1 hour of collection\\\", \\\"auditability\\\": \\\"Tamper-evident logs; change history retained \u22653 years\\\"}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0009 component=\"DataQualitySpec\" status=\"preserved\"]\nExtracted summary:\n- Props: spec=\"{{\\\"completeness\\\": \\\"≥99.5% of expected 15-min intervals recorded\\\", \\\"accuracy\\\": \\\"±1.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\\\", \\\"timeliness\\\": \\\"Data upload to BEMS within 1 hour of collection\\\", \\\"auditability\\\": \\\"Tamper-evident logs; change history retained ≥3 years\\\"}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:85a7d8dbee33a07f42371c6001932b982692726a937849079254375dad2f138d",
       "props": {
-        "spec": "{{\"completeness\": \"\u226599.5% of expected 15-min intervals recorded\", \"accuracy\": \"\u00b11.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\", \"timeliness\": \"Data upload to BEMS within 1 hour of collection\", \"auditability\": \"Tamper-evident logs; change history retained \u22653 years\"}"
+        "spec": "{{\"completeness\": \"≥99.5% of expected 15-min intervals recorded\", \"accuracy\": \"±1.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\", \"timeliness\": \"Data upload to BEMS within 1 hour of collection\", \"auditability\": \"Tamper-evident logs; change history retained ≥3 years\"}"
       },
       "props_json": {
-        "spec": "{{\"completeness\": \"\u226599.5% of expected 15-min intervals recorded\", \"accuracy\": \"\u00b11.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\", \"timeliness\": \"Data upload to BEMS within 1 hour of collection\", \"auditability\": \"Tamper-evident logs; change history retained \u22653 years\"}"
+        "spec": "{{\"completeness\": \"≥99.5% of expected 15-min intervals recorded\", \"accuracy\": \"±1.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\", \"timeliness\": \"Data upload to BEMS within 1 hour of collection\", \"auditability\": \"Tamper-evident logs; change history retained ≥3 years\"}"
       },
-      "props_text": "spec={{\"completeness\": \"\u226599.5% of expected 15-min intervals recorded\", \"accuracy\": \"\u00b11.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\", \"timeliness\": \"Data upload to BEMS within 1 hour of collection\", \"auditability\": \"Tamper-evident logs; change history retained \u22653 years\"}}",
+      "props_text": "spec={{\"completeness\": \"≥99.5% of expected 15-min intervals recorded\", \"accuracy\": \"±1.5% for kilowatt-hour totals (Class 2 meter per IEC 62052-11)\", \"timeliness\": \"Data upload to BEMS within 1 hour of collection\", \"auditability\": \"Tamper-evident logs; change history retained ≥3 years\"}}",
       "children_raw": null,
       "children_text": null,
       "start_offset": 8849,

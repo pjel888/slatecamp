@@ -4,6 +4,11 @@
 Early Christian architecture established the **basilica** as the dominant church form, directly influencing all Western religious architecture. Byzantine refinement of this type, especially through the **pendentive dome**, creates structural and design questions on every board exam.
 </Callout>
 
+
+## Learning Goal
+
+Distinguish Early Christian basilica plans from Byzantine centralized domed churches and explain the pendentive dome innovation as exemplified by Hagia Sophia.
+
 ## Core Concept
 
 Early Christian and Byzantine architecture represent the bridge between Roman building traditions and Medieval Europe. Early Christians (4th–5th centuries) inherited Roman **basilica** forms—rectangular halls with colonnaded aisles—but repurposed them as places of worship after Constantine's legalization of Christianity in 313 CE. The altar replaced the Roman magistrate's seat; the longitudinal plan emphasized procession toward the sacred east end.
@@ -71,3 +76,12 @@ Byzantine aesthetics emphasize:
 - **Centralized plan**: A church plan organized around a central vertical axis (dome) rather than a linear procession (basilica)
 - **Tesserae**: Small glass or stone cubes used in mosaics
 - **Transept**: The cross arm of a cruciform church plan
+
+<Tip>**Basilica vs. Byzantine Quick Guide:** Basilica = linear, rows of columns, timber roof, procession toward altar. Byzantine = centralized, dome on pendentives, luminous mosaics, spatial unity under one vault. The shift from linear to centralized is a major LEA topic.</Tip>
+
+## Related Articles
+
+See also within Medieval to Baroque: **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**, **lea-hist-002-05-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

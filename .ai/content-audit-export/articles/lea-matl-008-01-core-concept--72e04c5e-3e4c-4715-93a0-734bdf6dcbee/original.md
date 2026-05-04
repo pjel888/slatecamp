@@ -1,16 +1,16 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Door hardware specifies the mechanical components that control door movement, security, and egress. LEA exams test your ability to classify hardware by ANSI/BHMA grade, apply BP 344 requirements for lever handles, and identify fire-rated assemblies per RA 9514.
-
+Classify door hardware (hinges, locksets, closers, panic devices, exit hardware) by function, ANSI grade (Grade 1, 2, 3), application, and fire-rating requirements, and identify correct hardware for different door types and occupancy classifications.
 ## Core Concept
 
 Door hardware is a complete system comprising hinges, locksets, closers, and exit devices that must work together to meet operational, safety, and code requirements. The ANSI/BHMA standard establishes three performance grades based on cycle testing and impact resistance, but cycle requirements vary by hardware type and standard. For example, bored locks per ANSI/BHMA A156.2 require Grade 1: 1,000,000 cycles, Grade 2: 400,000 cycles, Grade 3: 200,000 cycles. Butt hinges per A156.1 require Grade 1: 2,500,000 cycles. Grade 1 hardware is mandatory for high-traffic commercial spaces. Grade 2 hardware is suitable for medium-traffic commercial or high-end residential applications. Grade 3 hardware is limited to light-duty residential use.
 
-Hinges are classified by mounting type and operation. Butt hinges are the most common, mortised into the door and frame edges. Continuous (piano) hinges run the full door height, distributing load more evenly and preferred for fire-rated doors. Pivot hinges support heavy doors or glass doors by mounting at top and bottom of the door frame. Spring hinges automatically return doors to closed position. Concelead hinges hide within the door, providing a seamless aesthetic for medium-duty applications.
+Hinges are classified by mounting type and operation. Butt hinges are the most common, mortised into the door and frame edges. Continuous (piano) hinges run the full door height, distributing load more evenly and preferred for fire-rated doors. Pivot hinges support heavy doors or glass doors by mounting at top and bottom of the door frame. Spring hinges automatically return doors to closed position. concealed hinges hide within the door, providing a seamless aesthetic for medium-duty applications.
 
 Locksets include the knob or lever, latch mechanism, and deadbolt. Cylindrical locks house all components in the knob and are fastest to install but offer lower security. Mortise locks provide superior security with separate latch and deadbolt mechanisms, required in Grade 1 commercial applications. BP 344 2024 Revised IRR requires lever handles rather than knobs on accessible routes, as levers require less grip strength and can be operated with closed fists or forearms.
 
-Door closers control closing speed and ensure positive latching. Surface-mounted closers are visible and mounted on the door face or frame. Concelead closers hide within the door frame, preferred for aesthetic or high-traffic applications where closing force cannot be tampered with. Floor springs are the heaviest duty closers but require substantial floor modification.
+Door closers control closing speed and ensure positive latching. Surface-mounted closers are visible and mounted on the door face or frame. concealed closers hide within the door frame, preferred for aesthetic or high-traffic applications where closing force cannot be tampered with. Floor springs are the heaviest duty closers but require substantial floor modification.
 
 Exit devices (panic hardware) are spring-loaded bars that allow instant egress when pushed, critical for life safety. Force resistance varies by standard and test (e.g., lever strength tests often 360 lbf across grades per some lock standards). Fire-rated assemblies must include self-closing mechanisms and fire-rated hardware certified per RA 9514 standards.
 
@@ -26,7 +26,7 @@ Exit devices (panic hardware) are spring-loaded bars that allow instant egress w
 | Lever Handle Requirement               | BP 344 2024 Revised IRR                                                 | BP 344           | All accessible routes; knobs prohibited                   |
 | Fire-Rated Door Closer                 | Self-closing mandatory                                                  | RA 9514          | All fire-rated assemblies; integrates with hardware       |
 | Butt Hinge Load Capacity               | Grade 1: 750 lbf per hinge pair                                         | ANSI/BHMA        | Three hinges minimum for full-height doors                |
-| Philippine Certification               | UL, FM, or equivleant                                                   | Local adoption   | Hardware brands: Ylea, Dorma, Geze                        |
+| Philippine Certification               | UL, FM, or equivalent                                                   | Local adoption   | Hardware brands: Ylea, Dorma, Geze                        |
 
 ## Philippine Construction Context
 
@@ -72,3 +72,10 @@ The Philippine Building Code (PBC) adopts ANSI/BHMA standards for door hardware 
     'Selecting stainless steel hardware for coastal typhoon zones without verifying saltwater-grade certification',
   ]}
 />
+
+## Related Articles
+
+See also within Hardware, Joints, and Fasteners: **lea-matl-008-02-core-concept**, **lea-matl-008-03-core-concept**, **lea-matl-008-04-core-concept**, **lea-matl-008-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

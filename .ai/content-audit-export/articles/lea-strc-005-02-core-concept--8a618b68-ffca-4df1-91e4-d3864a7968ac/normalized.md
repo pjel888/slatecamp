@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Strength reduction factors (φ) are multipliers applied to material strength to account for variability in construction quality, material properties, and analysis methods. They range from 0.70 to 0.90 depending on the failure mode and reinforcement type. You must memorize the complete φ factor table and understand which factor applies to each structural situation.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-005-02-core-concept" a type="image" caption="Structural Design Capacity Check — Demand vs Capacity Comparison" description="Flowchart showing the structural design verification process: (1) Determine required strength U (demand from factored loads); (2) Determine nominal strength Rn (material-specific capacity); (3) Apply resistance factor φ (LRFD) or safety factor FS (ASD); (4) Verify φRn ≥ U. Illustrated with beam section showing stress distribution at nominal capacity." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Once the required strength _U_ is determined from load combinations, the structural member must be designed to have a nominal strength _S_n_ that, when multiplied by φ, equals or exceeds _U_. This is expressed as:
 
@@ -58,15 +59,6 @@ Philippine design offices commonly encounter both spirally reinforced columns (i
 **Pattern 3:** Provided nominal strength _S_n_, required strength _U_, and asked whether the design is safe. This requires calculating φ_S_n_ and comparing to _U_.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memorize the φ hierarchy:** FLEXURE 0.90 (ductile, steel yields) → SHEAR 0.85 (less ductile) → SPIRAL 0.75 (confined compression) → TIE/BEARING 0.70 (brittle, least ductile). For axial compression, remember: **SPIRAL = 0.75, TIED = 0.70** (spiral allows more ductility because the steel helix prevents core bursting; ties are less effective). For any mode not listed, confirm the specific provision in the NSCP—do not guess.
-
-
-
-
-[/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -75,13 +67,5 @@ See also: **Required Strength** (lea-strc-005-01) for the demand side of the ine
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Forgetting that φ differs by reinforcement type for axial compression; spiral is 0.75, tied is 0.70, not both 0.70.\", \"Applying φ = 0.90 to shear; shear uses φ = 0.85 because the failure is more sudden and less ductile.\", \"Using φ = 0.85 for bearing; bearing on concrete uses φ = 0.70, the same as tied columns.\", \"Confusing the requirement φSn ≥ U with Sn ≥ φU (the factor multiplies strength, not load).\", \"Omitting φ from the capacity check entirely and comparing nominal strength directly to required strength; the LRFD method requires the φ multiplication.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

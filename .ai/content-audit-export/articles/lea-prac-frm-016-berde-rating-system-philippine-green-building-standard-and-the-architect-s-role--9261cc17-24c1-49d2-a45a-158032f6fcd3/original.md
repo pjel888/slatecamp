@@ -1,8 +1,16 @@
 ## BERDE Rating System—Philippine Green Building Standard and the Architect's Role
 
-<JSX>null</JSX>
 
-BERDE (Building for Ecologically Responsive Design Excellence) is the Philippines' national green building rating system developed by the Philippine Green Building Council (PHILGBC). Launched in 2010 and continuously updated, BERDE provides a framework for measuring environmental performance and promoting sustainable design. For architects, BERDE is increasingly a contractual requirement and a competitive differentiator in the market.
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Describe the BERDE rating system and its role in Philippine green building.
+- Explain the Philippine Green Building Standards and the architect's role.
+- Identify the certification process and rating levels.
+- Distinguish BERDE from other green building rating systems (LEED, EDGE).
+
+
 
 ### What is BERDE and Its Purpose
 
@@ -51,3 +59,31 @@ Architects should not guarantee specific BERDE certification levels if external 
 Green design often requires higher upfront investment in efficient systems, premium materials, or detailed design. However, BERDE-certified buildings typically realize operational savings through reduced energy, water, and waste costs. The architect should educate clients about lifecycle costs and payback periods. A 5% higher design cost may be offset by 30% lower operating costs over 20 years.
 
 Many institutional clients (schools, government facilities) are now prioritizing BERDE certification to demonstrate environmental stewardship and reduce long-term operational costs. Private developers recognize that BERDE-certified buildings command market premiums and attract tenants committed to sustainability. The architect's role is to help the client understand that green design is an investment, not an expense.
+
+<LawCallout code="berde" section="BERDE v3.0 - Management Category">
+Legal Basis: BERDE (Building for Ecologically Responsive Design Excellence), developed by PhilGBC. Referenced in the Philippine Green Building Code (PD 1096 reference standard).
+</LawCallout>
+
+
+<Warn />
+
+
+<ExamTip />
+
+
+<Tip />
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)

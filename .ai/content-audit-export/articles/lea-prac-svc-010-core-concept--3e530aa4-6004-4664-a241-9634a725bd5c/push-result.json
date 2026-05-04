@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:08.901Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:33.843Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
   "slug": "lea-prac-svc-010-core-concept",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:2e7d120c99873d08c0a600308ec52580b375769340944a7fc3d30a891450b3cf",
-  "original_hash": "sha256:6d471dfed575f650bf07d0ae4de8a12e8996c54081001d37a11965079daf2f18",
-  "candidate_hash": "sha256:2e7d120c99873d08c0a600308ec52580b375769340944a7fc3d30a891450b3cf",
-  "stale_check_passed": false,
+  "original_hash": "sha256:2e7d120c99873d08c0a600308ec52580b375769340944a7fc3d30a891450b3cf",
+  "candidate_hash": "sha256:858eca1de6166b856525e9c64cd8d2bd1085eb1f5f0bec77b8098430cb2e6fb9",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:51:27.250787+00:00"
 }

@@ -1,15 +1,14 @@
 ## What You Need to Know for the LEA
 
-<Callout>
-**Baroque tests your understanding of theatrical illusionism, dynamic curves, light manipulation, and the rivalry between Bernini and Borromini**. **Rococo is lighter, more decorative, and regional**—pastel interiors, asymmetry, and reaction against Baroque heaviness. The exam asks about the *why* behind these styles: Baroque as Counter-Reformation spectacle, Rococo as aristocratic pleasure.
-</Callout>
+## Learning Goal
 
+Identify the five testable markers of Baroque architecture — curved walls, hidden light sources, ornamented plans, trompe-l'oeil painting, sculptural facades — and recognize key works (St. Peter's, San Carlo alle Quattro Fontane, Versailles) by their dynamic spatial and visual effects.
 ## Core Concept
 
 **Baroque architecture** (early 17th–18th centuries) emerged from the Counter-Reformation—the Catholic Church's response to Protestant challenge. Baroque churches aim to inspire awe, emotion, and spiritual surrender through theatrical light, dramatic curves, ornamental abundance, and illusionistic spatial effects. The vocabulary includes:
 - **Curved and undulating walls** replacing Renaissance rational geometry
 - **Complex spatial interlocking** of volumes (ovals, circles, ellipses)
-- **Dramatic light manipulation** through concelead windows, reflective surfaces, and stained glass
+- **Dramatic light manipulation** through concealed windows, reflective surfaces, and stained glass
 - **Ornamental exuberance** with sculpture, gilt, marble, and decorative moldings
 - **Theatrical illusionism** blurring boundaries between real space and painted/sculpted illusion
 
@@ -40,7 +39,7 @@ Memory aid: **C-D-O-O-C** = Curves, Drama, Ornament, Ovals, Counter-Reformation.
 
 **Rococo** (1730–1760s) emerged in France as a reaction against Baroque heaviness. The term derives from French *rocaille* (shell-like ornamentation). Rococo aesthetics emphasize:
 - **Asymmetry and irregularity** replacing Baroque symmetry
-- **Pastel pleattes** (plea blues, pinks, creams) replacing gilding and dark drama
+- **Pastel palettes** (plea blues, pinks, creams) replacing gilding and dark drama
 - **Lightness and delicacy** rather than weight and spectacle
 - **Intimate interior decoration** (boiseries, mirrors, stucco) replacing monumental churches
 - **Playfulness and pleasure** (salons, hunting lodges, pleasure pavilions) rather than Counter-Reformation intensity
@@ -74,6 +73,10 @@ Rococo is fundamentally a domestic and aristocratic *interior style*, not a stru
 </ExamTip>
 <ExamTip>**Pattern 7:** Rococo emergence. "How does Rococo represent a reaction against Baroque?" Lighter pleatte, asymmetry, domestic intimacy, playfulness vs. Baroque grandeur, symmetry, theatrical intensity. Rococo is interior decoration; Baroque is structural.</ExamTip>
 
+<Callout>
+**Baroque tests your understanding of theatrical illusionism, dynamic curves, light manipulation, and the rivalry between Bernini and Borromini**. **Rococo is lighter, more decorative, and regional**—pastel interiors, asymmetry, and reaction against Baroque heaviness. The exam asks about the *why* behind these styles: Baroque as Counter-Reformation spectacle, Rococo as aristocratic pleasure.
+</Callout>
+
 ## Common Mistakes
 
 <WikiMistakeCard mistake="** Confusing Baroque and Rococo as the same style. Baroque is structural, dramatic, counter-Reformational. Rococo is decorative, playful, aristocratic. Rococo *emerges* from Baroque but represents a conscious shift in values and aesthetic" correction="Mistake 2:** Thinking Baroque churches are all \"over the top\" without understanding the *why*. Baroque decoration and drama serve counter-Reformation theology: to overwhelm the senses and inspire spiritual surrender." context="Understand the context, not just the aesthetic." />
@@ -91,8 +94,15 @@ Rococo is fundamentally a domestic and aristocratic *interior style*, not a stru
 - **Illusionism**: Architectural or sculptural devices creating perceptual distortion (ceiling frescoes appearing as sky, spaces appearing larger/higher than they are)
 - **Baldachin**: A canopy over an altar or throne; Bernini's at St. Peter's uses twisted Solomonic columns and gilt
 - **Solomonic column**: A twisted or spiral column, derived from the Temple of Solomon; used dramatically in Baroque
-- **Rococo**: A decorative style (1730–1760s) emphasizing asymmetry, pastel pleattes, lightness, and intimate interiors; reaction against Baroque heaviness
+- **Rococo**: A decorative style (1730–1760s) emphasizing asymmetry, pastel palettes, lightness, and intimate interiors; reaction against Baroque heaviness
 - **Boiserie**: Elaborate wood paneling and carved decoration on interior walls; common in Rococo
 - **Rocaille**: Shell-like or wave-like ornamental motif; basis for term "Rococo"
 - **Stucco**: Plaster or stucco work used for ornamental interior surfaces and ceiling illusions
 - **Frescoed ceiling**: A painted ceiling technique creating illusionistic spatial effects; common in Northern Baroque
+
+## Related Articles
+
+See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

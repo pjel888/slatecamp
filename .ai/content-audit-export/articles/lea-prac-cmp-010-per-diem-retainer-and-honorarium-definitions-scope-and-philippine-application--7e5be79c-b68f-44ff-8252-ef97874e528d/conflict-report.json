@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:01:40.389Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T16:51:35.692Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
   "slug": "lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:3ff8d97be1c4c3c1b864b03846d2bf47109f5c471d7709126d7c3116cadc6785",
-  "original_hash": "sha256:f67e6a4ba09c2207f6464b7ecd8fec56ab9643af1c1c2a051518a8c138828196",
-  "candidate_hash": "sha256:3ff8d97be1c4c3c1b864b03846d2bf47109f5c471d7709126d7c3116cadc6785",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:7dcc3c942b6e84548e2a2ec3baf1568d0e799cf967522b510583af70532c2fd2",
+  "original_hash": "sha256:3ff8d97be1c4c3c1b864b03846d2bf47109f5c471d7709126d7c3116cadc6785",
+  "candidate_hash": "sha256:8784930ad365182e9c45579437023d8483895d3a1451c89bbc8cb37cd4c177e6",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:50:43.872131+00:00"
+  "remote_updated_at_before": "2026-05-03T16:34:49.441311+00:00"
 }

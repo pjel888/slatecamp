@@ -1,6 +1,12 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
 
-## What You Need to Know for the LEA
+- Define prestressing and explain why it is used in concrete
+- Distinguish between pre-tensioning (strands tensioned before casting) and post-tensioning (tensioned after curing)
+- Explain how prestressing creates compressive stress that offsets tensile service stresses
+- Identify common applications: bridge girders, prestressed slabs, and beams
+
 Prestressed concrete applies permanent compression to concrete before or during service loads to reduce or eliminate tensile stresses that would otherwise cause cracking. The two methods are fundamentally different in application timing: pre-tensioning applies compression before concrete is cast, while post-tensioning applies compression after concrete has hardened. Understanding this distinction and the resulting structural behaviors is essential for recognizing when each method is appropriate.
 
 ## Core Concept
@@ -102,6 +108,13 @@ In the Philippines, precast prestressed members (pre-tensioned I-beams, double-T
 
 <Tip>The defining distinction: Pre-tensioning = tendons tensioned BEFORE concrete placed. Post-tensioning = tendons tensioned AFTER concrete hardened. This timing difference determines the structural system, production method, and field application. Memorize this clearly to avoid the common reversal error (ERR-STRC-016).</Tip>
 
+
+## Related Articles
+
+See also: **Concrete Materials** (lea-strc-006-01) for the basic concrete properties, **Flexural Theory** (lea-strc-006-03) for how reinforced sections work without prestress, and **Precast Concrete** (lea-strc-006-05) for how precasting relates to prestressing.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={[ "Reversing pre-tensioning and post-tensioning definitions. Pre = tendons tensioned BEFORE concrete placed. Post = tendons tensioned AFTER concrete hardened. This is the opposite of the common error; verify by physical logic: 'pre' comes before, 'post' comes after.", "Assuming pre-tensioning and post-tensioning have identical structural behavior. Pre-tensioning provides immediate compression (from release onward); post-tensioning requires the concrete to develop strength before compression is applied. The timing affects serviceability, deflection, and crack control.", "Forgetting that post-tensioned ducts must be grouted after tensioning. Ungrouted tendons do not provide full composite action and allow corrosion risk. Grouting bonds the tendon to concrete and protects against corrosion—non-negotiable for permanent service.", "Using ordinary reinforcing bar yield strength (414 MPa) instead of prestressing tendon strength (1,770–1,960 MPa) in calculations. Prestressing relies on the much higher strength of special steel; using lower strength numbers makes the system uneconomical and underperforming." ]} />

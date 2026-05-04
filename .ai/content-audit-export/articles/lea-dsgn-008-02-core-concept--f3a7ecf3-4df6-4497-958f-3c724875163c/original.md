@@ -2,6 +2,10 @@
 
 Fire-rated separation and compartmentation form the second line of defense in fire safety design. They contain fire and smoke to protect life and property by creating barriers between occupied spaces and potential ignition sources. 
 
+## Learning Goal
+
+Apply fire-rated separation requirements per occupancy group (2-hour for Group D, 4-hour for Group G), specify exit stairwell enclosures (2-hour walls, 1-hour doors), distinguish between occupancy separation and exit enclosure ratings, and identify correct fire door ratings for different wall types.
+
 ## Core Concept
 
 Fire-rated separation creates protected zones within a building to limit the spread of fire and smoke. Unlike egress design (which focuses on _how people leave_), compartmentation asks _where fire is allowed to spread_. This strategy relies on fire-rated walls, doors, and construction assemblies that maintain their integrity and insulating value under extreme heat. 
@@ -25,11 +29,9 @@ The design principle is proportional risk: a stairwell is protected more heavily
 | **Exit Door** | Opening in Exit Enclosure | **1-hour door** |
 | **Standard Corridor Wall** | Mixed occupancy/Tenancies | 1-hour wall |
 
-
-
 ## Construction and Testing
 
-Fire-rated assemblies are tested per **ASTM E119** or equivleant methods accepted under PD 1096 Section 604. A "2-hour rating" means the assembly resists fire for 120 minutes without flame penetration or the unexposed face exceeding a temperature rise of 180°C (average) or 325°C (individual point). 
+Fire-rated assemblies are tested per **ASTM E119** or equivalent methods accepted under PD 1096 Section 604. A "2-hour rating" means the assembly resists fire for 120 minutes without flame penetration or the unexposed face exceeding a temperature rise of 180°C (average) or 325°C (individual point). 
 
 **Common Assembly Ratings:** 
 
@@ -54,6 +56,10 @@ A multi-story office building has a central exit stair. The exam states the stai
 A 2-hour fire-rated **Occupancy Separation** wall is provided. What is the required rating for a fire door in that specific wall?
 
 - **Answer:** 1.5-hour. (Per PD 1096, openings in 2-hour _occupancy separations_ require 1.5-hour assemblies, but standard _exit stair doors_ only require 1-hour). 
+
+## Cross-References
+
+See **LEA-DSGN-008-01** (Fire Egress) for occupant load-based exit design, **LEA-DSGN-008-03** (Sprinkler Systems) for trade-offs between separation and suppression, and **LEA-DSGN-006-04** (Warehouses) for 4-hour Group G separation.
 
 ## Common Mistakes
 

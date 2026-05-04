@@ -11,16 +11,14 @@ After reading this article, you should be able to:
 The relationship between professional ethics and fair competition in architecture creates tension: architects must maintain professional standards while competing fairly with one another for projects and fees. This article examines the ethical limits on fee competition, restrictions on setting minimum fees, and the distinction between competitive fee structures and unethical cost-cutting.
 
 The Code of Ethical Conduct and RA 9266 prohibit fee agreements that restrict competition (collusion on pricing) while also establishing professional standards that fee-discounting cannot undermine. LEA candidates must understand when fee competition is ethical, when it crosses into anti-competitive practice, and how professional standards limit cost-cutting.
+<ArticleMedia id="media-lea-prac-eth-013-introduction" a type="image" caption="Anti-Competitive vs Ethical Fee Practices Comparison Matrix" description="Four-quadrant comparison: (1) Collusive Pricing — architects agreeing on minimum fees, prohibited under RA 10667; (2) Independent Competition — each architect setting fees independently, ethical; (3) Bid-Rigging — pre-arranged bid winners, criminal offense; (4) Competitive Bidding — transparent fee proposals, standard practice. Each quadrant shows scenario, legal basis, consequences, and LEA test point." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-eth-013-introduction" a type="image" caption="Fee Competition Ethics Framework — Permitted vs Prohibited Practices" description="Two-zone diagram: Prohibited Zone (red) — collusive fee-fixing, market division agreements, bid-rigging, predatory pricing, deceptive fee practices, recommended fee schedule enforcement; Permitted Zone (green) — independent fee determination, competitive bidding, negotiated fees, volume-based discounts, reduced fees for repetitive designs. Central dividing line labeled 'Competition must be independent and transparent.' Philippine Competition Act (RA 10667) citations shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Fundamental Principle: Fee Competition is Legal and Ethical
 
 The legal and professional framework in the Philippines allows architects to compete on fees while maintaining professional standards:
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="critical"
-- Text: **Core Principle:** Architects may compete on fees and design services. However, this competition must not: 1. **Compromise professional standards** (designing inadequately due to fee pressure) 2. **Result from collusive fee agreements** (architects agreeing to charge minimum fees) 3. **Involve deceptive practices** (misrepresenting scope or qualification) 4. **Violate employment standards** (forcing architects to work uncompensated overtime due to low fees) 5. **Constitute predatory pricing** (
-[/SLATECAMP_UI_BLOCK]
 
 ## Category 1: Anti-Competitive Fee Practices (Prohibited)
 
@@ -42,10 +40,6 @@ Extracted summary:
 - **Civil liability:** Clients affected by price-fixing may sue for overcharges
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Point:** Even informal "understanding" among architects to maintain price minimums constitutes collusion. "We all know no one charges below 4%" is price-fixing if there's tacit agreement or coordination. Architects charging different fees independently is competition; architects agreeing to matching minimums is collusion — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ### Type 1B: Recommended Fee Schedule Agreements
 
@@ -98,10 +92,6 @@ Even if not formally agreed, if architects use a published schedule as a coordin
 **Consequences:** Serious—professional discipline (possible revocation), criminal prosecution, potential imprisonment
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="critical"
-- Text: **Note on Government Projects:** If bid-rigging involves government projects, the conduct may also constitute fraud against the government (a felony) with additional criminal liability. Architects have faced imprisonment for bid-rigging on public projects.
-[/SLATECAMP_UI_BLOCK]
 
 ## Category 2: Ethical Fee Competition (Permitted)
 
@@ -146,10 +136,6 @@ These varied fees are **not collusive**. Each architect arrived at the fee indep
 - **Low bidders** must still deliver professional-quality services (no cost-cutting)
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Test Point:** Losing a bid to a competitor with a lower fee is ethical competition. An architect frustrated by losing bids to lower-cost competitors cannot ethically address this by colluding with competitors to maintain minimum fees. The solution is to either: - Improve efficiency and reduce costs, or - Develop specialization/differentiation to justify higher fees, or - Focus on clients who value quality over lowest cost — this distinction appears on every LEA cycle.
-[/SLATECAMP_UI_BLOCK]
 
 ### Type 2C: Value-Based Fee Approaches
 
@@ -204,10 +190,6 @@ This approach allows **fee flexibility** while tying architect compensation to *
 - **Reputational harm:** Word spreads about inadequate design quality
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="LeartBox" status="preserved"]
-Extracted summary:
-- Props: type="critical"
-- Text: **Key Principle:** An architect who cannot deliver professional-quality services at the proposed fee should either: 1. Increase the fee to appropriate level, or 2. Decline the engagement The solution is not to accept a low fee and deliver low-quality work. This violates professional standards and harms both client and profession.
-[/SLATECAMP_UI_BLOCK]
 
 ### Prohibition: Coercive Low-Fee Arrangements
 
@@ -384,10 +366,6 @@ If the fee is insufficient for these investigations, the architect should:
 ## The Anti-Competitive Conduct Framework
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="RegulationFramework" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: To evaluate whether fee competition is ethical or anti-competitive: **Step 1: Is there agreement or coordination?** - Independent fee determination → Ethical competition - Explicit agreement on fees → Collusion (prohibited) - Tacit coordination around a schedule → Price-fixing (prohibited) **Step 2: Does the fee structure restrict client choice?** - Multiple competing fees available → Competition - All architects charge same minimum → Price-fixing (prohibited) - Market division among architects 
-[/SLATECAMP_UI_BLOCK]
 
 ## Competition Law Framework: RA 10667
 
@@ -396,19 +374,10 @@ The Philippine Competition Act (RA 10667) specifically addresses anti-competitiv
 ### Prohibited Practices Under RA 10667
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Practice | RA 10667 Status | Professional Status | Example | |---|---|---|---| | **Horizontal price fixing** | Per se violation | Professional violation | Architects agreeing on minimum fees | | **Market allocation** | Per se violation | Professional violation | Architects dividing clients by territory | | **Bid-rigging** | Per se violation | Professional violation; criminal | Architects pre-arranging auction winner | | **Predatory pricing** | Violation (case-by-case) | Professional violation 
-[/SLATECAMP_UI_BLOCK]
 
 ## Disciplinary Consequences
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: | Conduct | Professional Discipline | Legal Consequences | |---|---|---| | **Collusive fee agreement** | Suspension 2-3 years; possible revocation | Criminal prosecution under RA 10667; fines and imprisonment | | **Bid-rigging** | Possible revocation | Criminal prosecution (felony); imprisonment likely | | **Market division** | Suspension 2-3 years | Criminal prosecution under RA 10667 | | **Predatory pricing** | Suspension 1-2 years | Investigation by PCC; possible litigation | | **Below-standa
-[/SLATECAMP_UI_BLOCK]
-
 
 ## About This Article
 

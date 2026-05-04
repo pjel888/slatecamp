@@ -18,6 +18,13 @@ _Submittal review_ includes product certificates of compliance, mill test report
 
 _Mock-ups_ are small-scale reproductions of completed assemblies (e.g., a 3m x 3m wall assembly with waterproofing, insulation, and finish paint) that are installed at the project site and inspected for conformance before full-scale production. Mock-ups are particularly valuable for novel systems or where quality is difficult to verify after installation.
 
+
+<ArticleMedia id="media-spec-type-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of specification types: prescriptive, performance, proprietary, and reference standard with definitions, when-used, advantages, and disadvantages"
+  caption="Future chart: specification type comparison — prescriptive, performance, proprietary, and reference standard"
+  suggestedAsset="Comparison matrix with example language for each spec type"
+  placementIntent="Helps learners distinguish specification types and choose appropriate approach" />
+
 ## Key Provisions
 
 | Testing Method | Standard | Material | Typical Parameter | Frequency | Philippine Reference | LEA Relevance |
@@ -38,6 +45,12 @@ In private practice, the architect is responsible for defining testing frequency
 
 Philippine concrete quality control is challenging due to tropical humidity, variable aggregate quality (local sources often lack quality certification), and cement sourcing. Slump test variability is common due to temperature and humidity effects. NSCP adoption of ACI 318 standards ensures that testing and acceptance criteria are aligned with international practice. Waterproofing testing and mock-ups are particularly important in tropical construction due to persistent moisture exposure.
 
+
+<ArticleMedia id="media-spec-type-selection-flow" layout="single" type="image" status="placeholder"
+  alt="Decision flowchart for selecting specification type: prescriptive, performance, proprietary, or reference standard based on project goals, procurement rules, and design control needs"
+  caption="Future diagram: specification type selection flowchart — prescriptive, performance, proprietary, or reference standard"
+  suggestedAsset="Decision tree for specification type selection"
+  placementIntent="Guides practical selection of specification approach for project requirements" />
 ## How It's Tested
 
 _Pattern 1 — Slump Test Interpretation:_ The exam presents a slump test result (e.g., "Slump measured at 150 mm, specification requires 75-100 mm") and asks the appropriate action. Answer: Slump is too high (excess water); concrete strength may be reduced. The batch should be rejected or adjusted by reducing water or adding coarse aggregate. The contractor cannot proceed with placement.
@@ -53,30 +66,14 @@ _Pattern 5 — Submittal Completeness:_ A paint product submittal includes color
 _Pattern 6 — Philippine Regulatory Alignment:_ The exam presents a concrete testing frequency from an international standard that differs from DPWH requirements. Determine which applies. Answer: For DPWH-funded projects, DPWH requirements supersede. The more stringent requirement applies (DPWH testing frequency typically exceeds ACI minimums). The specification must state: "DPWH testing frequencies apply; if DPWH and ACI 318 differ, the more stringent requirement governs."
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Memory aid: **Test, Document, Approve, Correct**. Every material and system goes through this cycle: testing verifies specification compliance, documentation records results, the architect approves or rejects, and non-conforming work is corrected. If any step is skipped (e.g., no testing, poor documentation), disputes arise. The LEA tests your understanding of this systematic approach to quality control. Always ask: What testing is required? At what frequency? By whom? Documented how? Approved b
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Omitting slump test requirements from concrete specifications, allowing contractors to deliver concrete of unknown workability. High-slump concrete (excess water) passes placement easily but has reduced strength.", correction="Always specify slump range in Part 1: General with reference to ASTM C143. Include testing frequency (every 100 m3 or daily, per DPWH). Slump testing is quick, inexpensive, and prevents strength problems."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Accepting cylinder compression test results that marginally fail (e.g., 26 MPa when 28 MPa specified) without requiring either (1) retest of additional cylinders to establish trend, or (2) core boring to verify in-situ strength. The contractor pressures acceptance.", correction="Establish acceptance criteria in Part 1: General before testing occurs. Typical: '28-day average must equal or exceed design strength; individual tests must not fall below 90 percent of design strength.' If marginal, require statistical analysis or in-situ testing (core boring per ASTM C42). Do not accept failures without documented justification."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Failing to specify testing frequency and acceptance criteria in Part 1: General (leaves contractor and architect guessing)\", \"Approving shop drawings without verifying dimension tolerance, connection adequacy, and specification alignment\", \"Accepting submittals without complete documentation (missing MSDS, thermal data, installation instructions)\", \"Confusing the role of slump test (workability) with compression test (strength); treating slump results as strength indicators\", \"Failing to require waterproofing mock-ups in tropical construction where moisture is persistent problem\", \"Not verifying third-party laboratory credentials (ISO 17025 accreditation) for independent testing\", \"Accepting test reports without chain-of-custody documentation (who collected samples, when, from where)\", \"Omitting acceptance criteria tolerances (e.g., 'flatness tolerance per ACI 117 Table 4.1')\", \"Failing to require retesting if initial tests are questionable (e.g., high slump indicating potential water addition)\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

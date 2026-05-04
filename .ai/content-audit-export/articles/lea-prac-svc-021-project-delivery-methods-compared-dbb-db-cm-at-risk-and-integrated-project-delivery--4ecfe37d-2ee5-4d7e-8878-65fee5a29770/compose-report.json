@@ -1,18 +1,30 @@
 {
   "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
   "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
-  "generated_at": "2026-05-03T13:44:10.882Z",
-  "original_hash": "sha256:4f9e0d41fdc1517a3a2fb1ab86b917ecfc87a75909d79c36cc3e984fd791bc96",
-  "normalized_hash": "sha256:0c6b44931b7e552ac7cbd3b8f90deb7a7a41b3c77777b8b6a7a180e270fef2b6",
-  "candidate_hash": "sha256:e9d9ba334b0662054ac4b83e90cefeb0a040679a213e963f4b38f32d54df0660",
+  "generated_at": "2026-05-04T00:05:38.086Z",
+  "original_hash": "sha256:e7f9069ccd5fe8e9f77c024bc22dbc15ac86e8c4ca514182c2907873fef7c450",
+  "normalized_hash": "sha256:933fbd78fe7803745a76ba0d2296ee13302ff13c339b80603d58ba46eea64849",
+  "candidate_hash": "sha256:933fbd78fe7803745a76ba0d2296ee13302ff13c339b80603d58ba46eea64849",
   "ui_blocks_count": 5,
-  "placeholders_found": 5,
-  "placeholders_resolved": 5,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 5,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0005",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

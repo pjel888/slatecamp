@@ -1,8 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Structural bolts and mechanical fasteners are the primary method for connecting structural steel members when welding is impractical, when modular assembly is required, or when site conditions limit welding.
-The LEA expects mastery of bolt grades (ASTM A307, A325, A490), installation methods (snug-tight, turn-of-nut, calibrated wrench, tension-control), bearing vs. slip-critical connection behavior, and Philippine standards per NSCP 2015 Chapter 5. You must understand when to specify each bolt grade, recognize installation defects, and apply tension control (TC) fastener technology for precision connections.
-
+Classify structural bolt types (A325, A490, A307) by grade, installation method (snug-tight, pretensioned, slip-critical), and application, and identify nut and washer specifications for steel-to-steel connections per NSCP 2015.
 ## Core Concept
 
 Structural bolts join steel members through frictional force (slip-critical connections) or bearing stress (bearing connections).
@@ -28,7 +27,7 @@ Used when maximum joint stiffness, minimum member deformation, or compact connec
 A490 bolts MUST NOT be galvanized or electroplated; hydrogen embrittlement risk creates brittle failure.
 A490 is reserved for protected environments or where stainless alternatives are economically justified.
 _ASTM F3125_ (Consolidated Standard) — Combines A325, A325M, A490, A490M, F1852, and F2280 specifications.
-F1852 (120 ksi TC bolts) and F2280 (150 ksi TC bolts) are the modern tension-control equivleants to A325 and A490.
+F1852 (120 ksi TC bolts) and F2280 (150 ksi TC bolts) are the modern tension-control equivalents to A325 and A490.
 
 ### Installation Methods
 
@@ -93,7 +92,7 @@ A325 bolts dominate Philippine construction due to cost and galvanizing compatib
 High-rise residential and commercial buildings in Metro Manila, Cebu, and Davao use A325 slip-critical connections for moment-resisting frames and A325 bearing connections for floor systems.
 For bridges, A325 with hot-dip galvanizing (ASTM A153) ensures durability in salt-spray coastal environments.
 A490 bolts appear in specialized applications: premium office towers where floor-to-floor height is minimized, long-span bridges with strict deflection limits, and tension members in suspension systems.
-The prohibition on galvanizing limits A490 use in outdoor or corrosive environments unless stainless equivleants are specified.
+The prohibition on galvanizing limits A490 use in outdoor or corrosive environments unless stainless equivalents are specified.
 Tension-control (TC) fasteners are increasingly adopted by Philippine fabricators (particularly those in Vleanzuela and surrounding industrial zones) for efficiency.
 TC bolts reduce on-site installation labor, eliminate wrench calibration drift, and provide visual confirmation of proper preload—critical for quality assurance on high-rise projects.
 NSCP 2015 Chapter 5 explicitly permits TC fasteners when fabricators have demonstrated competency.
@@ -142,3 +141,10 @@ The LEA evaluates bolts and fastener knowledge through:
     "Specifying over-tensioned bolts expecting to increase connection capacity—excessive tension causes premature bolt rupture under load and does not increase capacity beyond the bolt's yield strength. Proper tension (per code) is optimum; higher preload provides no benefit and increases failure risk.",
   ]}
 />
+
+## Related Articles
+
+See also within Metals, Glass, and Glazing: **lea-matl-003-04-core-concept**, **lea-matl-003-05-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

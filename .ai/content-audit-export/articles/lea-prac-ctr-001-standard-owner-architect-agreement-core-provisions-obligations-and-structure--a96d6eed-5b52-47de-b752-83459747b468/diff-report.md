@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure
 
-Generated: 2026-05-03T13:45:35.620Z
+Generated: 2026-05-04T00:07:20.388Z
 Article ID: a96d6eed-5b52-47de-b752-83459747b468
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:55fa337e5ff4abb15b0abd9a7a9fee9dd455b8e96acd88c7808a55126a2a34df`
-- Normalized: `sha256:eb1e47b3454a6ef85e09fc75d84bf3b4e15cde152f1ff440741b78c7c5f0646a`
-- Candidate: `sha256:56bce3239240367e2ad7ac044c92b00d5ba376d73fc531c99135f59c80a0aa5f`
+- Original: `sha256:56bce3239240367e2ad7ac044c92b00d5ba376d73fc531c99135f59c80a0aa5f`
+- Normalized: `sha256:49b062c3974b6636500f382ad175efa7b6c6752cb92f1e556e31af73c57fba66`
+- Candidate: `sha256:49b062c3974b6636500f382ad175efa7b6c6752cb92f1e556e31af73c57fba66`
 
 ## Line summary
 
-- Changed lines: 75
-- Inserted lines: 42
-- Deleted lines: 0
+- Changed lines: 51
+- Inserted lines: 0
+- Deleted lines: 10
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

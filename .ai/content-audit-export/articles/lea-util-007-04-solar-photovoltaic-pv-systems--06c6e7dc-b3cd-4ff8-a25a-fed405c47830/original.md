@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Renewable energy systems in buildings represent a critical transition pathway toward Philippine energy security and decarbonization. Under _Republic Act 9513_ (Renewable Energy Act of 2008), building owners and developers can access tax incentives, duty-free importation of renewable energy equipment, and net metering arrangements. This concept node covers system selection, integration strategies, regulatory compliance, and financial viability for tropical climate buildings.
+## Learning Goal
 
+Design solar photovoltaic (PV) systems for Philippine buildings — calculate array size based on load analysis, solar irradiance data, panel efficiency, and inverter sizing; apply net metering provisions per DOE/ERC regulations for grid-connected PV installations.
 ## Solar Photovoltaic (PV) Systems
 
 Solar PV remains the most deployable renewable technology for Philippine buildings. Integration occurs through rooftop arrays, facade-mounted panels, and building-integrated photovoltaics (BIPV).
@@ -11,6 +12,19 @@ Solar PV remains the most deployable renewable technology for Philippine buildin
 Rooftop PV arrays in the Philippines generate 4.0–5.0 kWh/m²/day depending on location and season (Department of Energy, 2023). A 5 kW rooftop system in Metro Manila produces approximately 6,500–7,500 kWh/year. Interconnection with the grid requires a net metering setup under the appropriate DOE Circular for net metering (e.g., DC2013-05-0004 or as per latest DOE registry) <!-- VERIFY: Confirm this DOE Circular number exists in DOE registry; may be DC2013-05-0004 or DC2019-06-0010 -->, which permits building-connected systems to export excess generation to the grid at the retail rate.
 
 _Reference LEA-UTIL-003-08 for detailed PV system sizing calculations, inverter selection, and array configuration._
+
+
+<KeyValues items=[{"value": "Dome", "label": "Indoor Ceiling Mount"}, {"value": "Bullet", "label": "Outdoor Perimeter"}, {"value": "PTZ", "label": "Dynamic Coverage"}, {"value": "1080p", "label": "Min. Resolution"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 
 ### Building-Integrated Photovoltaics (BIPV)
 
@@ -38,7 +52,7 @@ A typical 100-person commercial building requires 0.8–1.2 m² collector area p
 
 ## Wind Energy Systems
 
-Philippine wind resources concentrate in _Ilocos Region_ (average 7.5–9.0 m/s at 10 m height) and _Eastern Visayas_ (Guimaras, Negros Oriental: 7.0–8.5 m/s). Small-sclea building-mounted turbines (1–10 kW) serve niche applications in high-wind zones.
+Philippine wind resources concentrate in _Ilocos Region_ (average 7.5–9.0 m/s at 10 m height) and _Eastern Visayas_ (Guimaras, Negros Oriental: 7.0–8.5 m/s). Small-scale building-mounted turbines (1–10 kW) serve niche applications in high-wind zones.
 
 ### Building-Mounted Turbines
 
@@ -47,7 +61,7 @@ Vertical-axis wind turbines (VAWT) tolerate turbulent urban wind conditions bett
 - _Installation complexity_: structural reinforcement, vibration isolation, wind acceleration modeling
 - _Hybrid solar-wind systems_: complementary generation profiles in coastal regions
 
-Wind potential assessment: A 2 kW VAWT in Ilocos produces 8,000–12,000 kWh/year at prime location; equivleant rooftop PV (4 kW) produces 5,200–6,500 kWh/year. However, VAWT noise levels (35–45 dB) and blade loading require careful placement (Philippine Environmental Quality Standards, 2016).
+Wind potential assessment: A 2 kW VAWT in Ilocos produces 8,000–12,000 kWh/year at prime location; equivalent rooftop PV (4 kW) produces 5,200–6,500 kWh/year. However, VAWT noise levels (35–45 dB) and blade loading require careful placement (Philippine Environmental Quality Standards, 2016).
 
 Building-mounted turbines cost USD 3,500–5,000/kW installed; economically justified only in Ilocos, Eastern Visayas, and coastal Mindanao zones.
 
@@ -131,8 +145,8 @@ Sensitivity: A 1 cent/kWh increase in electricity tariff reduces payback by 1 ye
 
 A 100-person office building with 120 m² SWH system:
 - _Capital cost_: USD 8,000–10,000
-- _Annual fuel displacement_: 8,000–10,000 kWh thermal equivleant
-- _Annual savings_: USD 880–1,100 (at USD 0.11/kWh equivleant)
+- _Annual fuel displacement_: 8,000–10,000 kWh thermal equivalent
+- _Annual savings_: USD 880–1,100 (at USD 0.11/kWh equivalent)
 - _Payback period_: 7–9 years
 - _Degradation rate_: 0.5%/year (collector efficiency decline)
 
@@ -207,3 +221,10 @@ Annual O&M cost: USD 100–200/year.
 8. Life cycle cost modeling essential for technology selection; payback periods sensitive to electricity tariff and installation location.
 9. Philippine Green Building Code mandates 5–15% renewable energy by building type; compliance through on-site systems or grid procurement.
 10. Implementation roadmap spans 6–7 months from feasibility to commissioning; ongoing monitoring ensures sustained performance and O&M planning.
+
+## Related Articles
+
+See also within Renewable and Alternative Energy: **lea-util-007-02-core-concept**, **lea-util-007-05-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

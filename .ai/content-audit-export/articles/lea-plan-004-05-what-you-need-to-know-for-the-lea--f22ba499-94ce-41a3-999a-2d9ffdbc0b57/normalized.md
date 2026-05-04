@@ -26,6 +26,7 @@ Concrete has higher initial cost but lower lifecycle cost. Asphalt is cheaper in
 **Implications for Site Planning**
 
 Choose durable, low-maintenance materials when possible. Trade off initial cost for long-term performance. Understand that "cheapest" is rarely the best decision over 20+ years.
+<ArticleMedia id="media-lea-plan-004-05-what-you-need-to-know-fo" a type="image" caption="Lifecycle Cost Analysis — Paving Material Comparison Chart" description="Bar chart comparison showing 20-year lifecycle costs for three paving materials in Philippine tropical conditions: Concrete (₱1,200/sqm initial, ₱30/yr maintenance, 20yr life, ₱1,800 total), Asphalt (₱800/sqm initial, ₱100/yr, 10yr life then replace, ₱3,600 total), Permeable Pavers (₱2,500/sqm initial, ₱150/yr, 15yr life then replace, ₱8,000 total). Shows initial cost vs. total cost tradeoff with maintenance cost breakdown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Durability and Material Selection
 
@@ -109,6 +110,7 @@ Site infrastructure (water, power, sewage, storm drainage) requires organized ma
 - **Responsibility:** Barangay Public Works Department
 - **Budget:** ₱50,000/year for cleaning, materials, and labor
 - **Documentation:** Photo record of baseline; maintenance log updated monthly
+<ArticleMedia id="media-lea-plan-004-05-what-you-need-to-know-fo" a type="image" caption="Asset Management Cycle — Inventory, Schedule, Budget, Document Diagram" description="Flowchart showing the asset management cycle for site infrastructure: (1) Inventory assets — map all utilities with age, material, capacity; (2) Establish maintenance schedule — inspection, cleaning, repair, replacement intervals; (3) Assign responsibility — LGU, developer, barangay, cooperative; (4) Budget annually — 1-2% of initial capital cost; (5) Document all maintenance work. Example: storm drainage system with catch basins, PVC pipe, outlet structures." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Deferred Maintenance and Deterioration
 
@@ -157,10 +159,6 @@ When a site is constructed, commissioning (testing and verification) and handove
 ### Maintenance Planning Checklist
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: When planning for long-term maintenance during site design: 1. Conduct lifecycle cost analysis for major material choices; favor durable materials over cheap initial cost 2. Select materials suited to Philippine tropical climate, humidity, rainfall, and typhoon exposure 3. Design sites for maintenance accessibility—valves, drains, and equipment should be reachable 4. Plan for flood and typhoon resilience; use flood-resistant materials and elevate critical systems 5. Establish clear asset invento
-[/SLATECAMP_UI_BLOCK]
 
 ---
 

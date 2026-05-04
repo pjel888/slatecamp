@@ -1,12 +1,12 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Construction and demolition (C&D) waste is the largest single waste stream in most municipalities. The Philippines generates solid waste at approximately 0.5 kg per capita per day; construction sector contribution ranges 8-15 percent of total municipal solid waste by volume. The LEA tests candidates on waste hierarchy principles, lean construction reduction strategies, prefabrication benefits, and BIM material optimization. Understanding C&D waste composition (concrete 40%, wood 20%, metals 10%, gypsum 5%, others 25%) enables targeted reduction strategies.
-
+Explain life cycle assessment (LCA) as a methodology for evaluating environmental impacts of building materials from cradle to grave, and identify how LCA results inform green building certifications (BERDE, LEED, EDGE).
 ## Core Concept
 
 Waste reduction follows a hierarchy: reduce (source elimination), reuse (whole-component reuse), recycle (material reprocessing), recover (energy recovery), dispose (final placement). Construction waste arises from three sources: demolition of existing structures, site clearing, and construction process losses (cutting, breakage, spoilage, errors). Lean construction principles minimize waste through just-in-time material ordering, prefabrication assembly, and accurate quantity takeoffs.
 
-Building Information Modeling (BIM) enables material optimization by calculating exact quantities before fabrication, reducing off-cuts and waste. Prefabrication in controlled factory settings reduces on-site breakage and moisture damage compared to field construction. RA 9003 (Ecological Solid Waste Management Act) and DENR EMB (Environmental Management Bureau) requirements mandate waste management plans on projects exceeding specified scleas.
+Building Information Modeling (BIM) enables material optimization by calculating exact quantities before fabrication, reducing off-cuts and waste. Prefabrication in controlled factory settings reduces on-site breakage and moisture damage compared to field construction. RA 9003 (Ecological Solid Waste Management Act) and DENR EMB (Environmental Management Bureau) requirements mandate waste management plans on projects exceeding specified scales.
 
 ## Key Provisions
 
@@ -58,3 +58,10 @@ A second test approach asks candidates to evaluate a BIM-based material quantifi
 <li>Proposing waste reduction strategies without cost-benefit analysis; most reduction methods (lean training, BIM quantification, prefab sourcing) require upfront investment</li>
 <li>Ignoring that wood formwork and temporary structures account for much waste; candidates must address formwork reuse and design-for-reuse strategies</li>
 </WikiMistakeList>
+
+## Related Articles
+
+See also within Sustainable and Green Materials: **lea-matl-005-05-core-concept**, **lea-matl-005-07-core-concept**, **lea-matl-005-08-core-concept**, **lea-matl-005-10-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

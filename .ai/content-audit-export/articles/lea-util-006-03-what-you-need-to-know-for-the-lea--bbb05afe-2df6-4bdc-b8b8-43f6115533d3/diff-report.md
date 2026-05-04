@@ -1,21 +1,21 @@
 # Content Diff Report: lea-util-006-03-what-you-need-to-know-for-the-lea
 
-Generated: 2026-05-03T13:45:12.157Z
+Generated: 2026-05-04T00:06:52.102Z
 Article ID: bbb05afe-2df6-4bdc-b8b8-43f6115533d3
 Changed: true
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:c471a62dde99ed0c03f394ee33a930e12cd20c91f4d36140bcab7bfdd1351579`
-- Normalized: `sha256:cbee5664f7a070c9531bfc17f329fd00f3b8c44e06e6be9288dbc50058d5b564`
-- Candidate: `sha256:cbee5664f7a070c9531bfc17f329fd00f3b8c44e06e6be9288dbc50058d5b564`
+- Original: `sha256:cbee5664f7a070c9531bfc17f329fd00f3b8c44e06e6be9288dbc50058d5b564`
+- Normalized: `sha256:d4e6cccc9782a3377aa6834e0f2c54ddf185d5dc249a0feb9ffb12c62c2fdbd7`
+- Candidate: `sha256:d4e6cccc9782a3377aa6834e0f2c54ddf185d5dc249a0feb9ffb12c62c2fdbd7`
 
 ## Line summary
 
-- Changed lines: 209
-- Inserted lines: 0
-- Deleted lines: 191
+- Changed lines: 28
+- Inserted lines: 13
+- Deleted lines: 0
 
 ## UI block preservation
 

@@ -59,22 +59,10 @@ In addition to economic copyright enforcement, architects may pursue remedies fo
 Violations of the right of integrity—such as radical demolition of distinctive design features, unauthorized major alterations that destroy design intent, or vandalism that damages aesthetic integrity—may trigger legal action. Remedies include injunctions to prevent further distortion, damages for harm to the architect's reputation, and in some cases, mandatory correction or restoration of the work's integrity. The existence and strength of moral rights claims depend on the specific facts and the degree to which the work has been altered or misattributed.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ MORAL RIGHTS are INALIENABLE — architects retain them even after assigning economic copyright. The right of attribution ensures proper credit; the right of integrity protects against distortion damaging professional reputation. These cannot be waived or transferred. — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Copyright duration calculation: Individual architect = life + 50 years (from death date, not completion date). Juridical person/firm = 50 years from publication. Applied art = 25 years from making. Know which term applies to each scenario.
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Transfer of copyright requires a WRITTEN agreement. Oral agreements or ambiguous language about 'designs' or 'plans' creates only a license to use for a specific project, not a transfer of ownership. Always use clear written transfer documentation.
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -88,3 +76,5 @@ Extracted summary:
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

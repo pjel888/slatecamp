@@ -7,6 +7,12 @@
 
 ---
 
+## Learning Goal
+
+After reading this article, you should be able to:
+
+Apply minimum yard and setback requirements under PD 1096 Rule VIII by occupancy group and building height; calculate allowable floor area ratio considering property lines and street width; determine exterior wall fire-resistance ratings based on proximity to property lines; and apply firewall requirements for buildings on or near lot lines.
+
 ## The Real-World Hook
 
 Picture a narrow lot in Binondo, Manila. Your client has purchased a sliver of land — barely 5 meters wide, sandwiched between two neighboring warehouses. The party walls on either side belong to those neighbors. Your client wants to punch windows into both the left and the right side walls of the proposed commercial building. "We need light," she says. "And airflow." You nod. You agree. And then you open PD 1096, Rule VII, Section 704, and you start doing calculations that will determine whether those windows can legally exist at all — and if so, how many of them, how large, and what fire rating they must carry.
@@ -21,9 +27,9 @@ Walk into any barangay in Tondo or any crowded commercial strip in Quiapo and yo
 
 ### Principle 1: Direct Access to Public Space Is Non-Negotiable
 
-Per PD 1096, Rule VII, Sec. 704(1)(a), **no building shall be constructed unless it adjoins or has direct access to a public space, yard, or street on at least one of its sides.** This is the foundational rule from which all others flow. A building that is entirely enclosed by other private properties with no access to any public space is forbidden — not merely discouraged. The rationlea is multi-layered: emergency egress requires a path to a public thoroughfare, fire suppression vehicles need access, and light and ventilation (covered in Rule VIII) depend on at least one exposed facade.
+Per PD 1096, Rule VII, Sec. 704(1)(a), **no building shall be constructed unless it adjoins or has direct access to a public space, yard, or street on at least one of its sides.** This is the foundational rule from which all others flow. A building that is entirely enclosed by other private properties with no access to any public space is forbidden — not merely discouraged. The rationale is multi-layered: emergency egress requires a path to a public thoroughfare, fire suppression vehicles need access, and light and ventilation (covered in Rule VIII) depend on at least one exposed facade.
 
-This rule has a practical corollary for interior lots: if you have a deep lot accessed only by a private easement, that easement may not constitute a "public space" unless it meets the definition under the Civil Code and local zoning ordinances. The LEA board exam frequently tests this boundary case. Know that the building must adjoin — or directly access — a public space, yard, or street. A private driveway easement through a neighbor's lot is not equivleant unless formally classified as a right-of-way.
+This rule has a practical corollary for interior lots: if you have a deep lot accessed only by a private easement, that easement may not constitute a "public space" unless it meets the definition under the Civil Code and local zoning ordinances. The LEA board exam frequently tests this boundary case. Know that the building must adjoin — or directly access — a public space, yard, or street. A private driveway easement through a neighbor's lot is not equivalent unless formally classified as a right-of-way.
 
 ### Principle 2: The Centerline of a Street or Alley Is Treated as the Property Line
 
@@ -212,15 +218,19 @@ A five-storey office building has an exterior wall facing a side property line. 
 
 > **Answer: B — 26.25 sq m**
 >
-<LawCallout code="nbcp">
+<LawCallout code="pd1096" section="Rule VIII - Location on Property">
+
 
 Per PD 1096, Rule VII, Sec. 704(2), when openings in exterior walls are required to be protected, the sum of their areas in any storey shall not exceed 50% of the total wall area of that storey. Total wall area = 15 m × 3.5 m = 52.50 sq m. Maximum opening area = 52.50 × 50% = 26.25 sq m. Option A is 30% (incorrect percentage). Option C is 80% (too high). Option D is the full wall area (100%, clearly wrong). The key is applying the 50% rule to the storey's wall area, not to the floor area.
 
+
 </LawCallout>
 >
-<LawCallout code="nbcp" title="National Building Code of the Philippines">
+<LawCallout code="pd1096" section="Rule VIII - Exterior Walls">
+
 
 LEA Area: Building Technology — National Building Code of the Philippines
+
 
 </LawCallout>
 
@@ -237,15 +247,19 @@ Per PD 1096, Rule VII, Section 704, the centerline of an adjoining street is tre
 
 > **Answer: C — 5 meters**
 >
-<LawCallout code="nbcp">
+<LawCallout code="pd1096" section="Rule VIII - Setbacks">
+
 
 Per PD 1096, Rule VII, Sec. 704(1)(b) and Sec. 505 (Rule V), the centerline of the adjoining street is considered the adjacent property line. The street is 8 meters wide; its centerline is 4 meters from the physical lot boundary on the building's side. The exterior wall is set back 1 meter from the physical lot boundary. Total distance from wall face to the effective "property line" (centerline) = 1 m setback + 4 m (half street width) = 5 meters. This is a significant fire separation distance, which may reduce the required fire-resistance rating of the wall. Option A ignores the centerline rule entirely. Option B omits the building setback. Option D uses the full street width, which is incorrect (centerline, not far edge).
 
+
 </LawCallout>
 >
-<LawCallout code="nbcp" title="National Building Code of the Philippines">
+<LawCallout code="pd1096" section="Rule VIII - Table VIII-1">
+
 
 LEA Area: Building Technology — National Building Code of the Philippines
+
 
 </LawCallout>
 
@@ -262,19 +276,39 @@ Under PD 1096, Rule VII, Sec. 704, two buildings are constructed on the same pro
 
 > **Answer: B — As two separate buildings, each with an imaginary property line between them**
 >
-<LawCallout code="nbcp" title="the Code governs all exterior walls, not only those facing streets.">
+<LawCallout code="pd1096" section="Rule VIII - Minimum Distances">
+
 
 Per PD 1096, Rule VII, Sec. 704(3), buildings on the same property with courts or separation between them are treated as if an imaginary property line exists between them. The exception that allows two buildings to be treated as one (and thus exempt from the exterior wall rules between them) applies only when the aggregate floor area is within the allowable limit for a single building under Sec. 705. In this question, the aggregate area exceeds that limit, so the exception does not apply. Both buildings must independently comply with Sec. 704 exterior wall and opening requirements relative to the imaginary property line. Option A is the classic misconception (common ownership does not override the Code). Option C misidentifies the air gap as a compliance mechanism. Option D is flatly wrong — the Code governs all exterior walls, not only those facing streets.
 
+
 </LawCallout>
 >
-<LawCallout code="nbcp" title="National Building Code of the Philippines">
+<LawCallout code="pd1096" section="Rule VIII - Wall Openings">
+
 
 LEA Area: Building Technology — National Building Code of the Philippines
+
 
 </LawCallout>
 
 ---
+
+
+
+---
+
+
+
+---
+
+## Exam Tip
+
+LEA Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 m = 1-hour from interior, 1.0-3.0 m = 1-hour exterior, > 3.0 m = no fire-rating required for exterior walls. The 1.0 m threshold is the most tested distance.
+
+## Cross‑References
+
+**Excavation Foundation And Veneer**, **Fire Resistive Construction Ratings**, **Allowable Floor Area Increases**, **Pd 1096 Rule Viii Setbacks And Easements**
 
 ## Verified Sources
 

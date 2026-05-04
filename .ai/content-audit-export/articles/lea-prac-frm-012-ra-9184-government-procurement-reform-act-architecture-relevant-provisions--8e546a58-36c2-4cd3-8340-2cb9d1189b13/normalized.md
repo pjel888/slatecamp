@@ -11,8 +11,6 @@ After studying this article, you should be able to:
 - Identify the architect's role in government procurement.
 - Distinguish RA 9184 from private procurement rules.
 
-
-
 ### Scope and Coverage of RA 9184
 
 RA 9184 applies to procurement of infrastructure projects, goods, and consulting services regardless of source of funds (local or foreign). All government entities must follow its provisions when engaging architects and engineering consultants. The act was modernized through its Revised Implementing Rules and Regulations (2016), and further enhanced by RA 12009 (signed into law in July 2024), which strengthens transparency and competition in government procurement.
@@ -42,10 +40,6 @@ Architects must ensure the contract aligns with the Standards of Professional Pr
 RA 9184 allows three methods: competitive bidding (open to all qualified consultants), limited bidding (restricted to a pre-qualified list, used when only few firms have required expertise), and single source procurement (used in exceptional cases—emergency, sole source availability, or direct contracting with existing framework agreements).
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Three procurement methods for architecture under RA 9184: (1) **Competitive bidding** — standard, open to all qualified; (2) **Limited bidding** — restricted to pre-qualified list, used when few firms...
-[/SLATECAMP_UI_BLOCK]
 
 For architecture, competitive bidding is standard. The government advertises the position, receives qualifications from interested firms, shortlists the best qualified, and either selects based on qualifications or conducts competitive fee bidding. Single source procurement for architecture is rare but may apply when a firm has specialized expertise or when continuing an ongoing design for a complex project.
 
@@ -54,10 +48,6 @@ For architecture, competitive bidding is standard. The government advertises the
 RA 9184 strictly prohibits collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects and their firms must not communicate with other bidding consultants to arrange fees, divide work, or coordinate responses. Doing so violates the law and can result in permanent disqualification from government procurement.
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Prohibited activities:** collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects must NOT communicate with other bidding firms to arrange fees or coordinate responses. Violation...
-[/SLATECAMP_UI_BLOCK]
 
 Architects must disclose conflicts of interest. If a firm has worked for the client recently on a related project, or if the same personnel would be assigned to conflicting projects, disclosure and recusal may be required. Failure to disclose creates liability.
 
@@ -71,29 +61,17 @@ Government contracts are subject to government accounting rules and COA audit. A
 
 RA 12009 (2024) modernizes RA 9184 further. Key updates include enhanced digital procurement systems (e-Procurement), stricter compliance monitoring, and refinements to procurement thresholds and methods. Architects should stay informed of updated implementing rules and familiarize themselves with digital submission and bidding platforms used by their government clients.
 
-
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266" title="RA 9184 — Government Procurement Reform Act"
-- Text: Legal Basis: RA 9184 (Government Procurement Reform Act), as amended by RA 12009 (2024). Governs procurement of consulting services including architectural design for all government entities, GOCCs, and LGUs.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ⚠️ Prohibited activities: collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects must NOT communicate with other bidding firms to arrange fees or coordinate responses. Violations can result in PERMANENT disqualification from government procurement. — expect this as a trap answer on the LEA.
-[/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Three procurement methods: (1) Competitive Bidding — open to all qualified (standard for architecture); (2) Limited Bidding — restricted to pre-qualified list (when few have expertise); (3) Single Source Procurement — exceptional (emergencies, sole source).
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
+
+
+<ArticleMedia type="image" caption="RA 9184 Government Procurement — Procurement Methods and Thresholds" description="Decision tree showing RA 9184 procurement methods: Competitive Bidding (default, above ₱1M infrastructure), Shopping (below thresholds), Negotiated Procurement (emergency, exclusive source), Direct Contracting (proprietary items). Side panel shows procurement thresholds and architecture/consulting services exemptions. Architect's role in bid document preparation highlighted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

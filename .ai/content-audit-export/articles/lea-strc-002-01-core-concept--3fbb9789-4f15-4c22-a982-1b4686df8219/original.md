@@ -1,4 +1,11 @@
 ## What You Need to Know for the LEA
+## Learning Goal
+By the end of this article, you will be able to:
+
+- Define a bearing wall system and explain its load path
+- Identify which structural elements resist gravity loads and which resist lateral loads in a bearing wall system
+- Describe the height and slenderness limitations of bearing wall construction
+- Compare bearing wall systems to moment frames and shear wall systems
 
 Structural systems classify buildings into two primary categories: bearing wall systems (where walls carry gravity loads) and frame systems (where skeletal frameworks carry loads). This distinction determines load paths, member sizing, and lateral bracing strategies.
 
@@ -38,6 +45,13 @@ Bearing wall systems dominate residential and mixed-use construction in the Phil
 
 <Tip>**Memory aid:** Bearing walls **bear** loads directly; frames **defer** loads to a skeleton. Think "walls work, frames relax."</Tip>
 
+
+## Related Articles
+
+See also: **Shear Walls** (lea-strc-002-02) for lateral-force-resisting variants, **Bearing Walls** (lea-strc-002-04) for the wall elements themselves, and **Moment-Resisting Frames** (lea-strc-002-03) for an alternative lateral system.
+
 ## Common Mistakes
+
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
 <WikiMistakeList mistakes={["Confusing bearing wall with any wall that touches a load—bearing walls must carry superimposed loads, not just their own weight (thresholds defined in LEA-STRC-002-04)","Thinking frame systems cannot have shear walls—frames require lateral bracing (shear walls, diaphragms, or moment connections)","Assuming bearing walls are always masonry—RC shear wall systems are bearing systems, and light-gauge stud walls can be bearing if they carry required loads"]} />

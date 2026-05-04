@@ -13,3 +13,4 @@ After reading this article, you should be able to:
 # Owner Smoke Article 1775980177789
 
 Owner smoke content 1775980177789.
+<!-- no-media-needed: test article, not production content -->

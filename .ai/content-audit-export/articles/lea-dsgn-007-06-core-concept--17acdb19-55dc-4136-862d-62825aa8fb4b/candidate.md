@@ -35,10 +35,12 @@ Dead-end corridors are restricted to ensure occupants do not travel too far towa
 - As a design principle, dead-ends should be minimized or used deliberately to terminate minor or service areas, not created unintentionally through poor layout.
 
 Always verify the exact dead-end limits for the tested occupancy in RA 9514 IRR rather than memorizing a single blanket value.
+<ArticleMedia id="media-lea-dsgn-007-06-core-concept" a type="image" caption="Circulation Typology — Primary, Secondary, and Service Circulation Hierarchy" description="Floor plan overlay diagram showing circulation hierarchy: primary corridors (main pedestrian spine), secondary circulation (room-to-room distribution), and service routes (utility, goods, staff). Annotated with minimum clear widths for each hierarchy level." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
 ## Key Provisions
+<ArticleMedia id="media-lea-dsgn-007-06-core-concept" a type="image" caption="Corridor and Lobby Design — Egress Width and Dead-End Limits" description="Plan diagrams of corridor types: straight corridors with egress width annotation, dead-end corridors (6m unsprinklered, 15m sprinklered), lobby/T-junction turning radii, and stair landing configurations per RA 9514 and PD 1096." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 | Circulation Element        | Source / Code Context                            | Design Guidance                                             |
 |:-------------------------- |:------------------------------------------------- |:----------------------------------------------------------- |
@@ -75,7 +77,7 @@ Given a building occupancy (e.g., hospital, hotel, residential) and calculated o
 **Pattern 3 — Dead-End Analysis**  
 Given a floor plan, you locate dead-end corridors and determine if they exceed the allowable lengths under RA 9514 IRR for the specified occupancy and sprinkler condition. You may be asked to identify layout adjustments to eliminate or shorten noncompliant dead-ends.
 
-> <Tip>**Circulation Anchor**: Think in hierarchy — Primary (widest, wayfinding spine), Secondary (distribution), Service (back-of-house). Corridor widths follow PD 1096 and occupancy, not a single universal number. Dead-ends are controlled by RA 9514 IRR; always check the specific occupancy and sprinkler condition, not just a memorized value.</Tip>
+> [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ---
 

@@ -1,8 +1,21 @@
 ## Partnership in Architectural Practice
 
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define a professional partnership for architectural practice.
+- Explain the requirements: SEC registration, partnership agreement, PRC/BOA registration.
+- Describe joint and several liability among partners.
+- Distinguish a general professional partnership from a regular business partnership.
+
+
+
 ### Types and Formation Requirements
 
 An architectural partnership is a group of two or more architects duly registered with the Securities and Exchange Commission (SEC) and the Board of Architecture. RA 9266 recognizes partnerships as legitimate forms of architectural practice where architects combine resources and expertise. General partnerships involve joint and several liability, while limited partnerships are not explicitly addressed in RA 9266.
+
+<Tip>**Joint and several liability** means each partner can be held personally liable for the full amount of a claim, not just their proportional share. A client may pursue any single partner for the entire loss, leaving that partner to seek contribution from the others.</Tip>
 
 Formation requires filing articles of partnership with the SEC, which includes the names and addresses of all partners, contributions, profit-sharing arrangements, and term of partnership. Each partner must be a Filipino citizen properly registered and licensed as an architect. The partnership agreement should establish decision-making authority, dispute resolution mechanisms, and withdrawal procedures. The partnership must be registered with both the SEC and the Board of Architecture.
 
@@ -28,4 +41,21 @@ Partnership operations include regular meetings to discuss major decisions, proj
 
 Dissolution of a partnership occurs upon agreement of all partners, death of a partner, incapacity, or breach of partnership terms. Notification to the PRC and BOA is required for changes in professional practice registration. Outstanding client relationships and project obligations must be transferred to a continuing partner or assigned to another licensed architect. Architectural documents remain the intellectual property of the partnership unless otherwise assigned.
 
+<ExamTip>Partnership dissolution is a common LEA topic. Key triggers: agreement of all partners, death of a partner, incapacity, or breach of partnership terms. After dissolution, the remaining partners must check whether they still meet the 75% RLA requirement before continuing practice.</ExamTip>
+
 Continuation after a partner's withdrawal or death depends on the partnership agreement. A surviving partner may continue the practice if the agreement permits and if the remaining partners meet the 75 percent RLA requirement. Client notification and transfer of architect-of-record status are required. New partnerships may be formed with remaining architects, requiring re-registration with the SEC and BOA. The former partner's share is typically transferred according to the agreement or estate settlement.
+
+---
+
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)

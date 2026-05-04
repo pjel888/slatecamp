@@ -1,32 +1,33 @@
 # Content Diff Report: lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality
 
-Generated: 2026-05-03T13:44:46.320Z
+Generated: 2026-05-04T00:06:22.437Z
 Article ID: 92d4ab9e-b544-4812-96b7-72ca589f102c
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:5910f839ea306da519e80eee821c2ac507b7c4790aeee9df7da3cc199d2151b7`
-- Normalized: `sha256:3979c25b974f6cd18c49c96f5260409c7593d023734e03ac20593278ec6f929d`
-- Candidate: `sha256:efbd11c7a94dc8f5bd45970887ef3525a674b2ecbe23c7ec64b13919fdc51e13`
+- Original: `sha256:efbd11c7a94dc8f5bd45970887ef3525a674b2ecbe23c7ec64b13919fdc51e13`
+- Normalized: `sha256:681d74748b22679c6997af2263bc3a58b0e366dc5efb38619414d4c51eec190e`
+- Candidate: `sha256:681d74748b22679c6997af2263bc3a58b0e366dc5efb38619414d4c51eec190e`
 
 ## Line summary
 
-- Changed lines: 60
+- Changed lines: 39
 - Inserted lines: 0
-- Deleted lines: 14
+- Deleted lines: 4
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 3
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 3
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- None
+- Candidate contains unresolved UI block placeholders.
+- Candidate is missing 3 preserved UI block(s).
 
 ## Warnings
 

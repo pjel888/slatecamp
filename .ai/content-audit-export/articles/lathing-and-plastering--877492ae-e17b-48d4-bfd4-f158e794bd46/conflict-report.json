@@ -1,0 +1,28 @@
+{
+  "attempted_at": "2026-05-04T00:06:55.088Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash.",
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
+  ],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "877492ae-e17b-48d4-bfd4-f158e794bd46",
+  "slug": "lathing-and-plastering",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:dc116ae5271ad9b2ba1be467ab5a806bc30cb2e98df6a2f6d0a121a098f7bd61",
+  "original_hash": "sha256:c21f34fd61b69ab52eb991b28ec39181f468daaf4a52552e8cd055b59904b20b",
+  "candidate_hash": "sha256:281fbbd2f15ab6d5306009d4ea15e82c7598253fb6de063e9c8c8296a7e2f4a1",
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T14:19:13.300587+00:00"
+}

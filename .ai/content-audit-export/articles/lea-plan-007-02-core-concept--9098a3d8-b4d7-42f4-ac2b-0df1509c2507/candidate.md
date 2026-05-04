@@ -5,7 +5,6 @@ Distinguish DHSUD's regulatory and policy-formulating role (permit issuance, pla
 
 **DHSUD** (Department of Human Settlements and Urban Development, created by RA 11201 in 2019) is the regulatory and policy authority for housing and urban development. It absorbed the functions of the former HLURB (Housing and Land Use Regulatory Board, 1987–2019) and the coordination role of HUDCC (Housing and Urban Development Coordinating Council). HLURB is now dissolved; DHSUD is the current agency.
 
-
 ## Core Concept
 
 DHSUD is a _regulatory and policy-formulating agency_, not a producer. It issues permits, approves plans, and adjudicates housing complaints—it does not build housing or finance loans.
@@ -19,10 +18,11 @@ DHSUD's three primary functions:
 3. **Policy formulation and dispute resolution:** DHSUD formulates national housing policy, issues implementing rules and regulations (IRR), and handles complaints and disputes involving developers, buyers, and housing programs.
 
 **Historical context:** The Housing and Land Use Regulatory Board (HLURB), created in 1987, was the regulatory body for developers. The Housing and Urban Development Coordinating Council (HUDCC), created in 1992, coordinated inter-agency housing policy. These two bodies were merged into DHSUD under RA 11201 (2019) to consolidate housing governance. When reading older reference materials, "HLURB" now means "DHSUD."
+<ArticleMedia id="media-lea-plan-007-02-core-concept" a type="image" caption="DHSUD Organizational Structure — Regulatory and Policy Role" description="Organizational chart of DHSUD (Department of Human Settlements and Urban Development, RA 11201, 2019): regulatory functions (permit issuance, plan approval, complaint adjudication), policy formulation, and relationship to HLURB transition. Housing agency hierarchy." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
-<WikiExamTable headers={["Function", "What DHSUD Does", "Key Laws", "What DHSUD Does NOT Do"]} rows={[["Developer Regulation", "Issues License to Sell; reviews project compliance with PD 957; approves subdivision plans and condominium projects", "PD 957", "Does not build housing; does not finance projects"], ["CLUP Review and Approval", "Reviews LGU CLUPs for national conformity; approves or requests revisions; ensures alignment with national policies", "RA 7160, RA 11201", "Does not prepare CLUPs (that is the LGU's role); does not enforce zoning (that is the LGU's role)"], ["Housing Policy Formulation", "Issues IRR for housing laws; sets national standards for housing design and affordability; coordinates agencies", "RA 7279, RA 10884, and others", "Does not directly implement programs (NHA, Pag-IBIG, and others do)"], ["Complaint Resolution", "Adjudicates disputes between developers and buyers; enforces buyer protection laws", "PD 957, RA 6552", "Does not mediate between buyers and financial institutions (SSS, GSIS, Pag-IBIG disputes go to those agencies)"]} />
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
 
 ## Philippine Context
 
@@ -34,8 +34,7 @@ DHSUD is headquartered in Quezon City and maintains regional offices in each reg
 2. **Regulatory distinction:** "DHSUD regulates developers" vs. "DHSUD builds housing" (the latter is false—NHA builds).
 3. **CLUP process:** "Who prepares the CLUP?" → LGU. "Who approves the CLUP?" → DHSUD.
 
-<Tip>**Memory aid:** DHSUD = regulatory (oversees, approves). Does NOT: build, finance, zone, enforce locally. That belongs to NHA, Pag-IBIG, and LGUs.</Tip>
-
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 
 **Exam Tip:** DHSUD (RA 11201, 2019) is NOT HLURB — it's a full department (cabinet-level). HLURB was a regulatory board. DHSUD absorbed HLURB + HUDCC + parts of NHA/HGC coordination. Know the date and the transition.
 
@@ -45,4 +44,4 @@ See **LEA-PLAN-007-01** (NHA) for producer vs. regulator distinction, **LEA-PLAN
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Using HLURB as if it currently exists—HLURB was dissolved 2019; use DHSUD", "Saying DHSUD builds housing—NHA builds; DHSUD regulates", "Confusing DHSUD review (approval of plans) with DHSUD enforcement (that is the LGU's zoning ordinance role)", "Forgetting that CLUP preparation is the LGU's responsibility; DHSUD only reviews/approves", "Attributing environmental compliance (ECC) to DHSUD—ECC is from DENR under PD 1586"]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]

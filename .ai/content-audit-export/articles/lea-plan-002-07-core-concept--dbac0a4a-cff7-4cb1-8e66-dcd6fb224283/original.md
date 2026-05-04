@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Analyze Philippine urban challenges (primate city, informal settlements, weak LGU capacity, informal transport) through international planning concepts, apply adapted models to Metro Manila scenarios, and identify Felino Palafox Jr.'s contributions.
+
 Philippine urban planning applies international concepts (urban models, design principles, new urbanism) to the specific context of rapid urbanization, informal settlements, informal transport, and limited municipal capacity. Felino Palafox Jr. is the leading contemporary Philippine planner.
+
 
 ## Core Concept
 
@@ -32,6 +36,13 @@ Every CLUP-related decision in the Philippines involves balancing growth (develo
 - "What is the 400–800m catchment area in Philippine TOD?" → TOD walkable radius around transit stations. Applied to MRT/LRT station areas in Metro Manila.
 
 <Tip>Philippine planning = applying international theory to local reality (informal settlements, weak capacity, rapid sprawl, diverse stakeholders). Felino Palafox Jr. = leading contemporary planner. In-situ upgrading = keep communities in place. CLUP = law-mandated; zoning ordinance = implementation tool; DHSUD = reviews for conformity.</Tip>
+
+
+**Exam Tip:** Philippine urbanization statistics to know: Manila ≈10× larger than Cebu (primate city). ~2-3 million informal settlers in Metro Manila. Cities growing 3-4% annually. 80+ municipalities and 145+ cities required to have CLUPs.
+
+## Cross-References
+
+See **LEA-PLAN-002-01** (Classical Models) for model application, **LEA-PLAN-003-06** (Informal Settlements) for informal settlement context, and **LEA-PLAN-005-04** (DRRM) for disaster resilience in Philippine cities.
 
 ## Common Mistakes
 

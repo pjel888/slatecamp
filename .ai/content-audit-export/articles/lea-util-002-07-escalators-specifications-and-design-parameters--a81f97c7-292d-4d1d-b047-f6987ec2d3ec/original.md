@@ -1,7 +1,8 @@
 ## What You Need to Know for the LEA
 
-Vertical transportation systems — escalators, moving walks, and conveyors — are critical building infrastructure that must meet strict safety, accessibility, and operational standards. Understanding their specifications, safety requirements, and design constraints is essential for architects, engineers, and facility managers working on Filipino projects.
+## Learning Goal
 
+Apply escalator design parameters — width, rise, inclination angle (30° standard, 35° max), speed (0.5 m/s typical), and the 400-mm flat-step run-in/run-out requirement per BP 344 accessibility standards for escalator installations.
 ## Escalators: Specifications and Design Parameters
 
 ### Standard Dimensions
@@ -11,6 +12,19 @@ Escalator step widths are standardized in three common sizes:
 - _600 mm (24 inches)_ — used in lower-traffic areas and secondary locations
 - _800 mm (32 inches)_ — most common in retail and transportation facilities
 - _1000 mm (40 inches)_ — deployed in high-traffic transit stations and commercial centers
+
+
+<KeyValues items=[{"value": "300-500 lx", "label": "Office Work"}, {"value": "100-200 lx", "label": "Lobby/Corridor"}, {"value": "50-100 lx", "label": "Parking"}, {"value": "750-1000 lx", "label": "Detailed Work"}] />
+
+
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
+
+
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 
 These dimensions are industry standards for escalator design. Philippine Building Code (PD 1096) establishes safety and operational requirements for vertical transportation systems, though specific step width mandates are not explicitly detailed in the code.
 
@@ -174,3 +188,10 @@ All escalators and moving walks require _third-party certification_ by accredite
 6. _Electrical supply_ at 220V/60Hz must be stable and protected; variable frequency drives reduce operating costs while maintaining safety margins.
 
 7. _Maintenance certification_ by accredited third parties is non-negotiable annually and represents a significant but essential operational cost.
+
+## Related Articles
+
+See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, **lea-util-002-04-core-concept**, **lea-util-002-05-core-concept**, **lea-util-002-06-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

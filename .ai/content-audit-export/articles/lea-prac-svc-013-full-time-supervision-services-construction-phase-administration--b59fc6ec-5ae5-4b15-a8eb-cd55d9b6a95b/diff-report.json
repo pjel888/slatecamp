@@ -1,38 +1,47 @@
 {
   "article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
   "slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
-  "generated_at": "2026-05-03T13:44:35.749Z",
-  "old_hash": "sha256:956c389689214632b78eefa062faf99cb573990e029a584f54185648728e5522",
-  "new_hash": "sha256:bf48eb0abc15c0954f1d900a5e803b86df9df7a30462e57c3756cdb9a051833d",
-  "original_hash": "sha256:956c389689214632b78eefa062faf99cb573990e029a584f54185648728e5522",
-  "normalized_hash": "sha256:c633cb62242c536b0f78220128ac3831c8b37061b007c0a484c77e4aae05c9ab",
-  "candidate_hash": "sha256:bf48eb0abc15c0954f1d900a5e803b86df9df7a30462e57c3756cdb9a051833d",
+  "generated_at": "2026-05-04T00:06:10.588Z",
+  "old_hash": "sha256:65e069fbb3a66146aacce1f1cb84028b260a4e2d4fa00fe50ff18d0fc195ab18",
+  "new_hash": "sha256:831252cd8cfce9dac14f19bac99b2e7b831551e88b46b72cdfd79116c0566048",
+  "original_hash": "sha256:65e069fbb3a66146aacce1f1cb84028b260a4e2d4fa00fe50ff18d0fc195ab18",
+  "normalized_hash": "sha256:831252cd8cfce9dac14f19bac99b2e7b831551e88b46b72cdfd79116c0566048",
+  "candidate_hash": "sha256:831252cd8cfce9dac14f19bac99b2e7b831551e88b46b72cdfd79116c0566048",
   "changed": true,
-  "changed_line_count": 51,
-  "inserted_line_count": 35,
-  "deleted_line_count": 0,
+  "changed_line_count": 32,
+  "inserted_line_count": 0,
+  "deleted_line_count": 9,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 4,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 51,
-    "inserted": 35,
-    "deleted": 0,
-    "original_line_count": 31,
-    "candidate_line_count": 66
+    "changed": 32,
+    "inserted": 0,
+    "deleted": 9,
+    "original_line_count": 68,
+    "candidate_line_count": 59
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 4
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 4 preserved UI block(s).",
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s).; original.md hash does not match article metadata export hash."
 }

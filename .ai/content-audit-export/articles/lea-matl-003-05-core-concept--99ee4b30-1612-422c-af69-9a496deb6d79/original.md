@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-Welding is the primary method for joining structural steel in Philippine construction, from moment-resisting frames to bridge fabrication. The LEA expects mastery of four core welding processes (SMAW, GMAW, GTAW, FCAW), weld joint classifications, AWS A2.4 symbol interpretation, inspection methods, and prequalified joint provisions per AWS D1.1. You must understand when to specify each process, recognize common welding defects, and apply Philippine standards aligned with TESDA NC II certifications.
-
+Classify glass types (annealed, tempered, laminated, insulated, heat-strengthened, wired) by manufacturing process, strength characteristics, break pattern, and safety/security applications in building enclosures.
 ## Core Concept
 
 Welding joins two or more metal pieces by melting them together (fusion welding) without the addition of extraneous material, or with filler metal that fuses with the base material. The weld pool solidifies to form a permanent bond exceeding the strength of the base metal if properly executed.
@@ -72,7 +72,7 @@ _Radiographic Testing (RT)_ — X-rays or gamma rays reveal internal defects. RT
 
 _Magnetic Particle Testing (MT)_ — Magnetic fields reveal surface and near-surface defects in ferrous materials only. Fast, economical, and suitable for field use.
 
-_Penetrant Testing (PT)_ — Liquid dyes penetrate surface cracks and are revelead under UV light. Works on all materials (ferrous and non-ferrous); useful for detecting tight surface cracks.
+_Penetrant Testing (PT)_ — Liquid dyes penetrate surface cracks and are revealed under UV light. Works on all materials (ferrous and non-ferrous); useful for detecting tight surface cracks.
 
 ### Prequalified Joints (AWS D1.1)
 
@@ -114,7 +114,7 @@ When a proposed joint falls outside prequalified parameters, the fabricator must
 
 Philippine structural steel fabricators—including those in Vleanzuela's industrial zones and throughout Metro Manila—predominantly employ SMAW for field connections and GMAW for shop welding. TESDA NC II Shielded Metal Arc Welding certification is the foundational qualification for Filipino welders seeking employment locally and abroad. The dual-skill pathway (SMAW → GMAW → GTAW) enables fabricators to handle diverse structural applications.
 
-AWS D1.1 provides the technical basis for NSCP 2015 Chapter 5 (Structural Steel), which requires structural welds to meet AWS D1.1 standards or recognized equivleant. Philippine design codes do not deviate materially from AWS requirements; designers confidently reference AWS D1.1 prequalified joint tables in final specifications.
+AWS D1.1 provides the technical basis for NSCP 2015 Chapter 5 (Structural Steel), which requires structural welds to meet AWS D1.1 standards or recognized equivalent. Philippine design codes do not deviate materially from AWS requirements; designers confidently reference AWS D1.1 prequalified joint tables in final specifications.
 
 Weld inspection is typically specified as 100% visual (VT) with spot ultrasonic (UT) for critical connections (high-rise moment-resisting frames, bridges). The fabricator performs VT during production; the owner's representative conducts UT on a sampling basis. Radiographic inspection (RT) is rare in contemporary Philippine structural work due to cost and safety concerns with radiation exposure on active construction sites.
 
@@ -137,3 +137,10 @@ The LEA evaluates welding knowledge through:
 <WikiMistakeCard title="Specifying Non-Prequalified Joints Without Testing" body="An engineer proposes a CJP groove weld configuration that falls outside AWS D1.1 prequalified parameters (e.g., unusual bevel angle or root opening). Without explicit qualification testing, the weld may not meet strength requirements. Always reference prequalified joints unless custom qualification is budgeted and scheduled." />
 
 <WikiMistakeList items={["Assuming all four processes (SMAW, GMAW, GTAW, FCAW) are interchangeable—each has distinct advantages and limitations. SMAW is field-portable; GMAW is fast; GTAW yields best quality; FCAW handles thick material outdoors.", "Omitting preheat temperature for thick-section structural steel in cool weather—carbon steel thicker than 25 mm typically requires preheating (per AWS D1.1) to prevent cold cracking. Philippine rainy seasons may necessitate preheat even for moderate thicknesses.", "Relying on visual inspection alone for critical connections—specify UT or MT spot checks for high-rise moment-resisting frames, bridges, and suspension systems. Visual inspection misses internal defects like lack of fusion and internal porosity.", "Failing to account for Philippine welding certifications—TESDA NC II is the foundational qualification. Fabricators must employ certified welders per NSCP 2015; specifying processes outside TESDA-certified scopes risks non-compliance."]} />
+
+## Related Articles
+
+See also within Metals, Glass, and Glazing: **lea-matl-003-04-core-concept**, **lea-matl-003-07-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

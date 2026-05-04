@@ -1,38 +1,44 @@
 {
   "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
   "slug": "lea-util-006-06-daylighting-design-strategy",
-  "generated_at": "2026-05-03T13:44:57.460Z",
-  "old_hash": "sha256:fc6a16f0526b22c2b3813de3d9f0d6b06520a966ca518f157ad72323ab9e9b38",
-  "new_hash": "sha256:cdb2d3e6e14e3ec47159f2ea2c7dcba298cc817708ec2f35d1c9de8b99e3a458",
-  "original_hash": "sha256:fc6a16f0526b22c2b3813de3d9f0d6b06520a966ca518f157ad72323ab9e9b38",
-  "normalized_hash": "sha256:a8c20920051300b2241026e919d2acb6a49c2775bbcec37f598001eb858b14c4",
-  "candidate_hash": "sha256:cdb2d3e6e14e3ec47159f2ea2c7dcba298cc817708ec2f35d1c9de8b99e3a458",
+  "generated_at": "2026-05-04T00:06:34.771Z",
+  "old_hash": "sha256:fff2bba4cf9b63d164713a90ffc0a1d58918b639d8e23e47eb6c6e86b06b1c78",
+  "new_hash": "sha256:8a03a0926498cbedaf3bb01a96b2109e06c43364e531f239b8053fbadf772f55",
+  "original_hash": "sha256:fff2bba4cf9b63d164713a90ffc0a1d58918b639d8e23e47eb6c6e86b06b1c78",
+  "normalized_hash": "sha256:8a03a0926498cbedaf3bb01a96b2109e06c43364e531f239b8053fbadf772f55",
+  "candidate_hash": "sha256:8a03a0926498cbedaf3bb01a96b2109e06c43364e531f239b8053fbadf772f55",
   "changed": true,
-  "changed_line_count": 234,
-  "inserted_line_count": 9,
+  "changed_line_count": 220,
+  "inserted_line_count": 11,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 2,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 234,
-    "inserted": 9,
+    "changed": 220,
+    "inserted": 11,
     "deleted": 0,
-    "original_line_count": 228,
-    "candidate_line_count": 237
+    "original_line_count": 237,
+    "candidate_line_count": 248
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002"
+    ],
+    "changed_count": 2
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 2 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
 }

@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
-Urban design applies measurable principles—height-to-width ratios, streetscape quality, complete streets, and human-centered design—to create walkable, livable environments. Three names anchor this subject: Jane Jacobs (urban vitality), Jan Gehl (human sclea), Gordon Cullen (visual experience).
+## Learning Goal
+Apply urban design principles — height-to-width ratios, streetscape quality, complete streets, human scale — identify key theorists (Jacobs, Gehl, Cullen) and their contributions, and evaluate street-level urban quality using measurable design criteria.
+
+Urban design applies measurable principles—height-to-width ratios, streetscape quality, complete streets, and human-centered design—to create walkable, livable environments. Three names anchor this subject: Jane Jacobs (urban vitality), Jan Gehl (human scale), Gordon Cullen (visual experience).
+
 
 ## Core Concept
 
@@ -12,7 +16,7 @@ Urban design differs from planning: planning allocates land uses across space (z
 
 **Gordon Cullen's Townscape** (1961) emphasizes serial vision—how the city reveals itself sequentially as you move through it. Cullen analyzed visual relationships between buildings, spaces, and transitions. A successful streetscape creates a sense of "here" vs. "there"—visual surprises, enclosure, then opening, creating memorable sequences. This differs from modernist towers-in-a-park (isolated objects with neutral surroundings) and focuses on the lived experience of pedestrians.
 
-**Complete Streets** is a modern implementation of these principles: streets designed for pedestrians, cyclists, transit users, and cars (in that priority order). Complete streets include sidewalks, cycle tracks, tree canopy, and street parking buffers. They prioritize ground-floor mixed use (retail, offices, housing) and human-sclea building facades. The philosophy: streets are public spaces first, traffic corridors second.
+**Complete Streets** is a modern implementation of these principles: streets designed for pedestrians, cyclists, transit users, and cars (in that priority order). Complete streets include sidewalks, cycle tracks, tree canopy, and street parking buffers. They prioritize ground-floor mixed use (retail, offices, housing) and human-scale building facades. The philosophy: streets are public spaces first, traffic corridors second.
 
 Urban design is not arbitrary. Every principle is grounded in human behavior and perception: people move more if streets are shaded and bounded; they stay longer if seating and food exist; they feel safer if uses are mixed and streets active.
 
@@ -33,6 +37,13 @@ Manila's EDSA exemplifies poor urban design despite being a major path: wide, di
 - "In Gordon Cullen's townscape, what is 'serial vision'?" → How the city reveals itself sequentially as you move through it.
 
 <Tip>H:W comfortable = 1:2 (not 2:1). "Eyes on the street" = Jane Jacobs (not Lynch). Complete streets = pedestrian first, car last. These three attributions are the highest-frequency urban design errors.</Tip>
+
+
+**Exam Tip:** Know who said what: Jane Jacobs = "eyes on the street" (mixed use, safety). Jan Gehl = human scale (3-5m facade detail, ground floor activity). Gordon Cullen = serial vision (visual experience of moving through city).
+
+## Cross-References
+
+See **LEA-PLAN-002-05** (Lynch Elements) for urban image foundations, **LEA-PLAN-008-03** (Sustainable Development) for complete streets integration, and **LEA-PLAN-002-02** (Contemporary Models) for new urbanism design codes.
 
 ## Common Mistakes
 

@@ -1,8 +1,12 @@
 ## What You Need to Know for the LEA
 
+## Learning Goal
+Classify funeral homes as dual-occupancy (Group E mercantile + Group H assembly), calculate separate occupant loads for business vs. chapel components, apply egress for mixed-use, and verify BP 344 accessibility.
+
 Funeral homes and memorial chapels are mixed-use facilities requiring dual occupancy classification: **Group E (Business and Mercantile)** for the commercial funeral home business area (office, embalming, storage), and **Group H (Assembly)** for the chapel component depending on chapel capacity and seating configuration.
 
 ---
+
 
 ## Core Concept
 
@@ -74,6 +78,13 @@ Funeral homes are licensed commercial establishments regulated by local health a
 > <Tip>**Funeral Home Anchors:** Mixed occupancy of **Group E (Business)** + **Group H Division 1 (Chapel)**. Embalming = 12–20 sqm. Viewing Room = 1.1–1.5 sqm/visitor. Chapel Exit Width = 7.6mm/person. Fire separation E–H = 1-hour minimum.</Tip>
 
 ---
+
+
+**Exam Tip — ERR-DSGN-027:** Funeral homes are dual occupancy: Group E (mercantile for business areas) + Group H (assembly for chapel). Verify fire-rated separation between occupancies per RA 9514 Section 7.2.
+
+## Cross-References
+
+See **LEA-DSGN-004-07** (Theaters) for Group H chapel classification, **LEA-DSGN-008-01** (Fire Egress) for dual-occupancy egress, and **LEA-PLAN-003-06** (Informal Settlements) for community funeral service context.
 
 ## Common Mistakes
 

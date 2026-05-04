@@ -1,18 +1,28 @@
 {
   "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
   "slug": "glass-and-glazing-area-limits",
-  "generated_at": "2026-05-03T13:44:10.759Z",
-  "original_hash": "sha256:aac23108c14ab629d58c0c607e6d32775eeedb817868eaa0ec8367c39817b9b0",
-  "normalized_hash": "sha256:642921597da5a1fd2f0d7e4ed0117d879e8329bb63fef4ec2b3ea2e7019ddb14",
-  "candidate_hash": "sha256:c0706a3ae64cf36a62e9ef1f60a5b63dfb9caa5e170d293e04128c5caf2a954d",
+  "generated_at": "2026-05-04T00:05:37.943Z",
+  "original_hash": "sha256:1328f1ce22f44e3670231dfd35a0e4e082fca38129481635ddce71f308a8d42b",
+  "normalized_hash": "sha256:3dc52861ada0891846589506068fa47c705ea21d8bc4eeeaf9f02df536203138",
+  "candidate_hash": "sha256:3dc52861ada0891846589506068fa47c705ea21d8bc4eeeaf9f02df536203138",
   "ui_blocks_count": 4,
-  "placeholders_found": 4,
-  "placeholders_resolved": 4,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 4,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

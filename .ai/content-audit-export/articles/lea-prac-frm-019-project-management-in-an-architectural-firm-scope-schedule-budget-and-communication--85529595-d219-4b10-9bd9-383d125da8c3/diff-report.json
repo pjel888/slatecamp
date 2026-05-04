@@ -1,38 +1,43 @@
 {
   "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
   "slug": "lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control",
-  "generated_at": "2026-05-03T13:45:11.384Z",
-  "old_hash": "sha256:4f83e1f9463acc8f5fe5d2bdce7960d69d88617283d51a0637b6ad0b7a605d8e",
-  "new_hash": "sha256:85583d1c8a6b1b075a845cb4cc064b8bba1046b46ee20e50c25736aaf88bda24",
-  "original_hash": "sha256:4f83e1f9463acc8f5fe5d2bdce7960d69d88617283d51a0637b6ad0b7a605d8e",
-  "normalized_hash": "sha256:ea54b3212cc5bb4696e6b1b3d04f7d8e093faad02e7b5de642f0e7c39e729db5",
-  "candidate_hash": "sha256:85583d1c8a6b1b075a845cb4cc064b8bba1046b46ee20e50c25736aaf88bda24",
+  "generated_at": "2026-05-04T00:06:51.167Z",
+  "old_hash": "sha256:85583d1c8a6b1b075a845cb4cc064b8bba1046b46ee20e50c25736aaf88bda24",
+  "new_hash": "sha256:26ef0d74e1af0797b1adf06e6ef0bc9e7b93c158183359d358566756a900471a",
+  "original_hash": "sha256:85583d1c8a6b1b075a845cb4cc064b8bba1046b46ee20e50c25736aaf88bda24",
+  "normalized_hash": "sha256:26ef0d74e1af0797b1adf06e6ef0bc9e7b93c158183359d358566756a900471a",
+  "candidate_hash": "sha256:26ef0d74e1af0797b1adf06e6ef0bc9e7b93c158183359d358566756a900471a",
   "changed": true,
-  "changed_line_count": 82,
-  "inserted_line_count": 26,
+  "changed_line_count": 45,
+  "inserted_line_count": 1,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 1,
-  "ui_blocks_candidate_count": 1,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 1,
   "ui_blocks_count": 1,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 1,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 82,
-    "inserted": 26,
+    "changed": 45,
+    "inserted": 1,
     "deleted": 0,
-    "original_line_count": 62,
-    "candidate_line_count": 88
+    "original_line_count": 88,
+    "candidate_line_count": 89
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0003"
+    ],
+    "changed_count": 1
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 1 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
 }

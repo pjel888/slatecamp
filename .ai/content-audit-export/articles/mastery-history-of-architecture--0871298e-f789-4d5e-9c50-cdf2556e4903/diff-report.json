@@ -1,38 +1,44 @@
 {
   "article_id": "0871298e-f789-4d5e-9c50-cdf2556e4903",
   "slug": "mastery-history-of-architecture",
-  "generated_at": "2026-05-03T13:45:03.397Z",
-  "old_hash": "sha256:303bf0802cf5477d335c659aff637d1aa853942a0686ed28c999759a412f8a8e",
-  "new_hash": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
-  "original_hash": "sha256:303bf0802cf5477d335c659aff637d1aa853942a0686ed28c999759a412f8a8e",
-  "normalized_hash": "sha256:69d25a568b1b650dfcff104d437bce606940a2f854c1c6a20901b2f292581a37",
-  "candidate_hash": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
+  "generated_at": "2026-05-04T00:06:41.336Z",
+  "old_hash": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
+  "new_hash": "sha256:b4bf4e73f9f2255377532c0e8ce2d95a0e160d992414b8c1ac7db1dc61cb02f9",
+  "original_hash": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
+  "normalized_hash": "sha256:b4bf4e73f9f2255377532c0e8ce2d95a0e160d992414b8c1ac7db1dc61cb02f9",
+  "candidate_hash": "sha256:b4bf4e73f9f2255377532c0e8ce2d95a0e160d992414b8c1ac7db1dc61cb02f9",
   "changed": true,
-  "changed_line_count": 65,
-  "inserted_line_count": 11,
-  "deleted_line_count": 0,
+  "changed_line_count": 80,
+  "inserted_line_count": 0,
+  "deleted_line_count": 1,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 2,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 65,
-    "inserted": 11,
-    "deleted": 0,
-    "original_line_count": 81,
-    "candidate_line_count": 92
+    "changed": 80,
+    "inserted": 0,
+    "deleted": 1,
+    "original_line_count": 92,
+    "candidate_line_count": 91
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002"
+    ],
+    "changed_count": 2
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 2 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
 }

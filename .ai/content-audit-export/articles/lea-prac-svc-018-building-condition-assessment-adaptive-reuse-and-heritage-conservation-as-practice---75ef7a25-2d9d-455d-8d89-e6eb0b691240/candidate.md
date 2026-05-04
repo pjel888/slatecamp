@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain the legal framework for heritage conservation: RA 10066, NHCP guidelines.
 - Identify the phases of a conservation project vs. new design.
 
-
-
 ---
 ### Building Condition Assessment
 
@@ -32,6 +30,8 @@ Historic and Cultural Heritage Conservation and Planning constitute specialized 
 
 Heritage conservation work includes documentation of historic fabric, development of conservation strategies, and sensitive intervention design. The architect must understand preservation standards and guidelines established by regulatory agencies and professional organizations. Work often requires specialized knowledge of historical details, authentic materials, and period-appropriate construction techniques.
 
+<ArticleMedia id="media-lea-prac-svc-018-building-condition-asse" a type="image" caption="Building Condition Assessment and Heritage Conservation Workflow" description="Process flow showing the assessment-to-occupancy workflow for existing buildings: building condition assessment (documentation→deficiency identification→structural analysis→systems assessment) → adaptive reuse feasibility → heritage conservation planning → schematic design → regulatory compliance → implementation. Based on SPP 203 specialized services." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 Conservation projects frequently involve navigating complex regulatory frameworks, securing historic designations, and managing community stakeholder interests. The architect serves as the technical expert ensuring that interventions respect historical significance while meeting contemporary functional and code requirements.
 
 ### Integration with Comprehensive Services
@@ -46,22 +46,13 @@ Architects offering these specialized services should possess documented experie
 
 These services position architects as strategic advisors on building performance, life extension, and sustainable practice. As building performance analysis and environmental responsibility gain importance, these specialized service categories expand in scope and significance.
 
-<SPP206RefServices />
+[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
 
-<ProcessFlow>
-<ol>
-  <li><strong>Project Definition</strong> — Problem identification</li>
-  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
-  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
-  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
-  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
-  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
-</ol>
-</ProcessFlow>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
 
-<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 
-<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 
 ---
 
@@ -78,4 +69,4 @@ These services position architects as strategic advisors on building performance
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]

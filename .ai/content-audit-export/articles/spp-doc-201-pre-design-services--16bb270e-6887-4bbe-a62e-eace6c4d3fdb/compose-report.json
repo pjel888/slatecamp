@@ -1,18 +1,38 @@
 {
   "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
   "slug": "spp-doc-201-pre-design-services",
-  "generated_at": "2026-05-03T13:44:11.005Z",
-  "original_hash": "sha256:da727f390921f41677bf974bab8e8f4de77638555ed99aad7c1d0007802fd05d",
-  "normalized_hash": "sha256:759255f82e4b7a194a513272405dffde9b79b0c051974195edefbdc30ba68b04",
-  "candidate_hash": "sha256:0c31cdec56d39049f64d31afd8fd63f0a8e363af23e86b0d6c050e3a18eca9c1",
+  "generated_at": "2026-05-04T00:05:38.237Z",
+  "original_hash": "sha256:0c31cdec56d39049f64d31afd8fd63f0a8e363af23e86b0d6c050e3a18eca9c1",
+  "normalized_hash": "sha256:505d68e2bb71046208f6b4a1a2e91a1a4621fcbff5b0a93b02bb300b9d0bd177",
+  "candidate_hash": "sha256:505d68e2bb71046208f6b4a1a2e91a1a4621fcbff5b0a93b02bb300b9d0bd177",
   "ui_blocks_count": 9,
-  "placeholders_found": 9,
-  "placeholders_resolved": 9,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 9,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005",
+    "ui_0006",
+    "ui_0007",
+    "ui_0008",
+    "ui_0009"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition.",
+    "UI block ui_0006 was not used during composition.",
+    "UI block ui_0007 was not used during composition.",
+    "UI block ui_0008 was not used during composition.",
+    "UI block ui_0009 was not used during composition."
+  ]
 }

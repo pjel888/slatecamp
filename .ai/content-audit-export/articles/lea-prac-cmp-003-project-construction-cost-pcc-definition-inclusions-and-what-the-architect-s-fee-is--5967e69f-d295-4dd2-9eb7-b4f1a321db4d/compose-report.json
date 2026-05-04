@@ -1,18 +1,26 @@
 {
   "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
   "slug": "lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on",
-  "generated_at": "2026-05-03T13:44:11.675Z",
-  "original_hash": "sha256:1a836afe26d44ab0d38da499f14776aca373aea8eb04aea91ba3f6cc2d1eb920",
-  "normalized_hash": "sha256:9c5b36f8d655f431ad42ccce7726d47ba9da63df853dc7090c77eb558800586b",
-  "candidate_hash": "sha256:65f238a787fedc65ec8a4458743d8c760ec5377c070ffde9fe33ed9e1c378439",
+  "generated_at": "2026-05-04T00:05:39.067Z",
+  "original_hash": "sha256:65f238a787fedc65ec8a4458743d8c760ec5377c070ffde9fe33ed9e1c378439",
+  "normalized_hash": "sha256:1049948126eb386cbe3affe220c8352d93a8cbac6977881ce930c24f12b594da",
+  "candidate_hash": "sha256:1049948126eb386cbe3affe220c8352d93a8cbac6977881ce930c24f12b594da",
   "ui_blocks_count": 3,
-  "placeholders_found": 3,
-  "placeholders_resolved": 3,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
+  "unused_blocks": [
+    "ui_0002",
+    "ui_0003",
+    "ui_0004"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition."
+  ]
 }

@@ -1,19 +1,26 @@
 {
-  "attempted_at": "2026-05-03T14:02:17.660Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-04T00:06:39.857Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "diff-report.json marks candidate unsafe.",
+    "Candidate has unresolved placeholders.",
+    "UI block preservation failed.",
+    "--all-safe skipped article because diff-report is unsafe."
   ],
-  "warnings": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
+  ],
   "updated_rows_count": 0,
   "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
   "slug": "lea-util-007-02-smart-metering-infrastructure-ami",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:a9068b2019101e4d18c1bb9dbe633758ab2082901e70eff67cec50cca1605098",
-  "original_hash": "sha256:36793fc2022bf18b217cb6ef0dd5109daa4c10152fec41ce806d0cbe340b3114",
-  "candidate_hash": "sha256:a9068b2019101e4d18c1bb9dbe633758ab2082901e70eff67cec50cca1605098",
-  "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:51:39.974417+00:00"
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:a74a11a01f279b92f8ad8ac8991231c9c20e74e0e02f75218051c016347ab37a",
+  "original_hash": "sha256:a74a11a01f279b92f8ad8ac8991231c9c20e74e0e02f75218051c016347ab37a",
+  "candidate_hash": "sha256:dfd33b9475b03673ef317f038b51cc91906cb852e8180235e21295105fd411ea",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-03T16:35:00.220007+00:00"
 }

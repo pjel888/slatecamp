@@ -1,38 +1,44 @@
 {
   "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
   "slug": "lea-prac-frm-008-cpd-requirements-for-architects",
-  "generated_at": "2026-05-03T13:45:07.167Z",
-  "old_hash": "sha256:00785df38af79159bfc6b427195f2802c37d93cc50d7c9ff7cdaa605a0d80f48",
-  "new_hash": "sha256:6ffc42cbddc1d93b71c478587b5625e1155db0116e3ded8a731481b17b16fbc1",
-  "original_hash": "sha256:00785df38af79159bfc6b427195f2802c37d93cc50d7c9ff7cdaa605a0d80f48",
-  "normalized_hash": "sha256:4e4471a9c852f7fad79c776e0675e4d665c78e54a76613dad46223d1b075f51a",
-  "candidate_hash": "sha256:6ffc42cbddc1d93b71c478587b5625e1155db0116e3ded8a731481b17b16fbc1",
+  "generated_at": "2026-05-04T00:06:45.378Z",
+  "old_hash": "sha256:6ffc42cbddc1d93b71c478587b5625e1155db0116e3ded8a731481b17b16fbc1",
+  "new_hash": "sha256:f61b6e62e1f1b0ac709101f360435d1800f36263d24812919ba22790957a8458",
+  "original_hash": "sha256:6ffc42cbddc1d93b71c478587b5625e1155db0116e3ded8a731481b17b16fbc1",
+  "normalized_hash": "sha256:f61b6e62e1f1b0ac709101f360435d1800f36263d24812919ba22790957a8458",
+  "candidate_hash": "sha256:f61b6e62e1f1b0ac709101f360435d1800f36263d24812919ba22790957a8458",
   "changed": true,
-  "changed_line_count": 57,
-  "inserted_line_count": 31,
+  "changed_line_count": 5,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 2,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 2,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 57,
-    "inserted": 31,
+    "changed": 5,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 31,
+    "original_line_count": 62,
     "candidate_line_count": 62
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0003",
+      "ui_0004"
+    ],
+    "changed_count": 2
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 2 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
 }

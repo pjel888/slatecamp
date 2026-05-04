@@ -1,7 +1,7 @@
 ## What You Need to Know for the LEA
+## Learning Goal
 
-The CSI MasterFormat 2018 is the industry standard organizational system for architectural specifications in the Philippines, increasingly adopted alongside DPWH Standards. The LEA tests your knowledge of the 50-division structure, the 3-part specification format (Part 1: General, Part 2: Products, Part 3: Execution), and the major divisions governing building construction materials.
-
+Navigate the CSI MasterFormat divisions by number and title — identify the correct division for any given material, product, or work section (e.g., Division 04 for Masonry, Division 08 for Openings) — and explain how MasterFormat organizes construction specifications.
 ## Core Concept
 
 CSI MasterFormat organizes construction information into 50 numbered divisions (00-49), each addressing a major category of work. Divisions 00-01 cover administrative and procurement matters. Divisions 02-33 cover site work and structural materials. Divisions 34-49 cover building systems (mechanical, electrical, plumbing, fire protection). Within each division, sections address specific items (e.g., Division 03: Concrete; Section 03 30 00: Cast-in-Place Concrete).
@@ -56,3 +56,10 @@ Memory aid for CSI divisions: Divisions 00-01 are administrative. Divisions 02-0
 <WikiMistakeCard mistake="Placing waterproofing specifications in Division 03 (Concrete) instead of Division 07 (Thermal & Moisture Protection). Students think 'waterproofing concrete means Division 03'." correction="Waterproofing membranes, sealants, and moisture control systems belong in Division 07, even if they're applied over concrete or masonry. Division 03 specifies the concrete itself; Division 07 specifies the protection layer." />
 
 <WikiMistakeList mistakes={["Mixing 3-part format: placing product specifications (Part 2 content) in Part 1 General or mixing execution procedures (Part 3) with product descriptions (Part 2)", "Failing to reference coordination between divisions (e.g., Part 1 of Division 03 must reference Division 07 waterproofing for timing and surface requirements)", "Assuming CSI structure is mandatory in Philippine projects (DPWH does not require CSI; understanding CSI is for professional literacy)", "Not customizing CSI specifications for tropical climate (waterproofing, mold resistance, termite protection are Philippine additions)", "Omitting Part 1 General in proprietary or quick specifications (Part 1 is essential for quality standards, testing protocols, and submittals)"]} />
+
+## Related Articles
+
+See also within Architectural Specifications and Documentation: **lea-matl-009-01-core-concept**, **lea-matl-009-03-core-concept**, **lea-matl-009-04-core-concept**.
+
+> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+

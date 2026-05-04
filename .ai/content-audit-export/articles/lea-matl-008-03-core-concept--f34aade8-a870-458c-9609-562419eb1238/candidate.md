@@ -14,6 +14,13 @@ Rivets are historical fasteners largely replaced by bolts and welds. They are dr
 
 Pull-out strength (or withdrawal strength) depends on fastener diameter, material, and embedment depth. Wood-to-wood connections: pull-out strength ≈ 25 to 50 lbf per inch of embedment for common nails; lag screws provide 300 to 500 lbf per inch. Concrete anchors vary by type: wedge anchors provide 1,000 to 2,000 lbf per inch of embedment.
 
+
+<ArticleMedia id="media-fastener-comparison-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of fastener systems: nails, screws, bolts, anchors, rivets, welding, and adhesives with load capacity, substrate compatibility, and installation method"
+  caption="Future chart: fastener system comparison — load capacity, substrate, and installation method"
+  suggestedAsset="Fastener selection matrix with application illustrations"
+  placementIntent="Helps learners select appropriate fasteners by connection requirements" />
+
 ## Key Provisions
 
 | Property | Value | Standard | LEA Relevance |
@@ -33,6 +40,12 @@ Pull-out strength (or withdrawal strength) depends on fastener diameter, materia
 
 Philippine construction standards adopt ASTM fastener classifications, though many informal projects use non-standard fasteners. Common wire nails (CWN) are widely available through hardware stores but rarely meet ASTM specifications for uniformity. Filipino contractors often specify "20 inches" for roofing when 1.75-inch roofing nails are required, leading to fastener failure and roof leaks during monsoon rains. Lag screws and expansion anchors are less commonly used in informal residential construction, resulting in inadequate fastening of structural members to concrete foundations. Stainless steel fasteners, essential for typhoon and coastal corrosion resistance, are often substituted with carbon steel due to cost, leading to premature rust. Quality assurance is weak; ASTM A325 bolts may be mislabeled as A490, creating structural reliability issues.
 
+
+<ArticleMedia id="media-fastener-load-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of fastener load capacities: nails, screws, bolts, anchors, rivets, and adhesives in shear and tension with substrate compatibility"
+  caption="Future chart: fastener load capacity comparison — shear, tension, and substrate compatibility"
+  suggestedAsset="Reference chart or infographic of fastener load capacities"
+  placementIntent="Provides reference for fastener selection based on load requirements" />
 ## How It's Tested
 
 **Exam Pattern 1: Nail Sizing.** A framing plan specifies "16d common nails." What is the length and intended application? Answer: 3.5 inches long; general framing and structural connections.
@@ -43,17 +56,17 @@ Philippine construction standards adopt ASTM fastener classifications, though ma
 
 **Exam Pattern 4: Fastener Material Specification.** A coastal resort in the Philippines specifies carbon steel bolts for exterior connections. What is the risk? Answer: Carbon steel corrodes rapidly in salt spray; stainless steel (duplex or super-duplex) or hot-dip galvanized fasteners are mandatory for coastal applications.
 
-<Tip>Memory aid: "Penny weight guides nail size (16d = 3.5 in common, 2.5 in finishing). A307 = 60k, A325 = 120k, A490 = 150k (bolt tensile grades). Wood-to-wood pull-out ≈ 25-50 lbf/in (nails) or 300-500 lbf/in (lags)."</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Assuming all nail sizes sclea linearly with penny weight (e.g., 20d is 4 inches because 16d is 3.5 inches)." correction="Penny weight is non-linear and historically based on nail weight. Use ASTM F1667 reference tables; 20d common is 4 inches, but 10d is 3 inches, not 2.5 inches." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Specifying carbon steel fasteners for a typhoon-exposed building, assuming corrosion is only an aesthetic concern." correction="Corrosion reduces fastener cross-sectional area and pull-out strength, leading to structural failure during wind or seismic events. Use stainless steel or hot-dip galvanized fasteners in coastal environments." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeCard mistake="Using wood screws instead of lag screws to attach a heavy timber beam to a concrete foundation, assuming screw type has no structural impact." correction="Wood screws in concrete provide minimal pull-out strength and may strip out. Lag screws (or wedge anchors) are designed for timber-to-concrete and provide 300-500 lbf per inch of embedment." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
 
-<WikiMistakeList mistakes={["Confusing ASTM A325 (120 ksi structural) with A307 (60 ksi general-purpose); using the wrong grade leads to undersized bolts", "Calculating pull-out strength without considering embedment depth (the depth the fastener is driven into the material)", "Omitting neoprene washers on roofing nails, allowing water infiltration and fastener corrosion"]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
 
 ## Related Articles
 

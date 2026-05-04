@@ -3,6 +3,14 @@
 Minimalism is not mere simplicity or absence; it is a **rigorous disciplinary framework** where every element is justified through essential function or philosophical necessity. The LEA tests whether you understand the theoretical distinction between minimalism (restraint as positive principle) and reductivism (elimination as default). You must master the work of Tadao Ando, John Pawson, and SANAA, and understand how minimalism emerged as both aesthetic and ethical stance.
 </Callout>
 
+
+
+## Learning Goal
+
+- Define social architecture as community-engaged design where affected communities are primary stakeholders, not mere end-users.
+- Distinguish participatory design (genuine power-sharing) from superficial "community input" (token consultation).
+- Apply participatory methodologies: design charettes, community workshops, co-design sessions, and feedback loops.
+
 ## Core Concept
 
 Minimalism in architecture represents more than stylistic preference for sparse spaces; it is **restraint as intellectual discipline and ethical position**. Mies van der Rohe's aphorism "less is more" encoded the philosophy: reduction to essentials increases significance of what remains; ornament and redundancy distract from pure relationships between form, space, and material.
@@ -27,7 +35,7 @@ Tadao Ando's minimalism operates through consistent strategies:
 
 1. **Material Honesty and Exposed Construction**: Concrete is poured in place, formwork marks are visible, surfaces age naturally. No veneer or finish conceals construction. This reflects modernist truth-to-materials but taken further—the marks of labor and time are preserved as aesthetic elements.
 
-2. **Light as Primary Material**: Rather than treating light instrumentally (enabling vision), Ando uses light as architectural material equivleant to concrete or steel. Apertures are precisely positioned; light inscribes patterns and reveals material. The Chapel of Light (Ibaraki, 1989) features only a cross-shaped light opening; the space is defined by how light intersects concrete surfaces.
+2. **Light as Primary Material**: Rather than treating light instrumentally (enabling vision), Ando uses light as architectural material equivalent to concrete or steel. Apertures are precisely positioned; light inscribes patterns and reveals material. The Chapel of Light (Ibaraki, 1989) features only a cross-shaped light opening; the space is defined by how light intersects concrete surfaces.
 
 3. **Spatial Minimalism**: Interior spaces are often surprisingly modest—rooms might be small, ceilings not extravagant. Rather than volumetric grandeur, impact emerges from proportional precision and material intensity.
 
@@ -43,7 +51,7 @@ Pawson's theoretical contribution: minimalism is not anti-comfort or anti-pleasu
 
 **SANAA and Material Minimalism**
 
-Kazuyo Sejima and Ryue Nishizawa (SANAA) apply minimalist principles at larger scleas. The 21st Century Museum of Art (Kanazawa, 2004) appears deceptively simple—a circular glass building with minimal interior divisions. Yet this simplicity is achieved through extraordinary rigor: the transparency requires careful material selection and weathering solutions; the open floor plan demands sophisticated structural engineering and mechanical integration; the minimal partitioning requires program to generate spatial definition rather than walls.
+Kazuyo Sejima and Ryue Nishizawa (SANAA) apply minimalist principles at larger scales. The 21st Century Museum of Art (Kanazawa, 2004) appears deceptively simple—a circular glass building with minimal interior divisions. Yet this simplicity is achieved through extraordinary rigor: the transparency requires careful material selection and weathering solutions; the open floor plan demands sophisticated structural engineering and mechanical integration; the minimal partitioning requires program to generate spatial definition rather than walls.
 
 SANAA's minimalism is **programmatic and structural, not merely aesthetic**. The Rolex Learning Center (Lausanne, 2010) is a massive building that appears to have no interior organization—a continuous undulating floor and open ceiling, minimal walls. Yet spaces are precisely defined through subtle level changes, strategic lighting, and the topology of the floor landscape itself. The minimalism is phenomenological—users understand spatial relationship through movement and experience, not architectural signage.
 
@@ -143,8 +151,15 @@ The minimalist market trap: minimalism has been commodified as luxury brand, so 
 
 **Formal Economy** — Achieving spatial complexity and significance through minimal means; requires extraordinary precision and rigor.
 
-**Light as Material** — Treating light not as illumination but as architectural substance—shaped, revelead, experienced as primary element.
+**Light as Material** — Treating light not as illumination but as architectural substance—shaped, revealed, experienced as primary element.
 
 **Typological Purity** — Reducing a building type (chapel, museum, residence) to essential elements that define the type; eliminates secondary programmatic accretions.
 
 **Asceticism vs. Refinement** — Ando's minimalism includes ascetic austerity; Pawson's includes refined material selection; both are minimalist but emphasize different values.
+
+## Related Articles
+
+See also within Contemporary Movements & Discourse: **lea-theo-007-01-core-concept**, **lea-theo-007-02-core-concept**, **lea-theo-007-09-core-concept**, **lea-theo-007-10-core-concept**.
+
+> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+

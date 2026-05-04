@@ -1,18 +1,30 @@
 {
   "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
   "slug": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
-  "generated_at": "2026-05-03T13:44:10.802Z",
-  "original_hash": "sha256:84404d66d96a17c6901ed0df5870e55ab06001e1c5b57ab97d13b9547da35007",
-  "normalized_hash": "sha256:39eab2f833fce53ce6890b69c3289511348d0da2d75a4fbaf7df3d05dc350273",
-  "candidate_hash": "sha256:e7859561fd835868be66a5ef3c0b3a9c9bec54423a04a6beac3ef49ba3b799ea",
+  "generated_at": "2026-05-04T00:05:37.993Z",
+  "original_hash": "sha256:e7859561fd835868be66a5ef3c0b3a9c9bec54423a04a6beac3ef49ba3b799ea",
+  "normalized_hash": "sha256:edd7e2144f03bad8d2b22f46757789d23435562c88295fd1a78edcd09566c875",
+  "candidate_hash": "sha256:edd7e2144f03bad8d2b22f46757789d23435562c88295fd1a78edcd09566c875",
   "ui_blocks_count": 5,
-  "placeholders_found": 5,
-  "placeholders_resolved": 5,
+  "placeholders_found": 0,
+  "placeholders_resolved": 0,
   "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 5,
+  "unused_blocks": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003",
+    "ui_0004",
+    "ui_0005"
+  ],
+  "preserved_blocks_reinserted": 0,
   "candidate_matches_original": false,
   "safe_to_diff": true,
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "UI block ui_0001 was not used during composition.",
+    "UI block ui_0002 was not used during composition.",
+    "UI block ui_0003 was not used during composition.",
+    "UI block ui_0004 was not used during composition.",
+    "UI block ui_0005 was not used during composition."
+  ]
 }

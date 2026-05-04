@@ -15,14 +15,17 @@ They are made from hydraulic cement, water, and mineral aggregates (crushed ston
 The blocks are hollow (containing vertical and horizontal voids) to reduce weight while maintaining strength and allowing for reinforcement and grout.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\n    'Nominal Size (in)',\n    'Actual Size (in)',\n    'Weight (kg)',\n    'Typical Use',\n  ]}", rows="{[\n    [\n      '4 × 8 × 16',\n      '3.625 × 7.625 × 15.625',\n      '6—8',\n      'Non-load-bearing partitions',\n    ],\n    ['6 × 8 × 16', '5.625 × 7.625 × 15.625', '10—12', 'Load-bearing walls'],\n    [\n      '8 × 8 × 16',\n      '7.625 × 7.625 × 15.625',\n      '14—18',\n      'Load-bearing walls, columns',\n    ],\n  ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 Standard heights are 8 inches (200 mm) and 4 inches (100 mm);
 standard lengths are 16 inches (400 mm) and 8 inches (200 mm).
 The 8 × 16 unit (200 × 400 mm) is universal in the Philippines.
+
+
+<ArticleMedia id="media-chb-dimensions-diagram" layout="single" type="image" status="placeholder"
+  alt="Annotated drawing of a standard 8×8×16 inch concrete hollow block showing face shell, web, and core dimensions"
+  caption="Future diagram: CHB dimensional standards — face shell, web, and core void geometry"
+  suggestedAsset="Cross-section and isometric drawing of CHB with standard dimensions"
+  placementIntent="Visualizes CHB geometry and terminology described in the article" />
 
 ## ASTM C90: Loadbearing Concrete Masonry Units
 
@@ -30,10 +33,6 @@ ASTM C90 covers hollow and solid concrete masonry units for loadbearing applicat
 The critical requirement is minimum net area compressive strength: 2,000 psi (13.8 MPa).
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Net area compressive strength is measured on the solid portion of the unit only, excluding voids. This is the controlling criterion for structural design and determines whether a unit is suitable for load-bearing applications.
-[/SLATECAMP_UI_BLOCK]
 
 **Key provisions from ASTM C90:**
 
@@ -72,10 +71,6 @@ Most Philippine CHB is produced from Class A concrete (fine aggregates) and Clas
 The quality and strength depend on cement type, water-cement ratio, curing duration, and aggregate source.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Always verify actual compressive strength test reports from the supplier. Do not assume all 8-inch blocks from a supplier meet code minimums; some factories produce blocks as low as 10 MPa to reduce cement content.
-[/SLATECAMP_UI_BLOCK]
 
 ## Clay Bricks: ASTM C62
 
@@ -98,6 +93,13 @@ Clay bricks are kiln-fired at high temperature (1,900—2,200°F), resulting in 
 
 Clay brick is not common in typical Philippine construction due to cost;
 CHB dominates residential and commercial markets.
+
+
+<ArticleMedia id="media-clay-brick-vs-chb" layout="single" type="image" status="placeholder"
+  alt="Side-by-side comparison illustration of clay brick and concrete hollow block showing size, texture, and cross-section differences"
+  caption="Future diagram: clay brick vs. concrete hollow block — physical comparison"
+  suggestedAsset="Comparative illustration with callouts for key differences"
+  placementIntent="Helps learners distinguish between masonry unit types" />
 
 ## Concrete Masonry Units: Physical Properties and Defects
 
@@ -154,24 +156,12 @@ Typical questions present a wall detail with a specified CHB size and ask whethe
 given load. Some questions show defective units and ask whether they are acceptable.
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Always distinguish net area from gross area compressive strength. A unit reporting 10 MPa gross area strength might have 15+ MPa net area strength if voids are 35%+. Code requirements specify net area, not gross area.
-[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Assuming all 8-inch blocks have the same compressive strength regardless of manufacturer", correction="Compressive strength varies by cement content, aggregate quality, and curing. Philippine manufacturers produce 8-inch blocks ranging from 10 MPa to 22 MPa. Specification must include f′c (compressive strength requirement) and require mill test reports.", context="Designers sometimes specify '8 × 8 × 16 CHB' without strength, then find delivered units do not meet calculated design requirements."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: title="Common Design and Specification Errors", items="{[\n    \"Using ASTM C129 (non-loadbearing) units where ASTM C90 (loadbearing) units are required: C129 blocks at 4.1 MPa cannot carry structural loads. Verify ASTM designation and strength.\",\n    \"Confusing gross area and net area compressive strength: Design uses net area strength only. Gross area strength reported by some suppliers is misleading and lower.\",\n    \"Oversizing blocks without checking joint reinforcement rules: Larger blocks must still adhere to maximum vertical and horizontal reinforcement spacing per NSCP 2015 Chapter 7.\",\n    \"Ignoring \nefflorescence and assuming it indicates failure: Efflorescence is aesthetic and controllable through drainage; it does not reduce structural capacity. However, it indicates excess moisture.\",\n    \"Calculating f′m (masonry strength) as equivalent to unit compressive strength: Masonry compressive strength (f′m) is typically 25—50% of unit strength due to mortar joint weakness and imperfect bonding.\nAlways use tabular f′m values from NSCP 2015 Table 7.5-2 for concrete masonry.\"\n  ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

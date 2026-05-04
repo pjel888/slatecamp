@@ -9,14 +9,14 @@ After studying this article, you should be able to:
 - Distinguish design-build from traditional design-bid-build.
 - Describe the architect's relationship with the design-build entity.
 
-
-
 ---
-### The Rationale for Design-Build
+|### The Rationale for Design-Build
 
 in practice, the time-cost-quality triangle is most effectively achieved through Design-Build Services. This delivery method simplifies and expedites the project process while providing creative, cost-effective solutions. The architect's education, training, and expertise qualify the professional to take a direct role in projects from conceptualization through implementation.
 
-A Design-Build arrangement simplifies and expedites project delivery while providing creative cost-effective solutions. Rather than sequential phases where design is complete before construction bidding, Design-Build allows design and construction to overlap, reducing overall schedule and enabling value optimization.
+<ArticleMedia id="media-lea-prac-svc-019-design-build-services-o" a type="image" caption="Design-Build vs. Design-Bid-Build — Delivery Method Comparison" description="Comparison diagram showing Design-Build (single entity, integrated, overlapping phases, compressed schedule, shared risk) versus traditional Design-Bid-Build (sequential phases, separate design and construction contracts, competitive bidding, longer timeline). Highlights architect role, cost certainty, and schedule implications of each approach." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+A Design-Build arrangement simplifies and expedites project delivery
 
 ### Architect's Qualifications and Involvement
 
@@ -47,29 +47,12 @@ This integrated approach requires clear contractual definition of responsibiliti
 Design-Build represents an evolution in how architects and builders collaborate, positioning both parties as partners in achieving optimal project outcomes rather than adversaries in traditional bidding scenarios. The method reflects modern understanding that design and construction expertise must integrate to deliver projects efficiently and effectively.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: - <strong>Project Definition</strong> — Problem identification
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code=\"irr\"
-- Props: section=\"SPP Documents\"
-- Props: title=\"Professional Practice Framework\"
-- Text: SPP Documents 201–209 establish standards for architectural services scope, fee 
-[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%
-[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -87,6 +70,3 @@ Extracted summary:
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items=\"[{\\"value\\": \\"15%\\", \\"label\\": \\"Schematic Design\\"}, {\\"value\\": \\"20%\\", \\"label\\": \\"Design Development\\"}, {\\"value\\": \\"50%\\", \\"label\\": \\"Contract Docs\\"}, {\\"value\\": \\"5%\\", \\"label\\": \\"Bidding Assist\\"}, {\\"value\\": \\"10%\\", \\"label\\": \\"Constr. Admin.\\"}]\"
-[/SLATECAMP_UI_BLOCK]

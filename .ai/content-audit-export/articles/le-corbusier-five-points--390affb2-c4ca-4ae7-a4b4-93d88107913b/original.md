@@ -1,6 +1,14 @@
 # Le Corbusier Five Points
+## Learning Goal
+After reading this article, you should be able to:
+
+Identify and apply Le Corbusier's Five Points of Architecture — pilotis, free plan, free facade, horizontal strip windows (fenêtre en longueur), and roof garden — to building analysis; recognize key Le Corbusier buildings (Villa Savoye, Unité d'Habitation, Ronchamp) by their distinguishing spatial and structural features; and explain how the Five Points enabled the Dom-ino structural system.
 
 ## The Real-World Scenario (The Hook)
+
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
 
 You open an LEA question booklet and see a black-and-white photograph of a white box elevated on slender columns, with a long strip window and a garden visible on the roof. The question asks you to identify all five architectural principles this house embodies. You are looking at the Villa Savoye — and you need to name every point and explain why each one matters.
 
@@ -36,10 +44,13 @@ You open an LEA question booklet and see a black-and-white photograph of a white
 | Villa Savoye | 1931 | Poissy, France | The single building that demonstrates all five points; the "icon" of the Modern Movement |
 | Unité d'Habitation | 1952 | Marseille, France | Vertical city on pilotis for 1,600 residents; béton brut surfaces; later inspired Brutalism |
 | Chapelle Notre-Dame du Haut (Ronchamp) | 1955 | Ronchamp, France | Sculptural departure from rationalism; massive curved walls and a dramatic roof shell |
-| Chandigarh Capitol Complex | 1953–63 | Chandigarh, India | City-sclea application of his urban and architectural principles; UNESCO World Heritage Site |
+| Chandigarh Capitol Complex | 1953–63 | Chandigarh, India | City-scale application of his urban and architectural principles; UNESCO World Heritage Site |
 | Villa Stein-de Monzie (Les Terrasses) | 1928 | Garches, France | Proportional system based on regulating lines; demonstration of free plan and free facade |
 | Vers une Architecture (book) | 1923 | — | Manifesto containing the "machine for living" argument and call for a new architecture |
 
+<Example>The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.</Example>
+
+<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap 1: Confusing "Ribbon Window" with "Curtain Wall."** A ribbon window (fenêtre en longueur) is a horizontal strip window within a wall, not a full-floor glass curtain wall. Curtain walls came later with Mies van der Rohe's glass skyscrapers. On the LEA, these are distinct concepts.
@@ -82,3 +93,10 @@ C. Learning from Las Vegas (1972)
 D. The International Style (1932)
 
 > **Correct Answer: B.** The "machine for living" aphorism appears in Le Corbusier's manifesto Vers une Architecture (1923), where he argued that modern houses should be designed with the same rational efficiency as ships, airplanes, and automobiles. Option A is Venturi; Option C is Venturi & Scott Brown; Option D is Hitchcock & Johnson.
+
+---
+
+## Cross‑References
+
+**The Bauhaus And International Style**, **Mies Van Der Rohe**, **Masters Of The Golden Age**, **Post Modernism**
+

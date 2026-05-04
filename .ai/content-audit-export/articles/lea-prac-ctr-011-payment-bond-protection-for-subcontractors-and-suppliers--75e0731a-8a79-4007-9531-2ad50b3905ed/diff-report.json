@@ -1,38 +1,45 @@
 {
   "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
   "slug": "lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers",
-  "generated_at": "2026-05-03T13:44:37.029Z",
-  "old_hash": "sha256:c28af436a7ec654f43c1c416ae36c22dfb555d1d300e3d133e5f2f5c8d1c2a04",
-  "new_hash": "sha256:a4ecceec358fc1ee7c737227930b398eded2ab445215451f14667abe2f028433",
-  "original_hash": "sha256:c28af436a7ec654f43c1c416ae36c22dfb555d1d300e3d133e5f2f5c8d1c2a04",
-  "normalized_hash": "sha256:7edfb689fc9c2ef4c6484fd21e807af78ea6604736d7ff7a27115b60768a5aad",
-  "candidate_hash": "sha256:a4ecceec358fc1ee7c737227930b398eded2ab445215451f14667abe2f028433",
+  "generated_at": "2026-05-04T00:06:11.966Z",
+  "old_hash": "sha256:a4ecceec358fc1ee7c737227930b398eded2ab445215451f14667abe2f028433",
+  "new_hash": "sha256:b0fa7c8b8e6d4d869bb4700a9506ae1710942e69bb9dc4bc9430bc6c327fc799",
+  "original_hash": "sha256:a4ecceec358fc1ee7c737227930b398eded2ab445215451f14667abe2f028433",
+  "normalized_hash": "sha256:b0fa7c8b8e6d4d869bb4700a9506ae1710942e69bb9dc4bc9430bc6c327fc799",
+  "candidate_hash": "sha256:b0fa7c8b8e6d4d869bb4700a9506ae1710942e69bb9dc4bc9430bc6c327fc799",
   "changed": true,
-  "changed_line_count": 77,
-  "inserted_line_count": 48,
-  "deleted_line_count": 0,
+  "changed_line_count": 60,
+  "inserted_line_count": 0,
+  "deleted_line_count": 11,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 3,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 77,
-    "inserted": 48,
-    "deleted": 0,
-    "original_line_count": 33,
-    "candidate_line_count": 81
+    "changed": 60,
+    "inserted": 0,
+    "deleted": 11,
+    "original_line_count": 81,
+    "candidate_line_count": 70
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
+    "missing_block_ids": [
+      "ui_0001",
+      "ui_0002",
+      "ui_0003"
+    ],
+    "changed_count": 3
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "Candidate contains unresolved UI block placeholders.",
+    "Candidate is missing 3 preserved UI block(s)."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
 }
