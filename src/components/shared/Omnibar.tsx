@@ -79,7 +79,7 @@ export const Omnibar = ({
     const highlightParam = query
       ? `?highlight=${encodeURIComponent(query)}`
       : ''
-    router.push(`/dashboard/wiki/${item.slug}${highlightParam}`)
+    router.push(`/dashboard/wiki/${item.article_id}${highlightParam}`)
   }
 
   // Toggle open on Cmd+K

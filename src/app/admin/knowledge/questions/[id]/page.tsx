@@ -10,7 +10,7 @@ import {
 import { getQuestion } from '@/lib/actions/admin/question-queries'
 import { Card } from '@/components/ui/card'
 import { Eyebrow } from '@/components/ui/eyebrow'
-import { compileMDX } from 'next-mdx-remote/dist/rsc'
+import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import { sanitizeMDX } from '@/lib/wiki-markdown'
 import { isExceptionQuestionType, normalizeQuestionType } from '@/lib/admin/editor-integrity/standard-question'

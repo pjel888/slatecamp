@@ -18,15 +18,15 @@ RETURNS TABLE (
   correct_count INTEGER,
   rationale JSONB,
   topic_id UUID,
-  wiki_slug TEXT
-) AS \$\$
+  wiki_article_id UUID
+) AS $$
 DECLARE
   v_interaction_id UUID;
   v_answered_total INTEGER;
   v_correct_total INTEGER;
   v_rationale JSONB;
   v_topic_id UUID;
-  v_wiki_slug TEXT;
+  v_wiki_article_id UUID;
   v_was_already_answered BOOLEAN;
   v_was_previously_correct BOOLEAN;
 BEGIN
@@ -40,9 +40,9 @@ BEGIN
 
   v_was_already_answered := v_interaction_id IS NOT NULL;
 
-  -- 2. Fetch question metadata (rationale, topic_id, wiki_slug)
-  SELECT q.rationale, q.topic_id, wa.slug
-  INTO v_rationale, v_topic_id, v_wiki_slug
+  -- 2. Fetch question metadata (rationale, topic_id, wiki_article_id)
+  SELECT q.rationale, q.topic_id, wa.article_id
+  INTO v_rationale, v_topic_id, v_wiki_article_id
   FROM public.questions q
   LEFT JOIN public.wiki_article_taxonomy wat ON wat.node_id = q.topic_id AND wat.is_primary = TRUE
   LEFT JOIN public.wiki_articles wa ON wa.article_id = wat.article_id
@@ -89,6 +89,6 @@ BEGIN
   RETURNING public.quiz_sessions.answered_count, public.quiz_sessions.correct_count 
   INTO v_answered_total, v_correct_total;
 
-  RETURN QUERY SELECT v_interaction_id, v_answered_total, v_correct_total, v_rationale, v_topic_id, v_wiki_slug;
+  RETURN QUERY SELECT v_interaction_id, v_answered_total, v_correct_total, v_rationale, v_topic_id, v_wiki_article_id;
 END;
 \$\$ LANGUAGE plpgsql SECURITY DEFINER;

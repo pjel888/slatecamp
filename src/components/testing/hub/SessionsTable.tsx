@@ -22,6 +22,7 @@ import { ROUTES } from '@/lib/routes'
 interface SessionConfig {
   mode?: string
   source?: string
+  articleId?: string
   articleSlug?: string
 }
 
@@ -134,6 +135,10 @@ const getSessionUrl = (session: SessionRecord): string => {
   }
 
   if (READING_MODES.has(modeKey)) {
+    const articleId = session.config?.articleId
+    if (articleId) {
+      return `/dashboard/wiki/${articleId}`
+    }
     const articleSlug = session.config?.articleSlug
     if (articleSlug) {
       return `/dashboard/wiki/${articleSlug}`

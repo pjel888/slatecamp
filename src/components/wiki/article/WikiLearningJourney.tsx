@@ -5,6 +5,7 @@ import type { TocHeading } from '@/lib/wiki-markdown'
 
 interface RelatedTopic {
   slug: string
+  article_id?: string
   title: string
 }
 
@@ -168,7 +169,7 @@ export function WikiLearningJourney({
                 {cappedRelated.map((topic) => (
                   <li key={topic.slug}>
                     <Link
-                      href={`/dashboard/wiki/${topic.slug}`}
+                      href={`/dashboard/wiki/${topic.article_id || topic.slug}`}
                       className="flex items-center justify-between gap-2 rounded-sm px-2 py-1.5 text-xs text-muted-foreground transition-colors hover:bg-muted hover:text-camp-cobalt focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                     >
                       <span>{topic.title}</span>

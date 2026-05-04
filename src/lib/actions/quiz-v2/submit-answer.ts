@@ -59,7 +59,7 @@ const getConfidenceText = (confidenceLevel?: number | null) => {
   return null
 }
 
-const loadWikiSlug = async (supabase: any, topicId: string | null) => {
+const loadWikiArticleId = async (supabase: any, topicId: string | null) => {
   if (!topicId) return null
 
   const { data: articleTaxonomy } = await supabase
@@ -74,11 +74,11 @@ const loadWikiSlug = async (supabase: any, topicId: string | null) => {
 
   const { data: article } = await supabase
     .from('wiki_articles')
-    .select('slug')
+    .select('article_id')
     .eq('article_id', articleId)
     .maybeSingle()
 
-  return article?.slug ?? null
+  return article?.article_id ?? null
 }
 
 export const submitAnswer = async (
@@ -217,7 +217,7 @@ export const submitAnswer = async (
     let interactionId: string | null = null
     let answeredCount = 0
     let correctCount = 0
-    let wikiSlug: string | null = null
+    let wikiArticleId: string | null = null
     let rationaleFromDb: unknown = typedQuestion.rationale
 
     if (rpcError) {
@@ -276,19 +276,19 @@ export const submitAnswer = async (
         .eq('session_id', parsedInput.sessionId)
         .eq('user_id', user.id)
 
-      wikiSlug = await loadWikiSlug(supabase, topicId)
+      wikiArticleId = await loadWikiArticleId(supabase, topicId)
     } else {
       interactionId = rpcResult.interaction_id
       answeredCount = rpcResult.answered_count
       correctCount = rpcResult.correct_count
-      wikiSlug = rpcResult.wiki_slug
+      wikiArticleId = rpcResult.wiki_article_id
       rationaleFromDb = rpcResult.rationale
     }
 
     const rationaleForClient =
       feedbackTiming === 'immediate' ? resolveRationaleText(rationaleFromDb as string | null) || null : null
     const wikiArticleUrl =
-      feedbackTiming === 'immediate' && wikiSlug ? `/dashboard/wiki/${wikiSlug}?from=quiz` : null
+      feedbackTiming === 'immediate' && wikiArticleId ? `/dashboard/wiki/${wikiArticleId}?from=quiz` : null
     const sessionComplete = answeredCount >= questionIds.length
 
     const runPostSubmitWork = async () => {

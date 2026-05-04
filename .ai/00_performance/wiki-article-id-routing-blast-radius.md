@@ -3,7 +3,7 @@
 > **Date:** 2026-05-04
 > **Branch:** `codebase-modernization-batch1-2`
 > **Scope:** Migrate Wiki article detail pages from slug-based URLs (`/dashboard/wiki/[slug]`) to article-ID-based URLs (`/dashboard/wiki/[articleId]`).
-> **Status:** Phase 1 — Audit complete. No code changes yet.
+> **Status:** Phase 1 — Audit complete. Migration executed 2026-05-04.
 
 ---
 
@@ -327,3 +327,25 @@ Based on the audit, **Strategy A (Hard migration to ID route)** is preferred bec
 ---
 
 *End of Phase 1 Blast Radius Audit.*
+
+---
+
+## Post-Migration Final State (added 2026-05-04)
+
+### Canonical route contract
+
+| Element | Value |
+|---------|-------|
+| Route directory | `src/app/dashboard/wiki/[articleId]/` |
+| Route helper | `ROUTES.wiki.article(articleId: string)` |
+| Article lookup | `resolveArticleAndNodeById(articleId)` and `getCachedArticleAndNodeById(articleId)` |
+| Database ID column | `wiki_articles.article_id` (UUID PK) |
+| Slug status | Retained as metadata only; not used for routing |
+| RPC change | `submit_quiz_answer_v2` returns `wiki_article_id` instead of `wiki_slug` |
+| Deprecated fallbacks | `resolveArticleAndNode` and `getCachedArticleAndNode` kept for compatibility |
+
+### Files modified: 44 files, +1209 / -5117 lines
+
+### Verification: type-check PASS, lint PASS, 714 tests PASS, build PASS, storybook-check PASS, storybook-build FAIL (pre-existing Node abort trap)
+
+### Remaining slug usages (acceptable): display/search metadata, deprecated fallback resolvers, database column, 3D-lab fallback with TODOs, storybook visual labels

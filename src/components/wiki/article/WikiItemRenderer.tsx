@@ -5,6 +5,7 @@ export interface WikiItem {
   text: string
   type: string
   source_ref?: string
+  article_id?: string
 }
 
 interface WikiItemRendererProps {
@@ -124,11 +125,12 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
       const pipeIndex = item.text.indexOf('|')
       const label = pipeIndex !== -1 ? item.text.slice(0, pipeIndex) : item.text
       const slug = pipeIndex !== -1 ? item.text.slice(pipeIndex + 1) : null
-      if (slug) {
+      const targetId = item.article_id || slug
+      if (targetId) {
         return (
           <div>
             <Link
-              href={`/dashboard/wiki/${slug}`}
+              href={`/dashboard/wiki/${targetId}`}
               className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-primary-50 hover:bg-primary hover:text-white px-2.5 py-1 rounded-sm transition-colors duration-150 ease-out"
             >
               <svg

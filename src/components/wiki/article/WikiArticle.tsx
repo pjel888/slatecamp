@@ -312,7 +312,7 @@ export const WikiArticle = async ({
         article_title={article.title}
         topic_id={nodeId}
         topic_name={nodeName}
-        source_url={`/dashboard/wiki/${article.slug}`}
+        source_url={`/dashboard/wiki/${article.article_id}`}
       />
 
       <Suspense fallback={null}><WikiHighlighter /></Suspense>

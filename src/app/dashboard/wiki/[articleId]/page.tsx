@@ -24,7 +24,7 @@ import {
   getArticleSiblings,
   type WikiArticleSource,
 } from '@/lib/actions/wiki-actions'
-import { getCachedArticleAndNode, getCachedTaxonomyTreeByDiscipline } from '@/lib/actions/cached-queries'
+import { getCachedArticleAndNodeById, getCachedTaxonomyTreeByDiscipline } from '@/lib/actions/cached-queries'
 import {
   getEIPromptsForArticle,
   getUserEIResponsesForArticle,
@@ -184,6 +184,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
       nodeId={wikiNodeId}
       articleId={article.article_id}
       topicName={wikiNodeName}
+      articleTitle={article.title}
       relatedTopics={relatedTopics}
       headings={headings}
       articleSlug={article.slug}

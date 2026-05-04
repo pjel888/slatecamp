@@ -77,14 +77,16 @@ const sortLabel = (node: TaxonomyTreeNode, index?: number): string | null => {
   return null
 }
 
-/** Walk tree to find ancestor node_ids for a given slug */
+/** Walk tree to find ancestor node_ids for a given slug or article_id */
 const findAncestorIds = (nodes: TaxonomyTreeNode[], slug: string): string[] => {
   const walk = (list: TaxonomyTreeNode[], path: string[]): string[] | null => {
     for (const node of list) {
       const nodeSlug = node.slug ?? ''
       const effectiveSlug = nodeSlug
-        || (node.level >= 3 && node.articles?.length ? node.articles[0].slug : '')
-      const isMatch = effectiveSlug === slug || node.articles?.some(a => a.slug === slug)
+        || (node.level >= 3 && node.articles?.length ? (node.articles[0].article_id || node.articles[0].slug) : '')
+      const isMatch = effectiveSlug === slug
+        || node.articles?.some(a => a.slug === slug)
+        || node.articles?.some(a => a.article_id === slug)
 
       if (isMatch) return [...path, node.node_id]
       if (node.children?.length) {
@@ -407,12 +409,15 @@ const TreeBranch = React.memo(({
   const isExpanded = matchSet ? matchSet.has(node.node_id) : expanded.has(node.node_id)
 
   const nodeSlug = node.slug ?? ''
-  const effectiveSlug = nodeSlug || (isArticleNode && node.articles?.length ? node.articles[0].slug : '')
+  const effectiveSlug = nodeSlug
+    || (isArticleNode && node.articles?.length ? (node.articles[0].article_id || node.articles[0].slug) : '')
 
   const isActive = activeNodeId
     ? activeNodeId === node.node_id
     : activeSlug
-      ? (effectiveSlug === activeSlug || node.articles?.some(a => a.slug === activeSlug))
+      ? (effectiveSlug === activeSlug
+        || node.articles?.some(a => a.slug === activeSlug)
+        || node.articles?.some(a => a.article_id === activeSlug))
       : false
 
   const isChildActive = activeAncestors?.has(node.node_id) ?? false
@@ -473,9 +478,9 @@ const TreeBranch = React.memo(({
                 key={art.article_id}
                 id={art.article_id}
                 label={art.title}
-                href={`${basePath}/${art.slug}`}
-                isActive={activeSlug === art.slug || activeNodeId === art.article_id}
-                isDimmed={dimInactive && (!!activeSlug || !!activeNodeId) && activeSlug !== art.slug && activeNodeId !== art.article_id}
+                href={`${basePath}/${art.article_id}`}
+                isActive={activeSlug === art.slug || activeSlug === art.article_id || activeNodeId === art.article_id}
+                isDimmed={dimInactive && (!!activeSlug || !!activeNodeId) && activeSlug !== art.slug && activeSlug !== art.article_id && activeNodeId !== art.article_id}
                 isChildActive={false}
                 level={3}
                 isArticle={true}

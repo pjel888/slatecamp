@@ -10,7 +10,9 @@ import Link from 'next/link'
 export interface InfoContent {
   partName: string
   description: string
+  /** @deprecated Prefer wikiArticleId (UUID) for ID-based routing. wikiSlug kept as fallback. */
   wikiSlug?: string
+  wikiArticleId?: string
   onQuiz?: () => void
 }
 
@@ -62,9 +64,9 @@ export const InfoPanel = memo(function InfoPanel({
             </p>
 
             <div className='flex items-center gap-2'>
-              {content.wikiSlug && (
+              {(content.wikiArticleId || content.wikiSlug) && (
                 <Link
-                  href={`/dashboard/wiki/${content.wikiSlug}`}
+                  href={content.wikiArticleId ? `/dashboard/wiki/${content.wikiArticleId}` : `/dashboard/wiki/${content.wikiSlug}`}
                   className='inline-flex items-center gap-1.5 h-7 px-2.5 text-[11px] font-bold uppercase tracking-wide rounded-sm border border-border bg-card hover:bg-muted text-foreground transition-colors'
                 >
                   <SCIcon icon={ArrowSquareOut} size='xs' />

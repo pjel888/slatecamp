@@ -105,7 +105,7 @@ export const getReviewData = async (
           .in('node_id', batch),
         supabase
           .from('wiki_article_taxonomy')
-          .select('node_id, article_id, wiki_articles(slug)')
+          .select('node_id, article_id, wiki_articles(article_id)')
           .in('node_id', batch)
           .eq('is_primary', true),
       ])
@@ -114,8 +114,8 @@ export const getReviewData = async (
         taxonomyMap.set(n.node_id, `${n.subject_area} > ${n.name}`)
       }
 
-      for (const w of (wikiLinks ?? []) as Array<{ node_id: string; wiki_articles?: { slug?: string } }>) {
-        wikiMap.set(w.node_id, w.wiki_articles?.slug ? `/dashboard/wiki/${w.wiki_articles.slug}?from=quiz` : null)
+      for (const w of (wikiLinks ?? []) as Array<{ node_id: string; wiki_articles?: { article_id?: string } }>) {
+        wikiMap.set(w.node_id, w.wiki_articles?.article_id ? `/dashboard/wiki/${w.wiki_articles.article_id}?from=quiz` : null)
       }
     }),
   )

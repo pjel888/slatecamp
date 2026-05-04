@@ -51,6 +51,7 @@ const HOTSPOTS: HotspotDef[] = [
     title: 'Stylobate',
     description:
       'The topmost step of the three-stepped platform upon which columns stand. Elevates the colonnade above the ground.',
+    // TODO: Replace with real article_id once known; slug fallback preserves link until then.
     wikiSlug: 'classical-orders-stylobate',
   },
   {
@@ -59,6 +60,7 @@ const HOTSPOTS: HotspotDef[] = [
     title: 'Column Shaft',
     description:
       'Tapers toward the top with a subtle convex curve (entasis) to correct the optical sagging illusion of a perfectly straight column.',
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-column-shaft',
   },
   {
@@ -66,7 +68,8 @@ const HOTSPOTS: HotspotDef[] = [
     position: [0.27, 1.30, 0],
     title: 'Fluting',
     description:
-      '20 shallow vertical grooves with sharp arrises — broader and bolder than the Ionic order\'s 24 grooves. Creates strong shadow lines emphasising verticality.',
+      "20 shallow vertical grooves with sharp arrises — broader and bolder than the Ionic order's 24 grooves. Creates strong shadow lines emphasising verticality.",
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-fluting',
   },
   {
@@ -75,6 +78,7 @@ const HOTSPOTS: HotspotDef[] = [
     title: 'Echinus',
     description:
       'The convex cushion molding forming the lower element of the Doric capital, mediating the transition from shaft to abacus.',
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-capital',
   },
   {
@@ -83,6 +87,7 @@ const HOTSPOTS: HotspotDef[] = [
     title: 'Abacus',
     description:
       'The flat square slab at the top of the capital. Plain and undecorated in the Doric order — directly supporting the entablature.',
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-capital',
   },
   {
@@ -91,6 +96,7 @@ const HOTSPOTS: HotspotDef[] = [
     title: 'Entablature',
     description:
       'Architrave (plain beam) + Frieze (triglyphs & metopes) + Cornice (projecting crown). The horizontal structure carried by the columns.',
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-entablature',
   },
 ]
@@ -166,7 +172,11 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
           payload: {
             title: hotspot.title,
             body: hotspot.description,
-            codeRef: hotspot.wikiSlug ? `/dashboard/wiki/${hotspot.wikiSlug}` : undefined,
+            codeRef: hotspot.wikiArticleId
+              ? `/dashboard/wiki/${hotspot.wikiArticleId}`
+              : hotspot.wikiSlug
+                ? `/dashboard/wiki/${hotspot.wikiSlug}`
+                : undefined,
             isOpen: activeHotspotId === hotspot.id,
           },
           visible: true,

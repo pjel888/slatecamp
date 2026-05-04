@@ -153,9 +153,9 @@ export const SMEReviewQueue = () => {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <h4 className="font-medium text-sm truncate">{item.title}</h4>
-                        {item.type === 'wiki' && item.slug && (
+                        {item.type === 'wiki' && item.id && (
                           <a
-                            href={`/dashboard/wiki/${item.slug}`}
+                            href={`/dashboard/wiki/${item.id}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 text-[11px] text-camp-cobalt hover:underline shrink-0"

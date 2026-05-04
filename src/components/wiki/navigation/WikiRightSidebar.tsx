@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { ThumbsUp, ThumbsDown, LinkSimple } from '@phosphor-icons/react/dist/ssr'
+import { ThumbsUp, ThumbsDown, LinkSimple, Brain } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
@@ -31,6 +31,8 @@ interface WikiRightSidebarProps {
   articleId?: string
   /** Topic name for the quiz modal header */
   topicName?: string
+  /** Article title for quiz modal context */
+  articleTitle?: string
   relatedTopics?: RelatedTopic[]
   headings: TocHeading[]
   articleSlug: string
@@ -45,6 +47,7 @@ export function WikiRightSidebar({
   nodeId,
   articleId,
   topicName,
+  articleTitle,
   relatedTopics = [],
   headings,
   articleSlug,
@@ -63,7 +66,7 @@ export function WikiRightSidebar({
   }, [articleId, disableUserActions])
 
   const handleCopyLink = () => {
-    const url = `${window.location.origin}${ROUTES.wiki.article(articleSlug)}`
+    const url = `${window.location.origin}${ROUTES.wiki.article(articleId || articleSlug)}`
     navigator.clipboard.writeText(url).then(() => {
       setLinkCopied(true)
       setTimeout(() => setLinkCopied(false), 2000)
@@ -121,7 +124,25 @@ export function WikiRightSidebar({
     <div className="space-y-0">
       {/* 1. Review CTA — always opens inline quiz modal */}
       <div className="mb-5">
-        <WikiQuizButton nodeId={nodeId ?? ''} topicName={topicName ?? 'This Topic'} articleSlug={articleSlug} />
+        {nodeId ? (
+          <WikiQuizButton
+            nodeId={nodeId}
+            topicName={topicName ?? 'This Topic'}
+            articleTitle={articleTitle}
+            articleId={articleId}
+          />
+        ) : (
+          <Button
+            size="sm"
+            variant="outline"
+            disabled
+            className="w-full font-bold rounded-sm opacity-60 cursor-not-allowed"
+            title="Review is not available for this article"
+          >
+            <SCIcon icon={Brain} size="sm" className="mr-2" />
+            Review unavailable
+          </Button>
+        )}
       </div>
 
       {/* 1.5 Save to Notes Workspace */}

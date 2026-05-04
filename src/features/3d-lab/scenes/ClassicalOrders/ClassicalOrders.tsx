@@ -14,36 +14,42 @@ const PART_INFO: Record<string, Omit<InfoContent, 'onQuiz'>> = {
     partName: 'Stylobate',
     description:
       'The topmost step of the three-stepped platform (crepidoma) upon which columns stand. The stylobate provides a level, finished surface and visually anchors the colonnade to the landscape. Ancient builders subtly curved the stylobate upward at the centre — an optical refinement to counteract the appearance of sagging.',
+    // TODO: Replace with real article_id once known; slug fallback preserves link until then.
     wikiSlug: 'classical-orders-stylobate',
   },
   shaft: {
     partName: 'Column Shaft',
     description:
       'The primary vertical element. Doric shafts taper from a wider base to a narrower top and exhibit entasis — a subtle convex swelling at about one-third height — to correct the optical illusion of concavity in a perfectly straight column. In the Doric order no base separates the shaft from the stylobate.',
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-column-shaft',
   },
   fluting: {
     partName: 'Fluting',
     description:
-      '20 shallow concave grooves running the full height of the shaft. In the Doric order the arrises (sharp ridges between grooves) meet without a fillet, creating strong shadow lines that emphasise verticality. Compare to the Ionic order\'s 24 deeper, flat-bottomed flutes separated by a narrow fillet.',
+      "20 shallow concave grooves running the full height of the shaft. In the Doric order the arrises (sharp ridges between grooves) meet without a fillet, creating strong shadow lines that emphasise verticality. Compare to the Ionic order's 24 deeper, flat-bottomed flutes separated by a narrow fillet.",
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-fluting',
   },
   echinus: {
     partName: 'Echinus',
     description:
       'The convex cushion-like molding forming the lower element of the Doric capital. Its spreading circular profile mediates the transition from the cylindrical shaft below to the flat square abacus above, distributing load both visually and structurally. The echinus profile is a defining characteristic of the Doric order.',
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-capital',
   },
   abacus: {
     partName: 'Abacus',
     description:
       'The flat square slab forming the topmost element of the Doric capital. Unlike the Ionic abacus (with moldings) or the Corinthian abacus (with concave sides and corner horns), the Doric abacus is a plain, undecorated square that directly supports the entablature above — the hallmark of Doric austerity.',
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-capital',
   },
   entablature: {
     partName: 'Entablature',
     description:
       'The three-part horizontal structure carried by the columns. (1) Architrave: a plain, smooth stone beam spanning column-to-column. (2) Frieze: the most distinctive Doric element — alternating triglyphs (three-channelled blocks, derived from wooden beam ends) and metopes (plain or sculptured panels). (3) Cornice: the projecting crown molding.',
+    // TODO: Replace with real article_id once known.
     wikiSlug: 'classical-orders-entablature',
   },
 }

@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/server'
 export interface CodeUpdate {
   update_id: string
   lea_id: string | null
+  article_id?: string | null
   code_name: string
   summary: string
   previous_value: string | null

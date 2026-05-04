@@ -16,7 +16,8 @@ const meta = {
   args: {
     nodeId: 'storybook-topic',
     topicName: 'Fire Safety Planning',
-    articleSlug: 'fire-separation-occupancy-exit-strategy',
+    articleTitle: 'Fire Separation, Occupancy, and Exit Strategy',
+    articleId: 'storybook-article',
   },
   render: (args) => (
     <div className="w-full max-w-xs">

@@ -60,8 +60,8 @@ export const SocraticExplorer = ({
 
   const openWikiPanel = useQuizStore((s) => s.openWikiPanel)
 
-  const handleSourceClick = (slug: string) => {
-    openWikiPanel(`/dashboard/wiki/${slug}`)
+  const handleSourceClick = (slug: string, articleId?: string) => {
+    openWikiPanel(`/dashboard/wiki/${articleId || slug}`)
   }
 
   // Scroll to bottom when messages change
@@ -264,7 +264,7 @@ export const SocraticExplorer = ({
                 <p className="whitespace-pre-wrap">{stripSources(msg.content)}</p>
                 {msg.sources.length > 0 && (
                   <SourceBadgeRow
-                    sources={msg.sources}
+                    sources={msg.sources.map((s) => ({ slug: s }))}
                     onSourceClick={handleSourceClick}
                   />
                 )}

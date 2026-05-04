@@ -9,7 +9,9 @@ export interface HotspotDef {
   position: [number, number, number]
   title: string
   description: string
+  /** @deprecated Prefer wikiArticleId (UUID) for ID-based routing. wikiSlug kept as fallback. */
   wikiSlug?: string
+  wikiArticleId?: string
 }
 
 interface HotspotAnnotationProps {
@@ -42,7 +44,11 @@ export const HotspotAnnotation = ({
       payload: {
         title: hotspot.title,
         body: hotspot.description,
-        codeRef: hotspot.wikiSlug ? `/dashboard/wiki/${hotspot.wikiSlug}` : undefined,
+        codeRef: hotspot.wikiArticleId
+          ? `/dashboard/wiki/${hotspot.wikiArticleId}`
+          : hotspot.wikiSlug
+            ? `/dashboard/wiki/${hotspot.wikiSlug}`
+            : undefined,
         isOpen: isActive,
       },
       visible: true,

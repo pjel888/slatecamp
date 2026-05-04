@@ -4306,7 +4306,7 @@ export type Database = {
           interaction_id: string
           rationale: Json
           topic_id: string
-          wiki_slug: string
+          wiki_article_id: string
         }[]
       }
       update_theta: {

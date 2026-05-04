@@ -9,6 +9,7 @@ import { ROUTES } from '@/lib/routes'
 
 interface RelatedTopic {
   slug: string
+  article_id?: string
   title: string
 }
 
@@ -102,7 +103,7 @@ export const WikiRelatedPopover = ({ topics }: WikiRelatedPopoverProps) => {
             {topics.map((topic, i) => (
               <Link
                 key={topic.slug}
-                href={ROUTES.wiki.article(topic.slug)}
+                href={ROUTES.wiki.article(topic.article_id || topic.slug)}
                 onClick={() => setIsOpen(false)}
                 className={`flex items-center gap-2 px-3 py-2 hover:bg-muted transition-colors dark:hover:bg-wiki-surface-dark ${i < topics.length - 1 ? 'border-b border-wiki-divider dark:border-wiki-invert-divider' : ''}`}
               >

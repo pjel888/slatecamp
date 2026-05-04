@@ -17,6 +17,8 @@ const meta = {
     nodeId: 'storybook-topic',
     topicName: 'Fire Safety Planning',
     articleSlug: 'fire-separation-occupancy-exit-strategy',
+    articleTitle: 'Fire Separation, Occupancy, and Exit Strategy',
+    articleId: 'storybook-article-id',
     onClose: () => undefined,
   },
   render: (args) => <WikiQuizModal {...args} />,

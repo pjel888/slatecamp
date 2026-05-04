@@ -125,7 +125,7 @@ describe('submitAnswer', () => {
           interaction_id: 'int-1',
           answered_count: 1,
           correct_count: 1,
-          wiki_slug: 'test-article',
+          wiki_article_id: 'test-article-id',
           rationale: 'Because science.',
         },
         error: null
@@ -164,7 +164,7 @@ describe('submitAnswer', () => {
           interaction_id: 'int-gesture',
           answered_count: 1,
           correct_count: 1,
-          wiki_slug: 'test-article',
+          wiki_article_id: 'test-article-id',
           rationale: 'Because science.',
         },
         error: null
@@ -209,7 +209,7 @@ describe('submitAnswer', () => {
           interaction_id: 'int-gesture-clamped',
           answered_count: 1,
           correct_count: 1,
-          wiki_slug: 'test-article',
+          wiki_article_id: 'test-article-id',
           rationale: 'Because science.',
         },
         error: null
@@ -255,7 +255,7 @@ describe('submitAnswer', () => {
           interaction_id: 'int-1',
           answered_count: 1,
           correct_count: 1,
-          wiki_slug: 'test-article',
+          wiki_article_id: 'test-article-id',
           rationale: 'Final rationale.',
         },
         error: null

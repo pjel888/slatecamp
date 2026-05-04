@@ -13,6 +13,7 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 
 interface WikiReferenceProps {
   slug: string
+  articleId?: string
   children: React.ReactNode
   className?: string
 }
@@ -22,7 +23,7 @@ interface WikiReferenceProps {
  * Hover = Tooltip with a brief summary (lea_tests_you).
  * Click = Slide-out drawer with the full article (via Sheet).
  */
-export function WikiReference({ slug, children, className }: WikiReferenceProps) {
+export function WikiReference({ slug, articleId, children, className }: WikiReferenceProps) {
   const [isOpen, setIsOpen] = React.useState(false)
   const [summary, setSummary] = React.useState<string | null>(null)
   const [title, setTitle] = React.useState<string | null>(null)
@@ -46,6 +47,8 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
       setIsLoading(false)
     }
   }, [slug, summary])
+
+  const targetId = articleId || slug
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -102,7 +105,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
               {title || 'Loading Article...'}
             </SheetTitle>
             <Link
-              href={ROUTES.wiki.article(slug)}
+              href={ROUTES.wiki.article(targetId)}
               className="text-[11px] font-medium text-camp-cobalt hover:underline"
               onClick={() => setIsOpen(false)}
             >
@@ -118,7 +121,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
               or re-use the WikiArticle component with limited features.
           */}
           <iframe
-            src={`${ROUTES.wiki.article(slug)}?minimal=true`}
+            src={`${ROUTES.wiki.article(targetId)}?minimal=true`}
             className="w-full h-full border-none"
             title={`Peek: ${title}`}
           />

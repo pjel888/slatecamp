@@ -67,7 +67,7 @@ const getSessionTopicAccuracy = async (
 // ─── Helper: Unread wiki article for a topic ─────────────────────────────────
 
 interface WikiRecommendation {
-  slug: string
+  articleId: string
   title: string
 }
 
@@ -114,7 +114,7 @@ const getUnreadWikiForTopic = async (
 
   // If all are "visited," return the first one as a refresher
   const target = unread ?? articles[0]
-  return { slug: target.slug, title: target.title }
+  return { articleId: target.article_id, title: target.title }
 }
 
 // ─── Helper: Overdue SRS items count ─────────────────────────────────────────
@@ -211,7 +211,7 @@ export const generateRecommendations = async (
           description: `Review the core concepts for ${wikiTargetTopic.topicName} before your next session.`,
           action: {
             type: 'open_wiki',
-            href: ROUTES.wiki.article(wikiRec.slug),
+            href: ROUTES.wiki.article(wikiRec.articleId),
           },
         })
       }

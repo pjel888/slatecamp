@@ -12,12 +12,14 @@ import { cn } from '@/lib/utils'
 
 interface SourceBadgeProps {
   slug: string
+  articleId?: string
   className?: string
   onClick?: (slug: string) => void
 }
 
-export const SourceBadge = ({ slug, className, onClick }: SourceBadgeProps) => {
+export const SourceBadge = ({ slug, articleId, className, onClick }: SourceBadgeProps) => {
   const label = slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+  const targetId = articleId || slug
 
   const badge = (
     <Badge
@@ -45,7 +47,7 @@ export const SourceBadge = ({ slug, className, onClick }: SourceBadgeProps) => {
 
   return (
     <Link
-      href={`/dashboard/wiki/${slug}`}
+      href={`/dashboard/wiki/${targetId}`}
       className="transition-opacity hover:opacity-80 no-underline"
     >
       {badge}
@@ -83,8 +85,8 @@ export const stripSources = (text: string): string =>
 // ---------------------------------------------------------------------------
 
 interface SourceBadgeRowProps {
-  sources: string[]
-  onSourceClick?: (slug: string) => void
+  sources: Array<{ slug: string; articleId?: string }>
+  onSourceClick?: (slug: string, articleId?: string) => void
 }
 
 export const SourceBadgeRow = ({ sources, onSourceClick }: SourceBadgeRowProps) => {
@@ -92,8 +94,8 @@ export const SourceBadgeRow = ({ sources, onSourceClick }: SourceBadgeRowProps) 
 
   return (
     <div className="flex flex-wrap gap-1.5 mt-1.5">
-      {sources.map((slug) => (
-        <SourceBadge key={slug} slug={slug} onClick={onSourceClick} />
+      {sources.map((s) => (
+        <SourceBadge key={s.slug} slug={s.slug} articleId={s.articleId} onClick={onSourceClick ? () => onSourceClick(s.slug, s.articleId) : undefined} />
       ))}
     </div>
   )

@@ -65,7 +65,7 @@ export function DailyWikiCard({
         <div className='mt-auto flex justify-end'>
           <Link
             href={
-              article ? `/dashboard/wiki/${article.slug}` : '/dashboard/wiki'
+              article ? `/dashboard/wiki/${article.articleId}` : '/dashboard/wiki'
             }
             className='text-[11px] font-medium underline underline-offset-2 text-white/90'
           >
