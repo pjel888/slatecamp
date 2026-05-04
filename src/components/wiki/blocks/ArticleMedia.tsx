@@ -257,7 +257,7 @@ const ArticleMedia = ({
   credit,
   sourceUrl,
   suggestedAsset,
-  _suggestedSearchQuery,
+  suggestedSearchQuery: _suggestedSearchQuery,
   replacementNotes,
   carouselCount,
 }: ArticleMediaProps) => {
