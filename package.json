@@ -84,7 +84,6 @@
     "content-audit:rewrite": "bun scripts/content-audit/ai-feature-guard.ts rewrite"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.78.0",
     "@base-ui/react": "^1.4.1",
     "@codemirror/lang-markdown": "^6.5.0",
     "@codemirror/view": "^6.41.1",
@@ -118,7 +117,6 @@
     "date-fns": "^4.1.0",
     "framer-motion": "^12.38.0",
     "fuse.js": "^7.3.0",
-    "geist": "^1.7.0",
     "idb": "^8.0.3",
     "isomorphic-dompurify": "^3.11.0",
     "lucide-react": "^0.577.0",
@@ -127,7 +125,6 @@
     "next": "16.2.3",
     "next-mdx-remote": "^6.0.0",
     "next-themes": "^0.4.6",
-    "openai": "^6.35.0",
     "papaparse": "^5.5.3",
     "payrex-node": "^1.7.4",
     "react": "^19.2.5",

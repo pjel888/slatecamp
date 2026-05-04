@@ -36,7 +36,6 @@ export const developerPortalTechStack: DeveloperTechStackRow[] = [
   { label: '3D', pkg: 'three / @react-three/fiber', version: THREE_VERSION },
   { label: 'Charts', pkg: 'recharts', version: version('recharts') },
   { label: 'Animation', pkg: 'framer-motion', version: version('framer-motion') },
-  { label: 'AI', pkg: '@anthropic-ai/sdk', version: version('@anthropic-ai/sdk') },
   {
     label: 'Payments',
     pkg: 'payrex-node',
