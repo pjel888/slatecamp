@@ -61,6 +61,9 @@ const config: StorybookConfig = {
       'next/navigation': fileURLToPath(
         new URL('../src/storybook/mocks/next-navigation.tsx', import.meta.url),
       ),
+      'crypto': fileURLToPath(
+        new URL('../src/storybook/mocks/crypto.ts', import.meta.url),
+      ),
     }
 
     return viteConfig
