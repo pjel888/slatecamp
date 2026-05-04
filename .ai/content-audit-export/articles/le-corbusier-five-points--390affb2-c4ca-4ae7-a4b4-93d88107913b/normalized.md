@@ -6,16 +6,32 @@ Identify and apply Le Corbusier's Five Points of Architecture — pilotis, free 
 
 ## The Real-World Scenario (The Hook)
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 Extracted summary:
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+- Props: (none)
+- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
@@ -58,15 +74,25 @@ You open an LEA question booklet and see a black-and-white photograph of a white
 | Villa Stein-de Monzie (Les Terrasses) | 1928 | Garches, France | Proportional system based on regulating lines; demonstration of free plan and free facade |
 | Vers une Architecture (book) | 1923 | — | Manifesto containing the "machine for living" argument and call for a new architecture |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 
 component="ExamTip" status="preserved"]
-<Note>
-**LEA Pattern:** Questions about this architect often present an unfamiliar b...
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...

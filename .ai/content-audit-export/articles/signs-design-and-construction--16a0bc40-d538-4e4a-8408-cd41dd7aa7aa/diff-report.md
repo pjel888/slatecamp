@@ -1,15 +1,15 @@
 # Content Diff Report: signs-design-and-construction
 
-Generated: 2026-05-04T02:18:07.429Z
+Generated: 2026-05-04T09:14:16.227Z
 Article ID: 16a0bc40-d538-4e4a-8408-cd41dd7aa7aa
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:092838374abaf4255aa4f523b3f011e2ca77bba83170f61aaf1398d4f38f2164`
-- Normalized: `sha256:4e8fa3c17116b958011db32d25853794f7a71793aa3d7dee8bc0ab4bbd35a193`
-- Candidate: `sha256:092838374abaf4255aa4f523b3f011e2ca77bba83170f61aaf1398d4f38f2164`
+- Original: `sha256:64aba77bf1f085cad1c728beeeea1e25179a01833befc63870bdcf3580e26fdf`
+- Normalized: `sha256:98664740aa90a33e8e3026d013fe20a1b0aced91540642b0aaa58d98a7538753`
+- Candidate: `sha256:64aba77bf1f085cad1c728beeeea1e25179a01833befc63870bdcf3580e26fdf`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

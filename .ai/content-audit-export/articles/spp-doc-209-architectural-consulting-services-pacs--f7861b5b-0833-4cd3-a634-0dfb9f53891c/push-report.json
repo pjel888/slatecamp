@@ -1,10 +1,10 @@
 {
-  "attempted_at": "2026-05-04T02:17:46.159Z",
+  "attempted_at": "2026-05-04T09:14:01.163Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
   "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+    "candidate.md matches original.md; refusing no-op apply."
   ],
   "warnings": [],
   "updated_rows_count": 0,
@@ -15,7 +15,7 @@
   ],
   "remote_hash_before": "sha256:d469f4ed1a8c7cf431b92eaefb9a8b4c83492c59b9d32860cde7f9efc04da744",
   "original_hash": "sha256:d469f4ed1a8c7cf431b92eaefb9a8b4c83492c59b9d32860cde7f9efc04da744",
-  "candidate_hash": "sha256:bb3687068b5a5369f5f6dcfedafa5a6b0d09b9a6fecc87406ebf75f81e84bc0c",
+  "candidate_hash": "sha256:d469f4ed1a8c7cf431b92eaefb9a8b4c83492c59b9d32860cde7f9efc04da744",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T14:19:49.83773+00:00"
 }

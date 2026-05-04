@@ -37,19 +37,35 @@ This material is **psychologically engineered** for maximum retention. Every sec
 
 ### VISUALIZATION: WHY SETBACKS EXIST
 
-<ArticleMedia id="media-setback-yard-dimensions-diagram" type="diagram" caption="Plan view of a residential lot showing front yard, side yards, and rear yard with dimension callouts. Show R-1 example: front 4.50 m, sides 2.00 m (one side required), rear 2.00 m. Include a second version for R-2 Basic: front 3.00 m. Show building as hatched rectangle centered within yard setbacks with property line boundary." />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-setback-yard-dimensions-diagram", type="diagram", caption="Plan view of a residential lot showing front yard, side yards, and rear yard with dimension callouts. Show R-1 example: front 4.50 m, sides 2.00 m (one side required), rear 2.00 m. Include a second version for R-2 Basic: front 3.00 m. Show building as hatched rectangle centered within yard setbacks with property line boundary."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-incremental-setback-and-easement" type="diagram" caption="Building section showing the incremental setback rule: for buildings over 2 storeys, side/rear court increases by 300 mm per storey up to 14 storeys. Show a 10-storey commercial example: base 3.00 m + (8 storeys × 0.30 m) = 5.40 m. Below, show easement zones along a riverbank: 3 m urban, 20 m agricultural, 40 m forest with the building set back beyond the easement line." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-incremental-setback-and-easement", type="diagram", caption="Building section showing the incremental setback rule: for buildings over 2 storeys, side/rear court increases by 300 mm per storey up to 14 storeys. Show a 10-storey commercial example: base 3.00 m + (8 storeys × 0.30 m) = 5.40 m. Below, show easement zones along a riverbank: 3 m urban, 20 m agricultural, 40 m forest with the building set back beyond the easement line."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 > _You are standing at the front door of a newly built house in a subdivision. Look left — the neighbor's wall is barely a meter away. There is no sunlight. There is no airflow. If a fire starts, the flames jump the gap in seconds._
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VIII - Setbacks and Easements"
+- Text: _This is why PD 1096 mandates yards. A "yard" is the required open space between the outermost face of the building and the property line. The width of that yard IS the setback. Setbacks serve three critical purposes:_
+[/SLATECAMP_UI_BLOCK]
 
 1. **Light & Ventilation** — Natural air and sunlight must reach every habitable room.
 2. **Fire Separation** — Distance slows fire spread between adjacent buildings.
 3. **Public Safety & Aesthetics** — Uniform setbacks create orderly streetscapes and ensure emergency access.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="authority", title="Reason for the Law"
+- Text: The Philippines is a tropical country with dense urban areas; without mandated open space, buildings would consume entire lots, creating dark, unventilated fire traps that PD 1096 seeks to prevent.[web:2][web:15]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -91,7 +107,11 @@ Students frequently confuse this with the 3.00 m basic front setback of R-2 and 
 
 Mnemonic: **"R-1 = 4 and a half, R-2/3 Basic = 3 flat"**
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Active Recall: What is the front setback for an R-1 lot? For an R-2 Basic lot? R-1 front setback: **4.50 m** (Table VIII.2)[web:2] R-2 Basic front setback: **3.00 m** (Table VIII.2)[web:2]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -124,7 +144,11 @@ Mnemonic: **"R-1 = 4 and a half, R-2/3 Basic = 3 flat"**
 
 Example: A commercial lot along a 20 m RROW uses **5.00 m** front setback from Table VIII.3, not any R-2/R-3 value from Table VIII.2.[web:2]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Active Recall: What is the front setback for a commercial building on a 25 m RROW? On a 30 m RROW? 25 m RROW: **6.00 m** (Table VIII.3, 25.00–29.00)[web:2] 30 m RROW: **8.00 m** (Table VIII.3, 30.00 & above)[web:2]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -141,9 +165,17 @@ Abutments are building walls built exactly on the property line (zero setback). 
 | **R-5**  | 2 sides OR 1 side + rear | No abutments on front line              |
 | **C-3**  | 2 sides OR 1 side + rear | No abutments on front line              |
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="authority", title="Reason for the Law"
+- Text: R-1 lots must preserve the character of fully detached single-family dwellings, so any abutment would break the intended light, ventilation, and fire separation envelope.[web:2]
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0008 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Active Recall: How many sides can an R-4 lot have abutments? What about R-3? R-4: **2 sides only**, not front/rear.[web:2] R-3: **2 sides OR 1 side + rear**, never on front.[web:2]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -162,7 +194,11 @@ Abutments are building walls built exactly on the property line (zero setback). 
 - Increment = 8 × 0.30 m = 2.40 m.[web:2]
 - **Total side court width = 3.00 + 2.40 = 5.40 m.**
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0009 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Active Recall: At what rate does the setback increase per storey? At what storey does the increment cap? Rate: **300 mm per storey** above 2nd.[web:2] Cap: **14th storey**.[web:2]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -185,7 +221,11 @@ The IRR identifies **seven (7)** standardized lot configurations.[web:2]
 
 > **Reason for these categories:** The more public frontages a lot has, the more natural light and ventilation its buildings receive from the surroundings, so the internal required TOSL can be lower.[web:2]
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0010 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Active Recall: How many lot types does the IRR identify? Which lot type has the lowest TOSL requirement? **7 lot types** total.[web:2] Lowest TOSL: **Corner-Through Lot** and **Corner lot abutting 3+ streets/alleys/rivers** at about **5%** for all groups.[web:2]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -220,7 +260,11 @@ Always confirm with the specific IRR text when applying variances in a design pr
 
 > **Exam Context:** You must deduct the easement strip from the lot's buildable dimension **based on the site’s land classification (urban/agricultural/forest)**, not just water width.[web:16]
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0011 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Active Recall: What easement applies to a river in an urban area? What about an agricultural shoreline? Urban river bank: **3.00 m** easement zone from the bank.[web:16] Agricultural shoreline: **20.00 m** from the mean high tide line.[web:16]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -260,7 +304,11 @@ Answer these aloud. No peeking.
 
 > All these projections — balcony, footing, canopy — are regulated by **Rule X** to balance building use versus the public right to a safe clear street.[web:7]
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="authority", title="Reason for the Law"
+- Text: Narrow urban streets can easily become dark, low-clearance tunnels if projections are not controlled, endangering pedestrians and emergency access.[web:7][web:11]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -322,7 +370,11 @@ Mnemonic: **"F-3-2 / F-5-6"**
 - **Footing**: **3**00 mm projection, **2**.40 m depth.
 - **Foundation**: **5**00 mm encroachment, **6**00 mm depth (top below grade).
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Active Recall: What is the maximum projection for a footing along a national road? For a foundation into a sidewalk? Footing along national road: **300 mm** max projection at **2.40 m** minimum depth.[web:11] Foundation into sidewalk: **500 mm** max width with top **600 mm** below grade.[web:11]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -353,7 +405,11 @@ The **2.40 m** figure applies to:
 
 Mnemonic: **Permanent = 3.00; movable = 2.40.**
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Active Recall: What is the minimum vertical clearance for a balcony? For an awning? For a canopy? Balcony: **3.00 m**.[web:11] Awning: **2.40 m**.[web:11] Canopy/Marquee: **3.00 m**.[web:11]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -396,7 +452,11 @@ Mnemonic: **Permanent = 3.00; movable = 2.40.**
 
 > Chaflans open sight lines at tight corners so vehicles and pedestrians can see each other earlier.[web:7][web:11]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0015 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Active Recall: When is a chaflan required? What is the exemption? Required: For corner buildings/solid fences on streets or alleys **less than 3.60 m** wide.[web:11] Exemption: Arcaded corner buildings may be exempt, per Section 1008 conditions.[web:11]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -475,29 +535,21 @@ _(e) = without firewall; (f) = with firewall; always verify against the full Rul
 
 ### Complete Design Workflow for LEA Area 3
 
-```text
-Step 1:  Identify LOT TYPE (7 types — Figs. VIII.2–VIII.8)
-         ↓
-Step 2:  Check ZONING CLASSIFICATION → Get PSO, FLAR, BHL from Table VIII.1
-         ↓
-Step 3:  Deduct EASEMENTS (PD 1067 Art. 51: 3/20/40 m; powerline/RROW per regs)
-         ↓
-Step 4:  Apply SETBACKS from Table VIII.2 (Residential) or Table VIII.3 (Non-Residential)
-         ↓
-Step 5:  Compute AMBF = TLA × PSO
-         ↓
-Step 6:  Verify that TOSL = TLA − AMBF meets minimum %
-         ↓
-Step 7:  Compute Total Allowable Floor Area = TLA × FLAR
-         ↓
-Step 8:  Determine Max Floors = Total Floor Area ÷ AMBF
-         ↓
-Step 9:  Apply BHL and INCREMENTAL SETBACKS above 2nd floor (300 mm/storey to 14th)
-         ↓
-Step 10: Check RROW ANGLES → OFB cannot exceed angular plane
-         ↓
-Step 11: Apply PROJECTION RULES (Rule X) for balconies, canopies, underground works
-```
+[SLATECAMP_UI_BLOCK:ui_0016 component="Mermaid" status="unknown"]
+Extracted summary:
+- Props: chart=true, flowchart=true, TD=true, A=true, Step=true, Identify=true, LOT=true, TYPE=true, n=true, types=true, Figs=true, VIII=true
+- Text: B["Step 2: Check ZONING CLASSIFICATION\n→ Get PSO, FLAR, BHL from Table VIII.1"]
+[/SLATECAMP_UI_BLOCK]
+    B --> C["Step 3: Deduct EASEMENTS\n(PD 1067 Art. 51: 3/20/40 m)"]
+    C --> D["Step 4: Apply SETBACKS\nTables VIII.2 / VIII.3"]
+    D --> E["Step 5: Compute AMBF = TLA × PSO"]
+    E --> F["Step 6: Verify TOSL = TLA − AMBF"]
+    F --> G["Step 7: Total Floor Area = TLA × FLAR"]
+    G --> H["Step 8: Max Floors = Floor Area ÷ AMBF"]
+    H --> I["Step 9: Apply BHL + Incremental Setbacks"]
+    I --> J["Step 10: Check RROW ANGLES"]
+    J --> K["Step 11: Apply PROJECTION RULES"]
+`} />
 
 > Practice writing this 11-step chain from memory until you can reconstruct it in under 2 minutes.
 

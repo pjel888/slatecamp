@@ -442,6 +442,7 @@ IS THE BUILDING LEGALLY COMPLIANT?
 
 _Module 13 | BP 344 2024 IRR LEA Review Series | Philippine context only_
 
+
 ---
 
 <LawCallout code="pd1096" section="Rule VII - Typology Checklists">
@@ -470,5 +471,3 @@ For LEA design problems, use the sequential flowchart: (1) Check parking → (2)
 
 **Building Permit Process**, **Legal Liability And Enforcement Workflow**, **Top 50 Traps 2024 Irr**, **Rule I General Provisions**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

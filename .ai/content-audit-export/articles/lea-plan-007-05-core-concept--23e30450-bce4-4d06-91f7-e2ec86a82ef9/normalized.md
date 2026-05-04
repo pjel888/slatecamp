@@ -22,11 +22,19 @@ RA 7160 devolved planning authority from the national government to LGUs. Every 
 5. **Enforcement:** The LGU's Planning Office, Building Official, and Barangay officials enforce zoning through building permits, occupancy permits, and violations.
 
 **The key mistake students make:** Zoning ordinances are adopted by the _Sanggunian_ (legislative body), not the Mayor alone and not the Planning Office. The Mayor signs the ordinance after legislative passage, but legislative authority is required.
-<ArticleMedia id="media-lea-plan-007-05-core-concept" type="image" caption="LGU Planning Authority — RA 7160 Decentralization Framework" alt="Diagram of LGU planning authority per RA 7160 LGC: CLUP preparation by Planning Office → Sanggunian adoption (zoning ordinance) → DHSUD conformity review → 10-year horizon + 3-year midterm. Key planning entities and their statutory mandates." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-007-05-core-concept", type="image", caption="LGU Planning Authority — RA 7160 Decentralization Framework", description="Diagram of LGU planning authority per RA 7160 LGC: CLUP preparation by Planning Office → Sanggunian adoption (zoning ordinance) → DHSUD conformity review → 10-year horizon + 3-year midterm. Key planning entities and their statutory mandates.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Step\", \"Who Does It\", \"What It Is\", \"Based On\"]}", rows=true, CLUP=true, Preparation=true, LGU=true, Planning=true, Office=true, technical=true, Comprehensive=true, Land=true, Use=true, Plan=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -38,7 +46,11 @@ Every barangay in the Philippines is subject to its municipality's or city's CLU
 2. **Process sequence:** "In what order do CLUP preparation, legislative adoption, and zoning ordinance passage occur?"
 3. **Zoning authority:** "Which body adopts the zoning ordinance?" → Sanggunian (legislative body).
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory aid:** LGU Planning = prepare. Sanggunian = adopt (legislative). DHSUD = approve (national). Mayor = sign (executive). All four steps are required for a complete CLUP process.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** RA 7160 devolved planning but NOT standard-setting. DHSUD still sets national standards and reviews CLUPs for conformity. The Sanggunian adopts the zoning ordinance (legislative), the Mayor only signs it (executive confirmation).
 
@@ -48,4 +60,8 @@ See **LEA-PLAN-001-05** (CLUP Process) for LGU planning mandate, **LEA-PLAN-002-
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Saying the Planning Office adopts the CLUP ordinance—only the Sanggunian can adopt; Planning Office prepares\", \"Stating the Mayor adopts the zoning ordinance—Mayor signs after Sanggunian votes; legislative adoption comes first\", \"Forgetting that DHSUD must approve CLUPs—DHSUD approval (national conformity) is a separate step from Sanggunian adoption (local legislative)\", \"Confusing CLUP (10-year plan with 3-year review) with Sanggunian zoning (implementation ordinance)\", \"Saying zoning is prepared by the Mayor or Planning Office alone—it must be adopted as an ordinance by the Sanggunian\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

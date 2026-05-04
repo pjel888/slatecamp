@@ -5,7 +5,11 @@
 Identify the core principles of tropical passive design — prioritize ventilation over thermal mass, shading over orientation, lightweight construction — and explain how these principles respond to the specific climatic challenges of the Philippines.
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-004-02-core-concept" type="image" caption="Tropical Passive Design Principles — Ventilation, Shading, Lightweight Construction" alt="Diagram comparing passive design strategies across climates: Tropical (Philippines) — lightweight materials, maximize cross-ventilation, deep overhangs for shading, elevated floors, permeable walls, reflective surfaces. Temperate — thermal mass, solar gain through windows, insulated walls, compact form. Hot-Arid — massive walls, small openings, courtyard cooling, night-flush ventilation. The tropical section highlights the three priority principles: (1) Ventilation over thermal mass, (2) Shading over orientation, (3) Lightweight construction over thermal storage." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-004-02-core-concept", type="image", caption="Tropical Passive Design Principles — Ventilation, Shading, Lightweight Construction", description="Diagram comparing passive design strategies across climates: Tropical (Philippines) — lightweight materials, maximize cross-ventilation, deep overhangs for shading, elevated floors, permeable walls, reflective surfaces. Temperate — thermal mass, solar gain through windows, insulated walls, compact form. Hot-Arid — massive walls, small openings, courtyard cooling, night-flush ventilation. The tropical section highlights the three priority principles: (1) Ventilation over thermal mass, (2) Shading over orientation, (3) Lightweight construction over thermal storage.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Passive design in tropical climates operates on fundamentally different physics than temperate or arid zones. While cold-climate passive design stores heat in thermal mass and hot-arid design alternates between daytime solar gain and nighttime radiative cooling, tropical design must dissipate continuous heat and humidity in an environment where nighttime temperatures remain high (22–25°C) and diurnal range is suppressed (typically 6°C or less).
 
@@ -24,9 +28,17 @@ These three work in concert. A well-designed tropical building operates all thre
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+- Props: (none)
 - Text: The 15-meter rule for cross-ventilation is testable: buildings wider than 15–18 meters (perpendicular to wind) cannot ventilate interiors effectively without courtyards or atria. This is a hard constraint on tropical floor plate design and appears frequently on LEA questions about deep-plan buildings.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Stack effect dominates in early morning (5–9 am) and evening (6–9 pm), not during midday when outdoor temperatures are high. Relying on stack effect alone for cooling during peak occupancy (8 am–6 pm) is a design error. Cross-ventilation is the only mechanism strong enough to provide daytime cooling in perpetually hot Type II/IV climates.
@@ -102,6 +114,10 @@ This is the critical contested terrain. Arid-climate doctrine advocates thermal 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+- Props: (none)
 - Text: This is the LEA's highest-scoring mistake. Students cite "thermal mass reduces cooling load by 6–8°C" (true for arid climates with 15–20°C diurnal range). FALSE in tropics where nighttime temps remain 22–25°C. Concrete heated to 28°C during day will NOT cool below 25°C at night—it re-radiates heat into occupied spaces, degrading comfort. Default to lightweight in Type I–II climates; defend mass use only if nighttime temps provably drop below 20°C.
 
 **Lightweight case (supported by research):**
@@ -165,9 +181,17 @@ The bahay kubo survives typhoons (flexible framing absorbs wind load), remains n
 [SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+- Props: (none)
 - Text: When analyzing vernacular models on LEA, extract the *principle*, not the material. "Use bamboo" is not a principle; "provide permeable floor surfaces enabling air circulation beneath structure" is. This distinction allows you to apply vernacular logic to contemporary materials (bamboo slat floor → perforated metal floor → hollow-tile ventilated floor).
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: The bahay kubo's operable ventanillas are not decorative or optional—they are the primary cooling control in a building with few mechanical systems. Closing ventanillas during strong monsoons protects from wind/rain while maintaining some stack-effect ventilation. This dual functionality (protection + ventilation) is lost in modern buildings with fixed sealed windows; operable coverage is essential in Philippine design.
@@ -175,31 +199,53 @@ Extracted summary:
 ## Key Facts and Testable Items
 
 ExamTip" status="preserved"]
-<Note>
-1. **Cross-Ventilation Sizing:** "An office building plan is 18m (N-S) × 25m (E-W) in Cebu (Type IV climate). Prevailing wind: southwest (habagat, May–Oct). Specify aperture sizing for cross-ventilation and justify your inlet/outlet ratio." - **Answer:** E-W width exceeds 15m effective ventilation depth. Solution: interior courtyard or atrium (6m×6m) to create two 9.5m zones on each side. SW-facing facades: inlet 6% floor area (1.5m² for 25m²), NE-facing outlet 25% (6.25m²). Asymmetry creates ve
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0007 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Cross-Ventilation Sizing:** "An office building plan is 18m (N-S) × 25m (E-W) in Cebu (Type IV climate). Prevailing wind: southwest (habagat, May–Oct). Specify aperture sizing for cross-ventilation and justify your inlet/outlet ratio." - **Answer:** E-W width exceeds 15m effective ventilation depth. Solution: interior courtyard or atrium (6m×6m) to create two 9.5m zones on each side. SW-facing facades: inlet 6% floor area (1.5m² for 25m²), NE-facing outlet 25% (6.25m²). Asymmetry creates ve
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: 2. **Thermal Mass Rejection:** "A developer proposes thick concrete walls in an Eastern Visayas project (Type II, no dry season, nighttime temp 24°C). Critique this choice and propose an alternative." - **Answer:** Type II climate prevents nighttime thermal discharge (insufficient ΔT between wall [25°C] and ambient [24°C]). Concrete mass will trap daytime heat and re-radiate at night, degrading comfort. Alternative: 150mm lightweight block + 50mm EPS insulation; open floor plan with 20% window a
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: 3. **Overhang Design Calculation:** "A south-facing facade in Manila (latitude 14°N) has a 4m tall wall. Design an overhang for the 8am winter-sun position (altitude 35°). Show calculation and final projection depth." - **Answer:** Overhang depth = Wall height / tan(altitude) = 4m / tan(35°) ≈ 4m / 0.7 ≈ 5.7m. However, this is winter minimum; at 8am summer (altitude ~60°), same depth overhangs 1.4m shadow. A compromise 3.5–4m overhang is typical, accepting some summer morning sun in exchange for
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: 4. **Bahay Kubo Retrofit:** "A heritage bahay kubo (open floor, slat floors, large overhangs) must accommodate typhoon-resistant sliding doors and insect screens (required for upgraded residential standard). Identify three design moves that preserve passive ventilation." - **Answer:** (a) Specify aluminum-frame sliding doors with ventilation louvers; when closed, louvers maintain 15% aperture area for stack flow. (b) Replace traditional fabric insect screens with perforated metal (aluminum 50% o
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: 5. **Light Shelf Integration:** "An administrative office in Quezon City (Type IV) has south-facing windows (1m sill height, 1.8m tall). Design a light shelf strategy including material, reflectance, and integration with ceiling." - **Answer:** Specular aluminum light shelf at 1.5m height (0.5m above sill). Reflectance minimum 0.8 (mirror finish). Redirect sunlight to suspended acoustic ceiling (white, diffuse, albedo >0.6) located 0.3m above shelf. Result: 30–40% reduction in sill-level heat wh
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: 
 - Text: Tropical passive design prioritizes ventilation over thermal mass, shading over orientation, and lightweight construction over heavyweight enclosure. The bahay kubo exemplifies all these principles: e
@@ -208,15 +254,27 @@ Extracted summary:
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
 Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
 - Props: mistake="Assuming orientation matters equally in tropics:", correction="Azimuth orientation (N-S vs. E-W elongation) is secondary in tropics. The LEA often tests whether students recognize that shading and ventilation trump orientation.", context="A poorly shaded E-W building outperforms a poorly ventilated N-S building."
 - Text: (none detected)
 
 [SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
 Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
 - Props: mistake="Applying arid-climate thermal-mass strategy:", correction="This is the highest-scored error on tropical design questions. Heavyweight concrete walls that store 3–4°C of daytime heat will NOT cool at night in a Type II climate (nighttime temp ~24°C, wall ~26°C).", context="Students who cite \", thermal=true, mass=true, reduces=true, peak=true, cooling=true, load=true, by=true, C=true, are=true
 - Text: (none detected)
 
 [SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: mistakes="{["Underestimating cross-ventilation effectiveness:. Designers who size windows at 10–12% of floor area (template values) fail to account for asymmetry. An 8% inlet + 28% outlet is dramatically more effective than 18% + 18% equal split.", "Conflating stack effect with chimney draft:. Stack effect requires continuous buoyancy-driven flow (ΔT ≥ 3–4°C). In tropical 24-hour ambient temps, stack only operates strongly 5–9am and 6–9pm. Relying on stack for midday cooling is a design error.", "Overdesigning roof insulation:. 50–75mm is sufficient for tropics (heat ingress prevention, not loss). Designers specifying 100–150mm are incurring embodied carbon and cost without performance gain. BERDE scoring penalizes excess insulation.", "Ignoring seasonal monsoon reversal:. Buildings designed only for habagat (southwest May–Oct) will have poor ventilation during amihan (northeast Nov–Apr) if apertures are one-sided. Operable screens or facade adaptability is essential for year-round comfort across monsoon transitions."]}"
 - Text: (none detected)

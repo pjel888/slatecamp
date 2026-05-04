@@ -4,7 +4,11 @@ After reading this article, you should understand the key concepts tested in the
 
 Construction Management Services address the comprehensive coordination demands of modern construction projects. SPP Doc 204-B establishes standards for construction managers operating within the Philippine architectural profession. This service evolved from recognition that project complexity demands specialized management expertise beyond traditional supervision. Construction managers coordinate cost, schedule, quality, safety, and stakeholder relationships throughout project delivery.
 
-<ArticleMedia id="media-lea-prac-svc-014-construction-management" type="image" caption="Construction Management Process Flow — Project Delivery Coordination" alt="Workflow chart showing the construction management process: project assessment → team assembly → schedule coordination → multi-trade integration → cost tracking → value engineering → change management → quality assurance → safety oversight → project closeout. Based on SPP Doc 204-B." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-svc-014-construction-management", type="image", caption="Construction Management Process Flow — Project Delivery Coordination", description="Workflow chart showing the construction management process: project assessment → team assembly → schedule coordination → multi-trade integration → cost tracking → value engineering → change management → quality assurance → safety oversight → project closeout. Based on SPP Doc 204-B.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Rationale and Scope of Construction Management
 
@@ -34,13 +38,29 @@ Compensation methods include percentage of project construction cost, hourly rat
 
 Construction managers assume responsibility for coordination accuracy, cost management, and schedule control within their authority scope. Article 1723 liability for structural matters applies when construction managers direct structural work or approve structural submissions. Standard of care requires competent project administration, accurate documentation, and professional judgment. Limitation of authority protections apply when managers operate within defined contractual scope.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

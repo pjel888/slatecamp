@@ -9,13 +9,16 @@
 
 ## Why This Module Decides Your Score
 
+<ArticleMedia id="media-pd-1096-rule-vii-height-limits-0" name="three-controls-venn" type="diagram" caption="Venn diagram / three-overlapping-circles showing the three independent controls: BHL (how high), FLAR (how much GFA), PSO (how much footprint). Below each, show the governing table reference and a sample value. Emphasize they are independent and the most restrictive result governs. Include the master formula chain TLA → PSO → AMBF → FLAR → Max GFA → BHL as a flowchart below." />
+
+<ArticleMedia id="media-pd-1096-rule-vii-height-limits-1" name="bhl-flar-rrow-diagram" type="diagram" caption="Street section diagram showing RROW width governing BHL: 6–7m RROW → ~3 storeys/9m, 4–5m RROW → ~2.5 storeys/7.5m, ≤3m RROW → ~2 storeys/6m. Show building silhouette stepping back with annotations for BHL exemptions (spires in incombustible materials unlimited, combustible max 6m above BHL)." />
+
 ## Learning Goal
 
 After reading this article, you should be able to:
 
 Apply maximum building height limits under PD 1096 Rule VII based on occupancy group, fire zone, street width, and setbacks; calculate when a height increase is permitted through sprinklers or open frontage; identify structures exempt from height limits (church towers, chimneys, penthouses); and apply the street-width-to-height relationship formula.
 ---
-
 
 Picture this: You are the lead architect for a high-density office tower in a CBD. The client wants to maximize profit by building as tall and as wide as the code allows. Your job is to thread the needle between **Building Height Limit (BHL)**, **Floor to Lot Area Ratio (FLAR)**, **Gross Floor Area (GFA)**, and **Total Gross Floor Area (TGFA)**.[file:17][file:18]
 
@@ -453,9 +456,13 @@ Say each answer aloud before revealing.
 
 ---
 
-
+---
 
 ---
+
+## Exam Tip
+
+LEA Swipe: Height limits by occupancy — Group A (residential) = 15 m max, Group B (commercial/office) = 15 m, Group C (industrial) = 20 m, Group D (institutional) = 15 m. Height increases: +1 story if sprinklered, +1 story if open frontage > 30%. The 15 m residential height cap is the most tested limit.
 
 
 
@@ -463,7 +470,7 @@ Say each answer aloud before revealing.
 
 ## Exam Tip
 
-LEA Swipe: Height limits by occupancy — Group A (residential) = 15 m max, Group B (commercial/office) = 15 m, Group C (industrial) = 20 m, Group D (institutional) = 15 m. Height increases: +1 story if sprinklered, +1 story if open frontage > 30%. The 15 m residential height cap is the most tested limit.
+ALE Swipe: Height limits by occupancy — Group A (residential) = 15 m max, Group B (commercial/office) = 15 m, Group C (industrial) = 20 m, Group D (institutional) = 15 m. Height increases: +1 story if sprinklered, +1 story if open frontage > 30%. The 15 m residential height cap is the most tested limit.
 
 ## Cross‑References
 
@@ -504,3 +511,5 @@ LEA Swipe: Height limits by occupancy — Group A (residential) = 15 m max, Grou
    - Ensured “Guidelines on Building Bulk, Development Controls…” is explicitly cited where FLAR and AMVB concepts appear, because those pieces are in the guidelines portion after Rule VII, not in the core section text.[file:17]
 
 If you want, I can next build a separate one-page crib sheet just with: (1) FLAR table; (2) GFA/TGFA inclusion–exclusion bullet list; and (3) the TaPa-TAFB chain for quick pre-exam review.
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

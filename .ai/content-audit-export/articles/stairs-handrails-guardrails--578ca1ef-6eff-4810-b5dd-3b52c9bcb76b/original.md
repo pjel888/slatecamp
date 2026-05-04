@@ -168,7 +168,7 @@ ALE Trap: When BP 344 and PD 1096 conflict on stairs, BP 344 accessibility requi
 
 
 
-<ArticleMedia type="image" caption="Stair Geometry — PD 1096 Riser, Tread, and Handrail Dimensions" description="Cross-section and plan of a typical stair showing: riser height (max 200mm PD 1096), tread depth (min 250mm), nosing projection, handrail at 800-900mm (PD 1096) overlaid with BP 344 dual handrails at 700mm and 900mm, guardrail at 1100mm min for drops over 750mm, landing depth equal to stair width, and headroom clearance (2.00m min)." />
+<ArticleMedia id="media-stairs-handrails-guardrails-0" type="image" caption="Stair Geometry — PD 1096 Riser, Tread, and Handrail Dimensions" description="Cross-section and plan of a typical stair showing: riser height (max 200mm PD 1096), tread depth (min 250mm), nosing projection, handrail at 800-900mm (PD 1096) overlaid with BP 344 dual handrails at 700mm and 900mm, guardrail at 1100mm min for drops over 750mm, landing depth equal to stair width, and headroom clearance (2.00m min)." />
 ## Cross‑References
 
 **Widths Slopes**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Ramp Slope Tiers**, **Transport Nodes Escalators Walkways**

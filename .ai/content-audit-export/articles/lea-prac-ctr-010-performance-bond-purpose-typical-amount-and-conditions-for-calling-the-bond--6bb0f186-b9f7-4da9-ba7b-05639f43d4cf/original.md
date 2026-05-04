@@ -66,7 +66,7 @@ The owner may call the performance bond only when the contractor materially brea
 
 
 
-<ArticleMedia type="image" caption="Construction Bonds — Types, Amounts, and Conditions Comparison Table" description="Three-panel comparison: Performance Bond (50-100% of contract, covers completion risk), Payment Bond (covers subcontractors/suppliers), Guarantee Bond (one-year defects liability). Each panel shows: purpose, typical amount, who requires it, conditions for calling the bond, and release conditions." />
+<ArticleMedia id="media-lea-prac-ctr-010-performance-b-0" type="image" caption="Construction Bonds — Types, Amounts, and Conditions Comparison Table" description="Three-panel comparison: Performance Bond (50-100% of contract, covers completion risk), Payment Bond (covers subcontractors/suppliers), Guarantee Bond (one-year defects liability). Each panel shows: purpose, typical amount, who requires it, conditions for calling the bond, and release conditions." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

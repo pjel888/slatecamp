@@ -7,9 +7,17 @@ Identify and apply Ron Mace's 7 Principles of Universal Design — equitable use
 
 ### Universal Design: Inclusive from the Outset
 
-|<ArticleMedia id="media-lea-theo-003-06-core-concept" type="image" caption="Ron Mace's 7 Principles of Universal Design" alt="Seven-panel diagram illustrating each principle with architectural examples: (1) Equitable Use — same design usable by all, identical when possible; (2) Flexibility in Use — accommodates wide range of preferences and abilities (adjustable counters, left/right-hand operation); (3) Simple and Intuitive — easy to understand regardless of experience (clear signage, predictable layout); (4) Perceptible Information — communicates necessary info to all senses (visual, tactile, audible); (5) Tolerance for Error — minimizes hazards and consequences of accidents (fail-safe systems, gentle slopes); (6) Low Physical Effort — efficient, comfortable use with minimum fatigue (lever handles, automatic doors); (7) Size and Space for Approach — appropriate size for reach and manipulation regardless of body size (clear floor space, knee clearance)." suggestedAsset="Diagram or reference image" status="placeholder" />
+|[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-003-06-core-concept", type="image", caption="Ron Mace's 7 Principles of Universal Design", description="Seven-panel diagram illustrating each principle with architectural examples: (1) Equitable Use — same design usable by all, identical when possible; (2) Flexibility in Use — accommodates wide range of preferences and abilities (adjustable counters, left/right-hand operation); (3) Simple and Intuitive — easy to understand regardless of experience (clear signage, predictable layout); (4) Perceptible Information — communicates necessary info to all senses (visual, tactile, audible); (5) Tolerance for Error — minimizes hazards and consequences of accidents (fail-safe systems, gentle slopes); (6) Low Physical Effort — efficient, comfortable use with minimum fatigue (lever handles, automatic doors); (7) Size and Space for Approach — appropriate size for reach and manipulation regardless of body size (clear floor space, knee clearance).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-lea-theo-003-06-core-concept-b" type="image" caption="BP 344 Accessibility Requirements — Philippine Compliance Standards" alt="Plan and section diagrams showing BP 344 2024 IRR accessibility requirements: accessible parking space dimensions (2.4m x 5m with 1.2m access aisle), accessible ramp (1:20 max slope, 1.2m min width, 750mm max rise between landings, handrails both sides), accessible toilet stall (1.5m x 1.5m min, grab bar configuration, 0.86-0.97m counter height), accessible route clear width (1.2m min), and doorway clear width (0.9m min). Callouts reference specific BP 344 sections." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-003-06-core-concept-b", type="image", caption="BP 344 Accessibility Requirements — Philippine Compliance Standards", description="Plan and section diagrams showing BP 344 2024 IRR accessibility requirements: accessible parking space dimensions (2.4m x 5m with 1.2m access aisle), accessible ramp (1:20 max slope, 1.2m min width, 750mm max rise between landings, handrails both sides), accessible toilet stall (1.5m x 1.5m min, grab bar configuration, 0.86-0.97m counter height), accessible route clear width (1.2m min), and doorway clear width (0.9m min). Callouts reference specific BP 344 sections.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Universal Design: Inclusive from the Outset
 
@@ -19,7 +27,11 @@ The distinction is operational. Wheelchair-accessible ramps benefit wheelchair u
 
 Universal Design originated from the recognition that disability is not individual pathology but a mismatch between person and environment. A person using a wheelchair is disabled only in environments designed for walking; in a universally designed environment with level surfaces and accessible routes, that person is fully capable. A person with low vision is disabled only in environments with small, low-contrast signage; in universally designed environments with high-contrast, appropriately-scaled signage, wayfinding is clear. This environmental perspective shifts architectural responsibility: accessibility is not accommodation for exceptional users but baseline design competency.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **The fundamental shift**: disability is not the person's problem—it's an environmental mismatch. Universal design solves the mismatch by making environments work for everyone.
+[/SLATECAMP_UI_BLOCK]
 
 ### Ron Mace's 7 Principles of Universal Design
 
@@ -58,7 +70,11 @@ Low physical effort becomes critical in healthcare facilities, senior housing, a
 #### Principle 7: Size and Space for Approach and Use
 Appropriate size and space is provided for approach, reach, manipulation, and use regardless of user's body size, posture, or mobility device. Space design must accommodate reach ranges of different users, accommodate different postures (standing, seated in wheelchair, using crutches), and provide appropriate clearances for movement and use.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Principle 7 is **fundamentally about dimensions and clearances**. 1.5m × 1.5m wheelchair turning radius, 0.86m counter heights, 0.5m-1.2m reach ranges—these are not arbitrary; they accommodate real human bodies in real movement patterns.
+[/SLATECAMP_UI_BLOCK]
 
 Specific dimensional standards operationalize this principle: clear floor spaces of 1.5m x 1.5m accommodate wheelchair turning spaces; side reach ranges of 0.8m-1.1m accommodate seated and standing users; forward reach ranges of 0.5m-1.2m accommodate different body types; service counters at 0.86m-0.97m height accommodate both seated and standing users (BP 344 2024 IRR Sec. 5.2); elevated seating areas require accessible routes and adequate space for mobility device positioning.
 
@@ -80,34 +96,78 @@ Universal Design principles provide the framework; BP 344 provides the minimum l
 
 A hospital designed for BP 344 compliance includes accessible parking, ramped entry, accessible bathrooms, and accessible elevators. A hospital designed with universal design thinking integrates these features seamlessly, provides intuitive wayfinding benefiting all patients and visitors, uses color-coded systems and clear signage assisting people with cognitive disabilities and non-native language speakers, positions seating throughout waiting areas accommodating people with mobility limitations and offering rest opportunities for all visitors, designs acoustics reducing background noise that particularly challenges people with hearing loss but improves clarity for everyone, and ensures that accessible routes are primary routes, not afterthoughts.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The critical distinction: **BP 344 compliance = minimum legal requirement; universal design = excellence exceeding compliance**. Compliance creates accessible buildings; universal design creates buildings where accessibility is integral to everyone's experience, not special accommodation.
+[/SLATECAMP_UI_BLOCK]
 
 An office building meeting BP 344 provides accessible parking spaces, accessible entry, and accessible restrooms. A universally designed office creates flexible workstations accommodating users of different heights and abilities, provides accessible conference spaces with appropriate technology support, ensures that accessible routes navigate through primary circulation paths, and creates accessible break areas and social spaces encouraging inclusion. A workplace accessibility program integrated throughout design culture produces workplaces where people with disabilities are fully included, not accommodated as special cases.
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Concept\", \"Definition\", \"LEA Application\"]}", rows="{[['[\"**Universal Design**\", \"Design of environments usable by all people to greatest extent possible without adaptation; serves diverse abilities equitably\", \"Design all buildings with universal design principles from inception; demonstrate equitable access throughout\"]', '[\"**Equitable Use**\", \"Same design serves diverse users without stigmatization or segregation; accessible features integrated as primary design, not segregated alternatives\", \"Integrate accessible parking, entries, and facilities throughout building core; avoid separate accessible routes\"]', '[\"**Flexibility in Use**\", \"Accommodate range of individual preferences and abilities; serve users with different body types, abilities, and preferences\", \"Provide elements at multiple heights, offer multiple modalities, accommodate different user approaches\"]', '[\"**Simple and Intuitive Use**\", \"Design is easy to understand without specialized knowledge or instruction; clear wayfinding and spatial organization\", \"Ensure occupants understand space function from design cues; clear circulation paths and accessible signage\"]', '[\"**Perceptible Information**\", \"Communicate necessary information through multiple sensory channels (visual, auditory, tactile); accommodate sensory diversity\", \"Provide emergency information audibly and visually; use high-contrast signage; include audio systems in transit\"]', '[\"**Tolerance for Error**\", \"Minimize hazards and consequences of user mistakes; design accommodating expected behaviors and preventing dangerous situations\", \"Handrails on stairs; edge markings; stair lighting; hazard prevention; accommodating occupant error\"]', '[\"**Low Physical Effort**\", \"Design usable with minimum strength and effort; efficient, comfortable operation without fatigue\", \"Easy door operation; accessible counter heights; gentle ramp slopes (1:12 maximum); seating at intervals\"]', '[\"**Size and Space for Approach and Use**\", \"Appropriate dimensions and clearances for different body types and postures; accommodate wheelchairs and mobility devices\", \"Turning spaces 1.5m x 1.5m; reach heights 0.8m-1.1m; counter heights 0.86m-0.97m; circulation widths 0.9m minimum (BP 344 2024 IRR)\"]', '[\"**BP 344 Compliance**\", \"Philippine accessibility law requiring accessible features in public and private buildings\", \"Design meeting specific BP 344 standards: ramps, parking, accessible bathrooms, elevators, signage, emergency egress\"]', '[\"**Accessibility Beyond Compliance**\", \"Excellence exceeding legal minimums; universal design approach exceeding BP 344 basic requirements\", \"Design going beyond minimum code; integrated accessible systems; anticipatory accommodation of diverse needs\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Inclusive Design for Mixed-Use Project** Stem: "Design a mixed-use development (retail, office, residential) in Makati. Specify all accessibility features required by BP 344 and explain how universal design principles guide your design choices beyond minimum compliance." Expected response: Accessible parking ratios and locations; ramped, level entries; accessible interior circulation with appropriate widths and heights; accessible bathrooms with grab bars and appropriate fixtures; a
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Retrofitting Accessibility** Stem: "An existing 20-story office building lacks accessibility features. The owner wants to retrofit compliance with BP 344 and universal design principles. Develop a phased plan addressing entry, circulation, restrooms, and egress." Expected response: Identification of current barriers; systematic phasing addressing highest-impact, most feasible modifications; solution documentation; dimensional accuracy; integration with existing architecture where po
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Healthcare Facility Accessibility** Stem: "Design a 50-bed hospital outpatient facility in Cebu. Demonstrate BP 344 compliance and universal design integration addressing diverse patient abilities, elderly visitors, and staff efficiency." Expected response: Detailed site plan showing accessible parking and drop-off; accessible main entry; multiple entry options accommodating different approach angles; comprehensive wayfinding with color, symbols, text, and audio; accessible registra
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Educational Building Accessibility** Stem: "Design a classroom building for a university in Davao accommodating students with mobility disabilities, hearing loss, and low vision. Specify both BP 344 compliance and universal design features supporting learning for all students." Expected response: Accessible entries and circulation routes; accessible classroom design with flexible seating; appropriate lighting and acoustics for low-vision and hearing-loss students; technology integra
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Universal Design Challenge** Stem: "A designer argues that universal design features (wider doorways, accessible bathrooms, flexible furniture) increase project cost beyond client budget. Explain why universal design is cost-effective, how accessibility requirements are legal mandates, and how strategic prioritization addresses budget constraints." Expected response: Cost-effectiveness argument: early integration costs minimally more than conventional design; features like flexible 
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: You must know Ron Mace's 7 Principles of Universal Design and understand how to apply them in architectural practice. You must also know BP 344 (Philippine Accessibility Law) and demonstrate that your designs comply with accessibility requirements. The LEA will test whether your designs are usable by all occupants regardless of age, ability, or disability.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating accessibility as afterthought", correction="Designing buildings without accessibility, then attempting retrofit at end of design process or during construction.", context="This increases cost, produces poor solutions, and fails universal design principles."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Segregating accessible features", correction="Creating separate accessible entries, restrooms, and routes instead of integrating them as primary design.", context="Segregation violates equitable use principle and perpetuates stigmatization."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Minimum compliance without universal design thinking. Meeting BP 344 technical requirements (ramp slopes, bathroom dimensions) while failing to address equitable use, simple operation, or perceptible information. Excellent design exceeds minimum compliance.\", \"Ignoring specific user needs. Designing generic accessible spaces without understanding how particular disabilities affect space interaction. Deaf occupants need visual alarms and accessible audio systems; blind occupants need tactile wayfinding; mobility-limited occupants need appropriate dimensions and rest facilities.\", \"Assuming universal design only serves people with disabilities. Overlooking that accessible features benefit diverse users (families with strollers, elderly people, people carrying items, people with temporary injuries). Universal design serves everyone better.\", \"Inadequate dimensional knowledge. Misunderstanding reach heights, wheelchair turning radiuses, doorway widths, or counter heights. Specific dimensions are non-negotiable; designs must accommodate documented accessibility standards.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

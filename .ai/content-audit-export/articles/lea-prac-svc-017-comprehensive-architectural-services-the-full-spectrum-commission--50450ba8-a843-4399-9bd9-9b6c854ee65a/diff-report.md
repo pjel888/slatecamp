@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission
 
-Generated: 2026-05-04T02:16:27.044Z
+Generated: 2026-05-04T09:13:08.349Z
 Article ID: 50450ba8-a843-4399-9bd9-9b6c854ee65a
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:10d074adb187e68df2bede4a6ca8da4c24ce5f5cb8f8e5d2c3bfd2bebdd38c0d`
-- Normalized: `sha256:7ec5857c39e67fd4c4c9b42cd478b90067ea0c4d65030bebb67c24715a1f6802`
-- Candidate: `sha256:10d074adb187e68df2bede4a6ca8da4c24ce5f5cb8f8e5d2c3bfd2bebdd38c0d`
+- Original: `sha256:8735d4959029bf2bfaa29b89c035cab7c332546de0c4ff92d9ff3932a37d31fd`
+- Normalized: `sha256:60b9a57548156e17516ac9fe2ea1b7020b9c27978b541b1cb664307b23dfec32`
+- Candidate: `sha256:8735d4959029bf2bfaa29b89c035cab7c332546de0c4ff92d9ff3932a37d31fd`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 5
-- UI blocks preserved: 5
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

@@ -57,7 +57,11 @@ A floor-to-floor height of about 3.0 m (common in many RC buildings) must accomm
 - Suspended ceiling and finishes where provided.
 
 If MEP depth is underestimated, clear finished ceiling height is reduced, creating comfort and proportion issues and potentially breaching minimum ceiling height standards (e.g., PD 1096 requires at least 2.40 m for upper-storey habitable rooms, with 2.70 m minimum at the first storey). Proper early allocation of vertical depth protects both compliance and design quality.
-<ArticleMedia id="media-lea-dsgn-007-09-core-concept" type="image" caption="Building Systems Coordination — Integrated Ceiling Plan Diagram" alt="Composite reflected ceiling plan showing coordination of: structural grid, mechanical ductwork, electrical lighting layout, plumbing, fire sprinkler heads, and fire alarm devices. Conflict resolution zones highlighted with annotation." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-09-core-concept", type="image", caption="Building Systems Coordination — Integrated Ceiling Plan Diagram", description="Composite reflected ceiling plan showing coordination of: structural grid, mechanical ductwork, electrical lighting layout, plumbing, fire sprinkler heads, and fire alarm devices. Conflict resolution zones highlighted with annotation.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -92,10 +96,18 @@ In the Philippines, MEP space has historically been under-allocated in many proj
 3. **Core and Shaft Planning**  
    You design or evaluate the size and location of mechanical, electrical, and plumbing cores for a mid- or high-rise building, justifying whether they are adequate for the stated occupancy, storey count, and redundancy requirements.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **“MEP is invisible but not free.”** If you design to an aggressive net-to-gross ratio without reserving enough space for plant, risers, and cores, the “missing” area will reappear later as exposed services, cramped ceilings, and costly revisions. Budget MEP and core space explicitly from day one.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Ceiling plenum depth (typically 600-900mm) accommodates ductwork, piping, and conduit. Coordinate structural depth (+500-800mm) with MEP zone for total floor-to-floor height calculation.
-<ArticleMedia id="media-lea-dsgn-007-09-core-concept" type="image" caption="Integrated Ceiling Plan — MEP, Structural, and Lighting Coordination" alt="Reflected ceiling plan showing coordination of: structural beams and soffits, HVAC duct routing (with diffusers), lighting fixtures (recessed, pendant, emergency), sprinkler head coverage, and ceiling grid. Conflict zones where structural, MEP, and architectural elements intersect are highlighted." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-09-core-concept", type="image", caption="Integrated Ceiling Plan — MEP, Structural, and Lighting Coordination", description="Reflected ceiling plan showing coordination of: structural beams and soffits, HVAC duct routing (with diffusers), lighting fixtures (recessed, pendant, emergency), sprinkler head coverage, and ceiling grid. Conflict zones where structural, MEP, and architectural elements intersect are highlighted.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -103,4 +115,8 @@ See **LEA-DSGN-007-06** (Building Integration) for system coordination process, 
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    'Designing to a high NGR target without checking whether core, MEP, and structure can realistically fit within the remaining percentage',\n    'Allocating a single small electrical or mechanical room for a high-rise building that requires zoned or per-floor distribution',\n    'Underestimating riser and shaft sizes, resulting in last-minute encroachment into rentable or sleaable areas',\n    'Placing all major mechanical equipment only on the roof in tall buildings, leading to excessive duct and pipe runs and energy penalties',\n    'Ignoring plumbing and mechanical noise transmission when locating risers adjacent to bedrooms or quiet spaces'\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

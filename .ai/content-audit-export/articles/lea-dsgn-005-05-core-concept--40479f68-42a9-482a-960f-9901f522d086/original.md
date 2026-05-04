@@ -29,7 +29,7 @@ Specialized health facilities—including primary care clinics, barangay health 
 - **Accessible Features**: Per the **BP 344 2024 Revised IRR**, doors must be **900 mm** wide, and ramps must have a maximum slope of **1:20**.
 - **Fire Egress**: Egress must comply with **RA 9514 (Fire Code 2019 Revised IRR)** and **PD 1096 Rule XIV**. Travel distance is limited to **45 m** (unsprinklered) or **60 m** (sprinklered).
 - **Dual Exits**: Required for any space or facility with an occupancy of **50 or more persons** per RA 9514 and PD 1096 Rule XIV.
-<ArticleMedia id="media-lea-dsgn-005-05-core-concept" a type="image" caption="Specialized Health Facility — Consultation and Treatment Room Layouts" description="Floor plan diagram of a primary care clinic showing consultation room (9 sqm minimum), treatment room (12 sqm), waiting area (1.5 sqm/seat), pharmacy dispensing (4 sqm), and accessible features. DOH Sentrong Sigla compliant." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-05-core-concept" type="image" caption="Specialized Health Facility — Consultation and Treatment Room Layouts" description="Floor plan diagram of a primary care clinic showing consultation room (9 sqm minimum), treatment room (12 sqm), waiting area (1.5 sqm/seat), pharmacy dispensing (4 sqm), and accessible features. DOH Sentrong Sigla compliant." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -78,7 +78,7 @@ DOH-accredited facilities under the **Sentrong Sigla** program require formal sp
 ---
 
 **Exam Tip — ERR-DSGN-022:** Outpatient clinics are Group D (institutional) NOT Group B (residential). Consultation room minimum = 9 sqm per DOH standards. Verify dual exits at 50+ occupancy.
-<ArticleMedia id="media-lea-dsgn-005-05-core-concept" a type="image" caption="Health Clinic Floor Plan — Patient, Treatment, and Admin Zones" description="Floor plan of a specialized health facility showing: consultation rooms (7.43-9 sqm), treatment/procedure room, waiting area (1.5 sqm/person), nurse station, pharmacy dispensing, and accessible toilet. DOH Sentrong Sigla compliance checklist and 45m/60m travel distances labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-05-core-concept" type="image" caption="Health Clinic Floor Plan — Patient, Treatment, and Admin Zones" description="Floor plan of a specialized health facility showing: consultation rooms (7.43-9 sqm), treatment/procedure room, waiting area (1.5 sqm/person), nurse station, pharmacy dispensing, and accessible toilet. DOH Sentrong Sigla compliance checklist and 45m/60m travel distances labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

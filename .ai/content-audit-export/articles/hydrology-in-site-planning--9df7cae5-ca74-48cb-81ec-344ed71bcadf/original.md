@@ -186,7 +186,7 @@ D. 9 times
 
 
 
-<ArticleMedia type="image" caption="Site Hydrology and Stormwater Management — Rational Method and Drainage Design" description="Site drainage plan showing: watershed boundaries, pre/post-development runoff calculation using Rational Method (Q=CiA), swale cross-section (side slopes max 3:1, longitudinal 1-5%), detention basin sizing, pipe drainage network with minimum slopes (0.5% min for 150mm pipe), and 100-year floodplain limits with development restrictions." />
+<ArticleMedia id="media-hydrology-in-site-planning-0" type="image" caption="Site Hydrology and Stormwater Management — Rational Method and Drainage Design" description="Site drainage plan showing: watershed boundaries, pre/post-development runoff calculation using Rational Method (Q=CiA), swale cross-section (side slopes max 3:1, longitudinal 1-5%), detention basin sizing, pipe drainage network with minimum slopes (0.5% min for 150mm pipe), and 100-year floodplain limits with development restrictions." />
 ## Cross‑References
 
 **Microclimate Analysis**, **Topography And Slope Analysis**, **Geological Hazards**, **Flora And Fauna In Site Development**

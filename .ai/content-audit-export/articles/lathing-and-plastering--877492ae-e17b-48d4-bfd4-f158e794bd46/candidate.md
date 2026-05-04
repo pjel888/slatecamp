@@ -484,5 +484,3 @@ Before closing this article, confirm you can do the following from memory:
 
 **Glass And Glazing Area Limits**, **Fire Resistive Construction Ratings**, **Plastics In Construction**, **Prefabricated Constructions**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

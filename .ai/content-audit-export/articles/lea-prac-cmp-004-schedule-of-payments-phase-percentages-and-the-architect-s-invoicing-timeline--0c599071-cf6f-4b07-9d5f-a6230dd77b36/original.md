@@ -68,7 +68,7 @@ The Schedule of Payments should be clearly documented in the Owner-Architect Agr
 
 
 
-<ArticleMedia type="image" caption="SPP 202 Phase Fee Distribution — Timeline and Percentage Chart" description="Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion." />
+<ArticleMedia id="media-lea-prac-cmp-004-schedule-of-p-0" type="image" caption="SPP 202 Phase Fee Distribution — Timeline and Percentage Chart" description="Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion." />
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

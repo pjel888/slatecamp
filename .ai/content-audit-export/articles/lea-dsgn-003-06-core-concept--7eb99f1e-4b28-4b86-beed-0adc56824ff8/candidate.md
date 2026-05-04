@@ -12,7 +12,7 @@ The Department of Tourism (DOT) establishes voluntary accommodation star rating 
 **Occupant Load Determination:** Sleeping areas are computed at **9.3 sqm per person** per **RAPD 1096 (National Building Code of the Philippines, Rule VIII Section 805 or applicable occupancy load tables) or RA 9514 (Fire Code of the Philippines 2019 Revised IRR, Table 3.1-2 if applicable to fire load calculations)Common areas (lounges, dining, recreation) are calculated separately using retail/mercantile load factors (1 person per 18.58 sqm per RA 9514 Table 3.1-2) or education factors (1 person per 4.6 sqm) depending on function. This dual calculation is essential for determining exit requirements, sprinkler design, and emergency planning.
 
 Dormitories may also include commercial support spaces (bookstore, cafeteria, clinic)—these are classified separately as Group E (Business/Mercantile) or Group D (Institutional), but the primary occupancy remains Group B.
-<ArticleMedia id="media-lea-dsgn-003-06-core-concept" type="image" caption="Dormitory Space Planning — Group B Occupancy Standards" alt="Floor plan diagram of a typical dormitory floor showing sleeping areas (9.3 sqm/person), common rooms, circulation, and DOT-compliant space allocation. Annotated with minimum clearances and occupant load calculations." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-003-06-core-concept" type="image" caption="Dormitory Space Planning — Group B Occupancy Standards" description="Floor plan diagram of a typical dormitory floor showing sleeping areas (9.3 sqm/person), common rooms, circulation, and DOT-compliant space allocation. Annotated with minimum clearances and occupant load calculations." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -94,7 +94,7 @@ Common layout: 4–6 stories with double-loaded corridors, 2–4 shared bathroom
 <Tip>**Memory rule:** Dormitory = Group **B** (transient residential, not A). Never confuse with permanent multi-family (A-2). DOT star ratings: 1★=16, 2★=20, 3★=25, 4★=30, 5★=40 sqm. Occupant load formula: sleeping area sqm ÷ 9.3 = occupants (then add common areas separately for total design capacity).</Tip>
 
 **Exam Tip — ERR-DSGN-020:** Dormitories are Group B (transient residential), NOT Group A-2 (multi-family). Sleeping area occupant load = 9.3 sqm/person, NOT 18.6 sqm/person (retail) or 4.6 sqm/person (education).
-<ArticleMedia id="media-lea-dsgn-003-06-core-concept" type="image" caption="Dormitory Floor Plan — Sleeping Area, Common Rooms, and Circulation" alt="Annotated floor plan of a dormitory floor showing: sleeping rooms grouped by gender, common lounge/kitchen area, laundry facilities, and corridor circulation. Occupant load calculations for sleeping areas (9.3 sqm/person) and common areas shown separately." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-003-06-core-concept" type="image" caption="Dormitory Floor Plan — Sleeping Area, Common Rooms, and Circulation" description="Annotated floor plan of a dormitory floor showing: sleeping rooms grouped by gender, common lounge/kitchen area, laundry facilities, and corridor circulation. Occupant load calculations for sleeping areas (9.3 sqm/person) and common areas shown separately." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

@@ -2,16 +2,32 @@
 
 ## Learning Goal
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 Extracted summary:
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+- Props: (none)
+- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
@@ -55,15 +71,25 @@ You are standing inside the Barcelona Pavilion and notice there are no interior 
 | Free-Flowing Plan | Non-rectilinear spatial arrangement using freestanding planes | Look for: walls that do not touch floor and ceiling simultaneously; sliding spatial layers |
 | Cruciform Column | A column with a cross-shaped (+) section | Look for: Barcelona Pavilion, Tugendhat House — these are Mies's signature structural members |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 
 component="ExamTip" status="preserved"]
-<Note>
-**LEA Pattern:** Questions about this architect often present an unfamiliar b...
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...

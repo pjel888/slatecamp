@@ -1,20 +1,21 @@
 {
-  "attempted_at": "2026-05-04T02:18:09.014Z",
+  "attempted_at": "2026-05-04T09:14:17.317Z",
   "dry_run": false,
   "apply": true,
-  "pushed": true,
-  "blockers": [],
+  "pushed": false,
+  "blockers": [
+    "candidate.md matches original.md; refusing no-op apply."
+  ],
   "warnings": [],
-  "updated_rows_count": 1,
+  "updated_rows_count": 0,
   "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
   "slug": "bp-344-accessible-washrooms",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:d852ed2ba150069272912dc5300169a4aa053d03b8ee28de8d1634170c695c17",
-  "original_hash": "sha256:d852ed2ba150069272912dc5300169a4aa053d03b8ee28de8d1634170c695c17",
-  "candidate_hash": "sha256:df7f9807c1bc632c34d811e3942021a0d46a7c6bcb7afcedc553a267b149c943",
+  "remote_hash_before": "sha256:a67d8a33cb7d999f1d46d0fcdbbcf8ba3d07d6d80c1018266d73f3300b391054",
+  "original_hash": "sha256:a67d8a33cb7d999f1d46d0fcdbbcf8ba3d07d6d80c1018266d73f3300b391054",
+  "candidate_hash": "sha256:a67d8a33cb7d999f1d46d0fcdbbcf8ba3d07d6d80c1018266d73f3300b391054",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:48.906005+00:00",
-  "updated_at_after": "2026-05-04T02:18:09.403788+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:13.991259+00:00"
 }

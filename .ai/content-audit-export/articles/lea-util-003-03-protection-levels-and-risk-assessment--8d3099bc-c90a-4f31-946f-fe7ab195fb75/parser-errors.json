@@ -1,36 +1,14 @@
 {
   "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
   "slug": "lea-util-003-03-protection-levels-and-risk-assessment",
-  "generated_at": "2026-05-01T13:33:43.589Z",
+  "generated_at": "2026-05-04T09:10:35.814Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 1,
-  "unknown_block_count": 1,
+  "warning_count": 0,
+  "unknown_block_count": 0,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [
-    {
-      "block_id": "ui_0007",
-      "component_name": "WikiMistakeList",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0007",
-      "component_name": "WikiMistakeList",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:b9c5987bb598b2ea6024f2834f65340541b2e4b84f5db541d09817691776e6cd",
-      "line_start": 363,
-      "line_end": 363,
-      "warnings": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
+  "warnings": [],
+  "unknown_blocks": [],
   "critical_blocks": []
 }

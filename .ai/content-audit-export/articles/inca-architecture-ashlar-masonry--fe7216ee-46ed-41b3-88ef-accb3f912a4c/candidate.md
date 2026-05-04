@@ -6,6 +6,8 @@ After reading this article, you should be able to:
 
 Identify the three defining features of Inca architecture — ashlar polygonal masonry (stones fitted without mortar), trapezoidal openings, and the imperial standardized plan (kancha enclosure) — and recognize key sites (Machu Picchu, Sacsayhuamán, Ollantaytambo, Cusco's Coricancha) by their masonry style and civic-ceremonial organization.
 
+</Callout>
+
 ## The Real-World Scenario (The Hook)
 
 <Callout variant="example">

@@ -7,7 +7,7 @@ Select electrical wire insulation types (THHN/THWN, XHHW, UF, NM, MC, USE) by te
 
 The Philippine Electrical Code recognizes several standard wire insulation types, each with specific temperature ratings and applications:
 
-<ArticleMedia id="media-lea-util-003-04-wire-insulation-types-an" type="image" caption="Wire Insulation Types Comparison — THHN, THWN, TW, XHHW" alt="Comparison diagram of four common insulation types: THHN (90°C dry, nylon-coated, general conduit wiring), THWN (75°C wet/90°C dry, water-resistant, most versatile), TW (60°C wet, basic, lighting circuits), XHHW (90°C dry/75°C wet, cross-linked polyethylene, feeders and high-load). Temperature ratings, application environments, and conduit fill percentages (40% max for 3+ conductors per PEC 300.17) shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-04-wire-insulation-types-an" type="image" caption="Wire Insulation Types Comparison — THHN, THWN, TW, XHHW" description="Comparison diagram of four common insulation types: THHN (90°C dry, nylon-coated, general conduit wiring), THWN (75°C wet/90°C dry, water-resistant, most versatile), TW (60°C wet, basic, lighting circuits), XHHW (90°C dry/75°C wet, cross-linked polyethylene, feeders and high-load). Temperature ratings, application environments, and conduit fill percentages (40% max for 3+ conductors per PEC 300.17) shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 ### THHN (Thermoplastic High Heat Nylon-coated)

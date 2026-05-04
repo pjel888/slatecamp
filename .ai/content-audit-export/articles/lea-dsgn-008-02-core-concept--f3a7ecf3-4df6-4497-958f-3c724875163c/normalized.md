@@ -18,7 +18,11 @@ In Philippine practice under **RA 9514** and **PD 1096**, separation requirement
 - **Standard Corridors:** Serving multiple tenancies require 1-hour minimum walls. 
 
 The design principle is proportional risk: a stairwell is protected more heavily (2-hour) because it serves as a continuous vertical evacuation route; an office corridor is protected less (1-hour) because occupants have more immediate access to multiple exit paths. 
-<ArticleMedia id="media-lea-dsgn-008-02-core-concept" type="image" caption="Fire-Rated Separation — Wall and Floor Assembly Ratings" alt="Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-008-02-core-concept", type="image", caption="Fire-Rated Separation — Wall and Floor Assembly Ratings", description="Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -57,7 +61,11 @@ A multi-story office building has a central exit stair. The exam states the stai
 A 2-hour fire-rated **Occupancy Separation** wall is provided. What is the required rating for a fire door in that specific wall?
 
 - **Answer:** 1.5-hour. (Per PD 1096, openings in 2-hour _occupancy separations_ require 1.5-hour assemblies, but standard _exit stair doors_ only require 1-hour). 
-<ArticleMedia id="media-lea-dsgn-008-02-core-concept" type="image" caption="Fire-Resistive Construction — Hourly Ratings by Building Element" alt="Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-008-02-core-concept", type="image", caption="Fire-Resistive Construction — Hourly Ratings by Building Element", description="Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -65,4 +73,8 @@ See **LEA-DSGN-008-01** (Fire Egress) for occupant load-based exit design, **LEA
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\n ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

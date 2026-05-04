@@ -67,7 +67,7 @@ Legal Basis: RA 10173 (Data Privacy Act of 2012). Architects collecting/processi
 
 
 
-<ArticleMedia type="image" caption="Data Privacy Compliance for Architects — RA 10173 Workflow" description="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements." />
+<ArticleMedia id="media-lea-prac-frm-015-data-privacy--0" type="image" caption="Data Privacy Compliance for Architects — RA 10173 Workflow" description="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

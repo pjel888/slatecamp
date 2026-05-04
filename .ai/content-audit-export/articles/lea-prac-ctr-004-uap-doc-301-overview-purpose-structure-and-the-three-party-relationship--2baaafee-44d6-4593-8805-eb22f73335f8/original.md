@@ -1,7 +1,7 @@
 ## UAP Doc 301 Overview — Purpose, Structure, and the Three-Party Relationship
 
 
-<ArticleMedia type="image" caption="UAP Doc 301 — Three-Party Relationship Diagram" description="Triangle diagram showing the three-party relationship: Owner (top), Architect (left), Contractor (right). Arrows show contractual relationships: Owner↔Architect (Owner-Architect Agreement), Owner↔Contractor (Construction Contract), Architect↔Contractor (Architect's authority during construction via contract documents). Independent contractor relationship highlighted between Owner and Contractor." />
+<ArticleMedia id="media-lea-prac-ctr-004-uap-doc-301-o-0" type="image" caption="UAP Doc 301 — Three-Party Relationship Diagram" description="Triangle diagram showing the three-party relationship: Owner (top), Architect (left), Contractor (right). Arrows show contractual relationships: Owner↔Architect (Owner-Architect Agreement), Owner↔Contractor (Construction Contract), Architect↔Contractor (Architect's authority during construction via contract documents). Independent contractor relationship highlighted between Owner and Contractor." />
 ## Learning Goal
 
 After reading this article, you should be able to:

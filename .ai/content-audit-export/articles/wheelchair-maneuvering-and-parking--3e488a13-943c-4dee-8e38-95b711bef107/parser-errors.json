@@ -1,14 +1,36 @@
 {
   "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
   "slug": "wheelchair-maneuvering-and-parking",
-  "generated_at": "2026-05-01T13:33:44.157Z",
+  "generated_at": "2026-05-04T09:10:36.952Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 0,
-  "unknown_block_count": 0,
+  "warning_count": 1,
+  "unknown_block_count": 1,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [],
-  "unknown_blocks": [],
+  "warnings": [
+    {
+      "block_id": "ui_0002",
+      "component_name": "ArticleMedia",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0002",
+      "component_name": "ArticleMedia",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:dfb41f79354243b10542243a13640e188b30011814bdaa4fdc390e34c332b46c",
+      "line_start": 30,
+      "line_end": 30,
+      "warnings": [
+        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
   "critical_blocks": []
 }

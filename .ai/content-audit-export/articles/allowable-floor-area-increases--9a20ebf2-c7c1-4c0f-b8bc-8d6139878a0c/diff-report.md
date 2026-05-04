@@ -1,26 +1,26 @@
 # Content Diff Report: allowable-floor-area-increases
 
-Generated: 2026-05-04T02:17:33.799Z
+Generated: 2026-05-04T09:13:53.683Z
 Article ID: 9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:95820139025382da9ae37134b2db49b3215b9e7b033af5f668d8648f33ff341c`
-- Normalized: `sha256:0e8fb71945a6f7a157139d55d50135fea92fbd96abdea4b190c88d8f2d362f03`
+- Original: `sha256:357fbc811d729013e05f887e9ba677338dffeda1f05419433d233a496cb4498e`
+- Normalized: `sha256:93320a66112e866d1edad51d8b9910638cfd050bb0dd8fd8e47d08738d6ffe96`
 - Candidate: `sha256:357fbc811d729013e05f887e9ba677338dffeda1f05419433d233a496cb4498e`
 
 ## Line summary
 
-- Changed lines: 180
-- Inserted lines: 12
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

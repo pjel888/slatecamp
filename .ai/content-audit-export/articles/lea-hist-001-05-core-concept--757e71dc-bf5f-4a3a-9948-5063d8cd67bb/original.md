@@ -99,7 +99,7 @@ Classical Greek architecture tests your understanding of the three orders (Doric
 
 ## Related Articles
 
-<ArticleMedia id=\"media-hist-001-05-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Comparative timeline of Greek temple development from the early Archaic period (c. 900 BCE) through the Classical period (Parthenon, 447–432 BCE) to the Hellenistic period (Temple of Olympian Zeus, 174 BCE), highlighting key Doric, Ionic, and Corinthian examples.\" caption=\"Greek Architecture — Timeline of Temples and Orders\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-001-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative timeline of Greek temple development from the early Archaic period (c. 900 BCE) through the Classical period (Parthenon, 447–432 BCE) to the Hellenistic period (Temple of Olympian Zeus, 174 BCE), highlighting key Doric, Ionic, and Corinthian examples." caption="Greek Architecture — Timeline of Temples and Orders" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**.
 

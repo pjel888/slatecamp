@@ -7,6 +7,7 @@
 After reading this article, you should be able to:
 
 Apply the electrical and mechanical regulations referenced by PD 1096: identify the Philippine Electrical Code (PEC) requirements for building electrical systems (service capacity, minimum outlets, GFCI locations, load calculations); apply the Mechanical Code requirements for ventilation, exhaust, and mechanical equipment rooms; and determine when a separate electrical or mechanical permit is required beyond the building permit.
+
 ---
 
 ## Header Block
@@ -401,5 +402,3 @@ Cross-drill with **Article 22** (sprinkler systems in boiler rooms per Sec. 1212
 
 **Sanitation And Water Supply**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Sheet Metal And Spray Booths**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

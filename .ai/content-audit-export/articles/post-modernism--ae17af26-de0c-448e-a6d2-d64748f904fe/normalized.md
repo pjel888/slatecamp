@@ -10,7 +10,11 @@
 
 You encounter an LEA question showing a photograph of a building with a comically oversized broken pediment, playful color bands, and what appears to be a television antenna sculpted as a decorative finial. The question asks: "Which architectural movement rejects Modernist purity in favor of historical allusion and irony?" You are looking at Post-Modernism — and you need to know its manifesto, its architects, and its key buildings cold.
 
-<Callout variant="lea-watch">**LEA Diagnostic Clues for Post-Modernism:** On the exam, identify Post-Modern buildings by three visual giveaways: (1) Classical elements used ironically — broken pediments, oversized keystones, out-of-scale columns; (2) Playful or unexpected color — polychrome facades, pastel hues, neon accents; (3) Historical allusion mixed with pop culture — Chippendale tops, cartoon-like ornament, symbolic forms.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch"
+- Text: **LEA Diagnostic Clues for Post-Modernism:** On the exam, identify Post-Modern buildings by three visual giveaways: (1) Classical elements used ironically — broken pediments, oversized keystones, out-of-scale columns; (2) Playful or unexpected color — polychrome facades, pastel hues, neon accents; (3) Historical allusion mixed with pop culture — Chippendale tops, cartoon-like ornament, symbolic forms.
+[/SLATECAMP_UI_BLOCK]
 
 ## Core Concepts
 
@@ -22,11 +26,19 @@ You encounter an LEA question showing a photograph of a building with a comicall
 
 - **The Return of Ornament:** Post-Modernism reversed Adolf Loos's Modernist dictum "Ornament and Crime" (1910). Post-Modern architects reintroduced columns, pediments, keystones, arches, and other Classical elements — but used them ironically, out of scale, in unexpected materials, or in playful combinations to comment on rather than merely copy history.
 
-<KeyValues items={[{label:"Venturi's Slogan",value:"\"Less is a bore\""},{label:"Form + Symbol",value:"Decorated Shed"},{label:"Form IS Symbol",value:"Duck"},{label:"Elite + Popular",value:"Double Coding"}]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{label:\"Venturi's Slogan\",value:\"\\\"Less is a bore\\\"\"}", label=true, Form=true, Symbol=true, value=true, Decorated=true, Shed=true, IS=true, Duck=true, Elite=true, Popular=true, Double=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## The Hard Data (Cheat Sheet)
 
-<Example>**Vanna Venturi House (Robert Venturi, 1964):** The first built manifesto of Post-Modernism. A deliberately contradictory house in Chestnut Hill, PA with a split gable, oversized chimney, and distorted Classical references. Features: (1) Monumental gable facade — a "house-shaped" front that is purely symbolic, not structural; (2) A deliberate split in the gable line that contradicts the roof's own symmetry; (3) An oversized central chimney that dominates the composition.</Example>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Vanna Venturi House (Robert Venturi, 1964):** The first built manifesto of Post-Modernism. A deliberately contradictory house in Chestnut Hill, PA with a split gable, oversized chimney, and distorted Classical references. Features: (1) Monumental gable facade — a "house-shaped" front that is purely symbolic, not structural; (2) A deliberate split in the gable line that contradicts the roof's own symmetry; (3) An oversized central chimney that dominates the composition.
+[/SLATECAMP_UI_BLOCK]
 
 | Architect / Theorist | Key Work(s) | Year | Significance |
 |---|---|---|---|
@@ -52,9 +64,17 @@ You encounter an LEA question showing a photograph of a building with a comicall
 
 ## LEA Exam Traps and Common Mistakes
 
-<ExamTip>**LEA Trap:** "Post-Modernism means 'after Modernism' chronologically" — PARTIALLY TRUE but incomplete. Post-Modernism is a specific architectural movement defined by Venturi's Complexity and Contradiction in Architecture (1966), not merely a temporal label. The movement is characterized by specific theoretical positions — historical allusion, double coding, irony, contextualism — that distinguish it from Late Modernism or any other "after Modernism" style.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Trap:** "Post-Modernism means 'after Modernism' chronologically" — PARTIALLY TRUE but incomplete. Post-Modernism is a specific architectural movement defined by Venturi's Complexity and Contradiction in Architecture (1966), not merely a temporal label. The movement is characterized by specific theoretical positions — historical allusion, double coding, irony, contextualism — that distinguish it from Late Modernism or any other "after Modernism" style.
+[/SLATECAMP_UI_BLOCK]
 
-<Warn>**Do NOT confuse Post-Modernism with Neo-Classicism.** Both use Classical elements (columns, pediments, arches), but Post-Modernism uses them ironically — out of scale, in unexpected colors, or in jarring combinations. Neo-Classicism uses them sincerely and proportionally. The Piazza d'Italia has neon-lit stainless-steel Corinthian columns — that is Post-Modern irony, not Neo-Classical reverence. The LEA tests this distinction directly.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Do NOT confuse Post-Modernism with Neo-Classicism.** Both use Classical elements (columns, pediments, arches), but Post-Modernism uses them ironically — out of scale, in unexpected colors, or in jarring combinations. Neo-Classicism uses them sincerely and proportionally. The Piazza d'Italia has neon-lit stainless-steel Corinthian columns — that is Post-Modern irony, not Neo-Classical reverence. The LEA tests this distinction directly.
+[/SLATECAMP_UI_BLOCK]
 
 - **Trap 1: Confusing Post-Modernism with Neo-Classicism.** Both use Classical elements (columns, pediments), but Post-Modernism uses them ironically, out of scale, in unexpected colors, or in jarring combinations. Neo-Classicism uses them sincerely and proportionally. The Piazza d'Italia has neon-lit stainless-steel Corinthian columns — that is irony, not reverence.
 
@@ -99,7 +119,11 @@ D. The opening of Philip Johnson's AT&T Building
 
 ---
 
-<Tip>**Memory Anchor: "P-M = Post-Modernism = Pluralism + Metaphor."** Two defining characteristics: Pluralism (rejects the single "correct" style of Modernism — mixes historical references, ornament, color, and forms from different eras) and Metaphor (architecture communicates meaning through symbolism, allusion, and double coding — simultaneously appealing to popular taste and elite architectural culture).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Anchor: "P-M = Post-Modernism = Pluralism + Metaphor."** Two defining characteristics: Pluralism (rejects the single "correct" style of Modernism — mixes historical references, ornament, color, and forms from different eras) and Metaphor (architecture communicates meaning through symbolism, allusion, and double coding — simultaneously appealing to popular taste and elite architectural culture).
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

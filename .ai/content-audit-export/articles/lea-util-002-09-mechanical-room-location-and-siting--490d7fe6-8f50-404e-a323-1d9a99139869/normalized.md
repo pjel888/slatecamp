@@ -7,7 +7,11 @@ Apply NBCP and mechanical code requirements for mechanical room location, siting
 
 In Philippine high-rise developments, mechanical rooms occupy two primary locations: below-grade basement levels or above the roofline. Each location presents distinct design trade-offs.
 
-<ArticleMedia id="media-lea-util-002-09-mechanical-room-location" type="image" caption="Mechanical Room Layout — Chiller, AHU, Pump Set with Clearances and Access Path" alt="Floor plan of a basement mechanical room showing: chiller (1.2-1.5m service clearance on front/sides), pump sets, air handling unit, equipment removal path (minimum 900mm clear width), fire-rated walls (2-hour per RA 9514), access door (900mm min), floor drains, vibration isolation pads, and structural column locations. Room sized at 3-5% of GFA per standard practice." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-002-09-mechanical-room-location", type="image", caption="Mechanical Room Layout — Chiller, AHU, Pump Set with Clearances and Access Path", description="Floor plan of a basement mechanical room showing: chiller (1.2-1.5m service clearance on front/sides), pump sets, air handling unit, equipment removal path (minimum 900mm clear width), fire-rated walls (2-hour per RA 9514), access door (900mm min), floor drains, vibration isolation pads, and structural column locations. Room sized at 3-5% of GFA per standard practice.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 **Basement placement** concentrates MEP equipment at the building base, minimizing vertical rise runs for chilled water, condenser water, and drainage lines. This reduces pipe frictional losses and simplifies maintenance access via main lobbies. PD 1096 Rule IX requires sump pits with mechanical backup pumps where flood risk exists where flood risk exists; many projects near coastal or low-lying Manila sites implement dual-pump redundancy to achieve Category 3 equipment reliability per RA 9514.
@@ -18,11 +22,23 @@ Size allocation for mechanical spaces typically 3-5% of gross floor area based o
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, THHN=true, label=true, u00b0C=true, General=true, Wiring=true, THWN=true, Wet=true, Locations=true, XHHW=true, Dry=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+[/SLATECAMP_UI_BLOCK]
 
 ## Equipment Clearances and Service Access
 
@@ -54,7 +70,11 @@ Mechanical rooms continuously release sensible heat from compressors, motors, an
 
 Metropolitan Manila's stringent environmental regulations (EMRO-DENR Noise Code) limit mechanical room discharge to 65 dBA at sensitive receptor boundaries. Without isolation, compressor discharge noise, pump cavitation, and motor whine breach limits within 30 m.
 
-<ArticleMedia id="media-lea-util-002-09-mechanical-room-location" type="image" caption="Vibration Isolation Methods — Spring Isolators, Inertia Bases, Flexible Connections" alt="Three-part diagram: (1) Spring isolator mounted under chiller foot showing deflection (25-75mm), natural frequency range (3-15 Hz); (2) Inertia base cross-section (reinforced concrete pad 0.8-1.2m thick, mass 3× rotating mass); (3) Flexible pipe connector at pump inlet/outlet decoupling vibration path. Acoustic enclosure with 100mm rockwool lining shown for noisy equipment." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-002-09-mechanical-room-location", type="image", caption="Vibration Isolation Methods — Spring Isolators, Inertia Bases, Flexible Connections", description="Three-part diagram: (1) Spring isolator mounted under chiller foot showing deflection (25-75mm), natural frequency range (3-15 Hz); (2) Inertia base cross-section (reinforced concrete pad 0.8-1.2m thick, mass 3× rotating mass); (3) Flexible pipe connector at pump inlet/outlet decoupling vibration path. Acoustic enclosure with 100mm rockwool lining shown for noisy equipment.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 **Spring isolators** decouple rotating equipment from floor slabs. Vertical stiffness ranges 3–15 Hz natural frequency depending on equipment mass and isolation deflection. A 50-tonne chiller using 8 springs (each rated 150 kN) achieves ~7 Hz isolation, effective above 20 Hz pump/compressor operating frequencies. Isolation deflection of 25–75 mm per standard engineering practice; undersized springs (&lt;25 mm) reduce isolation effectiveness, oversized springs (>75 mm) risk resonance during transient startup.

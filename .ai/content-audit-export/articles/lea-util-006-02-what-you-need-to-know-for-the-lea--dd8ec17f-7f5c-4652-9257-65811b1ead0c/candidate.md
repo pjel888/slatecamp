@@ -4,7 +4,7 @@
 
 Apply the basics of architectural lighting design — luminous flux (lumens), illuminance (lux), luminance (cd/m²), luminous efficacy (lm/W), color temperature (Kelvin), color rendering index (CRI) — to select appropriate lighting systems for Philippine building projects.
 
-<ArticleMedia id="media-lea-util-006-02-what-you-need-to-know-fo" type="image" caption="Lighting Design Fundamentals — Luminous Flux, Illuminance, Luminance, Efficacy" alt="Four-part visual: (1) Luminous flux — lumens emitted from light source; (2) Illuminance (E) — lux = lumens/m² on a surface; (3) Luminance (L) — cd/m² perceived brightness; (4) Efficacy — lm/W efficiency. The lumen method formula (E = N×F×CU×MF/A) shown with example calculation for a Philippine office requiring 400 lux. Color temperature (K) spectrum from warm 2700K to cool 6500K and CRI scale (70-100) illustrated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-006-02-what-you-need-to-know-fo" type="image" caption="Lighting Design Fundamentals — Luminous Flux, Illuminance, Luminance, Efficacy" description="Four-part visual: (1) Luminous flux — lumens emitted from light source; (2) Illuminance (E) — lux = lumens/m² on a surface; (3) Luminance (L) — cd/m² perceived brightness; (4) Efficacy — lm/W efficiency. The lumen method formula (E = N×F×CU×MF/A) shown with example calculation for a Philippine office requiring 400 lux. Color temperature (K) spectrum from warm 2700K to cool 6500K and CRI scale (70-100) illustrated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 <ExamTip>

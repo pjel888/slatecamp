@@ -21,7 +21,11 @@ The developer is obligated to deliver the Certificate of Title (TCT) to the buye
 
 **What PD 957 Does NOT Cover**
 PD 957 is silent on socialized housing (BP 220 governs), raw land subdivision without residential use, eviction procedures, or government-built housing. It is a buyer-protection and developer-regulation law, not a social housing mandate.
-<ArticleMedia id="media-lea-plan-003-01-what-you-need-to-know-fo" type="image" caption="Philippine Housing Law Framework — Five Core Laws Relationship Diagram" alt="Venn diagram showing relationship of five core housing laws: PD 957 (market-rate subdivisions/condos), BP 220 (socialized/economic minimums), RA 7279 UDHA (eviction/bHousing), RA 6552 Maceda Law (buyer installments), RA 10884 (bHousing %). Which law governs which housing type." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-003-01-what-you-need-to-know-fo", type="image", caption="Philippine Housing Law Framework — Five Core Laws Relationship Diagram", description="Venn diagram showing relationship of five core housing laws: PD 957 (market-rate subdivisions/condos), BP 220 (socialized/economic minimums), RA 7279 UDHA (eviction/bHousing), RA 6552 Maceda Law (buyer installments), RA 10884 (bHousing %). Which law governs which housing type.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -153,13 +157,21 @@ PD 1216 reinforces PD 957's 30% open space rule. It mandates that 30% of the gro
 
 ### Summary Table: Which Law Governs What
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Provision\",\"Law\",\"Scope\"]}", rows="{[{\"Provision\":\"Developer registration and licensing for market-rate projects\",\"Law\":\"PD 957\",\"Scope\":\"Market-rate subdivisions and condominiums\"}", Provision=true, Minimum=true, lot=true, and=true, floor=true, area=true, for=true, socialized=true, economic=true, housing=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 ### Common Distractors and Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[{\"mistake\":\"PD 957 sets the minimum floor area for socialized housing at 22 sq.m.\",\"fact\":\"BP 220 sets floor area standards, not PD 957. PD 957 regulates market-rate projects, not socialized housing.\"}", mistake=true, Economic=true, housing=true, under=true, BP=true, has=true, a=true, minimum=true, lot=true, of=true, sq=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ---

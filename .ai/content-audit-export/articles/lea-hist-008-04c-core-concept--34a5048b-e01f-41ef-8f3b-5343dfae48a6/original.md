@@ -62,7 +62,7 @@ Identify the three defining characteristics of De Stijl — primary colors (red,
 - **Technological apparatus**: Visible expression of mechanical systems, materials, and industrial processes as design elements.
 - **Dematerialization of walls**: The visual dissolution of solid barriers through transparency, rotation, and open planning.
 
-<ArticleMedia id="media-hist-008-04c-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of early 20th-century avant-garde movements: De Stijl (Schröder House, primary colors, orthogonal planes), Constructivism (Tatlin's Tower, dynamic diagonals), and Expressionism (Einstein Tower, organic forms).\" caption=\"De Stijl, Constructivism, Expressionism — Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-008-04c-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of early 20th-century avant-garde movements: De Stijl (Schröder House, primary colors, orthogonal planes), Constructivism (Tatlin's Tower, dynamic diagonals), and Expressionism (Einstein Tower, organic forms)." caption="De Stijl, Constructivism, Expressionism — Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

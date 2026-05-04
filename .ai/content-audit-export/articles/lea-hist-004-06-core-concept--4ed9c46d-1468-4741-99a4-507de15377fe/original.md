@@ -98,7 +98,7 @@ By the 18th century, Ottoman architecture absorbed European Baroque elements (fl
 
 <Warn>Do not confuse Ottoman domes with Byzantine domes. Ottoman domes rest on *cascading half-domes and pendentives*; Byzantine domes (like Hagia Sophia) are supported by *wall mass*. The Ottoman refinement created the illusion of a floating, weightless dome through light and geometric clarity. Hagia Sophia served as *inspiration*, not model—Sinan invented an Ottoman system, not merely copied Byzantine precedent. This distinction is directly tested on the LEA.</Warn>
 
-<ArticleMedia id="media-hist-004-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of the Ottoman cascade dome system (central dome, four half-domes, pendentives, cascading buttresses) across Sinan's masterworks: Şehzade Mosque (1548), Süleymaniye Mosque (1557), and Selimiye Mosque (1575).\" caption=\"Ottoman Dome System — Sinan's Structural Evolution\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-004-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of the Ottoman cascade dome system (central dome, four half-domes, pendentives, cascading buttresses) across Sinan's masterworks: Şehzade Mosque (1548), Süleymaniye Mosque (1557), and Selimiye Mosque (1575)." caption="Ottoman Dome System — Sinan's Structural Evolution" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

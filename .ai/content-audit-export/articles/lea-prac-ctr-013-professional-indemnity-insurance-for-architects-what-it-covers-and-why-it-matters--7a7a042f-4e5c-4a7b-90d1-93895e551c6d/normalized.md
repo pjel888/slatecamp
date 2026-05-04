@@ -10,13 +10,11 @@ After reading this article, you should be able to:
 
 Professional indemnity insurance protects architects from claims arising from negligence or errors in their professional services, covering legal costs and damages awarded to injured parties.
 
-<KeyValues items={[
-  {label:"Typical per-occurrence limit", value:"₱5 million (example)"},
-  {label:"Typical aggregate limit", value:"₱10 million annual"},
-  {label:"Typical deductible", value:"₱10,000 per claim"},
-  {label:"Coverage scope", value:"Negligence, errors, omissions in professional services"},
-  {label:"Key exclusions", value:"Fraud, intentional misconduct, unlicensed practice"}
-]} />
+[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[\n  {label:\"Typical per-occurrence limit\", value:\"₱5 million (example)\"}", label=true, Typical=true, aggregate=true, limit=true, value=true, million=true, annual=true, deductible=true, per=true, claim=true, Coverage=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Coverage Scope and Protected Risks
 
@@ -34,9 +32,11 @@ Most professional indemnity policies have specific coverage limits defining the 
 
 The architect must promptly notify the insurer when a claim arises or circumstances indicate a potential claim is likely. Many policies require notice within specified timeframes—sometimes within days—of learning of circumstances that might result in a claim. Failure to provide timely notice can result in claim denial even if the claim would otherwise be covered.
 
-<Warn>
-**Notice Trap:** Even if a claim is clearly covered, failure to notify the insurer within the policy's specified timeframe (sometimes just days) can result in **complete claim denial**. The architect must report not just actual claims, but also circumstances that might lead to a claim.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Notice Trap:** Even if a claim is clearly covered, failure to notify the insurer within the policy's specified timeframe (sometimes just days) can result in **complete claim denial**. The architect must report not just actual claims, but also circumstances that might lead to a claim.
+[/SLATECAMP_UI_BLOCK]
 
 The claims process typically involves the architect reporting the claim details to the insurer, the insurer assigning defense counsel, and the insurer controlling the defense strategy. The architect must cooperate fully with the insurer's investigation and defense. The insurer may settle claims, defend at trial, or pursue other resolution strategies at its discretion. The architect's cooperation is essential to the insurer's defense obligations.
 
@@ -50,19 +50,19 @@ Insurance also protects clients and project stakeholders. Knowing the architect 
 
 Professional indemnity insurance complements other project protections like performance bonds and guarantee bonds. The performance bond protects the contractor's execution; the guarantee bond protects quality; professional indemnity insurance protects against architect errors. These mechanisms address different risk sources: contractor performance, quality of work, and professional competence.
 
-<Note>
-**Three-Layer Protection:** On a typical construction project, three distinct protections operate in parallel:
-1. **Performance Bond** — protects the Owner if the Contractor fails to execute the work
-2. **Guarantee Bond** — protects the Owner against defects in materials and workmanship for one year
-3. **Professional Indemnity Insurance** — protects against errors in the Architect's professional services
-These are complementary, not overlapping. The LEA may test whether you know which protection applies to which risk.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Three-Layer Protection:** On a typical construction project, three distinct protections operate in parallel: 1. **Performance Bond** — protects the Owner if the Contractor fails to execute the work 2. **Guarantee Bond** — protects the Owner against defects in materials and workmanship for one year 3. **Professional Indemnity Insurance** — protects against errors in the Architect's professional services These are complementary, not overlapping. The LEA may test whether you know which protection
+[/SLATECAMP_UI_BLOCK]
 
 The architect's liability under professional indemnity insurance exists independently from contractual liability to the owner. Contract terms may limit the architect's liability to the owner, but professional indemnity insurance covers claims beyond those contractual relationships—claims from third parties, regulatory actions, or breach of statutory duties. The professional indemnity policy thus provides a crucial safety net for claims that exceed contractual limitations.
 
-<ExamTip>
-**Claims-Made vs. Occurrence-Based:** The LEA may test policy type distinctions. A **claims-made** policy covers claims filed during the policy period, regardless of when the error occurred. An **occurrence-based** policy covers errors that occurred during the policy period, regardless of when the claim is filed. Most architect professional indemnity policies in the Philippines are claims-made, meaning coverage must be maintained even after project completion.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Claims-Made vs. Occurrence-Based:** The LEA may test policy type distinctions. A **claims-made** policy covers claims filed during the policy period, regardless of when the error occurred. An **occurrence-based** policy covers errors that occurred during the policy period, regardless of when the claim is filed. Most architect professional indemnity policies in the Philippines are claims-made, meaning coverage must be maintained even after project completion.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 ## Cross-References

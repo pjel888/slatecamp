@@ -78,7 +78,7 @@ You may see: "The 'whiplash line' is a defining feature of which movement?" Answ
 
 **Streamline/Streamlining**: An Art Deco emphasis on smooth, flowing lines that suggest speed and machine efficiency; applied to static buildings to convey modernity.
 
-<ArticleMedia id="media-hist-008-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative chart of Art Nouveau (flowing organic curves, whiplash lines, natural motifs, Horta, Guimard, Gaudi) versus Art Deco (geometric patterns, stepped forms, exotic materials, streamlined shapes) with visual examples of each.\" caption=\"Art Nouveau vs. Art Deco — Visual Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-008-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative chart of Art Nouveau (flowing organic curves, whiplash lines, natural motifs, Horta, Guimard, Gaudi) versus Art Deco (geometric patterns, stepped forms, exotic materials, streamlined shapes) with visual examples of each." caption="Art Nouveau vs. Art Deco — Visual Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

@@ -18,7 +18,7 @@ Climate-resilient planning typically addresses:
 3. **Land use restrictions** — prohibiting residential or critical infrastructure in high-risk zones
 4. **Building typology and resilience** — designing structures to withstand anticipated hazards
 5. **Community resilience capacity** — ensuring access to evacuation routes, safe zones, early warning systemPost-Typhoon Yolanda (Haiyan, 2013), some LGUs adopted 40-meter coastal buffers as local policy; national standards follow PD 1067 waterway easements.as, reflecting lessons from storm surge inundation. Active fault proximity is assessed per NSCP 2015 seismic design provisions and local ordinances; PHIVOLCS provides fault mapping for site-specific risk evaluation.e.
-<ArticleMedia id="media-lea-plan-008-01-core-concept" type="image" caption="Climate Resilience Planning — Hazard Mapping for CLUPs" alt="Composite hazard map for CLUP integration: flood hazard zones (100-year floodplain), typhoon wind speed zones, earthquake fault buffers, landslide susceptibility zones, and sea-level rise projections. RA 10121 DRRM framework mainstreaming with adaptation measures." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-008-01-core-concept" type="image" caption="Climate Resilience Planning — Hazard Mapping for CLUPs" description="Composite hazard map for CLUP integration: flood hazard zones (100-year floodplain), typhoon wind speed zones, earthquake fault buffers, landslide susceptibility zones, and sea-level rise projections. RA 10121 DRRM framework mainstreaming with adaptation measures." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

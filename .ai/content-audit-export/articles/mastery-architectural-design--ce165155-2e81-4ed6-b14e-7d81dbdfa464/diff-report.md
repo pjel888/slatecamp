@@ -1,15 +1,15 @@
 # Content Diff Report: mastery-architectural-design
 
-Generated: 2026-05-04T02:17:16.167Z
+Generated: 2026-05-04T09:13:42.186Z
 Article ID: ce165155-2e81-4ed6-b14e-7d81dbdfa464
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:2e36562680fb606dc6ec9922b9e083cab5bf5df2163c86a84a0bf569de452ec9`
-- Normalized: `sha256:c74d9501260f264c342126fcd47b69c66adc8307cbe9eb8289f136bbc4169f95`
-- Candidate: `sha256:2e36562680fb606dc6ec9922b9e083cab5bf5df2163c86a84a0bf569de452ec9`
+- Original: `sha256:f2bace021414049d06614887ccdd0f28eb7ae840c1a8f09ee4b808680eb5f2b2`
+- Normalized: `sha256:c38b6967fa265ff4f99d307434b55a835fefb735d41ab3a7040f0f1ad6c1c212`
+- Candidate: `sha256:f2bace021414049d06614887ccdd0f28eb7ae840c1a8f09ee4b808680eb5f2b2`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

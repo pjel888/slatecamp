@@ -12,7 +12,11 @@ _Stairs–Ramps–Elevators Integration Module (Accessibility + Life Safety)_[we
 
 ## 1. Big Picture: How BP 344 and PD 1096 Interact
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule XII - Guardrails"
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
@@ -141,21 +145,31 @@ Guard (protective railing) must be **1,100 mm** where drop > 750 mm. This is **s
 
 LEA Trap: When BP 344 and PD 1096 conflict on stairs, BP 344 accessibility requirements PREVAIL for accessible routes, but PD 1096 governs structural and life-safety requirements. Dual handrails (700/900 mm) is the most tested BP 344 stair requirement.
 
-<Note>
-BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-</Note>
-<Note>
-Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-</Note>
-<Note>
-**LEA Pattern:** Determine if a building meets accessibility requirements. Calculate accessible parking slots per standards.
-</Note>
-<Note>
-Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-</Note>
-<Note>
-**LEA Pattern:** Determine if a building meets accessibility requirements. Calculate accessible parking slots per standards.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Calculate accessible parking slots per standards.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Calculate accessible parking slots per standards.
+[/SLATECAMP_UI_BLOCK]
 
 
 ---
@@ -166,7 +180,11 @@ ALE Trap: When BP 344 and PD 1096 conflict on stairs, BP 344 accessibility requi
 
 
 
-<ArticleMedia type="image" caption="Stair Geometry — PD 1096 Riser, Tread, and Handrail Dimensions" alt="Cross-section and plan of a typical stair showing: riser height (max 200mm PD 1096), tread depth (min 250mm), nosing projection, handrail at 800-900mm (PD 1096) overlaid with BP 344 dual handrails at 700mm and 900mm, guardrail at 1100mm min for drops over 750mm, landing depth equal to stair width, and headroom clearance (2.00m min)." />
+[SLATECAMP_UI_BLOCK:ui_0007 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-stairs-handrails-guardrails-0", type="image", caption="Stair Geometry — PD 1096 Riser, Tread, and Handrail Dimensions", description="Cross-section and plan of a typical stair showing: riser height (max 200mm PD 1096), tread depth (min 250mm), nosing projection, handrail at 800-900mm (PD 1096) overlaid with BP 344 dual handrails at 700mm and 900mm, guardrail at 1100mm min for drops over 750mm, landing depth equal to stair width, and headroom clearance (2.00m min)."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Cross‑References
 
 **Widths Slopes**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Ramp Slope Tiers**, **Transport Nodes Escalators Walkways**

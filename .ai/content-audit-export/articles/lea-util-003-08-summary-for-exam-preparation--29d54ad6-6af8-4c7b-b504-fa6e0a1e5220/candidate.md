@@ -7,7 +7,7 @@ Identify the key PEC provisions tested on the LEA — service sizing, branch cir
 
 Key takeaways for the LEA:
 
-<ArticleMedia id="media-lea-util-003-08-summary-for-exam-prepara" type="image" caption="PEC Key Provisions Summary — Service Sizing, Branch Circuits, Voltage Drop, Grounding" alt="Visual summary of PEC exam topics: service entrance sizing (main breaker at 125% continuous load), branch circuit minimums (15A general, 20A kitchen/laundry), voltage drop limits (3% branch, 5% combined), grounding requirements (25 ohms max, 2 ground rods if exceeded), panel spare capacity (25%), and the 80% continuous load rule. All values referenced to PEC 2021 Articles." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-08-summary-for-exam-prepara" type="image" caption="PEC Key Provisions Summary — Service Sizing, Branch Circuits, Voltage Drop, Grounding" description="Visual summary of PEC exam topics: service entrance sizing (main breaker at 125% continuous load), branch circuit minimums (15A general, 20A kitchen/laundry), voltage drop limits (3% branch, 5% combined), grounding requirements (25 ohms max, 2 ground rods if exceeded), panel spare capacity (25%), and the 80% continuous load rule. All values referenced to PEC 2021 Articles." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 1. **Sizing formula:** System (kWp) = Load (kWh/day) ÷ [PSH × PR]. Philippine PSH = 4.5–5.5; PR typically 0.75–0.85.

@@ -1,20 +1,21 @@
 {
-  "attempted_at": "2026-05-04T02:17:13.599Z",
+  "attempted_at": "2026-05-04T09:13:40.837Z",
   "dry_run": false,
   "apply": true,
-  "pushed": true,
-  "blockers": [],
+  "pushed": false,
+  "blockers": [
+    "candidate.md matches original.md; refusing no-op apply."
+  ],
   "warnings": [],
-  "updated_rows_count": 1,
+  "updated_rows_count": 0,
   "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
   "slug": "bp-344-elevator-dimensions",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:4d1d6c3509b9620259efc0397d6f479f06bf59c451152434b852d26169f8071a",
-  "original_hash": "sha256:4d1d6c3509b9620259efc0397d6f479f06bf59c451152434b852d26169f8071a",
-  "candidate_hash": "sha256:21c80fc190ab96946b63b51c0bcd8705be081452fb1dfbaf581fd1cef89b89a1",
+  "remote_hash_before": "sha256:687ea0859fdff67d0e2ef7e48b18057957eaea5d596ca87cbfd15af070ea2fae",
+  "original_hash": "sha256:687ea0859fdff67d0e2ef7e48b18057957eaea5d596ca87cbfd15af070ea2fae",
+  "candidate_hash": "sha256:687ea0859fdff67d0e2ef7e48b18057957eaea5d596ca87cbfd15af070ea2fae",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:51:27.567949+00:00",
-  "updated_at_after": "2026-05-04T02:17:14.092413+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:13.450577+00:00"
 }

@@ -22,7 +22,7 @@ Key frameworks include:
 5. **Complete Streets** — street design that accommodates pedestrians, cyclists, transit users, and drivers; prioritizes safety and livability over vehicle throughput alone.
 
 These frameworks share a common critique of 20th-century car-dependent suburban sprawl and a commitment to human-scale, livable urban forms. In Philippine context, Complete Streets addresses the reality that most Filipinos walk or use transit; car-centric design ignores the majority.
-<ArticleMedia id="media-lea-plan-008-03-core-concept" type="image" caption="Sustainable Urban Development — Compact City, TOD, Complete Streets" alt="Diagram showing sustainable urban principles: compact city (density, infill), transit-oriented development (400m station radius, mixed-use), complete streets (pedestrian, bike, transit, vehicle), walkable neighborhoods (5-minute catchment). SDG 11 and New Urban Agenda alignment." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-008-03-core-concept" type="image" caption="Sustainable Urban Development — Compact City, TOD, Complete Streets" description="Diagram showing sustainable urban principles: compact city (density, infill), transit-oriented development (400m station radius, mixed-use), complete streets (pedestrian, bike, transit, vehicle), walkable neighborhoods (5-minute catchment). SDG 11 and New Urban Agenda alignment." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

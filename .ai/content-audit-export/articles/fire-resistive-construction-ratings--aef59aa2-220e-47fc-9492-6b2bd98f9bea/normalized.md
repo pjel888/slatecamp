@@ -11,6 +11,12 @@ Identify fire-resistive ratings (1-hour through 4-hour) required for structural 
 **LEA Area:** Building Technology / Building Laws, Codes, and Ethics
 **Difficulty:** Intermediate–Advanced
 **Spaced Repetition:** Return in 3 days to re-test yourself on the thickness table for concrete columns, the difference between fire-resistive rating and time period rating, and the material efficiency hierarchy. Return in 7 days to complete the Active Recall Questions without referencing any notes.
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tabs" status="preserved"]
+Extracted summary:
+- Props: defaultTab="type-I"
+- Text: **Most fire-resistive** — Reinforced concrete or protected steel. Columns/beams: 3-4 hours. Floors: 2-3 hours. Used for high-rises and hazardous occupancies. **Moderate fire resistance** — Protected steel or heavy timber. Columns: 2 hours. Used for mid-rise commercial and institutional. **Basic protection** — Masonry bearing walls with protected steel or wood. 1-hour rating throughout. Common for low-rise commercial. **Massive wood members** — Columns min 8" thick, floors min 4". No concealed sp
+[/SLATECAMP_UI_BLOCK]
+
 
 ## 🎯 Learning Goals
 
@@ -24,9 +30,17 @@ By the end of this module, you should be able to:
 
 ## The Real-World Hook
 
-<ArticleMedia id="media-fire-resistive-assembly-cross-section" type="diagram" caption="Cross-section of a building column and floor slab assembly showing fire-resistive ratings: 450 mm RC column for 4-hr, 150 mm slab with 25 mm cover for 4-hr. Callout bubbles for each dimension with corresponding fire rating. Show steel column with concrete encasement (75 mm for 4-hr) vs metal lath + vermiculite plaster (50 mm for 4-hr) side by side." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-fire-resistive-assembly-cross-section", type="diagram", caption="Cross-section of a building column and floor slab assembly showing fire-resistive ratings: 450 mm RC column for 4-hr, 150 mm slab with 25 mm cover for 4-hr. Callout bubbles for each dimension with corresponding fire rating. Show steel column with concrete encasement (75 mm for 4-hr) vs metal lath + vermiculite plaster (50 mm for 4-hr) side by side."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-fire-rating-material-comparison" type="diagram" caption="Bar chart comparing material efficiency (thickness vs fire rating) for partitions, columns, and floor slabs. Show solid concrete (most efficient), solid masonry, and hollow unit masonry (least efficient) at 1-hr, 2-hr, 3-hr, and 4-hr ratings. Highlight the prestressed concrete tendon cover premium (65 mm vs 25 mm RC at 4-hr)." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-fire-rating-material-comparison", type="diagram", caption="Bar chart comparing material efficiency (thickness vs fire rating) for partitions, columns, and floor slabs. Show solid concrete (most efficient), solid masonry, and hollow unit masonry (least efficient) at 1-hr, 2-hr, 3-hr, and 4-hr ratings. Highlight the prestressed concrete tendon cover premium (65 mm vs 25 mm RC at 4-hr)."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 The call comes at 2:47 in the morning. A fire has broken out in the basement parking level of a 20-storey residential condominium in Quezon City. By the time the Bureau of Fire Protection arrives, the blaze has been burning for nearly an hour. Yet the lobby above is still intact. The structural columns are holding. The floor slabs show stress but have not collapsed. Residents on the upper floors are still evacuating safely through the stairwells, which remain passable. The building will survive.
 
@@ -529,9 +543,17 @@ A structural engineer proposes an RC column with a minimum cross-sectional dimen
 
 > **ANSWER: B**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule IV - Fire-Resistive Construction"
+- Text: Per PD 1096, Rule VI, Sec. 603, a reinforced concrete column with all faces exposed requires a minimum dimension of 450 mm for four-hour fire resistance. A Highly Fire Restrictive Zone requires construction assemblies of not less than three to four-hour fire-resistive construction (per Rule V, Sec. 507-c), so the four-hour standard applies. A 300 mm column satisfies the two-hour requirement only. Option A is incorrect — 300 mm is the 2-hour standard; the 1-hour standard is 200 mm. Option C incor
+[/SLATECAMP_UI_BLOCK]
 >
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", title="PD 1096, Rule VI, Sec. 603"
+- Text: LEA Area: Building Technology / Building Laws, Codes, and Ethics — PD 1096, Rule VI, Sec. 603
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -548,7 +570,11 @@ An architect must select a fire protection system for exposed structural steel b
 >
 > Per Sec. 603, for Protection of Metal at 4 hours: concrete encasement requires 75 mm; masonry requires 100 mm; metal lath with vermiculite/perlite gypsum plaster requires 50 mm. The plaster system achieves the required 4-hour rating at the thinnest profile — 50 mm, compared to 75 mm for concrete (50% thicker) and 100 mm for masonry (100% thicker). The key principle is that thermal efficiency is determined by material properties, not by bulk density or perceived robustness. Vermiculite and perlite's microscopic void structure creates excellent thermal insulation at minimal thickness. Option D is wrong because all three materials are tested by the same methodology but achieve different ratings at the same thickness precisely because of their different thermal properties.
 >
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", title="PD 1096, Rule VI, Sec. 603"
+- Text: LEA Area: Building Technology — PD 1096, Rule VI, Sec. 603
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -571,7 +597,11 @@ A solid prestressed concrete floor slab has 40 mm of cover to the prestressing t
 >
 > The maximum achievable rating is **2 hours**. Option A is wrong because 40 mm is exactly the 2-hour standard for prestressed (not "significantly exceeds"), and the overall depth fails the 3-hour and 4-hour requirements. Option B is wrong because 3-hour prestressed cover requires 50 mm (not 40 mm) and the depth is insufficient. Option D mischaracterizes 40 mm as "marginal" — it is precisely the 2-hour standard.
 >
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", title="PD 1096, Rule VI, Sec. 603"
+- Text: LEA Area: Building Technology — PD 1096, Rule VI, Sec. 603
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

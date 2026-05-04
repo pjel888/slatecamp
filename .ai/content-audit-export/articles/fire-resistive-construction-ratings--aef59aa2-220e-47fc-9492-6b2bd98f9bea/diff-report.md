@@ -1,26 +1,26 @@
 # Content Diff Report: fire-resistive-construction-ratings
 
-Generated: 2026-05-04T02:25:34.604Z
+Generated: 2026-05-04T09:13:24.204Z
 Article ID: aef59aa2-220e-47fc-9492-6b2bd98f9bea
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:7120efde03c1763a74e178c8d01d10706ff301d3431313d1e73b900f1228450d`
-- Normalized: `sha256:a2f0595de93f47d8049003fc53e9d11117a01b3bfe1cbc48a61e2ae9931115da`
-- Candidate: `sha256:575f1c5eddca54321b664a9d846c0e613753f7ff87ba28734dca12de10889c0d`
+- Original: `sha256:fbea60808b2356b9deba88ed058c59a6b7d5303de9d650021b5e5ba43dae2684`
+- Normalized: `sha256:3dc4478a61feb7d899fc39d421233bb3bcc4e5f4665a97d56002a1c8ed7967ad`
+- Candidate: `sha256:fbea60808b2356b9deba88ed058c59a6b7d5303de9d650021b5e5ba43dae2684`
 
 ## Line summary
 
-- Changed lines: 484
-- Inserted lines: 14
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
+- UI blocks expected: 7
+- UI blocks preserved: 7
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

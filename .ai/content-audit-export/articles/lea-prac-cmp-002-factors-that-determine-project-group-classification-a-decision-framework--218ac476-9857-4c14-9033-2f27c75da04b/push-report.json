@@ -1,10 +1,11 @@
 {
-  "attempted_at": "2026-05-04T02:16:39.101Z",
+  "attempted_at": "2026-05-04T09:13:19.334Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
   "blockers": [
-    "candidate.md matches original.md; refusing no-op apply."
+    "candidate.md matches original.md; refusing no-op apply.",
+    "ui-blocks.json contains unknown/unparseable blocks; rerun with --force only after manual review."
   ],
   "warnings": [],
   "updated_rows_count": 0,
@@ -13,9 +14,9 @@
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:80e8786f6da9f624ca9ad237a52738df3e4a3cd0b8eb7b701a9555f0a8f07b52",
-  "original_hash": "sha256:80e8786f6da9f624ca9ad237a52738df3e4a3cd0b8eb7b701a9555f0a8f07b52",
-  "candidate_hash": "sha256:80e8786f6da9f624ca9ad237a52738df3e4a3cd0b8eb7b701a9555f0a8f07b52",
+  "remote_hash_before": "sha256:f0d2d94ecb3a551745ead80f102a90f462f5456bb2fcbd5319a4777bc2953ee3",
+  "original_hash": "sha256:f0d2d94ecb3a551745ead80f102a90f462f5456bb2fcbd5319a4777bc2953ee3",
+  "candidate_hash": "sha256:f0d2d94ecb3a551745ead80f102a90f462f5456bb2fcbd5319a4777bc2953ee3",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-04T01:59:45.233507+00:00"
+  "remote_updated_at_before": "2026-05-04T02:41:48.928329+00:00"
 }

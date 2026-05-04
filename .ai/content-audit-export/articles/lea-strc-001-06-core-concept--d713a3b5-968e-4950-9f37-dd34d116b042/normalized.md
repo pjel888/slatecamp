@@ -10,7 +10,11 @@ By the end of this article, you will be able to:
 This topic distinguishes between statically determinate and statically indeterminate structures. The LEA tests whether you understand how support conditions and member arrangements determine which structures can be fully analyzed using equilibrium equations alone. You will NOT be tested on analysis methods (moment distribution, stiffness methods); focus on the concept of static determinacy.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-001-06-core-concept" type="image" caption="Static Determinacy — Determinate vs Indeterminate Comparison" alt="Comparative diagram showing determinate structures (simply supported beam with 2 reactions, n=0; cantilever with 3 reactions, n=0) alongside indeterminate structures (fixed-ended beam with 4 reactions, n=1; continuous beam with 4 supports, n=3). Each structure labeled with reaction count, degree of indeterminacy, and whether settlement causes force redistribution." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-001-06-core-concept", type="image", caption="Static Determinacy — Determinate vs Indeterminate Comparison", description="Comparative diagram showing determinate structures (simply supported beam with 2 reactions, n=0; cantilever with 3 reactions, n=0) alongside indeterminate structures (fixed-ended beam with 4 reactions, n=1; continuous beam with 4 supports, n=3). Each structure labeled with reaction count, degree of indeterminacy, and whether settlement causes force redistribution.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 **Static Determinacy** is the property of a structure that depends on whether the support reactions and internal forces can be completely determined using only the three equations of static equilibrium in 2D:
 
@@ -79,7 +83,11 @@ In Philippine structural design, most buildings use continuous beams and rigid f
 3. **Consequence Recognition:** "A support in a determinate structure settles 5 mm. How are internal forces affected?" — tests understanding (unchanged) vs. indeterminate (changed).
 4. **Analysis Method Implication:** "Which analysis method is required for a fixed-ended beam?" — tests understanding that indeterminate requires more than equilibrium.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Quick Rule — Beam Determinacy:** - **Simply Supported = Determinate** (2 unknowns, 3 equations, geometry stable) - **Cantilever = Determinate** (3 unknowns, 3 equations; perfect match) - **Continuous or Fixed-Ended = Indeterminate** (more than 3 unknowns) - **Degree n = r − 3** (for unknowns r at supports; ignore joint unknowns if properly accounted)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -88,5 +96,13 @@ See also: **Supports** (lea-strc-001-03) for how reaction components affect dete
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing determinacy with stability: A structure can be stable but indeterminate (continuous beam). It can also be determinate but unstable (three collinear supports). Determinacy and stability are separate properties.\",\"Forgetting to count all unknowns: A fixed support has 3 unknowns (Hx, Hy, M), not just 1. A hinge has 2 unknowns. Miscounting leads to wrong determinacy assessment.\",\"Assuming indeterminate structures are better: Indeterminate structures have redundancy, which is good. But they are also sensitive to support movement and thermal effects. Determinate structures are simpler to analyze but have no redundancy.\",\"Ignoring the constraint that n = 0 is stable only if geometry is proper: Three hinges that are collinear form an unstable structure (n = 0 mathematically, but mechanism forms). Geometry and support arrangement matter.\",\"Using the wrong equilibrium equations: In 3D, there are 6 equations of equilibrium. In 2D, there are 3. Applying 3D equations to a 2D problem leads to false indeterminacy counts.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

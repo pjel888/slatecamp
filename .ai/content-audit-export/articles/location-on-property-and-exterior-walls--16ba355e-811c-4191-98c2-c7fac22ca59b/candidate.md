@@ -294,21 +294,17 @@ LEA Area: Building Technology — National Building Code of the Philippines
 
 ---
 
+
+
 ---
+
+
 
 ---
 
 ## Exam Tip
 
 LEA Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 m = 1-hour from interior, 1.0-3.0 m = 1-hour exterior, > 3.0 m = no fire-rating required for exterior walls. The 1.0 m threshold is the most tested distance.
-
-
-
----
-
-## Exam Tip
-
-ALE Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 m = 1-hour from interior, 1.0-3.0 m = 1-hour exterior, > 3.0 m = no fire-rating required for exterior walls. The 1.0 m threshold is the most tested distance.
 
 ## Cross‑References
 
@@ -324,5 +320,3 @@ ALE Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 
 - **Civil Code of the Philippines** — Articles 667-673 (Easement of Light and View); Articles 482, 694-707 (referenced in Rule II, Sec. 215 Abatement)
 - **Republic Act 9514** — Fire Code of the Philippines (Revised Fire Code), relevant to sprinkler requirements and their interaction with opening protection
 - **ASTM E119 / UL 263** — Standard fire tests for building construction materials (referenced as US testing standard applicable to IBC assemblies)
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

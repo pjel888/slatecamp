@@ -1,6 +1,6 @@
 # Content Diff Report: american-colonial-era
 
-Generated: 2026-05-04T02:16:46.496Z
+Generated: 2026-05-04T09:13:25.645Z
 Article ID: 7d26e59b-efc4-4ced-890b-6ec1dfee8254
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:fbe4933082dfea71999e5260e003d1a659c25a09fd55939e2b66619facf826f5`
-- Normalized: `sha256:74ff15c57d2e2326a79377617eb884c1adb8ffe865fba9f122b8ab14507f152f`
+- Normalized: `sha256:d921ca24965a7e5a7e7228377fd94d515d56a263adcaab289dc1511939413ddc`
 - Candidate: `sha256:fbe4933082dfea71999e5260e003d1a659c25a09fd55939e2b66619facf826f5`
 
 ## Line summary

@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application
 
-Generated: 2026-05-04T02:16:44.645Z
+Generated: 2026-05-04T09:13:24.548Z
 Article ID: 7e5be79c-b68f-44ff-8252-ef97874e528d
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:91301539e69f33df67ce2fbee9a39e1bb6fd1e128b8b67c3a44faf65f031ae08`
-- Normalized: `sha256:61c5118bad85f97f09b815444c07c9f1b15701f71830cf2f971617b0afc97995`
-- Candidate: `sha256:91301539e69f33df67ce2fbee9a39e1bb6fd1e128b8b67c3a44faf65f031ae08`
+- Original: `sha256:31ff607f42b4f8c7af2964b472804d63dde81d2e19532abad90892068159c822`
+- Normalized: `sha256:e1fb59751178edf2008ec7ddfdda8f6c339bfcc5dd324e5fd58db5da64a3121a`
+- Candidate: `sha256:31ff607f42b4f8c7af2964b472804d63dde81d2e19532abad90892068159c822`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

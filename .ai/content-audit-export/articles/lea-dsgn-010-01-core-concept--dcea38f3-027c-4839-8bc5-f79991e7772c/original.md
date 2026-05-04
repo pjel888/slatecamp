@@ -10,9 +10,16 @@ Parking requirements determine the minimum number of vehicle spaces a building m
 Parking demand scales with building use. The National Building Code (NBC) prescribes minimum ratios—expressed as spaces per unit, per square meter of floor area, or per occupancy measure—that reflect typical peak demand. These ratios balance operational feasibility against public policy, such as reducing on-street parking pressure.
 
 The primary calculation formula is:
-**Total Parking Slots = Σ(Use Type × Ratio) + Accessible Spaces** 
+<FormulaBlock
+  label="Parking Calculation — Mixed-Use NBC Method"
+  steps={[
+    { variable: "Total Slots", operator: "=", operands: ["Σ(Use Type ÷ Ratio)", "Accessible Spaces"] },
+    { variable: "Office", operator: "=", operands: ["800 m²", "125 m²/slot"], comment: "6.4 → 7 slots" },
+    { variable: "Restaurant", operator: "=", operands: ["200 m² dining", "30 m²/slot"], comment: "6.7 → 7 slots" },
+  ]}
+/>
 
-### Worked Example: Mixed-Use Development
+
 
 A proposed building contains:
 
@@ -94,8 +101,8 @@ An office building requires only 48 slots by GFA. How many accessible spaces are
 - Answer: **2 slots**. Even though 1% of 48 is 0.48, the law mandates a minimum of 2.
 
 **Exam Tip — ERR-DSGN-013:** Parking minimums are per PD 1096 Rule XVIII and local zoning ordinances, not the same nationwide. Accessible stalls must be provided at a minimum of 1 per 50 standard stalls (BP 344).
-<ArticleMedia id="media-lea-dsgn-010-01-core-concept" a type="image" caption="Parking Lot Layout — 90°, 60°, and Parallel Parking Configurations" description="Plan diagrams comparing parking configurations: 90° (standard, high density, 2.5m × 5.0m), 60° (angled, narrower aisle), and parallel (curbside). Minimum aisle widths for each angle, accessible stall dimensions (3.7m × 5.0m), and compact car stall allowances labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
-<ArticleMedia id="media-lea-dsgn-010-01-core-concept" a type="image" caption="Parking Ratio Reference — NBC Minimum Parking Requirements by Occupancy" description="Reference infographic showing minimum parking ratios per PD 1096 Section 803: residential (1 slot/unit), hotel de luxe (1 slot/room), office (1 slot/100 sqm), retail (1 slot/50 sqm), assembly (1 slot/10 seats). Accessible parking allocation (1 per 50, min. 1 at 3.7m × 5.0m) and compact stall dimensions noted." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-01-core-concept" type="image" caption="Parking Lot Layout — 90°, 60°, and Parallel Parking Configurations" alt="Plan diagrams comparing parking configurations: 90° (standard, high density, 2.5m × 5.0m), 60° (angled, narrower aisle), and parallel (curbside). Minimum aisle widths for each angle, accessible stall dimensions (3.7m × 5.0m), and compact car stall allowances labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-01-core-concept" type="image" caption="Parking Ratio Reference — NBC Minimum Parking Requirements by Occupancy" alt="Reference infographic showing minimum parking ratios per PD 1096 Section 803: residential (1 slot/unit), hotel de luxe (1 slot/room), office (1 slot/100 sqm), retail (1 slot/50 sqm), assembly (1 slot/10 seats). Accessible parking allocation (1 per 50, min. 1 at 3.7m × 5.0m) and compact stall dimensions noted." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

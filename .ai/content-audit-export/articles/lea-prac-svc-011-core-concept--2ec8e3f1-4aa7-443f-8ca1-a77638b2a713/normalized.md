@@ -42,12 +42,28 @@ Consulting service compensation reflects the consultant's expertise level, engag
 Consulting services create opportunities for structured knowledge transfer through mentoring, training, and collaborative project work. Documentation of methodologies, processes, and technical decisions supports long-term institutional learning. Regular meetings and reviews facilitate communication and ensure alignment with project objectives. Successful consulting relationships establish foundations for ongoing professional relationships and future collaboration opportunities.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Initiation — Client consultation and scope definition Proposal — Fee structure and contract execution Service Delivery — Performance per SPP document Completion — Turnover and documentation
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

@@ -24,11 +24,19 @@ The integrated settlement development approach emerged from recognition that hou
 **Disaster Risk Reduction:** Post-Yolanda (2013) and post-COVID frameworks emphasize resilience. Settlements must account for typhoon, flood, and seismic hazards. Post-Yolanda no-build zones (40m from mean high tide) reshape coastal settlement patterns. Climate-aware settlement planning is now mandatory in CLUP requirements under **RA 10121** (DRRM Act).
 
 Human settlements development, at its core, views housing as a vector for achieving integrated community well-being—economic, social, environmental, and institutional—rather than as a supply shortage to be solved through construction volume alone.
-<ArticleMedia id="media-lea-plan-003-05-core-concept" type="image" caption="Human Settlements Framework — Housing Within a Holistic System" alt="Radial ecosystem diagram showing housing at center within: livelihood/employment, basic services (water, power, sanitation), infrastructure (roads, drainage, transport), community institutions (schools, health centers, markets). Carrying capacity limits for settlement planning." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-003-05-core-concept", type="image", caption="Human Settlements Framework — Housing Within a Holistic System", description="Radial ecosystem diagram showing housing at center within: livelihood/employment, basic services (water, power, sanitation), infrastructure (roads, drainage, transport), community institutions (schools, health centers, markets). Carrying capacity limits for settlement planning.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="[", Settlement=true, Component=true, What=true, It=true, Requires=true, Philippine=true, Mechanism=true, rows="[[", Infrastructure=true, Water=true, sanitation=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -52,7 +60,11 @@ The shift is from "housing as construction" toward "housing as integrated commun
 
 **Pattern 3 — Sustainability Constraints:** "A proposed settlement in a flood-prone area faces what primary integrated planning challenge?" → Not just housing design, but infrastructure resilience, livelihood vulnerability, and carrying capacity. Test integrates environmental and social factors.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Human settlements = integrated system: housing + infrastructure + livelihood + services + governance + sustainability. In-situ upgrading preserves existing community systems.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** A human settlement is NOT just housing. It requires: land use, infrastructure, livelihood, social services, and community institutions. The LEA tests whether you recognize that settlements are holistic systems, not just shelter.
 
@@ -62,4 +74,8 @@ See **LEA-PLAN-003-04** (Housing Production) for delivery methods, **LEA-PLAN-00
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Treating human settlements development as synonymous with housing production (they are different: one is integrated; one is just construction)\",\"Assuming relocation is always safer than in-situ upgrading (relocation can be more harmful to livelihoods and community cohesion)\",\"Forgetting that livelihood access is a core settlement component (not peripheral; central to survival)\",\"Neglecting disaster risk in settlement planning (climate/seismic hazards now mandatory CLUP components)\",\"Believing CMP is just another housing finance program (it is fundamentally a settlement preservation and community development approach)\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

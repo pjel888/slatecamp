@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:06:54.510Z",
+  "attempted_at": "2026-05-04T08:50:07.853Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
   "slug": "topography-and-slope-analysis",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:c1d9553079d1b8197ab8e0b82e99a9c7e670b6d4dbaba1d7caf43821fdf12833",
-  "original_hash": "sha256:1240d85103ef58e5c4cf0240f9d574cf3b0fc3f21d175ab283cc548bea427dd2",
-  "candidate_hash": "sha256:c1d9553079d1b8197ab8e0b82e99a9c7e670b6d4dbaba1d7caf43821fdf12833",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:583b79c68802fba61daa7847cf513d3be4a2db60a1a9891357c2a8a646eeea10",
+  "original_hash": "sha256:c1d9553079d1b8197ab8e0b82e99a9c7e670b6d4dbaba1d7caf43821fdf12833",
+  "candidate_hash": "sha256:11e34a1c189a0ba5e2df2e7e24bc1eb66c2ffbe19adbe5f49c17aeaf2c0b9924",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T02:01:27.081345+00:00"
+  "remote_updated_at_before": "2026-05-04T02:41:52.00009+00:00"
 }

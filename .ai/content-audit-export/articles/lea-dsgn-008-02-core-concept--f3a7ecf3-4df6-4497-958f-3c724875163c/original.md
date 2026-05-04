@@ -18,7 +18,7 @@ In Philippine practice under **RA 9514** and **PD 1096**, separation requirement
 - **Standard Corridors:** Serving multiple tenancies require 1-hour minimum walls. 
 
 The design principle is proportional risk: a stairwell is protected more heavily (2-hour) because it serves as a continuous vertical evacuation route; an office corridor is protected less (1-hour) because occupants have more immediate access to multiple exit paths. 
-<ArticleMedia id="media-lea-dsgn-008-02-core-concept" a type="image" caption="Fire-Rated Separation — Wall and Floor Assembly Ratings" description="Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-008-02-core-concept" type="image" caption="Fire-Rated Separation — Wall and Floor Assembly Ratings" description="Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -57,7 +57,7 @@ A multi-story office building has a central exit stair. The exam states the stai
 A 2-hour fire-rated **Occupancy Separation** wall is provided. What is the required rating for a fire door in that specific wall?
 
 - **Answer:** 1.5-hour. (Per PD 1096, openings in 2-hour _occupancy separations_ require 1.5-hour assemblies, but standard _exit stair doors_ only require 1-hour). 
-<ArticleMedia id="media-lea-dsgn-008-02-core-concept" a type="image" caption="Fire-Resistive Construction — Hourly Ratings by Building Element" description="Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-008-02-core-concept" type="image" caption="Fire-Resistive Construction — Hourly Ratings by Building Element" description="Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

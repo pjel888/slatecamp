@@ -1,36 +1,14 @@
 {
   "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
   "slug": "lea-strc-009-02-core-concept",
-  "generated_at": "2026-05-01T13:33:43.361Z",
+  "generated_at": "2026-05-04T09:10:35.417Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 1,
-  "unknown_block_count": 1,
+  "warning_count": 0,
+  "unknown_block_count": 0,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [
-    {
-      "block_id": "ui_0002",
-      "component_name": "WikiExamTable",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0002",
-      "component_name": "WikiExamTable",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:e694de012d6f77f230eff8ce7048c972cf00e6d6cedb24e10167819f6f9d017c",
-      "line_start": 25,
-      "line_end": 25,
-      "warnings": [
-        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
+  "warnings": [],
+  "unknown_blocks": [],
   "critical_blocks": []
 }

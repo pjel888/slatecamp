@@ -9,7 +9,11 @@ Landscape design transforms outdoor spaces through the strategic integration of 
 Landscape design is the profession and practice of designing outdoor spaces—parks, gardens, streetscapes, campuses, and larger land areas. Unlike architecture, which focuses on buildings, landscape design shapes the land itself and manages the relationship between the built and natural environments. In the Philippines, landscape design responds to tropical climate, diverse ecosystems, and the need for water-efficient design.
 
 **Key distinction:** Landscape design differs from landscape architecture. Landscape design is the conceptual and aesthetic process; landscape architecture is the licensed profession regulated under the scope of practice for architects.
-<ArticleMedia id="media-lea-plan-005-01-what-you-need-to-know-fo" type="image" caption="Hardscape vs. Softscape — Landscape Element Comparison Diagram" alt="Side-by-side comparison of hardscape and softscape elements: Hardscape (paving, walls, water features, lighting, seating, structures — permanent, defines boundaries, supports programs) vs. Softscape (turf, trees, shrubs, groundcovers, soil, water bodies — living, provides ecology, shade, habitat). Diagram shows balanced composition with Philippine tropical examples." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-005-01-what-you-need-to-know-fo", type="image", caption="Hardscape vs. Softscape — Landscape Element Comparison Diagram", description="Side-by-side comparison of hardscape and softscape elements: Hardscape (paving, walls, water features, lighting, seating, structures — permanent, defines boundaries, supports programs) vs. Softscape (turf, trees, shrubs, groundcovers, soil, water bodies — living, provides ecology, shade, habitat). Diagram shows balanced composition with Philippine tropical examples.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Hardscape and Softscape Components
 
@@ -49,10 +53,18 @@ Site grading is the process of reshaping the land to establish proper drainage, 
 3. **Terracing and retaining walls:** On sloped sites, terracing creates level platforms for buildings or plazas. Retaining walls hold soil on slopes.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 
 4. **Existing topography:** Grade plans must respect existing slopes and watershed patterns. Steep cuts and fills are costly and cause erosion.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 5. **Grading plans notation:** Site plans show contour lines and spot elevations to communicate the intended landform to contractors.
 
 ### Planting Design Principles
@@ -75,9 +87,17 @@ Planting design selects plant species and arranges them to achieve functional an
 
 Xeriscaping is landscape design that minimizes water use through plant selection and efficient irrigation management. The prefix "xero-" means dry. Xeriscaping is not about creating dry, barren landscapes—it is about creating beautiful landscapes that use water efficiently by choosing appropriate plants and design strategies.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.
+[/SLATECAMP_UI_BLOCK]
 **Core xeriscaping principles:**
 
 1. **Native and adapted species:** Drought-tolerant native plants survive with natural rainfall and need no supplemental watering once established. Native species are ecologically beneficial, requiring no fertilizers or pesticides.
@@ -93,7 +113,11 @@ Xeriscaping is landscape design that minimizes water use through plant selection
 6. **Permeable surfaces:** Permeable pavement (permeable pavers, porous asphalt) allows water to infiltrate into soil rather than running off, reducing flooding and recharging groundwater.
 
 **Philippine application:** In the Philippines, xeriscaping using native, drought-tolerant species is increasingly important for resilience to climate variability and water scarcity. Cities adopting water-efficient design reduce stormwater flooding and municipal water demand.
-<ArticleMedia id="media-lea-plan-005-01-what-you-need-to-know-fo" type="image" caption="Xeriscaping Principles — Water-Efficient Landscape Design Diagram" alt="Six-panel illustration of xeriscaping principles: (1) Native and adapted species — drought-tolerant Philippine natives; (2) Hydrozoning — group plants by water needs; (3) Soil improvement — organic mulch reduces evaporation 50%+; (4) Drip irrigation — 30-50% water savings vs spray; (5) Reduced turf areas — replace with native groundcovers; (6) Permeable surfaces — allow infiltration, reduce flooding. Philippine tropical context annotations." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0006 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-005-01-what-you-need-to-know-fo", type="image", caption="Xeriscaping Principles — Water-Efficient Landscape Design Diagram", description="Six-panel illustration of xeriscaping principles: (1) Native and adapted species — drought-tolerant Philippine natives; (2) Hydrozoning — group plants by water needs; (3) Soil improvement — organic mulch reduces evaporation 50%+; (4) Drip irrigation — 30-50% water savings vs spray; (5) Reduced turf areas — replace with native groundcovers; (6) Permeable surfaces — allow infiltration, reduce flooding. Philippine tropical context annotations.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### The Philippine National Tree: Narra
 
@@ -101,9 +125,17 @@ The **Narra** (_Pterocarpus indicus_) is the national tree of the Philippines. N
 
 ### Summary
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0008 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
 
 Landscape design integrates hardscape and softscape elements through knowledge of grading, planting composition, and water efficiency. Native species selection and xeriscaping principles are fundamental to creating resilient, beautiful, and ecologically beneficial outdoor spaces in the Philippine context. Understanding these fundamentals prepares planners and architects to design landscapes that serve both human needs and ecological health.
 

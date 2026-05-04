@@ -43,6 +43,7 @@ The architect does not guarantee construction costs, nor assume professional res
 
 </Callout>
 
+
 ***
 
 ## Scope of Services: The Six Phases
@@ -95,6 +96,7 @@ The completion of the Contract Document Phase represents **90% of the architect'
 
 </Callout>
 
+
 ### Phase 5: Bidding or Negotiation Phase
 
 In this phase, the architect:
@@ -116,6 +118,7 @@ All Bid Documents are the **intellectual property of the Architect** under Sec. 
 
 </Callout>
 
+
 ### Phase 6: Construction Phase
 
 During construction, the architect:
@@ -131,6 +134,7 @@ During construction, the architect:
 The architect is **not required to make exhaustive or continuous 8-hour on-site supervision** to check the quality of work. The architect shall not be held responsible for the contractor's failure to carry out construction work in accordance with the Contract Documents.
 
 </Callout>
+
 
 If the owner requires full-time (8-hour) construction supervision, a **separate full-time supervisor** shall be hired and agreed upon under the conditions of **SPP Document 204-A (Fulltime Supervision Services)**.
 
@@ -150,6 +154,7 @@ If the owner requires full-time (8-hour) construction supervision, a **separate 
 | **6. Construction** | Site visits, change orders, Certificates of Payment | Final Certificate for Payment |
 
 </ComparisonTable>
+
 
 ***
 
@@ -184,6 +189,7 @@ Professional architectural work is classified according to the **degree of compl
 
 </ComparisonTable>
 
+
 ***
 
 ## Minimum Basic Fee Schedule
@@ -202,6 +208,7 @@ The architect's fee for Regular Design Services is primarily computed as a **Per
 
 </ComparisonTable>
 
+
 ### Groups 4–9 (Fixed or Special Rate Structures)
 
 <ComparisonTable>
@@ -217,6 +224,7 @@ The architect's fee for Regular Design Services is primarily computed as a **Per
 | **Group 10** (Opinion/Advice) | Per diem, honorarium, or agreed fee — no construction cost basis applicable |
 
 </ComparisonTable>
+
 
 ***
 
@@ -254,6 +262,7 @@ Five methods of compensation apply to Regular Design Services:
 | **Mixed Methods** | Complex, multi-phase projects | Combination of above methods |
 
 </ComparisonTable>
+
 
 ***
 
@@ -350,23 +359,15 @@ All signboards placed at the project site during construction must be **approved
 
 ---
 
+
+
 ---
 
 ## Exam Tip
 
 LEA Swipe: SPP 202 five phases and fee percentages: SD (Phase 1) = 15% of basic fee | DD (Phase 2) = 20% | CD (Phase 3) = 30% (largest single phase) | Bidding (Phase 4) = 5% (smallest) | CA (Phase 5) = 30%. The 15-20-30-5-30 percentage sequence is the most tested fee allocation on the exam.
 
-
-
----
-
-## Exam Tip
-
-ALE Swipe: SPP 202 five phases and fee percentages: SD (Phase 1) = 15% of basic fee | DD (Phase 2) = 20% | CD (Phase 3) = 30% (largest single phase) | Bidding (Phase 4) = 5% (smallest) | CA (Phase 5) = 30%. The 15-20-30-5-30 percentage sequence is the most tested fee allocation on the exam.
-
 ## Cross‑References
 
 **Spp Doc 201 Pre Design Services**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 206 Comprehensive Architectural Services**
 
-
-<!-- no-media-needed: SPP document reference, service scope text is optimal -->

@@ -11,11 +11,11 @@ The derivation: cross-sectional area = πD²/4 (in mm²). Weight per meter = (π
 In Philippine projects, the quantity takeoff lists total meters of each rebar size, often cross-referenced with reinforcement drawings. The weight is then summed across all diameters to calculate total steel cost. Standard 12-meter rebar lengths are common in the Philippines, with lapped splices accounting for additional waste (typically 1.3 to 1.5× the design length).
 
 
-<ArticleMedia id="media-rebar-weight-chart" layout="single" type="image" status="placeholder"
-  alt="Reference chart showing rebar sizes (10mm through 40mm or #3 through #14) with nominal diameter, area, and weight per linear meter"
-  caption="Future chart: rebar size reference — diameter, cross-sectional area, and weight per linear meter"
-  suggestedAsset="Reference table with rebar size cross-section illustrations"
-  placementIntent="Provides quick reference for rebar weight conversion" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-rebar-weight-chart", layout="single", type="image", status="placeholder", alt="Reference chart showing rebar sizes (10mm through 40mm or #3 through #14) with nominal diameter, area, and weight per linear meter", caption="Future chart: rebar size reference — diameter, cross-sectional area, and weight per linear meter", suggestedAsset="Reference table with rebar size cross-section illustrations", placementIntent="Provides quick reference for rebar weight conversion"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -34,16 +34,24 @@ In Philippine projects, the quantity takeoff lists total meters of each rebar si
 
 ## Worked Examples
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Scenario 1: Slab reinforcement requiring 500 meters of 12 mm rebar** **Step 1: Determine unit weight for 12 mm rebar** Using the formula: Weight per meter = D² ÷ 162.5 = (12)² ÷ 162.5 = 144 ÷ 162.5 = 0.886 kg/m ≈ 0.88 kg/m **Step 2: Calculate total weight** Total weight = Length × weight per meter = 500 m × 0.88 kg/m = 440 kg **Step 3: Convert to number of standard bars (12 m per bar, no waste)** Number of bars = 500 m ÷ 12 m/bar = 41.67 bars ≈ 42 bars (round up) **Step 4: Estimate cost (assum
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Scenario 2: Column reinforcement requiring 300 meters of 20 mm rebar plus splices (30% waste factor for lapping)** **Step 1: Design length with splice waste** Design length = 300 m (per drawing) Total length with 30% waste: 300 m × 1.30 = 390 m **Step 2: Determine weight per meter for 20 mm rebar** Weight per meter = (20)² ÷ 162.5 = 400 ÷ 162.5 = 2.462 kg/m ≈ 2.46 kg/m **Step 3: Calculate total weight** Total weight = 390 m × 2.46 kg/m = 959.4 kg ≈ 960 kg **Step 4: Number of standard 12 m bars
+[/SLATECAMP_UI_BLOCK]
 
 
-<ArticleMedia id="media-rebar-estimation-example" layout="single" type="image" status="placeholder"
-  alt="Step-by-step rebar estimation example showing bar sizing, weight conversion, spacing, lap splice, and total tonnage calculation for a reinforced concrete beam"
-  caption="Future diagram: rebar estimation worked example — sizing, weight, spacing, and lap splice"
-  suggestedAsset="Step-by-step illustrated calculation example"
-  placementIntent="Provides practical example of rebar quantity estimation" />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-rebar-estimation-example", layout="single", type="image", status="placeholder", alt="Step-by-step rebar estimation example showing bar sizing, weight conversion, spacing, lap splice, and total tonnage calculation for a reinforced concrete beam", caption="Future diagram: rebar estimation worked example — sizing, weight, spacing, and lap splice", suggestedAsset="Step-by-step illustrated calculation example", placementIntent="Provides practical example of rebar quantity estimation"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Quick Reference: Rebar Weight Calculation Table
 
 | Diameter (mm) | Weight per Meter (kg/m) | Weight per 12 m Bar (kg) | Common Applications |
@@ -79,19 +87,43 @@ On the LEA, rebar questions focus on:
 
 6. **Mixed sizes**: Sum weights from multiple diameters used in the same project.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory aid**: The formula D² ÷ 162.5 is universal for all rebar sizes. The constant 162.5 encodes steel density and unit conversions. For quick estimation, remember key weights: 12 mm ≈ 0.9 kg/m, 16 mm ≈ 1.6 kg/m, 20 mm ≈ 2.5 kg/m. Standard bars are 12 meters long.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Using 160 or other approximations instead of 162.5 in the denominator", correction="Always use 162.5 for accuracy. Approximations like 160 introduce 1–2% error across large projects."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Forgetting to apply the splice/waste factor", correction="Design length on drawings does NOT include splice waste. Multiply by 1.30–1.50 depending on the specified lap length and cutting waste."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Using the weight per bar instead of weight per meter when the total length is given", correction="When you have total meters of rebar, use weight per meter directly: Total meters × kg/m. Do NOT divide by 12 first."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0009 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Assuming all bar diameters weigh the same per meter", correction="Weight per meter depends on diameter squared (D²). A 20 mm bar weighs approximately 4 times more per meter than a 10 mm bar."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing diameter in inches vs. millimeters (use mm in the formula)\", \"Forgetting that standard Philippine bar length is 12 m, not 6 m or other lengths\", \"Adding waste factor to weight instead of to length (waste applies to length, then calculate weight)\", \"Double-counting rebar by including splice waste AND standard 5% site waste\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

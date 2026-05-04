@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-013-fees-for-abandoned-projects-and-partial-services-protecting-the-architect-s-compensation
 
-Generated: 2026-05-04T02:16:31.632Z
+Generated: 2026-05-04T09:13:13.063Z
 Article ID: eee5c71f-539a-4ec8-a8b2-66e330a0c444
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:9888807457f249358f6d26b0ad0e1aa61f56f5f8a1fadaacb68f7a4365a782ef`
-- Normalized: `sha256:7a5da6cb177027bf3fe2736cdb6734735e6f2f3da08992f39bcb3ef37fb6f2d9`
+- Normalized: `sha256:c9ff36dc6ab178ac0193c555f6f112c74ea48d534d2c8daa606f494662c8408e`
 - Candidate: `sha256:9888807457f249358f6d26b0ad0e1aa61f56f5f8a1fadaacb68f7a4365a782ef`
 
 ## Line summary
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

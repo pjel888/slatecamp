@@ -1,19 +1,21 @@
 {
-  "attempted_at": "2026-05-04T02:25:50.420Z",
+  "attempted_at": "2026-05-04T09:14:09.191Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
   "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+    "candidate.md matches original.md; refusing no-op apply."
   ],
   "warnings": [],
   "updated_rows_count": 0,
   "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
   "slug": "certificate-of-occupancy",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:997210a9127a88e6ef45777ad9ef9de7036adc9f5e17dc6ac6d14e62287c2f48",
-  "original_hash": "sha256:997210a9127a88e6ef45777ad9ef9de7036adc9f5e17dc6ac6d14e62287c2f48",
-  "candidate_hash": "sha256:246f5db0a43e9ec01fef6aeab823d25aebbe081d3c8b27ebb222bb367a9a4806",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:5723bf9f6a2c759b978e56f74a3513e47b8fe8de7ee14f5bbf4985e75ffc518e",
+  "original_hash": "sha256:5723bf9f6a2c759b978e56f74a3513e47b8fe8de7ee14f5bbf4985e75ffc518e",
+  "candidate_hash": "sha256:5723bf9f6a2c759b978e56f74a3513e47b8fe8de7ee14f5bbf4985e75ffc518e",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T14:19:00.511118+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:14.822438+00:00"
 }

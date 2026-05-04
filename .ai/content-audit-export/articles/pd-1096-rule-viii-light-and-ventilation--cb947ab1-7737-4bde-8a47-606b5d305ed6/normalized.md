@@ -7,9 +7,17 @@
 
 ## Schema Activation: Why This Rule Matters
 
-<ArticleMedia id="media-room-volume-ventilation-diagram" type="diagram" caption="3D room diagram showing the four Rule VIII buckets: Footprint (6-3-1.2 sqm floor areas), Volume (2.70/2.40/2.10 m ceiling heights), Lungs (10% window area free opening), Atmosphere (14/12/3 cu.m air space per person). Label each bucket with its governing section and mnemonic. Show air flow arrows from window through room." />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-pd-1096-rule-viii-light-and-ve-0", name="room-volume-ventilation-diagram", type="diagram", caption="3D room diagram showing the four Rule VIII buckets: Footprint (6-3-1.2 sqm floor areas), Volume (2.70/2.40/2.10 m ceiling heights), Lungs (10% window area free opening), Atmosphere (14/12/3 cu.m air space per person). Label each bucket with its governing section and mnemonic. Show air flow arrows from window through room."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-window-free-area-calculation" type="diagram" caption="Diagram showing window opening free area calculation: gross window vs operable portion vs free area (deduct frame, fixed mullions, grilles). Show a room floor plan with 10% calculation: 25 sqm room → 2.50 sqm free area needed. Include the 1.00 sqm absolute minimum callout and the 5% / 0.24 sqm wet-area alternative." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-pd-1096-rule-viii-light-and-ve-1", name="window-free-area-calculation", type="diagram", caption="Diagram showing window opening free area calculation: gross window vs operable portion vs free area (deduct frame, fixed mullions, grilles). Show a room floor plan with 10% calculation: 25 sqm room → 2.50 sqm free area needed. Include the 1.00 sqm absolute minimum callout and the 5% / 0.24 sqm wet-area alternative."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -67,7 +75,11 @@ Sec. 805 distinguishes **natural** vs **artificial** ventilation and adds a spec
 
 Sec. 805 also provides a **cascading pattern** for multi-storey, artificially ventilated buildings: first storey minimum **2.70 m**, second storey **2.40 m**, succeeding storeys **2.10 m** clear headroom. For rooms with natural ventilation, the ceiling height minimum remains **2.70 m** on all floors. Mezzanines require **1.80 m** clear height above and below.[file:17][file:18]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VIII - Light and Ventilation"
+- Text: If a question explicitly refers to the “multi-storey artificial ventilation” example from your review materials, remember the pattern commonly taught: ground floor 2.70 m, second 2.40 m, upper floors 2.10 m headroom; but for direct Code citation, quote the 2.70 m (natural) and 2.40 m (artificial) minimums in Sec. 805.[file:17][file:18]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

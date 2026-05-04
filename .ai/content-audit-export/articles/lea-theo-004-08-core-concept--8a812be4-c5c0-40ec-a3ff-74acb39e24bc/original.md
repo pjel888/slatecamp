@@ -7,7 +7,7 @@ Explain how Philippine latitude (5-20°N) determines solar altitude angles by se
 
 ### Solar Geometry Fundamentals
 
-<ArticleMedia id="media-lea-theo-004-08-core-concept" a type="image" caption="Sun Path Analysis for Philippine Latitudes (5°N–20°N)" description="Sun path diagram (stereographic projection) for Manila at 14.6°N latitude showing: Three seasonal paths — summer solstice (June 21, max altitude 79.5°), equinox (Mar/Sep, altitude 69°), winter solstice (Dec 21, altitude 59.5°). Hour lines from 6 AM to 6 PM. Shading mask overlay showing which facade orientations receive direct sun at which times. A callout compares Philippine sun angles with temperate latitudes (40°N) to highlight the difference — Philippine sun is always high, never dipping below 59.5° at noon even in winter." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-theo-004-08-core-concept" type="image" caption="Sun Path Analysis for Philippine Latitudes (5°N–20°N)" description="Sun path diagram (stereographic projection) for Manila at 14.6°N latitude showing: Three seasonal paths — summer solstice (June 21, max altitude 79.5°), equinox (Mar/Sep, altitude 69°), winter solstice (Dec 21, altitude 59.5°). Hour lines from 6 AM to 6 PM. Shading mask overlay showing which facade orientations receive direct sun at which times. A callout compares Philippine sun angles with temperate latitudes (40°N) to highlight the difference — Philippine sun is always high, never dipping below 59.5° at noon even in winter." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Solar Geometry Fundamentals
 

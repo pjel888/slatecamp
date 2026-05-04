@@ -98,7 +98,7 @@ Material choices vary by region: stone in the Levant, brick in Mesopotamia and P
 
 **Hypostyle Mosque** — A mosque plan in which the prayer hall uses columns to support the roof; common in early Islamic and Umayyad periods.
 
-<ArticleMedia id="media-hist-004-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Islamic architectural dynasties (7th–19th centuries) tracing the evolution from Umayyad hypostyle mosques through Abbasid brick construction, Andalusian horseshoe arches, Ottoman domes, Mughal mausoleums, and Safavid tilework, with key regional characteristics.\" caption=\"Islamic Architecture — Dynastic Timeline and Regional Styles\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-004-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Islamic architectural dynasties (7th–19th centuries) tracing the evolution from Umayyad hypostyle mosques through Abbasid brick construction, Andalusian horseshoe arches, Ottoman domes, Mughal mausoleums, and Safavid tilework, with key regional characteristics." caption="Islamic Architecture — Dynastic Timeline and Regional Styles" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

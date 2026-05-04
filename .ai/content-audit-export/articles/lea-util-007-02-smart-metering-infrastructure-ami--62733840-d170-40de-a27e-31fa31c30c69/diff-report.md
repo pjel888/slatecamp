@@ -1,15 +1,15 @@
 # Content Diff Report: lea-util-007-02-smart-metering-infrastructure-ami
 
-Generated: 2026-05-04T02:17:22.708Z
+Generated: 2026-05-04T09:13:45.902Z
 Article ID: 62733840-d170-40de-a27e-31fa31c30c69
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:0234f468db3f05d389e7b2123e734e6ffe1fcb616e50d8b7c7d5a33c490bd9c5`
-- Normalized: `sha256:dfd33b9475b03673ef317f038b51cc91906cb852e8180235e21295105fd411ea`
-- Candidate: `sha256:0234f468db3f05d389e7b2123e734e6ffe1fcb616e50d8b7c7d5a33c490bd9c5`
+- Original: `sha256:228e3b5bea96bdd98d433199ecb1839d35c3a56cbf106d48697c19ef1436791d`
+- Normalized: `sha256:5c6c8306cd84cda79ebc113699893a60ca7004b08450b24862c5166bf9bda011`
+- Candidate: `sha256:228e3b5bea96bdd98d433199ecb1839d35c3a56cbf106d48697c19ef1436791d`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 8
-- UI blocks preserved: 8
+- UI blocks expected: 9
+- UI blocks preserved: 9
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

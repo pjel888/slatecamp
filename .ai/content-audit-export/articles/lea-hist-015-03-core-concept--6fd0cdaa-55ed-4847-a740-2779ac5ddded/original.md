@@ -79,7 +79,7 @@ Questions ask how contemporary architects incorporate Māori principles into mod
 
 **Treaty of Waitangi** — 1840 agreement between British Crown and Māori chiefs; systematically breached; foundational to understanding Māori historical dispossession and contemporary cultural reassertion.
 
-<ArticleMedia id="media-hist-015-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of three traditional Māori building types: whare (domestic dwelling, timber and thatch), wharenui (meeting house, richly carved facade, ridgepole), and pā (fortified settlement, palisaded defensive terraces), showing social function and spatial organization.\" caption=\"Māori Architecture — Whare, Wharenui, Pā\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-015-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of three traditional Māori building types: whare (domestic dwelling, timber and thatch), wharenui (meeting house, richly carved facade, ridgepole), and pā (fortified settlement, palisaded defensive terraces), showing social function and spatial organization." caption="Māori Architecture — Whare, Wharenui, Pā" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

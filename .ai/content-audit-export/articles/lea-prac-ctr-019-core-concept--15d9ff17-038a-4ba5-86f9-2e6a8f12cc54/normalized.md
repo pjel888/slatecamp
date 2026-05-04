@@ -53,16 +53,28 @@ The distinction between Substantial Completion (architect's certificate) and Cer
 **Question Pattern 5:** As-built documentation—What architect responsibility exists regarding as-built drawings and testing documentation required for occupancy? (Tests architect's coordination and documentation duties)
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember: Certificate of Occupancy is government permit from Building Official = owner can legally occupy. Architect's Substantial Completion certificate = construction contract milestone. Different authorities, different criteria. Architect must ensure design and construction comply with code so occupancy inspection does not reveal defects.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes=true, Assuming=true, architect=true, s=true, Substantial=true, Completion=true, certificate=true, authorizes=true, occupancy=true, Only=true, the=true, government=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 
 
-<ArticleMedia type="image" caption="Delay and Extension of Time — Event Classification and Notice Requirements" alt="Decision tree for delay events: Is delay excusable (owner-caused, force majeure) or non-excusable (contractor-caused)? Timelines showing: Excusable delays → Extension of Time granted, No liquidated damages. Non-excusable delays → Liquidated damages, No EOT. Notice requirement timeline: Contractor must notify architect within specified period (typically 7-14 days) with documentation." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-ctr-019-core-concept-0", type="image", caption="Delay and Extension of Time — Event Classification and Notice Requirements", description="Decision tree for delay events: Is delay excusable (owner-caused, force majeure) or non-excusable (contractor-caused)? Timelines showing: Excusable delays → Extension of Time granted, No liquidated damages. Non-excusable delays → Liquidated damages, No EOT. Notice requirement timeline: Contractor must notify architect within specified period (typically 7-14 days) with documentation."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

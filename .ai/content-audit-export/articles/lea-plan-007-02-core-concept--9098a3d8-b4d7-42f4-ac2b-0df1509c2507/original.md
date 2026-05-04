@@ -18,7 +18,7 @@ DHSUD's three primary functions:
 3. **Policy formulation and dispute resolution:** DHSUD formulates national housing policy, issues implementing rules and regulations (IRR), and handles complaints and disputes involving developers, buyers, and housing programs.
 
 **Historical context:** The Housing and Land Use Regulatory Board (HLURB), created in 1987, was the regulatory body for developers. The Housing and Urban Development Coordinating Council (HUDCC), created in 1992, coordinated inter-agency housing policy. These two bodies were merged into DHSUD under RA 11201 (2019) to consolidate housing governance. When reading older reference materials, "HLURB" now means "DHSUD."
-<ArticleMedia id="media-lea-plan-007-02-core-concept" a type="image" caption="DHSUD Organizational Structure — Regulatory and Policy Role" description="Organizational chart of DHSUD (Department of Human Settlements and Urban Development, RA 11201, 2019): regulatory functions (permit issuance, plan approval, complaint adjudication), policy formulation, and relationship to HLURB transition. Housing agency hierarchy." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-007-02-core-concept" type="image" caption="DHSUD Organizational Structure — Regulatory and Policy Role" description="Organizational chart of DHSUD (Department of Human Settlements and Urban Development, RA 11201, 2019): regulatory functions (permit issuance, plan approval, complaint adjudication), policy formulation, and relationship to HLURB transition. Housing agency hierarchy." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

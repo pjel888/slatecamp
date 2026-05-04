@@ -7,7 +7,7 @@ Design fire detection and alarm systems in compliance with RA 9514 and NFPA 72 �
 
 **1. Redundancy for Critical Facilities**
 
-<ArticleMedia id="media-lea-util-005-03-design-considerations-an" type="image" caption="Fire Detection and Alarm System Architecture — FACP, SLC Loops, NAC Circuits" alt="System architecture diagram showing: Fire Alarm Control Panel (FACP) with SLC (Signaling Line Circuit) loops connecting addressable smoke/heat detectors and manual pull stations, NAC (Notification Appliance Circuit) powering horns/strobes/voice speakers, and integration relays to building systems (elevator recall, HVAC shutdown, door release). Class B (Style 4) and Class A (Style 6/7) loop configurations compared. Battery backup showing 24h standby + 15min alarm calculation." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-005-03-design-considerations-an" type="image" caption="Fire Detection and Alarm System Architecture — FACP, SLC Loops, NAC Circuits" description="System architecture diagram showing: Fire Alarm Control Panel (FACP) with SLC (Signaling Line Circuit) loops connecting addressable smoke/heat detectors and manual pull stations, NAC (Notification Appliance Circuit) powering horns/strobes/voice speakers, and integration relays to building systems (elevator recall, HVAC shutdown, door release). Class B (Style 4) and Class A (Style 6/7) loop configurations compared. Battery backup showing 24h standby + 15min alarm calculation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Buildings housing critical functions (hospitals, data centers, government offices) in the Philippines may require:

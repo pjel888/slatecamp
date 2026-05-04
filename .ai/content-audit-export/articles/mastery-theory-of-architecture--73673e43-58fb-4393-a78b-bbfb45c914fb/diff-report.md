@@ -1,15 +1,15 @@
 # Content Diff Report: mastery-theory-of-architecture
 
-Generated: 2026-05-04T02:18:09.433Z
+Generated: 2026-05-04T09:14:17.441Z
 Article ID: 73673e43-58fb-4393-a78b-bbfb45c914fb
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:963f665087d6a59e5b203e63f7be517c2d44a8f92c3cda5e4080e16c0db63a25`
-- Normalized: `sha256:02a415a6c9fedfe788d44990c2e90dba3822ffb359ec6d15c8cd30f20876280d`
-- Candidate: `sha256:963f665087d6a59e5b203e63f7be517c2d44a8f92c3cda5e4080e16c0db63a25`
+- Original: `sha256:7b6485908f597131a14b559a3363c0e275c7fef96c3b9cf289ad22cd4925b46a`
+- Normalized: `sha256:359c822461b55290fa58ee5f946866f3e15b1138ec7a13653b8456e90fae24ec`
+- Candidate: `sha256:7b6485908f597131a14b559a3363c0e275c7fef96c3b9cf289ad22cd4925b46a`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 7
+- UI blocks preserved: 7
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

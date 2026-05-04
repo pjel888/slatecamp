@@ -15,7 +15,7 @@ Green building design addresses environmental impact across the full lifecycle o
 **LEED (Leadership in Energy and Environmental Design)**, developed in the United States, operates globally with regional adaptations. LEED v4.1 includes prerequisites and points across Integrative Process, Location & Transportation, Sustainable Sites, Water Efficiency, Energy & Atmosphere, Materials & Resources, Indoor Environmental Quality, and Innovation.
 
 All three systems share core principles: reducing operational energy through insulation and efficient HVAC; water conservation via efficient fixtures and rainwater harvesting; site ecology through permeable surfaces and native plantings; material stewardship including low-VOC finishes and recycled content; and waste diversion during construction. The major distinction is compliance threshold—BERDE requires minimum performance in each prerequisite category, EDGE targets 20% efficiency gain, and LEED awards points on a scaled system.
-<ArticleMedia id="media-lea-dsgn-009-04-core-concept" a type="image" caption="Green Building Certification — BERDE, EDGE, and LEED Comparison" description="Three-panel comparison of Philippine-recognized green certification systems: BERDE (PHILGBC, 4-level), EDGE (IFC, 3-tier), LEED (USGBC, 4-level). Scoring systems, applicable building types, and key credit categories shown side by side." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-009-04-core-concept" type="image" caption="Green Building Certification — BERDE, EDGE, and LEED Comparison" description="Three-panel comparison of Philippine-recognized green certification systems: BERDE (PHILGBC, 4-level), EDGE (IFC, 3-tier), LEED (USGBC, 4-level). Scoring systems, applicable building types, and key credit categories shown side by side." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -62,7 +62,7 @@ Remember: **BERDE = Philippines**, EDGE = cost/efficiency (20%), LEED = global p
 </Tip>
 
 **Exam Tip:** BERDE is Philippine-specific (managed by PHILGBC). EDGE is IFC/World Bank (focus on efficiency). LEED is USGBC (most comprehensive). Know which certification applies to which project type.
-<ArticleMedia id="media-lea-dsgn-009-04-core-concept" a type="image" caption="Green Building Certification — BERDE, EDGE, and LEED Comparison" description="Comparison diagram for three Philippine green building certifications: BERDE (PhilGBC, point-based, 5 levels), EDGE (IFC, resource efficiency, 20% savings), LEED (USGBC, 4 levels). Scope, point allocation categories, applicable building types, and rating thresholds shown side-by-side." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-009-04-core-concept" type="image" caption="Green Building Certification — BERDE, EDGE, and LEED Comparison" description="Comparison diagram for three Philippine green building certifications: BERDE (PhilGBC, point-based, 5 levels), EDGE (IFC, resource efficiency, 20% savings), LEED (USGBC, 4 levels). Scope, point allocation categories, applicable building types, and rating thresholds shown side-by-side." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

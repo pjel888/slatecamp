@@ -4,7 +4,11 @@ After reading this article, you should understand the key concepts tested in the
 
 Post-Construction Services extend architectural involvement beyond project completion into building operations and facility management. SPP Doc 205 establishes the framework for comprehensive post-construction service offerings. These services recognize that buildings require sustained professional attention after occupancy to maintain performance, functionality, and value. Post-construction services require multi-disciplinary professional teams coordinating across specialized domains.
 
-<ArticleMedia id="media-lea-prac-svc-016-post-construction-servi" type="image" caption="Post-Construction Services Process Flow — Building Administration and Operations" alt="Workflow chart showing post-construction service categories: building maintenance → grounds/landscaping → equipment/systems management → post-construction evaluation → business development/tenant relations → ongoing retainer or on-call consultation. Based on SPP Doc 205." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-svc-016-post-construction-servi", type="image", caption="Post-Construction Services Process Flow — Building Administration and Operations", description="Workflow chart showing post-construction service categories: building maintenance → grounds/landscaping → equipment/systems management → post-construction evaluation → business development/tenant relations → ongoing retainer or on-call consultation. Based on SPP Doc 205.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Rationale for Post-Construction Services
 
@@ -38,13 +42,29 @@ Post-construction services may operate as ongoing retainer arrangements, project
 
 Compensation methods include percentage of gross rentals, monthly or annual fees, project-based rates, or hourly consultation charges. Percentage compensation aligns with building revenue generation. Fixed monthly fees provide budget certainty and support sustained service relationships. Project-based compensation addresses specific evaluation or modification projects. Hybrid arrangements combine multiple compensation methods addressing different service categories.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

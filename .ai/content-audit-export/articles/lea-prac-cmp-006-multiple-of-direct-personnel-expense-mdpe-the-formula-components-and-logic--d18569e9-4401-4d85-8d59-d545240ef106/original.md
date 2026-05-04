@@ -65,7 +65,7 @@ When using MDPE compensation on a time-and-materials basis, the architect must t
 
 
 
-<ArticleMedia type="image" caption="MDPE Fee Formula — Components and Calculation Workflow" description="Visual breakdown of the MDPE formula: Direct Personnel Expense (DPE) × Multiplier = Fee. Left panel shows DPE components (salaries, benefits, billable hours) with example calculation. Right panel shows multiplier decomposition into overhead (1.5-2.0), profit (0.3-0.7), and risk factors (0.2-0.5). Center shows step-by-step fee computation from personnel hours to final fee." />
+<ArticleMedia id="media-lea-prac-cmp-006-multiple-of-d-0" type="image" caption="MDPE Fee Formula — Components and Calculation Workflow" description="Visual breakdown of the MDPE formula: Direct Personnel Expense (DPE) × Multiplier = Fee. Left panel shows DPE components (salaries, benefits, billable hours) with example calculation. Right panel shows multiplier decomposition into overhead (1.5-2.0), profit (0.3-0.7), and risk factors (0.2-0.5). Center shows step-by-step fee computation from personnel hours to final fee." />
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

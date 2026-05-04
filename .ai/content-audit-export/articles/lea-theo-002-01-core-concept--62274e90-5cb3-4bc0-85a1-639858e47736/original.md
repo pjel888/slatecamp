@@ -12,9 +12,9 @@ Classify architectural elements by the four primary human needs they serve (Shel
 
 ### Classification by Human Need
 
-|<ArticleMedia id="media-lea-theo-002-01-core-concept" a type="image" caption="Architectural Elements Classified by Human Need — Shelter, Enclosure, Circulation, Structure" description="Four-quadrant diagram: (1) Shelter — roof, eaves, overhangs, canopies protecting from sun, rain, climate; (2) Enclosure — walls, windows, doors, partitions defining interior and exterior boundaries, includes fenestration types (casement, awning, sliding, fixed); (3) Circulation — corridors, stairs, ramps, elevators, lobbies connecting spaces, including vertical (spiral, dogleg, straight) and horizontal paths; (4) Structure — columns, beams, walls, foundations, frames transferring loads to ground. Each quadrant shows annotated building examples. Key terminology called out: cortile (interior courtyard), colossal order (columns spanning multiple stories), mansard roof (dual-pitch French roof form)." suggestedAsset="Diagram or reference image" status="placeholder" />
+|<ArticleMedia id="media-lea-theo-002-01-core-concept" type="image" caption="Architectural Elements Classified by Human Need — Shelter, Enclosure, Circulation, Structure" alt="Four-quadrant diagram: (1) Shelter — roof, eaves, overhangs, canopies protecting from sun, rain, climate; (2) Enclosure — walls, windows, doors, partitions defining interior and exterior boundaries, includes fenestration types (casement, awning, sliding, fixed); (3) Circulation — corridors, stairs, ramps, elevators, lobbies connecting spaces, including vertical (spiral, dogleg, straight) and horizontal paths; (4) Structure — columns, beams, walls, foundations, frames transferring loads to ground. Each quadrant shows annotated building examples. Key terminology called out: cortile (interior courtyard), colossal order (columns spanning multiple stories), mansard roof (dual-pitch French roof form)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
-<ArticleMedia id="media-lea-theo-002-01-core-concept-b" type="image" caption="Circulation Typology — Vertical and Horizontal Movement Systems" description="Diagram showing circulation typologies through a multi-story building: Horizontal circulation (corridors, galleries, arcades, passageways, bridges connecting wings) and Vertical circulation (stairs — straight, dogleg, spiral, scissor; ramps — straight, switchback; elevators — passenger, freight, hydraulic, machine-room-less; escalators — parallel, crisscross). Each type shown with section and plan view, typical dimensions (corridor widths 900-1800mm, stair tread/riser, ramp slopes), and code references (PD 1096, BP 344, RA 9514)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-theo-002-01-core-concept-b" type="image" caption="Circulation Typology — Vertical and Horizontal Movement Systems" alt="Diagram showing circulation typologies through a multi-story building: Horizontal circulation (corridors, galleries, arcades, passageways, bridges connecting wings) and Vertical circulation (stairs — straight, dogleg, spiral, scissor; ramps — straight, switchback; elevators — passenger, freight, hydraulic, machine-room-less; escalators — parallel, crisscross). Each type shown with section and plan view, typical dimensions (corridor widths 900-1800mm, stair tread/riser, ramp slopes), and code references (PD 1096, BP 344, RA 9514)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Classification by Human Need
 
@@ -194,6 +194,14 @@ Architectural terminology also encompasses stylistic periods and ornamental voca
 **Vestibule** — A transitional entrance space buffering the exterior and interior environments, controlling temperature, protecting from weather, and marking the threshold of arrival into the building.
 
 <Tip>**SECS Mnemonic:** Every building element serves at least one of these four needs: **S**helter (protection), **E**nclosure (boundaries), **C**irculation (movement), **S**tructure (support). Test yourself by categorizing random elements during study sessions.</Tip>
+
+<RevealBlock prompt="Test yourself — can you identify each principle?" label="Drag to reveal answers">
+- **Balance** → Distribution of visual weight (symmetrical, asymmetrical, radial)
+- **Rhythm** → Repetition of elements creating visual movement and pattern
+- **Emphasis** → Focal point or area of dominance in a composition
+- **Proportion** → Relationship between parts and the whole (scale, ratio, hierarchy)
+- **Unity** → Cohesive whole where all elements work together harmoniously
+</RevealBlock>
 
 ## Related Articles
 

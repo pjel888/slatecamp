@@ -1,14 +1,36 @@
 {
   "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
   "slug": "lea-plan-005-04-core-concept",
-  "generated_at": "2026-05-01T13:33:43.966Z",
+  "generated_at": "2026-05-04T09:10:36.561Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 0,
-  "unknown_block_count": 0,
+  "warning_count": 1,
+  "unknown_block_count": 1,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [],
-  "unknown_blocks": [],
+  "warnings": [
+    {
+      "block_id": "ui_0001",
+      "component_name": "ArticleMedia",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0001",
+      "component_name": "ArticleMedia",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:7de88277de84d78497c5a96d710625eebd04996f0a14bcf64babf8008d69e95e",
+      "line_start": 15,
+      "line_end": 15,
+      "warnings": [
+        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
   "critical_blocks": []
 }

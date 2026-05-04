@@ -48,7 +48,7 @@ The overarching goal is operational efficiency (smooth traffic flow, minimal que
 **Emergency Exit:** Parking structure has two egress routes (via separate ramp stairwell, fire code requirement—LEA-DSGN-011 territory).
 
 **Pedestrian-Vehicle Separation:** Retail entry on avenue frontage (pedestrian realm); all vehicle movement behind building; retail loading does not cross customer entry.
-<ArticleMedia id="media-lea-dsgn-010-03-core-concept" type="image" caption="Site Access and Driveway Design — Pedestrian-Vehicle Conflict Zones" alt="Site plan diagram showing driveway positioning (setback from intersection), minimum driveway width (3.0m one-way, 6.0m two-way), emergency vehicle access (3.5m min), pedestrian conflict zones marked with crosswalks, and sight distance triangles per NBC standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-03-core-concept" type="image" caption="Site Access and Driveway Design — Pedestrian-Vehicle Conflict Zones" description="Site plan diagram showing driveway positioning (setback from intersection), minimum driveway width (3.0m one-way, 6.0m two-way), emergency vehicle access (3.5m min), pedestrian conflict zones marked with crosswalks, and sight distance triangles per NBC standards." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -130,7 +130,7 @@ Scenario describes parking lot with angled stalls throughout. Question: "Where i
 </Tip>
 
 **Exam Tip:** Driveway width minimum = 6.0m for two-way, 3.5m for one-way. Curb cut radius minimum = 3.0m. Distance from intersection corner = 15m minimum. Fire truck access required to all buildings.
-<ArticleMedia id="media-lea-dsgn-010-03-core-concept" type="image" caption="Site Access Diagram — Driveway Placement and Pedestrian-Vehicle Conflict Zones" alt="Site plan showing driveway placement relative to street corners (min. 10m setback), pedestrian crossing paths, emergency vehicle access route, fire truck turning radius overlay, and loading/unloading zones. Minimum driveway width (3.0m one-way, 6.0m two-way) and sight distance triangle annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-03-core-concept" type="image" caption="Site Access Diagram — Driveway Placement and Pedestrian-Vehicle Conflict Zones" description="Site plan showing driveway placement relative to street corners (min. 10m setback), pedestrian crossing paths, emergency vehicle access route, fire truck turning radius overlay, and loading/unloading zones. Minimum driveway width (3.0m one-way, 6.0m two-way) and sight distance triangle annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

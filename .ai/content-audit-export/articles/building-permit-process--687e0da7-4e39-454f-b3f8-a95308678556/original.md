@@ -3,10 +3,6 @@
 After reading this article, you should be able to:
 
 Explain the complete building permit process under PD 1096 Rule III: identify the Building Official's powers and duties, apply the 15-day payment-to-decision rule, determine when permits expire (1 year / 120 days), and distinguish exempt constructions from those requiring full permits or accessory permits.
-
-**Module Focus: The Legal & Administrative Framework of Construction**
-**Authority: PD 1096 (National Building Code of the Philippines) & 2004 Revised Implementing Rules and Regulations**
-
 ---
 
 ## Schema Activation: Two Projects, Two Different Worlds
@@ -45,6 +41,10 @@ The **Building Official (BO)** is the duly appointed government authority at the
 ---
 
 ## Part 2: The Permit Process
+
+<ArticleMedia id="media-building-permit-process-0" name="permit-process-flowchart" type="diagram" caption="Step-by-step permit process flowchart from application filing → fee payment → 15-day review window → permit issuance or written denial. Include decision diamond for approval/denial and arrows showing the critical path. Highlight the 15-day clock starting from payment date." />
+
+<ArticleMedia id="media-building-permit-process-1" name="permit-expiration-timeline" type="diagram" caption="Timeline diagram showing two expiration triggers: 1-year to commence construction from permit issuance date, and 120-day continuous abandonment trigger. Use a horizontal calendar-style bar with labeled thresholds and color-coded safe vs. expired zones." />
 
 ### The Critical Timeline — Where Most LEA Questions Are Set
 
@@ -456,6 +456,22 @@ The 120-day rule (Option B) applies to **abandonment** — once construction has
 
 ---
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: The most frequently tested building permit trap is the 15-day clock trigger. Remember: payment date, not submission date. If the question gives you both, the answer ALWAYS uses the payment date. If only submission is given, use submission. Read the facts carefully — examiners deliberately put both dates to test this specific distinction.
+
+
+
+---
+
+## Exam Tip
+
+ALE Trap: The most frequently tested building permit trap is the 15-day clock trigger. Remember: payment date, not submission date. If the question gives you both, the answer ALWAYS uses the payment date. If only submission is given, use submission. Read the facts carefully — examiners deliberately put both dates to test this specific distinction.
+
 ## Cross‑References
 
 **Certificate Of Occupancy**, **Legal Liability And Enforcement Workflow**, **Typology Checklists And Plan Checking**, **Change Of Use And Occupancy**
@@ -480,3 +496,5 @@ The 120-day rule (Option B) applies to **abandonment** — once construction has
 | Fence classification as Group J, Division 2         | Rule VII, Sec. 701, 2004 Revised IRR                            |
 | Garden masonry wall exemption (≤ 1.20 m)            | Rule III, Sec. 301.3.a.v, 2004 Revised IRR                      |
 | Accessory permit for fences (≤ 1.80 m)              | Rule III, Sec. 301.2.b.ii, 2004 Revised IRR                     |
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

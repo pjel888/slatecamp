@@ -327,5 +327,3 @@ On the LEA, expect a question that describes a penthouse with both dimensions an
 
 **Ceiling Heights And Room Sizes**, **Allowable Floor Area Increases**, **Pd 1096 Rule Vii Height Limits**, **Exam Meta Deck Heights**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

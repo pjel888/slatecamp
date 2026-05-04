@@ -13,9 +13,17 @@ SPP Document 200 (Code of Ethical Conduct) defines the architect's ethical oblig
 
 The Code of Ethical Conduct (SPP Document 200) is the mandatory framework governing architect behavior in the Philippines under RA 9266 (Architecture Act of 2004). The code does not prescribe service delivery methods but establishes moral and professional obligations. It differs from Standards of Professional Practice documents 201-209, which specify how to deliver services.
 
-<ArticleMedia id="media-eth001-canon-hierarchy" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Code of Ethical Conduct — Four-Tier Canon Hierarchy" alt="Pyramid diagram showing the ranked hierarchy of ethical obligations: Public (top, absolute priority) → Client → Profession → Fellow Architects (bottom). Each tier lists the key duties under each canon with source section references. A callout explains that public welfare always supersedes client interests." placementIntent="ethics-framework" suggestedSearchQuery="Code of Ethical Conduct four-tier canon hierarchy pyramid Public Client Profession Fellow Architects" suggestedAsset="Diagram or reference image" alt="Four-tier hierarchy: Code of Ethical Conduct covering Public, Client, Profession, Fellow Architects" caption="Future diagram: four-tier hierarchy: code of ethical conduct covering public, client, profession, fellow architects" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-eth001-canon-hierarchy", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Code of Ethical Conduct — Four-Tier Canon Hierarchy", alt="Four-tier hierarchy: Code of Ethical Conduct covering Public, Client, Profession, Fellow Architects", placementIntent="ethics-framework", suggestedSearchQuery="Code of Ethical Conduct four-tier canon hierarchy pyramid Public Client Profession Fellow Architects", suggestedAsset="Diagram or reference image", caption="Future diagram: four-tier hierarchy: code of ethical conduct covering public, client, profession, fellow architects"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Sec 1-5, Sec 40", title="Four Tiered Ethical Obligations"
+- Text: The code organizes ethical responsibilities into four tiered obligations: (1) The Public — architects must maintain health, safety, and welfare standards; report illegal practice; avoid misrepresenting qualifications. (2) The Client — architects owe faithful representation, confidentiality, conflict disclosure, and refusal of hidden supplier compensation. (3) The Profession — architects must uphold dignity, compete fairly, sign only work under direct supervision, and refuse commissions being neg
+[/SLATECAMP_UI_BLOCK]
 
 The PRBoA (composed of 1 Chairman and 2 Members = 3 total per RA 9266 Section 4) enforces the code through disciplinary action grounds listed in Section 23. The acronym "IAPOA" (Integrated and Accredited Professional Organization of Architects) used in the code legally refers to the United Architects of the Philippines (UAP) per RA 9266 Section 40 and PRBoA Resolution No. 03, Series of 2004. Breach of these obligations creates grounds for professional sanctions, suspension, or license revocation.
 
@@ -38,7 +46,11 @@ The PRBoA (composed of 1 Chairman and 2 Members = 3 total per RA 9266 Section 4)
 
 The Code of Ethical Conduct is enforceable law under RA 9266, not advisory guidance. Architects in the Philippines practice under a singular code that applies equally to all licensed professionals regardless of firm size or project type. The PRBoA investigates complaints and imposes discipline through the PRC structure. Compliance is non-negotiable for license renewal and liability protection. The code's emphasis on public welfare before client interest reflects the profession's societal role in safeguarding built environment safety and accessibility.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Common Exam Trap:** The LEA frequently tests whether you know the exact order of obligations. A distracter will place "Client" first or reorder them. Remember: Public always comes first — public safety overrides client profit. Similarly, the PRBoA is exactly 3 members (1 Chairman + 2 Members), not 5 or 7, even though the PRC itself has a Commissioner and 2 Associate Commissioners.
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
 
@@ -54,26 +66,31 @@ The Code of Ethical Conduct is enforceable law under RA 9266, not advisory guida
 **Question Pattern 4:** Engagement protocol — Must an architect notify a prior architect before assuming a commission they were negotiating?
 (Tests Section 5-c and 5-e on professional courtesy)
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember the four obligations in order: **P**ublic, **C**lient, **P**rofession, **F**ellow Architects. Use the mnemonic **"PCPF"** — Public welfare always trumps commercial interest. Use "public before client" as your mental checkpoint for obligation hierarchy questions.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Watch:** Questions about the hierarchy often present scenarios where a client demands a cost-cutting measure that would compromise structural safety. The correct answer always prioritizes public safety (Section 1-a) over client demands (Section 2). The "even if such advice may mean the loss of a prospective commission" clause in Section 2-c reinforces this priority.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember the four obligations in order: Public, Client, Profession, Fellow Architects. Public welfare always trumps commercial interest. Use "public before client" as your mental checkpoint for obligation hierarchy.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    'Assuming client interest equals highest obligation (Client is actually second — Public comes first)',
-    'Thinking the Code prescribes service methods (It establishes ethical conduct, not service delivery — SPP Documents 201-209 cover methods, while SPP 200 covers ethics)',
-    "Believing unregistered practice is architect's concern alone (Section 1-c requires reporting to authorities)",
-    "Interpreting 'direct supervision' as mere approval of finished work (Must be personal oversight during preparation)",
-    'Confusing PRBoA membership with PRC structure (PRBoA strictly has 3 members per RA 9266; they operate under the larger PRC framework)',
-    'Thinking architect can accept supplier kickbacks if disclosed (Section 4-b prohibits unless market discount credited to client)',
-    'Misreading Section 5-c notification requirement as optional (Notification is mandatory — non-negotiation before assumption)',
-    'Assuming specialization claims need only professional opinion (Section 1-f requires academic qualification or track record evidence)',
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    'Assuming client interest equals highest obligation (Client is actually second — Public comes first)',\n    'Thinking the Code prescribes service methods (It establishes ethical conduct, not service delivery — SPP Documents 201-209 cover methods, while SPP 200 covers ethics)',\n    \"Believing unregistered practice is architect's concern alone (Section 1-c requires reporting to authorities)\",\n    \"Interpreting 'direct supervision' as mere approval of finished work (Must be personal oversight during preparation)\",\n    'Confusing PRBoA membership with PRC structure (PRBoA strictly has 3 members per RA 9266; they operate under the larger PRC framework)',\n    'Thinking architect can accept supplier kickbacks if disclosed (Section 4-b prohibits unless market discount credited to client)',\n    'Misreading Section 5-c notification requirement as optional (Notification is mandatory — non-negotiation before assumption)',\n    'Assuming specialization claims need only professional opinion (Section 1-f requires academic qualification or track record evidence)',\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

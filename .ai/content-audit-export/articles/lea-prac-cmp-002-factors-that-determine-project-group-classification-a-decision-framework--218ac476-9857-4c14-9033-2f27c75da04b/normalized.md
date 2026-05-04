@@ -25,11 +25,23 @@ Within each applicable design category, the architect must evaluate whether the 
 
 Structural sophistication profoundly influences classification. Simple structures using conventional cast-in-place concrete or light steel framing align with standard baseline classifications. Sophisticated systems—post-tensioned concrete, steel moment frames, innovative systems, or structures serving unconventional functions—indicate a higher degree of complexity. Site-specific structural challenges, such as deep foundations, unusual soil conditions, or seismic-resistant design in high-risk zones, further elevate the project's technical demands.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="Architect's Guidelines / SPP 202", title="Fee Computation — Regulatory Basis"
+- Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, label=true, DAEDS=true, Fee=true, Range=true, PCC=true, Bracket=true, Threshold=true, Groups=true, Project=true, Classification=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Mechanical and Electrical Systems Scope
 
@@ -81,7 +93,11 @@ Classification decisions should be clearly documented in proposals and contracts
 
 
 
-<ArticleMedia type="image" caption="Project Group Classification — Decision Flowchart" alt="Flowchart showing the decision process for classifying a project: assess building type and complexity → identify Group 1-3 (complexity-based) vs Group 4-5 (building-type-based) vs Group 6-7 (repetitive) vs Group 8-10 (specialized). Decision diamonds for renovation multiplier (Group 9, 150%) and project scale (sliding scale for PCC >₱50M). Annotated with key regulatory references." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="unknown"]
+Extracted summary:
+- Props: id="media-lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework-image", type=true, caption="Project Group Classification — Decision Flowchart", description=true, Flowchart=true, showing=true, the=true, decision=true, process=true, for=true, classifying=true, a=true
+- Text: ₱50M). Annotated with key regulatory references." />
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

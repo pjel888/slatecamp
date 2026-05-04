@@ -5,9 +5,17 @@
 Explain the architect's social and ethical responsibilities — beyond client and structural integrity — including public safety, environmental stewardship, cultural respect, and commitment to human dignity and community welfare.
 ## Core Concept
 
-|<ArticleMedia id="media-lea-theo-001-13-core-concept" type="image" caption="Architect's Spheres of Responsibility — Ethical Framework" alt="Concentric circles diagram showing the architect's layered responsibilities: Innermost circle — Professional Ethics (integrity, competence, duty to client); Middle circle — Social Responsibility (public safety, accessibility, equity, community welfare); Outer circle — Environmental Stewardship (sustainability, material stewardship, climate resilience, ecological impact). Arrows connect outward to show how each level builds on the previous. Philippine-specific concerns (typhoon resilience, vernacular adaptation, BERDE certification) are called out in callout boxes." suggestedAsset="Diagram or reference image" status="placeholder" />
+|[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-001-13-core-concept", type="image", caption="Architect's Spheres of Responsibility — Ethical Framework", description="Concentric circles diagram showing the architect's layered responsibilities: Innermost circle — Professional Ethics (integrity, competence, duty to client); Middle circle — Social Responsibility (public safety, accessibility, equity, community welfare); Outer circle — Environmental Stewardship (sustainability, material stewardship, climate resilience, ecological impact). Arrows connect outward to show how each level builds on the previous. Philippine-specific concerns (typhoon resilience, vernacular adaptation, BERDE certification) are called out in callout boxes.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-lea-theo-001-13-core-concept-b" type="image" caption="Philippine Building Resilience — Typhoon, Flood, and Seismic Design Strategies" alt="Section and elevation diagrams of a climate-resilient Philippine building showing: (1) Typhoon-resistant strategies — aerodynamic roof form, impact-resistant glazing, reinforced connections, deep overhangs; (2) Flood-resistant strategies — elevated ground floor, permeable paving, rainwater harvesting, drainage swales; (3) Seismic strategies — shear walls, ductile frames, base isolation. Annotations reference Philippine code compliance (PD 1096, National Structural Code) and BERDE green building criteria." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-001-13-core-concept-b", type="image", caption="Philippine Building Resilience — Typhoon, Flood, and Seismic Design Strategies", description="Section and elevation diagrams of a climate-resilient Philippine building showing: (1) Typhoon-resistant strategies — aerodynamic roof form, impact-resistant glazing, reinforced connections, deep overhangs; (2) Flood-resistant strategies — elevated ground floor, permeable paving, rainwater harvesting, drainage swales; (3) Seismic strategies — shear walls, ductile frames, base isolation. Annotations reference Philippine code compliance (PD 1096, National Structural Code) and BERDE green building criteria.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Architecture shapes the physical environment in which people live, work, gather, and worship. Because buildings last for decades or centuries, architectural decisions made today affect not only current occupants but generations to come. Buildings consume vast quantities of materials and energy; they occupy land; they influence patterns of human movement and social interaction. The architect who designs a building is therefore responsible for more than pleasing a client or completing a technical puzzle; the architect is responsible for the public consequences of private actions. This understanding of **architectural responsibility** has become increasingly central to professional ethics and architectural theory.
 
@@ -39,37 +47,89 @@ Professional responsibility also includes **accessibility**. The built environme
 
 The architect's responsibility ultimately flows from the recognition that buildings are not private artifacts but public things. The decisions architects make affect not only their clients but surrounding communities, future generations, and the natural world. A truly responsible architecture integrates technical excellence, aesthetic integrity, client satisfaction, and public welfare into a unified whole.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Public Welfare Paramount:** The AIA Code of Ethics states architects must &quot;hold paramount the public welfare.&quot; This means responsibility extends beyond client contract to society, environment, and future generations. Every architectural decision carries public consequences.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Sustainability spans multiple dimensions: energy efficiency, material stewardship, water conservation, indoor environmental quality, ecological impact, and social equity. These are not separate concerns—they are integrated aspects of responsible architecture. No single element (like energy efficiency) can substitute for the whole.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical responsibility: Accessibility and universal design are non-negotiable obligations, not optional amenities. Architecture must serve ALL people regardless of age, ability, or status. Designing beautiful spaces inaccessible to significant populations represents failure in professional responsibility.
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Responsibility Area\", \"Core Principle\", \"Example\", \"Impact\"]}", rows="{[[\"**Professional Ethics**\", \"Integrity, competence, honesty, duty to public\", \"Accurate cost estimates, honest capability assessment, code compliance\", \"Trust in profession, public safety\"], [\"**Energy Efficiency**\", \"Minimize operational energy consumption\", \"Passive solar design, natural ventilation, LED lighting, renewable energy\", \"Reduced carbon emissions, lower operating costs\"], [\"**Material Stewardship**\", \"Responsible material selection for environmental and social impact\", \"Sustainably sourced timber, recycled content, non-toxic finishes, local sourcing\", \"Reduced extraction, ethical labor, ecosystem protection\"], [\"**Water Conservation**\", \"Minimize water consumption and protect water quality\", \"Low-flow fixtures, rainwater harvesting, graywater recycling, bioswleas\", \"Water preservation, flood mitigation, cost savings\"], [\"**Indoor Environmental Quality**\", \"Support occupant health and well-being\", \"Daylighting, natural ventilation, non-toxic materials, acoustic design\", \"Improved health, productivity, learning outcomes\"], [\"**Ecological Stewardship**\", \"Respect ecosystems and minimize environmental impact\", \"Habitat preservation, permeable surfaces, ecological restoration, green infrastructure\", \"Ecosystem protection, stormwater management, biodiversity\"], [\"**Social Equity**\", \"Design serves all community members, addresses inequality\", \"Affordable housing, accessible design, community gathering spaces, inclusive planning\", \"Social justice, community cohesion, equitable development\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Ethical Responsibility Definition.** The LEA asks what architects are responsible for beyond client satisfaction and technical competence. Example stem: "Beyond satisfying the client's brief, architects have a primary responsibility to do which of the following?" Answer: Hold paramount the public welfare; ensure code compliance and safety; minimize environmental impact. These are professional obligations extending beyond contract with the client.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Sustainable Design Strategies.** Questions ask you to identify sustainable design approaches. Example stem: "Which of the following strategies most directly reduces a building's operational energy consumption?" Answer: Passive solar design, natural ventilation, daylighting, efficient HVAC systems, or renewable energy generation. Incorrect answers would include aesthetic improvements or material choices not affecting energy.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Material Responsibility.** The LEA tests understanding of responsible material selection. Example stem: "When specifying materials for a building, an architect's primary responsibility regarding environmental impact is to consider which of the following?" Answer: Energy consumed in production and transportation, durability and lifespan, renewable or recycled content, toxicity, and sourcing ethics. Material choice is not arbitrary; it carries environmental and social consequences.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Philippine-Context Responsibility.** Questions address specific challenges and opportunities in the Philippine context. Example stem: "Given the Philippines' high typhoon vulnerability, how should architects modify design strategies from lower-risk regions?" Answer: Design for wind and water resistance; consider elevated construction; ensure structural redundancy; employ materials and details proven in tropical climate; engage with vernacular traditions adapted to these conditions.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Equity and Access.** The LEA asks about designing for vulnerable populations and ensuring equitable access. Example stem: "Universal design principles require architects to ensure that public buildings are accessible to whom?" Answer: All people regardless of age, ability, physical condition, or status. Accessibility is not a special add-on; it is a fundamental responsibility.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The LEA tests your understanding that architects bear responsibility not only to clients and structural integrity but to society, the environment, and future generations. Questions address professional ethics, sustainable design principles, and the architect's role in addressing social and environmental challenges. This reflects contemporary values emphasizing that architecture is never merely private or neutral; it has public consequences.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating sustainability as optional", correction="Sustainable design is now standard of care. Architects who ignore sustainability principles without justification are failing professional responsibility. It is not a client preference or marketing advantage; it is a fundamental ethical obligation.", context="The LEA tests whether you understand that sustainability is mandatory, not optional. Professional codes of ethics increasingly require sustainable design practices."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Limiting sustainability to energy", correction="Sustainability is comprehensive: energy efficiency, water conservation, material stewardship, ecological impact, social equity, and indoor environmental quality. All dimensions matter. Ignoring some while addressing others represents incomplete understanding.", context="The LEA tests your grasp of sustainability as a multi-faceted responsibility, not a single-issue concern."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Assuming sustainable design increases cost prohibitively: Many sustainable strategies (passive design, natural ventilation, efficient orientation) reduce cost while improving performance. High-cost technologies are options, not requirements. Sustainable design is often cost-effective.\", \"Overlooking the architect's role beyond construction: Architects should ensure commissioning, occupant training, and ongoing monitoring. Long-term building performance is the ultimate measure of design success, not merely completion of construction.\", \"Treating accessibility as legal requirement only: True universal design integrates accessibility from the beginning as an ethical principle serving human dignity. All people benefit from accessible design—curb cuts help wheelchair users, parents with strollers, and elderly people.\", \"Ignoring power dynamics and social context: Ethical design cannot be achieved through technical decisions alone. Architecture operates within power dynamics. Ethical architecture requires engaging with communities and ensuring design serves public good, not only powerful interests.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

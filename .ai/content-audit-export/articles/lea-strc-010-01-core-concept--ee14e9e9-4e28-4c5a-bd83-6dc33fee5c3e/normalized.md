@@ -13,7 +13,11 @@ By the end of this article, you will be able to:
 Masonry construction relies on precise terminology for joints, unit arrangement, and bonding patterns. Understanding bed joints, head joints, collar joints, wythes, cells, and bond types is essential for specifying, inspecting, and designing masonry structures per NBP/LEA requirements.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-010-01-core-concept" type="image" caption="Masonry Construction — Wythes, Joints, and Bond Patterns" alt="Cross-section and elevation diagrams showing: (1) Types of wythe (single, double, cavity wall); (2) Joint types — bed joint (horizontal), head joint (vertical), collar joint (between wythes); (3) Bond patterns — Running bond (staggered), Stack bond (aligned), Flemish bond (alternating headers/stretchers), English bond (alternating courses of headers and stretchers); (4) Reinforcement placement in grouted cells." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-010-01-core-concept", type="image", caption="Masonry Construction — Wythes, Joints, and Bond Patterns", description="Cross-section and elevation diagrams showing: (1) Types of wythe (single, double, cavity wall); (2) Joint types — bed joint (horizontal), head joint (vertical), collar joint (between wythes); (3) Bond patterns — Running bond (staggered), Stack bond (aligned), Flemish bond (alternating headers/stretchers), English bond (alternating courses of headers and stretchers); (4) Reinforcement placement in grouted cells.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Masonry is built from individual units (bricks, concrete hollow blocks, stone) held together by mortar in organized patterns. The way units are arranged, joined, and stacked determines both structural performance and durability.
 
@@ -65,7 +69,11 @@ _A concrete hollow block with three cells per unit is selected for a four-story 
 - Correct answer: Minimum grouting schedule that fills designated cells at specified intervals (e.g., every 1200 mm horizontally).
 - Test variation: Cell dimensions do NOT determine grout requirement; bond type and lateral load do.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: _Memory aid_: **"BC WJC"** — **B**ond patterns (running, Flemish, English), **C**ells (vertical spaces in units), **W**ythes (leaf sections), **J**oints (bed, head, collar), **C**avity walls (air space). Memorize cavity wall minimum air space: **51 mm**. English bond = maximum header tie = seismic zones.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -74,5 +82,13 @@ See also: **Masonry Units** (lea-strc-010-02) for block and brick types, **Beari
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing a collar joint with a head joint—collar joints exist _between_ wythes; head joints exist _within_ a single wythe.\",\"Assuming stack bond is acceptable for lateral load resistance—stack bond is restricted to non-seismic, architectural applications only.\",\"Treating cell voids as equivleant to cavity walls—cells are internal voids in individual units; cavities are air spaces between two wythes.\",\"Specifying cavity wall air space outside the 51–114 mm range—thinner cavities reduce insulation; thicker spaces are wasteful and violate NBP limits.\",\"Omitting header courses in multi-wythe masonry—without headers, the two wythes function independently and do not act as a composite wall.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

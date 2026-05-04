@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role
 
-Generated: 2026-05-04T02:17:25.615Z
+Generated: 2026-05-04T09:13:47.923Z
 Article ID: 332b32e5-1890-4765-a7b3-317790804247
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:68888189aa35fe12aac8bee3e688932dc1c9aa821f3c45e292c385307e5b9a8c`
-- Normalized: `sha256:4fdb18a2186d2f36bfe48e628f2cf74b6813ec03f78e81b72b33a3acbd1c9d83`
-- Candidate: `sha256:68888189aa35fe12aac8bee3e688932dc1c9aa821f3c45e292c385307e5b9a8c`
+- Original: `sha256:74f133493706a8dbc8b800120ef998765c500a9e7448d0b5abca6a9e29cecb2e`
+- Normalized: `sha256:1166ef163ffb45aeb2046443968f41ba35cd9788772571b55d9235888c9701f6`
+- Candidate: `sha256:74f133493706a8dbc8b800120ef998765c500a9e7448d0b5abca6a9e29cecb2e`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 6
-- UI blocks preserved: 6
+- UI blocks expected: 7
+- UI blocks preserved: 7
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

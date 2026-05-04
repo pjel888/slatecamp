@@ -333,6 +333,8 @@ On a commercial renovation project in Intramuros, the contractor sets up a drum 
 
 ---
 
+
+
 ---
 
 ## Cross‑References
@@ -350,5 +352,3 @@ On a commercial renovation project in Intramuros, the contractor sets up a drum 
 7. **Civil Code of the Philippines:** Articles 694–707 (Nuisances) — relevance to pedestrian obstruction as a public nuisance; Article 482 (cross-reference with Rule II, Sec. 215 abatement).
 8. **Architectural Graphic Standards (Ramsey/Sleeper), 12th Edition:** Chapter on construction site management and temporary facilities — walkway widths, canopy dimensions.
 9. **Metric Handbook: Planning and Design Data (Littlefield, 4th ed.):** Pedestrian clearance widths, minimum path dimensions for accessible routes.
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

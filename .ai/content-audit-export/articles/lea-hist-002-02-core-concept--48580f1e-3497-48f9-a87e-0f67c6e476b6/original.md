@@ -90,7 +90,7 @@ Romanesque establishes the **round arch, barrel vault, and flying buttress precu
 
 ## Related Articles
 
-<ArticleMedia id=\"media-hist-002-02-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Comparison diagram showing Romanesque vs. Gothic structural systems: barrel vault vs. ribbed vault, thick walls vs. flying buttresses, round arch vs. pointed arch, illustrating the transition from Romanesque mass to Gothic skeleton.\" caption=\"Romanesque vs. Gothic — Structural Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-002-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison diagram showing Romanesque vs. Gothic structural systems: barrel vault vs. ribbed vault, thick walls vs. flying buttresses, round arch vs. pointed arch, illustrating the transition from Romanesque mass to Gothic skeleton." caption="Romanesque vs. Gothic — Structural Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**, **lea-hist-002-05-core-concept**.
 

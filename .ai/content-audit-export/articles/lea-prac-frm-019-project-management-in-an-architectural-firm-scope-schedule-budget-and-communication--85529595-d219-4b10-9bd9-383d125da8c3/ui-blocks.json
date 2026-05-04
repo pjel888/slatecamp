@@ -1,27 +1,69 @@
 {
   "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
   "slug": "lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control",
-  "normalized_created_at": "2026-05-01T13:33:43.735Z",
+  "normalized_created_at": "2026-05-04T09:10:36.417Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:4f83e1f9463acc8f5fe5d2bdce7960d69d88617283d51a0637b6ad0b7a605d8e",
-  "normalized_content_hash": "ea54b3212cc5bb4696e6b1b3d04f7d8e093faad02e7b5de642f0e7c39e729db5",
-  "ui_block_count": 1,
+  "original_content_hash": "sha256:c395b5ac73caaed3a1f9e43b6730c65a8612524711eab1a7bb493e130addae2d",
+  "normalized_content_hash": "sha256:c4529e9c733f18fd4d3fe1949ad6bccbb6448c35362862def0b6ea822ab50fc2",
+  "ui_block_count": 2,
   "total_blocks": 2,
   "blocks": [
     {
-      "block_id": "ui_0003",
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
       "component_name": "Tip",
       "raw": "<Tip>**Five essential quality control processes:** (1) design reviews by senior staff; (2) code compliance checklists; (3) consultant coordination reviews (MEP, structural, landscape); (4) final document review before issuance; (5) constructability review with contractor input. These catch errors before they reach the client or contractor.</Tip>",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"preserved\"]",
-      "props_text": "(none)",
+      "raw_hash": "sha256:2defe9bf6504b3093a78f62bb096cb09ce814d723db1f292a6683e419e91c40d",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Five essential quality control processes:** (1) design reviews by senior staff; (2) code compliance checklists; (3) consultant coordination reviews (MEP, structural, landscape); (4) final document review before issuance; (5) constructability review with contractor input. These catch errors before they reach the client or contractor.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:44b609fb857e74718dfa095deda5446f355dd303405608c9acf291d3b1a4cb4a",
+      "props": {},
       "props_json": {},
+      "props_text": null,
       "children_raw": "**Five essential quality control processes:** (1) design reviews by senior staff; (2) code compliance checklists; (3) consultant coordination reviews (MEP, structural, landscape); (4) final document review before issuance; (5) constructability review with contractor input. These catch errors before they reach the client or contractor.",
       "children_text": "**Five essential quality control processes:** (1) design reviews by senior staff; (2) code compliance checklists; (3) consultant coordination reviews (MEP, structural, landscape); (4) final document review before issuance; (5) constructability review with contractor input. These catch errors before they reach the client or contractor.",
+      "start_offset": 7021,
+      "end_offset": 7368,
+      "line_start": 52,
+      "line_end": 52,
+      "parser_confidence": "high",
       "parse_status": "parsed",
-      "raw_hash": "sha256:2defe9bf6504b3093a78f62bb096cb09ce814d723db1f292a6683e419e91c40d"
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-lea-prac-frm-019-project-manag-0\" type=\"image\" caption=\"Project Management in Architecture — Scope, Schedule, Budget, Communication Framework\" description=\"Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables.\" />",
+      "raw_hash": "sha256:48ab11d2c534f899430069996de139e533dd532c252d016d28e887c99948ff7b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-prac-frm-019-project-manag-0\", type=\"image\", caption=\"Project Management in Architecture — Scope, Schedule, Budget, Communication Framework\", description=\"Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:fa7a2f4b6c9b511eb887bb5fa46b2f1a86f805d85617ddbc2dfb2977d287610d",
+      "props": {
+        "id": "media-lea-prac-frm-019-project-manag-0",
+        "type": "image",
+        "caption": "Project Management in Architecture — Scope, Schedule, Budget, Communication Framework",
+        "description": "Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables."
+      },
+      "props_json": {
+        "id": "media-lea-prac-frm-019-project-manag-0",
+        "type": "image",
+        "caption": "Project Management in Architecture — Scope, Schedule, Budget, Communication Framework",
+        "description": "Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables."
+      },
+      "props_text": "id=\"media-lea-prac-frm-019-project-manag-0\" type=\"image\" caption=\"Project Management in Architecture — Scope, Schedule, Budget, Communication Framework\" description=\"Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9811,
+      "end_offset": 10353,
+      "line_start": 76,
+      "line_end": 76,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
     }
   ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "3598d8bc2097fba5df8cb30baefca233e6d5b9b2f425f12d17b633bce9ff4c2b"
+  "ui_blocks_hash": "sha256:c81c340bfd9e48b0555b12c429409c286dda5bfa7fee48af270c806771ec365f"
 }

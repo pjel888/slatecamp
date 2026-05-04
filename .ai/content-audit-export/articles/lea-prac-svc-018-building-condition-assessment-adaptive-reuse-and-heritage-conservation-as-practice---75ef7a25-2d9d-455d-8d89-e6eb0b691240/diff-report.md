@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services
 
-Generated: 2026-05-04T02:16:47.281Z
+Generated: 2026-05-04T09:13:26.030Z
 Article ID: 75ef7a25-2d9d-455d-8d89-e6eb0b691240
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:fabbc3c1ca08b3af1a0b71169bf59afa78a2b30d1511a6bd34d4431a99af6a97`
-- Normalized: `sha256:2012474a11ebb7f4766af845ad8c372149fc1138d3eea3c27edce0a9991eddab`
-- Candidate: `sha256:fabbc3c1ca08b3af1a0b71169bf59afa78a2b30d1511a6bd34d4431a99af6a97`
+- Original: `sha256:1411782b6321fc87afcec7443940dd70919b421a306fc9f09efe16cffd0eef5f`
+- Normalized: `sha256:50320a8c472f6e3e935b57218869edf6fb8f6904d0d76aed8bc5952ba734187d`
+- Candidate: `sha256:1411782b6321fc87afcec7443940dd70919b421a306fc9f09efe16cffd0eef5f`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 5
-- UI blocks preserved: 5
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

@@ -1,5 +1,9 @@
 ## What You Need to Know for the LEA
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Modernism evolved through distinct movements, each responding to previous aesthetics and technological shifts. Understanding the theoretical foundations—what each movement valued, rejected, and prioritized—is crucial for LEA questions on style identification and conceptual frameworks. This sequence reveals how architectural thinking transformed from craft-centered ideals to digital abstraction.
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -7,20 +11,40 @@ Identify and distinguish the major architectural movements from Arts & Crafts th
 
 ## Core Concept
 
-|<ArticleMedia id="media-lea-theo-007-01-core-concept" type="image" caption="Timeline of Architectural Movements — Arts & Crafts to Parametricism" alt="Horizontal timeline from 1880 to 2020 showing major movements with key figures, philosophies, and built examples: Arts & Crafts (Morris, Ruskin, 1880-1910) → Art Nouveau (Horta, Gaudi, 1890-1910) → Expressionism (Mendelsohn, 1910-1930) → Bauhaus/Modernism (Gropius, Mies, Le Corbusier, 1919-1960) → International Style (1930-1970) → Postmodernism (Venturi, Graves, 1966-1990) → Deconstructivism (Gehry, Hadid, 1988-present) → High-Tech (Rogers, Foster, 1970-present) → Parametricism (Schumacher, 2000-present). Each movement entry shows what it rejected (previous movement) and what it valued." suggestedAsset="Diagram or reference image" status="placeholder" />
+|[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-007-01-core-concept", type="image", caption="Timeline of Architectural Movements — Arts & Crafts to Parametricism", description="Horizontal timeline from 1880 to 2020 showing major movements with key figures, philosophies, and built examples: Arts & Crafts (Morris, Ruskin, 1880-1910) → Art Nouveau (Horta, Gaudi, 1890-1910) → Expressionism (Mendelsohn, 1910-1930) → Bauhaus/Modernism (Gropius, Mies, Le Corbusier, 1919-1960) → International Style (1930-1970) → Postmodernism (Venturi, Graves, 1966-1990) → Deconstructivism (Gehry, Hadid, 1988-present) → High-Tech (Rogers, Foster, 1970-present) → Parametricism (Schumacher, 2000-present). Each movement entry shows what it rejected (previous movement) and what it valued.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-lea-theo-007-01-core-concept-b" type="image" caption="Key Buildings Comparison — Modernist and Postmodernist Examples" alt="Side-by-side comparison of iconic buildings from each major movement: Arts & Crafts (Glasgow School of Art), Art Nouveau (Casa Batllo), Modernism/International Style (Villa Savoye, Seagram Building), Postmodernism (Vanna Venturi House, AT&T Building), Deconstructivism (Guggenheim Bilbao), High-Tech (Centre Pompidou), Parametricism (Heydar Aliyev Center). Each building annotated with its key formal characteristics, materials, and what it communicated about the movement's philosophy." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-007-01-core-concept-b", type="image", caption="Key Buildings Comparison — Modernist and Postmodernist Examples", description="Side-by-side comparison of iconic buildings from each major movement: Arts & Crafts (Glasgow School of Art), Art Nouveau (Casa Batllo), Modernism/International Style (Villa Savoye, Seagram Building), Postmodernism (Vanna Venturi House, AT&T Building), Deconstructivism (Guggenheim Bilbao), High-Tech (Centre Pompidou), Parametricism (Heydar Aliyev Center). Each building annotated with its key formal characteristics, materials, and what it communicated about the movement's philosophy.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Architectural modernism was not a single unified style but a philosophical trajectory spanning roughly 1880–1990, characterized by radical departures from historical precedent. Each movement represented both a technological advancement and an ideological response to the limitations of its predecessor.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Test yourself on this sequence: Arts & Crafts → Art Nouveau → International Style → Brutalism → Postmodernism → Deconstructivism → Parametricism. Each movement is a *reaction against* AND *synthesis of* prior movements. Understanding these genealogies (not memorizing style names) is testable. Example: Brutalism reacts against International Style glass-box minimalism but inherits its modernist purity; it reintroduces material expression while maintaining structural logic.
+[/SLATECAMP_UI_BLOCK]
 
 **Arts and Crafts (1880–1920)**
 Arts and Crafts emerged as a reaction against industrial mass production, not as part of modernism initially, but as the philosophical soil from which modernism grew. Led by figures like William Morris, Charles Rennie Mackintosh, and C.R. Ashbee, the movement valued handcraftsmanship, truth to materials, and integration with nature. It rejected the ornamental excess of Victorian eclecticism and mechanized reproduction. Key principle: the maker's hand was visible in the work; authenticity derived from craft labor, not stylistic revival. For LEA purposes, remember Mackintosh's Tea Rooms in Glasgow—organic linear forms integrated with geometric severity, influenced by Japanese aesthetics. The movement rejected: mass production, historical pastiche, ornament divorced from function. It valued: honest construction, material integrity, the integration of all arts (Gesamtkunstwerk principle).
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Arts and Crafts is *not* modernism—it's pre-modern philosophically (against mechanization). Yet it IS modernist aesthetically (rejecting ornament, emphasizing geometry, valuing honesty). This paradox is crucial: Arts and Crafts wanted handcrafted authenticity *in forms that modernism would later industrialize*. Modernism inherits A&C's formal vocabulary while inverting its craft ideology—the ultimate irony.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Common error: treating Mackintosh as an early modernist. He's not. Mackintosh's linear forms and surface patterns are Art Nouveau (biomimetic, ornamental) not modernist (geometric, plain). He's preface to modernism, not modernism itself. This distinction—where does one movement end and next begin?—is exactly the kind of nuanced question the LEA tests.
+[/SLATECAMP_UI_BLOCK]
 
 **Art Nouveau (1890–1910)**
 Art Nouveau represented a different modernist trajectory—embracing machine manufacture while seeking organic, flowing forms. Victor Horta and Henri Van de Velde pioneered this whiplash aesthetic: sinuous lines, asymmetrical compositions, and integration of fine and applied arts. Horta's Tassel House (Brussels, 1893) exemplifies this with its iron railings mimicking plant stems, stained glass windows dissolving boundaries between interior and exterior. Van de Velde applied Art Nouveau principles across architecture, furniture, and graphic design, theorizing that beauty emerged from functional form enhanced by refined ornamentation. Rejected: rigid geometric patterns, applied decoration. Valued: biomimetic forms, material honesty, unified aesthetic systems. Art Nouveau failed to resolve the maker/machine question—it remained expensive, artisanal, unrealizable at industrial scale.
@@ -44,26 +68,62 @@ Throughout this sequence, notice the recurring tension: **craft versus industria
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Movement\", \"Dates\", \"Key Figures\", \"Rejected\", \"Valued\", \"Testable Phrase\"]}", rows="{[['[\"Arts & Crafts\", \"1880–1920\", \"Morris, Mackintosh, Ashbee\", \"Mass production, pastiche\", \"Handcraft, material truth\", \"\\\\\"Truth to materials\\\\\"\"]', '[\"Art Nouveau\", \"1890–1910\", \"Horta, Van de Velde\", \"Rigid geometry, static ornament\", \"Biomimetic form, integration\", \"\\\\\"Whiplash curves,\\\\\" \\\\\"organic lines\\\\\"\"]', '[\"International Style\", \"1920–1945\", \"Gropius, Mies, Le Corbusier\", \"Ornament, historical reference\", \"Functional clarity, universality\", \"\\\\\"Form follows function\\\\\"; \\\\\"less is more\\\\\"\"]', '[\"Brutalism\", \"1950–1975\", \"Rudolph, Tange, Kahn\", \"Glass-box neutrality\", \"Material expression, sculptural presence\", \"\\\\\"Honest concrete,\\\\\" \\\\\"structural expression\\\\\"\"]', '[\"Postmodernism\", \"1970–1995\", \"Venturi, Graves, Scott Brown\", \"Utopian universalism, exclusion of meaning\", \"Ornament, historical allusion, irony\", \"\\\\\"Complexity and contradiction\\\\\"\"]', '[\"Deconstructivism\", \"1988–2005\", \"Gehry, Koolhaas, Hadid, Eisenman\", \"Stable geometric form\", \"Fragmentation, computational geometry\", \"\\\\\"Non-Euclidean form,\\\\\" \\\\\"fragmented\\\\\"\"]', '[\"Parametricism\", \"2008–present\", \"Schumacher, Hadid, BIG\", \"Ornament/structure binaries\", \"Data-responsive variation, algorithmic design\", \"\\\\\"Algorithmic generation,\\\\\" \\\\\"continuous variation\\\\\"\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Movement Identification**: "This building features continuous surface modulation responding to solar orientation. Which movement best describes this approach?" (Answer: Parametricism)
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 2. **Theoretical Opposition**: "Which movement first rejected ornament absolutely and why?" (Answer: International Style/Bauhaus; unified aesthetic that eliminated applied decoration)
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 3. **Figure-to-Movement Matching**: "Walter Gropius founded which movement and what were its three core principles?" (Answer: Bauhaus/International Style; industrial production, functional clarity, democratic design)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 4. **Conceptual Trajectory**: "How did postmodernism theoretically oppose the International Style?" (Answer: Reinstated meaning, historical reference, and irony against claims of universal form)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0012 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 5. **Philippine or Regional Application**: "Which movement's principles best align with adaptive reuse of colonial Intramuros buildings?" (Answer: Postmodernism or contemporary practice respecting historical form; or deconstructivism if using salvaged elements in new geometric contexts)
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Arts and Crafts with Modernism", correction="Arts and Crafts rejected industrialization; it was pre-modern philosophically, though aesthetically innovative.", context="It enabled modernism but rejected its core machine-age ideology."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating \\", International=true, Style=true, and=true, Bauhaus=true, as=true, Identical=true, correction="Bauhaus was the school/method; International Style was the global diffusion of its principles.", context="Not all International Style architects passed through Bauhaus."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Seeing Postmodernism as Frivolous. Postmodernism was theoretically rigorous (Venturi's semiotic framework) but rejected modernism's claim to philosophical inevitability. It was critique, not mere ornamentation.\", \"Equating Deconstructivism with Chaos. Deconstructivism applied poststructuralist theory to form; fragmentation was philosophical, not accidental. Eisenman's diagrams and Koolhaas's programmatic layering are systematic.\", \"Assuming Parametricism is Just Computer-Generated Form. Parametricism is a **design philosophy** proposing that all variation be algorithmically linked to performance parameters. Not all digital architecture is parametric; much is merely CNC-fabricated deconstructivism.\", \"Missing the Recycling Motif. Brutalism's sculptural monumentality influenced postmodern symbolism; postmodern irony influenced deconstructivist non-hierarchy; deconstructivist fragmentation enabled parametric variation. Each movement is parasitic on its predecessor's formal vocabulary.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -91,7 +151,11 @@ Throughout this sequence, notice the recurring tension: **craft versus industria
 
 **Bricolage** — Assemblage of found or disparate elements; postmodern strategy of treating history as available fragments (Venturi, Scott Brown's Las Vegas Strip analysis).
 
-[SLATECAMP_UI_BLOCK:ui_0014 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0016 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Movement Sequence LEA Pattern:** Questions often ask "Which movement was a reaction against X?" — trace the chain: Arts & Crafts (vs. mass production) → Art Nouveau (vs. rigid geometry) → International Style (vs. ornament) → Brutalism (vs. glass-box) → Postmodernism (vs. universalism) → Deconstructivism (vs. stable form) → Parametricism (vs. ornament/structure binaries).
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

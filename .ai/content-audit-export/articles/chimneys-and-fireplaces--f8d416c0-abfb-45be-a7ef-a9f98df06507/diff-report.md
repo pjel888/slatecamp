@@ -1,20 +1,20 @@
 # Content Diff Report: chimneys-and-fireplaces
 
-Generated: 2026-05-04T02:16:24.755Z
+Generated: 2026-05-04T09:13:06.367Z
 Article ID: f8d416c0-abfb-45be-a7ef-a9f98df06507
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:a8403f60ed05f13146537c5a61618492eedb21551fcabe3b96d2e9b29fe595e1`
-- Normalized: `sha256:113ddd08a0678903b743732f775ae0ef3bf8ab85c6ef31ee7e35bc5ec2e3c6e5`
-- Candidate: `sha256:1eba0f11323fadc6e696cda18fd7ad9cd97e7662ebdd0f8c7fbed79f24723f78`
+- Normalized: `sha256:a532344025c0a4202cb9319ae3b00120579d962e6062b62a58a32c377ca388df`
+- Candidate: `sha256:a8403f60ed05f13146537c5a61618492eedb21551fcabe3b96d2e9b29fe595e1`
 
 ## Line summary
 
-- Changed lines: 15
-- Inserted lines: 8
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation

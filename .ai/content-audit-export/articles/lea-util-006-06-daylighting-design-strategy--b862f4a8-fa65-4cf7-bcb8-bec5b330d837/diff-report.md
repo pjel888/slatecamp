@@ -1,15 +1,15 @@
 # Content Diff Report: lea-util-006-06-daylighting-design-strategy
 
-Generated: 2026-05-04T02:17:15.050Z
+Generated: 2026-05-04T09:13:41.584Z
 Article ID: b862f4a8-fa65-4cf7-bcb8-bec5b330d837
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:4c06934bc02900ea1acc9248575ab00a0df751da3288024c5649101773769b0c`
-- Normalized: `sha256:8a03a0926498cbedaf3bb01a96b2109e06c43364e531f239b8053fbadf772f55`
-- Candidate: `sha256:4c06934bc02900ea1acc9248575ab00a0df751da3288024c5649101773769b0c`
+- Original: `sha256:7f84e9052f36fcda3e8a66e4341e423fea7b1c1367350c64511871d980c9bb6a`
+- Normalized: `sha256:65a5b7232959b50feacc8a70b7faccd5ac95e1ec85fed7af81a06746cd22bb51`
+- Candidate: `sha256:7f84e9052f36fcda3e8a66e4341e423fea7b1c1367350c64511871d980c9bb6a`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

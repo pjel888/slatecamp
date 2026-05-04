@@ -12,7 +12,7 @@ Community Health Centers and Barangay Health Centers operate as Group D occupanc
 The core design principle centers on functional separation of clinical zones: consultation, treatment, pharmacy, and support areas must be sized and arranged to prevent congestion during medical consultation while maintaining infection control. A consultation room requires a minimum of 9 square meters (typically 3.0m × 3.0m). A treatment room requires 12 square meters. The waiting area must provide 1.5 square meters per seated occupant. Pharmacy dispensaries require a minimum of 4 square meters. Accessible toilet facilities, per **BP 344** (2024 Revised IRR), must provide minimum clear floor space of 1.50m × 1.50m per facility.
 
 Group D occupancies require fire-resistance-rated occupancy separations per NBC Rule VII Table 703(d), minimum 1-hour, and exits must be sized per NBC Rule VIII Table 8.1 or RA 9514 Table 10 at 7.6 mm/person for doors. Travel distance to exits shall not exceed 45 meters (or 60 meters if sprinklered). At 50 persons occupant load, two separate exits are mandatory.
-<ArticleMedia id="media-lea-dsgn-005-08-core-concept" type="image" caption="Community Health Center — Group D Space Program Diagram" alt="Bubble diagram of a community health center showing consultation, treatment, pharmacy, waiting, and admin zones. Annotated with DOH space standards, fire separation requirements, and assisted evacuation considerations per Group D occupancy." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-08-core-concept" type="image" caption="Community Health Center — Group D Space Program Diagram" description="Bubble diagram of a community health center showing consultation, treatment, pharmacy, waiting, and admin zones. Annotated with DOH space standards, fire separation requirements, and assisted evacuation considerations per Group D occupancy." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -55,7 +55,7 @@ In the Philippines, community health centers serve as the primary contact point 
 <Tip>BHC = Group D (NOT C). Consultation room = 9 sqm. Exit width = 7.6mm/person. 2-hour fire separation required. Accessible door = 900mm. Ramp = 1:20 max (2024 Revised IRR). Toilet = 1.7m × 1.7m.</Tip>
 
 **Exam Tip — ERR-DSGN-024:** BHCs are Group D because patients may require assisted evacuation. Unlike acute hospitals, BHCs use DOH Sentrong Sigla standards for space programming, not DOH hospital coding.
-<ArticleMedia id="media-lea-dsgn-005-08-core-concept" type="image" caption="Community Health Center — Group D Occupancy Space Program and Egress" alt="Bubble diagram of a community health center showing functional zones: consultation rooms (9 sqm), treatment area (12 sqm), pharmacy, waiting area at 1.5 sqm/person, and admin offices. Fire separation requirements and assisted egress for Group D occupancy annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-08-core-concept" type="image" caption="Community Health Center — Group D Occupancy Space Program and Egress" description="Bubble diagram of a community health center showing functional zones: consultation rooms (9 sqm), treatment area (12 sqm), pharmacy, waiting area at 1.5 sqm/person, and admin offices. Fire separation requirements and assisted egress for Group D occupancy annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

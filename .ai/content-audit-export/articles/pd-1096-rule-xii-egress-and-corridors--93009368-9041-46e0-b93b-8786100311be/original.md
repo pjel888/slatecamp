@@ -38,6 +38,10 @@ This material is **psychologically engineered** for maximum retention. Every sec
 
 ## THE MENTAL SCENE — READ THIS FIRST
 
+<ArticleMedia id="media-pd-1096-rule-xii-egress-and-co-0" name="egress-floorplan-separation" type="diagram" caption="Floor plan diagram showing 2 exits separated by ≥ 1/5 of perimeter (straight-line measurement). Example: 20 m × 30 m rectangle, perimeter = 100 m, separation = 20 m. Show exit doors, travel paths, and the 45 m / 60 m travel distance radius arcs. Include a callout: 'PD 1096 uses 1/5 PERIMETER rule — NOT IBC 1/2 diagonal rule.'" />
+
+<ArticleMedia id="media-occupant-load-exit-calculation" name="occupant-load-exit-calculation" type="diagram" caption="Worked example infographic: 4-storey office, 500 sqm per floor. Step 1: occupant load = 500 ÷ 9.30 = 54 persons. Step 2: check exit count triggers (>10 above 1st, >30 for offices → 2 exits). Step 3: total width = 54 ÷ 165 = 0.327 m → but each exit door min 0.90 m → 2 doors = 1.80 m. Show the floor area ÷ unit area = occupant load → exit width formula chain with visual blocks." />
+
 _You are on the 4th floor of a commercial building. The fire alarm screams. Smoke billows from the stairwell to your left. You turn right — dead end. You backtrack and find the corridor. How wide is it? Can you pass two people running the other way? Where is the next exit? How far is it? Does the door swing toward you or away?_
 
 _Every number in this module answers one of those questions. Every number exists because, at some point, someone died when the answer was wrong._
@@ -517,15 +521,23 @@ _Study this alongside your Rule VIII (setbacks) reviewer so you can handle integ
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Occupant load factors: Assembly (concentrated) = 0.65 m²/person, Assembly (less concentrated) = 1.40 m²/person, Business = 9.30 m²/person, Educational = 1.85 m²/person, Mercantile = 2.80 m²/person. Egress width = occupant load × 0.55 mm per person (for stair) or 0.81 mm per person (for door/corridor). These factors are the most tested calculations.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Occupant load factors: Assembly (concentrated) = 0.65 m²/person, Assembly (less concentrated) = 1.40 m²/person, Business = 9.30 m²/person, Educational = 1.85 m²/person, Mercantile = 2.80 m²/person. Egress width = occupant load × 0.55 mm per person (for stair) or 0.81 mm per person (for door/corridor). These factors are the most tested calculations.
+
 ## Cross‑References
 
 **Stairs Handrails Guardrails**, **Widths Slopes**, **Fire Zones And Existing Buildings**, **Commercial Clearances**
 
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

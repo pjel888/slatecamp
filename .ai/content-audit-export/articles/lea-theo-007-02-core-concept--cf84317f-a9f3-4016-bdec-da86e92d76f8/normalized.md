@@ -1,5 +1,9 @@
 ## What You Need to Know for the LEA
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Contemporary architectural discourse is defined by digital design methods, data-responsive systems, and biomimetic strategies that blur boundaries between structure, ornament, and performance. The LEA tests whether you understand not merely stylistic trends but the underlying philosophical shifts: from human intuition to algorithmic optimization, from sculptural form to behavioral simulation, from industrial reproduction to personalized digital fabrication.
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -9,11 +13,19 @@
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-007-02-parametric-frameworks" type="image" caption="Three Overlapping Frameworks in Contemporary Architecture — Parametric, Biomimetic, and AI-Assisted Design" alt="Venn diagram showing three overlapping methodological revolutions: Parametric Design Systems (algorithmic form-generation, Zaha Hadid Architects, BIG), Computational Biomimicry (learning from biological systems, material optimization, structural morphogenesis), and AI-Assisted Design (machine learning, program optimization, generative design). Center intersection = 'Integrated Digital Workflow' showing how all three merge in contemporary practice." suggestedAsset="Venn diagram of parametric design, computational biomimicry, and AI-assisted design" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-007-02-parametric-frameworks", type="image", caption="Three Overlapping Frameworks in Contemporary Architecture — Parametric, Biomimetic, and AI-Assisted Design", alt="Venn diagram showing three overlapping methodological revolutions: Parametric Design Systems (algorithmic form-generation, Zaha Hadid Architects, BIG), Computational Biomimicry (learning from biological systems, material optimization, structural morphogenesis), and AI-Assisted Design (machine learning, program optimization, generative design). Center intersection = 'Integrated Digital Workflow' showing how all three merge in contemporary practice.", suggestedAsset="Venn diagram of parametric design, computational biomimicry, and AI-assisted design", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Contemporary architecture has fundamentally shifted its epistemology—how architects *know* what to build. Three overlapping frameworks now dominate professional discourse: **parametric design systems** (algorithmic form-generation), **computational biomimicry** (learning from biological systems), and **AI-assisted design** (machine learning for program optimization and form-finding). These are not stylistic preferences but methodological revolutions.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory aid**: Parametric design = "Rules change, form updates." The three pillars of contemporary practice are Parametric systems, Biomimetic strategies, and AI augmentation. Recognize that ornament returns as performance visualization—what *looks* sculptural is actually a thermal or structural data map made visible.
+[/SLATECAMP_UI_BLOCK]
 
 **Parametricism and Algorithmic Form**
 
@@ -43,7 +55,11 @@ The 1111 Lincoln Road parking garage (Miami, 2010) by Herzog & de Meuron feature
 
 Theoretical implication: **biomimicry transfers design authority from the individual architect's aesthetic judgment to optimization algorithms**. The architect becomes a translator of biological logic rather than an autonomous composer. This challenges fundamental premises of artistic authorship in architecture.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Biomimicry is not superficial formal resemblance (buildings that "look like" organisms). True biomimicry reverse-engineers the optimization logic—how does an organism solve structural, thermal, or material efficiency? The resulting design may not visually reference nature; it embodies natural problem-solving principles in material and structural organization.
+[/SLATECAMP_UI_BLOCK]
 
 **Computational Design and Algorithmic Urbanism**
 
@@ -76,30 +92,70 @@ Risks and theoretical debates:
 
 Contemporary discourse increasingly questions whether algorithmic optimization can serve as sole arbiter of design quality. The LEA will likely test whether you understand both the possibilities and limitations of these tools.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical distinction: AI-optimized designs risk homogenization if all practitioners use identical datasets and algorithms. The most dangerous outcome is not that AI produces bad designs but that it produces statistically averaged, culturally neutral solutions globally. Defend qualitative values—wonder, meaning, cultural specificity, poetic resonance—that are invisible to optimization metrics.
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Concept\", \"Definition\", \"Key Practitioner\", \"Testable Scenario\"]}", rows="{[['[\"Parametric Design\", \"Form continuously adjusts to linked variables (solar, load, program)\", \"Zaha Hadid Architects, BIG\", \"Given solar orientation data, identify which facade strategy is parametric\"]', '[\"Digital Fabrication\", \"CNC/3D methods produce bespoke components at sclea\", \"Neri Oxman, Herzog & de Meuron\", \"Explain why digital fabrication enables non-standard components without raising costs\"]', '[\"Biomimicry\", \"Optimization strategies reverse-engineered from biological systems\", \"Mick Pearce (Eastgate), Neri Oxman\", \"Design thermal strategy mimicking termite mound principles\"]', '[\"Computational Urbanism\", \"Algorithmic generation of urban systems via agent-based modeling\", \"Carlo Ratti, MIT Senseable City Lab\", \"Generate streetscape density distribution via emergent algorithmic rules\"]', '[\"AI-Assisted Design\", \"Machine learning augments or automates design decision-making\", \"Jonathan Glynn, various research labs\", \"Identify risks of using AI-generated form precedents (homogenization, bias)\"]', '[\"Material Computation\", \"Local material density varies per structural requirement\", \"Neri Oxman\", \"Design structure where density follows stress distribution\"]', '[\"Performance Visualization\", \"Ornament expresses performance data (thermal, structural, circulation)\", \"BIG (Amager Bakke), Zaha Hadid\", \"Interpret facade perforation pattern as thermal performance map\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Method Identification**: "A facade's perforation density increases on south-facing elevations and decreases on north-facing surfaces. Which design methodology best describes this?" (Answer: Parametric design with performance responsiveness)
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 2. **Philosophical Implication Recognition**: "How does parametric design resolve the historical tension between individual artistic authorship and systematic production logic?" (Answer: By treating the system/algorithm as the author, displacing individual intentionality into rule-setting)
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 3. **Biomimetic Application**: "A building's structural ribs concentrate material only where highest loads occur. Which design principle supports this approach?" (Answer: Biomimicry and material computation; organism optimization strategies)
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 4. **Data-Driven Urbanism**: "Urban design increasingly relies on real-time mobility data to inform interventions. What is the theoretical advantage and disadvantage of this approach?" (Answer: Data captures actual behavior (advantage); may ignore non-quantifiable cultural/memorial values (disadvantage))
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 5. **AI Literacy**: "What is the primary risk when using machine learning to optimize facade transparency for daylighting?" (Answer: ML may produce statistically average solutions; cultural/aesthetic preferences beyond measurable metrics are ignored; homogenization across global practices using same datasets)
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Parametric with Merely Complex", correction="A building with lots of curves is not parametric unless the curves are algorithmically linked to defined parameters.", context="Visual complexity ≠ parametric logic."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Assuming Digital Fabrication Requires Parametricism", correction="CNC mills can produce both parametric and non-parametric forms. Digital fabrication is a manufacturing method; parametricism is a design philosophy.", context="They are synergistic but separate."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Romanticizing Biomimicry Without Material Honesty. Claiming a design is \\\"biomimetic\\\" because it resembles an organism is superficial. True biomimicry reverse-engineers the *optimization logic*, not merely the visual form.\", \"Treating AI as Design Replacement. Contemporary discourse about AI emphasizes it as design *augmentation*, not replacement. Architects still set parameters, curate outputs, and make value judgments. The risk is treating the algorithm's optimization as authority rather than input.\", \"Ignoring Embodied Energy and Lifecycle Costs. Algorithmic optimization often targets operational efficiency (energy use during occupancy). This can obscure high embodied carbon in complex fabrication, rare materials, or manufacturing transport. Genuine sustainability requires lifecycle assessment.\", \"Assuming Global Homogenization is Inevitable. Critics worry ML-optimized designs will converge globally. Counters: different regions have different climate, material, and labor parameters; local traditions can be encoded into algorithms; human curation still filters outputs.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

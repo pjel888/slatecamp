@@ -99,7 +99,7 @@ Exams ask what building systems reveal about state organization. Example: "The *
 
 **Seismic resistance**: Structural capacity to withstand and survive earthquake ground motion; Inca ashlar masonry demonstrates empirical seismic design.
 
-<ArticleMedia id="media-hist-012-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of Inca architectural features: ashlar dry-stone masonry, trapezoidal openings, cyclopean walls, and batter, with annotated examples from Machu Picchu, Sacsayhuamán, and Ollantaytambo showing earthquake-resistant construction.\" caption=\"Inca Architecture — Key Structural Features\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-012-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of Inca architectural features: ashlar dry-stone masonry, trapezoidal openings, cyclopean walls, and batter, with annotated examples from Machu Picchu, Sacsayhuamán, and Ollantaytambo showing earthquake-resistant construction." caption="Inca Architecture — Key Structural Features" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

@@ -14,7 +14,11 @@ After studying this article, you should be able to:
 
 Comprehensive Architectural Services encompasses five primary categories: pre-design services, regular design services, specialized architectural services, construction services, and post-construction services. The architect functions as the _prime professional_, serving as the client's agent in coordinating all necessary services for project delivery. This coordinating role defines the architect's leadership position within the project team.
 
-<ArticleMedia id="media-lea-prac-svc-017-comprehensive-architect" type="image" caption="Comprehensive Architectural Services — The Five Service Categories" alt="Process flow diagram showing the five CAS categories: Pre-Design Services (SPP 201) → Regular Design Services (SPP 202) → Specialized Architectural Services (SPP 203) → Construction Services (SPP 204) → Post-Construction Services (SPP 205). The architect is shown as prime professional coordinating all categories." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-svc-017-comprehensive-architect", type="image", caption="Comprehensive Architectural Services — The Five Service Categories", description="Process flow diagram showing the five CAS categories: Pre-Design Services (SPP 201) → Regular Design Services (SPP 202) → Specialized Architectural Services (SPP 203) → Construction Services (SPP 204) → Post-Construction Services (SPP 205). The architect is shown as prime professional coordinating all categories.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 The architect is not expected to perform all services directly.
 
@@ -38,13 +42,29 @@ This extended engagement creates continuity of service, which is essential for e
 
 When the client hires an architect to coordinate the complete range of Comprehensive Architectural Services, this relationship constitutes _Project Management (PM)_. Project Management represents the owner's engagement of the architect for the full scope of professional responsibility.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="SPP206RefServices" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -61,4 +81,8 @@ When the client hires an architect to coordinate the complete range of Comprehen
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

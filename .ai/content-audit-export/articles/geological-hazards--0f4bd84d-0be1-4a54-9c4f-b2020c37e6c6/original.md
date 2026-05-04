@@ -165,7 +165,7 @@ PD 1096 (National Building Code) through its RIRR mandates that a geotechnical i
 
 
 
-<ArticleMedia type="image" caption="Geological Hazard Mapping — Fault Buffer, Liquefaction, and Landslide Zones" description="Composite site hazard map showing: active fault trace with 5m minimum no-build buffer (PHIVOLCS), liquefaction susceptibility zones (high/medium/low based on soil type and water table), landslide hazard overlay (slope >30° triggers), seismic zone factors per NSCP, and recommended geotechnical investigation borehole locations." />
+<ArticleMedia id="media-geological-hazards-image" type="image" caption="Geological Hazard Mapping — Fault Buffer, Liquefaction, and Landslide Zones" description="Composite site hazard map showing: active fault trace with 5m minimum no-build buffer (PHIVOLCS), liquefaction susceptibility zones (high/medium/low based on soil type and water table), landslide hazard overlay (slope >30° triggers), seismic zone factors per NSCP, and recommended geotechnical investigation borehole locations." />
 ## Cross‑References
 
 **Microclimate Analysis**, **Topography And Slope Analysis**, **Hydrology In Site Planning**, **Excavation Foundation And Veneer**

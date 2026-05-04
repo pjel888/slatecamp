@@ -16,13 +16,25 @@ Housing finance in the Philippines operates through a tiered system designed to 
 **RA 6552 (Maceda Law)**, formally the Realty Installment Buyer Protection Act (1972), provides critical protections for individuals purchasing property on installment. The law distinguishes between buyers who have paid less than 2 years and those who have paid 2 years or more. Buyers with less than 2 years of installment payments receive a grace period (1 month per year paid) but no refund if the seller cancels the contract. Buyers with 2 years or more paid receive a minimum 50% refund of total payments, plus an additional 5% per year for payments beyond 5 years (capped at 90% total refund). The grace period is calculated as 1 month for every year of installments paid—a buyer with 4 years of payments gets 4 months grace before the slea can be cancelled for non-payment.
 
 These mechanisms—multi-source financing, community-based programs, and buyer protection laws—create a comprehensive framework ensuring affordability while preventing exploitative practices.
-<ArticleMedia id="media-lea-plan-003-03-core-concept" type="image" caption="Housing Finance System — Pag-IBIG, SHFC, NHA Roles" alt="Diagram showing housing finance institutions and their roles: Pag-IBIG/HDMF (individual buyer housing loans), SHFC (Community Mortgage Program - community-based), NHA (housing producer, not financier). Maceda Law (RA 6552) installment buyer protection stages shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-003-03-core-concept", type="image", caption="Housing Finance System — Pag-IBIG, SHFC, NHA Roles", description="Diagram showing housing finance institutions and their roles: Pag-IBIG/HDMF (individual buyer housing loans), SHFC (Community Mortgage Program - community-based), NHA (housing producer, not financier). Maceda Law (RA 6552) installment buyer protection stages shown.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="[", Financing=true, Entity=true, Primary=true, Function=true, Loan=true, Types=true, Mandatory=true, Membership=true, rows="[[", Pag-IBIG=true, HDMF=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="[", Installments=true, Paid=true, Buyer=true, Rights=true, on=true, Cancellation=true, Grace=true, Period=true, rows="[[", Less=true, than=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -36,7 +48,11 @@ The Philippine housing finance system reflects the nation's struggle to balance 
 
 **Pattern 3 — CMP Eligibility:** "Which program allows a community organization collectively to purchase the land they occupy?" → Community Mortgage Program (SHFC). Tests understanding that CMP is community-level, not individual-buyer financing.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Maceda Law: < 2 years = grace only (no refund); ≥ 2 years = 50% minimum refund. Grace = 1 month per year paid. NHA builds housing; Pag-IBIG finances buyer loans.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** NHA does NOT finance individual buyer loans. NHA PRODUCES housing. SHFC finances community-based programs via CMP. Pag-IBIG finances individual wage-worker loans. This agency role distinction is frequently tested.
 

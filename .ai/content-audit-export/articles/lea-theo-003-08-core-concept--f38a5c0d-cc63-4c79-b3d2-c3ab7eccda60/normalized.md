@@ -7,21 +7,37 @@ Identify and apply the five Gestalt principles of visual perception — proximit
 
 ### Gestalt Psychology and Visual Perception
 
-|<ArticleMedia id="media-lea-theo-003-08-core-concept" type="image" caption="Five Gestalt Principles of Visual Perception — Illustrated with Architectural Examples" alt="Five-panel diagram: (1) Proximity — elements close together perceived as a group (clustered columns, grouped windows); (2) Similarity — similar shapes/colors perceived as related (repeated bay rhythm, consistent material palette); (3) Continuity — the eye follows lines and curves (circulation paths, aligned structural grids); (4) Closure — the mind completes incomplete forms (implied volumes, partial arches, corner windows that read as continuous glazing); (5) Figure-Ground — positive form vs negative space (Nolli map showing solid vs void, building mass vs courtyard). Each Gestalt principle shows both abstract and architectural examples." suggestedAsset="Diagram or reference image" status="placeholder" />
+|[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-003-08-core-concept", type="image", caption="Five Gestalt Principles of Visual Perception — Illustrated with Architectural Examples", description="Five-panel diagram: (1) Proximity — elements close together perceived as a group (clustered columns, grouped windows); (2) Similarity — similar shapes/colors perceived as related (repeated bay rhythm, consistent material palette); (3) Continuity — the eye follows lines and curves (circulation paths, aligned structural grids); (4) Closure — the mind completes incomplete forms (implied volumes, partial arches, corner windows that read as continuous glazing); (5) Figure-Ground — positive form vs negative space (Nolli map showing solid vs void, building mass vs courtyard). Each Gestalt principle shows both abstract and architectural examples.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-lea-theo-003-08-core-concept-b" type="image" caption="Figure-Ground (Nolli Map) — Reading Urban Form as Positive and Negative Space" alt="Figure-ground diagram of a historic urban district (e.g., Rome Nolli map style) showing building masses in solid black (figure) and streets, plazas, courtyards in white (ground). The same composition is shown both as building-as-figure and space-as-figure to illustrate the reversible nature of figure-ground perception. Annotations highlight how this principle helps architects understand urban grain, spatial hierarchy, and the relationship between built form and public space." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-003-08-core-concept-b", type="image", caption="Figure-Ground (Nolli Map) — Reading Urban Form as Positive and Negative Space", description="Figure-ground diagram of a historic urban district (e.g., Rome Nolli map style) showing building masses in solid black (figure) and streets, plazas, courtyards in white (ground). The same composition is shown both as building-as-figure and space-as-figure to illustrate the reversible nature of figure-ground perception. Annotations highlight how this principle helps architects understand urban grain, spatial hierarchy, and the relationship between built form and public space.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Gestalt Psychology and Visual Perception
 
 **Gestalt psychology** emerged in early 20th-century Germany with the insight that humans perceive wholes, not collections of parts. The German word "gestalt" means "form" or "whole"; the fundamental principle is that the mind organizes visual information into coherent, meaningful patterns—wholes—rather than processing isolated elements. When you look at a building, you perceive it as a unified object, not as random collections of walls, windows, columns, and ornaments. This wholeness emerges through psychological organization operating according to learnable principles.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Gestalt's core insight: **the whole is not the sum of parts**—the mind automatically organizes visual information into coherent patterns through five learnable principles (proximity, similarity, continuity, closure, figure-ground).
+[/SLATECAMP_UI_BLOCK]
 
 German psychologists Max Wertheimer, Kurt Koffka, and Wolfgang Kohler developed gestalt principles through research and observation in the 1920s and 1930s. They documented that humans automatically group visual elements according to consistent rules. These rules are not learned; they operate at pre-conscious levels. Infants show gestalt grouping before cultural learning. However, gestalt principles operate within cultural visual experience; people exposed to different visual environments may emphasize different groupings.
 
 For architects, gestalt principles explain how occupants perceive spaces and compositions. A building composed of distinct, isolated elements appears fragmented and chaotic. A building composed to follow gestalt principles—grouping related elements, creating continuity, emphasizing wholeness—appears organized and coherent. Gestalt principles operate throughout architectural scales: the organization of a single facade, the arrangement of rooms within a floor, the circulation hierarchy of a complex building, the organization of a campus or urban district.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Gestalt principles operate at **pre-conscious levels**—occupants respond to them before conscious thought. This is why gestalt-organized spaces feel "right" and gestalt-violating spaces feel "wrong" without occupants necessarily understanding why.
+[/SLATECAMP_UI_BLOCK]
 
 Understanding gestalt principles gives architects conscious control over how spaces are perceived. Rather than assuming that careful dimensional control and precision ensure good design, architects can recognize that perceptual organization following gestalt principles produces satisfying, comprehensible spaces independent of dimensional precision.
 
@@ -108,32 +124,76 @@ Effective architectural design applies gestalt principles in concert, not in iso
 
 However, gestalt principles are not rules to be rigidly followed. Contemporary architecture sometimes deliberately violates gestalt principles to create dynamic, unsettling, or experimental effects. Deconstructivism violates continuity and figure-ground clarity. Parametric architecture creates similarity through generative logic rather than visual uniformity. Successful principle violation requires conscious design intent and awareness of what principles are being violated and why.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The most common gestalt error: **assuming principles are rigid rules** rather than descriptions of natural perception. Excellent design may intentionally violate principles for effect; mediocre design violates them accidentally, creating confusion without intention or benefit.
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Principle\", \"Definition\", \"Architectural Example\", \"LEA Test Pattern\"]}", rows="{[['[\"**Proximity**\", \"Elements positioned close together are perceived as related and grouped; distance creates separation\", \"Columns grouped closely define bays; windows clustered define zones\", \"Design facade or space with proximity-based grouping; analyze how spacing affects perception\"]', '[\"**Similarity**\", \"Elements sharing visual characteristics (color, shape, size, texture) are perceived as grouped despite spatial separation\", \"Uniform fenestration creates facade unity; matching materials create campus cohesion\", \"Select materials and elements creating visual unity through similarity; identify similarity in existing buildings\"]', '[\"**Continuity**\", \"Eye follows curves and lines; smooth continuation is preferred to abrupt changes; creates visual flow\", \"Axial corridors provide navigation clarity; horizontal fenestration bands create unified elevation\", \"Design circulation with clear continuity; analyze how interrupted continuity disrupts spatial coherence\"]', '[\"**Closure**\", \"Complete shapes are perceived from incomplete information; mind fills in missing visual information\", \"Colonnades define space without walls; partially visible buildings are still understood\", \"Design spaces using partial definition and implied enclosure; analyze how closure affects space perception without full enclosure\"]', '[\"**Figure-Ground**\", \"Objects (figures) are perceptually separated from surrounding context (ground); relationship is relational and reversible\", \"Buildings distinguished from context through contrast; fenestration patterns defining figure-ground relationships\", \"Analyze buildings\\' figure-ground relationships; design clear figure-ground hierarchy in facade or plan composition\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Gestalt Principle Definition and Identification** Stem: "Identify which gestalt principle is demonstrated by each: (a) A row of windows closely spaced followed by a wider gap, then another group of windows creates visual perception of two distinct building bays. (b) An interior space is defined by a circular row of columns without perimeter walls. (c) A glass building's translucent quality makes it difficult to perceive as distinct from its surroundings. (d) Staircases with consiste
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Facade Design Application** Stem: "Design a three-story commercial facade for a 30-meter-wide building. Using gestalt principles, create visual unity and hierarchy that communicates ground-level retail, mid-level office, and upper-level residential uses." Expected response: Proximity-based grouping of windows by floor; similarity through material or color differentiation by use; continuity through horizontal bands or vertical columns emphasizing organizational logic; closure through
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Spatial Organization Problem** Stem: "A university campus with 12 buildings shows low wayfinding clarity despite signage. Using gestalt principles, explain perceptual problems and propose organizational strategies." Expected response: Identification of gestalt failures: buildings not grouped by proximity or similarity, creating perception of scattered objects; circulation paths lacking continuity, requiring multiple mental reorientation; inadequate closure in spatial organization, l
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Interior Space Composition** Stem: "Design an open-plan office floor accommodating 40 workers while maintaining visual clarity and functional zones without full walls. Apply gestalt principles to create coherent spatial organization perceived as organized, not chaotic." Expected response: Proximity clustering of desks into functional groups; similarity through desk type, materials, color creating zone definition; continuity through linear desk arrangements and sight-line management;
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Complex Building Facade Analysis** Stem: "Analyze this building facade photograph in terms of gestalt principles. How do the design choices create or disrupt perceptual organization? Propose modifications improving gestalt clarity." Expected response: Identification of proximity groupings, similarity patterns, continuity (or disruption) of visual lines, closure application, and figure-ground relationships. Analysis of whether these create unified coherence or visual confusion. Speci
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: You must know all five Gestalt principles of visual perception: proximity, similarity, continuity, closure, and figure-ground. You must be able to define each principle, explain its psychological basis, and provide architectural examples. The LEA will test these as definitions, visual identification in building designs, and design application problems requiring you to compose spaces following gestalt principles.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating gestalt principles as universal laws", correction="Assuming gestalt principles apply identically in all cultural contexts.", context="While gestalt principles are fundamental to human perception, their emphasis varies across cultures and individual contexts."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Over-applying similarity", correction="Using such uniform materials, colors, and forms that visual monotony results.", context="While similarity creates unity, excessive similarity creates boredom and visual fatigue."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Disrupting continuity unnecessarily. Creating fragmented visual experiences through frequent directional changes and disrupted sightlines without design intent. Continuity supports navigation clarity; unnecessary disruption creates confusion.\", \"Misunderstanding closure. Assuming closure means complete visual enclosure. Closure operates through implied completion; partial definition often creates more sophisticated spatial experience than complete enclosure.\", \"Confusion about figure-ground relativity. Assuming figure-ground relationships are fixed rather than relational and reversible. Good design makes intentional choices about what reads as figure and what reads as ground; ambiguity creates confusion.\", \"Ignoring complexity at different scleas. Applying gestalt principles at single sclea without recognizing their operation at multiple scleas. A facade may have coherent gestalt organization at close view and different organization at city sclea.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

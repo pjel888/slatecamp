@@ -1,19 +1,22 @@
 {
-  "attempted_at": "2026-05-04T02:25:55.900Z",
+  "attempted_at": "2026-05-04T09:13:50.251Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
   "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+    "candidate.md matches original.md; refusing no-op apply.",
+    "ui-blocks.json contains unknown/unparseable blocks; rerun with --force only after manual review."
   ],
   "warnings": [],
   "updated_rows_count": 0,
   "article_id": "93009368-9041-46e0-b93b-8786100311be",
   "slug": "pd-1096-rule-xii-egress-and-corridors",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:69fed52b89130a7f8a44a1ae3e9e096985fbd912f666c134992a0b7395268778",
-  "original_hash": "sha256:69fed52b89130a7f8a44a1ae3e9e096985fbd912f666c134992a0b7395268778",
-  "candidate_hash": "sha256:fdd6d80b5d99b200712a297bf8459b97446d984ed8a793cf592b0a72e76f61ee",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:af04ec0f07736d24450f7e2dc999ddac4ba4a947b35e32476e6d08054f9b17b6",
+  "original_hash": "sha256:af04ec0f07736d24450f7e2dc999ddac4ba4a947b35e32476e6d08054f9b17b6",
+  "candidate_hash": "sha256:af04ec0f07736d24450f7e2dc999ddac4ba4a947b35e32476e6d08054f9b17b6",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T16:38:17.507433+00:00"
+  "remote_updated_at_before": "2026-05-04T02:41:53.946557+00:00"
 }

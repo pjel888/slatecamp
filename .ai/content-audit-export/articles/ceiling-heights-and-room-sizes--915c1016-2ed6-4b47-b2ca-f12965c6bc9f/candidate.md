@@ -8,9 +8,9 @@ Apply PD 1096 Rule VIII minimum ceiling heights (2.40 m residential, 2.70 m comm
 
 ## The Real-World Hook
 
-<ArticleMedia id="media-ceiling-height-section-diagram" type="diagram" caption="Cross-section diagram of a multi-storey building showing ceiling height tiers: natural ventilation (2.70 m all floors), artificial ventilation single-storey (2.40 m), artificial ventilation multi-storey (2.70 m 1st floor, 2.40 m 2nd floor, 2.10 m 3rd+ floors). Color-code each tier and show mezzanine 1.80 m clearances above and below." />
+<ArticleMedia id="media-ceiling-heights-and-room-sizes-0" name="ceiling-height-section-diagram" type="diagram" caption="Cross-section diagram of a multi-storey building showing ceiling height tiers: natural ventilation (2.70 m all floors), artificial ventilation single-storey (2.40 m), artificial ventilation multi-storey (2.70 m 1st floor, 2.40 m 2nd floor, 2.10 m 3rd+ floors). Color-code each tier and show mezzanine 1.80 m clearances above and below." />
 
-<ArticleMedia id="media-room-dimension-floorplan" type="diagram" caption="Annotated floor plan showing minimum room sizes: habitable room 6.00 sqm (2.00 m least dimension), kitchen 3.00 sqm (1.50 m least dim), bath/toilet 1.20 sqm (0.90 m least dim). Show dimensional callouts and darken non-compliant zones for contrast." />
+<ArticleMedia id="media-ceiling-heights-and-room-sizes-1" name="room-dimension-floorplan" type="diagram" caption="Annotated floor plan showing minimum room sizes: habitable room 6.00 sqm (2.00 m least dimension), kitchen 3.00 sqm (1.50 m least dim), bath/toilet 1.20 sqm (0.90 m least dim). Show dimensional callouts and darken non-compliant zones for contrast." />
 
 A mid-rise residential condominium in Cebu City fails its pre-occupancy inspection. The building official's report: ceiling heights in second-floor units measure only 2.35 m, the single bedroom in each unit is 5.8 sq m, and the kitchen window opens onto an interior shaft. Every deficiency is a violation of PD 1096, Rule VIII — and each will prevent issuance of a Certificate of Occupancy under Section 309.
 

@@ -38,6 +38,7 @@ Three decades after LoI 1000, SPP 209 was revised under pressing circumstances:
 
 </Callout>
 
+
 ### 1.4 The Joint Resolution Basis
 
 The 2010 SPP 209 is based on the document jointly drafted by PTC and CBNE in accordance with their **Joint Resolution No. 2009-01 dated December 11, 2009**, incorporating relevant provisions from:
@@ -80,6 +81,7 @@ The inflow of foreign consultants is often justified on the ground of "technolog
 
 </Callout>
 
+
 ### 2.6 Educational Capital Loss
 
 The disproportionate inflow versus outflow of expertise represents a **tremendous loss to the country in terms of educational costs** — depriving the nation of contributions from returning Filipino professionals.
@@ -91,6 +93,7 @@ The disproportionate inflow versus outflow of expertise represents a **tremendou
 *"The professional competence of Filipino Professional Consultants (FPCs), specifically Professional Consulting Architects (PCAs) is well established and adequate to meet the country's requirements. In fact, in many cases, foreign consultants depend largely on the expertise and information furnished by FPCs, especially PCAs."*
 
 </Callout>
+
 
 ### 2.8 Primary Purpose of SPP 209
 
@@ -114,6 +117,7 @@ SPP 209 sets out **five specific policy objectives**:
 
 </ComparisonTable>
 
+
 ***
 
 ## 4. Declaration of Policy
@@ -125,6 +129,7 @@ SPP 209 invokes **Section 14, Article XII of the 1987 Philippine Constitution** 
 *"The sustained development of a reservoir of national tleants consisting of Filipino scientists, entrepreneurs, professionals, managers, high-level technical manpower and skilled workers and craftsmen in all fields shall be promoted by the State. The State shall encourage appropriate technology and regulate its transfer for the national benefit. The practice of all professions in the Philippines shall be limited to Filipino citizens, save in cases prescribed by law."*
 
 </Callout>
+
 
 All State-registered and licensed professionals (RLPs) — including RLAs — are **mandatorily required** to strictly adhere to their respective SPPs within the framework of this constitutional provision.
 
@@ -141,6 +146,7 @@ SPP 209 introduces a comprehensive set of definitions specific to the consulting
 Any person, whether natural or juridical, duly licensed, registered and/or duly accredited by the Commission; must be a Philippine-registered and licensed Architect (RLA), with a valid registration certification and Commission ID card, and a member in good standing of the IAPOA.
 
 </Callout>
+
 
 ### 5.2 Filipino Professional Consulting Architect (FPCA)
 
@@ -162,6 +168,7 @@ An individual, NOT a Philippine citizen, who:
 The rendering by a PCA or by a Consulting Architectural Firm (CAF/RAF), of **independent advice, extension of technical assistance and services**, as well as undertaking of activities requiring appropriate knowledge, skills, training and experience, recognized competence, integrity, and/or financial and logistical capability.
 
 </Callout>
+
 
 ### 5.5 Consulting Architectural Firm (CAF)
 
@@ -226,6 +233,7 @@ The scope of PACS shall be defined in accordance with the charter, by-laws, poli
 
 </ComparisonTable>
 
+
 Note that several of these PACS services overlap with specific SPP documents (e.g., 6.7 overlaps with SPP 201, 6.11–6.12 overlap with SPP 207/204-B, 6.13 overlaps with SPP 205). Under SPP 209, these services are provided in a **consulting capacity** — advisory, technical assistance, or developmental — rather than as a direct Architect-of-Record engagement.
 
 ***
@@ -247,6 +255,7 @@ A PCA must satisfy **all five** of the following qualifications:
 | **7.5** | Clean record | Never convicted of any criminal or administrative offense related to deliberate wrongdoing | Same requirement applies |
 
 </ComparisonTable>
+
 
 ***
 
@@ -287,6 +296,7 @@ For **Government projects**, the selection of PCAs shall be **in accordance with
 *"It shall be mandatory on the part of the Client, whether in Government, private sector or CSO or the international community, to give priority to Filipino Professional Consultants (FPCs) over foreign consultants in the selection, commissioning and engagement of PCAs for projects on Philippine soil, in accordance with applicable existing laws."*
 
 </Callout>
+
 
 ### 8.3 Priority Rule: Filipino PCAs First
 
@@ -377,6 +387,7 @@ The percentage rate varies depending on the type of PACS, the project group clas
 
 </ComparisonTable>
 
+
 ***
 
 ## 10. Owner's/Client's Responsibilities
@@ -420,6 +431,7 @@ Any individual, partner, firm/corporation/consortium who engages in PACS but is 
 
 </Callout>
 
+
 The NQE clause directly addresses the "proliferation of entities projecting themselves as consultants" without proper credentials — a key concern that triggered the 2010 revision.
 
 ### 11.3 Intellectual Property Rights
@@ -453,6 +465,7 @@ SPP 209 is the **capstone document** of the 2010 SPP series — it governs the p
 
 </ComparisonTable>
 
+
 ***
 
 ## 13. Practical Notes for Architects and Clients
@@ -472,23 +485,15 @@ SPP 209 is the **capstone document** of the 2010 SPP series — it governs the p
 
 ---
 
+
+
 ---
 
 ## Exam Tip
 
 LEA Swipe: PACS = Professional Architectural Consulting Services. A consultant under SPP 209 CANNOT be the architect of record on the same project. Fee arrangements: hourly, retainer, or fixed fee. The 'no dual role' prohibition is the most tested principle — an architect cannot both design (as AOR) and advise (as consultant) on the same project.
 
-
-
----
-
-## Exam Tip
-
-ALE Swipe: PACS = Professional Architectural Consulting Services. A consultant under SPP 209 CANNOT be the architect of record on the same project. Fee arrangements: hourly, retainer, or fixed fee. The 'no dual role' prohibition is the most tested principle — an architect cannot both design (as AOR) and advise (as consultant) on the same project.
-
 ## Cross‑References
 
 **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 207 Design Build Services**, **Spp Doc 208 Architectural Design Competition Adc**, **Uap Spp Doc Standards Of Professional Practice For Philippine Architects**
 
-
-<!-- no-media-needed: SPP document reference, service scope text is optimal -->

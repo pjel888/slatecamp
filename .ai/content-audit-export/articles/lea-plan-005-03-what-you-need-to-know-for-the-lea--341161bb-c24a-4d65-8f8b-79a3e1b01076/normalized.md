@@ -14,6 +14,10 @@ Identify the key provisions of the five core Philippine environmental laws (PD 1
 **Water body easement distances (from PD 1067):**
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Water Body Type\", \"Easement Distance from Edge\", \"Legal Basirows={[ [\"All water bodies (urban areas)\", \"3 meters\", \"PD 1067 Art 51\"], [\"All water bodies (agricultural areas)\", \"20 meters\", \"PD 1067 Art 51\"], [\"All water bodies (forest areas)\", \"40 meters\", \"PD 1067 Art 51\"], [\"Sea and foreshore\", \"40 meters from maximum high tide line (forest zone)\", \"PD 1067 Art 51\"] ]}", PD=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 **Key planning implications:**
 
@@ -99,7 +103,11 @@ A site plan checklist integrating all laws:
 ### Summary
 
 Philippine environmental and land-use laws establish essential constraints on landscape and site planning. PD 1067 easement distances protect water bodies and establish public access rights. PD 1586 requires environmental assessment for critical projects. RA 7586 protects biodiversity in designated areas. RA 9275 mandates wastewater treatment, and RA 9003 requires waste management integration. Successful site planning recognizes these legal requirements as design opportunities to create resilient, compliant, and environmentally beneficial landscapes.
-<ArticleMedia id="media-lea-plan-005-03-what-you-need-to-know-fo" type="image" caption="Environmental and Land-Use Laws — PD 1586, PD 1067, RA 9275 Framework" alt="Framework diagram of Philippine environmental laws: PD 1586 (EIS system, ECC process), PD 1067 (Water Code easements: 3/20/40m), RA 9275 (Clean Water Act, water quality standards), RA 9003 (Ecological Solid Waste Management), and RA 9147 (Wildlife Conservation). EIA process flowchart." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-005-03-what-you-need-to-know-fo", type="image", caption="Environmental and Land-Use Laws — PD 1586, PD 1067, RA 9275 Framework", description="Framework diagram of Philippine environmental laws: PD 1586 (EIS system, ECC process), PD 1067 (Water Code easements: 3/20/40m), RA 9275 (Clean Water Act, water quality standards), RA 9003 (Ecological Solid Waste Management), and RA 9147 (Wildlife Conservation). EIA process flowchart.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ---

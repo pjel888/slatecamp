@@ -10,7 +10,7 @@ After reading this article, you should be able to:
 
 Design Development builds upon the approved schematic design to produce detailed drawings, specifications, and cost estimates. This phase earns 20% of the architect's total design fees and focuses on translating conceptual design into technical documents ready for contract document preparation.
 
-<ArticleMedia id="media-lea-prac-svc-006-phase-2-design-developm" type="image" caption="SPP Doc 202 Six-Phase Framework — Design Development Phase in Context" alt="Process flow highlighting Phase 3 (Design Development) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design → Design Development (20% fee, detailed drawings, outline specifications, consultant coordination, updated cost estimates) → Contract Documents → Bidding → Construction Admin." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-006-phase-2-design-developm" type="image" caption="SPP Doc 202 Six-Phase Framework — Design Development Phase in Context" description="Process flow highlighting Phase 3 (Design Development) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design → Design Development (20% fee, detailed drawings, outline specifications, consultant coordination, updated cost estimates) → Contract Documents → Bidding → Construction Admin." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Design Development Deliverables
 

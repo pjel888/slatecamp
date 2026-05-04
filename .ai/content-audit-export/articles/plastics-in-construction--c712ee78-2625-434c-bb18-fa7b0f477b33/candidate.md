@@ -11,10 +11,6 @@ Apply the fire performance and use limitations for plastics in buildings under P
 
 ## 1. Hook / Opening Scenario
 
-<ExamTip>
-This section is frequently tested. Pay special attention to the distinctions and exceptions.
-</ExamTip>
-
 A plan reviewer flags a proposed mixed-use commercial building in a less restrictive Fire Zone: the architect has specified polycarbonate skylights covering 25% of the ground-floor retail area, plastic light diffusers in all corridors, and a translucent plastic veneer extending up to the third floor. Without knowing the precise limits under Rule XVI of PD 1096, an architect risks costly redesigns, failed inspections, and — in the worst case — a building that becomes a rapidly spreading fire hazard when its skylights detach and let flames vent unchecked through the structure.
 
 ---
@@ -454,25 +450,15 @@ Return to this module in **3 days**. If you can answer the three Active Recall q
 
 ---
 
+
+
 ---
 
 ## Exam Tip
 
 LEA Trap: Foam plastic insulation requires a 15-minute thermal barrier unless protected by 1/2″ gypsum board. Maximum permitted foam plastic area in interior finish = 10% of wall/celling area (for foam plastic not covered by thermal barrier). The 15-minute thermal barrier is the key safety requirement.
 
-
-
----
-
-## Exam Tip
-
-ALE Trap: Foam plastic insulation requires a 15-minute thermal barrier unless protected by 1/2″ gypsum board. Maximum permitted foam plastic area in interior finish = 10% of wall/celling area (for foam plastic not covered by thermal barrier). The 15-minute thermal barrier is the key safety requirement.
-
 ## Cross‑References
 
 **Prefabricated Constructions**, **Sheet Metal And Spray Booths**, **Lathing And Plastering**, **Fire Resistive Construction Ratings**
 
-<Note>
-Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards and amendments.
-</Note>
-<!-- no-media-needed: existing content format is sufficient without visual media -->

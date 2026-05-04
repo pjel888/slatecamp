@@ -25,6 +25,10 @@ Recall the core wheelchair mnemonic (4.0-1.8-2.3-1.5-1.8-1.2 m) and apply each v
 
 ## 2. Accessible Parking (BP 344 2024 IRR – Appendix C)
 
+<ArticleMedia id="media-wheelchair-maneuvering-and-par-0" name="accessible-parking-layout" type="diagram" caption="Top-down parking layout showing accessible stall 4.0 m × 5.0 m with 1.8 m access aisle. Show two configurations: single stall + aisle = 5.8 m total width, and two stalls sharing an aisle = 9.8 m total width. Include vertical clearance callout (2.3 m), the shortest route to accessible entrance arrow, and PWD signage symbol." />
+
+<ArticleMedia id="media-accessible-corridor-ramp-profile" name="accessible-corridor-ramp-profile" type="diagram" caption="Plan and section of accessible corridor (1.5 m clear width) with turning spaces (1.8 m × 1.8 m every 12 m) and passing space (1.8 m × 2.0 m). Below, show ramp profile with 1.2 m width, 1:20 preferred slope, 1.8 m landings at top/bottom, intermediate landing for runs >10.5 m, and 100 mm edge curb." />
+
 Accessible slots must be nearest the accessible entrance and on the shortest route.[web:8][web:11]
 
 | Item                   | 2024 Spec           | Memory Hook                                    |
@@ -120,7 +124,6 @@ RAMPS & EXTERIOR
 
 Use this one page as your **go‑to widths & slopes sheet** for LEA questions on wheelchair maneuvering, parking, corridors, ramps, and passing spaces.[file:1][file:2][web:8][web:11]
 
-
 ---
 
 <LawCallout code="bp344" section="Section 6 - Maneuvering Space">
@@ -149,3 +152,5 @@ Memorize the mnemonic: '4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2'. Test yoursel
 
 **Wheelchair Maneuvering And Parking Slots**, **Accessible Seating In Assembly Areas**, **Standard Human Body Dimensions**, **Bp 344 Accessible Washrooms**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

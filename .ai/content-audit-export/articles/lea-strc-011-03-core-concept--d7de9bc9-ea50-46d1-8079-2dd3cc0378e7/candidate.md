@@ -11,7 +11,7 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
-<ArticleMedia id="media-lea-strc-011-03-core-concept" type="image" caption="Geotechnical Investigation — Soil Profile and Bearing Capacity" alt="Diagram of a geotechnical boring log showing: (1) Soil profile layers (topsoil, clay, sand, weathered rock, bedrock); (2) Standard Penetration Test (SPT) N-values at each depth; (3) Groundwater table elevation; (4) Soil classification per USCS; (5) Allowable bearing capacity calculated from soil properties. Boring location plan on site map showing required number of borings per structure type." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-011-03-core-concept" type="image" caption="Geotechnical Investigation — Soil Profile and Bearing Capacity" description="Diagram of a geotechnical boring log showing: (1) Soil profile layers (topsoil, clay, sand, weathered rock, bedrock); (2) Standard Penetration Test (SPT) N-values at each depth; (3) Groundwater table elevation; (4) Soil classification per USCS; (5) Allowable bearing capacity calculated from soil properties. Boring location plan on site map showing required number of borings per structure type." suggestedAsset="Diagram or reference image" status="placeholder" />
 Geotechnical engineering characterizes soil, predicts its behavior under load, and specifies construction practices to achieve stable foundations. Five core topics unite this field:
 
 **1. Soil Classification and Properties:**

@@ -1,20 +1,21 @@
 {
-  "attempted_at": "2026-05-04T02:17:07.556Z",
+  "attempted_at": "2026-05-04T09:13:37.507Z",
   "dry_run": false,
   "apply": true,
-  "pushed": true,
-  "blockers": [],
+  "pushed": false,
+  "blockers": [
+    "candidate.md matches original.md; refusing no-op apply."
+  ],
   "warnings": [],
-  "updated_rows_count": 1,
+  "updated_rows_count": 0,
   "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
   "slug": "accessible-seating-in-assembly-areas",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:e2cc0b3222a5993bb0f8ea9d70cccc1eafba735ff1a277e6bcf3ba3edd0bb37e",
-  "original_hash": "sha256:e2cc0b3222a5993bb0f8ea9d70cccc1eafba735ff1a277e6bcf3ba3edd0bb37e",
-  "candidate_hash": "sha256:33bd1e99dbcf1c1c15ee6d7e2c03853ee8ba401b7c7c8d1a6f96f1c7a03078ea",
+  "remote_hash_before": "sha256:73600619caf691bbae5718e52d8401fb40c04ed4ee69e020923278483ebfb207",
+  "original_hash": "sha256:73600619caf691bbae5718e52d8401fb40c04ed4ee69e020923278483ebfb207",
+  "candidate_hash": "sha256:73600619caf691bbae5718e52d8401fb40c04ed4ee69e020923278483ebfb207",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:51:18.885442+00:00",
-  "updated_at_after": "2026-05-04T02:17:08.024035+00:00"
+  "remote_updated_at_before": "2026-05-04T06:02:14.366643+00:00"
 }

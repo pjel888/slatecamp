@@ -20,9 +20,9 @@ Distinguish automatic sprinkler systems (wet pipe, dry pipe, pre-action, deluge)
 
 ## Hook Scenario
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="fire-system-triggers-diagram" type="diagram" caption="Decision tree for when fire-extinguishing systems are required: check floor area ≥ 200 sqm AND occupant load > 20 → sprinkler/standpipe required. Separate branches for workshops (>10 persons), assembly halls (>500 occ + exits >30m), and inflammable storage. Show the 4-storey rule for dry standpipe as a separate trigger."]
+<ArticleMedia id="media-fire-system-triggers-diagram" name="fire-system-triggers-diagram" type="diagram" caption="Decision tree for when fire-extinguishing systems are required: check floor area ≥ 200 sqm AND occupant load > 20 → sprinkler/standpipe required. Separate branches for workshops (>10 persons), assembly halls (>500 occ + exits >30m), and inflammable storage. Show the 4-storey rule for dry standpipe as a separate trigger." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="standpipe-sprinkler-layout" type="diagram" caption="Building cross-section showing dry standpipe (63 mm outlets at each floor, roof 2-way outlet, Siamese at street level 300–1200 mm above grade) vs wet standpipe (38 mm outlets pressurized). Show sprinkler heads and travel distance trade-off: 45 m without sprinklers vs 60 m with sprinklers."]
+<ArticleMedia id="media-fire-extinguishing-systems-1" name="standpipe-sprinkler-layout" type="diagram" caption="Building cross-section showing dry standpipe (63 mm outlets at each floor, roof 2-way outlet, Siamese at street level 300–1200 mm above grade) vs wet standpipe (38 mm outlets pressurized). Show sprinkler heads and travel distance trade-off: 45 m without sprinklers vs 60 m with sprinklers." />
 
 Picture yourself walking through the ground floor of a newly completed five-storey commercial building in Taguig during an Ocular Inspection by the Bureau of Fire Protection (BFP). The building official has flagged the structure: the architect submitted plans showing no fire-extinguishing system, citing that individual floor plates are only 180 sq.m each. You are the reviewing architect. You know the BFP inspector is about to open PD 1096 and point directly at Section 1212.
 
@@ -58,7 +58,7 @@ Key technical data:
 - **Roof outlet:** A **2-way 63 mm** outlet above the roof, also gated
 - **Siamese (street-level) inlets:** Mounted on the street front at **300 mm to 1.20 m above grade**
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>Important Correction: The dry standpipe threshold is floor area, not distance. Per PD 1096 IRR Sec. 1212(2)(c), the requirement applies where "the area of any floor above the third floor is 950 sq.m or less." The original article incorrectly stated this as a distance of 950 m from the ground. This matters for exam questions that test your understanding of the threshold as floor area, not building height from grade.</Warn>
 
 ### Concept 3 — Siamese Connection Sizing
 
@@ -164,7 +164,11 @@ The presence or absence of a fire-extinguishing system directly controls the leg
 **2. RA 9514 — Fire Code of the Philippines (IRR)**
 RA 9514 is the enforcement mechanism for fire safety in buildings. The Bureau of Fire Protection (BFP) conducts annual Fire Safety Inspection Certificates (FSIC), which require compliance with the fire-extinguishing systems mandated by PD 1096. A building without a required standpipe will be denied its FSIC, halting occupancy. The Fire Code supplements PD 1096 with more detailed operational requirements, pipe materials, and maintenance protocols.
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="LawCallout" status="preserved"]
+<LawCallout code="ra9514" title="RA 9514 is the enforcement mechanism that gives BFP the legal authority to inspect and require fire-extinguishing systems">
+
+RA 9514 (Fire Code of the Philippines) operationalizes PD 1096's fire-extinguishing requirements through the Bureau of Fire Protection's inspection and certification process. Key interaction points: (1) Annual FSIC requires verified standpipe and sprinkler compliance; (2) RA 9514 IRR supplements PD 1096 with pipe material specifications, maintenance schedules, and testing protocols; (3) BFP has authority to deny occupancy permits for buildings lacking required fire-extinguishing systems under Sec. 1212. Always cite both PD 1096 (design mandate) and RA 9514 (enforcement mechanism) when discussing fire-extinguishing systems compliance in the Philippines.
+
+</LawCallout>
 
 **3. PD 1096, Rule VII — Occupancy Classifications**
 The occupant load thresholds in Sec. 1212 (>20 for habitation, >10 for workshops) must be cross-referenced against the occupancy classification tables in Rule VII. A space classified as Group E (Business and Mercantile) with 21 persons on a 200 sq.m floor is unambiguously subject to Sec. 1212. Group H (Storage and Hazardous) and Group I (Institutional) have heightened fire requirements that interact with sprinkler installation.
@@ -201,7 +205,7 @@ Without sprinklers: 45 m travel distance. A sprinkler system adds exactly **15 m
 - **Fire pump:** 1,000 L/min (active, mechanical)
 Gravity tanks need a higher rated flow because they rely entirely on head pressure; the pump can be modulated.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+<Tip>To remember the 950 sq.m dry standpipe threshold: think of a large supermarket floor plate. If any floor above the 3rd storey is smaller than a typical supermarket (under 950 sq.m), it needs a dry standpipe. Pair this with the 200 sq.m sprinkler trigger — 200 sq.m is a small restaurant, 950 sq.m is a full retail floor.</Tip>
 
 ### If/Then Scenarios
 
@@ -230,7 +234,7 @@ Many candidates memorize only one outlet size. The exam will offer both 38 mm an
 **Trap 3 — The Sprinkler–Travel Distance Linkage**
 A question may describe a proposed floor plan with a travel distance of 52 m and ask whether it complies. The answer depends entirely on whether the building has a sprinkler system: 52 m exceeds the 45 m limit without sprinklers but is within the 60 m allowance with sprinklers. The trap is answering based on one scenario without reading the full question. Always check the sprinkler status before judging travel distance compliance.
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>When you see a fire-extinguishing systems question on the LEA, immediately identify which system is being tested by looking for these keywords: "63 mm" = dry standpipe, "38 mm" = wet standpipe, "900 L/min" = dry, "190 L/min" = wet. Memorize these pairs — they are the most frequently tested numerical values in this topic and confusing them is the #1 score-killer.</ExamTip>
 
 ---
 
@@ -247,7 +251,13 @@ D. A fire-extinguishing system is required only if the building exceeds 8 storey
 
 > **Answer: B**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule IV - Fire Extinguishing Systems">
+
+
+Per PD 1096, Rule XII, Section 1212, a fire-extinguishing system is required for every storey ≥ 200 sq.m used for habitation with an occupant load > 20 persons. At 210 sq.m and 25 occupants, both triggers are met on every floor. Option A is wrong — the 200/20 rule is not limited to residential use; habitation includes commercial occupancy. Option C is wrong — the requirement applies to every qualifying storey, not just the basement. Option D fabricates a threshold that does not exist in Sec. 1212.
+
+
+</LawCallout>
 
 ---
 
@@ -262,7 +272,11 @@ D. 3-way Siamese connection, 600 mm to 1.50 m above grade
 
 > **Answer: B**
 >
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="nbcp" title="2-way is for the 100 mm pipe. Option C is wrong — 4-way is for the 150 mm pipe.">
+
+Per PD 1096, Rule XII, Section 1212: a 125 mm dry standpipe requires a 3-way Siamese connection. The Siamese inlet must be mounted on the street front at 300 mm to 1.20 m above grade. Option A is wrong — 2-way is for the 100 mm pipe. Option C is wrong — 4-way is for the 150 mm pipe. Option D uses the correct Siamese configuration but wrong heights (600 mm to 1.50 m is not stated in the code).
+
+</LawCallout>
 
 ---
 
@@ -277,7 +291,11 @@ D. Yes — exit travel distance limits only apply to buildings exceeding 6 store
 
 > **Answer: C**
 >
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="nbcp" title="the number of required stairs is a function of occupant load and travel distance">
+
+Per PD 1096, Sec. 1207 read in conjunction with Sec. 1212, the installation of an automatic fire-extinguishing (sprinkler) system extends the maximum exit travel distance from 45 m to 60 m. A 52 m travel distance exceeds the 45 m non-sprinklered limit but falls within the 60 m sprinklered allowance. Option A is factually wrong — the number of required stairs is a function of occupant load and travel distance, not storey count alone. Option B is wrong because it ignores the sprinkler bonus. Option D fabricates a storey threshold that does not appear in PD 1096.
+
+</LawCallout>
 
 ---
 
@@ -295,7 +313,7 @@ Cross-drill with **Article 21** (penthouses/roof structures) for fire-rating con
 
 
 
-<ArticleMedia type="image" caption="Fire Extinguishing System Types — Wet Pipe, Dry Pipe, Pre-Action, and Deluge Sprinklers" description="Four-panel comparison of automatic sprinkler systems: wet pipe (water always in pipes, fastest response), dry pipe (pressurized air/nitrogen, for freezing areas), pre-action (dual detection, water held back until fire confirmed), deluge (open heads, all discharge simultaneously for high-hazard). Coverage area per head, activation mechanisms, and application per occupancy type. Standpipe Class I/II/III hose connection locations." />
+<ArticleMedia id="media-fire-extinguishing-systems-2" type="image" caption="Fire Extinguishing System Types — Wet Pipe, Dry Pipe, Pre-Action, and Deluge Sprinklers" description="Four-panel comparison of automatic sprinkler systems: wet pipe (water always in pipes, fastest response), dry pipe (pressurized air/nitrogen, for freezing areas), pre-action (dual detection, water held back until fire confirmed), deluge (open heads, all discharge simultaneously for high-hazard). Coverage area per head, activation mechanisms, and application per occupancy type. Standpipe Class I/II/III hose connection locations." />
 ## Cross‑References
 
 **Fire Resistive Construction Ratings**, **Chimneys And Fireplaces**, **Fire Zones And Existing Buildings**, **Storage Of X Ray Films**

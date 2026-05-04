@@ -1,28 +1,22 @@
 {
-  "attempted_at": "2026-05-04T00:07:06.246Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T08:50:32.767Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
   "slug": "ceiling-heights-and-room-sizes",
   "preparation_actions": [
+    "auto_composed_candidate",
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:470e3c3105aecd9d7bfa6a25f265d7bfaeff3595b02c0d39bae74aa460c59dd8",
-  "original_hash": "sha256:b5f2d65fc31ce5c8271add72819be37978357b8fc4e34efd0015ac68c3b59a46",
-  "candidate_hash": "sha256:5eeb6a420e87d1887d94da6a0b1ba56eb94f6fd461c2cdc5f8f9a11f2f75564f",
+  "remote_hash_before": "sha256:c170390deefea7433388ad36226e47c0e128579a5ed419e66d81c958e46582e6",
+  "original_hash": "sha256:470e3c3105aecd9d7bfa6a25f265d7bfaeff3595b02c0d39bae74aa460c59dd8",
+  "candidate_hash": "sha256:4d710c22e89a449ff0fa87563fc106b931ff07d2c9213a9773a652d501da2d68",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T14:18:59.672888+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:14.618903+00:00"
 }

@@ -53,7 +53,7 @@ The 2024 IRR and its technical references set out the properties of directional,
 | **Raised element height** | 5 mm                           | 5 mm                                                           | 5 mm                                          |
 | **Orientation**           | Along direction of travel path | Perpendicular to direction of hazard/target                    | At junctions where path direction may change  |
 
-<ArticleMedia id="media-tactile-block-types" type="diagram" caption="Three tactile block types per Table A.7.2: Directional (300×300mm, 34mm parallel raised bars, 5mm high), Warning (300×300mm, 35mm truncated domes in square grid, 5mm high), Positional (300×300mm, 23mm truncated domes in staggered pattern, 5mm high). Shows 50% minimum luminance contrast from adjacent floor." />
+<ArticleMedia id="media-bp-344-tactile-and-visual-alar-0" name="tactile-block-types" type="diagram" caption="Three tactile block types per Table A.7.2: Directional (300×300mm, 34mm parallel raised bars, 5mm high), Warning (300×300mm, 35mm truncated domes in square grid, 5mm high), Positional (300×300mm, 23mm truncated domes in staggered pattern, 5mm high). Shows 50% minimum luminance contrast from adjacent floor." />
 
 **Placement and contrast:**[file:2]
 
@@ -112,7 +112,7 @@ _Mnemonic update:_
 - **Dots = Danger** (warning/positional domes at 600 mm depth, 300 mm setback).[file:2]
 - **Bars = Direction** (directional strips along the safe path).[file:2]
 
-<ArticleMedia id="media-tactile-placement-diagram" type="diagram" caption="Tactile warning placement examples: (a) Ramp — 600mm warning blocks 300mm from top, bottom, and intermediate landings. (b) Stairs — 600mm warning blocks 300mm from top of upper flight and bottom of lower flight. (c) Elevator — tactile path leads to Braille control panel with 300mm warning blocks before panel. (d) Escalator — 600mm warning blocks at 300mm setback from landing plate." />
+<ArticleMedia id="media-bp-344-tactile-and-visual-alar-1" name="tactile-placement-diagram" type="diagram" caption="Tactile warning placement examples: (a) Ramp — 600mm warning blocks 300mm from top, bottom, and intermediate landings. (b) Stairs — 600mm warning blocks 300mm from top of upper flight and bottom of lower flight. (c) Elevator — tactile path leads to Braille control panel with 300mm warning blocks before panel. (d) Escalator — 600mm warning blocks at 300mm setback from landing plate." />
 
 <LawCallout code="bp344" section="Section 13.3 - Tactile Warning Surfaces">
 
@@ -212,7 +212,7 @@ That keeps your memory aid but avoids over‑claiming a specific escalator‑onl
 | Emergency call button (toilet)  | 400–600 mm AFF, waterproof, contrasting                                     | Sec 6.18 (summarized)[file:2] |
 | Toilet strobe alarm             | Inside accessible toilets; max 2 flashes/s (NFPA 72)                        | Sec 6.19 (summarized)[file:2] |
 
-<ArticleMedia id="media-visual-alarm-and-emergency-systems" type="diagram" caption="Accessible toilet interior elevation: emergency call button at 400-600mm AFF (waterproof, contrasting color), strobe alarm with max 2 flashes/second per NFPA 72. Elevator panel detail: voice synthesizer speaker, two-way visual emergency communication display, and power backup indicator for evacuation operation." />
+<ArticleMedia id="media-bp-344-tactile-and-visual-alar-2" name="visual-alarm-and-emergency-systems" type="diagram" caption="Accessible toilet interior elevation: emergency call button at 400-600mm AFF (waterproof, contrasting color), strobe alarm with max 2 flashes/second per NFPA 72. Elevator panel detail: voice synthesizer speaker, two-way visual emergency communication display, and power backup indicator for evacuation operation." />
 | Braille on elevator jambs       | 1200 mm AFF, both jambs                                                     | Sec 8.7.c[file:2]             |
 | Braille beside buttons          | To the left of each button                                                  | Sec 8.7.b[file:2]             |
 | Elevator COP height             | 900 mm on center                                                            | Sec 8.7.a[file:2]             |

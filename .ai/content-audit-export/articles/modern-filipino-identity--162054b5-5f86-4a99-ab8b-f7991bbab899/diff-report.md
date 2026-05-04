@@ -1,6 +1,6 @@
 # Content Diff Report: modern-filipino-identity
 
-Generated: 2026-05-04T02:17:50.994Z
+Generated: 2026-05-04T09:14:04.345Z
 Article ID: 162054b5-5f86-4a99-ab8b-f7991bbab899
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:9ad1de6885dc5a2e937eb2631ec05ea20e8e7b5050067fd2347d02f2b7d3babc`
-- Normalized: `sha256:5e9fb2ff71fd11a9441619b19c17f442d86b7d6aff96ad5b988c1b8e2f25e8f7`
+- Normalized: `sha256:3a3245e77f2d3f1432891dd63bfbf81ced47c1a868ccf5fe9cdc6b8d9fa8aeaa`
 - Candidate: `sha256:9ad1de6885dc5a2e937eb2631ec05ea20e8e7b5050067fd2347d02f2b7d3babc`
 
 ## Line summary

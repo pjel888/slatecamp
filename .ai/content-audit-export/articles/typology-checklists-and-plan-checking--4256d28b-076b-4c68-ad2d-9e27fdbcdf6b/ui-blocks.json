@@ -1,10 +1,10 @@
 {
   "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
   "slug": "typology-checklists-and-plan-checking",
-  "normalized_created_at": "2026-05-01T13:33:43.718Z",
+  "normalized_created_at": "2026-05-04T09:10:36.081Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:cbcdf3192fe31f50da25f95fd58e9183a984312678c7184679a4b18f58d2a7a9",
-  "normalized_content_hash": "7a314abe7fe941f08109d545207f784e76c46416e7cc4cd9b1d7473b55b2def7",
+  "original_content_hash": "sha256:0c1ed9735088b661d56d905621ac56126497dbfe11e4e8bc6d0d6cf27da21fbe",
+  "normalized_content_hash": "sha256:a07e2646ffe826d0c4e22a5af36b5c9a20fae09f0c0bd1cc3b9ef90a2d9c8466",
   "ui_block_count": 3,
   "total_blocks": 3,
   "blocks": [
@@ -14,21 +14,27 @@
       "component_name": "LawCallout",
       "raw": "<LawCallout code=\"pd1096\" section=\"Rule VII - Typology Checklists\">\n\n\nPer BP 344 2024 IRR, every building typology has a set of non-negotiable accessibility elements. Missing any single item = fails accessibility compliance. The mandatory elements include: accessible parking (1 per 25 regular spaces, 3700×5000 mm + 1200 mm aisle), accessible route (≥1500 mm corridors with 1800×1800 mm turning spaces), accessible toilet (≥1700×1700 mm stall), and ISA signage.\n\n\n</LawCallout>",
       "raw_hash": "sha256:5c14b5cb4d4b9aef3ef665deba16445962437e93320ed6bbd1bdcd02fc685611",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"bp344\" title=\"BP 344 2024 IRR — Mandatory Elements\"\n- Text: Per BP 344 2024 IRR, every building typology has a set of non-negotiable accessibility elements. Missing any single item = fails accessibility compliance. The mandatory elements include: accessible pa\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:dc7e1cf9e136a5919d1e1b7da58d970446cbde8677f0fa802d01c385407eeda7",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\", section=\"Rule VII - Typology Checklists\"\n- Text: Per BP 344 2024 IRR, every building typology has a set of non-negotiable accessibility elements. Missing any single item = fails accessibility compliance. The mandatory elements include: accessible parking (1 per 25 regular spaces, 3700×5000 mm + 1200 mm aisle), accessible route (≥1500 mm corridors with 1800×1800 mm turning spaces), accessible toilet (≥1700×1700 mm stall), and ISA signage.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9e939b40a11f96e051c4925c4f4f3fb12b7616b224cbc1b10b45b5067eb75148",
       "props": {
-        "code": "bp344",
-        "title": "BP 344 2024 IRR — Mandatory Elements"
+        "code": "pd1096",
+        "section": "Rule VII - Typology Checklists"
       },
       "props_json": {
         "code": "pd1096",
-        "title": "BP 344 2024 IRR — Mandatory Elements",
         "section": "Rule VII - Typology Checklists"
       },
-      "props_text": "code=pd1096, title=BP 344 2024 IRR — Mandatory Elements, section=Rule VII - Typology Checklists",
-      "children_raw": "\n\nPer BP 344 2024 IRR, every building typology has a set of non-negotiable accessibility elements. Missing any single item = fails accessibility compliance. The mandatory elements include: accessible parking (1 per 25 regular spaces, 3700×5000 mm + 1200 mm aisle), accessible route (≥1500 mm corridors with 1800×1800 mm turning spaces), accessible toilet (≥1700×1700 mm stall), and ISA signage.\n\n",
+      "props_text": "code=\"pd1096\" section=\"Rule VII - Typology Checklists\"",
+      "children_raw": "\n\n\nPer BP 344 2024 IRR, every building typology has a set of non-negotiable accessibility elements. Missing any single item = fails accessibility compliance. The mandatory elements include: accessible parking (1 per 25 regular spaces, 3700×5000 mm + 1200 mm aisle), accessible route (≥1500 mm corridors with 1800×1800 mm turning spaces), accessible toilet (≥1700×1700 mm stall), and ISA signage.\n\n\n",
       "children_text": "Per BP 344 2024 IRR, every building typology has a set of non-negotiable accessibility elements. Missing any single item = fails accessibility compliance. The mandatory elements include: accessible parking (1 per 25 regular spaces, 3700×5000 mm + 1200 mm aisle), accessible route (≥1500 mm corridors with 1800×1800 mm turning spaces), accessible toilet (≥1700×1700 mm stall), and ISA signage.",
-      "status": "new"
+      "start_offset": 32718,
+      "end_offset": 33196,
+      "line_start": 448,
+      "line_end": 454,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
     },
     {
       "block_id": "ui_0002",
@@ -36,14 +42,21 @@
       "component_name": "Warn",
       "raw": "<Warn >\n\nThe most common exam error is assuming a checklist item is optional. In BP 344 compliance, every checklist item is mandatory. If a hospital has a ramp but no ISA signage, or a parking space but no access aisle — the building fails. There are no partial credits in plan checking.\n\n</Warn>",
       "raw_hash": "sha256:be67f1b2654af1006d32d9406d0befad9182094689cf8e1fd632e6c59ee09212",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: The most common exam error is assuming a checklist item is optional. In BP 344 compliance, every checklist item is mandatory. If a hospital has a ramp but no ISA signage, or a parking space but no acc\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:a75f166c2e9f6ae70dc155f292feefee379fe34a68ad9beaab5688f0f90a427f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: The most common exam error is assuming a checklist item is optional. In BP 344 compliance, every checklist item is mandatory. If a hospital has a ramp but no ISA signage, or a parking space but no access aisle — the building fails. There are no partial credits in plan checking.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:079c0faad03319c1dcb7525fd995412eb15e43b11629aada19d798287aeae21d",
       "props": {},
       "props_json": {},
       "props_text": null,
       "children_raw": "\n\nThe most common exam error is assuming a checklist item is optional. In BP 344 compliance, every checklist item is mandatory. If a hospital has a ramp but no ISA signage, or a parking space but no access aisle — the building fails. There are no partial credits in plan checking.\n\n",
       "children_text": "The most common exam error is assuming a checklist item is optional. In BP 344 compliance, every checklist item is mandatory. If a hospital has a ramp but no ISA signage, or a parking space but no access aisle — the building fails. There are no partial credits in plan checking.",
-      "status": "new"
+      "start_offset": 33198,
+      "end_offset": 33494,
+      "line_start": 456,
+      "line_end": 460,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
     },
     {
       "block_id": "ui_0003",
@@ -51,17 +64,24 @@
       "component_name": "ExamTip",
       "raw": "<ExamTip >\n\nFor LEA design problems, use the sequential flowchart: (1) Check parking → (2) Check route from parking to entrance → (3) Check entrance → (4) Check corridors → (5) Check vertical circulation → (6) Check destination rooms → (7) Check toilet rooms → (8) Check signage. Miss one step = miss the compliance issue.\n\n</ExamTip>",
       "raw_hash": "sha256:ab8d7a8e5deb7715ab9c8ac4a02afcc0d8cb32a4ece2dbf87958c0523facb446",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: For LEA design problems, use the sequential flowchart: (1) Check parking → (2) Check route from parking to entrance → (3) Check entrance → (4) Check corridors → (5) Check vertical circulation → (6) Ch\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:211c3241ad769c9f0248d3eb8b8a6ced1434ccd9b327c70296ee0e2c9dcaa71f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: For LEA design problems, use the sequential flowchart: (1) Check parking → (2) Check route from parking to entrance → (3) Check entrance → (4) Check corridors → (5) Check vertical circulation → (6) Check destination rooms → (7) Check toilet rooms → (8) Check signage. Miss one step = miss the compliance issue.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:419ee112525a7451e4f6bcf1523b213531d66ee6948f9280cb2839c144a052ea",
       "props": {},
       "props_json": {},
       "props_text": null,
       "children_raw": "\n\nFor LEA design problems, use the sequential flowchart: (1) Check parking → (2) Check route from parking to entrance → (3) Check entrance → (4) Check corridors → (5) Check vertical circulation → (6) Check destination rooms → (7) Check toilet rooms → (8) Check signage. Miss one step = miss the compliance issue.\n\n",
       "children_text": "For LEA design problems, use the sequential flowchart: (1) Check parking → (2) Check route from parking to entrance → (3) Check entrance → (4) Check corridors → (5) Check vertical circulation → (6) Check destination rooms → (7) Check toilet rooms → (8) Check signage. Miss one step = miss the compliance issue.",
-      "status": "new"
+      "start_offset": 33496,
+      "end_offset": 33830,
+      "line_start": 462,
+      "line_end": 466,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
     }
   ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:b47b7e6b13364c0cadd28a61f69a120d3297ce24b47b973897760f67b5a795a4"
+  "ui_blocks_hash": "sha256:69a180f2323bf988595f9fee1df4287318183b4a205bc24e3ef2ddbe3170d331"
 }

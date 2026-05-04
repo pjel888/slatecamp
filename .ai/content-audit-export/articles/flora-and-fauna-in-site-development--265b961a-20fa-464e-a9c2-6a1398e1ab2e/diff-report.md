@@ -1,6 +1,6 @@
 # Content Diff Report: flora-and-fauna-in-site-development
 
-Generated: 2026-05-04T02:16:35.504Z
+Generated: 2026-05-04T09:13:16.605Z
 Article ID: 265b961a-20fa-464e-a9c2-6a1398e1ab2e
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a`
-- Normalized: `sha256:6a87a499473b7a3a08f25b5423e32b87e918731407c2f1df07cddb776aa8da4e`
+- Normalized: `sha256:80af95a2f8296022f7524175a69ce8d9f083e3c6c50ab67ddb46b7140f8bfd20`
 - Candidate: `sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a`
 
 ## Line summary

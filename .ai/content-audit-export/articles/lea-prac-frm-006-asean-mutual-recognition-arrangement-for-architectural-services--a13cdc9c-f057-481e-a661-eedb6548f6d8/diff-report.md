@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services
 
-Generated: 2026-05-04T02:16:42.625Z
+Generated: 2026-05-04T09:13:23.090Z
 Article ID: a13cdc9c-f057-481e-a661-eedb6548f6d8
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:b3c24262cc93d980179a0ebfd90cdb50d1eed6c2408991edda18e30c89cbec49`
-- Normalized: `sha256:6e0aaabf21d1f491d898181af1b8bd6a9233726ce7cc0edcb92cf22c3273948a`
-- Candidate: `sha256:b3c24262cc93d980179a0ebfd90cdb50d1eed6c2408991edda18e30c89cbec49`
+- Original: `sha256:9deb5a51d4e978841818661bee34f471905f6094e0891b9fde33597a992172ca`
+- Normalized: `sha256:deb858b9cbe6c373127120a15984c2b1e836cf56fc29d11e9b055a2d03f80d61`
+- Candidate: `sha256:9deb5a51d4e978841818661bee34f471905f6094e0891b9fde33597a992172ca`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

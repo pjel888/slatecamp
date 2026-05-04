@@ -118,7 +118,7 @@ Memory aid: **A-S-E** = Archaeology, Stuart-Revett, Enlightenment.</Tip>
 
 ## Related Articles
 
-<ArticleMedia id=\"media-hist-002-06-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Comparison of Neoclassical buildings showing the revival of Greek and Roman forms: La Madeleine (Paris, Roman temple form), Brandenburg Gate (Berlin, Athenian propylaea), US Capitol (Washington DC, Roman dome and portico), and their shared classical vocabulary.\" caption=\"Neoclassicism — Greek and Roman Revival Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-002-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Neoclassical buildings showing the revival of Greek and Roman forms: La Madeleine (Paris, Roman temple form), Brandenburg Gate (Berlin, Athenian propylaea), US Capitol (Washington DC, Roman dome and portico), and their shared classical vocabulary." caption="Neoclassicism — Greek and Roman Revival Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**.
 

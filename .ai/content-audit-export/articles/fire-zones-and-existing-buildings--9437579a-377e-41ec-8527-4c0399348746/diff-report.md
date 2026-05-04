@@ -1,26 +1,26 @@
 # Content Diff Report: fire-zones-and-existing-buildings
 
-Generated: 2026-05-04T02:25:35.789Z
+Generated: 2026-05-04T09:14:19.665Z
 Article ID: 9437579a-377e-41ec-8527-4c0399348746
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e1465b14dd07344691a3f440f6a8ab0d35b34a134db31657bf0c20d5347f33bc`
-- Normalized: `sha256:5de6239cb3411ee6f1de36233b22dd3c904f05b0b2378cd4e8d71472ac1f0a9b`
-- Candidate: `sha256:b6c6594ede28be4e3e66bbcfc512580a4298745b9f89efd19019290242b077c0`
+- Original: `sha256:1c6b5a67dc7e705704b346c6eb3a7d3b3d3bc044627682d1fb37b6a8e0c93450`
+- Normalized: `sha256:09628c867973d144d8f7486061f1a2ddf0f03d587690ebd78fc4dc01d6a23081`
+- Candidate: `sha256:1c6b5a67dc7e705704b346c6eb3a7d3b3d3bc044627682d1fb37b6a8e0c93450`
 
 ## Line summary
 
-- Changed lines: 454
-- Inserted lines: 10
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 6
-- UI blocks preserved: 6
+- UI blocks expected: 7
+- UI blocks preserved: 7
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

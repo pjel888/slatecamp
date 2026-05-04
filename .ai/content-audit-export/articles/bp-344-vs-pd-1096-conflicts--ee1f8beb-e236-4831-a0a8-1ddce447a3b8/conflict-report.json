@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-03T14:01:34.294Z",
+  "attempted_at": "2026-05-04T08:49:13.380Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
   "slug": "bp-344-vs-pd-1096-conflicts",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:3999c69046b8b6258eb6934c16861957db4ac16861ff83ccfec05b019100d7e9",
-  "original_hash": "sha256:36026a7546ca64e6fb1a86b230dbdd3afa988ec4ed2c49682949c31110f6097f",
-  "candidate_hash": "sha256:3999c69046b8b6258eb6934c16861957db4ac16861ff83ccfec05b019100d7e9",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:21867c15fb059d1a3e8cd964618cf4c0ed450a7ea1508f2fbe71892b9d943a1f",
+  "original_hash": "sha256:3999c69046b8b6258eb6934c16861957db4ac16861ff83ccfec05b019100d7e9",
+  "candidate_hash": "sha256:29e329139f18b07264859fbe8ca4a7c3a51fea4b39fde9de9be0b9f834f86b1b",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:50:27.268689+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:13.005616+00:00"
 }

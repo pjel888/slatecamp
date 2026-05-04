@@ -1,21 +1,21 @@
 # Content Diff Report: spp-doc-202-regular-design-services
 
-Generated: 2026-05-04T02:17:31.348Z
+Generated: 2026-05-04T09:13:52.168Z
 Article ID: 24b0a3db-e6bc-45d0-a9a1-d83009112efb
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:91cfb34021c897112d26cea3f36028309b94c92e565d8b72bd3cfd855e2ad22d`
-- Normalized: `sha256:106f8cca98fcbee2ccacbc03630561a0c3e4c8d6b50eaea7038a3c41e90687d4`
-- Candidate: `sha256:8879a261cfc1e3941b7d3e1c56b1b5dc684b4553cd2630424a49d02de475953f`
+- Normalized: `sha256:5d656e87b06386340d7595d0855690e9980d985972e0995b0304c80d1e516901`
+- Candidate: `sha256:91cfb34021c897112d26cea3f36028309b94c92e565d8b72bd3cfd855e2ad22d`
 
 ## Line summary
 
-- Changed lines: 302
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 1
+- Deleted lines: 0
 
 ## UI block preservation
 

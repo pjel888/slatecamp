@@ -24,7 +24,7 @@ The integrated settlement development approach emerged from recognition that hou
 **Disaster Risk Reduction:** Post-Yolanda (2013) and post-COVID frameworks emphasize resilience. Settlements must account for typhoon, flood, and seismic hazards. Post-Yolanda no-build zones (40m from mean high tide) reshape coastal settlement patterns. Climate-aware settlement planning is now mandatory in CLUP requirements under **RA 10121** (DRRM Act).
 
 Human settlements development, at its core, views housing as a vector for achieving integrated community well-being—economic, social, environmental, and institutional—rather than as a supply shortage to be solved through construction volume alone.
-<ArticleMedia id="media-lea-plan-003-05-core-concept" a type="image" caption="Human Settlements Framework — Housing Within a Holistic System" description="Radial ecosystem diagram showing housing at center within: livelihood/employment, basic services (water, power, sanitation), infrastructure (roads, drainage, transport), community institutions (schools, health centers, markets). Carrying capacity limits for settlement planning." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-003-05-core-concept" type="image" caption="Human Settlements Framework — Housing Within a Holistic System" description="Radial ecosystem diagram showing housing at center within: livelihood/employment, basic services (water, power, sanitation), infrastructure (roads, drainage, transport), community institutions (schools, health centers, markets). Carrying capacity limits for settlement planning." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic
 
-Generated: 2026-05-04T02:17:54.007Z
+Generated: 2026-05-04T09:14:06.105Z
 Article ID: d18569e9-4401-4d85-8d59-d545240ef106
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:22dd12d61ed4a8b351193451c12ed2836261458792bf34a4b394eeeaa99f9be7`
-- Normalized: `sha256:5ac087564a55bd8e17b74ee9fe7c2602da81152069cc54f18a392097b3da881f`
-- Candidate: `sha256:22dd12d61ed4a8b351193451c12ed2836261458792bf34a4b394eeeaa99f9be7`
+- Original: `sha256:81f2d68b3f2cdec176f99299cb9db34bb39c026d417653a8e80f897c46f24f43`
+- Normalized: `sha256:680892cf3fd314cdbe717460b4b79bdae908308c74d1a7e5b0f76da34c281c8d`
+- Candidate: `sha256:81f2d68b3f2cdec176f99299cb9db34bb39c026d417653a8e80f897c46f24f43`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

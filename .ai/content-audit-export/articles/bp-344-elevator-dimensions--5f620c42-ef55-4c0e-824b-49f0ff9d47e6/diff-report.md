@@ -1,26 +1,26 @@
 # Content Diff Report: bp-344-elevator-dimensions
 
-Generated: 2026-05-04T02:17:13.601Z
+Generated: 2026-05-04T09:13:40.840Z
 Article ID: 5f620c42-ef55-4c0e-824b-49f0ff9d47e6
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:4d1d6c3509b9620259efc0397d6f479f06bf59c451152434b852d26169f8071a`
-- Normalized: `sha256:9081ef4ef96b0a0e3262be89461037343419ae652c351960cdb1dc81a7181736`
-- Candidate: `sha256:21c80fc190ab96946b63b51c0bcd8705be081452fb1dfbaf581fd1cef89b89a1`
+- Original: `sha256:687ea0859fdff67d0e2ef7e48b18057957eaea5d596ca87cbfd15af070ea2fae`
+- Normalized: `sha256:ca29bf7be7c56d3c46e3c3e2eb6971bda6c8e8810af780cd284cbd01d49f7b16`
+- Candidate: `sha256:687ea0859fdff67d0e2ef7e48b18057957eaea5d596ca87cbfd15af070ea2fae`
 
 ## Line summary
 
-- Changed lines: 269
-- Inserted lines: 19
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 5
-- UI blocks preserved: 5
+- UI blocks expected: 8
+- UI blocks preserved: 8
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

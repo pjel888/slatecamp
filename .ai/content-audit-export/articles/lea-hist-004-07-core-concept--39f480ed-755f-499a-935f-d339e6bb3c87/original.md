@@ -98,7 +98,7 @@ Mughal architecture developed under specific patron dynasties. **Akbar** (r. 155
 
 <Warn>Do not treat the Taj Mahal as "primarily a tomb." It is fundamentally a **garden-building complex** where the charbagh (4-part garden) and mausoleum are equally essential. The garden represents Islamic paradise; the building's proportions represent cosmological order. Garden and building together create spiritual and mathematical meaning. Describing only the building without the garden context misses Mughal architectural philosophy.</Warn>
 
-<ArticleMedia id="media-hist-004-07-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Mughal architectural elements across key monuments: Humayun's Tomb (charbagh garden, red sandstone dome), Fatehpur Sikri (Buland Darwaza, Diwan-i-Khas), and Taj Mahal (onion dome, iwan, pietra dura inlay, minarets).\" caption=\"Mughal Architecture — Monument Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-004-07-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Mughal architectural elements across key monuments: Humayun's Tomb (charbagh garden, red sandstone dome), Fatehpur Sikri (Buland Darwaza, Diwan-i-Khas), and Taj Mahal (onion dome, iwan, pietra dura inlay, minarets)." caption="Mughal Architecture — Monument Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

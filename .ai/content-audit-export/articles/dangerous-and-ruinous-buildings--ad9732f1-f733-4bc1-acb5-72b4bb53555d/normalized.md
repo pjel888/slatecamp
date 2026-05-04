@@ -3,6 +3,12 @@
 After reading this article, you should be able to:
 
 Apply the legal framework for dangerous and ruinous buildings under PD 1096 Sec. 214-216: identify the Building Official's authority to order demolition, repair, or vacation; distinguish dangerous from ruinous conditions; and explain the property owner's rights to notice, hearing, and contest before enforcement action.
+
+**Module Focus:** PD 1096 National Building Code of the Philippines — Rule II, Sections 214–216 (2004 Revised IRR) + Abatement Procedure
+**LEA Area:** Building Laws, Codes & Ethics / Environmental Planning & Community Architecture
+**Difficulty:** High — Legal Reasoning + Specific Percentages + Multi-Category Classification
+**Spaced Repetition:** Return in 3 days to recite all six defect categories and their sub-items. Return in 7 days to recall the four specific percentage thresholds without notes. Return in 14 days to reconstruct the abatement procedure in sequence.
+
 ---
 
 ## The Real-World Hook
@@ -355,11 +361,23 @@ The NSCP is therefore an implicit enforcement standard embedded within the dange
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp"
+- Text: Rule II, Sec. 214: Six defect categories make a building 'dangerous or ruinous': (1) Structurally unsafe, (2) No safe egress, (3) Fire hazard, (4) Dangerous to human life, (5) Health/safety/welfare hazard, (6) Abandonment. Any ONE category triggers the abatement procedure.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: LEA Pattern: Questions test the abatement timeline: (1) Building Official serves Notice of Violation → (2) Owner has 30 days to respond/remedy → (3) If not remedied, Building Official orders vacation → (4) If still not remedied, demolition order → (5) Owner has 15 days to demolish or BO does it at owner's expense.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ Critical Legal Point: Article 482 of the Civil Code intersects with PD 1096 here. The building owner has property rights, BUT the State's police power permits demolition of dangerous buildings without compensation if they pose an imminent threat. The Building Official must follow due process — notice, hearing, order, enforcement.
+[/SLATECAMP_UI_BLOCK]
 
 ## Mnemonic Devices
 
@@ -454,11 +472,17 @@ Under PD 1096 Sec. 216 (Other Remedies), a building owner whose structure has be
 
 > **Answer: D — The owner retains all rights of appeal and civil remedy**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule I - Dangerous Buildings"
+- Text: Section 216 is explicit: "The rights, actions, and remedies provided in this Code shall be in addition to all other rights under existing laws." This means (1) the owner may appeal the demolition order administratively to the DPWH Secretary; (2) if still aggrieved, may file for judicial review before the Regional Trial Court; (3) any neighbor or third party injured by the building's condition retains all Civil Code rights (Articles 482, 694–707) independently of the BO's action. The code does no
+[/SLATECAMP_UI_BLOCK]
 >
 > *LEA Area: Building Laws, Codes & Ethics*
 
 ---
+
+
 
 ---
 
@@ -477,5 +501,3 @@ Under PD 1096 Sec. 216 (Other Remedies), a building owner whose structure has be
 7. **National Structural Code of the Philippines (NSCP) 7th Edition, 2015/2020:** Chapter 2 (General Design Requirements — loads, combinations); Section 207 (Wind Loads) — for computing the 1/2-wind-pressure threshold of Sec. 215 sub-item (c); structural capacity benchmarks for 33/50/66/50% threshold application.
 8. **Architectural Graphic Standards (Ramsey/Sleeper), 12th Edition:** Building condition assessment frameworks; structural failure modes referenced in dangerous building classifications.
 9. **Metric Handbook: Planning and Design Data (Littlefield, 4th ed.):** Occupancy and safety standards context for egress and sanitation deficiency classifications (Categories 5 and 6).
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

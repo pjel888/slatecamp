@@ -7,7 +7,11 @@ Apply the three-phase MEPF coordination framework — schematic design, design d
 
 ### Schematic Design Phase
 
-<ArticleMedia id="media-lea-util-008-01-the-three-phase-coordina" type="image" caption="MEP Coordination Framework — Structural, Architectural, and MEP Integration" alt="Process flow diagram of the three-phase coordination framework between trades: Phase 1 — Schematic (30% DD) establishing floor loading, column locations, equipment room sizing; Phase 2 — Design Development (60% DD) with BIM clash detection, equipment schedules, and 3D routing; Phase 3 — Construction Documents (90% DD) with final routing, fire-stopping details, and penetration schedules. Key coordination requirements at each phase listed per PD 1096 and standard Philippine practice." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-008-01-the-three-phase-coordina", type="image", caption="MEP Coordination Framework — Structural, Architectural, and MEP Integration", description="Process flow diagram of the three-phase coordination framework between trades: Phase 1 — Schematic (30% DD) establishing floor loading, column locations, equipment room sizing; Phase 2 — Design Development (60% DD) with BIM clash detection, equipment schedules, and 3D routing; Phase 3 — Construction Documents (90% DD) with final routing, fire-stopping details, and penetration schedules. Key coordination requirements at each phase listed per PD 1096 and standard Philippine practice.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 During schematic design, the architect establishes the building envelope, floor-to-floor heights, and gross spatial zones. MEPF consultants must confirm conceptual approaches for major systems at this stage. Under RA 9266 and UAP SPP Document 201, the architect is responsible for coordinating all building systems to ensure compliance with National Building Code requirements.
@@ -16,11 +20,23 @@ Floor-to-floor height decisions made during schematic design directly impact MEP
 
 Ceiling plenum coordination begins conceptually. The typical plenum depth allocation is 300 to 450 millimeters for standard office installations with moderate MEP density, as derived from standard suspended ceiling systems common in Philippine construction. Buildings with high MEP density (data centers, hospitals) may require 450 to 600 millimeters.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, THHN=true, label=true, u00b0C=true, General=true, Wiring=true, THWN=true, Wet=true, Locations=true, XHHW=true, Dry=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+[/SLATECAMP_UI_BLOCK]
 
 ### Design Development Phase
 

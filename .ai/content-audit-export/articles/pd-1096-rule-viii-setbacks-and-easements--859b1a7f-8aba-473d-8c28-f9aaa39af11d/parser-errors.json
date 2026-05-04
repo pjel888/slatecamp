@@ -1,14 +1,36 @@
 {
   "article_id": "859b1a7f-8aba-473d-8c28-f9aaa39af11d",
   "slug": "pd-1096-rule-viii-setbacks-and-easements",
-  "generated_at": "2026-05-01T13:33:43.479Z",
+  "generated_at": "2026-05-04T09:10:35.624Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 0,
-  "unknown_block_count": 0,
+  "warning_count": 1,
+  "unknown_block_count": 1,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [],
-  "unknown_blocks": [],
+  "warnings": [
+    {
+      "block_id": "ui_0016",
+      "component_name": "Mermaid",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for Mermaid; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0016",
+      "component_name": "Mermaid",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:9f4d19a8de95e2d240b6506b913c5fdf64812f436471e427ff52346a6d8a0e1a",
+      "line_start": 551,
+      "line_end": 552,
+      "warnings": [
+        "No closing tag found for Mermaid; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
   "critical_blocks": []
 }

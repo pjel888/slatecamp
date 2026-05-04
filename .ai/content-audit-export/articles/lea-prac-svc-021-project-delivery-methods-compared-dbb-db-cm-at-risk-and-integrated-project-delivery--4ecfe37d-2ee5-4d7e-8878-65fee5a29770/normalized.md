@@ -14,7 +14,11 @@ After studying this article, you should be able to:
 
 |Design-Bid-Build separates design and construction into sequential phases. The architect completes design through contract documents. After design approval, contractors bid for construction work, with the lowest responsive bid typically selected. Construction then proceeds under the selected contractor's management.
 
-<ArticleMedia id="media-lea-prac-svc-021-project-delivery-method" type="image" caption="Project Delivery Methods Comparison — DBB, DB, CM-at-Risk, and IPD" alt="Comparison visual contrasting four project delivery methods: Design-Bid-Build (sequential, low risk), Design-Build (integrated, compressed schedule), CM-at-Risk (hybrid with GMP), and Integrated Project Delivery (collaborative, shared risk/reward). Shows architect role, risk allocation, sequencing, and owner involvement for each." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-svc-021-project-delivery-method", type="image", caption="Project Delivery Methods Comparison — DBB, DB, CM-at-Risk, and IPD", description="Comparison visual contrasting four project delivery methods: Design-Bid-Build (sequential, low risk), Design-Build (integrated, compressed schedule), CM-at-Risk (hybrid with GMP), and Integrated Project Delivery (collaborative, shared risk/reward). Shows architect role, risk allocation, sequencing, and owner involvement for each.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 DBB maintains clear separation of responsibilities. The architect provides design and administers the contract during construction. The contractor bears construction risk and responsibility for schedule and cost. The client receives a completed design before committing construction funds, providing design clarity and competitive construction pricing.
 
@@ -56,13 +60,29 @@ The architect's role varies by delivery method. In DBB, the architect maintains 
 
 Understanding these delivery method differences enables architects and clients to select approaches aligned with project objectives and stakeholder capabilities.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="SPP206RefServices" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -79,4 +99,8 @@ Understanding these delivery method differences enables architects and clients t
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

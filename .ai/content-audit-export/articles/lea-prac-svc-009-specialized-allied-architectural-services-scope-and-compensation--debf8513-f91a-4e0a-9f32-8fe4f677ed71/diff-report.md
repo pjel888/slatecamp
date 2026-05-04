@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation
 
-Generated: 2026-05-04T02:18:03.546Z
+Generated: 2026-05-04T09:14:12.526Z
 Article ID: debf8513-f91a-4e0a-9f32-8fe4f677ed71
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:ec2ebc1608f80c3ae45d3a35e2ec6164b52828925ae822cfe89546ea2dd42b32`
-- Normalized: `sha256:d819a9e41f41e919107607605d05c644fd94540fb09c2be9e34910b4f40024d8`
-- Candidate: `sha256:ec2ebc1608f80c3ae45d3a35e2ec6164b52828925ae822cfe89546ea2dd42b32`
+- Original: `sha256:0531b46596f65ffd80942d30ed302b9c32a48c210e1d39d5f3dfa8cffe732279`
+- Normalized: `sha256:2d842ca903994464b75d76ff1c0891b907e03853641d8b9df07a20986f5caa55`
+- Candidate: `sha256:0531b46596f65ffd80942d30ed302b9c32a48c210e1d39d5f3dfa8cffe732279`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 6
-- UI blocks preserved: 6
+- UI blocks expected: 7
+- UI blocks preserved: 7
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

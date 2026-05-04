@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-frm-005-foreign-architects-in-the-philippines
 
-Generated: 2026-05-04T02:17:12.281Z
+Generated: 2026-05-04T09:13:40.105Z
 Article ID: ae4bdc43-1451-4aa5-8c12-65283f4bbdfd
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:d49e84faa6a2586164c0d044df4ee3cc49785472a4544366a885c3458c781320`
-- Normalized: `sha256:eda932cebe6dd9d8bed22b4e1db3c7af1e50533974bde80af9d14e83d3327b9f`
-- Candidate: `sha256:d49e84faa6a2586164c0d044df4ee3cc49785472a4544366a885c3458c781320`
+- Original: `sha256:28e1aeab3a846dcb0d53a0d7f455cd3734797369f6f6f90f085e24d1ab927d39`
+- Normalized: `sha256:393964af1bbf424661561a625cd619458556829581019b9b86bec1f89e948238`
+- Candidate: `sha256:28e1aeab3a846dcb0d53a0d7f455cd3734797369f6f6f90f085e24d1ab927d39`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 3
+- UI blocks preserved: 3
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

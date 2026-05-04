@@ -4,7 +4,7 @@
 
 Apply the basics of architectural lighting design — luminous flux (lumens), illuminance (lux), luminance (cd/m²), luminous efficacy (lm/W), color temperature (Kelvin), color rendering index (CRI) — to select appropriate lighting systems for Philippine building projects.
 
-<ArticleMedia id="media-lea-util-006-02-what-you-need-to-know-fo" a type="image" caption="Lighting Design Fundamentals — Luminous Flux, Illuminance, Luminance, Efficacy" description="Four-part visual: (1) Luminous flux — lumens emitted from light source; (2) Illuminance (E) — lux = lumens/m² on a surface; (3) Luminance (L) — cd/m² perceived brightness; (4) Efficacy — lm/W efficiency. The lumen method formula (E = N×F×CU×MF/A) shown with example calculation for a Philippine office requiring 400 lux. Color temperature (K) spectrum from warm 2700K to cool 6500K and CRI scale (70-100) illustrated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-006-02-what-you-need-to-know-fo" type="image" caption="Lighting Design Fundamentals — Luminous Flux, Illuminance, Luminance, Efficacy" description="Four-part visual: (1) Luminous flux — lumens emitted from light source; (2) Illuminance (E) — lux = lumens/m² on a surface; (3) Luminance (L) — cd/m² perceived brightness; (4) Efficacy — lm/W efficiency. The lumen method formula (E = N×F×CU×MF/A) shown with example calculation for a Philippine office requiring 400 lux. Color temperature (K) spectrum from warm 2700K to cool 6500K and CRI scale (70-100) illustrated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 <ExamTip>
@@ -35,8 +35,8 @@ See also within Lighting and Acoustics: **lea-util-006-03-core-concept**, **lea-
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-[SLATECAMP_UI_BLOCK:ui_repaired_003 component="Note" status="preserved"]
+
 Extracted summary:
 - Props: title="Sabine vs. Eyring Formula" variant="info"
 - Text: The Sabine Formula assumes low to moderate absorption (average α < 0.3). For highly absorptive rooms, use the _Eyring Formula_: $$RT60 = 0.161 \times \frac )}$$ Where ā is the mean absorption coefficient across all surfaces and S is total surface area. The Eyring Formula is more accurate for conference rooms, recording studios, and anechoic chambers common in Philippine media production facilities.
-[/SLATECAMP_UI_BLOCK:ui_0001 component="WikiCalloutBox" status="preserved"]
+

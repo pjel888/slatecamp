@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-021-core-concept
 
-Generated: 2026-05-04T02:17:11.114Z
+Generated: 2026-05-04T09:13:39.206Z
 Article ID: 51800681-6d9e-47f4-9e3a-aaf9ca459bf0
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:9e8f42fa3badb49ce22555ddf422b3fff8794b192f2aac9fde16872c319e68ac`
-- Normalized: `sha256:3f4d1f6cd412cedaba07ee18b1d1005a290ebdc7ba19d5fb1e413cb848438c41`
+- Normalized: `sha256:4fdc8f53fbaaa78f4af00f9b2cc1a6196baa2bcbd6f84d488e1eada465840585`
 - Candidate: `sha256:9e8f42fa3badb49ce22555ddf422b3fff8794b192f2aac9fde16872c319e68ac`
 
 ## Line summary

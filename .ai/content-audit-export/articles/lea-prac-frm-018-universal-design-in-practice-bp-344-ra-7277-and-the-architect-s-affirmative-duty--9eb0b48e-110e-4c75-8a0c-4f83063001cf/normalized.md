@@ -11,7 +11,11 @@ After studying this article, you should be able to:
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 2 - Universal Design"
+- Text: Batas Pambansa Bilang 344 (Accessibility Law) and Republic Act 7277 (Magna Carta for Disabled Persons) establish the legal framework for accessible built environments in the Philippines. These laws create an affirmative duty for architects to design buildings that enable full participation of persons with disabilities (PWDs). Universal Design -- designing for all people regardless of ability -- is both the ethical and legal approach. Compliance is mandatory for all new construction and significa
+[/SLATECAMP_UI_BLOCK]
 
 ### Legal Mandate: BP 344 and RA 7277
 
@@ -19,7 +23,11 @@ BP 344 was enacted in 1982 and amended multiple times, most recently through the
 
 The law applies to all new construction and alterations. The 2024 Revised IRR does not provide a general cost-based exemption. Limited exceptions exist only for specific technical infeasibilities (e.g., door clearances, wheelchair spaces) as explicitly stated in the IRR. The intent is clear: accessible design is the default expectation, not a luxury option.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: title="No General Cost Exemption"
+- Text: The 2024 Revised IRR of BP 344 does NOT contain a general exemption based on cost percentage (such as "20% of total building cost"). If a project faces genuine constraints, the architect should document the specific technical infeasibility and pursue the narrow exception provisions in the IRR. Do not rely on a cost-based exemption that does not exist in the current legal framework.
+[/SLATECAMP_UI_BLOCK]
 
 ### The Architect's Affirmative Duty During Design
 
@@ -45,11 +53,19 @@ BP 344 prescribes minimum standards documented in the 2024 Revised IRR. The IRR 
 
 7. **Wayfinding**: Signage, tactile guides, Braille labels.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: title="Ramp Slope - 2024 Revised IRR Standard"
+- Text: The 2024 Revised IRR updates the general maximum ramp slope from the old 1:12 standard to **1:20** (gradient not steeper than 1:20). The slope table is: - **1:20** -- no maximum length specified -- max rise 700mm (general standard) - **1:15** -- max 10m length -- for special cases only - Note: 1:12 now applies ONLY to swimming pool transfer walls, NOT general accessible ramps. Per the flagging report, the old 1:12 standard is a common error in pre-2024 exam materials. Students must use the 2024 
+[/SLATECAMP_UI_BLOCK]
 
 The architect must verify that the design meets these specific standards. This is not subjective judgment; standards are explicit. The architect should maintain a compliance checklist and verify each element. Doing so creates a documentation trail and demonstrates professional diligence.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: title="LEA Exam Tip"
+- Text: The LEA frequently tests ramp slope ratios. Remember: **1:20 is the general maximum** under the 2024 Revised IRR. The old 1:12 standard (from the original/original amended IRR) is no longer current for general accessible ramps. The only remaining 1:12 reference in the 2024 Revised IRR is for swimming pool transfer walls. Be careful not to confuse the two standards on exam questions.
+[/SLATECAMP_UI_BLOCK]
 
 ### Universal Design Principles vs. Segregated Access
 
@@ -87,11 +103,19 @@ Failure to meet BP 344 requirements constitutes professional negligence. If a PW
 
 The Code of Ethical Conduct under the IRR of RA 9266 (Architecture Act of 2004) and UAP SPP Document 201 reinforce that architects must design for the public good, which includes enabling disabled persons to participate fully. Accessibility is an ethical imperative, not optional.
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 3 - Scope of Application"
+- Text: BP 344 (2024 Revised IRR) mandates a **1:20 maximum ramp slope** for accessible ramps, not the outdated 1:12 standard. Architects must integrate accessibility from conceptual design through post-occupancy verification. Failure to comply constitutes professional negligence. Accessibility is both a legal requirement and an ethical duty under the Code of Ethical Conduct (IRR of RA 9266).
+[/SLATECAMP_UI_BLOCK]
 
 
 
-<ArticleMedia type="image" caption="Universal Design Compliance — BP 344, RA 7277, and Accessibility Standards Matrix" alt="Comparison matrix of accessibility regulations: BP 344 (Building Accessibility, dimensional standards), RA 7277 (Magna Carta for PWDs, rights-based), RA 11205 (Universal Design, conceptual framework). Each column shows: scope, dimensional requirements (ramp slope, door width, toilet clearances), enforcement mechanism, and architect's compliance duty. Overlap areas highlighted." />
+[SLATECAMP_UI_BLOCK:ui_0006 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-frm-018-universal-des-0", type="image", caption="Universal Design Compliance — BP 344, RA 7277, and Accessibility Standards Matrix", description="Comparison matrix of accessibility regulations: BP 344 (Building Accessibility, dimensional standards), RA 7277 (Magna Carta for PWDs, rights-based), RA 11205 (Universal Design, conceptual framework). Each column shows: scope, dimensional requirements (ramp slope, door width, toilet clearances), enforcement mechanism, and architect's compliance duty. Overlap areas highlighted."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

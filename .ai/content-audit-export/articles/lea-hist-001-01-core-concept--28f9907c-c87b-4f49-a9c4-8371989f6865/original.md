@@ -84,7 +84,7 @@ Different regions developed local variations. **Passage graves** in Ireland and 
 
 **Sarsen stone:** A type of hard sandstone used in megalithic construction, quarried in southern England and used prominently at Stonehenge.
 
-<ArticleMedia id=\"media-hist-001-01-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Timeline chart showing the chronological development of megalithic construction across Neolithic Europe (c. 4500–1000 BCE), indicating key sites: Carnac alignments (c. 4500 BCE), Newgrange passage grave (c. 3200 BCE), Stonehenge phases I–III (c. 3100–1600 BCE), and regional variations in the Mediterranean and Atlantic Europe.\" caption=\"Megalithic Architecture — Chronological Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-001-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline chart showing the chronological development of megalithic construction across Neolithic Europe (c. 4500–1000 BCE), indicating key sites: Carnac alignments (c. 4500 BCE), Newgrange passage grave (c. 3200 BCE), Stonehenge phases I–III (c. 3100–1600 BCE), and regional variations in the Mediterranean and Atlantic Europe." caption="Megalithic Architecture — Chronological Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 <Tip>**Megalithic vs. Monolithic:** Megalithic = many large stones assembled (Stonehenge). Monolithic = one single carved stone (Egyptian obelisk). This distinction is tested directly — do not confuse them.</Tip>
 

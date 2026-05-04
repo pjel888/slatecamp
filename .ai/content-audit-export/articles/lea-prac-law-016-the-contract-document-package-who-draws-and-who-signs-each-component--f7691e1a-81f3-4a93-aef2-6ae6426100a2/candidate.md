@@ -73,7 +73,7 @@ Extracted summary:
 
 
 
-<ArticleMedia type="image" caption="Contract Document Package — Drawings, Specifications, and Who Signs Each" alt="Diagram showing the complete contract document package: Architectural drawings (architect signs/seals), Structural drawings (structural engineer signs), MEP drawings (MEP engineer signs), Specifications (architect/consultant signs), Bill of Quantities (QS signs). Each document type shows who prepares, who seals, and who is legally responsible. Distinction between design intent documents and construction documents." />
+<ArticleMedia id="media-lea-prac-law-016-the-contract--0" type="image" caption="Contract Document Package — Drawings, Specifications, and Who Signs Each" description="Diagram showing the complete contract document package: Architectural drawings (architect signs/seals), Structural drawings (structural engineer signs), MEP drawings (MEP engineer signs), Specifications (architect/consultant signs), Bill of Quantities (QS signs). Each document type shows who prepares, who seals, and who is legally responsible. Distinction between design intent documents and construction documents." />
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)

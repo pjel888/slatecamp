@@ -7,11 +7,11 @@ Classify glass types (annealed, tempered, laminated, insulated, heat-strengthene
 Welding joins two or more metal pieces by melting them together (fusion welding) without the addition of extraneous material, or with filler metal that fuses with the base material. The weld pool solidifies to form a permanent bond exceeding the strength of the base metal if properly executed.
 
 
-<ArticleMedia id="media-glass-type-cross-sections" layout="single" type="image" status="placeholder"
-  alt="Cross-section illustrations of annealed, tempered, laminated, insulated (IGU), heat-strengthened, and wired glass showing layer construction"
-  caption="Future diagram: glass types cross-section — layer construction and manufacturing characteristics"
-  suggestedAsset="Cross-section diagram set showing each glass type's internal structure"
-  placementIntent="Visualizes glass manufacturing differences and lamination/ tempering structure" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-glass-type-cross-sections", layout="single", type="image", status="placeholder", alt="Cross-section illustrations of annealed, tempered, laminated, insulated (IGU), heat-strengthened, and wired glass showing layer construction", caption="Future diagram: glass types cross-section — layer construction and manufacturing characteristics", suggestedAsset="Cross-section diagram set showing each glass type's internal structure", placementIntent="Visualizes glass manufacturing differences and lamination/ tempering structure"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Welding Processes
 
@@ -118,11 +118,11 @@ When a proposed joint falls outside prequalified parameters, the fabricator must
 | Penetrant (PT) | Surface cracks | Yes | Medium | Low | Penetrant dyes, UV light |
 
 
-<ArticleMedia id="media-glass-manufacturing-process" layout="single" type="image" status="placeholder"
-  alt="Process flow diagram showing float glass manufacturing from raw materials through melting, forming, annealing, cutting, and processing into tempered, laminated, and insulated glass"
-  caption="Future diagram: glass manufacturing process — float glass production and secondary processing"
-  suggestedAsset="Process flow diagram of glass manufacturing and fabrication"
-  placementIntent="Visualizes how different glass types are manufactured from base float glass" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-glass-manufacturing-process", layout="single", type="image", status="placeholder", alt="Process flow diagram showing float glass manufacturing from raw materials through melting, forming, annealing, cutting, and processing into tempered, laminated, and insulated glass", caption="Future diagram: glass manufacturing process — float glass production and secondary processing", suggestedAsset="Process flow diagram of glass manufacturing and fabrication", placementIntent="Visualizes how different glass types are manufactured from base float glass"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Philippine Construction Context
 
 Philippine structural steel fabricators—including those in Vleanzuela's industrial zones and throughout Metro Manila—predominantly employ SMAW for field connections and GMAW for shop welding. TESDA NC II Shielded Metal Arc Welding certification is the foundational qualification for Filipino welders seeking employment locally and abroad. The dual-skill pathway (SMAW → GMAW → GTAW) enables fabricators to handle diverse structural applications.
@@ -141,15 +141,31 @@ The LEA evaluates welding knowledge through:
 4. _Defect recognition_ — Identify common welding defects (porosity, cracks, undercut, lack of fusion) and specify inspection methods.
 5. _Philippine standards alignment_ — Apply NSCP 2015, AWS D1.1, and TESDA certification requirements.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: SMAW dominates Philippine field work and TESDA certification pathways. When a question specifies welding a structural connection on-site, assume SMAW unless otherwise stated. For shop fabrication or high-volume work, consider GMAW. Prequalified joints from AWS D1.1 eliminate expensive qualification testing—always check if a proposed joint is prequalified before committing to a custom design.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Confusing Weld Symbol Sides", body="A designer draws a fillet weld symbol on the reference line without clarifying whether it applies to the arrow side or other side. The fabricator welds the wrong side, requiring costly rework. Always clarify weld symbol sides, especially in lap joints and corner joints where both sides may require different weld sizes."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Specifying Non-Prequalified Joints Without Testing", body="An engineer proposes a CJP groove weld configuration that falls outside AWS D1.1 prequalified parameters (e.g., unusual bevel angle or root opening). Without explicit qualification testing, the weld may not meet strength requirements. Always reference prequalified joints unless custom qualification is budgeted and scheduled."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: items="{[\"Assuming all four processes (SMAW, GMAW, GTAW, FCAW) are interchangeable—each has distinct advantages and limitations. SMAW is field-portable; GMAW is fast; GTAW yields best quality; FCAW handles thick material outdoors.\", \"Omitting preheat temperature for thick-section structural steel in cool weather—carbon steel thicker than 25 mm typically requires preheating (per AWS D1.1) to prevent cold cracking. Philippine rainy seasons may necessitate preheat even for moderate thicknesses.\", \"Relying on visual inspection alone for critical connections—specify UT or MT spot checks for high-rise moment-resisting frames, bridges, and suspension systems. Visual inspection misses internal defects like lack of fusion and internal porosity.\", \"Failing to account for Philippine welding certifications—TESDA NC II is the foundational qualification. Fabricators must employ certified welders per NSCP 2015; specifying processes outside TESDA-certified scopes risks non-compliance.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

@@ -43,6 +43,7 @@ SPP 208 defines five principal parties and three key instruments that structure 
 
 </ComparisonTable>
 
+
 ### 2.2 The Three Key Instruments
 
 <ComparisonTable>
@@ -54,6 +55,7 @@ SPP 208 defines five principal parties and three key instruments that structure 
 | **IAPOA ADC Committee** | Appointed by the IAPOA National President to **oversee all ADCs** referred to the IAPOA; the oversight body that approves conditions, timetables, and jury composition |
 
 </ComparisonTable>
+
 
 ***
 
@@ -72,6 +74,7 @@ SPP 208 provides a multi-dimensional classification system for ADCs — by **pur
 
 </ComparisonTable>
 
+
 ### 3.2 Classification by Stage (for Project ADCs)
 
 <ComparisonTable>
@@ -83,11 +86,13 @@ SPP 208 provides a multi-dimensional classification system for ADCs — by **pur
 
 </ComparisonTable>
 
+
 <Callout variant="note">
 
 *Important rule*: A competition that has received IAPOA approval as a single-stage competition **may NOT proceed to a second stage** except with **IAPOA approval** of the Conditions and arrangements for payment of honoraria to the Competitors involved, over and above the prize money originally provided.
 
 </Callout>
+
 
 ### 3.3 Classification by Openness (for Project ADCs)
 
@@ -99,6 +104,7 @@ SPP 208 provides a multi-dimensional classification system for ADCs — by **pur
 | **Limited by Invitation** | Only Architects specifically invited by the Owner may participate; used when the Owner prefers a pre-selected pool of known practitioners |
 
 </ComparisonTable>
+
 
 ### 3.4 Classification by Complexity
 
@@ -140,6 +146,7 @@ The Conditions are the governing document of each individual ADC — drawn up by
 *"It is essential that the ANONYMITY of competitors should be maintained until the final judgment of the competition. In the interest of the competition system, rigorous measures should be taken to ensure that all parties involved adhere to this principle."*
 
 </Callout>
+
 
 Anonymity is the bedrock protection that ensures Jury decisions are based on **design merit alone**, free from favoritism, personal relationships, or institutional bias.
 
@@ -213,6 +220,7 @@ The Jury is the **decision-making body** of the ADC — its awards are final.
 
 </ComparisonTable>
 
+
 ### 7.2 Conduct Rules
 
 - **All Jurors must be present** at all meetings of the Jury — no proxy voting
@@ -270,6 +278,7 @@ These exclusions apply to the **Professional Advisor** and **Competition Secreta
 
 </ComparisonTable>
 
+
 ### 9.3 The First Prize–Commission Rule
 
 <Callout variant="note">
@@ -277,6 +286,7 @@ These exclusions apply to the **Professional Advisor** and **Competition Secreta
 *"In Project ADCs, the award of first prize to a plan/design places the Owner under an obligation to entrust the Author of the plan/design with the commission for the Project."*
 
 </Callout>
+
 
 This is the most commercially significant rule in SPP 208: winning a Project ADC **automatically entitles the winner to the full design commission** under SPP 202. The Owner cannot take the winning design and hire a different architect to implement it.
 
@@ -289,6 +299,7 @@ This is the most commercially significant rule in SPP 208: winning a Project ADC
 *"In Project ADCs, provisions shall be made in the ADC Conditions for the first prize winner to receive compensation of a further sum equal to the amount of the first prize if no contract is signed within twelve (12) months of the announcement of the Jury's award."*
 
 </Callout>
+
 
 If the Owner fails to commission the winning Architect within 12 months, the winning Architect is entitled to **double the first prize amount**. Importantly: even after this additional compensation, **the Owner still does not acquire the right to carry out the project except with the collaboration of the Author**.
 
@@ -306,6 +317,7 @@ SPP 208 establishes a **strong, unwaivable copyright framework** for all competi
 
 </Callout>
 
+
 This applies to **all entries** — winners and non-winners alike. The submission of an entry to an ADC does not transfer copyright to the Owner.
 
 ### 10.2 Winner's Design: One Execution Only
@@ -319,6 +331,7 @@ The design awarded first prize **can only be used by the Owner** upon his commis
 *"No other plan/design may be used wholly or in part by the Owner except by agreement with the Author concerned."*
 
 </Callout>
+
 
 The Owner **cannot pick out portions of non-winning entries** and combine them into another design — this is explicitly prohibited. This provision is reinforced by:
 
@@ -355,6 +368,7 @@ The names of Competitors selected to proceed to the Second Stage **shall be made
 
 </Callout>
 
+
 The **insurance obligation rests on the Owner** — not on the Competitor. Once the Owner receives submitted designs, he is responsible for their protection against loss, damage, or theft. The **amount of insurance shall be stated in the Conditions**.
 
 ***
@@ -380,6 +394,7 @@ The mandatory exhibition of all entries — including disqualified ones — serv
 
 </Callout>
 
+
 <ComparisonTable>
 
 | Entry Category | Post-Exhibition Disposition |
@@ -390,6 +405,7 @@ The mandatory exhibition of all entries — including disqualified ones — serv
 | **Models** | Returned to the Author at the **expense of the Owner** within **one month** of the close of the public exhibition |
 
 </ComparisonTable>
+
 
 ***
 
@@ -405,6 +421,7 @@ SPP 208 mandates a structured ADR-first dispute resolution framework grounded in
 
 </Callout>
 
+
 ADR is not optional — it is a mandatory clause that must be included in every ADC's Conditions.
 
 ### 15.2 Jury as Sole Arbiters During the Competition
@@ -414,6 +431,7 @@ ADR is not optional — it is a mandatory clause that must be included in every 
 *"The Jury members are the sole arbiters at all stages, up to the final prize-giving."*
 
 </Callout>
+
 
 During the adjudication process itself, the Jury's authority is absolute — no external party (not even the IAPOA) can override the Jury's decisions during the competition.
 
@@ -441,6 +459,7 @@ The expenses resulting from any conciliation, mediation, or arbitration procedur
 
 </ComparisonTable>
 
+
 ***
 
 ## 17. Summary of Owner Obligations
@@ -467,6 +486,7 @@ SPP 208 places extensive mandatory obligations on the Owner:
 
 </ComparisonTable>
 
+
 ***
 
 ## 18. Practical Notes for Owners and Competitors
@@ -486,23 +506,15 @@ SPP 208 places extensive mandatory obligations on the Owner:
 
 ---
 
+
+
 ---
 
 ## Exam Tip
 
 LEA Trap: Competition types: (1) OPEN = any qualified architect, (2) INVITED = selected architects only, (3) LIMITED = pre-qualified firms, (4) STUDENT = architecture students. Jury = 5 members minimum (majority must be architects). Winner gets: (a) cash prize OR (b) commission. The architect RETAINS copyright of competition entries (unless the contract specifically transfers it).
 
-
-
----
-
-## Exam Tip
-
-ALE Trap: Competition types: (1) OPEN = any qualified architect, (2) INVITED = selected architects only, (3) LIMITED = pre-qualified firms, (4) STUDENT = architecture students. Jury = 5 members minimum (majority must be architects). Winner gets: (a) cash prize OR (b) commission. The architect RETAINS copyright of competition entries (unless the contract specifically transfers it).
-
 ## Cross‑References
 
 **Spp Doc 207 Design Build Services**, **Spp Doc 209 Architectural Consulting Services Pacs**, **Spp Doc 202 Regular Design Services**, **Uap Spp Doc Standards Of Professional Practice For Philippine Architects**
 
-
-<!-- no-media-needed: SPP document reference, service scope text is optimal -->

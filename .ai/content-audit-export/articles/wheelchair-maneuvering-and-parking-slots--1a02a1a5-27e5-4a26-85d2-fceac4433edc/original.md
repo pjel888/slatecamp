@@ -1,5 +1,9 @@
 # Wheelchair Maneuvering and Parking Slots
 
+<ArticleMedia id="media-wheelchair-maneuvering-and-par-0" name="ramp-profile-section" type="diagram" caption="Cross-section profile of an accessible ramp showing key dimensions: 1.2 m clear width, 1.8 m level landing at top and bottom, 1/20 preferred slope with 15 m landing interval, 1/15 max slope with 10.5 m max run and 700 mm max rise. Show intermediate landing (1.8 m) for runs exceeding 10.5 m. Add 100 mm raised curb edge protection callout." />
+
+<ArticleMedia id="media-wheelchair-maneuvering-and-par-1" name="sidewalk-passing-diagram" type="diagram" caption="Plan view of sidewalk/walkway showing 1.5 m minimum width, 1.8 m width for two-wheelchair passing zone, and 1.8 m × 1.8 m rest/turn spaces every 12 m. Show the 3.5 m dead-end corridor turnabout rule. Include dropped sidewalk at crossing with 1.5 m depth base platform and 900 mm curb ramp at loading bays." />
+
 _(Based only on your attached BP 344 2024 IRR + PD 1096 IRR texts)_
 
 ---
@@ -165,7 +169,6 @@ DROPPED SIDEWALK BASE           → 1500 mm depth at bottom (for narrow crossing
 
 If you like, next we can rebuild your **parking‑specific** crib (4.0‑1.8‑2.3) once you attach the pages of BP 344 Appendix C that actually show the stall, aisle, and headroom values.
 
-
 ---
 
 <LawCallout code="bp344" section="Section 6 - Parking Slots">
@@ -194,3 +197,5 @@ For exam problems: first determine whether the question references Appendix A (r
 
 **Wheelchair Maneuvering And Parking**, **Minimum Parking Requirements**, **Accessible Seating In Assembly Areas**, **Bp 344 Accessible Washrooms**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

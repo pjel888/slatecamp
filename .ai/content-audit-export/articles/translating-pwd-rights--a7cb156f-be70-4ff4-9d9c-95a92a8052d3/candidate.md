@@ -434,23 +434,15 @@ Rights written in law are abstractions until they are expressed in stone, concre
 
 ---
 
+
+
 ---
 
 ## Exam Tip
 
 LEA Trap: Key design translations from PWD laws: RA 7277 = accessible parking (1 per 25 slots min), accessible toilets (1 per floor), ramps | RA 9442 = 20% discount (triggers NO design change, it is an economic privilege) | BP 344 = specific dimensional requirements (tactile warnings, counter heights, grab bars). The most tested: RA 7277 mandates facilities, RA 9442 mandates discounts — DO NOT confuse them.
 
-
-
----
-
-## Exam Tip
-
-ALE Trap: Key design translations from PWD laws: RA 7277 = accessible parking (1 per 25 slots min), accessible toilets (1 per floor), ramps | RA 9442 = 20% discount (triggers NO design change, it is an economic privilege) | BP 344 = specific dimensional requirements (tactile warnings, counter heights, grab bars). The most tested: RA 7277 mandates facilities, RA 9442 mandates discounts — DO NOT confuse them.
-
 ## Cross‑References
 
 **Law Qa Deck Ra 7277 9442 10754**, **Ra 9442 Pwd Privileges And Incentives**, **Accessible Seating In Assembly Areas**, **Wheelchair Maneuvering And Parking**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

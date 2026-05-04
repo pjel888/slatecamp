@@ -16,7 +16,11 @@ Cold storage facilities introduce thermal zoning. The cold chain consists of fou
 Loading docks are critical infrastructure. TyTypical loading dock height is 1,200 millimeters above finished grade (industry standard)e, with 1,219 millimeters (48 inches) being the most common North American standard to align with standard semi-trailer bed heights to match truck bed height. Loading dock door dimensions are typically 2.7–3.0 meters wide (9'0") by 2.7–3.0 meters high (9'0"–10'0"), per WBDG standards for accommodating standard semi-trailer widths (maximum legal truck width 8'6") and side-by-side pallet configurations, accommodating standard semi-trailer doors and pallet jacks. Dock design includes leveling plates (bridge plates) and bumpers to prevent vehicle contact with the building envelope.
 
 Occupant load in warehouses is calculated per Table VIII.3.1 of PD 1096: for storage warehouses (accessory storage areas), use 1 person per 28.0 square meters if open to general public, or 1 person per 46.5 square meters for mechanical equipment rooms and accessory storage NOT open to public. General warehouse storage occupancy load shall be determined by the specific use and accessibility classification per PD 1096 Rule VII. Parking requirements per local zoning ordinance (not specified in PD 1096) (gross floor area), the lowest ratio across occupancy types, reflecting low concurrent occupancy and minimal personnel presence.
-<ArticleMedia id="media-lea-dsgn-006-04-core-concept" type="image" caption="Warehouse Typology — Storage, Loading, and Circulation Zones" alt="Floor plan and section of a warehouse showing Group G occupancy zoning: high-bay storage (6.0m standard, 9-12m optional), loading dock (1,200mm height), cold chain zones, and forklift circulation aisles. Occupant load at 46.5 sqm/person." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-006-04-core-concept", type="image", caption="Warehouse Typology — Storage, Loading, and Circulation Zones", description="Floor plan and section of a warehouse showing Group G occupancy zoning: high-bay storage (6.0m standard, 9-12m optional), loading dock (1,200mm height), cold chain zones, and forklift circulation aisles. Occupant load at 46.5 sqm/person.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -52,10 +56,18 @@ Warehouses in the Philippines are prevalent in commercial zones, industrial park
 
 **Pattern 3 — Cold Chain Zone Design:** A facility requires blast freezing, frozen storage, and chiller zones. Specify dimensions, HVAC zones, and occupant load for a warehouse with total GFA of 4,000 sqm. Requires multi-part calculation and understanding of thermal separation.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Warehouse = Group G (not F). Occupant load = 46.5 sqm/person (low density). Clear height = 6.0m standard, 9.0–12.0m high-bay. Loading dock = 1,200mm height, door 3.6m × 4.5m. Cold chain: blast −25°C, frozen −18°C, chiller +2°C, cool +10°C. Parking = 1/1,000 sqm GFA.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip — ERR-DSGN-003:** Warehouses are Group G (storage), NOT Group F (industrial). Occupant load = 46.5 sqm/person (lowest density). Parking = 1 space per 1,000 sqm. Loading dock height = 1,200mm.
-<ArticleMedia id="media-lea-dsgn-006-04-core-concept" type="image" caption="Warehouse Section — Clear Height, Loading Dock, and Storage Zones" alt="Cross-section of a warehouse showing: clear height (6.0m standard, 9-12m high-bay), loading dock (1,200mm height, 10m+ apron), pallet racking layout, cold chain zone envelope, and forklift circulation aisle widths (3.6m minimum). Group G occupancy load at 46.5 sqm/person noted." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-006-04-core-concept", type="image", caption="Warehouse Section — Clear Height, Loading Dock, and Storage Zones", description="Cross-section of a warehouse showing: clear height (6.0m standard, 9-12m high-bay), loading dock (1,200mm height, 10m+ apron), pallet racking layout, cold chain zone envelope, and forklift circulation aisle widths (3.6m minimum). Group G occupancy load at 46.5 sqm/person noted.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -63,4 +75,8 @@ See **LEA-DSGN-008-02** (Fire Separation) for Group G 4-hour fire rating, **LEA-
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Classifying warehouse as Group F (industrial) instead of Group G (storage) — ERR-DSGN-003\",\"Using 1 person per 9.3 sqm (office) instead of 1 person per 46.5 sqm (warehouse/storage)\",\"Specifying loading dock door as 3.0m × 4.0m instead of 3.6m × 4.5m\",\"Calculating parking at 1 per 100 sqm instead of 1 per 1,000 sqm (minimum for Group G)\",\"Assuming clear height of 5.0m is acceptable instead of 6.0m minimum standard\",\"Confusing loading dock height with building entrance height (dock = 1,200mm, not 900mm)\",\"Omitting separate HVAC zones for cold chain temperature ranges (−25°C to +10°C)\",\"Using 4.0m × 4.0m door for semi-trailer access (correct = 3.6m × 4.5m)\",\"Assuming high-bay design at 9.0m is always more cost-effective than standard 6.0m\",\"Overlooking vapor barrier requirements in cold storage insulation, causing condensation and structural damage\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

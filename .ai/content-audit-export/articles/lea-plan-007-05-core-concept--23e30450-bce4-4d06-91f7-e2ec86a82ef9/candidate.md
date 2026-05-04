@@ -22,7 +22,7 @@ RA 7160 devolved planning authority from the national government to LGUs. Every 
 5. **Enforcement:** The LGU's Planning Office, Building Official, and Barangay officials enforce zoning through building permits, occupancy permits, and violations.
 
 **The key mistake students make:** Zoning ordinances are adopted by the _Sanggunian_ (legislative body), not the Mayor alone and not the Planning Office. The Mayor signs the ordinance after legislative passage, but legislative authority is required.
-<ArticleMedia id="media-lea-plan-007-05-core-concept" type="image" caption="LGU Planning Authority — RA 7160 Decentralization Framework" alt="Diagram of LGU planning authority per RA 7160 LGC: CLUP preparation by Planning Office → Sanggunian adoption (zoning ordinance) → DHSUD conformity review → 10-year horizon + 3-year midterm. Key planning entities and their statutory mandates." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-007-05-core-concept" type="image" caption="LGU Planning Authority — RA 7160 Decentralization Framework" description="Diagram of LGU planning authority per RA 7160 LGC: CLUP preparation by Planning Office → Sanggunian adoption (zoning ordinance) → DHSUD conformity review → 10-year horizon + 3-year midterm. Key planning entities and their statutory mandates." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

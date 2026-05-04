@@ -360,17 +360,29 @@ In the US context, IBC Section 705 (Exterior Walls) and Section 506 (Allowable A
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp"
+- Text: The corner lot bonus under Section 706 rewards open space and public frontage. If your lot fronts on two or more streets with a width of at least 15 m, you may apply for increased allowable floor area beyond the base FLAR at the discretion of the Building Official.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - code="nbcp"
 - Text: The corner lot bonus under Section 706 rewards open space and public frontage. If your lot fronts on two or more streets with a width of at least 15 m, you may apply for increased allowable floor area
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The IBC's sprinkler-based area increase (up to 300% under Section 506) does NOT directly apply in the Philippines. Philippine law uses RA 9514 compliance as a factor in the Building Official's discretionary approval but has no codified multiplier like the IBC.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: The IBC's sprinkler-based area increase (up to 300% under Section 506) does NOT directly apply in the Philippines. Philippine law uses RA 9514 compliance as a factor in the Building Official's discret
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: LEA Pattern: Expect a question giving you lot dimensions, FLAR, and street frontage. Step 1: Compute base TLA × FLAR. Step 2: Check if Sec. 706 conditions apply (2+ streets adjoining). Step 3: Apply increase factor if given. Always show the intermediate calculation.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: LEA Pattern: Expect a question giving you lot dimensions, FLAR, and street frontage. Step 1: Compute base TLA × FLAR. Step 2: Check if Sec. 706 conditions apply (2+ streets adjoining). Step 3: Apply i
@@ -489,7 +501,11 @@ Under PD 1096 Rule VII, Section 706, which of the following is the CORRECT state
 
 > **Answer: C**
 >
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", title="not one side (eliminating B). The IBC formula is not found in PD 1096 Sec. 706 ("
+- Text: Section 706 explicitly states that floor area increases are based on "the existence of public space, streets or yards extending along and adjoining two or more sides of the building or structure" — not one side (eliminating B). The IBC formula is not found in PD 1096 Sec. 706 (eliminating A — this is a system comparison trap). Sprinkler installation is not an explicit standalone trigger in Sec. 706 and is never "automatic" — Building Official approval is always required (eliminating D). Option C
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: code="nbcp", title="not one side (eliminating B). The IBC formula is not found in PD 1096 Sec. 706 ("
 - Text: Section 706 explicitly states that floor area increases are based on "the existence of public space, streets or yards extending along and adjoining two or more sides of the building or structure" — not one side (eliminating B). The IBC formula is not found in PD 1096 Sec. 706 (eliminating A — this is a system comparison trap). Sprinkler installation is not an explicit standalone trigger in Sec. 706 and is never "automatic" — Building Official approval is always required (eliminating D). Option C
@@ -521,9 +537,11 @@ In the Philippine floor area framework under PD 1096 and the 2004 Revised IRR, w
 
 **Pd 1096 Rule Vii Area Metrics**, **Penthouses And Roof Structures**, **Fire Zones And Existing Buildings**, **Minimum Parking Requirements**
 
-<Note>
-Corrected note: The answer using the exact formula is 60,750 sq ft. Choose the closest option in the actual exam and always verify arithmetic. The methodology — If = 0.50; Is = 3.00 (single-story); ad
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Corrected note: The answer using the exact formula is 60,750 sq ft. Choose the closest option in the actual exam and always verify arithmetic. The methodology — If = 0.50; Is = 3.00 (single-story); ad
+[/SLATECAMP_UI_BLOCK]
 ## Verified Sources
 
 1. **PD 1096** — National Building Code of the Philippines, Rule VII (Use or Character of Occupancy), Section 705 (Allowable Floor Areas) and Section 706 (Allowable Floor Area Increases)

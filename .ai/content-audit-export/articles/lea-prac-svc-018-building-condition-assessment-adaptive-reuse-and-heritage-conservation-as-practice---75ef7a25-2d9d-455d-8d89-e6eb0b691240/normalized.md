@@ -30,7 +30,11 @@ Historic and Cultural Heritage Conservation and Planning constitute specialized 
 
 Heritage conservation work includes documentation of historic fabric, development of conservation strategies, and sensitive intervention design. The architect must understand preservation standards and guidelines established by regulatory agencies and professional organizations. Work often requires specialized knowledge of historical details, authentic materials, and period-appropriate construction techniques.
 
-<ArticleMedia id="media-lea-prac-svc-018-building-condition-asse" type="image" caption="Building Condition Assessment and Heritage Conservation Workflow" alt="Process flow showing the assessment-to-occupancy workflow for existing buildings: building condition assessment (documentation→deficiency identification→structural analysis→systems assessment) → adaptive reuse feasibility → heritage conservation planning → schematic design → regulatory compliance → implementation. Based on SPP 203 specialized services." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-svc-018-building-condition-asse", type="image", caption="Building Condition Assessment and Heritage Conservation Workflow", description="Process flow showing the assessment-to-occupancy workflow for existing buildings: building condition assessment (documentation→deficiency identification→structural analysis→systems assessment) → adaptive reuse feasibility → heritage conservation planning → schematic design → regulatory compliance → implementation. Based on SPP 203 specialized services.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Conservation projects frequently involve navigating complex regulatory frameworks, securing historic designations, and managing community stakeholder interests. The architect serves as the technical expert ensuring that interventions respect historical significance while meeting contemporary functional and code requirements.
 
@@ -46,13 +50,29 @@ Architects offering these specialized services should possess documented experie
 
 These services position architects as strategic advisors on building performance, life extension, and sustainable practice. As building performance analysis and environmental responsibility gain importance, these specialized service categories expand in scope and significance.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="SPP206RefServices" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -69,4 +89,8 @@ These services position architects as strategic advisors on building performance
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

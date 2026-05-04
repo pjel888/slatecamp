@@ -1,15 +1,15 @@
 # Content Diff Report: lea-util-002-09-mechanical-room-location-and-siting
 
-Generated: 2026-05-04T02:16:33.453Z
+Generated: 2026-05-04T09:13:14.575Z
 Article ID: 490d7fe6-8f50-404e-a323-1d9a99139869
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:dbda450ca515abceac7bb95ef844d73320f12f295aa34d923b072d2b0fd8a198`
-- Normalized: `sha256:4e7087c76c9c762b7ab3b2f21e0ab81a9669676d89f1aafe6448fa1b33ca34e7`
-- Candidate: `sha256:dbda450ca515abceac7bb95ef844d73320f12f295aa34d923b072d2b0fd8a198`
+- Original: `sha256:e08f72b4468eb6cc6cdfb041eb7dc612e8b5c4b46c94e84cb4512294d89aac51`
+- Normalized: `sha256:5842f816d20c74a1e8b5719ea4f6ceea0a735572332ee1ea4f466f55bf54b7fb`
+- Candidate: `sha256:e08f72b4468eb6cc6cdfb041eb7dc612e8b5c4b46c94e84cb4512294d89aac51`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

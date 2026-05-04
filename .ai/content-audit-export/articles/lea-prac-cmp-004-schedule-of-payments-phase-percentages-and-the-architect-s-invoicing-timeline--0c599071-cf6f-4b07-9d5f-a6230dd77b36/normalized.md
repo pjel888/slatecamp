@@ -28,7 +28,11 @@ Contract Documents represent the most effort-intensive phase. The architect prep
 
 ### Bidding Assistance Phase Payment (5%)
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="uap", section="SPP Doc. 202 - Schedule of Payments"
+- Text: RA 9266, Section 22 — Architect's compensation based on percentage of construction cost or other agreed basis.
+[/SLATECAMP_UI_BLOCK]
 Bidding Assistance covers the architect's support during contractor selection. The architect clarifies document ambiguities for bidders, prepares addenda addressing questions, issues addenda as needed, manages the document distribution process, and attends the bid opening. This phase may include a brief period of project manual preparation. The architect receives an additional 5% of total fee upon completion of bidding and contract award, bringing the cumulative total to 95% of the professional fee. (or in some formats, upon client approval to proceed to Construction Administration).
 
 ### Construction Administration Phase Payment (10%)
@@ -43,7 +47,11 @@ The architect typically submits invoices following completion of each phase and 
 
 While the standard SPP 202 cumulative percentages (5-20-40-90-95-100) apply to most Design-Bid-Build projects, alternative delivery methods may justify different allocations. Design-Build and CM at Risk projects often front-load payments to earlier phases due to compressed schedules and early contractor involvement. Projects with extensive pre-design planning, site investigation, or feasibility studies may establish additional early-phase payments. Limited-scope projects (partial services) may consolidate or eliminate phases. The contract should specify which payment schedule applies.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.
+[/SLATECAMP_UI_BLOCK]
 ### Milestone-Based vs. Time-Based Billing
 
 SPP 202 payment schedules are milestone-based, tied to phase completion and client approval. This differs from time-based billing where the architect invoices periodically (monthly) based on effort expended. Milestone-based schedules better protect the architect by creating clear payment triggers; they also benefit clients by establishing transparent payment expectations. Mixing milestone-based and time-based elements requires clear contract specification.
@@ -58,7 +66,11 @@ Projects extending beyond initial estimates require clear contract provisions re
 
 ### Schedule of Payments in Contract Documentation
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: pairs="{[[\"PCC Inclusions\", \"Labor, materials, equipment, contractor overhead and profit\"], [\"PCC Exclusions\", \"Architect's fee, land cost, contingency, legal fees\"], [\"Typical Fee\", \"10–15% of PCC depending on project complexity\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 The Schedule of Payments should be clearly documented in the Owner-Architect Agreement, specifying percentages for each phase, invoice timing, payment terms, any holdback provisions, and lien waiver requirements. A well-specified payment schedule protects both parties by establishing clear expectations regarding compensation and cash flow timing.
 
@@ -66,7 +78,11 @@ The Schedule of Payments should be clearly documented in the Owner-Architect Agr
 
 
 
-<ArticleMedia type="image" caption="SPP 202 Phase Fee Distribution — Timeline and Percentage Chart" alt="Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-cmp-004-schedule-of-p-0", type="image", caption="SPP 202 Phase Fee Distribution — Timeline and Percentage Chart", description="Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

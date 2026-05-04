@@ -14,9 +14,17 @@ The architect's obligation to the profession requires three things: **(1) refusi
 
 Section 5 of the Code establishes that architects have "moral responsibilities towards his profession, his colleagues and his subordinates." Unlike the public obligation (safety) or the client obligation (loyalty), the profession obligation focuses on **collective standing**, **fair competition**, and **individual accountability for sealed documents**.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 5 (a-k)", title="Profession Obligations — Key Prohibitions"
+- Text: Section 5 establishes the profession obligation. Key subsections: (b) shall not compete on basis of fee differences or use donation for competitive advantage; (c) shall not seek commissions known to be already endowed to another architect; (e) shall not assume commission until written notification and proof of termination; (f) shall notify original architect of successor work even if owner changed; (g) shall not injure another architect's reputation; (i) shall not sign/seal work not under direct
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-eth005-profession-pillars" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Duties to the Profession — Three Pillars Diagram" alt="Three-column comparison diagram: (1) No unfair fee competition Section 5-b, (2) Respect other architects assignments Sections 5-c/e/f, (3) Never sign/seal without direct supervision Section 5-i. Each column lists key provisions, example violations, and disciplinary consequences. Bottom banner shows overarching principle of collective professional standing." placementIntent="ethics-framework" suggestedSearchQuery="architect duties to profession fee competition direct supervision signing sealing Section 5 RA 9266" suggestedAsset="Diagram or reference image" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-eth005-profession-pillars", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Duties to the Profession — Three Pillars Diagram", alt="Three-column comparison diagram: (1) No unfair fee competition Section 5-b, (2) Respect other architects assignments Sections 5-c/e/f, (3) Never sign/seal without direct supervision Section 5-i. Each column lists key provisions, example violations, and disciplinary consequences. Bottom banner shows overarching principle of collective professional standing.", placementIntent="ethics-framework", suggestedSearchQuery="architect duties to profession fee competition direct supervision signing sealing Section 5 RA 9266", suggestedAsset="Diagram or reference image"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 The profession obligation has three critical dimensions:
 
@@ -47,7 +55,11 @@ The Board of Architecture has repeatedly emphasized that signing and sealing doc
 
 The PRBoA (3 members: 1 Chairman + 2 Members per RA 9266 §4) monitors signing/sealing violations. Architects must report violations to the Board; failure to report is complicity.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Critical Exam Trap:** "Direct supervision" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review work as it progressed. Remote supervision, email-based approval, or post-hoc review of finished work does NOT satisfy §5-i. The architect who signs the documents must know the design intimately — not just the final product.
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
 
@@ -63,22 +75,25 @@ Original Architect X designed a building. Years later, Owner hires Architect Y t
 **Pattern 4: Fee Competition**
 Architect A proposes 20M for a project. Architect B offers 12M for identical scope. Architect B violates §5-b — competition "on the basis of difference of professional charges."
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Memory Aid:** "SSN" — (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sealed documents or fee competition, apply SSN to identify violations.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: "SSN" = Seal, Supervision, Notification.** (S) Seal only work under direct supervision. (S) Supervision must be personal and integral. (N) Notify original architects of successor work. When a question involves signing selead documents or fee competition, apply SSN to identify violations.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    "Confusing 'final review' with 'direct supervision' — §5-i requires direct supervision during the design process, not just approval of final documents",
-    "Assuming junior staff designs can be sealed by the supervising architect if the architect 'reviewed' them — if the junior staff worked under another architect's supervision, only that supervising architect may sign",
-    "Thinking remote oversight qualifies as direct supervision — direct personal supervision requires active involvement in design decisions as they are made, not post-hoc review",
-    "Believing 'minor' modifications to another architect's work don't require notification — §5-f applies regardless of scale; notification is always required",
-    "Confusing professional price negotiation with fee competition — negotiating fees within a relationship is different from undercutting competitors. §5-b prohibits the latter",
-    "Assuming an architect can seal work if they are willing to take liability — the rule is about authorship and direct supervision, not willingness to accept responsibility",
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    \"Confusing 'final review' with 'direct supervision' — §5-i requires direct supervision during the design process, not just approval of final documents\",\n    \"Assuming junior staff designs can be sealed by the supervising architect if the architect 'reviewed' them — if the junior staff worked under another architect's supervision, only that supervising architect may sign\",\n    \"Thinking remote oversight qualifies as direct supervision — direct personal supervision requires active involvement in design decisions as they are made, not post-hoc review\",\n    \"Believing 'minor' modifications to another architect's work don't require notification — §5-f applies regardless of scale; notification is always required\",\n    \"Confusing professional price negotiation with fee competition — negotiating fees within a relationship is different from undercutting competitors. §5-b prohibits the latter\",\n    \"Assuming an architect can seal work if they are willing to take liability — the rule is about authorship and direct supervision, not willingness to accept responsibility\",\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

@@ -23,7 +23,11 @@ Every site sits within a watershed—the land area that drains to a particular s
 - Sites in upper watershed areas have minimal inflow and depend on rainfall
 - Mid-watershed sites collect runoff from upslope and generate runoff to downslope neighbors
 - Lower watershed sites (near rivers or coast) receive upstream flows and must plan for flooding
-<ArticleMedia id="media-lea-plan-004-02-what-you-need-to-know-fo" type="image" caption="Watershed and Hydrology — Site Drainage Patterns Diagram" alt="Cross-sectional diagram of a watershed showing three zones: upper watershed (rainfall-dependent, minimal inflow), mid-watershed (collects runoff from upslope, generates runoff downslope), and lower watershed (near river/coast, receives upstream flows, flood-prone). Annotated with stormwater runoff arrows, groundwater table, impervious surface infiltration, and PD 1067 water body easements (3m/20m/40m)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-004-02-what-you-need-to-know-fo", type="image", caption="Watershed and Hydrology — Site Drainage Patterns Diagram", description="Cross-sectional diagram of a watershed showing three zones: upper watershed (rainfall-dependent, minimal inflow), mid-watershed (collects runoff from upslope, generates runoff downslope), and lower watershed (near river/coast, receives upstream flows, flood-prone). Annotated with stormwater runoff arrows, groundwater table, impervious surface infiltration, and PD 1067 water body easements (3m/20m/40m).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Flood Zones and Flood Risk
 
@@ -50,7 +54,11 @@ Metro Manila and coastal cities frequently flood because:
 - Use ground floors for parking or flood-resilient storage (not housing)
 - Install flood barriers or closures
 - Maintain or restore wetlands and detention areas for natural flood absorption
-<ArticleMedia id="media-lea-plan-004-02-what-you-need-to-know-fo" type="image" caption="Flood Risk Assessment — Return Period and Site Elevation Diagram" alt="Cross-section diagram showing flood return periods (5-year, 10-year, 25-year flood elevations) relative to site elevation. Design responses illustrated: elevating sensitive uses above 25-year flood level, using ground floors for flood-resilient storage, maintaining wetlands for natural flood absorption. Philippine context: Metro Manila high water table, inadequate estero drainage, typhoon rainfall intensity." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-004-02-what-you-need-to-know-fo", type="image", caption="Flood Risk Assessment — Return Period and Site Elevation Diagram", description="Cross-section diagram showing flood return periods (5-year, 10-year, 25-year flood elevations) relative to site elevation. Design responses illustrated: elevating sensitive uses above 25-year flood level, using ground floors for flood-resilient storage, maintaining wetlands for natural flood absorption. Philippine context: Metro Manila high water table, inadequate estero drainage, typhoon rainfall intensity.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Wetlands and Water Bodies
 
@@ -191,7 +199,11 @@ Sites classified as Environmentally Critical Projects (ECPs) or located in Envir
 
 ### Ecological Site Planning Checklist
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: When analyzing a site's ecological conditions: 1. Map the watershed and identify drainage patterns 2. Check historical flood records and assess flood risk 3. Document existing wetlands, water bodies, and vegetation 4. Identify any protected or vulnerable species 5. Assess slope stability indicators and landslide risk 6. Review soil conditions and geotechnical constraints 7. Note proximity to active fault lines (PHIVOLCS) 8. Check if site is in an ECA or if project is an ECP (triggers EIA/ECC nee
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

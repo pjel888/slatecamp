@@ -1,23 +1,22 @@
 {
-  "attempted_at": "2026-05-03T16:51:36.319Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T08:49:21.154Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "859b1a7f-8aba-473d-8c28-f9aaa39af11d",
   "slug": "pd-1096-rule-viii-setbacks-and-easements",
   "preparation_actions": [
+    "auto_composed_candidate",
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:2e5d7788f34ed1afd8d6d2a5f84bbc7c037b02e92bcf58fb8d164a3c4276dec1",
-  "original_hash": "sha256:8836fadfde91e6de98ff4935f80bd61e23c988e5d8e15f0b85c4b8aa194b467a",
-  "candidate_hash": "sha256:2e5d7788f34ed1afd8d6d2a5f84bbc7c037b02e92bcf58fb8d164a3c4276dec1",
+  "remote_hash_before": "sha256:1c04c76a01abcca637b87b6d988ca1e8bf66964be481796d17d3c094848db72f",
+  "original_hash": "sha256:2e5d7788f34ed1afd8d6d2a5f84bbc7c037b02e92bcf58fb8d164a3c4276dec1",
+  "candidate_hash": "sha256:450bb142c273a7c997fd3d410330429a28423e351c9f46d7939bcbffc70ea101",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T16:38:15.563495+00:00"
+  "remote_updated_at_before": "2026-05-04T06:02:13.415832+00:00"
 }

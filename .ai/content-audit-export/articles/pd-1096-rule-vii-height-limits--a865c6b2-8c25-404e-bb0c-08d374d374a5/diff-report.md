@@ -1,26 +1,26 @@
 # Content Diff Report: pd-1096-rule-vii-height-limits
 
-Generated: 2026-05-04T02:25:38.081Z
+Generated: 2026-05-04T09:13:53.169Z
 Article ID: a865c6b2-8c25-404e-bb0c-08d374d374a5
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:ac0826a1d0c00ff22dc0b691d8c0173d93b734df27f5b34b947af2830ec3b4a2`
-- Normalized: `sha256:00631f51a134ca9607e524d60a4e8978dd03eae831fe1a7956a8636e986812ec`
-- Candidate: `sha256:05f30026e96e4cc0ca7cdb7ae49378129d3b2d1d246a8aade9858cd580b11652`
+- Original: `sha256:a361bacceb04f2af8b0e3a25e6d6e5c75a02914743317ff3179f379b4e30f64c`
+- Normalized: `sha256:289c7307017cc5c5d6c1f625ffef246d535f45ffa22037705f3eade16bcbc7a6`
+- Candidate: `sha256:a361bacceb04f2af8b0e3a25e6d6e5c75a02914743317ff3179f379b4e30f64c`
 
 ## Line summary
 
-- Changed lines: 474
-- Inserted lines: 9
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 11
-- UI blocks preserved: 11
+- UI blocks expected: 13
+- UI blocks preserved: 13
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

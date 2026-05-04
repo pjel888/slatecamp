@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:06:14.775Z",
+  "attempted_at": "2026-05-04T08:49:19.294Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "d39f0b0e-1219-4f42-a570-e08a6134d544",
   "slug": "overview-building-utilities-mepf",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:12a4701759d494e6b425dfc0a68c453b502ad37a09a6b16ae6d51e36c2a35dc5",
-  "original_hash": "sha256:664791691d00aedb1823bb62624a1900b3f257770f94bf783f832b0b07e1a25d",
-  "candidate_hash": "sha256:12a4701759d494e6b425dfc0a68c453b502ad37a09a6b16ae6d51e36c2a35dc5",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:436b09fae4defe7909e8310a2659de99bd4c41c6fba88600fe715eaaefdf353b",
+  "original_hash": "sha256:12a4701759d494e6b425dfc0a68c453b502ad37a09a6b16ae6d51e36c2a35dc5",
+  "candidate_hash": "sha256:a0ad66502211fe728ab067897656241b603879777c12d909d579e0dad28ad699",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T01:59:59.151863+00:00"
+  "remote_updated_at_before": "2026-05-04T02:33:19.881065+00:00"
 }

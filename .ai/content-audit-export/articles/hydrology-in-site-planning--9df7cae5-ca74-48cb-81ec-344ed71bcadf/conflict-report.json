@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:07:24.239Z",
+  "attempted_at": "2026-05-04T08:50:53.484Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
   "slug": "hydrology-in-site-planning",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:e38d08847ee0e9640889bdd10e29d7bb788204e684c162659281940281beb35e",
-  "original_hash": "sha256:719232e6e2efbe508156020a5514c0b8ca40b287415b72ae3e1124332954f8c4",
-  "candidate_hash": "sha256:e38d08847ee0e9640889bdd10e29d7bb788204e684c162659281940281beb35e",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:e853d9ff2ec0f8d615b3e7bc04f279fca2ebf6ff2297543cbbdd6bd7c48de4ab",
+  "original_hash": "sha256:e38d08847ee0e9640889bdd10e29d7bb788204e684c162659281940281beb35e",
+  "candidate_hash": "sha256:36b1b96863a6ae2972e735f7e61c9a68e93990eded826632ade5c6029e48e9ce",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T02:02:28.288743+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:08.393862+00:00"
 }

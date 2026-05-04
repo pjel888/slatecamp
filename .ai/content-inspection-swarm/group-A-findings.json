@@ -1,0 +1,746 @@
+{
+  "group": "A",
+  "articles_scanned": 160,
+  "articles_with_issues": 39,
+  "findings": [
+    {
+      "article_dir": "lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "slug": "lea-matl-005-07-core-concept",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 60,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        },
+        {
+          "type": "visibility",
+          "line": 62,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        },
+        {
+          "type": "visibility",
+          "line": 64,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc",
+      "slug": "lea-matl-005-08-core-concept",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 65,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        },
+        {
+          "type": "visibility",
+          "line": 67,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        },
+        {
+          "type": "visibility",
+          "line": 69,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "slug": "lea-matl-005-09-core-concept",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 60,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        },
+        {
+          "type": "visibility",
+          "line": 62,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        },
+        {
+          "type": "visibility",
+          "line": 64,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-005-10-core-concept--aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "slug": "lea-matl-005-10-core-concept",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 78,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        },
+        {
+          "type": "visibility",
+          "line": 80,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        },
+        {
+          "type": "visibility",
+          "line": 82,
+          "detail": "<WikiMistakeCard> uses unknown prop 'severity'; valid props: ['body', 'context', 'correctValue', 'correction', 'explanation', 'mistake', 'number', 'sourceRef', 'title', 'wrongValue']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-007-01-core-concept--20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "slug": "lea-matl-007-01-core-concept",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 79,
+          "detail": "Orphaned '**' bold marker (odd count: 3)"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "slug": "lea-matl-008-02-core-concept",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 49,
+          "detail": "Orphaned '**' bold marker (odd count: 3)"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-010-05-core-concept--40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "slug": "lea-matl-010-05-core-concept",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 71,
+          "detail": "Orphaned '**' bold marker (odd count: 1)"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b",
+      "slug": "lea-prac-eth-009-introduction",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 33,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 152,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 253,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-eth-010-introduction--265185c0-c1ac-4f40-8db0-bde23084f634",
+      "slug": "lea-prac-eth-010-introduction",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 105,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 171,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 271,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942",
+      "slug": "lea-prac-eth-011-introduction",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 74,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 124,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 303,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59",
+      "slug": "lea-prac-eth-012-introduction",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 391,
+          "detail": "Orphaned '**' bold marker (odd count: 1)"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 392,
+          "detail": "Orphaned '**' bold marker (odd count: 1)"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 393,
+          "detail": "Orphaned '**' bold marker (odd count: 1)"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 394,
+          "detail": "Orphaned '**' bold marker (odd count: 1)"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 395,
+          "detail": "Orphaned '**' bold marker (odd count: 1)"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 396,
+          "detail": "Orphaned '**' bold marker (odd count: 1)"
+        },
+        {
+          "type": "visibility",
+          "line": 15,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 94,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 168,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 250,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-eth-013-introduction--3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
+      "slug": "lea-prac-eth-013-introduction",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 105,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        },
+        {
+          "type": "visibility",
+          "line": 210,
+          "detail": "<Callout> uses unknown prop 'type'; valid props: ['title', 'variant']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "slug": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 68,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 70,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects--9c859ffb-8b3a-4feb-b484-6700d3867e5c",
+      "slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 62,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 64,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 66,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+      "slug": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 60,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 62,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 64,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "slug": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 64,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 66,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 68,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 72,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 77,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 82,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145",
+      "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 107,
+          "detail": "<Tip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 113,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848",
+      "slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 158,
+          "detail": "Orphaned '**' bold marker (odd count: 5)"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 173,
+          "detail": "Orphaned '**' bold marker (odd count: 5)"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50",
+      "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 51,
+          "detail": "<Note /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 171,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 176,
+          "detail": "<Note /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
+      "slug": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 47,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 52,
+          "detail": "<Note /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 41,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 43,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 53,
+          "detail": "<Tip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 55,
+          "detail": "<Callout /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 57,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 59,
+          "detail": "<Note /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 61,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869",
+      "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 22,
+          "detail": "<Callout /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 42,
+          "detail": "<Note /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 44,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 46,
+          "detail": "<Warn /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 22,
+          "detail": "<Callout /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 40,
+          "detail": "<Note /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 46,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 48,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 44,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 49,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 54,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+      "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 37,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 39,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 41,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works--6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
+      "slug": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 59,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 61,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies--2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "slug": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 61,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 63,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 65,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 62,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 67,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de",
+      "slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 68,
+          "detail": "<Warn /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 73,
+          "detail": "<ExamTip /> has no props and may render nothing"
+        },
+        {
+          "type": "empty_component",
+          "line": 78,
+          "detail": "<Tip /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a",
+      "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 41,
+          "detail": "<SPP206RefServices /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 49,
+          "detail": "<SPP206RefServices /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 49,
+          "detail": "<SPP207RefServices /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 55,
+          "detail": "<SPP207RefServices /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 59,
+          "detail": "<SPP206RefServices /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48",
+      "slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 59,
+          "detail": "<SPP206RefServices /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics",
+      "issues": [
+        {
+          "type": "empty_component",
+          "line": 63,
+          "detail": "<SPP206RefServices /> has no props and may render nothing"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+      "slug": "lea-prac-svc-025-core-concept",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 77,
+          "detail": "Orphaned '**' bold marker (odd count: 1)"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 78,
+          "detail": "Orphaned '**' bold marker (odd count: 1)"
+        }
+      ]
+    }
+  ]
+}

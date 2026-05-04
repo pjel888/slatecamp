@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond
 
-Generated: 2026-05-04T02:16:41.002Z
+Generated: 2026-05-04T09:13:21.164Z
 Article ID: 6bb0f186-b9f7-4da9-ba7b-05639f43d4cf
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:4f75819f7a926c5536290e33c7a9a96f09a2890c7acea45c5b3e9cc85268daa8`
-- Normalized: `sha256:edd7e2144f03bad8d2b22f46757789d23435562c88295fd1a78edcd09566c875`
-- Candidate: `sha256:4f75819f7a926c5536290e33c7a9a96f09a2890c7acea45c5b3e9cc85268daa8`
+- Original: `sha256:ce81278a7c2541f589a28b7d7e24b4b617cedab70e234966b8aac0e5baad946f`
+- Normalized: `sha256:926c23e54edb3b2be0b503516ff1cd910fb2a5debda498221c13568d8c768bb2`
+- Candidate: `sha256:ce81278a7c2541f589a28b7d7e24b4b617cedab70e234966b8aac0e5baad946f`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 5
-- UI blocks preserved: 5
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

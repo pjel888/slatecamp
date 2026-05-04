@@ -97,7 +97,7 @@ Exams ask what architectural symbols communicate about national identity. Exampl
 
 **Pan-Africanism**: Political and cultural movement emphasizing unity and shared identity across African nations and diaspora.
 
-<ArticleMedia id="media-hist-011-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of African architecture from colonial period (1880s–1960s, European imported styles) through postcolonial approaches (pure modernism, critical regionalism, cultural revival) to contemporary African identity in built form.\" caption=\"African Architecture — Colonial to Postcolonial Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-011-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of African architecture from colonial period (1880s–1960s, European imported styles) through postcolonial approaches (pure modernism, critical regionalism, cultural revival) to contemporary African identity in built form." caption="African Architecture — Colonial to Postcolonial Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

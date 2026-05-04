@@ -1,15 +1,15 @@
 # Content Diff Report: mastery-history-of-architecture
 
-Generated: 2026-05-04T02:17:24.415Z
+Generated: 2026-05-04T09:13:47.130Z
 Article ID: 0871298e-f789-4d5e-9c50-cdf2556e4903
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:9d766efe22f93baca33fbf6bcc31adc96162ef49b5924b84e1f8accaf0576650`
-- Normalized: `sha256:b4bf4e73f9f2255377532c0e8ce2d95a0e160d992414b8c1ac7db1dc61cb02f9`
-- Candidate: `sha256:9d766efe22f93baca33fbf6bcc31adc96162ef49b5924b84e1f8accaf0576650`
+- Original: `sha256:8e9d077c218d47b3545941a2a54cb03d660091d23c663ee6bf334063ebe046fd`
+- Normalized: `sha256:1db4a9465ff353990713b90c2f23446e1f47cc13c7c5215be5401942b7b6cd9b`
+- Candidate: `sha256:8e9d077c218d47b3545941a2a54cb03d660091d23c663ee6bf334063ebe046fd`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 7
+- UI blocks preserved: 7
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

@@ -39,7 +39,11 @@ A floor plan is a horizontal slice (orthogonal view from above) through a buildi
 - **Stairs:** Tread lines with a direction arrow (UP/DN) and landing dimensions.
 - **Ramps:** Sloped lines with a gradient (1:12 max for ramps; 1:20 for sloped walks).
 - **Fixtures:** Standard symbols for toilets (WC), sinks, and kitchen appliances.
-<ArticleMedia id="media-lea-dsgn-011-01-core-concept" type="image" caption="Floor Plan Conventions — Wall Types, Door Symbols, and Dimensioning" alt="Annotated floor plan excerpt showing standard conventions: exterior walls (heavy 0.5-0.7mm), interior partitions (medium 0.3-0.4mm), door swing arcs, window symbols, stair tread/direction arrows, dimension lines, and room labels at 1:100/1:50 scale." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-011-01-core-concept", type="image", caption="Floor Plan Conventions — Wall Types, Door Symbols, and Dimensioning", description="Annotated floor plan excerpt showing standard conventions: exterior walls (heavy 0.5-0.7mm), interior partitions (medium 0.3-0.4mm), door swing arcs, window symbols, stair tread/direction arrows, dimension lines, and room labels at 1:100/1:50 scale.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -92,7 +96,11 @@ Question: "What is the standard width for an accessible corridor?"
 - **Answer:** 1.50 m. Using 1.20 m is a common mistake unless it is a "constrained existing condition".
 
 **Exam Tip:** Floor plans at 1:100 or 1:50 scale for building permit. Verify that all rooms are labeled, dimensions are complete, door swings are shown, and wall types are indicated. Missing room labels = permit rejection.
-<ArticleMedia id="media-lea-dsgn-011-01-core-concept" type="image" caption="Drawing Scale Reference — Common Architectural Scales and Their Uses" alt="Reference chart showing common architectural drawing scales: 1:100 (general floor plan), 1:50 (detailed plan/reflected ceiling), 1:20 (room layout/furniture), 1:10 (wall section), 1:5 (construction detail), and 1:1 (full-size template). Appropriate use cases and dimension precision for each scale." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-011-01-core-concept", type="image", caption="Drawing Scale Reference — Common Architectural Scales and Their Uses", description="Reference chart showing common architectural drawing scales: 1:100 (general floor plan), 1:50 (detailed plan/reflected ceiling), 1:20 (room layout/furniture), 1:10 (wall section), 1:5 (construction detail), and 1:1 (full-size template). Appropriate use cases and dimension precision for each scale.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -100,4 +108,8 @@ See **LEA-DSGN-011-02** (Elevations and Sections) for vertical documentation, **
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\n \"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\",\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\n \"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\",\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\n ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

@@ -3,9 +3,6 @@
 After reading this article, you should be able to:
 
 Apply BP 344 elevator cab dimension requirements: minimum cab size based on building occupancy (1.20 m × 1.30 m minimum, 1.60 m × 1.50 m for larger buildings), door clear opening (900 mm minimum), call button height (900-1,100 mm), Braille and tactile markings, and visual/audible floor indicators; calculate minimum elevator quantity by floor area and occupancy.
-
-_An Immersive LEA Review Module — Built for Long-Term Potentiation_
-
 ---
 
 ## The Real-World Hook (Sensory Activation)
@@ -60,6 +57,8 @@ Cognitive psychology shows that highlighting what has **changed** prevents proac
 | **Power Outage Operation**                | Elevator must remain operable for evacuation via backup/alternative power                   | Section 8, Elevators (power outage)[file:4]  | Critical for PWDs who cannot safely use stairs under NBC exit provisions.                                    | Mandatory                             |
 | **Car Configuration**                     | Through-type (front and rear doors) **preferred** for accessible cars                       | Section 8, Elevators (through-type)[file:4]  | Eliminates reversing; user enters from one side and exits forward on the other.                              | Preferred, not absolutely required    |
 
+<ArticleMedia id="media-bp-344-elevator-dimensions-0" name="elevator-car-dimensions" type="diagram" caption="Plan and section of accessible elevator car: 1200mm wide × 1400mm deep clear internal dimensions, 900mm clear door opening, handrails on both side walls and rear wall at 900mm height with max 150mm gap from wall, COP centerline at 900mm from car floor." />
+
 <LawCallout code="bp344" section="Section 10.1 - Elevator Car Dimensions">
 
 
@@ -77,6 +76,8 @@ NBC Rule VIII establishes general minimum room and circulation sizes but does no
 
 
 </LawCallout>
+
+<ArticleMedia id="media-bp-344-elevator-dimensions-1" name="elevator-lobby-turning-space" type="diagram" caption="Comparative plan: elevator lobby 1800×1800mm turning space (full 360° wheelchair turn) vs. elevator car 1200×1400mm interior (too small for full turn). Shows 900mm door opening alignment and handrail positions on three car walls." />
 
 ---
 
@@ -120,6 +121,8 @@ Handrail details are commonly under‑reviewed, even though they interact concep
 | Height                        | **900 mm** above car floor        | Section 8, Elevators (handrails)[file:4]   |
 | Location                      | **Both side walls and rear wall** | Section 8, Elevators (handrails)[file:4]   |
 | Gap between handrail and wall | Max **150 mm**                    | Section 8, Elevators (handrails).c[file:4] |
+
+<ArticleMedia id="media-bp-344-elevator-dimensions-2" name="elevator-braille-and-cop" type="diagram" caption="Elevation diagrams: (1) Braille floor indicators at 1200mm AFF on both side door jambs, (2) Car Operating Panel (COP) centerline at 900mm AFF with buttons min 20mm diameter and max 1mm depression, Braille text to left of each button, (3) Voice synthesizer speaker and emergency visual communication panel locations." />
 
 <Callout variant="lea-watch" title="Trap Leart">
 
@@ -257,15 +260,31 @@ fails the 2024 IRR on **at least four specific counts**.[file:4] Name each viola
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Elevator cab minimum: 1.20 m × 1.30 m (small occupancy) or 1.60 m × 1.50 m (large occupancy > 500 persons). Door clear opening = 900 mm minimum. Call buttons: 900-1,100 mm from floor. Braille required on all floor buttons. Audible annunciator for each floor. The 900 mm door opening is the most tested dimension.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Elevator cab minimum: 1.20 m × 1.30 m (small occupancy) or 1.60 m × 1.50 m (large occupancy > 500 persons). Door clear opening = 900 mm minimum. Call buttons: 900-1,100 mm from floor. Braille required on all floor buttons. Audible annunciator for each floor. The 900 mm door opening is the most tested dimension.
+
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Elevator cab minimum: 1.20 m × 1.30 m (small occupancy) or 1.60 m × 1.50 m (large occupancy > 500 persons). Door clear opening = 900 mm minimum. Call buttons: 900-1,100 mm from floor. Braille required on all floor buttons. Audible annunciator for each floor. The 900 mm door opening is the most tested dimension.
+
 ## Cross‑References
 
 **Bp 344 Accessible Washrooms**, **Bp 344 Ramp Slope Tiers**, **Conflict Matrix Stairs Guards Elevators**, **Transport Nodes Escalators Walkways**
 
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

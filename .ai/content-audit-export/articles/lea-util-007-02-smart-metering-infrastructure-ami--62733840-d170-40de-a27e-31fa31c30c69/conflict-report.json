@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:06:44.009Z",
+  "attempted_at": "2026-05-04T08:49:52.149Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,12 @@
   "updated_rows_count": 0,
   "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
   "slug": "lea-util-007-02-smart-metering-infrastructure-ami",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:0234f468db3f05d389e7b2123e734e6ffe1fcb616e50d8b7c7d5a33c490bd9c5",
-  "original_hash": "sha256:dfd33b9475b03673ef317f038b51cc91906cb852e8180235e21295105fd411ea",
-  "candidate_hash": "sha256:0234f468db3f05d389e7b2123e734e6ffe1fcb616e50d8b7c7d5a33c490bd9c5",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:228e3b5bea96bdd98d433199ecb1839d35c3a56cbf106d48697c19ef1436791d",
+  "original_hash": "sha256:0234f468db3f05d389e7b2123e734e6ffe1fcb616e50d8b7c7d5a33c490bd9c5",
+  "candidate_hash": "sha256:29e79400b64049a2f1e47771819f3ddb5e3b137baafeacbc7fddb6056f16238a",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T02:01:04.399681+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:03.674194+00:00"
 }

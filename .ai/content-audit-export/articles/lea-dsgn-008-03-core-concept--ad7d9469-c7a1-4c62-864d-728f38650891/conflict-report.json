@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:06:47.281Z",
+  "attempted_at": "2026-05-04T08:49:55.583Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
   "slug": "lea-dsgn-008-03-core-concept",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:2065e57ca7df57ce0f417246778cd87284b546140fec786bd51e9e6852833139",
-  "original_hash": "sha256:7ac38ba17b00ff7fc839370234abf8b0922d14cddb32faf308192fdb6762059d",
-  "candidate_hash": "sha256:2065e57ca7df57ce0f417246778cd87284b546140fec786bd51e9e6852833139",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:dcfc54795b872d74f66993669338330d60973ae84d20c69fa5504d706e86c839",
+  "original_hash": "sha256:2065e57ca7df57ce0f417246778cd87284b546140fec786bd51e9e6852833139",
+  "candidate_hash": "sha256:8bde232bd054d466e780d7b9a6b6803fddf74eeaaf6e0db635bc04c399b907da",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T02:01:11.339974+00:00"
+  "remote_updated_at_before": "2026-05-04T02:33:04.47712+00:00"
 }

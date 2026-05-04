@@ -7,7 +7,7 @@ Identify CCTV system components (cameras, DVR/NVR, monitors, cabling, storage), 
 
 ### Camera Types and Applications
 
-<ArticleMedia id="media-lea-util-004-06-cctv-systems" a type="image" caption="CCTV System Architecture — Cameras, DVR/NVR, Monitoring Station" description="Network diagram showing CCTV system components: dome cameras (indoor ceilings), bullet cameras (perimeter walls), PTZ cameras (lobbies/malls), connected via Category 6A cabling to NVR (network video recorder) with storage (4-8TB for 16 cameras, 30-day retention). Monitoring station shows video wall display and security console. Resolution standards (1MP entry, 2-4MP standard, 5MP+ license plate) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-06-cctv-systems" type="image" caption="CCTV System Architecture — Cameras, DVR/NVR, Monitoring Station" description="Network diagram showing CCTV system components: dome cameras (indoor ceilings), bullet cameras (perimeter walls), PTZ cameras (lobbies/malls), connected via Category 6A cabling to NVR (network video recorder) with storage (4-8TB for 16 cameras, 30-day retention). Monitoring station shows video wall display and security console. Resolution standards (1MP entry, 2-4MP standard, 5MP+ license plate) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 **Dome cameras** are mounted flush against ceilings or walls and offer aesthetic integration with interior design. They are commonly specified for retail environments, office lobbies, and residential common areas in Philippine gated communities. The dome housing protects the camera optics from environmental exposure and provides a degree of operational discretion—observers cannot easily determine the camera's viewing direction.
@@ -68,11 +68,11 @@ Example: 16 cameras × 1 GB/hr × 24 hrs × 30 days = 11.52 TB
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+<KeyValues />
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip />
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip />
 
 ## Access Control Systems
 

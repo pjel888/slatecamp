@@ -69,7 +69,7 @@ For detailed coverage of Mughal architecture including the Taj Mahal, charbagh g
 
 <Warn>Do not confuse shikhara (Hindu temple tower above sanctum) with gopura (monumental gateway tower, especially in South Indian temples). Shikhara is cosmic-spiritual symbolism; gopura is administrative entrance marker. Both are vertical, but their functions and placement differ fundamentally. Similarly, do not treat stupas as interchangeable with temples: stupas are Buddhist, house relics, and emphasize circumambulation; temples are Hindu, house deities, and emphasize axial entry. These distinctions are directly tested on the LEA.</Warn>
 
-<ArticleMedia id="media-hist-007-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Hindu (shikhara tower, gopura gateway), Buddhist (stupa, chaitya hall), and Mughal (chahar bagh garden, iwan) architectural traditions in India, showing contrasting building types, spatial organization, and key monuments.\" caption=\"Indian Architecture — Hindu, Buddhist, Mughal Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-007-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Hindu (shikhara tower, gopura gateway), Buddhist (stupa, chaitya hall), and Mughal (chahar bagh garden, iwan) architectural traditions in India, showing contrasting building types, spatial organization, and key monuments." caption="Indian Architecture — Hindu, Buddhist, Mughal Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

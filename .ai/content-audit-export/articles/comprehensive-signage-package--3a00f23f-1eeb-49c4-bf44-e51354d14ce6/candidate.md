@@ -3,6 +3,8 @@
 After reading this article, you should be able to:
 
 Apply the comprehensive signage package requirements under BP 344 and accessibility codes: identify the five required sign types (identification, directional, informational, warning, regulatory); apply tactile sign specifications (raised characters, Braille, mounting height, contrast); and determine when audible signs are required in addition to visual signs.
+### BP 344 (2024 IRR) — LEA Review Series
+
 ---
 
 ## REAL-WORLD HOOK
@@ -429,5 +431,3 @@ You are reviewing a new 5-story office building's signage package. The submittal
 
 **Signs Design And Construction**, **Bp 344 Tactile And Visual Alarms**, **Accessible Seating In Assembly Areas**, **Public Service Counters And Atms**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

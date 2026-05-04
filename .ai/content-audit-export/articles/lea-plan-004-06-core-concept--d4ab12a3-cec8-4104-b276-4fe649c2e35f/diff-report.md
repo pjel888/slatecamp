@@ -1,15 +1,15 @@
 # Content Diff Report: lea-plan-004-06-core-concept
 
-Generated: 2026-05-04T02:17:01.178Z
+Generated: 2026-05-04T09:13:33.820Z
 Article ID: d4ab12a3-cec8-4104-b276-4fe649c2e35f
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:466b0efece4b2f92a5ab9bfb4c6b90597af7e13cbd4dac921d5ad3e1550e64ac`
-- Normalized: `sha256:0ff41e255f0475d150ea503e7c9dc8639ddaca974b83bcffcf8782486e050041`
-- Candidate: `sha256:466b0efece4b2f92a5ab9bfb4c6b90597af7e13cbd4dac921d5ad3e1550e64ac`
+- Original: `sha256:46cb2049ed667f8b722ecf071c957c0de1540b5dce0e6590de6150c2356ae5e4`
+- Normalized: `sha256:a0a8f2113fc3231db7724e42c62c5ffd29fbb22fd99b7b43b72062c5e376ce54`
+- Candidate: `sha256:46cb2049ed667f8b722ecf071c957c0de1540b5dce0e6590de6150c2356ae5e4`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 3
+- UI blocks preserved: 3
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

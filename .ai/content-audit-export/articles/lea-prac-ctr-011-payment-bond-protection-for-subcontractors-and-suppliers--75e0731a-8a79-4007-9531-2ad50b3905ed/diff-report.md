@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers
 
-Generated: 2026-05-04T02:16:42.008Z
+Generated: 2026-05-04T09:13:22.330Z
 Article ID: 75e0731a-8a79-4007-9531-2ad50b3905ed
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:62da9db90d4f030daeac63514fbfb185dee6cc01ea456c85812952ff4573529e`
-- Normalized: `sha256:b0fa7c8b8e6d4d869bb4700a9506ae1710942e69bb9dc4bc9430bc6c327fc799`
+- Normalized: `sha256:5a9f25ee15b18567b702ba1e6706039365c137f9ae00355f341cd9e6b26e01b6`
 - Candidate: `sha256:62da9db90d4f030daeac63514fbfb185dee6cc01ea456c85812952ff4573529e`
 
 ## Line summary
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

@@ -1,56 +1,14 @@
 {
   "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
   "slug": "lea-theo-004-12-core-concept",
-  "generated_at": "2026-05-01T13:33:44.080Z",
+  "generated_at": "2026-05-04T09:10:36.787Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 2,
-  "unknown_block_count": 2,
+  "warning_count": 0,
+  "unknown_block_count": 0,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [
-    {
-      "block_id": "ui_0005",
-      "component_name": "WikiExamTable",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
-      ]
-    },
-    {
-      "block_id": "ui_0013",
-      "component_name": "WikiMistakeList",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0005",
-      "component_name": "WikiExamTable",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:cce2cb3e934e87ca2c9a80c05159bac3a73f4ed21941dbfd7cd80be3cd4f9e7c",
-      "line_start": 193,
-      "line_end": 193,
-      "warnings": [
-        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
-      ]
-    },
-    {
-      "block_id": "ui_0013",
-      "component_name": "WikiMistakeList",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:715bfc9467765cc71191172f1905f5bbdbe1dbd0de39ed95156f8fbb7a8821b3",
-      "line_start": 219,
-      "line_end": 219,
-      "warnings": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
+  "warnings": [],
+  "unknown_blocks": [],
   "critical_blocks": []
 }

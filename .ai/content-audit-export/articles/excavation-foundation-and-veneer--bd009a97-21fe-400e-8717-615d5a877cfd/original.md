@@ -261,7 +261,7 @@ ALE Swipe: Minimum footing depth = 600 mm below grade (in non-expansive soils). 
 
 
 
-<ArticleMedia type="image" caption="Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning" description="Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base." />
+<ArticleMedia id="media-excavation-foundation-and-vene-0" type="image" caption="Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning" description="Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base." />
 ## Cross‑References
 
 **Geological Hazards**, **Location On Property And Exterior Walls**, **Topography And Slope Analysis**, **Sanitation And Water Supply**

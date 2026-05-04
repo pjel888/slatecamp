@@ -69,7 +69,7 @@ Questions ask what "form follows function" means in skyscraper design. You expla
 
 **Electric Elevator** — Mechanical system making upper floors accessible; prerequisite for skyscraper viability; enabled occupation of 15+ story buildings.
 
-<ArticleMedia id="media-hist-014-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of skyscraper evolution (1885–1930s) from the Home Insurance Building (Jenney, 1885, first steel frame) through the Woolworth Building (Gothic tower, 1913) and Chrysler Building (Art Deco spire, 1930), showing the four-part structural system.\" caption=\"Skyscraper — Evolution Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-014-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of skyscraper evolution (1885–1930s) from the Home Insurance Building (Jenney, 1885, first steel frame) through the Woolworth Building (Gothic tower, 1913) and Chrysler Building (Art Deco spire, 1930), showing the four-part structural system." caption="Skyscraper — Evolution Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

@@ -44,6 +44,7 @@ The defining legal characteristic of SPP 207 is stated clearly in Section 1.5:
 
 </Callout>
 
+
 This is the fundamental difference between SPP 207 and all preceding SPP documents:
 
 <ComparisonTable>
@@ -56,6 +57,7 @@ This is the fundamental difference between SPP 207 and all preceding SPP documen
 | **SPP 207 (Design-Build)** | **Both design AND construction — single-point liability** |
 
 </ComparisonTable>
+
 
 ***
 
@@ -131,6 +133,7 @@ If, upon completion of the project, there is a **realized savings** from the est
 
 </Callout>
 
+
 This 50/50 savings split is a powerful incentive for the Architect to find cost efficiencies, negotiate better material prices, and optimize construction methods — because the Architect directly benefits from every peso saved.
 
 #### 2.2.3 The 10% Cost Overrun Rule
@@ -172,6 +175,7 @@ The NEDA certification requirement is important: informal market price increases
 
 </ComparisonTable>
 
+
 ***
 
 ## 3. Manner of Providing Services
@@ -198,6 +202,7 @@ Regardless of which arrangement is adopted, the Architect must strictly adhere t
 
 </Callout>
 
+
 This provision prevents the Architect from "becoming" a contractor in the legal sense. Even while managing construction under SPP 207, the Architect remains a registered professional subject to PRC oversight, not merely a business entity subject only to DTI or SEC regulation.
 
 #### 3.2.2 Conflict of Interest Disclosure
@@ -209,6 +214,7 @@ The Architect must adhere to the Architect's Credo, with the pledge that he:
 *"...shall disclose whenever required, any business investment or venture that may tend to create a conflict of interest, and ensure that such conflict neither compromises the legitimate interest of the Client nor interfere with his duty to render impartial judgment."*
 
 </Callout>
+
 
 This conflict of interest provision is particularly important in DBS-GMPCC, where the Architect has a direct financial stake in project cost performance (through the savings-sharing mechanism). The Architect must be transparent about this financial interest and ensure it does not distort material selection, subcontractor evaluation, or construction quality decisions.
 
@@ -226,6 +232,7 @@ The method of payment under SPP 207 fundamentally differs from SPP 202:
 
 </Callout>
 
+
 This is critical: the Architect is an **administrator**, not a financier. The Owner retains financial control; the Architect exercises administrative and professional authority over how the money is spent.
 
 ### 4.2 Permits, Licenses, and Incidentals
@@ -235,6 +242,7 @@ This is critical: the Architect is an **administrator**, not a financier. The Ow
 *"The Owner/Client shall pay for the cost of all permits, licenses and other incidentals to the work."*
 
 </Callout>
+
 
 All government fees (Building Permit, Electrical Permit, Sanitary Permit, Fire Safety Inspection Certificate, etc.) are **Owner's cost**, not deducted from the Architect's administration fee.
 
@@ -247,6 +255,7 @@ The Architect may appoint — subject to the Owner/Client's approval — a const
 *"Salaries of such persons are paid by the Owner/Client and NOT deductible from the Architect's Fee under this SPP."*
 
 </Callout>
+
 
 This means the Owner bears the cost of the site management team — it is separate from the Architect's administration fee. The Architect's 7% (or 10%) RPF covers professional services, not the salaries of site staff.
 
@@ -261,6 +270,7 @@ This means the Owner bears the cost of the site management team — it is separa
 
 </ComparisonTable>
 
+
 ### 4.5 Additional Compensation Methods
 
 <Callout variant="note">
@@ -268,6 +278,7 @@ This means the Owner bears the cost of the site management team — it is separa
 *"The method of compensation may be modified by using the relevant alternatives detailed in SPP Doc. 202."*
 
 </Callout>
+
 
 This cross-reference means all SPP 202 alternative compensation methods are available for DBS engagements:
 
@@ -282,6 +293,7 @@ This cross-reference means all SPP 202 alternative compensation methods are avai
 | **Mixed Methods** | Hybrid engagements combining design fee percentage and administration lump sum |
 
 </ComparisonTable>
+
 
 ***
 
@@ -304,6 +316,7 @@ The distinction is critical for architects under SPP 207:
 
 </ComparisonTable>
 
+
 Under SPP 207 DBS-A, the architect acts as the **Owner's agent** and **administrator** — the Owner pays all costs directly through the revolving fund. This is the structural mechanism that keeps DBS-A within professional practice rather than contracting.
 
 ### 5.2 The Turnkey vs. Administration Distinction
@@ -318,6 +331,7 @@ Under SPP 207 DBS-A, the architect acts as the **Owner's agent** and **administr
 | **Legal identity** | Professional under RA 9266 | Contractor under RA 4566 |
 
 </ComparisonTable>
+
 
 Architects who engage in DBS without understanding this distinction risk **crossing into prohibited contracting territory** — performing construction activities regulated by RA 4566 without the required PCAB license.
 
@@ -336,6 +350,7 @@ Architects who engage in DBS without understanding this distinction risk **cross
 | **SPP 206** (CAS) | DBS under SPP 207 can be the construction delivery mode within a CAS engagement under SPP 206 |
 
 </ComparisonTable>
+
 
 ***
 
@@ -357,23 +372,15 @@ Architects who engage in DBS without understanding this distinction risk **cross
 
 ---
 
+
+
 ---
 
 ## Exam Tip
 
 LEA Swipe: Design-Build (DB) vs Design-Bid-Build (DBB): DB = single entity responsible for both design and construction. DBB = separate contracts (owner-architect + owner-contractor). Architect's ethical obligation under DB: must maintain PROFESSIONAL INDEPENDENCE — the architect cannot be subordinate to the contractor's commercial interests. The independence requirement is the most tested ethical point.
 
-
-
----
-
-## Exam Tip
-
-ALE Swipe: Design-Build (DB) vs Design-Bid-Build (DBB): DB = single entity responsible for both design and construction. DBB = separate contracts (owner-architect + owner-contractor). Architect's ethical obligation under DB: must maintain PROFESSIONAL INDEPENDENCE — the architect cannot be subordinate to the contractor's commercial interests. The independence requirement is the most tested ethical point.
-
 ## Cross‑References
 
 **Spp Doc 204 B Construction Management Services**, **Spp Doc 206 Comprehensive Architectural Services**, **Spp Doc 208 Architectural Design Competition Adc**, **Spp Doc 209 Architectural Consulting Services Pacs**
 
-
-<!-- no-media-needed: SPP document reference, service scope text is optimal -->

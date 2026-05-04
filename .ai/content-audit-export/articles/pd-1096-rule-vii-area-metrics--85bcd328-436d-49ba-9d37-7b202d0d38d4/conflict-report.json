@@ -1,23 +1,22 @@
 {
-  "attempted_at": "2026-05-03T16:51:39.722Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T08:49:50.364Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
   "slug": "pd-1096-rule-vii-area-metrics",
   "preparation_actions": [
+    "auto_composed_candidate",
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:b5c5cd65be2ab5e3d404a4d9cf434c68b1dcf1971d41425a0a59737742b39987",
-  "original_hash": "sha256:9d7e561bc36d9ce81a416d072edb676814d3d4ba814e890af956c6cd7eae2661",
-  "candidate_hash": "sha256:b5c5cd65be2ab5e3d404a4d9cf434c68b1dcf1971d41425a0a59737742b39987",
+  "remote_hash_before": "sha256:82516bd64923ea455df4c66247392db10b5e4eeabfed8d6dcb2a22c3b4f81e78",
+  "original_hash": "sha256:b5c5cd65be2ab5e3d404a4d9cf434c68b1dcf1971d41425a0a59737742b39987",
+  "candidate_hash": "sha256:7131de399bd14d897e2e093f7223d41bc7eab07678ec3f1a1ff583713f12302a",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T16:38:17.074859+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:16.618384+00:00"
 }

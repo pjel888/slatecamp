@@ -10,7 +10,7 @@ After reading this article, you should be able to:
 
 The Contract Document Phase represents the most significant single payment under SPP 202, earning 50% of the architect's total design services fees. This phase produces the comprehensive drawings and specifications needed to communicate all construction requirements to contractors and building officials.
 
-<ArticleMedia id="media-lea-prac-svc-007-phase-3-contract-docume" type="image" caption="SPP Doc 202 Six-Phase Framework — Contract Documents Phase in Context" alt="Process flow highlighting Phase 4 (Contract Documents) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design → Design Development → Contract Documents (50% fee, working drawings, technical specifications, bidding documents, permit filings) → Bidding → Construction Admin." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-007-phase-3-contract-docume" type="image" caption="SPP Doc 202 Six-Phase Framework — Contract Documents Phase in Context" description="Process flow highlighting Phase 4 (Contract Documents) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design → Design Development → Contract Documents (50% fee, working drawings, technical specifications, bidding documents, permit filings) → Bidding → Construction Admin." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Contract Document Deliverables
 

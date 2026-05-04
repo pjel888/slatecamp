@@ -5,11 +5,19 @@
 Identify form transformation operations — subtraction, addition, dimensional alteration, subtraction, additive, subtractive, and volumetric manipulation — and explain how basic geometric forms are modified to create complex architectural configurations.
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-002-05-core-concept" type="image" caption="Form Transformation Operations — Dimensional, Subtractive, Additive" alt="Three-row diagram showing how primary geometric forms (cube, cylinder, pyramid, sphere) are transformed: Row 1 — Dimensional transformation (stretching/squashing altering proportions while retaining identity); Row 2 — Subtractive transformation (carving away portions creating recesses, voids, courtyards); Row 3 — Additive transformation (aggregating forms through spatial relationships — contact, interlock, fusion). Each row shows the transformation sequence from pure geometry to architectural form." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-002-05-core-concept", type="image", caption="Form Transformation Operations — Dimensional, Subtractive, Additive", description="Three-row diagram showing how primary geometric forms (cube, cylinder, pyramid, sphere) are transformed: Row 1 — Dimensional transformation (stretching/squashing altering proportions while retaining identity); Row 2 — Subtractive transformation (carving away portions creating recesses, voids, courtyards); Row 3 — Additive transformation (aggregating forms through spatial relationships — contact, interlock, fusion). Each row shows the transformation sequence from pure geometry to architectural form.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Francis D.K. Ching defines **form** as "what the eye identifies, the mind perceives and interprets." Forms have essential geometric identities—a cube, sphere, cylinder, cone, pyramid. Yet pure, unmodified primary geometries rarely appear in buildings. Instead, architects transform these geometries through subtraction, addition, and dimensional change. The power of studying transformations is understanding that complexity in architecture often derives from systematic modification of simple geometric ideas, and that transformed forms retain identity relationships to their geometric parents.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember the three transformations: **S-A-D** = Subtractive (remove), Additive (add), Dimensional (stretch/compress). All retain identity while modifying form.
+[/SLATECAMP_UI_BLOCK]
 
 ### Subtractive Transformation
 
@@ -24,6 +32,10 @@ At the detail scale, moldings, grooves, and carved ornament are subtractive—th
 Subtractive transformation allows modification while maintaining clarity of the original form. Because the removal is explicit and visually readable, the original geometry remains apparent. This is why subtraction is often used in modern design—it creates complexity without obscuring fundamental geometric order.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Subtraction is **explicit removal**—you *see* what's missing. Additive is **visible attachment**—you *see* what's added. Neither destroys identity; both modify appearance.
+[/SLATECAMP_UI_BLOCK]
 
 ### Additive Transformation
 
@@ -55,33 +67,81 @@ These three transformation types are not mutually exclusive. A single form may u
 The design investigation often involves exploring what each transformation reveals or enables. Subtraction emphasizes the base geometry through absence. Addition enriches through elaboration. Dimensional change shifts proportional meaning while maintaining concept. Understanding which transformation(s) a designer employed helps you read design intention.
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The critical error: confusing **dimensional transformation with a new form**. A cube stretched vertically is *not* a new form—it's a **dimensionally transformed cube** that retains cubic identity. This distinction determines whether forms belong to the same design family.
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"**Transformation Type**\", \"**Definition**\", \"**Visual Indicator**\", \"**LEA Test Indicator**\"]}", rows="{[['[\"**Subtractive**\", \"Removing/subtracting portion of form\\'s volume\", \"Visible removal or cavity; outline altered\", \"\\\\\"Subtracting a portion of form\\'s volume\\\\\"\"]', '[\"**Additive**\", \"Adding elements to base form without destroying it\", \"Visible attachments; elaboration on base\", \"\\\\\"Adding elements (porches, roofs, towers)\\\\\"\"]', '[\"**Dimensional**\", \"Altering one or more dimensions; retains character\", \"Proportion shift; stretched or compressed\", \"\\\\\"One or more dimensions altered but retains identity\\\\\"\"]', '[\"**Form Identity**\", \"Essential geometric character persisting through transformation\", \"Recognizable origin; geometric family\", \"\\\\\"Transformed forms maintain link to parent geometry\\\\\"\"]', '[\"**Subtractive Result**\", \"Form understood as derived by removal\", \"Explicit absence; cavity or void visible\", \"\\\\\"Plane wall with windows cut into it\\\\\"\"]', '[\"**Additive Result**\", \"Form understood as base plus elaboration\", \"Attachments visible; layers of elaboration\", \"\\\\\"Rectangular volume with added pitched roof\\\\\"\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Identifying Subtraction** *Question stem:* "A rectangular tower with the top corner cut at an angle is an example of..." *Correct answer:* "Subtractive transformation." *Trap:* Confusing with dimensional change—if material is *removed*, it's subtraction, not a simple proportion shift. The key word is removal or cutting away.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Identifying Addition** *Question stem:* "A basic rectangular building with a pitched roof and front porch added demonstrates..." *Correct answer:* "Additive transformation." *Trap:* Confusing with subtraction—addition means something is *attached or affixed*, not removed. The base form is enriched but intact.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Identifying Dimensional Change** *Question stem:* "A cubic module stretched vertically to become a tall tower while maintaining its cubic proportional system is an example of..." *Correct answer:* "Dimensional transformation." *Trap:* Thinking dimension change destroys identity—Ching specifically states that dimensional transformation *retains identity* while shifting proportion.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Identity Retention** *Question stem:* "When a form's proportions are altered (made taller, wider, or deeper) but it retains its recognizable essential geometric character, this demonstrates..." *Correct answer:* "Dimensional transformation preserving form identity." *Trap:* Assuming that proportion change means the form becomes a different type—dimensional transformation specifically *retains* core identity.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Multiple Transformations** *Question stem:* "A cone with its apex cut off (subtractive) and a collar added at the base (additive) represents..." *Correct answer:* "Multiple transformations applied to a parent form." *Trap:* Treating the result as entirely new form rather than recognizing it as a variant derived through specific transformations of a parent geometry.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 6: Transformation as Design Method** *Question stem:* "An architect explores variations of a basic rectangular module by stretching it, removing corners, and adding extensions. This design process is based on..." *Correct answer:* "Systematic transformation of a parent geometry." *Trap:* Thinking each variation is independent rather than seeing them as a coherent design family derived through intentional transformation strategies.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Form transformations describe how basic geometric forms can be modified—subtracted from, added to, or dimensionally altered—while retaining their essential identity. The LEA tests your ability to identify which transformation type is occurring in a design and to understand that transformed forms remain conceptually linked to their parent geometries. This topic appears on nearly every LEA administration in multiple questions.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Subtraction with Dimensional Change", correction="A wall with windows cut into it is *subtractive*; a narrower wall is *dimensionally transformed*. The distinction: subtraction removes from an existing form (openings cut in surface); dimensional change alters proportions (changing width or height of the module). Ask: \\", Is=true, material=true, removed=true, subtraction=true, or=true, is=true, the=true, proportion=true, of=true, existing=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Thinking Addition Requires Attachment to Exterior Only", correction="Additive transformation can occur internally too. A building that receives interior additions—mezzanines inserted, internal walls added—is undergoing additive transformation. The power of addition is that new elements attach without destroying the base system.", context="Don't restrict \\", addition=true, to=true, only=true, external=true, features=true, like=true, porches=true, or=true, roofs=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Overlooking Proportion as Transformation. Students often miss that dimensional transformation is about *proportion shift*, not just absolute size. A 1:1:1 cube and a 2:1:1 rectangular form are dimensionally transformed relatives—both share cubic module logic but differ in proportion. This is tested through questions about \\\"design families\\\" or \\\"proportional variants.\\\" Ching emphasizes that proportion is a transformation tool, not just an aesthetic choice.\", \"Treating Layered Details as Primary Transformations. Ornamental carving or applied surface details are subtractive or additive at the detail sclea, but they're not the *primary* transformation of the overall form. A building's primary transformation might be dimensional (a tall tower form), while its surface receives additive ornament. Identify the dominant transformation at the volume level first.\", \"Not Recognizing Identity Through Transformation. The core point of studying transformations is that *identity persists*. A wall with windows cut in it is still understood as a wall form with voids in it (not as scattered openings). A rectangular building with an extension added is still understood as rectangular base plus addition (not as a new form). The LEA tests whether you grasp this conceptual continuity. Never answer that a transformed form becomes \\\"a different form entirely\\\"—transformation preserves identity while modifying aspect.\", \"Confusing Transformation Vocabulary with Style. \\\"Subtractive\\\" is not the same as \\\"modern design that looks subtracted.\\\" Subtraction is a specific geometric operation—removal of volume. A classical building with applied ornament is *additive*, not modern; a modernist building with carved-away corners is *subtractive*, not traditional. The transformation type is independent of historical style. Test your understanding: classical is often additive; modern is often subtractive; traditional Japanese is often additive. But all eras use all three transformations depending on intent.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

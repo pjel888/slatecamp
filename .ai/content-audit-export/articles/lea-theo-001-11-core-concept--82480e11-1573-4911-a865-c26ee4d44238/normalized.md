@@ -5,9 +5,17 @@
 Explain the relationships among space, form, and order as fundamental organizing concepts in architectural design, and identify how spatial enclosure, form articulation, and ordering principles create coherent architectural compositions.
 ## Core Concept
 
-|<ArticleMedia id="media-lea-theo-001-11-core-concept" type="image" caption="Space and Form — Dialectical Relationship in Architecture" alt="Split diagram contrasting Form (solid, visible, sculptural, the building mass) and Space (void, experiential, inhabitable, the interior and exterior void). Three examples shown: Pantheon (hemispherical space bounded by massive concrete form), Fallingwater (horizontal planes cantilevering over waterfall, creating outdoor spaces), and a simple cubic volume (demonstrating how form encloses space). A center panel shows the dialectical interaction between the two concepts." suggestedAsset="Diagram or reference image" status="placeholder" />
+|[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-001-11-core-concept", type="image", caption="Space and Form — Dialectical Relationship in Architecture", description="Split diagram contrasting Form (solid, visible, sculptural, the building mass) and Space (void, experiential, inhabitable, the interior and exterior void). Three examples shown: Pantheon (hemispherical space bounded by massive concrete form), Fallingwater (horizontal planes cantilevering over waterfall, creating outdoor spaces), and a simple cubic volume (demonstrating how form encloses space). A center panel shows the dialectical interaction between the two concepts.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-lea-theo-001-11-core-concept-b" type="image" caption="Figure-Ground Diagram — Building Mass as Form, Surrounding Void as Space" alt="Figure-ground (Nolli map) diagram of a city block showing building masses in solid black (form) and open spaces/courtyards in white (space). Annotations highlight how the same composition can be read as figural building forms or as negative spatial voids between them. Demonstrates the inseparable relationship between architectural form and the space it defines." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-001-11-core-concept-b", type="image", caption="Figure-Ground Diagram — Building Mass as Form, Surrounding Void as Space", description="Figure-ground (Nolli map) diagram of a city block showing building masses in solid black (form) and open spaces/courtyards in white (space). Annotations highlight how the same composition can be read as figural building forms or as negative spatial voids between them. Demonstrates the inseparable relationship between architectural form and the space it defines.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 **Space and form** are complementary opposites in architecture, yet architects and architectural theory have historically privileged form over space. The classical tradition emphasized sculptural form—the building as a three-dimensional object with visual presence and aesthetic authority. Yet increasingly, architects recognize that buildings are experienced as space; the interior volumes and exterior void surrounding forms are what people encounter and inhabit.
 
@@ -51,37 +59,89 @@ The genius of successful architecture often lies in the coherence between form a
 
 **Proportion and scale** are fundamental to architectural order. Proportion refers to the relationships between dimensions—the ratio of length to width in a rectangle, or the relationship between bay widths and floor-to-floor heights. Proportional harmony creates visual coherence. Many traditional buildings employ proportional systems: the classical orders use precise ratios; Renaissance buildings employed geometric proportions. scale refers to the size of spaces and elements relative to human body dimensions and to each other. A ceiling 8 feet high reads as domestic and intimate; 16 feet high reads as formal; 40 feet high is monumental. Monumental scale creates awe but can overwhelm; intimate scale creates comfort but can feel confining.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Form vs. Space Synthesis:** Architects must design both simultaneously. Beautiful form without attention to the spaces it creates and bounds is inadequate. Conversely, well-proportioned space with incoherent or mediocre bounding forms fails to achieve excellence. The genius of great architecture lies in coherence between form and space: they should unify and reinforce each other.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Order systems (grids, symmetry, hierarchy, axes) are structural organizing principles, not superficial decoration. They make complex buildings comprehensible and allow occupants to navigate and understand spatial relationships intuitively. Without order, buildings appear chaotic and confusing.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical distinction: Visual inertia communicates meaning. High visual inertia (stable, symmetrical, centered) is appropriate for monuments, institutions, and formal buildings. Low visual inertia (dynamic, irregular, off-center) suits buildings meant to express change, creativity, or innovation. The architect deliberately chooses form properties to communicate the building's purpose and character.
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Concept\", \"Definition\", \"Architectural Effect\", \"Examples\"]}", rows="{[[\"**Form**\", \"The shape, size, color, texture, position, and orientation of a solid building or object\", \"Creates visual identity, sculptural presence, environmental impact\", \"Pyramid silhouette, castle form, glass tower\"], [\"**Space**\", \"The three-dimensional emptiness bounded or enclosed by form\", \"Creates experiential environment, defines how building is inhabited\", \"Cathedral interior, plaza, room\"], [\"**Shape (Form Property)**\", \"Two-dimensional outline or silhouette; regular or irregular\", \"Regular shapes are memorable and stable; irregular shapes are unique and dynamic\", \"Circle, square, irregular polygon\"], [\"**Visual Inertia**\", \"The apparent stability or instability of a form; high inertia = stable, low = dynamic\", \"Stability reads as monumental and formal; instability reads as dynamic and tense\", \"Symmetrical centered form (high inertia), rotated diagonal form (low inertia)\"], [\"**Grid Order**\", \"Regular pattern of lines creating systematic organization and proportional harmony\", \"Creates visual continuity and makes complex systems comprehensible\", \"Column grid in temples, office building module\"], [\"**Symmetry**\", \"Mirror-image correspondence of forms about an axis or center\", \"Creates formal, monumental, balanced, and stable composition\", \"Bilateral symmetry (left-right mirror), radial symmetry (center-point mirror)\"], [\"**Hierarchy**\", \"Organization of elements in order of visual or functional importance\", \"Directs attention, clarifies relationships, facilitates understanding and wayfinding\", \"Grand entry (primary), secondary entries; central hall (primary), subsidiary spaces\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Form and Space Distinction.** The LEA asks you to distinguish between form (the building as visible object) and space (the interior volumes and void). Example stem: "The interior volume of a cathedral is best described as which aspect of architecture?" Answer: Space. The form is the walls, vaults, and structure that bound the space; the space is the experiential interior emptiness.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Form Properties.** Questions test your ability to identify and describe properties of form. Example stem: "If a building is rotated 45 degrees from its cardinal alignment, which form property is being manipulated?" Answer: Orientation. The building's shape and size remain unchanged, but its visual and spatial relationship to its context is transformed.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Order Systems.** The LEA asks about grids, symmetry, hierarchy, and proportional systems. Example stem: "A classical temple façade with regularly spaced columns displays which organizing principle?" Answer: Grid-based order (and symmetry, if the temple is bilaterally symmetrical). The regular module of column spacing creates systematic organization.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Visual Inertia.** Questions address the stability or dynamism created by formal properties. Example stem: "A square building centered on a site with symmetrical relationships to surrounding elements would be perceived as having which quality?" Answer: High visual inertia, meaning stable, monumental, and requiring no visual effort to understand. Conversely, an irregular, off-center form has low visual inertia and appears dynamic.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Integration of Form and Space.** The LEA asks how architects unify form and space. Example stem: "When a building's bounding forms (walls, planes) create spaces whose proportions and character complement the sculptural qualities of the forms, this demonstrates which principle?" Answer: Integration or coherence of form and space; the architect has simultaneously designed the building as a formal object and as a spatial container for experience.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Space, form, and order are the fundamental organizing concepts in contemporary architectural theory and are frequently tested on the LEA. You must understand the distinction between form (what is solid and visible) and space (what is empty and bounded), and recognize how order systems—grids, modules, symmetries, hierarchies—structure both. This is the core of Ching's theoretical framework and shapes how architects design.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Privileging form over space", correction="The architect must design both simultaneously. A beautifully proportioned façade does not necessarily create beautiful interior spaces. Conversely, well-proportioned interior space requires coherent bounding forms. Excellence requires attention to both aspects.", context="The LEA tests whether you recognize that both form and space are essential to architecture. Ignoring either dimension indicates incomplete architectural thinking."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating order as superficial decoration", correction="Order systems (grids, symmetry, hierarchy, axes) are fundamental organizational structures that make complex buildings comprehensible and allow occupants to understand and navigate space. Order is structural, not decorative.", context="Understanding order as fundamental rather than decorative demonstrates deep grasp of how architects create coherent, functional, and beautiful buildings."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing orientation with shape: The shape remains the same when a form is rotated; only the orientation (alignment to cardinal directions or the viewer) has changed. This distinction matters because it determines how the form is perceived and how it organizes space.\", \"Ignoring human sclea: A 40-foot-tall atrium might be monumental and overwhelming, or intimate, depending on its proportions, material quality, and purpose. Form properties must be analyzed with reference to human body dimensions and experiential context.\", \"Treating symmetry as universal principle: Symmetry is one ordering principle among many. Asymmetrical designs can be equally coherent and elegant if organized by hierarchy, axes, or other proportional systems. Asymmetry does not indicate design failure.\", \"Separating visual inertia from meaning: High visual inertia (stability) is appropriate for monuments and institutions. Low visual inertia (dynamism) suits buildings expressing change or creativity. Form properties communicate the building's purpose and character.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

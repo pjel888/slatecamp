@@ -73,7 +73,7 @@ Client feedback, whether positive or critical, is valuable. A client survey or e
 
 
 
-<ArticleMedia type="image" caption="Project Management in Architecture — Scope, Schedule, Budget, Communication Framework" alt="Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables." />
+<ArticleMedia id="media-lea-prac-frm-019-project-manag-0" type="image" caption="Project Management in Architecture — Scope, Schedule, Budget, Communication Framework" description="Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

@@ -1,20 +1,21 @@
 {
-  "attempted_at": "2026-05-04T02:16:32.220Z",
+  "attempted_at": "2026-05-04T09:13:13.686Z",
   "dry_run": false,
   "apply": true,
-  "pushed": true,
-  "blockers": [],
+  "pushed": false,
+  "blockers": [
+    "candidate.md matches original.md; refusing no-op apply."
+  ],
   "warnings": [],
-  "updated_rows_count": 1,
+  "updated_rows_count": 0,
   "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
   "slug": "wheelchair-maneuvering-and-parking-slots",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:8b775cab63c2f46795f1354492cacf74ad8edb753947ff5903c469725c61043c",
-  "original_hash": "sha256:8b775cab63c2f46795f1354492cacf74ad8edb753947ff5903c469725c61043c",
-  "candidate_hash": "sha256:0f7768350e75a7cc6765fb3f87a8f90d1d5dd60fbf129e89a7b13035a4394c53",
+  "remote_hash_before": "sha256:3f01b72e103a20e83675acdb1ce487093b77f31afe814f3373495b3801126e6d",
+  "original_hash": "sha256:3f01b72e103a20e83675acdb1ce487093b77f31afe814f3373495b3801126e6d",
+  "candidate_hash": "sha256:3f01b72e103a20e83675acdb1ce487093b77f31afe814f3373495b3801126e6d",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:06.359603+00:00",
-  "updated_at_after": "2026-05-04T02:16:32.45448+00:00"
+  "remote_updated_at_before": "2026-05-04T02:32:50.01188+00:00"
 }

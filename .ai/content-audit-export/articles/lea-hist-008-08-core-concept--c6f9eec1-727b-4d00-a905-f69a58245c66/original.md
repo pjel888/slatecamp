@@ -72,7 +72,7 @@ Critical Regionalism and sustainability respond to real consequences of uncritic
 - **Deep engagement with place**: The rigorous understanding of a site's geography, climate, history, culture, and local knowledge as a basis for design.
 - **Phenomenology**: Philosophical focus on direct sensory experience and perception; influences regionalist design's emphasis on material presence and tactile qualities.
 
-<ArticleMedia id="media-hist-008-08-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Critical Regionalist works — Sydney Opera House (Utzon, site-responsive shells), Salk Institute (Kahn, material tectonics), Casa Barragán (Barragán, color and light), and IIM Ahmedabad (Kahn, modernist-climate synthesis) — showing local inflection of modernist principles.\" caption=\"Critical Regionalism — Works Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-008-08-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Critical Regionalist works — Sydney Opera House (Utzon, site-responsive shells), Salk Institute (Kahn, material tectonics), Casa Barragán (Barragán, color and light), and IIM Ahmedabad (Kahn, modernist-climate synthesis) — showing local inflection of modernist principles." caption="Critical Regionalism — Works Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

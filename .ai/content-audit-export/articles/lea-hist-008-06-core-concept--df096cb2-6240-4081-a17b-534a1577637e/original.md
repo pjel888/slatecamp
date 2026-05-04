@@ -66,7 +66,7 @@ By the 1990s, Postmodernism's playfulness had exhausted itself in the eyes of ma
 - **Semantic architecture**: Buildings designed to mean or communicate through form, ornament, and historical reference beyond mere functional expression.
 - **Anti-functionalism**: The philosophy that architecture need not subordinate all design decisions to functional requirements; rejecting "form follows function."
 
-<ArticleMedia id="media-hist-008-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Postmodernist works showing historical reference, ornament, color, and irony: Vanna Venturi House (Venturi, symbolic pediment), Piazza d'Italia (Moore, classical columns), AT&T Building (Johnson, Chippendale top), and Guggenheim Bilbao (Gehry, sculptural form).\" caption=\"Postmodernism — Key Works Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-008-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Postmodernist works showing historical reference, ornament, color, and irony: Vanna Venturi House (Venturi, symbolic pediment), Piazza d'Italia (Moore, classical columns), AT&T Building (Johnson, Chippendale top), and Guggenheim Bilbao (Gehry, sculptural form)." caption="Postmodernism — Key Works Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

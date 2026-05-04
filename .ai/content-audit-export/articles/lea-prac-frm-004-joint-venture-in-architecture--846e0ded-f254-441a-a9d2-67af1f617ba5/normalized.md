@@ -11,7 +11,11 @@ After studying this article, you should be able to:
 
 ---
 ### Definition and Structure
-<ArticleMedia id="media-lea-prac-frm-004-joint-venture-in-archit" type="image" caption="Joint Venture Structure — Project-Based Collaboration and Liability Allocation" alt="Diagram showing: (1) Two or more architectural firms joining under a JV agreement for a specific project; (2) Lead architect/prime firm coordinating the venture; (3) Filipino Counterpart requirement: foreign architect + local Philippine architect working in association; (4) Liability allocation: each participant liable for work within their scope, local architect bears responsibility for Philippine regulatory compliance; (5) Project lifecycle shown: JV formed → Project executed → JV dissolved upon completion. Arrow shows flexibility to recombine with different partners on subsequent projects." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-frm-004-joint-venture-in-archit", type="image", caption="Joint Venture Structure — Project-Based Collaboration and Liability Allocation", description="Diagram showing: (1) Two or more architectural firms joining under a JV agreement for a specific project; (2) Lead architect/prime firm coordinating the venture; (3) Filipino Counterpart requirement: foreign architect + local Philippine architect working in association; (4) Liability allocation: each participant liable for work within their scope, local architect bears responsibility for Philippine regulatory compliance; (5) Project lifecycle shown: JV formed → Project executed → JV dissolved upon completion. Arrow shows flexibility to recombine with different partners on subsequent projects.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A joint venture in architecture is a formal grouping of two or more architects or architectural firms working together on a project basis. RA 9266 defines an association as any formal grouping of two or more architects or architectural firms working in joint venture on a project basis. This structure is distinct from partnerships or corporations; joint ventures are created for specific projects and dissolve upon project completion.
 
@@ -41,16 +45,22 @@ Joint venture agreements establish compensation structures, with fees typically 
 
 Termination occurs naturally upon project completion or may be triggered by partner withdrawal, breach of agreement, or project cancellation. The agreement should address post-project responsibilities, including warranty periods, document custody, and dispute resolution. Final accounting and fee settlement are documented before formal dissolution. Outstanding client obligations must be transferred to the remaining participants or a single designated architect. Professional registrations remain individual to each architect; dissolution of the joint venture does not affect individual professional status.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Joint ventures are project-specific and dissolve upon completion. Unlike partnerships, dissolution does not affect each architect's individual professional status. Participants may recombine with different partners on subsequent projects — this flexibility is a key advantage over permanent partnership structures.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Joint ventures are project-specific and dissolve upon completion. Unlike partnerships, dissolution does not affect each architect's individual professional status. Participants may recombine with diff...
 
 ---
 
-<Note>
-The Filipino Counterpart Requirement is a frequently tested concept. Foreign architects CANNOT practice independently in the Philippines — they must always work in association with a local Philippine
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The Filipino Counterpart Requirement is a frequently tested concept. Foreign architects CANNOT practice independently in the Philippines — they must always work in association with a local Philippine
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

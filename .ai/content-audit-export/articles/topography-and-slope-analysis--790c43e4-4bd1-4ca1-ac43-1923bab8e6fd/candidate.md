@@ -227,7 +227,7 @@ Cut-and-fill balance problems on the LEA typically give you a site cross-section
 
 
 
-<ArticleMedia type="image" caption="Contour Map Interpretation — Slope Calculation and Buildable Zone Analysis" alt="Annotated contour map showing: contour interval and index contours, slope calculation using Rise/Run × 100 formula, buildable zones (<15% green), challenging zones (15-25% yellow), constrained zones (>25% red), cut-and-fill volume estimation using average-end-area method, and building pad grading with 2% minimum drainage slope." />
+<ArticleMedia id="media-topography-and-slope-analysis-image" type="image" caption="Contour Map Interpretation — Slope Calculation and Buildable Zone Analysis" description="Annotated contour map showing: contour interval and index contours, slope calculation using Rise/Run × 100 formula, buildable zones (<15% green), challenging zones (15-25% yellow), constrained zones (>25% red), cut-and-fill volume estimation using average-end-area method, and building pad grading with 2% minimum drainage slope." />
 ## Cross‑References
 
 **Microclimate Analysis**, **Hydrology In Site Planning**, **Geological Hazards**, **Excavation Foundation And Veneer**

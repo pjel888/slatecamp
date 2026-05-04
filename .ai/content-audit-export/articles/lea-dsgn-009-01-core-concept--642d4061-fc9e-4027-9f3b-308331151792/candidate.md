@@ -15,7 +15,7 @@ Overhangs (horizontal fins) block direct solar radiation on vertical facades. A 
 Thermal mass (concrete walls, tile floors) absorbs daytime heat and releases it at night, smoothing indoor temperature swings. Natural ventilation through operable windows, clerestories, and stack effect (warm air exiting high; cool air entering low) reduces dependence on mechanical air conditioning.
 
 The LEA tests whether candidates understand the geometric and climatic reasoning behind these strategies, not detailed HVAC calculations. The key insight is directional: _long axis East-West for the tropics_.
-<ArticleMedia id="media-lea-dsgn-009-01-core-concept" type="image" caption="Passive Solar Design — Building Orientation and Shading Diagram" alt="Sun path diagram overlaid on building section showing: East-West long axis orientation, overhang depth for seasonal shading, prevailing wind direction for cross-ventilation, and solar heat gain zones. Tropical Philippine climate context." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-009-01-core-concept" type="image" caption="Passive Solar Design — Building Orientation and Shading Diagram" description="Sun path diagram overlaid on building section showing: East-West long axis orientation, overhang depth for seasonal shading, prevailing wind direction for cross-ventilation, and solar heat gain zones. Tropical Philippine climate context." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -57,7 +57,7 @@ Two building designs: (A) 50 m × 20 m footprint, E-W orientation; (B) 50 m × 2
 <Tip>**"Long axis East-West; short sides catch the sun."** In tropical design, _narrow_ your building to the sun's travel arc (east-west rotation). Orient the long sides north and south, where sun angles are less severe at midday.</Tip>
 
 **Exam Tip — ERR-DSGN-012:** East-West building orientation is correct for tropical passive design (minimizes east/west exposure). North-South orientation is WRONG for tropical climate — the long facade should face north/south, NOT east/west.
-<ArticleMedia id="media-lea-dsgn-009-01-core-concept" type="image" caption="Tropical Architecture — Section Showing Passive Design Strategies" alt="Building section diagram in Philippine tropical context showing: East-West orientation, roof overhang and shading device depths, cross-ventilation path with prevailing wind arrows (NE winter, SW monsoon), elevated floor for flood mitigation, and vegetated buffer zones. Heat gain zones color-coded." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-009-01-core-concept" type="image" caption="Tropical Architecture — Section Showing Passive Design Strategies" description="Building section diagram in Philippine tropical context showing: East-West orientation, roof overhang and shading device depths, cross-ventilation path with prevailing wind arrows (NE winter, SW monsoon), elevated floor for flood mitigation, and vegetated buffer zones. Heat gain zones color-coded." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

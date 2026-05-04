@@ -7,9 +7,17 @@
 
 ## Schema Activation: Why This Module Matters
 
-<ArticleMedia id="media-occupancy-groups-visual" type="diagram" caption="Visual reference card for all 10 occupancy groups A–J with icons: A (house), B (hotel), C (school), D (hospital), E (office/store), F (factory), G (warehouse/hazardous), H (theater less than 1000), I (stadium 1000 or more), J (fence/shed). Arrange as a grid with group letter, full name, example building, and color-coded hazard band. Include the Type I–V construction scale with opposite direction reminder." />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-pd-1096-rule-vii-occupancy-0", name="occupancy-groups-visual", type="diagram", caption="Visual reference card for all 10 occupancy groups A–J with icons: A (house), B (hotel), C (school), D (hospital), E (office/store), F (factory), G (warehouse/hazardous), H (theater less than 1000), I (stadium 1000 or more), J (fence/shed). Arrange as a grid with group letter, full name, example building, and color-coded hazard band. Include the Type I–V construction scale with opposite direction reminder."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-mixed-occupancy-flowchart" type="diagram" caption="Decision flowchart for mixed-occupancy buildings: check if 1-storey → each portion follows own occupancy; check if accessory use ≤10% of floor area → major occupancy governs; otherwise → most restrictive occupancy governs the entire building. Include examples like 'mall with clinic' and 'apartment with ground-floor retail'." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-pd-1096-rule-vii-occupancy-1", name="mixed-occupancy-flowchart", type="diagram", caption="Decision flowchart for mixed-occupancy buildings: check if 1-storey → each portion follows own occupancy; check if accessory use ≤10% of floor area → major occupancy governs; otherwise → most restrictive occupancy governs the entire building. Include examples like 'mall with clinic' and 'apartment with ground-floor retail'."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -22,7 +30,11 @@ A 30-storey BPO office tower in Makati built in reinforced concrete is governed 
 
 If you misclassify occupancy or construction type, every dependent computation (allowable area, height, exit widths, fire protection) can be wrong. This module aligns strictly with PD 1096 and the 2004 Revised IRR, not foreign codes.[file:17][file:18]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Classification of Occupancy"
+- Text: BOARD EXAM WARNING: The Philippine Code uses Roman numerals I–V for Types of Construction, but **Type I is the least fire-resistive and Type V is the most fire-resistive**, the reverse of the common US practice.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -70,7 +82,11 @@ Where accessory uses occupy **not more than 10%** of the floor area of any store
 
 ## The Hard Data: Occupancy Groups A through J
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Section 701"
+- Text: All descriptions are condensed from PD 1096 / Rule VII, Sec. 701.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ### Occupancy Groups — Grouped by Function
 
@@ -91,7 +107,11 @@ Where accessory uses occupy **not more than 10%** of the floor area of any store
 
 ## The Hard Data: Types of Construction I through V
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Table VII-1"
+- Text: Condensed from PD 1096, Chap. 4 Sec. 401–403 and Rule IV.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ### PH vs US Convention (Awareness Only)
 
@@ -195,19 +215,35 @@ Do not classify a large open stadium without a stage as Group I; it stays within
 
 ## Active Recall Challenge
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Question 1 — Occupancy and Construction Type An architect is designing a 5-storey shopping mall in Cebu City using reinforced concrete with a fire-resistive structural system. Under PD 1096, what are the correct Occupancy Group and Construction Type? A) Group M (Mercantile), Type I B) Group E (Business and Mercantile), Type V C) Group C (Education and Recreation), Type IV D) Group E (Business and Mercantile), Type I Correct Answer: B A mall is a retail/business occupancy → **Group E (Business an
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Question 2 — The 10-Person Threshold A convent houses 12 nuns on a non-leasing basis. Under PD 1096/IRR, what is the occupancy group? A) Group A, Div. 1 B) Group A, Div. 2 C) Group B D) Group D, Div. 1 Correct Answer: C Group A Div. 2 includes convents/monasteries for non-leasing occupants **not exceeding 10 persons**.[file:17] When such a building accommodates **more than 10 persons**, it is classified under **Group B (Residentials, Hotels and Apartments)**.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0008 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Question 3 — Type II vs Type III What is the key distinction between Type II and Type III construction in PD 1096? A) Type II uses masonry; Type III uses wood. B) Both are roughly 1-hour fire-resistive, but Type III requires incombustible exterior walls. C) Type II is fully incombustible; Type III allows wood framing. D) Type III has 2-hour fire rating; Type II has 1-hour. Correct Answer: B Type II = wood construction with fire-resistive treatment (approx. 1-hour), exterior walls may still be wo
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="details" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0009 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Question 4 — Mixed Occupancy Exception A one-storey building contains a convenience store and a barber shop (both Group E) with no separation. Under Sec. 703, which rule applies? A) The most restrictive occupancy governs the entire building. B) Each portion may be treated under its own occupancy requirements because the building is one storey. C) The larger occupancy governs because it exceeds 10% of total area. D) The building must be reclassified as Group H due to public traffic. Correct Answe
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

@@ -72,7 +72,7 @@ The movement faces substantial critique. Some argue that parametricism generates
 - **Algorithmic architecture**: Design generated through computational algorithms; the contemporary expression of systematic, rule-based design methodology.
 - **Topology**: The mathematical study of form properties invariant under continuous deformation; influences parametric structural and spatial logic.
 
-<ArticleMedia id="media-hist-008-07b-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of parametric design methodology showing how changing a single parameter (site, program, performance) updates the entire design model, with Zaha Hadid's Heydar Aliyev Center as the primary example of computational fluid form.\" caption=\"Parametricism — Computational Design Methodology\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-008-07b-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of parametric design methodology showing how changing a single parameter (site, program, performance) updates the entire design model, with Zaha Hadid's Heydar Aliyev Center as the primary example of computational fluid form." caption="Parametricism — Computational Design Methodology" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

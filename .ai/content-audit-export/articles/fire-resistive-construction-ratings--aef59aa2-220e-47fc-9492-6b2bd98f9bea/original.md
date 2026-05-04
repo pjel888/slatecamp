@@ -11,6 +11,24 @@ Identify fire-resistive ratings (1-hour through 4-hour) required for structural 
 **LEA Area:** Building Technology / Building Laws, Codes, and Ethics
 **Difficulty:** Intermediate–Advanced
 **Spaced Repetition:** Return in 3 days to re-test yourself on the thickness table for concrete columns, the difference between fire-resistive rating and time period rating, and the material efficiency hierarchy. Return in 7 days to complete the Active Recall Questions without referencing any notes.
+<Tabs defaultTab="type-I">
+  <Tab label="Type I (3-4 hr)" value="type-I">
+    **Most fire-resistive** — Reinforced concrete or protected steel. Columns/beams: 3-4 hours. Floors: 2-3 hours. Used for high-rises and hazardous occupancies.
+  </Tab>
+  <Tab label="Type II (2 hr)" value="type-II">
+    **Moderate fire resistance** — Protected steel or heavy timber. Columns: 2 hours. Used for mid-rise commercial and institutional.
+  </Tab>
+  <Tab label="Type III (1 hr)" value="type-III">
+    **Basic protection** — Masonry bearing walls with protected steel or wood. 1-hour rating throughout. Common for low-rise commercial.
+  </Tab>
+  <Tab label="Type IV (Heavy Timber)" value="type-IV">
+    **Massive wood members** — Columns min 8" thick, floors min 4". No concealed spaces. Mills, warehouses, churches.
+  </Tab>
+  <Tab label="Type V (Unprotected)" value="type-V">
+    **No fire rating required** — Wood frame, light-gauge steel. Single-family, small multi-family under 3 stories.
+  </Tab>
+</Tabs>
+
 
 ## 🎯 Learning Goals
 
@@ -23,6 +41,10 @@ By the end of this module, you should be able to:
 ---
 
 ## The Real-World Hook
+
+<ArticleMedia id="media-fire-resistive-assembly-cross-section" type="diagram" caption="Cross-section of a building column and floor slab assembly showing fire-resistive ratings: 450 mm RC column for 4-hr, 150 mm slab with 25 mm cover for 4-hr. Callout bubbles for each dimension with corresponding fire rating. Show steel column with concrete encasement (75 mm for 4-hr) vs metal lath + vermiculite plaster (50 mm for 4-hr) side by side." />
+
+<ArticleMedia id="media-fire-rating-material-comparison" type="diagram" caption="Bar chart comparing material efficiency (thickness vs fire rating) for partitions, columns, and floor slabs. Show solid concrete (most efficient), solid masonry, and hollow unit masonry (least efficient) at 1-hr, 2-hr, 3-hr, and 4-hr ratings. Highlight the prestressed concrete tendon cover premium (65 mm vs 25 mm RC at 4-hr)." />
 
 The call comes at 2:47 in the morning. A fire has broken out in the basement parking level of a 20-storey residential condominium in Quezon City. By the time the Bureau of Fire Protection arrives, the blaze has been burning for nearly an hour. Yet the lobby above is still intact. The structural columns are holding. The floor slabs show stress but have not collapsed. Residents on the upper floors are still evacuating safely through the stairwells, which remain passable. The building will survive.
 
@@ -622,6 +644,14 @@ Before moving on to the next topic, verify you can fill in these values from mem
 
 ---
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: The FRC table (Table VIII) is the most referenced table on the exam. Memorize: Type I = unlimited, Type II = 2 hr, Type III = 2 hr exterior/1 hr interior, Type IV = 1 hr H.T., Type V = 0 hr. Sprinklers reduce required ratings by 1 hour in most cases.
+
 ## Cross‑References
 
 **Fire Zones And Existing Buildings**, **Chimneys And Fireplaces**, **Fire Extinguishing Systems**, **Vertical Openings And Floor Roof Construction**
@@ -652,3 +682,5 @@ Before moving on to the next topic, verify you can fill in these values from mem
 - NFPA 72 — National Fire Alarm and Signaling Code
 - Architectural Graphic Standards, 12th Edition (Ramsey/Sleeper) — Fire-rated assembly details, structural fire protection diagrams
 - Metric Handbook: Planning and Design Data (Littlefield) — Building performance standards, fire resistance data
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

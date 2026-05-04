@@ -1,15 +1,15 @@
 # Content Diff Report: lea-plan-005-03-what-you-need-to-know-for-the-lea
 
-Generated: 2026-05-04T02:18:11.321Z
+Generated: 2026-05-04T09:14:18.537Z
 Article ID: 341161bb-c24a-4d65-8f8b-79a3e1b01076
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:2b427401293f8d7910e3e2c3d049de5a6442b0345a274d89dd7888e9a8e63e56`
-- Normalized: `sha256:4a1af4d2db181f4585853fa16a5de1e3ab486654e1432fceac33114cea987885`
-- Candidate: `sha256:2b427401293f8d7910e3e2c3d049de5a6442b0345a274d89dd7888e9a8e63e56`
+- Original: `sha256:31c9697be38f3bb19b0ca976941da6f52723f0d94a337bb4e4449dabc74e0e81`
+- Normalized: `sha256:6104b51b1b66a7635c3c747491dfc1fc2eba3413d5186b5123ea6894d3597491`
+- Candidate: `sha256:31c9697be38f3bb19b0ca976941da6f52723f0d94a337bb4e4449dabc74e0e81`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 1
-- UI blocks preserved: 1
+- UI blocks expected: 2
+- UI blocks preserved: 2
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

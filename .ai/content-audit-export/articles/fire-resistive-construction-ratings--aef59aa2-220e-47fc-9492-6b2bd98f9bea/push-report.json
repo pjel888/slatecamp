@@ -1,19 +1,21 @@
 {
-  "attempted_at": "2026-05-04T02:25:51.784Z",
+  "attempted_at": "2026-05-04T09:13:24.200Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
   "blockers": [
-    "Failed to update wiki_articles.content: "
+    "candidate.md matches original.md; refusing no-op apply."
   ],
   "warnings": [],
   "updated_rows_count": 0,
   "article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
   "slug": "fire-resistive-construction-ratings",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:7120efde03c1763a74e178c8d01d10706ff301d3431313d1e73b900f1228450d",
-  "original_hash": "sha256:7120efde03c1763a74e178c8d01d10706ff301d3431313d1e73b900f1228450d",
-  "candidate_hash": "sha256:575f1c5eddca54321b664a9d846c0e613753f7ff87ba28734dca12de10889c0d",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:fbea60808b2356b9deba88ed058c59a6b7d5303de9d650021b5e5ba43dae2684",
+  "original_hash": "sha256:fbea60808b2356b9deba88ed058c59a6b7d5303de9d650021b5e5ba43dae2684",
+  "candidate_hash": "sha256:fbea60808b2356b9deba88ed058c59a6b7d5303de9d650021b5e5ba43dae2684",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T14:19:08.88607+00:00"
+  "remote_updated_at_before": "2026-05-04T06:02:14.825098+00:00"
 }

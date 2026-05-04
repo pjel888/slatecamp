@@ -11,14 +11,14 @@ After reading this article, you should be able to:
 The relationship between professional ethics and fair competition in architecture creates tension: architects must maintain professional standards while competing fairly with one another for projects and fees. This article examines the ethical limits on fee competition, restrictions on setting minimum fees, and the distinction between competitive fee structures and unethical cost-cutting.
 
 The Code of Ethical Conduct and RA 9266 prohibit fee agreements that restrict competition (collusion on pricing) while also establishing professional standards that fee-discounting cannot undermine. LEA candidates must understand when fee competition is ethical, when it crosses into anti-competitive practice, and how professional standards limit cost-cutting.
-<ArticleMedia id="media-lea-prac-eth-013-introduction" a type="image" caption="Anti-Competitive vs Ethical Fee Practices Comparison Matrix" description="Four-quadrant comparison: (1) Collusive Pricing — architects agreeing on minimum fees, prohibited under RA 10667; (2) Independent Competition — each architect setting fees independently, ethical; (3) Bid-Rigging — pre-arranged bid winners, criminal offense; (4) Competitive Bidding — transparent fee proposals, standard practice. Each quadrant shows scenario, legal basis, consequences, and LEA test point." suggestedAsset="Diagram or reference image" status="placeholder" />
-<ArticleMedia id="media-lea-prac-eth-013-introduction" a type="image" caption="Fee Competition Ethics Framework — Permitted vs Prohibited Practices" description="Two-zone diagram: Prohibited Zone (red) — collusive fee-fixing, market division agreements, bid-rigging, predatory pricing, deceptive fee practices, recommended fee schedule enforcement; Permitted Zone (green) — independent fee determination, competitive bidding, negotiated fees, volume-based discounts, reduced fees for repetitive designs. Central dividing line labeled 'Competition must be independent and transparent.' Philippine Competition Act (RA 10667) citations shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-eth-013-introduction" type="image" caption="Anti-Competitive vs Ethical Fee Practices Comparison Matrix" description="Four-quadrant comparison: (1) Collusive Pricing — architects agreeing on minimum fees, prohibited under RA 10667; (2) Independent Competition — each architect setting fees independently, ethical; (3) Bid-Rigging — pre-arranged bid winners, criminal offense; (4) Competitive Bidding — transparent fee proposals, standard practice. Each quadrant shows scenario, legal basis, consequences, and LEA test point." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-eth-013-introduction" type="image" caption="Fee Competition Ethics Framework — Permitted vs Prohibited Practices" description="Two-zone diagram: Prohibited Zone (red) — collusive fee-fixing, market division agreements, bid-rigging, predatory pricing, deceptive fee practices, recommended fee schedule enforcement; Permitted Zone (green) — independent fee determination, competitive bidding, negotiated fees, volume-based discounts, reduced fees for repetitive designs. Central dividing line labeled 'Competition must be independent and transparent.' Philippine Competition Act (RA 10667) citations shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Fundamental Principle: Fee Competition is Legal and Ethical
 
 The legal and professional framework in the Philippines allows architects to compete on fees while maintaining professional standards:
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LeartBox" status="preserved"]
+<LeartBox />
 
 ## Category 1: Anti-Competitive Fee Practices (Prohibited)
 
@@ -39,7 +39,7 @@ The legal and professional framework in the Philippines allows architects to com
 - **Criminal liability:** Potential prosecution under RA 10667 (competition violations can result in fines and imprisonment)
 - **Civil liability:** Clients affected by price-fixing may sue for overcharges
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip />
 
 ### Type 1B: Recommended Fee Schedule Agreements
 
@@ -91,7 +91,7 @@ Even if not formally agreed, if architects use a published schedule as a coordin
 
 **Consequences:** Serious—professional discipline (possible revocation), criminal prosecution, potential imprisonment
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LeartBox" status="preserved"]
+<LeartBox />
 
 ## Category 2: Ethical Fee Competition (Permitted)
 
@@ -135,7 +135,7 @@ These varied fees are **not collusive**. Each architect arrived at the fee indep
 - Architects may **lose bids** to competitors with lower fees or better value
 - **Low bidders** must still deliver professional-quality services (no cost-cutting)
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip />
 
 ### Type 2C: Value-Based Fee Approaches
 
@@ -189,7 +189,7 @@ This approach allows **fee flexibility** while tying architect compensation to *
 - **Negligence liability:** Building deficiencies result in client claims
 - **Reputational harm:** Word spreads about inadequate design quality
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="LeartBox" status="preserved"]
+<LeartBox />
 
 ### Prohibition: Coercive Low-Fee Arrangements
 
@@ -365,7 +365,7 @@ If the fee is insufficient for these investigations, the architect should:
 
 ## The Anti-Competitive Conduct Framework
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="RegulationFramework" status="preserved"]
+<RegulationFramework />
 
 ## Competition Law Framework: RA 10667
 
@@ -373,11 +373,11 @@ The Philippine Competition Act (RA 10667) specifically addresses anti-competitiv
 
 ### Prohibited Practices Under RA 10667
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ComparisonTable" status="preserved"]
+<ComparisonTable />
 
 ## Disciplinary Consequences
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
+<ComparisonTable />
 
 ## About This Article
 

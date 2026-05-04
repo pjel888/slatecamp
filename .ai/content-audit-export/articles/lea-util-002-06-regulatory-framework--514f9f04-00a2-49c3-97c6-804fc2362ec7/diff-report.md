@@ -1,15 +1,15 @@
 # Content Diff Report: lea-util-002-06-regulatory-framework
 
-Generated: 2026-05-04T02:17:11.942Z
+Generated: 2026-05-04T09:13:39.860Z
 Article ID: 514f9f04-00a2-49c3-97c6-804fc2362ec7
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:68fd6053d83f3e408cf09f428986b23350b31ef06aeb21f48572d52d73f01097`
-- Normalized: `sha256:269e97ed13900b922078d6287e5968e5a70339ca9a11a6153464b1105004c31f`
-- Candidate: `sha256:68fd6053d83f3e408cf09f428986b23350b31ef06aeb21f48572d52d73f01097`
+- Original: `sha256:fa46236b47e1c072f49de4ad4e4926fddc7698f76d3a1fa74c423f2b6a255c02`
+- Normalized: `sha256:b3f8a055794732af933578505cb59e3042bfbdc5e5ba170d7226a1b8039ffb86`
+- Candidate: `sha256:fa46236b47e1c072f49de4ad4e4926fddc7698f76d3a1fa74c423f2b6a255c02`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

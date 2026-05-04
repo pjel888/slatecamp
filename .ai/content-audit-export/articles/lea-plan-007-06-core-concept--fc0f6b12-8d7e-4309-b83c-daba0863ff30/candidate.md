@@ -16,7 +16,7 @@ Philippine planning and architecture has been shaped by both international figur
 **Felino Palafox Jr.** is the leading contemporary Philippine urban planner and architect. His master plans for Bonifacio Global City (BGC), numerous provincial capitals, and local government comprehensive plans shape Philippine urbanism today. Palafox emphasizes mixed-use development, pedestrian-friendly design, and strategic growth corridors.
 
 **Jorge Yupangco** is known for waterway rehabilitation planning, addressing Manila's critical waterway ecosystem challenges.
-<ArticleMedia id="media-lea-plan-007-06-core-concept" type="image" caption="Philippine Planning Figures — Burnham to Palafox Timeline" alt="Timeline of key figures in Philippine planning: Daniel Burnham (Plan of Manila 1905, City Beautiful), Juan Arellano (Burnham's collaborator, Philippine neoclassical), Felino Palafox Jr. (contemporary tropical urbanism, Palafox master plans), and other contributors by era." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-007-06-core-concept" type="image" caption="Philippine Planning Figures — Burnham to Palafox Timeline" description="Timeline of key figures in Philippine planning: Daniel Burnham (Plan of Manila 1905, City Beautiful), Juan Arellano (Burnham's collaborator, Philippine neoclassical), Felino Palafox Jr. (contemporary tropical urbanism, Palafox master plans), and other contributors by era." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

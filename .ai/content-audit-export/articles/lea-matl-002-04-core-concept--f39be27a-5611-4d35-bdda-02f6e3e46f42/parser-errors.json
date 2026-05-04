@@ -1,36 +1,14 @@
 {
   "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
   "slug": "lea-matl-002-04-core-concept",
-  "generated_at": "2026-05-01T13:33:43.279Z",
+  "generated_at": "2026-05-04T09:10:35.299Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 1,
-  "unknown_block_count": 1,
+  "warning_count": 0,
+  "unknown_block_count": 0,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [
-    {
-      "block_id": "ui_0003",
-      "component_name": "WikiMistakeList",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0003",
-      "component_name": "WikiMistakeList",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:54c79a85f6eb30df94abb1a6270fb8dd82df30d75cec1b91847464e68861ea27",
-      "line_start": 191,
-      "line_end": 194,
-      "warnings": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
+  "warnings": [],
+  "unknown_blocks": [],
   "critical_blocks": []
 }

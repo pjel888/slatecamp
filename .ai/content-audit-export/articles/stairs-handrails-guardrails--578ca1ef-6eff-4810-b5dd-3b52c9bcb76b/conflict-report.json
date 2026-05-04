@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:06:42.709Z",
+  "attempted_at": "2026-05-04T08:49:50.546Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
   "slug": "stairs-handrails-guardrails",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:7226a3e126cdf76c108e15ad01bd663a5137e619997c1a79c4eb56dd95568649",
-  "original_hash": "sha256:748055765e234c71ea469c7ca9ed1c95103e2a54f305cb97eeb9eb424743f918",
-  "candidate_hash": "sha256:7226a3e126cdf76c108e15ad01bd663a5137e619997c1a79c4eb56dd95568649",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:a8234b3186cd20f13c292b84fcb2c3d3df6acda82ac43c506a57b109aa02be52",
+  "original_hash": "sha256:7226a3e126cdf76c108e15ad01bd663a5137e619997c1a79c4eb56dd95568649",
+  "candidate_hash": "sha256:0ce4ccf34e6b574bff99c43b06a540c0a3a254c7459f8bc40083c3cb82612020",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T02:01:01.079837+00:00"
+  "remote_updated_at_before": "2026-05-04T02:32:44.030479+00:00"
 }

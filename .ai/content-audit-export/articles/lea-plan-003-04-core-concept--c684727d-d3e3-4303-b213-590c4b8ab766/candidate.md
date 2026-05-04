@@ -20,7 +20,7 @@ Housing production methods describe HOW housing is delivered to beneficiaries, a
 **Market Subdivision Delivery** involves private developers creating residential subdivisions for slea to individual buyers (open market). These projects are regulated under **PD 957** and must meet the balanced housing requirement under **RA 10884** (15–20% of project cost dedicated to socialized housing). Market subdivisions are not direct government production but are shaped by regulation.
 
 These methods are not mutually exclusive; integrated housing projects often combine elements—a government project may provide core housing with sites-and-services land for expansion, supported by CMP financing.
-<ArticleMedia id="media-lea-plan-003-04-core-concept" type="image" caption="Housing Production Methods — Sites-and-Services, Core Housing, MRBs" alt="Comparison diagram of housing production methods: sites-and-services (land + infrastructure, self-built), core housing (expandable core unit), medium-rise buildings (4-5 storey walk-ups), and self-help (sweat equity). Implementing agency (NHA) and delivery model per method." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-003-04-core-concept" type="image" caption="Housing Production Methods — Sites-and-Services, Core Housing, MRBs" description="Comparison diagram of housing production methods: sites-and-services (land + infrastructure, self-built), core housing (expandable core unit), medium-rise buildings (4-5 storey walk-ups), and self-help (sweat equity). Implementing agency (NHA) and delivery model per method." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

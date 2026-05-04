@@ -9,9 +9,17 @@ Specialized health facilities (primary care, BHC, RHU, outpatient clinics) are c
 
 ## Core Concept
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
 
 Specialized health facilities—including primary care clinics, barangay health centers (BHC), rural health units (RHU), and outpatient specialist facilities—fall under **Group D** (institutional) occupancy per **PD 1096**. Unlike acute-care hospitals, these facilities provide ambulatory care without bed count requirements.
 
@@ -29,15 +37,27 @@ Specialized health facilities—including primary care clinics, barangay health 
 - **Accessible Features**: Per the **BP 344 2024 Revised IRR**, doors must be **900 mm** wide, and ramps must have a maximum slope of **1:20**.
 - **Fire Egress**: Egress must comply with **RA 9514 (Fire Code 2019 Revised IRR)** and **PD 1096 Rule XIV**. Travel distance is limited to **45 m** (unsprinklered) or **60 m** (sprinklered).
 - **Dual Exits**: Required for any space or facility with an occupancy of **50 or more persons** per RA 9514 and PD 1096 Rule XIV.
-<ArticleMedia id="media-lea-dsgn-005-05-core-concept" type="image" caption="Specialized Health Facility — Consultation and Treatment Room Layouts" alt="Floor plan diagram of a primary care clinic showing consultation room (9 sqm minimum), treatment room (12 sqm), waiting area (1.5 sqm/seat), pharmacy dispensing (4 sqm), and accessible features. DOH Sentrong Sigla compliant." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-05-core-concept", type="image", caption="Specialized Health Facility — Consultation and Treatment Room Layouts", description="Floor plan diagram of a primary care clinic showing consultation room (9 sqm minimum), treatment room (12 sqm), waiting area (1.5 sqm/seat), pharmacy dispensing (4 sqm), and accessible features. DOH Sentrong Sigla compliant.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 
 | Element | Requirement | Source |
 |:------------------------ |:---------------------------------------- |:------------------------------------------------- |
@@ -66,7 +86,15 @@ DOH-accredited facilities under the **Sentrong Sigla** program require formal sp
 ---
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 1. **Occupancy Distinction**: Do not confuse outpatient primary care (9 sqm consultation room) with acute hospitals (10.5 sqm bed area).
@@ -78,7 +106,11 @@ DOH-accredited facilities under the **Sentrong Sigla** program require formal sp
 ---
 
 **Exam Tip — ERR-DSGN-022:** Outpatient clinics are Group D (institutional) NOT Group B (residential). Consultation room minimum = 9 sqm per DOH standards. Verify dual exits at 50+ occupancy.
-<ArticleMedia id="media-lea-dsgn-005-05-core-concept" type="image" caption="Health Clinic Floor Plan — Patient, Treatment, and Admin Zones" alt="Floor plan of a specialized health facility showing: consultation rooms (7.43-9 sqm), treatment/procedure room, waiting area (1.5 sqm/person), nurse station, pharmacy dispensing, and accessible toilet. DOH Sentrong Sigla compliance checklist and 45m/60m travel distances labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0008 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-05-core-concept", type="image", caption="Health Clinic Floor Plan — Patient, Treatment, and Admin Zones", description="Floor plan of a specialized health facility showing: consultation rooms (7.43-9 sqm), treatment/procedure room, waiting area (1.5 sqm/person), nurse station, pharmacy dispensing, and accessible toilet. DOH Sentrong Sigla compliance checklist and 45m/60m travel distances labeled.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 

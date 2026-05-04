@@ -7,7 +7,7 @@ Identify CCTV system components (cameras, DVR/NVR, monitors, cabling, storage), 
 
 ### Camera Types and Applications
 
-<ArticleMedia id="media-lea-util-004-06-cctv-systems" type="image" caption="CCTV System Architecture — Cameras, DVR/NVR, Monitoring Station" alt="Network diagram showing CCTV system components: dome cameras (indoor ceilings), bullet cameras (perimeter walls), PTZ cameras (lobbies/malls), connected via Category 6A cabling to NVR (network video recorder) with storage (4-8TB for 16 cameras, 30-day retention). Monitoring station shows video wall display and security console. Resolution standards (1MP entry, 2-4MP standard, 5MP+ license plate) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-06-cctv-systems" type="image" caption="CCTV System Architecture — Cameras, DVR/NVR, Monitoring Station" description="Network diagram showing CCTV system components: dome cameras (indoor ceilings), bullet cameras (perimeter walls), PTZ cameras (lobbies/malls), connected via Category 6A cabling to NVR (network video recorder) with storage (4-8TB for 16 cameras, 30-day retention). Monitoring station shows video wall display and security console. Resolution standards (1MP entry, 2-4MP standard, 5MP+ license plate) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 **Dome cameras** are mounted flush against ceilings or walls and offer aesthetic integration with interior design. They are commonly specified for retail environments, office lobbies, and residential common areas in Philippine gated communities. The dome housing protects the camera optics from environmental exposure and provides a degree of operational discretion—observers cannot easily determine the camera's viewing direction.
@@ -68,15 +68,11 @@ Example: 16 cameras × 1 GB/hr × 24 hrs × 30 days = 11.52 TB
 
 ---
 
-<KeyValues items=[{"value": "Dome", "label": "Indoor Ceiling Mount"}, {"value": "Bullet", "label": "Outdoor Perimeter"}, {"value": "PTZ", "label": "Dynamic Coverage"}, {"value": "1080p", "label": "Min. Resolution"}] />
+<KeyValues />
 
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
+<ExamTip />
 
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+<Tip />
 
 ## Access Control Systems
 

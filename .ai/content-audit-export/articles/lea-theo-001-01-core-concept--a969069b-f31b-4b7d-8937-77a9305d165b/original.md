@@ -51,7 +51,7 @@ This dimension is not cosmetic or secondary. The 2016 AIA (American Institute of
 
 ### The Inseparability of Art, Science, and Social Responsibility
 
-<ArticleMedia id="media-lea-theo-001-01-core-concept" a type="image" caption="Vitruvian Triad — Firmitas, Utilitas, Venustas" description="Triangular diagram illustrating Vitruvius's three essential qualities of architecture: Firmitas (structural stability, strength, durability), Utilitas (function, fitness for purpose, convenient arrangement), and Venustas (beauty, delight, aesthetic appeal). Each point connects to show they are simultaneous requirements, not sequential phases." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-theo-001-01-core-concept" type="image" caption="Vitruvian Triad — Firmitas, Utilitas, Venustas" description="Triangular diagram illustrating Vitruvius's three essential qualities of architecture: Firmitas (structural stability, strength, durability), Utilitas (function, fitness for purpose, convenient arrangement), and Venustas (beauty, delight, aesthetic appeal). Each point connects to show they are simultaneous requirements, not sequential phases." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 These three dimensions are not separable phases of design—they are simultaneous requirements that constrain and inform each other. A design that is beautiful but structurally unsafe is not great architecture; it is dangerous sculpture. A design that is structurally brilliant and environmentally efficient but excludes users or disrespects community is not great architecture; it is a monument to disconnection.
 

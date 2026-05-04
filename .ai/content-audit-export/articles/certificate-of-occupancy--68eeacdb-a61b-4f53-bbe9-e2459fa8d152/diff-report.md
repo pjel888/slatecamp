@@ -1,26 +1,26 @@
 # Content Diff Report: certificate-of-occupancy
 
-Generated: 2026-05-04T02:25:31.898Z
+Generated: 2026-05-04T09:14:09.193Z
 Article ID: 68eeacdb-a61b-4f53-bbe9-e2459fa8d152
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:997210a9127a88e6ef45777ad9ef9de7036adc9f5e17dc6ac6d14e62287c2f48`
-- Normalized: `sha256:18c3fcafc65ec9ac8975e4b1f1c01aff22980753438b9244127dd801e72515f6`
-- Candidate: `sha256:246f5db0a43e9ec01fef6aeab823d25aebbe081d3c8b27ebb222bb367a9a4806`
+- Original: `sha256:5723bf9f6a2c759b978e56f74a3513e47b8fe8de7ee14f5bbf4985e75ffc518e`
+- Normalized: `sha256:3474d60d9f62c43208e80f87a7b73b09b563614c236a7c26a4094ff15f1777c8`
+- Candidate: `sha256:5723bf9f6a2c759b978e56f74a3513e47b8fe8de7ee14f5bbf4985e75ffc518e`
 
 ## Line summary
 
-- Changed lines: 368
-- Inserted lines: 3
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

@@ -12,7 +12,11 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
-<ArticleMedia id="media-lea-strc-012-01-core-concept" type="image" caption="Wind Load Provisions — Basic Wind Speed and Building Classification" alt="Philippine wind load reference diagram showing: (1) Basic wind speed map with 3-second gust contours per NSCP; (2) Building classification — Open (≤10% wall area), Enclosed, Partially Enclosed; (3) Low-rise vs flexible structure criteria; (4) Exposure categories (A, B, C, D). Wind pressure distribution on building surfaces (windward positive pressure, leeward/side suction, roof uplift zones)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-012-01-core-concept", type="image", caption="Wind Load Provisions — Basic Wind Speed and Building Classification", description="Philippine wind load reference diagram showing: (1) Basic wind speed map with 3-second gust contours per NSCP; (2) Building classification — Open (≤10% wall area), Enclosed, Partially Enclosed; (3) Low-rise vs flexible structure criteria; (4) Exposure categories (A, B, C, D). Wind pressure distribution on building surfaces (windward positive pressure, leeward/side suction, roof uplift zones).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Wind load provisions begin with establishing a baseline wind hazard and then classifying the specific building that experiences it. The _basic wind speed V_ is defined as a 3-second peak gust speed measured 10 meters above the ground in Exposure C terrain. This speed has a 0.02 annual probability of exceedance, corresponding to a 50-year mean recurrence interval—the standard hazard level for Philippine structural design codes.
 
 The exposure category depends on the roughness and obstructions surrounding the site. _Exposure A_ applies to smooth terrain with scattered obstructions (harbors, flat agricultural land); _Exposure B_ to suburban or light industrial areas with moderate surface roughness; and _Exposure C_ to open terrain with occasional obstructions (grassland, scattered trees, undeveloped land). The exposure classification affects how wind speed is adjusted upward or downward as a function of height.
@@ -46,7 +50,11 @@ The Philippines lies in a typhoon belt where wind speeds regularly exceed 200 km
 **Question Type 2:** Classify a site or building scenario as Exposure A, B, or C; identify open, enclosed, or partially enclosed classification.
 **Question Type 3:** Determine whether a given building qualifies as low-rise and whether it must be treated as flexible.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: _Basic Wind Speed_ = 3-sec gust at 10m, Exposure C baseline. If you cannot state this in one sentence, you will fail the exam. The 0.02 probability is non-negotiable; it defines the entire hazard level.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -54,4 +62,8 @@ See also: **Load Types** (lea-strc-001-02) for wind load as a load category, **R
 
 ## Common Mistakes
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 

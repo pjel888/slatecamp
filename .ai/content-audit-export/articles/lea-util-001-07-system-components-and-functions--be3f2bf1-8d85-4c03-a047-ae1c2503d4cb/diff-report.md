@@ -1,15 +1,15 @@
 # Content Diff Report: lea-util-001-07-system-components-and-functions
 
-Generated: 2026-05-04T02:17:17.010Z
+Generated: 2026-05-04T09:13:42.799Z
 Article ID: be3f2bf1-8d85-4c03-a047-ae1c2503d4cb
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:cd180a2f3a8bdc4fc67631cb39ac6daa6ce3f49bde7b8f00f7de135c6beece7c`
-- Normalized: `sha256:f87344883724cbe301759742c60dea0c6a8bee1bf816357e3208f840110369f9`
-- Candidate: `sha256:cd180a2f3a8bdc4fc67631cb39ac6daa6ce3f49bde7b8f00f7de135c6beece7c`
+- Original: `sha256:3c4e02ca0a5d313f3de08d8e36ecdf17c932990a111b8a6fbc7e3f0d403a080e`
+- Normalized: `sha256:6b9a507a4e30045452f10e8c2168ae75a019d6e593b82a7f83a4cf167e6d43f8`
+- Candidate: `sha256:3c4e02ca0a5d313f3de08d8e36ecdf17c932990a111b8a6fbc7e3f0d403a080e`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 17
-- UI blocks preserved: 17
+- UI blocks expected: 19
+- UI blocks preserved: 19
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

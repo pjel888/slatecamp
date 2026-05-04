@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini
 
-Generated: 2026-05-04T02:17:48.649Z
+Generated: 2026-05-04T09:14:02.928Z
 Article ID: b3d5ae5b-09a9-426c-9feb-00932e5555aa
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:524808eca86743082f4316d6a9261ef2faf4b696c5d007b33bb471f4f2954588`
-- Normalized: `sha256:0bd79a61931a82f772413cb519073354674c8ceaf523b3bbdac6f6b62edb091a`
-- Candidate: `sha256:524808eca86743082f4316d6a9261ef2faf4b696c5d007b33bb471f4f2954588`
+- Original: `sha256:48a39972a1e73da39e4de987f0b749a630aae9d9fbc694cc8f07e930ae9ef6a9`
+- Normalized: `sha256:ae73a5717be5820b94b169fba6f93e266222b4ee453ac3a3c9240fb1f53326a5`
+- Candidate: `sha256:48a39972a1e73da39e4de987f0b749a630aae9d9fbc694cc8f07e930ae9ef6a9`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 6
-- UI blocks preserved: 6
+- UI blocks expected: 7
+- UI blocks preserved: 7
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

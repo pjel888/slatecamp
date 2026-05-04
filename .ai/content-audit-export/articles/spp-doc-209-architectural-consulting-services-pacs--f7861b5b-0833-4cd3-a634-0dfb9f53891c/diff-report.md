@@ -1,21 +1,21 @@
 # Content Diff Report: spp-doc-209-architectural-consulting-services-pacs
 
-Generated: 2026-05-04T02:17:46.161Z
+Generated: 2026-05-04T09:14:01.167Z
 Article ID: f7861b5b-0833-4cd3-a634-0dfb9f53891c
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:d469f4ed1a8c7cf431b92eaefb9a8b4c83492c59b9d32860cde7f9efc04da744`
-- Normalized: `sha256:304d3c58eb7c32738e87d8ae599878ff27b58154e42f6730fba5701a0ac44983`
-- Candidate: `sha256:bb3687068b5a5369f5f6dcfedafa5a6b0d09b9a6fecc87406ebf75f81e84bc0c`
+- Normalized: `sha256:22a999a099bb33bf2d8b398043f7488f7e09aa290275b8fd77a660052ae6ac11`
+- Candidate: `sha256:d469f4ed1a8c7cf431b92eaefb9a8b4c83492c59b9d32860cde7f9efc04da744`
 
 ## Line summary
 
-- Changed lines: 399
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 5
+- Deleted lines: 0
 
 ## UI block preservation
 

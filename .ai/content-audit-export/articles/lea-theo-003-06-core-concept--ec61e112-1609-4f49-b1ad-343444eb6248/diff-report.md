@@ -1,15 +1,15 @@
 # Content Diff Report: lea-theo-003-06-core-concept
 
-Generated: 2026-05-04T02:16:53.047Z
+Generated: 2026-05-04T09:13:28.527Z
 Article ID: ec61e112-1609-4f49-b1ad-343444eb6248
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e06a770b2e84e889aac12ce995a7273324ffd5fe954573f2781f42f851d47991`
-- Normalized: `sha256:591152b7da29fd178ba0e2efdfabbdd8f908c40d8a0a4c2e19ebde7b34bfaff8`
-- Candidate: `sha256:e06a770b2e84e889aac12ce995a7273324ffd5fe954573f2781f42f851d47991`
+- Original: `sha256:28d8d23144cf9df7f43c3d26d83a71e2a3d94a422eb428942d3e542430fd7289`
+- Normalized: `sha256:7624014ecb0fdca18590eb3c0461201399b2f18012d5796a7b5c11aa821268c4`
+- Candidate: `sha256:28d8d23144cf9df7f43c3d26d83a71e2a3d94a422eb428942d3e542430fd7289`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 13
-- UI blocks preserved: 13
+- UI blocks expected: 15
+- UI blocks preserved: 15
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

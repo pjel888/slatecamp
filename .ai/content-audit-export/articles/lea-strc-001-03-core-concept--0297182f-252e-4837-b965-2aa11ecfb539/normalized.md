@@ -10,7 +10,11 @@ By the end of this article, you will be able to:
 This topic covers the three main types of supports (boundary conditions) that anchor structures and constrain their motion. The LEA tests whether you can identify each support type and understand what degrees of freedom it restrains. You will NOT be tested on reaction calculation; focus on recognition and constraint definitions.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-001-03-core-concept" type="image" caption="Support Types — Hinge, Roller, and Fixed Comparison" alt="Three-panel comparison diagram showing: (1) Hinge/Pin support symbol (circle with dot), 2 restrained DOF, 2 reaction components (Hx, Hy); (2) Roller support symbol (circle over rollers), 1 restrained DOF, 1 reaction component (Hy); (3) Fixed support symbol (solid square), 3 restrained DOF, 3 reaction components (Hx, Hy, M). Each panel shows the structural symbol, degrees of freedom table, and a real-world example." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-001-03-core-concept", type="image", caption="Support Types — Hinge, Roller, and Fixed Comparison", description="Three-panel comparison diagram showing: (1) Hinge/Pin support symbol (circle with dot), 2 restrained DOF, 2 reaction components (Hx, Hy); (2) Roller support symbol (circle over rollers), 1 restrained DOF, 1 reaction component (Hy); (3) Fixed support symbol (solid square), 3 restrained DOF, 3 reaction components (Hx, Hy, M). Each panel shows the structural symbol, degrees of freedom table, and a real-world example.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A **support** is a constraint that prevents a structure (or part of a structure) from moving in one or more directions. Supports restrain displacement and may develop reaction forces or moments. Every support type can be defined by which **degrees of freedom** it prevents. In 2D analysis, there are three possible degrees of freedom at any point: horizontal translation (x), vertical translation (y), and rotation about z.
 
@@ -56,7 +60,11 @@ In Philippine structural design, supports are drawn on construction plans and de
 3. **Reaction Count:** "How many reaction components are developed at a fixed support?" — tests counting of reactions.
 4. **Application:** "A 10 m span bridge beam is supported on a hinge at one end and a roller at the other. Why is the roller used instead of another hinge?" — tests conceptual understanding of expansion.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Quick memory rule: HOT supports.** - **H**inge = 2 reactions (Hx, Hy); allows rotation - **O**ne reaction = Roller; allows both translation and rotation in free direction - **T**hree reactions = fixed (Two translations + roTation); allows nothing Or: Hinge = **H**old 2; Roller = **R**estrains 1; Fixed = **F**ixes 3.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -65,5 +73,13 @@ See also: **Beam Types** (lea-strc-001-04) for how supports define beam classifi
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing hinge and roller: Both allow rotation, but hinge restrains BOTH x and y (develops Hx and Hy), while roller restrains ONLY ONE direction (typically y; develops only Hy).\",\"Forgetting the moment reaction at fixed supports: A fixed support develops NOT just Hx and Hy but also a MOMENT M. This is essential for cantilever analysis.\",\"Drawing roller supports on the wrong surface: A roller perpendicular to a horizontal surface restrains vertical movement. A roller perpendicular to a vertical surface restrains horizontal movement. Orientation matters.\",\"Thinking support type determines if structure is stable: Three hinges or hinges in a collinear pattern do not stabilize a structure. Proper support arrangement, not just type, ensures stability.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

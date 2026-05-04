@@ -18,7 +18,11 @@ Civil Code Articles 2176–2194 establish the regime of _quasi-delict_ (culpa aq
 
 To establish quasi-delict liability, a claimant must prove four elements: (1) the architect owed a duty of care to the claimant; (2) the architect breached that duty through negligent act or omission; (3) the breach caused injury or loss; and (4) the claimant suffered quantifiable damages. The duty of care is measured against the _professional standard of care_—the degree of skill, diligence, and knowledge ordinarily exercised by licensed architects in the Philippines under similar circumstances. An architect who deviates from accepted professional practices, violates building codes, fails to consult specialists when necessary, or takes shortcuts in design analysis breaches this standard. Proof of negligence may come from expert testimony comparing the architect's conduct to professional norms, violation of applicable codes, failure to conduct required site investigations, or documented evidence of preventable errors. The burden of proof rests on the claimant, but once negligence is established, damages flow directly from that breach.
 
-<ArticleMedia id="media-law012-negligence-elements" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="4:3" title="Four Elements of Negligence in Quasi-Delict" alt="Diagram breaking down the four elements a claimant must prove: (1) Duty of Care, (2) Breach of Duty, (3) Causation, (4) Damages. Shows the professional standard of care benchmark and burden of proof on the claimant." placementIntent="legal-framework" suggestedSearchQuery="four elements of negligence quasi-delict Article 2176 architect Philippines" replacementNotes="Create a sequential four-box diagram. Box 1: Duty of Care (professional standard — what a competent architect would do). Arrow to Box 2: Breach (deviation from standard — code violations, inadequate investigation). Arrow to Box 3: Causation (breach directly caused injury/loss). Arrow to Box 4: Damages (quantifiable loss). Below: 'Burden of proof on claimant — expert testimony typically required.'" suggestedAsset="Diagram or reference image" alt="Four-element negligence proof: duty, breach, causation, damages" caption="Future diagram: four-element negligence proof: duty, breach, causation, damages" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-law012-negligence-elements", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="4:3", title="Four Elements of Negligence in Quasi-Delict", alt="Four-element negligence proof: duty, breach, causation, damages", placementIntent="legal-framework", suggestedSearchQuery="four elements of negligence quasi-delict Article 2176 architect Philippines", replacementNotes="Create a sequential four-box diagram. Box 1: Duty of Care (professional standard — what a competent architect would do). Arrow to Box 2: Breach (deviation from standard — code violations, inadequate investigation). Arrow to Box 3: Causation (breach directly caused injury/loss). Arrow to Box 4: Damages (quantifiable loss). Below: 'Burden of proof on claimant — expert testimony typically required.'", suggestedAsset="Diagram or reference image"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Scope of Negligent Conduct Recoverable Under Quasi-Delict
 
@@ -36,10 +40,18 @@ Civil Code Article 2180 provides that architects are _responsible for damages ca
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 Extracted summary:
+- Props: code="ra386", section="Articles 2176-2194 - Quasi-Delict"
+- Text: Legal Basis: Civil Code of the Philippines, Articles 2176 (Quasi-Delict Definition), 2180 (Employer Liability), and 2194 (Solidary Liability). Quasi-delict covers negligence-based damages even without a contract.
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
 - Props: code="ra9266" title="Civil Code Articles 2176-2194 — Quasi-Delict Framework"
 - Text: Legal Basis: Civil Code of the Philippines, Articles 2176 (Quasi-Delict Definition), 2180 (Employer Liability), and 2194 (Solidary Liability). Quasi-delict covers negligence-based damages even without a contract.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ CRITICAL DISTINCTION: Article 1723 = STRUCTURAL COLLAPSE ONLY + requires CONTRACTUAL relationship. Article 2176 (Quasi-delict) = ANY NEGLIGENCE causing damage + applies even WITHOUT a contract. A third party injured by falling debris has a quasi-delict claim, not an Article 1723 claim. — expect this as a trap answer on the LEA.
@@ -47,16 +59,28 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+- Props: (none)
 - Text: Prescriptive periods compared: Article 1723 = 10 years from collapse. Quasi-delict under Article 1146 = 4 years from the time the action accrues. Article 1144 (written contract) = 10 years. Know which period applies to each cause of action.
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Article 2194 establishes SOLIDARY liability when multiple parties contribute to a quasi-delict. If an architect and contractor both contribute to negligence causing injury, the injured party can sue either or both for the full amount of damages.
 
 ---
 
-<ArticleMedia id="media-law012-liability-comparison" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Article 1723 vs Quasi-Delict vs Contractual Liability" alt="Comparison diagram showing the three liability frameworks: Article 1723 (strict liability, structural collapse, 15+10 year timeline), Quasi-Delict Article 2176 (negligence-based, any damage, 4-year prescription), and Contractual liability Article 1144 (breach of written contract, 10-year prescription)." placementIntent="legal-framework" suggestedSearchQuery="Article 1723 quasi-delict Article 2176 comparison Philippines architect liability" replacementNotes="Create a three-column comparison. Column 1: Article 1723 — Strict liability, structural collapse only, requires contractual relationship, 15-year exposure + 10-year post-collapse, solidary for construction defects. Column 2: Quasi-Delict (Art 2176-2194) — Negligence-based, any damage including non-collapse, applies without contract, 4-year prescription, third parties can sue. Column 3: Contractual (Art 1144) — Breach of written contract, 10-year prescription. Bottom section: 'Can proceed concurrently — not mutually exclusive.'" suggestedAsset="Diagram or reference image" alt="Four-element negligence proof: duty, breach, causation, damages" caption="Future diagram: four-element negligence proof: duty, breach, causation, damages" />
+[SLATECAMP_UI_BLOCK:ui_0006 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-law012-liability-comparison", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Article 1723 vs Quasi-Delict vs Contractual Liability", alt="Four-element negligence proof: duty, breach, causation, damages", placementIntent="legal-framework", suggestedSearchQuery="Article 1723 quasi-delict Article 2176 comparison Philippines architect liability", replacementNotes="Create a three-column comparison. Column 1: Article 1723 — Strict liability, structural collapse only, requires contractual relationship, 15-year exposure + 10-year post-collapse, solidary for construction defects. Column 2: Quasi-Delict (Art 2176-2194) — Negligence-based, any damage including non-collapse, applies without contract, 4-year prescription, third parties can sue. Column 3: Contractual (Art 1144) — Breach of written contract, 10-year prescription. Bottom section: 'Can proceed concurrently — not mutually exclusive.'", suggestedAsset="Diagram or reference image"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -69,7 +93,8 @@ Extracted summary:
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
 
-<Note>
-(none detected)
-[/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0007 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected) [/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+[/SLATECAMP_UI_BLOCK]

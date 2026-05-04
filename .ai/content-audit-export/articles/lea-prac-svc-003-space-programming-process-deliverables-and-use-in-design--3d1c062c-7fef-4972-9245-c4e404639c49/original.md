@@ -10,7 +10,7 @@ After reading this article, you should be able to:
 
 Architectural programming is a pre-design service that translates the client's functional and spatial needs into a written program guiding the architect's design work. SPP 201 defines this service as an analytical problem-seeking process leading to the statement and identification of both horizontal and vertical relationships in offering a solution.
 
-<ArticleMedia id="media-lea-prac-svc-003-space-programming-proce" a type="image" caption="Space Programming Workflow — Problem-Seeking to Design Solution" description="Process flow showing the architectural programming process: client interviews → organizational analysis → space inventory → adjacency analysis → functional relationships → program statement (room types, quantities, sizes, adjacencies) → design criteria → schematic design input. Based on SPP Doc 201 pre-design services." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-003-space-programming-proce" type="image" caption="Space Programming Workflow — Problem-Seeking to Design Solution" description="Process flow showing the architectural programming process: client interviews → organizational analysis → space inventory → adjacency analysis → functional relationships → program statement (room types, quantities, sizes, adjacencies) → design criteria → schematic design input. Based on SPP Doc 201 pre-design services." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### The Space Programming Process
 

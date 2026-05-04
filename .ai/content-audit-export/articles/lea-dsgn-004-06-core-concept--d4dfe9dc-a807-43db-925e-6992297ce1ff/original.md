@@ -21,7 +21,7 @@ The space program for libraries differs significantly from museums:
 This is a critical distinction from museums: library occupant load is **LOWER** (4.6 sqm/person) than galleries (2.8 sqm/person) because library patrons are stationary—seated reading, research, computer use—whereas museum visitors are mobile and clustering at displays.
 
 **Archive/Special Collections:** Climate-controlled restricted-access areas (18–21°C, 45–55% RH per national heritage standards, similar to museums) where the collection is preserved. These are mechanical support spaces and do not contribute to occupancy load.
-<ArticleMedia id="media-lea-dsgn-004-06-core-concept" a type="image" caption="Library Space Program — Reading, Stacks, and Service Zones" description="Space programming bubble diagram for a library showing functional zones: reading areas (4.5 sqm/seat), open stacks, reference, circulation desk, children's section, and admin offices. Annotated with DepEd/PRC 2007 minimum area standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-06-core-concept" type="image" caption="Library Space Program — Reading, Stacks, and Service Zones" description="Space programming bubble diagram for a library showing functional zones: reading areas (4.5 sqm/seat), open stacks, reference, circulation desk, children's section, and admin offices. Annotated with DepEd/PRC 2007 minimum area standards." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -136,7 +136,7 @@ A **university library serving 10,000 students** (DepEd + academic standards):
 <Tip>**Memory rule:** Library = Group **C** (education). School library = 1.5 sqm/student. Public library occupancy load = floor area ÷ 4.6 sqm/person (seated, low-movement). Archive storage = mechanical support (excluded). Temperature ±2°C/day, humidity ±5%.</Tip>
 
 **Exam Tip — ERR-DSGN-018:** Library reading areas use 4.6 sqm/person (education rate), NOT 2.8 sqm/person (museum/gallery rate). Stack areas are NOT counted in occupant load. This is a frequently tested distinction.
-<ArticleMedia id="media-lea-dsgn-004-06-core-concept" a type="image" caption="Library Zoning Diagram — Quiet, Active, and Service Zones" description="Space planning bubble diagram of a library showing three functional zones: quiet zone (reading carrels, stacks), active zone (circulation desk, children's area, group study), and service zone (admin offices, processing, storage). Annotated with DepEd/PRC 2007 minimum area standards and acoustic separation requirements." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-06-core-concept" type="image" caption="Library Zoning Diagram — Quiet, Active, and Service Zones" description="Space planning bubble diagram of a library showing three functional zones: quiet zone (reading carrels, stacks), active zone (circulation desk, children's area, group study), and service zone (admin offices, processing, storage). Annotated with DepEd/PRC 2007 minimum area standards and acoustic separation requirements." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

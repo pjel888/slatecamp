@@ -58,15 +58,35 @@ Organizations like the Society of American Value Engineers (SAVE) establish prof
 
 Value engineering represents an important specialized service supporting client interests in cost optimization. When practiced ethically with commitment to design quality and transparent client communication, value engineering adds significant value to architectural practice and client project outcomes.
 
-<ArticleMedia id="media-lea-prac-svc-024-value-engineering-as-an" type="ve-methodology" caption="Value Engineering Methodology — Systematic Cost-to-Function Analysis" alt="Diagram showing the structured value engineering process: information phase (gather data, identify cost drivers) → creative phase (brainstorm alternatives, question assumptions) → evaluation phase (quantify costs, verify performance) → development phase (refine recommendations) → presentation phase (client disclosure, ethical review). Highlights the distinction between value engineering (cost/function ratio) and cost-cutting." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-svc-024-value-engineering-as-an", type="diagram", caption="Value Engineering Methodology — Systematic Cost-to-Function Analysis", description="Diagram showing the structured value engineering process: information phase (gather data, identify cost drivers) → creative phase (brainstorm alternatives, question assumptions) → evaluation phase (quantify costs, verify performance) → development phase (refine recommendations) → presentation phase (client disclosure, ethical review). Highlights the distinction between value engineering (cost/function ratio) and cost-cutting.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="SPP206RefServices" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -83,4 +103,8 @@ Value engineering represents an important specialized service supporting client 
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

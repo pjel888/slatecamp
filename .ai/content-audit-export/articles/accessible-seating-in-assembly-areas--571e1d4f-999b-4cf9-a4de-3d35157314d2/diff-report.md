@@ -1,26 +1,26 @@
 # Content Diff Report: accessible-seating-in-assembly-areas
 
-Generated: 2026-05-04T02:17:07.558Z
+Generated: 2026-05-04T09:13:37.511Z
 Article ID: 571e1d4f-999b-4cf9-a4de-3d35157314d2
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e2cc0b3222a5993bb0f8ea9d70cccc1eafba735ff1a277e6bcf3ba3edd0bb37e`
-- Normalized: `sha256:7a1d5f42f4441e2e886c6d909ea111649215fab7c333b27f049018f8d536fb47`
-- Candidate: `sha256:33bd1e99dbcf1c1c15ee6d7e2c03853ee8ba401b7c7c8d1a6f96f1c7a03078ea`
+- Original: `sha256:73600619caf691bbae5718e52d8401fb40c04ed4ee69e020923278483ebfb207`
+- Normalized: `sha256:4504fb2073ae97904f0bbc3ec450b447feeab81a6fc997289fe590790b9290f9`
+- Candidate: `sha256:73600619caf691bbae5718e52d8401fb40c04ed4ee69e020923278483ebfb207`
 
 ## Line summary
 
-- Changed lines: 258
-- Inserted lines: 4
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 10
-- UI blocks preserved: 10
+- UI blocks expected: 16
+- UI blocks preserved: 16
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

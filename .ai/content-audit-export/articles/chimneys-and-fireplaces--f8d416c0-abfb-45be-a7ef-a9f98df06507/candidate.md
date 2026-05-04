@@ -421,23 +421,15 @@ Return to this module in 3 days. If you can answer the Active Recall questions w
 
 ---
 
+
+
 ---
 
 ## Exam Tip
 
 LEA Swipe: Chimney height above roof = 900 mm minimum (or 600 mm if within 3 m of roof ridge). Spark arrestors required for solid-fuel appliances. Fireplace opening-to-flue ratio is 10:1 — this is the most tested dimensional relationship.
 
-
-
----
-
-## Exam Tip
-
-ALE Swipe: Chimney height above roof = 900 mm minimum (or 600 mm if within 3 m of roof ridge). Spark arrestors required for solid-fuel appliances. Fireplace opening-to-flue ratio is 10:1 — this is the most tested dimensional relationship.
-
 ## Cross‑References
 
 **Fire Resistive Construction Ratings**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Vertical Openings And Floor Roof Construction**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

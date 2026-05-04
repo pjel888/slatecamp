@@ -23,7 +23,7 @@ In practice, participatory planning uses methods like:
 - **Participatory budgeting** — residents directly decide how public funds are allocated to community projects.
 
 In the Philippines, participatory planning is mandated through the Sanggunian (municipal council) consultations required by RA 7160 and the Environmental Planner's role under RA 10587. CLUPs must incorporate community input; planning cannot be done to communities, only with them.
-<ArticleMedia id="media-lea-plan-008-04-core-concept" type="image" caption="Participatory Planning Methods — Community Engagement Workflow" alt="Flowchart of participatory planning: community identification → stakeholder mapping → engagement strategy (workshops, public hearings, focus groups) → dialogue facilitation → consensus-building → feedback integration → validation. Top-down vs. bottom-up approaches per RA 7160 participation mandates." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-008-04-core-concept" type="image" caption="Participatory Planning Methods — Community Engagement Workflow" description="Flowchart of participatory planning: community identification → stakeholder mapping → engagement strategy (workshops, public hearings, focus groups) → dialogue facilitation → consensus-building → feedback integration → validation. Top-down vs. bottom-up approaches per RA 7160 participation mandates." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

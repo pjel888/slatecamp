@@ -69,7 +69,7 @@ Questions present buildings combining multiple historical references (Gothic tow
 
 **Rotunda** — Circular or polygonal domed space; focal point of Beaux-Arts buildings; creates sense of expansion and arrival.
 
-<ArticleMedia id="media-hist-014-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Beaux-Arts methodology across key American works: New York Public Library (Carrère & Hastings, axis and symmetry), Grand Central Terminal (Reed & Stem, monumental urban logic), and US Supreme Court (Cass Gilbert, classical vocabulary).\" caption=\"Beaux-Arts — Key American Works\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-014-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Beaux-Arts methodology across key American works: New York Public Library (Carrère & Hastings, axis and symmetry), Grand Central Terminal (Reed & Stem, monumental urban logic), and US Supreme Court (Cass Gilbert, classical vocabulary)." caption="Beaux-Arts — Key American Works" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

@@ -37,6 +37,10 @@ This material is **psychologically engineered** for maximum retention. Every sec
 
 ### VISUALIZATION: WHY SETBACKS EXIST
 
+<ArticleMedia id="media-setback-yard-dimensions-diagram" type="diagram" caption="Plan view of a residential lot showing front yard, side yards, and rear yard with dimension callouts. Show R-1 example: front 4.50 m, sides 2.00 m (one side required), rear 2.00 m. Include a second version for R-2 Basic: front 3.00 m. Show building as hatched rectangle centered within yard setbacks with property line boundary." />
+
+<ArticleMedia id="media-incremental-setback-and-easement" type="diagram" caption="Building section showing the incremental setback rule: for buildings over 2 storeys, side/rear court increases by 300 mm per storey up to 14 storeys. Show a 10-storey commercial example: base 3.00 m + (8 storeys × 0.30 m) = 5.40 m. Below, show easement zones along a riverbank: 3 m urban, 20 m agricultural, 40 m forest with the building set back beyond the easement line." />
+
 > _You are standing at the front door of a newly built house in a subdivision. Look left — the neighbor's wall is barely a meter away. There is no sunlight. There is no airflow. If a fire starts, the flames jump the gap in seconds._
 
 <LawCallout code="pd1096" section="Rule VIII - Setbacks and Easements">
@@ -544,29 +548,18 @@ _(e) = without firewall; (f) = with firewall; always verify against the full Rul
 
 ### Complete Design Workflow for LEA Area 3
 
-```text
-Step 1:  Identify LOT TYPE (7 types — Figs. VIII.2–VIII.8)
-         ↓
-Step 2:  Check ZONING CLASSIFICATION → Get PSO, FLAR, BHL from Table VIII.1
-         ↓
-Step 3:  Deduct EASEMENTS (PD 1067 Art. 51: 3/20/40 m; powerline/RROW per regs)
-         ↓
-Step 4:  Apply SETBACKS from Table VIII.2 (Residential) or Table VIII.3 (Non-Residential)
-         ↓
-Step 5:  Compute AMBF = TLA × PSO
-         ↓
-Step 6:  Verify that TOSL = TLA − AMBF meets minimum %
-         ↓
-Step 7:  Compute Total Allowable Floor Area = TLA × FLAR
-         ↓
-Step 8:  Determine Max Floors = Total Floor Area ÷ AMBF
-         ↓
-Step 9:  Apply BHL and INCREMENTAL SETBACKS above 2nd floor (300 mm/storey to 14th)
-         ↓
-Step 10: Check RROW ANGLES → OFB cannot exceed angular plane
-         ↓
-Step 11: Apply PROJECTION RULES (Rule X) for balconies, canopies, underground works
-```
+<Mermaid chart={`flowchart TD
+    A["Step 1: Identify LOT TYPE\n(7 types — Figs. VIII.2–VIII.8)"] --> B["Step 2: Check ZONING CLASSIFICATION\n→ Get PSO, FLAR, BHL from Table VIII.1"]
+    B --> C["Step 3: Deduct EASEMENTS\n(PD 1067 Art. 51: 3/20/40 m)"]
+    C --> D["Step 4: Apply SETBACKS\nTables VIII.2 / VIII.3"]
+    D --> E["Step 5: Compute AMBF = TLA × PSO"]
+    E --> F["Step 6: Verify TOSL = TLA − AMBF"]
+    F --> G["Step 7: Total Floor Area = TLA × FLAR"]
+    G --> H["Step 8: Max Floors = Floor Area ÷ AMBF"]
+    H --> I["Step 9: Apply BHL + Incremental Setbacks"]
+    I --> J["Step 10: Check RROW ANGLES"]
+    J --> K["Step 11: Apply PROJECTION RULES"]
+`} />
 
 > Practice writing this 11-step chain from memory until you can reconstruct it in under 2 minutes.
 
@@ -625,15 +618,23 @@ _Study well. See you at the Board._
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: Minimum setbacks by occupancy and fire zone: 1-2 story = front 3.0 m, sides 2.0 m, rear 2.0 m | 3-4 story = front 4.5 m, sides 3.0 m, rear 3.0 m | 5+ story = front 6.0 m, sides 4.5 m, rear 4.5 m. Corner lots: both front-facing street sides = front yard requirements. The 3.0 m front setback for 1-2 story buildings is the most tested.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Minimum setbacks by occupancy and fire zone: 1-2 story = front 3.0 m, sides 2.0 m, rear 2.0 m | 3-4 story = front 4.5 m, sides 3.0 m, rear 3.0 m | 5+ story = front 6.0 m, sides 4.5 m, rear 4.5 m. Corner lots: both front-facing street sides = front yard requirements. The 3.0 m front setback for 1-2 story buildings is the most tested.
+
 ## Cross‑References
 
 **Pd 1096 Rule Viii Light And Ventilation**, **Location On Property And Exterior Walls**, **Pd 1096 Rule Vii Area Metrics**, **Allowable Floor Area Increases**
 
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

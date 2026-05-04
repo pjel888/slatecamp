@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-frm-010-cpd-provider-accreditation
 
-Generated: 2026-05-04T02:17:51.688Z
+Generated: 2026-05-04T09:14:04.871Z
 Article ID: 31a0b194-7296-4360-821e-5bc5c49be135
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:8551e98f9d8554120c11d1ff8e89706a8a59b38af0dba10ae6c571438d163595`
-- Normalized: `sha256:6fb55549c274854f05c20cdecb0e64ea3cf1899dbf83be04a18241e4e8b91338`
+- Normalized: `sha256:bb2df18f85193b002b4bbf3e2f726e083befcdaecc5151c2daae1ed6fd2f48f8`
 - Candidate: `sha256:8551e98f9d8554120c11d1ff8e89706a8a59b38af0dba10ae6c571438d163595`
 
 ## Line summary
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 3
+- UI blocks preserved: 3
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

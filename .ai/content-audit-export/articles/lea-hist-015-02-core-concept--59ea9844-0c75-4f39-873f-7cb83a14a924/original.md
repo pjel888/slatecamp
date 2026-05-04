@@ -76,7 +76,7 @@ Questions ask how Opera House influenced contemporary architecture: it proved sc
 
 *For broader Oceanian and Pacific architectural context, see the companion article on Oceanian/Pacific Architecture (LEA-HIST-007-06).*
 
-<ArticleMedia id="media-hist-015-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of Sydney Opera House construction: spherical shell geometry derivation from a single sphere, prefabricated tile rib system, harbor site section showing the platform and podium, illustrating how design reconciled modernist expression with contextual sensitivity.\" caption=\"Sydney Opera House — Structural and Site Diagram\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-015-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of Sydney Opera House construction: spherical shell geometry derivation from a single sphere, prefabricated tile rib system, harbor site section showing the platform and podium, illustrating how design reconciled modernist expression with contextual sensitivity." caption="Sydney Opera House — Structural and Site Diagram" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

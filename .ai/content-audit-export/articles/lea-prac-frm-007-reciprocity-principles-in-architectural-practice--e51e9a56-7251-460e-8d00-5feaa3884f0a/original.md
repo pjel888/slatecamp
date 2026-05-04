@@ -108,7 +108,12 @@ A foreign architect from a reciprocal country passes the Philippine LEA and regi
 
 
 
-<ArticleMedia type="image" caption="Reciprocity vs. ASEAN MRA vs. Temporary Permit — Comparison Diagram" description="Three-column comparison of foreign architect practice pathways under RA 9266: (1) Reciprocity (Sec 27) — mutual recognition with countries granting same rights to Filipino architects; (2) ASEAN MRA — ASEAN Architect Register for ASEAN member states; (3) Temporary/Special Permit (Sec 38) — for specific projects, limited duration. Each column shows: legal basis, qualification requirements, scope of practice, duration, and renewal conditions." />
+<ArticleMedia type="image" caption="Reciprocity vs. ASEAN MRA vs. Temporary Permit — Comparison Diagram" alt="Three-column comparison of foreign architect practice pathways under RA 9266: (1) Reciprocity (Sec 27) — mutual recognition with countries granting same rights to Filipino architects; (2) ASEAN MRA — ASEAN Architect Register for ASEAN member states; (3) Temporary/Special Permit (Sec 38) — for specific projects, limited duration. Each column shows: legal basis, qualification requirements, scope of practice, duration, and renewal conditions." />
+<AlertBox type="danger">
+Violating reciprocity rules may result in denial of license application, professional sanctions under RA 9266 Section 29, and potential civil liability. Always verify the current reciprocity status through the PRC International Affairs Office before practicing.
+</AlertBox>
+
+
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

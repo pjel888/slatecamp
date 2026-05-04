@@ -361,11 +361,11 @@ An architect is designing a 20-row tiered auditorium in Manila and selects a C-v
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
+<Warn />
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
+<Example />
 
 ## Verified References
 
@@ -386,7 +386,7 @@ _End of Module. Review Section 1 to understand what to avoid. Re-read Section 2 
 
 
 
-<ArticleMedia type="image" caption="Ergonomic Furniture Dimensions — Anthropometric Data for Seating and Workstations" description="Scale figure diagrams showing: seated workstation with key dimensions (seat height 38-45cm PH, desk height 72-76cm, monitor at eye level), auditorium sightline C-value diagram (C=120mm optimal clearance between rows), and reach envelopes (5th percentile female to 95th percentile male). Filipino anthropometric data per Del Prado-Lu (2007) annotated." />
+<ArticleMedia id="media-ergonomics-in-furniture-design-0" type="image" caption="Ergonomic Furniture Dimensions — Anthropometric Data for Seating and Workstations" description="Scale figure diagrams showing: seated workstation with key dimensions (seat height 38-45cm PH, desk height 72-76cm, monitor at eye level), auditorium sightline C-value diagram (C=120mm optimal clearance between rows), and reach envelopes (5th percentile female to 95th percentile male). Filipino anthropometric data per Del Prado-Lu (2007) annotated." />
 ## Cross‑References
 
 **Standard Human Body Dimensions**, **Institutional Human Dimensions**, **Public Service Counters And Atms**, **Wheelchair Maneuvering And Parking**

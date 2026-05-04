@@ -57,7 +57,7 @@ A floor-to-floor height of about 3.0 m (common in many RC buildings) must accomm
 - Suspended ceiling and finishes where provided.
 
 If MEP depth is underestimated, clear finished ceiling height is reduced, creating comfort and proportion issues and potentially breaching minimum ceiling height standards (e.g., PD 1096 requires at least 2.40 m for upper-storey habitable rooms, with 2.70 m minimum at the first storey). Proper early allocation of vertical depth protects both compliance and design quality.
-<ArticleMedia id="media-lea-dsgn-007-09-core-concept" type="image" caption="Building Systems Coordination — Integrated Ceiling Plan Diagram" alt="Composite reflected ceiling plan showing coordination of: structural grid, mechanical ductwork, electrical lighting layout, plumbing, fire sprinkler heads, and fire alarm devices. Conflict resolution zones highlighted with annotation." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-007-09-core-concept" type="image" caption="Building Systems Coordination — Integrated Ceiling Plan Diagram" description="Composite reflected ceiling plan showing coordination of: structural grid, mechanical ductwork, electrical lighting layout, plumbing, fire sprinkler heads, and fire alarm devices. Conflict resolution zones highlighted with annotation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -97,7 +97,7 @@ In the Philippines, MEP space has historically been under-allocated in many proj
 </Tip>
 
 **Exam Tip:** Ceiling plenum depth (typically 600-900mm) accommodates ductwork, piping, and conduit. Coordinate structural depth (+500-800mm) with MEP zone for total floor-to-floor height calculation.
-<ArticleMedia id="media-lea-dsgn-007-09-core-concept" type="image" caption="Integrated Ceiling Plan — MEP, Structural, and Lighting Coordination" alt="Reflected ceiling plan showing coordination of: structural beams and soffits, HVAC duct routing (with diffusers), lighting fixtures (recessed, pendant, emergency), sprinkler head coverage, and ceiling grid. Conflict zones where structural, MEP, and architectural elements intersect are highlighted." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-007-09-core-concept" type="image" caption="Integrated Ceiling Plan — MEP, Structural, and Lighting Coordination" description="Reflected ceiling plan showing coordination of: structural beams and soffits, HVAC duct routing (with diffusers), lighting fixtures (recessed, pendant, emergency), sprinkler head coverage, and ceiling grid. Conflict zones where structural, MEP, and architectural elements intersect are highlighted." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

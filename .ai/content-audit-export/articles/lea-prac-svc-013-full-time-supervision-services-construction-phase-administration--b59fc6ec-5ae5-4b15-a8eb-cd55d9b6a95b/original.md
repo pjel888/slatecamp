@@ -4,7 +4,7 @@ After reading this article, you should understand the key concepts tested in the
 
 Full-Time Supervision Services establish the architect's presence throughout construction implementation, ensuring design intent realization and quality control. SPP Doc 204-A defines the scope, organization, compensation, and legal responsibilities of supervision services. This service category evolved from the historical clerk-of-works role, adapting to modern project complexity and regulatory requirements. Full-time supervision represents a distinct professional offering separate from design services.
 
-<ArticleMedia id="media-lea-prac-svc-013-full-time-supervision-s" a type="image" caption="Full-Time Supervision Process Flow — Site Activities and Quality Control" description="Process flow diagram showing the construction supervision workflow: site mobilization → daily reporting → quality control inspections → material testing → work evaluation → non-conformance identification → corrective action recommendations → payment certification → project closeout. Based on SPP Doc 204-A." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-013-full-time-supervision-s" type="image" caption="Full-Time Supervision Process Flow — Site Activities and Quality Control" description="Process flow diagram showing the construction supervision workflow: site mobilization → daily reporting → quality control inspections → material testing → work evaluation → non-conformance identification → corrective action recommendations → payment certification → project closeout. Based on SPP Doc 204-A." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Historical Evolution and Rationale
 

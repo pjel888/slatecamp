@@ -1,55 +1,145 @@
 {
   "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
   "slug": "lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure",
-  "normalized_created_at": "2026-05-01T13:33:44.182Z",
+  "normalized_created_at": "2026-05-04T09:10:37.015Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:55fa337e5ff4abb15b0abd9a7a9fee9dd455b8e96acd88c7808a55126a2a34df",
-  "normalized_content_hash": "eb1e47b3454a6ef85e09fc75d84bf3b4e15cde152f1ff440741b78c7c5f0646a",
-  "ui_block_count": 3,
-  "total_blocks": 0,
+  "original_content_hash": "sha256:f3eb30ac78a7b4c0c15417a77cc66e287dc01e9fab896d88d3f0c4a79234a744",
+  "normalized_content_hash": "sha256:856a300437e60c8ee4921cb1a9abc80defa569ecc2a273a0621abddc5f895cd4",
+  "ui_block_count": 5,
+  "total_blocks": 5,
   "blocks": [
     {
       "block_id": "ui_0001",
+      "block_type": "mdx_component",
       "component_name": "LawCallout",
       "raw": "<LawCallout code=\"uap\" section=\"SPP Doc. 202 - Standard Owner-Architect Agreement\">\nUnder SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.\n</LawCallout>",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
-      "props_text": "code=uap, section=SPP Doc. 202 - Standard Owner-Architect Agreement, title=Standard Service Phases",
+      "raw_hash": "sha256:1c4d779920148e7deca289ac49e543f3292769a70456d9bd67379a9afe8583c6",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"uap\", section=\"SPP Doc. 202 - Standard Owner-Architect Agreement\"\n- Text: Under SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:e6176e0839dfd4cef48c563c9efee7c36366484f3f54f56594881e88fb2fe40f",
+      "props": {
+        "code": "uap",
+        "section": "SPP Doc. 202 - Standard Owner-Architect Agreement"
+      },
       "props_json": {
         "code": "uap",
-        "section": "SPP Doc. 202 - Standard Owner-Architect Agreement",
-        "title": "Standard Service Phases"
+        "section": "SPP Doc. 202 - Standard Owner-Architect Agreement"
       },
-      "children_raw": "Under SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.",
+      "props_text": "code=\"uap\" section=\"SPP Doc. 202 - Standard Owner-Architect Agreement\"",
+      "children_raw": "\nUnder SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.\n",
       "children_text": "Under SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.",
+      "start_offset": 1046,
+      "end_offset": 1492,
+      "line_start": 18,
+      "line_end": 20,
+      "parser_confidence": "high",
       "parse_status": "parsed",
-      "raw_hash": "sha256:1c4d779920148e7deca289ac49e543f3292769a70456d9bd67379a9afe8583c6"
+      "warnings": [],
+      "status": "preserved"
     },
     {
       "block_id": "ui_0002",
+      "block_type": "mdx_component",
       "component_name": "ExamTip",
       "raw": "<ExamTip>\n  **LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction — this dual role is a frequent LEA test point.\n</ExamTip>",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]",
-      "props_text": "(none)",
+      "raw_hash": "sha256:e1cfd54291c27027ee1bcbba968c208b319ba9cf11fc9b24338954f1879409ca",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction — this dual role is a frequent LEA test point.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:f0471f7fe9771f0d4422663be248c40ca20666aee89cde8808547308fc62f060",
+      "props": {},
       "props_json": {},
-      "children_raw": "**LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction — this dual role is a frequent LEA test point.",
+      "props_text": null,
+      "children_raw": "\n  **LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction — this dual role is a frequent LEA test point.\n",
       "children_text": "**LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction — this dual role is a frequent LEA test point.",
+      "start_offset": 1967,
+      "end_offset": 2311,
+      "line_start": 26,
+      "line_end": 28,
+      "parser_confidence": "high",
       "parse_status": "parsed",
-      "raw_hash": "sha256:e1cfd54291c27027ee1bcbba968c208b319ba9cf11fc9b24338954f1879409ca"
+      "warnings": [],
+      "status": "preserved"
     },
     {
       "block_id": "ui_0003",
+      "block_type": "mdx_component",
       "component_name": "ProcessFlow",
       "raw": "<ProcessFlow>\n  **Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** — 20% fee earned upon approval\n  Step 3: **Design Development** — 20% fee earned upon approval\n  Step 4: **Construction Documents** — 30% fee earned upon submission for permit\n  Step 5: **Bidding** — 5% fee earned\n  Step 6: **Construction Administration** — 25% fee earned over project duration\n  Step 7: **Closeout** — Final payment, certificate of completion, document turnover\n</ProcessFlow>",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ProcessFlow\" status=\"preserved\"]",
-      "props_text": "(none)",
+      "raw_hash": "sha256:a207bbadd03a2ac8b52d3a5f26181333b781c54605aae6ddecbd1d7d659122d4",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ProcessFlow\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Owner-Architect Agreement Lifecycle:** Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement Step 2: **Schematic Design** — 20% fee earned upon approval Step 3: **Design Development** — 20% fee earned upon approval Step 4: **Construction Documents** — 30% fee earned upon submission for permit Step 5: **Bidding** — 5% fee earned Step 6: **Construction Administration** — 25% fee earned over project duration Step 7: **Closeout** — Final payment, certificate of co\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:04870acc99d3ea4fce41fbb8bb03d322402a5e19718279db26fc97fe03b571bf",
+      "props": {},
       "props_json": {},
-      "children_raw": "**Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** — 20% fee earned upon approval\n  Step 3: **Design Development** — 20% fee earned upon approval\n  Step 4: **Construction Documents** — 30% fee earned upon submission for permit\n  Step 5: **Bidding** — 5% fee earned\n  Step 6: **Construction Administration** — 25% fee earned over project duration\n  Step 7: **Closeout** — Final payment, certificate of completion, document turnover",
-      "children_text": "**Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** — 20% fee earned upon approval\n  Step 3: **Design Development** — 20% fee earned upon approval\n  Step 4: **Construction Documents** — 30% fee earned upon submission for permit\n  Step 5: **Bidding** — 5% fee earned\n  Step 6: **Construction Administration** — 25% fee earned over project duration\n  Step 7: **Closeout** — Final payment, certificate of completion, document turnover",
+      "props_text": null,
+      "children_raw": "\n  **Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** — 20% fee earned upon approval\n  Step 3: **Design Development** — 20% fee earned upon approval\n  Step 4: **Construction Documents** — 30% fee earned upon submission for permit\n  Step 5: **Bidding** — 5% fee earned\n  Step 6: **Construction Administration** — 25% fee earned over project duration\n  Step 7: **Closeout** — Final payment, certificate of completion, document turnover\n",
+      "children_text": "**Owner-Architect Agreement Lifecycle:** Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement Step 2: **Schematic Design** — 20% fee earned upon approval Step 3: **Design Development** — 20% fee earned upon approval Step 4: **Construction Documents** — 30% fee earned upon submission for permit Step 5: **Bidding** — 5% fee earned Step 6: **Construction Administration** — 25% fee earned over project duration Step 7: **Closeout** — Final payment, certificate of co",
+      "start_offset": 3486,
+      "end_offset": 4058,
+      "line_start": 42,
+      "line_end": 51,
+      "parser_confidence": "high",
       "parse_status": "parsed",
-      "raw_hash": "sha256:a207bbadd03a2ac8b52d3a5f26181333b781c54605aae6ddecbd1d7d659122d4"
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  mistakes={[\n    \"Confusing the Owner-Architect agreement with the construction contract — they are separate and independent\",\n    \"Assuming payment is due upon client acceptance — payment is due upon completion/submission of phase deliverables\",\n    \"Believing suspension and termination are the same — suspension is temporary; termination ends the contract\",\n    \"Thinking the architect's role is the same throughout — shifts from Owner's agent (design) to impartial administrator (construction)\",\n    \"Overlooking the requirement for written change orders — verbal authorization for scope changes leads to disputes\",\n  ]}\n/>",
+      "raw_hash": "sha256:546df878b9717767e94feb01d1a8220b07acba23b91909e4b7b3a43d7b50e14c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n    \\\"Confusing the Owner-Architect agreement with the construction contract — they are separate and independent\\\",\\n    \\\"Assuming payment is due upon client acceptance — payment is due upon completion/submission of phase deliverables\\\",\\n    \\\"Believing suspension and termination are the same — suspension is temporary; termination ends the contract\\\",\\n    \\\"Thinking the architect's role is the same throughout — shifts from Owner's agent (design) to impartial administrator (construction)\\\",\\n    \\\"Overlooking the requirement for written change orders — verbal authorization for scope changes leads to disputes\\\",\\n  ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:dcce8ce157e5d09cf8d730d4eec847ea163a07bf276765df4109453b32c283fa",
+      "props": {
+        "mistakes": "{[\n    \"Confusing the Owner-Architect agreement with the construction contract — they are separate and independent\",\n    \"Assuming payment is due upon client acceptance — payment is due upon completion/submission of phase deliverables\",\n    \"Believing suspension and termination are the same — suspension is temporary; termination ends the contract\",\n    \"Thinking the architect's role is the same throughout — shifts from Owner's agent (design) to impartial administrator (construction)\",\n    \"Overlooking the requirement for written change orders — verbal authorization for scope changes leads to disputes\",\n  ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n    \"Confusing the Owner-Architect agreement with the construction contract — they are separate and independent\",\n    \"Assuming payment is due upon client acceptance — payment is due upon completion/submission of phase deliverables\",\n    \"Believing suspension and termination are the same — suspension is temporary; termination ends the contract\",\n    \"Thinking the architect's role is the same throughout — shifts from Owner's agent (design) to impartial administrator (construction)\",\n    \"Overlooking the requirement for written change orders — verbal authorization for scope changes leads to disputes\",\n  ]}"
+      },
+      "props_text": "mistakes={[\n    \"Confusing the Owner-Architect agreement with the construction contract — they are separate and independent\",\n    \"Assuming payment is due upon client acceptance — payment is due upon completion/submission of phase deliverables\",\n    \"Believing suspension and termination are the same — suspension is temporary; termination ends the contract\",\n    \"Thinking the architect's role is the same throughout — shifts from Owner's agent (design) to impartial administrator (construction)\",\n    \"Overlooking the requirement for written change orders — verbal authorization for scope changes leads to disputes\",\n  ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4080,
+      "end_offset": 4725,
+      "line_start": 55,
+      "line_end": 63,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-lea-prac-ctr-001-standard-owne-0\" type=\"image\" caption=\"Owner-Architect Agreement Structure — UAP Doc 301 Components Diagram\" description=\"Diagram showing the structure of UAP Document 301: three-party relationship (Owner-Architect-Contractor) at top, then branching to General Conditions, Supplementary Conditions, Special Provisions. Core provisions highlighted: scope of work, compensation, termination, dispute resolution, and insurance requirements.\" />",
+      "raw_hash": "sha256:82dc01daafa62627e90c6c6cfab437edf11416c58a2b3b9b624ffd2f9bbb5bb5",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-prac-ctr-001-standard-owne-0\", type=\"image\", caption=\"Owner-Architect Agreement Structure — UAP Doc 301 Components Diagram\", description=\"Diagram showing the structure of UAP Document 301: three-party relationship (Owner-Architect-Contractor) at top, then branching to General Conditions, Supplementary Conditions, Special Provisions. Core provisions highlighted: scope of work, compensation, termination, dispute resolution, and insurance requirements.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:24f1b83d70c30169c5e537f1e2db31979073a457cdc8bdb13f6bf437db1f56c0",
+      "props": {
+        "id": "media-lea-prac-ctr-001-standard-owne-0",
+        "type": "image",
+        "caption": "Owner-Architect Agreement Structure — UAP Doc 301 Components Diagram",
+        "description": "Diagram showing the structure of UAP Document 301: three-party relationship (Owner-Architect-Contractor) at top, then branching to General Conditions, Supplementary Conditions, Special Provisions. Core provisions highlighted: scope of work, compensation, termination, dispute resolution, and insurance requirements."
+      },
+      "props_json": {
+        "id": "media-lea-prac-ctr-001-standard-owne-0",
+        "type": "image",
+        "caption": "Owner-Architect Agreement Structure — UAP Doc 301 Components Diagram",
+        "description": "Diagram showing the structure of UAP Document 301: three-party relationship (Owner-Architect-Contractor) at top, then branching to General Conditions, Supplementary Conditions, Special Provisions. Core provisions highlighted: scope of work, compensation, termination, dispute resolution, and insurance requirements."
+      },
+      "props_text": "id=\"media-lea-prac-ctr-001-standard-owne-0\" type=\"image\" caption=\"Owner-Architect Agreement Structure — UAP Doc 301 Components Diagram\" description=\"Diagram showing the structure of UAP Document 301: three-party relationship (Owner-Architect-Contractor) at top, then branching to General Conditions, Supplementary Conditions, Special Provisions. Core provisions highlighted: scope of work, compensation, termination, dispute resolution, and insurance requirements.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4734,
+      "end_offset": 5216,
+      "line_start": 69,
+      "line_end": 69,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
     }
   ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:18a224d7046339030bad3b2c48a58d5184aa52ee837886c2af42da4f3a535d06"
 }

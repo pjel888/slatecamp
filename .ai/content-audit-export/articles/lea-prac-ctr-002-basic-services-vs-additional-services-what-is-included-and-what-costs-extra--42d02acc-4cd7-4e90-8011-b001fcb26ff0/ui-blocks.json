@@ -1,55 +1,145 @@
 {
   "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
   "slug": "lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra",
-  "normalized_created_at": "2026-05-01T13:33:44.108Z",
+  "normalized_created_at": "2026-05-04T09:10:36.848Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:4faa9a9eb951832f41142b2ae9bbeb15f6dc0aa562a3e3bd57c01c097c05845a",
-  "normalized_content_hash": "3531aaa9d2bebf9f5b82ad3462d5e56b15c41fd3914bf423c0a61e6c8507e616",
-  "ui_block_count": 3,
-  "total_blocks": 0,
+  "original_content_hash": "sha256:fcfdf63c099deae22bb470549e56bfa84607e92cef5a209e5bf853337f2ad5f7",
+  "normalized_content_hash": "sha256:586ee1c58b4c4828fb105171fe4627a06af7828a19c4a188031e948aac0dec73",
+  "ui_block_count": 5,
+  "total_blocks": 5,
   "blocks": [
     {
       "block_id": "ui_0001",
+      "block_type": "mdx_component",
       "component_name": "LawCallout",
       "raw": "<LawCallout code=\"uap\" section=\"SPP Doc. 202 - Standard Owner-Architect Agreement\">\nBasic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.\n</LawCallout>",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
-      "props_text": "code=uap, section=SPP Doc. 202 - Standard Owner-Architect Agreement, title=Basic Services vs. Additional Services",
+      "raw_hash": "sha256:f80bf612300b85980bf77bb1d6d762f25179aeae9e67a75ff567efa383cfd030",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"uap\", section=\"SPP Doc. 202 - Standard Owner-Architect Agreement\"\n- Text: Basic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d62648eef6350a9840e7f60d298cabb42978e9830c141edf1b1b5e0ff1cd8c86",
+      "props": {
+        "code": "uap",
+        "section": "SPP Doc. 202 - Standard Owner-Architect Agreement"
+      },
       "props_json": {
         "code": "uap",
-        "section": "SPP Doc. 202 - Standard Owner-Architect Agreement",
-        "title": "Basic Services vs. Additional Services"
+        "section": "SPP Doc. 202 - Standard Owner-Architect Agreement"
       },
-      "children_raw": "Basic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.",
+      "props_text": "code=\"uap\" section=\"SPP Doc. 202 - Standard Owner-Architect Agreement\"",
+      "children_raw": "\nBasic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.\n",
       "children_text": "Basic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.",
+      "start_offset": 830,
+      "end_offset": 1308,
+      "line_start": 16,
+      "line_end": 18,
+      "parser_confidence": "high",
       "parse_status": "parsed",
-      "raw_hash": "sha256:f80bf612300b85980bf77bb1d6d762f25179aeae9e67a75ff567efa383cfd030"
+      "warnings": [],
+      "status": "preserved"
     },
     {
       "block_id": "ui_0002",
+      "block_type": "mdx_component",
       "component_name": "ExamTip",
       "raw": "<ExamTip>\n  **LEA Watch — Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: \"Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed.\"\n</ExamTip>",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]",
-      "props_text": "(none)",
+      "raw_hash": "sha256:32adc5621fbcb482087d3f982249bc03ff7fcf2014d0cd25cc8282817b2a2b4e",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **LEA Watch — Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: \"Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed.\"\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9fe122da5c933d33d4c827520fcb4241b9c3c509b4b579e27d9aca6ee773e225",
+      "props": {},
       "props_json": {},
-      "children_raw": "**LEA Watch — Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: \"Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed.\"",
+      "props_text": null,
+      "children_raw": "\n  **LEA Watch — Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: \"Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed.\"\n",
       "children_text": "**LEA Watch — Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: \"Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed.\"",
+      "start_offset": 2330,
+      "end_offset": 2830,
+      "line_start": 28,
+      "line_end": 30,
+      "parser_confidence": "high",
       "parse_status": "parsed",
-      "raw_hash": "sha256:32adc5621fbcb482087d3f982249bc03ff7fcf2014d0cd25cc8282817b2a2b4e"
+      "warnings": [],
+      "status": "preserved"
     },
     {
       "block_id": "ui_0003",
+      "block_type": "mdx_component",
       "component_name": "Warn",
       "raw": "<Warn>\n  **Common Exam Trap:** The LEA test often asks: \"Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?\" The answer is NO — written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.\n</Warn>",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Warn\" status=\"preserved\"]",
-      "props_text": "(none)",
+      "raw_hash": "sha256:dec3c839109dbae995eac60e1a6d7aed6c2a2d9619169b4725329b8f18308b55",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Warn\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Common Exam Trap:** The LEA test often asks: \"Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?\" The answer is NO — written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:79734e01b1b048db285cdbdb2494b0263e6f58de6e2930059568caf5a57a6091",
+      "props": {},
       "props_json": {},
-      "children_raw": "**Common Exam Trap:** The LEA test often asks: \"Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?\" The answer is NO — written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.",
+      "props_text": null,
+      "children_raw": "\n  **Common Exam Trap:** The LEA test often asks: \"Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?\" The answer is NO — written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.\n",
       "children_text": "**Common Exam Trap:** The LEA test often asks: \"Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?\" The answer is NO — written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.",
+      "start_offset": 3220,
+      "end_offset": 3573,
+      "line_start": 36,
+      "line_end": 38,
+      "parser_confidence": "high",
       "parse_status": "parsed",
-      "raw_hash": "sha256:dec3c839109dbae995eac60e1a6d7aed6c2a2d9619169b4725329b8f18308b55"
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0004",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList\n  mistakes={[\n    \"Assuming BIM, renderings, and energy modeling are always Basic Services — these are typically Additional Services unless explicitly included in the agreement\",\n    \"Proceeding with Additional Services based on verbal client requests — written authorization is required\",\n    \"Confusing reimbursable expenses with Additional Services — expenses are pass-through costs; Additional Services are billable work\",\n    \"Believing consultant fees are always included in the architect's fee — must be specified in the agreement; typical practice makes consultant fees reimbursable\",\n    \"Thinking phase completion is determined by calendar date — it is determined by Owner approval of deliverables\",\n  ]}\n/>",
+      "raw_hash": "sha256:f68f8fc88bdf7c5175ee34d0a607f62a81969704014fd7e726701b4cbaba23b2",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n    \\\"Assuming BIM, renderings, and energy modeling are always Basic Services — these are typically Additional Services unless explicitly included in the agreement\\\",\\n    \\\"Proceeding with Additional Services based on verbal client requests — written authorization is required\\\",\\n    \\\"Confusing reimbursable expenses with Additional Services — expenses are pass-through costs; Additional Services are billable work\\\",\\n    \\\"Believing consultant fees are always included in the architect's fee — must be specified in the agreement; typical practice makes consultant fees reimbursable\\\",\\n    \\\"Thinking phase completion is determined by calendar date — it is determined by Owner approval of deliverables\\\",\\n  ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:85b9d7b4da65ae02511fc80c8c076e31cfd91085586cea467c5d0e36b376b0cb",
+      "props": {
+        "mistakes": "{[\n    \"Assuming BIM, renderings, and energy modeling are always Basic Services — these are typically Additional Services unless explicitly included in the agreement\",\n    \"Proceeding with Additional Services based on verbal client requests — written authorization is required\",\n    \"Confusing reimbursable expenses with Additional Services — expenses are pass-through costs; Additional Services are billable work\",\n    \"Believing consultant fees are always included in the architect's fee — must be specified in the agreement; typical practice makes consultant fees reimbursable\",\n    \"Thinking phase completion is determined by calendar date — it is determined by Owner approval of deliverables\",\n  ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n    \"Assuming BIM, renderings, and energy modeling are always Basic Services — these are typically Additional Services unless explicitly included in the agreement\",\n    \"Proceeding with Additional Services based on verbal client requests — written authorization is required\",\n    \"Confusing reimbursable expenses with Additional Services — expenses are pass-through costs; Additional Services are billable work\",\n    \"Believing consultant fees are always included in the architect's fee — must be specified in the agreement; typical practice makes consultant fees reimbursable\",\n    \"Thinking phase completion is determined by calendar date — it is determined by Owner approval of deliverables\",\n  ]}"
+      },
+      "props_text": "mistakes={[\n    \"Assuming BIM, renderings, and energy modeling are always Basic Services — these are typically Additional Services unless explicitly included in the agreement\",\n    \"Proceeding with Additional Services based on verbal client requests — written authorization is required\",\n    \"Confusing reimbursable expenses with Additional Services — expenses are pass-through costs; Additional Services are billable work\",\n    \"Believing consultant fees are always included in the architect's fee — must be specified in the agreement; typical practice makes consultant fees reimbursable\",\n    \"Thinking phase completion is determined by calendar date — it is determined by Owner approval of deliverables\",\n  ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4027,
+      "end_offset": 4761,
+      "line_start": 50,
+      "line_end": 58,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0005",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-lea-prac-ctr-002-basic-service-0\" type=\"image\" caption=\"Basic Services vs. Additional Services — Classification Flowchart\" description=\"Decision flowchart distinguishing Basic Services (SPP 202 five phases: SD, DD, CD, BA, CA) from Additional Services (separate scope, extra compensation). Decision diamonds for: Is this a standard SPP 202 phase deliverable? → Yes=Basic, No→ Was it anticipated in the Agreement? → Yes=Basic, No→ Additional Service. Examples of each category listed in side panels.\" />",
+      "raw_hash": "sha256:3534b38ec35343415297d7beb65fe3a9634c2e272abbc7b4c5823800307376b2",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-prac-ctr-002-basic-service-0\", type=\"image\", caption=\"Basic Services vs. Additional Services — Classification Flowchart\", description=\"Decision flowchart distinguishing Basic Services (SPP 202 five phases: SD, DD, CD, BA, CA) from Additional Services (separate scope, extra compensation). Decision diamonds for: Is this a standard SPP 202 phase deliverable? → Yes=Basic, No→ Was it anticipated in the Agreement? → Yes=Basic, No→ Additional Service. Examples of each category listed in side panels.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:21e562e9e0d0b24bc77175c46edfe44492738d16adcca3a92a02aec7e8a8e03c",
+      "props": {
+        "id": "media-lea-prac-ctr-002-basic-service-0",
+        "type": "image",
+        "caption": "Basic Services vs. Additional Services — Classification Flowchart",
+        "description": "Decision flowchart distinguishing Basic Services (SPP 202 five phases: SD, DD, CD, BA, CA) from Additional Services (separate scope, extra compensation). Decision diamonds for: Is this a standard SPP 202 phase deliverable? → Yes=Basic, No→ Was it anticipated in the Agreement? → Yes=Basic, No→ Additional Service. Examples of each category listed in side panels."
+      },
+      "props_json": {
+        "id": "media-lea-prac-ctr-002-basic-service-0",
+        "type": "image",
+        "caption": "Basic Services vs. Additional Services — Classification Flowchart",
+        "description": "Decision flowchart distinguishing Basic Services (SPP 202 five phases: SD, DD, CD, BA, CA) from Additional Services (separate scope, extra compensation). Decision diamonds for: Is this a standard SPP 202 phase deliverable? → Yes=Basic, No→ Was it anticipated in the Agreement? → Yes=Basic, No→ Additional Service. Examples of each category listed in side panels."
+      },
+      "props_text": "id=\"media-lea-prac-ctr-002-basic-service-0\" type=\"image\" caption=\"Basic Services vs. Additional Services — Classification Flowchart\" description=\"Decision flowchart distinguishing Basic Services (SPP 202 five phases: SD, DD, CD, BA, CA) from Additional Services (separate scope, extra compensation). Decision diamonds for: Is this a standard SPP 202 phase deliverable? → Yes=Basic, No→ Was it anticipated in the Agreement? → Yes=Basic, No→ Additional Service. Examples of each category listed in side panels.\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4770,
+      "end_offset": 5296,
+      "line_start": 64,
+      "line_end": 64,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
     }
   ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:9a56da01626d92be1ca6b9270f0245ea19878c05929115bd0c6360acab0815df"
 }

@@ -106,7 +106,7 @@ The **Renaissance is tested through four architects**—**Brunelleschi** (dome +
 
 ## Related Articles
 
-<ArticleMedia id=\"media-hist-002-04-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Timeline of Renaissance architecture (14th–16th centuries) highlighting the key architects and works: Brunelleschi (Florence Cathedral dome, 1420–1436), Alberti (Sant'Andrea, 1470), Bramante (Tempietto, 1502), Michelangelo (St. Peter's dome, 1547–1564), and Palladio (Villa Rotonda, 1567).\" caption=\"Renaissance Architecture — Key Works Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-002-04-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Renaissance architecture (14th–16th centuries) highlighting the key architects and works: Brunelleschi (Florence Cathedral dome, 1420–1436), Alberti (Sant'Andrea, 1470), Bramante (Tempietto, 1502), Michelangelo (St. Peter's dome, 1547–1564), and Palladio (Villa Rotonda, 1567)." caption="Renaissance Architecture — Key Works Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-05-core-concept**.
 

@@ -1,20 +1,22 @@
 {
-  "attempted_at": "2026-05-04T02:16:38.095Z",
+  "attempted_at": "2026-05-04T09:13:18.842Z",
   "dry_run": false,
   "apply": true,
-  "pushed": true,
-  "blockers": [],
+  "pushed": false,
+  "blockers": [
+    "candidate.md matches original.md; refusing no-op apply.",
+    "ui-blocks.json contains unknown/unparseable blocks; rerun with --force only after manual review."
+  ],
   "warnings": [],
-  "updated_rows_count": 1,
+  "updated_rows_count": 0,
   "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
   "slug": "bp-344-ramp-slope-tiers",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:361347fe7de37fb9951e395346afb9bc9b121774dea07ce769f5c718728edf32",
-  "original_hash": "sha256:361347fe7de37fb9951e395346afb9bc9b121774dea07ce769f5c718728edf32",
-  "candidate_hash": "sha256:e44f4fcc9eccb80336fa31ca7e94cf2be94c09267c53e3c421250755262bad3d",
+  "remote_hash_before": "sha256:d13aa7949cf241afc6970161ce0207f80b02f6ce195514c03bf722a3d4cd66fe",
+  "original_hash": "sha256:d13aa7949cf241afc6970161ce0207f80b02f6ce195514c03bf722a3d4cd66fe",
+  "candidate_hash": "sha256:d13aa7949cf241afc6970161ce0207f80b02f6ce195514c03bf722a3d4cd66fe",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-04T00:15:03.576442+00:00",
-  "updated_at_after": "2026-05-04T02:16:38.349947+00:00"
+  "remote_updated_at_before": "2026-05-04T02:41:50.987921+00:00"
 }

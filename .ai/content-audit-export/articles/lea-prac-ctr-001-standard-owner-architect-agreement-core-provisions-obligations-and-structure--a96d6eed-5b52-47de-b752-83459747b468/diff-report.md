@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure
 
-Generated: 2026-05-04T02:18:14.560Z
+Generated: 2026-05-04T09:14:20.490Z
 Article ID: a96d6eed-5b52-47de-b752-83459747b468
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:51b34ffa4b071be4cd566d724a260658f97d95064bdcef4e028937d922575f24`
-- Normalized: `sha256:49b062c3974b6636500f382ad175efa7b6c6752cb92f1e556e31af73c57fba66`
-- Candidate: `sha256:51b34ffa4b071be4cd566d724a260658f97d95064bdcef4e028937d922575f24`
+- Original: `sha256:f3eb30ac78a7b4c0c15417a77cc66e287dc01e9fab896d88d3f0c4a79234a744`
+- Normalized: `sha256:856a300437e60c8ee4921cb1a9abc80defa569ecc2a273a0621abddc5f895cd4`
+- Candidate: `sha256:f3eb30ac78a7b4c0c15417a77cc66e287dc01e9fab896d88d3f0c4a79234a744`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

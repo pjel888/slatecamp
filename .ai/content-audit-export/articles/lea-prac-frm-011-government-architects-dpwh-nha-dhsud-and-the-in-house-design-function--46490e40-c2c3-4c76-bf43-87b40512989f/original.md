@@ -47,7 +47,7 @@ Architects working on government projects must understand audit requirements and
 
 
 
-<ArticleMedia type="image" caption="Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles" description="Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted." />
+<ArticleMedia id="media-lea-prac-frm-011-government-ar-0" type="image" caption="Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles" description="Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

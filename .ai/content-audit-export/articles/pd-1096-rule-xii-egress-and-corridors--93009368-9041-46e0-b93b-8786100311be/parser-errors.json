@@ -1,14 +1,36 @@
 {
   "article_id": "93009368-9041-46e0-b93b-8786100311be",
   "slug": "pd-1096-rule-xii-egress-and-corridors",
-  "generated_at": "2026-05-01T13:33:43.815Z",
+  "generated_at": "2026-05-04T09:10:36.306Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 0,
-  "unknown_block_count": 0,
+  "warning_count": 1,
+  "unknown_block_count": 1,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [],
-  "unknown_blocks": [],
+  "warnings": [
+    {
+      "block_id": "ui_0003",
+      "component_name": "ArticleMedia",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0003",
+      "component_name": "ArticleMedia",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:baa99971a462c18e2434797bcec21eb3aa8f0b247bea6459b47c1d29ccc8999e",
+      "line_start": 43,
+      "line_end": 43,
+      "warnings": [
+        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
   "critical_blocks": []
 }

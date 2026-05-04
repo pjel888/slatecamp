@@ -21,7 +21,7 @@ The Philippine housing finance system is _employment-based_ and _segmented by se
 **NHMFC (National Home Mortgage Finance Corporation)** operates the secondary mortgage market. When Pag-IBIG, banks, or other primary lenders originate a housing loan, NHMFC can purchase that loan, returning capital to the lender so they can issue new loans. This recycling mechanism is critical for loan availability.
 
 The critical distinction: These agencies _finance_ housing (they issue loans to end-buyers). They do NOT _build_ housing (that is NHA's role) and do NOT _regulate_ developers (that is DHSUD's role).
-<ArticleMedia id="media-lea-plan-007-03-core-concept" type="image" caption="Housing Finance Institutions — Pag-IBIG, SSS, GSIS, NHMFC Comparison" alt="Four-panel comparison of housing finance institutions: Pag-IBIG/HDMF (employed workers, mandatory), SSS (private sector, housing loans), GSIS (government employees), NHMFC (secondary mortgage market, liquidity). Target sector, membership basis, and financial products per institution." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-007-03-core-concept" type="image" caption="Housing Finance Institutions — Pag-IBIG, SSS, GSIS, NHMFC Comparison" description="Four-panel comparison of housing finance institutions: Pag-IBIG/HDMF (employed workers, mandatory), SSS (private sector, housing loans), GSIS (government employees), NHMFC (secondary mortgage market, liquidity). Target sector, membership basis, and financial products per institution." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

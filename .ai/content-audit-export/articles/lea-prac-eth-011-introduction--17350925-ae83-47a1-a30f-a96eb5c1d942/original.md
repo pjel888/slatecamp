@@ -5,7 +5,7 @@ After reading this article, you should understand the key concepts tested in the
 Conflicts of interest represent one of the most challenging ethical issues in architectural practice. Unlike clear violations (fraud, negligence), conflicts exist in shades of gray. An architect may have competing interests that cloud judgment, yet honestly believe she will act objectively. The Code of Ethical Conduct and RA 9266 require more than honest intention—they require **disclosure and client informed consent**.
 
 This article examines how architects identify conflicts, the obligations triggered by their recognition, disclosure mechanics, and situations requiring recusal (withdrawal) from engagement.
-<ArticleMedia id="media-lea-prac-eth-011-introduction" a type="image" caption="Conflict of Interest — Ethical Decision Framework" description="Four-stage decision tree diagram for conflict of interest analysis: Stage 1 — Identify competing interests (financial, professional, personal); Stage 2 — Assess whether objectivity is compromised; Stage 3 — Apply disclosure requirements (who, what, when, how); Stage 4 — Determine if recusal is necessary. Each stage includes yes/no branching logic leading to permitted, disclosure-required, or recusal-required outcomes." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-eth-011-introduction" type="image" caption="Conflict of Interest — Ethical Decision Framework" description="Four-stage decision tree diagram for conflict of interest analysis: Stage 1 — Identify competing interests (financial, professional, personal); Stage 2 — Assess whether objectivity is compromised; Stage 3 — Apply disclosure requirements (who, what, when, how); Stage 4 — Determine if recusal is necessary. Each stage includes yes/no branching logic leading to permitted, disclosure-required, or recusal-required outcomes." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Definition: What Constitutes a Conflict of Interest?
 
@@ -16,7 +16,7 @@ A conflict of interest exists when an architect has competing financial, profess
 - **Motivate self-dealing** decisions that benefit the architect more than the client
 - **Create appearance of impropriety** even if actual judgment remains objective
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LeartBox" status="preserved"]
+<LeartBox />
 
 The Code of Ethical Conduct establishes that architects must:
 
@@ -51,7 +51,7 @@ Financial conflicts occur when the architect has direct or indirect economic int
  - Prohibit the commission arrangement
  - Seek competitive bids from unaffiliated suppliers
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip />
 
 ### Type 1B: Investment in Contractor or Vendor
 
@@ -67,7 +67,7 @@ Financial conflicts occur when the architect has direct or indirect economic int
  - Prohibit the spouse's contractor from bidding
  - Require competitive bid from independent contractors
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LeartBox" status="preserved"]
+<LeartBox />
 
 ### Type 1C: Competitor Conflict in Bidding
 
@@ -110,7 +110,7 @@ Financial conflicts occur when the architect has direct or indirect economic int
  3. Obtain informed consent from both clients
  4. Establish clear boundaries (only design, no construction management; disclose all decisions affecting both clients)
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LeartBox" status="preserved"]
+<LeartBox />
 
 ### Type 2B: Consultant Conflict
 
@@ -163,7 +163,7 @@ Financial conflicts occur when the architect has direct or indirect economic int
  - Require competitive evaluation by independent person
  - Disqualify the contractor from consideration
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+<ExamTip />
 
 ### Type 3C: Friendship and Social Relationships
 
@@ -182,16 +182,16 @@ Financial conflicts occur when the architect has direct or indirect economic int
 
 ## The Conflict Analysis Matrix
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ConflictMatrix" status="preserved"]
+<ConflictMatrix />
 
-<ArticleMedia id="media-lea-prac-eth-011-introduction" a type="image" caption="Disclosure Process Flowchart — From Conflict Discovery to Informed Consent" description="Seven-step process flow diagram: Step 1 — Conflict identified → Step 2 — Timing assessment (before engagement or immediately upon discovery) → Step 3 — Written disclosure prepared (identifying conflict, explaining impact, proposing mitigation) → Step 4 — Client notified → Step 5 — Client exercises right of refusal → Step 6 — Informed consent documented in writing → Step 7 — Disclosure retained in project file. Diamond decision nodes show branching when disclosure is insufficient requiring recusal." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-eth-011-introduction" type="image" caption="Disclosure Process Flowchart — From Conflict Discovery to Informed Consent" description="Seven-step process flow diagram: Step 1 — Conflict identified → Step 2 — Timing assessment (before engagement or immediately upon discovery) → Step 3 — Written disclosure prepared (identifying conflict, explaining impact, proposing mitigation) → Step 4 — Client notified → Step 5 — Client exercises right of refusal → Step 6 — Informed consent documented in writing → Step 7 — Disclosure retained in project file. Diamond decision nodes show branching when disclosure is insufficient requiring recusal." suggestedAsset="Diagram or reference image" status="placeholder" />
 ## The Disclosure Process
 
 ### Elements of Effective Disclosure
 
 Disclosure is not a casual mention; it requires structured communication:
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ProcessFlow" status="preserved"]
+<ProcessFlow />
 
 ### Sample Disclosure Language
 
@@ -255,7 +255,7 @@ Some conflicts are so fundamental that disclosure and consent cannot adequately 
 - This is Mike choosing to decline work based on his own professional values
 - Declining work on values grounds is ethically permissible; proceeding while deeply opposed might compromise objectivity
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="LeartBox" status="preserved"]
+<LeartBox />
 
 ## Conflicts in Specialized Roles
 
@@ -299,7 +299,7 @@ The PRBoA enforces conflict of interest rules through discipline:
 - **Concealing conflict and profiting from it:** Suspension 2-5 years; mandatory restitution; possible revocation
 - **Refusing to recuse from irreconcilable conflict:** Aggravating factor in other discipline
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip />
 
 ## About This Article
 

@@ -289,11 +289,23 @@ D. The conversion is permitted as a change of use under Rule VII, Sec. 702, subj
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Penthouses"
+- Text: Per PD 1096, Rule XII, Sec. 1210, penthouses have two height tiers: (1) elevator machine rooms and water tanks in non-Type V construction: max 8.40 m above roof; (2) all other penthouses: max 3.60 m above roof. Additionally, the aggregate area of all penthouses and roof structures must not exceed 1/3 of the supporting roof area. A penthouse used for any purpose other than sheltering mechanical equipment or shaft openings is reclassified as an additional storey — cascading into BHL, GFA, and FAR 
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="new"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The 8.40 m height limit applies ONLY to elevator machine rooms and water tank enclosures on non-Type V construction. A generator room penthouse at 5.00 m above the roof violates the 3.60 m general limit — not the 8.40 m limit. Always identify the specific penthouse use before selecting the applicable height tier.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: On the LEA, expect a question that describes a penthouse with both dimensions and use, asking whether it complies. The correct analysis must check ALL three conditions simultaneously: (1) height within applicable tier, (2) aggregate area ≤1/3 of roof, (3) use is mechanical/shaft only. A single violation triggers reclassification.
+[/SLATECAMP_UI_BLOCK]
 
 ## Spaced Repetition Reminder
 
@@ -313,5 +325,3 @@ D. The conversion is permitted as a change of use under Rule VII, Sec. 702, subj
 
 **Ceiling Heights And Room Sizes**, **Allowable Floor Area Increases**, **Pd 1096 Rule Vii Height Limits**, **Exam Meta Deck Heights**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

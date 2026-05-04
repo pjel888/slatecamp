@@ -11,9 +11,17 @@ After studying this article, you should be able to:
 
 ---
 
-<ArticleMedia id="media-law001-framework-overview" layout="single" variant="wide" type="image" status="placeholder" aspectRatio="16:9" title="RA 9266 Regulatory Landscape" alt="Overview diagram showing the complete regulatory landscape: RA 9266 at the center, surrounded by the PRBoA, PRC, IAPOA/UAP, the Courts, and how they interconnect through licensure, discipline, and appeals." placementIntent="legal-framework" suggestedSearchQuery="Philippines architecture regulatory structure RA 9266 PRBoA PRC diagram" replacementNotes="Create a hub-and-spoke diagram with RA 9266 in center, connecting to PRBoA (regulation), PRC (administration), IAPOA/UAP (nomination), Courts (appeals), and CHED (education). Show the flow of authority and accountability." suggestedAsset="Diagram or reference image" alt="Regulatory landscape: RA 9266, PRBoA, PRC, and IAPOA relationships" caption="Future diagram: regulatory landscape: ra 9266, prboa, prc, and iapoa relationships" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-law001-framework-overview", layout="single", variant="wide", type="image", status="placeholder", aspectRatio="16:9", title="RA 9266 Regulatory Landscape", alt="Regulatory landscape: RA 9266, PRBoA, PRC, and IAPOA relationships", placementIntent="legal-framework", suggestedSearchQuery="Philippines architecture regulatory structure RA 9266 PRBoA PRC diagram", replacementNotes="Create a hub-and-spoke diagram with RA 9266 in center, connecting to PRBoA (regulation), PRC (administration), IAPOA/UAP (nomination), Courts (appeals), and CHED (education). Show the flow of authority and accountability.", suggestedAsset="Diagram or reference image"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: RA 9266 questions typically appear 4-6 times per exam cycle. Know Section 3 (definitions and scope), Section 4 (PRBoA composition), and Section 33 (signing and sealing) by heart.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -21,7 +29,11 @@ After studying this article, you should be able to:
 
 Republic Act No. 9266, the Architecture Act of 2004, was signed into law on March 17, 2004, and took effect immediately upon signature. It replaced Republic Act No. 545 of 1950, which had governed architecture practice for 54 years.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Think of it as a generational upgrade: RA 545 (1950) served the post-war generation of architects. RA 9266 (2004) modernized regulation for the 21st century — expanding scope, strengthening board powers, and introducing continuing professional development.
+[/SLATECAMP_UI_BLOCK]
 
 ### Legislative Intent
 
@@ -31,11 +43,19 @@ The IRR of RA 9266 articulates the state's commitment: to develop competent, vir
 
 ### The PRBoA: Structure and Appointment
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 4"
+- Text: The Professional Regulatory Board of Architecture (PRBoA) is created under Section 4 of RA 9266. It is a collegial body under the administrative supervision of the Professional Regulation Commission (PRC).
+[/SLATECAMP_UI_BLOCK]
 
 The Board has three members: a Chairman and two Members. They are appointed by the President of the Philippines from a list of five nominees per position. The nominees come from the **Integrated and Accredited Professional Organization of Architects (IAPOA)** — now the United Architects of the Philippines (UAP) — as designated by Section 4.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in LEA questions.
+[/SLATECAMP_UI_BLOCK]
 
 **Qualifications required:**
 
@@ -60,7 +80,11 @@ The staggered system ensures at least one new member joins each year during the 
 
 The law itself (RA 9266) states: *"The Board shall be organized not later than six (6) months from the effectivity of the Architecture Act of 2004"* — meaning from the law itself, not the IRR.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 4"
+- Text: Section 4 of the IRR: "The Board shall be organized not later than six (6) months from the effectivity of the Architecture Act of 2004."
+[/SLATECAMP_UI_BLOCK]
 
 The IRR became effective on December 1, 2004 (15 days after publication, per Section 47). RA 9266 itself was effective March 17, 2004. The six-month deadline runs from **March 17, 2004** — the law's own effectivity date.
 
@@ -68,7 +92,11 @@ The IRR became effective on December 1, 2004 (15 days after publication, per Sec
 
 ### Architecture Defined
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 3"
+- Text: RA 9266 defines architecture as *"the art, science, or profession of planning, designing, and constructing buildings in their totality taking into account their environment, in accordance with the principles of utility, strength, and beauty."*
+[/SLATECAMP_UI_BLOCK]
 
 This tripartite standard — utility, strength, beauty — echoes the Vitruvian principles embedded in architecture education globally. The law recognizes that architects operate at the intersection of aesthetic, functional, structural, and environmental considerations.
 
@@ -76,19 +104,43 @@ This tripartite standard — utility, strength, beauty — echoes the Vitruvian 
 
 ### Key Roles Under the Law
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="LawCallout" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0008 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="IRR Section 3"
+- Text: **Architect-of-Record (AoR):** The registered and licensed architect directly and professionally responsible for the total design of the project. The AoR assumes civil liability for the plans, specifications, and contract documents signed and sealed, under Article 1723 of the Civil Code.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 3"
+- Text: **Architect-in-Charge of Construction (AiCC):** A registered and licensed architect directly and professionally responsible and liable for construction supervision.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="Example" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0010 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="IRR Section 3"
+- Text: **Consulting Architect:** An academically and professionally qualified architect with exceptional expertise in a branch of architecture. The Consulting Architect assumes **no civil liability** for the project under Article 1723 unless interfering with the AoR's functions — but is liable under their own service agreements.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0011 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **How this works in practice:** A client hires you as AoR for a hospital project. You design the building and sign the plans. You bring in a Consulting Architect for specialized knowledge on healthcare design. You (the AoR) carry primary liability. The consultant is liable only under their separate agreement. If the consultant starts overriding your design decisions, they can become liable under Article 1723.
+[/SLATECAMP_UI_BLOCK]
 
 ### Structural Conceptualization
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0012 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="Section 3(5)"
+- Text: "Structural Conceptualization" means the act of conceiving, choosing, and developing the type, disposition, arrangement, and proportioning of the structural elements of an architectural work, giving due consideration to safety, cost-effectiveness, functionality, and aesthetics.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal — not about design scope. The correct reference is **Section 3(4)(a) or Section 3(5)** of the IRR, which define the scope of practice and structural conceptualization.
+[/SLATECAMP_UI_BLOCK]
 
 Structural conceptualization is part of the architect's scope. However, the **preparation and signing of structural design documents** remains the exclusive domain of licensed structural engineers. Architects conceptualize; engineers calculate and certify. This boundary prevents scope overlap while acknowledging the collaborative nature of building design.
 
@@ -106,7 +158,11 @@ The law tasks the PRBoA with adopting the Code of Ethical Conduct and Standards 
 
 ---
 
-<ArticleMedia id="media-law001-roles-diagram" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Architect Roles Under RA 9266" alt="Role comparison diagram showing Architect-of-Record (AoR), Architect-in-Charge of Construction (AiCC), and Consulting Architect — their scope, liability, and relationship to the project." placementIntent="legal-framework" suggestedSearchQuery="Architect of Record vs Architect in Charge of Construction vs Consulting Architect diagram" replacementNotes="Create a three-column comparison: AoR (design liability under Art 1723), AiCC (supervision liability solidary with contractor), Consulting Architect (advisory, scope-dependent). Show overlapping vs distinct responsibilities." suggestedAsset="Diagram or reference image" alt="Regulatory landscape: RA 9266, PRBoA, PRC, and IAPOA relationships" caption="Future diagram: regulatory landscape: ra 9266, prboa, prc, and iapoa relationships" />
+[SLATECAMP_UI_BLOCK:ui_0014 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-law001-roles-diagram", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Architect Roles Under RA 9266", alt="Regulatory landscape: RA 9266, PRBoA, PRC, and IAPOA relationships", placementIntent="legal-framework", suggestedSearchQuery="Architect of Record vs Architect in Charge of Construction vs Consulting Architect diagram", replacementNotes="Create a three-column comparison: AoR (design liability under Art 1723), AiCC (supervision liability solidary with contractor), Consulting Architect (advisory, scope-dependent). Show overlapping vs distinct responsibilities.", suggestedAsset="Diagram or reference image"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### What the Exam Tests
 

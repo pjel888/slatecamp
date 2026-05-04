@@ -1,6 +1,6 @@
 # Content Diff Report: pre-columbian-mesoamerica
 
-Generated: 2026-05-04T02:17:23.224Z
+Generated: 2026-05-04T09:13:46.268Z
 Article ID: efb82628-9bf4-4bde-9561-8b784384c32c
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:92cd7aab1e0174fe94a1949d48184509d1aea1809e8b0dbeeb5488f8ee57eb92`
-- Normalized: `sha256:68c8fc1525cd46fd57e64b4b956e0dc80e5376581d60350db1168d766ea7cbdc`
+- Normalized: `sha256:eb9c2ed6a8d2f3599c7cda8fc775ad2ba2bb469e600d225aa56c7c5054563b27`
 - Candidate: `sha256:92cd7aab1e0174fe94a1949d48184509d1aea1809e8b0dbeeb5488f8ee57eb92`
 
 ## Line summary
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

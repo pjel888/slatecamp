@@ -21,6 +21,10 @@ By the end of this article, you will be able to:
 
 ## The Real-World Hook
 
+<ArticleMedia id="media-fire-zones-and-existing-buildi-0" name="fire-zone-classification-map" type="diagram" caption="Three-panel comparison diagram showing Non-Fire Restricted Zone (Type I/II, rural indigenous materials), Fire Restrictive Zone (Type II/III/IV, 2-hr exterior walls, 1-hr interior), and Highly Fire Restrictive Zone (Type IV/V, 3–4 hr throughout). Show typical building examples for each zone with allowed construction types listed." />
+
+<ArticleMedia id="media-fire-zones-and-existing-buildi-1" name="existing-building-pathways" type="diagram" caption="Decision tree for non-conforming existing buildings under Sec 506: check if alteration/repair value exceeds 20% of building value in 12 months → if yes, full zone compliance required. Show five pathways (A–E) as branches: A (normal repairs <20%), B (maintain existing), C (planned alterations ≥20%), D (unsafe building changes), E (fortuitous events). Include the one-third split-zone rule decision diamond." />
+
 It is a Tuesday morning in Divisoria, Manila. You are the architect of record for a row of shophouses that your client purchased along a busy commercial strip. The buildings are old — built in the 1970s before the current Fire Zone designation was formalized. Your client wants to renovate all five units: knock down a shared internal wall, add a mezzanine, repaint and reroof, extend the shopfronts toward the sidewalk, and replace all the electrical service panels. The budget for all this work is about 30% of the current appraised value of the property.
 
 You sit across from the Building Official and slide the permit application across the desk.
@@ -620,9 +624,13 @@ The Philippines faces a combination of risk factors that make fire zone rules mo
 
 ---
 
-
+---
 
 ---
+
+## Exam Tip
+
+LEA Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when the cost of alteration exceeds 50% of building value. Know the three zones (1=highest restriction, 4=lowest) and which occupancy types are prohibited in each.
 
 
 
@@ -630,7 +638,7 @@ The Philippines faces a combination of risk factors that make fire zone rules mo
 
 ## Exam Tip
 
-LEA Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when the cost of alteration exceeds 50% of building value. Know the three zones (1=highest restriction, 4=lowest) and which occupancy types are prohibited in each.
+ALE Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when the cost of alteration exceeds 50% of building value. Know the three zones (1=highest restriction, 4=lowest) and which occupancy types are prohibited in each.
 
 ## Cross‑References
 
@@ -658,3 +666,5 @@ LEA Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when
 - International Building Code (IBC) 2021, Section 3101.3 — Relocated Structures
 - International Building Code (IBC) 2021, Section 3103 — Temporary Structures
 - International Building Code (IBC) 2021, Section 3405 — Repairs to Non-Conforming Buildings
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

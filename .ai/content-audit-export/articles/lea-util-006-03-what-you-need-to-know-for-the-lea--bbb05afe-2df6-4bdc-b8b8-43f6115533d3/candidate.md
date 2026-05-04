@@ -4,7 +4,7 @@
 
 Select appropriate lighting systems by lamp type (LED, fluorescent, halogen, induction, HID) based on luminous efficacy, CRI, color temperature, life expectancy, dimming capability, and application in different interior and exterior building spaces.
 
-<ArticleMedia id="media-lea-util-006-03-what-you-need-to-know-fo" type="image" caption="Lamp Type Comparison — LED, Fluorescent, HID, Halogen" alt="Comparison table/chart of lamp types: LED (100-150 lm/W, 50,000-100,000h life, CRI up to 95, dimmable); Fluorescent T8/T5 (60-80 lm/W, 10,000-20,000h, CRI 70-90); HID metal halide (80-120 lm/W, 5,000-15,000h, CRI 70-80); Halogen (12-15 lm/W, 1,000h, CRI 100). Application recommendations: LED for general/office, fluorescent for economical, HID for high-bay/industrial, halogen for accent only." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-006-03-what-you-need-to-know-fo" type="image" caption="Lamp Type Comparison — LED, Fluorescent, HID, Halogen" description="Comparison table/chart of lamp types: LED (100-150 lm/W, 50,000-100,000h life, CRI up to 95, dimmable); Fluorescent T8/T5 (60-80 lm/W, 10,000-20,000h, CRI 70-90); HID metal halide (80-120 lm/W, 5,000-15,000h, CRI 70-80); Halogen (12-15 lm/W, 1,000h, CRI 100). Application recommendations: LED for general/office, fluorescent for economical, HID for high-bay/industrial, halogen for accent only." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 <ExamTip>

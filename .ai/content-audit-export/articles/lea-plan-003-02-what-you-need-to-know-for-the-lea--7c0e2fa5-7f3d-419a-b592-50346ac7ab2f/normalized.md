@@ -54,14 +54,18 @@ Characteristics:
 - Examples: luxury residential subdivisions, high-end condominiums, exclusive golf course communities
 
 Open-market housing has no affordability requirement, no balanced housing obligation (except insofar as RA 7279 requires developers to produce an equivalent value of socialized housing), and is entirely driven by market demand and supply.
-<ArticleMedia id="media-lea-plan-003-02-what-you-need-to-know-fo" type="image" caption="Housing Delivery Methods — On-Site, Off-Site, Joint Venture, CMP, NHA Direct, Pag-IBIG" alt="Flowchart diagram showing six housing delivery methods for socialized and economic housing in the Philippines: (1) On-Site Balanced Housing (developer builds within same project), (2) Off-Site Balanced Housing (separate location), (3) Joint Venture with NHA, (4) Bond Contribution to NHA, (5) Community Mortgage Program via SHFC, and (6) Pag-IBIG Direct Purchase. Arrows indicate regulatory pathway and financing flow." suggestedAsset="Diagram or reference image" status="placeholder" />
-<ArticleMedia id="media-lea-plan-003-02-what-you-need-to-know-fo" type="image" caption="Philippine Housing Classification Comparison — Socialized, Economic, Low-Cost, Open-Market" alt="Four-panel comparison chart showing the four Philippine housing classifications: Socialized (BP 220 — 72 sqm lot, 22 sqm floor, <₱15K/mo income), Economic (BP 220 — 100 sqm lot, 42 sqm floor, ₱15-40K/mo), Low-Cost (industry standard — 100-200 sqm lot, 60-100 sqm floor, ₱40-60K/mo), and Open-Market (market-determined, >₱60K/mo). Each panel shows minimum lot area, floor area, price range, financing source, and primary developer type. Color-coded by affordability tier." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-003-02-what-you-need-to-know-fo", type="image", caption="Housing Delivery Methods — On-Site, Off-Site, Joint Venture, CMP, NHA Direct, Pag-IBIG", description="Flowchart diagram showing six housing delivery methods for socialized and economic housing in the Philippines: (1) On-Site Balanced Housing (developer builds within same project), (2) Off-Site Balanced Housing (separate location), (3) Joint Venture with NHA, (4) Bond Contribution to NHA, (5) Community Mortgage Program via SHFC, and (6) Pag-IBIG Direct Purchase. Arrows indicate regulatory pathway and financing flow.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+<ArticleMedia id="media-lea-plan-003-02-what-you-need-to-know-fo" type="image" caption="Philippine Housing Classification Comparison — Socialized, Economic, Low-Cost, Open-Market" description="Four-panel comparison chart showing the four Philippine housing classifications: Socialized (BP 220 — 72 sqm lot, 22 sqm floor, <₱15K/mo income), Economic (BP 220 — 100 sqm lot, 42 sqm floor, ₱15-40K/mo), Low-Cost (industry standard — 100-200 sqm lot, 60-100 sqm floor, ₱40-60K/mo), and Open-Market (market-determined, >₱60K/mo). Each panel shows minimum lot area, floor area, price range, financing source, and primary developer type. Color-coded by affordability tier." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
 ### Housing Classification Comparison Table
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Classification","Target Income Range","Min. Lot (BP 220)","Min. Floor (BP 220)","Price Range","Financing","Primary Developer"]} rows={[{"Classification":"Socialized","Target Income Range":"<₱15,000/month","Min. Lot (BP 220)":"72 sq.m. (new) / 28 sq.m. (infill)","Min. Floor (BP 220)":"22 sq.m.","Price Range":"₱600K–₱1.5M","Financing":"Pag-IBIG (socialized loan), NHA direct grants","Primary Developer":"NHA, private developers (per balanced housing)"},{"Classification":"Economic","Target Income Range":"₱15K–₱40K/month","Min. Lot (BP 220)":"100 sq.m.","Min. Floor (BP 220)":"42 sq.m.","Price Range":"₱1.5M–₱3M","Financing":"Pag-IBIG (standard loan), SSS, commercial banks","Primary Developer":"Private developers, some NHA projects"},{"Classification":"Low-Cost","Target Income Range":"₱40K–₱60K/month","Min. Lot (BP 220)":"None (industry: 100–200 sq.m.)","Min. Floor (BP 220)":"None (industry: 60–100 sq.m.)","Price Range":"₱2M–₱4M","Financing":"Pag-IBIG, SSS, commercial banks","Primary Developer":"Private developers, builders"},{"Classification":"Open-Market","Target Income Range":"₱60K+/month (no ceiling)","Min. Lot (BP 220)":"None (market-determined)","Min. Floor (BP 220)":"None (market-determined)","Price Range":"₱4M–₱50M+","Financing":"Commercial banks, developer financing","Primary Developer":"Large developers, luxury brands"}]} />
 
 ---
 
@@ -159,7 +163,11 @@ Another example:
 
 ### Common Distractors and Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[{\"mistake\":\"Low-cost housing is a statutory classification in BP 220.\",\"fact\":\"BP 220 defines only socialized (72/28 lot, 22 floor) and economic (100 lot, 42 floor) housing. Low-cost is an industry-recognized segment between economic and open-market, but not a legal classification.\"}", mistake=true, Economic=true, housing=true, has=true, a=true, minimum=true, lot=true, area=true, of=true, sq=true, m=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

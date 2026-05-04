@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications
 
-Generated: 2026-05-04T02:16:41.413Z
+Generated: 2026-05-04T09:13:21.642Z
 Article ID: 8b263a7c-5e3e-4157-a18b-146f5b12f521
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:3c836bc817828e7583e1e998ddfbf4f2fc91539b7af852582a8bda5a4b3ef608`
-- Normalized: `sha256:76fbe27da4d530804701e288d4b19447dd7d1b36ee0c7e101b1d3f92a13b0f8b`
-- Candidate: `sha256:3c836bc817828e7583e1e998ddfbf4f2fc91539b7af852582a8bda5a4b3ef608`
+- Original: `sha256:fecaca3045a05063bc16291a934114abb314b939739c7a58a0977158cd702cc1`
+- Normalized: `sha256:8fd1b92322a9ddb0e89ca06527fb3ec3c61ca7037d3b552b266c378743747e75`
+- Candidate: `sha256:fecaca3045a05063bc16291a934114abb314b939739c7a58a0977158cd702cc1`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

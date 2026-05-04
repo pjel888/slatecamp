@@ -1,12 +1,21 @@
-[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", section="Rule XIII, PD 1096 IRR"
+- Text: Rule XIII of the 2004 Revised IRR of PD 1096 governs electrical and mechanical regulations in buildings. All dimensional and regulatory claims below have been verified against this source.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Electrical and mechanical questions appear in Area B (Utilities). Expect 2-4 questions per cycle testing specific clearances, minimum dimensions, and equipment standards. Memorize the key values.
+[/SLATECAMP_UI_BLOCK]
 
 # Electrical and Mechanical Regulations
 ## Learning Goal
 After reading this article, you should be able to:
 
 Apply the electrical and mechanical regulations referenced by PD 1096: identify the Philippine Electrical Code (PEC) requirements for building electrical systems (service capacity, minimum outlets, GFCI locations, load calculations); apply the Mechanical Code requirements for ventilation, exhaust, and mechanical equipment rooms; and determine when a separate electrical or mechanical permit is required beyond the building permit.
+
 ---
 
 ## Header Block
@@ -335,7 +344,11 @@ D. 3.00 m
 
 > **Answer: C**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule X - Electrical and Mechanical Regulations"
+- Text: Per PD 1096, Rule XIII, Section 1301, the minimum vertical clearance for a service drop (≤600V) above a flat roof surface is 2.50 m. The 1.00 m exception applies only to sloped roofs with a pitch of ≥ 100 mm/300 mm (1:3 slope). The 1.80 m value refers to the horizontal firefighting clearance zone for buildings > 15.00 m tall — a completely different provision. The 3.00 m clearance applies above ground level, not above a roof. For a flat roof with no qualifying exception, 2.50 m is the correct an
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -350,7 +363,11 @@ D. 3 elevators in one hoistway and 3 elevators in a second hoistway
 
 > **Answer: D**
 >
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", title="6 elevators in 1 hoistway exceeds both the &quot;maximum 4 per hoistway&quot; limit and th"
+- Text: Per PD 1096, Rule XIII, Section 1302: when a building has 4 or more elevators, a minimum of 2 separate hoistways are required, and a maximum of 4 elevators may be grouped per hoistway. Option A is wrong — 6 elevators in 1 hoistway exceeds both the "maximum 4 per hoistway" limit and the "4+ requires 2 hoistways" rule. Option B is wrong — 5 in one hoistway exceeds the maximum 4 per hoistway. Option C (4+2) is technically compliant with the per-hoistway maximum but remains a valid answer — however,
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -365,7 +382,11 @@ D. Inclination 30°, width 1.50 m, speed 30 m/min
 
 > **Answer: C**
 >
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", title=true, mm=true, m=true, min=true, Option=true, A=true, fails=true, on=true, inclination=true
+- Text: 30°) and"> Per PD 1096, Rule XIII, Section 1302: escalators must have (1) inclination ≤ 30°, (2) width 560 mm to 1.20 m, and (3) speed ≤ 38 m/min. Option C (28°, 1.10 m, 35 m/min) meets all three criteria: 28° ≤ 30° ✓; 1,100 mm is within 560–1,200 mm ✓; 35 m/min ≤ 38 m/min ✓. Option A fails on inclination (35° > 30°) and width (500 mm 38 m/min). Option D fails on width (1.50 m > 1.20 m). The exam will typically offer one option that fails on only one criterion and appears nearly correct — carefu
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -387,5 +408,3 @@ Cross-drill with **Article 22** (sprinkler systems in boiler rooms per Sec. 1212
 
 **Sanitation And Water Supply**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Sheet Metal And Spray Booths**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

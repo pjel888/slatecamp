@@ -1,15 +1,15 @@
 # Content Diff Report: geological-hazards
 
-Generated: 2026-05-04T02:17:57.287Z
+Generated: 2026-05-04T09:14:08.140Z
 Article ID: 0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:8c1f3b19e12b1e4d5d076a54d7057afae74f6879a191b716f904857e7690ccd5`
-- Normalized: `sha256:f398ad3c74ee06486773c6ea35618fe11f51a06edfb046fafe0fa095441c9571`
-- Candidate: `sha256:8c1f3b19e12b1e4d5d076a54d7057afae74f6879a191b716f904857e7690ccd5`
+- Original: `sha256:43c91ecdb1ad655412211f2f08ce2ee275074eed92d1a59998a546b62cc6f714`
+- Normalized: `sha256:61159b8a076c0b88b497b5fe56042f08dd5cf298b8615b353bf932cabbe0acc0`
+- Candidate: `sha256:43c91ecdb1ad655412211f2f08ce2ee275074eed92d1a59998a546b62cc6f714`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
@@ -30,4 +30,5 @@ Safe to push locally: true
 
 ## Warnings
 
+- ui-blocks.json contains unknown custom blocks; push requires review or --force.
 - Remote stale check has not been run by diff; push command must verify Supabase before mutation.

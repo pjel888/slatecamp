@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The 19th century marks the transition from historical revivals to modern architecture through industrial innovation and design reform movements. The board exam tests your knowledge of key buildings, the shift from ornamental excess to functional design, and the architects who bridged tradition and modernity.
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -10,42 +14,90 @@ Identify the key 19th-century buildings, movements, and architects — Crystal P
 The 19th century was a pivotal century for architecture, driven by three major forces: industrial technology, design philosophy reform, and urban expansion. Early in the century, architects adopted historical styles—Gothic Revival, Neoclassical—as industrial manufacturing grew. By midcentury, new materials (cast iron, steel, glass) fundamentally changed what buildings could do. The **Crystal Palace** (1851, **Joseph Paxton**, London) exemplified this shift: it used prefabricated iron and glass on an unprecedented scale, proving that industrial materials could be beautiful and functional. This building challenged the assumption that architecture required masonry and ornament.
 
 
-<ArticleMedia id="media-hist-008-01-core-concept" layout="single" type="image" status="placeholder" alt="Interior of Hôtel Tassel (Brussels, 1892–1893, Victor Horta), showing the whiplash organic curves, exposed iron structure, and flowing natural motifs characteristic of Art Nouveau." caption="Hôtel Tassel — Victor Horta's Art Nouveau Interior" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-008-01-core-concept", layout="single", type="image", status="placeholder", alt="Interior of Hôtel Tassel (Brussels, 1892–1893, Victor Horta), showing the whiplash organic curves, exposed iron structure, and flowing natural motifs characteristic of Art Nouveau.", caption="Hôtel Tassel — Victor Horta's Art Nouveau Interior", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Crystal Palace 1851 = industrial materials + prefabrication + proof that beauty doesn't require masonry.** This single building made clear that function and material honesty could be aesthetic without ornament. It legitimized everything modernism would claim a century later.
+[/SLATECAMP_UI_BLOCK]
 
 Simultaneously, the **Arts and Crafts movement**, led by **William Morris** and architect **C.F.A. Voysey**, rejected industrial mass production in favor of handcrafted design. Though this seems contradictory, the movement unified modern architecture around one principle: honest use of materials and elimination of unnecessary ornament. The movement privileged quality over quantity, tradition over novelty.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Arts and Crafts opposes industrial mass production, but both it and the Crystal Palace share the same core principle: honest materials and elimination of ornament. The disagreement is about method (machine vs. craft), not about beauty or function. This shared principle becomes modernism's foundation.
+[/SLATECAMP_UI_BLOCK]
 
 The **Chicago School** (late 19th century), pioneered by **Louis Sullivan** and **Daniel Burnham**, synthesized these lessons into a new American idiom. Sullivan's axiom—"form follows function"—became the mantra of modern architecture. The **Home Insurance Building** (1884–1885, **William Le Baron Jenney**, Chicago) was the first skyscraper built with an iron-steel frame, demonstrating that tall buildings no longer needed massive masonry walls at ground level. This innovation made the modern city possible.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Sullivan is the theorist; Jenney is the structural engineer. Students often collapse these figures. Sullivan gave the philosophical voice ("form follows function"), but Jenney engineered the breakthrough that made the principle structurally possible. Both are essential to understanding the Chicago School, but they had different roles.
+[/SLATECAMP_UI_BLOCK]
 
 The 19th century closed with architecture poised between past and future: ornament still dominated high-style buildings (especially in Europe), but the functional logic and material honesty pioneered by Paxton, Morris, and Sullivan had already redirected where architecture would go.
 
 
-<ArticleMedia id="media-hist-008-01-core-concept" layout="single" type="image" status="placeholder" alt="View of the Chrysler Building (New York, 1928–1930, William Van Alen), showing the stainless steel sunburst crown, geometrically patterned windows, and stepped/ziggurat setbacks typical of Art Deco skyscraper design." caption="Chrysler Building — Art Deco Streamlined Crown" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0006 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-008-01-core-concept", layout="single", type="image", status="placeholder", alt="View of the Chrysler Building (New York, 1928–1930, William Van Alen), showing the stainless steel sunburst crown, geometrically patterned windows, and stepped/ziggurat setbacks typical of Art Deco skyscraper design.", caption="Chrysler Building — Art Deco Streamlined Crown", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Building/Movement\", \"Architect/Key Figure\", \"Year\", \"Location\", \"Key Feature\"]}", rows="{[[\"Crystal Palace\", \"Joseph Paxton\", \"1851\", \"London, England\", \"Prefabricated iron and glass; modular construction; Great Exhibition building\"], [\"Eiffel Tower\", \"Gustave Eiffel\", \"1889\", \"Paris, France\", \"Iron lattice structure; height and engineering spectacle; no ornament\"], [\"Home Insurance Building\", \"William Le Baron Jenney\", \"1885\", \"Chicago, USA\", \"First iron-steel frame skyscraper; load-bearing frame independent of walls\"], [\"Arts and Crafts Movement\", \"William Morris, C.F.A. Voysey\", \"1880s–1910s\", \"England, USA\", \"Handcrafted design; rejection of industrial mass production; honest materials\"], [\"Chicago School\", \"Louis Sullivan, Daniel Burnham\", \"1880s–1900s\", \"Chicago, USA\", \"Vertical emphasis; iron-steel frame; \"form follows function\"\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Building Innovation & Materials** You may see: "Which of the following buildings first demonstrated the structural independence of an iron-steel frame from exterior masonry walls?" Answer: Home Insurance Building. The exam tests whether you understand *why* each building mattered, not just when it was built.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Design Philosophy & Movement Principles** You may see: "The Arts and Crafts movement rejected industrial mass production in favor of handcrafted design. Which architect was a leading figure?" Answer: William Morris or C.F.A. Voysey. Expect questions linking philosophy to specific buildings or architects.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Function Over Ornament** You may see: "Louis Sullivan's principle 'form follows function' challenged which aspect of 19th-century architecture?" Answer: the dominance of historical ornament and stylistic revival over practical design. The exam tests whether you understand the intellectual shift, not just memorize dates.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Crystal Palace with Victorian Gothic Revival", correction="The Crystal Palace is often mistakenly grouped with ornamental 19th-century styles. In reality, it represents the *opposite*—a radical rejection of ornament in favor of pure structural logic and industrial materials.", context="Know that Paxton's building was revolutionary *because* it was austere."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Arts and Crafts as a rejection of modernity", correction="Students often misread the Arts and Crafts movement as purely nostalgic or backward-looking. It was actually forward-thinking: it insisted on honest materials, elimination of false ornament, and unity of design—principles that directly enabled modernism.", context="Morris and Voysey were radical, not reactionary."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Attributing the skyscraper solely to Sullivan. Sullivan is the philosophical voice of the Chicago School (\\\"form follows function\\\"), but **William Le Baron Jenney** engineered the structural breakthrough with the Home Insurance Building's iron-steel frame. Don't collapse these two figures into one.\", \"Overlooking the Eiffel Tower's radical simplicity. Students often view the Eiffel Tower as ornamental or decorative. Structurally, it is pure iron lattice—no cladding, no ornament, no facade. It proved that engineering and beauty could coexist without applied decoration. This was a profound statement against 19th-century excess.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -65,7 +117,11 @@ The 19th century closed with architecture poised between past and future: orname
 
 **Ornament**: Decorative elements applied to a building surface; a target of criticism by reformers who advocated honest, functional design.
 
-<ArticleMedia id="media-hist-008-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of 19th-century architectural movements (1800–1900) from Neoclassicism and Gothic Revival through Arts and Crafts, the Chicago School, and Art Nouveau, showing the evolution from revivalism toward modernist principles." caption="19th Century Architecture — Timeline of Movements" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+[SLATECAMP_UI_BLOCK:ui_0014 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-008-01-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Timeline of 19th-century architectural movements (1800–1900) from Neoclassicism and Gothic Revival through Arts and Crafts, the Chicago School, and Art Nouveau, showing the evolution from revivalism toward modernist principles.", caption="19th Century Architecture — Timeline of Movements", suggestedAsset="Timeline diagram", placementIntent="Timeline diagram for architectural period"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

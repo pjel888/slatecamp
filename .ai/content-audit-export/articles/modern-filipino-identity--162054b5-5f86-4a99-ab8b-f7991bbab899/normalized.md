@@ -81,11 +81,23 @@ You are designing a public library in a coastal Philippine municipality. Your cl
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory Aid: Three Waves of Filipino Identity — 'MNC' (Modernist, Neo-Vernacular, Contemporary). 1950s-1970s: Leandro Locsin's 'floating volume'. 1970s-2000s: Mañosa's indigenous materials. 2000s-present: Fusion of BERDE/LEED with local craft.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: LEA Pattern: Questions test which architect belongs to which wave. Leandro Locsin = First Wave (Modernist/Brutalist, CCP, PICC). Francisco Mañosa = Second Wave (Neo-Vernacular, Coconut Palace). Ed Calma/Lor Calma = Third Wave (Contemporary Tropical). Know the key buildings for each.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 3 - Practice of Architecture"
+- Text: PD 1096 Revised IRR mandates that locally produced materials (marble, stone, adobe, clay tiles, wood, coco wood, kapis shells) should be MAXIMIZED in public buildings unless banned by government for conservation purposes. This is a legal mandate, not just design preference.
+[/SLATECAMP_UI_BLOCK]
 
 ## LEA Exam Traps and Common Mistakes
 
@@ -122,7 +134,11 @@ B) The use of locally produced materials such as marble, stone, adobe, clay tile
 C) Only imported materials meeting international standards may be used in public buildings
 D) Indigenous materials may only be used for decorative purposes, not structural elements
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 3 - Definition of Architecture"
+- Text: Answer: B) Per PD 1096 RIRR (page 162), the use of locally produced indigenous materials should be maximized in public buildings unless their production or usage has been banned by the government to conserve natural resources.
+[/SLATECAMP_UI_BLOCK]
 
 **Question 2:**
 Which of the following best describes the concept of "Tropical Regionalism" in Philippine architecture?
@@ -142,7 +158,11 @@ B) 1-hour fire-resistive rating
 C) 3-hour fire-resistive rating
 D) 4-hour fire-resistive rating
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 3 - Scope of Practice"
+- Text: Answer: D) 4-hour fire-resistive rating. Per PD 1096 RIRR (page 39), Type IV and Type V construction require 4-hour fire-resistive exterior walls. Types II and III require only 1-hour ratings. This is a frequently tested distinction.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

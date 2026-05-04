@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:05:57.940Z",
+  "attempted_at": "2026-05-04T08:48:58.446Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "6882bbf1-7941-4289-a6b1-89a19e4c3923",
   "slug": "overview-architectural-design",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:6a6e5272f60f0c77fd32a110f24b7b3bec2405553a9a9d9d30c1541296a2bd25",
-  "original_hash": "sha256:5c457b79983169871f158a93b5b107368ef4777bb1267ab5d057fda722789d00",
-  "candidate_hash": "sha256:6a6e5272f60f0c77fd32a110f24b7b3bec2405553a9a9d9d30c1541296a2bd25",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:1f5e06b5419d5a11561528bdbd62b04efac1a7caa468af958e7da59a94539170",
+  "original_hash": "sha256:6a6e5272f60f0c77fd32a110f24b7b3bec2405553a9a9d9d30c1541296a2bd25",
+  "candidate_hash": "sha256:620cff8a914260c677809b9239c0790bd0930a0bbbd1e787404490b023bb6fb8",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T01:59:16.941013+00:00"
+  "remote_updated_at_before": "2026-05-04T02:32:56.407959+00:00"
 }

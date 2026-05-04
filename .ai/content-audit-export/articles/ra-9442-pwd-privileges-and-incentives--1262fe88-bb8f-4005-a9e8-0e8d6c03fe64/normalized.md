@@ -4,12 +4,20 @@ _Aligned with RA 7277, RA 9442, RA 10754, and your BP 344 / PD 1096 files.[file:
 
 ## Learning Goal
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9442", section="Section 4 - Incentives"
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9442", section="Section 3 - PWD Privileges"
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
@@ -80,17 +88,11 @@ Applies to (for PWD’s exclusive use):
 - Medicines and medical supplies.[web:30]
 - Medical & dental services, diagnostics, professional fees.[web:29]
 
-<Note>
-\
-- Domestic air/sea/land transport fares.[web:29]
-- Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32]
-- Funeral and burial services.[web:29]
-- Educational assistance (tuition, school fees; details from RA 7277).[web:21]
-
-**Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29]
-
----
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: \ - Domestic air/sea/land transport fares.[web:29] - Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32] - Funeral and burial services.[web:29] - Educational assistance (tuition, school fees; details from RA 7277).[web:21] **Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29] ---
+[/SLATECAMP_UI_BLOCK]
 ## Employment & Tax Incentives (Updated View)
 
 **1. Wage Incentive (Employer hires PWDs)**

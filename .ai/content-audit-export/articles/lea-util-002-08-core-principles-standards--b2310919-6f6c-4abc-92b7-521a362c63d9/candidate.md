@@ -33,7 +33,7 @@ Population for elevator traffic analysis = total occupant load of floors served 
 
 ### Round Trip Time (RTT)
 
-<ArticleMedia id="media-lea-util-002-08-core-principles-standard" type="image" caption="Elevator Traffic Analysis — Round Trip Time, Interval, Handling Capacity Diagram" alt="Visual workflow of elevator traffic analysis: Population determination from floor area → Round Trip Time (RTT) calculation with formula components (height, speed, stops, door times) → Interval (INT=RTT/Ne) → Handling Capacity (HC=300×CC×trips/5min÷Population). Acceptable ranges: INT 25-40s (office), HC ≥12%. Example calculation for 10-story Philippine office annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-08-core-principles-standard" type="image" caption="Elevator Traffic Analysis — Round Trip Time, Interval, Handling Capacity Diagram" description="Visual workflow of elevator traffic analysis: Population determination from floor area → Round Trip Time (RTT) calculation with formula components (height, speed, stops, door times) → Interval (INT=RTT/Ne) → Handling Capacity (HC=300×CC×trips/5min÷Population). Acceptable ranges: INT 25-40s (office), HC ≥12%. Example calculation for 10-story Philippine office annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Round Trip Time represents the time for an elevator to depart the main floor, make one stop at another floor, and return to the main floor.

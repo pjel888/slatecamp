@@ -85,7 +85,7 @@ Classification decisions should be clearly documented in proposals and contracts
 
 
 
-<ArticleMedia type="image" caption="Project Group Classification — Decision Flowchart" alt="Flowchart showing the decision process for classifying a project: assess building type and complexity → identify Group 1-3 (complexity-based) vs Group 4-5 (building-type-based) vs Group 6-7 (repetitive) vs Group 8-10 (specialized). Decision diamonds for renovation multiplier (Group 9, 150%) and project scale (sliding scale for PCC >₱50M). Annotated with key regulatory references." />
+<ArticleMedia id="media-lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework-image" type="image" caption="Project Group Classification — Decision Flowchart" description="Flowchart showing the decision process for classifying a project: assess building type and complexity → identify Group 1-3 (complexity-based) vs Group 4-5 (building-type-based) vs Group 6-7 (repetitive) vs Group 8-10 (specialized). Decision diamonds for renovation multiplier (Group 9, 150%) and project scale (sliding scale for PCC >₱50M). Annotated with key regulatory references." />
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

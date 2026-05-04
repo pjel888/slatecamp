@@ -1,15 +1,15 @@
 # Content Diff Report: lea-util-007-05-renewable-energy-integration-systems
 
-Generated: 2026-05-04T02:17:10.089Z
+Generated: 2026-05-04T09:13:38.634Z
 Article ID: 5069fdfb-e96b-435e-9e04-d6526f8b3989
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:81ebf08a1b73c8753ffe29cb7dd1e1e337e1e3fdf933d8a627b8ac5fed37dfd4`
-- Normalized: `sha256:1845a7742dc8e481fc3b9210f5678bbd0b249e8c375af981430a3d03814b0b54`
-- Candidate: `sha256:81ebf08a1b73c8753ffe29cb7dd1e1e337e1e3fdf933d8a627b8ac5fed37dfd4`
+- Original: `sha256:c8f367c3290baa26b8e002fc64cd44437c1fe6804836e4b0f9eaf187a6acc437`
+- Normalized: `sha256:285555efa8b3592b900117d62ed6080b9f7577d9c4ac2be6f64d1d5137dd7d3c`
+- Candidate: `sha256:c8f367c3290baa26b8e002fc64cd44437c1fe6804836e4b0f9eaf187a6acc437`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 1
-- UI blocks preserved: 1
+- UI blocks expected: 3
+- UI blocks preserved: 3
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

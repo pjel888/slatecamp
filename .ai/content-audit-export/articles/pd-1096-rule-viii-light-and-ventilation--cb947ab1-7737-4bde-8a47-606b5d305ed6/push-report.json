@@ -1,20 +1,21 @@
 {
-  "attempted_at": "2026-05-04T02:17:56.630Z",
+  "attempted_at": "2026-05-04T09:14:07.793Z",
   "dry_run": false,
   "apply": true,
-  "pushed": true,
-  "blockers": [],
+  "pushed": false,
+  "blockers": [
+    "candidate.md matches original.md; refusing no-op apply."
+  ],
   "warnings": [],
-  "updated_rows_count": 1,
+  "updated_rows_count": 0,
   "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
   "slug": "pd-1096-rule-viii-light-and-ventilation",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:f740cd0bfc50d053982b85297db8a5c0964f11d688346296951857abe90a9588",
-  "original_hash": "sha256:f740cd0bfc50d053982b85297db8a5c0964f11d688346296951857abe90a9588",
-  "candidate_hash": "sha256:74a83b9ca7a7b411a638a1f3c26c8daa7af189533027c99e0b239856597d1e3b",
+  "remote_hash_before": "sha256:6c830441ed1a1aca7e822ad5ab57df1e2f4a4a1d3ed5783a0dbefb1e913d604f",
+  "original_hash": "sha256:6c830441ed1a1aca7e822ad5ab57df1e2f4a4a1d3ed5783a0dbefb1e913d604f",
+  "candidate_hash": "sha256:6c830441ed1a1aca7e822ad5ab57df1e2f4a4a1d3ed5783a0dbefb1e913d604f",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:29.66311+00:00",
-  "updated_at_after": "2026-05-04T02:17:57.020045+00:00"
+  "remote_updated_at_before": "2026-05-04T02:32:47.178833+00:00"
 }

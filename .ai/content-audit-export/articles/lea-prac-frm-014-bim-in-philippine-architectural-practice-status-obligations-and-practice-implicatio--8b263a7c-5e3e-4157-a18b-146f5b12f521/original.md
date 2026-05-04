@@ -76,7 +76,7 @@ BIM training covers not just software but also modeling standards, clash detecti
 
 
 
-<ArticleMedia type="image" caption="BIM Implementation in Philippine Architecture — Practice Workflow" description="Diagram showing BIM adoption levels in Philippine practice: Level 0 (2D CAD only), Level 1 (3D visualization, 2D documentation), Level 2 (collaborative BIM with federated models). Process flow showing BIM-enabled design workflow: Model development → Clash detection → Quantity takeoffs → Construction coordination. Status bars showing current adoption rates and regulatory obligations." />
+<ArticleMedia id="media-lea-prac-frm-014-bim-in-philip-0" type="image" caption="BIM Implementation in Philippine Architecture — Practice Workflow" description="Diagram showing BIM adoption levels in Philippine practice: Level 0 (2D CAD only), Level 1 (3D visualization, 2D documentation), Level 2 (collaborative BIM with federated models). Process flow showing BIM-enabled design workflow: Model development → Clash detection → Quantity takeoffs → Construction coordination. Status bars showing current adoption rates and regulatory obligations." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

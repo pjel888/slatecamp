@@ -95,7 +95,7 @@ Exams ask what building programs reveal about political systems. Example: "The *
 
 **Cosmological**: Relating to beliefs about the structure and order of the universe; encoded in architectural orientation and symbolism.
 
-<ArticleMedia id="media-hist-012-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Maya architecture (corbelled vaults, astronomy-aligned pyramids, hieroglyphic stairways at Tikal and Palenque) and Aztec architecture (double pyramids, ritual platforms, Tenochtitlán planning), highlighting contrasting structural systems and urban organization.\" caption=\"Maya vs. Aztec — Architectural Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-012-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Maya architecture (corbelled vaults, astronomy-aligned pyramids, hieroglyphic stairways at Tikal and Palenque) and Aztec architecture (double pyramids, ritual platforms, Tenochtitlán planning), highlighting contrasting structural systems and urban organization." caption="Maya vs. Aztec — Architectural Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

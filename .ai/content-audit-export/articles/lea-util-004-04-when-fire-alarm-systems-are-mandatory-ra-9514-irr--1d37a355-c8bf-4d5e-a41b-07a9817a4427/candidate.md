@@ -7,24 +7,10 @@ Identify when fire alarm systems are mandatory per RA 9514 (Fire Code of the Phi
 
 Fire alarm systems are **required** in the following occupancies and floor areas:
 
-<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" type="image" caption="Fire Alarm System Types — Conventional, Addressable, Analog-Addressable" alt="Three-panel comparison diagram: (1) Conventional zone-based system — devices in series per zone, FACP shows zone only; (2) Addressable system — each device has unique address on SLC loop, FACPin displays exact device location; (3) Analog-addressable — devices transmit analog values (smoke density, temperature) enabling trend analysis. Architecture differences, wiring topology, and typical Philippine applications shown per NFPA 72." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" type="image" caption="Fire Alarm System Types — Conventional, Addressable, Analog-Addressable" description="Three-panel comparison diagram: (1) Conventional zone-based system — devices in series per zone, FACP shows zone only; (2) Addressable system — each device has unique address on SLC loop, FACPin displays exact device location; (3) Analog-addressable — devices transmit analog values (smoke density, temperature) enabling trend analysis. Architecture differences, wiring topology, and typical Philippine applications shown per NFPA 72." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
-<LawCallout code="ra9514" section="Section 10 - Fire Alarm Systems">
-
-**Occupancy Group A (Assembly):** Buildings or structures with occupant load exceeding 500 persons, OR with a floor area exceeding 1,000 m² in any storey.
-
-**Occupancy Group B (Educational):** Buildings used for educational purposes with occupant load exceeding 500 persons, OR floor area exceeding 1,000 m² in any storey.
-
-**Occupancy Group E (Institutional):** All buildings and structures regardless of floor area.
-
-**Occupancy Group R (Residential):** All buildings four storeys and higher (mixed-use, dormitories, apartments).
-
-**Occupancy Group F (Industrial):** Manufacturing plants and facilities classified as high-hazard (flammable liquids, gases, explosives) regardless of floor area.
-
-**All Buildings:** Height exceeding 21 metres (approximately 7 storeys) in any occupancy.
-
-</LawCallout>
+<WikiCalloutBox />
 
 Key regulatory references:
 - **RA 9514 (Fire Code of the Philippines):** Fire alarm system requirements per Implementing Rules and Regulations
@@ -139,7 +125,7 @@ Key regulatory references:
 
 #### Placement and Spacing (NFPA 72)
 
-<WikiExamTable headers={["Location Type", "Center-to-Center Distance", "Distance from Wall/Beam", "Notes"]} rows={[["Ceiling (typical)", "9.1 m (30 ft)", "0.6–0.9 m (2–3 ft) from wall", "Most common; maximizes coverage"], ["Dead end corridor", "9.1 m (30 ft)", "Within 0.6 m (2 ft) from end", "Place near end, not in corridor center"], ["Under beams/ducts", "Reduce to 64% of base distance", "Consider obstruction zone", "Beam spacing critical in open plans"], ["Kitchen (non-cooking area)", "9.1 m (30 ft)", "Avoid cooking exhaust plumes", "Use heat detectors in cooking zones instead"]]} />
+<WikiExamTable />
 
 **Offset Requirements:** Smoke detectors must be mounted on ceilings. Where ceiling height exceeds 12.2 m (40 ft) and wall obstructions are minimal, consider wall-mounted detectors 0.3–0.6 m (1–2 ft) below ceiling per NFPA 72 Section 17.7.3.
 
@@ -217,22 +203,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Design Requirements (NFPA 72 + RA 9514 IRR)
 
-<WikiCalloutBox title="FACP Mandatory Features for Philippine Buildings" variant="info">
-**Power Supply:** Dual power input (utility AC 220V/60Hz + stored energy backup). Stored energy must support 24 hours of standby + 5 minutes full alarm operation per NFPA 72 Section 10.5.6. Typical: 24V DC batteries with charger, sized per device current draw.
-
-**Backup Battery Calculation:**
-- Standby current (all devices in normal mode): ~0.3–0.5 A typical per zone
-- Alarm current (all notification devices active): ~5–15 A typical (varies by occupancy size)
-- Example for 10-storey office: standby ~3 A, alarm ~12 A; battery capacity ≈ (3 A × 24 h) + (12 A × 0.083 h) ≈ 73 Ah minimum
-
-**Manual Pull Stations:** System must include ≥1 manual pull station per floor, accessible within maximum 60 m (200 ft) travel distance per NFPA 72 Section 17.14.2.2. Mounting height: 1.07–1.22 m (42–48 inches) from finished floor per NFPA 72 Section 17.15 (referenced in RA 9514 IRR).
-
-**Alarm Output:** FACP must automatically sound alarm signal and initiate voice evacuation (if present) within 10 seconds of activation per NFPA 72 Section 10.10.1.
-
-**Monitoring Station Connection:** Buildings ≥4 storeys or >1,000 m² must connect to licensed central station (UL-certified, 24/7 staffed) per RA 9514 Section 1006.3.5. Connection via hardwired trunk line (preferred) or cellular backup.
-
-**Record Display:** FACP must display event log accessible to building management (non-resettable log per NFPA 72 Section 10.16.1).
-</WikiCalloutBox>
+<WikiCalloutBox />
 
 ---
 
@@ -240,12 +211,12 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Audible Signals (Horns)
 
-<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" type="image" caption="Fire Alarm Notification — Horns, Strobes, Voice Evacuation Placement" alt="Floor plan diagram showing notification appliance placement: horn spacing for 85 dB SPL coverage, strobe coverage (15 cd minimum, max 12m spacing), voice evacuation speakers in corridors and stairwells. Integration with elevator recall (signal to elevator controller on alarm), HVAC shutdown (return dampers close), and door holder release (magnetic holders release on alarm) shown per RA 9514 IRR." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" type="image" caption="Fire Alarm Notification — Horns, Strobes, Voice Evacuation Placement" description="Floor plan diagram showing notification appliance placement: horn spacing for 85 dB SPL coverage, strobe coverage (15 cd minimum, max 12m spacing), voice evacuation speakers in corridors and stairwells. Integration with elevator recall (signal to elevator controller on alarm), HVAC shutdown (return dampers close), and door holder release (magnetic holders release on alarm) shown per RA 9514 IRR." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 **Standard:** NFPA 72 Table 18.4.3 specifies minimum sound pressure levels (SPL) based on occupancy type.
 
-<WikiExamTable headers={["Occupancy Type", "Minimum SPL (dB)", "Hearing Distance (m)", "Philippine Application"]} rows={[["Office, retail", "85 dB (ambient +15 dB)", "~15 m in open space", "Standard commercial floors; multiple horns on large floors"], ["Industrial, factory", "90 dB", "~25 m", "Manufacturing facilities; outdoor horns for yard areas"], ["Sleeping areas (residential)", "75 dB (ambient +15 dB)", "~8 m", "Bedrooms in apartment buildings; may require notification in unit"], ["Mechanical/utility rooms", "80–90 dB", "Localized", "Boiler rooms, electrical rooms; protects on-site personnel"]]} />
+<WikiExamTable />
 
 **Spacing:** Horn placement ensures 85 dB SPL (or code-required level) is achieved in all occupiable areas. In large open spaces (>1,000 m² per floor), space horns 30–40 m apart.
 
@@ -339,23 +310,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Placement Requirements (NFPA 72)
 
-<WikiCalloutBox title="Manual Pull Station Design & Placement" variant="info">
-**Location:**
-- Maximum 60 m (200 ft) travel distance from any occupiable space per NFPA 72 Section 17.14.2.2
-- On each floor, typically located at primary exit (stairwell, main corridor)
-- Near exit doors to serve as occupant's "last action before evacuation"
-
-**Mounting Height:** 1.07–1.22 m (42–48 inches) from finished floor per NFPA 72 Section 17.15 (verify adoption in current RA 9514 IRR; consult Fire Safety Engineer for Philippine compliance confirmation)
-
-**Spacing on Large Floors:**
-- Office floor >1,000 m²: minimum 2 stations (opposite ends of floor)
-- Industrial facility (linear layout): station every 60 m maximum travel
-- Multi-tenant floor: station in common corridor, plus tenant-accessible stations in larger suites
-
-**Identification:** Red background, reflective "FIRE ALARM" label with white lettering per RA 9514 IRR; strobe light nearby (if strobe-equipped building) flashes on activation.
-
-**Reset:** Requires key access per NFPA 72 (prevents tampering); BMS or fire service holds key.
-</WikiCalloutBox>
+<WikiCalloutBox />
 
 ---
 
@@ -363,9 +318,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Ceiling Mounting Best Practices
 
-<Tip>
-In typical buildings with 2.7–3.0 m ceilings, ceiling-mounted detectors provide best coverage. When ceiling height exceeds 12.2 m (40 ft) and the space is open with minimal obstructions, wall-mounted detectors 0.3–0.6 m (1–2 ft) below the ceiling may be permitted; confirm with NFPA 72 Section 17.7.3 and the Fire Safety Engineer's design.
-</Tip>
+<Tip />
 
 **Dead Spaces:** Areas behind suspended ceilings, above raised floors, or in attic spaces must have detectors if occupants access them. Confine detectors to underside of structural ceiling (not plenum side, which is unmanned) per NFPA 72 Section 17.7.1.1.
 
@@ -381,11 +334,7 @@ In typical buildings with 2.7–3.0 m ceilings, ceiling-mounted detectors provid
 
 ### Kitchen Exclusions
 
-<Warn>
-Do NOT place smoke detectors in cooking zones (directly above stoves, grills, hood intakes). Use heat detectors instead (fixed-temp 68°C or rate-of-rise) per NFPA 72 Section 17.6.2.8.
-
-Smoke detectors in kitchens create nuisance alarms from normal cooking operations, leading to staff habituation ("alarm fatigue") and disabled detectors in the long term.
-</Warn>
+<Warn />
 
 **Alternative for Open Kitchens:** Place photoelectric smoke detectors 1.5–3.0 m away from cooking appliances at 9.1 m spacing; ensure air flow (HVAC makeup air) does not carry cooking smoke directly to detectors.
 
@@ -407,7 +356,7 @@ Smoke detectors in kitchens create nuisance alarms from normal cooking operation
 
 ### Periodic Testing (RA 9514 Section 1006.3.9)
 
-<WikiExamTable headers={["Component", "Test Frequency", "Method", "Documentation"]} rows={[["Manual pull stations", "Quarterly (every 3 months)", "Mechanical activation; verify FACP response", "Logbook at FACP"], ["Smoke/heat detectors", "Annually + post-maintenance", "Aerosol (smoke) or thermal test (heat); verify alarm latency &lt;10 sec", "Test certificate from service provider"], ["Notification appliances (horns/strobes)", "Annually", "Audible/visual confirmation; SPL meter check (sampling basis)", "Test report signed by technician"], ["FACP battery backup", "Monthly visual + annual load test", "Verify voltage, charger operation; drain test for 30 min at full alarm load", "Battery test log"], ["Central station connection", "Quarterly test signal", "FACP transmits supervised test signal; station logs receipt", "Confirmation from monitoring station"], ["Voice evacuation system", "Annually", "Activate microphone; play pre-recorded message; verify coverage", "Test certificate"]]} />
+<WikiExamTable />
 
 **Maintenance Records:** RA 9514 requires all testing and maintenance records retained for ≥3 years, accessible to fire authority inspectors.
 
@@ -483,36 +432,7 @@ ing Parameters:**
 
 ## Summary Checklist for Builders and Engineers
 
-<Callout>
-**Before System Design:**
-- ☐ Confirm building height, floor area, occupancy per RA 9514 Table 1006.3.2
-- ☐ Engage licensed Fire Safety Engineer early (design development phase)
-- ☐ Determine if addressable or conventional system per fire code and floor geometry
-
-**During Design:**
-- ☐ Specify photoelectric smoke detectors (not ionization) per RA 9514 preference
-- ☐ Space detectors at 9.1 m maximum center-to-center (NFPA 72)
-- ☐ Include heat detector in kitchen break room; exclude smoke detector from stove area
-- ☐ Specify voice evacuation if building height >21 m or occupant load >500 per RA 9514 IRR (verify specific section number against current IRR document)
-- ☐ Design HVAC integration: return dampers close, pressurized stairwell supply continues
-- ☐ Specify door holder release on all fire-rated exit doors
-- ☐ Size backup battery for 24-hour standby + 5-minute alarm operation
-- ☐ Locate 2+ manual pull stations per floor, max 60 m travel distance
-- ☐ Confirm monitoring station contracted (UL-listed, 24/7 staffed)
-
-**Before Occupancy:**
-- ☐ Conduct full commissioning test by licensed Fire Protection Engineer
-- ☐ Verify all detectors respond within 10 seconds of activation
-- ☐ Obtain Fire Safety Inspection Certification (FSIC) from Bureau of Fire Protection (BFP) Chief or authorized representative; FSIC is prerequisite for occupancy permit per RA 9514
-- ☐ Train building management on FACP operation, maintenance schedule, reset procedures
-- ☐ Establish quarterly and annual testing schedule per RA 9514 Section 1006.3.9
-
-**Post-Occupancy:**
-- ☐ Perform quarterly manual pull station tests
-- ☐ Document all tests in permanent logbook at FACP
-- ☐ Conduct annual full system test (detectors, notification devices, monitoring)
-- ☐ Retain records for ≥3 years (RA 9514 requirement)
-</Callout>
+<Callout />
 
 ---
 

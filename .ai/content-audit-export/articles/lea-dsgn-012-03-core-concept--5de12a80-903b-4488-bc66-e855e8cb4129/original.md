@@ -56,7 +56,7 @@ A site with 2m average cut and 3m average fill requires importing soil (or expor
 - Vehicular ramps to parking: 1:10 gradient = 10% maximum (PD 1096)
 - Short vehicular ramps (&lt;1.5m rise): 1:8 gradient = 12.5% (maximum)
 - Driveway from street: 1:10 gradient = 10% (comfortable maximum)
-<ArticleMedia id="media-lea-dsgn-012-03-core-concept" a type="image" caption="Contour Map Reading — Slope Calculation and Cut-Fill Grading" description="Contour map diagram showing slope calculation methods (% gradient = rise/run × 100, degrees, ratio), cut and fill volume determination, building pad grading design, positive drainage (2% minimum for paved surfaces), and erosion control swales." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-012-03-core-concept" type="image" caption="Contour Map Reading — Slope Calculation and Cut-Fill Grading" description="Contour map diagram showing slope calculation methods (% gradient = rise/run × 100, degrees, ratio), cut and fill volume determination, building pad grading design, positive drainage (2% minimum for paved surfaces), and erosion control swales." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -106,7 +106,7 @@ Multiple contour maps are presented; identify which represents the steepest terr
 <Tip>**Slope % Memory Aid:** Slope % = Rise ÷ Run × 100. For quick estimates: 1:10 slope ≈ 10%, 1:5 ≈ 20%, 1:3 ≈ 33%. Pedestrian ramp is 1:20 (≈5%, BP 344 2024 IRR), vehicle ramp is 1:6 (≈17%). Contours close together = steep; far apart = gentle.</Tip>
 
 **Exam Tip — ERR-DSGN-014:** Minimum slope for paved surfaces = 2% (20mm/m). Minimum for unpaved/graded areas = 1.5%. Maximum slope for parking areas = 5%. Slope formula: % = rise/run × 100.
-<ArticleMedia id="media-lea-dsgn-012-03-core-concept" a type="image" caption="Grading and Drainage — Contour Modification and Runoff Management" description="Site section and plan showing: original vs. finished grade contours, cut and fill areas (annotated with volume quantities), 2% minimum paved surface slope, swale and detention basin locations, stormwater flow paths, and building pad elevation above flood level. Slope calculation formula (rise÷run×100) shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-012-03-core-concept" type="image" caption="Grading and Drainage — Contour Modification and Runoff Management" description="Site section and plan showing: original vs. finished grade contours, cut and fill areas (annotated with volume quantities), 2% minimum paved surface slope, swale and detention basin locations, stormwater flow paths, and building pad elevation above flood level. Slope calculation formula (rise÷run×100) shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

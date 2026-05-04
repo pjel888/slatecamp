@@ -7,7 +7,7 @@ Apply recommended illumination levels (lux) by space type per the Philippine Lig
 
 Illumination is measured in _lux_ (lumens per square meter). Each space type has distinct requirements based on visual task complexity and occupancy safety needs.
 
-<ArticleMedia id="media-lea-util-006-05-recommended-illumination" type="image" caption="Recommended Illumination Levels — Office, Classroom, Hospital, Retail, Parking" alt="Reference chart showing lux levels by space type per IES standards: Office general (300-500 lux), Office task (500-750 lux), Classroom (300 lux), Laboratory (500 lux), Hospital ward (100 lux), Operating room (10,000-100,000 lux), Corridor (100 lux), Stairway (150 lux), Retail general (300-500 lux), Covered parking (50-75 lux), Emergency (10 lux). LPD limits (W/m²) per ASHRAE 90.1 and Philippine Energy Efficiency Standards overlaid." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-006-05-recommended-illumination" type="image" caption="Recommended Illumination Levels — Office, Classroom, Hospital, Retail, Parking" description="Reference chart showing lux levels by space type per IES standards: Office general (300-500 lux), Office task (500-750 lux), Classroom (300 lux), Laboratory (500 lux), Hospital ward (100 lux), Operating room (10,000-100,000 lux), Corridor (100 lux), Stairway (150 lux), Retail general (300-500 lux), Covered parking (50-75 lux), Emergency (10 lux). LPD limits (W/m²) per ASHRAE 90.1 and Philippine Energy Efficiency Standards overlaid." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 ### Office Spaces

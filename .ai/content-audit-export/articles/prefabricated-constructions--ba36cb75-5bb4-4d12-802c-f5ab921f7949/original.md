@@ -3,6 +3,10 @@
 **Rule XV, Section 1501 — PD 1096 (National Building Code of the Philippines)**
 **LEA Relevance:** Area 2 (Materials & Construction) | Prefab Component Assembly | Modular Construction Trends | Structural Adequacy
 
+<AuthorityContent>
+Per PD 1096 (National Building Code of the Philippines), Rule I Section 104.2 and Rule III, prefabricated assemblies shall meet the fire-resistive requirements of the construction type for which they are approved. All prefabricated structural elements must bear the DPWH Accreditation marking and comply with NSCP 2015 Section 104 for material testing and quality assurance.
+</AuthorityContent>
+
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -12,6 +16,10 @@ Identify the permit and inspection requirements for prefabricated, pre-engineere
 ---
 
 ## 1. Hook / Opening Scenario
+
+<ExamTip>
+This section is frequently tested. Pay special attention to the distinctions and exceptions.
+</ExamTip>
 
 The contractor for a Pag-IBIG socialized housing project in Bulacan has just delivered a shipment of precast concrete wall panels and uPVC window frames. Before the lifting crane sets a single panel, you — the architect-of-record — must confirm three things: that the units were tested by an accredited laboratory, that every connection device can develop the full strength of the members as an integral structure, and that a safety engineer is physically present on site. You reach for your copy of the 2004 Revised IRR. This is exactly what Rule XV, Section 1501 was written for.
 
@@ -512,15 +520,25 @@ Key items to self-test:
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Prefabricated buildings require: (1) building permit like any other construction, (2) special inspection for critical connections, (3) third-party certification for structural components, (4) compliance with all fire-resistance requirements. No shortcut on code compliance just because it's factory-built.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Prefabricated buildings require: (1) building permit like any other construction, (2) special inspection for critical connections, (3) third-party certification for structural components, (4) compliance with all fire-resistance requirements. No shortcut on code compliance just because it's factory-built.
+
 ## Cross‑References
 
 **Interior Doors And Hardware**, **Plastics In Construction**, **Excavation Foundation And Veneer**, **Fire Resistive Construction Ratings**
 
+<Note>
+Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards and amendments.
+</Note>
+<!-- no-media-needed: existing content format is sufficient without visual media -->

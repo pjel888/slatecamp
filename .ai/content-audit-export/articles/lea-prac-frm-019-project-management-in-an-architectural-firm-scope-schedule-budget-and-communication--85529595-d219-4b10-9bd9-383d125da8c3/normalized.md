@@ -49,7 +49,11 @@ The architect must verify that construction documents are complete, coordinated,
 
 Internal quality control processes include: design reviews by senior staff, code compliance checklists, consultant coordination reviews (MEP, structural, landscape integration), and final document review before issuance. These processes catch errors before they reach the client or the contractor.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Five essential quality control processes:** (1) design reviews by senior staff; (2) code compliance checklists; (3) consultant coordination reviews (MEP, structural, landscape); (4) final document review before issuance; (5) constructability review with contractor input. These catch errors before they reach the client or contractor.
+[/SLATECAMP_UI_BLOCK]
 
 ### Consultant Coordination and Agreement Management
 
@@ -73,7 +77,11 @@ Client feedback, whether positive or critical, is valuable. A client survey or e
 
 
 
-<ArticleMedia type="image" caption="Project Management in Architecture — Scope, Schedule, Budget, Communication Framework" alt="Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-frm-019-project-manag-0", type="image", caption="Project Management in Architecture — Scope, Schedule, Budget, Communication Framework", description="Four-quadrant diagram showing project management areas in architectural practice: Scope (design phase deliverables, SOW management), Schedule (phase timeline, milestone tracking), Budget (fee monitoring, change order management), Communication (stakeholder updates, RFI process, meeting minutes). Center hub shows integration with SPP 202 phase deliverables."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

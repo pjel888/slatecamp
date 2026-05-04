@@ -1,26 +1,26 @@
 # Content Diff Report: ergonomics-in-furniture-design
 
-Generated: 2026-05-04T02:17:12.610Z
+Generated: 2026-05-04T09:13:40.366Z
 Article ID: 691cf42d-0f6c-4686-b3d0-9a3bbd99da23
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:5064a9c8310e866f97b13db77dc13667ab955e9a933bbe4436aba3381be0daf6`
-- Normalized: `sha256:5064a9c8310e866f97b13db77dc13667ab955e9a933bbe4436aba3381be0daf6`
-- Candidate: `sha256:b63aff63ae3cc65167f9c037c9989d71be61afbf52ba6fc9daf14fad39812e64`
+- Original: `sha256:1eafa52ddd0fb0f8e7b8b2d02d7c37e018375d4e6d75d01fffa668b4348fde5f`
+- Normalized: `sha256:0007d4a59616ccf21548a8dceb0b93590424004de0612e9bdf8279568eaa681c`
+- Candidate: `sha256:1eafa52ddd0fb0f8e7b8b2d02d7c37e018375d4e6d75d01fffa668b4348fde5f`
 
 ## Line summary
 
-- Changed lines: 38
-- Inserted lines: 12
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

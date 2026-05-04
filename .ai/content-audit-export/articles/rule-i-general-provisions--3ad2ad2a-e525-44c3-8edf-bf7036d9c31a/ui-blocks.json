@@ -1,58 +1,64 @@
 {
   "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
   "slug": "rule-i-general-provisions",
-  "normalized_created_at": "2026-05-01T13:33:43.669Z",
+  "normalized_created_at": "2026-05-04T09:10:35.980Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:f8ff57ca76da0cae72b96522b113c2937d88cd1c7415cfb1ff0a4201a93cba90",
-  "normalized_content_hash": "835c80a2339e0ba8a99b53931fd7414f478aa1eb8ff1fbd6b98e4bee69639922",
+  "original_content_hash": "sha256:fae62a72dd84fb9165cbc2620fcee7df5c5cfa3fafd50d0856fd0aee69ac189c",
+  "normalized_content_hash": "sha256:8e333d45b43f3943e4d78be18b36dcba77039114f0e5073163a5b47fc983dc85",
   "ui_block_count": 2,
-  "total_blocks": 6,
+  "total_blocks": 2,
   "blocks": [
     {
       "block_id": "ui_0001",
       "block_type": "mdx_component",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"pd1096\" section=\"Rule I - Section 101 - Scope\">\nNational Building Code of the Philippines (PD 1096) \u2014 Primary legislation governing building design and construction.\n</LawCallout>",
-      "raw_hash": "sha256:42186617922c7570faff2cc92ae3d56071c7888858e1954d1a76b31b7cea10ce",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: National Building Code of the Philippines (PD 1096) \u2014 Primary legislation gov...\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:0393dc5a0e6b53b28680f262e087ab4e55b4153b379a335268e580669efa95b7",
-      "props": {},
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule I - Section 106 - Permits\">\nNational Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n</LawCallout>",
+      "raw_hash": "sha256:4a4ae739ef4185f404d0b2cc2939db91580f647ac2627d84abae722246db01bc",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\", section=\"Rule I - Section 106 - Permits\"\n- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:bdab5265172325d6d2ed547a087653175047c84fef99f5ca607d9c0063f71729",
+      "props": {
+        "code": "pd1096",
+        "section": "Rule I - Section 106 - Permits"
+      },
       "props_json": {
         "code": "pd1096",
-        "section": "Rule I - Section 101 - Scope"
+        "section": "Rule I - Section 106 - Permits"
       },
-      "props_text": "code=pd1096, section=Rule I - Section 101 - Scope",
-      "children_raw": "National Building Code of the Philippines (PD 1096) \u2014 Primary legislation governing building design and construction.",
-      "children_text": "National Building Code of the Philippines (PD 1096) \u2014 Primary legislation governing building design and construction.",
-      "start_offset": 0,
-      "end_offset": 0,
-      "line_start": 0,
-      "line_end": 0,
+      "props_text": "code=\"pd1096\" section=\"Rule I - Section 106 - Permits\"",
+      "children_raw": "\nNational Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n",
+      "children_text": "National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.",
+      "start_offset": 741,
+      "end_offset": 940,
+      "line_start": 16,
+      "line_end": 18,
       "parser_confidence": "high",
       "parse_status": "parsed",
       "warnings": [],
       "status": "preserved"
     },
     {
-      "block_id": "ui_0004",
+      "block_id": "ui_0002",
       "block_type": "mdx_component",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"pd1096\" section=\"Rule I - Section 106 - Permits\">\nNational Building Code of the Philippines (PD 1096) \u2014 Primary legislation governing building design and construction.\n</LawCallout>",
-      "raw_hash": "sha256:4a4ae739ef4185f404d0b2cc2939db91580f647ac2627d84abae722246db01bc",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: National Building Code of the Philippines (PD 1096) \u2014 Primary legislation gov...\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:93ba1d4a45e507811cc38febef0c18f0898f0c51acf7bf4c997cd30d5f24c027",
-      "props": {},
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule I - Section 101 - Scope\">\nNational Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n</LawCallout>",
+      "raw_hash": "sha256:42186617922c7570faff2cc92ae3d56071c7888858e1954d1a76b31b7cea10ce",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\", section=\"Rule I - Section 101 - Scope\"\n- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d3e3682f3c9ac3d474c987294f74a95d788638015f8f1290fda152a384619811",
+      "props": {
+        "code": "pd1096",
+        "section": "Rule I - Section 101 - Scope"
+      },
       "props_json": {
         "code": "pd1096",
-        "section": "Rule I - Section 106 - Permits"
+        "section": "Rule I - Section 101 - Scope"
       },
-      "props_text": "code=pd1096, section=Rule I - Section 106 - Permits",
-      "children_raw": "National Building Code of the Philippines (PD 1096) \u2014 Primary legislation governing building design and construction.",
-      "children_text": "National Building Code of the Philippines (PD 1096) \u2014 Primary legislation governing building design and construction.",
-      "start_offset": 0,
-      "end_offset": 0,
-      "line_start": 0,
-      "line_end": 0,
+      "props_text": "code=\"pd1096\" section=\"Rule I - Section 101 - Scope\"",
+      "children_raw": "\nNational Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n",
+      "children_text": "National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.",
+      "start_offset": 942,
+      "end_offset": 1139,
+      "line_start": 20,
+      "line_end": 22,
       "parser_confidence": "high",
       "parse_status": "parsed",
       "warnings": [],
@@ -61,5 +67,5 @@
   ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:13d37b708fed160097fd46107dfbd033904f75c73f89885e241bcd5b091fe543"
+  "ui_blocks_hash": "sha256:bf0bd32299d59e365ce790668116d4f7e7e718fa3a9445722129941117fa7583"
 }

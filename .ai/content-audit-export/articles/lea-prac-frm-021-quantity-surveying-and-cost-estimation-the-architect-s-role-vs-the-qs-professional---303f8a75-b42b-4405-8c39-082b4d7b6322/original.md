@@ -78,7 +78,7 @@ If the estimate exceeds the budget, the architect and client should discuss opti
 
 
 
-<ArticleMedia type="image" caption="Quantity Surveying vs. Architect's Cost Role — Responsibility Matrix" description="Comparison matrix showing QS vs. Architect responsibilities: Cost estimation (QS leads, architect provides design scope), Bill of Quantities (QS prepares, architect verifies), Cost control during design (architect designs to budget, QS tracks), Variation evaluation (QS quantifies, architect certifies). Overlapping and distinct responsibility areas clearly marked." />
+<ArticleMedia id="media-lea-prac-frm-021-quantity-surv-0" type="image" caption="Quantity Surveying vs. Architect's Cost Role — Responsibility Matrix" description="Comparison matrix showing QS vs. Architect responsibilities: Cost estimation (QS leads, architect provides design scope), Bill of Quantities (QS prepares, architect verifies), Cost control during design (architect designs to budget, QS tracks), Variation evaluation (QS quantifies, architect certifies). Overlapping and distinct responsibility areas clearly marked." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

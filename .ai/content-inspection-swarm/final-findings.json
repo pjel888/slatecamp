@@ -1,0 +1,2862 @@
+{
+  "articles_scanned": 567,
+  "articles_with_issues": 228,
+  "issue_counts": {
+    "unclosed_element": 241,
+    "empty_self_closing": 52,
+    "unknown_wmc_props": 30,
+    "unknown_am_props": 19
+  },
+  "findings": [
+    {
+      "article_dir": "change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 53,
+          "detail": "Unknown: ['green', 'red', 'yellow']"
+        }
+      ]
+    },
+    {
+      "article_dir": "ergonomics-in-furniture-design--691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 401,
+          "detail": "Unknown: ['C']"
+        }
+      ]
+    },
+    {
+      "article_dir": "glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 430,
+          "detail": "Unknown: ['10mm', '3mm', '5mm', '6mm']"
+        }
+      ]
+    },
+    {
+      "article_dir": "hydrology-in-site-planning--9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 189,
+          "detail": "Unknown: ['Q']"
+        }
+      ]
+    },
+    {
+      "article_dir": "inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 3,
+          "detail": "Callout: 2 open, 1 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 27,
+          "detail": "Unknown: ['I']"
+        },
+        {
+          "type": "unknown_am_props",
+          "line": 90,
+          "detail": "Unknown: ['I']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-dsgn-010-01-core-concept--dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 13,
+          "detail": "FormulaBlock: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 45,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-001-02-core-concept--e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 47,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-001-03-core-concept--6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 44,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-001-04-core-concept--3e966435-e276-422e-a220-374043120cec",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 54,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 50,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-001-06-core-concept--a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 52,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-001-08-core-concept--d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 48,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-002-01-core-concept--7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 49,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-002-02-core-concept--48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 45,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-002-03-core-concept--630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 53,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-002-04-core-concept--52d78a3d-6f0f-4d68-a8e3-39d02b78d68f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 61,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-002-05-core-concept--9bcf8ae9-81a7-41eb-b636-74c93570864c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 70,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-002-06-core-concept--c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 68,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-004-01-core-concept--157a66ee-39c3-47ba-ba86-f32414fd2896",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 56,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-004-02-core-concept--c0a5189b-4c67-47ad-bfd0-4b4d33df7247",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 33,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-004-05-core-concept--ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 40,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-004-06-core-concept--4ed9c46d-1468-4741-99a4-507de15377fe",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 48,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-004-07-core-concept--39f480ed-755f-499a-935f-d339e6bb3c87",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 48,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-004-08-core-concept--369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 50,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-007-01-core-concept--cde95089-b874-42c5-8250-abc58ad7fae0",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 41,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-007-02-core-concept--aa6c280e-10b1-4cae-9e0f-578ff0fda2a3",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 37,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-007-03-core-concept--0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 37,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-007-04-core-concept--10be87c4-e424-42da-8989-a054658cc4a4",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 36,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-007-05-core-concept--7095ced9-9182-4eda-917b-84568cd74ba2",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 38,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-007-06-core-concept--1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 49,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 40,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-02-core-concept--160660ca-783b-4604-9b2a-691e10f0e97b",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 37,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-03a-core-concept--c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 52,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-03b-core-concept--79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 35,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-03c-core-concept--faa3088f-8700-4d60-a871-1c1e97f53570",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 37,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-03d-core-concept--d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 39,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-04a-core-concept--8769440f-0b98-49dd-b98b-a3b9be486892",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 65,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 33,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-04c-core-concept--34a5048b-e01f-41ef-8f3b-5343dfae48a6",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 31,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-05-core-concept--ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 39,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-06-core-concept--df096cb2-6240-4081-a17b-534a1577637e",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 35,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-07a-core-concept--683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 45,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-07b-core-concept--22de8889-365b-4034-af03-36636d3c101c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 43,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 43,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 38,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 38,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 56,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 54,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 58,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 62,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 30,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 32,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 30,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 32,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 32,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 34,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 38,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 32,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 34,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 34,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-001-03-core-concept--18c848be-4850-489e-882d-b29537a69f06",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 24,
+          "detail": "WikiExamTable: 2 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-001-05-core-concept--a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 38,
+          "detail": "WikiExamTable: 2 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-002-03-core-concept--42ec69b2-114a-423b-bba3-12cd5564f994",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 17,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-002-05-core-concept--12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 87,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-002-06-core-concept--559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 22,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-003-04-core-concept--7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 109,
+          "detail": "Unknown: ['body']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 111,
+          "detail": "Unknown: ['body']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-003-05-core-concept--99ee4b30-1612-422c-af69-9a496deb6d79",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 148,
+          "detail": "Unknown: ['body']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 150,
+          "detail": "Unknown: ['body']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 139,
+          "detail": "Unknown: ['body']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 144,
+          "detail": "Unknown: ['body']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-004-06-core-concept--b055d93c-4f92-4608-b88b-ff729757f92e",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 104,
+          "detail": "Unknown: ['body']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 106,
+          "detail": "Unknown: ['body']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-004-07-core-concept--350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 93,
+          "detail": "Unknown: ['body']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 95,
+          "detail": "Unknown: ['body']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-004-08-core-concept--65464bd1-e0f7-4267-b64e-f89f93213199",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 88,
+          "detail": "Unknown: ['body']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 90,
+          "detail": "Unknown: ['body']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-004-09-core-concept--edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 100,
+          "detail": "Unknown: ['body']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 102,
+          "detail": "Unknown: ['body']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-004-10-core-concept--2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 82,
+          "detail": "Unknown: ['body']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 84,
+          "detail": "Unknown: ['body']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 95,
+          "detail": "Unknown: ['body']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 97,
+          "detail": "Unknown: ['body']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 60,
+          "detail": "Unknown: ['severity']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 62,
+          "detail": "Unknown: ['severity']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 64,
+          "detail": "Unknown: ['severity']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 65,
+          "detail": "Unknown: ['severity']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 67,
+          "detail": "Unknown: ['severity']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 69,
+          "detail": "Unknown: ['severity']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 60,
+          "detail": "Unknown: ['severity']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 62,
+          "detail": "Unknown: ['severity']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 64,
+          "detail": "Unknown: ['severity']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-matl-005-10-core-concept--aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "issues": [
+        {
+          "type": "unknown_wmc_props",
+          "line": 78,
+          "detail": "Unknown: ['severity']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 80,
+          "detail": "Unknown: ['severity']"
+        },
+        {
+          "type": "unknown_wmc_props",
+          "line": 82,
+          "detail": "Unknown: ['severity']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-001-01-core-concept--d28bf43f-a588-4be3-8b79-8759d930aea4",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 22,
+          "detail": "WikiExamTable: 2 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-001-02-core-concept--dfffd217-9aed-4a42-88fe-53b26268f665",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 21,
+          "detail": "WikiExamTable: 3 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-001-03-core-concept--9c379f3b-c567-4615-957c-96e5bb791522",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 28,
+          "detail": "WikiExamTable: 2 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 38,
+          "detail": "WikiExamTable: 3 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 32,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 29,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 22,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 27,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-002-06-core-concept--a951788d-ae29-431b-8796-f272035fdf8f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 25,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 25,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-003-01-what-you-need-to-know-for-the-lea--0d2e80df-4f76-484e-9b1f-5502da9e35be",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 156,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-003-02-what-you-need-to-know-for-the-lea--7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 64,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 23,
+          "detail": "WikiExamTable: 2 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-003-04-core-concept--c684727d-d3e3-4303-b213-590c4b8ab766",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 27,
+          "detail": "WikiExamTable: 2 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-003-05-core-concept--ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 31,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-003-06-core-concept--08dff936-85fa-4f57-8388-466ecca109e4",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 32,
+          "detail": "WikiExamTable: 2 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 48,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 130,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 19,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-005-03-what-you-need-to-know-for-the-lea--341161bb-c24a-4d65-8f8b-79a3e1b01076",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 16,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 19,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-005-05-core-concept--1bf5341b-5898-4793-bbff-472227208ccf",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 19,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-005-06-core-concept--236408d0-58f8-4761-8b02-7201ec857e97",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 19,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 21,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 25,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 28,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 30,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 29,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 23,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-007-07-core-concept--f7007096-dbed-43dd-9bba-67fa705834ca",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 19,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-008-01-core-concept--8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 25,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 27,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 29,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-008-04-core-concept--4a8ee24f-ff5a-4f9a-8842-2eade8ecc1ee",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 30,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-008-05-core-concept--3fe83b11-50d8-45ab-9530-936fb59fd974",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 24,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 36,
+          "detail": "WikiExamTable: 3 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra--42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 64,
+          "detail": "Unknown: ['Yes']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 68,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 42,
+          "detail": "ExamTip: 2 open, 1 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 68,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 70,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects--9c859ffb-8b3a-4feb-b484-6700d3867e5c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 62,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 66,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 16,
+          "detail": "ExamTip: 2 open, 1 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 62,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 66,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 64,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 60,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 64,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 62,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 60,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 64,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 62,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 64,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 68,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 66,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 64,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 68,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 66,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 72,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 82,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 77,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 72,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 82,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 77,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 107,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 113,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 107,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 113,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 51,
+          "detail": "Note: 6 open, 4 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 171,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 51,
+          "detail": "<Note/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 176,
+          "detail": "<Note/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 171,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 52,
+          "detail": "Note: 4 open, 3 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 47,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 52,
+          "detail": "<Note/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 47,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 43,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 41,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 43,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 41,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 59,
+          "detail": "Note: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 57,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 53,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 55,
+          "detail": "Callout: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 61,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 59,
+          "detail": "<Note/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 57,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 53,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 55,
+          "detail": "<Callout/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 61,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 42,
+          "detail": "Note: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 46,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 22,
+          "detail": "Callout: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 44,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 42,
+          "detail": "<Note/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 46,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 22,
+          "detail": "<Callout/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 44,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 40,
+          "detail": "Note: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 46,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 22,
+          "detail": "Callout: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 48,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 40,
+          "detail": "<Note/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 46,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 22,
+          "detail": "<Callout/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 48,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 44,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 54,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 49,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 44,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 54,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 49,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 37,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 41,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 39,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 37,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 41,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 39,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works--6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 61,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 59,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 61,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 59,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies--2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 61,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 65,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 63,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 61,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 65,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 63,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 62,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 67,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 62,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 67,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 68,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 78,
+          "detail": "Tip: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 73,
+          "detail": "ExamTip: 1 open, 0 close"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 68,
+          "detail": "<Warn/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 78,
+          "detail": "<Tip/> should be paired tag"
+        },
+        {
+          "type": "empty_self_closing",
+          "line": 73,
+          "detail": "<ExamTip/> should be paired tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 40,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-001-02-core-concept--943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 67,
+          "detail": "Unknown: ['Z']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-001-06-core-concept--d713a3b5-968e-4950-9f37-dd34d116b042",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 13,
+          "detail": "Unknown: ['n']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-002-03-core-concept--437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 13,
+          "detail": "Unknown: ['R']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 13,
+          "detail": "Unknown: ['E']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 13,
+          "detail": "Unknown: ['E']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 13,
+          "detail": "Unknown: ['Z']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-004-03-core-concept--1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 13,
+          "detail": "Unknown: ['V']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 21,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 21,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 51,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-001-01-core-concept--a969069b-f31b-4b7d-8937-77a9305d165b",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 82,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 47,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-001-08-core-concept--08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 46,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 50,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 60,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 68,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 56,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-001-13-core-concept--dc020375-d1af-4213-959f-4f31e5f390b9",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 56,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 109,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 44,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-002-03-core-concept--4f1312e7-61e8-4d33-8d49-48a5ec0a62ba",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 44,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 50,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-002-05-core-concept--1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 61,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 60,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 71,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-002-08-core-concept--7872fb73-5087-4167-a5b3-e799ce11eccc",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 73,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-002-09-core-concept--458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 87,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 44,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-003-02-core-concept--6659e8a6-d013-4f2e-9711-b37269c069a3",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 36,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-003-03-core-concept--1aaa804a-23f1-44da-bdcb-412fa04c848d",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 10,
+          "detail": "Unknown: ['T']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-003-04-core-concept--b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 56,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-003-05-core-concept--9c265d02-df61-46de-8c96-dd474041838e",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 71,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 89,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-003-07-core-concept--6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 84,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-003-08-core-concept--f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 115,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 99,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 63,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 76,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-004-08-core-concept--8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 131,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-004-09-core-concept--6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 173,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 188,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-005-01-core-concept--128400dd-8642-4275-a64f-c411f6836d6d",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 35,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-005-02-core-concept--33c219fe-51a6-487f-81d2-0d4af2968274",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 46,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-005-04-core-concept--976957b7-c288-4a63-8e76-9e26dcf6f199",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 44,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-005-05-core-concept--a66d3236-ce09-4723-acc7-9b017647f249",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 41,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-005-08-core-concept--dd976d64-9f04-409f-8d4d-f8140d575b86",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 41,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-005-09-core-concept--81af99b9-3a14-4037-84c0-09dbd913153a",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 41,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-005-10-core-concept--d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 41,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-005-11-core-concept--abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 45,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-006-04-core-concept--e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 48,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-007-01-core-concept--5144f75e-e8ee-49a0-8dcf-2ded9c2b432c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 49,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-007-02-core-concept--cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 91,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-007-09-core-concept--83e55961-2180-4a29-8c83-76039225db36",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 100,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-007-10-core-concept--da1f9241-8d97-4162-8944-78f2ffb12368",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 109,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-007-11-core-concept--a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 106,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-007-12-core-concept--3d340472-3007-4a4e-8a25-9754506e17bc",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 126,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-007-13-core-concept--3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 113,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-007-14-core-concept--c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 118,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 43,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 49,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-008-04-core-concept--ee50e412-f6d8-45f0-9016-55785c60773f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 48,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-008-08-core-concept--cc009103-96bb-4852-85c9-9067a4359336",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 49,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 73,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-009-02-core-concept--c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 92,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-009-03-core-concept--249aff40-df16-413b-8b16-b78190fafeff",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 92,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-009-04-core-concept--bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 95,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-009-05-core-concept--a1df237f-7291-4549-93bd-e7ed43f27107",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 109,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 13,
+          "detail": "WikiExamTable: 5 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 7,
+          "detail": "Unknown: ['closet', 'lavatory', 'shower', 'sink']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 10,
+          "detail": "Unknown: ['Q']"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 151,
+          "detail": "Unknown: ['GWP']"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 144,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-002-08-core-principles-standards--b2310919-6f6c-4abc-92b7-521a362c63d9",
+      "issues": [
+        {
+          "type": "unknown_am_props",
+          "line": 36,
+          "detail": "Unknown: ['HC', 'INT']"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 240,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 325,
+          "detail": "Warn: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 177,
+          "detail": "Tip: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 144,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 164,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 142,
+          "detail": "WikiExamTable: 3 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 143,
+          "detail": "Note: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 86,
+          "detail": "ComparisonTable: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 39,
+          "detail": "WikiExamTable: 2 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "mastery-architectural-design--ce165155-2e81-4ed6-b14e-7d81dbdfa464",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 30,
+          "detail": "ComparisonTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "mastery-building-materials--91294dec-6b87-4601-b9c1-a5b303447da4",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 47,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "mastery-building-utilities-mepf--183eb4f6-8e99-4c13-85f2-f5b01e1a082a",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 36,
+          "detail": "WikiExamTable: 2 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "mastery-planning-housing-urban-design--b194f38e-8129-4f87-b161-f9f4f7fc43b1",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 62,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "mastery-structural-conceptualization--bb2f1b8b-855d-4eeb-aeb3-8cf3874508d0",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 31,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 40,
+          "detail": "ElaborativeInterrogation: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "mastery-theory-of-architecture--73673e43-58fb-4393-a78b-bbfb45c914fb",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 43,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "overview-architectural-design--6882bbf1-7941-4289-a6b1-89a19e4c3923",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 3,
+          "detail": "SubjectSnapshot: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "overview-building-materials--6e9a4321-c9db-4720-ab19-288e7f28be48",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 41,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 3,
+          "detail": "SubjectSnapshot: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "overview-building-utilities-mepf--d39f0b0e-1219-4f42-a570-e08a6134d544",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 37,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 3,
+          "detail": "SubjectSnapshot: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "overview-history-of-architecture--b58c3d7f-d8c1-434e-9c12-dc58b3645440",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 60,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 3,
+          "detail": "SubjectSnapshot: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "overview-planning-housing-urban-design--fa149775-5062-4e43-9acb-7e95ad2bf173",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 3,
+          "detail": "SubjectSnapshot: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "overview-professional-practice--3d710cad-8857-4d44-891c-1b1a010de2cd",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 31,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 3,
+          "detail": "SubjectSnapshot: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "overview-structural-conceptualization--1f8c0257-0b12-45c0-936c-d821b927a6e9",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 3,
+          "detail": "SubjectSnapshot: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "overview-theory-of-architecture--0d7083b9-a1bc-428c-b9b9-e8d4afa0c83c",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 42,
+          "detail": "WikiExamTable: 1 open, 0 close"
+        },
+        {
+          "type": "unclosed_element",
+          "line": 3,
+          "detail": "SubjectSnapshot: 1 open, 0 close"
+        }
+      ]
+    },
+    {
+      "article_dir": "top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "issues": [
+        {
+          "type": "unclosed_element",
+          "line": 11,
+          "detail": "InlineQuiz: 1 open, 0 close"
+        }
+      ]
+    }
+  ]
+}

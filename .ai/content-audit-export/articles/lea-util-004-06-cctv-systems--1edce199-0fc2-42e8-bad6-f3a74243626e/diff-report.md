@@ -1,26 +1,26 @@
 # Content Diff Report: lea-util-004-06-cctv-systems
 
-Generated: 2026-05-04T02:16:24.175Z
+Generated: 2026-05-04T09:13:05.968Z
 Article ID: 1edce199-0fc2-42e8-bad6-f3a74243626e
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:af99e317efd921212a9500a541bc67def3358079dfb30515939606a4b359beb2`
-- Normalized: `sha256:af99e317efd921212a9500a541bc67def3358079dfb30515939606a4b359beb2`
-- Candidate: `sha256:f51f3241ab175cd6c1c7d9e8481d33a021114f53ea6c27c51a7e48117f31e8bd`
+- Original: `sha256:f13add141b407cc528ba9326fef2aceb895091b5a6b674de4098891c6d661d45`
+- Normalized: `sha256:a36cc28a82ef836d0805f63f4ea4039188a9ff6da64ffcd6ae7eb732e6982973`
+- Candidate: `sha256:f13add141b407cc528ba9326fef2aceb895091b5a6b674de4098891c6d661d45`
 
 ## Line summary
 
-- Changed lines: 159
-- Inserted lines: 4
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 9
+- UI blocks preserved: 9
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

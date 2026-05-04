@@ -1,5 +1,9 @@
 ## What You Need to Know for the LEA
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Bubble diagrams are analytical tools that graphically represent spatial relationships and functional adjacencies derived from the architectural program; they are not design sketches and do not prescribe form or aesthetics. The adjacency matrix is the tabular companion document that systematically codes relationships as essential, desirable, unimportant, or undesirable, ensuring all functional pairs are evaluated. Both tools translate programmatic requirements into spatial organization logic that
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -9,11 +13,19 @@
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-009-02-core-concept" type="image" caption="Bubble Diagrams and Adjacency Matrices — Translating Program to Spatial Organization" alt="Two-part diagram: Part 1 — Adjacency Matrix showing a grid of spaces (e.g., lobby, offices, conference rooms, restrooms, storage) with relationship codes: Essential (E), Desirable (D), Unimportant (U), Undesirable (X). Part 2 — Bubble Diagram translating the matrix into a graphic spatial organization: each bubble proportional to space area, lines between bubbles showing essential adjacencies (thick lines), desirable adjacencies (thin lines), and undesirable connections (dashed red lines). The diagram is intentionally abstract — bubbles are non-geometric shapes representing functional zones, not architectural forms." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-009-02-core-concept", type="image", caption="Bubble Diagrams and Adjacency Matrices — Translating Program to Spatial Organization", description="Two-part diagram: Part 1 — Adjacency Matrix showing a grid of spaces (e.g., lobby, offices, conference rooms, restrooms, storage) with relationship codes: Essential (E), Desirable (D), Unimportant (U), Undesirable (X). Part 2 — Bubble Diagram translating the matrix into a graphic spatial organization: each bubble proportional to space area, lines between bubbles showing essential adjacencies (thick lines), desirable adjacencies (thin lines), and undesirable connections (dashed red lines). The diagram is intentionally abstract — bubbles are non-geometric shapes representing functional zones, not architectural forms.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Bubble diagrams emerge from the program analysis phase, after spaces and their requirements are documented but before design form-making begins. A bubble represents a functional zone or space; the size of the bubble correlates loosely to its area (though not to scale in typical programming bubble diagrams). Lines or proximity between bubbles indicate required relationships; absence of connection indicates no proximity requirement. The diagram is intentionally abstract—bubbles may be circles, squares, or irregular shapes; their specific geometry carries no architectural meaning.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Bubble diagram purpose**: Translate adjacency matrix into spatial organization. The matrix is tabular (abstract); the bubble diagram is spatial but still abstract. It shows "A must be near B; C must be far from D; circulation connects them." It shows logic without prescribing form. From this abstract spatial logic, design then creates form—decides walls, openings, materials, aesthetics. The bubble diagram is neither a floor plan nor preliminary design; it's a constraint-satisfaction diagram. R
+[/SLATECAMP_UI_BLOCK]
 
 ### Adjacency Categories and Notation
 
@@ -60,7 +72,11 @@ Critical distinction: a bubble diagram constrains design but does not determine 
 
 A common LEA candidate error is presenting a bubble diagram that already contains wall layouts, partition details, or circulation patterns. This conflates programming with design. The bubble diagram should remain abstract—responsive to functional logic but open to multiple design interpretations.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The multiple design interpretations principle: A single bubble diagram could generate dozens of different floor plans, all satisfying the adjacency constraints. One design might use a central corridor; another might use open plan; another might use multiple smaller corridors. One might organize zones vertically; another horizontally. All are valid if they satisfy the programmatic constraints. The bubble diagram enables this exploration—it's a contract of functional requirements, not a spatial pr
+[/SLATECAMP_UI_BLOCK]
 
 ### Iterative Refinement
 
@@ -68,7 +84,11 @@ Creating an effective bubble diagram is iterative. An initial layout may satisfy
 
 Some constraints cannot be simultaneously satisfied. A small site may make it impossible to separate a loading dock from a customer entrance; the program must explicitly acknowledge this compromise and specify how it will be managed (separate doors, different times, screening, etc.). The refined bubble diagram documents the resolved spatial organization, and this becomes the framework for design development.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Trade-off documentation is essential but often skipped. When a bubble diagram violates a programmatic requirement (allows adjacency where separation is preferred, or fails to achieve essential adjacency due to site constraints), this must be explicitly documented. A statement like "Due to site constraints, the receiving dock is visible from the retail entrance; this will be managed through architectural screening and different operational times" is professional and transparent. Ignoring the prob
+[/SLATECAMP_UI_BLOCK]
 
 ### Circulation as Connecting Element
 
@@ -80,26 +100,62 @@ Bubble diagrams and adjacency matrices are not limited to initial programming. T
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Concept\", \"Definition/Standard\"]}", rows="{[['[\"**Bubble Diagram**\", \"Abstract graphic representation of spaces and their adjacency relationships, derived from the adjacency matrix\"]', '[\"**Adjacency Matrix**\", \"Tabular documentation of spatial relationships between all programmed spaces (E=essential, D=desirable, U=unimportant, X=undesirable)\"]', '[\"**Essential Adjacency (E)**\", \"Two spaces must be immediately adjacent or connected to satisfy functional requirements\"]', '[\"**Desirable Adjacency (D)**\", \"Proximity is beneficial but not mandatory; satisfied when possible but may be compromised by constraints\"]', '[\"**Undesirable Adjacency (X)**\", \"Two spaces must be separated to prevent functional conflict, safety risk, or performance degradation\"]', '[\"**Functional Zone**\", \"Cluster of related activities grouped for proximity and efficiency; typically organized by public/semi-public/private logic\"]', '[\"**Circulation Spine**\", \"Primary corridor or connector system that organizes building layout and connects functional zones\"]', '[\"**Constraint vs. Prescription**\", \"Bubble diagram constrains spatial relationships but does not prescribe architectural form or aesthetic decisions\"]', '[\"**Trade-off Documentation**\", \"Explicit acknowledgment of constraints that cannot be simultaneously satisfied and the design strategy to manage them\"]', '[\"**Matrix Symmetry**\", \"The adjacency relationship from space A to space B equals the relationship from B to A; typically recorded once (upper triangle)\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Reading and Interpreting Adjacency Matrices**: You are presented with a completed or partially completed adjacency matrix and asked questions about what relationships exist. "In the matrix shown, which spaces have an essential adjacency? (A) Reception and waiting area. (B) Mechanical and reception. (C) Both. (D) Neither." Requires careful reading of the matrix symbols.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 2. **Evaluating Design Layouts Against the Program**: ADSP Day 2 typically presents a floorplan and asks you to verify whether it satisfies the programmed adjacencies. "Given the adjacency matrix provided, does the proposed layout satisfy the essential relationship between the laboratory and treatment room? Explain." You must identify the spaces on the plan and measure whether they are truly adjacent (ideally, sharing a wall or connected by a single door).
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 3. **Completing an Adjacency Matrix from a Project Scenario**: Given a building program narrative, you identify all spaces and create or complete an adjacency matrix showing relationships. For example: "A small dental clinic includes reception, waiting, two treatment rooms, a sterilization room, storage, and office. Indicate the adjacency relationships." You must reason: sterilization and treatment rooms are essential (instruments must move between them); waiting and treatment are essential (pat
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 4. **Identifying Functional Zones from a Program**: Asked to organize a given program into functional zones and justify the organization. A retail shopping center program includes retail spaces, back-of-house storage, staff areas, mechanical spaces, and parking. You organize as customer zone (retail, entries), support zone (storage, receiving), staff zone (break room, office), and service zone (mechanical, loading). Justification: customers see only retail; staff circulation is separate; loading
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 5. **Analyzing Design Flaws Through Adjacency Logic**: Presented with a floorplan and asked to identify problems. "This layout places the laboratory adjacent to the mechanical room (undesirable, per the matrix). What is the risk, and how would you redesign?" Answer: Mechanical vibration and noise compromise lab work; laboratory should be relocated to an interior or isolated location, or mechanical equipment should be relocated, or vibration isolation measures should be specified.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Bubble Diagram with Preliminary Design", correction="Presenting a bubble diagram that includes wall layouts, structural systems, material indications, or aesthetic details. Bubble diagrams should remain abstract—circles or bubbles representing spaces, with lines indicating adjacencies.", context="If your bubble diagram looks like a floorplan, you have crossed into design before programming is complete."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Incomplete Adjacency Matrix", correction="Omitting undesirable (X) relationships, treating only essential and desirable as sufficient. Undesirable relationships are as important as essential ones—they define what must not be adjacent.", context="A complete matrix evaluates all functional pairs."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Misinterpreting \\\"Essential\\\" as \\\"Adjacent Wall\\\". Essential adjacency does not always require a shared wall. Two spaces can be essential neighbors while connected by a short corridor, glass partition, or open connection. \\\"Adjacent\\\" means sufficiently close and easily connected; the designer decides the specific architectural form.\", \"Ignoring Circulation in Bubble Diagram. Treating circulation spaces as passive background rather than active functional zones. Circulation is shown in the bubble diagram as a primary organizing element—corridors, lobbies, stairwells—and its adjacencies to other spaces are coded just as functional adjacencies are.\", \"Violating Constraints in Proposed Layouts. Presenting a design that fails to satisfy essential adjacencies or violates undesirable separations shown in the matrix. Every design proposal must be verified against the adjacency matrix; any violation must be explicitly justified and documented as a conscious trade-off, not an oversight.\", \"Over-Determining Relationships Through Bubble Diagram. Using the bubble diagram to prescribe not just adjacency but specific dimensions, orientation, or relationships between zones that the design should later violate. The bubble diagram is a constraint framework, not a binding spatial blueprint; the designer has freedom to interpret it through multiple design languages.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

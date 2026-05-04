@@ -10,10 +10,6 @@ Apply fire protection requirements for vertical openings (stairs, shafts, chutes
 
 ## Module Header
 
-<ExamTip>
-This section is frequently tested. Pay special attention to the distinctions and exceptions.
-</ExamTip>
-
 | Field | Details |
 |---|---|
 | **Module Focus** | Escalator/Elevator Enclosure Requirements, Fire-Rated Shaft Design, Floor Lateral Bracing & Roof Wind Loads |
@@ -275,25 +271,15 @@ D. Compliant — Sec. 1206 applies only to buildings taller than 3 storeys
 
 ---
 
+
+
 ---
 
 ## Exam Tip
 
 LEA Trap: Vertical openings ≤ 1.0 m² may be UNPROTECTED if they do not connect more than 3 stories. Openings > 1.0 m² require 1-hour enclosure (or 2-hour for buildings > 4 stories). The 1.0 m² threshold and the 3-story limit are both frequently tested.
 
-
-
----
-
-## Exam Tip
-
-ALE Trap: Vertical openings ≤ 1.0 m² may be UNPROTECTED if they do not connect more than 3 stories. Openings > 1.0 m² require 1-hour enclosure (or 2-hour for buildings > 4 stories). The 1.0 m² threshold and the 3-story limit are both frequently tested.
-
 ## Cross‑References
 
 **Fire Resistive Construction Ratings**, **Stairs Handrails Guardrails**, **Vent Shafts And Ventilation**, **Penthouses And Roof Structures**
 
-<Note>
-Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards and amendments.
-</Note>
-<!-- no-media-needed: existing content format is sufficient without visual media -->

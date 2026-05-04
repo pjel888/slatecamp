@@ -103,7 +103,7 @@ Gothic introduces the **pointed arch, ribbed vault, and external flying buttress
 
 ## Related Articles
 
-<ArticleMedia id=\"media-hist-002-03-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Timeline of Gothic cathedral construction (mid-12th–16th centuries) showing the evolution from Early Gothic (Saint-Denis, 1144) through High Gothic (Chartres, 1194; Amiens, 1220) to Late Gothic/Flamboyant and Perpendicular styles, with key regional variations.\" caption=\"Gothic Architecture — Cathedral Construction Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-002-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Gothic cathedral construction (mid-12th–16th centuries) showing the evolution from Early Gothic (Saint-Denis, 1144) through High Gothic (Chartres, 1194; Amiens, 1220) to Late Gothic/Flamboyant and Perpendicular styles, with key regional variations." caption="Gothic Architecture — Cathedral Construction Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-04-core-concept**, **lea-hist-002-05-core-concept**.
 

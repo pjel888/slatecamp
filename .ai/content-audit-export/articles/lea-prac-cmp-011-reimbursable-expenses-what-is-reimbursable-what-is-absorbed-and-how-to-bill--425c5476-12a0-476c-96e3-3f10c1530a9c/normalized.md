@@ -21,11 +21,23 @@ Travel expenses for site visits, client meetings, or consultant coordination are
 
 Printing and copying costs are reimbursable, including cost of printing full sets of contract documents, specifications, and special drawings for distribution to bidders and other parties. Standard office copying (office supplies used in normal business operations) is not reimbursable; only project-specific printing and copying is reimbursable.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="Architect's Guidelines / SPP 202", title="Fee Computation — Regulatory Basis"
+- Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, label=true, DAEDS=true, Fee=true, Range=true, PCC=true, Bracket=true, Threshold=true, Groups=true, Project=true, Classification=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Consultant fees retained for specialized services are reimbursable if the architect retains these consultants on the client's behalf. Structural engineer fees, MEP consultant fees, cost estimation fees, sustainability certification fees, or specialized consultants for laboratory design, theater systems, or other specializations are typically reimbursable. However, if the client retains consultants directly (a separate agreement between client and consultant), these are not architectural reimbursable expenses; they are client direct costs.
 
@@ -47,7 +59,11 @@ Computer equipment, design software, and BIM licensing are absorbed by the archi
 
 Professional development, training, and conferences are not project reimbursable expenses; they are firm-wide benefits absorbed by the architect's overall business model.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, label=true, DAEDS=true, Fee=true, Range=true, PCC=true, Bracket=true, Threshold=true, Groups=true, Project=true, Classification=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Markup on Reimbursable Expenses
 

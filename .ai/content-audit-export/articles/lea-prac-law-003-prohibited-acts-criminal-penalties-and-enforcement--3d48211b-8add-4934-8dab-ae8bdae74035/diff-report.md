@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement
 
-Generated: 2026-05-04T02:17:17.831Z
+Generated: 2026-05-04T09:13:43.163Z
 Article ID: 3d48211b-8add-4934-8dab-ae8bdae74035
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:2121099182074eebbc8eb9bc8dd1d9bee9bce959b915299f70cbec57d88c3b78`
-- Normalized: `sha256:a199723f691233de84a3036b5d5e21c67b162bfbc2e702c9dc924d166cabe4b7`
-- Candidate: `sha256:2121099182074eebbc8eb9bc8dd1d9bee9bce959b915299f70cbec57d88c3b78`
+- Original: `sha256:863da855ec459d06e028485e7def5a1c97ab9c87d2d5a6caefb80e15a9d13f57`
+- Normalized: `sha256:6389678c6421baa2bcc72880857070206947aa441468f0e77303c2510d3d7870`
+- Candidate: `sha256:863da855ec459d06e028485e7def5a1c97ab9c87d2d5a6caefb80e15a9d13f57`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 6
-- UI blocks preserved: 6
+- UI blocks expected: 8
+- UI blocks preserved: 8
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

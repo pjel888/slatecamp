@@ -7,13 +7,16 @@
 
 ## Schema Activation: Why This Module Matters
 
+<ArticleMedia id="media-pd-1096-rule-vii-occupancy-0" name="occupancy-groups-visual" type="diagram" caption="Visual reference card for all 10 occupancy groups A–J with icons: A (house), B (hotel), C (school), D (hospital), E (office/store), F (factory), G (warehouse/hazardous), H (theater less than 1000), I (stadium 1000 or more), J (fence/shed). Arrange as a grid with group letter, full name, example building, and color-coded hazard band. Include the Type I–V construction scale with opposite direction reminder." />
+
+<ArticleMedia id="media-pd-1096-rule-vii-occupancy-1" name="mixed-occupancy-flowchart" type="diagram" caption="Decision flowchart for mixed-occupancy buildings: check if 1-storey → each portion follows own occupancy; check if accessory use ≤10% of floor area → major occupancy governs; otherwise → most restrictive occupancy governs the entire building. Include examples like 'mall with clinic' and 'apartment with ground-floor retail'." />
+
 ## Learning Goal
 
 After reading this article, you should be able to:
 
 Classify buildings by occupancy group (A through J) and division under PD 1096 Rule VII Table VII; apply the correct classification to mixed-occupancy buildings; identify when the strictest occupancy requirements govern the entire building vs when separated occupancies may have independent requirements; and determine allowable occupancy combinations in the same building.
 ---
-
 
 A 30-storey BPO office tower in Makati built in reinforced concrete is governed by very different rules than a small wooden beach house in La Union. The **use/occupancy** classification dictates the minimum **construction type**, fire-resistive requirements, exits, and many other safety provisions.[file:17]
 
@@ -302,9 +305,13 @@ One-liner: **“One is flimsy. Five is a fortress.”**
 
 ---
 
-
+---
 
 ---
+
+## Exam Tip
+
+LEA Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D=Institutional, E=Educational, F=Assembly, G=Recreational, H=Storage, I=Business, J=Dangerous. For mixed-occupancy, the STRICTEST requirements govern the entire building UNLESS the uses are separated by 2-hour fire-rated construction. The 'separated vs non-separated' distinction is the key exam point.
 
 
 
@@ -312,7 +319,7 @@ One-liner: **“One is flimsy. Five is a fortress.”**
 
 ## Exam Tip
 
-LEA Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D=Institutional, E=Educational, F=Assembly, G=Recreational, H=Storage, I=Business, J=Dangerous. For mixed-occupancy, the STRICTEST requirements govern the entire building UNLESS the uses are separated by 2-hour fire-rated construction. The 'separated vs non-separated' distinction is the key exam point.
+ALE Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D=Institutional, E=Educational, F=Assembly, G=Recreational, H=Storage, I=Business, J=Dangerous. For mixed-occupancy, the STRICTEST requirements govern the entire building UNLESS the uses are separated by 2-hour fire-rated construction. The 'separated vs non-separated' distinction is the key exam point.
 
 ## Cross‑References
 
@@ -351,3 +358,5 @@ LEA Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D
    - Framed the IBC comparison as a caution, emphasizing that PD 1096 is the controlling standard and that foreign labels/groups (e.g., Group M) are traps.[file:17]
 
 If you want a next step, I can compress this into a one-page occupancy + construction type cheat sheet purely for last-week LEA drills.
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

@@ -57,7 +57,7 @@ Cognitive psychology shows that highlighting what has **changed** prevents proac
 | **Power Outage Operation**                | Elevator must remain operable for evacuation via backup/alternative power                   | Section 8, Elevators (power outage)[file:4]  | Critical for PWDs who cannot safely use stairs under NBC exit provisions.                                    | Mandatory                             |
 | **Car Configuration**                     | Through-type (front and rear doors) **preferred** for accessible cars                       | Section 8, Elevators (through-type)[file:4]  | Eliminates reversing; user enters from one side and exits forward on the other.                              | Preferred, not absolutely required    |
 
-<ArticleMedia id="media-elevator-car-dimensions" type="diagram" caption="Plan and section of accessible elevator car: 1200mm wide × 1400mm deep clear internal dimensions, 900mm clear door opening, handrails on both side walls and rear wall at 900mm height with max 150mm gap from wall, COP centerline at 900mm from car floor." />
+<ArticleMedia id="media-bp-344-elevator-dimensions-0" name="elevator-car-dimensions" type="diagram" caption="Plan and section of accessible elevator car: 1200mm wide × 1400mm deep clear internal dimensions, 900mm clear door opening, handrails on both side walls and rear wall at 900mm height with max 150mm gap from wall, COP centerline at 900mm from car floor." />
 
 <LawCallout code="bp344" section="Section 10.1 - Elevator Car Dimensions">
 
@@ -77,7 +77,7 @@ NBC Rule VIII establishes general minimum room and circulation sizes but does no
 
 </LawCallout>
 
-<ArticleMedia id="media-elevator-lobby-turning-space" type="diagram" caption="Comparative plan: elevator lobby 1800×1800mm turning space (full 360° wheelchair turn) vs. elevator car 1200×1400mm interior (too small for full turn). Shows 900mm door opening alignment and handrail positions on three car walls." />
+<ArticleMedia id="media-bp-344-elevator-dimensions-1" name="elevator-lobby-turning-space" type="diagram" caption="Comparative plan: elevator lobby 1800×1800mm turning space (full 360° wheelchair turn) vs. elevator car 1200×1400mm interior (too small for full turn). Shows 900mm door opening alignment and handrail positions on three car walls." />
 
 ---
 
@@ -122,7 +122,7 @@ Handrail details are commonly under‑reviewed, even though they interact concep
 | Location                      | **Both side walls and rear wall** | Section 8, Elevators (handrails)[file:4]   |
 | Gap between handrail and wall | Max **150 mm**                    | Section 8, Elevators (handrails).c[file:4] |
 
-<ArticleMedia id="media-elevator-braille-and-cop" type="diagram" caption="Elevation diagrams: (1) Braille floor indicators at 1200mm AFF on both side door jambs, (2) Car Operating Panel (COP) centerline at 900mm AFF with buttons min 20mm diameter and max 1mm depression, Braille text to left of each button, (3) Voice synthesizer speaker and emergency visual communication panel locations." />
+<ArticleMedia id="media-bp-344-elevator-dimensions-2" name="elevator-braille-and-cop" type="diagram" caption="Elevation diagrams: (1) Braille floor indicators at 1200mm AFF on both side door jambs, (2) Car Operating Panel (COP) centerline at 900mm AFF with buttons min 20mm diameter and max 1mm depression, Braille text to left of each button, (3) Voice synthesizer speaker and emergency visual communication panel locations." />
 
 <Callout variant="lea-watch" title="Trap Leart">
 

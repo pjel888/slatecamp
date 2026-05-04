@@ -14,7 +14,7 @@ After studying this article, you should be able to:
 
 In Design-Build by Administration, the architect provides comprehensive services including all regular design phases and construction management. The architect organizes and hires construction personnel, negotiates with contractors, procures materials and equipment, maintains accounts, and manages all business transactions related to project construction.
 
-<ArticleMedia id="media-lea-prac-svc-020-design-build-by-adminis" a type="image" caption="Design-Build by Administration vs. Guaranteed Maximum Cost — Risk Comparison" description="Comparison diagram contrasting two Design-Build models: Administration (architect manages construction, no cost guarantee, % of PCC fee, collaborative risk) vs. Guaranteed Maximum Cost (cost guaranteed ≤10% over estimate, architect bears financial risk, savings shared equally 50/50, 10% of PCC fee). Shows cost control mechanisms and liability thresholds for each." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-020-design-build-by-adminis" type="image" caption="Design-Build by Administration vs. Guaranteed Maximum Cost — Risk Comparison" description="Comparison diagram contrasting two Design-Build models: Administration (architect manages construction, no cost guarantee, % of PCC fee, collaborative risk) vs. Guaranteed Maximum Cost (cost guaranteed ≤10% over estimate, architect bears financial risk, savings shared equally 50/50, 10% of PCC fee). Shows cost control mechanisms and liability thresholds for each." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 This model places responsibility for technical excellence and professional coordination entirely on the architect.
 

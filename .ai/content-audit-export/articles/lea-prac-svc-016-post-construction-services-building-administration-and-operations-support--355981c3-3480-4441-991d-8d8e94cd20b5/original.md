@@ -4,7 +4,7 @@ After reading this article, you should understand the key concepts tested in the
 
 Post-Construction Services extend architectural involvement beyond project completion into building operations and facility management. SPP Doc 205 establishes the framework for comprehensive post-construction service offerings. These services recognize that buildings require sustained professional attention after occupancy to maintain performance, functionality, and value. Post-construction services require multi-disciplinary professional teams coordinating across specialized domains.
 
-<ArticleMedia id="media-lea-prac-svc-016-post-construction-servi" a type="image" caption="Post-Construction Services Process Flow — Building Administration and Operations" description="Workflow chart showing post-construction service categories: building maintenance → grounds/landscaping → equipment/systems management → post-construction evaluation → business development/tenant relations → ongoing retainer or on-call consultation. Based on SPP Doc 205." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-016-post-construction-servi" type="image" caption="Post-Construction Services Process Flow — Building Administration and Operations" description="Workflow chart showing post-construction service categories: building maintenance → grounds/landscaping → equipment/systems management → post-construction evaluation → business development/tenant relations → ongoing retainer or on-call consultation. Based on SPP Doc 205." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Rationale for Post-Construction Services
 

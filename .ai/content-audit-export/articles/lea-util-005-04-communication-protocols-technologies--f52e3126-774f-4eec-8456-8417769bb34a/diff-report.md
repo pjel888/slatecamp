@@ -1,26 +1,26 @@
 # Content Diff Report: lea-util-005-04-communication-protocols-technologies
 
-Generated: 2026-05-04T02:17:15.731Z
+Generated: 2026-05-04T09:13:42.060Z
 Article ID: f52e3126-774f-4eec-8456-8417769bb34a
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:cf489efd207a6243b825a1b44489f25455fca4376dbd6c15337d77fde3cab27f`
-- Normalized: `sha256:cf489efd207a6243b825a1b44489f25455fca4376dbd6c15337d77fde3cab27f`
-- Candidate: `sha256:2abdfaf1401a88e142fcb7a0edca239bb284d4a46626b9ee5d22e2cb5ec2ae0c`
+- Original: `sha256:c39bfb2ecc4b48b648b28b176134396f2439c06a601f7ce2ba75107399791a02`
+- Normalized: `sha256:068e34e33dc74dda859092c1e787d21d596df19659d431d1b35bdce5fe6de27b`
+- Candidate: `sha256:c39bfb2ecc4b48b648b28b176134396f2439c06a601f7ce2ba75107399791a02`
 
 ## Line summary
 
-- Changed lines: 92
-- Inserted lines: 4
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

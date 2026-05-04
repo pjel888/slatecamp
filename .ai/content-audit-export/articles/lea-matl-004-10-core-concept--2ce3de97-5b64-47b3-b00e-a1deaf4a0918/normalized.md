@@ -7,11 +7,11 @@ Identify preconstruction activities — site investigation, soil testing (SPT, p
 Modular/prefabricated systems manufacture building components (walls, volumetric modules, structural frames) in controlled factory environments, then assemble on-site. Advantages: quality control, parallel manufacturing and site work, reduced weather dependency, improved safety (factory vs. site hazards). Disadvantages: transportation logistics, higher upfront capital, site customization limits.
 
 
-<ArticleMedia id="media-site-investigation-flow" layout="single" type="image" status="placeholder"
-  alt="Flowchart showing preconstruction activities sequence: site investigation, soil testing, survey/staking, and temporary facilities"
-  caption="Future diagram: preconstruction activity workflow — site investigation through temporary facilities"
-  suggestedAsset="Process flowchart of preconstruction activities"
-  placementIntent="Shows the logical sequence of preconstruction activities" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-site-investigation-flow", layout="single", type="image", status="placeholder", alt="Flowchart showing preconstruction activities sequence: site investigation, soil testing, survey/staking, and temporary facilities", caption="Future diagram: preconstruction activity workflow — site investigation through temporary facilities", suggestedAsset="Process flowchart of preconstruction activities", placementIntent="Shows the logical sequence of preconstruction activities"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Prefabrication and Modular Construction
 
@@ -20,11 +20,11 @@ _Prefabrication_ manufactures components (walls, beams, trusses) in a plant for 
 _Modular Construction_ uses fully finished volumetric modules (bathrooms, kitchens, entire rooms). Modules are built in a plant, transported to site, and stacked/bolted together. Interior finishes, MEP (mechanical, electrical, plumbing) are factory-completed. Site work is minimal: foundation, external connections, testing. Advantages: factory quality, rapid on-site assembly (1–2 days per floor), labor reduction. Disadvantages: transportation (modules must fit highway limits: ~2.5 m width × 4 m height), higher capital cost for tooling.
 
 
-<ArticleMedia id="media-prefabrication-comparison" layout="single" type="image" status="placeholder"
-  alt="Comparison diagram of prefabrication, modular construction, 3D printing, ICF, and SIPs showing construction speed, quality, and cost factors"
-  caption="Future chart: modern construction methods comparison — prefabrication, modular, 3D printing, ICF, SIPs"
-  suggestedAsset="Comparison matrix of alternative construction methods"
-  placementIntent="Helps learners compare modern construction methods for appropriate selection" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-prefabrication-comparison", layout="single", type="image", status="placeholder", alt="Comparison diagram of prefabrication, modular construction, 3D printing, ICF, and SIPs showing construction speed, quality, and cost factors", caption="Future chart: modern construction methods comparison — prefabrication, modular, 3D printing, ICF, SIPs", suggestedAsset="Comparison matrix of alternative construction methods", placementIntent="Helps learners compare modern construction methods for appropriate selection"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ### 3D Printing (Additive Construction)
 
 _3D Concrete Printing_ deposits concrete layer-by-layer via robotic gantry or arm. Walls, structural elements, and custom shapes are printed directly. Advantages: design freedom, reduced waste, potentially lower labor. Disadvantages: printing speed (still slower than traditional formwork), material limitations (concrete only), unproven long-term durability, regulatory acceptance developing. Still experimental in Philippine context; primarily research and pilot projects.
@@ -75,15 +75,31 @@ The LEA evaluates alternative construction through:
 3. _Philippine applications_ — Recognize DPWH, NHA, bamboo standards and when they apply.
 4. _Cost/schedule analysis_ — Compare modular vs. traditional CIP or structural steel for feasibility.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Modular construction is most economical for repetitive multi-unit residential (towers, hospitality) where factory efficiency amortizes tooling cost. For single unique buildings, traditional methods are often cheaper. ICF is justified in high-insulation climates; tropical Philippines demand less insulation premium. Bamboo construction is emerging in sustainable/heritage projects; NBRC standards ensure structural adequacy.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Specifying Modular Without Transportation Planning", body="A developer specifies volumetric modules for a high-rise without evaluating highway access to site. Completed modules (2.5 m wide × 4 m tall) cannot fit through city streets or bridge overpasses. Modules must be transported via suboptimal routes, incurring extreme cost and delay. Always verify transportation routes before committing to modular."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Over-relying on 3D Printing for Complex Structures", body="A speculative designer proposes 3D-printed concrete walls for a 5-story building based on research project success. Printing speed is insufficient (weeks vs. traditional days), printer malfunction occurs (unproven repair), and structural quality verification requires extensive testing. Experimental technology is not suitable for time-critical projects."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: items="{[\"Assuming ICF is always cheaper than traditional formwork—in tropical Philippines, insulation premium is minimal, making ICF uncompetitive with conventional formwork.\", \"Overestimating container architecture durability—containers require welding modifications, corrosion treatment, and structural stiffening for wind/seismic. Hidden costs often exceed initial savings.\", \"Failing to account for factory tooling lead times—modular projects require 2–4 months for design and factory setup before production begins. Schedule must include this pre-production phase.\", \"Neglecting transportation logistics in modular specifications—highway restrictions (width, height, weight limits) constrain module size. Over-sized modules cannot be transported; project fails.\", \"Assuming bamboo construction is only for heritage/rural projects—NBRC standards enable bamboo in modern commercial buildings where sustainability/aesthetics are valued. Wider applications are emerging.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

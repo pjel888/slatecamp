@@ -8,7 +8,7 @@ Apply regulatory requirements for elevator design — PD 1096 minimum car dimens
 ### PD 1096 Requirements
 Mechanical Regulation No. 5 requires at least one passenger elevator with 24-hour service in apartments or residential condominiums of 5 storeys or more. This threshold establishes the minimum requirement for vertical transportation in medium-rise and taller structures. Buildings below 5 stories are exempt from this requirement but may still choose to install elevators for improved accessibility and property value.
 
-<ArticleMedia id="media-lea-util-002-06-regulatory-framework" a type="image" caption="Elevator Types — Traction, Hydraulic, Machine-Room-Less (MRL) Section Diagram" description="Three-panel elevation section showing: (1) Geared and gearless traction elevators with machine room above shaft, wire rope and sheave; (2) Hydraulic elevator with piston below car, machine room at pit level; (3) MRL elevator with compact motor mounted on guide rails, no dedicated machine room. Speed ranges and typical building heights annotated per PD 1096 classifications." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-06-regulatory-framework" type="image" caption="Elevator Types — Traction, Hydraulic, Machine-Room-Less (MRL) Section Diagram" description="Three-panel elevation section showing: (1) Geared and gearless traction elevators with machine room above shaft, wire rope and sheave; (2) Hydraulic elevator with piston below car, machine room at pit level; (3) MRL elevator with compact motor mounted on guide rails, no dedicated machine room. Speed ranges and typical building heights annotated per PD 1096 classifications." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 ### BP 344 (Accessibility Law)
@@ -92,7 +92,7 @@ The machine room must have:
 ### Shaft Dimensions
 The elevator shaft accommodates the car, counterweight, and guide rails. Typical shaft dimensions for a single 1000 kg elevator are approximately 2.0 m (width) × 2.5 m (depth), though dimensions vary based on car size and speed classification. Multi-car shafts require additional width (typically 1.0–1.5 m per additional car).
 
-<ArticleMedia id="media-lea-util-002-06-regulatory-framework" a type="image" caption="Elevator Shaft Section — Car, Counterweight, Guide Rails, Pit, and Overhead" description="Vertical section through a typical elevator shaft showing: overhead clearance (machine room or MRL zone), car with guide rails on both sides, counterweight traveling on separate rails, pit depth (1.0-1.5m for traction), buffer springs, and seismic switch location near top of shaft. Minimum car dimensions per BP 344 (1100mm × 1400mm) and door width (900mm) labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-06-regulatory-framework" type="image" caption="Elevator Shaft Section — Car, Counterweight, Guide Rails, Pit, and Overhead" description="Vertical section through a typical elevator shaft showing: overhead clearance (machine room or MRL zone), car with guide rails on both sides, counterweight traveling on separate rails, pit depth (1.0-1.5m for traction), buffer springs, and seismic switch location near top of shaft. Minimum car dimensions per BP 344 (1100mm × 1400mm) and door width (900mm) labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 ### Pit Depth

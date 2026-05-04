@@ -72,6 +72,7 @@ For all specialized services, the architect may enter into contract with the own
 
 </Callout>
 
+
 ***
 
 #### 203.2 Acoustic Design Services
@@ -161,6 +162,7 @@ The Consulting Architect performing CDP:
 **Note:** CDP ideally requires the architect to also be a separately qualified and licensed **Environmental Planner (EnP)**. If not, the Architect must engage duly qualified professionals as Specialist Consultants.
 
 </Callout>
+
 
 **Method of Compensation:** Through **man-months** (22 man-days × 8 man-hours/day), multiplied by a factor covering overhead and other direct/indirect costs, as prescribed in the Architect's Guidelines.
 
@@ -342,6 +344,7 @@ The Consulting Architect must have advanced knowledge of:
 
 </ComparisonTable>
 
+
 ***
 
 ## General Method of Compensation for All Specialized Services
@@ -374,6 +377,7 @@ Any other applicable mode of fee determination from **SPP Document 201** (MDPE),
 
 </ComparisonTable>
 
+
 ***
 
 ## Practical Notes for Architects and Clients
@@ -390,23 +394,15 @@ Any other applicable mode of fee determination from **SPP Document 201** (MDPE),
 
 ---
 
+
+
 ---
 
 ## Exam Tip
 
 LEA Trap: Nine specialized services: Interior Design, Landscape Architecture, Acoustics, Lighting, Preservation, Space Planning, Urban Design, Graphic Design, Expert Witness. Compensation: per-diem, fixed fee, or lump sum — NOT percentage of construction cost (unless the basic services contract also uses percentage). Expert witness is the only one with a forensic/legal character.
 
-
-
----
-
-## Exam Tip
-
-ALE Trap: Nine specialized services: Interior Design, Landscape Architecture, Acoustics, Lighting, Preservation, Space Planning, Urban Design, Graphic Design, Expert Witness. Compensation: per-diem, fixed fee, or lump sum — NOT percentage of construction cost (unless the basic services contract also uses percentage). Expert witness is the only one with a forensic/legal character.
-
 ## Cross‑References
 
 **Spp Doc 202 Regular Design Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 205 Post Construction Services**, **Spp Doc 209 Architectural Consulting Services Pacs**
 
-
-<!-- no-media-needed: SPP document reference, service scope text is optimal -->

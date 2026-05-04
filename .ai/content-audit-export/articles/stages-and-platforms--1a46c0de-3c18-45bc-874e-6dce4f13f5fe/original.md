@@ -299,7 +299,7 @@ D. 15.00 sq.m
 
 > **Answer: C**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout />
 
 ---
 
@@ -314,7 +314,7 @@ D. 14.00 sq.m
 
 > **Answer: C**
 >
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout />
 
 ---
 
@@ -329,7 +329,7 @@ D. 3-hour fire-resistive construction, extending at least 1.20 m above the audit
 
 > **Answer: B**
 >
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout />
 
 ---
 
@@ -362,7 +362,7 @@ ALE Trap: Platforms ≤ 1.20 m high are NOT classified as stages and do not requ
 
 
 
-<ArticleMedia type="image" caption="Stage and Platform Design — Proscenium Wall, Gridiron, and Projection Room Layout" description="Section and plan of a proscenium stage showing: stage floor, proscenium wall (2-hour fire rating, extending 1.20m above roof), stage ventilator (min 5% of stage floor area), gridiron and fly gallery, motion picture projection room (min 7.00 sqm + 3.50 sqm per additional projector), and two-exit requirement with doors separated by at least 1/3 of room perimeter." />
+<ArticleMedia id="media-stages-and-platforms-0" type="image" caption="Stage and Platform Design — Proscenium Wall, Gridiron, and Projection Room Layout" description="Section and plan of a proscenium stage showing: stage floor, proscenium wall (2-hour fire rating, extending 1.20m above roof), stage ventilator (min 5% of stage floor area), gridiron and fly gallery, motion picture projection room (min 7.00 sqm + 3.50 sqm per additional projector), and two-exit requirement with doors separated by at least 1/3 of room perimeter." />
 ## Cross‑References
 
 **Accessible Seating In Assembly Areas**, **Fixtures And Small Items In Common Areas**, **Fire Extinguishing Systems**, **Vertical Openings And Floor Roof Construction**

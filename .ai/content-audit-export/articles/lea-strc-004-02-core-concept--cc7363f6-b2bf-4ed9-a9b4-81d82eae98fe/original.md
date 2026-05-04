@@ -10,7 +10,7 @@ By the end of this article, you will be able to:
 The Philippines uses a 2-zone seismic system. Zone 1 is low-hazard (Z = 0.2); Zone 2 is high-hazard (Z = 0.4). The LEA tests zone lists, Z factors, and why they matter for base shear calculation.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-004-02-core-concept" a type="image" caption="Philippine Seismic Hazard Map — NSCP 2015 Zones" description="Map of the Philippines color-coded by NSCP 2015 seismic zone: Zone 1 (Z=0.2) in green — Palawan, Tawi-Tawi, Sulu; Zone 2 (Z=0.4) in red — all other provinces. Major active faults (Philippine Fault Zone, Valley Fault System) and historical earthquake M6+ events shown. Base shear formula inset showing Z coefficient application." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-004-02-core-concept" type="image" caption="Philippine Seismic Hazard Map — NSCP 2015 Zones" description="Map of the Philippines color-coded by NSCP 2015 seismic zone: Zone 1 (Z=0.2) in green — Palawan, Tawi-Tawi, Sulu; Zone 2 (Z=0.4) in red — all other provinces. Major active faults (Philippine Fault Zone, Valley Fault System) and historical earthquake M6+ events shown. Base shear formula inset showing Z coefficient application." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 The NSCP 2015 divides the Philippines into two seismic zones based on historical earthquake frequency and hazard. Each zone is assigned a seismic zone coefficient _Z_, which multiplies the design base shear directly.
 

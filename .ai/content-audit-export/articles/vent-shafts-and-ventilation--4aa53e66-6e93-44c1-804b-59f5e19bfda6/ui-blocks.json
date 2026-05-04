@@ -1,10 +1,10 @@
 {
   "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
   "slug": "vent-shafts-and-ventilation",
-  "normalized_created_at": "2026-05-01T13:33:44.046Z",
+  "normalized_created_at": "2026-05-04T09:10:36.714Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:d90d9f2c31a81da32d50bd440d5f5460d5542d42c4178968a1d58281b83e9b93",
-  "normalized_content_hash": "683c834e5e6170a0da54e48ae0934c18f6633c9f025778eb08e527a84043a19d",
+  "original_content_hash": "sha256:659ee75ca9ac357ff34f0e633a96d53d6f3b2a0f5157b998f295d2c8e1ec2096",
+  "normalized_content_hash": "sha256:6755cb5fb1eafbcd7b21e43abd83444eeb8f40faf2cdd5eef592b7257cadc4d7",
   "ui_block_count": 3,
   "total_blocks": 3,
   "blocks": [
@@ -14,22 +14,23 @@
       "component_name": "LawCallout",
       "raw": "<LawCallout code=\"pd1096\" section=\"Rule VIII - Ventilation\">\n\n\nPer PD 1096 Sec. 809-a, the required cross-sectional area = 0.10 sq.m × 16.50 m = 1.65 sq.m. This exceeds the absolute minimum of 1.00 sq.m, so 1.65 sq.m governs. The minimum least dimension is always ≥ 600 mm per Sec. 809-a, regardless of area. Option A applies the absolute minimum incorrectly (the formula result of 1.65 sq.m is larger and controls). Option C uses the wrong minimum dimension (300 mm belongs to the horizontal air duct, not the shaft). Option D uses neither the correct area nor the correct minimum dimension.\n\n\n</LawCallout>",
       "raw_hash": "sha256:2f2a56e9eb74e20a181879989dd292efe5dbdc954dea9d01f672d4a52e1a5795",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\"\n- Text: Per PD 1096 Sec. 809-a, the required cross-sectional area = 0.10 sq.m × 16.50 m = 1.65 sq.m. This exceeds the absolute minimum of 1.00 sq.m, so 1.65 sq.m governs. The minimum least dimension is always ≥ 600 mm per Sec. 809-a, regardless of area. Option A applies the absolute minimum incorrectly (the formula result of 1.65 sq.m is larger and controls). Option C uses the wrong minimum dimension (300 mm belongs to the horizontal air duct, not the shaft). Option D uses neither the correct area nor t\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:96f64e49f5d39c96c3642ecc29809320db84f6af2b79ff5e232458e33d806e57",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\", section=\"Rule VIII - Ventilation\"\n- Text: Per PD 1096 Sec. 809-a, the required cross-sectional area = 0.10 sq.m × 16.50 m = 1.65 sq.m. This exceeds the absolute minimum of 1.00 sq.m, so 1.65 sq.m governs. The minimum least dimension is always ≥ 600 mm per Sec. 809-a, regardless of area. Option A applies the absolute minimum incorrectly (the formula result of 1.65 sq.m is larger and controls). Option C uses the wrong minimum dimension (300 mm belongs to the horizontal air duct, not the shaft). Option D uses neither the correct area nor t\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:158740fd4466da2967e6c32700868676480b4b40c49c867b201b19b895430820",
       "props": {
-        "code": "nbcp"
+        "code": "pd1096",
+        "section": "Rule VIII - Ventilation"
       },
       "props_json": {
         "code": "pd1096",
         "section": "Rule VIII - Ventilation"
       },
-      "props_text": "code=pd1096, section=Rule VIII - Ventilation",
-      "children_raw": "\n\nPer PD 1096 Sec. 809-a, the required cross-sectional area = 0.10 sq.m × 16.50 m = 1.65 sq.m. This exceeds the absolute minimum of 1.00 sq.m, so 1.65 sq.m governs. The minimum least dimension is always ≥ 600 mm per Sec. 809-a, regardless of area. Option A applies the absolute minimum incorrectly (the formula result of 1.65 sq.m is larger and controls). Option C uses the wrong minimum dimension (300 mm belongs to the horizontal air duct, not the shaft). Option D uses neither the correct area nor the correct minimum dimension.\n\n",
+      "props_text": "code=\"pd1096\" section=\"Rule VIII - Ventilation\"",
+      "children_raw": "\n\n\nPer PD 1096 Sec. 809-a, the required cross-sectional area = 0.10 sq.m × 16.50 m = 1.65 sq.m. This exceeds the absolute minimum of 1.00 sq.m, so 1.65 sq.m governs. The minimum least dimension is always ≥ 600 mm per Sec. 809-a, regardless of area. Option A applies the absolute minimum incorrectly (the formula result of 1.65 sq.m is larger and controls). Option C uses the wrong minimum dimension (300 mm belongs to the horizontal air duct, not the shaft). Option D uses neither the correct area nor the correct minimum dimension.\n\n\n",
       "children_text": "Per PD 1096 Sec. 809-a, the required cross-sectional area = 0.10 sq.m × 16.50 m = 1.65 sq.m. This exceeds the absolute minimum of 1.00 sq.m, so 1.65 sq.m governs. The minimum least dimension is always ≥ 600 mm per Sec. 809-a, regardless of area. Option A applies the absolute minimum incorrectly (the formula result of 1.65 sq.m is larger and controls). Option C uses the wrong minimum dimension (300 mm belongs to the horizontal air duct, not the shaft). Option D uses neither the correct area nor t",
-      "start_offset": 16491,
-      "end_offset": 17061,
-      "line_start": 216,
-      "line_end": 220,
+      "start_offset": 16710,
+      "end_offset": 17318,
+      "line_start": 222,
+      "line_end": 228,
       "parser_confidence": "high",
       "parse_status": "parsed",
       "warnings": [],
@@ -41,24 +42,23 @@
       "component_name": "LawCallout",
       "raw": "<LawCallout code=\"pd1096\" section=\"Rule VIII - Vent Shafts\">\n\n\nPer PD 1096 Sec. 809-b, when the shaft does not open directly to outer air, it must be covered by a skylight or fixed louvers with a net free area ≥ the maximum required cross-sectional area of the shaft. The maximum required area here is 1.80 sq.m. The 1.20 sq.m louvered panel provides only 67% of the required free area — it is non-compliant. The code does not permit a reduction below the maximum required shaft area for the covering. Option D is wrong because fixed louvers are explicitly permitted by Sec. 809-b alongside skylights.\n\n\n</LawCallout>",
       "raw_hash": "sha256:78e72154d6f93307d96fd6e5e3f31344ee3472ec23b1f903af970a4e1da4ba77",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\", title=\"it is non-compliant. The code does not permit a reduction below the maximum requ\"\n- Text: Per PD 1096 Sec. 809-b, when the shaft does not open directly to outer air, it must be covered by a skylight or fixed louvers with a net free area ≥ the maximum required cross-sectional area of the shaft. The maximum required area here is 1.80 sq.m. The 1.20 sq.m louvered panel provides only 67% of the required free area — it is non-compliant. The code does not permit a reduction below the maximum required shaft area for the covering. Option D is wrong because fixed louvers are explicitly permit\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:d87fc0da069765c02a48b35cc055647e31acf90747ced109c325a2bb9f8fcdb8",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\", section=\"Rule VIII - Vent Shafts\"\n- Text: Per PD 1096 Sec. 809-b, when the shaft does not open directly to outer air, it must be covered by a skylight or fixed louvers with a net free area ≥ the maximum required cross-sectional area of the shaft. The maximum required area here is 1.80 sq.m. The 1.20 sq.m louvered panel provides only 67% of the required free area — it is non-compliant. The code does not permit a reduction below the maximum required shaft area for the covering. Option D is wrong because fixed louvers are explicitly permit\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:2e899930c589cb7ba261e8e42dae7ea9b1fb0438492c8549b63a99163f98610b",
       "props": {
-        "code": "nbcp",
-        "title": "it is non-compliant. The code does not permit a reduction below the maximum requ"
+        "code": "pd1096",
+        "section": "Rule VIII - Vent Shafts"
       },
       "props_json": {
         "code": "pd1096",
-        "title": "it is non-compliant. The code does not permit a reduction below the maximum requ",
         "section": "Rule VIII - Vent Shafts"
       },
-      "props_text": "code=pd1096, title=it is non-compliant. The code does not permit a reduction below the maximum requ, section=Rule VIII - Vent Shafts",
-      "children_raw": "\n\nPer PD 1096 Sec. 809-b, when the shaft does not open directly to outer air, it must be covered by a skylight or fixed louvers with a net free area ≥ the maximum required cross-sectional area of the shaft. The maximum required area here is 1.80 sq.m. The 1.20 sq.m louvered panel provides only 67% of the required free area — it is non-compliant. The code does not permit a reduction below the maximum required shaft area for the covering. Option D is wrong because fixed louvers are explicitly permitted by Sec. 809-b alongside skylights.\n\n",
+      "props_text": "code=\"pd1096\" section=\"Rule VIII - Vent Shafts\"",
+      "children_raw": "\n\n\nPer PD 1096 Sec. 809-b, when the shaft does not open directly to outer air, it must be covered by a skylight or fixed louvers with a net free area ≥ the maximum required cross-sectional area of the shaft. The maximum required area here is 1.80 sq.m. The 1.20 sq.m louvered panel provides only 67% of the required free area — it is non-compliant. The code does not permit a reduction below the maximum required shaft area for the covering. Option D is wrong because fixed louvers are explicitly permitted by Sec. 809-b alongside skylights.\n\n\n",
       "children_text": "Per PD 1096 Sec. 809-b, when the shaft does not open directly to outer air, it must be covered by a skylight or fixed louvers with a net free area ≥ the maximum required cross-sectional area of the shaft. The maximum required area here is 1.80 sq.m. The 1.20 sq.m louvered panel provides only 67% of the required free area — it is non-compliant. The code does not permit a reduction below the maximum required shaft area for the covering. Option D is wrong because fixed louvers are explicitly permit",
-      "start_offset": 17757,
-      "end_offset": 18425,
-      "line_start": 235,
-      "line_end": 239,
+      "start_offset": 18000,
+      "end_offset": 18617,
+      "line_start": 243,
+      "line_end": 249,
       "parser_confidence": "high",
       "parse_status": "parsed",
       "warnings": [],
@@ -70,22 +70,23 @@
       "component_name": "LawCallout",
       "raw": "<LawCallout code=\"pd1096\" section=\"Rule VIII - Light Courts\">\n\n\n≥ 3 ACH for spaces above grade, and ≥ 6 ACH for rooms below grade. A below-grade workshop falls into the 6 ACH category regardless of the type of work performed therein. The proposed 4 ACH meets the above-grade threshold but falls short of the below-grade requirement. Option A applies the above-grade rate to a below-grade space. Option D invents a 10 ACH rate not found in Sec. 811 (though higher rates may apply under sector-specific codes such as DOH standards for hospital spaces). The correct answer is C.\n\n\n</LawCallout>",
       "raw_hash": "sha256:8fda922db895ef85fc1a7794f5a4515b6e5cebaa9c10221e71b678a6e3997f3a",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\"\n- Text: ≥ 3 ACH for spaces above grade, and ≥ 6 ACH for rooms below grade. A below-grade workshop falls into the 6 ACH category regardless of the type of work performed therein. The proposed 4 ACH meets the above-grade threshold but falls short of the below-grade requirement. Option A applies the above-grade rate to a below-grade space. Option D invents a 10 ACH rate not found in Sec. 811 (though higher rates may apply under sector-specific codes such as DOH standards for hospital spaces). The correct a\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:82247d89f0e0e544b369803a9d370a3448ac2fe223932d78dd6dab71658b066f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\", section=\"Rule VIII - Light Courts\"\n- Text: ≥ 3 ACH for spaces above grade, and ≥ 6 ACH for rooms below grade. A below-grade workshop falls into the 6 ACH category regardless of the type of work performed therein. The proposed 4 ACH meets the above-grade threshold but falls short of the below-grade requirement. Option A applies the above-grade rate to a below-grade space. Option D invents a 10 ACH rate not found in Sec. 811 (though higher rates may apply under sector-specific codes such as DOH standards for hospital spaces). The correct a\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:8243fae68857e14be60f11efb0c83c950acd3807dad4eab429245d0db55d5034",
       "props": {
-        "code": "nbcp"
+        "code": "pd1096",
+        "section": "Rule VIII - Light Courts"
       },
       "props_json": {
         "code": "pd1096",
         "section": "Rule VIII - Light Courts"
       },
-      "props_text": "code=pd1096, section=Rule VIII - Light Courts",
-      "children_raw": "\n\n≥ 3 ACH for spaces above grade, and ≥ 6 ACH for rooms below grade. A below-grade workshop falls into the 6 ACH category regardless of the type of work performed therein. The proposed 4 ACH meets the above-grade threshold but falls short of the below-grade requirement. Option A applies the above-grade rate to a below-grade space. Option D invents a 10 ACH rate not found in Sec. 811 (though higher rates may apply under sector-specific codes such as DOH standards for hospital spaces). The correct answer is C.\n\n",
+      "props_text": "code=\"pd1096\" section=\"Rule VIII - Light Courts\"",
+      "children_raw": "\n\n\n≥ 3 ACH for spaces above grade, and ≥ 6 ACH for rooms below grade. A below-grade workshop falls into the 6 ACH category regardless of the type of work performed therein. The proposed 4 ACH meets the above-grade threshold but falls short of the below-grade requirement. Option A applies the above-grade rate to a below-grade space. Option D invents a 10 ACH rate not found in Sec. 811 (though higher rates may apply under sector-specific codes such as DOH standards for hospital spaces). The correct answer is C.\n\n\n",
       "children_text": "≥ 3 ACH for spaces above grade, and ≥ 6 ACH for rooms below grade. A below-grade workshop falls into the 6 ACH category regardless of the type of work performed therein. The proposed 4 ACH meets the above-grade threshold but falls short of the below-grade requirement. Option A applies the above-grade rate to a below-grade space. Option D invents a 10 ACH rate not found in Sec. 811 (though higher rates may apply under sector-specific codes such as DOH standards for hospital spaces). The correct a",
-      "start_offset": 19081,
-      "end_offset": 19633,
-      "line_start": 254,
-      "line_end": 258,
+      "start_offset": 19259,
+      "end_offset": 19850,
+      "line_start": 264,
+      "line_end": 270,
       "parser_confidence": "high",
       "parse_status": "parsed",
       "warnings": [],
@@ -94,5 +95,5 @@
   ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:f02fad0fbaf6a999f14177ed3f752e0640592103986b3a58c34a948d988ce1a0"
+  "ui_blocks_hash": "sha256:07ba9e00dede3290406b918ce82c617c68de4ac02115fbfcc883acbc56a1b718"
 }

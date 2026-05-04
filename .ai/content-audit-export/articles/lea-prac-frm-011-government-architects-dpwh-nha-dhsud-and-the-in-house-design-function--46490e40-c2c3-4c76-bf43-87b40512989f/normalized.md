@@ -15,7 +15,11 @@ After studying this article, you should be able to:
 
 Government architects operate within a distinct regulatory and contractual framework. Unlike private practitioners bound by service agreements and civil liability under Article 1723 of the Civil Code, government architects work under civil service rules and budget appropriations. However, they must still uphold the professional standards defined in RA 9266 and comply with the same technical codes—the National Building Code, BP 344, and environmental regulations—as private firms.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Government architects work under civil service rules and budget appropriations, not private service agreements. However, they must still uphold RA 9266 professional standards and comply with the same technical codes — National Building Code, BP 344, and environmental regulations — as private firms.
+[/SLATECAMP_UI_BLOCK]
 
 The architect-of-record for government projects must be a licensed, registered architect personally responsible for design quality and code compliance. This responsibility does not diminish whether the architect works in-house or as a private consultant. Government projects subject to public bidding must comply with RA 9184 (Government Procurement Reform Act) procedures, which may affect how design services are procured and delivered.
 
@@ -47,7 +51,11 @@ Architects working on government projects must understand audit requirements and
 
 
 
-<ArticleMedia type="image" caption="Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles" alt="Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-frm-011-government-ar-0", type="image", caption="Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles", description="Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

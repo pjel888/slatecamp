@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-frm-002-partnership-in-architectural-practice
 
-Generated: 2026-05-04T02:17:15.564Z
+Generated: 2026-05-04T09:13:41.943Z
 Article ID: 387760f0-6468-40d6-b78e-a463c9f543b2
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:3b8ed11837358f3a6629e965b41d02fdf8f7bf7a452e87887db82dc1f99062d3`
-- Normalized: `sha256:9c1fbcc5c4c2a9578aa773a2cdde53814abfebd86408c40f94c9c0f24c780c31`
-- Candidate: `sha256:3b8ed11837358f3a6629e965b41d02fdf8f7bf7a452e87887db82dc1f99062d3`
+- Original: `sha256:abd87bb2ae8694faed75ab6c2df26590fa6f5787b699ded61dc0e010887d611d`
+- Normalized: `sha256:f7281d0abee85db7903d765b8b3b14aa9118e43a18572870a41a7bbc65bee148`
+- Candidate: `sha256:abd87bb2ae8694faed75ab6c2df26590fa6f5787b699ded61dc0e010887d611d`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

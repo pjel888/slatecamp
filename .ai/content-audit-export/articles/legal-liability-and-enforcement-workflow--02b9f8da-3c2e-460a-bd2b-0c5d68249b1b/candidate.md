@@ -12,6 +12,7 @@ After reading this article, you should be able to:
 Explain the Building Official's enforcement workflow — Notice of Violation, Work Stoppage Order, Demolition Order, Administrative Fines — under PD 1096 Rule II; distinguish Light, Less Grave, and Grave violations and their corresponding fines; apply the surcharge calculation for illegal construction; and identify the appeal process for contested orders.
 ---
 
+
 A man in a manual wheelchair approaches the entrance of a newly opened three-storey mall in Cebu. There is no ramp. There is no curb cut from the parking lot. The only entrance is up four steps. He photographs everything, calls the NCDA hotline, and files a written complaint with the City Building Official that same afternoon. Within 72 hours, a stop-work order is posted on the building's Certificate of Occupancy — a document the mall paid 18 months to obtain. The architect of record receives a notice from the PRC. The building owner faces a criminal complaint. The structural engineer is left wondering: *how did a four-step entrance cost everyone this much?* This module is your complete map of that enforcement chain — every actor, every remedy, every penalty.
 
 ---
@@ -454,5 +455,3 @@ A: Yes — administrative (CSC/Ombudsman) and criminal (PD 1096 Sec. 213) liabil
 
 **Building Permit Process**, **Dangerous And Ruinous Buildings**, **Typology Checklists And Plan Checking**, **Certificate Of Occupancy**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

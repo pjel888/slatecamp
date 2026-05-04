@@ -16,6 +16,7 @@ After reading this article, you should be able to:
 Apply the minimum requirements for Group A (Residential) dwellings under PD 1096 Rule VII: minimum lot area, floor area, setback, light and ventilation, and sanitary facilities per unit type (single-family, duplex, apartment, townhouse); distinguish Group A-1 through A-4 by density and configuration.
 ---
 
+
 It is 6:30 in the morning in a barangay in Cavite. The Dela Cruz family — father, mother, grandmother, and three children — wake up in a house that is legally classified as a Group A dwelling, a single-family residence. The kitchen is barely large enough for two people to work in simultaneously. The toilet is tucked under the staircase. The youngest child's bedroom gets no direct light from outside; a borrowed window faces a narrow court between the house and the next property. The house was built without a building permit, without a licensed architect, without any reference to the National Building Code of the Philippines.
 
 Three years later, the family is selling the property to buy something bigger. A buyer's due diligence reveals the house was never issued a Certificate of Occupancy. The municipal Building Official inspects the structure and finds that the toilet room's area is only 0.85 square meters — below the 1.20 square meters required by PD 1096. The habitable rooms fail the minimum 6.00 square meter floor area rule. The corner lot coverage is at 92%, exceeding the 90% maximum. The slea falls through. The family loses two months of paperwork, a lawyer's fees, and the buyer's earnest money.
@@ -387,6 +388,8 @@ LEA Area: Building Technology — National Building Code of the Philippines
 
 ---
 
+
+
 ---
 
 ## Cross‑References
@@ -407,5 +410,3 @@ LEA Area: Building Technology — National Building Code of the Philippines
 - **Batas Pambansa Bilang 344** — Accessibility Law of the Philippines and its Implementing Rules; minimum toilet room dimensions for accessible design (supersede PD 1096 minimums for accessible elements)
 - **National Structural Code of the Philippines (NSCP)** — Foundation requirements, soil classification, and seismic design standards; implements the "firm ground" requirement of Sec. 708(d)
 - **National Housing Authority (NHA) Standards** — Minimum dwelling unit standards for socialized and economic housing in the Philippines (implementing agency guidelines for Group A dwellings in government housing programs)
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -7,7 +7,7 @@ Identify the key PEC provisions tested on the LEA — service sizing, branch cir
 
 Key takeaways for the LEA:
 
-<ArticleMedia id="media-lea-util-003-08-summary-for-exam-prepara" a type="image" caption="PEC Key Provisions Summary — Service Sizing, Branch Circuits, Voltage Drop, Grounding" description="Visual summary of PEC exam topics: service entrance sizing (main breaker at 125% continuous load), branch circuit minimums (15A general, 20A kitchen/laundry), voltage drop limits (3% branch, 5% combined), grounding requirements (25 ohms max, 2 ground rods if exceeded), panel spare capacity (25%), and the 80% continuous load rule. All values referenced to PEC 2021 Articles." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-08-summary-for-exam-prepara" type="image" caption="PEC Key Provisions Summary — Service Sizing, Branch Circuits, Voltage Drop, Grounding" description="Visual summary of PEC exam topics: service entrance sizing (main breaker at 125% continuous load), branch circuit minimums (15A general, 20A kitchen/laundry), voltage drop limits (3% branch, 5% combined), grounding requirements (25 ohms max, 2 ground rods if exceeded), panel spare capacity (25%), and the 80% continuous load rule. All values referenced to PEC 2021 Articles." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 1. **Sizing formula:** System (kWp) = Load (kWh/day) ÷ [PSH × PR]. Philippine PSH = 4.5–5.5; PR typically 0.75–0.85.
@@ -67,13 +67,13 @@ See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-[SLATECAMP_UI_BLOCK:ui_repaired_006 component="Note" status="preserved"]
+
 Extracted summary:
 - Props: title='Philippine Regulatory Framework' variant='info'
 - Text: Under the Renewable Energy Act (RA 9513) and DOE Circular DC2013-05-0009 (as amended by DC2026-02-0008 and subsequent circulars), grid-tied PV systems operate under net metering policy. Note: DC2026-02-0008 (issued February 2026) introduces mandatory energy storage requirements for variable renewable energy plants ≥10 MW. Excess generation is credited at the end-user rate (not the feed-in tariff). The National Electrical Code (NEC) and PEC (Philippine Electrical Code) requirements mandate instal
-[/SLATECAMP_UI_BLOCK:ui_0001 component="WikiCalloutBox" status="preserved"]
+
 
 <Note>
 Duty-free import and VAT exemption on PV equipment under RA 9513 (Renewable Energy Act) and DOE implementing rules (DNER 2021-02-0002). Regional electric cooperatives may offer rebates for connected members. Check with local government for property tax holidays on solar installations (some LGUs grant 5–10 year exemptions).
-[/SLATECAMP_UI_BLOCK:ui_0011 component="WikiCalloutBox" status="preserved"]
+
 </Note>

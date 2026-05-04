@@ -7,11 +7,11 @@ Classify construction equipment (excavators, cranes, concrete pumps, compactors)
 Construction equipment delivers site materials, shapes terrain, lifts heavy loads, and consolidates materials. Proper equipment selection based on task, site constraints, and production rates optimizes construction schedules and reduces labor costs.
 
 
-<ArticleMedia id="media-construction-equipment-chart" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of construction equipment — excavators, cranes, concrete pumps, compactors — with lifting capacity, reach, and application"
-  caption="Future chart: construction equipment types — capacity, reach, and site application"
-  suggestedAsset="Equipment comparison chart with silhouette illustrations"
-  placementIntent="Helps learners select appropriate equipment for construction tasks" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-construction-equipment-chart", layout="single", type="image", status="placeholder", alt="Comparison chart of construction equipment — excavators, cranes, concrete pumps, compactors — with lifting capacity, reach, and application", caption="Future chart: construction equipment types — capacity, reach, and site application", suggestedAsset="Equipment comparison chart with silhouette illustrations", placementIntent="Helps learners select appropriate equipment for construction tasks"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Earthmoving Equipment
 
@@ -26,11 +26,11 @@ _Motor Grader_ — Wheeled machine with central blade for fine grading and surfa
 _Wheel Loader_ — Front-bucket loader on wheels. Bucket: 2–5 m³. Used for material loading, stockpile management, horizontal material movement. Power: 100–200 kW. Fast horizontal movement; not ideal for vertical lifting.
 
 
-<ArticleMedia id="media-equipment-application-chart" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of construction equipment types with excavation volume, lifting capacity, reach, and site application suitability"
-  caption="Future chart: construction equipment comparison — capacity, reach, and site application"
-  suggestedAsset="Equipment selection matrix or comparison infographic"
-  placementIntent="Helps learners match equipment types to construction tasks" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-equipment-application-chart", layout="single", type="image", status="placeholder", alt="Comparison chart of construction equipment types with excavation volume, lifting capacity, reach, and site application suitability", caption="Future chart: construction equipment comparison — capacity, reach, and site application", suggestedAsset="Equipment selection matrix or comparison infographic", placementIntent="Helps learners match equipment types to construction tasks"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ### Lifting Equipment
 
 _Tower Crane_ — Vertical mast-mounted crane, stationary during project. Capacity: 10–100 tonnes. Reach: up to 60 m horizontal, 200+ m height. Standard for high-rise buildings. Loading capacity depends on boom length and hook height. Essential for high-rise residential/commercial in Philippine cities. Setup/dismantling: 1–2 weeks.
@@ -93,15 +93,31 @@ The LEA evaluates equipment knowledge through:
 3. _Site logistics_ — Identify space/access constraints and recommend equipment accordingly (tower crane vs. mobile crane, concrete pump reach, equipment staging areas).
 4. _Environmental and safety considerations_ — Address noise, dust control, wastewater management, worker safety near equipment.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Tower cranes dominate high-rise construction in Philippine cities due to efficiency and vertical reach. For excavation, match excavator bucket size to truck haul capacity (avoid idle time). Concrete pumps are essential above 5 stories; pump reach must be verified to cover all placement areas. Equipment rental costs are significant; plan scheduling carefully to minimize idle time.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Undersized Excavator Delaying Schedule", body="A project hires a 0.5 m³ backhoe for excavation requiring 5,000 m³ removal. At 200 m³/day output, excavation takes 25 days. A 2.0 m³ excavator would complete in 6–8 days. Cost of upgrade is recovered in schedule savings. Always size equipment to match production requirements, not budget minimization."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Concrete Pump Reach Inadequate for Building Geometry", body="A 20-story tower has irregular floor plan with cantilevers 40 m from the tower core. The specified concrete pump has 35 m horizontal reach, leaving some areas inaccessible. Concrete must be bucketted or conveyed, slowing placement and increasing labor. Verify pump reach against site geometry before specification."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: items="{[\"Underestimating concrete pump cost as part of project—pump rental (PHP 10,000–18,000/day) is justified for buildings above 5–10 stories; bucket hoisting is slower and more labor-intensive.\", \"Neglecting soil compaction testing—equipment alone does not guarantee specified density. Standard Proctor testing verifies density achievement; under-compacted soil risks foundation settlement.\", \"Staging equipment in constrained site without traffic management—construction equipment movement through populated areas requires traffic control plans, MMDA permits in Manila, and coordination with local governments.\", \"Equipment noise/dust without environmental controls—Philippine urban areas have strict noise ordinances (especially residential zones). Dust suppression and noise barriers are mandatory per DENR and local ordinances.\", \"Failing to account for tower crane setup/dismantling time—1–2 weeks for installation/removal; this is critical path for schedule. Budget time and costs before project start.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

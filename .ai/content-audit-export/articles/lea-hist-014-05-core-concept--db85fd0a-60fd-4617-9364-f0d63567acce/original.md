@@ -78,7 +78,7 @@ Questions ask how contemporary architecture responds to modernism and postmodern
 
 **Contextual Architecture** — Contemporary approach integrating buildings with local geography, climate, culture, and existing structures; rejects modernism's universal principles while accepting environmental responsibility.
 
-<ArticleMedia id="media-hist-014-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of International Style characteristics in American corporate towers: Lake Shore Drive Apartments (Mies, steel and glass), Seagram Building (Mies, bronze curtain wall), and Lever House (Skidmore Owings Merrill, green glass curtain wall).\" caption=\"International Style in America — Corporate Towers\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-014-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of International Style characteristics in American corporate towers: Lake Shore Drive Apartments (Mies, steel and glass), Seagram Building (Mies, bronze curtain wall), and Lever House (Skidmore Owings Merrill, green glass curtain wall)." caption="International Style in America — Corporate Towers" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

@@ -58,22 +58,38 @@ The direct supervision requirement applies distinctly to each professional's sco
 
 If a specialist presents drawings that conflict with the architect's design, or that the architect believes are inadequate, the architect should refuse to proceed until the conflict is resolved. The architect should not sign architectural documents knowing that coordination problems exist with structural, mechanical, or other drawings. Professional responsibility requires that all members of the design team work collaboratively to produce an integrated, conflict-free design before documents are signed and sealed.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 33 - Prohibition"
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 20 (Signing and Sealing), 21 (Direct Supervision), and 22 (Disciplinary Actions). The prohibition against signing/sealing documents not prepared under direct supervision.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: code="ra9266" title="RA 9266 Sections 20-22 — Signing, Sealing, and Discipline"
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 20 (Signing and Sealing), 21 (Direct Supervision), and 22 (Disciplinary Actions). The prohibition against signing/sealing documents not prepared under direct supervision.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ CRITICAL: Section 22 RA 9266 makes it a DISCIPLINARY VIOLATION to sign/seal documents not prepared under your direct supervision. This is one of the most commonly tested violations. Penalties include suspension or revocation of the Certificate of Registration. — expect this as a trap answer on the LEA.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Direct supervision = personal knowledge of AND control over design decisions. Delegation of drafting tasks is permitted, but the supervising architect must review and approve the work. 'Rubber stamping' plans without review is a violation.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Disciplinary actions under Section 22: (1) Reprimand, (2) Suspension of Certificate of Registration (temporary), (3) Revocation of Certificate of Registration (permanent). The PRBoA conducts the investigation and the Commission may review on appeal.
@@ -82,7 +98,11 @@ Extracted summary:
 
 
 
-<ArticleMedia type="image" caption="Signing and Sealing — Authority, Delegation, and Disciplinary Exposure" alt="Flowchart showing signing/sealing rules: Does document contain architectural work? → Yes → Was it under architect's direct supervision? → Yes → Architect signs/seals; No → Prohibited. Side panel shows: who can sign/seal (registered architect only), what must be sealed (contract documents, not promotional materials), delegation rules (work by subordinates under supervision is OK), disciplinary consequences of unauthorized sealing." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-law-017-the-signing-s-0", type="image", caption="Signing and Sealing — Authority, Delegation, and Disciplinary Exposure", description="Flowchart showing signing/sealing rules: Does document contain architectural work? → Yes → Was it under architect's direct supervision? → Yes → Architect signs/seals; No → Prohibited. Side panel shows: who can sign/seal (registered architect only), what must be sealed (contract documents, not promotional materials), delegation rules (work by subordinates under supervision is OK), disciplinary consequences of unauthorized sealing."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)
@@ -94,7 +114,8 @@ Extracted summary:
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
 
-<Note>
-(none detected)
-[/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected) [/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+[/SLATECAMP_UI_BLOCK]

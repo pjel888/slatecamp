@@ -1,26 +1,26 @@
 # Content Diff Report: lea-util-005-03-design-considerations-and-best-practices
 
-Generated: 2026-05-04T02:17:36.983Z
+Generated: 2026-05-04T09:13:55.840Z
 Article ID: 881027cd-2be0-4c93-af86-4f801ec16882
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:edef1b2fcc574fe964c5b8d855d634b0e3e4369256e10592a94e9203b4cf20c3`
-- Normalized: `sha256:d19a103f11279e265a385c497b876b7395d00ae2704acb88a17d00a186223df5`
-- Candidate: `sha256:672809873d32040eb27f8b472e5b615e90e90f562d842618f577e2d27bcd0e9d`
+- Original: `sha256:2d29c4d637eba5a9195f0c8660ab8d3163761fc3afd03a83100aed700e011cb1`
+- Normalized: `sha256:30202d0d3a47bb90c01052b90b9eb4db5c469a3a8227146fb24ef204339426d1`
+- Candidate: `sha256:2d29c4d637eba5a9195f0c8660ab8d3163761fc3afd03a83100aed700e011cb1`
 
 ## Line summary
 
-- Changed lines: 5
+- Changed lines: 0
 - Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 10
+- UI blocks preserved: 10
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

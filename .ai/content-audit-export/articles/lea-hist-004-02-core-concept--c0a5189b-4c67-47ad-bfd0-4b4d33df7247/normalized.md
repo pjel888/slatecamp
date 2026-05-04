@@ -7,43 +7,95 @@ Distinguish Umayyad (Roman/Byzantine borrowing, hypostyle halls, mosaic decorati
 The **Umayyad** (661–750 CE) and **Abbasid** (750–945 CE) dynasties established two distinct Islamic architectural visions that shaped all subsequent regional development.
 
 
-<ArticleMedia id="media-hist-004-02-core-concept" layout="single" type="image" status="placeholder" alt="Interior of the Great Mosque of Damascus (706–715 CE, Umayyad Caliph al-Walid I), showing the arcaded hypostyle prayer hall with reused Roman and Byzantine columns and gold-glass mosaics." caption="Great Mosque of Damascus — Umayyad Hypostyle Prayer Hall" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-004-02-core-concept", layout="single", type="image", status="placeholder", alt="Interior of the Great Mosque of Damascus (706–715 CE, Umayyad Caliph al-Walid I), showing the arcaded hypostyle prayer hall with reused Roman and Byzantine columns and gold-glass mosaics.", caption="Great Mosque of Damascus — Umayyad Hypostyle Prayer Hall", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 **Umayyad architecture** reflects a dynasty that conquered vast territories and borrowed from Roman, Byzantine, and Persian traditions. Umayyad rulers were pragmatic: they reused columns from destroyed Byzantine temples, maintained Roman city grids, and adapted the palace typology to Islamic needs. The Umayyad period is marked by direct, energetic solutions. Mosques adopted the hypostyle plan (forest of columns supporting a flat roof)—economical, expandable, and structurally straightforward. Decoration remained restrained; geometric patterns and vegetal arabesques emerged, but muqarnas had not yet developed. Minarets appeared as towers integral to the qibla wall (not separate freestanding structures). The **desert palace** (qasr) is the Umayyad signature: a fortified aristocratic retreat combining Roman military logistics with Islamic spatial hierarchies. These palaces featured reception halls (iwans), courtyards, hammams (baths), and hunting reserves.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Umayyad vs. Abbasid—the key distinction:** - **Umayyad** (661–750): Roman/Byzantine borrowing, reused columns, hypostyle, restrained decoration, *integrated* minarets - **Abbasid** (750+): Persian/Mesopotamian innovation, *brick* construction, muqarnas, monumental iwans, *separate* towers Memory aid: **U = Reuse** (Roman columns), **A = Advance** (new technologies).
+[/SLATECAMP_UI_BLOCK]
 
 **Abbasid architecture** marks a conceptual shift. The Abbasids moved the capital from Damascus (Umayyad stronghold) to Baghdad (founded 762 CE), signaling a reorientation toward Mesopotamia and Persia. Abbasid design grew more ornate, more geometrically adventurous, and more explicitly anti-Byzantine. Muqarnas emerged and rapidly developed. The iwan became a dominant spatial element—a monumental vaulted recess framing entrances or prayer halls. Brick replaced stone as the primary material in Mesopotamia; this shift enabled new vault forms and allowed taller structures. Dome technology advanced. Mosques became larger, more centralized, with expanded sponsorship from merchant guilds and wealthy patrons. The Abbasid courtyard model emphasized inward focus and privacy; the exterior remained largely unmarked (a contrast to Umayyad directness). While the Abbasid Caliphate continued until 1258, its architectural dominance declined after the 10th century, particularly after 945 CE when the Buyids took effective military control.
 
 These two periods represent not a simple progression but a cultural reorientation. Umayyad is Roman-Mediterranean; Abbasid is Mesopotamian-Persian. Umayyad uses columns inherited from classical antiquity; Abbasid builds from scratch with brick and invents new decorative technologies. Understanding this distinction is essential to recognizing later Islamic development.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The Dome of the Rock (691 CE) is NOT a mosque—it is a shrine commemorating the Prophet Muhammad's night journey. It lacks a mihrab and courtyard in the traditional mosque sense. Recognizing its unique centralized-domed typology (not hypostyle) and spiritual function distinguishes it from contemporary prayer buildings. This distinction is directly tested on the LEA.
+[/SLATECAMP_UI_BLOCK]
 
 
-<ArticleMedia id="media-hist-004-02-core-concept" layout="single" type="image" status="placeholder" alt="The Malwiya Minaret at the Great Mosque of Samarra (848–852 CE, Abbasid Caliph al-Mutawakkil), showing the spiral ramp form and characteristic Abbasid brick construction with carved stucco decoration." caption="Abbasid Brick Architecture — Samarra Mosque Minaret" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-004-02-core-concept", layout="single", type="image", status="placeholder", alt="The Malwiya Minaret at the Great Mosque of Samarra (848–852 CE, Abbasid Caliph al-Mutawakkil), showing the spiral ramp form and characteristic Abbasid brick construction with carved stucco decoration.", caption="Abbasid Brick Architecture — Samarra Mosque Minaret", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Building\", \"Dynasty/Date\", \"Architect/Patron\", \"Location\", \"Key Features\", \"Architectural Significance\"]}", rows="{[[\"**Dome of the Rock**\", \"Umayyad, 691 CE\", \"Caliph Abd al-Malik\", \"Jerusleam\", \"Central domed octagon, Byzantine mosaics, gilded dome, rock shrine inside\", \"First major Islamic monument; demonstrates Byzantine influence; no original mihrab (mihrabs added in later renovations, Fatimid period onward)\"], [\"**Aqsa Mosque**\", \"Umayyad, 708–714 CE (construction extended under al-Walid I)\", \"Abd al-Malik (initiated); al-Walid I (completed expansion)\", \"Jerusleam\", \"Hypostyle prayer hall, double arcade, wooden roof, mosaics, marble\", \"Reuses Byzantine structure; construction involved Egyptian workers under al-Walid's administration; rebuilt after 713–714 earthquakes\"], [\"**Great Mosque of Damascus**\", \"Umayyad, 706–715 CE\", \"Caliph al-Walid I\", \"Damascus, Syria\", \"Hypostyle courtyard, three-aisled prayer hall, Byzantine columns, mosaics, minaret in corner of court\", \"Expands hypostyle model; reuses classical columns; establishes minaret on qibla wall\"], [\"**Qasr al-Hayr al-Sharqi**\", \"Umayyad, ~729 CE\", \"Unknown patron\", \"Syria\", \"Desert palace, fortified complex, iwans, audience halls, residential quarters, hunting enclosure\", \"Quintessential Umayyad palace; demonstrates Roman fortification logic + Islamic spatial hierarchy\"], [\"**Qasr al-Hallabat**\", \"Umayyad, 8th century\", \"Unknown patron\", \"Jordan\", \"Fortified palace, barrel vaults, iwans, decorated stucco\", \"Shows Umayyad desert palace variation\"], [\"**Great Mosque of al-Mutawakkil**\", \"Abbasid, 848–852 CE\", \"Caliph al-Mutawakkil\", \"Samarra, Iraq\", \"Massive hypostyle, spiral minaret (malwiya tower 52m high), vast courtyard (240m × 156m), brick construction\", \"Demonstrates Abbasid sclea and ambition; spiral minaret is distinctive innovation distinguishing Samarra from other Islamic mosques\"], [\"**Mosque of al-Azhar**\", \"Fatimid, 970–972 CE\", \"Jawhar al-Siqilli (under Caliph al-Mu'izz)\", \"Cairo, Egypt\", \"Courtyard, prayer hall with nave and aisles, stone construction, multiple mihrabs\", \"Transition from hypostyle to nave-and-aisles; demonstrates Fatimid (not Abbasid) patronage of grand monuments; establishes Cairo as religious center\"], [\"**Palace of Khirbat al-Mafjar**\", \"Umayyad, 8th century\", \"Unknown\", \"Jordan\", \"Bathhouse (hammam), courtyard, mosaic decoration, carved stucco\", \"Shows luxury aesthetic in Umayyad aristocratic architecture\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Period Identification by Design Logic** "A mosque uses columns reused from a nearby Byzantine temple and features a simple hypostyle plan. Which dynasty does this suggest, and why?" (Answer: **Umayyad**; the reuse of classical columns and pragmatic, economic design reflects Umayyad adoption of existing urban and structural systems.) Or: "A mosque employs brick construction, muqarnas vaulting, and a dominant iwan entrance. Is this Umayyad or Abbasid? Justify."
+[/SLATECAMP_UI_BLOCK]
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Building Function and Significance** "Identify the building, describe its plan, and explain why it was architecturally innovative: A domed octagon containing a sacred rock, built in Jerusleam in 691 CE." (Answer: **Dome of the Rock**; it is the first major Islamic monument and demonstrates Byzantine influence, and establishes the centralized dome as an Islamic form.)
+[/SLATECAMP_UI_BLOCK]
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Spatial Evolution** "Compare the spatial strategies of the Umayyad desert palace (qasr) and the Abbasid Baghdad palace. What does each reveal about dynastic priorities?" (Umayyad: fortified, private, hierarchical reception halls; Abbasid: expansive, intricate, inward-focused, bureaucratic complexity.)
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Material and Structural Innovation** "Why did Abbasid builders transition from stone to brick in Mesopotamia? What architectural possibilities did this enable?" (Brick allows taller walls, supports muqarnas, permits new vault forms, and reduces reliance on imported stone.)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0010 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The LEA distinguishes between **Umayyad** and **Abbasid** architectural traditions. You must know the defining characteristics of each, recognize key buildings, and understand how Islamic architecture evolved during these early Islamic dynasties. The Umayyad period (661–750 CE) and the early Abbasid period (750–10th century) represent distinct architectural visions; later Abbasid architecture (after ~945 CE under Buyid influence) shows declining monumental patronage.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Umayyad and Abbasid as Stylistic Progression", correction="Students often view Abbasid as simply \\", more=true, developed=true, Umayyad=true, In=true, reality=true, the=true, transition=true, represents=true, a=true, cultural=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing the Dome of the Rock's Purpose", correction="The **Dome of the Rock** is not a mosque (though it functions as a prayer space). It is a shrine commemorating the Prophet Muhammad's night journey. It contains no mihrab initially and no courtyard in the later mosque sense.", context="Recognizing its unique typology is essential."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Misidentifying the Minaret in Umayyad Mosques. In the Umayyad period, minarets were integral structures attached to the qibla wall (as in the **Great Mosque of Damascus**), not freestanding towers. Later periods introduced separate minarets. This distinction marks chronological and stylistic development.\", \"Overlooking the Desert Palace Typology. Umayyad **qasrs** (palaces like **Qasr al-Hayr al-Sharqi**) are as architecturally important as mosques but often neglected. These fortified complexes show Umayyad synthesis of Roman logistics, hunting culture, and aristocratic Islam. They appear on the LEA.\", \"Assuming All Early Islamic Mosques Are Hypostyle. Not all early mosques follow the hypostyle model. The **Dome of the Rock** is centralized, not hypostyle. The **Aqsa Mosque** integrates columned aisles with Byzantine elements. Recognizing variation within the period is critical.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -67,9 +119,17 @@ These two periods represent not a simple progression but a cultural reorientatio
 
 **Byzantine Influence** — Structural and decorative traditions inherited from the Eastern Roman (Byzantine) Empire; abundant in Umayyad reuse of columns, mosaics, and spatial planning.
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Do not treat Umayyad and Abbasid as simple stylistic progression. They represent distinct geographic and cultural reorientations. Umayyad is pragmatically Byzantine (reused columns, Mediterranean cities). Abbasid rejects that legacy and builds new with Persian-influenced brick, muqarnas, and iwans. This conceptual shift—not mere aesthetic refinement—is critical for LEA success.
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-hist-004-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Umayyad (hypostyle hall, Roman/Byzantine borrowing, mosaic decoration) and Abbasid (brick, iwan, stucco, centralized planning) Islamic architecture showing contrasting materials, plans, and ornamental vocabulary." caption="Umayyad vs. Abbasid — Architectural Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+[SLATECAMP_UI_BLOCK:ui_0015 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-004-02-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Comparative diagram of Umayyad (hypostyle hall, Roman/Byzantine borrowing, mosaic decoration) and Abbasid (brick, iwan, stucco, centralized planning) Islamic architecture showing contrasting materials, plans, and ornamental vocabulary.", caption="Umayyad vs. Abbasid — Architectural Comparison", suggestedAsset="Style comparison illustration", placementIntent="Style comparison for architectural period"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

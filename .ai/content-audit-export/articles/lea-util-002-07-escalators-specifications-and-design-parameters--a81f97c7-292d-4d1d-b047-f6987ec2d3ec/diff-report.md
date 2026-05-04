@@ -1,15 +1,15 @@
 # Content Diff Report: lea-util-002-07-escalators-specifications-and-design-parameters
 
-Generated: 2026-05-04T02:17:02.204Z
+Generated: 2026-05-04T09:13:34.557Z
 Article ID: a81f97c7-292d-4d1d-b047-f6987ec2d3ec
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:276bd3888e025e9e4915a623361afd41f4e6414b02ce1bdacc0113e8d47635ad`
-- Normalized: `sha256:203dd195138460605287777b4c0a8b4a4ed3f8aaa5990c76c2bdc212e55115a1`
-- Candidate: `sha256:276bd3888e025e9e4915a623361afd41f4e6414b02ce1bdacc0113e8d47635ad`
+- Original: `sha256:afbbeff23001cf62a8530e63e7faae6f54a072c8f1ad3d804e86252988708814`
+- Normalized: `sha256:ba5a9f1c7cffd48e04d0911f0b82989438dd74a1110faefe0000557ba7d3af97`
+- Candidate: `sha256:afbbeff23001cf62a8530e63e7faae6f54a072c8f1ad3d804e86252988708814`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

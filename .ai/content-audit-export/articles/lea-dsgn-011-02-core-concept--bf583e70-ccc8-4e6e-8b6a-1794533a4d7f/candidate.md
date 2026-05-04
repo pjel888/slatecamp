@@ -23,7 +23,7 @@ In exam scenarios, the LEA tests whether candidates can:
 2. Identify non-compliance errors (e.g., floor-to-floor ≠ 3.0 m, roof heights blocking sight lines)
 3. Determine interior headroom requirements (minimum 2.4 m finished ceiling height per NBC for habitable spaces)
 4. Relate elevations to floor plans (confirming fenestration alignment, structural grid consistency)
-<ArticleMedia id="media-lea-dsgn-011-02-core-concept" type="image" caption="Elevation and Section Drawing — Orthographic Projection Standards" alt="Side-by-side comparison of building elevation (labeled by orientation, finish materials) and building section (showing finish floor levels, vertical dimensions, section cut reference on plan). Standard notation for materials, finishes, and levels." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-011-02-core-concept" type="image" caption="Elevation and Section Drawing — Orthographic Projection Standards" description="Side-by-side comparison of building elevation (labeled by orientation, finish materials) and building section (showing finish floor levels, vertical dimensions, section cut reference on plan). Standard notation for materials, finishes, and levels." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -63,7 +63,7 @@ A section shows a stairwell with headroom of 1.9 m. The candidate must identify 
 </Tip>
 
 **Exam Tip:** Elevations must show finish floor elevations (FFL), finished ground line (FGL), roof ridge/gable heights, and material indications. Sections must show hidden elements (footings, beams above cut plane).
-<ArticleMedia id="media-lea-dsgn-011-02-core-concept" type="image" caption="Elevation and Section Graphics — Line Weights, Hatching, and Material Notation" alt="Annotated building elevation and section showing: line weight hierarchy (profile 0.7mm, intermediate 0.35mm, hatching 0.18mm), standard material hatch patterns (concrete, masonry, wood, steel), finish floor level (FFL) indicators, section cut lines, and dimension strings. Key elevation symbols and material callouts labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-011-02-core-concept" type="image" caption="Elevation and Section Graphics — Line Weights, Hatching, and Material Notation" description="Annotated building elevation and section showing: line weight hierarchy (profile 0.7mm, intermediate 0.35mm, hatching 0.18mm), standard material hatch patterns (concrete, masonry, wood, steel), finish floor level (FFL) indicators, section cut lines, and dimension strings. Key elevation symbols and material callouts labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

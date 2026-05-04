@@ -55,16 +55,28 @@ The architect's role in claims review is central. The architect inspects the wor
 **Question Pattern 5:** Architect's claim review authority—What is the architect's role in evaluating and recommending on contractor claims? (Tests architect's claim review responsibility and impartial evaluation duty)
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember: Claims must be documented contemporaneously (during construction), submitted on time (per contract deadline), and substantiated with evidence (invoices, time records, correspondence). Without documentation, no claim. Architect reviews claims and recommends to owner. All elements must be proven.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes=true, Assuming=true, casual=true, requests=true, are=true, claims=true, Claims=true, formal=true, written=true, demands=true, with=true, supporting=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 
 
-<ArticleMedia type="image" caption="Dispute Resolution Process — Negotiation to Litigation Flowchart" alt="Escalation flowchart showing progressive dispute resolution steps: Step 1 Negotiation (architect mediates), Step 2 Mediation (neutral third party), Step 3 CIAC Arbitration (mandatory for construction contracts), Step 4 Litigation (court appeal of arbitration award). CIAC jurisdiction requisites checklist and timeline expectations for each stage." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-ctr-020-core-concept-0", type="image", caption="Dispute Resolution Process — Negotiation to Litigation Flowchart", description="Escalation flowchart showing progressive dispute resolution steps: Step 1 Negotiation (architect mediates), Step 2 Mediation (neutral third party), Step 3 CIAC Arbitration (mandatory for construction contracts), Step 4 Litigation (court appeal of arbitration award). CIAC jurisdiction requisites checklist and timeline expectations for each stage."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

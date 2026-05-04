@@ -13,11 +13,11 @@ Joint movement depends on slab size and temperature swing. A 100-foot-long concr
 Construction adhesives bond substrates without mechanical fasteners. Epoxy adhesives are two-part, high-strength, suitable for concrete-to-concrete and metal-to-concrete applications, with cure times of 24-48 hours. Polyurethane adhesives are moisture-curing, expanding slightly during cure to fill gaps, suitable for wood-to-wood and wood-to-metal applications. Silicone adhesives are flexible, used for movement-accommodating applications. Pressure-sensitive adhesives adhere immediately upon pressure application, used in tapes and membranes.
 
 
-<ArticleMedia id="media-adhesive-selection-chart" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of adhesive systems: construction adhesive, epoxy, contact cement, PVA glue, polyurethane, silicone, and acrylic with bonding strength, setting time, and substrate compatibility"
-  caption="Future chart: adhesive system comparison — bonding strength, setting time, and substrate compatibility"
-  suggestedAsset="Adhesive selection matrix with application illustrations"
-  placementIntent="Provides reference for adhesive selection by bonding requirements" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-adhesive-selection-chart", layout="single", type="image", status="placeholder", alt="Comparison chart of adhesive systems: construction adhesive, epoxy, contact cement, PVA glue, polyurethane, silicone, and acrylic with bonding strength, setting time, and substrate compatibility", caption="Future chart: adhesive system comparison — bonding strength, setting time, and substrate compatibility", suggestedAsset="Adhesive selection matrix with application illustrations", placementIntent="Provides reference for adhesive selection by bonding requirements"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -40,11 +40,11 @@ Construction adhesives bond substrates without mechanical fasteners. Epoxy adhes
 The Philippines' tropical climate (85-95°F year-round, 80+ percent humidity during monsoon) extends sealant and adhesive cure times significantly compared to temperate regions. Acrylic sealants, sensitive to rain during cure, are difficult to use during the 6-month monsoon season (May-November) when construction typically slows. Polyurethane adhesives and sealants are preferred in the Philippines due to moisture-curing capability and shorter cure times than two-part epoxy. Water absorption in tropical concrete (due to high humidity and rain exposure) compromises adhesive performance if primer is omitted; thorough surface preparation is critical. Silicone sealants are expensive but justified for high-performance applications; many projects substitute inferior acrylic sealants, resulting in premature failure and water damage. UV exposure from intense tropical sun degrades acrylic and some polyurethane products faster than in temperate climates; color fade and adhesion loss occur within 5-7 years instead of 10-15 years. Thermal cycling in air-conditioned buildings (cool interior, hot exterior) creates stress on sealants at perimeter joints; polyurethane and silicone are superior choices. Many Philippine contractors lack understanding of joint movement requirements, resulting in undersized joints that fail under thermal expansion.
 
 
-<ArticleMedia id="media-adhesive-application-chart" layout="single" type="image" status="placeholder"
-  alt="Application matrix for adhesive systems showing recommended adhesives for bonding different materials: wood, metal, glass, concrete, plastic, and tile"
-  caption="Future chart: adhesive application matrix — recommended adhesive by substrate pair"
-  suggestedAsset="Material bonding matrix or reference chart"
-  placementIntent="Guides adhesive selection for different material combinations" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-adhesive-application-chart", layout="single", type="image", status="placeholder", alt="Application matrix for adhesive systems showing recommended adhesives for bonding different materials: wood, metal, glass, concrete, plastic, and tile", caption="Future chart: adhesive application matrix — recommended adhesive by substrate pair", suggestedAsset="Material bonding matrix or reference chart", placementIntent="Guides adhesive selection for different material combinations"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Exam Pattern 1: Sealant Class Selection.** A concrete slab with 40-foot expansion joint spacing experiences a 60-degree Fahrenheit temperature swing. Using a thermal expansion coefficient of 0.004 in/in/°F, what is the required joint width, and what sealant class is appropriate? Answer: Joint width = (40 ft × 12 in/ft × 0.004 × 60°F) = 11.52 inches; minimum joint width = 2 × 5.76 = 11.52 inches. A silicone Class 50 sealant accommodating ±50 percent movement is appropriate.
@@ -55,17 +55,37 @@ The Philippines' tropical climate (85-95°F year-round, 80+ percent humidity dur
 
 **Exam Pattern 4: Incompatibility Risk.** A specification calls for silicone sealant on top of acrylic sealant in an existing joint that failed. What is the problem? Answer: Silicone will not adhere to acrylic; the old sealant must be completely removed, or incompatibility will cause adhesion failure.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: "Silicone = Class 50+ (±50%), 20+ years service life. Polyurethane = Class 50 (±50%), 15-20 years, moisture-curing. Acrylic = Class 7.5 (±7.5%), 10-15 years, water-based, rain-sensitive. Joint width = 2 × movement. Epoxy = adhesive (permanent); Polyurethane = sealant (flexible)."
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Specifying acrylic sealant for a facade joint in the Philippines without considering that it is water-based and rain will wash it away during cure.", correction="Acrylic sealants require 24-48 hours dry cure; installing during or immediately before monsoon (May-November) results in failure. Use polyurethane or silicone sealants that are moisture-tolerant."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Applying silicone sealant directly over old acrylic sealant, assuming the new sealant will adhere to the existing product.", correction="Silicone and acrylic are chemically incompatible; silicone will not bond to acrylic. All old sealant must be removed to base material."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Calculating joint width based only on temperature change, forgetting the 2x multiplication rule specified by ASTM C920.", correction="Joint width must equal at least 2 × the expected movement. A joint accommodating 5 inches of movement must be at least 10 inches wide."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Omitting primer on porous substrates (concrete, wood) when using two-part epoxy; adhesion failure occurs within weeks\", \"Specifying only acrylic sealant for all joint applications, ignoring that movement capability varies drastically (acrylic = ±7.5% vs. silicone = ±50%)\", \"Failing to account for tropical climate cure time multiplication (1.5-2x); underestimating cure time leads to premature joint loading\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

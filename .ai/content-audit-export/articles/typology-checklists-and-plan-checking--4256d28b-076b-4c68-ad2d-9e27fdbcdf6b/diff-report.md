@@ -1,20 +1,20 @@
 # Content Diff Report: typology-checklists-and-plan-checking
 
-Generated: 2026-05-04T02:17:17.183Z
+Generated: 2026-05-04T09:13:42.920Z
 Article ID: 4256d28b-076b-4c68-ad2d-9e27fdbcdf6b
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:0c1ed9735088b661d56d905621ac56126497dbfe11e4e8bc6d0d6cf27da21fbe`
-- Normalized: `sha256:af12aa1fab82ed0aa85e5964fbb9ed90ed48c85c57b01f80d3961e9b9d7c157a`
-- Candidate: `sha256:a84deeb0292ea1b08ea02e2dd2f9bb6bdfab70d6cc909b8409f20b4031f233ea`
+- Normalized: `sha256:a07e2646ffe826d0c4e22a5af36b5c9a20fae09f0c0bd1cc3b9ef90a2d9c8466`
+- Candidate: `sha256:0c1ed9735088b661d56d905621ac56126497dbfe11e4e8bc6d0d6cf27da21fbe`
 
 ## Line summary
 
-- Changed lines: 28
-- Inserted lines: 1
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation

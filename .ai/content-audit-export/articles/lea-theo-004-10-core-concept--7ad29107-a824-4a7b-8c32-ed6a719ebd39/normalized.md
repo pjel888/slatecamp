@@ -7,13 +7,21 @@ Explain how the bahay kubo (elevated floor, steep roof, wide eaves, permeable wa
 
 ### The Bahay Kubo: Climate-Responsive Baseline
 
-<ArticleMedia id="media-lea-theo-004-10-core-concept" type="image" caption="Bahay Kubo and Bahay na Bato — Philippine Vernacular Climate Adaptation" alt="Side-by-side annotated diagrams of the two Filipino vernacular typologies: Left — Bahay Kubo (elevated timber frame, steep thatched roof, wide eaves, open/ permeable bamboo walls, single-room plan, floor elevated for flood/pest protection, cross-ventilation through wall gaps and floor). Right — Bahay na Bato (stone/brick ground floor with arcade, timber upper floor with wood paneling, capiz shell windows, broad eaves, tile roof, spatial hierarchy with formal sala and private cuartos, integration of Spanish colonial and indigenous traditions). Callout boxes highlight key passive features: Capiz windows (light diffusing, heat reducing), deep eaves (rain and sun protection), elevated floors (natural ventilation channels)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-004-10-core-concept", type="image", caption="Bahay Kubo and Bahay na Bato — Philippine Vernacular Climate Adaptation", description="Side-by-side annotated diagrams of the two Filipino vernacular typologies: Left — Bahay Kubo (elevated timber frame, steep thatched roof, wide eaves, open/ permeable bamboo walls, single-room plan, floor elevated for flood/pest protection, cross-ventilation through wall gaps and floor). Right — Bahay na Bato (stone/brick ground floor with arcade, timber upper floor with wood paneling, capiz shell windows, broad eaves, tile roof, spatial hierarchy with formal sala and private cuartos, integration of Spanish colonial and indigenous traditions). Callout boxes highlight key passive features: Capiz windows (light diffusing, heat reducing), deep eaves (rain and sun protection), elevated floors (natural ventilation channels).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### The Bahay Kubo: Climate-Responsive Baseline
 
 The **bahay kubo** (literally "grass house") emerged from indigenous Filipino lowland cultures and persists in rural areas. Its design is not decorative but deeply functional—a response to the Philippine Coronas climate's defining challenges: extreme heat, monsoon flooding, year-round humidity, and typhoon winds.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: "BASH" Vernacular Design**—Basic structure (elevated on stilts), Adaptive openings (large windows, screens), Steep roof (rapid water shedding), Honest materials (nipa, bamboo, timber). Every element of the bahay kubo addresses a specific climate challenge; the design is optimization, not tradition for tradition's sake.
+[/SLATECAMP_UI_BLOCK]
 
 #### Structural and Thermal Features
 
@@ -40,6 +48,10 @@ The **bahay kubo** (literally "grass house") emerged from indigenous Filipino lo
   - **Thermal porosity**: Lightweight bamboo allows rapid air exchange; no thermal mass delays cooling
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The bahay kubo achieves thermal comfort without conditioning through integrated systems: elevated structure enables cool air to enter from below, large windows create cross-ventilation, steep roof exhausts heat from the peak, and sawali screens control solar gain while maintaining diffuse light. Modern "sustainable" passive design techniques are rediscovering these vernacular principles.
+[/SLATECAMP_UI_BLOCK]
 
 #### Ventilation and Humidity Control
 
@@ -73,6 +85,10 @@ Traditional bahay kubo uses exclusively indigenous, locally-sourced materials:
 | **Rattan (puyong)** | Binding, fascias | Flexibility; wind stress absorption; low embodied carbon |
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Critical Distinction**: Romanticizing bahay kubo as "authentic design" without understanding material constraints risks overlooking why modern materials were adopted. Nipa thatch requires constant maintenance, deteriorates in 5–10 years, attracts pests, and offers limited durability. Contemporary vernacular-inspired design learns climatic principles while using durable, maintainable materials. Uncritical traditionalism ignores legitimate material improvements.
+[/SLATECAMP_UI_BLOCK]
 
 **Why these materials matter**: Francisco Mañosa emphasized that "Everything started with the Nipa Hut"—not as nostalgia but as recognition that indigenous materials represent **climate-optimized solutions developed through centuries of empirical observation**. Using local materials also satisfies BERDE certification requirements for sourcing and embodied carbon reduction.
 
@@ -180,28 +196,68 @@ This demonstrates that vernacular architecture is not outdated but rather a **va
 ## Key Facts and Testable Items
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Vernacular Element\", \"Climate Function\", \"Coronas Optimization\", \"BERDE Credit\"]}", rows="{[[\"**Bahay Kubo Stilt Height (1.5–2.5 m)**\", \"Flood protection; ventilation plenum\", \"Type I-II (monsoon flood risk)\", \"Water management; site access\"], [\"**Roof Pitch (45–60°)**\", \"Water shedding; heat exhaust; wind resistance\", \"Type I-II (heavy rain, typhoons)\", \"Climate resilience; passive design\"], [\"**Window Area (30–40% facade)**\", \"Cross-ventilation; light transmission\", \"Type I-IV (seasonal wind variation)\", \"Daylighting; natural ventilation\"], [\"**Sawali Walls**\", \"Evaporative cooling; thermal porosity\", \"Type I (dry-season peak)\", \"Natural materials; passive cooling\"], [\"**Bahay na Bato Upper Story (Wooden)**\", \"Earthquake flexibility; thermal response\", \"Type II-III (seismic active zones)\", \"Structural innovation; durability\"], [\"**Capiz Windows**\", \"Diffuse light; privacy; ventilation\", \"Type I-IV (universal application)\", \"Biophilic design; daylighting\"], [\"**Ground-Level Galleries**\", \"Transitional cooling; social space\", \"Type I-IV (universal)\", \"Passive design; spatial hierarchy\"], [\"**Open Floor Plans**\", \"Stack effect; cross-ventilation; adaptability\", \"Type I-IV (universal)\", \"Natural ventilation efficiency\"], [\"**Indigenous Material Use**\", \"Embodied carbon reduction; thermal compatibility\", \"Type I-IV (universal)\", \"Material sourcing BERDE points\"], [\"**Vernacular Ventilation Rate**\", \"8–10 ACH (monsoon); 4–6 ACH (calm)\", \"Type I (seasonal advantage)\", \"Passive design performance\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Vernacular Analysis**: Given a bahay kubo cross-section, identify four climate-responsive features. Explain how each addresses a specific Coronas climate challenge (heat, humidity, flood, wind). Quantify ventilation benefit of elevated structure.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 2. **Bahay na Bato Design Adaptation**: Design a modern residential building incorporating three bahay na bato principles (stone ground floor for thermal mass, wooden upper story, large windows, elevated galleries). Show how seismic resilience and climate responsiveness are achieved.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 3. **Coronas Type Vernacular Match**: Given a Coronas Type II climate description (no dry season, heavy Dec–Feb rain, typhoon exposure), specify vernacular features from bahay kubo/bahay na bato traditions that address these conditions. Justify material and structural choices.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 4. **Mañosa Philosophy Application**: Design a modern commercial building in a tropical Philippine city following Mañosa's principle, "Everything started with the Nipa Hut." Show how vernacular climate responsiveness informs spatial organization, material selection, and structural approach.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 5. **BERDE Vernacular Certification**: A homeowner wants a BERDE-certified addition to a traditional bahay kubo. Specify design interventions that preserve vernacular climate responsiveness while meeting contemporary code and certification requirements (passive cooling rates, natural materials, water management).
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The **bahay kubo** and **bahay na bato** represent centuries of indigenous climate adaptation. The bahay kubo's elevated stilts, steeply pitched nipa-thatched roof, large windows, and open floor plan achieve natural ventilation rates of 8–10 ACH without fans—matching mechanical systems while eliminating operational energy. Francisco Mañosa's assertion, "Everything started with the Nipa Hut," reflects the philosophical foundation of authentic Philippine tropical architecture and BERDE-aligned sus
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Romanticizing Vernacular Without Performance Quantification", correction="Assuming bahay kubo is universally applicable without climate analysis.", context="Type II (no dry season) requires higher roof pitches and stronger ventilation; generic replication fails."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Bahay na Bato as Pure Heritage", correction="Failing to recognize that bahay na bato was colonial adaptation, not pre-contact indigenous form.", context="Its seismic resilience and thermal mass are valuable but not infallible; modern design must strengthen these features."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Ignoring Seasonal Variation. Designing for monsoon wind direction (May–Oct) but underestimating calm-season ventilation needs (Nov–Apr). Seasonal wind reversals require flexible orientation and supplementary stack effect.\", \"Using Imported Materials Under \\\"Vernacular\\\" Label. Substituting concrete blocks or metal siding for traditional bamboo/timber. BERDE certification requires authentic indigenous materials; imitation undermines both performance and cultural authenticity.\", \"Assuming Vernacular = Unventilated. A selead bahay kubo-inspired building defeats the entire design philosophy. Open floor plans and window placement must enable actual cross-ventilation; decorative large windows are insufficient.\", \"Missing Thermal Mass Integration. The bahay na bato's ground-floor stone provides thermal lag; omitting this from modern adaptations loses 2–3 K temperature moderation benefit during heat peaks.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

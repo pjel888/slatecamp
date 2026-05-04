@@ -3,6 +3,12 @@
 After reading this article, you should be able to:
 
 Apply the legal framework for dangerous and ruinous buildings under PD 1096 Sec. 214-216: identify the Building Official's authority to order demolition, repair, or vacation; distinguish dangerous from ruinous conditions; and explain the property owner's rights to notice, hearing, and contest before enforcement action.
+
+**Module Focus:** PD 1096 National Building Code of the Philippines — Rule II, Sections 214–216 (2004 Revised IRR) + Abatement Procedure
+**LEA Area:** Building Laws, Codes & Ethics / Environmental Planning & Community Architecture
+**Difficulty:** High — Legal Reasoning + Specific Percentages + Multi-Category Classification
+**Spaced Repetition:** Return in 3 days to recite all six defect categories and their sub-items. Return in 7 days to recall the four specific percentage thresholds without notes. Return in 14 days to reconstruct the abatement procedure in sequence.
+
 ---
 
 ## The Real-World Hook
@@ -478,6 +484,8 @@ Section 216 is explicit: "The rights, actions, and remedies provided in this Cod
 
 ---
 
+
+
 ---
 
 ## Cross‑References
@@ -495,5 +503,3 @@ Section 216 is explicit: "The rights, actions, and remedies provided in this Cod
 7. **National Structural Code of the Philippines (NSCP) 7th Edition, 2015/2020:** Chapter 2 (General Design Requirements — loads, combinations); Section 207 (Wind Loads) — for computing the 1/2-wind-pressure threshold of Sec. 215 sub-item (c); structural capacity benchmarks for 33/50/66/50% threshold application.
 8. **Architectural Graphic Standards (Ramsey/Sleeper), 12th Edition:** Building condition assessment frameworks; structural failure modes referenced in dangerous building classifications.
 9. **Metric Handbook: Planning and Design Data (Littlefield, 4th ed.):** Occupancy and safety standards context for egress and sanitation deficiency classifications (Categories 5 and 6).
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -1,15 +1,15 @@
 # Content Diff Report: lea-strc-002-04-core-concept
 
-Generated: 2026-05-04T02:17:33.637Z
+Generated: 2026-05-04T09:13:53.550Z
 Article ID: 7680a85a-b8ee-4b09-a782-00d77fa5c007
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:23699327ba6de4b266aa0b4f0ae6f64d771f536e62ef38614ce842000b8daf71`
-- Normalized: `sha256:a4560439daa74aeb44073505765b3b6b74b894572987f38a6d46d1cafd42bf06`
-- Candidate: `sha256:23699327ba6de4b266aa0b4f0ae6f64d771f536e62ef38614ce842000b8daf71`
+- Original: `sha256:ec8730d9cc765b5d07d29e4e303a8bcef6f807c1fdf2338a001c44f4df78f91c`
+- Normalized: `sha256:0c0f391dc503454dda2498e413c24a8496516ad22d53df3e75b1a3178db6689c`
+- Candidate: `sha256:ec8730d9cc765b5d07d29e4e303a8bcef6f807c1fdf2338a001c44f4df78f91c`
 
 ## Line summary
 

@@ -118,7 +118,7 @@ Rococo is fundamentally a domestic and aristocratic *interior style*, not a stru
 
 ## Related Articles
 
-<ArticleMedia id=\"media-hist-002-05-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Comparison of Baroque spatial effects across key works: curved walls and oval plan (San Carlo alle Quattro Fontane, Borromini), trompe-l'oeil ceiling (Sant'Ignazio, Pozzo), sculptural facade (St. Peter's Square, Bernini), and palace garden axis (Versailles, Le Nôtre).\" caption=\"Baroque Style — Spatial and Visual Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-002-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Baroque spatial effects across key works: curved walls and oval plan (San Carlo alle Quattro Fontane, Borromini), trompe-l'oeil ceiling (Sant'Ignazio, Pozzo), sculptural facade (St. Peter's Square, Bernini), and palace garden axis (Versailles, Le Nôtre)." caption="Baroque Style — Spatial and Visual Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**.
 

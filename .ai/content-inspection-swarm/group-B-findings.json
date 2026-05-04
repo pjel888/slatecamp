@@ -1,0 +1,66 @@
+{
+  "group": "B",
+  "articles_scanned": 162,
+  "articles_with_issues": 5,
+  "findings": [
+    {
+      "article_dir": "lea-hist-007-05-core-concept--7095ced9-9182-4eda-917b-84568cd74ba2",
+      "slug": "lea-hist-007-05-core-concept",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 65,
+          "detail": "Orphaned bold marker (**): odd count (1). May render literal \"**\" in output"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-001-02-core-concept--943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "slug": "lea-strc-001-02-core-concept",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 63,
+          "detail": "Orphaned bold marker (**): odd count (1). May render literal \"**\" in output"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-002-04-core-concept--7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "slug": "lea-strc-002-04-core-concept",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 65,
+          "detail": "Unclosed MDX tag <WikiMistakeList> opened here but never closed"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "slug": "lea-strc-009-01-core-concept",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 14,
+          "detail": "Unclosed MDX tag <ArticleMedia> opened here but never closed"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-theo-004-08-core-concept--8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "slug": "lea-theo-004-08-core-concept",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 99,
+          "detail": "Orphaned bold marker (**): odd count (1). May render literal \"**\" in output"
+        }
+      ]
+    }
+  ],
+  "issue_type_summary": {
+    "broken_markdown": 3,
+    "malformed_mdx": 2
+  }
+}

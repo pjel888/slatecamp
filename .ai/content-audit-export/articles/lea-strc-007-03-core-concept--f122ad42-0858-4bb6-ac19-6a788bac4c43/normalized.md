@@ -10,7 +10,11 @@ By the end of this article, you will be able to:
 Minimum slab and beam thickness are code minimums to control deflection without explicit calculation. The LEA tests your mastery of four support conditions and the distinction between solid slabs, ribbed/joist sections, and beams.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-007-03-core-concept" type="image" caption="Deflection Limits — NSCP Span-to-Depth Ratios" alt="Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-007-03-core-concept", type="image", caption="Deflection Limits — NSCP Span-to-Depth Ratios", description="Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Deflection limits are based on span-to-depth ratios ($L/h$). The NSCP provides minimum thickness tables (Table 9.5.1) to avoid computing deflections when members meet these minimums.
 
@@ -75,5 +79,13 @@ See also: **Concrete Materials** (lea-strc-006-01) for the modulus that affects 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[ \n \"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\", \n \"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\", \n \"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\", \n \"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\" \n]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

@@ -68,7 +68,7 @@ The LEA tests **hanok** (traditional Korean timber-frame houses), **ondol** heat
 - **Flexible partitions (ajilsan)**: Interior sliding screens and removable wooden lattice dividers allowing quick reconfiguration of room sizes and functions within hanok houses.
 - **Joseon Dynasty**: Korean royal house ruling 1392–1910, responsible for establishing state architecture (palaces, temples) and codifying hanok residential traditions; period of high cultural and architectural achievement.
 
-<ArticleMedia id="media-hist-007-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of Korean ondol underfloor heating system showing smoke channels beneath stone/clay flooring, step-down entrance, and how the heated floor shapes interior planning and social use of space in traditional hanok architecture.\" caption=\"Korean Ondol — Underfloor Heating System Diagram\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-007-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of Korean ondol underfloor heating system showing smoke channels beneath stone/clay flooring, step-down entrance, and how the heated floor shapes interior planning and social use of space in traditional hanok architecture." caption="Korean Ondol — Underfloor Heating System Diagram" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

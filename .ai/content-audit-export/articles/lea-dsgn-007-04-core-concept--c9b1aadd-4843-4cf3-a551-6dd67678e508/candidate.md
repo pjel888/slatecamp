@@ -23,7 +23,7 @@ The architectural design process consists of five primary phases, each with dist
 
 **Construction Administration Phase** \
 - Occurs during construction. The architect provides site observations to verify that construction complies with documents, reviews contractor submittals (shop drawings, material samples), certifies progress for payment, and addresses field changes. The architect does not supervise construction but ensures quality and code compliance. This phase concludes with final inspection and project close-out.
-<ArticleMedia id="media-lea-dsgn-007-04-core-concept" type="image" caption="Design Process Workflow — Five Phases of Architectural Services" alt="Process flow diagram showing the five sequential design phases: Pre-Design (feasibility, site analysis) → Schematic Design (15%) → Design Development (20%) → Construction Documents (50%) → Construction Administration (10%). Shows key deliverables and fee progression at each phase." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-007-04-core-concept" type="image" caption="Design Process Workflow — Five Phases of Architectural Services" description="Process flow diagram showing the five sequential design phases: Pre-Design (feasibility, site analysis) → Schematic Design (15%) → Design Development (20%) → Construction Documents (50%) → Construction Administration (10%). Shows key deliverables and fee progression at each phase." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -66,7 +66,7 @@ The Philippine architectural profession follows the design process framework out
 <Tip>Five phases: Pre-Design (problem definition), Schematic (concepts), Design Dev (systems), Constr Docs (buildable specs), Constr Admin (verification). Each builds on the previous. Deliverables increase in detail and precision with each phase.</Tip>
 
 **Exam Tip — ERR-DSGN-001:** The architect's role during Construction Administration is observation and verification, NOT supervision. The contractor supervises construction; the architect verifies compliance with documents.
-<ArticleMedia id="media-lea-dsgn-007-04-core-concept" type="image" caption="Fee Progression Chart — Design Phase Fee Distribution" alt="Bar and line chart showing typical fee distribution across design phases: Pre-Design (5-10%), Schematic Design (15%), Design Development (20%), Construction Documents (40-50%), and Construction Administration (10-15%). Total project timeline overlay shows overlap between phases." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-007-04-core-concept" type="image" caption="Fee Progression Chart — Design Phase Fee Distribution" description="Bar and line chart showing typical fee distribution across design phases: Pre-Design (5-10%), Schematic Design (15%), Design Development (20%), Construction Documents (40-50%), and Construction Administration (10-15%). Total project timeline overlay shows overlap between phases." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

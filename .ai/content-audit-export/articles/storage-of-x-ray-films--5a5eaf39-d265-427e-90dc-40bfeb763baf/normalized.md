@@ -12,15 +12,17 @@ Apply the fire protection and storage requirements for X-ray film (nitrate-based
 
 ## 1. Hook / Opening Scenario
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
-
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 Extracted summary:
-- Props: (none)
-- Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
+- Props: code="pd1096", section="Rule IV - X-Ray Protection"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule IV - Hazardous Storage"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
 
 The Building Official's inspector enters the basement radiology archive of a provincial hospital and finds a storage room stacked with unexposed X-ray film boxes on open shelving — no automatic fire extinguishing system in sight, a single portable light on an extension cord dangling over the nearest shelf, and a steam pipe running along the ceiling roughly 400 mm above the film. The room smells faintly of chemical processing. Three separate violations of Rule XIV are already on the clipboard before the inspector reaches the cabinet labeled "Negative Films — 500 kg." When the fire investigator later explains how a room like this became the origin point of an entire ward fire, every architect in the hearing room wishes they had memorized Sections 1401 through 1403.
 
@@ -215,124 +217,16 @@ NFPA 40 is the direct American analog to Rule XIV, Section 1401. The 2019 editio
 
 ### 5.2 IFC / IBC (International Fire Code / International Building Code)
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-
-\
-Under the IFC, cellulose nitrate film is regulated under **Chapter 31 (Highly Toxic Materials)** or **Chapter 56 (Explosives and Fireworks)** for quantities above defined thresholds — a categorization reflecting the self-oxidizing, gas-generating combustion behavior that characterizes it as more than merely "flammable." The IFC approach is more complex than Rule XIV's volume-based triggers, incorporating occupancy classifications and hazardous material quantity thresholds.
-
-Modern IBC/IFC provisions acknowledge the near-total transition to digital imaging in the USA and treat cellulose nitrate film as a legacy specialty material rather than a common building hazard.
-
-### 5.3 NFPA 99: Health Care Facilities Code
-
-NFPA 99 governs X-ray department design within healthcare facilities in the USA, including film storage within the clinical workflow. It addresses electrical requirements for wet darkrooms, film processor ventilation, and the transition from analog to digital radiography. There is no direct PH counterpart to NFPA 99 in PD 1096; healthcare facility fire safety in the Philippines is addressed through the combination of Rule XIV, RA 9514 (Fire Code), and DOH licensing requirements.
-
----
-
-## 6. Exam Traps
-
-### Trap 1 — Confusing the 14.00 cu.m and 1.40 cu.m Thresholds
-
-**Wrong answer**: "Open shelving for individual packages requires automatic suppression when the aggregate volume exceeds 14.00 cu.m."
-
-**Why it's wrong**: The 14.00 cu.m threshold applies to **safety shipping containers**, not open shelving. Open shelving — individual packages not in shipping containers — triggers suppression at the far lower threshold of **1.40 cu.m capacity** (Sec. 1401). The 10:1 ratio exists because containers themselves provide passive fire protection; open shelving does not.
-
-**Correct answer**: Open shelving capacity exceeding **1.40 cu.m** requires automatic fire extinguishing. Safety shipping container aggregate exceeding **14.00 cu.m** requires automatic fire extinguishing. Know which applies to which.
-
----
-
-### Trap 2 — Misidentifying the Cabinet-to-Vault Trigger
-
-**Wrong answer**: "A single storage cabinet holding more than 110 kg requires a vault."
-
-**Why it's wrong**: The 110 kg limit is the **maximum per individual cabinet** — not the trigger for vault storage. A facility can use multiple cabinets, each within the 110 kg limit, without requiring vault construction. The vault (or detached structure, or roof vault) is not required until the **total stored film mass exceeds 450 kg** (Sec. 1401). A facility with four 100 kg cabinets (400 kg total) is still below the vault threshold.
-
-**Correct answer**: The 110 kg limit governs individual cabinet capacity. The **450 kg aggregate** is the trigger for vault-level storage requirements.
-
----
-
-### Trap 3 — Assuming Dental X-Ray Film Is NOT Exempt
-
-**Wrong answer**: "Dental X-ray film stored in a dental clinic must comply with the full storage provisions of Section 1401."
-
-**Why it's wrong**: Section 1402 explicitly exempts **dental X-ray film** from the provisions of Section 1401. The small size and limited quantity of dental radiograph film represent negligible fire load compared to the photographic and medical X-ray films that are Rule XIV's primary target.
-
-**Correct answer**: Dental X-ray film is categorically exempt under Section 1402. The exam may try to lump it with medical X-ray film (which is subject to the full rule when stored in significant quantity) — they are treated differently.
-
----
-
-## 7. Board-Prep Mnemonics
-
-### Mnemonic 1 — "The Two Tens": Volume Thresholds
-
-> **14** (cu.m) = containers; **1.4** (cu.m) = open shelves
-> "**Fourteen in a box; one-point-four on the floor**"
-
-The ratio is always 10:1. If you remember one number, you can derive the other. Containers provide 10× the passive protection of open shelving, so they get 10× the threshold allowance.
-
----
-
-### Mnemonic 2 — "ONE-TEN, FOUR-FIFTY": The Cabinet/Vault Rule
-
-> **110 kg** = max per cabinet → "ONE-TEN per TIN (cabinet)"
-> **450 kg** = vault required → "FOUR-FIFTY needs a VAULT-y"
-
-Picture a single metal cabinet (a "tin") labeled "max ONE-TEN." When four or more are nearly full — approaching FOUR-FIFTY — the storage goes into a vault. The 4-hour door rating seals the mnemonic: it takes **four** hours to break through.
-
----
-
-### Mnemonic 3 — "DENSE": Exempted Films
-
-> **D**ental X-ray film
-> **E**stablishments manufacturing film
-> **N**eat (original packages) amateur roll/film pack under 1.40 cu.m
-> **S**afety film (identified by edge marking)
-> **E**nclosures — standard motion picture booths
-
-If a film falls into **DENSE**, it is exempt from Section 1401.
-
----
-
-## 8. Active Recall Questions
-
-**Question 1**
-*(LEA Area 2 — Fire Protection; Topic: Automatic Suppression Triggers)*
-
-A hospital radiology department stores unexposed X-ray film on standard metal shelving in individual manufacturer's packages (not in safety shipping containers). At what shelving capacity does the storage room require an automatic fire extinguishing system under PD 1096, Rule XIV, Section 1401?
-
-- A. When the total film mass exceeds 110 kilograms
-- B. When the shelving capacity exceeds 14.00 cubic meters
-- C. When the shelving capacity exceeds 1.40 cubic meters
-- D. When the room area exceeds 14.00 square meters
-
-> **Correct Answer: C.** For individual packages on open shelving that are NOT in safety shipping containers, the trigger is shelving **capacity exceeding 1.40 cu.m** (Sec. 1401). The 14.00 cu.m threshold applies only to safety shipping containers. Mass (Option A) and room area (Option D) are not the governing parameters for this provision.
-
----
-
-**Question 2**
-*(LEA Area 2 — Materials; Topic: PH vs. USA Comparative)*
-
-Compared to the NFPA 40 standard for cellulose nitrate film storage, which of the following correctly describes the Philippine Code (PD 1096, Rule XIV) position?
-
-- A. PH is less restrictive per cabinet: 340 kg (PH) vs. 110 kg (NFPA 40)
-- B. PH is more restrictive per cabinet: 110 kg (PH) vs. 340 kg (NFPA 40)
-- C. PH and NFPA 40 require identical cabinet limits of 110 kg
-- D. PH is more restrictive on heat clearance: 900 mm (PH) vs. 600 mm (NFPA 40)
-
-> **Correct Answer: B.** The PH Code limits individual cabinet storage to **110 kg**, which is more than three times more restrictive than NFPA 40's **340 kg (750 lbs)** per cabinet limit. Option D reverses the heat clearance values — NFPA 40 requires 900 mm and is the more conservative standard on that specific parameter. Option A restates the numbers in the wrong order.
-
----
-
-**Question 3**
-
- component="ExamTip" status="preserved"]
-<Note>
-**LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
-</Note>
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
+- Text: Don't memorize every code section number — memorize the *rule*. The LEA tests application of code standards, not section number recall, except for major, frequently tested sections (e.g., Rule VII for occupancy, Rule VIII for light/ventilation).
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.
+[/SLATECAMP_UI_BLOCK]
 *(LEA Area 2 — Fire Protection; Topic: Exemptions and Negative Film Handling)*
 
 An architect is reviewing storage requirements for a hospital that stores: (i) dental X-ray film in the dental clinic, (ii) exposed medical X-ray negatives in Manila envelopes in the radiology archive, and (iii) amateur photographic roll film in original packages totaling 1.20 cu.m in the marketing department. Which of the following is correct under PD 1096, Rule XIV?
@@ -444,5 +338,3 @@ If you paused on any of these, re-read Section 4 before proceeding.
 
 **Fire Extinguishing Systems**, **Fire Resistive Construction Ratings**, **Plastics In Construction**, **Sheet Metal And Spray Booths**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

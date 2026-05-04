@@ -7,7 +7,7 @@ Design rainwater harvesting systems — calculate catchment area, gutter/downspo
 
 Rainwater harvesting systems intercept precipitation at the point of collection (typically building roofs), treat or divert initial contaminated runoff, and store or reuse clean water. Stormwater management systems handle excess runoff that cannot be harvested, ensuring controlled drainage to prevent flooding and property damage. Both systems use the **Rational Method** to estimate peak discharge rates.
 
-<ArticleMedia id="media-lea-util-001-09-core-concept" a type="image" caption="Rainwater Harvesting System — Catchment, First-Flush, Storage, and Filtration" description="System diagram showing: roof catchment area, gutter and downspout collection, first-flush diversion device (first 0.75mm rainfall diverted), cistern storage tank with freeboard (150mm), pump, filtration unit, and distribution to non-potable uses. Storm drain overflow connection labeled. Rational Method formula Q=C×I×A illustrated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-001-09-core-concept" type="image" caption="Rainwater Harvesting System — Catchment, First-Flush, Storage, and Filtration" description="System diagram showing: roof catchment area, gutter and downspout collection, first-flush diversion device (first 0.75mm rainfall diverted), cistern storage tank with freeboard (150mm), pump, filtration unit, and distribution to non-potable uses. Storm drain overflow connection labeled. Rational Method formula Q=C×I×A illustrated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 The Rational Method formula is:

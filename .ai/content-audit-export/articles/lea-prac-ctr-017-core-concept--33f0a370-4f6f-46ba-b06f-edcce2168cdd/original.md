@@ -77,7 +77,7 @@ The punch list is a formal contract document created by the architect at Substan
 
 
 
-<ArticleMedia type="image" caption="Project Completion Timeline — Substantial vs. Final Completion Milestones" description="Timeline diagram showing the construction close-out sequence: Contract Completion Date → Architect's Inspection → Substantial Completion (owner can occupy, liquidated damages stop, punch list created) → Punch List Correction Period → Final Inspection → Final Completion (Certificate issued, Guarantee Bond period begins). Annotated with architect's certification responsibilities at each milestone." />
+<ArticleMedia id="media-lea-prac-ctr-017-core-concept-0" type="image" caption="Project Completion Timeline — Substantial vs. Final Completion Milestones" description="Timeline diagram showing the construction close-out sequence: Contract Completion Date → Architect's Inspection → Substantial Completion (owner can occupy, liquidated damages stop, punch list created) → Punch List Correction Period → Final Inspection → Final Completion (Certificate issued, Guarantee Bond period begins). Annotated with architect's certification responsibilities at each milestone." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

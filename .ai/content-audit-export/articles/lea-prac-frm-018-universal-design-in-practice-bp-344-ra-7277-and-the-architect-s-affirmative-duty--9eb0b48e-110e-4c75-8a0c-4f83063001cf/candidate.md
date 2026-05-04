@@ -106,7 +106,7 @@ BP 344 (2024 Revised IRR) mandates a **1:20 maximum ramp slope** for accessible 
 
 
 
-<ArticleMedia type="image" caption="Universal Design Compliance — BP 344, RA 7277, and Accessibility Standards Matrix" alt="Comparison matrix of accessibility regulations: BP 344 (Building Accessibility, dimensional standards), RA 7277 (Magna Carta for PWDs, rights-based), RA 11205 (Universal Design, conceptual framework). Each column shows: scope, dimensional requirements (ramp slope, door width, toilet clearances), enforcement mechanism, and architect's compliance duty. Overlap areas highlighted." />
+<ArticleMedia id="media-lea-prac-frm-018-universal-des-0" type="image" caption="Universal Design Compliance — BP 344, RA 7277, and Accessibility Standards Matrix" description="Comparison matrix of accessibility regulations: BP 344 (Building Accessibility, dimensional standards), RA 7277 (Magna Carta for PWDs, rights-based), RA 11205 (Universal Design, conceptual framework). Each column shows: scope, dimensional requirements (ramp slope, door width, toilet clearances), enforcement mechanism, and architect's compliance duty. Overlap areas highlighted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

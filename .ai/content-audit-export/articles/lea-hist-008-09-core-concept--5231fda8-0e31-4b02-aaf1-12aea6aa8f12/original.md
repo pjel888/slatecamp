@@ -68,7 +68,7 @@ The recent shift from Western formalist monuments to Global South social practic
 
 **Laureate** — A person or team awarded a prize; in architecture, typically refers to a Pritzker Prize winner.
 
-<ArticleMedia id="media-hist-008-09-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Pritzker Prize laureates (1979–2025) highlighting key milestones: first laureate (Johnson, 1979), first woman (Hadid, 2004), first African (Kéré, 2022), and the evolution from formalist to socially engaged architecture.\" caption=\"Pritzker Prize — Laureate Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-008-09-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Pritzker Prize laureates (1979–2025) highlighting key milestones: first laureate (Johnson, 1979), first woman (Hadid, 2004), first African (Kéré, 2022), and the evolution from formalist to socially engaged architecture." caption="Pritzker Prize — Laureate Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

@@ -1,6 +1,6 @@
 # Content Diff Report: north-american-indigenous-architecture
 
-Generated: 2026-05-04T02:16:56.294Z
+Generated: 2026-05-04T09:13:30.476Z
 Article ID: 5fd2842e-ca3e-4e6d-bb87-65067d23a482
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:e1bc3656c680df76354f84cae71389721365dadf092525fe8c9145f211fdf555`
-- Normalized: `sha256:c9fdc5978adc37030ecff3b8201c18ee3517558f0981d48741f1802ea21f657e`
+- Normalized: `sha256:a904df3622f68a8348f91a3e8972b9ed3f71713928f87ff99222b7837e2d7cbb`
 - Candidate: `sha256:e1bc3656c680df76354f84cae71389721365dadf092525fe8c9145f211fdf555`
 
 ## Line summary
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

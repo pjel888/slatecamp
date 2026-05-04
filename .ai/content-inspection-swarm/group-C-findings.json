@@ -1,0 +1,2494 @@
+{
+  "group": "C",
+  "articles_scanned": 245,
+  "articles_with_issues": 61,
+  "issue_type_summary": {
+    "broken_markdown": 171,
+    "malformed_mdx": 17,
+    "visibility": 232,
+    "empty_component": 3
+  },
+  "findings": [
+    {
+      "article_dir": "accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "slug": "accessible-seating-in-assembly-areas",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 329,
+          "detail": "Unbalanced '**' markers (3 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 332,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "slug": "bp-344-ramp-slope-tiers",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 256,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        }
+      ]
+    },
+    {
+      "article_dir": "colonial-european-influence--2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "slug": "colonial-european-influence",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 60,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 60,
+          "detail": "<WikiMistakeCard> uses prop 'context' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 68,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 68,
+          "detail": "<WikiMistakeCard> uses prop 'context' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 78,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 78,
+          "detail": "<WikiMistakeCard> uses prop 'context' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 80,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 80,
+          "detail": "<WikiMistakeCard> uses prop 'context' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 82,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 82,
+          "detail": "<WikiMistakeCard> uses prop 'context' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "empty_component",
+          "line": 78,
+          "detail": "Empty <WikiMistakeCard>...</WikiMistakeCard> with no content between tags"
+        },
+        {
+          "type": "empty_component",
+          "line": 80,
+          "detail": "Empty <WikiMistakeCard>...</WikiMistakeCard> with no content between tags"
+        },
+        {
+          "type": "empty_component",
+          "line": 82,
+          "detail": "Empty <WikiMistakeCard>...</WikiMistakeCard> with no content between tags"
+        }
+      ]
+    },
+    {
+      "article_dir": "comprehensive-signage-package--3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "slug": "comprehensive-signage-package",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 232,
+          "detail": "Orphaned closing </Callout> without matching opening tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "slug": "fire-extinguishing-systems",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 23,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        }
+      ]
+    },
+    {
+      "article_dir": "geological-hazards--0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "slug": "geological-hazards",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 168,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        }
+      ]
+    },
+    {
+      "article_dir": "inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+      "slug": "inca-architecture-ashlar-masonry",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 3,
+          "detail": "Unclosed <Callout> tag (2 opens vs 1 closes) \u2014 missing </Callout>"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-dsgn-003-04-core-concept--1673310d-fe41-40f3-ab75-0c7e90db42e1",
+      "slug": "lea-dsgn-003-04-core-concept",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 136,
+          "detail": "<WikiMistakeCard> uses prop 'number' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 136,
+          "detail": "<WikiMistakeCard> uses prop 'title' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 136,
+          "detail": "<WikiMistakeCard> uses prop 'wrongValue' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 136,
+          "detail": "<WikiMistakeCard> uses prop 'correctValue' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 136,
+          "detail": "<WikiMistakeCard> uses prop 'explanation' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "slug": "lea-dsgn-003-06-core-concept",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 12,
+          "detail": "Unbalanced '**' markers (5 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "slug": "lea-dsgn-004-05-core-concept",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 126,
+          "detail": "Orphaned closing </Tip> without matching opening tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+      "slug": "lea-dsgn-004-07-core-concept",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 129,
+          "detail": "<WikiMistakeCard> uses prop 'number' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 129,
+          "detail": "<WikiMistakeCard> uses prop 'title' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 129,
+          "detail": "<WikiMistakeCard> uses prop 'wrongValue' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 129,
+          "detail": "<WikiMistakeCard> uses prop 'correctValue' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 129,
+          "detail": "<WikiMistakeCard> uses prop 'explanation' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-dsgn-007-08-core-concept--0149dc4f-64e7-425f-8673-f786c02bc407",
+      "slug": "lea-dsgn-007-08-core-concept",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 64,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-003-02-what-you-need-to-know-for-the-lea--7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+      "slug": "lea-plan-003-02-what-you-need-to-know-for-the-lea",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 58,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3",
+      "slug": "lea-plan-003-03-core-concept",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 39,
+          "detail": "Unclosed <Tip> tag (1 opens vs 0 closes) \u2014 missing </Tip>"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "slug": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 26,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67",
+      "slug": "lea-plan-004-03-what-you-need-to-know-for-the-lea",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 72,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "slug": "lea-plan-005-04-core-concept",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 15,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
+      "slug": "lea-util-001-06-core-concept",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 61,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 63,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 65,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284",
+      "slug": "lea-util-001-09-core-concept",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 164,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 174,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 160,
+          "detail": "Unbalanced '**' markers (11 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2",
+      "slug": "lea-util-002-03-core-ventilation-standards",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'NC' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'Office' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'Spaces' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'Conference' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'Rooms' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'Mechanical' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'STC' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'Party' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 232,
+          "detail": "<KeyValues> uses prop 'Walls' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+      "slug": "lea-util-002-05-kitchen-exhaust-hood-classification",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THHN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'u00b0C' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'General' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wiring' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THWN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Locations' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'XHHW' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Dry' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-002-06-regulatory-framework--514f9f04-00a2-49c3-97c6-804fc2362ec7",
+      "slug": "lea-util-002-06-regulatory-framework",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THHN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'u00b0C' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'General' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wiring' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THWN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Locations' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'XHHW' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Dry' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-002-07-escalators-specifications-and-design-parameters--a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "slug": "lea-util-002-07-escalators-specifications-and-design-parameters",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'lx' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Office' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Work' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Lobby' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869",
+      "slug": "lea-util-002-09-mechanical-room-location-and-siting",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'THHN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'u00b0C' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'General' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'Wiring' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'THWN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'Wet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'Locations' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'XHHW' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 21,
+          "detail": "<KeyValues> uses prop 'Dry' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 101,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "slug": "lea-util-003-02-emergency-power-systems",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Panel' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Efficiency' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'yr' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Warranty' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Life' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Grid-Tie' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Most' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Common' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'DC' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+      "slug": "lea-util-003-03-protection-levels-and-risk-assessment",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 383,
+          "detail": "<Callout> uses prop 'type' \u2014 verify against component definition (known: ['icon', 'id', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "slug": "lea-util-003-04-wire-insulation-types-and-ratings",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'THHN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'u00b0C' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'General' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'Wiring' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'THWN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'Wet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'Locations' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'XHHW' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 47,
+          "detail": "<KeyValues> uses prop 'Dry' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba",
+      "slug": "lea-util-003-05-core-definitions-grounding-vs-bonding",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THHN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'u00b0C' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'General' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wiring' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THWN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Locations' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'XHHW' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Dry' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "slug": "lea-util-003-06-the-distribution-hierarchy",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 174,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 149,
+          "detail": "<Callout> uses prop 'type' \u2014 verify against component definition (known: ['icon', 'id', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 418,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Panel' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Efficiency' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'yr' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Warranty' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Life' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Grid-Tie' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Most' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Common' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'DC' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "slug": "lea-util-004-06-cctv-systems",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Dome' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Indoor' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Ceiling' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Mount' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Bullet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Outdoor' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Perimeter' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'PTZ' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Dynamic' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Coverage' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'p' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Min' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 71,
+          "detail": "<KeyValues> uses prop 'Resolution' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+      "slug": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THHN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'u00b0C' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'General' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wiring' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THWN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Locations' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'XHHW' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Dry' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a",
+      "slug": "lea-util-005-04-communication-protocols-technologies",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'THHN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'u00b0C' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'General' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'Wiring' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'THWN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'Wet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'Locations' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'XHHW' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 267,
+          "detail": "<KeyValues> uses prop 'Dry' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "slug": "lea-util-006-05-recommended-illumination-levels-by-space-type",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 95,
+          "detail": "<Callout> uses prop 'type' \u2014 verify against component definition (known: ['icon', 'id', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'lx' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Office' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Work' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Lobby' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "slug": "lea-util-006-06-daylighting-design-strategy",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 236,
+          "detail": "<Callout> uses prop 'type' \u2014 verify against component definition (known: ['icon', 'id', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131",
+      "slug": "lea-util-006-07-mepf-equipment-noise-sources-and-output-levels",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'THHN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'u00b0C' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'General' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'Wiring' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'THWN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'Wet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'Locations' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'XHHW' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 23,
+          "detail": "<KeyValues> uses prop 'Dry' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69",
+      "slug": "lea-util-007-02-smart-metering-infrastructure-ami",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 15,
+          "detail": "<Callout> uses prop 'color' \u2014 verify against component definition (known: ['icon', 'id', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 66,
+          "detail": "<Callout> uses prop 'severity' \u2014 verify against component definition (known: ['icon', 'id', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 94,
+          "detail": "<KeyValues> uses prop 'note' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 120,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 129,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "slug": "lea-util-007-04-solar-photovoltaic-pv-systems",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Dome' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Indoor' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Ceiling' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Mount' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Bullet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Outdoor' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Perimeter' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'PTZ' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Dynamic' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Coverage' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'p' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Min' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 18,
+          "detail": "<KeyValues> uses prop 'Resolution' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-007-05-renewable-energy-integration-systems--5069fdfb-e96b-435e-9e04-d6526f8b3989",
+      "slug": "lea-util-007-05-renewable-energy-integration-systems",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 165,
+          "detail": "<Callout> uses prop 'type' \u2014 verify against component definition (known: ['icon', 'id', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-008-01-the-three-phase-coordination-framework--f39860e3-5b76-49c3-a82f-035371e8f225",
+      "slug": "lea-util-008-01-the-three-phase-coordination-framework",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THHN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'u00b0C' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'General' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wiring' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'THWN' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Wet' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Locations' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'XHHW' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Dry' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
+      "slug": "lea-util-008-02-mechanical-spaces",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'Panel' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'Efficiency' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'yr' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'Warranty' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'Life' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'Grid-Tie' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'Most' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'Common' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 50,
+          "detail": "<KeyValues> uses prop 'DC' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054",
+      "slug": "lea-util-008-03-electrical-utility-connection",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'value' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'label' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Panel' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Efficiency' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'yr' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Warranty' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Life' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Grid-Tie' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Most' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'Common' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 19,
+          "detail": "<KeyValues> uses prop 'DC' \u2014 verify against component definition (known: ['id', 'items', 'title', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "owner-smoke-article-a-1775980402961--79c3fd58-07a0-4623-9704-4a95065d9e0a",
+      "slug": "owner-smoke-article-a-1775980402961",
+      "issues": [
+        {
+          "type": "visibility",
+          "line": 22,
+          "detail": "<WikiMistakeCard> uses prop 'correction' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        },
+        {
+          "type": "visibility",
+          "line": 22,
+          "detail": "<WikiMistakeCard> uses prop 'context' \u2014 verify against component definition (known: ['category', 'fix', 'id', 'mistake', 'variant'])"
+        }
+      ]
+    },
+    {
+      "article_dir": "pd-1096-rule-vii-occupancy--9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "slug": "pd-1096-rule-vii-occupancy",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 229,
+          "detail": "Orphaned closing </Accordion> without matching opening tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d",
+      "slug": "pd-1096-rule-viii-setbacks-and-easements",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 562,
+          "detail": "Single backtick '`' \u2014 possible broken inline code formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "pd-1096-rule-xii-egress-and-corridors--93009368-9041-46e0-b93b-8786100311be",
+      "slug": "pd-1096-rule-xii-egress-and-corridors",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 43,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        },
+        {
+          "type": "malformed_mdx",
+          "line": 161,
+          "detail": "Orphaned closing </Accordion> without matching opening tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33",
+      "slug": "plastics-in-construction",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 477,
+          "detail": "Orphaned closing </Note> without matching opening tag"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "slug": "spp-doc-201-pre-design-services",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 29,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 42,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 128,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 157,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 183,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 197,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 241,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 247,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 253,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 265,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 271,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 287,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 310,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "slug": "spp-doc-202-regular-design-services",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 29,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 46,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 137,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 154,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 164,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 187,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 221,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 239,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 258,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 274,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 318,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 334,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "slug": "spp-doc-203-specialized-architectural-services",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 29,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 49,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 75,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 90,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 105,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 120,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 140,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 167,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 175,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 181,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 189,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 195,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 201,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 212,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 222,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 228,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 234,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 242,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 248,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 254,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 267,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 275,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 291,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 297,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 311,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 345,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 361,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 377,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "slug": "spp-doc-204-a-fulltime-supervision-services",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 29,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 45,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 58,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 118,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 133,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 155,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 211,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 228,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 240,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 266,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 282,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 303,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 318,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "slug": "spp-doc-204-b-construction-management-services",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 27,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 38,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 52,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 99,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 114,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 126,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 140,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 172,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 184,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 205,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 224,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 237,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 252,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78",
+      "slug": "spp-doc-205-post-construction-services",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 42,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 51,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 95,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 110,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 136,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 156,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 178,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 216,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 242,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 258,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd",
+      "slug": "spp-doc-206-comprehensive-architectural-services",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 43,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 119,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 145,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 163,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 226,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 273,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 294,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 311,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 328,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-207-design-build-services--f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "slug": "spp-doc-207-design-build-services",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 60,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 116,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 156,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 175,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 215,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 286,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 324,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 340,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+      "slug": "spp-doc-208-architectural-design-competition-adc",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 26,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 58,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 107,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 130,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 171,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 194,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 239,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 250,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 295,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 332,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 348,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 360,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 373,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 394,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 428,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 444,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 470,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "slug": "spp-doc-209-architectural-consulting-services-pacs",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 51,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 99,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 117,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 131,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 200,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 231,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 251,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 299,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 380,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 401,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 437,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 456,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "topography-and-slope-analysis--790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+      "slug": "topography-and-slope-analysis",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 230,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        }
+      ]
+    },
+    {
+      "article_dir": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+      "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+      "issues": [
+        {
+          "type": "broken_markdown",
+          "line": 15,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 60,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 84,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 116,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 180,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 207,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 234,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 250,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 266,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 292,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 312,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 343,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 380,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 394,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        },
+        {
+          "type": "broken_markdown",
+          "line": 407,
+          "detail": "Unbalanced '**' markers (1 occurrences) \u2014 possible broken bold formatting"
+        }
+      ]
+    },
+    {
+      "article_dir": "wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107",
+      "slug": "wheelchair-maneuvering-and-parking",
+      "issues": [
+        {
+          "type": "malformed_mdx",
+          "line": 30,
+          "detail": "Self-closing component <ArticleMedia> missing closing slash \u2014 should be <ArticleMedia ... />"
+        }
+      ]
+    }
+  ]
+}

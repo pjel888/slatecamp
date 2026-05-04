@@ -89,7 +89,7 @@ Andalusian architecture represents Islam at its most refined and most fragile. T
 
 <Warn>The horseshoe arch is an Andalusian Islamic signature—it does not appear in Persian, Ottoman, or Central Islamic traditions. Confusing it as universal Islamic is a critical error. Similarly, water integration in Andalusian palaces is poetic (acequias through chambers for sound, scent, reflection) and differs from utilitarian water systems elsewhere. Andalusian = intimate, poetic, decorative; not monumental.</Warn>
 
-<ArticleMedia id="media-hist-004-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Andalusian Islamic features across the Great Mosque of Cordoba (horseshoe arches, double-tiered arcades, red-and-white voussoirs) and the Alhambra (muqarnas vaulting, zellij tilework, courtyard water features).\" caption=\"Andalusian Islamic Architecture — Cordoba and Alhambra Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-004-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Andalusian Islamic features across the Great Mosque of Cordoba (horseshoe arches, double-tiered arcades, red-and-white voussoirs) and the Alhambra (muqarnas vaulting, zellij tilework, courtyard water features)." caption="Andalusian Islamic Architecture — Cordoba and Alhambra Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

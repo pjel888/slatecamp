@@ -7,11 +7,11 @@ Identify formwork types (conventional timber, prefabricated panels, slip forms, 
 Pre-construction planning ensures site readiness, regulatory compliance, and contractor capability. Post-construction verification confirms that the completed building meets design, code, and contractual requirements before occupancy.
 
 
-<ArticleMedia id="media-formwork-type-illustrations" layout="single" type="image" status="placeholder"
-  alt="Cross-section diagrams of conventional timber formwork, prefabricated panel formwork, slip form, climbing form, and tunnel form systems"
-  caption="Future diagram: formwork system types — timber, panel, slip, climbing, and tunnel forms"
-  suggestedAsset="Cross-section and isometric illustrations of each formwork type"
-  placementIntent="Visualizes how each formwork type supports fresh concrete" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-formwork-type-illustrations", layout="single", type="image", status="placeholder", alt="Cross-section diagrams of conventional timber formwork, prefabricated panel formwork, slip form, climbing form, and tunnel form systems", caption="Future diagram: formwork system types — timber, panel, slip, climbing, and tunnel forms", suggestedAsset="Cross-section and isometric illustrations of each formwork type", placementIntent="Visualizes how each formwork type supports fresh concrete"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Pre-Construction Phase
 
@@ -24,11 +24,11 @@ _Demolition and Site Preparation_ — Existing structures are demolished per con
 _Temporary Facilities_ — Site offices, worker camps, storage yards, safety railings, and scaffolding are installed. Site access and traffic control are planned to minimize public disruption. Temporary utilities (electrical, water) support construction operations. Temporary facility design and worker safety are governed by DOLE Construction Safety Standards and occupational safety regulations, not NSCP 2015. NSCP 2015 addresses structural design loads and seismic requirements.
 
 
-<ArticleMedia id="media-formwork-design-diagram" layout="single" type="image" status="placeholder"
-  alt="Cross-section of formwork design showing form facing, studs, wales, ties, and bracing with lateral pressure distribution arrows"
-  caption="Future diagram: formwork design cross-section — facing, studs, wales, ties, and bracing"
-  suggestedAsset="Cross-section detail of formwork assembly with pressure distribution"
-  placementIntent="Visualizes formwork component design and lateral pressure management" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-formwork-design-diagram", layout="single", type="image", status="placeholder", alt="Cross-section of formwork design showing form facing, studs, wales, ties, and bracing with lateral pressure distribution arrows", caption="Future diagram: formwork design cross-section — facing, studs, wales, ties, and bracing", suggestedAsset="Cross-section detail of formwork assembly with pressure distribution", placementIntent="Visualizes formwork component design and lateral pressure management"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ### Post-Construction Phase
 
 _Punch List_ — The contractor systematically identifies incomplete or non-conforming work items during the final inspection with the owner/engineer and prepares a punch list. Contractor corrects all items to the owner's satisfaction. Punch list closure is a contractual requirement before final payment.
@@ -81,15 +81,31 @@ The LEA evaluates pre/post-construction knowledge through:
 4. _Occupancy compliance_ — Explain why occupancy permit is required and consequences of illegal occupancy.
 5. _Documentation_ — Importance of as-built drawings and defect records for warranty and future maintenance.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The building permit process per PD 1096 is a regulatory gate. Incomplete or non-conforming submissions cause delays. As-built drawings and punch list documentation protect the owner's legal position and warranty claims. Never allow occupancy without final occupancy permit (CO) from LBO—liability falls on the builder and owner if code violations are discovered post-occupancy.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Proceeding Without Building Permit", body="A contractor begins construction without waiting for building permit approval to accelerate schedule. The LBO discovers unpermitted work and orders demolition. Project suffers complete loss. PD 1096 requires permits; violation is criminal."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Inadequate Soil Testing", body="A geotechnical investigation finds bearing capacity of 150 kPa, but the design (prepared elsewhere) assumes 200 kPa. Foundation settlement occurs post-occupancy, requiring underpinning and major repairs. Proper pre-design investigation prevents foundation disasters."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: items="{[\"Occupying the building without occupancy permit (CO)—legally prohibited; owner/tenant are liable. Final inspection must be completed and violations corrected before CO issuance.\", \"Failing to document punch list items and closure—contractor disputes arise post-occupancy; proper documentation protects all parties. Punch list must be signed off before final payment.\", \"As-built drawings incomplete or missing—operations, maintenance, and future renovation suffer. As-builts must accurately reflect field changes, rebar placement, MEP routing, etc.\", \"Underestimating permit approval time—expect 30–60 days post-application. Plan accordingly; expedited processing (if available) requires additional fees and coordination.\", \"Ignoring environmental clearances (ECC, DENR permits for hazardous materials)—compliance is mandatory. Asbestos/lead abatement must be documented by certified contractors.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

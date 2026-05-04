@@ -18,7 +18,7 @@ Urban design differs from planning: planning allocates land uses across space (z
 **Complete Streets** is a modern implementation of these principles: streets designed for pedestrians, cyclists, transit users, and cars (in that priority order). Complete streets include sidewalks, cycle tracks, tree canopy, and street parking buffers. They prioritize ground-floor mixed use (retail, offices, housing) and human-scale building facades. The philosophy: streets are public spaces first, traffic corridors second.
 
 Urban design is not arbitrary. Every principle is grounded in human behavior and perception: people move more if streets are shaded and bounded; they stay longer if seating and food exist; they feel safer if uses are mixed and streets active.
-<ArticleMedia id="media-lea-plan-002-06-core-concept" a type="image" caption="Urban Design Principles — Height-to-Width Ratio and Streetscape Quality" description="Street section diagram showing height-to-width ratio (H:W = 1:1 comfortable canyon, 1:2 open, 2:1 deep canyon), complete street components (pedestrian zone, bike lane, vehicle lanes, sidewalk cafes), and human scale design elements per Jacobs, Gehl, and Cullen." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-002-06-core-concept" type="image" caption="Urban Design Principles — Height-to-Width Ratio and Streetscape Quality" description="Street section diagram showing height-to-width ratio (H:W = 1:1 comfortable canyon, 1:2 open, 2:1 deep canyon), complete street components (pedestrian zone, bike lane, vehicle lanes, sidewalk cafes), and human scale design elements per Jacobs, Gehl, and Cullen." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

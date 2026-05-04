@@ -13,15 +13,17 @@ Apply the general provisions of PD 1096 Rule I: the applicability scope, definit
 
 ## 1. Hook / Opening Scenario
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
-
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 Extracted summary:
-- Props: (none)
-- Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
+- Props: code="pd1096", section="Rule I - Section 106 - Permits"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule I - Section 101 - Scope"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
 
 You are sitting in the OBO — the Office of the Building Official — of a second-class municipality in Rizal province. A client submits plans for what the drawings label an "alteration": the ground floor of a two-storey residence will be converted into a convenience store, and a third floor will be added. The building official's evaluator looks at you. Is this an alteration? A renovation? A conversion? An addition? Or all four? Your answer determines which permit is required, which technical disciplines must sign the plans, and whether the existing structure must be fully brought up to code. This is Section 106 country — and the LEA board exam lives here.
 
@@ -282,7 +284,8 @@ This connects to Rule V (Fire Zones) and the IRR provisions on hazardous occupan
 
 **ADDITION** (IRR Sec. 106): *"New construction added to an existing building or structure which increases its height and/or its floor area."*
 
-<Note>
+Extracted summary:
+
 \
 - Height increase example: adding a third floor to a two-storey building
 - Floor area increase example: extending the ground floor footprint into the rear setback (with variance)
@@ -365,7 +368,7 @@ The building permit is NOT a certificate of occupancy. Construction may be permi
 **APPLICANT/PERMITTEE:** The definition is notably broad — "any person, firm, partnership, corporation, or head of institution." This means juristic persons (corporations, partnerships) may be permittees, not only natural persons. The head of an institution (university president, hospital administrator) may be the permittee for institutional buildings.
 
 ---
-</Note>
+
 ## 5. PH vs. USA Comparative Analysis
 
 ### Structural Differences in Code Framework
@@ -565,17 +568,7 @@ Return to this module in 3 days. If you can answer the Active Recall questions w
 
 ---
 
-
-
----
-
-## Exam Tip
-
-ALE Trap: Five key General Provision traps: (1) 'Building' definition excludes fences ≤ 1.80 m, (2) 'Alteration' vs 'Repair' — alteration = structural change requiring permit, repair = replacement in-kind (no permit), (3) 'Shall' = mandatory, 'May' = discretionary, (4) PD 1096 governs ALL buildings including government buildings, (5) Exemptions must be SPECIFICALLY provided — not assumed. No. 1 (fence exemption) is the most tested.
-
 ## Cross‑References
 
 **Legal Liability And Enforcement Workflow**, **Top 50 Traps 2024 Irr**, **Typology Checklists And Plan Checking**, **Building Permit Process**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

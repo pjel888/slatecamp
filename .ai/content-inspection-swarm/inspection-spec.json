@@ -1,0 +1,23 @@
+{
+  "export_dir": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles",
+  "workspace": "/Users/philiplewis/slatecamp/.ai/content-inspection-swarm",
+  "checks": [
+    "orphaned_markdown_formatting",
+    "malformed_mdx_tags",
+    "unclosed_jsx_elements",
+    "broken_reference_links",
+    "visibility_of_components",
+    "prop_name_mismatches"
+  ],
+  "groups": {
+    "A": {
+      "count": 160
+    },
+    "B": {
+      "count": 162
+    },
+    "C": {
+      "count": 245
+    }
+  }
+}

@@ -7,10 +7,10 @@ Identify when fire alarm systems are mandatory per RA 9514 (Fire Code of the Phi
 
 Fire alarm systems are **required** in the following occupancies and floor areas:
 
-<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" a type="image" caption="Fire Alarm System Types — Conventional, Addressable, Analog-Addressable" description="Three-panel comparison diagram: (1) Conventional zone-based system — devices in series per zone, FACP shows zone only; (2) Addressable system — each device has unique address on SLC loop, FACPin displays exact device location; (3) Analog-addressable — devices transmit analog values (smoke density, temperature) enabling trend analysis. Architecture differences, wiring topology, and typical Philippine applications shown per NFPA 72." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" type="image" caption="Fire Alarm System Types — Conventional, Addressable, Analog-Addressable" description="Three-panel comparison diagram: (1) Conventional zone-based system — devices in series per zone, FACP shows zone only; (2) Addressable system — each device has unique address on SLC loop, FACPin displays exact device location; (3) Analog-addressable — devices transmit analog values (smoke density, temperature) enabling trend analysis. Architecture differences, wiring topology, and typical Philippine applications shown per NFPA 72." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiCalloutBox" status="preserved"]
+<WikiCalloutBox />
 
 Key regulatory references:
 - **RA 9514 (Fire Code of the Philippines):** Fire alarm system requirements per Implementing Rules and Regulations
@@ -125,7 +125,7 @@ Key regulatory references:
 
 #### Placement and Spacing (NFPA 72)
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+<WikiExamTable />
 
 **Offset Requirements:** Smoke detectors must be mounted on ceilings. Where ceiling height exceeds 12.2 m (40 ft) and wall obstructions are minimal, consider wall-mounted detectors 0.3–0.6 m (1–2 ft) below ceiling per NFPA 72 Section 17.7.3.
 
@@ -203,7 +203,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Design Requirements (NFPA 72 + RA 9514 IRR)
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiCalloutBox" status="preserved"]
+<WikiCalloutBox />
 
 ---
 
@@ -211,12 +211,12 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Audible Signals (Horns)
 
-<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" a type="image" caption="Fire Alarm Notification — Horns, Strobes, Voice Evacuation Placement" description="Floor plan diagram showing notification appliance placement: horn spacing for 85 dB SPL coverage, strobe coverage (15 cd minimum, max 12m spacing), voice evacuation speakers in corridors and stairwells. Integration with elevator recall (signal to elevator controller on alarm), HVAC shutdown (return dampers close), and door holder release (magnetic holders release on alarm) shown per RA 9514 IRR." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" type="image" caption="Fire Alarm Notification — Horns, Strobes, Voice Evacuation Placement" description="Floor plan diagram showing notification appliance placement: horn spacing for 85 dB SPL coverage, strobe coverage (15 cd minimum, max 12m spacing), voice evacuation speakers in corridors and stairwells. Integration with elevator recall (signal to elevator controller on alarm), HVAC shutdown (return dampers close), and door holder release (magnetic holders release on alarm) shown per RA 9514 IRR." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 **Standard:** NFPA 72 Table 18.4.3 specifies minimum sound pressure levels (SPL) based on occupancy type.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable />
 
 **Spacing:** Horn placement ensures 85 dB SPL (or code-required level) is achieved in all occupiable areas. In large open spaces (>1,000 m² per floor), space horns 30–40 m apart.
 
@@ -310,7 +310,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Placement Requirements (NFPA 72)
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiCalloutBox" status="preserved"]
+<WikiCalloutBox />
 
 ---
 
@@ -318,7 +318,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Ceiling Mounting Best Practices
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="Tip" status="preserved"]
+<Tip />
 
 **Dead Spaces:** Areas behind suspended ceilings, above raised floors, or in attic spaces must have detectors if occupants access them. Confine detectors to underside of structural ceiling (not plenum side, which is unmanned) per NFPA 72 Section 17.7.1.1.
 
@@ -334,7 +334,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Kitchen Exclusions
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="Warn" status="preserved"]
+<Warn />
 
 **Alternative for Open Kitchens:** Place photoelectric smoke detectors 1.5–3.0 m away from cooking appliances at 9.1 m spacing; ensure air flow (HVAC makeup air) does not carry cooking smoke directly to detectors.
 
@@ -356,7 +356,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Periodic Testing (RA 9514 Section 1006.3.9)
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="WikiExamTable" status="preserved"]
+<WikiExamTable />
 
 **Maintenance Records:** RA 9514 requires all testing and maintenance records retained for ≥3 years, accessible to fire authority inspectors.
 
@@ -432,7 +432,7 @@ ing Parameters:**
 
 ## Summary Checklist for Builders and Engineers
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+<Callout />
 
 ---
 

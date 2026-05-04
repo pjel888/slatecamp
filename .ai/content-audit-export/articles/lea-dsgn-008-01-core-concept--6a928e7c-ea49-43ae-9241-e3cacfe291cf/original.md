@@ -95,7 +95,7 @@ If service corridor leads from kitchen to dining, max length 12m ✓
 - Travel distance: ≤10m to exits (well within 60m)
 - Dead-end: ≤12m acceptable
 - Corridor width: 1,100mm minimum
-<ArticleMedia id="media-lea-dsgn-008-01-core-concept" a type="image" caption="Fire Egress Calculation — Occupant Load, Exit Width, and Travel Distance" description="Multi-panel diagram showing: (1) occupant load calculation table per RA 9514 load factors, (2) exit width computation (OL × 7.6 mm/person), (3) travel distance limits (45m unsprinklered, 60m sprinklered), (4) dead-end corridor limits (6m/12m)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-008-01-core-concept" type="image" caption="Fire Egress Calculation — Occupant Load, Exit Width, and Travel Distance" description="Multi-panel diagram showing: (1) occupant load calculation table per RA 9514 load factors, (2) exit width computation (OL × 7.6 mm/person), (3) travel distance limits (45m unsprinklered, 60m sprinklered), (4) dead-end corridor limits (6m/12m)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -139,7 +139,7 @@ In the Philippines, fire egress calculation errors are among the most-cited by f
 </Tip>
 
 **Exam Tip — ERR-DSGN-009:** Exit width = occupant load × 7.6 mm/person (minimum 900mm per exit). Do NOT use 5.0 mm/person (assembly) or 5.6 mm/person (educational) unless the occupancy-specific factor is provided.
-<ArticleMedia id="media-lea-dsgn-008-01-core-concept" a type="image" caption="Egress Component Diagram — Exit Access, Exit, and Exit Discharge" description="Floor plan diagram showing the three egress components per RA 9514: exit access (travel path from any point to an exit), exit (enclosed stairway or door), and exit discharge (path to public way). Minimum widths, travel distances (45m/60m), and dead-end corridor limits (6m/12m) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-008-01-core-concept" type="image" caption="Egress Component Diagram — Exit Access, Exit, and Exit Discharge" description="Floor plan diagram showing the three egress components per RA 9514: exit access (travel path from any point to an exit), exit (enclosed stairway or door), and exit discharge (path to public way). Minimum widths, travel distances (45m/60m), and dead-end corridor limits (6m/12m) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

@@ -47,6 +47,7 @@ The SPP begins with **Annex "A"**, which provides essential definitions and acro
 
 </ComparisonTable>
 
+
 ### Selection of the Architect (Annex "A", General Notes)
 
 Annex "A" also covers general notes on how a client may engage an architect through three methods:
@@ -80,6 +81,7 @@ The SPP consists of ten numbered documents plus Annex "A," each addressing a dis
 | SPP Doc. 209 | Professional Architectural Consulting Services (PACS) | 1979 UAP Doc. 210 |
 
 </ComparisonTable>
+
 
 ***
 
@@ -134,6 +136,7 @@ Pre-Design Services may be compensated through:
 
 </ComparisonTable>
 
+
 The architect acts as the owner's adviser and representative during construction but is **not required to provide exhaustive 8-hour on-site supervision** unless separately contracted under SPP Doc. 204-A.
 
 ### Project Classification Groups
@@ -157,6 +160,7 @@ SPP 202 classifies all architectural projects into ten groups based on complexit
 
 </ComparisonTable>
 
+
 ### Method of Compensation (Fee Schedule)
 
 Architect's fees for Regular Design Services are primarily computed as a **percentage of Project Construction Cost (PCC)**:
@@ -174,6 +178,7 @@ Architect's fees for Regular Design Services are primarily computed as a **perce
 | Group 9 | 150% of the applicable Group 1–5 fee |
 
 </ComparisonTable>
+
 
 Other methods include Multiple of Direct Personnel Expenses, Unit Cost, Lump Sum, and Mixed Methods.
 
@@ -289,6 +294,7 @@ CAS encompasses all services under the preceding SPP documents:
 
 </ComparisonTable>
 
+
 ***
 
 ## SPP Document 207 – Design-Build Services
@@ -332,6 +338,7 @@ The ADC promotes design innovation, creativity, and excellence in architecture. 
 | **Competition Secretariat** | Administrative body supporting the Professional Advisor and Jury |
 
 </ComparisonTable>
+
 
 ### Classifications of ADCs
 
@@ -427,9 +434,12 @@ The SPP documents collectively define what the profession calls the **Spectrum o
 
 </ComparisonTable>
 
+
 Together, these documents ensure that architectural practice in the Philippines meets the standards of public health, safety, welfare, and professional integrity mandated under R.A. No. 9266.
 
 ---
+
+
 
 ---
 
@@ -437,17 +447,7 @@ Together, these documents ensure that architectural practice in the Philippines 
 
 LEA Swipe: Nine SPP Docs: 201 (Pre-Design), 202 (Regular Design), 203 (Specialized), 204-A (Full-Time Supervision), 204-B (CM), 205 (Post-Construction), 206 (Comprehensive), 207 (Design-Build), 208 (Competition), 209 (Consulting). All are derived from RA 9266, Art. I, Sec. 4 (Architect's scope of practice). The three most tested are 202 (fee split), 201 (pre-design scope), and 207 (design-build).
 
-
-
----
-
-## Exam Tip
-
-ALE Swipe: Nine SPP Docs: 201 (Pre-Design), 202 (Regular Design), 203 (Specialized), 204-A (Full-Time Supervision), 204-B (CM), 205 (Post-Construction), 206 (Comprehensive), 207 (Design-Build), 208 (Competition), 209 (Consulting). All are derived from RA 9266, Art. I, Sec. 4 (Architect's scope of practice). The three most tested are 202 (fee split), 201 (pre-design scope), and 207 (design-build).
-
 ## Cross‑References
 
 **Spp Doc 201 Pre Design Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 206 Comprehensive Architectural Services**
 
-
-<!-- no-media-needed: SPP document reference, service scope text is optimal -->

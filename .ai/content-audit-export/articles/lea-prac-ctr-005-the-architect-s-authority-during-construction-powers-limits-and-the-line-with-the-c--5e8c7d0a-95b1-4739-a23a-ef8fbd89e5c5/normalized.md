@@ -55,10 +55,22 @@ The Architect's authority to direct removal of defective work does not eliminate
 Similarly, the Architect's authority to interpret the contract does not extend to changing the contract scope or requirements. Interpretations clarify existing requirements; they do not create new requirements or obligations. If the Owner desires to change the contract, a formal Change Order must be issued; an interpretation cannot substitute for a Change Order.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="uap", section="SPP Doc. 202 - Architect's Authority During Construction"
+- Text: **Architect's Authority During Construction** RA 9266 and UAP Doc 301 define the architect's authority, limitations, and responsibility during the construction phase.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Common exam trap:** Students often confuse the architect's authority to stop work with the contractor's responsibility for means and methods.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: title="LEA Strategy"
+- Text: **High-yield topic:** Know the specific limits of the architect's authority — they cannot direct contractor means/methods, only verify compliance with contract documents.
+[/SLATECAMP_UI_BLOCK]
 
 
 ---

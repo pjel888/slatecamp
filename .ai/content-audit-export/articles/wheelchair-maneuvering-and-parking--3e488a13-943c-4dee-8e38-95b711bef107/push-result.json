@@ -1,20 +1,22 @@
 {
-  "attempted_at": "2026-05-04T02:18:10.729Z",
+  "attempted_at": "2026-05-04T09:14:18.278Z",
   "dry_run": false,
   "apply": true,
-  "pushed": true,
-  "blockers": [],
+  "pushed": false,
+  "blockers": [
+    "candidate.md matches original.md; refusing no-op apply.",
+    "ui-blocks.json contains unknown/unparseable blocks; rerun with --force only after manual review."
+  ],
   "warnings": [],
-  "updated_rows_count": 1,
+  "updated_rows_count": 0,
   "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
   "slug": "wheelchair-maneuvering-and-parking",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:18bcc62aa1a6eeb25d5ec5fc55cae8bb5404fa40c865276c1edae385d5e48ebe",
-  "original_hash": "sha256:18bcc62aa1a6eeb25d5ec5fc55cae8bb5404fa40c865276c1edae385d5e48ebe",
-  "candidate_hash": "sha256:37fc7eca1e1a0fe66c59fd53a7239d4d511a01b0479d6837cca937f2213c9ff4",
+  "remote_hash_before": "sha256:d999339002afa465e1b667b77b7398a8f90fa39a2c38f62341cf49da54359f2f",
+  "original_hash": "sha256:d999339002afa465e1b667b77b7398a8f90fa39a2c38f62341cf49da54359f2f",
+  "candidate_hash": "sha256:d999339002afa465e1b667b77b7398a8f90fa39a2c38f62341cf49da54359f2f",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:51.028072+00:00",
-  "updated_at_after": "2026-05-04T02:18:11.08133+00:00"
+  "remote_updated_at_before": "2026-05-04T02:41:53.0489+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:05:54.714Z",
+  "attempted_at": "2026-05-04T08:48:54.434Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
   "slug": "lea-plan-002-04-core-concept",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:556279453c94df316fa1bcdfc09ea3101a79c280f7baa86ab4b16615e68e7aa3",
-  "original_hash": "sha256:48f8fa8fab9201d3a41ae1d891dcf2e37456cf43d64f4ba089c04d6e901dda85",
-  "candidate_hash": "sha256:556279453c94df316fa1bcdfc09ea3101a79c280f7baa86ab4b16615e68e7aa3",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:c596e8b80cf050c6de2cc1bd3f0b9d3f12fe283b57131c901ba95bcd7af3c3a0",
+  "original_hash": "sha256:556279453c94df316fa1bcdfc09ea3101a79c280f7baa86ab4b16615e68e7aa3",
+  "candidate_hash": "sha256:decb97d2d617903f196f62a9d63f19775231d77049ae7b86e84d5dd0db88da68",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T01:59:10.432572+00:00"
+  "remote_updated_at_before": "2026-05-04T02:32:55.887468+00:00"
 }

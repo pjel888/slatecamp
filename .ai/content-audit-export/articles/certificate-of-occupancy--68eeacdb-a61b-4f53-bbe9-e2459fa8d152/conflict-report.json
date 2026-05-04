@@ -1,28 +1,22 @@
 {
-  "attempted_at": "2026-05-04T00:07:08.445Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T08:50:35.497Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
   "slug": "certificate-of-occupancy",
   "preparation_actions": [
+    "auto_composed_candidate",
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:997210a9127a88e6ef45777ad9ef9de7036adc9f5e17dc6ac6d14e62287c2f48",
-  "original_hash": "sha256:b6cf041f817ea53af46d2ea612bd381930050456bafdba033e90820fb11b48dd",
-  "candidate_hash": "sha256:ca1ae6a2e96643d8eeeea4fd02143a2c6adc30f94e217e22a05bf9b6c7796bc2",
+  "remote_hash_before": "sha256:5723bf9f6a2c759b978e56f74a3513e47b8fe8de7ee14f5bbf4985e75ffc518e",
+  "original_hash": "sha256:997210a9127a88e6ef45777ad9ef9de7036adc9f5e17dc6ac6d14e62287c2f48",
+  "candidate_hash": "sha256:eb5400bdd925f7247900055d11157283c467994ed2ad39366e4c0ea287b77132",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T14:19:00.511118+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:14.822438+00:00"
 }

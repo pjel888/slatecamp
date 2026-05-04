@@ -7,7 +7,7 @@ Design security and access control systems — card readers, biometric readers, 
 
 ### Wiegand Protocol
 
-<ArticleMedia id="media-lea-util-005-04-communication-protocols-" a type="image" caption="Building Automation System Architecture — BACnet, Modbus, MQTT Protocol Layers" description="Three-tier BMS architecture diagram: Field level (sensors, actuators, VFDs) using Modbus RTU/RS-485 up to 1200m; Automation level (controllers, gateways) using BACnet/IP on building LAN; Management level (BMS server, dashboards, analytics) using MQTT for IoT data. Protocol data rates, topology, and typical Philippine building applications (HVAC control, lighting, metering, access control) shown per ASHRAE BACnet standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-005-04-communication-protocols-" type="image" caption="Building Automation System Architecture — BACnet, Modbus, MQTT Protocol Layers" description="Three-tier BMS architecture diagram: Field level (sensors, actuators, VFDs) using Modbus RTU/RS-485 up to 1200m; Automation level (controllers, gateways) using BACnet/IP on building LAN; Management level (BMS server, dashboards, analytics) using MQTT for IoT data. Protocol data rates, topology, and typical Philippine building applications (HVAC control, lighting, metering, access control) shown per ASHRAE BACnet standards." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Wiegand is a legacy, open-source protocol operating at DC levels (0–24V) over two signal wires, originally specified by HID for proximity card readers. The protocol transmits data as differential pulses: a logic "1" is a 20 µs pulse on the data line, while logic "0" is a 20 µs pulse on the clock line[1]. Maximum cable run without repeater is typically 500 feet (approximately 150 m) for twisted-pair Category 3 or better per HID specifications[2].
@@ -102,7 +102,7 @@ _Throughput_: Iris readers process one person per 2–3 seconds, unsuitable for 
 
 ### Controller & Reader Integration
 
-<ArticleMedia id="media-lea-util-005-04-communication-protocols-" a type="image" caption="Access Control System — Card Reader, Controller, Electric Lock Integration" description="Network diagram of access control system components: credential readers (proximity, smart card, biometric) connected via OSDP (RS-485, up to 1200m) or IP/Ethernet to door controllers, which command electric locks (maglocks or electric strikes, 12/24VDC). Fire alarm integration showing hardwired relay for emergency door unlock per PD 1096. REX (request-to-exit) motion sensors, elevator floor access control, and visitor management system integration shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-005-04-communication-protocols-" type="image" caption="Access Control System — Card Reader, Controller, Electric Lock Integration" description="Network diagram of access control system components: credential readers (proximity, smart card, biometric) connected via OSDP (RS-485, up to 1200m) or IP/Ethernet to door controllers, which command electric locks (maglocks or electric strikes, 12/24VDC). Fire alarm integration showing hardwired relay for emergency door unlock per PD 1096. REX (request-to-exit) motion sensors, elevator floor access control, and visitor management system integration shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 A typical access control system consists of:
@@ -264,11 +264,11 @@ Security and access control systems integrate multiple communication protocols (
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+<KeyValues />
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip />
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip />
 
 [1] HID Global. Wiegand Protocol Specification. Accessed 2024.
 [2] Belden/Siemon. Access Control Cabling Guide. Document 7CXXX, 2022.

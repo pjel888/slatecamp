@@ -1,28 +1,22 @@
 {
-  "attempted_at": "2026-05-04T00:06:07.627Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T08:49:12.536Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
   "slug": "glass-and-glazing-area-limits",
   "preparation_actions": [
+    "auto_composed_candidate",
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:c0706a3ae64cf36a62e9ef1f60a5b63dfb9caa5e170d293e04128c5caf2a954d",
-  "original_hash": "sha256:1328f1ce22f44e3670231dfd35a0e4e082fca38129481635ddce71f308a8d42b",
-  "candidate_hash": "sha256:3dc52861ada0891846589506068fa47c705ea21d8bc4eeeaf9f02df536203138",
+  "remote_hash_before": "sha256:23694aeeb9c0a2d067dbd745d6849ef854fbe766a87c6447e52f338ddbc29562",
+  "original_hash": "sha256:3dc52861ada0891846589506068fa47c705ea21d8bc4eeeaf9f02df536203138",
+  "candidate_hash": "sha256:cb6d4bb04e79d8e875b211290df4cace62aa19cb0af3b78fecfbdb2a8107b4dd",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T14:19:10.951476+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:09.074331+00:00"
 }

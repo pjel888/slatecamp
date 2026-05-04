@@ -1,15 +1,15 @@
 # Content Diff Report: lea-util-008-02-mechanical-spaces
 
-Generated: 2026-05-04T02:17:23.755Z
+Generated: 2026-05-04T09:13:46.645Z
 Article ID: bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:a9486d728ebeda2e9c32550546113f6b3633b471a18f9a4b5e3a4d7c802a5623`
-- Normalized: `sha256:44686a82859d7b576b880bc1a56ffbec10f7e5c3af615206a3689e63d3188ef9`
-- Candidate: `sha256:a9486d728ebeda2e9c32550546113f6b3633b471a18f9a4b5e3a4d7c802a5623`
+- Original: `sha256:cc0627514dc2286fdbf1a447fb13ab413643269358d506125ad6bf6ead8697cc`
+- Normalized: `sha256:1d49df082b19b16ce395d2fd1e4a90ed8ef4eef75611e05646d828432c9b55e0`
+- Candidate: `sha256:cc0627514dc2286fdbf1a447fb13ab413643269358d506125ad6bf6ead8697cc`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

@@ -74,7 +74,7 @@ The Nazi regime closed the Bauhaus in 1933, viewing its modernism and Jewish tea
 
 **Craft-Industry Integration**: Bauhaus principle reconciling traditional craftsmanship with industrial manufacturing; rejected the fine art-craft hierarchy and the notion that industrial production must be ugly.
 
-<ArticleMedia id="media-hist-008-03c-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Gropius's key works — Fagus Factory (glass curtain wall, 1911) and Bauhaus Dessau (bridged wings, 1925–1926) — showing the development of industrial aesthetic and structural honesty.\" caption=\"Walter Gropius — Fagus Factory and Bauhaus Dessau\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-008-03c-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Gropius's key works — Fagus Factory (glass curtain wall, 1911) and Bauhaus Dessau (bridged wings, 1925–1926) — showing the development of industrial aesthetic and structural honesty." caption="Walter Gropius — Fagus Factory and Bauhaus Dessau" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

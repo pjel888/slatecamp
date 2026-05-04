@@ -1,15 +1,15 @@
 # Content Diff Report: lea-plan-005-04-core-concept
 
-Generated: 2026-05-04T02:17:44.975Z
+Generated: 2026-05-04T09:14:00.270Z
 Article ID: f6b1d119-9ba2-436b-ba39-d62abceef5ed
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:c6d28444a9c5232d78deea6316f3f0ba4cfbcbc995fdfc5a48a92b39c0843d23`
-- Normalized: `sha256:9555bc2d32de6ba9102704f50599147e59d8fbcc6fd8fabd6b20c2be4d7ba996`
-- Candidate: `sha256:c6d28444a9c5232d78deea6316f3f0ba4cfbcbc995fdfc5a48a92b39c0843d23`
+- Original: `sha256:1a919d1c3b4660f3dbf34053437ce04f34f0f4b25d36dda62ca5afc811de2517`
+- Normalized: `sha256:de314680a5d7024e9aa59d4a1dac0c54044a93b41c1d366d9d83bd251e4aa5b7`
+- Candidate: `sha256:1a919d1c3b4660f3dbf34053437ce04f34f0f4b25d36dda62ca5afc811de2517`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
@@ -30,4 +30,5 @@ Safe to push locally: true
 
 ## Warnings
 
+- ui-blocks.json contains unknown custom blocks; push requires review or --force.
 - Remote stale check has not been run by diff; push command must verify Supabase before mutation.

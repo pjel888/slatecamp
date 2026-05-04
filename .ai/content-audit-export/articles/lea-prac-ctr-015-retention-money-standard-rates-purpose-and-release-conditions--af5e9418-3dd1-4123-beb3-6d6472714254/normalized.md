@@ -47,10 +47,26 @@ The owner has a fiduciary obligation to account for and properly manage retained
 Interest on retained funds creates a point of contract negotiation. Some contracts specify that the owner must pay the contractor interest on retention funds, recognizing that the owner holds the contractor's money. Other contracts are silent on interest, resulting in the owner retaining use of the funds interest-free throughout the project duration.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", section="RA 9266", title="Architecture Act of 2004"
+- Text: RA 9266 governs architectural practice and contract requirements. Agreements must specify scope, compensation, termination, and dispute resolution per SPP Document 201.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Proposal — Scope definition and fee negotiation Contract Execution — Signing of UAP Doc 301 Service Delivery — Performance of defined phases Payment Processing — Progress billing and certificates Close-out — Final certificate, retention release
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibility, supervision) are separately compensated. Verify exclusions.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"10%\", \"label\": \"Standard Retention\"}", value=true, days=true, label=true, Payment=true, Period=true, COLA=true, Escalation=true, Max=true, CD=true, Phase=true, Fee=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 <!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

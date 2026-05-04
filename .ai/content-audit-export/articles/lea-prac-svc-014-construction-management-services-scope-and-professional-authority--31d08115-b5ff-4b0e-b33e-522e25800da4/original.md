@@ -4,7 +4,7 @@ After reading this article, you should understand the key concepts tested in the
 
 Construction Management Services address the comprehensive coordination demands of modern construction projects. SPP Doc 204-B establishes standards for construction managers operating within the Philippine architectural profession. This service evolved from recognition that project complexity demands specialized management expertise beyond traditional supervision. Construction managers coordinate cost, schedule, quality, safety, and stakeholder relationships throughout project delivery.
 
-<ArticleMedia id="media-lea-prac-svc-014-construction-management" a type="image" caption="Construction Management Process Flow — Project Delivery Coordination" description="Workflow chart showing the construction management process: project assessment → team assembly → schedule coordination → multi-trade integration → cost tracking → value engineering → change management → quality assurance → safety oversight → project closeout. Based on SPP Doc 204-B." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-014-construction-management" type="image" caption="Construction Management Process Flow — Project Delivery Coordination" description="Workflow chart showing the construction management process: project assessment → team assembly → schedule coordination → multi-trade integration → cost tracking → value engineering → change management → quality assurance → safety oversight → project closeout. Based on SPP Doc 204-B." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Rationale and Scope of Construction Management
 

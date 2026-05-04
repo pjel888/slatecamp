@@ -13,7 +13,11 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## Core Concepts
 
-[SLATECAMP_UI_BLOCK:ui_0046 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: "E-E-T = EIS, ECA, Tree Permit."** Three regulatory requirements for flora/fauna in site development: EIS System (PD 1586) — required for projects in ECAs or classified as ECPs; ECA (Environmentally Critical Areas) — watersheds, mangroves, NIPAS areas trigger the ECC requirement; Tree Cutting Permit (PD 705) — separate from building permit, required by DENR before removing any naturally grown tree.
+[/SLATECAMP_UI_BLOCK]
 
 - **Environmental Impact Statement (EIS) System (PD 1586 & DENR DAO 2003-30):** The Philippine EIS System, not PD 1096, is the governing framework for evaluating ecological impacts of development projects. Projects located in or adjacent to Environmentally Critical Areas (ECAs) — such as watersheds, mangrove swamps, coral reef areas, habitats of endangered species, and national parks — are required to secure an ECC from the DENR-EMB before construction.
 
@@ -27,7 +31,11 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## The Hard Data (Cheat Sheet)
 
-[SLATECAMP_UI_BLOCK:ui_0047 component="Example" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Philippine Application:** A 2-hectare mixed-use development in Antipolo borders a watershed reserve with 40+ mature Narra trees. Before building permit application, the architect must secure: (1) ECC from DENR-EMB (PD 1586), (2) Tree Cutting/Transplant Permit (PD 705), (3) Wildlife Gratuitous Permit if any threatened species are present (RA 9147). Root Protection Zones (RPZ = 12× DBH) must be marked on the site plan.
+[/SLATECAMP_UI_BLOCK]
 
 | Parameter | Requirement / Standard | Governing Law / Regulation |
 |---|---|---|
@@ -48,7 +56,11 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## Crucial Formulas & Computations
 
-[SLATECAMP_UI_BLOCK:ui_0048 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Exam Pattern — Agency Confusion Trap:** The LEA frequently tests which agency handles which permit. Remember: DENR-EMB = EIS System and ECC issuance (PD 1586, DAO 2003-30). OBO (Office of the Building Official) = Building permit under PD 1096. If a question says "who issues the ECC?" the answer is DENR-EMB, NOT the OBO.
+[/SLATECAMP_UI_BLOCK]
 
 While flora/fauna preservation is primarily regulatory and qualitative, two quantitative tools frequently appear in EIA studies for site development:
 
@@ -97,7 +109,11 @@ This metric is used in EIA reports to demonstrate the ecological value of existi
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0049 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ EXAM WARNING: The RPZ (Root Protection Zone) formula is RPZ = 12 × DBH (diameter at breast height, measured at 1.4 m above grade). This is the standard for Philippine EIA studies. Do NOT confuse it with the 5-meter PHIVOLCS fault buffer (geological hazard) or the 3–40 m PD 1067 easement (hydrology). Each has its own formula and regulatory trigger.
+[/SLATECAMP_UI_BLOCK]
 
 ## Active Recall Questions
 

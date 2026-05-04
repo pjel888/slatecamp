@@ -42,12 +42,28 @@ The competition secretariat manages submission reception, document organization,
 Competition conditions establish submission requirements, intellectual property rights, compensation for winning and selected designs, and timeline specifications. Professional conditions require truthful representations, ethical conduct, and respect for competitors' intellectual contributions. Conditions address publication rights, exhibition arrangements, and design team acknowledgment. Clear conditions prevent disputes and maintain professional standards throughout the competitive process.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Initiation — Client consultation and scope definition Proposal — Fee structure and contract execution Service Delivery — Performance per SPP document Completion — Turnover and documentation
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

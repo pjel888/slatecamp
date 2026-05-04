@@ -1,27 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:17.142Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T08:50:49.363Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
   "slug": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:f60ca9d754486f5d201dd99299745238d0e2463bb0d7a4edbfd59ca93e8bb853",
-  "original_hash": "sha256:7e0f511e8d0170afb4eb4044383a5d27b5e3a4795c4c3a26e1f8f8086f497b02",
-  "candidate_hash": "sha256:06f9eda5490478387b182352de0f310d704c3b6cb5a7a447efcf21623c67093c",
+  "remote_hash_before": "sha256:769599ca2a909e0e301ebca56324e50b36fca96be206bbb37ac1450f052f7c12",
+  "original_hash": "sha256:06f9eda5490478387b182352de0f310d704c3b6cb5a7a447efcf21623c67093c",
+  "candidate_hash": "sha256:68ae0d7b1bb525bd20ff719adeb570e5a8194c2dad84287882e437fe8ae91974",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T14:19:28.296564+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:09.48225+00:00"
 }

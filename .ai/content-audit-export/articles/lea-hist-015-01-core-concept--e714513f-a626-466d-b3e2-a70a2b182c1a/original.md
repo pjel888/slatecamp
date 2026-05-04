@@ -75,7 +75,7 @@ Questions ask why courthouses, government houses, and churches were monumental a
 
 **Architectural Colonization** — Imposition of European architectural styles and values as assertion of cultural dominance; erases and suppresses Indigenous building traditions.
 
-<ArticleMedia id="media-hist-015-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Contrast between Indigenous Australian architecture (gunyah bark shelters, windbreaks, climate-responsive ephemeral structures) and colonial imported European styles, showing how climate, materials, and cultural values shaped distinct building traditions.\" caption=\"Australian Indigenous vs. Colonial — Architecture Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-015-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Contrast between Indigenous Australian architecture (gunyah bark shelters, windbreaks, climate-responsive ephemeral structures) and colonial imported European styles, showing how climate, materials, and cultural values shaped distinct building traditions." caption="Australian Indigenous vs. Colonial — Architecture Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

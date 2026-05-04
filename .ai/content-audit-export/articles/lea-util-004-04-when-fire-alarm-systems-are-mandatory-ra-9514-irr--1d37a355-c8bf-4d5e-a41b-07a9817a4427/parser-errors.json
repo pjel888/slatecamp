@@ -1,56 +1,14 @@
 {
   "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
   "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
-  "generated_at": "2026-05-01T13:33:43.534Z",
+  "generated_at": "2026-05-04T09:10:35.724Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 2,
-  "unknown_block_count": 2,
+  "warning_count": 0,
+  "unknown_block_count": 0,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [
-    {
-      "block_id": "ui_0003",
-      "component_name": "WikiExamTable",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
-      ]
-    },
-    {
-      "block_id": "ui_0010",
-      "component_name": "WikiMistakeList",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0003",
-      "component_name": "WikiExamTable",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:5788679e4b2ac46676a4d4ce3dd561a1c4fcb160efcf73d0afa09cf12af3e385",
-      "line_start": 178,
-      "line_end": 178,
-      "warnings": [
-        "No closing tag found for WikiExamTable; preserved opening line as unknown custom block."
-      ]
-    },
-    {
-      "block_id": "ui_0010",
-      "component_name": "WikiMistakeList",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:859cb20d3cb2bb83fe7e899fa7fcf21b6b7c540804a2e22622d93fea3b9a0f2d",
-      "line_start": 419,
-      "line_end": 419,
-      "warnings": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
+  "warnings": [],
+  "unknown_blocks": [],
   "critical_blocks": []
 }

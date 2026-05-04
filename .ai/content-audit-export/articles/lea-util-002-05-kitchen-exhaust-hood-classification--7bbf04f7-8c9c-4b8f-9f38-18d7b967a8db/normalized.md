@@ -7,7 +7,11 @@ Classify kitchen exhaust hoods (Type I vs Type II) by NFPA 96 requirements based
 
 ### Type I Hoods (Grease-Laden Vapor)
 
-<ArticleMedia id="media-lea-util-002-05-kitchen-exhaust-hood-cla" type="image" caption="Type I vs Type II Kitchen Exhaust Hood — Section Comparison" alt="Side-by-side cross-section of Type I (grease-laden) and Type II (steam/heat) hoods: Type I shows grease filters, wet chemical fire suppression nozzle, fully welded steel duct (sloped 1:12), cleanout door; Type II shows standard galvanized duct, no filters or suppression required. Exhaust rate range (50-100 CFM/ft Type I, 40-75 CFM/ft Type II) and make-up air (80-90%) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-002-05-kitchen-exhaust-hood-cla", type="image", caption="Type I vs Type II Kitchen Exhaust Hood — Section Comparison", description="Side-by-side cross-section of Type I (grease-laden) and Type II (steam/heat) hoods: Type I shows grease filters, wet chemical fire suppression nozzle, fully welded steel duct (sloped 1:12), cleanout door; Type II shows standard galvanized duct, no filters or suppression required. Exhaust rate range (50-100 CFM/ft Type I, 40-75 CFM/ft Type II) and make-up air (80-90%) annotated.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 Type I hoods capture grease-laden vapors from cooking equipment including griddles, woks, charbroilers, and deep fryers. These hoods require:
@@ -16,11 +20,23 @@ Type I hoods capture grease-laden vapors from cooking equipment including griddl
 - _Fire suppression systems_ integrated within the hood and ductwork
 - _Duct systems_ constructed from minimum gauge per PD 1096 2004 IRR (NFPA 96 references 18 gauge steel or 20 gauge stainless steel for Type I hoods) with full seam welding
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, THHN=true, label=true, u00b0C=true, General=true, Wiring=true, THWN=true, Wet=true, Locations=true, XHHW=true, Dry=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+[/SLATECAMP_UI_BLOCK]
 - _Sloped ductwork_ at minimum 1:12 gradient to direct grease back toward the hood
 - _Exhaust rate_ calculated at 50–100 cubic feet per minute (CFM) per linear foot of cooking surface length, per PD 1096 2004 IRR Rule VI Section 606 (or equivalent mechanical code section)
 

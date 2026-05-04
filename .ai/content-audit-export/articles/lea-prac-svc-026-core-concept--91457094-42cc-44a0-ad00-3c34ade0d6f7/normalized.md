@@ -20,10 +20,22 @@ Project size determines whether landscaping remains under the architect's scope 
 Compensation for SDP services depends on the sum of estimated costs: civil works cost plus landscaping works (hardscape and softscape combined). The fee is computed per the Architect's Guidelines, with the overhead factor determined by the project's Group classification per the Architect's Guidelines.
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Do not confuse SPP 203.4 (SDP—a sub-service under Professional Architectural Services) with SPP 209 (Professional Architectural Consulting Services / PACS). SDP includes landscape/hardscape planning under the architect's scope; PACS does not.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Softscape refers to vegetative elements (planting, turf, ground covers). Hardscape refers to constructed elements (paving, walls, steps, water features, site furniture). Both are included in landscaping works cost for fee calculation.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: Small projects = architect does landscaping layout directly. Large projects = architect must hire RLP Landscape Architect as Specialist Consultant. If client hires own Landscape Architect, that fee is the _client's_ account, not deducted from architect's fee.
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -58,10 +70,18 @@ Questions present civil works cost and landscaping costs and ask the correct fee
 Questions present SDP scope (planning, specifications, bid assistance, hardscape/softscape layout) and ask whether the service falls under SPP 203.4 (SDP) or SPP 209 (PACS). Distractors suggest SDP falls under SPP 209 or that full Landscape Architecture practice is part of architect's SDP scope.
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: When a question mentions "landscape architecture services" or "plant selection and horticultural design," read carefully. If the context is site development planning and layout integration with civil works, it is SPP 203.4 SDP. If it is standalone landscape design services, it may fall outside standard SDP scope or require an RLP Specialist Consultant on large projects.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing SPP 203.4 (SDP) with SPP 209 (PACS)—SDP includes landscape/hardscape planning under architect scope; PACS does not\",\"Assuming the architect can perform detailed landscape design on large projects without hiring an RLP Landscape Architect Specialist Consultant\",\"Reversing the small/large project rule: architect does landscaping on small projects; must hire RLP on large projects\",\"Deducting a client-engaged Landscape Architect's fee from the architect's SDP compensation (client fee is client's account, not deducted)\",\"Confusing softscape (planting, turf) with hardscape (paving, walls, water features)—compensation includes both\",\"Calculating SDP fee on civil works cost alone, omitting landscaping works (hardscape + softscape) from fee base\",\"Treating Architect-of-Record (AoR) role as different from Consulting Architect (CA) role in terms of service scope—both provide SDP; role distinction affects responsibility only\",\"Misinterpreting 'Landscape Architect' requirement on large projects as optional or advisory rather than mandatory\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

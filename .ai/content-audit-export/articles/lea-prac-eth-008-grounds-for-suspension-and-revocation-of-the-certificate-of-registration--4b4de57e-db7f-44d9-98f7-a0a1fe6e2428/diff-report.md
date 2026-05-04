@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration
 
-Generated: 2026-05-04T02:16:33.790Z
+Generated: 2026-05-04T09:13:14.968Z
 Article ID: 4b4de57e-db7f-44d9-98f7-a0a1fe6e2428
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:bf89eb56c20c7bc030873e8ff0b297fb05ad4341e5d78652b5a58c4df0c40edb`
-- Normalized: `sha256:c91af9c7c9afb3f944aa1b48e577e8187a431956bb4e4f05e3996c9cfe34d945`
-- Candidate: `sha256:bf89eb56c20c7bc030873e8ff0b297fb05ad4341e5d78652b5a58c4df0c40edb`
+- Original: `sha256:8f532bc29fb00c4f7f7f644b577963626fb33e5fb279e8fb0006cf86094577d2`
+- Normalized: `sha256:17498e4022837019b2e7142dee93cc4b0e03cf8e3d42d249beb13337970ab29c`
+- Candidate: `sha256:8f532bc29fb00c4f7f7f644b577963626fb33e5fb279e8fb0006cf86094577d2`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

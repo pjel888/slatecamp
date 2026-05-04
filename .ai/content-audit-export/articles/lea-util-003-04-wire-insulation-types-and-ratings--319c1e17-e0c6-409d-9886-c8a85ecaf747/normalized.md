@@ -7,7 +7,11 @@ Select electrical wire insulation types (THHN/THWN, XHHW, UF, NM, MC, USE) by te
 
 The Philippine Electrical Code recognizes several standard wire insulation types, each with specific temperature ratings and applications:
 
-<ArticleMedia id="media-lea-util-003-04-wire-insulation-types-an" type="image" caption="Wire Insulation Types Comparison — THHN, THWN, TW, XHHW" alt="Comparison diagram of four common insulation types: THHN (90°C dry, nylon-coated, general conduit wiring), THWN (75°C wet/90°C dry, water-resistant, most versatile), TW (60°C wet, basic, lighting circuits), XHHW (90°C dry/75°C wet, cross-linked polyethylene, feeders and high-load). Temperature ratings, application environments, and conduit fill percentages (40% max for 3+ conductors per PEC 300.17) shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-003-04-wire-insulation-types-an", type="image", caption="Wire Insulation Types Comparison — THHN, THWN, TW, XHHW", description="Comparison diagram of four common insulation types: THHN (90°C dry, nylon-coated, general conduit wiring), THWN (75°C wet/90°C dry, water-resistant, most versatile), TW (60°C wet, basic, lighting circuits), XHHW (90°C dry/75°C wet, cross-linked polyethylene, feeders and high-load). Temperature ratings, application environments, and conduit fill percentages (40% max for 3+ conductors per PEC 300.17) shown.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ### THHN (Thermoplastic High Heat Nylon-coated)
@@ -44,11 +48,23 @@ The Philippine Electrical Code recognizes several standard wire insulation types
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, THHN=true, label=true, u00b0C=true, General=true, Wiring=true, THWN=true, Wet=true, Locations=true, XHHW=true, Dry=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+[/SLATECAMP_UI_BLOCK]
 
 ## Minimum Wire Sizing for Branch Circuits
 

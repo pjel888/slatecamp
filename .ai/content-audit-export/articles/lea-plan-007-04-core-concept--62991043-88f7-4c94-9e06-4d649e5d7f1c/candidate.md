@@ -21,7 +21,7 @@ HUDCC's primary functions were:
 4. **Implementation monitoring:** Tracking collective progress toward targets
 
 When HUDCC was dissolved in 2019 (RA 11201), its coordination functions were transferred to DHSUD, which now chairs coordination meetings and integrates sectoral strategies (housing, urban development, land use planning).
-<ArticleMedia id="media-lea-plan-007-04-core-concept" type="image" caption="HUDCC Historical Coordination Role — Housing Agency Timeline 1986-2019" alt="Timeline diagram of HUDCC (Housing and Urban Development Coordinating Council, EO 90): coordination role among housing agencies (NHA, Pag-IBIG, SHFC, NHMFC, HLURB) from 1986 to supersession by DHSUD under RA 11201 in 2019. Organizational evolution." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-007-04-core-concept" type="image" caption="HUDCC Historical Coordination Role — Housing Agency Timeline 1986-2019" description="Timeline diagram of HUDCC (Housing and Urban Development Coordinating Council, EO 90): coordination role among housing agencies (NHA, Pag-IBIG, SHFC, NHMFC, HLURB) from 1986 to supersession by DHSUD under RA 11201 in 2019. Organizational evolution." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

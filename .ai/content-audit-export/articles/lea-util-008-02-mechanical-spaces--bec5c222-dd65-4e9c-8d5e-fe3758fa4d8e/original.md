@@ -7,7 +7,7 @@ Design mechanical spaces (chiller plants, boiler rooms, AHU rooms, fan rooms, el
 
 ### Chiller Plant and Central AHU Rooms
 
-<ArticleMedia id="media-lea-util-008-02-mechanical-spaces" a type="image" caption="Mechanical Room Floor Plan — Chiller, Pump, AHU, Electrical, and Fire Protection Coordination" description="Coordinated floor plan showing mechanical room: chiller on vibration isolation pads with 1.2-1.5m service clearance, pump sets with flexible connections, AHU with ductwork terminations, electrical panelboard with 1m working clearance, fire suppression header and sprinkler coverage, floor drains and condensate collection (2 L/min per 100kW cooling capacity). Access door (900mm min width), equipment removal path, and BIM coordination at 30/60/90% DD stages annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-008-02-mechanical-spaces" type="image" caption="Mechanical Room Floor Plan — Chiller, Pump, AHU, Electrical, and Fire Protection Coordination" description="Coordinated floor plan showing mechanical room: chiller on vibration isolation pads with 1.2-1.5m service clearance, pump sets with flexible connections, AHU with ductwork terminations, electrical panelboard with 1m working clearance, fire suppression header and sprinkler coverage, floor drains and condensate collection (2 L/min per 100kW cooling capacity). Access door (900mm min width), equipment removal path, and BIM coordination at 30/60/90% DD stages annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Chiller plant rooms typically consume _3–5% of gross floor area (GFA)_ for full-capacity central systems. This allocation accommodates:

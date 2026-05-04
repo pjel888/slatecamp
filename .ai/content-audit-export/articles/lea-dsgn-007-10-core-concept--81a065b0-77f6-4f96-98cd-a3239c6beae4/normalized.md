@@ -36,7 +36,11 @@ Vertical circulation — stairs and elevators — is designed using precise dime
    - Landings are required at the top and bottom of every flight and at required intermediate levels.  
    - RA 9514 sets a **maximum height between landings** of 3.60 m and a minimum headroom of 2.0 m.  
    - Landing depth must be at least equal to the stair width for safe movement.
-<ArticleMedia id="media-lea-dsgn-007-10-core-concept" type="image" caption="Code Compliance Checklist — Design Phase Verification Flowchart" alt="Decision tree/flowchart for code compliance verification at each design phase: schematic (occupancy, setbacks, height limits), design development (egress, fire-rated separations, accessibility), and contract documents (detailed compliance per PD 1096, RA 9514, BP 344)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-10-core-concept", type="image", caption="Code Compliance Checklist — Design Phase Verification Flowchart", description="Decision tree/flowchart for code compliance verification at each design phase: schematic (occupancy, setbacks, height limits), design development (egress, fire-rated separations, accessibility), and contract documents (detailed compliance per PD 1096, RA 9514, BP 344).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -115,7 +119,11 @@ Under the **2024 Revised IRR of BP 344** and related accessibility guidance, ele
 ## Philippine Practice Context
 
 In the Philippines, stair design is dictated primarily by the **National Building Code (PD 1096 and its IRR)** for geometry and by **RA 9514 (Fire Code)** for egress width, landings, and headroom. **Blondel’s formula** is widely used in review materials as a comfort check, but LEA questions will prioritize compliance with the **maximum riser**, **minimum tread**, **minimum width**, and **headroom** requirements set by PD 1096 and RA 9514. Accessibility rules from **BP 344 and its 2024 IRR** govern elevator dimensions, handrail details, and usability for persons with disability. For the LEA, always base your numerical answers on the codes, using Blondel and similar rules to justify good ergonomic practice.
-<ArticleMedia id="media-lea-dsgn-007-10-core-concept" type="image" caption="Code Compliance Workflow — Design Phase Regulatory Checklist" alt="Flowchart showing code compliance verification at each design phase: Pre-Design (zoning, site code), Schematic (occupancy, egress concept), Design Development (fire separation, accessibility), Construction Documents (permit-ready checklist). Key PD 1096, RA 9514, and BP 344 checkpoints at each gate." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-10-core-concept", type="image", caption="Code Compliance Workflow — Design Phase Regulatory Checklist", description="Flowchart showing code compliance verification at each design phase: Pre-Design (zoning, site code), Schematic (occupancy, egress concept), Design Development (fire separation, accessibility), Construction Documents (permit-ready checklist). Key PD 1096, RA 9514, and BP 344 checkpoints at each gate.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -123,4 +131,8 @@ See **LEA-DSGN-008-01** (Fire Egress) for occupant load calculations, **LEA-DSGN
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n 'ERR-DSGN-022: Treating a “preferred” riser (e.g., 175–180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\n \"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\"\n ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

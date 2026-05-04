@@ -70,6 +70,10 @@ The residential elements in this topic fall into three categories:
 
 🛑 **Stop & Think #1:** If an exam question asks "What does PD 1096 require for kitchen work triangle dimensions?" — what is the correct answer?
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Residential Clearances"
+- Text: Answer: PD 1096 has no kitchen work triangle requirement. This is a design principle, not a code provision. Zero percent of the work triangle is in the building code.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -87,6 +91,10 @@ These are the numbers you must know cold. Every one has a PD 1096 section citati
 - The 2×3 m layout = 6 sqm exactly — the code minimum made spatial. Any smaller and it is non-compliant.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Room Clearances"
+- Text: ⚠️ Common Error on Exams: "Master bedroom = 12 sqm minimum." This is false. No such provision exists in PD 1096. 12 sqm is a design/market convention, not a code requirement.
+[/SLATECAMP_UI_BLOCK]
 
 #### Kitchen Minimum Size — Section 806, Revised IRR
 
@@ -173,6 +181,10 @@ Per the National Kitchen and Bath Association (NKBA) Design Guidelines:
 | Work aisle width (multiple cooks) | ≥ 48 inches (1.22 m) |
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: In practice, "13–26 feet total" is frequently referenced (13 ft = three legs × 4 ft minimum each = 12 ft, and some sources add 1 ft, yielding 13 ft as a practical lower bound). The NKBA itself does not formally specify a minimum perimeter, only a maximum of 26 ft. Leg constraints implicitly create a practical minimum.
+[/SLATECAMP_UI_BLOCK]
 
 **Converting to metric for Philippine study:**
 - Maximum total: **7.93 m**
@@ -187,6 +199,10 @@ Per the National Kitchen and Bath Association (NKBA) Design Guidelines:
 
 🛑 **Stop & Think #4:** An exam question states: "The maximum allowable kitchen work triangle perimeter per NKBA is ___." What is the answer?
 [SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Corridor Clearances"
+- Text: 26 feet / 7.93 m. If the question says "per PD 1096" — the answer is "Not applicable; PD 1096 has no kitchen triangle provision."
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -391,21 +407,17 @@ A homeowner in a residential subdivision in Quezon City performs the following w
 
 ---
 
+
+
 ---
+
+
 
 ---
 
 ## Exam Tip
 
 LEA Trap: Residential corridor minimum width = 900 mm (PD 1096) but 1.20 m if the corridor serves as an accessible route (BP 344). The stricter BP 344 requirement governs if the building has accessible dwelling units. This is the most tested threshold.
-
-
-
----
-
-## Exam Tip
-
-ALE Trap: Residential corridor minimum width = 900 mm (PD 1096) but 1.20 m if the corridor serves as an accessible route (BP 344). The stricter BP 344 requirement governs if the building has accessible dwelling units. This is the most tested threshold.
 
 ## Cross‑References
 
@@ -425,5 +437,3 @@ ALE Trap: Residential corridor minimum width = 900 mm (PD 1096) but 1.20 m if th
   - Work triangle: max 26 ft total; each leg 4–9 ft (1.22–2.74 m)
 - **IRC (International Residential Code):** Bedroom minimum 70 sq ft (6.5 m²), ceiling height 7'6" (2.29 m) minimum
 - **BP 344 (Accessibility Law):** Accessible door clear opening 0.90 m
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

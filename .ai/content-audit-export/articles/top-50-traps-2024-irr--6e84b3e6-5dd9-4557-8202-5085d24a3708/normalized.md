@@ -8,6 +8,12 @@ After reading this article, you should be able to:
 
 Master the 50 most frequently tested exam traps in the 2024 Revised IRR of PD 1096: distinguish the correct code reference from plausible distractors; apply the strictest requirement rule across conflicting provisions; and identify hidden conditions — exceptions, footnotes, and 'unless otherwise specified' clauses — that reverse the general rule.
 ---
+[SLATECAMP_UI_BLOCK:ui_0001 component="InlineQuiz" status="preserved"]
+Extracted summary:
+- Props: question="A building with 4 storeys and a BHL of 12 meters is proposed on an R-2 lot with TLA of 600 sqm. What is the maximum AMBF if PSO is 60%?", options="{[\n    { letter: \"A\", text: \"300 sqm\" }", letter=true, B=true, text=true, sqm=true, correct=true, true=true, C=true, D=true, rationale="AMBF = TLA × PSO = 600 × 0.60 = 360 sqm. The BHL and number of storeys do not affect AMBF — they constrain FLAR and total floor area. This is one of the most common LEA calculation traps."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
 
 ## CATEGORY A: RAMPS & SLOPES (Traps 1–10)
 
@@ -422,13 +428,29 @@ Master the 50 most frequently tested exam traps in the 2024 Revised IRR of PD 10
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="2024 Revised IRR of PD 1096"
+- Text: The BP 344 2024 IRR introduced several changes that differ from earlier versions and from US ADA standards. Critical updates: preferred ramp slope is 1:20 (not 1:12), maximum ramp run is 10,500 mm (not 9,000 mm), and ramp landing length is 1800 mm (not 1500 mm). The LEA favors questions that test whether you know the current IRR value versus the commonly cited older or US value.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="new"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: TRAP: When a question states 'per the Philippine accessibility code' and gives a ramp slope of 1:12, check if they're testing the MAXIMUM vs. the PREFERRED. 1:12 is the maximum allowed, 1:20 is the preferred, 1:15 is acceptable. Many examinees incorrectly state 1:12 as the standard because it matches US ADA.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The LEA loves close numerical distractors. For parking: is it 3700 mm or 4000 mm stall width? (4000 mm is correct). For corridor: is it 1500 mm or 1800 mm? (1500 mm is correct). For landing: is it 1500 mm or 1800 mm? (1800 mm is correct). Memorize the exact values — the difference of 300 mm is the trap.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="new"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Mnemonic: '20-15-12' = Ramp slopes from best to max. '18-15-12' = Landing, Corridor, Ramp widths in hundreds of mm. '10.5' = max ramp run in meters. Say: 'Twenty preferred, fifteen okay, twelve if you must.'
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

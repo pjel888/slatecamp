@@ -70,7 +70,7 @@ By the 1980s, Brutalism fell from favor. Concrete deteriorated visibly; maintena
 - **Prefabrication**: Manufacturing building components off-site for assembly; central to **Habitat 67's** efficiency and repeatability.
 - **Utopian urbanism**: Architectural design pursuing idealized, improved social conditions through form and planning.
 
-<ArticleMedia id="media-hist-008-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Brutalism (1950s–1970s) showing the evolution from Le Corbusier's Unité d'Habitation (1947–1952) through the Smithsons' Hunstanton School, the Barbican Centre, and Boston City Hall, with the signature béton brut aesthetic.\" caption=\"Brutalism — Timeline of Key Works\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-008-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Brutalism (1950s–1970s) showing the evolution from Le Corbusier's Unité d'Habitation (1947–1952) through the Smithsons' Hunstanton School, the Barbican Centre, and Boston City Hall, with the signature béton brut aesthetic." caption="Brutalism — Timeline of Key Works" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

@@ -3,9 +3,6 @@
 After reading this article, you should be able to:
 
 Apply BP 344 tactile warning surface requirements: detect warning tiles (600 mm depth, installed 300 mm before hazards), directional guidance surfaces, and platform edge warnings; identify visual alarm requirements (strobe lights meeting ADA criteria: 75 cd minimum, 60-120 flashes per minute, synchronized); and distinguish tactile requirements for stairs, ramps, pedestrian crossings, and platform edges.
-
-_An Immersive LEA Review Module – The Invisible Architecture of Accessibility_
-
 ---
 
 ## The Real-World Hook (Sensory Activation)
@@ -55,6 +52,8 @@ The 2024 IRR and its technical references set out the properties of directional,
 | **Raised element size**   | 34 mm wide bars                | 35 mm diameter domes                                           | 23 mm diameter domes                          |
 | **Raised element height** | 5 mm                           | 5 mm                                                           | 5 mm                                          |
 | **Orientation**           | Along direction of travel path | Perpendicular to direction of hazard/target                    | At junctions where path direction may change  |
+
+<ArticleMedia id="media-bp-344-tactile-and-visual-alar-0" name="tactile-block-types" type="diagram" caption="Three tactile block types per Table A.7.2: Directional (300×300mm, 34mm parallel raised bars, 5mm high), Warning (300×300mm, 35mm truncated domes in square grid, 5mm high), Positional (300×300mm, 23mm truncated domes in staggered pattern, 5mm high). Shows 50% minimum luminance contrast from adjacent floor." />
 
 **Placement and contrast:**[file:2]
 
@@ -112,6 +111,8 @@ _Mnemonic update:_
 
 - **Dots = Danger** (warning/positional domes at 600 mm depth, 300 mm setback).[file:2]
 - **Bars = Direction** (directional strips along the safe path).[file:2]
+
+<ArticleMedia id="media-bp-344-tactile-and-visual-alar-1" name="tactile-placement-diagram" type="diagram" caption="Tactile warning placement examples: (a) Ramp — 600mm warning blocks 300mm from top, bottom, and intermediate landings. (b) Stairs — 600mm warning blocks 300mm from top of upper flight and bottom of lower flight. (c) Elevator — tactile path leads to Braille control panel with 300mm warning blocks before panel. (d) Escalator — 600mm warning blocks at 300mm setback from landing plate." />
 
 <LawCallout code="bp344" section="Section 13.3 - Tactile Warning Surfaces">
 
@@ -210,6 +211,8 @@ That keeps your memory aid but avoids over‑claiming a specific escalator‑onl
 | Accessible toilet tactile path  | Leads to toilet, with warning blocks 300 mm before tactile info map         | Section, Tactile Floor Surfaces (placement rules).viii[file:2]           |
 | Emergency call button (toilet)  | 400–600 mm AFF, waterproof, contrasting                                     | Sec 6.18 (summarized)[file:2] |
 | Toilet strobe alarm             | Inside accessible toilets; max 2 flashes/s (NFPA 72)                        | Sec 6.19 (summarized)[file:2] |
+
+<ArticleMedia id="media-bp-344-tactile-and-visual-alar-2" name="visual-alarm-and-emergency-systems" type="diagram" caption="Accessible toilet interior elevation: emergency call button at 400-600mm AFF (waterproof, contrasting color), strobe alarm with max 2 flashes/second per NFPA 72. Elevator panel detail: voice synthesizer speaker, two-way visual emergency communication display, and power backup indicator for evacuation operation." />
 | Braille on elevator jambs       | 1200 mm AFF, both jambs                                                     | Sec 8.7.c[file:2]             |
 | Braille beside buttons          | To the left of each button                                                  | Sec 8.7.b[file:2]             |
 | Elevator COP height             | 900 mm on center                                                            | Sec 8.7.a[file:2]             |
@@ -225,3 +228,5 @@ That keeps your memory aid but avoids over‑claiming a specific escalator‑onl
 
 **Bp 344 Accessible Washrooms**, **Comprehensive Signage Package**, **Signs Design And Construction**, **Bp 344 Vs Pd 1096 Conflicts**
 
+
+<!-- no-media-needed: code/regulatory article, tabular data is optimal -->

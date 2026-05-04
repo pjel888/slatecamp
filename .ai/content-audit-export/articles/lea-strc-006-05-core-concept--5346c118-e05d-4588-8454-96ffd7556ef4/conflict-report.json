@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:06:17.263Z",
+  "attempted_at": "2026-05-04T08:49:22.107Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
   "slug": "lea-strc-006-05-core-concept",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:0b8ac9999afa03092c26c1384924dc052afeb648dc294bdd75f2276fc29f277e",
-  "original_hash": "sha256:624dc89f6a11d31ecafcde1b77994224875a4fb92bcdc3134ecb7ce19e8a894f",
-  "candidate_hash": "sha256:0b8ac9999afa03092c26c1384924dc052afeb648dc294bdd75f2276fc29f277e",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:1d94cf5cb53339041d9a64b677afea513b1df7902be952d1500868b8b6ed2221",
+  "original_hash": "sha256:0b8ac9999afa03092c26c1384924dc052afeb648dc294bdd75f2276fc29f277e",
+  "candidate_hash": "sha256:46a796081060046e262a8688c2b4df385885c845dd19ba2cd882fb7ef408f6e1",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T02:00:04.664835+00:00"
+  "remote_updated_at_before": "2026-05-04T02:33:27.363908+00:00"
 }

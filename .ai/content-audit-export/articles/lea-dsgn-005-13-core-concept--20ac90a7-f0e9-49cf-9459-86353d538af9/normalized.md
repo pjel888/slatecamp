@@ -24,7 +24,11 @@ The apparatus bay is the functional heart of a fire station. Each vehicle requir
 ### Crew Dormitories
 
 Crew dormitories house firefighters during 24-hour shifts. Design standards allocate **5.5 square meters per firefighter** to accommodate bunking areas, lockers, and common spaces. Egress from dormitories must meet standard occupant load formulas while allowing rapid emergency exit.
-<ArticleMedia id="media-lea-dsgn-005-13-core-concept" type="image" caption="Fire Station — Essential Facility Space Program" alt="Floor plan of a fire station showing apparatus bay (with vehicle turning radii), crew dormitory, watch room, equipment storage, and dispatch area. Annotated with I=1.50 seismic importance factor per NSCP 2015 and Category I performance standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-13-core-concept", type="image", caption="Fire Station — Essential Facility Space Program", description="Floor plan of a fire station showing apparatus bay (with vehicle turning radii), crew dormitory, watch room, equipment storage, and dispatch area. Annotated with I=1.50 seismic importance factor per NSCP 2015 and Category I performance standards.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -77,12 +81,20 @@ A fire station houses 24 firefighters in a dormitory (**5.5 sqm/person** allocat
 **Pattern 3 — Seismic Classification**
 Identify the seismic importance factor for a fire station ($I = 1.50$) and explain why it differs from a general office building ($I = 1.0$).
 
-> [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+> [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: > **Fire Station Anchors:** Group D, $I = 1.50$. Apparatus bay = 7.5m × 14.0m > × 4.3m per vehicle. Dormitory = 5.5 sqm/firefighter. Exit width > (level/stair) = 7.6 mm/person. Frontage apron = 15.0m. [cite: > 277, 278] >
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 **Exam Tip — ERR-DSGN-028:** Fire stations are Category I Essential Facilities with I=1.50 seismic importance factor per NSCP 2015. This is the HIGHEST importance factor — higher than hospitals (I=1.25).
-<ArticleMedia id="media-lea-dsgn-005-13-core-concept" type="image" caption="Fire Station — Essential Facility Planning and Apparatus Bay Layout" alt="Floor plan of a fire station showing: apparatus bay with vehicle turning template overlay, crew dormitory (24hr shift capacity), watch room with site views, equipment storage, decontamination zone, and dispatch center. I=1.50 seismic importance factor and Category I performance annotations." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-13-core-concept", type="image", caption="Fire Station — Essential Facility Planning and Apparatus Bay Layout", description="Floor plan of a fire station showing: apparatus bay with vehicle turning template overlay, crew dormitory (24hr shift capacity), watch room with site views, equipment storage, decontamination zone, and dispatch center. I=1.50 seismic importance factor and Category I performance annotations.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 

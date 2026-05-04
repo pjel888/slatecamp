@@ -1,15 +1,15 @@
 # Content Diff Report: mastery-structural-conceptualization
 
-Generated: 2026-05-04T02:16:31.986Z
+Generated: 2026-05-04T09:13:13.443Z
 Article ID: bb2f1b8b-855d-4eeb-aeb3-8cf3874508d0
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:b6a50706e51ece266a7754a3227d5d0d8cee4be41e09ed901255ce135fea5507`
-- Normalized: `sha256:0ea46ff2518d7181cc808aca2cb3d2cf8bf855d5207ddec414fe3441b7409144`
-- Candidate: `sha256:b6a50706e51ece266a7754a3227d5d0d8cee4be41e09ed901255ce135fea5507`
+- Original: `sha256:3e1360960981f8db1c768927923c5c25cc979f7d2f2e7c9046923f24f3b383fd`
+- Normalized: `sha256:67e957b96200bfd6815121608239ae9058b8cfe240088fb6199513e4547df68b`
+- Candidate: `sha256:3e1360960981f8db1c768927923c5c25cc979f7d2f2e7c9046923f24f3b383fd`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

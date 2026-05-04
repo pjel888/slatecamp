@@ -1,19 +1,21 @@
 {
-  "attempted_at": "2026-05-04T02:25:51.142Z",
+  "attempted_at": "2026-05-04T09:14:19.877Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
   "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+    "candidate.md matches original.md; refusing no-op apply."
   ],
   "warnings": [],
   "updated_rows_count": 0,
   "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
   "slug": "change-of-use-and-occupancy",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:d9d3bd6412be91f6c4135a91a6f8f12047e359b82815cf8d6b3f98699c4ea254",
-  "original_hash": "sha256:d9d3bd6412be91f6c4135a91a6f8f12047e359b82815cf8d6b3f98699c4ea254",
-  "candidate_hash": "sha256:09f0da3e93a5352bf5336906426d1801f3a986f6a636c0150a1d5e47f476bde0",
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:cc117562b8d724c53972b3c6f986dd43b5f9bdbf7048a3dedc9a83d0bdaf8e40",
+  "original_hash": "sha256:cc117562b8d724c53972b3c6f986dd43b5f9bdbf7048a3dedc9a83d0bdaf8e40",
+  "candidate_hash": "sha256:cc117562b8d724c53972b3c6f986dd43b5f9bdbf7048a3dedc9a83d0bdaf8e40",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T14:19:01.35724+00:00"
+  "remote_updated_at_before": "2026-05-04T02:34:15.033557+00:00"
 }

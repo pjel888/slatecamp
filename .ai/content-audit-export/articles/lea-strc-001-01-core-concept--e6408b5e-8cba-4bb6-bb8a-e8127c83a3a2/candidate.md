@@ -10,7 +10,7 @@ By the end of this article, you will be able to:
 This topic covers the three fundamental properties that completely describe any force applied to a structure. The LEA tests whether you can identify, define, and distinguish these properties in force diagrams and loading scenarios.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-001-01-core-concept" type="image" caption="Force Properties — Magnitude, Direction, and Sense Illustrated" alt="Diagram showing the three essential properties of a force: magnitude (vector length/50 kN label), direction (line of action at 45° from horizontal), and sense (arrowhead indicating upward/downward orientation). A free-body diagram inset shows how all three properties appear on a structural drawing." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-001-01-core-concept" type="image" caption="Force Properties — Magnitude, Direction, and Sense Illustrated" description="Diagram showing the three essential properties of a force: magnitude (vector length/50 kN label), direction (line of action at 45° from horizontal), and sense (arrowhead indicating upward/downward orientation). A free-body diagram inset shows how all three properties appear on a structural drawing." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A **force** is the action of one body on another and is the fundamental cause of deformation and motion in structures. Every force is uniquely defined by exactly three properties:
 
@@ -31,7 +31,7 @@ Together, these three properties completely specify a force's effect on a struct
 | **Sense** | Orientation along the direction (+ or −) | Downward; Tension | Arrow direction on diagram |
 
 ## Philippine Practice Context
-<ArticleMedia id="media-lea-strc-001-01-core-concept" type="image" caption="Free-Body Diagram with Full Force Notation" alt="Structural free-body diagram showing multiple forces on a beam with correct magnitude (kN), direction (angle from reference), and sense (arrow direction) notation as required in Philippine DPWH submissions. Includes load arrow convention guide." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-001-01-core-concept" type="image" caption="Free-Body Diagram with Full Force Notation" description="Structural free-body diagram showing multiple forces on a beam with correct magnitude (kN), direction (angle from reference), and sense (arrow direction) notation as required in Philippine DPWH submissions. Includes load arrow convention guide." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 In Philippine structural design, forces are documented in free-body diagrams and load path sketches. Engineers must communicate magnitude, direction, and sense clearly in drawings and calculations submitted to DPWH or local building officials. Load arrows on structural drawings must always show unambiguous sense—ambiguity in sense has caused misinterpretation of intended load paths on site.
 

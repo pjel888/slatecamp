@@ -7,7 +7,6 @@ After reading this article, you should be able to:
 Distinguish a Certificate of Occupancy from a Building Permit by purpose and timing; identify the conditions for issuance, denial, and revocation under PD 1096 Sec. 309; apply Temporary CO and Partial CO rules; and calculate the consequences of occupying without a CO.
 ---
 
-
 **Module Focus:** Rule III, Sections 308–309 | PD 1096 National Building Code of the Philippines & 2004 Revised IRR
 **LEA Area:** Building Technology / Laws, Contracts & Ethics
 **Difficulty:** ★★★☆☆ (Moderate — procedural sequence is the exam challenge)
@@ -24,6 +23,10 @@ By the end of this module, you should be able to:
 ---
 
 ## The Real-World Hook
+
+<ArticleMedia id="media-certificate-of-occupancy-0" name="co-process-flowchain" type="diagram" caption="End-to-end procedural flowchart: Physical Completion → Certificate of Completion (notarized) → As-Built Plans → BFP Endorsement → FSIC within 5 working days → OBO Final Inspection → CO Issued within 30 calendar days. Include conditional CO bypass arrow when BFP is inactive. Use swimlane columns for Owner/Architect, OBO, and BFP." />
+
+<ArticleMedia id="media-certificate-of-occupancy-1" name="co-timeline-comparison" type="diagram" caption="Timeline bar diagram comparing the 5 working day FSIC window vs the 30 calendar day CO issuance window. Show calendar grid with working days vs calendar days marked. Highlight what happens when each deadline expires." />
 
 It is 7:30 in the morning on a Thursday in Quezon City. A developer's newly completed nine-story mixed-use tower stands ready — lobby polished, elevators tested, retail spaces pre-leased and waiting for fit-out. The developer's leasing manager is pressing hard: "Can tenants start moving in this weekend?" The project architect quietly consults her construction logbook, cross-checks the as-built plans stacked on her desk, and shakes her head. "Not yet."
 
@@ -359,8 +362,6 @@ A large mixed-use development has 12 floors. Floors 1–4 (commercial podium) ar
 
 ---
 
-
-
 ---
 
 ## Cross‑References
@@ -377,3 +378,5 @@ A large mixed-use development has 12 floors. Floors 1–4 (commercial podium) ar
 6. **IBC 2021** — International Building Code, Section 111 (Certificate of Occupancy), Sections 111.1–111.4 — used for USA comparative analysis
 7. **IBC 2021** — Section 1705 (Special Inspections) — USA framework for construction inspection
 8. **Architectural Graphic Standards**, 12th Edition (Ramsey/Sleeper) — project delivery and inspection process references
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

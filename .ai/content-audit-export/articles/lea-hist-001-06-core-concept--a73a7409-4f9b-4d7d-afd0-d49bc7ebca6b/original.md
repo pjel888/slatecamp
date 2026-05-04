@@ -103,7 +103,7 @@ Roman architecture tests your understanding of the arch, vault, and concrete—s
 
 ## Related Articles
 
-<ArticleMedia id=\"media-hist-001-06-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Timeline showing the development of Roman building types and engineering innovations (c. 100 BCE–400 CE) from concrete (opus caementicium) and the arch through the Colosseum (70–80 CE), Pantheon (120–128 CE), aqueducts, and the Basilica of Maxentius (308 CE).\" caption=\"Roman Architecture — Engineering Innovation Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+<ArticleMedia id="media-hist-001-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline showing the development of Roman building types and engineering innovations (c. 100 BCE–400 CE) from concrete (opus caementicium) and the arch through the Colosseum (70–80 CE), Pantheon (120–128 CE), aqueducts, and the Basilica of Maxentius (308 CE)." caption="Roman Architecture — Engineering Innovation Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**.
 

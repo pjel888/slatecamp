@@ -7,7 +7,7 @@ Design emergency and standby power systems — generator sizing based on life-sa
 
 Emergency power systems provide backup electricity when the primary utility source fails. They maintain critical functions including fire protection, life safety, egress lighting, and emergency communications.
 
-<ArticleMedia id="media-lea-util-003-02-emergency-power-systems" a type="image" caption="Emergency Power System — Generator, ATS, UPS, and Life Safety Loads" description="Single-line riser diagram showing: diesel generator with fuel storage tank (8-hour minimum), automatic transfer switch (ATS, 10-second max transfer per PEC 700.12), UPS (online double-conversion for critical loads), and distribution to emergency circuits (fire pump, emergency lighting, elevator, fire alarm). Generator room requirements annotated: 2-hour fire rating, ventilation, sound attenuation, secondary containment for fuel (110% of tank capacity)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-02-emergency-power-systems" type="image" caption="Emergency Power System — Generator, ATS, UPS, and Life Safety Loads" description="Single-line riser diagram showing: diesel generator with fuel storage tank (8-hour minimum), automatic transfer switch (ATS, 10-second max transfer per PEC 700.12), UPS (online double-conversion for critical loads), and distribution to emergency circuits (fire pump, emergency lighting, elevator, fire alarm). Generator room requirements annotated: 2-hour fire rating, ventilation, sound attenuation, secondary containment for fuel (110% of tank capacity)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 ### Standby Generators

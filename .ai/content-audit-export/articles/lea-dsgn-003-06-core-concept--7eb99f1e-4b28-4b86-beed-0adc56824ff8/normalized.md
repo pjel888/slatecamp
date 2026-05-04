@@ -12,7 +12,11 @@ The Department of Tourism (DOT) establishes voluntary accommodation star rating 
 **Occupant Load Determination:** Sleeping areas are computed at **9.3 sqm per person** per **RAPD 1096 (National Building Code of the Philippines, Rule VIII Section 805 or applicable occupancy load tables) or RA 9514 (Fire Code of the Philippines 2019 Revised IRR, Table 3.1-2 if applicable to fire load calculations)Common areas (lounges, dining, recreation) are calculated separately using retail/mercantile load factors (1 person per 18.58 sqm per RA 9514 Table 3.1-2) or education factors (1 person per 4.6 sqm) depending on function. This dual calculation is essential for determining exit requirements, sprinkler design, and emergency planning.
 
 Dormitories may also include commercial support spaces (bookstore, cafeteria, clinic)—these are classified separately as Group E (Business/Mercantile) or Group D (Institutional), but the primary occupancy remains Group B.
-<ArticleMedia id="media-lea-dsgn-003-06-core-concept" type="image" caption="Dormitory Space Planning — Group B Occupancy Standards" alt="Floor plan diagram of a typical dormitory floor showing sleeping areas (9.3 sqm/person), common rooms, circulation, and DOT-compliant space allocation. Annotated with minimum clearances and occupant load calculations." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-003-06-core-concept", type="image", caption="Dormitory Space Planning — Group B Occupancy Standards", description="Floor plan diagram of a typical dormitory floor showing sleeping areas (9.3 sqm/person), common rooms, circulation, and DOT-compliant space allocation. Annotated with minimum clearances and occupant load calculations.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -91,10 +95,18 @@ Common layout: 4–6 stories with double-loaded corridors, 2–4 shared bathroom
 - 2 exits required at ≥ 50 persons ✓
 - Exit width needed: 632 occupants ÷ 165 = 3.83 m total exit width required per PD 1096 Section 1207 (approx 6.06 mm per occupant, not 7.6 mm). Provided by 2 doors at 2.4 m clear width each = 4.8 m total (exceeds 3.83 m minimum) ✓
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory rule:** Dormitory = Group **B** (transient residential, not A). Never confuse with permanent multi-family (A-2). DOT star ratings: 1★=16, 2★=20, 3★=25, 4★=30, 5★=40 sqm. Occupant load formula: sleeping area sqm ÷ 9.3 = occupants (then add common areas separately for total design capacity).
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip — ERR-DSGN-020:** Dormitories are Group B (transient residential), NOT Group A-2 (multi-family). Sleeping area occupant load = 9.3 sqm/person, NOT 18.6 sqm/person (retail) or 4.6 sqm/person (education).
-<ArticleMedia id="media-lea-dsgn-003-06-core-concept" type="image" caption="Dormitory Floor Plan — Sleeping Area, Common Rooms, and Circulation" alt="Annotated floor plan of a dormitory floor showing: sleeping rooms grouped by gender, common lounge/kitchen area, laundry facilities, and corridor circulation. Occupant load calculations for sleeping areas (9.3 sqm/person) and common areas shown separately." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-003-06-core-concept", type="image", caption="Dormitory Floor Plan — Sleeping Area, Common Rooms, and Circulation", description="Annotated floor plan of a dormitory floor showing: sleeping rooms grouped by gender, common lounge/kitchen area, laundry facilities, and corridor circulation. Occupant load calculations for sleeping areas (9.3 sqm/person) and common areas shown separately.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -102,4 +114,8 @@ See **LEA-DSGN-007-04** (Design Process) for space programming methodology, **LE
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Classifying dormitory as Group A-2 (multi-family) instead of Group B (transient residential) — PD 1096 is unambiguous\",\"Confusing DOT star ratings with floor area minimums under BP 220 (different standards entirely)\",\"Using 9.3 sqm/person only for sleeping areas, forgetting to add occupant load from dining/common spaces for total egress design\",\"Applying residential parking (1 per 20 units) instead of dormitory standard (1 per 5–10 beds)\",\"Using standard occupant load (1 per 18.58 sqm) for sleeping areas instead of sleeping-specific rate (1 per 9.3 sqm)\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

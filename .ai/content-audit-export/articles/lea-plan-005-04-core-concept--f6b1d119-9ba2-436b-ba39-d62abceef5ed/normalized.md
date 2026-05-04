@@ -12,11 +12,19 @@ RA 10121 (Philippine Disaster Risk Reduction and Management Act, 2010) mandates 
 Key site-level hazards in the Philippines include: typhoons and storm surge, flooding (fluvial and pluvial), landslides, earthquakes, and volcanic eruptions. Post-Typhoon Yolanda (2013), coastal zoning restrictions were implemented in affected provinces. Verify the specific setback distance and legal basis (e.g., DHSUD memorandum, local ordinances) as RA 10121 does not specify a uniform 40-meter no-build zone in its text. PHIVOLCS provides fault maps. Verify the legal source and exact setback requirement for structures near active faults (e.g., PHIVOLCS guidelines, PD 1096, or NSCP 2015) as this is not specified in RA 10121. Flood zone maps identify riverine and coastal flood risks; slope maps identify landslide risk. Rainwater infiltration and groundwater conditions affect both flood and subsidence risk.
 
 RA 10121 creates the NDRRMC (National Disaster Risk Reduction and Management Council) and mandates LGU DRRM offices and DRRM funds (not less than 5% of estimated revenue per RA 10121). CLUPs must be updated to integrate DRRM. Site design must incorporate: disaster-resilient building standards, safe evacuation routes, emergency shelter locations, retention basins and green infrastructure for flood resilience, and hazard-informed land use zoning.
-<ArticleMedia id="media-lea-plan-005-04-core-concept" type="image" caption="Disaster Risk Assessment — Hazard Mapping and Vulnerability Analysis" alt="Multi-hazard site map showing: flood hazard zones (100-year floodplain), landslide susceptibility (slope > 30°), seismic fault lines, tsunami inundation zones, and storm surge risk areas. RA 10121 DRRM mainstreaming into CLUP with resilience measures and climate adaptation." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="unknown"]
+Extracted summary:
+- Props: id="media-lea-plan-005-04-core-concept", type="image", caption="Disaster Risk Assessment — Hazard Mapping and Vulnerability Analysis", description=true, Multi-hazard=true, site=true, map=true, showing=true, flood=true, hazard=true, zones=true, year=true
+- Text: 30°), seismic fault lines, tsunami inundation zones, and storm surge risk areas. RA 10121 DRRM mainstreaming into CLUP with resilience measures and climate adaptation." suggestedAsset="Diagram or reference image" status="placeholder" />
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="[", DRRM=true, Component=true, Framework=true, Site=true, Planning=true, Application=true, rows="[[", Hazard=true, Mapping=true, Identify=true, tsunami=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -30,7 +38,11 @@ The Philippines is the world's most disaster-prone country (World Bank). Annual 
 
 **Pattern 3 — Seismic resilience:** "A site is 3 meters from a PHIVOLCS-mapped active fault. What design standard applies?" → 5-meter minimum setback; site violates PHIVOLCS standard; relocation or exceptional engineering required.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **DRRM is mainstreamed into CLUPs and site design.** Always ask: What hazards threaten this site? What RA 10121 requirements apply? What design resilience mitigations are needed? Climate change intensifies all hazards.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** RA 10121 mandates DRRM integration into CLUPs. Key concepts: hazard (natural event), vulnerability (susceptibility to harm), risk (hazard × vulnerability × exposure), and resilience (ability to recover). Know the definitions.
 
@@ -40,4 +52,8 @@ See **LEA-PLAN-001-05** (CLUP Process) for DRRM mainstreaming in CLUPs, **LEA-PL
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Treating DRRM as separate from planning rather than mainstreamed; RA 10121 mandates integration into CLUPs and site design\",\"Stating post-Yolanda 40m no-build zone applies to all coastal areas nationally; it applies to designated provinces affected by Yolanda, not all coastlines\",\"Confusing 5-meter PHIVOLCS fault setback with 3-meter PD 1067 water body easement; both are setbacks but apply to different hazards\",\"Assuming climate change is optional to plan for; RA 10121 and CLUP guidelines mandate hazard escalation scenarios\",\"Treating retention basins and green infrastructure as aesthetic amenities rather than essential DRRM infrastructure; they are flood resilience mechanisms per RA 10121\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

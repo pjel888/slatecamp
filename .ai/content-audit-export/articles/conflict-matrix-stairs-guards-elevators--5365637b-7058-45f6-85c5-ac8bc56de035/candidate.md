@@ -459,5 +459,3 @@ PD 1096 governs exit stair capacity (number of exits, occupant load, travel dist
 
 **Stairs Handrails Guardrails**, **Widths Slopes**, **Bp 344 Elevator Dimensions**, **Bp 344 Vs Pd 1096 Conflicts**
 
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

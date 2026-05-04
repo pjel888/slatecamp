@@ -1,14 +1,36 @@
 {
   "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
   "slug": "geological-hazards",
-  "generated_at": "2026-05-01T13:33:44.054Z",
+  "generated_at": "2026-05-04T09:10:36.732Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 0,
-  "unknown_block_count": 0,
+  "warning_count": 1,
+  "unknown_block_count": 1,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [],
-  "unknown_blocks": [],
+  "warnings": [
+    {
+      "block_id": "ui_0005",
+      "component_name": "ArticleMedia",
+      "status": "unknown",
+      "parse_status": "unknown_block",
+      "messages": [
+        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
+  "unknown_blocks": [
+    {
+      "block_id": "ui_0005",
+      "component_name": "ArticleMedia",
+      "block_type": "mdx_component",
+      "raw_hash": "sha256:59b77b7794826c80a7e622e454262bb4c6d0a871d42cde3c2695f1daf6122cfb",
+      "line_start": 168,
+      "line_end": 168,
+      "warnings": [
+        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
+      ]
+    }
+  ],
   "critical_blocks": []
 }

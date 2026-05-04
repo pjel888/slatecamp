@@ -56,7 +56,11 @@ A site with 2m average cut and 3m average fill requires importing soil (or expor
 - Vehicular ramps to parking: 1:10 gradient = 10% maximum (PD 1096)
 - Short vehicular ramps (&lt;1.5m rise): 1:8 gradient = 12.5% (maximum)
 - Driveway from street: 1:10 gradient = 10% (comfortable maximum)
-<ArticleMedia id="media-lea-dsgn-012-03-core-concept" type="image" caption="Contour Map Reading — Slope Calculation and Cut-Fill Grading" alt="Contour map diagram showing slope calculation methods (% gradient = rise/run × 100, degrees, ratio), cut and fill volume determination, building pad grading design, positive drainage (2% minimum for paved surfaces), and erosion control swales." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-012-03-core-concept", type="image", caption="Contour Map Reading — Slope Calculation and Cut-Fill Grading", description="Contour map diagram showing slope calculation methods (% gradient = rise/run × 100, degrees, ratio), cut and fill volume determination, building pad grading design, positive drainage (2% minimum for paved surfaces), and erosion control swales.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -103,10 +107,18 @@ Estimate whether a site grading plan will require soil import/export by comparin
 **Pattern 5: Contour Reading Under Pressure**
 Multiple contour maps are presented; identify which represents the steepest terrain, or calculate slopes from maps with varying scales and contour intervals.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Slope % Memory Aid:** Slope % = Rise ÷ Run × 100. For quick estimates: 1:10 slope ≈ 10%, 1:5 ≈ 20%, 1:3 ≈ 33%. Pedestrian ramp is 1:20 (≈5%, BP 344 2024 IRR), vehicle ramp is 1:6 (≈17%). Contours close together = steep; far apart = gentle.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip — ERR-DSGN-014:** Minimum slope for paved surfaces = 2% (20mm/m). Minimum for unpaved/graded areas = 1.5%. Maximum slope for parking areas = 5%. Slope formula: % = rise/run × 100.
-<ArticleMedia id="media-lea-dsgn-012-03-core-concept" type="image" caption="Grading and Drainage — Contour Modification and Runoff Management" alt="Site section and plan showing: original vs. finished grade contours, cut and fill areas (annotated with volume quantities), 2% minimum paved surface slope, swale and detention basin locations, stormwater flow paths, and building pad elevation above flood level. Slope calculation formula (rise÷run×100) shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-012-03-core-concept", type="image", caption="Grading and Drainage — Contour Modification and Runoff Management", description="Site section and plan showing: original vs. finished grade contours, cut and fill areas (annotated with volume quantities), 2% minimum paved surface slope, swale and detention basin locations, stormwater flow paths, and building pad elevation above flood level. Slope calculation formula (rise÷run×100) shown.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -114,4 +126,8 @@ See **LEA-DSGN-012-02** (Site Development) for grading within site planning, **L
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Calculating slope as Run ÷ Rise instead of Rise ÷ Run (inverted formula)\",\"Using 1:20 for pedestrian ramps instead of 1:12 (BP 344 2024 IRR)\",\"Applying 1:8 for vehicular ramps instead of correct 1:6 (ERR-DSGN-026)\",\"Misreading contour maps: assuming closely spaced contours indicate gentle slopes (opposite is true)\",\"Forgetting the 2% minimum surface drainage slope requirement; assuming flat grades are acceptable\",\"Confusing contour interval (on legend) with spacing (on map); not scaling correctly for slope calculation\",\"Calculating cut-and-fill volumes without accounting for soil consolidation/settlement factors\",\"Assuming positive drainage is optional; inadequate slope causes foundation damage\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

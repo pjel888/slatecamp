@@ -30,7 +30,7 @@ Gallery dimensions and aisle widths must accommodate both visitor comfort and ar
 - Alcove/display area: 2.0–3.0 m (artifact-dependent)
 
 Environmental standards are governed by the **NCCA/NHCP guidelines** and the **National Heritage Commission** (NHC) for protected artifacts. Climate control is critical: fluctuations > 2°C per day cause dimensional changes in wood, canvas, and paper. Humidity swings > 10% risk mold and salt efflorescence on ceramics and stone.
-<ArticleMedia id="media-lea-dsgn-004-05-core-concept" a type="image" caption="Museum Circulation Patterns — Linear, Radial, Comb, and Free-Flow" description="Comparative diagram of four museum gallery circulation typologies with visitor flow arrows: linear (single path), radial (central hub with wings), comb (spine corridor with side galleries), and free-flow (open plan). Annotated with minimum aisle widths (3.0m primary, 1.8m secondary)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-05-core-concept" type="image" caption="Museum Circulation Patterns — Linear, Radial, Comb, and Free-Flow" description="Comparative diagram of four museum gallery circulation typologies with visitor flow arrows: linear (single path), radial (central hub with wings), comb (spine corridor with side galleries), and free-flow (open plan). Annotated with minimum aisle widths (3.0m primary, 1.8m secondary)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -126,7 +126,7 @@ A provincial museum in the Philippines has a 1,200 sqm gallery space. The archit
 <Tip>**Memory rule:** Museums = Group **C** (education), not retail (E). Occupant load = GFA ÷ 2.8 sqm/person. Gallery aisle = 3.0 m primary, 1.8 m secondary. Climate = 18–21°C, 45–55% RH, UV-free 50–300 lux. Temperature swings > 2°C/day = DAMAGE.</Tip>
 
 **Exam Tip — ERR-DSGN-017:** Museums are Group C regardless of revenue. Even if they charge admission or have a gift shop (Group E), the primary occupancy remains Group C. The gift shop requires fire-rated separation.
-<ArticleMedia id="media-lea-dsgn-004-05-core-concept" a type="image" caption="Assembly Occupancy Comparison — Museum, Gallery, and Exhibition Hall Typologies" description="Comparative diagram showing three assembly occupancy types: linear museum gallery (3.0m primary aisle), radial gallery with central atrium, and open exhibition hall with flexible partitions. Occupant load and egress width annotated per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-05-core-concept" type="image" caption="Assembly Occupancy Comparison — Museum, Gallery, and Exhibition Hall Typologies" description="Comparative diagram showing three assembly occupancy types: linear museum gallery (3.0m primary aisle), radial gallery with central atrium, and open exhibition hall with flexible partitions. Occupant load and egress width annotated per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

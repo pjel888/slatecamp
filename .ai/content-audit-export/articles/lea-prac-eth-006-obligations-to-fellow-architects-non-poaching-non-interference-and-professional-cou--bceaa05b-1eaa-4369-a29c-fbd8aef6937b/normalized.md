@@ -7,8 +7,16 @@ Professional relationships form the foundation of architectural practice. The Co
 ## Core Concept
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="uap", section="Code of Ethics - Obligations to Colleagues"
+- Text: The Code establishes four key protections for fellow architects: (1) Non-poaching — shall not seek commissions known to be already endowed to another architect (§5-c); (2) Non-interference — shall not assume commission until written notification and proof of termination/compensation settlement (§5-e); (3) Successor work notice — shall notify original architect of additions or renovations even if owner changed (§5-f); (4) No injurious conduct — shall not knowingly injure another architect's reput
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-eth006-conflict-resolution" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Non-Poaching and Professional Courtesy — Conflict Resolution Process" alt="Sequential flowchart showing the three-stage notification process under Section 5: (1) Identify previous architect involvement → (2) Send proper written notification → (3) Verify termination and compensation settlement before proceeding. Decision diamonds at each stage. Side callout explains the injurious conduct prohibition Section 5-g and credit proportionality for modifications Section 5-f." placementIntent="conflict-resolution" suggestedSearchQuery="architect non-poaching notification successor architect Section 5 professional courtesy flowchart" suggestedAsset="Diagram or reference image" alt="Conflict resolution flowchart: notification, negotiation, mediation, settlement" caption="Future diagram: conflict resolution flowchart: notification, negotiation, mediation, settlement" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-eth006-conflict-resolution", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Non-Poaching and Professional Courtesy — Conflict Resolution Process", alt="Conflict resolution flowchart: notification, negotiation, mediation, settlement", placementIntent="conflict-resolution", suggestedSearchQuery="architect non-poaching notification successor architect Section 5 professional courtesy flowchart", suggestedAsset="Diagram or reference image", caption="Future diagram: conflict resolution flowchart: notification, negotiation, mediation, settlement"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Non-Poaching of Commissions
 
@@ -24,7 +32,11 @@ Section 5-f extends protection to renovation and remodeling work. When another a
 
 Section 5-g prohibits architects from knowingly injuring, falsely or maliciously, another architect's professional reputation, prospects, or practice. This extends beyond simple non-poaching to active protection of colleagues' standing.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Trap:** Notification alone does NOT satisfy the obligation. Section 5-e demands THREE sequential confirmations: (1) written notice to the original architect, (2) conclusive determination of employment termination, and (3) verification of compensation completion. Notification is the first step, not the entire obligation. All three must occur before assuming the commission.
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
 
@@ -34,21 +46,25 @@ Section 5-g prohibits architects from knowingly injuring, falsely or maliciously
 
 **Pattern 3:** Credit proportionality — Architect performs 40% renovation. Marketing must describe 40% contribution, cannot claim primary credit.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer always involves the notification requirement under §5-c/5-e. Even if no contract is signed, active negotiation triggers the protection.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid:** "NTC" = Notify, Terminate, Compensate. Before assuming any commission where another architect was involved: (N)otify the prior architect in writing, (T)ermination must be confirmed, (C)ompensation must be settled. All three steps are mandatory.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    'Assuming notification alone satisfies the requirement — Section 5-e demands three sequential confirmations: notice, termination, and compensation settlement',
-    'Believing modification work justifies claiming primary credit — proportional credit assignment is required; percentage of original design maintained determines limitation severity',
-    'Thinking the obligations apply only to formal, current engagements — they apply to any prior design involvement',
-    'Assuming ignorance of a previous architect excuses non-notification — due diligence to identify prior designers is expected',
-    'Confusing truthful statements about errors with injurious conduct — truthful professional critique is permitted; false or exaggerated statements are prohibited',
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    'Assuming notification alone satisfies the requirement — Section 5-e demands three sequential confirmations: notice, termination, and compensation settlement',\n    'Believing modification work justifies claiming primary credit — proportional credit assignment is required; percentage of original design maintained determines limitation severity',\n    'Thinking the obligations apply only to formal, current engagements — they apply to any prior design involvement',\n    'Assuming ignorance of a previous architect excuses non-notification — due diligence to identify prior designers is expected',\n    'Confusing truthful statements about errors with injurious conduct — truthful professional critique is permitted; false or exaggerated statements are prohibited',\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

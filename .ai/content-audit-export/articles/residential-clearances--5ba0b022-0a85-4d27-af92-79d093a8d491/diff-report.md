@@ -1,20 +1,20 @@
 # Content Diff Report: residential-clearances
 
-Generated: 2026-05-04T02:17:52.867Z
+Generated: 2026-05-04T09:14:05.592Z
 Article ID: 5ba0b022-0a85-4d27-af92-79d093a8d491
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:8be0f2340d013cd936fbc4c0708f07d3b29d6f883fe0858f00b6e0c227c8783f`
-- Normalized: `sha256:5825b9ccc3210123fdfad4a3edd7c6bc5d1e275ee9a3ff705f19c706fbea10ba`
-- Candidate: `sha256:5679683cde2a69c6f24fc1781004c3142365f39941b534d9646ef8acfa0615d4`
+- Normalized: `sha256:69f34c0f9214c487fcc745d7c4a6b35275bba9431a60804dd270917b3a6397c3`
+- Candidate: `sha256:8be0f2340d013cd936fbc4c0708f07d3b29d6f883fe0858f00b6e0c227c8783f`
 
 ## Line summary
 
-- Changed lines: 27
-- Inserted lines: 6
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation

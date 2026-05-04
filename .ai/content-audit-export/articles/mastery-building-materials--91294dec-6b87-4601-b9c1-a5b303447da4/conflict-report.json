@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:07:15.983Z",
+  "attempted_at": "2026-05-04T08:50:40.088Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "91294dec-6b87-4601-b9c1-a5b303447da4",
   "slug": "mastery-building-materials",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:f82fc1bb6d775b1f325a6099ba3984c6d53d9daab2ae91206b8ac68830161c05",
-  "original_hash": "sha256:35520689dab364c2efbeda5127d2bd88eff107cc7044098b9cc775b98d459166",
-  "candidate_hash": "sha256:f82fc1bb6d775b1f325a6099ba3984c6d53d9daab2ae91206b8ac68830161c05",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:d79ed1a0907048969924a0c4c193faaa8619a3cf6a5e024f45eb4dd0467fb091",
+  "original_hash": "sha256:f82fc1bb6d775b1f325a6099ba3984c6d53d9daab2ae91206b8ac68830161c05",
+  "candidate_hash": "sha256:92287b64abd5ebb5fa24978d85a9124f45afb92384f30475b36588227540b469",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T02:02:10.735407+00:00"
+  "remote_updated_at_before": "2026-05-04T02:33:21.214529+00:00"
 }

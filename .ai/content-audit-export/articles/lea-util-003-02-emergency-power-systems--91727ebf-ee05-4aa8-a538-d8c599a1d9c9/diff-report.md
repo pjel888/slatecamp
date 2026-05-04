@@ -1,15 +1,15 @@
 # Content Diff Report: lea-util-003-02-emergency-power-systems
 
-Generated: 2026-05-04T02:17:55.495Z
+Generated: 2026-05-04T09:14:06.997Z
 Article ID: 91727ebf-ee05-4aa8-a538-d8c599a1d9c9
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:df26d690ea85922743f251807338de04e4bce02af60cd2b614ffaffe073a036c`
-- Normalized: `sha256:5972950fced43cdef1f14916c398540fb4acfe9fbaa79ecba6ede010f593e192`
-- Candidate: `sha256:df26d690ea85922743f251807338de04e4bce02af60cd2b614ffaffe073a036c`
+- Original: `sha256:63d18943efc3e06321e370da1a47483604f1175950e533a3f9bc9565e2af9cca`
+- Normalized: `sha256:7e563e4234c99b4e411705414c9b2c1264967ad49928a3d53899d15a523f2955`
+- Candidate: `sha256:63d18943efc3e06321e370da1a47483604f1175950e533a3f9bc9565e2af9cca`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

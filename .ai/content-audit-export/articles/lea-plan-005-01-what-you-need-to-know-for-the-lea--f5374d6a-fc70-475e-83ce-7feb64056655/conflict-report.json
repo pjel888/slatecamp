@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:07:23.212Z",
+  "attempted_at": "2026-05-04T08:50:52.291Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
   "slug": "lea-plan-005-01-what-you-need-to-know-for-the-lea",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:a07a062dacb96a7defbb848fd2b0d214cb0ea1f5a81365ccb3b55570cc825729",
-  "original_hash": "sha256:f91669de6769b9e582b571f99a60284aa44420c98bde8857f17c7455fa77a9c0",
-  "candidate_hash": "sha256:a07a062dacb96a7defbb848fd2b0d214cb0ea1f5a81365ccb3b55570cc825729",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:4057fb6fabafed4512ccdb7487b24f4e965034a2cb11ce7d9f3f6600ff14641e",
+  "original_hash": "sha256:a07a062dacb96a7defbb848fd2b0d214cb0ea1f5a81365ccb3b55570cc825729",
+  "candidate_hash": "sha256:d805f7c82da7c4449f6942fcda0c0d08815e1b6897bbba39a8a33a5c7fa18254",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T02:02:26.707196+00:00"
+  "remote_updated_at_before": "2026-05-04T02:33:17.336677+00:00"
 }

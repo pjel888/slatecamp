@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-s-role
 
-Generated: 2026-05-04T02:17:52.350Z
+Generated: 2026-05-04T09:14:05.203Z
 Article ID: 303f8a75-b42b-4405-8c39-082b4d7b6322
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:ac5ad2c3df3342ed24a0bff3e60e043a3ba06f85e69804e0083c517ecea44111`
-- Normalized: `sha256:ac5ad2c3df3342ed24a0bff3e60e043a3ba06f85e69804e0083c517ecea44111`
-- Candidate: `sha256:ac5ad2c3df3342ed24a0bff3e60e043a3ba06f85e69804e0083c517ecea44111`
+- Original: `sha256:4f9ec35b56cc463a465643b0f3af830b5a0d64b07224ae74f9d2fe4763336dce`
+- Normalized: `sha256:d9567b4a9522297cf0e2d908d623269c4f4cf278dd5e86f8c27b29bca4774dff`
+- Candidate: `sha256:4f9ec35b56cc463a465643b0f3af830b5a0d64b07224ae74f9d2fe4763336dce`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 0
-- UI blocks preserved: 0
+- UI blocks expected: 4
+- UI blocks preserved: 4
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

@@ -80,7 +80,7 @@ These two periods represent not a simple progression but a cultural reorientatio
 
 <Warn>Do not treat Umayyad and Abbasid as simple stylistic progression. They represent distinct geographic and cultural reorientations. Umayyad is pragmatically Byzantine (reused columns, Mediterranean cities). Abbasid rejects that legacy and builds new with Persian-influenced brick, muqarnas, and iwans. This conceptual shift—not mere aesthetic refinement—is critical for LEA success.</Warn>
 
-<ArticleMedia id="media-hist-004-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Umayyad (hypostyle hall, Roman/Byzantine borrowing, mosaic decoration) and Abbasid (brick, iwan, stucco, centralized planning) Islamic architecture showing contrasting materials, plans, and ornamental vocabulary.\" caption=\"Umayyad vs. Abbasid — Architectural Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
+<ArticleMedia id="media-hist-004-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Umayyad (hypostyle hall, Roman/Byzantine borrowing, mosaic decoration) and Abbasid (brick, iwan, stucco, centralized planning) Islamic architecture showing contrasting materials, plans, and ornamental vocabulary." caption="Umayyad vs. Abbasid — Architectural Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

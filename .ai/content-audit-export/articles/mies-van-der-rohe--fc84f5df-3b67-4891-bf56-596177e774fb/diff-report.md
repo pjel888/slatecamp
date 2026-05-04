@@ -1,6 +1,6 @@
 # Content Diff Report: mies-van-der-rohe
 
-Generated: 2026-05-04T02:17:24.576Z
+Generated: 2026-05-04T09:13:47.254Z
 Article ID: fc84f5df-3b67-4891-bf56-596177e774fb
 Changed: false
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:6e886f83567733958a32774cd996f345c043b09f133f252ab6b7a33777a687b4`
-- Normalized: `sha256:3e0aefcca2cdc1bc4c3717240b641eac24189fe39e34058e8d5594deb930deeb`
+- Normalized: `sha256:f2b5a5c3f65b520a1ff964ab86f8deda23ec8cb7a0bb0f743c501ad47fb1d440`
 - Candidate: `sha256:6e886f83567733958a32774cd996f345c043b09f133f252ab6b7a33777a687b4`
 
 ## Line summary
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
+- UI blocks expected: 7
+- UI blocks preserved: 7
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

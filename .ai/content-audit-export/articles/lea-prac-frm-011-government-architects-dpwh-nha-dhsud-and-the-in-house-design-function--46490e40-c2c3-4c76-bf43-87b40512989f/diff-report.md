@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function
 
-Generated: 2026-05-04T02:16:33.339Z
+Generated: 2026-05-04T09:13:14.451Z
 Article ID: 46490e40-c2c3-4c76-bf43-87b40512989f
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:633b017f2c752d026a30c7aa651a83559a692ed1529cfc8f45187a5ab3ed9704`
-- Normalized: `sha256:67d6de32a06dff5fa0f5e87ff733cf2aa7bff226f4918b23e33ffe2859649be9`
-- Candidate: `sha256:633b017f2c752d026a30c7aa651a83559a692ed1529cfc8f45187a5ab3ed9704`
+- Original: `sha256:4142b2328ec92c3295d44da4d8481afa9fd94252a35afdceb7cad70ef81af846`
+- Normalized: `sha256:48f9a96b13b56afd5c59236edb64c48ee1959a7337160db2c63f6b1d0cb57132`
+- Candidate: `sha256:4142b2328ec92c3295d44da4d8481afa9fd94252a35afdceb7cad70ef81af846`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 1
-- UI blocks preserved: 1
+- UI blocks expected: 2
+- UI blocks preserved: 2
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

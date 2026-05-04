@@ -15,7 +15,11 @@ Overhangs (horizontal fins) block direct solar radiation on vertical facades. A 
 Thermal mass (concrete walls, tile floors) absorbs daytime heat and releases it at night, smoothing indoor temperature swings. Natural ventilation through operable windows, clerestories, and stack effect (warm air exiting high; cool air entering low) reduces dependence on mechanical air conditioning.
 
 The LEA tests whether candidates understand the geometric and climatic reasoning behind these strategies, not detailed HVAC calculations. The key insight is directional: _long axis East-West for the tropics_.
-<ArticleMedia id="media-lea-dsgn-009-01-core-concept" type="image" caption="Passive Solar Design — Building Orientation and Shading Diagram" alt="Sun path diagram overlaid on building section showing: East-West long axis orientation, overhang depth for seasonal shading, prevailing wind direction for cross-ventilation, and solar heat gain zones. Tropical Philippine climate context." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-009-01-core-concept", type="image", caption="Passive Solar Design — Building Orientation and Shading Diagram", description="Sun path diagram overlaid on building section showing: East-West long axis orientation, overhang depth for seasonal shading, prevailing wind direction for cross-ventilation, and solar heat gain zones. Tropical Philippine climate context.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -54,10 +58,18 @@ Given a 3.5 m floor-to-ceiling height, calculate the required overhang depth for
 **Test Pattern 3: Facade Exposure Comparison**
 Two building designs: (A) 50 m × 20 m footprint, E-W orientation; (B) 50 m × 20 m footprint, N-S orientation. Exam asks which has greater solar heat gain. Answer: (B)—the N-S orientation exposes the 50 m long sides to east/west radiation, quadrupling the affected area vs. (A)'s 20 m sides.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **"Long axis East-West; short sides catch the sun."** In tropical design, _narrow_ your building to the sun's travel arc (east-west rotation). Orient the long sides north and south, where sun angles are less severe at midday.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip — ERR-DSGN-012:** East-West building orientation is correct for tropical passive design (minimizes east/west exposure). North-South orientation is WRONG for tropical climate — the long facade should face north/south, NOT east/west.
-<ArticleMedia id="media-lea-dsgn-009-01-core-concept" type="image" caption="Tropical Architecture — Section Showing Passive Design Strategies" alt="Building section diagram in Philippine tropical context showing: East-West orientation, roof overhang and shading device depths, cross-ventilation path with prevailing wind arrows (NE winter, SW monsoon), elevated floor for flood mitigation, and vegetated buffer zones. Heat gain zones color-coded." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-009-01-core-concept", type="image", caption="Tropical Architecture — Section Showing Passive Design Strategies", description="Building section diagram in Philippine tropical context showing: East-West orientation, roof overhang and shading device depths, cross-ventilation path with prevailing wind arrows (NE winter, SW monsoon), elevated floor for flood mitigation, and vegetated buffer zones. Heat gain zones color-coded.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -65,4 +77,8 @@ See **LEA-DSGN-009-02** (Natural Lighting) for daylighting integration, **LEA-DS
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"ERR-DSGN-035: Orienting the long axis North-South (incorrect for tropics)\",\"Assuming any orientation is acceptable if shading devices are added (code prefers inherent orientation strategy)\",\"Confusing overhang ratio with absolute depth; forgetting to multiply floor height\",\"Ignoring wind path in passive ventilation (prevailing monsoon direction is critical)\",\"Over-sizing thermal mass; diminishing returns beyond 150 mm exposed concrete thickness in tropical climates\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

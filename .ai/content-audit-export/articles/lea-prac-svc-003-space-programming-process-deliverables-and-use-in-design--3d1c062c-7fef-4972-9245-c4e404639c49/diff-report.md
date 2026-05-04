@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design
 
-Generated: 2026-05-04T02:17:58.323Z
+Generated: 2026-05-04T09:14:08.764Z
 Article ID: 3d1c062c-7fef-4972-9245-c4e404639c49
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:32d597b8d166b61d45fd8735e9f7ea39608789fa20f1eb12af25e86a2f0f14ba`
-- Normalized: `sha256:8d945ab646126a82012cb7f9cd0886be663375f09515c4c8ed5a251a6a0ad9fe`
-- Candidate: `sha256:32d597b8d166b61d45fd8735e9f7ea39608789fa20f1eb12af25e86a2f0f14ba`
+- Original: `sha256:873501753f20db8f6104a2ff8dc6e9c2a76c7dffb0f2c30461b1128ae09923c4`
+- Normalized: `sha256:6fdf736d445c0bfe64c945924e24e2a64e701f589b1859a198d6ae7ff6b420df`
+- Candidate: `sha256:873501753f20db8f6104a2ff8dc6e9c2a76c7dffb0f2c30461b1128ae09923c4`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 6
-- UI blocks preserved: 6
+- UI blocks expected: 7
+- UI blocks preserved: 7
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

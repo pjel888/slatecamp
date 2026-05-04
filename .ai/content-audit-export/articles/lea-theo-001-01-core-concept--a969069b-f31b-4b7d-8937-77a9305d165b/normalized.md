@@ -1,6 +1,10 @@
 ## What You Need to Know for the LEA
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Architecture is fundamentally unique because it simultaneously demands three distinct capacities: **artistic vision** to create beauty, **scientific precision** to ensure structural integrity and environmental performance, and **social commitment** to serve human needs and community welfare. The LEA tests this triple nature through questions about definition, design synthesis, and professional responsibility.
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -10,9 +14,17 @@ Understand that architecture uniquely integrates artistic vision, scientific pre
 
 ### The Triple Nature of Architecture
 
-|<ArticleMedia id="media-lea-theo-001-01-core-concept-a" type="image" caption="The Triple Nature of Architecture — Art, Science, and Social Responsibility" alt="Three overlapping circles diagram showing the synthesis of Architecture as Art (form, composition, light, emotion), Architecture as Science (structure, materials, systems, technology), and Architecture as Social Responsibility (accessibility, equity, safety, cultural respect). The center intersection represents successful architecture that integrates all three simultaneously." suggestedAsset="Diagram or reference image" status="placeholder" />
+|[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-001-01-core-concept-a", type="image", caption="The Triple Nature of Architecture — Art, Science, and Social Responsibility", description="Three overlapping circles diagram showing the synthesis of Architecture as Art (form, composition, light, emotion), Architecture as Science (structure, materials, systems, technology), and Architecture as Social Responsibility (accessibility, equity, safety, cultural respect). The center intersection represents successful architecture that integrates all three simultaneously.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-lea-theo-001-01-core-concept-b" type="image" caption="Le Corbusier's Definition — 'Architecture is the masterly, correct and magnificent play of masses brought together in light'" alt="Architectural photograph or diagram illustrating Le Corbusier's iconic definition: a building composed of sculptural masses (volumes, planes, and voids) interacting with natural light. Shows how shadow, highlight, and form articulation create the 'play of masses' that Le Corbusier described as the essence of architecture." suggestedAsset="Reference image or diagram" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-001-01-core-concept-b", type="image", caption="Le Corbusier's Definition — 'Architecture is the masterly, correct and magnificent play of masses brought together in light'", description="Architectural photograph or diagram illustrating Le Corbusier's iconic definition: a building composed of sculptural masses (volumes, planes, and voids) interacting with natural light. Shows how shadow, highlight, and form articulation create the 'play of masses' that Le Corbusier described as the essence of architecture.", suggestedAsset="Reference image or diagram", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 **Architecture** is not purely art, not purely science, and not purely service—it is the synthesis of all three, unified in a single built form. This distinguishes architecture from painting (pure art), engineering (applied science), or social work (pure service). When a building fails in any one dimension, it fails entirely, regardless of excellence in the others.
 
@@ -49,7 +61,11 @@ This dimension is not cosmetic or secondary. The 2016 AIA (American Institute of
 
 ### The Inseparability of Art, Science, and Social Responsibility
 
-<ArticleMedia id="media-lea-theo-001-01-core-concept" type="image" caption="Vitruvian Triad — Firmitas, Utilitas, Venustas" alt="Triangular diagram illustrating Vitruvius's three essential qualities of architecture: Firmitas (structural stability, strength, durability), Utilitas (function, fitness for purpose, convenient arrangement), and Venustas (beauty, delight, aesthetic appeal). Each point connects to show they are simultaneous requirements, not sequential phases." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-001-01-core-concept", type="image", caption="Vitruvian Triad — Firmitas, Utilitas, Venustas", description="Triangular diagram illustrating Vitruvius's three essential qualities of architecture: Firmitas (structural stability, strength, durability), Utilitas (function, fitness for purpose, convenient arrangement), and Venustas (beauty, delight, aesthetic appeal). Each point connects to show they are simultaneous requirements, not sequential phases.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 These three dimensions are not separable phases of design—they are simultaneous requirements that constrain and inform each other. A design that is beautiful but structurally unsafe is not great architecture; it is dangerous sculpture. A design that is structurally brilliant and environmentally efficient but excludes users or disrespects community is not great architecture; it is a monument to disconnection.
 
@@ -63,35 +79,83 @@ Consider a school building in a tropical climate with limited budget. The archit
 
 These are not competing goals when approached with integrated thinking. Natural ventilation reduces energy cost (serving equity), while creating air flow that is experienced as pleasant and healthy (serving both utility and aesthetics).
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Triple Synthesis Rule:** Every design decision must simultaneously satisfy art (beauty), science (function/structure), and social responsibility (community welfare). Excellence requires all three—sacrifice any dimension and the architecture fails.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The three dimensions are NOT sequential phases. They constrain and inform each other during design, not after. A beautiful form that cannot be built is not architecture; a structurally brilliant design that harms the community is not architecture.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The most critical distinction: Architecture is not about choosing between art, science, and ethics. It is about finding design solutions where all three are inseparable. A beautiful building that ignores accessibility, or an efficient building that lacks aesthetic intention, is incomplete architecture regardless of excellence in one or two dimensions.
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0008 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Concept\", \"Definition\", \"Example\", \"LEA Context\"]}", rows="{[[\"**Firmitas**\", \"Structural stability; buildings must stand safely\", \"A building foundation designed to resist earthquake forces\", \"Q: &quot;Which Vitruvian principle ensures a roof doesn't collapse?&quot;\"], [\"**Utilitas**\", \"Utility and function; fit for human use\", \"Floor heights that accommodate standard furniture and movement\", \"Q: &quot;A staircase with inadequate handrails violates which principle?&quot;\"], [\"**Venustas**\", \"Beauty and aesthetic appeal; design quality\", \"Facade composition creating visual rhythm and delight\", \"Q: &quot;A plain concrete box may be safe but lacks ___.&quot;\"], [\"**Architecture as Mother of the Arts**\", \"Architecture provides physical context for all other arts\", \"An opera house's interior design enhances the musical performance\", \"Q: &quot;Why is architecture called the mother of the arts?&quot;\"], [\"**Le Corbusier's Definition**\", \"Magnificent play of masses brought together in light\", \"A section of building showing light creating form and shadow\", \"Q: &quot;Le Corbusier emphasized the role of ___ in defining architectural form.&quot;\"], [\"**Accessibility**\", \"Equitable access regardless of physical ability\", \"Ramps alongside stairs; accessible bathroom stalls\", \"Q: &quot;Which social responsibility principle requires universal design?&quot;\"], [\"**Structural Science**\", \"Engineering and materials knowledge\", \"Calculating beam size for a given span and load\", \"Q: &quot;Knowledge of material strength and loading relates to which dimension?&quot;\"], [\"**Environmental Control**\", \"Systems managing climate, light, sound, and air\", \"Louvers controlling sun while allowing ventilation\", \"Q: &quot;Double walls with air gaps serve the ___ dimension of architecture.&quot;\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Definition Recognition.** *Stem:* "Which of the following best describes architecture as a profession?" - A) The art of creating beautiful buildings - B) The science of structural engineering - C) The simultaneous integration of art, science, and social responsibility - D) The practice of serving community needs *Answer:* C. The LEA tests whether students understand that architecture is uniquely synthetic.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Vitruvian Principles Application.** *Stem:* "A building in a flood zone has excellent aesthetic design but inadequate drainage. Which Vitruvian principle is compromised?" - A) Firmitas - B) Utilitas - C) Venustas - D) Proportion *Answer:* B. Utilitas includes fitness for the site conditions and human use.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Professional Responsibility Scenarios.** *Stem:* "You are designing a community center in a low-income neighborhood. A developer wants a design that minimizes cost. What architectural responsibility must you advocate for?" - A) Reducing the number of bathrooms to lower cost - B) Ensuring accessibility for people with disabilities despite cost pressure - C) Simplifying the design to reduce fees - D) Using the cheapest available materials *Answer:* B. Social responsibility cannot be c
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0012 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Art-Science Integration.** *Stem:* "A tall building uses a double-facade system with plants in the cavity. This design primarily serves which combined purpose?" - A) Aesthetic expression and structural support - B) Aesthetic experience and environmental control - C) Social responsibility and structural strength - D) Utility and cost reduction *Answer:* B. The integration of visual beauty (art) with thermal and acoustic performance (science) exemplifies synthesis.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0013 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Historical Figure Knowledge.** *Stem:* "Le Corbusier's statement about 'magnificent play of masses brought together in light' emphasizes which dimension of architecture?" - A) Social responsibility to marginalized communities - B) Structural engineering precision - C) Artistic composition and light as a material - D) Functional efficiency *Answer:* C. This quote centers on the artistic dimension—form and light as aesthetic media.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Architecture as Only Art", correction="Excellence requires negotiation among all three dimensions—art, science, and social responsibility. A beautiful design that cannot be built, that doesn't function, or that ignores community is failed architecture.", context="The LEA will present scenarios where aesthetic purity is impossible; students must recognize that beauty divorced from function and ethical obligation is not architecture."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Separating Science from Aesthetic Intention", correction="Structure and systems create form. Exposed beams, thermal mass walls, ventilation shafts, and structural grids are also compositional elements that shape visual and spatial character. Engineering becomes poetry in the hands of great architects.", context="Students must understand that technical systems (structure, mechanical, environmental) are not separate from design intent; they are design. The greatest architects (Ando, Zumthor, Dieste) demonstrate this integration."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0016 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Treating Social Responsibility as Optional Add-On: Confusing &quot;socially responsible architecture&quot; (a specialized category) with the baseline ethical obligation inherent to all architecture. Every design serves or disserves people and communities. A private luxury residence still must ask: Does it generate harm? Does it respect neighbors' light and privacy? Does it model wasteful consumption? Social responsibility is not an extra consideration; it is the foundation of professional ethics.\", \"Misapplying Vitruvian Principles: Students sometimes treat firmitas, utilitas, and venustas as three separate concerns that can be addressed sequentially (first engineer it, then design it, then make it beautiful). Vitruvius intended them as simultaneous requirements. A window frame must be beautiful, structurally sound, and functional as an opening—all at once, not in phases.\", \"Assuming Simplicity Equals Excellence: Not all well-designed buildings are minimalist or austere. Rococo, Islamic, and Baroque architecture achieve excellence through ornamentation, color, and ornate spatial sequences. Excellence means intention and integrity—whether expression is through maximum or minimal means.\", \"Confusing Historical Preferences with Universal Principles: Some students apply modernist principles (efficiency, minimalism, separation of functions) as universal. In reality, architecture is culturally situated. Filipino vernacular architecture represents sophisticated science, proven social utility, and cultural aesthetic—distinct from European modernism but equally valid. Excellence is not tied to a single style.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -111,7 +175,11 @@ These are not competing goals when approached with integrated thinking. Natural 
 
 **Synthesis** — The simultaneous integration of artistic, scientific, and social dimensions within a single design, rather than treating them as separate concerns.
 
-[SLATECAMP_UI_BLOCK:ui_0014 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0017 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Memory Aid:** When analyzing any building scenario, run the **Triple-S test**: Is it Structurally sound (science)? Does it Serve its purpose (utility)? Is it Sublime (art)? All three must pass — any failure is architectural failure.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

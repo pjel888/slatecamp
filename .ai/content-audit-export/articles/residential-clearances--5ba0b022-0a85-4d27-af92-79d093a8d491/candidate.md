@@ -413,21 +413,17 @@ A homeowner in a residential subdivision in Quezon City performs the following w
 
 ---
 
+
+
 ---
+
+
 
 ---
 
 ## Exam Tip
 
 LEA Trap: Residential corridor minimum width = 900 mm (PD 1096) but 1.20 m if the corridor serves as an accessible route (BP 344). The stricter BP 344 requirement governs if the building has accessible dwelling units. This is the most tested threshold.
-
-
-
----
-
-## Exam Tip
-
-ALE Trap: Residential corridor minimum width = 900 mm (PD 1096) but 1.20 m if the corridor serves as an accessible route (BP 344). The stricter BP 344 requirement governs if the building has accessible dwelling units. This is the most tested threshold.
 
 ## Cross‑References
 
@@ -447,5 +443,3 @@ ALE Trap: Residential corridor minimum width = 900 mm (PD 1096) but 1.20 m if th
   - Work triangle: max 26 ft total; each leg 4–9 ft (1.22–2.74 m)
 - **IRC (International Residential Code):** Bedroom minimum 70 sq ft (6.5 m²), ceiling height 7'6" (2.29 m) minimum
 - **BP 344 (Accessibility Law):** Accessible door clear opening 0.90 m
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->

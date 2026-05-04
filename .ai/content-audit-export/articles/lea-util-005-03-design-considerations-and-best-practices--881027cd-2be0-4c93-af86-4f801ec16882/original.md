@@ -7,7 +7,7 @@ Design fire detection and alarm systems in compliance with RA 9514 and NFPA 72 �
 
 **1. Redundancy for Critical Facilities**
 
-<ArticleMedia id="media-lea-util-005-03-design-considerations-an" a type="image" caption="Fire Detection and Alarm System Architecture — FACP, SLC Loops, NAC Circuits" description="System architecture diagram showing: Fire Alarm Control Panel (FACP) with SLC (Signaling Line Circuit) loops connecting addressable smoke/heat detectors and manual pull stations, NAC (Notification Appliance Circuit) powering horns/strobes/voice speakers, and integration relays to building systems (elevator recall, HVAC shutdown, door release). Class B (Style 4) and Class A (Style 6/7) loop configurations compared. Battery backup showing 24h standby + 15min alarm calculation." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-005-03-design-considerations-an" type="image" caption="Fire Detection and Alarm System Architecture — FACP, SLC Loops, NAC Circuits" description="System architecture diagram showing: Fire Alarm Control Panel (FACP) with SLC (Signaling Line Circuit) loops connecting addressable smoke/heat detectors and manual pull stations, NAC (Notification Appliance Circuit) powering horns/strobes/voice speakers, and integration relays to building systems (elevator recall, HVAC shutdown, door release). Class B (Style 4) and Class A (Style 6/7) loop configurations compared. Battery backup showing 24h standby + 15min alarm calculation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Buildings housing critical functions (hospitals, data centers, government offices) in the Philippines may require:
@@ -32,7 +32,7 @@ Example: A mid-size office building in Quezon City has:
 - Required battery: (0.5 × 24) + (2.0 × 0.25) = 12 + 0.5 = 12.5 amp-hours
 - Recommended: 12.5 × 1.25 (safety factor) = 15.6 amp-hours → specify 20 Ah battery
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="Tip" status="preserved"]
+<Tip>Use the 1.25 safety factor to account for battery aging (capacity degrades ~5% per year) and temperature effects (220V tropical climates like the Philippines reduce effective capacity by ~10% in hot dry seasons). A 20 Ah battery provides adequate margin for a 3–5 year service life before replacement.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: Use the 1.25 safety factor to account for battery aging (capacity degrades ~5% per year) and temperature effects (220V tropical climates like the Philippines reduce effective capacity by ~10% in hot dry seasons). A 20 Ah battery provides adequate margin for a 3–5 year service life before replacement.
@@ -58,7 +58,7 @@ Large buildings may have a fire command center or emergency operations center. T
 
 ## Common Installation Defects in Philippine Buildings
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Connecting fire alarm ground to a different point than main service entrance ground (causes ground loops and false alarms)", "Using non-approved cable (standard UTP instead of FPL-rated) in fire alarm riser—fails during fire and loses signal", "Running fire alarm SLC in the same conduit as 220V building power without adequate separation—EMI causes detector polling failures", "Oversizing NAC loads without upgrading FACP power supply—appliances operate at reduced output voltage and fail to generate adequate alarm signal", "Installing voice evacuation without floor-level zone programming—entire building receives the same message regardless of fire location, causing confusion", "Locating manual pull stations without clear signage or accessibility—occupants cannot find them during evacuation stress", "Failing to test water flow switches annually—switch corrosion or blocked orifice prevents sprinkler alarm transmission"]} />
 Extracted summary:
 - Props: mistakes="{["Connecting fire alarm ground to a different point than main service entrance ground (causes ground loops and false alarms)", "Using non-approved cable (standard UTP instead of FPL-rated) in fire alarm riser—fails during fire and loses signal", "Running fire alarm SLC in the same conduit as 220V building power without adequate separation—EMI causes detector polling failures", "Oversizing NAC loads without upgrading FACP power supply—appliances operate at reduced output voltage and fail to generate adequate alarm signal", "Installing voice evacuation without floor-level zone programming—entire building receives the same message regardless of fire location, causing confusion", "Locating manual pull stations without clear signage or accessibility—occupants cannot find them during evacuation stress", "Failing to test water flow switches annually—switch corrosion or blocked orifice prevents sprinkler alarm transmission"]}"
 - Text: (none detected)
@@ -103,13 +103,13 @@ See also within Security and Communication Systems: **lea-util-005-04-core-conce
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-[SLATECAMP_UI_BLOCK:ui_repaired_006 component="Note" status="preserved"]
+
 Extracted summary:
 - Props: title="Loop Polarity in Class A SLC Circuits" variant="info"
 - Text: Class A SLC loops use bipolar signaling: the outgoing conductor and return conductor carry opposite polarity signals. If the outgoing wire opens, the loop detects this as a break; alarm signals continue through the return path. The control panel monitors the loop for opens and shorts and annunciates line trouble while maintaining alarm transmission capability. This is why Class A circuits cost more to install—extra copper, loop splitters, and diagnostic intelligence—but justify the cost in space
-[/SLATECAMP_UI_BLOCK:ui_0002 component="WikiCalloutBox" status="preserved"]
+
 
 <Note>
 Philippine fire alarm systems operate on a nominal 220V single-phase supply (some systems use 110V or 48V DC backup). NAC load calculations must account for peak demand: if the FACP supplies multiple NAC circuits and a Mass Notification System simultaneously, the total current demand can exceed the circuit capacity. A typical NAC branch in a 50-person occupancy space (say, one floor of an office building) draws 2–4 amps at alarm condition. A 16-amp FACP power supply can support 2–3 NAC circuits
-[/SLATECAMP_UI_BLOCK:ui_0005 component="WikiCalloutBox" status="preserved"]
+
 </Note>

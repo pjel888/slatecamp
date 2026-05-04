@@ -9,9 +9,9 @@
 
 ## The Scenario — See It Before You Read It
 
-<ArticleMedia id="media-lot-area-breakdown-pie" type="diagram" caption="Pie chart and stacked bar diagram showing how TLA (Total Lot Area) partitions into PSO (building footprint), ISA (hardscape/paved open), and USA (unpaved softscape). Show the equations PSO + TOSL = 100%, TOSL = ISA + USA, MACA = PSO + ISA. Use Basic R-2 without firewall as example: PSO 55%, ISA 30%, USA 15%." />
+<ArticleMedia id="media-pd-1096-rule-vii-area-metrics-0" name="lot-area-breakdown-pie" type="diagram" caption="Pie chart and stacked bar diagram showing how TLA (Total Lot Area) partitions into PSO (building footprint), ISA (hardscape/paved open), and USA (unpaved softscape). Show the equations PSO + TOSL = 100%, TOSL = ISA + USA, MACA = PSO + ISA. Use Basic R-2 without firewall as example: PSO 55%, ISA 30%, USA 15%." />
 
-<ArticleMedia id="media-firewall-comparison-diagram" type="diagram" caption="Side-by-side lot comparison: same lot with and without firewall. Without firewall: PSO 55%, USA 15%, MACA 85%. With firewall: PSO 60%, USA 10%, MACA 90%. Show how firewall shifts the ratio. Include a callout showing that Table VIII.1 is organized by zone + firewall status, NOT by lot type." />
+<ArticleMedia id="media-pd-1096-rule-vii-area-metrics-1" name="firewall-comparison-diagram" type="diagram" caption="Side-by-side lot comparison: same lot with and without firewall. Without firewall: PSO 55%, USA 15%, MACA 85%. With firewall: PSO 60%, USA 10%, MACA 90%. Show how firewall shifts the ratio. Include a callout showing that Table VIII.1 is organized by zone + firewall status, NOT by lot type." />
 
 ## Learning Goal
 

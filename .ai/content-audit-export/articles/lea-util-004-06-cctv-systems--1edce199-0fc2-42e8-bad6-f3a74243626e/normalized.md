@@ -7,7 +7,11 @@ Identify CCTV system components (cameras, DVR/NVR, monitors, cabling, storage), 
 
 ### Camera Types and Applications
 
-<ArticleMedia id="media-lea-util-004-06-cctv-systems" type="image" caption="CCTV System Architecture — Cameras, DVR/NVR, Monitoring Station" alt="Network diagram showing CCTV system components: dome cameras (indoor ceilings), bullet cameras (perimeter walls), PTZ cameras (lobbies/malls), connected via Category 6A cabling to NVR (network video recorder) with storage (4-8TB for 16 cameras, 30-day retention). Monitoring station shows video wall display and security console. Resolution standards (1MP entry, 2-4MP standard, 5MP+ license plate) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-004-06-cctv-systems", type="image", caption="CCTV System Architecture — Cameras, DVR/NVR, Monitoring Station", description="Network diagram showing CCTV system components: dome cameras (indoor ceilings), bullet cameras (perimeter walls), PTZ cameras (lobbies/malls), connected via Category 6A cabling to NVR (network video recorder) with storage (4-8TB for 16 cameras, 30-day retention). Monitoring station shows video wall display and security console. Resolution standards (1MP entry, 2-4MP standard, 5MP+ license plate) annotated.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 **Dome cameras** are mounted flush against ceilings or walls and offer aesthetic integration with interior design. They are commonly specified for retail environments, office lobbies, and residential common areas in Philippine gated communities. The dome housing protects the camera optics from environmental exposure and provides a degree of operational discretion—observers cannot easily determine the camera's viewing direction.
@@ -16,16 +20,11 @@ Identify CCTV system components (cameras, DVR/NVR, monitors, cabling, storage), 
 
 **PTZ (Pan-Tilt-Zoom) cameras** deliver operator-controlled movement and optical zoom capability. PTZ units are reserved for critical zones requiring dynamic coverage, such as mall concourses, office lobbies, or gated community main gates. A single PTZ camera can monitor a wider area than fixed cameras but requires security staff presence in the control room for active management.
 
-<ComparisonTable title="Camera Type Selection Guide">
-  | Feature | Dome Camera | Bullet Camera | PTZ Camera |
-  |---|---|---|---|
-  | Mounting | Ceiling / flush wall | External wall / pole | Ceiling / wall / pole |
-  | Aesthetics | High (discreet) | Moderate (visible) | Moderate (bulky) |
-  | Environment | Indoor | Indoor / outdoor | Indoor / outdoor |
-  | Coverage | Fixed zone | Fixed zone | Dynamic (operator-controlled) |
-  | Cost | Moderate | Low–moderate | High |
-  | Best for | Offices, retail, lobbies | Perimeter, parking lots | Malls, gates, large concourses |
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: title="Camera Type Selection Guide"
+- Text: | Feature | Dome Camera | Bullet Camera | PTZ Camera | |---|---|---|---| | Mounting | Ceiling / flush wall | External wall / pole | Ceiling / wall / pole | | Aesthetics | High (discreet) | Moderate (visible) | Moderate (bulky) | | Environment | Indoor | Indoor / outdoor | Indoor / outdoor | | Coverage | Fixed zone | Fixed zone | Dynamic (operator-controlled) | | Cost | Moderate | Low–moderate | High | | Best for | Offices, retail, lobbies | Perimeter, parking lots | Malls, gates, large concourse
+[/SLATECAMP_UI_BLOCK]
 
 ### Resolution Standards
 
@@ -37,11 +36,11 @@ Camera resolution is specified in megapixels (MP) and directly affects image cla
 
 The _National Building Code (PD 1096)_ does not prescribe specific megapixel requirements; instead, design engineers select resolution based on application-specific detection distances and local compliance expectations.
 
-<KeyValues items={[
-  {label: "1 MP (1280 × 960)", value: "Entry-level; suitable for access verification at controlled doors and indoor parking where subjects are close to the camera."},
-  {label: "2–4 MP", value: "Standard for most Philippine office and retail applications; sufficient for facial recognition up to 5 meters."},
-  {label: "5 MP and above", value: "Required for license plate identification and wide-area coverage at significant distances; common at mall perimeters and major access gates."}
-]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[\n  {label: \"1 MP (1280 × 960)\", value: \"Entry-level; suitable for access verification at controlled doors and indoor parking where subjects are close to the camera.\"}", label=true, MP=true, value=true, Standard=true, for=true, most=true, Philippine=true, office=true, and=true, retail=true, applications=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Storage Requirements
 
@@ -53,26 +52,31 @@ $$\text{Storage} = 16 \text{ cameras} \times 1 \text{ GB/hour} \times 24 \text{ 
 
 High-resolution systems (5 MP) may require 2–3 GB per camera per hour, scaling retention demands significantly. Network video recorders (NVRs) for medium-sized office buildings (50–100 cameras) typically incorporate 4–8 TB of redundant storage, with additional cloud backup or off-site archiving for critical facilities. Philippine shopping malls and office complexes commonly maintain 60–90 day retention periods to comply with tenant and regulatory expectations.
 
-<Note>
-**CCTV Storage Estimation**
-
-Storage (TB) = Cameras × GB/hr × 24 hrs × Retention Days ÷ 1000
-
-Variables:
-- **Cameras**: Number of cameras in the system
-- **GB/hr**: Recording rate per camera (0.5–3 GB/hr depending on resolution)
-- **Retention Days**: Required retention period (30–90 days typical)
-
-Example: 16 cameras × 1 GB/hr × 24 hrs × 30 days = 11.52 TB
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **CCTV Storage Estimation** Storage (TB) = Cameras × GB/hr × 24 hrs × Retention Days ÷ 1000 Variables: - **Cameras**: Number of cameras in the system - **GB/hr**: Recording rate per camera (0.5–3 GB/hr depending on resolution) - **Retention Days**: Required retention period (30–90 days typical) Example: 16 cameras × 1 GB/hr × 24 hrs × 30 days = 11.52 TB
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0007 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Access Control Systems
 
@@ -240,11 +244,11 @@ The security operations center is the nerve center of building security. It must
 - **Backup Internet**: Dual Internet service providers or cellular backup connection ensures network connectivity for cloud-based access control and remote monitoring.
 - **Backup recorder**: Many facilities specify a redundant NVR or cloud recording service so that video loss from primary equipment failure does not result in data loss.
 
-<Tip>
-**SOC Design Essentials for the LEA**
-
-When designing a Security Operations Center, remember the **3-2-1 rule**: at least **3** SOC placement criteria (visibility, flood safety, restricted access), **2** redundant systems (UPS + backup Internet), and **1** dedicated equipment cabinet for NVR/DVR appliances. The UPS rating must cover **2 hours** of full-load operation minimum.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **SOC Design Essentials for the LEA** When designing a Security Operations Center, remember the **3-2-1 rule**: at least **3** SOC placement criteria (visibility, flood safety, restricted access), **2** redundant systems (UPS + backup Internet), and **1** dedicated equipment cabinet for NVR/DVR appliances. The UPS rating must cover **2 hours** of full-load operation minimum.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -275,16 +279,11 @@ Gated communities in the Philippines typically employ:
 4. **Documentation and training**: All system designs must be submitted to the local Building Official per _PD 1096_. Facility staff and contracted security must receive documented training on system operations, emergency procedures, and maintenance protocols.
 5. **Regular maintenance**: CCTV cameras, door contacts, and conduit are subject to corrosion and insect infiltration in tropical climates. Monthly inspections and preventive maintenance schedules are essential.
 
-<Note>
-**Security System Best Practices Checklist**
-
-- [ ] All external cameras and conduit rated for salt spray and UV exposure
-- [ ] Security equipment connected through voltage regulators or UPS units
-- [ ] IP-based systems isolated on dedicated VLANs, separate from general IT
-- [ ] System designs submitted to local Building Official per PD 1096
-- [ ] Staff and contracted security trained on operations and emergency procedures
-- [ ] Monthly inspections for corrosion and insect infiltration scheduled
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0009 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Security System Best Practices Checklist** - [ ] All external cameras and conduit rated for salt spray and UV exposure - [ ] Security equipment connected through voltage regulators or UPS units - [ ] IP-based systems isolated on dedicated VLANs, separate from general IT - [ ] System designs submitted to local Building Official per PD 1096 - [ ] Staff and contracted security trained on operations and emergency procedures - [ ] Monthly inspections for corrosion and insect infiltration scheduled
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

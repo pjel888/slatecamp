@@ -1,26 +1,26 @@
 # Content Diff Report: prefabricated-constructions
 
-Generated: 2026-05-04T02:17:43.206Z
+Generated: 2026-05-04T09:13:59.301Z
 Article ID: ba36cb75-5bb4-4d12-802c-f5ab921f7949
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:eed8eb5c81165a32c9afac3b2fcc20441a77a0bfa95a48ae140b3f3f7dfaf452`
-- Normalized: `sha256:c94358c4a0435196243dcb00aaad731620765c0959a652d8637b2c5a9b12fbcb`
-- Candidate: `sha256:b8950f56a0f9d65b25b97a85f9ec8f4caaae279e097cffcbb81c1f16a7c09395`
+- Original: `sha256:5285650b32d9fc3e64fec2b29f27856b0e471d54309461aa52a30d7de3d1e1ce`
+- Normalized: `sha256:38e98801c6a1adc32e45c077d7841f8d20992717a2578cda6198e301b74b53d6`
+- Candidate: `sha256:5285650b32d9fc3e64fec2b29f27856b0e471d54309461aa52a30d7de3d1e1ce`
 
 ## Line summary
 
-- Changed lines: 414
-- Inserted lines: 14
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 2
-- UI blocks preserved: 2
+- UI blocks expected: 5
+- UI blocks preserved: 5
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

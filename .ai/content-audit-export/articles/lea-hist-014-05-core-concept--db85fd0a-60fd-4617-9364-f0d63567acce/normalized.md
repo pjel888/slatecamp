@@ -8,14 +8,26 @@ Identify the International Style in the United States — glass and steel towers
 **International Style** modernism emerged in 1920s Europe but flourished in post-World War II America. The principle was universal: good design transcends culture, geography, and individual expression. A building in New York should use the same principles as a building in Tokyo. Rationalism, efficiency, and structural honesty produce timeless beauty. Applied ornament is rejected; form derives purely from function and structure.
 
 
-<ArticleMedia id="media-hist-014-05-core-concept" layout="single" type="image" status="placeholder" alt="View of 860–880 Lake Shore Drive (Chicago, 1948–1951, Ludwig Mies van der Rohe), showing the twin steel-and-glass towers with expressed structure, curtain wall system, and the paradigm of International Style high-rise living." caption="Lake Shore Drive Apartments — Mies's Glass Towers" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-014-05-core-concept", layout="single", type="image", status="placeholder", alt="View of 860–880 Lake Shore Drive (Chicago, 1948–1951, Ludwig Mies van der Rohe), showing the twin steel-and-glass towers with expressed structure, curtain wall system, and the paradigm of International Style high-rise living.", caption="Lake Shore Drive Apartments — Mies's Glass Towers", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: **"International Style = Less is More + Universal + No Ornament"** — the modernist ideal that good design transcends geography and culture through rational principles.
+[/SLATECAMP_UI_BLOCK]
 
 **Mies van der Rohe** (1886–1969) epitomizes this philosophy. His motto: "Less is more." The **Barcelona Pavilion** (1929) is weightless—steel columns and thin marble walls seem to float. The **Seagram Building** (New York, 1958, with Philip Johnson) is pure rationalism: a bronze-clad steel frame grid, vertical emphasis, crystalline glass. It ascends Fifth Avenue with mathematical perfection. No ornament, no excess, no regional reference. This is modernism as universal language.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Mies's minimalism is not coldness or emptiness—it is rigor and refinement. Every element is justified; every detail is perfected. The Barcelona Pavilion is minimal but sublime. "Less is more" means maximum effect through minimum means.
+[/SLATECAMP_UI_BLOCK]
 
 **Louis Kahn** (1901–1974) offered a different modernism: monumental and emotional rather than minimal and rational. The **Salk Institute** (La Jolla, 1965) sits on a cliff overlooking the Pacific. Travertine plaza, symmetrical composition, water channel down the center, severe geometry. It is minimalist but not cold—it is sublime. Kahn designed the **National Assembly Building** (Dhaka, Bangladesh, 1962–1982), a massive geometric form in red brick: monumental modernism applied to a postcolonial nation asserting identity. (Kahn died in 1974 before the building's completion.)
 
@@ -26,35 +38,79 @@ Identify the International Style in the United States — glass and steel towers
 By 1970s, modernism faced critique. Buildings were functionally excellent but emotionally cold. Plazas were empty. Modernist urbanism had created anonymous environments. **Postmodernism** (1970s–1990s) rejected modernist austerity, reintroducing ornament, historical reference, color, and human scale. **Philip Johnson's** AT&T Building (New York, 1984) looks like a Chippendlea dresser—a postmodern joke against modernist severity. **Robert Venturi** championed complexity and contradiction. **Michael Graves** used bright color and figurative ornament.
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical distinction: Postmodernism is not mere rejection or irony—it critiques modernism's claim to universal truth. Multiple meanings, historical reference, and cultural specificity coexist. Venturi's "complexity and contradiction" and Johnson's AT&T Building are serious critiques, not frivolous decoration. Postmodernism asks: Can design be culturally specific without abandoning modernist rigor?
+[/SLATECAMP_UI_BLOCK]
 
 Contemporary architecture (1990s–present) synthesizes lessons: modernist rationality and environmental responsibility, but with humanist warmth and cultural specificity. Architects reject both modernism's universalism and postmodernism's irony, seeking architecture rooted in place, material, and human need.
 
 
-<ArticleMedia id="media-hist-014-05-core-concept" layout="single" type="image" status="placeholder" alt="View of a representative 1960s corporate headquarters showing the glass-and-steel curtain wall box, plaza, uniform facade grid, and the universal space interior — the American corporate iteration of the International Style." caption="Postwar Corporate Architecture — International Style in America" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-014-05-core-concept", layout="single", type="image", status="placeholder", alt="View of a representative 1960s corporate headquarters showing the glass-and-steel curtain wall box, plaza, uniform facade grid, and the universal space interior — the American corporate iteration of the International Style.", caption="Postwar Corporate Architecture — International Style in America", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Building\", \"Architect\", \"Year\", \"Location\", \"Style\", \"Significance\"]}", rows="{[['[\"**Barcelona Pavilion**\", \"Mies van der Rohe\", \"1929\", \"Barcelona\", \"International Style\", \"Minimal steel and marble; floating planes; weightless\"]', '[\"**Seagram Building**\", \"Mies van der Rohe & Philip Johnson\", \"1958\", \"New York\", \"International Style\", \"Bronze-clad frame; grid facade; pure rationalism; plaza\"]', '[\"**Salk Institute**\", \"Louis Kahn\", \"1965\", \"La Jolla\", \"Modernism\", \"Travertine plaza; monumental symmetry; sublime geometry\"]', '[\"**National Assembly Building**\", \"Louis Kahn\", \"1962-1982\", \"Dhaka\", \"Modernism\", \"Geometric forms; red brick; monumental postcolonial architecture; Kahn died 1974 before completion\"]', '[\"**East Building, National Gallery**\", \"I.M. Pei\", \"1978\", \"Washington, DC\", \"Modernism\", \"Triangular form; geometric purity; complex interior spaces\"]', '[\"**TWA Terminal**\", \"Eero Saarinen\", \"1962\", \"New York\", \"Modernism\", \"Shell concrete; sculptural form; bird-like expression\"]', '[\"**Gateway Arch**\", \"Eero Saarinen\", \"1965\", \"St. Louis\", \"Modernism\", \"Weighted catenary curve; monumental sclea; commemorative sculpture\"]', '[\"**AT&T Building**\", \"Philip Johnson\", \"1984\", \"New York\", \"Postmodern\", \"Chippendlea crown; ornamental; ironic historical reference\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: International Style Principles** Questions ask you to identify minimalism, structural rationalism, and rejection of ornament in building photographs. You explain Mies's "less is more" and why modernists believed universal design transcends culture. You distinguish International Style from other modernisms.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Modernist Masters** Questions present buildings by Kahn, Pei, or Saarinen and ask you to identify their approach: Kahn pursues monumental geometry, Pei pursues crystalline forms, Saarinen pursues sculptural expression. You explain their philosophical differences while recognizing shared commitment to geometric purity and structural honesty.
+[/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Postmodern Critique** Questions ask why postmodernism rejected modernism: modernist buildings lacked human warmth, plazas were empty, universal principles ignored local culture. You explain postmodern return to ornament, historical reference, and color. You analyze AT&T Building as ironic rejection of modernist severity.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Contemporary Synthesis** Questions ask how contemporary architecture responds to modernism and postmodernism. You explain that contemporary architecture accepts modernist environmental responsibility and rationality but rejects universalism; it accepts postmodern cultural specificity but rejects irony; it pursues authentic expression rooted in place and material.
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The LEA tests your understanding of the **International Style** (1920s–1970s), **American modernist masters** (**Mies van der Rohe**, **I.M. Pei**, **Louis Kahn**, **Eero Saarinen**), and the evolution toward **Postmodernism** (1970s–1990s). Questions focus on design principles (minimalism, structural rationalism, universal design), key buildings, and the philosophical tension between modernist ideals and human experience that led to postmodern critique.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Mies's minimalism with coldness", correction="Students dismiss minimalism as emotionally empty. Mies pursued perfection—every element justified, every detail refined. The Barcelona Pavilion is minimal but sublime. His buildings are austere, not cold.", context="Say \\", rigorously=true, refined=true, not=true, austere=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating postmodernism as mere rejection", correction="Students say postmodernism is \\", just=true, irony=true, and=true, decoration=true, Postmodernism=true, critiques=true, modernism=true, s=true, claims=true, to=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Forgetting that Kahn and Saarinen are modernist. Students separate Kahn and Saarinen from \\\"real modernism,\\\" calling them sculptural or romantic. They ARE modernist: they reject applied ornament, pursue geometric purity, and believe structure expresses form. They simply allow emotion and monumentality that Mies rejected. Distinguish \\\"rational modernism\\\" (Mies) from \\\"monumental modernism\\\" (Kahn) or \\\"sculptural modernism\\\" (Saarinen).\", \"Saying contemporary architecture rejects postmodernism. Students think contemporary = returning to modernism. Contemporary architecture learned from both: modernism's environmental rigor and geometric discipline, postmodernism's skepticism of universalism and embrace of cultural specificity. Contemporary is synthesis, not swing back.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -74,7 +130,11 @@ Contemporary architecture (1990s–present) synthesizes lessons: modernist ratio
 
 **Contextual Architecture** — Contemporary approach integrating buildings with local geography, climate, culture, and existing structures; rejects modernism's universal principles while accepting environmental responsibility.
 
-<ArticleMedia id="media-hist-014-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of International Style characteristics in American corporate towers: Lake Shore Drive Apartments (Mies, steel and glass), Seagram Building (Mies, bronze curtain wall), and Lever House (Skidmore Owings Merrill, green glass curtain wall)." caption="International Style in America — Corporate Towers" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+[SLATECAMP_UI_BLOCK:ui_0015 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-014-05-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Comparison of International Style characteristics in American corporate towers: Lake Shore Drive Apartments (Mies, steel and glass), Seagram Building (Mies, bronze curtain wall), and Lever House (Skidmore Owings Merrill, green glass curtain wall).", caption="International Style in America — Corporate Towers", suggestedAsset="Style comparison illustration", placementIntent="Style comparison for architectural period"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

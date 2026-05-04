@@ -12,7 +12,7 @@ Indoor air quality depends on three factors: (1) _fresh air supply_—introducti
 **PD 1096 Rule VII, Section 709** specifies natural ventilation opening requirements: a minimum of 5% of floor area must be operable (1:20 ratio). However, many modern buildings rely on mechanical ventilation to achieve code-required air change rates. The LEA focuses on these rates, not the mechanical design details.
 
 Different occupancies have vastly different IAQ demands. A hospital operating room must have 15–20 ACH with positive pressure (operating room pressure slightly above hallway) and HEPA filtration to remove surgical aerosols. A restaurant kitchen must have 15 ACH minimum (per fire code) to exhaust cooking odors and heat. A standard office requires 4–6 ACH. An unoccupied storage room may have 1–2 ACH. The LEA tests whether candidates can match space type to required ACH and apply these to ventilation system calculations.
-<ArticleMedia id="media-lea-dsgn-009-03-core-concept" a type="image" caption="Indoor Air Quality — Ventilation Strategies by Occupancy Type" description="Comparative diagram showing minimum air change rates (ACH) per space type: restrooms (10 ACH), kitchens (15 ACH), offices (4 ACH), classrooms (6 ACH). Natural vs. mechanical ventilation strategies with NBC compliance annotations." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-009-03-core-concept" type="image" caption="Indoor Air Quality — Ventilation Strategies by Occupancy Type" description="Comparative diagram showing minimum air change rates (ACH) per space type: restrooms (10 ACH), kitchens (15 ACH), offices (4 ACH), classrooms (6 ACH). Natural vs. mechanical ventilation strategies with NBC compliance annotations." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -56,7 +56,7 @@ A classroom 200 m² must have natural ventilation. Calculate minimum operable wi
 <Tip>**"Office = 4–6 ACH, Kitchen = 15 ACH, OR = 15–20 ACH (positive pressure)."** These are the three most-tested categories. Operating rooms are the most stringent (highest ACH, special pressure control, HEPA). Kitchens come next. Offices are baseline. Memorize this hierarchy.</Tip>
 
 **Exam Tip:** Air change rates (ACH) vary by occupancy: offices 4-6 ACH, restrooms 8-10 ACH, kitchens 15-20 ACH. The LEA tests whether you can select the correct ACH for a given space type and calculate required airflow.
-<ArticleMedia id="media-lea-dsgn-009-03-core-concept" a type="image" caption="Ventilation Strategy — Cross-Ventilation and Stack Effect Diagrams" description="Section and plan diagrams comparing passive ventilation strategies: single-sided (openings on one wall), cross-ventilation (openings on two walls with prevailing wind path), and stack effect (inlet low, outlet high at roof). Minimum ACH requirements per occupancy type per NBC applied." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-009-03-core-concept" type="image" caption="Ventilation Strategy — Cross-Ventilation and Stack Effect Diagrams" description="Section and plan diagrams comparing passive ventilation strategies: single-sided (openings on one wall), cross-ventilation (openings on two walls with prevailing wind path), and stack effect (inlet low, outlet high at roof). Minimum ACH requirements per occupancy type per NBC applied." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

@@ -13,7 +13,11 @@ After studying this article, you should be able to:
 
 ### Three Pillars of COA Audit: Regularity, Legality, and Economy
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: COA's three pillars: **Regularity** — were procedures followed (bidding per RA 9184, approvals obtained)? **Legality** — does the design comply with NBC, environmental laws, BP 344? **Economy** — was value achieved, costs controlled, waste avoided? Architects influence all three dimensions.
+[/SLATECAMP_UI_BLOCK]
 
 COA evaluates publicly funded projects across three dimensions. _Regularity_ ensures that established procedures were followed—that bidding was conducted per RA 9184, approvals obtained, and authorizations documented. _Legality_ verifies that the project complies with applicable laws: the National Building Code, environmental laws, accessibility standards (BP 344), and labor laws. _Economy_ assesses whether the project achieved good value—whether costs were controlled, waste avoided, and resources used efficiently.
 
@@ -55,13 +59,29 @@ Architects should maintain professional liability insurance adequate for the sco
 
 Professional liability insurance typically covers negligent acts, errors, and omissions in the design or administration. However, it does not cover willful misconduct, fraud, or violation of law. Architects should understand their policy limits and exclusions.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9184", section="Section 37 - Audit"
+- Text: Legal Basis: Presidential Decree 1445 (Government Auditing Code of the Philippines). The Commission on Audit has exclusive authority to examine all government-funded projects including architectural consulting contracts.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

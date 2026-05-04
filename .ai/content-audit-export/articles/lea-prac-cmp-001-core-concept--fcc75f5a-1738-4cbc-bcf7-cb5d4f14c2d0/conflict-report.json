@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-04T02:06:23.852Z",
+  "attempted_at": "2026-05-04T08:49:29.050Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
@@ -10,10 +10,13 @@
   "updated_rows_count": 0,
   "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
   "slug": "lea-prac-cmp-001-core-concept",
-  "preparation_actions": [],
-  "remote_hash_before": "sha256:6c0af8a6ad172a4e86ef1545e39009a7e00766fd29c6e2fbfc6ef5cc0737bb6a",
-  "original_hash": "sha256:3434507ee2e6346830038b8db8cbfdfd520fc830081c2b6c2f2744a80e91eb64",
-  "candidate_hash": "sha256:6c0af8a6ad172a4e86ef1545e39009a7e00766fd29c6e2fbfc6ef5cc0737bb6a",
+  "preparation_actions": [
+    "auto_composed_candidate",
+    "auto_generated_diff"
+  ],
+  "remote_hash_before": "sha256:eacc8d538f6d6fd93af7fbdb807f83df6e86987a0e7906eb87b65232e2622af6",
+  "original_hash": "sha256:6c0af8a6ad172a4e86ef1545e39009a7e00766fd29c6e2fbfc6ef5cc0737bb6a",
+  "candidate_hash": "sha256:42d3ba93ebef269c808d3d884af33d3842d7603c5e7d2d6ea2d58e50556ebf54",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-04T02:00:17.450914+00:00"
+  "remote_updated_at_before": "2026-05-04T02:33:22.243336+00:00"
 }

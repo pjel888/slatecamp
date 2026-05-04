@@ -1,15 +1,15 @@
 # Content Diff Report: overview-architectural-design
 
-Generated: 2026-05-04T02:16:27.805Z
+Generated: 2026-05-04T09:13:08.966Z
 Article ID: 6882bbf1-7941-4289-a6b1-89a19e4c3923
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:6a6e5272f60f0c77fd32a110f24b7b3bec2405553a9a9d9d30c1541296a2bd25`
-- Normalized: `sha256:5c457b79983169871f158a93b5b107368ef4777bb1267ab5d057fda722789d00`
-- Candidate: `sha256:6a6e5272f60f0c77fd32a110f24b7b3bec2405553a9a9d9d30c1541296a2bd25`
+- Original: `sha256:1f5e06b5419d5a11561528bdbd62b04efac1a7caa468af958e7da59a94539170`
+- Normalized: `sha256:f93d078888d6fb8e2d1a8df74491a68f9111d15c948709418bcc3d888e300372`
+- Candidate: `sha256:1f5e06b5419d5a11561528bdbd62b04efac1a7caa468af958e7da59a94539170`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
+- UI blocks expected: 6
+- UI blocks preserved: 6
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

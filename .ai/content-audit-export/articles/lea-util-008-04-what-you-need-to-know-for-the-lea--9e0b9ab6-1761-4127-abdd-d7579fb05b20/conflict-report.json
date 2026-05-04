@@ -1,23 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:10.450Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T08:50:38.282Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
   "slug": "lea-util-008-04-what-you-need-to-know-for-the-lea",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:042ed8954bb95b80d986d1402d9f9d94bbfdf8802af79734db5c11e240e416fd",
-  "original_hash": "sha256:3391901a35b6382827d3d04d2ced70c07380005217d2e0658ff6006e2382cff4",
-  "candidate_hash": "sha256:b4ca5b5c2f8731bce3d6accf5edddd1eb877146ba4ca5863d369a1ebda8a86d1",
+  "remote_hash_before": "sha256:c5838c8d6569b2becbc040d696e632a7511f1afc03a806d28a4f47c592d9de6a",
+  "original_hash": "sha256:b4ca5b5c2f8731bce3d6accf5edddd1eb877146ba4ca5863d369a1ebda8a86d1",
+  "candidate_hash": "sha256:b0a258879e2e7dbb491c23fd460e0c103d018ac96c01be540fe6d53c4c5f14f1",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T16:10:12.466897+00:00"
+  "remote_updated_at_before": "2026-05-04T02:32:46.701679+00:00"
 }

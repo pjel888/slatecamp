@@ -15,11 +15,11 @@ Door closers control closing speed and ensure positive latching. Surface-mounted
 Exit devices (panic hardware) are spring-loaded bars that allow instant egress when pushed, critical for life safety. Force resistance varies by standard and test (e.g., lever strength tests often 360 lbf across grades per some lock standards). Fire-rated assemblies must include self-closing mechanisms and fire-rated hardware certified per RA 9514 standards.
 
 
-<ArticleMedia id="media-door-hardware-comparison" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of door hardware types: hinges, locksets, closers, panic devices, and exit hardware with ANSI grade, function, and fire-rating information"
-  caption="Future chart: door hardware comparison — hinges, locksets, closers, panic devices, and exit hardware"
-  suggestedAsset="Hardware identification chart with ANSI grade callouts"
-  placementIntent="Provides visual reference for door hardware selection by occupancy" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-door-hardware-comparison", layout="single", type="image", status="placeholder", alt="Comparison chart of door hardware types: hinges, locksets, closers, panic devices, and exit hardware with ANSI grade, function, and fire-rating information", caption="Future chart: door hardware comparison — hinges, locksets, closers, panic devices, and exit hardware", suggestedAsset="Hardware identification chart with ANSI grade callouts", placementIntent="Provides visual reference for door hardware selection by occupancy"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -40,11 +40,11 @@ Exit devices (panic hardware) are spring-loaded bars that allow instant egress w
 The Philippine Building Code (PBC) adopts ANSI/BHMA standards for door hardware classification, with particular emphasis on fire-rated assemblies under RA 9514 (Fire Code of the Philippines). Commercial buildings in high-density urban areas such as Metro Manila must use Grade 1 hardware to withstand frequent daily cycles. Residential condominiums typically specify Grade 2 for common areas and Grade 3 for unit entries. Typhoon-resistant buildings in coastal provinces require corrosion-resistant hardware (stainless steel or hot-dip galvanized finishes) to resist salt spray degradation. Local suppliers such as Ylea Philippines, Dorma Philippines, and GEZE Southeast Asia are widely available and certified.
 
 
-<ArticleMedia id="media-hardware-fire-rating-chart" layout="single" type="image" status="placeholder"
-  alt="Reference chart showing fire-rating requirements for door hardware by occupancy type, door location, and fire-protection rating"
-  caption="Future chart: door hardware fire-rating requirements by occupancy and location"
-  suggestedAsset="Reference table with fire-rating requirements for door assemblies"
-  placementIntent="Provides quick reference for hardware selection in fire-rated assemblies" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hardware-fire-rating-chart", layout="single", type="image", status="placeholder", alt="Reference chart showing fire-rating requirements for door hardware by occupancy type, door location, and fire-protection rating", caption="Future chart: door hardware fire-rating requirements by occupancy and location", suggestedAsset="Reference table with fire-rating requirements for door assemblies", placementIntent="Provides quick reference for hardware selection in fire-rated assemblies"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Exam Pattern 1: Grading Scenario.** A new office building has four entry doors in the main lobby that open 300+ times daily. Which ANSI/BHMA grade must be specified? Answer: Grade 1 (cycle requirements vary by device; for bored locks this is 1,000,000 cycles per A156.2).
@@ -55,17 +55,37 @@ The Philippine Building Code (PBC) adopts ANSI/BHMA standards for door hardware 
 
 **Exam Pattern 4: Butt Hinge Cycle Capacity.** What is the Grade 1 cycle requirement for butt hinges under ANSI/BHMA A156.1? Answer: 2,500,000 cycles.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: "Grade 1 for 800k" is a simplification; actual requirements vary by device—always check the applicable ANSI/BHMA standard (e.g., A156.1 for hinges, A156.2 for bored locks, A156.13 for mortise locks).
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
-
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Using Grade 3 residential locksets in a commercial office building because they are cheaper.", correction="Grade 3 locks fail within months in commercial use (200,000 cycles ÷ 50 cycles/day = ~4,000 days or 11 years, but only if used sporadically; in high-traffic spaces, failure occurs in weeks)."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Specifying a knob instead of a lever handle on doors within an accessible route.", correction="BP 344 2024 Revised IRR explicitly requires lever handles on accessible routes because they require less dexterity and force to operate."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Installing a surface-mounted door closer on a fire-rated door because the concelead version is more expensive.", correction="Fire-rated doors require listed self-closing devices per RA 9514; both surface-mounted and concelead types are acceptable if certified."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    'Assuming all ANSI/BHMA Grade 1 hardware is identical—some grades refer to locksets, others to hinges or closers separately',\n    'Installing continuous hinges on non-fire-rated doors without realizing fire rating requires integration with the hinge design',\n    'Selecting stainless steel hardware for coastal typhoon zones without verifying saltwater-grade certification',\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

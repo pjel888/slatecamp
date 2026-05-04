@@ -1,15 +1,15 @@
 # Content Diff Report: lea-hist-002-04-core-concept
 
-Generated: 2026-05-04T02:18:11.485Z
+Generated: 2026-05-04T09:14:18.777Z
 Article ID: 52d78a3d-6f0f-4d68-a8e3-39d02b78d68f
 Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:c90a87e29135fa35e116d4febdba3e033b89eac661e5986abeb1d344ce63900e`
-- Normalized: `sha256:d274e84fe9998f69c25ec976e93bb792e9c522aa05ec8a455a15a484c9bd1f7e`
-- Candidate: `sha256:c90a87e29135fa35e116d4febdba3e033b89eac661e5986abeb1d344ce63900e`
+- Original: `sha256:d8162c88ee4e25d553031aef504a0844213a62bbad6b1c80f481a9593a76f924`
+- Normalized: `sha256:7f2edf5140a4cd092236beaf15c7b7618720506b239e692d69b38bb7a23e5131`
+- Candidate: `sha256:d8162c88ee4e25d553031aef504a0844213a62bbad6b1c80f481a9593a76f924`
 
 ## Line summary
 
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 13
-- UI blocks preserved: 13
+- UI blocks expected: 18
+- UI blocks preserved: 18
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

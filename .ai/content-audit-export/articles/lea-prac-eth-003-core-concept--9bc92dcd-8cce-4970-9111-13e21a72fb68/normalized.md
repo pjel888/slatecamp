@@ -16,10 +16,18 @@ The Code of Ethical Conduct establishes that architects carry **civic responsibi
 
 The obligation has three critical dimensions. First, architects must maintain uncompromising standards for health, safety, and welfare in all work — this is absolute and non-negotiable. Second, architects cannot misrepresent their qualifications, experience, or expertise in any communication. Third, architects must actively report when they encounter illegal practice, unlicensed individuals posing as architects, or professional misconduct that endangers the public.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 1-a, 1-c, 1-d, 1-f", title="Public Obligation Under the Code"
+- Text: Section 1-a requires architects to "advance the safety, health and well-being of the people and the community" and contribute to preservation of architectural heritage. Section 1-c requires compliance with government laws and regulations as a good citizen. Section 1-d prohibits paid advertisements and self-laudatory publicity. Section 1-f prohibits misrepresentation of qualifications unless backed by recognized expertise.
+[/SLATECAMP_UI_BLOCK]
 
 
-<ArticleMedia id="media-eth003-public-obligations" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Duties to the Public — Obligation Hierarchy" alt="Funnel diagram showing the three critical dimensions of public obligation: (1) maintain uncompromising standards for health/safety/welfare, (2) no misrepresentation of qualifications, (3) affirmative duty to report illegal practice. Each dimension shows the Code section reference and example violations. Callout emphasizes public welfare supersedes all commercial interests." placementIntent="ethics-framework" suggestedSearchQuery="architect duties to public health safety welfare reporting illegal practice Code of Ethics Section 1" suggestedAsset="Diagram or reference image" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-eth003-public-obligations", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Duties to the Public — Obligation Hierarchy", alt="Funnel diagram showing the three critical dimensions of public obligation: (1) maintain uncompromising standards for health/safety/welfare, (2) no misrepresentation of qualifications, (3) affirmative duty to report illegal practice. Each dimension shows the Code section reference and example violations. Callout emphasizes public welfare supersedes all commercial interests.", placementIntent="ethics-framework", suggestedSearchQuery="architect duties to public health safety welfare reporting illegal practice Code of Ethics Section 1", suggestedAsset="Diagram or reference image"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Section 1-a of the Code establishes the public obligation as the broadest category — it supersedes all commercial interests. An architect cannot prioritize profit, convenience, or client demands if doing so compromises public safety.
 
 Section 1-c requires compliance with government laws and regulations as a good citizen. This creates dual accountability: both to professional standards and to civil law. An architect who becomes aware of building code violations, illegal construction, or unlicensed practitioners must report these matters, even if the client requests silence.
@@ -42,7 +50,11 @@ Under RA 9266, architects registered in the Philippines assume specific public d
 
 The Board has emphasized that architects cannot shield themselves behind "following client instructions" when public safety is compromised. An architect who signs sealed plans containing unsafe design bears full responsibility and may face suspension or revocation under RA 9266 §23.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Trap:** A common LEA distracter suggests that "following client instructions" or "the client approved the design" absolves the architect of public safety responsibility. This is WRONG. The architect's public obligation under Section 1-a is absolute and non-delegable. The architect cannot hide behind client approval when public safety is compromised. Section 23 makes the architect-of-record fully liable for sealed plans regardless of client instructions.
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
 
@@ -58,21 +70,25 @@ Architect discovers unlicensed person preparing architectural drawings. Must rep
 **Pattern 4: Paid Endorsements**
 Building material manufacturer offers fee for architect to endorse product. Code §1-e prohibits this. Code §4-b allows only "marker discount which shall be credited to the Client" — no commissions.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Priority:** Questions about "public obligation" almost always test the hierarchy — public safety trumps client profit. The "PSR" mnemonic helps: (P) Public safety above all else, (S) Specializations require credentials, (R) Report violations. When an LEA question involves a conflict between profit and public welfare, public welfare always wins.
+[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: "PSR" = Public Safety Reporting.** Remember the three core elements: (P) Public safety above all else, (S) Specializations require credentials, (R) Report violations. When an LEA question involves a conflict between profit and public welfare, public welfare always wins.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    "Thinking paid advertisements are allowed if factual — Code §1-d explicitly prohibits 'paid advertisement' and self-laudatory publicity; only unpaid presentation of work through literature is permitted",
-    "Assuming qualification disclaimers work — 'I have experience in...' does not satisfy §1-f; specializations must be 'well-known facts or sanctioned by professional consensus and years of experience'",
-    "Confusing client obligation with public obligation — §1-c public duty to laws and professional standards applies even when client requests otherwise",
-    "Believing that following client instructions shields architects from public safety responsibility — RA 9266 §23 makes the architect-of-record fully liable for sealed plans",
-    "Treating reporting violations as optional — Code §1-c is mandatory; silence about illegal practice is a violation itself",
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    \"Thinking paid advertisements are allowed if factual — Code §1-d explicitly prohibits 'paid advertisement' and self-laudatory publicity; only unpaid presentation of work through literature is permitted\",\n    \"Assuming qualification disclaimers work — 'I have experience in...' does not satisfy §1-f; specializations must be 'well-known facts or sanctioned by professional consensus and years of experience'\",\n    \"Confusing client obligation with public obligation — §1-c public duty to laws and professional standards applies even when client requests otherwise\",\n    \"Believing that following client instructions shields architects from public safety responsibility — RA 9266 §23 makes the architect-of-record fully liable for sealed plans\",\n    \"Treating reporting violations as optional — Code §1-c is mandatory; silence about illegal practice is a violation itself\",\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
