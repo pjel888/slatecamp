@@ -42,7 +42,7 @@ export const useGlobalLoading = (options?: UseGlobalLoadingOptions) => {
   // Stable operation ID for this hook instance
   const instanceId = useMemo(
     () => generateOperationId(options?.prefix ?? 'global'),
-    [], // eslint-disable-line react-hooks/exhaustive-deps
+    [],
   )
 
   const show = useCallback(

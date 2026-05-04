@@ -1,5 +1,4 @@
-import { describe, expect, test, beforeEach, afterEach, mock } from 'bun:test'
-import { renderToStaticMarkup } from 'react-dom/server'
+import { describe, expect, test, beforeEach } from 'bun:test'
 import { useGlobalLoadingStore, generateOperationId } from '@/stores/useGlobalLoadingStore'
 
 // ─── Helpers ────────────────────────────────────────────────────────────────

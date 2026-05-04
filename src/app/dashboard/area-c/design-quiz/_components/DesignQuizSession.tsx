@@ -34,7 +34,7 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
   const [answers, setAnswers] = useState<AnswerRecord[]>([])
   const [eliminatedOptions, setEliminatedOptions] = useState<Record<string, string[]>>({})
   const [finished, setFinished] = useState(false)
-  const [isCalculating, setIsCalculating] = useState(false)
+  const [_isCalculating, setIsCalculating] = useState(false)
   const [submitModalOpen, setSubmitModalOpen] = useState(false)
 
   const question = scenario.questions[currentIndex]

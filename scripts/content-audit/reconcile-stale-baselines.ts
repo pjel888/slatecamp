@@ -18,14 +18,14 @@
  *   bun run scripts/content-audit/reconcile-stale-baselines.ts --apply
  */
 
-import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs'
+import { execSync } from 'node:child_process'
 import path from 'node:path'
 import {
   createContentAuditSupabaseClient,
   sha256,
   writeJson,
   writeText,
-  nowIso,
 } from './lib'
 
 const EXPORT_ROOT = path.resolve(process.cwd(), '.ai/content-audit-export')
@@ -94,9 +94,8 @@ async function fetchSupabaseContent(supabase: any, articleId: string) {
 }
 
 function findArticleDir(articleId: string): string | null {
-  const dirs = existsSync(ARTICLES_DIR) ? readFileSync : null
+  const _dirs = existsSync(ARTICLES_DIR) ? readFileSync : null
   // Use readdir
-  const { readdirSync } = require('node:fs')
   if (!existsSync(ARTICLES_DIR)) return null
   
   for (const name of readdirSync(ARTICLES_DIR)) {
@@ -173,7 +172,7 @@ function reapplyRepair(articleDir: string) {
   
   for (const b of blocks) {
     const comp = b.component_name ?? ''
-    const blockId = b.block_id ?? ''
+    const _blockId = b.block_id ?? ''
     
     if (!(comp in REPLACEMENTS)) {
       newBlocks.push(b)
@@ -206,7 +205,6 @@ function reapplyRepair(articleDir: string) {
 }
 
 function runValidation(articleDir: string) {
-  const { execSync } = require('node:child_process')
   const validator = path.resolve(process.cwd(), '.ai/content-audit-export/scripts/validate_article.py')
   try {
     const out = execSync(`python3 "${validator}" "${articleDir}"`, { encoding: 'utf8', timeout: 30000 })
@@ -217,7 +215,6 @@ function runValidation(articleDir: string) {
 }
 
 function runCompose(articleId: string): { ok: boolean; output: string } {
-  const { execSync } = require('node:child_process')
   try {
     const out = execSync(
       `bun run content-audit:compose -- --article-id ${articleId} --overwrite`,
@@ -230,7 +227,6 @@ function runCompose(articleId: string): { ok: boolean; output: string } {
 }
 
 function runPushDryRun(articleId: string): { ok: boolean; output: string } {
-  const { execSync } = require('node:child_process')
   try {
     const out = execSync(
       `bun run content-audit:push --dry-run -- --article-id ${articleId}`,
@@ -243,7 +239,6 @@ function runPushDryRun(articleId: string): { ok: boolean; output: string } {
 }
 
 function runPushApply(articleId: string): { ok: boolean; output: string } {
-  const { execSync } = require('node:child_process')
   try {
     const out = execSync(
       `bun run content-audit:push:apply -- --article-id ${articleId}`,

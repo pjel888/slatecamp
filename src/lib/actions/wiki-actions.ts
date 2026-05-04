@@ -359,7 +359,7 @@ export async function resolveArticleAndNode(
 
   if (!rpcError && rpcResult) {
     const result = rpcResult as { article: WikiArticle | null; node: TaxonomyNode | null }
-    const elapsed = (performance.now() - start).toFixed(1)
+    const _elapsed = (performance.now() - start).toFixed(1)
     return {
       article: result.article ?? null,
       node: result.node ?? null,
@@ -449,7 +449,7 @@ export async function resolveArticleAndNode(
     .eq('status', 'published')
     .maybeSingle()
 
-  const elapsed = (performance.now() - start).toFixed(1)
+  const _elapsed = (performance.now() - start).toFixed(1)
   return {
     article: nodeArticle as WikiArticle | null,
     node: directNode as TaxonomyNode,

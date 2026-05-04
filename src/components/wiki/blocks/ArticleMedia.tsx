@@ -257,7 +257,7 @@ const ArticleMedia = ({
   credit,
   sourceUrl,
   suggestedAsset,
-  suggestedSearchQuery,
+  _suggestedSearchQuery,
   replacementNotes,
   carouselCount,
 }: ArticleMediaProps) => {
@@ -288,7 +288,7 @@ const ArticleMedia = ({
     return classes.join(' ')
   }, [variant])
 
-  const headingId = useMemo(() => `media-${id}`, [id])
+  const _headingId = useMemo(() => `media-${id}`, [id])
 
   return (
     <section className={containerClass} aria-label={title || 'Article media'} data-media-block-id={id}>
