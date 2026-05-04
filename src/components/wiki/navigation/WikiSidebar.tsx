@@ -98,6 +98,10 @@ export const WikiSidebar = ({
       getTaxonomyTree(disciplineId).then((data) => {
         setNodes(data)
         setLoading(false)
+      }).catch((err) => {
+        console.error('[WikiSidebar] Taxonomy fetch failed:', err)
+        setNodes([])
+        setLoading(false)
       })
     }
   }, [disciplineId, initialNodes])

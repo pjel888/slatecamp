@@ -4,7 +4,7 @@
  * sidebar shape + search bar while data streams in.
  */
 export const WikiSidebarSkeleton = () => (
-  <aside className="w-full h-full bg-background flex flex-col overflow-hidden">
+  <aside className="w-full h-full bg-background flex flex-col overflow-hidden" aria-busy="true">
     {/* Search bar placeholder */}
     <div className="shrink-0 p-2 pb-1">
       <div className="h-8 w-full rounded-sm bg-muted animate-pulse" />

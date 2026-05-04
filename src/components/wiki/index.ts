@@ -24,6 +24,10 @@ export { ProcessFlow } from './blocks/ProcessFlow'
 export { ElaborativeInterrogation } from './blocks/ElaborativeInterrogation'
 export { ComparisonTable } from './blocks/ComparisonTable'
 
+// Media blocks — article visual infrastructure
+export { ArticleMedia } from './blocks/ArticleMedia'
+export type { ArticleMediaProps, ArticleMediaItem, ArticleMediaLayout, ArticleMediaVariant, AspectRatio } from './blocks/ArticleMedia'
+
 export { WikiHeader } from './navigation/WikiHeader'
 export { WikiRightSidebar } from './navigation/WikiRightSidebar'
 export { WikiRightSidebarSkeleton } from './navigation/WikiRightSidebarSkeleton'

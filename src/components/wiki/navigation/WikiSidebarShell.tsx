@@ -17,13 +17,11 @@ const DEFAULT_W = 256
 export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
   const [isCollapsed, setIsCollapsed] = React.useState(false)
   const [width, setWidth] = React.useState(DEFAULT_W)
-  const [mounted, setMounted] = React.useState(false)
   const dragging = React.useRef(false)
   const startX = React.useRef(0)
   const startW = React.useRef(DEFAULT_W)
 
   React.useEffect(() => {
-    setMounted(true)
     try {
       const savedWidth = localStorage.getItem(WIDTH_KEY)
       if (savedWidth) setWidth(Math.min(MAX_W, Math.max(MIN_W, parseInt(savedWidth))))
@@ -56,8 +54,6 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
     window.addEventListener('mousemove', onMove)
     window.addEventListener('mouseup', onUp)
   }
-
-  if (!mounted) return null
 
   return (
     <div className="hidden md:flex print:!hidden h-full shrink-0">

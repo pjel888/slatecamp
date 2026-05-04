@@ -42,6 +42,7 @@ import { WikiReference } from '../shared/WikiReference'
 import { Mermaid } from '../blocks/Mermaid'
 import { WikiPre } from '../blocks/WikiPre'
 import { GenericBlock, SPP206RefServices, SPP207RefServices } from '../blocks/GenericBlock'
+import { ArticleMedia } from '../blocks/ArticleMedia'
 
 interface WikiArticleProps {
   article: WikiArticleType
@@ -209,6 +210,9 @@ const WIKI_COMPONENTS = {
   // No-op stubs
   SPP206RefServices,
   SPP207RefServices,
+
+  // Article media — images, carousels, YouTube embeds, video, embeds
+  ArticleMedia,
 }
 
 export const getArticleHeadings = (article: WikiArticleType): TocHeading[] => {

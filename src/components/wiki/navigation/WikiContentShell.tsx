@@ -136,7 +136,7 @@ export const WikiContentShell = ({ children }: { children: React.ReactNode }) =>
   const { isPending } = useWikiNavigation()
 
   return (
-    <div className="flex-1 min-w-0 flex flex-col h-full overflow-hidden">
+    <div className="flex-1 min-w-0 flex flex-col h-full overflow-hidden" aria-busy={isPending}>
       {isPending ? <ArticleSkeleton /> : children}
     </div>
   )

@@ -4,7 +4,7 @@ import { Separator } from '@/components/ui/separator'
 
 export const WikiRightSidebarSkeleton = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6" aria-busy="true">
       {/* Quiz Button Skeleton */}
       <Skeleton className="h-10 w-full rounded-md" />
 

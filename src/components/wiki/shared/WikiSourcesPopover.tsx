@@ -47,6 +47,15 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
 
   useEffect(() => {
     if (!isOpen) return
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsOpen(false)
+    }
+    document.addEventListener('keydown', handler)
+    return () => document.removeEventListener('keydown', handler)
+  }, [isOpen])
+
+  useEffect(() => {
+    if (!isOpen) return
     const handler = () => setIsOpen(false)
     window.addEventListener('scroll', handler, true)
     return () => window.removeEventListener('scroll', handler, true)

@@ -54,6 +54,26 @@ const lawConfig: Record<LawCalloutCode, {
 
 export const LawCallout = ({ code, section, title, children }: LawCalloutProps) => {
   const config = lawConfig[code]
+
+  // Defensive fallback for unknown codes — render content without crashing
+  if (!config) {
+    return (
+      <div
+        className="not-prose rounded-md px-4 py-3 my-5 border border-border bg-muted/30"
+        role="note"
+      >
+        {title && (
+          <p className="text-sm font-semibold text-wiki-ink mb-1 dark:text-wiki-invert-heading">
+            {title}
+          </p>
+        )}
+        <div className="text-sm text-wiki-body leading-relaxed [&_strong]:font-semibold [&_strong]:text-wiki-ink dark:text-wiki-invert-body dark:[&_strong]:text-wiki-invert-heading">
+          {children}
+        </div>
+      </div>
+    )
+  }
+
   const eyebrowText = section ? `${config.label} — ${section}` : config.label
 
   return (

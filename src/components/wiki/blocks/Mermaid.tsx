@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState, useId, useMemo } from 'react'
 import mermaid from 'mermaid'
 import { useTheme } from 'next-themes'
+import DOMPurify from 'isomorphic-dompurify'
 
 interface MermaidProps {
   chart: string
@@ -66,7 +67,9 @@ export const Mermaid = ({ chart }: MermaidProps) => {
       <div 
         ref={ref} 
         className="mermaid w-full max-w-4xl"
-        dangerouslySetInnerHTML={{ __html: svg }}
+        role="img"
+        aria-label="Diagram"
+        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(svg) }}
       />
     </div>
   )

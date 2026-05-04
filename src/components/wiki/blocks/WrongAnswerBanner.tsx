@@ -13,7 +13,7 @@ export const WrongAnswerBanner = ({ fromWrongAnswer, topicName }: WrongAnswerBan
   if (!fromWrongAnswer || !topicName) return null
 
   return (
-    <div className="rounded-md border border-camp-orange bg-camp-orange/5 px-4 py-3 mb-6">
+    <div className="rounded-md border border-camp-orange bg-camp-orange/5 px-4 py-3 mb-6" role="alert">
       <p className="text-sm text-text-primary">
         You answered a question about <span className="font-medium">{topicName}</span> incorrectly.
         This article covers why.

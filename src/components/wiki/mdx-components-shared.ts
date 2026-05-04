@@ -8,6 +8,9 @@ import {
   GenericBlock, SPP206RefServices, SPP207RefServices
 } from '@/components/wiki'
 
+// Article media — visual infrastructure for images, carousels, YouTube embeds
+import { ArticleMedia } from '@/components/wiki'
+
 /** Derive a URL-safe anchor slug from heading text. */
 const toHeadingId = (children: React.ReactNode): string | undefined =>
   children
@@ -120,6 +123,9 @@ export const baseMdxComponents = {
   // No-op stubs for self-closing reference tags
   SPP206RefServices,
   SPP207RefServices,
+
+  // Article media — images, carousels, YouTube embeds, video, embeds
+  ArticleMedia,
 
   // Generic passthrough for AI-hallucinated component names
   ConflictMatrix: GenericBlock,
