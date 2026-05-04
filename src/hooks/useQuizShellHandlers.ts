@@ -4,10 +4,11 @@ import { useCallback, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
-import { 
+import {
   endSession as endSessionAction,
 } from '@/lib/actions/quiz-v2'
 import { withMinimumDuration } from '@/lib/utils/promise'
+import { runWithLoading } from '@/hooks/useGlobalLoading'
 import { ROUTES } from '@/lib/routes'
 import type { GestureSignalEvent } from '@/types/patent'
 
@@ -125,15 +126,18 @@ export const useQuizShellHandlers = ({ sessionId, mode: _mode }: UseQuizShellHan
       status: 'finalizing',
       ui: { ...s.ui, calculatingResults: true },
     }))
-    try {
-      const result = await withMinimumDuration(
-        endSessionAction({ sessionId, endReason: 'completed' }),
-        800,
-      )
-      endSession(result)
-    } catch {
-      router.push(ROUTES.dashboard.quizResults(sessionId))
-    }
+
+    await runWithLoading(async () => {
+      try {
+        const result = await withMinimumDuration(
+          endSessionAction({ sessionId, endReason: 'completed' }),
+          800,
+        )
+        endSession(result)
+      } catch {
+        router.push(ROUTES.dashboard.quizResults(sessionId))
+      }
+    }, 'Preparing your results…')
   }
 
   return {

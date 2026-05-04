@@ -1,12 +1,12 @@
 'use client'
 
 import { useState, useCallback, useMemo } from 'react'
+import { runWithLoading } from '@/hooks/useGlobalLoading'
 import type { DesignScenario, HiddenTrap } from '@/lib/design-scenarios'
 import { BriefPanel } from './BriefPanel'
 import { QuestionCard } from './QuestionCard'
 import { SolutionReveal } from './SolutionReveal'
 import { ScenarioResults } from './ScenarioResults'
-import { CalculatingResultsOverlay } from '@/components/quiz-v2/CalculatingResultsOverlay'
 import { SubmitConfirmModal } from '@/components/quiz-v2/SubmitConfirmModal'
 import type { QuestionForClient, QuizAnswerState, QuestionStatus } from '@/types/quiz-config'
 
@@ -111,10 +111,11 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
   const handleFinish = useCallback(() => {
     setSubmitModalOpen(false)
     setIsCalculating(true)
-    setTimeout(() => {
+    runWithLoading(async () => {
+      await new Promise((resolve) => setTimeout(resolve, 1500))
       setFinished(true)
       setIsCalculating(false)
-    }, 1500)
+    }, 'Calculating your results…')
   }, [])
 
   const handleNext = useCallback(() => {
@@ -183,9 +184,6 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
 
   return (
     <div className='flex flex-col lg:flex-row gap-4 lg:gap-6 lg:items-start'>
-      {/* Calculating results overlay */}
-      {isCalculating && <CalculatingResultsOverlay />}
-
       {/* Submit Confirmation Modal */}
       {submitModalOpen && (
         <SubmitConfirmModal

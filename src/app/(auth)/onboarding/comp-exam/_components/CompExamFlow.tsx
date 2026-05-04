@@ -6,6 +6,7 @@ import { ScoreEntryForm } from './ScoreEntryForm'
 import { HeatmapPreview } from './HeatmapPreview'
 import { saveCompExamScores } from '@/lib/actions/comp-exam-onboarding'
 import type { CompExamScores, HeatmapSeed } from '@/lib/actions/comp-exam-onboarding'
+import { runWithLoading } from '@/hooks/useGlobalLoading'
 
 // ── Steps ─────────────────────────────────────────────────────────────────────
 
@@ -15,17 +16,13 @@ type Step = 'intro' | 'entry' | 'heatmap'
 
 export const CompExamFlow = () => {
   const [step, setStep] = useState<Step>('intro')
-  const [isLoading, setIsLoading] = useState(false)
   const [serverError, setServerError] = useState<string | null>(null)
   const [heatmapSeeds, setHeatmapSeeds] = useState<HeatmapSeed[]>([])
 
   const handleScoreSubmit = async (scores: CompExamScores, examDate: string | null) => {
-    setIsLoading(true)
     setServerError(null)
 
-    const result = await saveCompExamScores(scores, examDate)
-
-    setIsLoading(false)
+    const result = await runWithLoading(() => saveCompExamScores(scores, examDate), 'Mapping your scores…')
 
     if (!result.success) {
       setServerError(result.error ?? 'Something went wrong. Please try again.')
@@ -124,7 +121,7 @@ export const CompExamFlow = () => {
           </p>
         )}
 
-        <ScoreEntryForm onSubmit={handleScoreSubmit} isLoading={isLoading} />
+        <ScoreEntryForm onSubmit={handleScoreSubmit} />
       </div>
     )
   }

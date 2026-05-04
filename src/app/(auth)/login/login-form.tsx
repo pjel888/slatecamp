@@ -6,10 +6,10 @@ import { Warning } from "@phosphor-icons/react";
 import { SCIcon } from "@/components/graphics/icons/Icon";
 import { createClient } from "@/lib/supabase/client";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
+import { runWithLoading } from "@/hooks/useGlobalLoading";
 
 export function LoginFormInner() {
   const [error, setError] = useState<string | null>(null);
-  const [googleLoading, setGoogleLoading] = useState(false);
   const searchParams = useSearchParams();
 
   useEffect(() => {
@@ -21,37 +21,33 @@ export function LoginFormInner() {
 
   async function handleGoogleLogin() {
     setError(null);
-    setGoogleLoading(true);
-    const supabase = createClient();
-    
-    const next = searchParams.get("next") || "/dashboard";
-    const callbackUrl = new URL(`${window.location.origin}/auth/callback`);
-    callbackUrl.searchParams.set("next", next);
+    await runWithLoading(async () => {
+      const supabase = createClient();
+      
+      const next = searchParams.get("next") || "/dashboard";
+      const callbackUrl = new URL(`${window.location.origin}/auth/callback`);
+      callbackUrl.searchParams.set("next", next);
 
-    const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: callbackUrl.toString(),
-      },
-    });
-    if (oauthError) {
-      setError(oauthError.message);
-      setGoogleLoading(false);
-      return;
-    }
-    if (data?.url) {
-      window.location.href = data.url;
-      return;
-    }
-    setGoogleLoading(false);
+      const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: callbackUrl.toString(),
+        },
+      });
+      if (oauthError) {
+        setError(oauthError.message);
+        return;
+      }
+      if (data?.url) {
+        window.location.href = data.url;
+      }
+    }, 'Redirecting to Google…');
   }
 
   return (
     <div className="space-y-4">
       <SignInWithGoogleButton
         onClick={handleGoogleLogin}
-        disabled={googleLoading}
-        isLoading={googleLoading}
       />
 
       {error && (

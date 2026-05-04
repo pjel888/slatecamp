@@ -38,6 +38,7 @@ import { ThemeProvider } from '@/components/shared/ThemeProvider'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { DemoShell } from '@/components/dev/demo-shell'
 import { NavigationProgress } from '@/components/shared/NavigationProgress'
+import { GlobalLoadingOverlay } from '@/components/shared/GlobalLoadingOverlay'
 import { NoiseFilter } from '@/components/graphics/ui/NoiseFilter'
 import { DevModeOverlay } from '@/components/dev/dev-mode-overlay'
 import './globals.css'
@@ -80,6 +81,7 @@ export default function RootLayout({
           <NoiseFilter />
           <NavigationProgress />
           <TooltipProvider>
+            <GlobalLoadingOverlay />
             {children}
             {isDemo && <DemoShell />}
           </TooltipProvider>

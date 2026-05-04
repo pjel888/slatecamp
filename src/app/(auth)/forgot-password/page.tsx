@@ -10,35 +10,33 @@ import { siteConfig } from "@/lib/constants/site";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { runWithLoading } from "@/hooks/useGlobalLoading";
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
-    setLoading(true);
+    await runWithLoading(async () => {
+      const supabase = createClient();
+      const callbackUrl = new URL(ROUTES.auth.callback, window.location.origin);
+      callbackUrl.searchParams.set("next", ROUTES.auth.resetPassword);
 
-    const supabase = createClient();
-    const callbackUrl = new URL(ROUTES.auth.callback, window.location.origin);
-    callbackUrl.searchParams.set("next", ROUTES.auth.resetPassword);
+      const { error: resetError } = await supabase.auth.resetPasswordForEmail(
+        email,
+        { redirectTo: callbackUrl.toString() }
+      );
 
-    const { error: resetError } = await supabase.auth.resetPasswordForEmail(
-      email,
-      { redirectTo: callbackUrl.toString() }
-    );
+      if (resetError) {
+        setError(resetError.message);
+        return;
+      }
 
-    if (resetError) {
-      setError(resetError.message);
-      setLoading(false);
-      return;
-    }
-
-    setSent(true);
-    setLoading(false);
+      setSent(true);
+    }, 'Sending reset link…');
   }
 
   return (
@@ -85,8 +83,8 @@ export default function ForgotPasswordPage() {
                 </div>
               )}
 
-              <Button type="submit" className="w-full" disabled={loading}>
-                {loading ? "Sending..." : "Send reset link"}
+              <Button type="submit" className="w-full">
+                Send reset link
               </Button>
             </form>
           </div>

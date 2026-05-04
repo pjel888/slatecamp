@@ -5,42 +5,38 @@ import { Warning } from "@phosphor-icons/react";
 import { SCIcon } from "@/components/graphics/icons/Icon";
 import { createClient } from "@/lib/supabase/client";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
+import { runWithLoading } from "@/hooks/useGlobalLoading";
 
 export function RegisterForm() {
   const [error, setError] = useState<string | null>(null);
-  const [googleLoading, setGoogleLoading] = useState(false);
   const supabase = createClient();
 
   async function handleGoogleSignUp() {
     setError(null);
-    setGoogleLoading(true);
-    const callbackUrl = new URL(`${window.location.origin}/auth/callback`);
-    callbackUrl.searchParams.set("next", "/onboarding");
+    await runWithLoading(async () => {
+      const callbackUrl = new URL(`${window.location.origin}/auth/callback`);
+      callbackUrl.searchParams.set("next", "/onboarding");
 
-    const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: callbackUrl.toString(),
-      },
-    });
-    if (oauthError) {
-      setError(oauthError.message);
-      setGoogleLoading(false);
-      return;
-    }
-    if (data?.url) {
-      window.location.href = data.url;
-      return;
-    }
-    setGoogleLoading(false);
+      const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: callbackUrl.toString(),
+        },
+      });
+      if (oauthError) {
+        setError(oauthError.message);
+        return;
+      }
+      if (data?.url) {
+        window.location.href = data.url;
+      }
+    }, 'Redirecting to Google…');
   }
 
   return (
     <div className="space-y-4">
       <SignInWithGoogleButton
         onClick={handleGoogleSignUp}
-        disabled={googleLoading}
-        isLoading={googleLoading}
       />
 
       {error && (

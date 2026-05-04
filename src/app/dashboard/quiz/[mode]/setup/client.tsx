@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { useCallback, useState, useEffect } from 'react'
 import { SetupFlow } from '@/components/quiz-v2/setup/SetupFlow'
 import { PredictionSlider, shouldShowPrediction } from '@/components/quiz-v2/PredictionSlider'
-import { SlatecampLoader } from '@/components/shared/SlatecampLoader'
+import { runWithLoading } from '@/hooks/useGlobalLoading'
 import type { QuizMode, QuizSessionConfig, TaxonomySubject } from '@/types/quiz-config'
 import { startSession } from '@/lib/actions/quiz-v2'
 import { ROUTES } from '@/lib/routes'
@@ -17,7 +17,7 @@ interface SetupPageClientProps {
   readinessScore?: number
 }
 
-type SetupPhase = 'setup' | 'creating' | 'prediction' | 'navigating'
+type SetupPhase = 'setup' | 'prediction'
 
 export const SetupPageClient = ({
   mode,
@@ -36,14 +36,15 @@ export const SetupPageClient = ({
   }, [])
 
   const handleBegin = async (config: QuizSessionConfig) => {
-    setPhase('creating')
     setError(null)
     try {
-      const result = await startSession({ mode, config })
+      const result = await runWithLoading(
+        () => startSession({ mode, config }),
+        'Creating your session…',
+      )
       if ('error' in result) {
         const actionError = result as { error: unknown; message?: string }
         setError(actionError.message ?? String(actionError.error))
-        setPhase('setup')
         return
       }
 
@@ -53,28 +54,21 @@ export const SetupPageClient = ({
       if (shouldShowPrediction(mode)) {
         setPhase('prediction')
       } else {
-        setPhase('navigating')
         router.push(ROUTES.dashboard.quizSession(result.sessionId))
       }
     } catch (err) {
       console.error('[quiz-setup] startSession failed:', err)
       setError(err instanceof Error ? err.message : 'Failed to start session')
-      setPhase('setup')
     }
   }
 
   const handlePredictionConfirm = useCallback(() => {
     if (!createdSessionId) return
-    setPhase('navigating')
     router.push(ROUTES.dashboard.quizSession(createdSessionId))
   }, [createdSessionId, router])
 
   const handleBack = () => {
     router.back()
-  }
-
-  if (phase === 'creating' || phase === 'navigating') {
-    return <SlatecampLoader />
   }
 
   if (phase === 'prediction' && createdSessionId) {

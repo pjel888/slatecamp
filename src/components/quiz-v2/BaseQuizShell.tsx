@@ -9,7 +9,6 @@ import { QuizHeader } from './QuizHeader'
 import { QuizFooter } from './QuizFooter'
 import { TimerDisplay } from './TimerDisplay'
 import { TimerTicker } from './TimerTicker'
-import { CalculatingResultsOverlay } from './CalculatingResultsOverlay'
 import { QuestionSkeleton } from './QuestionSkeleton'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import type { QuizSessionConfig } from '@/types/quiz-config'
@@ -244,8 +243,6 @@ export const BaseQuizShell = ({
           onContinue={hideMicroBreak}
         />
       )}
-
-      {calculatingResults && <CalculatingResultsOverlay />}
 
       {wikiPanelOpen && wikiPanelUrl && (
         <WikiSidePanel url={wikiPanelUrl} onClose={closeWikiPanel} />

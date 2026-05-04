@@ -6,32 +6,32 @@ import { createClient } from "@/lib/supabase/client";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { ROUTES } from "@/lib/routes";
+import { runWithLoading } from "@/hooks/useGlobalLoading";
 
 export function AdminLoginClient() {
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
 
   async function handleAdminLogin() {
     setError(null);
-    setLoading(true);
-    const supabase = createClient();
+    await runWithLoading(async () => {
+      const supabase = createClient();
 
-    const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: `${window.location.origin}${ROUTES.auth.callback}?next=${ROUTES.admin.root}`,
-      },
-    });
+      const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: `${window.location.origin}${ROUTES.auth.callback}?next=${ROUTES.admin.root}`,
+        },
+      });
 
-    if (oauthError) {
-      setError(oauthError.message);
-      setLoading(false);
-      return;
-    }
+      if (oauthError) {
+        setError(oauthError.message);
+        return;
+      }
 
-    if (data?.url) {
-      window.location.href = data.url;
-    }
+      if (data?.url) {
+        window.location.href = data.url;
+      }
+    }, "Redirecting to Google…");
   }
 
   return (
@@ -48,8 +48,6 @@ export function AdminLoginClient() {
         <div className="rounded-md border border-border bg-card p-8 shadow-sm">
           <SignInWithGoogleButton
             onClick={handleAdminLogin}
-            disabled={loading}
-            isLoading={loading}
           />
           {error && <p className="mt-4 text-center text-xs text-destructive">{error}</p>}
         </div>
